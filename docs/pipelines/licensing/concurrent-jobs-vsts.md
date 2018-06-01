@@ -26,7 +26,7 @@ A CI/CD _concurrent job_ gives you the ability to run a single build job or a si
 _formerly hosted pipelines_
 
 If you want to run builds and releases on machines managed by Microsoft, then you need Microsoft-hosted CI/CD. We provide a **free tier** of service by default in your VSTS account,
-allowing you to run one concurrent job for up to 240 minutes per month. This uses our pool of [hosted agents](../agents/hosted.md) to run your builds and releases. Each build or release job can run for up to 30 minutes. 
+allowing you to run one concurrent job for up to 240 minutes per month. This uses our pool of [Microsoft-hosted agents](../agents/hosted.md) to run your builds and releases. Each build or release job can run for up to 30 minutes. 
 
 When the **free tier** of Microsoft-hosted CI/CD is no longer sufficient, you can pay for CI/CD capacity per concurrent job. Paid Microsoft-hosted CI/CD removes the monthly time limit and also allows you to run a single job for up to 6 hours.
 
@@ -36,8 +36,8 @@ When the **free tier** of Microsoft-hosted CI/CD is no longer sufficient, you ca
 ## Self-hosted CI/CD
 _formerly private pipelines_
 
-If you want to run builds and releases on your own machines, then you need _self-hosted CI/CD_. You'll start by deploying our [private agents](../agents/agents.md) on your machines. 
-You can register any number of these private agents in your VSTS account for free. We charge based on the number of jobs you want to run at a time, not the number of agents registered.
+If you want to run builds and releases on your own machines, then you need _self-hosted CI/CD_. You'll start by deploying our [self-hosted agents](../agents/agents.md) on your machines. 
+You can register any number of these self-hosted agents in your VSTS account for free. We charge based on the number of jobs you want to run at a time, not the number of agents registered.
 
 Your VSTS account includes one self-hosted concurrent job free to get you started. Additionally, for each active Visual Studio Enterprise subscriber who is a member of your account you get one additional self-hosted concurrent job. If you need additional capacity, you can buy more. There are no monthly time limits on self-hosted CI/CD.
 
@@ -125,7 +125,7 @@ To approve releases, basic access is not necessary. Any user with [stakeholder a
 
 ### Are there any limits on the number of builds and release definitions that I can create?
 
-No. You can create hundreds or even thousands of definitions for no charge. You can register any number of private agents for no charge.
+No. You can create hundreds or even thousands of definitions for no charge. You can register any number of self-hosted agents for no charge.
 
 ### I use XAML build controllers with my account. How am I charged for those?
 

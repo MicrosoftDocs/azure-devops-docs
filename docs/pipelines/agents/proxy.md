@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Run a private agent behind a web proxy
+# Run a self-hosted agent behind a web proxy
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
-This topic explains how to run a v2 private agent behind a web proxy. 
+This topic explains how to run a v2 self-hosted agent behind a web proxy. 
 
 ::: moniker range=">= tfs-2018"
 
@@ -25,7 +25,7 @@ This topic explains how to run a v2 private agent behind a web proxy.
 
 (Applies to agent version 2.122 and newer.)
 
-When your private agent is behind a web proxy, you can:
+When your self-hosted agent is behind a web proxy, you can:
 
 * Allow your agent to connect to VSTS or TFS behind a web proxy.
 

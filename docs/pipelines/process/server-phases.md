@@ -54,7 +54,7 @@ YAML is not yet supported in TFS.
 
 Use the phase timeout to specify the timeout in minutes for jobs in this phase. A zero
   value for this option means that the timeout is effectively infinite and so, by default, jobs run until they complete or fail.
-  You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). Jobs targeting hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
+  You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
 
 # [Web](#tab/web)
 

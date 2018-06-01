@@ -88,7 +88,7 @@ In this task you will create a Release Definition with a single environment call
 
 1. Click the link labelled "1 phase(s), 0 task(s)" in the AzureVM environment card to open the phases/tasks editor for the environment.
 
-1. Click on the "Agent Phase" row and change the Queue to "default" so that your private agent executes the release tasks for this phase of the release.
+1. Click on the "Agent Phase" row and change the Queue to "default" so that your self-hosted agent executes the release tasks for this phase of the release.
 
     ![Edit the phase settings](../_img/releasemanagement/edit-phase-settings.png)
 

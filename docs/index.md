@@ -218,7 +218,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Microsoft-hosted and Self-hosted Agents</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
                                     </ul>
                                     <h3>Testing</h3>
@@ -498,7 +498,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Hosted &amp; Private Agents</h3>
+                                                    <h3>Microsoft-hosted &amp; Self-hosted Agents</h3>
                                                     <p>Add agents as needed to support your cloud build processes.</p>
                                                 </div>
                                             </div>

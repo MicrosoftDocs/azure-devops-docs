@@ -103,7 +103,7 @@ Enable this feature for your account when you want notifications to be sent by d
 <a id="task-tool-installers">  </a>
 ### Task tool installers
 
-You can use tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on hosted agents and test and validate your app on multiple versions of a tool set. 
+You can use tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on Microsoft-hosted agents and test and validate your app on multiple versions of a tool set. 
 
 -->
 

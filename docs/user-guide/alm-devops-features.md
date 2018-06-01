@@ -1093,7 +1093,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Build agents and agent pools </b></p>
-<p>At least one [agent](../pipelines/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or hosted agent pools.</p>
+<p>At least one [agent](../pipelines/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or Microsoft-hosted agent pools.</p>
 
 
 <p><b>Gated check-in (TFVC, VSTS) </b></p>
