@@ -107,7 +107,7 @@ Check out the [README.md in the GitHub repository](https://github.com/Microsoft/
 ## Frequently asked questions (FAQ)
 
 **Q: What platforms does the extension run on?**
-**A:** The extension runs on Linux, macOS, and Windows (we've tested on RedHat, Ubuntu, and CentOS).
+**A:** The extension runs on Linux, macOS, and Windows (we've tested on Red Hat, Ubuntu, and CentOS).
 
 **Q: Does the Visual Studio Code extension support Team Foundation Server (on-premises)?**
 **A:** Yes! With version 1.103.0 the extension supports Team Foundation Server 2015 Update 2 and later.

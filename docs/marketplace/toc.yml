@@ -51,11 +51,11 @@
   - name: Recommended extensions
     items:
     - name: Code search extension
-      href: ../search/overview.md
+      href: ../project/search/overview.md
     - name: Package Management extension
       href: ../package/overview.md
     - name: Work item search extension
-      href: ../search/workitem/work-item-search.md
+      href: ../project/search/work-item-search.md
   - name: Build extensions
     href: ../extend/index.md#extensions
   - name: How to buy TFS CALs

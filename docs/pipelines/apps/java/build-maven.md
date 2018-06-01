@@ -74,7 +74,7 @@ The sample app in this repository is a Java servlet using JavaServer Pages (JSP)
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a hosted agent with the Java Development Kit (JDK) installed.
+ * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with the Java Development Kit (JDK) installed.
 
  * **TFS:** Select a queue that includes an agent with the Java Development Kit (JDK) and Maven installed.
 

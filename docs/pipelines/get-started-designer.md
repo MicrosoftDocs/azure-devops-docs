@@ -13,78 +13,40 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# CI/CD Hello world
-
-**VSTS | TFS 2018 RTM | TFS 2017.3**
-
-What is continuous integration (CI)? What is continuous deployment (CD)? Why should I care? How do I get started using Team Build and Release Management?
-
-Are any of these questions on your mind? If so, then you've come to the right place. We'll show you how to create a CI build that prints "Hello world" and then automatically creates a CD release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your team project.
-
-::: moniker range="tfs-2017"
-
-> [!NOTE]
->
-> To follow this tutorial, you must be using TFS 2017.3.
-
-::: moniker-end
-
-
-## A quick introduction to CI/CD
-
-![A typical release pipeline for web applications](./_img/get-started-designer/ReleasePipeline.png)
-
-CI means starting an automated build (and possibly running tests) whenever new code is committed to or checked into the team project's source control repository. This gives you immediate feedback that the code builds and can potentially be deployed.
-
-CD means starting an automated deployment process whenever a new successful build is available.
-
-Together, CI and CD mean that any code changes you commit to your repository are quickly validated and deployed to a test server, a live web site, or wherever you need it.
-
-Wanna try it?
+# Create your first build and release
 
 ::: moniker range="vsts"
 
-## Get set up with VSTS
-
-> Do you already have access to a VSTS account and to a team project that has a Git repo? And do you already have [permissions to create builds](policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to create a new account and there's no charge.
-
-1. [Create a new account in VSTS](http://go.microsoft.com/fwlink/?LinkId=307137).
-
-1. If you're prompted, then sign in using your personal Microsoft account or your work or school account. (Need help signing up? See [Sign up for VSTS](../accounts/create-account-msa-or-work-student.md).)
-
-1. Create a Visual Studio Team Service account. Keep the option to use **Git** selected.
-
- <img style="border: 1px solid #CCCCCC;" src="_img/get-started-designer/create-team-services-account.png" />
-
-1. Select the option to **initialize with a README or gitignore** and choose **Initialize**.
-
-1. You see the home page for your first team project with a simple README.md file.
+We'll show you how to use VSTS pipelines to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your team project. You'll also become familiar with all the basic concepts of VSTS pipelines.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < vsts"
+::: moniker range="< vsts"
 
-## Get set up with TFS
-
-> Do you already have access to TFS and to a team project? And do you already have [permissions to create builds](policies/permissions.md)? If so, then you can [skip to the next section](#add-script). If you're not sure, it takes just a moment to set up TFS and create a project.
-
-1. [Get started with TFS](https://docs.microsoft.com/tfs/server/install/single-server).
-
-1. [Create a team project](https://docs.microsoft.com/vsts/accounts/create-team-project?view=tfs-2018).
-
-1. Select the option to **initialize with a README or gitignore** and choose **Initialize**.
-
-1. You see the home page for your first team project with a simple README.md file.
+We'll show you how to use TFS to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your team project. You'll also become familiar with all the basic concepts of build and release in TFS.
 
 ::: moniker-end
 
-<h2 id="add-script">Add a script to your repository</h2>
+## Prerequisites
+
+::: moniker range="vsts"
+
+[!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+* A [self-hosted Windows agent](agents/v2-windows.md).
+
+::: moniker-end
+
+<a name="add-script"></a>
+## Add a script to your repository
 
 Create a PowerShell script that prints `Hello world`.
 
 1. Go to the **Code** hub.
-
- ![Project home page with code hub highlighted](_img/get-started-designer/project-home-page-click-code-hub.png)
 
 1. Add a file.
 
@@ -283,7 +245,7 @@ Save and queue a build manually and test your build definition.
 
 1. On the dialog box select **Save & queue** once more.
 
-   This queues a new build on the hosted agent. 
+   This queues a new build on the Microsoft-hosted agent. 
    
 1. You see a link to the new build on the top of the page. 
 
@@ -376,6 +338,10 @@ Write-Host Trigger: $trigger
  ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log.png)
 
 > We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](build/variables.md).
+
+## You've got a build definition. What's next?
+
+You've just created a build definition that automatically builds and validates whatever code is checked in by your team. At this point you can continue to the next section to learn about release definitions. Or, if you prefer, you can [skip ahead](#next-steps) to create a build pipeline for your app.
 
 ## Create a release definition
 
@@ -582,6 +548,23 @@ We hope this tutorial gave you an understanding of the basic concepts of Team Bu
 
 * [Build and deploy your app](apps/index.md)
 
+<a name="next-steps"></a>
+## Next steps
+
+You've just learned the basics of using the designer to create and run a VSTS build and release process.
+Now you're ready to configure your build definition for the programming language you're using.
+Go ahead and create a new build pipeline, and this time, use one of the following templates.
+
+| Language | Template to use | 
+|-|-|
+| [.NET](apps/aspnet/build-aspnet-4.md) | ASP.NET |
+| [.NET Core](apps/aspnet/build-aspnet-core.md) | ASP.NET Core |
+| [C++](apps/windows/cpp.md) | .NET Desktop | 
+| [Go](apps/go/go.md) | Go |
+| [Java](apps/java/build-gradle.md) | Gradle |
+| [JavaScript](apps/nodejs/build-gulp.md) | NodeJS with Gulp (Grunt is also an option)|
+| [Xcode](apps/mobile/xcode-ios.md) | Xcode |
+
 ## Q&A
 
 ### Where can I read articles about DevOps and CI/CD?
@@ -593,7 +576,8 @@ We hope this tutorial gave you an understanding of the basic concepts of Team Bu
 
 [What is DevOps?](/azure/devops/what-is-devops)
 
-<h3 id="version-control">What kinds of version control can I use</h3>
+<a name="version-control"></a>
+### What kinds of version control can I use
 
 We've used a Git repository in VSTS to keep things focused on CI/CD for this tutorial.
 
@@ -655,7 +639,8 @@ When you're ready you can publish the draft to merge the changes into your build
 
 Or, if you decide to discard the draft, you can delete it from the **All Definition** tab shown above.
 
-<h3 id="queueabuild">What else can I do when I queue a build?</h3>
+<a name="queueabuild"></a>
+### What else can I do when I queue a build?
 
 You can queue builds [automatically](build/triggers.md) or manually.
 
@@ -677,7 +662,7 @@ When you manually queue a build, you can, for a single run of the build:
 
  - Specify the source version as a [label](https://msdn.microsoft.com/en-us/library/ms181439.aspx) or [changeset](https://msdn.microsoft.com/en-us/library/ms181408.aspx).
 
- - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [hosted agent](agents/hosted.md) or a [private agent](agents/agents.md).)
+ - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
 
 ### Where can I learn more about build definition settings?
 

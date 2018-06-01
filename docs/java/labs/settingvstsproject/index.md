@@ -28,7 +28,7 @@ This exercise will walk you through the steps to creating your Visual Studio Tea
 
 ## (Optional) Generate a VSTS Personal Access Token (PAT)
 
-In this task you will generate a personal access token for yourself. PATs essentially are alternate passwords. You need them to integrate VSTS with non-Microsoft tools such as Git, XCode, etc. You will need PAT to provision your project using the demo generator or to connect a private agent to your VSTS account.
+In this task you will generate a personal access token for yourself. PATs essentially are alternate passwords. You need them to integrate VSTS with non-Microsoft tools such as Git, XCode, etc. You will need PAT to provision your project using the demo generator or to connect a self-hosted agent to your VSTS account.
 
 > [!TIP]
 > If you already have a PAT, you can skip this step and use your existing PAT (assuming it has the correct scopes).

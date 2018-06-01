@@ -17,7 +17,7 @@ ms.date: 12/30/2016
 
 You can use the Failure Analysis report to help monitor how many regressions the test team is finding. Regressions are bugs in the software that you are testing that did not appear in previous versions. A team that performs regression testing is specifically focused on finding bugs that have appeared only in a new version of the software. The Failure Analysis report shows how many distinct configurations for each Test Case previously passed and are now failing, for the most recent four weeks.  
   
- This report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md). For information about how to access this report, see [Excel reports](excel-reports.md).  
+ This report is available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md). For information about how to access this report, see [Excel reports](excel-reports.md).  
   
 > [!NOTE]
 >  You can view the Failure Analysis report from the Test dashboard. You can access this dashboard only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition.  

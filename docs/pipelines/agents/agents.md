@@ -8,10 +8,9 @@ ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 08/26/2016
+ms.date: 05/31/2018
 monikerRange: '>= tfs-2015'
 ---
-
 
 # Build and Release Agents
 
@@ -23,19 +22,19 @@ When your build or deployment runs, the system begins one or more jobs. An agent
 
 ::: moniker range="vsts"
 
-## Hosted agents
+## Microsoft-hosted agents
 
 [!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
-[Learn more about hosted agents](hosted.md).
+[Learn more about Microsoft-hosted agents](hosted.md).
 
 ::: moniker-end
 
-<h2 id="install">Private agents</h2>
+<h2 id="install">Self-hosted agents</h2>
 
-An agent that you set up and manage on your own to run build and deployment jobs is a **private agent**. You can use private agents in VSTS or Team Foundation Server (TFS). Private agents give you more control to install dependent software needed for your builds and deployments.
+An agent that you set up and manage on your own to run build and deployment jobs is a **self-hosted agent**. You can use self-hosted agents in VSTS or Team Foundation Server (TFS). Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 
-You can install the agent on Windows, Linux, or macOS machines. You can also install an agent on a Linux Docker container.
+You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Linux Docker container.
 
 After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
 
@@ -44,13 +43,13 @@ After you've installed the agent on a machine, you can install any other softwar
 ### Install and connect to VSTS and TFS 2017 and newer
 
 > [!TIP]
-> Is your code in VSTS? If so, before you install an agent you might want to see if the hosted pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
+> Is your code in VSTS? If so, before you install an agent you might want to see if a Microsoft-hosted agent pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
 
-* [Windows agent v2](v2-windows.md)
 * [macOS agent](v2-osx.md)
+* [Red Hat agent](v2-linux.md)
 * [Ubuntu 14.04 agent](v2-linux.md)
 * [Ubuntu 16.04 agent](v2-linux.md)
-* [RedHat agent](v2-linux.md)
+* [Windows agent v2](v2-windows.md)
 
 ::: moniker-end
 
@@ -58,25 +57,29 @@ After you've installed the agent on a machine, you can install any other softwar
 
 ### Install and connect to TFS 2015
 
-* [Windows agent v1](v1-windows.md)
 * [macOS agent](v2-osx.md)
+* [Red Hat agent](v2-linux.md)
 * [Ubuntu 14.04 agent](v2-linux.md)
 * [Ubuntu 16.04 agent](v2-linux.md)
-* [RedHat agent](v2-linux.md)
+* [Windows agent v1](v1-windows.md)
 
 ::: moniker-end
 
-### Concurrent pipelines for private agents
-
-You might need more concurrent pipelines to use multiple agents at the same time:
-
 ::: moniker range="vsts"
 
-* [Concurrent pipelines in VSTS](../licensing/concurrent-jobs-vsts.md)
+### Concurrent jobs for self-hosted agents
+
+You might need more concurrent jobs to use multiple agents at the same time:
+
+* [Concurrent jobs in VSTS](../licensing/concurrent-jobs-vsts.md)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < vsts"
+
+### Concurrent pipelines for self-hosted agents
+
+You might need more concurrent pipelines to use multiple agents at the same time:
 
 * [Concurrent pipelines in TFS](../licensing/concurrent-pipelines-tfs.md)
 
@@ -138,7 +141,7 @@ The payload of the messages exchanged between the agent and TFS/VSTS are secured
 
 In TFS 2015:
 
-* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for macOS and Linux) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
+* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
 
 * The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../security/websitesettings.md) between the agent and TFS.
 
@@ -147,12 +150,12 @@ In TFS 2015:
 ### Communication to deploy to target servers
 
 When you use the agent to deploy artifacts to a set of servers, it must have "line of sight"
-connectivity to those servers. The hosted pool, by default, has
-connectivity to Windows Azure websites and Windows servers running in Azure.
+connectivity to those servers. The Microsoft-hosted agent pools, by default, have
+connectivity to Azure websites and servers running in Azure.
 
-If your on-premises environments do not have connectivity to the hosted pool
+If your on-premises environments do not have connectivity to a Microsoft-hosted agent pool
 (which is typically the case due to intermediate firewalls), you'll need to
-manually configure a private agent on on-premises computer(s). The agents must have connectivity to the target
+manually configure a self-hosted agent on on-premises computer(s). The agents must have connectivity to the target
 on-premises environments, and access to the Internet to connect to VSTS or Team Foundation Server,
 as shown in the following schematic.
 
@@ -237,16 +240,15 @@ You can view the version of an agent by navigating to the **Agent pools** hub an
 
 ## Q&A
 
-<h3 id="private-agent-performance-advantages">Do private agents have any performance advantages over hosted agents?</h3>
+<h3 id="private-agent-performance-advantages">Do self-hosted agents have any performance advantages over Microsoft-hosted agents?</h3>
 
 In many cases, yes. Specifically:
 
-* If you use a private agent you can run incremental builds. For example, you define a CI build process that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a hosted agent, you don't get these benefits because the agent is destroyed after the build or release process is completed.
+* If you use a self-hosted agent you can run incremental builds. For example, you define a CI build process that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits because the agent is destroyed after the build or release process is completed.
 
-* A hosted agent can take longer to start your build. While it often takes just a few seconds for your job to be assigned to a hosted agent, it can sometimes take several minutes for an agent to be allocated depending on the load on our system.
+* A Microsoft-hosted agent can take longer to start your build. While it often takes just a few seconds for your job to be assigned to a Microsoft-hosted agent, it can sometimes take several minutes for an agent to be allocated depending on the load on our system.
 
-
-### Can I install multiple private agents on the same machine?
+### Can I install multiple self-hosted agents on the same machine?
 
 Yes. This approach can work well for agents that run jobs that don't consume a lot of shared resources. For example, you could try it for agents that run releases that mostly orchestrate deployments and don't do a lot of work on the agent itself.
 

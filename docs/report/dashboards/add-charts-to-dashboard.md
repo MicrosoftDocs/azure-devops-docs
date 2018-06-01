@@ -93,7 +93,7 @@ Each time a release is deployed, it logs information about the release to each o
 <a id="test-result">  </a>  
 ## Add a test status or result chart  
 
-As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../manual-test/getting-started/track-test-status.md).  
+As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../test/track-test-status.md).  
 
 >[!NOTE]  
 >You can also add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 

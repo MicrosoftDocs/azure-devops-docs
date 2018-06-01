@@ -191,7 +191,7 @@ If you use [Microsoft Project](../../backlogs/office/create-your-backlog-tasks-u
  
 ### Test user stories
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../manual-test/getting-started/create-test-cases.md). Or, you can link a user story to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
+From the web portal or Test Manager, you can [create test cases that automatically link to a user story or bug](../../../test/create-test-cases.md). Or, you can link a user story to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
 
 ![Test plan web portal](_img/IC793453.png)
 

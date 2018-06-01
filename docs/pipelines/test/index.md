@@ -61,6 +61,6 @@ choose the technologies and frameworks, then test your changes continuously in a
 ## Resources
 
 * [Plug-ins for Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246630)
-* [Manual and exploratory testing](../../manual-test/index.md)
-* [Load and performance testing](../../load-test/index.md) 
+* [Manual and exploratory testing](../../test/index.md)
+* [Load and performance testing](../../test/load-test/index.md) 
 * [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)
