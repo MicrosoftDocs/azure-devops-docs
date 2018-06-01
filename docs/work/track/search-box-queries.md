@@ -29,12 +29,12 @@ Search box queries automatically scope to the items defined to the team project 
 ::: moniker-end
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!NOTE]    
-><b>Feature availability: </b>You can add the Code Search extension or configure Work Item Search to [TFS 2017 or later versions](../../search/code/administration.md).   
+><b>Feature availability: </b>You can add the Code Search extension or configure Work Item Search to [TFS 2017 or later versions](../../project/search/administration.md).   
 
 If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../search/code/code-search.md).
+The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../project/search/code-search.md).
 
 Type the ID in the Search work items box and then choose the search icon. The Search work items box is available from a team project context.  
 
@@ -94,7 +94,7 @@ Use the `=`, `:`, and `"“` operators to specify the operations **Equals**, **C
 > ![Work search menu](_img/work-search-menu.png)   
 
 > [!NOTE]    
-> Work Item Search can be configured with TFS 2017.2 and later versions. To learn more, see [Set up and administer Microsoft Code Search and Work Item Search](../../search/code/administration.md). 
+> Work Item Search can be configured with TFS 2017.2 and later versions. To learn more, see [Set up and administer Microsoft Code Search and Work Item Search](../../project/search/administration.md). 
 
 **Without Work Item Search configured**
 

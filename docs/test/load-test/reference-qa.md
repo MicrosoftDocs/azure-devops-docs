@@ -46,7 +46,7 @@ Visual Studio Enterprise 2017 or 2015 license, or a Visual Studio Ultimate 2013 
 such as internal or pre-release apps, staging or preproduction deployments. To learn more, see 
 [Testing private and intranet applications using cloud-based load testing](clt-behind-firewall.md).
 
-Or, you can [run a load test locally using Visual Studio](../load-test/run-performance-tests-app-before-release.md).
+Or, you can [run a load test locally using Visual Studio](run-performance-tests-app-before-release.md).
 
 ### Q: Can I run cloud-based load tests on my on-premises servers or on an Azure Virtual Machine?
 

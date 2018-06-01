@@ -68,8 +68,8 @@ Specifies both work item fields and global lists that multiple team projects and
 Specifies the set of work item types that you don't want users to create manually. By default this set includes:   
 -   [Code Review Request and Code Review Response](../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
 -   [Feedback Request and Feedback Response](../../feedback/get-feedback.md)    
--   [Shared Steps and Shared Parameter](../../manual-test/getting-started/create-test-cases.md)    
--   [Test Plan and Test Suite](../../manual-test/getting-started/create-a-test-plan.md)  
+-   [Shared Steps and Shared Parameter](../../test/create-test-cases.md)    
+-   [Test Plan and Test Suite](../../test/create-a-test-plan.md)  
   
 You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. 
 

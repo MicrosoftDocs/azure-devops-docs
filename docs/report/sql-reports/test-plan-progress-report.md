@@ -17,7 +17,7 @@ ms.date: 10/17/17
 
 After the team creates test plans and starts to run tests by using the test management tools provided with Team Foundation Server (TFS) which include Test Runner, Microsoft Test Manager, or Team Web Access (TWA) Test hub. With the Test Plan Progress report, you can track the team's progress in testing the product.  
   
- For information about how to define test suites and test plans, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
+ For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md).  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
@@ -30,13 +30,13 @@ After the team creates test plans and starts to run tests by using the test mana
 -   The team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node. If you need to add reports, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
   
 ##  <a name="Data"></a> Data in the Report  
- The data that appears in the Test Plan Progress report is derived from the data warehouse and the test results that are generated when tests are run by using Microsoft Test Manager. The report presents an area graph that shows the most recent result of running any test in the specified test plans over time. For more information, see [Run your tests](../../manual-test/getting-started/run-manual-tests.md).  
+ The data that appears in the Test Plan Progress report is derived from the data warehouse and the test results that are generated when tests are run by using Microsoft Test Manager. The report presents an area graph that shows the most recent result of running any test in the specified test plans over time. For more information, see [Run your tests](../../test/run-manual-tests.md).  
   
  The following illustration shows an example of a Test Plan Progress report:  
   
  ![Example Test Plan Progress report](_img/procguid_reports_testprogress.png "ProcGuid_Reports_TestProgress")  
   
- The horizontal axis shows days in a sprint or iteration, and the vertical axis shows test points. A test point is a pairing of a test case with a test configuration in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../manual-test/getting-started/track-test-status.md). The following table describes the meaning of each test result:  
+ The horizontal axis shows days in a sprint or iteration, and the vertical axis shows test points. A test point is a pairing of a test case with a test configuration in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../test/track-test-status.md). The following table describes the meaning of each test result:  
   
 |Test result|Description|  
 |-----------------|-----------------|  

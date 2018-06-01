@@ -33,7 +33,7 @@ Automate test cases in your test plans and run them directly from the **Test** h
 <a name="prerequisites"></a>
 You will need:
 
-* A [test plan](../../manual-test/getting-started/create-a-test-plan.md)
+* A [test plan](../../test/create-a-test-plan.md)
   containing your automated tests, which you have associated with automated test methods using 
   [Visual Studio 2017](associate-automated-test-with-test-case.md), 
   or [Visual Studio 2015 or earlier](https://msdn.microsoft.com/en-us/library/dd380741%28v=vs.120%29.aspx).

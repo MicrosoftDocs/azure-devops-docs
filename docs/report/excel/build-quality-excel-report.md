@@ -29,7 +29,7 @@ Teams who are responsible for testing software can use the Build Quality report 
     > [!NOTE]
     >  You can view the Build Quality report if you open Team Explorer, open the team project, open the **Excel Reports** folder, and open the **Test Team Management** folder. You can access this folder only if your team project portal has been enabled and is configured to use SharePoint Server Enterprise Edition. For more information, see [Share information using the project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md).  
   
- These reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md). For information about how to access this report, see [Excel reports](excel-reports.md).  
+ These reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md). For information about how to access this report, see [Excel reports](excel-reports.md).  
   
  **Required permissions**  
   
@@ -67,7 +67,7 @@ Teams who are responsible for testing software can use the Build Quality report 
   
      For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).  
   
--   **Run tests**. For more information, see [Run your tests](../../manual-test/getting-started/run-manual-tests.md).  
+-   **Run tests**. For more information, see [Run your tests](../../test/run-manual-tests.md).  
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.  
   

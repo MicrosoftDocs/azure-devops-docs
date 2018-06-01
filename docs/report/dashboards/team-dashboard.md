@@ -63,7 +63,7 @@ Either choose the context menu for the item that you want to remove and select U
 
 - [Define queries](../../work/track/using-queries.md) 
 - [Define builds](../../pipelines/overview.md) 
-- [Test charts](../../manual-test/getting-started/track-test-status.md) 
+- [Test charts](../../test/track-test-status.md) 
 
 
 <a id="switch-team-context">  </a>
