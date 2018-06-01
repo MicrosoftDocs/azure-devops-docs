@@ -111,9 +111,9 @@ If your build definition is configured with secrets, these builds will immediate
 
 A GitHub user can fork your repository, change it, and create a pull request to propose changes to your repository. Such a pull request could contain malicious code to run as part of your triggered build. For example, an ill-intentioned script or unit test change could leak secrets or compromise the agent machine performing the build. The following steps are recommended to mitigate this risk:
 
-1. Use a VSTS [hosted agent](../agents/hosted.md) to build pull requests from forks. Hosted agents are immediately deleted after they complete a build, so there is no lasting impact if they are compromised.
+1. Use a VSTS [Microsoft-hosted agent](../agents/hosted.md) to build pull requests from forks. Microsoft-hosted agents are immediately deleted after they complete a build, so there is no lasting impact if they are compromised.
 
-1. If you must use a [private agent](../agents/agents.md#install), do not store secrets or perform other builds or releases on the same agent, unless your repository is private and you trust pull request creators. Otherwise, secrets could leak and the repository contents or secrets of other builds and releases could be revealed.
+1. If you must use a [self-hosted agent](../agents/agents.md#install), do not store secrets or perform other builds or releases on the same agent, unless your repository is private and you trust pull request creators. Otherwise, secrets could leak and the repository contents or secrets of other builds and releases could be revealed.
 
 1. If your repository is public, do not enable the checkbox labeled **Make secrets available to builds of forks**. Otherwise, secrets could leak during a build.
 

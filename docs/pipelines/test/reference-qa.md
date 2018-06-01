@@ -284,9 +284,9 @@ to cater for parallel requests. If sufficient agents are not available,
 runs can still be triggered but releases will be queued for processing
 until agents are available.
 
-* You have sufficient concurrent pipelines to enable concurrent releases.
-See [Concurrent pipelines in VSTS](../../pipelines/licensing/concurrent-jobs-vsts.md) 
-or [Concurrent pipelines in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information. 
+* You have sufficient concurrent jobs to enable concurrent releases.
+See [Concurrent jobs in VSTS](../../pipelines/licensing/concurrent-jobs-vsts.md) 
+or [Concurrent jobs in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information. 
 
 * Testers do not run the same tests in parallel. Doing so may cause
 results to be overwritten depending on the order of execution.

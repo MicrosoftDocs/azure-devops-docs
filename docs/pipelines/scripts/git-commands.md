@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 For some workflows you need your build process to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.  
 
-Git.exe is available on [hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
+Git.exe is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
 
 
 <a name="enable"></a>

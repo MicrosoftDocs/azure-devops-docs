@@ -108,7 +108,7 @@
       href: agents/agents.md
     - name: Agent pools and queues
       href: agents/pools-queues.md
-    - name: Hosted agents
+    - name: Microsoft-hosted agents
       href: agents/hosted.md
     - name: Deployment groups
       href: release/deployment-groups/index.md

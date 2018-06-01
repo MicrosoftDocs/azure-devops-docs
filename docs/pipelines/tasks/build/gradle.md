@@ -35,7 +35,7 @@ monikerRange: '>= tfs-2015'
 </thead>
 <tr>
 <td>Gradle Wrapper</td>
-<td><p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script.</p>
+<td><p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script.</p>
 <p>See [The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).</p></td>
 </tr>
 <tr>

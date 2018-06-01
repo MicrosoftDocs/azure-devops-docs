@@ -41,7 +41,7 @@ The build agent must have the following capabilities:
 <tr>
 <td>Location of Gradle Wrapper</td>
 <td>
-<p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script.</p>
+<p>The location in the repository of the gradlew wrapper used for the build. For agents on Windows (including Microsoft-hosted agents), you must use the `gradlew.bat` wrapper. Agents on Linux or macOS can use the `gradlew` shell script.</p>
 <p>See [The Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).</p>
 </td>
 </tr>

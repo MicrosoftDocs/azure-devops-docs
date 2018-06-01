@@ -142,8 +142,8 @@ For the latest set of supported services, see [Integrate with service hooks](../
 
 The following services support your DevOps operations.
 
-- Cloud-based build and deployment hosted agents  
-- On-premises private agents to support build and deployment  
+- Cloud-based build and deployment Microsoft-hosted agents  
+- On-premises self-hosted agents to support build and deployment  
 - Cloud-based performance/load testing lets you load test your code by simulating high traffic  
 
 To learn more, see [Pricing](https://www.visualstudio.com/team-services/pricing/).
