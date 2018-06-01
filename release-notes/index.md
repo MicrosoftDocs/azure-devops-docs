@@ -3609,8 +3609,8 @@ Versions in the “Server” column are linked to the appropriate download locat
 <tbody>
         <tr>
           <td style="background:rgb(231, 179, 249);">2018.2</td>
-          <td>TBD</td>
-          <td>TBD</td>
+          <td>May 7, 2018</td>
+          <td>16.131.27701.1</td>
         </tr>
          <tr>
           <td style="background:rgb(216, 194, 239);">[2018.1](https://aka.ms/tfs2018-update1)</td>
