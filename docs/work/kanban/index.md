@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 03/20/2018
 ---
@@ -100,9 +101,9 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Backlogs](../backlogs/index.md)
 - [Scrum](../scrum/index.md)
 - [Work item queries](../track/index.md)
-- [Work item customization](../customize/index.md)
-- [What is Agile?](https://www.visualstudio.com/learn/what-is-agile/)   
-- [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
+- [Work item customization](../customize/index.md) 
+- [What is Agile?](/azure/devops/agile/what-is-agile)   
+- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
 
 
 <!--- 

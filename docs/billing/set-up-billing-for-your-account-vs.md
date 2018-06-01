@@ -1,6 +1,6 @@
 ---
-title: Set up billing for VSTS 
-description: Use an Azure subscription to pay for users, CI/CD concurrency, extensions, and cloud-based load testing for VSTS
+title: Start to set up your billing account for VSTS
+description: Use an Azure subscription to pay for users, CI/CD concurrency, extensions, and cloud-based load testing for VSTS (Visual Studio Team Services)
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/24/2018
+ms.date: 05/17/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -16,19 +16,19 @@ ms.date: 04/24/2018
 
 **VSTS**
 
-Normally, the best way to set up billing for your VSTS account is to simply make a purchase. During that process we'll prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
-This quickstart will help you set up billing for your VSTS account in advance of making purchases, so that you'll have this in place once you're ready to buy.
+Make a purchase in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) to set up billing for your VSTS account. During that process we'll prompt you for an Azure subscription where charges should apply and allow you to create a new Azure subscription if you don't have one already.
+This quickstart will help you set up billing for your VSTS account in advance of making purchases, so that you'll have this in place once you're ready to buy, however the preferred method is to simply make an initial purchase.
 
 **All VSTS services are billed via Azure**, and you are not required to use any other Azure services.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, [create one](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin. Please note that the Azure Free Trial is not supported.
 
 ## Prerequisites
 
 The first time that you set up billing for your VSTS account - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
 * [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
-* An Azure subscription you can use to purchase
+* [An Azure subscription you can use to purchase](https://docs.microsoft.com/en-us/vsts/billing/add-backup-billing-managers?view=vsts)
 
 To make subsequent edits to paid quantities in your VSTS account, you only need have access to purchase on the Azure subscription.
 
@@ -72,6 +72,6 @@ If you'd like to set up billing for your account prior to buying something in th
 
 ## Related articles
 
+* [Billing FAQ](https://docs.microsoft.com/en-us/vsts/billing/vsts-billing-faq?view=vsts)
 * [Add a backup billing manager](add-backup-billing-managers.md)
 * [Change the subscription](https://docs.microsoft.com/en-us/vsts/billing/change-azure-subscription?view=vsts) for billing.
-* [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)

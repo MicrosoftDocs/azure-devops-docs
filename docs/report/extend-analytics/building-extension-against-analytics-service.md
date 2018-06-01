@@ -7,13 +7,14 @@ ms.technology: devops-analytics
 ms.assetid: B1CAEAB1-3D8F-44FA-A2FD-CA24695AEE86
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 ms.date: 11/13/2017
 ---
 
 # Build a hub extension that calls the Analytics Service 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 Building an extension that calls the Analytics Service is identical to building any other extension. However,
 in this early stage, a few things have to be done manually at this point - and then there's working

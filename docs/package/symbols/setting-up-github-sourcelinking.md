@@ -9,7 +9,7 @@ ms.date: 03/02/2018
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual
-author: midenn
+monikerRange: '>= tfs-2017'
 ---
 
 # Setting up GitHub Source Linking with VSTS Build & VSTS Symbol Server
@@ -74,5 +74,5 @@ No, currently the Source Link implementation in Visual Studio is not designed to
 ## Reference Information
 
 - [VSTS is now a Symbol Server](https://blogs.msdn.microsoft.com/devops/2017/11/15/vsts-is-now-a-symbol-server/)
-- [Publish Symbols for Debugging](https://docs.microsoft.com/en-us/vsts/build-release/symbols/)
-- [Build: Index & Publish Symbols](https://docs.microsoft.com/en-us/vsts/build-release/tasks/build/index-sources-publish-symbols)
+- [Publish Symbols for Debugging](https://docs.microsoft.com/en-us/vsts/pipelines/symbols/)
+- [Build: Index & Publish Symbols](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/index-sources-publish-symbols)

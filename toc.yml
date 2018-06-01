@@ -17,7 +17,7 @@
   - name: Get started tracking work
     href: work/overview.md
   - name: Get started with CI/CD
-    href: build/get-started/ci-cd-part-1.md
+    href: pipelines/get-started-designer.md
   - name: Get started testing
     href: test/index.md
   - name: Get started as a Stakeholder

@@ -1,11 +1,15 @@
 ---
-title: Query for linked work items (VSTS) 
-description: How to query for linked work items using the Analytics service for Visual Studio Team Services (VSTS)  
+title: Query for linked work items 
+titleSuffix: VSTS 
+description: How to guidance for creating a query for linked work items using the Analytics service for Visual Studio Team Services   
 ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
@@ -20,7 +24,7 @@ There are two ways to query for linked work items. The first is the Parent/Child
 
 In this topic you'll learn: 
 
-> [!div class="checklist"]     
+> [!div class="checklist"]
 > * How to construct a query to return hierarchically (parent-child) linked work items
 > * How to construct a query to return non-hierarchically (related, direct) linked work items 
 

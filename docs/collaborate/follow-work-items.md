@@ -6,7 +6,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 03/01/2018
@@ -39,7 +40,7 @@ This topic shows you how to:
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[You must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.   
+[You must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.   
 ::: moniker-end
 
 ::: moniker range="tfs-2017"

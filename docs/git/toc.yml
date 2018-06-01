@@ -110,7 +110,7 @@
     - name: Configure branch policy for an external service
       href: how-to/pr-status-policy.md
   - name: Define a CI build for your repo
-    href: ../build-release/actions/ci-build-git.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    href: ../pipelines/build/ci-build-git.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
     href: ../work/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Import a repo from TFVC
@@ -150,7 +150,7 @@
   - name: Map TFVC actions to Git
     href: concepts/mapping-my-tfvc-actions-to-git.md
   - name: Set up continuous integration
-    href: ../build-release/concepts/definitions/build/triggers.md
+    href: ../pipelines/build/triggers.md
   - name: Work with tags
     href: how-to/git-tags.md
 - name: Reference
@@ -174,23 +174,23 @@
 - name: Resources
   items:
   - name: What is Git?
-    href: https://www.visualstudio.com/learn/what-is-git/
+    href: /azure/devops/git/what-is-git
   - name: What is version control?
-    href: https://www.visualstudio.com/learn/what-is-version-control/
+    href: /azure/devops/git/what-is-version-control
   - name: Plan your migration to Git
-    href: https://www.visualstudio.com/learn/centralized-to-git/
+    href: /azure/devops/git/centralized-to-git
   - name: Migrate from TFVC to Git
-    href: https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/
+    href: /azure/devops/git/migrate-from-tfvc-to-git
   - name: Git REST APIs
     href: https://visualstudio.com/docs/integrate/api/git/overview
   - name: Pro Git
     href: https://www.git-scm.com/book/en/v2
     name: Learn Git
-    href: https://www.visualstudio.com/learn-git/
+    href: /azure/devops/git/learn-git-with-team-services/
   - name: Git at Scale
-    href: https://www.visualstudio.com/learn/git-at-scale/
+    href: /azure/devops/git/git-at-scale
   - name: How we use Git at Microsoft
-    href: https://www.visualstudio.com/learn/use-git-microsoft/
+    href: /azure/devops/devops-at-microsoft/use-git-microsoft
   - name: Marketplace extensions
     href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
   - name: IDE integration and extension

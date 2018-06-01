@@ -93,7 +93,7 @@ You can grant access to a team project by adding security groups that you create
 
 When TFS is configured with Active Directory (AD), then TFS will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-You can grant access to a team project by adding security groups that you created in AD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). 
+You can grant access to a team project by adding security groups that you created in AD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups). 
 ::: moniker-end
 
  

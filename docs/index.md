@@ -3,7 +3,8 @@ title: VSTS and TFS Documentation | VSTS & TFS
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 layout: HubPage 
 hide_bc: true
-ms.prod: vs-devops-alm 
+ms.topic: hub-page
+ms.prod: devops 
 ms.technology: vs-devops-overview 
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
@@ -35,7 +36,7 @@ featureFlags:
                 </a>
             </li>
             <li>
-                <a href="https://www.visualstudio.com/learn/devopsmsft-overview/">
+                <a href="https://docs.microsoft.com/azure/devops">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -161,13 +162,13 @@ featureFlags:
                                                         <a class="barLink" href="/vsts/marketplace/overview"><img src="_img/index/team-services-marketplace.svg" alt="" />Marketplace</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-git/"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
+                                                        <a class="barLink" href="/azure/devops/git/what-is-git"><img src="_img/index/team-services-git.svg" alt="" />Learn about Git</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-devops/"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
+                                                        <a class="barLink" href="/azure/devops/what-is-devops"><img src="_img/index/team-services-devops.svg" alt="" />Learn about DevOps</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="https://www.visualstudio.com/learn/what-is-agile/"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
+                                                        <a class="barLink" href="/azure/devops/agile/what-is-agile"><img src="_img/index/team-services-agile.svg" alt="" />Learn about Agile</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -180,9 +181,10 @@ featureFlags:
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h3>Command-line tool</h3>
+                                                <h3>Tools</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="_img/index/command-line-window.svg" alt="" />VSTS CLI</a></li>
+                                                    <li><a class="barLink" href="demo-gen/index.md"><img src="_img/index/logo_vs-team-services.svg" alt="" />VSTS Demo Generator</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -261,7 +263,7 @@ featureFlags:
                                     <h3>Admin</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
-                                        <li><a class="barLink" href="/vsts/tfs-server/index">Server Administration (TFS)</a></li>
+                                        <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
@@ -938,7 +940,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfs-server/index">
+                                <a href="/tfs/server/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

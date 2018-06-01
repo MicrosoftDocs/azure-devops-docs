@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 10/17/2017
 ---
@@ -19,13 +20,13 @@ As your organization grows, you'll want to make sure that you configure your Agi
 
 > [!NOTE]    
 >This topic describes how to add a team or team members to VSTS and TFS. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
->
->For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](https://www.visualstudio.com/learn/scale-agile-large-teams/) article.
+>/azure/devops/agile/scale-agile-large-teams
+>For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/agile/scale-agile-large-teams) article.
 
 <!---
 In this topic you'll learn:  
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to add a team, moving from one team to two teams   
 > * How to add team members  
 > * How to move work items assigned to one team to another team  
@@ -101,7 +102,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 > [!NOTE]   
 > If you use VSTS, you must first [add user accounts to the team project](../../accounts/add-account-users-assign-access-levels.md) or [setup your account to work with Azure AD](../../accounts/access-with-azure-ad.md). This way user accounts will be available to add to a team.
 >
->For TFS, the first time you add an account you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md).
+>For TFS, the first time you add an account you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 
 <!---
 #### VSTS, TFS 2017  
@@ -141,7 +142,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 2. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. 
 
-	The first time an account is added to TFS, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](../../tfs-server/admin/setup-ad-groups.md). </p>
+	The first time an account is added to TFS, you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups). </p>
 
 	<img src="_img/scale-agile-add-team-members-user-accounts.png" alt="Type the account aliases and check name" style="border: 1px solid #C3C3C3;" /> 
 

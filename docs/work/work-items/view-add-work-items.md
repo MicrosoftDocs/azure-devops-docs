@@ -1,5 +1,5 @@
 ---
-title: View & add work items
+title: View & add work items from the Work Items page
 titleSuffix: VSTS  
 description: Use the Work Items page to view and add work items that support 7 personalized pivot views       
 ms.global_help.title: View & add work items
@@ -19,7 +19,7 @@ ms.date: 03/20/2018
 
 # View and add work items using the Work Items page  
 
-**VSTS**  
+**VSTS | TFS 2018.2**  
 
 View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
 
@@ -155,7 +155,7 @@ For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?
 
 Use the following three controls to manage your views.
 
-> [!div class="mx-tdBreakAll"]   
+> [!div class="mx-tdBreakAll"]
 > | Control                  | Function                      |
 > |--------------------------|-------------------------------|
 > | ![View options](../_img/icons/view-options-icon.png) | [Set sort order, view completed items](#sort)  | 

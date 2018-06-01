@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 05/16/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -59,15 +59,17 @@ This will isolate their changes from yours until you've had a chance to vet the 
 <a name="create-fork" />
 ### Create the fork
 
-Choose the Fork button (1), then choose the project where you want the fork to be created (2).
-Give your fork a name and choose the Fork button (3).
-> You must have the Create Repository permission in your chosen project to create a fork.
-> We recommend you create a dedicated project for forks where all contributors have the Create Repository permission.
+0. Navigate to the repository to fork, and choose **Fork**.
+
+0. Specify a name, and choose the project where you want the fork to be created. If the repository contains a lot of topic branches, we recommend you fork only the default branch.
+
+0. Choose **Fork** to create the fork.
 
 ![Create new fork](_img/forks/create-new-fork.png)
 
-If the repository contains a lot of topic branches, we recommend you fork only the default branch.
-On the other hand, for a newer repository which will primarily be used with forking, we recommend choosing all branches.
+>[!NOTE]
+> You must have the [Create Repository](../../security/permissions.md#nbspnbspnbspgit-repository-object-level) permission in your chosen project to create a fork.
+> We recommend you create a dedicated project for forks where all contributors have the Create Repository permission. For an example of granting this permission, see [Set Git repository permissions](../../security/set-git-tfvc-repository-permissions.md#set-git-repository-permissions).
 
 <a name="clone-locally" />
 ### Clone your fork locally
@@ -75,12 +77,12 @@ On the other hand, for a newer repository which will primarily be used with fork
 Once your fork is ready, clone it using the [command line](../tutorial/clone.md?tabs=command-line) or an IDE like [Visual Studio](../tutorial/clone.md).
 The fork will be your `origin` remote.
 
-For convenience, you'll want to add the upstream repository (where you forked from) as a remote named `upstream`.
-On the command line, you can type:
+For convenience, after cloning you'll want to add the upstream repository (where you forked from) as a remote named `upstream`.
 
-```git remote add upstream {upstream_url}```
 
-Or, in Visual Studio, follow these steps:
+# [Visual Studio](#tab/visual-studio)
+
+To add your upstream repository in Visual Studio, follow these steps:
 
 1. Open the **Settings** page.
 
@@ -94,9 +96,25 @@ Or, in Visual Studio, follow these steps:
 
     ![Repository settings](_img/forks/vs-te-reposettings.png)
 
-4. Add a new remote called `upstream`, using the Git clone URL of the repo you forked from.
+4. Add a new remote called `upstream`, using the Git clone URL of the repo you forked.
 
     ![Dialog: add new remote](_img/forks/vs-te-new-remote.png)
+
+5. Select **Save** and the new remote is added and displayed in the repository settings.
+
+    ![New remote added](_img/forks/vs-te-upstream-added.png)
+
+# [Command Line](#tab/command-line)
+
+On the command line, navigate to your repository, and type:
+
+```git remote add upstream {upstream_url}```
+
+---
+
+
+
+
 
 <a name="push-changes" />
 ### Make and push changes
@@ -118,7 +136,8 @@ Once all policies are satisfied, the PR can be completed and the changes become 
 
 ![Pull request](_img/forks/cross-repo-pr.png)
 
-> Important note: Anyone with the Read permission can open a PR to upstream.
+>[!IMPORTANT]
+>Anyone with the [Read](../../security/permissions.md#nbspnbspnbspgit-repository-object-level) permission can open a PR to upstream.
 > If a PR build definition is configured, the build will run against the code introduced in the fork.
 
 <a name="sync-fork" />
@@ -126,15 +145,10 @@ Once all policies are satisfied, the PR can be completed and the changes become 
 
 When you've gotten your PR accepted into upstream, you'll want to make sure your fork reflects the latest state of the repo.
 We recommend rebasing on `upstream`'s `master` branch (assuming `master` is the main development branch).
-On the command line, run:
 
-```
-git fetch upstream master
-git rebase upstream/master
-git push origin
-```
+# [Visual Studio](#tab/visual-studio)
 
-Or, using Visual Studio, you can use the **Synchronization** page to fetch and rebase.
+In Visual Studio, you can use the **Synchronization** page to fetch and rebase.
 
 1. Open the **Synchronization** page in Team Explorer.
 
@@ -152,7 +166,23 @@ Or, using Visual Studio, you can use the **Synchronization** page to fetch and r
 
 Now you're all set to start your next feature on a new topic branch.
 
-<hr/>
+# [Command Line](#tab/command-line)
+
+On the command line, navigate to your repository and run:
+
+```
+git fetch upstream master
+git rebase upstream/master
+git push origin
+```
+
+---
+
+
+
+
+
+
 
 The forking workflow lets you isolate changes from the main repository until you're ready to integrate them.
 When you're ready, integrating code is as easy as completing a pull request.

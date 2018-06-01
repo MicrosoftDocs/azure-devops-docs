@@ -6,6 +6,7 @@ ms.technology: devops-ecosystem
 ms.assetid: 153aa519-6233-4292-8eac-44de15f2d3dd
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/23/2016
@@ -37,6 +38,7 @@ Develop Visual Studio Team Services extension with continuous delivery pipeline:
 ## How-to Guides
 * Develop
     * [Add a build task](develop/add-build-task.md)
+    * [Extend the work item form for work item tracking](develop/add-workitem-extension.md)
     * [Add a dashboard widget](develop/add-dashboard-widget.md)
     * [Call a REST API](develop/call-rest-api.md)
 * Package and publish

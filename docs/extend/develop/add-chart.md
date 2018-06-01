@@ -6,6 +6,7 @@ description: Add a chart to your extension in VSTS.
 ms.assetid: ff6b9bbf-fb57-469b-8191-922660393a21
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 10/10/2016
@@ -30,7 +31,7 @@ The following chart types are supported:
 0. Pivot table
 0. Histogram 
 
-> If you're in a hurry and want to get your hands on the code right away, you can download the [complete samples] (https://github.com/Microsoft/vsts-extension-samples).
+> If you're in a hurry and want to get your hands on the code right away, you can download the [complete samples](https://github.com/Microsoft/vsts-extension-samples).
 Once downloaded, go to the `charts` folder, then follow [the packaging and publishing instructions](../publish/overview.md) to publish the sample extension.
 The extension contains sample chart widgets.  
 

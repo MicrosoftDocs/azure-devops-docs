@@ -1,25 +1,26 @@
 ---
 title: Account and project scope queries
 titleSuffix: VSTS 
-description: How to query the OData Analytics service for an account or at the project-level  
+description: How to guide to query the OData Analytics service for an account or at the project-level in Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.date: 11/13/2017
 ms.reviewer: kokosins
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
 # Project and account-scoped queries
 
-[!INCLUDEÂ [temp](../../_shared/version-vsts-only.md)]Â 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Using the Analytics Service for Visual Studio Team Services (VSTS), you can construct project or account-scoped queries to return work items of interest. You run these queries directly in your browser.
 
-Project-scope queries help answer questions about a single project whereas account-scope queries allow you to answer questions which cross project boundaries. Account scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isnâ€™t blocked due to a lack of project permissions.
+Project-scope queries help answer questions about a single project whereas account-scope queries allow you to answer questions which cross project boundaries. Account scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn€™t blocked due to a lack of project permissions.
 
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
@@ -41,7 +42,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0
 The following project-scoped query will return the count of work items for a specific project:  
 
 >[!NOTE]
->If you donâ€™t have access to all projects in an account, it is recommended to apply a project filter to all of your queries. When pulling data into client tools such as Power BI Desktop or Excel, using the project path syntax is the best way to ensure that all your data is constrained by the given project. We recommend you use account-scoped queries only when you need to report on two or more projects.
+>If you don€™t have access to all projects in an account, it is recommended to apply a project filter to all of your queries. When pulling data into client tools such as Power BI Desktop or Excel, using the project path syntax is the best way to ensure that all your data is constrained by the given project. We recommend you use account-scoped queries only when you need to report on two or more projects.
 
 
 ```OData
@@ -144,7 +145,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   &$expand=Children
 ```
 
-and will fail if you donâ€™t have access to all projects.
+and will fail if you don€™t have access to all projects.
 	
 To workaround the restriction, you need to add an extra expression in the `$filter`:
 
@@ -161,7 +162,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $expand=Children($levels=2;$filter=ProjectName eq 'ProjectA')
 ```
 
-Analytics does not support any cross-level reference for projects using $it alias. As an example, the following query references the root work itemâ€™s ProjectName using $it alias, which isnâ€™t supported:
+Analytics does not support any cross-level reference for projects using $it alias. As an example, the following query references the root work item€™s ProjectName using $it alias, which isn€™t supported:
 
 ```OData
 https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?

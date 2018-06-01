@@ -2,7 +2,7 @@
 title: Task Progress Excel Report 
 description: Tracks how much work the team has completed and how much remains.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 7deef86f-987f-4b77-8acc-e31d436b48cf

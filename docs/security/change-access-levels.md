@@ -8,8 +8,8 @@ ms.assetid: 84B0D454-09A7-414B-A9E0-FE9A9ACD7E99
 ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: jrice 
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.date: 11/28/2017
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ---
@@ -53,7 +53,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	<img src="_img/access-levels-2017-stakeholder-acess.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
 
-	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
+	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 1px solid #C3C3C3;" />
 
-	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
+	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
 
 ::: moniker-end
 
@@ -91,7 +91,7 @@ You set an access level from its page. Click Set as default access level as show
 
 ## Set the access level for a user or group
 
-If you're managing access for a large group of users, a best practice is to first create either a [Windows group or TFS group](../tfs-server/admin/setup-ad-groups.md) and add individuals to those groups.
+If you're managing access for a large group of users, a best practice is to first create either a [Windows group or TFS group](/tfs/server/admin/setup-ad-groups) and add individuals to those groups.
 
 <a id="guide-features-access" >  </a>
 
@@ -103,7 +103,7 @@ You can learn more about each of the features you have access to from the follow
 > [!div class="mx-tdBreakAll"]
 > | Stakeholder access<sup> 1</sup> | Basic access<sup> 5</sup> | Advanced access (TFS 2017, TFS 2015, TFS 2013) |
 > |-------------|----------| ----------| 
-> | - View My [Work items](../work/backlogs/add-work-items.md)<br/>- Standard features: [Dashboards](../report/dashboards.md) & [Queries](../work/track/using-queries.md)<sup> 2</sup><br/>- Agile boards: [Backlogs](../work/backlogs/create-your-backlog.md), [Kanban](../work/kanban/kanban-basics.md) & [Task](../work/scrum/task-board.md) <sup> 3</sup><br/>- [View releases and manage approvals](../build-release/concepts/definitions/release/index.md)<sup> 4</sup> |- [Basic & Advanced backlog and sprint planning tools](../work/scrum/sprint-planning.md)<br/>- [Request and manage feedback](../feedback/get-feedback.md)<sup> 6</sup><br/>- [Chart viewing & Chart authoring](../report/charts.md)<br/>- Code: [Git](../git/overview.md) and [TFVC](../tfvc/overview.md)<br/>- [Build](../build-release/overview.md)<br/>- [Administer account](#administer-account)<sup> 7</sup><br/>- [Advanced home page](../work/backlogs/organize-backlog.md)<sup> 8</sup><br/>- [Web-based test execution](../manual-test/getting-started/run-manual-tests.md)<br/>- Create and manage releases<sup> 4</sup><br/>- [Author release definitions](../build-release/concepts/definitions/release/index.md)<sup> 4</sup><br/>- [Advanced portfolio management](../work/backlogs/define-features-epics.md)<br/>- [Team rooms](../collaborate/collaborate-in-a-team-room.md)<br/>- [Analyze test results and manage machine groups](https://msdn.microsoft.com/library/dd286743.aspx) |- [Web-based test case management](../manual-test/getting-started/create-a-test-plan.md)<sup> 9</sup><br/><br/>Advanced access will be deprecated in future versions of TFS.<br/><br/>**VS Enterprise (TFS 2017.2, TFS 2018)**<br/><br/>- Microsoft published TFS Extensions<sup> 10</sup> |
+> | - View My [Work items](../work/backlogs/add-work-items.md)<br/>- Standard features: [Dashboards](../report/dashboards.md) & [Queries](../work/track/using-queries.md)<sup> 2</sup><br/>- Agile boards: [Backlogs](../work/backlogs/create-your-backlog.md), [Kanban](../work/kanban/kanban-basics.md) & [Task](../work/scrum/task-board.md) <sup> 3</sup><br/>- [View releases and manage approvals](../pipelines/release/index.md)<sup> 4</sup> |- [Basic & Advanced backlog and sprint planning tools](../work/scrum/sprint-planning.md)<br/>- [Request and manage feedback](../feedback/get-feedback.md)<sup> 6</sup><br/>- [Chart viewing & Chart authoring](../report/charts.md)<br/>- Code: [Git](../git/overview.md) and [TFVC](../tfvc/overview.md)<br/>- [Build](../pipelines/overview.md)<br/>- [Administer account](#administer-account)<sup> 7</sup><br/>- [Advanced home page](../work/backlogs/organize-backlog.md)<sup> 8</sup><br/>- [Web-based test execution](../manual-test/getting-started/run-manual-tests.md)<br/>- Create and manage releases<sup> 4</sup><br/>- [Author release definitions](../pipelines/release/index.md)<sup> 4</sup><br/>- [Advanced portfolio management](../work/backlogs/define-features-epics.md)<br/>- [Team rooms](../collaborate/collaborate-in-a-team-room.md)<br/>- [Analyze test results and manage machine groups](https://msdn.microsoft.com/library/dd286743.aspx) |- [Web-based test case management](../manual-test/getting-started/create-a-test-plan.md)<sup> 9</sup><br/><br/>Advanced access will be deprecated in future versions of TFS.<br/><br/>**VS Enterprise (TFS 2017.2, TFS 2018)**<br/><br/>- Microsoft published TFS Extensions<sup> 10</sup> |
 
 ### Notes:
 

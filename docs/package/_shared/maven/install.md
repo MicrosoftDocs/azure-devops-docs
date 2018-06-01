@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Install Maven artifacts from your feed using the Maven client.
 
 The most common way to install a Maven artifact is as a dependency of another artifact.

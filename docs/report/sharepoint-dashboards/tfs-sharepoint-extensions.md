@@ -1,19 +1,19 @@
 ---
 title: TFS extensions for SharePoint Products 
 description: Understand what is installed and configured with TFS extensions for SharePoint Products 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid:  
 ms.manager: douge
 ms.reviewer: greggboe
 ms.topic: conceptual
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 11/02/2017
 ---
 
 # Team Foundation Server Extensions for SharePoint Products
 
-[!INCLUDE [temp](./_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](./_shared/about-sharepoint-deprecation.md)]
 
 The Team Foundation Server Extensions for SharePoint Products include site templates to which the process templates for TFS refer when team projects are created. You must install the extensions so that team project portals will appear and function correctly. 
 
@@ -30,4 +30,4 @@ When you create a team project, you have an option to include a SharePoint porta
 
 ## Related notes
 
-- [Configure Team Foundation Server Extensions for SharePoint Products](../../tfs-server/install/sharepoint/setup-remote-sharepoint.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 
+- [Configure Team Foundation Server Extensions for SharePoint Products](/tfs/server/install/sharepoint/setup-remote-sharepoint?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json) 

@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: Guidelines for extension developers who want to learn how to write good OData queries 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.manager: douge
 ms.reviewer: prprice
 ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 ms.date: 11/13/2017
 ---
@@ -15,7 +15,7 @@ ms.date: 11/13/2017
 # OData batch support
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Batch requests are part of the OData spec, and the Analytics service for Visual Studio Team Services (VSTS) provides limited support, as a means to submit large requests. For more information about batch operations in OData see section [11.7 Batch Requests](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752313) of the OData spec.
 

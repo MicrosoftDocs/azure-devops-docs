@@ -4,17 +4,17 @@ titleSuffix: VSTS
 description: Quick start helping users to create a trend report using an Anlytics view
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: romik
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 04/04/2018
 ---
 
 # Create a Power BI report with a default Analytics view
 
-[!INCLUDEÂ [temp](../../_shared/version-vsts-only.md)]Â 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your Visual Studio Team Services (VSTS) team project. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. 
 
@@ -33,7 +33,7 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 	c. Apply filters to your trend report    
 	d. Create a card and apply the Is Current=True filter to show current count    
 
-[!INCLUDEÂ [temp](../_shared/analytics-view-availability.md)]Â 
+[!INCLUDE [temp](../_shared/analytics-view-availability.md)] 
 
 <a id="prerequisites">  </a>
 ## Prerequisites  
@@ -47,7 +47,7 @@ In order to create a Power BI report that references an Analytics view, you must
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
 - Have tracked work items for some period of time on which to generate a trend report. 
 
-[!INCLUDEÂ [temp](../_shared/analytics-open.md)]Â 
+[!INCLUDE [temp](../_shared/analytics-open.md)] 
 
 
 ## Verify the default Analytics view for your data 
@@ -56,18 +56,18 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 0. From the **Analytics** hub **All** page, click the ![](../_img/icons/actions-icon.png) actions icon next to the default view and choose the **Edit** option. For a team project that uses the Agile process, this will be the **Stories -Last 30 days** view. 
 
-	>Â [!div class="mx-imgBorder"]
-	>Â ![Analytics hub, All page, Edit the Stories -Last 30 days view](_img\create-report\edit-default-view-last-30-days.png)
+	> [!div class="mx-imgBorder"]
+	> ![Analytics hub, All page, Edit the Stories -Last 30 days view](_img\create-report\edit-default-view-last-30-days.png)
 
 0. Choose the **Verification** tab and then the **Verify view** button. 
 
- 	>Â [!div class="mx-imgBorder"]
-	>Â ![Analytics hub, All page, Edit the Stories -Last 30 days view](_img\create-report\verify-view.png)	
+ 	> [!div class="mx-imgBorder"]
+	> ![Analytics hub, All page, Edit the Stories -Last 30 days view](_img\create-report\verify-view.png)	
 
 	Wait until the verification process completes. Verification time varies according to the amount of data defined in your view. For example, a view that includes all work item types and specifies "All history", will take more time to verify than a view that includes only stories and specifies a rolling period of 30 days.
 
- 	>Â [!div class="mx-imgBorder"]
-	>Â ![Analytics hub, All page, Edit the Stories -Last 30 days view](_img\create-report\verified-view.png)Â 
+ 	> [!div class="mx-imgBorder"]
+	> ![Analytics hub, All page, Edit the Stories -Last 30 days view](_img\create-report\verified-view.png) 
 
 0. If your view successfully verifies, then proceed to the next step. If it is unsuccessful, click the **Work Items** tab and adjust the selections to select fewer teams or specify fewer work items in the dataset.  
 
@@ -80,8 +80,8 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
  
 0. Choose **Get Data**, choose **Online Services**, then **Visual Studio Team Services (Beta)**, and then click **Connect**. 
 
-    >Â [!div class="mx-imgBorder"]
-    >Â ![Connect to VSTS data](_img/create-report/get-data-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![Connect to VSTS data](_img/create-report/get-data-2.png)
 
 0. Enter your account name and a team project for the data you want to report on.  
 
@@ -102,20 +102,20 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 0. In your report, (1) select the Line chart visual, (2) enter `work item id` in the search field, and then (3) check the box for **Work Item Id**.   
 
-    >Â [!div class="mx-imgBorder"]
-    >Â ![Select work item field](_img/create-report/select-line-chart-work-id.png)
+    > [!div class="mx-imgBorder"]
+    > ![Select work item field](_img/create-report/select-line-chart-work-id.png)
 
 	This will change your chart to a single dot.  
 
 	> [!TIP]    
-	>Â To change the chart size, choose the **View** tab, **Page View**, and then select the **Adjust Size** option as shown. You can then resize the chart to your desired dimensions.  
-	>Â 
-	>Â ![Adjust chart size](_img/active-bugs-report/adjust-view-size.png)  
+	> To change the chart size, choose the **View** tab, **Page View**, and then select the **Adjust Size** option as shown. You can then resize the chart to your desired dimensions.  
+	> 
+	> ![Adjust chart size](_img/active-bugs-report/adjust-view-size.png)  
 	
 0. Next, (1) select the **Date** field in the fields list as your axis. By default, Power BI creates a date hierarchy from any date field. To see a daily trend, (2) click the context menu icon next to the field and change it from **Date Hierarchy** to **Date**.
 
-   >Â [!div class="mx-imgBorder"]
-   >Â ![Select Date, and change date hierarchy to date](_img/create-report/select-date.png)
+   > [!div class="mx-imgBorder"]
+   > ![Select Date, and change date hierarchy to date](_img/create-report/select-date.png)
 
     > [!NOTE]
     > To view trends over time, you want to use the **Date** format and not **Date Hierarchy**. The **Date Hierarchy** in Power BI rolls ups everything into a simple number for the period. The day level in the hierarchy rolls all days to a number between 1-31. For example, April 3 and May 3 both roll up into number 3. This is not the same as counting items per actual date.
@@ -127,15 +127,15 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 	Here we've filtered the list to show work items in the Active, Committed, and In Progress states. 
 
-    >Â [!div class="mx-imgBorder"]
-    >Â ![Group by priority](_img/create-report/apply-state-filter.png)
+    > [!div class="mx-imgBorder"]
+    > ![Group by priority](_img/create-report/apply-state-filter.png)
 
 	The chart now shows a daily distinct count of user stories, grouped by Active, Committed, and In Progress.
 
 	> [!TIP]    
-	>Â If you need to modify your Analytics view, you can do so and then return to your Power BI report and refresh the data. Simply click the **Refresh** option as shown.  
-	>Â 
-	>Â ![Refresh report data](_img/active-bugs-report/refresh-report-updated-view.png)
+	> If you need to modify your Analytics view, you can do so and then return to your Power BI report and refresh the data. Simply click the **Refresh** option as shown.  
+	> 
+	> ![Refresh report data](_img/active-bugs-report/refresh-report-updated-view.png)
 
 ## Create a card to show the latest active stories count
 
@@ -145,8 +145,8 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 	The card now shows the number of active stories times the number of days each one was defined during the past 60 days. For this example, that number is 894. 
     
-    >Â [!div class="mx-imgBorder"]
-    >Â ![create a distinct count card](_img/create-report/card-active-bugs.png)
+    > [!div class="mx-imgBorder"]
+    > ![create a distinct count card](_img/create-report/card-active-bugs.png)
     
 	<!--- I'd like to understand when they would ever use the non Is Current view? ---> 
 
@@ -154,7 +154,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 	Applying this filter brings the Active stories count to 39. 
 
-    >Â [!div class="mx-imgBorder"]
+    > [!div class="mx-imgBorder"]
     > ![filter by Is Current](_img/create-report/is-current.png)
 
 	The value should match the count on the last day of the trend chart that you created in the previous section.

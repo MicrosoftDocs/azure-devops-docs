@@ -2,7 +2,7 @@
 title: Discontinue SharePoint integration
 description: Discontinue TFS 2017 and earlier versions SharePoint integration with Team Foundation Server
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: overview
 ms.manager: abjork

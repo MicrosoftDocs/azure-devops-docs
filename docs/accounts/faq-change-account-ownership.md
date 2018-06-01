@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot changing account owner for VSTS 
-description: Troubleshoot changing account owner for VSTS
+description: Troubleshoot changing VSTS account owner and account name (URL), difference between account owner and account user, frequently asked questions (FAQ)
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e0fe24d4-f76b-43af-b0fd-125a7fb39042
@@ -22,7 +22,8 @@ monikerRange: 'vsts'
 [!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
 
 <a name="NoNewOwner"></a>
-####Q: Why can't I find the user I want to make the new owner?
+
+### Q: Why can't I find the user I want to make the new owner?
 
 A: This might happen because:
 
@@ -40,29 +41,30 @@ list until they meet the requirements above.
 
 [!INCLUDE [recover-password](../_shared/qa-recover-password.md)]
 
-####Q: Can I reverse the account owner change?
+### Q: Can I reverse the account owner change?
 
 A: Yes, if you're a project collection administrator.
 
-####Q: Can I change the account name (URL) too?
+### Q: Can I change the account name (URL) too?
 
 A: Only the account owner can change the URL. 
 If you're the account owner, learn how to 
 [change the account URL here](rename-vsts-account.md).
 
-####Q:	How many account owners can I have?
+### Q :	How many account owners can I have?
 
 A:	Your account can have only one owner. 
 Only they can [perform certain actions](#owner-differences), 
 so make sure to keep your account owner updated.
 
-####Q: Why did you ask for extra information when I signed in?
+### Q: Why did you ask for extra information when I signed in?
 
 A: If our Terms of Service have changed since you last signed in, 
 you might be asked to agree and confirm that your information is up to date.
 
 <a name="owner-differences"></a>
-####Q: What makes the account owner different than other account users?
+
+### Q: What makes the account owner different than other account users?
 
 A: The account owner manages payments and access for account users and also manages billing for the account through the 
 [Azure classic portal](https://manage.windowsazure.com/) or the

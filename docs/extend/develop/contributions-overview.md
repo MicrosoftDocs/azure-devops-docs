@@ -6,6 +6,7 @@ description: Overview of the contribution model, including an overview of contri
 ms.assetid: 96509f47-bac2-4319-9085-2621ff8f814a
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

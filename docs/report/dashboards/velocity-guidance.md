@@ -1,20 +1,20 @@
 ---
-title: Velocity guidance
+title: Velocity metrics and usage guidance
 titleSuffix: VSTS & TFS 
-description: Guidance for working with velocity charts
+description: Guidance for working with velocity charts generated for a team or project in Visual Studio Team Services & Team Foundation Server
 ms.technology: devops-analytics  
 ms.prod: devops
-ms.assetid: 
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 11/16/2017
 ---
 
  
 # Velocity metrics and usage guidance 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
  
 Velocity provides a useful metric for these activities:  
 - Support sprint planning  

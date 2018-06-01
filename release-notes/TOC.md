@@ -1,5 +1,7 @@
 # [Features timeline](index.md)
 # 2018
+## [May 30](2018/may-30-vsts.md)
+## [May 7](2018/may-07-vsts.md)
 ## [April 16](2018/apr-16-vsts.md)
 ## [April 3](2018/apr-03-vsts.md)
 ## [March 5](2018/mar-05-vsts.md)

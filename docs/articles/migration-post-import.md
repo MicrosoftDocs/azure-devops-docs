@@ -3,11 +3,13 @@ title: Post Import
 description: Guidance on how to validate and configure a Visual Studio Team Services (VSTS) account after it has been imported.
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-article
+ms.technology: devops-learn
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
+monikerRange: '>= tfs-2013'
+ms.date: 04/13/2018
 ---
 
 # Post Import
@@ -39,12 +41,12 @@ Dry run imports do not have their licenses reset on the 1st of the month. Unlike
 ## Builds
 Next, you will want to configure your build agents. As part of the migration, all of your build definitions have been brought over, but agents and pools need to be reconfigured against the new VSTS account. VSTS offers the ability to use a hosted pool of build agents that you can pay to use, or you can connect your private build agent(s). It's important to note that only one private build agent is included for free. After that there is a [fee](https://www.visualstudio.com/en-us/products/visual-studio-team-services-pricing-vs.aspx) for having additional private build agents. To pay for hosted and private build agents you will need to link a subscription to your VSTS account. See the following resources for details on performing this task:
 
-* [Build Agents](../build-release/concepts/agents/agents.md) 
+* [Build Agents](../pipelines/agents/agents.md) 
 
-If you plan on using your existing on-premises private build agents, there is one more recommended step that needs to be taken after registering them to your new account. Clearing their cache will ensure that you don't encounter any build issues related to older TFVC or Git pointers to your on-premises TFS collection. See [refreshing caches on client computers](../tfs-server/admin/backup/refresh-data-caches.md) for details on how to accomplish this task. 
+If you plan on using your existing on-premises private build agents, there is one more recommended step that needs to be taken after registering them to your new account. Clearing their cache will ensure that you don't encounter any build issues related to older TFVC or Git pointers to your on-premises TFS collection. See [refreshing caches on client computers](/tfs/server/admin/backup/refresh-data-caches) for details on how to accomplish this task. 
 
 ## Release Management (Preview)
-Release Management is currently a [preview](https://aka.ms/vstsimportpreview) feature that can be included with an import. If you elected to include Release Management with your import then your release definitions and history data will be included with your import. However, like builds, [agents](../build-release/concepts/agents/agents.md) and pools need to be reconfigured against the new VSTS account. 
+Release Management is currently a [preview](https://aka.ms/vstsimportpreview) feature that can be included with an import. If you elected to include Release Management with your import then your release definitions and history data will be included with your import. However, like builds, [agents](../pipelines/agents/agents.md) and pools need to be reconfigured against the new VSTS account. 
 
 ## Package Management (Preview)
 If you elected to include [preview](https://aka.ms/vstsimportpreview) features with your import and you had [Package Management](https://www.visualstudio.com/team-services/package-management/) data in your TFS collection, then you will need to install the Package Management [extension](https://marketplace.visualstudio.com/items?itemName=ms.feed#) on your account post import. 

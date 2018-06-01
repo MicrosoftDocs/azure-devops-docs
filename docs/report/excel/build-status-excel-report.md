@@ -2,12 +2,14 @@
 title: Build Status Excel Report  
 description: Helps track the progress of builds by showing the number of builds that failed or succeeded - Team Foundation Server 
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: ada4926d-5e2b-4a17-b651-60684e4d72cd
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 12/30/2016
 ---
 # Build Status Excel Report
@@ -17,6 +19,11 @@ ms.date: 12/30/2016
 
 The Build Status report helps the team track the progress of their builds by showing the number of builds that failed or succeeded for the most recent four weeks.  
   
+
+> [!IMPORTANT]  
+> This report is only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
+
+
  For information about how to access this report, see [Excel reports](excel-reports.md).  
   
 > [!NOTE]
@@ -40,15 +47,15 @@ The Build Status report helps the team track the progress of their builds by sho
   
 -   **Configure a build system**. To use Team Foundation Build, you must set up a build system.  
   
-     For more information, see [Build and Release agents](../../build-release/concepts/agents/agents.md).
+     For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
   
 -   **Create build definitions**. You can create several build definitions and then run each of them to produce code for a different platform. Also, you can run each build definition for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
   
 -   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
+     For more information, see [Build triggers](../../pipelines/build/triggers.md).
   
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](../sql-reports/build-summary-report.md).  

@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 Host and manage your code in Git version control with VSTS and Team Foundation Server. Use version control to save your work and coordinate code changes across your team. Even if you're just a single developer, version control helps you stay organized as you fix bugs and develop new features. Version control keeps a history of your development so that you can review and even rollback to any version of your code with ease.
 
-New to Git? [Learn more](https://www.visualstudio.com/learn-git) about how Git and VSTS can help your team ship great code, and learn [how we use Git at Microsoft](https://www.visualstudio.com/learn/use-git-microsoft/).
+New to Git? [Learn more](/azure/devops/git/learn-git-with-team-services) about how Git and VSTS can help your team ship great code, and learn [how we use Git at Microsoft](/azure/devops/devops-at-microsoft/use-git-microsoft).
 
 ## Get started
 
@@ -97,7 +97,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <li>[Create](create-new-repo.md), [delete](delete-existing-repo.md), and [rename](repo-rename.md) repos.</li>
 <li>Set [repo permissions](../security/permissions.md) and [branch permissions](branch-permissions.md)</li>
 <li>[Set up branch policies](branch-policies.md) to protect key branches</li>
-<li>[Set up continuous integration](../build-release/concepts/definitions/build/triggers.md#continuous-integration-ci) to catch bugs sooner.</li>
+<li>[Set up continuous integration](../pipelines/build/triggers.md#continuous-integration-ci) to catch bugs sooner.</li>
 </ul>
 
 </div>

@@ -1,12 +1,13 @@
 ---
 title: Grant permissions for managing extensions in Visual Studio Team Foundation Server (TFS)
 description: Grant users or groups permission to manage extensions for Team Foundation Server
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-marketplace
 ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 9/27/2017
 monikerRange: '>= tfs-2013'
 ---
@@ -39,7 +40,7 @@ Add users or update permission settings:
 
 ## Grant publish and update permissions on TFS
 
-To grant permissions for publishing or updating to users or groups, use [TFSSecurity](../../tfs-server/command-line/tfssecurity-cmd.md#permissions) command-line tool.
+To grant permissions for publishing or updating to users or groups, use [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd#permissions) command-line tool.
 
 0.	At the server level, create a group, for example, "TFS Extension Publishers":
 

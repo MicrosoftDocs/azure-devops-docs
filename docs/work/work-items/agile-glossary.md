@@ -30,7 +30,7 @@ A family of engineering best processes with a goal of enabling rapid delivery of
 
 
 ## Agile tools
-A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods"”Scrum and Kanban"”used by software development teams today. Learn more: [About Agile tools and Agile project management](../backlogs/overview.md).
+A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Learn more: [About Agile tools and Agile project management](../backlogs/overview.md).
 
 ## Area path
 A node on the Common Structure Services hierarchy that represents a feature area. Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The area path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../customize/about-areas-iterations.md).

@@ -1,6 +1,6 @@
 ---
 title: Save team project data for VSTS
-description: Save team project data for Visual Studio Team Services (VSTS)
+description: Save team project data, like source code, custom build templates, build data, and work items, for Visual Studio Team Services (VSTS)
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
 ms.prod: devops
 ms.technology: devops-accounts
@@ -34,5 +34,5 @@ You can use the following procedures to save data that users most care about, su
     This process doesn't save any attachments, change history, or links to other artifacts.
 
 If you have Team Foundation Server on-premises, you can easily save data stored for a team project collection 
-by [making a backup of the database](../tfs-server/admin/backup/config-backup-sched-plan.md). You can also 
+by [making a backup of the database](/tfs/server/admin/backup/config-backup-sched-plan). You can also 
 use the same steps as above.

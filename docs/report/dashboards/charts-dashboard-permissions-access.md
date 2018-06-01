@@ -3,7 +3,6 @@ title: Permissions and access for charts and dashboards
 description: How to guide for setting permissions and access levels to support work tracking tasks (VSTS and TFS)
 ms.technology: devops-analytics
 ms.prod: devops
-ms.assetid: 
 ms.topic: reference
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
@@ -21,7 +20,7 @@ Stakeholders have limited access to view charts and dashboards. To learn more, s
 
 For an overview of dashboard and chart features, see [Dashboards, charts, & widgets](overview.md). 
 
-[!INCLUDE [temp](../../security/_shared/report.md)]
+[!INCLUDE [temp](../../security/_shared/report.md)]
 
 
 ## Related notes

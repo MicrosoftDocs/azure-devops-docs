@@ -90,7 +90,7 @@ Once you run `git stash apply` the most recently stashed changes will be applied
 
 Once you are done with the stash, delete it with `git stash drop`. This will remove the last set of stashed changes.
 
-A final note about stash is that you can have mulitple stashes, but doing so requires more manual manipulation as you have to explicitly apply and drop stashes. You can read more about
+A final note about stash is that you can have multiple stashes, but doing so requires more manual manipulation as you have to explicitly apply and drop stashes. You can read more about
 this from in the [Git Stash documentation](http://git-scm.com/book/en/v1/Git-Tools-Stashing).
 
 

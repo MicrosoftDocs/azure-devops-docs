@@ -55,16 +55,17 @@ You can add fields and specify the group and page where they should appear. Also
 0. Open the admin context Process hub from a work item form or by choosing the Account Settings option from the gear option. For details, see [Customize a process, Start customizing](customize-process.md#start-customizing).
 
 	> [!IMPORTANT]  
-	>If you don't see the Account settings option, then you are working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](../customize-work.md).
+	>If you don't see the Account settings option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../on-premises-xml-process-model.md).
 	
 0. With the WIT selected, click the ![add new field icon](_img/new-field-icon.png) (New Field icon).  
 
-    <img src="_img/cpfield-bug-new-field.png" alt="Process Work Item Types page, Add a field to a WIT" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Process Work Item Types page, Add a field to a WIT](_img/field/bug-new-field.png) 
 
 0. Name the field and select the field type from one of the supported data types. Optionally, add a description.  
 
 	> [!NOTE]    
-	>You must specify a field name that is unique within the account. A custom field defined for one process cannot be the same as the name defined for another process. For more information on field names, see [What is a field? How are field names used?](#field-reference)
+	> You must specify a field name that is unique within the account. A custom field defined for one process cannot be the same as the name defined for another process. For more information on field names, see [What is a field? How are field names used?](#field-reference)
 	
 	Here we add an Integer field labeled Customer Ticket. 
 
@@ -91,9 +92,8 @@ You can add fields and specify the group and page where they should appear. Also
 
 	Here, we show the Customer Ticket field has been added to the Status group. You may need to refresh your browser to see the changes. 
 
-	<img src="_img/cpfield-bug-form-customized-customer-ticket.png" alt="Bug form, Customer Ticket field added to Details group" style="border: 2px solid #C3C3C3;" />
- 
-
+	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer Ticket field added to Details group](_img/cpfield-bug-form-customized-customer-ticket.png) 
 
 <a id="pick-list">  </a>
 ### Add a pick list  
@@ -140,7 +140,8 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 2. The field is added to the first column under all system-defined rich-text fields, but before the Discussion control.   
 
-	<img src="_img/customize-process-field-show-custom-html-field-up1.png" alt="Bug form, Customer request field added to first column in form" style="border: 1px solid #C3C3C3;" />   
+	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer request field added to first column in form](_img/customize-process-field-show-custom-html-field-up1.png) 
 
 <a id="boolean-field">  </a>
 ### Add a checkbox field  
@@ -214,7 +215,8 @@ To review the list of fields defined for all processes and the WITs which refere
 
 Fields listed correspond to all those defined for the account. For descriptions and usage of each field, see [Work item field index](../../work-items/guidance/work-item-field.md).  
 
-<img src="_img/cpfields-list-fields-all-processes.png" alt="All Processes, Fields list" style="border: 2px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Make a copy of a selected inherited process](_img/process/list-fields.png) 
 
 
 ## Related articles  
@@ -271,3 +273,12 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 
 [!INCLUDE [temp](../../_shared/field-reference.md)]  
 
+<!--- 
+Commenting this out as it is in the process of changing 
+### Custom field names 
+
+The reference name for any new field you add is prefixed with the name of the inherited process for which it was created. For example, if you add Custom 1 field to MyAgile process, the reference name  will be `MyAgile.Custom1`. If you add Custom 2 field to MyAgile-Copy process, the reference name assigned to it is `MyAgile-Copy.Custom2`. 
+
+By adding all customizations to the same base inherited process, you simplify the naming conventions that get applied to a custom fields. This can be useful particularly when REST APIs are employed.  
+
+--> 

@@ -1,10 +1,13 @@
 ---
 title: Use Subversion with VSTS
 description: Learn how to use Subversion with VSTS for Java development
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual 
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -16,7 +19,7 @@ Use Subversion for source control with VSTS or TFS for your Java project.
 
 ## Prerequisites
 
- - You have a VSTS Team Foundation  team project available. If you don't, check out our [Azure DevOps Project for Java topic](/vsts/build-release/apps/cd/azure/azure-devops-project-java). (Note: This will also create a VSTS Git repo, which you do not need to use. We will use the VSTS or TFS Team)
+ - You have a VSTS Team Foundation  team project available. If you don't, check out our [Azure DevOps Project for Java topic](/vsts/pipelines/apps/cd/azure/azure-devops-project-java). (Note: This will also create a VSTS Git repo, which you do not need to use. We will use the VSTS or TFS Team)
  - If you would rather use your own Subversion repository, you'll need the connection details for it and should be prepared to commit a change.
 
 In this guide, you will build a Java project (create a WAR file) using Maven. We will lead you through the steps to: 

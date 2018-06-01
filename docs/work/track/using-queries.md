@@ -21,7 +21,7 @@ For details on constructing query clauses and information on each query operator
 
 In this topic you'll learn:  
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to open and edit a query   
 > * How to add or create a query 
 > * How to group query clauses 

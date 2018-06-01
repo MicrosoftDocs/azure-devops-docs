@@ -7,13 +7,14 @@ ms.technology: devops-analytics
 ms.assetid: FEF88D72-32D7-4DE8-B11E-BCB1A491C3FC
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 ms.date: 11/13/2017
 ---
 
 # Query trend data
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. The Analytics service supports these capabilities.
 
@@ -23,7 +24,7 @@ What is the solution? Use the [Aggregation Extensions](aggregated-data-analytics
 
 In this topic you'll learn: 
 
-> [!div class="checklist"]     
+> [!div class="checklist"]
 > * How to construct a basic query for trend data       
 
 

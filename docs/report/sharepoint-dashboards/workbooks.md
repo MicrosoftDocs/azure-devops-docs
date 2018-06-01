@@ -1,8 +1,9 @@
 ---
 title: Excel workbooks uploaded to the project portal with Agile and CMMI   
 description: Use a workbook to track work 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.assetid: ac07307f-e87c-43d5-a044-01023cea2e50
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE

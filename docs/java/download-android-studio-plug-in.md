@@ -1,10 +1,13 @@
 ---
 title: Get the Android Studio VSTS plug-in
 description: Information and download links for the Android Studio VSTS plug-in
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd 
+ms.topic: conceptual
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.reviewer: dastahel
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2015'

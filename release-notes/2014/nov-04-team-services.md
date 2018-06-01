@@ -28,7 +28,7 @@ In future updates you can expect more configurations like these, including confi
 
 ##Test execution charts
 
-We’ve extended our charting capability to include test artifacts in the Test hub. Each test plan now includes a prepackaged chart showing the progress of all tests in the plan, and of course you can create as many snapshot and trend charts as necessary to monitor and track your test authoring activity. Like all charts, test charts can be pinned to your team and project home pages for visibility and sharing. And in case you’re wondering, yes: even Stakeholders can view test charts pinned to the home page. We’ve got a detailed walkthrough in our [Get Started](https://www.visualstudio.com/get-started/track-test-status-vs) section where you can learn more.
+We’ve extended our charting capability to include test artifacts in the Test hub. Each test plan now includes a prepackaged chart showing the progress of all tests in the plan, and of course you can create as many snapshot and trend charts as necessary to monitor and track your test authoring activity. Like all charts, test charts can be pinned to your team and project home pages for visibility and sharing. And in case you’re wondering, yes: even Stakeholders can view test charts pinned to the home page. We’ve got a detailed walkthrough in our [Get Started](https://docs.microsoft.com/vsts/manual-test/getting-started/track-test-status?view=vsts) section where you can learn more.
 
 ![Test execution chart](_img/11_04_03.png)
 
@@ -60,7 +60,7 @@ We’ve enhanced our third-party authorization support by adding new OAuth scope
 
 ![Authorize application dialog](_img/11_04_07.png)
 
-To learn more about Visual Studio Online authorization for third-party apps and services, see [Authorize access with OAuth 2.0](https://www.visualstudio.com/en-us/integrate/get-started/get-started-auth-oauth2-vsi).
+To learn more about Visual Studio Online authorization for third-party apps and services, see [Authorize access with OAuth 2.0](https://docs.microsoft.com/vsts/integrate/get-started/authentication/oauth?view=vsts).
 
 That’s it for Sprint 73.
 

@@ -8,6 +8,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.date: 04/04/2018
 ---
 

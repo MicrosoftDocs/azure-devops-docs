@@ -1,10 +1,13 @@
 ---
 title: Create a Java project release definition for deployment with VSTS
 description: Tutorial lab for creating a Java project release definition for Azure Container deployment with Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---

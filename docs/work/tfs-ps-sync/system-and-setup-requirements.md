@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: adaa1930-a8f9-4bd8-8c91-02bd7b8d9d5d
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -57,7 +58,7 @@ ms.date: 01/12/2017
 |Software|Install on|  
 |--------------|----------------|  
 |Visual Studio 2013 or Team Explorer 2013|Each machine on which Project Professional is used to synchronize data between enterprise project plans and team projects and each machine that is used to administer the configuration of the two server products. **Note:**  You can download Team Explorer 2013 from [Visual Studio 2013 Download](http://www.microsoft.com/visualstudio/eng/2013-downloads).|  
-|Visual Studio Team Foundation Server 2013|Each application-tier server that hosts Team Foundation Server and that will participate in synchronizing data with Project Server. For more information, see [Install](../../tfs-server/install/get-started.md).|  
+|Visual Studio Team Foundation Server 2013|Each application-tier server that hosts Team Foundation Server and that will participate in synchronizing data with Project Server. For more information, see [Install](/tfs/server/install/get-started).|  
 |Team Foundation Server Extensions for Project Server|Each web-tier and application-tier server that hosts Project Server  and that will participate in synchronizing data with Team Foundation Server.<br /><br /> For more information, see [How to: Add Project Server to Team Foundation Server](https://msdn.microsoft.com/library/hh548139.aspx).|  
   
 ##  <a name="configreq"></a> Configuration requirements  

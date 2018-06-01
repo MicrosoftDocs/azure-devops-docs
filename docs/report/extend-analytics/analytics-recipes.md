@@ -1,19 +1,21 @@
 ---
 title: Analytics basic queries
 titleSuffix: VSTS  
-description: Examples of work item tracking queries of the Analytics service for Visual Studio Team Services
+description: Examples of how to create queries of work item tracking from the Analytics service for Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
+monikerRange: 'vsts'
 ms.date: 3/16/2018
 ---
 
 # Query work tracking data using Analytics  
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 You can query your Visual Studio Team Services (VSTS) work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
 Analytics service. You can adapt most of these queries to meet your needs.

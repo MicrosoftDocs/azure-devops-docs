@@ -1,12 +1,16 @@
 ---
-title: Power BI integration overview | VSTS
-description: Overview of the different integration options to connect to Power BI and VSTS.
+title: Power BI integration overview 
+titleSuffix: VSTS 
+description: Describes the different integration options you can use to connect to Power BI to access the Analytics Service for Visual Studio Team Services
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: douge
 ms.author: stansw
-ms.topic: get-started-article
+ms.topic: conceptual
+ms.author: kaelli
+author: KathrynEE
+monikerRange: 'vsts'
 ms.date: 03/28/2018
 ---
 
@@ -42,6 +46,7 @@ VSTS supports three ways to pull data from VSTS into Power BI:
 </table>
 
 ## Prerequisites
+
 Before you get started using Power BI with VSTS, make sure you have completed the following steps:
 
 1. Install the *Power BI Desktop* *February 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
@@ -55,5 +60,6 @@ Before you get started using Power BI with VSTS, make sure you have completed th
 5. If you are not familiar with the VSTS Analytics Service, we recommend you read "[What is the Analytics Service](../analytics/what-is-analytics.md)" before continuing.
 
 ## Deprecated PowerBI.com Content Pack
-In November, 2017 we deprecated the PowerBI.com Visual Studio Team Services (VSTS) Content Pack. We deprecated it due to the negative impact it has had on VSTS accounts, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you wonâ€™t be able to create any new datasets.
+
+In November, 2017 we deprecated the PowerBI.com Visual Studio Team Services (VSTS) Content Pack. We deprecated it due to the negative impact it has had on VSTS accounts, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won€™t be able to create any new datasets.
 

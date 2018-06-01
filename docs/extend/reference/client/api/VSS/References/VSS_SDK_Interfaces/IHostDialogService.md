@@ -5,10 +5,11 @@ ms.assetid: 8f15dcd0-c8e1-ba70-5a9b-daa6f4c97f38
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
+ms.topic: article
+monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 

@@ -1,13 +1,15 @@
 ---
 title: Analyze and report on build details and build coverage
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Team Foundation Server
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
 
@@ -16,6 +18,10 @@ ms.date: 10/17/17
 [!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
 
 By using the Build perspective, you can view just the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Visual Studio Team Foundation Server that pertain to the build process. For example, you can use these measures to determine how many builds are failing and how much of the code changed within a build.  
+
+> [!IMPORTANT]  
+> The Build Measures and perspectives are only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, the measures, perspectives,reports, and the TFS Warehouse for builds won't yield any meaningful data.  
+
   
  The Build perspective is based on the relational tables that enable reporting on builds as either a property of the build, code coverage, or a changeset in version control. For more information, see [Build Details tables](table-reference-build-details.md), [Build Project tables](table-reference-build-project.md), [Build Coverage tables](table-reference-build-coverage.md), and [Build Changeset tables](table-reference-build-changeset.md).  
   
@@ -25,15 +31,16 @@ By using the Build perspective, you can view just the measures, dimensions, and 
 By using the Build perspective, you can create reports that answer the following questions:
 
 **Status reports:**  
-- Which builds failed and which builds succeeded?<br />  Which builds reflect a significant number of changes to the code?  
+- Which builds failed and which builds succeeded?  
+- Which builds reflect a significant number of changes to the code?   
 - Which builds are ready to install?  
 
 **Trend reports:**  
 - What is the status of all builds over time?  
 - How much of the code was executed by the tests over time?   
 
->[!NOTE]  
->If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube.
+> [!NOTE]  
+> If your data warehouse is using SQL Server Enterprise Edition, the list of cubes will include Team System and a set of perspectives. The perspectives provide a focused view of the data so that you do not have to scroll through all of the dimensions and measure groups that are defined for the whole Team System cube.
   
    
 <a name="example_trend"></a> 
@@ -103,15 +110,15 @@ By using PivotChart reports in Excel, you can display the build status over time
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../build-release/test/getting-started-with-continuous-testing.md).|  
+|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../pipelines/test/getting-started-with-continuous-testing.md).|  
 |Build|Build Definition Name|Name that is assigned to the build definition for which a build was executed.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
-||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../build-release/concepts/definitions/build/options.md).|  
+||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../pipelines/build/options.md).|  
 ||Build Start Time|The date and time when the build started.|  
-||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of builds: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../build-release/concepts/definitions/build/triggers.md).|  
+||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of builds: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../pipelines/build/triggers.md).|  
 ||Drop Location|The Uniform Resource Locator (URL) for the completed build. A URL specifies the protocol with which web browsers will to locate Internet resources. Each URL includes the name of the server on which the details of the build resides. You can also include the path to a resource.|  
 |Build Flavor|Build Flavor|(Published test results only) A name that designates the category of builds that was assigned to a set of completed builds that were published as part of a test run. For example, a build flavor can designate a beta release or final release. For more information, see [Command-Line options for publishing test results](https://msdn.microsoft.com/library/ms243151.aspx).|  
-|Build Platform|Build Platform|The name of the platform for which an end-to-end (not desktop) build was made (for example, **x86** or **Any CPU**). For an example of a report that uses this attribute, see [Build Summary](build-summary-report.md). For more information, see [How do I build multiple configurations for multiple platforms?](../../build-release/tasks/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms).|  
+|Build Platform|Build Platform|The name of the platform for which an end-to-end (not desktop) build was made (for example, **x86** or **Any CPU**). For an example of a report that uses this attribute, see [Build Summary](build-summary-report.md). For more information, see [How do I build multiple configurations for multiple platforms?](../../pipelines/tasks/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms).|  
 |Build Quality|Build Quality|The quality of the build. For example, you can rate a completed build's quality as **Ready for Deployment**, **Rejected**, or **Under Investigation**. |  
 |Build Status|Build Status Name|The current state of the build. Valid values are **Failed**, **Partially Succeeded**, **Stopped**, **Succeeded**, and **Unknown**.|  
 |Build Source Project File|File Hierarchy|The full network path of the source file.|  
@@ -124,7 +131,7 @@ By using PivotChart reports in Excel, you can display the build status over time
 ##  <a name="tracking"></a> Required activities  
  To create reports that contain useful data about builds, team members should review the information in the following topics:  
   
--   [Run tests in your build process](../../build-release/test/test-build.md)   
+-   [Run tests in your build process](../../pipelines/test/test-build.md)   
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
   
 ## Related notes

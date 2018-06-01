@@ -1,6 +1,6 @@
 ---
 title: Change the VSTS account owner 
-description: How to change account owner in VSTS (Visual Studio Online, VSO, VSTS)
+description: Learn how to assign a different user as the owner for your VSTS account and what permissions are required to make updates
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd

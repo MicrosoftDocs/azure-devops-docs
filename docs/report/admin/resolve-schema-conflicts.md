@@ -3,7 +3,7 @@ title: Resolve data warehouses schema conflicts
 titleSuffix: TFS
 description: Resolve schema conflicts that are occurring in the data warehouse when connecting to Team Foundation Server    
 ms.assetid: BB517672-2A9A-4A5B-8F27-E4409F199C02  
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge
@@ -60,7 +60,7 @@ Schema conflicts occur when a project administrator performs one of the followin
 	- **reportable/reportingtype**: Whether data from the field is available for inclusion in reports, and if so, the reportable type (for example, **None**, **Detail**, **Dimension**, or **Measure**).  
 	
 		> [!NOTE]  
-		> The **FIELD** element used the **reportable** attribute, and the **witadmin changefield** command uses the **reportingtype** attribute. These attributes define the same information.  Â 
+		> The **FIELD** element used the **reportable** attribute, and the **witadmin changefield** command uses the **reportingtype** attribute. These attributes define the same information.   
 	- **type**: The type of data that the field accepts (for example, **Integer**, **HTML**, **String**, **Double**, or **DateTime**). 
 
 
@@ -128,7 +128,7 @@ You can review the event log on the application-tier server to obtain more infor
 	```witadmin deletefield /collection:CollectionURL /n:RefName```  
 
 	> [!IMPORTANT]  
-	> If you delete a field permanently, you remove the field and all data that it stores from data storage. Â 
+	> If you delete a field permanently, you remove the field and all data that it stores from data storage.  
 
 ##Verify resolution of schema conflicts 
  

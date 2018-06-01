@@ -1,10 +1,13 @@
 ---
 title: Clone a VSTS Git repository with Eclipse
 description: Tutorial lab for cloning a Visual Studio Team Services (VSTS) Git repo with Eclipse
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd 
+ms.topic: conceptual
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2015'
 ---

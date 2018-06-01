@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016
@@ -68,7 +69,7 @@ There are many ways to authenticate your application or service with VSTS or TFS
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./get-started/client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [VSTS Extension](../extend/get-started/node.md#files) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
+| [VSTS Extension](../extend/get-started/node.md) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
 
 > [!NOTE]
 > You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)
@@ -193,11 +194,11 @@ You should get a response like this.
 ```
 
 The response is [JSON](http://json.org/). That's generally what you'll get back from the REST APIs although there are a few exceptions,
-like [Git blobs](https://visualstudio.com/api/git/blobs.md).
+like [Git blobs](previous-apis/git/blobs.md).
 
 Now you should be able to look around the specific
-[API areas](https://visualstudio.com/api/overview.md) like [work item tracking](https://visualstudio.com/api/wit/overview.md)
-or [Git](https://visualstudio.com/api/git/overview.md) and get to the resources that you need.
+[API areas](previous-apis/overview.md) like [work item tracking](previous-apis/wit/overview.md)
+or [Git](previous-apis/git/overview.md) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 
 

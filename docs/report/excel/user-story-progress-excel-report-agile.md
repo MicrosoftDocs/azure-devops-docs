@@ -2,7 +2,7 @@
 title: User Story Progress Excel Report (Agile) 
 description: Track the rate at which the team is implementing user stories.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: bea12f89-1bfa-40db-b8c8-c44e54372538

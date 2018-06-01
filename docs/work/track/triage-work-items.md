@@ -26,7 +26,7 @@ Using a work item query you can quickly review and update work items. Oftentimes
 
 In this topic you'll learn how to:
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Use triage query mode to update a list of work items   
 > * Bulk save work items that you've updated  
 

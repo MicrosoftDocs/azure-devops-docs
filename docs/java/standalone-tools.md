@@ -1,10 +1,13 @@
 ---
 title: Use standalone static analysis with VSTS and TFS
 description: Learn how to use PMD, Checkstyle, and FindBugs with VSTS and TFS for Java development
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -16,7 +19,7 @@ Use [PMD](https://pmd.github.io/), [CheckStyle](http://checkstyle.sourceforge.ne
 
 ## Enabling analysis
 
-To use your these tools you simply check the corresponding checkbox in the **Static Analysis** section of a [Maven build task](https://docs.microsoft.com/en-us/vsts/build-release/tasks/build/maven) or [Gradle build task](https://docs.microsoft.com/en-us/vsts/build-release/tasks/build/gradle).
+To use your these tools you simply check the corresponding checkbox in the **Static Analysis** section of a [Maven build task](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/maven) or [Gradle build task](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/gradle).
 
 > [!div class="mx-imgBorder"]
 ![Enable static analysis for Maven builds](_img/maven-with-static-analysis.png)

@@ -5,7 +5,8 @@ description: Configure the initial security settings for a team project using th
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: reference
 ms.date: 09/08/2017
@@ -22,8 +23,8 @@ By using the plug-in file for Groups and Permissions, you can configure the init
  For information about how to configure the initial security settings for a team project's functional areas, such as Team Foundation Build, Team Foundation version control, and Visual Studio Lab Management, see [Control access to functional areas](control-access-to-functional-areas.md).  
   
  For information about how to customize types of work items to allow or deny access to groups or users, see [Apply a field rule](../apply-rule-work-item-field.md).  
-  
- For more information about how to administer users and groups and control access for Visual Studio Application Lifecycle Management (ALM), see [Set up groups for use in TFS deployments](../../../../tfs-server/admin/setup-ad-groups.md).  
+
+ For more information about how to administer users and groups and control access for Visual Studio Application Lifecycle Management (ALM), see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).  
   
 <a name="ElementsGroups"></a> 
 ##  Define and assign permissions to groups  
@@ -270,8 +271,8 @@ The following table describes the permissions that you can assign to control acc
 ## Related articles 
 - [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md)   
 - [Control access to functional areas](control-access-to-functional-areas.md)   
-- [Set up groups for use in TFS deployments](../../../../tfs-server/admin/setup-ad-groups.md)   
+- [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)   
 - [Permission reference](/vsts/tfvc/permission-command)
-- [Change groups and permissions with TFSSecurity](../../../../tfs-server/command-line/tfssecurity-cmd.md)
+- [Change groups and permissions with TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)
 - [tf permission Command](../../../../tfvc/permission-command.md).  
   

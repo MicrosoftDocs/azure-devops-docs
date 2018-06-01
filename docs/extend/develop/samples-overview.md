@@ -6,6 +6,7 @@ description: Overview of the available extension samples, including a descriptio
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

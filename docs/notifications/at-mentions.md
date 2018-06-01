@@ -39,7 +39,7 @@ The **@mention** control allows you to quickly pull someone into a work item o
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-In order for team members to receive notifications, [you must configure an SMTP sever](../tfs-server/admin/setup-customize-alerts.md). 
+In order for team members to receive notifications, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts). 
 
 ::: moniker-end
 

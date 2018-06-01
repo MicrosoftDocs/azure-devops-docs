@@ -6,6 +6,7 @@ description: How to install your extension for VSTS.
 ms.assetid: ab9c2c1f-a78d-4f97-9b7e-ae8eaef0a3ee
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

@@ -2,17 +2,22 @@
 title: Build Quality Excel Report 
 description: Help monitor the success or failure rate of test activity with each build - Team Foundation Server 
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 60e637b9-4599-4fe5-bff1-e6adade81d9c
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 12/30/2016
 ---
 # Build Quality Excel Report
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+
+> [!IMPORTANT]  
+> This report is only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
 
 
 Teams who are responsible for testing software can use the Build Quality report to help monitor the success or failure rate of test activity with each build. The Build Quality report provides the following reports, which show the test results for all build definitions for a team project.  
@@ -56,11 +61,11 @@ Teams who are responsible for testing software can use the Build Quality report 
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Run tests in your build process](../../build-release/test/test-build.md).  
+     For more information, see [Run tests in your build process](../../pipelines/test/test-build.md).  
   
 -   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   
-     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).  
+     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).  
   
 -   **Run tests**. For more information, see [Run your tests](../../manual-test/getting-started/run-manual-tests.md).  
   

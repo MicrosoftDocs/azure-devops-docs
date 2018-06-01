@@ -2,7 +2,7 @@
 title: Bug Trends Excel Report  
 description: Track the rate at which the team is discovering, resolving, and closing Bugs - Team Foundation Server  
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: fedaecea-cedb-467b-b8f4-03f63420f7b3
@@ -10,6 +10,7 @@ ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
 ms.date: 12/30/2016
 ---
+
 # Bug Trends Excel Report
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]

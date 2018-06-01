@@ -1,13 +1,14 @@
 ---
 title: Connect to Power BI Data Connector
 titleSuffix: VSTS
-description: Step-by-step guidance on how to connect to Power BI Data Connector to access Visual Studio Team Services (VSTS) data
+description: Step-by-step guidance on how to connect to Power BI Data Connector and the Analytics Service to access Visual Studio Team Services data
 ms.assetid: 509ECCF2-E18E-4F14-B7EE-8802AB8938A2
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 2/8/2018
@@ -15,7 +16,7 @@ ms.date: 2/8/2018
 
 # Connect to VSTS with Power BI Data Connector
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 > The VSTS Power BI Data connector works with Analytics Views. For more information read [what are Analytics Views](../analytics/what-are-analytics-views.md).
 
@@ -77,6 +78,9 @@ Follow the steps below to get started using the VSTS Power BI Data Connector:
 	VSTS provides a set of [default Analytics Views](../analytics/analytics-default-views.md) when you first enable Analytics. You can also [create custom Analytics Views](../analytics/analytics-views-create.md). The image below shows the default Analytics Views. Your list of views may be different.
 
 	![Navigator dialog, default views](../analytics/_img/default-views/navigator-dialog-default-views.png)
+
+	> [!NOTE]
+	> The preview shown for any selected views in the navigator can be truncated depending on the number of fields selected and the size of the dataset.  The data is truncated only for the preview and will not impact the full data refresh.
 
 	Click *Work Items - Today* table and wait for the preview to load.
 	It represents the current state of all Work Items in the project.
@@ -172,4 +176,4 @@ If the URL you use on a daily basis is "`https://fabrikam-fiber-inc.visualstudio
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)]�

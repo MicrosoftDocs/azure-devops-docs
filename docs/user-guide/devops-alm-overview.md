@@ -43,7 +43,7 @@ Choose VSTS when you want quick setup, maintenance-free operations, easy collabo
 
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
-[![Install TFS](_img/overview/tfs-setup-1.png)](../tfs-server/install/single-server.md)[![Create a team project](_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](../tfs-server/admin/backup/back-up-restore-tfs.md)   
+[![Install TFS](_img/overview/tfs-setup-1.png)](/tfs/server/install/single-server)[![Create a team project](_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/tfs/server/admin/backup/back-up-restore-tfs)   
  
 <a id="add-code">  </a>
 ## Develop code using your IDE of choice 
@@ -95,7 +95,7 @@ You also gain access to a [rich set of customization capabilities](../work/custo
 
 Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily load test your apps and provision test environments. Track when the quality is sufficient to release to the customer.  
 
-[![Build your software](_img/overview/ov-devops-build.png)](../build-release/tasks/index.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](../build-release/test/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](../build-release/apps/cd/deploy-webdeploy-webapps.md)   
+[![Build your software](_img/overview/ov-devops-build.png)](../pipelines/tasks/index.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](../pipelines/test/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](../pipelines/apps/cd/deploy-webdeploy-webapps.md)   
 
 <!---
 
@@ -131,7 +131,7 @@ Other topics of interest:
 
 ### TFS updates
 
-- [What's new](../tfs-server/whats-new.md)
+- [What's new](/tfs/server/whats-new)
 - [Migrate data from TFS to VSTS](../articles/migrate-to-vsts-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>

@@ -119,14 +119,14 @@ The following image shows the work flow states for a product backlog item. If yo
 <tbody valign="top">
 <tr>
 <td>
-<p><b>Typical workflow progression:</b> </p> 
+<p><b>Typical workflow progression:</b></p>
 <ul>
 <li>Create a product backlog item in the default state, New.</li>
 <li>Change the state from New to Approved.</li>
 <li>Change the state from Approved to Committed.</li>
 <li>Change the state from Committed to Done.</li>
 </ul>
-<p><b>Atypical transitions:</b> </p> 
+<p><b>Atypical transitions:</b></p>
 <ul>
 <li>Change the state from New to Removed.</li>
 <li>Change the state from Removed to New.</li>
@@ -174,7 +174,7 @@ To stop following changes, click the ![Following icon](../../work/_img/icons/fol
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 > [!IMPORTANT]
->To support the Follow feature, [you must configure an SMTP sever](../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.  
+>To support the Follow feature, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.  
 
 ::: moniker-end
 

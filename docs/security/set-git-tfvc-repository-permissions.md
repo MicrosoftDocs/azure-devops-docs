@@ -1,13 +1,13 @@
 ---
 title: Set Git or TFVC repository permissions for VSTS & TFS 
-description: Grant or restrict access to a Git or TFVC repository feature or function
+description: Steps for how to grant or restrict access to a Git or Team Foundation Version Control repository feature or function
 ms.assetid:  
 ms.prod: devops
 ms.technology: devops-security
 ms.topic: quickstart
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---
@@ -28,9 +28,9 @@ You can grant or restrict access to a repository by setting the permission state
 
 You can set the permissions for all Git repositories for a team project, or for a single repository. 
 
-0. From the web portal user and team project context, open the admin context by clicking the ![](../work/_img/icons/gear_icon.png) gear Settings icon and click **Version Control**.
+1. From the web portal user and team project context, open the admin context by clicking the ![](../work/_img/icons/gear_icon.png) gear Settings icon and click **Version Control**.
 
-0. To set the set the permissions for all Git repositories for a team project, click **Git Repositories** and choose the security group whose permissions you want to manage. 
+2. To set the set the permissions for all Git repositories for a team project, click **Git Repositories** and choose the security group whose permissions you want to manage. 
 
 	Otherwise, click a specific repository and choose the security group whose permissions you want to manage.   
 
@@ -49,6 +49,7 @@ You can set the permissions for all Git repositories for a team project, or for 
 
  
 <a id="tfvc-repository">  </a>
+
 ## Set TFVC repository permissions
 
 

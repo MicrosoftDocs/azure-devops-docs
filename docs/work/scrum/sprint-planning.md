@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AD107B7C-D0AA-44B1-8288-2AB046194439
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 ms.date: 03/20/2018
 ---
@@ -28,7 +29,7 @@ some or all of the items based on these estimates.
 
 In this topic you'll learn how to:  
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Assign backlog items to a sprint   
 > * Set your team's capacity        
 > * Add tasks to backlog items  
@@ -47,8 +48,8 @@ By setting team capacity and estimating tasks, the team can see when the team or
 <img src="_img/sp-intro.png" alt="Sprint planning" style="border: 1px solid #C3C3C3;" /> 
 
 
-> [!NOTE]    
->Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/).
+> [!NOTE]
+>Sprint planning doesn't need to be challenging. It can be fun and a time for the entire Scrum team to build camaraderie by working together to answer the question of "What can we commit to?" For examples and strategies to keep your sprint planning focused and effective, check out the [What is Scrum?](/azure/devops/agile/what-is-scrum).
 >  
 >When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
 

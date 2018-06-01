@@ -39,7 +39,7 @@ In this topic you'll learn:
 
 ::: moniker range="vsts"
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to change the work item type of one or more work items   
 > * How to move one or more work items to another team project     
 > * How to remove work items from the backlog by changing the State to Removed     
@@ -51,7 +51,7 @@ In this topic you'll learn:
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-> [!div class="checklist"]      
+>[!div class="checklist"]         
 > * How to remove work items from the backlog by changing the State to Removed 
 > * How to delete work items and test artifacts  
 > * How to restore or permanently delete work items (web portal)    
@@ -63,7 +63,7 @@ In this topic you'll learn:
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-> [!div class="checklist"]      
+>[!div class="checklist"]         
 > * How to remove work items from the backlog by changing the State to Removed     
 > * How to permanently delete work items (command-line tool)  
 > * What permissions are required to delete work items   
@@ -77,7 +77,7 @@ You can access the following actions for which you have permissions. If you are 
 
 ::: moniker range="vsts"
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > |Contributors|Project Administrators|  
 > |-------------|----------|---------|  
 > |- [Change work item type](#change-type) <br/>- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete) (web portal) <br/>- [Restore work items](#restore) (web portal)|- [Move a work item to another team project](#move) <br/>- [Permanently delete work items](#restore) (web portal)<br/>- [Permanently delete test artifacts](#delete-test) |  
@@ -90,7 +90,7 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-> [!div class="mx-tdCol2BreakAll"]   
+> [!div class="mx-tdCol2BreakAll"] 
 > |Contributors|Project Administrators|  
 > |-------------|----------|---------|  
 > |- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete) (web portal)<br/>- [Restore work items](#restore) (web portal)|- [Permanently delete work items (web portal)](#restore)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)<br/>- [Permanently delete test artifacts](#delete-test)| 
@@ -100,7 +100,7 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 
 ::: moniker range="tfs-2015"
 
-> [!div class="mx-tdCol2BreakAll"]  
+> [!div class="mx-tdCol2BreakAll"]
 > |Contributors|Project Administrators|  
 > |-------------|----------|---------|  
 > |- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete)<br/>- [Restore work items](#restore)|- [Permanently delete work items](#restore)  (web portal)<br/>- [Permanently delete work items (command-line tool)](#perm-delete)| 
@@ -110,7 +110,7 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 
 ::: moniker range="tfs-2013"
 
-> [!div class="mx-tdCol2BreakAll"]    
+> [!div class="mx-tdCol2BreakAll"]  
 > |Contributors|Project Administrators|  
 > |-------------|----------|---------|  
 > |- [Remove work items (change State)](#remove)|- [Permanently delete work items (command-line tool)](#perm-delete)| 
@@ -256,6 +256,9 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 	![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)
 
+	> [!NOTE]    
+	> The Delete work items confirmation dialog indicates there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
+
 3. Using multi-select from a backlog or query results list, you can delete several work items at once. 
 
 4. You can also delete work items from your Kanban or task board. 
@@ -334,7 +337,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
  
 	To delete a single work item, simply enter the ID as shown:  
 
-	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```     
+	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```   �
 
 ::: moniker-end
 
