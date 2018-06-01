@@ -63,7 +63,7 @@ A merged summary is not currently available for coverage files published using m
 1. Run **functional tests** in the early stages of the CD pipeline. These are typically 
    [Selenium](continuous-test-selenium.md) (for web apps) and [Coded UI](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code) tests.
    To do this, add the **[Deploy Test Agent](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/DeployVisualStudioTestAgent/README.md)**
-   and **[Run Functional Tests](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/RunDistributedTests/README.md)**
+   and **[Run Functional Tests](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/RunDistributedTestsV1/README.md)**
    tasks to your release definition. See [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/).
 
 1. Run **load tests** after the app is deployed to staging and production, after it passes all functional tests.
@@ -105,7 +105,7 @@ after the load tests have run and before the app is swapped from staging to prod
 to pass values as parameters to your test code. For example, in a release that contains
 several environments, you can pass the appropriate app URL to each the test tasks in each one.
 The runsettings file and matching parameters must be specified in the
-[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task.  
+[Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task.  
 
 ![Passing parameters to test code in a build or release pipeline](_img/pass-params-to-test-code.png)
 
