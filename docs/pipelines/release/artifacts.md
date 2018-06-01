@@ -475,9 +475,12 @@ download the artifacts you require.
 
 In VSTS, you can, however, [select which artifacts you want to download](../process/phases.md#artifact-download)
 to the agent for a specific phase and environment of the deployment.
-Typically, you will do this when the tasks in that phase do not
+Typically, you will do this to improve the efficiency of the deployment
+process when the tasks in that phase do not
 require all or any of the artifacts, or if you implement custom code
 in a task to download the artifacts you require.
+
+![Selecting the artifacts to download](_img/select-artifacts.png)
 
 ::: moniker-end
 

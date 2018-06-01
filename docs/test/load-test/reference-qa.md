@@ -202,6 +202,11 @@ for the duration of the run. So if you retain 20 cores for 10 minutes, an additi
 
 For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/18/speed-up-cloud-load-test-execution-by-retaining-resources-for-quick-consecutive-runs/).
 
+<a name="deletetests"></a>
+### Q: How do I delete a load test?
+
+**A**: Currently, only test runs can be deleted, and only by the user that created that test run. The load test itself cannot be deleted because the data resides at the account level.
+
 ----------
 
 <a name="qavisualstudio"></a>
