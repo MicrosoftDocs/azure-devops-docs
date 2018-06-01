@@ -43,7 +43,7 @@ The Stories Overview report lists all user stories, filtered by area and iterati
   
  **Test Status**  
   
--   **Test Points**: A numeric value that represents the number of pairings of test cases with test configurations in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../manual-test/getting-started/track-test-status.md).  
+-   **Test Points**: A numeric value that represents the number of pairings of test cases with test configurations in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../test/track-test-status.md).  
   
 -   **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).  
   

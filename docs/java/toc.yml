@@ -68,7 +68,7 @@
   - name: Add VSCode extension
     href: vscode-extension.md
   - name: Load-test with JMeter
-    href: ../load-test/get-started-jmeter-test.md?toc=/vsts/java/toc.json&bc=/vsts/load-test/breadcrumb/toc.json
+    href: ../test/load-test/get-started-jmeter-test.md?toc=/vsts/java/toc.json&bc=/vsts/test/load-test/breadcrumb/toc.json
   - name: Use SonarQube
     href: sonarqube.md
   - name: Use Subversion

@@ -162,9 +162,9 @@ multiple executions and multiple agents modes, it is replicated on the agents, i
 Agents set to run as a service cannot run UI tests. Also disable any screensaver and unlock the machine so that UI actions in the test are not blocked.
 
 <a name="hosted-ui-tests"></a>
-### Q: Can I run UI tests on the hosted agents?
+### Q: Can I run UI tests on the Microsoft-hosted agents?
 
-**A**: No, running UI tests on the [hosted agents](../../pipelines/agents/agents.md#hosted-agents) is not possible at present.
+**A**: No, running UI tests on the [Microsoft-hosted agents](../../pipelines/agents/agents.md#microsoft-hosted-agents) is not possible at present.
 
 <a name="contains-ui-tests"></a>
 ### Q: What does the 'Test mix contains UI tests' checkbox do?

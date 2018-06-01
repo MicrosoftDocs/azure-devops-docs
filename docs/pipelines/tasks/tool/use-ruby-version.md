@@ -22,7 +22,7 @@ monikerRange: 'vsts'
 None
 
 ## Prerequisites
-* A hosted agent, or a private agent with its tool cache configured (see [Q&A](#how-can-i-configure-a-private-agent-to-use-this-task)).
+* A Microsoft-hosted agent, or a self-hosted agent with its tool cache configured (see [Q&A](#how-can-i-configure-a-private-agent-to-use-this-task)).
 
 This task will fail if no Ruby versions are found in the tool cache.
 
@@ -50,10 +50,10 @@ For an explanation of tool installers and examples, see [Tool installers](../../
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]
 
-### How can I configure a private agent to use this task?
+### How can I configure a self-hosted agent to use this task?
 
-You can run this task on a private agent with your own Ruby versions.
-To run this task on a private agent, set up your agent's tool cache by following the instructions [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
+You can run this task on a self-hosted agent with your own Ruby versions.
+To run this task on a self-hosted agent, set up your agent's tool cache by following the instructions [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
 The tool name to use is "Ruby."
 
 <!-- ENDSECTION -->

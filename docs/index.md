@@ -143,8 +143,8 @@ featureFlags:
                                                 <h3>Test your code</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
-                                                    <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/test/index">Exploratory &amp; Manual Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/test/load-test/index">Load Testing</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -218,14 +218,14 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Hosted and Private Agents</a></li>
+                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Microsoft-hosted and Self-hosted Agents</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
                                     </ul>
                                     <h3>Testing</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/manual-test/index">Exploratory &amp; Manual Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/load-test/index">Load Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/test/index">Exploratory &amp; Manual Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/test/load-test/index">Load Testing</a></li>
                                         <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
                                     </ul>
                                 </div>
@@ -253,7 +253,7 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
-                                        <li><a class="barLink" href="/vsts/search/index">Search</a></li>
+                                        <li><a class="barLink" href="/vsts/project/search/index">Search</a></li>
                                         <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
                                     </ul>
                                 </div>
@@ -498,7 +498,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Hosted &amp; Private Agents</h3>
+                                                    <h3>Microsoft-hosted &amp; Self-hosted Agents</h3>
                                                     <p>Add agents as needed to support your cloud build processes.</p>
                                                 </div>
                                             </div>
@@ -551,7 +551,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/manual-test/index">
+                                <a href="/vsts/test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -571,7 +571,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/load-test/index">
+                                <a href="/vsts/test/load-test/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -875,7 +875,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/search/index">
+                                <a href="/vsts/project/search/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

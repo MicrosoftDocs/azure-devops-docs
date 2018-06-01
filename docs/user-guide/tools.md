@@ -81,7 +81,7 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 The following clients support specific tasks, such as managing testing efforts, providing feedback, or modifying work items.
 
 - **[Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)**: Allows you to manage your test efforts, create and run manual tests, and create and track bugs that are found during test efforts. Test Manager installs with Visual Studio Test Professional and Visual Studio Enterprise. 
-- **[Test & Feedback extension (previously called the Exploratory Testing extension)](../manual-test/stakeholder/provide-stakeholder-feedback.md)**: Provides a lightweight, plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in VSTS or TFS. This extension is free to stakeholders. 
+- **[Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)**: Provides a lightweight, plug-in to a web browser. Stakeholders can respond to feedback requests for user stories and features generated in VSTS or TFS. This extension is free to stakeholders. 
 - **[Microsoft Feedback Client](../feedback/give-feedback.md)**: Your stakeholders can use **Microsoft Feedback Client** to record feedback for your application as video, audio, or type-written comments. This client installs with all versions of Visual Studio, or can be [installed from the free download](https://www.microsoft.com/download/details.aspx?id=30660). All feedback is stored in the work item data store and requires [stakeholders to have required permissions](../feedback/give-permissions-feedback.md).  
  
 >[!IMPORTANT]

@@ -118,7 +118,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 ::: moniker range="vsts"
 > [!NOTE]
-> Cleaning is not effective if you're using a [hosted agent](../agents/hosted.md) because you'll get a new agent every time.
+> Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -300,7 +300,7 @@ Select if you want to download files from [large file storage (LFS)](../../git/m
 
 ::: moniker range=">= tfs-2015"
 
-If you're using TFS, or if you're using VSTS with a private agent, then you must install git-lfs on the agent to make this option work.
+If you're using TFS, or if you're using VSTS with a self-hosted agent, then you must install git-lfs on the agent to make this option work.
 
 ::: moniker-end
 
@@ -392,7 +392,7 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 ::: moniker range="vsts"
 > [!NOTE]
-> Cleaning is not relevant if you are using a [hosted agent](../agents/hosted.md) because you get a new agent every time in that case.
+> Cleaning is not relevant if you are using a [Microsoft-hosted agent](../agents/hosted.md) because you get a new agent every time in that case.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"

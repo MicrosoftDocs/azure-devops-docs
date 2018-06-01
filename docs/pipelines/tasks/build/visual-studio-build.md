@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2015'
 
 msbuild, visualstudio
 
-> **VSTS:** If your team wants to use Visual Studio 2017 with our hosted agents, select **Hosted VS2017** as your default build queue.. See [Hosted agents](../../agents/hosted.md).
+> **VSTS:** If your team wants to use Visual Studio 2017 with our Microsoft-hosted agents, select **Hosted VS2017** as your default build queue.. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="vsts"
 
@@ -69,7 +69,7 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 <p>The value you select here adds the ```/p:VisualStudioVersion={numeric_visual_studio_version}``` argument to the MSBuild command run by the build. For example, if you select <strong>Visual Studio 2015</strong>, ```/p:VisualStudioVersion=14.0``` is added to the MSBuild command.
 </p>
 <blockquote>
-<p><strong>VSTS:</strong>If your team wants to use Visual Studio 2017 with our hosted agents, select **Hosted VS2017** as your default build queue. See [Hosted agents](../../agents/hosted.md).</p>
+<p><strong>VSTS:</strong>If your team wants to use Visual Studio 2017 with our Microsoft-hosted agents, select **Hosted VS2017** as your default build queue. See [Microsoft-hosted agents](../../agents/hosted.md).</p>
 </blockquote>
 </td>
 </tr>

@@ -16,7 +16,7 @@ ms.date: 12/30/2016
 
 You can use the Test Plan Progress report to monitor test activities and report on the team's overall test progress. This report shows a burndown chart of the test results for all tests the team has defined for the team project for the most recent four weeks.  
   
- This report is available only when the team creates test plans and starts to run tests as described in [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
+ This report is available only when the team creates test plans and starts to run tests as described in [Plan your tests](../../test/create-test-cases.md).  
   
  For information about how to access this report, see [Excel reports](excel-reports.md).  
   
@@ -25,7 +25,7 @@ You can use the Test Plan Progress report to monitor test activities and report 
 |**In this topic**<br /><br /> -   [Data in the Report](#Data)<br />-   [Interpreting the Report](#Interpreting)<br />-   [Updating and Customizing the Report](#Updating)|**Related topics**<br /><br /> -   [Test](../sharepoint-dashboards/test-dashboard-agile-cmmi.md)<br />-   [Quality](../sharepoint-dashboards/quality-dashboard-agile-cmmi.md)<br />-   [Test Plan Progress](../sql-reports/test-plan-progress-report.md)|  
   
 > [!NOTE]
->  A team uses test cases to define both manual and automated tests that it can run and manage by using Test Runner and Microsoft Test Manager. By using Microsoft Test Manager, you can create not only test cases but also test suites and test configurations that support testing your project. You can use test configurations to define how you want to run your Test Cases and test suites. You can group your test cases together by organizing them into a hierarchy of test suites in your test plan. By creating test suites, you can run sets of test cases as a group. See [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
+>  A team uses test cases to define both manual and automated tests that it can run and manage by using Test Runner and Microsoft Test Manager. By using Microsoft Test Manager, you can create not only test cases but also test suites and test configurations that support testing your project. You can use test configurations to define how you want to run your Test Cases and test suites. You can group your test cases together by organizing them into a hierarchy of test suites in your test plan. By creating test suites, you can run sets of test cases as a group. See [Plan your tests](../../test/create-test-cases.md).  
   
  **Requirements**  
   
@@ -40,12 +40,12 @@ You can use the Test Plan Progress report to monitor test activities and report 
   
  ![Test Plan Progress Excel Report](_img/procguid_agiletest.png "ProcGuid_AgileTest")  
   
- The chart is based on a PivotTable report from data that is stored in the data warehouse. The data is derived from the results that are generated when members of the team run tests by using Microsoft Test Manager. For more information, see [Run your tests](../../manual-test/getting-started/run-manual-tests.md).  
+ The chart is based on a PivotTable report from data that is stored in the data warehouse. The data is derived from the results that are generated when members of the team run tests by using Microsoft Test Manager. For more information, see [Run your tests](../../test/run-manual-tests.md).  
   
 ### Required Activities for Tracking Test Plan Progress  
  For the Test Plan Progress report to be useful and accurate, the team must perform the following activities:  
   
--   [Define test plans, and assign test cases to test plans](../../manual-test/getting-started/create-test-cases.md).  
+-   [Define test plans, and assign test cases to test plans](../../test/create-test-cases.md).  
   
 -   For manual tests, mark the results of each validation step in the test case as passed or failed.  
   

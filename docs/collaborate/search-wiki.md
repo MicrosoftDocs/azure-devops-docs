@@ -38,8 +38,8 @@ English language stemming support helps you find the most relevant wiki pages. F
 
 ## Related articles
 
-- [Search code](../search/code/code-search.md)
-- [Search work items](../search/workitem/work-item-search.md)
+- [Search code](../project/search/code-search.md)
+- [Search work items](../project/search/work-item-search.md)
 
 
 <!---

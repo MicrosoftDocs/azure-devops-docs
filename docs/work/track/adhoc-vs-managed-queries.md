@@ -39,5 +39,5 @@ Note that with  Work item search, the work item search box is repurposed to supp
 ## Resources 
 
 - [Use the query editor to create managed queries](using-queries.md)
-- [Perform work item search](../../search/workitem/work-item-search.md)
+- [Perform work item search](../../project/search/work-item-search.md)
  

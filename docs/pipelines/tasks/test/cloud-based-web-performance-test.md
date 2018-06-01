@@ -57,7 +57,7 @@ The build agent must have the following capabilities:
 ## More Information
 
 * [Cloud-based Load Testing](https://www.visualstudio.com/features/vso-cloud-load-testing-vs)
-* [Performance testing video and Q&A](../../../load-test/reference-qa.md)
+* [Performance testing video and Q&A](../../../test/load-test/reference-qa.md)
 
 ## Related tasks
 

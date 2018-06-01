@@ -158,7 +158,7 @@ If you've customized your team project and haven't upgraded TFS for a while, you
 <p>TFS 2013.2</p>
 </td>
 <td>
-<p>Added support for the Shared Parameters feature which allows you to [run tests with different data](../../../manual-test/repeat-test-with-different-data.md). </p>
+<p>Added support for the Shared Parameters feature which allows you to [run tests with different data](../../../test/repeat-test-with-different-data.md). </p>
 <h4>The following changes were made to the default process templates:  </h4>
 <ul>
 <li>WITs added: Shared Parameter</li>

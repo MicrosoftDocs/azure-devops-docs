@@ -67,7 +67,7 @@ One of the main advantages to working with VSTS or TFS is the suite of tools and
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  
 
-To get started, see the overviews provided here: [Build &amp; Release](../pipelines/overview.md) and [Test](../manual-test/index.md). 
+To get started, see the overviews provided here: [Build &amp; Release](../pipelines/overview.md) and [Test](../test/index.md). 
 
 ### Stakeholders
 
@@ -104,7 +104,7 @@ Responsible for project level settings, including:
 - [Project permissions and repository security](../security/permissions.md)
 - [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
 - [Build agents, pools, and service endpoints](../pipelines/overview.md) 
-- [Test](../manual-test/getting-started/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
+- [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
  
 
 ### Project collection administrators
