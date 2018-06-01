@@ -18,7 +18,7 @@ ms.date: 09/08/2017
 
 By using the plug-in for Microsoft Test Manager, you can define a team project's initial test management setup. You can define settings such as test variables and test configurations that combine test variables. For example, you can define the hardware platform, the operating system, the browser version, or another type of hardware or software to be used for testing, and then you can define test configurations that combine these variables. In addition, you can customize the default test settings and the list of valid test resolution states. After you create a team project, you can modify each test configuration through Microsoft Test Manager except for test resolution states.  
   
- The test management plug-in file is provided with the default process templates. Microsoft Test Manager is available with Visual Studio Ultimate (2015), Visual Studio Enterprise, and Visual Studio Test Professional. For more information, see [Testing overview](../../../../manual-test/index.md).  
+ The test management plug-in file is provided with the default process templates. Microsoft Test Manager is available with Visual Studio Ultimate (2015), Visual Studio Enterprise, and Visual Studio Test Professional. For more information, see [Testing overview](../../../../test/index.md).  
   
 > [!NOTE]  
 >  You can customize the initial security configuration for test activities by assigning them in the GroupsandPermissions.xml plug-in file. For more information, see [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md).  
@@ -82,7 +82,7 @@ The names of the file, the folder, and the plug-in for the default process templ
     -   Internet Explorer 8.0   
     -   Firefox 3.0  
   
- After the project is created, you can modify these variables and create other variables. For more information, see [Test configurations: specifying test platforms](../../../../manual-test/test-different-configurations.md).  
+ After the project is created, you can modify these variables and create other variables. For more information, see [Test configurations: specifying test platforms](../../../../test/test-different-configurations.md).  
   
  The **TestVariable** element must be encapsulated within its corresponding container element: **TestVariables**. You use the following syntax structure for these elements:  
   
@@ -121,7 +121,7 @@ The names of the file, the folder, and the plug-in for the default process templ
   
 <a name="TestConfigurations"></a> 
 ##  Define test configurations  
- You use the **TestConfiguration** and **TestVariable** elements to define test configurations that combine one or more test configuration variables. One default configuration is defined in the testconfiguration.xml file: Windows Vista and Internet Explorer 7.0. After the project is created, you can delete these configurations and create other configurations. For more information, see [Test configurations: specifying test platforms](../../../../manual-test/test-different-configurations.md).  
+ You use the **TestConfiguration** and **TestVariable** elements to define test configurations that combine one or more test configuration variables. One default configuration is defined in the testconfiguration.xml file: Windows Vista and Internet Explorer 7.0. After the project is created, you can delete these configurations and create other configurations. For more information, see [Test configurations: specifying test platforms](../../../../test/test-different-configurations.md).  
   
  You must enscapsulate the **TestConfiguration** element within its corresponding container element: **TestConfigurations**. You use the following syntax structure for these elements:  
   
@@ -213,5 +213,5 @@ You must encapsulate the **TestSetting** element within its corresponding contai
 ```  
   
 ## Related articles  
-- [Testing overview](../../../../manual-test/index.md)  
+- [Testing overview](../../../../test/index.md)  
 - [Customize and manage the test experience](../witadmin/tcm-customize-manage-test-experience.md)

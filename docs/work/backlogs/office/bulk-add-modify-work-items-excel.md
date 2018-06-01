@@ -32,7 +32,7 @@ In this topic you'll learn:
   
 
 > [!NOTE]  
->You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../manual-test/getting-started/create-test-cases.md).  
+>You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../test/create-test-cases.md).  
 
 <a id="add-work-items"> </a>  
 ## Add work items
@@ -257,7 +257,7 @@ To bulk edit links, you can use these clients:
 -   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
 -   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
 
-To bulk modify test cases with shared steps, use the [web portal Test grid view](../../../manual-test/getting-started/create-test-cases.md).  
+To bulk modify test cases with shared steps, use the [web portal Test grid view](../../../test/create-test-cases.md).  
 
 To resolve publishing errors, see one of these topics:   
 

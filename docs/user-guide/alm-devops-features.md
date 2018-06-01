@@ -290,7 +290,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Verify a bug, re-run test case</b></p>
-<p>Choose the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../manual-test/getting-started/run-manual-tests.md). </p>
+<p>Choose the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../test/run-manual-tests.md). </p>
 
 
 <p><b>Link work items  </b></p>
@@ -874,7 +874,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to [prevent and resolve merge conflicts](../git/tutorial/merging.md).   </p>
 
 <p><b>Code search</b></p>
-<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../search/overview.md) </p>
+<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../project/search/overview.md) </p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 
 
@@ -991,7 +991,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Code search</b></p>
-<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../search/overview.md) </p>
+<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../project/search/overview.md) </p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 <br/>
 
@@ -1264,7 +1264,7 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Comprehensive testing</b></p>
-<p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../manual-test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
+<p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
 <p>Create [unit tests](https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
@@ -1273,18 +1273,18 @@ pipelines\tasks\build\_img
 
 
 <p><b>Manual test plans and test cases</b></p>
-<p>Get started by [creating test plans and test cases](../manual-test/getting-started/create-test-cases.md) to track manual testing for sprints or milestones.</p>
+<p>Get started by [creating test plans and test cases](../test/create-test-cases.md) to track manual testing for sprints or milestones.</p>
 
 <p><b>Shared steps and shared parameters</b></p>
-<p>[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx) to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using [shared parameters](../manual-test/repeat-test-with-different-data.md). </p>
+<p>[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx) to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using [shared parameters](../test/repeat-test-with-different-data.md). </p>
 
 
 <p><b>Performance and load testing  </b></p>
-<p>Understand and fix performance issues before they impact your business by [running performance tests on your apps](../load-test/getting-started-with-performance-testing.md).</p>
+<p>Understand and fix performance issues before they impact your business by [running performance tests on your apps](../test/load-test/getting-started-with-performance-testing.md).</p>
 
 
 <p><b>Cloud-based load tests</b></p>
-<p>Find performance problems in your app before customers do with [cloud-based load tests](../load-test/get-started-simple-cloud-load-test.md).</p>
+<p>Find performance problems in your app before customers do with [cloud-based load tests](../test/load-test/get-started-simple-cloud-load-test.md).</p>
 
 
 </td>
@@ -1310,24 +1310,24 @@ pipelines\tasks\build\_img
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using [Test Manager and exploratory testing](../manual-test/index.md).</p>
+<p>Explore user stories without test cases or test steps using [Test Manager and exploratory testing](../test/index.md).</p>
 ![Exploratory testing](_img/features/features-exploratory-testing.png)  
 <br/>
-<p>Or, [download and install the Test &amp; Feedback extension](../manual-test/getting-started/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
+<p>Or, [download and install the Test &amp; Feedback extension](../test/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Microsoft Test Manager, you can [record your keystrokes and gestures while you test an application](../manual-test/getting-started/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Microsoft Test Manager, you can [record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 
 <p><b>Track test status and test results</b></p>
-<p>Quickly [view the status](../manual-test/getting-started/track-test-status.md) of your testing using lightweight charts.</p>
+<p>Quickly [view the status](../test/track-test-status.md) of your testing using lightweight charts.</p>
 ![Test charts](_img/features/features-test-results.png)  
 <br />
 
 
 <p><b>Test environments</b></p>
-<p>[Specify a combination of hardware and software](../manual-test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
+<p>[Specify a combination of hardware and software](../test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
 
 <p><b>Test permissions</b></p>
 <p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../security/set-project-collection-level-permissions.md).</p>
@@ -1365,7 +1365,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Test charts</b></p>
-<p>Track the status of your [test progress and test runs](../manual-test/getting-started/track-test-status.md). Optionally add these charts to a dashboard.  </p>
+<p>Track the status of your [test progress and test runs](../test/track-test-status.md). Optionally add these charts to a dashboard.  </p>
 ![Test run chart](_img/features/alm-feature-test-chart.png)  
  <br/>
 
@@ -2131,7 +2131,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Test</b></p>
-<p>[Create and run manual tests](../manual-test/getting-started/create-a-test-plan.md) and [load tests for your app](../load-test/getting-started-with-performance-testing.md).</p>
+<p>[Create and run manual tests](../test/create-a-test-plan.md) and [load tests for your app](../test/load-test/getting-started-with-performance-testing.md).</p>
 
 <p><b>Package (VSTS, Preview)</b></p>
 <p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](../package/what-is-packaging.md).</p>
@@ -2141,7 +2141,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p>[Search within your code branches (TFVC) and repositories (Git)](../search/overview.md) to find files, commits, and more using powerful filters to obtain rich results. </p>
+<p>[Search within your code branches (TFVC) and repositories (Git)](../project/search/overview.md) to find files, commits, and more using powerful filters to obtain rich results. </p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 <br/>
 <p><b>Find work items</b></p>
@@ -2204,7 +2204,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p>[Find code based on keywords and semantic search filters](../search/overview.md) across your Git repositories.</p>
+<p>[Find code based on keywords and semantic search filters](../project/search/overview.md) across your Git repositories.</p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 
 <p><b>CodeLens search</b></p>

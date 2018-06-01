@@ -114,7 +114,7 @@ Test **Test** hub provides support for the following:
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity.  
 
-To learn more, see [Testing overview](../manual-test/index.md).
+To learn more, see [Testing overview](../test/index.md).
 
 ## Collaboration services
 
