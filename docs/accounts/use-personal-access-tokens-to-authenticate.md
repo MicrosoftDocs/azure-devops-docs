@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2017
+ms.date: 05/31/2017
 monikerRange: '>= tfs-2017'
 ---
 # Authenticate access with personal access tokens for VSTS and TFS

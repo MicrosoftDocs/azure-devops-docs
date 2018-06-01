@@ -8,7 +8,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/10/2018
+ms.date: 05/31/2018
 monikerRange: 'vsts'
 ---
 
@@ -66,7 +66,7 @@ Provide others access to your account by adding their email address.
 
    ![Open Account Settings](../user-guide/_img/sign-up/open-account-settings.png)
 
-2. Then, choose **Users** to open the Manage users page. Choose **Add new users** to open the dialog.
+2. Choose **Users** and then choose **Add new users** to open the form.
 
    ![Open Add new users dialog](../user-guide/_img/sign-up/add-new-users.png)
 
