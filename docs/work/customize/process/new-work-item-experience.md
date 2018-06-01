@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
 ms.date: 03/20/2018
 ---
@@ -71,7 +72,7 @@ Within the discussion section, you can use the [**@mention** control](../../../n
 <img src="../../backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #C3C3C3;" />  
 
 > [!IMPORTANT]
-> For on-premises TFS, [you must configure an SMTP sever](../../../tfs-server/admin/setup-customize-alerts.md) in order for team members to receive notifications.     
+> For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.     
 
 ### Access to other tasks
 

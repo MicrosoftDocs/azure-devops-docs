@@ -131,7 +131,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 - Build retention policies
 - Add and manage team project collections     
   
-To get started, see [Server Administration (TFS)](../tfs-server/index.md). 
+To get started, see [Server Administration (TFS)](/tfs/server/index). 
 
 
 ## Related notes

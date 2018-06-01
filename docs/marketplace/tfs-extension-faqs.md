@@ -100,7 +100,7 @@ is available only for VSTS (targets = Microsoft.Visualstudio.Services.Cloud).
 ### Q: Why can't I upload extensions to TFS?
 
 A: You must be a member of the 
-[Team Foundation Administrators group](../tfs-server/add-administrator-tfs.md#server) 
+[Team Foundation Administrators group](/tfs/server/admin/add-administrator-tfs#server) 
 with [**Edit instance-level information** permissions](../security/permissions.md#server) 
 for the Team Foundation Server where you want to upload extensions.
 

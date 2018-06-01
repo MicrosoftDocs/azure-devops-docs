@@ -56,7 +56,7 @@ gci $Env:BUILD_SOURCESDIRECTORY
 Write-Host "Over and out."
 ```
 
-On the Build tab of a build definition, add this step:
+On the Build tab of a build definition, add this task:
 
 | Task | Arguments |
 | ---- | --------- |

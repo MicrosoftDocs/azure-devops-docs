@@ -33,7 +33,7 @@ If you don't have a team project yet, create one in [VSTS](../accounts/create-ac
 >[!NOTE]  
 >**Feature availability**: The features available to you depend on the platform (VSTS or on-premises TFS), TFS version, features enabled for your team project or collection, and your access level. New features are deployed regularly to VSTS. Many of these features are then made available to [on-premises TFS through regular updates](/vsts/release-notes/index).  
 
-To get started, from a [supported web browser](../tfs-server/requirements.md#browsers) enter the following URL:
+To get started, from a [supported web browser](/tfs/server/compatibility#browsers) enter the following URL:
 
 ::: moniker range="vsts"
 <pre><code>https://<i>AccountName</i>.visualstudio.com/DefaultCollection/<i>ProjectName</i></code></pre>
@@ -303,7 +303,7 @@ You must be a member of the listed administrator group or role to perform the ta
 > [!div class="mx-tdBreakAll"]
 > |Collection settings | Server-level settings |
 > |-------------|----------| 
-> | Required membership: [Project Collection Administrators](../security/set-project-collection-level-permissions.md)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)  &#124; [Rename team project](../accounts/rename-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) &#124; [Delete team project](../accounts/delete-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)<br/>- [Security (manage collection-level permissions)](..//security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)<br/>- [Build (manage build policies)](../pipelines/policies/retention.md)<br/>- >[Agent queues](../pipelines/agents/pools-queues.md)<br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md?toc=/vsts/marketplace/toc.json&bc=/vsts/marketplace/breadcrumb/toc.json) | Required membership: [Team Foundation Administrators](../tfs-server/add-administrator-tfs.md#server)<br/><br/>- [Overview: Choose team project/team](../work/scale/multiple-teams.md) <br/>- [Access levels (Stakeholder, Basic, Advanced)](../security/change-access-levels.md) <br/>- [Extensions (manage)](../marketplace/install-vsts-extension.md) <br/>- [Agent pools (manage build agents)](../pipelines/agents/pools-queues.md)  | 
+> | Required membership: [Project Collection Administrators](../security/set-project-collection-level-permissions.md)<br/><br/>- [Overview: Create team projects](../accounts/create-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)  &#124; [Rename team project](../accounts/rename-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) &#124; [Delete team project](../accounts/delete-team-project.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)<br/>- [Security (manage collection-level permissions)](..//security/set-project-collection-level-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json)<br/>- [Build (manage build policies)](../pipelines/policies/retention.md)<br/>- >[Agent queues](../pipelines/agents/pools-queues.md)<br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md?toc=/vsts/marketplace/toc.json&bc=/vsts/marketplace/breadcrumb/toc.json) | Required membership: [Team Foundation Administrators](/tfs/server/admin/add-administrator-tfs#server)<br/><br/>- [Overview: Choose team project/team](../work/scale/multiple-teams.md) <br/>- [Access levels (Stakeholder, Basic, Advanced)](../security/change-access-levels.md) <br/>- [Extensions (manage)](../marketplace/install-vsts-extension.md) <br/>- [Agent pools (manage build agents)](../pipelines/agents/pools-queues.md)  | 
 > 
 ::: moniker-end
  
@@ -370,7 +370,7 @@ Five account users are free as are Visual Studio subscribers and stakeholders. A
 
 ::: moniker range=">= tfs-2013"
 
-To connect to the web portal, you need your user account added to the team project. This is typically done by the [project administrator](../security/add-users-team-project.md?toc=/vsts/tfs-server/toc.json&bc=/vsts/tfs-server/breadcrumb/toc.json).
+To connect to the web portal, you need your user account added to the team project. This is typically done by the [project administrator](../security/add-users-team-project.md?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json).
 
 Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json). Most regular contributors must have a TFS client access license (CAL). All Visual Studio subscriptions include a TFS CAL. Find out more about licensing from [TFS pricing](https://www.visualstudio.com/team-services/tfs-pricing).
 

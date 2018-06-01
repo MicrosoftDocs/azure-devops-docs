@@ -72,13 +72,13 @@ The sample provided here is an iOS app, but the concepts described here translat
 
 1. In the right panel, click **Xcode**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the steps that will automatically run every time you push code changes.
+ You now see all the tasks that were automatically added to the build definition by the template. These are the tasks that will automatically run every time you push code changes.
 
 1. For the **Agent queue**, select **Hosted macOS** or a queue that includes the Mac agent you set up.
 
 1. For the **Scheme**, enter `iOSHelloWorld`
 
-1. Make sure that each of the Xcode steps are set to use version **4.*** or later.
+1. Make sure that each of the Xcode tasks are set to use version **4.*** or later.
 
 1. Click **Get sources** and then:
 

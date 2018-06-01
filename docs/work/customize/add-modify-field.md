@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 03/20/2018
 ---
@@ -255,7 +256,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 <a id="custom-control">  </a>
 ## Add a custom control  
 
-Using the [object model for tracking work items](../../tfs-server/architecture/extend-vs-for-alm.md), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+Using the [object model for tracking work items](/tfs/server/architecture/extend-vs-for-alm), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
 Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=VSTS&sortBy=Relevance). For example:
 

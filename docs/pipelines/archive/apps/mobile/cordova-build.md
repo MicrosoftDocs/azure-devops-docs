@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 
 VSTS (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can be used for building and testing Cordova apps in a Continuous Integration (CI) environment thanks to a new [cross-platform agent](https://github.com/Microsoft/vsts-agent) that supports macOS. The end result is you can use VSTS or TFS to build projects created using [Tools for Apache Cordova](http://go.microsoft.com/fwlink/?LinkID=536496) or *any Cordova compliant CLI like the Ionic, PhoneGap, or TACO CLI*. 
 
-To streamline CI for Cordova-based projects, we have created a series of build tasks (or steps) that you can use: **Cordova Build**, **[Cordova Command](./cordova-command.md)**, **[Ionic Command](./cordova-command.md)**, and **[PhoneGap Command](./cordova-command.md)**. These tasks will automatically handle fetching the correct version of the appropriate CLI and even setup the correct version of Node.js for you if not present!
+To streamline CI for Cordova-based projects, we have created a series of build tasks that you can use: **Cordova Build**, **[Cordova Command](./cordova-command.md)**, **[Ionic Command](./cordova-command.md)**, and **[PhoneGap Command](./cordova-command.md)**. These tasks will automatically handle fetching the correct version of the appropriate CLI and even setup the correct version of Node.js for you if not present!
 
 **Article sections:**
 * [Installing the VSTS Extension for Cordova](#install)
@@ -60,7 +60,7 @@ Detailed instructions on creating build definitions in TFS 2015 can be found in 
 
   ![Windows Build Definition - Demand](_img/cordova-build/tfs2015-3.png)
 
-2. Next we will add some build steps.
+2. Next we will add some build tasks.
 
   <table>
    <tr>
@@ -81,7 +81,7 @@ Detailed instructions on creating build definitions in TFS 2015 can be found in 
 	  <td>
 	  	<p>Settings:</p>
 	  	<ul>  	   
-		  <li>**Copy Root**: Location specified in Advanced &gt; Output Directory in the Cordova Build step. Defaults to "bin."</li>
+		  <li>**Copy Root**: Location specified in Advanced &gt; Output Directory in the Cordova Build task. Defaults to "bin."</li>
 		  <li>**Contents**: \*</li>
 		  <li>**Artifact Name**: bin</li>
 		  <li>**Artifact Type**: Server</li>
@@ -101,7 +101,7 @@ If you intend to build more than just one platform on Windows you can use someth
 
 2. Go to the **Options** tab, check **MultiConfiguration**, and set **Multipliers** to **Platform** 
 
-3. Update the **Platform** value for the **Cordova Build** step to be **$(Platform)** and update any platform specific options as appropriate.
+3. Update the **Platform** value for the **Cordova Build** task to be **$(Platform)** and update any platform specific options as appropriate.
 
 Next time you build, it will queue up and build all three platforms and store separate artifacts for each using the platform name.
 
@@ -113,9 +113,9 @@ Now let's create a version of this same build definition to target iOS that will
 
 1. Right click on the Windows build definition and select "Clone." Once you save you should give this definition a name that indicates it's the iOS build. 
 
-2. Change the **Platform** value for the **Cordova Build** step to **ios** 
+2. Change the **Platform** value for the **Cordova Build** task to **ios** 
 
-3. Update the **iOS** category for the **Cordova Build** step. See **[securing your signing keys](../../../apps/mobile/secure-certs.md)** for details on the appropriate options to set for your situation. Be sure to check out the "P12 Certificate File" and "Provisioning Profile File" options that can really streamline setup! The Xcode Developer Path option also allows you to specify the path of a different version of Xcode than you have installed locally.  (Ex: /Applicaitons/Xcode6.4.app/Contents/Developer will use Xcode 6.4 in MacinCloud.)
+3. Update the **iOS** category for the **Cordova Build** task. See **[securing your signing keys](../../../apps/mobile/secure-certs.md)** for details on the appropriate options to set for your situation. Be sure to check out the "P12 Certificate File" and "Provisioning Profile File" options that can really streamline setup! The Xcode Developer Path option also allows you to specify the path of a different version of Xcode than you have installed locally.  (Ex: /Applicaitons/Xcode6.4.app/Contents/Developer will use Xcode 6.4 in MacinCloud.)
 
 	![Windows Build Definition - npm](_img/cordova-build/tfs2015-2.png)
 
@@ -131,7 +131,7 @@ You are now all set! You can configure either of these build definitions further
 
 <a name="gulp"></a>
 ## Optional: Using Gulp for script compilation and running tests
-Using Gulp in a CI environment can allow you to easily compile / transpile scripts (TypeScript, LESS, SASS) and even run tests thanks to the "Gulp" and "npm install" build steps.
+Using Gulp in a CI environment can allow you to easily compile / transpile scripts (TypeScript, LESS, SASS) and even run tests thanks to the "Gulp" and "npm install" build tasks.
 
 <a name="gulptypescript"></a>
 ###TypeScript example
@@ -141,7 +141,7 @@ To add TypeScript compilation into your build definition using Gulp, follow thes
 
 2. Add these files to source control with your project. From here you can modify gulpfile.js and add other Gulp plugins as you see fit.
 
-3. Next we will add some Gulp related build steps **before** the other steps in the definition.
+3. Next we will add some Gulp related build tasks **before** the other tasks in the definition.
 
 <table>
    <tr>
@@ -171,7 +171,7 @@ To add TypeScript compilation into your build definition using Gulp, follow thes
 
 <a name="gulptest"></a>
 ### Using Gulp to run tests
-You can also use the exact same Gulp build step above to run your tests! The scripts [from the GitHub repo](http://go.microsoft.com/fwlink/?LinkID=691189) mentioned above are ready for use with [Jasmine](http://jasmine.github.io/), [Karma](http://karma-runner.github.io/), and [PhantomJS](http://phantomjs.org/). See the [Cordova test tutorials](http://go.microsoft.com/fwlink/?LinkID=691195) for details on setting up Gulp to run your tests. 
+You can also use the exact same Gulp build tasks above to run your tests! The scripts [from the GitHub repo](http://go.microsoft.com/fwlink/?LinkID=691189) mentioned above are ready for use with [Jasmine](http://jasmine.github.io/), [Karma](http://karma-runner.github.io/), and [PhantomJS](http://phantomjs.org/). See the [Cordova test tutorials](http://go.microsoft.com/fwlink/?LinkID=691195) for details on setting up Gulp to run your tests. 
 
 Next, we will configure the definition to publish your test results to VSTS or TFS.
 
@@ -179,7 +179,7 @@ Next, we will configure the definition to publish your test results to VSTS or T
    <tr>
     <td>![Build: Gulp](../../../tasks/build/_img/gulp.png)<br />**Build: Gulp**</td>
 	  <td>
-      <p>Update the **Gulp Task(s)** option in the Gulp step above to reference your "test" task. A value of "scripts test" will first compile TypeScript (or anything else you have configured) and then run tests.</p>
+      <p>Update the **Gulp Task(s)** option in the Gulp task above to reference your "test" task. A value of "scripts test" will first compile TypeScript (or anything else you have configured) and then run tests.</p>
  	  </td>
    </tr>
    <tr>

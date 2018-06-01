@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 
 VSTS (formerly Visual Studio Online) and Team Foundation Services (TFS) 2015 can be used for building and testing Cordova apps in a Continuous Integration (CI) environment thanks to a new [cross-platform agent](https://github.com/Microsoft/vsts-agent) that supports macOS. The end result is you can use VSTS or TFS to build projects created using [Tools for Apache Cordova](http://go.microsoft.com/fwlink/?LinkID=536496) or *any Cordova compliant CLI like the Ionic, PhoneGap, or TACO CLI*. 
 
-To streamline CI for Cordova-based projects, we have created a series of build tasks (or steps) that you can use: **[Cordova Build](./cordova-build.md)**, **Cordova Command**, **Ionic Command**, and **PhoneGap Command**. These tasks will automatically handle fetching the correct version of the appropriate CLI and even setup the correct version of Node.js for you if not present!
+To streamline CI for Cordova-based projects, we have created a series of build tasks that you can use: **[Cordova Build](./cordova-build.md)**, **Cordova Command**, **Ionic Command**, and **PhoneGap Command**. These tasks will automatically handle fetching the correct version of the appropriate CLI and even setup the correct version of Node.js for you if not present!
 
 Generally you should only need to use the **[Cordova Build](./cordova-build.md)** task even when building something like an Ionic project (and it has some useful features in this specific area). However, if you want to run a non-build CLI related command, use the Cordova and Ionic Command tasks. You can also use the PhoneGap Command task to execute non-build related commands or use [PhoneGap Build](https://build.phonegap.com/).  See [PhoneGap CLI](http://docs.phonegap.com/references/phonegap-cli/remote-usage/) documentaiton for details. This article will specifically focus the Command tasks. See the [Cordova Build](./cordova-build.md) tutorial for details on building and testing along with information on setting up your own build agent.
 
@@ -32,7 +32,7 @@ To setup a Cordova build in VSTS or TFS 2015, you will need to install the Cordo
 - **TFS 2015 Update 1 and Earlier**: TFS 2015 Update 1 and below does not support installing VSTS Extensions. Follow the instructions in the [cordova-tasks](http://go.microsoft.com/fwlink/?LinkID=691187) repository to install.
 
 ## The Cordova Command task
-Add the Cordova Command task to your build definition by going to the "Build" tab, adding a new build step, and selecting **Cordova Command** from the **Build** category
+Add the Cordova Command task to your build definition by going to the "Build" tab, adding a new build task, and selecting **Cordova Command** from the **Build** category
 
 Available Settings:
   - **Command**: The CLI command.  For example "plugin".
@@ -49,7 +49,7 @@ Next, given the task is cross-platform, if you want to be sure this build defini
 ![macOS Build Definition - Demand](_img/cordova-command/cordova-command-2.png)
 
 ## The Ionic Command task
-The Ionic Command task is similar to the Cordova one. Add the Ionic Command task to your build definition by going to the "Build" tab, adding a new build step, and selecting **Ionic Command** from the **Build** category
+The Ionic Command task is similar to the Cordova one. Add the Ionic Command task to your build definition by going to the "Build" tab, adding a new build task, and selecting **Ionic Command** from the **Build** category
 
 Available Settings:
 * **Command**: The CLI command.  For example "state".
@@ -61,7 +61,7 @@ Available Settings:
 > **Troubleshooting Tip:** If you encounter a **spawn EACCES error** when building on Linux or macOS, be sure all files in the hooks folder to have an "execute bit" set as this a requirement for Cordova. To resolve, add an execute bit to the files in source control or add the following using the Command Line task: chmod +x hooks/after_prepare/010_add_platform_class.js
 
 ## The PhoneGap Command task
-The PhoneGap Command task is similar to the Cordova one. Add the PhoneGap Command task to your build definition by going to the "Build" tab, adding a new build step, and selecting **PhoneGap Command** from the **Build** category
+The PhoneGap Command task is similar to the Cordova one. Add the PhoneGap Command task to your build definition by going to the "Build" tab, adding a new build task, and selecting **PhoneGap Command** from the **Build** category
 
 Available Settings:
 * **Command**: The CLI command. For example "remote login".

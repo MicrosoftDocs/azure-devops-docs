@@ -35,7 +35,7 @@ If you want to restrict access, then you'll want to follow these steps:
 1. [Determine the groups you need](#control_access).
 
 1. [Define these groups in TFS](https://msdn.microsoft.com/library/bb558971%28v%3Dvs.140%29.aspx) 
-   or in [Active Directory](../../../../tfs-server/admin/setup-ad-groups.md).
+   or in [Active Directory](/tfs/server/admin/setup-ad-groups).
 
 1. [Add the groups to Release Management, set their permissions, and change the Everyone group permissions](#add_group).
 
@@ -128,7 +128,7 @@ example, you can restrict access based on one or more of the following
 functional user roles. You can define these groups in TFS, AD, or through the 
 Release Management client itself: 
 
-* **Approvers**: These users approve or validate a step or stage during a 
+* **Approvers**: These users approve or validate a task or stage during a 
   release cycle. They need the **Edit Approvals and Environment** permission set 
   for all stage types that they will be required to approve. 
 

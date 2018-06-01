@@ -122,7 +122,7 @@ When the retention policies mark a build for deletion, you can control which inf
 
 * Build record: You can choose to delete the entire build record or keep basic information about the build even after the build is deleted.
 * Source label: If you label sources as part of the build, then you can choose to delete the tag (for Git) or the label (for TFVC) created by a build.
-* Automated test results: You can choose to delete the automated test results associated with the build (for example, results published by the Publish Test Results build step).
+* Automated test results: You can choose to delete the automated test results associated with the build (for example, results published by the Publish Test Results build task).
 
 The following information is deleted when a build is deleted:
 
