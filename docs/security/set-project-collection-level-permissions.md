@@ -25,7 +25,7 @@ Several permissions are set at the team project or at the account/team project c
 > |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- Team Admins |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Readers group<br/>- Security Service Group | 
 
 > [!Note]  
-> The above list indicates the latest groups defined for VSTS and TFS 2017. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](../tfs-server/admin/service-accounts-dependencies-tfs.md). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
+> The above list indicates the latest groups defined for VSTS and TFS 2017. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
 
 
 For a description of each group and each permission, see [Permissions and groups reference, Groups](permissions.md#groups).
@@ -129,8 +129,8 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 For on-premises TFS, see these additional topics: 
 
-- [Add a user as a TFS server administrator](../tfs-server/add-administrator-tfs.md) 
-- [TFS service account groups](../tfs-server/admin/service-accounts-dependencies-tfs.md)  
+- [Add a user as a TFS server administrator](/tfs/server/admin/add-administrator-tfs) 
+- [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs)  
 
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites. 
 

@@ -62,7 +62,7 @@ The build agent must have the following capabilities:
 ## Related tasks
 
 * [Cloud-based Load Test](cloud-based-load-test.md)  
-* [Cloud-based Apache JMeter Load Test](cloud-based-apache-jmeter-load-test.md)  
+* [Cloud-based Apache JMeter Load Test](run-jmeter-load-test.md)  
 
 ## Q&A
 <!-- BEGINSECTION class="md-qanda" -->

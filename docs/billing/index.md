@@ -92,7 +92,7 @@ Guidance for Cloud Solution Providers
 
 * [Account Management](https://docs.microsoft.com/en-us/vsts/accounts/index?view=vsts)
 
-* [TFS Server Administration documentation](https://docs.microsoft.com/en-us/vsts/tfs-server/index?view=vsts)
+* [TFS Server Administration documentation](https://docs.microsoft.com/en-us/tfs/server/index?view=vsts)
 
 * [Buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)

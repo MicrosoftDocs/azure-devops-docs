@@ -71,7 +71,7 @@ Working directory in which you want to run the script.  If you leave it empty it
 <tr>
 <td>Fail on Standard Error</td>
 <td>
-Select if you want this step to fail if any errors are written to the StandardError stream.
+Select if you want this task to fail if any errors are written to the StandardError stream.
 </td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
@@ -96,7 +96,7 @@ ls -1 $BUILD_SOURCESDIRECTORY
 echo "Over and out."
 ```
 
-On the [Build tab](../../index.md) of a build definition, add this step:
+On the [Build tab](../../index.md) of a build definition, add this task:
 
 <table>
 <tr>

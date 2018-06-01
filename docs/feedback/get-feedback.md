@@ -33,7 +33,7 @@ To request feedback, you fill out a form that generates an email request to your
 
 	<blockquote style="font-size: 13px"><b>Note: </b>If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](../work/customize/configure-features-after-upgrade.md).</blockquote>  
 
-	If the following message appears, you need to [configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md).
+	If the following message appears, you need to [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
 
 	![Error message about email notifications not configured](_img/ALM_GF_SMTPServer.png)  
 

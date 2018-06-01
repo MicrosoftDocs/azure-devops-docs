@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 # Slack with VSTS
 
 Post messages to [Slack](https://slack.com/) in response to events in your VSTS account,
-like completed builds, code changes, and new and updated work items.
+like completed builds, code changes, pull requests, releases, work items changes, and more.
 
 ## Create the Slack integration
 

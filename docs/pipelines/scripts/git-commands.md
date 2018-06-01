@@ -91,7 +91,7 @@ If you run into problems using an on-premises agent, to make sure the repo is cl
 
 Make sure to follow the above steps to [enable Git.exe](#enable).
 
-On the [build tab](../tasks/index.md) add this step:
+On the [build tab](../tasks/index.md) add this task:
 
 | Task | Arguments |
 | ---- | --------- |
@@ -129,7 +129,7 @@ ECHO GIT STATUS
 git status
 ```
 
-On the [build tab](../tasks/index.md) add this as the last step:
+On the [build tab](../tasks/index.md) add this as the last task:
 
 | Task | Arguments |
 | ---- | --------- |
@@ -145,7 +145,7 @@ On the [build tab](../tasks/index.md) add this as the last step:
 Yes
 
 
-### Which steps can I use to run Git commands?
+### Which tasks can I use to run Git commands?
 
 [Batch Script](../tasks/utility/batch-script.md)
 

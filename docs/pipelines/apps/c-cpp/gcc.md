@@ -64,7 +64,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
  ---
 
-1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build steps.
+1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
 
 1. For the **Agent queue**:
 

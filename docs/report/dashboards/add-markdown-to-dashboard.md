@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
 ---
@@ -34,15 +35,15 @@ Here's an example:
 
 
 ::: moniker range="vsts"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-vsts.md)]
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2017-18.md)]
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
+[!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
 ::: moniker-end
 
 
@@ -50,7 +51,7 @@ Here's an example:
 
 ## Connect to the web portal for your team project 
 
-To add the markdown widget to a dashboard, you connect to your team project using a [supported web browser](../../tfs-server/requirements.md#supported-browsers). If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
+To add the markdown widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you don't have a team project yet, create one in [VSTS](../../accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../accounts/create-team-project)-->.
 
 Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../../work/scale/multiple-teams.md#add-team-members).
 
@@ -70,7 +71,7 @@ If you need to add a dashboard, see [Add and manage dashboards](dashboards.md).
 
 ::: moniker range="tfs-2015"
 > [!NOTE]   
-> Requires TFS 2015.1 or later version.    
+> Requires TFS 2015.1 or later version. ï¿½  
 ::: moniker-end
 
 
@@ -83,7 +84,7 @@ To enable the New Dashboard experience, see [Enable preview features](../../coll
 To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). The widget catalog will automatically open.  
 
 0. Drag the Markdown widget onto the dashboard where you want it located.  
-     
+    ï¿½
 	<img src="_img/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
 
 0. Click  **Done Editing** to exit dashboard editing. This will dismiss the widget catalog. You can then configure the markdown widget as needed.
@@ -137,7 +138,7 @@ The New Dashboard experience is only available from VSTS at this time.
 0. Click ![add a widget icon](_img/add-widget-icon.png) to open the widget catalog.  
 
 0. Drag the Markdown widget onto the dashboard where you want it located.  
-     
+    ï¿½
 	<img src="_img/widget-markdown-tile.png" alt="Markdown widget" style="border: 2px solid #C3C3C3;" />  
 
 0. Click the ![gear icon](../../_img/icons/gear-icon.png) gear icon to open the configuration dialog for the widget. 

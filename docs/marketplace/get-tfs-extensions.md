@@ -120,7 +120,7 @@ and then installing them in a team project collection.
 
 ### Who can upload extensions?
 
-[Team Foundation administrators](../tfs-server/add-administrator-tfs.md#server) 
+[Team Foundation administrators](/tfs/server/admin/add-administrator-tfs#server) 
 with [**Edit instance-level information** permissions](../security/permissions.md#server) 
 can upload extensions.
 

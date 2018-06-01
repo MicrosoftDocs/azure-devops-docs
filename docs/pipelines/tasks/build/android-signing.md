@@ -112,6 +112,6 @@ Enter the key password for the alias and keystore file.
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Related steps
+## Related tasks
 
 [Android Build](android-build.md)

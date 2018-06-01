@@ -53,7 +53,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	<img src="_img/access-levels-2017-stakeholder-acess.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
 
-	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
+	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
 
 ::: moniker-end
 
@@ -69,7 +69,7 @@ From a user context, open the admin context by clicking the ![gear icon](../work
 
 	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 1px solid #C3C3C3;" />
 
-	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](../tfs-server/add-administrator-tfs.md). 
+	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
 
 ::: moniker-end
 
@@ -91,7 +91,7 @@ You set an access level from its page. Click Set as default access level as show
 
 ## Set the access level for a user or group
 
-If you're managing access for a large group of users, a best practice is to first create either a [Windows group or TFS group](../tfs-server/admin/setup-ad-groups.md) and add individuals to those groups.
+If you're managing access for a large group of users, a best practice is to first create either a [Windows group or TFS group](/tfs/server/admin/setup-ad-groups) and add individuals to those groups.
 
 <a id="guide-features-access" >  </a>
 

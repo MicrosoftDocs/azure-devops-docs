@@ -2299,7 +2299,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md).</p>
 
 <p><b>Set up groups (TFS)</b></p>
-<p>[Create Windows or Active Directory groups](../tfs-server/admin/setup-ad-groups.md) to manage access to your team projects and collections.  </p>
+<p>[Create Windows or Active Directory groups](/tfs/server/admin/setup-ad-groups) to manage access to your team projects and collections.  </p>
 
 <p><b>Built-in groups</b></p>
 <p>Understand the [permissions granted to built-in groups](../security/permissions.md#groups) and use them to manage access to your team projects and collections.</p>
@@ -2344,7 +2344,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <ul>
 <li>[Project Administrators](../security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
 <li>[Project Collection Administrators](../security/set-project-collection-level-permissions.md), who manage collection-level features </li>
-<li>[Team Foundation Server Administrators](../tfs-server/add-administrator-tfs.md), who manage on-premises application servers </li>
+<li>[Team Foundation Server Administrators](/tfs/server/admin/add-administrator-tfs), who manage on-premises application servers </li>
 </ul>
 <br/>
 
@@ -2427,13 +2427,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Email configuration (TFS)</b></p>
-<p>For feedback requests, alerts, and other special controls to work, you must [configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md) for your on-premises TFS. </p>
+<p>For feedback requests, alerts, and other special controls to work, you must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts) for your on-premises TFS. </p>
 
 <p><b>Automated, scheduled backups (TFS)</b></p>
-<p>Reduce the risk of lost data by [scheduling automated backups of the data store](../tfs-server/admin/backup/config-backup-sched-plan.md).</p>
+<p>Reduce the risk of lost data by [scheduling automated backups of the data store](/tfs/server/admin/backup/config-backup-sched-plan).</p>
 
 <p><b>Built-in SQL Server database (TFS)</b></p>
-<p>For small teams, you can install [TFS using SQL Server Express which installs with TFS](../tfs-server/install/single-server.md).  </p>
+<p>For small teams, you can install [TFS using SQL Server Express which installs with TFS](/tfs/server/install/single-server).  </p>
 
 
 </td>

@@ -53,7 +53,7 @@ or they won't be able to view or edit those reports.
 
 	-   **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
 
-	![Follow instructions for your version of SharePoint](../tfs-server/_img/add-administrator-tfs/people-and-groups.png)
+	![Follow instructions for your version of SharePoint](/tfs/server/_img/add-administrator-tfs/people-and-groups.png)
 
 
 
@@ -92,7 +92,7 @@ where *ReportServer* represents the name of the server that is running SQL Serve
 
         ![Choose the role assignment for the user or group](../accounts/_img/add-users-team-project/assign-rs-role.png)
 
-If you're a member of [Team Foundation Administrators](../tfs-server/add-administrator-tfs.md),
+If you're a member of [Team Foundation Administrators](/tfs/server/admin/add-administrator-tfs),
 you can verify what features are available for your users by default,
 and see whether any users are members of groups that have access outside of the default level.
 

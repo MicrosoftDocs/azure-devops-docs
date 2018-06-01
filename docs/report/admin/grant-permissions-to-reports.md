@@ -7,7 +7,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 11/15/2017
 ---
 
@@ -56,7 +57,7 @@ Add report viewers to the **Browser** role. Add TFS report authors to the **Team
 ##Add report authors to database roles
 If members need to create or customize reports, add their accounts to the **TfsWarehouseDataReader** role. Report authors need read access to both the relational data warehouse and Analysis Services cube. Team members who create Excel reports from work item queries or by connecting to the cube need only read access to the cube. 
 
-1. If you aren't an administrator for the TFS database, [get added as one](../../tfs-server/add-administrator-tfs.md). 
+1. If you aren't an administrator for the TFS database, [get added as one](/tfs/server/admin/add-administrator-tfs). 
 
 2. Connect to the **Database Engine** for TFS using **SQL Server Management Studio**.
 
@@ -83,7 +84,7 @@ If members need to create or customize reports, add their accounts to the **TfsW
 	![Add member to Tfs_Analysis data reader role](_img/IC665046.png)
 
 > [!IMPORTANT]  
-> Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.   
+> Accounts that you add to the **TfsWarehouseDataReader** roles can view data for all team projects that are hosted in all team project collections in the TFS deployment. There is no way to limit access to a team project or collection.  
 
 
 ##Try this next

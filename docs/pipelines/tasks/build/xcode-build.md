@@ -209,7 +209,7 @@ Select if you want to run [xctool](https://github.com/facebook/xctool/blob/maste
 <tr>
 <td>xctool Test Reporter Format</td>
 <td>
-You can specify this argument if you have selected Use xctool and included `test` in Actions (arguments described above). Specify `junit:output-file-path-here.xml` to generate a file that you can publish using the [Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/PublishTestResults) step. When specified, `plain` is automatically added as well.
+You can specify this argument if you have selected Use xctool and included `test` in Actions (arguments described above). Specify `junit:output-file-path-here.xml` to generate a file that you can publish using the [Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/PublishTestResults) task. When specified, `plain` is automatically added as well.
 </td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

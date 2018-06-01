@@ -56,7 +56,7 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 <p>Tips:</p>
 <ul>
 <li>You can also build MSBuild project (.&#42;proj) files.</li>
-<li>If you are building a customized MSBuild project file, we recommend you use the [MSBuild step](msbuild.md) instead of the Visual Studio Build step.</li>
+<li>If you are building a customized MSBuild project file, we recommend you use the [MSBuild task](msbuild.md) instead of the Visual Studio Build task.</li>
 </ul>
 </td>
 </tr>
