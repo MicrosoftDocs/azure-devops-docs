@@ -45,7 +45,7 @@
   - name: Create work tracking charts
     href: charts.md
   - name: "Create test progress & result charts"
-    href: ../../manual-test/getting-started/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../../test/track-test-status.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: Set dashboard permissions (Security)
     href: dashboard-permissions.md
 - name: "Samples (REST API)"

@@ -140,7 +140,7 @@ All stakeholders and contributors to your team project can view and add items to
 Shared Parameters
 </td>
 <td>
-This feature adds the Shared Parameters work item type (WIT). With it [you can repeat a test with different data](../../manual-test/repeat-test-with-different-data.md). 
+This feature adds the Shared Parameters work item type (WIT). With it [you can repeat a test with different data](../../test/repeat-test-with-different-data.md). 
 </td>
 <td>
 No additional configurations or customizations required. 

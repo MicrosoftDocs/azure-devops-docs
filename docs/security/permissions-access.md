@@ -55,7 +55,7 @@ Feeds have three levels of access: Owners, Contributors, and Readers. Owners can
 
 ## Test
 
-You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../manual-test/index.md).  
+You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../test/index.md).  
 
 You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 

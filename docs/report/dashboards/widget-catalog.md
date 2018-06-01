@@ -409,7 +409,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
 
-To learn more, see [Track your test results](../../manual-test/getting-started/track-test-status.md).
+To learn more, see [Track your test results](../../test/track-test-status.md).
 
 ::: moniker-end
 ::: moniker range="tfs-2017"

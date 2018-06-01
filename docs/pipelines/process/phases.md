@@ -254,7 +254,7 @@ YAML is not yet supported in TFS.
 ---
 
 ::: moniker range="vsts"
-> Jobs targeting hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
+> Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
 ::: moniker-end
 
 > You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). 

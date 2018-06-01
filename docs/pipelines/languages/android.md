@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017.2**
 
-This guide explains creating pipelines for Android projects. Before this guidance, read the [web quickstart](../get-started-designer.md) or [YAML quickstart](../build/yaml.md).
+This guide explains creating pipelines for Android projects. Before this guidance, read the [web quickstart](../get-started-designer.md) or [YAML quickstart](../get-started-yaml.md).
 
 ## Get started
 

@@ -59,6 +59,8 @@ information.
    ![Shortcut menu commands for a test run](_img/performance-reports/LoadTestListShortcutMenu.png)
 
    >You can also open a test run by double-clicking it with your mouse.
+   
+   [How do I delete load tests?](reference-qa.md#deletetests)   
 
 <a name="comparetests"></a>
 ## Compare two test runs

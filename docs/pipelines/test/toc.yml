@@ -51,8 +51,8 @@
   - name: Plug-ins for Visual Studio
     href: http://go.microsoft.com/fwlink/?LinkID=246630
   - name: Manual and exploratory testing
-    href: ../../manual-test/index.md
+    href: ../../test/index.md
   - name: Load and performance testing
-    href: ../../load-test/index.md
+    href: ../../test/load-test/index.md
   - name: Unit testing
     href: https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code

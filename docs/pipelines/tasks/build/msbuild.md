@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2015'
 
 msbuild
 
-> **VSTS:** If your team uses Visual Studio 2017 and you want to use our hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Hosted agents](../../agents/hosted.md).
+> **VSTS:** If your team uses Visual Studio 2017 and you want to use our Microsoft-hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="vsts"
 
