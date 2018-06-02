@@ -190,7 +190,7 @@ The following table indicates those elements or tasks associated with each type 
 <td>Yes, see [Column options](set-column-options.md)</td>
 <td>Yes, see [Add columns](../kanban/add-columns.md)</td>
 <td>Yes, see [Column options](set-column-options.md)</td>
-<td>Yes, see [Customize workflow](../customize/process/customize-process-workflow.md)</td>
+<td>Yes, see [Customize workflow](../../organizations/settings/work/customize-process-workflow.md)</td>
 </tr>
 
 <tr>
@@ -236,7 +236,7 @@ The following table indicates those elements or tasks associated with each type 
 
 **Notes:**
 1. Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and task boards. For details, see [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md).  
-2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](../../settings/about-teams-and-settings.md).  
+2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](../../organizations/settings/about-teams-and-settings.md).  
 3. The **In progress items Show/Hide** control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](../scrum/forecast.md).  
 4. When you [add a team](../scale/multiple-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Configure team settings](../scale/manage-team-assets.md) for details.  
 5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../scrum/sprint-burndown.md#current-and-past-sprint-burndown-charts).
@@ -269,7 +269,7 @@ When you configure a plan, you select the team or teams and backlog levels of in
 
 ::: moniker range="vsts"
 ## Customize backlog levels 
-If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../customize/process/customize-process-backlogs-boards.md). 
+If you need more than three backlog levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 ::: moniker-end
  
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
@@ -297,7 +297,7 @@ A few things to keep in mind...
  
 Additional topics of interest:
 
-- [About teams and Agile tools](../../settings/about-teams-and-settings.md)   
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)   
 - [Add work items](add-work-items.md)   
 - [Dashboards](../../report/dashboards/dashboards.md)   
 

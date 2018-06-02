@@ -55,7 +55,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 ## Concepts 
       
 - [Kanban best practices](best-practices-kanban.md)      
-- [About teams and Agile tools](../../settings/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
+- [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)  
 
 
 

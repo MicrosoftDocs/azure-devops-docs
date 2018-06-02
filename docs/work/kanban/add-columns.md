@@ -135,7 +135,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 
 6.	[Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
 
-	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../customize/process/customize-process-workflow.md).  
+	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).  
 
 
 ::: moniker-end
@@ -333,7 +333,7 @@ What does this mean for Kanban board users? First, only work items whose WITs be
 
 * Your team admin chooses to [show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
 * Your project admin [adds WITs to backlogs and boards](../customize/add-wits-to-backlogs-and-boards.md)
-* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../customize/process/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
+* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../../organizations/settings/work/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
 
 For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. For more information, see [Workflow states and state categories](../customize/workflow-and-state-categories.md). 
 

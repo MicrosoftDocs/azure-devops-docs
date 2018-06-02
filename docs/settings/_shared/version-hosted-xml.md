@@ -1,1 +1,0 @@
-**VSTS (Hosted XML)**

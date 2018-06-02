@@ -85,7 +85,7 @@ However, what if you want to track other work item types (WITs) on your backlogs
 
 ::: moniker range="vsts"  
 You can add other WITs&#8212;such as change requests, issues, or impediments&#8212; by customizing your process or team project, based on the process model you use. For details,  
-- For the Inheritance process model, see [Customize your backlogs or boards for a process](../customize/process/customize-process-backlogs-boards.md).   
+- For the Inheritance process model, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md).   
 - For Hosted XML and On-premises XML process models, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 

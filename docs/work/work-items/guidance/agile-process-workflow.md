@@ -225,10 +225,10 @@ Issues are used to track events that may block progress or shipping a user story
 
 ![Add work item from a New work item widget](../../../user-guide/_img/features/alm-feature-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
  
 ### Track business value  
-You can use the Priority field to differentiate the value of various stories. Or, you can add a custom field to the User Story WIT that tracks the relative value of stories. To learn how, see [Customize a field for a process](../../customize/process/customize-process-field.md).
+You can use the Priority field to differentiate the value of various stories. Or, you can add a custom field to the User Story WIT that tracks the relative value of stories. To learn how, see [Customize a field for a process](../../../organizations/settings/work/customize-process-field.md).
 
 
 ### Backlog list order

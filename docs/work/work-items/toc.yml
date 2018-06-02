@@ -124,7 +124,7 @@
   - name: Email/print work items
     href: email-work-items.md  
   - name: Switch project or team focus
-    href: ../../settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+    href: ../../organizations/settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: "Manage permissions (Security)"
     href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Reference

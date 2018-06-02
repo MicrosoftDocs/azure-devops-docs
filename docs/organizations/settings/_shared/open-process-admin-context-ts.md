@@ -5,8 +5,7 @@ ms.topic: include
 <a id="open-process-wit">  </a>
 ## Open Settings>Process hub
 
-You create, manage, and make customizations to processes from the **Settings>Process** hub.
-
+You create, manage, and make customizations to processes from the **Settings>Process** hub. 
 
 0. To open the admin context from the user context, click the ![](/vsts/_img/icons/gear_icon.png) Settings icon and choose **Account settings**.
  
@@ -21,4 +20,3 @@ You create, manage, and make customizations to processes from the **Settings>Pro
 	> [!div class="mx-imgBorder"]  
 	> ![Account Settings context, Process page](/vsts/organizations/settings/work/_img/process/open-process-page.png) 
 
- 

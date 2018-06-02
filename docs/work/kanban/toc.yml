@@ -27,7 +27,7 @@
   - name: "Workflow states & state categories"
     href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: About teams and Agile tools
-    href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: Agile glossary
     href: ../work-items/agile-glossary.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: How-to guides
@@ -78,7 +78,7 @@
   - name: Customization
     href: ../customize/index.md
   - name: "Scale & Configure Teams"
-    href: ../../settings/index.md
+    href: ../../organizations/settings/index.md
   - name: "What is Agile?"
     href: /azure/devops/agile/what-is-agile
   - name: "What is Agile development?"

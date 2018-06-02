@@ -5,7 +5,7 @@ To improve the readability of your work items and convey detailed information, y
 
 The formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 
-You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type and if you've [customized the process](../customize/process/customize-process.md). 
+You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type and if you've [customized the process](../../organizations/settings/work/customize-process.md). 
 
 You can format text and insert images inline using the web portal or Team Explorer. The specific set of formatting features differs between the two clients. 
 

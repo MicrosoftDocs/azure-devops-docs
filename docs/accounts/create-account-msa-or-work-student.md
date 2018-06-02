@@ -158,7 +158,7 @@ add code, work items, or more users.
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create your backlog](../work/backlogs/create-your-backlog.md), 
-	[manage your process](../work/customize/process/manage-process.md), 
-	or [customize your process](../work/customize/process/customize-process.md)
+	[manage your process](../organizations/settings/work/manage-process.md), 
+	or [customize your process](../organizations/settings/work/customize-process.md)
 
 

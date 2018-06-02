@@ -61,7 +61,7 @@ The following plug-ins and their associated files are ignored.
 Custom plug-ins aren't supported. 
 
 ## Object limits 
-When customizing a process template for import, limit the number of the objects you define as specified in [Work tracking object limits](../object-limits.md).  
+When customizing a process template for import, limit the number of the objects you define as specified in [Work tracking object limits](../../../organizations/settings/work/object-limits.md).  
                                                                                                                             
 
 ## Tools with limited support 
@@ -74,5 +74,5 @@ When you connect to VSTS, you can use the following tools subject to limitations
 
 ## Related articles
 
-- [Work tracking object limits](../object-limits.md)   
+- [Work tracking object limits](../../../organizations/settings/work/object-limits.md)   
 - [Customize work tracking](../customize-work.md) 
