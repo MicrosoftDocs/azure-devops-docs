@@ -124,7 +124,7 @@ Also, stakeholders can create and modify work items using Team Foundation client
 Within the admin context, there are several hubs which support administrating features at the team, project, or project collection level. You can learn more from these resources:
 
 - [Permissions and group reference](permissions.md)   
-- [About teams and team tools](../settings/about-teams-and-settings.md)   
+- [About teams and team tools](../organizations/settings/about-teams-and-settings.md)   
 
 ## Related articles
 

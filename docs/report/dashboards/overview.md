@@ -145,7 +145,7 @@ The Analytics Service is in preview and available to all VSTS accounts. To learn
 ::: moniker range="vsts"
 ### Add custom fields
   
-You can add data to support reporting requirements by [adding a custom field](../../work/customize/process/customize-process-field.md).   
+You can add data to support reporting requirements by [adding a custom field](../../organizations/settings/work/customize-process-field.md).   
 
 ::: moniker-end
 

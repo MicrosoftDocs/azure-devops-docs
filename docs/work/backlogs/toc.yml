@@ -7,7 +7,7 @@
   - name: "Backlogs, boards, & plans"
     href: backlogs-boards-plans.md
   - name: About teams and Agile tools
-    href: ../../settings/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
 - name: Quickstarts
   items:
   - name: Create your backlog

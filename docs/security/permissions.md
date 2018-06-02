@@ -604,13 +604,19 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="create-process-permission">Create process</td>
 		<td>
-			Can [create an inherited process](../work/customize/process/manage-process.md). Applies to VSTS only.
+			Can [create an inherited process](../organizations/settings/work/manage-process.md). Applies to VSTS only.
+		</td>
+	</tr>
+	<tr>
+		<td id="delete-field-permission">Delete field from account</td>
+		<td>
+			Can [delete a custom field that was added to a process](../organizations/settings/work/customize-process-field.md). Applies to VSTS only.
 		</td>
 	</tr>
 	<tr>
 		<td id="delete-process-permission">Delete process</td>
 		<td>
-			Can [delete an inherited process](../work/customize/process/manage-process.md). Applies to VSTS only.
+			Can [delete an inherited process](../organizations/settings/work/manage-process.md). Applies to VSTS only.
 		</td>
 	</tr>
 	<tr>
@@ -662,7 +668,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="edit-process-permission">Edit process</td>
 		<td>
-			Can edit a [custom inherited process](../work/customize/process/customize-process.md). Applies to VSTS only.
+			Can edit a [custom inherited process](../organizations/settings/work/customize-process.md). Applies to VSTS only.
 		</td>
 	</tr>
 	<tr>

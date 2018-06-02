@@ -114,6 +114,6 @@ or change them later in Visual Studio options.
 or [Team Foundation](../tfvc/share-your-code-in-tfvc-vs.md) version control
 
 *	[Create your backlog](../work/backlogs/create-your-backlog.md) to organize your work, 
-	[manage your process](../work/customize/process/manage-process.md), 
-	or [customize your process](../work/customize/process/customize-process.md)
+	[manage your process](../organizations/settings/work/manage-process.md), 
+	or [customize your process](../organizations/settings/work/customize-process.md)
 

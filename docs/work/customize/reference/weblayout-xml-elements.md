@@ -21,7 +21,7 @@ You use the **WebLayout** element to define the layout and controls that appear 
 > [!IMPORTANT]  
 > This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
 >
-> For the Inheritance process model, see [Customize a process](../process/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
+> For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 The **WebLayout** element is a required child element of the **FORM** element. This topic documents the **WebLayout** element and its child elements. Use this as a guide to further customize a WIT definition that contains the new **WebLayout** section. To learn more about these changes, see the blog post, [Announcing the deprecation of the old Work Item Form in TFS](https://blogs.msdn.microsoft.com/devops/2017/05/22/announcing-the-deprecation-of-the-old-work-item-form-in-tfs/).
 
@@ -35,7 +35,7 @@ To customize the windows client layout, see [Layout XML element](layout-xml-elem
 When the new form roll out is enabled, the XML definitions for all work item types (WITs) in the collection are updated to include a **WebLayout** section within the **FORM** section.  
 
 The new form makes available several new features as described in [New work item experience](../process/new-work-item-experience.md). Your account or project collection administrator manages the [switch to the new form](../manage-new-form-rollout.md).  
-- For the [Inheritance process model](../process/manage-process.md), the switch to the new form is automatic for all user accounts.  
+- For the [Inheritance process model](../../../organizations/settings/work/manage-process.md), the switch to the new form is automatic for all user accounts.  
 - For the [Hosted XML process model](../import-process/import-process.md), an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
 - For TFS 2017, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
 - For TFS 2015 the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://www.visualstudio.com/downloads/) to access the new form.

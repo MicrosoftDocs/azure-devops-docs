@@ -14,7 +14,7 @@ ms.date: 05/10/2017
 
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For defining custom pick lists for the Inheritance process model, see [Customize a field for a process](../process/customize-process-field.md). 
+>This topic applies to team project customization for Hosted XML and On-premises XML process models. For defining custom pick lists for the Inheritance process model, see [Customize a field for a process](../../../organizations/settings/work/customize-process-field.md). 
 >
 >For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
 

@@ -16,7 +16,7 @@ ms.date: 03/02/2017
 <p><b>TFS 2017 | TFS 2015 | TFS 2013</b></p>
 
 > [!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../process/customize-process.md).
+>This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
