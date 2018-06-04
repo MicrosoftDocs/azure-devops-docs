@@ -25,7 +25,7 @@ You can find more information about the types of scenarios now possible at our [
 
 Our JSON REST APIs enable a lightweight way to work with Visual Studio Online from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and others. You can create and query work items, queue a build, get recent team room messages, access source code, and accomplish almost any team or code management task.
 
-[Learn the basics](https://www.visualstudio.com/integrate/get-started/get-started-rest-basics-vsi)
+[Learn the basics](https://docs.microsoft.com/rest/api/vsts/?view=vsts-rest-4.1)
 
 [Explore the APIs](https://www.visualstudio.com/integrate/reference/reference-vso-overview-vsi)
 
@@ -33,7 +33,7 @@ Our JSON REST APIs enable a lightweight way to work with Visual Studio Online fr
 
 With OAuth 2.0 support in Visual Studio Online, now you can safely access information and perform operations on Visual Studio Online on behalf of a user. OAuth enables users to safely grant your app or service access to their resources.
 
-[Authorizing with OAuth](https://www.visualstudio.com/integrate/get-started/get-started-auth-oauth2-vsi)
+[Authorizing with OAuth](https://docs.microsoft.com/vsts/integrate/get-started/authentication/oauth?view=vsts)
 
 [Registering your app](https://app.vssps.visualstudio.com/app/register?_ga=1.9631093.1191187031.1470846728)
 
@@ -54,7 +54,7 @@ Services hooks can be found as a new hub in project administration.
 
 [Creating subscriptions programmatically](https://www.visualstudio.com/integrate/reference/reference-vso-hooks-subscriptions-vsi)
 
-[Supported events](https://www.visualstudio.com/integrate/get-started/get-started-service-hooks-events-vsi)
+[Supported events](https://docs.microsoft.com/vsts/service-hooks/events?view=vsts)
 
 ###Extensibility Preview
 

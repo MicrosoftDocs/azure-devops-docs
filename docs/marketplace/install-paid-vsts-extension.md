@@ -1,12 +1,13 @@
 ---
 title: Buy and install paid extensions and assign to users in VSTS | VSTS 
 description: Find paid extensions in the Visual Studio Marketplace and learn how to buy, install, and assign them.
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-marketplace
 ms.assetid: 248a9282-487c-4ec9-b0d1-0eb1da981157
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 03/24/2018
 monikerRange: 'vsts'
 ---
@@ -69,7 +70,7 @@ To assign extensions, you'll need VSTS [project collection administrator or acco
 
 	<img alt="Check that users have required access" src="_img/assign-extensions/check-user-access.png" style="border: 1px solid #CCCCCC" />
 
-	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace}(https://marketplace.visualstudio.com).
+	To find the access that your extension requires, see the extension's description in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 0.	To assign the extension, right click or click the ellipses (...) for the user you want to assign access to:
 

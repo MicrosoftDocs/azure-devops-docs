@@ -5,7 +5,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A71B6DD4-2780-4B61-B863-03BBE44AC953
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 03/16/2017
 ---
 
@@ -81,7 +82,7 @@ In particular:
 
 - To view and work with Epic and Feature portfolio backlogs, you may need to [select them for your team](select-backlog-navigation-levels.md) 
 - To add the Epic portfolio backlog to your team project or additional portfolio backlog levels, you can [add them manually](add-portfolio-backlogs.md).    
-- To use Code Review and Feedback Request, you need to [configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md).  
+- To use Code Review and Feedback Request, you need to [configure an SMTP server for TFS](/tfs/server/admin/setup-customize-alerts).  
 - To use Bugs Behavior, you must configure this option as described in [Show bugs on backlogs and boards feature](show-bugs-on-backlog.md). 
 - To fully manage Epic and Feature portfolio backlogs or web-based test plans, you need to have [Advanced access](../../security/change-access-levels.md).
 

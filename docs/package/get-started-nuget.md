@@ -3,7 +3,7 @@ title: Get Started with NuGet Package Management in VSTS and TFS
 description: Quickly start hosting NuGet packages in VSTS or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.topic: conceptual
+ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.manager: douge
 ms.author: elbatk
@@ -42,7 +42,7 @@ listing to install it.
 ## Automate the process with continuous integration
 
 You can use continuous integration systems like Team Build to automate the packing and publishing of your packages. 
-To get started with continuous integration, see the [NuGet in Team Build guidance](/vsts/build-release/packages/nuget-pack-publish).
+To get started with continuous integration, see the [NuGet in Team Build guidance](/vsts/pipelines/packages/nuget-pack-publish).
 
 ## What's next?
 

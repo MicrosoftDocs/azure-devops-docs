@@ -114,7 +114,7 @@ Many of you care about a specific plan or set of plans and use favorites for qui
 
 You can now leverage Azure’s highly secure storage to manage the secrets you use in your build process. Simply create a variable group that points to the key vault and use that variable group in your build definition.
 
-See the [Azure Key Vault page](https://azure.microsoft.com/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](/vsts/build-release/concepts/library/variable-groups) for more information.
+See the [Azure Key Vault page](https://azure.microsoft.com/services/key-vault/) and [Link secrets from an Azure Key vault as variables documentation](/vsts/pipelines/library/variable-groups) for more information.
 
 ### New software updates available on hosted VS2017 agents
 
@@ -136,7 +136,7 @@ The process parameters that existed in build templates is now available for all 
 > [!div class="mx-imgBorder"]
 ![Process parameters for deployment templates](_img/124_07.png)
 
-See the [documentation for the new build editor](/vsts/build-release/archive/preview/2017-user-experience#parameters) for more information.
+See the [documentation for the new build editor](/vsts/pipelines/archive/preview/2017-user-experience#parameters) for more information.
 
 ### Default properties for Git and GitHub artifact types are now editable
 

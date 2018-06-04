@@ -3,10 +3,12 @@ title: Manually process the data warehouse and analysis services cube
 titleSuffix: TFS
 description: Manually process the data warehouse and analysis services cube when connecting to an on-premises Team Foundation Server 
 ms.assetid: 81EDA53E-88A5-46E2-952B-2D6E1FBA33E2  
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 03/14/2018
 ---
 
@@ -32,7 +34,7 @@ Processing the warehouse or cube depends on how much data is involved; it can ta
 
 ### To access the web services
 
-1. If you aren't a member of the **Administrators** security group on the application-tier server for TFS, [get added now](../../tfs-server/add-administrator-tfs.md).  
+1. If you aren't a member of the **Administrators** security group on the application-tier server for TFS, [get added now](/tfs/server/admin/add-administrator-tfs).  
 
 	Also, make sure that your server-level **Administer warehouse** permission must be set to **Allow**.
 

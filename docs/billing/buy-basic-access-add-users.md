@@ -1,6 +1,6 @@
 ---
-title: Pay for VSTS users (Basic)
-description: How to pay for VSTS users when you need more than the free amount (Visual Studio Online, VSO, VSTS, Marketplace)
+title: Buy Basic access for your VSTS users in the Marketplace
+description: Steps for how to buy more or increase VSTS users when you need more than the free amount via the Visual Studio Marketplace
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f

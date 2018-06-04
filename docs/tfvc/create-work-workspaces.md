@@ -77,7 +77,7 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: Can I reuse and share folder mappings?
 
-**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../build-release/concepts/definitions/build/repository.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
+**A:** Yes. If you want to reuse or share folder mappings with other team members, you can copy the folder mappings. Simply open the shortcut menu in the **Working folders** list and choose **Copy**. To reuse the folder mappings, paste them into another version control workspace or a [build definition workspace](../pipelines/build/repository.md). To share the folder mappings with your teammates, paste them into a text file and then share the file.
 
 #### Q: What does "Cloaked" mean?
 
@@ -125,4 +125,4 @@ If your team has a large and complex codebase or if you want your workspace to c
 
 #### Q: I work at a remote site. Is there any way I can save bandwidth?
 
-**A:** [Install Team Foundation Proxy and set up a remote site](../tfs-server/install/install-proxy-setup-remote.md).
+**A:** [Install Team Foundation Proxy and set up a remote site](/tfs/server/install/install-proxy-setup-remote).

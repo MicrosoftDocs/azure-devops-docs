@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 A feed is a container for packages.
 You consume and publish packages through a particular feed.
 

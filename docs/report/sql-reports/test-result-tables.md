@@ -1,7 +1,7 @@
 ---
 title: Test Result tables
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about test results 
@@ -48,6 +48,6 @@ You can query for data about test results by using the FactTestResult table and 
 ## Related notes 
 -  [Test results](perspective-test-analyze-report-test-results.md)   
 -  [Test Management Reports](../excel/test-management-reports.md)   
--  [Testing overview](../../manual-test/index.md)   
+-  [Testing overview](../../test/index.md)   
 -  [Work Item Test Result tables](work-item-test-result-tables.md)   
 -  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

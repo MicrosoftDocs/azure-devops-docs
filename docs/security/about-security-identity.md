@@ -1,14 +1,14 @@
 ---
 title: Understand the components of security and identity
 titleSuffix: VSTS & TFS
-description: Understand how VSTS and TFS manage security and accounts 
+description: Understand how VSTS and TFS manage authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 toc: show
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
@@ -39,9 +39,9 @@ Authentication verifies a user's identify based on the credentials provided when
 - Microsoft account (MSA)
 - Active Directory (AD)
 
-Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your VSTS account, you can simply use Microsoft accounts.
+Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your VSTS account, you can simply use Microsoft accounts. For additional information, see [Access VSTS with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
 
-For on-premises TFS, AD is recommended when managing a large group of users.
+For on-premises TFS, AD is recommended when managing a large group of users. For additional information, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 
 ### Authentication methods, integrating with other services and apps
 
@@ -119,7 +119,7 @@ Each functional area uses groups to simplify management across the deployment. Y
 
 <img src="_img/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
 
-You can create local groups or Active Directory (AD) [groups to manage your users](../tfs-server/admin/setup-ad-groups.md). If you decide to use groups, make sure that membership in those groups is limited to TFS users. Because group membership can be altered by their owners at any time, if those owners did not consider TFS when they created those groups, their changes to membership can cause unwanted side effects within TFS.
+You can create local groups or Active Directory (AD) [groups to manage your users](/tfs/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to TFS users. Because group membership can be altered by their owners at any time, if those owners did not consider TFS when they created those groups, their changes to membership can cause unwanted side effects within TFS.
 
 ### Default permissions set for the Contributors group 
 
@@ -153,8 +153,8 @@ Certain features are only available to users who have the appropriate licensing 
 
 - [Permissions and groups reference](permissions.md)
 - [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-aad.md). 
-- [Set up groups for use in TFS deployments](../tfs-server/admin/setup-ad-groups.md).
-- [Setting up HTTPS with Secure Sockets Layer (SSL)](../tfs-server/admin/setup-secure-sockets-layer.md)
+- [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
+- [Setting up HTTPS with Secure Sockets Layer (SSL)](/tfs/server/admin/setup-secure-sockets-layer)
 
 <!-- TODO: Cover how to set permissions for Reporting Services and SharePoint as mainline sections.
 

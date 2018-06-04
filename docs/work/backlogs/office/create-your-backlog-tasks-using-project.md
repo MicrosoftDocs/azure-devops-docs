@@ -22,7 +22,7 @@ Working in Project is similar to publishing and refreshing work items using [Off
 
 Use this topic to learn how to:  
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Connect a Project plan to a team project  
 > * Add tasks to Project and publish them as work items to VSTS or TFS       
 > * Indent tasks to create parent-child links 

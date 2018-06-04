@@ -7,7 +7,7 @@
 - name: Quickstarts
   items:
   - name: DevOps Project for Java
-    href: ../build-release/apps/cd/azure/azure-devops-project-java.md?toc=/vsts/java/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+    href: ../pipelines/apps/cd/azure/azure-devops-project-java.md?toc=/vsts/java/toc.json&bc=/vsts/pipelines/breadcrumb/toc.json
   - name: Use IntelliJ
     href: ../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Use Eclipse
@@ -15,9 +15,9 @@
   - name: Use Android Studio
     href: ../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Build with Maven
-    href: ../build-release/apps/java/build-maven.md?toc=/vsts/java/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+    href: ../pipelines/apps/java/build-maven.md?toc=/vsts/java/toc.json&bc=/vsts/pipelines/breadcrumb/toc.json
   - name: Build with Gradle
-    href: ../build-release/apps/java/build-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/build-release/breadcrumb/toc.json
+    href: ../pipelines/apps/java/build-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/pipelines/breadcrumb/toc.json
   - name: Manage Maven packages
     href: ../package/get-started-maven.md??toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
 - name: Hands-on Labs
@@ -68,7 +68,7 @@
   - name: Add VSCode extension
     href: vscode-extension.md
   - name: Load-test with JMeter
-    href: ../load-test/get-started-jmeter-test.md?toc=/vsts/java/toc.json&bc=/vsts/load-test/breadcrumb/toc.json
+    href: ../test/load-test/get-started-jmeter-test.md?toc=/vsts/java/toc.json&bc=/vsts/test/load-test/breadcrumb/toc.json
   - name: Use SonarQube
     href: sonarqube.md
   - name: Use Subversion
@@ -78,7 +78,7 @@
 - name: Reference
   items:
   - name: Continuous Testing 
-    href: /vsts/build-release/test/continuous-test-java?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json
+    href: /vsts/pipelines/test/continuous-test-java?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json
   - name: Eclipse plug-in FAQ
     href: eclipse-faq.md
   - name: IntelliJ plug-in FAQ
@@ -94,4 +94,4 @@
   - name: Get the Android Studio plug-in
     href: download-android-studio-plug-in.md
   - name: Build and Release
-    href: /vsts/build-release/index
+    href: /vsts/pipelines/index

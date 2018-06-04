@@ -25,7 +25,7 @@ At a minimum, you need a way to capture your software issues, prioritize them, a
 
 In a nutshell, you manage bugs through the following tasks: 
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Capture information using the bug work item type  
 > * Triage bugs by assigning a priority 
 > * Update bug status throughout the bug lifecycle  
@@ -38,12 +38,12 @@ the items in your backlog may be called product backlog items (PBIs), user stori
 >
 >By default, product backlog items (PBIs) and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md). 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]Â 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 ## Capture bugs  
 You can track bugs in much the same way that you track product backlog items (PBIs) or user stories. Using the bug work item form, you capture the code defect in the Title, Steps to Reproduce, and other fields.  
 
-You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](work-item-template.md), or through one of the [testing tools](../../manual-test/overview.md).  
+You can create bugs from the [web portal](add-work-items.md), Visual Studio/Team Explorer, a [work item template](work-item-template.md), or through one of the [testing tools](../../test/overview.md).  
 
 ### Bug work item form 
 
@@ -122,9 +122,9 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <p>[Integrated in Build](../track/build-test-integration.md)</p>
 </td>
 <td>
-<p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../manual-test/test-different-configurations.md).</p>
+<p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../test/test-different-configurations.md).</p>
 <p>When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug. </p>
-<p>For information about how to define build names, see [build number format options](../../build-release/concepts/definitions/build/options.md). </p>
+<p>For information about how to define build names, see [build number format options](../../pipelines/build/options.md). </p>
 </td>
 </tr>
 ::: moniker-end 
@@ -135,10 +135,10 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <p>[Integrated in Build](../track/build-test-integration.md)</p>
 </td>
 <td>
-<p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../manual-test/test-different-configurations.md).</p>
+<p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../test/test-different-configurations.md).</p>
 <p>When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug. </p>
 <p>To access a drop-down menu of all builds that have been run, you can update the ```FIELD``` definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see [Query based on build and test integration fields](../track/build-test-integration.md).</p>
-<p>For information about how to define build names, see [build number format options](../../build-release/concepts/definitions/build/options.md). </p>
+<p>For information about how to define build names, see [build number format options](../../pipelines/build/options.md). </p>
 </td>
 </tr>
 ::: moniker-end 
@@ -200,7 +200,7 @@ Add and review comments made about the work being performed by going to the disc
 ## Capture bugs using test tools
 
 You can create bugs during test sessions using one of the following tools: 
-- **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../manual-test/connected-mode-exploratory-testing.md)   
+- **Test & Feedback extension**: see [Exploratory testing with the Test & Feedback extension](../../test/connected-mode-exploratory-testing.md)   
 - **Test Runner**: see [Update an existing bug while using Test Runner](https://msdn.microsoft.com/library/dd286731.aspx).  
 
 
@@ -284,7 +284,7 @@ Choose the **Verify** option to re-run tests which identified the bug. (Requires
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
  
-To learn more about running test from the web portal, see [Run tests for web apps](../../manual-test/getting-started/run-manual-tests.md).
+To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).
 ::: moniker-end
 
 <a id="close">  </a>
@@ -336,7 +336,7 @@ To track your bugs and integrate with other resources available to you, see thes
 - [UserVoice](../../service-hooks/services/uservoice.md)  
 - [Zendesk](../../service-hooks/services/zendesk.md)  
 - [Developer testing tools scenarios and capabilities](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)  
-- [Run tests for desktop apps](../../manual-test/getting-started/run-manual-tests.md#run-desktop)  
+- [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
   
 
 ::: moniker range="vsts"

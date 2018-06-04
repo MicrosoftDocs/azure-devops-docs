@@ -1,5 +1,7 @@
+---
+ms.topic: include
+---
 
-<a id="manage-permissions" />
 
 ## Manage permissions for a shared view
 

@@ -8,6 +8,7 @@ ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -157,7 +158,7 @@ The following image shows the full set of link types used in linking test manage
 
 <img src="_img/link-tracking-work-item-test-case-link-types.png" alt="Link types used to link test objects " style="border: 2px solid #C3C3C3;" />
 
-For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](../../manual-test/mtm/share-steps-between-test-cases.md). 
+For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](../../test/mtm/share-steps-between-test-cases.md). 
 
 **Test case work item form (web portal for TFS 2015)**
 
@@ -258,7 +259,7 @@ For query examples, see [Link and attachment queries](linking-attachments.md).
 
 
 > [!NOTE]  
-> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using Parent/Child or any other link type. You can only view the hierarchy through the [Test Plans page of the Test hub](../../manual-test/getting-started/create-a-test-plan.md). 
+> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using Parent/Child or any other link type. You can only view the hierarchy through the [Test Plans page of the Test hub](../../test/create-a-test-plan.md). 
 
 
 <a id="link-type-guidance"></a>
@@ -351,7 +352,7 @@ You can create predecessor-successor links between work items that are defined i
 ![Tests link type image](_img/link-work-items-support-traceability/tests-dependency-reverse.png) 
 </td>
 <td>
-<p>Use to link test cases to shared steps. To learn more, see [Share steps between test cases](../../manual-test/mtm/share-steps-between-test-cases.md).</p>
+<p>Use to link test cases to shared steps. To learn more, see [Share steps between test cases](../../test/mtm/share-steps-between-test-cases.md).</p>
 </td>
 </tr>
 
@@ -362,7 +363,7 @@ You can create predecessor-successor links between work items that are defined i
 ![Tests link type image](_img/link-work-items-support-traceability/tests-dependency-reverse.png) 
 </td>
 <td>
-<p>Use to link test cases to shared parameters. To learn more, see [Repeat a test with different data](../../manual-test/repeat-test-with-different-data.md). </p>
+<p>Use to link test cases to shared parameters. To learn more, see [Repeat a test with different data](../../test/repeat-test-with-different-data.md). </p>
 </td>
 </tr>
 

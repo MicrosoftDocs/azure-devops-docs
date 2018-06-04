@@ -7,6 +7,7 @@ ms.technology: devops-analytics
 ms.assetid: 37253E50-28D5-4AA9-B0E1-9D09D951739F
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 ms.date: 11/13/2017
 ---
@@ -14,13 +15,13 @@ ms.date: 11/13/2017
 # Create an Analytics widget for Visual Studio Team Services
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 <!-- Note: The github links below will be re-pointed to the master branch sample, once we complete the merge. -->
 
 You can build your own Analytics widget to display in a [Dashboard](../dashboards/index.md) in Visual Studio Team Services (VSTS). The [example widget on github](https://github.com/Microsoft/vsts-extension-samples/tree/master/analytics-example-widget) demonstrates the following: 
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * How to render trend lines associated with work item states
 > * How to query a dataset, whe a user will configure through the widget configuration view
 > * How to build and publish the widget to the VSTS marketplace

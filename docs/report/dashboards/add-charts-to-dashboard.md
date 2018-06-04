@@ -1,13 +1,14 @@
 ---
 title: Add built-in charts to a team dashboard
 titleSuffix: VSTS & TFS
-description: Add system-generated charts or query-based charts to a team dashboard  
+description: Add system-generated charts or query-based charts to a team dashboard in Visual Studio Team Services & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
+ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-monikerRange: 'vsts || >= tfs-2013'
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -92,7 +93,7 @@ Each time a release is deployed, it logs information about the release to each o
 <a id="test-result">  </a>  
 ## Add a test status or result chart  
 
-As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../manual-test/getting-started/track-test-status.md).  
+As you create and run tests, you can track your status by defining [lightweight charts of test plans and test results](../../test/track-test-status.md).  
 
 >[!NOTE]  
 >You can also add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
@@ -110,7 +111,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 <a id="test-quality"></a>  
 ## Add a test quality trend chart   
 
-You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../build-release/test/getting-started-with-continuous-testing.md).
+You can add trends to the dashboard of the failures and duration of those [tests that were run as part of a build](../../pipelines/test/getting-started-with-continuous-testing.md).
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2017"
 >[!NOTE]  
@@ -131,7 +132,7 @@ Requires TFS 2017.2 or later version.
 
 	![Open Actions menu and select dashboard](_img/add-chart-test-failures.png)  
 
-	Learn more about [reviewing automated test results after a build](../../build-release/test/review-continuous-test-results-after-build.md).  
+	Learn more about [reviewing automated test results after a build](../../pipelines/test/review-continuous-test-results-after-build.md).  
 
 ::: moniker-end
 
@@ -143,7 +144,7 @@ Requires TFS 2017.2 or later version.
 You add work item queries and charts to a dashboard from the Queries page. Queries and charts must be associated with queries under the Shared queries folder.  
 
 >[!NOTE]  
-><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard. Â 
+><b>You can also add a [work item query chart widget](widget-catalog.md#build-history-widget) to a team dashboard.  
 
 1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../settings/switch-team-context.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
 

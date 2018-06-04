@@ -1,12 +1,12 @@
 ---
 title: Find an admin or account owner for VSTS or TFS
-description: Look up who can help you gain access or change your permissions 
+description: Steps for how to look up users who can help you gain access or change your permissions, project collection admin or project owner 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'

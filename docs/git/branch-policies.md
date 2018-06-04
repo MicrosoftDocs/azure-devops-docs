@@ -102,13 +102,13 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
 ## Build validation
 
 Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
-Even if you're using [continuous integration](https://www.visualstudio.com/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early, build policies reduce 
+Even if you're using [continuous integration](/azure/devops/what-is-continuous-integration) (CI) on your development branches to catch problems early, build policies reduce 
 build breaks and keep your tests results passing. 
 
 When a build validation policy is enabled, a new build is queued when a new pull request is created or when changes are pushed to an existing pull request targeting this branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
 
 >[!IMPORTANT]
->Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](../build-release/apps/index.md) and choose the type of build that matches your project type.
+>Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](../pipelines/apps/index.md) and choose the type of build that matches your project type.
 
 ![Add build policy](_img/branch-policies/add-build-policy.png)
 

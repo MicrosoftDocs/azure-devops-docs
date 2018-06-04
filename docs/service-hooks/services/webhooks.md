@@ -6,6 +6,7 @@ title: WebHooks with VSTS
 description: Use WebHooks with your VSTS account
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 12/07/2017

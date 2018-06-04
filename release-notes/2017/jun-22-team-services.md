@@ -159,7 +159,7 @@ Coming soon you’ll see more changes. For example, the following hosted pools (
 > [!IMPORTANT]
 > We’re going to shut down the deprecated hosted XAML build controller on July 1st, 2017. After this shutdown, you’ll no longer be able to use hosted agents to run your XAML builds.
 
-We recommend that you migrate to our new task-based build system, which includes access to hosted agents to run your builds. See our recently published guide to [migrate from XAML builds to new builds](https://www.visualstudio.com/docs/build/actions/migrate-from-xaml-builds).
+We recommend that you migrate to our new task-based build system, which includes access to hosted agents to run your builds. See our recently published guide to [migrate from XAML builds to new builds](https://www.visualstudio.com/docs/pipelines/build/migrate-from-xaml-builds).
 
 However, if you still need to run XAML builds during the migration, then you should set up a private XAML build controller now. To use private XAML controllers and agents, you need to have sufficient private pipelines in your account. For details, see [I’m looking for the hosted XAML build controller. Where did it go?](https://www.visualstudio.com/en-us/docs/build/concepts/agents/hosted#im-looking-for-the-hosted-xaml-build-controller-where-did-it-go)
 
@@ -296,7 +296,7 @@ Both acquisition and sales tab also share the transaction details which gives pu
 ![enhanced publisher experience](_img/06_22_25.png)
 
 ###Setup Power BI Content Pack
-Publishers can also use the __Extension Statistics Power BI__ content pack to gain insight and analyze the progress of the extension. All data elements available in the extension hub are also available in the Power BI content pack. The content pack contains a complete analytic data model (tables, relationships and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model is not. More details are available at [Visualstudio.com](https://www.visualstudio.com/en-us/docs/integrate/extensions/extension-statistics-powerbi-contentpack). 
+Publishers can also use the __Extension Statistics Power BI__ content pack to gain insight and analyze the progress of the extension. All data elements available in the extension hub are also available in the Power BI content pack. The content pack contains a complete analytic data model (tables, relationships and measures), a set of default reports, and a default dashboard. Reports and dashboards are fully customizable, but the data model is not. More details are available at [docs.microsoft.com](https://docs.microsoft.com/vsts/extend/extension-statistics-powerbi-contentpack). 
 
 ![extension statistics Power BI content pack](_img/06_22_26.png)
 

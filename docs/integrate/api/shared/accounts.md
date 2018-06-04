@@ -6,6 +6,7 @@ ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.assetid: C9470271-C11E-4BD2-82C8-D5272AADF82C
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 02/22/2017

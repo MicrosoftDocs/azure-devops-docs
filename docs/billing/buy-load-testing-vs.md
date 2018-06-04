@@ -1,6 +1,6 @@
 ---
 title: Buy cloud-based load testing | VSTS
-description: How to buy cloud-based load testing in VSTS (Visual Studio Online, VSO, VSTS)
+description: Steps to purchase and enable cloud-based load testing in VSTS (Visual Studio Online, VSO, VSTS) via the Azure portal
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
@@ -18,9 +18,9 @@ ms.date: 04/18/2018
 
 In this quickstart, you'll learn how to enable paid load testing.
 
-VSTS offers a cloud-based solution for [load testing your apps](../load-test/index.md). You can create load tests using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. You can then run these tests in VSTS.
+VSTS offers a cloud-based solution for [load testing your apps](../test/load-test/index.md). You can create load tests using Visual Studio Ultimate 2013, Visual Studio Enterprise 2015, or later versions. You can then run these tests in VSTS.
 
-Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A: [What are virtual user minutes (VUMs)? How many minutes will my load test use?](../load-test/reference-qa.md#VUM).
+Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A: [What are virtual user minutes (VUMs)? How many minutes will my load test use?](../test/load-test/reference-qa.md#VUM).
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
 
@@ -72,13 +72,13 @@ You're charged only for virtual user minutes of cloud-based load testing used ab
 * No additional virtual user minutes are included with Visual Studio subscriptions - the free amounts are per VSTS account, not per user.
 
 * For cloud-based load testing, you're charged for each 
-   [virtual user minute](../load-test/reference-qa.md#VUM) that exceeds the free monthly usage.
+   [virtual user minute](../test/load-test/reference-qa.md#VUM) that exceeds the free monthly usage.
 
 * Graduated discounts for cloud-based load testing are calculated based on your Azure subscription billing cycle.
 
 ## Limits on load test runs
 
-There's a limit on the duration for each test run. For cloud-based load testing, the limit depends on where you're running your test.  For details, see [this Q&A](../load-test/reference-qa.md#test-limits).
+There's a limit on the duration for each test run. For cloud-based load testing, the limit depends on where you're running your test.  For details, see [this Q&A](../test/load-test/reference-qa.md#test-limits).
 
 ## Clean up resources
 
@@ -87,7 +87,7 @@ To turn off paid cloud-based load testing, go to your account in the Azure porta
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Load test your app](../load-test/get-started-simple-cloud-load-test.md)
+> [Load test your app](../test/load-test/get-started-simple-cloud-load-test.md)
 
 ## Related articles
 

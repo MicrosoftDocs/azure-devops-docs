@@ -2,8 +2,9 @@
 title: Add reports to a team project | TFS   
 description: Add a report server and upload reports to a team project hosted on an on-premises Team Foundation Server (TFS)  
 ms.assetid: 17C16BE3-6F7D-466F-A3D9-402C79D53768  
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.date: 11/15/2017
@@ -32,3 +33,6 @@ After completing the sequence of tasks, you'll be able to access the default rep
 TFS SSRS data flow and report architecture
 
 ![TFS SSRS data flow and report architecture](_img/IC658337.png)
+
+> [!IMPORTANT]  
+> Build reports are only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.   

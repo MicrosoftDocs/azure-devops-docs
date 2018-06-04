@@ -49,7 +49,7 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 </b></p>
 Track work and integrate with your code, build, and test environments from the following clients:   
 - [Eclipse (Team Explorer Everywhere)](/vsts/java/download-eclipse-plug-in)       
-- [Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)      
+- [Visual Studio](https://www.visualstudio.com/downloads/)      
 - [Android Studio](/vsts/java/download-android-studio-plug-in)     
 - [IntelliJ](/vsts/java/download-intellij-plug-in)   
 - [Visual Studio Code](/vsts/java/vscode-extension)   
@@ -91,7 +91,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 - [Area and iteration paths](../security/set-permissions-access-work-tracking.md)  
-- [Build & Release](../build-release/set-permissions.md)  
+- [Build & Release](../pipelines/policies/set-permissions.md)  
 - [Git](../security/set-git-tfvc-repository-permissions.md)  
 - [TFVC](../security/set-git-tfvc-repository-permissions.md)  
 - [Dashboards](../report/dashboard-permissions.md)   
@@ -290,7 +290,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Verify a bug, re-run test case</b></p>
-<p>Choose the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../manual-test/getting-started/run-manual-tests.md). </p>
+<p>Choose the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. For more information, see [Run tests for web apps](../test/run-manual-tests.md). </p>
 
 
 <p><b>Link work items  </b></p>
@@ -874,7 +874,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to [prevent and resolve merge conflicts](../git/tutorial/merging.md).   </p>
 
 <p><b>Code search</b></p>
-<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../search/overview.md) </p>
+<p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../project/search/overview.md) </p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 
 
@@ -991,7 +991,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Code search</b></p>
-<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../search/overview.md) </p>
+<p>Find code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../project/search/overview.md) </p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 <br/>
 
@@ -1086,18 +1086,18 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Define builds</b></p>
-<p>Start from a build template and customize your build from there. Build for [Windows](../build-release/get-started/dot-net.md), [iOS](../build-release/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../build-release/apps/mobile/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.</p>
+<p>Start from a build template and customize your build from there. Build for [Windows](../pipelines/apps/windows/dot-net.md), [iOS](../pipelines/apps/mobile/xcode-ios.md), Android, Java (Ant, Maven, or Gradle), or Linux using the same domain-specific languages you use every day on your dev machine. [Build Xamarin apps](../pipelines/apps/mobile/xamarin.md) for both iOS and Android and run tests on the Xamarin Test Cloud as part of the build.</p>
 
 <p><b>Customize build process using scripts</b></p>
-<p>[Use a script](../build-release/actions/scripts/powershell.md) to add your team's business logic to your build process.</p>
+<p>[Use a script](../pipelines/scripts/powershell.md) to add your team's business logic to your build process.</p>
 
 
 <p><b>Build agents and agent pools </b></p>
-<p>At least one [agent](../build-release/concepts/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../build-release/concepts/agents/pools-queues.md). You can use both on-premises or hosted agent pools.</p>
+<p>At least one [agent](../pipelines/agents/agents.md) is require to build your code. As you scale your system with more code, people, and builds, you'll need more build agents organized within [agent pools](../pipelines/agents/pools-queues.md). You can use both on-premises or Microsoft-hosted agent pools.</p>
 
 
 <p><b>Gated check-in (TFVC, VSTS) </b></p>
-<p>Use [gated check-in](../build-release/concepts/definitions/build/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
+<p>Use [gated check-in](../pipelines/build/triggers.md#gated) to protect against breaking changes when checking code into TFVC.  </p>
 
 
 <p><b>Branch policies (Git)</b></p>
@@ -1107,26 +1107,26 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="38%">
 <p><b>Specify your build steps</b></p>
-<p>Add steps to specify what you [want to build](../build-release/tasks/index.md#build), the [tests to run](../build-release/tasks/index.md#test), and [all the other steps](../build-release/tasks/index.md) needed to complete the process.</p>
+<p>Add steps to specify what you [want to build](../pipelines/tasks/index.md#build), the [tests to run](../pipelines/tasks/index.md#test), and [all the other steps](../pipelines/tasks/index.md) needed to complete the process.</p>
 
-build-release\tasks\build\_img
-<p>![](../build-release/tasks/build/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](../build-release/tasks/build/gradle.md)</p>
-<p>![](../build-release/tasks/build/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](../build-release/tasks/build/android-signing.md)</p>
-<p>![](../build-release/tasks/build/_img/ant.png)&#160;&#160;[Build with Apache Ant](../build-release/tasks/build/ant.md) </p>
-<p>![](../build-release/tasks/build/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](../build-release/tasks/build/gradle.md)  </p>
-<p>![](../build-release/tasks/build/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](../build-release/tasks/build/grunt.md) </p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](../build-release/tasks/build/gulp.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](../build-release/tasks/build/index-sources-publish-symbols.md)</p>
-<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](../build-release/tasks/build/maven.md)</p>
-<p>![](../build-release/tasks/build/_img/msbuild.png)&#160;&#160;[Build with MSbuild](../build-release/tasks/build/msbuild.md)</p>
+pipelines\tasks\build\_img
+<p>![](../pipelines/tasks/build/_img/android-build.png)&#160;&#160;[Build an Android app using Gradle](../pipelines/tasks/build/gradle.md)</p>
+<p>![](../pipelines/tasks/build/_img/android-signing.png)&#160;&#160;[Sign and align Android APK files](../pipelines/tasks/build/android-signing.md)</p>
+<p>![](../pipelines/tasks/build/_img/ant.png)&#160;&#160;[Build with Apache Ant](../pipelines/tasks/build/ant.md) </p>
+<p>![](../pipelines/tasks/build/_img/gradle.png)&#160;&#160;[Build using a Gradle wrapper script](../pipelines/tasks/build/gradle.md)  </p>
+<p>![](../pipelines/tasks/build/_img/grunt.png)&#160;&#160;[Grunt: The JavaScript Task Runner](../pipelines/tasks/build/grunt.md) </p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Gulp/icon.png?raw=true)&#160;&#160;[Gulp: Node.js task-based build system](../pipelines/tasks/build/gulp.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/PublishSymbols/icon.png?raw=true)&#160;&#160;[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)</p>
+<p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/Maven/icon.png?raw=true)&#160;&#160;[Build with Apache Maven](../pipelines/tasks/build/maven.md)</p>
+<p>![](../pipelines/tasks/build/_img/msbuild.png)&#160;&#160;[Build with MSbuild](../pipelines/tasks/build/msbuild.md)</p>
 <p>![](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/SonarQubePreBuild/icon.png?raw=true)&#160;&#160;[SonarQube for MSbuild](http://go.microsoft.com/fwlink/?LinkId=620063)</p>
-<p>![](../build-release/tasks/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](../build-release/tasks/build/visual-studio-build.md)</p>
-<p>![](../build-release/tasks/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](../build-release/tasks/build/xamarin-android.md) </p>
-<p>![](../build-release/tasks/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on macOS](../build-release/tasks/build/xamarin-ios.md) </p>
+<p>![](../pipelines/tasks/build/_img/visual-studio-build.png)&#160;&#160;[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)</p>
+<p>![](../pipelines/tasks/build/_img/xamarin-android.png)&#160;&#160;[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md) </p>
+<p>![](../pipelines/tasks/build/_img/xamarin-ios.png)&#160;&#160;[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md) </p>
 
 
 <p><b>Build variables</b></p>
-<p>Use [predefined variables](../build-release/define/variables.md) or add your custom variables when configuring your build definition or your build scripts.</p>
+<p>Use [predefined variables](../pipelines/build/variables.md) or add your custom variables when configuring your build definition or your build scripts.</p>
 
 
 </td>
@@ -1134,7 +1134,7 @@ build-release\tasks\build\_img
 
 
 <p><b>Continuous integration builds</b></p>
-<p>[Define a CI build](../build-release/concepts/definitions/build/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
+<p>[Define a CI build](../pipelines/build/triggers.md#ci) that compiles and tests your solutions whenever your team checks in code.</p>
 
 
 <p><b>Build summary charts</b></p>
@@ -1148,11 +1148,11 @@ build-release\tasks\build\_img
 
 
 <p><b>Audit changes </b></p>
-<p>Determine who [changed what in the build definition and when they did it](../build-release/define/history.md). </p>
+<p>Determine who [changed what in the build definition and when they did it](../pipelines/build/history.md). </p>
 
 
 <p><b>Build retention policies</b></p>
-<p>[Define policies to automatically delete old completed builds ](../build-release/concepts/policies/retention.md) to minimize clutter.</p>
+<p>[Define policies to automatically delete old completed builds ](../pipelines/policies/retention.md) to minimize clutter.</p>
 
 <p><b>Build permissions</b></p>
 <p>Determine who can [define, delete, and manage builds](../security/permissions.md#build).</p>
@@ -1173,40 +1173,40 @@ build-release\tasks\build\_img
 <td width="33%">
 
 <p><b>Automate deployments</b></p>
-<p>Reduce time-to-market and respond to customer feedback with greater agility by [automating your release process](../build-release/overview.md). Deploy applications across platforms to all environments of the pipeline with just one click.</p>
+<p>Reduce time-to-market and respond to customer feedback with greater agility by [automating your release process](../pipelines/overview.md). Deploy applications across platforms to all environments of the pipeline with just one click.</p>
 ![Release Manager](_img/features/alm-feature-release-1.png)  
 <br />
 
 
 <p><b>When to use Release Management?</b></p>
-<p>Evaluate how Release Management can help you in [your development and deployment efforts](../build-release/overview.md).</p>
+<p>Evaluate how Release Management can help you in [your development and deployment efforts](../pipelines/overview.md).</p>
 
 
 <p><b>Release definitions</b></p>
-<p>Add a release definition by [choosing the build version, target release environments, and tasks](../build-release/apps/cd/deploy-webdeploy-webapps.md).</p>
+<p>Add a release definition by [choosing the build version, target release environments, and tasks](../pipelines/apps/cd/deploy-webdeploy-webapps.md).</p>
 
 
 <p><b>Release environments</b></p>
-<p>[Define and clone release environments](../build-release/concepts/definitions/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
+<p>[Define and clone release environments](../pipelines/release/environments.md), logical entities that represent where you want to deploy a release, such as a collection of servers, a cloud, multiple clouds, or an app store.</p>
 
 
 <p><b>Artifacts</b></p>
-<p>A release is fundamentally defined by [versioned artifacts that make up the release](../build-release/concepts/definitions/release/artifacts.md). As you deploy the release to various environments, you deploy and validate the same artifacts on all environments. </p>
+<p>A release is fundamentally defined by [versioned artifacts that make up the release](../pipelines/release/artifacts.md). As you deploy the release to various environments, you deploy and validate the same artifacts on all environments. </p>
 
 
 <p><b>Tasks</b></p>
-<p>Automate release deployment by [defining the events that will trigger a release](../build-release/concepts/definitions/release/triggers.md#release-triggers).</p>
+<p>Automate release deployment by [defining the events that will trigger a release](../pipelines/release/triggers.md#release-triggers).</p>
 
 <p><b>Agents and agent pools</b></p>
-<p>Agent pools are the execution containers that specify the security context and runtime environment for the [agents that run when you deploy a release](../build-release/concepts/agents/agents.md).</p>
+<p>Agent pools are the execution containers that specify the security context and runtime environment for the [agents that run when you deploy a release](../pipelines/agents/agents.md).</p>
 
 </td>
 <td width="33%">
 <p><b>Works for any app</b></p>
-<p>Deploy [any type of application across multiple platforms](../build-release/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
+<p>Deploy [any type of application across multiple platforms](../pipelines/overview.md) including Windows and Linux, whether on-premises or in the cloud.</p>
 
 <p><b>Approval workflows</b></p>
-<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../build-release/concepts/definitions/release/approvals/index.md) to multiple approvers or teams.</p>
+<p>Streamline your application release workflow by [routing pre- and post-deployment approvals](../pipelines/release/approvals/index.md) to multiple approvers or teams.</p>
 
 <p><b>Release notifications</b></p>
 <p>Receive email messages as releases occur. Approvers receive notifications automatically when a release is waiting for approval. </p>
@@ -1215,22 +1215,22 @@ build-release\tasks\build\_img
 <p>Monitor the status of your release pipelines and track every deployment in each of the environments. Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/define-multistage-release-process.md#monitor-and-track-deployments).</p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../pipelines/release/define-multistage-release-process.md#monitor-and-track-deployments).</p>
 
 <p><b>Triggers</b></p>
-<p>Automate release deployment by [defining the events that will trigger a release](../build-release/concepts/definitions/release/triggers.md#release-triggers).</p>
+<p>Automate release deployment by [defining the events that will trigger a release](../pipelines/release/triggers.md#release-triggers).</p>
 
 <p><b>Variables</b></p>
-<p>Lookup the description for all [release system, global, and agent variables](../build-release/concepts/process/tasks.md).</p>
+<p>Lookup the description for all [release system, global, and agent variables](../pipelines/process/tasks.md).</p>
 
 </td>
 <td width="33%">
 
 <p><b>Release names </b></p>
-<p>Specify the [naming and numbering scheme you want used when adding releases](../build-release/concepts/definitions/release/index.md#numbering).</p>
+<p>Specify the [naming and numbering scheme you want used when adding releases](../pipelines/release/index.md#numbering).</p>
 
 <p><b>Global configuration properties</b></p>
-<p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](../build-release/concepts/definitions/release/variables.md).</p>
+<p>Simplify management of custom values that you use to configure multiple releases by [specifying custom values for any of the tasks in any of the environments of a release definition](../pipelines/release/variables.md).</p>
 
 <p><b>View test results</b></p>
 <p>Open the **Tests** tab to view a summary of the test results, including pass/fail percentages and run duration. Sort the test results into groups or filter the results to show just passed, failed, or other results.</p>
@@ -1241,12 +1241,12 @@ build-release\tasks\build\_img
 <p>[Add a release summary chart](../report/dashboards/widget-catalog.md#release-definition-widget) to a team dashboard. </p>
 
 <p><b>Extend and customize</b></p>
-<p>[Create workflows tailored to your process](../build-release/concepts/definitions/release/index.md) by customizing our tasks, or extend with your own custom tasks.</p>
+<p>[Create workflows tailored to your process](../pipelines/release/index.md) by customizing our tasks, or extend with your own custom tasks.</p>
 ![Customize release definition process](_img/features/alm-feature-release-3.png)  
 <br />
 
 <p><b>Manage permissions</b></p>
-<p>Grant or deny permissions to [manage release definitions, environments approvers, or release permissions](../build-release/concepts/policies/permissions.md#release-permissions). Set permissions for users, groups, or per release definition. </p>
+<p>Grant or deny permissions to [manage release definitions, environments approvers, or release permissions](../pipelines/policies/permissions.md#release-permissions). Set permissions for users, groups, or per release definition. </p>
 
 </td>
 </tr>
@@ -1264,7 +1264,7 @@ build-release\tasks\build\_img
 <td width="33%">
 
 <p><b>Comprehensive testing</b></p>
-<p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../manual-test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
+<p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
 <p>Create [unit tests](https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
@@ -1273,18 +1273,18 @@ build-release\tasks\build\_img
 
 
 <p><b>Manual test plans and test cases</b></p>
-<p>Get started by [creating test plans and test cases](../manual-test/getting-started/create-test-cases.md) to track manual testing for sprints or milestones.</p>
+<p>Get started by [creating test plans and test cases](../test/create-test-cases.md) to track manual testing for sprints or milestones.</p>
 
 <p><b>Shared steps and shared parameters</b></p>
-<p>[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx) to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using [shared parameters](../manual-test/repeat-test-with-different-data.md). </p>
+<p>[Create shared steps](https://msdn.microsoft.com/library/dd286655.aspx) to include often repeated sequence of steps in your manual test cases, such as logging in. Repeat manual tests with different data using [shared parameters](../test/repeat-test-with-different-data.md). </p>
 
 
 <p><b>Performance and load testing  </b></p>
-<p>Understand and fix performance issues before they impact your business by [running performance tests on your apps](../load-test/getting-started-with-performance-testing.md).</p>
+<p>Understand and fix performance issues before they impact your business by [running performance tests on your apps](../test/load-test/getting-started-with-performance-testing.md).</p>
 
 
 <p><b>Cloud-based load tests</b></p>
-<p>Find performance problems in your app before customers do with [cloud-based load tests](../load-test/get-started-simple-cloud-load-test.md).</p>
+<p>Find performance problems in your app before customers do with [cloud-based load tests](../test/load-test/get-started-simple-cloud-load-test.md).</p>
 
 
 </td>
@@ -1295,10 +1295,10 @@ build-release\tasks\build\_img
 <p>Use Visual Studio to create [coded UI tests](https://msdn.microsoft.com/library/dd286726.aspx) to test your application's user interface.</p>
 
 <p><b>Run test with your builds for continuous integration</b></p>
-<p>Use continuous integration builds to [run tests automatically](../build-release/test/getting-started-with-continuous-testing.md).</p>
+<p>Use continuous integration builds to [run tests automatically](../pipelines/test/getting-started-with-continuous-testing.md).</p>
 
 <p><b>Review automated test results after a build</b></p>
-<p>[Review your test results](../build-release/test/review-continuous-test-results-after-build.md) to analyze any problems that were found.</p>
+<p>[Review your test results](../pipelines/test/review-continuous-test-results-after-build.md) to analyze any problems that were found.</p>
 
 <p><b>Quickly assign configurations to test plan, test suite, or test case  </b></p>
 <p>From the context menu of a test plan, test suite, or test case, you can assign a configuration.  </p>
@@ -1310,24 +1310,24 @@ build-release\tasks\build\_img
 <td width="33%">
 
 <p><b>Exploratory testing</b></p>
-<p>Explore user stories without test cases or test steps using [Test Manager and exploratory testing](../manual-test/index.md).</p>
+<p>Explore user stories without test cases or test steps using [Test Manager and exploratory testing](../test/index.md).</p>
 ![Exploratory testing](_img/features/features-exploratory-testing.png)  
 <br/>
-<p>Or, [download and install the Test &amp; Feedback extension](../manual-test/getting-started/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
+<p>Or, [download and install the Test &amp; Feedback extension](../test/perform-exploratory-tests.md). Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Microsoft Test Manager, you can [record your keystrokes and gestures while you test an application](../manual-test/getting-started/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Microsoft Test Manager, you can [record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md). The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 
 <p><b>Track test status and test results</b></p>
-<p>Quickly [view the status](../manual-test/getting-started/track-test-status.md) of your testing using lightweight charts.</p>
+<p>Quickly [view the status](../test/track-test-status.md) of your testing using lightweight charts.</p>
 ![Test charts](_img/features/features-test-results.png)  
 <br />
 
 
 <p><b>Test environments</b></p>
-<p>[Specify a combination of hardware and software](../manual-test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
+<p>[Specify a combination of hardware and software](../test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
 
 <p><b>Test permissions</b></p>
 <p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../security/set-project-collection-level-permissions.md).</p>
@@ -1365,7 +1365,7 @@ build-release\tasks\build\_img
 
 
 <p><b>Test charts</b></p>
-<p>Track the status of your [test progress and test runs](../manual-test/getting-started/track-test-status.md). Optionally add these charts to a dashboard.  </p>
+<p>Track the status of your [test progress and test runs](../test/track-test-status.md). Optionally add these charts to a dashboard.  </p>
 ![Test run chart](_img/features/alm-feature-test-chart.png)  
  <br/>
 
@@ -2127,21 +2127,21 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
 
 <p><b>Build</b></p>
-<p>[Define and monitor builds](../build-release/overview.md) and set up continuous builds to improve the quality of your app. </p>
+<p>[Define and monitor builds](../pipelines/overview.md) and set up continuous builds to improve the quality of your app. </p>
 
 
 <p><b>Test</b></p>
-<p>[Create and run manual tests](../manual-test/getting-started/create-a-test-plan.md) and [load tests for your app](../load-test/getting-started-with-performance-testing.md).</p>
+<p>[Create and run manual tests](../test/create-a-test-plan.md) and [load tests for your app](../test/load-test/getting-started-with-performance-testing.md).</p>
 
 <p><b>Package (VSTS, Preview)</b></p>
 <p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](../package/what-is-packaging.md).</p>
 
 <p><b>Release (VSTS, Preview)</b></p>
-<p>Manage the release of your app by [deploying it to a specific environment for each separate release step](../build-release/overview.md), and by controlling the process through approvals for each step.</p>
+<p>Manage the release of your app by [deploying it to a specific environment for each separate release step](../pipelines/overview.md), and by controlling the process through approvals for each step.</p>
 
 
 <p><b>Code search</b></p>
-<p>[Search within your code branches (TFVC) and repositories (Git)](../search/overview.md) to find files, commits, and more using powerful filters to obtain rich results. </p>
+<p>[Search within your code branches (TFVC) and repositories (Git)](../project/search/overview.md) to find files, commits, and more using powerful filters to obtain rich results. </p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 <br/>
 <p><b>Find work items</b></p>
@@ -2204,7 +2204,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Code search</b></p>
-<p>[Find code based on keywords and semantic search filters](../search/overview.md) across your Git repositories.</p>
+<p>[Find code based on keywords and semantic search filters](../project/search/overview.md) across your Git repositories.</p>
 ![Search code box](_img/features/features-index-code-search-vsts.png)  
 
 <p><b>CodeLens search</b></p>
@@ -2299,7 +2299,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md).</p>
 
 <p><b>Set up groups (TFS)</b></p>
-<p>[Create Windows or Active Directory groups](../tfs-server/admin/setup-ad-groups.md) to manage access to your team projects and collections.  </p>
+<p>[Create Windows or Active Directory groups](/tfs/server/admin/setup-ad-groups) to manage access to your team projects and collections.  </p>
 
 <p><b>Built-in groups</b></p>
 <p>Understand the [permissions granted to built-in groups](../security/permissions.md#groups) and use them to manage access to your team projects and collections.</p>
@@ -2315,9 +2315,9 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li>[Git repositories](../security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Git branches](../git/branch-permissions.md)</li>
 <li>[TFVC source code and folders](../security/set-git-tfvc-repository-permissions.md)</li>
-<li>[Build](../build-release/set-permissions.md)</li>
+<li>[Build](../pipelines/policies/set-permissions.md)</li>
 <li>[Test](../security/set-project-collection-level-permissions.md))</li>
-<li>[Release](../build-release/set-permissions.md)</li>
+<li>[Release](../pipelines/policies/set-permissions.md)</li>
 </ul>
 <br/>
 
@@ -2344,7 +2344,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <ul>
 <li>[Project Administrators](../security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
 <li>[Project Collection Administrators](../security/set-project-collection-level-permissions.md), who manage collection-level features </li>
-<li>[Team Foundation Server Administrators](../tfs-server/add-administrator-tfs.md), who manage on-premises application servers </li>
+<li>[Team Foundation Server Administrators](/tfs/server/admin/add-administrator-tfs), who manage on-premises application servers </li>
 </ul>
 <br/>
 
@@ -2427,13 +2427,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Email configuration (TFS)</b></p>
-<p>For feedback requests, alerts, and other special controls to work, you must [configure an SMTP server](../tfs-server/admin/setup-customize-alerts.md) for your on-premises TFS. </p>
+<p>For feedback requests, alerts, and other special controls to work, you must [configure an SMTP server](/tfs/server/admin/setup-customize-alerts) for your on-premises TFS. </p>
 
 <p><b>Automated, scheduled backups (TFS)</b></p>
-<p>Reduce the risk of lost data by [scheduling automated backups of the data store](../tfs-server/admin/backup/config-backup-sched-plan.md).</p>
+<p>Reduce the risk of lost data by [scheduling automated backups of the data store](/tfs/server/admin/backup/config-backup-sched-plan).</p>
 
 <p><b>Built-in SQL Server database (TFS)</b></p>
-<p>For small teams, you can install [TFS using SQL Server Express which installs with TFS](../tfs-server/install/single-server.md).  </p>
+<p>For small teams, you can install [TFS using SQL Server Express which installs with TFS](/tfs/server/install/single-server).  </p>
 
 
 </td>
@@ -2772,13 +2772,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Get detailed information about what changes have been made to your files](https://msdn.microsoft.com/library/ms245475.aspx), compare files and folders, view where and when changesets have been merged, and view file changes using annotate.</p>
 
 <p><b>Build changes</b></p>
-<p>Determine who [changed what in the build definition and when they did it](../build-release/define/history.md).</p>
+<p>Determine who [changed what in the build definition and when they did it](../pipelines/build/history.md).</p>
 
 <p><b>Release audit history</b></p>
 <p>Retain full audit history of all activities performed on a release with detailed release logs and approval tracking.</p>
 
 <p><b>Release logs</b></p>
-<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../build-release/actions/define-multistage-release-process.md#monitor-and-track-deployments). </p>
+<p>View or download log files as zip files. Log files contain the status for each step or task of a release, for each of the environments in the release definition. Each completed release--succeeded, failed, or abandoned--[includes a live log file, details, and history for each step or task](../pipelines/release/define-multistage-release-process.md#monitor-and-track-deployments). </p>
 
 </td>
 </tr>

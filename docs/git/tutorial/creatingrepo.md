@@ -56,7 +56,7 @@ Later you can connect this Git repo to a remote Git repo to share your work with
 
 Create a new Git repo for your new Visual Studio solution by selecting **Create new Git repository** when creating the solution:
    
-![Select Create new Git reposistory when creating a new solution](_img/vscreategitrepo.png) 
+![Select Create new Git repository when creating a new solution](_img/vscreategitrepo.png) 
 
 ### From an existing solution
 

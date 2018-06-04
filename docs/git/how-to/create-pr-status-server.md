@@ -329,7 +329,7 @@ Now that your server is running and listening for service hook notifications, cr
 
     ![Add WIP to the default PR title](../_img/create-pr-status-server/new-pr-wip.png)
 
-6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specfied in the payload.
+6. Once the PR has been created, you will see the status section, with the **Work in progress** entry which links to the URL specified in the payload.
 
     ![Add WIP to the default PR title](../_img/create-pr-status-server/pr-with-status.png)
 

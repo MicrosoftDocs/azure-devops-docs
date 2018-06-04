@@ -1,5 +1,5 @@
 ---
-title: Scrum process template
+title: Scrum process template artifacts
 titleSuffix: VSTS & TFS
 description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
@@ -8,6 +8,8 @@ ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -113,8 +115,8 @@ To access this dashboard, your team project must have a [project portal configur
 
 As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | TFS version | Scrum process name | Major version |
+> [!div class="mx-tdCol2BreakAll"]
+> |TFS version | Scrum process name | Major version |
 > |-------------|-------------------|--------------|
 > | TFS 2018 | Scrum | 16 |
 > | TFS 2017 | Scrum | 15 |

@@ -1,12 +1,12 @@
 ---
 title: Set up Active Directory or Azure Active Directory for VSTS & TFS
-description: Manage large groups of users using Active Directory (AD) for TFS or Azure Active Directory (Azure AD) for VSTS 
+description: Manage large groups of users using Active Directory (AD) for Team Foundation Server (TFS) or Azure Active Directory (Azure AD) for VSTS 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 ms.date: 02/28/2018
 monikerRange: '>= tfs-2013'
@@ -38,6 +38,8 @@ Use this topic to access articles that will show you how to:
 * [Connect VSTS account to Azure AD](../accounts/connect-account-to-aad.md)
 * [Disconnect VSTS account from Azure AD](../accounts/disconnect-account-from-aad.md)
 * [Delete users from VSTS connected to Azure AD](../accounts/delete-users-from-services-aad.md)
+* [Troubleshoot access with Azure Active Directory](../accounts/faq-azure-access.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) 
+
 
 ## Set up Active Directory for use with TFS
 
@@ -58,4 +60,4 @@ Use these resources to learn about installing Active Directory. Typically, you s
 * [Set up billing to pay for users, pipelines, and cloud-based load testing in VSTS](../billing/set-up-billing-for-your-account-vs.md) 
 * [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)
 * [Get started with Azure AD](https://docs.microsoft.com/azure/active-directory/get-started-azure-ad)
-* [Requirements and compatibility](../tfs-server/requirements.md)
+ 

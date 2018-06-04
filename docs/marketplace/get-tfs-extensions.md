@@ -1,12 +1,13 @@
 ---
 title: Install extensions for Visual Studio Team Foundation Server (TFS)
 description: Find and install extensions for Team Foundation Server from the Visual Studio Marketplace
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 9/27/2017
 monikerRange: '>= tfs-2015 < vsts'
 ---
@@ -119,7 +120,7 @@ and then installing them in a team project collection.
 
 ### Who can upload extensions?
 
-[Team Foundation administrators](../tfs-server/add-administrator-tfs.md#server) 
+[Team Foundation administrators](/tfs/server/admin/add-administrator-tfs#server) 
 with [**Edit instance-level information** permissions](../security/permissions.md#server) 
 can upload extensions.
 

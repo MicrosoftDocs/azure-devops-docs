@@ -116,22 +116,22 @@ Perform one of the following steps based on the scope of the customization you a
           <Group>  
            <Column PercentWidth="50">  
           <Group Label="General">  
-             <Column PercentWidth="100">  
+           <Column PercentWidth="100">  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.ExitCriteria" Label="E&xit criteria:" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Build.IntegrationBuild" Label="Integration &build:" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.TaskHierarchy" Label="Task C&ontext:" LabelPosition="Left" ReadOnly="True" />  
-             </Column>  
+           </Column>  
           </Group>  
            </Column>  
            <Column PercentWidth="50">  
           <Group Label="Schedule">  
-             <Column PercentWidth="100">  
+           <Column PercentWidth="100">  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.RemainingWork" Label="Remaining &work (hours):" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.CompletedWork" Label="Com&pleted work (hours):" LabelPosition="Left" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.StartDate" Label="Start Dat&e:" LabelPosition="Left" ReadOnly="True" />  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Scheduling.FinishDate" Label="&Finish Date:" LabelPosition="Left" ReadOnly="True" />  
-             </Column>  
+           </Column>  
           </Group>  
            </Column>  
           </Group>  
@@ -146,7 +146,7 @@ Perform one of the following steps based on the scope of the customization you a
           <Group>  
            <Column PercentWidth="50">  
           <Group Label="General">  
-             <Column PercentWidth="100">  
+           <Column PercentWidth="100">  
               <Control Type="FieldControl" FieldName="Microsoft.VSTS.Common.Issue" Label="Iss&ue:" LabelPosition="Left" />  
     ...  
     ```  
@@ -158,7 +158,7 @@ Perform one of the following steps based on the scope of the customization you a
        <Group Label="Classification">
           <Column PercentWidth="50">
              <Group>
-                <Column PercentWidth="100">
+         <Column PercentWidth="100">
                    <Control Type="WorkItemClassificationControl" FieldName="System.AreaPath" Label="Area" LabelPosition="Left" />  
                    <Control Type="WorkItemClassificationControl" FieldName="System.IterationPath" Label="Iteration" LabelPosition="Left" />  
                 </Column>

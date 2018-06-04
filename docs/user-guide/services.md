@@ -94,7 +94,7 @@ Use this hub to implement continuous integration and continuous delivery.
 - **Release management**: Supports a rapid release cadence and management of simultaneous releases. You can configure release definitions that represent your environments from development to production. Run automations to deploy your app to each environment. Add approvers to sign off that the app has been successfully deployed in an environment. Create your release manually or automatically from a build. Then track your releases as they are deployed to various environments.
 
 
-To learn more, see [Continuous integration on any platform](../build-release/overview.md). 
+To learn more, see [Continuous integration on any platform](../pipelines/overview.md). 
 
 
 ## Test
@@ -114,7 +114,7 @@ Test **Test** hub provides support for the following:
 - Browser-based test execution on any platform  
 - Real-time charts for tracking test activity.  
 
-To learn more, see [Testing overview](../manual-test/index.md).
+To learn more, see [Testing overview](../test/index.md).
 
 ## Collaboration services
 
@@ -142,8 +142,8 @@ For the latest set of supported services, see [Integrate with service hooks](../
 
 The following services support your DevOps operations.
 
-- Cloud-based build and deployment hosted agents  
-- On-premises private agents to support build and deployment  
+- Cloud-based build and deployment Microsoft-hosted agents  
+- On-premises self-hosted agents to support build and deployment  
 - Cloud-based performance/load testing lets you load test your code by simulating high traffic  
 
 To learn more, see [Pricing](https://www.visualstudio.com/team-services/pricing/).

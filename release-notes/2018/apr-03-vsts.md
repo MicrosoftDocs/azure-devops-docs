@@ -72,14 +72,14 @@ Formerly part of the TFS Power tools, the tool has been released as a [standalon
 
 Large products have several components that are dependent on each other. These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated. Teams typically manage these dependencies manually.
 
-Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/vsts/build-release/concepts/definitions/build/triggers#BuildCompletion) documentation for more information.
+Now you can trigger a build upon the successful completion of another build. Artifacts produced by an upstream build can be downloaded and used in the later build, and you can also get data from these variables: Build.TriggeredBy.BuildId, Build.TriggeredBy.DefinitionId, Build.TriggeredBy.BuildDefinitionName. See the [build triggers](/vsts/pipelines/build/triggers#BuildCompletion) documentation for more information.
 
 This feature was prioritized based on what is currently the #2 highest voted [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/2165043-provide-build-configuration-dependencies-in-tfs-bu) with 1,129 votes.
 
 > [!div class="mx-imgBorder"]
 ![Setup build chaining](_img/132_03.png)
 
-Keep in mind that in some cases, a single [multi-phase build](/vsts/build-release/concepts/process/phases) could meet your needs. However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent process.
+Keep in mind that in some cases, a single [multi-phase build](/vsts/pipelines/process/phases) could meet your needs. However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent process.
 
 ### Scale deployments to VMs using Deployment Groups
 
@@ -110,7 +110,7 @@ Use the enhanced **Azure Resource Group** task to dynamically bootstrap agents o
 
 When we launched deployment groups in last May, we shipped a simple user interface targeted at a few key scenarios. You’ll now find a more consistent interface that feels like the rest of the product.
 
-See the [Deployment Groups](/vsts/build-release/concepts/definitions/release/deployment-groups/) documentation for more information about getting started.
+See the [Deployment Groups](/vsts/pipelines/release/deployment-groups/) documentation for more information about getting started.
 
 ### Build applications written in Go
 
@@ -122,7 +122,7 @@ The **Go** task helps you download dependencies, build, or test your application
 
 ### Extend release gates with task extensions
 
-[Release gates](/vsts/build-release/concepts/definitions/release/approvals/gates) bring health signals information right into your release pipeline. A gate collects a set of health signals repeatedly, prior to or after a deployment, to determine whether the release should proceed to the next stage or not. A set of built-in gates are provided, and the **Invoke Azure Function** option has been the recommended one for integrating other services thus far.
+[Release gates](/vsts/pipelines/release/approvals/gates) bring health signals information right into your release pipeline. A gate collects a set of health signals repeatedly, prior to or after a deployment, to determine whether the release should proceed to the next stage or not. A set of built-in gates are provided, and the **Invoke Azure Function** option has been the recommended one for integrating other services thus far.
 
 Now, gates can come in the form of an extension, which makes it easier for you&#8212;or extension authors&#8212;to integrate new or custom services and configure the gate.
 

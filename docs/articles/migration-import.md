@@ -3,12 +3,13 @@ title: Migration import from TFS to Visual Studio Team Services (VSTS) | VSTS & 
 description: Walks through the steps from preparing a collection to getting it uploaded for import
 ms.prod: devops
 ms.topic: article
-ms.technology: devops-article
+ms.technology: devops-learn
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
 ms.date: 04/13/2018
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
+monikerRange: '>= tfs-2013'
 ---
 
 # Import
@@ -241,9 +242,9 @@ By this point you will have everything ready to execute on your import. You will
 > We **strongly** recommend that your organization complete a dry run import before performing a production import. Dry runs allow you to validate that the import process works for your collection and that there are no unique data shapes present which might cause a production import failure. 
 
 ### Detaching your Collection
-[Detaching the collection](/vsts/tfs-server/admin/move-project-collection#detach-coll) is a crucial step in the import processes. Identity data for the collection resides in the TFS server's configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
+[Detaching the collection](/tfs/server/admin/move-project-collection#detach-coll) is a crucial step in the import processes. Identity data for the collection resides in the TFS server's configuration database while the collection is attached and online. When a collection is detached from the TFS server it will take a copy of that identity data and package it up with the collection for transport. Without this data the identity portion of the import **CANNOT** be executed. It's recommended that the collection stay detached until the import has been completed, as there isn't a way to import the changes which occurred during the import.
 
-If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](/vsts/tfs-server/command-line/tfsconfig-cmd#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
+If you're running a dry run (test) import, it's recommended to reattach your collection after backing it up for import since you won't be concerned about having the latest data for this type of import. You could also choose to employ an [offline detach](/tfs/server/command-line/tfsconfig-cmd#offlinedetach) for dry runs to avoid offline time all together. It's important to weigh the cost involved with going the zero downtime route for a dry run. It requires taking backups of the collection and configuration database, restoring them on a SQL instance, and then creating a detached backup. A cost analysis could prove that taking just a few hours of downtime to directly take the detached backup is better in the long run.
 
 
 <a id="generating-a-dacpac" />
@@ -317,7 +318,7 @@ The output of the command will be a DACPAC that is generated from the collection
 
 DACPACs offer a fast and relatively simplistic method for moving collections into VSTS. However, once a collection database crosses a certain size threshold the benefits of using a DACPAC start to diminish. For databases that TfsMigrator warns are too big, a different data packaging approach is required to migrate to VSTS. If you're unsure if your collection is over the size threshold then you should run a TfsMigrator validate on the collection. The validation will let you know if you need to use the SQL Azure VM method for import or not. 
 
-Before going any further, it's always recommended to see if [old data can be cleaned up](https://docs.microsoft.com/en-us/vsts/tfs-server/upgrade/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn't need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
+Before going any further, it's always recommended to see if [old data can be cleaned up](https://docs.microsoft.com/en-us/tfs/server/upgrade/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn't need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
 
 If you are under the DACPAC threshold, follow the instructions to [generate a DACPAC](#generating-a-dacpac) for import. If you're still unable to get the database under the DACPAC threshold then you will need to setup a SQL Azure VM to import to VSTS. We'll walk through how to accomplish this end-to-end. At a high-level the steps covered include:
 
@@ -354,7 +355,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 1. It's recommended that D Series VMs be used as they're optimized for database operations.
 2. Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
 3. [Configure](https://docs.microsoft.com/en-us/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](.\migration-import.md#generating-a-dacpac).
-4. If your source database is still over 1TB after [reducing the size](https://docs.microsoft.com/en-us/vsts/tfs-server/upgrade/clean-up-data) then you will need to [attach](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
+4. If your source database is still over 1TB after [reducing the size](https://docs.microsoft.com/en-us/tfs/server/upgrade/clean-up-data) then you will need to [attach](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
 #### VSTS IPs 
@@ -601,7 +602,9 @@ Imports can either be queued as a dry or production run. Dry runs are for testin
 ![Completed import specification file with import type](_img/migration-import/importSpecCompleted.png)
 
 ### Dry Run Accounts
-Dry run imports help teams to test the migration of their collections. It's not expected that these accounts will remain around forever, but rather to exist for a small time frame. In fact, before a production migration can be run a complementing dry run account will need to be deleted. All dry run accounts have a **limited existence and will be automatically deleted after a set period of time**. When the account will be deleted is included in the success email received after the import completes. Be sure to take note of this date and plan accordingly. Once that time period passes the dry run account will be deleted. If your team is ready to perform a production migration before then you will need to manually delete the account. 
+Dry run imports help teams to test the migration of their collections. It's not expected that these accounts will remain around forever, but rather to exist for a small time frame. In fact, before a production migration can be run, any completed dry run accounts will need to be deleted. All dry run accounts have a **limited existence and will be automatically deleted after a set period of time**. When the account will be deleted is included in the success email received after the import completes. Be sure to take note of this date and plan accordingly. 
+
+Most dry run accounts will have 15 days before they're deleted. Dry run accounts can also have a 21 day expiration if more than 100 users are licenses basic or higher at **import time**. Once that time period passes the dry run account will be deleted. Dry run imports can be repeated as many times as you need to feel comfortable before doing a production migration. A previous dry run attempt still needs to be deleted before attempting a new dry run migration. If your team is ready to perform a production migration before then you will need to manually delete the dry run account. 
 
 Be sure to check out the [post import](.\migration-post-import.md) documentation for additional details on post import activities. Should your import encounter any problems, be sure to review the [import troubleshooting](.\migration-troubleshooting.md#dealing-with-import-errors) steps. 
 

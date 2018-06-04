@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.assetid: 2F69B746-DB11-4AD2-8003-5D39D0D17070  
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 08/11/2016
 ---
@@ -16,7 +17,7 @@ ms.date: 08/11/2016
 <b>TFS 2015 | TFS 2013</b>  
 
 >[!NOTE]  
->**Feature availability:** For on-premises TFS, install TFS 2015 Update 1 to get access to [multiple team dashboards](dashboards.md) and [widgets](widget-catalog.md) that you can add to these dashboards.  Â 
+>**Feature availability:** For on-premises TFS, install TFS 2015 Update 1 to get access to [multiple team dashboards](dashboards.md) and [widgets](widget-catalog.md) that you can add to these dashboards.   
 
 Teams can view the progress of work from the team home page. Team administrators can add or pin items to this dashboard and re-sequence tiles. Each tile provides team members quick access to work items, build progress, code changes, and more.
 
@@ -61,8 +62,8 @@ Either choose the context menu for the item that you want to remove and select U
 ##Related notes
 
 - [Define queries](../../work/track/using-queries.md) 
-- [Define builds](../../build-release/overview.md) 
-- [Test charts](../../manual-test/getting-started/track-test-status.md) 
+- [Define builds](../../pipelines/overview.md) 
+- [Test charts](../../test/track-test-status.md) 
 
 
 <a id="switch-team-context">  </a>

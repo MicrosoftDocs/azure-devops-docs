@@ -1,13 +1,14 @@
 ---
 title: Analyze and report on code churn and code coverage 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: View measures, dimensions, and attributes that are associated with the changes in lines of codes 
 ms.assetid: 7a6c9101-c38d-4d6d-be8d-d64a3931487b
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -110,9 +111,9 @@ The following table describes the measures in the Run Coverage measure group. By
 |---------------|---------------|-----------------|  
 |Build|Build Definition Name|The name that is assigned to the build definition for which a build was run.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, this attribute is incremented by 1.|  
-||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../build-release/concepts/definitions/build/options.md).|  
+||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../pipelines/build/options.md).|  
 ||Build Start Time|The date and time when the build started.|  
-||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of builds: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../build-release/concepts/definitions/build/triggers.md).|  
+||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of builds: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../pipelines/build/triggers.md).|  
 ||Drop Location|The Uniform Resource Locator (URL) for the completed build. A URL specifies the protocol with which web browsers will locate Internet resources. Each URL includes the name of the server on which the details of the build reside. You can also include the path to a resource.|  
 |Version Control Changeset|Changeset ID|The number that is assigned to the changeset that included the file changes.|  
 ||Checked In By|The user name of the team member who checked in the changeset.|  
@@ -131,12 +132,12 @@ The following table describes the measures in the Run Coverage measure group. By
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../build-release/test/getting-started-with-continuous-testing.md).|  
+|Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../pipelines/test/getting-started-with-continuous-testing.md).|  
 |Build|Build Definition Name|The name that is assigned to the build definition for which a build was run.|  
 ||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
-||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../build-release/concepts/definitions/build/options.md).|  
+||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../pipelines/build/options.md).|  
 ||Build Start Time|Date and time when the build started.|  
-||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of builds: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../build-release/concepts/definitions/build/triggers.md).|  
+||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of builds: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../pipelines/build/triggers.md).|  
 ||Drop Location|The Uniform Resource Locator (URL) for the completed build. A URL specifies the protocol with which web browsers will locate Internet resources. The URL also includes the name of the server on which the resource resides. You can also specify the path to a resource.|  
 |Build Flavor|Build Flavor|(Published test results only) A name that designates the category that is assigned to a set of completed builds that were published as part of a test run. For example, you can use a build flavor to designate a beta release or final release.|  
 |Build Platform|Build Platform|(Published test results only) The name of the machine platform for which an end-to-end (not desktop) build was made and that was published as part of a test run (for example, **x86** or **Any CPU**). For an example of a report that uses this attribute, see [Build Summary](build-summary-report.md).|  
@@ -145,7 +146,7 @@ The following table describes the measures in the Run Coverage measure group. By
 ##  <a name="tracking"></a> Required activities  
  To create reports that contain code churn and code coverage data, team members should review the information in the following topics:  
   
--   [Get started with continuous testing](../../build-release/test/getting-started-with-continuous-testing.md)  
+-   [Get started with continuous testing](../../pipelines/test/getting-started-with-continuous-testing.md)  
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)  
   
 -   [Configure unit tests by using a .runsettings file](https://msdn.microsoft.com/library/jj635153.aspx)  

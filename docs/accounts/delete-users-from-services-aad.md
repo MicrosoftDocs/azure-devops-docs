@@ -1,6 +1,6 @@
 ---
 title: Delete users from VSTS connected to Azure AD
-description: Delete users from VSTS connected to Azure AD
+description: Steps for how to delete users from Visual Studio Team Services connected to Azure Active Directory via the Azure portal
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: eb0d51c2-fb28-4c55-9fcd-33a5942130f0

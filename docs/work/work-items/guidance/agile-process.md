@@ -1,5 +1,5 @@
 ---
-title: Agile process template
+title: Agile process template artifacts
 titleSuffix: VSTS & TFS  
 description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
@@ -8,6 +8,8 @@ ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -109,8 +111,8 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 As updates are made to the Agile process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | TFS version | Agile process name | Major version |
+> [!div class="mx-tdCol2BreakAll"]
+> |TFS version | Agile process name | Major version |
 > |-------------|-------------------|--------------|
 > | TFS 2018 | Agile | 16 |
 > | TFS 2017 | Agile | 15 |

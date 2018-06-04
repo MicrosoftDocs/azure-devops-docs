@@ -30,7 +30,7 @@ With bulk modify, you can edit fields, add or remove tags, reassign work, or mov
 In this topic you'll learn:  
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
 > * Assign work from a backlog to a sprint using drag-and-drop 
@@ -38,7 +38,7 @@ In this topic you'll learn:
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
 > * Assign work from a backlog to a sprint using drag-and-drop 
@@ -76,7 +76,7 @@ All of the following actions can be performed by team members that belong to the
 **Notes:**  
 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
-3. For on-premises TFS, you must have an [SMTP server configured for your deployment](../../tfs-server/admin/setup-customize-alerts.md). 
+3. For on-premises TFS, you must have an [SMTP server configured for your deployment](/tfs/server/admin/setup-customize-alerts). 
 
 
 ::: moniker-end
@@ -93,12 +93,12 @@ All of the following actions can be performed by team members that belong to the
 **Notes:**  
 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
-3. For on-premises TFS, you must have an [SMTP server configured for your deployment](../../tfs-server/admin/setup-customize-alerts.md). 
+3. For on-premises TFS, you must have an [SMTP server configured for your deployment](/tfs/server/admin/setup-customize-alerts). 
 
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
 
 <a id="multi-select"> </a>  
 <a id="edit"> </a>  

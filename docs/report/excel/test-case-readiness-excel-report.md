@@ -2,7 +2,7 @@
 title: Test Case Readiness Excel Report  
 description: Use the Test Case Readiness report to help monitor the progress that the team is making toward defining and designing Test Cases.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: faaad500-45da-45c7-8ab2-59d1c6f30c2a
@@ -10,6 +10,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.date: 12/30/2016
 ---
+
 # Test Case Readiness Excel Report
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
@@ -36,7 +37,7 @@ You can use the Test Case Readiness report to help monitor the progress that the
 ### Required activities for monitoring test case readiness  
  For the Test Case Readiness report to be useful and accurate, the team must perform the following activities:  
   
--   Define [test cases](../../manual-test/getting-started/create-test-cases.md), and update their **State** from **Design** to **Ready**.  
+-   Define [test cases](../../test/create-test-cases.md), and update their **State** from **Design** to **Ready**.  
   
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to Test Cases.  
   

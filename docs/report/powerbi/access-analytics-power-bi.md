@@ -1,11 +1,15 @@
 ---
-title: Access data from Power BI desktop  
-description: How to access Analytics Service OData for Visual Studio Team Services (VSTS) from Power BI Desktop OData feed  
+title: Access Analytics Service data from the Power BI desktop
+titleSuffix: VSTS  
+description: How to access Analytics Service OData from a Power BI Desktop OData feed for Visual Studio Team Services  
 ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.assetid: b26f1d04-95ca-43d5-8333-176780f3980a  
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
@@ -15,7 +19,7 @@ ms.date: 11/13/2017
 
 You can access the Analytics Service data through the Power BI Desktop OData feed. This method works for any account that has alternate credentials enabled. OAuth (Organizational Accounts) is currently not supported. 
 
-##Accessing the VSTS OData feed
+## Accessing the VSTS OData feed
 1. Make sure you have installed the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics)
 
 2. Make sure you have configured the [permissions required to access the Analytics service](../analytics/analytics-security.md)
@@ -28,7 +32,7 @@ You can access the Analytics Service data through the Power BI Desktop OData fee
 
 5. Next, select Other > OData Feed and click Connect.  
 
-	<img src="_img/pbi2.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />Â  
+	<img src="_img/pbi2.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />  
 
 6.	Enter the URL in the format into a supported browser:  
 
@@ -36,7 +40,7 @@ You can access the Analytics Service data through the Power BI Desktop OData fee
 	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
 	```  
 
-	<img src="_img/pbi3.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />Â   
+	<img src="_img/pbi3.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />   
 
 	If the *AccountName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/_odata/v1.0-preview```.
 
@@ -49,7 +53,7 @@ You can access the Analytics Service data through the Power BI Desktop OData fee
 	>[!IMPORTANT]  
 	>Do *not* select any entity with the name **Snapshot** in it. These entities contain the state of every work item on every day since each work item was created. For repositories of any size this will lead to tens or hundreds of millions of work items which will not load. **Snapshot** tables are intended only for [aggregation queries](../extend-analytics/odata-query-guidelines.md)
 
-	<img src="_img/pbi4.png" alt="Select the entities of data to retrieve" style="border: 1px solid #C3C3C3;" />Â 
+	<img src="_img/pbi4.png" alt="Select the entities of data to retrieve" style="border: 1px solid #C3C3C3;" /> 
 
 	At this point, if you click **Load**, Power BI Desktop will load all of the data in each entity. However, this may be more data than you want. To filter the data, select the entity to filter and click Edit. This brings up the Query Editor. For each column you want to filter on, select it and set your filter. When this is complete click Close & Apply in the upper left corner.  
 
@@ -89,4 +93,4 @@ not allowed. To handle this, you could expand the Project column in the Areas ta
 
 Now you can list Areas by Project and get a count of Areas in each project.
 
-[!INCLUDEÂ [temp](../../_shared/help-support-shared.md)]Â 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

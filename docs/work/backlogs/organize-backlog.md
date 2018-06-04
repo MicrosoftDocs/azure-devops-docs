@@ -24,7 +24,7 @@ In this topic you'll learn:
 
 ::: moniker range="vsts || >= tfs-2018"
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to view the tree hierarchy  
 > * How to group backlog items using the Mapping pane  
 > * How to reparent items using drag-and-drop or the **Change parent** option      

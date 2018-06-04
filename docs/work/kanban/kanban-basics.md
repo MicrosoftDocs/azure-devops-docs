@@ -10,6 +10,7 @@ ms.prod: devops
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 --- 
 
@@ -23,7 +24,7 @@ Your Kanban board turns your backlog into an interactive signboard, providing a 
 
 Review this topic to gain an understanding of how to configure and start working with your Kanban boards:   
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * View your Kanban board    
 > * Customize the columns shown on your Kanban board to support how your team works  
 > * Set WIP limits to constrain work in progress   
@@ -120,7 +121,7 @@ Here are a few things you can do. See at a glance the estimated size of work for
 ::: moniker range="tfs-2015"
 
 > [!NOTE]  
-> You can [reorder items within a column](../customize/reorder-cards.md#reorder-cards) from TFS 2015.1 and later versions.   
+> You can [reorder items within a column](../customize/reorder-cards.md#reorder-cards) from TFS 2015.1 and later versions.
 
 ::: moniker-end
 
@@ -144,7 +145,7 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 <img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
 By monitoring these metrics, you can gain insight into how to optimize your processes and minimize lead time. For additional guidance, see [Cumulative Flow](../../report/dashboards/cumulative-flow.md) 
- 
+
 
 ::: moniker range="vsts"
 
@@ -175,7 +176,7 @@ Each team can manage their backlog and customize their Kanban board. [Add teams]
 
 If you're new to tracking work with Agile tools and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 [!INCLUDE [temp](../_shared/live-updates.md)]  
 
 ::: moniker-end

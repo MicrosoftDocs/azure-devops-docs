@@ -7,6 +7,7 @@ ms.technology: devops-analytics
 ms.assetid: 868DC7E6-540C-4F9F-B4A3-7680F1C49FC9
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 11/13/2017
@@ -14,7 +15,7 @@ ms.date: 11/13/2017
 
 # Set permissions to access the Analytics Service and Analytics views
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 To use [Power BI for VSTS](index.md) or to exercise an OData query for the Analytics Service, you must be granted the **View analytics** permission. By default, the **View analytics** permission is set for all project valid users. 
 
@@ -40,7 +41,7 @@ You grant permissions to a user by setting the **View analytics** permission to 
 > The Analytics Service does not support security at the area path level. Therefore, if a user has access to a team project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics Service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics Service for any user who does not have access to all data within a team project.  
 
 
-[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
+[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
 
 
 <a name="access-denied"></a>

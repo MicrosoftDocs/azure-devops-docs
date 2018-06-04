@@ -24,7 +24,7 @@ You can add a link to a work item from within the work item form or from a backl
 
 Use this topic to learn how to:  
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * Link one or more work items to an existing work item   
 > * Link one or more work items to a new work item that you add when linking
 > * Link several work items to a new git branch
@@ -33,7 +33,7 @@ Use this topic to learn how to:
 
 For a list of all link types and supported link relationships, see [Link work items to support traceability](../track/link-work-items-support-traceability.md). 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]Â 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 <a id="link"> </a>  
 ## Link several items to an existing or new work item 

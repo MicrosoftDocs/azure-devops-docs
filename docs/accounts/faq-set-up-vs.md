@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot setting up Visual Studio with VSTS
-description: Troubleshoot setting up Visual Studio with VSTS
+description: Having problems installing, signing in, creating an account, or expired subscription? Read these frequently asked questions and answers 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b

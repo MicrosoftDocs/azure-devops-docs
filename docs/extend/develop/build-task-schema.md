@@ -6,6 +6,7 @@ description: Reference for creating a custom build or release task with an exten
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 11/14/2016
@@ -31,7 +32,7 @@ multiple versions in one extension.
 * extensionIcon.png
 * Task1
     * task.json
-    * taskIcon.png
+    * icon.png
     * taskScript.ps1
 
 ### Multiple version layout
@@ -41,20 +42,20 @@ multiple versions in one extension.
 * Task1
     * Task1V1
         * task.json
-        * taskIcon.png
+        * icon.png
         * taskScript.ps1
     * Task1V2
         * task.json
-        * taskIcon.png
+        * icon.png
         * taskScript.ps1    
 * Task2
     * Task2V1
         * task.json
-        * taskIcon.png
+        * icon.png
         * taskScript.ps1
     * Task2V2
         * task.json
-        * taskIcon.png
+        * icon.png
         * taskScript.ps1
                     
 

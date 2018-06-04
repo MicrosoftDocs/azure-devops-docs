@@ -6,7 +6,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 10/26/2017  
 monikerRange: '>= tfs-2017'
@@ -36,8 +37,8 @@ To manage notifications, see:
 - [Manage personal notifications](../notifications/manage-personal-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
 - [Manage team notifications](../collaborate/manage-team-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
 
->[!NOTE]  
->There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).
+>[!NOTE]
+>There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).
 
 ## Related articles
 

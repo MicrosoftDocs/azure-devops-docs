@@ -1,11 +1,13 @@
 ---
 title: DevOps with VSTS for Java - Hands-on-Labs
 description: DevOps with Visual Studio Team Services for Java - Hands-on-Labs
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-java
-ms.assetid:  
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
+ms.custom: java
 ms.manager: douge
-ms.author:  
+ms.author: douge 
+author: erickson-doug
 ms.date: 01/25/2018
 monikerRange: '>= tfs-2017'
 ---

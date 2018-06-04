@@ -1,7 +1,7 @@
 ---
 title: Burndown and Burn Rate Report
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Determine the rate of team progress by reviewing the Burndown and Burn Rate report - Team Foundation Server 

@@ -6,6 +6,7 @@ description: Add an action for your extension that extends VSTS.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/22/2016
@@ -15,11 +16,9 @@ ms.date: 08/22/2016
 In this example, we'll add an action to the query context menu in the work item queries hub.
 
 ## Prerequisites for this article
+
 - You'll need to create a web app for your action, which can be found in the [hub example](./add-hub.md).
-- If you haven't, take a look at the [write your first extension tutorial](../get-started/node.md) to learn about things such as:
-    - **The client SDK: [VSS.sdk.js](../get-started/node.md#client-sdk)**
-    - **The [extension manifest](../get-started/node.md#extension-manifest)**
-    - **General extension file structure**
+- If you haven't, take a look at the [write your first extension tutorial](../get-started/node.md) to learn about the basics.
 
 ## Update extension manifest file
 

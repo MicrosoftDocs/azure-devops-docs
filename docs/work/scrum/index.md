@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 03/20/2018
 ---
@@ -61,6 +62,6 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Kanban](../kanban/index.md)
 - [Work item queries](../track/index.md)
 - [Work item customization](../customize/index.md)
-- [What is Scrum?](https://www.visualstudio.com/learn/what-is-scrum/)  
-- [What is Agile development?](https://www.visualstudio.com/learn/what-is-agile-development/)  
+- [What is Scrum?](/azure/devops/agile/what-is-scrum)
+- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
 

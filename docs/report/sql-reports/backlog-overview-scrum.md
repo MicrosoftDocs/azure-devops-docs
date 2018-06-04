@@ -1,7 +1,7 @@
 ---
 title: Backlog overview (Scrum) 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Reports the lists of all product backlog items (PBIs) - Team Foundation Server  
@@ -40,7 +40,7 @@ The Backlog Overview report lists all product backlog items (PBIs), both active 
   
 |Work Progress|Test Status|  
 |-------------------|-----------------|  
-|-   **Hours Breakdown**: A visual representation that shows the percentage of completed work based on the rollup of remaining hours for all tasks that are linked to the PBI or its child PBIs.<br />-   **To Do**: A rollup of the remaining hours for tasks in the To Do state that are linked to the PBI or its child PBIs.<br />-   **In Progress**: A rollup of the remaining hours for tasks in the In Progress state that are linked to the PBI or its child PBIs.|-   **Test Points**: A numeric value that represents the number of pairings of test cases with test configurations in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../manual-test/getting-started/track-test-status.md).<br />-   **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).|  
+|-   **Hours Breakdown**: A visual representation that shows the percentage of completed work based on the rollup of remaining hours for all tasks that are linked to the PBI or its child PBIs.<br />-   **To Do**: A rollup of the remaining hours for tasks in the To Do state that are linked to the PBI or its child PBIs.<br />-   **In Progress**: A rollup of the remaining hours for tasks in the In Progress state that are linked to the PBI or its child PBIs.|-   **Test Points**: A numeric value that represents the number of pairings of test cases with test configurations in a specific test suite. For more information about test points, see [Reporting on testing progress for test plans](../../test/track-test-status.md).<br />-   **Test Results**: A numeric value and visual representation that shows the percentage of test cases, grouped according to the status of their most recent test run, where the options are **Passed** (green), **Failed** (red), or **Not Run** (black).|  
   
 ###  <a name="Interpreting"></a> Healthy and unhealthy versions of the report  
  A healthy report shows more progress on PBIs that appear near the top of the report.  
@@ -67,7 +67,7 @@ The Backlog Overview report lists all product backlog items (PBIs), both active 
   
 -   Define and update the **State** and **Remaining** fields for each task or subtask during the iteration or release.  
   
--   Define test cases and link test cases to their parent PBIs using the **Tested By** link. See [Create your tests](../../manual-test/getting-started/create-test-cases.md).  
+-   Define test cases and link test cases to their parent PBIs using the **Tested By** link. See [Create your tests](../../test/create-test-cases.md).  
   
 -   Specify the **Iteration** and **Area** paths for each PBI, task, and test case.  
   

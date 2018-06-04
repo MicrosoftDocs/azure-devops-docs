@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 3351a292-1ce5-4573-ac88-b86ad7482ac0
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2018' 
 ms.date: 10/11/2017
@@ -27,8 +28,8 @@ ms.date: 10/11/2017
 When you create a team project from Visual Studio Team Explorer, the project portal plug-in creates a SharePoint site and uploads several files contained within the process template. These files will appear under the specifies the folder structure and set of reports that will appear under the **Documents** node in Team Explorer. 
 
 By using the portal plug-in, you can define the initial document libraries, library structure, and documents of a [team project's portal](../../../../report/sharepoint-dashboards/share-information-using-the-project-portal.md). You can also include the tasks that create dashboards and Excel reports that are designed to work with the default [process templates](../../../work-items/guidance/choose-process.md).  
-  
-The tasks that you specify in the plug-in for SharePoint Products are run only when you create a SharePoint site when you [create a team project](../../../../accounts/create-team-project.md). For more information about site requirements and administration, see [SharePoint Products requirements for Team Foundation Server](../../../../tfs-server/requirements.md#sharepoint). 
+
+The tasks that you specify in the plug-in for SharePoint Products are run only when you create a SharePoint site when you [create a team project](../../../../accounts/create-team-project.md). For more information about site requirements and administration, see [SharePoint Products requirements for Team Foundation Server](/tfs/server/requirements#sharepoint). 
 
 
 > [!IMPORTANT]  

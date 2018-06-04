@@ -6,6 +6,7 @@ title: Authorize Other Services | VSTS
 description: Authorize other services to work with VSTS
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

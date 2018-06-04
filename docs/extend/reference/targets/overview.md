@@ -4,32 +4,53 @@ ms.technology: devops-ecosystem
 title: Extension Points | Extensions for VSTS
 description: Browse through the places where your extension can extend Visual Studio Online.
 ms.assetid: 007954b7-9424-4ea6-916b-8cb2f215f5c4
-ms.topic: conceptual
 ms.manager: douge
 ms.author: elbatk
 author: elbatk
-ms.date: 08/26/2016
+ms.topic: article
+monikerRange: '>= tfs-2017'
+ms.date: 05/10/2018
 ---
 
-# Extension points
+# VSTS extensibility points
 
-This reference is designed to show where extensions can contribute new capabilities into VSTS.
-An understanding of two key concepts: contributions and contribution types, is recommended.
-See [contribution model](../../develop/contributions-overview.md) for an overview.
+Extensions extend and enhance the Visual Studio Team Services (VSTS) user experience by contributing new capabilities. This guide highlights the most common extensibility points that your extension can target.
 
-<div class="alert alert-warning">
-Install the [contributions-guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) to see all the places where contributions can be made.
-If you want to see how it's implemented, look at the [source for the extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide).
+>[!NOTE]
+>To learn more about the VSTS extensibility model, see [contribution model](../../develop/contributions-overview.md) for an overview.
+
+## Other useful references
+
+The [Contributions Guide extension](https://marketplace.visualstudio.com/items/ms-samples.samples-contributions-guide) is a sample extension that you can install into your account to see the extensibility points that are available. It is recommended to install this extension into a personal or test account. The [source for this extension](https://github.com/Microsoft/vso-extension-samples/tree/master/contributions-guide) is also available.
 </div>
 
 <a name="hubs"></a>
 ## Hubs and hub groups
 
-A hub (like Backlog, Queries, or Branches) lives under (i.e. targets) a hub group. A hub group (like Code or Work) lives at a certain level (like project/team) and either in the main web or admin web areas.
+Hubs and hub groups are the primary navigation elements in VSTS. Files, Releases Backlog, and Queries are examples of hubs. A hub belongs to a hub group. The Files hub, for example, belongs to the project-level Code hub group. Hub groups can exist at the account (also known as a collection) level or the project level, but most extensions will contribute to the project level.
 
-Most extensions will either contribute a hub to an existing hub group, or a new hub group to a certain navigation level. 
+Extensions can contribute both hubs and hub groups. A common extensibility scenario is to contribute a hub to an existing hub group. For example:
 
-As an example, a hub contributed to the "Code" hub group would be declared like this in the extension's manifest:
+![sourcesshub](./vss/code/web/_img/hubs-source.png)
+
+### Targetable hub groups
+<a name="targets"></a>
+
+Here are the most common, Microsoft-provided hub groups that hubs can be contributed to:  
+
+Name                | ID                                         | Level                           | Preview
+--------------------|--------------------------------------------|---------------------------------|-----------------------------          
+Code                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sourcesshub](./vss/code/web/_img/hubs-source.png)
+Work                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![workhub](./vss/work/web/_img/hubs-workitems.png)
+Build and Release   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![build](./vss/build/web/_img/hubs-build-release.png)
+Test                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
+Project settings  | `ms.vss-web.project-admin-hub-group`       | Project                | ![projectadmin](./vss/web/_img/hubs-admin-project.png) 
+Account settings  | `ms.vss-web.collection-admin-hub-group`    | Account (or collection)      | ![projectadmin](./vss/web/_img/hubs-admin-collection.png) 
+
+
+### Example
+
+This example shows how to contribute a hub to the Code hub group:
 
 ```json
 {
@@ -50,30 +71,9 @@ As an example, a hub contributed to the "Code" hub group would be declared like 
     ]
 }
 ```
-
-In this example:
-
 * `ms.vss-web.hub` is the type of this contribution. This type is defined in the `vss-web` extension published under the `ms` publisher. This type declares optional/required properties required by contributions of this type (name, order, etc).
 * `ms.vss-code-web.code-hub-group` is the full ID of the hub group contribution this hub is targetting. This contribution is declared in the `vss-code-web` extension published under the `ms` publisher
 * `my-custom-hub` is the short ID of this contribution; `{publisherId}.{extensionId}.my-custom-hub` is the full ID
-
-This new hub is rendered under the Code hub group:
-
-![sourcesshub](./vss/code/web/_img/hubs-source.png)
-
-### Targetable hub groups
-<a name="targets" />
-
-Here are the most common, Microsoft-provided hub groups that hubs can be contributed to:  
-
-Name                | ID                                         | Level                           | Preview
---------------------|--------------------------------------------|---------------------------------|-----------------------------          
-Code                | `ms.vss-code-web.code-hub-group`           | Project/team                    | ![sourcesshub](./vss/code/web/_img/hubs-source.png)
-Work                | `ms.vss-work-web.work-hub-group`           | Project/team                    | ![workhub](./vss/work/web/_img/hubs-workitems.png)
-Build and Release   | `ms.vss-build-web.build-release-hub-group` | Project/team                    | ![build](./vss/build/web/_img/hubs-build-release.png)
-Test                | `ms.vss-test-web.test-hub-group`           | Project/team                    | ![build](./vss/test/web/_img/hubs-testmanagement.png)
-Admin               | `ms.vss-web.collection-admin-hub-group`    | Project Collection (admin)      | ![projectadmin](./vss/web/_img/hubs-admin-collection.png) 
-Admin               | `ms.vss-web.project-admin-hub-group`       | Project (admin)                 | ![projectadmin](./vss/web/_img/hubs-admin-project.png) 
 
 <a name="menus"></a>
 ## Menus and toolbars
@@ -81,11 +81,11 @@ Admin               | `ms.vss-web.project-admin-hub-group`       | Project (admi
 See [how to add an action](../../develop/add-action.md) for details on contributing an action to a menu or toolbar.
 
 <a name="menus_admin"></a>
-### Admin
+### Settings
 
 Name                              | Target ID                                           | Preview 
 ----------------------------------|-----------------------------------------------------|-------------------
-Collection overview toolbar       | `ms.vss-admin-web.collection-overview-toolbar-menu` | 
+Account (collection) overview toolbar       | `ms.vss-admin-web.collection-overview-toolbar-menu` | 
 Collection overview projects grid | `ms.vss-admin-web.projects-grid-menu`               | 
 Project overview toolbar          | `ms.vss-admin-web.project-overview-toolbar-menu`    | 
 Project overview teams grid       | `ms.vss-admin-web.teams-grid-menu`                  | 
@@ -155,10 +155,23 @@ Portfolio backlog pane          | `ms.vss-work-web.portfolio-backlog-toolpane`  
 Product backlog pane            | `ms.vss-work-web.requirement-backlog-toolpane`    | ![productBacklogPane](../../_shared/procedures/_img/backlog-pane/product-backlog-pane.png)
 Iteration backlog pane          | `ms.vss-work-web.iteration-backlog-toolpane`      | ![iterationBacklogPane](../../_shared/procedures/_img/backlog-pane/iteration-backlog-pane.png)
 
+<a name="dashboard"></a>
+## Dashboards
+
+An extension can contribute a new type of widget that can be added by users to a [dashboard](../../../report/dashboards/overview.md). Learn how to [contribute a dashboard widget](../../develop/add-dashboard-widget.md).
+
+<a name="witform"></a>
+## Work item form
+
+The work item form can be enhanced by extensions with new sections, tabs, actions, and custom field renderers. Learn how to 
+ [extend the work item form](../../develop/add-workitem-extension.md).
+
+<a name="buildtasks"></a>
+## Build and release tasks
+
+Tasks are responsible for performing work in a build or release. Learn how to [contribute a build or release task](../../develop/add-build-task.md).
+
 <a name="serviceHooks"></a>
-
 ## Service hooks
-Service hook publishers define a set of events. Subscriptions listen for the events and define actions to take based on the event. 
-Subscriptions also target consumers, which are external services that can perform their own actions, when an event occurs.
 
-Check out how to [add service hooks](../../develop/add-service-hook.md).
+A "consumer" is the service that events are sent to in Service Hooks. An extension can contribute consumer services that can be configured by a user (or programmatically) to send events to that service See [contribute a service hooks consumer](../../develop/add-service-hook.md).

@@ -2,7 +2,7 @@
 title: Update Excel Chart
 titleSuffix: TFS
 description: TFS SharePoint integration - Update an Excel chart on a SharePoint site
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge
@@ -14,7 +14,7 @@ ms.topic:
 
 # Update Excel Chart after SharePoint integration is disabled
 
-[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
 
 Excel charts continue to work, even after disabling SharePoint integration. Displaying Excel Charts on SharePoint is based on Excel, Office Online Server, and SQL Server Reporting and Analysis technologies. It doesn't require the TFS Extension for SharePoint to operate. 
 
@@ -51,5 +51,5 @@ Follow these steps to update the Data Connection string:
 Provider=MSOLAP.7;Integrated Security=SSPI;Persist Security Info=True;User ID="";Initial Catalog=Tfs_Analysis;Data Source=<**DATABASENAME**>;Location=<**SERVERNAME**>;MDX Compatibility=1;Safety Options=2;MDX Missing Member Mode=Error;Update Isolation Level=2
 ```
 
-# Referenced topics
+## Related articles
 * [Upload and refresh Excel reports in the team project portal](../upload-refresh-excel-reports.md)

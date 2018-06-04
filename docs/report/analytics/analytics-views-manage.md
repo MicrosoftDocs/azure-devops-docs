@@ -4,10 +4,10 @@ titleSuffix: VSTS
 description: View, edit, and delete an Analytics view for Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.reviewer: romik
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'vsts'
 ms.date: 04/04/2018
@@ -15,7 +15,7 @@ ms.date: 04/04/2018
 
 # Manage Analytics views 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS). 
 
@@ -77,7 +77,7 @@ To favorite a view, hover over the view in the Analytics hub and choose the ![st
 > [!div class="mx-imgBorder"]
 > ![Favorite a view](_img/editable-views/directory-favorite.png)
 
-
+<a id="manage-permissions" />
 [!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
 
 ## Delete a view

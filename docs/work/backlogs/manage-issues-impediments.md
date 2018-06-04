@@ -26,10 +26,10 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 
 In this topic you'll learn: 
 
-> [!div class="checklist"]   
+>[!div class="checklist"]      
 > * How to capture issues or impediments as a work item   
  
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]Â 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 ## Add an issue or impediment 
 

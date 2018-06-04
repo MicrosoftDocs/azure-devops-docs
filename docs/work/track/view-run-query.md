@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid:  
 monikerRange: '>= tfs-2018'
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 03/20/2018  
 ---
@@ -28,10 +29,10 @@ By default, all contributors and stakeholders can view and run all shared querie
 
 <!---
 Use this topic to learn: 
-> [!div class="checklist"]   
+>[!div class="checklist"]    
 > * About the differences between the old and new queries experience
 > * How to view all or favorited queries  
-> * How to filter a query list       
+> * How to filter a query list    
 > * How to run a query 
 -->
 
@@ -85,9 +86,9 @@ For shared queries, you can also choose to perform one of these tasks:
 You can perform most tasks for viewing and running queries from each of the queries list pages as indicated in the following table. Only queries you save under **My Queries** and have favorited show up under **My Favorites**. Only queries saved under **Shared Queries** can be favorited by a team. 
   
 
-> [!div class="mx-tdBreakAll"]  
-> |Task  |Favorites  |All  |  
-> |-------------|----------|---------|  
+> [!div class="mx-tdBreakAll"]
+> |Task |Favorites |All | 
+> |-------------|----------|---------| 
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 
 > |View all your queries or shared queries for the current team project |  | ![Checkmark](../_img/icons/checkmark.png) | 
 > |Run a query, open the context menu for a query  |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |
@@ -132,8 +133,8 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-> [!NOTE]  
-> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the team project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](../../tfs-server/admin/setup-customize-alerts.md). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> [!NOTE]
+> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the team project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](/tfs/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 ::: moniker-end
 
 ## Try this next

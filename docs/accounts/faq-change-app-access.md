@@ -1,6 +1,6 @@
 ---
-title: Change app access policies | VSTS
-description: Change app access policies for VSTS (VSTS, Visual Studio Online, VSO)
+title: Change app access policies for your VSTS account
+description: Answers to frequently asked questions (FAQs), like what apps integrate with VSTS, how personal access tokens differ from alt authentication credentials and more
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 25b0a617-6d77-44d7-80a5-bf38a541817e

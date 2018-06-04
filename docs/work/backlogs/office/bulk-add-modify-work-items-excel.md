@@ -22,7 +22,7 @@ You can also bulk add and modify work items using [Microsoft Project](create-you
 
 In this topic you'll learn:  
 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * Connect to a team project from Excel 
 > * Add or edit work items and publish your changes to TFS or VSTS
 > * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
@@ -32,7 +32,7 @@ In this topic you'll learn:
   
 
 > [!NOTE]  
->You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../manual-test/getting-started/create-test-cases.md).  
+>You can't use Office Project 365 to connect to VSTS and TFS. Also, you can't use Excel to export and import test case steps or other test artifacts. Instead, use the [bulk edit features supported via the web portal](../../../test/create-test-cases.md).  
 
 <a id="add-work-items"> </a>  
 ## Add work items
@@ -257,7 +257,7 @@ To bulk edit links, you can use these clients:
 -   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
 -   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
 
-To bulk modify test cases with shared steps, use the [web portal Test grid view](../../../manual-test/getting-started/create-test-cases.md).  
+To bulk modify test cases with shared steps, use the [web portal Test grid view](../../../test/create-test-cases.md).  
 
 To resolve publishing errors, see one of these topics:   
 
@@ -286,7 +286,7 @@ You can use many Excel features, such as cut, paste, automatic fill, format, sor
 To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
 
 > [!TIP]  
-> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  &nbsp;&nbsp;  
+> When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Any changes you make to a date format field will be overwritten with the date format used by the server.  &nbsp;&nbsp; 
 
 
 ### Web portal and Excel access
