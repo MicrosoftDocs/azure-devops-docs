@@ -2,7 +2,7 @@
 title: Test Team Productivity Excel Report 
 description: Track the overall activity of the team and individual team members in testing the product and finding and reporting bugs.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: cd899058-1200-4b1f-8fb2-4cecec8b0c05
@@ -35,7 +35,7 @@ Teams who are responsible for testing software can use the Test Team Productivit
  To modify or customize the report, you must be a member of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services. You must also be assigned or belong to a group that has been assigned the **Members** permissions in SharePoint Products for the team project. For more information, see [Grant Access to the Databases of the Data Warehouse for Team System](../admin/grant-permissions-to-reports.md).  
   
 ##  <a name="Data"></a> Data in the Reports  
- The test activity reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
+ The test activity reports are available only when the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md).  
   
  The bug activity reports are available only when the team creates bugs and starts to resolve bugs.  
   
@@ -74,9 +74,9 @@ Teams who are responsible for testing software can use the Test Team Productivit
 ##  <a name="RequiredActivities"></a> Required Activities for Tracking Test and Bug Activity  
  For the test activity reports to be useful and accurate, the team must perform the following activities:  
   
--   [Define test cases and test plans](../../manual-test/getting-started/create-test-cases.md), and assign test cases to the test plans.  
+-   [Define test cases and test plans](../../test/create-test-cases.md), and assign test cases to the test plans.  
   
--   [Run tests](../../manual-test/getting-started/run-manual-tests.md).  
+-   [Run tests](../../test/run-manual-tests.md).  
   
 -   (Optional) To filter the reports by product area and iteration, specify the **Area** and **Iteration** paths of each test case.  
   

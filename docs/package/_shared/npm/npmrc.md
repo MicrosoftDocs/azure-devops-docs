@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 For **Linux** or **Mac** users, the _Connect to feed_ dialog will generate an appropriately-formatted token that you can place into your **_.npmrc_** file with a lifespan of 90 days.
 
 >  If you want to create a token that lasts _longer than 90 days_, skip to the second method below.

@@ -1,7 +1,7 @@
 ---
 title: Release Burndown
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Shows how quickly your team has delivered backlog items and track how much work the team must still perform to complete a product release.

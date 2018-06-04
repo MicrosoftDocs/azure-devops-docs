@@ -8,6 +8,7 @@ ms.assetid: 2915605A-E3F1-4FE0-ACA5-7A4D734DB679
 ms.reviewer: stansw
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: archived
 robots: NOINDEX, NOFOLLOW
 ms.date: 11/13/2017
@@ -15,7 +16,7 @@ ms.date: 11/13/2017
 
 # Connect to VSTS with Power BI Content Pack
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 You can gain insight and analyze the progress and quality of your project by connecting Power BI to the data collected and stored for VSTS. 
 
@@ -67,7 +68,7 @@ Your first step requires you to authorize Power BI to access your VSTS account. 
 	>
 	> ![Third-party oAuth enabled](_img/Screen5.png)  <br/><br/>
 
-	> Contact your account administrator to determine if it needs to be enabled.  
+	> Contact your account administrator to determine if it needs to be enabled. �
 
 8. Successful authorization displays the following authorization dialog which allows Power BI to retrieve data from your account. Scroll down to the bottom and click **Accept**.
 

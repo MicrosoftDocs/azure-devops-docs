@@ -6,6 +6,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.manager: douge
+monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016
@@ -18,7 +19,7 @@ This page shows different samples about the modal dialog control.
 **Go to [API Reference](../../reference/client/controls/modaldialog.md) for more details.**
 
 <div class="alert alert-warning">
-When using this modal dialog, dialog overlay will cover only the area dedicated to the extension due to iframe limitations. If you want the modal dialog cover whole window, see [Using host dialog](..\using-host-dialog.md).
+When using this modal dialog, dialog overlay will cover only the area dedicated to the extension due to iframe limitations. If you want the modal dialog cover whole window, see [Using host dialog](../using-host-dialog.md).
 </div> 
 
 <a name="basic"></a>

@@ -97,7 +97,7 @@ Double-click a commit to view its file changes.
  
 ## Try this next
 
-[Set up a build](../build-release/overview.md) for your code and learn more about using Git in the [VSTS Git tutorial](tutorial/gitworkflow.md).
+[Set up a build](../pipelines/overview.md) for your code and learn more about using Git in the [VSTS Git tutorial](tutorial/gitworkflow.md).
 
 ## Troubleshooting
 
@@ -114,7 +114,7 @@ You can create a local Git repo for an existing solution by right-clicking your 
 
 ### How can I see what changes are in a commit before I pull it into my local branch?
 
-A: To see what's changed in a commit, go to the **Syncrhonization** page in Team Explorer and right-click on the commit. Select **View Commit Details**.
+A: To see what's changed in a commit, go to the **Synchronization** page in Team Explorer and right-click on the commit. Select **View Commit Details**.
 You can then right-click on any file modified by the commit and select **Compare with Previous...** to view the changes compared to the previous 
 version of the file.
 

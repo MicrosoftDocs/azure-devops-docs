@@ -8,6 +8,7 @@ ms.topic: overview
 ms.assetid:  
 ms.manager: douge
 ms.author: kaelli
+monikerRange: '>= tfs-2013'
 ms.date: 09/19/2017
 ---
 
@@ -31,9 +32,9 @@ You can request feedback using one of two tools, through the Test & Feedback ext
 -->
 
 ## How-to Guides
-- [Request feedback (Test & Feedback extension)](/vsts/manual-test/stakeholder/request-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json )
+- [Request feedback (Test & Feedback extension)](/vsts/test/request-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json )
 - [Get feedback (Work tracking)](get-feedback.md) 
-- [Provide feedback with the Test & Feedback extension](/vsts/manual-test/stakeholder/provide-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json )  
+- [Provide feedback with the Test & Feedback extension](/vsts/test/provide-stakeholder-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json )  
 - [Provide feedback with the Feedback client](give-feedback.md )  
 - [Set feedback permissions](give-permissions-feedback.md)  
 

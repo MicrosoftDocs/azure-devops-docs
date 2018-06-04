@@ -22,14 +22,14 @@ ms.date: 03/20/2018
 <!---
 > [!NOTE]    
 ><b>Feature availability: </b>Child checklists for feature and epic Kanban boards are supported from VSTS and TFS 2017 and later versions.
--->  
+--> 
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 
 And, just as with [child task checklists for backlog items](add-task-checklists.md), you can quickly define and track the progress of child items for your features or epics. Here we see several stories defined for features, both in progress and those completed.    
 
 In this topic, you'll learn: 
-> [!div class="checklist"] 
+>[!div class="checklist"]    
 > * How to add epics and features using your portfolio backlogs    
 > * Keyboard shortcuts for working with the Kanban board  
 

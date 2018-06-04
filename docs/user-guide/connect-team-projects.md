@@ -291,7 +291,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 Additional resources you may find of interest: 
 
 - [Work in web portal](work-web-portal.md)  
-- [Work in Team Explorer](work-team-explorer)  
+- [Work in Team Explorer](work-team-explorer.md)  
 - [Troubleshoot connection](troubleshoot-connection.md)  
 
 If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../git/gitquickstart.md) and [Manage bugs](../work/backlogs/manage-bugs.md).  
@@ -310,7 +310,7 @@ In addition, you can provide access to stakeholders in your organization who wil
 
 ## Configure Visual Studio to connect to TFS Proxy
 
-If your remote team uses a [TFS Proxy server](../tfs-server/install/install-proxy-setup-remote.md) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
+If your remote team uses a [TFS Proxy server](/tfs/server/install/install-proxy-setup-remote) to cache files, you can configure Visual Studio to connect through that proxy server and download files under Team Foundation version control.
 
 1.  First, make sure that you have connected to TFS as described [in the previous section](#visual-studio).
 

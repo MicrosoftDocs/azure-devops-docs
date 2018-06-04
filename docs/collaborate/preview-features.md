@@ -6,7 +6,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 ms.date: 03/23/2018 
@@ -27,7 +28,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"] 
 > |[Preview features per user](#user-level)  |[Preview features per account](#account-level)  |
 > |-------------|----------|
-> |- [Approval gates in releases](../build-release/concepts/definitions/release/approvals/index.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New release progress views](../build-release/archive/preview/new-release-summary.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../build-release/actions/build-yaml-get-started.md)<br/>- [Git Forks](../git/concepts/forks.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New release progress views](../build-release/archive/preview/new-release-summary.md) |
+> |- [Approval gates in releases](../pipelines/release/approvals/index.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New Queries Experience](../work/track/view-run-query.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../pipelines/build/yaml.md)<br/>- [Git Forks](../git/concepts/forks.md)<br/>- [New Dashboards Experience](../report/dashboards/dashboards.md)<br/>- [New release progress views](../pipelines/preview/new-release-summary.md) |
 
 <a id="user-level">  </a>
 ## Enable features for your use  
@@ -60,14 +61,14 @@ When you enable a feature at the account level, you essentially turn it on for a
 - [Combine email recipients](manage-team-notifications.md) 
 - [New Account Landing page](../user-guide/account-home-pages.md)  
 - [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)   
-- [New Release Definition Editor](../build-release/archive/preview/release-definition-editor.md) 
+- [New Release Definition Editor](../pipelines/release/define-multistage-release-process.md) 
 - [New Work Items Hub](../work/work-items/view-add-work-items.md)   
 - [NuGet.org upstream sources](../package/nuget/upstream-sources.md) 
 - [Out of the box notifications](../notifications/manage-personal-notifications.md).   
 - [Pull Request Status Policy](../git/how-to/pr-status-policy.md) 
-- [Symbol server](../build-release/symbols/index.md)  
+- [Symbol server](../pipelines/symbols/index.md)  
 - [Streamlined User Management](../accounts/add-account-users-assign-access-levels.md)   
-- [Task tool installers](../build-release/concepts/process/tasks.md#tool-installers) 
+- [Task tool installers](../pipelines/process/tasks.md#tool-installers) 
 - [Team expansion for notifications](manage-team-notifications.md)
 - [Updated package experience](../package/index.md) 
 - [Wiki](add-edit-wiki.md)  
@@ -102,7 +103,7 @@ Enable this feature for your account when you want notifications to be sent by d
 <a id="task-tool-installers">  </a>
 ### Task tool installers
 
-You can use tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on hosted agents and test and validate your app on multiple versions of a tool set. 
+You can use tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on Microsoft-hosted agents and test and validate your app on multiple versions of a tool set. 
 
 -->
 

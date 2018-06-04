@@ -1,5 +1,5 @@
 ---
-title: Buy VSTS CI/CD | VSTS
+title: Buy Continuous Integration/Continuous Delivery (CI/CD)
 description: Learn how to pay for more continuous integration and continuous delivery (CI/CD) concurrency using VSTS (Visual Studio Online, VSO, VSTS)
 ms.prod: devops
 ms.technology: devops-billing
@@ -126,6 +126,6 @@ When your team's needs for build or release capacity change, you can change the 
 
 ## Related articles
 
-* [VSTS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-ts.md)
-* [TFS: CI/CD concepts](../build-release/concepts/licensing/concurrent-pipelines-tfs.md)
+* [VSTS: CI/CD concepts](../pipelines/licensing/concurrent-jobs-vsts.md)
+* [TFS: CI/CD concepts](../pipelines/licensing/concurrent-pipelines-tfs.md)
 * [Pricing for VSTS CI/CD](https://www.visualstudio.com/team-services/pricing)

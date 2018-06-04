@@ -28,8 +28,8 @@
   items:
   - name: Add subscription user to account
     href: add-basic-or-vs-subscription-users.md
-  - name: External users
-    href: External-users.md
+  - name: Resources granted to project members
+    href: resources-granted-to-project-members.md
 - name: How-to guides
   items:
   - name: Manage your account
@@ -110,8 +110,8 @@
       href: migrate-to-group-based-resource-management-in-VSTS.md
     - name: Remove direct assignments
       href: remove-direct-assignments.md
-  - name: Troubleshooting
-    items:
+- name: Troubleshooting
+  items:
   - name: Create account
     href: faq-create-account.md
   - name: Add and delete account users

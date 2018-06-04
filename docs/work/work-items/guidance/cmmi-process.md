@@ -1,5 +1,5 @@
 ---
-title: CMMI process template
+title: CMMI process template artifacts
 titleSuffix: VSTS & TFS  
 description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server  
 ms.technology: devops-agile
@@ -8,6 +8,8 @@ ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
@@ -115,8 +117,8 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.    
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | TFS version | CMMI name | Major version |
+> [!div class="mx-tdCol2BreakAll"]
+> |TFS version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
 > | TFS 2018 | CMMI | 16 |
 > | TFS 2017 | CMMI | 15 |

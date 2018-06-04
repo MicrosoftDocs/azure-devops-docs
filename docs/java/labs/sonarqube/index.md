@@ -1,10 +1,13 @@
 ---
 title: Configuring SonarQube for VSTS for a Java project 
 description: Tutorial lab for configuring SonarQube with Java build using Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual 
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---

@@ -43,9 +43,11 @@
   - name: Azure Active Directory groups (VSTS)
     href: ../accounts/access-with-azure-ad.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
   - name: Active Directory groups (TFS) 
-    href: ../tfs-server/admin/setup-ad-groups.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
+    href: /tfs/server/admin/setup-ad-groups?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
   - name: Security glossary 
-    href: security-glossary.md  
+    href: security-glossary.md
+  - name: Resources granted to project members
+    href: ../accounts/resources-granted-to-project-members.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json    
 - name: How-to Guides
   items:
   - name: Add users to your account (VSTS)
@@ -59,7 +61,7 @@
     - name: Set Git branch permissions
       href: ../git/branch-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
     - name: Set build and release permissions
-      href: ../build-release/set-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+      href: ../pipelines/policies/set-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
     - name: Set package feed permissions
       href: ../package/feeds/feed-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
     - name: Set permissions and access for work tracking
@@ -86,12 +88,24 @@
   items:
   - name: Resolve connection issues
     href: ../user-guide/troubleshoot-connection.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+  - name: Add and delete account users
+    href: ../accounts/faq-add-delete-users.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
+  - name: Add team members
+    href: ../accounts/faq-add-team-members.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
+  - name: Access with Azure AD
+    href: ../accounts/faq-azure-access.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
+  - name: Change app access
+    href: ../accounts/faq-change-app-access.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
+  - name: Add administrators
+    href: ../accounts/faq-add-administrators.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
+  - name: Manage group-based licensing
+    href: ../accounts/faq-manage-group-based-licensing.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
   - name: "TF31002: Unable to connect"
     href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json   
   - name: Network connections
     href: faq-network-connections.md
   - name: Trace permissions
-    href: faq-trace-permissions.md     
+    href: faq-trace-permissions.md  
 - name: Reference
   items:
   - name: Default permission and access assignments
@@ -107,7 +121,7 @@
   - name: VSTS data protection overview
     href: ../articles/team-services-security-whitepaper.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: TFSSecurity command (TFS)
-    href: ../tfs-server/command-line/tfssecurity-cmd.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
+    href: /tfs/server/ref/command-line/tfssecurity-cmd?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
   - name: REST API, Permissions
     href: https://docs.microsoft.com/en-us/rest/api/vsts/security/permissions 
 - name: Resources
@@ -115,7 +129,7 @@
   - name: Account Management (VSTS)
     href: ../accounts/index.md
   - name: Server Administration (TFS) 
-    href: ../tfs-server/index.md
+    href: /tfs/server/index
   - name: Authentication guidance for REST APIs
     href: ../integrate/get-started/authentication/authentication-guidance.md
   - name: Security REST APIs

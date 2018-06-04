@@ -1,6 +1,6 @@
 ---
 title: Add more VSTS users with Basic features or Visual Studio subscriptions
-description: Add more VSTS users with Basic features or Visual Studio subscriptions
+description: Learn how to pay for additional users if you have more than 5 users who need Basic features and assign VS subscriptions
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: f36c2fbd-7683-4620-9636-97144c7779f2

@@ -1,13 +1,14 @@
 ---
 title: Upload reports to a team project
 titleSuffix: TFS
-description: Manually upload reports to a team project hosted on an on-premises Team Foundation Server  
+description: Manually upload SQL Server reports to a team project hosted on an on-premises Team Foundation Server  
 ms.assetid: 4CA8789D-9F9D-4D78-9F03-64F4E884D117  
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 03/02/2017
 ---
 
@@ -42,7 +43,7 @@ You use the **TFSConfig addProjectReports** command line tool to upload reports.
 
 1. Verify that you have the following tools, configurations, and permissions. 
 
-	* If you aren't an administrator for the team project, [get added now](../../tfs-server/add-administrator-tfs.md).  
+	* If you aren't an administrator for the team project, [get added now](/tfs/server/admin/add-administrator-tfs).  
 	* If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).  
 	* If you haven't installed [Team Foundation Server](https://www.visualstudio.com/downloads/download-visual-studio-vs), install it now. This is the only way to obtain the latest version of the default process templates, which contains the latest version of the reports.  
 
@@ -73,7 +74,7 @@ You use the **tfpt** command line tool that TFS Power Tools provides.
 
 	* If you haven't installed TFS power tools, [install them now](http://go.microsoft.com/fwlink/?LinkId=320602).  
 	* If you haven't installed Visual Studio, [install a version of them now](https://www.visualstudio.com/downloads/download-visual-studio-vs). You can download Visual Studio Community for free. Each version of Visual Studio installs Team Explorer, which must be present on the same machine where you run the **tfpt** command line tool.  
-	* If you aren't an administrator for the team project, [get added now](../../tfs-server/add-administrator-tfs.md).  
+	* If you aren't an administrator for the team project, [get added now](/tfs/server/admin/add-administrator-tfs).  
 	* If you haven't been added to the Content Manager or Team Foundation Content Manager role for SQL Server Reporting Services, [get added now](grant-permissions-to-reports.md).  
 	* If you haven't installed [Team Foundation Server](https://www.visualstudio.com/downloads/download-visual-studio-vs), install it now. This is the only way to obtain the latest version of the default process templates, which contains the latest version of the reports.  
 

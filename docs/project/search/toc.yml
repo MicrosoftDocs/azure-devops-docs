@@ -1,0 +1,34 @@
+- name: Search
+  href: index.md
+- name: Overview
+  items:
+  - name: About Search
+    href: overview.md
+- name: Quickstarts
+  items:
+  - name: Search code
+    href: code-search.md
+  - name: Search work items
+    href: work-item-search.md
+- name: How-to Guides
+  items:
+  - name: Use Code Search
+    href: advanced-code-search-syntax.md
+  - name: Use Work Item Search
+    href: advanced-work-item-search-syntax.md
+  - name: Administer Search
+    href: administration.md
+- name: Resources
+  items:
+  - name: Adhoc vs managed work item queries
+    href: ../../work/track/adhoc-vs-managed-queries.md?toc=/vsts/project/search/toc.json&bc=/vsts/project/search/breadcrumb/toc.json
+  - name: Code Search Video
+    href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
+  - name: Code Search on Marketplace
+    href: https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search
+  - name: Code Search blog posts
+    href: https://social.msdn.microsoft.com/Search/en-US?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5
+  - name: Work Item Search blog posts
+    href: https://social.msdn.microsoft.com/Search/en-US?query=work%20item%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5
+  - name: Search your Wiki
+    href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/

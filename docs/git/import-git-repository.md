@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
-ms.date: 03/28/2018
+ms.date: 04/25/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -18,6 +18,26 @@ monikerRange: '>= tfs-2013'
 
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your VSTS project.
 
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+>[!IMPORTANT]
+>The **Import repository** feature is currently not working if you are importing a GitHub repo using TFS 2017.1 to TFS 2018.1. For more information about this issue, see [Weak cryptographic standards removal notice](https://githubengineering.com/crypto-removal-notice/) and [Unable to connect to GitHub due to TLS 1.2 only change](https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html)
+
+There are several workarounds to this issue:
+* You can import a GitHub repo into TFS using the steps in [Manually import a repo](#manually-import-a-repo).
+* You can set a machine-wide .NET registry key on your Application Tier servers to enable them to use all available TLS protocol versions. After setting these registry keys, you will need to recycle the TFS application pools (or restart the servers) for the settings to be activated. Open an elevated command prompt and run the following commands to set the registry keys.
+ 
+     ```
+      reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:64
+      reg add HKLM\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f /reg:32
+     ```
+
+* On your Application Tier servers, you can modify the web.config file to change the targetFramework from `<httpRuntime targetFramework="4.5"` to `<httpRuntime targetFramework="4.6"`.
+
+This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 and higher](/visualstudio/releasenotes/tfs2018-update2).
+
+::: moniker-end
+
 ## Prerequisites
 
 * A VSTS account. If you don't have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
@@ -26,19 +46,6 @@ This guide shows you how to import an existing Git repo from GitHub, Bitbucket, 
 ::: moniker range=">= tfs-2017"
 
 ## Import into a new repo
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017 < vsts"
-
->[!IMPORTANT]
->The **Import repository** feature is currently not working if you are importing a GitHub repo using TFS. If you are using on-premises TFS, you can still import a GitHub repo using the steps in [Manually import a repo](#manually-import-a-repo). For more information, see [Weak cryptographic standards removal notice](https://githubengineering.com/crypto-removal-notice/) and [Unable to connect to GitHub due to TLS 1.2 only change](https://developercommunity.visualstudio.com/content/problem/201457/unable-to-connect-to-github-due-to-tls-12-only-cha.html). 
-> 
->This issue is scheduled to be fixed in TFS 2018.2. 
-
-::: moniker-end
-
-::: moniker range=">= tfs-2017"
 
 From the repo drop-down, select **Import repository**. 
 
@@ -137,7 +144,7 @@ You can migrate code from an existing TFVC repository to a new Git repository wi
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [New to Git repos? Learn more](https://www.visualstudio.com/learn/set-up-a-git-repository/)
+> [New to Git repos? Learn more](/azure/devops/git/set-up-a-git-repository)
 
 > [!div class="nextstepaction"]
 > [Learn more about using Git in the Git tutorial](tutorial/gitworkflow.md)

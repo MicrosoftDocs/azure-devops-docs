@@ -13,12 +13,12 @@ ms.date: 03/20/2018
 
 # Track progress by creating status and trend query-based charts 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../work/track/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
 
 >[!NOTE]  
->For examples of queries based on numeric fields, see [Query by numeric fields](../../work/track/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../manual-test/getting-started/track-test-status.md).  
+>For examples of queries based on numeric fields, see [Query by numeric fields](../../work/track/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../test/track-test-status.md).  
 
 For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different trend views of the active bugs over the last two weeks.  
 
@@ -149,7 +149,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 Now you know how to create status and trend charts for work items. A few things to keep in mind...
 
-- To create similar charts for tests, see [Track your test results](../../manual-test/getting-started/track-test-status.md)    
+- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)    
 - Charts you create for queries that are saved under Shared Queries are viewable by all team members and can be added to team dashboards or pinned to a team homepage   
 - Charts that you create for queries under your My Queries folder are visible only to you   
 - You can copy and email the URL of any chart page to share it with a team member 
@@ -160,7 +160,7 @@ Also, from the web portal, you can view the following charts:
 - [Cumulative flow diagram](cumulative-flow.md)  
 - [Team velocity](team-velocity.md)  
 - [Sprint burndown charts](../../work/scrum/sprint-burndown.md)  
-- [Test progress and test results](../../manual-test/getting-started/track-test-status.md)  
+- [Test progress and test results](../../test/track-test-status.md)  
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
 - [Widget catalog charts](widget-catalog.md)    
 

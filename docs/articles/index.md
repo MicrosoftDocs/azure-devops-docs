@@ -26,29 +26,28 @@ Here you'll find more resources to support your development efforts with Visual 
 
 ## Version Control
 
-*   [Effective feature isolation on TFVC](effective-feature-isolation-on-tfvc.md)
-*   [Effective TFVC branching strategies for DevOps](effective-tfvc-branching-strategies-for-devops.md)
 *   [Git lost my changes?](git-log-history-simplification.md)
-*   [Move Git repos between team projects](move-git-repos-between-team-projects.md)
+*   [Manage branching strategies in TFVC for DevOps](effective-tfvc-branching-strategies-for-devops.md)
+*   [Manage feature isolation in TFVC](effective-feature-isolation-on-tfvc.md)
+*   [Migrate from Subversion (SVN) to Git](perform-migration-from-svn-to-git.md)
+*   [Move Git repositories between Team Projects](move-git-repos-between-team-projects.md)
 *   [Remove large binaries from Git](remove-binaries.md)
-*   [Migrate from Subversion to Git](perform-migration-from-svn-to-git.md)
 
 ##	DevOps: Continuous integration and continuous delivery
 
-*   [Phase the features of your application with feature flags](phase-features-with-feature-flags.md)
+*   [Add Continuous Security Validation to your CICD Pipeline](security-validation-cicd-pipeline.md)
 *   [Build and Deployment Automation Case Study](build-deployment-best-practices.md)
-*   [Phase the roll-out of your application through rings](phase-rollout-with-rings.md)
-*   [Adding Continuous Security Validation to your CI/CD Pipeline](security-validation-cicd-pipeline.md)
+*   [Progressively expose your features using feature flags](phase-features-with-feature-flags.md)
+*   [Progressively expose your releases using deployment rings](phase-rollout-with-rings.md)
 
 ##	Security
 
 *   [VSTS Data Protection](team-services-security-whitepaper.md)
  
-
 ## Journey articles
 
 Learn more about how we use DevOps and Agile practices at Microsoft, best practices research, lessons learned, and more.
 
-*   [Agile](https://www.visualstudio.com/learn/what-is-agile/)
-*   [DevOps](https://www.visualstudio.com/learn/what-is-devops/)
-*   [Git at Scale](https://www.visualstudio.com/learn/git-at-scale/)
+*   [Agile](/azure/devops/agile/what-is-agile)
+*   [DevOps](/azure/devops/what-is-devops)
+*   [Git at Scale](/azure/devops/git/git-at-scale)

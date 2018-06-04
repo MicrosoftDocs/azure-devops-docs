@@ -1,10 +1,9 @@
 ---
 title: Configure Bundown/Burnup widgets
 titleSuffix: VSTS   
-description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams 
+description: Configure a Burndown or Burnup widget that you add to a dashboard to track progress across one or more teams in Visual Studio Team Services
 ms.technology: devops-analytics
 ms.prod: devops
-ms.assetid: 
 ms.topic: tutorial
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
@@ -108,6 +107,9 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	This option is presented for the PBI Backlog for Scrum projects, and the Requirements backlog for CMMI projects.   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-backlog.png)  
 
+   > [!NOTE]   
+   > If your project has been customized using a [Hosted XML process](../../work/customize/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
+   
 	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../work/customize/process/customize-process-wit.md).   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
 

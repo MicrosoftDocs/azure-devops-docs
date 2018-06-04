@@ -1,6 +1,6 @@
 ---
 title: Connect VSTS account to Azure Active Directory (Azure AD)
-description: How to connect VSTS account to Azure Active Directory (Azure AD)(AAD)
+description: Learn how to connect your VSTS account to your organization's directory if you have the same email address, Microsoft Account (MSA)
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/09/2018
+ms.date: 05/04/2018
 monikerRange: 'vsts'
 ---
 
@@ -100,7 +100,7 @@ While there is no downtime, users will be affected by this change, so it's best 
 
 1. Ensure the following about the user performing the connection. This user:
 
-    * Exists in the target Azure AD tenant as a guest or member.
+    * Exists in the target Azure AD tenant as a member.
     * Is an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/faq-change-account-ownership#find-owner-pca).
     * Is not using the Microsoft account identity that matches the Azure AD identity, for example, the Microsoft account you currently use is JamalHarnett@fabrikam.com and the Azure AD identity you will use after connecting is also JamalHarnett@fabrikam.com. You must use a single identity that spans both applications (MSA that's in the target Azure AD tenant), rather than two separate identities using the same email.
 

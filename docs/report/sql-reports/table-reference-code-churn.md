@@ -1,7 +1,7 @@
 ---
 title: Code Churn tables 
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about the changes in the code that is under version control  

@@ -1,5 +1,5 @@
 ---
-title: Arrange requirements into a product plan
+title: CMMI process guidance, Arrange requirements in a product plan
 titleSuffix: VSTS & TFS
 description: Obtain and arrange a plan, starting from a set of requirements - Team Foundation Server (TFS)
 ms.prod: devops
@@ -8,6 +8,7 @@ ms.assetid: 83ade2b1-dd94-489e-bf6d-42391eea6171
 ms.topic: conceptual
 ms.author: kaelli  author: KathrynEE 
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017 
 ---
 
@@ -38,7 +39,7 @@ After you analyze your customer requirements sufficiently to understand what the
   
 -   You can represent these requirements as work items of type requirement, with the Requirement Type field set to Scenario or Quality of Service. For more information, see [Develop requirements](guidance-develop-requirements.md).  
   
--   These requirement work items should be linked to system tests so that you can ensure that all the requirements are tested. See [Create a test plan](../../../../manual-test/getting-started/create-a-test-plan.md).  
+-   These requirement work items should be linked to system tests so that you can ensure that all the requirements are tested. See [Create a test plan](../../../../test/create-a-test-plan.md).  
   
 -   [View the backlog](../../../backlogs/create-your-backlog.md) or open the Customer Requirement query to list these requirement work items.  
   

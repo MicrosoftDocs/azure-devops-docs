@@ -8,6 +8,7 @@ ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177
 ms.reviewer: jozimm
 ms.manager: douge
 ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 2/18/2018
 ---
@@ -15,7 +16,7 @@ ms.date: 2/18/2018
 # Data model for the Analytics Service  
 
 
-[!INCLUDEÂ [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 The Analytics service data model for Visual Studio Team Services (VSTS) consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
 
@@ -24,7 +25,7 @@ The Analytics service data model for Visual Studio Team Services (VSTS) consists
 ##Entities  
 
 >[!NOTE]  
->Entity sets are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata``` Â 
+>Entity sets are described in OData metadata, and vary by VSTS project. A complete list of entity sets, entity types, and properties can be discovered by requesting the OData metadata for your project: ```https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata```  
 
 The data model contains the following entity sets:  
 
@@ -34,10 +35,10 @@ The data model contains the following entity sets:
 |Iterations | The work item iteration paths, with properties for grouping and filtering by iteration hierarchy |  
 |BoardLocations | The Kanban board cell locations, as identified by board column, lane, and split - includes historic board settings|  
 |Dates | The dates used to filter and group other entities using relationships |  
-|Projects | All VSTS projects|
+|Projects | All projects defined for the account or collection |
 |Process | Backlog information - used to expand or filter work items and work item types|  
-|Tags | All work item tags for each project|  
-|Teams | All VSTS teams|  
+|Tags | All work item tags for each project |  
+|Teams | All teams defined for the project (To add a team, see [Add teams and team members](../../work/scale/multiple-teams.md)) |  
 |Users | User information - used to expand or filter various work item properties (e.g. Assigned To, Created By)|  
 |WorkItems | The current state of work items|  
 |WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  
@@ -68,7 +69,7 @@ Some navigation properties result in a single entity, while others result in a c
 
 ##Entity Properties
 
-The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three propertiesâ€“CreatedDate, CreatedDateSK, CreatedOn-- show that the same value is often expressed in multiple properties, each designed for different scenarios.
+The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties€“CreatedDate, CreatedDateSK, CreatedOn-- show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 | Property | Type | Description|  
 |--------|------------|------------|  

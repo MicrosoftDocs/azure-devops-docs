@@ -1,21 +1,22 @@
 ---
 title:  Analytics Service widgets 
 titleSuffix: VSTS
-description: Description of widgets that derive data from the Analytics Service and how they relate to each other
+description: Learn about the widgets generated from data from the Analytics Service that you can add to a dashboard in Visual Studio Team Services 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.assetid: 
 ms.manager: douge
 ms.reviewer: romik
 ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
 
 # Widgets based on the Analytics Service
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 The Analytics extension includes several dashboard widgets that take advantage of the power of the Analytics Service. Once you install the Analytics extension you can add Widgets to your dashboard. Using widgets, you and your team can gain valuable insights into the health and status of your work. 
 

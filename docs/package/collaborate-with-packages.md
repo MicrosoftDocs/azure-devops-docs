@@ -8,7 +8,8 @@ ms.manager: douge
 ms.author: elbatk
 author: elbatk
 ms.date: 09/29/2016
-ms.topic: conceptual
+ms.topic: reference
+monikerRange: '>= tfs-2017'
 ---
 
 # Collaborate more and build faster with packages

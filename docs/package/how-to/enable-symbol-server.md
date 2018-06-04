@@ -4,6 +4,7 @@ description: Enable the Symbol Server preview for Package Management in Visual S
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 8cdfb55b-62e2-4420-be9a-021896bbe5a2
+ms.manager: douge
 ms.author: elbatk
 author: elbatk
 ms.topic: conceptual

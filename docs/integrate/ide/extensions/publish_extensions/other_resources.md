@@ -6,6 +6,7 @@ title: Visual Studio Marketplace
 description: Describes the new Visual Studio Marketplace
 ms.assetid: 87B662CC-6003-4B4A-9617-05ECBB6AC055
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/04/2016

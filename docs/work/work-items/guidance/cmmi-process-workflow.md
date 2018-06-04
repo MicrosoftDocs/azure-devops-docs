@@ -1,5 +1,5 @@
 ---
-title: CMMI process work item and workflow
+title: CMMI process work item types & workflow
 titleSuffix: VSTS & TFS
 description: How to guide for using the CMMI process  work item types and workflow to track work in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
@@ -8,6 +8,7 @@ ms.assetid: b5b7b488-3248-485c-b896-a2c6f824a219
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
+monikerRange: '>= tfs-2013'
 ms.date: 12/19/2017
 ---
 
@@ -403,7 +404,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 
 ### Test requirements
 
-From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../manual-test/getting-started/create-test-cases.md).  Or, you can link a requirement to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
+From the web portal or Test Manager, you can [create test cases that automatically link to a requirement or bug](../../../test/create-test-cases.md).  Or, you can link a requirement to a test case from the ![Links tab icon](../../backlogs/_img/icon-links-tab-wi.png) (links tab). 
 
 ![Select the test suite and add a test case](_img/IC793453.png)  
 

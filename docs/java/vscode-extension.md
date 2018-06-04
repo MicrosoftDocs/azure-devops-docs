@@ -1,10 +1,13 @@
 ---
 title: VS Code extension for Java development with VSTS
 description: Learn how to use the VS Code extension for Java development with VSTS
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.topic: conceptual
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 04/12/2018
 monikerRange: '>= tfs-2015'
 ---
@@ -104,7 +107,7 @@ Check out the [README.md in the GitHub repository](https://github.com/Microsoft/
 ## Frequently asked questions (FAQ)
 
 **Q: What platforms does the extension run on?**
-**A:** The extension runs on Linux, macOS, and Windows (we've tested on RedHat, Ubuntu, and CentOS).
+**A:** The extension runs on Linux, macOS, and Windows (we've tested on Red Hat, Ubuntu, and CentOS).
 
 **Q: Does the Visual Studio Code extension support Team Foundation Server (on-premises)?**
 **A:** Yes! With version 1.103.0 the extension supports Team Foundation Server 2015 Update 2 and later.

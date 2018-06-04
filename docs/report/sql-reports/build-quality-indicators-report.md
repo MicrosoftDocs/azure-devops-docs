@@ -1,13 +1,15 @@
 ---
 title: Build Quality Indicators Report
 titleSuffix: TFS 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Shows test coverage, code churn, and bug counts for a specified build definition - Team Foundation Server
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 10/17/17
 ---
 
@@ -19,7 +21,10 @@ ms.date: 10/17/17
 
 The Build Quality Indicators report shows test coverage, code churn, and bug counts for a specified build definition. You can use this report to help determine how close portions of the code are to release quality.  
   
- Ideally, test rates, bugs, and code churn would all produce the same picture, but they often do not. When you find a discrepancy, you can use the Bug Quality Indicators report to examine the details of a specific build and data series. Because this report combines test results, code coverage from testing, code churn, and bugs, you can view many perspectives at the same time.  
+> [!IMPORTANT]  
+> This report is only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
+
+Ideally, test rates, bugs, and code churn would all produce the same picture, but they often do not. When you find a discrepancy, you can use the Bug Quality Indicators report to examine the details of a specific build and data series. Because this report combines test results, code coverage from testing, code churn, and bugs, you can view many perspectives at the same time.  
   
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
@@ -70,21 +75,21 @@ The Build Quality Indicators report shows test coverage, code churn, and bug cou
   
 -   **Configure a build system**. To use Team Foundation Build, you must set up a build system.  
   
-     For more information, see [Build and Release agents](../../build-release/concepts/agents/agents.md). 
+     For more information, see [Build and Release agents](../../pipelines/agents/agents.md). 
   
 -   **Create build definitions**. You can create several build definitions, each of which can be run to produce code for a different platform. Also, you can run each build for a different configuration.  
   
-     For more information, see [Get started with CI/CD](../../build-release/actions/ci-cd-part-1.md).
+     For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
   
 -   **Define tests to run automatically as part of the build**. As part of the build definition, you can define tests to run as part of the build or to fail if the tests fail.  
   
-     For more information, see [Set up continuous testing for your builds](../../build-release/test/set-up-continuous-testing-builds.md).
+     For more information, see [Set up continuous testing for your builds](../../pipelines/test/set-up-continuous-testing-builds.md).
   
 -   **Configure tests to gather code coverage data**. For code coverage data to appear in the report, team members must instrument tests to gather that data.  
   
 -   **Run builds regularly**. You can run builds at set intervals or after every check-in. You can create regular builds when you use the schedule trigger.  
   
-     For more information, see [Build triggers](../../build-release/concepts/definitions/build/triggers.md).
+     For more information, see [Build triggers](../../pipelines/build/triggers.md).
   
     > [!NOTE]
     >  Although a team member can manually rate a build by using Build Explorer, this rating is not reflected in the Build Quality Indicators report. The build rating appears in the Build Summary report. For more information, see [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) and [Build Summary](build-summary-report.md).  

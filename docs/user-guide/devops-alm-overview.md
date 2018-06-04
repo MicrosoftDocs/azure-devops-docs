@@ -43,7 +43,7 @@ Choose VSTS when you want quick setup, maintenance-free operations, easy collabo
 
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
-[![Install TFS](_img/overview/tfs-setup-1.png)](../tfs-server/install/single-server.md)[![Create a team project](_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](../tfs-server/admin/backup/back-up-restore-tfs.md)   
+[![Install TFS](_img/overview/tfs-setup-1.png)](/tfs/server/install/single-server)[![Create a team project](_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/tfs/server/admin/backup/back-up-restore-tfs)   
  
 <a id="add-code">  </a>
 ## Develop code using your IDE of choice 
@@ -75,7 +75,7 @@ You can use TFVC to scale from small to large projects, and by using server work
 Software development teams often rely on re-using libraries or providing libraries for others to re-use. Package management supports code sharing as binary components across organizations and within teams. With it, you can build projects to produce packages and update projects that consume updated packages. Our package management service enables plugging in existing package management services you already use, such as local NuGet servers for IP protection, NuGet, MyGet, or Artifactory.  
 
 - [Package Management overview](../package/overview.md) 
-- [Search across all your code](../search/overview.md)
+- [Search across all your code](../project/search/overview.md)
 
 
 Code Search provides a comprehensive solution to all your code exploration and troubleshooting needs. From discovering examples of an API's implementation to searching for error text, Code Search offers a fast and powerful way to find code. Search across one or more projects, with semantic ranking and rich search results to ensure you find what you need and can focus in to understand your code. Code Search lets you filter your results based on code types such as definitions, comments, and references; filter by path, file extension, or repository; and use logical operators such as AND, OR, NOT to refine your query and get the results you need.  
@@ -95,7 +95,7 @@ You also gain access to a [rich set of customization capabilities](../work/custo
 
 Help your team continuously deliver software at a faster pace and with lower risk, while improving efficiency and collaboration between all teams that participate in release processes. Set up continuous integration builds for your app that run with every check in. Multi-platform build agents support Android, iOS, Java, .NET, and other applications. Easily load test your apps and provision test environments. Track when the quality is sufficient to release to the customer.  
 
-[![Build your software](_img/overview/ov-devops-build.png)](../build-release/tasks/index.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](../build-release/test/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](../build-release/apps/cd/deploy-webdeploy-webapps.md)   
+[![Build your software](_img/overview/ov-devops-build.png)](../pipelines/tasks/index.md)[![Set up continuous testing](_img/overview/ov-devops-test.png)](../pipelines/test/set-up-continuous-testing-builds.md)[![Create a release](_img/overview/ov-devops-release.png)](../pipelines/apps/cd/deploy-webdeploy-webapps.md)   
 
 <!---
 
@@ -104,7 +104,7 @@ Agile methodologies speed up the development and test cycle and make sure that y
 No matter what platform you target or language you use, you can simplify the continuous integration of your apps that build on Linux, macOS, or Windows. And, you can seamless integrate information about your builds with work, code, test, and release.  
 -->
 
-In addition to continuous integration testing, you can create [test plans](../manual-test/getting-started/create-a-test-plan.md), [perform manual testing](../manual-test/index.md), and [run unit tests](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios). 
+In addition to continuous integration testing, you can create [test plans](../test/create-a-test-plan.md), [perform manual testing](../test/index.md), and [run unit tests](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios). 
 
 Release Management helps you automate the deployment and testing of your software in multiple environments. With it, you can either fully automate the delivery of your software all the way to production, or set up semi-automated processes with approvals and on-demand deployments.  
 
@@ -131,7 +131,7 @@ Other topics of interest:
 
 ### TFS updates
 
-- [What's new](../tfs-server/whats-new.md)
+- [What's new](/tfs/server/whats-new)
 - [Migrate data from TFS to VSTS](../articles/migrate-to-vsts-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>

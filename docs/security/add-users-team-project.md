@@ -5,8 +5,8 @@ ms.assetid: 3cfefdd2-b161-4e04-8dc0-e2deeac50262
 ms.prod: devops
 ms.technology: devops-security
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 03/20/2018
 monikerRange: '>= tfs-2013'
@@ -130,7 +130,7 @@ learn how from these topics:
 
 * [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
 * [Set Git branch permissions](../git/branch-permissions.md)
-* [Set build and release permissions](../build-release/set-permissions.md)
+* [Set build and release permissions](../pipelines/policies/set-permissions.md)
 * [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
 
 To view permissions for yourself or another user, see [View permissions](../security/view-permissions.md).

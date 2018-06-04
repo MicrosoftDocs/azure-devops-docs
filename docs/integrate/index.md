@@ -6,6 +6,7 @@ title: Integrating custom apps and third party services with VSTS and Team Found
 description: Overview of integrating with VSTS and Team Foundation Server
 ms.assetid: c9b97ad7-ffd8-4657-8322-74f764eec5c9
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.author: elbatk
 author: elbatk
 ms.date: 08/23/2016

@@ -1,20 +1,22 @@
 ---
 title: Create rollup charts 
 titleSuffix: VSTS
-description: Create rollup charts in Power BI from data collected for Visual Studio Team Services (VSTS)   
+description: Create rollup charts in Power BI from Analytics Service data collected for Visual Studio Team Services     
 ms.assetid: 81223001-126D-4856-B1B3-7231013089F2  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: douge
 ms.author: kaelli
 ms.topic: archived
+author: KathrynEE
 robots: NOINDEX, NOFOLLOW
+monikerRange: 'vsts'
 ms.date: 08/04/2017
 ---
 
 # Create rollup charts
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 
 [!INCLUDE [temp](../_shared/content-pack-deprecation.md)]
@@ -28,7 +30,7 @@ Natively, VSTS provides rollup of Remaining Work for tasks on the Task board.
 With Power BI, you can create additional rollup charts for those [supported rollup paths](#supported-rollup-paths).
 
 
-##Rollup count of tasks per user story  
+## Rollup count of tasks per user story  
 
 Here's an example that shows the number of child tasks and their state for each user story. Unparented tasks are also listed.  
 
@@ -40,7 +42,7 @@ You can create this type of rollup chart by following steps ![step 1](../_img/ic
 Optionally, can also add different measures such as Completed Work or Remaining work to see that information instead of just counts.
 
 <a id="basic-steps"></a>
-##Basic steps to create a rollup chart  
+## Basic steps to create a rollup chart  
 
 The following image shows the basic steps to create a rollup chart. In step ![step 4](../_img/icons/step4.png), you choose the parent and child work item types that will filter the rollup. For example, by choosing Parent User Stories>User Story and Work Items/Task, you get a table that will rollup the count of Tasks that are children of each user story.   
 
@@ -58,7 +60,8 @@ You can create Power BI rollup charts for data stored in VSTS. To access similar
 
 <a id="supported-rollup-paths"></a>
 
-##Supported rollup paths  
+## Supported rollup paths
+
 The VSTS data model supports rollup along these pre-defined paths.  
 - **Agile process:** Epics > Features > User Stories > Bugs > Tasks
 
@@ -74,10 +77,10 @@ Rollups within any one of these chains will work as well. For example, child Tas
 Rollup doesn't support those parent-child relationships that don't follow this structure. For example, rollup isn't supported for parent Risks and child tasks (CMMI process). Also, the rollup data model doesn't support custom parent-child links and hierarchies.
 
 > [!TIP]    
-> Use the **Parent...** dimensions only for hierarchical charts. Use the **Work Items** dimension for all other standard charts.   
+> Use the **Parent...** dimensions only for hierarchical charts. Use the **Work Items** dimension for all other standard charts.  �
 
  
-##Apply State filter 
+## Apply State filter 
 
 To focus the rollup chart to count only active or in progress tasks from, add the state filter and check those values associated with being Closed, Completed, Cut, or Done. For example: 
 

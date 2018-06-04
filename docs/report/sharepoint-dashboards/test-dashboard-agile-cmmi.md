@@ -1,13 +1,16 @@
 ---
 title: Test dashboard (Agile and CMMI) | TFS
 description: Use test dashboard to monitor test activities, report on progress and find gaps in test coverage.
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
+ms.topic: conceptual
 ms.assetid: 701fd381-fff0-4508-9316-852a45b6afb4
 manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
+
 # Test dashboard (Agile and CMMI)
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
@@ -18,7 +21,7 @@ By using the test dashboard, you can monitor test activities, report on progress
   
  **Requirements**  
   
--   The **Test Plan Progress**, **Test Case Readiness**, **User Story Test Status**, **Requirement Test Status**, and **Test Activity** reports are available only when the team creates test plans and runs tests as described in [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
+-   The **Test Plan Progress**, **Test Case Readiness**, **User Story Test Status**, **Requirement Test Status**, and **Test Activity** reports are available only when the team creates test plans and runs tests as described in [Plan your tests](../../test/create-test-cases.md).  
   
 -   Burndown, progress, trend charts, and reports ![Step 1](_img/procguid_1.png "ProcGuid_1") through ![Step 5](_img/procguid_6.png "ProcGuid_6") do not appear when the server that hosts Analysis Services for the team project is not available.  
   
@@ -44,7 +47,7 @@ By using the test dashboard, you can monitor test activities, report on progress
 |![Step 5](_img/procguid_5.png "ProcGuid_6")|Stacked area graph that shows the cumulative count of all failed outcome results for test cases, sorted by failure type, during the most recent four weeks. Failure types include **Regression**, **New Issue**, and **Known Issue**.<br /><br /> ![Failure Analysis Excel Report](_img/procguid_failureanalysis.png "ProcGuid_FailureAnalysis")|[Failure Analysis](../excel/failure-analysis-excel-report.md)|  
 |![Step 6](_img/procguid_6.png "ProcGuid_6a")|List of upcoming events. This list is derived from a SharePoint Web Part.<br /><br /> ![Import Events Web part](_img/sharepoint_dashboard.png "SharePoint_Dashboard")|Not applicable|  
 |![Step 7](_img/procguid_7.png "ProcGuid_7")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number. This list is derived from a Team Web Access Web Part.<br /><br /> ![Project Work Items Web part](_img/twsa_dashprojectwi.png "TWSA_DashProjectWI")|Not applicable|  
-|![9](_img/procguid_9.png "ProcGuid_9")|List of recent builds and their build status. You can view more details by choosing a specific build. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build not started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build partially succeeded|[Run, monitor, and manage](../../build-release/overview.md)|  
+|![9](_img/procguid_9.png "ProcGuid_9")|List of recent builds and their build status. You can view more details by choosing a specific build. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> **Legend**:<br /><br /> ![Build in Progress](_img/icon_buildstatus_1.gif "Icon_BuildStatus_1"): Build not started<br /><br /> ![Build Not Started](_img/icon_buildstatus_2.gif "Icon_BuildStatus_2"): Build in progress<br /><br /> ![Build Succeeded](_img/icon_buildstatus_3.gif "Icon_BuildStatus_3"): Build succeeded<br /><br /> ![Build Failed](_img/icon_buildstatus_4.gif "Icon_BuildStatus_4"): Build failed<br /><br /> ![Build Stopped](_img/icon_buildstatus_5.gif "Icon_BuildStatus_5"): Build stopped<br /><br /> ![Build Partially Succeeded](_img/icon_buildstatus_6.gif "Icon_BuildStatus_6"): Build partially succeeded|[Run, monitor, and manage](../../pipelines/overview.md)|  
 |![10](_img/procguid_10.png "ProcGuid_10")|List of the most recent check-ins. You can view more details by choosing a specific check-in. This list is derived from a Team Web Access Web Part.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")|[Manage pending changes](../../tfvc/develop-code-manage-pending-changes.md)|  
   
 ##  <a name="Activities"></a> Required activities to monitor test efforts  
@@ -52,7 +55,7 @@ By using the test dashboard, you can monitor test activities, report on progress
   
 -   Define test cases and user stories or requirements, and create **Tested By** links from test cases to user stories or requirements.  
   
--   [Define test plans, and assign test cases to test plans](../../manual-test/getting-started/create-test-cases.md).  
+-   [Define test plans, and assign test cases to test plans](../../test/create-test-cases.md).  
   
 -   For manual tests, mark the results of each validation step in the test case as passed or failed.  
   

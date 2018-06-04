@@ -8,8 +8,8 @@ ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual
 ms.manager: douge
 ms.reviewer: jrice 
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.date: 11/28/2017
 monikerRange: '>= tfs-2013'
 ---
@@ -95,7 +95,7 @@ To learn how to grant access to an extension, see [Get extensions for TFS](../ma
 If a user belongs to a group that has Basic access and another group that has Advanced access, the user has access to all features available through Advanced, which is a superset of Basic.
 
 ## Service account access  
-[TFS service accounts](../tfs-server/admin/service-accounts-dependencies-tfs.md) are added to the default access level. If you make Stakeholder the default access level, you must set the TFS service accounts to Basic or Advanced/VS Enterprise access.  
+[TFS service accounts](/tfs/server/admin/service-accounts-dependencies-tfs) are added to the default access level. If you make Stakeholder the default access level, you must set the TFS service accounts to Basic or Advanced/VS Enterprise access.  
 
 Service accounts don't require a TFS CAL or other purchase.  
 

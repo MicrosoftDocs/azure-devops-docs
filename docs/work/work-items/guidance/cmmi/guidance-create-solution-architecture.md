@@ -1,5 +1,5 @@
 ---
-title: Create a solution architecture
+title: CMMI process guidance, Create a solution architecture
 titleSuffix: VSTS & TFS
 description: Investigate alternative architectural strategies to creat good architecture  
 ms.prod: devops
@@ -8,6 +8,7 @@ ms.assetid: 77707311-8835-4bc8-9b28-17534d7a7d9c
 ms.topic: conceptual
 ms.author: kaelliauthor: KathrynEE
 ms.manager: douge
+monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
@@ -41,9 +42,10 @@ Part of creating a good architecture is investigating alternative architectural 
  Review the candidate scenarios and requirements. Remove scenarios and requirements that duplicate the evaluation criteria or are better represented by other scenarios and requirements. Trim the candidate group to a core group that represents the key architectural challenges, risks, and costs of the new application. Keep the scenarios and requirements that best represent the evaluation criteria, that present the most risk, and that present the most potential cost when architecting a technical solution. Keep the scenarios and the requirements that are the most comprehensive or key parts of the application.  
   
 ### Create Partitioning Criteria  
- Using the requirements as motivation, analyze established architectural patterns (such as façade or model-view-controller), and identify potential candidates for implementation. Identify candidate patterns through their motivation, and consider their design tradeoffs with regard to coupling, cohesion, extensibility, adaptability, and flexibility. Select a set of candidates for implementation as alternatives for assessment.  
+ Using the requirements as motivation, analyze established architectural patterns (such as fa&ccedil;ade or model-view-controller), and identify potential candidates for implementation. Identify candidate patterns through their motivation, and consider their design tradeoffs with regard to coupling, cohesion, extensibility, adaptability, and flexibility. Select a set of candidates for implementation as alternatives for assessment.  
   
-##  <a name="Design"></a> Design System Architecture and Deployment  
+<a name="Design"></a> 
+##  Design System Architecture and Deployment  
  The system architecture defines the groupings and configurations of elements that are identified in the application diagram. System diagrams are created that capture the system architecture for each possible architecture approach. Deployment diagrams show the deployment steps that are based on dependencies and core functionality. An infrastructure architect creates a logical datacenter diagram that describes the logical structure of the datacenter where the application will be deployed. The deployment diagrams are validated against the logical datacenter diagram to ensure that the systems can be deployed.  
   
 ### Create a System Model  

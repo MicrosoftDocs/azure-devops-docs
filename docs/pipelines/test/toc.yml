@@ -1,0 +1,58 @@
+- name: Continuous Testing
+  href: index.md
+- name: Overview
+  items:
+  - name: About continuous testing
+    href: overview.md
+  - name: About CI/CD
+    href: ../overview.md
+- name: Quickstarts
+  items:
+  - name: Unit test with builds
+    href: getting-started-with-continuous-testing.md
+  - name: UI test with Selenium
+    href: continuous-test-selenium.md
+  - name: Review test results
+    href: review-continuous-test-results-after-build.md
+- name: Tutorials
+  items:
+  - name: Test your app
+    href: example-continuous-testing.md
+- name: How-to Guides
+  items:
+  - name: Set up continuous testing
+    href: set-up-continuous-testing-builds.md
+  - name: Associate tests with test cases
+    href: associate-automated-test-with-test-case.md
+  - name: Run tests from the Test hub
+    href: run-automated-tests-from-test-hub.md
+  - name: Run tests with MTM
+    href: run-automated-tests-with-microsoft-test-manager.md
+  - name: Associate results with requirements
+    href: associate-automated-results-with-requirements.md
+  - name: Use Test Impact Analysis
+    href: test-impact-analysis.md
+  - name: Run tests in parallel
+    href: run-tests-in-parallel.md
+  - name: Collect screenshots and video
+    href: collect-screenshots-and-video.md
+- name: Reference
+  items:
+  - name: Unified agents and phases
+    href: test-with-unified-agent-and-phases.md
+  - name: Test Java applications
+    href: continuous-test-java.md
+  - name: Set up environments
+    href: set-up-continuous-test-environments-builds.md
+  - name: FAQs
+    href: reference-qa.md
+- name: Resources
+  items:
+  - name: Plug-ins for Visual Studio
+    href: http://go.microsoft.com/fwlink/?LinkID=246630
+  - name: Manual and exploratory testing
+    href: ../../test/index.md
+  - name: Load and performance testing
+    href: ../../test/load-test/index.md
+  - name: Unit testing
+    href: https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code

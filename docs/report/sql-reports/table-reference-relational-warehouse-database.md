@@ -1,11 +1,13 @@
 ---
 title: Relational warehouse database tables | TFS
 description: Create reports and query for Team Foundation Server (TFS) data 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics 
+ms.topic: reference
 ms.assetid: 0f398cef-add1-4112-85e8-016108de10b3
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -42,7 +44,7 @@ You can create reports and query for data by using the warehouse database. The d
 |[Build Project tables](table-reference-build-project.md)|Files that were built and the platforms and flavors of the builds.|  
 |[Build Coverage tables](table-reference-build-coverage.md)|The extent to which the code was covered by tests that were performed against the build.|  
   
- For more information about builds, see [Build](../../build-release/overview.md).  
+ For more information about builds, see [Build](../../pipelines/overview.md).  
   
 ##  <a name="SourceCode"></a> Source Code  
  You can query for data about code and other files that are under version control by using the fact tables in the following illustration. DimFile and DimChangeset are the two primary dimensions that are associated with these fact tables. DimFile provides information about files and folders, without regard to specific versions of those files. DimChangeset provides information about the changesets.  
@@ -70,7 +72,7 @@ You can create reports and query for data by using the warehouse database. The d
 |[Build Coverage tables](table-reference-build-coverage.md)|The extent to which the code was covered by tests that were performed against the build.|  
 |[Work Item Test Result tables](work-item-test-result-tables.md)|Links between work items and test results.|  
   
- For more information, see [Testing overview](../../manual-test/index.md) and [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx).  
+ For more information, see [Testing overview](../../test/index.md) and [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx).  
   
 <a name="WorkItems"></a>
 ##  Tasks, Bugs and Other Types of Work Items  

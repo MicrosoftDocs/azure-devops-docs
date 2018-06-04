@@ -15,7 +15,7 @@ ms.date: 08/28/2017
 
 
  
-## Backlog priority or stack rank order
+# Backlog priority or stack rank order
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

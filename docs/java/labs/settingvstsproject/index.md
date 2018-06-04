@@ -1,10 +1,12 @@
 ---
 title: Setting up VSTS for a Java project 
 description: Tutorial lab for setting up a Java project with Visual Studio Team Services (VSTS)
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-build 
+ms.prod: devops
+ms.technology: devops-cicd
+ms.custom: java
 ms.manager: douge
 ms.author: douge
+author: erickson-doug
 ms.date: 01/22/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -26,7 +28,7 @@ This exercise will walk you through the steps to creating your Visual Studio Tea
 
 ## (Optional) Generate a VSTS Personal Access Token (PAT)
 
-In this task you will generate a personal access token for yourself. PATs essentially are alternate passwords. You need them to integrate VSTS with non-Microsoft tools such as Git, XCode, etc. You will need PAT to provision your project using the demo generator or to connect a private agent to your VSTS account.
+In this task you will generate a personal access token for yourself. PATs essentially are alternate passwords. You need them to integrate VSTS with non-Microsoft tools such as Git, XCode, etc. You will need PAT to provision your project using the demo generator or to connect a self-hosted agent to your VSTS account.
 
 > [!TIP]
 > If you already have a PAT, you can skip this step and use your existing PAT (assuming it has the correct scopes).

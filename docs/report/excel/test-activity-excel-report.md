@@ -2,7 +2,7 @@
 title: Test Activity Excel Report 
 description: Helps monitor the number of manual tests that the team has run over time.
 titleSuffix: TFS
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: cb950153-2f44-4b0b-afeb-cfb697281930
@@ -16,7 +16,7 @@ ms.date: 12/30/2016
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
 
-You can use the Test Activity report to help monitor the number of manual tests that the team has run over time. This report is available only after the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../manual-test/getting-started/create-test-cases.md).  
+You can use the Test Activity report to help monitor the number of manual tests that the team has run over time. This report is available only after the team creates test plans and starts to run tests by using Microsoft Test Manager. For information about how to define test suites and test plans, see [Plan your tests](../../test/create-test-cases.md).  
   
  For information about how to access this report, see [Excel reports](excel-reports.md).  
   

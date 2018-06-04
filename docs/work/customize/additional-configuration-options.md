@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F89F5890-31E6-47EF-810F-AB75E1AE7E00
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 04/05/2017
@@ -41,7 +42,7 @@ Code Review
 Adds the Code Review Request and Code Review Response work item types (WITs). With them, you can [request a code review and track code review responses](../../tfvc/get-code-reviewed-vs.md).  
 </td>
 <td>
-**Required:** [Configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md). <br/>
+**Required:** [Configure an SMTP server for TFS](/tfs/server/admin/setup-customize-alerts). <br/>
 **Required:** Visual Studio (any version).
 **Availability:** Only supported when your team project uses Team Foundation version control for source control.
 </td></tr>
@@ -66,7 +67,7 @@ You can [request feedback](../../feedback/get-feedback.md) from your stakeholder
 </td>
 <td>
 **Required:** Provide [Advanced access](../../security/change-access-levels.md) to users who'll request feedback.<br/>
-**Required:** [Configure an SMTP server for TFS](../../tfs-server/admin/setup-customize-alerts.md). <br/>
+**Required:** [Configure an SMTP server for TFS](/tfs/server/admin/setup-customize-alerts). <br/>
 **Required:** [Grant stakeholders permission](../../feedback/give-permissions-feedback.md).
 
 </td>
@@ -139,7 +140,7 @@ All stakeholders and contributors to your team project can view and add items to
 Shared Parameters
 </td>
 <td>
-This feature adds the Shared Parameters work item type (WIT). With it [you can repeat a test with different data](../../manual-test/repeat-test-with-different-data.md). 
+This feature adds the Shared Parameters work item type (WIT). With it [you can repeat a test with different data](../../test/repeat-test-with-different-data.md). 
 </td>
 <td>
 No additional configurations or customizations required. 

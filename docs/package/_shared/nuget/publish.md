@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Publish NuGet packages to a feed in Package Management to share them with your team and your organization.
 First, get the tools and your feed URL:
 

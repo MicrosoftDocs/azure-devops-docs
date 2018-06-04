@@ -2,11 +2,12 @@
 title: Share information using the project portal 
 titleSuffix: TFS
 description: Use the SharePoint project portal to share information with your team 
-ms.prod: devops-server
+ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 74f0e0bc-6528-4757-b906-b53aa869507b
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 09/09/17
 ms.topic: conceptual
 ---
@@ -75,8 +76,8 @@ Teams use project portals to share information and support how their team works.
 >  If you add another type of website, the links to open the project portal from the web portal and Team Explorer don't appear. Also, the **Documents** page doesn't appear in Team Explorer.  
   
  **A:** If you have a SharePoint site already configured with Team Foundation Server Extensions for SharePoint, see [Configure a project portal](configure-or-add-a-project-portal.md).  
-  
- If you need to install a SharePoint product first, see [Manually install SharePoint products for Team Foundation Server](../../tfs-server/install/sharepoint/install-sharepoint.md).  
+
+ If you need to install a SharePoint product first, see [Manually install SharePoint products for Team Foundation Server](/tfs/server/install/sharepoint/install-sharepoint).  
   
 ### Q: Can I customize the process guidance?  
  **A:** Yes. See [Configure or redirect process guidance](configure-or-redirect-process-guidance.md).  

@@ -7,8 +7,8 @@ ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
 toc: show
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
@@ -41,9 +41,9 @@ From the team project admin content for Version Control, you can [set permission
 
 ## Build and release
 
-You can define and manage your builds and releases from the web portal, **Build and Release** hub. For an overview of build and release management features and functions, see [Continuous integration on any platform](../build-release/overview.md).
+You can define and manage your builds and releases from the web portal, **Build and Release** hub. For an overview of build and release management features and functions, see [Continuous integration on any platform](../pipelines/overview.md).
 
-From the **Build and Release hub, you can set permissions for all or individual build definitions, release definitions, task groups, or variable groups. See [Set build and release permissions](../build-release/set-permissions.md). 
+From the **Build and Release hub, you can set permissions for all or individual build definitions, release definitions, task groups, or variable groups. See [Set build and release permissions](../pipelines/policies/set-permissions.md). 
 
 [!INCLUDE [temp](_shared/build-release.md)]
 
@@ -55,7 +55,7 @@ Feeds have three levels of access: Owners, Contributors, and Readers. Owners can
 
 ## Test
 
-You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../manual-test/index.md).  
+You can define and manage manual tests from the web portal, **Test** hub. For an overview of manual test features and functions, see [Testing overview](../test/index.md).  
 
 You set [test permissions at the team project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
@@ -70,7 +70,7 @@ In addition to the permissions set at the [project level via the built-in groups
 The team administrator role supports configuration of team settings. To be added as a team administrator, see [Configure team settings and add team administrators](../work/scale/add-team-administrator.md). 
 
 >[!NOTE]  
->There are no UI permissions associated with [managing tags](../work/track/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).   
+>There are no UI permissions associated with [managing tags](../work/track/add-tags-to-work-items.md). Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).   
 
 
 [!INCLUDE [temp](_shared/work.md)]
@@ -79,19 +79,34 @@ The team administrator role supports configuration of team settings. To be added
 
 ## Charts, dashboards, and other web portal features 
 
-You can define and manage dashboards from the web portal, **Dashboard** hub. For an overview of dashboard and chart features, see [Dashboards](../report/overview.md). 
+You can define and manage dashboards from the web portal, **Dashboard** hub. For an overview of dashboard and chart features, see [Dashboards](../report/dashboards/overview.md). 
 
-You set [dashboard permissions at the team level](../report/dashboard-permissions.md) from the team dashboard page. 
+You set [dashboard permissions at the team level](../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
 
 
 [!INCLUDE [temp](_shared/report.md)]
+
+
+
+::: moniker range="vsts"
+
+## Analytics
+
+From the **Analytics** hub, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for VSTS. To learn more, see [What is the Analytics Service?](../report/analytics/what-is-analytics.md). 
+
+You set [permissions](../report/analytics/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. 
+
+[!INCLUDE [temp](_shared/analytics.md)]
+
+
+::: moniker-end
 
 ## Notifications, alerts, and team collaboration tools 
 
 To manage notifications, see [Manage personal notifications](../notifications/manage-personal-notifications.md) and [Manage team notifications](../collaborate/manage-team-notifications.md).
 
 >[!NOTE]  
->There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](../tfs-server/command-line/tfssecurity-cmd.md#collection-level-permissions).
+>There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).
 
 [!INCLUDE [temp](_shared/collaborate.md)]
 
@@ -102,184 +117,9 @@ To manage notifications, see [Manage personal notifications](../notifications/ma
 
 ## Related notes
 
-- [Add users to a team project](../security/add-users-team-project.md)  
+- [Add users to a project or team](../security/add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  
-- [Manage users and access](../accounts/add-account-users-assign-access-levels.md) (VSTS) 
 - [About access levels](access-levels.md)
 - [Work in the web portal](../user-guide/work-web-portal.md) 
 
  
-<!---
-
-## Git repository  
-
-<table>
-<tbody valign="top">
-
-<tr>
-<th>Task</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Project Admins</th>
-<th>Build Admins</th>
-<th>Account Owner/Collection Admins</th>
-</tr>
-
-<tr>
-<td>**Administer**: Rename and delete a repository. At top-level Git repository, can add repositories. At the branch level, can lock, unlock, and set permissions for the branch.</td>
-<td>  </td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>   </td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-
-
-<tr>
-<td>**Branch creation**: Create and publish branches in a repo. Users are automatically granted Administer, Contribute, and Force permissions for any branch they create.  </td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Contribute**: Repo level: can push their changes to branches in the repository. Branch level: can push their changes to the branch and lock the branch.</td>
-<td> </td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Note management**: Can push and edit Git notes to a repository. Can remove notes from items if they have the Force permission.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Read**: Can clone, fetch, pull, and explore the contents of a repository.</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Rewrite and destroy history (force push)**: Can force an update to a branch, delete a branch, and modify the commit history of a branch. A force update can overwrite commits added from any user.   </td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-
-<tr>
-<td>**Tag creation**: Can push tags to a repository. Can edit or remove tags if they have the Force permission.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-
-</tr>
-
-
-</tbody>
-</table>
-
-##Work tracking    
-
-
-
-<table>
-<tbody valign="top">
-
-<tr>
-<th>Task</th>
-<th>Readers</th>
-<th>Contributors</th>
-<th>Project Admins</th>
-<th>Build Admins</th>
-<th>Account Owner/Collection Admins</th>
-</tr>
-
-<tr>
-<td>**Create tag definition**: Can add tags through a work item form.</td>
-<td>  </td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>![checkmark](_img/checkmark.png)</td>
-<td>   </td>
-<td>![checkmark](_img/checkmark.png)</td>
-</tr>
-
-
-
-<tr>
-<td>**Delete work items in this project**: Can mark work items in this project as deleted. </td>
-<td> </td>
-<td>  </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Edit work items under a node**: Can edit work items under a specific area node.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Create and modify areas and iterations**: Define the area and iteration paths available for all teams within a project.</td>
-<td> </td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Move work items out of this project**: Can move a work item from one team project to another team project within the collection.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-<tr>
-<td>**Permanently delete work items in this project**: Can permanently delete work items and test artifacts from the team project.</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-
-<tr>
-<td>**View work items in this node**: Can view, but not change, work items in this area node.</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-<td>![check mark](_img/checkmark.png)</td>
-<td> </td>
-<td>![check mark](_img/checkmark.png)</td>
-</tr>
-
-
-
-</tbody>
-</table>
-
--->

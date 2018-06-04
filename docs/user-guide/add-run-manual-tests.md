@@ -43,7 +43,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	<img src="../work/kanban/_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 2px solid #C3C3C3;" /> 
 
-	To learn more about test plans and test suites, see [Plan your tests](../manual-test/getting-started/create-a-test-plan.md).  
+	To learn more about test plans and test suites, see [Plan your tests](../test/create-a-test-plan.md).  
 
 2. If you have a number of tests to add, simply keep typing each title and click Enter. 
 
@@ -53,7 +53,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 	<img src="../work/kanban/_img/i-test-case-form.png" alt="Open test case form from Kanban board" style="border: 2px solid #C3C3C3;" /> 
 
-See [Create manual tests](../manual-test/getting-started/create-test-cases.md) to learn more about defining tests. 
+See [Create manual tests](../test/create-test-cases.md) to learn more about defining tests. 
 
 > [!IMPORTANT]  
 > Prior to running the test, you must add details. 
@@ -64,7 +64,7 @@ Run the test by selecting ![Run icon](../work/_img/icons/run_query.png) Run test
 
 <img src="../work/kanban/_img/i-test-run-test.png" alt="Run a test" style="border: 2px solid #C3C3C3;" />  
 
-Microsoft Test Runner starts in a new browser instance. For details on running a test, see [Run manual tests](../manual-test/getting-started/run-manual-tests.md).
+Microsoft Test Runner starts in a new browser instance. For details on running a test, see [Run manual tests](../test/run-manual-tests.md).
 
 ## Update the status of a test
 
@@ -72,7 +72,7 @@ You can update the status of the test from the ![Actions icon](../work/_img/icon
 
 <img src="../work/kanban/_img/i-test-update-status.png" alt="Check tasks that are complete" style="border: 2px solid #C3C3C3;" /> 
  
-Updating the status of tests enable you to [track test results](../manual-test/getting-started/track-test-status.md).  
+Updating the status of tests enable you to [track test results](../test/track-test-status.md).  
 
 ## Expand or collapse inline tests
 
@@ -89,8 +89,8 @@ Simply click the inline test summary to expand a collapsed set of tests. Click t
 Use inline tests for lightweight traceability and to manage manual tests for user stories or other backlog items that they support. 
   
 > [!div class="nextstepaction"]
-> [Learn more about test case management](../manual-test/getting-started/create-test-cases.md)
+> [Learn more about test case management](../test/create-test-cases.md)
 > [Kanban quickstart](../work/kanban/kanban-quickstart.md) 
 
-To initiate web-based exploratory testing for a user story, you need to install the Exploratory testing , see [Exploratory test your web app directly in your browser](../manual-test/getting-started/perform-exploratory-tests.md).
+To initiate web-based exploratory testing for a user story, you need to install the Exploratory testing , see [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
 

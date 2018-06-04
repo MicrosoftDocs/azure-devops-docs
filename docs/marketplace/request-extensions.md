@@ -1,12 +1,13 @@
 ---
 title: Request extensions for your Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) project
 description: Request extensions for a team project collection in Team Foundation Server or team project in Visual Studio Team Services
-ms.topic: get-started-article
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-marketplace
+ms.topic: conceptual
+ms.prod: devops
+ms.technology: devops-marketplace
 ms.assetid: 93a88b2c-559d-43ae-aaa9-e75ba33272fe
 ms.manager: douge
 ms.author: elbatk
+author: elbatk
 ms.date: 12/04/2017
 monikerRange: '>= tfs-2013'
 ---

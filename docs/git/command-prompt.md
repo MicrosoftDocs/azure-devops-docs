@@ -27,14 +27,14 @@ Open Team Explorer through the **View** menu in Visual Studio, or with the **Ctr
 
 Team Explorer and the Git command line work great together. When you make updates and perform commands through one interface, you'll see those changes reflected in the other.
 
-[Git Installation instructions](https://www.visualstudio.com/learn/install-and-set-up-git/) are available if you don't have Git installed on your computer.
+[Git Installation instructions](/azure/devops/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
 
 > [!TIP]
 > Windows users: If you aren't using Visual Studio, installing [Git for Windows](https://git-scm.com/download/win) will set up the [Git credential manager for Windows](set-up-credential-managers.md). The credential manager makes it easy to authenticate with your VSTS repos.
 
 While in Visual Studio, open a command prompt in your repo from Team Explorer's **Connect** view. Right-click on your local repo and select **Open Command Prompt**
    
-![Open a command prompt to a repo from inside Visaul Studio](_img/command-prompt/open_cmd_prompt_repo_vs.png)
+![Open a command prompt to a repo from inside Visual Studio](_img/command-prompt/open_cmd_prompt_repo_vs.png)
 
 > [!IMPORTANT]
 > Some commands require having [specific Git permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) in VSTS to complete.
@@ -97,7 +97,7 @@ Learn more:
 | Review unstaged changes | git status --untracked | Open the **Changes** view in Team Explorer. Unstaged changes are listed under **Changes** section. 
 | Delete a file | git rm *filename*<br>git commit -m "Deleted *filename*" | Delete the file through Solution Explorer, the command line, or any other means. Right-click the deleted file in Team Explorer's **Changes** view and select **Stage** . Select **Commit Staged** to commit the deletion.
 | Move a file  | git mv *filename*<br>git commit -m "Moved *filename*" | Move a file from one location to another in your repo through Solution Explorer, the command line, or any other means.  Right-click the moved file in Team Explorer's **Changes** view and select **Stage** . Select **Commit Staged** to commit the move.
-| Tag a commit | git tag -a *tagname* -m "*description*" | Open the **Changes** view in Team Explorer, then choose **View history..."** from the **Action** drop-down. Locate the commit in thie History view, then right-click and select **Create Tag** 
+| Tag a commit | git tag -a *tagname* -m "*description*" | Open the **Changes** view in Team Explorer, then choose **View history..."** from the **Action** drop-down. Locate the commit in the History view, then right-click and select **Create Tag** 
 
 Learn more:   
 
@@ -107,7 +107,7 @@ Learn more:
 
 | How do I ? | Git command | Visual Studio |
 |------------|-------------|--------------|
-| Compare the current contents of a singile file and the contents in the last commit | git diff HEAD *filename* | Right-click on the change in the **Changes** view in Team Explorer and select **Compare with unmodified**. 
+| Compare the current contents of a single file and the contents in the last commit | git diff HEAD *filename* | Right-click on the change in the **Changes** view in Team Explorer and select **Compare with unmodified**. 
 | Compare your current version with a branch | git diff *branchname* |  Right-click on a file in Solution Explorer and select **View History...**, then select both on the latest commit on your current branch and the latest commit on the remote branch. Right-click and select **Compare**
 | Compare changes between two branches | git diff *branchname1* *branchname2*  | Right-click on a file in Solution Explorer and select **View History...**, then select the most recent commits for both branches. Right-click and select **Compare**
 
@@ -139,7 +139,7 @@ Learn more:
 | Merge a remote branch into the current branch | git pull origin *branchname* | In the Team Explorer **Branches** view, right-click the remote branch you want to merge and select **Merge From..**. Verify the options set and select **Merge**.
 | Rebase your current branch onto the history of another branch | git rebase *branchname* |  In the Team Explorer **Branches** view, right-click the branch you want to rebase your current branch changes onto and select **Rebase Onto.."**
 | Do an interactive rebase of the last *n* commits | git rebase -i HEAD~*n* (Linux and macOS)<br>git rebase -i "HEAD^*n*" (Windows) | Use command line
-| Cherry-pick a commit into the current branch | git cherry-pick *commitID* | Open the **Changes** view in Team Explorer, then choose **View history..."** from the **Action** drop-down. Locate the commit in thie History view, then right-click and select **Cherry-pick** 
+| Cherry-pick a commit into the current branch | git cherry-pick *commitID* | Open the **Changes** view in Team Explorer, then choose **View history..."** from the **Action** drop-down. Locate the commit in the History view, then right-click and select **Cherry-pick** 
    
 Learn more:   
 
@@ -156,7 +156,7 @@ Learn more:
 |------------|-------------|--------------|
 | Revert all changes and roll back to the most recent commit | git reset --hard HEAD | Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Delete changes....** 
 | Revert staging of files, but keep file changes | git reset --mixed HEAD | Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit where the branch is currently located and select **Reset and Keep changes....** 
-| Delete untracked files | git clean -f | In the **Changes** view in Team Explorer, right-click the files to remve under **Changes** marked with **[add]** and select **Delete**.
+| Delete untracked files | git clean -f | In the **Changes** view in Team Explorer, right-click the files to remove under **Changes** marked with **[add]** and select **Delete**.
 | Reset your local branch to the most recent commit on a remote branch | git reset --hard *remote*/*branchname*<br>(for example, git reset --hard origin/master) | Right-click the branch from Team Explorer's **Branches** view and select **Reset and Delete changes....**
 | Revert a commit pushed to a remote repository | git revert *commitID* | Open the **Changes** view in Team Explorer. Select **Actions and choose **View History** from the drop-down. Right-click the commit to revert and select **Revert**.
    

@@ -30,7 +30,7 @@ A family of engineering best processes with a goal of enabling rapid delivery of
 
 
 ## Agile tools
-A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods"”Scrum and Kanban"”used by software development teams today. Learn more: [About Agile tools and Agile project management](../backlogs/overview.md).
+A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Learn more: [About Agile tools and Agile project management](../backlogs/overview.md).
 
 ## Area path
 A node on the Common Structure Services hierarchy that represents a feature area. Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The area path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../customize/about-areas-iterations.md).
@@ -68,8 +68,8 @@ Specifies both work item fields and global lists that multiple team projects and
 Specifies the set of work item types that you don't want users to create manually. By default this set includes:   
 -   [Code Review Request and Code Review Response](../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
 -   [Feedback Request and Feedback Response](../../feedback/get-feedback.md)    
--   [Shared Steps and Shared Parameter](../../manual-test/getting-started/create-test-cases.md)    
--   [Test Plan and Test Suite](../../manual-test/getting-started/create-a-test-plan.md)  
+-   [Shared Steps and Shared Parameter](../../test/create-test-cases.md)    
+-   [Test Plan and Test Suite](../../test/create-a-test-plan.md)  
   
 You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. 
 
