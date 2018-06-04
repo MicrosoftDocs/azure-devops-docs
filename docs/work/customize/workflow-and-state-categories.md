@@ -123,7 +123,7 @@ To learn more about process models, see [Customize your work tracking experience
 
 ::: moniker range="vsts"
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
-- [Customize a workflow for a process](process/customize-process-workflow.md)
+- [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

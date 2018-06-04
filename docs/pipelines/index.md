@@ -89,6 +89,9 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 - [What is continuous delivery?](/azure/devops/what-is-continuous-delivery)  
 - [What is DevOps?](/azure/devops/what-is-devops)   
 - [Build and release marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
+- [Manual and exploratory testing](../test/index.md)
+- [Load and performance testing](../test/load-test/index.md)
+- [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)
 
 ::: moniker-end
 

@@ -8,7 +8,8 @@ ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: overview
-ms.date: 09/21/2017
+monikerRange: '>= tfs-2013'
+ms.date: 05/31/2018
 ---
 
 # Customization  
@@ -17,15 +18,38 @@ ms.date: 09/21/2017
 
 Add a custom field, a custom work item type (WIT) or modify an existing WIT. The method you use depends on whether you use the Inheritance or Hosted XML process models.  
 
+
+::: moniker range="vsts"
+## 5-Minute Quickstarts  
+
+- [Define area paths](set-area-paths.md)
+- [Define iteration paths or sprints](set-iteration-paths-sprints.md) 
+- [Add a custom field](../../organizations/settings/work/add-custom-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)   
+- [Add a custom work item type](../../organizations/settings/work/add-custom-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)   
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
 ## 5-Minute Quickstarts  
 
 - [Define area paths](set-area-paths.md)
 - [Define iteration paths or sprints](set-iteration-paths-sprints.md) 
 
+::: moniker-end
+
+::: moniker range="vsts"
+## Tutorials 
+- [Customize a project](../../organizations/settings/work/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)   
+- [Create and manage a process](../../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) 
+
+::: moniker-end
+
 ## Concepts
 
 - [About areas and iterations](about-areas-iterations.md)  
-- [Inheritance process model](inheritance-process-model.md)   
+- [Differences between process models](import-process/differences.md) 
+- [Workflow states & state categories](workflow-and-state-categories.md)
+- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)   
 - [Hosted XML process model](hosted-xml-process-model.md)  
 - [On-premises XML process model](on-premises-xml-process-model.md)  
 
@@ -34,10 +58,9 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 
 Use the guidance provided in the following topics based on the process model or process template that you want to customize.  
 
-
 - **Inheritance process model**
-	- [Manage processes](process/manage-process.md)  
-	- [Customize a process](process/customize-process.md)  
+	- [Customize a project](../../organizations/settings/work/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)     
+	- [Create and manage a process](../../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)    
 
 - **Hosted XML process model**
 	- [Customize a Hosted XML process](import-process/customize-process.md)  
@@ -64,7 +87,7 @@ Use the guidance provided in the following topics based on the process model or 
 ## Resources 
 
 - [Work items](../work-items/index.md)
-- [Scale & configure teams](../../settings/index.md)
+- [Scale & configure teams](../../organizations/settings/index.md)
 - [Account Management (VSTS)](../../accounts/index.md)
 - [Marketplace extensions](../../marketplace/install-vsts-extension.md)
 - [Extensibility and REST APIs](../../extend/overview.md) 

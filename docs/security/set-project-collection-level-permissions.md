@@ -116,7 +116,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 0. Click the group name you just created and change the permission levels. 
 
-	Here we grant this group permissions to [manage customizations for the Inheritance process model](../work/customize/process/manage-process.md). 
+	Here we grant this group permissions to [manage customizations for the Inheritance process model](../organizations/settings/work/manage-process.md). 
 
 	<img src="_img/collection-level-permissions-work-tracking-group.png" alt="Security group dialog, Add a security group at the account or collection level" style="border: 1px solid #C3C3C3;" /> 
 

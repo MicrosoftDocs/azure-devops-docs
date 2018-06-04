@@ -77,7 +77,7 @@ You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamPro
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a team project by modifying and importing a process template. This process model is only available for select accounts hosted on the Visual Studio Team Services cloud platform.  To learn more, see [Hosted process model](../customize/hosted-xml-process-model.md).
 
 ## Inheritance process model 
-The Inheritance process model provides support for customizing work tracking objects and Agile tools for a team project through the user interface. This process model is only available for accounts hosted on the Visual Studio Team Services cloud platform. Team projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../customize/inheritance-process-model.md).
+The Inheritance process model provides support for customizing work tracking objects and Agile tools for a team project through the user interface. This process model is only available for accounts hosted on the Visual Studio Team Services cloud platform. Team projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
 
 
 ## Iteration path
@@ -138,7 +138,7 @@ An interactive board of work items that support reviewing and updating tasks def
 
 
 ## Team 
-With teams, enterprises can sub-categorize work to better focus on all the work they're tracking within a team project. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to meet their work requirements. Learn more: [About teams and Agile tools](../../settings/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
+With teams, enterprises can sub-categorize work to better focus on all the work they're tracking within a team project. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to meet their work requirements. Learn more: [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
 
 ## Team project
 

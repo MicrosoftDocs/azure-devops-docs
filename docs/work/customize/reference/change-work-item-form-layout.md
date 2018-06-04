@@ -26,7 +26,7 @@ You can change the work item form layout by exporting the XML file and modifying
 > [!IMPORTANT]  
 > This topic applies to team project customization for On-premises XML (TFS 2017 and earlier versions) process models using the old form layout. For TFS 2017 and later versions, see [WebLayout and Control elements](weblayout-xml-elements.md). 
 >
-> For the Inheritance process model, see [Customize a process](../process/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).
+> For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).
   
 For an overview of the controls you can place in a work item form, see [Specify work item form controls](specify-work-item-form-controls.md). For an overview of the top-level structural elements for the `FORM` section, see. [Design the work item form](design-work-item-form.md).  
   

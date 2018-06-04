@@ -42,3 +42,13 @@ Once you have continuous integration in place, the next step is to create a rele
 If your goal is to produce packages that can be consumed by others, VSTS has a built-in package management repository. You can package and publish your application bits as NuGet, NPM, or Maven packages into the built-in repository or into any other package management repository of your choice.
 
 In the various topics covered in this documentation, you will explore how to configure CI for the version control repository and development language of your choice, configure CD to the deployment target of your choice, and how to publish packages in the packaging format of your choice.
+
+## Continuous testing
+
+Whether your app is on-premises or in the cloud, you can automate build-deploy-test workflows and choose the technologies and frameworks, then 
+[test your changes continuously](test/getting-started-with-continuous-testing.md) in a fast, scalable, and efficient manner. 
+
+* Maintain quality and find problems as you develop. Continuous testing with Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) ensures your app still works after every check-in and build, enabling you to find problems earlier by running tests automatically with each build.
+* Any test type and any test framework. Choose the test technologies and frameworks you prefer to use.
+* Rich analytics and reporting. When your build is done, review your test results to start resolving the problems you find. Rich and actionable build-on-build reports 
+let you instantly see if your builds are getting healthier. But it's not just about speed - detailed and customizable test results measure the quality of your app.

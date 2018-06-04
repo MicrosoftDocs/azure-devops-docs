@@ -1,1 +1,5 @@
-<p><b>VSTS | TFS 2018</b></p>
+---
+ms.topic: include
+---
+
+**VSTS | TFS 2018**

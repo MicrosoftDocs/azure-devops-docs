@@ -26,7 +26,7 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> You can customize the work tracking system for your team project based on the Agile process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../customize/inheritance-process-model.md). 
+> You can customize the work tracking system for your team project based on the Agile process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

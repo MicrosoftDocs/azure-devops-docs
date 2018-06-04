@@ -94,7 +94,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
-1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch team project or team focus](../../settings/switch-team-context.md).
+1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md).
 
 2. Click the **Dashboards** hub.
 

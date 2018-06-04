@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <a id="queries-te-shortcuts"></a>
 
 > [!div class="mx-tdBreakAll"]
