@@ -16,7 +16,7 @@ ms.date: 04/04/2017
 
 By using categories, you can generate flexible reports, and support increased integration across team projects. You can more easily manage multiple work item types (WITs) as a group as well as WITs that are named differently. Also, you can use the **In Group** query operator to filter a list of work items based on the category to which they belong.  
   
-Categories associate one or more WITs as belonging to the same category. The [Agile tools](../../../settings/about-teams-and-settings.md) rely on the default category definitions, many of which specify a single WIT per category.  
+Categories associate one or more WITs as belonging to the same category. The [Agile tools](../../../organizations/settings/about-teams-and-settings.md) rely on the default category definitions, many of which specify a single WIT per category.  
   
 Here's an example of the feature and bug category entries within the Categories XML definition file:  
   

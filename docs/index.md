@@ -1,5 +1,6 @@
 ---
-title: VSTS and TFS Documentation | VSTS & TFS 
+title: VSTS and TFS Documentation 
+titleSuffixe: VSTS & TFS 
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 layout: HubPage 
 hide_bc: true
@@ -266,7 +267,7 @@ featureFlags:
                                         <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
                                         <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
@@ -998,7 +999,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/settings/index">
+                                <a href="/vsts/organizations/settings/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

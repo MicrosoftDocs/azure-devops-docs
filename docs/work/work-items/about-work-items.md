@@ -134,7 +134,7 @@ To learn more, see these topics:
 
 You can add or modify the fields contained within a WIT or add a custom WIT. The process you use depends on the process model in effect for your team project. 
 ::: moniker range="vsts"
-To learn more, see [Customize an inheritance process](../customize/inheritance-process-model.md). 
+To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

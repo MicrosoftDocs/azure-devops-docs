@@ -34,7 +34,7 @@ In this topic you'll learn how to:
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize an inheritance process](../customize/inheritance-process-model.md). 
+> Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To customize the task board to include more or different columns, you need to customize the workflow. For details, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 >
 >In addition, if you're wondering why the task board items don't match your query list of items for a sprint, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 ::: moniker-end
@@ -56,7 +56,7 @@ During your daily Scrum, you can filter your task board to help focus on items o
 Use the Person filter when you want to focus on work assigned to individual team members.
 
 > [!TIP]    
->If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
+>If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). 
 
 
 
@@ -163,8 +163,8 @@ Each team can customize their task board in the following ways:
 An administrator can customize the task board for all teams in the following ways:  
 
 ::: moniker range="vsts"
-- [Add a custom workflow state to the task WIT for a process](../customize/process/customize-process-workflow.md)
-- [Add a custom work item type to the task board for a process](../customize/process/customize-process-backlogs-boards.md)
+- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the task board for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

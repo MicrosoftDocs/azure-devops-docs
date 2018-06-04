@@ -6,8 +6,6 @@
     href: overview.md
   - name: About Deploying to Azure
     href: overview-azure.md
-  - name: About Continuous Testing
-    href: test/index.md
 - name: Quickstarts
   items:
     - name: Your first build and release
@@ -48,14 +46,6 @@
     href: apps/cd/deploy-linuxvm-deploygroups.md
   - name: Web App for Containers
     href: apps/cd/deploy-docker-webapp.md
-- name: Tests
-  items:
-  - name: Unit test with builds
-    href: test/getting-started-with-continuous-testing.md
-  - name: UI test with Selenium
-    href: test/continuous-test-selenium.md
-  - name: Review test results
-    href: test/review-continuous-test-results-after-build.md
 - name: Tutorials
   items:
   - name: CI builds for Git in VSTS
@@ -80,8 +70,6 @@
     href: release/integrate-jenkins-vsts-cicd.md
   - name: Jenkins CI for VSTS Azure AKS
     href: release/integrate-jenkins-vsts-aks.md
-  - name: Test your app
-    href: test/example-continuous-testing.md
 - name: Concepts
   items:
   - name: Agents
@@ -231,14 +219,22 @@
       href: apps/cd/provision-vm-in-vmware.md
   - name: Test your apps
     items:
-    - name: Set up continuous testing
+    - name: Unit test with builds
+      href: test/getting-started-with-continuous-testing.md
+    - name: UI test with Selenium
+      href: test/continuous-test-selenium.md
+    - name: Test Java applications
+      href: test/continuous-test-java.md
+    - name: Review test results
+      href: test/review-continuous-test-results-after-build.md
+    - name: Set up environments
+      href: test/set-up-continuous-test-environments-builds.md
+    - name: Set up test builds
       href: test/set-up-continuous-testing-builds.md
-    - name: Run tests from the Test hub
-      href: test/run-automated-tests-from-test-hub.md
     - name: Use Test Impact Analysis
       href: test/test-impact-analysis.md
-    - name: Run tests in parallel
-      href: test/run-tests-in-parallel.md
+    - name: FAQs for testing
+      href: test/reference-qa.md
   - name: Publish symbols for debugging
     items:
     - name: Publish symbols

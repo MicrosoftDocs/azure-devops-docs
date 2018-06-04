@@ -33,7 +33,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 	<img src="_img/define-sprints-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]   
-	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Select team sprints](../scale/set-team-defaults.md). To switch team context, see [Switch team project or team focus](../../settings/switch-team-context.md). 
+	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Select team sprints](../scale/set-team-defaults.md). To switch team context, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md). 
 
 2. Click the calendar icon to choose the date for the start and then the end of the sprint. 
 

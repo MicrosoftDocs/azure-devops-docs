@@ -17,7 +17,7 @@ ms.date: 12/15/2017
 
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](process/customize-process.md). 
+>This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).   
 
@@ -44,7 +44,7 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 
 ###Hosted XML process model customization sequence  
 > [!NOTE]    
->Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](process/customize-process-wit.md).
+>Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](../../organizations/settings/work/customize-process-wit.md).
 
 You'll make your changes to your process definition files, and then import that process to either update existing team projects or use the process to create a team project. 
 
