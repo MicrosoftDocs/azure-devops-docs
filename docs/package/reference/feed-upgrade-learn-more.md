@@ -45,3 +45,7 @@ In the legacy upstream source, all packages saved from the upstream automaticall
 In legacy feeds, when you run an `npm install` command, the feed will check to see if it has a cache of the package(s) requested by the `npm` client. If it does not, it will redirect the client to download the package from npmjs.com directly, and also cache the package in the background. The first client (where client is a developer machine or a build agent) to install a given npm package **will** need Internet access to successfully retrieve the package *or* they will have to run `npm install` twice. The first install will fail but cause the package to be cached; the second install will return the package from the cache.
 
 After you upgrade your feed, VSTS automatically handles the saving of all packages. If you're using TFS, only your TFS server needs access to the internet to save packages from upstream.
+
+## How to upgrade a legacy feed
+
+You'll be able to upgrade a legacy feed to take advantage of the new upstream sources support in the next month or two. Keep an eye on the [release notes](https://docs.microsoft.com/en-us/vsts/release-notes/) for more information.
