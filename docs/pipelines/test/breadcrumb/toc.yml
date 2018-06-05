@@ -8,4 +8,4 @@
     items:
     - name: "Continuous Testing"
       tocHref: /vsts/
-      topicHref: /vsts/pipelines/test/index
+      topicHref: /vsts/pipelines/index

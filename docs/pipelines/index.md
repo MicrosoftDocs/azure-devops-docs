@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range=">= tfs-2015"
 
-VSTS and Team Foundation Server help you implement a continuous integration (CI) and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
+VSTS and Team Foundation Server help you implement a continuous integration (CI), test, and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
 ## 5-Minute quickstarts
 

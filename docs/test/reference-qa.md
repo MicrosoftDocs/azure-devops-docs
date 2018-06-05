@@ -595,7 +595,7 @@ see [Enable coded UI testing of your controls](https://docs.microsoft.com/visual
 
 ### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
 
-**A:** Yes, see [Automate system tests](../pipelines/test/index.md).
+**A:** Yes, see [Automate system tests](../pipelines/index.md).
 
 *****
 
