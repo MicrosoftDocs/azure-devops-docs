@@ -1,18 +1,23 @@
 {
   "redirections": [
     {
+      "source_path": "docs/tfs-server/index.md",
+      "redirect_url": "/tfs/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/tfs-server/install/sql-server/sql-server-requirements.md",
-      "redirect_url": "/tfs/server/index",
+      "redirect_url": "/tfs/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/architecture/extend-vs-for-alm.md",
-      "redirect_url": "/tfs/server/index",
+      "redirect_url": "/tfs/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/admin/setup-customize-alerts.md",
-      "redirect_url": "/tfs/server/index",
+      "redirect_url": "/tfs/index",
       "redirect_document_id": false
     },
     {
@@ -232,7 +237,7 @@
     },
     {
       "source_path": "docs/tfs-server/command-line/open-admin-console.md",
-      "redirect_url": "/tfs/server/command-line/open-admin-console",
+      "redirect_url": "/tfs/server/ref/command-line/open-admin-console",
       "redirect_document_id": false
     },
     {
