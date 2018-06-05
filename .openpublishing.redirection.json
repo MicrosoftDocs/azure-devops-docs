@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "docs/build-release/actions/view-manage-releases.md",
+      "redirect_url": "/vsts/pipelines/actions/view-manage-releases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/build-release/actions/troubleshooting.md",
+      "redirect_url": "/vsts/pipelines/troubleshooting",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/tfs-server/index.md",
       "redirect_url": "/tfs/index",
       "redirect_document_id": false
@@ -7597,7 +7607,7 @@
     },
     {
       "source_path": "docs/build-release/apps/java/build-maven.md",
-      "redirect_url": "/vsts/pipelines/apps/java/build-maven.md",
+      "redirect_url": "/vsts/pipelines/apps/java/build-maven",
       "redirect_document_id": true
     },
     {
