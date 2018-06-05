@@ -163,7 +163,7 @@ as shown in the following schematic.
 
 ## Authentication
 
-To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. Your agent can authenticate to VSTS or TFS using one of the following methods:
+To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. Your agent can authenticate to VSTS or TFS using one of the following methods. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, nor is used in any further communication between the agent and VSTS or TFS. Also, one needs to be a local administrator on the server in order to configure the agent.
 
 ::: moniker range=">= tfs-2017"
 
