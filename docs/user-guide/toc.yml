@@ -101,4 +101,4 @@
   - name: "Security & Identity"
     href: ../security/index.md
   - name: Technical articles
-    href: http://visualstudio.com/articles/overview
+    href: https://docs.microsoft.com/en-us/vsts/articles/?view=vsts
