@@ -30,7 +30,7 @@
       topicHref: /vsts/package/index
     - name: Continuous Testing
       tocHref: /vsts/pipelines/
-      topicHref: /vsts/pipelines/test/index
+      topicHref: /vsts/pipelines/index
   - name: Testing
     tocHref: /vsts/test/
     topicHref: /vsts/index#pivot=services&panel=testing
