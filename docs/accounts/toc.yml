@@ -30,6 +30,8 @@
     href: add-basic-or-vs-subscription-users.md
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md
+  - name: Glossary
+    href: ../security/security-glossary.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Manage your account
