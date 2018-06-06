@@ -54,6 +54,8 @@
         href: develop/custom-control.md
       - name: Configure work item form extensions in TFS
         href: develop/configure-workitemform-extensions.md
+      - name: Add query result tabs
+        href: develop/add-query-result-tabs.md
     - name: Call a REST API
       href: develop/call-rest-api.md
     - name: Extensions for public projects

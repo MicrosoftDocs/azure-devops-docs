@@ -76,10 +76,10 @@ For each contribution in your extension, the manifest defines
 
 | Property           | Description                                                                                                                         
 |--------------------|----------------------------------------------------------------------------------------|                
-| title              | Tooltip text that will appear on the menu item.                                        |                   
-| name               | What appears in the dropdown for panel selection.					                  |                   
-| uri                | Path (relative to the extenion's base URI) of the page to the surface as the panel     |                   
-| registeredObjectId | Id of the object registered for the panel.                                             |    
+| title              | Tooltip text that will appear on the menu item                                        |                   
+| name               | What appears in the dropdown for panel selection					                  |                   
+| uri                | Path (relative to the extension's base URI) of the page to surface as the panel     |                   
+| registeredObjectId | Id of the object registered for the panel                                             |    
 
 
 Learn about all of the places where you can add an extension in the [contributions reference](../reference/targets/overview.md).
