@@ -2437,7 +2437,7 @@
     },
     {
       "source_path": "docs/build-release/test/getting-started/getting-started-with-continuous-testing.md",
-      "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -2452,7 +2452,7 @@
     },
     {
       "source_path": "docs/build-release/test/set-up-automated-test-environments-builds.md",
-      "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -3547,12 +3547,12 @@
     },
     {
       "source_path": "docs/test/create-a-test-plan-vs.md",
-      "redirect_url": "/vsts/manual-test/getting-started/create-a-test-plan",
+      "redirect_url": "/vsts/test/create-a-test-plan",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/create-tests-vs.md",
-      "redirect_url": "/vsts/manual-test/create-test-cases",
+      "redirect_url": "/vsts/test/create-test-cases",
       "redirect_document_id": false
     },
     {
@@ -3637,22 +3637,22 @@
     },
     {
       "source_path": "docs/test/run-tests-vs.md",
-      "redirect_url": "/vsts/manual-test/getting-started/run-manual-tests",
+      "redirect_url": "/vsts/test/run-manual-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/run-tests-with-builds.md",
-      "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/track-test-status-vs.md",
-      "redirect_url": "/vsts/manual-test/getting-started/track-test-status",
+      "redirect_url": "/vsts/test/track-test-status",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/whats-new-test.md",
-      "redirect_url": "/vsts/manual-test/overview",
+      "redirect_url": "/vsts/test/overview",
       "redirect_document_id": false
     },
     {
@@ -3662,27 +3662,27 @@
     },
     {
       "source_path": "docs/test/continuous-testing/associate-automated-results-with-requirements.md",
-      "redirect_url": "/vsts/pipelines/test/associate-automated-results-with-requirements",
+      "redirect_url": "/vsts/test/associate-automated-results-with-requirements",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/continuous-testing/associate-automated-test-with-test-case.md",
-      "redirect_url": "/vsts/pipelines/test/associate-automated-test-with-test-case",
+      "redirect_url": "/vsts/test/associate-automated-test-with-test-case",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/continuous-testing/continuous-testing.md",
-      "redirect_url": "/vsts/pipelines/test/index",
+      "redirect_url": "/vsts/pipelines/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/continuous-testing/example-continuous-testing.md",
-      "redirect_url": "/vsts/pipelines/test/example-continuous-testing",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/continuous-testing/index.md",
-      "redirect_url": "/vsts/pipelines/test/",
+      "redirect_url": "/vsts/pipelines/index",
       "redirect_document_id": false
     },
     {
@@ -3697,12 +3697,12 @@
     },
     {
       "source_path": "docs/test/continuous-testing/run-automated-tests-from-test-hub.md",
-      "redirect_url": "/vsts/pipelines/test/run-automated-tests-from-test-hub",
+      "redirect_url": "/vsts/test/run-automated-tests-from-test-hub",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/continuous-testing/set-up-automated-test-environments-builds.md",
-      "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -3711,28 +3711,18 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/test/continuous-testing/set-up-continuous-test-environments-builds.md",
-      "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/test/continuous-testing/set-up-continuous-testing-builds.md",
-      "redirect_url": "/vsts/pipelines/test/set-up-continuous-testing-builds",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/test/continuous-testing/test-build.md",
-      "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
       "source_path": "vsts/build-release/test/test-build.md",
-      "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/continuous-testing/test-with-unified-agent-and-phases.md",
-      "redirect_url": "/vsts/pipelines/test/test-with-unified-agent-and-phases",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -3747,7 +3737,7 @@
     },
     {
       "source_path": "docs/test/continuous-testing/getting-started/getting-started-with-continuous-testing.md",
-      "redirect_url": "/vsts/pipelines/test/getting-started-with-continuous-testing",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -3847,197 +3837,197 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/add-to-bugs-exploratory-testing.md",
-      "redirect_url": "/vsts/manual-test/add-to-bugs-exploratory-testing",
+      "redirect_url": "/vsts/test/add-to-bugs-exploratory-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/capture-exploratory-testing.md",
-      "redirect_url": "/vsts/manual-test/getting-started/perform-exploratory-tests",
+      "redirect_url": "/vsts/test/perform-exploratory-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/collect-data-diagnostics.md",
-      "redirect_url": "/vsts/manual-test/collect-diagnostic-data",
+      "redirect_url": "/vsts/test/collect-diagnostic-data",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/collect-diagnostic-data.md",
-      "redirect_url": "/vsts/manual-test/collect-diagnostic-data",
+      "redirect_url": "/vststest/collect-diagnostic-data",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/configuration-testing.md",
-      "redirect_url": "/vsts/manual-test/test-different-configurations",
+      "redirect_url": "/vsts/test/test-different-configurations",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/connected-mode-exploratory-testing.md",
-      "redirect_url": "/vsts/manual-test/connected-mode-exploratory-testing",
+      "redirect_url": "/vsts/test/connected-mode-exploratory-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/exploratory-testing-mtm.md",
-      "redirect_url": "/vsts/manual-test/mtm/exploratory-testing-using-microsoft-test-manager",
+      "redirect_url": "/vsts/test/mtm/exploratory-testing-using-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/explore-workitems-exploratory-testing.md",
-      "redirect_url": "/vsts/manual-test/explore-workitems-exploratory-testing",
+      "redirect_url": "/vsts/test/explore-workitems-exploratory-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/index.md",
-      "redirect_url": "/vsts/manual-test/",
+      "redirect_url": "/vsts/test/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/insights-exploratory-testing.md",
-      "redirect_url": "/vsts/manual-test/insights-exploratory-testing",
+      "redirect_url": "/vsts/test/insights-exploratory-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/manual-testing-extensibility.md",
-      "redirect_url": "/vsts/manual-test/overview",
+      "redirect_url": "/vsts/test/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/manual-testing.md",
-      "redirect_url": "/vsts/manual-test/index",
+      "redirect_url": "/vsts/test/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/repeat-test-with-different-data.md",
-      "redirect_url": "/vsts/manual-test/repeat-test-with-different-data",
+      "redirect_url": "/vsts/test/repeat-test-with-different-data",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/share-parameter-data.md",
-      "redirect_url": "/vsts/manual-test/getting-started/perform-exploratory-tests",
+      "redirect_url": "/vsts/test/perform-exploratory-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/standalone-mode-exploratory-testing.md",
-      "redirect_url": "/vsts/manual-test/standalone-mode-exploratory-testing",
+      "redirect_url": "/vsts/test/standalone-mode-exploratory-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/test-different-configurations.md",
-      "redirect_url": "/vsts/manual-test/test-different-configurations",
+      "redirect_url": "/vsts/test/test-different-configurations",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/create-a-test-plan.md",
-      "redirect_url": "/vsts/manual-test/getting-started/create-a-test-plan",
+      "redirect_url": "/vsts/test/create-a-test-plan",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/create-test-cases.md",
-      "redirect_url": "/vsts/manual-test/getting-started/create-test-cases",
+      "redirect_url": "/vsts/test/create-test-cases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/getting-started-with-manual-testing.md",
-      "redirect_url": "/vsts/manual-test/getting-started/create-test-cases",
+      "redirect_url": "/vsts/test/create-test-cases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results.md",
-      "redirect_url": "/vsts/manual-test/getting-started/how-long-to-keep-test-results",
+      "redirect_url": "/vsts/test/how-long-to-keep-test-results",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/perform-exploratory-tests.md",
-      "redirect_url": "/vsts/manual-test/getting-started/perform-exploratory-tests",
+      "redirect_url": "/vsts/test/perform-exploratory-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/record-play-back-manual-tests.md",
-      "redirect_url": "/vsts/manual-test/getting-started/record-play-back-manual-tests",
+      "redirect_url": "/vsts/test/mtm/record-play-back-manual-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/run-manual-tests.md",
-      "redirect_url": "/vsts/manual-test/getting-started/run-manual-tests",
+      "redirect_url": "/vsts/test/run-manual-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/track-test-status.md",
-      "redirect_url": "/vsts/manual-test/getting-started/track-test-status",
+      "redirect_url": "/vsts/test/track-test-status",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/getting-started/user-acceptance-testing.md",
-      "redirect_url": "/vsts/manual-test/getting-started/user-acceptance-testing",
+      "redirect_url": "/vsts/test/user-acceptance-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/collect-more-diagnostic-data-in-manual-tests.md",
-      "redirect_url": "/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests",
+      "redirect_url": "/vsts/test/mtm/collect-more-diagnostic-data-in-manual-tests",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md",
-      "redirect_url": "/vsts/manual-test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan",
+      "redirect_url": "/vsts/test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/copying-and-cloning-test-suites-and-test-cases.md",
-      "redirect_url": "/vsts/manual-test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_url": "/vsts/test/mtm/copying-and-cloning-test-suites-and-test-cases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/exploratory-testing-using-microsoft-test-manager.md",
-      "redirect_url": "/vsts/manual-test/mtm/exploratory-testing-using-microsoft-test-manager",
+      "redirect_url": "/vsts/test/mtm/exploratory-testing-using-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/guidance-mtm-usage.md",
-      "redirect_url": "/vsts/manual-test/mtm/guidance-mtm-usage",
+      "redirect_url": "/vsts/test/mtm/guidance-mtm-usage",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/plan-manual-tests-with-microsoft-test-manager.md",
-      "redirect_url": "/vsts/manual-test/mtm/plan-manual-tests-with-microsoft-test-manager",
+      "redirect_url": "/vsts/test/mtm/plan-manual-tests-with-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/run-manual-tests-with-microsoft-test-manager.md",
-      "redirect_url": "/vsts/manual-test/mtm/run-manual-tests-with-microsoft-test-manager",
+      "redirect_url": "/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/share-steps-between-test-cases.md",
-      "redirect_url": "/vsts/manual-test/mtm/share-steps-between-test-cases",
+      "redirect_url": "/vsts/test/mtm/share-steps-between-test-cases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/test-configurations-specifying-test-platforms.md",
-      "redirect_url": "/vsts/manual-test/mtm/test-configurations-specifying-test-platforms",
+      "redirect_url": "/vsts/test/mtm/test-configurations-specifying-test-platforms",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/mtm/testing-windows-store-apps.md",
-      "redirect_url": "/vsts/manual-test/mtm/testing-windows-store-apps",
+      "redirect_url": "/vsts/test/mtm/testing-microsoft-store-apps",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/stakeholder/provide-stakeholder-feedback.md",
-      "redirect_url": "/vsts/manual-test/stakeholder/provide-stakeholder-feedback",
+      "redirect_url": "/vsts/test/provide-stakeholder-feedback",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/stakeholder/request-stakeholder-feedback.md",
-      "redirect_url": "/vsts/manual-test/stakeholder/request-stakeholder-feedback",
+      "redirect_url": "/vsts/test/request-stakeholder-feedback",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/stakeholder/track-stakeholder-feedback.md",
-      "redirect_url": "/vsts/manual-test/stakeholder/track-stakeholder-feedback",
+      "redirect_url": "/vsts/test/track-stakeholder-feedback",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/stakeholder/voluntary-stakeholder-feedback.md",
-      "redirect_url": "/vsts/manual-test/stakeholder/voluntary-stakeholder-feedback",
+      "redirect_url": "/vsts/test/voluntary-stakeholder-feedback",
       "redirect_document_id": false
     },
     {
@@ -4098,6 +4088,61 @@
     {
       "source_path": "docs/test/performance-tests/run-performance-tests-app-before-release.md",
       "redirect_url": "/vsts/test/load-test/run-performance-tests-app-before-release",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/test-with-unified-agent-and-phases.md",
+      "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/run-tests-in-parallel.md",
+      "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/run-automated-tests-with-microsoft-test-manager.md",
+      "redirect_url": "/vsts/test/mtm/run-automated-tests-with-microsoft-test-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/example-continuous-testing.md",
+      "redirect_url": "/vsts/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/test-build.md",
+      "redirect_url": "/vsts/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/associate-automated-results-with-requirements.md",
+      "redirect_url": "/vsts/test/associate-automated-results-with-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/associate-automated-test-with-test-case.md",
+      "redirect_url": "/vsts/test/associate-automated-test-with-test-case",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/run-automated-tests-from-test-hub.md",
+      "redirect_url": "/vsts/test/run-automated-tests-from-test-hub",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/collect-screenshots-and-video.md",
+      "redirect_url": "/vsts/test/collect-screenshots-and-video",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/overview.md",
+      "redirect_url": "/vsts/pipelines/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/test/index.md",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
@@ -7457,17 +7502,17 @@
     },
     {
       "source_path": "docs/build-release/test/associate-automated-results-with-requirements.md",
-      "redirect_url": "/vsts/pipelines/test/associate-automated-results-with-requirements",
+      "redirect_url": "/vsts/test/associate-automated-results-with-requirements",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/test/associate-automated-test-with-test-case.md",
-      "redirect_url": "/vsts/pipelines/test/associate-automated-test-with-test-case",
+      "redirect_url": "/vsts/test/associate-automated-test-with-test-case",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/test/collect-screenshots-and-video.md",
-      "redirect_url": "/vsts/pipelines/test/collect-screenshots-and-video",
+      "redirect_url": "/vsts/test/collect-screenshots-and-video",
       "redirect_document_id": true
     },
     {
@@ -7482,7 +7527,7 @@
     },
     {
       "source_path": "docs/build-release/test/example-continuous-testing.md",
-      "redirect_url": "/vsts/pipelines/test/example-continuous-testing",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7492,12 +7537,12 @@
     },
     {
       "source_path": "docs/build-release/test/index.md",
-      "redirect_url": "/vsts/pipelines/test/index",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/test/overview.md",
-      "redirect_url": "/vsts/pipelines/test/overview",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7512,22 +7557,22 @@
     },
     {
       "source_path": "docs/build-release/test/run-automated-tests-from-test-hub.md",
-      "redirect_url": "/vsts/pipelines/test/run-automated-tests-from-test-hub",
+      "redirect_url": "/vsts/test/run-automated-tests-from-test-hub",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/test/run-automated-tests-with-microsoft-test-manager.md",
-      "redirect_url": "/vsts/pipelines/test/run-automated-tests-with-microsoft-test-manager",
+      "redirect_url": "/vsts/test/mtm/run-automated-tests-with-microsoft-test-manager",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/test/run-tests-in-parallel.md",
-      "redirect_url": "/vsts/pipelines/test/run-tests-in-parallel",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/test/set-up-continuous-test-environments-builds.md",
-      "redirect_url": "/vsts/pipelines/test/set-up-continuous-test-environments-builds",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -7537,7 +7582,7 @@
     },
     {
       "source_path": "docs/build-release/test/test-build.md",
-      "redirect_url": "/vsts/pipelines/test/test-build",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
