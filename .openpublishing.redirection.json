@@ -3452,62 +3452,97 @@
     },
     {
       "source_path": "docs/search/administration.md",
-      "redirect_url": "/vsts/search/code/administration",
+      "redirect_url": "/vsts/project/search/administration",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/advanced-search.md",
-      "redirect_url": "/vsts/search/code/advanced-search",
+      "redirect_url": "/vsts/project/search/advanced-code-search-syntax",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/get-started.md",
-      "redirect_url": "/vsts/search/overview",
+      "redirect_url": "/vsts/project/search/code-search",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/release-notes.md",
-      "redirect_url": "/vsts/search/overview",
+      "redirect_url": "/vsts/project/search/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/repos-and-projects.md",
-      "redirect_url": "/vsts/search/code/advanced-search",
+      "redirect_url": "/vsts/project/search/advanced-code-search-syntax",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/search-results.md",
-      "redirect_url": "/vsts/search/code/advanced-search",
+      "redirect_url": "/vsts/project/search/advanced-code-search-syntax",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/code/get-started.md",
-      "redirect_url": "/vsts/search/code/code-search",
+      "redirect_url": "/vsts/project/search/code-search",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/code/release-notes.md",
-      "redirect_url": "/vsts/search/overview",
+      "redirect_url": "/vsts/project/search/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/code/repos-and-projects.md",
-      "redirect_url": "/vsts/search/code/advanced-search",
+      "redirect_url": "/vsts/project/search/advanced-code-search-syntax",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/code/search-results.md",
-      "redirect_url": "/vsts/search/code/advanced-search",
+      "redirect_url": "/vsts/project/search/advanced-code-search-syntax",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/workitem/get-started.md",
-      "redirect_url": "/vsts/search/workitem/work-item-search",
+      "redirect_url": "/vsts/project/search/work-item-search",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/search/workitem/search-results.md",
-      "redirect_url": "/vsts/search/workitem/advanced-search-syntax",
+      "redirect_url": "/vsts/project/search/advanced-work-item-search-syntax",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/search/index.md",
+      "redirect_url": "/vsts/project/search/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/search/overview.md",
+      "redirect_url": "/vsts/project/search/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/search/code/administration.md",
+      "redirect_url": "/vsts/project/search/administration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/search/code/advanced-search.md",
+      "redirect_url": "/vsts/project/search/advanced-code-search-syntax",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/search/code/code-search.md",
+      "redirect_url": "/vsts/project/search/code-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/search/workitem/advanced-search-syntax.md",
+      "redirect_url": "/vsts/project/search/advanced-work-item-search-syntax",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/search/workitem/work-item-search.md",
+      "redirect_url": "/vsts/project/search/work-item-search",
       "redirect_document_id": false
     },
     {
