@@ -1,4 +1,8 @@
-<b>VSTS (Inheritance)</b>  
+---
+ms.topic: include
+---
+
+**VSTS (Inheritance)**
 
 <!---
 > [!IMPORTANT]  

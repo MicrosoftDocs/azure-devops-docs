@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 
 ## Prerequisites
 
@@ -7,7 +11,8 @@
 * You must be a member of the Contributors group or be granted [Stakeholder access](/vsts/security/get-started-stakeholder) to add or modify work items. Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow**. 
 * If you haven't been added to a team project or team, [get added now](/vsts/accounts/add-account-users-assign-access-levels). 
 
-To learn more, see [Set permissions and access for work tracking](/vsts/security/set-permissions-access-work-tracking). 
+To learn more, see [Set permissions and access for work tracking](/vsts/security/set-permissions-access-work-tracking).
+
 
 ::: moniker-end
 
@@ -19,6 +24,9 @@ To learn more, see [Set permissions and access for work tracking](/vsts/security
 
 To learn more, see [Set permissions and access for work tracking](/vsts/security/set-permissions-access-work-tracking). 
 
+
 ::: moniker-end 
+
+
 
 
