@@ -1112,7 +1112,7 @@
     },
     {
       "source_path": "docs/manual-test/getting-started/getting-started-with-manual-testing.md",
-      "redirect_url": "/vsts/manual-test/getting-started/create-test-cases",
+      "redirect_url": "/vsts/test/create-test-cases",
       "redirect_document_id": false
     },
     {
@@ -3852,7 +3852,7 @@
     },
     {
       "source_path": "docs/test/manual-exploratory-testing/collect-diagnostic-data.md",
-      "redirect_url": "/vststest/collect-diagnostic-data",
+      "redirect_url": "/vsts/test/collect-diagnostic-data",
       "redirect_document_id": false
     },
     {
@@ -4221,8 +4221,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/build-release/tasks/test/vstest.md",
-      "redirect_url": "https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md",
+      "source_path": "docs/build-release/tasks/test/visual-studio-test.md",
+      "redirect_url": "https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md",
       "redirect_document_id": false
     },
     {
@@ -5197,7 +5197,7 @@
     },
     {
       "source_path": "docs/manual-test/mtm/testing-windows-store-apps.md",
-      "redirect_url": "/vsts/manual-test/mtm/testing-microsoft-store-apps",
+      "redirect_url": "/vsts/test/mtm/testing-microsoft-store-apps",
       "redirect_document_id": false
     },
     {
@@ -7336,6 +7336,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/build-release/tasks/deploy/azure-sql-database-deployment.md",
+      "redirect_url": "https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/build-release/tasks/_shared/yaml/PowerShellOnTargetMachinesV3.3.md",
       "redirect_url": "/vsts/pipelines/tasks/_shared/yaml/PowerShellOnTargetMachinesV3.3",
       "redirect_document_id": true
@@ -7592,7 +7597,7 @@
     },
     {
       "source_path": "docs/build-release/test/test-with-unified-agent-and-phases.md",
-      "redirect_url": "/vsts/pipelines/test/test-with-unified-agent-and-phases",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
