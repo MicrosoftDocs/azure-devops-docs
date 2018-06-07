@@ -49,7 +49,7 @@ After you've verified your customizations, you can now apply the process to your
 
 
 <!--- 
-If you have several projects that you want to change, you can change several projects at once by going to the **Process** page and choosing the [**Change team projects…** option](../../../work/customize/process/manage-process.md). 
+If you have several projects that you want to change, you can change several projects at once by going to the **Process** page and choosing the [**Change team projects…** option](../../../organizations/settings/work/manage-process.md). 
 --> 
 
 ## Related articles

@@ -19,7 +19,7 @@ As you plan and track your project, you'll find you may want to configure a feat
 
 Customizations you make occur at one of three levels:   
 
-- **Team assets or tools**: Each team can customize or configure their specific tools, for details,see [About teams and Agile tools](../../settings/about-teams-and-settings.md)
+- **Team assets or tools**: Each team can customize or configure their specific tools, for details,see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
 - **Team project level**: Add or modify work item types, data fields, backlog levels, and other objects shared across teams  
 - **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the team project and assigning users or groups to specific access levels.  
 

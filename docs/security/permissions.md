@@ -72,7 +72,7 @@ SharePoint Web Application Services
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-##&nbsp;&nbsp;&nbsp;Server-level groups 
+## Server-level groups 
 
 When you install TFS, the system creates default groups that have [deployment-wide, server-level permissions](#server-permissions). You can neither remove nor delete the built-in server-level groups.
 
@@ -203,7 +203,7 @@ You can't remove or delete the default server level groups.
 
 <a name="collection"></a>
 
-##&nbsp;&nbsp;&nbsp;Collection-level groups
+## Collection-level groups
 
 When you create a VSTS account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
 
@@ -220,7 +220,6 @@ Project Collection Valid Users
 
 <img src="_img/permissions/collection-admin-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
 
-#### Groups
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -322,7 +321,7 @@ Release Administrators (TFS 2017, VSTS)
 
 <a id="project-level-groups" />
 
-##&nbsp;&nbsp;&nbsp;Project-level groups
+## Project-level groups
 
 For each team project that you create, the system creates the followings team project-level groups. These groups are assigned [project-level permissions](#team-project-level-permissions).
 
@@ -411,7 +410,7 @@ Show bugs on backlogs and boards
 -->
 
 
-##&nbsp;&nbsp;&nbsp;Team administrator role
+## Team administrator role
 
 For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing  team assets. To learn more, see [About security roles, Team administrator role](about-security-roles.md#team-administrator-role). To add a user as a team administrator, see [Add a team administrator](../work/scale/add-team-administrator.md).
 
@@ -428,7 +427,7 @@ The system manages permissions at different levels&mdash;server, collection, pro
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-##&nbsp;&nbsp;&nbsp;Server-level 
+## Server-level permissions 
 
 You manage server-level permissions through the [Team Foundation Administration Console](/tfs/server/admin/add-administrator-tfs) or [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#permissions). Team Foundation Administrators are granted all server-level permissions. Other server-level groups have select permission assignments.
 
@@ -536,7 +535,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 <a id="collection">  </a>
 <a id="collection-level"> </a>
 
-##&nbsp;&nbsp;&nbsp;Collection-level
+## Collection-level 
 
 You manage collection-level permissions through the [web portal admin context](../user-guide/work-web-portal.md#admin-context) or [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
 
@@ -604,13 +603,19 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="create-process-permission">Create process</td>
 		<td>
-			Can [create an inherited process](../work/customize/process/manage-process.md). Applies to VSTS only.
+			Can [create an inherited process](../organizations/settings/work/manage-process.md). Applies to VSTS only.
+		</td>
+	</tr>
+	<tr>
+		<td id="delete-field-permission">Delete field from account</td>
+		<td>
+			Can [delete a custom field that was added to a process](../organizations/settings/work/customize-process-field.md). Applies to VSTS only.
 		</td>
 	</tr>
 	<tr>
 		<td id="delete-process-permission">Delete process</td>
 		<td>
-			Can [delete an inherited process](../work/customize/process/manage-process.md). Applies to VSTS only.
+			Can [delete an inherited process](../organizations/settings/work/manage-process.md). Applies to VSTS only.
 		</td>
 	</tr>
 	<tr>
@@ -662,7 +667,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="edit-process-permission">Edit process</td>
 		<td>
-			Can edit a [custom inherited process](../work/customize/process/customize-process.md). Applies to VSTS only.
+			Can edit a [custom inherited process](../organizations/settings/work/customize-process.md). Applies to VSTS only.
 		</td>
 	</tr>
 	<tr>
@@ -726,7 +731,7 @@ You manage collection-level permissions through the [web portal admin context](.
 <a name="team-project-level-permissions">  </a>
 <a name="project-level-permissions" />
 
-##&nbsp;&nbsp;&nbsp;Project-level
+## Project-level permissions
 
 You manage project-level permissions from the [web portal admin context](../user-guide/work-web-portal.md#admin-context) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
 
@@ -833,14 +838,15 @@ You manage project-level permissions from the [web portal admin context](../user
 
 <a name="analytics-views-permissions"></a>
 
-##&nbsp;&nbsp;&nbsp;Analytics views (object-level)     
+## Analytics views (object-level)     
 
 With shared Analytics views, you can grant specific permissions to view, edit, or delete a view that you create.  You manage the security of Analytics views from the [web portal](../report/analytics/analytics-security.md). 
 
 > [!div class="mx-imgBorder"]
 > ![Manage permissions](../report/analytics/_img/editable-views/view-permissions.png)  
 
-The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views?](../report/analytics/what-are-analytics-views.md) 
+The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views?](../report/analytics/what-are-analytics-views.md)
+
 
 <table valign="top" width="100%">
 <tbody valign="top">
@@ -873,7 +879,7 @@ The following permissions are defined for each shared Analytics view. All valid 
 
 <a name="build"></a>
 
-##&nbsp;&nbsp;&nbsp;Build (object-level)
+## Build (object-level)
 
 You manage build permissions [for each build defined in the web portal](../pipelines/policies/set-permissions.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#build-permissions). Project Administrators are granted all build permissions and Build Administrators are assigned most of these permissions. You can set build permissions for all build definitions or for each build definition.
 
@@ -1021,7 +1027,8 @@ Commenting this section out as it duplicates that defined in the following table
 <a id="git-repo">  </a>
 <a id="git-repository">  </a>
 <a id="git-repository-permissions-object-level">  </a>
-##&nbsp;&nbsp;&nbsp;Git repository (object-level)
+<a id="nbspnbspnbspgit-repository-object-level">  </a>
+## Git repository (object-level)
 
 <!---
 Contribute 
@@ -1077,7 +1084,7 @@ By default, the team project level and collection level Readers groups have only
 		<td id="git-contribute-permission">Contribute</td>
 		<td>
 		At the repository level, can push their changes to existing branches in the repository and can complete pull requests. Users who lack this permission but who have [create branch](#git-create-branch-permission) may push changes to new branches. Does not override restrictions in place from [branch policies](../git/branch-policies.md).<br>
-		At the branch level, can push their changes to the branch and lock the branch.
+		At the branch level, can push their changes to the branch and lock the branch. Locking a branch blocks any new commits from being added to the branch by others and prevents other users from changing the existing commit history. 
 		</td>
 	</tr>
 
@@ -1150,7 +1157,7 @@ By default, the team project level and collection level Readers groups have only
 	<tr>
 		<td id="git-remove-others-locks-permission">Remove Others' Locks</td>
 		<td>
-			Can remove [branch locks](../git/lock-branches.md) set by other users.
+			Can remove [branch locks](../git/lock-branches.md) set by other users. Locking a branch blocks any new commits from being added to the branch by others and prevents other users from changing the existing commit history. 
 		</td>
 	</tr>
 	<tr>
@@ -1171,7 +1178,7 @@ To manage Git repo and branch permissions, see [Set branch permissions](../git/b
 
 <a id="tfvc">  </a>
 
-##&nbsp;&nbsp;&nbsp;TFVC (object-level)
+## TFVC (object-level)
 
 You manage the security of each TFVC branch from the [web portal](set-git-tfvc-repository-permissions.md) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#tfvc-permissions). Project Administrators are granted most of these permissions which appear only for a team project that's been configured to use Team Foundation Version Control as a source control system. In version control permissions, explicit deny takes precedence over administrator group permissions.
 
@@ -1253,7 +1260,7 @@ In version control permissions, explicit deny takes precedence over administrato
 			Lock  
 		</td>
 		<td data-th="Description">
-			Can lock and unlock folders or files. 
+			Can lock and unlock folders or files. A folder or file tracked can be locked or unlocked to deny or restore a user's privileges. Privileges include checking out an item for edit into a different workspace or checking in Pending Changes to an item from a different workspace. 
 		</td>
 	</tr>
 	<tr>
@@ -1358,7 +1365,7 @@ In version control permissions, explicit deny takes precedence over administrato
 <a name="area-path-object-level"></a>
 <a name="area-permissions"></a>
 
-##&nbsp;&nbsp;&nbsp;Area path (object-level)     
+## Area path (object-level)     
 
 Area path permissions grant or restrict access to branches of the area hierarchy
 and to the work items in those areas.
@@ -1472,7 +1479,7 @@ Members of the Project Administrators group are automatically granted permission
 
 
 <a name="iteration-path-permissions"></a>
-##&nbsp;&nbsp;&nbsp;Iteration Path (object-level) 
+## Iteration Path (object-level) 
 
 Iteration path permissions grant or restrict access to create and manage iteration paths.
 
@@ -1549,7 +1556,7 @@ permissions to create, edit, or delete iteration nodes.
 
 <a id="query">  </a>
 
-##&nbsp;&nbsp;&nbsp;Work item query and folder (object-level)
+## Work item query and folder (object-level)
 
 You manage query and query folder permissions through the [web portal](../work/track/set-query-permissions.md). Project Administors are granted all of these permissions. Contributors are granted Read permissions only. Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the team project.
 
@@ -1593,7 +1600,7 @@ Consider granting the Contribute permissions to users or groups that require the
 ::: moniker range="vsts || >= tfs-2017"
 
 
-##&nbsp;&nbsp;&nbsp;Delivery Plans (object-level)   
+## Delivery Plans (object-level)   
 
 You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 
@@ -1633,7 +1640,7 @@ You manage plan permissions through the [web portal](set-permissions-access-work
 ::: moniker range="vsts"
 
 
-##&nbsp;&nbsp;&nbsp;Inherited process (object-level)   
+## Process (object-level)   
 You can manage the permissions for each inherited process that you create  through the [web portal](set-permissions-access-work-tracking.md#process-permissions). You manage permissions for each process through it's Security dialog. Project Collection Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
 
 
@@ -1665,7 +1672,7 @@ You can manage the permissions for each inherited process that you create  throu
 
 <a id="tags">  </a>
 
-##&nbsp;&nbsp;&nbsp;Work item tags
+## Work item tags
 
 You manage tagging permissions mostly from the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#tagging-permissions). Contributors can add tags to work items and use them to quickly filter a backlog, board, or query results view.
 
@@ -1767,7 +1774,7 @@ View releases
 
 ::: moniker range="tfs-2015"
 
-##&nbsp;&nbsp;&nbsp;Release (object-level) 
+## Release (object-level) 
 
 If you are working with the Release Management client and server supported for TFS 2015, see [Automate deployments with Release Management](../release/previous-version/release-management-overview.md).
 
@@ -1776,7 +1783,7 @@ If you are working with the Release Management client and server supported for T
 
 ::: moniker range="vsts || >= tfs-2017"
 
-##&nbsp;&nbsp;&nbsp;Release (object-level) 
+## Release (object-level) 
 
 You manage permissions [for each release defined in the web portal](../pipelines/policies/set-permissions.md). Project Administrators and Release Administrators are granted all release management permissions. These permissions can be granted or denied in a hierarchical model at the team project level, for a specific release definition, or for a specific environment in a release definition. Within this hierarchy, permissions can be inherited from the parent or overridden.
 
@@ -1812,7 +1819,7 @@ are denied all permissions except **View release definition** and
 
 <a id="task-group">  </a>
 
-##&nbsp;&nbsp;&nbsp;Task group (Build and Release) permissions
+## Task group (Build and Release) permissions
 
 You manage permissions [for task groups from the **Build and Release** hub](../pipelines/policies/set-permissions.md#task-group) of the web portal. Project, Build, and Release Administrators are granted all permissions. Task group permissions follow a hierarchical model. Defaults for all the permissions can be set at the team project
 level and can be overridden on an individual task group definition.
@@ -1829,7 +1836,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 <a id="lab">  </a>
 
-##&nbsp;&nbsp;&nbsp;Lab Management 
+## Lab Management 
 
 Visual Studio Lab Management permissions are specific to virtual machines, environments, and other resources. In addition, the creator of an object in Lab Management is automatically granted all permissions on that object.
 You can set these permissions by using the [TFSLabConfig permissions command-line tool](/tfs/server/ref/command-line/tfslabconfig-cmd#permissions).
@@ -1936,7 +1943,7 @@ By default, the team project level and collection-level Readers groups have only
 
 <a id="alerts">  </a>
 
-##&nbsp;&nbsp;&nbsp;Notifications or alerts
+## Notifications or alerts
 
 There are no UI permissions associated with [managing email notifications or alerts](../work/track/alerts-and-notifications.md). Instead, they can be managed using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).
 
@@ -1961,7 +1968,7 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 
 
 
-##Related notes
+## Related notes
 
 - [About permissions](about-permissions.md)  
 - [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)   

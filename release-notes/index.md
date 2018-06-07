@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 5/30/2018
+ms.date: 6/4/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -53,7 +53,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Dashboards – Create dashboard separate from a team|Reporting|2019|
 |Analytics – Automated Test data|Reporting|2019|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|[Multiple accounts per “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 |[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
 |Publisher certification process|Marketplace|N/A|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
@@ -73,7 +72,9 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Release traceability – Work Item integration|Release|TBD|
 |Configuration as code (YAML) releases - Public Preview|Release|TBD|
 |Package Management – Maven Upstream support|Package|TBD|
-|[Administration – Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
+|[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
+|[Azure Active Directory users in Microsoft Account-backed account](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
+|Connect your VSTS account to Azure Active Directory from within VSTS|Admin|N/A|
 |Release views – support for multiple versions of extensions|Marketplace|N/A|
 
 ### 2018 Q4
@@ -81,6 +82,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Feature  |Area  |Server  |
 |---------|---------|---------|
 |Extensible Pool Providers|Build|TBD|
+|[Bring multiple accounts under and “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 
 ## Current features
 

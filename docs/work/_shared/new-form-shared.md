@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 Here's what you'll see when you preview the new form.  
 
 <img src="../_shared/_img/new-form-user-story-3-col.png" alt="New form for user story" style="border: 2px solid #C3C3C3;" />

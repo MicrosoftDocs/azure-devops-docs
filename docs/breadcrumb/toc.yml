@@ -30,7 +30,7 @@
       topicHref: /vsts/package/index
     - name: Continuous Testing
       tocHref: /vsts/pipelines/
-      topicHref: /vsts/pipelines/test/index
+      topicHref: /vsts/pipelines/index
   - name: Testing
     tocHref: /vsts/test/
     topicHref: /vsts/index#pivot=services&panel=testing
@@ -115,8 +115,8 @@
       tocHref: /vsts/security/
       topicHref: /vsts/security/index
     - name: "Scale & Configure Teams"
-      tocHref: /vsts/settings/
-      topicHref: /vsts/settings/index
+      tocHref: /vsts/organizations/settings/
+      topicHref: /vsts/organizations/settings/index
     - name: Billing
       tocHref: /vsts/billing/
       topicHref: /vsts/billing/index

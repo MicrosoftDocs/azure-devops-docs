@@ -1,5 +1,6 @@
 ---
-title: VSTS and TFS Documentation | VSTS & TFS 
+title: VSTS and TFS Documentation 
+titleSuffixe: VSTS & TFS 
 description: Docs for DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
 layout: HubPage 
 hide_bc: true
@@ -111,7 +112,7 @@ featureFlags:
                                                 <h3>Continuous integration &amp; delivery</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/vsts/deploy-azure/">Deploy to Azure</a></li>
-                                                    <li><a class="barLink" href="/vsts/build-release/">Build and Release</a></li>
+                                                    <li><a class="barLink" href="/vsts/pipelines/">Build and Release</a></li>
                                                     <li><a class="barLink" href="/vsts/package/">Package Management</a></li>
                                                 </ul>
                                             </div>
@@ -142,7 +143,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Test your code</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                                    <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
                                                     <li><a class="barLink" href="/vsts/test/index">Exploratory &amp; Manual Testing</a></li>
                                                     <li><a class="barLink" href="/vsts/test/load-test/index">Load Testing</a></li>
                                                 </ul>
@@ -213,20 +214,20 @@ featureFlags:
                                     </ul>
                                     <h3>Continuous Integration &amp; Delivery</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/build-release/index">Build &amp; Release</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Build &amp; Release</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
                                         <li><a class="barLink" href="/vsts/deploy-azure/index">Deploy to Azure</a></li>
                                         <li><a class="barLink" href="/vsts/package/index">Package Management</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/library/index">Library Assets</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/concepts/agents/agents">Microsoft-hosted and Self-hosted Agents</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/tasks">Task Reference</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/library/index">Library Assets</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/agents/agents">Microsoft-hosted and Self-hosted Agents</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/tasks">Task Reference</a></li>
                                     </ul>
                                     <h3>Testing</h3>
                                     <ul>
                                         <li><a class="barLink" href="/visualstudio/test/unit-test-your-code">Unit and Functional Testing</a></li>
                                         <li><a class="barLink" href="/vsts/test/index">Exploratory &amp; Manual Testing</a></li>
                                         <li><a class="barLink" href="/vsts/test/load-test/index">Load Testing</a></li>
-                                        <li><a class="barLink" href="/vsts/build-release/test/index">Continuous Testing</a></li>
+                                        <li><a class="barLink" href="/vsts/pipelines/index">Continuous Testing</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -266,7 +267,7 @@ featureFlags:
                                         <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/settings/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
                                         <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
@@ -392,7 +393,7 @@ featureFlags:
                         <a href="#delivery">Continuous Integration &amp; Delivery</a>
                         <ul id="delivery" class="cardsA">
                             <li>
-                                <a href="/vsts/build-release/index">
+                                <a href="/vsts/pipelines/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -411,7 +412,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/test/index">
+                                <a href="/vsts/pipelines/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -469,7 +470,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/concepts/library/index">
+                                <a href="/vsts/pipelines/library/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -488,7 +489,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/concepts/agents/agents">
+                                <a href="/vsts/pipelines/agents/agents">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -507,7 +508,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/tasks">
+                                <a href="/vsts/pipelines/tasks">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -590,7 +591,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/build-release/test/index">
+                                <a href="/vsts/pipelines/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -998,7 +999,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/settings/index">
+                                <a href="/vsts/organizations/settings/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <a id="new-work-items"></a>
 
 ### Team context and new work items  

@@ -45,8 +45,8 @@ Next, you will want to configure your build agents. As part of the migration, al
 
 If you plan on using your existing on-premises private build agents, there is one more recommended step that needs to be taken after registering them to your new account. Clearing their cache will ensure that you don't encounter any build issues related to older TFVC or Git pointers to your on-premises TFS collection. See [refreshing caches on client computers](/tfs/server/admin/backup/refresh-data-caches) for details on how to accomplish this task. 
 
-## Release Management (Preview)
-Release Management is currently a [preview](https://aka.ms/vstsimportpreview) feature that can be included with an import. If you elected to include Release Management with your import then your release definitions and history data will be included with your import. However, like builds, [agents](../pipelines/agents/agents.md) and pools need to be reconfigured against the new VSTS account. 
+## Release Management
+If you used Release Management in TFS then your release definitions and history data will be included with your import. However, like builds, [agents](../pipelines/agents/agents.md) and pools need to be reconfigured against the new VSTS account. 
 
 ## Package Management (Preview)
 If you elected to include [preview](https://aka.ms/vstsimportpreview) features with your import and you had [Package Management](https://www.visualstudio.com/team-services/package-management/) data in your TFS collection, then you will need to install the Package Management [extension](https://marketplace.visualstudio.com/items?itemName=ms.feed#) on your account post import. 

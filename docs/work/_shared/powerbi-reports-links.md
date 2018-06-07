@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 <a id="powerbi-reports"></a>
 ### Analytics widgets and Power BI reports 

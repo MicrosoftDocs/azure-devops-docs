@@ -154,7 +154,7 @@ In the web portal, work items appear in query results and on the backlog and boa
 
 ## Related articles
 
-This topic addressed how to add and customize WITs and process configuration for Hosted XML and On-premises XML process models. For information on adding and customizing fields for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model , see [Customize a process](process/customize-process.md).  
+This topic addressed how to add and customize WITs and process configuration for Hosted XML and On-premises XML process models. For information on adding and customizing fields for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model , see [Customize a process](../../organizations/settings/work/customize-process.md).  
 
 Other related topics or resources: 
 

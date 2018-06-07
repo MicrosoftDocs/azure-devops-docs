@@ -20,7 +20,7 @@ You access all Agile tools from the **Work** hub. If you're new to Agile, see [W
 
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 
-Most Agile tools are [scoped to a team](../../settings/about-teams-and-settings.md). This supports team autonomy as well as scaling the system.  
+Most Agile tools are [scoped to a team](../../organizations/settings/about-teams-and-settings.md). This supports team autonomy as well as scaling the system.  
 
 > [!div class="mx-tdBreakAll"]  
 > |Backlogs  |Task boards  |Kanban boards  |  Other  | 

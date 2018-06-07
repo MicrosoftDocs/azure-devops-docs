@@ -79,8 +79,8 @@ For each contribution in your extension, the manifest defines
 
 | Property           | Description                                                                                                                         
 |--------------------|----------------------------------------------------------------------------------------|                                
-| name               | Name of the hub.					                                                      |                   
-| uri                | Path (relative to the extenion's base URI) of the page to the surface as the tab       |                   
+| name               | Name of the hub					                                                      |                   
+| uri                | Path (relative to the extension's base URI) of the page to surface as the tab       |                   
 | registeredObjectId | Id of the object registered for the tab. Include code like the example below in the html file indicated in the "uri" property of the contribution shown above. | 
 
 ### Scopes
@@ -112,7 +112,7 @@ Learn about all of the places where you can add a hub in the [contributions refe
 
 ## Next Steps:
 
-Now that you've written your extension, the next steps are to Package, Publish, and Install your extension. You can also check out the 
+Now that you've written your extension, the next steps are to Package, Publish, and Install it. You can also check out the 
 documentation for Testing and Debugging your extension. 
 
 <div name="row" style="padding-top:15px">
