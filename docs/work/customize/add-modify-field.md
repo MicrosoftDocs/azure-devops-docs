@@ -326,11 +326,11 @@ To enable or disable indexing for a field, use the [**witadmin indexfield** comm
 
 ## Related articles
 
-This topic addressed how to add and customize fields for Hosted XML and On-premises XML process models. For information on adding and customizing WITs for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model, see [Customize a process](process/customize-process.md). 
+This topic addressed how to add and customize fields for Hosted XML and On-premises XML process models. For information on adding and customizing WITs for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). 
 
 Other related topics or resources: 
 
-- [Work tracking object limits](../customize/object-limits.md) 
+- [Work tracking object limits](../../organizations/settings/work/object-limits.md) 
 - [Customize the work tracking experience](customize-work.md)  
 - [Field data type and field attributes](reference/define-modify-work-item-fields.md)    
 - [WebLayout and Control elements](reference/weblayout-xml-elements.md)
@@ -367,7 +367,7 @@ To list or review fields, you can use one of the following tools, depending on t
 <tbody valign="top" align="center">
 
 <tr>
-<td align="left">[Web portal: List inherited and custom-defined fields](process/customize-process-field.md#review-fields)</td>
+<td align="left">[Web portal: List inherited and custom-defined fields](../../organizations/settings/work/customize-process-field.md#review-fields)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)<sup>1</sup></td>
 <td> </td>

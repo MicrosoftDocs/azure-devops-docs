@@ -16,7 +16,7 @@ ms.date: 10/17/2017
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]
  
-Each team has access to a number of Agile tools as described in [About teams and Agile tools](../../settings/about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
+Each team has access to a number of Agile tools as described in [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
 Prior to setting team defaults, [add the teams](multiple-teams.md) you want and [schedule your shared sprint schedule](../scrum/define-sprints.md). Optionally, [add area paths](../customize/set-area-paths.md) you want to use to group work items. 
 

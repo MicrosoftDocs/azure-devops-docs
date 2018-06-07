@@ -54,10 +54,18 @@
       href: test-different-configurations.md
     - name: Repeat a test with different data
       href: repeat-test-with-different-data.md
+    - name: Collect screenshots and video
+      href: collect-screenshots-and-video.md
     - name: Collect diagnostic data
       href: collect-diagnostic-data.md
     - name: Manage test results
       href: how-long-to-keep-test-results.md
+    - name: Associate tests with test cases
+      href: associate-automated-test-with-test-case.md
+    - name: Run tests from the Test hub
+      href: run-automated-tests-from-test-hub.md
+    - name: Associate results with requirements
+      href: associate-automated-results-with-requirements.md
   - name: "Test & Feedback extension"
     items:
     - name: Explore work items
@@ -96,8 +104,10 @@
       href: mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md
     - name: Plan tests with MTM
       href: mtm/plan-manual-tests-with-microsoft-test-manager.md
-    - name: Run tests with MTM
+    - name: Run manual tests with MTM
       href: mtm/run-manual-tests-with-microsoft-test-manager.md
+    - name: Run automated tests with MTM
+      href: mtm/run-automated-tests-with-microsoft-test-manager.md
     - name: Record and play back tests
       href: mtm/record-play-back-manual-tests.md
     - name: Explore your app
@@ -150,7 +160,9 @@
       href: https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
     - name: Load test posts
       href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+  - name: Plug-ins for Visual Studio
+    href: http://go.microsoft.com/fwlink/?LinkID=246630
   - name: Continuous testing
-    href: ../pipelines/test/index.md
+    href: ../pipelines/index.md
   - name: Unit testing
     href: https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code

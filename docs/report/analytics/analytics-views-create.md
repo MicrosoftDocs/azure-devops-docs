@@ -108,7 +108,7 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
 In the next tab, **Fields**, you can choose between **Common fields** and **Custom fields**. You can view the list of fields at the bottom. If you are missing a required field, you can change your selection to customized fields and choose "Add" to add
 
-* **Common fields** - Choose this option to include the set of fields that are used broadly to create reports on work item data. Common fields also include your project's [custom fields](../../work/customize/process/customize-process-field.md). This list is auto-generated every time you refresh your report. Also, a significant advantage of this selection is that any custom fields defined after the view is created will be included automatically.
+* **Common fields** - Choose this option to include the set of fields that are used broadly to create reports on work item data. Common fields also include your project's [custom fields](../../organizations/settings/work/customize-process-field.md). This list is auto-generated every time you refresh your report. Also, a significant advantage of this selection is that any custom fields defined after the view is created will be included automatically.
 
 * **Customized fields** - Choose this option to include specific fields and exclude others. To start with a fresh slate, choose **Remove All** and then add fields incrementally by clicking ![plus icon](../_img/icons/blue-plus.png) **Add** option towards the bottom of the dialog. 
 

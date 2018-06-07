@@ -25,7 +25,7 @@ You grant or restrict access to various work tracking features by granting users
 > |**Team administrator role** | - Configure team settings<br/>- Define and edit team dashboards<br/>- Define and edit team-level work item templates<br/>- Add team members and team administrators|
 > |**Object-level permissions** |- [Modify work items under an area path](#set-permissions-area-path)<br/>- [Create and edit nodes under an area path or iteration path](#set-permissions-area-path)<br/>- [Define and edit queries or query folders](#work-item-queries)<br/>- [Define and edit Delivery Plans](#plan-permissions) | 
 > |**Project-level permissions** |- Create work item tags<br/>- Delete and restore work items<br/>- [Move work items out of a team project](#move-delete-permissions)<br/>- [Permanently delete work items](#move-delete-permissions)<br/>- [Delete test artifacts](#delete-test-permissions)<br/>- Edit shared work item queries<br/>- Add teams and team administrators<br/>- Create and manage area and iteration paths<br/>- Edit project-level permissions<br/>- Customize a team project (On-premises XML  or Hosted process models) | 
-> |**Project collection-level permissions** | - Create, delete, or edit a process (Inheritance process model, VSTS only)<br/>- Edit collection level permissions | 
+> |**Project collection-level permissions** | - Create, delete, or edit a process (Inheritance process model, VSTS only)<br/>- Delete field from account(Inheritance process model, VSTS only)<br/>- Manage process permissions (Inheritance process model, VSTS only)<br/>- Edit collection level permissions | 
 
 Project collection-level permissions include all permissions you can set at the project-level.
 

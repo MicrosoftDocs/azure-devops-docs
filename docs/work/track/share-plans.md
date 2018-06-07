@@ -35,7 +35,7 @@ Using work items, you can share information in the following ways:
 
 To convey detailed information, you can format text and insert images inline within the description field or any HTML field type.   
 
-The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type, if you've [customized the process](../customize/process/customize-process.md), and the platform you work on.   
+The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. You can format text in HTML data fields, such as the Description, Accepted Criteria, and History. Available fields depend on the work item type, if you've [customized the process](../../organizations/settings/work/customize-process.md), and the platform you work on.   
 
 The specific set of formatting features differs depending on the client you use. In all clients, you can bold, italicize, and underline text. You can also add and remove hyperlinks, format text as ordered or unordered lists, and add images. 
 

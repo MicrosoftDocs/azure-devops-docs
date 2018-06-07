@@ -17,7 +17,7 @@ ms.date: 05/10/2017
 <p><b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b></p>
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Add a rule to a work item type](../process/custom-rules.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
+>This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 

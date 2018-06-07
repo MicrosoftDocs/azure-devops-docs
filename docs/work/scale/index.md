@@ -16,7 +16,7 @@ ms.date: 10/04/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../settings/index.md).
+Manage portfolios and gain visibility across teams. For guidance on adding teams, see [Scale & Configure teams](../../organizations/settings/index.md).
 
 ## Quickstarts
 
@@ -56,7 +56,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 
 ## Resources  
-- [Scale & Configure Teams](../../settings/index.md)
+- [Scale & Configure Teams](../../organizations/settings/index.md)
 - [Customization](/azure/devops/agile/agile-culture
 - [Agile culture](/azure/devops/agile/agile-culture)  
 - [Scale Agile to large teams](/azure/devops/agile/scale-agile-large-teams)  

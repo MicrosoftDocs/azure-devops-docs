@@ -474,7 +474,7 @@ Configurable widget that you can use to view and track the status of a release d
 -->
 
 Configurable widget that you can use to track quality continuously from a build or release definition. 
-To learn more, see [Associate automated test results with requirements](../../pipelines/test/associate-automated-results-with-requirements.md). 
+To learn more, see [Associate automated test results with requirements](../../test/associate-automated-results-with-requirements.md). 
 
 ---- 
 ::: moniker-end

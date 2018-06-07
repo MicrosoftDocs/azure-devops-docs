@@ -87,6 +87,6 @@ From the web portal, open the admin page for the team.
 
 ## Related articles
 
-- [About teams & Agile tools](../../settings/about-teams-and-settings.md)
+- [About teams & Agile tools](../../organizations/settings/about-teams-and-settings.md)
 - [Manage portfolios](portfolio-management.md)
 - [Set team favorites](../../collaborate/set-favorites.md) 

@@ -20,7 +20,7 @@ Each team can determine the backlog levels that they use. For example, feature t
 
 ::: moniker range="vsts" 
 If you want additional portfolio backlogs, see the following topics based on the process model you use: 
-- **Inheritance**: [Customize your backlogs or boards for a process](process/customize-process-backlogs-boards.md)  
+- **Inheritance**: [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)  
 - **Hosted XML**: [Add portfolio backlogs](add-portfolio-backlogs.md).  
 
 For an overview of process models, see [Customize your work tracking experience](customize-work.md).

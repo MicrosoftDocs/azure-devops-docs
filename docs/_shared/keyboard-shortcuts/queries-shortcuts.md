@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 
 <a id="queries-web-portal-shortcuts"></a>
 

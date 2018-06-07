@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 
 <a id="kanban-board-shortcuts"></a>
 

@@ -16,7 +16,7 @@ ms.date: 12/15/2017
 <b>VSTS | TFS 2018 | TFS 2017</b>  
 
 > [!IMPORTANT]  
-><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 or later version (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](process/customize-process.md). 
+><b>Feature availability: </b>This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 or later version (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
 

@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range=">= tfs-2015"
 
-VSTS and Team Foundation Server help you implement a continuous integration (CI) and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
+VSTS and Team Foundation Server help you implement a continuous integration (CI), test, and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
 ## 5-Minute quickstarts
 
@@ -89,6 +89,9 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 - [What is continuous delivery?](/azure/devops/what-is-continuous-delivery)  
 - [What is DevOps?](/azure/devops/what-is-devops)   
 - [Build and release marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
+- [Manual and exploratory testing](../test/index.md)
+- [Load and performance testing](../test/load-test/index.md)
+- [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)
 
 ::: moniker-end
 

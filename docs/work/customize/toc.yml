@@ -10,6 +10,16 @@
     href: set-area-paths.md
   - name: Define iteration paths or sprints
     href: set-iteration-paths-sprints.md
+  - name: Add a custom field
+    href: ../../organizations/settings/work/add-custom-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+  - name: Add a custom work item type
+    href: ../../organizations/settings/work/add-custom-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+- name: Tutorials
+  items:
+  - name: Customize a project
+    href: ../../organizations/settings/work/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+  - name: Create and manage a process
+    href: ../../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: "About areas & iterations"
@@ -42,26 +52,22 @@
     - name: Set working days
       href: set-working-days.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
   - name: Inheritance process model
-    href: inheritance-process-model.md
+    href: ../../organizations/settings/work/inheritance-process-model.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     items:
-    - name: Manage processes
-      href: process/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
-    - name: Customize a process
-      href: process/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
-    - name: Add a custom field
-      href: process/customize-process-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
-    - name: Customize a web form
-      href: process/customize-process-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+    - name: Add and manage fields
+      href: ../../organizations/settings/work/customize-process-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Add and manage work item types
+      href: ../../organizations/settings/work/customize-process-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Customize the web layout
+      href: ../../organizations/settings/work/customize-process-form.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize a workflow
-      href: process/customize-process-workflow.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
-    - name: Customize a work item type
-      href: process/customize-process-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+      href: ../../organizations/settings/work/customize-process-workflow.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Add a custom rule
-      href: process/custom-rules.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
+      href: ../../organizations/settings/work/custom-rules.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Add a custom control
-      href: process/custom-controls-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Customize backlogs and boards
-      href: process/customize-process-backlogs-boards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      href: ../../organizations/settings/work/custom-controls-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    - name: Customize backlogs & boards
+      href: ../../organizations/settings/work/customize-process-backlogs-boards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Hosted XML process model
     href: hosted-xml-process-model.md
     items:
@@ -338,7 +344,7 @@
   - name: Work items
     href: ../work-items/index.md
   - name: "Scale & Configure Teams"
-    href: ../../settings/index.md
+    href: ../../organizations/settings/index.md
   - name: Account Management (VSTS)
     href: ../../accounts/index.md
   - name: Marketplace extensions

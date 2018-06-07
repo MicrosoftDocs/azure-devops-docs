@@ -1,5 +1,9 @@
-<a id="live-updates"></a>
+---
+ms.topic: include
+---
 
+
+<a id="live-updates"></a>
 
 ## Enable live updates 
 
