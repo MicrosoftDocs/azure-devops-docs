@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 ### REST API and SDK resources  
 
 To programmatically interact with queries, see one of these REST API resources:  
