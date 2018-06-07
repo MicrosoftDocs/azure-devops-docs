@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 
 To track the progress of a single pull request, click the ![Follow icon](../_img/icons/follow-icon.png) option from the context menu. This signals the system to notify you when changes are made to the PR.  

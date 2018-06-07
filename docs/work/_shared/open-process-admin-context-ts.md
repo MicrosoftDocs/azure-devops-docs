@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
 0. To open the admin context from the user context, click the ![](/vsts/work/_img/icons/gear_icon.png) gear Settings icon and choose **Account settings**.
  

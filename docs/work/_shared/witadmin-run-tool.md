@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 
 <a id="run-witadmin-tool" />
 ## How to run the witadmin command-line tool  
