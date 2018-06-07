@@ -1,3 +1,6 @@
+---
+ms.topic: include
+---
 
-[!NOTE]  
-<b>Feature availability: </b>This feature is currently available only from VSTS.  
+> [!NOTE]  
+**Feature availability**: This feature is currently available only from VSTS.  
