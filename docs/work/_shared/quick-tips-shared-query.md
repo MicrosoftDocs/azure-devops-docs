@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 
 
 ### Quick tips on shared queries
