@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 06/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -87,9 +87,13 @@ You can also view tags in the **History** view, for example by navigating to the
 
 ## Create tag
 
+To create a tag, you must have the [Create Tag](../../security/permissions.md#git-repository-object-level) permission, which is included [by default](../../security/default-git-permissions.md) in the [Contributors](../../security/permissions.md#project-level-groups) group and higher.
+
 # [Web Portal](#tab/vsts-tfs-web-portal)
 
 You can create annotated tags using the web portal from both the **Tags** view and the **Commits** view. To create a lightweight tag, you can use [Git command line](https://git-scm.com/book/en/v2/Git-Basics-Tagging) or [Visual Studio](git-tags.md?tabs=visual-studio#create-tag).
+
+
 
 ### Create tags from the Tags view
 
@@ -145,12 +149,14 @@ You can create both annotated and lightweight tags in Visual Studio from both th
 
 ## Delete tag
 
+>[!IMPORTANT]
+>Use caution when deleting tags from your repo. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags, or if you are sure that the repo hasn't been pulled, cloned, or forked since you created your tag.
 
+To delete a tag, you must have the [Force Push](../../security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set).
 
 # [Web Portal](#tab/vsts-tfs-web-portal)
 
->[!IMPORTANT]
->Use caution when deleting tags from your repo. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags, or if you are sure that the repo hasn't been pulled, cloned, or forked since you created your tag.
+
 
 ### Delete a tag in the remote repo
 
