@@ -1,7 +1,7 @@
 ---
-title: Add tabs on backlog pages | Extensions for VSTS
-description: Extend VSTS with your own hub.
-ms.assetid: 3D0B51DA-66AA-45C7-B9F1-08973CFF7E5E
+title: Add tabs on query results | Extensions for VSTS
+description: Extend VSTS with your own query results tab.
+ms.assetid: b3a55a38-f4c0-464f-b689-86582c430b84
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -9,17 +9,15 @@ ms.manager: douge
 monikerRange: '>= tfs-2017'
 ms.author: elbatk
 author: elbatk
-ms.date: 08/22/2016
+ms.date: 05/15/2018
 ---
 
-# Add tabs on backlog pages
+# Add tabs on query result pages
 
-If you have a web page that can be hosted in an iframe, it can be hosted in VSTS as a tab on the backlog pages.
-In this example, we'll add a simple Hello World tab on the Product Backlog and the Iteration Backlog.
+If you have a web page that can be hosted in an iframe, it can be hosted in VSTS as a tab on the query result pages.
+In this example, we'll add a simple Hello World tab on query results.
 
-![Tab location on the VSTS Product backlog page](../_shared/procedures/_img/backlog-tab/product-backlog-tab.png)
-
-![Tab location on the VSTS Product backlog page](../_shared/procedures/_img/backlog-tab/iteration-backlog-tab.png)
+![Tab location on the VSTS Query Results](../reference/targets/vss/work/web/_img/queryResultsPivotTab.png)
 
 ## Create your web page
 
@@ -33,26 +31,25 @@ Update your [extension manifest](../develop/manifest.md) file with the following
 
 	"contributions": [
 		{
-	        "id": "Fabrikam.HelloWorld.Backlog.Tabs",
-	        "type": "ms.vss-web.tab",
-	        "description": "Adds a 'Hello' tab to the Product and Iteration backlog tabs.",
-	        "targets": [
-	            "ms.vss-work-web.product-backlog-tabs",
-				"ms.vss-work-web.iteration-backlog-tabs",
-	        ],
-	        "properties": {
-	            "name": "Hello",
-	            "uri": "hello-world.html",
-				"registeredObjectId": "backlogTabObject"
-	        }
-	    }
+            "id": "Fabrikam.HelloTab.Query.Tabs",
+            "type": "ms.vss-web.tab",
+            "description": "Adds a 'Hello' tab to the query results",
+            "targets": [
+                "ms.vss-work-web.query-tabs"
+            ],
+            "properties": {
+                "uri": "hello-query-tab.html",
+                "title": "Hello",
+                "name": "Hello"
+            }
+        }
 	],
 	"scopes": [
 		"vso.work"
 	],
 	"files": [
 		{
-			"path": "hello-world.html", "addressable": true
+			"path": "hello-query-tab.html", "addressable": true
 		},
 		{
 			"path": "scripts", "addressable": true
@@ -74,14 +71,14 @@ The **contributions** stanza contains information about your tasks.
 For each contribution in your extension, the manifest defines
 	
 * the type of contribution (tab in this case),
-* the contribution target (the product or iteration backlog tabs in this case),
+* the contribution target (the query tabs in this case),
 * and the properties that are specific to each type of contribution. For a tab, we have
 
 | Property           | Description                                                                                                                         
 |--------------------|----------------------------------------------------------------------------------------|                                
-| name               | Name of the hub					                                                      |                   
+| name               | Name of the tab			                                                      |                   
 | uri                | Path (relative to the extension's base URI) of the page to surface as the tab       |                   
-| registeredObjectId | Id of the object registered for the tab. Include code like the example below in the html file indicated in the "uri" property of the contribution shown above. | 
+| title              | Title of the tab to display                                                          | 
 
 ### Scopes
 It includes the [scopes](./manifest.md#scopes) that your extension requires.
@@ -91,14 +88,14 @@ In this case, we need `vso.work` to access work items.
 Include all of the files your extension will access. <br>
 For your files, set `addressable` to `true` unless you include other files that don't need to be URL-addressable.
 	
-## Example registeredObjectId
+## Example
 ```javascript
-VSS.register("backlogTabObject", {
+VSS.register(VSS.getContribution(), {
     pageTitle: function(state) {
-        return "Hello Tab";
+        return "Hello";
     },
-	updateContext: function(tabContext) {							 
-	},
+    updateContext: function(tabContext) {
+    },
     isInvisible: function(state) {
         return false;
     },
@@ -112,8 +109,7 @@ Learn about all of the places where you can add a hub in the [contributions refe
 
 ## Next Steps:
 
-Now that you've written your extension, the next steps are to Package, Publish, and Install it. You can also check out the 
-documentation for Testing and Debugging your extension. 
+Now that you've written your extension, the next steps are to Package, Publish, and Install it. You can also check out the documentation for Testing and Debugging your extension. 
 
 <div name="row" style="padding-top:15px">
     <div style="vertical-align:top;display:inline-block;float:left;width:50%">

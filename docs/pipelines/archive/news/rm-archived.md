@@ -598,7 +598,7 @@ IIS web apps and databases from VSTS and TFS.
 **Web app deployment using ARM**
 
 A new version of the **Azure Web App Deployment** task is available, called
-**[AzureRM Web App Deployment](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/AzureRmWebAppDeployment/README.md)**.
+**[AzureRM Web App Deployment](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
 It uses MSDeploy and an Azure Resource Manager service endpoint connection.
 Use this task to deploy Azure Web Jobs and Azure API apps, in addition to
 ASP.NET 4, Node, and Python based web apps. The task also supports common
