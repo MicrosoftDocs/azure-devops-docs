@@ -4,7 +4,7 @@ description: Get started with continuous testing. Run unit tests with your build
 ms.assetid: a4a33a7d-fb75-46e0-b74d-91623ae5187e
 ms.prod: devops
 ms.technology: devops-cicd
-ms.topic: quickstart
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
@@ -23,7 +23,7 @@ automatically with each build. When your build is
 done, review your test results to start resolving 
 the problems that you find.
 
-This quickstart shows how to run unit tests with your build
+This example shows how to run unit tests with your build
 for .NET and ASP.NET apps. It uses the
 [Visual Studio Test](test-with-unified-agent-and-phases.md) task. 
 
@@ -57,7 +57,7 @@ solution - on the same build machine.
    ![Build definition: customize unit test run](_img/getting-started-with-continuous-testing/edit-unit-test-task.png)
 
    The Visual Studio Test task version 2 supports [Test Impact Analysis](test-impact-analysis.md).
-   For information about all the task settings, see [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md).
+   For information about all the task settings, see [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md).
 
    [How do I pass parameters to my test code from a build pipeline?](reference-qa.md#pass-params)
 

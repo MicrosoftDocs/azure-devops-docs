@@ -55,9 +55,9 @@ To add a group to the main page, add a contribution to your extension manifest. 
 
 | Property     | Description           |
 |--------------|-----------------------|
-| ```name```         | Text that will appear on the group.   |
-| ```uri```         | URI to a page that hosts the html that shows on the work item form and its scripts.
-| ```height```       | (Optional) Defines the height of the group. When omitted, it is 100%.
+| ```name```         | Text that will appear on the group   |
+| ```uri```         | URI to a page that hosts the html that shows on the work item form and its scripts
+| ```height```       | (Optional) Defines the height of the group. When omitted, it is 100%
 
 ###  JavaScript sample
 

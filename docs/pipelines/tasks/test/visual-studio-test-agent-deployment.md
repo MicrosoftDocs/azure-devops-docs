@@ -16,10 +16,8 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range=">= tfs-2018"
 
-This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
-[Visual Studio Test](vstest.md)
-task together with [phases](../../process/phases.md)
-to run unit and functional tests on the universal agent.
+This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the [Visual Studio Test](vstest.md)
+task together with [phases](../../process/phases.md) to run unit and functional tests on the universal agent.
 
 For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
 
@@ -137,7 +135,7 @@ The supported options for these scenarios are:
 
 * [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
 * [Set up automated testing for your builds](https://msdn.microsoft.com/Library/vs/alm/Test/automated-tests/set-up-automated-testing-builds)
-* [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/DeployVisualStudioTestAgent/README.md)
+* [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/DeployVisualStudioTestAgentV2/README.md)
 
 ### Related tasks
 

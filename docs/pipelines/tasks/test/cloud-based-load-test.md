@@ -59,7 +59,7 @@ The build agent must have the following capabilities:
 ## More Information
 
 * [Cloud-based Load Testing](https://www.visualstudio.com/features/vso-cloud-load-testing-vs)
-* [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/RunLoadTest)
+* [Source code for this task](https://github.com/Microsoft/vso-agent-tasks/blob/master/Tasks/RunLoadTestV1)
 * [Build your Visual Studio solution](../../apps/windows/dot-net.md)
 * [Cloud-based Load Testing Knowledge Base](https://blogs.msdn.microsoft.com/devops/?s=clt)  
 
