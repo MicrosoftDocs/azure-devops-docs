@@ -1,4 +1,6 @@
-
+---
+ms.topic: include
+---
 
 <a id="definitions-in-common"></a>
 

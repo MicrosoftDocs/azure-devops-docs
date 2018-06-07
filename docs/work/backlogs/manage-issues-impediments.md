@@ -29,11 +29,11 @@ In this topic you'll learn:
 >[!div class="checklist"]      
 > * How to capture issues or impediments as a work item   
  
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]   
 
 ## Add an issue or impediment 
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
+[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]   
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <!---#### VSTS, TFS 2018, TFS 2017 (new form enabled) --> 

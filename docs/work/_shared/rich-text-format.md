@@ -1,3 +1,7 @@
+---
+ms.topic: include
+---
+
 <a id="rich-text"></a>
 ### Rich text format  
 
