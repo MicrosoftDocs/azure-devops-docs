@@ -94,12 +94,12 @@ For this walkthrough, we'll assume a 1:1 mapping of feeds to SMB shares.
 <a name="create-your-feeds"></a>
 #### Create your feeds
 
-For each SMB share, create a feed using the [instructions here](..\feeds\create-feed.md). In the create dialog:
+For each SMB share, create a feed using the [instructions here](../feeds/create-feed.md). In the create dialog:
 - Use the name of the SMB share folder as the **Feed name**
 - Leave the defaults for **Who can read** and **Who can contribute**
 
-For each feed you've created, [edit the feed and set permissions](..\feeds\feed-permissions.md). There are a set of 
-[common identities](..\feeds\common-identities.md) that you should consider when setting up feed permissions.
+For each feed you've created, [edit the feed and set permissions](../feeds/feed-permissions.md). There are a set of 
+[common identities](../feeds/common-identities.md) that you should consider when setting up feed permissions.
 
 If you've chosen to set up your new feed permissions to match your existing file share permissions, use the following table to give 
 your principals the appropriate group membership:

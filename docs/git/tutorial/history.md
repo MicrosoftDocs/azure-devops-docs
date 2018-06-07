@@ -133,7 +133,7 @@ Restore the version in its current location using `git checkout`:
 &gt; git checkout <font color="#b5bd68">85435fac src/app.ts</font>
 </pre>
 
-Using `git checkout` this way will rewrite the current verison of the file at that path location.
+Using `git checkout` this way will rewrite the current version of the file at that path location.
 
 Restore a file to any location by using `git show`. This command prints the file contents to the terminal-you'll want to redirect the output to your desired location.
 
