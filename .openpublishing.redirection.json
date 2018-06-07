@@ -4151,6 +4151,181 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/manual-test/add-to-bugs-exploratory-testing.md",
+      "redirect_url": "/vsts/test/add-to-bugs-exploratory-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/collect-diagnostic-data.md",
+      "redirect_url": "/vsts/test/collect-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/connected-mode-exploratory-testing.md",
+      "redirect_url": "/vsts/test/connected-mode-exploratory-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/explore-workitems-exploratory-testing.md",
+      "redirect_url": "/vsts/test/explore-workitems-exploratory-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/index.md",
+      "redirect_url": "/vsts/test/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/insights-exploratory-testing.md",
+      "redirect_url": "/vsts/test/insights-exploratory-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/manual-test-permissions.md",
+      "redirect_url": "/vsts/test/manual-test-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/overview.md",
+      "redirect_url": "/vsts/test/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/reference-qa.md",
+      "redirect_url": "/vsts/test/reference-qa",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/repeat-test-with-different-data.md",
+      "redirect_url": "/vsts/test/repeat-test-with-different-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/standalone-mode-exploratory-testing.md",
+      "redirect_url": "/vsts/test/standalone-mode-exploratory-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/test-different-configurations.md",
+      "redirect_url": "/vsts/test/test-different-configurations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/getting-started/create-a-test-plan.md",
+      "redirect_url": "/vsts/test/create-a-test-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/getting-started/create-test-cases.md",
+      "redirect_url": "/vsts/test/create-test-cases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/getting-started/how-long-to-keep-test-results.md",
+      "redirect_url": "/vsts/test/how-long-to-keep-test-results",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/getting-started/perform-exploratory-tests.md",
+      "redirect_url": "/vsts/test/perform-exploratory-tests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/getting-started/record-play-back-manual-tests.md",
+      "redirect_url": "/vsts/test/mtm/record-play-back-manual-tests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/getting-started/run-manual-tests.md",
+      "redirect_url": "/vsts/test/run-manual-tests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/getting-started/track-test-status.md",
+      "redirect_url": "/vsts/test/track-test-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/getting-started/user-acceptance-testing.md",
+      "redirect_url": "/vsts/test/user-acceptance-testing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests.md",
+      "redirect_url": "/vsts/test/mtm/collect-more-diagnostic-data-in-manual-tests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md",
+      "redirect_url": "/vsts/test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/copying-and-cloning-test-suites-and-test-cases.md",
+      "redirect_url": "/vsts/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/exploratory-testing-using-microsoft-test-manager.md",
+      "redirect_url": "/vsts/test/mtm/exploratory-testing-using-microsoft-test-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/guidance-mtm-usage.md",
+      "redirect_url": "/vsts/test/mtm/guidance-mtm-usage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/plan-manual-tests-with-microsoft-test-manager.md",
+      "redirect_url": "/vsts/test/mtm/plan-manual-tests-with-microsoft-test-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/run-manual-tests-with-microsoft-test-manager.md",
+      "redirect_url": "/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/share-steps-between-test-cases.md",
+      "redirect_url": "/vsts/test/mtm/share-steps-between-test-cases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/test-configurations-specifying-test-platforms.md",
+      "redirect_url": "/vsts/test/mtm/test-configurations-specifying-test-platforms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/mtm/testing-microsoft-store-apps.md",
+      "redirect_url": "/vsts/test/mtm/testing-microsoft-store-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/preview/new-test-plan-page.md",
+      "redirect_url": "/vsts/test/preview/new-test-plan-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/stakeholder/provide-stakeholder-feedback.md",
+      "redirect_url": "/vsts/test/provide-stakeholder-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/stakeholder/request-stakeholder-feedback.md",
+      "redirect_url": "/vsts/test/request-stakeholder-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/stakeholder/track-stakeholder-feedback.md",
+      "redirect_url": "/vsts/test/track-stakeholder-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/manual-test/stakeholder/voluntary-stakeholder-feedback.md",
+      "redirect_url": "/vsts/test/voluntary-stakeholder-feedback",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/work/how-to/email-work-items.md",
       "redirect_url": "/vsts/work/work-items/email-work-items",
       "redirect_document_id": false
