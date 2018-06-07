@@ -7,12 +7,12 @@ ms.technology: devops-new-user
 ms.article: get-started-article
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.topic: reference
-ms.date: 10/09/2017
+ms.date: 06/07/2018
 monikerRange: '>= tfs-2013'
 ---
-
 
 # Features
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 
 Use this end-to-end feature index to learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications.  
 
-If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other overview topics designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md). 
+If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other overview topics designed to give beginners an understanding of the server-client structure and tools supported. For a description of the core services supported through the web portal, see [Essential services](services.md).
 
 >[!NOTE]  
 ><b>Feature availability: </b>Some features are platform dependent and are noted as follows:  
@@ -147,11 +147,11 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Choose the ![Change team project icon](../work/_img/icons/change-team-project-icon.png) Change team project menu option ![Actions icon](../work/_img/icons/actions-icon.png) Actions menu in a work item form to [move the work item to a different team project](../work/backlogs/remove-delete-work-items.md#move). </p>
 
 <p><b>Full screen mode</b></p>
-<p>Click ![full screen icon](../work/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../work/_img/icons/exitfullscreen_icon.png)  to enter or exit full screen mode.  </p>
+<p>Choose ![full screen icon](../work/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../work/_img/icons/exitfullscreen_icon.png)  to enter or exit full screen mode.  </p>
 
 
 <p><b>Backlog and board settings</b></p>
-<p>Click ![Settings icon](../work/_img/icons/team-settings-gear-icon.png)  to configure team backlogs and boards, including [show bugs on backlogs and boards](../work/customize/show-bugs-on-backlog.md) and [set team backlog levels](../work/customize/select-backlog-navigation-levels.md).  </p>
+<p>Choose ![Settings icon](../work/_img/icons/team-settings-gear-icon.png)  to configure team backlogs and boards, including [show bugs on backlogs and boards](../work/customize/show-bugs-on-backlog.md) and [set team backlog levels](../work/customize/select-backlog-navigation-levels.md).  </p>
 ![Backlog and board settings](_img/features/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
@@ -216,12 +216,12 @@ Use features supported by these familiar clients to manage your project and illu
  <br/>
 
 <p><b>Follow a work item </b></p>
-<p>Click the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
+<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
 ![Follow a work item control](_img/features/alm-feature-follows.png)  
 <br/>
 
 <p><b>Rich text comments</b></p>
-<p>Describe and comment on work to perform using [formatted text, hyperlinks, and inline images](../work/backlogs/add-work-items.md). Click ![full screen icon](../work/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../work/_img/icons/exitfullscreen_icon.png)  to expand or contract the viewing area. </p>
+<p>Describe and comment on work to perform using [formatted text, hyperlinks, and inline images](../work/backlogs/add-work-items.md). Choose ![full screen icon](../work/_img/icons/fullscreen_icon.png) or ![exit full screen icon](../work/_img/icons/exitfullscreen_icon.png)  to expand or contract the viewing area. </p>
 
 
 <p><b>Clear HTML formatting </b></p>
@@ -280,7 +280,7 @@ Use features supported by these familiar clients to manage your project and illu
 </td>
 <td width="33%">
 <p><b>Discussion </b></p>
-<p>[Add or review comments](../work/backlogs/add-work-items.md) added to a work item. Start by clicking the ![Discussions icon](../work/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
+<p>[Add or review comments](../work/backlogs/add-work-items.md) added to a work item. Start by choosing the ![Discussions icon](../work/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
 
 
 <p><b>Integrate Git development with work tracking </b></p>
@@ -532,7 +532,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Support your team to be in sync by [specifying requirements to fulfill prior to handoff of items to a downstream work stage](../work/kanban/definition-of-done.md).</p>  
 
 <p><b>Filter by field values or parent work items</b></p>
-<p>Click the ![Kanban field filter icon](../work/_img/icons/kanban-filter-icon.png) field filter icon to [filter the board based on assignment, iteration, work item type, or tags](../work/kanban/filter-kanban-board.md#field-filter). </p>
+<p>Choose the ![Kanban field filter icon](../work/_img/icons/kanban-filter-icon.png) field filter icon to [filter the board based on assignment, iteration, work item type, or tags](../work/kanban/filter-kanban-board.md#field-filter). </p>
 ![Kanban board filter](_img/features/alm-feature-kanban-filter-fields.png)  
 <br/>
 
@@ -797,13 +797,13 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Follow a work item </b></p>
-<p>Click the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
+<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
 ![Follow a work item control](_img/features/alm-feature-follows.png)  
 <br/>
 
 
 <p><b>Follow a pull request</b></p>
-<p>To [track the progress of a single pull request](../collaborate/follow-work-items.md), click the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. </p>
+<p>To [track the progress of a single pull request](../collaborate/follow-work-items.md), choose the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. </p>
 ![Follow a pull request](_img/features/features-follow-pull-request.png)  
 <br/>
 
@@ -1407,7 +1407,7 @@ pipelines\tasks\build\_img
 </td>
 <td width="33%">
 <p><b>Edit dashboard mode</b></p>
-<p>Add, remove, move, and configure widgets by [clicking the Edit dashboard icon](../report/dashboards/dashboards.md). Click the checkmark icon to exit.  </p>
+<p>Add, remove, move, and configure widgets by [choosing the Edit dashboard icon](../report/dashboards/dashboards.md). Choose the checkmark icon to exit.  </p>
 ![Edit dashboard icon](../report/dashboards/_img/edit-dashboard-icon.png) | ![Exit dashboard edit mode icon](../report/dashboards/_img/exit-edit-dashboard-mode-icon.png)  
 <br/>
 
@@ -1872,7 +1872,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Web portal preferences </b></p>
-<p><p>Click your name to access [your profile settings](../accounts/account-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
+<p><p>Choose your name to access [your profile settings](../accounts/account-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
 ![Profile drop down menu](_img/features/features-global-profile.png)  
 <br/>
 
@@ -2094,7 +2094,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](account-home-pages.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Click your name to access [your profile settings](../accounts/account-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
+<p>Choose your name to access [your profile settings](../accounts/account-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
 ![Profile drop down menu](_img/features/alm-index-my-profile-menu.png)  
 <br/>
 
@@ -2172,13 +2172,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../security/change-individual-permissions.md). From any team project hub, click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can [manage collection-level permissions](../security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Click the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context and then click DefaultCollection. </p>
+<p>From the collection admin context, you can [manage collection-level permissions](../security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context and then choose DefaultCollection. </p>
 
 
 </td>
@@ -2749,7 +2749,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Describe and comment on work to perform using [formatted text, hyperlinks, and inline images](../work/backlogs/add-work-items.md).  </p>
 
 <p><b>Discussion (VSTS) </b></p>
-<p>[Add or review comments](../work/backlogs/add-work-items.md) added to a work item. Start by clicking the ![Discussions icon](../work/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
+<p>[Add or review comments](../work/backlogs/add-work-items.md) added to a work item. Start by choosing the ![Discussions icon](../work/backlogs/_img/icon-discussions-wi.png) discussion icon.  </p>
 ![Discussion section](_img/features/alm-feature-add-work-items-discussion.png)  
 <br/>
 
@@ -2792,7 +2792,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
 - [VSTS - Features update](https://docs.microsoft.com/vsts/release-notes/index)  
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
-- [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)   
+- [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)
 
 <br/>
 Get started today using our cloud offering, [VSTS](https://www.visualstudio.com/team-services/), or our [on-premises TFS server](https://www.visualstudio.com/downloads/).  
@@ -2800,7 +2800,7 @@ Get started today using our cloud offering, [VSTS](https://www.visualstudio.com/
 
 ### We welcome your feedback
 
-Send suggestions on **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/vsts) @vsts**. 
+Send suggestions on **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**, and follow us on **[Twitter](https://twitter.com/vsts) @vsts**.
 
 See also our [comprehensive feedback and support page](provide-feedback.md).
 
@@ -2827,7 +2827,7 @@ A new identity picker experience is getting rolled out in Version Control, @Ment
 
 Keyboard shortcuts for Kanban Board
 
-You now have the ability to click a work item and perform specific actions using keyboard shortcut keys on the Kanban board. To name a few, you can now use your keyboard shortcut keys to create new work items, move work items within or across columns and swimlanes, expand and collapse work items.
+You now have the ability to choose a work item and perform specific actions using keyboard shortcut keys on the Kanban board. To name a few, you can now use your keyboard shortcut keys to create new work items, move work items within or across columns and swimlanes, expand and collapse work items.
 
 
 
