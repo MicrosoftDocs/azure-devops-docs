@@ -8109,76 +8109,76 @@
       "source_path": "docs/build-release/set-permissions.md",
       "redirect_url": "/vsts/pipelines/policies/set-permissions",
       "redirect_document_id": true
- },
-       {
-        "source_path": "docs/work/customize/process/custom-controls-process.md",
-        "redirect_url": "/vsts/organizations/settings/work/custom-controls-process",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/process/customize-process.md",
-        "redirect_url": "/vsts/organizations/settings/work/customize-process",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/process/customize-process-backlogs-boards.md",
-        "redirect_url": "/vsts/organizations/settings/work/customize-process-backlogs-boards",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/process/customize-process-field.md",
-        "redirect_url": "/vsts/organizations/settings/work/customize-process-field",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/process/customize-process-form.md",
-        "redirect_url": "/vsts/organizations/settings/work/customize-process-form",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/process/customize-process-wit.md",
-        "redirect_url": "/vsts/organizations/settings/work/customize-process-wit",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/process/customize-process-workflow.md",
-        "redirect_url": "/vsts/organizations/settings/work/customize-process-workflow",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/process/custom-rules.md",
-        "redirect_url": "/vsts/organizations/settings/work/custom-rules",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/process/manage-process.md",
-        "redirect_url": "/vsts/organizations/settings/work/manage-process",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/inheritance-process-model.md",
-        "redirect_url": "/vsts/organizations/settings/work/inheritance-process-model",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/work/customize/object-limits.md",
-        "redirect_url": "/vsts/organizations/settings/work/object-limits",
-        "redirect_document_id": false 
-       },
-       {
-        "source_path": "docs/settings/index.md",
-        "redirect_url": "/vsts/organizations/settings/index",
-        "redirect_document_id": false
-       },
-       {
-        "source_path": "docs/settings/about-teams-and-settings.md",
-        "redirect_url": "/vsts/organizations/settings/about-teams-and-settings",
-        "redirect_document_id": false 
-       },
-       {
-        "source_path": "docs/settings/switch-team-context.md",
-        "redirect_url": "/vsts/organizations/settings/switch-team-context",
-        "redirect_document_id": false 
-       }
+    },
+    {
+      "source_path": "docs/work/customize/process/custom-controls-process.md",
+      "redirect_url": "/vsts/organizations/settings/work/custom-controls-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/process/customize-process.md",
+      "redirect_url": "/vsts/organizations/settings/work/customize-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/process/customize-process-backlogs-boards.md",
+      "redirect_url": "/vsts/organizations/settings/work/customize-process-backlogs-boards",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/process/customize-process-field.md",
+      "redirect_url": "/vsts/organizations/settings/work/customize-process-field",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/process/customize-process-form.md",
+      "redirect_url": "/vsts/organizations/settings/work/customize-process-form",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/process/customize-process-wit.md",
+      "redirect_url": "/vsts/organizations/settings/work/customize-process-wit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/process/customize-process-workflow.md",
+      "redirect_url": "/vsts/organizations/settings/work/customize-process-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/process/custom-rules.md",
+      "redirect_url": "/vsts/organizations/settings/work/custom-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/process/manage-process.md",
+      "redirect_url": "/vsts/organizations/settings/work/manage-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/inheritance-process-model.md",
+      "redirect_url": "/vsts/organizations/settings/work/inheritance-process-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/customize/object-limits.md",
+      "redirect_url": "/vsts/organizations/settings/work/object-limits",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "docs/settings/index.md",
+      "redirect_url": "/vsts/organizations/settings/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/settings/about-teams-and-settings.md",
+      "redirect_url": "/vsts/organizations/settings/about-teams-and-settings",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "docs/settings/switch-team-context.md",
+      "redirect_url": "/vsts/organizations/settings/switch-team-context",
+      "redirect_document_id": false 
+    }
   ]
 }
