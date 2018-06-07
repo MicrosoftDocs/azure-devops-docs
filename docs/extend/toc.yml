@@ -186,6 +186,6 @@
   - name: Manage Extensions
     href: ../marketplace/index.md
   - name: Build Visual Studio extensions
-    href: /visualstudio/extensibility/starting-to-develop-visual-studio-extensions
+    href: /vsts/integrate/ide/extensions/overview
 
 
