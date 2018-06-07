@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 06/07/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -16,9 +16,7 @@ ms.date: 04/06/2018
 
 **VSTS**
 
-If you want to use a different Azure subscription to bill purchases for your VSTS account, 
-you will need to unlink your VSTS account from your current Azure subscription 
-and relink your account to another Azure subscription. You must be the VSTS account owner. 
+If you want to use a different Azure subscription to bill purchases for your VSTS account, you will need to unlink your VSTS account from your current Azure subscription and relink your account to another Azure subscription. You must be the VSTS account owner.
 
 ## Prerequisites
 
@@ -38,14 +36,11 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 >
 > If you wait until the 1st of next month to relink and to make your purchases again, your VSTS account will revert back to the Free Tier and users in excess of the free limits will appear as expired in your account.
 
-<a name="AzurePortal2"></a>
-
 ## Change subscription
 
-1. [Sign in to the Azure portal](https://portal.azure.com/) 
-as VSTS account owner and as Azure subscription co-administrator or greater.
+1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS account owner and as Azure subscription co-administrator or greater.
 
-    If you experience browser problems with Azure, 
+    If you experience browser problems with Azure,
     make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
 2. Go to **More services** > **Developer tools** > **VSTS accounts**. Select your VSTS account.
@@ -63,8 +58,6 @@ as VSTS account owner and as Azure subscription co-administrator or greater.
 ## Related articles
 
 - [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-- [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (hosted pipelines)
-- [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (private pipelines)
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 - Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).
