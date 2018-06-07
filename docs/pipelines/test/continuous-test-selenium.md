@@ -4,7 +4,7 @@ description: UI Testing with Selenium in a continuous deployment pipeline in Vis
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.prod: devops
 ms.technology: devops-cicd
-ms.topic: quickstart
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1

@@ -4,7 +4,7 @@ description: Review continuous test results after a build with a build or releas
 ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
 ms.prod: devops
 ms.technology: devops-cicd
-ms.topic: quickstart
+ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
