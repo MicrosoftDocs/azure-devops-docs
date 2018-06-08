@@ -25,7 +25,7 @@ ms.date: 03/01/2018
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="follow"></a>  
 
 To get notified of changes made to a work item or a pull request, you can elect to follow them. 
@@ -47,8 +47,6 @@ This topic shows you how to:
 > [!NOTE]   
 > The Follow a pull request feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://www.visualstudio.com/downloads/#team-foundation-server-2017). 
 ::: moniker-end
-
-
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
@@ -77,7 +75,6 @@ Notifications are sent to your preferred email address, which [you can change fr
 
 To stop following changes, open the PR context menu and click the ![Following icon](../work/_img/icons/following-icon.png) icon. 
 
-
 ## Manage work items that you're following  
 
 You can review and manage all the work items you've selected to follow from the Followed work items page. You access this page from the **Work>Queries** page. 
@@ -94,9 +91,17 @@ From this view, you can view all items you're following across all team projects
 
 However, this view isn't based on a query so you can't modify the parameters of the view. 
 
-You can also view and manage work that you're following from the Account home pages. To learn more, see [Work effectively from your account hub](../user-guide/account-home-pages.md). 
+You can also view and manage work that you're following from your home pages. To learn more, see [Work effectively from your account hub](../user-guide/account-home-pages.md). 
 
-<img src="../user-guide/_img/account-home-work-followed.png" alt="Account home, Work, Followed page" style="border: 1px solid #C3C3C3;" />       
+::: moniker range="vsts"
+> [!div class="mx-imgBorder"]  
+> ![Account home, Work, Following page](../user-guide/_img/account-home-work-following.png)  
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+![Account home, Work, Assigned to me page](../user-guide/_img/org-hub-tfs/account-home-work-followed.png) 
+::: moniker-end
+      
 
 ## Related articles  
 
