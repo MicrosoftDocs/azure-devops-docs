@@ -27,6 +27,12 @@ you can specify the conditions under which the task or phase will run:
 
 If the built-in conditions don't meet your needs, then you can specify **custom conditions**.
 
+::: moniker range="= tfs-2017"
+
+> In TFS 2017.3, custom task conditions are available in the user interface only for Build pipelines. You can use the Release [REST APIs](../../integrate/index.md) to establish custom conditions for Release pipelines.
+
+::: moniker-end
+ 
 Express the condition as a nested set of functions. The agent evaluates the innermost function and works its way out. The final result is a boolean value that determines if the task is run or not. Details on syntax are described below.
 
 Do any of your conditions make it possible for the task to run even after the build is canceled by a user? If so, then specify a reasonable value for **Build job cancel timeout in minutes** [in the options](../build/options.md) so that these kinds of tasks have enough time to complete after the user clicks **Cancel**.
