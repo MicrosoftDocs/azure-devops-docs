@@ -246,7 +246,7 @@ public static void MicrosoftAccountRestSample()
 ```
 
 ##### OAuth Authentication for REST services
-Follow this link to learn how to obtain and refresh an OAuth accessToken: http://vsooauthclientsample.codeplex.com/
+Follow this link to learn how to obtain and refresh an OAuth accessToken: https://github.com/Microsoft/vsts-auth-samples
 ```cs
 public static void OAuthSample()
 {
