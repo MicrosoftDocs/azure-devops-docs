@@ -8,32 +8,28 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 06/04/2018
+ms.date: 06/11/2018
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 # Buy access to Team Foundation Server or the TFS Test hub
 
 **TFS 2018** | **TFS 2017** | **TFS 2015.2**
 
-For [TFS](https://www.visualstudio.com/tfs/) you pay per user for team members who need to use
-[Basic](https://www.visualstudio.com/team-services/compare-features/) features like Code or Agile Planning.
-Team members who have a [Visual Studio subscription](https://www.visualstudio.com/vs/pricing/) are free
+For [TFS](https://www.visualstudio.com/tfs/) you pay per user for [Basic](https://www.visualstudio.com/team-services/compare-features/) features like Code or Agile Planning.
+Users who have a [Visual Studio subscription](https://www.visualstudio.com/vs/pricing/) are free
 to add because Basic features are included in their subscription as a benefit.
-It's also free to add
-[stakeholders](../security/get-started-stakeholder.md) to TFS, which provides access to a limited set of features.
+It's also free to add [stakeholders](../security/get-started-stakeholder.md) to TFS, which provides access to a limited set of features.
 
 >[!NOTE]
 > You will need TFS 2015.2 or later to pay for your TFS users monthly via the Visual Studio Marketplace, which uses Azure for billing.
 
-Paid VSTS users are entitled access to Basic features in your organization's TFS, making
-paying monthly for VSTS users a great alternative to buying TFS User CALs, which typically have a 3-year commitment term.
+Paid VSTS users are entitled access to Basic features in your enterprise's TFS, making paying monthly for VSTS users a great alternative to buying TFS User CALs, which typically have a 3-year commitment term.
 Even when you buy access to TFS this way, you are not required to use VSTS (though of course you can if you wish, in
 addition to using TFS).
 
 [Follow these steps to pay monthly for TFS users](#rent-cal).
 
-You can also buy [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for your TFS users on a monthly basis, as an alternative to buying a Visual Studio subscription that is entitled to use
-the Test hub in TFS.
+You can also buy [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for your TFS users on a monthly basis, as an alternative to buying a Visual Studio subscription that is entitled to use the Test hub in TFS.
 
 [Follow these steps to pay monthly for TFS Test hub access](#test-hub).
 
@@ -50,7 +46,7 @@ For more about TFS licensing, see the
 
 3. If you haven't already, sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
-4. [Add your users](../accounts/add-account-users-assign-access-levels.md) to your VSTS account so that you can track these users more easily.
+4. [Add users](../accounts/add-account-users-assign-access-levels.md) to your VSTS account so that you can track these users more easily.
 
     Though these users will get invited to your VSTS account, you're not required to use VSTS.
 
@@ -71,7 +67,7 @@ For more about TFS licensing, see the
 
 3. If you haven't already, sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
-4. [Add your users](../accounts/add-account-users-assign-access-levels.md) to your VSTS account and [assign them Test Manager](../marketplace/assign-paid-extensions.md) via the Users hub in your VSTS account so that you can track these users.
+4. [Add users](../accounts/add-account-users-assign-access-levels.md) to your VSTS account and [assign them Test Manager](../marketplace/assign-paid-extensions.md) via the Users hub in your VSTS account so that you can track these users.
 
     Though these users will get invited to your VSTS account,you're not required to use VSTS. By assigning Test Manager within your VSTS account, your users can also run Visual Studio Test Professional 2015 or [2017](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they will not be able to run Test Professional.
 
