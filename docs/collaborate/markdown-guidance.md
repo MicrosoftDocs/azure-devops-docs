@@ -642,6 +642,11 @@ Attachments support the following file formats:
 > | Visio | VSD (.vsd and .vsdx)  | 
 > | Video | MOV (.mov), MP4 (.mp4) | 
 
+
+> [!NOTE]   
+> Not all file formats are supported within pull requests, such as Microsoft Office Message (.msg) files. 
+
+
 Attaching non-image files creates a link to the file in your comment. Update the description text between the brackets to change the text displayed in the link.
 Attached image files render directly into your comment or wiki pages. 
 
