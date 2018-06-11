@@ -50,7 +50,15 @@ The general sequence of steps to support upgrade are:
 
 0. Review the information provided in the dialog that opens and then choose **Continue**.  
 
-0. In the next dialog, you can change the name of the inherited process to be created and optionally change the parent process and provide a description.   
+	> [!div class="mx-imgBorder"]  
+	> ![Upgrade from XML to inheritance dialog information](_img/migration/upgrade-from-xml-to-inheritance.png)   
+
+0. In the next dialog, you can change the name of the inherited process to be created and optionally change the parent process and provide a description. 
+
+	Here, we accept the defaults provided by the system.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Upgrade from XML to inheritance dialog information](_img/migration/upgrade-from-xml-to-inheritance-dialog.png)  
 
 	> [!IMPORTANT]  
 	> The system performs a best effort to detect the correct parent process. Verify that the process selected meets your expectations, or change it as needed. Once you've completed the upgrade, you can't upgrade it a second time based on a different system process. 
@@ -67,7 +75,7 @@ We recommend that you create a test project based on the inherited process creat
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a team project from the selected process](_img/process/add-new-team-project.png) 
+	> ![Create a team project from the selected process](_img/migration/create-team-project-inherited-process.png)  
 
 0. The Create new project page opens. Fill out the form. 
 
@@ -79,8 +87,7 @@ We recommend that you create a test project based on the inherited process creat
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
 
-0.  Verify that the field(s) you added appear on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
-
+0.  Verify that the customizations you expect appear on the form.  
 
 ## Try this next
 > [!div class="nextstepaction"]

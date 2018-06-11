@@ -22,7 +22,7 @@ The future of reporting for Visual Studio Team Services (VSTS) and Team Foundati
 ## The Analytics Service
 The [Analytics Service](what-is-analytics.md) is in Public Preview. It currently [contains partial data](./data-available-in-analytics.md) and only works with VSTS. We are working to add all reportable data to the Analytics Service.
 
-**Our goal is to bring the Analytics Service to TFS, and replace SQL Server Reporting**. 
+**Our goal is to bring the Analytics Service to TFS in the next major release, with the intent to replace SQL Server Reporting once we can replace the functionality it provides.**
 
 ## TFS and SQL Server Reporting
 
