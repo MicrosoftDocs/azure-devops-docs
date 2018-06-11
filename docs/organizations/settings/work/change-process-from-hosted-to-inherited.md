@@ -26,31 +26,46 @@ Once you've [upgraded your Hosted XML process to an inherited process](upgrade-h
 - You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
 
 
+<a id="open-process-wit">  </a>
+## Open Settings>Process hub
+
+You create, manage, and make customizations to processes from the **Settings>Process** hub. 
+
+0. To open the admin context from the user context, choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Account settings**. 
+	
+	> [!div class="mx-imgBorder"]  
+	> ![VSTS web portal, open Account Settings](_img/process/open-account-settings.png)   
+
+0. Choose **Process**. 
+   
+	> [!div class="mx-imgBorder"]  
+	> ![Account Settings context, Process page](_img/process/open-process-page.png) 
+
+
 <a id="change-inherited-process"></a>
-## Change the process used by a team project 
+## Change the project process to an inherited process 
 
-After you've verified your customizations, you can now apply the process to your existing project. 
+After you've verified your customizations, you can now apply the  inherited process to your existing project. 
 
-0. Open the &hellip; context menu for the process and choose the **Change team projects**&hellip; option. 
-
-	Here we open the menu for the MyAgile inherited process. 
+0. From the Process hub, choose the inherited process you created, and then choose the **Projects** page. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![MyAgile process context menu, Choose Change team projects to use MyAgile](_img/migration/add-custom-change-process.png)
-	
-0. Check the checkbox of those projects you want to change to use the MyAgile process. The system lists only those projects that are valid for the current process and the projects based on the Hosted XML process.	
+	> ![Open inherited process, Projects page](_img/migration/open-processes-projects-page.png)
 
-	Here we choose to use the MyAgile process for the FabrikamFiber project.  Only those projects created from the Agile process or one that inherits from Agile will appear under the **Available projects** column. 
+0. Open the &hellip; context menu for the project and choose the **Change process**&hellip; option. 
+
+	Here we open the menu for the Fabrikam Test project. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Fabrikam Test project context menu, Choose Change process](_img/migration/change-project-process-to-inherited.png)
+	
+0. Choose the inherited process that you created. The system lists only those processes that are valid for the selected project.	
   
 	> [!div class="mx-imgBorder"]  
-	> ![Change process to an inherited process dialog](_img/process/customize-change-process-dialog.png) 
+	> ![Change process to an inherited process dialog](_img/migration/change-process-dialog.png) 
 
-0. After  you've confirmed that the projects you want to change are correct, choose **Ok**. 
+0. Choose **Ok**. 
 
-
-<!--- 
-If you have several projects that you want to change, you can change several projects at once by going to the **Process** page and choosing the [**Change team projects…** option](../../../organizations/settings/work/manage-process.md). 
---> 
 
 ## Related articles
 - [Supported upgrade operations when moving from Hosted XML process to an inherited process](upgrade-support-hosted-to-inherited.md)

@@ -7,7 +7,7 @@ ms.topic: include
 
 You create, manage, and make customizations to processes from the **Settings>Process** hub. 
 
-0. To open the admin context from the user context, click the ![](/vsts/_img/icons/gear_icon.png) Settings icon and choose **Account settings**.
+0. To open the admin context from the user context, choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Account settings**.
  
 	> [!IMPORTANT]  
 	>If you don't see the Account settings option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/work/customize/customize-work).
