@@ -25,7 +25,7 @@ You can get a list of users and groups that have access to your Visual Studio Te
 
 0. From your web browser, open your VSTS account and click the **Users** hub. 
 
-	For [**Streamlined User Management**](../collaborate/preview-features.md), the URL follows this pattern: ```https://{account name}.visualstudio.com/_admin/_users```  
+	For [**Streamlined User Management**](../project/navigation/preview-features.md), the URL follows this pattern: ```https://{account name}.visualstudio.com/_admin/_users```  
 
 	<img src="_img/export-users-audit/go-to-users-hub.png" alt="From the Users hub, click Export users" style="border: 1px solid #C3C3C3;" />  
 

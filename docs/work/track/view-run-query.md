@@ -48,12 +48,12 @@ Use this topic to learn:
  
 	<img src="_img/view-run-queries/try-new-queries-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
-	Otherwise, you can enable it from the [Preview features menu](../../collaborate/preview-features.md). 
+	Otherwise, you can enable it from the [Preview features menu](../../project/navigation/preview-features.md). 
  
 	If it is your first time opening the hub, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can click **All** to view all queries you've defined and shared queries defined for the team project.  
 
 	> [!TIP]    
-	> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Account hub page. To learn more, see [Set personal or team favorites](../../collaborate/set-favorites.md). 
+	> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Account hub page. To learn more, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
 
 ## Run a query 
 
@@ -62,7 +62,7 @@ Use this topic to learn:
 	<img src="_img/view-run-queries/queries-all.png" alt="Web portal, choose Work hub, Queries, All page" style="border: 1px solid #C3C3C3;" />  
 	 
 	To view all work items assigned to you, click **Assigned to me**. This query uses the **@Me**  macro to list all work items assigned to you.  
-	To view all work items you are following, click **Followed work items**. This query uses the **@Follows**  macro (ID in @Follows) to list all work items you've elected to follow. To learn more, see [Follow a work item or pull request](../../collaborate/follow-work-items.md).   
+	To view all work items you are following, click **Followed work items**. This query uses the **@Follows**  macro (ID in @Follows) to list all work items you've elected to follow. To learn more, see [Follow a work item or pull request](../work-items/follow-work-items.md).   
 
 0. To run any query, simply click the title of the query.
 
@@ -146,5 +146,5 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 - [Change column options](../backlogs/set-column-options.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
 - [New Queries Experience](queries-preview.md) 
-- [Set personal or team favorites](../../collaborate/set-favorites.md) 
+- [Set personal or team favorites](../../project/navigation/set-favorites.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

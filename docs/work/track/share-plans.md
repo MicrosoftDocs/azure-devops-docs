@@ -112,7 +112,7 @@ For example, you can attach a screen image that illustrates a problem, a line of
 <img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
 
 > [!TIP]    
-> You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../collaborate/markdown-guidance.md#attach).  
+> You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
 
 You can edit, open, save, or delete an attachment by clicking an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
 
@@ -245,7 +245,7 @@ For details, see [Dashboards, charts, & widgets](../../report/dashboards/overvie
 
 You can use your team project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.  
 
-To learn more, see [Create a wiki for your team project](../../collaborate/wiki-create-repo.md). 
+To learn more, see [Create a wiki for your team project](../../project/wiki/wiki-create-repo.md). 
 
 ::: moniker-end
 
@@ -269,7 +269,7 @@ To learn more, see [Share information using the project portal](../../report/sha
 As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
 
 - [Dashboards](../../report/dashboards/dashboards.md)
-- [Add and edit a wiki](../../collaborate/add-edit-wiki.md)
+- [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)
 
 
 

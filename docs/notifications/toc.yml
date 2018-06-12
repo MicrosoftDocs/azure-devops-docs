@@ -13,7 +13,7 @@
 - name: Tutorials
   items:
   - name: "Follow work & pull requests"
-    href: ../collaborate/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: ../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Manage your personal notifications
     href: manage-personal-notifications.md
 - name: How-to Guides
@@ -23,7 +23,7 @@
   - name: "Use #ID to link to work items"
     href: add-links-to-work-items.md
   - name: Manage team notifications
-    href: ../collaborate/manage-team-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: manage-team-notifications.md
   - name: Microsoft Teams Integration
     href: ../service-hooks/services/teams.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Get notified with Campfire
@@ -37,7 +37,7 @@
   - name: Set alerts (TFS) 
     href: ../work/track/alerts-and-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Collaborate in a team room (TFS)
-    href: ../collaborate/collaborate-in-a-team-room.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: collaborate-in-a-team-room.md
 - name: Reference
   items:
   - name: Default notifications
@@ -45,7 +45,7 @@
   - name: FAQs 
     href: faq-notifications.md 
   - name: Default permissions (Security)  
-    href: ../collaborate/collaboration-tool-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json 
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json 
 - name: Resources    
   items:
   - name: Git

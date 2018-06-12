@@ -103,4 +103,4 @@ For an example of each control type, see [Specify work item form controls](speci
   
 - [All FORM elements](all-form-xml-elements-reference.md)   
 - [Specify work item form controls](specify-work-item-form-controls.md)  
-- [Naming restrictions, Work item tracking objects](../../../collaborate/naming-restrictions.md)
+- [Naming restrictions, Work item tracking objects](../../../organizations/settings/naming-restrictions.md)

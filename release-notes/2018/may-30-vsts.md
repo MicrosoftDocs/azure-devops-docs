@@ -76,7 +76,7 @@ When a viewing a pull request, it’s now easy to mark the source branch as a fa
 ### Visualize release progress
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New release progress views** [preview feature](/vsts/collaborate/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New release progress views** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
 
 A [new release progress view](https://go.microsoft.com/fwlink/?linkid=874485) is now available, which gives you with live updates of deployment progress and one-click access to further details. The new view visualizes the release pipeline, making it easier to understand what’s happening and surfaces appropriate details and actions at different stages of the release.
 

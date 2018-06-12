@@ -42,7 +42,7 @@ As part of moving the updated Package Management web experience to an on-by-defa
 
 > **Preview feature**
 >
-> To use this capability you must enable the **Task tool installers** [preview feature](/docs/collaborate/preview-features) for your account.
+> To use this capability you must enable the **Task tool installers** [preview feature](/vsts/project/navigation/preview-features) for your account.
 
 Have you been wishing you could install a tool or runtime on the fly (even on a hosted agent) just in time for your CI build? Do you need to validate your app or library against multiple versions of a dependency such as Node.js? Today we're announcing tool installers that enable you to install one or more versions of tools sets on the fly.
 

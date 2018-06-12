@@ -75,7 +75,7 @@ All dashboards are associated with a team.
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 1. From the **Dashboards** hub, open the selector and choose  the **Browse all dashboards** option. 
  
@@ -136,7 +136,7 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 1. From the **Dashboards** hub, open the selector and choose the ![plus icon](_img/icons/blue-plus-icon.png) **New Dashboard** option. 
 

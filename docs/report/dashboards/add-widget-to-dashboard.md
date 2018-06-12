@@ -70,7 +70,7 @@ All dashboards are associated with a team. You need to be a team administrator, 
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 1. From the **Dashboards** hub, open the selector and choose  the **Browse all dashboards** option. 
  
@@ -122,7 +122,7 @@ Widget images may vary depending on which platform you access. This topic shows 
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 To add widgets to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). 
 

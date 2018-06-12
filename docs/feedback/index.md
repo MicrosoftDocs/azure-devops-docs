@@ -39,7 +39,7 @@ You can request feedback using one of two tools, through the Test & Feedback ext
 - [Set feedback permissions](give-permissions-feedback.md)  
 
 ## Reference
-- [Default permissions and access set for collaboration tools](../collaborate/collaboration-tool-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/notifications/feedback/toc.json) 
+- [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/notifications/feedback/toc.json) 
 - [Give us feedback, get support](../user-guide/provide-feedback.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json) 
 
 ## Resources 

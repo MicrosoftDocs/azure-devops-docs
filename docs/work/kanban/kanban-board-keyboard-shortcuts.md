@@ -25,6 +25,6 @@ Global keyboard shortcuts are available from TFS 2015.2 and later versions.
 
 ## Related articles
 
-- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
+- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../project/navigation/keyboard-shortcuts.md)
 
 

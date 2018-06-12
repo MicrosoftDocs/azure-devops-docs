@@ -37,7 +37,7 @@ Previously each recipient would receive their own individually-addressed email, 
 ## Related notes
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](/vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Manage personal notifications](manage-team-notifications.md) 
 - [Unsubscribe from a notification](unsubscribe-default-notification.md) 
 
 
