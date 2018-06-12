@@ -54,7 +54,7 @@ If you want to deploy to a staging slot in an Azure App Services website, and th
    ![Azure App Service Deploy](../../tasks/deploy/_img/azure-web-app-deployment-icon.png) [Deploy: Azure App Service Deploy](../../tasks/deploy/azure-rm-web-app-deployment.md) - Deploy the app to Azure App Services.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../library/connect-to-azure.md).
    
    - **App Service name**: Select your App Service.
    
@@ -65,7 +65,7 @@ If you want to deploy to a staging slot in an Azure App Services website, and th
    ![Azure App Service Manage](../../tasks/deploy/_img/azure-app-service-manage.png) [Deploy: Azure App Service Manage](../../tasks/deploy/azure-app-service-manage.md) - Swap slots.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../library/connect-to-azure.md).
    
    - **Action**: `Swap slots`
    

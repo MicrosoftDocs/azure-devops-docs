@@ -123,6 +123,9 @@
     - name: Manage Extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
+    - name: Project Server Integration
+      tocHref: /vsts/work/tfs-ps-sync/
+      topicHref: /vsts/work/tfs-ps-sync/index
     - name: Technical Articles
       tocHref: /vsts/articles/
       topicHref: /vsts/articles/index
