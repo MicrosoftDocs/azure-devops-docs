@@ -27,7 +27,7 @@ Some of the other key feature highlights include:
 
 > **Preview feature**
 >
-> To use this capability you must have the **New Work Items Hub** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile and/or account.
+> To use this capability you must have the **New Work Items Hub** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile and/or account.
 
 The **Work Items** hub allows you to focus on relevant items inside a team project via 5 pivots:
 
@@ -112,7 +112,7 @@ New feature ideas can arrive at any moment, so we’ve made it easier to add new
 
 > **Preview feature**
 >
-> This capability is enabled through the **Git Forks** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) on your account.
+> This capability is enabled through the **Git Forks** [preview feature](/vsts/project/navigation/preview-features) on your account.
 >
 > With this update you can fork and push changes back **within an account**. This is the 1st step on our journey with forks. The next step will be to enable you to fork a repository into a different VSTS account.
 
@@ -212,9 +212,9 @@ Read more about the goals and usage on the [vsts-tasks repo page](https://github
 
 > **Preview feature**
 >
-> This capability is enabled through the **New Release Definition Editor** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) on your profile and/or account.
+> This capability is enabled through the **New Release Definition Editor** [preview feature](/vsts/project/navigation/preview-features) on your profile and/or account.
 
-Earlier last month we announced a [preview of the new release definition editor](https://www.visualstudio.com/articles/news/2017/jul-14-team-services#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the [new release definition editor](https://www.visualstudio.com/docs/build/preview/release-definition-editor) for everyone by default. An administrator can disable it from the [Preview features option](https://www.visualstudio.com/docs/collaborate/preview-features) in their account profile menu.
+Earlier last month we announced a [preview of the new release definition editor](https://www.visualstudio.com/articles/news/2017/jul-14-team-services#new-release-definition-editor-preview). Thank you to all who have been using it and giving us feedback! With this release, we have turned on the [new release definition editor](/vsts/pipelines/preview/new-release-landing-page) for everyone by default. An administrator can disable it from the [Preview features option](/vsts/project/navigation/preview-features) in their account profile menu.
 
 ### Enhancements in new Release Definition editor
 
@@ -286,7 +286,7 @@ Cloud load testing agents are now able to run the JMeter 3.2 engine. Load tests 
 
 > **Preview feature**
 >
-> This capability is enabled through the **Streamlined User Management** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) on your profile and/or account.
+> This capability is enabled through the **Streamlined User Management** [preview feature](/vsts/project/navigation/preview-features) on your profile and/or account.
 
 Effective user management helps administrators ensure they are paying for the right resources and enabling the right access in their projects. We’ve repeatedly heard in support calls, and from our customers that they want capabilities to simplify this process in VSTS. This sprint, we are releasing an experience to general availability, which begins to address these issues. See the [documentation for the User hub](https://www.visualstudio.com/docs/setup-admin/team-services/manage-users-and-access-user-hub-team-services) for more information. Here are some of the changes that you’ll see light up:
 

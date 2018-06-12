@@ -21,7 +21,7 @@ ms.date: 03/20/2018
 
 **VSTS | TFS 2018.2**  
 
-View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. You can enable it from the [Preview features menu](../../collaborate/preview-features.md) that you access from your account profile.
+View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. You can enable it from the [Preview features menu](../../project/navigation/preview-features.md) that you access from your account profile.
 
 > [!NOTE]     
 > **Feature availability:** The **Work Items** page is in preview and currently available from VSTS only.
@@ -61,7 +61,7 @@ Using the drop-down menu, you can focus on relevant items inside a team project 
 <td>
 <ul>
 <li>**Assigned to me**: lists all work items assigned to you in the project in the order they were last updated. To open or update a work item, simply click its title.</li>
-<li>**Following**: lists work items that you've elected to [follow](../../collaborate/follow-work-items.md). </li>
+<li>**Following**: lists work items that you've elected to [follow](follow-work-items.md). </li>
 <li>**Mentioned**: lists work items in which you've been mentioned in the last 30 days. </li>
 <li>**My activity**: lists work items that you have recently viewed or updated.</li>
 <li>**Recently updated**: lists work items recently updated in the project. </li>
@@ -164,7 +164,7 @@ Use the following three controls to manage your views.
 
 ## Related articles
 - [Move, change, or delete work items (REcycle Bin)](../backlogs/remove-delete-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
-- [Enable preview features](../../collaborate/preview-features.md)
+- [Enable preview features](../../project/navigation/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
 - [Work from the account home page](../../user-guide/account-home-pages.md)

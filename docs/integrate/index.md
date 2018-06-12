@@ -25,11 +25,13 @@ Check out the quick starts to get you started:
 
 
 ## Concepts
+* [name: Best practices](./concepts/integration-bestpractices.md)
 * [.NET client libraries](./concepts/dotnet-client-libraries.md)
 * [Authentication](./get-started/authentication/authentication-guidance.md)
 * [Service hooks](./concepts/service-hooks.md)
 * [REST API Versioning](./concepts/rest-api-versioning.md)
 * [Cross-origin resource sharing](./concepts/cross-origin-resource-sharing.md)
+* [Rate limits](./concepts/rate-limits.md)
 
 ## Samples
 * [Custom application samples](./get-started/client-libraries/samples.md)

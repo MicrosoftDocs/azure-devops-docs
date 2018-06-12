@@ -50,7 +50,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ## Step-by-Step Tutorials
 
-- [Follow work](../../collaborate/follow-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Follow work](follow-work-items.md)
 - [Manage bugs](../backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Manage issues](../backlogs/manage-issues-impediments.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Move, change, or delete items](../backlogs/remove-delete-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)

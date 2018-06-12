@@ -14,7 +14,7 @@ ms.date: 3/29/2018
 
 # Power BI for Visual Studio Team Services (VSTS)
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]Ã‚ 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
 
 With Power BI, you can quickly generate reports for your VSTS team projects based on the Analytics Service. To learn more about Analytics, see [What is Analytics?](../analytics/what-is-analytics.md) and [VSTS/TFS Reporting Roadmap](../analytics/reporting-roadmap.md).
 
@@ -31,8 +31,8 @@ Learn how to build stunning reports using Power BI Desktop.
 
 **VSTS**
 
-- [Create an Analytics view](../analytics/analytics-views-create.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json))
-- [Manage Analytics views](../analytics/analytics-views-manage.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json))
+- [Create an Analytics view](../analytics/analytics-views-create.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json) 
+- [Manage Analytics views](../analytics/analytics-views-manage.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json) 
 
 
 ## How-to Guides

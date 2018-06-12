@@ -21,7 +21,7 @@ ms.date: 09/29/2017
 
 <a id="define-query-hyperlink" />  
 
-The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md).
+The easiest way to define a hyperlink is to create a query that matches what you want and then copy the URL for the query. The hyperlink uses the work item query language (WIQL), which resembles Transact-SQL. For details about constructing WIQLs, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
 
 VSTS and TFS 2015 require that you encode the WIQL portion of the URL syntax. You can use any URL encoder tool to encode your URL. 
 
@@ -96,7 +96,7 @@ SELECT [System.ID], [System.Title], [System.State]
 
 
 ## Related articles: 
-- [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
 - [REST API, Wiql](https://docs.microsoft.com/en-us/rest/api/vsts/wit/wiql)
  

@@ -17,13 +17,13 @@ ms.date: 03/20/2018
 **VSTS | TFS 2018**   
 
 > [!NOTE]      
-><b>Feature availability: </b>The **New Queries Experience** is in preview for VSTS and TFS 2018. To access it, you [enable it from the web portal](../../collaborate/preview-features.md) from your account profile.
+><b>Feature availability: </b>The **New Queries Experience** is in preview for VSTS and TFS 2018. To access it, you [enable it from the web portal](../../project/navigation/preview-features.md) from your account profile.
 
 The **New Queries Experience** streamlines many of the query features you have access to. It now provides a directory page, separate from the queries results page,  from which to select, manage, and favorite queries. 
 
 ## Enable the New Queries Experience
 
-To try out the **New Queries Experience**, open your account provide and select Preview features. For details, see [Enable  preview features](../../collaborate/preview-features.md).
+To try out the **New Queries Experience**, open your account provide and select Preview features. For details, see [Enable  preview features](../../project/navigation/preview-features.md).
 
 ## User focused navigation
 After you enable the **New Queries Experience**, click the  **Work>Queries** hub. You"™ll notice that the left pane is gone. To navigate quickly between your favorite queries, click Queries and favorite those queries of most interest to you. Then, you can use the drop-down menu in the query title to select queries you've favorited.

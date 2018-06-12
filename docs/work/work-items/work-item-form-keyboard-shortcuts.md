@@ -29,6 +29,6 @@ With keyboard shortcuts, you can quickly navigate within a web page or the web w
 
 ## Related articles
 
-- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
+- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../project/navigation/keyboard-shortcuts.md)
 
 

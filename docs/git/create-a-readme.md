@@ -25,7 +25,7 @@ Your readme should speak to the following audiences:
 - Developers that want to build and test your code. Developers are also users.
 - Contributors that want to submit changes to your code. Contributors are both developers and users.
 
-Write your readme in [Markdown](../collaborate/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
+Write your readme in [Markdown](../project/wiki/markdown-guidance.md) instead of plain text. Markdown makes it easy to format text, include images, and link as needed to additional documentation from your readme.
 
 Here are some great readmes that use this format and speak to all three audiences, for reference and inspiration:
 

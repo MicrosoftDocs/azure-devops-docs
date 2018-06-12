@@ -158,7 +158,7 @@ Predefined fields defined by the default process templates that TFS provides beg
 -   Microsoft.VSTS.Build.FoundIn   
 -   Microsoft.VSTS.TCM.Steps  
 
-For an overview of all system and predefined fields that are defined for the default processes/process templates, see [Work item field index](../../work-items/guidance/work-item-field.md). For more information about specifying field names, see [Naming restrictions](../../../collaborate/naming-restrictions.md).
+For an overview of all system and predefined fields that are defined for the default processes/process templates, see [Work item field index](../../work-items/guidance/work-item-field.md). For more information about specifying field names, see [Naming restrictions](../../../organizations/settings/naming-restrictions.md).
 
 
 ## Related articles

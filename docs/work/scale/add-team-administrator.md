@@ -89,4 +89,4 @@ From the web portal, open the admin page for the team.
 
 - [About teams & Agile tools](../../organizations/settings/about-teams-and-settings.md)
 - [Manage portfolios](portfolio-management.md)
-- [Set team favorites](../../collaborate/set-favorites.md) 
+- [Set team favorites](../../project/navigation/set-favorites.md) 

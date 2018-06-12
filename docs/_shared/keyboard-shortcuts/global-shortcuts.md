@@ -36,5 +36,5 @@ You can use the following keyboard shortcuts from the web portal.
 
 
 <!---
-g,k&nbsp;&nbsp;&nbsp;Go to [wiki](/vsts/collaborate/add-edit-wiki)<br/>
+g,k&nbsp;&nbsp;&nbsp;Go to [wiki](/vsts/project/wiki/add-edit-wiki)<br/>
 -->
