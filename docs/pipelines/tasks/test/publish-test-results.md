@@ -38,7 +38,9 @@ The build agent must have the following capabilities:
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/PublishTestResults.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PublishTestResultsV2.md)]
 
 ::: moniker-end
 

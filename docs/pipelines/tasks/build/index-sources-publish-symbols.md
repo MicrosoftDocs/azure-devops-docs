@@ -38,7 +38,9 @@ None
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/PublishSymbols.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PublishSymbolsV2.md)]
 
 ::: moniker-end
 

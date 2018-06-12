@@ -27,7 +27,9 @@ The build agent must have the following capability:
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/ANT.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/ANTV1.md)]
 
 ::: moniker-end
 

@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/DownloadBuildArtifacts.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/DownloadBuildArtifactsV0.md)]
 
 ::: moniker-end
 

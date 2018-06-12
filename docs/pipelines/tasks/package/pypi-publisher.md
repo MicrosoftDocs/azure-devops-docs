@@ -39,7 +39,9 @@ A generic service connection for a PyPI index.
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.md)]
 
 ::: moniker-end
 

@@ -31,7 +31,9 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/PowerShellOnTargetMachinesV3.3.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PowerShellOnTargetMachinesV3.md)]
 
 ::: moniker-end
 
