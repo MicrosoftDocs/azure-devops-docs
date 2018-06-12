@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 01/19/2018
+ms.date: 06/12/2018
 monikerRange: 'vsts'
 ---
 
@@ -21,13 +21,13 @@ monikerRange: 'vsts'
 
 Use this task to download a [secure file](../../library/secure-files.md) from the server during a build or release.
 
-Once downloaded, the secure file is located in the `$env:TEMP` directory of the VSTS Agent.
+Once downloaded, the secure file is located in the `$(Agent.TempDirectory)` directory of the VSTS Agent.
 
 The full path of the downloaded file is stored to the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable.
 
 If you use multiple versions of the Download Secure File task in your definition, they can be referenced with the `$env:DOWNLOADSECUREFILE1_SECUREFILEPATH`, `$env:DOWNLOADSECUREFILE2_SECUREFILEPATH`, `...` environment variables, where the number in the environment variable corresponds with the task version.
 
-Note that if you use two Download Secure File tasks in the same definition with the same task version, the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable will not be populated, but both files will still be downloaded to `$env:TEMP`.
+Note that if you use two Download Secure File tasks in the same definition with the same task version, the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable will not be populated, but both files will still be downloaded to `$(Agent.TempDirectory)`.
 
 ::: moniker range="vsts"
 
@@ -39,4 +39,4 @@ Note that if you use two Download Secure File tasks in the same definition with 
 
 | Argument | Description |
 | -------- | ----------- |
-| Secure File | Select the secure file to download to a temporary location on the agent. The file will be cleaned up after the build or release. |
+| Secure File | Select the secure file to download to a temporary location on the agent machine. The file will be deleted after the build or release. |
