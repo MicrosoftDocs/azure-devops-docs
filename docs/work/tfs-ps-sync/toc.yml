@@ -1,5 +1,5 @@
 - name: TFS-Project Server Integration
-  href: index.md
+  href: index.md?toc=/vsts/work/tfs-ps-sync/toc.json&bc=/vsts/work/tfs-ps-sync/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: Third-party support for synchronization
@@ -9,7 +9,7 @@
   - name: Synchronization overview
     href: synchronization-process-overview.md
   - name: Overview of integration features
-    href: overview-tfs-project-server-integration.md
+    href: overview-tfs-project-server-integration.md?
 - name: Concepts
   items:
   - name: Operational differences in managing projects using TFS and Project
