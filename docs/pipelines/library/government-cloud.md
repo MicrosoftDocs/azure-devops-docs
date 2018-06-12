@@ -25,7 +25,7 @@ want to deploy apps to Government Clouds because artifact storage, build,
 and deployment orchestration must execute outside the Government Cloud.
 
 To enable connection to an Azure Government Cloud, you specify it as the **Environment** parameter when you create an
-[Azure Resource Manager service endpoint](service-endpoints.md#sep-azure-rm).
+[Azure Resource Manager service endpoint](connect-to-azure.md).
 You must use the full version of the endpoint dialog to manually define the connection.
 Before you configure a service endpoint, you should also ensure you meet all relevant compliance requirements for your application.
 

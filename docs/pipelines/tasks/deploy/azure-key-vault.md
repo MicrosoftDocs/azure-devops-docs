@@ -27,7 +27,7 @@ The task is Node-based, and works with agents on Linux, macOS, and Windows.
 
 The task has the following pre-requisites:
 
-* An Azure subscription linked to Team Foundation Server or VSTS using the [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
+* An Azure subscription linked to Team Foundation Server or VSTS using the [Azure Resource Manager service endpoint](../../library/connect-to-azure.md).
 
 * An [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) containing the secrets.
 
@@ -71,7 +71,7 @@ When you want to access secrets:
 
 | Parameter | Description |
 | --------- | ----------- |
-| **Azure Subscription** | Required. Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/service-endpoints.md#sep-azure-rm) |
+| **Azure Subscription** | Required. Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
 | **Key Vault** | Required. Select the name of the Azure Key Vault from which the secrets will be downloaded. |
 | **Secrets filter** | Required. A comma-separated list of secret names to be downloaded. Use the default value `*` to download all the secrets from the vault. |
 
