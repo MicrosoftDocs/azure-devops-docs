@@ -79,7 +79,7 @@ To extract a list of all SVN users from the root of your local Subversion checko
 ```
 svn.exe log --quiet | ? { $_ -notlike '-*' } | % { ($_ -split ' \| ')[1] } | Select-Object -Unique
 ```
-This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames, and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `will = will <will>` to `will =  Will Schaub <wills@fabrikam-fiber.com>`.
+This command will retrieve all the log messages, extract the usernames, eliminate any duplicate usernames, sort the usernames, and place them into a "authors-transform.txt" file. You can then edit each line in the file to create a mapping of SVN users to a well-formatted Git user. For example, you can map `jamal = jamal <jamal>` to `jamal =  Jamal Hartnett <jamal@fabrikam-fiber.com>`.
 
 ### Clone the Subversion repository using git-svn
 
