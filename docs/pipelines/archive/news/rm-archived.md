@@ -263,7 +263,7 @@ from VSTS, you can create an Azure Resource Manager
 endpoint without needing to run tedious PowerShell scripts
 or follow the steps in a blog.
 
-See [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
+See [Azure Resource Manager service endpoint](../../library/connect-to-azure.md).
 
 <a name="update-sep21-16"></a>
 ### September 21, 2016 Update (VSTS)
@@ -385,7 +385,7 @@ Two new features make it easier to deploy applications to Azure:
   allows you to select an existing Azure subscription. This automatically
   creates a new Azure service principal that is assigned the **Contributor** role
   and so has access to all resources within the subscription. For more details, see
-  [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
+  [Azure Resource Manager service endpoint](../../library/connect-to-azure.md).
 
  ![Configuring a Service Principal Authentication based Azure service endpoint](_img/rm-archived/rel103-01.png)
 

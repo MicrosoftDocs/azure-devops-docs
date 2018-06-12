@@ -363,7 +363,7 @@ The second task deploys to the AKS cluster:
 
 1. Set **Container Registry type** to **Azure Container Registry**.
 
-1. Set **Azure subscription** to your subscription.  If you do not have an existing Azure connection in VSTS, you can follow the steps [here](https://docs.microsoft.com/vsts/pipelines/library/service-endpoints#sep-azure-rm) to create one.
+1. Set **Azure subscription** to your subscription.  If you do not have an existing Azure connection in VSTS, you can follow the steps [here](https://docs.microsoft.com/vsts/pipelines/library/connect-to-azure) to create one.
 
 1. Set **Azure Container Registry** to the name of your ACR. 
 

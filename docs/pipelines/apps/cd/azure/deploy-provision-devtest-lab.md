@@ -145,7 +145,7 @@ release definition in Release Management.
    ![Azure DevTest Labs Tasks](_img/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create the VM to use for subsequent deployments.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/service-endpoints.md#sep-azure-rm).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
    
    - **Lab Name**: Select the name of the instance you created earlier.
    
@@ -166,7 +166,7 @@ release definition in Release Management.
    - **Azure Connection Type**: `Azure Resource Manager`.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/service-endpoints.md#sep-azure-rm).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
    
    - **Script Type**: `Script File`.
    
@@ -199,7 +199,7 @@ release definition in Release Management.
    ![Azure DevTest Labs Tasks](_img/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Create an image of the VM.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/service-endpoints.md#sep-azure-rm).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
    
    - **Lab Name**: Select the name of the instance you created earlier.
    
@@ -221,7 +221,7 @@ release definition in Release Management.
    ![Azure DevTest Labs Tasks](_img/devtestlabs-icon.png) [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks) - Delete the VM.
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/service-endpoints.md#sep-azure-rm).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
    
    - **Lab VM ID**: If you changed the default name of the environment variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.<p />
 

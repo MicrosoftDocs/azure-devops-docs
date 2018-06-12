@@ -175,6 +175,8 @@
       href: agents/certificate.md
     - name: Configure TFS authentication
       href: agents/configure-tfs-authentication.md
+  - name: Connect to Azure
+    href: library/connect-to-azure.md
   - name: Use YAML CI (config as code)
     href: build/yaml.md
   - name: Build more app types
