@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/BashV3.3.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/BashV3.md)]
 
 ::: moniker-end
 

@@ -24,7 +24,9 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/PublishToAzureServiceBusV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PublishToAzureServiceBusV1.md)]
 
 ::: moniker-end
 

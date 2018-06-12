@@ -27,7 +27,9 @@ None
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/CocoaPodsV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/CocoaPodsV0.md)]
 
 ::: moniker-end
 

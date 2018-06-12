@@ -27,7 +27,9 @@ msbuild
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/MSBuildV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/MSBuildV1.md)]
 
 ::: moniker-end
 

@@ -63,7 +63,9 @@ When you want to access secrets:
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/AzureKeyVault.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/AzureKeyVaultV1.md)]
 
 ::: moniker-end
 
