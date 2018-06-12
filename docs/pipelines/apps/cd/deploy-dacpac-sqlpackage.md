@@ -87,7 +87,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
    
    - **Azure Connection Type**: `Azure Resource Manager`.
    
-   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../library/service-endpoints.md#sep-azure-rm).
+   - **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../library/connect-to-azure.md).
    
    - **Azure SQL Server Name**: Enter the name of the SQL Database server you created earlier.
    

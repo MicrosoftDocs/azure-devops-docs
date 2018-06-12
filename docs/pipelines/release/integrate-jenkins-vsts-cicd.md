@@ -193,7 +193,7 @@ To create the release definition in VSTS:
 
 1. Search for the **Azure App Service Deploy** task. Select **Add** to add the task.
 
-1. Choose your **Azure Subscription**.  If you do not have an existing Azure connection in VSTS, you can follow the steps [here](https://docs.microsoft.com/vsts/pipelines/library/service-endpoints#sep-azure-rm) to create one.
+1. Choose your **Azure Subscription**.  If you do not have an existing Azure connection in VSTS, you can follow the steps [here](https://docs.microsoft.com/vsts/pipelines/library/connect-to-azure) to create one.
 
 1. Enter a name for your existing Web App for the **App Service name**.  This **name** must match your existing **Web App name** from the prerequisites.
 
