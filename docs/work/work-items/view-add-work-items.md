@@ -172,5 +172,3 @@ Use the following three controls to manage your views.
 > [!NOTE]
 > You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
 
-
-[!INCLUDE [temp](../../_shared/help-support-shared.md)]Â 
