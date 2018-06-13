@@ -50,7 +50,7 @@
   - name: Filter your Kanban board
     href: filter-kanban-board.md 
   - name: "Manage permissions (Security)"
-    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Samples
   items:
   - name: Kanban query examples 
@@ -64,7 +64,7 @@
   - name: Work item field index
     href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: "Default permissions (Security)"
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: REST API, Boards
     href: https://docs.microsoft.com/en-us/rest/api/vsts/work/boards
 - name: Resources

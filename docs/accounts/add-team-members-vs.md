@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 Add members to your team project in VSTS, 
 so you can share code and work with your team, track their status,
 coordinate dev, build, test, and release activities, and more.
-For Team Foundation Server, learn [how to add team project members here](../security/add-users-team-project.md).
+For Team Foundation Server, learn [how to add team project members here](../organizations/security/add-users-team-project.md).
 
 When you add members to team projects,
 VSTS automatically assigns
@@ -32,14 +32,14 @@ like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-t
 > [!NOTE]
 > To manually assign access levels,
 > [add members to your account instead](add-account-users-assign-access-levels.md).
-> To control access to account resources, see [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md) or [Grant or restrict access to select features and functions](../security/restrict-access.md).
+> To control access to account resources, see [Change individual permissions, grant select access to specific functions](../organizations/security/change-individual-permissions.md) or [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md).
 
 ## Prerequisites
 
 If you don't have a team project yet,
 [create your team project first](../user-guide/connect-team-projects.md).
 To add members to team projects, you'll need
-[project administrator](../security/set-project-collection-level-permissions.md),
+[project administrator](../organizations/security/set-project-collection-level-permissions.md),
 [project collection administrator, or account owner](faq-add-team-members.md#find-pca-owner) permissions.
 
 ## Add members to your team project
@@ -109,8 +109,8 @@ To add members to team projects, you'll need
 ## Next steps
 
 * [Connect to a team project](../user-guide/connect-team-projects.md)
-* [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
-* [Grant or restrict access to select features and functions](../security/restrict-access.md)
+* [Change individual permissions, grant select access to specific functions](../organizations/security/change-individual-permissions.md)
+* [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)
 
 ## Related articles
 

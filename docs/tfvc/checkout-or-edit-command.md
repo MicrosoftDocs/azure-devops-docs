@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 Checks out a file and changes its pending change status to Edit. You can call this command using either **Checkout** or **Edit**.
 
-**Requirements:** See [Permissions and groups reference](../security/permissions.md).
+**Requirements:** See [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf checkout [/lock:(none|checkin|checkout)] [/recursive] [/encoding:encoding] itemspec [/login: username,[password]]
 

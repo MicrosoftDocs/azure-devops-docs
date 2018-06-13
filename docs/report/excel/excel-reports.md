@@ -189,7 +189,7 @@ Default Excel reports require that your team project is configured with SharePoi
   
     -   You must add users as members of the **TfsWarehouseDataReaders** security role in SQL Server Analysis Services.  
   
- The following table summarizes the required permissions based on activity. For information about how to grant these permissions to team members, see [Add users to team projects](../../security/add-users-team-project.md). For information about permissions that are required to work with Excel reports in general, see [Grant permissions to view and manage reports](../admin/grant-permissions-to-reports.md).  
+ The following table summarizes the required permissions based on activity. For information about how to grant these permissions to team members, see [Add users to team projects](../../organizations/security/add-users-team-project.md). For information about permissions that are required to work with Excel reports in general, see [Grant permissions to view and manage reports](../admin/grant-permissions-to-reports.md).  
   
 |Activity|Team Foundation Server|Team project portal|SQL Server Analysis Services cube (Tfs_Analysis)|Notes|  
 |--------------|------------------------------------------------------------------|-------------------------|----------------------------------------------------------------------------------------------------------|-----------|  

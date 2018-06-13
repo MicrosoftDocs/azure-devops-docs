@@ -85,13 +85,13 @@
     - name: "Power BI (VSTS)"
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index
-  - name: Collaboration
+  - name: Collaborate
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=collaboration
     items:
     - name: Public Projects
-      tocHref: /vsts/public/
-      topicHref: /vsts/public/index
+      tocHref: /vsts/organizations/public/
+      topicHref: /vsts/organizations/public/index
     - name: Notifications
       tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index
@@ -102,8 +102,8 @@
       tocHref: /vsts/project/search/
       topicHref: /vsts/project/search/index
     - name: Feedback
-      tocHref: /vsts/feedback/
-      topicHref: /vsts/feedback/index
+      tocHref: /vsts/project/feedback/
+      topicHref: /vsts/project/feedback/index
   - name: Admin
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
@@ -112,8 +112,8 @@
       tocHref: /vsts/accounts/
       topicHref: /vsts/accounts/index
     - name: "Security & Identity"
-      tocHref: /vsts/security/
-      topicHref: /vsts/security/index
+      tocHref: /vsts/organizations/security/
+      topicHref: /vsts/organizations/security/index
     - name: "Scale & Configure Teams"
       tocHref: /vsts/organizations/settings/
       topicHref: /vsts/organizations/settings/index

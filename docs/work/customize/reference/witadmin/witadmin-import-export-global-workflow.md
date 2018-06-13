@@ -30,7 +30,7 @@ By using global workflow, you can minimize the work required to define and updat
 -   To import a global workflow to a team project, you must be a member of the following security groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators**.    
 -   To import a global workflow to a team project collection, you must be a member of either the **Team Foundation Administrators** or **Project Collection Administrators**.  
   
-See [Add administrators, set permissions at the project-level or project collection-level](../../../../security/set-project-collection-level-permissions.md).  
+See [Add administrators, set permissions at the project-level or project collection-level](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]    
 >Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the following page on the Microsoft website: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  

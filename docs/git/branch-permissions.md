@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 ## Overview
 
 Set up permissions to control who can read and update the code in a branch on your Git repo.
-You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../security/set-git-tfvc-repository-permissions.md#git-repository).
+You can set permissions for individual users and groups, and inherit and override permissions as needed from your [repo permissions](../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
 
 ## Use the branches view to configure security
 
@@ -36,7 +36,7 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 ## Add users or groups
 
-> Avoid trouble:  You can only add permissions for users and groups already in your Team Project. [Add new users and groups to your Team Project](../security/add-users-team-project.md) before setting branch permissions. 
+> Avoid trouble:  You can only add permissions for users and groups already in your Team Project. [Add new users and groups to your Team Project](../organizations/security/add-users-team-project.md) before setting branch permissions. 
 
 Add users or groups to your branch permissions by selecting **Add**, then choosing **Add user** or **Add VSTS group**. 
 Enter the display name or their Microsoft Account, then select **Save Changes**.
@@ -51,7 +51,7 @@ The user or group will still exist in your Team Project and this change will not
 ## Set permissions 
 
 Control branch permission settings from the branch permission view. Users and groups with permissions set at the repo level will
-[inherit those permissions](../security/about-permissions.md#inheritance) by default. 
+[inherit those permissions](../organizations/security/about-permissions.md#inheritance) by default. 
 
 > [!NOTE] 
 > These permissions have changed in TFS 2017 Update 1 and VSTS.

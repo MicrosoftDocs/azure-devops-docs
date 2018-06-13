@@ -22,7 +22,7 @@ You can find items using shortcut filters or by specifying keywords or phrases, 
 
 Search box queries automatically scope to the items defined to the team project you're currently connected to. To search across team projects, use the [query editor](using-queries.md). Also, searching is not case-sensitive.
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="search-selector" /> 
 <a id="search-box" /> 
 ## Code search vs work item search
@@ -33,7 +33,7 @@ Search box queries automatically scope to the items defined to the team project 
 
 If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 The search box retains the last used search context for each hub. To learn more about code search, see [Get started with Code Search](../../project/search/code-search.md).
 
 Type the ID in the Search work items box and then choose the search icon. The Search work items box is available from a team project context.  
@@ -46,7 +46,7 @@ Type the ID in the Search work items box and then choose the search icon. The Se
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
  
 > [!div class="mx-imgBorder"]
 ![Search Work Items Text Box](_img/search-box/search-box-vsts.png)
@@ -75,7 +75,7 @@ You can enter or select one or more of the following shortcut identifiers:
 
 Use the `@Me` and `@Today` macros to specify your user name or today's date.
 
-Use the `=`, `:`, and `"“` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
+Use the `=`, `:`, and `-` operators to specify the operations **Equals**, **Contains**, and **Not**, respectively.
 
 # [Browser](#tab/browser) 
 
@@ -234,7 +234,7 @@ Use these search operators to specify search criteria:
 
 &#160;&#160;&#160;**=** (EQUALS) to search for exact matches of text.  
 &#160;&#160;&#160;**:** (CONTAINS) to search for partial matches of text.  
-&#160;&#160;&#160;**"“** (NOT) to exclude work items that contain certain text. The NOT operator can only be used with field names.
+&#160;&#160;&#160;**-** (NOT) to exclude work items that contain certain text. The NOT operator can only be used with field names.
 
 The following examples show how to use operators when you create a search string.
 

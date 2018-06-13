@@ -21,7 +21,7 @@
   - name: Install a Marketplace extension
     href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: View permissions
-    href: ../security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../organizations/security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Set favorites
@@ -29,7 +29,7 @@
   - name: Follow work & pull requests
     href: ../work/work-items/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Get started as a Stakeholder
-    href: ../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: ../organizations/security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Concepts
   items:
   - name: Key concepts 
@@ -69,7 +69,7 @@
   - name: "TF31002: Unable to connect"
     href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Troubleshoot network connections and whitelist addresses
-    href: ../security/faq-network-connections.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
+    href: ../organizations/security/faq-network-connections.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Get support, provide feedback
     href: provide-feedback.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
 - name: Reference
@@ -77,7 +77,7 @@
   - name: Features index
     href: alm-devops-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: "Permissions & access (Security)"
-    href: ../security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../organizations/security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Keyboard shortcuts
     href: ../project/navigation/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Markdown guidance
@@ -99,6 +99,6 @@
   - name: Account Management (VSTS)
     href: ../accounts/index.md
   - name: "Security & Identity"
-    href: ../security/index.md
+    href: ../organizations/security/index.md
   - name: Technical articles
     href: https://docs.microsoft.com/en-us/vsts/articles/?view=vsts

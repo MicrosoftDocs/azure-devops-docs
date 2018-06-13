@@ -29,7 +29,7 @@ View work items that you created or are assigned to you.  The **Work>Work Items*
 ## Prerequisites 
 
 - You must connect to a team project. If you don't have an account or team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a team project from your web portal or Visual Studio](../../user-guide/connect-team-projects.md).
-- To view or add work items, you must be a member of the Contributors group or be granted [Stakeholder access](../../security/get-started-stakeholder.md). If you don't have access to the team project, ask the [account owner or project administrator](../../security/lookup-account-owner-admin.md) to add you.
+- To view or add work items, you must be a member of the Contributors group or be granted [Stakeholder access](../../organizations/security/get-started-stakeholder.md). If you don't have access to the team project, ask the [account owner or project administrator](../../organizations/security/lookup-account-owner-admin.md) to add you.
  
 
 ## Open the Work Items page
@@ -172,5 +172,3 @@ Use the following three controls to manage your views.
 > [!NOTE]
 > You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
 
-
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

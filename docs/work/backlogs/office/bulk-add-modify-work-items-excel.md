@@ -51,7 +51,7 @@ In this topic you'll learn:
     > [!TIP]  
     >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
 
-4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../../security/add-users-team-project.md#add-team-members).  
+4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 

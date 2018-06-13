@@ -135,7 +135,7 @@
 - name: Resources
   items:
   - name: Get Stakeholder feedback
-    href: ../feedback/index.md 
+    href: ../project/feedback/index.md 
   - name: Using Microsoft Test Manager
     href: https://msdn.microsoft.com/en-us/library/jj635157%28v=vs.120%29.aspx
   - name: Load test with Visual Studio

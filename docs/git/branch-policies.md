@@ -170,7 +170,7 @@ When the required reviewers approve the code, you can complete the pull request.
 
 ## Bypass branch policies
 
-In some cases, you need to bypass policy requirements so you can push changes to the branch directly. For these situations, grant the **Exempt from policy enforcement** permission to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](../security/permissions.md#git-repository-permissions-object-level).  
+In some cases, you need to bypass policy requirements so you can push changes to the branch directly. For these situations, grant the **Exempt from policy enforcement** permission to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](../organizations/security/permissions.md#git-repository-permissions-object-level).  
 
 ![Exempt from policy enforcement permission](_img/branch-policies/PolicyExemptPermission.png)
 

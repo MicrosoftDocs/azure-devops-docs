@@ -26,7 +26,7 @@ Using work items, you can share information in the following ways:
 - Link to a storyboard file 
 
 > [!TIP]    
-> If you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../security/get-started-stakeholder.md) so that they can view work items and dashboards.  
+> If you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.  
 
 
 <a id="rich-text"></a>

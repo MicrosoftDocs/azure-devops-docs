@@ -36,7 +36,7 @@ Task board for an Agile team project without the recommended manual updates
   
 **Requirements**  
   
-To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the team project. See [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
+To run the **witadmin** command-line tool, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** group for the team project. See [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md).  
   
 <a name="agile_updates"></a> 
 ##Update the workflow and metastates

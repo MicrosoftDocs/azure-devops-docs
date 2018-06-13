@@ -26,7 +26,7 @@ Adding to your gallery of storyboard shapes can boost your ability to [storyboar
 
 0.  If you're interfacing with TFS 2017 or VSTS, you must have [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). For version compatibility, see [Requirements and compatibility, Office](/tfs/server/compatibility#office). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed.  
   
-0.  If you haven't installed Visual Studio, you'll need to [install Visual Studio Community or other version](https://www.visualstudio.com/downloads/) or  [Team Foundation Server Office® Integration](https://go.microsoft.com/fwlink/?LinkId=832492&clcid=0x409) to install the Storyboarding add-in to PowerPoint.  
+0.  If you haven't installed Visual Studio, you'll need to [install Visual Studio Community or other version](https://www.visualstudio.com/downloads/) or  [Team Foundation Server Office&reg; Integration](https://go.microsoft.com/fwlink/?LinkId=832492&clcid=0x409) to install the Storyboarding add-in to PowerPoint.  
   
 0.  Open the [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/16/storyboard-shapes-extensions-being-deprecated-from-visual-studio-marketplace/) and click a link to download the corresponding storyboard shapes file. For example, download the [Windows 8 shapes and icons](https://visualstudiogallery.msdn.microsoft.com/7d745871-cf6a-47cd-a614-8453fa91f608/file/79318/1/Misc%20Windows%208%20storyboard.sbsx) 
 

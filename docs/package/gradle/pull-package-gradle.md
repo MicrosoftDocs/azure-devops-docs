@@ -44,7 +44,7 @@ You're ready to start! This tutorial will guide you through the process of insta
 
 First, you need a **gradle.properties** file that contains a VSTS credential token.
 
-Navigate to `https://{yourAccount}.visualstudio.com/_details/security/tokens`, where `{yourAccount}` is the name of your VSTS account.
+Navigate to `https://{yourAccount}.visualstudio.com/_details/organizations/security/tokens`, where `{yourAccount}` is the name of your VSTS account.
 
 Click **Add**.
 

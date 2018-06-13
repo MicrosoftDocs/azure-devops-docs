@@ -24,7 +24,7 @@ The **rename** command changes the name or the path of a file or folder. You can
 
 **Required Permissions**
 
-To use the **rename** command, you have the **Check out** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **rename** command, you have the **Check out** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf rename [/lock:(none|checkout|checkin)] [/login:username,[password]] olditem newitem
 

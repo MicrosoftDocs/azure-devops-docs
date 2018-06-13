@@ -51,7 +51,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 
 ## Reference
-- [Permissions & access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+- [Permissions & access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 - [Delivery plan keyboard shortcuts](delivery-plan-keyboard-shortcuts.md)  
 
 

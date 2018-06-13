@@ -29,7 +29,7 @@ As a team admin you can set dashboard permissions for your team. As a member of 
 To learn more about adding and viewing dashboards, see [Add and manage dashboards](dashboards.md).   
 
 > [!TIP]    
-> If a user reports that they can't create or edit a team dashboard, and you've set the permissions to allow them to do so, check that they have been added as a member of the team. This includes adding them as a team member to the default team project team. For details, see [Add users to a team project or specific team](../../security/add-users-team-project.md). 
+> If a user reports that they can't create or edit a team dashboard, and you've set the permissions to allow them to do so, check that they have been added as a member of the team. This includes adding them as a team member to the default team project team. For details, see [Add users to a team project or specific team](../../organizations/security/add-users-team-project.md). 
 
 ::: moniker-end
 
@@ -106,10 +106,10 @@ By default, all team members have permissions to edit dashboards defined for the
 
 ## Related notes
 
-- [Add users to a team project or specific team](../../security/add-users-team-project.md)
+- [Add users to a team project or specific team](../../organizations/security/add-users-team-project.md)
 - [Add a team administrator](../../work/scale/add-team-administrator.md)
  
 
 <!---
-or add a user or group and set permissions for them. For an overview of how to do add users or groups, see [Add users to a team project or specific team](../../security/add-users-team-project.md).
+or add a user or group and set permissions for them. For an overview of how to do add users or groups, see [Add users to a team project or specific team](../../organizations/security/add-users-team-project.md).
 -->

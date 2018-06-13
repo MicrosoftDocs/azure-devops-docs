@@ -23,7 +23,7 @@ The tool is compatible with text and XML based files; however, should you want t
 
 **Required Permissions**
 
-To perform this procedure, you must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../security/permissions.md).
+To perform this procedure, you must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To associate a file type with a third-party merge tool
 
