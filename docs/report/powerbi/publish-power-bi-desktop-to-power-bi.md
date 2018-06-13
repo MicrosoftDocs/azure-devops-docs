@@ -77,4 +77,4 @@ At this point, the data will update on your scheduled basis using the credential
 - [Access data through Excel](../analytics/access-analytics-excel.md)  
 - [Access data through Power BI desktop](access-analytics-power-bi.md)  
 
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 
+[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

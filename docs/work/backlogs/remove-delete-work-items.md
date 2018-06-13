@@ -337,7 +337,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
  
 	To delete a single work item, simply enter the ID as shown:  
 
-	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
+	```witadmin destroywi /collection:http://TFSServerName:8080/tfs/DefaultCollection /id:2003```    
 
 ::: moniker-end
 

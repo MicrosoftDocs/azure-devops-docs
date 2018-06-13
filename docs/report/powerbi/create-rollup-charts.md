@@ -77,7 +77,7 @@ Rollups within any one of these chains will work as well. For example, child Tas
 Rollup doesn't support those parent-child relationships that don't follow this structure. For example, rollup isn't supported for parent Risks and child tasks (CMMI process). Also, the rollup data model doesn't support custom parent-child links and hierarchies.
 
 > [!TIP]    
-> Use the **Parent...** dimensions only for hierarchical charts. Use the **Work Items** dimension for all other standard charts.   
+> Use the **Parent...** dimensions only for hierarchical charts. Use the **Work Items** dimension for all other standard charts.   
 
  
 ## Apply State filter 
