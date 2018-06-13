@@ -166,4 +166,4 @@ To learn how to create or customize a WIT, see [Modify or add a custom work item
  
 -  [Customize the work tracking experience](../customize-work.md)  
 -  [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)  
--  [Naming restrictions, Work item tracking objects](../../../collaborate/naming-restrictions.md)
+-  [Naming restrictions, Work item tracking objects](../../../organizations/settings/naming-restrictions.md)

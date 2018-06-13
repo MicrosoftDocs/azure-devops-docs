@@ -291,7 +291,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@Follows** <sup>3</sup></td>
-	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following in the team project. To learn more about the Follow feature, see [Follow a work item or pull request](../../collaborate/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md). 
+	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following in the team project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 

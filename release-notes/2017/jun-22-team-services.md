@@ -259,7 +259,7 @@ The OAuth permissions page has been updated to make it easy for a user to see wh
 
 > **Preview feature**
 >
-> To use this capability, you must be a Project Collection Administrator and enable **Streamlined User Management** [preview feature](https://mseng.visualstudio.com/docs/collaborate/preview-features) for yourself or your account. 
+> To use this capability, you must be a Project Collection Administrator and enable **Streamlined User Management** [preview feature](/vsts/project/navigation/preview-features) for yourself or your account. 
 
 Based on feedback from you, we’re releasing a set of updates to our new user management experiences that continue to make your life easier when trying to get your teammates up and running. 
 

@@ -25,7 +25,9 @@ command-line utility built for fast copying of data.
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/WindowsMachineFileCopyV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/WindowsMachineFileCopyV2.md)]
 
 ::: moniker-end
 

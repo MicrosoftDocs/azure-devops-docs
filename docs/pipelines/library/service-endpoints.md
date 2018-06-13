@@ -33,7 +33,7 @@ Service endpoints are created at project scope. An endpoint created in one proje
 
 <a name="create-new"></a>
 
-## Create a service endpoint
+## Create and use a service endpoint
 
 1. Open the **Services** page from the "settings" icon in the top menu bar.
 
@@ -43,7 +43,22 @@ Service endpoints are created at project scope. An endpoint created in one proje
 
    ![Choosing a service endpoint type](_img/new-service-endpoint-2.png)
 
-1. Fill in the parameters for the endpoint. The list of parameters differs for each  type of service endpoint - see the following list.
+1. Fill in the parameters for the endpoint. The list of parameters differs for each  type of service endpoint - see the [following list](#ep-types).
+   For example, this is the default **Azure Resource Manager** connection dialog:
+
+   ![Azure Resource Manager connection dialog](_img/connection-dialog-arm.png)
+
+1. After the new service endpoint is created:
+
+   * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** (or the equivalent connection name) setting of your pipeline.
+
+   ![If you are using it in the UI](_img/ui-connection-setting.png)
+
+   * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** (or the equivalent connection name) value.
+
+   ![If you are using it in YAML](_img/yaml-connection-setting.png)
+
+<a name="ep-types"></a>
 
 ## Common endpoint types
 
@@ -83,7 +98,7 @@ using Azure credentials or an Azure management certificate.
 | Parameter | Description |
 | --------- | ----------- |
 | \[authentication type\] | Required. Select **Credentials** or **Certificate based**. |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Environment | Required. Select **Azure Cloud**, **Azure Stack**, or one of the pre-defined [Azure Government Clouds](government-cloud.md) where your subscription is defined. |
 | Subscription ID | Required. The GUID-like identifier for your Azure subscription (not the subscription name). You can copy this from the Azure portal. |
 | Subscription Name | Required. The name of your Microsoft Azure subscription (account). |
@@ -125,7 +140,7 @@ Defines and secures a connection to a Microsoft Azure Service Bus queue.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Service Bus ConnectionString | The URL of your Azure Service Bus instance. [More information](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-fundamentals-hybrid-solutions). |
 | Service Bus Queue Name | The name of an existing Azure Service Bus queue. |
 <p />
@@ -143,7 +158,7 @@ Defines and secures a connection to a Microsoft Azure Service Fabric cluster.
 | Parameter | Description |
 | --------- | ----------- |
 | \[authentication type\] | Required. Select **No authentication**, **Azure Active Directory credentials**, or **Certificate based**. |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Cluster endpoint | Required. The client endpoint of the remote cluster to connect to. Prefix with **tcp://**. |
 | Username | Required for Azure Active Directory authentication. The username to use when connecting to the remote cluster. |
 | Password | Required for Azure Active Directory authentication. The password for the specified username. |
@@ -169,7 +184,7 @@ Defines a connection to a Bitbucket server.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | User name | Required. The username to connect to the service. |
 | Password | Required. The password for the specified username. |
 
@@ -183,7 +198,7 @@ Defines and secures a connection to a [Chef](https://docs.chef.io/chef_overview.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the Chef automation server. |
 | Node Name (Username) | Required. The name of the node to connect to. Typically this is your username. |
 | Client Key | Required. The key specified in the Chef .pem file. |
@@ -198,7 +213,7 @@ Defines and secures a connection to a Docker host.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the Docker host. |
 | CA Certificate | Required. A trusted certificate authority certificate to use to authenticate with the host. |
 | Certificate | Required. A client certificate to use to authenticate with the host. |
@@ -216,7 +231,7 @@ Defines and secures a connection to a Docker registry.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Docker Registry | Required. The URL of the Docker registry. A default value is provided. |
 | Docker ID | Required. The identifier of the Docker account user. |
 | Password | Required. The password for the account user identified above. |
@@ -234,7 +249,7 @@ and [GitHub Enterprise](#sep-githubent) connections.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the Git repository server. |
 | User name | Required. The username to connect to the Git repository server. |
 | Password/Token Key | Required. The password or access token for the specified username. |
@@ -251,7 +266,7 @@ Defines and secures a connection to any other type of service or application.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the service. |
 | User name | Required. The username to connect to the service. |
 | Password/Token Key | Required. The password or access token for the specified username. |
@@ -270,7 +285,7 @@ and [GitHub Enterprise](#sep-githubent) connections.
 | --------- | ----------- |
 | Choose authorization | Required. Either **Grant authorization** or **Personal access token**. See notes below. |
 | Token | Required for Personal access token authorization. See notes below. |
-| Connection name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your GitHub account or subscription. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 <p />
 
 [How do I create a new service endpoint?](#create-new)
@@ -303,7 +318,7 @@ and [standard GitHub endpoints](#sep-github).
 | Parameter | Description |
 | --------- | ----------- |
 | Choose authorization | Required. Either **Personal access token** or **Username and Password**. See notes below. |
-| Connection name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your GitHub account or subscription. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the service. |
 | Accept untrusted SSL certificates | Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
 | Token | Required for Personal access token authorization. See notes below. |
@@ -334,7 +349,7 @@ Defines a connection to the Jenkins service.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the service. |
 | Accept untrusted SSL certificates | Set this option to allow clients to accept a self-signed certificate instead of installing the certificate in the TFS service role or the computers hosting the [agent](../agents/agents.md). |
 | User name | Required. The username to connect to the service. |
@@ -354,7 +369,7 @@ Defines and secures a connection to a [Kubernetes](https://kubernetes.io/docs/ho
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server URL | Required. The URL of the Kubernetes automation service. |
 | Kubeconfig | The contents of the kubectl configuration file. |
 <p />
@@ -369,7 +384,7 @@ Defines and secures a connection to an npm server.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Registry URL | Required. The URL of the npm server. |
 | Username | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password | Required when connection type is **Basic authentication**. The password for the username. |
@@ -386,7 +401,7 @@ Defines and secures a connection to a NuGet server.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Feed URL | Required. The URL of the NuGet server. |
 | ApiKey | Required when connection type is **ApiKey**. The authentication key. |
 | Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../accounts/use-personal-access-tokens-to-authenticate.md). |
@@ -404,7 +419,7 @@ Defines and secures a connection to a Service Fabric cluster.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Cluster Endpoint  | Required. The TCP endpoint of the cluster. |
 | Server Certificate Thumbprint | Required when connection type is **Certificate based** or **Azure Active Directory**. |
 | Client Certificate | Required when connection type is **Certificate based**. |
@@ -425,7 +440,7 @@ Defines and secures a connection to a remote host using Secure Shell (SSH).
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Host name | Required. The name of the remote host machine or the IP address. |
 | Port number | Required. The port number of the remote host machine to which you want to connect. The default is port 22. |
 | User name | Required. The username to use when connecting to the remote host machine. |
@@ -446,7 +461,7 @@ Defines and secures a connection to the Subversion repository.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server repository URL | Required. The URL of the repository. |
 | Accept untrusted SSL certificates | Set this option to allow the client to accept self-signed certificates installed on the agent computer(s). |
 | Realm name | Optional. If you use multiple credentials in a build or release definition, use this parameter to specify the realm containing the credentials specified for this endpoint. |
@@ -465,7 +480,7 @@ Defines and secures a connection to another TFS or VSTS account.
 | Parameter | Description |
 | --------- | ----------- |
 | (authentication) | Select **Basic** or **Token Based** authentication. |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Connection URL | Required. The URL of the TFS or VSTS instance. |
 | User name | Required for Basic authentication. The username to connect to the service. |
 | Password | Required for Basic authentication. The password for the specified username. |
@@ -486,7 +501,7 @@ Defines and secures a connection to Visual Studio App Center.
 
 | Parameter | Description |
 | --------- | ----------- |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your account or subscription with the service. |
+| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | API Token | Required. The token to use to authenticate with the service. [Learn more](https://docs.microsoft.com/en-us/appcenter/api-docs/). |
 <p />
 

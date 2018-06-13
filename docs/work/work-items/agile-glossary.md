@@ -47,7 +47,7 @@ A configurable view that displays work from multiple teams and projects laid out
 
 ## Favorite 
 
-A method for tagging an object to support quick navigation by yourself or other team members. You can tag work item queries and build definitions as personal and team favorites. Other objects you can favorite for youself only include code branches, delivery plans, test plans, and teams or team projects. Learn more: [Set personal or team favorites](../../collaborate/set-favorites.md). 
+A method for tagging an object to support quick navigation by yourself or other team members. You can tag work item queries and build definitions as personal and team favorites. Other objects you can favorite for youself only include code branches, delivery plans, test plans, and teams or team projects. Learn more: [Set personal or team favorites](../../project/navigation/set-favorites.md). 
 
 ## Field 
 Supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can query and generate charts to view status and trends. Your team project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](guidance/work-item-field.md).   
@@ -55,7 +55,7 @@ Supports tracking a piece of information about the work to perform. Values you a
 
 ## Follow 
 
-A tool for tagging specific work items or pull requests for which you want to receive email updates when changes are made to them. Learn more: [Follow a work item or pull request](../../collaborate/follow-work-items.md). 
+A tool for tagging specific work items or pull requests for which you want to receive email updates when changes are made to them. Learn more: [Follow a work item or pull request](follow-work-items.md). 
 
 ## Global list 
 Defines a list of menu items or pick list items that are shared across WITs and team projects within a team project collection. Global lists help to minimize the work that is required to update lists. You can define global lists within WITs that you upload with your process template. Learn more: [Manage global lists for work item types](../customize/reference/witadmin/manage-global-lists-for-work-item-types.md). (Only supported for Hosted XML and On-premises XML process models) 

@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/Go.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/GoV0.md)]
 
 ::: moniker-end
 

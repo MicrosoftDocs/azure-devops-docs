@@ -27,7 +27,7 @@ from the Build Definitions page.
 
  ![Schematic showing tasks](_img/2017-user-experience/Opt-in.png)
  
-You can also enable this editor for your entire account from the [preview features](../../../collaborate/preview-features.md) menu. 
+You can also enable this editor for your entire account from the [preview features](../../../project/navigation/preview-features.md) menu. 
 
 ##What's in the new build editor
 * **Quickly get started by searching for templates.** You can search for one of the out-of-the-box or customized templates and choose

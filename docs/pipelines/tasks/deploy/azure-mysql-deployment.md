@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/AzureMysqlDeployment.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/AzureMysqlDeploymentV1.md)]
 
 ::: moniker-end
 

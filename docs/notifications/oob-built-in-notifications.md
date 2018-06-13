@@ -85,7 +85,7 @@ You can create subscriptions using the following templates for yourself, a team,
 ## Related notes
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](/vsts/collaborate/manage-team-notifications?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Manage personal notifications](manage-team-notifications.md) 
 - [Unsubscribe from a notification](unsubscribe-default-notification.md) 
 
 

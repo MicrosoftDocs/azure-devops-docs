@@ -12,6 +12,8 @@
     href: get-started/client-libraries/samples.md
 - name: Concepts
   items:
+  - name: Best practices
+    href: ./concepts/integration-bestpractices.md
   - name: .NET client libraries
     href: ./concepts/dotnet-client-libraries.md
   - name: Authentication
@@ -22,6 +24,8 @@
     href: ./concepts/rest-api-versioning.md
   - name: Cross-origin resource sharing
     href: ./concepts/cross-origin-resource-sharing.md
+  - name: Rate limits
+    href: ./concepts/rate-limits.md
 - name: How-to Guides
   items:
   - name: Authenticate with PATs

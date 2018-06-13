@@ -28,7 +28,9 @@ xcode
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/XcodePackageiOSV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/XcodePackageiOSV0.md)]
 
 ::: moniker-end
 
