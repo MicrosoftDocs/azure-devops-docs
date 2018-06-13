@@ -21,14 +21,14 @@ An Analytics view filters Visual Studio Team Services (VSTS) data derived from t
 
 Installing the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) creates a default set of Analytics views, as shown below. 
 
-> [!div class="mx-imgBorder"] 
+> [!div class="mx-imgBorder"] 
 > ![Default Analytics views](./_img/default-views/default-views.png)
 
-[!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
+[!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
 
 These views are immediately available from Power BI, as shown in the Navigator dialog illustrated below, and are a great way to get started.
 
-> [!div class="mx-imgBorder"] 
+> [!div class="mx-imgBorder"] 
 > ![VSTS Power BI Data Connector - Default Analytics views](_img/default-views/navigator-dialog-default-views.png)
 
 
@@ -60,8 +60,8 @@ Default views automatically include the most common fields for the included work
 
 For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item field index](../../work/work-items/guidance/work-item-field.md).  
 
-> [!div class="mx-imgBorder"]
-> ![Analytics views common fields](_img\editable-views\common-fields.png)
+> [!div class="mx-imgBorder"]
+> ![Analytics views common fields](_img\editable-views\common-fields.png)
 
 Two fields that are reported on are only available from the Analytics Service data store, Cycle Time Days and Lead Time Days. To learn more about how these days are calculated, see [Cumulative flow, lead time, and cycle time guidance, Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
 

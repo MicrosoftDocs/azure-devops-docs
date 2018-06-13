@@ -36,10 +36,10 @@ The default Analytics views shown in the following image provide a great way to 
 
 Here we show the default views created for a team project based on the Agile process. 
 
-> [!div class="mx-imgBorder"] 
+> [!div class="mx-imgBorder"] 
 > ![Default Analytics views](./_img/default-views/default-views.png)
 
-[!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
+[!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
 
 When using the Power BI Data Connector, these same default views appear in the Navigator dialog. The view you select determines the set of records, fields, and history which are loaded into Power BI. 
 

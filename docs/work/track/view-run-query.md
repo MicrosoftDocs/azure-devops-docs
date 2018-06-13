@@ -29,10 +29,10 @@ By default, all contributors and stakeholders can view and run all shared querie
 
 <!---
 Use this topic to learn: 
->[!div class="checklist"]   Â 
+>[!div class="checklist"]   Â 
 > * About the differences between the old and new queries experience
 > * How to view all or favorited queries  
-> * How to filter a query list Â Â Â 
+> * How to filter a query list Â Â Â 
 > * How to run a query 
 -->
 
@@ -87,8 +87,8 @@ You can perform most tasks for viewing and running queries from each of the quer
   
 
 > [!div class="mx-tdBreakAll"]
-> |TaskÂ |FavoritesÂ |AllÂ |Â 
-> |-------------|----------|---------|Â 
+> |TaskÂ |FavoritesÂ |AllÂ |Â 
+> |-------------|----------|---------|Â 
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 
 > |View all your queries or shared queries for the current team project |  | ![Checkmark](../_img/icons/checkmark.png) | 
 > |Run a query, open the context menu for a query  |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |

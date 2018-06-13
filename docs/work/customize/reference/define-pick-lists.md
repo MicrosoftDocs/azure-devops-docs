@@ -158,9 +158,9 @@ You can enumerate a set of values for a field by defining a pick list as part of
 <FIELD refname="MyCorp.CusSeverity" name="Customer Severity" type="String">  
 <HELPTEXT>Indicate the severity of the problem</HELPTEXT>  
        <ALLOWEDVALUES>  
-         <LISTITEM value="Emergency">  
-         <LISTITEM value="Major">  
-         <LISTITEM value="Minor">  
+         <LISTITEM value="Emergency">  
+         <LISTITEM value="Major">  
+         <LISTITEM value="Minor">  
        </ALLOWEDVALUES>  
 <DEFAULT from="value" value="Minor"/>  
 </FIELD>  
