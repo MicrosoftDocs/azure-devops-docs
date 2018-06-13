@@ -72,7 +72,7 @@ Sprint planning and tracking tools automatically consider days off when calculat
 
 ## Manage team alerts 
 
-Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../collaborate/manage-team-notifications.md).
+Team administrators can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../notifications/manage-team-notifications.md).
 
 > [!NOTE]  
 > There is no UI associated with managing alert permissions. Instead, you can use **TFSSecurity** to manage alerts in TFS. 
@@ -83,7 +83,7 @@ Team administrators can add and modify alerts so that the team can receive email
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 ## Create and manage team rooms 
 
-Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../collaborate/collaborate-in-a-team-room.md).  
+Team administrators can add users and events to team rooms, and add team rooms. Team rooms are chat rooms limited to team members. For details, see [Collaborate in a team room](../../notifications/collaborate-in-a-team-room.md).  
 
 > [!NOTE]  
 > Team Rooms are deprecated for TFS 2018 and later versions as described in this blog post, [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../../service-hooks/services/teams.md) and [Slack](../../service-hooks/services/slack.md).   

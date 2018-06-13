@@ -25,7 +25,9 @@ DotNetFramework
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/PowerShellV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PowerShellV2.md)]
 
 ::: moniker-end
 

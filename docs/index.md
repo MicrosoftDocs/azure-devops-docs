@@ -253,7 +253,7 @@ featureFlags:
                                     <h3>Collaboration</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
-                                        <li><a class="barLink" href="/vsts/collaborate/index">READMEs &amp; Wikis</a></li>
+                                        <li><a class="barLink" href="/vsts/project/wiki/index">READMEs &amp; Wikis</a></li>
                                         <li><a class="barLink" href="/vsts/project/search/index">Search</a></li>
                                         <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
                                     </ul>
@@ -857,7 +857,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/collaborate/index">
+                                <a href="/vsts/project/wiki/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -26,7 +26,9 @@ None
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/JavaToolInstallerV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/JavaToolInstallerV0.md)]
 
 ::: moniker-end
 

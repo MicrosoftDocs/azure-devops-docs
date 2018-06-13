@@ -31,7 +31,9 @@ deploy to a Service Fabric cluster.
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/ServiceFabricPowerShell.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/ServiceFabricPowerShellV1.md)]
 
 ::: moniker-end
 

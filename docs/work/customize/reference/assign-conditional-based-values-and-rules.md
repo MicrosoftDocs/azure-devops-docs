@@ -29,7 +29,7 @@ Field conditions are additional elements that you list inside a `FIELD` (Definit
 </FIELD>
 ```  
   
- This clause means that anything within this FIELD element is applicable as long as the field `refname` has the value "yyy". The field must be a valid field reference name. For more information, see [Naming conventions for work item tracking objects](../../../collaborate/naming-restrictions.md#ProjectNames).  
+ This clause means that anything within this FIELD element is applicable as long as the field `refname` has the value "yyy". The field must be a valid field reference name. For more information, see [Naming conventions for work item tracking objects](../../../organizations/settings/naming-restrictions.md#ProjectNames).  
   
 > [!NOTE]  
 >  The value attribute is case-insensitive. Therefore, if the field reference name holds "YYY", matches include the values "yyy" and "YYY".  

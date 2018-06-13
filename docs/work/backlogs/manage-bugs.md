@@ -326,7 +326,7 @@ To learn more about queries, charts, and dashboards; see [Create managed queries
 To track your bugs and integrate with other resources available to you, see these topics: 
 
 - [Scrum and working with sprints best practices](../scrum/best-practices-scrum.md)  
-- [Follow a work item or pull request](../../collaborate/follow-work-items.md)
+- [Follow a work item or pull request](../work-items/follow-work-items.md)
 - [Move, change type, or delete work items](remove-delete-work-items.md)
 - [Pre-populate fields using a template](work-item-template.md)
 - [Copy or clone a work item](copy-clone-work-items.md#copy-clone)

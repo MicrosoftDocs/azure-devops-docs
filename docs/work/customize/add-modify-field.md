@@ -194,7 +194,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 	```
 
     > [!TIP]  
-    > Elements within the list always appear in alphanumeric order, regardless of how you enter them in the XML definition file. The Reference Name, or `refname`, is the programmatic name for the field. All other rules should refer to the `refname`. For more information, see [Naming restrictions and conventions](../../collaborate/naming-restrictions.md#WorkItemFields). 
+    > Elements within the list always appear in alphanumeric order, regardless of how you enter them in the XML definition file. The Reference Name, or `refname`, is the programmatic name for the field. All other rules should refer to the `refname`. For more information, see [Naming restrictions and conventions](../../organizations/settings/naming-restrictions.md#WorkItemFields). 
 
 0.  Add the `Control` element within the `FORM` section so that the custom field appears on the form within the group of elements where you want it to appear.
 

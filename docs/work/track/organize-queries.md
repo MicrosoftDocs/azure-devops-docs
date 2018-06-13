@@ -24,7 +24,7 @@ If you're not a member of the Project Administrators group, [get added](../../se
 
 
 > [!NOTE]  
-> **Feature availability**: The New Queries experience is supported on VSTS. To enable the new experience, see [Preview features](../../collaborate/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
+> **Feature availability**: The New Queries experience is supported on VSTS. To enable the new experience, see [Preview features](../../project/navigation/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
 
 ## Add a query folder, move items into a folder 
 
@@ -34,7 +34,7 @@ If you're not a member of the Project Administrators group, [get added](../../se
 
 # [New Queries Experience](#tab/new-query-exp)
 ::: moniker range="vsts || >= tfs-2018"
-To enable the New Queries Experience, see [Preview features](../../collaborate/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
+To enable the New Queries Experience, see [Preview features](../../project/navigation/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
 
 You add query folders from the **Work>Queries>All** page.
 
@@ -46,7 +46,7 @@ You add query folders from the **Work>Queries>All** page.
  
 	<img src="_img/view-run-queries/try-new-queries-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
 
-	Otherwise, you can enable it from the [Preview features menu](../../collaborate/preview-features.md). 
+	Otherwise, you can enable it from the [Preview features menu](../../project/navigation/preview-features.md). 
  
 0. Click **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  

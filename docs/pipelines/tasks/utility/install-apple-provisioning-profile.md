@@ -32,7 +32,9 @@ xcode
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/InstallAppleProvisioningProfileV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/InstallAppleProvisioningProfileV1.md)]
 
 ::: moniker-end
 

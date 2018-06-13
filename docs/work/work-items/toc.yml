@@ -19,7 +19,7 @@
 - name: Tutorials
   items:
   - name: Follow work
-    href: ../../collaborate/follow-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: follow-work-items.md
   - name: Manage bugs
     href: ../backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Manage issues
@@ -120,7 +120,7 @@
   - name: Use work item templates
     href: ../backlogs/work-item-template.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
   - name: Go mobile
-    href: ../../collaborate/mobile-work.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+    href: ../../project/navigation/mobile-work.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Email/print work items
     href: email-work-items.md  
   - name: Switch project or team focus

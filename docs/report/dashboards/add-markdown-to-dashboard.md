@@ -28,7 +28,7 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 
 Here's an example:  
 
-<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+<img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ If you need to add a dashboard, see [Add and manage dashboards](dashboards.md).
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md).  
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). The widget catalog will automatically open.  
 
@@ -97,7 +97,7 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 
 	<img src="_img/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
 
-0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../collaborate/markdown-guidance.md).
+0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
 	Here we show some simple text with a bulleted list of four links
 
@@ -111,7 +111,7 @@ To add the markdown widget to the dashboard, click ![Edit dashboard icon](_img/i
 
 	This renders the following widget: 
 
-	<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
 	>Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
@@ -149,7 +149,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 	<img src="_img/add-markdown-size.png" alt="Change markdown widget size" style="border: 1px solid #C3C3C3;" />  
 
-0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../collaborate/markdown-guidance.md).
+0. Enter the text and markdown syntax into the configuration the configuration dialog. For supported syntax, see [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md).
 
 	Here we show some simple text with a bulleted list of four links
 
@@ -163,7 +163,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 	This renders the following widget: 
 
-	<img src="../../collaborate/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../../project/wiki/_img/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
 	>[!NOTE]  
 	>Links to documents on file shares using `file://` are not supported on VSTS or TFS 2017.1 and later versions. This restriction has been implemented for security purposes.
@@ -189,7 +189,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 - [Add and manage dashboards](dashboards.md)
 - [Add a widget to a dashboard](add-widget-to-dashboard.md)
-- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../collaborate/markdown-guidance.md)
+- [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../project/wiki/markdown-guidance.md)
 - [Widget catalog](widget-catalog.md)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)
 

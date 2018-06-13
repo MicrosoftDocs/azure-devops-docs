@@ -177,7 +177,7 @@ If you execute a lot of queries, or the queries require a lot of resources to ru
 
 >*Request was blocked due to exceeding usage of resource '{resource}' in namespace '{namespace}'.*
 
-For more information on rate limiting, see [Rate limits](../../collaborate/rate-limits.md). 
+For more information on rate limiting, see [Rate limits](../../integrate/concepts/rate-limits.md). 
 To learn how to design efficient OData queries, refer to [Performance Guidelines](#performance-guidelines) later in this topic.
 
 <a name="question-41065"></a>
