@@ -60,9 +60,9 @@ The following example statements show specific qualifying clauses.
 <td>
 
 <pre><code>SELECT [System.Id], [System.Title]
- Â  Â  Â FROM WorkItems
- Â  Â  Â WHERE [System.TeamProject] = @project
- Â  Â  Â AND [System.AssignedTo] = 'Judy Lew'
+ Â  Â  Â FROM WorkItems
+ Â  Â  Â WHERE [System.TeamProject] = @project
+ Â  Â  Â AND [System.AssignedTo] = 'Judy Lew'
 </code></pre>
 </td>
 </tr>

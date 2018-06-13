@@ -64,7 +64,7 @@ For a description of each work item tracking fields, see [Work item field index]
 You can select the following Analytics-based fields in an Analytics view:
 
 > [!div class="mx-tdCol2BreakAll"]
-> |  Field  | Description |
+> |  Field  | Description |
 > |------|---------|
 > | Cycle Time | Time for a work item to move from a state category of "In Progress" to "Completed" | 
 > | Date (included automatically with history) | Supports viewing the daily, weekly, or monthly history of the filtered set of work items |

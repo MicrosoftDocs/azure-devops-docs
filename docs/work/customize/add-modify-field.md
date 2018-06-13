@@ -26,7 +26,7 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 > **Feature availability:** You can exercise some features only from an on-premises TFS and are noted as such. 
 
 
->[!div class="mx-tdCol2BreakAll"]   
+> [!div class="mx-tdCol2BreakAll"]  
 > |WIT definition  |Command line change (On-premises XML) |
 > |-------------|----------|  
 > |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](#list-fields)<br/>- [Change a field attribute](#change-attribute) <br/>- [Delete a field](#delete-field)<br/>- [Index a field](#index-field)  | 
@@ -152,7 +152,7 @@ For example, with the following code snippet, you can enforce the rule that only
 
 You apply rules to accomplish the following actions:  
 
->[!div class="mx-tdCol2BreakAll"]   
+>[!div class="mx-tdCol2BreakAll"]  
 > |To accomplish this action: | Use this XML element: |  
 > |---|---|
 > | Specify a tool-tip. | **HELPTEXT** |

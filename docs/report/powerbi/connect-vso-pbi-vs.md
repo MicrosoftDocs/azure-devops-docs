@@ -68,7 +68,7 @@ Your first step requires you to authorize Power BI to access your VSTS account. 
 	>
 	> ![Third-party oAuth enabled](_img/Screen5.png)  <br/><br/>
 
-	> Contact your account administrator to determine if it needs to be enabled.  
+	> Contact your account administrator to determine if it needs to be enabled.  
 
 8. Successful authorization displays the following authorization dialog which allows Power BI to retrieve data from your account. Scroll down to the bottom and click **Accept**.
 
