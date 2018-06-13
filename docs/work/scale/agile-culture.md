@@ -169,7 +169,7 @@ For addtional guidance, see these topics:
 - [Practices that scale](practices-that-scale.md) 
 - [Visibility across teams](visibility-across-teams.md)
 - [Review team delivery plans](review-team-plans.md)
-- [Implement Scaled Agile Framework® to support epics, release trains, and multiple backlogs](scaled-agile-framework.md). 
+- [Implement Scaled Agile Framework&reg; to support epics, release trains, and multiple backlogs](scaled-agile-framework.md). 
 
 ###Agile culture industry resources
 
