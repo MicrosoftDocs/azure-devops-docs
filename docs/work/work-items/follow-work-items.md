@@ -54,7 +54,7 @@ This topic shows you how to:
 
 When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
 
-<img src="_img/follow-work-item.png" alt="VSTS Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" />   Â    
+<img src="_img/follow-work-item.png" alt="VSTS Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" />   Â    
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
@@ -67,7 +67,7 @@ To stop following changes, click the ![Following icon](../_img/icons/following-i
 
 To track the progress of a single pull request, click the ![Follow icon](../_img/icons/follow-icon.png) option from the context menu. This signals the system to notify you when changes are made to the PR.  
 
-<img src="_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />   Â   
+<img src="_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />   Â   
 
 You'll only receive notifications when other members of your team modifies the PR, such as adding to the discussion or adding an attachment. 
 
@@ -79,7 +79,7 @@ To stop following changes, open the PR context menu and click the ![Following ic
 
 You can review and manage all the work items you've selected to follow from the Followed work items page. You access this page from the **Work>Queries** page. 
 
-<img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />   Â   
+<img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />   Â   
 
 From this view, you can view all items you're following across all team projects within the account. Also, you can perform similar actions supported with a query results view, such as:
 - Refresh the view
@@ -101,7 +101,7 @@ You can also view and manage work that you're following from your home pages. To
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 ![Account home, Work, Assigned to me page](../../user-guide/_img/org-hub-tfs/account-home-work-followed.png) 
 ::: moniker-end
-  Â    
+  Â    
 
 ## Related articles  
 

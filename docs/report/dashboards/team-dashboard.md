@@ -17,7 +17,7 @@ ms.date: 08/11/2016
 <b>TFS 2015 | TFS 2013</b>  
 
 >[!NOTE]  
->**Feature availability:** For on-premises TFS, install TFS 2015 Update 1 to get access to [multiple team dashboards](dashboards.md) and [widgets](widget-catalog.md) that you can add to these dashboards.   
+>**Feature availability:** For on-premises TFS, install TFS 2015 Update 1 to get access to [multiple team dashboards](dashboards.md) and [widgets](widget-catalog.md) that you can add to these dashboards.   
 
 Teams can view the progress of work from the team home page. Team administrators can add or pin items to this dashboard and re-sequence tiles. Each tile provides team members quick access to work items, build progress, code changes, and more.
 

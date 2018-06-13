@@ -13,7 +13,7 @@ All members of the Contributors group for your team project can use **Shared** v
 
 1. Add a user or group who you want to grant permissions to or restrict access.
 
-   > [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![Manage permissions](/vsts/report/analytics/_img/editable-views/view-permissions.png)
 
 For more information on managing permissions, see [Add users to a team project or specific team](/vsts/security/add-users-team-project).

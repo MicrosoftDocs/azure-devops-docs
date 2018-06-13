@@ -33,7 +33,7 @@ Use this topic to learn how to:
 
 For a list of all link types and supported link relationships, see [Link work items to support traceability](../track/link-work-items-support-traceability.md). 
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
+[!INCLUDE [temp](../_shared/prerequisites-work-items.md)] 
 
 <a id="link"> </a>  
 ## Link several items to an existing or new work item 
