@@ -6362,7 +6362,7 @@
     },
     {
       "source_path": "docs/build-release/concepts/library/azure-stack.md",
-      "redirect_url": "/vsts/pipelines/library/azure-stack",
+      "redirect_url": "/vsts/pipelines/targets/azure-stack",
       "redirect_document_id": true
     },
     {
@@ -7817,7 +7817,7 @@
     },
     {
       "source_path": "docs/build-release/actions/virtual-networks/manage-vms-using-scvmm.md",
-      "redirect_url": "/vsts/pipelines/targets/manage-vms-using-scvmm",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -8042,12 +8042,12 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/scvmm/configure-scvmm.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/scvmm/configure-scvmm",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/build-release/apps/cd/scvmm/manage-vms-using-scvmm.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/scvmm/manage-vms-using-scvmm",
+      "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": true
     },
     {
@@ -8102,7 +8102,7 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/provision-vm-in-vmware.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/provision-vm-in-vmware",
+      "redirect_url": "/vsts/pipelines/targets/vmware",
       "redirect_document_id": true
     },
     {
@@ -8314,6 +8314,26 @@
       "source_path": "docs/collaborate/wiki-view-history.md",
       "redirect_url": "/vsts/project/wiki/wiki-view-history",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/apps/cd/scvmm/configure-scvmm.md",
+      "redirect_url": "/vsts/pipelines/targets/scvmm",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "vsts/pipelines/targets/manage-vms-using-scvmm.md",
+      "redirect_url": "/vsts/pipelines/",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "vsts/pipelines/apps/cd/provision-vm-in-vmware.md",
+      "redirect_url": "/vsts/pipelines/targets/vmware",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "vsts/pipelines/library/azure-stack.md",
+      "redirect_url": "/vsts/pipelines/targets/azure-stack",
+      "redirect_document_id": false 
     }
   ]
 }

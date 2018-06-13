@@ -50,7 +50,7 @@ or if you want to further limit users' permissions, you can do so by using a ser
 1. After the new service endpoint is created:
 
    * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
-   * If you are using it in a YAML script, copy the connection name into you script as the **azureSubscription** value.
+   * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
 See also: [Troubleshoot Azure Resource Manager service endpoints](../release/azure-rm-endpoint.md).
 
@@ -95,7 +95,7 @@ See also: [Troubleshoot Azure Resource Manager service endpoints](../release/azu
 1. After the new service endpoint is created:
 
    * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
-   * If you are using it in a YAML script, copy the connection name into you script as the **azureSubscription** value.
+   * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
 1. If required, modify the service principal to expose the appropriate permissions. For more details, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal).
