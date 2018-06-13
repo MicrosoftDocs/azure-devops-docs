@@ -27,7 +27,9 @@ The build agent must have the following capability:
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/Maven.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/MavenV2.md)]
 
 ::: moniker-end
 

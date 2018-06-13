@@ -26,7 +26,9 @@ AndroidSDK, MSBuild, Xamarin.Android
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/XamarinAndroid.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/XamarinAndroidV1.md)]
 
 ::: moniker-end
 

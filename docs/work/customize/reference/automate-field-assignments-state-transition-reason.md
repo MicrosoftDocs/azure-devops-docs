@@ -30,7 +30,7 @@ You may want to automatically transition work items from one state to another st
   
  <a name="Syntax"></a> 
 ##  Syntax for the ACTION element  
- The following syntax is used for the **ACTION** element. The value attribute specifies the name of the action and is required. You should follow the same naming conventions for actions as for field reference names. For example, Team Foundation version control uses Microsoft.VSTS.Actions.CheckIn to identify the transition that is appropriate for work items that are associated with the check-in. For more information, see [Naming conventions for work item tracking objects](../../../collaborate/naming-restrictions.md).  
+ The following syntax is used for the **ACTION** element. The value attribute specifies the name of the action and is required. You should follow the same naming conventions for actions as for field reference names. For example, Team Foundation version control uses Microsoft.VSTS.Actions.CheckIn to identify the transition that is appropriate for work items that are associated with the check-in. For more information, see [Naming conventions for work item tracking objects](../../../organizations/settings/naming-restrictions.md).  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML 

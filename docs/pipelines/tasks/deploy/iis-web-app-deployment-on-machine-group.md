@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/IISWebAppDeploymentOnMachineGroup.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/IISWebAppDeploymentOnMachineGroupV0.md)]
 
 ::: moniker-end
 

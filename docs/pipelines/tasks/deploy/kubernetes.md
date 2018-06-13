@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/Kubernetes.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/KubernetesV1.md)]
 
 ::: moniker-end
 

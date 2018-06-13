@@ -50,7 +50,7 @@ You use work item fields to track data for a work item type, to define the filte
   
     -   `refname`. The unique label that is assigned to the field that distinguishes it from all other fields that are defined in the team project collection. The value that is assigned to the `refname` cannot be changed.  
   
-         For requirements of and restrictions on friendly names and reference names for fields, see [Naming conventions for work item tracking objects](../../../collaborate/naming-restrictions.md#ProjectNames).  
+         For requirements of and restrictions on friendly names and reference names for fields, see [Naming conventions for work item tracking objects](../../../organizations/settings/naming-restrictions.md#ProjectNames).  
   
     -   `reportingname`. Optional attribute. The name that is used to identify a field in reports. When not explicitly set, the value that is assigned to the `name` attribute is used.  
   

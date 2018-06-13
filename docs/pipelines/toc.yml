@@ -38,8 +38,14 @@
     href: apps/mobile/xcode-ios.md
 - name: Targets
   items:
+  - name: Azure Stack
+    href: targets/azure-stack.md
   - name: Azure Web App
     href: apps/cd/azure/aspnet-core-to-azure-webapp.md
+  - name: SCVMM
+    href: targets/scvmm.md
+  - name: VMware
+    href: targets/vmware.md
   - name: Windows VM
     href: apps/cd/deploy-webdeploy-iis-deploygroups.md
   - name: Linux VM
@@ -211,14 +217,6 @@
       href: apps/cd/deploy-database-sqlscripts.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
-    - name: Azure Stack
-      href: library/azure-stack.md
-    - name: SCVMM
-      href: apps/cd/scvmm/configure-scvmm.md
-    - name: SCVMM actions for managing VMs
-      href: targets/manage-vms-using-scvmm.md
-    - name: VMware
-      href: apps/cd/provision-vm-in-vmware.md
   - name: Test your apps
     items:
     - name: Unit test with builds

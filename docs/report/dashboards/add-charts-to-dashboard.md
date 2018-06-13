@@ -175,7 +175,7 @@ Click **Add to dashboard**, and then choose the team dashboard to add the markdo
 Requires TFS 2015.2 or later version. 
 ::: moniker-end
 ::: moniker range="vsts || > tfs-2015"
-<img src="../../collaborate/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
+<img src="../../project/wiki/_img/markdown-guidance/markdown-add-file-to-dashboard.png" alt="Web portal, Code hub, README file, Add Markdown page to a dashboard" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 

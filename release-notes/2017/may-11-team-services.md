@@ -217,7 +217,7 @@ Recipients for the same email notification are now included together on the to: 
 
 This feature is on by default, but can be disabled by an account administrator by switching off the account-level __Combine email recipients__ feature via the __Preview features__ panel under the user profile menu. 
 
-Learn more about [combining email recipients](https://www.visualstudio.com/en-us/docs/collaborate/manage-team-notifications).
+Learn more about [combining email recipients](/vsts/notifications/manage-team-notifications).
 
 ##Out-of-the-box notifications out of preview
 The out-of-the-box notifications feature is now out of preview and available on all accounts. Users and teams are now automatically notified via email when there is activity in the account directly relevant to them, such as:
@@ -233,7 +233,7 @@ Users can unsubscribe from any of these subscriptions by going to Notification s
 
 An account admin can disable one or more of these automatic subscriptions by navigating to the account-level __Notifications__ hub under the settings gear. Any of these subscriptions can be disabled by clicking __Disable__ under the "..." action. Once a subscription is disabled, it will no longer appear for users in their personal notification settings page.
 
-Learn more about [out-of-the-box notifications](https://www.visualstudio.com/en-us/docs/collaborate/manage-personal-notifications#out-of-the-box-notifications).
+Learn more about [out-of-the-box notifications](/vsts/notifications/manage-personal-notifications#out-of-the-box-notifications).
 
 ##Enhanced publisher experience in the Marketplace
 Publishers of free extensions will now have access to new acquisition data, including aggregated acquisition in the selected time period to overall acquisition, daily trend on extension page views with acquisition, uptake on Team Services and TFS Connected, and conversion from page views to acquisition. This data is also available for download in XLS format to help you create your own custom reports. 

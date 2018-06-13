@@ -46,7 +46,9 @@ This task requires the target computer to have:
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/DeployVisualStudioTestAgentV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/DeployVisualStudioTestAgentV2.md)]
 
 ::: moniker-end
 

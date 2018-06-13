@@ -61,7 +61,7 @@
   - name: Widget catalog
     href: widget-catalog.md
   - name: Markdown guidance
-    href: ../../collaborate/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../../project/wiki/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
   - name: REST API, Dashboards

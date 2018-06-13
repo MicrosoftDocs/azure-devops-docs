@@ -27,7 +27,9 @@ The build agent must have the following capability:
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/GruntV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/GruntV0.md)]
 
 ::: moniker-end
 

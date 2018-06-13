@@ -81,7 +81,7 @@ To learn more, see [Grant permissions to manage extensions](../marketplace/how-t
 For [each team that you add](../work/scale/multiple-teams.md), you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing the following team assets.
 
 - **Create and manage team alerts**  
-	Can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../collaborate/manage-team-notifications.md).	 
+	Can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../notifications/manage-team-notifications.md).	 
 - <a id="team-rooms" />**Select team area paths**   
 	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. For details, see [Set team defaults](../work/scale/set-team-defaults.md).	
 - **Select team sprints** 

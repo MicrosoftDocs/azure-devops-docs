@@ -150,7 +150,7 @@ In addition, your process must pass the following validation checks:
   * Templates with the same name but a different version GUID will generate an error.  
   * Process names cannot contain the following special characters:  
      ```. , ; ' ` : / \ * | ? " & % $ ! + = ( ) [ ] { } < >  ```  
-    See [Naming restrictions](../../../collaborate/naming-restrictions.md) for additional constraints.
+    See [Naming restrictions](../../../organizations/settings/naming-restrictions.md) for additional constraints.
 * Process folders can't contain any .exe files. While you may be able to import the process that contains a .exe file, project creation will fail.
 * Process total size should be 2 GB or less, or project creation will fail.
  
