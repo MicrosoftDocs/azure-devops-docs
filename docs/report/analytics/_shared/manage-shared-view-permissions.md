@@ -16,4 +16,4 @@ All members of the Contributors group for your team project can use **Shared** v
    > [!div class="mx-imgBorder"]
    > ![Manage permissions](/vsts/report/analytics/_img/editable-views/view-permissions.png)
 
-For more information on managing permissions, see [Add users to a team project or specific team](/vsts/security/add-users-team-project).
+For more information on managing permissions, see [Add users to a team project or specific team](/vsts/organizations/security/add-users-team-project).

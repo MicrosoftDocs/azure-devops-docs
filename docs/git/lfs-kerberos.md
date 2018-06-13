@@ -24,7 +24,7 @@ If you can't upgrade to 2.4.0, you can remove the Kerberos credential and let Gi
 
 > [!NOTE]
 > Credentials sent via HTTP will be passed in clear text.
-> [Ensure your instance of TFS is configured for HTTPS](../security/websitesettings.md), and do not use HTTP with Git-LFS.
+> [Ensure your instance of TFS is configured for HTTPS](../organizations/security/websitesettings.md), and do not use HTTP with Git-LFS.
 
 0. Open the Windows Credential Manager. On Windows 10, you can press Start and then type "Credential Manager".
 

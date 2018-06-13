@@ -41,11 +41,11 @@
       - name: Restore Package Management NuGet packages
         href: /vsts/pipelines/packages/nuget-restore?toc=/vsts/package/toc.json
       - name: Publish Package Management NuGet packages
-        href: /vsts/pipelines/packages/nuget-pack-publish?toc=/vsts/package/toc.json
+        href: /vsts/pipelines/targets/nuget?toc=/vsts/package/toc.json
     - name: npm
       items:
       - name: Use Package Management npm packages
-        href: /vsts/pipelines/packages/npm?toc=/vsts/package/toc.json
+        href: /vsts/pipelines/targets/npm?toc=/vsts/package/toc.json
     - name: Maven
       items:
       - name: Use Package Management Maven packages

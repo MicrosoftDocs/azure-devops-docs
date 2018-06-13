@@ -92,6 +92,6 @@ Team administrators can add users and events to team rooms, and add team rooms. 
 
 ## Related articles
 
-- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md) 
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md) 
 - [Add teams and team members](multiple-teams.md) 
 - [Add a team administrator](add-team-administrator.md) 

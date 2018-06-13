@@ -176,7 +176,7 @@ Requires TFS 2015.1 or later version.  Â Â
 ![Other links widget](_img/widget-other-links.png)  
 
 Provides links to the following features: 
-- Opens a form to initiate a [request to provide feedback](/vsts/feedback/get-feedback?toc=/vsts/feedback/toc.json).
+- Opens a form to initiate a [request to provide feedback](/vsts/project/feedback/get-feedback?toc=/vsts/project/feedback/toc.json).
 - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../work/scrum/define-sprints.md).
 - Opens the team's quick dialog to modify your [team's area path](../../work/scale/set-team-defaults.md).
 
@@ -296,7 +296,7 @@ Provides quick access to open the following Agile tools and team resources:
 ::: moniker range="vsts"
 ## Analytics
 
-To add Analytics widgets to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../security/set-project-collection-level-permissions.md) to add extensions.  
+To add Analytics widgets to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 
 ##&nbsp;&nbsp;&nbsp;Burndown chart 
 <a id="burndown-analytics-widget"></a>  

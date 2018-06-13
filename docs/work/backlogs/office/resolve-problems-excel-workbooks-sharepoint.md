@@ -22,7 +22,7 @@ Before you use Excel 2010 to publish a workbook to a server that is running Micr
   
 ## Required permissions  
   
-To perform this procedure, you must be a member of the Administrators group on the server that hosts the SharePoint web application. For more information about permissions, see [Set SharePoint site permissions](../../../security/set-sharepoint-permissions.md).  
+To perform this procedure, you must be a member of the Administrators group on the server that hosts the SharePoint web application. For more information about permissions, see [Set SharePoint site permissions](../../../organizations/security/set-sharepoint-permissions.md).  
   
 ## To install MSOLAP.4  
   

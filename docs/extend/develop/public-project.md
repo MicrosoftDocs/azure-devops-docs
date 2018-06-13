@@ -168,7 +168,7 @@ A good best practice in general is to use permissions to decide whether or not t
 This example shows how to use the Security REST client to check whether the user has permissions to queue builds in the current project. By default, non-member users will not have this permission.
 
 ```javascript
-VSS.require(["VSS/Service", "VSS/Security/RestClient"], function(VSS_Service, Security_RestClient) {
+VSS.require(["VSS/Service", "VSS/organizations/security/RestClient"], function(VSS_Service, Security_RestClient) {
    var client = VSS_Service.getCollectionClient(Security_RestClient.SecurityHttpClient3);
  
    var securityToken = VSS.getWebContext().project.id;

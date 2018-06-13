@@ -122,9 +122,9 @@ You provide others access to your account by adding their email address.
 		> to authenticates users and control account access.  
 		> If your users don't have Microsoft accounts, 
 		> have them [sign up](https://signup.live.com/).  
-	- **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../security/access-levels.md). 
+	- **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../organizations/security/access-levels.md). 
 	- **Add to projects**: Select the project that you named in the previous procedure. 
-	- **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md). 
+	- **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../organizations/security/permissions-access.md). 
 
 0. When done, click **Add** to complete your invitation. 
 

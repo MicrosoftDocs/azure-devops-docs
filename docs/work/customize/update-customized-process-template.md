@@ -412,7 +412,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	<td>
 	Feedback
 	</td>
-	<td>[Request feedback](../../feedback/get-feedback.md). <br/>
+	<td>[Request feedback](../../project/feedback/get-feedback.md). <br/>
 	</td>
 	</tr>
 	<tr>

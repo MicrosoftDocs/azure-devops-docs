@@ -48,7 +48,7 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 > new tags. To grant or restrict permissions to create new tags, you set 
 > the permission **Create tag definition** at the project-level. To learn
 > more, see [Add administrators, set permissions at the project-level or  
-> project collection-level](../../security/set-project-collection-level-permissions.md).
+> project collection-level](../../organizations/security/set-project-collection-level-permissions.md).
 	
 
 

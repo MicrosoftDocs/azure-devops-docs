@@ -21,7 +21,7 @@ Creates, modifies, or displays information about the mappings between your works
 
 **Required Permissions**
 
-To use the **workfold** command, you must be the owner of the specified or implied workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **workfold** command, you must be the owner of the specified or implied workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf workfold localfolder [/login:username,[password]]
 

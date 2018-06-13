@@ -24,7 +24,7 @@ This topic provides a roadmap to support you in quickly coming up to speed on th
 
 ## Contributor roles
 
-Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../security/permissions.md).   
+Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../organizations/security/permissions.md).   
 
 ### Software developers
 
@@ -73,7 +73,7 @@ To get started, see the overviews provided here: [Build &amp; Release](../pipeli
 
 With stakeholder access, anyone within your organization can check project status and provide feedback. Stakeholders can track project priorities and provide direction, feature ideas, and business alignment to a team. They can contribute to plans by adding and modifying work items. They can't, however, contribute to the code base or exercise test tools. 
 
-Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../security/get-started-stakeholder.md). 
+Stakeholder access essentially provides free access to a limited set of feature to project sponsors and supporters. To learn more, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md). 
 
 <a id="admin-roles">  </a>
 
@@ -101,7 +101,7 @@ To get started, see [Manage team assets](../work/scale/manage-team-assets.md).
 Responsible for project level settings, including:
 
 - [Area paths](../work/customize/set-area-paths.md) and [Iteration paths](../work/customize/set-iteration-paths-sprints.md)
-- [Project permissions and repository security](../security/permissions.md)
+- [Project permissions and repository security](../organizations/security/permissions.md)
 - [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
 - [Build agents, pools, and service endpoints](../pipelines/overview.md) 
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 

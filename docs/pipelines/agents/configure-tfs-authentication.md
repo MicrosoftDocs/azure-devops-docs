@@ -47,7 +47,7 @@ Start Internet Information Services (IIS) Manager. Select your TFS site and make
 
 ### PAT
 
-Personal access token (PAT) authentication is available in TFS 2015.3 and newer. To use a PAT, your server must be configured with HTTPS. See [Web site settings and security](../../security/websitesettings.md).
+Personal access token (PAT) authentication is available in TFS 2015.3 and newer. To use a PAT, your server must be configured with HTTPS. See [Web site settings and security](../../organizations/security/websitesettings.md).
 
 ## Deploy your agent
 

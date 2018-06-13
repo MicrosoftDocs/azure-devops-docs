@@ -89,7 +89,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
-2.  If you're not a member of a TFS security group, [get added as one](../security/add-users-team-project.md).
+2.  If you're not a member of a TFS security group, [get added as one](../organizations/security/add-users-team-project.md).
 
 3.  Check with a team member to determine the names of the server, team project collection, and team project that you will connect to.
 
@@ -210,7 +210,7 @@ To add or modify work items by using Excel or Project, you connect your workshee
  
 ### Connect from a worksheet or project plan
 
-To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../security/permissions.md) for details.
+To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../organizations/security/permissions.md) for details.
 
 1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../accounts/requirements.md)
 
@@ -226,7 +226,7 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to VSTS account or a TFS instance and the team project. If you can't connect, [get added as a team member](../security/add-users-team-project.md).
+4.  Connect to VSTS account or a TFS instance and the team project. If you can't connect, [get added as a team member](../organizations/security/add-users-team-project.md).
 
     ![Connect to server](../work/backlogs/office/_img/IC680074.png)
 
@@ -300,11 +300,11 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ### User accounts and licensing
 
-To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
+To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator](../organizations/security/set-project-collection-level-permissions.md). 
 
 VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
-In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
+In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
 <a name="proxy"></a>
 
@@ -336,7 +336,7 @@ In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, 
 - [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../feedback/give-feedback.md) 
+- [Microsoft Feedback Client](../project/feedback/give-feedback.md) 
 
 ### Requirements and client compatibility
 

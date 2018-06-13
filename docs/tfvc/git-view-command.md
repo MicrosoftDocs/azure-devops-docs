@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 Retrieves a file from a Git repository to a temporary location on your computer and displays it.         
 
-**Requirements:** See [Permissions and groups reference](../security/permissions.md).
+**Requirements:** See [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf git view /collection:TeamProjectCollectionUrl
                 /teamproject:TeamProjectIdentifier

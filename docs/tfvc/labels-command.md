@@ -21,7 +21,7 @@ Displays the list of labels in the server for Team Foundation version control.
 
 **Required Permissions**
 
-To use the **labels** command, you must have the **Read** permission set to **Allow** for all files or folders to which the specified label is attached. If you have permission to some, but not all the files referenced in the label, partial results are displayed. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **labels** command, you must have the **Read** permission set to **Allow** for all files or folders to which the specified label is attached. If you have permission to some, but not all the files referenced in the label, partial results are displayed. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf labels [/owner:ownername] [/format:(brief|detailed)] 
     [/collection:TeamProjectCollectionUrl] [labelname] [/login:username,[password]]

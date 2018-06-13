@@ -37,7 +37,7 @@ While in Visual Studio, open a command prompt in your repo from Team Explorer's 
 ![Open a command prompt to a repo from inside Visual Studio](_img/command-prompt/open_cmd_prompt_repo_vs.png)
 
 > [!IMPORTANT]
-> Some commands require having [specific Git permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) in VSTS to complete.
+> Some commands require having [specific Git permissions](../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) in VSTS to complete.
 
 ## Repos
 

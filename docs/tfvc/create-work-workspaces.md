@@ -57,7 +57,7 @@ When you switch from one workspace to another, to avoid confusing yourself, make
 
 ## Work from the command prompt
 
-You can create and manage your workspaces from the command prompt. You can also perform some tasks that are not possible in Visual Studio. For example, you can delete another user's workspace if you have [sufficient permissions](../security/permissions.md#tfvc). See [Workspace Command](workspace-command.md), [Workspaces Command](workspaces-command.md), and [Workfold Command](workfold-command.md).
+You can create and manage your workspaces from the command prompt. You can also perform some tasks that are not possible in Visual Studio. For example, you can delete another user's workspace if you have [sufficient permissions](../organizations/security/permissions.md#tfvc). See [Workspace Command](workspace-command.md), [Workspaces Command](workspaces-command.md), and [Workfold Command](workfold-command.md).
 
 ## Q & A
 

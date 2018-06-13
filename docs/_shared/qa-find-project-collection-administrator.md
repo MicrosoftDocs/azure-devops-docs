@@ -1,7 +1,7 @@
 ####Q:	How do I find a project collection administrator?
 
 A: If you have at least Basic access, 
-you can find your [project collection administrator](../security/set-project-collection-level-permissions.md) 
+you can find your [project collection administrator](/vsts/organizations/security/set-project-collection-level-permissions) 
 in your VSTS account's security settings.
 
 0.	Go to your VSTS account's security settings. 

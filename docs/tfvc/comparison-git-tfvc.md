@@ -179,7 +179,7 @@ Need more help to make a choice? These charts might help.
 </td>
 </tr>
 <tr><td>Files</td>
-<td><p>Each team project contains all files under a single root path (for example: **$/FabrikamTFVC**). You can [apply permissions](../security/permissions.md) at the file level. You can [lock files](lock-unlock-folders-files.md).</p>
+<td><p>Each team project contains all files under a single root path (for example: **$/FabrikamTFVC**). You can [apply permissions](../organizations/security/permissions.md) at the file level. You can [lock files](lock-unlock-folders-files.md).</p>
 
 <p>You can browse your files on the web portal and using [Source Control Explorer](use-source-control-explorer-manage-files-under-version-control.md) in Visual Studio.</p>
 
