@@ -1672,7 +1672,7 @@
     },
     {
       "source_path": "docs/package/build/team-build-npm.md",
-      "redirect_url": "/vsts/pipelines/packages/npm?toc=/vsts/package/toc.json",
+      "redirect_url": "/vsts/pipelines/targets/npm?toc=/vsts/package/toc.json",
       "redirect_document_id": false
     },
     {
@@ -6487,8 +6487,18 @@
     },
     {
       "source_path": "docs/build-release/packages/nuget-pack-publish.md",
-      "redirect_url": "/vsts/pipelines/packages/nuget-pack-publish",
+      "redirect_url": "/vsts/pipelines/targets/nuget",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "vsts/pipelines/packages/nuget-pack-publish.md",
+      "redirect_url": "/vsts/pipelines/targets/nuget",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/packages/npm.md",
+      "redirect_url": "/vsts/pipelines/targets/npm",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/packages/nuget-restore.md",
@@ -8173,7 +8183,7 @@
     {
       "source_path": "docs/work/customize/object-limits.md",
       "redirect_url": "/vsts/organizations/settings/work/object-limits",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/settings/index.md",
@@ -8183,13 +8193,13 @@
     {
       "source_path": "docs/settings/about-teams-and-settings.md",
       "redirect_url": "/vsts/organizations/settings/about-teams-and-settings",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/settings/switch-team-context.md",
       "redirect_url": "/vsts/organizations/settings/switch-team-context",
-      "redirect_document_id": false 
-    }, 
+      "redirect_document_id": false
+    },
     {
       "source_path": "docs/collaborate/keyboard-shortcuts.md",
       "redirect_url": "/vsts/project/navigation/keyboard-shortcuts",
@@ -8318,22 +8328,22 @@
     {
       "source_path": "vsts/pipelines/apps/cd/scvmm/configure-scvmm.md",
       "redirect_url": "/vsts/pipelines/targets/scvmm",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "vsts/pipelines/targets/manage-vms-using-scvmm.md",
       "redirect_url": "/vsts/pipelines/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "vsts/pipelines/apps/cd/provision-vm-in-vmware.md",
       "redirect_url": "/vsts/pipelines/targets/vmware",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "vsts/pipelines/library/azure-stack.md",
       "redirect_url": "/vsts/pipelines/targets/azure-stack",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     }
   ]
 }
