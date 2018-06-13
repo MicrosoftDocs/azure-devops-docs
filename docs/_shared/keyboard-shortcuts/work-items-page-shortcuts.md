@@ -5,7 +5,7 @@ ms.topic: include
 
 <a id="work-items-page-shortcuts"></a>
 
-You can use the following keyboard shortcuts when working in the **Work** hub, **Work Items** page which is currently in preview. To enable it, see [Enable preview features](/vsts/collaborate/preview-features).  
+You can use the following keyboard shortcuts when working in the **Work** hub, **Work Items** page which is currently in preview. To enable it, see [Enable preview features](/vsts/project/navigation/preview-features).  
 
 >[!NOTE]  
 ><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS. 

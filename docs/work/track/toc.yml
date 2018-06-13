@@ -71,7 +71,7 @@
   - name: Work item field index
     href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
   - name: WIQL syntax
-    href: ../../collaborate/wiql-syntax.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json 
+    href: wiql-syntax.md
   - name: "Default permissions (Security)"
     href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: REST API, Queries

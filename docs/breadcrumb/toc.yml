@@ -96,8 +96,8 @@
       tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index
     - name: "READMEs & Wikis"
-      tocHref: /vsts/collaborate/
-      topicHref: /vsts/collaborate/index
+      tocHref: /vsts/project/wiki/
+      topicHref: /vsts/project/wiki/index
     - name: Search
       tocHref: /vsts/project/search/
       topicHref: /vsts/project/search/index

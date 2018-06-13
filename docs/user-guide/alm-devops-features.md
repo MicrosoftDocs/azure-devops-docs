@@ -216,7 +216,7 @@ Use features supported by these familiar clients to manage your project and illu
  <br/>
 
 <p><b>Follow a work item </b></p>
-<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
+<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) Follow/Following icons to quickly [start or stop tracking changes made to a work item](../work/work-items/follow-work-items.md).  </p>
 ![Follow a work item control](_img/features/alm-feature-follows.png)  
 <br/>
 
@@ -774,7 +774,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Personal and team notifications or alerts</b></p>
-<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../collaborate/manage-personal-notifications.md) or [team notifications](../collaborate/manage-team-notifications.md).</p>
+<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../notifications/manage-personal-notifications.md) or [team notifications](../notifications/manage-team-notifications.md).</p>
 ![Open Notifications from Account menu](_img/features/features-notifications-option.png)  
 <br/>
 
@@ -797,13 +797,13 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Follow a work item </b></p>
-<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](../collaborate/follow-work-items.md).  </p>
+<p>Choose the ![Follow icon](../work/_img/icons/follow-icon.png)/![Following icon](../work/_img/icons/following-icon.png) icons to quickly [start or stop tracking changes made to a work item](../work/work-items/follow-work-items.md).  </p>
 ![Follow a work item control](_img/features/alm-feature-follows.png)  
 <br/>
 
 
 <p><b>Follow a pull request</b></p>
-<p>To [track the progress of a single pull request](../collaborate/follow-work-items.md), choose the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. </p>
+<p>To [track the progress of a single pull request](../work/work-items/follow-work-items.md), choose the ![Follow icon](../work/_img/icons/follow-icon.png) option from the context menu. </p>
 ![Follow a pull request](_img/features/features-follow-pull-request.png)  
 <br/>
 
@@ -2111,14 +2111,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Keyboard shortcuts</b></p>
-<p>Increase your productivity by working with [hot keys and shortcuts](../collaborate/keyboard-shortcuts.md).</p>
+<p>Increase your productivity by working with [hot keys and shortcuts](../project/navigation/keyboard-shortcuts.md).</p>
 
 </td>
 <td width="33%">
 
 
 <p><b>Home</b></p>
-<p>Provide team guidance through [Welcome](../collaborate/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards/dashboards.md) to monitor progress and trends. </p>
+<p>Provide team guidance through [Welcome](../project/wiki/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards/dashboards.md) to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
 <p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
@@ -2681,7 +2681,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Team welcome page</b></p>
-<p>Provide in-project guidance through the [Welcome page and other pages you format using Markdown](../collaborate/markdown-guidance.md).  </p>
+<p>Provide in-project guidance through the [Welcome page and other pages you format using Markdown](../project/wiki/markdown-guidance.md).  </p>
 
 
 
@@ -2710,7 +2710,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team rooms</b></p>
-<p>Team rooms, like chat rooms, provide teams with a [space to discuss work in progress, ask questions, share status, and clarify issues](../collaborate/collaborate-in-a-team-room.md) that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
+<p>Team rooms, like chat rooms, provide teams with a [space to discuss work in progress, ask questions, share status, and clarify issues](../notifications/collaborate-in-a-team-room.md) that arise. Use team rooms to foster and capture communication among team members, both near and far.</p>
 
 
 <p><b>Team groups</b></p>

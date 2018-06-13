@@ -27,7 +27,9 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/SshV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/SshV0.md)]
 
 ::: moniker-end
 

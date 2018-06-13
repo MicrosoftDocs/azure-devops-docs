@@ -20,7 +20,9 @@ Publishes code coverage results that were produced by a build in [Cobertura](htt
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/PublishCodeCoverageResultsV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PublishCodeCoverageResultsV1.md)]
 
 ::: moniker-end
 

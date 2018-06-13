@@ -103,7 +103,7 @@ You set [permissions](../report/analytics/analytics-security.md) for the service
 
 ## Notifications, alerts, and team collaboration tools 
 
-To manage notifications, see [Manage personal notifications](../notifications/manage-personal-notifications.md) and [Manage team notifications](../collaborate/manage-team-notifications.md).
+To manage notifications, see [Manage personal notifications](../notifications/manage-personal-notifications.md) and [Manage team notifications](../notifications/manage-team-notifications.md).
 
 >[!NOTE]  
 >There are no UI permissions associated with managing notifications. Instead, you can manage them using the [TFSSecurity command line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions).

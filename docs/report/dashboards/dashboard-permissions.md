@@ -37,7 +37,7 @@ To learn more about adding and viewing dashboards, see [Add and manage dashboard
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../collaborate/preview-features.md). 
+To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md). 
 
 By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the team project have view only permissions, except for administrators. You can change the edit permissions for specific team dashboards. 
 

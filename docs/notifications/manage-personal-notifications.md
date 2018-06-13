@@ -87,11 +87,11 @@ For example, here we turn off the Build completes subscription.
 <!--- TFS 2017.1 settings 
 To manage your notification settings, select the Notifications option under the profile menu:
 	
-![Access personal notifications settings via the profile menu](../collaborate/_img/personal-profile-menu.png)
+![Access personal notifications settings via the profile menu](../project/wiki/_img/personal-profile-menu.png)
 
-Learn more about [team subscriptions](../collaborate/manage-team-notifications.md).
+Learn more about [team subscriptions](manage-team-notifications.md).
 
-![Personal notification settings](../collaborate/_img/personal-notifications.png)
+![Personal notification settings](../project/wiki/_img/personal-notifications.png)
 
 From this view, you can create, edit, disable, or delete custom subscriptions that you have created for yourself. You can also see shared team subscriptions.
 
@@ -101,19 +101,19 @@ From this view, you can create, edit, disable, or delete custom subscriptions th
 	
 3. Select the type of activity you want to be notified about.
 	
-	![Select event category and template](../collaborate/_img/new-sub-page1.png)
+	![Select event category and template](../project/wiki/_img/new-sub-page1.png)
 
 4. Provide a description to help you identify the subscription later. Also choose an email address for notifications to be delivered to. By default, your preferred email address is used.
 
-	![Select event category and template](../collaborate/_img/new-sub-description-and-delivery.png)
+	![Select event category and template](../project/wiki/_img/new-sub-description-and-delivery.png)
 
 5. Choose whether you want to receive notifications about activity in all projects or only a specific project.
 
-	![Select scope](../collaborate/_img/new-sub-scope.png)
+	![Select scope](../project/wiki/_img/new-sub-scope.png)
 
 6. Optionally configure additional filter criteria.
 
-	![Select scope](../collaborate/_img/new-sub-filter-conditions.png)
+	![Select scope](../project/wiki/_img/new-sub-filter-conditions.png)
 
 7. Click **Finish** to save the new subscription.
 
@@ -123,23 +123,23 @@ You can choose to not receive notifications for certain team subscriptions by op
 
 1. Open your notifications settings from the profile menu.
 	
-	![Access personal notifications settings via the profile menu](../collaborate/_img/personal-profile-menu.png)
+	![Access personal notifications settings via the profile menu](../project/wiki/_img/personal-profile-menu.png)
 
 2. Find the team subscription in the shared subscriptions section.
 
-	![Shared subscriptions list](../collaborate/_img/shared-sub.png)
+	![Shared subscriptions list](../project/wiki/_img/shared-sub.png)
 
 3. Click the toggle to opt out of receiving notifications for this subscription.
 
-    ![Opt'ed out of a shared sub](../collaborate/_img/shared-sub-opt-out.png)
+    ![Opt'ed out of a shared sub](../project/wiki/_img/shared-sub-opt-out.png)
 
 -->
 
 ## Related notes
 
 - [Default and supported notifications](oob-built-in-notifications.md)
-- [Follow a specific work item](../collaborate/follow-work-items.md)  
-- [Manage notifications for a team](../collaborate/manage-team-notifications.md)  
+- [Follow a specific work item](../work/work-items/follow-work-items.md)  
+- [Manage notifications for a team](manage-team-notifications.md)  
 - [Change your preferred email address](change-email-address.md)  
 
 ### Limitations

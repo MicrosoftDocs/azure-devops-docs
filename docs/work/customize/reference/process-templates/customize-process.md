@@ -149,7 +149,7 @@ For an overview of required plug-ins and plug-in dependencies, see [Define depen
 ### Plug-in and naming restrictions 
 When you add objects to a process template, you will want to make sure that you label them correctly so that you avoid XML validation errors.  
  
--   Restrictions are put on the names or labels of most Team Foundation objects. For an overview of naming restrictions that apply to process templates, security groups, area and iteration nodes, work item types, and work item fields, see [Naming restrictions](../../../../collaborate/naming-restrictions.md).  
+-   Restrictions are put on the names or labels of most Team Foundation objects. For an overview of naming restrictions that apply to process templates, security groups, area and iteration nodes, work item types, and work item fields, see [Naming restrictions](../../../../organizations/settings/naming-restrictions.md).  
   
 -   Most process template components that you customize will affect only the team project that you create by using the process template. The exceptions to this rule are global lists, link types, and work item fields. These objects are defined for a team project collection.  
   

@@ -71,7 +71,7 @@
     - name: Set dashboard permissions
       href: ../report/dashboards/dashboard-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json  
     - name: "Set permissions for READMEs & Wikis"
-      href: ../collaborate/manage-readme-wiki-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+      href: ../project/wiki/manage-readme-wiki-permissions.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
     - name: Set feedback permissions
       href: ../feedback/give-permissions-feedback.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json
     - name: Manage extension permissions (Security)

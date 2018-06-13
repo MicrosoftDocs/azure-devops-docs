@@ -25,7 +25,9 @@ None
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/FtpUploadV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/FtpUploadV1.md)]
 
 ::: moniker-end
 

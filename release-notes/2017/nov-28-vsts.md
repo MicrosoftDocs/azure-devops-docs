@@ -45,7 +45,7 @@ See the [documentation for deploying to Azure](/vsts/deploy-azure/) for more inf
 ### Configuration as code (YAML) builds in Public Preview ![Build tag](_img/release-notes-tag_build.png)
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Build Yaml definitions** [preview feature](/vsts/collaborate/preview-features) enabled on both your profile and account.
+> To use this capability, you must have the **Build Yaml definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on both your profile and account.
 
 When you define a CI build on VSTS, you’ve now got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build definitions give you the advantages of _configuration as code_.
 
@@ -71,7 +71,7 @@ After you commit the changes, a build definition is automatically created and qu
 ### Release gates in Public Preview ![Release tag](_img/release-notes-tag_release.png)
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Approval gates in releases** [preview feature](/vsts/collaborate/preview-features) enabled on your profile.
+> To use this capability, you must have the **Approval gates in releases** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
 
 Continuous monitoring is an integral part of DevOps pipelines. Ensuring the app in a release is healthy after deployment is as critical as the success of the deployment process. Enterprises adopt various tools for automatic detection of app health in production and for keeping track of customer reported incidents.
 Until now, approvers had to manually monitor the health of the apps from all the systems before promoting the release. However, Release Management now supports integrating continuous monitoring into release pipelines. Use this to ensure the system repeatedly queries all the health signals for the app until all of them are successful at the same time, before continuing the release.
@@ -129,7 +129,7 @@ As your project’s **Shared Queries** tree grows, it can be difficult to determ
 ### Create work items from the Queries hub
 
 > [!IMPORTANT]
-> To use this capability, you must have the **[New Queries Experience](/vsts/work/track/queries-preview)** [preview feature](/vsts/collaborate/preview-features) enabled on your profile.
+> To use this capability, you must have the **[New Queries Experience](/vsts/work/track/queries-preview)** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
 
 Easily create work items from the **Queries** hub with the addition of a **+ New** command bar action.
 
@@ -263,7 +263,7 @@ Within **Version Control** administration, if you want to merely edit the reposi
 ### Use VSTS as a symbol server
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Symbol server** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
+> To use this capability, you must have the **Symbol server** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
 
 VSTS Symbol Server enables you to host and share symbols with your organization. Symbols provide additional information that makes it easier to debug executables, especially those written in native languages like C and C++. See the [documentation for publishing symbols for debugging](/vsts/pipelines/symbols/) for more information.
 
@@ -422,7 +422,7 @@ The Test Platform package on nuget is cross-platform, but VSTest task currently 
 ### Wiki Search
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New experience in Code & Work Item search and new Wiki search** [preview feature](/vsts/collaborate/preview-features) enabled on your profile.
+> To use this capability, you must have the **New experience in Code & Work Item search and new Wiki search** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
 
 Over time as teams document more content in wiki pages across multiple projects in VSTS, finding relevant content becomes increasingly difficult. To maximize collaboration, you need the ability to easily discover content across all your projects. Now you can use **Wiki Search** to quickly find relevant wiki pages by title or page content across all projects in your VSTS account.
 

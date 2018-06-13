@@ -27,7 +27,7 @@
 - name: Reference
   items:
   - name: "Default permissions (Security)" 
-    href: ../collaborate/collaboration-tool-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json 
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json 
   - name: Give us feedback, get support
     href: /vsts/provide-feedback?toc=/vsts/feedback/toc.json&bc=/vsts/feedback/breadcrumb/toc.json 
 - name: Resources 

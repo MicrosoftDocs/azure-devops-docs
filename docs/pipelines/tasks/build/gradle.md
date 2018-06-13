@@ -20,7 +20,9 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/Gradle.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/GradleV2.md)]
 
 ::: moniker-end
 

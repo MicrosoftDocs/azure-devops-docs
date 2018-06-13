@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/RunJMeterLoadTestV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/RunJMeterLoadTestV1.md)]
 
 ::: moniker-end
 

@@ -67,7 +67,7 @@ You can also use the **#ID** control in pull request discussions, commit comment
  
 You can use the **#ID** control to link to a work item from within a Wiki page.   
 
-To learn more about the built-in wiki, see [Add & edit wiki pages](../collaborate/add-edit-wiki.md). 
+To learn more about the built-in wiki, see [Add & edit wiki pages](../project/wiki/add-edit-wiki.md). 
 
 ::: moniker-end
 

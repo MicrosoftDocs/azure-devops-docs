@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 **VSTS | TFS 2017 | TFS 2015 | TFS 2013**
 
-Opens a work item for modification. This method is [rate limited](../../../../collaborate/rate-limits.md) for VSTS customers. For better performance and to work around the rate limits, use [PartialOpen](partialopen.md).
+Opens a work item for modification. This method is [rate limited](../../../../integrate/concepts/rate-limits.md) for VSTS customers. For better performance and to work around the rate limits, use [PartialOpen](partialopen.md).
 
 **Namespace:**   [Microsoft.TeamFoundation.WorkItemTracking.Client](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  
 **Assembly:**  Microsoft.TeamFoundation.WorkItemTracking.Client (in Microsoft.TeamFoundation.WorkItemTracking.Client.dll)

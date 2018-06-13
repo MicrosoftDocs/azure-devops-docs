@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/SqlAzureDacpacDeployment.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/SqlAzureDacpacDeploymentV1.md)]
 
 ::: moniker-end
 
