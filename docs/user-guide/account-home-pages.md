@@ -153,7 +153,7 @@ Open the **Work items** hub to access the set of work items assigned to you or f
 
 ::: moniker range=">= tfs-2018"
 > [!NOTE]  
-> You can also access the **My work items** hub [from a mobile device](../collaborate/mobile-work.md).
+> You can also access the **My work items** hub [from a mobile device](../project/navigation/mobile-work.md).
 ::: moniker-end
 
 ### View your assigned work items
@@ -172,7 +172,7 @@ The **Assigned to me** page lists all work items assigned to you in the order th
 
 ### Work you're following
 
-Choose **Following** to open the page that lists all the work items [you've marked to follow](../collaborate/follow-work-items.md).
+Choose **Following** to open the page that lists all the work items [you've marked to follow](../work/work-items/follow-work-items.md).
 
 
 ::: moniker range="vsts"
@@ -229,7 +229,7 @@ To open a team room, choose **Rooms**. You'll see all the team rooms defined for
 
 <img src="_img/account-home-rooms.png" alt="Account home, Rooms, selected team room" style="border: 1px solid #CCCCCC;" />   
 
-To learn more about team rooms, see [Collaborate in a team room](../collaborate/collaborate-in-a-team-room.md).
+To learn more about team rooms, see [Collaborate in a team room](../notifications/collaborate-in-a-team-room.md).
 
 > [!NOTE]  
 > Team Rooms have been deprecated for VSTS and TFS 2018 and later versions as described in this blog post, [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](../service-hooks/services/teams.md) and [Slack](../service-hooks/services/slack.md). As a result, the Team Room feature will be deprecated from both Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  
@@ -239,6 +239,6 @@ To learn more about team rooms, see [Collaborate in a team room](../collaborate/
 
 ## Related notes
 
-- [Enable preview features](../collaborate/preview-features.md)  
+- [Enable preview features](../project/navigation/preview-features.md)  
 - [Work in the web portal](work-web-portal.md)
 - [Connect to team projects](connect-team-projects.md)  

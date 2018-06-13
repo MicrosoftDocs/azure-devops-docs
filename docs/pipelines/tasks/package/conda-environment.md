@@ -43,7 +43,9 @@ None
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV0.md)]
 
 ::: moniker-end
 

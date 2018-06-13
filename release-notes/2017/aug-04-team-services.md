@@ -71,11 +71,11 @@ Some of the key features of the new Wiki include:
 
 ![Wiki menu](_img/08_04_28.png)
 
-- [Offline updates](https://www.visualstudio.com/docs/collaborate/add-edit-wiki#clone-your-wiki-repo-and-edit-wiki-pages-offline) of Wiki for power users.
+- [Offline updates](/vsts/project/wiki/add-edit-wiki#clone-your-wiki-repo-and-edit-wiki-pages-offline) of Wiki for power users.
 
-Learn more about [getting started with Wiki](https://www.visualstudio.com/docs/collaborate/add-edit-wiki#create-your-wiki-and-first-wiki-page). 
+Learn more about [getting started with Wiki](/vsts/project/wiki/add-edit-wiki#create-your-wiki-and-first-wiki-page). 
 
-The [Wiki extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) on the Marketplace is now deprecated. If you are an existing Wiki extension user, then you can migrate your wiki pages to the new wiki using an this [migration tool](https://github.com/Microsoft/vsts-wikiTools). Learn more to [migrate your existing wiki pages to the new Wiki](https://www.visualstudio.com/docs/collaborate/migrate-extension-wiki-pages).
+The [Wiki extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.wiki) on the Marketplace is now deprecated. If you are an existing Wiki extension user, then you can migrate your wiki pages to the new wiki using an this [migration tool](https://github.com/Microsoft/vsts-wikiTools). Learn more to [migrate your existing wiki pages to the new Wiki](/vsts/project/wiki/migrate-extension-wiki-pages).
 
 ###Improvements in Wiki edit experience
 The new Wiki edit experience now supports HTML tags in markdown. 

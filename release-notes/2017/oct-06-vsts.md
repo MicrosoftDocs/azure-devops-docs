@@ -31,7 +31,7 @@ Some of the other key feature highlights include:
 ### Updated experience for code and work items search
 
 > [!TIP]
-> To use this capability you must have the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) installed and **New User Experience in Code & Work Item Search** [preview feature](https://www.visualstudio.com/docs/collaborate/preview-features) enabled on your profile.
+> To use this capability you must have the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search) installed and **New User Experience in Code & Work Item Search** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
 
 The new **Search** experience for both **Code** and **Work items** is now available in preview. Thank you to everyone who provided feedback on the search experience and helped us make the product better.
 
@@ -90,7 +90,7 @@ Now you can reference work items in wiki pages by pressing the '#' key to get a 
 
 **Wiki** has rich formatting and layout capabilities, like HTML support and inline videos. You can now leverage these capabilities to create beautiful project description pages by choosing to show the wiki home page on the **Project** description page.
 
-See the [documentation for add and edit wiki pages](/vsts/collaborate/add-edit-wiki) for more information.
+See the [documentation for add and edit wiki pages](/vsts/project/wiki/add-edit-wiki) for more information.
 
 ### Custom Project image on Project description page
 

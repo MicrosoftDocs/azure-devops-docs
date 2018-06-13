@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/AzureRmWebAppDeployment.4.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/AzureRmWebAppDeploymentV4.md)]
 
 ::: moniker-end
 

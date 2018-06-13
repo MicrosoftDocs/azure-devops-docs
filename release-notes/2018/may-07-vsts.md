@@ -144,7 +144,7 @@ A few of the interactions on the feed settings page have been improved. Now, cha
 ### Manage test plans using the new Test Plans hub
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New Test Plan Experience** [preview feature](/vsts/collaborate/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New Test Plan Experience** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
 
 Introducing the new hub for **Test Plans**! Not only can you add, edit, and delete plans from this page but also find and favorite plans across your team and the project. We pioneered this type of experience in **Dashboards**, **Queries**, and **Plans**. This is another step to bring this consistency across the product.
 

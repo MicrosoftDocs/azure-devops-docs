@@ -24,6 +24,6 @@ Installation of Delivery Plans requires TFS 2017.2 or later version.
 
 ## Related articles
 
-- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../collaborate/keyboard-shortcuts.md)
+- [Keyboard shortcuts for VSTS, TFS, and Team Explorer](../../project/navigation/keyboard-shortcuts.md)
 
 

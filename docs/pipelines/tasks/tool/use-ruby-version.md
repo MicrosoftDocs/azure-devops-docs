@@ -28,7 +28,9 @@ This task will fail if no Ruby versions are found in the tool cache.
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.md)]
 
 ::: moniker-end
 

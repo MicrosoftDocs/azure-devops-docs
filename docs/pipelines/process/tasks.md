@@ -105,7 +105,7 @@ Select this check box if you want the task to run even if the build or deploymen
 
 > **VSTS preview feature**
 >
-> To use this capability you must be working on VSTS and enable the **Task tool installers** [preview feature](../../collaborate/preview-features.md) for your account.
+> To use this capability you must be working on VSTS and enable the **Task tool installers** [preview feature](../../project/navigation/preview-features.md) for your account.
 
 Tool installers enable your build process to install and control your dependencies. Specifically, you can:
 

@@ -91,7 +91,7 @@ You provide others access to your account by adding their email address.
 
 	b. In the first drop-down menu, choose the option for all accounts. 
 
-	<img src="../collaborate/_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC;" /> 
+	<img src="../project/navigation/_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC;" /> 
 
 	>[!TIP]  
 	>If you don't see the user/account menu option, then you aren't an account administrator. 

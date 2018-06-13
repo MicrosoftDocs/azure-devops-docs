@@ -24,7 +24,9 @@ None
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/CopyFilesV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/CopyFilesV2.md)]
 
 ::: moniker-end
 

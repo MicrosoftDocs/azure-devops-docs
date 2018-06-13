@@ -35,7 +35,7 @@ In this topic you'll learn how to:
 
 ::: moniker range="vsts || >= tfs-2018"
 
-To enable the New Queries Experience, see [Preview features](../../collaborate/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
+To enable the New Queries Experience, see [Preview features](../../project/navigation/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
 
 The buttons to move up or down within the query results list are outside the work item form. Click Bottom to cycle through the choices for where the work item form appears: Bottom, Right, or Off. 
 

@@ -1,0 +1,11 @@
+- name: VSTS and TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Collaborate
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=collaboration
+    items:
+    - name: "README & Wikis"
+      tocHref: /vsts/project/wiki/
+      topicHref: /vsts/project/wiki/index
