@@ -1,5 +1,5 @@
 ---
-title: Provision and manage virtual machines in VMware vCenter Server
+title: VMware deployment
 description: Provision and manage virtual machines (VMs) in VMware vCenter Server from Microsoft Release Management in VSTS or TFS
 ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
 ms.prod: devops
@@ -9,29 +9,28 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2017'
 ---
 
-# Provision and manage virtual machines in VMware
+# VMware deployment
 
-[!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
+You can automatically provision virtual machines in a VMware environment and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
+ 
+## VMware connection
 
-This example shows how you can integrate **VMware 
-vCenter Server** with Release Management in Visual 
-Studio Team Services (VSTS) or Team Foundation Server (TFS). 
-You can provision and manage virtual machines in vCenter 
-and then deploy your apps to them.
+::: moniker range="vsts"
 
-## Prepare
+You need to first configure how VSTS connects to vCenter. You cannot use Microsoft-hosted agents to run VMware tasks since the vSphere SDK is not installed on these machines. You have to a set up a self-hosted agent that can communicate with the vCenter server.
 
-You will need a minimum of two machines - a **target server** 
-or virtual machine to deploy to, and an **agent machine** that 
-drives the deployment. You may have multiple target 
-servers depending on how many nodes you want to 
-deploy to. However, you only need one agent 
-machine to drive the deployment.
+::: moniker-end
 
-1. The extension uses the VMware vSphere Management 
+::: moniker range="< vsts"
+
+You need to first configure how TFS connects to vCenter. You have to a set up a self-hosted agent that can communicate with the vCenter server.
+
+::: moniker-end
+
+1. Install the VMware vSphere Management 
 SDK to call VMware API functions that access vSphere
 web services. To install and configure the SDK on 
 the agent machine:
@@ -60,14 +59,8 @@ the agent machine:
      path will be:  
      `C:\vSphereSDK\SDK\vsphere-ws\java\JAXWS\lib\vim25.jar`<p />
 
-1. Install an agent on the **agent machine**:
-
-   * [Deploy an agent on Windows](../../agents/v2-windows.md)
-   * [Deploy an agent on macOS](../../agents/v2-osx.md)
-   * [Deploy an agent on Linux](../../agents/v2-linux.md)<p />
-
 1. Install the VMware extension 
-   from Visual Studio Marketplace into your server or account.
+   from Visual Studio Marketplace into your TFS server or VSTS account.
 
    * If you are using **VSTS**, 
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
@@ -101,25 +94,9 @@ the agent machine:
        UPN formats such as **username@domain.com** and built-in system 
        accounts such as **NT Authority\\System** are not supported.<p/>
 
-1. Choose **OK** to save the settings and create the connection.
+## Managing VM snapshots
 
-## Deploy
-
-1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
-   "**+**" icon to create a new release definition.
-
-1. Choose **Start with an Empty process**.
-
-1. Open the **Tasks** tab and choose the **+** icon for the **Agent phase**.
-   Add a **VMware Resource Deployment** task to the environment. You may need
-   to install the task extension from Marketplace.
-
-   ![Adding a VMware Resource Deployment task](_img/vmware/add-vmware-task.png)
-
-1. To configure the **VMware Resource Deployment** task
-   to take snapshot of virtual machines, or to revert or delete them, use these settings:
-
-   ![VMWare Resource Deployment](_img/vmware/vmware-icon.png) [VMWare Resource Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp) - Connect to a VMware vCenter Server, easily provision VMs, and perform actions on them.
+Use the **VMware Resource Deployment** task from the VMware extension and configure the properties as follows to take snapshot of virtual machines, or to revert or delete them:
    
    - **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.
    
@@ -145,14 +122,13 @@ the agent machine:
    error page. The vSphere Web Client URL will be 
    of the form `https://machine.domain/vsphere-client/`. 
    Good practice guidance for vCenter Server certificates 
-   can be found in the [VMWare Knowledge Base](http://aka.ms/vcentercertificate)
+   can be found in the [VMware Knowledge Base](http://aka.ms/vcentercertificate)
    (article 2057223).
 
-1. To configure the **VMware Resource Deployment** task
-   to provision a new virtual machine from a template, use these settings:
+## Provisioning virtual machines
 
-   ![VMWare Resource Deployment](_img/vmware/vmware-icon.png) [VMWare Resource Deployment](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp) - Connect to a VMware vCenter Server, easily provision VMs, and perform actions on them.
-   
+To configure the **VMware Resource Deployment** task to provision a new virtual machine from a template, use these settings:
+
    - **VMware Service Connection**: Select the VMware vCenter Server connection you created earlier.
    
    - **Action**: `Deploy Virtual Machines using Template`
@@ -173,30 +149,9 @@ the agent machine:
    
    - **Skip Certificate Authority Check**: If the vCenter Server's certificate is self-signed, select this option to skip the validation of the certificate by a trusted certificate authority. See the note for the previous step to check for the presence of a self-signed certificate.<p />
 
-1. You can now add other tasks to the environment, 
-   such as **PowerShell on Target Machines**, and then 
-   deploy to the newly provisioned machines.
+## Deploying build to virtual machines
 
-   > In the future we plan for the **VMware Resource 
-   Deployment** task to provide an output variable that you
-   set in the task and then use as input to subsequent
-   tasks. Until then, if you want to run additional tasks, 
-   you'll need to specify the fully-qualified domain 
-   names of the virtual machines that are provisioned 
-   in VMware.
+Once you have the virtual machines set up, deploying a build to those virtual machines is no different than deploying to any other machine. For instance, you can:
 
-1. Type a name for the new release definition and save it.
-
-1. Create a new release from the release definition and deploy it to the environment.
-
-## Q&A
-
-<!-- BEGINSECTION class="md-qanda" -->
-
-::: moniker range="< vsts"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
-::: moniker-end
-
-<!-- ENDSECTION -->
-
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+* Use the [PowerShell on Target Machines](../tasks/deploy/powershell-on-target-machines.md) task to run remote scripts on those machines using Windows Remote Management.
+* Use [Deployment groups](../release/deployment-groups/index.md) to run scripts and other tasks on those machines using build and release agent.

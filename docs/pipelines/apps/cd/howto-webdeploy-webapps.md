@@ -111,4 +111,4 @@ For more details, see [Managing Configuration & App Settings for Multiple Enviro
 Do this by creating a suitable service endpoint in VSTS ot TFS:
 
 * [Azure Government Cloud deployment](../../library/government-cloud.md)
-* [Azure Stack deployment](../../library/azure-stack.md)
+* [Azure Stack deployment](../../targets/azure-stack.md)
