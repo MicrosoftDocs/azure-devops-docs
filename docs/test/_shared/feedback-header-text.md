@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-[Stakeholders](../../security/get-started-stakeholder.md)
+[Stakeholders](../../organizations/security/get-started-stakeholder.md)
 can respond to feedback requests for user stories and 
 features generated in VSTS or TFS using
 a lightweight end-to-end flow based on the 
@@ -19,5 +19,5 @@ can provide feedback using the flow described in
 >**NOTE**: This lightweight end-to-end flow is applicable only for web apps
 and by using VSTS or TFS 2017. To get feedback for desktop apps, or for 
 earlier versions of TFS, use the feedback flow described in
-[this topic](../../feedback/get-feedback.md)
+[this topic](../../project/feedback/get-feedback.md)
 about the Microsoft Feedback Client.

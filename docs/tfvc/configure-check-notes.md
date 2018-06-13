@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 Administrators of Team Foundation version control can add, configure, and remove check-in notes. Check-in notes settings are set in the Source Control Settings window. For more information about check-ins, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**  
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To add check-in notes
 

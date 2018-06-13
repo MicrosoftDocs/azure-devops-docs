@@ -27,7 +27,7 @@ After you delete the files you can synchronize the Team Foundation warehouse. Ot
 
 **Required Permissions**
 
-To use the **destroy** command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **destroy** command, you must belong to the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>] 
     [/stopat:<versionspec>] [/preview] [/startcleanup] [/noprompt] [/silent] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]]

@@ -66,7 +66,7 @@ To help you answer the question: *Are we on track to complete this set of work b
 
 In order to configure the Burndown and Burndown widgets, you must have the following in place:
 
-* Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../security/set-project-collection-level-permissions.md) to add extensions.
+* Installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
 * [Added the widget to a dashboard](../add-widget-to-dashboard.md). You must be a [team administrator](../../work/scale/add-team-administrator.md) or have [permissions to add and edit dashboards](../dashboard-permissions.md).
 -->
 

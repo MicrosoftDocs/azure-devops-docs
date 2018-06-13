@@ -24,11 +24,11 @@ Newly created team projects contain a single, root area that corresponds to the 
 * You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
 ::: moniker-end
 * To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 
-	If you aren't a project administrator, [get added as one](../../security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to **Edit project-level information**.   
+	If you aren't a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to **Edit project-level information**.   
 
 For naming restrictions on area and iteration paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
 

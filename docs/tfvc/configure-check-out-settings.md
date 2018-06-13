@@ -21,7 +21,7 @@ Administrators of Team Foundation version control can configure source control c
 
 **Required Permissions**
 
-To configure check-out settings, you must have the **Edit project-level information** set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To configure check-out settings, you must have the **Edit project-level information** set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 ## Procedure
 ### To configure checkout settings
 

@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 You can compare text files by using the default file-comparison tool integrated with Visual Studio, the [Diff window](compare-files.md). However, you can, for file types that you specify, enable the file-comparison tool that you prefer to use. You can use any comparison tool that supports, as command-line arguments, the full paths of the two files that you want to compare.
 
 **Required Permissions**  
-To perform this procedure, you must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../security/permissions.md).
+To perform this procedure, you must be a member of the **Administrators** or **Users** security group on the computer where Visual Studio is installed. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To associate a file type with a third-party compare tool
 

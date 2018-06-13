@@ -21,7 +21,7 @@ The **view** command retrieves a specific version of a file to a temporary folde
 
 **Required Permissions**
 
-To use the **view** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **view** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:localfile]
     [/shelveset:shelvesetname[;owner]] [/noprompt] itemspec 

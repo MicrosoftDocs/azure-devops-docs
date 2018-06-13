@@ -52,7 +52,7 @@
       - name: Move SharePoint to new hardware
         href: /tfs/server/install/sharepoint/move-sharepoint-new-hardware?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json
   - name: Set SharePoint permissions
-    href: ../../security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
+    href: ../../organizations/security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json  
   - name: Manage SharePoint integration
     items:
     - name: Add SharePoint products to TFS

@@ -35,7 +35,7 @@ You grant permissions to a user by setting the **View analytics** permission to 
 
 	<img src="./_img/analytics-permissions.png" alt="Analytics Permission dialog" style="border: 1px solid #C3C3C3;" />
 
-	To learn more about working with permissions, see [Security & Identity](../../security/index.md).
+	To learn more about working with permissions, see [Security & Identity](../../organizations/security/index.md).
 
 > [!NOTE]  
 > The Analytics Service does not support security at the area path level. Therefore, if a user has access to a team project and can report on that project but they don't have access to work items in specific areas of that project, they can view data through the Analytics Service. Therefore, to protect your data, the best practice is to not allow reporting against the Analytics Service for any user who does not have access to all data within a team project.  

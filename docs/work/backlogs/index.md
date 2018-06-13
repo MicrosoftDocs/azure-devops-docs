@@ -54,7 +54,7 @@ Start planning your project by quickly adding user stories or requirements to yo
 ## Concepts 
   
 - [Groom your backlog](best-practices-product-backlog.md)           
-- [About permissions and access](../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [About permissions and access](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Backlog items & multi-team ownership](work-multi-team-ownership-backlogs.md) 
 - [Share work plans](../track/share-plans.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 
@@ -66,7 +66,7 @@ Start planning your project by quickly adding user stories or requirements to yo
 
 
 ## Reference   
-- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 

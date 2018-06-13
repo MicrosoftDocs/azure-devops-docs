@@ -42,7 +42,7 @@ For an overview of the fields defined within a default process template, see [Wo
 -   To list fields, you must have your **View project-level information** permission for the team project in the collection set to **Allow**.    
 -   To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
-For more information, see [Add an administrator](../../../../security/set-project-collection-level-permissions.md).  
+For more information, see [Add an administrator](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]  
 >  Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  

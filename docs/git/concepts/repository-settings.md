@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2018'
 
 Git repositories can be customized to a great extent on Visual Studio Team Services and Team Foundation Server.
 Global options for entire repositories are configured by repository settings.
-There are also user-specific and branch-specific controls, covered by [permissions](../../security/set-git-tfvc-repository-permissions.md#git-repository) and [branch policies](../branch-policies.md) respectively.
+There are also user-specific and branch-specific controls, covered by [permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) and [branch policies](../branch-policies.md) respectively.
 
 This topic covers server-side repository settings.
 You may also want to learn about client-side [Git preferences](git-config.md).
@@ -72,5 +72,5 @@ The user will have to rewrite their unpushed history to remove the large file an
 
 For branch-specific settings, you should look at [branch policies](../branch-policies.md).
 These include options like requiring a pull request, a successful build, or a code review.
-For user-specific settings, you probably want [permissions](../../security/set-git-tfvc-repository-permissions.md#git-repository).
+For user-specific settings, you probably want [permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository).
 Permissions allow you to control who can read, write, contribute to pull requests, and other specific actions.

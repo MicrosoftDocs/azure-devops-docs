@@ -43,7 +43,7 @@ Choose VSTS when you want quick setup, maintenance-free operations, easy collabo
 
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
-[![Install TFS](_img/overview/tfs-setup-1.png)](/tfs/server/install/single-server)[![Create a team project](_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/tfs/server/admin/backup/back-up-restore-tfs)   
+[![Install TFS](_img/overview/tfs-setup-1.png)](/tfs/server/install/single-server)[![Create a team project](_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/tfs/server/admin/backup/back-up-restore-tfs)   
  
 <a id="add-code">  </a>
 ## Develop code using your IDE of choice 
@@ -137,7 +137,7 @@ Other topics of interest:
 ### Pricing, costs, and licenses</span>
 [VSTS Pricing](https://www.visualstudio.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.   
 
-On-premises TFS provides three access levels: [Stakeholder, Basic, and Advanced](../security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing) to plan your licensing requirements. 
+On-premises TFS provides three access levels: [Stakeholder, Basic, and Advanced](../organizations/security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing) to plan your licensing requirements. 
 
 
 ### Extensibility: Create first-class integration experiences 

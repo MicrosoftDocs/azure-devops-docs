@@ -255,7 +255,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/project/wiki/index">READMEs &amp; Wikis</a></li>
                                         <li><a class="barLink" href="/vsts/project/search/index">Search</a></li>
-                                        <li><a class="barLink" href="/vsts/feedback/index">Feedback</a></li>
+                                        <li><a class="barLink" href="/vsts/project/feedback/index">Feedback</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -265,7 +265,7 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
-                                        <li><a class="barLink" href="/vsts/security/index">Security and Identity</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
@@ -896,7 +896,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/feedback/index">
+                                <a href="/vsts/project/feedback/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -960,7 +960,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/security/index">
+                                <a href="/vsts/organizations/security/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

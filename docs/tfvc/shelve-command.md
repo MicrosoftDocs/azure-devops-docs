@@ -21,7 +21,7 @@ Stores a set of pending changes, together with pending check-in notes, a comment
 
 **Required Permissions**
 
-If you want to use the **shelve** command to delete a shelveset, you must be a shelveset owner, or your **Administer shelved changes** permission must be set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+If you want to use the **shelve** command to delete a shelveset, you must be a shelveset owner, or your **Administer shelved changes** permission must be set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf shelve  [/replace] [/comment:("comment"|@commentfile)] [shelvesetname] [/validate][/noprompt] [/login:username,[password]]
 

@@ -369,7 +369,7 @@ If there are no conflicts between the target branch and the newly created topic 
 ## Set a new default branch    
 
 >[!NOTE]
->This step requires [Edit Policies permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo. 
+>This step requires [Edit Policies permissions](../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo. 
 
 Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
 This is useful when you want to use a branch other than `master` for new changes or need to change your main line of development in your repo.

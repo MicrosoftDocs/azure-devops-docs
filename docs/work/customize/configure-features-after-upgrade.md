@@ -29,9 +29,9 @@ If you have several team projects to update, you can [apply updates programmatic
 
 1. From the web portal home page, open the administration context.  
 
-	![Open the administration page](../../feedback/_img/ALM_CAL_OpenAdminPage.png)  
+	![Open the administration page](../../project/feedback/_img/ALM_CAL_OpenAdminPage.png)  
 
-	If you're not a team project administrator, [get added as one](../../security/add-users-team-project.md). Only project administrators or TFS administrators can run the wizard.
+	If you're not a team project administrator, [get added as one](../../organizations/security/add-users-team-project.md). Only project administrators or TFS administrators can run the wizard.
 
 3. If you see a **Configure Features link**, run the wizard. 
 
@@ -84,7 +84,7 @@ In particular:
 - To add the Epic portfolio backlog to your team project or additional portfolio backlog levels, you can [add them manually](add-portfolio-backlogs.md).    
 - To use Code Review and Feedback Request, you need to [configure an SMTP server for TFS](/tfs/server/admin/setup-customize-alerts).  
 - To use Bugs Behavior, you must configure this option as described in [Show bugs on backlogs and boards feature](show-bugs-on-backlog.md). 
-- To fully manage Epic and Feature portfolio backlogs or web-based test plans, you need to have [Advanced access](../../security/change-access-levels.md).
+- To fully manage Epic and Feature portfolio backlogs or web-based test plans, you need to have [Advanced access](../../organizations/security/change-access-levels.md).
 
 <a id="related-notes"> </a>
 ##Related upgrade notes

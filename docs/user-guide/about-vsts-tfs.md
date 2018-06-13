@@ -113,7 +113,7 @@ Stakeholders. Also, unlimited Visual Studio subscribers can have access to all B
 no additional charge. You only need to pay for other users who need access.
 
 In TFS, all use is on the honor system. To set access levels for users based on their licenses, use specify their
-[access levels](../security/change-access-levels.md)
+[access levels](../organizations/security/change-access-levels.md)
 administration page. For example, assign unlicensed users Stakeholder access only.
 Users with a TFS Client Access License (CAL) can have Basic access. 
 Visual Studio subscribers can have either Basic or Advanced access, based on their subscriptions.

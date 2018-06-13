@@ -24,7 +24,7 @@ The **merge** command applies changes from one branch into another.
 
 **Required Permissions**
 
-To use the **merge** command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the *destination* and you must have the **Read** permission set to **Allow** for the workspace folder that contains the source. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **merge** command, you must have the **Check out** permission set to **Allow** for the workspace folder that contains the *destination* and you must have the **Read** permission set to **Allow** for the workspace folder that contains the source. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf merge [/recursive] [/force] [/candidate] [/discard] 
     [/version:versionspec] [/lock:none|checkin|checkout] [/preview] 

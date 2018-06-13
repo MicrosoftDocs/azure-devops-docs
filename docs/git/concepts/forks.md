@@ -68,8 +68,8 @@ This will isolate their changes from yours until you've had a chance to vet the 
 ![Create new fork](_img/forks/create-new-fork.png)
 
 >[!NOTE]
-> You must have the [Create Repository](../../security/permissions.md#git-repository-object-level) permission in your chosen project to create a fork.
-> We recommend you create a dedicated project for forks where all contributors have the Create Repository permission. For an example of granting this permission, see [Set Git repository permissions](../../security/set-git-tfvc-repository-permissions.md#set-git-repository-permissions).
+> You must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission in your chosen project to create a fork.
+> We recommend you create a dedicated project for forks where all contributors have the Create Repository permission. For an example of granting this permission, see [Set Git repository permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#set-git-repository-permissions).
 
 <a name="clone-locally" />
 ### Clone your fork locally
@@ -137,7 +137,7 @@ Once all policies are satisfied, the PR can be completed and the changes become 
 ![Pull request](_img/forks/cross-repo-pr.png)
 
 >[!IMPORTANT]
->Anyone with the [Read](../../security/permissions.md#git-repository-object-level) permission can open a PR to upstream.
+>Anyone with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission can open a PR to upstream.
 > If a PR build definition is configured, the build will run against the code introduced in the fork.
 
 <a name="sync-fork" />
