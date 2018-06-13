@@ -27,7 +27,7 @@ If you must also delete another user's workspace, you can use the **tf workspace
 
 **Required Permissions**
 
-To undo pending changes in another user's workspace, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To undo pending changes in another user's workspace, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To Undo the Changes in Another User's Workspace
 

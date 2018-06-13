@@ -40,7 +40,7 @@ You can use the code review and feedback fields to create queries and reports th
 |**State Code**|Mirror field used to track the current state in code.<br/>Reference name=Microsoft.VSTS.Common.StateCode|Integer|  
   
 ##  <a name="feedback"></a> Fields used to track feedback  
- The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is requested. See [Get feedback](../../../feedback/get-feedback.md).  
+ The following fields track feedback requests and responses. You complete the first three fields in the feedback request form. A feedback response is created for each person and for each item for which feedback is requested. See [Get feedback](../../../project/feedback/get-feedback.md).  
   
 |**Field name**|**Description**|**Data type**|  
 |--------------------|---------------------|-------------------|  
@@ -51,5 +51,5 @@ You can use the code review and feedback fields to create queries and reports th
   
 ## Related articles
 - [Index of work item fields](work-item-field.md)
-- [Get feedback](../../../feedback/get-feedback.md)
+- [Get feedback](../../../project/feedback/get-feedback.md)
 - [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)

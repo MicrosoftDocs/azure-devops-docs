@@ -37,7 +37,7 @@ On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programf
   
  **Requirements**  
   
- To use the **TFSFieldMapping** command, you must be a member of the **Team Foundation Administrators** or the **Project Collection Administrators** security group. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../security/set-project-collection-level-permissions.md).  
+ To use the **TFSFieldMapping** command, you must be a member of the **Team Foundation Administrators** or the **Project Collection Administrators** security group. For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md).  
   
 ## Syntax  
   

@@ -22,7 +22,7 @@ When you don't need an extension anymore, you can uninstall or disable this exte
 
 > **Charges will continue for a paid extension until you [reduce all users to zero (0) for this extension](./how-to/change-paid-extension-users.md)**. 
 
-Only [Project collection administrators](../security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../security/permissions.md#collection) can uninstall or disable extensions. 
+Only [Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) can uninstall or disable extensions. 
 
 
 0. Go to your VSTS or TFS home page, then go to your team project:

@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 Displays detailed information about past merges between the specified source and destination branches.
 
 **Required Permissions**  
-To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf merges [source] destination [/recursive] [/extended] [/format:(brief|deltailed)] [/login:username, [password]] [/showall]]] [/collection:TeamProjectCollectionUrl]
 

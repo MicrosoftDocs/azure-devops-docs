@@ -60,7 +60,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 ## Resources
 
-* [Get Stakeholder feedback](../feedback/index.md)
+* [Get Stakeholder feedback](../project/feedback/index.md)
 * [REST API for test management](../integrate/index.md)
 * [Blog posts for testing](https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/)
 * [Test & Feedback posts](https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4)

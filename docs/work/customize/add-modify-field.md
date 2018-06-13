@@ -26,7 +26,7 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 > **Feature availability:** You can exercise some features only from an on-premises TFS and are noted as such. 
 
 
->[!div class="mx-tdCol2BreakAll"]   
+> [!div class="mx-tdCol2BreakAll"]  
 > |WIT definition  |Command line change (On-premises XML) |
 > |-------------|----------|  
 > |- [Customize a pick list](#picklist)<br/>- [Add rules to a field](#add-rules)<br/>- [Add a custom field](#add-custom-field)<br/>- [Change the field label on the form](#change-label)<br/>- [Add a custom control](#custom-control) |- [List fields](#list-fields)<br/>- [Change a field attribute](#change-attribute) <br/>- [Delete a field](#delete-field)<br/>- [Index a field](#index-field)  | 
@@ -152,7 +152,7 @@ For example, with the following code snippet, you can enforce the rule that only
 
 You apply rules to accomplish the following actions:  
 
->[!div class="mx-tdCol2BreakAll"]   
+>[!div class="mx-tdCol2BreakAll"]  
 > |To accomplish this action: | Use this XML element: |  
 > |---|---|
 > | Specify a tool-tip. | **HELPTEXT** |
@@ -275,7 +275,7 @@ By default, the drop-down menu for the Assigned To field displays all users who 
 
 The most efficient way to apply security restrictions is to create custom groups that you manage either in Windows or a collection or team project  group.
 
-1.  Create the security group that you want to use and add the accounts to the group. For example, create a new group called **Team Contributors**. See [Add users to team projects](../../security/add-users-team-project.md).
+1.  Create the security group that you want to use and add the accounts to the group. For example, create a new group called **Team Contributors**. See [Add users to team projects](../../organizations/security/add-users-team-project.md).
 
 2.  Modify the definition file for each work item type that you want to limit the user set. Add the **VALIDUSER** element to the **FIELD** element definition for the Assigned To field, and specify the TFS group.
 
@@ -345,7 +345,7 @@ Other related topics or resources:
 - (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
 - (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
-To get added as an administrator, [Add administrators](../../security/set-project-collection-level-permissions.md).
+To get added as an administrator, [Add administrators](../../organizations/security/set-project-collection-level-permissions.md).
 
 <a id="field-reference"></a>  
 

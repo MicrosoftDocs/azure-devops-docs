@@ -27,15 +27,6 @@ To find work items assigned to you or your team, run a query. A number of work i
 
 By default, all contributors and stakeholders can view and run all shared queries. You can change the permissions set for a shared query folder or shared query. For details, see [Set query permissions](set-query-permissions.md).  
 
-<!---
-Use this topic to learn: 
->[!div class="checklist"]    
-> * About the differences between the old and new queries experience
-> * How to view all or favorited queries  
-> * How to filter a query list    
-> * How to run a query 
--->
-
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Open the Queries page from the web portal
@@ -87,8 +78,8 @@ You can perform most tasks for viewing and running queries from each of the quer
   
 
 > [!div class="mx-tdBreakAll"]
-> |Task |Favorites |All | 
-> |-------------|----------|---------| 
+> |TaskÂ |Favorites |All | 
+> |-------------|----------|---------| 
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 
 > |View all your queries or shared queries for the current team project |  | ![Checkmark](../_img/icons/checkmark.png) | 
 > |Run a query, open the context menu for a query  |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |

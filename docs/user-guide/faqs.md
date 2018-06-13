@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2013'
 - To get started with Visual Studio Team Services (VSTS) begin by [creating a user account](https://www.visualstudio.com/team-services/). Step-by-step instructions are provided in [Sign up for VSTS](../accounts/create-account-msa-or-work-student.md).  
 - To get started with an on-premises TFS, download and install the [latest version of TFS](https://www.visualstudio.com/downloads/). See [Install and configure TFS](/tfs/server/install/get-started) for details.  
 - If you need to create a team project, create one in [VSTSs](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).   
-- If you don't have access to the team project, [get invited to the team](../security/add-users-team-project.md).  
+- If you don't have access to the team project, [get invited to the team](../organizations/security/add-users-team-project.md).  
 - If it's your first time connecting to a team project, see [Connect to a team project](connect-team-projects.md).  
 
 **A: To get started with a client tool:** 
@@ -44,11 +44,11 @@ See [Software development roles](roles.md).
 
  **A**: Yes. You can provide access to stakeholders who have no CAL for the following activities:  
 
--   **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](../security/get-started-stakeholder.md).  
+-   **Stakeholder access**: This view allows anyone on your team to check project status and provide feedback. Stakeholders can [track project priorities and provide direction, feature ideas, and business alignment to a team](../organizations/security/get-started-stakeholder.md).  
   
-     To grant stakeholders access, add them to the [Stakeholder access group](../security/change-access-levels.md).  
+     To grant stakeholders access, add them to the [Stakeholder access group](../organizations/security/change-access-levels.md).  
   
--   **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](../feedback/give-permissions-feedback.md).  
+-   **Provide feedback**: To allow your stakeholders to provide feedback, you must [grant them specific permissions](../project/feedback/give-permissions-feedback.md).  
   
 
 ### Q: Are there other clients that connect to VSTS or TFS? Are there other tools I can use?
@@ -60,7 +60,7 @@ See [Software development roles](roles.md).
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (Requires the Team Foundation add-in is installed)  
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
-- [Microsoft Feedback Client](../feedback/give-feedback.md)  
+- [Microsoft Feedback Client](../project/feedback/give-feedback.md)  
 
 >[!NOTE]  
 >Native support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third part. See [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details.  

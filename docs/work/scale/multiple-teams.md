@@ -38,7 +38,7 @@ In this topic you'll learn:
 ## Move from one team to two teams 
 As your team grows, you can easily move from one team to two. In this example, we add two feature teams, Email and Voice, and maintain the Fabrikam Fiber team with visibility across each of these two teams.  
 
-If you're not a project administrator, [get added as one](../../security/set-project-collection-level-permissions.md). Only project administrators can add teams.   
+If you're not a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). Only project administrators can add teams.   
 
 ### Add two feature teams 
 
@@ -193,7 +193,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 	<img src="_img/multiple-teams-delete-team.png" alt="Web portal, admin context-team project level, Delete team" style="border: 1px solid #C3C3C3;" />  
 
-	You must be a member of the Project Administrators group or be [granted explicit permissions to edit project information](../../security/set-project-collection-level-permissions.md)to delete a team project. 
+	You must be a member of the Project Administrators group or be [granted explicit permissions to edit project information](../../organizations/security/set-project-collection-level-permissions.md)to delete a team project. 
  
 	> [!IMPORTANT]   
 	>Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
@@ -213,17 +213,17 @@ For teams to work autonomously, you may want to provide them with permissions th
 - Create and edit child nodes under an existing iteration node 
 - Create shared queries and folders under the Shared Queries folder
 
-For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md).
+For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).
  
 By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and  [collaborate on a Git team project](../../git/gitquickstart.md) or  [check in work to the team's code base](../../tfvc/check-your-work-team-codebase.md). 
 
 ![Default permissions assigned to team contributors](_img/default-permissions-assigned-to-team-contributors.png)  
 
-You can also choose to limit access to select features by making a user a [Stakeholder](../../security/get-started-stakeholder.md) or limiting their access to read-only. For an overview of default permissions and access assignments set for work tracking features and built-in groups, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
+You can also choose to limit access to select features by making a user a [Stakeholder](../../organizations/security/get-started-stakeholder.md) or limiting their access to read-only. For an overview of default permissions and access assignments set for work tracking features and built-in groups, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
 
 If your TFS deployment is integrated with a SharePoint product or SQL Server Reports, you'll need to manage membership for those products separately from their websites. 
 
--  [Set SharePoint site permissions](../../security/set-sharepoint-permissions.md) 
+-  [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md) 
 -  [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md). 
 
 

@@ -23,7 +23,7 @@ You can customize a team project's initial build permissions that are used by Te
 >  build template files. Also, for VSTS and for TFS 2018 and later versions, 
 >  customization of build permissions using the build plug-in isn't supported. 
 >  Instead, default permissions are set for project-level and collection-level  
->  security groups for [build definitions (object-level)](../../../../security/permissions.md#build). 
+>  security groups for [build definitions (object-level)](../../../../organizations/security/permissions.md#build). 
    
   
 The names of the file, the folder, and the plug-in for the default process templates are as follows:  

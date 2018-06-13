@@ -31,7 +31,7 @@ Other feature highlights include:
 
 ### View Analytics Widgets as a Stakeholder
 
-Installing the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) adds 6 powerful widgets to your widget catalog: Cumulative Flow Diagram, Lead Time, Cycle Time, Velocity, Burndown, and Burnup. Now, those with the free [Stakeholder license](/vsts/security/get-started-stakeholder#related-notes) can view all the Analytics widgets too!
+Installing the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) adds 6 powerful widgets to your widget catalog: Cumulative Flow Diagram, Lead Time, Cycle Time, Velocity, Burndown, and Burnup. Now, those with the free [Stakeholder license](/vsts/organizations/security/get-started-stakeholder#related-notes) can view all the Analytics widgets too!
 
 To use the [Analytics OData endpoint](/vsts/report/extend-analytics/index) or [Power BI to connect to Analytics](/vsts/report/powerbi/index), a [Basic license](https://www.visualstudio.com/team-services/compare-features/) is still required.
 
@@ -82,7 +82,7 @@ Need to include an equation or mathematical expression in your pull request comm
 
 Previously, anyone who could view a Git repository could work with its pull requests. We’ve added a new permission called **Contribute to pull requests** that controls access to creating and commenting on pull requests. All users and groups that previously held the **Read** permission will also be granted this new permission by default. The introduction of this new permission gives administrators additional flexibility and control. If you require your **Readers** group to be truly read-only, you can deny the **Contribute to pull requests** permission.
 
-See the [quickstart documentation for setting repository permissions](/vsts/security/set-git-tfvc-repository-permissions#set-git-repository-permissions) for more information.
+See the [quickstart documentation for setting repository permissions](/vsts/organizations/security/set-git-tfvc-repository-permissions#set-git-repository-permissions) for more information.
 
 ### Integrate using the pull request status API and branch policy
 
@@ -224,7 +224,7 @@ To avoid extra layers of groups in VSTS, you can now manage permissions directly
 > [!div class="mx-imgBorder"]
 ![Azure AD group permissions](_img/129_02.png)
 
-See the [about permissions and groups](/vsts/security/about-permissions) documentation for more information.
+See the [about permissions and groups](/vsts/organizations/security/about-permissions) documentation for more information.
 
 ### Connect or disconnect a VSTS account to Azure Active Directory via new Azure portal
 

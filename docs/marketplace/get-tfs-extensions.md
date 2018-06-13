@@ -40,8 +40,8 @@ so you can install [free, preview, and paid extensions](#difference).
 
 ### What do I need to install extensions?
 
-[Project collection administrators](../security/set-project-collection-level-permissions.md) 
-with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
+[Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) 
+with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
 For paid extensions, you'll need an 
@@ -121,13 +121,13 @@ and then installing them in a team project collection.
 ### Who can upload extensions?
 
 [Team Foundation administrators](/tfs/server/admin/add-administrator-tfs#server) 
-with [**Edit instance-level information** permissions](../security/permissions.md#server) 
+with [**Edit instance-level information** permissions](../organizations/security/permissions.md#server) 
 can upload extensions.
 
 ### Who can install extensions?
 
-[Project collection administrators](../security/set-project-collection-level-permissions.md) 
-with [**Edit collection-level information** permissions](../security/permissions.md#collection) 
+[Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) 
+with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) 
 can install extensions. If you don't have permissions, you can [request extensions](#request) instead.
 
 ### Download from Visual Studio Marketplace

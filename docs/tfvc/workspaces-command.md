@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 Displays information about workspaces in the system and updates cached information about a user name or computer name change on the server that is running Visual Studio Team Foundation Server.
 
 **Required Permissions**  
-To use the **workspaces** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **workspaces** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf workspaces [/owner:ownername] [/computer:computername] 
     [/collection:TeamProjectCollectionUrl] [/format:(brief|detailed)] 

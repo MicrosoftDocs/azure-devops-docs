@@ -30,7 +30,7 @@ You can open a workbook from the Documents page in Team Explorer. Or, you can op
   
 -   To view a shared query, you must be assigned or belong to a group that has been assigned **Read** permissions for the shared query folder for the team project. To modify a query, you must be assigned or belong to a group that has been assigned **Contribute** or **Full Control** permissions for the shared query. See [Set permissions on queries](../../work/track/set-query-permissions.md).  
   
--   To create or modify work items, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. See [Add users to team projects](../../security/add-users-team-project.md).  
+-   To create or modify work items, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. See [Add users to team projects](../../organizations/security/add-users-team-project.md).  
   
 > [!NOTE]
 >  When you open the workbook, choose **Edit Workbook** next to **Server Workbook** so that you can modify the workbook. If the workbook is not available to you, open the Triage shared query by using Team Explorer or Microsoft Excel.  

@@ -3,7 +3,7 @@
 A:	Make sure that users have the correct 
 [access level](https://www.visualstudio.com/team-services/compare-features/) 
 in the Users hub. For VSTS, learn [how to manage users and access levels](/vsts/accounts/add-account-users-assign-access-levels). 
-For TFS, learn [learn how to change access levels](/vsts/security/change-access-levels).  
+For TFS, learn [learn how to change access levels](/vsts/organizations/security/change-access-levels).  
 
 Also, [some features are available only as extensions](https://www.visualstudio.com/team-services/compare-features/), 
 so you'll need to install these extensions. Most extensions require that you have at least Basic access, not Stakeholder.

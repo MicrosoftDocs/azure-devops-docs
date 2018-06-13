@@ -40,7 +40,7 @@ When you customize your team project to support team fields, the Team field tab 
 <a id="globallist">  </a>  
 ### 1. Create a global list to manage teams 
 
-0. If you aren't a member of the **Project Administrators** group, [get those permissions](../../security/set-project-collection-level-permissions.md).
+0. If you aren't a member of the **Project Administrators** group, [get those permissions](../../organizations/security/set-project-collection-level-permissions.md).
 
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 

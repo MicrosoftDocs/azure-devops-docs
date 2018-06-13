@@ -20,7 +20,7 @@ With My Work in Team Explorer you can conduct and respond to code reviews. If yo
   
 -   To access **My Work**, you must use Team Foundation Version Control (TFVC) for your source control.   
   
--   To run the **witadmin** command-line tool, you must be a member of the **Team Foundation Administrators** group or a member of the **Project Administrators** group for the team project. For more information, see [Add an administrator](../../../security/set-project-collection-level-permissions.md).  
+-   To run the **witadmin** command-line tool, you must be a member of the **Team Foundation Administrators** group or a member of the **Project Administrators** group for the team project. For more information, see [Add an administrator](../../../organizations/security/set-project-collection-level-permissions.md).  
   
 <a name="default"></a> 
 ##Default metastate assignments made to workflow states for bugs  

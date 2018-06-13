@@ -94,7 +94,7 @@ All members of a team project will be able to view and contribute to your Kanban
 
 <img src="_img/kanban-basics-url.png" alt="Browser URL for the Kanban board" style="border: 1px solid #C3C3C3;" /> 
 
-To add users to your team project, see [Add users to a team project](../../security/add-users-team-project.md)   
+To add users to your team project, see [Add users to a team project](../../organizations/security/add-users-team-project.md)   
 ::: moniker-end
 
 ## Try this next 

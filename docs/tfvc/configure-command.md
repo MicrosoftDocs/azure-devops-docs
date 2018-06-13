@@ -27,7 +27,7 @@ Enables an administrator to view and change the following configuration settings
 
 **Required Permissions**
 
-To use the **configure** command, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **configure** command, you must have the **Edit server-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf configure [PathOfTeamProject] [/collection:TeamProjectCollectionUrl][/login:username,[password]]
 
