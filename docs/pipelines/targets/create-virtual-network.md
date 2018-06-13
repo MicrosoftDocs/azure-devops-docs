@@ -44,9 +44,7 @@ See also: [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/e
 
 * Enable your build-deploy-test scenario as shown in [these steps](#enable-scenario).
 
-* You can perform a range of operations using SCVMM, see [this topic](manage-vms-using-scvmm.md).
-
-* For another example of using SCVMM to manage VMs, see [this topic](../apps/cd/scvmm/configure-scvmm.md).
+* You can perform a range of operations to manage VMs using SCVMM. For examples, see [SCVMM deployment](scvmm.md).
   
 <a name="prereqs"></a>
 
@@ -244,7 +242,7 @@ Isolated virtual networks can be broadly classified into three topologies.
 You can create any of the above topologies using the SCVMM extension, as shown in the following steps.
 
 1. Open your TFS or VSTS instance and install the **SCVMM extension** if not already installed.
-   For more information, see [Configure and deploy with SCVMM](../apps/cd/scvmm/configure-scvmm.md).
+   For more information, see [SCVMM deployment](scvmm.md).
 
    >The **SCVMM task** provides a more efficient way capability to perform lab management operations using build and release
    definitions. You can manage SCVMM environments, provision isolated virtual networks, and implement build-deploy-test scenarios.
@@ -341,8 +339,7 @@ environments. You can create as many environments as you need with just a click 
 
 ## See also
 
-* [Configure and deploy with SCVMM](../apps/cd/scvmm/configure-scvmm.md)
-* [Task actions for managing VMs using SCVMM](manage-vms-using-scvmm.md)
+* [SCVMM deployment](scvmm.md)
 * [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/en-us/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server)
 
 ## Q&A

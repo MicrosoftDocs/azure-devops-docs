@@ -20,7 +20,7 @@ Here we'll show you how to set up continuous deployment of your ASP.NET app to a
 Continuous deployment means starting an automated deployment process whenever a new successful build is available.
 
 You can also use these steps to deploy your app to an [Azure Government Cloud](../../library/government-cloud.md)
-or to (Azure Stack)[../../concepts/library/azure-stack.md].
+or to (Azure Stack)[../../targets/azure-stack.md].
 
 ## Get set up
 

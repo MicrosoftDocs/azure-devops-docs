@@ -68,8 +68,8 @@ continuous integration (CI) and continuous deployment (CD) process.
 <li style="margin-bottom:5px">[Azure VM](cd/azure/deploy-provision-azure-vm.md)</li>
 <li style="margin-bottom:5px">[VM using RM template](cd/azure/build-azure-vm-template.md)</li>
 <li style="margin-bottom:5px">[DevTest Labs](cd/azure/deploy-provision-devtest-lab.md)</li>
-<li style="margin-bottom:5px">[SCVMM](cd/scvmm/configure-scvmm.md)</li>
-<li style="margin-bottom:5px">[VMWare](cd/provision-vm-in-vmware.md)</li>
+<li style="margin-bottom:5px">[SCVMM](../targets/scvmm.md)</li>
+<li style="margin-bottom:5px">[VMWare](../targets/vmware.md)</li>
 </ul>
 </div>
 
