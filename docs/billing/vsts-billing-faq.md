@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/14/2018
+ms.date: 06/13/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -70,10 +70,6 @@ Another approach is to attempt to visit the [Azure Enterprise Portal](http://ea.
 A: Yes, you can use these prepaid funds for all VSTS services offered by Microsoft. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your VSTS account](set-up-billing-for-your-account-vs.md).
 
 The only exclusion is for VSTS extensions offered by partners in the Visual Studio Marketplace; these charges will appear on your next "overage" invoice. Typically this happens monthly, but due to historical rules for some EA customers, an overage invoice might not be issued for several months. Please consult a licensing specialist for your EA if you need to know what amount of additional purchases (purchases which are not eligible for Azure Monetary Commitment funds) will trigger an overage invoice.
-
-### Can I buy Azure Marketplace solutions from an Azure Cloud Solution Provider (CSP)?
-
-A: Currently, only free and bring-your-own-license (BYOL) Marketplace offers are available to Azure CSP and Open customers.
 
 ## How charges are processed
 
