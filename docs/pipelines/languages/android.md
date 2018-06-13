@@ -22,10 +22,6 @@ This guide explains creating pipelines for Android projects. Before this guidanc
 
 You can build Android projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Android. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
 
-# [Web](#tab/web)
-
-Choose the **Android** template as you create a build pipeline for your project. This will get you started with tasks to build, test, sign, and align an Android APK.
-
 # [YAML](#tab/yaml)
 
 Add the following YAML to a file named **vsts-ci.yml** in the root of your repository. Make sure the `gradleWrapperFile` and `tasks` values match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
@@ -41,11 +37,17 @@ steps:
     tasks: 'assembleRelease'
 ```
 
+# [Web](#tab/web)
+
+Choose the **Android** template as you create a build pipeline for your project. This will get you started with tasks to build, test, sign, and align an Android APK.
+
 ---
 
-## Sign and align an APK
+## Sign and align an Android APK
 
 Add the following YAML to sign and zipalign a built APK. An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM it consumes. See the [Android Signing](../tasks/build/android-signing.md) task for more about these options.
+
+<blockquote><strong>Important: </strong>We recommend storing each of the following passwords in a [secret variable](../build/variables.md#secret-variables).</blockquote>
 
 ```yaml
 - task: AndroidSigning@2
@@ -58,12 +60,12 @@ Add the following YAML to sign and zipalign a built APK. An APK must be signed t
     jarsignerKeyPassword: '$(jarsignerKeyPassword)'
     jarsignerArguments: '-verbose -sigalg MD5withRSA -digestalg SHA1'
     zipalign: true
-    zipalignFile: 'MyZipalignFile'
+    zipalignFile: 'pathToZipalignExecutable'
 ```
 
 ## Test on the Android Emulator
 
-> Note: The Android Emulator is currently available only the **Hosted macOS** agent.
+> Note: The Android Emulator is currently available only on the **Hosted macOS** agent.
 
 ## Test on devices
 
@@ -77,7 +79,9 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 ## Distribute and promote
 
-Add the following YAML to distribute an app to a group of testers or beta users, or promote the app to Intune or Google Play. A free [App Center]( https://appcenter.ms) account is required. See the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task for more about these options. Alternatively, install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to release directly to Google Play.
+Install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) to release directly to Google Play.
+
+Alternatively, add the following YAML to distribute an app to a group of testers or beta users, or promote the app to Intune or Google Play. A free [App Center]( https://appcenter.ms) account is required. See the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task for more about these options.
 
 ::: moniker range="vsts"
 
