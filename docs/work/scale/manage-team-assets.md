@@ -53,7 +53,7 @@ You can configure most of your team settings from the common configuration dialo
 
 To create additional teams, see [Add teams and team members](multiple-teams.md).  
 
-If team members don't have access to all the features they want, check that they have [the permissions needed for those features](../../security/set-permissions-access-work-tracking.md).  
+If team members don't have access to all the features they want, check that they have [the permissions needed for those features](../../organizations/security/set-permissions-access-work-tracking.md).  
 
 
 

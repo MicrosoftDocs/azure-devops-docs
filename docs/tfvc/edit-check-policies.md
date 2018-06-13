@@ -27,7 +27,7 @@ Administrators of Team Foundation version control can add and edit check-in poli
 >You can temporarily disable one or more policy types in **Source Control Settings**, on the** Check-in Policy** tab, by highlighting the policies and clicking **Disable**. To enable a disabled policy, highlight the disabled policy, and click **Enable**.
 
 **Required Permissions**  
-To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To complete this procedure, you must have the **Edit project-level information** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To edit a check-in policy
 

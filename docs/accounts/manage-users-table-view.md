@@ -44,7 +44,7 @@ who also get Basic features, and in some cases, additional features with specifi
 ## Prerequisites
 
 
-You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).   
+You'll need [VSTS project collection administrator or account owner permissions](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).   
 
 
 ##	Manage users
@@ -73,8 +73,8 @@ and **Remove from account** (deletes user).
 
 - [Change number of paid extension users](../billing/change-number-paid-extension-users.md)
 - [Connect to a team project](../user-guide/connect-team-projects.md)
-- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
-- [Grant or restrict access to select features and functions](../security/restrict-access.md)
+- [Change individual permissions, grant select access to specific functions](../organizations/security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)
 - [Delete users from VSTS](delete-account-users.md)
 - [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
 - [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
@@ -82,4 +82,4 @@ and **Remove from account** (deletes user).
 
 ### How does *access* differ from *permissions*?
 
-Access levels control which features are available to users, while permissions control their access to account resources. To learn more, see [Default permissions and access](../security/permissions-access.md). 
+Access levels control which features are available to users, while permissions control their access to account resources. To learn more, see [Default permissions and access](../organizations/security/permissions-access.md). 

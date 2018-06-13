@@ -21,7 +21,7 @@ You can use this command to roll back the effects of one or more changesets to o
 
 **Required Permissions**
 
-To use this command, you must have the **Read**, **Check Out**, and **Check In** permissions set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use this command, you must have the **Read**, **Check Out**, and **Check In** permissions set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 	tf rollback /toversion:VersionSpec ItemSpec [/recursive] [/lock:none|checkin|checkout] [/version:versionspec] [/keepmergehistory] [/login:username,[password]] [/noprompt]
 

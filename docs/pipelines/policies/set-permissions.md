@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../security/permissions-access.md). 
+Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
 
-In addition to permission assignments, you manage security for several resources&mdash;such as variable groups, secure files, and deployment groups&mdash;by adding users or groups to a role. You grant or restrict permissions by setting the [permission state to Allow or Deny](../../security/about-permissions.md), either for a security group or an individual user. For definitions of each build and release permission and role, see [Build and release permissions](permissions.md).  
+In addition to permission assignments, you manage security for several resources&mdash;such as variable groups, secure files, and deployment groups&mdash;by adding users or groups to a role. You grant or restrict permissions by setting the [permission state to Allow or Deny](../../organizations/security/about-permissions.md), either for a security group or an individual user. For definitions of each build and release permission and role, see [Build and release permissions](permissions.md).  
 
 ## Set permissions for build definitions
 
@@ -65,7 +65,7 @@ In addition to permission assignments, you manage security for several resources
 
 ## Manage Library roles for variable groups, secure files, and deployment groups
 
-Permissions for [variable groups](../library/variable-groups.md), [secure files](../library/secure-files.md), and [deployment groups](/vsts/pipelines/release/deployment-groups) are managed by roles. For a description of the roles, see [About security roles](../../security/about-security-roles.md). 
+Permissions for [variable groups](../library/variable-groups.md), [secure files](../library/secure-files.md), and [deployment groups](/vsts/pipelines/release/deployment-groups) are managed by roles. For a description of the roles, see [About security roles](../../organizations/security/about-security-roles.md). 
 
 > [!NOTE]
 > **Feature availability**: These features are available on VSTS and TFS 2017 and later versions. 
@@ -127,7 +127,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 1. Click **Security**, and then choose the group whose permissions you want to modify. 
 
-   Here we choose the Build Administrators group and change the **Use build resources** permission. For a description of each permissions, see [Permissions and groups reference, Collection-level permissionss](../../security/permissions.md#collection-level).
+   Here we choose the Build Administrators group and change the **Use build resources** permission. For a description of each permissions, see [Permissions and groups reference, Collection-level permissionss](../../organizations/security/permissions.md#collection-level).
 
    <img src="_img/set-build-release-permissions/set-build-collection-level-permission-dialog.png" alt="Security dialog for Project Collection Build Administrators group" style="border: 1px solid #C3C3C3;" />
 
@@ -150,7 +150,7 @@ For example, here we show how to add a user to the Administrator role for a serv
 
    ![Open the Roles tab for a service endpoint](_img/manage-roles/open-services-roles.png) 
 
-1. Add the user or group and choose the role you want them to have. For a description of each role, see [About security roles](../../security/about-security-roles.md). 
+1. Add the user or group and choose the role you want them to have. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md). 
 
    For example, here we add Raisa to the Administrator role. 
 
@@ -169,7 +169,7 @@ You manage the security for [agent pools](../agents/pools-queues.md) and [deploy
 > [!NOTE]
 > **Feature availability**: These features are available on VSTS and TFS 2018 and later versions. 
 
-You will need to be a member of the Project Collection Administrator group to manage the security for a pool. Once you've been added to the Administrator role, you can then manage the pool. For a description of each role, see [About security roles](../../security/about-security-roles.md). 
+You will need to be a member of the Project Collection Administrator group to manage the security for a pool. Once you've been added to the Administrator role, you can then manage the pool. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md). 
 
 1. From the web portal, click the ![gear settings icon](../../_img/icons/gear_icon.png) gear Settings icon and choose Account settings or Collection settings to open the collection-level settings admin context. 
 
@@ -192,5 +192,5 @@ You will need to be a member of the Project Collection Administrator group to ma
 ## Related notes 
 
 [Default build and release permissions](../policies/permissions.md)
-- [Default permissions and access](../../security/permissions-access.md) 
-- [Permissions and groups reference](../../security/permissions.md) 
+- [Default permissions and access](../../organizations/security/permissions-access.md) 
+- [Permissions and groups reference](../../organizations/security/permissions.md) 

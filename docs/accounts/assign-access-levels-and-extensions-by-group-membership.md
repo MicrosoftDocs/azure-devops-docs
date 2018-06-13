@@ -22,7 +22,7 @@ This eliminates the need for automating license management on your own to reflec
 
 ## Prerequisites
 
-To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the VSTS account. If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md).
+To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the VSTS account. If you're not a member of the Project Collection Administrators Group, [get added as one](../organizations/security/set-project-collection-level-permissions.md).
 
 ## Assign required licenses
 

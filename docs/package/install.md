@@ -74,7 +74,7 @@ If you selected **Buy** or **Get it free**, you will need to assign your license
 
 1. Select **Assign**, type the user(s) you want to assign licenses, then select **Ok.**
 
-   * Users with Visual Studio Enterprise subscriptions get Package Management for free.  [Ensure that your Visual Studio Enterprise subscribers are assigned VSE access level](../security/change-access-levels.md).
+   * Users with Visual Studio Enterprise subscriptions get Package Management for free.  [Ensure that your Visual Studio Enterprise subscribers are assigned VSE access level](../organizations/security/change-access-levels.md).
 
    * Users using an instance of TFS disconnected from the internet (and thus unable to purchase licenses from the marketplace) can still assign licenses purchased through an enterprise agreement.
 

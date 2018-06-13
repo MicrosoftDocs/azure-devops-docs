@@ -21,7 +21,7 @@ After you compare a server folder and a local folder, you can reconcile the diff
 
 **Required Permissions**
 
-To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To perform these procedures, you must have the **Read** and **Check out** permissions set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 >**Note:**
 >  To reconcile two local folders or files, you do not need Team Foundation Server permissions.

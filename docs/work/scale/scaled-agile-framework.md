@@ -154,7 +154,7 @@ In this way, all teams can manage their own workload and priorities while clearl
 All this might sound complicated, but it actually takes very little configuration to set up the teams and get started.
 In order to go from one project with one default team, area, and set of iterations, we'll first configure an area path structure to support the hierarchy of teams we want. Then we'll make sure that the iteration paths support the release structure we want and the program and feature teams to use. Finally, we'll create, configure, and populate the membership of teams.  
 
-You'll need to be a [member of the Project Administrators group](../../security/add-users-team-project.md) to make these configurations.    
+You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
 
 ###Create areas to support your team hierarchy
 
@@ -191,7 +191,7 @@ This structure maps the following SAFe teams to your Agile tools' teams:
 - 
 If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).  
 
-You'll need to be a [project administrator](../../security/add-users-team-project.md) to perform these steps. 
+You'll need to be a [project administrator](../../organizations/security/add-users-team-project.md) to perform these steps. 
 ####Create and configure each Program team
 
 1. From the Overview page for the team project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  

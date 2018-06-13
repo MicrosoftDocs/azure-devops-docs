@@ -80,9 +80,9 @@ Guidance for Cloud Solution Providers
 
 ## Reference
 
-* [Permissions](https://docs.microsoft.com/en-us/vsts/security/permissions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
-* [About access levels](https://docs.microsoft.com/en-us/vsts/security/access-levels?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
-* [Default permissions & access](https://docs.microsoft.com/en-us/vsts/security/permissions-access?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [Permissions](https://docs.microsoft.com/en-us/vsts/organizations/security/permissions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [About access levels](https://docs.microsoft.com/en-us/vsts/organizations/security/access-levels?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [Default permissions & access](https://docs.microsoft.com/en-us/vsts/organizations/security/permissions-access?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 
 ::: moniker-end
 

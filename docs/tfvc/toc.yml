@@ -109,11 +109,11 @@
     - name: Lock and unlock folders or files
       href: lock-unlock-folders-files.md
   - name: "Set TFVC permissions (Security)"
-    href: ../security/set-git-tfvc-repository-permissions.md?toc=/vsts/tfvc/toc.json&bc=/vsts/tfvc/breadcrumb/toc.json
+    href: ../organizations/security/set-git-tfvc-repository-permissions.md?toc=/vsts/tfvc/toc.json&bc=/vsts/tfvc/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Default TFVC permissions (Security)"
-    href: ../security/default-tfvc-permissions.md?toc=/vsts/tfvc/toc.json&bc=/vsts/tfvc/breadcrumb/toc.json
+    href: ../organizations/security/default-tfvc-permissions.md?toc=/vsts/tfvc/toc.json&bc=/vsts/tfvc/breadcrumb/toc.json
   - name: TFVC command reference
     items:
     - name: Use Team Foundation version control commands

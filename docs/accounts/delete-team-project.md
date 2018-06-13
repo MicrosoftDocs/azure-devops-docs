@@ -34,7 +34,7 @@ Delete a team project from VSTS or from an on-premises deployment of Team Founda
    >[!div class="mx-imgBorder"]
    ![choose-delete-team-project](_img/delete-team-project/choose-delete-team-project.png)
 
-    If you don't see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you're not accessing VSTS or you're not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](../security/set-project-collection-level-permissions.md).
+    If you don't see the actions icon ![actions icon image](../work/_img/icons/actions-icon.png), either you're not accessing VSTS or you're not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md).
 
 3. You must type the name of the team project in order to initiate the delete operation. 
 

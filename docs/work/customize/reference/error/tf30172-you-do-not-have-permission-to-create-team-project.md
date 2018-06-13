@@ -19,7 +19,7 @@ You receive this error when your run the New Team Project Wizard under the follo
   
      Correct this error by contacting your administrator and ask that the permission **Create new projects** be added to your user account.  
   
-     If your on-premises TFS supports SharePoint Products or SQL Server Reporting Services, you might need to have permissions set for those products as well. See [Add accounts to administer project collections](../../../../security/set-project-collection-level-permissions.md).  
+     If your on-premises TFS supports SharePoint Products or SQL Server Reporting Services, you might need to have permissions set for those products as well. See [Add accounts to administer project collections](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 -   You're client version isn't compatible with the TFS version where you're trying to create a team project.  
   
@@ -27,4 +27,4 @@ You receive this error when your run the New Team Project Wizard under the follo
   
 ## Related articles  
 - [Create a team project](../../../../accounts/create-team-project.md)   
-- [Add administrators, set permissions at the project-level or project collection-level](../../../../security/set-project-collection-level-permissions.md)
+- [Add administrators, set permissions at the project-level or project collection-level](../../../../organizations/security/set-project-collection-level-permissions.md)

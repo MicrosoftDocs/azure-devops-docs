@@ -28,13 +28,13 @@ Sign up for a VSTS account, add users, and manage permissions and access.
 
 ## Reference
 
-* [Default permissions and access](../security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
+* [Default permissions and access](../organizations/security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json)
 * [Access with Azure AD](access-with-azure-ad.md)
 
 ## Resources
 
 * [New User Guide](../user-guide/index.md)
 * [Billing](../billing/index.md)
-* [Security & Identity](../security/index.md)
+* [Security & Identity](../organizations/security/index.md)
 * [Manage Extensions](../marketplace/index.md)
 * [Service Hooks](../service-hooks/index.md)

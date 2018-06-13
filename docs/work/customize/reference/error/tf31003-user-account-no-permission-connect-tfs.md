@@ -25,6 +25,6 @@ You might receive this error when you try to connect to Visual Studio Team Servi
 |Your user account doesn't have sufficient permissions to connect.|Check with your VSTS account owner or TFS administrator or that you have the necessary permissions to connect. For VSTS, you must have an active, valid license. See [Assign licenses to users of VSTS](../../../../accounts/add-account-users-assign-access-levels.md) for details.|  
   
 ## Related articles 
-- [Add users to team projects](../../../../security/add-users-team-project.md)   
+- [Add users to team projects](../../../../organizations/security/add-users-team-project.md)   
 - [Assign licenses to users of VSTS](../../../../accounts/add-account-users-assign-access-levels.md)
 - [Connect to team projects](../../../../user-guide/connect-team-projects.md)

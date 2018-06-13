@@ -82,7 +82,7 @@ Here's a list of the most common ways in which teams share information and plans
 </tbody>
 </table>
 
-In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../security/get-started-stakeholder.md) so that they can view work items and dashboards.  
+In addition, if you have stakeholders who don't contribute code but want to contribute to the discussion and review progress, make sure you provide them [stakeholder access](../../organizations/security/get-started-stakeholder.md) so that they can view work items and dashboards.  
 
 
 <a id="email-print-send-links"></a>

@@ -24,9 +24,9 @@ If someone is not already a member of your account, when you add them to a proje
 
 ## Additional groups & scopes
 
-Under the hood, a project member belongs to one or more [project-related security groups](../security/about-security-identity.md#security-groups-and-permissions) such as "Project Valid Users" and "Project Contributors".
+Under the hood, a project member belongs to one or more [project-related security groups](../organizations/security/about-security-identity.md#security-groups-and-permissions) such as "Project Valid Users" and "Project Contributors".
 That person is also a member of an account-level group known as "Project Collection Valid Users".
-Also, that person's identity appears in the [identity service](../security/about-security-identity.md#authentication) which backs the account.
+Also, that person's identity appears in the [identity service](../organizations/security/about-security-identity.md#authentication) which backs the account.
 Accounts backed by [Azure Active Directory](/azure/active-directory/) can have [native identities](/azure/active-directory/add-users-azure-active-directory) or [guest identities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), which grant different levels of access.
 
 ## Account-level resources

@@ -86,14 +86,14 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Kanban board controls](kanban-board-controls.md) 
 - [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json) 
-- [Permissions for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)      
+- [Permissions for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)      
 ::: moniker-end  
   
 ::: moniker range="tfs-2013"
 ## Reference   
 
 - [Work item field index](../work-items/guidance/work-item-field.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json) 
-- [Permissions for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)      
+- [Permissions for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)      
 ::: moniker-end  
 
 ## Resources 
