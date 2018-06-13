@@ -96,7 +96,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 ## Reference
-- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)
 - [Work item form controls](work-item-form-controls.md) 
 - [Keyboard shortcuts for work item forms & the Work Items page](work-item-form-keyboard-shortcuts.md)       
 - [Work item field index](guidance/work-item-field.md)
@@ -105,7 +105,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ## Reference
-- [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
+- [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json)  
 - [Work item field index](guidance/work-item-field.md)
 
 ::: moniker-end

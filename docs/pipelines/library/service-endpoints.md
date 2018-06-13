@@ -219,7 +219,7 @@ Defines and secures a connection to a Docker host.
 | Certificate | Required. A client certificate to use to authenticate with the host. |
 | Key | Required. The key specified in the Docker key.pem file. |
 
-Ensure you protect your connection to the Docker host. [Learn more](https://docs.docker.com/engine/security/https/).
+Ensure you protect your connection to the Docker host. [Learn more](https://docs.docker.com/engine/organizations/security/https/).
 
 [How do I create a new service endpoint?](#create-new)
  

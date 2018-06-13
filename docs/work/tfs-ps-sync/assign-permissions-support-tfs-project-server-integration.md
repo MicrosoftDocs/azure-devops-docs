@@ -26,7 +26,7 @@ ms.date: 03/16/2017
 ###  <a name="assign_perm"></a> Do you have all the permissions you need to assign permissions?  
  Make sure you belong to the following groups:  
   
--   **Team Foundation Administrators** group, required to grant TFS permissions. You must also have access to the **Team Foundation Administration Console**. [Add accounts to administer TFS](../../security/set-project-collection-level-permissions.md).  
+-   **Team Foundation Administrators** group, required to grant TFS permissions. You must also have access to the **Team Foundation Administration Console**. [Add accounts to administer TFS](../../organizations/security/set-project-collection-level-permissions.md).  
   
 -   **Administrator for Project Web App**  for each instance of PWA, required to grant Project Server permissions. You must also have access to Project Server through PWA.  
   
@@ -376,7 +376,7 @@ ms.date: 03/16/2017
   
 -   **Reader** role: Users who modify enterprise project plans that are mapped to a team project.  
   
- For more info, see [Add users to team projects](../../security/add-users-team-project.md).
+ For more info, see [Add users to team projects](../../organizations/security/add-users-team-project.md).
   
 ## Permission checklist  
  Use the following checklist to review that all permissions have been set according to your version and authentication mode. Remember that permissions must be granted to accounts for all PWA instances, team projects, and project collections that will participate in data synchronization between TFS and Project Server. If you customize a role or security categories for a role, you might inadvertently remove required permissions.  

@@ -178,7 +178,7 @@ When alternative authentication is setup for your user account, you'll now recei
 2. Registering an SSH key
 3. Enabling basic authentication
 
-See the [authentication](/vsts/security/about-security-identity?view=vsts#authentication) documentation for more information.
+See the [authentication](/vsts/organizations/security/about-security-identity?view=vsts#authentication) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![VSTS PAT added email](_img/135_02.png)

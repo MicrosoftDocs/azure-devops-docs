@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 For [TFS](https://www.visualstudio.com/tfs/) you pay per user for [Basic](https://www.visualstudio.com/team-services/compare-features/) features like Code or Agile Planning.
 Users who have a [Visual Studio subscription](https://www.visualstudio.com/vs/pricing/) are free
 to add because Basic features are included in their subscription as a benefit.
-It's also free to add [stakeholders](../security/get-started-stakeholder.md) to TFS, which provides access to a limited set of features.
+It's also free to add [stakeholders](../organizations/security/get-started-stakeholder.md) to TFS, which provides access to a limited set of features.
 
 >[!NOTE]
 > You will need TFS 2015.2 or later to pay for your TFS users monthly via the Visual Studio Marketplace, which uses Azure for billing.
@@ -34,7 +34,7 @@ You can also buy [Test Manager](https://marketplace.visualstudio.com/items?itemN
 [Follow these steps to pay monthly for TFS Test hub access](#test-hub).
 
 To learn more about requirements to access TFS or the Test hub,
-see [Change access levels](../security/change-access-levels.md).
+see [Change access levels](../organizations/security/change-access-levels.md).
 For more about TFS licensing, see the
 [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
 
@@ -50,7 +50,7 @@ For more about TFS licensing, see the
 
     Though these users will get invited to your VSTS account, you're not required to use VSTS.
 
-5. As TFS administrator, now [add these same users to TFS](../security/add-users-team-project.md#add-users-team-project), and [give them the necessary access](../security/change-access-levels.md).
+5. As TFS administrator, now [add these same users to TFS](../organizations/security/add-users-team-project.md#add-users-team-project), and [give them the necessary access](../organizations/security/change-access-levels.md).
 
     >[!NOTE]
     > TFS doesn't detect what happens in VSTS so make sure to add these users to TFS and assign them the Basic access level.
@@ -74,7 +74,7 @@ For more about TFS licensing, see the
     >[!NOTE]
     > These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your VSTS account.
 
-5. As TFS administrator, [add these same users to TFS](../security/add-users-team-project.md#add-users-team-project). [Give them Advanced access](../security/change-access-levels.md) so they can use the Test hub.
+5. As TFS administrator, [add these same users to TFS](../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Advanced access](../organizations/security/change-access-levels.md) so they can use the Test hub.
 
     >[!NOTE]
     > TFS doesn't detect what happens in VSTS so make sure these users get Advanced access in TFS.
@@ -100,6 +100,6 @@ A: You get many benefits, for example:
 
 ### Q: Where can I learn more about TFS CALs and access levels for the Test hub?
 
-A: See [Change access levels](../security/change-access-levels.md).
+A: See [Change access levels](../organizations/security/change-access-levels.md).
 
 <!-- ENDSECTION -->

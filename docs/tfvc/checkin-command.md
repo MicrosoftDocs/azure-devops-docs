@@ -21,7 +21,7 @@ Checks in your pending changes to files or folders to the server.
 
 Almost every change that you make to the files on your dev machine is stored in your workspace as a [pending change](develop-code-manage-pending-changes.md) until you check it in. When you check in your changes, they are stored as a [changeset](find-view-changesets.md) on the server. Although the **Checkin** command provides a different user interface than the one you can use in Visual Studio (see [Check in your work to the team's codebase](check-your-work-team-codebase.md)), the process is fundamentally the same.
 
-**Requirements**: See [Permissions and groups reference](../security/permissions.md).
+**Requirements**: See [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf checkin [/author:author name] [/comment:("comment"|@comment file)] 
     [/noprompt] [/notes:("Note Name"="note text"|@notefile)] 
@@ -42,7 +42,7 @@ Almost every change that you make to the files on your dev machine is stored in 
 <tr>
 <td><p><strong>/author</strong>:<i>author name</i></p></td>
 <td><p>Identifies the author of the pending changes so that one user can check in changes on behalf of another user.</p>
-<p>Requires the <strong>CheckinOther </strong>permission. See [Permissions and groups reference](../security/permissions.md)</p></td>
+<p>Requires the <strong>CheckinOther </strong>permission. See [Permissions and groups reference](../organizations/security/permissions.md)</p></td>
 </tr>
 <tr>
 <td><p><strong>/bypass</strong></p></td>

@@ -172,7 +172,7 @@ Other related topics or resources:
 - (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
 - (VSTS)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
   
-To get added as an administrator, see [Add administrators](../../security/set-project-collection-level-permissions.md).
+To get added as an administrator, see [Add administrators](../../organizations/security/set-project-collection-level-permissions.md).
 
 
 <a id="witadmin">  </a>  
@@ -181,7 +181,7 @@ To get added as an administrator, see [Add administrators](../../security/set-pr
 > [!NOTE]    
 >If you use the Hosted XML process model, you need to import and export the process template used by your team project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-0. If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).   
+0. If you don't have administration permissions for your team project, [get them](../../organizations/security/set-project-collection-level-permissions.md).   
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
 0. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  

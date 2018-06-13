@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 Discards one or more pending changes to files or folders.
 
-**Requirements:** See [Permissions and groups reference](../security/permissions.md).
+**Requirements:** See [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf undo [/workspace:workspacename[;workspaceowner]]
     [/recursive] itemspec [/noprompt] [/login:username,[password]]

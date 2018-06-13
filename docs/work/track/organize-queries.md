@@ -20,7 +20,7 @@ ms.date: 03/20/2018
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders.
  
 ## Prerequisites
-If you're not a member of the Project Administrators group, [get added](../../security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.  
+If you're not a member of the Project Administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.  
 
 
 > [!NOTE]  
@@ -97,7 +97,7 @@ You add query folders from the **Work>Queries** page.
 ### Add a query to the dashboard or share it with your team 
 To add a query to the home page or a dashboard, open the ![Actions icon](../_img/icons/actions-icon.png) (or ![Context Menu Icon](_img/22.png)) context menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite.   
 
-Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
 You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../scale/manage-team-assets.md). 
 
@@ -134,4 +134,4 @@ In Team Explorer for Eclipse, choose **Move** from the context menu and select t
 ## Related articles
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 - [Set query permissions](set-query-permissions.md)
-- [Set project-level permissions](../../security/set-project-collection-level-permissions.md)
+- [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)

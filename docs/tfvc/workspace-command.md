@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 Lets you create, delete, view, or modify properties and mappings associated with a workspace.
 
 **Required Permissions**  
-To modify or delete an existing workspace, you must be the owner or have the global **Administer workspaces** permission set to **Allow**. To create a workspace, you must have the global **Create a workspace** permission set to **Allow**. To create workspaces for other users, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To modify or delete an existing workspace, you must be the owner or have the global **Administer workspaces** permission set to **Allow**. To create a workspace, you must have the global **Create a workspace** permission set to **Allow**. To create workspaces for other users, you must have the **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf workspace /new [/noprompt] [/template:workspacename[;workspaceowner]]
      [/computer:computername] [/comment:("comment"|@comment file)]
@@ -101,7 +101,7 @@ The following example opens the **Add Workspace** dialog box and creates a new w
 
     c:\projects>tf workspace /new /collection:http://myserver:8080/tfs/DefaultCollection
 
-The following example creates a new workspace called Beta1 and assigns jenh as the workspace owner. You must have the AdminWorkspaces permission to assign ownership of a new workspace to another user. For more information on security permissions, see [Permissions and groups reference](../security/permissions.md).
+The following example creates a new workspace called Beta1 and assigns jenh as the workspace owner. You must have the AdminWorkspaces permission to assign ownership of a new workspace to another user. For more information on security permissions, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     c:\projects>tf workspace /new Beta1;jenh
 

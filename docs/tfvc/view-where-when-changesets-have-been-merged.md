@@ -29,7 +29,7 @@ Tracking Changeset window shows branches to which a changeset has merged
 
 **Required Permissions**
 
-To perform these procedures, your **Read** permission must be set to **Allow** for the branches with which you are working. For more information about permissions, see [Permissions and groups reference](../security/permissions.md).
+To perform these procedures, your **Read** permission must be set to **Allow** for the branches with which you are working. For more information about permissions, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ## View the Tracking Changeset Window
 
@@ -101,7 +101,7 @@ You can get information about when a changeset was merged to one or more branche
 
 **Required Permissions**
 
-To perform these procedures, your **Manage branch object** permission must be set to **Allow**. For more information about permissions, see [Permissions and groups reference](../security/permissions.md).
+To perform these procedures, your **Manage branch object** permission must be set to **Allow**. For more information about permissions, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To display the Timeline View of a changeset
 

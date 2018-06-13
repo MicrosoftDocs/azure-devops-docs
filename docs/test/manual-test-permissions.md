@@ -19,12 +19,12 @@ monikerRange: '>= tfs-2015'
 You can access most manual testing features when you are added as a team member or a member
 of the Contributors group for a project. The most common built-in groups include Readers,
 Contributors, and Project Administrators. For a simplified view of all default permissions
-assigned to built-in groups, see [Default permissions and access](../security/permissions-access.md).  
+assigned to built-in groups, see [Default permissions and access](../organizations/security/permissions-access.md).  
 
-Permissions can be given at [Project level](../security/permissions.md#project-level) and at [Area path level](../security/permissions.md#area-path-object-level). 
+Permissions can be given at [Project level](../organizations/security/permissions.md#project-level) and at [Area path level](../organizations/security/permissions.md#area-path-object-level). 
 
 Stakeholders have limited access to manual testing features.
-To learn more, see [About access levels](../security/access-levels.md).
+To learn more, see [About access levels](../organizations/security/access-levels.md).
 
 | Task | Stakeholders | Readers | Contributors | Account Owner &amp;<br/>Project Admins |
 | --- |:---:|:---:|:---:|:---:| 

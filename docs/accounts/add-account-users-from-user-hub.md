@@ -41,11 +41,11 @@ who also get Basic features, and in some cases, additional features with specifi
 
 ## How *access* differs from *permissions*
 
-Access levels control which features are available to users, i.e. the full set of account resources that a user is entitled to access. Permissions then control which of these account resources the user can act on. To learn more, see [Default permissions and access](../security/permissions-access.md).
+Access levels control which features are available to users, i.e. the full set of account resources that a user is entitled to access. Permissions then control which of these account resources the user can act on. To learn more, see [Default permissions and access](../organizations/security/permissions-access.md).
 
 ## Prerequisites
 
-You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).
+You'll need [VSTS project collection administrator or account owner permissions](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).
 
 ## Add users to your VSTS account
 
@@ -75,9 +75,9 @@ Provide others access to your account by adding their email address.
    ![Web portal, account admin context, Add new users dialog](../user-guide/_img/invite-users-add-user-dialog.png)
 
    * **Users**: Enter the Microsoft account (MSA) email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that in MSAs, the email addresses display in red.
-    * **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../security/access-levels.md).
+    * **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../organizations/security/access-levels.md).
    * **Add to projects**: Select the project that you named in the previous procedure.
-   * **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
+   * **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../organizations/security/permissions-access.md).
 
 4. Choose **Add** to complete your invitation.
 
@@ -100,8 +100,8 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 ## Related notes
 
 * [Connect to a team project](../user-guide/connect-team-projects.md)
-* [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
-* [Grant or restrict access to select features and functions](../security/restrict-access.md)
+* [Change individual permissions, grant select access to specific functions](../organizations/security/change-individual-permissions.md)
+* [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)
 * [Delete users from VSTS](delete-account-users.md)
 * [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
 * [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)

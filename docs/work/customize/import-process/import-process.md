@@ -79,7 +79,7 @@ Migration to VSTSis a great time to think about process alignment across your or
 Prior to importing a process, you'll want to [customize it to support your work tracking needs](customize-process.md). 
 Name your process something other than Scrum, Agile, or CMMI. These system processes are locked and you're prevented from overwriting them.   
 
-1. Only administrators can import process so if you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../../security/set-project-collection-level-permissions.md). 
+1. Only administrators can import process so if you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../../organizations/security/set-project-collection-level-permissions.md). 
 
 2.  From the Process tab, choose import and then browse to the zip file of the process you've customized.  
   

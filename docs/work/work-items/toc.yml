@@ -33,7 +33,7 @@
   - name: Copy/clone 
     href: ../backlogs/copy-clone-work-items.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
   - name: Work as a Stakeholder
-    href: ../../security/get-started-stakeholder.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+    href: ../../organizations/security/get-started-stakeholder.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Choose a process
@@ -126,13 +126,13 @@
   - name: Switch project or team focus
     href: ../../organizations/settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: "Manage permissions (Security)"
-    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Reference
   items:
   - name: Changes made to process templates
     href: ../work-items/guidance/changes-to-process-templates.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: "Default permissions (Security)"
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Work item form controls 
     href: work-item-form-controls.md 
   - name: Keyboard shortcuts 

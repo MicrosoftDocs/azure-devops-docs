@@ -81,7 +81,7 @@ TFS 2012
 Feedback
 </td>
 <td>
-Adds the Feedback Request and Feedback Response WITs and categories to the team project. These items support [feedback requests and responses](../../feedback/get-feedback.md). <br/>
+Adds the Feedback Request and Feedback Response WITs and categories to the team project. These items support [feedback requests and responses](../../project/feedback/get-feedback.md). <br/>
 To manually add them to a team project, see [Add features manually](add-features-manually.md). 
 </td>
 <td>

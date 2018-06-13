@@ -41,7 +41,7 @@ There are plenty of things that can take up your time as a developer: reproducin
 
 Team Foundation Version Control (TFVC) is a centralized version control system. Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
-TFVC lets you apply [granular permissions](../security/permissions.md) and restrict access down to a file level. Because your team checks in all their work into your Team Foundation server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
+TFVC lets you apply [granular permissions](../organizations/security/permissions.md) and restrict access down to a file level. Because your team checks in all their work into your Team Foundation server, you can easily audit changes and identify which user checked in a [changeset](find-view-changesets.md). By using [compare](compare-files.md) and [annotate](view-file-changes-using-annotate.md) you can identify the exact changes that they made.
 
 ## What do you want to do?
 
@@ -99,7 +99,7 @@ TFVC lets you apply [granular permissions](../security/permissions.md) and restr
 
 - [Use Team Foundation version control commands](use-team-foundation-version-control-commands.md)     
 
-- [Learn about TFVC permissions](../security/permissions.md#tfvc)    
+- [Learn about TFVC permissions](../organizations/security/permissions.md#tfvc)    
 
 We are not currently republishing the following sections. However, you can read the Visual Studio 2010 version of this guidance.
 

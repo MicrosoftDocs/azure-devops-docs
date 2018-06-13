@@ -41,7 +41,7 @@ The following steps provide support for the test experience available with TFS 2
   
 1.  **Import the test plan and test suite WIT definitions**.  
   
-    0.  If you don't have administrative permissions, [get them](../../../security/set-project-collection-level-permissions.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
+    0.  If you don't have administrative permissions, [get them](../../../organizations/security/set-project-collection-level-permissions.md). To perform all the update steps, you need to be a member of the **Team Foundation Administrators** security group, and an administrator on the application-tier server.  
   
     0.  [Download the latest process template](../../work-items/guidance/manage-process-templates.md).  
   

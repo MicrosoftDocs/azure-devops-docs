@@ -111,7 +111,7 @@ A:  Yes, you can use the same Azure subscription for billing across multiple VST
 
 ### Q: How do I find a project collection administrator?
 
-A: You can find your [project collection administrator](../security/set-project-collection-level-permissions.md) in your VSTS account's security settings.
+A: You can find your [project collection administrator](../organizations/security/set-project-collection-level-permissions.md) in your VSTS account's security settings.
 
 1. Go to your VSTS account's security settings.
 

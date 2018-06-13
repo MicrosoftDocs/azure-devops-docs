@@ -32,7 +32,7 @@ You can change the name of a team project from its administration overview page.
 
 	![Enter a new project name](_img/rename-team-project/projectrename1.png)
 	
-	If you don't see the textbox appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../security/set-project-collection-level-permissions.md) to the Project Administrators group.
+	If you don't see the textbox appear, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../organizations/security/set-project-collection-level-permissions.md) to the Project Administrators group.
 
 ### From the project collection administration page
 
@@ -44,7 +44,7 @@ You can also change the name of a team project from the project collection admin
 
 	![Rename menu item in the team project context menu on the project collection administration page](_img/rename-team-project/collection-rename.png)
 
-	If the rename action is disabled, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../security/set-project-collection-level-permissions.md) to the Project Administrators group.
+	If the rename action is disabled, then you're not a member of the Project Administrators group for that particular project. Learn how to [get added](../organizations/security/set-project-collection-level-permissions.md) to the Project Administrators group.
 
 
 <a id="more-work"></a>

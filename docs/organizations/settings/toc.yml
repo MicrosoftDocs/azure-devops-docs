@@ -25,11 +25,11 @@
   - name: Switch team context
     href: switch-team-context.md
   - name: "Manage permissions & access"
-    href: ../../security/set-permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
 - name: Reference
   items:
   - name: "Permissions & access for work tracking"
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Customization

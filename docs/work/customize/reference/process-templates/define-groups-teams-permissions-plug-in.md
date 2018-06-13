@@ -17,7 +17,7 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-You can define security groups to control access to functional areas within a team project. In addition to the [default security groups](../../../../security/permissions.md), you can configure a team project's initial groups, group members, and security permissions by customizing the Groups and Permissions plug-in. With this plug-in, you can define groups, teams, add groups and users as members to groups, and grant permissions to the groups.  
+You can define security groups to control access to functional areas within a team project. In addition to the [default security groups](../../../../organizations/security/permissions.md), you can configure a team project's initial groups, group members, and security permissions by customizing the Groups and Permissions plug-in. With this plug-in, you can define groups, teams, add groups and users as members to groups, and grant permissions to the groups.  
   
 This topic describes the syntax structure of the **groups**, **iterationPath**, **members**, **permissions**, and **teamsettings** elements that are used in the file for the Groups and Permissions plug-in. For more information about how to use these elements, see [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md).  
   

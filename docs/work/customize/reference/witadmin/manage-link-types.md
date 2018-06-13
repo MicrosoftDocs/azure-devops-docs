@@ -35,7 +35,7 @@ You manage the link types defined for a team project collection by using the fol
 -   To list or export link types, you must have your **View project-level information** permission for a team project in the collection set to **Allow**.    
 -   To delete, import, or reactive link types, you must be a member of the **Project Collection Administrators** security group or have your **Manage work item link types** permission set to **Allow**.  
   
-For more information, see [Add an administrator](../../../../security/set-project-collection-level-permissions.md).  
+For more information, see [Add an administrator](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]
 >  Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**.  For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  

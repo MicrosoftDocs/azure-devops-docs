@@ -23,7 +23,7 @@ Permission settings are in the form of either **Grant** or **Deny**. **Deny** al
 
 **Required Permissions**
 
-To complete this task, you must have the **Manipulate security settings** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To complete this task, you must have the **Manipulate security settings** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To set permissions for users or groups
 

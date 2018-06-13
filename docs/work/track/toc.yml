@@ -73,7 +73,7 @@
   - name: WIQL syntax
     href: wiql-syntax.md
   - name: "Default permissions (Security)"
-    href: ../../security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: REST API, Queries
     href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/queries 
   - name: REST API, Wiql
