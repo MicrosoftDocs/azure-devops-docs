@@ -29,7 +29,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
  
 
 ## Step-by-Step Tutorials  
-- [Follow work & pull requests](../collaborate/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Follow work & pull requests](../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
 - [Set your personal notifications](manage-personal-notifications.md)
 
 
@@ -42,7 +42,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 ## How-to Guides  
 - [Use @mentions to further discussion](at-mentions.md)
 - [Use #ID to link to work items](add-links-to-work-items.md) 
-- [Set team notifications](../collaborate/manage-team-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Set team notifications](manage-team-notifications.md)
 - [Microsoft Teams integration](../service-hooks/services/teams.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
 - [Get notified with Campfire](../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
 - [Get notified with Slack](../service-hooks/services//slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
@@ -51,7 +51,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 
 - [Default and supported notifications](oob-built-in-notifications.md)
 - [FAQs](faq-notifications.md) 
-- [Default permissions and access set for collaboration tools](../collaborate/collaboration-tool-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
 
 
 ## Resources 

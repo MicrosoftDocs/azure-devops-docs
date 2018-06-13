@@ -131,7 +131,7 @@ Uploading a process template requires that it pass the following validation chec
 
 - Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
 Also, names cannot contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;<br/>
-For additional restrictions, see [Naming restrictions](../../../collaborate/naming-restrictions.md). 
+For additional restrictions, see [Naming restrictions](../../../organizations/settings/naming-restrictions.md). 
 - Process template folders can't contain any .exe files. If they do, the process template may upload successfully, however project creation will fail.
 - Process template total size should be 2 GB or less, or project creation will fail.
 - The upload process performs a partial verification check to make sure that the XML of each process template XML file is valid. If you receive any errors when you try to upload the process template, review the XML to determine the cause of the error. Note that duplicate tags in an XML file can cause errors. If there is no error in the XML, check to make sure all the appropriate files are included in your process template in the correct folder locations.

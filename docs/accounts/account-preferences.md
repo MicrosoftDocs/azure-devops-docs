@@ -50,7 +50,7 @@ Choose **edit** to change a setting. Choose the Locale tab to change a locale pr
 > [!div class="nextstepaction"]
 > [Work effectively from your account hub](../user-guide/account-home-pages.md)
 > or
-> [Set favorites](../collaborate/set-favorites.md)
+> [Set favorites](../project/navigation/set-favorites.md)
 
 
   

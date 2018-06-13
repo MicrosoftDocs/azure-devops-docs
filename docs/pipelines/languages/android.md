@@ -71,7 +71,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterTestV1.1.md)]
+[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterTestV1.md)]
 
 ::: moniker-end
 
@@ -81,6 +81,6 @@ Add the following YAML to distribute an app to a group of testers or beta users,
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterDistributeV1.1.md)]
+[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterDistributeV1.md)]
 
 ::: moniker-end

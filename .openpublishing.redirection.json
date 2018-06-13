@@ -1102,12 +1102,17 @@
     },
     {
       "source_path": "docs/work/productivity/collaborate-in-a-team-room.md",
-      "redirect_url": "/vsts/collaborate/collaborate-in-a-team-room",
+      "redirect_url": "/vsts/notifications/collaborate-in-a-team-room",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/collaborate-in-a-team-room.md",
+      "redirect_url": "/vsts/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/track/follow-work-items.md",
-      "redirect_url": "/vsts/collaborate/follow-work-items",
+      "redirect_url": "/vsts/work/work-items/follow-work-items",
       "redirect_document_id": false
     },
     {
@@ -1117,12 +1122,12 @@
     },
     {
       "source_path": "docs/git/markdown-reference.md",
-      "redirect_url": "/vsts/reference/markdown-guidance",
+      "redirect_url": "/vsts/project/wiki/markdown-guidance",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/connect/rate-limits.md",
-      "redirect_url": "/vsts/reference/rate-limits",
+      "redirect_url": "/vsts/integrate/concepts/rate-limits",
       "redirect_document_id": false
     },
     {
@@ -1212,7 +1217,12 @@
     },
     {
       "source_path": "docs/work/customize/naming-restrictions.md",
-      "redirect_url": "/vsts/collaborate/naming-restrictions",
+      "redirect_url": "/vsts/organizations/settings/naming-restrictions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/naming-restrictions.md",
+      "redirect_url": "/vsts/organization/settings/naming-restrictions",
       "redirect_document_id": false
     },
     {
@@ -2667,7 +2677,7 @@
     },
     {
       "source_path": "docs/get-started/collaborate-in-the-team-room-vs.md",
-      "redirect_url": "/vsts/collaborate/collaborate-in-a-team-room",
+      "redirect_url": "/vsts/notifications/collaborate-in-a-team-room",
       "redirect_document_id": false
     },
     {
@@ -2717,7 +2727,7 @@
     },
     {
       "source_path": "docs/service-hooks/services/manage-team-notifications.md",
-      "redirect_url": "/vsts/collaborate/manage-team-notifications",
+      "redirect_url": "/vsts/notifications/manage-team-notifications",
       "redirect_document_id": false
     },
     {
@@ -4342,32 +4352,32 @@
     },
     {
       "source_path": "docs/reference/markdown-guidance.md",
-      "redirect_url": "/vsts/collaborate/markdown-guidance",
+      "redirect_url": "/vsts/project/wiki/markdown-guidance",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/keyboard-shortcuts.md",
-      "redirect_url": "/vsts/collaborate/keyboard-shortcuts",
+      "redirect_url": "/vsts/project/navigation/keyboard-shortcuts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/integration-bestpractices.md",
-      "redirect_url": "/vsts/collaborate/integration-bestpractices",
+      "redirect_url": "/vsts/integrate/concepts/integration-bestpractices",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/naming-restrictions.md",
-      "redirect_url": "/vsts/collaborate/naming-restrictions",
+      "redirect_url": "/vsts/organizations/settings/naming-restrictions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/rate-limits.md",
-      "redirect_url": "/vsts/collaborate/rate-limits",
+      "redirect_url": "/vsts/integrate/concepts/rate-limits",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/reference/wiql-syntax.md",
-      "redirect_url": "/vsts/collaborate/wiql-syntax",
+      "redirect_url": "/vsts/work/track/wiql-syntax",
       "redirect_document_id": false
     },
     {
@@ -5302,7 +5312,7 @@
     },
     {
       "source_path": "docs/work/productivity/productivity-tips.md",
-      "redirect_url": "/vsts/collaborate/index",
+      "redirect_url": "/vsts/user-guide/account-home-pages",
       "redirect_document_id": false
     },
     {
@@ -8179,6 +8189,131 @@
       "source_path": "docs/settings/switch-team-context.md",
       "redirect_url": "/vsts/organizations/settings/switch-team-context",
       "redirect_document_id": false 
+    }, 
+    {
+      "source_path": "docs/collaborate/keyboard-shortcuts.md",
+      "redirect_url": "/vsts/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/mobile-work.md",
+      "redirect_url": "/vsts/project/navigation/mobile-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/preview-features.md",
+      "redirect_url": "/vsts/project/navigation/preview-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/set-favorites.md",
+      "redirect_url": "/vsts/project/navigation/set-favorites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/manage-team-notifications.md",
+      "redirect_url": "/vsts/notifications/manage-team-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiql-syntax.md",
+      "redirect_url": "/vsts/work/track/wiql-syntax",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/follow-work-items.md",
+      "redirect_url": "/vsts/work/work-items/follow-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/about-readme-wiki.md",
+      "redirect_url": "/vsts/project/wiki/about-readme-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/add-edit-wiki.md",
+      "redirect_url": "/vsts/project/wiki/add-edit-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/collaboration-tool-permissions.md",
+      "redirect_url": "/vsts/project/wiki/wiki-readme-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/filter-print-wiki.md",
+      "redirect_url": "/vsts/project/wiki/filter-print-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/index.md",
+      "redirect_url": "/vsts/project/wiki/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/manage-readme-wiki-permissions.md",
+      "redirect_url": "/vsts/project/wiki/manage-readme-wiki-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/markdown-guidance.md",
+      "redirect_url": "/vsts/project/wiki/markdown-guidance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/migrate-extension-wiki-pages.md",
+      "redirect_url": "/vsts/project/wiki/migrate-extension-wiki-pages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/project-vision-status.md",
+      "redirect_url": "/vsts/project/wiki/project-vision-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/provisioned-vs-published-wiki.md",
+      "redirect_url": "/vsts/project/wiki/provisioned-vs-published-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/publish-repo-to-wiki.md",
+      "redirect_url": "/vsts/project/wiki/publish-repo-to-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/search-wiki.md",
+      "redirect_url": "/vsts/project/wiki/search-wiki",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-create-repo.md",
+      "redirect_url": "/vsts/project/wiki/wiki-create-repo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-file-structure.md",
+      "redirect_url": "/vsts/project/wiki/wiki-file-structure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-keyboard-shortcuts.md",
+      "redirect_url": "/vsts/project/wiki/wiki-keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-select-unpublish-versions.md",
+      "redirect_url": "/vsts/project/wiki/wiki-select-unpublish-versions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-update-offline.md",
+      "redirect_url": "/vsts/project/wiki/wiki-update-offline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/wiki-view-history.md",
+      "redirect_url": "/vsts/project/wiki/wiki-view-history",
+      "redirect_document_id": false
     }
   ]
 }

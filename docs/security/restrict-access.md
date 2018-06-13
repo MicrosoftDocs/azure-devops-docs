@@ -144,7 +144,7 @@ For an account or collection, Edit instance-level (or collection-level) informat
 <li>[Manage Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)</li>
 <li>[Manage Git branch permissions](set-git-tfvc-repository-permissions.md)</li>
 <li>[Administer build and release permissions](../pipelines/policies/set-permissions.md)</li>
-<li>[Manage Wiki permissions](../collaborate/manage-readme-wiki-permissions.md).</li>
+<li>[Manage Wiki permissions](../project/wiki/manage-readme-wiki-permissions.md).</li>
 </td>
 </tr>
 

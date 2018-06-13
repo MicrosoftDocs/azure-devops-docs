@@ -28,7 +28,9 @@ None
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/PublishBuildArtifacts.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/PublishBuildArtifactsV1.md)]
 
 ::: moniker-end
 

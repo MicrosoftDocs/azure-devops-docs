@@ -158,7 +158,7 @@
   - name: Command reference
     href: command-prompt.md
   - name: Format comments with markdown
-    href: ../collaborate/markdown-guidance.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    href: ../project/wiki/markdown-guidance.md?toc=/vsts/git/toc.json&bc=/vsts/git/breadcrumb/toc.json
   - name: Frequently asked questions
     href: tutorial/howto.md
   - name: History

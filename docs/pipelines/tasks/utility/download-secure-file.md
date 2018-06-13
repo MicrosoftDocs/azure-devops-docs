@@ -31,7 +31,9 @@ Note that if you use two Download Secure File tasks in the same definition with 
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/DownloadSecureFileV1.1.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/DownloadSecureFileV1.md)]
 
 ::: moniker-end
 

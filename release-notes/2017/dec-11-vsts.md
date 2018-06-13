@@ -60,7 +60,7 @@ This can also be used as a good way to learn YAML quickly. You can create a new 
 ### Enhancements to multi-phase builds
 
 > [!IMPORTANT]
-> To use this capability, you must have the **Build with multiple queues** [preview feature](/vsts/collaborate/preview-features) enabled on your account.
+> To use this capability, you must have the **Build with multiple queues** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
 
 A few weeks ago, we added phases to build definitions. You’ve been able to use phases to organize your build steps and to target different agents using different demands for each phase. In this Update, we’ve added several capabilities to build phases so that you can now:
 

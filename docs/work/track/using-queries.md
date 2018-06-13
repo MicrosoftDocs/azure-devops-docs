@@ -190,7 +190,7 @@ You may notice and wonder why the contents of the task board differ from those l
 From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
 
 See also:
-- [Syntax for the Work Item Query Language (WIQL)](../../reference/wiql-syntax.md)  
+- [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
  
 

@@ -25,7 +25,9 @@ gulp
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/GulpV0.0.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/GulpV0.md)]
 
 ::: moniker-end
 

@@ -165,7 +165,7 @@
   - name: Work tracking object limits
     href: object-limits.md
   - name: Naming restrictions
-    href: ../../collaborate/naming-restrictions.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+    href: ../../organizations/settings/naming-restrictions.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Work tracking XML element reference
     items:
     - name: XML element reference

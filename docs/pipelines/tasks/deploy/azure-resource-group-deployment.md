@@ -17,7 +17,9 @@ monikerRange: 'vsts'
 
 ::: moniker range="vsts"
 
-[!INCLUDE [temp](../_shared/yaml/AzureResourceGroupDeploymentV2.2.md)]
+## YAML snippet
+
+[!INCLUDE [temp](../_shared/yaml/AzureResourceGroupDeploymentV2.md)]
 
 ::: moniker-end
 
