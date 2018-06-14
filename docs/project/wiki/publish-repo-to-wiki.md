@@ -29,9 +29,9 @@ By publishing your markdown files to a wiki, you gain these benefits:
 - Manage content in the same way you manage your code base
 - Readers can search the wiki easily using the Wiki search feature 
 
-Use this topic to learn how to: 
+Use this topic to learn how to:�
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Open the **Wiki** hub
 > * Publish a Git repo to a wiki 
 > * Edit pages of a published wiki
@@ -54,7 +54,7 @@ In order to perform these steps, you'll want to understand the underlying struct
 * You must have the permission **Create repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
 * Anyone who has permissions to contribute to the Git repository can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki. 
 
-[!INCLUDE [temp](_shared/open-wiki-hub.md)]
+[!INCLUDE�[temp](_shared/open-wiki-hub.md)]
 
 
 ## Publish a Git repository to a wiki

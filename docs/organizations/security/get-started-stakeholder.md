@@ -69,7 +69,7 @@ Enter a title and then save the work item. Before you can change the State from 
 <img src="../../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
 
 >[!NOTE]  
->A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item. Â Â 
+>A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item.   
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"

@@ -172,7 +172,7 @@ From here you can explore or download the artifacts.
 
 You can also use Release Management to deploy your app using the artifacts that you've published. See [Artifacts in Release Management](../release/artifacts.md).
 
-## Q&A
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 <h3 id="tfs-2015">How do I publish artifacts from TFS 2015 RTM?</h3>

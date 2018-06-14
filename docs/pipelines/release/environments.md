@@ -171,7 +171,7 @@ for an environment in a release definition. You can:
 
 ![Defining options and policies](_img/environments-03.png)
 
-## Q&A
+## Q & A
 
 ### Why do we call these _environments_ instead of _stages_?
 

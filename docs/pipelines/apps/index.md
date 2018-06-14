@@ -112,7 +112,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 
 * [Using the Azure Portal to deploy and manage your Azure resources](https://azure.microsoft.com/en-gb/documentation/articles/resource-group-portal/)
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

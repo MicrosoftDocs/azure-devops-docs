@@ -239,7 +239,7 @@ release definition in Release Management.
    improvements to the extension, visit the 
    [DevTest Labs feedback forum](https://feedback.azure.com/forums/320373-azure-devtest-labs).  
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

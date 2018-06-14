@@ -40,8 +40,8 @@ One of the first things you'll notice is that with a provisioned wiki, you add a
 
 This is reflected in the menu options that are unavailable for the wiki pages as shown in the following illustrations. As you can see, several options aren't supported for the publish as code wiki pages. 
 
-> [!div class="mx-tdCol2BreakAll"]Â Â 
-> |Â Â Provisoned wikiÂ Â | Publish code as wiki |
+> [!div class="mx-tdCol2BreakAll"]
+> |  Provisoned wiki  | Publish code as wiki |
 > |------|---------|
 > | ![Provisioned wiki page menu options](_img/wiki/diff-menu-options-provisioned.png) | ![Publish code page menu options](_img/wiki/diff-menu-options.png) |
 
@@ -64,8 +64,8 @@ Both a provisioned wiki and publish as code wikis support the following features
 
 The following table summarizes those operations or features that may differ depending on the wiki type.  
 
-> [!div class="mx-tdCol2BreakAll"]Â Â  
-> |Operation |Â Â Provisoned wikiÂ Â | Publish code as wiki |
+> [!div class="mx-tdCol2BreakAll"] 
+> |Operation |  Provisoned wiki  | Publish code as wiki |
 > |--------|--------------|--------------|  
 > |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | ![](_img/checkmark.png) |
 > |[Add or edit pages from the **Wiki** hub](add-edit-wiki.md) |![](_img/checkmark.png) |  |

@@ -190,7 +190,7 @@ Save your build definition, and you are all set! The build agent will now be abl
 
 ---
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
