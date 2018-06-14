@@ -5,7 +5,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 04/04/2017
 ---
 
@@ -59,7 +60,7 @@ You use categories to accomplish the following operations:
 -   Test Suite Category  
 -   Hidden Types Category  
   
-Most of these categories are self-explanatory, and most only contain one WIT within the category. The exception to this rule is the Hidden Types Category.  
+Most of these categories are self-explanatory, and mostly contain one WIT within the category. The exception to this rule is the Hidden Types Category.  
   
 If you have created WITs that act in similar ways and you want to treat them in similar ways as those defined by the above categories, then you will want to add them to the category. For example, if you have defined one or more types of bugs, then you might want to add those types to the Bug Category. In this way, the process configuration will automatically treat these bug types as they do the standard bug WIT. Or, you can customize the Requirement Category to include two or more WITs which will then appear on the product backlog.  
   
