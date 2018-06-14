@@ -44,7 +44,7 @@ Create a custom security group at the project-level or the collection-level. The
 
     <img src="_img/add-users/choose-team-project-click-gear-icon.png" alt="VSTS, TFS 2017, Team Project hub, Click gear icon to open the Admin context" style="border: 1px solid #C3C3C3;" /> 
 
-2. Open the **Security** page and and choose **Create group** to open the dialog for adding a group.
+2. Open the **Security** page and choose **Create group** to open the dialog for adding a group.
 
     <img src="_img/change-individual-permissions/create-group-open-dialog.png" alt="Create security group at the account or collection level" style="border: 1px solid #C3C3C3;" /> 
 
