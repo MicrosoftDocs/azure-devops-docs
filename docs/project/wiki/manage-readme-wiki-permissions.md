@@ -27,7 +27,7 @@ By default, all members of the Contributors group can edit README files and Wiki
 
 ## Manage README permissions
 
-You manage the permissions for README files by [setting permissions on the repository](../../security/set-git-tfvc-repository-permissions.md). 
+You manage the permissions for README files by [setting permissions on the repository](../../organizations/security/set-git-tfvc-repository-permissions.md). 
 
 
 ::: moniker range=">= tfs-2018"
@@ -40,12 +40,12 @@ To open the Security dialog, click **More>Security** on the wiki home page.
  
 <img src="_img/wiki/wiki-open-security.png" alt="Wiki, open security" style="border: 1px solid #C3C3C3;" />
 
-For definitions of each repository permission, see [Git repository permissions](../../security/permissions.md#git-repository).
+For definitions of each repository permission, see [Git repository permissions](../../organizations/security/permissions.md#git-repository).
 
 <img src="_img/wiki/security-dialog.png" alt="Wiki security dialog" style="border: 1px solid #C3C3C3;" />
 
 >[!NOTE]  
->Users with [Stakeholder access](../../security/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed. 
+>Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed. 
 
 
 ## Don't have access to create a page?  
@@ -61,7 +61,7 @@ Stakeholders in a project can read wiki pages and view revisions, however they c
 <img src="_img/wiki/wiki-stakeholders.png" alt="Wiki stakeholders cannot edit or create pages" style="border: 1px solid #C3C3C3;" />
 
 > [!NOTE]    
-> Users with [Stakeholder access](../../security/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed.  
+> Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) have read-only permissions to wiki pages. These permissions can't be changed.  
 
 ## Q & A
 
@@ -75,6 +75,6 @@ Stakeholders in a project can read wiki pages and view revisions, however they c
 
 ## Related articles
 
-- [Default Git repository and branch permissions](../../security/default-git-permissions.md) 
+- [Default Git repository and branch permissions](../../organizations/security/default-git-permissions.md) 
 - [Get Started with Git](../../git/gitquickstart.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)

@@ -73,7 +73,7 @@ In addition, you can customize SharePoint Web applications in a number of ways t
 
 ## Add users and administrators to a SharePoint site
 
-- Grant users permissions to access the SharePoint site. For details, see [Set permissions to access a SharePoint project portal](../../security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json).
+- Grant users permissions to access the SharePoint site. For details, see [Set permissions to access a SharePoint project portal](../../organizations/security/set-sharepoint-permissions.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json).
 
 
 

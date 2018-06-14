@@ -105,7 +105,7 @@ Feedback
 <li>Add work item colors for Feedback Request and Feedback Response to ProcessConfiguration</li>
 </ul>
 </li>
-<li>To verify, [create a feedback request](../../feedback/get-feedback.md).  </li>
+<li>To verify, [create a feedback request](../../project/feedback/get-feedback.md).  </li>
 </ol>
 
 </td>

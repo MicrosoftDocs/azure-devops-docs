@@ -21,7 +21,7 @@ If a user no longer requires access to a team project or your VSTS account, you 
 
 ## Prerequisites
 
-- You'll need [VSTS project collection administrator or account owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).
+- You'll need [VSTS project collection administrator or account owner permissions](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).
 
 ## Remove users from your VSTS account
 
@@ -38,7 +38,7 @@ If a user no longer requires access to a team project or your VSTS account, you 
 
 4. Choose **Remove** in the confirmation dialog.
 
-5. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../security/add-users-team-project.md). 
+5. To make sure that you've removed the user completely, make sure they are not in any of your [security groups](../organizations/security/add-users-team-project.md). 
 
    [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
 
@@ -53,14 +53,14 @@ If a user no longer requires access to a team project or your VSTS account, you 
 
 ## Remove users from a team or team project
 
-To remove users from a team project, remove them from the Teams groups they belong to or the Contributors group for the team project. See [Add users to a team project or specific team](../security/add-users-team-project.md). From the Members page of a team group or security group, you can Remove a user.
+To remove users from a team project, remove them from the Teams groups they belong to or the Contributors group for the team project. See [Add users to a team project or specific team](../organizations/security/add-users-team-project.md). From the Members page of a team group or security group, you can Remove a user.
 
 ![Remove user from a security group](_img/delete-user/remove-user.png)
 
 ## Related notes
 
- [Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md). 
-- [Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)
-- [Grant or restrict access to select features and functions](../security/restrict-access.md)
+ [Add administrators, set permissions at the project-level or project collection-level](../organizations/security/set-project-collection-level-permissions.md). 
+- [Change individual permissions, grant select access to specific functions](../organizations/security/change-individual-permissions.md)
+- [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)
 - [Troubleshoot adding and deleting account users in the VSTS user hub](faq-add-delete-users.md)
 - [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)

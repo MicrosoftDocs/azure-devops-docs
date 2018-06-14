@@ -13,7 +13,7 @@
   - name: Try extensions for free
     href: ../billing/try-additional-features-vs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: Add admins or set permissions
-    href: ../security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json 
+    href: ../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json 
   - name: Add a team admin
     href: ../work/scale/add-team-administrator.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Tutorials
@@ -21,9 +21,9 @@
   - name: Connect VSTS to Azure AD
     href: connect-account-to-aad.md
   - name: Change individual permissions 
-    href: ../security/change-individual-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+    href: ../organizations/security/change-individual-permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: Grant or restrict permissions
-    href: ../security/restrict-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+    href: ../organizations/security/restrict-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Add subscription user to account
@@ -31,7 +31,7 @@
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md
   - name: Glossary
-    href: ../security/security-glossary.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+    href: ../organizations/security/security-glossary.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Manage your account
@@ -141,13 +141,13 @@
 - name: Reference
   items:
   - name: "Permissions and access (Security)"
-    href: ../security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+    href: ../organizations/security/permissions-access.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: "Permission lookup guide (Security)"
-    href: ../security/permissions-lookup-guide.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+    href: ../organizations/security/permissions-lookup-guide.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: "Permissions and groups reference (Security)"
-    href: ../security/permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
+    href: ../organizations/security/permissions.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: VSTS data protection overview
-    href: ../articles/team-services-security-whitepaper.md?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json 
+    href: ../articles/team-services-security-whitepaper.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
 - name: Resources
   items:
   - name: New User Guide
@@ -157,7 +157,7 @@
   - name: Migrate from TFS to VSTS
     href: ../articles/migrate-to-vsts-from-tfs.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json
   - name: "Security & Identity"
-    href: ../security/index.md
+    href: ../organizations/security/index.md
   - name: Manage Extensions
     href: ../marketplace/index.md
   - name: Service hooks

@@ -23,7 +23,7 @@ Modifies the user access control list (ACL) and displays authorization settings 
 * To view permissions, you must be able to view the artifact for the type of information you are requesting: **View collection-level information** for project collections, **View team project-level information** for projects, and **Read** for repository (and branch if you are viewing branch permissions).
 * To manage permissions, you must have **Manage permissions** for the desired artifact.
 
-    For more information, see [Permissions and groups reference](../security/permissions.md).
+    For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 
 ```
@@ -45,7 +45,7 @@ tf git permission [/allow:(* |perm1[,perm2,...]]
 |--------------------------------------|-------------|
 | **/allow:***(\* \|perm1[,perm2,...])*  | The permissions to allow. |
 | **/deny:***(\* \|perm1[,perm2,...])* | The permissions to deny. |
-| **/remove:***(\* \|perm1[,perm2,...])* | The permissions to remove (sometimes referred to as not set). You can use all three of **/allow**, **/deny**, and **/remove** in the same invocation. For more information on how allow, deny, and remove settings interact, see [Permission settings](../security/about-permissions.md#permission-settings).|
+| **/remove:***(\* \|perm1[,perm2,...])* | The permissions to remove (sometimes referred to as not set). You can use all three of **/allow**, **/deny**, and **/remove** in the same invocation. For more information on how allow, deny, and remove settings interact, see [Permission settings](../organizations/security/about-permissions.md#permission-settings).|
 | **/user:***username1[,username2,...]* | The user or users for which to allow, deny, or remove. You must specify at least one user or group. |
 | **/group:***groupname1[,groupname2,...]* | The groups or groups for which to allow, deny, or remove. You must specify at least one user or group. Groups and individuals can be used together. |
 | **/collection:***TeamProjectCollectionUrl* | Specifies the URL of the team project collection that contains the permissions to view or modify. For example: http://myserver:8080/tfs/DefaultCollection or https://fabrikam-fiber.visualstudio.com. This parameter is required. |

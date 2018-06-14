@@ -51,8 +51,8 @@ In order to perform these steps, you'll want to understand the underlying struct
 
 * You must have a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md).  
 * You must have a Git repository defined in your team project. Ideally, this repository contains at least one markdown file which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../git/create-new-repo.md). 
-* You must have the permission **Create repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../security/set-git-tfvc-repository-permissions.md). 
-* Anyone who has permissions to contribute to the Git repository can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../security/get-started-stakeholder.md), can view the wiki. 
+* You must have the permission **Create repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
+* Anyone who has permissions to contribute to the Git repository can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki. 
 
 [!INCLUDE [temp](_shared/open-wiki-hub.md)]
 

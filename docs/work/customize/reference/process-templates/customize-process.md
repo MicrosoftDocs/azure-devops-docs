@@ -191,7 +191,7 @@ Sometimes third parties make available process templates that they've created. Y
 
  
 ### Required permissions 
-To download or upload process templates, you must either be a member of the **Project Collection Administrators** group, or your **Manage process template** permission must be set to **Allow**. See [Add accounts to administer project collections](../../../../security/set-project-collection-level-permissions.md).  
+To download or upload process templates, you must either be a member of the **Project Collection Administrators** group, or your **Manage process template** permission must be set to **Allow**. See [Add accounts to administer project collections](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 ### Tools that support customizing a process template 
 You can use any text editor or XML editor to modify XML files. Or, you can use the Process Editor which requires that you have installed a version of Visual Studio):

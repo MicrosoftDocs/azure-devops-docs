@@ -70,7 +70,7 @@ You can only assign a work item to one person at a time. The Assigned To field i
 
 ![Web work item form, Assign to field](../_shared/_img/assign-work-items.png)  
 
-Anyone who has write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../security/get-started-stakeholder.md).  
+Anyone who has write access to a team project can assign work items to a team member. This includes team members and [stakeholders](../../organizations/security/get-started-stakeholder.md).  
 
 **Note the following:**
 - You can assign a work item only to team members recognized by the system, ones that you have added as team members 
@@ -165,18 +165,18 @@ Once you have a template defined, you can share it via email or a dashboard. Cop
 
 ## Required permissions
 
-As a member added to the Contributors group of a team project, you can use most features provided under the **Work** hub. If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../security/get-started-stakeholder.md). 
+As a member added to the Contributors group of a team project, you can use most features provided under the **Work** hub. If you've been added with stakeholder access, you are limited to certain features. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). 
 
-To learn more about permissions and access, see [Permissions and access for work tracking](../../security/permissions-access-work-tracking.md). 
+To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
 
 ::: moniker range="vsts" 
 To add team members to a team project, see [Add users to your VSTS account](../../accounts/add-team-members-vs.md).
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-To add team members to a team project, see [TFS team project](../../security/add-users-team-project.md). 
+To add team members to a team project, see [TFS team project](../../organizations/security/add-users-team-project.md). 
 ::: moniker-end
 
-To learn more about user accounts, permissions, and access, see [Security & Identity](../../security/index.md).
+To learn more about user accounts, permissions, and access, see [Security & Identity](../../organizations/security/index.md).
 <!--- User names you add are all members of the Project Collection Valid Users group.  Also, these names are automatically synchronized with Azure Active Direct or Active Directory when AAD or AD is configured as part of the account (VSTS) or deployment (TFS).-->   
 
 

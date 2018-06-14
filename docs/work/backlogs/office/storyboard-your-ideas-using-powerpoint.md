@@ -100,7 +100,7 @@ With PowerPoint Storyboarding, you can illustrate a new or a modified interface.
 ## Related articles
 
 Start using Storyboarding with PowerPoint today by downloading the free plug-in to PowerPoint: 
-- [Team Foundation Server Office® Integration 2017](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
+- [Team Foundation Server Office&reg; Integration 2017](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
 
 
 ### Custom shapes 

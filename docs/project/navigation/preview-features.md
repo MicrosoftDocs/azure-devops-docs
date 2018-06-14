@@ -51,7 +51,7 @@ From time to time, a new feature is introduced in Preview mode, which allows you
 When you enable a feature at the account level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
 
 > [!TIP]  
-> If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../security/set-project-collection-level-permissions.md).  
+> If you don't see the user/account menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Preview features options for the account](_img/preview-features-account-s133.png)

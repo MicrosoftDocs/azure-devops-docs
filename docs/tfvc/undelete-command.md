@@ -24,7 +24,7 @@ The **undelete** command restores items that were previously deleted.
 
 **Required Permissions**
 
-To use the **undelete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than none, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **undelete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than none, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf undelete [/noget] [/lock:(none|checkin|checkout)] 
     [/recursive] itemspec[;deletionID] [/login:username,[password]]

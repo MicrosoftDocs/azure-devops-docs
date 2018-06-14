@@ -50,7 +50,7 @@ Both the operating system and Active Directory impose certain restrictions on co
 ### User account names
 User accounts identify people added to a team project or project collection. These user accounts might correspond to an Active Directory, Azure Active Directory, Windows or other user account types.  
 
-You add existing user accounts. You can't create a user account. To add user accounts to a team project, see [Add users to a team project or team](../../security/add-users-team-project.md) . 
+You add existing user accounts. You can't create a user account. To add user accounts to a team project, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md) . 
 
 User accounts that you add must conform to the following restrictions.  
 
@@ -137,7 +137,7 @@ User accounts that you add must conform to the following restrictions.
 
 Groups enable you to apply certain rights or permissions to a group of users.
 
-On-premises TFS groups can consist of Active Directory group accounts, TFS group accounts, Windows user accounts, Windows group accounts, or any mixture of these types. See [Manage users or groups in TFS](../../security/permissions.md).  
+On-premises TFS groups can consist of Active Directory group accounts, TFS group accounts, Windows user accounts, Windows group accounts, or any mixture of these types. See [Manage users or groups in TFS](../../organizations/security/permissions.md).  
 
 Groups that you add must conform to the following restrictions.  
 

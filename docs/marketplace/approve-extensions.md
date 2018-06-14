@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 
 As a project collection administrator, you'll get an email when another team project member requests an extension. When you approve the request, Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) automatically installs the extension.
 
-To approve extensions, you must also have [**Edit collection-level information** permissions](../security/permissions.md#collection).
+To approve extensions, you must also have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection).
 
 0.	Go to your VSTS or TFS home page, then go to your team project:
     * VSTS:```https://{account-name}.visualstudio.com/{team-project}```

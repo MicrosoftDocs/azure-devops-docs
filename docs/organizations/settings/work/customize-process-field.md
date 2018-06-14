@@ -231,7 +231,7 @@ Deleting a field will delete all data associated with that field, including hist
 
 	![Delete field](_img/process/cpfield-delete-field.png) 
 
-	To delete fields, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to Delete field from account](../../../security/set-permissions-access-work-tracking.md#process-permissions). 
+	To delete fields, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to Delete field from account](../../../organizations/security/set-permissions-access-work-tracking.md#process-permissions). 
 
 2. To complete the delete operation, you must type the name of the field as shown. 
 

@@ -19,7 +19,7 @@ ms.date: 05/10/2017
 
 By default, Team Foundation Server (TFS) limits the size of work item attachments to 4 MB. For on-premises deployments, you can use the TFS web service to increase the size of files you attach to up to 2GB.  
   
-1.  If you're not a member of the TFS **Administrators** group, [get added as one](../../../security/set-project-collection-level-permissions.md).    
+1.  If you're not a member of the TFS **Administrators** group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).    
   
 2.  Log on to the application-tier server for TFS.  
   

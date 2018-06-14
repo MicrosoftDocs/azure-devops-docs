@@ -170,7 +170,7 @@ This includes:
 The following pre-requisites are needed:
 
 1. Visual Studio 2017.6 or higher. If you are using the [Test Platform Installer](/vsts/release-notes/2017/nov-28-vsts#test) task to run tests using the VSTest task, make sure you pick the appropriate version of the package.
-2. Create a [PAT](/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/security/toc.json&bc=/vsts/security/breadcrumb/toc.json) that is authorized for the scope “Work Items (full)”.
+2. Create a [PAT](/vsts/accounts/use-personal-access-tokens-to-authenticate?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) that is authorized for the scope “Work Items (full)”.
 3. Add a secure Build or Release variable called Test.TestCaseAccessToken with the value set to the PAT created in step 2.
 
 Note that tests that use TestCase as a data source cannot be used with the **Run Functional Tests** task.

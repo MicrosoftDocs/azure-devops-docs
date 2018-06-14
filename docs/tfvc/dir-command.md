@@ -21,7 +21,7 @@ The **dir** command displays all or some of the contents of the server for Team 
 
 **Required Permissions**
 
-To use the **dir** command, you must have **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **dir** command, you must have **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf dir itemspec [/version:versionspec] [/recursive] 
     [/folders] [/deleted] [/login:username,[password]] [/collection:TeamProjectCollectionUrl]

@@ -91,7 +91,7 @@ As changes occur to work items, code reviews, source control files, and builds, 
 You can set filters for as many as 20 different alert types, specify the email addresses for yourself and other team members, and select the delivery format. Also, you can set team alerts to keep all team members notified of important changes. 
 
 ##Administer alerts for a team project
-To administer alerts for a team project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../../security/set-project-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
+To administer alerts for a team project, you must be a member of the Project Collection Administrator or Team Foundation Administrator groups. To get added, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md). If you're not a member of these groups, you won't see the options available for administering alerts.
 
 As an administrator, you can view, create, edit, and delete alerts for team members and teams. 
 

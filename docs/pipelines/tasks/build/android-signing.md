@@ -71,7 +71,7 @@ Enter the file path to the keystore file that should be used to sign the APK. It
 <td>Keystore Password</td>
 <td>
 <p>Enter the password for the provided keystore file.</p>
-<blockquote><strong>Important: </strong> We recommend that you put this value in a [secret variable](../../build/variables.md).
+<blockquote><strong>Important: </strong> We recommend that you put this value in a [secret variable](../../build/variables.md#secret-variables).
 </blockquote>
 </td>
 </tr>
@@ -85,7 +85,7 @@ Enter the alias that identifies the public/private key pair to be used in the ke
 <td>Key Password</td>
 <td>
 Enter the key password for the alias and keystore file.
-<blockquote><strong>Important: </strong> We recommend that you put this value in a [secret variable](../../build/variables.md).
+<blockquote><strong>Important: </strong> We recommend that you put this value in a [secret variable](../../build/variables.md#secret-variables).
 </blockquote>
 </td>
 </tr>

@@ -26,7 +26,7 @@ The **New Queries Experience** streamlines many of the query features you have a
 To try out the **New Queries Experience**, open your account provide and select Preview features. For details, see [Enable  preview features](../../project/navigation/preview-features.md).
 
 ## User focused navigation
-After you enable the **New Queries Experience**, click the  **Work>Queries** hub. You"™ll notice that the left pane is gone. To navigate quickly between your favorite queries, click Queries and favorite those queries of most interest to you. Then, you can use the drop-down menu in the query title to select queries you've favorited.
+After you enable the **New Queries Experience**, click the  **Work>Queries** hub. You'll notice that the left pane is gone. To navigate quickly between your favorite queries, click Queries and favorite those queries of most interest to you. Then, you can use the drop-down menu in the query title to select queries you've favorited.
 
 <img src="_img/queries-favorite-picker.png" alt="List of favorite queries to run" style="border: 1px solid #cccccc;"/>
 

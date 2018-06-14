@@ -64,7 +64,7 @@ See the following topics to make the indicated customizations:
 <a id="witadmin">  </a>  
 ## Import and export WIT definition files 
 
-0.  If you don't have administration permissions for your team project, [get them](../../security/set-project-collection-level-permissions.md).  
+0.  If you don't have administration permissions for your team project, [get them](../../organizations/security/set-project-collection-level-permissions.md).  
   
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 

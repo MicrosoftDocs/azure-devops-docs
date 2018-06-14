@@ -21,7 +21,7 @@ Configures your client computer to use a proxy server. Adds, deletes, and lists 
 
 **Required Permissions**
 
-To use the **proxy** command to configure a client computer, you must be a member of the **User** security group on the local computer. To use the **proxy** command to work with proxy records, you must have the AdminConfiguration permission. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **proxy** command to configure a client computer, you must be a member of the **User** security group on the local computer. To use the **proxy** command to work with proxy records, you must have the AdminConfiguration permission. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf proxy ([/configure [Url]) [/collection:TeamProjectCollectionUrl]
      [/login:UserName,[Password]]

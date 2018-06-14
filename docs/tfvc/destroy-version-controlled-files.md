@@ -26,7 +26,7 @@ The following procedure shows you how to destroy files and folders by using the 
 
 **Required Permissions**
 
-To use the **destroy** command, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **destroy** command, you must be a member of the **Team Foundation Administrators** security group. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 ## Prerequisites for Running tf destroy
 Before you run **tf destroy** without the **/keephistory** option, we recommend that you first delete the files you want to destroy. For more information, see [Delete Files and Folders from Version Control](delete-restore-files-folders.md). After you delete a file, its file name now includes a deletion ID. For example, if a file name is aFile.cs, after deletion the file name is aFile.cs;x123, where x123 is the deletion ID.
 

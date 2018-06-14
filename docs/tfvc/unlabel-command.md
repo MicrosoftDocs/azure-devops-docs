@@ -21,7 +21,7 @@ Removes an item from an existing label in the server for Team Foundation version
 
 **Required Permissions**
 
-To use the **unlabel** command, you must either own the label, or have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **unlabel** command, you must either own the label, or have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username, [password]] labelname itemspec
 

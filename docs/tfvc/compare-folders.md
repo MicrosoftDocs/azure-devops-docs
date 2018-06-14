@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 You can compare the differences between two server folders, two local folders, or a server folder and a local folder.
 
 **Required Permissions**  
-To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To perform these procedures, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 >**Note:**  
 >To compare two local folders, you do not need Team Foundation Server permissions.

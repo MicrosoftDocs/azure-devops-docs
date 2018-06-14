@@ -63,7 +63,7 @@ If members need to create or customize reports, add their accounts to the **TfsW
 
 	![Connect to database engine](_img/IC665041.png)
 
-3. Open the properties page for the **TfsWarehouseDataReader** role under the **Databases/Tfs_Warehouse/Security/Roles/Database Roles** folder.  
+3. Open the properties page for the **TfsWarehouseDataReader** role under the **Databases/Tfs_Warehouse/organizations/security/Roles/Database Roles** folder.  
 
 	![Open Tfs_Warehouse data reader role properties](_img/IC665042.png)
 

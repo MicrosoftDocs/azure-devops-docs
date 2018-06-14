@@ -15,7 +15,7 @@ ms.date: 04/04/2018
 
 # Manage Analytics views 
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS). 
 
@@ -30,11 +30,11 @@ Use this article to learn how to:
 > * Manage permissions for a shared view
 > * Delete a view
 
-[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
+[!INCLUDE [temp](../_shared/analytics-view-availability.md)]
 
-[!INCLUDE [temp](../_shared/analytics-prerequisites.md)] 
+[!INCLUDE [temp](../_shared/analytics-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/analytics-open.md)] 
+[!INCLUDE [temp](../_shared/analytics-open.md)] 
 
 ## Edit an existing view
 
@@ -42,8 +42,8 @@ The creator of a view and all members of the Project Administrators and Project 
 
 1. From either the **Favorites** or **All** page, hover over the view you want to edit, click the ![](../_img/icons/actions-icon.png) actions icon and choose the **Edit** option. You can also choose **Edit** from the Summary panel. 
 
-	> [!div class="mx-imgBorder"]
-	> ![Analytics Views, Edit a view](_img\editable-views\edit-view.png)
+	> [!div class="mx-imgBorder"]
+	> ![Analytics Views, Edit a view](_img\editable-views\edit-view.png)
 
 2. You can edit any part of the view, in the same way you did to define a view. For details, see [Create an Analytics view.](analytics-views-create.md)
 
@@ -66,7 +66,7 @@ To share a private view, simply edit the view and change the sharing option to *
 > [!IMPORTANT]
 > If you plan to share [Power BI reports or dashboards](https://docs.microsoft.com/power-bi/service-share-dashboards) based on an Analytics view, make sure the view is **Shared**. Otherwise, you are the only one who can modify the view and manually refresh the data. We recommend sharing views to support shared reports and dashboards.
 
-    > [!div class="mx-imgBorder"]
+    > [!div class="mx-imgBorder"]
     > ![General tab](_img/editable-views/general.png)
 
 ## Favorite a view
@@ -74,11 +74,11 @@ To share a private view, simply edit the view and change the sharing option to *
 Favoriting an item provides a quick way to navigate to items you regularly visit. 
 To favorite a view, hover over the view in the Analytics hub and choose the ![star icon](../../_img/icons/icon-favorite-star.png).
     
-> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]
 > ![Favorite a view](_img/editable-views/directory-favorite.png)
 
 <a id="manage-permissions" />
-[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
+[!INCLUDE [temp](_shared/manage-shared-view-permissions.md)]
 
 ## Delete a view
 

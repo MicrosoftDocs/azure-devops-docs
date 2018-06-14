@@ -57,24 +57,24 @@ select @TeamProjectCollectionGuid = pc.ProjectNodeGUID from DimTeamProject p inn
 -- This query finds the team project collection GUID by joining TeamProject.ParentNodeSK to TeamProject.ProjectNodeSK  
   
 select   
-     wi.System_Title  
-    ,wi.System_Id  
-    ,coalesce(sum(cwi_child.Microsoft_VSTS_Scheduling_CompletedWork), 0) as Total_CompletedWork -- Finds the total number of hours of completed work.  
-   ,coalesce(sum(cwi_child.Microsoft_VSTS_Scheduling_OriginalEstimate), 0) as Total_OriginalEstimate --Finds the total number of hours of original estimate.  
-    ,coalesce(sum(cwi_child.Microsoft_VSTS_Scheduling_RemainingWork), 0) as Total_RemainingWork --Finds the total number of hours of remaining work.  
-    ,coalesce(sum(cwi_child.Microsoft_VSTS_Scheduling_StoryPoints), 0) as Total_StoryPoints --Finds the total story points.  
+     wi.System_Title  
+    ,wi.System_Id  
+    ,coalesce(sum(cwi_child.Microsoft_VSTS_Scheduling_CompletedWork), 0) as Total_CompletedWork -- Finds the total number of hours of completed work.  
+   ,coalesce(sum(cwi_child.Microsoft_VSTS_Scheduling_OriginalEstimate), 0) as Total_OriginalEstimate --Finds the total number of hours of original estimate.  
+    ,coalesce(sum(cwi_child.Microsoft_VSTS_Scheduling_RemainingWork), 0) as Total_RemainingWork --Finds the total number of hours of remaining work.  
+    ,coalesce(sum(cwi_child.Microsoft_VSTS_Scheduling_StoryPoints), 0) as Total_StoryPoints --Finds the total story points.  
 from  
-    DimWorkItem wi  
+    DimWorkItem wi  
 cross apply  
-    GetWorkItemsTree(@TeamProjectCollectionGuid, wi.System_Id, N'Child', DEFAULT) wit   
-left join          
-    FactCurrentWorkItem cwi_child  
-        on cwi_child.WorkItemSK = wit.ChildWorkItemSK  
+    GetWorkItemsTree(@TeamProjectCollectionGuid, wi.System_Id, N'Child', DEFAULT) wit   
+left join          
+    FactCurrentWorkItem cwi_child  
+        on cwi_child.WorkItemSK = wit.ChildWorkItemSK  
 where  
-    wi.TeamProjectSK = @TeamProjectNodeSK   
-    and wi.System_WorkItemType = N'User Story'  
-    and wi.System_RevisedDate = CONVERT(datetime, '9999', 126)--The revised date of the work item is equal to today.  
-    and wi.System_State = N'Active'  
+    wi.TeamProjectSK = @TeamProjectNodeSK   
+    and wi.System_WorkItemType = N'User Story'  
+    and wi.System_RevisedDate = CONVERT(datetime, '9999', 126)--The revised date of the work item is equal to today.  
+    and wi.System_State = N'Active'  
 group by wi.System_Id, wi.System_Title  
 order by wi.System_Id  
 ```  

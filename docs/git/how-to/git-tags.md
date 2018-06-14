@@ -87,7 +87,7 @@ You can also view tags in the **History** view, for example by navigating to the
 
 ## Create tag
 
-To create a tag, you must have the [Create Tag](../../security/permissions.md#git-repository-object-level) permission, which is included [by default](../../security/default-git-permissions.md) in the [Contributors](../../security/permissions.md#project-level-groups) group and higher.
+To create a tag, you must have the [Create Tag](../../organizations/security/permissions.md#git-repository-object-level) permission, which is included [by default](../../organizations/security/default-git-permissions.md) in the [Contributors](../../organizations/security/permissions.md#project-level-groups) group and higher.
 
 # [Web Portal](#tab/vsts-tfs-web-portal)
 
@@ -152,7 +152,7 @@ You can create both annotated and lightweight tags in Visual Studio from both th
 >[!IMPORTANT]
 >Use caution when deleting tags from your repo. If the repo has been pulled, forked, or cloned by another user, the tag will still exist in their copy of the repo. You should only delete local tags, or if you are sure that the repo hasn't been pulled, cloned, or forked since you created your tag.
 
-To delete a tag, you must have the [Force Push](../../security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set).
+To delete a tag, you must have the [Force Push](../../organizations/security/permissions.md#git-repository-object-level) permission at the **Repository** level or the **All tags** level (which inherits its permissions from the repository level if not explicitly set).
 
 # [Web Portal](#tab/vsts-tfs-web-portal)
 
