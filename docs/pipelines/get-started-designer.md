@@ -565,7 +565,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [JavaScript](apps/nodejs/build-gulp.md) | NodeJS with Gulp (Grunt is also an option)|
 | [Xcode](apps/mobile/xcode-ios.md) | Xcode |
 
-## Q&A
+## Q & A
 
 ### Where can I read articles about DevOps and CI/CD?
 <!-- BEGINSECTION class="md-qanda" -->

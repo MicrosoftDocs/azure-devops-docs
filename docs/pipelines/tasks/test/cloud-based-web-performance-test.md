@@ -34,7 +34,7 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -66,7 +66,11 @@ The build agent must have the following capabilities:
 * [Cloud-based Load Test](cloud-based-load-test.md)  
 * [Cloud-based Apache JMeter Load Test](run-jmeter-load-test.md)  
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="< vsts"

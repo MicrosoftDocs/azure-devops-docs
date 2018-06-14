@@ -157,7 +157,11 @@ monikerRange: '>= tfs-2015'
 
 To learn more about tool installer tasks, see [Tool installers](../process/tasks.md#tool-installers).
 
-## Q&A  
+## Open source
+
+These tasks are open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A  
 
 <!-- BEGINSECTION class="md-qanda" -->
 

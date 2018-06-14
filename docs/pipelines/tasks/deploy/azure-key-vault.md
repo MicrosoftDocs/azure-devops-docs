@@ -61,7 +61,7 @@ When you want to access secrets:
 
   - Choose **OK** to save the changes.<p />
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -110,7 +110,11 @@ For more details, see [Get started with Azure Key Vault certificates](https://bl
 Contact [RM\_Customer\_Queries@microsoft.com](mailto:RM_Customer_Queries@microsoft.com) if you discover issues using the task, to share feedback about the task,
 or to suggest new features that you would like to see.
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]

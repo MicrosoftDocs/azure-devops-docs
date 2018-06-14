@@ -44,7 +44,7 @@ in the firewall, and install the test certificate.
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -87,7 +87,11 @@ None
 * [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
 * [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### What are the Azure PowerShell prerequisites for using this task?

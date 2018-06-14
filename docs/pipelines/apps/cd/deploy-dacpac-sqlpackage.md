@@ -109,7 +109,7 @@ This will result in deploying the database DACPAC to Azure SQL Database:
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

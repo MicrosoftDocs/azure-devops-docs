@@ -30,7 +30,7 @@ You can install an Apple provisioning profile that is:
 
 xcode
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 

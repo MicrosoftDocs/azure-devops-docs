@@ -117,7 +117,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 1. Create a new release, select the latest build, and 
    ensure that the application has been deployed correctly and has generated the VHD.
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
