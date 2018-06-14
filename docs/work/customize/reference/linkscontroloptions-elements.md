@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b43e4e57-3a42-4705-9e52-eec2f8fb5f72
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 02/02/2017
@@ -133,7 +134,7 @@ These buttons become available only after you perform a specific action:
 -   The buttons to open the list of work items in a query (![Open in Query](_img/icon_openinquery.png "Icon_openInQuery")) and in a Microsoft Office client (![Open in Office](_img/wit_iconoffice.png "WIT_IconOffice")) become available only when at least one work item is listed in the links control tab.   
 -   The buttons to open a work item (![Open Work Item](_img/icon_openworkitem.png "Icon_openWorkItem")), edit a link (![Edit link](_img/icon_witlinkedit.png "Icon_WITLinkEdit")), and delete a link (![Delete link](_img/icon_witlinkdelete.png "Icon_WITLinkDelete")) become available only after you click one or more work items listed in the links control tab.  
   
-The links control that is displayed is the same for both the web portal and Team Explorer, except when it is configured to only render `Storyboard` links. In that case, the toolbar only contains those controls to add a new link, open the linked item, and delete the link. Also, the the web portal version displays the **Start Storyboarding** link within the control menu.  
+The links control that is displayed is the same for both the web portal and Team Explorer, except when it is configured to only render `Storyboard` links. In that case, the toolbar only contains those controls to add a new link, open the linked item, and delete the link. Also, the web portal version displays the **Start Storyboarding** link within the control menu.  
   
 ![Storyboard links control](_img/alm_twa_storyboard_linkscontrol.png "ALM_TWA_Storyboard_LinksControl")  
   
