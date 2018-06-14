@@ -5,7 +5,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 06/16/2017
 ---
 
@@ -66,7 +67,7 @@ Specify the `String` control when you want to add a string field, such as used i
 <Control FieldName="Microsoft.VSTS.DocName" Type="FieldControl" Label="Vision Doc Location" LabelPosition="Left" />
 ```
 
-Specify the `PlainText` control when you want to capture text that that contains descriptions that may be larger than 255 characters.
+Specify the `PlainText` control when you want to capture text that contains descriptions that may be larger than 255 characters.
   
 ```
 <Control FieldName="System.Title" Type="FieldControl" Label="Title" LabelPosition="Left" />
@@ -83,9 +84,9 @@ Use the following syntax to add a Boolean field within the **FIELDS** section of
 
 ```
 <FIELD name="Triage" refname="Fabrikam.Triage" type="Boolean" >
- <DEFAULT from="value" value="False" />
-        <HELPTEXT>Triage work item</HELPTEXT>
-        </FIELD>
+  <DEFAULT from="value" value="False" />
+  <HELPTEXT>Triage work item</HELPTEXT>
+</FIELD>
 ```
 
 And then add the following syntax within the **FORM** section to have the field appear on the form. 
