@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/azureresourcegroupdeployment.png) Deploy, start, stop, delete Azure Resource Groups
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -61,7 +61,11 @@ To  view the template parameters in a grid, click on “…” next to Override 
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

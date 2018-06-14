@@ -41,7 +41,7 @@ None
 * A Microsoft-hosted agent, or a self-hosted agent with Anaconda or Miniconda installed.
 * If using a self-hosted agent, you must either add the `conda` executable to `PATH` or set the `CONDA` environment variable to the root of the Conda installation.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -63,7 +63,11 @@ None
 | Environment creation options | Space-delimited list of other options to pass to the `conda create` command. |
 | Clean the environment | Delete the environment and recreate it if it already exists. If not selected, the task will reactivate an existing environment. |
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]

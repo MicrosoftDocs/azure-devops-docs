@@ -12,7 +12,6 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build: Ant
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
@@ -25,7 +24,7 @@ The build agent must have the following capability:
 
  * Apache Ant
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -85,7 +84,7 @@ The build agent must have the following capability:
 <li>Cobertura, set up an environment variable COBERTURA_HOME pointing to the Cobertura .jar files location. See [Cobertura](https://github.com/cobertura/cobertura/wiki/Ant-Task-Reference).</li>
 </ul>
 <p>After you select one of these tools, the following arguments appear.</p>
-	</td>
+</td>
 </tr><tr><td>Class Files Directories</td>
 <td><p>Specify a comma-separated list of relative paths from the Ant build file to the directories that contain your .class files, archive files (such as .jar and .war). Code coverage is reported for class files present in the directories. Directories and archives are searched recursively for class files. For example: target/classes,target/testClasses.</p></td></tr>
 <tr><td>Class Inclusion/Exclusion Filters</td>
@@ -116,7 +115,11 @@ The build agent must have the following capability:
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]

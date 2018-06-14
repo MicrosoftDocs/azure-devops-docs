@@ -135,7 +135,7 @@ The help provides information on authentication alternatives and unattended conf
 
 [!INCLUDE [include](_shared/capabilities.md)]
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

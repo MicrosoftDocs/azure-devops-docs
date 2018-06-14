@@ -129,7 +129,7 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 
 ::: moniker-end
 
-## Q&A
+## Q & A
 
 ### I'm trying to create a queue that uses an existing pool, but the controls are grayed out. Why?
 

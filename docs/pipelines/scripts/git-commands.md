@@ -135,7 +135,7 @@ On the [build tab](../tasks/index.md) add this as the last task:
 | ---- | --------- |
 | ![](../tasks/utility/_img/batch-script.png)<br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

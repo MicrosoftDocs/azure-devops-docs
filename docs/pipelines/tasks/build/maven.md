@@ -25,7 +25,7 @@ The build agent must have the following capability:
 
  * Maven
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -102,7 +102,11 @@ See [The Maven build task now supports PMD analysis out of the box](https://blog
 [Build and Deploy your Java application to an Azure web app](../../apps/java/build-maven.md)
 
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]

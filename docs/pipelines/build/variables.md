@@ -745,7 +745,7 @@ Scope: Agent
 
 Set to `True` if the script is being run by a build task.
 
-## Q&A
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 

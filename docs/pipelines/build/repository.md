@@ -437,7 +437,7 @@ The build process labels your sources with a [TFVC label](../../tfvc/use-labels-
 
 ::: moniker range=">= tfs-2015"
 
-## Q&A  
+## Q & A  
 
 <!-- BEGINSECTION class="md-qanda" -->
 
