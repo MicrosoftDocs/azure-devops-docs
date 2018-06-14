@@ -36,9 +36,9 @@ As you continue editing the page, save the page by entering **Ctrl+S**. To save 
 
 ::: moniker-end
 
-Use this topic to learn how to: 
+Use this topic to learn how to:�
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Open the **Wiki** hub
 > * Add a wiki page
 > * View revisions for a page
@@ -54,7 +54,7 @@ Use this topic to learn how to: 
 * You must be a member of the team project as a contributor in order to add or update wiki pages. 
 
 
-[!INCLUDE [temp](_shared/open-wiki-hub.md)]
+[!INCLUDE�[temp](_shared/open-wiki-hub.md)]
 
 <a id="add-page" />
 ## Add a wiki page

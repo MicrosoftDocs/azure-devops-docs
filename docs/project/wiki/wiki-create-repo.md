@@ -37,9 +37,9 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-Use this topic to learn how to: 
+Use this topic to learn how to:�
 
-> [!div class="checklist"]   
+> [!div class="checklist"]
 > * Open the **Wiki** hub
 > * Provision a Git repo for your wiki 
 
@@ -64,7 +64,7 @@ Use this topic to learn how to: 
 ::: moniker-end
 
 
-[!INCLUDE [temp](_shared/open-wiki-hub.md)]
+[!INCLUDE�[temp](_shared/open-wiki-hub.md)]
 
 
 ## Provision a wiki Git repository
@@ -122,6 +122,6 @@ However, you can navigate to it from the following URL:
 
 You can click **More** followed by **Clone Wiki** to access the Wiki URL.
 
-<img align="top" src="_img/wiki/clone-wiki.PNG" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
+<img align="top" src="_img/wiki/clone-wiki.PNG" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />  � 
 
 This will expose the URL of the wiki Git repository and you can paste it into your web browser to access the underlying Git repo.
