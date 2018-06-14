@@ -24,7 +24,7 @@ monikerRange: 'vsts'
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -48,7 +48,11 @@ None
 | Clean destination directory | Select this option to clean the destination directory before the JDK is extracted into it. |
 | Control options | See [Control options](../../process/tasks.md#controloptions). |
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn more about tool installers?

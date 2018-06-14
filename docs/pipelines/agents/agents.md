@@ -238,7 +238,7 @@ You can view the version of an agent by navigating to the **Agent pools** hub an
 
 [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
 
-## Q&A
+## Q & A
 
 <h3 id="private-agent-performance-advantages">Do self-hosted agents have any performance advantages over Microsoft-hosted agents?</h3>
 

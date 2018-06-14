@@ -24,7 +24,7 @@ For information on connecting to a VSTS Git repo from Eclipse with TEE, read [Sh
 
 ## Eclipse Update Site for Latest Release
 The latest release of TEE can always be installed in Eclipse using this update site URL:
-* **http://dl.microsoft.com/eclipse**
+* **https://marketplace.eclipse.org/content/team-explorer-everywhere**
 
 ## Standalone Download Links
 
@@ -33,7 +33,7 @@ The latest release of TEE can always be installed in Eclipse using this update s
 * Contains the TEE plugin for Eclipse, the cross-platform TFVC command-line-client (CLC), and the TFS SDK for Java
 
 ### TEE 2015 (Dev 14 RTM)
-* [Download page for TEE 2015](https://www.microsoft.com/en-us/download/details.aspx?id=47727) target="_blank">
+* [Download page for TEE 2015](https://www.microsoft.com/en-us/download/details.aspx?id=47727)
 * SP 3 (14.0.3) Released 03/29/2016
 * SP 2 (14.0.2) Released 12/30/2015
 * SP 1 (14.0.1) Released 07/15/2015

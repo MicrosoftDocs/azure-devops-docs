@@ -39,11 +39,15 @@ None
 | Advanced - Timeout in Seconds | Specify how long you want to allow the build task to wait for the activation or deactivation. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] |
 
-## Example 
+## Example
 
 [Build your Xamarin app](../../apps/mobile/xamarin.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]

@@ -156,7 +156,7 @@ Prints usage information.
 
 [!INCLUDE [include](_shared/capabilities.md)]
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

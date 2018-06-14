@@ -22,7 +22,7 @@ monikerRange: 'vsts'
 
 Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -41,6 +41,10 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/PublishToAzureServiceBusV1).
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

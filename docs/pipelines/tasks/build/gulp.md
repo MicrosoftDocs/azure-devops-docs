@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2015'
 
 gulp
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -102,7 +102,11 @@ On the [Build](../../index.md) tab:
 
 [Build your Node.js app with Gulp](../../apps/nodejs/build-gulp.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]

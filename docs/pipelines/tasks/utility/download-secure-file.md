@@ -29,7 +29,7 @@ If you use multiple versions of the Download Secure File task in your definition
 
 Note that if you use two Download Secure File tasks in the same definition with the same task version, the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable will not be populated, but both files will still be downloaded to `$(Agent.TempDirectory)`.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 

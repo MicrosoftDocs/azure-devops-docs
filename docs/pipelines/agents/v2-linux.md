@@ -257,7 +257,7 @@ You can use the template described above as to facilitate generating other kinds
 
 [!INCLUDE [include](_shared/capabilities.md)]
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
