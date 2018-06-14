@@ -34,6 +34,7 @@ To publish symbols for NuGet packages, include the above task in the build defin
 If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), you don't need to use the **Index Sources and Publish Symbols** task. For Portable PDBs, indexing is done by the build. This is a design feature of Portable PDBs and .NET.
 
 ## Q&A
+
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### Q: What's the retention policy for the symbols stored in the VSTS symbol server?

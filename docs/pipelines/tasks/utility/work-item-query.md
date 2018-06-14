@@ -24,7 +24,7 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -45,4 +45,6 @@ Succeeds if _minimum-threshold_ **&lt;=** _#-matching-workitems_ **&lt;=** _maxi
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
-Also see this task on [GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/QueryWorkItems).
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.

@@ -26,7 +26,7 @@ specified in the manifest files, in an Azure Service Fabric application package.
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -114,7 +114,11 @@ None
 
 Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]

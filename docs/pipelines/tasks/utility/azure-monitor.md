@@ -24,7 +24,7 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
