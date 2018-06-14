@@ -14,18 +14,18 @@ ms.date: 3/16/2018
 
 # Aggregate work tracking data using the Analytics service   
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 You can get a sum of your VSTS work tracking data in one of two ways using the Analytics service with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
 In this topic you'll learn: 
 
 >[!div class="checklist"]
-> * About the OData Aggregation Extension   
-> * How to generate a simple count of work items         
-> * How to use the Aggregation Extension for OData   
+> * About the OData Aggregation Extension  
+> * How to generate a simple count of work items  
+> * How to use the Aggregation Extension for OData   
 > * How to group and filter aggregated results 
-> * How to aggregate data to generate a Cumulative Flow diagram  
+> * How to aggregate data to generate a Cumulative Flow diagram  
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
@@ -74,9 +74,9 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 For simple counts, the non-aggregation approach has a simpler syntax.  
 
-> [!NOTE]   
+> [!NOTE] 
 > Using `$count` returns a single number; using the OData aggregation extension returns a formatted JSON.  
-  
+  
 You can also filter what you want to count. For example, if you want to know how many work items are in the "In Progress" state, specify the following in your query:
 
 `/WorkItems/$count?$filter=State eq 'In Progress'`
@@ -291,7 +291,7 @@ This will return a result that looks like the following:
 
 When you need to use a mathematical expression to calculate properties for use in a result set, such as the sum of completed work which is divided by the sum of completed work plus the sum of remaining work to calculate the percentage of work completed, you can accomplish this as follows:
 
-`/WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)/compute(SumOfCompletedWork div (SumOfCompletedWork add SumOfRemainingWork) as DonePercentage)`
+`/WorkItems?$apply=aggregate(CompletedWork with sum as SumOfCompletedWork, RemainingWork with sum as SumOfRemainingWork)/compute(SumOfCompletedWork div (SumOfCompletedWork add SumOfRemainingWork) as DonePercentage)`
 
 > [!div class="tabbedCodeSnippets"]
 ```JSON

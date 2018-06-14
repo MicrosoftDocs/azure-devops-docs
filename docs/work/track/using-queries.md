@@ -69,7 +69,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	  
 	  ![Save Query As](_img/6.png)    
 	  
-	  To save a query to the Shared Queries folder, you need to be a [team administrator](../scale/manage-team-assets.md), a member of the [Project Administrators group](../../security/add-users-team-project.md), or have your Contribute permissions on the folder set to Allow. To learn more, see [Set query permissions](set-query-permissions.md).
+	  To save a query to the Shared Queries folder, you need to be a [team administrator](../scale/manage-team-assets.md), a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your Contribute permissions on the folder set to Allow. To learn more, see [Set query permissions](set-query-permissions.md).
 
 <a id="flat-list" />
 ## Create a query

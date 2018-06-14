@@ -30,9 +30,9 @@ As a team administrator, you can configure, customize, and manage all team-relat
 * You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../security/add-users-team-project.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
 ::: moniker-end
-* To get added as a team administrator, ask another team admin, the account owner, or a member of the [Project Administrators group](../../security/set-project-collection-level-permissions.md) to add you.  
+* To get added as a team administrator, ask another team admin, the account owner, or a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) to add you.  
 
 If you need to add a team, see [Add teams and team members](multiple-teams.md).
 

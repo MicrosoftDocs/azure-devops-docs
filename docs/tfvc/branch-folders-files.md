@@ -54,7 +54,7 @@ When you perform branch operations, branches have important advantages over fold
 Although you can still branch and merge among folders, the best practice for your team is to branch and merge only among branches. The following procedure explains how to convert a folder to a branch.
 
 **Required Permissions**  
-To perform the following procedure, your **Manage branch** permission must be set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To perform the following procedure, your **Manage branch** permission must be set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To convert a folder to a branch
 
@@ -102,7 +102,7 @@ After you have converted a folder to a branch, you can convert it back to a fold
 After you have converted a folder to a branch, you can then create other branches from that branch. The following procedure shows how you can use the graphical user interface of Visual Studio to branch a branch. (For information about how to perform this task at the command prompt, see [Branch Command](branch-command.md).)
 
 **Required Permissions**  
-To perform this procedure, your **Manage branch** permission must be set to **Allow** for the paths to the source and target branches. Your **Merge** permission for the path of target branch must set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To perform this procedure, your **Manage branch** permission must be set to **Allow** for the paths to the source and target branches. Your **Merge** permission for the path of target branch must set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To branch a branch
 
@@ -138,7 +138,7 @@ Although you can branch a folder or file directly, we recommend that you avoid i
 But if you have a special need to branch a folder or file, you can use the following procedure to perform this task. (For information about how to perform this task at the command prompt, see [Branch Command](branch-command.md).)
 
 **Required Permissions**  
-To perform this procedure, your **Check out** permission and your **Merge** permission for the target path must be set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To perform this procedure, your **Check out** permission and your **Merge** permission for the target path must be set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
 ### To branch a folder or file
 

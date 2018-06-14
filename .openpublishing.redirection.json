@@ -1672,7 +1672,7 @@
     },
     {
       "source_path": "docs/package/build/team-build-npm.md",
-      "redirect_url": "/vsts/pipelines/packages/npm?toc=/vsts/package/toc.json",
+      "redirect_url": "/vsts/pipelines/targets/npm?toc=/vsts/package/toc.json",
       "redirect_document_id": false
     },
     {
@@ -6487,8 +6487,18 @@
     },
     {
       "source_path": "docs/build-release/packages/nuget-pack-publish.md",
-      "redirect_url": "/vsts/pipelines/packages/nuget-pack-publish",
+      "redirect_url": "/vsts/pipelines/targets/nuget",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "vsts/pipelines/packages/nuget-pack-publish.md",
+      "redirect_url": "/vsts/pipelines/targets/nuget",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/packages/npm.md",
+      "redirect_url": "/vsts/pipelines/targets/npm",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/packages/nuget-restore.md",
@@ -8173,7 +8183,7 @@
     {
       "source_path": "docs/work/customize/object-limits.md",
       "redirect_url": "/vsts/organizations/settings/work/object-limits",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/settings/index.md",
@@ -8183,13 +8193,13 @@
     {
       "source_path": "docs/settings/about-teams-and-settings.md",
       "redirect_url": "/vsts/organizations/settings/about-teams-and-settings",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/settings/switch-team-context.md",
       "redirect_url": "/vsts/organizations/settings/switch-team-context",
-      "redirect_document_id": false 
-    }, 
+      "redirect_document_id": false
+    },
     {
       "source_path": "docs/collaborate/keyboard-shortcuts.md",
       "redirect_url": "/vsts/project/navigation/keyboard-shortcuts",
@@ -8318,22 +8328,222 @@
     {
       "source_path": "vsts/pipelines/apps/cd/scvmm/configure-scvmm.md",
       "redirect_url": "/vsts/pipelines/targets/scvmm",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "vsts/pipelines/targets/manage-vms-using-scvmm.md",
       "redirect_url": "/vsts/pipelines/",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "vsts/pipelines/apps/cd/provision-vm-in-vmware.md",
       "redirect_url": "/vsts/pipelines/targets/vmware",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "vsts/pipelines/library/azure-stack.md",
       "redirect_url": "/vsts/pipelines/targets/azure-stack",
-      "redirect_document_id": false 
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/about-permissions.md",
+      "redirect_url": "/vsts/organizations/security/about-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/about-security-identity.md",
+      "redirect_url": "/vsts/organizations/security/about-security-identity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/about-security-roles.md",
+      "redirect_url": "/vsts/organizations/security/about-security-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/access-levels.md",
+      "redirect_url": "/vsts/organizations/security/access-levels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/add-ad-aad-built-in-security-groups.md",
+      "redirect_url": "/vsts/organizations/security/add-ad-aad-built-in-security-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/add-users-team-project.md",
+      "redirect_url": "/vsts/organizations/security/add-users-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/change-access-levels.md",
+      "redirect_url": "/vsts/organizations/security/change-access-levels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/change-individual-permissions.md",
+      "redirect_url": "/vsts/organizations/security/change-individual-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/default-git-permissions.md",
+      "redirect_url": "/vsts/organizations/security/default-git-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/default-tfvc-permissions.md",
+      "redirect_url": "/vsts/organizations/security/default-tfvc-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/export-users-audit-log.md",
+      "redirect_url": "/vsts/organizations/security/export-users-audit-log",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/faq-network-connections.md",
+      "redirect_url": "/vsts/organizations/security/faq-network-connections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/faq-trace-permissions.md",
+      "redirect_url": "/vsts/organizations/security/faq-trace-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/get-started-stakeholder.md",
+      "redirect_url": "/vsts/organizations/security/get-started-stakeholder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/git-permissions-before-2017.md",
+      "redirect_url": "/vsts/organizations/security/git-permissions-before-2017",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/index.md",
+      "redirect_url": "/vsts/organizations/security/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/lookup-account-owner-admin.md",
+      "redirect_url": "/vsts/organizations/security/lookup-account-owner-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/permissions-access-work-tracking.md",
+      "redirect_url": "/vsts/organizations/security/permissions-access-work-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/permissions-access.md",
+      "redirect_url": "/vsts/organizations/security/permissions-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/permissions-lookup-guide.md",
+      "redirect_url": "/vsts/organizations/security/permissions-lookup-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/permissions.md",
+      "redirect_url": "/vsts/organizations/security/permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/remove-users-prohibit-access.md",
+      "redirect_url": "/vsts/organizations/security/remove-users-prohibit-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/restrict-access.md",
+      "redirect_url": "/vsts/organizations/security/restrict-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/security-glossary.md",
+      "redirect_url": "/vsts/organizations/security/security-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/set-git-tfvc-repository-permissions.md",
+      "redirect_url": "/vsts/organizations/security/set-git-tfvc-repository-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/set-permissions-access-work-tracking.md",
+      "redirect_url": "/vsts/organizations/security/set-permissions-access-work-tracking",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/set-project-collection-level-permissions.md",
+      "redirect_url": "/vsts/organizations/security/set-project-collection-level-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/set-sharepoint-permissions.md",
+      "redirect_url": "/vsts/organizations/security/set-sharepoint-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/setup-ad-aad.md",
+      "redirect_url": "/vsts/organizations/security/setup-ad-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/view-permissions.md",
+      "redirect_url": "/vsts/organizations/security/view-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security/websitesettings.md",
+      "redirect_url": "/vsts/organizations/security/websitesettings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/about-feedback.md",
+      "redirect_url": "/vsts/project/feedback/about-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/change-audio-device-annotation-tool.md",
+      "redirect_url": "/vsts/project/feedback/change-audio-device-annotation-tool",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/enable-remote-audio-capture.md",
+      "redirect_url": "/vsts/project/feedback/enable-remote-audio-capture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/get-feedback.md",
+      "redirect_url": "/vsts/project/feedback/get-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/give-feedback.md",
+      "redirect_url": "/vsts/project/feedback/give-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/give-permissions-feedback.md",
+      "redirect_url": "/vsts/project/feedback/give-permissions-feedback",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/feedback/index.md",
+      "redirect_url": "/vsts/project/feedback/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/integration-bestpractices.md",
+      "redirect_url": "/vsts/integrate/concepts/integration-bestpractices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/collaborate/rate-limits.md",
+      "redirect_url": "/vsts/integrate/concepts/rate-limits",
+      "redirect_document_id": false
     }
   ]
 }

@@ -27,5 +27,5 @@ This error may occur under the following conditions:
   
 -   Contact your Team Foundation Server or project collection administrator and ask that the required permissions be added to your user account. This includes the required permissions on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services.  
   
-For more information, see [Add accounts to administer project collections](../../../../security/set-project-collection-level-permissions.md).  
+For more information, see [Add accounts to administer project collections](../../../../organizations/security/set-project-collection-level-permissions.md).  
   

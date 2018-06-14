@@ -107,7 +107,7 @@ If you are an [administrator](https://msdn.microsoft.com/library/ms253077), you 
  
 ### Q: Someone checked out a file even though a check-out lock was applied to it. How did this happen?
 
-**A:** The use of local workspaces makes [check-out locks](understand-lock-types.md) un-enforceable. If you have [sufficient permissions](../security/permissions.md#tfvc) you can use the [workspaces command](workspaces-command.md) to see the local workspaces being used in your team project collection.
+**A:** The use of local workspaces makes [check-out locks](understand-lock-types.md) un-enforceable. If you have [sufficient permissions](../organizations/security/permissions.md#tfvc) you can use the [workspaces command](workspaces-command.md) to see the local workspaces being used in your team project collection.
 
     tf workspaces /format:detailed /owner:* /collection:https://YourServer/YourCollection/
 

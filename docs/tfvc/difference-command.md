@@ -21,7 +21,7 @@ Compares, and if it is possible, displays differences between two files, files i
 
 **Required Permissions**
 
-To use the **difference** command, you must have the **Read** permission for all specified items set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **difference** command, you must have the **Read** permission for all specified items set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf diff[erence] itemspec [/version:versionspec] [/type:filetype] 
     [/format:format [/ignorespace] [/ignoreeol] [/ignorecase] [/recursive] 

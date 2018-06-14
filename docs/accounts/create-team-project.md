@@ -35,7 +35,7 @@ If you have a team project already, and want to start coding an application proj
 
 ### VSTS
 
-1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
+1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../organizations/security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
 2. Navigate to the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page.
 
@@ -61,7 +61,7 @@ If you're using TFS 2015 Update 2 or later then you can create a team project fr
 > [!NOTE]   
 > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
 
-1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
+1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../organizations/security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
 2. Navigate to the administration overview page by hovering over the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page and selecting *Server settings*.
 
@@ -85,7 +85,7 @@ You can create a team project from Team Explorer after you have connected to an 
 > 
 > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
 
-1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
+1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../organizations/security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
 
 2.  Ask your TFS administrator about the following resources and get additional permissions as needed:
 
@@ -164,7 +164,7 @@ You can create and get team projects and other VSTS items from the command line 
 
 ## Try this next
 
-[Add team members](../security/add-users-team-project.md) to enable other users to connect to your team project.
+[Add team members](../organizations/security/add-users-team-project.md) to enable other users to connect to your team project.
 
 Also, with the team project created, you can start [developing your app in Team Foundation version control](https://msdn.microsoft.com/library/ms181382.aspx) or [use Git](../git/overview.md).
 

@@ -286,7 +286,7 @@ The team reviews the results to identify other areas of improvement and
 to increase the quality of the preventative systems and training.
 
 ### Reporting Security Issues
-If during your penetration testing you believe you have discovered a potential security flaw related to the VSTS service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/en-us/security/ff852094) page.
+If during your penetration testing you believe you have discovered a potential security flaw related to the VSTS service, please report it to Microsoft within 24 hours by following the instructions on the [Report a Computer Security Vulnerability](https://technet.microsoft.com/en-us/organizations/security/ff852094) page.
 
 >[!IMPORTANT]
 >While notifying Microsoft of penetration testing activities is no longer required, customers must still comply with the [Microsoft Cloud Unified Penetration Testing Rules of Engagement](https://technet.microsoft.com/en-us/mt784683)

@@ -68,7 +68,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage users and groups</b></p>
-<p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../security/permissions.md).</p>
+<p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
 <p>To share and contribute to your project, add user accounts to [VSTS](../accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
@@ -83,22 +83,22 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+<p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
 - [Manage users (VSTS)](../accounts/add-account-users-assign-access-levels.md)   
-- [Change access levels (TFS)](../security/change-access-levels.md)  
+- [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
-- [Area and iteration paths](../security/set-permissions-access-work-tracking.md)  
+- [Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)  
 - [Build & Release](../pipelines/policies/set-permissions.md)  
-- [Git](../security/set-git-tfvc-repository-permissions.md)  
-- [TFVC](../security/set-git-tfvc-repository-permissions.md)  
+- [Git](../organizations/security/set-git-tfvc-repository-permissions.md)  
+- [TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)  
 - [Dashboards](../report/dashboard-permissions.md)   
 - [Queries](../work/track/set-query-permissions.md)   
 - [Team admin role](../work/scale/team-administrator-permissions.md)  
-- [Test](../security/set-project-collection-level-permissions.md)  
-- [Work item tags](../security/permissions.md#tags)  
+- [Test](../organizations/security/set-project-collection-level-permissions.md)  
+- [Work item tags](../organizations/security/permissions.md#tags)  
 
 
 </td>
@@ -178,12 +178,12 @@ Use features supported by these familiar clients to manage your project and illu
  <br/>
 
 <p><b>Request feedback</b></p>
-<p>[Request feedback on working software](../feedback/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
+<p>[Request feedback on working software](../project/feedback/get-feedback.md) and easily track responses that capture interaction with video, verbal, or type-written comments.  </p>
 ![Request feedback](_img/features/feature-request-feedback.png)  
  <br/>
 
 <p><b>Feedback client</b></p>
-<p>Provide the free [Microsoft feedback client](../feedback/give-feedback.md) to capture their responses to your feedback requests. </p>
+<p>Provide the free [Microsoft feedback client](../project/feedback/give-feedback.md) to capture their responses to your feedback requests. </p>
 
 </td>
 </tr>
@@ -407,7 +407,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Delete those inherited processes that you no longer want used. Simply choose the Delete option from its context menu.  </p>
 
 <p><b>Set process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../security/set-permissions-access-work-tracking.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions).  </p>
 
 </td>
 
@@ -923,7 +923,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Git permissions</b></p>
-<p>Set permissions on a [Git project, repository, or branch](../security/permissions.md#git-repo) from the context menu or from the web portal administration page.</p>
+<p>Set permissions on a [Git project, repository, or branch](../organizations/security/permissions.md#git-repo) from the context menu or from the web portal administration page.</p>
 
 
 </td>
@@ -1009,7 +1009,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>TFVC permissions</b></p>
-<p>Set permissions on [select code management tasks](../security/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the team project.</p>
+<p>Set permissions on [select code management tasks](../organizations/security/permissions.md#tfvc) from the context menu for TFVC files or folders or the admin context for the team project.</p>
 
 
 </td>
@@ -1155,7 +1155,7 @@ pipelines\tasks\build\_img
 <p>[Define policies to automatically delete old completed builds ](../pipelines/policies/retention.md) to minimize clutter.</p>
 
 <p><b>Build permissions</b></p>
-<p>Determine who can [define, delete, and manage builds](../security/permissions.md#build).</p>
+<p>Determine who can [define, delete, and manage builds](../organizations/security/permissions.md#build).</p>
 
 
 </td>
@@ -1330,7 +1330,7 @@ pipelines\tasks\build\_img
 <p>[Specify a combination of hardware and software](../test/test-different-configurations.md) that represents a user or machine environment in which your app will run.</p>
 
 <p><b>Test permissions</b></p>
-<p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../security/set-project-collection-level-permissions.md).</p>
+<p>Set permissions on who can [manage test configurations, test environments, and publish and delete test results](../organizations/security/set-project-collection-level-permissions.md).</p>
 
 
 
@@ -1388,7 +1388,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([VSTS](../accounts/add-account-users-assign-access-levels.md) | [TFS](../security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([VSTS](../accounts/add-account-users-assign-access-levels.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -2172,13 +2172,13 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../work/scale/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
 
 <p><b>Project collection admin context</b></p>
-<p>From the collection admin context, you can [manage collection-level permissions](../security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context and then choose DefaultCollection. </p>
+<p>From the collection admin context, you can [manage collection-level permissions](../organizations/security/set-project-collection-level-permissions.md), and set build policies, and [manage extensions](../extend/overview.md). Choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context and then choose DefaultCollection. </p>
 
 
 </td>
@@ -2285,10 +2285,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage users and groups</b></p>
-<p>[Add users to built-in groups](../security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>Permission states</b></p>
-<p>Understand how [Allow, Deny, Not set and other permissions states](../security/about-permissions.md) control access to features and objects. </p>
+<p>Understand how [Allow, Deny, Not set and other permissions states](../organizations/security/about-permissions.md) control access to features and objects. </p>
 ![permission states](_img/features/alm-feature-permission-states.png)  
 <br/>
 
@@ -2302,7 +2302,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Create Windows or Active Directory groups](/tfs/server/admin/setup-ad-groups) to manage access to your team projects and collections.  </p>
 
 <p><b>Built-in groups</b></p>
-<p>Understand the [permissions granted to built-in groups](../security/permissions.md#groups) and use them to manage access to your team projects and collections.</p>
+<p>Understand the [permissions granted to built-in groups](../organizations/security/permissions.md#groups) and use them to manage access to your team projects and collections.</p>
 
 
 
@@ -2312,11 +2312,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>DevOps permissions</b></p>
 <p>Grant or restrict access to: </p>
 <ul>
-<li>[Git repositories](../security/set-git-tfvc-repository-permissions.md)</li>
+<li>[Git repositories](../organizations/security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Git branches](../git/branch-permissions.md)</li>
-<li>[TFVC source code and folders](../security/set-git-tfvc-repository-permissions.md)</li>
+<li>[TFVC source code and folders](../organizations/security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Build](../pipelines/policies/set-permissions.md)</li>
-<li>[Test](../security/set-project-collection-level-permissions.md))</li>
+<li>[Test](../organizations/security/set-project-collection-level-permissions.md))</li>
 <li>[Release](../pipelines/policies/set-permissions.md)</li>
 </ul>
 <br/>
@@ -2325,12 +2325,12 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Control access to specific features by setting permissions for a user or group.</p>
 
 <ul>
-<li>[Area and iteration paths](../security/set-permissions-access-work-tracking.md)</li>
+<li>[Area and iteration paths](../organizations/security/set-permissions-access-work-tracking.md)</li>
 <li>[Query permissions](../work/track/set-query-permissions.md)</li>
-<li>[Work item tags](../security/permissions.md#tags)</li>
-<li>[Move work items to another team project](../security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
-<li>[Permanently delete work items](../security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
-<li>[Provide feedback through the Microsoft Feedback client](../feedback/give-permissions-feedback.md)</li>
+<li>[Work item tags](../organizations/security/permissions.md#tags)</li>
+<li>[Move work items to another team project](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
+<li>[Permanently delete work items](../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions)</li>
+<li>[Provide feedback through the Microsoft Feedback client](../project/feedback/give-permissions-feedback.md)</li>
 </ul>
 <br/>
 
@@ -2342,8 +2342,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p><b>Manage administrative permissions </b></p>
 <p>[Add users to one of the following built-in groups] to provide them permissions assigned to that group: </p>
 <ul>
-<li>[Project Administrators](../security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
-<li>[Project Collection Administrators](../security/set-project-collection-level-permissions.md), who manage collection-level features </li>
+<li>[Project Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage shared features for a team project </li>
+<li>[Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md), who manage collection-level features </li>
 <li>[Team Foundation Server Administrators](/tfs/server/admin/add-administrator-tfs), who manage on-premises application servers </li>
 </ul>
 <br/>
@@ -2357,7 +2357,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Stakeholder access</b></p>
-<p>[Grant stakeholders, non-licensed users, limited access](../security/change-access-levels.md) to contribute ideas and access team dashboards.</p>
+<p>[Grant stakeholders, non-licensed users, limited access](../organizations/security/change-access-levels.md) to contribute ideas and access team dashboards.</p>
 
 <p><b>Query permissions</b></p>
 <p>Grant permissions to [create shared queries and query folders](../work/track/set-query-permissions.md).</p>
@@ -2365,14 +2365,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Process permissions</b></p>
-<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../security/set-permissions-access-work-tracking.md#process-permissions).  </p>
+<p>To customize a process, add custom fields, or change the layout of a work item form, you must be a member of the Project Collection Administrators group or be [granted explicit permissions to edit a specific process](../organizations/security/set-permissions-access-work-tracking.md#process-permissions).  </p>
 
 <p><b>Valid users</b></p>
-<p>Understand how [valid user groups are populated and the permissions they're granted](../security/about-permissions.md#validusers).</p>
+<p>Understand how [valid user groups are populated and the permissions they're granted](../organizations/security/about-permissions.md#validusers).</p>
 
 
 <p><b>Permission reference</b></p>
-<p>[Provide or restrict access](../security/permissions.md) for practically any feature, function, or object at the collection or team project level. </p>
+<p>[Provide or restrict access](../organizations/security/permissions.md) for practically any feature, function, or object at the collection or team project level. </p>
 
 <p><b>SharePoint permissions (TFS)</b></p>
 <p>Grant permissions to [view and contribute to SharePoint project portals](https://msdn.microsoft.com/library/bb558971.aspx).</p>
@@ -2516,7 +2516,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Manage processes (VSTS) </b></p>
-<p>[Add users to built-in groups](../security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
+<p>[Add users to built-in groups](../organizations/security/permissions.md) to grant them access to your team project. Optionally, create groups to customize access based on your business requirements.</p>
 
 <p><b>CMMI process</b></p>
 <p>Choose [CMMI](../work/work-items/guidance/cmmi-process.md) when your team follows more formal project methods that require a framework for process improvement and an auditable record of decisions. CMMI supports tracking requirements, change requests, risks, and reviews.</p>
@@ -2671,7 +2671,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Support stakeholders</b></p>
-<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](../security/get-started-stakeholder.md).  </p>
+<p>Members within your org who don't have a license or contribute to developing the code base [can track project priorities and provide direction, feature ideas, and business alignment to a team](../organizations/security/get-started-stakeholder.md).  </p>
 </td>
 <td width="33%">
 

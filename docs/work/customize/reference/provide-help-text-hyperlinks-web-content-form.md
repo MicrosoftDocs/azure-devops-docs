@@ -193,9 +193,9 @@ Combining Text and Hyperlinks in a Single Label
                <Control Type="WebpageControl">  
                  <WebpageControlOptions>  
                        <Content>  
-                       <![CDATA[Place HTML Formatted Process Guidance Content Here ]]>  
-                  </Content>  
-                  </WebpageControlOptions>  
+                       <![CDATA[Place HTML Formatted Process Guidance Content Here ]]>  
+                  </Content>  
+                  </WebpageControlOptions>  
                </Control>  
          </Column>  
       </Group>  

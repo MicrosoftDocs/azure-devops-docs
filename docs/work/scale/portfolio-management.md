@@ -90,7 +90,7 @@ The first step is to add a team for each feature team and management area. When 
 
 <img src="_img/pm-add-teams.png" alt="Project admin context, Add teams" style="border: 2px solid #C3C3C3;" />
 
-You'll need to be a [project administrator](../../security/set-project-collection-level-permissions.md) to perform these steps.
+You'll need to be a [project administrator](../../organizations/security/set-project-collection-level-permissions.md) to perform these steps.
 
 1. To add a team, give the team a name, and make sure to select **Create an area path with the name of the team**.
 

@@ -21,7 +21,7 @@ Restores shelved file revisions, check-in notes, comments, and work item associa
 
 **Required Permissions**
 
-To use the **unshelve** command, you must have the **Read** permission set to **Allow**, and you must have the **Check out** permission for the items in the shelveset set to **Allow**. Additionally, to delete a shelveset, you must be its owner or have the **Administer shelved changes** global permission set to **Allow**. For more information, see [Permissions and groups reference](../security/permissions.md).
+To use the **unshelve** command, you must have the **Read** permission set to **Allow**, and you must have the **Check out** permission for the items in the shelveset set to **Allow**. Additionally, to delete a shelveset, you must be its owner or have the **Administer shelved changes** global permission set to **Allow**. For more information, see [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf unshelve [/move] [shelvesetname[;username]] itemspec 
     [/recursive] [/noprompt][/login:username,[password]]

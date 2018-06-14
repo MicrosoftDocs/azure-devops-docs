@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 Displays the revision history of one or more files or folders. The data is displayed in either the History window, or if **/noprompt** option is specified, at the command prompt.
 
-**Requirements:** See [Permissions and groups reference](../security/permissions.md).
+**Requirements:** See [Permissions and groups reference](../organizations/security/permissions.md).
 
     tf hist[ory] itemspec [/version:versionspec] 
     [/stopafter:number] [/recursive] [/user:username] 

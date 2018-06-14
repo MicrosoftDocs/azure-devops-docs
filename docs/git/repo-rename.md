@@ -39,7 +39,7 @@ You can rename a Git repository in a team project from your web browser. After y
 
 0. Enter a new repo name in the **Repository name** field in the dialog, then select **Rename**.
 
-> This step requires [Rename Repository permissions](../security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
+> This step requires [Rename Repository permissions](../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
 
 ## Update the Git remotes on your dev machines
 

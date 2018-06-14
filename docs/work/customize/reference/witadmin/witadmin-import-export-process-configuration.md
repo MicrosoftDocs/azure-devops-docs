@@ -35,7 +35,7 @@ To manage the process configuration for a team project, use the **witadmin** com
 -   To export process configuration definitions, you must be a valid user of the team project or collection.    
 -   To import process configuration definitions, you must be a member of the following security groups: **Team Foundation Administrators** or **Project Administrators**.  
   
-For more information, see [Add an administrator](../../../../security/set-project-collection-level-permissions.md).  
+For more information, see [Add an administrator](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 ## Syntax  
   
@@ -76,7 +76,7 @@ You can add fields for any quick add panel. For example, the following example a
   
 The panel only displays fields that are included in the `FIELDS` section of the WIT definition for the WIT selected. For example, if you select the bug WIT, then only Title displays, as Business Value isn't defined for bugs. To add another WIT to the panel, you add it to the Requirements Category. See [Add a work item type to a backlog and board](../../add-wits-to-backlogs-and-boards.md).  
   
-1.  If you don't have administrative permissions for your team project, [get them](../../../../security/set-project-collection-level-permissions.md).  
+1.  If you don't have administrative permissions for your team project, [get them](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 2.  Open a Command Prompt window according to the instructions provided in [How to run the witadmin command-line tool](#run-witadmin-tool). For example:   
   

@@ -39,9 +39,9 @@ You can quickly get started with a team project from the project page. You can s
 
 ## Prerequisites
 
-- To edit information on the team project page or manage team membership, you must be a member of the [Project Administrators group](../../security/set-project-collection-level-permissions.md) 
-- To view the team project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../../security/about-permissions.md#validusers) 
-- To change the repository used to share your project vision, you need to be a member of the [Project Administrators group](../../security/set-project-collection-level-permissions.md).
+- To edit information on the team project page or manage team membership, you must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) 
+- To view the team project page, you must be a valid member of the team project. For more information, see [Permissions and groups, Valid user groups](../../organizations/security/about-permissions.md#validusers) 
+- To change the repository used to share your project vision, you need to be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md).
 
 
 ## Open the project home page
@@ -71,7 +71,7 @@ Upon [adding another team project](../../accounts/create-team-project.md) to you
 
 You can share your project vision and objective, as well as ways for team members to contribute to the project through a Project readme. 
 
-To edit the project README.md file, click the Edit button. You'll need to be a member of the [Project Administrators group](../../security/set-project-collection-level-permissions.md) or have your Edit project-level information permission set to allow. 
+To edit the project README.md file, click the Edit button. You'll need to be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your Edit project-level information permission set to allow. 
 
 You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md). 
 
@@ -148,7 +148,7 @@ You can change the repository used to support your project vision, including poi
 
 	<img src="_img/share-project/change-repo.png" alt="Web portal, Project page, Change repo" style="border: 1px solid #C3C3C3;" />    
 
-	If you don't see the **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../security/set-project-collection-level-permissions.md) in order to proceed.
+	If you don't see the **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) in order to proceed.
 
 0. From the select file dialog, choose an existing repo from the drop-down menu, or choose the Wiki option as shown here. 
 

@@ -26,24 +26,24 @@ For example, the following image illustrates four different charts created from 
 
 ## Prerequisites
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-- All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
+- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
 - All members who belong to the Contributors group can create charts
 - To add a chart to a team dashboard, you must be a team admin or have [dashboard permissions](dashboard-permissions.md)
 - You can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md), which is another way to add charts to a dashboard.  
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-- All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
+- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
 - All members who belong to the Contributors group can create charts
 - You can pin charts to a team homepage, and with TFS 2015.1 and later versions, you can add charts to [multiple team dashboards](dashboards.md) and get access to the [widget catalog](widget-catalog.md)  
 ::: moniker-end
 
 ::: moniker range="tfs-2013"
-- All valid users, including [stakeholders](../../security/get-started-stakeholder.md), can view charts
+- All valid users, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view charts
 - All members who belong to the Contributors group can create charts
 ::: moniker-end
 
-To learn more about default groups, see [About permissions and groups](../../security/about-permissions.md).
+To learn more about default groups, see [About permissions and groups](../../organizations/security/about-permissions.md).
 
 
 ## Create a query-based chart  
@@ -61,7 +61,7 @@ To learn more about default groups, see [About permissions and groups](../../sec
 	- To group by team, include the Area Path or Node Name in the query or column options  
 	- To group by a custom field, include it in a query clause or column options (See [Customize your work tracking experience](../../work/customize/customize-work.md) to learn about adding a custom field.).
 
-	If you receive an error message when you close the chart editor, you need to request [Basic access](../../security/change-access-levels.md).
+	If you receive an error message when you close the chart editor, you need to request [Basic access](../../organizations/security/change-access-levels.md).
 
 3.	To sort the results, choose value or label as the sort option and then ascending or descending.  
 	 

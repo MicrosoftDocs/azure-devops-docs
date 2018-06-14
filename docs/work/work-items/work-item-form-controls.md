@@ -181,7 +181,7 @@ Type an ID in the Search work items box and then choose the search icon.
 
 Use the ![context menu icon](../_img/icons/context_menu.png) context menu to add a filter based on [assignment, status, a keyword, or a work item type](../track/example-queries.md). 
 
-Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu, add filters to find items based on assignment, status, a keyword, or a work item type. For example, enter **A=@Me T=Task** to list all tasks assigned to you. Use the **=**, **:**, and **"“** operators to specify the operations: Equals, Contains, and Not, respectively.  
+Or, using the ![context menu icon](../_img/icons/context_menu.png) context menu, add filters to find items based on assignment, status, a keyword, or a work item type. For example, enter **A=@Me T=Task** to list all tasks assigned to you. Use the **=**, **:**, and **-** operators to specify the operations: Equals, Contains, and Not, respectively.  
 
 Once you have a results list, you can [modify the filter criteria to refine your search results](../track/using-queries.md).
 

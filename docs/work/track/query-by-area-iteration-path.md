@@ -121,7 +121,7 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 *	[Customize iteration paths](../customize/set-iteration-paths-sprints.md)  
 *	[Customize area paths](../customize/set-area-paths.md)  
 *	[Manage team assets](../scale/manage-team-assets.md)  
-*	[Set permissions and access for work tracking](../../security/set-permissions-access-work-tracking.md) 
+*	[Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
 
 
 <a name="field-rules"></a>
