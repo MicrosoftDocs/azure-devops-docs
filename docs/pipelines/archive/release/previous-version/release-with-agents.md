@@ -84,7 +84,7 @@ You also need a build definition that builds your app.
 1.  [Start a new release](manage-your-release.md#StartRelease).
 1.  [Approve steps in a stage](manage-your-release.md#ApproveSteps).
 
-## Q & A
+## Q&A
 
 ### Q: Can I deploy components of my multi-tiered app separately?
 

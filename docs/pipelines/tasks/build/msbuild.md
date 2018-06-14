@@ -25,7 +25,7 @@ msbuild
 
 > **VSTS:** If your team uses Visual Studio 2017 and you want to use our Microsoft-hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Microsoft-hosted agents](../../agents/hosted.md).
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -77,7 +77,11 @@ If you use TFVC, make sure that the  project is a child of one of the mappings o
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../_shared/msbuild_qa.md)]

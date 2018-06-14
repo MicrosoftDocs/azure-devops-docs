@@ -283,7 +283,7 @@ The following will also need to be in your path:
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)
 * [Ask for help on StackOverflow](http://stackoverflow.com/questions/tagged/visual-studio-cordova)
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

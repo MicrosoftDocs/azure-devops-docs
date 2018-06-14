@@ -117,7 +117,7 @@ A GitHub user can fork your repository, change it, and create a pull request to 
 
 1. If your repository is public, do not enable the checkbox labeled **Make secrets available to builds of forks**. Otherwise, secrets could leak during a build.
 
-## Q&A
+## Q & A
 
 ### How do I use a personal access token to authorize the VSTS to GitHub connection?
 

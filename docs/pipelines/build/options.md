@@ -252,7 +252,7 @@ Select this option to build multiple configurations. For example, you could buil
 In VSTS and TFS 2018, you set this option in the **Tasks** tab for each **Phase** in your definition (not in the **Options** tab).
 To learn about multi-configuration, see the example [Build your C++ app for Windows](../apps/windows/cpp.md).
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

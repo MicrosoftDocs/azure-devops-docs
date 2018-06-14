@@ -26,7 +26,7 @@ monikerRange: '>= tfs-2015'
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -45,6 +45,10 @@ None
 | Parallel copy (**VSTS**, **TFS 2018**, or newer) | Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, a single thread will be used. |
 | Parallel count (**VSTS**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. Typically, 8 is a good starting value. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

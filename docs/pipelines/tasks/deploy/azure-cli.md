@@ -50,7 +50,7 @@ None
   See [Install the Azure CLI](https://azure.microsoft.com/en-us/documentation/articles/xplat-cli-install/).
   If an agent is already running on the machine on which the Azure CLI is installed, restart the agent to ensure all the relevent environment variables are updated.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -79,7 +79,11 @@ None
 * [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
 * [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]

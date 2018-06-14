@@ -67,7 +67,7 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Result:**      
 
-<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />   Â  
+<img src="_img/markdown-guidance/mrkdown-headers.png" alt="Web portal, Headers 1 through 5" style="border: 1px solid #C3C3C3;" />     
 
 ## Paragraphs and line breaks
 
@@ -416,7 +416,7 @@ You can Use `[ ]` or `[x]` to support checklists. You need to precede the checkl
 > [!div class="mx-imgBorder"]  
 > ![Apply markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-apply.png) 
 
-Once youâ€™ve added a task list, you can simply check the boxes to mark items as completed. These are expressed and stored within the comment as [ ] and [x] in Markdown. 
+Once you've added a task list, you can simply check the boxes to mark items as completed. These are expressed and stored within the comment as [ ] and [x] in Markdown. 
 
 > [!div class="mx-imgBorder"]  
 > ![Apply markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-applied-check.png) 
@@ -436,7 +436,7 @@ Once youâ€™ve added a task list, you can simply check the boxes to mark items as
 <br/>
 **Result:**  
  
-<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" />   Â 
+<img src="_img/markdown-guidance/markdown-checklists.png" alt="Checklists" style="border: 1px solid #C3C3C3;" />    
 
 > [!NOTE]   
 > A checklist within a table cell isn't supported. 
@@ -626,14 +626,14 @@ In pull request comments and wiki pages, you can attach files to illustrate your
 
 ::: moniker range=">= tfs-2017"
 
-<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />   Â  
+<img src="_img/markdown-guidance/attach_files.png" alt="Web portal, Pull Request, Attach files via drag and drop i" style="border: 1px solid #C3C3C3;" />     
 
 If you have an image in your clipboard, you can paste it from the clipboard into the comment box or wiki page and it will render directly into your comment or wiki page.
 
 Attachments support the following file formats:
 
-> [!div class="mx-tdCol2BreakAll"] Â  Â 
-> | Â  Â Type Â  Â | File formats |
+> [!div class="mx-tdCol2BreakAll"]
+> |    Type    | File formats |
 > |------|---------| 
 > | Code | CS (.cs), Extensible Markup Language (.xml), JavaScript Object Notation (.json), Layer (.lyr), Windows PowerShell script (.ps1), Roshal Archive (.rar), Remote Desktop Connection (.rdp), Structured Query Language (.sql)   | 
 > | Compressed files | ZIP (.zip) and GZIP (.gz) | 

@@ -28,7 +28,7 @@ This task uses a Service Fabric installation to connect and
 deploy to a Service Fabric cluster.  
 [Download and install Service Fabric](https://aka.ms/servicefabric) on the build agent.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -47,7 +47,11 @@ deploy to a Service Fabric cluster.
 
 Also see: [Update Service Fabric App Versions task](../utility/service-fabric-versioning.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]

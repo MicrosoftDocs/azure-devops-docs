@@ -188,7 +188,7 @@ In many cases you'll want to download artifacts from the triggering build. To do
 
 ::: moniker-end
 
-## Q&A
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
