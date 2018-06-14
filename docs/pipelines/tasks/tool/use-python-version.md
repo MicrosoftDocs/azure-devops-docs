@@ -26,7 +26,7 @@ None
 
 This task will fail if no Python versions are found in the tool cache.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -46,7 +46,11 @@ If the task completes successfully, the task's output variable will contain the 
 
 ![output variable](_img/use_python_version_output_variable.png)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn more about tool installers?

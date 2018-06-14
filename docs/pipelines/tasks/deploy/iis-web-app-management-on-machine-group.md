@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/iiswebappmanagementonmachinegroup.png) Create or update a Website, Web App, Virtual Directories, and Application Pool
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -99,7 +99,11 @@ Example: To create an application Site/Application enter /Application. The paren
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 

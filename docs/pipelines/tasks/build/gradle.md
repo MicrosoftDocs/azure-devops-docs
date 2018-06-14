@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 ![](_img/gradle.png) Build using a Gradle wrapper script
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -120,7 +120,11 @@ If the Checkstyle analysis is customized, the task only attempts to find the rep
 
 [Build your Java app with Gradle](../../apps/java/build-gradle.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How do I generate a wrapper from my Gradle project?
