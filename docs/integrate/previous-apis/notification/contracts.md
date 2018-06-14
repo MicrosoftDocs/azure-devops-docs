@@ -833,4 +833,4 @@ This is the type used for firing notifications intended for the subsystem in the
 | <code>artifactUris</code> | array (string) | Optional: A list of artifacts referenced or impacted by this event.
 | <code>data</code> | object | Required: The event payload.  If Data is a string, it must be in Json or XML format.  Otherwise it must have a serialization format attribute.
 | <code>eventType</code> | string | Required: The name of the event.  This event must be registered in the context it is being fired.
-| <code>scopes</code> | array ([EventScope](#EventScope)) | Optional: A list of scopes which are are relevant to the event.
+| <code>scopes</code> | array ([EventScope](#EventScope)) | Optional: A list of scopes which are relevant to the event.
