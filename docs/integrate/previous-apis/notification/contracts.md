@@ -697,7 +697,7 @@ Conditions a subscription must match to qualify for the query result set. Not al
 | Field        | Type      | Notes
 | :----------- | :-------- | :----------
 | <code>filter</code> | [ISubscriptionFilter](#ISubscriptionFilter) | Filter conditions that matching subscriptions must have. Typically only the filter's type and event type are used for matching.
-| <code>flags</code> | [SubscriptionFlags](#SubscriptionFlags) | Flags to specify the the type subscriptions to query for.
+| <code>flags</code> | [SubscriptionFlags](#SubscriptionFlags) | Flags to specify the type of subscriptions to query for.
 | <code>scope</code> | string | Scope that matching subscriptions must have.
 | <code>subscriberId</code> | GUID | ID of the subscriber (user or group) that matching subscriptions must be subscribed to.
 | <code>subscriptionId</code> | string | ID of the subscription to query for.

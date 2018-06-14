@@ -21,7 +21,7 @@ You can use version control commands to do nearly all tasks you can do in Visual
 
 ## Run a command
 
-To launch the Visual Studio command prompt, from Windows **Start**, choose **Visual Studio 2015**,   then choose the the **Developer Command Prompt for V2015** shortcut.
+To launch the Visual Studio command prompt, from Windows **Start**, choose **Visual Studio 2015**,   then choose the **Developer Command Prompt for V2015** shortcut.
 
 > Visual Studio 2017 users: The tf.exe binary is no longer in a fixed location in the Visual Studio install path as in previous releases (for example, C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE). Scripts using tf.exe should not hardcode a path to the file based on the Visual Studio 2017 install path.
 

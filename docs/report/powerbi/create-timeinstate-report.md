@@ -470,7 +470,7 @@ IF (
 ## DAX functions
 Additional information is provided in this section for the DAX functions used to created the calculated columns and measure added in this article. 
 
-* [`CALCULATE`](https://msdn.microsoft.com/query-bi/dax/calculate-function-dax): This function is the the basis for nearly all examples. The basic structure is an expression followed by a series of filters which are applied to the expression.     
+* [`CALCULATE`](https://msdn.microsoft.com/query-bi/dax/calculate-function-dax): This function is the basis for nearly all examples. The basic structure is an expression followed by a series of filters which are applied to the expression.     
 
 * [`COUNTROWS`](https://msdn.microsoft.com/en-us/query-bi/dax/countrows-function-dax): This function, `COUNTROWS ( 'View Name' )`, simply counts the number of rows which remain after the filters are applied. 
 	
