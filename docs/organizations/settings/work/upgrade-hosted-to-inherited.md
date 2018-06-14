@@ -14,7 +14,7 @@ ms.date: 05/30/2018
 
 # Upgrade a Hosted XML process to an Inheritance process   
 
-[!INCLUDEÂ [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
 Upgrading your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -65,7 +65,7 @@ The general sequence of steps to support upgrade are:
 
 0. After  you've confirmed that the information is correct, choose **Save**. 
 
-[!INCLUDEÂ [temp](../_shared/post-upgrade-steps.md)]
+[!INCLUDE [temp](../_shared/post-upgrade-steps.md)]
 
 <a id="verify">  </a>
 ## Verify the customization you made 

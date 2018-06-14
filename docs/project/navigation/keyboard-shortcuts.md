@@ -110,7 +110,7 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 ## Work hub, Plans page
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]  Â 
+[!INCLUDE [temp](../../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]   
 
 ::: moniker-end
 
@@ -193,7 +193,7 @@ Use these shortcuts when working in Team Explorer.
 
 You can use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)]  Â 
+[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)]   
 
 
 <!---
