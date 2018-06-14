@@ -131,7 +131,7 @@ When TIA opens a commit and sees an unknown file type, it falls back to running 
 To evaluate whether TIA is selecting the appropriate tests:
 
 * Manually validate the selection. A developer who knows how the SUT and tests are architected could manually validate the test selection using the [TIA reporting capabilities](#tiareports).
-* Run TIA selected tests and then all tests in sequence. In a build definition, use two test tasks - one that runs only impacted Tests (T1) and one that runs all tests (T2). If T1 passes, check that that T2 passes as well. If there was a failing test in T1, check that T2 reports the same set of failures.
+* Run TIA selected tests and then all tests in sequence. In a build definition, use two test tasks - one that runs only impacted Tests (T1) and one that runs all tests (T2). If T1 passes, check that T2 passes as well. If there was a failing test in T1, check that T2 reports the same set of failures.
 
 [More information about TIA advanced configuration](https://blogs.msdn.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
 
