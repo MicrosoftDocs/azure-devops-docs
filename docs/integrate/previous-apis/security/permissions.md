@@ -121,6 +121,6 @@ DELETE https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?t
 | permissions       | int      |         | The permission bits to remove from the ACE's allow and deny bitmasks.
 | Query 
 | token             | string   |         | The token whose ACL contains the ACE to be modified.
-| descriptor        | IdentityDescriptor |         | The descriptor of the ACE to to be modified.
+| descriptor        | IdentityDescriptor |         | The descriptor of the ACE to be modified.
 
 [!code-REST [DELETE_permissions](./_data/DELETE__permissions__securityNamespaceId__4__token-_token1__descriptor-_descriptor_.json)]
