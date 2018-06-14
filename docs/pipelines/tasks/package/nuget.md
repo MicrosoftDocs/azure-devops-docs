@@ -31,7 +31,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 > [!NOTE]
 > Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -283,7 +283,7 @@ This task is unable to publish NuGet packages to a TFS Package Management feed t
 
 ## Custom NuGet command
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -446,6 +446,10 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 | Task version | VSTS                     | TFS                                           |
 |--------------|--------------------------|-----------------------------------------------|
 | [0.*](#custom-nuget-command)            | Deprecated but available | Available in TFS < 2017 Update 2, deprecated in TFS >= 2018 |
+
+## Open source
+
+These tasks are open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

@@ -24,7 +24,7 @@ If your .NET Core or .NET Standard build depends on NuGet packages, make sure to
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ### YAML snippet
 
@@ -55,7 +55,7 @@ None
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ### YAML snippet
 
@@ -107,7 +107,7 @@ If you choose 'Use the build number', this will use the build number to version 
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ### YAML snippet
 
@@ -138,7 +138,7 @@ None
 
 ## Custom NuGet command
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ### YAML snippet
 
@@ -164,6 +164,10 @@ None
 <tr><td>Arguments</td><td>(Optional) Arguments to the selected command. For example, build configuration, output folder, runtime. The arguments depend on the command selected.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
+
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
 
 ## Q & A
 

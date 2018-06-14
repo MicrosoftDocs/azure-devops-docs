@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 ![icon](_img/publish-code-coverage-results-icon.png)
 Publishes code coverage results that were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format.
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -46,7 +46,11 @@ Publishes code coverage results that were produced by a build in [Cobertura](htt
 
 * [Publish Test Results](publish-test-results.md)
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="< vsts"

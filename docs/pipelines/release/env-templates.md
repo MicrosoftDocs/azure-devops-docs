@@ -40,7 +40,7 @@ If you want a way to easily insert a number of environments into release definit
 (perhaps to keep the definitions consistent) and to enable these environments to all be updated
 in one operation, use [task groups](../library/task-groups.md) instead of environment templates.
 
-## Q&A
+## Q & A
 
 ### Can I export templates or share them with other accounts or projects?
 

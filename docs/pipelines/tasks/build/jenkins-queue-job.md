@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 
 None
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -109,7 +109,11 @@ To set it up:
 Results will be downloaded to the <b>$(Build.StagingDirectory)/jenkinsResults/&lt;Job Name&gt;/team-results.zip</b> and extracted to this location.  Each set of result types collected by the plug-in, will be under the team-results directory, <b>$(Build.StagingDirectory)/jenkinsResults/&lt;Job Name&gt;/team-results/&lt;ResultType&gt;/</b>.  This is the directory where build results can be published by downstream tasks (e.g. Publish Test Results, and Publish Code Coverage Results).     
 
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]

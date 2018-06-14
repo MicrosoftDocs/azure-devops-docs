@@ -40,7 +40,7 @@ This exercise assumes you have completed [the VSTS Java project setup tutorial](
 
     ![Click on Help > Install New Software](../_img/eclipsegit/eclipse-install-new-software.png)
 
-1. Choose the Add button to add a new repository.  Use Team Explorer Everywhere as the name. The location of the update site is http://dl.microsoft.com/eclipse
+1. Choose the Add button to add a new repository.  Use Team Explorer Everywhere as the name. The location of the update site is https://marketplace.eclipse.org/content/team-explorer-everywhere. Note that the screenshots show a previous version of the marketplace site.
 
     ![Add Repository](../_img/eclipsegit/AddRepository.cropped.png)
 

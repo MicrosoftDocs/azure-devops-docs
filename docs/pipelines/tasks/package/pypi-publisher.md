@@ -37,7 +37,7 @@ A generic service connection for a PyPI index.
 > * **User name**: username for your PyPI account
 > * **Password/Token Key**: password for your PyPI account
 
-::: moniker range="vsts"
+::: moniker range=">tfs-2018"
 
 ## YAML snippet
 
@@ -53,7 +53,11 @@ A generic service connection for a PyPI index.
 | Python package directory | The directory of the Python package to be created and published, where setup.py is present. |
 | Also publish a wheel | Select whether to create and publish a [universal wheel](https://packaging.python.org/tutorials/distributing-packages/#wheels) package (platform independent) in addition to an sdist package. |
 
-## Q&A
+## Open source
+
+This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). Feedback and contributions are welcome.
+
+## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../_shared/qa-agents.md)]

@@ -26,7 +26,7 @@ Some features provide a new user interface and functionality, which can be manag
 > You can turn on or off select features for VSTS. Preview features become available first on VSTS and then subsequently are made available with an update to TFS. At some point, the preview feature will be moved out of preview status and become a regular feature of the web portal.  
 
 > [!div class="mx-tdBreakAll"] 
-> |[Preview features per user](#user-level) Â |[Preview features per account](#account-level) Â |
+> |[Preview features per user](#user-level)  |[Preview features per account](#account-level)  |
 > |-------------|----------|
 > |- [Approval gates in releases](../../pipelines/release/approvals/index.md)<br/>- [New Dashboards Experience](../../report/dashboards/dashboards.md)<br/>- [New Queries Experience](../../work/track/view-run-query.md)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md) |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/build/yaml.md)<br/>- [Git Forks](../../git/concepts/forks.md)<br/>- [New Dashboards Experience](../../report/dashboards/dashboards.md)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md) |
 

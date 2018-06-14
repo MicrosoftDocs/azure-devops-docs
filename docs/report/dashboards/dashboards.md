@@ -45,7 +45,7 @@ The Overview page provides access to a default team dashboard which you can cust
 ::: moniker range="tfs-2015"
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)] 
 ::: moniker-end
-Â 
+ 
 
 ::: moniker range=">= tfs-2015"
 ## Connect to the web portal for your team project 
@@ -393,7 +393,7 @@ And, you can add a chart to a team dashboard in a similar way.
 ## Add widgets to your dashboard
 
 >[!NOTE]  
-><b>Feature availability: </b>Dashboard edit mode controls shown appear from VSTS or TFS 2015.2 or later version. Some functionality differs when you connect to an application server running TFS 2015.1 or later version.  Â 
+><b>Feature availability: </b>Dashboard edit mode controls shown appear from VSTS or TFS 2015.2 or later version. Some functionality differs when you connect to an application server running TFS 2015.1 or later version.   
 
 ### Add a widget  
 
