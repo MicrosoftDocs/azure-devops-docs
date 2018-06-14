@@ -28,6 +28,14 @@ The SQL script can be specified either as an artifact or as an inline script.
 
 ![Specifying the type and content of a script](_img/powershell-for-sqldacpac.png)
 
+## Requirements
+
+* The utility **SqlPackage.exe** must be installed on the computer or VM.
+
+* You cannot use the Hosted agent, you must install an agent on the target computer or VM.
+
+* If you execute **SQLPackage** from the folder where it is installed, you must prefix the path with `&` and wrap it in double-quotes.
+
 ## Basic Syntax 
 
 `<Path of SQLPackage.exe> <Arguments to SQLPackage.exe>`
