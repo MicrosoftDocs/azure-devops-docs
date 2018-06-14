@@ -1,6 +1,6 @@
 ---
-title: Build a repo with YAML file
-description: Set up CI for a repo containing a YAML file
+title: Build a repository with YAML
+description: Set up CI for a repository containing a YAML file
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -12,7 +12,7 @@ ms.date: 5/10/2018
 monikerRange: 'vsts'
 ---
 
-# Build a repo with YAML file
+# Build a repository with YAML
 
 If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, then you can use VSTS pipelines to easily build the repo by adding a YAML file to it. VSTS pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
 
