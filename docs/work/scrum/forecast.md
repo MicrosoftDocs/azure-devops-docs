@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 ms.date: 03/20/2018
 ---
@@ -38,7 +39,7 @@ To forecast your product backlog, perform the following actions:
 
 *	Open your product backlog. You can only forecast the product backlog of Stories, Backlog items, or Requirements.
 *	Set **Forecast** to **On** and enter your team's predicted velocity.If the Forecasting bar doesn't appear, set Parents to Hide. 
-*	Set **In progress** items to **Hide** to hide those items that that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
+*	Set **In progress** items to **Hide** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to Committed or Done and Agile and CMMI items set to Active, Resolved, or Completed. 
 *	Select enough [future sprints for your team](../scale/set-team-defaults.md#activate) to forecast your entire product backlog.
 *	Check the results manually to understand discrepancies in what you expect and what the forecast tool displays.  
 *	Check the amount of effort (Effort, Story Points, or Size) forecasted per sprint. 

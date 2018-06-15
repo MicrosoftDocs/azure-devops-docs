@@ -20,7 +20,7 @@ If you don't find an answer to your question here, try the [ExtendVS Gitter foru
 
 ## General
 <a name="marketplace"></a>
-#### Q: How do I add my extension the the Visual Studio Marketplace?
+#### Q: How do I add my extension to the Visual Studio Marketplace?
 
 A: The Visual Studio Marketplace is currently in preview. Continue managing your Visual Studio extensions through the [Gallery](https://visualstudiogallery.msdn.microsoft.com/). Once the Marketplace is ready, your extension will be automatically migrated to the Marketplace.
 
