@@ -24,16 +24,12 @@ The definitive guide to the Capability Maturity Model Integration (CMMI) for Dev
   
 ##  <a name="Why"></a> Why use a model?  
  Without a model of how our organizations work, which functions they need, and how those functions interact, it is difficult to lead efforts to improve. A model gives us an understanding of discrete elements in our organizations and helps us formulate language and discussion of what needs to be improved and how such improvement might be achieved. A model offers the following benefits:  
-  
--   provides a common framework and language to help communicate  
-  
--   leverages years of experience  
-  
--   helps users keep the big picture in mind while focusing specifically on improvement  
-  
--   is often supported by trainers and consultants  
-  
--   can provide a standard to help solve disagreements  
+
+- provides a common framework and language to help communicate  
+- leverages years of experience  
+- helps users keep the big picture in mind while focusing specifically on improvement  
+- is often supported by trainers and consultants  
+- can provide a standard to help solve disagreements  
   
 ##  <a name="What"></a> What is the purpose of the CMMI model?  
  The textbook will tell you that the purpose of the model is to assess the maturity of an organization's processes and to provide guidance on improving processes that will lead to improved products. When talking directly with people from the Software Engineering Institute, you might hear them say that the CMMI is a model for risk management and indicates an organization's ability to manage risk. This indication is evidence for the likelihood that the organization can deliver on its promises or deliver products of high quality that are attractive to the market. Another way to think of this is that the model provides a good indicator of how an organization will perform under stress. A high maturity, high capability organization will take unexpected, stressful events in its stride, react, change, and proceed forward. A low maturity and lower capability organization will tend to panic under stress, blindly follow obviated procedures, or throw out all process altogether and retrench back to chaos.  
@@ -57,7 +53,8 @@ The definitive guide to the Capability Maturity Model Integration (CMMI) for Dev
   
  The Continuous model seems to have some greater success as a guide to process improvement, and some consulting firms choose only to offer guidance around the Continuous model. The most obvious difference is that a process improvement program that is designed around the Continuous model does not have artificial goals that are determined by maturity levels. The Continuous model also more naturally lends itself to applying process improvement in the areas where it is most likely to leverage an economic benefit for the organization. Therefore, those who follow the Continuous model are more likely to receive positive feedback from an initiative that is based on the CMMI model. Moreover, positive feedback is more likely to lead to the development of a virtuous cycle of improvements.  
   
-##  <a name="Elements"></a> Elements of the CMMI model  
+<a name="Elements"></a> 
+##  Elements of the CMMI model  
  The CMMI model is divided into 22 process areas, which are listed in the following table:  
   
 |Acronym|Process Area|  
@@ -96,17 +93,7 @@ The definitive guide to the Capability Maturity Model Integration (CMMI) for Dev
  Each process area is made up of required, expected, and informative components. Only the required components are actually required to satisfy an appraisal against the model. The required components are the specific and generic goals for each process area. The expected components are the specific and generic practices for each specific or generic goal. Note that, because an expected component is merely expected and not required, this indicates that a specific or generic practice can be replaced by an equivalent practice. The expected practices are there to guide implementers and appraisers. If an alternative practice is chosen, it will be up to the implementer to advise an appraiser and justify why an alternative practice is appropriate. Informative components provide details that help implementers get started with a process improvement initiative that is guided by the CMMI model. Informative components include sub-practices of generic and specific practices and typical work products.  
   
  It is very important that we understand that only generic and specific goals are required. Everything else is provided as a guide. The examples of the expected and informative components that are given in the CMMI literature are very often pulled from large space and defense-systems integration projects. These projects are run by companies that sponsor and support the Software Engineering Institute at Carnegie-Mellon University. These projects may not reflect the type of projects that are undertaken in your organization, nor may they reflect more recent trends in the industry, such as the emergence of agile software development methods.  
-  
-##  <a name="resources"></a> Additional resources  
- For more information, see the following web resources:  
-  
--   [CMMI for Development, Version 1.3, Improving processes for developing better products and services](http://www.sei.cmu.edu/reports/10tr033.pdf) Software Engineering Process Management Program  
-  
--   [CMMI Institute](http://whatis.cmmiinstitute.com/get-started)  
-  
--   [CMMI: Guidelines for Process Integration and Product Improvement](http://go.microsoft.com/fwlink/?LinkId=178999) (2nd Edition), Mary Beth Chrissis, Mike Konrad, and Sandy Shrum; Addison-Wesley Professional, 2006.  
-  
--   [CMMI Distilled: A Practical Introduction to Integrated Process Improvement](http://go.microsoft.com/fwlink/?LinkId=179000) (3rd Edition), Dennis M. Ahren, Aaron Clause, and Richard Turner; Addison-Wesley Professional, 2008.  
-  
+
+
 ## Related articles
  [CMMI process](../cmmi-process.md)
