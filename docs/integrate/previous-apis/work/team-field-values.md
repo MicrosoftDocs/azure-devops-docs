@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 # Team field values
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
-The team field is used to identify which work items belong to your team. By default, Area Path is the team field, but it can be any field. Use this API to get and set the the team field values.
+The team field is used to identify which work items belong to your team. By default, Area Path is the team field, but it can be any field. Use this API to get and set the team field values.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 

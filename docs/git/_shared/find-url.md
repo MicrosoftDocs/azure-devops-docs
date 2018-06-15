@@ -16,7 +16,7 @@ A: You'll find it in the code hub in your team project.
 
  ![Team project home page, code explorer](_img/code-explorer.png)   
 
-3. Select the the repository and click on the **clone** action to get the URL.   
+3. Select the repository and click on the **clone** action to get the URL.   
 
  ![Team project home page, code explorer, clone selected to show the URL](_img/clone-url.png)
 

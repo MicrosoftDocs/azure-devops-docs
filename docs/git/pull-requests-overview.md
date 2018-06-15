@@ -91,7 +91,7 @@ You want reviewers that will know how your code works, but try to also include d
 Provide a clear description of your changes and provide a build of your code that has your fix or feature running in it.
 
 Reviewers should make an effort to provide feedback on changes they don't agree with.
-Identify the the issue and give a specific suggestions on what you would do differently.
+Identify the issue and give a specific suggestions on what you would do differently.
 This feedback has clear intent and is easy for the owner of the pull request to understand.
 The pull request owner should reply to the comments, accepting the suggestion or explaining why the suggested change isn't ideal.
 Sometimes a suggestion is good, but the changes are outside the scope of the pull request.

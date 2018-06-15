@@ -161,7 +161,7 @@ Use these shortcuts when working in Team Explorer.
 
 <br/>
 **Ctrl+'**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box  
-**Alt+0**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to to top of page  
+**Alt+0**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of page  
 **Alt+1**&#8230;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to visible section [1 thru 9]   
 **Alt+**![Up/Down arrow](../../work/_img/icons/Arrow_Up.png)![ ](../../work/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next/previous section 
 

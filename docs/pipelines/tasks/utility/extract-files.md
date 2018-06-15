@@ -52,7 +52,7 @@ None
 <li>```**\*.tar``` extracts all .tar files in the root folder and sub-folders.</li>
 <li>```**\bin\*.7z``` extracts all ''.7z'' files in any sub-folder named bin.</li>
 </ul>
-<p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as ```**\bin\**``` instead of of ```**\bin```.</p>
+<p>The pattern is used to match only archive file paths, not folder paths, and not archive contents to be extracted. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
 </td>
 </tr>
 <tr>

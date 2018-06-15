@@ -81,7 +81,7 @@ include all the data from Details
 View, as well as automatically linking the build, 
 test run, and a generated title.
 
-![Creating actionable bugs that include all the data from from Details View](_img/continuous-test-java/continuous-test-java-05.png)
+![Creating actionable bugs that include all the data from Details View](_img/continuous-test-java/continuous-test-java-05.png)
 
 <a name="code-coverage"></a>
 ## Code coverage results
