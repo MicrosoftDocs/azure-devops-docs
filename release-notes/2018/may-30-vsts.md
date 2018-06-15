@@ -20,6 +20,10 @@ Read about the new features below and head over to VSTS to try them for yourself
 > [!div class="nextstepaction"]
 > [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/FDzl0akqCoY?rel=0]
+
 ## Features
 
 ### Work
