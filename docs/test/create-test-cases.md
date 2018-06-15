@@ -51,7 +51,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
    Now you've created a test case that you can run.
 
 >Test iterations are design to support data-driven scenarios, not workflow-driven scenarios.
-From a best practice perspective, if you have two test scenarios where the the workflows are
+From a best practice perspective, if you have two test scenarios where the workflows are
 different, consider creating separate test cases. 
 
 <a name="assigncase"></a>

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 8898c116-62f8-416f-af33-90c389a038bb
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2015'
 ms.date: 02/14/2017
@@ -22,7 +23,7 @@ ms.date: 02/14/2017
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).   
 
 
-You can use the `Layout` element to define how the elements on the work item form appear. You can define more than one layout to support different clients, such as the Windows client for Visual Studio or the the web portal layout.  
+You can use the `Layout` element to define how the elements on the work item form appear. You can define more than one layout to support different clients, such as the Windows client for Visual Studio or the web portal layout.  
   
 To add elements to a form, you modify the definition for a work item type. See [Modify or add a custom work item type](../add-modify-wit.md).  
   

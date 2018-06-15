@@ -34,7 +34,7 @@ Module path: `TFS/TestManagement/Contracts`
 
 * `project`: [ShallowReference](../../../TFS/TestManagement/Contracts/ShallowReference.md). Project to which the configuration belongs
 
-* `revision`: number. Revision of the the configuration
+* `revision`: number. Revision of the configuration
 
 * `state`: [TestConfigurationState](../../../TFS/TestManagement/Contracts/TestConfigurationState.md). State of the configuration
 
