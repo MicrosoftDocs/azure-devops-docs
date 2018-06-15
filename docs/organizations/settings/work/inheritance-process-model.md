@@ -135,7 +135,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When the value of Approved is True, then make Approved By a required field 
 - When a user story is created, make the following fields required: Priority, Risk, and  Effort
 
-[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
+[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
