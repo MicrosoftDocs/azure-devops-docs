@@ -70,7 +70,7 @@ GET https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?api-
 | api-version       | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use. Works with Version 2.2 and above.
 | tokens            | string   |         | String containing a list of tokens (separated by the delimiter) on which to check permissions.
 | alwaysAllowAdministrators | bool     |         | True if members of the Administrators group should always pass the security check.
-| delimiter         | char     | ,       | The delimiter to use when encoding the the list of tokens on the wire as a single string.
+| delimiter         | char     | ,       | The delimiter to use when encoding the list of tokens on the wire as a single string.
 
 [!code-REST [GET_permissions_plural](./_data/GET__permissions__securityNamespaceId__8__api-version-2.2_tokens-_token1_,_token2_,_token3__alwaysAllowAdministrators-False.json)]
 
@@ -121,6 +121,6 @@ DELETE https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?t
 | permissions       | int      |         | The permission bits to remove from the ACE's allow and deny bitmasks.
 | Query 
 | token             | string   |         | The token whose ACL contains the ACE to be modified.
-| descriptor        | IdentityDescriptor |         | The descriptor of the ACE to to be modified.
+| descriptor        | IdentityDescriptor |         | The descriptor of the ACE to be modified.
 
 [!code-REST [DELETE_permissions](./_data/DELETE__permissions__securityNamespaceId__4__token-_token1__descriptor-_descriptor_.json)]

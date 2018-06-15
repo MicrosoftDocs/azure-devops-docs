@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: dfd7bc62-dd68-4412-a86d-5f82c3ad9af3
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -44,7 +45,7 @@ ms.date: 01/12/2017
 > [!IMPORTANT]
 >  In most configurations, you should not remove the default field mappings because the synchronization process requires them. For example, do not remove the default mappings if your enterprise project plan maps to a team project that was created from a process template that is based on either the Microsoft Solutions Framework (MSF) for Agile Software Development or the Capability Maturity Model Integration (CMMI) Process Improvement.  
 >   
->  However, if your plan maps to a team project that was created using the Visual Studio Scrum process template, you may need to remove some of the default mappings. If your project collection contains only team projects that were created using the Scrum template, you may receive an error when you configure the two server products. For best results, add Completed Work (Microsoft.VSTS.Scheduling.CompletedWork) and Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate) to the work items that you intend to map. Also, you will need to to remove the `<EMPTY />` workflow statements from the task type definition. For more information, see [Required Changes to Make When Mapping to a Team Project That Was Created From the Scrum Process Template](customize-field-mapping-tfs-project-server.md).  
+>  However, if your plan maps to a team project that was created using the Visual Studio Scrum process template, you may need to remove some of the default mappings. If your project collection contains only team projects that were created using the Scrum template, you may receive an error when you configure the two server products. For best results, add Completed Work (Microsoft.VSTS.Scheduling.CompletedWork) and Original Estimate (Microsoft.VSTS.Scheduling.OriginalEstimate) to the work items that you intend to map. Also, you will need to remove the `<EMPTY />` workflow statements from the task type definition. For more information, see [Required Changes to Make When Mapping to a Team Project That Was Created From the Scrum Process Template](customize-field-mapping-tfs-project-server.md).  
   
  The following table describes the default mappings that are assigned to fields in Team Foundation. You can specify how you want reference and mirror fields to be updated. You can set `OnConflict` to `PSWins` to overwrite the value in Team Foundation with the value from Project Server. If you leave the `OnConflict` attribute unspecified, the fields maintain different values. For more information, review the [Field Elements and Attributes](#feandattributes) table later in this topic.  
   
