@@ -1,12 +1,13 @@
 ---
 title: Synchronize Team Foundation Server with Project Server 
 titleSuffix: TFS 
-description: Enable the data to flow from work items in Team Foundation Server to tasks in in Project Server  
+description: Enable the data to flow from work items in Team Foundation Server to tasks in Project Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4ec7be08-78e4-40be-81ae-4d2d81c49cd0
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 05/18/2017 
 ms.topic: overview
 ---

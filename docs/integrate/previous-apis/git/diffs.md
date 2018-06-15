@@ -16,7 +16,7 @@ ms.date: 08/23/2016
 [!INCLUDE [API_version](../_data/version.md)]
 
 Diffs compare a target version with a base version and return a list of items that are only in the target version.
-If either the target or base version isn't specified, the the default branch is used.
+If either the target or base version isn't specified, the default branch is used.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 

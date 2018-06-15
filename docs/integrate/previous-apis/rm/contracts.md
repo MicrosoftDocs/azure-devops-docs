@@ -999,7 +999,7 @@ Class to represent favorite entry
 | Field        | Type      | Notes
 | :----------- | :-------- | :----------
 | <code>data</code> | string | Application specific data for the entry
-| <code>id</code> | GUID | Unique Id of the the entry
+| <code>id</code> | GUID | Unique Id of the entry
 | <code>name</code> | string | Display text for favorite entry
 | <code>type</code> | string | Application specific favorite entry type. Empty or Null represents that Favorite item is a Folder
 

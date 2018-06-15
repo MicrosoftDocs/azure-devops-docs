@@ -8,7 +8,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
@@ -75,7 +76,7 @@ Another handy feature is to simply update a field without having to open the wor
 
 This quick update feature is particularly useful when you need to update a number of work items at once. For example, you can add estimates for backlog items on the Kanban board or update remaining work on the task board. 
 
-To change the title, click the pencil icon in the upper-right corner. To add tags, double-click the work item to open it. And, just a reminder, you can't change the IDs for a work work item, not from the card and not from within the form. 
+To change the title, click the pencil icon in the upper-right corner. To add tags, double-click the work item to open it. And, just a reminder, you can't change the IDs for a work item, not from the card and not from within the form. 
 
 To customize cards on the Kanban board, see [Change how cards display on the Kanban board](#kanban-board). To customize task board cards, see [Change how cards display on the task board](#task-board).  
 

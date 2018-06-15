@@ -41,7 +41,7 @@ Move these files with [Solution Explorer](https://docs.microsoft.com/en-us/visua
 
 ### Fix the outcome after you rename an item in your operating system
 
-You should avoid renaming items managed by TFVC using your operating system (for example, using Windows File Explorer, or the **rename** command in the Windows command prompt). When you have used your operating system to rename an item in in a [local workspace](decide-between-using-local-server-workspace.md), Visual Studio detects the change as two changes: an add and a delete. You can join the two actions into a rename action.
+You should avoid renaming items managed by TFVC using your operating system (for example, using Windows File Explorer, or the **rename** command in the Windows command prompt). When you have used your operating system to rename an item in a [local workspace](decide-between-using-local-server-workspace.md), Visual Studio detects the change as two changes: an add and a delete. You can join the two actions into a rename action.
 
 > [!NOTE]
 > Git version control users can move and rename files from the command line or Windows Explorer without this concern. The changes will be reflected in Team Explorer.

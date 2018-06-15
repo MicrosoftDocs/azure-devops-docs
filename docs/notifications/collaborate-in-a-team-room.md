@@ -7,7 +7,8 @@ ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/20/2018
 monikerRange: '>= tfs-2013 <=tfs-2017'
 ---
@@ -99,7 +100,7 @@ Adding events lets your team know when builds finish, source code is checked in,
 | Build completions | Anytime a build completes for a specified build definition    |  
 | Code changes | Anytime code is pushed or checked in from a specified repo or branch   |  
 | Work item updates | Anytime a work item is added or modified in or under a specified area path   |  
-| Code reviews| Anytime a code review is created in or under a specified area area path  |  
+| Code reviews| Anytime a code review is created in or under a specified area path  |  
 | Pull requests | Anytime a pull request is created for a specified repo or branch   |  
   
 
