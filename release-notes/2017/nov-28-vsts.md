@@ -65,8 +65,8 @@ steps:
 
 After you commit the changes, a build definition is automatically created and queued! Ready to go beyond “hello world”?
 
-- [Get started configuring your CI Build in code using YAML](/vsts/pipelines/actions/build-yaml-get-started)
-- [How to use YAML builds](/vsts/pipelines/actions/build-yaml)
+- [Get started configuring your CI Build in code using YAML](/vsts/build-release/actions/build-yaml-get-started)
+- [How to use YAML builds](/vsts/build-release/actions/build-yaml)
 
 ### Release gates in Public Preview ![Release tag](_img/release-notes-tag_release.png)
 
