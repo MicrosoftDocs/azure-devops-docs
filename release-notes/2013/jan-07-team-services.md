@@ -56,7 +56,7 @@ In the last update we showed off the new inline diff features. We have now added
 
 ##Collapsible left panel
 
-Finally, in our last update on [December 10th](/news/2012/dec-10-team-services.md) our code pages received an update to the collapsed left panel which included a vertical label on the collapsed view. In this sprint we carried that change forward to all our left panels. For example, when you collapse the left panel on the backlog page, you’ll now see the label **Backlog Explorer** on the collapsed view.
+Finally, in our last update on [December 10th](../2012/dec-10-team-services.md) our code pages received an update to the collapsed left panel which included a vertical label on the collapsed view. In this sprint we carried that change forward to all our left panels. For example, when you collapse the left panel on the backlog page, you’ll now see the label **Backlog Explorer** on the collapsed view.
 
 ![Collapsible left panel](_img/1_7_08.png)
 

@@ -119,7 +119,7 @@ NOTE: CAP is enforced when a user signs into VSTS with their AAD credentials. Th
 ![aad conditional access](_img/02_15_05.png)
 
 ##Pipelines queue
-We have now moved all the Team Services accounts from the agent-based pricing model to [pipeline-based pricing model](https://www.visualstudio.com/docs/build/concepts/licensing/concurrent-jobs-vsts). In this new model, users can run as many builds or releases concurrently as the number of pipelines configured in their account. Additional builds and releases beyond this limit are queued and wait for earlier builds and releases to complete. The __Pipelines queue__ feature provides users with more visibility into where their builds or releases are.
+We have now moved all the Team Services accounts from the agent-based pricing model to [pipeline-based pricing model](/vsts/pipelines/licensing/concurrent-jobs-vsts). In this new model, users can run as many builds or releases concurrently as the number of pipelines configured in their account. Additional builds and releases beyond this limit are queued and wait for earlier builds and releases to complete. The __Pipelines queue__ feature provides users with more visibility into where their builds or releases are.
 
 ![resource limits](_img/02_15_06.png)
 
