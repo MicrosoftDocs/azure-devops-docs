@@ -45,7 +45,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 | Parameter              | Type    | Default | Notes
 |:-----------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance               | string  |         | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance               | string  |         | [VS Team Services account](../../get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project                | string  |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository             | string  |         | ID or name of the [repository](./repositories.md).
 | Query
