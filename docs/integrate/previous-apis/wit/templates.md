@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates/{t
 | Parameter       | Type    | Notes      | 
 |:----------------|:--------|:------------|
 | URL             |         |             |            
-| instance        | string  | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).  | 
+| instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).  | 
 | project         | string  | Name or ID of the team project.  |
 | team            | string  | Name or ID of the team.          |  
 | templateid      | GUID    | ID of the template.  | 
@@ -48,7 +48,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates?[w
 | Parameter           | Type    | Default                       | Notes       |
 |:--------------------|:--------|:------------------------------|:------------|
 | URL                 |         |                               |             | 
-| instance            | string  |                               | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}). | 
+| instance            | string  |                               | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}). | 
 | project             | string  |                               | Name or ID of the team project.| 
 | team                | string  |                               | Name or ID of the team.        |  
 | Query               |         |                               |             | 
@@ -73,7 +73,7 @@ POST https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates?a
 | Parameter       | Type    | Notes  | 
 |:----------------|:--------|:------------| 
 | URL             |         |             | 
-| instance        | string  | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}). | 
+| instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}). | 
 | project         | string  | Name or ID of the team project. |
 | team            | string  | Name or ID of the team.         |  
 | Query             |         |             |
@@ -96,7 +96,7 @@ PUT https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates/{t
 | Parameter       | Type    | Notes  |  
 |:----------------|:--------|:------------| 
 | URL             |         |             |
-| instance        | string  | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).  |  
+| instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).  |  
 | project         | string  | Name or ID of the team project.  |  
 | team            | string  | Name or ID of the team.         |  
 | templateid      | GUID    | ID of the template to replace.  |  
@@ -121,7 +121,7 @@ DELETE https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates
 | Parameter       | Type    | Notes  |  
 |:----------------|:--------|:------------|  
 | URL             |         |             | 
-| instance        | string  | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).  |  
+| instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).  |  
 | project         | string  | Name or ID of the team project.  |  
 | templateid      | GUID    | ID of the template to remove.  |  
 | team            | string  | Name or ID of the team.         |  

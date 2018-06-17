@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/shelvesets?api-version={vers
 | Parameter        | Type   | Default | Notes
 |:-----------------|:-------|:--------|---------------------------------
 | URL
-| instance         | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance         | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | Query
 | api-version      | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | owner            | string |         | Display name, unique name, or ID of person who created the shelveset.
@@ -55,7 +55,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/shelvesets/{shelveset};{owne
 | Parameter        | Type   | Default | Notes
 |:-----------------|:-------|:--------|---------------------------------
 | URL
-| instance         | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance         | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | shelveset        | string |         | Name of shelveset.
 | owner            | string |         | Display name, unique name, or ID of person who created the shelveset.
 | Query
@@ -89,7 +89,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/shelvesets/{shelveset};{owne
 | Parameter        | Type   | Default | Notes
 |:-----------------|:-------|:--------|---------------------------------
 | URL
-| instance         | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance         | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | shelveset        | string |         | Name of shelveset.
 | owner            | string |         | Display name, unique name, or ID of person who created the shelveset.
 | Query
@@ -113,7 +113,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/shelvesets/{shelveset};{owne
 | Parameter        | Type   | Default | Notes
 |:-----------------|:-------|:--------|---------------------------------
 | URL
-| instance         | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance         | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | shelveset        | string |         | Name of shelveset.
 | owner            | string |         | Display name, unique name, or ID of person who created the shelveset.
 | Query

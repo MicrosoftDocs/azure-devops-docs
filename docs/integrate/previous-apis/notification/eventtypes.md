@@ -39,7 +39,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| <code>instance</code> | URL | string | Required. [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | <code>eventType</code> | URL | string | Required.
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
 
@@ -73,7 +73,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| <code>instance</code> | URL | string | Required. [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
 | <code>publisherId</code> | Query | string | Optional. Limit to event types for this publisher
 
