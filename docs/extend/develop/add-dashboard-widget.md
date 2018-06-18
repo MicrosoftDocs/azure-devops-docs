@@ -199,7 +199,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
                 "properties": {
                     "name": "Hello World Widget",
                     "description": "My first widget",
-                    "catalogIconUrl:": "img/CatalogIcon.png",
+                    "catalogIconUrl": "img/CatalogIcon.png",
                     "previewImageUrl": "img/preview.png",                            
                     "uri": "hello-world.html",
                     "supportedSizes": [
