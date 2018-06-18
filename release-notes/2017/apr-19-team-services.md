@@ -66,7 +66,7 @@ Save and queue the build, to see your app validated with multiple versions of No
 
 At the moment we've got the Node Tool Installer task. We don't yet have runtime environments like Java, or tools like NuGet or cURL.
 
-Want to try it? See [Tool installers](/docs/build/concepts/process/tasks#tool-installers).
+Want to try it? See [Tool installers](/vsts/build-release/concepts/process/tasks#tool-installers).
 
 ##SSH deployment improvements
 The __Copy Files Over SSH__ build/release task now supports tildes(~) in the destination path to simplify copying files to a remote user’s home directory.  Also, a new option allows causing the build/release to fail when no files are found to copy.
@@ -74,7 +74,7 @@ The __Copy Files Over SSH__ build/release task now supports tildes(~) in the des
 The SSH build/release task now supports running scripts with Windows line endings on remote Linux or macOS machines.
 
 ##Deploy to Azure Government Cloud
-Customers with Azure subscriptions in Government clouds can now configure [Azure Resource Manager service endpoint](/docs/build/concepts/library/service-endpoints#sep-azure-rm) to target national clouds.
+Customers with Azure subscriptions in Government clouds can now configure [Azure Resource Manager service endpoint](/vsts/build-release/concepts/library/service-endpoints#sep-azure-rm) to target national clouds.
 
 With this, you can now use Release Management to deploy any application to Azure resources hosted in government clouds, using the same deployment tasks.
 

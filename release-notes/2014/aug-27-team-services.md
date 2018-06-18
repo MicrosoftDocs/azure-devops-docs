@@ -30,7 +30,7 @@ This includes the ability to view the backlog, add and edit items, run work item
 
 *(click to zoom)*
 
-I hope and expect that enabling this will eliminate a lot of the friction in enabling the entire organization to participate in projects. Learn more about what you can do with a [stakeholder license](https://docs.microsoft.com/en-us/organizations/security/get-started-stakeholder?view=vsts).
+I hope and expect that enabling this will eliminate a lot of the friction in enabling the entire organization to participate in projects. Learn more about what you can do with a [stakeholder license](https://docs.microsoft.com/en-us/vsts/organizations/security/get-started-stakeholder?view=vsts).
 
 Enjoy!
 
