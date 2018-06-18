@@ -33,7 +33,7 @@ In the [last deployment](https://www.visualstudio.com/en-us/articles/news/2013/s
 
 ##Column Options for the Test Case Grid View
 
-Also in the [last deployment](/news/2013/sep-9-team-services.md), we enabled the grid view for easy authoring of test cases. In this deployment, we are enhancing the grid view to support more test case work item fields. The "Column Options" controls what fields you will see in both the list view and the grid view.
+Also in the [last deployment](../2013/sep-09-team-services.md), we enabled the grid view for easy authoring of test cases. In this deployment, we are enhancing the grid view to support more test case work item fields. The "Column Options" controls what fields you will see in both the list view and the grid view.
 
 ![More fields in the grid view](_img/9_30_02.png)
 
