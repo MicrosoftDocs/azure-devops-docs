@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories?api-ve
 | Parameter         | Type   | Notes
 |:------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance          | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project           | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | Query
 | api-version       | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -50,7 +50,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 | Parameter  | Type   | Notes
 |:-----------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance   | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project    | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string | ID or name of the repository.
 | Query
@@ -94,7 +94,7 @@ Content-Type: application/json
 | Parameter    | Type   | Notes
 |:-------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance     | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project        | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID in the body.*
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -122,7 +122,7 @@ Content-Type: application/json
 | Parameter      | Type   | Notes
 |:---------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance       | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project        | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository     | string | ID of the repository.
 | Query
@@ -145,7 +145,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{re
 | Parameter  | Type   | Notes
 |:-----------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance   | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project    | string | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string | ID of the repository.
 | Query

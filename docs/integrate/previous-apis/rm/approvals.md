@@ -39,7 +39,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| <code>instance</code> | URL | string | Required. [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | <code>project</code> | URL | string | Required. Project ID or project name
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '4.0-preview' to use this version of the API.
 | <code>assignedToFilter</code> | Query | string | Optional. Approvals assigned to this user.
@@ -88,7 +88,7 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| <code>instance</code> | URL | string | Required. [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | <code>project</code> | URL | string | Required. Project ID or project name
 | <code>approvalId</code> | URL | int32 | Required. Id of the approval.
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '4.0-preview' to use this version of the API.
