@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 6/4/2018
+ms.date: 6/19/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -99,6 +99,25 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
 
+        <tr>
+            <td rowspan="16">[19 June 2018](2018/jun-19-vsts.md)</td>
+            <td>Queries hub generally available</td><td style="background:rgb(232, 232, 232);">*2019*</td>
+        </tr>
+        <tr><td>Preview our new navigation hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Easily find existing work items in linking and mention experiences</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Modernized experience in the Builds hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Pass environment variables to tasks</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Ignore a release gate for a deployment</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Set a variable at release time</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Organize your release definitions in folders</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use improved Windows remote PowerShell based tasks</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>GitHub artifacts show associated commits deployed in a release</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use upstream sources in legacy feeds</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Use arbitrary public npm feeds as upstream sources</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Improved experiences in the Test tab</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr> 
+        <tr><td>Exclude items completed before a certain date in analytics views</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr> 
+        <tr><td>Easily navigate to dashboards</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Get notified for PAT expirations</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr>
             <td rowspan="11">[30 May 2018](2018/may-30-vsts.md)</td>
             <td>Import and export Inherited Processes</td><td style="background:rgb(232, 232, 232);">Future</td>
