@@ -244,7 +244,7 @@ policy as explained above.
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 
 Test results published within an environment of a release are
-associated with both the relese and the build. These test results
+associated with both the release and the build. These test results
 are retained as specified by the retention policy configured for
 the build and for the test results. If you are not deploying Team
 Foundation or VSTS Build through Release Management, and are still
