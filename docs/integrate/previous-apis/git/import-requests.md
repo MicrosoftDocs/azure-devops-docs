@@ -21,7 +21,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 | Parameter         | Type    | Default | Notes
 |:------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string  |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance          | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project           | string  |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string  |         | ID of the [repository](./repositories.md).
 | Query
@@ -45,7 +45,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 | Parameter         | Type    | Notes
 |:------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string  | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance          | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project           | string  | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string  | ID of the [repository](./repositories.md).
 | importRequestId   | int     | ID of the import request.
@@ -76,7 +76,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 | Parameter                                          | Type     | Notes
 |:---------------------------------------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance                                           | string   | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance                                           | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project                                            | string   | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository                                         | string   | ID of the [repository](./repositories.md).
 | Query
@@ -104,7 +104,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{rep
 | Parameter            | Type                       | Notes
 |:---------------------|:---------------------------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance             | string                     | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance             | string                     | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project              | string                     | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository           | string                     | ID of the [repository](./repositories.md).
 | importRequestId      | int                        | ID of the import request.
