@@ -8,14 +8,14 @@ ms.manager: douge
 ms.author: mmitrik
 author: mmitrik
 ms.topic: conceptual
-ms.date: 03/14/2018
-monikerRange: 'vsts'
+ms.date: 06/18/2018
+monikerRange: '>= tfs-2018'
 ---
 
 
 # Configure a branch policy for an external service 
 
-#### VSTS
+#### VSTS | TFS 2018 Update 2
 
 Branch policies are a powerful feature to ensure high quality code in your repo by establishing requirements for all pull requests. External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs. The branch policy for external services brings the ability for those 3rd party services to participate in the PR workflow and establish policy requirements. This article guides you through the process of configuring a branch policy for a service that is posting PR status. For more information about PR status, see [Customize and extend pull request workflows with pull request status](../concepts/pull-request-status.md).
 
