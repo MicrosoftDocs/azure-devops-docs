@@ -8,14 +8,14 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
-monikerRange: 'vsts'
+ms.date: 06/18/2018
+monikerRange: '>= tfs-2018'
 ---
 
 
 # Customize and extend pull request workflows with pull request status
 
-#### VSTS 
+#### VSTS | TFS 2018 Update 2
 
 [Pull requests](../pull-requests.md) are a great tool for facilitating code reviews and managing code movement within a repository. 
 [Branch policies](../branch-policies.md) enforce code quality during the pull request process by establishing requirements that must be performed for every code change. 

@@ -90,7 +90,7 @@ In this section, you create a pull request trigger for your VSTS build definitio
 
 ## Building pull requests from repository forks
 
-### **Notice:** This feature is currently unavailable for security hardening. It is expected to return in April 2018.
+### **Notice:** This feature is currently unavailable for security hardening. It is expected to return in July 2018.
 
 > [!IMPORTANT]
 > These settings impact the security of your build.
