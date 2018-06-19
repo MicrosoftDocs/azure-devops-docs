@@ -24,11 +24,11 @@ You can build Android projects using [Microsoft-hosted agents](../agents/hosted.
 
 # [Designer](#tab/designer)
 
-Choose the **Android** template as you create a build pipeline for your project. This will get you started with tasks to build, test, sign, and align an Android APK.
+Choose the **Android** template as you create a pipeline for your project. This will get you started with tasks to build, test, sign, and align an Android APK.
 
 # [YAML](#tab/yaml)
 
-Start by adding the following YAML to a file named **vsts-ci.yml** in the root of your repository. Change any values match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+Start by adding the following YAML to a file named **vsts-ci.yml** in the root of your repository. Change any values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
 # https://aka.ms/yaml

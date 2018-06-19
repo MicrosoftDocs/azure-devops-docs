@@ -37,6 +37,14 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 [!INCLUDE [temp](../_shared/yaml/NuGetCommandV2.md)]
 
+### Versioning schemes
+
+For **byPrereleaseNumber**, the version will be set to whatever you choose for major, minor, and patch, plus the date and time in the format `yyyymmdd-hhmmss`.
+
+For **byEnvVar**, the version will be set as whatever environment variable, e.g. $(MyVersion), you provide. Make sure the environment variable is set to a proper SemVer e.g. `1.2.3` or `1.2.3-beta1`.
+
+For **byBuildNumber**, the version will be set to the build number, ensure that your build number is a proper SemVer e.g. `1.0.$(Rev:r)`.
+
 ::: moniker-end
 
 ## Restore NuGet packages
