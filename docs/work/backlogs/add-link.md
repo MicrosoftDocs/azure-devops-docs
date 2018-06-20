@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 03/20/2018
+ms.date: 06/20/2018
 ---
 
 
