@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 05/3/2018
+ms.date: 06/20/2018
 monikerRange: 'vsts'
 ---
 
@@ -380,9 +380,9 @@ in Europe since the 1995 introduction of the European Union (EU) Data Protection
 The GDPR's main objective is to strengthen the protection and security of your personal data and 
 will replace the Directive and all local laws relating to it. VSTS is relied upon as system of record with strict 
 integrity, traceability and audit rules, we view all information within VSTS to be business critical and therefore cannot be modified from its original state. 
-These existing obligations supersede nominal delete and retention obligations from GDPR. As such, we do not support GDPR delete requests from within VSTS. 
-We have ensured that when an entire VSTS account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period).
-To learn more about this new regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+These existing obligations affect our delete and retention obligations for GDPR. As such, we do not support GDPR delete requests from within VSTS. 
+We have ensured that when an entire VSTS account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period). To learn more about how VSTS honors Data Subject Requests (DSR), please visit the following [page](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
+To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
 

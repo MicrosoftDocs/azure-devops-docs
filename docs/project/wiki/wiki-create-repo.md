@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2018'
 Each team project can be provisioned with a wiki. Use it to share information with your team to understand, use, and contribute to your project.
 
 ::: moniker range="tfs-2018"
->[!NOTE]  visualstudio.microsoft.com
+>[!NOTE] 
 >The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md).
 
 ::: moniker-end
@@ -38,7 +38,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-Use this topic to learn how to:�
+Use this topic to learn how to:  
 
 > [!div class="checklist"]
 > * Open the **Wiki** hub
@@ -65,7 +65,7 @@ Use this topic to learn how to:�
 ::: moniker-end
 
 
-[!INCLUDE�[temp](_shared/open-wiki-hub.md)]
+[!INCLUDE [temp](_shared/open-wiki-hub.md)]
 
 
 ## Provision a wiki Git repository
@@ -123,6 +123,6 @@ However, you can navigate to it from the following URL:
 
 You can click **More** followed by **Clone Wiki** to access the Wiki URL.
 
-<img align="top" src="_img/wiki/clone-wiki.PNG" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />  � 
+<img align="top" src="_img/wiki/clone-wiki.PNG" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
 
 This will expose the URL of the wiki Git repository and you can paste it into your web browser to access the underlying Git repo.
