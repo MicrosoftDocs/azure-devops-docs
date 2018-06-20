@@ -70,7 +70,7 @@ The blocks in the margin have a subtle color gradation to help you visually iden
 
 Finally, this sprint we enabled support for scheduled builds with Git repositories. You can now build your Git repos using a build definition that is triggered on a daily schedule.
 
-**Note:** To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](http://go.microsoft.com/fwlink/?LinkId=273878).
+**Note:** To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2012-update2-vs).
 
 That’s our list for sprint 44. There are of course lots of bug fixes, performance improvements and minor tweaks as well based on your feedback. Keep the feedback coming on [User Voice](https://visualstudio.uservoice.com/forums/330519-vso), the [MSDN Forums](http://social.msdn.microsoft.com/Forums/en-US/TFService/threads), and [Twitter](http://twitter.com/search?q=%23tfservice).
 
