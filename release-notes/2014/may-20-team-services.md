@@ -22,7 +22,7 @@ For a while now, one of the [top customer requests](http://visualstudio.uservoic
 
 ###Create a new account and connect it to Azure Active Directory
 
-You can create a new account linked to an AAD tenant either from within the Azure portal or from the Visual Studio Online account creation experience. We’ve provided a [tutorial](https://www.visualstudio.com/en-us/get-started/connect-to-vs) on how to do it.
+You can create a new account linked to an AAD tenant either from within the Azure portal or from the Visual Studio Online account creation experience. We’ve provided a [tutorial](https://visualstudio.microsoft.com/en-us/get-started/connect-to-vs) on how to do it.
 
 ![Logging into VS Online](_img/5_20_01.png)
 
@@ -34,7 +34,7 @@ It’s also possible to create an Azure Active Directory–connected Visual Stud
 
 If you want to find out more, head over to:
 
-[Connecting to an Azure Active Directory based account](https://www.visualstudio.com/en-us/get-started/connect-to-vs)
+[Connecting to an Azure Active Directory based account](https://visualstudio.microsoft.com/en-us/get-started/connect-to-vs)
 
 ###Leverage your MSDN Visual Studio Online benefit with organizational credentials
 
@@ -56,7 +56,7 @@ With [Shared Parameters for Test Cases](apr-03-team-services.md), we introduced 
 
 Finally, the window for data export functionality is coming to a close on **May 20 th, 2014**. As Brian detailed in his [blog post](http://blogs.msdn.com/b/bharry/archive/2014/02/21/vs-online-early-adopter-program-extended-to-may-7-2014.aspx), we scoped the capability, for now, to aiding people through the transition; but we will remain attentive to customer feedback in the space. Even though we are discontinuing high-fidelity data export, we still maintain the promise that your data is yours. If you cancel your account or need to get your data out, please feel free to use our TFS features and APIs to extract any and all of your data at any time.
 
-That’s the list for Sprint 65. As Brian mentioned in [his blog](http://blogs.msdn.com/b/bharry/archive/2014/05/01/visual-studio-online-update-may-1st.aspx), the Visual Studio Online deployments are an event that takes a few days. Depending on your account, you may not see these new features until the deployment is complete. You can find the latest status of the deployment on the [Support](https://www.visualstudio.com/support/support-overview-vs) page. Remember to visit our [User Voice](https://visualstudio.uservoice.com/forums/330519-vso) site to give us feedback on our priorities and investments.
+That’s the list for Sprint 65. As Brian mentioned in [his blog](http://blogs.msdn.com/b/bharry/archive/2014/05/01/visual-studio-online-update-may-1st.aspx), the Visual Studio Online deployments are an event that takes a few days. Depending on your account, you may not see these new features until the deployment is complete. You can find the latest status of the deployment on the [Support](https://visualstudio.microsoft.com/support/support-overview-vs) page. Remember to visit our [User Voice](https://visualstudio.uservoice.com/forums/330519-vso) site to give us feedback on our priorities and investments.
 
 Thank you
 

@@ -21,7 +21,7 @@ After a TFS upgrade, you'll want to use the new features that were installed. So
 
 > [!NOTE]    
 >If you're upgrading from TFS 2010 or an earlier version, review the steps outlined in [When upgrading from TFS 2008 or TFS 2010](upgrade-tfs-2008-or-2010.md). <br/>
-If you need to upgrade TFS, [go to the downloads page](https://www.visualstudio.com/downloads/). <br/> 
+If you need to upgrade TFS, [go to the downloads page](https://visualstudio.microsoft.com/downloads/). <br/> 
 If you have several team projects to update, you can [apply updates programmatically](#program-updates).  
 
 <a id="RunConfigureFeaturesWizard"/>

@@ -46,7 +46,7 @@ For example, you can quickly access and navigate to work of interest from the fo
 
 
 > [!NOTE]  
-> The features described in this article require TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs).  
+> The features described in this article require TFS 2017.1 and later versions. To upgrade to TFS 2017.1, go to the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).  
 
 ::: moniker-end
 

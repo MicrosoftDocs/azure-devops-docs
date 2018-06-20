@@ -62,7 +62,7 @@ A:	Yes, you can run all these versions on the same computer.
 
 A:	Here's [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx). 
 If you're having subscription problems, 
-try [Subscription Support](https://www.visualstudio.com/support/subscription-support-vs).
+try [Subscription Support](https://visualstudio.microsoft.com/support/subscription-support-vs).
 
 ### Q:	I'm having problems installing or signing in to Visual Studio. How do I get help? 
 
@@ -72,7 +72,7 @@ A:	Learn more about:
 *	[Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
 *	[Managing multiple user accounts](https://msdn.microsoft.com/en-us/library/dn872465.aspx).
 
-Or contact [Visual Studio Support](https://www.visualstudio.com/support/support-overview-vs). 
+Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
 
 ## VSTS
 

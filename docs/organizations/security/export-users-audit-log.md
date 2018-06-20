@@ -60,5 +60,5 @@ You can get a list of users and groups that have access to your Team Foundation 
 - For a description of access levels, see [About access levels](access-levels.md)
 - To manage access levels for VSTS, see [Manage users and access in VSTS](../../accounts/add-account-users-assign-access-levels.md) 
 - To manage access levels for TFS, see [Change access levels](change-access-levels.md)
-- For VSTS feature availability, see the [VSTS Feature Matrix](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs)
+- For VSTS feature availability, see the [VSTS Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
 - For default feature permission and access assignments, see [Default permissions and access for VSTS and TFS](permissions-access.md). 

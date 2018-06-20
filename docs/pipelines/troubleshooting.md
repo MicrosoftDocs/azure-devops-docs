@@ -247,7 +247,7 @@ macOS/Linux:
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 
-[Get subscription, billing, and technical support](https://www.visualstudio.com/support-overview-vs)
+[Get subscription, billing, and technical support](https://visualstudio.microsoft.com/support-overview-vs)
 
 Report any problems on [Developer Community](https://developercommunity.visualstudio.com/).
 

@@ -110,7 +110,7 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 ## Work hub, Plans page
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]   
+[!INCLUDE [temp](../../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]  ï¿½
 
 ::: moniker-end
 
@@ -193,7 +193,7 @@ Use these shortcuts when working in Team Explorer.
 
 You can use query results shortcuts whenever you have a list of work items, such as the query results view or a list of linked work items within a work item form.
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)]   
+[!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-te-shortcuts.md)]  ï¿½
 
 
 <!---
@@ -251,6 +251,6 @@ Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete cont
 
 ###Install Team Explorer  
 
-Team Explorer is a plug-in to Visual Studio. By installing the free [Visual Studio Community](https://www.visualstudio.com/products/free-developer-offers-vs.aspx), other Visual Studio version, or Visual Studio Team Explorer 2017 you gain access to Team Explorer.  
+Team Explorer is a plug-in to Visual Studio. By installing the free [Visual Studio Community](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx), other Visual Studio version, or Visual Studio Team Explorer 2017 you gain access to Team Explorer.  
 
 Learn more about [working in Team Explorer](../../user-guide/work-team-explorer.md). 
