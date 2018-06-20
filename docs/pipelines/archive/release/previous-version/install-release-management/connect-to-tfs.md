@@ -53,7 +53,7 @@ permissions.
 
 1. In TFS, make the account a member of the **Project Collection 
    Administrators** group. For more details, see
-   [Set administrator permissions for team project collections](https://msdn.microsoft.com/library/dd547204%28v%3Dvs.140%29.aspx),
+   [Set administrator permissions for team project collections](../../../../../organizations/security/set-project-collection-level-permissions.md),
    though you can ignore the procedures for SharePoint and Reporting Services. 
    Release Management doesn't require access to these features.
 

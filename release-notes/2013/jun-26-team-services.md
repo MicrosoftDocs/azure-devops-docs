@@ -28,7 +28,7 @@ With today’s changes, you can now paste images directly from your clipboard in
 
 ##Opening Microsoft Test Runner
 
-Customers can now easily transition from the Test Hub in web access to the Microsoft Test Runner (MTR) by clicking the Run using client button/context menu.  Doing so opens MTR and loads the selected test cases for data collection during manual testing. To use this capability, you need an updated MTR client from [Visual Studio Update 3](http://go.microsoft.com/fwlink/?LinkID=273878) (also released today).
+Customers can now easily transition from the Test Hub in web access to the Microsoft Test Runner (MTR) by clicking the Run using client button/context menu.  Doing so opens MTR and loads the selected test cases for data collection during manual testing. To use this capability, you need an updated MTR client from [Visual Studio Update 3](https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2012-update2-vs) (also released today).
 
 ![Opening MTR from the web](_img/6_26_02.png)
 
