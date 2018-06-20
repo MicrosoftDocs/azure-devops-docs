@@ -111,7 +111,7 @@ Use your team project wiki to share information with other team members. When yo
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-> [!NOTE]  visualstudio.microsoft.com
+> [!NOTE]  
 > The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see  [Visual Studio Downloads](https://www.visualstudio.com/downloads/). 
 ::: moniker-end
 
