@@ -587,7 +587,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
  * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
 
- * [Visual Studio with Git for Windows](../git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+ * [Visual Studio with Git for Windows](../git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 
  * [Visual Studio with TFVC](../tfvc/share-your-code-in-tfvc-vs.md)
 
@@ -601,7 +601,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 * Services
 
- * [VSTS](https://www.visualstudio.com/team-services/)
+ * [VSTS](https://visualstudio.microsoft.com/team-services/)
 
  * Git service providers such as GitHub and Bitbucket
 

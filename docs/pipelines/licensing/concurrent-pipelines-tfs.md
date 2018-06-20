@@ -105,7 +105,7 @@ If you need to run more concurrent releases, you can [buy additional private pip
 
 ### Who can use the system?
 
-TFS users with a [TFS CAL](https://www.visualstudio.com/team-services/tfs-pricing) can author as many releases as they want.
+TFS users with a [TFS CAL](https://visualstudio.microsoft.com/team-services/tfs-pricing) can author as many releases as they want.
 
 To approve releases, a TFS CAL is not necessary; any user with [stakeholder access](../../organizations/security/get-started-stakeholder.md) can approve or reject releases.
 

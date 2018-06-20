@@ -139,5 +139,5 @@ In addition to all the pre-built functionality available to you, you can add to 
 
 ## Resources
 
-- [Pricing](https://www.visualstudio.com/team-services/pricing/)
+- [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
 

@@ -108,7 +108,7 @@ When this problem occurs, a blank screen flashes several times followed by one o
 
 > TF31002: Unable to connect to this Team foundation Server
 
-To resolve this problem, apply Visual Studio 2013.2 or install a later version. Go to the [Visual Studio download website](http://www.visualstudio.com/downloads).
+To resolve this problem, apply Visual Studio 2013.2 or install a later version. Go to the [Visual Studio download website](http://visualstudio.microsoft.com/downloads).
 
 For a workaround in which you delete your browser cookies, see the following support article, [You can't switch between different organizational accounts in Visual Studio Online](https://support.microsoft.com/en-us/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
 

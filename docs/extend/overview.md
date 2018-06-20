@@ -49,7 +49,7 @@ There are dozens of places where you can add to the VSTS user interface, and we'
 ## Extension building checklist
 
 1. Familiarize yourself with an overview of our platform and what's possible with it
-    1. [Team Services extensions overview](https://www.visualstudio.com/team-services/extend/)
+    1. [Team Services extensions overview](https://visualstudio.microsoft.com/team-services/extend/)
 2. Learn to build your first extension or check out our full set samples
     1. [Build your first extension](./get-started/node.md)
     2. [Samples](./develop/samples-overview.md)

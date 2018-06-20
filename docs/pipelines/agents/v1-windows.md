@@ -20,7 +20,7 @@ monikerRange: 'tfs-2015'
 To build and deploy Windows, Azure, and other Visual Studio solutions you may need a Windows agent. Windows agents can also build and deploy Java and Android apps.
 
 > Before you begin:
- * If you use [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) or TFS 2017 and newer, then you need to use a newer agent. See [Deploy an agent on Windows](v2-windows.md).
+ * If you use [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) or TFS 2017 and newer, then you need to use a newer agent. See [Deploy an agent on Windows](v2-windows.md).
  * If you use TFS, you might already have a build and release agent running. An agent is automatically or optionally deployed in some cases when you [set up Team Foundation Server](/tfs/server/install/single-server).
  *  Otherwise, you've come to the right place to set up an agent on Windows for TFS 2015. Continue to the next section.
 
@@ -30,7 +30,7 @@ To build and deploy Windows, Azure, and other Visual Studio solutions you may ne
 
 Before you begin, make sure your agent machine is prepared with these prerequisites:
 
-* An [operating system that is supported by Visual Studio 2013](http://www.visualstudio.com/products/visual-studio-2013-compatibility-vs) or newer
+* An [operating system that is supported by Visual Studio 2013](http://visualstudio.microsoft.com/products/visual-studio-2013-compatibility-vs) or newer
 
 * Visual Studio 2013 or Visual Studio 2015
 

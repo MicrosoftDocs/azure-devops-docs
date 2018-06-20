@@ -30,7 +30,7 @@ For information about agents and pipelines, see:
 
 * [Concurrent pipelines in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
 * [Concurrent jobs in VSTS](../../licensing/concurrent-jobs-vsts.md).
-* [Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
+* [Pricing for VSTS features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 <a name="runscript"></a>
 

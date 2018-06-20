@@ -19,7 +19,7 @@ Today we are releasing a preview of a new way to extend and integrate with Visua
 -Integrate with many of the most popular cloud services; such as Trello, Campfire, GitHub, UserVoice, Zendesk and many more
 -Develop custom apps and services that extend the power of Visual Studio Online
 
-You can find more information about the types of scenarios now possible at our [Visual Studio Online Integration](https://www.visualstudio.com/integrate/explore/explore-vso-vsi) hub.
+You can find more information about the types of scenarios now possible at our [Visual Studio Online Integration](https://visualstudio.microsoft.com/integrate/explore/explore-vso-vsi) hub.
 
 ###REST APIs
 
@@ -27,7 +27,7 @@ Our JSON REST APIs enable a lightweight way to work with Visual Studio Online fr
 
 [Learn the basics](https://docs.microsoft.com/rest/api/vsts/?view=vsts-rest-4.1)
 
-[Explore the APIs](https://www.visualstudio.com/integrate/reference/reference-vso-overview-vsi)
+[Explore the APIs](https://visualstudio.microsoft.com/integrate/reference/reference-vso-overview-vsi)
 
 ###Authorization
 
@@ -50,9 +50,9 @@ Services hooks can be found as a new hub in project administration.
 
 ![Selecting a target service](_img/5_12_01.png)
 
-[Learn more](https://www.visualstudio.com/get-started/integrate/integrating-with-service-hooks-vs)
+[Learn more](https://visualstudio.microsoft.com/get-started/integrate/integrating-with-service-hooks-vs)
 
-[Creating subscriptions programmatically](https://www.visualstudio.com/integrate/reference/reference-vso-hooks-subscriptions-vsi)
+[Creating subscriptions programmatically](https://visualstudio.microsoft.com/integrate/reference/reference-vso-hooks-subscriptions-vsi)
 
 [Supported events](https://docs.microsoft.com/vsts/service-hooks/events?view=vsts)
 

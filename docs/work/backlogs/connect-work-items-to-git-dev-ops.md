@@ -152,7 +152,7 @@ Learn more about tracking work with work items and developing with Git from thes
 Keep in mind that the Development section only appears within the web portal work item form. The work item tracking experience and forms that appear in Visual Studio or other supported clients will be missing several of the features that the web portal makes available. 
 
 > [!NOTE]   
-> The Development section within the work item form is not supported in TFS 2013 or TFS 2015. Consider [upgrading to a later TFS version](https://www.visualstudio.com/downloads/). 
+> The Development section within the work item form is not supported in TFS 2013 or TFS 2015. Consider [upgrading to a later TFS version](https://visualstudio.microsoft.com/downloads/). 
 
 ### Associated work items in build 
 

@@ -33,7 +33,7 @@ Other feature highlights include:
 
 Installing the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) adds 6 powerful widgets to your widget catalog: Cumulative Flow Diagram, Lead Time, Cycle Time, Velocity, Burndown, and Burnup. Now, those with the free [Stakeholder license](/vsts/organizations/security/get-started-stakeholder#related-notes) can view all the Analytics widgets too!
 
-To use the [Analytics OData endpoint](/vsts/report/extend-analytics/index) or [Power BI to connect to Analytics](/vsts/report/powerbi/index), a [Basic license](https://www.visualstudio.com/team-services/compare-features/) is still required.
+To use the [Analytics OData endpoint](/vsts/report/extend-analytics/index) or [Power BI to connect to Analytics](/vsts/report/powerbi/index), a [Basic license](https://visualstudio.microsoft.com/team-services/compare-features/) is still required.
 
 ### Integrate Power BI with VSTS Analytics using new views
 

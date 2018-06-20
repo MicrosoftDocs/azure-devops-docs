@@ -87,8 +87,8 @@ based migrations.
 
 ## Related notes 
 - [About VSTS and Team Foundation Server](../user-guide/about-vsts-tfs.md)  
-- [Pricing, VSTS](https://www.visualstudio.com/team-services/pricing/)
-- [Pricing, TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
+- [Pricing, VSTS](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Pricing, TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 <!---
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is

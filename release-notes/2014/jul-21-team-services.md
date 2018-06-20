@@ -26,7 +26,7 @@ To get going, head over to the Azure Management portal, link your account, and n
 
 We have updated our getting started documentation for organizational access to help you get going.
 
-[Manage Organizational Access for your account](https://www.visualstudio.com/get-started/manage-organization-access-for-your-account-vs)
+[Manage Organizational Access for your account](https://visualstudio.microsoft.com/get-started/manage-organization-access-for-your-account-vs)
 
 ##Viewing existing projects in the Azure Preview Portal
 
@@ -46,11 +46,11 @@ Brian [recently shared](http://blogs.msdn.com/b/bharry/archive/2014/07/09/upcomi
 
 ##Deleting your account
 
-In this sprint we also added the ability for an account owner to [delete their account](https://www.visualstudio.com/get-started/delete-your-account-vs). Simply navigate to account settings in the collection administration page. From there, select delete account and follow the instructions. **WARNING:** when you delete an account, it will be disabled and all users of the account will lose access immediately. If you have set up billing, it will be discontinued after the current billing cycle. All metered services like builds and load test runs will be stopped immediately. Your account will then be in this state for 90 days, after which it will be deleted permanently. If at any point during this time, you need to recover the account, you can [contact support](https://www.visualstudio.com/en-us/support/cloud-services-assisted-support-vs) to re-enable the account.
+In this sprint we also added the ability for an account owner to [delete their account](https://visualstudio.microsoft.com/get-started/delete-your-account-vs). Simply navigate to account settings in the collection administration page. From there, select delete account and follow the instructions. **WARNING:** when you delete an account, it will be disabled and all users of the account will lose access immediately. If you have set up billing, it will be discontinued after the current billing cycle. All metered services like builds and load test runs will be stopped immediately. Your account will then be in this state for 90 days, after which it will be deleted permanently. If at any point during this time, you need to recover the account, you can [contact support](https://visualstudio.microsoft.com/en-us/support/cloud-services-assisted-support-vs) to re-enable the account.
 
 ![Delete your account](_img/7_21_04.png)
 
-That’s the list for sprint 68. As Brian mentioned in [his blog](http://blogs.msdn.com/b/bharry/archive/2014/05/01/visual-studio-online-update-may-1st.aspx), the Visual Studio Online deployments are an event that takes a few days. Depending on your account, you may not see these new features until the deployment is complete. You can find the latest status of the deployment on the [Support](https://www.visualstudio.com/support/support-overview-vs) page. Remember to visit our [User Voice](https://visualstudio.uservoice.com/forums/330519-vso) site to give us feedback on our priorities and investments.
+That’s the list for sprint 68. As Brian mentioned in [his blog](http://blogs.msdn.com/b/bharry/archive/2014/05/01/visual-studio-online-update-may-1st.aspx), the Visual Studio Online deployments are an event that takes a few days. Depending on your account, you may not see these new features until the deployment is complete. You can find the latest status of the deployment on the [Support](https://visualstudio.microsoft.com/support/support-overview-vs) page. Remember to visit our [User Voice](https://visualstudio.uservoice.com/forums/330519-vso) site to give us feedback on our priorities and investments.
 
 Thank you!
 

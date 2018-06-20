@@ -32,7 +32,7 @@ To find the region where your account is located:
 
 3. Look under **Region**.
 
-To change your account region, you need to call [VSTS Support](https://www.visualstudio.com/team-services/support), and 
+To change your account region, you need to call [VSTS Support](https://visualstudio.microsoft.com/team-services/support), and 
 they will coordinate changing the region with the account owner.
 
 

@@ -7,7 +7,7 @@ ms.topic: include
 0. Before you start, if you haven't already:
 
  * [Sign up and create your team project](../../accounts/create-account-msa-or-work-student.md).
- * Install [Visual Studio 2013 or later](https://www.visualstudio.com/en-us/downloads).
+ * Install [Visual Studio 2013 or later](https://visualstudio.microsoft.com/en-us/downloads).
 
 0. Go to your team project's page 
 (```http://{youraccount}.visualstudio.com/DefaultCollection/{yourteamproject}```)

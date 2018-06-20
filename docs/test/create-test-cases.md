@@ -71,7 +71,7 @@ different, consider creating separate test cases.
 
 1. After you select the testers, email them so they
    know the tests are ready for them to run. (You just need 
-   [Basic access](https://www.visualstudio.com/products/visual-studio-online-Basic-vs)
+   [Basic access](https://visualstudio.microsoft.com/products/visual-studio-online-Basic-vs)
    to run tests from VSTS.)
 
    ![Assign testers to run all tests and send emails to them](_img/create-test-cases/AssignMultipleTestersEmail.png)

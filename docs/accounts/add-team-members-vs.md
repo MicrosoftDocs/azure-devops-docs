@@ -22,10 +22,10 @@ For Team Foundation Server, learn [how to add team project members here](../orga
 
 When you add members to team projects,
 VSTS automatically assigns
-[Basic access](https://www.visualstudio.com/team-services/compare-features/),
+[Basic access](https://visualstudio.microsoft.com/team-services/compare-features/),
 if your account has seats available, 
-or [Stakeholder access](https://www.visualstudio.com/team-services/compare-features/),
-if not. When a [Visual Studio subscriber](https://www.visualstudio.com/products/subscriber-benefits-vs)
+or [Stakeholder access](https://visualstudio.microsoft.com/team-services/compare-features/),
+if not. When a [Visual Studio subscriber](https://visualstudio.microsoft.com/products/subscriber-benefits-vs)
 signs in, they'll get Basic access, and in some cases, additional features with specific extensions,
 like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
@@ -115,4 +115,4 @@ To add members to team projects, you'll need
 ## Related articles
 
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)
