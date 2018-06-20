@@ -367,7 +367,7 @@ To return to a team or project user context, select the team or project from the
 
 To connect to the web portal, you need your user account added to the team project. This is typically done by the [account owner](../accounts/add-account-users-assign-access-levels.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json).
 
-Five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). Find out more about licensing from [VSTS pricing](https://www.visualstudio.com/team-services/pricing/).
+Five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). Find out more about licensing from [VSTS pricing](https://visualstudio.microsoft.com/team-services/pricing/).
 
 ::: moniker-end
 
@@ -375,7 +375,7 @@ Five account users are free as are Visual Studio subscribers and stakeholders. A
 
 To connect to the web portal, you need your user account added to the team project. This is typically done by the [project administrator](../organizations/security/add-users-team-project.md?toc=/tfs/server/toc.json&bc=/tfs/server/breadcrumb/toc.json).
 
-Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json). Most regular contributors must have a TFS client access license (CAL). All Visual Studio subscriptions include a TFS CAL. Find out more about licensing from [TFS pricing](https://www.visualstudio.com/team-services/tfs-pricing).
+Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json). Most regular contributors must have a TFS client access license (CAL). All Visual Studio subscriptions include a TFS CAL. Find out more about licensing from [TFS pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
 ::: moniker-end
 
@@ -393,9 +393,9 @@ If data doesn't appear as expected, the first thing to try is to refresh your we
 
 In addition to connecting through a web browser, you can connect to a team project from these clients:
 
-- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
+- [Visual Studio (Professional, Enterprise, Test Professional)](https://visualstudio.microsoft.com/products/compare-visual-studio-2015-products-vs)
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
-- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
+- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx)
 - [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
 - [Office Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Office Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)

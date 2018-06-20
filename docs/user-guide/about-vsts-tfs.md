@@ -221,8 +221,8 @@ And, available today only in VSTS:
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Pricing - VSTS](https://www.visualstudio.com/team-services/pricing/)
-- [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
+- [Pricing - VSTS](https://visualstudio.microsoft.com/team-services/pricing/)
+- [Pricing - TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 <!---
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is

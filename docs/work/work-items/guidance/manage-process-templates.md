@@ -35,7 +35,7 @@ You can upload, download, and delete process templates for a team project collec
 
 1.	Open the same version of Visual Studio, Visual Studio Community, or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2017 instance, you must connect from Visual Studio 2017 or Visual Studio Community 2017. If you connect to VSTS, choose the latest version supported.  
 
-	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://www.visualstudio.com/downloads/#visual-studio-community-2015-with-update-3-free).  
+	You can always download a free version of Visual Studio Community from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/#visual-studio-community-2015-with-update-3-free).  
 
 	If you aren't a member of the Project Collection Administrators group, [get added as one](../../../organizations/security/set-project-collection-level-permissions.md).  
 
@@ -71,7 +71,7 @@ You can upload, download, and delete process templates for a team project collec
 	</td>
 	<td>To download the process template to a local computer.<br/>
 	<p>In the **Download Process Template** dialog box, select a folder where the process template will be downloaded.</p>
-	<p>If you're downloading a process template to use to [configure new features](../../customize/configure-features-after-upgrade.md), [manually add new features](../../customize/add-features-manually.md) or [update a custom process template to enable new features](../../customize/update-customized-process-template.md)--choose the process that corresponds to the one you used previously to create your team project. For example, if you're updating a team project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://www.visualstudio.com/downloads/download-visual-studio-vs). </p>
+	<p>If you're downloading a process template to use to [configure new features](../../customize/configure-features-after-upgrade.md), [manually add new features](../../customize/add-features-manually.md) or [update a custom process template to enable new features](../../customize/update-customized-process-template.md)--choose the process that corresponds to the one you used previously to create your team project. For example, if you're updating a team project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). </p>
 	<p>You can determine which process template to select based on the [work item types defined for your existing team project](#wit_correlation).</p>
 	</td>
 	</tr>

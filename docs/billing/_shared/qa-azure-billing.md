@@ -51,8 +51,8 @@ which you can do before or during your purchase.
 ### Q:	Can I use the monthly Azure credits from Visual Studio subscriptions or Visual Studio Dev Essentials to buy from the Visual Studio Marketplace?
 
 A:	No, you can't use the monthly Azure credits from 
-[Visual Studio subscriptions](https://www.visualstudio.com/products/subscriber-benefits-vs) 
-and [Visual Studio Dev Essentials](https://www.visualstudio.com/products/visual-studio-dev-essentials-vs.aspx) 
+[Visual Studio subscriptions](https://visualstudio.microsoft.com/products/subscriber-benefits-vs) 
+and [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/products/visual-studio-dev-essentials-vs.aspx) 
 to pay for Visual Studio Marketplace purchases. 
 However, you can use the included Azure subscriptions to bill your purchases. 
 Before you make purchases, you must 

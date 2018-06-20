@@ -21,7 +21,7 @@ ms.date: 03/01/2018
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
 > [!NOTE]   
-> The Follow a work item feature is available from TFS 2017 and later versions. The Follow a pull request feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://www.visualstudio.com/downloads/#team-foundation-server-2017). 
+> The Follow a work item feature is available from TFS 2017 and later versions. The Follow a pull request feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads/#team-foundation-server-2017). 
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ This topic shows you how to:
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   
-> The Follow a pull request feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://www.visualstudio.com/downloads/#team-foundation-server-2017). 
+> The Follow a pull request feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads/#team-foundation-server-2017). 
 ::: moniker-end
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"

@@ -22,7 +22,7 @@ The first thing you will notice is that we’ve changed our name. What was Team 
 
 ![New Visual Studio Online site](_img/11_13_02.png)
 
-With our new name comes a new portal. This is now a combined portal, including the breadth of our Visual Studio, Visual Studio Online and MSDN offerings. There’s a ton of useful information about our products, some “How-to” content for getting started, the latest news and more. http://www.visualstudio.com is the only url you have to remember. From here you can sign in and get to your profile page which now has links both to the account you own and to all the accounts you’ve been invited to participate in.
+With our new name comes a new portal. This is now a combined portal, including the breadth of our Visual Studio, Visual Studio Online and MSDN offerings. There’s a ton of useful information about our products, some “How-to” content for getting started, the latest news and more. http://visualstudio.microsoft.com is the only url you have to remember. From here you can sign in and get to your profile page which now has links both to the account you own and to all the accounts you’ve been invited to participate in.
 
 ![Your profile page](_img/11_13_03.png)
 
@@ -38,11 +38,11 @@ Don’t worry though. First off, everyone who is a member of an account today ha
 -While the service is in Commercial Preview, all list prices are reduced by 50% to account for the fact that the service is still officially a “preview”.
 -Among the plans, you will find an option for small teams that allows you to license both VS Online and the VS Professional IDE on a monthly basis. This can be a very flexible and cost effective way for a small team to stay up to date with the latest version of Visual Studio.
 
-You can read all the offer details [here](https://www.visualstudio.com/products/visual-studio-online-overview-vs) on our new portal.
+You can read all the offer details [here](https://visualstudio.microsoft.com/products/visual-studio-online-overview-vs) on our new portal.
 
 I assume some people will decide, for any number of reasons, that it’s time for them to migrate from the cloud to an on-premises Team Foundation Server installation. We promised months ago that we would provide a good migration path and we will. It’s not quite ready yet, but we’re expecting to have it available for anyone to use by January – at least a month before the “Early Adopter” period is over. This solution will enable you to export all of your data from VS Online as a Team Project Collection that can be imported into TFS. We’ll provide more details in a future news post.
 
-To get started with a paid account, the first thing to understand is that we are coupling your VS Online subscription to your Windows Azure account. VS Online is a Windows Azure resource and you can manage your subscription and billing with Windows Azure and, consequently, take advantage of all of the Windows Azure purchasing options and discounts. To get a detailed walk-through, visit our [getting started topic](https://www.visualstudio.com/get-started/set-up-billing-for-your-account-vs).
+To get started with a paid account, the first thing to understand is that we are coupling your VS Online subscription to your Windows Azure account. VS Online is a Windows Azure resource and you can manage your subscription and billing with Windows Azure and, consequently, take advantage of all of the Windows Azure purchasing options and discounts. To get a detailed walk-through, visit our [getting started topic](https://visualstudio.microsoft.com/get-started/set-up-billing-for-your-account-vs).
 
 ![Set up your billing](_img/11_13_04.png)
 
@@ -56,7 +56,7 @@ Use the new Users hub in VS Online to assign licenses to users.
 
 ##Getting Support is Easy
 
-Among the features of the new site you will find a new [support page](https://www.visualstudio.com/support/support-overview-vs) that provides you with a full set of options for getting support – including a list of commonly asked questions, links to forums, contact info for customer support and more. We want to make it as easy as we can for you to get any help that you need.
+Among the features of the new site you will find a new [support page](https://visualstudio.microsoft.com/support/support-overview-vs) that provides you with a full set of options for getting support – including a list of commonly asked questions, links to forums, contact info for customer support and more. We want to make it as easy as we can for you to get any help that you need.
 
 ##Announcing Visual Studio Online “Monaco”
 

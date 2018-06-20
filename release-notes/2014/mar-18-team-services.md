@@ -24,7 +24,7 @@ Today’s update also includes a new trace log search feature. If your applicati
 
 ![Search across trace logs](_img/3_18_02.png)
 
-We are anxious to hear your feedback. Let us know how we’re doing at [http://www.visualstudio.com/support](https://www.visualstudio.com/support).
+We are anxious to hear your feedback. Let us know how we’re doing at [http://visualstudio.microsoft.com/support](https://visualstudio.microsoft.com/support).
 
 Thanks,
 

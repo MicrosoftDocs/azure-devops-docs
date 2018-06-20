@@ -109,7 +109,7 @@ VSTS assigns an access level to them automatically. If they have
 [Visual Studio subscriptions](faq-add-delete-users.md#EligibleMSDNSubscriptions),
 VSTS assigns the respective access level to them.
 Otherwise, VSTS assigns them the next "best available"
-[access level](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs)
+[access level](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs)
 in this order: Basic, Stakeholder
  
 If you don't have enough access levels for all Azure AD group members,
@@ -216,7 +216,7 @@ or create new work accounts for them in your directory.
 ### Q: How do I use my work or school account with my Visual Studio with MSDN subscription?
 
 A:  If you used a Microsoft account to activate a
-[Visual Studio with MSDN subscription](https://www.visualstudio.com/vs/pricing/)
+[Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/)
 that includes VSTS as a benefit, 
 you can add a work or school account that's
 managed by Azure Active Directory to your subscription.
@@ -379,7 +379,7 @@ choose the identity that's a member in your directory because
 only directory members can get access to your account.
 
 If you have a Visual Studio with MSDN subscription that 
-[includes VSTS](https://www.visualstudio.com/vs/pricing/) as a benefit,
+[includes VSTS](https://visualstudio.microsoft.com/vs/pricing/) as a benefit,
 and you activated that subscription with a Microsoft account,
 you can add a work or school account that's managed by Azure Active Directory to your subscription.
 Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](../billing/link-msdn-subscription-to-organizational-account-vs.md).

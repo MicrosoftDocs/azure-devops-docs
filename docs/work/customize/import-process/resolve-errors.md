@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
@@ -1563,7 +1564,7 @@ To resolve this, create two seperate groups that contain one control each.
 
 #### Error example
 ```
-  <Control Type="FieldControl" FieldName="customfield.foo" Label="Foo" LabelPosition="Left">
+  <Control Type="FieldContvisualstudio.microsoft.comomfield.foo" Label="Foo" LabelPosition="Left">
     <Link UrlRoot="http://www.visualstudio.com/team-services" />
   </Control>
 ```
@@ -1572,7 +1573,7 @@ To resolve this, create two seperate groups that contain one control each.
 ```
   <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
     <LabelText>  
-        <Text>  
+        <Text>  visualstudio.microsoft.com
           <Link UrlRoot="http://www.visualstudio.com/team-services" />  
               Title 2  
         </Text>  

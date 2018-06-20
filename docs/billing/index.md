@@ -32,7 +32,7 @@ All VSTS charges appear on your monthly Azure bill. Azure supports payment by cr
 
 You can also make some purchases for TFS on your monthly Azure bill.
 
-* [TFS pricing](https://www.visualstudio.com/team-services/tfs-pricing/)
+* [TFS pricing](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 * [How to buy TFS CALs or access to the TFS Test hub](buy-access-tfs-test-hub.md)
 
 ::: moniker-end

@@ -7,7 +7,8 @@ ms.custom: wiki
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.reviewer: sancha
 ms.topic: overview
 ms.date: 10/18/2017
@@ -110,7 +111,7 @@ Use your team project wiki to share information with other team members. When yo
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-> [!NOTE]  
+> [!NOTE]  visualstudio.microsoft.com
 > The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see  [Visual Studio Downloads](https://www.visualstudio.com/downloads/). 
 ::: moniker-end
 

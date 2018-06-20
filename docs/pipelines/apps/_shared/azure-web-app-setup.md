@@ -17,7 +17,7 @@ If you have an existing Azure account, you can certainly use a new or existing A
 
 <p><a data-toggle="collapse" href="#create-azure-account">How do I create a new Azure account with free credits? &#x25BC;</a></p>
 <div class="collapse" id="create-azure-account">
-If you don't yet have an Azure account, you can get started for free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+If you don't yet have an Azure account, you can get started for free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 <p></p>
 </div>
 

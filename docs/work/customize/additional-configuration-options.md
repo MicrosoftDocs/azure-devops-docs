@@ -115,7 +115,7 @@ With this feature, you can [storyboard your ideas using the Storyboarding add-in
 </td>
 <td>
 **Required:** [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300)<br/>
-**Required:** Visual Studio Community ([get your free download](https://www.visualstudio.com/free-developer-offers/)) or other Visual Studio version installed. 
+**Required:** Visual Studio Community ([get your free download](https://visualstudio.microsoft.com/free-developer-offers/)) or other Visual Studio version installed. 
 </td>
 </tr>
 <tr>

@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013 <= tfs-2018'
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!IMPORTANT]
-> This topic applies to managing access levels for team projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for VSTS, see [Manage users and access in VSTS](../../accounts/add-account-users-assign-access-levels.md). For VSTS feature availability, see the [VSTS Feature Matrix](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs).
+> This topic applies to managing access levels for team projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for VSTS, see [Manage users and access in VSTS](../../accounts/add-account-users-assign-access-levels.md). For VSTS feature availability, see the [VSTS Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs).
 
 To connect and use the functions and features that TFS provides, [users must be added to a group with the appropriate permissions](add-users-team-project.md). To use select web portal features, they must also belong to the access level that enables access to that feature. For a description and usage information for each access level, see [Access levels](access-levels.md).
 
@@ -111,9 +111,9 @@ You can learn more about each of the features you have access to from the follow
 Also, stakeholders can create and modify work items using Team Foundation clients such as Visual Studio Community, Microsoft Excel, Microsoft Project, and Microsoft Feedback Client.
 2.	Standard features include access to the Home and Work hubs.
 3. 	Includes all backlogs and boards, including product, portfolio, and sprint backlogs and Kanban and sprint task boards. Can add work items to backlogs, which appear at the bottom of the list. Can't reorder items on the page or use some other features. See [Stakeholder access](../../organizations/security/get-started-stakeholder.md) for details.
-4. 	Release Management is in preview and available when you [upgrade your application server to TFS 2015 Update 2 or later version](https://www.visualstudio.com/downloads/download-visual-studio-vs).   
+4. 	Release Management is in preview and available when you [upgrade your application server to TFS 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).   
 5.	Basic access allows you to access the Code, Build, and Test hubs in addition to the Home and Work hubs.
-6.	Request and manage feedback is now available within the Basic access level when you [upgrade your application server to TFS 2015 Update 1 or later version](https://www.visualstudio.com/downloads/download-visual-studio-vs).
+6.	Request and manage feedback is now available within the Basic access level when you [upgrade your application server to TFS 2015 Update 1 or later version](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 7.	You can open the Admin context and view and modify settings provided you are a team, project, or project collection administrator. See [Administer account features](#administer-account).
 8.	Advanced home page allows you to configure and view the Welcome page in addition to team dashboards.  
 9.	You can [purchase Test Manager extensions and assign to user accounts](access-levels.md#test-manager) to gain full access to web-based Test case management tools.

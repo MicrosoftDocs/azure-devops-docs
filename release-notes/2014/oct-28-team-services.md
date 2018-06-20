@@ -34,7 +34,7 @@ Although the 1.0 set is locked from a breaking change standpoint, it is not lock
 
 To learn more about how to use the APIs, check out [Get started with the REST APIs](https://docs.microsoft.com/rest/api/vsts/?view=vsts-rest-4.1).
 
-To explore the available APIs, see the [Visual Studio Online REST API Reference](https://www.visualstudio.com/integrate/reference/reference-vso-overview-vsi).
+To explore the available APIs, see the [Visual Studio Online REST API Reference](https://visualstudio.microsoft.com/integrate/reference/reference-vso-overview-vsi).
 
 **Developers with existing apps using the 1.0 preview APIs:** you should start migrating to the release 1.0 APIs as soon as possible. Graduated preview APIs (any API in the 1.0 set) are subject to stop working in 12 weeks from today. To learn more about versioning and migrating, see the [versioning and migration](https://docs.microsoft.com/rest/api/vsts/?view=vsts-rest-4.1) page.
 

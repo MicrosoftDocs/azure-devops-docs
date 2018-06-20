@@ -146,7 +146,7 @@ The following services support your DevOps operations.
 - On-premises self-hosted agents to support build and deployment  
 - Cloud-based performance/load testing lets you load test your code by simulating high traffic  
 
-To learn more, see [Pricing](https://www.visualstudio.com/team-services/pricing/).
+To learn more, see [Pricing](https://visualstudio.microsoft.com/team-services/pricing/).
 
 
 ## Azure services
@@ -176,7 +176,7 @@ There are a number of features and tasks associated with administrating a collab
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md) 
 - [Software development roles](roles.md)  
-- [Pricing](https://www.visualstudio.com/team-services/pricing/)
+- [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
 
 
 <!---
