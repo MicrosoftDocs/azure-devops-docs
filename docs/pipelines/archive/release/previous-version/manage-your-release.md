@@ -71,9 +71,9 @@ that runs Release Management Server, too.
 
 ***Important:*** _This is a 90-day trial version of Release Management. For information about obtaining 
 a non-trial version, see 
-[How to buy Release Management](http://www.visualstudio.com/products/how-to-buy-release-management-vs)
+[How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
 or 
-[Release Management Licensing](http://www.visualstudio.com/release-mgmt-licensing-vs). 
+[Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs). 
 If you are an MSDN subscriber, you can download a non-trial version from the 
 [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._
 

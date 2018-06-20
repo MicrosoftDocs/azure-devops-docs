@@ -119,7 +119,7 @@ In the future, we plan to support finer control on allocation of concurrent jobs
 
 ### Who can use the Build and Release Management features?
 
-VSTS users with [basic access](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) can author as many builds and releases as they want.
+VSTS users with [basic access](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) can author as many builds and releases as they want.
 
 To approve releases, basic access is not necessary. Any user with [stakeholder access](../../organizations/security/get-started-stakeholder.md) can approve or reject releases.
 

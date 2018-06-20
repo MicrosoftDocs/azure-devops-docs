@@ -35,7 +35,7 @@ from the **Test** hub instead of using Microsoft Test Manager.
    - [Create some test cases.](plan-manual-tests-with-microsoft-test-manager.md) Typically you create them at the start of a sprint, and aim to have them all pass by the end of the sprint. You can create them either with the web portal or Microsoft Test Manager.  
   
    - Install Microsoft Test Manager (MTM) on the machine where you want to run your tests.
-     To get MTM, install [Visual Studio Enterprise](https://www.visualstudio.com/downloads/) or [Visual Studio Test Professional ](https://www.visualstudio.com/vs/test-professional/).
+     To get MTM, install [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Test Professional ](https://visualstudio.microsoft.com/vs/test-professional/).
   
    - [Connect MTM to your test plan](connect-microsoft-test-manager-to-your-team-project-and-test-plan.md)  
   

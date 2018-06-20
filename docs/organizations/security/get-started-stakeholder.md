@@ -243,7 +243,7 @@ If you need access to the following features&mdash;which support the daily work 
 
 ## Related articles
 
-For a comparison chart of Stakeholder vs Basic access, see this [feature matrix](https://www.visualstudio.com/team-services/compare-features/). See also these quickstart guides: 
+For a comparison chart of Stakeholder vs Basic access, see this [feature matrix](https://visualstudio.microsoft.com/team-services/compare-features/). See also these quickstart guides: 
 
 - [Add work items](../../work/backlogs/add-work-items.md)  
 - [Create your backlog](../../work/backlogs/create-your-backlog.md)

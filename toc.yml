@@ -104,7 +104,7 @@
       href: connect/work-web-portal.md
     - name: Work from your account hub
       href: connect/account-home-pages.md
-  - name: Manage users & access (Team Services)
+  - name: Manage users & accessï¿½(Team Services)
     items:
     - name: Add and manage users
       href: /team-services/setup-admin/team-services/add-account-users-assign-access-levels-team-services
@@ -112,7 +112,7 @@
       href: /team-services/setup-admin/add-administrator-tfs
     - name: Manage permissions
       href: /team-services/setup-admin/tfs/admin/change-permission-levels
-  - name: Manage users & access (TFS)
+  - name: Manage users & accessï¿½(TFS)
     items:
     - name: Add users to team projects
       href: /team-services/setup-admin/add-users
@@ -172,8 +172,8 @@
     - name: Get more features for Team Services
       href: /docs/marketplace/get-vsts-extensions
     - name: Pricing: Team Services
-      href: https://www.visualstudio.com/team-services/pricing/
+      href: https://visualstudio.microsoft.com/team-services/pricing/
     - name: Pricing: TFS
-      href: https://www.visualstudio.com/team-services/tfs-pricing/
+      href: https://visualstudio.microsoft.com/team-services/tfs-pricing/
   - name: Collaborate with Microsoft Teams
     href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams

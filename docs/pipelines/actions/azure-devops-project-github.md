@@ -36,7 +36,7 @@ You will:
 
 ## Prerequisites
 
-* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 * Access to a GitHub or external Git repository that contains .NET, Java, PHP, Node, Python, or static web code.
 
 ## Sign in to the Azure portal

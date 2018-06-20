@@ -49,7 +49,7 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 </b></p>
 Track work and integrate with your code, build, and test environments from the following clients:   
 - [Eclipse (Team Explorer Everywhere)](/vsts/java/download-eclipse-plug-in)       
-- [Visual Studio](https://www.visualstudio.com/downloads/)      
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/)      
 - [Android Studio](/vsts/java/download-android-studio-plug-in)     
 - [IntelliJ](/vsts/java/download-intellij-plug-in)   
 - [Visual Studio Code](/vsts/java/vscode-extension)   
@@ -814,7 +814,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Frequent on-line feature updates</b></p>
-<p>Check the [News](https://www.visualstudio.com/news-overview-vs) for product updates, or read about them by accessing the News link in your web portal.</p>
+<p>Check the [News](https://visualstudio.microsoft.com/news-overview-vs) for product updates, or read about them by accessing the News link in your web portal.</p>
 
  <br/>
 
@@ -1750,7 +1750,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Subscriptions</b></p>
-<p>[Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs) are a way for you to get the Visual Studio IDE, team collaboration benefits like VSTS and TFS, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
+<p>[Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs) are a way for you to get the Visual Studio IDE, team collaboration benefits like VSTS and TFS, and subscriber benefits like dev/test use of Windows, Windows Server, and SQL Server. </p>
 
 <p><b>Extensions</b></p>
 <p>You can [get and quickly install extensions](../marketplace/get-vsts-extensions.md) to add functionality to Visual Studio, Visual Studio Code, or VSTS.</p>
@@ -1931,7 +1931,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Eclipse plug-in language support </b></p>
-<p>[Install Team Explorer Everywhere](https://www.visualstudio.com/downloads/download-visual-studio-vs#d-team-explorer-everywhere), which includes language support for English, French, German, Japanese, and Simplified Chinese.   </p>
+<p>[Install Team Explorer Everywhere](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs#d-team-explorer-everywhere), which includes language support for English, French, German, Japanese, and Simplified Chinese.   </p>
 
 </td>
 </tr>
@@ -2021,14 +2021,14 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Get HockeyApp for mobile app development</b></p>
-<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://www.visualstudio.com/app-center/). </p>
+<p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by [adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://visualstudio.microsoft.com/app-center/). </p>
 
 <p><b>Simplified distribution </b></p>
 <p>[Manage distribution of development and production versions of your apps](http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution) and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with VSTS and TFS</b></p>
-<p>[Integrate HockeyApp directly in VSTS or TFS](https://www.visualstudio.com/app-center/) to upload your Android, iOS, or Windows builds. </p>
+<p>[Integrate HockeyApp directly in VSTS or TFS](https://visualstudio.microsoft.com/app-center/) to upload your Android, iOS, or Windows builds. </p>
 
 
 
@@ -2404,22 +2404,22 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Free developer offers</b></p>
-<p>To get started, [download and install Visual Studio](https://www.visualstudio.com/products/free-developer-offers-vs.aspx) an integrated development environment (IDE) that works with VSTS and TFS. </p>
+<p>To get started, [download and install Visual Studio](https://visualstudio.microsoft.com/products/free-developer-offers-vs.aspx) an integrated development environment (IDE) that works with VSTS and TFS. </p>
 
 
 <p><b>Migrate from on-premises to hosted</b></p>
-<p>You can [migrate source code and work items](https://www.visualstudio.com/articles/adopting-vsts) from an on-premises TFS to the cloud. </p>
+<p>You can [migrate source code and work items](https://visualstudio.microsoft.com/articles/adopting-vsts) from an on-premises TFS to the cloud. </p>
 
 </td>
 <td width="33%">
 
 <p><b>Sign up for VSTS </b></p>
-<p>[Store your code, tests, and test results in the cloud with VSTS](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services), as well as plan your project and track progress. </p>
+<p>[Store your code, tests, and test results in the cloud with VSTS](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services), as well as plan your project and track progress. </p>
 
 
 
 <p><b>Install TFS </b></p>
-<p>[Download and install the latest version of Team Foundation Server](https://www.visualstudio.com/downloads). TFS provides the collaboration hub to support your teams DevOps tasks. at the center of the Microsoft devops solution. </p>
+<p>[Download and install the latest version of Team Foundation Server](https://visualstudio.microsoft.com/downloads). TFS provides the collaboration hub to support your teams DevOps tasks. at the center of the Microsoft devops solution. </p>
 
 
 
@@ -2795,7 +2795,7 @@ We add new features frequently. We'll work to keep this list up-to-date. Other r
 - [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)
 
 <br/>
-Get started today using our cloud offering, [VSTS](https://www.visualstudio.com/team-services/), or our [on-premises TFS server](https://www.visualstudio.com/downloads/).  
+Get started today using our cloud offering, [VSTS](https://visualstudio.microsoft.com/team-services/), or our [on-premises TFS server](https://visualstudio.microsoft.com/downloads/).  
 
 
 ### We welcome your feedback

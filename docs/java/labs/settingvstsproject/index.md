@@ -21,7 +21,7 @@ This exercise will walk you through the steps to creating your Visual Studio Tea
 >
 > **[Learn how to connect to the Java VM environment here](https://github.com/nwcadence/java-dev-vsts)**.
 
-1. Login to your Team Services account - `https://{your account name}.visualstudio.com`. If you do not have a VSTS account, [sign up for a free one](https://www.visualstudio.com/team-services/).
+1. Login to your Team Services account - `https://{your account name}.visualstudio.com`. If you do not have a VSTS account, [sign up for a free one](https://visualstudio.microsoft.com/team-services/).
 
    > [!div class="mx-imgBorder"]
    > ![Sign up for a VSTS account](../_img/settingvstsproject/newaccount.png)

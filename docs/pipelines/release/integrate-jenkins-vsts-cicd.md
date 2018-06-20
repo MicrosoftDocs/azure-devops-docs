@@ -45,7 +45,7 @@ You will:
 
 ## Before you begin
 
-* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 * A Tomcat and Java 8 based Azure Web App.  You can follow the steps for creating one [here](https://docs.microsoft.com/en-us/java/azure/java-quickstart-maven-webapps)
 
@@ -58,7 +58,7 @@ You will:
   You can get a [free VSTS account](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~home-vsts-hero~27308&campaign=o~msft~vscom~home-vsts-hero~27308).
 
   > [!NOTE]
-  > For more information, see [Connect to VSTS](https://www.visualstudio.com/docs/setup-admin/team-services/connect-to-visual-studio-team-services).
+  > For more information, see [Connect to VSTS](https://visualstudio.microsoft.com/docs/setup-admin/team-services/connect-to-visual-studio-team-services).
 
 ## Get the sample app
 
@@ -85,7 +85,7 @@ You must configure credentials for connecting to VSTS, and a plug in for **VS Te
   Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in VSTS**.
  
 1.  Create a PAT in your VSTS account. Jenkins requires this information to access your VSTS account.  Ensure you **store** the token information for upcoming steps in this section.
-  Read [How do I create a personal access token for VSTS and TFS](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) to learn how to generate a PAT, or use an existing PAT if you have one.
+  Read [How do I create a personal access token for VSTS and TFS](https://visualstudio.microsoft.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) to learn how to generate a PAT, or use an existing PAT if you have one.
 
 1. Open your Jenkins account and select **Credentials**, **System**, and then choose **Add Domain**.
 

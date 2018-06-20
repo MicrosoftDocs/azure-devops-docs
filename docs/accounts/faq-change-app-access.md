@@ -23,7 +23,7 @@ A:  Personal access tokens are a more convenient and
 secure replacement for alternate authentication credentials. 
 You can limit a token's use to a specific lifetime, 
 a VSTS account, 
-and to [scopes](https://www.visualstudio.com/integrate/get-started/Authentication/oauth#scopes) 
+and to [scopes](https://visualstudio.microsoft.com/integrate/get-started/Authentication/oauth#scopes) 
 of activities that the token authorizes. Learn more about 
 [personal access tokens here](use-personal-access-tokens-to-authenticate.md).
 

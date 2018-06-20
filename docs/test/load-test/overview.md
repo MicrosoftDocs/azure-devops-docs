@@ -73,7 +73,7 @@ Load test your app with hundreds of thousands of users using
   of how long your test is and how many users the test simulates.
 
 * You get a generous allocation of virtual user minutes free each month.
-  See the [VSTS Pricing](https://www.visualstudio.com/team-services/pricing/) page.
+  See the [VSTS Pricing](https://visualstudio.microsoft.com/team-services/pricing/) page.
   
 ## More information
 
@@ -85,7 +85,7 @@ Load test your app with hundreds of thousands of users using
 
 * [Performance test your Azure web app under load](app-service-web-app-performance-test.md)
 
-* [Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
+* [Pricing for VSTS features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 If you prefer to run your tests in a local environment rather than in the cloud, see
 [Load test with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project).

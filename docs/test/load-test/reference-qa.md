@@ -21,7 +21,7 @@ monikerRange: 'vsts'
 
 [Go to related topic &gt;](get-started-simple-cloud-load-test.md)
 
-[Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
+[Pricing for VSTS features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 ### Q: How do I learn more about Cloud-based Load Testing?
 
@@ -32,13 +32,13 @@ monikerRange: 'vsts'
 
 ### Q: Do I need anything to load test in the cloud with Visual Studio Ultimate 2013?
 
-**A**:  Yes, you'll need Update 4 or Update 5 installed. [Download this version](https://www.visualstudio.com/downloads/download-visual-studio-vs).
+**A**:  Yes, you'll need Update 4 or Update 5 installed. [Download this version](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 
 ### Q: My Visual Studio trial period ended, but I still want to run load tests.
 
 **A**:  To continue load testing after the trial, you'll need an active and valid 
 Visual Studio Enterprise 2017 or 2015 license, or a Visual Studio Ultimate 2013 license. 
-[Learn more about licensing](https://www.visualstudio.com/products/how-to-buy-vs).
+[Learn more about licensing](https://visualstudio.microsoft.com/products/how-to-buy-vs).
 
 ### Q: Can I run cloud-based load tests on any app, even behind a firewall?
 
@@ -132,7 +132,7 @@ For runs that end in an error state, no virtual user minutes will be deducted fr
 
 Note that there is an additional charge for [resource retention](#retain-resources).
 
-[Pricing for VSTS features](https://www.visualstudio.com/team-services/pricing/)
+[Pricing for VSTS features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 <a name="iterations"></a>
 ### Q: I'm running load tests using test iterations. How is load test duration determined?
@@ -307,7 +307,7 @@ Email us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
 **A**: To find your new account, go to ```https://{accountname}.visualstudio.com```. 
 Share your code, build, test, track work, and ship software - all in the cloud 
-using any tool or language. Learn more about how [VSTS](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+using any tool or language. Learn more about how [VSTS](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
 features and services help your team collaborate more easily and deploy continuously.
 
 ### Q: Can I get more detailed profiler information?
@@ -442,7 +442,7 @@ For more information, see
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
 **A**: You can view the service status at the top of the 
-[VSTS support page](https://www.visualstudio.com/support-overview-vs) 
+[VSTS support page](https://visualstudio.microsoft.com/support-overview-vs) 
 and on our [service blog](http://blogs.msdn.com/b/vsoservice/). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
@@ -688,7 +688,7 @@ See [Load Test Run Settings Properties](https://docs.microsoft.com/visualstudio/
 * VS1550082
 * VS1550083
 
-[Contact VSTS Support](https://www.visualstudio.com/team-services/support). 
+[Contact VSTS Support](https://visualstudio.microsoft.com/team-services/support). 
 You will have to give them your test run id.
 
 ### Q: My run was aborted because the .loadtest xml file could not be parsed. What do I do?
