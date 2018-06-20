@@ -18,7 +18,7 @@ We have a fair number of updates this sprint.
 
 Recently we announced the ability to use Git as your source control system with TFS. Not all automated build features are supported yet for Team Projects using Git. Today we are taking a big step in filling that gap by enabling the Continuous Integration (CI) trigger for Git based builds. Now you can build your project every time someone commits to Git.
 
-Note: To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](http://go.microsoft.com/fwlink/?LinkId=273878).
+Note: To enable CI for Git builds you need [CTP3 of Visual Studio 2012 Update 2](https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2012-update2-vs).
 
 ##Test Case Management Improvements
 
