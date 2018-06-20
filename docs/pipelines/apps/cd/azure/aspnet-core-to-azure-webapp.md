@@ -43,7 +43,7 @@ After you commit and push a code change, it is automatically built and then depl
 ## Prerequisites
 
 [!INCLUDE [include](../../../_shared/ci-cd-prerequisites-vsts.md)]
-* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 ## Get the sample code
 

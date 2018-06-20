@@ -50,7 +50,7 @@ If you’re using Xcode in your environment, we published a [new article](https:
 
 ##News RSS feed
 
-Finally, as [promised](http://blogs.msdn.com/b/bharry/archive/2012/08/27/team-foundation-service-updates-8-27.aspx) we’ve enabled an [RSS feed](https://www.visualstudio.com/team-services/release-notes-feed/?feed=release-notes-feed) on our news section so you can more easily keep track of what we’re doing.
+Finally, as [promised](http://blogs.msdn.com/b/bharry/archive/2012/08/27/team-foundation-service-updates-8-27.aspx) we’ve enabled an [RSS feed](https://visualstudio.microsoft.com/team-services/release-notes-feed/?feed=release-notes-feed) on our news section so you can more easily keep track of what we’re doing.
 
 That’s the list for sprint 36. We’ll have another update for you in 3 more weeks. Remember to visit our [User Voice](https://visualstudio.uservoice.com/forums/330519-vso) site to give us feedback on our priorities and investments.
 

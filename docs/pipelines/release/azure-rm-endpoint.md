@@ -128,7 +128,7 @@ These errors typically occur when your session has expired.
 To resolve these issues:
 
 * Sign out of VSTS or TFS.
-* Open an InPrivate or incognito browser window and navigate to [https://www.visualstudio.com/team-services/](https://www.visualstudio.com/team-services/).
+* Open an InPrivate or incognito browser window and navigate to [https://visualstudio.microsoft.com/team-services/](https://visualstudio.microsoft.com/team-services/).
 * If you are prompted to sign out, do so.
 * Sign in using the appropriate credentials.
 * Choose the account you want to use from the list.

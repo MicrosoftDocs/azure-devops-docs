@@ -36,7 +36,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 ## Create a test plan
 
 1. If you haven't already, 
-   [sign up for VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+   [sign up for VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
    [create your project](../accounts/account-management.md), 
    and [create your backlog](../work/backlogs/create-your-backlog.md). 
 

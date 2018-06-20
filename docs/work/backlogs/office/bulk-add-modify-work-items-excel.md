@@ -39,7 +39,7 @@ In this topic you'll learn:
 
 1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://www.visualstudio.com/downloads), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 	
 	> [!NOTE]   
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
@@ -101,11 +101,11 @@ You can make changes to work items in Excel, Project, the web portal, or Visual 
 ## Select user accounts 
 
 > [!NOTE]  
-><b>Feature availability: </b>  To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://www.visualstudio.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://www.visualstudio.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
+><b>Feature availability: </b>  To access the [Select User](#select-user) feature, you need to install [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/) or [Team Foundation Server Office Integration 2015 Update 2 or later version](https://visualstudio.microsoft.com/downloads/). You can download the free version of Visual Studio Community. Get this feature to avoid data validation errors by mispelling user names and when you must assign user names from a large group of user accounts.  
 
 You can use the Select User feature to find user accounts and assign values to person named fields. Also, this feature provides access to the most recently used (MRU) values. If your team contains several hundreds or thousands of user accounts, you'll want to use this feature.  
 
-1. If you haven't installed or updated to the latest version of [Visual Studio (at least VS 2015.1 or later version](https://www.visualstudio.com/downloads/), do that now. You need the latest update in order to access the Select User feature.  
+1. If you haven't installed or updated to the latest version of [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/), do that now. You need the latest update in order to access the Select User feature.  
 
 2. Click a person-named field to activate the Select User feature in the team ribbon.  
 
@@ -291,7 +291,7 @@ To drag a work item, select the work item or contiguous set of work items that y
 
 ### Web portal and Excel access
 
-While you can't open a query from the web portal, you can open the query from Excel. To use Excel, you must get the Team Foundation add-in, which installs when you install Visual Studio or Team Explorer. If you don't have one of these versions installed, [install it now](https://www.visualstudio.com/downloads/download-visual-studio-vs). You can install Visual Studio Community for free.
+While you can't open a query from the web portal, you can open the query from Excel. To use Excel, you must get the Team Foundation add-in, which installs when you install Visual Studio or Team Explorer. If you don't have one of these versions installed, [install it now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can install Visual Studio Community for free.
 
 Once you've installed Visual Studio, open Excel and look for the Team ribbon.
 

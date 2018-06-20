@@ -16,9 +16,9 @@ Happy New Year! Because of the holidays, we skipped our December deployment, so 
 
 ##Public preview of the dashboard widget SDK
 
-It’s here! When we launched dashboards, we mentioned that our widgets are written as [extensions](https://www.visualstudio.com/integrate/extensions/overview), which would also allow you to write and share your own widgets in time. Today, we’re releasing a public preview of our widget SDK. You can get started at [Add a dashboard widget](https://www.visualstudio.com/integrate/extensions/develop/add-dashboard-widget).
+It’s here! When we launched dashboards, we mentioned that our widgets are written as [extensions](https://visualstudio.microsoft.com/integrate/extensions/overview), which would also allow you to write and share your own widgets in time. Today, we’re releasing a public preview of our widget SDK. You can get started at [Add a dashboard widget](https://visualstudio.microsoft.com/integrate/extensions/develop/add-dashboard-widget).
 
-As a reminder, widgets are implemented as a [contribution point](https://www.visualstudio.com/integrate/extensions/develop/contributions-overview) in the extension framework. You’ll need some knowledge of JavaScript, HTML, CSS, and a good idea to build a widget. If you run into issues or have feedback, feel free reach out to us at vsointegration@microsoft<dot>com.
+As a reminder, widgets are implemented as a [contribution point](https://visualstudio.microsoft.com/integrate/extensions/develop/contributions-overview) in the extension framework. You’ll need some knowledge of JavaScript, HTML, CSS, and a good idea to build a widget. If you run into issues or have feedback, feel free reach out to us at vsointegration@microsoft<dot>com.
 
 ##Create branch and links to related artifacts
 
@@ -92,7 +92,7 @@ We’re heard your feedback on working with tags, and with this update, you’ll
 
 ##Deleting a custom field
 
-In the last [deployment](https://www.visualstudio.com/en-us/articles/news/2015/dec-10-team-services), we introduced the ability to customize work items and add new fields. With this update, users with process editing permissions can now delete custom fields created within their process. This action will delete all data associated with the field, including current values and revision history, and free up the field name for reuse. You can delete a field from the Fields tab on the process administration page. To delete a field, it must first be removed from all work item types that reference it.
+In the last [deployment](https://visualstudio.microsoft.com/en-us/articles/news/2015/dec-10-team-services), we introduced the ability to customize work items and add new fields. With this update, users with process editing permissions can now delete custom fields created within their process. This action will delete all data associated with the field, including current values and revision history, and free up the field name for reuse. You can delete a field from the Fields tab on the process administration page. To delete a field, it must first be removed from all work item types that reference it.
 
 ##Keyboard shortcuts
 
@@ -198,7 +198,7 @@ Write-Verbose ##vso[Task.UploadSummary] Attachments.md
 
 You can also add new sections or new tabs in the release summary using UI contribution points. Learn more about these contacts here:
 
-[https://www.visualstudio.com/en-us/integrate/extensions/reference/targets/overview](https://www.visualstudio.com/en-us/integrate/extensions/reference/targets/overview)
+[https://visualstudio.microsoft.com/en-us/integrate/extensions/reference/targets/overview](https://visualstudio.microsoft.com/en-us/integrate/extensions/reference/targets/overview)
 
 ##Search scope selector
 

@@ -22,10 +22,10 @@ using Visual Studio Team Services (VSTS).
 <a name="prepareenvir"></a>
 ## Prepare your environment
 
-* You will need a [Visual Studio Enterprise subscription](https://www.visualstudio.com/products/visual-studio-enterprise-vs)
+* You will need a [Visual Studio Enterprise subscription](https://visualstudio.microsoft.com/products/visual-studio-enterprise-vs)
   (monthly, annual, or MSDN) to run URL-based load tests.
 
-* [Create your VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create your VSTS account](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
   if you don't have one already. 
 
 <a name="runtests"></a>

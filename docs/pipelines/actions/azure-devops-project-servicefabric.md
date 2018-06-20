@@ -28,7 +28,7 @@ You will:
 
 ## Prerequisites
 
-* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+* An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 ## Create an Azure DevOps project for an ASP.NET Core App and Service Fabric
 

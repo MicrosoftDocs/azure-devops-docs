@@ -279,7 +279,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/service-hooks/index">Service Hooks</a></li>
                                         <li><a class="barLink" href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></li>
                                         <li><a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></li>
-                                        <li><a class="barLink" href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
+                                        <li><a class="barLink" href="https://visualstudio.microsoft.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></li>
                                     </ul>
                                     <h3>Marketplace</h3>
                                     <ul>
@@ -1157,7 +1157,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.visualstudio.com/en-us/docs/integrate/api/overview">
+                                <a href="https://visualstudio.microsoft.com/en-us/docs/integrate/api/overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1176,7 +1176,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">
+                                <a href="https://visualstudio.microsoft.com/en-us/docs/integrate/extensions/reference/client/core-sdk">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1331,7 +1331,7 @@ featureFlags:
                                         <a class="barLink" href="https://github.com/Microsoft/vss-web-extension-sdk">Get Started</a>
                                     </li>
                                     <li>
-                                        <a class="barLink" href="https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/core-sdk">API reference</a>
+                                        <a class="barLink" href="https://visualstudio.microsoft.com/en-us/docs/integrate/extensions/reference/client/core-sdk">API reference</a>
                                     </li>
                                 </ul>
                             </li>

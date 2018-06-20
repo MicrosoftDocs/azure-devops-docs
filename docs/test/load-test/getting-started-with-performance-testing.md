@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 
 Check your app or web site's performance before you launch it or deploy updates to production.
 Find problems before your customers do. Start running 
-[cloud-based load tests](https://www.visualstudio.com/features/vso-cloud-load-testing-vs) 
+[cloud-based load tests](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs) 
 in almost no time with Visual Studio and Visual Studio Team Services (VSTS).
 
 > This example shows how to execute a cloud load test using Visual Studio. You can also
@@ -29,10 +29,10 @@ or [run load tests locally with Visual Studio](https://docs.microsoft.com/visual
 <a name="LoadTestVSIDE"></a>
 ## Prepare your environment
 
-* [Download and install Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs), 
+* [Download and install Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs), 
   if you don't already have it.
 
-* [Create a VSTS account](https://www.visualstudio.com/products/visual-studio-team-services-vs), 
+* [Create a VSTS account](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
   if you don't have one already. You can have any access 
   level assigned to you in VSTS 
   when you use Visual Studio Enterprise to run load tests.

@@ -24,7 +24,7 @@ When your team's roles and responsibilities change, change your VSTS account own
 
 You must have VSTS [project collection administrator or account owner permissions](faq-change-account-ownership.md#find-owner-pca).
 If no one has these permissions, contact
-[VSTS Support](https://www.visualstudio.com/team-services/support).
+[VSTS Support](https://visualstudio.microsoft.com/team-services/support).
 
 Make sure that the new owner:
 

@@ -25,7 +25,7 @@ To learn more about the new cross-platform build/release system, see [Team Found
 ## Preparation and required setup for this tutorial
 In order to create extensions for VSTS, there are some prerequisite software and tools you'll need:
 
-- A **VSTS account**, more information can be found [here](https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx)
+- A **VSTS account**, more information can be found [here](https://visualstudio.microsoft.com/en-us/products/visual-studio-team-services-vs.aspx)
 - **A text editor**. For many of the tutorials we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/)
 <a name="cli" />
