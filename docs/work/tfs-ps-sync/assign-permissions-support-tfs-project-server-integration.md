@@ -71,7 +71,7 @@ ms.date: 03/16/2017
   
 -   **Service account for TFS**  
 
-     [Open the Team Foundation Administration console](/tfs/server/command-line/open-admin-console). If a Network Service account is used, [change it to a domain account](/tfs/server/admin/change-service-account-password).  
+     [Open the Team Foundation Administration console](/tfs/server/ref/command-line/open-admin-console). If a Network Service account is used, [change it to a domain account](/tfs/server/admin/change-service-account-password).  
   
 -   **Service account for the Project Server Event Handler**  
   
