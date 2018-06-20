@@ -594,10 +594,10 @@ OAuth and SSH keys are not constrained or checked by conditional access policy.
 In addition to this white paper, there are other resources available for
 your review and education. These include:
 
--   [VSTS home page](https://www.visualstudio.com/)
+-   [VSTS home page](https://visualstudio.microsoft.com/)
 -   [VSTS status](https://blogs.msdn.com/b/vsoservice/)
--   [Developer Services privacy statement](http://www.visualstudio.com/support/privacy-policy-vs)
--   [Developer Services Agreement](http://www.visualstudio.com/support/terms-of-service-vs)
+-   [Developer Services privacy statement](http://visualstudio.microsoft.com/support/privacy-policy-vs)
+-   [Developer Services Agreement](http://visualstudio.microsoft.com/support/terms-of-service-vs)
 -   [Brian Harry's blog](http://blogs.msdn.com/b/bharry/)
 -   [Azure trust center](http://azure.microsoft.com/support/trust-center/)
 -   [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)

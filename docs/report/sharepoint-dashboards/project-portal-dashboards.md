@@ -6,7 +6,8 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: d1576274-544b-4100-844a-2895e7acf2e4
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 09/07/2017
 ---
 
@@ -16,7 +17,7 @@ ms.date: 09/07/2017
 
 Teams can quickly find important information about their team projects by using dashboards. Dashboards show project data, support investigation, and provide tools for teams to quickly perform common tasks.  
   
-> [!TIP]
+> [!TIP]visualstudio.microsoft.com
 >  See [Dashboards](../dashboards.md) for information about creating dashboards in the web portal. If you work in Visual Studio Team Services (VSTS), you can also [Create Power BI dashboards and reports](https://www.visualstudio.com/en-us/get-started/report/report-on-vso-with-power-bi-vs). This topic discusses SharePoint site dashboards.  
   
  To view a dashboard, choose **Go to project portal** from the **Documents** page in Team Explorer.  

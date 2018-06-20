@@ -69,7 +69,7 @@ The easiest way to use the VSTS NuGet service is by adding the [Microsoft.Visual
   * Commit this change to your repo.
 
 ![Add your feed URL to nuget.config](_img/nugetconfig.png)
-* [Generate a PAT (personal access token)](https://www.visualstudio.com/en-us/news/2015/2015-jul-7-vso) for your user account. This PAT will allow the Jenkins build process to authenticate to VSTS as you, so be sure to protect your PAT like a password.
+* [Generate a PAT (personal access token)](https://visualstudio.microsoft.com/en-us/news/2015/2015-jul-7-vso) for your user account. This PAT will allow the Jenkins build process to authenticate to VSTS as you, so be sure to protect your PAT like a password.
 * Save your feed URL and PAT to a text file for use later in the walkthrough.
 
 

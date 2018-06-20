@@ -15,8 +15,8 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-When you first launch [Visual Studio 2015](https://www.visualstudio.com/products/vs-2015-product-editions), 
-you can sign in and connect to [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs).
+When you first launch [Visual Studio 2015](https://visualstudio.microsoft.com/products/vs-2015-product-editions), 
+you can sign in and connect to [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs).
 
 If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../git/gitquickstart.md) to connect to 
 your VSTS from the Team Explorer window.
@@ -33,10 +33,10 @@ test early, and ship faster.
 > learn how to [install and set up Team Foundation Server](/tfs/server/install/get-started).
 
 VSTS is free for 
-[up to 5 users with access to Basic features](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) 
-and for unlimited [Visual Studio subscribers](https://www.visualstudio.com/products/how-to-buy-vs) and 
-[Stakeholders who can access limited features](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs).
-Learn [what else you get with VSTS](https://www.visualstudio.com/pricing/visual-studio-team-services-pricing-vs). 
+[up to 5 users with access to Basic features](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) 
+and for unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/products/how-to-buy-vs) and 
+[Stakeholders who can access limited features](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs).
+Learn [what else you get with VSTS](https://visualstudio.microsoft.com/pricing/visual-studio-team-services-pricing-vs). 
 If you want, you can also use VSTS with any IDE or code editor, like:
 
 *	[Eclipse, Android Studio, or IntelliJ](/vsts/java)

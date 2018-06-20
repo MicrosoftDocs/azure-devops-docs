@@ -21,7 +21,7 @@ To work on this Quickstart, you'll need the following prerequisites:
 
 * A VSTS account. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
-* A C# development environment, you can use [Visual Studio](https://www.visualstudio.com/vs/)
+* A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
 
 ## Create a C# project in Visual Studio
 

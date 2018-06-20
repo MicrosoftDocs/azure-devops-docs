@@ -793,7 +793,7 @@ You manage project-level permissions from the [web portal admin context](../../u
 	<tr>
 		<td id="manage-team-project-property-permission">Manage project properties</td>
 		<td>
-			Can provide or edit metadata for a team project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](https://www.visualstudio.com/docs/integrate/api/tfs/projects#set-project-properties). 
+			Can provide or edit metadata for a team project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](https://visualstudio.microsoft.com/docs/integrate/api/tfs/projects#set-project-properties). 
 		</td>
 	</tr>
 	<tr>

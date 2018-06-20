@@ -46,11 +46,11 @@ To learn more, see these topics:
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Pricing - VSTS](https://www.visualstudio.com/team-services/pricing/)
+- [Pricing - VSTS](https://visualstudio.microsoft.com/team-services/pricing/)
 
 
 <!---
-[Small teams can start for free!](https://www.visualstudio.com/products/visual-studio-team-services-vs.aspx)  
+[Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
 [Devops overview for VSTS and TFS](index.md)
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

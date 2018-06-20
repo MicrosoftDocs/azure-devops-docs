@@ -7,7 +7,8 @@ ms.prod: devops
 ms.topic: overview
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2015'
 ---
@@ -20,7 +21,7 @@ Repository README files and wikis are great ways to share information with your 
 
 ::: moniker range=">=tfs-2015 <= tfs-2018"
 
-> [!NOTE]  
+> [!NOTE]  visualstudio.microsoft.com
 > **Feature availability:** The built-in wiki is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). 
 
 ::: moniker-end

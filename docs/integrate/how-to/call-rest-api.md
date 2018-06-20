@@ -81,7 +81,7 @@ public static async void GetProjects()
 ```
 <br />
 If you don't have a VSTS account,
-you can [set one up for free](https://www.visualstudio.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
+you can [set one up for free](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
 
 Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
@@ -147,11 +147,11 @@ You should get a response like this.
 The response is [JSON](http://json.org/).
 That's generally what you'll get back from the REST APIs,
 although there are a few exceptions,
-like [Git blobs](https://www.visualstudio.com/docs/integrate/api/git/blobs).
+like [Git blobs](https://visualstudio.microsoft.com/docs/integrate/api/git/blobs).
 
 Now you should be able to look around the specific
-[API areas](https://www.visualstudio.com/docs/integrate/api/git/overview) like [work item tracking](https://www.visualstudio.com/docs/integrate/api/wit/overview)
-or [Git](https://www.visualstudio.com/docs/integrate/api/git/overview) and get to the resources that you need.
+[API areas](https://visualstudio.microsoft.com/docs/integrate/api/git/overview) like [work item tracking](https://visualstudio.microsoft.com/docs/integrate/api/wit/overview)
+or [Git](https://visualstudio.microsoft.com/docs/integrate/api/git/overview) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 
 ## HTTP verbs
@@ -188,7 +188,7 @@ Content-Type: application/json
 
 Some web proxies may only support the HTTP verbs GET and POST, but not more modern HTTP verbs like PATCH and DELETE.
 If your calls may pass through one of these proxies, you can send the actual verb using a POST method, with a header to override the method.
-For example, you may want to [update a work item](https://www.visualstudio.com/docs/integrate/api/wit/work-items#updateworkitems) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
+For example, you may want to [update a work item](https://visualstudio.microsoft.com/docs/integrate/api/wit/work-items#updateworkitems) (`PATCH _apis/wit/workitems/3`), but you may have to go through a proxy that only allows GET or POST.
 You can pass the proper verb (PATCH in this case) as an HTTP request header parameter and use POST as the actual HTTP method.
 
 

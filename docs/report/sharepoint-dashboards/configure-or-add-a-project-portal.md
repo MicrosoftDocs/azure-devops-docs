@@ -86,7 +86,7 @@ The project portal is a site associated with a team project for the purposes of 
     - **TFS 2015:** [Microsoft Visual Studio Team Foundation Server 2015 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power) 
     - **TFS 2013:** [Microsoft Visual Studio Team Foundation Server 2013 Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2013Power)   
   
-    2.  If you haven't installed a version of Visual Studio, [install one of them now](https://www.visualstudio.com/downloads/download-visual-studio-vs). You can download Team Explorer for free. Team Explorer must be installed on the same machine where you run the **tfpt** command line tool.  
+    2.  If you haven't installed a version of Visual Studio, [install one of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Team Explorer for free. Team Explorer must be installed on the same machine where you run the **tfpt** command line tool.  
   
     3.  If you aren't an administrator for the team project, [get added now](../../organizations/security/set-project-collection-level-permissions.md).  
   

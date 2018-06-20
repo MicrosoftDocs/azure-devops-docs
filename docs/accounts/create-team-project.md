@@ -97,13 +97,13 @@ You can create a team project from Team Explorer after you have connected to an 
 
 3.  Open the same version of Visual Studio as the version of TFS that you're connecting to. If you don't see the Team Explorer pane, open **View\>Team Explorer** from the menu.
 
-    As needed, [Download and install Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) to get a free copy of the latest version.
+    As needed, [Download and install Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) to get a free copy of the latest version.
 
 4.  Connect to the server and team project collection where you want to create your team project.
 
     ![ALM\_CTP\_Connect](_img/IC827208.png)
 
-    You can access Team Explorer for free by installing [Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs) or any other Visual Studio version.
+    You can access Team Explorer for free by installing [Visual Studio Community](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or any other Visual Studio version.
 
     You must connect from a client that is at the same version level as TFS. That is, you must connect to TFS 2015 from a version of Visual Studio 2015.
 

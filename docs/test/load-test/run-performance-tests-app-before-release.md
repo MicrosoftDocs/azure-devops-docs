@@ -37,7 +37,7 @@ You first create web performance tests. These tests are used in your
 load tests to simulate multiple users performing 
 actions in your app at the same time.
 
-1. If you don't have Visual Studio Enterprise, get it [here](https://www.visualstudio.com/downloads/).
+1. If you don't have Visual Studio Enterprise, get it [here](https://visualstudio.microsoft.com/downloads/).
 
 1. Create a web performance and load test project.
 

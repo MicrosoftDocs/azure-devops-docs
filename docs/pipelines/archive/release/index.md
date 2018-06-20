@@ -36,5 +36,5 @@ The **previous versions** of Release Management are deprecated. No new features 
 * **[Server and client version for Visual Studio 2015](overview-rm2015.md)**
 * **[Server and client version for Visual Studio 2013](https://msdn.microsoft.com/library/dn217874%28v%3Dvs.120%29.aspx)**
 
-> New to DevOps? **[Learn More](https://www.visualstudio.com/devops)** about how implementing DevOps helps you continuously deliver value to your customers.
+> New to DevOps? **[Learn More](https://visualstudio.microsoft.com/devops)** about how implementing DevOps helps you continuously deliver value to your customers.
 

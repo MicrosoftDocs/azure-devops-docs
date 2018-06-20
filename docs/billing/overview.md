@@ -59,4 +59,4 @@ You will also need these same permissions/roles to make subsequent changes, such
 ## Related articles
 
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

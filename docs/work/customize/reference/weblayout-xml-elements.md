@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2017'
 ms.date: 11/28/2017
@@ -37,7 +38,7 @@ When the new form roll out is enabled, the XML definitions for all work item typ
 The new form makes available several new features as described in [New work item experience](../process/new-work-item-experience.md). Your account or project collection administrator manages the [switch to the new form](../manage-new-form-rollout.md).  
 - For the [Inheritance process model](../../../organizations/settings/work/manage-process.md), the switch to the new form is automatic for all user accounts.  
 - For the [Hosted XML process model](../import-process/import-process.md), an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
-- For TFS 2017, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
+- For TFS 2017, the new form is automatically available when you add team projects to a new collection.visualstudio.microsoft.comrojects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
 - For TFS 2015 the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://www.visualstudio.com/downloads/) to access the new form.
  
 

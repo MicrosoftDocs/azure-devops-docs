@@ -31,7 +31,7 @@ We are currently working out what our pricing model will be. When we have more d
 
 ## TFS and SQL Server Reporting
 
-Since [Team Foundation Server (TFS)](https://www.visualstudio.com/tfs/) was released in 2005, we've offered a reporting solution [based on a data warehouse and OLAP cube](../sql-reports/index.md), coupled with [an SSRS server](../sql-reports/create-and-manage-reporting-services-reports.md?toc=../sql-reports/toc.json&bc=../sql-reports/breadcrumb/toc.json) to host reports.
+Since [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) was released in 2005, we've offered a reporting solution [based on a data warehouse and OLAP cube](../sql-reports/index.md), coupled with [an SSRS server](../sql-reports/create-and-manage-reporting-services-reports.md?toc=../sql-reports/toc.json&bc=../sql-reports/breadcrumb/toc.json) to host reports.
 
 <!--- ![](../sql-reports/_img/tfs_datawarearch_r.png)  -->
 

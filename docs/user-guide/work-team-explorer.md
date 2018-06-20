@@ -23,7 +23,7 @@ You use Team Explorer to manage work that is assigned to you, your team, or your
 
 
 >[!TIP]  
->You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). Additional options for connecting to VSTS or TFS include:
+>You can access the latest version of Visual Studio clients from the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). Additional options for connecting to VSTS or TFS include:
 
 > - [Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
 > - [VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)  
@@ -50,7 +50,7 @@ Team Explorer connects Visual Studio to team projects. You can manage source cod
 >[!NOTE]  
 >Some pages, such as **Reports** and **Documents**, only appear when an on-premises TFS is configured with the required resources, such as SQL Server Reporting Services and SharePoint.
 
-If you don't need Visual Studio, but do want to connect to VSTS or TFS or get one or more Team Foundation add-ins, you can install the free [Visual Studio Community](https://www.visualstudio.com/downloads/download-visual-studio-vs).
+If you don't need Visual Studio, but do want to connect to VSTS or TFS or get one or more Team Foundation add-ins, you can install the free [Visual Studio Community](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 
 **Team Explorer plug-in for Eclipse**
 
@@ -148,7 +148,7 @@ In addition to connecting through Team Explorer, you can connect to a team proje
 
 - [Web portal](work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
 - [Visual Studio Code](https://code.visualstudio.com/docs)
-- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) 
+- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
 - [Office Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)
 - [Office Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)

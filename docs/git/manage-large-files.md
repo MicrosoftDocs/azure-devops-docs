@@ -78,7 +78,7 @@ LFS files can be as big as you need them to be.
 Additionally, as of version 2.0, Git LFS supports [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help your team work on large, undiffable assets like videos, sounds, and game maps.
 
 Git LFS is [is fully supported and free in VSTS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/).
-To use LFS with Visual Studio, you need at least [Visual Studio 2015 Update 2](https://www.visualstudio.com/en-us/news/vs2015-update2-vs.aspx).
+To use LFS with Visual Studio, you need at least [Visual Studio 2015 Update 2](https://visualstudio.microsoft.com/en-us/news/vs2015-update2-vs.aspx).
 Just follow the [instructions to install the client](https://git-lfs.github.com/), set up LFS tracking for files on your local repo, and then push your changes to VSTS.
 
 ### Limitations

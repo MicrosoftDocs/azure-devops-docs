@@ -27,7 +27,7 @@ In our source based web views, we have rich syntax highlighting for code. Today 
 
 ##Color Picking in Charts
 
-In the [last deployment](https://www.visualstudio.com/en-us/articles/news/2013/sep-09-team-services), we added a new work item chart feature. By popular demand, we now allow you to edit the colors for each series on a chart. Simply click on a series in the chart and pick a color from the color picker.
+In the [last deployment](https://visualstudio.microsoft.com/en-us/articles/news/2013/sep-09-team-services), we added a new work item chart feature. By popular demand, we now allow you to edit the colors for each series on a chart. Simply click on a series in the chart and pick a color from the color picker.
 
 ![Color picker for charts](_img/9_30_01.png)
 
