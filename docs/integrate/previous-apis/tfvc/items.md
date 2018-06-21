@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/items/{path}?api-version={ve
 | Parameter | Type    | Notes
 |:----------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | path      | string  | Path to the file in TFVC. `$/Fabrikam-Fiber-TFVC/WebSite/WebSite/Views/Home/_Home.cshtml`
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
