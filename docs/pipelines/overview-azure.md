@@ -27,7 +27,7 @@ The Azure DevOps Project makes it easy to get started on Azure. The DevOps proje
 Azure web apps enable you to build and host web applications in the programming language of your choice without managing infrastructure. They offer auto-scaling and high availability and support both Windows and Linux. You can start directly from the Azure portal and set up an entire pipeline for your web app. You can then customize the build and release definitions in VSTS to meet the needs of your application.
 
 > [!div class="nextstepaction"]
-> [Build and Deploy to Web Apps](apps/cd/azure/aspnet-core-to-azure-webapp.md)
+> [Build and Deploy to Web Apps](targets/webapp.md)
 
 ## Virtual machines
 

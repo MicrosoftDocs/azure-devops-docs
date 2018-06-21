@@ -36,7 +36,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 * Git repository in VSTS or TFS
 * A working build definition for a Git repository in VSTS
-	* If needed, complete one of the following:  [Build and deploy to an Azure Web App](../../pipelines/apps/cd/azure/aspnet-core-to-azure-webapp.md), [Build your Java app with Maven](../../pipelines/apps/java/build-maven.md), or [Build your Node.js with Gulp](../../pipelines/apps/nodejs/build-gulp.md).
+  * If needed, complete one of the following: [Create your first build and release](../../pipelines/get-started-designer.md), [Build your Java app with Maven](../../pipelines/apps/java/build-maven.md), or [Build your Node.js with Gulp](../../pipelines/apps/nodejs/build-gulp.md).
 
 ## Set up a CI trigger for a topic branch
 
