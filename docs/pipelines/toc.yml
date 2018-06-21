@@ -19,7 +19,7 @@
   - name: .NET
     href: apps/aspnet/build-aspnet-4.md
   - name: .NET Core
-    href: apps/aspnet/build-aspnet-core.md
+    href: languages/dotnet-core.md
   - name: Android
     href: languages/android.md
   - name: C/C++

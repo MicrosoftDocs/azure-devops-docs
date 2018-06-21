@@ -26,7 +26,7 @@ This quickstart explains how to set up continuous integration (CI) to build a co
 
 * You must already have a CI build such as one of these:
 
-   - [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
+   - [Build your ASP.NET Core app](../../languages/dotnet-core.md)
    - [Build your Go app](../go/go.md)
    - [Build your Gradle app](../java/build-gradle.md)
    - [Build your Node.js app with Gulp](../nodejs/build-gulp.md)
