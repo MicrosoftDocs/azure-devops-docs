@@ -29,7 +29,7 @@ GET https://{instance}/_apis/wit/artifactlinktypes?api-version={version}
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>instance</code> | URL | string | Required. [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| <code>instance</code> | URL | string | Required. [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '3.2-preview' to use this version of the API.
 
 [!code-REST [GET_wit_artifactlinktypes_json](./_data/artifactlinktypes/GET_wit_artifactlinktypes.json)]

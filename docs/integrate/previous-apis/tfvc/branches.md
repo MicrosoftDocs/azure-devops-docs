@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/branches/{path}?api-version=
 | Parameter       | Type   | Default | Notes
 |:----------------|:-------|:--------|:------------|
 | URL
-| instance        | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance        | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | path            | string | $/      | Full path to the branch.<br/>Examples: `$/`, `$/MyProject`, `$/MyProject/SomeFolder`.
 | Query
 | api-version     | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -55,7 +55,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/branches?api-version={versio
 | Parameter        | Type   | Default | Notes
 |:-----------------|:-------|:--------|:------------
 | URL
-| instance         | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance         | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | Query
 | api-version      | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | includeChildren  | bool   | false   | Return the child branches for each root branch.
