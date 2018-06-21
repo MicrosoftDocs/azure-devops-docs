@@ -222,7 +222,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/add-administrator-tfs.md",
-      "redirect_url": "/tfs/server/add-administrator-tfs",
+      "redirect_url": "/tfs/server/admin/add-administrator-tfs",
       "redirect_document_id": false
     },
     {
