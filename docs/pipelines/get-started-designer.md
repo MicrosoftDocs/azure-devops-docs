@@ -536,18 +536,6 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 > In many cases, you probably would want to edit the release process so that the production deployment happens
   only after some testing and approvals are in place. See [Approvals and gates overview](release/approvals/index.md).
 
-## Put CI/CD to work for you
-
-We hope this tutorial gave you an understanding of the basic concepts of Team Build and Release Management. To get started building and deploying an app, we suggest you proceed next to one of these topics:
-
-* [ASP.NET](apps/aspnet/build-aspnet-4.md)
-
-* [ASP.NET core](apps/aspnet/build-aspnet-core.md)
-
-* [Node.js](apps/nodejs/build-gulp.md)
-
-* [Build and deploy your app](apps/index.md)
-
 <a name="next-steps"></a>
 ## Next steps
 
@@ -558,7 +546,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | Language | Template to use | 
 |-|-|
 | [.NET](apps/aspnet/build-aspnet-4.md) | ASP.NET |
-| [.NET Core](apps/aspnet/build-aspnet-core.md) | ASP.NET Core |
+| [.NET Core](languages/dotnet-core.md) | ASP.NET Core |
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
 | [Go](apps/go/go.md) | Go |
 | [Java](apps/java/build-gradle.md) | Gradle |

@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build definitions give you the advantages of configuration as code.
 
 > [!NOTE]
-> To use this capability, you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
 
 In a YAML build definition, your CI build process configured as code, which means:
 
@@ -30,7 +30,7 @@ In a YAML build definition, your CI build process configured as code, which mean
 
 ## Get started
 
-If you're new to YAML builds, or to VSTS, we suggest you begin learning with either our [ASP.NET Core](../apps/aspnet/build-aspnet-core.md) or [Node.js](../apps/nodejs/build-gulp.md) tutorial.
+If you're new to YAML builds, or to VSTS, we suggest you begin learning with [Build a repo with YAML file](../get-started-yaml.md).
 
 ## How do YAML builds compare to web-interface builds?
 
