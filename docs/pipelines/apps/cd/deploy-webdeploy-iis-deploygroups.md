@@ -29,7 +29,7 @@ You'll need a continuous integration (CI) build process that publishes your web 
 
 * [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
-* [Build your ASP.NET Core app](../aspnet/build-aspnet-core.md)
+* [Build your ASP.NET Core app](../../languages/dotnet-core.md)
 
 * [Build your Node app with Gulp](../nodejs/build-gulp.md)
 
