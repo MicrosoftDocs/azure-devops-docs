@@ -171,7 +171,7 @@ view it before you save the bug.
 At present you can collect only screen recordings and system 
 information when testing desktop apps using the web-based 
 Microsoft Test Runner. Instead, use 
-[Microsoft Test Manager client](https://www.visualstudio.com/en-us/products/visual-studio-test-professional-with-msdn-vs.aspx)
+[Microsoft Test Manager client](https://visualstudio.microsoft.com/en-us/products/visual-studio-test-professional-with-msdn-vs.aspx)
 to collect additional diagnostic from desktop apps.
 
 1. In the Test hub in VSTS or TFS, 

@@ -74,7 +74,7 @@ As you plan how you want to grow your Agile tool set, consider the following are
 <td>
 All teams manage their work within the set sprint cadence. Teams provide input into the length of sprint that works best for them.  
 
-<p>Teams choose the Agile methods that work for them, [Scrum](https://www.visualstudio.com/get-started/work/work-in-sprints-vs), [Kanban](https://www.visualstudio.com/get-started/work/work-from-the-kanban-board-vs), or a mix of both. Teams also take ownership of initiating and acting on their own set of continuous improvement practices.</p>
+<p>Teams choose the Agile methods that work for them, [Scrum](https://visualstudio.microsoft.com/get-started/work/work-in-sprints-vs), [Kanban](https://visualstudio.microsoft.com/get-started/work/work-from-the-kanban-board-vs), or a mix of both. Teams also take ownership of initiating and acting on their own set of continuous improvement practices.</p>
 
 <p>It's possible for some teams to execute in shorter sprints. For example, if an organization sets a 2 week sprint cadence, some teams may choose to operate in 1 week sprints, while still aligning with the organizational schedule. </p>
 

@@ -18,7 +18,7 @@ To call a REST API from your extension, get the client service first, and then u
 
 ## Client services
 
-You can find the [full list of available REST clients and their references here](https://www.visualstudio.com/en-us/docs/integrate/extensions/reference/client/rest-clients).
+You can find the [full list of available REST clients and their references here](https://visualstudio.microsoft.com/en-us/docs/integrate/extensions/reference/client/rest-clients).
 
 ## Call an API
 

@@ -22,17 +22,17 @@ monikerRange: 'vsts'
 
 A: VSTS is free for these users to join:
 
-* 5 users who get [Basic features](https://www.visualstudio.com/team-services/compare-features/) 
+* 5 users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/) 
 like version control, tools for Agile, Java, build, release management, and more. 
 
-* Unlimited users who get [Stakeholder features](https://www.visualstudio.com/team-services/compare-features/) 
+* Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/) 
 like working with your backlog, work items, and queries.
 
-* Unlimited [Visual Studio subscribers](https://www.visualstudio.com/team-services/compare-features/) 
+* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) 
 who also get Basic features, and in some cases, additional features with specific extensions, like 
 [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
- Learn what else you get with [VSTS](https://www.visualstudio.com/team-services/pricing/).
+ Learn what else you get with [VSTS](https://visualstudio.microsoft.com/team-services/pricing/).
 
 
 

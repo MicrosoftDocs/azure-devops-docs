@@ -24,7 +24,7 @@ We’ve also surfaced a new permission that allows you to manage who can create 
 
 ![Tag Permission](_img/2_10_02.png)
 
-We’re always anxious to hear your feedback. Let us know how we’re doing at [http://www.visualstudio.com/support/support-overview-vs](https://www.visualstudio.com/support/support-overview-vs).
+We’re always anxious to hear your feedback. Let us know how we’re doing at [http://visualstudio.microsoft.com/support/support-overview-vs](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 Thanks,
 

@@ -19,7 +19,7 @@ Then sign in again to VSTS, and select your other identity:
 
 	You'll get a message that says "Sign out in progress". 
 	After you're signed out, you're redirected to the 
-	Visual Studio page @www.visualstudio.com. 
+	Visual Studio page @visualstudio.microsoft.com. 
 
 	**Tip** If the sign-out page takes more than a minute, 
 	close the browser, and continue.

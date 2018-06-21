@@ -224,7 +224,7 @@ Now that your server can receive service hook events when new PRs are created,up
 
 9. Build the status object to post on the PR. 
 
-  `State` is an enum of type [GitStatusState](https://www.visualstudio.com/docs/integrate/api/git/pull-requests/pullrequeststatuses#GitStatusState). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
+  `State` is an enum of type [GitStatusState](https://visualstudio.microsoft.com/docs/integrate/api/git/pull-requests/pullrequeststatuses#GitStatusState). Use `succeeded` to indicate that the PR has passed the status check and is ready to merge. 
 
   The `description` is a string value that will be displayed to the user in the Status section and activity feed in the PR details view.
 
@@ -236,7 +236,7 @@ Now that your server can receive service hook events when new PRs are created,up
         var prStatus = {
             "state": "succeeded",
             "description": "Ready for review",
-            "targetUrl": "http://www.visualstudio.com",
+            "targetUrl": "http://visualstudio.microsoft.com",
             "context": {
                 "name": "wip-checker",
                 "genre": "continuous-integration"
@@ -276,7 +276,7 @@ Now that your server can receive service hook events when new PRs are created,up
         var prStatus = {
             "state": "succeeded",
             "description": "Ready for review",
-            "targetUrl": "http://www.visualstudio.com",
+            "targetUrl": "http://visualstudio.microsoft.com",
             "context": {
                 "name": "wip-checker",
                 "genre": "continuous-integration"

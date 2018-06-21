@@ -60,7 +60,7 @@ By simply logging from your tasks in a special way, you can publish new sections
 
 Write-Verbose ##vso[Task.UploadSummary] Attachments.md
 
-You can also add new sections or new tabs in Release summary using UI contribution points. Documentation and contracts for these contribution pointes will be found [here](https://www.visualstudio.com/en-us/integrate/extensions/reference/targets/overview) soon.
+You can also add new sections or new tabs in Release summary using UI contribution points. Documentation and contracts for these contribution pointes will be found [here](https://visualstudio.microsoft.com/en-us/integrate/extensions/reference/targets/overview) soon.
 
 ##SCVMM support
 

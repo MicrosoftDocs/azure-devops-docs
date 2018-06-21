@@ -7,7 +7,8 @@ ms.custom: wiki
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.reviewer: sancha
 ms.topic: overview
 ms.date: 10/18/2017

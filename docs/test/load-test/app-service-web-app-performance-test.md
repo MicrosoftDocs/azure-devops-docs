@@ -23,9 +23,9 @@ confident that your app can handle the traffic during peak use or at your next m
 <a name="preparetests"></a>
 ## Prepare your environment
 
-* You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+* You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* You'll need a [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+* You'll need a [Visual Studio Team Services (VSTS)](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
   account to keep your performance test history. A suitable account will be created 
   automatically when you set up your performance test. Or you can create a new account 
   or use an existing account if you're the account owner. 
@@ -50,7 +50,7 @@ confident that your app can handle the traffic during peak use or at your next m
 
    ![Go to Development Tools, Performance Test](_img/app-service-web-app-performance-test/azure-np-web-app-details-tools-expanded.png)
  
-1. Now you'll link a [VSTS](https://www.visualstudio.com/products/what-is-visual-studio-online-vs) 
+1. Now you'll link a [VSTS](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
    account to keep your performance test history. Choose **Set Account**.
 
    ![Select existing VSTS account, or create a new account](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)

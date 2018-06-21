@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 21AB0EE7-FB48-43E6-89EA-EC438C5D4F21
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 12/15/2017  
@@ -267,7 +268,7 @@ Bug Behavior
 
 The quickest way to make many of these updates is to copy definition files from the latest process template and import them to your team project.   
 
-1.	Open the same version of Visual Studio or Team Explorer as the on-premises TFS that you connect to. For example, if you connect to a TFS 2015 instance, you must connect from Visual Studio 2015 or Team Explorer 2015.  
+1.	Open the same version of Visual Studio or Team Explorer as the on-premises TFS that you connect to. Fvisualstudio.microsoft.comonnect to a TFS 2015 instance, you must connect from Visual Studio 2015 or Team Explorer 2015.  
 	You can always download a free version of Team Explorer from the [Visual Studio download site](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
 	If you aren't a member of the Project Collection Administrators group, <a href="https://msdn.microsoft.com/en-us/library/dd547204(v=vs.140).aspx">get added as one</a>. 
@@ -283,7 +284,7 @@ The quickest way to make many of these updates is to copy definition files from 
 	The **Upload**, **Download**, **Make Default**, and **Delete** buttons are disabled when you don't have the necessary permissions to manage process templates. 
  
 3.	Download the process template to a local computer, select a folder where the process template will be downloaded. 
-
+visualstudio.microsoft.com
 	Choose the process that corresponds to the one you used previously to create your team project. For example, if you're updating a team project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://www.visualstudio.com/downloads/download-visual-studio-vs). 
  
 You can determine which process template to select based on the [work item types defined for your existing team project](../work-items/guidance/manage-process-templates.md#wit_correlation).

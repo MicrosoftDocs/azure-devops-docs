@@ -39,7 +39,7 @@ Be clear about what they pay for and what is free
 
 ## Desktop client developer tools
 
-Developers have access to a variety of tools through these versions of Visual Studio and plug-ins. to download any version of Visual Studio, visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://www.visualstudio.com/vs/compare/). 
+Developers have access to a variety of tools through these versions of Visual Studio and plug-ins. to download any version of Visual Studio, visit the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/). To understand what features you get with the Visual Studio versions, see [Compare Visual Studio Offerings](https://visualstudio.microsoft.com/vs/compare/). 
 
 - **Visual Studio Community**: A fully-featured and extensible IDE for creating modern applications for Android, iOS, and Windows, as well as web applications and cloud services. (Replaces Visual Studio Express) 
 - **Visual Studio Professional**: Development tools and services to support individual developers or small teams 
@@ -182,5 +182,5 @@ REST APIs are provided to support building extensions to VSTS and TFS. To learn 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
 - [Software development roles](roles.md)
-- [Pricing](https://www.visualstudio.com/team-services/pricing/)
+- [Pricing](https://visualstudio.microsoft.com/team-services/pricing/)
  

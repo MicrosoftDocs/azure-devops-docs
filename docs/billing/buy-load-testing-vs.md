@@ -92,4 +92,4 @@ To turn off paid cloud-based load testing, go to your account in the Azure porta
 ## Related articles
 
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

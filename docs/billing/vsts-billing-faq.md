@@ -32,7 +32,7 @@ The only notable exclusion is that you cannot use the [Azure Free Trial](https:/
 
 ### Q: Can I use the monthly Azure credits from my Visual Studio subscription to buy VSTS?
 
-A: No, you can't use the monthly Azure credits from [Visual Studio subscriptions](https://www.visualstudio.com/products/subscriber-benefits-vs)
+A: No, you can't use the monthly Azure credits from [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/subscriber-benefits-vs)
 to pay for VSTS. Before you make purchases using this type of Azure subscription, you must [remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/).
 
 <img alt="Spending limit" src="_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
@@ -151,4 +151,4 @@ A:  Yes you can, if your reseller participates in the Cloud Solution Provider (C
 * [Add backup billing managers](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+* [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

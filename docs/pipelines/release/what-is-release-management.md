@@ -130,7 +130,7 @@ Release Management runs the following steps as part of every deployment:
 
 Simply follow these steps:
 
-1. **[Deploy your Azure Web App quickly and simply](../apps/cd/azure/aspnet-core-to-azure-webapp.md)**
+1. **[Create your first build and release](../get-started-designer.md)**
 
 1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
     
@@ -138,9 +138,9 @@ Simply follow these steps:
 
 ## Related topics
 
-* [Download Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs)
+* [Download Team Foundation Server](https://visualstudio.microsoft.com/products/tfs-overview-vs)
 * [Install and configure Team Foundation Server](/tfs/server/install/get-started)
-* [Sign up for VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs)
+* [Sign up for VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
 

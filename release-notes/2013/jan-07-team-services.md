@@ -16,7 +16,7 @@ Happy New Year! This morning we made our first set of updates to the service for
 
 ##Basic auth updates
 
-Back in [last August](https://www.visualstudio.com/en-us/articles/news/2012/aug-27-team-services) we introduced support for basic authentication. Originally this was to allow the bridging of local Git repositories and TFS with Git-TF, however we’ve found people wanting to do more things using the basic authentication mechanism. Today we’re introducing a couple of updates to allow the basic auth scheme to work with more services. First we now allow you to enter a secondary user name with your alternate credentials.
+Back in [last August](https://visualstudio.microsoft.com/en-us/articles/news/2012/aug-27-team-services) we introduced support for basic authentication. Originally this was to allow the bridging of local Git repositories and TFS with Git-TF, however we’ve found people wanting to do more things using the basic authentication mechanism. Today we’re introducing a couple of updates to allow the basic auth scheme to work with more services. First we now allow you to enter a secondary user name with your alternate credentials.
 
 Why another user name? Some applications get tripped up when they come across special characters (ex: the “@” character in an email address) during authentication. This change allows you to specify a secondary user name not in the form of an e-mail address for use with these applications. The secondary user name is not required. So if you’re not running into any trouble today, you’ve got nothing to worry about.
 
@@ -26,7 +26,7 @@ We did make a few changes to the way our Basic authentication mechanism behaves 
 
 ##Email work items from backlogs
 
-In our [November 19th update](https://www.visualstudio.com/en-us/articles/news/2012/nov-19-team-services) we announced the ability to send emails for work item queries. In this sprint we added the ability to send email directly from the backlog pages as well. You’ll now see the send email toolbar button on both the product backlog and sprint backlog pages.
+In our [November 19th update](https://visualstudio.microsoft.com/en-us/articles/news/2012/nov-19-team-services) we announced the ability to send emails for work item queries. In this sprint we added the ability to send email directly from the backlog pages as well. You’ll now see the send email toolbar button on both the product backlog and sprint backlog pages.
 
 ![Email work items from backlogs](_img/1_7_02.png)
 
@@ -36,7 +36,7 @@ The steps to use the feature are the same. From the toolbar, click the **email**
 
 ##Web version control
 
-As we [mentioned last time](https://www.visualstudio.com/en-us/articles/news/2012/dec-10-team-services), you are going to be seeing some improvements to the web based version control experiences in the next few updates. This time round we fixed a bug we introduced in the way we were displaying times in version control across time zones. We also brought back an easy way to search for changesets by id.
+As we [mentioned last time](https://visualstudio.microsoft.com/en-us/articles/news/2012/dec-10-team-services), you are going to be seeing some improvements to the web based version control experiences in the next few updates. This time round we fixed a bug we introduced in the way we were displaying times in version control across time zones. We also brought back an easy way to search for changesets by id.
 
 ![Search for changesets by id](_img/1_7_04.png)
 

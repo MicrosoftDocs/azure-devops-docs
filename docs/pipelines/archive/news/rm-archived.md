@@ -108,7 +108,7 @@ To make continuous integration and deployment (CI/CD) of Docker apps a lot simpl
 * Updated the [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)
   with support for Azure Container Service and Azure Container Registry.
 * Begun a preview of the [Hosted Linux pool](#nov2316-hostedlinux) so that you don't have to set up your own Docker hosts.
-* Released [Visual Studio 2017 RC](https://www.visualstudio.com/vs/visual-studio-2017-rc/)
+* Released [Visual Studio 2017 RC](https://visualstudio.microsoft.com/vs/visual-studio-2017-rc/)
   and included [new continuous delivery tools](../apps/aspnet/aspnetcore-docker-to-azure.md)
   for ASP.NET Core Preview apps. You can use these tools to configure a
   CI/CD process quickly in VSTS. Any ASP.NET Core project with
@@ -183,7 +183,7 @@ Today we're announcing TFS 2017, which includes all the Release Management featu
 
 We're also announcing general availability of Release Management in VSTS. Also, later this month, we're moving to a pricing model based on concurrent pipelines for both Team Foundation (TFBuild) and Release Management in VSTS. (Previously you paid for agents.)
 
-**Release Management users are free:** Your team members no longer need subscriptions to author definitions. VSTS users (with [basic access](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs)) and users with a TFS Client Access License (CAL) can author releases for no additional charge. All types of users (including stakeholders) can approve releases for free.
+**Release Management users are free:** Your team members no longer need subscriptions to author definitions. VSTS users (with [basic access](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs)) and users with a TFS Client Access License (CAL) can author releases for no additional charge. All types of users (including stakeholders) can approve releases for free.
 
 **No charge for private agents:** [Private agents](../../agents/agents.md) are now free. In VSTS, you used to have to license each private agent after the first. Now you can run deployments concurrently for no additional charge.
 
@@ -653,7 +653,7 @@ such as Slack to receive such notifications.
 **Release Management client SDK**
 
 In the last update, we published the
-[Release Management REST APIs](https://www.visualstudio.com/integrate/api/rm/overview).
+[Release Management REST APIs](https://visualstudio.microsoft.com/integrate/api/rm/overview).
 In this update, we are publishing a C# client SDK
 to help you easily integrate your applications with
 Release Management. The SDK is available as a

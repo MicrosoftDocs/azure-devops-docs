@@ -6,7 +6,7 @@ ms.topic: include
 
 Before you begin, make sure that you are:
 
-* A co-administrator of the Azure subscription. If you don't have an Azure subscription, you can get one free through [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/).
+* A co-administrator of the Azure subscription. If you don't have an Azure subscription, you can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 * An administrator of the VSTS account. If you don't yet have a VSTS account, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137).
 

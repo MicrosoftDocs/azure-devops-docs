@@ -46,7 +46,7 @@ In this topic you'll learn:
 
 <!---
 > [!NOTE]  
->**Feature availability:**&#160;&#160;The following features are available from VSTS (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://www.visualstudio.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../user-guide/provide-feedback.md#platform-version).  
+>**Feature availability:**&#160;&#160;The following features are available from VSTS (cloud service) or from the web portal of the listed on-premises TFS version or a later version. Those not annotated are available from all platforms and versions. Visit the [Visual Studio Downloads page](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) to get the latest TFS update. Additional resources may be required as annotated. To determine your platform or TFS version, see [Provide product and content feedback](../../user-guide/provide-feedback.md#platform-version).  
 -->
 
 All of the following actions can be performed by team members that belong to the Contributors group. Members provided with Stakeholder access can perform multi-select, bulk edit, change type, email, and copy as HTML/copy to clipboard actions. For details, see [Work as a stakeholder](../../organizations/security/get-started-stakeholder.md).  
@@ -267,7 +267,7 @@ To add fields or customize a work item form, see [Customize your work tracking e
  
 ### Migrate or change a large number of work items 
 
-For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://www.visualstudio.com/en-us/docs/integrate/api/wit/batch). 
+For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://visualstudio.microsoft.com/en-us/docs/integrate/api/wit/batch). 
 
 At this time, you can't move work items to a different account or collection. You can only migrate work item information by exporting and then importing them using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 

@@ -7,7 +7,8 @@ ms.prod: devops
 ms.topic: overview
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2015'
 ---

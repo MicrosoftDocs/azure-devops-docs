@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-Sign up for a [VSTS](https://www.visualstudio.com/products/visual-studio-team-services-vs) 
+Sign up for a [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) 
 account to upload and share code in free unlimited private 
 Git repositories or Team Foundation Version Control. 
 Then connect your favorite development tool like Eclipse, Xcode, 
@@ -24,7 +24,7 @@ VSTS offers integrated, enterprise Agile tools for DevOps,
 so your team can build often, test early, and ship faster.
 
 > Want to set up an on-premises server? 
-> [Get Team Foundation Server here](https://www.visualstudio.com/products/tfs-overview-vs), 
+> [Get Team Foundation Server here](https://visualstudio.microsoft.com/products/tfs-overview-vs), 
 > or learn [how to install and set up Team Foundation Server](/tfs/server/install/get-started). 
 
 [What users can join for free?  What do they get in VSTS?](faq-create-account.md#free-users)
