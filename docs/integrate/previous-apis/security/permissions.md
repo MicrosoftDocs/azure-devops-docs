@@ -30,7 +30,7 @@ GET https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?api-
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | permissions       | int      |         | The permission bits to demand.
 | Query 
@@ -63,7 +63,7 @@ GET https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?api-
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | permissions       | int      |         | The permission bits to demand.
 | Query 
@@ -85,7 +85,7 @@ POST https://{instance}/_apis/security/permissionevaluationbatch/?api-version={v
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | Query
 | api-version       | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use. Works with Version 3.0 and above.
 | Body 
@@ -116,7 +116,7 @@ DELETE https://{instance}/_apis/permissions/{securitynamespace}/{permissions}/?t
 | Parameter         | Type     | Default | Notes
 |:------------------|:---------|:--------|:-------------------------------------------------------------------------------------------------------------
 | URL		         
-| instance          | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | securitynamespace | guid     |         | ID of the security namespace.
 | permissions       | int      |         | The permission bits to remove from the ACE's allow and deny bitmasks.
 | Query 

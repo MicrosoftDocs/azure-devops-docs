@@ -30,7 +30,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/updates?api-ve
 | Parameter | Type    | Default | Notes	
 |:----------|:--------|:--------|:--------------------------------------
 | URL
-| instance  | string  |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | id        | int     |         | ID of the work item.
 | Query
 | api-version | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -60,7 +60,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/updates/{revis
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | id        | int     | ID of the work item.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
