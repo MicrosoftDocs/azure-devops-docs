@@ -31,14 +31,9 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 * [Build your Node app with Gulp](../nodejs/build-gulp.md)
 
 You'll also need an Azure web app where you will deploy the app.
-If you don't have one already, create one now. If you need help, follow the
-steps in [this example](../../apps/cd/azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
 
 [!INCLUDE [create-release](../_shared/create-release.md)]
 
-## Next steps
+## Next step
 
-* [Deploy to a staging slot and then swap to production](howto-webdeploy-webapps.md#swapslots)
-* [Deploy multiple apps in the same release](howto-webdeploy-webapps.md#multipleapps)
-* [Apply environment-specific configurations](howto-webdeploy-webapps.md#configenvir)
-* [Deploy to a Government cloud or Azure Stack instead of a public cloud](howto-webdeploy-webapps.md#govtcloud)
+* [Customize web app deployment](../../targets/webapp.md)
