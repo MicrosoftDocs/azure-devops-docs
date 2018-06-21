@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # View and compare your load test runs
 
-[!INCLUDE [version-header-vs-ts](../_shared/version-header-vs-ts.md)] 
+[!INCLUDE [version-header-ts](../_shared/version-header-ts.md)] 
 
 You can review past load test runs or current runs started by 
 anyone on your team, at any time. You can also compare two
@@ -22,19 +22,11 @@ test runs to see the gain or loss in performance, and other
 information.
 
 <a name="openvs"></a>
-## Open a load test in Visual Studio
 
-1. Open your load test project, open the **Load test** menu, and choose
-   **Load Test Manager**. 
-
-   ![Open Load Test Manager](_img/performance-reports/LoadTestManager.png)
-
-1. The **Load Test Manager** page shows all of the load test runs started by you 
-   and all of your team members.
-
-   ![View all the past and current load test runs](_img/performance-reports/LoadTestManagerView.png)
-
-> Also see [Analyze Load Test Results Using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer).
+> [!NOTE]
+> You can open load tests in Visual Studio to analyse and compare results.
+> See [How to: Access Load Test Results for Analysis](https://docs.microsoft.com/en-gb/visualstudio/test/how-to-access-load-test-results-for-analysis)
+> and [How to: Create Load Test Performance Reports Using Microsoft Excel](https://docs.microsoft.com/en-us/visualstudio/test/how-to-create-load-test-performance-reports-using-microsoft-excel).
 
 <a name="opents"></a>
 ## Open a load test in VSTS

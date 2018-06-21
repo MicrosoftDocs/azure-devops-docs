@@ -23,7 +23,7 @@
     - name: "DevOps Project for Go"
       href: /vsts/pipelines/apps/cd/azure/azure-devops-project-go?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Azure Web App"
-    href: /vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
+    href: /vsts/pipelines/targets/webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Windows VM"
     href: /vsts/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Web App for Containers"
