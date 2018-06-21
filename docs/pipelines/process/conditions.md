@@ -1,5 +1,5 @@
 ---
-title: Conditional task expressions | VSTS or Team Foundation Server
+title: Conditional expressions | VSTS or Team Foundation Server
 description: Learn about how you can write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Specify conditions for running a task
+# Specify conditions
 
 **VSTS | TFS 2018 | TFS 2017.3** 
 

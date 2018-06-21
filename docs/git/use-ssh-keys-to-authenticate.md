@@ -206,3 +206,15 @@ You can find `ssh-add` as part of the Git for Windows distribution and also run 
 
 On macOS and Linux you also must have `ssh-agent` running before running `ssh-add`, but the command environment on these platforms usually 
 takes care of starting `ssh-agent` for you.
+
+### What notifications may I receive regarding my SSH keys?
+
+Whenever you register a new SSH Key with VSTS, you will recevie an email notification informing you that a new SSH key has been added to your account.
+
+![SSH notification example](_img/use-ssh-authentication/ssh_notification.png)
+
+### Q: What do I do if I believe that someone other than me is adding SSH keys on my account?
+
+**A:** If you receive a notification of an SSH key being registered and you did not manually upload it to the service, your credentials may have been compromised. 
+
+The next step would be to investigate whether or not your password has been compromised; changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.  
