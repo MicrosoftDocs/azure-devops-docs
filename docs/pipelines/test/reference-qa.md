@@ -91,7 +91,7 @@ A merged summary is not currently available for coverage files published using m
 and specify which slot to deploy your app to. If you do not specify a slot,
 the default **Production** slot is used. After you deploy, you can swap an
 app to a different slot using the **Azure App Service Manage** task. See
-[Swap deployment slots](../../pipelines/apps/cd/howto-webdeploy-webapps.md#swapslots).
+[Azure web apps deployment](../../pipelines/targets/webapp.md).
 
 You can use [task phases](../../pipelines/process/phases.md)
 and the [**Manual Intervention**](../../pipelines/tasks/utility/manual-intervention.md) task

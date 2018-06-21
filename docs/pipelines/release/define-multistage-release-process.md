@@ -36,7 +36,7 @@ You'll need:
   you can create it by working through any of the following quickstarts and tutorials:
 
   - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
-  - [Build and Deploy to an Azure Web App](../apps/cd/azure/aspnet-core-to-azure-webapp.md)
+  - [Azure DevOps project](../get-started-azure-devops-project.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 * Two separate targets where you will deploy the app. These could be virtual machines,
@@ -44,8 +44,7 @@ You'll need:
   In this example, we are using Azure App Services website instances.
   If you decide to do the same, you will have to choose names that are unique, but it's a good idea to include
   "QA" in the name of one, and "Production" in the name of the other so that you
-  can easily identify them. If you need help, follow the steps in
-  [the ASP.NET Core web app deployment tutorial](../apps/cd/azure/aspnet-core-to-azure-webapp.md#create-webapp-portal).
+  can easily identify them. Use the Azure portal to create a new web app.
 
 ## Configure the triggers in your release definition
 
