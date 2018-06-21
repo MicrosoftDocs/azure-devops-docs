@@ -97,7 +97,7 @@ When you want to link two existing work items together, you can now easily find 
 > [!IMPORTANT]
 > To use this capability, you must have the **New build result page** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
 
-In TFS 2015 we rolled out a new build system, enabling you drag and drop scripts and a growing library of open-sourced tasks. We've gradually improved the editor experience, and today we're refreshing the expereince for viewing a build.
+In TFS 2015 we rolled out a new build system, enabling you drag and drop scripts and a growing library of open-sourced tasks. We've gradually improved the editor experience, and today we're refreshing the experience for viewing a build.
 
 When you go to your build results, you'll have clearer insight into the logs, issues, commits, and work items that make up your build. This is the first step in our design update so send us your thoughts.
 
