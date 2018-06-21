@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/labels?api-version={version}
 | Parameter       | Type   | Default | Notes
 |:----------------|:-------|:--------|:------
 | URL
-| instance        | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance        | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | Query
 | api-version     | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | name            | string |         | Name of the label.<br/>Wildcards are supported.
@@ -59,7 +59,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/labels/{labelId}?api-version
 | Parameter    | Type   | Default | Notes
 |:-------------|:-------|:--------|:------
 | URL
-| instance     | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance     | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | labelId      | int    |         | ID of label.
 | Query
 | api-version  | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -80,7 +80,7 @@ GET https://{instance}/DefaultCollection/_apis/tfvc/labels/{labelId}/items?api-v
 | Parameter    | Type   | Default | Notes
 |:-------------|:-------|:--------|:------
 | URL
-| instance     | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance     | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | labelId      | int    |         | ID of the label.
 | Query
 | Query
