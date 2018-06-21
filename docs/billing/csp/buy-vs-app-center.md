@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 ---
 # Buy Visual Studio App Center resources
 
-Partners in the CSP program can enable their customers to purchase [App Center resources](http://www.visualstudio.com/app-center/),
+Partners in the CSP program can enable their customers to purchase [App Center resources](http://visualstudio.microsoft.com/app-center/),
 including build pipelines, test device concurrencies, and advanced push notifications, using a CSP-based Azure subscription.
 
 To enable the customer to purchase App Center resources using a CSP-based Azure subscription, confirm the following:

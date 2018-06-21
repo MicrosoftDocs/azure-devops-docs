@@ -59,7 +59,7 @@ To learn more, see these topics:
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)
 - [Software development roles](roles.md)
-- [Pricing - TFS](https://www.visualstudio.com/team-services/tfs-pricing/)
+- [Pricing - TFS](https://visualstudio.microsoft.com/team-services/tfs-pricing/)
 
 
 

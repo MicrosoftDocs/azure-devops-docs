@@ -19,11 +19,11 @@ monikerRange: 'vsts'
 Add users to your Visual Studio Team Services (VSTS) account and specify the level of features they can use, such as Basic or Stakeholder.
 These kinds of users can join your VSTS account for free:
 
-* 5 users who get [Basic features](https://www.visualstudio.com/team-services/compare-features/),
+* 5 users who get [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
 such as version control, tools for Agile, Java, build, release management, and more
-* Unlimited users who get [Stakeholder features](https://www.visualstudio.com/team-services/compare-features/),
+* Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/),
 such as working with your backlog, work items, and queries
-* Unlimited [Visual Studio subscribers](https://www.visualstudio.com/team-services/compare-features/)
+* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/)
 who also get Basic features, and in some cases, additional features with specific extensions, such as
 [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 
@@ -32,9 +32,9 @@ who also get Basic features, and in some cases, additional features with specifi
 > [!NOTE]
 > You can add people to team projects,
 > rather than to your account. VSTS automatically assigns them
-> [Basic features](https://www.visualstudio.com/team-services/compare-features/),
+> [Basic features](https://visualstudio.microsoft.com/team-services/compare-features/),
 > if your account has seats available,
-> or [Stakeholder features](https://www.visualstudio.com/team-services/compare-features/),
+> or [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/),
 > if not. Learn [how to add members to team projects](add-team-members-vs.md).
 >
 > When people don't need access to your VSTS account anymore, [delete them](delete-account-users-users-hub.md) from your account.

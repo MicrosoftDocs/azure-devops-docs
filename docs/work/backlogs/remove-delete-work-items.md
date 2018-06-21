@@ -329,7 +329,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 	::: moniker-end  
 	On a 32-bit edition of Windows, replace %programfiles(x86)% with %programfiles%.      
 
-	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://www.visualstudio.com/downloads/).  
+	The **witadmin** command-line tool installs with any version of Visual Studio or Team Explorer. You can access this tool by installing the [free version of Visual Studio Community](https://visualstudio.microsoft.com/downloads/).  
 
 2.	To delete several work items, enter the server name and directory path to the collection. For example:   
 

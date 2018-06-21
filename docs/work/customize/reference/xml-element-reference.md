@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: f65e3ae0-817a-413e-b5c3-0ebadc3ba944
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 04/04/2017
 ---
 
@@ -43,7 +44,7 @@ By using the index of elements in this topic, you can look up the syntax structu
 > [!NOTE]    
 >**Feature availability:**&#160;&#160;The new form elements (**FORM-WebLayout**) and its corresponding features are available from VSTS and the web portal for TFS 2017. To learn more about the new for, see [enable the new form](../process/new-work-item-experience.md)<br/> 
 > - For users of VSTS working with [hosted XML customization](../import-process/import-process.md), an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
-> - For TFS 2017 users, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
+> - For TFS 2017 users, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new visualstudio.microsoft.comform-rollout.md).<br/>
 > - For TFS 2015 users, the new form isn't available. Use the (**FORM-Layout**) elements to customize your WIT definitions. You must [upgrade to TFS 2017 or later version](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.  
 
 

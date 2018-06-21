@@ -612,7 +612,7 @@ Be sure to check out the [post import](.\migration-post-import.md) documentation
 The great news is that your team is now ready to begin the process of running an import. It's recommended that your team start with a dry run import and then finally a production run import. Dry run imports allow your team to see how the end results of an import will look, identify potential issues, and gain experience before heading into your production run. 
 
 > [!NOTE]
-> Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to VSTS [Customer Support](https://www.visualstudio.com/team-services/support/) before queuing another import.
+> Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to VSTS [Customer Support](https://visualstudio.microsoft.com/team-services/support/) before queuing another import.
 
 ### Considerations for Roll Back Planning
 A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the TFS Database Import Service.

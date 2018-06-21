@@ -7,7 +7,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/10/2017
 ---
 
@@ -37,7 +38,7 @@ You can generate these reports only when you work with an on-premises TFS that h
 
 * A version of Excel that is compatible with Office 2007, Office 2010, or Office 2013. If you don't have Excel, [install it now](http://office.microsoft.com/excel/). 
 
-
+visualstudio.microsoft.com
 * Either Visual Studio or the Team Explorer plug-in for Visual Studio, which you can [install from this download site](https://www.visualstudio.com/downloads/download-visual-studio-vs). Team Explorer is free and requires a Windows OS.
 
    You need to install Team Explorer to get the Team Foundation add-in for Excel. 

@@ -52,7 +52,7 @@ We’ve added a new dialog to all work item forms to aid in creating link relati
 
 ##REST batch support
 
-The new batch endpoint for [REST APIs](https://www.visualstudio.com/integrate/reference/reference-vso-overview-vsi) lets you create and update multiple work items in a single call. For example, you can now change the states of a large number of work items or even create multiple work items and link them together, all in a single call.
+The new batch endpoint for [REST APIs](https://visualstudio.microsoft.com/integrate/reference/reference-vso-overview-vsi) lets you create and update multiple work items in a single call. For example, you can now change the states of a large number of work items or even create multiple work items and link them together, all in a single call.
 
 ##Third-party OAuth scopes
 

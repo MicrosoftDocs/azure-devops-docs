@@ -38,7 +38,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 ### Use VSTS to deploy your App to Azure
 <div class="ico48Case halfStack">
-<div class="ico48Link"><a href="../pipelines/apps/cd/azure/aspnet-core-to-azure-webapp.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
+<div class="ico48Link"><a href="../pipelines/targets/webapp.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
 <div class="ico48Link"><a href="../pipelines/apps/cd/deploy-webdeploy-iis-deploygroups.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/virtualmachine.png"><span>Windows VM</span></a></div>
 <div class="ico48Link"><a href="../pipelines/apps/cd/deploy-docker-webapp.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/app-service-web.png"><span>Web App for Containers</span></a></div>
 </div>

@@ -1,11 +1,13 @@
 ---
-title: TF237002-Cannot open the document because Microsoft Excel 2007 or later, or one of its components is not installed titleSuffix: VSTS & TFS
+title: TF237002-Cannot open the document because Microsoft Excel 2007 or later, or one of its components is not installed 
+titleSuffix: VSTS & TFS
 description: Appears when a Team Foundation add-in has been disabled in an Office client.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e10dc22d-2d09-40d8-8a90-37f6f54412ee
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
@@ -14,7 +16,7 @@ ms.date: 01/20/2017
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
-Error message TF237002 or TF400593 appears when a Team Foundation add-in has been disabled in an Office client, or Office Primary Interop Assemblies are not installed or were damaged after they were installed.  
+Error message TF237002 or TF400593 appears when a Team Foundation add-in has been disabled in an Office client, or Office Primary Interop Assemblies are not installed or wervisualstudio.microsoft.com were installed.  
   
  The **Team** menu or **Team** ribbon appears when you install Visual Studio. You can install Visual Studio Community for free [from the Visual Studio download page](http://www.visualstudio.com/downloads/download-visual-studio-vs).  
   

@@ -73,4 +73,4 @@ assign Package Management to 11 total users in your account.
 - [Set up billing](set-up-billing-for-your-account-vs.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [VSTS billing support](https://www.visualstudio.com/team-services/support/)
+- [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

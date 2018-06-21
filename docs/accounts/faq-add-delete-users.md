@@ -95,7 +95,7 @@ This transition provides an upgrade by offering access to unlimited
 VSTS accounts, not just one account, like Visual Studio Online Professional. 
 The rest stays the same - monthly access to the Visual Studio Professional IDE, 
 and pricing remains at $45 per user, per month.
-Learn more about [Visual Studio subscriptions](https://www.visualstudio.com/products/how-to-buy-vs).
+Learn more about [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs).
 
 If you're buying Professional users for a specific VSTS account,
 which is possible only if you bought before November 2015,
@@ -169,7 +169,7 @@ If your account has users who don't need access anymore,
 [remove them from your account](delete-account-users.md).
 
 *	You no longer have access to 
-[features that are available only as extensions](https://www.visualstudio.com/team-services/compare-features/). 
+[features that are available only as extensions](https://visualstudio.microsoft.com/team-services/compare-features/). 
 This might happen for different reasons.
 
 	*	Your access level no longer meets your extension's requirements. 

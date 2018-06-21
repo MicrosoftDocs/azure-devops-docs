@@ -26,14 +26,14 @@ Do you need to:
 
 * **Suggest a feature or a fix?** Submit your idea or issue through [UserVoice for VSTS](https://visualstudio.uservoice.com/forums/330519-team-services).
 
-* **Find out what's new in VSTS?** Check out the [current VSTS Release Notes](https://www.visualstudio.com/team-services/release-notes/). These notes are updated every three weeks.
+* **Find out what's new in VSTS?** Check out the [current VSTS Release Notes](https://visualstudio.microsoft.com/team-services/release-notes/). These notes are updated every three weeks.
 
 ## VSTS and TFS Product Support
 
 The primary support hubs for VSTS and TFS are:
 
-* [VSTS Support](https://www.visualstudio.com/team-services/support/)
-* [TFS Support](https://www.visualstudio.com/team-services/tfs-support/)
+* [VSTS Support](https://visualstudio.microsoft.com/team-services/support/)
+* [TFS Support](https://visualstudio.microsoft.com/team-services/tfs-support/)
 
 For technical support:
 

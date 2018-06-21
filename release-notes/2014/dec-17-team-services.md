@@ -70,7 +70,7 @@ And, you might have noticed in the screenshot above that we made a small change 
 
 We are happy to announce two new integrations going live this sprint: Slack and Azuqua. [Slack](http://www.slack.com/) is a popular team collaboration service that helps teams be more productive by keeping all communications in one place (and easily searchable from virtually anywhere). [Azuqua](http://www.azuqua.com/) enables regular users to wire together complex business processes across multiple cloud services, including Facebook, Twitter, and Jira, without writing any code.
 
-To learn more about these and the 20+ other integrations, visit [Visual Studio Online Integrations](https://www.visualstudio.com/en-us/explore/vso-integrations-directory-vs).
+To learn more about these and the 20+ other integrations, visit [Visual Studio Online Integrations](https://visualstudio.microsoft.com/en-us/explore/vso-integrations-directory-vs).
 
 ##Preview APIs for adding and updating files in source control
 
@@ -82,7 +82,7 @@ To learn more about these APIs, see [Visual Studio Online REST API Versions and 
 
 Finally, we turned on the CodeLens feature for all Visual Studio Online accounts with today’s deployment. If you’re not familiar with CodeLens, head over to our [devops blog](http://blogs.msdn.com/b/visualstudioalm/archive/2014/12/11/codelens-in-visual-studio-online-is-now-in-public-preview.aspx) to read about how you can start using it.
 
-That’s a wrap for this sprint and for the 2014 calendar year. If you’re ever interested in looking back over the changes we’ve made in the last year, visit our [features timeline](https://www.visualstudio.com/en-us/articles/news/features-timeline), where we catalog all the updates to the service and map them to on-premises updates of Team Foundation Server. Thank you.
+That’s a wrap for this sprint and for the 2014 calendar year. If you’re ever interested in looking back over the changes we’ve made in the last year, visit our [features timeline](https://visualstudio.microsoft.com/en-us/articles/news/features-timeline), where we catalog all the updates to the service and map them to on-premises updates of Team Foundation Server. Thank you.
 
 Thanks,
 

@@ -2874,7 +2874,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[29 April 2015](https://www.visualstudio.com/integrate/extensions/overview)</td>
+            <td>[29 April 2015](https://visualstudio.microsoft.com/integrate/extensions/overview)</td>
             <td>Extensions</td>
             <td style="background:rgb(198, 239, 200);">2015.2</td>
         </tr>
@@ -3698,7 +3698,7 @@ Versions in the “Server” column are linked to the appropriate download locat
           <td style="background:rgb(189, 214, 238);">2017.1</td>
           <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
           <td>15.112.26307.00
-          (15.112.26301.0)[*](https://www.visualstudio.com/en-us/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)</td>
+          (15.112.26301.0)[*](https://visualstudio.microsoft.com/en-us/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)</td>
         </tr>
         <tr>
           <td style="background:rgb(240, 245, 251);">[2017.0.1](https://aka.ms/tfs2017-relnotes)</td>

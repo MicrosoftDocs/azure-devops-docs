@@ -33,7 +33,7 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 ## Prerequisites
 
 [!INCLUDE [include](../../../_shared/ci-cd-prerequisites-vsts.md)]
-* [Visual Studio 2017](https://www.visualstudio.com/downloads/)    
+* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)    
 * [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
 
 [!INCLUDE [create-azure-container-registry](../../../apps/_shared/create-azure-container-registry.md)]

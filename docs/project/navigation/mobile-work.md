@@ -7,7 +7,8 @@ ms.topic: conceptual
 ms.prod: devops
 ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 03/01/2018
 ---   
@@ -16,7 +17,7 @@ ms.date: 03/01/2018
 
 **VSTS | TFS 2018**
 
-With the mobile browser and work item form, you gain on-the-go features to stay on top of the latest updates made to work tracking. When you click  any work item link on  your mobile device, it will open a mobile-friendly version of the work item. From there, you can update the work item or access all work items assigned to you or that you're following.   
+With the mobile browser and work item form, you gain on-the-go features to stay on top of the latest updates made to work tracking. When you click any work item link on your mobile device, it will open a mobile-friendly version of the work item. From there, you can update the work item or access all work items assigned to you or that you're following.   
  
 <img src="_img/mobile-work-intro-1.png" alt="Mobile work item form" style="border: 1px solid #C3C3C3;" />  
 
@@ -40,7 +41,7 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
 > The mobile browser is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
 
 ::: moniker-end
-     
+
 ::: moniker range="vsts >= tfs-2018"
 <a id="mobile"></a>
 ## Open the mobile work item form  
@@ -51,7 +52,7 @@ The mobile work item form will open when you click **View work item** from an em
 - You were **@mentioned** in a discussion
 - A notification is sent based on the work item alerts you've set using [Manage personal notifications](../../notifications/manage-personal-notifications.md). 
 
-<img src="_img/mobile-work-email-notice.png" alt="Email received in your mobile client" style="border: 1px solid #C3C3C3;" />     
+<img src="_img/mobile-work-email-notice.png" alt="Email received in your mobile client" style="border: 1px solid #C3C3C3;" />  
 
 
 ## Update a work item
@@ -82,19 +83,19 @@ Mobile form controls operate as follows:
  
 To update the state, click the state you want.  
  
-<img src="_img/mobile-work-change-state.png" alt="Mobile work item form, Change State action" style="border: 1px solid #C3C3C3;" />      
+<img src="_img/mobile-work-change-state.png" alt="Mobile work item form, Change State action" style="border: 1px solid #C3C3C3;" />  
 
 ### Add or remove tags 
 
 To add a tag, type the text you want.  
  
-<img src="_img/mobile-work-add-tags.png" alt="Mobile work item form, Add or remove tags" style="border: 1px solid #C3C3C3;" />    
+<img src="_img/mobile-work-add-tags.png" alt="Mobile work item form, Add or remove tags" style="border: 1px solid #C3C3C3;" /> 
 
 ### View history
  
 Click the History tab to view history. 
 
-<img src="_img/mobile-work-view-history.png" alt="Mobile work item form, View history" style="border: 1px solid #C3C3C3;" />    
+<img src="_img/mobile-work-view-history.png" alt="Mobile work item form, View history" style="border: 1px solid #C3C3C3;" />  
 
 ## View and open work items in your activity lists 
 
@@ -115,7 +116,7 @@ Then, click **Work items**.
 
 The hub opens to the Assigned to me page. From there, you can click Following or My activity to access the other pages. To learn more about the account hub, see [Work effectively from your account hub](../../user-guide/account-home-pages.md). 
 
-<img src="_img/mobile-work-account-work-items-pages.png" alt="Mobile work item form, Change State action" style="border: 1px solid #C3C3C3;" />    
+<img src="_img/mobile-work-account-work-items-pages.png" alt="Mobile work item form, Change State action" style="border: 1px solid #C3C3C3;" /> 
 
 
 ## Related articles  
@@ -133,6 +134,6 @@ Help us improve the mobile experience.
 
 To provide feedback,  click the list control from the work item form and then click **Send Feedback**. To complete the feedback, select either the smile or frown and optionally enter a comment. 
 
-<img src="_img/mobile-work-send-feedback.png" alt="Mobile work item form, Send feedback" style="border: 1px solid #C3C3C3;" />    
+<img src="_img/mobile-work-send-feedback.png" alt="Mobile work item form, Send feedback" style="border: 1px solid #C3C3C3;" /> 
 
 ::: moniker-end 

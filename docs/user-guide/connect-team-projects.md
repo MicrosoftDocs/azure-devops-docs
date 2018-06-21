@@ -87,7 +87,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 ## Connect from Visual Studio or Team Explorer
 
-1.  If you haven't already, [download and install a version of Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
+1.  If you haven't already, [download and install a version of Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 
 2.  If you're not a member of a TFS security group, [get added as one](../organizations/security/add-users-team-project.md).
 
@@ -214,7 +214,7 @@ To follow these procedures, you must be a member of the **Readers** group or hav
 
 1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../accounts/requirements.md)
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://www.visualstudio.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://www.visualstudio.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 
 	> [!NOTE]  
 	> **Feature availability:** The only way to get the Team Foundation add-in to Excel is by installing one of the latest editions of Visual Studio or  TFS Standalone Office Integration.   
@@ -302,7 +302,7 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator](../organizations/security/set-project-collection-level-permissions.md). 
 
-VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://www.visualstudio.com/team-services/tfs-pricing).
+VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
 In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
@@ -332,7 +332,7 @@ To **Configure User Tools** to associate a file type with a compare or merge too
 In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, and Project you can connect to a team project from these clients: 
 
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
-- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx) 
+- [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
 - [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)

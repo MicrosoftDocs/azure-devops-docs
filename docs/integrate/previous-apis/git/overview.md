@@ -130,5 +130,5 @@ In case you're looking for something not found in the **Common tasks** section a
 * [Trees](./trees.md)
 
 >[!NOTE]
->For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](https://www.visualstudio.com/docs/git/overview).
+>For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](https://visualstudio.microsoft.com/docs/git/overview).
 

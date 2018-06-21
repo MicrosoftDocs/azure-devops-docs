@@ -161,7 +161,7 @@ For more details, see [Build your .NET desktop app for Windows](../apps/windows/
 
 You'll need a web app to test. You can use an existing app, or deploy one in your CD release process.
 The example code above runs tests against Bing.com. For details of how to set up your own release process
-to deploy a web app, see [Build and deploy to an Azure Web App](../apps/cd/azure/aspnet-core-to-azure-webapp.md).
+to deploy a web app, see [Deploy to Azure web apps](../targets/webapp.md).
 
 ## Decide how you will deploy and test your app
 

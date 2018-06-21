@@ -17,7 +17,7 @@ ms.date: 08/15/2017
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE]  
-> **Feature availability**: For Visual Studio Team Services (VSTS) and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://www.visualstudio.com/pricing/visual-studio-online-feature-matrix-vs). For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../../organizations/security/change-access-levels.md) to request feedback. 
+> **Feature availability**: For Visual Studio Team Services (VSTS) and TFS 2015.1 or later versions, you can request feedback with a [Basic license](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs). For Team Foundation Server (TFS) 2015 or earlier versions, you need to belong to the [Advanced access level](../../organizations/security/change-access-levels.md) to request feedback. 
 >
 >In addition, you can now [request feedback from stakeholders for web apps using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md). For desktop apps, you must use the feedback request form documented in this topic and stakeholders must reply using the Microsoft Feedback Client. 
  

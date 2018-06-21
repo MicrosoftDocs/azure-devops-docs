@@ -43,7 +43,7 @@
   - name: Azure Stack
     href: targets/azure-stack.md
   - name: Azure Web App
-    href: apps/cd/azure/aspnet-core-to-azure-webapp.md
+    href: targets/webapp.md
   - name: SCVMM
     href: targets/scvmm.md
   - name: VMware
@@ -209,8 +209,6 @@
     items:
     - name: Azure web app
       href: apps/cd/deploy-webdeploy-webapps.md
-    - name: Extend App Services deployments
-      href: apps/cd/howto-webdeploy-webapps.md
     - name: Extend IIS Server deployments
       href: apps/cd/howto-webdeploy-iis-deploygroups.md
     - name: Azure cloud service

@@ -52,7 +52,7 @@ The following steps are essential to be successful with these APIs. These are de
 * [APM Counters](apm-counters.md) - application counters configured and available for query in the APM service, such as [Metrics in Application Insights][7].
 * [Configuration](configuration.md) - get configuration details applicable at an account level, such as permitted target geo-locations ([Azure regions][8]) for the load agents.
 
-[1]:http://www.visualstudio.com/en-us/integrate/get-started/get-started-auth-introduction-vsi
+[1]:http://visualstudio.microsoft.com/en-us/integrate/get-started/get-started-auth-introduction-vsi
 [2]:http://code.msdn.microsoft.com/Cloud-Load-Testing-API-b333e778
 [3]:https://code.msdn.microsoft.com/Importing-Load-Test-Results-b577864b
 [4]:https://msdn.microsoft.com/library/dn250793.aspx

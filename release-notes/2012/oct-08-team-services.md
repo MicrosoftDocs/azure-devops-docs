@@ -24,7 +24,7 @@ Since this change required an updated to the client, once the upcoming VS 2012 u
 
 ##Updated learn section
 
-We have also updated the [learn](https://www.visualstudio.com/en-us/get-started/) section of the site & added several new articles:
+We have also updated the [learn](https://visualstudio.microsoft.com/en-us/get-started/) section of the site & added several new articles:
 
 - [Use the Hosted Build Controller](https://docs.microsoft.com/vsts/pipelines/agents/hosted?view=vsts)
 - [Set up an Ant Build in the Cloud](https://docs.microsoft.com/vsts/pipelines/tasks/build/ant?view=vsts)
