@@ -244,7 +244,7 @@ Here are a few examples of the kinds of apps you can build:
 
 * [Build your ASP.NET 4 app](../apps/aspnet/build-aspnet-4.md).
 
-* [Build your ASP.NET Core app](../apps/aspnet/build-aspnet-core.md)
+* Build your ASP.NET Core app
 
 * [Build your Universal Windows Platform app](../apps/windows/universal.md)
 
