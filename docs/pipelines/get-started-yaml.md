@@ -16,6 +16,9 @@ monikerRange: 'vsts'
 
 If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, then you can use VSTS pipelines to easily build the repo by adding a YAML file to it. VSTS pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
 
+> [!NOTE]
+> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+
 ## Prerequisites
 
 [!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
@@ -146,7 +149,7 @@ You've just learned the basics of using YAML to create and run a VSTS build proc
 This pipeline automatically builds and validates whatever code is checked in by your team. 
 Now you're ready to configure your CI definition for the programming language you're using.
 
-* [.NET Core](apps/aspnet/build-aspnet-core.md)
+* [.NET Core](languages/dotnet-core.md)
 * [Android](languages/android.md)
 * [Go](apps/go/go.md)
 * [Java](apps/java/build-gradle.md)

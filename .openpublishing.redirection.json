@@ -667,7 +667,7 @@
     },
     {
       "source_path": "docs/build/apps/aspnet/ci/build-aspnet-core.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
+      "redirect_url": "/vsts/pipelines/languages/dotnet-core",
       "redirect_document_id": false
     },
     {
@@ -1282,12 +1282,12 @@
     },
     {
       "source_path": "docs/build-release/apps/aspnet/aspnetcore-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
+      "redirect_url": "/vsts/pipelines/languages/dotnet-core",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/aspnet/ci/build-aspnet-core.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
+      "redirect_url": "/vsts/pipelines/languages/dotnet-core",
       "redirect_document_id": false
     },
     {
@@ -7927,7 +7927,7 @@
     },
     {
       "source_path": "docs/build-release/apps/aspnet/build-aspnet-core.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-core",
+      "redirect_url": "/vsts/pipelines/languages/dotnet-core",
       "redirect_document_id": true
     },
     {
