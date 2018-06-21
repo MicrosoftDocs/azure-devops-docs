@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
@@ -288,8 +289,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 	&lt;FIELD name="Remaining Work" refname="Microsoft.VSTS.Scheduling.RemainingWork" type="Double" reportable="measure" formula="sum"&gt;    
 	   &lt;HELPTEXT&gt;    
 	   An estimate of the work remaining to complete the task (in person hours)  
-	   &lt;/HELPTEXT&gt;    
-	   &lt;HELPTEXT&gt;The discipline to which the task belongs&lt;/HELPTEXT&gt;    
+	   &lt;/HELPTEXT&gt;
 	&lt;/FIELD&gt;    
 	</code></pre> </td>
 	</tr>
