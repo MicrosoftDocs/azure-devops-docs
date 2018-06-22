@@ -60,6 +60,8 @@
       href: develop/call-rest-api.md
     - name: Extensions for public projects
       href: develop/public-project.md
+    - name: New navigation (preview)
+      href: develop/web-navigation.md
     - name: Use a platform UI control
       items:
       - name: Configure
