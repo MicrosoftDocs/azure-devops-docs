@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 6/19/2018
+ms.date: 6/22/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -27,7 +27,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |GVFS - Performance improvements for status|Code|2019|
 |GVFS for Mac - Public Preview|Code|N/A|
 |Filtering on the Taskboard|Work|2019|
-|New Agile hubs including Boards, Backlogs, and Sprints|Work|2019|
 |Work Item support for Markdown editing|Work|2019|
 |Migration from a Hosted XML processes to an Inherited process|Work|N/A|
 |Configuration as code (YAML) for builds – Generally Available|Build|2019|
@@ -100,10 +99,11 @@ Versions in the “Server” column are linked to the appropriate download locat
     <tbody>
 
         <tr>
-            <td rowspan="16">[19 June 2018](2018/jun-19-vsts.md)</td>
-            <td>Queries hub generally available</td><td style="background:rgb(232, 232, 232);">*2019*</td>
+            <td rowspan="17">[19 June 2018](2018/jun-19-vsts.md)</td>
+            <td>Preview our new navigation hub</td><td style="background:rgb(232, 232, 232);">*2019*</td>
         </tr>
-        <tr><td>Preview our new navigation hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>New Work hubs</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Queries hub generally available</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Easily find existing work items in linking and mention experiences</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Modernized experience in the Builds hub</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Pass environment variables to tasks</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
