@@ -8548,7 +8548,7 @@
     {
       "source_path": "docs/pipelines/apps/aspnet/build-aspnet-core.md",
       "redirect_url": "/vsts/pipelines/languages/dotnet-core",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
