@@ -8544,13 +8544,11 @@
       "source_path": "docs/collaborate/rate-limits.md",
       "redirect_url": "/vsts/integrate/concepts/rate-limits",
       "redirect_document_id": false
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< master
     },
     {
       "source_path": "docs/pipelines/apps/aspnet/build-aspnet-core.md",
       "redirect_url": "/vsts/pipelines/languages/dotnet-core",
       "redirect_document_id": false
-========================================================================
     },
     {
       "source_path": "docs/accounts/access-with-azure-ad.md",
@@ -8781,7 +8779,6 @@
       "source_path": "docs/accounts/use-personal-access-tokens-to-authenticate.md",
       "redirect_url": "/vsts/organizations/accounts/use-personal-access-tokens-to-authenticate",
       "redirect_document_id": false
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> users/chcomley/REDIRECTSforORGANIZATIONS_ACCOUNTS_6_21
     }
   ]
 }
