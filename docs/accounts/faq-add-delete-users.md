@@ -128,6 +128,10 @@ Last Access is the last date a user accessed any VSTS resources or services. Acc
 *accountname*.visualstudio.com directly as well as using resources or services indirectly, such as using the Package Management 
 service from a build definition or pushing code to VSTS from a git command line or from an IDE.
 
+#### Q: Why if a deleted AAD user show *Last Access* a date after deletion?
+
+This behavior can be triggered by interaction with the user on the resources, like assign a task, tag the user on the discussion. This example interactions update the “Last Access” date. If fell your data was compromised please open a support ticket.
+
 <a name="paid-basic-access-join-other-accounts"></a>
 
 [!INCLUDE [can-paid-Basic-users-join-other-accounts](../_shared/qa-can-paid-basic-users-join-other-accounts.md)]
