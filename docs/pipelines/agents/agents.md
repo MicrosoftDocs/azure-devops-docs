@@ -167,7 +167,7 @@ To register an agent, you need to be a member of the [administrator role](pools-
 
 ::: moniker range=">= tfs-2017"
 
-**Personal Access Token (PAT):** [Generate](../../accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS.
+**Personal Access Token (PAT):** [Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS.
 
 ::: moniker-end
 

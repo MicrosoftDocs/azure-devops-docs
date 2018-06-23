@@ -7,7 +7,8 @@ ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 5f3d7c83-15bd-4176-b594-3e2ddc1afd6b 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/20/2018
 monikerRange: '>= tfs-2013 <=tfs-2017'
 ---
@@ -36,9 +37,9 @@ Members of the Project Administrators groups can create and administer team room
 
 	![Team room tile on team project home page](_img/ALM_CT_TeamroomTile.png) 
 	
-	If you don't see the room tile, [(VSTS) ask your account administrator to grant you a Basic license](../accounts/add-account-users-assign-access-levels.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
+	If you don't see the room tile, [(VSTS) ask your account administrator to grant you a Basic license](../organizations/accounts/add-account-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
 
-	If you can't enter the room, get added as a member: [(VSTS) Add team members](../accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../work/scale/multiple-teams.md#add-team-members).
+	If you can't enter the room, get added as a member: [(VSTS) Add team members](../organizations/accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../work/scale/multiple-teams.md#add-team-members).
 
 2. To switch to another team room, open it from the **Rooms** list. 
 
@@ -120,7 +121,7 @@ A team room is automatically created when you [add a team](../work/scale/multipl
 - To completely exit a team room, close all browser instances where you've logged into the team room  
 - To mute the sound, click the ![Audio icon on the Rooms page](_img/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on  
 - For other uses of the `@mention`, see [Use @mentions to further discussion](../notifications/at-mentions.md)   
-- To change your profile image, see [Account preferences](../accounts/account-preferences.md).  
+- To change your profile image, see [Account preferences](../organizations/accounts/account-preferences.md).  
 
 
 <a id="team-room-permissions"> </a>

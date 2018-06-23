@@ -85,7 +85,7 @@ Anyone who has write access to a team project can assign work items to a team me
 
 When your system is configured with Azure Active Directory (AAD), then the system will synchronize person-name fields with these directories. Person-name fields include Activated By, Assigned To, Closed By, Created By, and Resolved By. 
 
-You can grant access to a team project by adding security groups that you created in AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md).
+You can grant access to a team project by adding security groups that you created in AAD or by adding accounts to existing or custom groups defined from the collection setting Security hub. To learn more, see [Access with Azure Active Directory (Azure AD)](../../organizations/accounts/add-users-to-aad.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
@@ -170,7 +170,7 @@ As a member added to the Contributors group of a team project, you can use most 
 To learn more about permissions and access, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
 
 ::: moniker range="vsts" 
-To add team members to a team project, see [Add users to your VSTS account](../../accounts/add-team-members-vs.md).
+To add team members to a team project, see [Add users to your VSTS account](../../organizations/accounts/add-team-members-vs.md).
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 To add team members to a team project, see [TFS team project](../../organizations/security/add-users-team-project.md). 

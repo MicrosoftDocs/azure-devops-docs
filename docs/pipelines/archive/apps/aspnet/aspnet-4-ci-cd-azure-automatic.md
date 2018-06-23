@@ -210,7 +210,7 @@ may encounter the following known issues:
 * If you do not have relevant permission to create build and release definitions 
   in the VSTS account, the Continuous Delivery configuration will fail
   with an appropriate error message. See 
-  [Manage users and access in VSTS](../../../../accounts/add-account-users-assign-access-levels.md).
+  [Manage users and access in VSTS](../../../../organizations/accounts/add-account-users-from-user-hub.md).
   
 * Continuous Delivery supports only applications developed by using
   [ASP.NET](https://www.asp.net/) and [ASP.NET Core](https://www.microsoft.com/net/core#windows).
@@ -225,7 +225,7 @@ may encounter the following known issues:
   "No accounts found" message in this situation. To resolve this, you can
   configure your VSTS account to be backed by an
   Azure Active Directory (AAD) instance. For information on how to do this, see
-  [VSTS - Access with Azure Active Directory](../../../../accounts/access-with-azure-ad.md).
+  [VSTS - Access with Azure Active Directory](../../../../organizations/accounts/access-with-azure-ad.md).
 
 ## Q&A
 

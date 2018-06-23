@@ -40,13 +40,13 @@ For more about TFS licensing, see the
 
 ## Buy monthly access to TFS for your users
 
-1. [Sign up for a VSTS account](../accounts/create-account-msa-or-work-student.md), if you don't have one already.
+1. [Sign up for a VSTS account](../organizations/accounts/create-account-msa-or-work-student.md), if you don't have one already.
 
 2. Based on the number of users who need TFS CALs, [pay for VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). Note that VSTS accounts include 5 free users, and these free users do not apply to TFS.
 
 3. If you haven't already, sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
-4. [Add users](../accounts/add-account-users-assign-access-levels.md) to your VSTS account so that you can track these users more easily.
+4. [Add users](../organizations/accounts/add-account-users-from-user-hub.md) to your VSTS account so that you can track these users more easily.
 
     Though these users will get invited to your VSTS account, you're not required to use VSTS.
 
@@ -59,7 +59,7 @@ For more about TFS licensing, see the
 
 ## Buy monthly access to the Test hub
 
-1. [Sign up for a VSTS account](../accounts/create-account-msa-or-work-student.md), if you don't have one already.
+1. [Sign up for a VSTS account](../organizations/accounts/create-account-msa-or-work-student.md), if you don't have one already.
 
 2. Based on the number of users who need Test hub access in TFS, [buy Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
@@ -67,7 +67,7 @@ For more about TFS licensing, see the
 
 3. If you haven't already, sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
-4. [Add users](../accounts/add-account-users-assign-access-levels.md) to your VSTS account and [assign them Test Manager](../marketplace/assign-paid-extensions.md) via the Users hub in your VSTS account so that you can track these users.
+4. [Add users](../organizations/accounts/add-account-users-from-user-hub.md) to your VSTS account and [assign them Test Manager](../marketplace/assign-paid-extensions.md) via the Users hub in your VSTS account so that you can track these users.
 
     Though these users will get invited to your VSTS account,you're not required to use VSTS. By assigning Test Manager within your VSTS account, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they will not be able to run Test Professional.
 

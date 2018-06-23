@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013'
 
 When a user with access to Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This will automatically void their user account and remove their ability to access or connect to VSTS or TFS. 
 
-If you manage your VSTS users with Microsoft Service Accounts (MSA), then you'll need to [remove their account from the Users hub](../../accounts/delete-account-users.md). 
+If you manage your VSTS users with Microsoft Service Accounts (MSA), then you'll need to [remove their account from the Users hub](../accounts/delete-account-users.md). 
 
 In this topic you'll find:
 > [!div class="checklist"]
@@ -36,7 +36,7 @@ In this topic you'll find:
 
 ## Remove users from VSTS accounts
 
-If your VSTS account uses MSA accounts, then to you must remove users from the VSTS account as you have no other way to prevent access. When you do so, you'll not be able to create a query for work items assigned to the removed user account. To learn more, see [Delete users for VSTS](../../accounts/delete-account-users.md).
+If your VSTS account uses MSA accounts, then to you must remove users from the VSTS account as you have no other way to prevent access. When you do so, you'll not be able to create a query for work items assigned to the removed user account. To learn more, see [Delete users for VSTS](../accounts/delete-account-users.md).
 
 If your VSTS account is backed by Azure AD, then you can disable or delete the Azure AD user account while leaving their VSTS account active. In this way, you can continue to query their work item history using their account name.
 

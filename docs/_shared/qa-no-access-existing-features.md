@@ -2,7 +2,7 @@
 
 A:	Make sure that users have the correct 
 [access level](https://visualstudio.microsoft.com/team-services/compare-features/) 
-in the Users hub. For VSTS, learn [how to manage users and access levels](/vsts/accounts/add-account-users-assign-access-levels). 
+in the Users hub. For VSTS, learn [how to manage users and access levels](/vsts/organizations/accounts/add-account-users-assign-access-levels). 
 For TFS, learn [learn how to change access levels](/vsts/organizations/security/change-access-levels).  
 
 Also, [some features are available only as extensions](https://visualstudio.microsoft.com/team-services/compare-features/), 

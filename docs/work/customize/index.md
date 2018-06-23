@@ -88,6 +88,6 @@ Use the guidance provided in the following topics based on the process model or 
 
 - [Work items](../work-items/index.md)
 - [Scale & configure teams](../../organizations/settings/index.md)
-- [Account Management (VSTS)](../../accounts/index.md)
+- [Account Management (VSTS)](../../organizations/accounts/index.md)
 - [Marketplace extensions](../../marketplace/install-vsts-extension.md)
 - [Extensibility and REST APIs](../../extend/overview.md) 

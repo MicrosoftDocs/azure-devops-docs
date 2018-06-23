@@ -37,7 +37,7 @@ To use the VSTS symbol server in WinDbg, you'll add your VSTS account to the sym
 3. Copy this command and replace `<your-account>` with your VSTS acccount name: `.sympath+ https://<your-account>.artifacts.visualstudio.com/_apis/symbol/symsrv`
 4. In the Command window in WinDbg, enter the command from the previous step
 5. Set a breakpoint (`bp`), which will cause WinDbg to issue a symbols request
-6. Create a [Personal Access Token](../../accounts/use-personal-access-tokens-to-authenticate.md) with the **Symbols (read)** scope and copy it to your clipboard
+6. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with the **Symbols (read)** scope and copy it to your clipboard
 7. In the authentication prompt that appears, leave the username blank and enter your PAT from the previous step as the password
 
 WinDbg should then acquire symbols for your executable. You can run `lm` to confirm.

@@ -346,7 +346,7 @@
   - name: "Scale & Configure Teams"
     href: ../../organizations/settings/index.md
   - name: Account Management (VSTS)
-    href: ../../accounts/index.md
+    href: ../../organizations/accounts/index.md
   - name: Marketplace extensions
     href: ../../marketplace/get-vsts-extensions.md
   - name: Extensibility and REST APIs

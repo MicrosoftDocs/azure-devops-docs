@@ -1,11 +1,13 @@
 ---
-title: TF30321-The name you typed is already used for another team project  titleSuffix: VSTS & TFS
+title: TF30321-The name you typed is already used for another team project  
+titleSuffix: VSTS & TFS
 description: Display an error when you type a name for the new team project that duplicates the name already being used by another team project on the same server.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9cd0bc58-3c58-4129-8099-d8849cece6fc
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
@@ -27,6 +29,6 @@ This error occurs when you type a name for the new team project that duplicates 
   
 > [!NOTE]
 >  If you are sure that the name you typed is not being used by a team project on Team Foundation Server, contact your administrator for the server and ask him or her to run the **TFSDeleteProject** command-line utility to free the name.
-
+../../accounts
 ## Related articles
-- [Create a team project](../../../../accounts/create-team-project.md) 
+- [Create a team project](../../../../organizations/accounts/create-team-project.md) 

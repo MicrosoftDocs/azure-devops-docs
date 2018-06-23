@@ -1,11 +1,13 @@
 ---
-title: TF24023-Team Foundation Server configuration failuretitleSuffix: VSTS & TFS
+title: TF24023-Team Foundation Server configuration failure
+titleSuffix: VSTS & TFS
 description: Occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server while creating a team project 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 83546f98-1ca6-4b07-afe5-134df7f291bf
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 02/22/2017
 ---
@@ -51,6 +53,6 @@ This error occurs when the New Team Project Wizard is unable to connect to the T
     7.  Review the log entries to find network or file related issues.  
   
 5.  If the problem persists, contact your Team Foundation Server administrator.  
-  
+  ../../accounts
 ## Related articles
-- [Create a team project](../../../../accounts/create-team-project.md) 
+- [Create a team project](../../../../organizations/accounts/create-team-project.md) 

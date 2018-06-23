@@ -57,7 +57,7 @@ You can quickly assign work items to a sprint by dragging and dropping them from
 
 ## Try this next  
 
-Take these tools for a test run by [creating an account on VSTS for free](../../accounts/create-account-msa-or-work-student.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
+Take these tools for a test run by [creating an account on VSTS for free](../../organizations/accounts/create-account-msa-or-work-student.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
 
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 

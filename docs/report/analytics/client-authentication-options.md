@@ -134,7 +134,7 @@ If you receive an access denied message, you may need to change your authenticat
 
 ## Related articles
  
-- [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
+- [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Access data through Excel](access-analytics-excel.md)  
 - [Access data through Power BI desktop](../powerbi/access-analytics-power-bi.md)  
 - [Publish a Power BI Desktop file to PowerBI.com](../powerbi/publish-power-bi-desktop-to-power-bi.md)  
