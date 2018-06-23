@@ -139,7 +139,7 @@ A: If you supplied a Personal Access Token (recommended) in the login panel of t
 
 Also make sure the token has not expired and that it has the **Work items (read and write)** scope.
 
-For more details, see the Authenticating section above or the [Authenticate access with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/accounts/toc.json&bc=/vsts/accounts/breadcrumb/toc.json) topic.
+For more details, see the Authenticating section above or the [Authenticate access with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) topic.
 
 #### Q: Can I programmatically create subscriptions?
 

@@ -21,10 +21,10 @@ Newly created team projects contain a single, root area that corresponds to the 
 ## Prerequisites
 <a name="permissions"></a>
 ::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../organizations/accounts/add-account-users-from-user-hub.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../organizations/accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
 ::: moniker-end
 * To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 

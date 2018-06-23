@@ -109,8 +109,8 @@
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
     - name: Account Management
-      tocHref: /vsts/accounts/
-      topicHref: /vsts/accounts/index
+      tocHref: /vsts/organizations/accounts/
+      topicHref: /vsts/organizations/accounts/index
     - name: "Security & Identity"
       tocHref: /vsts/organizations/security/
       topicHref: /vsts/organizations/security/index

@@ -559,7 +559,7 @@ for your app there. If you see data collected there, report your issue to
   in again to refresh the token.
 
 * Azure Active Directory is not enabled for your VSTS account.
-  See [Access VSTS with Azure Active Directory](../../accounts/access-with-azure-ad.md).
+  See [Access VSTS with Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md).
 
 If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 

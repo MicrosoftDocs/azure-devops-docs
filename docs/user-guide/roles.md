@@ -117,7 +117,7 @@ Responsible for account or collection-level settings. These include:
 - Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Account Management](../accounts/account-management.md). 
+To get started, see [Account Management](../organizations/accounts/account-management.md). 
 
  
 ### TFS administrators

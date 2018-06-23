@@ -33,13 +33,13 @@ your email address for your Microsoft account.
 	and get VSTS as a benefit, 
 	use the Microsoft account associated with your subscription. 
 
-	<img src="../accounts/_img/_shared/sign-in.png" alt="Enter your email address" style="border: 2px solid #C3C3C3;" />
+	<img src="../organizations/accounts/_img/_shared/sign-in.png" alt="Enter your email address" style="border: 2px solid #C3C3C3;" />
 
 0.	On the Microsoft account sign-in page, 
 enter your email address for your Microsoft account. 
 Then enter your password, and finish signing in.
 
-	<img src="../accounts/_img/_shared/sign-in-msa2.png" alt="Enter password for your Microsoft account" style="border: 2px solid #C3C3C3;" />
+	<img src="../organizations/accounts/_img/_shared/sign-in-msa2.png" alt="Enter password for your Microsoft account" style="border: 2px solid #C3C3C3;" />
 
 	If you don't have a Microsoft account, 
 	you can create a Microsoft account at this time. 
@@ -48,14 +48,14 @@ Then enter your password, and finish signing in.
 
 	To manage your code, choose Git or Team Foundation Version Control.
 
-	<img src="../accounts/_img/sign-up-visual-studio-team-services/create-team-services-account.png" alt="Name your VSTS account, choose your version control" style="border: 1px solid #C3C3C3;" />
+	<img src="../organizations/accounts/_img/sign-up-visual-studio-team-services/create-team-services-account.png" alt="Name your VSTS account, choose your version control" style="border: 1px solid #C3C3C3;" />
 
 	Choose Git for distributed source control and TFVC for centralized source control. To learn more, review [Git](../git/overview.md) 
 	or [Team Foundation Version Control](../tfvc/overview.md).
 
 0.	(Optional) Click **Change details** to change default assignments. Otherwise, click **Continue** to confirm to initiate your account creation.
 
-	<img src="../accounts/_img/sign-up-visual-studio-team-services/check-account-location-standard.png" alt="Rename team project, change account location, or select another process" style="border: 2px solid #C3C3C3;" />
+	<img src="../organizations/accounts/_img/sign-up-visual-studio-team-services/check-account-location-standard.png" alt="Rename team project, change account location, or select another process" style="border: 2px solid #C3C3C3;" />
 
 	To change default assignments, use this guidance:
 
@@ -68,7 +68,7 @@ Then enter your password, and finish signing in.
 0.	By default, VSTS creates your first team project as "MyFirstProject". After VSTS creates your account and team project, 
 you can invite others to join your project, add code, start planning and tracking using work items, or rename your team project. 
 
-	<img src="../accounts/_img/_shared/team-project-created.png" alt="Add code or work items" style="border: 2px solid #C3C3C3;" />
+	<img src="../organizations/accounts/_img/_shared/team-project-created.png" alt="Add code or work items" style="border: 2px solid #C3C3C3;" />
 
 	Congratulations, you're now a VSTS account owner! 
 
@@ -135,5 +135,5 @@ You provide others access to your account by adding their email address.
 > or 
 > [Plan and track work](plan-track-work.md) 
 
-For more information on managing users and account access, see [Add account users for VSTS](../accounts/add-account-users-from-user-hub.md).
+For more information on managing users and account access, see [Add account users for VSTS](../organizations/accounts/add-account-users-from-user-hub.md).
  

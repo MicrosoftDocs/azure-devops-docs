@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6347fdd8-cac5-4614-91b4-ef4d5f4dc06d
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 10/23/2017
 ---
@@ -40,5 +41,5 @@ This error occurs when the New Team Project Wizard is building the **Confirm Tea
   
 3.  Contact the vendor who created or supplied the plug-in.  
   
-## Related articles
-- [Create a team project](../../../../accounts/create-team-project.md)
+## Related articles../../accounts
+- [Create a team project](../../../../organizations/accounts/create-team-project.md)

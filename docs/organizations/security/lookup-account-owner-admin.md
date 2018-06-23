@@ -21,7 +21,7 @@ For an overview of built-in security groups and default permission assignments, 
 
 ## Prerequisites
 
-* You must have a team project. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).
+* You must have a team project. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.  
 
 ## Find out who is a member of the Project Administrators group
@@ -59,7 +59,7 @@ To find out who is a member, check the Security settings at the collection level
 
 	<img alt="Find current owner" src="../../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
 
-	To change the account owner, see [Change account ownership](../../accounts/change-account-ownership-vs.md). 
+	To change the account owner, see [Change account ownership](../accounts/change-account-ownership-vs.md). 
 
 ::: moniker-end
 

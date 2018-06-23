@@ -196,7 +196,7 @@
   - name: IDE integration and extension
     items:
     - name: Visual Studio
-      href: ../accounts/set-up-vs.md
+      href: ../organizations/accounts/set-up-vs.md
     - name: Visual Studio Code
       href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
     - name: Eclipse

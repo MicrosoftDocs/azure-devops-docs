@@ -111,7 +111,7 @@ Reviewers launch your application and provide feedback through the free Microsof
 	With the feedback experience, you can engage stakeholders frequently to provide continuous feedback. Interacting with your working apps, your stakeholders can record rich and actionable data that the system automatically stores in the form of video or audio recordings, comments, and annotated screenshots. You can then take action on each feedback response by assigning it to a team member or creating bugs or backlog items to the linked feedback. 
 
 ##Related feedback notes  
-- You can only request feedback from a team project hosted on VSTS or an on-premises TFS. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).  
+- You can only request feedback from a team project hosted on VSTS or an on-premises TFS. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../../organizations/accounts/create-team-project.md).  
 - You can [change the audio device or annotation tool](change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.  
 - If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](enable-remote-audio-capture.md).  
 - You can download the Feedback client from here: [Visual Studio download site](https://www.microsoft.com/download/details.aspx?id=48142).  

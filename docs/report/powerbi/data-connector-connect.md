@@ -107,7 +107,7 @@ Follow the steps below to get started using the VSTS Power BI Data Connector:
 - [Permissions required to access the Analytics service](../analytics/analytics-security.md)
 - [Power BI integration overview](overview.md)
 - [Analytics Service security](../analytics/analytics-security.md)
-- [Authenticate your identity with personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md) 
+- [Authenticate your identity with personal access tokens](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) 
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md)  
 - [Data Connector - Example reports](data-connector-examples.md)
 
