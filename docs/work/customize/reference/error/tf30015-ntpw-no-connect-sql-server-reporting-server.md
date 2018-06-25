@@ -29,7 +29,7 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
   
  Because the wizard could not connect to the server that hosts SQL Server Reporting Services, the wizard was unable to create the SQL Server Reporting Services site on that server.  
   
-### To correct this error  ../../accounts
+### To correct this error    
   
 1.  Confirm that you have the required permissions to create a team project. This includes the required permissions on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../../organizations/accounts/create-team-project.md).  
   
@@ -56,6 +56,6 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
     7.  Review the log entries to find network or file related issues.  
   
 5.  If the problem persists, contact your Team Foundation Server administrator.  
-  ../../accounts
+    
 ## Related articles
 - [Create a team project](../../../../organizations/accounts/create-team-project.md)

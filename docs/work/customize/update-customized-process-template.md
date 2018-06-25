@@ -421,7 +421,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	Planning Tools
 	</td>
 	<td>
-	 [Create your backlog](../backlogs/create-your-backlog.md), [plan a sprint](../scrum/sprint-planning.md), [work with the Kanban board](../kanban/kanban-basics.md), and [more](../scrum/define-sprints.md). 
+	 [Create your backlog](../backlogs/create-your-backlog.md), [plan a sprint](../scrum/assign-work-sprint.md), [work with the Kanban board](../kanban/kanban-basics.md), and [more](../scrum/define-sprints.md). 
 	</td>
 	</tr>
 	<tr>

@@ -78,7 +78,7 @@ You can also export a shared query to Excel to perform bulk updates of user stor
   
 <a name="DefineStories"></a> 
 ### Define user stories and tasks  
- You can use the sprint backlog page to [plan a sprint or iteration](../scrum/sprint-planning.md). This page calculates individual and team capacity based on the estimated and remaining effort that is defined for tasks.  
+ You can use the sprint backlog page to [plan a sprint or iteration](../scrum/assign-work-sprint.md). This page calculates individual and team capacity based on the estimated and remaining effort that is defined for tasks.  
   
  As the following illustration shows, you can use the backlog page to define user stories and the tasks that are required to implement them. Tasks are automatically linked to user stories. This association supports the rollup of work hours from all tasks to the user story.  
   

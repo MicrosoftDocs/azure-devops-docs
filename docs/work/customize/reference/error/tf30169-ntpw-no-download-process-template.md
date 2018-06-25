@@ -39,6 +39,6 @@ The New Team Project Wizard encountered a problem downloading or extracting the 
 3.  If the server is available on the network and the process templates are available on the server, review the amount of available storage space for program downloads onto your local hard disk. For information about how to increase the available download space, see the online Help for your operating system.  
   
 4.  Contact the administrator for the local computer to confirm that your user account has sufficient permissions to write data to the storage area for local program downloads and that the local hard disk is functioning correctly.  
-  ../../accounts
+    
 ## Related articles 
 - [Create a team project](../../../../organizations/accounts/create-team-project.md)

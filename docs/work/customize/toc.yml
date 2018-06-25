@@ -7,9 +7,9 @@
 - name: Quickstarts
   items:
   - name: Define area paths
-    href: set-area-paths.md
+    href: ../../organizations/settings/set-area-paths.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Define iteration paths or sprints
-    href: set-iteration-paths-sprints.md
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Add a custom field
     href: ../../organizations/settings/work/add-custom-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Add a custom work item type
@@ -23,7 +23,7 @@
 - name: Concepts
   items:
   - name: "About areas & iterations"
-    href: about-areas-iterations.md
+    href: ../../organizations/settings/about-areas-iterations.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: Differences between process models
     href: import-process/differences.md 
   - name: "Workflow states & state categories"
@@ -40,7 +40,7 @@
     href: ../scale/manage-team-assets.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json   
     items:
     - name: Set team defaults
-      href: ../scale/set-team-defaults.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json  
+      href: ../../organizations/settings/set-team-defaults.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize cards on boards
       href: customize-cards.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json  
     - name: Reorder cards

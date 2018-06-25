@@ -25,6 +25,6 @@ This error occurs when a third-party plug-in does not operate in the manner the 
 1.  Contact the developer or vendor that provided the plug-in.  
   
 2.  If the problem persists, reinstall the third-party plug-in.  
-  ../../accounts
+    
 ## Related articles 
 - [Create a team project](../../../../organizations/accounts/create-team-project.md)

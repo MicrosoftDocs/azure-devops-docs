@@ -52,7 +52,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
 # [New web form](#tab/new-web-form)
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
 <img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
@@ -66,7 +66,7 @@ The new web form is only available from TFS 2017 and later versions.
 ::: moniker-end
 # [Old web form](#tab/old-web-form)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 The old web form is only availble for TFS 2017 and earlier versions. 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2017"
@@ -230,7 +230,7 @@ To learn more, see [Triage work items](../track/triage-work-items.md).
 ### Assign bugs to a sprint  
 Once bugs have been triaged, it's time to assign them to a sprint to get fixed. By addressing a set of bugs to get fixed every sprint, your team can keep the total number of bugs to a reasonable size.  
 
-When bugs appear on the product backlog, you can [assign bugs to sprints in the same way you do PBIs and user stories](../scrum/sprint-planning.md) during your sprint planning sessions. 
+When bugs appear on the product backlog, you can [assign bugs to sprints in the same way you do PBIs and user stories](../scrum/assign-work-sprint.md) during your sprint planning sessions. 
 
 When bugs are treated as tasks, they're often automatically linked to a PBI or user story. So, assigning their parent PBI or user story to a sprint will [assign the linked bugs to the same sprint as the parent PBI or user story](../scrum/task-board.md) during your sprint planning sessions. 
  
@@ -270,7 +270,7 @@ To verify a fix, a developer or tester should attempt to reproduce the bug and l
 
 When verifying a bug resolution, you may find that the bug was not completely fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="verify-bug">  </a>
 ###Verify a bug, re-run tests defined for web apps 
@@ -281,7 +281,7 @@ Choose the **Verify** option to re-run tests which identified the bug. (Requires
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
  
 To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).

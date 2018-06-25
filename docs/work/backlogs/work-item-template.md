@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+ms.date: 06/21/2018
 ---
 
 
@@ -26,50 +26,52 @@ With work item templates you can quickly create work items which have pre-popula
 > Work item templates are distinct from process templates. For information on process templates, see [Choose a process template](../work-items/guidance/choose-process.md) or these specific topics for the default process templates: [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md).  
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
-Note that within the browser context or web portal, work item templates are associated with a team. Only those templates defined for a team are accessible when working in a team context, either through a work item form or bulk update context menu.
-
-::: moniker-end
-
 <a id="capture"> </a> 
 ## Capture a work item as a template
 
 The steps to capture a work item differ based on the platform, version, and client you use.  
 
+
 # [Browser](#tab/browser)
 
 <a id="team-services-capture" /> 
+::: moniker range=">= tfs-2017"
+0. From your web browser, open a work item which you'll use as the basis for a template.  
+	::: moniker range=">= tfs-2017 <= tfs-2018"
+	Note that within the web portal or browser context, work item templates are associated with a team. Only those templates defined for a team are accessible when working in a team context, either through a work item form or bulk update context menu.
+	::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+0. Choose the ![](../_img/icons/actions-icon.png) actions icon to open the menu. Choose **Templates** and then **Capture**.   
 
-1. Open a work item with the fields defined that you want to capture, and click the ![Actions icon](../_img/icons/actions-icon.png) actions icon to open the menu. Choose Templates and then Capture.   
-   
-	<img src="_img/wi-templates-capture-bug-vsts.png" alt="Capture work item field definitions as a template" style="border: 1px solid #CCCCCC;" />
+	::: moniker range="vsts"
+	![Capture work item field definitions as a template, vsts](_img/templates/wi-templates-capture-bug-vsts-s136.png) 
+	::: moniker-end
+	::: moniker range=">= tfs-2017 <= tfs-2018"
+	![Capture work item field definitions as a template](_img/templates/wi-templates-capture-bug-tfs.png) 
+	::: moniker-end
+	::: moniker range="vsts"
+	Name the template, select the team for which you want to save it under, and optionally define or clear fields. Save the template when finished. 
 
-2. Name the template and optionally add and remove fields. Save the template when finished. 
+	> [!div class="mx-imgBorder"]
+	> ![Capture template dialog](_img/templates/capture-template-vsts-s136.png) 
+	::: moniker-end
+	::: moniker range=">= tfs-2017 <= tfs-2018"
+	Name the template and optionally define or clear fields. Save the template when finished. The template is saved under the team you selected in the first step. 
 
-	<img src="_img/wi-templates-capture-template-dialog.png" alt="Capture template dialog" style="border: 1px solid #CCCCCC;" /> 
+	![Capture template dialog](_img/wi-templates-capture-template-dialog.png) 
+	::: moniker-end
 
-3. Once you've saved the template, click Copy link to capture the URL for the template that you can use to add work items using the template.
+0. Once you've saved the template, choose **Copy link** to capture the URL for the template that you can use to add work items using the template.
 
-	The URL identifies the team and template ID, for example: 
-
-	```
-	http://fabrikamfiber:8080/tfs/DefaultCollection/Fabrikam%20Fiber/Web/_workItems?_a=new&witd=Bug&templateId=15ffa521-7a1d-486e-9f71-a58c0b338d87
-	```
-
-4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
+0. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
 
 	You can save the URL as a text file or add the URL to a [dashboard](#markdown-widget) or web page as a hyperlink. 
- 
 ::: moniker-end
-
 
 <a id="tfs-portal-capture" />
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-
-If you connect to an on-premises TFS and primarily create work items working in the web portal, you can create a hyperlink that captures the default values you specify for a template. Click the hyperlink, and it opens the template in the web portal.  
+If you connect to an on-premises TFS and primarily create work items working in the web portal, you can create a hyperlink that captures the default values you specify for a template. Choose the hyperlink, and it opens the template in the web portal. 
 
 1. From the web portal Queries page, open a new work item. 
 
@@ -133,21 +135,20 @@ The main method for adding a work item using a template is to open the template 
 
 <a id="team-services-copy-link" /> 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
-1. Click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and choose Copy link.  
+0. Choose the ![](../../_img/icons/admin-gear-icon.png) gear icon to open the settings or admin context for a team.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open team admin context](../../_img/open-admin-context-standard.png)
+
+0. Choose the **Work>Templates** tab. Then, choose the ![Actions icon](../_img/icons/actions-icon.png) actions icon for the template you want to copy and select **Copy link**.  
    
 	<img src="_img/wi-templates-copy-url-vsts.png" alt="Copy link of a template" style="border: 1px solid #CCCCCC;" />
 
-2. Copy the link to a shared network or send to your team via email. Also, consider [adding a link the team dashboard](#markdown-widget).  
+0. Copy the link to a shared network or send to your team via email. Also, consider [adding a link the team dashboard](#markdown-widget).  
 
-	The link is a URL to the web portal, for example:</p> 
-
-	```
-	http://fabrikamfiber:8080/tfs/DefaultCollection/Fabrikam%20Fiber/Web/_workItems?_a=new&witd=Bug&templateId=15ffa521-7a1d-486e-9f71-a58c0b338d87
-	```
-
-3. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.	
+0. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.	
 
 	You can save the URL as a text file or add the URL to a web page as a hyperlink. 
 
@@ -175,7 +176,7 @@ See [Capture a work item as a template for TFS web portal](#capture).
 ---
  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="markdown-widget"> </a>
 ### Add a template link to the dashboard   
@@ -190,11 +191,11 @@ You can add links to a markdown widget that appear on your team dashboard in the
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 For example, the following widget contains links to three templates.  
 
-<img src="_img/wi-templates-markdown-widget-with-template-links.png" alt="Markdown widget with links to templates" style="border: 1px solid #CCCCCC;" /> 
+![Markdown widget with links to templates](_img/wi-templates-markdown-widget-with-template-links.png) 
 
 To learn more about the markdown widget see [Add Markdown to a dashboard, Markdown widgets](../../report/add-markdown-to-dashboard.md).  
 
@@ -208,13 +209,18 @@ You can apply a template to a single work item or perform a bulk update of sever
 <a id="team-services-apply" /> 
 # [Browser](#tab/browser)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 #### Apply a template within a work item form 
 
-1. Open the work item that you want to update using the fields defined within a template, and click the ![actions icon](../_img/icons/actions-icon.png) actions icon to access your menu. Click Templates and then click the name of a pre-defined template.      
+1. Open the work item that you want to update using the fields defined within a template, choose the ![](../_img/icons/actions-icon.png) actions icon to open the menu, select **Templates** and then select the name of a pre-defined template.  
 
+	::: moniker range="vsts"
+	> [!div class="mx-imgBorder"]
+	> ![Apply a template to an existing work item within the form](_img/templates/apply-template-vsts-s136.png) 
+	::: moniker-end
+	::: moniker range=">= tfs-2017 <= tfs-2018"
 	<img src="_img/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
-
+	::: moniker-end
 	> [!TIP]  
 	> Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. Click **Manage&#133;** to open the team settings Templates admin page for your team to review or add templates.  
 
@@ -222,18 +228,26 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 #### Apply a template to several work items (bulk update) 
 
 1. To bulk update several work items, first select them from the backlog or a query results list, and then open the actions menu for one of them. All work items you select must be of the same work item type. For example, all user stories or all bugs. 
 
 2. Choose the template to apply. 
-
-	<img src="_img/wi-templates-bulk-update-list-vsts.png" alt="Bulk update several work items" style="border: 1px solid #CCCCCC;" />
-
+	::: moniker range="vsts"
+	> [!div class="mx-imgBorder"]  
+	> ![Bulk update several work items](_img/templates/bulk-apply-template-vsts-s136.png)
+	::: moniker-end
+	::: moniker range=">= tfs-2017 <= tfs-2018"
+	![Bulk update several work items](_img/wi-templates-bulk-update-list-vsts.png)
+	::: moniker-end
 3. Field changes are automatically applied and work items saved. To learn more about bulk updates, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
   
+::: moniker-end 
+
+::: moniker range=">= tfs-2013  >= tfs-2015"
+You can't apply a template to existing work items from the web browser. 
 ::: moniker-end 
 
 # [Visual Studio](#tab/visual-studio)
@@ -243,6 +257,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 #### Apply a template to one or more work items  
 
 1. Open or run a query that lists the work item(s) whose fields you want to capture.  
+
 2. Right-click the work items&mdash;which must be of the same type&mdash;  and click Apply Template from the context menu.  
 
 	<img src="_img/wi-templates-apply-template-options-te.png" alt="Apply template to selected work item from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
@@ -262,8 +277,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 
 # [Browser](#tab/browser)  
 
-
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 You can view the list of templates defined for each work item type, and also add, edit, copy, delete, and copy the link of a template. All templates are defined and managed for a team. 
  
@@ -277,9 +291,9 @@ You manage templates from the team admin context. All templates are defined for 
 
 	<img src="_img/wit-templates-open-team-admin-context.png" alt="Open team admin context" style="border: 1px solid #CCCCCC;" />  
 
-	If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can change team templates.  
+	If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can change work item templates.  
 
-2. Click Templates under the Work hub.  
+2. Choose **Templates** under the **Work** hub.  
 
 	<img src="_img/wit-templates-work-templates-page.png" alt="Open Work - Templates page for team" style="border: 1px solid #CCCCCC;" />  
 
@@ -310,14 +324,12 @@ From the work item type page, click ![actions icon](../_img/icons/actions-icon.p
 <img src="_img/wi-templates-template-action-menu.png" alt="Open template action menu" style="border: 1px solid #CCCCCC;" />  
 
 ### Copy or duplicate a template  
- 
 
 1. To duplicate an existing template, click ![actions icon](../_img/icons/actions-icon.png) the actions icon for an existing template and click Create copy. 
 
 	<img src="_img/wi-templates-copy-template.png" alt="Copy an existing template" style="border: 1px solid #CCCCCC;" />  
 
 2. Name the template and optionally add and remove fields. Save the template when finished. 
-
 
 ::: moniker-end
 
@@ -372,7 +384,7 @@ To change the directory where templates are stored, click the Configure link, or
 
 --- 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Add or remove tags from templates 
 
@@ -388,7 +400,6 @@ You can add tags to a template and they'll be applied to the work item when you 
 If you don't specify tags to remove, then all tags present in a work item will remain defined even when you apply a work item template to an existing work item. 
  
 ::: moniker-end
-
 
 ::: moniker range="vsts"
 
@@ -420,52 +431,21 @@ Another option is to use [Excel](../backlogs/office/bulk-add-modify-work-items-e
 
  
 <!---
-Based on the platform or version you use, you can perform the following tasks. 
-
-<table width="85%">
-<tr>
-<th width="30%">Task </th>
-<th width="15%" align="center" valign="bottom">VSTS</th>
-<th width="15%" align="center" valign="bottom">TFS 2013, TFS 2015<br/>(web portal)</th>
-<th width="15%" align="center" valign="bottom">TFS 2017<br/>(web portal)</th>
-<th width="20%" align="center" valign="bottom">VS 2013, VS 2015 <br/>(with power tools <sup>1</sup>) </th>
-</tr>
-
-<tbody align="center" valign="top" style="font-size: 95%">
-
-<tr>
-<td align="left">[Capture a work item as a template](#capture)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
 
 
-<tr>
-<td align="left">[Add a work item using a template](#add-wi)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
+The URL identifies the template based on an ID. 
 
-<tr>
-<td align="left">[Apply templates to work items](#apply)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td> </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
+The URL identifies the team and template ID, for example: 
 
-<tr>
-<td align="left">[Manage work item templates](#manage)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td> </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-</tbody>
-</table>
+```
+http://fabrikamfiber:8080/tfs/DefaultCollection/Fabrikam%20Fiber/Web/_workItems?_a=new&witd=Bug&templateId=15ffa521-7a1d-486e-9f71-a58c0b338d87
+```
+
+The link is a URL to the web portal, for example:</p> 
+
+```
+http://fabrikamfiber:8080/tfs/DefaultCollection/Fabrikam%20Fiber/Web/_workItems?_a=new&witd=Bug&templateId=15ffa521-7a1d-486e-9f71-a58c0b338d87
+```
 
 -->
+

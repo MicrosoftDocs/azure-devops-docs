@@ -24,6 +24,6 @@ This error occurs when the permissions granted to your user account on the SQL S
   
 You must also have the **Full Control** permission set on the server that hosts SharePoint Products. Your Team Foundation Server administrator may also be able to grant you the required permissions.  
   
-## Related articles../../accounts
+## Related articles  
 - [Create a team project](../../../../organizations/accounts/create-team-project.md)
 - [Grant permissions to view or create reports](../../../../report/admin/grant-permissions-to-reports.md)

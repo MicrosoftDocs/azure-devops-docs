@@ -36,7 +36,7 @@ Each work item supports tracking data contained in work item fields. Also, it ca
 
 Each form contains a number of controls as shown below and described in [Work item form controls](work-item-form-controls.md). 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
 ::: moniker-end
 

@@ -22,8 +22,8 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 ::: moniker range="vsts"
 ## 5-Minute Quickstarts  
 
-- [Define area paths](set-area-paths.md)
-- [Define iteration paths or sprints](set-iteration-paths-sprints.md) 
+- [Define area paths](../../organizations/settings/set-area-paths.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+- [Define iteration paths or sprints](../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) 
 - [Add a custom field](../../organizations/settings/work/add-custom-field.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)   
 - [Add a custom work item type](../../organizations/settings/work/add-custom-wit.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)   
 
@@ -32,8 +32,8 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ## 5-Minute Quickstarts  
 
-- [Define area paths](set-area-paths.md)
-- [Define iteration paths or sprints](set-iteration-paths-sprints.md) 
+- [Define area paths](../../organizations/settings/set-area-paths.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+- [Define iteration paths or sprints](../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) 
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 
 ## Concepts
 
-- [About areas and iterations](about-areas-iterations.md)  
+- [About areas and iterations](../../organizations/settings/about-areas-iterations.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
 - [Differences between process models](import-process/differences.md) 
 - [Workflow states & state categories](workflow-and-state-categories.md)
 - [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)   
@@ -88,6 +88,5 @@ Use the guidance provided in the following topics based on the process model or 
 
 - [Work items](../work-items/index.md)
 - [Scale & configure teams](../../organizations/settings/index.md)
-- [Account Management (VSTS)](../../organizations/accounts/index.md)
 - [Marketplace extensions](../../marketplace/install-vsts-extension.md)
 - [Extensibility and REST APIs](../../extend/overview.md) 
