@@ -1,5 +1,5 @@
 ---
-title: FAQs for continuous testing in VSTS and TFS   
+title: FAQs for continuous testing in VSTS and TFS - test automation tools  
 description: FAQs for continuous testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS).
 ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# FAQs for continuous testing
+# FAQs for continuous testing and test automation
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
