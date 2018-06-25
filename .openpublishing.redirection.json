@@ -997,7 +997,7 @@
     },
     {
       "source_path": "docs/build-release/azure/deploy-aspnet5.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": false
     },
     {
@@ -1372,12 +1372,12 @@
     },
     {
       "source_path": "docs/build-release/aspnet/aspnet4/quick-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/get-started-azure-devops-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/aspnet/core/quick-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/get-started-azure-devops-project",
       "redirect_document_id": false
     },
     {
@@ -8017,7 +8017,7 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": true
     },
     {
@@ -8107,8 +8107,18 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/howto-webdeploy-webapps.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/howto-webdeploy-webapps.md",
+      "redirect_url": "/vsts/pipelines",
       "redirect_document_id": true
+    },
+          {
+      "source_path": "vsts/build-release/apps/cd/aspnet-core-to-azure-webapp.md",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "vsts/pipelines/apps/cd/aspnet-core-to-azure-webapp.md",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/provision-vm-in-vmware.md",
