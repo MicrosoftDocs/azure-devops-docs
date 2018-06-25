@@ -1,6 +1,6 @@
 ---
 title: Artifacts in Release Management
-description: Understand build artifacts in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand build artifacts in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
-A release is a collection of artifacts. An **artifact** is a deployable
+A release is a collection of artifacts in your DevOps CI/CD processes. An **artifact** is a deployable
 component of your application. Release Management can
 deploy artifacts that are produced by a
 [wide range of artifact sources](#sources),

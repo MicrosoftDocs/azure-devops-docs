@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
-As you compose the tasks for deploying your application into each environment, variables will help you to:
+As you compose the tasks for deploying your application into each environment in your DevOps CI/CD processes, variables will help you to:
 
 * Define a more generic deployment process once, and then
 customize it easily for each environment. For example, a variable

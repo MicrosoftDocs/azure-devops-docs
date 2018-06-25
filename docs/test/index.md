@@ -1,6 +1,6 @@
 ---
-title: Exploratory and Manual Testing
-description: Manual and exploratory testing index
+title: Exploratory and Manual Testing -  TestTools
+description: Test tools - Manual and exploratory testing index
 ms.assetid: EC51D26A-F000-4C37-8498-99C96AC7B751
 ms.prod: devops
 ms.technology: devops-test
