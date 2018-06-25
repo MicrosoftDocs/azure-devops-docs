@@ -124,4 +124,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 >
 > We recommend that you [migrate your XAML builds to new builds](../build/migrate-from-xaml-builds.md).
 
+## Videos 
+> [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]
+
 <!-- ENDSECTION -->

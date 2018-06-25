@@ -126,3 +126,7 @@ To learn more about modifying the build and release definitions to meet the need
 
 > [!div class="nextstepaction"]
 > [Customize CD process](../../../release/define-multistage-release-process.md)
+
+## Videos
+
+> [!VIDEO https://www.youtube.com/embed/itwqMf9aR0w]
