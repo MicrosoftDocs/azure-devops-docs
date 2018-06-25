@@ -49,6 +49,6 @@ This error occurs when the New Team Project Wizard starts and then checks to see
     7.  Review the log entries to find network or file related issues.  
   
 3.  If the problem persists, contact your Team Foundation Server administrator.  
-  ../../accounts
+    
 ## Related articles
 - [Create a team project](../../../../organizations/accounts/create-team-project.md)

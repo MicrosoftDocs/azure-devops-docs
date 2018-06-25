@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
-    - name: Kanban
+    - name: Boards (Kanban)
       tocHref: /vsts/
       topicHref: /vsts/work/kanban/index

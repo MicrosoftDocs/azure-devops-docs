@@ -37,7 +37,7 @@ For a list of all link types and supported link relationships, see [Link work it
 
 <a id="link"> </a>  
 ## Link several items to an existing or new work item 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
@@ -92,7 +92,7 @@ For example, here we use the Related link type to link three items to the bug wi
 	
 To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can click the &hellip; context menu to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 To view the work items selected for linking, you can click the ![info icon](../_img/icons/info-icon.png). 	 
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](_img/add-link/info-linked-items.png)   
@@ -121,7 +121,7 @@ You'll need to bulk save the work items you've modified.
 Here, we have selected to add a link to the selected work items.  
 
 0. Specify the link type, work item type, and title of the new work item. Click OK.
-	::: moniker range="vsts || >= tfs-2018"
+	::: moniker range=">= tfs-2018"
 	<img src="_img/add-link-related-new-item-issue.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <=tfs-2017"
@@ -129,13 +129,13 @@ Here, we have selected to add a link to the selected work items.
 	::: moniker-end
 
 0. A work item of the type selected opens. Enter additional information and save the work item.
-	::: moniker range="vsts || >= tfs-2017 <=tfs-2018"
+	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Issue - work item](_img/add-link/new-issue-linked-item.png)   
 	::: moniker-end
 0. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Link several work items to a new git branch 
 
@@ -149,7 +149,7 @@ You can add a new git branch and link them to existing work items at the same ti
 From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch. To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 > [!div class="mx-imgBorder"]  
 > ![Link multiple backlog items to a git branch](_img/add-link/link-git-branch.png)   
 
@@ -205,7 +205,7 @@ Additional features you can use to quickly link or change links that use the par
 
 -   To quickly link backlog items to portfolio backlog items with parent-child links, [use the mapping pane to organize your backlog](organize-backlog.md#mapping). Or, you can choose to Show Parents and [drag-and-drop items within the tree hierarchy](organize-backlog.md#reparent). 
 
--   To create and link tasks to backlog items, [use the sprint backlog page](../scrum/sprint-planning.md). 
+-   To create and link tasks to backlog items, [use the sprint backlog page](../scrum/assign-work-sprint.md). 
 
 -   To indent (![Indent](../track/_img/IC588323.png)), outdent (![Outdent](../track/_img/IC588324.png)), and change the tree hierarchy, use a tree query in Visual Studio.
 

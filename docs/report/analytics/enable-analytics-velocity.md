@@ -57,7 +57,7 @@ To add a widget to a dashboard, you connect to your team project using a [suppor
 Congratulations! A new Velocity widget has been added to your dashboard. 
 
 > [!TIP]  
-> You'll gain the greatest utility from the Velocity widget by [assigning work to sprints and completing work defined in those sprints](../../work/scrum/sprint-planning.md). To quickly define sprints, see [Schedule sprints](../../work/scrum/define-sprints.md). 
+> You'll gain the greatest utility from the Velocity widget by [assigning work to sprints and completing work defined in those sprints](../../work/scrum/assign-work-sprint.md). To quickly define sprints, see [Schedule sprints](../../work/scrum/define-sprints.md). 
  
 
 ##  Learn about your team��s velocity using the Velocity widget 

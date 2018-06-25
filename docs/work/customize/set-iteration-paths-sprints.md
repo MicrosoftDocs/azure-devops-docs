@@ -100,7 +100,7 @@ From the **Iterations** page, you can add and select the iterations that will be
 
 	<img src="_img/modify-areas-its-iterations-scheduled-ts.png" alt="Work, Iterations page, scheduled set of sprints, VSTS platform" style="border: 2px solid #C3C3C3;" />
 
-	Your next step is to [choose the sprints each team will use](../scale/set-team-defaults.md#activate-team-services). 
+	Your next step is to [choose the sprints each team will use](../../organizations/settings/set-team-defaults.md#activate-team-services). 
 ::: moniker-end
 
 
@@ -127,7 +127,7 @@ From the **Iterations** page, you can add and select the iterations that will be
 
 	<img src="../scrum/_img/create-new-child-under-sprint.png" alt="Iterations, defaults defined for Agile" style="border: 2px solid #C3C3C3;" />
 
-	Your next step is to [select the sprints each team will use](../scale/set-team-defaults.md#activate-sprints-tfs). 
+	Your next step is to [select the sprints each team will use](../../organizations/settings/set-team-defaults.md#activate-sprints-tfs). 
  
 ::: moniker-end
 
@@ -153,7 +153,7 @@ You can quickly generate [queries](../track/using-queries.md) to view the progre
 ## Related articles 
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
-*	[Set team defaults](../scale/set-team-defaults.md)  
+*	[Set team defaults](../../organizations/settings/set-team-defaults.md)  
 *	[Agile tools and sprint definitions ](../scrum/define-sprints.md)  
 *	[Query by date or current iteration](../track/query-by-date-or-current-iteration.md)  
 

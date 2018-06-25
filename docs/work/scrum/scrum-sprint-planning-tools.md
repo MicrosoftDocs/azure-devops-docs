@@ -15,13 +15,13 @@ ms.date: 08/19/2017
 
 # Scrum and sprint planning tools
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-<!--- ADD WIDGET INFO AS WELL --> 
+
 
 <a id="sprint-tools">   </a>
 
-Once you've [defined and selected the sprints for your team](../scale/set-team-defaults.md), you can start using the following tools to plan your sprint.  
+Once you've [defined and selected the sprints for your team](../../organizations/settings/set-team-defaults.md), you can start using the following tools to plan your sprint.  
 
 
 ## Track team capacity
@@ -36,7 +36,7 @@ At the start of each sprint, you'll want to plan the work that your team can com
 </p>
 <p>By setting team capacity, the team knows exactly the total number of work hours or days the team has for each sprint. With this tool, you set individual team member capacity as well as days off. And, conveniently, you can set holidays or shared days off taken by the entire team. </p>
 <p>Setting capacity for each team member working during a sprint causes the capacity bar for that individual to appear. </p>
-<p>You [set recurring days off](../scale/capacity-planning.md#team_settings), such as weekends, through team settings.</p>
+<p>You [set recurring days off](../scrum/set-capacity.md#team_settings), such as weekends, through team settings.</p>
 </td>
 <td>
 ![Team capacity planning tool](_img/team-capacity-planning-tool.png) 
@@ -142,7 +142,7 @@ Each sprint that you select for your team provides access to a sprint backlog, t
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint.  
 
-<img src="_img/define-sprints-selected-team-iterations-vsts.png" alt="VSTS and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
+<img src="_img/define-sprints/selected-team-iterations-vsts.png" alt="VSTS and TFS 2017, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
 **TFS 2015**
 <a id="tfs2015-sprints" />
@@ -152,10 +152,11 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 <img src="_img/selected-iterations-generate-sprint-backlogs.png" alt="TFS 2015 and TFS 2013, Selected iterations generate sprint backlogs" style="border: 2px solid #C3C3C3;" />
 
 ## Related articles 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../scale/set-team-defaults.md) .  
-/azure/devops/agile/what-is-scrum
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../../organizations/settings/set-team-defaults.md) .  
+
 - [What is Scrum?](/azure/devops/agile/what-is-scrum)
 - [Add teams and team members](../scale/multiple-teams.md)  
-- [Define iterations for a project](../customize/set-iteration-paths-sprints.md) 
+- [Define iterations for a project](../../organizations/settings/set-iteration-paths-sprints.md) 
 - [Configure team settings](../scale/manage-team-assets.md)  
 
+<!--- ADD WIDGET INFO AS WELL --> 

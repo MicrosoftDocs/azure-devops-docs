@@ -648,7 +648,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Plan sprints</b></p>
-<p>Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../work/scrum/sprint-planning.md).</p>
+<p>Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../work/scrum/assign-work-sprint.md).</p>
 
 
 <p><b>Track work on your task board</b></p>
@@ -676,7 +676,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage resources</b></p>
-<p>Use [capacity planning tools](../work/scale/capacity-planning.md) to track individual, team, and activity over and under capacity for a sprint.</p>
+<p>Use [capacity planning tools](../work/scrum/set-capacity.md) to track individual, team, and activity over and under capacity for a sprint.</p>
 ![Capacity bars](../work/scrum/_img/ALM_DS_CapacityBars_S.png)  
 
 
@@ -779,7 +779,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Share queries and sprint plans</b></p>
-<p>Email a query or [sprint plan](../work/scrum/sprint-planning.md).  </p>
+<p>Email a query or [sprint plan](../work/scrum/assign-work-sprint.md).  </p>
 ![Share queries, backlogs, and sprint plans with the email control](_img/features/alm-feature-email-control.png)  
 <br/>
 <p><b>Quick alerts to team members  </b></p>
@@ -2124,7 +2124,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
 
 <p><b>Work</b></p>
-<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
+<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/assign-work-sprint.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
 
 <p><b>Build</b></p>
 <p>[Define and monitor builds](../pipelines/overview.md) and set up continuous builds to improve the quality of your app. </p>
@@ -2512,7 +2512,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Scrum process tools</b></p>
-<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](../work/scrum/sprint-planning.md), [capacity planning](../work/scale/capacity-planning.md), [task boards](../work/scrum/task-board.md), and [burndown charts](../work/scrum/sprint-burndown.md).  </p>
+<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](../work/scrum/assign-work-sprint.md), [capacity planning](../work/scrum/set-capacity.md), [task boards](../work/scrum/task-board.md), and [burndown charts](../work/scrum/sprint-burndown.md).  </p>
 
 
 <p><b>Manage processes (VSTS) </b></p>

@@ -155,7 +155,7 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 - **Group or categorize work:**  There are several ways to group work that you want to track. Backlogs filter work items based on team area assignments. And, portfolio backlogs allow you to [group backlog items under Features and Epics](../backlogs/organize-backlog.md). 
 
-	However, if you want to track and report on work items based on other groupings, you can. You can [add tags to work items and then filter backlogs or queries based on tags](../track/add-tags-to-work-items.md). Also, you can [add sub-area paths](../customize/set-area-paths.md) to represent more granular feature areas.  
+	However, if you want to track and report on work items based on other groupings, you can. You can [add tags to work items and then filter backlogs or queries based on tags](../track/add-tags-to-work-items.md). Also, you can [add sub-area paths](../../organizations/settings/set-area-paths.md) to represent more granular feature areas.  
 
 - **Add folders and use team favorites:**  As your teams grow, you'll see a growing list of work item queries, build definitions, and source code folders. By using folders, sub-folders, and team favorites, you can manage many of these lists more easily. You can add team favorites for shared queries, source code, and build definitions.
 

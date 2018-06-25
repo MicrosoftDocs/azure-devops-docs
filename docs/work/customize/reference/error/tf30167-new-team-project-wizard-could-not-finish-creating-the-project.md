@@ -22,6 +22,6 @@ The New Team Project Wizard encountered an unexpected error while creating the t
 1.  Restart Team Explorer and run the New Team Project Wizard again.  
   
 2.  If the problem persists, contact your Team Foundation Server administrator.  
-  ../../accounts
+    
 ## Related articles
 - [Create a team project](../../../../organizations/accounts/create-team-project.md)

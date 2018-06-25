@@ -25,7 +25,7 @@ Most Agile tools are [scoped to a team](../../organizations/settings/about-teams
 > [!div class="mx-tdBreakAll"]  
 > |Backlogs  |Task boards  |Kanban boards  |  Other  | 
 > |-------------|----------|---------|---------|   
-> |- [Product backlog](create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](define-features-epics.md)<br/>- [Sprint backlogs](../scrum/sprint-planning.md)|- [Task boards](../scrum/task-board.md)<br/>- [Sprint burndown](../scrum/sprint-burndown.md) <br/>- [Capacity planning](../scale/capacity-planning.md) |- [Kanban board](../kanban/kanban-basics.md)<br/>- [Task checklists](../kanban/add-task-checklists.md)<br/>- [Epics & Features boards](../kanban/kanban-epics-features-stories.md) |- [Delivery plans](../scale/review-team-plans.md)<br/>- [Forecast](../scrum/forecast.md)<br/>- [Velocity](../../report/dashboards/velocity-chart-data-store.md)<br/>|    
+> |- [Product backlog](create-your-backlog.md)<br/>- [Portfolio (Epics, Features) backlogs](define-features-epics.md)<br/>- [Sprint backlogs](../scrum/assign-work-sprint.md)|- [Task boards](../scrum/task-board.md)<br/>- [Sprint burndown](../scrum/sprint-burndown.md) <br/>- [Capacity planning](../scrum/set-capacity.md) |- [Kanban board](../kanban/kanban-basics.md)<br/>- [Task checklists](../kanban/add-task-checklists.md)<br/>- [Epics & Features boards](../kanban/kanban-epics-features-stories.md) |- [Delivery plans](../scale/review-team-plans.md)<br/>- [Forecast](../scrum/forecast.md)<br/>- [Velocity](../../report/dashboards/velocity-chart-data-store.md)<br/>|    
 
 > [!NOTE]
 >To understand the differences between backlogs, boards and Delivery plans, see [Backlogs, boards, and plans](backlogs-boards-plans.md). 
@@ -50,7 +50,7 @@ You build your project plan by creating a backlog of work items that represent t
 ## Scrum method and tools 
 The Scrum method uses sprints to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team.  If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/agile/what-is-scrum). 
 
-[![Schedule sprints](_img/overview/gs-planning-define-sprints.png)](../scrum/define-sprints.md)[![Plan a sprint](_img/overview/gs-planning-plan-sprint.png)](../scrum/sprint-planning.md)[![Monitor sprint progress](_img/overview/gs-planning-monitor-sprint.png)](../scrum/task-board.md)[![Forecast](_img/overview/gs-planning-forecast.png)](../scrum/forecast.md)
+[![Schedule sprints](_img/overview/gs-planning-define-sprints.png)](../scrum/define-sprints.md)[![Plan a sprint](_img/overview/gs-planning-plan-sprint.png)](../scrum/assign-work-sprint.md)[![Monitor sprint progress](_img/overview/gs-planning-monitor-sprint.png)](../scrum/task-board.md)[![Forecast](_img/overview/gs-planning-forecast.png)](../scrum/forecast.md)
 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
 

@@ -1,4 +1,4 @@
-- name: Kanban 
+- name: Boards (Kanban) 
   href: index.md
 - name: Overview
   items:
@@ -8,11 +8,11 @@
     href: ../backlogs/backlogs-boards-plans.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Quickstarts
   items:
-  - name: Kanban quickstart
+  - name: Kanban board quickstart
     href: kanban-quickstart.md
 - name: Tutorials
   items:
-  - name: Kanban basics
+  - name: Kanban board basics
     href: kanban-basics.md
   - name: Add task checklists
     href: add-task-checklists.md
@@ -53,13 +53,13 @@
     href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
 - name: Samples
   items:
-  - name: Kanban query examples 
+  - name: Boards (Kanban) query examples 
     href: ../track/query-by-workflow-changes.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
 - name: Reference
   items:
-  - name: Kanban board controls
+  - name: Boards (Kanban) board controls
     href: kanban-board-controls.md
-  - name: Kanban board keyboard shortcuts
+  - name: Boards (Kanban) board keyboard shortcuts
     href: kanban-board-keyboard-shortcuts.md
   - name: Work item field index
     href: ../work-items/guidance/work-item-field.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
@@ -71,7 +71,7 @@
   items:
   - name: Backlogs
     href: ../backlogs/index.md
-  - name: Scrum
+  - name: Sprints (Scrum)  
     href: ../scrum/index.md
   - name: Queries
     href: ../track/index.md

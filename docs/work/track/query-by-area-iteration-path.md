@@ -17,7 +17,7 @@ ms.date: 04/27/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a team project&mdash;[area paths](../customize/set-area-paths.md) and [iteration paths](../customize/set-iteration-paths-sprints.md) &mdash;and then select the ones you want to [associate with a team](../scale/set-team-defaults.md). 
+The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a team project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) &mdash;and then select the ones you want to [associate with a team](../../organizations/settings/set-team-defaults.md). 
 
 To better understand how to work with area and iteration paths, see [About area and iteration paths (aka sprints)](../customize/about-areas-iterations.md).
 
@@ -117,9 +117,9 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 ## Related articles 
 
 *	[Add another team](../scale/multiple-teams.md)  
-*	[Set team defaults](../scale/set-team-defaults.md)  
-*	[Customize iteration paths](../customize/set-iteration-paths-sprints.md)  
-*	[Customize area paths](../customize/set-area-paths.md)  
+*	[Set team defaults](../../organizations/settings/set-team-defaults.md)  
+*	[Customize iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)  
+*	[Customize area paths](../../organizations/settings/set-area-paths.md)  
 *	[Manage team assets](../scale/manage-team-assets.md)  
 *	[Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
 

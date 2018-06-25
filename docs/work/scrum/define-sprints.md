@@ -1,5 +1,5 @@
 ---
-title: Schedule sprints
+title: Schedule sprints to support working in Scrum
 titleSuffix: VSTS & TFS  
 description: Add and set dates for sprints, releases, or iterations to implement Scrum in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
@@ -8,74 +8,204 @@ ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
-ms.date: 02/27/2018
+monikerRange: '>= tfs-2013'
+ms.date: 06/21/2018
 ---
 
 
 # Schedule sprints  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. 
 You define sprints to correspond to the cadence your team uses. 
 
-Many teams choose a two or three week cadence. However, you can specify shorter or longer sprint cycles. Also, you can create a release schedule which encompasses several sprints.     
+Many teams choose a two or three week cadence. However, you can specify shorter or longer sprint cycles. Also, you can create a release schedule which encompasses several sprints.    
 
 <a id="quick-start-schedule">   </a>
 ## Quick start guide to scheduling sprints
 
-To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your team project was created. Note, you must be a [member of the Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the team project, you're a member.) 
+To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your project was created. Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the project, you're a member.) 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-1. Choose the sprint listed under Current and then click **Set dates**.  
+# [Vertical navigation](#tab/vertical)
 
-	<img src="_img/define-sprints-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
+::: moniker range="vsts"
 
-	> [!NOTE]   
-	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Select team sprints](../scale/set-team-defaults.md). To switch team context, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md). 
+0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Work>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
-2. Click the calendar icon to choose the date for the start and then the end of the sprint. 
+	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
-	<img src="_img/define-sprints-edit-iteration-set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
+0. To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
-That's it! You can now start [planning your first sprint](sprint-planning.md). 
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+
+0. Choose **Set sprint dates**.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Work>Sprints hub, set dates](_img/define-sprints/set-sprint-dates-scrum-agile.png)
+
+2. Choose the calendar icon to select the start date, and then the end date of the sprint. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Edit iteration dialog, Set dates](_img/define-sprints/edit-iteration-set-sprint-dates.png) 
+
+3. Choose **Save and close**. You'll see the date listed. 
+
+	> [!div class="mx-imgBorder"]
+	> ![New Navigation, Work>Sprints hub, Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+
+::: moniker-end
 
 
-Of course, if you have several teams, more complex release and sprint cadences to schedule, or want to create child , or creating child iterations, then you'll need to read further. You define these through the admin context for the team project.  
+# [Horizontal navigation](#tab/horizontal)
 
-> [!NOTE]    
->**Terminology note:** Your set of Agile tools uses the Iteration Path field to track sprints and releases. When you define sprints, you define the pick list of values available for the [Iteration Path](../customize/set-area-paths.md) field. You use iterations to group work into sprints, milestones, or releases in which they'll be worked on or shipped. 
+0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
-<a id="drag-drop-to-sprint">   </a>
-## Assign work to a sprint using drag-and-drop
+	> [!div class="mx-imgBorder"]
+	> ![Open the Work>Backlogs page, standard hubs](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
-You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
+	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
-![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)--
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+
+	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
+
+0. Choose the sprint you want to plan. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)
+
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).  
+
+0. Choose the sprint listed under **Current** and then choose **Set dates**.  
+
+	<img src="_img/define-sprints/set-sprint-dates.png" alt="Sprint 1 backlog, Set dates" style="border: 1px solid #C3C3C3;" />  
+
+	> [!NOTE]
+	> If you don't see any sprints listed or the **Set dates** link, then no sprints have been selected for the team context you've selected. To select sprints for the team context, see [Select team sprints](../../organizations/settings/set-team-defaults.md). To switch team context, see [Switch project or team focus](../../organizations/settings/switch-team-context.md). 
+
+2. Choose the calendar icon to select the start date, and then the end date of the sprint. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Edit iteration dialog, Set dates](_img/define-sprints/edit-iteration-set-sprint-dates.png) 
+
+---
+
+That's it! You can now start [planning your first sprint](assign-work-sprint.md). 
+
+Of course, if you have several teams, more complex release and sprint cadences to schedule, or want to create child iterations, then you'll need to read further. You define these through the settings context for the project.  
+
+> [!NOTE]
+> **Terminology note:** Your set of Agile tools uses the Iteration Path field to track sprints and releases. When you define sprints, you define the pick list of values available for the [Iteration Path](../../organizations/settings/set-area-paths.md) field. You use iterations to group work into sprints, milestones, or releases in which they'll be worked on or shipped. 
+
 
 <a id="schedule">   </a>
 ## Add and schedule new sprints for several teams and release cadences 
  
 > [!NOTE]    
->Your sprint backlog and task board are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and Kanban boards. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).  
+> Your sprint backlog and taskboard are designed to support your Scrum processes. In addition, you have access to product and portfolio backlogs and Kanban boards. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md).  
 
-Your team project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, you'll want to assign start and end dates for the sprints your team will use.   
+Your project comes with several sprints predefined. However, they aren't associated with any dates. For Scrum and sprint planning, you'll want to assign start and end dates for the sprints your team will use.   
 
-Defining additional sprints is a two-step process. You first define the sprints for your team project&mdash;[Define project iterations](../customize/set-area-paths.md)&mdash;and then you select the sprints that each team will use&mdash;[Select team sprints](../scale/set-team-defaults.md). In this way, the system supports teams that work on different sprint cadences.  
+Defining additional sprints is a two-step process. You first define the sprints for your project&mdash;[Define project iterations](../../organizations/settings/set-area-paths.md)&mdash;and then you select the sprints that each team will use&mdash;[Select team sprints](../../organizations/settings/set-team-defaults.md). In this way, the system supports teams that work on different sprint cadences.  
 
-[![Define team project sprints](_img/define-sprints-project-level.png)](../customize/set-area-paths.md)[![Select team sprints](_img/define-sprints-team-level.png)](../scale/set-team-defaults.md)
+[![Define project sprints](_img/define-sprints-project-level.png)](../../organizations/settings/set-area-paths.md)[![Select team sprints](_img/define-sprints-team-level.png)](../../organizations/settings/set-team-defaults.md)
 
 Each sprint that you select for your team provides access to a [sprint backlog, task board, and other sprint planning tools](scrum-sprint-planning-tools.md) for planning and tracking work. 
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint. 
 
-![VSTS, sprints](_img/define-sprints-selected-team-iterations-vsts.png)
+# [Vertical navigation](#tab/vertical)
+
+::: moniker range="vsts"
+
+![Selected sprints for a team, agile hubs](_img/define-sprints/selected-team-iterations-agile.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+
+::: moniker-end
+
+# [Horizontal navigation](#tab/horizontal)
+
+![Selected sprints for a team, standard hubs](_img/define-sprints/selected-team-iterations-vsts.png)
+
+---
 
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Plan a sprint](sprint-planning.md) or [Define iterations for the team project](../customize/set-iteration-paths-sprints.md) 
+> [Assign work to a sprint](assign-work-sprint.md) or [Define iterations for your project](../../organizations/settings/set-iteration-paths-sprints.md) 
 
 ## Related articles 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../scale/set-team-defaults.md).  
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../../organizations/settings/set-team-defaults.md).  
+
+
+
+<!---
+
+## Add a sprint 
+
+You'll want to [set the start and end dates for your sprint](define-sprints.md#quick-start-schedule). 
+
+# [Vertical navigation](#tab/vertical)
+
+> [!div class="mx-imgBorder"]  
+> ![Choose New Sprint](_img/define-sprints/choose-new-sprint-agile-hubs-on.png)   
+
+
+# [Horizontal navigation](#tab/horizontal)
+
+
+
+## Select a sprint for use by your team 
+
+*More Info*
+
+
+> [!div class="mx-imgBorder"]
+> ![Select a sprint for use by team](_img/assign-items-sprint/select-sprint.png)
+
+ 
+
+<a id="drag-drop-to-sprint">   </a>
+## Assign work to a sprint
+
+You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint. 
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+
+# [Vertical navigation](#tab/vertical)
+
+1. Open **Work>Backlogs** and then choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
+
+	> [!div class="mx-imgBorder"]
+	> ![New Navigation, Work>Backlogs hub, Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
+
+2. You can drag and drop items from the **Backlog** onto a sprint. 
+
+	> [!div class="mx-imgBorder"]
+	> ![New Navigation, Work>Backlogs hub, Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
+
+# [Horizontal navigation](#tab/horizontal)
+
+1. Open **Work>Backlogs**. You can drag and drop from the **Backlog** or **Board** page as shown in the following image. 
+
+![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)
+
+ 
+
+-->

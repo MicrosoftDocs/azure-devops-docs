@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 <b>VSTS (Hosted XML)</b>   
  
 > [!IMPORTANT]  
-> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for accounts that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
+> **Feature availability:**&#160;&#160; With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Database Import Service](https://aka.ms/TFSDataImport).  
 > 
 >To learn more about customization and process models, see [Customize work tracking](../customize-work.md). 
 

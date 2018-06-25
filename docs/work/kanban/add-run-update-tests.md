@@ -30,7 +30,59 @@ In this topic, you'll learn:
 <img src="_img/i-test-board-intro.png" alt="Web portal, Kanban board with several inline tests defined" style="border: 1px solid #C3C3C3;" /> 
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
- 
+
+[!INCLUDE [temp](../_shared/prerequisites.md)]
+
+
+
+## Open your Kanban board from the web portal
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+
+# [Vertical navigation](#tab/vertical)
+
+::: moniker range="vsts"
+
+0. To view your Kanban board, open your team project from a web browser and choose (1) **Work**, (2) **Boards**, and then (3) select the team's board from the selector. 
+
+	![Open your Kanban board, agile  hubs](_img/quickstart/open-kanban-board-agile.png)  
+
+	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/vsts/_img/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team's board](_img/quickstart/select-kanban-team-board.png)  
+
+	> [!TIP]    
+	> Choose the ![](/vsts/_img/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![](/vsts/_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+::: moniker-end
+
+
+# [Horizontal navigation](#tab/horizontal)
+
+0. To view your Kanban board, open your (1) team project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
+	![Taskboard, collapsed backlog items, cloud service](_img/quickstart/open-kanban-board.png)
+
+	If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![](/vsts/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+
+	![Open Work hub when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
+
+0.	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](../scrum/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+
+0. Your Kanban board displays. 
+
+	![Kanban board, Agile template](_img/kanban-basics-intro.png)   
+
+---
+
+
 ## Add tests   
 
 1. To start adding tests, open the menu for the work item.  
