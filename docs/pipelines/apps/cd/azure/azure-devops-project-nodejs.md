@@ -122,3 +122,7 @@ When you configured your CI/CD process in this quickstart, a build and release d
 
 > [!div class="nextstepaction"]
 > [Customize CD process](../../../release/define-multistage-release-process.md)
+
+## Videos
+
+> [!VIDEO https://www.youtube.com/embed/3etwjubReJs]

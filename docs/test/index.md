@@ -36,7 +36,8 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 | | |
 | --- | --- |
-| <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="340" height="190" allowFullScreen="true" frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
+| <iframe width="560" height="315" src="https://www.youtube.com/embed/u-fdqhxonPc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe src="https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-Test-Case-Explorer-v2/player" width="560" height="315" allowFullScreen="true" frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/IntroducingTestFeedbackextension/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> | |
 | | |
 
 ## Step-by-Step Tutorials
