@@ -158,7 +158,7 @@ Product owners can use the shared queries that are defined in the following tabl
 
 The following table describes the shared queries that are listed under the **Current Iteration** folder. These queries find work items that are assigned to a specified iteration. As you plan additional iterations, you can modify these queries to specify a different iteration and then save them to additional folders that you create, such as **Iteration 2** or **Iteration 3**.
 
-The project administrator for each team project [defines area and iteration paths](../../customize/set-area-paths.md) for that project so that the team can track progress by those designations.
+The project administrator for each team project [defines area and iteration paths](../../../organizations/settings/set-area-paths.md) for that project so that the team can track progress by those designations.
 
 <table>
 <thead>

@@ -93,3 +93,6 @@ Now your CI process is set up to push a new Docker image to a container registry
 
 > [!div class="nextstepaction"]
 > [Deploy using Kubernetes](../cd/azure/deploy-container-kubernetes.md)
+
+## Videos 
+> [!VIDEO https://www.youtube.com/embed/X4Puu0BS3GE]

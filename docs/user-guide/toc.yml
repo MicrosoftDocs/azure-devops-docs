@@ -59,7 +59,7 @@
   - name: Manage your notifications
     href: ../notifications/manage-personal-notifications.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Set your preferences
-    href: ../accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../organizations/accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Sign-in to the web or a client
     href: connect-team-projects.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Troubleshooting 
@@ -97,7 +97,7 @@
   - name: Visual Studio for Mac
     href: https://docs.microsoft.com/visualstudio/mac
   - name: Account Management (VSTS)
-    href: ../accounts/index.md
+    href: ../organizations/accounts/index.md
   - name: "Security & Identity"
     href: ../organizations/security/index.md
   - name: Technical articles

@@ -32,7 +32,7 @@ In this topic:
   - [Troubleshoot Search](#trouble-tfs)
 
 Also see [Install and configure TFS](../../tfs-server/install/get-started.md)
-and [TFS requirements and compatibility](../../accounts/requirements.md).
+and [TFS requirements and compatibility](/tfs/server/requirements).
 
 >Users with at least a **Basic** access can use Code Search. 
 Stakeholders do not have access to code, and therefore no access to Code Search. 

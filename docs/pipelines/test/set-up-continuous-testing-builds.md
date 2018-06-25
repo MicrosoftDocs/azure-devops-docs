@@ -1,5 +1,5 @@
 ---
-title: Set up continuous testing for your builds
+title: Set up continuous testing for your builds - test automation tools
 description: Set up continuous testing for your builds in Microsoft VSTS and Team Foundation Server (TFS) with a build or release definition 
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.prod: devops
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
-Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
+Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) and test automation.
 
 **NOTE**: You can use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task to deploy and run
 unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,

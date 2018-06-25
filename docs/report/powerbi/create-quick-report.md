@@ -43,7 +43,7 @@ Follow these steps to create two reports in Power BI desktop that shows a **dail
 In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
 * You must be a member of a team project. If you don't have a team project yet, create one. See [Sign up for a free VSTS account](/vsts/user-guide/sign-up-invite-teammates). 
-* If you haven't been added as a team member, [get added now](/vsts/accounts/add-account-users-assign-access-levels). Anyone with access to the team project, except stakeholders, can view Analytics views.
+* If you haven't been added as a team member, [get added now](/vsts/organizations/accounts/add-account-users-assign-access-levels). Anyone with access to the team project, except stakeholders, can view Analytics views.
 * Have installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an account owner or a member of the [Project Collection Administrator group](/vsts/organizations/security/set-project-collection-level-permissions) to add extensions.
 * Have the **View Analytics** permission set to Allow. See [Grant permissions  to access the Analytics Service](/vsts/report/analytics/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).

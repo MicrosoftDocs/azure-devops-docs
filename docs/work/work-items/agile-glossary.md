@@ -131,7 +131,7 @@ A type of work item that defines the applications, requirements, and elements th
 A named set of criteria that supports finding and listing a list of work items. Learn more: [Define a work item query](../track/using-queries.md).    
 
 ## Sprint backlog 
-An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../scrum/sprint-planning.md).  
+An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../scrum/assign-work-sprint.md).  
 
 ## Task board 
 An interactive board of work items that support reviewing and updating tasks defined for the sprint backlog. The task board supports teams that use Scrum methodologies. Learn more: [Task board](../scrum/task-board.md). 
@@ -142,7 +142,7 @@ With teams, enterprises can sub-categorize work to better focus on all the work 
 
 ## Team project
 
-A repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. A team project resides within a VSTS account or TFS team project collection. It provides support for focusing on those objects defined within the team project. Learn more: [Create a team project](../../accounts/create-team-project.md).   
+A repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. A team project resides within a VSTS account or TFS team project collection. It provides support for focusing on those objects defined within the team project. Learn more: [Create a team project](../../organizations/accounts/create-team-project.md).   
 
 ## User story
 A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. User story is defined with the Agile process.  Learn more: [Agile process work item types and workflow](guidance/agile-process-workflow.md).   

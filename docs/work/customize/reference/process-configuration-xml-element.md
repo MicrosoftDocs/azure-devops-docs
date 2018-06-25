@@ -566,7 +566,7 @@ You should not have to change the default assignments made for the following <st
 <a id="weekend_days">  </a>
 ## Set non-working days 
 
-Non-working days are removed from calculations made by the [capacity planning tool](../../scale/capacity-planning.md) and [burndown charts](../../scrum/sprint-burndown.md). Default processes&mdash;[Agile](../../work-items/guidance/agile-process.md), [Scrum](../../work-items/guidance/scrum-process.md), or [CMMI](../../work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a team project, [each team can set their specific non-working days](../set-working-days.md).
+Non-working days are removed from calculations made by the [capacity planning tool](../../scrum/set-capacity.md) and [burndown charts](../../scrum/sprint-burndown.md). Default processes&mdash;[Agile](../../work-items/guidance/agile-process.md), [Scrum](../../work-items/guidance/scrum-process.md), or [CMMI](../../work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a team project, [each team can set their specific non-working days](../set-working-days.md).
 
 > [!div class="tabbedCodeSnippets"]
 ```XML

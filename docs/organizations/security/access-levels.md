@@ -24,7 +24,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 To add user accounts or groups to specific access levels, see the following topics: 
 
-- For VSTS: [Manage users and access in VSTS](../../accounts/add-account-users-assign-access-levels.md)
+- For VSTS: [Manage users and access in VSTS](../accounts/add-account-users-from-user-hub.md)
 - For on-premises TFS: [Change access levels](change-access-levels.md). 
 
 When you add a user or group to a team or team project, they're automatically granted access to those features supported by the default access level, which is Basic. This provides most users all the features they need. For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  
@@ -101,7 +101,7 @@ Service accounts don't require a TFS CAL or other purchase.
 
 ## Related notes  
 
-- [Manage users and access in VSTS](../../accounts/add-account-users-assign-access-levels.md)
+- [Manage users and access in VSTS](../accounts/add-account-users-from-user-hub.md)
 - [Change access levels (TFS)](change-access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access for VSTS and TFS](permissions-access.md)

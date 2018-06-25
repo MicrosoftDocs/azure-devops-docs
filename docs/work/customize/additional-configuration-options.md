@@ -81,7 +81,7 @@ These tools provide access to product and sprint backlogs, the Kanban board and 
 <ul>
 <li>[Create-your-backlog](../backlogs/create-your-backlog.md) </li>
 <li>[Kanban basics](../kanban/kanban-basics.md) </li>
-<li>[Plan a sprint](../scrum/sprint-planning.md)</li>
+<li>[Plan a sprint](../scrum/assign-work-sprint.md)</li>
 <li>[Work with the task board](../scrum/task-board.md).</li>
 </ul> </td>
 <td>

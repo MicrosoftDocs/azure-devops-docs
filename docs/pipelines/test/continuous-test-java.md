@@ -1,5 +1,5 @@
 ---
-title: Continuous testing Java applications - VSTS
+title: Continuous testing Java applications - VSTS - test automation tools
 description: Continuous testing with Java in a continuous integration pipeline with a build or release definition in Visual Studio Team Services (VSTS) and TFS 
 ms.assetid: 3A1A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.prod: devops

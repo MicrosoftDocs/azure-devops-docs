@@ -94,7 +94,7 @@ If a project isn't listed, you can find it by searching for it using the *Filter
 
 ### Add a team project
 
-If you're an account administrator or are a member of the Project Collection Administrators group, the New Project button is shown. Choose **New Project** to [add a team project](../accounts/create-team-project.md).
+If you're an account administrator or are a member of the Project Collection Administrators group, the New Project button is shown. Choose **New Project** to [add a team project](../organizations/accounts/create-team-project.md).
 
 ::: moniker range="vsts"
 ![Account home, Projects page, New team project](_img/account-home-projects-new-project.png)

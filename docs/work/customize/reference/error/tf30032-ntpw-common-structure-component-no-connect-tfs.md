@@ -5,7 +5,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 889f7f5e-9610-47f4-b6a0-592325b75151
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
@@ -47,5 +48,5 @@ This error occurs when the New Team Project Wizard is unable to connect to the a
   
 3.  If the problem persists, contact your Team Foundation Server administrator.  
   
-## Related articles
-- [Create a team project](../../../../accounts/create-team-project.md)
+## Related articles  
+- [Create a team project](../../../../organizations/accounts/create-team-project.md)

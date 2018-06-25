@@ -144,7 +144,7 @@ From the Query Results view, you can link a work item to a new or existing work 
 These features let you quickly link or change links that use the parent-child link type:
 
 -   To link backlog items to portfolio backlog items or to change the link structure among these items, [use the mapping pane to organize your backlog](../backlogs/organize-backlog.md).
--   To create and link tasks to backlog items, [use the sprint backlog page](../scrum/sprint-planning.md); from the web portal you can also drag-and-drop items to change the link structure. 
+-   To create and link tasks to backlog items, [use the sprint backlog page](../scrum/assign-work-sprint.md); from the web portal you can also drag-and-drop items to change the link structure. 
 -   To indent (![Indent](_img/IC588323.png)), outdent (![Outdent](_img/IC588324.png)), and change the link structure of a tree hierarchy, you can [re-parent and reorder items from a backlog in the web portal](../backlogs/organize-backlog.md#reparent) or use a [tree query in Team Explorer](using-queries.md#tree-query).
 
 You can also use Excel or Project to change the link structure. See [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../backlogs/office/create-your-backlog-tasks-using-project.md).

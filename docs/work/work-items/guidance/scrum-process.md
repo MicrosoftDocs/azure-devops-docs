@@ -133,7 +133,7 @@ For a summary of updates made to process templates, see [Changes made to process
 
 Your product owner can plan and track product backlog items and bugs in the product backlog by using the **Product Backlog** query. You can find work items that are assigned to the current sprint by using the shared queries that are listed under the **Current Sprint** folder. These queries find work items that are assigned to a specified iteration or sprint. As you plan additional sprints, you can modify these queries to specify the latest sprint and save them to additional folders that you create, such as **Sprint 2** or **Sprint 3**.
 
-The project administrator for each team project [defines area paths](../../customize/set-area-paths.md) and [iteration paths](../../customize/set-iteration-paths-sprints.md) for that project so that the team can track progress by those designations.  
+The project administrator for each team project [defines area paths](../../../organizations/settings/set-area-paths.md) and [iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md) for that project so that the team can track progress by those designations.  
 
 |Shared queries|Description| 
 |---|---|  

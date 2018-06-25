@@ -71,12 +71,12 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add user accounts to [VSTS](../accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
+<p>To share and contribute to your project, add user accounts to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
 <p><b>Azure Active Directory (AAD) (VSTS)</b></p>
-<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md). </p>
+<p>Control who can access your team's critical resources and key business assets by [managing access with Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups-vsts.md). </p>
 
 </td>
 <td width="30%">
@@ -84,7 +84,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Access levels</b></p>
 <p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
-- [Manage users (VSTS)](../accounts/add-account-users-assign-access-levels.md)   
+- [Manage users (VSTS)](../organizations/accounts/add-account-users-from-user-hub.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
@@ -648,7 +648,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Plan sprints</b></p>
-<p>Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../work/scrum/sprint-planning.md).</p>
+<p>Build your sprint backlog, add tasks, and load balance work across your team as you [plan your sprint](../work/scrum/assign-work-sprint.md).</p>
 
 
 <p><b>Track work on your task board</b></p>
@@ -676,7 +676,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Manage resources</b></p>
-<p>Use [capacity planning tools](../work/scale/capacity-planning.md) to track individual, team, and activity over and under capacity for a sprint.</p>
+<p>Use [capacity planning tools](../work/scrum/set-capacity.md) to track individual, team, and activity over and under capacity for a sprint.</p>
 ![Capacity bars](../work/scrum/_img/ALM_DS_CapacityBars_S.png)  
 
 
@@ -779,7 +779,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Share queries and sprint plans</b></p>
-<p>Email a query or [sprint plan](../work/scrum/sprint-planning.md).  </p>
+<p>Email a query or [sprint plan](../work/scrum/assign-work-sprint.md).  </p>
 ![Share queries, backlogs, and sprint plans with the email control](_img/features/alm-feature-email-control.png)  
 <br/>
 <p><b>Quick alerts to team members  </b></p>
@@ -1388,7 +1388,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([VSTS](../accounts/add-account-users-assign-access-levels.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([VSTS](../organizations/accounts/add-account-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -1872,7 +1872,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Web portal preferences </b></p>
-<p><p>Choose your name to access [your profile settings](../accounts/account-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
+<p><p>Choose your name to access [your profile settings](../organizations/accounts/account-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
 ![Profile drop down menu](_img/features/features-global-profile.png)  
 <br/>
 
@@ -2094,7 +2094,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](account-home-pages.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access [your profile settings](../accounts/account-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
+<p>Choose your name to access [your profile settings](../organizations/accounts/account-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
 ![Profile drop down menu](_img/features/alm-index-my-profile-menu.png)  
 <br/>
 
@@ -2124,7 +2124,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
 
 <p><b>Work</b></p>
-<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/sprint-planning.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
+<p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/assign-work-sprint.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
 
 <p><b>Build</b></p>
 <p>[Define and monitor builds](../pipelines/overview.md) and set up continuous builds to improve the quality of your app. </p>
@@ -2293,10 +2293,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Manage work access (VSTS)</b></p>
-<p>[Control user access with a directory](../accounts/manage-azure-active-directory-groups-vsts.md) to enforce policies about accessing company resources.  </p>
+<p>[Control user access with a directory](../organizations/accounts/manage-azure-active-directory-groups-vsts.md) to enforce policies about accessing company resources.  </p>
 
 <p><b>Azure Active Directory (VSTS) </b></p>
-<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md).</p>
+<p>Easily control access to your team's critical resources and key business assets with [Azure Active Directory groups](../organizations/accounts/manage-azure-active-directory-groups-vsts.md).</p>
 
 <p><b>Set up groups (TFS)</b></p>
 <p>[Create Windows or Active Directory groups](/tfs/server/admin/setup-ad-groups) to manage access to your team projects and collections.  </p>
@@ -2512,7 +2512,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 <p><b>Scrum process tools</b></p>
-<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](../work/scrum/sprint-planning.md), [capacity planning](../work/scale/capacity-planning.md), [task boards](../work/scrum/task-board.md), and [burndown charts](../work/scrum/sprint-burndown.md).  </p>
+<p>Scrum processes can be used with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Scrum tools support [sprint planning](../work/scrum/assign-work-sprint.md), [capacity planning](../work/scrum/set-capacity.md), [task boards](../work/scrum/task-board.md), and [burndown charts](../work/scrum/sprint-burndown.md).  </p>
 
 
 <p><b>Manage processes (VSTS) </b></p>
@@ -2596,17 +2596,17 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a team project?</b></p>
-<p>A [team project](../accounts/create-team-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
+<p>A [team project](../organizations/accounts/create-team-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
 
 <p><b>Create a team project </b></p>
-<p>You can [create a team project hosted in the cloud (VSTS)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../accounts/create-team-project.md).</p>
+<p>You can [create a team project hosted in the cloud (VSTS)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../organizations/accounts/create-team-project.md).</p>
 
 
 <p><b>Rename a team project</b></p>
-<p>[Rename a team project](../accounts/rename-team-project.md) as needed to reflect changes that occur within your org.</p>
+<p>[Rename a team project](../organizations/accounts/rename-team-project.md) as needed to reflect changes that occur within your org.</p>
 
 <p><b>Delete a team project</b></p>
-<p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](../accounts/delete-team-project.md). </p>
+<p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](../organizations/accounts/delete-team-project.md). </p>
 
 </td>
 <td width="33%">
@@ -2657,7 +2657,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A team is an organizing unit used to support a number of [team-configurable tools and assets](../work/scale/manage-team-assets.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add accounts--[VSTS](../accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add accounts--[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 

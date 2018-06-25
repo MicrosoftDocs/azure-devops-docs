@@ -18,7 +18,7 @@ ms.date: 10/17/2017
  
 Each team has access to a number of Agile tools as described in [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
-Prior to setting team defaults, [add the teams](multiple-teams.md) you want and [schedule your shared sprint schedule](../scrum/define-sprints.md). Optionally, [add area paths](../customize/set-area-paths.md) you want to use to group work items. 
+Prior to setting team defaults, [add the teams](multiple-teams.md) you want and [schedule your shared sprint schedule](../scrum/define-sprints.md). Optionally, [add area paths](../../organizations/settings/set-area-paths.md) you want to use to group work items. 
 
 <a id="default_path">  </a>
 ## Backlog iteration versus default iteration 
@@ -127,7 +127,7 @@ You activate sprints for each team from the admin pages for each team context. T
 
 	<img src="../scrum/_img/dsprints-selected-active-sprints.png" alt="Work, Iterations page for team, activates sprint list, VSTS platform" style="border: 1px solid #C3C3C3;" />  
 
-	If you don't see the sprints you need, or the dates aren't set, then [return to the team project admin context and define them there](../customize/set-iteration-paths-sprints.md#define-sprints-team-services).  
+	If you don't see the sprints you need, or the dates aren't set, then [return to the team project admin context and define them there](../../organizations/settings/set-iteration-paths-sprints.md#define-sprints-team-services).  
 
 3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../backlogs/create-your-backlog.md).  
 
@@ -165,7 +165,7 @@ You activate sprints for each team from the admin pages for each team context. T
 ## Related articles  
 
 - [Schedule sprints](../scrum/define-sprints.md)  
-- [Customize area and iteration paths](../customize/set-area-paths.md)  
+- [Customize area and iteration paths](../../organizations/settings/set-area-paths.md)  
 - [Query by date or current iteration](../track/query-by-date-or-current-iteration.md)
 - [Multiple teams](multiple-teams.md)  
 - [Configure team settings](manage-team-assets.md)  

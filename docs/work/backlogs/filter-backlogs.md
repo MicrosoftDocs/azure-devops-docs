@@ -23,7 +23,7 @@ ms.date: 03/20/2018
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ## Filter based on keywords or fields   
 
 > [!NOTE]   

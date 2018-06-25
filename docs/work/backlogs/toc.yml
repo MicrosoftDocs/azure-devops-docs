@@ -13,11 +13,11 @@
   - name: Create your backlog
     href: create-your-backlog.md
   - name: Drive Git development
-    href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
+    href: connect-work-items-to-git-dev-ops.md
   - name: Define area paths
-    href: ../customize/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: ../../organizations/settings/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Define iteration paths
-    href: ../customize/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: "Define features & epics"
@@ -54,6 +54,8 @@
     href: copy-list.md 
   - name: Change column options
     href: ../backlogs/set-column-options.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+  - name: Use work item templates
+    href: work-item-template.md
   - name: Bulk add or modify (Excel)
     href: office/bulk-add-modify-work-items-excel.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: "Create backlog items & tasks (Project)"
@@ -92,7 +94,7 @@
   items:
   - name: Work Items
     href: ../work-items/index.md
-  - name: Kanban
+  - name: Boards (Kanban)
     href: ../kanban/index.md
   - name: Scrum
     href: ../scrum/index.md

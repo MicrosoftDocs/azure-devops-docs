@@ -44,10 +44,10 @@ For a description of each group and each permission, see [Permissions and groups
 ## Prerequisites
 
 ::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-account-users-from-user-hub.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
 ::: moniker-end
 * To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the team project, you are automatically added as a member of this group. 
 * To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the account or collection, you are automatically added as a member of this group. 

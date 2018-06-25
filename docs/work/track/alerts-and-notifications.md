@@ -125,5 +125,5 @@ As an administrator, you can view, create, edit, and delete alerts for team memb
 - [Follow a work item or pull request](../work-items/follow-work-items.md)  
 - [Manage your notifications](../../notifications/manage-personal-notifications.md) (VSTS, TFS 2017.1)
 - [Manage notifications for a team](../../notifications/manage-team-notifications.md) (VSTS, TFS 2017.1) 
-- [Account preferences](../../accounts/account-preferences.md)  
+- [Account preferences](../../organizations/accounts/account-preferences.md)  
 - [Work effectively from your account hub](../../user-guide/account-home-pages.md) (VSTS, TFS 2017.1)

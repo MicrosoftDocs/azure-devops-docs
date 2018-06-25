@@ -388,7 +388,7 @@ Defines and secures a connection to an npm server.
 | Registry URL | Required. The URL of the npm server. |
 | Username | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password | Required when connection type is **Basic authentication**. The password for the username. |
-| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../accounts/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 <p />
 
 [How do I create a new service endpoint?](#create-new)
@@ -404,7 +404,7 @@ Defines and secures a connection to a NuGet server.
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Feed URL | Required. The URL of the NuGet server. |
 | ApiKey | Required when connection type is **ApiKey**. The authentication key. |
-| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../accounts/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 | Username | Required when connection type is **Basic authentication**. The username for authentication. |
 | Password | Required when connection type is **Basic authentication**. The password for the username. |
 <p />
@@ -484,14 +484,14 @@ Defines and secures a connection to another TFS or VSTS account.
 | Connection URL | Required. The URL of the TFS or VSTS instance. |
 | User name | Required for Basic authentication. The username to connect to the service. |
 | Password | Required for Basic authentication. The password for the specified username. |
-| Personal Access Token | Required for Token Based authentication (TFS 2017 and newer and VSTS only). The token to use to authenticate with the service. [Learn more](../../accounts/use-personal-access-tokens-to-authenticate.md). |
+| Personal Access Token | Required for Token Based authentication (TFS 2017 and newer and VSTS only). The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 <p />
 
 [How do I create a new service endpoint?](#create-new)
 
 Use the **Verify connection** link to validate your connection information.
 
-See also [Authenticate access with personal access tokens for VSTS and TFS](../../accounts/use-personal-access-tokens-to-authenticate.md).
+See also [Authenticate access with personal access tokens for VSTS and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 *****
 
