@@ -157,27 +157,27 @@
     },
     {
       "source_path": "docs/tfs-server/command-line/tfsservicecontrol-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfsservicecontrol-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfsservicecontrol-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/command-line/tfs-labconfig-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfs-labconfig-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfs-labconfig-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/command-line/tfsdeleteproject-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfsdeleteproject-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfsdeleteproject-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/command-line/tfssecurity-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfssecurity-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfssecurity-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/command-line/tfsconfig-cmd.md",
-      "redirect_url": "/tfs/server/command-line/tfsconfig-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfsconfig-cmd",
       "redirect_document_id": false
     },
     {
@@ -222,7 +222,7 @@
     },
     {
       "source_path": "docs/tfs-server/admin/add-administrator-tfs.md",
-      "redirect_url": "/tfs/server/add-administrator-tfs",
+      "redirect_url": "/tfs/server/admin/add-administrator-tfs",
       "redirect_document_id": false
     },
     {
