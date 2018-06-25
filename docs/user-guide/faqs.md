@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2013'
 ### Q: How do I get started?
 
 **A: To get started in the cloud or on-premises:** 
-- To get started with Visual Studio Team Services (VSTS) begin by [creating a user account](https://visualstudio.microsoft.com/team-services/). Step-by-step instructions are provided in [Sign up for VSTS](../accounts/create-account-msa-or-work-student.md).  
+- To get started with Visual Studio Team Services (VSTS) begin by [creating a user account](https://visualstudio.microsoft.com/team-services/). Step-by-step instructions are provided in [Sign up for VSTS](../organizations/accounts/create-account-msa-or-work-student.md).  
 - To get started with an on-premises TFS, download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/). See [Install and configure TFS](/tfs/server/install/get-started) for details.  
-- If you need to create a team project, create one in [VSTSs](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).   
+- If you need to create a team project, create one in [VSTSs](../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../organizations/accounts/create-team-project.md).   
 - If you don't have access to the team project, [get invited to the team](../organizations/security/add-users-team-project.md).  
 - If it's your first time connecting to a team project, see [Connect to a team project](connect-team-projects.md).  
 
@@ -37,7 +37,7 @@ See [Software development roles](roles.md).
 
 ### Q: What compatibility issues exist between client and server versions?
 
- **A:** See [Requirements and compatibility](../accounts/requirements.md).  
+ **A:** See [Requirements and compatibility](/tfs/server/requirements).  
  
 
 ### Q: Can stakeholders who don't use Visual Studio participate on our team?

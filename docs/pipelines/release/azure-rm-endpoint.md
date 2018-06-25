@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting Azure Resource Manager service endpoints in VSTS and TFS
-description: Troubleshoot Azure Resource Manager service endpoints in VSTS and Team Foundation Server (TFS)
+description: DevOps CI CD - Troubleshoot Azure Resource Manager service endpoints in VSTS and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: devops
 ms.technology: devops-cicd
@@ -17,7 +17,8 @@ monikerRange: '>= tfs-2015'
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 This topic will help you resolve issues you may encounter when creating
-a connection to Microsoft Azure using an **Azure Resource Manager** service endpoint.
+a connection to Microsoft Azure using an **Azure Resource Manager** service endpoint
+for your DevOps CI/CD processes.
 
 <a name="whathappens"></a>
 ## What happens when you create a Resource Manager service endpoint?

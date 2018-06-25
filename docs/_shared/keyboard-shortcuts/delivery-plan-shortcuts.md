@@ -24,7 +24,7 @@ You can use the following keyboard shortcuts when [interacting with a delivery p
 <td>
 **l**&nbsp;&nbsp;Open [backlog](/vsts/work/backlogs/create-your-backlog)<br/>
 **b**&nbsp;&nbsp;Open [board](/vsts/work/kanban/kanban-basics)<br/>
-i&nbsp;&nbsp;Open [current iteration](/vsts/work/scrum/sprint-planning)<br/>
+i&nbsp;&nbsp;Open [current iteration](/vsts/work/scrum/assign-work-sprint)<br/>
 **t**&nbsp;&nbsp;Open [task board](/vsts/work/scrum/task-board)<br/>
 **q**&nbsp;&nbsp;Open [queries](/vsts/work/track/using-queries)<br/>
 **z**&nbsp;&nbsp;Toggle full screen mode

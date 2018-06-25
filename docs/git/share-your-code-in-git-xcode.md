@@ -20,7 +20,7 @@ This guide shows you how to share your Xcode projects in a VSTS Git repo.
 
 ## Prerequisites
 
-* A VSTS account. If you don't have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don't have one, you can [sign up](../organizations/accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ## Create a local Git repo for your Xcode project
 
@@ -75,7 +75,7 @@ If you have already created a repo for your Xcode project in VSTS, you can skip 
 
   ![Push your Xcode project to VSTS](_img/share-your-code-in-git-xcode/xcodepushtomaster.png)
 
-0. If prompted, enter your VSTS credentials. For **Username**, enter your VSTS username. For **Password**, enter a [Personal Access Token](../accounts/use-personal-access-tokens-to-authenticate.md) created for your user in VSTS. Select **OK**. 
+0. If prompted, enter your VSTS credentials. For **Username**, enter your VSTS username. For **Password**, enter a [Personal Access Token](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) created for your user in VSTS. Select **OK**. 
 
   ![Authenticate using personal access tokens to VSTS](_img/share-your-code-in-git-xcode/xcodeauthentication.png)
 

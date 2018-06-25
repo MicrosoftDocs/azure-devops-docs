@@ -22,10 +22,6 @@ Host your NuGet, npm, and Maven packages in **Visual Studio Team Services (VSTS)
 
 <div class="ico48Case halfStack"><div class="ico48Link"><a href="get-started-nuget.md"><img width="48" height="48" alt="" src="_img/index/logo_nuget.svg"><span>NuGet</span></a></div><div class="ico48Link"><a href="get-started-npm.md"><img width="48" height="48" alt="" src="_img/index/logo_npm.svg"><span>npm</span></a></div><div class="ico48Link"><a href="get-started-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div></div>
 
-## Videos
-
-[![Package Management 101](_img/index/package-management-101.png)](https://channel9.msdn.com/events/Build/2017/P4110)   [![The Zen of Package Management](_img/index/zen-of-package-management.png)](https://channel9.msdn.com/events/Ignite/Australia-2017/NET324)   [![npm and continuous delivery in Package Management](_img/index/npm-and-continuous-delivery.png)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/T112)   [![Maven, symbol server, and upstream sources in VSTS](_img/index/maven-symbol-server-and-upstream-sources.png)](https://channel9.msdn.com/Events/Connect/2017/T180)
-
 ## How-to Guides
 
 - [Publish a NuGet package](nuget/publish.md)
@@ -36,5 +32,16 @@ Host your NuGet, npm, and Maven packages in **Visual Studio Team Services (VSTS)
 ## Resources
 
 - [Build and Release with VSTS](/vsts/pipelines/index)
+
+## Videos
+| | |
+| --- | --- |
+| <iframe width="560" height="315" src="https://www.youtube.com/embed/55LhCfB4JlE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> | <iframe width="560" height="315" src="https://www.youtube.com/embed/m52wrocBvxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/Build/2017/P4110/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/events/Ignite/Australia-2017/NET324/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> |
+| <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T112/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T180/player" width="560" height="315" allowFullScreen frameBorder="0"></iframe> |
+| | |
+
+
+
 
 

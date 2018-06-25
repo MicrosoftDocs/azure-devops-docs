@@ -23,7 +23,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 ## Prerequisites
 
 You'll need VSTS
-[project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner).
+[project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner).
 
 1. Sign in to your VSTS account. (```https://{youraccount}.visualstudio.com```).
 

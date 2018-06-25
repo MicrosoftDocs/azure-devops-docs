@@ -1,6 +1,6 @@
 ---
 title: Use approvals and gates to control your deployment
-description: Use a combination of manual deployment approvals, gates, and manual intervention to control your deployment in VSTS and TFS
+description: DevOps CI CD - Use a combination of manual deployment approvals, gates, and manual intervention to control your deployment in VSTS and TFS
 ms.assetid: 3D22D4B3-DE1F-482C-BBD4-475C829452C1
 ms.prod: devops
 ms.technology: devops-cicd
@@ -17,7 +17,8 @@ monikerRange: '>= tfs-2018'
 By using a combination of manual deployment approvals, gates, and manual
 intervention within a release definition in Visual Studio Team Services
 (VSTS) and Team Foundation Server (TFS), you can quickly and easily configure
-a release pipeline with all the control and auditing capabilities you require.
+a release pipeline with all the control and auditing capabilities you require
+for your DevOps CI/CD processes.
 
 In this tutorial, you learn about:
 

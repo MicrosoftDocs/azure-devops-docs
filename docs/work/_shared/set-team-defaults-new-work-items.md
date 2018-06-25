@@ -8,7 +8,7 @@ ms.topic: include
 
 The system automatically assigns new work items the default area and iteration paths based on the team context. Work items you add from the team dashboard (new work item widget) and queries page are assigned the team default iteration. Work items you add from a team backlog or board, are assigned the team default backlog iteration.  
 
-To learn more or to change team defaults, see [Set team defaults](../scale/set-team-defaults.md).  
+To learn more or to change team defaults, see [Set team defaults](../../organizations/settings/set-team-defaults.md).  
 
 
 <div style="background-color: #f2f0ee;padding-top:10px;padding-bottom:10px;">

@@ -30,7 +30,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 >The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](/tfs/server/admin/setup-customize-alerts). 
 ::: moniker-end  
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to copy to the clipboard. 
 

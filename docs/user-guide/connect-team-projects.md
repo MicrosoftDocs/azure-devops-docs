@@ -29,7 +29,7 @@ To share code, build apps, track work, and collaborate with team members, you co
 >[!NOTE]
 >A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on VSTS or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
 
-If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
+If you don't have a team project yet, create one in [VSTS](../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../organizations/accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
 
 From each of these clients, you can quickly switch context to a different team project and connect under a different account name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
@@ -212,7 +212,7 @@ To add or modify work items by using Excel or Project, you connect your workshee
 
 To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. See [Permission reference](../organizations/security/permissions.md) for details.
 
-1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](../accounts/requirements.md)
+1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS or TFS 2017, you'll need Project 2010 or a more recent version. For client compatibility, see [Requirements](/tfs/server/requirements)
 
 2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration 2015 (free)](https://visualstudio.microsoft.com/downloads/#team-foundation-server-office-integration-2015-update-3-1), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
 
@@ -300,7 +300,7 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ### User accounts and licensing
 
-To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../accounts/add-account-users-assign-access-levels.md) or a [project administrator](../organizations/security/set-project-collection-level-permissions.md). 
+To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../organizations/accounts/add-account-users-from-user-hub.md) or a [project administrator](../organizations/security/set-project-collection-level-permissions.md). 
 
 VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
@@ -340,7 +340,7 @@ In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, 
 
 ### Requirements and client compatibility
 
-Some tasks or features aren't available when you connect to a later version of TFS than which your client supports. For more information, see [Requirements and compatibility](../accounts/requirements.md).
+Some tasks or features aren't available when you connect to a later version of TFS than which your client supports. For more information, see [Requirements and compatibility](/tfs/server/requirements).
 
 ### Determine your platform or TFS version
 

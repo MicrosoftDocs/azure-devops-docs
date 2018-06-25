@@ -1,11 +1,13 @@
 ---
-title: TF30170-The plug-in {0} failed titleSuffix: VSTS & TFS
+title: TF30170-The plug-in {0} failed 
+titleSuffix: VSTS & TFS
 description: Occurs an error when a third-party plug-in does not operate in the manner the New Team Project Wizard expected it to operate.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 47085404-d5ec-4811-9fbd-84da3be422e6
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 01/20/2017
 ---
@@ -23,6 +25,6 @@ This error occurs when a third-party plug-in does not operate in the manner the 
 1.  Contact the developer or vendor that provided the plug-in.  
   
 2.  If the problem persists, reinstall the third-party plug-in.  
-  
+    
 ## Related articles 
-- [Create a team project](../../../../accounts/create-team-project.md)
+- [Create a team project](../../../../organizations/accounts/create-team-project.md)

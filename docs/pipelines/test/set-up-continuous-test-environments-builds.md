@@ -1,5 +1,5 @@
 ---
-title: Set up environments to run continuous tests with your builds
+title: Set up environments to run continuous tests with your builds - test automation tools
 description: Set up environments to run continuous test tasks with your build tasks with a build or release definition VSTS and TFS 
 ms.assetid: FFD51F1E-C3B7-4FAC-B25D-95ADD6C1A1A0
 ms.prod: devops
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
-To test your app using different platforms and configurations,
+To test your app using different platforms and configurations using test automation,
 set up separate environments to run your app and tests with your
 builds in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
 

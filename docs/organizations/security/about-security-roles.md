@@ -107,6 +107,6 @@ For [each team that you add](../../work/scale/multiple-teams.md), you can assign
 
 - [About permissions and groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md). 
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-aad.md). 
  
  

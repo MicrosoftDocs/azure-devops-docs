@@ -8,7 +8,7 @@ ms.topic: overview
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 05/31/2018
+ms.date: 06/19/2018
 ---
 
 # Scale & Configure Teams 

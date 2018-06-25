@@ -29,7 +29,7 @@ You use Team Explorer to manage work that is assigned to you, your team, or your
 > - [VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)  
 > - [VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in) 
 > - [Visual Studio Code](/vsts/java/vscode-extension)    
->For information about compatibility among client and server versions, see [Requirements and compatibility](../accounts/requirements.md).
+>For information about compatibility among client and server versions, see [Requirements and compatibility](/tfs/server/requirements).
 
 The operations available to you depend on which source control option-Team Foundation version control (TFVC) or Git-was selected to manage source code when the team project was created.
 
@@ -86,7 +86,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 
 
 > [!IMPORTANT]  
-> From the Visual Studio plug-in, you can [Create a team project](../accounts/create-team-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
+> From the Visual Studio plug-in, you can [Create a team project](../organizations/accounts/create-team-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
 
 
 

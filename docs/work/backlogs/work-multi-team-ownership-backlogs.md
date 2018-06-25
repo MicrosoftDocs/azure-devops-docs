@@ -20,7 +20,7 @@ ms.date: 05/10/2017
 
 When you have several teams, your hierarchical views may show items that belong to other teams.  
 
-Your team's product backlog lists only those items whose area path matches those your team has subscribed to. For details, see [Set team defaults](../scale/set-team-defaults.md). However, if you show parents, 
+Your team's product backlog lists only those items whose area path matches those your team has subscribed to. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md). However, if you show parents, 
 you'll see the parent epic of the features and backlog items, even if the epic or feature is owned by another team. 
 Items that are owned by other teams appear with hollow-filled bars.  
 

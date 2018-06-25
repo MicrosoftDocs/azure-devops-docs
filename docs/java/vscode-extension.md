@@ -22,7 +22,7 @@ Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can fin
 
 ## Prerequisites
 
- - You already have a VSTS account. If you do not already have a VSTS account, [sign up](https://docs.microsoft.com/en-us/vsts/accounts/create-account-msa-or-work-student).
+ - You already have a VSTS account. If you do not already have a VSTS account, [sign up](https://docs.microsoft.com/en-us/vsts/organizations/accounts/create-account-msa-or-work-student).
  - You have Visual Studio Code 1.11.1 or later installed on your machine (if not, [download and install it](https://code.visualstudio.com/Download)).
  - You have already [cloned a VSTS Git repository](https://docs.microsoft.com/en-us/vsts/git/tutorial/clone?tabs=command-line) to your computer locally.
 
@@ -37,7 +37,7 @@ Restart Visual Studio Code.
 ## Acquire a personal access token
 
 If you are connecting to VSTS or TFS, you may need a *personal access token* (PAT) to securely access your account. 
-If you do not have a personal access token yet, you will need to [create one on your VSTS account](https://docs.microsoft.com/en-us/vsts/accounts/use-personal-access-tokens-to-authenticate). 
+If you do not have a personal access token yet, you will need to [create one on your VSTS account](https://docs.microsoft.com/en-us/vsts/organizations/accounts/use-personal-access-tokens-to-authenticate). 
 
 ## Connect to your VSTS Git repo
 

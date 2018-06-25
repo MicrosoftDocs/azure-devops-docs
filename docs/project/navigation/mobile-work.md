@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/01/2018
+ms.date: 03/01/2018  
 ---   
 
 #  View and update work items via the mobile browser   

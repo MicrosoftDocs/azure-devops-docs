@@ -43,7 +43,7 @@ Choose VSTS when you want quick setup, maintenance-free operations, easy collabo
 
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
-[![Install TFS](_img/overview/tfs-setup-1.png)](/tfs/server/install/single-server)[![Create a team project](_img/overview/tfs-setup-2.png)](../accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/tfs/server/admin/backup/back-up-restore-tfs)   
+[![Install TFS](_img/overview/tfs-setup-1.png)](/tfs/server/install/single-server)[![Create a team project](_img/overview/tfs-setup-2.png)](../organizations/accounts/create-team-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/tfs/server/admin/backup/back-up-restore-tfs)   
  
 <a id="add-code">  </a>
 ## Develop code using your IDE of choice 
@@ -86,7 +86,7 @@ Code Search also makes team collaboration easier and helps maximize developer ef
 
  Use Agile tools to plan and track work using Scrum and Kanban processes or a mix of both. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board. In addition, configurable charts, dashboards, and reports help teams monitor and share progress. 
 
-[![Define stories](_img/overview/ov-agile-plan-1.png)](../work/backlogs/create-your-backlog.md)[![Plan sprints](_img/overview/ov-agile-plan-2.png)](../work/scrum/sprint-planning.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](_img/overview/ov-agile-plan-3.png)](../work/kanban/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](_img/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
+[![Define stories](_img/overview/ov-agile-plan-1.png)](../work/backlogs/create-your-backlog.md)[![Plan sprints](_img/overview/ov-agile-plan-2.png)](../work/scrum/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](_img/overview/ov-agile-plan-3.png)](../work/kanban/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](_img/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
  
 
 You also gain access to a [rich set of customization capabilities](../work/customize/customize-work.md). 

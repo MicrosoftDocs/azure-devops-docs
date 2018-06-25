@@ -26,7 +26,7 @@ Once users have been added to a team project, you can browse for that name by di
 
 ## Prerequisites
 
-* You must have a team project. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../../accounts/create-team-project.md).
+* You must have a team project. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
 * To add users to a team project, you must be a member of the [Project Administrators Group or have your **Edit project-level information** set to Allow](set-project-collection-level-permissions.md).
 * To add users to a team, you must have been [added as a team administrator for the team](../../work/scale/add-team-administrator.md), or you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow.
 
@@ -34,7 +34,7 @@ Once users have been added to a team project, you can browse for that name by di
 
 ## Add users to a team project
 
-If you are adding a user to VSTS for the first time, see [Add account users for VSTS](../../accounts/add-account-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json).
+If you are adding a user to VSTS for the first time, see [Add account users for VSTS](../accounts/add-account-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json).
 
 1. Open the web portal and choose the team project where you want to add users or groups. Click the ![gear icon](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
 
@@ -73,7 +73,7 @@ If you are adding a user to VSTS for the first time, see [Add account users for 
    > After the identity has been added, you can just type the friendly name.
 
 <!---**TFS 2015**
-    ![Choose the team project group and add members](../../accounts/_img/add-users-team-project/add-contributor.png)-->
+    ![Choose the team project group and add members](../accounts/_img/add-users-team-project/add-contributor.png)-->
 
 6. In **Identities**, specify the name of the user or group you want to add.
 

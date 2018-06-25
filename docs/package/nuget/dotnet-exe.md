@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 > [!NOTE]
 > This page covers interactive scenarios. In Team Build, use the [.NET Core step](../../pipelines/tasks/build/dotnet-core.md). 
 
-To use `dotnet` with VSTS NuGet feeds, you'll need to specify a [Personal Access Token](../../accounts/use-personal-access-tokens-to-authenticate.md) in plain text. 
+To use `dotnet` with VSTS NuGet feeds, you'll need to specify a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) in plain text. 
 
 On Windows, [NuGet 4](nuget-exe.md) is functionally equivalent to dotnet, and we recommend using that instead.
 

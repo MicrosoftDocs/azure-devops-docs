@@ -82,7 +82,7 @@ Project management reports provide insight into how much work the team is tackli
                 <li>Create requirements and specify the <b>Size</b> (CMMI).</li>
             </ul>
         </li>
-        <li>[Work in sprints](../../work/scrum/sprint-planning.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.</li>
+        <li>[Work in sprints](../../work/scrum/assign-work-sprint.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.</li>
         <li>
             [Update Remaining Work for tasks](../../work/scrum/task-board.md). For Agile and CMMI team projects, update <b>Completed Work</b> as well.
             <br />
