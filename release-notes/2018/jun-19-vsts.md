@@ -1,12 +1,12 @@
 ---
 title: Modernizing the UI – VSTS Sprint 136 Update
-ms.date: 6/19/2018
+ms.date: 6/22/2018
 description: In the Sprint 136 Update of Visual Studio Team Services (VSTS), we introduce a more modern UI.
 ---
 
 # Modernizing the UI – VSTS Sprint 136 Update
 
-In the **Sprint 136 Update** of Visual Studio Team Services (VSTS), we are introducing some new and exciting design changes. You can preview a new experience in the [Build hub](#new-build-results-page) and [Test tab](#improved-experiences-in-the-test-tab). The [Queries hub](#queries-hub-generally-available) is now generally available. Also, you can try a preview of the [new navigation experience](#preview-our-new-navigation).
+In the **Sprint 136 Update** of Visual Studio Team Services (VSTS), we are introducing some new and exciting design changes. You can preview a new experience in the [Build hub](#new-build-results-page) and [Test tab](#improved-experiences-in-the-test-tab). The [Queries hub](#queries-hub-generally-available) is now generally available. Also, you can try a preview of the [new navigation experience](#preview-our-new-navigation) with the [new Work hubs](#new-work-hubs).
 
 There are a number of other features across Work, Build, Release, Test, and Reporting. Check out the [Features](#features) list below for more.
 
@@ -28,6 +28,7 @@ Read about the new features below and head over to VSTS to try them for yourself
 
 ### Work
 
+- [New Work hubs](#new-work-hubs)
 - [Queries hub generally available](#queries-hub-generally-available)
 - [Easily find existing work items in linking and mention experiences](#easily-find-existing-work-items-in-linking-and-mention-experiences)
 
@@ -66,12 +67,22 @@ Read about the new features below and head over to VSTS to try them for yourself
 > [!IMPORTANT]
 > To use this capability, you must have the **New Navigation** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
 
-Over the next couple weeks, the public preview of our new navigation will be rolling out and available to everyone that uses VSTS. Once it's available in your account, a feature announcement banner will show and you can turn it on for any project using the Preview Features panel. Read our [blog post](https://aka.ms/vstsnewnav) for more details about the design refresh and why we're doing it.
+Over the next couple weeks, the public preview of our new navigation will be rolling out and available to everyone that uses VSTS. Once it’s available in your account, a feature announcement banner will show and you can turn it on for any project using the Preview Features panel. Read our [blog post](https://aka.ms/vstsnewnav) for more details about the design refresh and why we’re doing it.
 
 > [!div class="mx-imgBorder"]
 ![New nav](_img/136_11.png)
 
 ## Work
+
+### New Work hubs
+
+> [!IMPORTANT]
+> To use this capability, you must have the **New Navigation** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
+
+Along with the public preview of our new navigation, we’re also introducing the new Work hubs. Here, you’ll find favorites and quick search support for all your boards, backlogs, and sprints as well as new features such as Sprint Planning. See the [New Work Hubs post](https://blogs.msdn.microsoft.com/devops/2018/06/22/new-work-hubs/) on the Microsoft DevOps Blog for more information.
+
+> [!div class="mx-imgBorder"]
+![New Work hubs](_img/136_20.png)
 
 ### Queries hub generally available
 
@@ -97,9 +108,9 @@ When you want to link two existing work items together, you can now easily find 
 > [!IMPORTANT]
 > To use this capability, you must have the **New build result page** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
 
-In TFS 2015 we rolled out a new build system, enabling you drag and drop scripts and a growing library of open-sourced tasks. We've gradually improved the editor experience, and today we're refreshing the experience for viewing a build.
+In TFS 2015 we rolled out a new build system, enabling you to drag and drop scripts and a growing library of open-sourced tasks. We've gradually improved the editor experience, and today we're refreshing the experience for viewing a build.
 
-When you go to your build results, you'll have clearer insight into the logs, issues, commits, and work items that make up your build. This is the first step in our design update so send us your thoughts.
+When you go to your build results, you’ll have clearer insight into the logs, issues, commits, and work items that make up your build. This is the first step in our design update so send us your thoughts.
 
 > [!div class="mx-imgBorder"]
 ![Results page](_img/136_10.png)
@@ -167,7 +178,7 @@ In order to enhance end-to-end traceability, you can see all the commits that we
 
 ### Use upstream sources in legacy feeds
 
-Until now, [legacy feeds](https://docs.microsoft.com/en-us/vsts/package/reference/feed-upgrade-learn-more?view=vsts) could not use the nuget.org upstream source or take advantage of improvements made to the npmjs.com upstream source. With this update, you can upgrade a legacy feed and use those features. Look for the banner above your feed's packages for more information, including behavior changes you should be aware of before upgrading.
+Until now, [legacy feeds](https://docs.microsoft.com/en-us/vsts/package/reference/feed-upgrade-learn-more?view=vsts) could not use the nuget.org upstream source or take advantage of improvements made to the npmjs.com upstream source. With this update, you can upgrade a legacy feed and use those features. Look for the banner above your feed’s packages for more information, including behavior changes you should be aware of before upgrading.
 
 ### Use arbitrary public npm feeds as upstream sources
 
@@ -188,7 +199,7 @@ Along with the new **Builds** hub and new [Release](https://docs.microsoft.com/e
 
 #### View execution of in-progress tests
 
-Tests, such as integration and functional tests, can run for a long time so it's important to see test execution at any given time. With the In-Progress Test View, you no longer have to wait for test execution to complete to know the test outcome. Results are available in near real-time as they are run, helping you to take actions faster. You can debug a failure or abort, file a bug or abort the pipeline. The feature is currently available for both build and release pipeline using **VS Test Task** in Multi Agent phase, using **Publish Test Results Task** or publishing test results using API(s). In the future we plan to extend this experience for test execution using Single Agent.
+Tests, such as integration and functional tests, can run for a long time so it’s important to see test execution at any given time. With the In-Progress Test View, you no longer have to wait for test execution to complete to know the test outcome. Results are available in near real-time as they are run, helping you to take actions faster. You can debug a failure or abort, file a bug or abort the pipeline. The feature is currently available for both build and release pipeline using **VS Test Task** in Multi Agent phase, using **Publish Test Results Task** or publishing test results using API(s). In the future we plan to extend this experience for test execution using Single Agent.
 
 The view below shows the In-Progress Test summary in the new release progress view, reporting total test count and number of test failures at a given point in time.
 
@@ -225,7 +236,7 @@ Test execution can abort due to multiple reasons such as bad test code, source u
 
 ### Exclude items completed before a certain date in analytics views
 
-The [Analytics service](https://docs.microsoft.com/en-us/vsts/report/analytics/what-is-analytics?view=vsts) stores all work item history, including work items that are closed. Customers often don't want to report on older, closed work items. We have updated [Analytics views](https://docs.microsoft.com/en-us/vsts/report/analytics/what-are-analytics-views?view=vsts) to let you exclude work items that were completed before a specific date. This greatly decreases the amount of data loaded into Power BI. It also makes advanced calculations, like [time in state](https://docs.microsoft.com/en-us/vsts/report/powerbi/create-timeinstate-report?view=vsts), much more performant. You set this option on the **History** tab.
+The [Analytics service](https://docs.microsoft.com/en-us/vsts/report/analytics/what-is-analytics?view=vsts) stores all work item history, including work items that are closed. Customers often don’t want to report on older, closed work items. We have updated [Analytics views](https://docs.microsoft.com/en-us/vsts/report/analytics/what-are-analytics-views?view=vsts) to let you exclude work items that were completed before a specific date. This greatly decreases the amount of data loaded into Power BI. It also makes advanced calculations, like [time in state](https://docs.microsoft.com/en-us/vsts/report/powerbi/create-timeinstate-report?view=vsts), much more performant. You set this option on the **History** tab.
 
 > [!div class="mx-imgBorder"]
 ![Exclude completed items](_img/136_18.png)
@@ -239,7 +250,7 @@ Favorites are at the top.
 > [!div class="mx-imgBorder"]
 ![Mine pivot](_img/136_16.png)
 
-Scroll down to see your team's dashboards.
+Scroll down to see your team’s dashboards.
 
 > [!div class="mx-imgBorder"]
 ![All pivot](_img/136_17.png)
