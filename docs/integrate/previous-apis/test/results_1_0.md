@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance                | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project                 | string   |         | Name or ID of the team project.
 | run                     | int      |         | ID of the test run that contains the results.
 | Query
@@ -46,7 +46,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance                | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project                 | string   |         | Name or ID of the team project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result to get.
@@ -69,7 +69,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance                | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project                 | string   |         | Name or ID of the team project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result that contains the iterations.
@@ -99,7 +99,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance                | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project                 | string   |         | Name or ID of the team project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result that contains the iterations.
@@ -124,7 +124,7 @@ In a parameterized test, gets results for each parameter value.
 | Parameter               | Type     | Default | Notes
 |:------------------------|:---------|:--------|:-----------------------
 | URL
-| instance                | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance                | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project                 | string   |         | Name or ID of the team project.
 | run                     | int      |         | ID of the test run that contains the result.
 | result                  | int      |         | ID of the test result that contains the iterations.
@@ -159,7 +159,7 @@ Content-Type: application/json
 | Parameter               | Type   | Default | Notes
 |:------------------------|:-------|:--------|:------------------------
 | URL
-| instance                | string |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance                | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project                 | string |         | Name or ID of the team project.
 | Query
 | version                 | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -233,7 +233,7 @@ Content-Type: application/json
 | Parameter            | Type     | Default | Notes
 |:---------------------|:---------|:--------|:------------------------
 | URL
-| instance             | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance             | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project              | string   |         | Name or ID of the team project.
 | Query
 | version              | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -314,7 +314,7 @@ Content-Type: application/json
 | Parameter           | Type     | Default | Notes
 |:--------------------|:---------|:--------|:------------------------
 | URL
-| instance            | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance            | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project             | string   |         | Name or ID of the team project.
 | Query
 | version             | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -385,7 +385,7 @@ Content-Type: application/json
 | Parameter            | Type     | Default | Notes
 |:---------------------|:---------|:--------|:------------------------
 | URL
-| instance             | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance             | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project              | string   |         | Name or ID of the team project.
 | Query
 | version              | string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.

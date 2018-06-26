@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
 ms.date: 05/31/2018
@@ -25,7 +26,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When a change is made to the value of Release, then clear the value of "Milestone"     
 - When a change was made to the value of Remaining Work, then make Completed Work a required field
 - When the value of Approved is True, then make Approved By a required field 
-- When a user story is created, make make the following fields required: Priority, Risk, and  Effort
+- When a user story is created, make the following fields required: Priority, Risk, and  Effort
 
 [!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 

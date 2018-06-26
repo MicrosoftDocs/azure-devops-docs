@@ -16,7 +16,7 @@ ms.date: 08/23/2016
 [!INCLUDE [API_version](../_data/version.md)]
 
 Diffs compare a target version with a base version and return a list of items that are only in the target version.
-If either the target or base version isn't specified, the the default branch is used.
+If either the target or base version isn't specified, the default branch is used.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 | Parameter         | Type                         | Default | Notes
 |:------------------|:-----------------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance          | string                       |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance          | string                       |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project           | string                       |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string                       |         | ID of the [repository](./repositories.md).
 | Query
