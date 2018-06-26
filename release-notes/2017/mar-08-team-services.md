@@ -30,7 +30,7 @@ It is now extremely easy to assign a work item to a different user from your pho
 ![mobile identity](_img/03_08_03.png)
 
 ##Customized backlog levels
-Users can now add new backlog levels to manage the hierarchy of their work items and name them in a way that makes sense for their work item types. Users can also rename and recolor existing backlog levels, such as Stories or Features. See [Customize your backlogs or boards for a process](https://visualstudio.microsoft.com/en-us/docs/work/process/customize-process-backlogs-boards) for details on how to get started.
+Users can now add new backlog levels to manage the hierarchy of their work items and name them in a way that makes sense for their work item types. Users can also rename and recolor existing backlog levels, such as Stories or Features. See [Customize your backlogs or boards for a process](/vsts/work/process/customize-process-backlogs-boards) for details on how to get started.
 
 ![backlog levels](_img/03_08_05.png)
 
