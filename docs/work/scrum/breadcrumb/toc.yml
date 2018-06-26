@@ -1,11 +1,11 @@
-- name: VSTS and TFS
+- name: Azure Codex
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
   - name: Agile
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=agile
+    topicHref: /vsts/index#pivot=apps&panel=agile
     items:
-    - name: Scrum
+    - name: Sprints (Scrum)
       tocHref: /vsts/
       topicHref: /vsts/work/scrum/index

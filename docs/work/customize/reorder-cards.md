@@ -37,7 +37,7 @@ You can drag any work item to any column or swimlane on the Kanban board. You ca
 
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 > [!TIP]
-> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Set team defaults](../scale/set-team-defaults.md). 
+> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
 
 
 

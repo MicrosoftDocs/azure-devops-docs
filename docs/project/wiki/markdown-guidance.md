@@ -377,7 +377,7 @@ The path to the image file can be a relative path or the absolute path in Git or
 ## Tables
 
 Organize structured data with tables. Tables are especially useful for describing function parameters, object methods, and other data that has 
-a clear name to description mapping.
+a clear name to description mapping. You can format tables in pull requests, wiki, and markdown files such as READMe files and markdown widgets.  
 
 - Place each table row on its own line 
 - Separate table cells using the pipe character `|` 

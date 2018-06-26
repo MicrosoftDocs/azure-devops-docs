@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 Start planning your project by quickly adding user stories or requirements to your product backlog. From your product backlog, you can then start driving your code development efforts. 
 ::: moniker-end
 
@@ -24,13 +24,13 @@ Start planning your project by quickly adding user stories or requirements to yo
 Start planning your project by quickly adding user stories or requirements to your product backlog.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ## 5-Minute Quickstarts  
 
 - [Create your backlog](create-your-backlog.md)  
 - [Drive Git development](connect-work-items-to-git-dev-ops.md)
-- [Define area paths](../customize/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
-- [Define iteration paths](../customize/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
+- [Define area paths](../../organizations/settings/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
+- [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
 
 ::: moniker-end
 
@@ -38,8 +38,8 @@ Start planning your project by quickly adding user stories or requirements to yo
 ## 5-Minute Quickstarts  
 
 - [Create your backlog](create-your-backlog.md)  
-- [Define area paths](../customize/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
-- [Define iteration paths](../customize/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
+- [Define area paths](../../organizations/settings/set-area-paths.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json) 
+- [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json)   
 
 ::: moniker-end
 

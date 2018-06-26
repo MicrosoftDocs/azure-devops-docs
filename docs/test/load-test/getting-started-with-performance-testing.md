@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-header-vs-ts](../_shared/version-header-vs-ts.md)] 
 
-Check your app or web site's performance before you launch it or deploy updates to production.
+Check your app or web site's performance before you launch it or deploy updates to production by using load testing.
 Find problems before your customers do. Start running 
 [cloud-based load tests](https://visualstudio.microsoft.com/features/vso-cloud-load-testing-vs) 
 in almost no time with Visual Studio and Visual Studio Team Services (VSTS).

@@ -14,7 +14,7 @@ ms.topic: quickstart
 ms.date: 03/20/2018
 ---
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 # Add, update, and follow a work item 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -33,7 +33,7 @@ You add work items to plan and manage your project. You use different types of w
 
 -->
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="define-new-work">  </a>
 ## Add a work item 
@@ -64,7 +64,7 @@ Here we show how to add work items from the web portal.
 
 	You can [add tags to any work item to filter backlogs and queries](../track/add-tags-to-work-items.md).
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
+	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
 
 That's it! 
 
@@ -95,7 +95,7 @@ You can start adding work items once you connect to a team project. Here we show
 ## Update work items as work progresses
 As work progresses, team members can update the state and reassign it as needed. While the workflow states differ for different work item types, they usually follow a progression from New or Active to Completed or Done. 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 > [!div class="mx-imgBorder"]  
 > ![Update the State of a User Story](_img/add-work/update-state.png)   
 ::: moniker-end
@@ -146,7 +146,7 @@ Removed work items remain in the data store and can be reactivated by changing t
 
 With each update, changes are recorded in the History field which you can view through the **History** tab.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ![View change history](_img/add-work-item-history.png)  
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -156,7 +156,7 @@ With each update, changes are recorded in the History field which you can view t
 To find work items based on their history, see [History & auditing](../track/history-and-auditing.md).  
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ## Follow a work item
 
 When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.   

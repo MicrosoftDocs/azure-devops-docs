@@ -28,7 +28,7 @@ To consume NuGet packages from a feed, add the feed's NuGet endpoint as a packag
 
 ### macOS: Add the feed to your NuGet configuration
 
-1. Get a [Personal Access Token](../../../accounts/use-personal-access-tokens-to-authenticate.md) (PAT) and make a note of it.
+1. Get a [Personal Access Token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) (PAT) and make a note of it.
 1. Open the Preferences dialog from the **Visual Studio** menu in the menu bar.
 1. Select **NuGet** -> **Sources**.
 1. Select **Add** then enter your feed's name, URL, any username, and your PAT as the password.
@@ -68,4 +68,4 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 
 ### Using Visual Studio 2013 or earlier
 
-You'll need to get a [Personal Access Token](../../../accounts/use-personal-access-tokens-to-authenticate.md). When you're prompted for a username and password, use any username and your PAT as the password.
+You'll need to get a [Personal Access Token](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). When you're prompted for a username and password, use any username and your PAT as the password.

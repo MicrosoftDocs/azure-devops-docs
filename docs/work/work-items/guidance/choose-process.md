@@ -284,7 +284,7 @@ used by the three default processes.
 2.  With portfolio backlogs you can define a hierarchy of backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives.
     Each team can configure which [portfolio backlogs appear for their use](../../customize/select-backlog-navigation-levels.md).
 
-3.  You can define tasks from the [sprint backlog and task board](../../scrum/sprint-planning.md). 
+3.  You can define tasks from the [sprint backlog and task board](../../scrum/assign-work-sprint.md). 
     With capacity planning, teams can quickly determine if they are over or under capacity for a sprint.  
  
 

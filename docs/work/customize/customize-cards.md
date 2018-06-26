@@ -57,7 +57,7 @@ In the card shown below, the following customizations have been set for the bug 
 
 You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team. Does your team like to refer to work items by their ID? Do they want to see estimates? Do they want to highlight work items according to set criteria? Or, will just the bare bones of title and assignment suffice? 
 
-Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and task boards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../Work/kanban/kanban-basics.md) and [Sprint planning](../scrum/sprint-planning.md). 
+Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and task boards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../Work/kanban/kanban-basics.md) and [Sprint planning](../scrum/assign-work-sprint.md). 
 
 
 <a id="fields"></a>

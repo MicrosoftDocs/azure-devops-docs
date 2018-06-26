@@ -29,7 +29,7 @@ With bulk modify, you can edit fields, add or remove tags, reassign work, or mov
 
 In this topic you'll learn:  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 >[!div class="checklist"]    
 > * How to multi-select work items from a list and open the context menu  
 > * Edit one or more fields of several work items    
@@ -107,7 +107,7 @@ All of the following actions can be performed by team members that belong to the
 
 To start a bulk edit, begin by multi-selecting the work items you want to modify, either from the query results or the backlog. You can craft your query using the [query editor or search box](../track/using-queries.md). 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 Multi-select of work items on the backlog and sprint backlogs works in the same way as multi-select works within query results. 
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -117,7 +117,7 @@ You can use bulk modify by selecting work items from the backlog page or query r
 
 The menu options available to you change depending on the platform you work from and whether you work from a backlog page or query results list.  
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 <!---#### VSTS and TFS 2018-->
 
 <table valign="top">
@@ -180,7 +180,7 @@ To open the context menu, click (![actions icon](../_img/icons/actions-icon.png)
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <!---#### VSTS and TFS 2017 -->
 
 <img src="_img/bulk-modify-multi-select-ts.png" alt="VSTS, Backlog page, multi-select items, Open context menu, Move to iteration,  " style="border: 2px solid #C3C3C3;" />
@@ -216,7 +216,7 @@ To learn more about the Assign To and Iteration Path fields, see [Query by assig
 
 To assign or modify several fields, choose Edit from the context menu of one of the selected work items. Enter a value for each field that you want to update.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <!---#### VSTS and TFS 2017 -->
 
 1. For audit purposes, you can type a description for your bulk update task. To learn more about each field, see the [Work item field index](../work-items/guidance/work-item-field.md). 
@@ -242,11 +242,11 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 [!INCLUDE [temp](../_shared/assign-to-sprint.md)]
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 <a id="tags"></a>
 ## Bulk modify tags 
 

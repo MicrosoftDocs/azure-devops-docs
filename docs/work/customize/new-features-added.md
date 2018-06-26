@@ -94,7 +94,7 @@ TFS 2012
 Planning Tools
 </td>
 <td>
-Adds or updates process configuration that supports using the Agile tools: [product backlog](../backlogs/create-your-backlog.md), [plan sprints](../scrum/sprint-planning.md), [Kanban board](../kanban/kanban-basics.md), and [more](../scrum/define-sprints.md).<br/>
+Adds or updates process configuration that supports using the Agile tools: [product backlog](../backlogs/create-your-backlog.md), [plan sprints](../scrum/assign-work-sprint.md), [Kanban board](../kanban/kanban-basics.md), and [more](../scrum/define-sprints.md).<br/>
 
 Agile tools depend on the WITs, categories, and process configuration definitions that are made.  Definitions are interdependent. <br/>
 

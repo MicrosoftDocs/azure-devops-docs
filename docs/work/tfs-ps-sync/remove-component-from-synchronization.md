@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6e0dbfd4-e830-4b5a-a42f-536e744665fa
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---
@@ -136,6 +137,6 @@ When you delete a task from Project Server that has been synchronized with a wor
   
 ## Related articles  
  [Map integration components](map-integration-components.md)   
- [Configure and manage TFS resources](../../accounts/account-management.md)   
+ [Configure and manage TFS resources](../../organizations/accounts/account-management.md)   
  [Remove items that aren't synchronizing](remove-items-not-synching.md)   
  [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)

@@ -1,6 +1,6 @@
 ---
-title: Create a test plan - manual testing in VSTS
-description: Create test plans in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
+title: Create a test plan - manual testing in VSTS TestTools
+description: Test tools - Create test plans in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.prod: devops
 ms.technology: devops-test
@@ -37,7 +37,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 
 1. If you haven't already, 
    [sign up for VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
-   [create your project](../accounts/account-management.md), 
+   [create your project](../organizations/accounts/account-management.md), 
    and [create your backlog](../work/backlogs/create-your-backlog.md). 
 
 1. In VSTS, open your project.

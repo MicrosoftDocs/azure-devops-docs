@@ -150,7 +150,7 @@ History of work item added by Project Server Sync
   
  .  
   
- The following illustration shows how the tasks have been divided for two requirements assigned to Iteration 0. For more information, see [Sprint planning](../scrum/sprint-planning.md)  
+ The following illustration shows how the tasks have been divided for two requirements assigned to Iteration 0. For more information, see [Sprint planning](../scrum/assign-work-sprint.md)  
   
 > [!NOTE]
 >  The **Remaining Work** field for the parent work items automatically show the sum of all work defined for its child tasks.  

@@ -21,7 +21,7 @@ Branch policies are a powerful feature to ensure high quality code in your repo 
 
 ## Prerequisites
 
-* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../organizations/accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
 * A service that posts status to PRs. See [Create a pull request status server](https://go.microsoft.com/fwlink/?linkid=854108).
 
 ## Configure the branch policy 

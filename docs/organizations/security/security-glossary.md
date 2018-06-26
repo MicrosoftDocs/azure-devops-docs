@@ -49,7 +49,7 @@ A user account that has been granted membership to a VSTS account or TFS instanc
 
 ## Conditional access
 
-Conditional access provides support for securing VSTS resources backed by an Azure Active Directory (Azure AD) tenant. For example, you can enable multi-factor authentication to help protect against the risk of compromised credentials. To learn more, see [Manage conditional access to VSTS](../../accounts/manage-conditional-access.md).
+Conditional access provides support for securing VSTS resources backed by an Azure Active Directory (Azure AD) tenant. For example, you can enable multi-factor authentication to help protect against the risk of compromised credentials. To learn more, see [Manage conditional access to VSTS](../accounts/manage-conditional-access.md).
 
 ## Inheritance
 
@@ -101,7 +101,7 @@ A security group that is defined when a team is created and automatically popula
 
 ## Tenant
 
-An Azure Active Directory used to manage access or billing. To learn more, see [Change Azure AD tenant](../../accounts/change-azure-active-directory-vsts-account.md)
+An Azure Active Directory used to manage access or billing. To learn more, see [Change Azure AD tenant](../accounts/change-account-location.md)
 
 
 <!---

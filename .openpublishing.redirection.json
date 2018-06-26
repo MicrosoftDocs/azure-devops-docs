@@ -997,7 +997,7 @@
     },
     {
       "source_path": "docs/build-release/azure/deploy-aspnet5.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": false
     },
     {
@@ -1252,7 +1252,7 @@
     },
     {
       "source_path": "docs/work/work-in-sprints-vs.md",
-      "redirect_url": "/vsts/work/scrum/sprint-planning",
+      "redirect_url": "/vsts/work/scrum/assign-work-sprint",
       "redirect_document_id": false
     },
     {
@@ -1372,12 +1372,12 @@
     },
     {
       "source_path": "docs/build-release/aspnet/aspnet4/quick-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/get-started-azure-devops-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/aspnet/core/quick-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/get-started-azure-devops-project",
       "redirect_document_id": false
     },
     {
@@ -8017,7 +8017,12 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp",
+      "redirect_url": "/vsts/pipelines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp.md",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": true
     },
     {
@@ -8107,8 +8112,18 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/howto-webdeploy-webapps.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/howto-webdeploy-webapps.md",
+      "redirect_url": "/vsts/pipelines",
       "redirect_document_id": true
+    },
+          {
+      "source_path": "vsts/build-release/apps/cd/aspnet-core-to-azure-webapp.md",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "vsts/pipelines/apps/cd/aspnet-core-to-azure-webapp.md",
+      "redirect_url": "/vsts/pipelines/targets/webapp",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/provision-vm-in-vmware.md",
@@ -8548,6 +8563,266 @@
     {
       "source_path": "docs/pipelines/apps/aspnet/build-aspnet-core.md",
       "redirect_url": "/vsts/pipelines/languages/dotnet-core",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/access-with-azure-ad.md",
+      "redirect_url": "/vsts/organizations/accounts/access-with-azure-ad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/account-management.md",
+      "redirect_url": "/vsts/organizations/accounts/account-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/account-preferences.md",
+      "redirect_url": "/vsts/organizations/accounts/account-preferences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-account-users-from-user-hub.md",
+      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-basic-or-vs-subscription-users.md",
+      "redirect_url": "/vsts/organizations/accounts/add-basic-or-vs-subscription-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-external-user.md",
+      "redirect_url": "/vsts/organizations/accounts/add-external-user",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-team-members-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/add-team-members-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/add-users-to-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/add-users-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/assign-access-levels-and-extensions-by-group-membership.md",
+      "redirect_url": "/vsts/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-account-location.md",
+      "redirect_url": "/vsts/organizations/accounts/change-account-location",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-account-ownership-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/change-account-ownership-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/change-application-access-policies-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/change-application-access-policies-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/connect-account-to-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/create-account-msa-or-work-student.md",
+      "redirect_url": "/vsts/organizations/accounts/create-account-msa-or-work-student",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/create-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/create-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/delete-account-users.md",
+      "redirect_url": "/vsts/organizations/accounts/delete-account-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/delete-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/delete-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/delete-users-from-services-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/delete-users-from-services-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/delete-your-vsts-account.md",
+      "redirect_url": "/vsts/organizations/accounts/delete-your-vsts-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/disconnect-account-from-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/disconnect-account-from-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-add-administrators.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-add-administrators",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-add-delete-users.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-add-delete-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-add-team-members.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-add-team-members",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-azure-access.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-azure-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-change-account-ownership.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-change-account-ownership",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-change-app-access.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-change-app-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-create-account.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-create-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-create-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-create-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-delete-restore-vsts-account.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-delete-restore-vsts-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-manage-group-based-licensing.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-manage-group-based-licensing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-rename-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-rename-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/faq-set-up-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/faq-set-up-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/index.md",
+      "redirect_url": "/vsts/organizations/accounts/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/invite-outside-users.md",
+      "redirect_url": "/vsts/organizations/accounts/invite-outside-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/manage-azure-active-directory-groups-vsts.md",
+      "redirect_url": "/vsts/organizations/accounts/manage-azure-active-directory-groups-vsts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/manage-conditional-access.md",
+      "redirect_url": "/vsts/organizations/accounts/manage-conditional-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/manage-users-table-view.md",
+      "redirect_url": "/vsts/organizations/accounts/manage-users-table-view",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/migrate-to-group-based-resource-management-in-VSTS.md",
+      "redirect_url": "/vsts/organizations/accounts/migrate-to-group-based-resource-management-in-VSTS",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/recover-your-vsts-account.md",
+      "redirect_url": "/vsts/organizations/accounts/recover-your-vsts-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/remove-direct-assignments.md",
+      "redirect_url": "/vsts/organizations/accounts/remove-direct-assignments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/rename-team-project.md",
+      "redirect_url": "/vsts/organizations/accounts/rename-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/rename-vsts-account.md",
+      "redirect_url": "/vsts/organizations/accounts/rename-vsts-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/resources-granted-to-project-members.md",
+      "redirect_url": "/vsts/organizations/accounts/resources-granted-to-project-members",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/save-team-project-data.md",
+      "redirect_url": "/vsts/organizations/accounts/save-team-project-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/set-up-vs.md",
+      "redirect_url": "/vsts/organizations/accounts/set-up-vs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/accounts/use-personal-access-tokens-to-authenticate.md",
+      "redirect_url": "/vsts/organizations/accounts/use-personal-access-tokens-to-authenticate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/sprint-planning.md",
+      "redirect_url": "/vsts/work/scrum/assign-work-sprint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/capacity-planning.md",
+      "redirect_url": "/vsts/work/scrum/set-capacity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/connect-vso-pbi-vs.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/create-rollup-charts.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/create-trend-charts.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/report-on-vso-with-power-bi-vs.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
       "redirect_document_id": false
     }
   ]
