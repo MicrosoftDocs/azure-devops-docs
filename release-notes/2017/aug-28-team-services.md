@@ -55,7 +55,7 @@ While developing the new **Work Items** hub, we wanted to ensure that you could 
 > [!div class="mx-imgBorder"]
 ![filters](_img/08_28_29.png)
 
-See the [documentation for the Work Items hub](https://visualstudio.microsoft.com/docs/work/work-items/view-add-work-items) for more information.
+See the [documentation for the Work Items hub](/vsts/work/work-items/view-add-work-items) for more information.
 
 ### Customizable work item rules
 
@@ -78,7 +78,7 @@ To get started with rules, simply follow these steps:
 1. Create or select an existing inherited process
 1. Select the work item type you would like to add rules on, click **Rules**, and click **New rule**
 
-Check out the [documentation for custom rules](https://visualstudio.microsoft.com/docs/work/process/custom-rules) for more information.
+Check out the [documentation for custom rules](/vsts/work/process/custom-rules) for more information.
 
 ### Mentioned support for the My work items page
 
@@ -131,7 +131,7 @@ A fork starts with all the contents of its upstream (original) repository. When 
 
 You can create PRs in either direction: from fork to upstream, or upstream to fork. The most common direction will be from fork to upstream. The destination repository’s permissions, policies, builds, and work items will apply to the PR.
 
-Read the [documentation for forks](https://visualstudio.microsoft.com/docs/git/concepts/forks) for more information.
+Read the [documentation for forks](/vsts/git/concepts/forks) for more information.
 
 ### File minimap
 
@@ -227,7 +227,7 @@ You can now delete custom templates in the new release definition editor.
 
 #### Visually handle permissions on the editor
 
-The new release definition editor now has specific in context messages to handle the various [permissions](https://visualstudio.microsoft.com/docs/build/concepts/policies/permissions#release-permissions).
+The new release definition editor now has specific in context messages to handle the various [permissions](/vsts/build/concepts/policies/permissions#release-permissions).
 
 #### Drag and drop tasks across phases
 
@@ -239,7 +239,7 @@ Release templates let you create a baseline for you to get started when defining
 
 ### Conditional release tasks and phases
 
-Similar to [conditional build tasks](https://visualstudio.microsoft.com/docs/build/concepts/process/conditions), you can now run a task or phase only if specific conditions are met. This will help you in modeling rollback scenarios.
+Similar to [conditional build tasks](/vsts/build/concepts/process/conditions), you can now run a task or phase only if specific conditions are met. This will help you in modeling rollback scenarios.
 
 If the built-in conditions don’t meet your needs, or if you need more fine-grained control over when the task or phase runs, you can specify custom conditions. Express the condition as a nested set of functions. The agent evaluates the innermost function and works its way outwards. The final result is a boolean value that determines if the task to be run.
 
@@ -288,7 +288,7 @@ Cloud load testing agents are now able to run the JMeter 3.2 engine. Load tests 
 >
 > This capability is enabled through the **Streamlined User Management** [preview feature](/vsts/project/navigation/preview-features) on your profile and/or account.
 
-Effective user management helps administrators ensure they are paying for the right resources and enabling the right access in their projects. We’ve repeatedly heard in support calls, and from our customers that they want capabilities to simplify this process in VSTS. This sprint, we are releasing an experience to general availability, which begins to address these issues. See the [documentation for the User hub](https://visualstudio.microsoft.com/docs/setup-admin/team-services/manage-users-and-access-user-hub-team-services) for more information. Here are some of the changes that you’ll see light up:
+Effective user management helps administrators ensure they are paying for the right resources and enabling the right access in their projects. We’ve repeatedly heard in support calls, and from our customers that they want capabilities to simplify this process in VSTS. This sprint, we are releasing an experience to general availability, which begins to address these issues. See the [documentation for the User hub](/vsts/setup-admin/team-services/manage-users-and-access-user-hub-team-services) for more information. Here are some of the changes that you’ll see light up:
 
 #### Invite people to the account in one easy step
 
@@ -320,7 +320,7 @@ We want to make sure each of your administrators has the tools they need to easi
 
 ### Graph REST APIs in Public Preview
 
-The **Graph REST API** resources allow developers to write applications that manage users, groups and group memberships in VSTS. The API set covers key user management scenarios including adding an MSA or AAD user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. Learn more about the API in our [documentation and samples](https://visualstudio.microsoft.com/docs/integrate/api/graph/overview).
+The **Graph REST API** resources allow developers to write applications that manage users, groups and group memberships in VSTS. The API set covers key user management scenarios including adding an MSA or AAD user to VSTS, creating a VSTS group, and adding/removing members from a VSTS group. Learn more about the API in our [documentation and samples](/vsts/integrate/api/graph/overview).
 
 ### Profile Card
 
@@ -333,7 +333,7 @@ Azure Active Directory (AAD) users will be able to see a users **Reports to** hi
 
 ### Improved authentication documentation and samples
 
-In the past, our REST documentation has been focused solely on using PATs for access to our REST APIs. We’ve updated our documentation for extensions and integrations to give guidance on how best to authenticate given your application scenario. Whether you’re developing a native client application, interactive web app, or simply calling an API via Powershell, we have clear sample on how best to authenticate with VSTS. For more information see the [documentation](https://visualstudio.microsoft.com/docs/integrate/get-started/authentication/authentication_guidance).
+In the past, our REST documentation has been focused solely on using PATs for access to our REST APIs. We’ve updated our documentation for extensions and integrations to give guidance on how best to authenticate given your application scenario. Whether you’re developing a native client application, interactive web app, or simply calling an API via Powershell, we have clear sample on how best to authenticate with VSTS. For more information see the [documentation](/vsts/integrate/get-started/authentication/authentication_guidance).
 
 ## Feedback
 
