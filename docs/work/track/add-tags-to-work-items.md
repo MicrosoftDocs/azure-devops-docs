@@ -27,16 +27,21 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 <a id="assign"></a>
 ## Add tags to a work item
 
-From the web portal, open a work item and add a tag. Click Add and type your keyword. Or, select from the list of previously assigned tags.  
+Tags should be 400 characters or less and not contain separators such as a `,` (comma), `;` (semicolon), or other formatting character. 
 
 ::: moniker range=">= tfs-2017"
+From the web portal, open a work item and add a tag. Choose **Add tag** and type your keyword. Or, select from the list of previously assigned tags.  
 
 > [!div class="mx-imgBorder"]
 > ![VSTS, TFS 2018-Add one or more tags to a work item](_img/add-tags/add-tag-vsts.png)
 ::: moniker-end
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"
+From the web portal, open a work item and add a tag. Choose **Add** and type your keyword. Or, select from the list of previously assigned tags.  
+
 ![Add one or more tags to a work item](_img/add-tags-to-work-items-vso-tfs.png)  
 ::: moniker-end
+
 To add several tags at one time, type a comma between tags. Tags are case sensitive.  
 
 Tags that appear in the tag bar are already assigned to the work item. To unassign a tag, simply choose the x on the tag,![Delete a tag assigned to a work item](_img/add-tags/unassign-a-tag.png).   

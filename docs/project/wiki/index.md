@@ -84,7 +84,7 @@ Repository README files and wikis are great ways to share information with your 
 
 - [Markdown guidance](markdown-guidance.md)
 - [Keyboard shortcuts to manage Wiki pages](markdown-guidance.md)
-- [Navigate in the web portal](../../user-guide/work-web-portal.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json n) 
+- [Navigate in the web portal](../../user-guide/work-web-portal.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json) 
  
 ## Resources 
 
