@@ -118,7 +118,7 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 > [!TIP]  
 > From the web portal, you can [multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature.  To change, move, delete, or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md). 
@@ -239,7 +239,7 @@ By changing the State of a work item to Removed, you effectively remove it from 
 
 To cause removed items to not show up in queries, you must add a clause that indicates which states you want the query to filter for. 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 <a id="delete"> </a> 
 ## Delete work items  
 ::: moniker-end
@@ -247,7 +247,7 @@ To cause removed items to not show up in queries, you must add a clause that ind
 > [!NOTE]  
 ><b>Feature availability: </b> The Delete and Recycle bin features are available from TFS 2015.2 and later versions. 
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related WITS, see [Delete test artifacts](#delete-test). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
@@ -285,7 +285,7 @@ Restoring or deleting work items from the web portal isn't a supported feature f
 > **Feature availability**: The Delete and Recycle bin features require TFS 2015.2 or later version.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 1. To restore deleted items, open the Recycle bin from the web portal.  
  
 	![Open Recycle bin](_img/move-change-delete/open-recycle-bin.png)
@@ -344,7 +344,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ---
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="delete-test"> </a> 
 ## Delete test artifacts  
@@ -364,7 +364,7 @@ To delete test artifacts, the following restrictions and operations apply:
 >We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 1. To delete a test case, open it from the web portal and choose the Permanently delete option from the actions menu. (Bulk deletion is not supported from a query results page.)     
  
 	![Delete a test case and associated test artifacts from the web form](_img/move-change-delete/delete-test-artifacts-form.png)  
@@ -393,7 +393,7 @@ To learn more about managing test artifacts, see:
 - [Create a test plan](../../test/create-a-test-plan.md)
 - [Control how long to keep test results](../../test/how-long-to-keep-test-results.md) 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ### Delete and restore actions performed under the hood  
 
@@ -425,7 +425,7 @@ When you restore a work item, the following actions occur:
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 #### Delete test artifacts
 1.	Removes the deleted test artifact from the test case management (TCM) data store and deletes the underlying work item

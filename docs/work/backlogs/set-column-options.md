@@ -64,7 +64,7 @@ You can change the column order, column size, or sort options by using the follo
 	- To reverse the sort order, shift-click on the field 
 	- To sort by multiple columns, shift-click on each column in the order you want to sort   
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 For additional keyboard shortcuts, enter **Shift-?** to display available commands based on the page you're on. 
 ::: moniker-end
 

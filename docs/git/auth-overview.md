@@ -39,7 +39,7 @@ Use personal access tokens to authenticate if you don't already have SSH keys se
 
 ![Animated GIF showing creation of PAT in VSTS](_img/pat_creation.gif)
 
-[Learn more about personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)
+[Learn more about personal access tokens](../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 
 ### Use credential managers to generate tokens
 

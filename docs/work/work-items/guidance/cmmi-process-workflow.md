@@ -340,7 +340,7 @@ The feature work item contains similar fields provided for requirements and incl
 ## Define tasks
 
 
-When your team manages their work in sprints, they can use the [sprint backlog page](../../scrum/sprint-planning.md) to break down the work to be accomplished into distinct tasks.  
+When your team manages their work in sprints, they can use the [sprint backlog page](../../scrum/assign-work-sprint.md) to break down the work to be accomplished into distinct tasks.  
 
 <img src="_img/IC697755.png" alt="Web portal, Add task link on a sprint backlog page" style="border: 2px solid #C3C3C3;" />
 
@@ -388,7 +388,7 @@ When teams estimate work they define tasks and estimate the hours or days to com
 <td><p>[Remaining Work](../../track/query-numeric.md)</p></td>
 <td>
 
-<p>The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](../../scale/capacity-planning.md), the [sprint burndown chart](../../scrum/sprint-burndown.md), and the [Sprint Burndown](https://msdn.microsoft.com/library/ff731588.aspx) report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
+<p>The amount of work remaining to complete a task. As work progresses, update this field. It's used to calculate [capacity charts](../../scrum/set-capacity.md), the [sprint burndown chart](../../scrum/sprint-burndown.md), and the [Sprint Burndown](https://msdn.microsoft.com/library/ff731588.aspx) report. </p><p>If you divide a task into subtasks, specify hours for the subtasks only. You can specify work in any unit of measurement your team chooses.</p>
 
 </td>
 </tr>
@@ -432,7 +432,7 @@ You can add an issue from the  [New work item widget](../../../report/dashboards
 
 ![Add work item from a New work item widget](_img/cmmi-new-work-item-widget.png)  
 
-Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../scale/set-team-defaults.md). To change the team context, see [Switch team context](../../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
+Work items you add from the widget are automatically scoped to your [team's default area and iteration paths](../../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team context](../../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json).  
 
 
 [!INCLUDE [temp](../../_shared/common-work-item-fields.md)]   

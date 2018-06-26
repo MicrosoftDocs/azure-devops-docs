@@ -1,6 +1,6 @@
 ---
-title: Run manual tests - manual testing in VSTS
-description: Run manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
+title: Run manual tests - manual testing in VSTS TestTools
+description: Test tools - Run manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
 ms.prod: devops
 ms.technology: devops-test

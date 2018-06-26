@@ -13,7 +13,7 @@ ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.manager: douge
 ms.author: kaelli
 ms.topic: quickstart
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2018'
 ms.date: 03/20/2018 
 ---
 
@@ -21,31 +21,54 @@ ms.date: 03/20/2018
 
 **VSTS | TFS 2018.2**  
 
-View work items that you created or are assigned to you.  The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. You can enable it from the [Preview features menu](../../project/navigation/preview-features.md) that you access from your account profile.
+View work items that you created or are assigned to you. The **Work>Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a team project. 
 
+::: moniker range=">= tfs-2018"
 > [!NOTE]     
-> **Feature availability:** The **Work Items** page is in preview and currently available from VSTS only.
+> **Feature availability:** The **Work Items** page is in preview and currently available from TFS 2018.2 and later versions. 
+::: moniker-end  
 
 ## Prerequisites 
 
 - You must connect to a team project. If you don't have an account or team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md). You can then [connect to a team project from your web portal or Visual Studio](../../user-guide/connect-team-projects.md).
 - To view or add work items, you must be a member of the Contributors group or be granted [Stakeholder access](../../organizations/security/get-started-stakeholder.md). If you don't have access to the team project, ask the [account owner or project administrator](../../organizations/security/lookup-account-owner-admin.md) to add you.
- 
+
 
 ## Open the Work Items page
 You can start viewing and adding work items once you connect to a team project. 
 
 <a id="browser" /> 
 
-Open a browser window, click the **Work** hub, and then the **Work Items** page. 
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+
+# [Vertical navigation](#tab/vertical)
+::: moniker range="vsts"
+(1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+
+> [!div class="mx-imgBorder"]  
+> ![Open Work>Work Items, new navigation](_img/view-add/open-work-items-agile.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+::: moniker-end
+
+# [Horizontal navigation](#tab/horizontal)
+
+Open a browser window, choose the **Work** hub, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page ](_img/view-add/work-items-hub.png)
+
+---
 
 > [!NOTE]    
 >Depending on the process chosen when the team project was created&mdash;[Agile](guidance/agile-process-workflow.md), [Scrum](guidance/scrum-process-workflow.md), or [CMMI](guidance/cmmi-process-workflow.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
 > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
+
 
 ## View work items
 
@@ -84,7 +107,7 @@ For example, here we choose User Story.
 ![Work hub, Work Items page, Add a work item ](_img/view-add/work-items-hub-new.png)
 
 > [!TIP]    
-> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../scale/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
+> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 

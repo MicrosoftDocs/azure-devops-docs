@@ -24,7 +24,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |- [Git branch](../../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../../report/analytics/analytics-security.md)<br/>- [Analytics views](../../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |- [Git branch](../../git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../../report/analytics/analytics-security.md)<br/>- [Analytics views](../../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
 
 ::: moniker-end
 
@@ -596,7 +596,7 @@ You manage collection-level permissions through the [web portal admin context](.
 			<blockquote>
 				Additional permissions may be required depending on your deployment.
 	
-				[Create a New Team Project Wizard](../../accounts/create-team-project.md).
+				[Create a New Team Project Wizard](../accounts/create-team-project.md).
 			</blockquote>
 		</td>
 	</tr>
@@ -621,7 +621,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="delete-team-project-permission">Delete team project</td>
 		<td>
-			Can [delete team projects](../../accounts/delete-team-project.md).
+			Can [delete team projects](../accounts/delete-team-project.md).
 			<blockquote>
 				Deleting a team project will delete all data that is associated with the team project.
 				You cannot undo the deletion of a team project except
@@ -752,7 +752,7 @@ You manage project-level permissions from the [web portal admin context](../../u
 	</tr>
 	<tr>
 		<td id="delete-team-project-permission">Delete team project</td>
-		<td>Can [delete the team project](../../accounts/delete-team-project.md) from the collection.</td>
+		<td>Can [delete the team project](../accounts/delete-team-project.md) from the collection.</td>
 	</tr>
 	<tr>
 		<td id="delete-test-runs-permission">Delete test runs</td>
@@ -816,7 +816,7 @@ You manage project-level permissions from the [web portal admin context](../../u
 	</tr>
 	<tr>
 		<td id="rename-team-project-permission">Rename team project</td>
-		<td>Can [change the name of the team project](../../accounts/rename-team-project.md).</td>
+		<td>Can [change the name of the team project](../accounts/rename-team-project.md).</td>
 	</tr>
 	<tr>
 		<td id="view-analytics-permission">View analytics</td>
@@ -1971,7 +1971,7 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 ## Related notes
 
 - [About permissions](about-permissions.md)  
-- [Add users to a team project](../../accounts/add-team-members-vs.md) (VSTS)   
+- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)   
 - [Add users to a team project](../../organizations/security/add-users-team-project.md) (TFS)   
 - [Add users to an administrator role](/tfs/server/admin/add-administrator-tfs)   
 - [Make a user a team admin](../../work/scale/manage-team-assets.md)  

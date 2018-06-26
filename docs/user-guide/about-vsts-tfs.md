@@ -102,9 +102,9 @@ In TFS, you provide users access to deployments by adding Active Directory (AD) 
 As users are added and removed in AD they also gain and lose access to TFS. 
 
 In VSTS, you can use a similar mechanism to 
-[provide access to groups of users](../accounts/manage-azure-active-directory-groups-vsts.md) 
+[provide access to groups of users](../organizations/accounts/manage-azure-active-directory-groups-vsts.md) 
 by adding Azure AD groups to TFS groups. If you use Microsoft Accounts instead of Azure AD, you will have to
-[add users](../accounts/add-account-users-assign-access-levels.md) one at a time. 
+[add users](../organizations/accounts/add-account-users-from-user-hub.md) one at a time. 
 
 ### Manage user access
 
@@ -120,7 +120,7 @@ Visual Studio subscribers can have either Basic or Advanced access, based on the
 Note that TFS does not attempt to verify these licenses or enforce compliance. 
 
 In VSTS, you must 
-[assign an access level](../accounts/add-account-users-assign-access-levels.md)
+[assign an access level](../organizations/accounts/add-account-users-from-user-hub.md)
 to each user in your account's Users hub. VSTS validates Visual Studio subscribers as 
 they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions. 
 To give Basic access to more users, you'll need to set up billing for your account and

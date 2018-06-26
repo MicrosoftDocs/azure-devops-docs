@@ -93,3 +93,7 @@ If you prefer to run your tests in a local environment rather than in the cloud,
 > See also [Manual and exploratory testing](../index.md), [Continuous testing](../../pipelines/index.md), [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code).
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+
+## Videos 
+
+> [!VIDEO https://www.youtube.com/embed/Qqh2OqB0wng?start=0]

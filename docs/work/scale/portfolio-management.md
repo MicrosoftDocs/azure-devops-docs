@@ -143,7 +143,7 @@ You'll need to be a [project administrator](../../organizations/security/set-pro
 
 ### Define a single sprint cadence for all teams 
 
-If your feature teams use Scrum and work in sprints, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates as described in [Add iterations and set iteration dates](../customize/set-iteration-paths-sprints.md). 
+If your feature teams use Scrum and work in sprints, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 You do this from the team project admin context. 
 
@@ -157,7 +157,7 @@ Here we've defined the start and end dates of the first 6 sprints corresponding 
 
 These next set of steps can be performed by a team administrator.  
 - [Add team members](multiple-teams.md#add-team-members)
-- [Select sprints for the team](../scale/set-team-defaults.md#activate)
+- [Select sprints for the team](../../organizations/settings/set-team-defaults.md#activate)
 - [Activate backlog levels](../customize/select-backlog-navigation-levels.md) 
 - [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md) 
 
@@ -171,13 +171,13 @@ With the hierarchical set of teams in place, you're well positioned to start pla
 - [Add management dashboards with multi-team views](visibility-across-teams.md#add-management-dashboards-with-multi-team-views). 
 - [Work with multi-team ownership of backlog items](../backlogs/work-multi-team-ownership-backlogs.md)
 - [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md) 
-- [Track capacity when working on more than one team](capacity-planning.md#track-capacity-per-team) 
+- [Track capacity when working on more than one team](../scrum/set-capacity.md#track-capacity-per-team) 
 
 ## Related articles
  
 - [Create your backlog](../backlogs/create-your-backlog.md)  
 - [Kanban](../kanban/kanban-basics.md)
-- [Sprint-planning](../scrum/sprint-planning.md)
+- [assign-work-sprint](../scrum/assign-work-sprint.md)
 - [Organize your backlog](../backlogs/organize-backlog.md)
 - [Customize your work tracking experience](../customize/customize-work.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Selenium testing with continuous integration in VSTS
+title: Selenium testing with continuous integration in VSTS - test automation tools
 description: UI Testing with Selenium in a continuous deployment pipeline in Visual Studio Team Services (VSTS) and Team Foundation Server TFS
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.prod: devops
@@ -20,7 +20,7 @@ Performing user interface (UI) testing as part of the
 release process is a great way of detecting
 unexpected changes, and need not be difficult. This
 topic describes using Selenium to test your website
-during a continuous deployment release.
+during a continuous deployment release and test automation.
 
 > Typically you will run unit tests in your build workflow,
 and functional (UI) tests in your release workflow after your

@@ -263,7 +263,7 @@ featureFlags:
                                 <div class="group">
                                     <h3>Admin</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/accounts/index">Account Management</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/accounts/index">Account Management</a></li>
                                         <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/security/index">Security and Identity</a></li>
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
@@ -921,7 +921,7 @@ featureFlags:
                         <a href="#admin">Admin</a>
                         <ul id="admin" class="cardsA">
                             <li>
-                                <a href="/vsts/accounts/index">
+                                <a href="/vsts/organizations/accounts/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

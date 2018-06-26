@@ -43,6 +43,9 @@ In this topic, you'll learn:
 
 [!INCLUDE [temp](../_shared/image-differences.md)]  
 
+[!INCLUDE [temp](../_shared/prerequisites.md)]
+
+[!INCLUDE [temp](../_shared/open-kanban-board.md)] 
 
 ## Add a task or set of tasks 
 
@@ -66,7 +69,7 @@ In this topic, you'll learn:
 
 	<img src="_img/kanban-board-open-task-form.png" alt="Open task work item form from task checklist" style="border: 1px solid #C3C3C3;" />  
 
-	Tasks that you create from the Kanban board will show up on your sprint task board. Also, tasks that you create from the [sprint backlog](../scrum/sprint-planning.md) or [taskboard](../scrum/task-board.md) will show up within tasks checklists on the Kanban board.  
+	Tasks that you create from the Kanban board will show up on your sprint task board. Also, tasks that you create from the [sprint backlog](../scrum/assign-work-sprint.md) or [taskboard](../scrum/task-board.md) will show up within tasks checklists on the Kanban board.  
 
 
 ## Mark a task as done 

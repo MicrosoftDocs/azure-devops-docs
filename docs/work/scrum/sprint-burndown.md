@@ -8,17 +8,18 @@ ms.assetid: 706331A0-3758-4575-9B51-AC828F57161B
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
-ms.date: 08/02/2017
+monikerRange: '>= tfs-2013'
+ms.date: 06/21/2018
 ---
 
 
 # Sprint burndown 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](sprint-planning.md). 
+Throughout your sprint, you can monitor the sprint burndown chart to determine if your team is on track to complete its [sprint plan](assign-work-sprint.md). 
 
-Use this topic to learn
+Use this topic to learn:
 
 >[!div class="checklist"]      
 > * How to view current and past sprint burndowns 
@@ -28,7 +29,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 
 > [!NOTE]    
->The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](sprint-planning.md) and [Task board](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
+>The system automatically builds a sprint burndown chart based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](assign-work-sprint.md) and [Task board](task-board.md).  To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
 <table>
 <tr valign="top">
@@ -51,13 +52,95 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
  
 
 <a id="open-chart">  </a>
-###Open sprint burndown chart 
-Click the chart to display it in a larger view. 
 
-![Open sprint burndown chart](_img/sprint-burndown-open-chart.png)
 
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+
+## Open the Sprint backlog for your team 
+
+# [Vertical navigation](#tab/vertical)
+
+::: moniker range="vsts"
+
+0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Work>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+1. 
+	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
+
+	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](_img/add-tasks/team-selector-sprints-agile.png) 
+
+0. To choose a different sprint than the one shown, open the sprint selector and choose the sprint you want. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another sprint](_img/add-tasks/select-specific-sprint-agile.png)
+
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+
+::: moniker-end
+
+
+# [Horizontal navigation](#tab/horizontal)
+
+0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+
+	> [!div class="mx-imgBorder"]
+	> ![Open the Work>Backlogs page, standard hubs](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+
+	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+
+	The set of sprints selected for your team appears in the left pane. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md). 
+
+0. Choose the sprint whose burndown chart you want to view. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another sprint](_img/add-tasks/choose-sprint-standard.png)
+
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+
+---
+
+## Open the sprint burndown chart 
+
+Choose the chart to display it in a larger view. 
+# [Vertical navigation](#tab/vertical)
+
+::: moniker range="vsts"
+> [!div class="mx-imgBorder"]  
+> ![Open sprint burndown chart](_img/burndown/open-burndown-chart-agile.png)
+
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+
+::: moniker-end
+
+# [Horizontal navigation](#tab/horizontal)
+::: moniker range=">= tfs-2017"
+> [!div class="mx-imgBorder"]  
+> ![Open sprint burndown chart](_img/burndown/sprint-burndown-open-chart.png)
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+> [!div class="mx-imgBorder"]  
+> ![Open sprint burndown chart](_img/sprint-burndown-open-chart.png)
+::: moniker-end
+
+---
 > [!NOTE]    
->You can't add the system-generated sprint burndown chart to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown-widget), which captures the same information for the current sprint, to a dashboard. 
+> You can't add the system-generated sprint burndown chart to a dashboard. However, you can add the [Sprint burndown widget](../../report/dashboards/widget-catalog.md#sprint-burndown-widget), which captures the same information for the current sprint, to a dashboard. 
 
 
 In particular you can review your sprint burndown charts to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
@@ -78,7 +161,7 @@ In order to access the sprint burndown chart and use it to monitor your sprint p
 
 **Required:** 
 *	[Schedule sprints for your team](define-sprints.md).  
-*	[Define and estimate tasks](sprint-planning.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
+*	[Define and estimate tasks](add-tasks.md#define-tasks) for each product backlog item you're working on in the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
 *	[Update Remaining Work for each sprint task](task-board.md#update-tasks) as work progresses.  
 
 **Recommended:**  
@@ -89,9 +172,37 @@ In order to access the sprint burndown chart and use it to monitor your sprint p
 
 <a id="past-sprints">  </a>
 ##Current and past sprint burndown charts
-As you complete each sprint, the system maintains a history of your activity. You can always review past sprints and sprint burndown charts by choosing the sprint listed under the Past section.  
+As you complete each sprint, the system maintains a history of your activity. 
 
-<img src="_img/ALM_DS_PastSprints.png" alt="Past sprints provide historical record" style="border: 2px solid #C3C3C3;" />
+# [Vertical navigation](#tab/vertical)
+::: moniker range="vsts"
+To view a past sprint and its burndown chart, select the sprint from the Sprint selector.  
+> [!div class="mx-imgBorder"]  
+> ![Select a past sprint from the sprint selector](_img/burndown/select-past-sprint.png) 
+
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+
+::: moniker-end
+
+
+# [Horizontal navigation](#tab/horizontal)
+To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
+::: moniker range=">= tfs-2017"
+> [!div class="mx-imgBorder"]  
+> ![Past sprints provide historical record](_img/burndown/past-sprints.png) 
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+![Past sprints provide historical record, tfs 2013, 2015](_img/ALM_DS_PastSprints.png)  
+::: moniker-end
+---
+
+
 
 ##Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
@@ -103,7 +214,7 @@ You can use your team [velocity](../../report/dashboards/velocity-chart-data-sto
 
 You can learn more about defining, planning, and executing your sprints from these topics:  
 *	[Schedule sprints](define-sprints.md)  
-*	[Sprint planning](sprint-planning.md)  
+*	[Sprint planning](assign-work-sprint.md)  
 *	[Task board](task-board.md)  
 
 
@@ -112,9 +223,9 @@ And, from these industry resources:
 *	[Task sizing in Agile software development](http://www.solutionsiq.com/task-sizing-in-agile-software-development/)  
 
 <!---
-[//]: TBD - when have more time and when dashboards become more evident
-[//]: # ###Other types of burndown charts
-[//]: #  Release burndown 
+TBD - when have more time and when dashboards become more evident
+Other types of burndown charts
+Release burndown 
 -->
 
 For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../customize/reference/process-configuration-xml-element.md#fields).  

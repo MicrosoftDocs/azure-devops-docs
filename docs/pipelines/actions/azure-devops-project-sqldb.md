@@ -182,3 +182,7 @@ To learn more about the VSTS pipeline see this tutorial:
 
 > [!div class="nextstepaction"]
 > [Customize CD process](../release/define-multistage-release-process.md)
+
+## Videos
+
+> [!VIDEO https://channel9.msdn.com/Events/Build/2018/BRK3308/player]

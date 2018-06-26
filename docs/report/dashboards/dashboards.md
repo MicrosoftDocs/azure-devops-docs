@@ -16,7 +16,6 @@ ms.date: 03/27/2018
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
-
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your team project site. 
 
 The Overview page provides access to a default team dashboard which you can customize by adding, removing, or rearranging the tiles. Each tile corresponds to a widget that provides access to one or more features or functions.   
@@ -31,7 +30,6 @@ The Overview page provides access to a default team dashboard which you can cust
 > [!NOTE]   
 > For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
 ::: moniker-end
-
 
 
 ::: moniker range="vsts"

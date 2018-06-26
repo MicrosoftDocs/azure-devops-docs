@@ -40,7 +40,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 ## Prerequisites
 
-* A VSTS account. If you don't have one, you can [sign up](../accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don't have one, you can [sign up](../organizations/accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
   * If you are using TFS, you must have TFS 2017 Update 1 or higher. For instructions on manually importing a Git repo using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
 ::: moniker range=">= tfs-2017"
@@ -111,7 +111,7 @@ Although most of the time the import is successful, the following conditions can
 ### What if my source repository is behind two-factor authentication?
 
 The import service uses REST APIs to validate and trigger import and cannot work directly with repositories that require two-factor authentication.
-Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [VSTS](../accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
+Most Git hosting providers like [GitHub](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and [VSTS](../organizations/accounts/use-personal-access-tokens-to-authenticate.md) support personal tokens which can be supplied to the import service. 
 
 ### What if my source repository does not support multi_ack?
 

@@ -8,7 +8,7 @@ ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: sample
-ms.date: 02/05/2018  
+ms.date: 06/25/2018  
 ---
 
 # History & auditing  
@@ -17,32 +17,37 @@ ms.date: 02/05/2018
 
 The history of a work item tells you who opened the item, what changed, and why. This information helps you track how an item changes over time. When you enter information in the history field, provide as much information as possible to help the next work item owner understand what has happened and what they have to do.  
 
-You can use either the web portal or Team Explorer to view the history of a work item or find work items based on the contents of the ```History``` field. When you perform a search on the contents of the ```History``` field, it returns only work items that have changes recorded in that field. That is, it doesn't register changes that were made to text in other fields.
+You can use either the web portal or Team Explorer to view the history of a work item or find work items based on the contents of the **History** field. When you perform a search on the contents of the **History**  field, it returns only work items that have changes recorded in that field. That is, it doesn't register changes that were made to text in other fields.  
 
 # [Browser](#tab/browser)
 
 <a id="team-services" /> 
-#### VSTS, TFS 2017
-    
+::: moniker range=">= tfs-2017"
 <img src="_img/hist-audit-query-ts-bt.png" alt="Search for items based on words contained in the History field" style="border: 1px solid #C3C3C3;" /> 
-
-#### TFS 2015, TFS 2013
-
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2015"
 <img src="_img/ALM_HA_HistoryQuery.png" alt="Search for items based on words contained in the History field" style="border: 1px solid #C3C3C3;" /> 
+::: moniker-end
+
 
 # [Visual Studio](#tab/visual-studio) 
 
 <a id="tee-query-history" />
 <a id="team-explorer" />
 #### Visual Studio, Team Explorer, Team Explorer Everywhere
-<img src="_img/hist-audit-query-team-explorer.png" alt="Search for items based on words contained in the History field" style="border: 1px solid #C3C3C3;" /> 
+![Search for items based on words contained in the History field](_img/hist-audit-query-team-explorer.png) 
 
 ---
 
 
-##List items based on the contents of the History field 
+## List items based on the contents of the History field  
 
-You use the query editor to add the History field to a [query clause](using-queries.md). 
+::: moniker range=">= tfs-2017"
+You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **Discussion** area are queryable. Change history entries, such as which fields were changed, aren't queryable. To quickly find items based on words entered into the Discussion area, or **Description** or other rich-text fields, consider using [work item search](../../project/search/work-item-search.md).
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2015"
+You use the query editor to add the **History** field to a [query clause](using-queries.md). Comments entered into the **History** field are queryable. Change history entries, such as which fields were changed, aren't queryable.
+::: moniker-end
 
 You can filter for work items by the date on which they were changed or for a specific time period. If you limit the scope of your query, it can help with performance by only returning those results that fit the date range that you want to include. 
 
@@ -100,10 +105,10 @@ Items I've been associated with
 
 ### Tips for using the query editor
 <ul>
-<li>Type the complete word or phrase that is specified in the ```History``` fields of those work items that you want to find.</li>
-<li>Enter the full text for the word that you want to search. The History field is indexed for full-text search. If you enter only a partial word, the query will not return work items that contain the full word. For example, if the History field contains the phrase *reproducible behavior* and you search for *repro*, the work item will not be found. However, if you search for the complete word *reproducible*, the work item will be found. You can also search for the string with a wild card, such as ```repro*```. </li>
+<li>Type the complete word or phrase that is specified in the **History** field of those work items that you want to find.</li>
+<li>Enter the full text for the word that you want to search. The **History** field is indexed for full-text search. If you enter only a partial word, the query will not return work items that contain the full word. For example, if the **History** field contains the phrase *reproducible behavior* and you search for *repro*, the work item will not be found. However, if you search for the complete word *reproducible*, the work item will be found. You can also search for the string with a wild card, such as ```repro*```. </li>
 <li>The query editor ignores common words or stop words as defined in [Configure and Manage Stopwords and Stoplists for Full-Text Search](https://msdn.microsoft.com/library/ms142551.aspx).</li>
-<li>On the query editor toolbar, click ![Run query](../_img/icons/run_query.png) or ![Run query](../_img/icons/run_query_te.png) icon and confirm that your query returns expected results.</li>
+<li>On the query editor toolbar, choose ![Run query](../_img/icons/run_query.png) or ![Run query](../_img/icons/run_query_te.png) icon and confirm that your query returns expected results.</li>
 <li>If you don't receive the results you expect, adjust the word or phrase that you entered, and run the query again.</li> 
 </ul> 
 
@@ -111,44 +116,53 @@ Items I've been associated with
 
 ## View the history of work items  
 
-An entry is made to the History field each time a work item is saved. To view the history of changes, open an existing work item, and then choose the ![history tab icon](../_img/icons/icon-history-tab-wi.png) or **History** tab, or for some work item types, choose the **Details** tab. 
+An entry is made to the **History** field each time a work item is saved. To view the history of changes, open an existing work item, and then choose the ![history tab icon](../_img/icons/icon-history-tab-wi.png) or **History** tab, or for some work item types, choose the **Details** tab. 
+
+<a id="web-portal-explorer-tab" /> 
+The history details shown depend on the platform, version, and client you user. 
+
+# [Browser](#tab/browser)
 
 
 <a id="team-services-tab" /> 
-#### VSTS, TFS 2017
-     
-<img src="_img/hist-audit-wi-form-vsts-tab.png" alt="View History tab - VSTS" style="border: 1px solid #C3C3C3;" /> 
-
-> [!NOTE]  
-> The History field is no longer a rich-text field. To annotate the work item history, add to the Description or Discussion fields. 
-
- 
-<a id="web-portal-explorer-tab" /> 
-#### TFS 2015, TFS 2013 and Team Explorer
-To view only the comments that were added to the log, choose the <b>Discussion Only</b> tab. To view all changes made to the item, choose the <b>All Changes</b> tab, and then choose the <b>show all changes</b> link for a specific date and time.  
- 
-<img src="_img/hist-audit-choose-history-tab-tfs.png" alt="View History tab - TFS Web portal, Team Explorer" style="border: 1px solid #C3C3C3;" /> 
-
-If you open the work item from the web portal, you'll see the state change history diagram. To see the entire history of state changes, choose **Show all**.
-
-<img src="_img/state-change-history-diagram.png" alt="State change history diagram (web portal only)" style="border: 1px solid #C3C3C3;" /> 
-
-The history details shown depend on the platform, version, and client you user. 
-
 <a id="team-services-view" /> 
-#### VSTS, TFS 2017
-
-Click an entry in the left pane to view the details of changes made.
+::: moniker range=">= tfs-2017"
      
-<img src="_img/hist-audit-wi-form.png" alt="History tab - VSTS" style="border: 1px solid #C3C3C3;" /> 
+![View History tab](_img/hist-audit-wi-form-vsts-tab.png)  
+
+The state change history diagram appears first. To see the entire history of state changes, choose **Show all**.
+
+![State change history diagram (web portal only)](_img/state-change-history-diagram.png)
+
+Choose an entry in the left pane to view the details of changes made.
+     
+![Work item form, History tab](_img/hist-audit-wi-form.png)  
+::: moniker-end
+
+::: moniker range="tfs-2017"
+> [!NOTE]  
+> With TFS 2017 and later versions, the **History** field is no longer a rich-text field. To annotate the work item history, add to the **Description** or **Discussion** fields. 
+::: moniker-end
 
 
-<a id="explorer" /> 
-#### TFS 2015, TFS 2013 and Team Explorer
-
-To view only the comments that were added to the log, choose the <b>Discussion Only</b> tab. To view all changes made to the item, choose the <b>All Changes</b> tab, and then choose the <b>show all changes</b> link for a specific date and time. 
+::: moniker range=">= tfs-2013 <= tfs-2015"
+To view only the comments that were added to the log, choose the **Discussion Only** tab. To view all changes made to the item, choose the **All Changes** tab, and then choose the **show all changes** link for a specific date and time.  
  
-<img src="_img/ALM_HA_AllChanges.png" alt="View change history" style="border: 1px solid #C3C3C3;" /> 
+![Work item form, History tab, TFS Web portal, Team Explorer](_img/hist-audit-choose-history-tab-tfs.png) 
+
+
+
+::: moniker-end
+
+
+# [Visual Studio](#tab/visual-studio) 
+
+To view only the comments that were added to the log, choose the **Discussion Only** tab. To view all changes made to the item, choose the **All Changes** tab, and then choose the **show all changes** link for a specific date and time.  
+ 
+![Work item form, History tab, TFS Web portal, Team Explorer](_img/ALM_HA_AllChanges.png) 
+
+---
+
 
 
 ## Fields that support history, auditing, and revision tracking 
@@ -286,8 +300,8 @@ To learn more about creating and saving queries, see also:
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)
 
 
-### Getting the history programmatically
-See the [Work item tracking](https://docs.microsoft.com/rest/api/vsts/wit/)  for ways to extract history information programmatically.  
+### Get history programmatically
+See [Work item tracking](https://docs.microsoft.com/rest/api/vsts/wit/)  for ways to extract history information programmatically.  
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  

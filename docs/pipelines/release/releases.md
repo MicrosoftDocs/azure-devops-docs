@@ -1,6 +1,6 @@
 ---
 title: Releases in VSTS and Team Foundation Server
-description: Understand releases in Release Management for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: DevOps CI CD - Understand releases in Release Management for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.prod: devops
 ms.technology: devops-cicd
@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
 A **release** is the package or container that holds a versioned set of artifacts
-specified in a [release definition](index.md).
+specified in a [release definition](index.md) in your DevOps CI/CD processes.
 It includes a snapshot of all the information required to carry out all the tasks
 and actions in the release definition, such as the
 [environments](environments.md),
