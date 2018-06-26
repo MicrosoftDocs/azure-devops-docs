@@ -69,7 +69,7 @@ You can create links between work items by using one of the links control tabs w
 
 # [New web form](#tab/new-web-form)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="team-services-link" /> 
 
 From the new work item form, you can add a link using the **Related Work** section or from the **Links** tab.
@@ -101,7 +101,7 @@ The new web form is only available from TFS 2017 and later versions.
 
 # [Old web form](#tab/old-web-form)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 The old web form is only available for TFS 2017 and earlier versions. 
 ::: moniker-end
 
@@ -188,7 +188,7 @@ To learn more about the links control or to customize the Development links cont
 
 You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../customize/process/new-work-item-experience.md). 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Link work items and Git code development  
 
@@ -385,7 +385,7 @@ For additional information, see these topics:
 - [Use mapping to link backlog items to features and epics](../backlogs/organize-backlog.md)
 - [Bulk modify links using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 ### Visualize related work and other objects 
 
