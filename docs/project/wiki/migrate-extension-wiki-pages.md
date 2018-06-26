@@ -47,7 +47,7 @@ Here are the detailed steps for Wiki migration:
 	
 5.	Clone your Wiki repo using your IDE or **git clone** command.
 
-	<img src="_img/wiki/migrate-wiki-manage-wikis.png" alt="Manage wikis menu option" style="border: 1px solid #C3C3C3;" />    
+	<img src="_img/wiki/migrate-wiki-manage-wikis.png" alt="Manage wikis menu option" style="border: 1px solid #C3C3C3;" />     
 
 6.	Clone the Wiki extension repo. The Wiki will be mapped to a folder given to you during the wiki creation. You can check that by going to "manage wiki" option in the existing wiki as shown below.
 
