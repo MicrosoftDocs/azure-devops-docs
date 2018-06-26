@@ -128,7 +128,7 @@ Queue the build on any of our Microsoft-hosted agent pools, including **Hosted V
 
 To look up the syntax of the tasks that are built into VSTS and TFS, see https://github.com/Microsoft/vsts-tasks/tree/master/Tasks. 
 
-For example, if you want to use the [Copy Files](../tasks/utility/copy-files.md) task, go to https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/CopyFiles and then click the **task.json** file. In this file you'll find the name of task, which in this case is `CopyFiles`. You'll also find the valid `inputs`, for example the `SourceFolder` input.
+For example, if you want to use the [Copy Files](../tasks/utility/copy-files.md) task, go to https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/CopyFilesV2 and then click the **task.json** file. In this file you'll find the name of task, which in this case is `CopyFiles`. You'll also find the valid `inputs`, for example the `SourceFolder` input.
 
 ## Learn more
 

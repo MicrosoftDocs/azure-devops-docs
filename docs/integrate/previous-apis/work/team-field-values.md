@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 # Team field values
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
-The team field is used to identify which work items belong to your team. By default, Area Path is the team field, but it can be any field. Use this API to get and set the the team field values.
+The team field is used to identify which work items belong to your team. By default, Area Path is the team field, but it can be any field. Use this API to get and set the team field values.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetting
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | Query
@@ -47,7 +47,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/Work/TeamSetti
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | Query

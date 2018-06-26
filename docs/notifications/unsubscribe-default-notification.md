@@ -26,7 +26,7 @@ You start by opening your personal notification settings. If you don't have a te
 
 	<img src="_img/unsubscribe-open-notification-settings.png" alt="Open personal notification settings" style="border: 2px solid #C3C3C3;" />
 
-	Those notifications you're subscribed to are indicated with the the State as **On**.  
+	Those notifications you're subscribed to are indicated with the State as **On**.  
 
 	<img src="_img/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />
 

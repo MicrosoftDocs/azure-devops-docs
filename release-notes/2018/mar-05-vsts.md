@@ -113,7 +113,7 @@ By default, the Azure Resource Manager service endpoints that are automatically 
 
 ### Manage entity-specific security
 
-Previously in role based security, when the security access roles were set, they were set for a user or group at hub level for Deployment groups, Variable groups, Agent queues, and Service endpoints. Now you can turn on and off inheritance for a particular entity so you you can configure security just the way you want to.
+Previously in role based security, when the security access roles were set, they were set for a user or group at hub level for Deployment groups, Variable groups, Agent queues, and Service endpoints. Now you can turn on and off inheritance for a particular entity so you can configure security just the way you want to.
 
 > [!div class="mx-imgBorder"]
 ![Security dialog](_img/131_11.png)

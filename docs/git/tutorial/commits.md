@@ -88,7 +88,7 @@ compatibility with other Git tools.</blockquote>
    
 Stage multiple files or folders by selecting them then right-clicking and choosing **Stage** or by dragging and dropping files from the **Changes** list into the **Staged Changes** list. 
 
-Ignore files by right-clicking and selecting **Ignore this local item** or **Ignore this extension**. This adds an entry to the the file to the .gitignore file in your local repo. If the ignored file was added 
+Ignore files by right-clicking and selecting **Ignore this local item** or **Ignore this extension**. This adds an entry to the .gitignore file in your local repo. If the ignored file was added 
 to your repo in an earlier commit, ignoring the file will not remove it from the **Changes** list. See [excluding and ignoring files section](ignore-files.md) for more information on how to ignore files already tracked by Git.   
 
 # [Command Line](#tab/command-line)
