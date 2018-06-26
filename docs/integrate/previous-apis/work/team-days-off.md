@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetting
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | iterationId  | string   | ID of the iteration.
@@ -46,7 +46,7 @@ PATCH https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetti
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | iterationId  | string   | ID of the iteration.

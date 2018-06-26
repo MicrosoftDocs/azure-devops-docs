@@ -4,8 +4,6 @@
   items:
   - name: About Build and Release
     href: overview.md
-  - name: About Deploying to Azure
-    href: overview-azure.md
 - name: Quickstarts
   items:
     - name: Your first build and release
@@ -44,18 +42,16 @@
     href: targets/azure-stack.md
   - name: Azure Web App
     href: targets/webapp.md
-  - name: SCVMM
-    href: targets/scvmm.md
-  - name: VMware
-    href: targets/vmware.md
-  - name: Windows VM
-    href: apps/cd/deploy-webdeploy-iis-deploygroups.md
   - name: Linux VM
     href: apps/cd/deploy-linuxvm-deploygroups.md
   - name: npm
     href: targets/npm.md
   - name: NuGet
     href: targets/nuget.md
+  - name: SCVMM
+    href: targets/scvmm.md
+  - name: VMware
+    href: targets/vmware.md
   - name: Web App for Containers
     href: apps/cd/deploy-docker-webapp.md
   - name: Windows VM
@@ -70,16 +66,6 @@
     href: release/define-multistage-release-process.md
   - name: Use approvals and gates
     href: release/deploy-using-approvals.md
-  - name: Azure DevOps Project for GitHub
-    href: actions/azure-devops-project-github.md
-  - name: Azure DevOps Project for VMs
-    href: actions/azure-devops-project-vms.md
-  - name: Azure DevOps Project with SQL Database
-    href: actions/azure-devops-project-sqldb.md
-  - name: Azure DevOps Project with AKS
-    href: actions/azure-devops-project-aks.md
-  - name: Azure DevOps Project with Service Fabric
-    href: actions/azure-devops-project-servicefabric.md
   - name: Jenkins CI for VSTS Azure CD
     href: release/integrate-jenkins-vsts-cicd.md
   - name: Jenkins CI for VSTS Azure AKS

@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnodes
 | Property  	| Type 		| Description |
 |:--------------|:----------|:------------
 | URL
-| instance      | string    | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project 		| string 	| Name or ID of a team project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string    | Path of the classification node. |
@@ -70,7 +70,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnodes
 | Parameter Name| Type 		| Description 	|
 |:--------------|:----------|:------------
 | URL
-| instance      | string    | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project 		| string 	| Name or ID of a team project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string 	| Path of the classification node. |
@@ -101,7 +101,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 | Parameter Name| Type          		| Description 	|
 |:--------------|:--------------------|:------------
 | URL
-| instance      | string              | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance      | string              | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project 		| string			  | Name or ID of a team project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string 			  | Path of the classification nodes. |
@@ -136,7 +136,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnod
 | Parameter Name| Type          		| Description 	|
 |:--------------|:--------------------|:------------
 | URL
-| instance      | string              | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance      | string              | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project 		| string              | Name or ID of a team project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string 	          | Path of the classification nodes. |
@@ -175,7 +175,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 | Parameter Name| Type          		| Description 	|
 |:--------------|:--------------------|:------------
 | URL
-| instance      | string              | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance      | string              | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project 	| string                  | Name or ID of a team project that contains the classification nodes. |
 | nodeType	| enum {areas, iterations} | The type of classification node you are trying access. |
 | targetNodePath| string 	          | Path of the target parent classification node.  |
@@ -205,7 +205,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/classificationno
 | Parameter Name       | Type          		      | Description 	|
 |:--------------       |:--------------------     |:------------
 | URL
-| instance             | string                   | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance             | string                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project              | string                   | Name or ID of a team project that contains the classification nodes. |
 | nodeType		       | enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath             | string 	              | Path of the classification nodes.|

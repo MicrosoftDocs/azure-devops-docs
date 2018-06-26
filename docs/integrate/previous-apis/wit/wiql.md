@@ -36,7 +36,7 @@ Content-type: application/json
 | Parameter     | Type    | Default | Notes	
 |:--------------|:--------|:--------|:------------------------------
 | URL
-| instance      | string  |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance      | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project       | string  |         | Filter the results to this team project.<br/>If your query string uses the @project macro ([System.TeamProject] = @project, for example), you must specify the project in the URL.
 | Query
 | api-version   | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -55,7 +55,7 @@ GET https://{instance}/DefaultCollection/[{project}/]_apis/wit/wiql/{id}?api-ver
 | Parameter     | Type    | Default | Notes	
 |:--------------|:--------|:--------|:------------------------------
 | URL
-| instance      | string  |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance      | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project       | string  |         | Filter the results to this team project.<br/>If the query uses the @project macro ([System.TeamProject] = @project, for example), you must specify the project in the URL.
 | id            | GUID    |         | ID of a [stored query](./queries.md).
 | Query

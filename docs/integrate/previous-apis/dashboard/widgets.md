@@ -138,7 +138,7 @@ PATCH https://{account}.VisualStudio.com/DefaultCollection/{project}/{teamId}/_a
 
 ## Replace a widget
 <a id="ReplaceWidget"></a>
-Replace the the widget.
+Replace the widget.
 
 Note the following: 
 * You must populate the eTag field of the **Widget** to participate in widget settings versioning.

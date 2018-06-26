@@ -68,9 +68,9 @@ Get the code for the sample application into your own GitHub or VSTS repository.
       tasks: 'build'
   ```
     
-  The next time you change any file in this repository, VSTS automatically builds your code.
+  The next time you push a change to this YAML file, VSTS automatically builds your code.
 
-1. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
+1. Choose **Edit** to make a change to the YAML file.
 
 1. Add the following comment:
 

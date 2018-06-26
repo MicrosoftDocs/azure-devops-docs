@@ -100,7 +100,7 @@ Adding events lets your team know when builds finish, source code is checked in,
 | Build completions | Anytime a build completes for a specified build definition    |  
 | Code changes | Anytime code is pushed or checked in from a specified repo or branch   |  
 | Work item updates | Anytime a work item is added or modified in or under a specified area path   |  
-| Code reviews| Anytime a code review is created in or under a specified area area path  |  
+| Code reviews| Anytime a code review is created in or under a specified area path  |  
 | Pull requests | Anytime a pull request is created for a specified repo or branch   |  
   
 

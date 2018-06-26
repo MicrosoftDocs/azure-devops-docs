@@ -30,7 +30,7 @@ You'll need to set up physical or virtual machines to run your app and tests, fo
 
 With VSTS, you can define environments that have physical and virtual machines, such as Azure VMs and Azure resource groups.
 With TFS, you can define environments using only physical machines.
-Alternatively, you can [create a virtual network isolated environment for your build-deploy-test scenarios](../targets/create-virtual-network.md.
+Alternatively, you can [create a virtual network isolated environment for your build-deploy-test scenarios](../targets/create-virtual-network.md).
 
 If you want to use a PowerShell script to deploy your app, make sure to:
 
@@ -180,7 +180,7 @@ it works in a range of scenarios.
 For more information about the tasks see:
 
 * [Visual Studio Test version 1](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md)
-* [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
+* [Visual Studio Test version 2](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
 
 You select the [specific version](../../pipelines/process/tasks.md#task-versions)
 of a task you want to use in the **Version** list at the top
@@ -384,7 +384,7 @@ phase, the tests will be replicated to each of the machines.
 
 * [MSTest V2 in-assembly parallel test execution](https://blogs.msdn.microsoft.com/devops/2018/01/30/mstest-v2-in-assembly-parallel-test-execution/)
 * [Parallel Test Execution](https://blogs.msdn.microsoft.com/devops/2016/10/10/parallel-test-execution/)
-* [Create a virtual network isolated environment for build-deploy-test scenarios](../targets/create-virtual-network.md
+* [Create a virtual network isolated environment for build-deploy-test scenarios](../targets/create-virtual-network.md)
 * [Speed up testing with Test Impact Analysis](test-impact-analysis.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
