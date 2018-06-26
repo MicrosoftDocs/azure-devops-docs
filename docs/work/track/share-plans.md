@@ -43,7 +43,7 @@ The specific set of formatting features differs depending on the client you use.
 
 # [Browser](#tab/browser) 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <img src="_img/rich-text-ui-team-services.png" alt="Rich text tool bar - VSTS" style="border: 2px solid #C3C3C3;" />
 
 You can use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or CTRL+Spacebar to remove formatting from highlighted text.
@@ -108,7 +108,7 @@ For example, you can attach a screen image that illustrates a problem, a line of
 # [Browser](#tab/browser)
 
 #### Attachment control toolbar 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <img src="_img/share-plans-attachment-tab-vsts.png" alt="Attachment controls, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
 
@@ -191,7 +191,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 <a id="team-services-storyboard" />
 # [Browser](#tab/browser)
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
 
 <img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal VSTS" style="border: 1px solid #C3C3C3;" />  
@@ -230,7 +230,7 @@ To open PowerPoint with storyboarding, see [Storyboard your ideas using PowerPoi
 
 A common way teams share information is through a list of work items. You can quickly generate a formatted list using the **Copy as HTML** or **Copy to clipboard** options. See [Copy list](../backlogs/copy-list.md).
 
-::: moniker range="vsts || >= tfs-2015"
+::: moniker range=">= tfs-2015"
 
 ## Team dashboards 
 
@@ -240,7 +240,7 @@ For details, see [Dashboards, charts, & widgets](../../report/dashboards/overvie
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 ## Team project wiki 
 
@@ -275,7 +275,7 @@ As you can see, there are many ways to share information using work items alone.
 
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ### Marketplace extensions  
 
 You may find additional ways to share information and collaborate as a team by adding a [Marketplace extension](https://marketplace.visualstudio.com/?targetId=754f8691-19ce-47a2-a1e8-ebeab1e67955#VSTS). 
