@@ -48,13 +48,13 @@
     tocHref: /vsts/work/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
-    - name: Kanban
+    - name: Boards (Kanban) 
       tocHref: /vsts/work/kanban/
       topicHref: /vsts/work/kanban/index
     - name: Backlogs
       tocHref: /vsts/work/backlogs/
       topicHref: /vsts/work/backlogs/index
-    - name: Scrum
+    - name: Sprints (Scrum)
       tocHref: /vsts/work/scrum/
       topicHref: /vsts/work/scrum/index
     - name: Work items
@@ -109,8 +109,8 @@
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
     - name: Account Management
-      tocHref: /vsts/accounts/
-      topicHref: /vsts/accounts/index
+      tocHref: /vsts/organizations/accounts/
+      topicHref: /vsts/organizations/accounts/index
     - name: "Security & Identity"
       tocHref: /vsts/organizations/security/
       topicHref: /vsts/organizations/security/index

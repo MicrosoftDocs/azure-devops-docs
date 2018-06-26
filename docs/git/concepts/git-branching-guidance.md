@@ -163,3 +163,6 @@ Cherry-pick bugfixes in the deployment branch back to the master branch using th
 
 An exception to this recommendation is if you are using a form of continuous deployment. 
 Use [release management](../../pipelines/index.md) tools when working with continuous deployment to promote builds from your master branch to your deployment targets.
+
+## Videos
+> [!VIDEO https://www.youtube.com/embed/ykZbBD-CmP8?start=0]

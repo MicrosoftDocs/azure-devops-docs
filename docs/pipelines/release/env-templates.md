@@ -1,6 +1,6 @@
 ---
 title: Environment templates in Release Management
-description: Understand environment templates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand environment templates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
 ms.prod: devops
 ms.technology: devops-cicd
@@ -20,7 +20,7 @@ When you start a new release definition, or when you add an environment to
 an existing release definition, you can choose from a list of templates for
 each environment. These templates pre-populate the environment with the
 appropriate tasks and settings, which can considerably reduce the time and
-effort required to create a release definition.
+effort required to create a release definition for your DevOps CI/CD processes.
 
 A set of pre-defined environment templates are available in
 VSTS and in each version of TFS. You can use these templates

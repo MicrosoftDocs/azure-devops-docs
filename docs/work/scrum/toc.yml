@@ -1,5 +1,5 @@
-- name: Scrum
-  href: index.md
+- name: Sprints (Scrum) 
+  href: index.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About Scrum
@@ -11,21 +11,25 @@
   - name: Schedule sprints
     href: define-sprints.md 
   - name: Define iteration paths or sprints
-    href: ../customize/set-iteration-paths-sprints.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json    
-- name: Tutorials
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json    
+- name: Tutorials 
   items:
-  - name: Plan a sprint
-    href: sprint-planning.md
-  - name: "Add & update tasks (Task board)"
+  - name: 1. Assign backlog items to a sprint
+    href: assign-work-sprint.md
+  - name: 2. Add tasks 
+    href: add-tasks.md
+  - name: 3. Set sprint capacity 
+    href: set-capacity.md
+  - name: 4. Adjust work to fit capacity 
+    href: adjust-work.md
+  - name: 5. Share your sprint plan 
+    href: share-plan.md
+  - name: 6. Update the taskboard 
     href: task-board.md
-  - name: Plan capacity
-    href: ../scale/capacity-planning.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
-  - name: Sprint burndown
+  - name: 7. Monitor sprint burndown
     href: sprint-burndown.md
   - name: Forecast
     href: forecast.md
-  - name: Velocity
-    href: ../../report/guidance/team-velocity.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Scrum best practices
@@ -64,15 +68,18 @@
     href: ../backlogs/backlogs-keyboard-shortcuts.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: Work Items
+    href: ../work-items/index.md
   - name: Backlogs
     href: ../backlogs/index.md
+  - name: Boards
+    href: ../kanban/index.md
   - name: Queries
     href: ../track/index.md
   - name: Customization
     href: ../customize/index.md
   - name: What is Scrum?
     href: /azure/devops/agile/what-is-scrum
-  - name: What is Agile development?
-    href: /azure/devops/agile/what-is-agile-development
+
 
 

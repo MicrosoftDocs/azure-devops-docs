@@ -341,7 +341,7 @@ Resources mentioned earlier in this article and a few more are provided here for
 - [Support rollup of work and other fields](../customize/reference/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
 - [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
 - [Synchronize Team Foundation Server with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md): Describes how project managers and development teams can use the tools that they prefer and share information transparently by enabling data to flow from work items in TFS to tasks in enterprise project plans in Project Server.  
-- [Track your work when assigned to two or more teams](capacity-planning.md): Shows how a developer or tester can track work when they support more than one feature team.  
+- [Track your work when assigned to two or more teams](../scrum/set-capacity.md#track-capacity-per-team): Shows how a developer or tester can track work when they support more than one feature team.  
 
 ###About the authors
 This article has been updated from the previous white paper developed in collaboration with the following authors:  

@@ -90,7 +90,7 @@ Guidance for Cloud Solution Providers
 
 * [New User Guide](https://docs.microsoft.com/en-us/vsts/user-guide/?view=vsts)
 
-* [Account Management](https://docs.microsoft.com/en-us/vsts/accounts/index?view=vsts)
+* [Account Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/index?view=vsts)
 
 * [TFS Server Administration documentation](https://docs.microsoft.com/en-us/tfs/server/index?view=vsts)
 

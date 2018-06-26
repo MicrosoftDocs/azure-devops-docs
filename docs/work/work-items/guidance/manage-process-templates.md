@@ -145,7 +145,7 @@ For additional restrictions, see [Naming restrictions](../../../organizations/se
 
 Periodically, updates are made to the process templates to support new features. For details, see [Changes made to process templates](changes-to-process-templates.md).  
 
-- [Create a team project](../../../accounts/create-team-project.md)   
+- [Create a team project](../../../organizations/accounts/create-team-project.md)   
 - [Customize a process template](../../customize/reference/process-templates/customize-process.md)   
 - [Process template and plug-in files](../../customize/reference/process-templates/overview-process-template-files.md)  
 - [Import and update a process (Hosted XML)](../../customize/import-process/import-process.md)     

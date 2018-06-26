@@ -30,15 +30,15 @@ Use this topic to access articles that will show you how to:
 
 ## Set up Azure Active Directory for use with VSTS or TFS
 
-* [Access VSTS with Azure Active Directory (Azure AD)](../../accounts/access-with-azure-ad.md)
+* [Access VSTS with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
 
 ## Manage organizational access with Azure AD
 
-* [Add VSTS users to your Azure AD](../../accounts/add-users-to-aad.md)
-* [Connect VSTS account to Azure AD](../../accounts/connect-account-to-aad.md)
-* [Disconnect VSTS account from Azure AD](../../accounts/disconnect-account-from-aad.md)
-* [Delete users from VSTS connected to Azure AD](../../accounts/delete-users-from-services-aad.md)
-* [Troubleshoot access with Azure Active Directory](../../accounts/faq-azure-access.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) 
+* [Add VSTS users to your Azure AD](../../organizations/accounts/add-users-to-aad.md)
+* [Connect VSTS account to Azure AD](../../organizations/accounts/connect-account-to-aad.md)
+* [Disconnect VSTS account from Azure AD](../../organizations/accounts/disconnect-account-from-aad.md)
+* [Delete users from VSTS connected to Azure AD](../../organizations/accounts/delete-users-from-services-aad.md)
+* [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) 
 
 
 ## Set up Active Directory for use with TFS

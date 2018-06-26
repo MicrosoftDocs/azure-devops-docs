@@ -20,7 +20,7 @@ You can quickly get started with a team project from the project page. You can s
 
   
 > [!NOTE]    
-> The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../../accounts/create-team-project.md).  
+> The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../../organizations/accounts/create-team-project.md).  
 
 
 > [!div class="mx-tdCol2BreakAll"]
@@ -45,7 +45,7 @@ You can quickly get started with a team project from the project page. You can s
 
 
 ## Open the project home page
-From your web browser, open the team project drop down menu and select the home page. If you don't have a team project yet, [create one in VSTS](../../user-guide/sign-up-invite-teammates.md)<!---or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.   
+From your web browser, open the team project drop down menu and select the home page. If you don't have a team project yet, [create one in VSTS](../../user-guide/sign-up-invite-teammates.md)<!---or set one up in an [on-premises TFS](../../organizations/accounts/create-team-project.md)-->.   
 
 <img src="_img/project-vision-status-project-home-page.png" alt="Open the Project Home Page" style="border: 2px solid #C3C3C3;" />
 
@@ -54,7 +54,7 @@ From your web browser, open the team project drop down menu and select the home 
 
 ## Get started with a new team project 
 
-Upon [adding another team project](../../accounts/create-team-project.md) to your account or collection, you'll see the get started page. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or simply initialize a repo. You can easily get started by adding members, setting up builds, or adding work from this page.
+Upon [adding another team project](../../organizations/accounts/create-team-project.md) to your account or collection, you'll see the get started page. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or simply initialize a repo. You can easily get started by adding members, setting up builds, or adding work from this page.
 
 
 # [Git repository](#tab/git)

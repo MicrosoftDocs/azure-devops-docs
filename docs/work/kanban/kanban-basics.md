@@ -11,14 +11,17 @@ ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/20/2018
---- 
+ms.date: 06/21/2018
+---
 
 # Kanban basics
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 To maximize a team's ability to consistently deliver high quality software, Kanban emphasize two main practices. The first, visualize the flow of work, requires you to map your team's workflow stages and configure your Kanban board to match. The second, constrain the amount of work in progress, requires you to set work-in-progress (WIP) limits. You're then ready to track progress on your Kanban board and monitor key metrics to reduce lead or cycle time.  
+
+> [!div class="mx-imgBorder"]  
+> ![Kanban board](_img/quickstart/intro-view.png) 
 
 Your Kanban board turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work.
 
@@ -31,11 +34,6 @@ Review this topic to gain an understanding of how to configure and start working
 > * Update the status of work via drag-and-drop  
 > * View the Cumulative flow chart     
 > * How to turn live updates on or off  
- 
-
-To view your Kanban board, click the **Board** link from the **Work>Backlogs** page. 
-
-<img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 
 
 [!INCLUDE [temp](../_shared/image-differences.md)] 
@@ -44,24 +42,10 @@ To view your Kanban board, click the **Board** link from the **Work>Backlogs** p
 User stories and bugs correspond to types of work items. You use  [work items](../backlogs/add-work-items.md) to share information, assign work to team members, update status, track dependencies, and more.
 
 
-##Prerequisites
-::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
-::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
-::: moniker-end
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
-## Open your Kanban board 
-You open your Kanban board using one of these URLs that connects you to your team project:   
 
-::: moniker range="vsts"
-**VSTS**:  ```http://AccountName/DefaultCollection/TeamProjectName/_backlogs/board/ ``` 
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2018"
-**On-premises TFS**:  ```http://ServerName:8080/tfs/DefaultCollection/TeamProjectName/_backlogs/board/```  
-::: moniker-end
+[!INCLUDE [temp](../_shared/open-kanban-board.md)] 
 
 
 ## 1. Map the flow of how your team works
@@ -77,12 +61,9 @@ For user stories, the New, Active, Resolved, and Closed states track progress fr
 <td>
 ![User story workflow states](_img/ALM_KB_Workflow.png)
 
-
 </td>
 <td>
 ![Default kanboard boward, Agile template](_img/ALM_KB_Empty.png)
-
-
 
 </td>
 </tr>
@@ -125,7 +106,7 @@ Here are a few things you can do. See at a glance the estimated size of work for
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 Also, you can quickly update a field or reassign ownership directly from the board.
 
@@ -168,8 +149,7 @@ Here are some useful tips when working with the Kanban board:
 - If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.  
 
 
-> [!NOTE]  
-> Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). To switch to the [product backlog](../backlogs/create-your-backlog.md), click **Backlog**. And, to switch to the [Task board](../scrum/task-board.md), click on the current iteration or other sprint of interest. If no sprints appear, see [Schedule sprints](../scrum/define-sprints.md). 
+
 
 Each team can manage their backlog and customize their Kanban board. [Add teams](../scale/multiple-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 
 

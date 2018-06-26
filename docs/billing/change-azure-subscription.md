@@ -22,7 +22,7 @@ If you want to use a different Azure subscription to bill purchases for your VST
 
 The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-1. [VSTS project collection administrator or account owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+1. [VSTS project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 2. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.

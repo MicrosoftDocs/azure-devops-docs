@@ -122,7 +122,7 @@ Link category: System-defined</p>
 System.LinkTypes.Hierarchy-Reverse</p>
 <p>Topology type: Tree<br/>
 Link category: System-defined</p></td>
-<td>Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the [mapping function](../../backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../../scrum/sprint-planning.md) or [task board](../../scrum/task-board.md).  
+<td>Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the [mapping function](../../backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../../scrum/assign-work-sprint.md) or [task board](../../scrum/task-board.md).  
 </td>
 </tr>
 

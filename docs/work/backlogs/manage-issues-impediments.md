@@ -35,7 +35,7 @@ In this topic you'll learn:
 
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)]   
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <!---#### VSTS, TFS 2018, TFS 2017 (new form enabled) --> 
 From the **Work** hub, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. 
 

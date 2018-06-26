@@ -368,4 +368,4 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
      ![Agile task board with updated workflow](_img/alm_vrf_taskboard_agile_v6.png "ALM_VRF_TaskBoard_Agile_V6")  
 Task board for an Agile team project with the updated workflow states  
   
-     To learn more about using the task board, see [Sprint planning](../../scrum/sprint-planning.md).
+     To learn more about using the task board, see [Sprint planning](../../scrum/assign-work-sprint.md).

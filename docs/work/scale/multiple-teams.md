@@ -50,7 +50,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project. If you don't have a team project yet, create one in [VSTS](../../accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../accounts/create-team-project.md)-->.
+1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../organizations/accounts/create-team-project.md)-->.
 
 	<img src="_img/add-teams-open-admin-context-tfs-2017.png" alt="Open team project admin page" style="border: 2px solid #C3C3C3;" />
 
@@ -100,7 +100,7 @@ If you're moving from one team to two teams, team members already have access to
 Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
 
 > [!NOTE]   
-> If you use VSTS, you must first [add user accounts to the team project](../../accounts/add-account-users-assign-access-levels.md) or [setup your account to work with Azure AD](../../accounts/access-with-azure-ad.md). This way user accounts will be available to add to a team.
+> If you use VSTS, you must first [add user accounts to the team project](../../organizations/accounts/add-account-users-from-user-hub.md) or [setup your account to work with Azure AD](../../organizations/accounts/access-with-azure-ad.md). This way user accounts will be available to add to a team.
 >
 >For TFS, the first time you add an account you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 

@@ -9,15 +9,16 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 08/02/2017
+monikerRange: '>= tfs-2013'
+ms.date: 07/07/2018
 ---
 
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-<a id="sprint-planning-meeting">  </a>
+<a id="assign-work-sprint-meeting">  </a>
 ## Sprint planning meetings 
 
 Much of sprint planning involves a negotiation between the product owner and the team to determine the focus and work to tackle in the upcoming sprint. It's useful to time-box the planning meeting, restricting it to 4 hours or less. 
@@ -28,9 +29,9 @@ As you plan your sprints, you may discover additional requirements that you shou
 
 Also, setting a sprint goal as part of your planning efforts can help the team stay focused on what's most important for each sprint. 
 
-After you've planned your sprint, you may want to [share the plan](../scrum/sprint-planning.md#share) with key stakeholders. 
+After you've planned your sprint, you may want to [share the plan](share-plan.md) with key stakeholders. 
 
-You can learn more /azure/devops/agile/what-is-scrumm these resources: 
+You can learn more from these resources: 
 *	[What is Scrum?](/azure/devops/agile/what-is-scrum)
 *	[Sprint planning](https://msdn.microsoft.com/library/hh765982.aspx) white paper
 *	[The Scrum Guide](http://www.scrumguides.org/scrum-guide.html)
@@ -191,6 +192,5 @@ In some cases, your team may need to do some work to implement an improvement. F
 
 ## Related articles
 
-For additional guid/azure/devops/agile/what-is-scrum
 *	[What is Scrum?](/azure/devops/agile/what-is-scrum)
 *	[Agile Retrospectives: Making Good Teams Great](http://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/dp/0977616649/)	

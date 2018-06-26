@@ -4,6 +4,8 @@
   items:
   - name: About work items
     href: about-work-items.md
+  - name: About Agile tools
+    href: about-agile-tools.md
 - name: Quickstarts
   items:
   - name: "View & add work items"
@@ -13,9 +15,9 @@
   - name: Drive Git development
     href: ../backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json
   - name: Define area paths
-    href: ../customize/set-area-paths.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
+    href: ../../organizations/settings/set-area-paths.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
   - name: Define iteration paths
-    href: ../customize/set-iteration-paths-sprints.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json 
 - name: Tutorials
   items:
   - name: Follow work
@@ -158,13 +160,15 @@
     href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items
 - name: Resources
   items:
-  - name: Kanban
+  - name: Boards (Kanban)
     href: ../kanban/index.md
-  - name: Scrum
-    href: ../scrum/index.md
   - name: Backlogs
     href: ../backlogs/index.md
+  - name: "Sprints (Scrum)"
+    href: ../scrum/index.md
   - name: Queries
     href: ../track/index.md
   - name: Customization
     href: ../customize/index.md
+  - name: What is Agile?
+    href: /azure/devops/agile/what-is-agile
