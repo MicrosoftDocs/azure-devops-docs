@@ -127,8 +127,8 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Agile</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
+                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
@@ -237,8 +237,8 @@ featureFlags:
                                     <ul>
                                         <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
                                         <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/kanban/index">Kanban</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scrum/index">Scrum</a></li>
+                                        <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
+                                        <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
                                         <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
                                         <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
@@ -666,7 +666,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Kanban</h3>
+                                                    <h3>Boards (Kanban)</h3>
                                                     <p>Manage the continuous flow of work from concept to completion.</p>
                                                 </div>
                                             </div>
@@ -685,7 +685,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Scrum</h3>
+                                                    <h3>Sprints (Scrum)</h3>
                                                     <p>Plan a sprint, use a task board in daily scrums, monitor sprint burndown.</p>
                                                 </div>
                                             </div>
