@@ -115,5 +115,5 @@ The following topics should be sufficient to help you through the general proces
 
 ## Related notes
 
-- [Add SharePoint products to your Team Foundation Service deployment](/tfs/server/admi/tfs/server-to-tfs)  
+- [Add SharePoint products to your Team Foundation Service deployment](/tfs/server/admin/modify-remove-access-shareport-tfs)  
 - [Modify or Remove Access Between a SharePoint Web Application and Team Foundation Server](/tfs/server/admin/modify-remove-access-shareport-tfs) 

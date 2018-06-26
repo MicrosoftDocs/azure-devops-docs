@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 ms.date: 05/10/2017  
 ---
@@ -315,7 +316,7 @@ These buttons become available only after you perform a specific action:
 
 -   The buttons to open a work item (![](_img/link-controls-restrictions-field-reference/IC588293.png)), edit a link (![](_img/link-controls-restrictions-field-reference/IC588336.png)), and delete a link (![](_img/link-controls-restrictions-field-reference/IC588333.png)) become available only after you click one or more work items listed in the links control tab.
 
-The **Storyboards** links control restricts users to add links only to storyboards or network shared files. With this control, you can add a new link, open a linked item, and delete a link. Also, only the the web portal version displays the **Start Storyboarding** link within the toolbar.
+The **Storyboards** links control restricts users to add links only to storyboards or network shared files. With this control, you can add a new link, open a linked item, and delete a link. Also, only the web portal version displays the **Start Storyboarding** link within the toolbar.
 
 Storyboards links control (the web portal)
 ![](_img/link-controls-restrictions-field-reference/IC589934.png)

@@ -100,7 +100,7 @@ You can view all the tags on your repository on the **Tags** page. If you manage
 You can easily differentiate between a lightweight and an annotated tag here, as annotated tags show the tagger and the creation date alongside the associated commit, while lightweight tags only show the commit information.
 
 ###Delete tags
-There can be times when you want to delete a tag from your remote repo. It could be due to a typo in the tag name, or you you might have tagged the wrong commit. You can easily delete tags from the VSTS UI by clicking the context menu of a tag on the __Tags__ page and selecting __Delete tag__. 
+There can be times when you want to delete a tag from your remote repo. It could be due to a typo in the tag name, or you might have tagged the wrong commit. You can easily delete tags from the VSTS UI by clicking the context menu of a tag on the __Tags__ page and selecting __Delete tag__. 
 
 **Note:** Deleting tags on remote repos should be exercised with caution.
 

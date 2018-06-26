@@ -39,7 +39,7 @@ As an example, we'll set our repository to enforce the following rules:
 ## Preparation
 
 * You will need the Team Foundation version control command (`tf.exe`) on your computer.
-Run a Visual Studio Developer Command Prompt (in Windows, choose **Start**, choose **Visual Studio**, then choose the the **Developer Command Prompt**).
+Run a Visual Studio Developer Command Prompt (in Windows, choose **Start**, choose **Visual Studio**, then choose the **Developer Command Prompt**).
 * You will need the URL of your account or collection, the name of the project, and the name of the repository. For this example, we'll use `https://fabrikam-fiber.visualstudio.com`, `FabrikamProject`, and `FabrikamRepo`.
 
 ## Enforce permissions

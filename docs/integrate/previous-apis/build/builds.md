@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds?api-versio
 | Parameter     | Type     | Notes
 |:--------------|:---------|:------------
 | URL
-| instance      | string   | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance      | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project       | string   | [Team project](../tfs/projects.md) ID or name.
 | Query
 | definitions   | string   | A comma-delimited list of definition IDs.
@@ -69,7 +69,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/build/builds?api-versi
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance      | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance      | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project       | string | [Team project](../tfs/projects.md) ID or name.
 | Query
 | version       | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -91,7 +91,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}?
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project   | string | [Team project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
@@ -111,7 +111,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project   | string | [Team project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
@@ -128,7 +128,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance    | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project     | string | [Team project](../tfs/projects.md) ID or name.
 | buildId     | int    | ID of the build.
 | Query
@@ -146,7 +146,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance    | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project     | string | [Team project](../tfs/projects.md) ID or name.
 | buildId     | int    | ID of the build.
 | Query
@@ -164,7 +164,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project   | string | [Team project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
@@ -181,7 +181,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project   | string | [Team project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
@@ -199,7 +199,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project   | string | [Team project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
@@ -218,7 +218,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project   | string | [Team project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
@@ -235,7 +235,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildI
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project   | string | [Team project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
@@ -253,7 +253,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project   | string | [Team project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
@@ -279,7 +279,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildI
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/integrate/get-started/rest/basics.md) ({account}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project   | string | [Team project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query

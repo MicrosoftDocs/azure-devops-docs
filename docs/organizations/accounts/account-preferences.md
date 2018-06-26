@@ -26,7 +26,7 @@ Locale settings include language, date and time pattern, time zone, and user int
 
 ## Change profile settings (VSTS)
 
-To change your your account information, open your account menu.
+To change your account information, open your account menu.
 
 ![VSTS, My Profile link on Account menu](_img/account-prefs/open-profile-team-services.png)
 

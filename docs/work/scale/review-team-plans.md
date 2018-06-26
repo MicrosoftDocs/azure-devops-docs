@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
 ms.date: 03/20/2018

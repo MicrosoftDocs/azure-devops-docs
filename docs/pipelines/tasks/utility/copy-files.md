@@ -55,7 +55,7 @@ None
 <li>```**\*``` copies all files in the root folder and all files in all sub-folders.</li>
 <li>```**\bin\**``` copies all files recursively from any ```bin``` folder.</li>
 </ul>
-<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as ```**\bin\**``` instead of of ```**\bin```.</p>
+<p>The pattern is used to match only file paths, not folder paths. So you should specify patterns such as ```**\bin\**``` instead of ```**\bin```.</p>
 <p>More examples are shown below.</p>
 </td>
 </tr>

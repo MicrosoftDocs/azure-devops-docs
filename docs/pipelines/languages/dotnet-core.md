@@ -15,17 +15,22 @@ monikerRange: '>= tfs-2017'
 
 # .NET Core
 
-This guide explains how to build .NET Core projects. Before you read this topic, you should understand the kind of build definition that you're creating:  [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+This guidance explains how to build .NET Core projects. Before you read this topic, you should understand the type
+of build definition that you're creating:  [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ::: moniker range="tfs-2017"
+
 > [!NOTE]
 > 
-> This guidance works for TFS version 2017.3 and newer.
+> This guidance applies to TFS version 2017.3 and newer.
+
 ::: moniker-end
 
 ::: moniker range="vsts"
+
 > [!NOTE]
 > To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+
 ::: moniker-end
 
 <br/>
@@ -42,21 +47,25 @@ https://github.com/adventworks/dotnetcore-sample
 
 # [Designer](#tab/designer)
 
-Once you have the sample code in your own repository, create a build definition and select the **ASP.NET Core** template.
-This automatically adds some of the most commonly needed tasks. Save the definition and queue a build to see it in action.
-Then, read through the rest of this guidance to learn some of the more common changes that people make to customize a .NET Core build process.
+After you have the sample code in your own repository, create a build definition and select the **ASP.NET Core** template.
+This automatically adds some of the most commonly required tasks. Save the definition and queue a build to see it in action.
+Then read through the rest of this topic to learn some of the more common changes people make to customize a .NET Core build process.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-The above sample code includes a `.vsts-ci.yml` file at the root of the repository. You can use this file to build the app. Push a change to your YAML file and see how the build gets triggered. Then, read through the rest of this guidance learn some of the more common changes that people make to customize a .NET Core build process.
+The sample code above includes a `.vsts-ci.yml` file at the root of the repository.
+You can use this file to build the app. Push a change to your YAML file and see how the build is triggered.
+Then read through the rest of this topic learn some of the more common changes people make to customize a .NET Core build process.
 
 ::: moniker-end
+
 ::: moniker range="< vsts"
-YAML builds are not yet available on TFS.
-::: moniker-end
 
+YAML builds are not yet available on TFS.
+
+::: moniker-end
 
 ---
 
@@ -64,7 +73,9 @@ YAML builds are not yet available on TFS.
 
 ::: moniker range="vsts"
 
-You can use VSTS to build your .NET Core projects on Windows, Linux, or macOS without the need to set up any infrastructure of your own. The [Microsoft-hosted agents](../agents/hosted.md) in VSTS have several released versions of the .NET Core SDKs preinstalled. Use the **Hosted VS2017** agent queue (to build on Windows), the **Hosted Linux Preview** agent queue, or the **Hosted macOS Preview** queue.
+You can use VSTS to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own.
+The [Microsoft-hosted agents](../agents/hosted.md) in VSTS have several released versions of the .NET Core SDKs preinstalled.
+Use the **Hosted VS2017** agent queue (to build on Windows), the **Hosted Linux Preview** agent queue, or the **Hosted macOS Preview** queue.
 
 # [Designer](#tab/designer)
 
@@ -72,7 +83,7 @@ In the build definition, select **Tasks**, then select the **Process** node, and
 
 # [YAML](#tab/yaml)
 
-Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue.
+Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
 
 ```yaml
 queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017', 'Hosted macOS Preview'
@@ -80,7 +91,9 @@ queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017', 'Hosted macOS P
 
 ---
 
-The Microsoft-hosted agents do not include some of the older versions of the .NET Core SDK. They also do not typically include prerelease versions. If you need these kinds of SDKs and you prefer to use the Microsoft hosted agents, then add the **.NET Core Tool Installer** task to the beginning of your process.
+The Microsoft hosted agents do not include some of the older versions of the .NET Core SDK.
+They also do not typically include prerelease versions. If you need these kinds of SDKs and
+you prefer to use the Microsoft hosted agents, add the **.NET Core Tool Installer** task to the beginning of your process.
 
 # [Designer](#tab/designer)
 
@@ -94,7 +107,7 @@ If you need a version of the .NET Core SDK that is not already installed on the 
 
 # [YAML](#tab/yaml)
 
-If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent, then add the following snippet to your `.vsts-ci.yml` file:
+If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent, add the following snippet to your `.vsts-ci.yml` file:
 
 ```yaml
 - task: DotNetCoreInstaller@0
@@ -106,60 +119,87 @@ If you need a version of the .NET Core SDK that is not already installed on the 
 
 > [!TIP]
 > 
-> As an alternative to the above approach, you can set up a [self-hosted agent](../agents/agents.md#install) and save the cost of running the tool installer.
-> You can also use self-hosted agents to save additional time if you have a large repo or you run incremental builds. 
-> For example, you don't select the clean repo option. Or, you don't use the `dotnet build --no-incremental` or `dotnet clean` commands.
+> As an alternative to the approach shown above you can set up a [self-hosted agent](../agents/agents.md#install) and save the cost of running the tool installer.
+> You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds. 
+> For example, you don't select the "clean repository" option, or you don't use the `dotnet build --no-incremental` or `dotnet clean` commands.
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
-You can build your .NET Core projects using the .NET Core SDK and runtime on Windows, Linux, or macOS. Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agent.
+
+You can build your .NET Core projects using the .NET Core SDK and runtime on Windows, Linux, or macOS.
+Your builds run on a [self-hosted agent](../agents/agents.md#install).
+Make sure that you have the necessary version of the .NET Core SDK and runtime installed on the agent.
+
 ::: moniker-end
 
 ## Restore dependencies
 
-NuGet is a popular way to depend on code that you don't build. You can download NuGet packages from by running the `dotnet restore` command either through the **.NET Core** task or directly in a script in your build pipeline. 
+NuGet is a popular way to depend on code that you don't build. You can download NuGet packages by running
+the `dotnet restore` command either through the
+[.NET Core](../tasks/build/dotnet-core.md) task or directly in a script in your build pipeline.
 
 ::: moniker range=">= tfs-2018"
-You can download NuGet packages from VSTS Package Management, NuGet.org, or some other external or internal NuGet repository. The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds.
+
+You can download NuGet packages from VSTS Package Management, NuGet.org, or some other external or internal NuGet repository.
+The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds.
+
 ::: moniker-end
 
 ::: moniker range="< tfs-2018"
+
 You can download NuGet packages from NuGet.org.
+
 ::: moniker-end
 
-`dotnet restore` internally uses `NuGet.exe` that is packaged with the .NET Core SDK. `dotnet restore` can only restore packages specified in the .NET Core project (`.csproj`) files. If you also have a .NET Framework project in your solution or use `package.json` to specify your dependencies, then you must also use the **NuGet** task to restore those dependencies.
+`dotnet restore` internally uses `NuGet.exe` that is packaged with the .NET Core SDK. `dotnet restore` can only restore packages specified in the .NET Core project (`.csproj`) files.
+If you also have a .NET Framework project in your solution or use `package.json` to specify your dependencies, you must also use the **NuGet** task to restore those dependencies.
 
 ::: moniker range="< tfs-2018"
+
 In .NET Core SDK version 2.0 and newer, packages are restored automatically when running other commands such as `dotnet build`. 
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
+
 In .NET Core SDK version 2.0 and newer, packages are restored automatically when running other commands such as `dotnet build`.
-But, you might still need to use the **.NET Core** task to restore packages if you use an authenticated feed.
+However, you might still need to use the **.NET Core** task to restore packages if you use an authenticated feed.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
-If your builds fail occasionally when restoring packages from NuGet.org due to connection issues, you can use VSTS Package Management in conjunction with [upstream sources](/vsts/package/upstream-sources.md) and cache the packages in VSTS. The credentials of the build pipeline are automatically used when connecting to VSTS Package Management. These credentials are derived from either the **Project Collection Build Service** account or the **Project Build Service** account depending on the option selected in your build definition.
 
-If you want to specify a NuGet repository, put the URLs in a `NuGet.config` file in your repository. If your feed is authenticated, then manage its credentials by creating a NuGet service endpoint in the **Services** tab under **Project Settings**.
+If your builds occasionally fail when restoring packages from NuGet.org due to connection issues,
+you can use VSTS Package Management in conjunction with [upstream sources](/vsts/package/upstream-sources.md),
+and cache the packages in VSTS. The credentials of the build pipeline are automatically used when connecting
+to VSTS Package Management. These credentials are derived from either the **Project Collection Build Service**
+account or the **Project Build Service** account depending on the option selected in your build definition.
+
+If you want to specify a NuGet repository, put the URLs in a `NuGet.config` file in your repository.
+If your feed is authenticated, manage its credentials by creating a NuGet service endpoint in the **Services** tab under **Project Settings**.
+
 ::: moniker-end
 
 ::: moniker range="vsts"
-If you're using Microsoft-hosted agents, then you get a new machine every time your run a build, which means you end up restoring the packages every time. In many cases, this can cost a significant amount of time. To mitigate this issue, you can either use VSTS Package Management, or use a self-hosted agent, in which case you'll get the benefit of using the package cache.
+
+If you're using Microsoft-hosted agents, you get a new machine every time your run a build - which means restoring the packages every time.
+This can take a significant amount of time. To mitigate this you can either use VSTS Package Management or a self-hosted agent, in which case
+you'll get the benefit of using the package cache.
+
 ::: moniker-end
 
 To restore packages in your build definition:
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in the build definition, select the phase that runs your build tasks, and then select **+** to add a new task to that phase.
+1. Select **Tasks** in the build definition, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
 
 1. In the task catalog, find and add the **.NET Core** task.
 
-1. Select the task and for **Command** select **restore**.
+1. Select the task and, for **Command**, select **restore**.
 
-1. Specify any other options you need for this task and then save the build.
+1. Specify any other options you need for this task, then save the build.
 
 # [YAML](#tab/yaml)
 
@@ -186,32 +226,41 @@ To restore packages from a custom feed:
     externalFeedCredentials: <Name of the NuGet service endpoint>
 ```
 
-Note: Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service endpoint.
+> [!NOTE]
+> 
+> Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service endpoint.
 
 ::: moniker-end
+
 ::: moniker range="< vsts"
+
 YAML builds are not yet available on TFS.
+
 ::: moniker-end
 
 ---
 
 ## Build your project
 
-You build your .NET Core project using the **.NET Core** task with the **Command** set to **build**. Running this task is equivalent to running `dotnet build` from a command prompt.
+You build your .NET Core project using the **.NET Core** task with the **Command** set to **build**.
+Running this task is equivalent to running `dotnet build` from a command prompt.
 
-If you need to run additional .NET Core commands, you can specify other **Command** settings such as **clean** or **publish**. If you need a command not listed, then you can set **Command** to **custom** and then type the name of the command in the **Custom command** box. This is useful, for example, to install [dotnet global tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools) that are available in .NET Core 2.1.300 and newer.
+If you need to run additional .NET Core commands, you can specify other **Command** settings such as **clean** or
+**publish**. If you need a command not listed, you can set **Command** to **custom** and then type the name of the
+command in the **Custom command** box. This is useful, for example, to install [dotnet global tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
+that are available in .NET Core 2.1.300 and newer.
 
 # [Designer](#tab/designer)
 
 ### Build
 
-1. Select **Tasks** in the build definition, select the phase that runs your build tasks, and then select **+** to add a new task to that phase.
+1. Select **Tasks** in the build definition, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
 
 1. In the task catalog, find and add the **.NET Core** task.
 
-1. Select the task and for **Command** select **build** or **publish**.
+1. Select the task and, for **Command**, select **build** or **publish**.
 
-1. Specify any other options you need for this task and then save the build.
+1. Specify any other options you need for this task, then save the build.
 
 ### Install a tool
 
@@ -257,8 +306,11 @@ Here's an example of installing and using a .NET global tool - [dotnetsay](https
 ```
 
 ::: moniker-end
+
 ::: moniker range="< vsts"
+
 YAML builds are not yet available on TFS.
+
 ::: moniker-end
 
 ---
@@ -266,7 +318,8 @@ YAML builds are not yet available on TFS.
 ## Run your tests
 
 Use the **.NET Core** task to run unit tests in your .NET Core solution using testing frameworks such as MSTest, xUnit, and NUnit.
-One benefit of using this built-in task to run your tests is that the results of the tests are automatically published to VSTS or TFS. These results are then made available to you in the build summary.
+One benefit of using this built-in task to run your tests is that the results of the tests are automatically published to VSTS or TFS.
+These results are then made available to you in the build summary.
 
 # [Designer](#tab/designer)
 
@@ -279,7 +332,7 @@ Use the **.NET Core** task with **Command** set to **test**.
 
 Add the following snippet to your `.vsts-ci.yml` file:
 
-```
+```yaml
 - task: DotNetCoreCLI@2
   displayName: Test
   inputs:
@@ -289,15 +342,19 @@ Add the following snippet to your `.vsts-ci.yml` file:
 ```
 
 ::: moniker-end
+
 ::: moniker range="< vsts"
+
 YAML builds are not yet available on TFS.
+
 ::: moniker-end
 
 ---
 
 ## Package and deliver your code
 
-The output of the `dotnet build` command is generally not transferable. To prepare your code to run on another machine, you need to package the code.
+The output of the `dotnet build` command is generally not transferable.
+To prepare your code to run on another machine, you must package the code.
 
 # [Designer](#tab/designer)
 
@@ -317,7 +374,8 @@ If you want to deploy a web app:
 
 1. Make sure you've selected the option to create a .zip file archive. 
 
-When the build is run, it will automatically search the folders in your solution for web projects and produce .zip file packages for each of them.
+When the build runs it will automatically search the folders in your solution for web projects,
+and produce .zip file packages for each of them.
 
 # [YAML](#tab/yaml)
 
@@ -333,7 +391,7 @@ To create a NuGet package, add the following snippet:
     command: pack
 ```
 
-After you've packaged your app, then you are ready to [publish to NuGet feeds](../targets/nuget.md).
+After you've packaged your app, you are ready to [publish to NuGet feeds](../targets/nuget.md).
 
 ### Deploy a web app
 
@@ -349,8 +407,11 @@ To create a .zip file archive that ready for publishing to a web app, add the fo
 ```
 
 ::: moniker-end
+
 ::: moniker range="< vsts"
+
 YAML builds are not yet available on TFS.
+
 ::: moniker-end
 
 ---
@@ -360,15 +421,29 @@ YAML builds are not yet available on TFS.
 
 If you are able to build your project on your development machine, but are having trouble building it on VSTS or TFS, explore the following potential causes and corrective actions:
 
-* Check that the version of .NET Core SDK and runtime on your development machine match those on the agent. You can easily include a command line script in your build definition to print the version of .NET Core SDK. The script to use is `dotnet --version`. Use the **.NET Core Tool Installer** as explained in this guidance to use the same version on the agent. Or else, update your projects and development machine to the newer version of .NET Core SDK.
+* Check that the versions of the .NET Core SDK and runtime on your development machine match those on the agent.
+  You can include a command line script `dotnet --version` in your build definition to print the version of .NET Core SDK.
+  Either use the **.NET Core Tool Installer** (as explained in this guidance) to deploy the same version on the agent,
+  or update your projects and development machine to the newer version of .NET Core SDK.
 
-* You may be using special logic in Visual Studio IDE that is not encoded in your build definition. VSTS or TFS run each of the commands specified by you in the tasks one after the other in a new process. Look at the logs from the VSTS/TFS build to note down the exact commands that ran as part of the build. Repeat the same commands in the same order on your machine.
+* You may be using some logic in Visual Studio IDE that is not encoded in your build definition.
+  VSTS or TFS run each of the commands you specify in the tasks one after the other in a new process.
+  Look at the logs from the VSTS or TFS build to see the exact commands that ran as part of the build.
+  Repeat the same commands in the same order on your development machine to locate the problem.
 
-* If you have a mixed solution that include some .NET Core projects and some .NET Framework projects, then you should also use **NuGet** task to restore packages specified in `package.json` files. Similarly, you should add **MSBuild** or **Visual Studio Build** tasks to build the .NET Framework projects.
+* If you have a mixed solution that includes some .NET Core projects and some .NET Framework projects,
+  you should also use the **NuGet** task to restore packages specified in `package.json` files.
+  Similarly, you should add **MSBuild** or **Visual Studio Build** tasks to build the .NET Framework projects.
 
-* If your builds work sometimes and fail other times while restoring packages, then it is either that nuget.org is having issues, or there are networking problems between our data center and nuget.org. These are not in our control, and you may explore whether using VSTS Package Management with nuget.org as an upstream source improves the reliability of your builds.
+* If your builds fail intermittently while restoring packages, either Nuget.org is having issues or there are
+  networking problems between the Azure data center and Nuget.org. These are not under our control, and you may
+  need to explore whether using VSTS Package Management with Nuget.org as an upstream source improves the reliability
+  of your builds.
 
-* Occasionally, when we roll out an update to the hosted images with a new version of .NET Core SDK or Visual Studio, something may break with your build. This happens, for instance, because of a newer version or feature of NuGet tool that is shipped with the SDK. To isolate these problems, use the **.NET Core Tool Installer** task to pin down the version of .NET Core SDK used in your build.
+* Occasionally, when we roll out an update to the hosted images with a new version of .NET Core SDK or Visual Studio,
+  something may break your build. This can happen, for example, if a newer version or feature of the NuGet tool
+  is shipped with the SDK. To isolate these problems, use the **.NET Core Tool Installer** task to specify the version
+  of the .NET Core SDK used in your build.
 
 ## Q&A
 

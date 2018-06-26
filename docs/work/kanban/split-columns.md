@@ -7,8 +7,10 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BD18A2A1-56C4-40F8-983C-012A407AC7BB
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts || >= tfs-2015 <= tfs-2018'
 ms.date: 03/20/2018
@@ -68,7 +70,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
 	
 > [!TIP]    
-> You can can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields). 
+> You can filter queries and create charts using the [Board Column Done field](../track/query-by-workflow-changes.md#kanban_query_fields). 
 
 ::: moniker-end
 

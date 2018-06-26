@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams?api-vers
 | Parameter  | Type    | Default | Notes
 |:-----------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string  |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({instance}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance    | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project    | string  |         | Name or ID of the project.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -56,7 +56,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams/{team}?a
 | Parameter  | Type     | Notes
 |:-----------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/integrate/get-started/rest/basics.md) ({instance}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | Query
@@ -79,7 +79,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams/{team}/m
 | Parameter  | Type     | Default | Notes
 |:-----------|:---------|:--------|:-----------------------------------------------------
 | URL
-| instance   | string   |         | [VS Team Services account](/integrate/get-started/rest/basics.md) ({instance}.visualstudio.com) or [TFS server](/integrate/get-started/rest/basics.md) ({server:port}).
+| instance   | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({instance}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   |         | Name or ID of the project.
 | team       | string   |         | Name or ID of the team. 
 | Query

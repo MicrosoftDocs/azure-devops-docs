@@ -133,7 +133,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When a change is made to the value of Release, then clear the value of "Milestone"     
 - When a change was made to the value of Remaining Work, then make Completed Work a required field
 - When the value of Approved is True, then make Approved By a required field 
-- When a user story is created, make make the following fields required: Priority, Risk, and  Effort
+- When a user story is created, make the following fields required: Priority, Risk, and  Effort
 
 [!INCLUDE [temp](../_shared/tip-formula-rule.md)]
 
