@@ -26,8 +26,8 @@ You can set favorites for the following objects from the indicated hub or tab.
 
 ::: moniker range="vsts"
 
-> [!div class="mx-tdCol2BreakAll"]  
-> |Service area |  Artifacts  | Hub/tab |
+> [!div class="mx-tdCol2BreakAll"]        
+> |Service area |     Artifacts        | Hub/tab |
 > |---------------|---------|---------| 
 > | Organization & projects | Projects and teams | **Home page>Projects**  (personal favorites only)  |  
 > | Dashboard | Team dashboards  | **Dashboards** (requires enabling the [**New Dashboards Experience**](preview-features.md)) | 
@@ -43,8 +43,8 @@ You can set favorites for the following objects from the indicated hub or tab.
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-> [!div class="mx-tdCol2BreakAll"]  
-> > |Service area |  Artifacts  | Hub/tab |
+> [!div class="mx-tdCol2BreakAll"]  
+> > |Service area |  Artifacts  | Hub/tab |
 > |---------------|---------|---------| 
 > | Organization & projects | Projects and teams | **Home page>Projects**  (personal favorites only)  |  
 > | Code | Repositories | **Code>Branches**  (personal favorites only) | 
