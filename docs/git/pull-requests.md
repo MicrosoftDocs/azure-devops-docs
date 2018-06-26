@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-Create pull requests to review and merge code in a [Git team project](../accounts/create-team-project.md).
+Create pull requests to review and merge code in a [Git team project](../organizations/accounts/create-team-project.md).
 Pull requests let your team review code and give feedback on changes before
 merging it into the master branch. Pull requests can come from either
 topic branches within the same repository or from a branch in a
@@ -130,7 +130,7 @@ Add reviewers to your pull request.
 
 0. Select the add icon ![Add icon in pull requests](_img/pull-requests/pr_add_icon.png) in the **Reviewers** area.
 
-0. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Team Project, you'll need to [add them](../accounts/add-team-members-vs.md).
+0. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your Team Project, you'll need to [add them](../organizations/accounts/add-team-members-vs.md).
 
 0. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 

@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 06/20/2018
+ms.date: 06/25/2018
 ---
 
 
@@ -37,11 +37,11 @@ For a list of all link types and supported link relationships, see [Link work it
 
 <a id="link"> </a>  
 ## Link several items to an existing or new work item 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
-1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
+1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../track/view-run-query.md), and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
-2. Open the &hellip; context menu of one of the selected work items, choose **Add link**, and then choose **Existing item**&hellip; or **New item**&hellip;. 
+2. Open the![](../../_img/icons/actions-icon.png) actions icon menu of one of the selected work items, choose **Add link**, and then choose **Existing item**&hellip; or **New item**&hellip;. 
 
 	Here we multi-select from the product backlog and choose **Existing item**&hellip;.
 
@@ -50,9 +50,9 @@ For a list of all link types and supported link relationships, see [Link work it
 
 ::: moniker-end
 ::: moniker range="tfs-2017"
-1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to. 
+1. From the web portal, open a query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to. 
 
-2. Open the &hellip; context menu of one of the selected work items, and then choose **Link to a new item**&hellip; or **Link to an existing item**&hellip;. 
+2. Open the &hellip; context menu of one of the selected work items, and then choose **Link to a new item**&hellip; or **Link to an existing item**&hellip;.  
 
 	Here we multi-select from the Queries page and choose <b>Link to a new item&hellip;</b>.</p>
 
@@ -61,11 +61,11 @@ For a list of all link types and supported link relationships, see [Link work it
 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-1. From the web portal, open a backlog or query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
+1. From the web portal, open a query results page, and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
 2. Open the context menu of one of the selected work items, and then choose **Link selected item(s) to a new work item**&hellip; or **Link to an existing item**&hellip;.
 
-	Here we multi-select from the Queries page and choose **Link selected item(s) to a new work item**&hellip;. 
+	Here we multi-select from the Queries page and choose **Link selected item(s) to a new work item**&hellip;.  
 
 	<img src="_img/add-link-query-new-work-item-2015.png" alt="TFS 2015, Query results page, multi-select items, open context menu, click Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
 ::: moniker-end
@@ -83,24 +83,44 @@ When you link work items, you select a link type. In general, use the following 
 
 # [Browser](#tab/browser) 
 
-From the Add link dialog, select the link type, enter a work item ID, and then click OK. 
+From the Add link dialog, select the link type, enter a work item ID, and then choose OK. 
 
-For example, here we use the Related link type to link three items to the bug with ID of *400*. 
+For example, here we use the **Related** link type to link three items to the bug with ID of *400*. 
 
+::: moniker range="vsts"
+> [!div class="mx-imgBorder"]  
+> ![Add link to an existing work item](_img/add-link/add-link-dialog-s136.png)  
+
+To link to multiple work items, you can use inline add which finds work items based on your recent activity or keyword searches. Simply select one or more of the work items displayed automatically based on your recent activity, or enter a keyword. Keyword searches will display work items based on work items that include that keyword in their title. 
+
+> [!NOTE]   
+> You need to add each link one at a time. (You can no longer enter their IDs separated by commas or spaces.) To quickly find work items of interest, you can also use [work item search](../../project/search/work-item-search.md).
+
+::: moniker-end	
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](_img/add-link/link-multi-to-existing.png)   
-	
-To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can click the &hellip; context menu to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
-::: moniker range="vsts || >= tfs-2018"
-To view the work items selected for linking, you can click the ![info icon](../_img/icons/info-icon.png). 	 
+To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can choose the &hellip; context menu to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
+::: moniker-end	
+
+::: moniker range=">= tfs-2018"
+To view the work items selected for linking, you can choose the ![info icon](../_img/icons/info-icon.png). 	 
 > [!div class="mx-imgBorder"]  
-> ![Add link to an existing work item](_img/add-link/info-linked-items.png)   
+> ![Add link to an existing work item](_img/add-link/info-linked-items.png) 
 ::: moniker-end		
 
 If you are working from the Query Results page, you'll need to bulk save the work items you've modified. When you work from a backlog, work items are automatically saved.
 
-<img src="_img/bulk-modify-link-existing-bulk-save-ts.png" alt="Query results page, multi-select items, bulk save modified work items" style="border: 1px solid #C3C3C3;" /> 	
+::: moniker range="vsts"
+> [!div class="mx-imgBorder"]  
+> ![Query results page, multi-select items, bulk save modified work items](_img/add-link/query-add-links-multiple-save-s136.png) 
+::: moniker-end	
+::: moniker range=">= tfs-2013 <= tfs-2018"
+![Query results page, multi-select items, bulk save modified work items](_img/bulk-modify-link-existing-bulk-save-ts.png) 
+::: moniker-end	
+
 
 # [Visual Studio](#tab/visual-studio)
  
@@ -121,7 +141,7 @@ You'll need to bulk save the work items you've modified.
 Here, we have selected to add a link to the selected work items.  
 
 0. Specify the link type, work item type, and title of the new work item. Click OK.
-	::: moniker range="vsts || >= tfs-2018"
+	::: moniker range=">= tfs-2018"
 	<img src="_img/add-link-related-new-item-issue.png" alt="Link to a new work item" style="border: 1px solid #C3C3C3;" /> 
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <=tfs-2017"
@@ -129,13 +149,13 @@ Here, we have selected to add a link to the selected work items.
 	::: moniker-end
 
 0. A work item of the type selected opens. Enter additional information and save the work item.
-	::: moniker range="vsts || >= tfs-2017 <=tfs-2018"
+	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Issue - work item](_img/add-link/new-issue-linked-item.png)   
 	::: moniker-end
 0. If you are working from the Query Results page, you'll need to bulk save the work items you've modified as shown in the previous procedure.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 ## Link several work items to a new git branch 
 
@@ -149,7 +169,7 @@ You can add a new git branch and link them to existing work items at the same ti
 From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch. To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 > [!div class="mx-imgBorder"]  
 > ![Link multiple backlog items to a git branch](_img/add-link/link-git-branch.png)   
 
@@ -162,7 +182,7 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 
 ::: moniker-end
 
-
+::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="find-items"> </a>  
 ## Find work items to link to   
 From the Add link dialog you can open a secondary dialog to help you choose one or more work items to link to. If you are going to find and list work items to link to by using a saved query, first [define the query](../track/using-queries.md) that you want to use. 
@@ -197,7 +217,8 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
     -   From the web portal: To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key.   
   
     -   For Visual Studio, select each work item that should link to the current work item. You can also press the SHIFT key while clicking to select a range of work items, or press the CTRL key while clicking to select multiple work items.  
-  
+
+::: moniker-end
 
 ## Additional bulk-modify link options
 
@@ -205,7 +226,7 @@ Additional features you can use to quickly link or change links that use the par
 
 -   To quickly link backlog items to portfolio backlog items with parent-child links, [use the mapping pane to organize your backlog](organize-backlog.md#mapping). Or, you can choose to Show Parents and [drag-and-drop items within the tree hierarchy](organize-backlog.md#reparent). 
 
--   To create and link tasks to backlog items, [use the sprint backlog page](../scrum/sprint-planning.md). 
+-   To create and link tasks to backlog items, [use the sprint backlog page](../scrum/assign-work-sprint.md). 
 
 -   To indent (![Indent](../track/_img/IC588323.png)), outdent (![Outdent](../track/_img/IC588324.png)), and change the tree hierarchy, use a tree query in Visual Studio.
 

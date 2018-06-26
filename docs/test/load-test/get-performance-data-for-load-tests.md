@@ -28,10 +28,10 @@ is causing performance problems.
    [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs), 
    if you haven't already done so.
 
-1. [Enable Azure Active Directory](../../accounts/access-with-azure-ad.md)
+1. [Enable Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md)
    for your VSTS account, if you haven't already done so.
 
-1. [Link your VSTS account with your Azure subscription](../../accounts/connect-account-to-aad.md),
+1. [Link your VSTS account with your Azure subscription](../../organizations/accounts/connect-account-to-aad.md),
    if you haven't already done so.
 
 1. Sign in to your VSTS account from your web browser to refresh the Azure Resources Manager access token. 

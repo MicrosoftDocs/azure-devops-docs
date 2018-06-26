@@ -168,7 +168,7 @@ You can manage your project plan using Project and all the features that Project
 
 - [Bulk modify work items using Excel](bulk-add-modify-work-items-excel.md)
 - [Create your backlog](../../backlogs/create-your-backlog.md)
-- [Requirements and compatibility](../../../accounts/requirements.md) 
+- [Requirements and compatibility](/tfs/server/requirements) 
 
 If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-office-integration-issues.md). 
 

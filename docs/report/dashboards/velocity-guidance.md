@@ -63,7 +63,7 @@ For example, you can create a chart of the number of Product backlog items and b
 
 See also:
 - [Forecast your sprints](../../work/scrum/forecast.md)
-- [Plan your sprint](../../work/scrum/sprint-planning.md).
+- [Plan your sprint](../../work/scrum/assign-work-sprint.md).
 
 
 ### Industry resources

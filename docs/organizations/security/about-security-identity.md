@@ -39,7 +39,7 @@ Authentication verifies a user's identify based on the credentials provided when
 - Microsoft account (MSA)
 - Active Directory (AD)
 
-Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your VSTS account, you can simply use Microsoft accounts. For additional information, see [Access VSTS with Azure Active Directory (Azure AD)](../../accounts/access-with-azure-ad.md).
+Azure AD and MSA support cloud authentication. We recommend Azure AD when you need to manage a large group of users. Otherwise, if you have a small user base accessing your VSTS account, you can simply use Microsoft accounts. For additional information, see [Access VSTS with Azure Active Directory (Azure AD)](../accounts/access-with-azure-ad.md).
 
 For on-premises TFS, AD is recommended when managing a large group of users. For additional information, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 
@@ -54,7 +54,7 @@ you can use basic authentication to access
 [REST APIs for VSTS and TFS](../../integrate/get-started/rest/basics.md), 
 but you must turn on alternate credentials.
 
-*	[Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md) 
+*	[Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 to generate tokens for: 
 
 	*	Accessing specific resources or activities, like builds or work items
@@ -73,7 +73,7 @@ to generate encryption keys when you use Linux, macOS,
 or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
 and can't use 
 [Git credential managers](../../git/set-up-credential-managers.md) 
-or [personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md) 
+or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 for HTTPS authentication.
 
 
@@ -152,7 +152,7 @@ Certain features are only available to users who have the appropriate licensing 
 ## Related articles
 
 - [Permissions and groups reference](permissions.md)
-- [Access with Azure Active Directory (Azure AD)](../../accounts/add-users-to-aad.md). 
+- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-aad.md). 
 - [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 - [Setting up HTTPS with Secure Sockets Layer (SSL)](/tfs/server/admin/setup-secure-sockets-layer)
 

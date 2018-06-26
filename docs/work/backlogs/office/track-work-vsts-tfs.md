@@ -95,7 +95,7 @@ To reconnect an Excel or Project document file:
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)
-- [Requirements and compatibility](../../../accounts/requirements.md) 
+- [Requirements and compatibility](/tfs/server/requirements) 
 
 
 ### Can I open a query in Excel or Project from the web portal?  

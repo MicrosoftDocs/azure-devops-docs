@@ -26,7 +26,7 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 
 2.  Choose **Share**, and add users or user groups to the appropriate SharePoint groups.
 
-    ![Choose the SharePoint group and add users](../../accounts/_img/add-users-team-project/invite-people.png)
+    ![Choose the SharePoint group and add users](../accounts/_img/add-users-team-project/invite-people.png)
 
     -   To add users who will require minimal access to the project, choose **Readers**.
     -   To add users who will contribute fully to this project, choose **Contributors**.
@@ -53,7 +53,7 @@ or they won't be able to view or edit those reports.
 
 	-   **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
 
-	![Follow instructions for your version of SharePoint](/tfs/server/_img/add-administrator-tfs/people-and-groups.png)
+	![Follow instructions for your version of SharePoint](/tfs/server/admin/_img/add-administrator-tfs/people-and-groups.png)
 
 
 
@@ -71,7 +71,7 @@ or they won't be able to view or edit those reports.
 	4.  Add the account name of the user or group to whom you want grant administrative permissions
 		and grant them membership in the Team Foundation Content Manager role.
 
-		![Click and choose, or tab, spacebar, and enter](../../accounts/_img/add-administrator-tfs/rs-role-assignment.png)
+		![Click and choose, or tab, spacebar, and enter](../accounts/_img/add-administrator-tfs/rs-role-assignment.png)
 
 
 ## Add users to Reporting Services
@@ -90,7 +90,7 @@ where *ReportServer* represents the name of the server that is running SQL Serve
 
     -   To add users who will act as project leads, select the **Team Foundation Content Manager** check box.
 
-        ![Choose the role assignment for the user or group](../../accounts/_img/add-users-team-project/assign-rs-role.png)
+        ![Choose the role assignment for the user or group](../accounts/_img/add-users-team-project/assign-rs-role.png)
 
 If you're a member of [Team Foundation Administrators](/tfs/server/admin/add-administrator-tfs),
 you can verify what features are available for your users by default,

@@ -27,8 +27,8 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 >**Feature availability**: You can manage all your team settings from a common configuration dialog from VSTS and TFS 2015.1 and later versions.
 -->  
 
-1. From your team's backlog page, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) (gear icon) to open the common configuration team settings.  
-	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+1. From your team's backlog page, choose the ![](../_img/icons/team-settings-gear-icon.png) gear icon to open the common configuration team settings.  
+	::: moniker range=">= tfs-2017"  
 	![Backlog board, open team settings](../backlogs/_img/organize-backlog-open-ccdialog.png) 
 	::: moniker-end
 	::: moniker range="tfs-2015" 
@@ -49,7 +49,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
 	::: moniker-end
 
-2. Click the **Working with bugs** tab and choose from the three options available.
+2. Choose the **Working with bugs** tab and select from the three options available.
 
 	* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs will be associated with the Requirements category.  
 
@@ -70,7 +70,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end 
 
-3. To see the changes, open or refresh the team's [backlog](../backlogs/create-your-backlog.md), [sprint backlog pages](../scrum/sprint-planning.md), or [Kanban board](../kanban/kanban-basics.md).
+3. To see the changes, open or refresh the team's [backlog](../backlogs/create-your-backlog.md), [sprint backlog pages](../scrum/assign-work-sprint.md), or [Kanban board](../kanban/kanban-basics.md).
 
 > [!TIP]  
 > If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  

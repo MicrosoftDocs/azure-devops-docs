@@ -158,7 +158,7 @@ This topic addressed how to add and customize WITs and process configuration for
 
 Other related topics or resources: 
 
-- [Guide to administrative tasks](../../accounts/account-management.md)  
+- [Guide to administrative tasks](../../organizations/accounts/account-management.md)  
 - [ProcessConfiguration XML elements](reference/process-configuration-xml-element.md)
 - [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Customize the work tracking experience](customize-work.md)  

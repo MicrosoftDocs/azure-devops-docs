@@ -1,6 +1,6 @@
 ---
 title: Release Definitions for Release Management in VSTS and TFS
-description: Understand release definitions in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand release definitions in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 604AFC89-57CD-44F9-B440-5F07F88F0BD4
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
-A **release definition** is one of the fundamental concepts in Release Management for VSTS and TFS.
+A **release definition** is one of the fundamental concepts in Release Management for your DevOps CI/CD processes.
 It defines the end-to-end release process for an application to be deployed across various environments.
 
 You start using Release Management by authoring a release definition for your application. To author a release definition, you must specify the [artifacts](artifacts.md) that make up the application and the **release process**.

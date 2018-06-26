@@ -23,7 +23,7 @@ To set up Team Foundation Version Control (TFVC) on your dev machine, you just n
 
 -   If you don't have Visual Studio, [get it here](https://www.visualstudio.com/).
 
--   If you don't have a team project, [create](../accounts/create-team-project.md) or [get access](https://msdn.microsoft.com/library/jj920206) to one.
+-   If you don't have a team project, [create](../organizations/accounts/create-team-project.md) or [get access](https://msdn.microsoft.com/library/jj920206) to one.
 
 ## Create a workspace and get the code
 

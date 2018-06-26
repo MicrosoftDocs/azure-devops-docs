@@ -16,7 +16,7 @@ ms.date: 03/10/2017
 
 > [!IMPORTANT]
 > Basic authentication is not recommended.  Turning on IIS basic authentication causes various issues, and you should 
-> use [personal access tokens (PATs)](../../../accounts/use-personal-access-tokens-to-authenticate.md) instead.  For example, if you turn on IIS basic authentication, GIT command line will stop working.
+> use [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) instead.  For example, if you turn on IIS basic authentication, GIT command line will stop working.
 
 
 ## If you know you want IIS basic authentication, then you'll need ...

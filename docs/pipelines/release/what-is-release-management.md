@@ -1,6 +1,6 @@
 ---
 title: Understand how Microsoft Release Management works
-description: What is Microsoft Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - What is Microsoft Release Management in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 **Release Management** is a service in Visual Studio Team Services (VSTS)
 and Team Foundation Server (TFS 2015.2 and later) and an essential
-element of DevOps that helps your team **continuously deliver** software
+element of DevOps CI/CD that helps your team **continuously deliver** software
 to your customers at a faster pace and with lower risk.
 You can **fully automate** the testing and delivery of your software
 in multiple environments all the way to production, or set up

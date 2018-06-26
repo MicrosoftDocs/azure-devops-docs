@@ -26,12 +26,12 @@ The only required field for all WITs is **Title**. When the work item is saved, 
 	<td><p>[Reason](/vsts/work/track/query-by-workflow-changes)</p></td>
 	<td><p>Use the default first. Update it when you change state. Each State is associated with a default reason.</p></td></tr>
 <tr>
-	<td><p>[Area](/vsts/work/customize/set-area-paths)</p></td>
-	<td><p>Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.</p><p>To change the dropdown list of areas, see [Add and modify area and iteration paths](../customize/set-area-paths.md).</p></td>
+	<td><p>[Area](/vsts/organizations/settings/set-area-paths)</p></td>
+	<td><p>Choose the area path associated with the product or team, or leave blank until assigned during a planning meeting.</p><p>To change the dropdown list of areas, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).</p></td>
 </tr>
 <tr>
-	<td><p>[Iteration](/vsts/work/customize/set-area-paths)</p></td>
-	<td><p>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting.</p><p>To change the drop-down list of iterations, see [Add and modify area and iteration paths](../customize/set-area-paths.md).</p></td>
+	<td><p>[Iteration](/vsts/organizations/settings/set-area-paths)</p></td>
+	<td><p>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later, during a planning meeting.</p><p>To change the drop-down list of iterations, see [Add and modify area and iteration paths](../../organizations/settings/set-area-paths.md).</p></td>
 </tr>
 <tr>
 	<td><p>![History tab icon](/vsts/work/backlogs/_img/icon-history-tab-wi.png)[(History)](/vsts/work/track/history-and-auditing)</p></td>

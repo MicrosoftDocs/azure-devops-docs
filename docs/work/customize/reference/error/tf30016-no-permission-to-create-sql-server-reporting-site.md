@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: edb242fd-5839-440d-9ee1-f24e0b279137
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: Troubleshooting
 ms.date: 02/22/2017
 ---
@@ -23,6 +24,6 @@ This error occurs when the permissions granted to your user account on the SQL S
   
 You must also have the **Full Control** permission set on the server that hosts SharePoint Products. Your Team Foundation Server administrator may also be able to grant you the required permissions.  
   
-## Related articles
-- [Create a team project](../../../../accounts/create-team-project.md)
+## Related articles  
+- [Create a team project](../../../../organizations/accounts/create-team-project.md)
 - [Grant permissions to view or create reports](../../../../report/admin/grant-permissions-to-reports.md)

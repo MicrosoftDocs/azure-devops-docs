@@ -32,7 +32,7 @@ For more information, read [What is Analytics?](what-is-analytics.md) and [VSTS/
 ## Videos
 | | |
 | --- | --- |
-| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T251/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | |
+| <iframe src="https://channel9.msdn.com/Events/Connect/2017/T251/player" width="560" height="314" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Build/2018/THR2020/player" width="560" height="314" allowFullScreen frameBorder="0"></iframe> |
 | | |
 
 ## Step-by-Step Tutorials

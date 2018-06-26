@@ -1,7 +1,7 @@
 ---
-title: Filter backlogs  
+title: Filter backlogs and queries based on keywords, tabs, or other fields
 titleSuffix: VSTS & TFS
-description: Filter your backlog based on keywords, tags, or other fields   
+description: Filter your backlog or query based on keywords, tags, or other fields   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
@@ -9,21 +9,19 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018
+ms.date: 06/25/2018
 ---
 
-  
 
 # Filter backlogs or queries
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-<!--- NEEDS UPDATING BASED ON FEATURES UNDER RELEASE  --> 
 <a id="filter"></a>
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 ## Filter based on keywords or fields   
 
 > [!NOTE]   
@@ -56,11 +54,19 @@ To learn more about filtering using tags, see [Add tags to work items to categor
  
 ::: moniker-end
 
+
+## Characters ignored by filter criteria
+
+::: moniker range="vsts"
+The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
+::: moniker-end
+
 ## Related articles  
 - [Tags](../track/add-tags-to-work-items.md) 
 - [Set column options](set-column-options.md)  
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
-### Characters ignored by filter criteria
-
-The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  

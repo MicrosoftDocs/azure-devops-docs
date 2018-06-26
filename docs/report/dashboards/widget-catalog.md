@@ -249,7 +249,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 
 
 Inserts the team's capacity bar chart for the current sprint.
-Teams [specify their capacity to plan and monitor their sprint resources](../../work/scale/capacity-planning.md).  
+Teams [specify their capacity to plan and monitor their sprint resources](../../work/scrum/set-capacity.md).  
 
 ----
 ::: moniker-end
@@ -266,12 +266,12 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
  
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
-Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/sprint-planning.md). 
+Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
 ::: moniker-end
 
 ::: moniker range=" tfs-2015"
 
-Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/sprint-planning.md). 
+Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ----

@@ -12,7 +12,7 @@ ms.topic: overview
 ms.date: 03/20/2018
 ---
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 # Backlogs, boards, and plans 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -29,7 +29,7 @@ What can you do from a backlog view versus a board view? How do changes you make
 Which view should you use to work with Agile methods?  
 
 **In a nutshell...**
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 -  Backlogs display work items as a list and boards display them as cards  
 -  You use your product backlog to quickly plan and prioritize your work  
 -  You use your sprint backlogs and task boards when you work in Scrum   
@@ -54,12 +54,12 @@ Delivery Plans are available for VSTS and TFS 2017.2 and later versions. You acc
 -->
 
 With list backlogs you can quickly develop your project plan; group and prioritize work; and perform bulk updates on selected work items. With boards, you can quickly update status and fields displayed for each work item. 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 And with plans, you can monitor progress, deliverables, and dependencies across several teams.  
 ::: moniker-end
 You access your backlogs and boards from the **Work** hub. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [Get started with Agile project management](overview.md).
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -75,7 +75,7 @@ You use work items to share information, assign work to team members, track depe
 ### Portfolio, product, and sprint backlogs 
 Portfolio backlogs typically track high-level features, scenarios, or epics. Your product backlog contains a prioritized list of user stories, deliverables, or work you plan to build or fix. Portfolio backlogs help you organize your product backlog into a hierarchy of elements. Sprint backlogs contain just those items that each team is working on during a scheduled sprint or iteration period. 
 
-For details about working in each type of backlog, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md), and [Sprint planning (sprint backlogs)](../scrum/sprint-planning.md). 
+For details about working in each type of backlog, see [Create your backlog](create-your-backlog.md), [Define features and epics](define-features-epics.md), and [Sprint planning (sprint backlogs)](../scrum/assign-work-sprint.md). 
 
 > [!TIP]  
 >You can't sort a backlog by column. However, you can use the Create Query option on each backlog to create a query that you can sort on any field column you choose. To learn more about queries, see [Use the query editor to list and manage queries](../track/using-queries.md).  
@@ -248,7 +248,7 @@ The In progress items **Show/Hide** filter causes some backlog items to display 
 
 On your [backlog](create-your-backlog.md), set **In progress items** to **Show** to see all active bugs and other items on your backlog.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017"  
 <a id="plans">  </a>
 ## Review team deliverables using Delivery Plans   
 
@@ -261,7 +261,7 @@ You install Delivery Plans from the [Visual Studio Marketplace](https://marketpl
 Delivery Plans is available for TFS 2017.2 and later versions. 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](../scale/review-team-plans.md). 
 
 <img src="_img/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 1px solid #C3C3C3;" /> 
@@ -279,7 +279,7 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 
 ## Related articles  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017"  
 Now that you understand how backlogs, boards, and plans work, [get started using them to plan and track your work](overview.md).
 ::: moniker-end
 
@@ -301,7 +301,7 @@ Additional topics of interest:
 - [Add work items](add-work-items.md)   
 - [Dashboards](../../report/dashboards/dashboards.md)   
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
+::: moniker range=">= tfs-2017"  
 ### Additional tools from the Marketplace 
 
 You may find additional tools to help plan and track your work from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VSTS&category=Plan%20and%20track&sortBy=Downloads).

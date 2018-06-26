@@ -49,7 +49,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
 
 	# [New Queries Experience](#tab/new-query-exp)
-	::: moniker range="vsts || >= tfs-2018"	
+	::: moniker range=">= tfs-2018"	
 	<img src="_img/using-queries-new-vsts-exp.png" alt="Web portal, Queries page, new queries experience, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <= tfs-2017"
@@ -57,7 +57,7 @@ Active Bugs shared query provided with the Agile process template. Examples are 
 	::: moniker-end
 
 	# [Old Queries Experience](#tab/old-query-exp)
-	::: moniker range="vsts || >= tfs-2015 <= tfs-2018"	 	
+	::: moniker range=">= tfs-2015"	 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" /> 
 	::: moniker-end
 	::: moniker range="tfs-2013"	 

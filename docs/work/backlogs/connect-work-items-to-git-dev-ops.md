@@ -163,7 +163,7 @@ With Git commits, any work items that have been linked to a commit will be liste
 <!--- Add info about option to set build linking; link to release notes if needed --> 
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ### Link types showing in the Development section
 Links shown in this section appear as a result of these actions:   
 - Creating a branch, commit, or pull request from the work item    
