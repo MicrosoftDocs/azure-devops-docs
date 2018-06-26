@@ -8017,6 +8017,11 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-azure-webapp.md",
+      "redirect_url": "/vsts/pipelines/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/apps/cd/azure/aspnet-core-to-azure-webapp.md",
       "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": true
     },
