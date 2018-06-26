@@ -33,7 +33,7 @@ If you're not a member of the Project Administrators group, [get added](../../or
 
 
 # [New Queries Experience](#tab/new-query-exp)
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 To enable the New Queries Experience, see [Preview features](../../project/navigation/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
 
 You add query folders from the **Work>Queries>All** page.
@@ -108,7 +108,7 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 
 ### Q: Can I change the owner of a query or folder?
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 **A:** No. You can only enable permissions for users and groups from the permissions window for the query or folder.
 ::: moniker-end
 

@@ -33,7 +33,7 @@ In this topic you'll learn how to:
 
 # [New Queries Experience](#tab/new-query-exp)
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 To enable the New Queries Experience, see [Preview features](../../project/navigation/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
 
@@ -65,7 +65,7 @@ You can update several work items through the triage process, and then do a bulk
 
 # [New Queries Experience](#tab/new-query-exp)
 
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 Click **Save items** to save all work items you've modified. 
 
 <img src="_img/triage-queries/save-work-items-new-exp.png" alt="Choose Save work items to save all modified work items" style="border: 1px solid #C3C3C3;" /> 

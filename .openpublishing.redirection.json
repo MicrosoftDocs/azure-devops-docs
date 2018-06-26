@@ -8799,6 +8799,26 @@
       "source_path": "docs/work/scale/capacity-planning.md",
       "redirect_url": "/vsts/work/scrum/set-capacity",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/connect-vso-pbi-vs.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/create-rollup-charts.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/create-trend-charts.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/powerbi/report-on-vso-with-power-bi-vs.md",
+      "redirect_url": "/vsts/report/powerbi/data-connector-connect",
+      "redirect_document_id": false
     }
   ]
 }
