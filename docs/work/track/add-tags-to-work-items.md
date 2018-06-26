@@ -29,7 +29,7 @@ You can add and modify tags from the web portal, from Team Explorer plug-in for 
 
 From the web portal, open a work item and add a tag. Click Add and type your keyword. Or, select from the list of previously assigned tags.  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 > [!div class="mx-imgBorder"]
 > ![VSTS, TFS 2018-Add one or more tags to a work item](_img/add-tags/add-tag-vsts.png)
@@ -54,7 +54,7 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 
 <a id="bulk-modify"></a>
 ##Bulk add or remove tags 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 You can bulk update work items to add or remove tags from the web portal.
 You bulk modify tags in the same way as you [bulk modify other fields using the web portal](../backlogs/bulk-modify-work-items.md#tags). Or, you can use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to bulk add or remove tags.   
@@ -108,7 +108,7 @@ For example, here we query for all work items that are tagged either ```Web``` o
 <a id="show-tags"></a>
 ## Show tags in your backlog or query results
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the ![actions icon](../_img/icons/actions-icon.png) to select it from the menu of options.    
 
 > [!div class="mx-imgBorder"]
@@ -138,7 +138,7 @@ All tags that have been added to the listed work items appear.
 ## Filter lists using tags  
 From the web portal, you can filter backlogs, boards, and query results using tags. 
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 Begin by clicking the ![actions icon](../_img/icons/filter-icon.png) filter icon. 
 
@@ -172,7 +172,7 @@ You can't delete a tag itself. However, if you delete a tag from all work items 
 
 If you misspell a tag, don't assign the misspelled tag to any work item and the system will automatically delete it within 3 days.  
 
-::: moniker range="vsts || >= tfs-2018"  
+::: moniker range=">= tfs-2018" 
 
 Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a page under the Work hub to manage tags. 
 

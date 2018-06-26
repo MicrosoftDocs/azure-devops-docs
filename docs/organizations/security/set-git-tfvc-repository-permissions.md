@@ -11,7 +11,9 @@ author: KathrynEE
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---
-# Quickstart: Set repository permissions for Git or TFVC
+
+
+# Set repository permissions for Git or TFVC
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 

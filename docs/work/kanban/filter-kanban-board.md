@@ -55,26 +55,30 @@ For example, here we filter the backlog to only show items that include 'Web' in
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 > [!TIP]  
->Type **f** to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
+> Type **f** to move your cursor to the filter box. To move the focus up or down within a column, enter the ![Up/Down arrow](../_img/icons/Arrow_Up.png)![ ](../_img/icons/Arrow_Down.png) up/down arrows.    
 >For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
  
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards. 
-
-The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.
-
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range="vsts"
+The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+The filter criteria ignores the following characters when the field value starts with the characters:<br/>
+```{ ( [ ! @ # $ % ^ & *  ~  ` '  " ```
+::: moniker-end
+
+
+
+::: moniker range=">= tfs-2017"
 
 <a id="field-filter"></a>
 ## Filter using select field values  
-
-<!---
-> [!NOTE]    
-><b>Feature availability: </b>Filter by select fields is available from VSTS and TFS 2017 and later versions.  
--->
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics). 
 
@@ -91,22 +95,16 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 
 For example, here we filter for all items assigned to Jamal and Raisa. 
 
-<img src="../kanban/_img/filter-kb-filters-chosen.png" alt="Kanban board, Filter on assignment field" style="border: 1px solid #C3C3C3;" />  
-
+![Kanban board, Filter on assignment field](../kanban/_img/filter-kb-filters-chosen.png)  
 Filters remain in place until you explicitly clear them by clicking **Clear filters**. When you refresh your Kanban board or log in from another browser, filters remain set to your previous values. 
 
 Once the board is filtered, you can click the filter icon to hide the drop downs and view the applied filters on the board. The filter icon also turns opaque to signify a filtered board.
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="parent-filter"></a>
 ## Filter by specifying parent work items
-
-<!---
-> [!NOTE]    
-><b>Feature availability: </b>The **Filter by parent** feature is available from VSTS and TFS 2017 and later versions.  
--->
 
 You can use the **Filter by parent** feature to filter by select parent work items using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features).
 
@@ -119,7 +117,7 @@ To start filtering, click the ![Kanban filter icon](../_img/icons/kanban-filter-
 
 Here, we choose two features on which to filter the board.  
 
-<img src="_img/filter-kb-choose-parent-work-items.png" alt="Kanban board, Filter on parent work items" style="border: 1px solid #C3C3C3;" />  
+![Kanban board, Filter on parent work items](_img/filter-kb-choose-parent-work-items.png) 
 
 The final board displays just those stories linked as child work items to the selected features.
 
@@ -141,46 +139,9 @@ Cards are filtered based on the assignments made in the following order and logi
 ::: moniker-end
 
 
-
 ## Related articles  
 - [Tags](../track/add-tags-to-work-items.md) 
 - [Customize cards](../customize/customize-cards.md)
 
 
-
-<!---
-<table>
-<tr>
-<th>Filter options </th>
-<th>TFS 2015 </th>
-<th>VSTS, TFS 2018, TFS 2017 </th>
-</tr>
-
-
-<tr>
-<td align="left">[Filter by keyword and tags](#text-filter)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-
-<tr>
-<td align="left">
-[Filter by select field values](#field-filter)
-</td>
-<td>   </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-<tr>
-<td align="left">
-[Filter by parent work items](#parent-filter)
-</td>
-<td>   </td>
-<td>![checkmark](../_img/icons/checkmark.png)</td>
-</tr>
-
-</table>
-
--->
 
