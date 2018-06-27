@@ -203,7 +203,7 @@ Stakeholder access supports business owners and analysts and other team members 
 For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://visualstudio.microsoft.com/vsts/compare-features/).
 
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
-- **VSTS**: [Add users and assign licenses in VSTS](../accounts/add-account-users-from-user-hub.md)
+- **VSTS**: [Add users and assign licenses in VSTS](../accounts/add-organization-users-from-user-hub.md)
 - **TFS**: [Change access levels](change-access-levels.md)  
 
 

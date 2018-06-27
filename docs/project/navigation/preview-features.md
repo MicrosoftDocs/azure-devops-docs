@@ -63,7 +63,7 @@ When you enable a feature at the account level, you essentially turn it on for a
 - [Approval gates in releases](../../pipelines/release/approvals/index.md)  
 - [New Queries Experience](../../work/track/view-run-query.md)  
 - [Combine email recipients](../../notifications/manage-team-notifications.md) 
-- [New Account Landing page](../../user-guide/account-home-pages.md)  
+- [New Account Landing page](../../user-guide/organization-home-pages.md)  
 - [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)   
 - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md) 
 - [New Work Items Hub](../../work/work-items/view-add-work-items.md)   
