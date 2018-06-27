@@ -71,6 +71,8 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 * When *new* secrets are added to the vault, they are **not** made available automatically to all the definitions. 
   New secrets must be explicitly added to the variable group in order to make them available to definitions
   in which the variable group is used.
+  
+* When secrets are deleted to the vault, they are **not** deleted automatically to all the definitions. The deleted secrets must be explicitly deleted on the variable group in order to avoid issues on the definitions in which the variable group is used.   
 
 * Azure Key Vault supports storing and managing cryptographic keys and secrets in Azure.
   Currently, VSTS variable group integration supports mapping only secrets from the Azure key vault.
