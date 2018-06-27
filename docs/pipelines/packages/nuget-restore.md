@@ -63,6 +63,20 @@ The example below demonstrates how that might look.
 </configuration>
 ```
 
+## Restoring packages from feeds in a different account
+
+If your NuGet.config contains feeds in a different VSTS account (*account*.visualstudio.com) than the account running the build, you'll need to set up credentials for those feeds manually.
+
+1. Select a login account (either a service account (recommended) or a user's account) that has access to the remote feed
+2. Using your browser's InPrivate mode, Incognito mode, or similar, go to the VSTS account that contains the feed, sign in with the login account you selected in step 1, click the user profile circle in the top right, and select Security
+3. Create a PAT with the **Packaging (read)** scope and keep it handy
+4. In the VSTS account that contains the build, edit the build's NuGet step and ensure you're using version 2 or greater of the task, using the version selector
+5. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button
+6. Set the path to your NuGet.config in the **Path to NuGet.config**
+7. In **Credentials for feeds outside this account/collection**, click the **+**
+8. In the service endpoint dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3
+9. Save the service endpoint and the build, then queue a new build
+
 ## Q & A
 
 ### Why can't my build restore packages?
