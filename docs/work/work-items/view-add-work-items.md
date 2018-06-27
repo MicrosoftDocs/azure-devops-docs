@@ -190,7 +190,7 @@ Use the following three controls to manage your views.
 - [Enable preview features](../../project/navigation/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
-- [Work from the account home page](../../user-guide/account-home-pages.md)
+- [Work from the account home page](../../user-guide/organization-home-pages.md)
 
 > [!NOTE]
 > You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).

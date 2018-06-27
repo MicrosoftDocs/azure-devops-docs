@@ -7,7 +7,7 @@ ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/24/2017
+ms.date: 06/26/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-After you create a new account and team project in VSTS, you can begin sharing your code with others. 
+After you create a new organization and team project in VSTS, you can begin sharing your code with others. 
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/tutorial/commits.md) and [branches](../git/tutorial/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
 
@@ -30,7 +30,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 ## Clone the repo to your computer
 
-0. From your web browser, open the team project for your VSTS account and click the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
+0. From your web browser, open the team project for your VSTS organization and click the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
  
 0. Select Clone in the upper-right corner of the **Code** window and copy the **Clone URL**.
 

@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 06/07/2018
+ms.date: 06/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -71,7 +71,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add user accounts to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
+<p>To share and contribute to your project, add user organizations to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
@@ -83,8 +83,8 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
-- [Manage users (VSTS)](../organizations/accounts/add-account-users-from-user-hub.md)   
+<p>All users that you add to your VSTS organization or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+- [Manage users (VSTS)](../organizations/accounts/add-organization-users-from-user-hub.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
@@ -601,11 +601,11 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Autonomy and alignment</b></p>
-<p>As your organization grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../work/scale/agile-culture.md). </p>
+<p>As your enterprise grows, your tools can grow to support a [culture of team autonomy and organizational alignment](../work/scale/agile-culture.md). </p>
 
 
 <p><b>Scale your tools and practices</b></p>
-<p>Incrementally adopt [practices that scale](../work/scale/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.</p>
+<p>Incrementally adopt [practices that scale](../work/scale/practices-that-scale.md) to create greater rhythm and flow within your enterprise, engage customers, improve project visibility, and develop a productive workforce.</p>
 
 </td>
 <td width="33%">
@@ -775,7 +775,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Personal and team notifications or alerts</b></p>
 <p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../notifications/manage-personal-notifications.md) or [team notifications](../notifications/manage-team-notifications.md).</p>
-![Open Notifications from Account menu](_img/features/features-notifications-option.png)  
+![Open Notifications from Organization menu](_img/features/features-notifications-option.png)  
 <br/>
 
 <p><b>Share queries and sprint plans</b></p>
@@ -1047,7 +1047,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>[Consume packages](../package/nuget/consume.md) by connecting to a feed.</p>
 
 <p><b>Publish packages to feeds</b></p>
-<p>[Publish packages](../package/nuget/publish.md) to share code with your team and your organization.</p>
+<p>[Publish packages](../package/nuget/publish.md) to share code with your team and your enterprise.</p>
 
 <p><b>Add identities to your feeds </b></p>
 <p>[Give teams and service identities](../package/feeds/common-identities.md) access to your feeds.</p>
@@ -1057,7 +1057,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Bootstrap the developer environment</b></p>
-<p>Increase your team's velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating VSTS NuGet into your workflow by [getting the NuGet VSS.PackageManagement.Bootstrap package](../package/nuget/bootstrap-nuget.md).</p>
+<p>Increase your team's velocity and decrease the amount of code duplication across your enterprise. Access a set of tools and conventions for integrating VSTS NuGet into your workflow by [getting the NuGet VSS.PackageManagement.Bootstrap package](../package/nuget/bootstrap-nuget.md).</p>
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
@@ -1388,7 +1388,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([VSTS](../organizations/accounts/add-account-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([VSTS](../organizations/accounts/add-organization-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -1432,7 +1432,7 @@ pipelines\tasks\build\_img
 <p>Track the progress of work on your backlogs [through the CFD charts](../report/dashboards/cumulative-flow.md).  </p>
 
 <p><b>Power BI dashboards (VSTS)</b></p>
-<p>You can create dashboards, individual reports, or explore data collected for your Visual Studio Online account once you [connect to Power BI](../report/powerbi/report-on-vso-with-power-bi-vs.md). </p>
+<p>You can create dashboards, individual reports, or explore data collected for your Visual Studio Online organization once you [connect to Power BI](../report/powerbi/report-on-vso-with-power-bi-vs.md). </p>
 
 
 </td>
@@ -1457,7 +1457,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Get started </b></p>
-<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS account once you connect to Power BI. </p>
+<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS organization once you connect to Power BI. </p>
 
 
  
@@ -1466,7 +1466,7 @@ pipelines\tasks\build\_img
 <td width="50%">
 
 <p><b>Connect to Power BI</b></p>
-<p>[Steps required to authorize Power BI to access your VSTS account](../report/powerbi/data-connector-connect.md).</p>
+<p>[Steps required to authorize Power BI to access your VSTS organization](../report/powerbi/data-connector-connect.md).</p>
 
 
 <p><b>Available data</b></p>
@@ -1853,7 +1853,7 @@ using [service hooks](../service-hooks/overview.md).</p>
 <td width="33%">
 
 <p><b>Authorize</b></p>
-<p>[Authorize](../service-hooks/authorize.md) other services to access your VSTS account using the industry standard OAuth 2.0.
+<p>[Authorize](../service-hooks/authorize.md) other services to access your VSTS organization using the industry standard OAuth 2.0.
 Oauth 2.0 provides safe, secure access to your resources like work items, source code and build results by those other services.</p>
 
 </td>
@@ -1872,7 +1872,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Web portal preferences </b></p>
-<p><p>Choose your name to access [your profile settings](../organizations/accounts/account-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
+<p><p>Choose your name to access [your profile settings](../organizations/settings/user-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
 ![Profile drop down menu](_img/features/features-global-profile.png)  
 <br/>
 
@@ -2090,11 +2090,11 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ![Operational hubs](_img/features/alm-feature-op-hubs-2.png)  
 <br/>
 
-<p><b>Account hub </b></p>
-<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](account-home-pages.md). </p>
+<p><b>Organization hub </b></p>
+<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [organization hub](organization-home-pages.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access [your profile settings](../organizations/accounts/account-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
+<p>Choose your name to access [your profile settings](../organizations/settings/user-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
 ![Profile drop down menu](_img/features/alm-index-my-profile-menu.png)  
 <br/>
 
@@ -2157,7 +2157,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Collection-project-team structure</b></p>
 <p>The [collection-project-team structure](work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)
+![Single collection-project-team conceptual image](_img/web-portal-organization-project-team-concept.png)
 <br/>
 
 <p><b>My favorites</b></p>
@@ -2227,7 +2227,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Charts</b></p>
-<p>[Turn your queries into a status or trend chart](../report/dashboards/charts.md) and share them with your team, organization, and stakeholders.</p>
+<p>[Turn your queries into a status or trend chart](../report/dashboards/charts.md) and share them with your team, enterprise, and stakeholders.</p>
 ![Create status and trend charts from flat list queries](_img/features/alm-feature-test-chart.png)  
 <br/>
 
@@ -2336,7 +2336,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team admin role and permissions</b></p>
-<p>Add user accounts as team administrators to enable them to [configure team settings and manage team assets](../work/scale/manage-team-assets.md).</p>
+<p>Add user organizations as team administrators to enable them to [configure team settings and manage team assets](../work/scale/manage-team-assets.md).</p>
 
 
 <p><b>Manage administrative permissions </b></p>
@@ -2349,7 +2349,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Restrict access</b></p>
-<p>You can restrict access to several features and tasks by setting the permission state to Deny to individual accounts or a security group.</p>
+<p>You can restrict access to several features and tasks by setting the permission state to Deny to individual organizations or a security group.</p>
 
 
 </td>
@@ -2613,7 +2613,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Collection-project-team structure</b></p>
 <p>The [collection-project-team structure](work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)
+![Single collection-project-team conceptual image](_img/web-portal-organization-project-team-concept.png)
 <br/>
 
 <p><b>Change the process (VSTS) </b></p>
@@ -2624,7 +2624,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>View your work across teams and team projects (VSTS)</b></p>
-<p>From your [account hub](account-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
+<p>From your [organization hub](organization-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization collection. </p>
 
 <p><b>Customize a team project (TFS) </b></p>
 <p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../work/customize/customize-work.md).  </p>
@@ -2657,17 +2657,17 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>A team is an organizing unit used to support a number of [team-configurable tools and assets](../work/scale/manage-team-assets.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add accounts--[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add organizations--[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
 
 <p><b>Add a team</b></p>
-<p>As your organization grows, consider moving from your [default team of one to two or more teams](../work/scale/multiple-teams.md#add-team-members) to support feature-focused groups within your org.</p>
+<p>As your enterprise grows, consider moving from your [default team of one to two or more teams](../work/scale/multiple-teams.md#add-team-members) to support feature-focused groups within your org.</p>
 
 
 <p><b>Add a team admin</b></p>
-<p>Add user accounts to the team admin role to enable them to [configure team settings](../work/scale/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
+<p>Add user organizations to the team admin role to enable them to [configure team settings](../work/scale/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
 
 
 <p><b>Support stakeholders</b></p>

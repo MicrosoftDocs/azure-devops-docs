@@ -34,18 +34,18 @@ Paid extensions are supported and generally are charged per user per month.
 
 #### Q: Who can install extensions for VSTS?
 
-A: The VSTS account owner and project collection administrator can install extensions. If you don't have permissions, but you're an account member, 
+A: The VSTS organization owner and project collection administrator can install extensions. If you don't have permissions, but you're an organization member, 
 you can request extensions instead. 
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-organization-owner](../_shared/qa-find-organization-owner.md)]
 
 [!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
-<a name="no-accounts"></a>
+<a name="no-organizations"></a>
 
-[!INCLUDE [no-accounts](../billing/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-organizations](../billing/_shared/qa-no-organizations.md)]
 
 #### Q: Why can't I install extensions for VSTS?
 
@@ -53,17 +53,18 @@ A:	This might happen for these reasons:
 
 <a name="no-permissions"></a>
 *	You must have VSTS 
-[project collection administrator or account owner permissions](#find-owner). 
-If you don't have permissions, but you're an account member, 
+[project collection administrator or organization owner permissions](#find-owner). 
+If you don't have permissions, but you're an organization member, 
 you can request extensions instead.
 
 <a name="no-assignment"></a>
 *	If you get an error that your extension is already installed or 
 requested, check with your project collection administrator 
-or account owner, and ask them to assign the extension to you.
+or organization owner, and ask them to assign the extension to you.
 
 
 <a name="paid-access"></a>
+
 #### Q: When do I choose Install for paid extensions? 
 
 A: You can just choose **Install** when: 
@@ -86,7 +87,7 @@ for users who need access.
 A:	This might happen for several reasons.
 
 *	You don't have at VSTS 
-[project collection administrator or account owner permissions](#find-owner).
+[project collection administrator or organization owner permissions](#find-owner).
 
 *	Your users don't have the correct access levels. 
 Most extensions require that users have Basic access, not Stakeholder.

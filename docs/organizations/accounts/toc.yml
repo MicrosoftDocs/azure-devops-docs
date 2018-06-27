@@ -1,15 +1,15 @@
-- name: "Account Management"
+- name: "Organization Management"
   href: index.md
 - name: Overview
   items:
-  - name: Account management
-    href: account-management.md
-  - name: Access with Azure AD
+  - name: Organization management
+    href: organization-management.md
+  - name: Access with Azure Active Directory
     href: access-with-azure-ad.md
 - name: Quickstarts
   items:
-  - name: Create your VSTS account
-    href: create-account-msa-or-work-student.md
+  - name: Create your VSTS organization
+    href: create-organization-msa-or-work-student.md
   - name: Try extensions for free
     href: ../../billing/try-additional-features-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
   - name: Add admins or set permissions
@@ -18,15 +18,15 @@
     href: ../../work/scale/add-team-administrator.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: Connect VSTS to Azure AD
-    href: connect-account-to-aad.md
+  - name: Connect VSTS to Azure Active Directory
+    href: connect-organization-to-aad.md
   - name: Change individual permissions 
     href: ../../organizations/security/change-individual-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
   - name: Grant or restrict permissions
     href: ../../organizations/security/restrict-access.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Add subscription user to account
+  - name: Add subscription user to organization
     href: add-basic-or-vs-subscription-users.md
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md
@@ -34,22 +34,20 @@
     href: ../../organizations/security/security-glossary.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
 - name: How-to guides
   items:
-  - name: Manage your account
+  - name: Manage your organization
     items:
-    - name: Change account owner
-      href: change-account-ownership-vs.md
-    - name: Rename account
-      href: rename-vsts-account.md
-    - name: Delete account
-      href: delete-your-vsts-account.md
-    - name: Recover account
-      href: recover-your-vsts-account.md
+    - name: Change organization owner
+      href: change-organization-ownership-vs.md
+    - name: Rename organization
+      href: rename-vsts-organization.md
+    - name: Delete organization
+      href: delete-your-vsts-organization.md
+    - name: Recover organization
+      href: recover-your-vsts-organization.md
     - name: Sign in with different credentials
       href: ../../user-guide/connect-team-projects.md#logindifferentcred
-    - name: Change account preferences
-      href: account-preferences.md
-    - name: Change account location (region)
-      href: change-account-location.md
+    - name: Change organization location (region)
+      href: change-organization-location.md
   - name: Manage team projects
     items:
     - name: Create team project
@@ -64,10 +62,10 @@
       href: save-team-project-data.md
     - name: Connect to team projects
       href: /vsts/user-guide/connect-team-projects?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
-  - name: Manage access to your account
+  - name: Manage access to your organization
     items:
-    - name: Add users to your account
-      href: add-account-users-from-user-hub.md
+    - name: Add users to your organization
+      href: add-organization-users-from-user-hub.md
     - name: Manage users
       href: manage-users-table-view.md
     - name: Manage conditional access
@@ -78,21 +76,21 @@
       href: use-personal-access-tokens-to-authenticate.md
     - name: Change app access policies
       href: change-application-access-policies-vs.md
-    - name: Delete users from account
-      href: delete-account-users.md
+    - name: Delete users from organization
+      href: delete-organization-users.md
     - name: Add external users
       href: add-external-user.md
-    - name: Access with Azure AD
+    - name: Access with Azure Active Directory
       items:
-      - name: Add Azure AD group to VSTS group
+      - name: Add Azure Active Directory group to VSTS group
         href: manage-azure-active-directory-groups-vsts.md
-      - name: Connect VSTS account to Azure AD
-        href: connect-account-to-aad.md
-      - name: Add VSTS users to Azure AD
+      - name: Connect VSTS organization to Azure Active Directory
+        href: connect-organization-to-aad.md
+      - name: Add VSTS users to Azure Active Directory
         href: add-users-to-aad.md
-      - name: Disconnect VSTS account from Azure AD
-        href: disconnect-account-from-aad.md
-      - name: Delete VSTS users connected to Azure AD
+      - name: Disconnect VSTS organization from Azure Active Directory
+        href: disconnect-organization-from-aad.md
+      - name: Delete VSTS users connected to Azure Active Directory
         href: delete-users-from-services-aad.md 
   - name: Manage extensions
     items:
@@ -114,9 +112,9 @@
       href: remove-direct-assignments.md
 - name: Troubleshooting
   items:
-  - name: Create account
-    href: faq-create-account.md
-  - name: Add and delete account users
+  - name: Create organization
+    href: faq-create-organization.md
+  - name: Add and delete organization users
     href: faq-add-delete-users.md
   - name: Add team members
     href: faq-add-team-members.md
@@ -124,16 +122,16 @@
     href: faq-create-team-project.md
   - name: Rename team project
     href: faq-rename-team-project.md
-  - name: Access with Azure AD
+  - name: Access with Azure Active Directory
     href: faq-azure-access.md
   - name: Change app access
     href: faq-change-app-access.md
   - name: Add administrators
     href: faq-add-administrators.md
-  - name: Change account ownership
-    href: faq-change-account-ownership.md
-  - name: Delete and restore account
-    href: faq-delete-restore-vsts-account.md
+  - name: Change organization ownership
+    href: faq-change-organization-ownership.md
+  - name: Delete and restore organization
+    href: faq-delete-restore-vsts-organization.md
   - name: Set up Visual Studio
     href: faq-set-up-vs.md
   - name: Manage group-based licensing

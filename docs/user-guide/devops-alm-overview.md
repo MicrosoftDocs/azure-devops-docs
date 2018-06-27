@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/22/2017
+ms.date: 06/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -72,7 +72,7 @@ You can use TFVC to scale from small to large projects, and by using server work
 
 ### Package management and code search 
 
-Software development teams often rely on re-using libraries or providing libraries for others to re-use. Package management supports code sharing as binary components across organizations and within teams. With it, you can build projects to produce packages and update projects that consume updated packages. Our package management service enables plugging in existing package management services you already use, such as local NuGet servers for IP protection, NuGet, MyGet, or Artifactory.  
+Software development teams often rely on re-using libraries or providing libraries for others to re-use. Package management supports code sharing as binary components across enterprises and within teams. With it, you can build projects to produce packages and update projects that consume updated packages. Our package management service enables plugging in existing package management services you already use, such as local NuGet servers for IP protection, NuGet, MyGet, or Artifactory.  
 
 - [Package Management overview](../package/overview.md) 
 - [Search across all your code](../project/search/overview.md)

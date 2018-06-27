@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9E69373B-8902-43C9-9F29-4BE0948077DC 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
 ms.date: 03/20/2018
@@ -62,5 +63,5 @@ Let us know what you think in the comment box that appears when you toggle the n
 ## Related articles
 
 - [View or run a query](view-run-query.md)
-- [Change column options](https://docs.microsoft.com/en-us/vsts/work/backlogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
-- [Work from the account home page](../../user-guide/account-home-pages.md)
+- [Change column options](https://docs.microsoft.com/organization-home-pages.mdogs/set-column-options?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json)
+- [Work from the organization home page](../../user-guide/organization-home-pages.md)

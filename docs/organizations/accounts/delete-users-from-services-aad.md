@@ -1,5 +1,5 @@
 ---
-title: Delete users from VSTS connected to Azure AD
+title: Delete users from VSTS connected to Azure Active Directory
 description: Steps for how to delete users from Visual Studio Team Services connected to Azure Active Directory via the Azure portal
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,30 +8,30 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 06/04/2018
+ms.date: 06/26/2018
 monikerRange: 'vsts'
 ---
 
-# Delete users from VSTS connected to Azure AD
+# Delete users from VSTS connected to Azure Active Directory
 
 **VSTS**
 
-For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
+For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure Active Directory with VSTS.
 
-You can simply [delete the user from each VSTS account](delete-account-users.md) 
-where you need to remove them. If you delete the user only from Azure AD, they may still show up in VSTS, but 
+You can simply [delete the user from each VSTS organization](delete-organization-users.md) 
+where you need to remove them. If you delete the user only from Azure Active Directory, they may still show up in VSTS, but 
 they won't be able to sign in.
 
 1. [Sign in to the Azure classic portal](https://manage.windowsazure.com/) as the directory administrator in Azure.
 
     > [!NOTE]
-    > You can find the connected Azure AD 
+    > You can find the connected Azure Active Directory 
     > only through the Azure classic portal.
 
-2. Go to **Azure Active Directory**. Find the Azure AD that's connected to your VSTS account.
+2. Go to **Azure Active Directory**. Find the Azure Active Directory that's connected to your VSTS organization.
 
-    ![Find the directory connected to your account](_img/manage-work-access/azurefindconnecteddirectory.png)
+    ![Find the directory connected to your organization](_img/manage-work-access/azurefindconnecteddirectory.png)
 
 3. Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
 
-4. [Remove the user](delete-account-users.md) from your VSTS account and reassign their access levels, if necessary.
+4. [Remove the user](delete-organization-users.md) from your VSTS organization and reassign their access levels, if necessary.
