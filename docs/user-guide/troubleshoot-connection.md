@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 02/26/2018
+ms.date: 06/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -35,44 +35,44 @@ As a first step in resolving connectivity issues with VSTS, do the following:
 
 ## Troubleshoot signing in to VSTS
 
-There are two types of identities that can sign in to VSTS - Microsoft accounts (MSA) and Azure Active Directory (Azure AD) accounts. Depending on your account, you may experience one of the following errors.
+There are two types of identities that can sign in to VSTS - Microsoft accounts (MSA) and Azure Active Directory accounts. Depending on your account, you may experience one of the following errors.
 
 > 401 - Not Authorized
 
 > [!div class="mx-imgBorder"]
 ![troubleshoot VSTS connection 401 error1](_img/troubleshoot-connection/401_notauthorized.PNG)
 
-The most common error page encountered is the "401 Not Authorized" error. This occurs when your identity does not have permission to enter a VSTS account. Common reasons for this include:
+The most common error page encountered is the "401 Not Authorized" error. This occurs when your identity does not have permission to enter a VSTS organization. Common reasons for this include:
 
-* Your identity is not a member of the target VSTS account
+* Your identity is not a member of the VSTS organization
 * Your identity has an invalid or missing license assignment
 
-If you believe you are a member of the account but are blocked by this error page, feel free to [contact customer support](https://support.microsoft.com/en-us).
+If you believe you are a member of the organization but are blocked by this error page, feel free to [contact customer support](https://support.microsoft.com/en-us).
 
-**Scenario 1:** Your work or school Azure AD account does not have access, but your personal MSA account does.
+**Scenario 1:** Your work or school Azure Active Directory account does not have access, but your personal MSA account does.
 
 > 401 - Work or school, or Personal account
 
 > [!div class="mx-imgBorder"]
 ![troubleshoot VSTS connection 401 error2](_img/troubleshoot-connection/401_AAD.png)
 
-This is a highly specific 401 error case, where there exists both a personal Microsoft account (MSA) and a work or school account (Azure AD) with the same sign in address. You have signed in with your work or school account, but your personal account is the identity that has access to the VSTS account.
+This is a highly specific 401 error case, where there exists both a personal Microsoft account (MSA) and a work or school account with the same sign in address. You have signed in with your work or school account, but your personal account is the identity that has access to the VSTS organization.
 
 **Mitigation**
 
-In some cases, you may be unaware that you have two identities with the same sign in address. The work or school AAD account may have been made by an administrator upon onboarding to Office365 or Azure AD. You must choose the "sign in with your personal MSA account" link to sign you out of your current work or school AAD account and begin a sign in prompt as the personal MSA. After authentication, you should have access to the VSTS account.
+In some cases, you may be unaware that you have two identities with the same sign in address. The work or school AAD account may have been made by an administrator upon onboarding to Office365 or Azure Active Directory. You must choose the "sign in with your personal MSA account" link to sign you out of your current work or school AAD account and begin a sign in prompt as the personal MSA. After authentication, you should have access to the VSTS organization.
 
-[!Tip] To never see this prompt again, you can rename your Microsoft account. This will make it so that only one identity (your work or school account or Azure AD account) for your sign in address.
+[!Tip] To never see this prompt again, you can rename your Microsoft account. This will make it so that only one identity (your work or school account or Azure Active Directory account) for your sign in address.
 
-**Scenario 2:** Your personal MSA does not have access, but your Azure AD account does. This is the opposite version of the above 401 error page. In this case the personal account (Microsoft account identity) did not have access to the VSTS account and the work or school account (Azure AD identity) does. The same guidance above applies, only in reverse.
+**Scenario 2:** Your personal MSA does not have access, but your Azure Active Directory account does. This is the opposite version of the above 401 error page. In this case the personal account (Microsoft account identity) did not have access to the VSTS organization and the work or school account (Azure Active Directory identity) does. The same guidance above applies, only in reverse.
 
 > 401 - Work or school, or Personal account
 
 > [!div class="mx-imgBorder"]
 ![troubleshoot VSTS connection 401 error3](_img/troubleshoot-connection/401_MSA.png)
 
-Still unable to access your account?
-In cases where you enter your credentials correctly, but instead of redirecting to your VSTS account you are redirected back to the original sign in page, we recommend clearing all cookies and re-attempting to sign in. If that does not fix the issue, please contact customer support.
+Still unable to access your organization?
+In cases where you enter your credentials correctly, but instead of redirecting to your VSTS organization you are redirected back to the original sign in page, we recommend clearing all cookies and re-attempting to sign in. If that does not fix the issue, please contact customer support.
 
 ::: moniker-end
 
@@ -98,9 +98,9 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 ::: moniker range="vsts"
 
-## Switch between different organizational accounts in VSTS
+## Switch between different organizations in VSTS
 
-When you use two or more VSTS accounts that are linked to directory tenants, such as accounts that are created from the Microsoft Azure Portal, the sign-out function may not work as expected. For example, you can't switch between different organizational accounts to connect to multiple accounts that are linked to directory tenants.
+When you use two or more VSTS organizations that are linked to directories, such as organizations that are created from the Microsoft Azure Portal, the sign-out function may not work as expected. For example, you can't switch between different enterprises to connect to multiple organizations that are linked to directories.
 
 When this problem occurs, a blank screen flashes several times followed by one of the error messages below after you connect to or add a new connection in "Connect to Team Foundation Server" dialog box:
 
@@ -110,7 +110,7 @@ When this problem occurs, a blank screen flashes several times followed by one o
 
 To resolve this problem, apply Visual Studio 2013.2 or install a later version. Go to the [Visual Studio download website](http://visualstudio.microsoft.com/downloads).
 
-For a workaround in which you delete your browser cookies, see the following support article, [You can't switch between different organizational accounts in Visual Studio Online](https://support.microsoft.com/en-us/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
+For a workaround in which you delete your browser cookies, see the following support article, [You can't switch between different organizations in Visual Studio Online](https://support.microsoft.com/en-us/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
 
 ::: moniker-end
 

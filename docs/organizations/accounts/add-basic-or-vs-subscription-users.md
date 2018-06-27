@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 When your account stays within the free limits, you don't have to pay for users to join your account.
 You only have to pay if you have more than 5 users who need Basic features, and they don't have Visual Studio subscriptions.
 You can [pay for additional users in the Visual Studio Marketplace](../../billing/buy-basic-access-add-users.md),
-return to your VSTS account, add these users, and assign them Basic access.
+return to your VSTS organization, add these users, and assign them Basic access.
 You pay monthly for their access and can cancel the access anytime.
 
 Visual Studio subscriptions give you flexible ways to access VSTS and to license the Visual Studio IDE and other Microsoft software for dev and test.

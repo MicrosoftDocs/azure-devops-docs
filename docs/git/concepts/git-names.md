@@ -56,7 +56,7 @@ git config --global user.name "Frances Totten"
 git config --global user.email "frances_t@fabrikam.com"
 ```
 
-In VSTS, you can update your profile by clicking your picture in the upper right corner and choosing [My profile](../../organizations/accounts/account-preferences.md).
+In VSTS, you can update your profile by clicking your picture in the upper right corner and choosing [My profile](../../organizations/settings/user-preferences.md).
 
 ## How do I change the author displayed for past commits?
 

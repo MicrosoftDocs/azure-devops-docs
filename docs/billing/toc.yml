@@ -7,7 +7,7 @@
 - name: Quickstarts
   items:
   - name: Set up billing
-    href: set-up-billing-for-your-account-vs.md
+    href: set-up-billing-for-your-organization-vs.md
   - name: Pay for users
     href: buy-basic-access-add-users.md
   - name: Buy CI/CD
@@ -18,8 +18,8 @@
     href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: Connect VSTS to Azure AD
-    href: ../organizations/accounts/change-account-location.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+  - name: Connect VSTS to Azure Active Directory
+    href: ../organizations/accounts/change-organization-location.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Manage billing 
@@ -70,7 +70,7 @@
     href: ../organizations/security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Account Management
+  - name: Organization Management
     href: ../organizations/accounts/index.md
   - name: "Security & Identity"
     href: ../organizations/security/index.md
