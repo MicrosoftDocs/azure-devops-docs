@@ -62,8 +62,7 @@ Selecting this option now means **nuget.org** or **npmjs.org** do not have to be
 
     ![Add VSTS upstream sources in an organization](_img/us-add-upstream-organization.png)
 
-### Adding VSTS feeds as upstream sources 
-    
+### Adding VSTS feeds as upstream sources
 
 The view we picked is the "default view". The default view is covered in the [views concepts page](../concepts/views.md), but simply put it's the set of packages that the feed owner believes should be consumed and has chosen to release by default.
 
@@ -79,7 +78,10 @@ Now you can open Visual Studio and install packages from the upstream sources yo
 2.	In Visual Studio, open the Package Manager Console from Tools > NuGet Package Manager
 3.	Paste the Install-Package command into the Package Manager Console and run it
 
+Remember that you must be a Collaborator, Contributor, or Owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.
+
 ## Consuming npm packages from upstream sources
+
 Now you can open your favorite shell and install packages from the upstream sources you’ve configured. Just run:
 
 ```
@@ -88,4 +90,4 @@ npm install --save <package>
 
 See the [npm install docs](../npm/install.md) for more details.
 
-
+Remember that you must be a Collaborator, Contributor, or Owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.
