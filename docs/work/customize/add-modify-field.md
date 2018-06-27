@@ -334,7 +334,7 @@ Other related topics or resources:
 - [Customize the work tracking experience](customize-work.md)  
 - [Field data type and field attributes](reference/define-modify-work-item-fields.md)    
 - [WebLayout and Control elements](reference/weblayout-xml-elements.md)
-- [Guide to administrative tasks](../../organizations/accounts/account-management.md)  
+- [Guide to administrative tasks](../../organizations/accounts/organization-management.md)  
 - [Import, export, and manage work item fields (witadmin)](reference/witadmin/manage-work-item-fields.md).
 - [Team Foundation Server - Project Management & Work Item forum](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
 

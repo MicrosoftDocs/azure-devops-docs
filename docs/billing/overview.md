@@ -8,7 +8,7 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 06/26/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -16,7 +16,7 @@ ms.date: 04/06/2018
 
 **VSTS**
 
-Set up billing when you need more than the **Free Tier** of resources in your VSTS account or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
+Set up billing when you need more than the **Free Tier** of resources in your VSTS organization or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 The Free Tier includes:
 
@@ -26,7 +26,7 @@ The Free Tier includes:
 * 1 self-hosted CI/CD concurrent job
 * 20,000 virtual user minutes of cloud-based load testing
 
-> During your first purchase for your VSTS account, we'll prompt you to select the Azure subscription to use for billing. This can be part of your
+> During your first purchase for your VSTS organization, we'll prompt you to select the Azure subscription to use for billing. This can be part of your
 > Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or many other types of Azure subscriptions. All VSTS services are billed via Azure, though you are not required to pay for or
 > use any other Azure services.
 > 
@@ -38,21 +38,21 @@ The Free Tier includes:
 > * [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 > * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 >
-> [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests you run. By default, paid usage is turned off for your VSTS account.
+> [Cloud-based load testing](buy-load-testing-vs.md) is charged based on the load tests you run. By default, paid usage is turned off for your VSTS organization.
 > You can only enable paid usage via the Azure portal.
 
 ## Prerequisites
 
-The first time that you set up billing for your VSTS account - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
+The first time that you set up billing for your VSTS organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-* [VSTS project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
+* [VSTS project collection administrator or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
-You will also need these same permissions/roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your VSTS account.
+You will also need these same permissions/roles to make subsequent changes, such as changing paid quantities or adding additional paid services in your VSTS organization.
 
 ## Next steps
 
-* [Set up billing](set-up-billing-for-your-account-vs.md)
+* [Set up billing](set-up-billing-for-your-organization-vs.md)
 * [Add a backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 

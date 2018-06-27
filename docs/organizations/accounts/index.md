@@ -1,6 +1,6 @@
 ---
-title: Account management topics and articles for VSTS  
-description: Index to topics for managing the account for Visual Studio Team Services (VSTS)
+title: Organization management topics and articles for VSTS  
+description: Index to topics for managing the organization for Visual Studio Team Services (VSTS)
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
@@ -11,25 +11,25 @@ author: chcomley
 ms.date: 10/06/2017
 monikerRange: '>= tfs-2013'
 ---
-# Account Management
+# Organization Management
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
-Sign up for a VSTS account, add users, and manage permissions and access.
+Sign up for a VSTS organization, add users, and manage permissions and access.
 
 ## 5-Minute Quickstarts
 
-* [Create your VSTS account](create-account-msa-or-work-student.md)
+* [Create your VSTS organization](create-organization-msa-or-work-student.md)
 * [Try extensions for free](../../billing/try-additional-features-vs.md)
 
 ## Step-by-Step Tutorials
 
-* [Connect VSTS to AAD](connect-account-to-aad.md)
+* [Connect VSTS to Azure Active Directory](connect-organization-to-aad.md)
 
 ## Reference
 
 * [Default permissions and access](../../organizations/security/permissions-access.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)
-* [Access with Azure AD](access-with-azure-ad.md)
+* [Access with Azure Active Directory](access-with-azure-ad.md)
 
 ## Resources
 

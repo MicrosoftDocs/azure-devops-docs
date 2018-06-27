@@ -1,5 +1,5 @@
 ---
-title: Change app access policies for your VSTS account
+title: Change app access policies for your VSTS organization
 description: Answers to frequently asked questions (FAQs), like what apps integrate with VSTS, how personal access tokens differ from alt authentication credentials and more
 ms.prod: devops
 ms.technology: devops-accounts
@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 10/6/2017
 monikerRange: 'vsts'
 ---
-#   Troubleshoot changing app access policies for your account
+#   Troubleshoot changing app access policies for your organization
 
 **VSTS**
 
@@ -22,16 +22,16 @@ monikerRange: 'vsts'
 A:  Personal access tokens are a more convenient and 
 secure replacement for alternate authentication credentials. 
 You can limit a token's use to a specific lifetime, 
-a VSTS account, 
+a VSTS organization, 
 and to [scopes](https://visualstudio.microsoft.com/integrate/get-started/Authentication/oauth#scopes) 
 of activities that the token authorizes. Learn more about 
 [personal access tokens here](use-personal-access-tokens-to-authenticate.md).
 
-####Q:  If I deny access to one authentication method in one VSTS account, does that affect all the accounts I own?
+####Q:  If I deny access to one authentication method in one VSTS organization, does that affect all the organizations I own?
 
-A:  No, you can still use that method in all the other VSTS accounts that you own. 
-[Personal access tokens](use-personal-access-tokens-to-authenticate.md) apply to specific accounts 
-or to all accounts, based on your selection when you created the token.
+A:  No, you can still use that method in all the other VSTS organizations that you own. 
+[Personal access tokens](use-personal-access-tokens-to-authenticate.md) apply to specific organizations 
+or to all organizations, based on your selection when you created the token.
 
 ####Q:  If I deny access to an authentication method, then allow access again, will the apps that need access continue to work?
 
@@ -43,17 +43,17 @@ A:  Find the [apps that integrate with VSTS here](https://marketplace.visualstud
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
 
-[!INCLUDE [why-no-owned-accounts](../../_shared/qa-why-no-owned-accounts.md)]
+[!INCLUDE [why-no-owned-organizations](../../_shared/qa-why-no-owned-organizations.md)]
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-organization](../../_shared/qa-choose-msa-azuread-organization.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-organization2](../../_shared/qa-choose-msa-azuread-organization2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-organization](../../_shared/qa-why-cant-sign-in-msa-azuread-organization.md)]
 
 <a name="get-support"></a>
 

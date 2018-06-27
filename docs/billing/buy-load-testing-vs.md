@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/18/2018
+ms.date: 06/26/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -28,18 +28,18 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-Your VSTS account includes a **Free Tier** of 20,000 virtual user minutes per month for cloud-based load testing.
+Your VSTS organization includes a **Free Tier** of 20,000 virtual user minutes per month for cloud-based load testing.
 If you need more than this amount, you must first do the following:
 
-1. [Set up billing for your VSTS account](set-up-billing-for-your-account-vs.md).
-2. [Enable paid cloud-based load testing](#buy-load-testing) in the [Azure portal](https://portal.azure.com) for your VSTS account.
+1. [Set up billing for your VSTS organization](set-up-billing-for-your-organization-vs.md).
+2. [Enable paid cloud-based load testing](#buy-load-testing) in the [Azure portal](https://portal.azure.com) for your VSTS organization.
 
-The first time that you set up billing for your VSTS account - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need the following:
+The first time that you set up billing for your VSTS organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need the following:
 
-* [VSTS project collection administrator or account owner permissions](vsts-billing-faq.md#find-owner)
+* [VSTS project collection administrator or organization owner permissions](vsts-billing-faq.md#find-owner)
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
-To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
+To make subsequent edits to paid quantities in your VSTS organization, you only need the owner or contributor role on your Azure subscription.
 
 ## Enable paid load testing
 
@@ -49,9 +49,9 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 
    >If you experience browser problems with Azure, make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Enter *team services accounts* into the search box, choose **team services accounts** from the dropdown menu, and select your VSTS account.
+2. Enter *team services organizations* into the search box, choose **team services organizations** from the dropdown menu, and select your VSTS organization.
 
-   ![Browse, VSTS accounts, select your account](_img/_shared/ap_vso_selectlinkedaccount.png)
+   ![Browse, VSTS organizations, select your organization](_img/_shared/ap_vso_select-linked-organization.png)
 
 3. Select **Cloud-based load testing**, to the right of your screen.
 
@@ -69,7 +69,7 @@ You're charged only for virtual user minutes of cloud-based load testing used ab
 
 * The Free Tier resets on the 1st of the month.
 
-* No additional virtual user minutes are included with Visual Studio subscriptions - the free amounts are per VSTS account, not per user.
+* No additional virtual user minutes are included with Visual Studio subscriptions - the free amounts are per VSTS organization, not per user.
 
 * For cloud-based load testing, you're charged for each 
    [virtual user minute](../test/load-test/reference-qa.md#VUM) that exceeds the free monthly usage.

@@ -43,12 +43,12 @@ If you'd like to set up billing for your account prior to buying something in th
 2. Enter *Team Services accounts* into the search box at the top of your screen and then select **Team Services accounts** in the drop-down menu.
 
     > [!div class="mx-imgBorder"]
-![More services, Developer tools, VSTS accounts, select your account](_img/set-up-billing/azure-portal-team-services-accounts.png)
+![More services, Developer tools, VSTS accounts, select your account](_img/set-up-billing/azure-portal-team-services-organizations.png)
 
 3. Select your account.
 
    > [!div class="mx-imgBorder"]
-![Azure portal select your account](_img/set-up-billing/azure-portal-select-your-account.png)
+![Azure portal select your account](_img/set-up-billing/azure-portal-select-your-organization.png)
 
 4. Choose **Link**.
 
@@ -60,10 +60,8 @@ If you'd like to set up billing for your account prior to buying something in th
    > [!div class="mx-imgBorder"]
 ![Select an Azure subscription](_img/set-up-billing/azure-portal-select-subscription.png)
 
- After Azure sets up the link, your VSTS account appears linked to your Azure subscription.
+ After Azure sets up the link, your VSTS organization appears linked to your Azure subscription.
 
-> [!div class="mx-imgBorder"]
-![Your VSTS account is now linked to your Azure subscription](_img/set-up-billing/azure-portal-linked-to-vsts-account.png)
 
 ## Next steps
 
