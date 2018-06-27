@@ -8824,6 +8824,11 @@
       "source_path": "docs/report/powerbi/report-on-vso-with-power-bi-vs.md",
       "redirect_url": "/vsts/report/powerbi/data-connector-connect",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/queries-preview.md",
+      "redirect_url": "/vsts/work/track/view-run-query",
+      "redirect_document_id": false
     }
   ]
 }
