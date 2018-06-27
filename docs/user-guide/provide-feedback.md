@@ -8,7 +8,7 @@ ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E
 ms.manager: douge
 ms.author: douge
 ms.topic: troubleshooting
-ms.date: 10/19/2017
+ms.date: 06/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -61,7 +61,7 @@ If you just want to vent about the product or the docs, that's okay. It helps us
 The best feedback we get is clear and precise. For example:
 
 * Product feedback: "I'm a project manager for a small start-up. I am using VSTS. I am trying to create work item templates through the UI, but my changes don't seem to persist. It's not clear what I'm doing wrong."
-* Doc feedback: "I'm a dev in a big organization that works on Java apps. I tried to use Maven with your build system in TFS 2017 Update 1 (15.112.26307.0), but I couldn't get the configuration shown in the docs to work."
+* Doc feedback: "I'm a dev in a big enterprise that works on Java apps. I tried to use Maven with your build system in TFS 2017 Update 1 (15.112.26307.0), but I couldn't get the configuration shown in the docs to work."
 
 The more details, the better!
 
@@ -73,11 +73,11 @@ You can tell what platform you use from the URL you use to connect to VSTS or TF
 
 **VSTS**
 
-A VSTS URL consists of an account name and visual studio.com, for example: ```https://{youraccount}.visualstudio.com```.  
+A VSTS URL consists of an organization name and visual studio.com, for example: ```https://{yourorganization}.visualstudio.com```.  
 
 To learn the version number, enter the following address in a web browser:
 ```
-https://AccountName.visualstudio.com/_home/About
+https://OrganizationName.visualstudio.com/_home/About
 ```
 A page similar to the one shown will open showing the version number.
 

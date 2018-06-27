@@ -23,13 +23,13 @@ A: Users in the group "TestGroup" will lose access to group resources if they ha
 > [!div class="mx-imgBorder"]
 ![remove-test-group-group-rule-managing_group-based-licensing](_img/faq/remove-test-group-rule.png)
 
-### Q: Will my VSTS or Azure AD group be deleted if I remove its group rule?
+### Q: Will my VSTS or Azure Active Directory group be deleted if I remove its group rule?
 
 A: No, your groups will not be deleted.
 
 ### Q: What does the option to “Remove <group> from all project level groups” do?
 
-A: It will remove the VSTS or Azure AD group from any project-level default groups, such as Project Readers or Project Contributors.
+A: It will remove the VSTS or Azure Active Directory group from any project-level default groups, such as Project Readers or Project Contributors.
 
 ## Related info
 

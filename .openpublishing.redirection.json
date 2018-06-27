@@ -1522,7 +1522,7 @@
     },
     {
       "source_path": "docs/connect/user-focused-features.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/user-guide/organization-home-pages",
       "redirect_document_id": false
     },
     {
@@ -1962,7 +1962,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-account-vs",
+      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
@@ -2427,7 +2427,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-account-vs",
+      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
@@ -2737,7 +2737,7 @@
     },
     {
       "source_path": "docs/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-account-vs",
+      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
@@ -5222,7 +5222,7 @@
     },
     {
       "source_path": "docs/connect/account-home-pages.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/user-guide/organization-home-pages",
       "redirect_document_id": false
     },
     {
@@ -5312,7 +5312,7 @@
     },
     {
       "source_path": "docs/work/productivity/productivity-tips.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/user-guide/organization-home-pages",
       "redirect_document_id": false
     },
     {
@@ -8572,17 +8572,17 @@
     },
     {
       "source_path": "docs/accounts/account-management.md",
-      "redirect_url": "/vsts/organizations/accounts/account-management",
+      "redirect_url": "/vsts/organizations/accounts/organization-management",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/account-preferences.md",
-      "redirect_url": "/vsts/organizations/accounts/account-preferences",
+      "redirect_url": "/vsts/organizations/settings/user-preferences",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/add-account-users-from-user-hub.md",
-      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-organization-users-from-user-hub",
       "redirect_document_id": false
     },
     {
@@ -8612,12 +8612,12 @@
     },
     {
       "source_path": "docs/accounts/change-account-location.md",
-      "redirect_url": "/vsts/organizations/accounts/change-account-location",
+      "redirect_url": "/vsts/organizations/accounts/change-organization-location",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-account-ownership-vs.md",
-      "redirect_url": "/vsts/organizations/accounts/change-account-ownership-vs",
+      "redirect_url": "/vsts/organizations/accounts/change-organization-ownership-vs",
       "redirect_document_id": false
     },
     {
@@ -8627,12 +8627,12 @@
     },
     {
       "source_path": "docs/accounts/connect-account-to-aad.md",
-      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
+      "redirect_url": "/vsts/organizations/accounts/connect-organization-to-aad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/create-account-msa-or-work-student.md",
-      "redirect_url": "/vsts/organizations/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/vsts/organizations/accounts/create-organization-msa-or-work-student",
       "redirect_document_id": false
     },
     {
@@ -8642,7 +8642,7 @@
     },
     {
       "source_path": "docs/accounts/delete-account-users.md",
-      "redirect_url": "/vsts/organizations/accounts/delete-account-users",
+      "redirect_url": "/vsts/organizations/accounts/delete-organization-users",
       "redirect_document_id": false
     },
     {
@@ -8657,12 +8657,12 @@
     },
     {
       "source_path": "docs/accounts/delete-your-vsts-account.md",
-      "redirect_url": "/vsts/organizations/accounts/delete-your-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/delete-your-vsts-organization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/disconnect-account-from-aad.md",
-      "redirect_url": "/vsts/organizations/accounts/disconnect-account-from-aad",
+      "redirect_url": "/vsts/organizations/accounts/disconnect-organization-from-aad",
       "redirect_document_id": false
     },
     {
@@ -8687,7 +8687,7 @@
     },
     {
       "source_path": "docs/accounts/faq-change-account-ownership.md",
-      "redirect_url": "/vsts/organizations/accounts/faq-change-account-ownership",
+      "redirect_url": "/vsts/organizations/accounts/faq-change-organization-ownership",
       "redirect_document_id": false
     },
     {
@@ -8697,7 +8697,7 @@
     },
     {
       "source_path": "docs/accounts/faq-create-account.md",
-      "redirect_url": "/vsts/organizations/accounts/faq-create-account",
+      "redirect_url": "/vsts/organizations/accounts/faq-create-organization",
       "redirect_document_id": false
     },
     {
@@ -8707,7 +8707,7 @@
     },
     {
       "source_path": "docs/accounts/faq-delete-restore-vsts-account.md",
-      "redirect_url": "/vsts/organizations/accounts/faq-delete-restore-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/faq-delete-restore-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -8757,7 +8757,7 @@
     },
     {
       "source_path": "docs/accounts/recover-your-vsts-account.md",
-      "redirect_url": "/vsts/organizations/accounts/recover-your-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/recover-your-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -8772,7 +8772,7 @@
     },
     {
       "source_path": "docs/accounts/rename-vsts-account.md",
-      "redirect_url": "/vsts/organizations/accounts/rename-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/rename-vsts-organization",
       "redirect_document_id": false
     },
     {

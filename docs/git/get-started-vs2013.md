@@ -168,7 +168,7 @@ Now you can add reviewers to get their feedback on your changes before you merge
 
 <a name="create_team_project"></a>
 #### Q: How do I create a team project on VSTS?
-* [Sign up and create your team project](../organizations/accounts/create-account-msa-or-work-student.md).  Be sure to select **Git** from the version control options:
+* [Sign up and create your team project](../organizations/accounts/create-organization-msa-or-work-student.md).  Be sure to select **Git** from the version control options:
 
 	![Select Git from the Version Control menu](_img/get-started/CreateProjGitFirstRun.png)
 	

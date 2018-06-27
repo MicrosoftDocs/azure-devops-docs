@@ -25,7 +25,7 @@ If you receive an error message that states you don't have permission, go get th
 
 **Error TF30169: The New Team Project Wizard was unable to download the process template {0}**  indicates that SharePoint site process templates are not available on the server that hosts SharePoint products.
 
-Contact the system administrator for the server that hosts SharePoint Products and request the required process templates be added to the server. See [Requirements and compatibility](/tfs/server/requirements).
+Contact the administrator for the server that hosts SharePoint Products and request the required process templates be added to the server. See [Requirements and compatibility](/tfs/server/requirements).
 
 ###To resolve Error TF30321 
 

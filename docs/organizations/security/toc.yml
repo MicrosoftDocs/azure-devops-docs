@@ -51,7 +51,7 @@
 - name: How-to Guides
   items:
   - name: Add users to your account (VSTS)
-    href: ../accounts/add-account-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
+    href: ../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
   - name: Change access levels (TFS)
     href: change-access-levels.md 
   - name: Export a list of users and their access levels  

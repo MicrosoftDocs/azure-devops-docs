@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Account and Profile Overview | REST API Reference for Visual Studio Team Services
-description: Work with accounts and profiles programmatically using the REST APIs for Visual Studio Team Services.
+title: Organization and Profile Overview | REST API Reference for Visual Studio Team Services
+description: Work with organizations and profiles programmatically using the REST APIs for Visual Studio Team Services.
 ms.assetid: 2CC3AFF0-D665-407A-AC69-C68C61FB3267
 ms.manager: douge
 ms.topic: article
@@ -12,7 +12,7 @@ author: elbatk
 ms.date: 08/04/2016
 ---
 
-# Accounts and profiles
+# Organizations and profiles
 
 Each person using Visual Studio Team Services has a [profile](./profiles.md) and access to one or more [accounts](./accounts.md).
 
@@ -31,5 +31,5 @@ Get the authenticated user's [profile](./profiles.md).
 
 Get the list of [accounts](./accounts.md) that the authenticated user has access to.
 
-<img alt="The accounts" src="./_img/accounts.png" style="border: 1px solid #CCCCCC" />
+<img alt="The organizations" src="./_img/accounts.png" style="border: 1px solid #CCCCCC" />
 

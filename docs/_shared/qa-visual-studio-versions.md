@@ -16,7 +16,7 @@ To connect to VSTS with Visual Studio 2008 through Visual Studio 2012
 1.	Start Visual Studio.
 2.	From the Team menu or Team Explorer, 
 go to Connect to Team Foundation Server > Select Team Projects > Servers.
-3.	Add your VSTS account ({youraccount}.visualstudio.com).
+3.	Add your VSTS organization ({yourorganization}.visualstudio.com).
 4.	Select your team project, 
 and finish connecting.
 
