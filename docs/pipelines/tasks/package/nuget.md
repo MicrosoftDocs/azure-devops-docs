@@ -84,6 +84,7 @@ None
                 <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
                     file you've checked into source control.</li>
                 <li>Credentials for feeds outside this account/collection can be used to inject credentials you've provided as a [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
+                <li>See the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple VSTS accounts.</li>
             </ul>
         </td>
     </tr>
