@@ -19,15 +19,15 @@ monikerRange: 'vsts'
 
 ### Q:	Why can't I add any more members to my team project?
 
-A:	Your VSTS account is free for the first 5 users with Basic access. 
+A:	Your VSTS organization is free for the first 5 users with Basic access. 
 You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. 
 After you assign all 5 free users with Basic access, 
 you can continue adding Stakeholders and Visual Studio subscribers. 
 To add a 6th user or more with Basic access, 
-you'll need to [set up billing in Azure](../../billing/set-up-billing-for-your-account-vs.md). 
+you'll need to [set up billing in Azure](../../billing/set-up-billing-for-your-organization-vs.md). 
 You can then [pay for more users who need Basic access](../../billing/buy-basic-access-add-users.md), 
-return to your VSTS account, 
-[add these users, and assign them Basic access](add-account-users-from-user-hub.md). 
+return to your VSTS organization, 
+[add these users, and assign them Basic access](add-organization-users-from-user-hub.md). 
 This lets you pay monthly for their access, and you can cancel anytime.
 
 If you need more Visual Studio subscriptions, 
@@ -40,16 +40,16 @@ from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscr
 
 A:	This might happen because users must 
 sign in with Microsoft accounts 
-unless your VSTS account 
-controls access with Azure Active Directory (Azure AD). 
-If your account is connected to Azure AD, 
+unless your VSTS organization 
+controls access with Azure Active Directory. 
+If your organization is connected to Azure Active Directory, 
 users must be directory members to get access. 
-[How do I find out if my account uses Azure Active Directory (Azure AD)?](#ConnectedDirectory) 
+[How do I find out if my organization uses Azure Active Directory?](#ConnectedDirectory) 
 
-If you're an Azure AD administrator, 
+If you're an Azure Active Directory administrator, 
 you can add users to the directory. If you're not, 
 work with the directory administrator to add them. 
-Learn [how to control account access with Azure AD](access-with-azure-ad.md).
+Learn [how to control organization access with Azure Active Directory](access-with-azure-ad.md).
 
 <a name="feature-access"></a>
 
@@ -61,38 +61,38 @@ A:	This might happen for [different reasons](faq-add-delete-users.md#stopped-fea
 
 <a name="ConnectedDirectory"></a>
 
-[!INCLUDE [does-account-use-azuread](../../_shared/qa-does-account-use-azuread.md)]
+[!INCLUDE [does-organization-use-azuread](../../_shared/qa-does-organization-use-azuread.md)]
 
 <a name="RemovePeople"></a>
 
-### Q:	How do I remove users from my VSTS account?
+### Q:	How do I remove users from my VSTS organization?
 
-A:	Learn [how to delete users](delete-account-users.md) 
-across all team projects in your VSTS account. 
-If you paid for more users, but don't need their account access
+A:	Learn [how to delete users](delete-organization-users.md) 
+across all team projects in your VSTS organization. 
+If you paid for more users, but don't need their organization access
 anymore, you must reduce your paid users to avoid charges.
 
-### Q: Why can't I find members from my connected Azure AD, even though I am the Azure AD global admin?
+### Q: Why can't I find members from my connected Azure Active Directory, even though I am the Azure Active Directory global admin?
 
-A: You are probably a guest in the Azure AD that backs VSTS. By default, Azure AD guests cannot search into the Azure AD and that's why you are not finding users in your Azure AD to add to your VSTS account.
+A: You are probably a guest in the Azure Active Directory that backs VSTS. By default, Azure Active Directory guests cannot search into the Azure Active Directory and that's why you are not finding users in your Azure Active Directory to add to your VSTS organization.
 
-First, check to see if you are an Azure AD guest:
+First, check to see if you are an Azure Active Directory guest:
 
-1. Go to the **Settings** section of your VSTS account and look at the **Azure Active Directory** section at the bottom. Make a note of the tenant that backs your VSTS account.
-2. Sign in to the new Azure portal (portal.azure.com) and check your user profile in the tenant from step 1. Check the **User type** value as seen below.
+1. Go to the **Settings** section of your VSTS organization and look at the **Azure Active Directory** section at the bottom. Make a note of the directory that backs your VSTS organization.
+2. Sign in to the new Azure portal (portal.azure.com) and check your user profile from step 1. Check the **User type** value as seen below.
 
    > [!div class="mx-imgBorder"] 
 ![Check user type in Azure portal](_img/faq/check-user-type-in-Azure-portal.png)
 
-If you are an Azure AD guest, do one of the following:
+If you are an Azure Active Directory guest, do one of the following:
 
-* Have another VSTS admin - someone who is not an Azure AD guest - manage the users in VSTS for you. Members of the Project Collection Administrators group inside VSTS can administer users.
-* Have the AAD admin(s) remove you from the AAD and re-add you, making you an AAD member rather than a guest when they do. See "Can Azure AD B2B users be added as members instead of guests?"
-* Change the User Type of the Azure AD guest using Azure AD PowerShell. This is an advanced topic and is not advised, but it does work and allows the user to query Azure AD from VSTS thereafter. 
-1. [Download and install Azure AD PowerShell module](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+* Have another VSTS admin - someone who is not an Azure Active Directory guest - manage the users in VSTS for you. Members of the Project Collection Administrators group inside VSTS can administer users.
+* Have the Azure Active Directory admin(s) remove you from the Azure Active Directory and re-add you, making you an Azure Active Directory member rather than a guest when they do. See "Can Azure Active Directory B2B users be added as members instead of guests?"
+* Change the User Type of the Azure Active Directory guest using Azure Active Directory PowerShell. This is an advanced topic and is not advised, but it does work and allows the user to query Azure Active Directory from VSTS thereafter. 
+1. [Download and install Azure Active Directory PowerShell module](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
 2. Open PowerShell and run the following cmdlets.
 
-    a. Connect to Azure AD
+    a. Connect to Azure Active Directory
 
         C:\Users\rajr> Connect-AzureAD
 
@@ -115,17 +115,17 @@ If you are an Azure AD guest, do one of the following:
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-organization](../../_shared/qa-choose-msa-azuread-organization.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-organization2](../../_shared/qa-choose-msa-azuread-organization2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-organization](../../_shared/qa-why-cant-sign-in-msa-azuread-organization.md)]
 
 <a name="find-pca-owner"></a>
 
 [!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
 
 <a name="get-support"></a>
 

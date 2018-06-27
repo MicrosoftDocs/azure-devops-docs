@@ -7,7 +7,7 @@ ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 06/04/2018
+ms.date: 06/26/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -27,7 +27,7 @@ We'll walk you through the basics of the web interface and some common tasks.
 
 ## 5-Minute Quickstarts
 
-Get started with a free account, share your code using Git, and track your work using a Kanban board.
+Get started with a free organization, share your code using Git, and track your work using a Kanban board.
 
 - [Sign up and invite some teammates](sign-up-invite-teammates.md)  
 - [Code with Git](code-with-git.md)
@@ -57,10 +57,10 @@ Get started with a free account, share your code using Git, and track your work 
 - [Enable preview features](../project/navigation/preview-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Use @mentions to further discussion](../notifications/at-mentions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Use #ID to link to work items](https://docs.microsoft.com/en-us/vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
-- [Navigate using your account home page](account-home-pages.md)
+- [Navigate using your organization home page](organization-home-pages.md)
 - [Go mobile](../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Manage your notifications](https://docs.microsoft.com/en-us/vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
-- [Set your preferences](../organizations/accounts/account-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Set your preferences](../organizations/settings/user-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Sign in to the web or a client](connect-team-projects.md)
 
 ## Reference
@@ -78,6 +78,6 @@ Get started with a free account, share your code using Git, and track your work 
 - [Visual Studio IDE](https://docs.microsoft.com/visualstudio/)
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio for Mac](https://docs.microsoft.com/visualstudio/mac)
-- [Account Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/?view=vsts)
+- [Organization Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/?view=vsts)
 - [Security & Identity](https://docs.microsoft.com/en-us/vsts/organizations/security/?view=vsts)
 - [Technical articles](https://docs.microsoft.com/en-us/vsts/articles/?view=vsts)

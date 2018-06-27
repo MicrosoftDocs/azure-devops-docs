@@ -26,7 +26,7 @@ To get started, install Release Management Server. If you are going to use TFS,
 you should already have it installed and ready to use. See 
 **[system requirements](install-release-management/system-requirements.md)** 
 for details of compatible versions. If you haven't set up TFS yet, 
-**[do that now](../../../../organizations/accounts/account-management.md)**. 
+**[do that now](../../../../organizations/accounts/organization-management.md)**. 
 You can use the same SQL Server instance for TFS and the 
 Release Management server (as we will in this guide) or you can use a 
 different SQL Server instance (or even 

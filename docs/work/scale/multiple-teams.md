@@ -100,7 +100,7 @@ If you're moving from one team to two teams, team members already have access to
 Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
 
 > [!NOTE]   
-> If you use VSTS, you must first [add user accounts to the team project](../../organizations/accounts/add-account-users-from-user-hub.md) or [setup your account to work with Azure AD](../../organizations/accounts/access-with-azure-ad.md). This way user accounts will be available to add to a team.
+> If you use VSTS, you must first [add user accounts to the team project](../../organizations/accounts/add-organization-users-from-user-hub.md) or [setup your account to work with Azure AD](../../organizations/accounts/access-with-azure-ad.md). This way user accounts will be available to add to a team.
 >
 >For TFS, the first time you add an account you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 
