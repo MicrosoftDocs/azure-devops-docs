@@ -8,7 +8,7 @@ ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
 ms.manager: douge
 ms.author: kaelli
 ms.topic: conceptual
-ms.date: 08/15/2017
+ms.date: 06/26/2018
 monikerRange: '>= tfs-2015'
 ---
 

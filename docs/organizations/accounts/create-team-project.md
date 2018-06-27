@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions](https://msdn.microsoft.com/library/ms181477%28v=vs.120%29.aspx)**  
 >[!NOTE]
 >If you don't want to manage an on-premises server, you can 
-[sign up for VSTS and create a team project](create-account-msa-or-work-student.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
+[sign up for VSTS and create a team project](create-organization-msa-or-work-student.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
 
 Create a team project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Team projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). 
 

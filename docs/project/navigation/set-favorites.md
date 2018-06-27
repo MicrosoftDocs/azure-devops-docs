@@ -6,7 +6,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 ms.date: 09/01/2017  
 monikerRange: '>= tfs-2017'
@@ -81,7 +82,7 @@ In this article you'll learn how to:
 	::: moniker-end
 0. You'll see something similar to the following welcome page.
 
-	![Account home, Projects page](../../user-guide/_img/account-home-welcome.png) 
+	![Organization home, Projects page](../../user-guide/_img/organization-home-welcome.png) 
 
 0. From the **Projects** page, choose the ![favorites](../../_img/icons/icon-favorite-star.png) star icon next to the team or project you want to favorite.
 
@@ -92,7 +93,7 @@ In this article you'll learn how to:
 From your home page, choose **My Favorites** to quickly access any object or item that you've marked as a favorite. 
 
 > [!div class="mx-imgBorder"]  
-> ![Account home, Favorites page](../../user-guide/_img/account-home-favorites.png)   
+> ![Organization home, Favorites page](../../user-guide/_img/organization-home-favorites.png)   
 
 ::: moniker range="vsts"
 If, you have enabled the [**New Navigation**](preview-features.md) preview feature, you can access your favorites by choosing the ![](../../_img/icons/inbox.png) inbox icon, and then choosing **Favorites**. 
@@ -222,6 +223,6 @@ From your team context, drag shared queries, builds, and folders to Team favorit
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Work effectively from the account home page](../../user-guide/account-home-pages.md)
+> [Work effectively from the account home page](../../user-guide/organization-home-pages.md)
 > or
 > [Manage personal notifications](../../notifications/manage-personal-notifications.md)

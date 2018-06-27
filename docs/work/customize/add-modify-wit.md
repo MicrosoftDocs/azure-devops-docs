@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 02/02/2017
 ---
@@ -157,8 +158,8 @@ In the web portal, work items appear in query results and on the backlog and boa
 This topic addressed how to add and customize WITs and process configuration for Hosted XML and On-premises XML process models. For information on adding and customizing fields for Hosted XML and On-premises XML process models, see [Add or modify a work item type](add-modify-wit.md). For the Inheritance process model , see [Customize a process](../../organizations/settings/work/customize-process.md).  
 
 Other related topics or resources: 
-
-- [Guide to administrative tasks](../../organizations/accounts/account-management.md)  
+organization-management.md
+- [Guide to administrative tasks](../../organizations/accounts/organization-management.md)  
 - [ProcessConfiguration XML elements](reference/process-configuration-xml-element.md)
 - [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Customize the work tracking experience](customize-work.md)  

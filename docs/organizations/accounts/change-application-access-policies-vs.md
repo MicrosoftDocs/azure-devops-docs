@@ -1,5 +1,5 @@
 ---
-title: Change your account's app access policies in VSTS 
+title: Change your organization app access policies in VSTS 
 description: Change app access policies for VSTS (VSTS, Visual Studio Online, VSO)
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/30/2018
+ms.date: 06/26/2018
 monikerRange: 'vsts'
 ---
 
-# Change application access policies for your account
+# Change application access policies for your organization
 
 **VSTS**
 
-VSTS offers the capability for other apps to integrate with its services and resources in your VSTS account. To access your account without asking for user credentials multiple times, apps can use the following authentication methods:
+VSTS offers the capability for other apps to integrate with its services and resources in your VSTS organization. To access your organization without asking for user credentials multiple times, apps can use the following authentication methods:
 
 * [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for VSTS and Team Foundation Server](../../integrate/get-started/rest/basics.md). The [Accounts](../../integrate/api/shared/accounts.md) and [Profiles](../../integrate/api/shared/profiles.md) APIs support only OAuth.
 
@@ -30,26 +30,26 @@ VSTS offers the capability for other apps to integrate with its services and res
    * Clients like Xcode and Nuget that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication
    * Accessing [REST APIs for VSTS and TFS](../../integrate/get-started/rest/basics.md)
 
-By default, your VSTS account allows access for all authentication methods.
+By default, your VSTS organization allows access for all authentication methods.
 You can limit access, but you must specifically restrict access for each method.
-When you deny access to an authentication method, no app can use that method to access your account. Any app that previously had access will get an authentication error and can't access your account.
+When you deny access to an authentication method, no app can use that method to access your organization. Any app that previously had access will get an authentication error and can't access your organization.
 
 > To remove access for personal access tokens,
 > you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
-To continue, you'll need at least Basic access and VSTS account owner permissions.
-[How do I find the account owner?](faq-change-app-access.md#find-owner)
+To continue, you'll need at least Basic access and VSTS organization owner permissions.
+[How do I find the organization owner?](faq-change-app-access.md#find-owner)
 
-1. Sign in as the account owner to your VSTS account (```https://{youraccount}.visualstudio.com```).
+1. Sign in as the organization owner to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
 
-2. From your account toolbar, go to **Settings**.
+2. From your organization toolbar, go to **Settings**.
 
-    ![Choose the gear icon, go to Settings](../../_shared/_img/account-settings-new-ui.png)
+    ![Choose the gear icon, go to Settings](../../_shared/_img/organization-settings-new-ui.png)
 
 3. In the Policy tab, review your application connection settings. Change these settings, based on your security policies.
 
-    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-account-access-policies/connections.png)
+    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-organization-access-policies/connections.png)
 
    [Need help?](faq-change-app-access.md#get-support)
