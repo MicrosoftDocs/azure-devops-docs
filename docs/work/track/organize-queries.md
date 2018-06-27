@@ -9,7 +9,8 @@ ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
-ms.date: 03/20/2018 
+monikerRange: '>= tfs-2013'
+ms.date: 06/21/2018  
 ---
 
 
@@ -23,42 +24,29 @@ Organize your personal or shared queries by adding a query folder. You can then 
 If you're not a member of the Project Administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md), or have your **Edit project-level information** permission set to **Allow**.  
 
 
-> [!NOTE]  
-> **Feature availability**: The New Queries experience is supported on VSTS. To enable the new experience, see [Preview features](../../project/navigation/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
+## Open Queries 
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+
+[!INCLUDE [temp](../_shared/open-queries.md)] 
+
 
 ## Add a query folder, move items into a folder 
 
-
-
-
-
-# [New Queries Experience](#tab/new-query-exp)
-::: moniker range=">= tfs-2018"
-To enable the New Queries Experience, see [Preview features](../../project/navigation/preview-features.md). To learn more about the new experience, see [New Queries experience](queries-preview.md).  
+::: moniker range="vsts"
 
 You add query folders from the **Work>Queries>All** page.
-
-0. From your web browser, open your product backlog from the **Work** hub, **Queries** page. 
  
-	<img src="_img/view-run-queries/open-hub-page.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
-
-0. If you see the following message, click **Try it!** to enable the new queries experience.   
+0. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
-	<img src="_img/view-run-queries/try-new-queries-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
+0. To add a folder, choose the ![](../_img/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
-	Otherwise, you can enable it from the [Preview features menu](../../project/navigation/preview-features.md). 
- 
-0. Click **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
- 
-0. To add a folder, click the ![Actions icon](../_img/icons/actions-icon.png) for an existing folder or the top container folder, My Queries or Shared Queries, and choose **New folder**. 
+	> [!div class="mx-imgBorder"]  
+	> ![Open Actions menu, choose New folder](_img/organize-queries/select-new-folder.png)
 
-	<img src="_img/organize-queries/select-new-folder.png" alt="Open Actions menu, choose New folder" style="border: 2px solid #C3C3C3;" />
-
-0. Enter the name for the folder in the New folder dialog.  
+0. Enter the name for the folder in the New folder dialog. If you want to change the location of the folder, select it from the Folder drop down menu.  
 
 	<img src="_img/organize-queries/new-folder-dialog.png" alt="Open Actions menu, choose New folder" style="border: 2px solid #C3C3C3;" />
-
-	If you want to change the location of the folder, select it from the Folder drop down menu. 
 
 0. To move items into a folder, drag-and-drop a query onto the folder. 
 
@@ -67,41 +55,35 @@ You add query folders from the **Work>Queries>All** page.
 	<img src="_img/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" style="border: 2px solid #C3C3C3;" />
   
 ::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2017"
-The New Queries experience is available from TFS 2018 and later versions. For TFS 2013 through TFS 2017, you only have access to the old queries experience. 
-::: moniker-end  
-# [Old Queries Experience](#tab/old-query-exp)
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 You add query folders from the **Work>Queries** page.
 
-0. From your web browser, open the **Work** hub, **Queries** page. 
- 
-	<img src="_img/organize-queries/open-queries-old-experience.png" alt="Web portal, choose Work hub, Queries" style="border: 1px solid #C3C3C3;" /> 
-
-0. To add a folder, click the ![context icon](../_img/icons/context_menu.png)  context menu for an existing folder or the top container folder, My Queries or Shared Queries, and choose **New query folder**. 
+0. To add a folder, choose the ![](../_img/icons/context_menu.png) context menu for an existing folder or the top container folder and select **New query folder**. 
 
 	Enter the name for the folder in the New query folder dialog.  
 
-	<img src="_img/set-query-perm-new-folder.png" alt="New query folder link on queries context menu" style="border: 1px solid #C3C3C3;" /> 
+	![New query folder link on queries context menu](_img/set-query-perm-new-folder.png)   
 
 0. To move items into a folder, drag-and-drop a query onto the folder. 
 
-	Optionally, you can click the ![context icon](../_img/icons/context_menu.png) context menu for an existing query and choose **Rename**. In the Reanme query dialog,l choose the folder you want to save the query in. 
+	Optionally, you can choose the ![](../_img/icons/context_menu.png) context icon for an existing query and choose **Rename**. In the Reanme query dialog, select the folder you want to save the query in. 
 
-	<img src="_img/organize-queries/rename-query-old-experience.png" alt="Rename query dialog" style="border: 2px solid #C3C3C3;" />
+	![Rename query dialog](_img/organize-queries/rename-query-old-experience.png) 
 
----
+::: moniker-end
 
 
 <a id="favorite-query">  </a>
+::: moniker range=">= tfs-2015"
 ### Add a query to the dashboard or share it with your team 
-To add a query to the home page or a dashboard, open the ![Actions icon](../_img/icons/actions-icon.png) (or ![Context Menu Icon](_img/22.png)) context menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite.   
+To add a query to the home page or a dashboard, open the ![](../_img/icons/actions-icon.png) actions (or ![](_img/22.png) context) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
 
-Share queries with your team by adding them to a folder under the Shared Queries space.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
+Share queries with your team by adding them to a folder under the **Shared Queries** container.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
 You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../scale/manage-team-assets.md). 
 
-
+::: moniker-end
 
 ## Q & A   
 <!-- BEGINSECTION class="md-qanda" -->
@@ -115,9 +97,10 @@ You can only add shared queries to dashboards or as team favorites, and only if 
 ::: moniker range=">= tfs-2013"
 **A:** Yes. This is a supported feature from the [query Security dialog](set-query-permissions.md). 
 ::: moniker-end
+
 ### Q: Can I add folders to team favorites?
 
-**A:** No. You can only add folders under My Queries and under Shared Queries.
+**A:** No. You can only add folders under **My Queries** and under **Shared Queries**.
 
 ### Q: Are the queries and folders I create from the web portal the same as in Team Explorer?
 
@@ -135,3 +118,4 @@ In Team Explorer for Eclipse, choose **Move** from the context menu and select t
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 - [Set query permissions](set-query-permissions.md)
 - [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)
+

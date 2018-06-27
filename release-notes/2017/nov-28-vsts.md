@@ -129,7 +129,7 @@ As your project’s **Shared Queries** tree grows, it can be difficult to determ
 ### Create work items from the Queries hub
 
 > [!IMPORTANT]
-> To use this capability, you must have the **[New Queries Experience](/vsts/work/track/queries-preview)** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
+> To use this capability, you must have the **[New Queries Experience](/vsts/work/track/view-run-query)** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile.
 
 Easily create work items from the **Queries** hub with the addition of a **+ New** command bar action.
 
