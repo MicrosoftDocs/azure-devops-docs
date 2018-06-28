@@ -8577,7 +8577,7 @@
     },
     {
       "source_path": "docs/accounts/account-preferences.md",
-      "redirect_url": "/vsts/organizations/settings/user-preferences",
+      "redirect_url": "/vsts/organizations/settings/set-user-preferences",
       "redirect_document_id": false
     },
     {

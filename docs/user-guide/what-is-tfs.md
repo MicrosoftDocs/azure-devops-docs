@@ -14,7 +14,7 @@ ms.date: 12/07/2016
 
 # What is Team Foundation Server?
 
-[!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../_shared/version-tfs-all-versions.md)]
 
 Team Foundation Server (TFS) is the on-premises version of our cloud service, [VSTS](what-is-vsts.md) (VSTS).  
 

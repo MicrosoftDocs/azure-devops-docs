@@ -69,7 +69,7 @@ some or all of the items based on these estimates.
 >  
 > When you've completed your sprint plan, your sprint backlog should contain all the information your team needs to successfully complete work within the time allotted without having to rush at the end. 
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
  
 
 > [!NOTE]  
