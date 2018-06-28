@@ -2,11 +2,13 @@
 title: Constructing a complete package graph
 description: A complete package graph helps you share your packages with your consumers using a Visual Studio Team Services or Team Foundation Server feed
 ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
-ms.prod: vs-devops-alm
-ms.technology: vs-devops-package
+ms.prod: devops
+ms.technology: devops-artifacts
 ms.topic: get-started-article
 ms.manager: douge
-ms.author: amullans
+ms.author: elbatk
+author: elbatk
+ms.reviewer: amullans
 ms.date: 2/6/2018
 ---
 
