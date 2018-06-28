@@ -11,7 +11,7 @@
   - name: Create your VSTS organization
     href: create-organization-msa-or-work-student.md
   - name: Try extensions for free
-    href: ../../billing/try-additional-features-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../../organizations/billing/try-additional-features-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
   - name: Add admins or set permissions
     href: ../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json 
   - name: Add a team admin
@@ -151,7 +151,7 @@
   - name: New User Guide
     href: ../../user-guide/index.md
   - name: Billing
-    href: ../../billing/index.md
+    href: ../../organizations/billing/index.md
   - name: Migrate from TFS to VSTS
     href: ../../articles/migrate-to-vsts-from-tfs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
   - name: "Security & Identity"

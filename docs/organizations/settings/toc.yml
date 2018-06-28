@@ -23,7 +23,7 @@
   - name: Configure team settings
     href: ../../work/scale/manage-team-assets.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
   - name: Change user preferences
-    href: user-preferences.md
+    href: set-user-preferences.md
   - name: Switch team context
     href: switch-team-context.md
   - name: "Manage permissions & access"

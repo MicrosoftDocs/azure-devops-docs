@@ -20,10 +20,6 @@
     href: triage-work-items.md
   - name: Bulk modify work items
     href: ../backlogs/bulk-modify-work-items.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
-- name: Concepts
-  items:
-  - name: New queries experience
-    href: queries-preview.md
 - name: Samples
   items:
   - name: Query by title, ID, or description

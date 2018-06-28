@@ -21,11 +21,8 @@ ms.date: 06/25/2018
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
-::: moniker range=">= tfs-2018"
+::: moniker range="vsts"
 ## Filter based on keywords or fields   
-
-> [!NOTE]   
-> **Feature availability**: The ability to filter your backlog or a query based on the Work Item Type, Assigned To, or State fields is available from VSTS. For queries, you must enable the [New Queries Experience](../track/queries-preview.md). 
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
@@ -35,7 +32,7 @@ The filtered set is always a flat list, even if you've selected to show parents.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 
 ## Filter based on keywords 
 You can use keywords to filter your backlogs or queries. The filter function lists those work items based on any visible/displayed column or field, including tags, based on the keyword that you enter. Also, you can enter a value for an ID, whether or not the ID field is visible.  

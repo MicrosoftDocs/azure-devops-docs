@@ -59,7 +59,7 @@
   - name: Manage your notifications
     href: ../notifications/manage-personal-notifications.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Set your preferences
-    href: ../organizations/settings/user-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
+    href: ../organizations/settings/set-user-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Sign-in to the web or a client
     href: connect-team-projects.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
 - name: Troubleshooting 

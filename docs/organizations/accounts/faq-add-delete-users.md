@@ -117,7 +117,7 @@ Learn [how to buy Visual Studio subscriptions](https://docs.microsoft.com/visual
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 
-	[Learn more](../../billing/vsts-billing-faq.md).
+	[Learn more](../../organizations/billing/vsts-billing-faq.md).
 
 
 ## User access
@@ -156,13 +156,13 @@ To fix this problem, visit the [Azure account portal](https://portal.azure.com).
 
 *	The Azure subscription used for billing was 
 unlinked from your VSTS organization. 
-Learn more about [linking your organization](../../billing/set-up-billing-for-your-organization-vs.md).
+Learn more about [linking your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md).
 
 *	Your VSTS organization has more users with Basic access 
 than the number of users that you're paying for in Azure. 
 Your organization includes 5 free users with Basic access, 
 but if you need to add more users with Basic access, 
-you can [pay for these users](../../billing/buy-basic-access-add-users.md). 
+you can [pay for these users](../../organizations/billing/buy-basic-access-add-users.md). 
 Otherwise, on the 1st day of the calendar month, users who haven't 
 signed into your organization the longest will lose access first. 
 If your organization has users who don't need access anymore, 
@@ -184,7 +184,7 @@ This might happen for different reasons.
 	the Azure subscription used for billing might 
 	be unlinked from your VSTS organization 
 	or might no longer be active. Learn more about 
-	[linking your VSTS organization](../../billing/set-up-billing-for-your-organization-vs.md), 
+	[linking your VSTS organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md), 
 	or visit the [Azure account portal](https://account.windowsazure.com/subscriptions) 
 	to check your payment details.
 

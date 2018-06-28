@@ -154,7 +154,12 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 </table>
 
 #### Implementation notes
--   By default, each backlog is restricted to a total of 1000 work items. You can change this limit by specifying a value for the `workItemCountLimit` attribute.  
+::: moniker range="vsts"
+-   Each backlog is restricted to a total of 1000 work items. You can't modify this limit for VSTS.  
+::: moniker-end
+::: moniker range=">= tfs-2013 <= tfs-2018"
+-   By default, each backlog is restricted to a total of 1000 work items. For TFS you can change this limit by specifying a value for the `workItemCountLimit` attribute.  
+::: moniker-end
 -   The values assigned to *CategoryName* must correspond to a category group defined for the team project. You [specify category groups in the definition file for Categories](categories-xml-element-reference.md).  
 -   You use [portfolio backlogs](../../backlogs/organize-backlog.md) to organize your backlog, view the rollup of backlog items at lower levels, and to view progress across several teams. New and upgraded team projects contain two portfolio backlog levels: Features and Epics. You can add up to three additional levels. Only the top level portfolio backlog doesn't specify a parent category.  
 -   Your [product backlog](../../backlogs/create-your-backlog.md) corresponds to your project plan, the roadmap for what your team plans to deliver. It lists work items whose WITs belong to the Requirements Category. In order to manage different WITs than those provided by your default team project, you can add WITs to the Requirements Category and map the workflow states to state categories.  
