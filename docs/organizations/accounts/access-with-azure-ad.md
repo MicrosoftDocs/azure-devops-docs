@@ -66,7 +66,7 @@ least co-administrator permissions for your subscription.
 You'll need both to make your directory appear in the Azure portal,
 so that you can link your subscription and connect your
 Azure Active Directory to your VSTS organization. Learn about
-[Azure subscription co-administrator permissions](../../billing/add-backup-billing-managers.md).
+[Azure subscription co-administrator permissions](../../organizations/billing/add-backup-billing-managers.md).
 
   [Want to use Office 365 Azure Active Directory with VSTS?](faq-azure-access.md#o365aad)
 

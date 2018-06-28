@@ -33,7 +33,7 @@ Because days off and time available for each team member can vary from sprint to
 
 If you haven't set up sprints yet for your team, go [here to do that now](define-sprints.md).
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 
 

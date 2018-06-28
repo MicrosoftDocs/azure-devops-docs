@@ -32,7 +32,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 > * Quickly reassign tasks to another team member    
 
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 
 

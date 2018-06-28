@@ -147,7 +147,7 @@ Our extensibility framework enables you to build integrations directly within VS
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the VSTS web portal.  
 
 [Find marketplace extensions](../marketplace/index.md) 
-[Buy subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md)
+[Buy subscriptions](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vscloud-csp?view=vsts)
 [Get extensions](../marketplace/install-vsts-extension.md)</li>
 [Using service hooks](../service-hooks/index.md)
 [Get started with REST APIs](../integrate/get-started/rest/basics.md)
