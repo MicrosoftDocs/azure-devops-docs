@@ -1222,7 +1222,7 @@
     },
     {
       "source_path": "docs/collaborate/naming-restrictions.md",
-      "redirect_url": "/vsts/organization/settings/naming-restrictions",
+      "redirect_url": "/vsts/organizations/settings/naming-restrictions",
       "redirect_document_id": false
     },
     {
@@ -3312,7 +3312,7 @@
     },
     {
       "source_path": "docs/work/troubleshoot/resolve-backlog-reorder-issues.md",
-      "redirect_url": "/vsts/backlogs/resolve-backlog-reorder-issues",
+      "redirect_url": "/vsts/work/backlogs/resolve-backlog-reorder-issues",
       "redirect_document_id": false
     },
     {
@@ -4552,7 +4552,7 @@
     },
     {
       "source_path": "docs/work/reference/expand-list-items-and-exclude-groups-from-lists.md",
-      "redirect_url": "/vsts/work/customize/reference/cexpand-list-items-and-exclude-groups-from-lists",
+      "redirect_url": "/vsts/work/customize/reference/expand-list-items-and-exclude-groups-from-lists",
       "redirect_document_id": false
     },
     {
@@ -5141,8 +5141,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/work/guidance/cmmi/guidance-create-solution-upgrade.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-create-solution-upgrade",
+      "source_path": "docs/work/guidance/cmmi/guidance-create-solution-architecture.md",
+      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-create-solution-architecture",
       "redirect_document_id": false
     },
     {
