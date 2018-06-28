@@ -29,7 +29,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 The first time that you set up billing for your VSTS organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-* [VSTS project collection administrator (PCA) or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner) - if you aren't a PCA or organization owner, you'll be prompted to send a purchase request to the admins for your VSTS organization.
+* [VSTS project collection administrator (PCA) or organization owner permissions](../../organizations/accounts/faq-add-delete-users.md#find-owner) - if you aren't a PCA or organization owner, you'll be prompted to send a purchase request to the admins for your VSTS organization.
 
    > [!div class="mx-imgBorder"]
 ![Non-project admin submit request](_img/buy-more-basic-access/non-organization-admin-purchase-request.png)
@@ -69,7 +69,7 @@ To make subsequent edits to paid quantities in your VSTS organization, you only 
    > [!div class="mx-imgBorder"]
 ![VSTS Marketplace review and confirm order](_img/buy-more-basic-access/marketplace-choose-confirm.png)
 
-6. Choose **Manage users** to go to your VSTS organization and [add new users](../organizations/accounts/add-organization-users-from-user-hub.md).
+6. Choose **Manage users** to go to your VSTS organization and [add new users](../../organizations/accounts/add-organization-users-from-user-hub.md).
 
 The number of users to whom you can assign Basic appears on the right side of your screen.
 
