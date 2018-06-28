@@ -8,7 +8,8 @@ ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: tutorial
-ms.date: 03/20/2018
+monikerRange: '>= tfs-2013'
+ms.date: 06/21/2018  
 ---
 
 # Create managed queries with the query editor
@@ -29,54 +30,70 @@ In this topic you'll learn:
 > * How to query across team projects    
 
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
+
+## Open Queries 
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+
+[!INCLUDE [temp](../_shared/open-queries.md)] 
+
 
 <a id="flat-list-query"/>
 ## Open and edit a query  
 
 The easiest way to define a query is to start with an existing shared query. 
 The following example shows how to find all closed bugs by modifying the 
-Active Bugs shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
+*Active Bugs* shared query provided with the Agile process template. Examples are based on the user interface provided through the web portal. 
 
-1.	Open a shared query. For example, from the web portal, open the Active Bugs or similar flat list query.   
-  
-	<img src="_img/using-queries-active-bugs-ts.png" alt="Web portal, Work>Queries, Open Shared queries, Active Bugs" style="border: 2px solid #C3C3C3;" />
+0.	Open a shared query. For example, from the web portal, open the *Active Bugs* or similar flat list query.   
+	::: moniker range="vsts"
+	> [!div class="mx-imgBorder"]  
+	> ![Run Active bugs query](_img/view-run-queries/run-active-bugs.png)  
+	::: moniker-end  
+	::: moniker range=">= tfs-2013 <= tfs-2018"
+	![Web portal, Work>Queries, Open Shared queries, Active Bugs](_img/using-queries-active-bugs-ts.png)  
+	::: moniker-end  
 
 	> [!TIP]  
-	>If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, click **View>Team Explorer** from the top level menu.   
+	>If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
 
-2.	Edit the query to find closed bugs and then run the query. 
+0.	Edit the query to find closed bugs and then run the query. 
 	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
-
-	# [New Queries Experience](#tab/new-query-exp)
-	::: moniker range=">= tfs-2018"	
-	<img src="_img/using-queries-new-vsts-exp.png" alt="Web portal, Queries page, new queries experience, Editor view of a Flat List Query" style="border: 2px solid #C3C3C3;" />
+	::: moniker range="vsts"	
+	![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 	::: moniker-end
-	::: moniker range=">= tfs-2013 <= tfs-2017"
-	The new queries experience requires TFS 2018 or later version. 
-	::: moniker-end
-
-	# [Old Queries Experience](#tab/old-query-exp)
-	::: moniker range=">= tfs-2015"	 	
+	::: moniker range=">= tfs-2015 <= tfs-2018"	 	
 	<img src="_img/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" /> 
 	::: moniker-end
 	::: moniker range="tfs-2013"	 
 	![Editor View of a Flat List Query - On-premises TFS](_img/5.png)  
 	::: moniker-end
 
-	---
-3.	Save the query to your My Queries folder.  
-	  
-	  ![Save Query As](_img/6.png)    
-	  
-	  To save a query to the Shared Queries folder, you need to be a [team administrator](../scale/manage-team-assets.md), a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your Contribute permissions on the folder set to Allow. To learn more, see [Set query permissions](set-query-permissions.md).
+0.	Save the query to your **My Queries** folder.  
+	::: moniker range="vsts"
+	> [!div class="mx-imgBorder"]  
+	> ![Save As query query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
+	::: moniker-end
+	::: moniker range=">= tfs-2015 <= tfs-2018"	 
+	![Save Query As](_img/6.png)    
+	::: moniker-end
+
+	To save a query to the **Shared Queries** folder, you need to be a member of the [Project Administrators group](../../organizations/security/add-users-team-project.md), or have your **Contribute** permissions on the folder set to **Allow**. To learn more, see [Set query permissions](set-query-permissions.md).  
 
 <a id="flat-list" />
 ## Create a query
 
-You can start a fresh, new query from the Queries page in the web portal or the Work Items page in Team Explorer.  
+You can start a fresh, new query from the **Queries** tab in the web portal or the **Work Items** tab in Team Explorer.  
 
-<img src="_img/using-queries-new-query-ts.png" alt="Queries page, Choose New query from the drop down menu" style="border: 2px solid #C3C3C3;" />
+::: moniker range="vsts"  
+> [!div class="mx-imgBorder"]  
+> ![Add new query, new experience](_img/view-run-queries/new-query-new-exp.png)  
+::: moniker-end
+::: moniker range=">= tfs-2015 <= tfs-2018"	 
+![Queries page, Choose New query from the drop down menu](_img/using-queries-new-query-ts.png) 
+::: moniker-end
+
 
 ## Group clauses
 
@@ -91,7 +108,8 @@ In the next example, the first expression returns all work items that are priori
 
 To group one or more clauses, select them and then choose the ![Group Query Clause icon](../_img/icons/group-clauses-icon.png) group clauses icon.
 
-<img src="_img/10.png" alt="Web portal, Group Selected Query Clauses" style="border: 2px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Web portal, Group Selected Query Clauses](_img/view-run-queries/group-clauses.png)
 
 If your query results do not return your expected set of work items, follow these steps: 
 
@@ -104,20 +122,33 @@ If your query results do not return your expected set of work items, follow thes
 <a id="tree-query" />
 ## Use a tree query to view hierarchies  
 
-Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.
+Use the tree query (![Tree Query](_img/11.png)) to view a multi-tiered, nested list of work items. For example, you can view all backlog items and their linked tasks.  Expand (Expand node (![Expand node, web portal](_img/13.png)) or collapse (![Collapse node, web portal](_img/14.png)) leaf nodes to focus on different parts of the tree.  
 
-![Results List Showing a Tree Query](_img/12.png)
+::: moniker range="vsts"  
+> [!div class="mx-imgBorder"]  
+> ![Results List Showing a Tree Query, new experience](_img/view-run-queries/tree-query-new-exp.png)  
+::: moniker-end  
+::: moniker range=">= tfs-2017 <= tfs-2018"	 
+> [!div class="mx-imgBorder"]  
+> ![Results List Showing a Tree Query, tfs experience](_img/view-run-queries/tree-query-view-tfs.png)  
+::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2015"	 
+![Results List Showing a Tree Query](_img/12.png) 
+::: moniker-end  
 
-Expand (Expand node (![Expand node, web portal](_img/13.png)) or collapse (![Collapse node, web portal](_img/14.png)) leaf nodes to focus on different parts of the tree.
+Define the filter criteria for both parent and child work items. To find linked children, select **Match top-level work items first**. To find linked parents, select **Match linked work items first**.
 
-Define the filter criteria for both parent and child work items. 
+::: moniker range=">= tfs-2017"  
+> [!div class="mx-imgBorder"]  
+> ![Tree Query, editor](_img/view-run-queries/tree-query-editor-s136.png)  
+::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2015"	 
+![Tree Query, editor](_img/15.png) 
+::: moniker-end  
 
-![Alt text](_img/15.png) 
-
-To find linked children, select Match top-level work items first. To find linked parents, select Match linked work items first.
 
 > [!NOTE]    
->You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../test/create-a-test-plan.md). 
+> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test Plans page of the Test hub](../../test/create-a-test-plan.md). 
 
 <a id="directs-link-query" />
 ## Use direct links to view dependencies
@@ -128,24 +159,31 @@ Use the direct links query (![Direct Links Query](_img/16.png)) to track work it
 
 Use the direct links query to track dependencies your team has that other teams work on, or manage commitments your team has made to other teams. Specify the filter criteria for both top and linked work items, and select the types of links used to filter the dependencies. 
 
+
+::: moniker range=">= tfs-2017"  
+> [!div class="mx-imgBorder"]  
+> ![Direct Links Query, editor](_img/view-run-queries/direct-query-editor-s136.png)  
+::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2015"	 
 ![Direct Links Query Editor](_img/18.png)
+::: moniker-end  
 
 Filter your first-tier list of work items by choosing one of these options:
 
-- Only return work items that have the specified links: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria. 
+- **Only return work items that have the specified links**: First-tier work items are returned, but only if they have links to work items specified by the linked work items filter criteria. 
 
-- Return all top level work items: All first-tier work items are returned regardless of the linked work items filter criteria. Second-tier work items that are linked to the first tier are returned if they match the linked work items filter criteria.
+- **Return all top level work items**: All first-tier work items are returned regardless of the linked work items filter criteria. Second-tier work items that are linked to the first tier are returned if they match the linked work items filter criteria.
 
-- Only return work items that do not have the specified links: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
+- **Only return work items that do not have the specified links**: First-tier work items are returned, but only if they do not have links to work items specified by the linked work items filter criteria.
 
 To learn more about each link type, see [Link work items to support traceability and manage dependencies](link-work-items-support-traceability.md).
 
 
 <a id="across-projects" />  
 ## Query across team projects  
-By default, shared queries and new queries are scoped to the current team project. However, you can create queries to find work items defined within the team project collection. You save cross-project queries under a specific team project.     
+By default, shared queries and new queries are scoped to the current team project. However, you can create queries to find work items defined within the team project collection. You save cross-project queries under a specific team project. 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2017"
+::: moniker range=">= tfs-2015"
 
 To list work items defined in two or more team projects, checkmark **Query across projects**. For example, the following query finds all features created in all team projects within the last 30 days.
  
@@ -158,7 +196,7 @@ To list work items defined in two or more team projects, checkmark **Query acros
 > The **Query across projects** feature is supported from TFS 2015.1 and later versions.  
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2017"
+::: moniker range=">= tfs-2015"
 With the **Query across projects** checked, you can add the Team Project field to filter to a select number of team projects.   
 
 <img src="_img/using-queries-query-across-select-projects.png" alt="VSTS and TFS 2015.1, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" />
@@ -166,11 +204,11 @@ With the **Query across projects** checked, you can add the Team Project field t
 > [!NOTE]    
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
 
-The Team Project field becomes available only after you check  **Query across projects**.  Moreover, when Query across projects is unchecked, only those fields from those WITs defined in the current team project appear in the Field drop-down menu. When Query across projects is checked, all fields from all WITs defined in all team projects in the collection appear in the Field drop-down menu.  
+The *Team Project* field becomes available only after you check  **Query across projects**.  Moreover, when **Query across projects** is unchecked, only those fields from those WITs defined in the current team project appear in the Field drop-down menu. When **Query across projects** is checked, all fields from all WITs defined in all team projects in the collection appear in the Field drop-down menu.  
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013"
+::: moniker range="tfs-2013"   
 
 To find all features created in all team projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
 
