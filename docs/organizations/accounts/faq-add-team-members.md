@@ -24,15 +24,13 @@ You can add unlimited Stakeholders and Visual Studio subscribers for no extra ch
 After you assign all 5 free users with Basic access, 
 you can continue adding Stakeholders and Visual Studio subscribers. 
 To add a 6th user or more with Basic access, 
-you'll need to [set up billing in Azure](../../billing/set-up-billing-for-your-organization-vs.md). 
-You can then [pay for more users who need Basic access](../../billing/buy-basic-access-add-users.md), 
+you'll need to [set up billing in Azure](../../organizations/billing/set-up-billing-for-your-organization-vs.md). 
+You can then [pay for more users who need Basic access](../../organizations/billing/buy-basic-access-add-users.md), 
 return to your VSTS organization, 
 [add these users, and assign them Basic access](add-organization-users-from-user-hub.md). 
 This lets you pay monthly for their access, and you can cancel anytime.
 
-If you need more Visual Studio subscriptions, 
-learn [how to buy these subscriptions](../../billing/vs-subscriptions/buy-vs-subscriptions.md) 
-from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions).
+Buy more Visual Studio subscriptions from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions).
 
 <a name="WhyCantSignIn"></a>
 

@@ -6,6 +6,6 @@ check your subscription status in the [Account Center](https://account.windowsaz
 then try to [fix your subscription](https://docs.microsoft.com/en-us/azure/billing-subscription-become-disable). 
 This will restore your account's paid settings. 
 Or you can link your VSTS organization to another Azure subscription by 
-[unlinking your organization from the disabled subscription](../billing/change-azure-subscription.md). 
+[unlinking your organization from the disabled subscription](../organizations/billing/change-azure-subscription.md). 
 While your subscription is disabled, your organization goes back to the free 
 monthly limits until your subscription is fixed.

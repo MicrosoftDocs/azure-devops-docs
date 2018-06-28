@@ -19,7 +19,7 @@
 - name: Tutorials
   items:
   - name: Connect VSTS to Azure Active Directory
-    href: ../organizations/accounts/change-organization-location.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../organizations/accounts/change-organization-location.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Manage billing 
@@ -39,11 +39,11 @@
     - name: Change number of paid users
       href: change-number-paid-extension-users.md
     - name: Approve requests
-      href: ../marketplace/approve-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+      href: ../../marketplace/approve-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Assign paid extensions to users
-      href: ../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+      href: ../../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+      href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
     - name: Buy TFS CALs or Test hub  
       href: buy-access-tfs-test-hub.md 
   - name: Guidance for Cloud Solution Providers
@@ -63,16 +63,16 @@
 - name: Reference
   items:
   - name: Permissions 
-    href: ../organizations/security/permissions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../organizations/security/permissions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
   - name: About access levels
-    href: ../organizations/security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../organizations/security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
   - name: Default permissions & access
-    href: ../organizations/security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../organizations/security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Organization Management
-    href: ../organizations/accounts/index.md
+    href: ../../organizations/accounts/index.md
   - name: "Security & Identity"
-    href: ../organizations/security/index.md
+    href: ../../organizations/security/index.md
   - name: Marketplace extensions
-    href: ../marketplace/index.md
+    href: ../../marketplace/index.md

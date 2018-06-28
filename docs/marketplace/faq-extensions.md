@@ -45,7 +45,7 @@ you can request extensions instead.
 
 <a name="no-organizations"></a>
 
-[!INCLUDE [no-organizations](../billing/_shared/qa-no-organizations.md)]
+[!INCLUDE [no-organizations](../organizations/billing/_shared/qa-no-organizations.md)]
 
 #### Q: Why can't I install extensions for VSTS?
 
@@ -130,9 +130,9 @@ A: This might happen for these reasons:
 
 ## Troubleshooting purchases & billing
 
-- [VSTS billing overview](../billing/overview.md)
-- [VSTS billing FAQ](../billing/vsts-billing-faq.md)
-- [How to pay for TFS users](../billing/buy-access-tfs-test-hub.md)
+- [VSTS billing overview](../organizations/billing/overview.md)
+- [VSTS billing FAQ](../organizations/billing/vsts-billing-faq.md)
+- [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
 - [How to buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
 - [Visual Studio cloud subscription billing FAQ](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)
-- [How to buy Xamarin University](../billing/xamarin-univ.md)
+- [How to buy Xamarin University](../organizations/billing/xamarin-univ.md)
