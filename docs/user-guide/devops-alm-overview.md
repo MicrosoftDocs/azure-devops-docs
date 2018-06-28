@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/26/2018
+ms.date: 06/22/2017
 monikerRange: '>= tfs-2013'
 ---
 
@@ -72,7 +72,7 @@ You can use TFVC to scale from small to large projects, and by using server work
 
 ### Package management and code search 
 
-Software development teams often rely on re-using libraries or providing libraries for others to re-use. Package management supports code sharing as binary components across enterprises and within teams. With it, you can build projects to produce packages and update projects that consume updated packages. Our package management service enables plugging in existing package management services you already use, such as local NuGet servers for IP protection, NuGet, MyGet, or Artifactory.  
+Software development teams often rely on re-using libraries or providing libraries for others to re-use. Package management supports code sharing as binary components across organizations and within teams. With it, you can build projects to produce packages and update projects that consume updated packages. Our package management service enables plugging in existing package management services you already use, such as local NuGet servers for IP protection, NuGet, MyGet, or Artifactory.  
 
 - [Package Management overview](../package/overview.md) 
 - [Search across all your code](../project/search/overview.md)
@@ -147,7 +147,7 @@ Our extensibility framework enables you to build integrations directly within VS
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the VSTS web portal.  
 
 [Find marketplace extensions](../marketplace/index.md) 
-[Buy subscriptions](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vscloud-csp?view=vsts)
+[Buy subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md)
 [Get extensions](../marketplace/install-vsts-extension.md)</li>
 [Using service hooks](../service-hooks/index.md)
 [Get started with REST APIs](../integrate/get-started/rest/basics.md)

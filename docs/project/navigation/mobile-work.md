@@ -114,7 +114,7 @@ Then, click **Work items**.
 
 ![Click Work items](_img/mobile-work-click-work-items.png)
 
-The hub opens to the Assigned to me page. From there, you can click Following or My activity to access the other pages. To learn more about the account hub, see [Work effectively from your account hub](../../user-guide/organization-home-pages.md). 
+The hub opens to the Assigned to me page. From there, you can click Following or My activity to access the other pages. To learn more about the account hub, see [Work effectively from your account hub](../../user-guide/account-home-pages.md). 
 
 <img src="_img/mobile-work-account-work-items-pages.png" alt="Mobile work item form, Change State action" style="border: 1px solid #C3C3C3;" /> 
 

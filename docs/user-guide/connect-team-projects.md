@@ -8,7 +8,7 @@ ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
 ms.manager: douge
 ms.author: sdanie
 author: steved0x
-ms.date: 06/26/2018
+ms.date: 09/07/2017 
 monikerRange: '>= tfs-2013'
 ---
 
@@ -27,11 +27,11 @@ To share code, build apps, track work, and collaborate with team members, you co
 - [Visual Studio Code](/vsts/java/vscode-extension)    
 
 >[!NOTE]
->A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on VSTS or an on-premises TFS. When you connect to a team project, you connect to an organization or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
+>A team project defines a process and data storage in which you manage your software projects from planning to deployment. You or a team member create a team project either on VSTS or an on-premises TFS. When you connect to a team project, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
 
 If you don't have a team project yet, create one in [VSTS](../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../organizations/accounts/create-team-project.md). If you need to add a team, see [Multiple teams](../work/scale/multiple-teams.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members). 
 
-From each of these clients, you can quickly switch context to a different team project and connect under a different organization name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
+From each of these clients, you can quickly switch context to a different team project and connect under a different account name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
 To get started with a code base, [set up Git](../git/gitquickstart.md) or [set up TFVC](../tfvc/overview.md).
 
@@ -39,12 +39,12 @@ To get started with a code base, [set up Git](../git/gitquickstart.md) or [set u
 
 ## Connect from the web portal
 
-1.  If you're not a member of a VSTS or TFS security group, ask your organization or project admin to add you.  
+1.  If you're not a member of a VSTS or TFS security group, ask your account or project admin to add you.  
 
 2.  Open a browser window and type a URL that uses the following form:
 
 	**VSTS:** 
-	<pre><code>https://<i>OrganizationName</i>.visualstudio.com/<i>ProjectName</i> </code></pre>
+	<pre><code>https://<i>AccountName</i>.visualstudio.com/<i>ProjectName</i> </code></pre>
 
 	**TFS (on-premises):**   
 	<pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
@@ -71,7 +71,7 @@ To learn more about each hub and the tasks you can perform, see [Work in the web
 
 1.  Open Windows Security from the context menu associated with your name.
 
-    ![Sign in As link on Organization context menu](_img/connect-tp-open-profile.png)
+    ![Sign in As link on Account context menu](_img/connect-tp-open-profile.png)
 
 2.  Enter your credentials.
 
@@ -122,7 +122,7 @@ Select a team project from the list and select **Connect**.
 
 ### Visual Studio 2015
 
-From the Connect page, choose the **Connect to Team Project** link to select a different organization, TFS, or team project to connect to.
+From the Connect page, choose the **Connect to Team Project** link to select a different account, TFS, or team project to connect to.
 
 ![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
 
@@ -151,7 +151,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 ::: moniker-end
 
-### Change organizations when connecting to VSTS
+### Change accounts when connecting to VSTS
  
 ::: moniker range="tfs-2017"
 
@@ -164,11 +164,11 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	![connect to team projects](_img/te-connect-page-connect-to-team-project.png)  
 
-	Select a different user from the drop-down or select **Add an organization...** to access a team project using a different organization.
+	Select a different user from the drop-down or select **Add an account...** to access a team project using a different account.
 
-	![Connect with VS 2017 TFS or VSTS using a different organization](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
+	![Connect with VS 2017 TFS or VSTS using a different account](_img/connect-team-projects-tfs/choose-different-user-vs2017.png) 
 
-2. Sign in using a valid Microsoft account-an account that is associated with a VSTS team project.
+2. Sign on using a valid Microsoft account-an account that is associated with a VSTS team project.
 
 ::: moniker-end
 
@@ -202,7 +202,7 @@ You can locate the executable in the following folder: *Drive*:\\Program Files (
 
 ## Connect from Microsoft Excel or Project
 
-To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a team project. Establishing this connection binds the document to the hosted organization or selected TFS, team project collection, and team project to exchange information. 
+To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a team project. Establishing this connection binds the document to the hosted account or selected TFS, team project collection, and team project to exchange information. 
  
 
 > [!NOTE]  
@@ -226,13 +226,13 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to VSTS organization or a TFS instance and the team project. If you can't connect, [get added as a team member](../organizations/security/add-users-team-project.md).
+4.  Connect to VSTS account or a TFS instance and the team project. If you can't connect, [get added as a team member](../organizations/security/add-users-team-project.md).
 
     ![Connect to server](../work/backlogs/office/_img/IC680074.png)
 
-    If it is your first time connecting from Excel or Project, you might have to add the VSTS organization or TFS server to the list of recognized servers.
+    If it is your first time connecting from Excel or Project, you might have to add the VSTS account or TFS server to the list of recognized servers.
 
-    ![Add organization or server](../work/backlogs/office/_img/IC658167.png)
+    ![Add account or server](../work/backlogs/office/_img/IC658167.png)
 
 5.  Your worksheet or project plan is now bound to your team project. What this means is that you can add work items to the team project from the Office document or add work items to the Office document from the team project.
 
@@ -298,11 +298,11 @@ If all you need is a code repository and bug tracking solution, then start with 
 
 To start planning and tracking work, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md). 
 
-### User organizations and licensing
+### User accounts and licensing
 
-To connect to a team project, you need your organization added to the team project. This is typically done by the [organization owner (VSTS)](../organizations/accounts/add-organization-users-from-user-hub.md) or a [project administrator](../organizations/security/set-project-collection-level-permissions.md). 
+To connect to a team project, you need your user account added to the team project. This is typically done by the [account owner (VSTS)](../organizations/accounts/add-account-users-from-user-hub.md) or a [project administrator](../organizations/security/set-project-collection-level-permissions.md). 
 
-VSTS provides access to the first 5 organization users free. After that, you need to [pay for more users (VSTS)](../organizations/billing/buy-basic-access-add-users.md). For on-premises TFS, each organization must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
+VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each user account must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
 In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
