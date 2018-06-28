@@ -126,6 +126,6 @@ When your team's needs for build or release capacity change, you can change the 
 
 ## Related articles
 
-* [VSTS: CI/CD concepts](../pipelines/licensing/concurrent-jobs-vsts.md)
-* [TFS: CI/CD concepts](../pipelines/licensing/concurrent-pipelines-tfs.md)
+* [VSTS: CI/CD concepts](../../pipelines/licensing/concurrent-jobs-vsts.md)
+* [TFS: CI/CD concepts](../../pipelines/licensing/concurrent-pipelines-tfs.md)
 * [Pricing for VSTS CI/CD](https://visualstudio.microsoft.com/team-services/pricing)

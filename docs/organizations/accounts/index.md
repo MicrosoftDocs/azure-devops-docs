@@ -20,7 +20,7 @@ Sign up for a VSTS organization, add users, and manage permissions and access.
 ## 5-Minute Quickstarts
 
 * [Create your VSTS organization](create-organization-msa-or-work-student.md)
-* [Try extensions for free](../../billing/try-additional-features-vs.md)
+* [Try extensions for free](../../organizations/billing/try-additional-features-vs.md)
 
 ## Step-by-Step Tutorials
 
@@ -34,7 +34,7 @@ Sign up for a VSTS organization, add users, and manage permissions and access.
 ## Resources
 
 * [New User Guide](../../user-guide/index.md)
-* [Billing](../../billing/index.md)
+* [Billing](../../organizations/billing/index.md)
 * [Security & Identity](../../organizations/security/index.md)
 * [Manage Extensions](../../marketplace/index.md)
 * [Service Hooks](../../service-hooks/index.md)
