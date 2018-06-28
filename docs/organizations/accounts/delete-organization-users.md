@@ -42,7 +42,7 @@ If a user no longer requires access to a team project or your VSTS organization,
 
    [Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?](faq-add-delete-users.md#users-delay)
 
-6. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also [reduce these users in the Visual Studio Marketplace](../../billing/buy-basic-access-add-users.md),so you're not charged in your next Azure billing cycle.
+6. If you deleted paid users who had Basic features, and you don't want to pay for these users, you must also [reduce these users in the Visual Studio Marketplace](../../organizations/billing/buy-basic-access-add-users.md),so you're not charged in your next Azure billing cycle.
 
    > To reduce or cancel these users for the next month, you must make updates before the last day of the current month.
    > Your bill won't show these changes until the next month because paid users are monthly purchases.

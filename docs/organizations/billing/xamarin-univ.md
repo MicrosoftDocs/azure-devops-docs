@@ -123,6 +123,6 @@ A: Follow these steps:
 
 <a name="azure-billing"></a>
 
-[!INCLUDE [azure-billing](_shared/qa-azure-billing.md)]
+[!INCLUDE [azure-billing](_shared/qa-azure-billing.md)] 
 
 [!INCLUDE [marketplace-support](_shared/qa-marketplace-support.md)]

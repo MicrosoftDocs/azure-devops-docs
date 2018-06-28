@@ -1756,7 +1756,7 @@ pipelines\tasks\build\_img
 <p>You can [get and quickly install extensions](../marketplace/get-vsts-extensions.md) to add functionality to Visual Studio, Visual Studio Code, or VSTS.</p>
 
 <p><b>Try extensions for free</b></p>
-<p>You can [start a trial extension for free](../billing/try-additional-features-vs.md).</p>
+<p>You can [start a trial extension for free](../organizations/billing/try-additional-features-vs.md).</p>
 
 
 <p><b>Get extensions for...</b></p>

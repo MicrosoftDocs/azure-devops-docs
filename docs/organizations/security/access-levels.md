@@ -74,7 +74,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 **TFS 2017.1**
 
 > [!NOTE]   
-> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open the **Users** hub for the project collections in which they are a member and [assign them the Test Manager extension](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or the TFS Test hub](../../billing/buy-access-tfs-test-hub.md). 
+> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open the **Users** hub for the project collections in which they are a member and [assign them the Test Manager extension](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or the TFS Test hub](../billing/buy-access-tfs-test-hub.md). 
 
 **TFS 2017, TFS 2015, TFS 2013**
 

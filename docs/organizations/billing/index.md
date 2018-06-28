@@ -95,4 +95,4 @@ Guidance for Cloud Solution Providers
 * [TFS Server Administration documentation](https://docs.microsoft.com/en-us/tfs/server/index?view=vsts)
 
 * [Buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
-* [Buy Xamarin University subscriptions](xamarin-univ.md)
+* [Buy Xamarin University subscriptions](../../organizations/billing/xamarin-univ.md)
