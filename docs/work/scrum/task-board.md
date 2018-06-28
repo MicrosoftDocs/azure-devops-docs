@@ -36,7 +36,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 > [!NOTE]  
 > Your task board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md). 
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../_shared/prerequisites.md)]
 
 ## Open the sprint Taskboard for your team 
 
