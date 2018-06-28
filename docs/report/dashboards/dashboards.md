@@ -6,8 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
@@ -16,7 +15,6 @@ ms.date: 03/27/2018
 # Add and manage dashboards
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
-
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your team project site. 
 
@@ -32,7 +30,6 @@ The Overview page provides access to a default team dashboard which you can cust
 > [!NOTE]   
 > For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
 ::: moniker-end
-
 
 
 ::: moniker range="vsts"
@@ -58,8 +55,8 @@ Open a browser window and choose the **Dashboards** hub.
 <!---The URL follows this pattern: 
 - VSTS: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 - Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
--->organization-home-pages.md
-If you don't see the team or team project you want, click the ![project icon](../../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/organization-home-pages.md).    
+-->
+If you don't see the team or team project you want, click the ![project icon](../../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/account-home-pages.md).    
 ::: moniker-end
 
 

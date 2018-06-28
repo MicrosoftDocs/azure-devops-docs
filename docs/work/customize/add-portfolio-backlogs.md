@@ -6,8 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
@@ -206,8 +205,8 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 		c. ProcessConfiguration.xml   
 
 2.	Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected. See [Organize your backlog](../backlogs/organize-backlog.md).  
-3.	Grant [Advanced access](../../organizations/security/change-access-levels.md) tadd-organization-users-from-user-hub.mdl the features available with portfolio backlogs.  
-	For **Hosted XML:**  See [Assign licenses to users](../../organizations/accounts/add-organization-users-from-user-hub.md).
+3.	Grant [Advanced access](../../organizations/security/change-access-levels.md) to users who'll need to exercise all the features available with portfolio backlogs.  
+	For **Hosted XML:**  See [Assign licenses to users](../../organizations/accounts/add-account-users-from-user-hub.md).
 
 
 <a id="import-export">  </a>

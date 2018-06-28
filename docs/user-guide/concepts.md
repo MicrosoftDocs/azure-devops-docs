@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 06/26/2018
+ms.date: 08/04/2017
 monikerRange: '>= tfs-2015'
 ---
 
@@ -90,21 +90,21 @@ You can scale the system in the following ways:
 
 To build and deploy a software application, you begin by defining a software project. Software projects differ from team projects. 
 
-A team project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to VSTS or an on-premises TFS, you connect to an organization or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
+A team project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to VSTS or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system. 
 
-When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient. However, for enterprise-level teams, it may be necessary to scale up, to create additional teams and/or team projects. These can be created within the single organization or collection. 
+When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or team projects. These can be created within the single account or collection. 
 
 <table width="100%">
 <tbody valign="top">
 <tr>
 <td width="40%">
-**Single team project, team defined within an organization/collection**  
-![Single collection-project-team conceptual image](_img/web-portal-organization-project-team-concept.png)  
+**Single team project, team defined within an account/collection**  
+![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)  
 </td>
 	
 <td width="60%">
-**Multiple team projects and teams defined within an organization/collection**   
-![Scaled collection-project-team conceptual image](_img/web-portal-organization-project-team-scale-concept.png)  
+**Multiple team projects and teams defined within an account/collection**   
+![Scaled collection-project-team conceptual image](_img/web-portal-account-project-team-scale-concept.png)  
 </td>
 </tr>
 </tbody>
@@ -131,7 +131,7 @@ You can configure and customize most elements to support your business needs or 
 
 In addition to all the pre-built functionality available to you, you can add to it in the following  ways: 
 
-- [Visual Studio Marketplace](https://marketplace.visualstudio.com) : Provides extensions that you can install either on your organization, server, or Visual Studio client 
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com) : Provides extensions that you can install either on your account, server, or Visual Studio client 
 - [Service hooks](../service-hooks/index.md): Enable you to perform tasks on other services when events happen within your team project hosted on VSTS or TFS 
 - [REST APIs](https://visualstudio.com/integrate/api/overview.md): Provide the ability to create custom extensions that plug into VSTS or TFS
 - [Visual Studio SDK](https://msdn.microsoft.com/library/bb166441.aspx): Helps you extend Visual Studio features or integrate new features into Visual Studio. You can distribute your extensions to other users, as well as to the Visual Studio Marketplace. 
