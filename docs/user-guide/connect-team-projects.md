@@ -302,7 +302,7 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 To connect to a team project, you need your organization added to the team project. This is typically done by the [organization owner (VSTS)](../organizations/accounts/add-organization-users-from-user-hub.md) or a [project administrator](../organizations/security/set-project-collection-level-permissions.md). 
 
-VSTS provides access to the first 5 organization users free. After that, you need to [pay for more users (VSTS)](../billing/buy-basic-access-add-users.md). For on-premises TFS, each organization must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
+VSTS provides access to the first 5 organization users free. After that, you need to [pay for more users (VSTS)](../organizations/billing/buy-basic-access-add-users.md). For on-premises TFS, each organization must have a TFS client access license (CAL). All Visual Studio subscriptions and paid VSTS users include a TFS CAL. Find out more about licensing from the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
 In addition, you can provide access to stakeholders in your organization who will have limited access to select features as described in [Work as a Stakeholder](../organizations/security/get-started-stakeholder.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 

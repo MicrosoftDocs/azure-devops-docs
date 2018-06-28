@@ -71,13 +71,13 @@ Help your team do more with [Marketplace extensions](https://marketplace.visuals
 For example, VSTS organization owners can
 try the Test Manager extension free for 90 days.
 During the trial, all users with Basic access can
-[try Test Manager for free](../../billing/try-additional-features-vs.md).
+[try Test Manager for free](../../organizations/billing/try-additional-features-vs.md).
 
 ## Set up billing
 
 If you need more than the free users and amounts
 of services included with your organization,
-[set up billing for your organization](../../billing/set-up-billing-for-your-organization-vs.md).
+[set up billing for your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md).
 You can then pay for more users with Basic access,
 buy more services, and purchase extensions for your organization.
 

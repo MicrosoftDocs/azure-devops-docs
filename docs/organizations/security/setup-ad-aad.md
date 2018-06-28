@@ -26,7 +26,7 @@ Use this topic to access articles that will show you how to:
 > * Set up Active Directory for use with TFS
 
 > [!NOTE]
-> Without Azure AD, all VSTS users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../../billing/set-up-billing-for-your-organization-vs.md).
+> Without Azure AD, all VSTS users must sign in using Microsoft accounts, and you must manage account access by individual user accounts. Even if you manage account access using Microsoft accounts, you need to set up an [Azure subscription in order to manage billing](../../organizations/billing/set-up-billing-for-your-organization-vs.md).
 
 ## Set up Azure Active Directory for use with VSTS or TFS
 
@@ -56,8 +56,8 @@ Use these resources to learn about installing Active Directory. Typically, you s
 ## Related articles
 
 * [About security and identity](about-security-identity.md)
-* [How billing works](../../billing/overview.md)
-* [Set up billing to pay for users, pipelines, and cloud-based load testing in VSTS](../../billing/set-up-billing-for-your-organization-vs.md) 
+* [How billing works](../../organizations/billing/overview.md)
+* [Set up billing to pay for users, pipelines, and cloud-based load testing in VSTS](../../organizations/billing/set-up-billing-for-your-organization-vs.md) 
 * [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)
 * [Get started with Azure AD](https://docs.microsoft.com/azure/active-directory/get-started-azure-ad)
  
