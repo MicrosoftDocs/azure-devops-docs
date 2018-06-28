@@ -367,7 +367,7 @@ To return to a team or project user context, select the team or project from the
 
 To connect to the web portal, you need your organization added to the team project. This is typically done by the [organization owner](../organizations/accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
 
-Five organization users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). Find out more about licensing from [VSTS pricing](https://visualstudio.microsoft.com/team-services/pricing/).
+Five organization users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../organizations/billing/buy-basic-access-add-users.md). Find out more about licensing from [VSTS pricing](https://visualstudio.microsoft.com/team-services/pricing/).
 
 ::: moniker-end
 

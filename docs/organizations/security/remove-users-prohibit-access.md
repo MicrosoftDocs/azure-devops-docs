@@ -49,7 +49,7 @@ For information on removing users from AD or Azure AD, see one of these topics:
 
 ## Reduce the number of paid users, reassign paid extensions
 
-* [Change number of users who have paid Basic access](../../billing/buy-basic-access-add-users.md)
+* [Change number of users who have paid Basic access](../../organizations/billing/buy-basic-access-add-users.md)
 * [Assign paid extension access to users for VSTS](../../marketplace/assign-paid-extensions.md)
 
 > [!NOTE]

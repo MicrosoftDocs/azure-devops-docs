@@ -67,7 +67,7 @@ For anyone to access a team project, you must add them to a security group. For 
  
 - [Account Management (VSTS)](../accounts/index.md)
 - [Server Administration (TFS)](/tfs/server/index)
-- [Billing](../../billing/index.md)
+- [Billing](../../organizations/billing/index.md)
 - [Authentication guidance for REST APIs](../../integrate/get-started/authentication/authentication-guidance.md)
 - [VSTS Data Protection Overview](../../articles/team-services-security-whitepaper.md)
 - [Technical Articles](../../articles/index.md) 

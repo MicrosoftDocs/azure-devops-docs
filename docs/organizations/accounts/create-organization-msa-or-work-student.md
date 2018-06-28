@@ -135,7 +135,7 @@ add code, work items, or more users.
 
 	> [!NOTE]
 	> If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes VSTS
-	> as a benefit, learn [how to add your work or school account](../../billing/link-msdn-subscription-to-organizational-account-vs.md) to your
+	> as a benefit, learn [how to add your work or school account](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity?view=vsts) to your
 	> subscription so you can use your subscriber benefits in VSTS.
 
 ## Try this next

@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 6/22/2018
+ms.date: 6/28/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -17,20 +17,19 @@ hide_comments: true
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Some features are linked to a blog post and/or UserVoice entry where you can learn more and comment. These features and dates are the current plans at this time and are subject to change. The planned date heading reflects when the feature will be available on Visual Studio Team Services (VSTS), the “Area” column reflects the area of the product the feature aligns with most, and the “Server” column reflects when it will be available in Team Foundation Server (TFS) on-premises, if applicable.
 
-### 2018 Q2
+### 2018 Q3
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|Visual Studio Git – Worktree support, submodules behavior like normal repos|Code|N/A|
-|Visual Studio Git – Settings for ‘fetch –prune’ and ‘pull –rebase’, as well as performance improvements|Code|N/A|
-|Git - Pull request contributors can add required reviewers to their pull request|Code|2019|
 |GVFS - Performance improvements for status|Code|2019|
-|GVFS for Mac - Public Preview|Code|N/A|
-|Filtering on the Taskboard|Work|2019|
+|Git Pull Requests – Teams aren’t added by default when creating new pull requests|Code|TBD|
+|Git Pull Requests – Change target branch for an active pull request|Code|TBD|
+|Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
+|Visual Studio Git - Stash|Code|N/A|
 |Work Item support for Markdown editing|Work|2019|
+|Cross account linking for Work Items|Work|TBD|
 |Migration from a Hosted XML processes to an Inherited process|Work|N/A|
 |Configuration as code (YAML) for builds – Generally Available|Build|2019|
-|Updated build summary and log views|Build|2019|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
 |Release Management orchestration improvements – Tag based triggers|Release|2019|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
@@ -38,49 +37,41 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
 |Updated landing pages for Release|Release|2019|
 |Canvas-based Release Summary views to track progress of releases|Release|2019|
-|Package Management – Repo, Build provenance information for a package|Package|2019|
-|Package Management – Upstreams sources for VSTS feeds across accounts with the same Azure Active Directory|Package|2019|
-|Package Management – Package consumption metrics|Package|2019|
-|Distribute tests in CI pipeline using Phases|Test|2018.2|
-|Make test platform bits xcopyable to remove VS dependency in CI/CD workflows|Test|2018.2|
-|Flaky tests - View prior failed attempts in CI/CD workflows|Test|2019|
-|View in-progress test results in CI/CD workflows|Test|2019|
-|Test insights related to Top failing tests & Long running tests at a Build definition level|Test|2019|
-|Microsoft Teams – Embed VSTS Dashboard in Channel|Reporting|2019|
-|Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
-|Dashboards – Charts for Work Items Widget based on Analytics|Reporting|2019|
-|Dashboards – Create dashboard separate from a team|Reporting|2019|
-|Analytics – Automated Test data|Reporting|2019|
-|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
-|[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
-|Publisher certification process|Marketplace|N/A|
-|CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
-|Notification feed|Notifications|2019|
-
-### 2018 Q3
-
-|Feature  |Area  |Server  |
-|---------|---------|---------|
-|Git Pull Requests – Teams aren’t added by default when creating new pull requests|Code|TBD|
-|Git Pull Requests – Change target branch for an active pull request|Code|TBD|
-|Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
-|A discussion-centric Work Item form|Work|TBD|
-|Cross account linking for Work Items|Work|TBD|
 |Deployment Groups easy configuration of Azure VMs|Release|TBD|
 |Extend release gates – Test|Release|TBD|
 |Release traceability – Work Item integration|Release|TBD|
 |Configuration as code (YAML) releases - Public Preview|Release|TBD|
+|Package Management – Repo, Build provenance information for a package|Package|2019|
+|Package Management – Upstreams sources for VSTS feeds across accounts with the same Azure Active Directory|Package|2019|
+|Package Management – Package consumption metrics|Package|2019|
 |Package Management – Maven Upstream support|Package|TBD|
+|PyPI (Python ecosystem) package hosting and upstream sources|Package|TBD|
+|Universal Packages (“versioned bunch of files”) hosting|Package|TBD|
+|Analytics - Test Failures report for Build pipelines|Test|2019|
+|Analytics - Test Failures report for Release pipelines|Test|2019|
+|Microsoft Teams – Embed VSTS Dashboard in Channel|Reporting|2019|
+|Dashboards – Trend Charts for Work Items - based on Analytics|Reporting|2019|
+|Dashboards – Create dashboard separate from a team|Reporting|2019|
+|[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
+|[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
 |[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
 |[Azure Active Directory users in Microsoft Account-backed account](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
 |Connect your VSTS account to Azure Active Directory from within VSTS|Admin|N/A|
-|Release views – support for multiple versions of extensions|Marketplace|N/A|
+|Publisher certification process|Marketplace|N/A|
+|CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
+|Notification feed|Notifications|2019|
 
 ### 2018 Q4
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
+|GVFS for Mac - Public Preview|Code|N/A|
+|A discussion-centric Work Item form|Work|TBD|
+|TFS Support for Move work item to another team project / Change work item type|Work|2019|
 |Extensible Pool Providers|Build|TBD|
+|Upstreams sources for VSTS feeds across accounts in an “organization”|Package|TBD|
+|Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
+|Analytics - Available for TFS|Reporting|2019|
 |[Bring multiple accounts under and “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 
 ## Current features
@@ -114,8 +105,8 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>GitHub artifacts show associated commits deployed in a release</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Use upstream sources in legacy feeds</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Use arbitrary public npm feeds as upstream sources</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
-        <tr><td>Improved experiences in the Test tab</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr> 
-        <tr><td>Exclude items completed before a certain date in analytics views</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr> 
+        <tr><td>Improved experiences in the Test tab</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
+        <tr><td>Exclude items completed before a certain date in analytics views</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Easily navigate to dashboards</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr><td>Get notified for PAT expirations</td><td style="background:rgb(232, 232, 232);">*2019*</td></tr>
         <tr>
@@ -942,7 +933,7 @@ Versions in the “Server” column are linked to the appropriate download locat
 		        <tr>
             <td>Setup Power BI Content Pack</td>
             <td style="background:rgb(232, 232, 232);">N/A</td>
-        </tr>      
+        </tr>
         <tr>
             <td rowspan="19">[1 Jun 2017](2017/jun-01-team-services.md)</td>
             <td>Mobile work item form general availability</td>

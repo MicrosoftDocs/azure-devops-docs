@@ -40,7 +40,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 ## Prerequisites
 
 As the VSTS [organization owner or project collection administrator](vsts-billing-faq.md#find-owner), you can start trials for your VSTS organization. 
-All other users can [request extensions](../marketplace/install-vsts-extension.md).
+All other users can [request extensions](../../marketplace/install-vsts-extension.md).
 
 ## Start a trial for your VSTS organization
 
@@ -71,13 +71,13 @@ There's no penalty for buying early; charges don't start until the trial ends.
 
 If you lose access because the trial expired before you could purchase, just buy and assign like you would if you weren't doing a trial:
 
-1. [Buy the extension](../marketplace/install-vsts-extension.md#install-extension) for your users.
+1. [Buy the extension](../../marketplace/install-vsts-extension.md#install-extension) for your users.
 
     To buy the extension, you can also go to the extension pane in your organization.
 
     ![Users hub, extension pane](_img/try-additional-features/extension-trial-in-organization-updated-ui.png)
 
-2. [Assign the extension](../marketplace/assign-paid-extensions.md) to the users who need it.
+2. [Assign the extension](../../marketplace/assign-paid-extensions.md) to the users who need it.
 
 ## Clean up resources
 
