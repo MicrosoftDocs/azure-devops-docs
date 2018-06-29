@@ -5,7 +5,7 @@ ms.topic: include
 
 To track the progress of a single pull request, click the ![Follow icon](/vsts/work/_img/icons/follow-icon.png) option from the context menu. This signals the system to notify you when changes are made to the PR.  
 
-![Pull Request, context menu, Follow icon option](/vsts/work/backlogs/_img/follow-pull-request.png)  
+![Pull Request, context menu, Follow icon option](/vsts/work/track/_img/follow-pull-request.png)  
 
 > [!IMPORTANT]
 >For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.  

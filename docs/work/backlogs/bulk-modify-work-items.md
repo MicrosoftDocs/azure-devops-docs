@@ -267,7 +267,7 @@ To add fields or customize a work item form, see [Customize your work tracking e
  
 ### Migrate or change a large number of work items 
 
-For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://visualstudio.microsoft.com/en-us/docs/integrate/api/wit/batch). 
+For large scale, organizational moves, use the REST API calls for [Work item batch operations](/vsts/integrate/previous-apis/wit/batch). 
 
 At this time, you can't move work items to a different organization or collection. You can only migrate work item information by exporting and then importing them using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 

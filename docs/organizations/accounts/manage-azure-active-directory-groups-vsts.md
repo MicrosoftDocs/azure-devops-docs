@@ -104,8 +104,8 @@ or display name. Then select it. You can get more details about a group and its 
 
     ![Browse directory for groups](_img/manage-azure-ad-groups/addaadgrouppanelbrowse.png)
     
-    You [invite guests into your Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) 
-    and into your Azure AD backed VSTS organizations, without waiting for them 
+    You [invite guests into your Azure Active Directory](https://blogs.msdn.microsoft.com/devops/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts/) 
+    and into your Azure Active Directory backed VSTS organizations, without waiting for them 
     to accept, which in turn allows you 
     to add those guests to your organization, grant access to projects, assign extensions, etc.
 
