@@ -46,6 +46,7 @@
   "need_preview_pull_request": true,
   "enable_incremental_build": false,
   "need_pr_comments": false,
+  "resolve_user_profile_using_github": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
