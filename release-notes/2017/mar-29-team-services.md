@@ -92,7 +92,7 @@ If you are looking for more flexibility, such as a task to run only for certain 
 and(failed(), eq(variables['Build.Reason'], 'PullRequest'))
 ```
 
-See [Specify conditions for running a task](https://visualstudio.microsoft.com/en-us/docs/build/concepts/process/conditions).
+See [Specify conditions for running a task](/vsts/build/concepts/process/conditions).
 
 ##Package Management adds npm READMEs and download button
 You can now see the README of any npm package that includes a README.md in the package. READMEs can help your team document and share knowledge about your packages.
@@ -102,7 +102,7 @@ You can also download any npm package using the __Download__ button in the comma
 ![npm readme](_img/03_29_13.png)
 
 ##Updated Package Management experience available to all accounts
-After some additional tuning and some bug fixes, we’ve made the [updated __Package Management__ experience](https://visualstudio.microsoft.com/en-us/articles/news/2017/feb-15-team-services#updated-package-management-experience) available to all accounts. Learn more about the update [here](https://visualstudio.microsoft.com/en-us/docs/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
+After some additional tuning and some bug fixes, we’ve made the [updated __Package Management__ experience](../2017/feb-15-team-services#updated-package-management-experience) available to all accounts. Learn more about the update [here](/vsts/package/preview/updated-experience), or turn it on using the toggle in the __Packages__ hub.
 
 ![package experience](_img/03_29_14.png)
 
@@ -132,7 +132,7 @@ Users can now post questions for any extension on the [__Marketplace__](https://
 ![marketplace qa](_img/03_29_09.png)
 
 ##Enhancements to display publisher’s terms, license, and privacy policy in Marketplace
-It is now mandatory for all paid extensions on [__Marketplace__](https://marketplace.visualstudio.com/) to have a License and Privacy Policy. The License and Privacy Policy can be defined in the manifest file under the links property. More details are available at https://visualstudio.microsoft.com/en-us/docs/integrate/extensions/develop/manifest.
+It is now mandatory for all paid extensions on [__Marketplace__](https://marketplace.visualstudio.com/) to have a License and Privacy Policy. The License and Privacy Policy can be defined in the manifest file under the links property. More details are available at https://docs.microsoft.com/vsts/integrate/extensions/develop/manifest.
 
 The License and Privacy Policy is also available in the __extension details__ page and presented when the user downloads the extension.
 
