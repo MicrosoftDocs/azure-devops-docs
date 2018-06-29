@@ -922,7 +922,7 @@
     },
     {
       "source_path": "docs/work/connect/work-as-a-stakeholder.md",
-      "redirect_url": "/vstsorganizations/security/get-started-stakeholder",
+      "redirect_url": "/vsts/organizations/security/get-started-stakeholder",
       "redirect_document_id": false
     },
     {
@@ -1222,7 +1222,7 @@
     },
     {
       "source_path": "docs/collaborate/naming-restrictions.md",
-      "redirect_url": "/vsts/organization/settings/naming-restrictions",
+      "redirect_url": "/vsts/organizations/settings/naming-restrictions",
       "redirect_document_id": false
     },
     {
@@ -2562,17 +2562,17 @@
     },
     {
       "source_path": "docs/insights/app-insights-java.md",
-      "redirect_url": "/azure/application-insights/app-insights-java/",
+      "redirect_url": "/azure/application-insights/app-insights-java-quick-start/",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/insights/application-insights.md",
-      "redirect_url": "/azure/application-insights/application-insights/",
+      "redirect_url": "/azure/application-insights/",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/insights/asp-insights-ios-android.md",
-      "redirect_url": "/azure/application-insights/asp-insights-ios-android",
+      "redirect_url": "/azure/application-insights/app-insights-mobile-center-quickstart/",
       "redirect_document_id": false
     },
     {
@@ -3442,12 +3442,12 @@
     },
     {
       "source_path": "docs/design/overview.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-upgrade",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/design/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-upgrade",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
       "redirect_document_id": false
     },
     {
