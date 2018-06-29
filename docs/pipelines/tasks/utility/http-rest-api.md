@@ -9,20 +9,24 @@ ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
 ms.date: 04/09/2018
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2018'
 ---
 
 # Utility: Invoke REST API
 
-**VSTS**
-
 ![icon](_img/http-rest-api.png) &nbsp; Invoke an HTTP API and parse the response.
+
+::: moniker range="tfs-2018"
+
+This task is available in both builds and releases in TFS 2018.2 In TFS 2018 RTM, this task is available only in releases.
+
+::: moniker-end
 
 ## Demands
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
+This task can be used in only an [agentless phase](../../process/server-phases.md).
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

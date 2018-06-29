@@ -6,7 +6,6 @@ ms.manager: douge
 ms.topic: article
 ms.author: elbatk
 author: elbatk
-author: none
 ms.date: 09/29/2016
 ms.prod: devops
 ms.technology: devops-ecosystem
