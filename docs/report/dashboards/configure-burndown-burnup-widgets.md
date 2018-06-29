@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'vsts'
-ms.date: 03/20/2018 
+ms.date: 06/30/2018 
 ---
 
 
@@ -114,6 +114,9 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-wit.md).   
 	![Burndown Widget - Configuration - Select work item types](./_img/burndown-widget/burndownup-config-select-work-item-type.png)  
 
+   > [!NOTE]   
+   > When setting filters in this step or the following step, it is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../analytics/analytics-historical-filtering.md) for more information.
+
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
 	You can filter by any field available in your team project, even a specific tag.   For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
 	![Burndown Widget - Configuration - Select field criteria](./_img/burndown-widget/burndownup-config-select-field-criteria.png)  
@@ -186,7 +189,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 Check the boxes of the following options that you want to add to your chart.    
 * **Show burndown**: Displays both the historical and projected future burndown
 * **Show total scope**: Displays both the historical and projected scope increase
-* **Show completed work**: In addition to remaining work, it also displays completed work as a stack bar
+* **Show completed work**: In addition to remaining work, it also displays completed work as as stack bar
 * **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.
 
 ## Interpret a Burndown or Burnup widget chart
