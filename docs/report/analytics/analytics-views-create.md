@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'vsts'
-ms.date: 04/04/2018
+ms.date: 06/30/2018 
 ---
 
 
@@ -103,6 +103,9 @@ Specify filters to reduce the number of results returned by your view. In the wo
 
 	For details about working with tags, see [Add work item tags to categorize and filter lists and boards](../../work/track/add-tags-to-work-items.md).
 
+   > [!NOTE]   
+   > It is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../analytics/analytics-historical-filtering.md) for more information.
+
 <a id="select-fields" />
 ### 3. Select the fields to appear in the report
 
@@ -141,7 +144,7 @@ For a snapshot of the current status, choose **Current only**. For trend charts,
 > | **Current only** | Choose this option when you want a snapshot of work item status. Generates a single row per work item matching the work item's latest values in the Analytics data store. |
 > | **Rolling period** | Choose this option and enter the number of days previous to the current day to include in the dataset. The sliding window changes each time you refresh your report. |
 > | **Date range** | Choose this option and select a specific start and end date to include in the dataset, or check the to present checkbox to specify a rolling window with no fixed end date. When you check **to present**, the end date corresponds to the day the reports is refreshed. If you uncheck it, the end date is always the date selected on the end date field. |
-> | **All history** | Choose this option to include the complete history for all work items you€™ve selected in your filter criteria. If you have a significant history, specify a Weekly or Monthly granularity.|
+> | **All history** | Choose this option to include the complete history for all work items you've selected in your filter criteria. If you have a significant history, specify a Weekly or Monthly granularity.|
 
 #### Granularity
 
@@ -154,6 +157,8 @@ You can choose to get a snapshot of every work item for each day, week, or month
 > | **Weekly** | Generates a row per work item showing the data per week taken on the day that represents the week (defaults to Saturday). | 
 > | **Monthly** | Generates a row per work item showing the data for the last day of each month. | 
 
+> [!NOTE]   
+> It is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../analytics/analytics-historical-filtering.md) for more information.
 
 <a id="verify-and-save" />
 ### 5. Verify and save the view
