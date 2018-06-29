@@ -7,8 +7,8 @@ ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
 ms.manager: douge
 monikerRange: 'vsts'
-ms.author: wismythe/smithasa
-author: wismythe/smithasa
+ms.author: wismythe
+author: willsmythe
 ms.date: 06/21/2018
 ---
 
