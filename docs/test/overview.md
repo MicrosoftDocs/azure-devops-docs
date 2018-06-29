@@ -60,7 +60,7 @@ the Work hub. Add, view, and interact with test cases directly
 from the cards on the Kanban board, and then progressively monitor
 status directly from the card. Developers and testers can use these
 rich capabilities to simplify maximizing quality within their teams.
-In VSTS, you need just [Basic access](../organizations/billing/buy-basic-access-add-users.md)
+In VSTS, you need just [Basic access](../billing/buy-basic-access-add-users.md)
 to use these features. See more at [Add, run, and update inline tests](../work/kanban/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json).
 
 ![Managing manual tests from the Kanban board](_img/manual-testing/kanban-board-01.png)

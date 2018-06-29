@@ -1,5 +1,5 @@
 ---
-title: Find an admin or organization owner for VSTS or TFS
+title: Find an admin or account owner for VSTS or TFS
 description: Steps for how to look up users who can help you gain access or change your permissions, project collection admin or project owner 
 ms.prod: devops
 ms.technology: devops-security
@@ -11,11 +11,11 @@ ms.topic: quickstart
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---
-# Quickstart: Look up the organization owner or a project administrator
+# Quickstart: Look up the account owner or a project administrator
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-When you need to have your permissions changed or you need to get access to select features or functions, you may need to find out who can grant them. Usually it is an administrator or the organization owner.
+When you need to have your permissions changed or you need to get access to select features or functions, you may need to find out who can grant them. Usually it is an administrator or the account owner.
 
 For an overview of built-in security groups and default permission assignments, see [Default permissions and access](permissions-access.md).
 
@@ -49,17 +49,17 @@ To find out who is a member, check the Security settings at the collection level
 
 <a name="find-owner"></a>
 
-## Look up the organization owner 
+## Look up the account owner 
 
-0.	Open the admin context for your organization.  
+0.	Open the admin context for your account.  
 
-	<img alt="Go to organization settings" src="../../_shared/_img/organization-settings-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
+	<img alt="Go to account settings" src="../../_shared/_img/account-settings-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
 
 0.	Under **Settings**, find the current owner.
 
-	<img alt="Find current owner" src="../../_shared/_img/organization-owner-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
+	<img alt="Find current owner" src="../../_shared/_img/account-owner-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
 
-	To change the organization owner, see [Change organization ownership](../accounts/change-organization-ownership-vs.md). 
+	To change the account owner, see [Change account ownership](../accounts/change-account-ownership-vs.md). 
 
 ::: moniker-end
 

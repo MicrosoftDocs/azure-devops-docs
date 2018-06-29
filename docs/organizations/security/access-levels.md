@@ -24,7 +24,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 To add user accounts or groups to specific access levels, see the following topics: 
 
-- For VSTS: [Manage users and access in VSTS](../accounts/add-organization-users-from-user-hub.md)
+- For VSTS: [Manage users and access in VSTS](../accounts/add-account-users-from-user-hub.md)
 - For on-premises TFS: [Change access levels](change-access-levels.md). 
 
 When you add a user or group to a team or team project, they're automatically granted access to those features supported by the default access level, which is Basic. This provides most users all the features they need. For a simplified overview of the permissions assigned to the most common groups&#151;Readers, Contributors, and Project Administrators&#151;as well as the Stakeholder access group, see [Permissions and access](permissions-access.md).  
@@ -74,7 +74,7 @@ For TFS 2017.2, Assign **Advanced** access to those users for whom you've purcha
 **TFS 2017.1**
 
 > [!NOTE]   
-> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open the **Users** hub for the project collections in which they are a member and [assign them the Test Manager extension](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or the TFS Test hub](../billing/buy-access-tfs-test-hub.md). 
+> With TFS 2017.1, the Advanced access level was temporarily disabled. Updating to TFS 2017.2 will re-enable it. If you are on TFS 2017.1 and have users with Visual Studio Test Professional or MSDN Platforms subscriptions, you should assign them Basic access level. In addition, you need to open the **Users** hub for the project collections in which they are a member and [assign them the Test Manager extension](../../marketplace/assign-paid-extensions.md). To learn more, see [Buy access to TFS or the TFS Test hub](../../billing/buy-access-tfs-test-hub.md). 
 
 **TFS 2017, TFS 2015, TFS 2013**
 
@@ -101,7 +101,7 @@ Service accounts don't require a TFS CAL or other purchase.
 
 ## Related notes  
 
-- [Manage users and access in VSTS](../accounts/add-organization-users-from-user-hub.md)
+- [Manage users and access in VSTS](../accounts/add-account-users-from-user-hub.md)
 - [Change access levels (TFS)](change-access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access for VSTS and TFS](permissions-access.md)
