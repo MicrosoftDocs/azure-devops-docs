@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2018'
 The pull request (PR) workflow provides developers with an opportunity to get feedback on their code from peers as well as from automated tools. 3rd party tools and services can participate in the PR workflow by using the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107). This article guides you through the process of creating a status server to validate PRs in a VSTS Git repository. For more information about PR status, see [Customize and extend pull request workflows with pull request status](../concepts/pull-request-status.md).
 
 ## Prerequisites
-* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
+* A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../organizations/accounts/create-account-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
 * Install [VS Code](http://code.visualstudio.com/Docs/setup) or other code editor of your choice. The instructions in this guide use VS Code but the steps in other code editors are similar.
 
 ## Install Node.js

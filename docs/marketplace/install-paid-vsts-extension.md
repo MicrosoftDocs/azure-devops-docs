@@ -24,7 +24,7 @@ This Quickstart covers the following steps of buying an extension in Visual Stud
 The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
 0. [VSTS project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
-0. [The **owner** or **contributor** role on your Azure subscription](../organizations/billing/add-backup-billing-managers.md)
+0. [The **owner** or **contributor** role on your Azure subscription](../billing/add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
 
@@ -87,9 +87,9 @@ To assign extensions, you'll need VSTS [project collection administrator or acco
 ## Related information
 
 - [Troubleshoot installing extensions](faq-extensions.md)
-- [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
-- [Add backup billing managers](../organizations/billing/add-backup-billing-managers.md)
-- [Change the Azure subscription for billing](../organizations/billing/change-azure-subscription.md)
-- [VSTS billing FAQ](../organizations/billing/vsts-billing-faq.md)
+- [Set up billing](../billing/set-up-billing-for-your-organization-vs.md)
+- [Add backup billing managers](../billing/add-backup-billing-managers.md)
+- [Change the Azure subscription for billing](../billing/change-azure-subscription.md)
+- [VSTS billing FAQ](../billing/vsts-billing-faq.md)
 - [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 - [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)
