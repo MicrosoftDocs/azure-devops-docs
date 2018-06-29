@@ -529,7 +529,7 @@ Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 ![Date-Time control, Calendar field](_img/weblayout-date-time-control.png)   
 <pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
 Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
-<blockquote>**Note:**The date-time format displayed matches the [user profile account preferences](/vsts/organizations/accounts/account-preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
+<blockquote>**Note:**The date-time format displayed matches the [user profile account preferences](/vsts/organizations/settings/set-user--preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
 </blockquote>
 </td>
 </tr>

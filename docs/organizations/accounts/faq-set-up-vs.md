@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot setting up Visual Studio with VSTS
-description: Having problems installing, signing in, creating an organization, or expired subscription? Read these frequently asked questions and answers 
+description: Having problems installing, signing in, creating an account, or expired subscription? Read these frequently asked questions and answers 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
@@ -36,7 +36,7 @@ learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.
 *	Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, 
-you can also create a VSTS organization. 
+you can also create a VSTS account. 
 
 Learn more about 
 [the benefits of signing in and creating a profile](https://msdn.microsoft.com/library/dn457348.aspx). 
@@ -70,7 +70,7 @@ A:	Learn more about:
 
 *	[Installing Visual Studio](https://msdn.microsoft.com/en-us/library/e2h7fzkw.aspx).
 *	[Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
-*	[Managing multiple user organizations](https://msdn.microsoft.com/en-us/library/dn872465.aspx).
+*	[Managing multiple user accounts](https://msdn.microsoft.com/en-us/library/dn872465.aspx).
 
 Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
 
@@ -78,29 +78,29 @@ Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/su
 
 <a name="WhatIsVSO"></a>
 
-### Q: How can I create a VSTS organization later?
+### Q: How can I create a VSTS account later?
 
-A:	Learn how to [sign up for VSTS](create-organization-msa-or-work-student.md).
+A:	Learn how to [sign up for VSTS](create-account-msa-or-work-student.md).
 
 <a name="browser-problems"></a>
 
 [!INCLUDE [browser-problems](../../_shared/qa-browser-problems.md)]
 
-[!INCLUDE [find-organization-name](../../_shared/qa-find-organization-name.md)]
+[!INCLUDE [find-account-name](../../_shared/qa-find-account-name.md)]
 
 [!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
 
 <a name="change-location"></a>
 
-### Q: Can I change my VSTS organization location?
+### Q: Can I change my VSTS account location?
 
 A:	Yes, for a better experience, 
-you can change your organization's location during sign up
-so that your organization is closest to most users.
+you can change your account's location during sign up
+so that your account is closest to most users.
 
-![Change organization location](_img/set-up-vs/change-location.png)
+![Change account location](_img/set-up-vs/change-location.png)
 
-Your organization's default location is selected based on the closest 
+Your account's default location is selected based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
 where VSTS is available. 
 
@@ -108,8 +108,8 @@ where VSTS is available.
 
 [!INCLUDE [team-services-sla](../../_shared/qa-vsts-sla.md)]
 
-[!INCLUDE [change-organization-name-owner](../../_shared/qa-change-organization-name-owner.md)]
+[!INCLUDE [change-account-name-owner](../../_shared/qa-change-account-name-owner.md)]
 
-[!INCLUDE [delete-organization](../../_shared/qa-delete-organization.md)]
+[!INCLUDE [delete-account](../../_shared/qa-delete-account.md)]
 
 [!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]

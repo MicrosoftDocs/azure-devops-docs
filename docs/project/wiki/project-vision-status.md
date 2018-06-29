@@ -166,7 +166,7 @@ You can change the repository used to support your project vision, including poi
 ## Related articles  
 
 - [Markdown guidance](../../project/wiki/markdown-guidance.md) 
-- [Work effectively from your account hub](../../user-guide/organization-home-pages.md)
+- [Work effectively from your account hub](../../user-guide/account-home-pages.md)
 
 
  

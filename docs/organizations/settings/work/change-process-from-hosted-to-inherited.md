@@ -5,8 +5,7 @@ description: Upgrade a project that uses a Hosted XML process model to an inheri
 ms.technology: devops-agile
 ms.prod: devops
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 robots: NOINDEX, NOFOLLOW
@@ -32,15 +31,15 @@ Once you've [upgraded your Hosted XML process to an inherited process](upgrade-h
 
 You create, manage, and make customizations to processes from the **Settings>Process** hub. 
 
-0. To open the admin context from the user context, choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Organization settings**. 
+0. To open the admin context from the user context, choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Account settings**. 
 	
 	> [!div class="mx-imgBorder"]  
-	> ![VSTS web portal, open Organization Settings](_img/process/open-organization-settings.png)
+	> ![VSTS web portal, open Account Settings](_img/process/open-account-settings.png)   
 
 0. Choose **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Organization Settings context, Process page](_img/process/open-process-page.png) 
+	> ![Account Settings context, Process page](_img/process/open-process-page.png) 
 
 
 <a id="change-inherited-process"></a>

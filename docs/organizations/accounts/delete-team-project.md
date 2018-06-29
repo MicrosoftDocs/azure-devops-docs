@@ -24,7 +24,7 @@ Delete a team project from VSTS or from an on-premises deployment of Team Founda
 
 ## Delete a team project from VSTS
 
-1. Open the administration console for the team project collection by choosing the ![gear icon image](_img/delete-team-project/ic623347.png) gear icon and then choosing **Organization settings**.
+1. Open the administration console for the team project collection by choosing the ![gear icon image](_img/delete-team-project/ic623347.png) gear icon and then choosing **Account settings**.
 
    >[!div class="mx-imgBorder"]
    ![open-admin-console-team-services](_img/delete-team-project/open-admin-console-team-projects.PNG)

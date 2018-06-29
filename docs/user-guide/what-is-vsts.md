@@ -6,7 +6,7 @@ ms.technology: devops-new-user
 ms.assetid: 4 
 ms.manager: douge
 ms.author: kaelli
-ms.date: 06/26/2018
+ms.date: 06/22/2017
 ms.topic: overview
 ---
 
@@ -31,7 +31,7 @@ Choose VSTS when you want quick setup, maintenance-free operations, easy collabo
 
 We've made it easy for you to start for free and try out our service. 
 
-Sign up for free by creating an organization and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods. 
+Sign up for free by creating an account and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods. 
 
 [![Sign up for VSTS](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md) 
 
