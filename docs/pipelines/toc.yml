@@ -58,10 +58,10 @@
     href: apps/cd/deploy-webdeploy-iis-deploygroups.md
 - name: Tutorials
   items:
-  - name: CI builds for Git in VSTS
-    href: build/ci-build-git.md
-  - name: CI builds for GitHub repo
+  - name: Build your GitHub repo
     href: build/ci-build-github.md
+  - name: Build multiple branches
+    href: build/ci-build-git.md
   - name: Set up multi-stage release
     href: release/define-multistage-release-process.md
   - name: Use approvals and gates
