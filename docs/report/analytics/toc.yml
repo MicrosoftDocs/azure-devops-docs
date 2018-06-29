@@ -34,6 +34,8 @@
     href: analytics-widgets-vsts.md
   - name: Default Analytics views
     href: analytics-default-views.md
+  - name: Filters applied to historical data
+    href: analytics-historical-filtering.md
   - name: Performance and latency
     href: performance-latency.md
 - name: How-to Guides

@@ -6,7 +6,6 @@ ms.manager: andrusj
 ms.topic: article
 ms.author: elbatk
 author: elbatk
-author: none
 ms.date: 02/10/2017
 ms.prod: devops
 ms.technology: devops-ecosystem

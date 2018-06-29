@@ -7,7 +7,7 @@ ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.manager: douge
 ms.author: amullans
-author: amullans
+author: alexmullans
 ms.date: 5/11/2018
 monikerRange: '>= tfs-2018'
 ---
