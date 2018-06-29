@@ -201,19 +201,15 @@ If your code is in a Git repo on VSTS or Team Foundation Server, you can create 
 
 ### My build didn't run. What happened?
 
-If your build is in VSTS, then at least one of your users must sign in regularly for CI and scheduled builds to run. Your VSTS account goes dormant five minutes after the last user signed out. After that, each of your build definitions will run one more time.
+Someone must view a page in your VSTS account regularly for CI and scheduled builds to run. It can be any page, including, for example, the **Build and release** hub. 
 
-For example, while your account is dormant:
+Your VSTS account goes dormant five minutes after the last user signed out. After that, each of your build definitions will run one more time. For example, while your account is dormant:
 
  * A nightly build of code in your VSTS account will run only one night until someone signs in again.
 
  * CI builds of an external Git repo will stop running until someone signs in again.
 
 ::: moniker-end
-
-### Can I chain builds so that one build triggers another?
-
-Not yet. See [User Voice: Provide build configuration dependencies in TFS Build](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/2165043-provide-build-configuration-dependencies-in-tfs-bu).
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 
