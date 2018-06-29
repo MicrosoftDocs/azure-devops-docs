@@ -38,7 +38,7 @@ You can change the name of a team project from its administration overview page.
 
 You can also change the name of a team project from the project collection administration page.
 
-1. From your organization home page, use the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon to open the control panel and then go to the project collection administration page.
+1. From your account's home page, use the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon to open the control panel and then go to the project collection administration page.
 
 2. Rename the team project from its context menu.
 

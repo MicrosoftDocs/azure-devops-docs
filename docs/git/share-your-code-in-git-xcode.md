@@ -20,7 +20,7 @@ This guide shows you how to share your Xcode projects in a VSTS Git repo.
 
 ## Prerequisites
 
-* A VSTS account. If you don't have one, you can [sign up](../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don't have one, you can [sign up](../organizations/accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ## Create a local Git repo for your Xcode project
 

@@ -42,7 +42,7 @@ To manage notifications, see:
 
 ## Related articles
 
-- [Work effectively from your account hub](../../user-guide/organization-home-pages.md)
+- [Work effectively from your account hub](../../user-guide/account-home-pages.md)
 - [Add a team administrator](../../work/scale/add-team-administrator.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md)
 

@@ -71,14 +71,14 @@ then enter your password.
 
 0.	Add your Visual Studio profile details. You only have to do this once. 
 
-	![Create your profile](_img/set-up-vs/profile-organization-details.png)
+	![Create your profile](_img/set-up-vs/profile-account-details.png)
 
-0.	Give your VSTS organization a name, 
+0.	Give your VSTS account a name, 
 and confirm its location. 
 
-	![Name your organization, confirm its location](_img/set-up-vs/profile-organization-details2.png)
+	![Name your account, confirm its location](_img/set-up-vs/profile-account-details2.png)
 
-	[How can I create a VSTS organization later](faq-set-up-vs.md#WhatIsVSO) or [change its location?](faq-set-up-vs.md#change-location)
+	[How can I create a VSTS account later](faq-set-up-vs.md#WhatIsVSO) or [change its location?](faq-set-up-vs.md#change-location)
 
 0.	Create your first team project to store your code, 
 work items, backlog, builds, tests, and other assets. 
@@ -101,14 +101,14 @@ or change them later in Visual Studio options.
 	These changes are saved with your profile, 
 	and your settings roam with you wherever you sign in. 
 
-0.	To view your new VSTS organization, 
-	sign in to ```https://{yourorganization}.visualstudio.com```. 
+0.	To view your new VSTS account, 
+	sign in to ```https://{youraccount}.visualstudio.com```. 
 
     [Having browser problems with VSTS?](faq-set-up-vs.md#browser-problems)
 
 ####	Next
 
-*	[Add users to your VSTS organization](add-organization-users-from-user-hub.md)
+*	[Add users to your VSTS account](add-account-users-from-user-hub.md)
 
 *	Add code to [Git](../../git/share-your-code-in-git-vs.md) 
 or [Team Foundation](../../tfvc/share-your-code-in-tfvc-vs.md) version control

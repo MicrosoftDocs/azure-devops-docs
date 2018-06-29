@@ -5,8 +5,7 @@ ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: reference
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
@@ -25,6 +24,6 @@ For an overview of dashboard and chart features, see [Dashboards, charts, & widg
 
 
 ## Related notes
-organization-home-pages.md
-- [Work effectively from your organization hub](../../user-guide/organization-home-pages.md)
+
+- [Work effectively from your account hub](../../user-guide/account-home-pages.md)
 - [Add a team administrator](../../work/scale/add-team-administrator.md) 

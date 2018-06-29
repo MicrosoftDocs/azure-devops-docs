@@ -38,10 +38,10 @@ Notifications are sent by default to the preferred email address for your accoun
 <!---
  Change profile settings (TFS)    
 
-![TFS, My Profile link on Organization menu](../organizations/accounts/_img/organization-prefs/open-profile.png)  
+![TFS, My Profile link on Account menu](../organizations/accounts/_img/account-prefs/open-profile.png)  
 
 Click edit to change a setting. Choose the Locale tab to change a locale preference.  
 
-![TFS, Set preferences](../organizations/accounts/_img/account-prefs/organization-prefs-tfs-user-profile.png)
+![TFS, Set preferences](../organizations/accounts/_img/account-prefs/account-prefs-tfs-user-profile.png)
 
 -->

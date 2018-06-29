@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot adding and deleting organization users in the VSTS user hub
-description: Permissions required to manage users and user access, find project collection administrator or organization owner, manage Visual Studio subscriptions
+title: Troubleshoot adding and deleting account users in the VSTS user hub
+description: Permissions required to manage users and user access, find project collection administrator or account owner, manage Visual Studio subscriptions
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 7107fb6c-c132-45c2-a0d1-d44e9270e907
@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 
 
-# Troubleshoot adding and deleting organization users in the VSTS user hub
+# Troubleshoot adding and deleting account users in the VSTS user hub
 
 **VSTS**
 
@@ -22,14 +22,14 @@ monikerRange: 'vsts'
 #### Q: Why can't I manage users?
 
 A:  To access the Users hub and manage users, you must have 
-[VSTS project collection administrator or organization owner permissions](#find-owner).
+[VSTS project collection administrator or account owner permissions](#find-owner).
 
 
 <a name="find-owner"></a>
 
 [!INCLUDE [find-project-collection-administrator](../../_shared/qa-find-project-collection-administrator.md)]
 
-[!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
+[!INCLUDE [find-account-owner](../../_shared/qa-find-account-owner.md)]
 
 
 <a name="users-delay"></a>
@@ -92,12 +92,12 @@ and will transition users automatically. While Visual Studio Online Professional
 purchases now appear as Visual Studio Professional monthly subscriptions on your monthly invoice, 
 we haven't determined when users will be transitioned systematically. 
 This transition provides an upgrade by offering access to unlimited 
-VSTS organizations, not just one organization, like Visual Studio Online Professional. 
+VSTS accounts, not just one account, like Visual Studio Online Professional. 
 The rest stays the same - monthly access to the Visual Studio Professional IDE, 
 and pricing remains at $45 per user, per month.
 Learn more about [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/how-to-buy-vs).
 
-If you're buying Professional users for a specific VSTS organization,
+If you're buying Professional users for a specific VSTS account,
 which is possible only if you bought before November 2015,
 and want to upgrade, do this:
 	
@@ -117,7 +117,7 @@ Learn [how to buy Visual Studio subscriptions](https://docs.microsoft.com/visual
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 
-	[Learn more](../../organizations/billing/vsts-billing-faq.md).
+	[Learn more](../../billing/vsts-billing-faq.md).
 
 
 ## User access
@@ -125,12 +125,12 @@ Learn [how to buy Visual Studio subscriptions](https://docs.microsoft.com/visual
 #### Q: What does *Last Access* mean in the All Users view?
 
 Last Access is the last date a user accessed any VSTS resources or services. Accessing VSTS includes using 
-*organizationname*.visualstudio.com directly as well as using resources or services indirectly, such as using the Package Management 
+*accountname*.visualstudio.com directly as well as using resources or services indirectly, such as using the Package Management 
 service from a build definition or pushing code to VSTS from a git command line or from an IDE.
 
-<a name="paid-basic-access-join-other-organizations"></a>
+<a name="paid-basic-access-join-other-accounts"></a>
 
-[!INCLUDE [can-paid-Basic-users-join-other-organizations](../../_shared/qa-can-paid-basic-users-join-other-organizations.md)]
+[!INCLUDE [can-paid-Basic-users-join-other-accounts](../../_shared/qa-can-paid-basic-users-join-other-accounts.md)]
 
 <a name="feature-access"></a>
 
@@ -155,18 +155,18 @@ including Visual Studio subscriptions.
 To fix this problem, visit the [Azure account portal](https://portal.azure.com).
 
 *	The Azure subscription used for billing was 
-unlinked from your VSTS organization. 
-Learn more about [linking your organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md).
+unlinked from your VSTS account. 
+Learn more about [linking your account](../../billing/set-up-billing-for-your-organization-vs.md).
 
-*	Your VSTS organization has more users with Basic access 
+*	Your VSTS account has more users with Basic access 
 than the number of users that you're paying for in Azure. 
-Your organization includes 5 free users with Basic access, 
+Your account includes 5 free users with Basic access, 
 but if you need to add more users with Basic access, 
-you can [pay for these users](../../organizations/billing/buy-basic-access-add-users.md). 
+you can [pay for these users](../../billing/buy-basic-access-add-users.md). 
 Otherwise, on the 1st day of the calendar month, users who haven't 
-signed into your organization the longest will lose access first. 
-If your organization has users who don't need access anymore, 
-[remove them from your organization](delete-organization-users.md).
+signed into your account the longest will lose access first. 
+If your account has users who don't need access anymore, 
+[remove them from your account](delete-account-users.md).
 
 *	You no longer have access to 
 [features that are available only as extensions](https://visualstudio.microsoft.com/team-services/compare-features/). 
@@ -182,21 +182,21 @@ This might happen for different reasons.
 
 	*	If you're using a paid extension, 
 	the Azure subscription used for billing might 
-	be unlinked from your VSTS organization 
+	be unlinked from your VSTS account 
 	or might no longer be active. Learn more about 
-	[linking your VSTS organization](../../organizations/billing/set-up-billing-for-your-organization-vs.md), 
+	[linking your VSTS account](../../billing/set-up-billing-for-your-organization-vs.md), 
 	or visit the [Azure account portal](https://account.windowsazure.com/subscriptions) 
 	to check your payment details.
 
 
-###	Azure Active Directory and your organization
+###	Azure Active Directory (Azure AD) and your account
 
 <a name="AddUserDirectory"></a>
 
 #### Q: Why do I have to add users to a directory?
 
-A: Your VSTS organization authenticates users and controls access 
-through Azure Active Directory. All users must be directory members to get access.
+A: Your VSTS account authenticates users and controls access 
+through Azure Active Directory (Azure AD). All users must be directory members to get access.
 
 If you're a directory administrator, you can 
 [add users to the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx). 
@@ -205,23 +205,23 @@ Learn more about [controlling access with a directory](access-with-azure-ad.md).
 
 <a name="ConnectedDirectory"></a>
 
-[!INCLUDE [does-organization-use-azuread](../../_shared/qa-does-organization-use-azuread.md)]
+[!INCLUDE [does-account-use-azuread](../../_shared/qa-does-account-use-azuread.md)]
 
 <a name="DeleteFromDirectory"></a>
 
-#### Q: My organization controls access with Azure Active Directory. Can I just delete users from the directory?
+#### Q: My account controls access with Azure Active Directory (Azure AD). Can I just delete users from the directory?
 
-A: Yes, but this removes their access to all VSTS organizations and other 
-assets associated with that directory.  You must have Azure Active Directory global administrator permissions to  
-[delete a user from your Azure Active Directory](delete-users-from-services-aad.md).
+A: Yes, but this removes their access to all VSTS accounts and other 
+assets associated with that directory.  You must have Azure AD global administrator permissions to  
+[delete a user from your Azure AD](delete-users-from-services-aad.md).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-organization](../../_shared/qa-choose-msa-azuread-organization.md)]
+[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-organization2](../../_shared/qa-choose-msa-azuread-organization2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-organization](../../_shared/qa-why-cant-sign-in-msa-azuread-organization.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 
 ###	More support
