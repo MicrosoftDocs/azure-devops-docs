@@ -1,6 +1,6 @@
 ---
 title: Manage conditional access to VSTS
-description: Learn how to protect your credentials and keep your organization's data safe with multi-factor authentication, security group membership, and more
+description: Learn how to protect your account credentials and keep your organization's data safe with multi-factor authentication, security group membership, and more
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7
@@ -15,8 +15,8 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-Conditional access offers simple ways to help secure resources for VSTS organizations backed by an Azure Active 
-Directory.  Conditional access policies like multi-factor 
+Conditional access offers simple ways to help secure resources for VSTS accounts backed by an Azure Active 
+Directory (AAD) tenant.  Conditional access policies like multi-factor 
 authentication can help protect against the risk of compromised credentials and help keep your organization's data safe. 
 For example, in addition to requiring credentials, you can have a policy that only devices connected to a corporate network 
 can gain access.  More generally, there are a few requirements and actions you can take for devices in a device 
@@ -30,7 +30,7 @@ Depending on which conditions the user satisfies, you can require multi-factor a
 or block access.
 
 > [!IMPORTANT] 
-> VSTS only enforces conditional access policies when a user signs into services with their Azure Active Directory credentials. 
+> VSTS only enforces conditional access policies when a user signs into services with their AAD credentials. 
 > Accessing VSTS using personal access tokens (PATs), alternate authentication, OAuth, and SSH keys circumvents 
 > conditional access policies.
 

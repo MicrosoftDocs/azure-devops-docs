@@ -56,7 +56,7 @@ Choose **edit** to change a setting. Choose the Locale tab to change a locale pr
 ## Try this next
 
 > [!div class="nextstepaction"]
-> [Work effectively from your organizational hub](../../user-guide/organization-home-pages.md)
+> [Work effectively from your organizational hub](../../user-guide/account-home-pages.md)
 > or
 > [Set favorites](../../project/navigation/set-favorites.md)
 

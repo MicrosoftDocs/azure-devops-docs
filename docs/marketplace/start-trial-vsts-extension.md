@@ -49,7 +49,7 @@ To add new features and capabilities to your Visual Studio Team Services (VSTS) 
 
 	![Select VSTS account for this extension](_img/get-vsts-extensions/click-start-trial.png)
 
-	*	[Why don't I see any VSTS accounts?](./faq-extensions.md#) 
+	*	[Why don't I see any VSTS accounts?](./faq-extensions.md#no-accounts) 
 
 	*	[Why can't I install this extension?](./faq-extensions.md#no-permissions) 
 
