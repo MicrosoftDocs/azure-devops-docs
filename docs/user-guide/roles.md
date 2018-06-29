@@ -7,7 +7,7 @@ ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.manager: douge
 ms.author: kaelli
 ms.topic: conceptual
-ms.date: 06/26/2018
+ms.date: 12/07/2016
 monikerRange: '>= tfs-2013'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 If you are a sole developer, or work on a small team, chances are that you participate in many activites&mdash;performing tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 
-However, if you work within a large enterprise, you're probably more focused on a specific set of tasks that are traditionally aligned with one or two specific roles, such as software development, project management, and DevOps.    
+However, if you work within a large organization, you're probably more focused on a specific set of tasks that are traditionally aligned with one or two specific roles, such as software development, project management, and DevOps.    
 
 This topic provides a roadmap to support you in quickly coming up to speed on the features and tasks available to you based on the role you perform.  
 
@@ -49,7 +49,7 @@ The role of project manager typically encompasses planning the feature set to de
 - Use the sprint backlog and task board to implement Scrum practices 
 - Use the Kanban board to work with Kanban methods 
 - Use queries to list and update work items, create status and trend charts, and post charts to dashboards 
-- Use dashboards to share information, status, and trends with your team or enterprise
+- Use dashboards to share information, status, and trends with your team or organization
   
 To get started, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md).  
 
@@ -109,7 +109,7 @@ Responsible for project level settings, including:
 
 ### Project collection administrators
 
-Responsible for organization or collection-level settings. These include:
+Responsible for account or collection-level settings. These include:
 
 - Manage billing  
 - Add and manage team projects    
@@ -117,7 +117,7 @@ Responsible for organization or collection-level settings. These include:
 - Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Organization Management](../organizations/accounts/organization-management.md). 
+To get started, see [Account Management](../organizations/accounts/account-management.md). 
 
  
 ### TFS administrators

@@ -43,7 +43,7 @@ Service hooks enable you to perform tasks on other services when events happen i
 
 ## Resources
 * [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
-* [Billing information](../organizations/billing/index.md)
+* [Billing information](../billing/index.md)
 
 
 

@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 06/20/2018
+ms.date: 06/29/2018
 monikerRange: 'vsts'
 ---
 
@@ -387,8 +387,8 @@ To learn more about the GDPR regulation, please visit the following page in [Mic
 ### Data residency and sovereignty
 
 We know our customers care deeply about data security and privacy. 
-VSTS is available in the following 6 regions across the world: US Central, 
-Canada Central, West Europe, India South, Australia East, Brazil South. 
+VSTS is available in the following 7 regions across the world: US Central, 
+Canada Central, West Europe, India South, Australia East, East Asia, Brazil South. 
 While we default your account to your closest region, you have the option to choose 
 a different region. If you change your mind later, our CSS team can help you 
 migrate your account to a different region. VSTS will not move or replicate 

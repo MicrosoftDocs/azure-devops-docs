@@ -26,7 +26,7 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 
 ## Prerequisites
 
-* A VSTS account. If you don't have one, you can [sign up](../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don't have one, you can [sign up](../organizations/accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 ## Download and install Git
 

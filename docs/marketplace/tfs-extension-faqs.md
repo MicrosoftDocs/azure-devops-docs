@@ -135,6 +135,6 @@ for the Team Foundation Server where you want to upload extensions.
 
 ## Purchases & billing
 
-- [VSTS billing overview](../organizations/billing/overview.md)
-- [VSTS billing FAQ](../organizations/billing/vsts-billing-faq.md)
-- [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
+- [VSTS billing overview](../billing/overview.md)
+- [VSTS billing FAQ](../billing/vsts-billing-faq.md)
+- [How to pay for TFS users](../billing/buy-access-tfs-test-hub.md)
