@@ -24,6 +24,8 @@
     href: ../analytics/data-available-in-analytics.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
   - name: Default Analytics views
     href: ../analytics/analytics-default-views.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
+  - name: Filters applied to historical data
+    href: ../analytics/analytics-historical-filtering.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Connect using Data Connector 
