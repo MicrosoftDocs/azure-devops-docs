@@ -63,6 +63,9 @@ Use the guidance provided in the following topics based on the process model or 
 	- [Create and manage a process](../../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)    
 
 - **Hosted XML process model**
+	- [Supported upgrade operations](../../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+	- [Upgrade a Hosted XML process to Inheritance](../../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
+	- [Change a project from Hosted XML to Inheritance](../../organizations/settings/work/change-process-from-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
 	- [Customize a Hosted XML process](import-process/customize-process.md)  
     - [Import a process](import-process/import-process.md)
 
