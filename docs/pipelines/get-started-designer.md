@@ -329,7 +329,7 @@ Write-Host Trigger: $trigger
 
 1. **Commit** (save) the script.
 
-1. Go to the **Build and Release** hub, and notice that a build is automatically triggered by the change that you committed.
+1. Go to the **Build and Release** hub and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 
 1. Select the new build that was created and view its log.
 
