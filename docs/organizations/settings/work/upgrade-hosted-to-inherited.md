@@ -16,6 +16,9 @@ ms.date: 05/30/2018
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
+> [!NOTE]  
+> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your account(s).
+
 Upgrading your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
 
 Before you upgrade a Hosted XML process, we recommend that you review [Supported upgrade operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md). 
