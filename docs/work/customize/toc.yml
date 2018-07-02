@@ -71,18 +71,20 @@
   - name: Hosted XML process model
     href: hosted-xml-process-model.md
     items:
-    - name: Supported upgrade operations
-      href: ../../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Upgrade a Hosted XML process to Inheritance
-      href: ../../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-    - name: Change a project from Hosted XML to Inheritance
-      href: ../../organizations/settings/work/change-process-from-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize a Hosted XML process
       href: import-process/customize-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Import a process
       href: import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
     - name: Customize form layout
       href: customize-wit-form.md
+    - name: Migrate Hosted XML to inherited (Preview)
+      items:
+      - name: Supported upgrade operations
+        href: ../../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: Upgrade a Hosted XML process to Inheritance
+        href: ../../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
+      - name: Change a project from Hosted XML to Inheritance
+        href: ../../organizations/settings/work/change-process-from-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
   - name: On-premises XML process model
     href: on-premises-xml-process-model.md
     items:
