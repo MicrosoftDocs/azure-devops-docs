@@ -18,12 +18,13 @@ ms.date: 03/27/2018
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
-You can add one or more charts or widgets to your dashboard. Up to 200 widets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
+
+You can add one or more charts or widgets to your dashboard. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.    
 
 ::: moniker-end
 
@@ -42,7 +43,7 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widets to
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 ## Connect to the web portal for your team project 
 
@@ -57,7 +58,7 @@ If you don't see the team or team project you want, click the ![project icon](..
     
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 ## Select a dashboard to modify 
 
@@ -91,7 +92,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 # [Old Dashboards Experience](#tab/old-query-exp)
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md).
 
@@ -148,7 +149,7 @@ The New Dashboard experience is only available from VSTS at this time.
 
 # [Old Dashboards Experience](#tab/old-query-exp)
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard. Click ![add a widget icon](_img/add-widget-icon.png) to add a widget to the dashboard.  
 
@@ -156,7 +157,7 @@ The [widget catalog](widget-catalog.md) describes all the available widgets, man
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 ::: moniker-end
@@ -164,7 +165,7 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 ---
 
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 <a id="configure" />
 
@@ -195,7 +196,7 @@ Once you've configured the widget, you can edit it by opening the actions menu.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015"
 
 ## Move or delete a widget from a dashboard 
 
@@ -225,13 +226,13 @@ When you're finished with your changes, click  **Done Editing** to exit dashboar
 
 # [Old Dashboards Experience](#tab/old-query-exp)
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="vsts || >= tfs-2018"
 
 To remove a widget, click the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
 
@@ -246,7 +247,7 @@ To remove a widget, click the widget's ![Trash icon](_img/dashboard-trash-icon.p
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
 
@@ -255,7 +256,7 @@ When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_
 
 ---
 
-::: moniker range=">= tfs-2018"
+::: moniker range="vsts || >= tfs-2018"
 
 ## Copy a widget to another dashboard
 
@@ -291,7 +292,7 @@ The Analytics Service is in preview and provides access to several widgets. To l
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015"
+::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 
 ## Try this next 
 
