@@ -14,8 +14,6 @@ monikerRange: 'vsts'
 
 # Microsoft-hosted agents
 
-**VSTS**
-
 [!INCLUDE [include](_shared/hosted-agent-intro.md)]
 
 ## Use a Microsoft-hosted agent
@@ -31,7 +29,7 @@ To use a Microsoft-hosted agent pool, first decide which queue to use:
 | Development tools on macOS | Hosted macOS (see notes below) |
 | Visual Studio 2013 or Visual Studio 2015 | Hosted |
 
-Then, while [editing your build definition](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
+Then, while [editing your build or release definition](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
 
 Notes on choosing **Hosted macOS**:
 * This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
