@@ -13,7 +13,6 @@ ms.date: 3/14/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Prepare permissions
 
 [!INCLUDE [include](_shared/v2/prepare-permissions.md)]

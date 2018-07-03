@@ -26,8 +26,6 @@ Instead, you can use the [PowerShell task]()
 in your workflow to execute a SQL script.
 The SQL script can be specified either as an artifact or as an inline script. 
 
-![Specifying the type and content of a script](_img/powershell-for-sqldacpac.png)
-
 ## Requirements
 
 * The utility **SqlPackage.exe** must be installed on the computer or VM.
@@ -221,8 +219,7 @@ sqlpackage.exe /Action:Script /?
 
 ## See also
 
-* [Deploy your database to Azure SQL Database using DACPACs](deploy-dacpac-sqlpackage.md)
-* [Deploy your database to Azure SQL database using SQL scripts](deploy-database-sqlscripts.md)
+* [Deploy your database to Azure SQL Database](../../targets/azure-sqldb.md)
 * [SQL Azure Dacpac Deployment task on GitHub](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
