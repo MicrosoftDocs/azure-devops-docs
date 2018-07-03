@@ -38,8 +38,12 @@
     href: apps/mobile/xcode-ios.md
 - name: Targets
   items:
+  - name: Azure Container Service (Kubernetes)
+    href: apps/cd/azure/deploy-container-kubernetes.md
   - name: Azure Stack
     href: targets/azure-stack.md
+  - name: Azure SQL database
+    href: targets/azure-sqldb.md
   - name: Azure Web App
     href: targets/webapp.md
   - name: Linux VM
@@ -58,10 +62,12 @@
     href: apps/cd/deploy-webdeploy-iis-deploygroups.md
 - name: Tutorials
   items:
-  - name: Build your GitHub repo
-    href: build/ci-build-github.md
-  - name: Build multiple branches
+  - name: CI builds for Git in VSTS
     href: build/ci-build-git.md
+  - name: CI builds for GitHub repo
+    href: build/ci-build-github.md
+  - name: CD to Azure web app
+    href: apps/cd/deploy-webdeploy-webapps.md
   - name: Set up multi-stage release
     href: release/define-multistage-release-process.md
   - name: Use approvals and gates
@@ -80,8 +86,18 @@
       href: agents/pools-queues.md
     - name: Microsoft-hosted agents
       href: agents/hosted.md
-    - name: Deployment groups
-      href: release/deployment-groups/index.md
+    - name: Self-hosted Windows agents
+      href: agents/v2-windows.md
+    - name: Windows agents (TFS 2015)
+      href: agents/v1-windows.md
+    - name: Self-hosted macOS agents
+      href: agents/v2-osx.md
+    - name: Self-hosted Linux agents
+      href: agents/v2-linux.md
+    - name: Running behind a proxy
+      href: agents/proxy.md
+    - name: Using self-signed certificate
+      href: agents/certificate.md
   - name: Builds
     items:
     - name: Artifacts
@@ -104,6 +120,10 @@
       href: release/index.md
     - name: Environments
       href: release/environments.md
+    - name: Deployment groups
+      href: release/deployment-groups/index.md
+    - name: Provision deployment groups
+      href: release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Artifacts
       href: release/artifacts.md
     - name: Triggers
@@ -157,22 +177,6 @@
     href: policies/retention.md
 - name: How-to Guides
   items:
-  - name: Deploy an agent
-    items:
-    - name: Windows
-      href: agents/v2-windows.md
-    - name: Windows (TFS 2015)
-      href: agents/v1-windows.md
-    - name: macOS
-      href: agents/v2-osx.md
-    - name: Linux
-      href: agents/v2-linux.md
-    - name: To a deployment group
-      href: release/deployment-groups/howto-provision-deployment-group-agents.md
-    - name: Run an agent behind a web proxy
-      href: agents/proxy.md
-    - name: Run an agent with self-signed certificate
-      href: agents/certificate.md
   - name: Connect to Azure
     href: library/connect-to-azure.md
   - name: Use YAML CI (config as code)
@@ -191,14 +195,8 @@
       href: apps/mobile/app-signing.md
   - name: Deploy to more targets
     items:
-    - name: Azure web app
-      href: apps/cd/deploy-webdeploy-webapps.md
     - name: Extend IIS Server deployments
       href: apps/cd/howto-webdeploy-iis-deploygroups.md
-    - name: Azure cloud service
-      href: apps/cd/deploy-cloudservice-cloudservice.md
-    - name: Azure Container Service (Kubernetes)
-      href: apps/cd/azure/deploy-container-kubernetes.md
     - name: IIS servers (WinRM)
       href: apps/cd/deploy-webdeploy-iis-winrm.md
     - name: Azure Government Cloud
