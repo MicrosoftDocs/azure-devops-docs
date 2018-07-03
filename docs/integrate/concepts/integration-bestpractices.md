@@ -29,7 +29,7 @@ For example, don't attempt to store telemetry data in Team Sevices.
 Don't add work items into VSTS for the sake of having them all in one place. VSTS is not designed as a data storage service. You should maintain your own data store.
 
 ##Batch your changes
-Doing single operations is slow and expensive. This is the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](https://visualstudio.com/integrate/api/wit/batch.md) and [sample code](https://visualstudio.com/integrate/api/wit/samples.md#create-a-user-story-and-a-child-task) for guidance.
+Doing single operations is slow and expensive. This is the leading cause for performance issues and rate limiting. Batch your changes into a single call. See our [batch documentation](/vsts/integrate/previous-apis/wit/batch) and [sample code](/vsts/integrate/previous-apis/wit/samples) for guidance.
 
 ##Limit your revisions
 Many revisions on a single work items creates bloat and causes performance problems. We recommend the following:

@@ -12,13 +12,14 @@ There are a number of other features across Work, Build, Release, Test, and Repo
 
 ## Next steps
 
-> [!NOTE]
-> These features will be rolling out over the next two to three weeks.
-
 Read about the new features below and head over to VSTS to try them for yourself.
 
 > [!div class="nextstepaction"]
 > [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/JJib0almy9U?rel=0]
 
 ## Features
 
@@ -64,6 +65,8 @@ Read about the new features below and head over to VSTS to try them for yourself
 
 ### Preview our new navigation
 
+> [!VIDEO https://www.youtube.com/embed/uMkHegKLrcA?rel=0]
+
 > [!IMPORTANT]
 > To use this capability, you must have the **New Navigation** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
 
@@ -75,6 +78,8 @@ Over the next couple weeks, the public preview of our new navigation will be rol
 ## Work
 
 ### New Work hubs
+
+> [!VIDEO https://www.youtube.com/embed/-NjzRMcjqis?rel=0]
 
 > [!IMPORTANT]
 > To use this capability, you must have the **New Navigation** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.

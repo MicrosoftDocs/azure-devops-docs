@@ -221,7 +221,7 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 **A:** Before you can [configure features for an upgraded team project](configure-features-after-upgrade.md) that you have customized to use team fields, you'll need to customize the latest process template with the same changes outlined in this topic. Here are the basic steps:
 visualstudio.microsoft.com
-1.  Upgrade TFS [to the latest version](https://www.visualstudio.com/downloads).
+1.  Upgrade TFS [to the latest version](https://visualstudio.microsoft.com/downloads).
 
 2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
 
