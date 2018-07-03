@@ -23,7 +23,7 @@ ms.date: 03/16/2017
 > - For users of VSTS that use the [Inheritance process model](../../organizations/settings/work/manage-process.md), the switch to the new form is automatic.<br/>
 > - For users of VSTS that use [Hosted XML process model](import-process/import-process.md), an admin must [enable the new form](../customize/manage-new-form-rollout.md).<br/>
 > - For on-premises TFS 2017 users, the new form is automatically available when you add teamvisualstudio.microsoft.comction. For existing team projects, an admin is required to enable the new form as described in this topic. (The reason the new form isn't automatically enabled for existing team projects is to prevent overwriting customizations made to existing work item types.) <br/>
-> - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://www.visualstudio.com/downloads/#team-foundation-server-2017) to access the new form.
+> - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://visualstudio.microsoft.com/downloads/#team-foundation-server-2017) to access the new form.
 
 Enabling the new form initiates a transformation of the form definitions for all work item types (WITs) defined in your project collection. 
 

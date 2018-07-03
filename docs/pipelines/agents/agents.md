@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Build and Release Agents
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/bb399135%28v=vs.120%29.aspx)**
-
 To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more.
 
 When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time.
@@ -34,16 +32,16 @@ When your build or deployment runs, the system begins one or more jobs. An agent
 
 An agent that you set up and manage on your own to run build and deployment jobs is a **self-hosted agent**. You can use self-hosted agents in VSTS or Team Foundation Server (TFS). Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
 
-You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Linux Docker container.
-
-After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
-
-::: moniker range=">= tfs-2017"
-
-### Install and connect to VSTS and TFS 2017 and newer
+:::moniker range="vsts"
 
 > [!TIP]
-> Is your code in VSTS? If so, before you install an agent you might want to see if a Microsoft-hosted agent pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
+> Before you install a self-hosted agent you might want to see if a Microsoft-hosted agent pool will work for you. In many cases this is the simplest way to get going. [Give it a try](hosted.md).
+
+:::moniker-end
+
+You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Linux Docker container. See the following topics for additional information on installing a self-hosted agent:
+
+::: moniker range=">= tfs-2017"
 
 * [macOS agent](v2-osx.md)
 * [Red Hat agent](v2-linux.md)
@@ -55,8 +53,6 @@ After you've installed the agent on a machine, you can install any other softwar
 
 ::: moniker range="tfs-2015"
 
-### Install and connect to TFS 2015
-
 * [macOS agent](v2-osx.md)
 * [Red Hat agent](v2-linux.md)
 * [Ubuntu 14.04 agent](v2-linux.md)
@@ -65,11 +61,13 @@ After you've installed the agent on a machine, you can install any other softwar
 
 ::: moniker-end
 
+After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
+
 ::: moniker range="vsts"
 
-### Concurrent jobs for self-hosted agents
+## Concurrent jobs
 
-You might need more concurrent jobs to use multiple agents at the same time:
+You might need more concurrent jobs to use multiple Microsoft-hosted or self-hosted agents at the same time:
 
 * [Concurrent jobs in VSTS](../licensing/concurrent-jobs-vsts.md)
 
@@ -77,7 +75,7 @@ You might need more concurrent jobs to use multiple agents at the same time:
 
 ::: moniker range=">= tfs-2015 < vsts"
 
-### Concurrent pipelines for self-hosted agents
+### Concurrent pipelines
 
 You might need more concurrent pipelines to use multiple agents at the same time:
 
@@ -117,8 +115,6 @@ You can view the system capabilities of an agent, and manage its user capabiliti
 
 ::: moniker range=">= tfs-2017"
 
-#### VSTS or TFS 2017 and newer
-
 The agent communicates with VSTS or TFS to determine which job it needs to run, and to report the logs and job status. This communication is always initiated by the agent. All the messages from the agent to VSTS or TFS happen over HTTP or HTTPS, depending on how you configure the agent. This pull model allows the agent to be configured in different topologies as shown below.
 
 ![Agent topologies](_img/agent-topologies.png)
@@ -137,11 +133,9 @@ The payload of the messages exchanged between the agent and TFS/VSTS are secured
 
 ::: moniker range="tfs-2015"
 
-#### TFS 2015
+Here is a common communication pattern between the agent and TFS.
 
-In TFS 2015:
-
-* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listening to the job queue.
+* An agent pool administrator joins the agent to an agent pool, and the credentials of the service account (for Windows) or the saved user name and password (for Linux and macOS) are used to initiate communication with TFS. The agent uses these credentials to listen to the job queue.
 
 * The agent does not use asymmetric key encryption while communicating with the server. However, you can [use HTTPS to secure the communication](../../organizations/security/websitesettings.md) between the agent and TFS.
 
@@ -161,23 +155,59 @@ as shown in the following schematic.
 
 ![Agent connectivity for on-premises environments](_img/agent-connections.png)
 
+<a name="configure-tfs-authentication"></a>
 ## Authentication
 
-To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, nor is used in any further communication between the agent and VSTS or TFS. Also, one needs to be a local administrator on the server in order to configure the agent. Your agent can authenticate to VSTS or TFS using one of the following methods:
+To register an agent, you need to be a member of the [administrator role](pools-queues.md#security) in the agent pool. The identity of agent pool administrator is needed only at the time of registration and is not persisted on the agent, and is not used in any subsequent communication between the agent and VSTS or TFS. In addition, you must be a local administrator on the server in order to configure the agent. Your agent can authenticate to VSTS or TFS using one of the following methods:
 
 ::: moniker range=">= tfs-2017"
 
-**Personal Access Token (PAT):** [Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS.
+### Personal Access Token (PAT): 
+[Generate](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) and use a PAT to connect an agent with VSTS or TFS 2017 and newer. PAT is the only scheme that works with VSTS. Also, as explained above, this PAT is used only at the time of registering the agent, and not for subsequent communication.
+
+To use a PAT with TFS, your server must be configured with HTTPS. See [Web site settings and security](../../organizations/security/websitesettings.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < vsts"
 
-**Integrated:** Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
+### Integrated
 
-**Negotiate:** Connect to TFS as a user other than the signed-in user via a Windows authentication scheme such as NTLM or Kerberos.
+Connect a Windows agent to TFS using the credentials of the signed-in user through a Windows authentication scheme such as NTLM or Kerberos.
 
-**Alternate:** Connect to TFS using Basic authentication. To use this method you'll first need to [configure HTTPS on TFS](../../organizations/security/websitesettings.md).
+To use this method of authentication, you must first configure your TFS server.
+
+1. Sign into the machine where you are running TFS.
+
+1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with a valid provider such as NTLM or Kerberos.
+
+![iis tfs windows authentication](_img/configure-tfs-authentication/iis-tfs-authentication-windows.png)
+
+![iis tfs windows authentication with ntlm provider](_img/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
+
+### Negotiate
+
+Connect to TFS as a user other than the signed-in user through a Windows authentication scheme such as NTLM or Kerberos.
+
+To use this method of authentication, you must first configure your TFS server.
+
+1. Log on to the machine where you are running TFS.
+
+1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with the Negotiate provider and with another method such as NTLM or Kerberos.
+
+![iis tfs windows authentication](_img/configure-tfs-authentication/iis-tfs-authentication-windows.png)
+
+![iis tfs windows authentication with negotiate and ntlm provider](_img/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
+
+
+### Alternate
+Connect to TFS using Basic authentication. To use this method you must first [configure HTTPS on TFS](../../organizations/security/websitesettings.md).
+
+To use this method of authentication, you must configure your TFS server as follows:
+
+1. Log on to the machine where you are running TFS.
+
+1. Configure basic authentication. See [Using tfx against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
 
 ::: moniker-end
 

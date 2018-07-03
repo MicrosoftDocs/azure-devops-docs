@@ -174,7 +174,7 @@ To learn more, visit the [Marketplace](https://marketplace.visualstudio.com) and
  
 The VSTS and TFS APIs are based on REST, OAuth, Json and service hooks&mdash;all standard web technologies broadly supported in the industry.
 
-REST APIs are provided to support building extensions to VSTS and TFS. To learn more, see [REST API overview](https://visualstudio.com/integrate/api/overview.md).
+REST APIs are provided to support building extensions to VSTS and TFS. To learn more, see [REST API overview](https://docs.microsoft.com/en-us/rest/api/vsts/).
 
 
 
