@@ -5712,7 +5712,7 @@
     },
     {
       "source_path": "docs/build-release/actions/agents/configure-tfs-authentication.md",
-      "redirect_url": "/vsts/pipelines/agents/configure-tfs-authentication",
+      "redirect_url": "/vsts/pipelines/agents/agents#configure-tfs-authentication",
       "redirect_document_id": true
     },
     {
@@ -7182,7 +7182,7 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/sql-server-actions.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/sql-server-actions",
+      "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
       "redirect_document_id": true
     },
     {
@@ -7879,6 +7879,21 @@
       "source_path": "docs/report/powerbi/report-on-vso-with-power-bi-vs.md",
       "redirect_url": "/vsts/report/powerbi/data-connector-connect",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "vsts/pipelines/agents/configure-tfs-authentication.md",
+      "redirect_url": "/vsts/pipelines/agents/agents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/apps/cd/deploy-database-sqlscripts.md",
+      "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/apps/cd/deploy-dacpac-sqlpackage.md",
+      "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    }    
   ]
 }

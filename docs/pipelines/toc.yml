@@ -173,8 +173,6 @@
       href: agents/proxy.md
     - name: Run an agent with self-signed certificate
       href: agents/certificate.md
-    - name: Configure TFS authentication
-      href: agents/configure-tfs-authentication.md
   - name: Connect to Azure
     href: library/connect-to-azure.md
   - name: Use YAML CI (config as code)
@@ -203,10 +201,6 @@
       href: apps/cd/azure/deploy-container-kubernetes.md
     - name: IIS servers (WinRM)
       href: apps/cd/deploy-webdeploy-iis-winrm.md
-    - name: Azure SQL database (DACPAC)
-      href: apps/cd/deploy-dacpac-sqlpackage.md
-    - name: Azure SQL database (SQL scripts)
-      href: apps/cd/deploy-database-sqlscripts.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
   - name: Test your apps

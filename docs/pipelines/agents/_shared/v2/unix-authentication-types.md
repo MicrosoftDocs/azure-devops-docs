@@ -13,7 +13,7 @@ Choose **PAT**, and then paste the [PAT token you created](#permissions) into th
 
 > [!IMPORTANT]
 > 
-> Make sure your server is [configured to support the authentication method](../../configure-tfs-authentication.md) you want to use. 
+> Make sure your server is [configured to support the authentication method](../../agents.md#configure-tfs-authentication) you want to use. 
   
 When you configure your agent to connect to TFS, you've got the following options:
 
