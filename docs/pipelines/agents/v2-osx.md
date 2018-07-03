@@ -12,10 +12,7 @@ ms.date: 08/26/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Deploy an agent on macOS
-
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 

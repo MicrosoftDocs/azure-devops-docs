@@ -12,10 +12,7 @@ ms.date: 11/16/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Run a self-hosted agent behind a web proxy
-
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 This topic explains how to run a v2 self-hosted agent behind a web proxy. 
 

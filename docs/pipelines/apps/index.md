@@ -54,8 +54,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Azure web apps](cd/deploy-webdeploy-webapps.md)</li>
  <li style="margin-bottom:5px">[Azure cloud services](cd/deploy-cloudservice-cloudservice.md)</li>
- <li style="margin-bottom:5px">[Azure SQL database](cd/deploy-dacpac-sqlpackage.md)</li>
- <li style="margin-bottom:5px">[Azure SQL database scripted](cd/deploy-database-sqlscripts.md)</li>
+ <li style="margin-bottom:5px">[Azure SQL database](../targets/azure-sqldb.md)</li>
  <li style="margin-bottom:5px">[Azure Container Service (Kubernetes)](cd/azure/deploy-container-kubernetes.md)</li>
  <li style="margin-bottom:5px">[IIS using deployment groups](cd/deploy-webdeploy-iis-deploygroups.md)</li>
  <li style="margin-bottom:5px">[IIS using Win RM](cd/deploy-webdeploy-iis-winrm.md)</li>
