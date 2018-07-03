@@ -323,8 +323,13 @@ These results are then made available to you in the build summary.
 
 # [Designer](#tab/designer)
 
-Use the **.NET Core** task with **Command** set to **test**.
-**Path to projects** should refer to the test projects in your solution.
+1. Select **Tasks** in the build definition, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+
+2. In the task catalog, find and add the **.NET Core** task.
+
+3. Select the task and, for **Command**, select **test**.
+
+4. Path to projects should refer to the test projects in your solution.
 
 # [YAML](#tab/yaml)
 
@@ -348,6 +353,11 @@ Add the following snippet to your `.vsts-ci.yml` file:
 YAML builds are not yet available on TFS.
 
 ::: moniker-end
+
+> [!NOTE]
+> 
+> Collecting code coverage data when running .NET core tests is not supported. As a workaround, you can use the 'Visual Studio Test' task to run tests and collect coverage information on the Windows platform by enabling the coverage option and specifying the target framework. Your project files must be modified to generate full PDBs. To learn more about how to modify the project files, [click here.](https://go.microsoft.com/fwlink/?linkid=2004358)     
+
 
 ---
 
