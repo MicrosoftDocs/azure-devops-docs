@@ -85,7 +85,7 @@ You must configure credentials for connecting to VSTS, and a plug in for **VS Te
   Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in VSTS**.
  
 1.  Create a PAT in your VSTS account. Jenkins requires this information to access your VSTS account.  Ensure you **store** the token information for upcoming steps in this section.
-  Read [How do I create a personal access token for VSTS and TFS](https://visualstudio.microsoft.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) to learn how to generate a PAT, or use an existing PAT if you have one.
+  Read [How do I create a personal access token for VSTS and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to generate a PAT, or use an existing PAT if you have one.
 
 1. Open your Jenkins account and select **Credentials**, **System**, and then choose **Add Domain**.
 
