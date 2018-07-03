@@ -12,7 +12,6 @@ ms.date: 3/14/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Deploy an agent on Windows
 
 **VSTS | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
@@ -80,7 +79,7 @@ Choose **PAT**, and then paste the [PAT token you created](#permissions) into th
 
 > [!IMPORTANT]
 > 
-> Make sure your server is [configured to support the authentication method](configure-tfs-authentication.md) you want to use. 
+> Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use. 
   
 When you configure your agent to connect to TFS, you've got the following options:
 

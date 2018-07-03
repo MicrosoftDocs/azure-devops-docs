@@ -75,6 +75,7 @@ An extension is composed of a set of files, including a required manifest file, 
 		"name": "My First Extension",
 		"description": "A sample Visual Studio Services extension",
 		"public": false,
+		"categories": ["Code"],
 		"targets": [
 			{
 				"id": "Microsoft.VisualStudio.Services"
