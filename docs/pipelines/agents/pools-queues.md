@@ -12,10 +12,7 @@ ms.date: 04/18/2018
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Agent pools and queues
-
-**VSTS | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dd793166%28v=vs.120%29.aspx)**
 
 Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across team project collections and team projects. In VSTS, agent pools are scoped to the VSTS account; so you can share an agent pool across team projects.
 

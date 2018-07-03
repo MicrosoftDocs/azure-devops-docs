@@ -12,10 +12,7 @@ ms.date: 08/26/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Deploy an agent on Linux
-
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 To build or deploy you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
 
