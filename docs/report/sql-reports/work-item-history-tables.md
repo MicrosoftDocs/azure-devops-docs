@@ -7,7 +7,8 @@ ms.topic: reference
 description: Query for historical data about bugs, tasks, and other types of work items defined in an on-premises Team Foundation Server 
 ms.assetid: 54f07bd4-dc55-4f68-a28e-e61ccce77060
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/17/17
 ---
 
@@ -40,7 +41,7 @@ You can query for historical data about bugs, tasks, and other types of work ite
 > [!NOTE]    
 >  This query assumes that a user story is linked to other work items through child links.  
   
-```  
+```sql
 declare @TeamProjectNodeSK int  
 select @TeamProjectNodeSK = ProjectNodeSK from GetProjectNodeInfoFromReportFolder(N'/TfsReports/VSTSDF/ProcessDev10')  
 -- This table value function returns the ProjectNodeSK: the Surrogate Key of a team project under a certain area path.  
@@ -51,7 +52,7 @@ select @TeamProjectCollectionGuid = pc.ProjectNodeGUID from DimTeamProject p inn
 ```  
  <br/>
 
-```  
+```sql
 select   
     d.DateSK  
     ,wi.System_Title  

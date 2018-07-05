@@ -41,7 +41,7 @@ This goes for any javascript files as well so it's easier to locate the related 
 
 Add the following HTML to the **configuration.html** page:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +73,7 @@ Add the following HTML to the **configuration.html** page:
 
 Append some additional css to the **widget.css** file:
 
-```
+```css
 .label {
     font-family: "Segoe UI";
     font-size: 12px;
@@ -88,7 +88,7 @@ Append some additional css to the **widget.css** file:
 
 Copy the following code to the **configuration.js** page:
 
-```
+```javascript
 VSS.init({
     explicitNotifyLoaded: true,
     usePlatformStyles: true
@@ -166,7 +166,7 @@ be able to say that they only want to categorize the values and don't want to gr
 
 Replace the **//Set up the configuration pane** comment with the following code:
 
-```
+```javascript
 var dataList = [];
 dataList.push({ name: "Area", value: "Area/AreaName" });
 dataList.push({ name: "Iteration", value: "Iteration/IterationName" });
@@ -187,7 +187,7 @@ instead of a stacked area bar chart.
 
 Replace the **//Restore the saved settings** comment with the following code:
 
-```
+```javascript
 var settings = JSON.parse(widgetSettings.customSettings.data);
 
 if ((settings != null) && (settings.groupBy != null)) {
@@ -212,7 +212,7 @@ drop downs to default values.
 Finally, the configuration needs to notify the widget that it has changed. Replace the **//Notify the widget that the configuration has changed**
 comment with the following code:
 
-```
+```javascript
 $("#widgetTitleInput").change(function () {
     var eventName = WidgetHelpers.WidgetEvent.ConfigurationChange;
     var eventArgs = WidgetHelpers.WidgetEvent.Args(getCustomSettings());
@@ -244,7 +244,7 @@ a configuration and respond to changes of the configuration.
 
 Now that the widget actually has settings, replace the load function with the following code:
 
-```
+```javascript
 load: function (widgetSettings) {
     var titleDiv = $("#title");
     var settings = JSON.parse(widgetSettings.customSettings.data);
@@ -268,7 +268,7 @@ method has been updated to accept one more parameter - the **widgetSettings**.
 
 Next, replace the **//Widget reload function** comment with the following code:
 
-```
+```javascript
 reload: function (widgetSettings) {
     var titleDiv = $("#title");
     var settings = JSON.parse(widgetSettings.customSettings.data);
@@ -310,7 +310,7 @@ expected in a very specific form for stacked bar charts and this is not the form
 
 The Analytics Service returns data in this form (in part):
 
-```
+```json
 {
   "@odata.id": null,
   "WorkItemType": "User Story",
@@ -326,7 +326,7 @@ The Analytics Service returns data in this form (in part):
 
 However, D3 based frameworks expect the data in this form (for a stacked bar chart):
 
-```
+```javascript
 {
 ["Active", 1, 2, 3],
 ["Resolved", 4, 5, 6]
@@ -339,7 +339,7 @@ chart.
 
 With this in mind, replace the entire **createChart** function with the following code:
 
-```
+```javascript
 function createChart(VSS_Auth_Service, WidgetHelpers, settings) {
     VSS.getAccessToken().then(function (token) {
         authToken = VSS_Auth_Service.authTokenManager.getAuthorizationHeader(token);
@@ -497,7 +497,7 @@ At this point the code is complete and it's time to register the configuration w
 the configuration is associated with this widget. In the vss-extension.json file, update the analyticsWidget
 contribution so that the **targets** section reads as follows:
 
-```
+```javascript
 "targets": [
     "ms.vss-dashboards-web.widget-catalog",
     "<author>.<extension ID>.analyticsWidget.Configuration"
@@ -510,7 +510,7 @@ extension ID is "sampleODataWidget".
 Next, add the following
 contribution to the file:
 
-```
+```json
 {
     "id": "analyticsWidget.Configuration",
     "type": "ms.vss-dashboards-web.widget-configuration",
@@ -525,7 +525,7 @@ contribution to the file:
 
 And finally, include the Configuration.html in the manifest:
 
-```
+```json
 {
     "path": "Configuration.html",
     "addressable": true

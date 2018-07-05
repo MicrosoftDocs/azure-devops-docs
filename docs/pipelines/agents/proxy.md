@@ -103,7 +103,7 @@ In the agent root directory, create a .proxy file with your proxy server url.
 
 # [Windows](#tab/windows)
 
-```ps
+```powershell
 echo http://name-of-your-proxy-server:8888 | Out-File .proxy
 ```  
 
@@ -128,7 +128,7 @@ If your proxy requires authentication, the simplest way to handle it is to grant
 
 # [Windows](#tab/windows)
 
-```ps
+```powershell
 $env:VSTS_HTTP_PROXY_USERNAME = "proxyuser"
 $env:VSTS_HTTP_PROXY_PASSWORD = "proxypassword"
 ```  

@@ -79,17 +79,17 @@ Perform the following steps for each WIT that you add to your process template. 
 
 1. Add the ```Epic Category``` to the **Categories** file located in the **WorkItem Tracking** folder.
 
-	```
+```xml
   <CATEGORY name="Epic Category" refname="Microsoft.EpicCategory">
     <DEFAULTWORKITEMTYPE name="Epic" />
   </CATEGORY>
-	```
+```
 
 1. Open the **WorkItems** plug-in file located in the **WorkItem Tracking** folder. 
 
 	1. Add a task for uploading the Feature work item type to the ```<WORKITEMTYPES>``` section.
 
-	```
+	```xml
 	<WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Epic.xml" />
 	```
 
@@ -320,7 +320,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 1. Update the name to reflect the version changes you've made. For example:
 
-	```
+	```xml
 	<name>MyCompany Custom Scrum </name>
 	```
 
