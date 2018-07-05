@@ -1,0 +1,61 @@
+- name: Public Projects
+  href: index.md
+- name: Overview
+  items:
+  - name: What is a public project? 
+    href: about-public-projects.md
+- name: Quickstarts
+  items:
+  - name: Build OSS repositories
+    href: ../../pipelines/build/ci-public.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
+  - name: Create a public project
+    href: create-public-project.md
+  - name: Invite users to contribute 
+    href: invite-users-public.md
+  - name: Make a project public
+    href: make-project-public.md
+  - name: Browse code, download code 
+    href: browse-code-public.md  
+  - name: View and filter work items
+    href: view-filter-work-items-public.md
+- name: Concepts
+  items:
+  - name: Private-to-public migration checklist
+    href: migration-checklist.md
+  - name: Glossary of key terms
+    href: glossary-public.md
+- name: How-to Guides
+  items:
+  - name: Clone a repository
+    href: clone-git-repo-public.md 
+  - name: View build and release pipelines 
+    href: view-build-release-public.md
+  - name: View a project page or dashboard
+    href: view-project-dashboard-public.md
+  - name: View project Wikis
+    href: view-wiki-public.md 
+  - name: Search the code base
+    href: code-search-public.md 
+  - name: Search work items
+    href: work-item-search-public.md
+- name: Reference
+  items:
+  - name: Default roles and access
+    href: default-roles-access-public.md 
+  - name: Terms of service
+    href: service-limits-public.md 
+  - name: Feature differences for non-members
+    href: feature-differences.md 
+  - name: Extensions and public project support 
+    href: ../../extend/develop/public-project.md
+- name: Resources
+  items:
+  - name: Git
+    href: ../../git/index.md
+  - name: Work items
+    href: ../../work/work-items/index.md 
+  - name: Process customization
+    href: ../settings/work/customize-process.md 
+  - name: VSTS data protection overview
+    href: ../../articles/team-services-security-whitepaper.md 
+
