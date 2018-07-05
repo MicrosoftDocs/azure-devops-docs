@@ -46,7 +46,7 @@ DotNetFramework
 
 Create ```test.ps1``` at the root of your repo:
 
-```ps
+```powershell
 Write-Host "Hello World from $Env:AGENT_NAME."
 Write-Host "My ID is $Env:AGENT_ID."
 Write-Host "AGENT_WORKFOLDER contents:"
@@ -76,7 +76,7 @@ On the Build tab of a build definition, add this task:
 
 * Script
 
- ```ps
+ ```powershell
 Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 ```
 
@@ -84,7 +84,7 @@ Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 
 * Script
 
- ```ps
+ ```powershell
 # Writes a warning to build summary and to log in yellow text
 Write-Host  "$("##vso[task.logissue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Team Build logging command.")"
 ```
@@ -93,7 +93,7 @@ Write-Host  "$("##vso[task.logissue type=warning;]") $($env:WarningMessage) $("t
 
 * Script
 
- ```ps
+ ```powershell
 # Writes a warning to log preceded by "WARNING: "
 Write-Warning "$($env:WarningMessage) $("the Write-Warning PowerShell command.")"
 ```
@@ -110,7 +110,7 @@ Write-Warning "$($env:WarningMessage) $("the Write-Warning PowerShell command.")
 
 * Script
 
- ```ps
+ ```powershell
 Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 ```
 
@@ -118,7 +118,7 @@ Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 
 * Script
 
- ```ps
+ ```powershell
 # Writes an error to the build summary and to the log in red text
 Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Team Build logging command reported that") $($env:ErrorMessage)"
 ```
@@ -126,7 +126,7 @@ Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Team Bui
 > [!TIP]
 > 
 > If you want this error to fail the build, then add this line:
- ```ps
+ ```powershell
 exit 1
 ``` 
 
@@ -134,7 +134,7 @@ exit 1
 
 * Script
 
- ```ps
+ ```powershell
 # Writes an error to the build summary and the log with details about the error
 Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorMessage)"
 ```

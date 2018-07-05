@@ -74,7 +74,7 @@ HelloWorld.ps1
 ```
 
 1. Copy and paste this script.
- ```ps
+ ```powershell
 Write-Host "Hello world"
  ```
 
@@ -306,7 +306,7 @@ We'll pass some build variables to the script to make our process a bit more int
 
  **Arguments**
 
- ```
+ ```powershell
 -greeter "$(Build.RequestedFor)" -trigger "$(Build.Reason)"
 ```
 
@@ -318,7 +318,7 @@ We'll pass some build variables to the script to make our process a bit more int
 
 1. Change the script as follows:
 
- ```ps
+ ```powershell
 Param(
    [string]$greeter,
    [string]$trigger
@@ -375,7 +375,7 @@ Define the process for running the script in two environments.
 
 1. Add these **Arguments**:
 
-   ```
+   ```powershell
    -greeter "$(Release.RequestedFor)" -trigger "$(Build.DefinitionName)"
    ```
 
@@ -411,7 +411,7 @@ Define the process for running the script in two environments.
 
 1. Add these **Arguments**:
 
- ```
+ ```powershell
 -greeter "$(Release.RequestedFor)" -trigger "$(Build.DefinitionName)"
 ```
 
@@ -503,7 +503,7 @@ We'll make one more change to the script. This time it will automatically build 
 
 1. Go to the **Code** hub, **Files** tab, edit the **HelloWorld.ps1** file, and change it as follows:
 
- ```ps
+ ```powershell
 Param(
    [string]$greeter,
    [string]$trigger

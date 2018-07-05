@@ -37,7 +37,7 @@ You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.
 
 For example, to version to your assemblies, copy and upload this script to your team project:
 
-```ps
+```powershell
 ##-----------------------------------------------------------------------
 ## <copyright file="ApplyVersionToAssemblies.ps1">(c) Microsoft Corporation. This source is subject to the Microsoft Permissive License. See http://www.microsoft.com/resources/sharedsource/licensingbasics/sharedsourcelicenses.mspx. All other rights reserved.</copyright>
 ##-----------------------------------------------------------------------
@@ -150,7 +150,7 @@ To enable your script to use the build process OAuth token, go to the **Options*
 
 After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [VSTS REST API](https://visualstudio.microsoft.com/en-us/integrate/api/overview). For example:
 
-```ps
+```powershell
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build-release/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
 Write-Host "URL: $url"
 $definition = Invoke-RestMethod -Uri $url -Headers @{

@@ -75,21 +75,21 @@ ms.date: 01/12/2017
   
  The following example shows the nesting structure of XML elements. To view the default mappings, see [Default Mapping File](#default_file) later in this topic.  
   
-```  
+```xml
 <mappingFile>  
-&nbsp;&nbsp;&nbsp;<persistables>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<field tfsName="System.Title" tfsMirrorName="Mirror.System.Title" displayTfsField="false" displayTfsMirror="false" onConflict="PSWin">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tfsToTarget>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<target provider="ProjectServerStatusQueue" name="pjTaskName" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tfsToTarget>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<targetToTfs>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<target provider="ProjectServerPublished" name="pjTaskName" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</targetToTfs>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</targetToTfs>  
+    <persistables>  
+      <Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
+         <field tfsName="System.Title" tfsMirrorName="Mirror.System.Title" displayTfsField="false" displayTfsMirror="false" onConflict="PSWin">  
+            <tfsToTarget>  
+               <target provider="ProjectServerStatusQueue" name="pjTaskName" />  
+            </tfsToTarget>  
+            <targetToTfs>  
+               <target provider="ProjectServerPublished" name="pjTaskName" />  
+            </targetToTfs>  
+         </targetToTfs>  
       </field>  
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . .  
+         . . .  
   
     </Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
   </persistables>  
@@ -100,14 +100,14 @@ ms.date: 01/12/2017
 ### Field Element Syntax  
  The following syntax defines the attributes of the `field` element:  
   
-```  
+```xml
 <field tfsName="FieldName" tfsMirrorName="FieldMirrorName" displayTfsField="true | false" displayTfsMirror=" true | false" onConflict="PSWin">  
 ```  
   
 ### Target Element Syntax  
  The following syntax defines the attributes of the `target` element:  
   
-```  
+```xml
 <target provider="ProviderName" name="ProjectFieldName" />  
 ```  
   
@@ -141,7 +141,7 @@ ms.date: 01/12/2017
   
  For a list of all fields that are added to a type of work item when you add that type to participate in data synchronization, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  
   
-```  
+```xml
 <mappingFile>  
   <persistables>  
     <Microsoft.TeamFoundation.Sync.Mapping.Impls.FieldMapping>  
@@ -167,9 +167,9 @@ ms.date: 01/12/2017
         </tfsToTarget>  
         <targetToTfs>  
           <target provider="ProjectServerPublished" name="pjTaskActualWork" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transforms>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transform transformType="clearValueIfParent">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</transforms>  
+            <transforms>  
+               <transform transformType="clearValueIfParent">  
+            </transforms>  
         </targetToTfs>  
       </field>  
       <field tfsName="Microsoft.VSTS.Scheduling.RemainingWork" tfsMirrorName="Mirror.Microsoft.VSTS.Scheduling.RemainingWork" displayTfsField="true" displayTfsMirror="true">  
@@ -178,9 +178,9 @@ ms.date: 01/12/2017
         </tfsToTarget>  
         <targetToTfs>  
           <target provider="ProjectServerPublished" name="pjTaskRemainingWork" />  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transforms>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<transform transformType="clearValueIfParent">  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</transforms>  
+            <transforms>  
+               <transform transformType="clearValueIfParent">  
+            </transforms>  
         </targetToTfs>  
       </field>  
       <field tfsName="Microsoft.VSTS.Scheduling.OriginalEstimate" tfsMirrorName="Mirror.Microsoft.VSTS.Scheduling.OriginalEstimate" displayTfsField="false" displayTfsMirror="true" onConflict="PSWin">  

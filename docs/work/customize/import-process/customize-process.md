@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AA5B592D-8F76-4974-9918-B8B523A6F23F
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
@@ -252,7 +253,7 @@ For the current release of import process, the following restrictions are in eff
 
 **Correct example**   
 To limit the account names that are valid within an identity field, specify the  ```VALIDUSER```  with a group name attribute.   
-```
+```xml
     <FIELD name="Project Manager" refname="Fabrikam.ProgramManager" type="String" reportable="dimension" syncnamechanges="true">
         <ALLOWEXISTINGVALUE />
         <VALIDUSER group="[PROJECT]\Program Manager Group" />
@@ -264,7 +265,7 @@ Prior to importing the process, make sure that you've created the group in the t
 
 **Incorrect example**  
 The following example isn't valid as it specifies the ```ALLOWEDVALUES``` element and the ```DEFAULT``` element which specifies ```value="Not Assigned"```, a non-identity string.    
-```
+```xml
     <FIELD name="Project Manager" refname="Fabrikam.ProgramManager" type="String" reportable="dimension" syncnamechanges="true">
         <ALLOWEXISTINGVALUE />
         <ALLOWEDVALUES>
