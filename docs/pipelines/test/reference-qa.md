@@ -172,6 +172,18 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 
 [Go to related topic &gt;](run-automated-tests-from-test-hub.md)
 
+### Q: What permissions do I need to run automated tests from the test hub?
+
+You must be a Project Contributor, or have the following permissions:
+
+* Create releases
+* Manage releases
+* Edit release environment
+* Manage deployment
+
+For more information, see [Set permissions for release definitions](../policies/set-permissions.md#set-permissions-for-release-definitions) and
+[Release permissions](../policies/permissions.md#release-permissions).
+
 ### Q: Can I override the build or environment set at the test plan level for a specific instance of test run?
 
 **A:** Yes, you can do this using the **Run with options** command.
