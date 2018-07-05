@@ -252,6 +252,7 @@ featureFlags:
                                     </ul>
                                     <h3>Collaboration</h3>
                                     <ul>
+                                        <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/project/wiki/index">READMEs &amp; Wikis</a></li>
                                         <li><a class="barLink" href="/vsts/project/search/index">Search</a></li>
@@ -837,6 +838,25 @@ featureFlags:
                     <li>
                         <a href="#collaboration">Collaboration</a>
                         <ul id="collaboration" class="cardsA">
+                            <li>
+                                <a href="/vsts/organizations/public/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Public Projects</h3>
+                                                    <p>Collaborate with others to develop software applications by creating or working in a public project.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                             <li>
                                 <a href="/vsts/notifications/index">
                                     <div class="cardSize">

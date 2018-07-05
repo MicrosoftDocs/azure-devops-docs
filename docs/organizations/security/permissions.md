@@ -842,7 +842,7 @@ You manage project-level permissions from the [web portal admin context](../../u
 
 With shared Analytics views, you can grant specific permissions to view, edit, or delete a view that you create.  You manage the security of Analytics views from the [web portal](../../report/analytics/analytics-security.md). 
 
-> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]
 > ![Manage permissions](../../report/analytics/_img/editable-views/view-permissions.png)  
 
 The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views?](../../report/analytics/what-are-analytics-views.md)
