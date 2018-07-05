@@ -33,7 +33,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="tfs-2018"
 Each team project wiki is powered by a Git repository in the back-end. When you create a team project, a Wiki Git repo is not created by default. To start using a wiki, you must  provision a Git repository to store your wiki markdown files. 
 
 ::: moniker-end

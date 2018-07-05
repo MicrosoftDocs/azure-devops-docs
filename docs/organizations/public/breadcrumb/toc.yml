@@ -1,0 +1,11 @@
+- name: VSTS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Collaborate
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=services&panel=collaboration
+    items:
+    - name: Public Projects
+      tocHref: /vsts/organizations/public/
+      topicHref: /vsts/organizations/public/index

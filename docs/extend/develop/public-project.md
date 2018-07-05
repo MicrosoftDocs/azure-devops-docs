@@ -1,8 +1,9 @@
 ---
+title: Developing extensions for Public Projects
+titleSuffix: VSTS
+description: Guidance for developing VSTS extensions that support non-member and public users.
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Developing extensions for Public Projects | VSTS
-description: Guidance for developing VSTS extensions that support non-member and public users.
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
 ms.manager: douge
@@ -12,7 +13,7 @@ author: willsmythe
 ms.date: 05/14/2018
 ---
 
->[!NOTE]
+> [!NOTE]
 > VSTS public project support is currently in **Limited Preview**. Contact [vsts-public@microsoft.com](mailto:vsts-public@microsoft.com) if you are interested in developing extensions that support public projects. To learn more about public projects, see [VSTS Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/).
 
 # Public project support by VSTS extensions
