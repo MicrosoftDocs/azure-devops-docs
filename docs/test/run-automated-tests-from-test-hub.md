@@ -44,6 +44,16 @@ You will need:
 * The app to test. You can deploy the app as part of the 
   [build and release workflow](../pipelines/overview.md) and also use it for on-demand testing.
 
+You must also be a Project Contributor, or have the following permissions:
+
+* Create releases
+* Manage releases
+* Edit release environment
+* Manage deployment
+
+For more information, see [Set permissions for release definitions](../pipelines/policies/set-permissions.md#set-permissions-for-release-definitions) and
+[Release permissions](../pipelines/policies/permissions.md#release-permissions).
+
 ## Set up your environment
 
 1. In the **Test plans** tab of the **Test** hub, choose your test plan,

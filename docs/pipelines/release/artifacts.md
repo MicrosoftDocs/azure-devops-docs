@@ -502,7 +502,7 @@ properties because the download location defined in
 the agent does not change.
 
 The source alias is, by default, the name of the source
-selected when you linked the artifact source; depending on the
+selected when you linked the artifact source, prefixed with an underscore; depending on the
 type of the artifact source this will be the name of the
 build definition, job, project, or repository. You can edit
 the source alias from the artifacts tab of a release definition; for example, when you change
