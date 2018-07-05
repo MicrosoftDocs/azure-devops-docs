@@ -133,7 +133,7 @@ Quote blocks of lines of text by using the same level of `>` across multiple lin
 
 <pre>
 > Single line quote
->> Nested    
+>> Nested quote
 >> multiple line
 >> quote
 </pre>
