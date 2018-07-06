@@ -78,7 +78,7 @@ If your extension is ready for users on the Marketplace to try, but you are stil
     ]
 }            
 ```
-####Paid flag
+#### Paid flag
 
 If you want to sell your extension on the Marketplace, you can mark it as `paid`:
 
