@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 ![](_img/gradle.png) Build using a Gradle wrapper script
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

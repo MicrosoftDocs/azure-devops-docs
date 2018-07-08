@@ -1,6 +1,6 @@
 ---
 title: Service Fabric PowerShell Utility task
-description: Service Fabric PowerShell build task for use in all your build or release definitions in Microsoft VSTS and Team Foundation Server 
+description: Service Fabric PowerShell build task for use in all your build or release pipelines in Microsoft VSTS and Team Foundation Server 
 ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,10 +12,8 @@ ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
 
-# Utility: Service Fabric PowerShell 
+# Utility: Service Fabric PowerShell
 
-**VSTS**
- 
 ![icon](_img/azure-service-fabric.png) Run a PowerShell script within the context of an Azure Service Fabric cluster connection.
 
 Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized.
@@ -29,7 +27,7 @@ deploy to a Service Fabric cluster.
 
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

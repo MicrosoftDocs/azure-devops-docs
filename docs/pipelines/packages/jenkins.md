@@ -9,11 +9,14 @@ ms.author: amullans
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2017'
 ---
- 
 
 # Use Jenkins to restore and publish packages
 
 **VSTS | TFS 2018 | TFS 2017**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 VSTS's package management works with the continuous integration tools your team already uses.
 In this [Jenkins](http://jenkins-ci.org/) walkthrough, you'll create a NuGet package and publish it to a VSTS feed.
@@ -73,12 +76,12 @@ The easiest way to use the VSTS NuGet service is by adding the [Microsoft.Visual
 * Save your feed URL and PAT to a text file for use later in the walkthrough.
 
 
-## Create a build definition in Jenkins
+## Create a build pipeline in Jenkins
 
 * Ensure you have the [correct plugins installed in Jenkins](#setup).
 * This will be a Freestyle project. Call it "Fabrikam.Walkthrough".
 
-![New Jenkins build definition](_img/jenkins_new.png)
+![New Jenkins build pipeline](_img/jenkins_new.png)
 * Under Source Code Management, set the build to use **Git** and select your Git repo.
 * Under Build Environment, select the **Use secret text(s) or file(s)** option.
   * Add a new **Username and password (separated)** binding.
@@ -95,14 +98,14 @@ The easiest way to use the VSTS NuGet service is by adding the [Microsoft.Visual
   * Choose **Execute Windows batch command** again, but this time, use this command: `.tools\VSS.NuGet\nuget pack FabrikamLibrary\FabrikamLibrary.csproj`.
 
 ![Jenkins build tasks](_img/jenkins_build_steps.png)
-* Save this build definition and queue a build.
+* Save this build pipeline and queue a build.
 * The build's Workspace will now contain a .nupkg just like the one you built locally earlier.
 
 
 ## Publish a package using Jenkins
 
 These are the last walkthrough steps to publish the package to a feed:
-* Edit the build definition in Jenkins.
+* Edit the build pipeline in Jenkins.
 * After the last build task (which runs `nuget pack`), add a new **Execute a Windows batch command** build task.
 * In the new **Command** box, add these two lines:
   * The first line puts credentials where NuGet can find them: `.tools\VSS.NuGet\nuget sources update -Name "MyGreatFeed" -UserName "%FEEDUSER%" -Password "%FEEDPASS%"`

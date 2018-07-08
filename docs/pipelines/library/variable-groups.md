@@ -16,8 +16,12 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 Use a variable group to store values that you want to make available across
-multiple build and release definitions. Variable groups are defined and managed in the **Library** tab of the
+multiple build and release pipelines. Variable groups are defined and managed in the **Library** tab of the
 **Build &amp; Release** hub.
 
 ## Create a variable group
@@ -63,7 +67,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 ### Secrets management notes
 
 * Only the secret *names* are mapped to the variable group, not the secret values. The latest version of the value of each secret
-  is fetched from the vault and used in the definition linked to the variable group during the build or release.
+  is fetched from the vault and used in the pipeline linked to the variable group during the build or release.
 
 * Any changes made to *existing* secrets in the key vault, such as a change in the value of a secret, will be made available
   automatically to all the definitions in which the variable group is used.
@@ -78,24 +82,24 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 ## Use a variable group
 
-To use a variable group, open your build or release definition, select the **Variables**
+To use a variable group, open your build or release pipeline, select the **Variables**
 tab, select **Variable groups**, and then choose **Link variable group**.
-In a build definition, you see a list of available groups. In a release definition (as shown below), you
-also see a drop-down list of environments in the definition - you can link the variable group to one or more of these environments.
+In a build pipeline, you see a list of available groups. In a release pipeline (as shown below), you
+also see a drop-down list of environments in the pipeline - you can link the variable group to one or more of these environments.
 
 ![Linking a variable group](_img/link-variable-group.png)
 
-* In a **build definition**, the variable group is linked to the definition and all the variables in the group are available for use within this definition.
-* In a **release definition**, you can link a variable group to the definition itself, or to a specific environment of the release definition.
-  - If you link to a release definition, all the variables in the group are available for use in the definition and in all environments of that definition.
-  - If you link to one or more environments in a release definition, the variables from the variable group are scoped to these environments and are not accessible in the other environments of the same release. 
+* In a **build pipeline**, the variable group is linked to the pipeline and all the variables in the group are available for use within this pipeline.
+* In a **release pipeline**, you can link a variable group to the pipeline itself, or to a specific environment of the release pipeline.
+  - If you link to a release pipeline, all the variables in the group are available for use in the pipeline and in all environments of that pipeline.
+  - If you link to one or more environments in a release pipeline, the variables from the variable group are scoped to these environments and are not accessible in the other environments of the same release. 
 
 > [!NOTE]
 > Linking a variable group to a specific environment is available only on VSTS and on TFS 2018 Update 2 and later. 
 
 You access the value of the variables in a linked variable group in exactly
-the same way as [variables you define within the definition itself](../release/variables.md#custom-variables).
-For example, to access the value of a variable named **customer** in a variable group linked to the definition,
+the same way as [variables you define within the pipeline itself](../release/variables.md#custom-variables).
+For example, to access the value of a variable named **customer** in a variable group linked to the pipeline,
 use `$(customer)` in a task parameter or a script. However, secret variables (encrypted variables and key vault variables) 
 cannot be accessed directly in scripts - instead they must be passed as arguments to a task. 
 

@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/azurevmssdeployment.png) Deploy Virtual Machine scale set image
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

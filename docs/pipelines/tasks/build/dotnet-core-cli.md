@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/dotnetcorecli.png) Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

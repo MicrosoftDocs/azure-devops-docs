@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2015'
 
 cmake
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

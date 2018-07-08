@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 
 None
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

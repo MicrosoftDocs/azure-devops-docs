@@ -14,6 +14,10 @@ monikerRange: '>= tfs-2015'
 
 # Test: Visual Studio Test Agent Deployment
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 ::: moniker range=">= tfs-2018"
 
 This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the [Visual Studio Test](vstest.md)
@@ -44,7 +48,7 @@ This task requires the target computer to have:
 
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
@@ -58,7 +62,7 @@ This task requires the target computer to have:
 | -------- | ----------- |
 | **Machines** | A comma-separated list of machine FQDNs or IP addresses, optionally including the port number. The maximum is 32 machines (or 32 agents). Can be:<br />- The name of an <a href="https://azure.microsoft.com/en-gb/documentation/articles/resource-group-overview/">Azure Resource Group</a>.<br />- A comma-delimited list of machine names. Example: `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.34:5986`<br />- An output variable from a previous task. |
 | **Admin Login** | The username of either a domain or a local administrative account on the target host(s). This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as **username@domain.com** and built-in system accounts such as **NT Authority\System** are not supported. |
-| **Password** | The password for the administrative account specified above. This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group. Consider using a secret variable global to the build or release definition to hide the password. Example: `$(passwordVariable)` |
+| **Password** | The password for the administrative account specified above. This parameter is required when used with a list of machines. It is optional when specifying a machine group and, if specified, overrides the credential settings defined for the machine group. Consider using a secret variable global to the build or release pipeline to hide the password. Example: `$(passwordVariable)` |
 | **Protocol** | The protocol that will be used to connect to the target host, either **HTTP** or **HTTPS**. |
 | **Agent Configuration - Username** | Required. The username that the test agent will use. Must be an account on the test machines that has administrative permissions.<br />- Formats such as **username**, **domain\username**, **machine-name\username**, and **.\username** are supported.<br />- UPN formats such as **username@domain.com** and built-in system accounts such as **NT Authority\System** are not supported. |
 | **Agent Configuration - Password** | Required. The password for the **Username** for the test agent. To protect the password, create a [variable](../../build/variables.md) and use the "padlock" icon to hide it. |

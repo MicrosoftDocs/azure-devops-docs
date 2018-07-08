@@ -15,8 +15,12 @@ monikerRange: '>= tfs-2017'
 
 # .NET Core
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 This guidance explains how to build .NET Core projects. Before you read this topic, you should understand the type
-of build definition that you're creating:  [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+of build pipeline that you're creating:  [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ::: moniker range="tfs-2017"
 
@@ -47,8 +51,8 @@ https://github.com/adventworks/dotnetcore-sample
 
 # [Designer](#tab/designer)
 
-After you have the sample code in your own repository, create a build definition and select the **ASP.NET Core** template.
-This automatically adds some of the most commonly required tasks. Save the definition and queue a build to see it in action.
+After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template.
+This automatically adds some of the most commonly required tasks. Save the pipeline and queue a build to see it in action.
 Then read through the rest of this topic to learn some of the more common changes people make to customize a .NET Core build process.
 
 # [YAML](#tab/yaml)
@@ -79,7 +83,7 @@ Use the **Hosted VS2017** agent queue (to build on Windows), the **Hosted Linux 
 
 # [Designer](#tab/designer)
 
-In the build definition, select **Tasks**, then select the **Process** node, and finally select the **Agent queue** that you want to use.
+In the build pipeline, select **Tasks**, then select the **Process** node, and finally select the **Agent queue** that you want to use.
 
 # [YAML](#tab/yaml)
 
@@ -99,7 +103,7 @@ you prefer to use the Microsoft hosted agents, add the **.NET Core Tool Installe
 
 If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent:
 
-1. In the build definition, select **Tasks**, choose the phase that runs your build tasks, and then select **+** to add a new task to that phase.
+1. In the build pipeline, select **Tasks**, choose the phase that runs your build tasks, and then select **+** to add a new task to that phase.
 
 1. In the task catalog, find and add the **.NET Core Tool Installer** task.
 
@@ -174,7 +178,7 @@ If your builds occasionally fail when restoring packages from NuGet.org due to c
 you can use VSTS Package Management in conjunction with [upstream sources](/vsts/package/upstream-sources.md),
 and cache the packages in VSTS. The credentials of the build pipeline are automatically used when connecting
 to VSTS Package Management. These credentials are derived from either the **Project Collection Build Service**
-account or the **Project Build Service** account depending on the option selected in your build definition.
+account or the **Project Build Service** account depending on the option selected in your build pipeline.
 
 If you want to specify a NuGet repository, put the URLs in a `NuGet.config` file in your repository.
 If your feed is authenticated, manage its credentials by creating a NuGet service endpoint in the **Services** tab under **Project Settings**.
@@ -189,11 +193,11 @@ you'll get the benefit of using the package cache.
 
 ::: moniker-end
 
-To restore packages in your build definition:
+To restore packages in your build pipeline:
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in the build definition, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
 
 1. In the task catalog, find and add the **.NET Core** task.
 
@@ -254,7 +258,7 @@ that are available in .NET Core 2.1.300 and newer.
 
 ### Build
 
-1. Select **Tasks** in the build definition, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
 
 1. In the task catalog, find and add the **.NET Core** task.
 
@@ -422,11 +426,11 @@ YAML builds are not yet available on TFS.
 If you are able to build your project on your development machine, but are having trouble building it on VSTS or TFS, explore the following potential causes and corrective actions:
 
 * Check that the versions of the .NET Core SDK and runtime on your development machine match those on the agent.
-  You can include a command line script `dotnet --version` in your build definition to print the version of .NET Core SDK.
+  You can include a command line script `dotnet --version` in your build pipeline to print the version of .NET Core SDK.
   Either use the **.NET Core Tool Installer** (as explained in this guidance) to deploy the same version on the agent,
   or update your projects and development machine to the newer version of .NET Core SDK.
 
-* You may be using some logic in Visual Studio IDE that is not encoded in your build definition.
+* You may be using some logic in Visual Studio IDE that is not encoded in your build pipeline.
   VSTS or TFS run each of the commands you specify in the tasks one after the other in a new process.
   Look at the logs from the VSTS or TFS build to see the exact commands that ran as part of the build.
   Repeat the same commands in the same order on your development machine to locate the problem.

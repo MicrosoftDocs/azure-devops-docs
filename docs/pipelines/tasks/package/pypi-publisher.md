@@ -11,10 +11,7 @@ ms.date: 5/7/2018
 monikerRange: 'vsts'
 ---
 
-
 # Package: PyPI Publisher
-
-**VSTS**
 
 ![icon](_img/pypi-publisher.png) Create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 
@@ -37,7 +34,7 @@ A generic service connection for a PyPI index.
 > * **User name**: username for your PyPI account
 > * **Password/Token Key**: password for your PyPI account
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

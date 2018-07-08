@@ -1,6 +1,6 @@
 ---
 title: Build and Deploy - Azure Key Vault task
-description: Learn about Azure Key Vault task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
+description: Learn about Azure Key Vault task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,13 +14,11 @@ monikerRange: 'vsts'
 
 # Deploy: Azure Key Vault
 
-**VSTS**
-
 ### Overview
 
 ![icon](_img/azure-key-vault-icon.png) This task is used to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords
 from an [Azure Key Vault](https://docs.microsoft.com/en-us/rest/api/keyvault/about-keys--secrets-and-certificates) instance.
-The task can be used to fetch the latest values of all or a subset of secrets from the vault, and set them as variables that can be used in subsequent tasks of a definition.
+The task can be used to fetch the latest values of all or a subset of secrets from the vault, and set them as variables that can be used in subsequent tasks of a pipeline.
 The task is Node-based, and works with agents on Linux, macOS, and Windows.
 
 ## Pre-requisites
@@ -61,7 +59,7 @@ When you want to access secrets:
 
   - Choose **OK** to save the changes.<p />
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

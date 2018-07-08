@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/sqldacpacdeploymentonmachinegroup.png) Deploy to SQL Server Database using DACPAC or SQL scripts
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

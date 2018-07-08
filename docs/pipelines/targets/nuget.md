@@ -14,13 +14,17 @@ monikerRange: '>= tfs-2017'
 
 # Publish to NuGet feeds
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 You can publish NuGet packages from your build to NuGet feeds. You can publish these packages to 
 
 * The VSTS or TFS Package Management service
 * Other NuGet services such as NuGet.org
 * Your internal NuGet repository
 
-Before you read this topic, you should understand the kind of build definition you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+Before you read this topic, you should understand the kind of build pipeline you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ## Create a NuGet package
 
@@ -75,9 +79,9 @@ In addition to `Major.Minor.Patch`, semantic versioning provides for a prereleas
 
 When you create a package in CI, you can use semantic versioning with prerelease labels. The **NuGet** task can be used for this purpose, and supports the following formats:
 
-* Use the same versioning scheme for your builds and packages, provided that scheme has at least three parts separated by periods. The following build definition formats are examples of versioning schemes that are compatible with NuGet.
-  * `$(Major).$(Minor).$(rev:.r)`, where `Major` and `Minor` are two variables defined in the build definition. This will automatically increment the build number and the package version with a new patch number keeping the major and minor versions constant, until you change them manually in the build definition.
-  * `$(Major).$(Minor).$(Patch).$(date:yyyyMMdd)`, where `Major`, `Minor`, and `Patch` are variables defined in the build definition. This will create a new prerelease label for the build and package while keeping the major, minor, and patch versions constant.
+* Use the same versioning scheme for your builds and packages, provided that scheme has at least three parts separated by periods. The following build pipeline formats are examples of versioning schemes that are compatible with NuGet.
+  * `$(Major).$(Minor).$(rev:.r)`, where `Major` and `Minor` are two variables defined in the build pipeline. This will automatically increment the build number and the package version with a new patch number keeping the major and minor versions constant, until you change them manually in the build pipeline.
+  * `$(Major).$(Minor).$(Patch).$(date:yyyyMMdd)`, where `Major`, `Minor`, and `Patch` are variables defined in the build pipeline. This will create a new prerelease label for the build and package while keeping the major, minor, and patch versions constant.
 
 * Use a version that is different from the build number. You can customize the major, minor, and patch versions for your packages in the NuGet task, and let the task generate a unique prerelease label based on date and time.
 

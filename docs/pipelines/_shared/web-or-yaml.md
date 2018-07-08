@@ -18,7 +18,7 @@ Choose this option if you prefer a graphical interface in your web browser.
 
 **VSTS**
 
-Choose this option if you want the advantages of configuration as code. This means your definition is versioned with your code and follows the same branching structure as your code. 
+Choose this option if you want the advantages of configuration as code. This means your pipeline is versioned with your code and follows the same branching structure as your code. 
 
 ```YAML
 steps:

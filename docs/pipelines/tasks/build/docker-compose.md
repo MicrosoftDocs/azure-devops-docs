@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/dockercompose.png) Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

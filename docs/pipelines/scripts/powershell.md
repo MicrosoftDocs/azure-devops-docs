@@ -12,10 +12,13 @@ ms.date: 08/04/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Use a PowerShell script to customize your build process
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build process.
 
@@ -131,7 +134,7 @@ else
 }
 ```
 
-Add the build task to your build definition.
+Add the build task to your build pipeline.
 
 ![Apply version to assemblies build task](_img/BldScriptPSExmpVerAssembliesBuildStep.png)
 
@@ -146,17 +149,17 @@ $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 <a name="oauth"></a>
 ## Use the OAuth token to access the REST API
 
-To enable your script to use the build process OAuth token, go to the **Options** tab of the build definition and select **Allow Scripts to Access OAuth Token**.
+To enable your script to use the build process OAuth token, go to the **Options** tab of the build pipeline and select **Allow Scripts to Access OAuth Token**.
 
 After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [VSTS REST API](https://visualstudio.microsoft.com/en-us/integrate/api/overview). For example:
 
 ```ps
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build-release/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
 Write-Host "URL: $url"
-$definition = Invoke-RestMethod -Uri $url -Headers @{
+$pipeline = Invoke-RestMethod -Uri $url -Headers @{
     Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
 }
-Write-Host "Definition = $($definition | ConvertTo-Json -Depth 1000)"
+Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 1000)"
 ```
 
 

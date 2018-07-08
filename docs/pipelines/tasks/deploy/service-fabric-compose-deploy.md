@@ -1,6 +1,6 @@
 ---
 description: Service Fabric Compose Deploy Deployment task
-title: Service Fabric Compose Deploy task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
+title: Service Fabric Compose Deploy task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,8 +13,6 @@ monikerRange: 'vsts'
 ---
 
 # Deploy: Service Fabric Compose Deploy
-
-**VSTS**
 
 ![icon](_img/azure-service-fabric.png) Deploy a Docker-compose application to a Service Fabric cluster.
 
@@ -31,7 +29,7 @@ See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compo
 
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

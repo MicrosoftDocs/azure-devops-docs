@@ -14,12 +14,16 @@ monikerRange: '>= tfs-2017'
 
 # Publish npm packages
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 You can publish npm packages produced by your build to:
 
 * The VSTS or TFS Package Management service
 * Other registries such as `https://registry.npmjs.org/`
 
-Before you read this topic, you should understand the kind of build definition you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+Before you read this topic, you should understand the kind of build pipeline you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 # [Web](#tab/web)
 

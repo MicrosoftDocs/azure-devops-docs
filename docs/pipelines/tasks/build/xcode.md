@@ -10,7 +10,6 @@ ms.date: 04/18/2018
 monikerRange: 'vsts'
 ---
 
-
 # Build: Xcode
 
 **VSTS | [TFS 2018](xcode-build.md) | [TFS 2017](xcode-build.md) | [TFS 2015](xcode-build.md)**
@@ -21,7 +20,7 @@ monikerRange: 'vsts'
 
 xcode
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

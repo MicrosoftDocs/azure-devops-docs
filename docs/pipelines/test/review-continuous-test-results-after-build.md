@@ -1,6 +1,6 @@
 ---
 title: Review continuous test results after a build VSTS and TFS 
-description: Review continuous test results after a build with a build or release definition in Microsoft VSTS or Team Foundation Server (TFS)
+description: Review continuous test results after a build with a build or release pipeline in Microsoft VSTS or Team Foundation Server (TFS)
 ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
 ms.prod: devops
 ms.technology: devops-cicd
@@ -19,6 +19,10 @@ monikerRange: '>= tfs-2015'
 After your build finishes running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS),
 review your test results to start analyzing any problems that you found.
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 <a name="reviewtests"></a>  
 ## Review your test results
 
@@ -26,7 +30,7 @@ review your test results to start analyzing any problems that you found.
 
 1. Find your build and open the build summary.
 
-   ![Go to Build hub, build definition, build summary](_img/review-continuous-test-results-after-build/open-summary.png)
+   ![Go to Build hub, build pipeline, build summary](_img/review-continuous-test-results-after-build/open-summary.png)
 
 1. Review the summary for your test run results.
    Here you'll find changes in new, failed, and passed tests, 

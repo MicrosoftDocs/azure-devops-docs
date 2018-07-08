@@ -12,20 +12,21 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Utility: Command line
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
-[//]: # (What happens on cross-platform agent?)
-
 ![](_img/command-line.png) Run a program from the command prompt.
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 ## Demands
 
 None
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
@@ -71,7 +72,7 @@ None
 
 ## Example
 
-On the Build tab of a build definition, add these tasks:
+On the Build tab of a build pipeline, add these tasks:
 
 <table>
    <tr>
@@ -114,7 +115,7 @@ On the Build tab of a build definition, add these tasks:
       <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
       
 <td>
-<p>Display all files in all the folders created by the build definition.</p>
+<p>Display all files in all the folders created by the build pipeline.</p>
 <ul>
 <li>Tool: ```dir```</li>
  <li>Arguments: ```/s```</li>

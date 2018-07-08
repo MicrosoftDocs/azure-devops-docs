@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/gotool.png) Finds or downloads specific version of Go tool into tools cache and adds it to the PATH. Use this task to change the version of Go Lang used in subsequent tasks
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

@@ -19,7 +19,7 @@ ms.date: 08/10/2016
 
 None
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

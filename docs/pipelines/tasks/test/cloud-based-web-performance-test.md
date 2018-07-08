@@ -1,6 +1,6 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Web Performance Test
-description: Runs the Quick Web Performance Test with a build or release definition to easily verify your web application exists and is responsive
+description: Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,11 +16,15 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 ![icon](_img/web-based-perf-icon.png)
 Runs the Quick Web Performance Test with VSTS.
 
 The task can be used in a build or release 
-definition to generate load against an application URL
+pipeline to generate load against an application URL
 using the VSTS Cloud-based Load Test Service.
 The Cloud-based Load Test Service is based in
 Microsoft Azure and can be used to test your app's 
@@ -34,7 +38,7 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

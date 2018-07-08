@@ -123,7 +123,7 @@ VSTS users with [basic access](https://visualstudio.microsoft.com/products/visua
 
 To approve releases, basic access is not necessary. Any user with [stakeholder access](../../organizations/security/get-started-stakeholder.md) can approve or reject releases.
 
-### Are there any limits on the number of builds and release definitions that I can create?
+### Are there any limits on the number of builds and release pipelines that I can create?
 
 No. You can create hundreds or even thousands of definitions for no charge. You can register any number of self-hosted agents for no charge.
 

@@ -36,7 +36,7 @@ Symbol servers enables your debugger to automatically retrieve the correct symbo
 
 None
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

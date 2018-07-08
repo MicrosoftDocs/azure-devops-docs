@@ -25,7 +25,7 @@ The build agent must have the following capabilities:
 
  * Java JDK
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

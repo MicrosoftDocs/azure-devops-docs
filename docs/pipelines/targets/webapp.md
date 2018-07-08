@@ -15,6 +15,10 @@ monikerRange: '>= tfs-2017'
 
 # Azure web app deployment
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 You can automatically deploy your web app to an Azure App Services web app after every successful build.
 Before you read this topic, you should understand the type of pipeline that you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
@@ -46,8 +50,8 @@ Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sam
 
 # [Designer](#tab/designer)
 
-After you have a build, create a release definition and select the **Azure App Service Deployment** template for your environment.
-This automatically adds the necessary tasks. Link the build as an artifact to this release definition. Save the definition and create a release to see it in action.
+After you have a build, create a release pipeline and select the **Azure App Service Deployment** template for your environment.
+This automatically adds the necessary tasks. Link the build as an artifact to this release pipeline. Save the pipeline and create a release to see it in action.
 Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure web app deployment.
 
 # [YAML](#tab/yaml)
@@ -72,10 +76,10 @@ YAML builds are not yet available on TFS.
 # [Designer](#tab/designer)
 
 The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** task. 
-This task is automatically added to the release definition when you select one of the pre-built deployment templates for Azure app service deployment.
+This task is automatically added to the release pipeline when you select one of the pre-built deployment templates for Azure app service deployment.
 Templates exist for apps developed in various programming languages. If you cannot find a template for your language, select the generic **Azure App Service Deployment** template.
 
-When you link the artifact in your release definition to a build that compiles and publishes the web package,
+When you link the artifact in your release pipeline to a build that compiles and publishes the web package,
 it is automatically downloaded and placed into the `$(System.ArtifactsDirectory)` folder on the agent as part of the release.
 This is where the task picks up the web package for deployment.
 
@@ -261,7 +265,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-If you want to deploy to multiple web apps, add environments to your release definition.
+If you want to deploy to multiple web apps, add environments to your release pipeline.
 You can control the order of deployment. To learn more, see [Environments](../release/environments.md).
 
 # [YAML](#tab/yaml)
@@ -327,7 +331,7 @@ a web config transformation or by substituting variables in your Web.config file
 
 To change the `connectionString` using variable substitution:
 
-1. Create a release definition with two environments.
+1. Create a release pipeline with two environments.
 1. Link the artifact of the release to the build that produces the web package.
 1. Define `connectionString` as a variable in each of the environments. Set the appropriate value.
 1. Select the **XML variable substitution** option under the **File Transforms and Variable Substitution Options** of the **Azure App Service Deploy** task.
@@ -378,7 +382,7 @@ You may choose to deploy only certain builds to your Azure web app.
 
 # [Designer](#tab/designer)
 
-In your release definition you can implement various checks and conditions to control the deployment.
+In your release pipeline you can implement various checks and conditions to control the deployment.
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
 * Set **pre-deployment approvals** as a pre-condition for deployment to an environment.

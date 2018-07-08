@@ -6,35 +6,35 @@ ms.topic: include
 
 Your CD release process picks up the artifacts published by your CI build and then deploys them to your Azure web site.
 
-1. Do one of the following to start creating a release definition:
+1. Do one of the following to start creating a release pipeline:
 
    * If you've just completed a CI build (see above), choose the link (for example, _Build 20170815.1_)
-     to open the build summary. Then choose **Release** to start a new release definition that's automatically linked to the build definition.
+     to open the build summary. Then choose **Release** to start a new release pipeline that's automatically linked to the build pipeline.
 
-     ![Creating a new release definition from the build summary](_img/release-from-build-summary.png)
+     ![Creating a new release pipeline from the build summary](_img/release-from-build-summary.png)
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
-     in the list of release definitions, and choose **Create release definition**.
+     in the list of release pipelines, and choose **Create release pipeline**.
 
-     ![Creating a new release definition in the Releases page](_img/release-from-release-page.png)
+     ![Creating a new release pipeline in the Releases page](_img/release-from-release-page.png)
 
-1. The easiest way to create a release definition is to use a template. If you are deploying a Node app, select the **Deploy Node.js App to Azure App Service** template. 
+1. The easiest way to create a release pipeline is to use a template. If you are deploying a Node app, select the **Deploy Node.js App to Azure App Service** template. 
    Otherwise, select the **Azure App Service Deployment** template. Then choose **Apply**.
 
    > The only difference between these templates is that Node template configures the task to generate a **web.config** file containing a parameter that starts the **iisnode** service.
 
-1. If you created your new release definition from a build summary, check that the build definition and artifact
-   is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release definition from
+1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
+   is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from
    the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-   ![Checking or selecting the build definition and artifact](_img/confirm-or-add-artifact.png)
+   ![Checking or selecting the build pipeline and artifact](_img/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
    continuous deployment trigger is enabled, and add a filter to include the **master** branch.
 
    ![Checking or setting the Continuous deployment trigger](_img/confirm-or-set-cd-trigger.png)
 
-   > Continuous deployment is not enabled by default when you create a new release definition from the **Releases** tab.
+   > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
 
 1. Open the **Tasks** tab and, with **Environment 1** selected, configure the task property variables as follows:
 
@@ -48,11 +48,11 @@ Your CD release process picks up the artifacts published by your CI build and th
 
    [!INCLUDE [edit-template-vars-in-environment](edit-template-vars-in-environment.md)]
 
-1. Save the release definition.
+1. Save the release pipeline.
 
 <h2 id="deploy">Create a release to deploy your app</h2>
 
-You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build:
+You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
 1. Choose **+ Release** and select **Create Release**.
 

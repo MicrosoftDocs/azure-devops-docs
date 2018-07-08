@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 ![icon](_img/publish-test-results-icon.png)
 Publishes the test results to TFS or VSTS when tests are run
 using a runner of your choice.
@@ -36,7 +40,7 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

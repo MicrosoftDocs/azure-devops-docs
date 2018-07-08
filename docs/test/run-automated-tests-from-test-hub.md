@@ -1,6 +1,6 @@
 ---
 title: Run automated tests from test plans in the Test hub VSTS and TFS 
-description: Run automated tests on-demand against Team Foundation builds from test plans in the Test hub with a build or release definition
+description: Run automated tests on-demand against Team Foundation builds from test plans in the Test hub with a build or release pipeline
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.prod: devops
 ms.technology: devops-test
@@ -38,7 +38,7 @@ You will need:
   [Visual Studio 2017](associate-automated-test-with-test-case.md), 
   or [Visual Studio 2015 or earlier](https://msdn.microsoft.com/en-us/library/dd380741%28v=vs.120%29.aspx).
 
-* A [Team Build definition](../pipelines/apps/windows/dot-net.md)
+* A [Team Build pipeline](../pipelines/apps/windows/dot-net.md)
   that generates builds containing the test binaries.
 
 * The app to test. You can deploy the app as part of the 
@@ -51,7 +51,7 @@ You must also be a Project Contributor, or have the following permissions:
 * Edit release environment
 * Manage deployment
 
-For more information, see [Set permissions for release definitions](../pipelines/policies/set-permissions.md#set-permissions-for-release-definitions) and
+For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md#set-permissions-for-release-pipelines) and
 [Release permissions](../pipelines/policies/permissions.md#release-permissions).
 
 ## Set up your environment
@@ -61,27 +61,27 @@ For more information, see [Set permissions for release definitions](../pipelines
 
    ![Choosing Test plan settings](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-101.png)
 
-1. In the Test plan settings dialog, select the build definition that generates builds which
+1. In the Test plan settings dialog, select the build pipeline that generates builds which
    contain the test binaries. You can then select a specific build number to test, or let the
    system automatically use the latest build when tests are run.
 
    ![Selecting the build and build number](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102.png)
 
-1. You will need a release definition that was created from the 
+1. You will need a release pipeline that was created from the 
    **Run automated tests from Test Manager** template to run tests from test plans
-   in the **Test** hub. If you have an existing release definition that was created
+   in the **Test** hub. If you have an existing release pipeline that was created
    using this template, select it and then select the existing environment in the
-   release definition where the tests will be executed.
+   release pipeline where the tests will be executed.
    Otherwise, choose the **Create new** link in the
-   dialog to create a new release definition containing a single environment
+   dialog to create a new release pipeline containing a single environment
    with the **Visual Studio Test** task already added.
 
-   ![Selecting a release definition or creating a new one](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102a.png)
+   ![Selecting a release pipelines or creating a new one](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102a.png)
 
    [How do I pass parameters to my test code from a build or release pipeline?](../pipelines/test/reference-qa.md#pass-params)
 
-1. To configure the **Visual Studio Test** task and the release definition,
-   start by assigning meaningful names to the release definition and environment.
+1. To configure the **Visual Studio Test** task and the release pipeline,
+   start by assigning meaningful names to the release pipeline and environment.
    Then select the **Visual Studio Test** task and configure it as follows:
  
    * Verify that version 2 of the Visual Studio Test task is selected.
@@ -106,7 +106,7 @@ For more information, see [Set permissions for release definitions](../pipelines
    * If your tests need input parameters such as app URLs or database
      connection strings, select the relevant settings file from the
      build artifacts. You can use the **Publish build artifacts** tasks
-     in you build definition to publish the settings file in a drop
+     in you build pipeline to publish the settings file in a drop
      location if this file is not included in the artifacts.
      In the example shown below, the application URL is exposed in the
      run settings file, and is overridden to set it to a staging URL
@@ -132,20 +132,20 @@ For more information, see [Set permissions for release definitions](../pipelines
    on the machines must be running in interactive mode and not
    as a service. [More details](../pipelines/test/reference-qa.md#faq-agentmode). 
 
-1. In the **Pipeline** tab of the release definition, verify
-   that the build definition containing the test binaries is linked
-   to this release definition as an artifact source.  
+1. In the **Pipeline** tab of the release pipeline, verify
+   that the build pipeline containing the test binaries is linked
+   to this release pipeline as an artifact source.  
 
    ![Verifying the linked build artifacts](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-106.png)
  
-1. Save the release definition.
+1. Save the release pipeline.
 
 1. If you chose **Create new** in the Test plan settings dialog in step 2
    of this example, return to the browser tab containing your test plan
-   settings. In the Test plan settings dialog, select the release definition
+   settings. In the Test plan settings dialog, select the release pipeline
    and environment you just saved.
 
-   ![Selecting the release definition and environment](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-107.png)
+   ![Selecting the release pipeline and environment](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-107.png)
 
 ## Run the automated tests
 
@@ -158,14 +158,14 @@ For more information, see [Set permissions for release definitions](../pipelines
    ![Selecting Run test](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-108.png)
 
    The test binaries for these tests must be available
-   in the build artifacts generated by your build definition.
+   in the build artifacts generated by your build pipeline.
 
 1. Choose **OK** to start the testing process. The system checks that only
    automated tests are selected (any manual tests are ignored),
    validates the environment to ensure the Visual Studio Test
    task is present and has valid settings, checks the user's
    permission to create a release for the selected release
-   definition, creates a test run, and then triggers the creation
+   pipeline, creates a test run, and then triggers the creation
    of a release to the selected environment.
 
    ![Starting the test execution](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-109.png)

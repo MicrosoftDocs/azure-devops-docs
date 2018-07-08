@@ -11,12 +11,16 @@ ms.date: 10/18/2017
 
 # Publish symbols for debugging
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 [!INCLUDE [](../../package/_shared/availability-symbols.md)]
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/vsts/package/concepts/symbols); to consume symbols, see [this page for Visual Studio](/vsts/package/symbols/debug-with-symbols-visual-studio) or [this page for WinDbg](/vsts/package/symbols/debug-with-symbols-windbg).
 
 ## Publish symbols
-In order to publish symbols to the Package Management symbol server in VSTS, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build definition. Configure the task as follows:
+In order to publish symbols to the Package Management symbol server in VSTS, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
 
 * For **Version**, select the 2.\* (preview).  
 * For **Symbol Server Type**, select **VSTS**. 
@@ -27,7 +31,7 @@ For example, ```**\bin\**\*.pdb``` searches for all *.pdb* files in all subdirec
 ![Publish Symbols Task](_img/symboltaskv2.png)
 
 ### Publish symbols for NuGet packages
-To publish symbols for NuGet packages, include the above task in the build definition that produces the NuGet packages. Then the symbols will be available to all users in the VSTS account.
+To publish symbols for NuGet packages, include the above task in the build pipeline that produces the NuGet packages. Then the symbols will be available to all users in the VSTS account.
 
 ## Portable PDBs
 

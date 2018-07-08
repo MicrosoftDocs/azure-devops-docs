@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/pythonscript.png) Run a Python script.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

@@ -12,10 +12,13 @@ ms.date: 08/12/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Run Git commands in a script
 
 [!INCLUDE [temp](../_shared/version.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 For some workflows you need your build process to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.  
 
@@ -60,8 +63,7 @@ Grant permissions needed for the Git commands you want to run. Typically you'll 
 
 When you're done granting the permissions, make sure to click **Save changes**.
 
-
-### Enable your build definition to run Git.exe
+### Enable your build pipeline to run git.exe
 
 On the [variables tab](../build/variables.md) set this variable:
 
@@ -89,7 +91,7 @@ If you run into problems using an on-premises agent, to make sure the repo is cl
 
 ### List the files in your repo
 
-Make sure to follow the above steps to [enable Git.exe](#enable).
+Make sure to follow the above steps to [enable git.exe](#enable).
 
 On the [build tab](../tasks/index.md) add this task:
 
@@ -101,7 +103,7 @@ On the [build tab](../tasks/index.md) add this task:
 
 You want a CI build to merge to master if the build succeeds.
 
-Make sure to follow the above steps to [enable Git.exe](#enable).
+Make sure to follow the above steps to [enable git.exe](#enable).
 
 On the [Triggers tab](../build/triggers.md) select **Continuous integration (CI)** and include the branches you want to build.
 
@@ -163,7 +165,7 @@ Add ```***NO_CI***``` to your commit message. For example, ```git merge origin/f
 
 ### How does enabling scripts to run Git commands affect how the build process gets build sources?
 
-When you set ```system.prefergit``` to ```true```, the build process uses Git.exe instead of LibGit2Sharp to clone or fetch the source files.
+When you set ```system.prefergit``` to ```true```, the build process uses git.exe instead of LibGit2Sharp to clone or fetch the source files.
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 

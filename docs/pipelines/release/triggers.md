@@ -16,15 +16,19 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 You can configure when releases should be created, and when those releases should be deployed to environments,
 in your DevOps CI/CD processes.
 The former is configured through [release triggers](#release-triggers),
-and the latter through [environment triggers](#env-triggers) - both in a release definition.
+and the latter through [environment triggers](#env-triggers) - both in a release pipeline.
 
 <h2 id="release-triggers">Release (continuous deployment) triggers</h2>
 
 If you specify [certain types](artifacts.md#sources) of
-artifacts in a release definition, you can enable continuous deployment.
+artifacts in a release pipeline, you can enable continuous deployment.
 This instructs Release Management to create
 new releases automatically when it detects new artifacts
 are available. At present this option is available only for Team Foundation Build artifacts
@@ -32,7 +36,7 @@ and Git-based sources such as Team Foundation Git, GitHub, and other Git reposit
 
 ![Selecting a trigger for a release](_img/trigger-01.png)
 
-If you have linked multiple Team Foundation Build artifacts to a release definition,
+If you have linked multiple Team Foundation Build artifacts to a release pipeline,
 you can configure continuous deployment for each of them.
 In other words, you can choose to have a release created automatically when a new build
 of any of those artifacts is produced.
@@ -45,10 +49,10 @@ For example, use **features/\*** to include all builds under the **features** br
 You can also include [custom variables](variables.md) in a filter value.
 
 Alternatively, you can specify a filter to use the default branch specified
-in the build definition. This is useful when, for example, the default build branch
+in the build pipeline. This is useful when, for example, the default build branch
 changes in every development sprint. It means you don't need to update the trigger
-filter across all release definitions for every change - instead you just change the
-default branch in the build definition.
+filter across all release pipelines for every change - instead you just change the
+default branch in the build pipeline.
 
 >Note that, even though a release is automatically created, it
 might not be deployed automatically to any environments. The
@@ -66,7 +70,7 @@ when a release is created by a continuous deployment trigger, based on:
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
 
-* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release definition,
+* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release pipeline,
   and specify if you want to include or exclude particular branches of the code.
   Deployment will be triggered to this environment only if all the artifact conditions are successfully met.
 
@@ -79,7 +83,7 @@ when a release is created by a continuous deployment trigger, based on:
   but the combination of these allows you to orchestrate
   the overall deployment - such as the sequence in which automated
   deployments occur across all the environments in a release
-  definition. For example, you can set up a linear pipeline where
+  pipeline. For example, you can set up a linear pipeline where
   a release is deployed first to the **Test** and **QA** environments.
   Then, if these two deployments succeed, it will be deployed to a **Staging**
   environment. In addition, you can configure the trigger to fire
@@ -90,7 +94,7 @@ when a release is created by a continuous deployment trigger, based on:
 * **Manually by a user**. Releases are
   not automatically deployed to the environment. To
   deploy a release to this environment, you must manually
-  start a release and deployment from the release definition
+  start a release and deployment from the release pipeline
   or from a build summary.
 
 You can combine the automated settings to have releases created
@@ -101,7 +105,7 @@ a schedule.
 
 > **TFS 2015**: The following features are not available in TFS 2015 -
 continuous deployment triggers for multiple artifact sources,
-multiple scheduled triggers, combining scheduled and continuous deployment triggers in the same definition,
+multiple scheduled triggers, combining scheduled and continuous deployment triggers in the same pipeline,
 continuous deployment based on the branch or tag of a build.
 
 ::: moniker-end
@@ -135,7 +139,7 @@ almost any release scenario.
 ::: moniker-end
 
 Note that you can always deploy a release directly to any of the
-environments in your release definition by selecting the
+environments in your release pipeline by selecting the
 **Deploy** action when you create a new release. In this case, the
 environment triggers you configure, such as a trigger
 on successful deployment to another environment, do not

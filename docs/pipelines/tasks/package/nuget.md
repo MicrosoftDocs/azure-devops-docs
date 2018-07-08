@@ -31,7 +31,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 > [!NOTE]
 > Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
@@ -292,7 +292,7 @@ This task is unable to publish NuGet packages to a TFS Package Management feed t
 
 ## Custom NuGet command
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

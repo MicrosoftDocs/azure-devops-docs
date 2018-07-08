@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2015'
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 You will typically need to connect to external and remote services to execute tasks
 for a build or deployment. For example, you may need to connect to your Microsoft Azure
 subscription, to a different build server or file server, to an online continuous
@@ -23,7 +27,7 @@ integration environment, or to services you install on remote computers.
 
 You can define endpoints in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) that are available for use in all
 your tasks. For example, you can create an endpoint for your Azure subscription
-and use this endpoint name in an Azure Web Site Deployment task in a release definition.
+and use this endpoint name in an Azure Web Site Deployment task in a release pipeline.
 
 You define and manage service endpoints from the Admin settings of your project.
 * VSTS: `https://{account}.visualstudio.com/{teamproject}/_admin/_services`
@@ -124,7 +128,7 @@ using Service Principal Authentication (SPA). The dialog offers two modes:
   If no subscriptions are shown, or subscriptions other than the one you want to use, you must sign out of VSTS or TFS and sign in again
   using the appropriate account credentials.
 
-* **Manual subscription definition**. In this mode, you must specify the service principal you want to use to connect to Azure. The service principal specifies the resources and the access levels that will be available over the connection.
+* **Manual subscription pipeline**. In this mode, you must specify the service principal you want to use to connect to Azure. The service principal specifies the resources and the access levels that will be available over the connection.
   Use this approach when you need to connect to an Azure account using different credentials from those you are currently logged on with in VSTS or TFS.
   This is also a useful way to maximize security and limit access.
 
@@ -464,7 +468,7 @@ Defines and secures a connection to the Subversion repository.
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server repository URL | Required. The URL of the repository. |
 | Accept untrusted SSL certificates | Set this option to allow the client to accept self-signed certificates installed on the agent computer(s). |
-| Realm name | Optional. If you use multiple credentials in a build or release definition, use this parameter to specify the realm containing the credentials specified for this endpoint. |
+| Realm name | Optional. If you use multiple credentials in a build or release pipeline, use this parameter to specify the realm containing the credentials specified for this endpoint. |
 | User name | Required. The username to connect to the service. |
 | Password | Required. The password for the specified username. |
 <p />
@@ -549,7 +553,7 @@ You can control who can define new service endpoints in a library, and who can u
 
 | Role on a library service endpoint | Purpose |
 |------------------------------------|---------|
-| User | Members of this role can use the endpoint when authoring build or release definitions. |
+| User | Members of this role can use the endpoint when authoring build or release pipelines. |
 | Administrator | In addition to using the endpoint, members of this role can manage membership of all other roles for the service endpoint. The user that created the service endpoint is automatically added to the Administrator role for that service endpoint.
 
 Two special groups called **Endpoint administrators** and **Endpoint creators** are added to every project. 

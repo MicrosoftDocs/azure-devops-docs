@@ -16,21 +16,25 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 <a name="introduction"/>
 An **environment** is a _logical_ and _independent_ entity that
 represents where you want to deploy a release generated from a release
-definition. We'll examine these two characteristics in more detail
+pipeline. We'll examine these two characteristics in more detail
 to help you understand how to divide your release process into
 environments in your DevOps CI/CD processes.
 
-First, an environment in a release definition is a **logical** entity.
+First, an environment in a release pipeline is a **logical** entity.
 It can represent any physical or real environment that you need.
 For example, the deployment in an environment may be to a collection of servers,
 a cloud, or multiple clouds. In fact, you can even use an environment to represent
 shipping the software to an app store, or the manufacturing process of a boxed product.
 
-Second, you must be able to deploy to an environment **independently** of other environments in the definition.
-For example, your definition might consist of two environments A and B, and Release Management could deploy Release 2
+Second, you must be able to deploy to an environment **independently** of other environments in the pipeline.
+For example, your pipeline might consist of two environments A and B, and Release Management could deploy Release 2
 to A and Release 1 to B. If you make any assumptions in B about the existence of a certain release in A, the
 two environments are not independent. 
 
@@ -38,11 +42,11 @@ Here are some suggestions and examples for environments:
 
 * **Dev, QA, Prod** - As new builds are produced, they can be deployed to Dev. They can then be promoted to QA, and finally to Prod.
   At any time, each of these environments may have a different release (set of build artifacts) deployed to them. 
-  This is a good example of the use of environments in a release definition.
+  This is a good example of the use of environments in a release pipeline.
 
 * **Customer adoption rings** (for example, early adopter ring, frequent adopter ring, late adopter ring) -
   You typically want to deploy new or beta releases to your early adopters more often than to other users.
-  Therefore, you are likely to have different releases in each of these rings. This is a good example of the use of environments in a definition.
+  Therefore, you are likely to have different releases in each of these rings. This is a good example of the use of environments in a pipeline.
 
 * **Database and web tiers of an application** - These should be modeled as a single environment
   because you want the two to be in sync. If you model these as separate environments, you risk
@@ -59,7 +63,7 @@ Here are some suggestions and examples for environments:
   Instead, you must model this as a single environment with parallel deployment to multiple sites
   (typically by using [phases](../process/phases.md)).
 
-* **Multiple test environments to test the same application** - Having one or more release definitions,
+* **Multiple test environments to test the same application** - Having one or more release pipelines,
   each with multiple environments intended to run test automation for a build, is a common practice.
   This is fine if each of the environments deploys the build independently, and then runs tests.
   However, if you set up the first environment to deploy the build, and subsequent environments to test
@@ -78,7 +82,7 @@ and [queuing policies](#queuing-policies).
 
 In some cases, you may be generating builds more quickly than
 they can be deployed. Alternatively, you may configure multiple
-[agents](../agents/agents.md) and, for example, be creating releases from the same release definition
+[agents](../agents/agents.md) and, for example, be creating releases from the same release pipeline
 for deployment of different artifacts. In such cases, it's useful to
 be able to control how multiple releases are queued into an
 environment. **Queuing policies** give you that control.
@@ -111,9 +115,9 @@ The options you can choose for a queuing policy are:
 
 To understand how these options work, consider a scenario
 where releases **R1**, **R2**, **...**, **R5** of a
-single release definition are created in quick succession
+single release pipeline are created in quick succession
 due to new builds being produced rapidly. Assume that
-the first environment in this definition is named **QA**
+the first environment in this pipeline is named **QA**
 and has both pre-deployment and post-deployment approvers
 defined.
 
@@ -146,7 +150,7 @@ defined.
 
 While the most important part of defining an environment is the
 automation tasks, you can also configure several properties and options
-for an environment in a release definition. You can:
+for an environment in a release pipeline. You can:
 
 * Edit the name of the environment here if required.
 
@@ -175,12 +179,12 @@ for an environment in a release definition. You can:
 
 ### Why do we call these _environments_ instead of _stages_?
 
-Primarily, to communicate the intent that they must be independent in a release definition.
+Primarily, to communicate the intent that they must be independent in a release pipeline.
 We felt that this term implies that you can have two different
 releases (sets of build artifacts) deployed to two environments
-within a definition at the same time. Release Management also allows
+within a pipeline at the same time. Release Management also allows
 you to deploy to multiple environments in parallel, and to directly
-deploy to any environment within the definition provided you have
+deploy to any environment within the pipeline provided you have
 appropriate permission. It also helps you answer the question "Which release
 is currently deployed to a specific environment?".
 
@@ -205,11 +209,11 @@ unit of deployment for your application, so you can deploy both the
 resource groups using a single environment. For more guidance on
 environments see the [introductory section](#introduction) above.
 
-### At the end of my pipeline, I update the binaries in an app store. I really do not have any environment in this case. How do I model this in a release definition?
+### At the end of my pipeline, I update the binaries in an app store. I really do not have any environment in this case. How do I model this in a release pipeline?
 
 An environment is a logical entity that can be used to perform any
 automation. It doesn't need to map to any physical resources.
-Therefore, you can add an environment to your release definition
+Therefore, you can add an environment to your release pipeline
 and add tasks to it to upload your binaries to the app store.
 
 ## Related topics

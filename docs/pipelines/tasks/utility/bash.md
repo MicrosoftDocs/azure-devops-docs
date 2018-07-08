@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/bash.png) This is an early preview. Run a Bash script on macOS, Linux, or Windows
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

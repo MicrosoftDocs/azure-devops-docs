@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2015'
 
 curl
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

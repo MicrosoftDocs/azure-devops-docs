@@ -1,6 +1,6 @@
 ---
 description: Service Fabric Application Deployment task
-title: Service Fabric Application Deployment task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS 
+title: Service Fabric Application Deployment task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS 
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 ![icon](_img/azure-service-fabric.png) Deploy a Service Fabric application to a cluster.
 
 This task deploys an Azure Service Fabric application to a cluster 
@@ -28,7 +32,7 @@ This task uses a Service Fabric installation to connect and
 deploy to a Service Fabric cluster.  
 [Download and install Service Fabric](https://aka.ms/servicefabric) on the build agent.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

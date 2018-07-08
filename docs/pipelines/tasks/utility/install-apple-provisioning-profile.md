@@ -13,10 +13,7 @@ ms.date: 11/14/2017
 monikerRange: '>= tfs-2018'
 ---
 
-
 # Utility: Install Apple Provisioning Profile
-
-**VSTS** | **TFS 2018**
 
 ![](../build/_img/xcode.png) Install an Apple provisioning profile required to build on a macOS agent
 
@@ -30,7 +27,7 @@ You can install an Apple provisioning profile that is:
 
 xcode
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

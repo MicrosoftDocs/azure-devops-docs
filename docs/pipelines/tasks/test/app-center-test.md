@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/appcentertest.png) Test app packages with Visual Studio App Center.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
@@ -51,7 +51,7 @@ monikerRange: 'vsts'
 <tr><td>Authentication method</td><td>(Required) Use App Center service endpoint connection or enter credentials to connect to Visual Studio App Center.</td></tr>
 <tr><td>App Center connection</td><td>(Required) Select the service endpoint for your Visual Studio App Center connection. To create one, click the Manage link and create a new service endpoint.</td></tr>
 <tr><td>App Center username</td><td>(Required) Visit https://appcenter.ms/settings/profile to get your username.</td></tr>
-<tr><td>App Center password</td><td>(Required) Visit https://appcenter.ms/settings/profile to set your password. It can accept variable defined in Build/Release definitions as '$(passwordVariable)'. You may mark variable type as 'secret' to secure it.</td></tr>
+<tr><td>App Center password</td><td>(Required) Visit https://appcenter.ms/settings/profile to set your password. It can accept variable defined in Build/Release pipelines as '$(passwordVariable)'. You may mark variable type as 'secret' to secure it.</td></tr>
 <tr><td>App slug</td><td>(Required) The app slug is in the format of {username}/{app_identifier}.  To locate {username} and {app_identifier} for an app, click on its name from https://appcenter.ms/apps, and the resulting url is in the format of https://appcenter.ms/users/{username}/apps/{app_identifier}.</td></tr>
 <tr><td>Devices</td><td>(Required) String to identify what devices this test will run against.  Copy and paste this string when you define a new test run from App Center Test beacon.</td></tr>
 <tr><td>Test series</td><td>(Optional) The series name for organizing test runs (e.g. master, production, beta).</td></tr>

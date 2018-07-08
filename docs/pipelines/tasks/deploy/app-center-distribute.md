@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/appcenterdistribute.png) Distribute app builds to testers and users via App Center
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

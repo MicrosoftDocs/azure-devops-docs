@@ -13,38 +13,41 @@ ms.date: 02/12/18
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Set build and release permissions
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
 
 In addition to permission assignments, you manage security for several resources&mdash;such as variable groups, secure files, and deployment groups&mdash;by adding users or groups to a role. You grant or restrict permissions by setting the [permission state to Allow or Deny](../../organizations/security/about-permissions.md), either for a security group or an individual user. For definitions of each build and release permission and role, see [Build and release permissions](permissions.md).  
 
-## Set permissions for build definitions
+## Set permissions for build pipelines
 
-1. To set the permissions for all build definitions, click the Security From the web portal **Build-Release** hub, **Builds** page
+1. To set the permissions for all build pipelines, click the Security From the web portal **Build-Release** hub, **Builds** page
 
-   ![Open the Security dialog for all build definitions](_img/set-build-release-permissions/open-all-build-definitions-security.png)
+   ![Open the Security dialog for all build pipelines](_img/set-build-release-permissions/open-all-build-definitions-security.png)
 
-  To set the permissions for a specific build definition, open the context menu for the build and click Security.
+  To set the permissions for a specific build pipeline, open the context menu for the build and click Security.
 
-   <img src="_img//set-build-release-permissions/set-build-permission-open-dialog.png" alt="Open the security dialog for a build definition" style="border: 1px solid #C3C3C3;" />
+   <img src="_img//set-build-release-permissions/set-build-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
 
 1. Choose the group you want to set permissions for, and then change the permission setting to Allow or Deny. 
 
-   For example, here we change the permission for Edit build definition for the Contributors group to Allow. 
+   For example, here we change the permission for Edit build pipeline for the Contributors group to Allow. 
 
-   <img src="_img/set-build-release-permissions/set-build-permission-dialog.png" alt="Security dialog for a build definition" style="border: 1px solid #C3C3C3;" />
+   <img src="_img/set-build-release-permissions/set-build-permission-dialog.png" alt="Security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
 
 1. Save your changes.
 
-## Set permissions for release definitions
+## Set permissions for release pipelines
 
-1. From the web portal **Build-Release** hub, **Releases** page, open the Security dialog for all release definitions.
+1. From the web portal **Build-Release** hub, **Releases** page, open the Security dialog for all release pipelines.
 
-   <img src="_img/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a build definition" style="border: 1px solid #C3C3C3;" />
+   <img src="_img/set-build-release-permissions/set-release-permission-open-dialog.png" alt="Open the security dialog for a build pipeline" style="border: 1px solid #C3C3C3;" />
 
    If you want to manage the permissions for a specific release, then open the Security dialog for that release. 
 
@@ -52,7 +55,7 @@ In addition to permission assignments, you manage security for several resources
 
    For example, here we deny access to several permissions for the Contributors group. 
 
-   <img src="_img/set-build-release-permissions/set-release-permission-dialog.png" alt="Security dialog for a release definition" style="border: 1px solid #C3C3C3;" />
+   <img src="_img/set-build-release-permissions/set-release-permission-dialog.png" alt="Security dialog for a release pipeline" style="border: 1px solid #C3C3C3;" />
 
 1. Save your changes. 
 
@@ -98,7 +101,7 @@ For example, here we show how to set the security for variable groups.
 
 ## Manage task group permissions
 
-Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release definition into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
+Permissions for task groups are subject to a hierarchical model. You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
 
 > [!NOTE]
 > **Feature availability**: These features are available on VSTS and TFS 2017 and later versions. 
