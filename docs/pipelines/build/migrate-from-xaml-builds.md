@@ -12,16 +12,19 @@ ms.date: 04/17/2018
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Migrate from XAML builds to new builds
 
 **VSTS | TFS 2018 | TFS 2017 | XAML builds**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 We introduced XAML build automation capabilities based on the Windows Workflow Foundation in Team Foundation Server (TFS) 2010. We released another version of [XAML builds](http://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx) in TFS 2013. 
 
 After that we sought to expand beyond .NET and Windows and add support for other kinds of apps that are based on operating systems such as macOS and Linux. It became clear that we needed to switch to a more open, flexible, web-based foundation for our build automation engine. In early 2015 in VSTS, and then in TFS 2015, we introduced a simpler task- and script-driven cross-platform build system.
 
-Because the systems are so different, there's no automated or general way to migrate a XAML build definition into a new build definition.  The migration process is to manually create the new build definitions that replicate what your XAML builds do. 
+Because the systems are so different, there's no automated or general way to migrate a XAML build pipeline into a new build pipeline.  The migration process is to manually create the new build pipelines that replicate what your XAML builds do. 
 
 If you're building standard .NET applications, you probably used our default templates as provided out-of-the-box. In this case the process should be reasonably easy. 
 
@@ -33,42 +36,42 @@ Here are the steps to migrate from XAML builds to newer builds:
 
 1. If you're using a private TFS server, [set up agents](../agents/v2-windows.md) to run your builds.
 
-1. To get familiar with the new build system, create a ["Hello world" build definition](../get-started-designer.md).
+1. To get familiar with the new build system, create a ["Hello world" build pipeline](../get-started-designer.md).
 
-1. Create a new build definition intended to replace one of your XAML build definitions. 
+1. Create a new build pipeline intended to replace one of your XAML build pipelines. 
 
- 1. Create a new build definition.
+ 1. Create a new build pipeline.
  
  1. Port your XAML settings.
 
-1. On the [General tab](#general-tab), disable the XAML build definition.
+1. On the [General tab](#general-tab), disable the XAML build pipeline.
 
-1. Repeat the previous two steps for each of your XAML build definitions.
+1. Repeat the previous two steps for each of your XAML build pipelines.
 
 1. Take advantage of new build features and learn more about the kinds of apps you can build.
 
 1. Learn how to customize, and if necessary extend your system.
 
-1. When you no longer need the history and artifacts from your XAML builds, delete the XAML builds, and then the XAML build definitions.
+1. When you no longer need the history and artifacts from your XAML builds, delete the XAML builds, and then the XAML build pipelines.
 
  > [!WARNING]
  > After you delete the XAML builds and definitions, you cannot get them back.
 
-## Create new build definitions
+## Create new build pipelines
 
-If you're building a standard .NET app, you're probably using one of the out-of-the-box build templates such as TfvcTemplate.12.xaml or GitTemplate.12.xaml. In this case, it will probably just take you a few clicks to create build definitions in the new build system.
+If you're building a standard .NET app, you're probably using one of the out-of-the-box build templates such as TfvcTemplate.12.xaml or GitTemplate.12.xaml. In this case, it will probably just take you a few clicks to create build pipelines in the new build system.
 
 <ol>
     [!INCLUDE [include](../_shared/begin-create-build-definition.md)]
 
-<li>Select a template to add commonly used tasks to your build definition.</li>
+<li>Select a template to add commonly used tasks to your build pipeline.</li>
 
-<li>Make any necessary changes to your build definition to replicate your XAML build definition. The tasks added by the template should simply work in many cases. But if you changed process parameters or other settings in your XAML build definitions, below are some pointers to get you started replicating those changes.</li>
+<li>Make any necessary changes to your build pipeline to replicate your XAML build pipeline. The tasks added by the template should simply work in many cases. But if you changed process parameters or other settings in your XAML build pipelines, below are some pointers to get you started replicating those changes.</li>
 </ol>
 
 ## Port your XAML settings
 
-In each of the following sections we show the XAML user interface, and then provide a pointer to the place where you can port the setting into your new build definition.
+In each of the following sections we show the XAML user interface, and then provide a pointer to the place where you can port the setting into your new build pipeline.
 
 ### General tab
 
@@ -76,7 +79,7 @@ In each of the following sections we show the XAML user interface, and then prov
 
 | XAML setting | TFS 2017 equivalent | VSTS and TFS 2018 and newer equivalent |
 |-|-|-|
-| Build definition name | You can change it whenever you save the definition. | <p>When editing the definition: On the **Tasks** tab, in left pane click **Process**, and the **Name** field appears in right pane.</p><p>In the **Builds** hub (**Mine** or **All Definitions** tab), open the action menu and choose **Rename**.</p> |
+| Build pipeline name | You can change it whenever you save the pipeline. | <p>When editing the pipeline: On the **Tasks** tab, in left pane click **Process**, and the **Name** field appears in right pane.</p><p>In the **Builds** hub (**Mine** or **All Definitions** tab), open the action menu and choose **Rename**.</p> |
 | Description (optional) | Not supported. | Not supported. |
 | Queue processing | Not yet supported. As a partial alternative, disable the triggers. | Not yet supported. As an alternative, disable the triggers. |
 
@@ -90,7 +93,7 @@ In each of the following sections we show the XAML user interface, and then prov
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify your mappings with Active paths as **Map** and Cloaked paths as **Cloak**. | On the **Tasks** tab, in left pane click **Get sources**. Specify your workspace mappings with Active paths as **Map** and Cloaked paths as **Cloak**. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition source repositories](../build/repository.md).
+The new build pipeline offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build pipeline source repositories](../build/repository.md).
 
 #### Git
 
@@ -100,7 +103,7 @@ The new build definition offers you some new options. The specific extra options
 |-|-|-|
 | Source Settings tab | On the **Repository** tab specify the repository and default branch. | On the **Tasks** tab, in left pane click **Get sources**. Specify the repository and default branch. |
 
-The new build definition offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build definition source repositories](../build/repository.md).
+The new build pipeline offers you some new options. The specific extra options you'll see depend on the version you're using of TFS or VSTS.  If you're using VSTS, first make sure to display **Advanced settings**. See [Build pipeline source repositories](../build/repository.md).
 
 ### Trigger tab
 
@@ -110,9 +113,9 @@ The new build definition offers you some new options. The specific extra options
 |-|-|
 |Trigger tab | On the **Triggers** tab, select the trigger you want to use: CI, scheduled, or gated. |
 
-The new build definition offers you some new options. For example:
+The new build pipeline offers you some new options. For example:
 
-* You can potentially create fewer build definitions to replace a larger number of XAML build definitions. This is because you can use a single new build definition with multiple triggers. And if you're using VSTS, then you can add multiple scheduled times.
+* You can potentially create fewer build pipelines to replace a larger number of XAML build pipelines. This is because you can use a single new build pipeline with multiple triggers. And if you're using VSTS, then you can add multiple scheduled times.
 
 * The **Rolling builds** option is replaced by the **Batch changes** option. You can't specify minimum time between builds. But if you're using VSTS, you can specify the maximum number of concurrent builds per branch.
 
@@ -122,7 +125,7 @@ The new build definition offers you some new options. For example:
 
 * If your code is in Git, then you specify the branch filters directly on the **Triggers** tab. And you can add folder path filters to include or exclude certain sets of files from triggering a CI build.
 
-The specific extra options you'll see depend on the version you're using of TFS or VSTS. See [Build definition triggers](../build/triggers.md)
+The specific extra options you'll see depend on the version you're using of TFS or VSTS. See [Build pipeline triggers](../build/triggers.md)
 
 We don't yet support the **Build even if nothing has changed since the previous build** option.
 
@@ -135,7 +138,7 @@ We don't yet support the **Build even if nothing has changed since the previous 
 | Build controller | On the **General** tab, select the default agent queue. | On the **Options** tab, select the default agent queue. |
 | Staging location | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../build/artifacts.md). | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../build/artifacts.md). |
 
-The new build definition offers you some new options. For example:
+The new build pipeline offers you some new options. For example:
 
 * You don't need a controller, and the new agents are easier to set up and maintain. See [Build and release agents](../agents/agents.md).
 
@@ -150,10 +153,10 @@ The new build definition offers you some new options. For example:
 | XAML process parameter | TFS 2017 and newer equivalent | VSTS equivalent |
 |-|-|-|
 | Clean workspace | On the **Repository** tab, open the **Clean** menu, and then select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Display **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
-| Get version | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. | You can't specify a changeset in the build definition, but you can specify one when you manually queue a build. |
+| Get version | You can't specify a changeset in the build pipeline, but you can specify one when you manually queue a build. | You can't specify a changeset in the build pipeline, but you can specify one when you manually queue a build. |
 | Label Sources | On the **Repository** tab, select an option from the **Label sources** menu. | **Tasks** tab, in left pane click **Get sources**. Select one of the **Tag sources** options. (We plan to change the name of this to **Label sources**.) |
 
-The new build definition offers you some new options. See [Build definition source repositories](../build/repository.md).
+The new build pipeline offers you some new options. See [Build pipeline source repositories](../build/repository.md).
 
 #### Git
 
@@ -162,9 +165,9 @@ The new build definition offers you some new options. See [Build definition sour
 | XAML process parameter | TFS 2017 and newer equivalent | VSTS equivalent |
 |-|-|-|
 | Clean repository | **Repository** tab, open **Clean** menu, select **true**. | On the **Tasks** tab, in left pane click **Get sources**. Show **Advanced settings**, and then select **Clean**. (We plan to change move this option out of advanced settings.) |
-| Checkout override | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. | You can't specify a commit in the build definition, but you can specify one when you manually queue a build. |
+| Checkout override | You can't specify a commit in the build pipeline, but you can specify one when you manually queue a build. | You can't specify a commit in the build pipeline, but you can specify one when you manually queue a build. |
 
-The new build definition offers you some new options. See [Build definition source repositories](../build/repository.md).
+The new build pipeline offers you some new options. See [Build pipeline source repositories](../build/repository.md).
 
 #### Build
 
@@ -187,7 +190,7 @@ On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (VSTS), after you
 > 
 > In the Visual Studio Build arguments, on the **Visual Studio Version** menu, make sure to select version of Visual Studio that you're using.
 
-The new build definition offers you some new options. See [Visual Studio Build](../tasks/build/visual-studio-build.md).
+The new build pipeline offers you some new options. See [Visual Studio Build](../tasks/build/visual-studio-build.md).
 
 Learn more: [Visual Studio Build task](../tasks/build/visual-studio-build.md) (for building solutions), [MSBuild task](../tasks/build/msbuild.md) (for building individual projects).
 
@@ -218,7 +221,7 @@ See [Get started with continuous testing](../test/getting-started-with-continuou
 | Create work item on failure | On the **Options** tab, select this check box. | On the **Options** tab, enable this option. |
 | Update work items with build number | None | On the **Options** tab you can enable **Automatically link new work in this build**. | 
 
-The new build definition offers you some new options. See:
+The new build pipeline offers you some new options. See:
 
 * [Agent capabilities](../agents/agents.md#capabilities)
 
@@ -232,7 +235,7 @@ The new build definition offers you some new options. See:
 |-|-|
 | Retention Policy tab | On the **Retention** tab specify the policies you want to implement. | 
 
-The new build definition offers you some new options. See [Build and release retention policies](../policies/retention.md).
+The new build pipeline offers you some new options. See [Build and release retention policies](../policies/retention.md).
 
 ## Build and release different kinds of apps
 
@@ -258,7 +261,7 @@ The new Team Build is tightly integrated with Release Management. So it's easier
 
 * [CI/CD Hello world](../get-started-designer.md)
 
-* [Release definitions](../release/index.md)
+* [Release pipelines](../release/index.md)
 
 * [Triggers](../release/triggers.md)
 
@@ -294,7 +297,7 @@ A major feature of the new build system is its emphasis on using scripts to cust
 
 > [!TIP]
 > 
-> If you're using TFS 2017 or newer, you can write a short PowerShell script directly inside your build definition. 
+> If you're using TFS 2017 or newer, you can write a short PowerShell script directly inside your build pipeline. 
 
 ![inline powershell script](_img/migrate-from-xaml-builds/inline-powershell-script.png)
 _TFS 2017 or newer inline PowerShell script_
@@ -311,11 +314,11 @@ In XAML builds you created custom XAML templates. In the new builds, it's easier
 
 ### Create a template
 
-If you don't see a template for the kind of app you can start from an empty definition and [add the tasks you need](../tasks/index.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](../get-started-designer.md).
+If you don't see a template for the kind of app you can start from an empty pipeline and [add the tasks you need](../tasks/index.md). After you've got a pattern that you like, you can clone it or save it as a template directly in your web browser. See [CI/CD Hello world](../get-started-designer.md).
 
 ### Task groups (TFS 2017 or newer)
 
-In XAML builds, if you change the template, then you also change the behavior of all definitions based on it. In the new build system, templates don't work this way. Instead, a template behaves as a traditional template. After you create the build definition, subsequent changes to the template have no effect on build definitions.
+In XAML builds, if you change the template, then you also change the behavior of all definitions based on it. In the new build system, templates don't work this way. Instead, a template behaves as a traditional template. After you create the build pipeline, subsequent changes to the template have no effect on build pipelines.
 
 If you want to create a reusable and automatically updated piece of logic, then [create a task group](../library/task-groups.md). You can then later modify the task group in one place and cause all the definitions that use it to automatically be changed.
 
@@ -349,7 +352,7 @@ If you're not yet ready to migrate, then to enable XAML builds:
 
 ### How do I add conditional logic to my build process?
 
-Although the new build definitions are essentially linear, we do give you control of the conditions under which a task runs.
+Although the new build pipelines are essentially linear, we do give you control of the conditions under which a task runs.
 
 On TFS 2015 and newer: You can select Enabled, Continue on error, or Always run.
 

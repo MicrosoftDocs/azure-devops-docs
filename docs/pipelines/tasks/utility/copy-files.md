@@ -18,11 +18,15 @@ monikerRange: '>= tfs-2015'
 
 ![](_img/copy-files.png) Copy files from a source folder to a target folder using match patterns.
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 ## Demands
 
 None
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
@@ -43,7 +47,7 @@ None
 <td>Source Folder</td>
 <td>
 <p>Folder that contains the files you want to copy. If you leave it empty, the copying is done from the root folder of the repo (same as if you had specified ```$(Build.SourcesDirectory)```).</p>
-<p>If your build produces artifacts outside of the sources directory, specify ```$(Agent.BuildDirectory)``` to copy files from the directory created for the definition.</p>
+<p>If your build produces artifacts outside of the sources directory, specify ```$(Agent.BuildDirectory)``` to copy files from the directory created for the pipeline.</p>
 </td>
 </tr>
 <tr>

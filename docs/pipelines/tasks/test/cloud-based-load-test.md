@@ -1,6 +1,6 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Load Test task
-description: Runs the load test in cloud with a build or release definition with VSTS to integrate cloud-based load tests into your build and release pipelines
+description: Runs the load test in cloud with a build or release pipeline with VSTS to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,12 +16,16 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 ![icon](_img/cloud-based-load-test-icon.png)
 Runs a load test in the cloud with VSTS.
 
 Use this task to understand, test, and validate your app's 
 performance. The task can be used in a build or release 
-definition to trigger a load test by using the 
+pipeline to trigger a load test by using the 
 VSTS Cloud-based Load Test Service.
 The Cloud-based Load Test Service is based in
 Microsoft Azure and can be used to test your app's 
@@ -34,7 +38,7 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

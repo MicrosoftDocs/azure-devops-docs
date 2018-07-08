@@ -12,18 +12,21 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Utility: PowerShell
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![](_img/powershell.png) Run a PowerShell script
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 ## Demands
 
 DotNetFramework
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
@@ -58,7 +61,7 @@ gci $Env:BUILD_SOURCESDIRECTORY
 Write-Host "Over and out."
 ```
 
-On the Build tab of a build definition, add this task:
+On the Build tab of a build pipeline, add this task:
 
 | Task | Arguments |
 | ---- | --------- |

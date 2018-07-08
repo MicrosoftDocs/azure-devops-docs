@@ -14,17 +14,19 @@ monikerRange: '>= tfs-2017'
 
 # Utility: Query Work Items
 
-**VSTS**
-
 ![icon](_img/query-work-items.png) &nbsp; Ensure the number of matching items returned by a work item query in within the configured thresholds.
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 ## Demands
 
 None
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

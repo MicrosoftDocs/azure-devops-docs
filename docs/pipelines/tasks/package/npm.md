@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2015'
 ### Demands
 [npm](https://nodejs.org/en/download/)
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

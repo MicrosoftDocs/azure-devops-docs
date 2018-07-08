@@ -8,6 +8,6 @@
 
  ![Screenshot showing dotnet core template](_img/apply-aspnet-core-build-template.png)
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the tasks that will automatically run every time you push code changes.
+ You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
 1. For the **Agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.

@@ -1,6 +1,6 @@
 ---
 title: Azure monitor task for Microsoft VSTS and TFS
-description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS with a build or release definition
+description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS with a build or release pipeline
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,17 +14,19 @@ monikerRange: '>= tfs-2017'
 
 # Utility: Query Azure Monitor Alerts
 
-**VSTS**
-
 ![icon](_img/azure-monitor.png) &nbsp; Observe the configured Azure monitor rules for active alerts.
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 ## Demands
 
 None
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

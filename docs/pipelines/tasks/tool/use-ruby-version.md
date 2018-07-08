@@ -13,8 +13,6 @@ monikerRange: 'vsts'
 
 # Tool: Use Ruby Version
 
-**VSTS**
-
 ![icon](_img/ruby.png) Selects a version of Ruby to run on an agent.  Optionally adds it to PATH.
 
 ## Demands
@@ -26,7 +24,7 @@ None
 
 This task will fail if no Ruby versions are found in the tool cache.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

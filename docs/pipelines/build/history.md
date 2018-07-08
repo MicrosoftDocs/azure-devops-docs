@@ -1,5 +1,5 @@
 ---
-title: Build definition history | VSTS or Team Foundation Server
+title: Build pipeline history | VSTS or Team Foundation Server
 description: Learn about how you can determine what changed, when it happened, and who did it on VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
@@ -12,9 +12,13 @@ ms.date: 3/15/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Build definition history
+# Build pipeline history
 
 [!INCLUDE [temp](../_shared/version.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 From the **History** tab you can see a list of changes that includes who made the change and when the change occurred. 
 
@@ -26,7 +30,7 @@ From the **History** tab you can see a list of changes that includes who made th
 
 ::: moniker range=">= tfs-2017"
 
-To work with a change, select it, click <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span>, and then click **Compare Difference** or **Revert Definition**.
+To work with a change, select it, click <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span>, and then click **Compare Difference** or **Revert Pipeline**.
 
 ::: moniker-end
 

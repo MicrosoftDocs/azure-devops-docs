@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2017  | TFS 2018**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 [Azure Government Clouds](https://azure.microsoft.com/en-us/overview/clouds/government/)
 provide private and semi-isolated locations for specific Government or other services, separate from the normal
 Azure services. Highest levels of privacy have been adopted for these clouds, including restricted data access policies.
@@ -29,7 +33,7 @@ To enable connection to an Azure Government Cloud, you specify it as the **Envir
 You must use the full version of the endpoint dialog to manually define the connection.
 Before you configure a service endpoint, you should also ensure you meet all relevant compliance requirements for your application.
 
-You can then use the service endpoint in your [build and release definition tasks](../tasks/index.md).
+You can then use the service endpoint in your [build and release pipeline tasks](../tasks/index.md).
 
 ### Next
 

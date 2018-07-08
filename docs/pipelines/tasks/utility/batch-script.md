@@ -12,14 +12,17 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Utility: Batch script
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![](_img/batch-script.png) Run a Windows .bat or .cmd script and optionally allow it to change the environment.
 
-::: moniker range=">tfs-2018"
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
@@ -83,7 +86,7 @@ echo BUILD_SOURCESDIRECTORY contents:
 echo Over and out.
 ```
 
-On the Build tab of a build definition, add this task:
+On the Build tab of a build pipeline, add this task:
 
 <table>
    <tr>

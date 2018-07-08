@@ -12,13 +12,17 @@ ms.date: 5/3/2018
 monikerRange: '>= tfs-2018'
 ---
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 # Server phases
 
-Tasks in a server phase are orchestrated by and executed on the server (VSTS or TFS). A server phase does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server phase at present. At present you can add only one task to each server phase in your definition.
+Tasks in a server phase are orchestrated by and executed on the server (VSTS or TFS). A server phase does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server phase at present. At present you can add only one task to each server phase in your pipeline.
 
 # [Web](#tab/web)
 
-You add a server phase in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a definition. The properties for the server phase are displayed when you select the phase in the editor.
+You add a server phase in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a pipeline. The properties for the server phase are displayed when you select the phase in the editor.
 
 # [YAML](#tab/yaml)
 
@@ -58,7 +62,7 @@ Use the phase timeout to specify the timeout in minutes for jobs in this phase. 
 
 # [Web](#tab/web)
 
-If you specify a non-zero value for the phase timeout, then it overrides any value that is specified in the definition options. If you specify a zero value, then the timeout value from the definition options is used. If the definition value is also set to zero, then there is no timeout.
+If you specify a non-zero value for the phase timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
 
 # [YAML](#tab/yaml)
 

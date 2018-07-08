@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/visualstudiotestplatforminstaller.png) Acquires the test platform from nuget.org or the tools cache. Satisfies the ‘vstest’ demand and can be used for running tests and collecting diagnostic data using the Visual Studio Test task.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

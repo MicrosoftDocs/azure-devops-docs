@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2015'
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms400688%28v=vs.120%29.aspx)**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 ## Build
 
 | Task | Versions |
@@ -118,7 +122,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](deploy/_img/azureappservicemanage.png) [Azure App Service Manage](deploy/azure-app-service-manage.md). Start, Stop, Restart or Slot swap for an Azure App Service | VSTS, TFS 2017 and newer|
 | ![icon](deploy/_img/azurecloudpowershelldeployment.png) [Azure CLI](deploy/azure-cloud-powershell-deployment.md). Run a shell or batch script containing Azure CLI commands against an Azure subscription | VSTS, TFS 2017 and newer |
 | ![icon](deploy/_img/azure-file-copy-icon.png) [Azure File Copy](deploy/azure-file-copy.md). Copy files to Azure blob or VM(s) | VSTS, TFS 2015.3 and newer |
-| ![icon](deploy/_img/azure-key-vault-icon.png) [Azure Key Vault](deploy/azure-key-vault.md). Incorporate secrets from an Azure Key Vault into a release definition | VSTS |
+| ![icon](deploy/_img/azure-key-vault-icon.png) [Azure Key Vault](deploy/azure-key-vault.md). Incorporate secrets from an Azure Key Vault into a release pipeline | VSTS |
 | ![icon](deploy/_img/azuremonitoralerts.png) [Azure Monitor Alerts](deploy/azure-monitor-alerts.md). Configure alerts on available metrics for an Azure resource | VSTS |
 | ![icon](deploy/_img/azuremysqldeployment.png) [Azure MySQL Deployment](deploy/azure-mysql-deployment.md). Run your scripts and make changes to your Azure DB for MySQL. | VSTS |
 | ![icon](deploy/_img/azurepowershell.png) [Azure PowerShell](deploy/azure-powershell.md). Run a PowerShell script within an Azure environment | VSTS, TFS 2015 RTM and newer |

@@ -2,19 +2,19 @@
 ms.topic: include
 ---
 
-## Create a release definition
+## Create a release pipeline
 
 1. In the **Build &amp; Release** hub, open the build summary for your build.
 
    ![Opening the build summary](_img/open-build-summary.png)
 
-1. In the build summary page, choose the **Release** icon to start a new release definition.
+1. In the build summary page, choose the **Release** icon to start a new release pipeline.
 
-   ![Starting a new release definition from a build summary](_img/release-from-build-summary.png)
+   ![Starting a new release pipeline from a build summary](_img/release-from-build-summary.png)
 
-   If you have previously created a release definition that uses these build artifacts, you will
+   If you have previously created a release pipeline that uses these build artifacts, you will
    be prompted to create a new release instead. In that case, go to the **Releases** tab page and
-   start a new release definition from there by choosing the **+** icon.
+   start a new release pipeline from there by choosing the **+** icon.
 
 1. Select the **Azure App Service Deployment** template and choose **Apply**.
 
@@ -44,11 +44,11 @@ ms.topic: include
 
    > You can find these values in the Azure portal in the **Overview** and **Repositories** tabs for your container registry.
 
-1. Save the release definition.
+1. Save the release pipeline.
 
 ## Create a release to deploy your app
 
-You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build:
+You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
 1. Choose **+ Release** and select **Create Release**.
 

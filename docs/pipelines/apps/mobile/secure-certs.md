@@ -13,10 +13,13 @@ ms.date: 01/16/2018
 monikerRange: '>= tfs-2017 < tfs-2018'
 ---
 
-
 # Sign your mobile app
 
 **[VSTS](app-signing.md) | [TFS 2018](app-signing.md) | TFS 2017.2**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 When developing an app for Android or iOS, you will eventually need to manage signing certificates, and in the case of iOS, [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article will highlight some features to help you manage and secure them for your app.
 
@@ -50,7 +53,7 @@ This article covers:
 
 3. At this point you can opt to add these two files directly to source control or add an extra layer of security by encrypting them first. **See the next section for details on this step.**
 
-4. Next, go to VSTS / TFS and open your Xcode or Xamarin.iOS build definition and go to the **Variables** tab. Here, enter the password for the .p12 file:
+4. Next, go to VSTS / TFS and open your Xcode or Xamarin.iOS build pipeline and go to the **Variables** tab. Here, enter the password for the .p12 file:
   - **P12_PWD**: Password to the .p12 file in its unencrypted form. *Be sure to click the "lock" icon.* This will secure your password and obscure it in all logs.
 	![Xcode Build settings](_img/secure-certs/secure-certs-10.png)
 
@@ -85,16 +88,16 @@ You can add an extra layer of security by to your project by encrypting your .p1
 
 2. Next, add these two files to source control (the encrypted .p12 and .mobileprovision files). This is secure particularly if you are using a private repository since a malicious user would need access to the repository, the encryption passphrase, and the P12 passphrase to be able to use your information without permission. Remove any unencrypted copies if present.
 
-3. Now, set up your build definition to decrypt the files at build time.
+3. Now, set up your build pipeline to decrypt the files at build time.
 
-  1. Open your Xcode or Xamarin.iOS build definition and go to the **Variables** tab and enter the following:
+  1. Open your Xcode or Xamarin.iOS build pipeline and go to the **Variables** tab and enter the following:
      - **P12**: Path to your encrypted .p12 file in source control.
      - **P12_PWD**: Password to the unencrypted .p12 file. *Be sure to click the "lock" icon.* This will secure your password and obscure it in all logs.
      - **MOB_PROV**: Path to your encrypted mobile provisioning profile.
      - **ENC_PWD**: The passphrase you used to encrypt the .p12 and .mobileprovision files. If you used two different passphrase you'll need two variables.  Again, *be sure to click the "lock" icon.*
       ![Variables](_img/secure-certs/secure-certs-3.png)
 
-  2. Under the **Build** tab in your build definition, add two **Decrypt File** (OpenSSL) steps and move these to the top of your build definition.
+  2. Under the **Build** tab in your build pipeline, add two **Decrypt File** (OpenSSL) steps and move these to the top of your build pipeline.
 
   3. Now, enter the proper information using the variables you created above to decrypt the two files to a static filename.
      - **Cypher**: The cypher you specified while encrypting. (Ex: des3)
@@ -179,9 +182,9 @@ Follow these steps:
 
 0. Next, add the encrypted keystore to source control. This is secure particularly if you are using a private repository since a malicious user would need access to the repository, the encryption passphrase, the keystore password, and the alias password to be able to use your information without permission.
 
-0. Finally we'll update your build definition to decrypt and use the keystore.
+0. Finally we'll update your build pipeline to decrypt and use the keystore.
 
-    0. Open your Android or Xamarin.iOS build definition and go to the **Variables** tab. Here we will enter the following:
+    0. Open your Android or Xamarin.iOS build pipeline and go to the **Variables** tab. Here we will enter the following:
      - **KEYSTORE**: Path to your encrypted keystore file in source control.
      - **KEYSTORE_PWD**: Password to the unencrypted keystore file. *Be sure to click the "lock" icon.* This will secure your password and obscure it in all logs.
      - **KEY**: The key alias for the signing certificate you generated.
@@ -190,7 +193,7 @@ Follow these steps:
 
       ![Android build vars](_img/secure-certs/secure-certs-8.png)
 
-    0. Under the **Build** tab in your build definition, add a **Decrypt File** (OpenSSL) step and move this to the top of your build definition.
+    0. Under the **Build** tab in your build pipeline, add a **Decrypt File** (OpenSSL) step and move this to the top of your build pipeline.
 
 0. Now, enter the proper information using the variables you created above to decrypt the file to a static filename.
 

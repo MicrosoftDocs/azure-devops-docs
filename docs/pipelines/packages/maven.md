@@ -13,16 +13,17 @@ ms.date: 01/31/2018
 monikerRange: '>= tfs-2018'
 ---
  
-
 # Set up Team Build and Maven
 
-**VSTS** | **TFS 2018**
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 This guide covers the basics of using Team Build to work with Maven artifacts in Package Management feeds.
  
 This walkthrough assumes that you've already added the correct build service identity to your feed. 
 
-1. Create a new build definition and select the **Maven** template.
+1. Create a new build pipeline and select the **Maven** template.
 <br>
 2. Fill in the path to your `POM.xml`, configure the Maven goal you'd like for your build.  Authentication to your VSTS feed should happen automatically.
 <br>

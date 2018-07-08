@@ -1,6 +1,6 @@
 ---
 title: Set up environments to run continuous tests with your builds - test automation tools
-description: Set up environments to run continuous test tasks with your build tasks with a build or release definition VSTS and TFS 
+description: Set up environments to run continuous test tasks with your build tasks with a build or release pipeline VSTS and TFS 
 ms.assetid: FFD51F1E-C3B7-4FAC-B25D-95ADD6C1A1A0
 ms.prod: devops
 ms.technology: devops-cicd
@@ -15,6 +15,10 @@ monikerRange: '>= tfs-2015'
 # Set up environments to run continuous test tasks with your build tasks
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 To test your app using different platforms and configurations using test automation,
 set up separate environments to run your app and tests with your
@@ -61,12 +65,12 @@ As an alternative, consider:
 
 * A **comma-delimited list** of machine IP addresses or 
   fully-qualified domain names (FQDNs), together with any port information,
-  in all your build or release definitions. For example: 
+  in all your build or release pipelines. For example: 
 
   `dbserver.fabrikam.com,dbserver_int.fabrikam.com:5986,192.168.12.34:5986`
  
 * A variable that contains the list of machines. For example, a
-  [build or release definition variable](../../pipelines/release/variables.md)
+  [build or release pipeline variable](../../pipelines/release/variables.md)
   or a variable defined within a project-wide 
   [variable group](../../pipelines/library/variable-groups.md). For example, you could define the variable
   named **MyMachines** with the value shown above, then include it in
@@ -208,7 +212,7 @@ a selected property setting.
 ### How test tasks run in phases
 
 You can add [different types of phases](../../pipelines/process/phases.md)
-to a release definition. The properties of these phases include settings for
+to a release pipeline. The properties of these phases include settings for
 **Parallelism**.
 
 ![Selecting a mode to run tasks on multiple agents in parallel](_img/test-with-unified-agent-and-phases/agent-phase-settings.png)
@@ -243,7 +247,7 @@ The same logic applies to testing. For example, you could deploy a web app to Az
 cross-browser tests on IE and Firefox by configuring an environment to use two phases - one
 for the deploy phase and one for the test phase: 
 
-![Configuring the release definition with two phases for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig.png)
+![Configuring the release pipeline with two phases for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig.png)
 
 The test phase is set up as a multiple executions process using a variable named **Browser**, which
 has the values `IE` and `Firefox`. The phase will run twice using these two configurations - one
@@ -293,7 +297,7 @@ the same app concurrently), and the other a test phase that uses multiple agents
 This also means that you can use different agent queues for the two phases, allowing you to manage agents
 for different purposes separately if required.
 
-![Configuring the release definition with two phases for distributed tests](_img/test-with-unified-agent-and-phases/distributed-tests.png)
+![Configuring the release pipeline with two phases for distributed tests](_img/test-with-unified-agent-and-phases/distributed-tests.png)
 
 ### FAQs
 

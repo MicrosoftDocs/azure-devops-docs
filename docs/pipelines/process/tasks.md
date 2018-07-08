@@ -12,13 +12,16 @@ ms.date: 01/19/2018
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Tasks for builds and releases
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 A **task** is the building block for defining automation in a
-build definition, or in an environment of a release definition.
+build pipeline, or in an environment of a release pipeline.
 A task is simply a packaged script or procedure that has been
 abstracted with a set of inputs. We provide some [built-in tasks](../tasks/index.md) 
 to enable fundamental build and deployment scenarios.
@@ -29,7 +32,7 @@ account or collection, extends the task catalog with one or more tasks.
 Furthermore, you can write your own [custom extensions](../../integrate/index.md)
 to add tasks to your account in VSTS or your collection in TFS.
 
-When you add a task to your build or release definition, it may also add a set of **demands** to the definition. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
+When you add a task to your build or release pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
 When you queue a build or a deployment, all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [phases](phases.md).
 
@@ -44,7 +47,7 @@ encounter unpredictable errors when a task is automatically updated.
 When a new minor version is released (for example, 1.2 to 1.3), your build or release
 will automatically use the new version. However, if a new major version is released
 (for example 2.0), your build or release will continue to use the major version you specified
-until you edit the definition and manually change to the new major version.
+until you edit the pipeline and manually change to the new major version.
 The build or release log will include an alert that a new major version is available.
 
 **Notes:**
@@ -52,10 +55,10 @@ The build or release log will include an alert that a new major version is avail
 * If you select a preview version (such as **1.\* Preview**), be aware that this
   version is still under development and might have known issues.
 
-* If you change the version and have problems with your builds, you can revert the definition change from the **History** tab. 
-  The ability to restore to an older version of a release definition is not currently available. You must manually revert the changes to the release definition, then save the definition.
+* If you change the version and have problems with your builds, you can revert the pipeline change from the **History** tab. 
+  The ability to restore to an older version of a release pipeline is not currently available. You must manually revert the changes to the release pipeline, then save the pipeline.
 
-* Consider cloning the definition and testing the cloned definition with the new major task version.
+* Consider cloning the pipeline and testing the cloned pipeline with the new major task version.
 
 <a name="controloptions"></a>
 ## Task control options
@@ -89,7 +92,7 @@ Select the condition for running this task:
 * [Custom conditions](conditions.md)
 
 > [!NOTE]
-> If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [definition options](../build/options.md#job-cancel-timeout).
+> If you're running tasks in cases when the build is canceled, then make sure you specify sufficient time for these tasks to run the [pipeline options](../build/options.md#job-cancel-timeout).
 
 ### TFS 2015 and newer options
 
@@ -120,7 +123,7 @@ For example, you can set up your build process to run and validate your app for 
 > [!TIP]
 > Want a visual walkthrough? See [our April 19 news release](../archive/news/2017.md#april-19).
 
-[Create a new build definition](../get-started-designer.md) (start with an empty process) to try this out.
+[Create a new build pipeline](../get-started-designer.md) (start with an empty process) to try this out.
 
 #### Tasks tab
 

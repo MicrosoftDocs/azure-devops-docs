@@ -21,6 +21,10 @@ monikerRange: '>= tfs-2013'
 
 # Tutorial:  Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and VSTS CD
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 Visual Studio Team Services (VSTS) provides integration with Jenkins so that you can:
 
 * Continue to use your existing investments in Jenkins.
@@ -39,7 +43,7 @@ You will:
 > * Create Jenkins Service Hooks in VSTS
 > * Configure a Jenkins CI build with VSTS integration
 > * Install the Release Management Utilty tasks VSTS extension
-> * Create a VSTS release definition for CD to Azure
+> * Create a VSTS release pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * View the deployed sample app
 > * Delete your AKS cluster
@@ -252,7 +256,7 @@ You create a Jenkins build job to use the source code stored in your VSTS reposi
 1. Enter a **Collection URL**.  An example is 
 `http://{YourVSTSAccount}.visualstudio.com/DefaultCollection`
 
-1. Enter the **Team project** and choose a **Release definition** name.  Store the **Release definition** name since it is needed on later steps in this tutorial.
+1. Enter the **Team project** and choose a **Release pipeline** name.  Store the **Release pipeline** name since it is needed on later steps in this tutorial.
 
 1. Enter the **username** and **PAT** you created earlier.
  
@@ -319,9 +323,9 @@ You must also configure two Jenkins service hooks so you can execute CI builds v
 
 ## Install the Release Management Utilty tasks VSTS extension
 
-A release definition specifies the process VSTS executes to deploy the app.  In this example, you deploy your app that originates from the Jenkins CI system.  You deploy to a Docker image running Tomcat and a Spring Boot app to an AKS cluster.
+A release pipeline specifies the process VSTS executes to deploy the app.  In this example, you deploy your app that originates from the Jenkins CI system.  You deploy to a Docker image running Tomcat and a Spring Boot app to an AKS cluster.
 
-Before you create the release definition, you need to install a VSTS extension that will be used to replace the **K8sDeploy.yaml** file's **__Build.BuildId__** token with the current Jenkins build id. 
+Before you create the release pipeline, you need to install a VSTS extension that will be used to replace the **K8sDeploy.yaml** file's **__Build.BuildId__** token with the current Jenkins build id. 
 
 1. In your VSTS account, on the top right-hand side of the browser, Select the **Browse Marketplace** menu item. (The icon appears as a shopping bag.)
 
@@ -333,15 +337,15 @@ Before you create the release definition, you need to install a VSTS extension t
 
 5. After the extension is installed, select the **Proceed to Account** button and navigate back to your VSTS project.
 
-## Create a VSTS release definition for CD to Azure
+## Create a VSTS release pipeline for CD to Azure
 
-1. Open the **Releases** on the **Build &amp; Release** hub, and choose **Create release definition**. 
+1. Open the **Releases** on the **Build &amp; Release** hub, and choose **Create release pipeline**. 
 
 1. Select the **Empty** template by choosing **Start with an Empty process**.
 
 1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service endpoint connection. Then select the Jenkins source job and choose **Add**.
 
-Add two tasks to the release definition.  The first task updates the **K8sDeploy.yaml** file to pull the image tagged with the current Jenkins build id.
+Add two tasks to the release pipeline.  The first task updates the **K8sDeploy.yaml** file to pull the image tagged with the current Jenkins build id.
 
 1. Next to the **1 phase, 0 environments** link, select the **+** on the **Agent Phase** to add a task to the phase. 
 
@@ -369,9 +373,9 @@ The second task deploys to the AKS cluster:
 
 1. Set **Secret name** to the secret provided in the **K8sDeploy.yaml** file which is named **regsecret**.  This is the name of an object in the AKS cluster that is used to store an authentication token.  The cluster uses this token to authenticate to the ACR to pull images.
 
-1. Ensure the **name** for your release definition matches the same name you chose earlier during the **Create a Jenkins Service Endpoint and Service Hooks in VSTS** steps.
+1. Ensure the **name** for your release pipeline matches the same name you chose earlier during the **Create a Jenkins Service Endpoint and Service Hooks in VSTS** steps.
 
-1. Click **Save**, and then click **OK** to save the release definition.
+1. Click **Save**, and then click **OK** to save the release pipeline.
 
 ## Test the CI/CD pipeline with a pull request
 
@@ -389,7 +393,7 @@ You can initiate the CI build and the subsequent CD deployment to Azure by compl
 
 1. Select **Approve**, then select **Complete**, then **Complete Merge**.  This code change will initiate a CI build in Jenkins. 
 
-1. Navigate to your **Jenkins dashboard** and examine the build that is executing.  Once it finishes, a new Docker image will be pushed to your ACR that is tagged with the current Jenkins build id.  You can then navigate to VSTS to watch the **Release Definition** execute.  In a few moments, the Docker image for the current Jenkins build will be deployed to your AKS cluster.
+1. Navigate to your **Jenkins dashboard** and examine the build that is executing.  Once it finishes, a new Docker image will be pushed to your ACR that is tagged with the current Jenkins build id.  You can then navigate to VSTS to watch the **Release Pipeline** execute.  In a few moments, the Docker image for the current Jenkins build will be deployed to your AKS cluster.
 
 You are now using Jenkins CI builds with a VSTS code repository and release pipeline to perform CI/CD to **Azure Container Services (AKS)**.  You can easily track your code changes and deployments via the rich reporting capabilities of VSTS, and leverage Jenkins to execute CI builds.
 
@@ -431,7 +435,7 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * Create Jenkins Service Hooks in VSTS
 > * Configure a Jenkins CI build with VSTS integration
 > * Install the Release Management Utilty tasks VSTS extension
-> * Create a VSTS release definition for CD to Azure
+> * Create a VSTS release pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * View the deployed sample app
 > * Delete your AKS cluster

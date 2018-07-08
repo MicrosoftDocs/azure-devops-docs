@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 <a name="gentopics"></a>
 
 ## General topics
@@ -32,7 +36,7 @@ monikerRange: '>= tfs-2015'
 
 1. Add these assemblies to version control and [let the build controller know where to get them](../../pipelines/overview.md).
 
-1. In your build definition, provide the path to the test framework in the *Path to Custom Test Adapters** parameter:
+1. In your build pipeline, provide the path to the test framework in the *Path to Custom Test Adapters** parameter:
 
    ![Build def, VSTest task, custom test framework](_img/getting-started-with-continuous-testing/IC816555.png)
 
@@ -46,7 +50,7 @@ monikerRange: '>= tfs-2015'
 
 **A**: Yes, use the [Publish Code Coverage Results task](../tasks/test/publish-code-coverage-results.md).
 
-### Q: I have multiple Publish Code Coverage Results tasks in my definition. Do I get a merged code coverage summary?
+### Q: I have multiple Publish Code Coverage Results tasks in my pipeline. Do I get a merged code coverage summary?
 
 **A**: Code coverage is automatically merged for only Visual Studio coverage (.coverage) files.
 A merged summary is not currently available for coverage files published using multiple Publish Code Coverage Results tasks.
@@ -64,7 +68,7 @@ A merged summary is not currently available for coverage files published using m
    [Selenium](continuous-test-selenium.md) (for web apps) and [Coded UI](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code) tests.
    To do this, add the **[Deploy Test Agent](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/DeployVisualStudioTestAgent/README.md)**
    and **[Run Functional Tests](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/RunDistributedTestsV1/README.md)**
-   tasks to your release definition. See [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/).
+   tasks to your release pipeline. See [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/).
 
 1. Run **load tests** after the app is deployed to staging and production, after it passes all functional tests.
    The example shown above is just a simple test that accesses a single page in the web app to validate that 
@@ -95,7 +99,7 @@ app to a different slot using the **Azure App Service Manage** task. See
 
 You can use [task phases](../../pipelines/process/phases.md)
 and the [**Manual Intervention**](../../pipelines/tasks/utility/manual-intervention.md) task
-in your release definition to pause a deployment; for example, to examine test results
+in your release pipeline to pause a deployment; for example, to examine test results
 after the load tests have run and before the app is swapped from staging to production.
 
 <a name="pass-params"></a>
@@ -181,7 +185,7 @@ You must be a Project Contributor, or have the following permissions:
 * Edit release environment
 * Manage deployment
 
-For more information, see [Set permissions for release definitions](../policies/set-permissions.md#set-permissions-for-release-definitions) and
+For more information, see [Set permissions for release pipelines](../policies/set-permissions.md#set-permissions-for-release-pipelines) and
 [Release permissions](../policies/permissions.md#release-permissions).
 
 ### Q: Can I override the build or environment set at the test plan level for a specific instance of test run?
@@ -198,9 +202,9 @@ Enter the following values in the Run with options dialog and then choose **OK**
   
 * **Build**: Select the build that has the test binaries. The test results will be associated this build. 
  
-* **Release Definition**: Select a definition from the list of release definitions that can consume the selected build artifact.
+* **Release Pipeline**: Select a pipeline from the list of release pipelines that can consume the selected build artifact.
  
-* **Release Environment**: Select the name of the environment configured in your release definition.<p />
+* **Release Environment**: Select the name of the environment configured in your release pipeline.<p />
 
 ![Configuring the Run with options dialog](_img/run-auto-tests-from-hub-09a.png)
 
@@ -210,7 +214,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
 to obtain test binaries as artifacts and run tests. This workflow shares
 the same concepts used in the scheduled testing workflow, meaning users
 running tests in scheduled workflow will find it easy to adapt; for 
-example, by cloning an existing scheduled testing release definition.
+example, by cloning an existing scheduled testing release pipeline.
 
 Another major benefit is the availability of a rich set of tasks in
 the task catalog that enable a range of activates to be performed before
@@ -261,16 +265,16 @@ to be tested on-demand using a Release Management workflow.
 We will evaluate support for multi-artifact releases, including
 non-Team Build artifacts such as Jenkins, based on user feedback. 
 
-### Q: I already have a scheduled testing release definition. Can I reuse the same definition to run test on-demand, or should I create a new definition as shown above? 
+### Q: I already have a scheduled testing release pipeline. Can I reuse the same pipeline to run test on-demand, or should I create a new pipeline as shown above? 
 
-**A:** We recommend you use a separate release definition and environment for on-demand automated testing from the **Test** hub because:
+**A:** We recommend you use a separate release pipeline and environment for on-demand automated testing from the **Test** hub because:
 
 * You may not want to deploy the app every time you want to run a few on-demand tests.
 Scheduled testing environments are typically set up to deploy the product and then run tests. 
 
 * New releases are triggered for every on-demand run. If you have many
 testers executing a few on-demand test runs every day, your scheduled
-testing release definition could be overloaded with releases for these
+testing release pipeline could be overloaded with releases for these
 runs, making it difficult to find releases that were triggered for the
 pipeline that contains scheduled testing and deployment to production. 
 
@@ -286,9 +290,9 @@ All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for MTM. See
 [Guidance on Microsoft Test Manager usage](../../test/mtm/guidance-mtm-usage.md).
 
-### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release definition?
+### Q: I have multiple testers in my team. Can they run tests from different test suites or test plans in parallel using the same release pipeline?
 
-**A:** They can use the same release definition to trigger multiple
+**A:** They can use the same release pipeline to trigger multiple
 test runs in parallel if:
 
 * The agent pool associated with the environment has sufficient agents
@@ -321,14 +325,14 @@ from different sources, set this option to
 
 **A:** Check and resolve issues as follows:
 
-* The release definition and environment in which I want to run tests
+* The release pipeline and environment in which I want to run tests
   are not shown after I select the build.
-   - Make sure the build definition that is generating the build is linked
-     as the primary artifact in the **Artifacts** tab of the release definition.<p />
+   - Make sure the build pipeline that is generating the build is linked
+     as the primary artifact in the **Artifacts** tab of the release pipeline.<p />
  
 * I get an error that I don't have sufficient permission to trigger a release.
    - Configure **Create releases** and **Manage deployments** permissions for
-     the user in the **Security** menu of the release definition. 
+     the user in the **Security** menu of the release pipeline. 
      See [Release permissions](../../pipelines/policies/permissions.md#release-permissions).<p />
    
 * I get an error that no automated tests were found. 
@@ -338,7 +342,7 @@ from different sources, set this option to
      of tests. See the [pre-requisites section](../../test/run-automated-tests-from-test-hub.md#prerequisites) for information
      about automating manual tests.<p />
 
-* My tests didn't execute, and I suspect the release definition is incorrect. 
+* My tests didn't execute, and I suspect the release pipeline is incorrect. 
    - Use the link in the **Run summary** page to access the release instance
      used to run the tests, and view the release logs.<p /> 
 

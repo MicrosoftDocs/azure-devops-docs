@@ -16,9 +16,13 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 In just a few steps, you can provision Azure virtual machines (VMs)
 using [Resource Manager (RM) templates](https://azure.microsoft.com/documentation/articles/resource-group-template-deploy/).
-Managing the definitions for virtual machines in this
+Managing the pipelines for virtual machines in this
 way is considered **Infrastructure as code** and is
 a good DevOps practice.
 
@@ -57,7 +61,7 @@ Follow these steps to create and check-in a new Resource Manager template.
    commit the changes into a [Team Foundation Server](../../../../tfvc/index.md) or 
    [VSTS Git](../../../../git/index.md) repository.
 
-### Create the build definition
+### Create the build pipeline
 
 Carry out the following steps to publish an artifact with the Resource Manager template files.
 
@@ -74,11 +78,11 @@ On the Triggers tab, enable **continuous integration** (CI). This tells the syst
 
 ## Queue and test the build
 
-Save the build definition and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the template files produced by the build. This is the template that your release definition will consume to provision an Azure virtual machine.
+Save the build pipeline and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the template files produced by the build. This is the template that your release pipeline will consume to provision an Azure virtual machine.
 
 ## Provision your virtual machine
 
-After you've run the build, you're ready to create a release definition to provision your virtual machine:
+After you've run the build, you're ready to create a release pipeline to provision your virtual machine:
 
 ![icon](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
 

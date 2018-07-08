@@ -12,8 +12,11 @@ ms.date: 05/11/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Create your first build and release
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 ::: moniker range="vsts"
 
@@ -84,9 +87,9 @@ Write-Host "Hello world"
 >
 > When you're ready to begin building and deploying a real app, you can use a wide range of version control clients and services with VSTS CI builds. [Learn more](#version-control).
 
-## Create a build definition
+## Create a build pipeline
 
-Create a build definition that prints "Hello world."
+Create a build pipeline that prints "Hello world."
 
  ::: moniker range="vsts"
 
@@ -94,7 +97,7 @@ Create a build definition that prints "Hello world."
 
    ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
-1. Create a new definition.
+1. Create a new pipeline.
 
    ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
@@ -124,7 +127,7 @@ Create a build definition that prints "Hello world."
 
    ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
-1. Create a new definition.
+1. Create a new pipeline.
 
    ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
@@ -152,7 +155,7 @@ Create a build definition that prints "Hello world."
 
  ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab.png)
 
-1. Create a new definition.
+1. Create a new pipeline.
 
  ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button.png)
 
@@ -176,7 +179,7 @@ Create a build definition that prints "Hello world."
 
  ::: moniker-end
 
-> A build definition is the entity through which you define your automated build process. In the build definition, you compose a set of tasks, each of which perform a step in your build. The task catalog provides a rich set of tasks for you to get started. You can also add PowerShell or shell scripts to your build definition.
+> A build pipeline is the entity through which you define your automated build process. In the build pipeline, you compose a set of tasks, each of which perform a step in your build. The task catalog provides a rich set of tasks for you to get started. You can also add PowerShell or shell scripts to your build pipeline.
 
 ## Publish an artifact from your build
 
@@ -233,11 +236,11 @@ drop
 
 1. Enable **Continuous integration**.
 
->  A continuous integration trigger on a build definition indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](build/triggers.md).
+>  A continuous integration trigger on a build pipeline indicates that the system should automatically queue a new build whenever a code change is committed. You can make the trigger more general or more specific, and also schedule your build (for example, on a nightly basis). See [Build triggers](build/triggers.md).
 
 ## Save and queue the build
 
-Save and queue a build manually and test your build definition.
+Save and queue a build manually and test your build pipeline.
 
 ::: moniker range=">= tfs-2018 <= vsts"
 
@@ -291,7 +294,7 @@ Save and queue a build manually and test your build definition.
 
 We'll pass some build variables to the script to make our process a bit more interesting. Then we'll commit a change to a script and watch the CI process run automatically to validate the change.  
 
-1. Edit your build definition.
+1. Edit your build pipeline.
 
 1. On the **Tasks** tab, select the PowerShell script task.
 
@@ -310,7 +313,7 @@ We'll pass some build variables to the script to make our process a bit more int
 -greeter "$(Build.RequestedFor)" -trigger "$(Build.Reason)"
 ```
 
-1. Save the build definition.
+1. Save the build pipeline.
 
 1. Go to the **Code** hub, **Files** tab.
 
@@ -339,11 +342,11 @@ Write-Host Trigger: $trigger
 
 > We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](build/variables.md).
 
-## You've got a build definition. What's next?
+## You've got a build pipeline. What's next?
 
-You've just created a build definition that automatically builds and validates whatever code is checked in by your team. At this point you can continue to the next section to learn about release definitions. Or, if you prefer, you can [skip ahead](#next-steps) to create a build pipeline for your app.
+You've just created a build pipeline that automatically builds and validates whatever code is checked in by your team. At this point you can continue to the next section to learn about release pipelines. Or, if you prefer, you can [skip ahead](#next-steps) to create a build pipeline for your app.
 
-## Create a release definition
+## Create a release pipeline
 
 Define the process for running the script in two environments.
 
@@ -351,13 +354,13 @@ Define the process for running the script in two environments.
 
 1. Go to the **Build and Release** tab, and then select **Releases**.
 
-1. Select the action to create a **New definition**. If a release definition is already created, select the plus sign **( + )** and then select  **Create release definition**.
+1. Select the action to create a **New pipeline**. If a release pipeline is already created, select the plus sign **( + )** and then select  **Create release pipeline**.
 
 1. Select the action to start with an **empty process**.
 
 1. Name the environment **QA**.
 
-1. In the Artifacts panel, select **+ Add** and specify a **Source (Build definition)**. Select **Add**.
+1. In the Artifacts panel, select **+ Add** and specify a **Source (Build pipeline)**. Select **Add**.
 
 1. Select the **Lightning bolt** to trigger continuous deployment and then enable the **Continuous deployment trigger** on the right.
 
@@ -385,11 +388,11 @@ Define the process for running the script in two environments.
 
 1. Rename the cloned environment **Production**.
 
-1. Rename the release definition **Hello world**.
+1. Rename the release pipeline **Hello world**.
 
-   ![rename release definition](_img/get-started-designer/rename-release-definition-tfs-2018-2.png)
+   ![rename release pipeline](_img/get-started-designer/rename-release-definition-tfs-2018-2.png)
 
-1. Save the release definition.
+1. Save the release pipeline.
 
 ::: moniker-end
 
@@ -397,11 +400,11 @@ Define the process for running the script in two environments.
 
 1. Go to the **Build and Release** hub, and then to the **Releases** tab.
 
-1. Select the action to create a **New definition**.
+1. Select the action to create a **New pipeline**.
 
 1. On the dialog box, select the **Empty** template and select **Next**.
 
-1. Make sure that your **Hello world** build definition that you created above is selected. Select **Continuous deployment**, and then select **Create**.
+1. Make sure that your **Hello world** build pipeline that you created above is selected. Select **Continuous deployment**, and then select **Create**.
 
 1. Select **Add tasks** in the environment.
 
@@ -427,17 +430,17 @@ Define the process for running the script in two environments.
 
 1. Rename the new environment **Production**.
 
-1. Rename the release definition **Hello world**.
+1. Rename the release pipeline **Hello world**.
 
- ![rename release definition](_img/get-started-designer/rename-release-definition.png)
+ ![rename release pipeline](_img/get-started-designer/rename-release-definition.png)
 
-1. Save the release definition.
+1. Save the release pipeline.
 
 ::: moniker-end
 
-> A release definition is a collection of environments to which the application build artifacts are deployed. It also defines the actual deployment process for each environment, as well as how the artifacts are promoted from one environment to another.
+> A release pipeline is a collection of environments to which the application build artifacts are deployed. It also defines the actual deployment process for each environment, as well as how the artifacts are promoted from one environment to another.
 >
-> Also, notice that we used some variables in our script arguments. In this case, we used [release variables](release/variables.md) instead of the build variables we used for the build definition.
+> Also, notice that we used some variables in our script arguments. In this case, we used [release variables](release/variables.md) instead of the build variables we used for the build pipeline.
 
 ## Deploy a release
 
@@ -540,7 +543,7 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 ## Next steps
 
 You've just learned the basics of using the designer to create and run a VSTS build and release process.
-Now you're ready to configure your build definition for the programming language you're using.
+Now you're ready to configure your build pipeline for the programming language you're using.
 Go ahead and create a new build pipeline, and this time, use one of the following templates.
 
 | Language | Template to use | 
@@ -595,15 +598,15 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
  * Subversion
 
-### How do I replicate a definition?
+### How do I replicate a pipeline?
 
-If your definition has a pattern that you want to replicate in other definitions, clone it, export it, or save it as a template.
+If your pipeline has a pattern that you want to replicate in other definitions, clone it, export it, or save it as a template.
 
 ![all-definitions-build-action-menu-replicate-actions](_img/get-started-designer/all-definitions-build-action-menu-replicate-actions.png)
 
-After you clone a definition, you can make changes and then save it.
+After you clone a pipeline, you can make changes and then save it.
 
-After you export a definition, you can import it from the **All Definitions** tab.
+After you export a pipeline, you can import it from the **All Definitions** tab.
 
 After you create a template, your team members can use it to follow the pattern in new definitions.
 
@@ -613,7 +616,7 @@ After you create a template, your team members can use it to follow the pattern 
 
 ### How do I work with drafts?
 
-If you're editing a build definition and you want to test some changes that are not yet ready for production, you can save it as a draft.
+If you're editing a build pipeline and you want to test some changes that are not yet ready for production, you can save it as a draft.
 
 ![save-as-draft](_img/get-started-designer/save-as-draft.png)
 
@@ -621,11 +624,11 @@ You can edit and test your draft as needed.
 
 ![edit draft](_img/get-started-designer/edit-draft.png)
 
-When you're ready you can publish the draft to merge the changes into your build definition.
+When you're ready you can publish the draft to merge the changes into your build pipeline.
 
 ![publish draft](_img/get-started-designer/publish-draft.png)
 
-Or, if you decide to discard the draft, you can delete it from the **All Definition** tab shown above.
+Or, if you decide to discard the draft, you can delete it from the **All Pipeline** tab shown above.
 
 <a name="queueabuild"></a>
 ### What else can I do when I queue a build?
@@ -652,9 +655,9 @@ When you manually queue a build, you can, for a single run of the build:
 
  - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
 
-### Where can I learn more about build definition settings?
+### Where can I learn more about build pipeline settings?
 
-To learn more about build definition settings, see:
+To learn more about build pipeline settings, see:
 
 * [Getting sources](build/repository.md)
 
@@ -670,12 +673,12 @@ To learn more about build definition settings, see:
 
 * [History](build/history.md)
 
-### How do I programmatically create a build definition?
+### How do I programmatically create a build pipeline?
 
-[REST API Reference: Create a build definition](../integrate/index.md)
+[REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build definitions from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
+> You can also manage builds and build pipelines from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
 
 
 <!-- ENDSECTION -->

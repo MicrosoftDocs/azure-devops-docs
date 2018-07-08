@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 > A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md)
 instead of WinRM. Deployment groups are currently in preview for some accounts in VSTS. They are not yet available in TFS.
 
@@ -136,16 +140,16 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
    * If you've just completed a CI build (see above) then, in the build's
      **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
-     This starts a new release definition that's automatically linked to the build definition.
+     This starts a new release pipeline that's automatically linked to the build pipeline.
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
-     in the list of release definitions, and choose **Create release definition**.
+     in the list of release pipelines, and choose **Create release pipeline**.
 
 1. Choose **Start with an Empty process**.
 
-1. If you created your new release definition from a build summary, check that the build definition
+1. If you created your new release pipeline from a build summary, check that the build pipeline
    and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
-   release definition from the **Releases** tab, choose the **+ Add** link and select your build artifact.
+   release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
    ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
 
@@ -154,7 +158,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
    ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
 
-1. On the **Variables** tab of the environment in release definition, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
+1. On the **Variables** tab of the environment in release pipeline, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
 
 1. Configure the following tasks in the environment:
   
@@ -184,9 +188,9 @@ Continuous deployment (CD) means starting an automated release process whenever 
    
    - **Website Name**: `Default Web Site` (or the name of the website if you configured a different one earlier).<p />
 
-1. Edit the name of the release definition, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
+1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
 
-You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
+You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 

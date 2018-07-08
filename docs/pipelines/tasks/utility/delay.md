@@ -1,6 +1,6 @@
 ---
 title: Delay task for Microsoft VSTS and TFS
-description: Build and release task to pause execution of the process for a fixed delay time with a build or release definition in VSTS and TFS
+description: Build and release task to pause execution of the process for a fixed delay time with a build or release pipeline in VSTS and TFS
 ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,15 +14,13 @@ monikerRange: 'vsts'
 
 # Utility: Delay
 
-**VSTS**
-
 ![icon](_img/delay.png) &nbsp; Pause execution of the process for a fixed delay time.
 
 ## Demands
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

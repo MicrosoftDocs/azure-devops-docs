@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/apachejmeterloadtest.png) Runs the Apache JMeter load test in cloud
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

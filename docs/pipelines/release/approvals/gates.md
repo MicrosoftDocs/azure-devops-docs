@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Release deployment control using gates 
+# Release deployment control using gates
 
 **VSTS**
 

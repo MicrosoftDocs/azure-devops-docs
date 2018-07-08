@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/azurepowershell.png) Run a PowerShell script within an Azure environment
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

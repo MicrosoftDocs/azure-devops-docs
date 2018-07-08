@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017.2**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 This guide explains creating pipelines for Android projects. Before this guidance, read the [designer quickstart](../get-started-designer.md) or [YAML quickstart](../get-started-yaml.md).
 
 ## Get started
@@ -49,7 +53,7 @@ Add the [Android Signing](../tasks/build/android-signing.md) task to sign and zi
 
 <blockquote><strong>Important: </strong>We recommend storing each of the specified passwords in a [secret variable](../build/variables.md#secret-variables).</blockquote>
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ```yaml
 - task: AndroidSigning@2
@@ -73,7 +77,7 @@ Add the [Android Signing](../tasks/build/android-signing.md) task to sign and zi
 
 Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 [!INCLUDE [temp](../tasks/_shared/yaml/AppCenterTestV1.md)]
 
@@ -83,7 +87,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks to store your APK with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ```yaml
 - task: CopyFiles@2
@@ -101,7 +105,7 @@ Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifact
 
 Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an app to a group of testers or beta users, or promote the app to Intune or Google Play. A free [App Center]( https://appcenter.ms) account is required (no payment is necessary).
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 [!INCLUDE [temp](../tasks/_shared/yaml/AppCenterDistributeV1.md)]
 
@@ -115,7 +119,7 @@ Install the [Google Play extension](https://marketplace.visualstudio.com/items?i
 
 Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---release) task to release a new Android app version to the Google Play store.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ```yaml
 - task: GooglePlayRelease@2
@@ -131,7 +135,7 @@ Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemNam
 
 Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---promote) task to promote a previously-released Android app update from one track to another, such as `alpha` &rarr; `beta`.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ```yaml
 - task: GooglePlayPromote@2
@@ -148,7 +152,7 @@ Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemNam
 
 Add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---increase-rollout) task to increase the rollout percentage of an app that was previously released to the `rollout` track.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ```yaml
 - task: GooglePlayIncreaseRollout@1

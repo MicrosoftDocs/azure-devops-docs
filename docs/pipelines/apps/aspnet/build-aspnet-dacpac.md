@@ -12,11 +12,13 @@ ms.date: 01/02/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build your SQL server database
 
-
 [!INCLUDE [temp](../../_shared/version.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 Here we'll show you how to define your continuous integration (CI) process for your SQL server database project.
 
@@ -29,7 +31,7 @@ For the instructions in this topic, you need a SQL server database project in Vi
 
 ## Define your CI build process
 
-### Create the build definition
+### Create the build pipeline
 
 <ol>
     [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
@@ -45,11 +47,11 @@ On the Triggers tab, enable **continuous integration** (CI). This tells the syst
 
 ## Queue and test the build
 
-Save the build definition and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the DACPAC (.dacpac file) produced by the build. This is the package that your release definition will consume to deploy your database.
+Save the build pipeline and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the DACPAC (.dacpac file) produced by the build. This is the package that your release pipeline will consume to deploy your database.
 
 ## Deploy your database
 
-After you've run the build, you're ready to create a release definition to deploy your database to:
+After you've run the build, you're ready to create a release pipeline to deploy your database to:
 
 * <a href="../../targets/azure-sqldb.md"><img src="../../tasks/deploy/_img/azure-sql-database-deployment-icon.png"/> Azure SQL Server</a>
 

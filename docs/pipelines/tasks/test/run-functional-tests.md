@@ -14,6 +14,10 @@ monikerRange: '>= tfs-2015'
 
 # Test: Run Functional Tests
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 ::: moniker range=">= tfs-2018"
 
 This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
@@ -36,7 +40,7 @@ tests on the build machine.
 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

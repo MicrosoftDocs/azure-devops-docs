@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-rm-dev14](../../../_shared/version-rm-dev14.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 The [Azure DevTest Labs](https://azure.microsoft.com/en-us/services/devtest-lab/)
 service lets you quickly provision development and test environments using reusable
 templates. You can use pre-created images, minimize waste with quotas and policies,
@@ -95,7 +99,7 @@ use to create an Azure Virtual Machine on demand.
 1. Check the script into your source control system. Name 
    it something like **GetLabVMParams.ps1**. 
 
-   >This script, when run on the agent as part of the release definition,
+   >This script, when run on the agent as part of the release pipeline,
    collects values that you'll need to deploy your app to the VM
    if you use task steps such as **Azure File Copy** or 
    **PowerShell on Target Machines**. These are the tasks you 
@@ -106,24 +110,24 @@ use to create an Azure Virtual Machine on demand.
 ## Deploy
 
 Carry out the following steps to create the 
-release definition in Release Management.
+release pipeline in Release Management.
 
 1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
-   "**+**" icon to create a new release definition.
+   "**+**" icon to create a new release pipeline.
 
-1. In the **Create release definition** dialog, 
+1. In the **Create release pipeline** dialog, 
    select the **Empty** template and choose **Next**.
 
 1. In the next page, select **Choose Later** and then choose **Create**.
-   This creates a new release definition with one 
+   This creates a new release pipeline with one 
    default environment and no linked artifacts.
 
-1. In the new release definition, choose the ellipses (**...**) next 
+1. In the new release pipeline, choose the ellipses (**...**) next 
    to the environment name to open the shortcut menu 
    and select **Configure variables**. 
 
 1. In the **Configure - environment** dialog, enter the following values
-   for the variables you will use in the release definition tasks:
+   for the variables you will use in the release pipeline tasks:
    - **vmName**: Enter the name you assigned to the VM when 
      you created the ARM template in the Azure portal.
    - **userName**: Enter the username you assigned to the VM when 
@@ -136,7 +140,7 @@ release definition in Release Management.
    you will use as the "golden image" for subsequent deployments.
    You create this within your Azure DevTestsLab instance using the
    task specially developed for this purpose.
-   In the release definition, select **+ Add tasks**
+   In the release pipeline, select **+ Add tasks**
    and add an **Azure DevTest Labs Create VM** task
    from the **Deploy** tab.
 
@@ -157,7 +161,7 @@ release definition in Release Management.
 
 1. The next stage is to execute the script you created earlier
    to collect the details of the DevTest Labs VM.
-   In the release definition, select **+ Add tasks**
+   In the release pipeline, select **+ Add tasks**
    and add an **Azure PowerShell** task from the **Deploy** tab.
    Configure the task as follows:
 
@@ -175,7 +179,7 @@ release definition in Release Management.
    - **Script Arguments**: Enter as the script argument the name of the environment variable that was automatically populated with the ID of the lab VM by the previous task, for example: `-labVmId '$(labVMId)'`. |
    
    >The script collects the values you will require and stores them in 
-   environment variables within the release definition so that you can
+   environment variables within the release pipeline so that you can
    easily refer to them in subsequent tasks.
 
 1. Now you can deploy your app to the new DevTest Labs VM.
@@ -183,7 +187,7 @@ release definition in Release Management.
    **Azure File Copy** and **PowerShell on Target Machines**.
    - The information about the VM you'll need for the parameters of these 
      tasks is stored in three configuration variables
-     named **labVmRgName**, **labVMIpAddress**, and **labVMFqdn** within the release definition. 
+     named **labVmRgName**, **labVMIpAddress**, and **labVMFqdn** within the release pipeline. 
    - If you just want to experiment with creating a DevTest Labs
      VM and a custom image, without deploying an app to it, just
      skip this step.<p />
@@ -192,7 +196,7 @@ release definition in Release Management.
    VM in your Azure DevTest Labs instance. You can then use
    this image to create copies of the VM on demand, whenever 
    you want to execute a dev task or run some tests.
-   In the release definition, select **+ Add tasks**
+   In the release pipeline, select **+ Add tasks**
    and add an **Azure DevTest Labs Create Custom Image** task
    from the **Deploy** tab. Configure it as follows:
 
@@ -214,7 +218,7 @@ release definition in Release Management.
 1. The final stage in this example is to delete the VM you deployed
    in your Azure DevTest Labs instance. In reality you will, of course,
    do this _after_ you execute the dev tasks or run the tests you need
-   on the deployed VM. In the release definition, select 
+   on the deployed VM. In the release pipeline, select 
    **+ Add tasks** and add an **Azure DevTest Labs Delete VM** task
    from the **Deploy** tab. Configure it as follows:
 
@@ -225,10 +229,10 @@ release definition in Release Management.
    
    - **Lab VM ID**: If you changed the default name of the environment variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.<p />
 
-1. Enter a name for the release definition and save it.
+1. Enter a name for the release pipeline and save it.
 
 1. Create a new release, select the latest build,
-   and deploy it to the single environment in the definition.
+   and deploy it to the single environment in the pipeline.
 
 1. At each stage, refresh the view of your DevTest Labs instance
    in the Azure portal to see the VM and image being created, and the

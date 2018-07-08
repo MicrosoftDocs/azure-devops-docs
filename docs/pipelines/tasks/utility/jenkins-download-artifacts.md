@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 ![](_img/jenkinsdownloadartifacts.png) Download artifacts produced by a Jenkins job
 
-::: moniker range=">tfs-2018"
+::: moniker range="> tfs-2018"
 
 ## YAML snippet
 

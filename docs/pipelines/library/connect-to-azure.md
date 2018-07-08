@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 This topic explains how to create an Azure Resource Manager Service Endpoint for connecting
 to Microsoft Azure resources. It starts by showing the simple case where you select the 
 subscription, and optionally the Azure Resource Group, to which you want to connect. Use this

@@ -14,16 +14,20 @@ monikerRange: '>= tfs-2015'
 
 # Releases in Release Management
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
 A **release** is the package or container that holds a versioned set of artifacts
-specified in a [release definition](index.md) in your DevOps CI/CD processes.
+specified in a [release pipeline](index.md) in your DevOps CI/CD processes.
 It includes a snapshot of all the information required to carry out all the tasks
-and actions in the release definition, such as the
+and actions in the release pipeline, such as the
 [environments](environments.md),
 the tasks for each one, the values of task parameters
 and variables, and the release policies such as triggers, approvers, and release
-queuing options. There can be multiple releases from one released definition, and information
+queuing options. There can be multiple releases from one released pipeline, and information
 about each one is stored and displayed in Release Management for the specified
 [retention period](../policies/retention.md#release).  
 
@@ -33,15 +37,15 @@ for one environment, which results in the application
 being deployed, tests being run, and whatever other
 actions are specified for that environment. Initiating a release
 starts each deployment based on the settings and policies defined in the original
-release definition. There can be multiple deployments of each release even for one environment.
+release pipeline. There can be multiple deployments of each release even for one environment.
 When a deployment of a release fails for an environment, you can redeploy the same release
 to that environment.
 
-The following schematic shows the relationship between release definitions, releases, and deployments.
+The following schematic shows the relationship between release pipelines, releases, and deployments.
 
-![Relationship between release definitions, releases, and deployments](_img/release-deploy.png)
+![Relationship between release pipelines, releases, and deployments](_img/release-deploy.png)
 
-Releases (and, in some cases, draft releases) can be created from a release definition in several ways:
+Releases (and, in some cases, draft releases) can be created from a release pipeline in several ways:
 
 * By a [continuous deployment trigger](triggers.md)
   that creates a release when a new version of the source build artifacts is available.

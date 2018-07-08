@@ -12,10 +12,13 @@ ms.date: 04/19/2018
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build variables
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh850448%28v=vs.120%29.aspx)**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
 
 ::: moniker range="< vsts"
 > [!NOTE]
@@ -34,10 +37,9 @@ Variables give you a convenient way to get key bits of data into various parts o
 | Environment variable in PowerShell scripts | Yes | Yes | Yes | `$env:BUILD_DEFINITIONNAME` | [PowerShell script](../scripts/powershell.md) |
 | Environment variable in Shell scripts | Yes | Yes | Yes | `$BUILD_DEFINITIONNAME` | [Shell script](../tasks/utility/shell-script.md#example) |
 
-
 ## User-defined variables
 
-Variables are a great way to store and share key bits of data in your build definition. Some build templates automatically define some variables for you.
+Variables are a great way to store and share key bits of data in your build pipeline. Some build templates automatically define some variables for you.
 
 For example, when you [create a new .NET app build](../apps/windows/dot-net.md), `BuildConfiguration` and `BuildPlatform` are automatically defined for you.
 
@@ -94,7 +96,7 @@ If you need more detailed logs to debug build problems, define and set it to `tr
 
 ## Environment variables
 
-You can pass environment variables of the build machine into build tasks. For example, on the [Build tab](../tasks/index.md) of a build definition, add this task:
+You can pass environment variables of the build machine into build tasks. For example, on the [Build tab](../tasks/index.md) of a build pipeline, add this task:
 
 | Task | Arguments |
 | ---- | --------- |
@@ -113,7 +115,7 @@ Environment variable: AGENT_BUILDDIRECTORY
 
 Scope: Agent
 
-The local path on the agent where all folders for a given build definition are created. 
+The local path on the agent where all folders for a given build pipeline are created. 
 
 ::: moniker-end
 
@@ -288,7 +290,7 @@ Environment variable: BUILD_BUILDNUMBER
 
 Scope: Agent, label format (see Notes)
 
-The name of the completed build. You can specify the build number format that generates this value in the [definition options](options.md).
+The name of the completed build. You can specify the build number format that generates this value in the [pipeline options](options.md).
 
 A typical use of this variable is to make it part of the label format, which you specify on the [repository tab](repository.md).
                 
@@ -338,7 +340,7 @@ For example: `C:\TfsData\Agents\Agent-MACHINENAME\_work\1\b`
 
 ::: moniker range=">= tfs-2015"
 
-By default, new build definitions are not set up to clean this directory. You can define your build to clean it up on the [Repository tab](repository.md).
+By default, new build pipelines are not set up to clean this directory. You can define your build to clean it up on the [Repository tab](repository.md).
 
 ::: moniker-end
 
@@ -348,7 +350,7 @@ Environment variable: BUILD_DEFINITIONNAME
 
 Scope: All (see Notes)
 
-The name of the build definition.
+The name of the build pipeline.
 
 [!INCLUDE [include](_shared/variables-invalid-label-characters.md)]
 
@@ -358,7 +360,7 @@ Environment variable: BUILD_DEFINITIONVERSION
 
 Scope: All
 
-The version of the build definition.
+The version of the build pipeline.
 
 ### Build.QueuedBy
 
@@ -399,7 +401,7 @@ The event that caused the build to run.
 * `BuildCompletion`: The build was [triggered by another build](triggers.md#BuildCompletion)
 ::: moniker-end
 
-See [Build definition triggers](triggers.md), [Improve code quality with branch policies](../../git/branch-policies.md).
+See [Build pipeline triggers](triggers.md), [Improve code quality with branch policies](../../git/branch-policies.md).
         
 ### Build.Repository.Clean
 
@@ -550,7 +552,7 @@ Scope: Agent
 
 The local path on the agent you can use as an output folder for compiled binaries. For example: `C:\TfsData\Build\_work\6c3842c6\staging`.
 
-By default, new build definitions are not set up to clean this directory. You can define your build to clean it up on the [Repository tab](repository.md).
+By default, new build pipelines are not set up to clean this directory. You can define your build to clean it up on the [Repository tab](repository.md).
 
 #### TFS 2015.4
 
@@ -616,7 +618,7 @@ If the build was [triggered by another build](triggers.md#BuildCompletion), then
 
 Environment variable: BUILD_TRIGGEREDBY_DEFINITIONNAME
 
-If the build was [triggered by another build](triggers.md#BuildCompletion), then this variable is set to the name of the triggering build definition.
+If the build was [triggered by another build](triggers.md#BuildCompletion), then this variable is set to the name of the triggering build pipeline.
 
 ### Build.TriggeredBy.BuildNumber
 
@@ -662,7 +664,7 @@ Environment variable: SYSTEM_DEFINITIONID
 
 Scope: All
 
-The ID of the build definition.
+The ID of the build pipeline.
 
 ::: moniker range=">= tfs-2015"
 

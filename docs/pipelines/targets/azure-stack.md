@@ -14,8 +14,6 @@ monikerRange: 'vsts'
 
 # Deploy apps to Azure Stack
 
-**VSTS**
-
 [Azure Stack](https://azure.microsoft.com/en-in/overview/azure-stack/)
 is an extension of Azure that enables the agility and fast-paced innovation of cloud computing
 through a hybrid cloud and on-premises environment.
@@ -30,7 +28,7 @@ To enable connection to an Azure Stack, you specify it as the **Environment** pa
 You must use the full version of the endpoint dialog to manually define the connection.
 Before you configure a service endpoint, you should also ensure you meet all relevant compliance requirements for your application.
 
-You can then use the service endpoint in your [build and release definition tasks](../tasks/index.md).
+You can then use the service endpoint in your [build and release pipeline tasks](../tasks/index.md).
 
 ### Next
 
@@ -53,7 +51,7 @@ The following Azure tasks are validated with Azure Stack:
 
 ### How do I resolve SSL errors during deployment?
 
-To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release definition.
+To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
 

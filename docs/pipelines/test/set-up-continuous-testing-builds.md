@@ -1,6 +1,6 @@
 ---
 title: Set up continuous testing for your builds - test automation tools
-description: Set up continuous testing for your builds in Microsoft VSTS and Team Foundation Server (TFS) with a build or release definition 
+description: Set up continuous testing for your builds in Microsoft VSTS and Team Foundation Server (TFS) with a build or release pipeline 
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,6 +18,10 @@ monikerRange: '>= tfs-2015'
 
 Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) and test automation.
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+::: moniker-end
+
 **NOTE**: You can use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task to deploy and run
 unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
 and run tests on platforms that don't have Visual Studio installed by using the 
@@ -27,7 +31,7 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
 ## Before you start
 
-* [Create a build definition](../../pipelines/overview.md) that builds your solution after each check-in, using continuous integration.
+* [Create a build pipeline](../../pipelines/overview.md) that builds your solution after each check-in, using continuous integration.
 
 * [Set up environments](set-up-continuous-test-environments-builds.md) to run your app and tests remotely in a distributed environment after each build.
 
@@ -35,16 +39,16 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
 1. In VSTS or TFS, go to your project.
 
-1. Go to your build definition and open it for editing.
+2. Go to your build pipeline and open it for editing.
 
-   ![Edit build definition](_img/edit-build-definition.png)
+   ![Edit build pipeline](_img/edit-build-definition.png)
    
-1. Choose the **+** icon for the process phase and add tasks to deploy your app for testing. For example, if you're testing a Visual Studio solution
+3. Choose the **+** icon for the process phase and add tasks to deploy your app for testing. For example, if you're testing a Visual Studio solution
    and want to use the **Window Machine File Copy** and **PowerShell on Target Machines** tasks:
 
    ![Add File Copy and PowerShell tasks](_img/set-up-continuous-testing-builds/add-file-copy-powershell-steps.png)
 
-1. Add the details to copy your app from its drop location to its test environment:
+4. Add the details to copy your app from its drop location to its test environment:
 
    * Source folder for your app
 
@@ -54,17 +58,17 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
    * Target folder where to put your app
 
-   ![Build definition, copy app details](_img/set-up-continuous-testing-builds/copy-app-test-environment.png)
+   ![Build pipeline, copy app details](_img/set-up-continuous-testing-builds/copy-app-test-environment.png)
 
    > If you use the list of machines in more than one task, consider defining
    a variable that contains the list of machines. For example, a
-   [build or release definition variable](../../pipelines/release/variables.md)
+   [build or release pipeline variable](../../pipelines/release/variables.md)
    or a variable defined within a project-wide 
    [variable group](../../pipelines/library/variable-groups.md).
    Using a variable means that you can change the list of machines in one place
    and have the change apply to all the tasks that use the variable.
 
-1. Add the details to deploy your app using PowerShell.
+5. Add the details to deploy your app using PowerShell.
 
    * List of machines where you want to deploy your app
 
@@ -74,9 +78,9 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
    ![Add task to deploy app with PowerShell](_img/set-up-continuous-testing-builds/run-powershell-details.png)
 
-1. Save your build definition.
+6. Save your build pipeline.
 
-   ![Build definition: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
+   ![Build pipeline: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
 
 ## Set up test deployment for your build
 
@@ -87,7 +91,7 @@ and run tests on platforms that don't have Visual Studio installed by using the
 
 If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
 
-1. In your build definition, add a **Window Machine File Copy** task with these details to deploy your tests:
+1. In your build pipeline, add a **Window Machine File Copy** task with these details to deploy your tests:
 
    * Source folder for your tests
 
@@ -97,7 +101,7 @@ If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
 
    * Target folder where to put your tests
 
-   ![Build definition, copy tests](_img/set-up-continuous-testing-builds/copy-tests.png)
+   ![Build pipeline, copy tests](_img/set-up-continuous-testing-builds/copy-tests.png)
 
 1. Add a task with these details to deploy the test agent for running your tests:
 
@@ -107,25 +111,25 @@ If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
 
    * Credentials for the deployment agents, so the test agent can run in your test environment
 
-   ![Build definition: deploy test agent details](_img/set-up-continuous-testing-builds/deploy-test-agent.png)
+   ![Build pipeline: deploy test agent details](_img/set-up-continuous-testing-builds/deploy-test-agent.png)
 
-1. Save your build definition.
+1. Save your build pipeline.
 
-   ![Build definition: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
+   ![Build pipeline: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
 
 ## Set up your tests to run with your build
 
-1. In your build definition, add a task with these details to run your tests with the test agent:
+1. In your build pipeline, add a task with these details to run your tests with the test agent:
 
    * List of machines where you want to run your tests
 
    * Folder where you put your tests
 
-   ![Build definition: Run tests with test agent](_img/set-up-continuous-testing-builds/run-tests-with-test-agent.png)
+   ![Build pipeline: Run tests with test agent](_img/set-up-continuous-testing-builds/run-tests-with-test-agent.png)
 
-1. Save your build definition and queue a build to check your test run.
+1. Save your build pipeline and queue a build to check your test run.
 
-   ![Build definition: queue build](_img/queue-build.png)
+   ![Build pipeline: queue build](_img/queue-build.png)
 
 1. After your build is done, [review your test results](review-continuous-test-results-after-build.md).
 
