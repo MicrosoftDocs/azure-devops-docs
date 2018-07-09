@@ -58,7 +58,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get a list of pull requests in the project
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/{project}/_apis/git/pullRequests?api-version={version}[&status={string}&creatorId={GUID}&reviewerId={GUID}&sourceRefName={string}&targetRefName={string}&$top={integer}&$skip={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/git/pullRequests?api-version={version}[&status={string}&creatorId={GUID}&reviewerId={GUID}&sourceRefName={string}&targetRefName={string}&$top={integer}&$skip={integer}]
 ```
 
 | Parameter     | Type                                   | Default | Notes

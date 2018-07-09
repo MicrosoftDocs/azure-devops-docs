@@ -12,10 +12,13 @@ ms.date: 04/18/2018
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Build your Node.js app with Gulp
 
 **VSTS | TFS 2018 | TFS 2017.3**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 Follow these steps to set up a continuous integration (CI) process for a Node.js app using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
 
@@ -77,7 +80,7 @@ Choose this option if you prefer a graphical interface in your web browser.
 
 **VSTS**
 
-Choose this option if you want the advantages of configuration as code. This means your definition is versioned with your code and follows the same branching structure as your code. 
+Choose this option if you want the advantages of configuration as code. This means your pipeline is versioned with your code and follows the same branching structure as your code. 
 
 ```YAML
 steps:
@@ -88,13 +91,13 @@ steps:
 
 ---
 
-## Create the CI process definition
+## Create the CI process pipeline
 
 [!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-Begin by creating your build definition.
+Begin by creating your build pipeline.
 
 # [VSTS or TFS repo](#tab/gitvsts/web)
 
@@ -102,7 +105,7 @@ Begin by creating your build definition.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build pipeline.
 
 1. In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
 
@@ -110,7 +113,7 @@ Begin by creating your build definition.
 
 # [VSTS or TFS repo](#tab/gitvsts/yaml)
 
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build definition.
+To create a pipeline that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, VSTS automatically uses it to create your build pipeline.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
@@ -122,7 +125,7 @@ To create a definition that is configured as code, you'll modify a YAML file in 
 
 In VSTS:
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then choose **+ New**. You're asked to **Select a template** for the new build definition.
+1. Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then choose **+ New**. You're asked to **Select a template** for the new build pipeline.
 
 1. In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
 
@@ -130,7 +133,7 @@ In VSTS:
 
 # [GitHub repo](#tab/github/yaml)
 
-To create a definition that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build definition that points to the YAML file.
+To create a pipeline that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build pipeline that points to the YAML file.
 
 In GitHub:
 
@@ -147,11 +150,11 @@ To get ready for continuous deployment, choose which kind of deployment target y
 
 # [Azure web app or IIS server](#tab/deploy-windows/web)
 
-All the tasks you need were automatically added to the build definition by the template. These are the tasks that will automatically run every time you push code changes.
+All the tasks you need were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
 Select **Tasks**. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, make sure the option to **Publish to TFS/VSTS** is selected.
 
-Proceed to finish the CI process definition.
+Proceed to finish the CI process pipeline.
 
 # [Azure web app or IIS server](#tab/deploy-windows/yaml)
 
@@ -258,7 +261,7 @@ Commit the above change to the master branch.
 
 ---
 
-## Finish the CI process definition
+## Finish the CI process pipeline
 
 You're nearly ready to go. Just a few more steps to complete your CI build process.
 
@@ -272,11 +275,11 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. Select **Get sources** and then:
 
- Observe that the new build definition is automatically linked to your repository.
+ Observe that the new build pipeline is automatically linked to your repository.
 
-1. Select the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Select the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Choose **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, choose **Save & queue**.
+1. Choose **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, choose **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Choose the link to watch the new build as it happens.
 
@@ -284,7 +287,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. Navigate to the **Build and Release** hub.
 
-1. Observe that there's a new build definition named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
+1. Observe that there's a new build pipeline named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
 
 1. In the left column of the running build, select **Job**. After an agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
@@ -300,9 +303,9 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
  Select your version control repository. You'll need to authorize access to your repo.
 
-1. Select the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Select the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Choose **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, choose **Save & queue**.
+1. Choose **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, choose **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Choose the link to watch the new build as it happens.
 
@@ -310,7 +313,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 In VSTS:
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New**. You're asked to **Select a template** for the new build definition.
+1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New**. You're asked to **Select a template** for the new build pipeline.
 
 1. Select **YAML**, and then select **Apply**.
 

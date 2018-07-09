@@ -8,13 +8,17 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # What is Release Management?
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 **Release Management** is a service in Visual Studio Team Services (VSTS)
 and Team Foundation Server (TFS 2015.2 and later) and an essential
@@ -24,7 +28,7 @@ You can **fully automate** the testing and delivery of your software
 in multiple environments all the way to production, or set up
 semi-automated processes with **approvals** and **on-demand deployments**.
 
-![A release definition defines the environments for deploment](_img/what-is-release-management/understand-rm-01.1.png)
+![A release pipeline defines the environments for deploment](_img/what-is-release-management/understand-rm-01.1.png)
 
 1. **[Watch this video](https://www.youtube.com/embed/zSPuRXTeZW8)** - see Release Management in action.
 
@@ -86,7 +90,7 @@ Consider using Release Management if:
 <a name="howrmworks"></a>
 ## How does Release Management work?
 
-The Release Management service stores the data about your release definitions,
+The Release Management service stores the data about your release pipelines,
 environments, tasks, releases, and deployments in VSTS or TFS.
 
 ![Release management components](_img/what-is-release-management/understand-rm-05.png)
@@ -104,7 +108,7 @@ Release Management runs the following steps as part of every deployment:
 
 1. **Agent selection**: An automation agent picks up the job.
    The agents for Release Management are exactly the same as those that run your
-   Builds in VSTS and TFS. A release definition can
+   Builds in VSTS and TFS. A release pipeline can
    contain settings to select an appropriate agent at runtime.
 
 1. **Download artifacts**: The agent downloads all the artifacts specified

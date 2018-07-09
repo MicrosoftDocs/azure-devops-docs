@@ -24,12 +24,9 @@ The build agent must have the following capability:
 
  * Apache Ant
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/ANTV1.md)]
-
 ::: moniker-end
 
 ## Arguments

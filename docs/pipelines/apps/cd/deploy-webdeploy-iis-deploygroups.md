@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 We'll show you how to set up continuous deployment of your ASP.NET or Node app to an IIS web server running on Windows using
 Visual Studio Team Services (VSTS). You can use the steps in this quickstart as long as your continuous integration process publishes a web deployment package.
 
@@ -60,20 +64,20 @@ Your CD release process picks up the artifacts published by your CI build and th
 1. Do one of the following:
 
    * If you've just completed a CI build then, in the build's **Summary** tab under **Deployments**,
-     choose **Create release** followed by **Yes**. This starts a new release definition that's automatically linked to the build definition.
+     choose **Create release** followed by **Yes**. This starts a new release pipeline that's automatically linked to the build pipeline.
 
-     ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
+     ![Creating a new release pipeline from the build summary](../_shared/_img/release-from-build-summary.png)
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
-     in the list of release definitions, and choose **Create release definition**.
+     in the list of release pipelines, and choose **Create release pipeline**.
 
-     ![Creating a new release definition in the Releases page](../_shared/_img/release-from-release-page.png)
+     ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)
 
 1. Select the **IIS Website Deployment** template and choose **Apply**.
 
-1. If you created your new release definition from a build summary, check that the build definition
+1. If you created your new release pipeline from a build summary, check that the build pipeline
    and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
-   release definition from the **Releases** tab, choose the **+ Add** link and select your build artifact.
+   release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
    ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
 
@@ -84,13 +88,13 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 1. Open the **Tasks** tab and select the **IIS Deployment** phase. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
 
-   ![IIS deployment group in release definition](../_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
+   ![IIS deployment group in release pipeline](../_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
-1. Save the release definition.
+1. Save the release pipeline.
 
 ## Create a release to deploy your app
 
-You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build:
+You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 

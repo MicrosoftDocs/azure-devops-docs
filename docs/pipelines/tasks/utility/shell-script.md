@@ -18,14 +18,16 @@ monikerRange: '>= tfs-2015'
 
 ![icon](_img/shell-script.png) Run a shell script using bash
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 ## Demands
 
 sh
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 ```YAML
 - task: ShellScript@2
   inputs:
@@ -35,7 +37,6 @@ sh
     #cwd: '' # Optional
     #failOnStandardError: false
 ```
-
 ::: moniker-end
 
 ## Arguments
@@ -96,7 +97,7 @@ ls -1 $BUILD_SOURCESDIRECTORY
 echo "Over and out."
 ```
 
-On the [Build tab](../../index.md) of a build definition, add this task:
+On the [Build tab](../../index.md) of a build pipeline, add this task:
 
 <table>
 <tr>

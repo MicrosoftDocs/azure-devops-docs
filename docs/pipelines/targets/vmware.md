@@ -8,14 +8,18 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # VMware deployment
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 You can automatically provision virtual machines in a VMware environment and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
- 
+
 ## VMware connection
 
 ::: moniker range="vsts"
@@ -76,14 +80,14 @@ the agent machine:
    * Open your VSTS or TFS project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
 
-   * In the **Services** tab, choose **New Service Endpoint**, and select **VMware vCenter Server**.
+   * In the **Services** tab, choose **New service connection**, and select **VMware vCenter Server**.
 
    * In the **Add new VMware vCenter Server Connection** 
      dialog, enter the values required to connect to the 
      vCenter Server:
 
      - **Connection Name**: Enter a user-friendly name 
-       for the service endpoint such as **Fabrikam vCenter**.
+       for the service connection such as **Fabrikam vCenter**.
      - **vCenter Server URL**: Enter the URL of the 
        vCenter server, in the form `https://machine.domain.com/`.
        Note that only **HTTPS** connections are supported.

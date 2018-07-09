@@ -15,12 +15,9 @@ monikerRange: 'vsts'
 
 ![](_img/downloadbuildartifacts.png) Download Build Artifacts
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/DownloadBuildArtifactsV0.md)]
-
 ::: moniker-end
 
 ## Arguments
@@ -28,8 +25,8 @@ monikerRange: 'vsts'
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Download artifacts produced by</td><td>(Required) Download artifacts produced by the current build, or from a specific build.</td></tr>
 <tr><td>Project</td><td>(Required) The project from which to download the build artifacts</td></tr>
-<tr><td>Build definition</td><td>(Required) Select the build definition name</td></tr>
-<tr><td>When appropriate, download artifacts from the triggering build.</td><td>(Optional) If checked, this build task will try to download artifacts from the triggering build. If there is no triggering build from the specified definition, it will download artifacts from the build specified in the options below.</td></tr>
+<tr><td>Build pipeline</td><td>(Required) Select the build pipeline name</td></tr>
+<tr><td>When appropriate, download artifacts from the triggering build.</td><td>(Optional) If checked, this build task will try to download artifacts from the triggering build. If there is no triggering build from the specified pipeline, it will download artifacts from the build specified in the options below.</td></tr>
 <tr><td>Build version to download</td><td>(Required) undefined</td></tr>
 <tr><td>Branch name</td><td>(Required) Specify to filter on branch/ref name, for example: ```refs/heads/develop```.</td></tr>
 <tr><td>Build</td><td>(Required) The build from which to download the artifacts</td></tr>

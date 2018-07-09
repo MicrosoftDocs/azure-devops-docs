@@ -8,6 +8,6 @@ You've just put your own CI process in place to automatically build and validate
 * [Deploy to a Linux VM](../cd/deploy-linuxvm-deploygroups.md)
 * [Deploy to a Windows VM](../cd/deploy-webdeploy-iis-deploygroups.md)
 
-You can also modify this build definition to meet the needs of your team. To learn more see one of these topics:
+You can also modify this build pipeline to meet the needs of your team. To learn more see one of these topics:
 
 * [CI builds for Git in VSTS](../../build/ci-build-git.md)

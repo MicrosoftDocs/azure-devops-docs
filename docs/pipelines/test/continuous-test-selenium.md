@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 Performing user interface (UI) testing as part of the
 release process is a great way of detecting
 unexpected changes, and need not be difficult. This
@@ -46,7 +50,7 @@ from Visual Studio Test Explorer.
    **Add** then **New Project** and then
    **Unit Test Project**. 
 
-1. After the project is created, add the Selenium and
+2. After the project is created, add the Selenium and
    browser driver references used by the browser to
    execute the tests. Open the shortcut menu for the
    Unit Test project and choose **Manage NuGet
@@ -59,7 +63,7 @@ from Visual Studio Test Explorer.
 
    ![Adding the browser driver packages to your solution](_img/continuous-test-selenium/continuous-test-selenium-02.png)
 
-1. Create your tests. For example, the following code creates a default class named **MySeleniumTests**
+3. Create your tests. For example, the following code creates a default class named **MySeleniumTests**
    that performs a simple test on the Bing.com website. Replace the contents of the **TheBingSearchTest** function
    with the [Selenium code](http://www.seleniumhq.org/docs/01_introducing_selenium.jsp)
    required to test your web app or website. Change the **browser** assignment in the **SetupTest**
@@ -150,7 +154,7 @@ from Visual Studio Test Explorer.
    }
    ```
    
-1. Run the Selenium test locally using Test Explorer and check that it works.
+4. Run the Selenium test locally using Test Explorer and check that it works.
 
 ## Define your CI build process
 
@@ -193,12 +197,12 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 ::: moniker-end
 
-1. If you don't have an existing release definition that deploys your web app:
+1. If you don't have an existing release pipeline that deploys your web app:
 
    * Open the **Releases** page in the **Build &amp; Release** hub and choose the **+** icon, then choose
-     **Create release definition**.
+     **Create release pipeline**.
      
-     ![Creating a new release definition](_img/continuous-test-selenium/continuous-test-selenium-06.png)
+     ![Creating a new release pipeline](_img/continuous-test-selenium/continuous-test-selenium-06.png)
  
    * Select the **Azure App Service Deployment** template and choose **Apply**.
    
@@ -218,7 +222,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 1. If you are deploying your app and tests to environments where the target machines that host the agents do not have Visual Studio installed:
 
-   * In the **Tasks** tab of the release definition, choose the **+** icon in the **Run on agent** section.
+   * In the **Tasks** tab of the release pipeline, choose the **+** icon in the **Run on agent** section.
      Select the **Visual Studio Test Platform Installer** task and choose **Add**. Leave all the settings
      at the default values.<p />
 
@@ -226,10 +230,10 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
   
      You can find a task more easily by using the search textbox.
 
-1. In the **Tasks** tab of the release definition, choose the **+** icon in the **Run on agent** section.
+1. In the **Tasks** tab of the release pipeline, choose the **+** icon in the **Run on agent** section.
    Select the **Visual Studio Test** task and choose **Add**.
 
-1. If you added the **Visual Studio Test Platform Installer** task to your definition, change the
+1. If you added the **Visual Studio Test Platform Installer** task to your pipeline, change the
    **Test platform version** setting in the **Execution options** section of the **Visual Studio Test**
    task to **Installed by Tools Installer**. 
  
@@ -237,8 +241,8 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
    [How do I pass parameters to my test code from a release pipeline?](reference-qa.md#pass-params)
 
-1. Save the release definition and start a new release. You can do this by queuing a new CI build, or by 
-   choosing **Create release** from the **Release** drop-down list in the release definition.
+1. Save the release pipeline and start a new release. You can do this by queuing a new CI build, or by 
+   choosing **Create release** from the **Release** drop-down list in the release pipeline.
 
    ![Creating a new release](_img/continuous-test-selenium/continuous-test-selenium-11.png)
 

@@ -15,17 +15,17 @@ ms.date: 08/10/2016
 
 ![](../_img/nuget-packager.png) Create a NuGet package from either a .csproj or .nuspec file.
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Demands
 
 None
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../../_shared/yaml/NuGetPackagerV0.md)]
-
 ::: moniker-end
 
 ## Arguments
@@ -63,7 +63,7 @@ Specify .csproj files (for example, ```**\*.csproj```) for simple projects. In t
 <tr>
 <td>Use build number to version package</td>
 <td>
-Select if you want to use the build number to version your package. If you select this option, for the [definition options](../../../build/options.md), set the **build number format** to something like ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```
+Select if you want to use the build number to version your package. If you select this option, for the [pipeline options](../../../build/options.md), set the **build number format** to something like ```$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)```
 <p>The build number format must be ```{some_characters}_0.0.0.0```. The characters and the underscore character are omitted from the output. The version number at the end must be a unique number in a format such as ```0.0.0.0``` that is higher than the last published number.</p>
 <p>The version number is passed to [nuget pack](https://docs.nuget.org/consume/command-line-reference#pack) with the ```-Version``` option.</p>
 <p>Versions are shown prominently on NuGet servers. For example they are listed on the Visual Studio Team Services feeds page and on the NuGet.org package page.</p>

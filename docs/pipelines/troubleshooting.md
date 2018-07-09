@@ -11,12 +11,15 @@ ms.date: 08/04/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Troubleshoot Build and Release
 
 [!INCLUDE [temp](_shared/version.md)]
 
 This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](languages/dotnet-core.md#troubleshooting)
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Run commands locally at the command prompt
 It is helpful to narrow whether a build or release failure is the result of a TFS/VSTS product issue (agent or tasks). Build and release failures may also result from external commands.
@@ -235,7 +238,7 @@ A mismatching notification URL may cause the worker to process to fail to connec
 ## Team Foundation Version Control (TFVC)
 
 ### Get sources not downloading some files
-This may be characterized by a message in the log "All files up to date" from the *tf get* command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build definition. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
+This may be characterized by a message in the log "All files up to date" from the *tf get* command. Verify the built-in service identity has permission to download the sources. Either the identity *Project Collection Build Service* or *Project Build Service* will need permission to download the sources, depending on the selected authorization scope on General tab of the build pipeline. In the version control web UI, you can browse the project files at any level of the folder hierarchy and check the security settings.
 
 ### Get sources through Team Foundation Proxy
 The easiest way to configure the agent to get sources through a Team Foundation Proxy is set environment variable `TFSPROXY` that point to the TFVC proxy server for the agent's run as user.

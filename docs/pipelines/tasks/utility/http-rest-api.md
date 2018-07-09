@@ -1,6 +1,6 @@
 ---
 title: Invoke HTTP REST API task for Microsoft VSTS and TFS 
-description: Build and release task to invoke an HTTP API and parse the response with a build or release definition in VSTS and TFS
+description: Build and release task to invoke an HTTP API and parse the response with a build or release pipeline in VSTS and TFS
 ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2018'
 
 ![icon](_img/http-rest-api.png) &nbsp; Invoke an HTTP API and parse the response.
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 ::: moniker range="tfs-2018"
 
 This task is available in both builds and releases in TFS 2018.2 In TFS 2018 RTM, this task is available only in releases.
@@ -27,18 +31,15 @@ This task is available in both builds and releases in TFS 2018.2 In TFS 2018 RTM
 This task can be used in only an [agentless phase](../../process/server-phases.md).
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/InvokeRestApiV1.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 | Parameter | Comments |
 | --- | --- | --- |
-| **Generic endpoint** | Required. Select a Generic service endpoint. Provides the baseUrl for the call and the authorization to use. |
+| **Generic endpoint** | Required. Select a Generic service connection. Provides the baseUrl for the call and the authorization to use. |
 | **Method** | Required. The HTTP method with which the API will be invoked; for example, **GET**, **PUT**, or **UPDATE**. |
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the API. |
 | **Body** | Optional. The request body for the function call in JSON format. |

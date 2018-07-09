@@ -26,12 +26,9 @@ specified in the manifest files, in an Azure Service Fabric application package.
 
 None
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricUpdateManifestsV2.md)]
-
 ::: moniker-end
 
 ## Arguments
