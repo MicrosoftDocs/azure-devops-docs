@@ -40,11 +40,8 @@ None
 * If using a self-hosted agent, you must either add the `conda` executable to `PATH` or set the `CONDA` environment variable to the root of the Conda installation.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV0.md)]
-
 ::: moniker-end
 
 ## Arguments

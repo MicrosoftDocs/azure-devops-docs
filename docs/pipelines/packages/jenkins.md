@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 **VSTS | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 VSTS's package management works with the continuous integration tools your team already uses.

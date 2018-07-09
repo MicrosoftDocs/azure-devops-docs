@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ![icon](_img/powershell-on-target-machines-icon.png) Execute PowerShell scripts on remote machine(s).
@@ -34,11 +34,8 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts.
 [!INCLUDE[deploy-winrm-setup](../_shared/deploy-winrm-setup.md)]
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/PowerShellOnTargetMachinesV3.md)]
-
 ::: moniker-end
 
 ## Arguments

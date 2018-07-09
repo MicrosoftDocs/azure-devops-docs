@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2018'
 **VSTS | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 A deployment group is a logical set of deployment target machines 

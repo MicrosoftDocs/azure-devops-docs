@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/chef.png) Deploy to Chef environments by editing environment attributes
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/ChefV1.md)]
-
 ::: moniker-end
 
 ## Arguments

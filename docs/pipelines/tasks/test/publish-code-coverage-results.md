@@ -19,11 +19,8 @@ monikerRange: '>= tfs-2015'
 Publishes code coverage results that were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/PublishCodeCoverageResultsV1.md)]
-
 ::: moniker-end
 
 ## Arguments

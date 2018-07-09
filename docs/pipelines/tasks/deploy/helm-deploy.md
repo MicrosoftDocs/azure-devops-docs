@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/helmdeploy.png) Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/HelmDeployV0.md)]
-
 ::: moniker-end
 
 ## Arguments

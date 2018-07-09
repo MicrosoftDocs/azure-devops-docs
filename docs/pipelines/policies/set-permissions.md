@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Permissions for build and release functions are primarily set at the object-level for a specific build or release, or for select tasks, at the collection level. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
@@ -138,20 +138,20 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ::: moniker range=">= tfs-2015"
 
-## Manage permissions for agent queues and service endpoints 
+## Manage permissions for agent queues and service connections
 
-You manage the security for [agent pools](../agents/pools-queues.md) and [service endpoints](../library/service-endpoints.md) by adding users or groups to a role. The method is similar for both agent queues and service endpoints. You will need to be a member of the Project  Administrator group to manage the security for these resources. 
+You manage the security for [agent pools](../agents/pools-queues.md) and [service connections](../library/service-endpoints.md) by adding users or groups to a role. The method is similar for both agent queues and service connections. You will need to be a member of the Project  Administrator group to manage the security for these resources. 
  
 > [!NOTE]
 > **Feature availability**: These features are available on VSTS and TFS 2015 and later versions. 
 
-For example, here we show how to add a user to the Administrator role for a service endpoint.  
+For example, here we show how to add a user to the Administrator role for a service connection.  
 
 1. From the web portal, click the ![gear settings icon](../../_img/icons/gear_icon.png) gear Settings icon to open the project settings admin context. 
 
-1. Click **Services**, click the service endpoint that you want to manage, and then click **Roles**.   
+1. Click **Services**, click the service connection that you want to manage, and then click **Roles**.   
 
-   ![Open the Roles tab for a service endpoint](_img/manage-roles/open-services-roles.png) 
+   ![Open the Roles tab for a service connection](_img/manage-roles/open-services-roles.png)
 
 1. Add the user or group and choose the role you want them to have. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md). 
 
@@ -178,7 +178,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
 1. Click **Deployment Pools**, and then open the **Security** dialog for all deployment pools.    
 
-   ![Open the Roles tab for a service endpoint](_img/manage-roles/open-security-deployment-pools.png) 
+   ![Open the Roles tab for a service connection](_img/manage-roles/open-security-deployment-pools.png) 
 
    If you want to manage the permissions for a specific deployment group, then open the Security dialog for that group. 
 

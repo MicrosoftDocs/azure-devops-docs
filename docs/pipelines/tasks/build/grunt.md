@@ -26,11 +26,8 @@ The build agent must have the following capability:
  * Grunt
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/GruntV0.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ![icon](_img/azure-service-fabric.png) Deploy a Service Fabric application to a cluster.
@@ -33,11 +33,8 @@ deploy to a Service Fabric cluster.
 [Download and install Service Fabric](https://aka.ms/servicefabric) on the build agent.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricDeployV1.md)]
-
 ::: moniker-end
 
 ## Arguments
@@ -46,7 +43,7 @@ deploy to a Service Fabric cluster.
 | -------- | ----------- |
 | **Publish Profile** | The location of the publish profile that specifies the settings to use for deployment, including the location of the target Service Fabric cluster. Can include wildcards and variables. Example:<br />`$(system.defaultworkingdirectory)/**/drop/projectartifacts/**/PublishProfiles/Cloud.xml` |
 | **Application Package** | The location of the Service Fabric application package to be deployed to the cluster. Can include wildcards and variables. Example: `$(system.defaultworkingdirectory)/**/drop/applicationpackage` |
-| **Cluster Connection** | The name of the Azure Service Fabric service endpoint defined in the TS/TFS project that describes the connection to the cluster. |
+| **Cluster Connection** | The name of the Azure Service Fabric service connection defined in the TS/TFS project that describes the connection to the cluster. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 Also see: [Update Service Fabric App Versions task](../utility/service-fabric-versioning.md)

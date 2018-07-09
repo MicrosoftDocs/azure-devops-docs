@@ -24,16 +24,16 @@ a [service principal with certificate](https://docs.microsoft.com/en-us/azure/az
 which is not currently supported in VSTS/TFS.
 
 To enable connection to an Azure Stack, you specify it as the **Environment** parameter when you create an
-[Azure Resource Manager service endpoint](../library/connect-to-azure.md).
+[Azure Resource Manager service connection](../library/connect-to-azure.md).
 You must use the full version of the endpoint dialog to manually define the connection.
-Before you configure a service endpoint, you should also ensure you meet all relevant compliance requirements for your application.
+Before you configure a service connection, you should also ensure you meet all relevant compliance requirements for your application.
 
-You can then use the service endpoint in your [build and release pipeline tasks](../tasks/index.md).
+You can then use the service connection in your [build and release pipeline tasks](../tasks/index.md).
 
 ### Next
 
 * [Deploy an Azure web app](../apps/cd/deploy-webdeploy-webapps.md)
-* [Troubleshoot Azure Resource Manager service endpoints](../release/azure-rm-endpoint.md)
+* [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
 * [Azure Stack Operator Documentation](https://docs.microsoft.com/en-us/azure/azure-stack/)
 
 ## Q&A

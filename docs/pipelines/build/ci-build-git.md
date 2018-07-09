@@ -21,7 +21,7 @@ monikerRange: '>=tfs-2017'
 # Build multiple branches
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 You can build every commit and pull request to your Git repository using VSTS or TFS. In this tutorial, we will discuss additional considerations when building multiple branches in your Git repository. You will learn how to:

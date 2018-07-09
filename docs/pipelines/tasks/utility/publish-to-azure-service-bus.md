@@ -21,11 +21,8 @@ monikerRange: 'vsts'
 Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/PublishToAzureServiceBusV1.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -20,6 +20,10 @@ monikerRange: '>= tfs-2018'
 
 ![](_img/nuget.png) Install and update NuGet package dependencies, or package and publish NuGet packages. 
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
 > [!TIP]
@@ -83,7 +87,7 @@ None
             <ul>
                 <li>Select this option to use feeds specified in a [NuGet.config](http://docs.nuget.org/Consume/NuGet-Config-File)
                     file you've checked into source control.</li>
-                <li>Credentials for feeds outside this account/collection can be used to inject credentials you've provided as a [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
+                <li>Credentials for feeds outside this account/collection can be used to inject credentials you've provided as a [NuGet service connection](../../library/service-endpoints.md#sep-nuget) into your NuGet.config as the build runs.</li>
                 <li>See the [walkthrough](../../packages/nuget-restore.md) for help using packages from feeds in multiple VSTS accounts.</li>
             </ul>
         </td>
@@ -267,7 +271,7 @@ None
                     <ul><li>"Allow duplicates to be skipped" allows you to continually publish a set of packages and only change the version number of the subset of packages that changed. It allows the task to report success even if some of your packages are rejected with 409 Conflict errors. <br />This option is currently only available on VSTS.
                     </li></ul>
                 </li>
-                <li>**External NuGet server (including other accounts/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS account or TFS collection. After you select this option, you create and select a [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget).
+                <li>**External NuGet server (including other accounts/collections)** publishes to an external server such as [NuGet](https://www.nuget.org/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS account or TFS collection. After you select this option, you create and select a [NuGet service connection](../../library/service-endpoints.md#sep-nuget).
                 </li>
             </ul>
         </td>
@@ -293,11 +297,8 @@ This task is unable to publish NuGet packages to a TFS Package Management feed t
 ## Custom NuGet command
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/NuGetV0.md)]
-
 ::: moniker-end
 
 ### Arguments
@@ -423,7 +424,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
                 <li>Command: push</li>
                 <li>Path to NuGet package(s) to publish: ```$(Build.ArtifactStagingDirectory)```</li>
                 <li>Target feed location: External NuGet server</li>
-                <li>NuGet server: Create a new [NuGet service endpoint](../../library/service-endpoints.md#sep-nuget) with your
+                <li>NuGet server: Create a new [NuGet service connection](../../library/service-endpoints.md#sep-nuget) with your
                     NuGet.org ApiKey and select it here</li>
             </ul>
         </td>

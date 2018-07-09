@@ -171,7 +171,7 @@
       href: library/variable-groups.md
     - name: Task groups
       href: library/task-groups.md
-    - name: Service endpoints
+    - name: Service connections
       href: library/service-endpoints.md
     - name: Secure files
       href: library/secure-files.md

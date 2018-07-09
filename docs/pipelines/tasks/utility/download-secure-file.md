@@ -28,11 +28,8 @@ If you use multiple versions of the Download Secure File task in your pipeline, 
 Note that if you use two Download Secure File tasks in the same pipeline with the same task version, the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable will not be populated, but both files will still be downloaded to `$(Agent.TempDirectory)`.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/DownloadSecureFileV1.md)]
-
 ::: moniker-end
 
 ## Arguments

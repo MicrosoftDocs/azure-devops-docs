@@ -21,11 +21,11 @@ from an [Azure Key Vault](https://docs.microsoft.com/en-us/rest/api/keyvault/abo
 The task can be used to fetch the latest values of all or a subset of secrets from the vault, and set them as variables that can be used in subsequent tasks of a pipeline.
 The task is Node-based, and works with agents on Linux, macOS, and Windows.
 
-## Pre-requisites
+## Prerequisites
 
 The task has the following pre-requisites:
 
-* An Azure subscription linked to Team Foundation Server or VSTS using the [Azure Resource Manager service endpoint](../../library/connect-to-azure.md).
+* An Azure subscription linked to Team Foundation Server or VSTS using the [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
 * An [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) containing the secrets.
 
@@ -60,11 +60,8 @@ When you want to access secrets:
   - Choose **OK** to save the changes.<p />
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureKeyVaultV1.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/decryptfile.png) A thin utility task for file decryption using OpenSSL.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/DecryptFileV1.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 As you compose the tasks for deploying your application into each environment in your DevOps CI/CD processes, variables will help you to:
@@ -100,7 +100,7 @@ Some of the most significant variables are described in the following tables.
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|--------------|
-> | System.TeamFoundationServerUri | The URL of the Release Management service endpoint in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
+> | System.TeamFoundationServerUri | The URL of the Release Management service connection in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
 > | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS account. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
 > | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
 > | System.TeamProject | The name of the project to which this build or release belongs. | Fabrikam | |
@@ -283,7 +283,7 @@ release environment, in debug mode. This can help you resolve issues and failure
   containing a variable named `System.Debug` with the value `true`
   and link this variable group to a release pipeline.
 
->If you get an error related to an Azure RM service endpoint,
-see [How to: Troubleshoot Azure Resource Manager service endpoints](azure-rm-endpoint.md).
+>If you get an error related to an Azure RM service connection,
+see [How to: Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md).
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

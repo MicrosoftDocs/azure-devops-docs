@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/azuremonitoralerts.png) Configure alerts on available metrics for an Azure resource
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorAlertsV0.md)]
-
 ::: moniker-end
 
 ## Arguments

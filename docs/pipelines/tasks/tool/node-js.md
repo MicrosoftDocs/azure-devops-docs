@@ -24,11 +24,8 @@ monikerRange: 'vsts'
 None
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/NodeToolV0.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 # CD of an Azure virtual machine using a Resource Manager template
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 In just a few steps, you can provision Azure virtual machines (VMs)
@@ -51,7 +51,7 @@ Carry out the following steps to deploy the Azure Resource Group.
    ![Azure Resource Group Deployment](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2) - Deploy files to an Azure Resource Group.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Action**: `Create or Update Resource Group`
    

@@ -15,7 +15,11 @@ monikerRange: '>= tfs-2018'
 # SCVMM deployment
 
 You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build. Before this guidance, read the [web quickstart](../get-started-designer.md).
- 
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 ## SCVMM connection
 
 ::: moniker range="vsts"
@@ -45,18 +49,18 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
      in Visual Studio Marketplace, upload it to your
      Team Foundation Server, and install it.<p />
 
-1. Create an SCVMM service endpoint in your project:
+1. Create an SCVMM service connection in your project:
 
    * In your VSTS or TFS project in your web browser, navigate to the project settings and select **Services**.
 
-   * In the **Services** tab, choose **New Service Endpoint**, and select **SCVMM**.
+   * In the **Services** tab, choose **New service connection**, and select **SCVMM**.
 
    * In the **Add new SCVMM Connection** 
      dialog, enter the values required to connect to the 
      SCVMM Server:
 
      - **Connection Name**: Enter a user-friendly name 
-       for the service endpoint such as **MySCVMMServer**.
+       for the service connection such as **MySCVMMServer**.
      - **SCVMM Server Name**: Enter the fully qualified domain 
        name and port number of the SCVMM server, in the form **machine.domain.com:port**.
      - **Username** and **Password**: Enter the credentials
@@ -144,7 +148,7 @@ A quick alternative to bringing up a virtual machine in desired state prior to r
 <a name="runscript"></a>
 ## Run custom PowerShell scripts for SCVMM
 
-For functionality that is not available through the in-built actions, you can run custom SCVMM PowerShell scripts using the task. The task helps you with setting up the connection with SCVMM using the credentials configured in the service endpoint, and then runs the script.
+For functionality that is not available through the in-built actions, you can run custom SCVMM PowerShell scripts using the task. The task helps you with setting up the connection with SCVMM using the credentials configured in the service connection, and then runs the script.
 
 * **Display name**: The name for the task as it appears in the task list. 
 * **SCVMM Service Connection**: Select a SCVMM service connection you already defined, or create a new one.

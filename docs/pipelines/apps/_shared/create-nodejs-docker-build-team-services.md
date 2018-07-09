@@ -39,7 +39,7 @@ ms.topic: include
 1. Select **+ Add Task** to add another task to the build pipeline. From the displayed task catalog, select **Docker** task. Change the parameters for this task as follows:
 
    * **Azure subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
-     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service endpoint](../../library/connect-to-azure.md) to manually set up the connection.
+     the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
 
    * **Azure Container Registry:** Select the Azure container registry that you created above.
 

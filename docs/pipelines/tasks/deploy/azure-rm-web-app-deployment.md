@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/azurermwebappdeployment.png) Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureRmWebAppDeploymentV4.md)]
-
 ::: moniker-end
 
 ## Arguments

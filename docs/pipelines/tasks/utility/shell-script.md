@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 ![icon](_img/shell-script.png) Run a shell script using bash
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ## Demands
@@ -27,9 +27,7 @@ monikerRange: '>= tfs-2015'
 sh
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 ```YAML
 - task: ShellScript@2
   inputs:
@@ -39,7 +37,6 @@ sh
     #cwd: '' # Optional
     #failOnStandardError: false
 ```
-
 ::: moniker-end
 
 ## Arguments

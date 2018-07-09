@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 # How To: Extend your deployments to IIS Deployment Groups
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 You can quickly and easily deploy your ASP.NET or Node app to an IIS Deployment Group using

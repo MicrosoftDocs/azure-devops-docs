@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 # Build and Release in VSTS and TFS
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Visual Studio Team Services (VSTS) is a collection of hosted DevOps services for application developers. Team Foundation Server (TFS) is the on-premises version of VSTS that you can install and manage on your own servers. Build and Release are two of the DevOps services in VSTS and TFS that help you manage continuous integration and delivery of your applications.

@@ -12,7 +12,7 @@ ms.date: 10/18/2017
 # Publish symbols for debugging
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 [!INCLUDE [](../../package/_shared/availability-symbols.md)]

@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 **VSTS | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 A *task group* allows you to encapsulate a sequence of tasks, already defined

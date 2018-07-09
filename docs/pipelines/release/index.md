@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 A **release pipeline** is one of the fundamental concepts in Release Management for your DevOps CI/CD processes.

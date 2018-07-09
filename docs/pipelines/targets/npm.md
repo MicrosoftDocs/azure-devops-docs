@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 # Publish npm packages
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 You can publish npm packages produced by your build to:
@@ -36,7 +36,7 @@ To publish an npm package to a Package Management feed, add the **npm** task. Th
 
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
 
-To publish to a external npm registry, you must first create a service endpoint to point to that registry. You can do this by going to **Project settings**, then choosing **Service endpoints**, and then creating a **New Service Endpoint**. Select the **npm** option for the service endpoint. Fill in registry URL and the credentials to connect to the registry.
+To publish to a external npm registry, you must first create a service connection to point to that registry. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in registry URL and the credentials to connect to the registry.
 
 # [YAML](#tab/yaml)
 
@@ -47,7 +47,7 @@ YAML is not supported in TFS.
 ::: moniker range="vsts"
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
 
-To publish to a external npm registry, you must first create a service endpoint to point to that feed. You can do this by going to **Project settings**, then choosing **Services**, and then creating a **New Service Endpoint**. Select the **npm** option for the service endpoint. Fill in registry URL and the credentials to connect to the registry.
+To publish to a external npm registry, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, then choosing **Services**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in registry URL and the credentials to connect to the registry.
 
 To publish a package to a npm registry, add the following snippet to your .vsts-ci.yml file.
 
@@ -55,7 +55,7 @@ To publish a package to a npm registry, add the following snippet to your .vsts-
 - task: Npm@1
   inputs:
     command: publish
-    publishEndpoint: '<copy and paste the name of the service endpoint here>'
+    publishEndpoint: '<copy and paste the name of the service connection here>'
 ```
 
 For a list of other options, see the [npm task](../tasks/package/npm.md).

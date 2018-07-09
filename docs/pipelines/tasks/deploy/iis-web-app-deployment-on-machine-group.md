@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/iiswebappdeploymentonmachinegroup.png) Deploy a Website or Web Application using WebDeploy
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/IISWebAppDeploymentOnMachineGroupV0.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -25,11 +25,8 @@ None
 This task will fail if no Python versions are found in the tool cache.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/UsePythonVersionV0.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2018'
 # Set up Team Build and Maven
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 This guide covers the basics of using Team Build to work with Maven artifacts in Package Management feeds.

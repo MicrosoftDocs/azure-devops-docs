@@ -3,14 +3,14 @@ ms.topic: include
 ---
 
 <p>
-If a subscription is not available, then add a service endpoint:
+If a subscription is not available, then add a service connection:
 </p>
 
 <ol>
 
 <li>![Manage](_img/azure-web-app-deployment-step-azure-subscription-manage.png)</li>
 
-<li>Click New Service Endpoint, and then click Azure.</li>
+<li>Click New service connection, and then click Azure.</li>
 
 <li><p>On the Add Azure Subscription dialog box:</p><ol><li>Select Certificate.</li><li>Click the link to download your publishsettings xml file and then open the file.</li><li>Copy the ID and certificate values from the file and paste them into the Add Azure Subscription dialog box.</li></ol></li>
 

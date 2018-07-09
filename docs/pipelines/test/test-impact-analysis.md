@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 **Visual Studio 2015.3 and later | TFS 2017.1 and later | VSTS**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Continuous Integration (CI) is a key practice in the industry.

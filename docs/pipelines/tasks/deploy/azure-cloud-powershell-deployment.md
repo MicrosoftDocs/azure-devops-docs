@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/azurecloudpowershelldeployment.png) Deploy an Azure Cloud Service
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureCloudPowerShellDeploymentV1.md)]
-
 ::: moniker-end
 
 ## Arguments

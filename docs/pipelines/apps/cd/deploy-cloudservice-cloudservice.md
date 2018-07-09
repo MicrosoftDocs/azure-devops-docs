@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure cloud service using Release Management.
@@ -89,7 +89,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Open the **Tasks** tab and select the **Environment 1** item. Configure the task variables as follows:
    
-   * **Azure Subscription (Classic)**: Select an Azure Classic service endpoint. If you have not created one already, create one now by choosing **Add**. Then return to your release pipeline, refresh the **Azure Subscription** list, and select the connection you just created.
+   * **Azure Subscription (Classic)**: Select an Azure Classic service connection. If you have not created one already, create one now by choosing **Add**. Then return to your release pipeline, refresh the **Azure Subscription** list, and select the connection you just created.
    
    * **Storage account**: Select the storage account you created earlier.
    

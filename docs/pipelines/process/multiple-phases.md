@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 # Multiple phases
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 You can add multiple [phases](phases.md) to a pipeline. By using different phases in a pipeline, you can:

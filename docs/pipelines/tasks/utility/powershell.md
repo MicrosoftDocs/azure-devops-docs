@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 ![](_img/powershell.png) Run a PowerShell script
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ## Demands
@@ -27,11 +27,8 @@ monikerRange: '>= tfs-2015'
 DotNetFramework
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/PowerShellV2.md)]
-
 ::: moniker-end
 
 ## Arguments

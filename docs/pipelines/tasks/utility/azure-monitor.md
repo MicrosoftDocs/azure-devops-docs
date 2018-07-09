@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ## Demands
@@ -27,18 +27,15 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 None
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 | Parameter | Comments |
 | --- | --- |
-| **Azure subscription** | Required. Select an Azure Resource Manager service endpoint. |
+| **Azure subscription** | Required. Select an Azure Resource Manager service connection. |
 | **Resource group** | Required. The resource group being monitored in the subscription. |
 | **Resource type** | Required. Select the resource type in the selected group. |
 | **Resource name** | Required. Select the resources of the chosen types in the selected group. |
