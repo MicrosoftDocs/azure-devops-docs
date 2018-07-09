@@ -140,7 +140,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <li>
 <p>NuGet Server Endpoint: ![endpoint manage](_img/endpoint-manage.png)</p>
 <ol>
-<li>Click New Service Endpoint, and then click Generic.</li>
+<li>Click "New service connection", and then click Generic.</li>
 <li><p>On the Add New Generic Connection dialog box:</p>
 <ul>
 <li>Connection Name: ```NuGet```</li>

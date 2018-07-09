@@ -19,6 +19,10 @@ monikerRange: '>= tfs-2015'
 ![icon](_img/azure-file-copy-icon.png) Copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 The task is used to copy application files and other
 artifacts that are required in order to install the 
 app; such as PowerShell scripts, PowerShell-DSC modules,
@@ -44,12 +48,9 @@ in the firewall, and install the test certificate.
 
 None
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureFileCopyV2.md)]
-
 ::: moniker-end
 
 ## Arguments
@@ -57,9 +58,9 @@ None
 | Argument | Description |
 | -------- | ----------- |
 | **Source** | Required. The source of the files to copy. Pre-defined system variables such as ``` $(Build.Repository.LocalPath)``` can be used. Names containing wildcards such as ```*.zip``` are not supported. |
-| **Azure Connection Type** | Required. Select the type of service endpoint used to define the connection to Azure. Choose **Azure Classic** or **Azure Resource Manager**. |
-| **Azure Classic Subscription** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter. The name of an [Azure Classic service endpoint](../../library/service-endpoints.md#sep-azure-classic) configured for the subscription where the target Azure service, virtual machine, or storage account is located. |
-| **Azure RM Subscription** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an [Azure Resource Manager service endpoint](../../library/connect-to-azure.md) configured for the subscription where the target Azure service, virtual machine, or storage account is located. See [Azure Resource Manager overview](https://azure.microsoft.com/en-in/documentation/articles/resource-group-overview/) for more details. |
+| **Azure Connection Type** | Required. Select the type of service connection used to define the connection to Azure. Choose **Azure Classic** or **Azure Resource Manager**. |
+| **Azure Classic Subscription** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter. The name of an [Azure Classic service connection](../../library/service-endpoints.md#sep-azure-classic) configured for the subscription where the target Azure service, virtual machine, or storage account is located. |
+| **Azure RM Subscription** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an [Azure Resource Manager service connection](../../library/connect-to-azure.md) configured for the subscription where the target Azure service, virtual machine, or storage account is located. See [Azure Resource Manager overview](https://azure.microsoft.com/en-in/documentation/articles/resource-group-overview/) for more details. |
 | **Destination Type** | Required. The type of target destination for the files. Choose **Azure Blob** or **Azure VMs**. |
 | **Classic Storage Account** | Required if you select **Azure Classic** for the **Azure Connection Type** parameter. The name of an existing storage account within the Azure subscription. |
 | **RM Storage Account** | Required if you select **Azure Resource Manager** for the **Azure Connection Type** parameter. The name of an existing storage account within the Azure subscription. |
@@ -121,10 +122,10 @@ WinRM HTTPS ports, follow these steps:
 
 For more details, see [this blog post](http://blogs.msdn.com/b/muthus_blog/archive/2015/11/04/pre-requisites-for-using-azure-vms-in-winrm-based-tasks-in-build-and-rm-workflows.aspx).
 
-#### What type of service endpoint should I choose?
+#### What type of service connection should I choose?
 
 The following table lists the storage accounts and 
-the service endpoint connections that work with them.
+the service connections that work with them.
 To identify whether a storage account is based on 
 the classic APIs or the Resource Manager APIs, log 
 into the [Azure portal](https://portal.azure.com/)
@@ -133,11 +134,11 @@ and browse for **Storage accounts (Classic)** or
 
 | Storage account type | Azure Service Connections in TFS/TS |
 | --- | --- |
-| Resource Manager | Azure Resource Manager service endpoint | 
-| Classic | Azure service endpoint with certificate-based or credentials-based authentication using a school or work account | 
+| Resource Manager | Azure Resource Manager service connection | 
+| Classic | Azure service connection with certificate-based or credentials-based authentication using a school or work account | 
 
 
-* For Azure classic resources, use an **Azure** service endpoint
+* For Azure classic resources, use an **Azure** service connection
   type with certificate or credentials-based authentication. 
   If you are using credentials-based authentication, 
   ensure that the credentials are for a 
@@ -149,14 +150,14 @@ and browse for **Storage accounts (Classic)** or
   endpoint type. More details at [Automating Azure Resource Group deployment using a Service Principal](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
   
 * If you are using an **Azure Resource Manager** 
-  service endpoint type, or an **Azure** service endpoint 
+  service connection type, or an **Azure** service connection 
   type with certificate-based authentication, the task
   automatically filters appropriate classic storage 
   accounts, the newer Azure Resource Manager storage 
   accounts, and other fields. For example, the Resource
   Group or cloud service, and the virtual machines.
 
-* **Note**: Currently an **Azure** service endpoint type with 
+* **Note**: Currently an **Azure** service connection type with 
   credentials-based authentication does not filter 
   the storage, Resource Group or cloud service, and 
   virtual machine fields.
@@ -174,12 +175,12 @@ performed on only Resource Manager VMs.
 
 #### How do I create a school or work account for use with this task?
 
-A suitable account can be easily created for use in a service endpoint:
+A suitable account can be easily created for use in a service connection:
 
 1. Use the Azure portal to create a new user account in Azure Active Directory.
 1. Add the Azure Active Directory user account to the co-administrators group in your Azure subscription.
 1. Sign into the Azure portal with this user account and change the password.
-1. Use the username and password of this account in the service endpoint connection. Deployments will be processed using this account.
+1. Use the username and password of this account in the service connection. Deployments will be processed using this account.
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 

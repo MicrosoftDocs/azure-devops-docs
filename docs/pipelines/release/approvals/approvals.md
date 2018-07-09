@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,11 +16,15 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
 
-When a release is created from a release definition that defines
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
+When a release is created from a release pipeline that defines
 approvals, the deployment stops at each point where approval is required
 until the specified approver grants approval or rejects the release (or
 re-assigns the approval to another user).
-You can enable manual deployment approvals for each environment in a release definition.
+You can enable manual deployment approvals for each environment in a release pipeline.
 
 ## Define a deployment approval
 

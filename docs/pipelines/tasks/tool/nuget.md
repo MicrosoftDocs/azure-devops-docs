@@ -12,8 +12,6 @@ monikerRange: 'vsts'
 
 # Tool: NuGet Tool Installer
 
-**VSTS**
-
 **Build**
 
 ![icon](_img/nuget.png) Finds or downloads and caches the specified version of [NuGet](https://nuget.org/) and adds it to the PATH
@@ -22,12 +20,9 @@ monikerRange: 'vsts'
 
 None
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/NuGetToolInstallerV0.md)]
-
 ::: moniker-end
 
 ## Arguments

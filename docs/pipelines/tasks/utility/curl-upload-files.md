@@ -23,12 +23,9 @@ monikerRange: '>= tfs-2015'
 
 curl
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/CUrlUploaderV2.md)]
-
 ::: moniker-end
 
 ## Arguments

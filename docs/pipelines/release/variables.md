@@ -8,13 +8,17 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Default and custom release variables and debugging
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 As you compose the tasks for deploying your application into each environment in your DevOps CI/CD processes, variables will help you to:
 
@@ -46,24 +50,24 @@ Custom variables can be defined at various scopes.
   the values in a single place. You define and manage variable groups in the **Library** tab.
 
 * Share values across all of the environments by using
-  **release definition variables**. Choose a release definition
+  **release pipeline variables**. Choose a release pipeline
   variable when you need to use the same value across all
-  the environments and tasks in the release definition, and you
-  want to be able to change the value in a single place. You define and manage these variables in the **Variables** tab in a release definition.
+  the environments and tasks in the release pipeline, and you
+  want to be able to change the value in a single place. You define and manage these variables in the **Variables** tab in a release pipeline.
 
 * Share values across all of the tasks within one specific environment by using
   **environment variables**.
   Use an environment-level variable for values that vary
   from environment to environment (and are the same for
-  all the tasks in an environment). You define and manage these variables in the **Variables** tab of an environment in a release definition.
+  all the tasks in an environment). You define and manage these variables in the **Variables** tab of an environment in a release pipeline.
 
-Using custom variables at project, release definition, and environment scope helps you to:
+Using custom variables at project, release pipeline, and environment scope helps you to:
 
 * Avoid duplication of values, making it easier to update
   all occurrences as one operation.
 
 * Store sensitive values in a way that they cannot be seen
-  or changed by users of the release definitions. Designate a  configuration property to be a secure (secret) variable by selecting the ![padlock](_img/padlock-icon.png) (padlock) icon next to the variable.
+  or changed by users of the release pipelines. Designate a  configuration property to be a secure (secret) variable by selecting the ![padlock](_img/padlock-icon.png) (padlock) icon next to the variable.
 
   >The values of hidden (secret) variables are stored securely on
   the server and cannot be viewed by users after they are saved.
@@ -96,7 +100,7 @@ Some of the most significant variables are described in the following tables.
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|--------------|
-> | System.TeamFoundationServerUri | The URL of the Release Management service endpoint in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
+> | System.TeamFoundationServerUri | The URL of the Release Management service connection in the TFS or VSTS account. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
 > | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS account. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
 > | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
 > | System.TeamProject | The name of the project to which this build or release belongs. | Fabrikam | |
@@ -134,8 +138,8 @@ Some of the most significant variables are described in the following tables.
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|------------------|
-> | Release.DefinitionName | The name of the release definition to which the current release belongs. | fabrikam-cd | |
-> | Release.DefinitionId | The ID of the release definition to which the current release belongs. | 1 | TFS 2015 |
+> | Release.DefinitionName | The name of the release pipeline to which the current release belongs. | fabrikam-cd | |
+> | Release.DefinitionId | The ID of the release pipeline to which the current release belongs. | 1 | TFS 2015 |
 > | Release.ReleaseName | The name of the current release. | Release-47 | |
 > | Release.ReleaseId | The identifier of the current release record. | 118 | |
 > | Release.ReleaseUri | The URI of current release. | vstfs:///ReleaseManagement/Release/118 | |
@@ -145,7 +149,7 @@ Some of the most significant variables are described in the following tables.
 > | Release.EnvironmentName | The name of environment to which deployment is currently in progress. | Dev | |
 > | Release.EnvironmentId | The ID of the environment instance in a release to which the deployment is currently in progress. | 276 | |
 > | Release.EnvironmentUri | The URI of environment instance in a release to which deployment is currently in progress. | vstfs:///ReleaseManagement/Environment/276 | |
-> | Release.DefinitionEnvironmentId | The ID of the environment in the corresponding release definition. | 1 | TFS 2015 |
+> | Release.DefinitionEnvironmentId | The ID of the environment in the corresponding release pipeline. | 1 | TFS 2015 |
 > | Release.AttemptNumber | The number of times this release is deployed in this environment. | 1 | TFS 2015 |
 > | Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. | Mateo Escobedo | TFS 2015 |
 > | Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | TFS 2015 |
@@ -196,8 +200,8 @@ it implies that the variable is not populated for that artifact type.
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Team Build example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|
 > |---------------|-------------|--------------------|---------------------------|------------------|---------------|
-> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionId | The identifier of the build definition or repository. | 1 |  |  | fabrikam/asp |
-> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionName | The name of the build definition or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionId | The identifier of the build pipeline or repository. | 1 |  |  | fabrikam/asp |
+> | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionName | The name of the build pipeline or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildNumber | The build number or the commit identifier. | 20170112.1 | 20170112.1 | TFVC: Changeset 3, Git: 38629c964 | 38629c964 |
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildId | The build identifier. | 130 | 130 |  | 38629c964d21fe405ef830b7d0220966b82c9e11 |
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.BuildURI | The URL for the build. | vstfs:///build-release /Build/130 |  |  |  | https://github.com/fabrikam/asp |
@@ -213,7 +217,7 @@ See also [Artifact source alias](artifacts.md#source-alias)
 
 ### Primary artifact variables
 
-You designate one of the artifacts as a primary artifact in a release definition. For the designated primary artifact, Release Management populates the following variables.
+You designate one of the artifacts as a primary artifact in a release pipeline. For the designated primary artifact, Release Management populates the following variables.
 
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Same as |
@@ -233,7 +237,7 @@ You designate one of the artifacts as a primary artifact in a release definition
 
 ### Using default variables
 
-You can use the default variables in two ways - as parameters to tasks in a release definition or in your scripts.
+You can use the default variables in two ways - as parameters to tasks in a release pipeline or in your scripts.
 
 You can directly use a default variable as an input to a task.
 For example, to pass `Release.Artifacts.{Artifact alias}.DefinitionName` for the artifact source whose alias is **ASPNET4.CI** to a task,
@@ -268,7 +272,7 @@ release environment, in debug mode. This can help you resolve issues and failure
 
 * To initiate debug mode for an entire release, add a variable
   named `System.Debug` with the value `true` to the **Variables**
-  tab of a release definition.
+  tab of a release pipeline.
 
 * To initiate debug mode for a single environment, open the
   **Configure environment** dialog from the shortcut menu
@@ -277,9 +281,9 @@ release environment, in debug mode. This can help you resolve issues and failure
 
 * Alternatively, create a [variable group](../library/variable-groups.md)
   containing a variable named `System.Debug` with the value `true`
-  and link this variable group to a release definition.
+  and link this variable group to a release pipeline.
 
->If you get an error related to an Azure RM service endpoint,
-see [How to: Troubleshoot Azure Resource Manager service endpoints](azure-rm-endpoint.md).
+>If you get an error related to an Azure RM service connection,
+see [How to: Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md).
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

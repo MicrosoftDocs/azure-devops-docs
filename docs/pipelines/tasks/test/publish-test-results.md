@@ -8,13 +8,17 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Test: Publish Test Results
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ![icon](_img/publish-test-results-icon.png)
 Publishes the test results to TFS or VSTS when tests are run
@@ -36,15 +40,12 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/PublishTestResultsV2.md)]
-
 ::: moniker-end
 
-## Arguments 
+## Arguments
 
 | Argument | Description |
 | -------- | ----------- |

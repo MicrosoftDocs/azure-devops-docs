@@ -1,6 +1,6 @@
 ---
 title: Azure monitor task for Microsoft VSTS and TFS
-description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS with a build or release definition
+description: Build and release task to observe the configured Azure monitor rules for active alerts in VSTS and TFS with a build or release pipeline
 ms.assetid: FF2CCF1C-0237-451F-AA1F-654DB8C72089
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,29 +14,28 @@ monikerRange: '>= tfs-2017'
 
 # Utility: Query Azure Monitor Alerts
 
-**VSTS**
-
 ![icon](_img/azure-monitor.png) &nbsp; Observe the configured Azure monitor rules for active alerts.
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Demands
 
 None
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureMonitorV0.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 | Parameter | Comments |
 | --- | --- |
-| **Azure subscription** | Required. Select an Azure Resource Manager service endpoint. |
+| **Azure subscription** | Required. Select an Azure Resource Manager service connection. |
 | **Resource group** | Required. The resource group being monitored in the subscription. |
 | **Resource type** | Required. Select the resource type in the selected group. |
 | **Resource name** | Required. Select the resources of the chosen types in the selected group. |

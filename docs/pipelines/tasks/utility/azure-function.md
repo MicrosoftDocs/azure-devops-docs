@@ -14,20 +14,19 @@ monikerRange: '>= tfs-2017'
 
 # Utility: Invoke Azure function
 
-**VSTS**
-
 ![icon](_img/azure-function.png) &nbsp; Invoke a HTTP triggered function in an Azure function app and parse the response.
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Demands
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release definition.
+Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureFunctionV1.md)]
-
 ::: moniker-end
 
 ## Arguments

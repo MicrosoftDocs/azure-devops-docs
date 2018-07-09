@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2018'
 ---
 
@@ -16,13 +16,17 @@ monikerRange: '>= tfs-2018'
 
 **VSTS | TFS 2018**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 A deployment group is a logical set of deployment target machines 
 that have agents installed on each one. Deployment groups represent the physical environments;
 for example, "Dev", "Test", "UAT", and "Production". In effect, a
 deployment group is just another grouping of agents, much like an
 [agent pool](../../agents/pools-queues.md).
 
-When authoring a VSTS or TFS Release definition, you
+When authoring a VSTS or TFS Release pipeline, you
 can specify the deployment targets for a [phase](../../process/phases.md)
 using a deployment group. This makes it easy to define
 [parallel execution](../../process/phases.md#parallelexec)
@@ -65,7 +69,7 @@ and Linux.
 
 If the target machines are Azure VMs, you can quickly and easily prepare them by
 by installing the **VSTS Agent** Azure VM extension on each of the VMs,
-or by using the **Azure Resource Group Deployment** task in your release definition
+or by using the **Azure Resource Group Deployment** task in your release pipeline
 to create a deployment group dynamically. 
 
 For more information, see [Provision agents for deployment groups](howto-provision-deployment-group-agents.md).
@@ -75,7 +79,7 @@ For more information, see [Provision agents for deployment groups](howto-provisi
 When release is executing, you see an entry in the live logs page
 for each server in the deployment group. After a release has completed,
 you can download the log files for every server to examine the deployments
-and resolve issues. To navigate quickly to a release definition or a release,
+and resolve issues. To navigate quickly to a release pipeline or a release,
 use the links in the **Releases** tab. 
 
 ## Share a deployment group

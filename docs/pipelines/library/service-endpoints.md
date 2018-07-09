@@ -1,6 +1,6 @@
 ---
-title: Service endpoints in VSTS and Team Foundation Server
-description: Service endpoints in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Service connections in VSTS and Team Foundation Server
+description: Service connections in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,9 +12,13 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Service endpoints for builds and releases
+# Service connections for builds and releases
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 You will typically need to connect to external and remote services to execute tasks
 for a build or deployment. For example, you may need to connect to your Microsoft Azure
@@ -23,32 +27,32 @@ integration environment, or to services you install on remote computers.
 
 You can define endpoints in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) that are available for use in all
 your tasks. For example, you can create an endpoint for your Azure subscription
-and use this endpoint name in an Azure Web Site Deployment task in a release definition.
+and use this endpoint name in an Azure Web Site Deployment task in a release pipeline.
 
-You define and manage service endpoints from the Admin settings of your project.
+You define and manage service connections from the Admin settings of your project.
 * VSTS: `https://{account}.visualstudio.com/{teamproject}/_admin/_services`
 * TFS: `https://{tfsserver}/{collection}/{teamproject}/_admin/_services`
 
-Service endpoints are created at project scope. An endpoint created in one project is not visible in another project.
+Service connections are created at project scope. An endpoint created in one project is not visible in another project.
 
 <a name="create-new"></a>
 
-## Create and use a service endpoint
+## Create and use a service connection
 
 1. Open the **Services** page from the "settings" icon in the top menu bar.
 
    ![Opening the Services page](_img/new-service-endpoint-1.png)
 
-1. Choose **+ New Service Endpoint** and select the type of endpoint you need. 
+1. Choose **+ New service connection** and select the type of endpoint you need. 
 
-   ![Choosing a service endpoint type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
 
-1. Fill in the parameters for the endpoint. The list of parameters differs for each  type of service endpoint - see the [following list](#ep-types).
+1. Fill in the parameters for the endpoint. The list of parameters differs for each  type of service connection - see the [following list](#ep-types).
    For example, this is the default **Azure Resource Manager** connection dialog:
 
    ![Azure Resource Manager connection dialog](_img/connection-dialog-arm.png)
 
-1. After the new service endpoint is created:
+1. After the new service connection is created:
 
    * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** (or the equivalent connection name) setting of your pipeline.
 
@@ -64,36 +68,36 @@ Service endpoints are created at project scope. An endpoint created in one proje
 
 VSTS and TFS support a variety of endpoint types by default. Some of these are described below:
 
-* [Azure Classic service endpoint](#sep-azure-classic)
-* [Azure Resource Manager service endpoint](#sep-azure-rm)
-* [Azure Service Bus service endpoint](#sep-servbus)
-* [Bitbucket Cloud service endpoint](#sep-bbucket)
-* [Chef service endpoint](#sep-chef)
-* [Docker Host service endpoint](#sep-dochost)
-* [Docker Registry service endpoint](#sep-docreg)
-* [External Git service endpoint](#sep-extgit)
-* [Generic service endpoint](#sep-generic)
-* [GitHub service endpoint](#sep-github)
-* [GitHub Enterprise service endpoint](#sep-githubent)
-* [Jenkins service endpoint](#sep-jenkins)
-* [Kubernetes service endpoint](#sep-kuber)
-* [npm service endpoint](#sep-npm)
-* [NuGet service endpoint](#sep-nuget)
-* [Service Fabric service endpoint](#sep-fabric)
-* [SSH service endpoint](#sep-ssh)
-* [Subversion service endpoint](#sep-subversion)
-* [Team Foundation Server / VSTS service endpoint](#sep-tfsts)
-* [Visual Studio App Center service endpoint](#sep-vsmobile)
+* [Azure Classic service connection](#sep-azure-classic)
+* [Azure Resource Manager service connection](#sep-azure-rm)
+* [Azure Service Bus service connection](#sep-servbus)
+* [Bitbucket Cloud service enconnectiondpoint](#sep-bbucket)
+* [Chef service connection](#sep-chef)
+* [Docker Host service connection](#sep-dochost)
+* [Docker Registry service connection](#sep-docreg)
+* [External Git service connection](#sep-extgit)
+* [Generic service connection](#sep-generic)
+* [GitHub service connection](#sep-github)
+* [GitHub Enterprise service connection](#sep-githubent)
+* [Jenkins service connection](#sep-jenkins)
+* [Kubernetes service connection](#sep-kuber)
+* [npm service connection](#sep-npm)
+* [NuGet service connection](#sep-nuget)
+* [Service Fabric service connection](#sep-fabric)
+* [SSH service connection](#sep-ssh)
+* [Subversion service connection](#sep-subversion)
+* [Team Foundation Server / VSTS service connection](#sep-tfsts)
+* [Visual Studio App Center service connection](#sep-vsmobile)
 
-After you enter the parameters when creating a service endpoint, validate the
+After you enter the parameters when creating a service connection, validate the
 connection. The validation link uses a REST call to the external service with
 the information you entered, and indicates if the call succeeded.
 
-<h3 id="sep-azure-classic">Azure Classic service endpoint</h3>
+<h3 id="sep-azure-classic">Azure Classic service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure subscription
 using Azure credentials or an Azure management certificate.
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 | Parameter | Description |
 | --------- | ----------- |
@@ -106,7 +110,7 @@ using Azure credentials or an Azure management certificate.
 | Password | Required for Credentials authentication. Password for the user specified above. |
 | Management Certificate | Required for Certificate based authentication. Copy the value of the management certificate key from your [publish settings XML file](https://go.microsoft.com/fwlink/?LinkID=312990) or the Azure portal. |
 
-> If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service endpoint.
+> If your subscription is defined in an [Azure Government Cloud](government-cloud.md), ensure your application meets the relevant compliance requirements before you configure a service connection.
 
 *****
 
@@ -115,7 +119,7 @@ using Azure credentials or an Azure management certificate.
 <a name="arm-manual-connect"></a>
 <a name="sep-azure-rm-existingsp"></a>
 
-<h3 id="sep-azure-rm">Azure Resource Manager service endpoint</h3>
+<h3 id="sep-azure-rm">Azure Resource Manager service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure subscription
 using Service Principal Authentication (SPA). The dialog offers two modes:
@@ -124,17 +128,17 @@ using Service Principal Authentication (SPA). The dialog offers two modes:
   If no subscriptions are shown, or subscriptions other than the one you want to use, you must sign out of VSTS or TFS and sign in again
   using the appropriate account credentials.
 
-* **Manual subscription definition**. In this mode, you must specify the service principal you want to use to connect to Azure. The service principal specifies the resources and the access levels that will be available over the connection.
+* **Manual subscription pipeline**. In this mode, you must specify the service principal you want to use to connect to Azure. The service principal specifies the resources and the access levels that will be available over the connection.
   Use this approach when you need to connect to an Azure account using different credentials from those you are currently logged on with in VSTS or TFS.
   This is also a useful way to maximize security and limit access.
 
-For more information, see [Create an Azure service endpoint](connect-to-azure.md)
+For more information, see [Create an Azure service connection](connect-to-azure.md)
 
-**NOTE**: If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service endpoints](../release/azure-rm-endpoint.md).
+**NOTE**: If you don't see any Azure subscriptions or instances, or you have problems validating the connection, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
 *****
 
-<h3 id="sep-servbus">Azure Service Bus service endpoint</h3>
+<h3 id="sep-servbus">Azure Service Bus service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure Service Bus queue.
 
@@ -145,28 +149,28 @@ Defines and secures a connection to a Microsoft Azure Service Bus queue.
 | Service Bus Queue Name | The name of an existing Azure Service Bus queue. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 <!--
 
 *****
 
-<h3 id="sep-servfabric">Azure Service Fabric service endpoint</h3>
+<h3 id="sep-servfabric">Azure Service Fabric service connection</h3>
 
 Defines and secures a connection to a Microsoft Azure Service Fabric cluster.
 
 | Parameter | Description |
 | --------- | ----------- |
 | \[authentication type\] | Required. Select **No authentication**, **Azure Active Directory credentials**, or **Certificate based**. |
-| Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| Cluster endpoint | Required. The client endpoint of the remote cluster to connect to. Prefix with **tcp://**. |
+| Connection Name | Required. The name you will use to refer to this connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
+| Cluster connection | Required. The client connection of the remote cluster to connect to. Prefix with **tcp://**. |
 | Username | Required for Azure Active Directory authentication. The username to use when connecting to the remote cluster. |
 | Password | Required for Azure Active Directory authentication. The password for the specified username. |
 | Client certificate | Required for certificate based authentication. The Base64-encoded contents of the client certificate. |
 | Password | The password for the certificate when using certificate based authentication. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 You can use the following PowerShell script to obtain a Base64-encoded representation of a certificate:
 
@@ -178,7 +182,7 @@ You can use the following PowerShell script to obtain a Base64-encoded represent
 
 *****
 
-<h3 id="sep-bbucket">Bitbucket service endpoint</h3>
+<h3 id="sep-bbucket">Bitbucket service connection</h3>
 
 Defines a connection to a Bitbucket server.
 
@@ -188,11 +192,11 @@ Defines a connection to a Bitbucket server.
 | User name | Required. The username to connect to the service. |
 | Password | Required. The password for the specified username. |
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-chef">Chef service endpoint</h3>
+<h3 id="sep-chef">Chef service connection</h3>
 
 Defines and secures a connection to a [Chef](https://docs.chef.io/chef_overview.html) automation server.
 
@@ -203,11 +207,11 @@ Defines and secures a connection to a [Chef](https://docs.chef.io/chef_overview.
 | Node Name (Username) | Required. The name of the node to connect to. Typically this is your username. |
 | Client Key | Required. The key specified in the Chef .pem file. |
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-dochost">Docker Host service endpoint</h3>
+<h3 id="sep-dochost">Docker Host service connection</h3>
 
 Defines and secures a connection to a Docker host.
 
@@ -221,11 +225,11 @@ Defines and secures a connection to a Docker host.
 
 Ensure you protect your connection to the Docker host. [Learn more](https://docs.docker.com/engine/security/https/).
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
  
 *****
 
-<h3 id="sep-docreg">Docker Registry service endpoint</h3>
+<h3 id="sep-docreg">Docker Registry service connection</h3>
 
 Defines and secures a connection to a Docker registry.
 
@@ -237,11 +241,11 @@ Defines and secures a connection to a Docker registry.
 | Password | Required. The password for the account user identified above. |
 | Email | Optional. An email address to receive notifications. |
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-extgit">External Git service endpoint</h3>
+<h3 id="sep-extgit">External Git service connection</h3>
 
 Defines and secures a connection to a Git repository server.
 Note that there is a specific endpoints for [GitHub](#sep-github)
@@ -256,11 +260,11 @@ and [GitHub Enterprise](#sep-githubent) connections.
 
 Also see [Artifact sources](../release/artifacts.md#sources).
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-generic">Generic service endpoint</h3>
+<h3 id="sep-generic">Generic service connection</h3>
 
 Defines and secures a connection to any other type of service or application.
 
@@ -271,11 +275,11 @@ Defines and secures a connection to any other type of service or application.
 | User name | Required. The username to connect to the service. |
 | Password/Token Key | Required. The password or access token for the specified username. |
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-github">GitHub service endpoint</h3>
+<h3 id="sep-github">GitHub service connection</h3>
 
 Defines a connection to a GitHub repository.
 Note that there is a specific endpoint for [External Git servers](#sep-extgit)
@@ -288,7 +292,7 @@ and [GitHub Enterprise](#sep-githubent) connections.
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 > [!NOTE]
 > If you select **Grant authorization** for the **Choose authorization** option,
@@ -309,7 +313,7 @@ Also see [Artifact sources](../release/artifacts.md#tfvcsource).
 
 *****
 
-<h3 id="sep-githubent">GitHub Enterprise service endpoint</h3>
+<h3 id="sep-githubent">GitHub Enterprise service connection</h3>
 
 Defines a connection to a GitHub repository.
 Note that there is a specific endpoint for [External Git servers](#sep-extgit)
@@ -326,7 +330,7 @@ and [standard GitHub endpoints](#sep-github).
 | Password | Required for Username and Password authentication. The password for the specified username. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 > [!NOTE]
 > If you select **Personal access token** you must obtain a suitable token
@@ -343,7 +347,7 @@ GitHub account in your profile:
 
 *****
 
-<h3 id="sep-jenkins">Jenkins service endpoint</h3>
+<h3 id="sep-jenkins">Jenkins service connection</h3>
 
 Defines a connection to the Jenkins service.
 
@@ -356,14 +360,14 @@ Defines a connection to the Jenkins service.
 | Password | Required. The password for the specified username. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 Also see [VSTS Integration with Jenkins](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/25/vsts-visual-studio-team-services-integration-with-jenkins/) 
 and [Artifact sources](../release/artifacts.md#jenkinssource).
 
 *****
 
-<h3 id="sep-kuber">Kubernetes service endpoint</h3>
+<h3 id="sep-kuber">Kubernetes service connection</h3>
 
 Defines and secures a connection to a [Kubernetes](https://kubernetes.io/docs/home/) automation account.
 
@@ -374,11 +378,11 @@ Defines and secures a connection to a [Kubernetes](https://kubernetes.io/docs/ho
 | Kubeconfig | The contents of the kubectl configuration file. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-npm">npm service endpoint</h3>
+<h3 id="sep-npm">npm service connection</h3>
 
 Defines and secures a connection to an npm server.
 
@@ -391,11 +395,11 @@ Defines and secures a connection to an npm server.
 | Personal Access Token | Required when connection type is **External VSTS**. The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-nuget">NuGet service endpoint</h3>
+<h3 id="sep-nuget">NuGet service connection</h3>
 
 Defines and secures a connection to a NuGet server.
 
@@ -409,11 +413,11 @@ Defines and secures a connection to a NuGet server.
 | Password | Required when connection type is **Basic authentication**. The password for the username. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-fabric">Service Fabric service endpoint</h3>
+<h3 id="sep-fabric">Service Fabric service connection</h3>
 
 Defines and secures a connection to a Service Fabric cluster.
 
@@ -430,11 +434,11 @@ Defines and secures a connection to a Service Fabric cluster.
 | Cluster SPN | Required when connection type is **Others** and usiong Windows security. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-ssh">SSH service endpoint</h3>
+<h3 id="sep-ssh">SSH service connection</h3>
 
 Defines and secures a connection to a remote host using Secure Shell (SSH).
 
@@ -448,14 +452,14 @@ Defines and secures a connection to a remote host using Secure Shell (SSH).
 | Private key | The entire contents of the private key file if using this type of authentication. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 Also see [SSH task](../tasks/deploy/ssh.md)
 and [Copy Files Over SSH](../tasks/deploy/copy-files-over-ssh.md).
 
 *****
 
-<h3 id="sep-subversion">Subversion service endpoint</h3>
+<h3 id="sep-subversion">Subversion service connection</h3>
 
 Defines and secures a connection to the Subversion repository.
 
@@ -464,16 +468,16 @@ Defines and secures a connection to the Subversion repository.
 | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
 | Server repository URL | Required. The URL of the repository. |
 | Accept untrusted SSL certificates | Set this option to allow the client to accept self-signed certificates installed on the agent computer(s). |
-| Realm name | Optional. If you use multiple credentials in a build or release definition, use this parameter to specify the realm containing the credentials specified for this endpoint. |
+| Realm name | Optional. If you use multiple credentials in a build or release pipeline, use this parameter to specify the realm containing the credentials specified for this endpoint. |
 | User name | Required. The username to connect to the service. |
 | Password | Required. The password for the specified username. |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 *****
 
-<h3 id="sep-tfsts">Team Foundation Server / VSTS service endpoint</h3>
+<h3 id="sep-tfsts">Team Foundation Server / VSTS service connection</h3>
 
 Defines and secures a connection to another TFS or VSTS account.
 
@@ -487,7 +491,7 @@ Defines and secures a connection to another TFS or VSTS account.
 | Personal Access Token | Required for Token Based authentication (TFS 2017 and newer and VSTS only). The token to use to authenticate with the service. [Learn more](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md). |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 Use the **Verify connection** link to validate your connection information.
 
@@ -495,7 +499,7 @@ See also [Authenticate access with personal access tokens for VSTS and TFS](../.
 
 *****
 
-<h3 id="sep-vsmobile">Visual Studio App Center service endpoint</h3>
+<h3 id="sep-vsmobile">Visual Studio App Center service connection</h3>
 
 Defines and secures a connection to Visual Studio App Center.
 
@@ -505,17 +509,17 @@ Defines and secures a connection to Visual Studio App Center.
 | API Token | Required. The token to use to authenticate with the service. [Learn more](https://docs.microsoft.com/en-us/appcenter/api-docs/). |
 <p />
 
-[How do I create a new service endpoint?](#create-new)
+[How do I create a new service connection?](#create-new)
 
 ## Extensions for other endpoints
 
-Other service endpoint types and tasks can be installed in VSTS
-and Team Foundation Server as extensions. Some examples of service endpoints currently
+Other service connection types and tasks can be installed in VSTS
+and Team Foundation Server as extensions. Some examples of service connections currently
 available through extensions are:
 
 * [TFS artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs).
   Deploy on-premises TFS builds with VSTS
-  Release Management through a TFS service endpoint
+  Release Management through a TFS service connection
   connection and the **Team Build (external)** artifact,
   even when the TFS machine is not reachable directly
   from VSTS. For more information, see
@@ -523,7 +527,7 @@ available through extensions are:
   [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
 * [TeamCity artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity).
-  This extension provides integration with TeamCity through a TeamCity service endpoint,
+  This extension provides integration with TeamCity through a TeamCity service connection,
   enabling artifacts produced in TeamCity to be deployed
   by using Release Management. See
   [TeamCity](../release/artifacts.md#teamcitysource)
@@ -545,12 +549,12 @@ For information about creating your own custom extensions, see
 
 <h2 id="security">Endpoint security</h2>
 
-You can control who can define new service endpoints in a library, and who can use an existing service endpoint. **Roles** are defined for  service endpoints, and **membership** in these roles governs the operations you can perform on those endpoints.
+You can control who can define new service connections in a library, and who can use an existing service connection. **Roles** are defined for  service connections, and **membership** in these roles governs the operations you can perform on those endpoints.
 
-| Role on a library service endpoint | Purpose |
+| Role on a library service connection | Purpose |
 |------------------------------------|---------|
-| User | Members of this role can use the endpoint when authoring build or release definitions. |
-| Administrator | In addition to using the endpoint, members of this role can manage membership of all other roles for the service endpoint. The user that created the service endpoint is automatically added to the Administrator role for that service endpoint.
+| User | Members of this role can use the endpoint when authoring build or release pipelines. |
+| Administrator | In addition to using the endpoint, members of this role can manage membership of all other roles for the service connection. The user that created the service connection is automatically added to the Administrator role for that service connection.
 
 Two special groups called **Endpoint administrators** and **Endpoint creators** are added to every project. 
 Members of the Endpoint administrators group can manage all endpoints. By default, project administrators are added as members of this group. This group is also added as an administrator to every endpoint created.

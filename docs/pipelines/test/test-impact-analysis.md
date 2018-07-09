@@ -1,6 +1,6 @@
 ---
 title: Speed up testing with Test Impact Analysis (TIA) - test automation tools
-description: Continuous testing. Speed up testing by using Test Impact Analysis (TIA) in VSTS or TFS with a build or release definition
+description: Continuous testing. Speed up testing by using Test Impact Analysis (TIA) in VSTS or TFS with a build or release pipeline
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,15 +16,19 @@ monikerRange: '>= tfs-2017'
 
 **Visual Studio 2015.3 and later | TFS 2017.1 and later | VSTS**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 Continuous Integration (CI) is a key practice in the industry.
 Integrations are frequent, and verified with an automated build that runs regression tests to detect integration errors as soon as possible.
 However, as the codebase grows and matures, its regression test suite tends to grow as well - to the extent that running a full regression test might require hours.
 This slows down the frequency of integrations, and ultimately defeats the purpose of continuous integration. 
-In order to have a CI definition that completes quickly, some teams defer the execution of their longer running tests to a separate stage in the pipeline.
+In order to have a CI pipeline that completes quickly, some teams defer the execution of their longer running tests to a separate stage in the pipeline.
 However, this only serves to further defeat continuous integration.
 
 Instead, [enable Test Impact Analysis (TIA)](#enabletia) when using the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
-task in a build definition. TIA performs incremental validation by automatic test selection.
+task in a build pipeline. TIA performs incremental validation by automatic test selection.
 It will automatically select only the subset of tests required to validate the code being committed.
 For a given code commit entering the CI/CD pipeline, TIA will select and run only the relevant tests required to validate that commit.
 Therefore, that test run will complete more quickly, if there is a failure you will get to know about it sooner, and because it is all scoped by relevance, analysis will be faster as well.
@@ -47,7 +51,7 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 At present, TIA is supported for:
 
 * TFS 2017 Update 1 onwards, and VSTS
-* Version 2.* of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task in the build definition
+* Version 2.* of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task in the build pipeline
 * Build vNext, with multiple VSTest Tasks
 * VS2015 Update 3 onwards on the build agent
 * Local and hosted build agents
@@ -131,7 +135,7 @@ When TIA opens a commit and sees an unknown file type, it falls back to running 
 To evaluate whether TIA is selecting the appropriate tests:
 
 * Manually validate the selection. A developer who knows how the SUT and tests are architected could manually validate the test selection using the [TIA reporting capabilities](#tiareports).
-* Run TIA selected tests and then all tests in sequence. In a build definition, use two test tasks - one that runs only impacted Tests (T1) and one that runs all tests (T2). If T1 passes, check that T2 passes as well. If there was a failing test in T1, check that T2 reports the same set of failures.
+* Run TIA selected tests and then all tests in sequence. In a build pipeline, use two test tasks - one that runs only impacted Tests (T1) and one that runs all tests (T2). If T1 passes, check that T2 passes as well. If there was a failing test in T1, check that T2 reports the same set of failures.
 
 [More information about TIA advanced configuration](https://blogs.msdn.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
 

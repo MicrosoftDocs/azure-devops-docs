@@ -86,8 +86,6 @@
       items:
       - name: Add Azure AD group to VSTS group
         href: manage-azure-active-directory-groups-vsts.md
-      - name: Connect VSTS account to Azure AD
-        href: connect-account-to-aad.md
       - name: Add VSTS users to Azure AD
         href: add-users-to-aad.md
       - name: Disconnect VSTS account from Azure AD

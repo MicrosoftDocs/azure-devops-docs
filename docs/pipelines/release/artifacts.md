@@ -8,13 +8,16 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Release artifacts and artifact sources
 
-[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+[!INCLUDE [ver
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 A release is a collection of artifacts in your DevOps CI/CD processes. An **artifact** is a deployable
 component of your application. Release Management can
@@ -22,10 +25,10 @@ deploy artifacts that are produced by a
 [wide range of artifact sources](#sources),
 and stored in different types of artifact repositories.
 
-When **authoring a release definition**, you link the
-appropriate **artifact sources** to your release definition.
-For example, you might link a Team Build build definition or
-a Jenkins project to your release definition.
+When **authoring a release pipeline**, you link the
+appropriate **artifact sources** to your release pipeline.
+For example, you might link a Team Build build pipeline or
+a Jenkins project to your release pipeline.
 
 When **creating a release**, you specify the exact
 version of these artifact sources; for example, the number of a
@@ -37,16 +40,16 @@ fundamentally defined by the versioned artifacts that make up the release.
 As you deploy the release to various environments, you will be deploying
 and validating the same artifacts in all environments.
 
-A single release definition can be linked to
+A single release pipeline can be linked to
 **multiple artifact sources**, of which one is the [primary source](#art-primary).
 In this case, when you create a release, you specify individual versions for each of
 these sources.
 
-![Artifacts in a definition and release](_img/artifacts-01.png)
+![Artifacts in a pipeline and release](_img/artifacts-01.png)
 
 Artifacts are central to a number of features in
 Release Management. Some of the features that depend
-on the linking of artifacts to a release definition are:
+on the linking of artifacts to a release pipeline are:
 
 * **Auto-trigger releases**. You can configure new
   releases to be automatically created whenever a new
@@ -70,7 +73,7 @@ on the linking of artifacts to a release definition are:
   This metadata includes the version number of the artifact,
   the branch of code from which the artifact was produced
   (in the case of build or source code artifacts), the
-  definition that produced the artifact (in the case of
+  pipeline that produced the artifact (in the case of
   build artifacts), and more. This information is accessible
   in the deployment tasks. For more details, see
   [Artifact variables](variables.md#artifact-variables).
@@ -111,11 +114,11 @@ Services or a NuGet repository to store your artifacts.
 You can configure Release Management to deploy
 artifacts from all these sources.
 
-By default, a release created from the release definition will use the
-latest version of the artifacts. At the time of linking an artifact source to a release definition,
+By default, a release created from the release pipeline will use the
+latest version of the artifacts. At the time of linking an artifact source to a release pipeline,
 you can change this behavior by selecting one of the options to use the latest build from a specific
 branch by specifying the tags, a specific version, or allow the user to specify the version when the
-release is created from the definition.
+release is created from the pipeline.
 
 ![Adding an artifact](_img/artifacts-02.png)
 
@@ -142,30 +145,30 @@ sources.
 
 ### Team Build
 
-You can link a release definition to any of
-the build definitions in your Visual Studio Team Services (VSTS) account
+You can link a release pipeline to any of
+the build pipelines in your Visual Studio Team Services (VSTS) account
 or Team Foundation Server project collection.
 
 > [!NOTE]
 > You must include a **Publish Artifacts** task in your build
-definition. For XAML build definitions, an artifact with the name **drop**
+pipeline. For XAML build pipelines, an artifact with the name **drop**
 is published implicitly.
 
 Some of the differences in capabilities between different versions of TFS and VSTS are:
 
-* **TFS 2015**: You can link build definitions only from the same project of your collection.
+* **TFS 2015**: You can link build pipelines only from the same project of your collection.
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
-  When multiple build definitions are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
+  When multiple build pipelines are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017 and newer** and **VSTS**: You can link build definitions from any of the projects in your collection or account.
-  You can link multiple build definitions and specify default values for each of them. You can set up continuous deployment triggers on
+* **TFS 2017 and newer** and **VSTS**: You can link build pipelines from any of the projects in your collection or account.
+  You can link multiple build pipelines and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
 The following features are available when using Team Build sources:
 
 | Feature | Behavior with Team Build sources |
 |---------|----------------------------------|
-| Auto-trigger releases | New releases can be created automatically when new builds (including XAML builds) are produced. See [Continuous Deployment](triggers.md) for details. You do not need to configure anything within the build definition. See the notes above for differences between version of TFS.|
+| Auto-trigger releases | New releases can be created automatically when new builds (including XAML builds) are produced. See [Continuous Deployment](triggers.md) for details. You do not need to configure anything within the build pipeline. See the notes above for differences between version of TFS.|
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Team Build. |
 | Work items and commits | Team Build integrates with work items in TFS and VSTS. These work items are also shown in the details of releases. Team Build integrates with a number of version control systems such as TFVC and Git, GitHub, Subversion, and external Git repositories. Release Management shows the commits only when the build is produced from source code in TFVC or Git.|
 | Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
@@ -195,17 +198,17 @@ For example:
   repository.
 
 Because you can configure multiple artifact sources
-in a single release definition, you can link both a build
-definition that produces the binaries of the
+in a single release pipeline, you can link both a build
+pipeline that produces the binaries of the
 application as well as a version control repository
 that stores the configuration files into the same
-definition, and use the two sets of artifacts together
+pipeline, and use the two sets of artifacts together
 while deploying.
 
 Release Management integrates with Team Foundation
 Version Control (TFVC) repositories, Git repositories, and GitHub repositories.
 
-You can link a release definition to any of the Git or TFVC
+You can link a release pipeline to any of the Git or TFVC
 repositories in any of the projects in your
 collection (you will need read access to these
 repositories). No additional setup is required when
@@ -226,7 +229,7 @@ The following features are available when using TFVC, Git, and GitHub sources:
 
 | Feature | Behavior with TFVC, Git, and GitHub sources |
 |---------|----------------------------------------|
-| Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release definition. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
+| Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release pipeline. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
 | Artifact variables | A number of [artifact variables](variables.md) are supported for version control sources. |
 | Work items and commits | Release Management cannot show work items or commits associated with releases when using version control artifacts.|
 | Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
@@ -238,19 +241,19 @@ The following features are available when using TFVC, Git, and GitHub sources:
 <h3 id="jenkinssource">Jenkins</h3>
 
 To consume Jenkins artifacts, you must create a
-service endpoint with credentials to connect to
+service connection with credentials to connect to
 your Jenkins server. For more details, see
-[service endpoints](../library/service-endpoints.md)
-and [Jenkins service endpoint](../library/service-endpoints.md#sep-jenkins).
+[service connections](../library/service-endpoints.md)
+and [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
 You can then link a Jenkins project to a release
-definition. The Jenkins project must be configured
+pipeline. The Jenkins project must be configured
 with a post build action to publish the artifacts.
 
 The following features are available when using Jenkins sources:
 
 | Feature | Behavior with Jenkins sources |
 |---------|-------------------------------|
-| Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release definition. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
+| Auto-trigger releases | You can configure a continuous deployment trigger for pushes into the repository in a release pipeline. This can automatically trigger a release when a new commit is made to a repository. See [Triggers](triggers.md). |
 | Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Jenkins. |
 | Work items and commits | Release Management cannot show work items or commits for Jenkins builds. |
 | Artifact download | By default, Jenkins builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
@@ -258,7 +261,7 @@ The following features are available when using Jenkins sources:
 
 Artifacts generated by Jenkins builds are typically propagated to storage repositories for archiving and sharing.
 Azure blob storage is one of the supported repositories, allowing you to consume Jenkins projects that publish to
-Azure storage as artifact sources in a release definition. Deployments download the artifacts automatically from
+Azure storage as artifact sources in a release pipeline. Deployments download the artifacts automatically from
 Azure to the agents. In this configuration, connectivity between the agent and the Jenkins server is not required.
 Microsoft-hosted agents can be used without exposing the server to internet.
 
@@ -284,9 +287,9 @@ For more information about Jenkins integration capabilities, see
 
 When deploying containerized apps, the container image is first pushed to a container registry.
 After the push is complete, the container image can be deployed to the Web App for Containers service or a Docker/Kubernetes cluster.
-You must create a service endpoint with credentials to connect to 
+You must create a service connection with credentials to connect to 
 your service to deploy images located there, or to your Azure account. For more details, see
-[service endpoints](../library/service-endpoints.md).
+[service connections](../library/service-endpoints.md).
 
 The following features are available when using Azure Container Registry, Docker, Kubernetes sources:
 
@@ -350,18 +353,18 @@ published in one Team Foundation Server from another Team Foundation Server.
 To enable these scenarios, you must install the
 [TFS artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs)
 extension from Visual Studio Marketplace. Then create a
-service endpoint with credentials to connect to your
-TFS server (see [service endpoints](../library/service-endpoints.md)
+service connection with credentials to connect to your
+TFS server (see [service connections](../library/service-endpoints.md)
 for details).
 
-You can then link a TFS build definition to your release definition. Choose
+You can then link a TFS build pipeline to your release pipeline. Choose
 **External TFS Build** in the **Type** list.
 
 The following features are available when using external TFS sources:
 
 | Feature | Behavior with external TFS sources |
 |---------|------------------------------------|
-| Auto-trigger releases | You cannot configure a continuous deployment trigger for external TFS sources in a release definition. To automatically create a new release when a build is complete, you would need to add a script to your build definition in the external TFS server to invoke REST APIs of Release Management and to create a new release.|
+| Auto-trigger releases | You cannot configure a continuous deployment trigger for external TFS sources in a release pipeline. To automatically create a new release when a build is complete, you would need to add a script to your build pipeline in the external TFS server to invoke REST APIs of Release Management and to create a new release.|
 | Artifact variables | A number of [artifact variables](variables.md) are supported for external TFS sources. |
 | Work items and commits | Release Management cannot show work items or commits for external TFS sources.|
 | Artifact download | By default, External TFS artifacts are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
@@ -375,7 +378,7 @@ The following features are available when using external TFS sources:
 > Release Management with TFS by setting up an
 > on-premises agent that can access the TFS server.
 > You will not be able to see the name of your TFS
-> projects or build definitions when linking to a build, but you can type
+> projects or build pipelines when linking to a build, but you can type
 > these into the link dialog fields. In addition, when you
 > create a release, VSTS may not be able to
 > query the TFS server for the build numbers. Instead,
@@ -394,19 +397,19 @@ To integrate with TeamCity, you must first install the
 extension from Marketplace.
 
 To consume TeamCity artifacts, start by creating a
-service endpoint with credentials to connect to your
-TeamCity server (see [service endpoints](../library/service-endpoints.md)
+service connection with credentials to connect to your
+TeamCity server (see [service connections](../library/service-endpoints.md)
 for details).
 
 You can then link a TeamCity build configuration to a
-release definition. The TeamCity build configuration
+release pipeline. The TeamCity build configuration
 must be configured with an action to publish the artifacts.
 
 The following features are available when using TeamCity sources:
 
 | Feature | Behavior with TeamCity sources |
 |---------|--------------------------------|
-| Auto-trigger releases | You cannot configure a continuous deployment trigger for TeamCity sources in a release definition. To create a new release automatically when a build is complete, add a script to your TeamCity project that invokes the Release Management REST APIs to create a new release. |
+| Auto-trigger releases | You cannot configure a continuous deployment trigger for TeamCity sources in a release pipeline. To create a new release automatically when a build is complete, add a script to your TeamCity project that invokes the Release Management REST APIs to create a new release. |
 | Artifact variables | A number of [artifact variables](variables.md) are supported for builds from TeamCity. |
 | Work items and commits | Release Management cannot show work items or commits for TeamCity builds. |
 | Artifact download | By default, TeamCity builds are downloaded to the agent. You can configure an option in the environment to [skip the download](../process/phases.md#agent-phase) of artifacts. |
@@ -436,7 +439,7 @@ continue to expand the types of artifact sources
 supported in Release Management, you can start using
 it without waiting for support for a specific source
 type. Simply skip the linking of artifact sources in
-a release definition, and add custom tasks to your
+a release pipeline, and add custom tasks to your
 environments that download the artifacts directly
 from your source.
 
@@ -451,7 +454,7 @@ The artifacts downloaded to the agent are not deleted when a release is
 completed. However, when you initiate the next release, the downloaded artifacts are
 deleted and replaced with the new set of artifacts.
 
-A new unique folder in the agent is created for every release definition when you
+A new unique folder in the agent is created for every release pipeline when you
 initiate a release, and the artifacts are downloaded into that folder.
 The `$(System.DefaultWorkingDirectory)` variable maps to this folder.
 
@@ -488,7 +491,7 @@ in a task to download the artifacts you require.
 <h2 id="source-alias">Artifact source alias</h2>
 
 To ensure the uniqueness of every artifact download, each artifact source
-linked to a release definition is automatically provided with a specific
+linked to a release pipeline is automatically provided with a specific
 download location known as the _source alias_. This location
 can be accessed through the variable:
 
@@ -496,7 +499,7 @@ can be accessed through the variable:
 
 This uniqueness also ensures that, if you later rename a linked
 artifact source in its original location (for example,
-rename a build definition in Team Build or a project
+rename a build pipeline in Team Build or a project
 in Jenkins), you don't need to edit the task
 properties because the download location defined in
 the agent does not change.
@@ -504,10 +507,10 @@ the agent does not change.
 The source alias is, by default, the name of the source
 selected when you linked the artifact source, prefixed with an underscore; depending on the
 type of the artifact source this will be the name of the
-build definition, job, project, or repository. You can edit
-the source alias from the artifacts tab of a release definition; for example, when you change
-the name of the build definition and you want to use a
-source alias that reflects the name of the build definition.
+build pipeline, job, project, or repository. You can edit
+the source alias from the artifacts tab of a release pipeline; for example, when you change
+the name of the build pipeline and you want to use a
+source alias that reflects the name of the build pipeline.
 
 > The source alias can contain only alphanumeric characters
 and underscores, and must start with a letter or an underscore
@@ -516,7 +519,7 @@ and underscores, and must start with a letter or an underscore
 
 <h2 id="primary-source">Primary source</h2>
 
-When you link multiple artifact sources to a release definition, one of them
+When you link multiple artifact sources to a release pipeline, one of them
 is designated as the primary artifact source. The primary artifact source is used
 to set a number of pre-defined [variables](variables.md#artifact-variables). It can also
 be used in [naming releases](index.md#numbering).
@@ -528,7 +531,7 @@ be used in [naming releases](index.md#numbering).
 Release Management exposes a set of pre-defined variables that you
 can access and use in tasks and scripts; for example, when
 executing PowerShell scripts in deployment jobs. When there are multiple
-artifact sources linked to a release definition, you can access
+artifact sources linked to a release pipeline, you can access
 information about each of these. For a list of all pre-defined artifact variables, see [variables](variables.md#artifact-variables).
 
 ## Contributed links and additional information
@@ -540,7 +543,7 @@ information about each of these. For a list of all pre-defined artifact variable
 
 ## Related topics
 
-* [Release definitions](index.md)
+* [Release pipelines](index.md)
 * [Environments](environments.md)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

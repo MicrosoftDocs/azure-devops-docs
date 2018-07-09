@@ -8,11 +8,15 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Define your multi-stage continuous deployment (CD) process
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly
 configurable and manageable pipeline for releases to multiple environments
@@ -23,7 +27,7 @@ In this tutorial, you learn about:
 
 > [!div class="checklist"]
 > * Configuring triggers within the release pipeline
-> * Extending a release definition by adding environments
+> * Extending a release pipeline by adding environments
 > * Configuring the environments as a multi-stage release pipeline
 > * Adding approvals to your release pipeline
 > * Creating a release and monitoring the deployment to each environment
@@ -32,7 +36,7 @@ In this tutorial, you learn about:
 
 You'll need:
 
-* A release definition that contains at least one environment. If you don't already have one,
+* A release pipeline that contains at least one environment. If you don't already have one,
   you can create it by working through any of the following quickstarts and tutorials:
 
   - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
@@ -46,14 +50,14 @@ You'll need:
   "QA" in the name of one, and "Production" in the name of the other so that you
   can easily identify them. Use the Azure portal to create a new web app.
 
-## Configure the triggers in your release definition
+## Configure the triggers in your release pipeline
 
-In this section, you will check that the triggers you need for continuous deployment are configured in your release definition.
+In this section, you will check that the triggers you need for continuous deployment are configured in your release pipeline.
 
-1. In the **Build &amp; Release** hub, open the **Releases** tab. Select your release definition and, in
+1. In the **Build &amp; Release** hub, open the **Releases** tab. Select your release pipeline and, in
    the right pane, choose **Edit**.
 
-   ![Opening the release definition for editing](_img/define-multistage-release-process/open-for-edit.png)
+   ![Opening the release pipeline for editing](_img/define-multistage-release-process/open-for-edit.png)
 
 1. Choose the **Continuous deployment trigger** icon in the **Artifacts** section to open the trigger panel.
    Make sure this is enabled so that a new release is created after every new successful build is completed.
@@ -65,7 +69,7 @@ In this section, you will check that the triggers you need for continuous deploy
 
 1. Choose the **Pre-deployment conditions** icon in the **Environments** section to open the conditions panel.
    Make sure that the trigger for deployment to this environment is set to **Release**.
-   This means that a deployment will be initiated automatically when a new release is created from this release definition.   
+   This means that a deployment will be initiated automatically when a new release is created from this release pipeline.   
 
    ![Viewing the environment trigger setting](_img/define-multistage-release-process/environment-trigger.png)
 
@@ -75,15 +79,15 @@ In this section, you will check that the triggers you need for continuous deploy
    For more information, see [Environment triggers](../release/triggers.md?toc=/vsts/deploy-azure/toc.json)
    in the Release Management documentation.
 
-## Extend a release definition by adding environments
+## Extend a release pipeline by adding environments
 
-In this section, you will add a new environment to the release definition. The two environments will deploy your app to the
+In this section, you will add a new environment to the release pipeline. The two environments will deploy your app to the
 "QA" and the "Production" targets (in our example, two Azure App Services websites). This is a typical scenario where you deploy initially to a test or staging server, and then to a
 live or production server. Each [environment](../release/environments.md?toc=/vsts/deploy-azure/toc.json)
 represents one deployment target, though that target could be a physical or virtual server,
 a groups of servers, or any other legitimate physical or virtual deployment target.
 
-1. In the **Pipeline** tab of your release definition, select the existing environment and rename it to **Production**.
+1. In the **Pipeline** tab of your release pipeline, select the existing environment and rename it to **Production**.
 
    ![Renaming the existing environment](_img/define-multistage-release-process/rename-environment-prod.png)
 
@@ -125,7 +129,7 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
 
    ![Open the tasks pane for the QA environment](_img/define-multistage-release-process/open-qa-tasks.png)
 
-1. Recall that this environment is a clone of the original **Production** environment in the release definition.
+1. Recall that this environment is a clone of the original **Production** environment in the release pipeline.
    Therefore, currently, it will deploy the app to the same target as the **Production** environment. Depending on the
    tasks that you are using, change the settings so that this environment deploys to your "QA" target. In our example,
    using Azure App Services websites, we just need to select the **Deploy Azure App Service** task and select the "QA"
@@ -139,14 +143,14 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
 
 [!INCLUDE [edit-template-vars-in-environment](../apps/_shared/edit-template-vars-in-environment.md)]
 
-## Add approvals within a release definition
+## Add approvals within a release pipeline
 
-The release definition you have modified deploys to test and then to production. If the deployment to test fails, the trigger
+The release pipeline you have modified deploys to test and then to production. If the deployment to test fails, the trigger
 on the production environment does not fire, and so it is not deployed to production. However, it is typically the case that
 you want the deployment to pause after _successful_ deployment to the test website so that you can verify the app is working correctly before
-you deploy to production. In this section, you will add an approval step to the release definition to achieve this.
+you deploy to production. In this section, you will add an approval step to the release pipeline to achieve this.
 
-1. Back in the **Pipeline** tab of the release definition, choose the **Pre-deployment conditions** icon in the **Environments** section
+1. Back in the **Pipeline** tab of the release pipeline, choose the **Pre-deployment conditions** icon in the **Environments** section
    to open the conditions panel. Scroll down to the **Pre-deployment approvers** section and enable pre-deployment approvals.
 
    ![Viewing the pre-deployment approvers settings](_img/define-multistage-release-process/open-approvers.png)
@@ -161,15 +165,15 @@ you deploy to production. In this section, you will add an approval step to the 
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram.
    For more information, see [Approvals and gates overview](../../pipelines/release/approvals/index.md?toc=/vsts/deploy-azure/toc.json).
 
-1. Save the modified release definition.
+1. Save the modified release pipeline.
 
-   ![Save the release definition](_img/define-multistage-release-process/save-definition.png)
+   ![Save the release pipeline](_img/define-multistage-release-process/save-definition.png)
 
 ## Create a release
 
-Now that you have completed the modifications to the release definition, it's time to start the deployment. To do this, you
-create a release from the release definition. A release may be created automatically; for example, the continuous deployment
-trigger is set in the release definition. This means that modifying
+Now that you have completed the modifications to the release pipeline, it's time to start the deployment. To do this, you
+create a release from the release pipeline. A release may be created automatically; for example, the continuous deployment
+trigger is set in the release pipeline. This means that modifying
 the source code will start a new build and, from that, a new release. However, in this section you will create a new release manually.
 
 1. Open the **Release** drop-down list and choose **Create release**.

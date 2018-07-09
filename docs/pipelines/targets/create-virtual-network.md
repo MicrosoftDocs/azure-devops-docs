@@ -8,13 +8,17 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # Create a virtual network isolated environment for build-deploy-test scenarios
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 Network Virtualization provides ability to create multiple virtual
 networks on a shared physical network. Isolated virtual networks can
@@ -247,7 +251,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
    >The **SCVMM task** provides a more efficient way capability to perform lab management operations using build and release
    definitions. You can manage SCVMM environments, provision isolated virtual networks, and implement build-deploy-test scenarios.
    
-1. In a build or release definition, add a new **SCVMM** task.
+1. In a build or release pipeline, add a new **SCVMM** task.
 
 1. In the **SCVMM** task, select an endpoint for the SCVMM server connection where you want to provision
    your virtual network and then select **New Virtual machines using Templates/Stored VMs and VHDs**
@@ -311,7 +315,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 
 ## Enable your build-deploy-test scenario
 
-1. Create a new phase in your definition, after your network virtualization phase.
+1. Create a new phase in your pipeline, after your network virtualization phase.
 
 1. Based on the boundary VM agent (deployment group agent or automation agent) that is created as part of your
    boundary VM provisioning, choose **Deployment group phase** or **Agent phase**.
@@ -330,7 +334,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 
 1. After testing is completed, you can destroy the VMs by using the **Delete VM** task option.
 
-Now you can create release from this release definition. Each release will dynamically provision your
+Now you can create release from this release pipeline. Each release will dynamically provision your
 isolated virtual network and run your deploy and test tasks in the environment. You can find the test
 results in the release summary. After your tests are completed, you can automatically decommission your
 environments. You can create as many environments as you need with just a click from the **Build &amp; Release** hub.

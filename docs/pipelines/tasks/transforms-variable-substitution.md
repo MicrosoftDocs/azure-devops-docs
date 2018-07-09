@@ -14,6 +14,10 @@ monikerRange: '>= tfs-2017'
 
 # File transforms and variable substitution reference
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 Some tasks, such as the [Azure App Service Deploy](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment) task
 version 3 and later and the [IIS Web App Deploy](deploy/iis-web-app-deployment-on-machine-group.md) task, allow users to configure the package based on the environment specified.
 These tasks use **msdeploy.exe**, which supports the overriding of values in the **web.config** file with values from the **parameters.xml** file.
@@ -112,13 +116,13 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
    >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/en-us/library/dd465326.aspx)
 
-1. Create a release definition with an environment named **Release**.
+1. Create a release pipeline with an environment named **Release**.
  
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option. 
 
-   ![Release definition for XML transformation](_img/release-definition2.png)
+   ![Release pipeline for XML transformation](_img/release-definition2.png)
  
-1. Save the release definition and start a new release.
+1. Save the release pipeline and start a new release.
 
 1. Open the `Web.config` file to see the transformations from `Web.Release.config`.
 
@@ -214,13 +218,13 @@ As an example, consider the task of changing the following values in `Web.config
 ```
 <p />
 
-1. Create a release definition with an environment named **Release**.
+1. Create a release pipeline with an environment named **Release**.
  
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option. 
 
-   ![Release definition for XML variable substitution](_img/release-definition.png)
+   ![Release pipeline for XML variable substitution](_img/release-definition.png)
 
-1. Define the required values in release definition variables:
+1. Define the required values in release pipeline variables:
  
    | Name | Value | Secure | Scope |
    | ---- | ----- | ------ | ----- |
@@ -229,7 +233,7 @@ As an example, consider the task of changing the following values in `Web.config
    | AdminPassword | [your-password] | Yes | Release |
    | invariantName | System.Data.SqlClientExtension | No | Release |
  
-1. Save the release definition and start a new release.
+1. Save the release pipeline and start a new release.
 
 1. Open the `Web.config` file to see the variable substitutions.
  
@@ -275,7 +279,7 @@ As an example, consider the task of changing the following values in `Web.config
  
 This feature substitutes values in the JSON configuration files.
 It overrides the values in the specified JSON configuration files
-(for example, `appsettings.json`) with the values matching names of release definition
+(for example, `appsettings.json`) with the values matching names of release pipeline
 and environment variables.
 
 To substitute variables in specific JSON files, provide newline-separated
@@ -333,7 +337,7 @@ As an example, consider the task of overriding values in this JSON file:
 The task is to override the values of **ConnectionString**, **DebugMode**,
 the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy. 
 
-1. Create a release definition with an environment named **Release**.
+1. Create a release pipeline with an environment named **Release**.
  
 1. Add an **Azure App Service Deploy** task and enter a newline-separated
    list of JSON files to substitute the variable values in the **JSON variable substitution** textbox. 
@@ -341,9 +345,9 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
    You can use wildcards to search for JSON files. For example:
    `**/*.json` means substitute values in all the JSON files within the package.
 
-   ![Release definition for JSON variable substitution](_img/json-setting.png)
+   ![Release pipeline for JSON variable substitution](_img/json-setting.png)
 
-1. Define the required substitution values in release definition or environment variables.
+1. Define the required substitution values in release pipeline or environment variables.
  
    | Name | Value | Secure | Scope |
    | ---- | ----- | ------ | ----- |
@@ -352,7 +356,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
    | DBAccess.Users.0 | Admin-3 | Yes | Release |
    | FeatureFlags.Preview.1.NewWelcomeMessage | AllAccounts | No | Release |
    
-1. Save the release definition and start a new release.
+1. Save the release pipeline and start a new release.
 
 1. After the transformation, the JSON will contain the following:
 

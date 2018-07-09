@@ -13,8 +13,6 @@ monikerRange: 'vsts'
 
 # Package: Conda Environment
 
-**VSTS**
-
 ![icon](_img/conda.png) Create and activate a Conda environment.
 
 This task will create a Conda environment and activate it for subsequent build tasks.
@@ -41,12 +39,9 @@ None
 * A Microsoft-hosted agent, or a self-hosted agent with Anaconda or Miniconda installed.
 * If using a self-hosted agent, you must either add the `conda` executable to `PATH` or set the `CONDA` environment variable to the root of the Conda installation.
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV0.md)]
-
 ::: moniker-end
 
 ## Arguments
