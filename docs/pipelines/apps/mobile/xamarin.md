@@ -12,10 +12,13 @@ ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Build your Xamarin app
 
 **VSTS | TFS 2018 | TFS 2017.2**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xamarin app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
@@ -25,7 +28,7 @@ Xamarin enables you to develop a single solution and deploy it to Android, iOS, 
 
 * While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
 
-* You will build the sample app for Android and iOS using two build definitions in this quickstart. If you use VSTS, you can use a Microsoft-hosted agent for both. If you use TFS, you will need a self-hosted agent to build Xamarin.Android and Xamarin.iOS. Xamarin.iOS requires an agent running on macOS. Set up a self-hosted agent and [install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your development machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for macOS.
+* You will build the sample app for Android and iOS using two build pipelines in this quickstart. If you use VSTS, you can use a Microsoft-hosted agent for both. If you use TFS, you will need a self-hosted agent to build Xamarin.Android and Xamarin.iOS. Xamarin.iOS requires an agent running on macOS. Set up a self-hosted agent and [install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your development machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for macOS.
 
  |Build | [Microsoft-hosted agents](../../agents/hosted.md) | [On-premises Windows agent](../../agents/v2-windows.md) | On-premises [macOS](../../agents/v2-osx.md) or [Linux](../../agents/v2-linux.md) agent |
  |:---:|:---:|:---:|:---:|
@@ -57,11 +60,11 @@ https://github.com/adventworks/xamarin-sample
 
 [//]: # (TODO: Restore use of includes when we get support for using them in a list.)
 
-You need to create two build definitions - one for Xamarin.Android and one for Xamarin.iOS.
+You need to create two build pipelines - one for Xamarin.Android and one for Xamarin.iOS.
 
 ### Define your Xamarin.Android build
 
-1. Create a new build definition.
+1. Create a new build pipeline.
 
  # [VSTS or TFS repo](#tab/vsts)
 
@@ -69,17 +72,17 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build and Release** hub and asked to **Select a template** for the new build definition.
+ You are taken to the **Build and Release** hub and asked to **Select a template** for the new build pipeline.
 
  # [GitHub repo](#tab/github)
 
- Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+ Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
  ---
 
 1. In the right panel, click **Xamarin.Android**, and then click **Apply**.
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the tasks that will automatically run every time you push code changes.
+ You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
 1. For the **Agent queue**:
 
@@ -91,7 +94,7 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
  # [VSTS or TFS repo](#tab/vsts)
 
- Observe that the new build definition is automatically linked to your repository.
+ Observe that the new build pipeline is automatically linked to your repository.
 
  # [GitHub repo](#tab/github)
 
@@ -103,9 +106,9 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 1. Select the **Build solution **/test*.csproj** task. In the properties for this task, uncheck **Enabled** under **Control Options**. There are no tests in the sample repository.
 
-1. Select the **Xamarin Test Cloud** task. Remove this task from the definition by right-clicking it and selecting **Remove selected task(s)**.
+1. Select the **Xamarin Test Cloud** task. Remove this task from the pipeline by right-clicking it and selecting **Remove selected task(s)**.
 
-1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
+1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
@@ -114,7 +117,7 @@ You need to create two build definitions - one for Xamarin.Android and one for X
 
 ### Define your Xamarin.iOS build
 
-Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build definition. This time, select the **Xamarin.iOS** template.
+Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build pipeline. This time, select the **Xamarin.iOS** template.
 
 1. For the **Agent queue**, select a hosted macOS queue such as **Hosted macOS**, or the private queue that includes your macOS agent.
 
@@ -124,7 +127,7 @@ Navigate to the **Builds** tab of the **Build and Release** hub, and then click 
 
 1. Select the **Build Xamarin.iOS solution** task. In the properties for this task, enable the **Build for iOS Simulator** check box.
 
-1. Click **Save & queue** to kick off the Xamarin.iOS build. On the **Save build definition and queue** dialog box, click **Save & queue**.
+1. Click **Save & queue** to kick off the Xamarin.iOS build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You will see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 

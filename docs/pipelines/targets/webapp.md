@@ -9,11 +9,15 @@ manager: douge
 ms.assetid:
 ms.author: ahomer
 author: alexhomer1
-ms.date: 06/06/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Azure web app deployment
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 You can automatically deploy your web app to an Azure App Services web app after every successful build.
 Before you read this topic, you should understand the type of pipeline that you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
@@ -46,8 +50,8 @@ Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sam
 
 # [Designer](#tab/designer)
 
-After you have a build, create a release definition and select the **Azure App Service Deployment** template for your environment.
-This automatically adds the necessary tasks. Link the build as an artifact to this release definition. Save the definition and create a release to see it in action.
+After you have a build, create a release pipeline and select the **Azure App Service Deployment** template for your environment.
+This automatically adds the necessary tasks. Link the build as an artifact to this release pipeline. Save the pipeline and create a release to see it in action.
 Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure web app deployment.
 
 # [YAML](#tab/yaml)
@@ -72,10 +76,10 @@ YAML builds are not yet available on TFS.
 # [Designer](#tab/designer)
 
 The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** task. 
-This task is automatically added to the release definition when you select one of the pre-built deployment templates for Azure app service deployment.
+This task is automatically added to the release pipeline when you select one of the pre-built deployment templates for Azure app service deployment.
 Templates exist for apps developed in various programming languages. If you cannot find a template for your language, select the generic **Azure App Service Deployment** template.
 
-When you link the artifact in your release definition to a build that compiles and publishes the web package,
+When you link the artifact in your release pipeline to a build that compiles and publishes the web package,
 it is automatically downloaded and placed into the `$(System.ArtifactsDirectory)` folder on the agent as part of the release.
 This is where the task picks up the web package for deployment.
 
@@ -93,14 +97,14 @@ add the following snippet to your .vsts-ci.yml file:
 ```yaml
 - task: AzureRmWebAppDeployment@3
   inputs:
-    azureSubscription: '<Azure service endpoint>'
+    azureSubscription: '<Azure service connection>'
     WebAppName: '<Name of web app>'
     Package: $(System.ArtifactsDirectory)/**/*.zip
 ```
 
 The above snippet assumes that the build steps in your YAML file produce the zip archive in the `$(System.ArtifactsDirectory)` folder on your agent.
 
-For information on Azure service endpoints, see the [following section](#endpoint).
+For information on Azure service connections, see the [following section](#endpoint).
 
 ### Deploy a Java app
 
@@ -109,7 +113,7 @@ If you are building a [Java app](../apps/java/build-gradle.md), use the followin
 ```yaml
 - task: AzureRmWebAppDeployment@3
   inputs:
-    azureSubscription: '<Azure service endpoint>'
+    azureSubscription: '<Azure service connection>'
     WebAppName: '<Name of web app>'
     Package: '$(System.DefaultWorkingDirectory)/**/*.war'
 ```
@@ -118,7 +122,7 @@ The snippet above assumes that the build steps in your YAML file produce the .wa
 for example, under `<project root>/build/libs`. If your build steps copy the .war file to `$(System.ArtifactsDirectory)`
 instead, change the last line in the snippet above to `$(System.ArtifactsDirectory)/**/*.war`.
 
-For information on Azure service endpoints, see the [following section](#endpoint).
+For information on Azure service connections, see the [following section](#endpoint).
 
 ### Deploy a JavaScript Node.js app
 
@@ -129,14 +133,14 @@ iisnode handler on the Azure web app:
 ```yaml
 - task: AzureRmWebAppDeployment@3
   inputs:
-    azureSubscription: '<Azure service endpoint>'
+    azureSubscription: '<Azure service connections>'
     WebAppName: '<Name of web app>'
     Package: '$(System.DefaultWorkingDirectory)'
     GenerateWebConfig: true
     WebConfigParameters: '-Handler iisnode -NodeStartFile server.js -appType node'
 ```
 
-For information on Azure service endpoints, see the [following section](#endpoint).
+For information on Azure service connections, see the [following section](#endpoint).
 
 ::: moniker-end
 
@@ -150,10 +154,10 @@ YAML builds are not yet available on TFS.
 
 <a name="endpoint"></a>
 
-## Azure service endpoint
+## Azure service connection
 
-The **Azure App Service Deploy** task, similar to other built-in Azure tasks, requires an Azure service endpoint as an
-input. The Azure service endpoint stores the credentials to connect from VSTS or TFS to Azure. 
+The **Azure App Service Deploy** task, similar to other built-in Azure tasks, requires an Azure service connection as an
+input. The Azure service connection stores the credentials to connect from VSTS or TFS to Azure. 
 
 # [Designer](#tab/designer)
 
@@ -161,13 +165,13 @@ input. The Azure service endpoint stores the credentials to connect from VSTS or
 
 The easiest way to get started with this task is to be signed in as a user that owns both the VSTS account and the Azure subscription.
 In this case, you won't have to manually create the endpoint.
-Otherwise, to learn how to create an Azure service endpoint, see [Create an Azure service endpoint](../library/connect-to-azure.md).
+Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 
-To learn how to create an Azure service endpoint, see [Create an Azure service endpoint](../library/connect-to-azure.md).
+To learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
@@ -175,7 +179,7 @@ To learn how to create an Azure service endpoint, see [Create an Azure service e
 
 ::: moniker range="vsts"
 
-You must supply an Azure service endpoint to the `AzureRmWebAppDeployment` task. The Azure service endpoint stores the credentials to connect from VSTS to Azure. See [Create an Azure service endpoint](../library/connect-to-azure.md).
+You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from VSTS to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
@@ -234,7 +238,7 @@ The following example shows how to deploy to a staging slot, and then swap to a 
 ```yaml
 - task: AzureRmWebAppDeployment@3
   inputs:
-    azureSubscription: '<Azure service endpoint>'
+    azureSubscription: '<Azure service connection>'
     WebAppName: '<name of web app>'
     DeployToSlotFlag: true
     ResourceGroupName: '<name of resource group>'
@@ -242,7 +246,7 @@ The following example shows how to deploy to a staging slot, and then swap to a 
 
 - task: AzureAppServiceManage@0
   inputs:
-    azureSubscription: '<Azure service endpoint>'
+    azureSubscription: '<Azure service connection>'
     WebAppName: '<name of web app>'
     ResourceGroupName: '<name of resource group>'
     SourceSlot: staging
@@ -261,7 +265,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-If you want to deploy to multiple web apps, add environments to your release definition.
+If you want to deploy to multiple web apps, add environments to your release pipeline.
 You can control the order of deployment. To learn more, see [Environments](../release/environments.md).
 
 # [YAML](#tab/yaml)
@@ -285,7 +289,7 @@ phases:
 
   - task: AzureRmWebAppDeployment@3
     inputs:
-      azureSubscription: '<Test environment Azure service endpoint>'
+      azureSubscription: '<Test environment Azure service connection>'
       WebAppName: '<name of test environment web app>'
 
 - phase: prod
@@ -301,7 +305,7 @@ phases:
 
   - task: AzureRmWebAppDeployment@3
     inputs:
-      azureSubscription: '<Prod environment Azure service endpoint>'
+      azureSubscription: '<Prod environment Azure service connection>'
       WebAppName: '<name of prod environment web app>'
 ```
 
@@ -327,7 +331,7 @@ a web config transformation or by substituting variables in your Web.config file
 
 To change the `connectionString` using variable substitution:
 
-1. Create a release definition with two environments.
+1. Create a release pipeline with two environments.
 1. Link the artifact of the release to the build that produces the web package.
 1. Define `connectionString` as a variable in each of the environments. Set the appropriate value.
 1. Select the **XML variable substitution** option under the **File Transforms and Variable Substitution Options** of the **Azure App Service Deploy** task.
@@ -346,7 +350,7 @@ phases:
   steps:
   - task: AzureRmWebAppDeployment@3
     inputs:
-      azureSubscription: '<Test environment Azure service endpoint>'
+      azureSubscription: '<Test environment Azure service connection>'
       WebAppName: '<name of test environment web app>'
       enableXmlVariableSubstitution: true
 
@@ -357,7 +361,7 @@ phases:
   steps:
   - task: AzureRmWebAppDeployment@3
     inputs:
-      azureSubscription: '<Prod environment Azure service endpoint>'
+      azureSubscription: '<Prod environment Azure service connection>'
       WebAppName: '<name of prod environment web app>'
       enableXmlVariableSubstitution: true
 ```
@@ -378,7 +382,7 @@ You may choose to deploy only certain builds to your Azure web app.
 
 # [Designer](#tab/designer)
 
-In your release definition you can implement various checks and conditions to control the deployment.
+In your release pipeline you can implement various checks and conditions to control the deployment.
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
 * Set **pre-deployment approvals** as a pre-condition for deployment to an environment.
@@ -402,7 +406,7 @@ The following example shows how to use step conditions to deploy only those buil
 - task: AzureRmWebAppDeployment@3
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
   inputs:
-    azureSubscription: '<Azure service endpoint>'
+    azureSubscription: '<Azure service connection>'
     WebAppName: '<Name of web app>'
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Web Performance Test
-description: Runs the Quick Web Performance Test with a build or release definition to easily verify your web application exists and is responsive
+description: Runs the Quick Web Performance Test with a build or release pipeline to easily verify your web application exists and is responsive
 ms.assetid: 8030BD4C-F119-4A0F-9ED5-B021C4E760CD
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,11 +16,15 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 ![icon](_img/web-based-perf-icon.png)
 Runs the Quick Web Performance Test with VSTS.
 
 The task can be used in a build or release 
-definition to generate load against an application URL
+pipeline to generate load against an application URL
 using the VSTS Cloud-based Load Test Service.
 The Cloud-based Load Test Service is based in
 Microsoft Azure and can be used to test your app's 
@@ -34,19 +38,16 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/QuickPerfTestV1.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 | Argument | Description |
 | -------- | ----------- |
-| **VSTS connection** | The name of a Generic Service Endpoint that references the VSTS account you will be running the load test from and publishing the results to.<br />- Required for builds and releases on TFS and must specify a connection to the VSTS account where the load test will run.<br />- Optional for builds and releases on VSTS. In this case, if not provided, the current VSTS connection is used.<br />- See [Generic service endpoint](../../library/service-endpoints.md). |
+| **VSTS connection** | The name of a Generic service connection that references the VSTS account you will be running the load test from and publishing the results to.<br />- Required for builds and releases on TFS and must specify a connection to the VSTS account where the load test will run.<br />- Optional for builds and releases on VSTS. In this case, if not provided, the current VSTS connection is used.<br />- See [Generic service connection](../../library/service-endpoints.md). |
 | **Website Url** | Required. The URL of the app to test. |
 | **Test Name** | Required. A name for this load test, used to identify it for reporting and for comparison with other test runs. |
 | **User Load** | Required. The number of concurrent users to simulate in this test. Select a value from the drop-down list. |

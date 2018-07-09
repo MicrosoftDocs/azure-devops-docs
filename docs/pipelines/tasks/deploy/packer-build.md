@@ -15,12 +15,9 @@ monikerRange: 'vsts'
 
 ![](_img/packerbuild.png) Build machine image using Packer. This image can be used for Azure Virtual machine scale set deployment
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/PackerBuildV0.md)]
-
 ::: moniker-end
 
 ## Arguments

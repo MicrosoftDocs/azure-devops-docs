@@ -51,7 +51,7 @@ Follow the steps below to configure GitHub as a source for your VSTS build.
 1. Choose **Hosted VS2017** for Agent queue.
 1. Select **Triggers**. Enable **Continuous integration** for your builds. Ensure you include the `master` branch under **Branch filters**. This setting ensures each commit to `master` in GitHub will trigger a build via a GitHub webhook.
 1. Select **Save & queue** to save your build pipeline and create the first build.
-1. Once the build completes, select the name of the definition in the build results page to navigate to the history of builds for that definition. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
+1. Once the build completes, select the name of the pipeline in the build results page to navigate to the history of builds for that pipeline. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
 
 # [YAML](#tab/yaml)
 
@@ -69,7 +69,7 @@ Follow the steps below to configure GitHub as a source for your VSTS build.
 1. Choose **Hosted VS2017** for Agent queue.
 1. For the **YAML path**, select the YAML file at the root of your repo by clicking on the ellipsis next to that field.
 1. Select **Save & queue** to save your build pipeline and create the first build.
-1. Once the build completes, select the name of the definition in the build results page to navigate to the history of builds for that definition. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
+1. Once the build completes, select the name of the pipeline in the build results page to navigate to the history of builds for that pipeline. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
 
 ---
 
@@ -90,7 +90,7 @@ This section explores possibilities for further integrating VSTS and GitHub. You
 
 ### How do I use a personal access token to authorize the VSTS to GitHub connection?
 
-See this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for creating a GitHub personal access token. You can use the token in the VSTS **Get sources** task of your build or release pipelines by creating a GitHub [service endpoint](../library/service-endpoints.md) and entering the token.
+See this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for creating a GitHub personal access token. You can use the token in the VSTS **Get sources** task of your build or release pipelines by creating a GitHub [service connection](../library/service-endpoints.md) and entering the token.
 
 ## Next steps
 

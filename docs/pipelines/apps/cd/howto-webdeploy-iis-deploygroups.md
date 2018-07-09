@@ -14,6 +14,10 @@ monikerRange: '>= tfs-2015'
 
 # How To: Extend your deployments to IIS Deployment Groups
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 You can quickly and easily deploy your ASP.NET or Node app to an IIS Deployment Group using
 Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS),
 as demonstrated in [this example](deploy-webdeploy-iis-deploygroups.md).
@@ -28,7 +32,7 @@ depending on your scenario and requirements. This topic shows you how to:
 ## Prerequisites
 
 You should have worked through the example [CD to an IIS Deployment Group](deploy-webdeploy-iis-deploygroups.md) before you attempt any of these steps.
-This ensures that you have the release definition, build artifacts, and websites required.
+This ensures that you have the release pipeline, build artifacts, and websites required.
 
 <a name="depgroup"></a>
 ## Dynamically create and remove a deployment group
@@ -43,7 +47,7 @@ See [Provision deployment group agents](../../release/deployment-groups/howto-pr
 
 If you deploy releases to multiple environments, you can substitute configuration settings in **Web.config** and other configuration files of your website using these steps:
 
-1. Define environment-specific configuration settings in the **Variables** tab of an environment in a release definition; for example,
+1. Define environment-specific configuration settings in the **Variables** tab of an environment in a release pipeline; for example,
    `<connectionStringKeyName> = <value>`.
 
 1. In the **IIS Web App Deploy** task, select the checkbox for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
@@ -71,7 +75,7 @@ To deploy a database with your app:
 1. Add both the IIS target servers and database servers to your deployment group.
    Tag all the IIS servers as `web` and all database servers as `database`.
 
-1. Add two machine group phases to environments in the release definition, and a task in each phase as follows:
+1. Add two machine group phases to environments in the release pipeline, and a task in each phase as follows:
 
    **First [Run on deployment group phase](../../process/phases.md)** for configuration of web servers.
    

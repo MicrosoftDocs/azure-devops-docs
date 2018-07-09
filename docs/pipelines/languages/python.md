@@ -14,8 +14,6 @@ monikerRange: '> tfs-2018'
 
 # Python
 
-**VSTS**
-
 This guide explains creating pipelines for Python projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md) or [designer quickstart](../get-started-designer.md).
 
 ## Get started

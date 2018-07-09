@@ -14,9 +14,14 @@ monikerRange: '>= tfs-2015'
 
 # Agent pools and queues
 
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across team project collections and team projects. In VSTS, agent pools are scoped to the VSTS account; so you can share an agent pool across team projects.
 
-An **agent queue** provides access to an agent pool. When you create a build or release definition, you specify which queue it uses. Queues are scoped to your team project in TFS 2017 and newer and in VSTS, so you can only use them across build and release definitions within a team project.
+An **agent queue** provides access to an agent pool. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your team project in TFS 2017 and newer and in VSTS, so you can only use them across build and release pipelines within a team project.
 
 To share an agent pool with multiple team projects, you create an agent queue pointing to that pool in each of those team projects. While multiple queues across team projects can use the same agent pool, multiple queues within a team project cannot use the same pool. Also, each queue can use only one agent pool.
 
@@ -66,7 +71,7 @@ We provide the following agent pools by default:
 * **Hosted macOS** pool (VSTS only): Enables you to build and release on
   Mac machines without having to configure a self-hosted agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
 
-Each of these hosted pools is exposed to each team project through a corresponding hosted queue. By default, all contributors in a team project are members of the **User** role on each hosted queue. This allows every contributor in a team project to author and run build and release definitions using hosted queues.
+Each of these hosted pools is exposed to each team project through a corresponding hosted queue. By default, all contributors in a team project are members of the **User** role on each hosted queue. This allows every contributor in a team project to author and run build and release pipelines using Microsoft-hosted queues.
 
 ::: moniker-end
 
@@ -105,7 +110,7 @@ Roles are also defined on each agent queue, and memberships in these roles gover
 | Role on an agent queue | Purpose |
 |------|---------|
 | Reader | Members of this role can view the queue. You typically use this to add operators that are responsible for monitoring the build and deployment jobs in that queue.  |
-| User | Members of this role can use the queue when authoring build or release definitions. |
+| User | Members of this role can use the queue when authoring build or release pipelines. |
 | Administrator | In addition to all the above operations, members of this role can manage membership for all roles of the queue. User that created the queue is automatically added to the Administrator role for that queue.
 
 The **All Queues** node in the Agent Queues tab is used to control the security of _all_ agent queues in a team project. Role memberships for individual agent queues are automatically inherited from those of the 'All Queues' node. By default, the following groups are added to the Administrator role of 'All Queues': Build Administrators, Release Administrators, Project Administrators.

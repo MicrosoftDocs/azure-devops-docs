@@ -15,12 +15,9 @@ monikerRange: 'vsts'
 
 ![](_img/azureappservicemanage.png) Start, Stop, Restart, Slot swap, Install site extensions or Enable Continuous Monitoring for an Azure App Service
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureAppServiceManageV0.md)]
-
 ::: moniker-end
 
 ## Arguments

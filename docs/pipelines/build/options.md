@@ -1,5 +1,5 @@
 ---
-title: Build definition options | VSTS or Team Foundation Server
+title: Build pipeline options | VSTS or Team Foundation Server
 description: Learn about building your code or deploying your software using build options on VSTS and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
@@ -12,21 +12,24 @@ ms.date: 08/04/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
-# Build definition options
+# Build pipeline options
 
 [!INCLUDE [temp](../_shared/version.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 <!--
 <div style="padding:5px;border-bottom:1px solid #ccc;font-family:Segoe UI;font-size:13px;margin-bottom:15px">
 
-![Definition edit panel header](_img/_shared/definition-edit-panel-header.png)<br/>
+![Pipeline edit panel header](_img/_shared/definition-edit-panel-header.png)<br/>
 
 [Build](build.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **[Options](#)**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Repository](repository.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Variables](variables.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Triggers](triggers.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [General](general.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Retention](retention.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [History](history.md)
 </div>
 -->
 
-Here we explain settings you can change on the build definition **Options** tab.
+Here we explain settings you can change on the build pipeline **Options** tab.
 
 ## Description
 
@@ -34,7 +37,7 @@ Here we explain settings you can change on the build definition **Options** tab.
 >
 > This section is available under <b>General<b> tab.
 
-If you specify a description here, it is shown near the name of the build definition when you select it in the Build area of your team project.
+If you specify a description here, it is shown near the name of the build pipeline when you select it in the Build area of your team project.
 
 <h2 id="build-number-format">Build number format</h2>
 
@@ -46,7 +49,7 @@ At the time the build is queued:
 
 * Team project name: Fabrikam
 
-* Build definition name: CIBuild
+* Build pipeline name: CIBuild
 
 * Branch: master
 
@@ -70,7 +73,7 @@ The following table shows how each token is resolved based on the previous examp
 
 | Token | Example replacement value |
 | ----- | ------------------------- |
-| `$(BuildDefinitionName)` | CIBuild<br /><br />Note: The build definition name must not contain invalid or whitespace characters.|
+| `$(BuildDefinitionName)` | CIBuild<br /><br />Note: The build pipeline name must not contain invalid or whitespace characters.|
 | `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID.|
 | `$(DayOfMonth)` | 5 |
 | `$(DayOfYear)` | 217 |
@@ -109,7 +112,7 @@ Select if you want to show the latest outcome of this build on external web site
 
 0. Select the **Badge enabled** check box.
 
-0. Save the definition.
+0. Save the pipeline.
 
 0. When the **Show url** link appears, click it and copy the URL to your clipboard.
 
@@ -149,7 +152,7 @@ For an example, see [Use a script to customize your build process](../scripts/po
 
 ::: moniker-end
 
-Select the [queue](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this definition.
+Select the [queue](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
 
 **Tip:**  If your code is in Visual Studio Team Services (VSTS) and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
 
@@ -225,7 +228,7 @@ Some build tasks won't run unless one or more demands are met by the build agent
 
 You might need to use on-premises build agents with special capabilities. For example, your build process requires SpecialSoftware.
 
-Add the demand to your build definition.
+Add the demand to your build pipeline.
 
 | Name | Type |
 |---|---|
@@ -249,7 +252,7 @@ Register each build agent that has the capability.
 ## Multi-configuration
 
 Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms.
-In VSTS and TFS 2018, you set this option in the **Tasks** tab for each **Phase** in your definition (not in the **Options** tab).
+In VSTS and TFS 2018, you set this option in the **Tasks** tab for each **Phase** in your pipeline (not in the **Options** tab).
 To learn about multi-configuration, see the example [Build your C++ app for Windows](../apps/windows/cpp.md).
 
 ## Q & A

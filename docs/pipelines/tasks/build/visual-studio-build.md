@@ -12,10 +12,13 @@ ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build: Visual Studio Build
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ![](_img/visual-studio-build.png) Build with MSBuild and set the Visual Studio version property.
 
@@ -25,12 +28,9 @@ msbuild, visualstudio
 
 > **VSTS:** If your team wants to use Visual Studio 2017 with our Microsoft-hosted agents, select **Hosted VS2017** as your default build queue.. See [Microsoft-hosted agents](../../agents/hosted.md).
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/VSBuildV1.md)]
-
 ::: moniker-end
 
 ## Arguments
@@ -48,7 +48,7 @@ msbuild, visualstudio
 <td>
 <p>If you want to build a single solution, click the <strong>...</strong> button and select the solution.</p>
 <p>If you want to build multiple solutions, specify search criteria. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```). For example, ```**\*.sln``` searches for all *.sln* files in all subdirectories.</p>
-<p>Make the sure the solutions you specify are downloaded by this build definition. On the Repository tab:</p>
+<p>Make the sure the solutions you specify are downloaded by this build pipeline. On the Repository tab:</p>
 <ul>
 <li>
 If you use TFVC, make sure that the solution is a child of one of the mappings on the Repository tab.

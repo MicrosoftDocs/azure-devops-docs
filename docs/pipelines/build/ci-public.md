@@ -67,7 +67,7 @@ By default, secrets associated with your build pipeline are not made available t
 
 * A security token with access to your GitHub repository
 * These items, if used by your build:
-  * [Service endpoint](../library/service-endpoints.md) credentials
+  * [Service connection](../library/service-endpoints.md) credentials
   * Files from the [Secure Files library](../library/secure-files.md)
   * Build [variables](../build/variables.md#user-defined-variables) marked **secret**
 

@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2017'
 
 VSTS | TFS 2018 | TFS 2017
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 The **Build Machine Image** task makes it easy for users who are new to immutable
 VHD-based deployments to use **Packer** without learning concepts such as provisioners
 and builders. If you are deploying to virtual machines by using deployment scripts,
@@ -39,18 +43,18 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 * [Build and deploy your app](../../index.md)
 
-## Create the release definition
+## Create the release pipeline
 
 1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
-   "**+**" icon to create a new release definition.
+   "**+**" icon to create a new release pipeline.
 
-1. In the **Create release definition** dialog, select the **Empty** template and choose **Next**.
+1. In the **Create release pipeline** dialog, select the **Empty** template and choose **Next**.
 
-1. In the next page, select the build definition you created 
-   earlier and choose **Create**. This creates a new release definition 
+1. In the next page, select the build pipeline you created 
+   earlier and choose **Create**. This creates a new release pipeline 
    with one default environment.
 
-1. In the new release definition, select **+ Add tasks** and add these tasks:
+1. In the new release pipeline, select **+ Add tasks** and add these tasks:
 
    * **Build Machine Image**
    * **Azure PowerShell**<p />
@@ -69,7 +73,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    - **Packer template**: You can use your own packer configuration JSON file or use the auto-generate feature where the task generates a packer template for you. This example uses the auto-generated packer configuration.
    
    - **Azure subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Storage location**: The location of storage account where the VHD will be stored. This should be the same location where the virtual machine scale set is located, or where it will be created.
    
@@ -86,7 +90,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    - **Azure Connection Type**: Select `Azure Resource Manager`
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Script type**: Select `Inline Script`
    
@@ -112,7 +116,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 1. In the **Deployment conditions** dialog for the environment, ensure that the **Trigger** section is set to **After release creation**. 
 
-1. Enter a name for the release definition and save it.
+1. Enter a name for the release pipeline and save it.
 
 1. Create a new release, select the latest build, and 
    ensure that the application has been deployed correctly and has generated the VHD.

@@ -24,12 +24,9 @@ monikerRange: '>= tfs-2015'
 
 Xamarin.iOS
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/XamariniOSV2.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -15,8 +15,6 @@ monikerRange: 'vsts'
 
 # Utility: Download Secure File
 
-**VSTS**
-
 ![](../utility/_img/secure-file.png) Download a secure file to a temporary location on the build or release agent
 
 Use this task to download a [secure file](../../library/secure-files.md) from the server during a build or release.
@@ -25,16 +23,13 @@ Once downloaded, the secure file is located in the `$(Agent.TempDirectory)` dire
 
 The full path of the downloaded file is stored to the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable.
 
-If you use multiple versions of the Download Secure File task in your definition, they can be referenced with the `$env:DOWNLOADSECUREFILE1_SECUREFILEPATH`, `$env:DOWNLOADSECUREFILE2_SECUREFILEPATH`, `...` environment variables, where the number in the environment variable corresponds with the task version.
+If you use multiple versions of the Download Secure File task in your pipeline, they can be referenced with the `$env:DOWNLOADSECUREFILE1_SECUREFILEPATH`, `$env:DOWNLOADSECUREFILE2_SECUREFILEPATH`, `...` environment variables, where the number in the environment variable corresponds with the task version.
 
-Note that if you use two Download Secure File tasks in the same definition with the same task version, the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable will not be populated, but both files will still be downloaded to `$(Agent.TempDirectory)`.
+Note that if you use two Download Secure File tasks in the same pipeline with the same task version, the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable will not be populated, but both files will still be downloaded to `$(Agent.TempDirectory)`.
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/DownloadSecureFileV1.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -13,10 +13,13 @@ ms.date: 01/16/2018
 monikerRange: '>= tfs-2018'
 ---
 
-
 # Sign your mobile app
 
 **VSTS | TFS 2018 | [TFS 2017.2](secure-certs.md)**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 When developing an app for Android or Apple operating systems, you will eventually need to manage signing certificates, and in the case of Apple apps, [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article describes how to securely manage them for signing and provisioning your app.
 
@@ -34,7 +37,7 @@ Follow these steps to sign your Android app while keeping your signing certifica
 
 1. First, obtain a keystore file that contains your signing certificate. The [Android documentation](https://developer.android.com/studio/publish/app-signing.html#generate-key) describes the process of generating a keystore file and its corresponding key.
 
-1. Create your build definition from the Android or Xamarin.Android build template. Or, if you already have a build definition, add the [Android Signing](../../tasks/build/android-signing.md) task after the task that builds your APK.
+1. Create your build pipeline from the Android or Xamarin.Android build template. Or, if you already have a build pipeline, add the [Android Signing](../../tasks/build/android-signing.md) task after the task that builds your APK.
 
 1. Find the Android Signing task's **Sign the APK** checkbox and enable it.
 
@@ -54,7 +57,7 @@ Follow these steps to sign your Android app while keeping your signing certifica
 
       ![Android signing input values](_img/secure-certs/android-signing-input-values.png)
 
-Save your build definition, and you are all set! Any build agent will now be able to securely sign your app without any certificate management on the build machine itself.
+Save your build pipeline, and you are all set! Any build agent will now be able to securely sign your app without any certificate management on the build machine itself.
 
 <a name="apple"></a>
 
@@ -126,7 +129,7 @@ Use this method when you do not have enduring access to the build agent, such as
 1. In the **Signing identity** field, enter `$(APPLE_CERTIFICATE_SIGNING_IDENTITY)`. This variable is automatically set by the **Install Apple Certificate** task for the certificate you selected.
 1. In the **Provisioning profile UUID** field, enter `$(APPLE_PROV_PROFILE_UUID)`. This variable is automatically set by the **Install Apple Provisioning Profile** task for the provisioning profile you selected.
 
-Save your build definition, and you are all set! The build agent will now be able to securely sign and provision your app.
+Save your build pipeline, and you are all set! The build agent will now be able to securely sign and provision your app.
 
 # [Preinstall them on a macOS build agent](#tab/apple-preinstall)
 
@@ -186,7 +189,7 @@ sudo cp <profile> ~/Library/MobileDevice/Provisioning\ Profiles/<UUID>.mobilepro
     1. Go to the **Variables** tab and add a new variable named `KEYCHAIN_PWD`. Set its value to the password to the default keychain. This is normally the password for the user that is starting the agent. _Be sure to click the "lock" icon to secure this password._
     1. For the Xamarin.iOS task, under the **Signing & Provisioning** section, enable the **Unlock default keychain** checkbox and set the **Default keychain password** field to: `$(KEYCHAIN_PWD)`
 
-Save your build definition, and you are all set! The build agent will now be able to securely sign and provision your app.
+Save your build pipeline, and you are all set! The build agent will now be able to securely sign and provision your app.
 
 ---
 
