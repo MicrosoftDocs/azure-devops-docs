@@ -14,6 +14,11 @@ monikerRange: '>= tfs-2015'
 
 # Run a self-hosted agent behind a web proxy
 
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 This topic explains how to run a v2 self-hosted agent behind a web proxy. 
 
 ::: moniker range=">= tfs-2018"
@@ -153,7 +158,7 @@ export VSTS_HTTP_PROXY_PASSWORD=proxypassword
 ---
 
 > [!NOTE]
-> This procedure enables the agent infrastructure to operate behind a web proxy. Your build definition and scripts must still handle proxy configuration for each task and tool you run in your build. For example, if you are using a task that makes a REST API call, you must configure the proxy for that task.
+> This procedure enables the agent infrastructure to operate behind a web proxy. Your build pipeline and scripts must still handle proxy configuration for each task and tool you run in your build. For example, if you are using a task that makes a REST API call, you must configure the proxy for that task.
 
 ::: moniker-end
 

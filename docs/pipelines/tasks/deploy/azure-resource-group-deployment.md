@@ -15,12 +15,9 @@ monikerRange: 'vsts'
 
 ![](_img/azureresourcegroupdeployment.png) Deploy, start, stop, delete Azure Resource Groups
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureResourceGroupDeploymentV2.md)]
-
 ::: moniker-end
 
 ## Arguments

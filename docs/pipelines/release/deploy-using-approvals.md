@@ -8,14 +8,18 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # Use approvals and gates to control your deployment
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 By using a combination of manual deployment approvals, gates, and manual
-intervention within a release definition in Visual Studio Team Services
+intervention within a release pipeline in Visual Studio Team Services
 (VSTS) and Team Foundation Server (TFS), you can quickly and easily configure
 a release pipeline with all the control and auditing capabilities you require
 for your DevOps CI/CD processes.
@@ -54,9 +58,9 @@ are used to approve or reject a deployment. You can use gates to ensure that the
 meets a wide range or criteria, without requiring user intervention.
 
 1. In the **Releases** tab of the **Build &amp; Release** hub, select your release
-   definition and choose **Edit** to open the pipeline editor.
+   pipeline and choose **Edit** to open the pipeline editor.
 
-   ![Opening the release definition](_img/deploy-using-approvals/open-pipeline.png)
+   ![Opening the release pipeline](_img/deploy-using-approvals/open-pipeline.png)
 
 1. Choose the pre-deployment conditions icon for the **Production** environment to
    open the conditions panel. You can see that there is already an approver configured
@@ -98,9 +102,9 @@ meets a wide range or criteria, without requiring user intervention.
    interval and within the timeout period.
    For more details, see [Gates](../release/approvals/gates.md).
 
-1. Save you release definition.
+1. Save you release pipeline.
 
-   ![Saving the release definition](_img/deploy-using-approvals/gates-06.png)
+   ![Saving the release pipeline](_img/deploy-using-approvals/gates-06.png)
 
 For more information about using other types of approval gates, see [Approvals and gates](../release/approvals/index.md).
 
@@ -138,7 +142,7 @@ Intervention** task in your pipeline.
    that will occur if there is no user response within the timeout period.
    For more details, see [Manual Intervention task](../tasks/utility/manual-intervention.md).
 
-1. Save the release definition and start a new release.
+1. Save the release pipeline and start a new release.
 
    ![Starting a new release](_img/deploy-using-approvals/start-release.png)
 

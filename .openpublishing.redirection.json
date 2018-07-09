@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "docs/package/npm/install.md",
+      "redirect_url": "/vsts/package/get-started-npm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/package/how-to/enable-symbol-server.md",
+      "redirect_url": "/vsts/package/concepts/symbols",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build-release/actions/view-manage-releases.md",
       "redirect_url": "/vsts/pipelines/actions/view-manage-releases",
       "redirect_document_id": false

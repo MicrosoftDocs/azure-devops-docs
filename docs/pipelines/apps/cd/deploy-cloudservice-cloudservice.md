@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-rm-dev14.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 Here we'll show you how to set up continuous deployment of your ASP.NET app to an Azure cloud service using Release Management.
 Continuous deployment means starting an automated deployment process whenever a new successful build is available.
 
@@ -65,16 +69,16 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
    * If you've just completed a CI build (see above) then, in the build's
      **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
-     This starts a new release definition that's automatically linked to the build definition.
+     This starts a new release pipeline that's automatically linked to the build pipeline.
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
-     in the list of release definitions, and choose **Create release definition**.
+     in the list of release pipelines, and choose **Create release pipeline**.
 
 1. Select the **Azure Cloud Service Deployment** template and choose **Apply**.
 
-1. If you created your new release definition from a build summary, check that the build definition
+1. If you created your new release pipeline from a build summary, check that the build pipeline
    and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
-   release definition from the **Releases** tab, choose the **+ Add** link and select your build artifact.
+   release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
    ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
 
@@ -85,7 +89,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Open the **Tasks** tab and select the **Environment 1** item. Configure the task variables as follows:
    
-   * **Azure Subscription (Classic)**: Select an Azure Classic service endpoint. If you have not created one already, create one now by choosing **Add**. Then return to your release definition, refresh the **Azure Subscription** list, and select the connection you just created.
+   * **Azure Subscription (Classic)**: Select an Azure Classic service connection. If you have not created one already, create one now by choosing **Add**. Then return to your release pipeline, refresh the **Azure Subscription** list, and select the connection you just created.
    
    * **Storage account**: Select the storage account you created earlier.
    
@@ -95,9 +99,9 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
    [!INCLUDE [edit-template-vars-in-environment](../_shared/edit-template-vars-in-environment.md)]
    
-1. Edit the name of the release definition, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
+1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
 
-You're now ready to create a release, which means to start the process of running the release definition with the artifacts produced by a specific build. This will result in deploying the build to Azure:
+You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to Azure:
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 

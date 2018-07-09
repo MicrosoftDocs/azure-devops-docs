@@ -12,19 +12,16 @@ ms.date: 04/18/2018
 monikerRange: 'vsts'
 ---
 
-
 # How to use YAML builds
 
-**VSTS**
-
-When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build definitions give you the advantages of configuration as code.
+When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build pipelines give you the advantages of configuration as code.
 
 > [!NOTE]
 > To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
 
-In a YAML build definition, your CI build process configured as code, which means:
+In a YAML build pipeline, your CI build process configured as code, which means:
 
-* The definition is versioned with your code and follows the same branching structure as your code. So you get validation of your changes through code reviews in pull requests and branch build policies.
+* The pipeline is versioned with your code and follows the same branching structure as your code. So you get validation of your changes through code reviews in pull requests and branch build policies.
 
 * If a change to the build process causes a break or results in an unexpected outcome, you can much more easily identify the issue because the change is in version control with the rest of your codebase. This way you can more clearly see the issue and fix it like any other kind of bug.
 
@@ -51,20 +48,20 @@ If you're new to YAML builds, or to VSTS, we suggest you begin learning with [Bu
 |Create work item on failure|Not yet|Yes|
 |Fan out and fan in|Yes|Yes|
 |Link work items|Not yet|Yes|
-|Pause/disable definition from web editor|Not yet|Yes|
+|Pause/disable pipeline from web editor|Not yet|Yes|
 |Set environment variables for scripts (useful for secrets)|Yes|Not yet|
 |Task groups|No|Yes|
 |Variables across phases|Yes|Not yet|
 
-## Automatically create a YAML build definition
+## Automatically create a YAML build pipeline
 
-To make it more convenient to create YAML build definitions, VSTS automatically creates a definition when you add a file named .vsts-ci.yml to the root of your repository. It creates the build definition in a folder that has the same name as your repository.
+To make it more convenient to create YAML build pipelines, VSTS automatically creates a pipeline when you add a file named .vsts-ci.yml to the root of your repository. It creates the build pipeline in a folder that has the same name as your repository.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-1. In the root folder of the repo, create a new file called **.vsts-ci.yml**.
+2. In the root folder of the repo, create a new file called **.vsts-ci.yml**.
 
-1. Paste the following content into the file:
+3. Paste the following content into the file:
 
 ```YAML
 steps:
@@ -74,13 +71,13 @@ steps:
 If your code is in VSTS, then a new build is automatically created and queued.
 
  > [!NOTE]
- > If your team project already has a build definition that's pointing to the file, then the system does not automatically create another build definition.
+ > If your team project already has a build pipeline that's pointing to the file, then the system does not automatically create another build pipeline.
 
-## Manually create a YAML build definition
+## Manually create a YAML build pipeline
 
-If your code is in GitHub, or if you want to create multiple YAML build definitions, then after you have published the YAML file in your repo, you can manually create a build definition.
+If your code is in GitHub, or if you want to create multiple YAML build pipelines, then after you have published the YAML file in your repo, you can manually create a build pipeline.
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build definition.
+1. Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
 1. Choose **YAML**, and then click **Apply**.
 

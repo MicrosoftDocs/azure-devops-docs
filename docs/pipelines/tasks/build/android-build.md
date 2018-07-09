@@ -79,7 +79,7 @@ Name of the AVD to be started or created.
 </tr>
 <tr>
 <td>AVD Device</td>
-<td>(Optional) Device definition to use.  Can be a device index or id.  The default value is ```Nexus 5```</td>
+<td>(Optional) Device pipeline to use.  Can be a device index or id.  The default value is ```Nexus 5```</td>
 </tr>
 <tr>
 <td>AVD ABI</td>

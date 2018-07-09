@@ -1,5 +1,5 @@
 ---
-title: Build definition triggers | VSTS or Team Foundation Server
+title: Build pipeline triggers | VSTS or Team Foundation Server
 description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on VSTS and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
@@ -12,11 +12,15 @@ ms.date: 04/17/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Build definition triggers
+# Build pipeline triggers
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190718%28v=vs.120%29.aspx)**
 
-On the **Triggers** tab you specify the events that will trigger the build. You can use the same build definition for both CI and scheduled builds.
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
+On the **Triggers** tab you specify the events that will trigger the build. You can use the same build pipeline for both CI and scheduled builds.
 
 <a name="ci"></a>
 ## Continuous integration (CI)
@@ -168,15 +172,15 @@ After you add a **build completion** trigger, select the **triggering build**. I
 
 In many cases you'll want to download artifacts from the triggering build. To do this:
 
-1. Edit your build definition.
+1. Edit your build pipeline.
 
 1. Add the **Download Build Artifacts** task to one of your phases under **Tasks**.
 
 1. For **Download artifacts produced by**, select **Specific build**.
 
-1. Select the team **Project** that contains the triggering build definition.
+1. Select the team **Project** that contains the triggering build pipeline.
 
-1. Select the triggerging **Build definition**.
+1. Select the triggerging **Build pipeline**.
 
 1. Select **When appropriate, download artifacts from the triggering build**.
 
@@ -203,7 +207,7 @@ If your code is in a Git repo on VSTS or Team Foundation Server, you can create 
 
 Someone must view a page in your VSTS account regularly for CI and scheduled builds to run. It can be any page, including, for example, the **Build and release** hub. 
 
-Your VSTS account goes dormant five minutes after the last user signed out. After that, each of your build definitions will run one more time. For example, while your account is dormant:
+Your VSTS account goes dormant five minutes after the last user signed out. After that, each of your build pipelines will run one more time. For example, while your account is dormant:
 
  * A nightly build of code in your VSTS account will run only one night until someone signs in again.
 

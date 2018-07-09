@@ -15,8 +15,6 @@ monikerRange: 'vsts'
 
 # Tool: Node Tool Installer
 
-**VSTS**
-
 **Build**
 
 ![icon](_img/node.png) Finds or downloads and caches the specified version of [Node.js](https://nodejs.org/) and adds it to the PATH
@@ -25,12 +23,9 @@ monikerRange: 'vsts'
 
 None
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/NodeToolV0.md)]
-
 ::: moniker-end
 
 ## Arguments

@@ -1,6 +1,6 @@
 ---
 title: VSTS and TFS Build and Test - Cloud-based Load Test task
-description: Runs the load test in cloud with a build or release definition with VSTS to integrate cloud-based load tests into your build and release pipelines
+description: Runs the load test in cloud with a build or release pipeline with VSTS to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: 4D10E9D5-2269-4A95-8670-2901DFE4CBB1
 ms.prod: devops
 ms.technology: devops-cicd
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,12 +16,16 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 ![icon](_img/cloud-based-load-test-icon.png)
 Runs a load test in the cloud with VSTS.
 
 Use this task to understand, test, and validate your app's 
 performance. The task can be used in a build or release 
-definition to trigger a load test by using the 
+pipeline to trigger a load test by using the 
 VSTS Cloud-based Load Test Service.
 The Cloud-based Load Test Service is based in
 Microsoft Azure and can be used to test your app's 
@@ -34,19 +38,16 @@ The build agent must have the following capabilities:
 * MSBuild
 * Azure PowerShell
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/RunLoadTestV1.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 | Argument | Description |
 | -------- | ----------- |
-| **VSTS connection** | The name of a Generic Service Endpoint that references the VSTS account you will be running the load test from and publishing the results to.<br />- Required for builds and releases on TFS and must specify a connection to the VSTS account where the load test will run.<br />- Optional for builds and releases on VSTS. In this case, if not provided, the current VSTS connection is used.<br />- See [Generic service endpoint](../../library/service-endpoints.md). |
+| **VSTS connection** | The name of a Generic service connection that references the VSTS account you will be running the load test from and publishing the results to.<br />- Required for builds and releases on TFS and must specify a connection to the VSTS account where the load test will run.<br />- Optional for builds and releases on VSTS. In this case, if not provided, the current VSTS connection is used.<br />- See [Generic service connection](../../library/service-endpoints.md). |
 | **Test settings file** | Required. The path relative to the repository root of the test settings file that specifies the files and data required for the load test such as the test settings, any deployment items, and setup/clean-up scripts. The task will search this path and any subfolders. |
 | **Load test files folder** | Required. The path of the load test project. The task looks here for the files required for the load test, such as the load test file, any deployment items, and setup/clean-up scripts. The task will search this path and any subfolders. |
 | **Load test file** | Required. The name of the load test file (such as **myfile.loadtest**) to be executed as part of this task. This allows you to have more than one load test file and choose the one to execute based on the deployment environment or other factors. |

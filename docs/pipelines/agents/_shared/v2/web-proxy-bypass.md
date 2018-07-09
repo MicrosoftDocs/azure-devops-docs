@@ -15,7 +15,7 @@ If you want the agent to bypass your proxy and connect to VSTS directly, then yo
 * `https://app.vsspsext.visualstudio.com`
 
 > [!NOTE]
-> This procedure enables the agent to bypass a web proxy. Your build definition and scripts must still handle bypassing your web proxy for each task and tool you run in your build. 
+> This procedure enables the agent to bypass a web proxy. Your build pipeline and scripts must still handle bypassing your web proxy for each task and tool you run in your build. 
 >
 > For example, if you are using a NuGet task, you must configure your web proxy to support bypassing the URL for the server that hosts the NuGet feed you're using.
 

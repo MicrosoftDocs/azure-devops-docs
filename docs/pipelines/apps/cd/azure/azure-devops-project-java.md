@@ -19,7 +19,6 @@ ms.custom: mvc
 monikerRange: 'vsts'
 ---
 
-
 # Create a CI/CD pipeline for Java with the Azure DevOps Project
 
 The Azure DevOps Project presents a simplified experience which creates Azure resources and sets up a continuous integration (CI) and continuous delivery (CD) pipeline for your Java app in Visual Studio Team Services (VSTS), which is Microsoft's DevOps solution for Azure.  
@@ -74,33 +73,33 @@ The Azure DevOps project created a Git repository in your VSTS or GitHub account
 
 ## Examine the VSTS CI/CD pipeline
 
-The Azure DevOps project automatically configured a full VSTS CI/CD pipeline in your VSTS account.  Explore and customize the pipeline as needed.  Follow the steps below to familiarize yourself with the VSTS build and release definitions.
+The Azure DevOps project automatically configured a full VSTS CI/CD pipeline in your VSTS account.  Explore and customize the pipeline as needed.  Follow the steps below to familiarize yourself with the VSTS build and release pipelines.
 
-1. Select **Build Pipelines** from the **top** of the Azure DevOps project dashboard.  This link opens a browser tab and opens the VSTS build definition for your new project.
+1. Select **Build Pipelines** from the **top** of the Azure DevOps project dashboard.  This link opens a browser tab and opens the VSTS build pipeline for your new project.
 
-1. Move the mouse cursor to the right of the build definition next to the **Status** field. Select the **ellipsis** that appears.  This action opens a menu where you can perform several activities such as queue a new build, pause a build, and edit the build definition.
+1. Move the mouse cursor to the right of the build pipeline next to the **Status** field. Select the **ellipsis** that appears.  This action opens a menu where you can perform several activities such as queue a new build, pause a build, and edit the build pipeline.
 
 1. Select **Edit**.
 
-1. From this view, **examine the various tasks** for your build definition.  The build performs various tasks such as fetching sources from the Git repository, restoring dependencies, and publishing outputs used for deployments.
+1. From this view, **examine the various tasks** for your build pipeline.  The build performs various tasks such as fetching sources from the Git repository, restoring dependencies, and publishing outputs used for deployments.
 
-1. At the top of the build definition, select the **build definition name**.
+1. At the top of the build pipeline, select the **build pipeline name**.
 
-1. Change the **name** of your build definition to something more descriptive.  Select **Save & queue**, then select **Save**.
+1. Change the **name** of your build pipeline to something more descriptive.  Select **Save & queue**, then select **Save**.
 
-1. Under your build definition name, select **History**.  You see an audit trail of your recent changes for the build.  VSTS keeps track of any changes made to the build definition, and allows you to compare versions.
+1. Under your build pipeline name, select **History**.  You see an audit trail of your recent changes for the build.  VSTS keeps track of any changes made to the build pipeline, and allows you to compare versions.
 
 1. Select **Triggers**.  The Azure DevOps project automatically created a CI trigger, and every commit to the repository initiates a new build.  You can optionally choose to include or exclude branches from the CI process.
 
 1. Select **Retention**.  Based on your scenario, you can specify policies to keep or remove a certain number of builds.
 
-1. Select **Build and Release**, then choose **Releases**.  The Azure DevOps project created a VSTS release definition to manage deployments to Azure.
+1. Select **Build and Release**, then choose **Releases**.  The Azure DevOps project created a VSTS release pipeline to manage deployments to Azure.
 
-1. On the left-hand side of the browser, select the **ellipsis** next to your release definition, then choose **Edit**.
+1. On the left-hand side of the browser, select the **ellipsis** next to your release pipeline, then choose **Edit**.
 
-1. The release definition contains a **pipeline**, which defines the release process.  Under **Artifacts**, select **Drop**.  The build definition you examined in the previous steps produces the output used for the artifact. 
+1. The release pipeline contains a **pipeline**, which defines the release process.  Under **Artifacts**, select **Drop**.  The build pipeline you examined in the previous steps produces the output used for the artifact. 
 
-1. To the right-hand side of the **Drop** icon, select the **Continuous deployment trigger**.  This release definition has an enabled CD trigger, which executes a deployment every time there is a new build artifact available.  Optionally, you can disable the trigger, so your deployments require manual execution. 
+1. To the right-hand side of the **Drop** icon, select the **Continuous deployment trigger**.  This release pipeline has an enabled CD trigger, which executes a deployment every time there is a new build artifact available.  Optionally, you can disable the trigger, so your deployments require manual execution. 
 
 1. On the left-hand side of the browser, select **Tasks**.  The tasks are the activities your deployment process performs.  In this example, a task was created to deploy to **Azure App service**.
 
@@ -118,7 +117,7 @@ When no longer needed, you can delete the Azure App service and related resource
 
 ## Next steps
 
-When you configured your CI/CD process in this quickstart, a build and release definition were automatically created in your VSTS project. You can modify these build and release definitions to meet the needs of your team. To learn more see this tutorial:
+When you configured your CI/CD process in this quickstart, a build and release pipeline were automatically created in your VSTS project. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
 
 > [!div class="nextstepaction"]
 > [Customize CD process](../../../release/define-multistage-release-process.md)

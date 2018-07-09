@@ -16,14 +16,18 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 A *task group* allows you to encapsulate a sequence of tasks, already defined
-in a build or a release definition, into a single reusable task that can be
-added to a build or release definition, just like any other task. You can
+in a build or a release pipeline, into a single reusable task that can be
+added to a build or release pipeline, just like any other task. You can
 choose to extract the parameters from the encapsulated tasks as configuration
 variables, and abstract the rest of the task information.
 
 The new task group is automatically added to the task catalogue, ready to be added
-to other release and build definitions. Task groups are stored at the project level,
+to other release and build pipelines. Task groups are stored at the project level,
 and are not accessible outside the project scope.
 
 Task groups are a way to standardize and centrally manage deployment steps for all your applications. 
@@ -45,7 +49,7 @@ to change each one individually.
 * Parameters of the encapsulated tasks for which
   you specified a value (instead of a variable), or you didn't provide
   a value for, are not configurable in the task group when added to a build
-  or release definition.
+  or release pipeline.
 
 * Task conditions (such as "Run this task only when a previous task has failed" for a
   **PowerShell Script** task) can be configured in a task group and these settings are persisted with the task group.
@@ -61,16 +65,16 @@ to change each one individually.
 
 ## Create a task group
 
-1. Select a sequence of tasks in a build or release definition (when using a mouse, click on the
+1. Select a sequence of tasks in a build or release pipeline (when using a mouse, click on the
    checkmarks of each one). Then open the shortcut menu and choose **Create task group**. 
 
-   ![Creating a task group from a release definition list of tasks](_img/create-task-group.png)
+   ![Creating a task group from a release pipeline list of tasks](_img/create-task-group.png)
 
 2. Specify a name and description for the new task group, and the category (tab in the Add tasks panel) you want to add it to.
 
-3. After you choose **Create**, the new task group is created and replaces the selected tasks in your definition.
+3. After you choose **Create**, the new task group is created and replaces the selected tasks in your pipeline.
 
-4. Save your updated definition.
+4. Save your updated pipeline.
 
 ## Manage task groups
 
@@ -79,7 +83,7 @@ the **Task Groups** tab of the **Build &amp; Release** hub.
 
 ![Listing task groups](_img/list-task-group.png)
 
-Use the **Export** shortcut command to save a copy of the task group as a JSON definition,
+Use the **Export** shortcut command to save a copy of the task group as a JSON pipeline,
 and the **Import** icon to import previously saved task group definitions. Use this feature to
 transfer task groups between projects and organizations, or replicate and save copies of your task groups.
 
@@ -95,7 +99,7 @@ Select a task group name to open the details page.
 
 * In the **History** tab you can see the history of changes to the group.
 
-* In the **References** tab you can expand lists of all the build and release definitions,
+* In the **References** tab you can expand lists of all the build and release pipelines,
   and other task groups, that use (reference) this task group.
   This is useful to ensure changes do not have unexpected effects on other processes.
 
@@ -104,7 +108,7 @@ Select a task group name to open the details page.
 ## Create previews and updated versions of task groups
 
 All of the built-in tasks in VSTS and TFS are [versioned](../process/tasks.md#task-versions).
-This allows build and release definitions to continue to use the existing version of a task while
+This allows build and release pipelines to continue to use the existing version of a task while
 new versions are developed, tested, and released. In VSTS, you can version your own custom
 task groups so that they behave in the same way and provide the same advantages.  
 
@@ -119,7 +123,7 @@ task groups so that they behave in the same way and provide the same advantages.
    ![Publishing a draft version of a task group](_img/publish-preview-task-group.png)
  
 1. You can now use the updated task group in your build and release processes;
-   either by changing the version number of the task group in an existing definition
+   either by changing the version number of the task group in an existing pipeline
    or by adding it from the **Add tasks** panel.  
 
    ![Using a preview version of a task group](_img/use-preview-task-group.png)
@@ -132,7 +136,7 @@ task groups so that they behave in the same way and provide the same advantages.
 
    ![Publishing a preview version of a task group](_img/publish-version-task-group.png)
 
-1. In a build or release definition that already contains this task group, you can now select the new "production-ready" version.
+1. In a build or release pipeline that already contains this task group, you can now select the new "production-ready" version.
    When you add the task group from the **Add tasks** panel, it automatically selects the new "production-ready" version.  
 
    ![Using an updated version of a task group](_img/use-version-task-group.png)

@@ -19,7 +19,6 @@ ms.custom: mvc
 monikerRange: 'vsts'
 ---
 
-
 # Deploy your ASP.NET Core app as a container
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline for your ASP.NET Core apps. This quickstart shows how to set up CI and CD to deploy an ASP.NET Core application to Linux App Service using Docker and [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/).
@@ -71,7 +70,7 @@ Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD toolin
 3.  Choose the **Container Registry** you created earlier.
 4.  Accept the default App Service name or Select **edit** to choose a new name.
 5.  Select **ok**, and monitor the output window for results.  
-6.  **Azure resources** including the App Service will be created.  **VSTS resources** such as a build definition, and a release definition will be created in the same project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
+6.  **Azure resources** including the App Service will be created.  **VSTS resources** such as a build pipeline, and a release pipeline will be created in the same project that contains your source code.  You can monitor the configuration progress in the **Output** window in Visual Studio.    
 
     ![Visual Studio output window](_img/aspnet-core-to-acr/vsoutputs.png)
 7.  A **build** and **release** will then execute.  **Navigate** to the VSTS account and monitor the build and release processes until they complete.  This process may take several minutes.
@@ -81,6 +80,6 @@ Visual Studio 2017 can automate the creation of a CI/CD pipeline.  The CD toolin
 You're now ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your Azure App Service.
 
 ## Next Steps    
-You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see this tutorial:
+You've just put your own CI/CD processes in place. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
 
 * [Customize CD process](../../../release/define-multistage-release-process.md)

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -16,19 +16,23 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-rm-dev14](../../_shared/version-rm-dev14.md)]
 
-A release definition specifies the end-to-end release process for an app to be deployed across a range of environments.
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
+A release pipeline specifies the end-to-end release process for an app to be deployed across a range of environments.
 Deployments to each environment are fully automated by using 
 [phases](../../process/phases.md) and [tasks](../../process/tasks.md). 
 
 **Approvals** and **gates** give you additional control over the start and completion of the deployment process.
-Each environment in a release definition can be configured with pre-deployment and post-deployment conditions
+Each environment in a release pipeline can be configured with pre-deployment and post-deployment conditions
 that can include waiting for users to manually approve or reject deployments, and checking with other automated
 systems until specific conditions are verified. In addition, you can configure a manual intervention to pause the
 deployment process and prompt users to carry out manual tasks, then resume or reject the deployment.
 
 >At present, gates are available only in Visual Studio Team Services.
 
-The following diagram shows how these features are combined in an environment of a release definition.
+The following diagram shows how these features are combined in an environment of a release pipeline.
 
 ![Schematic view of approvals and gates in an environment](_img/approvals-gates.png)
 
@@ -49,7 +53,7 @@ are useful include the following.
 | During the deployment process you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../../tasks/utility/manual-intervention.md) | 
 | During the deployment process you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment phases.  | Planned | 
 
-You can, of course, combine all three techniques within a release definition to fully achieve your own process and deployment requirements.
+You can, of course, combine all three techniques within a release pipeline to fully achieve your own process and deployment requirements.
 
 ## Related topics
 
@@ -58,7 +62,7 @@ You can, of course, combine all three techniques within a release definition to 
 * [Manual intervention](../../tasks/utility/manual-intervention.md)
 * [Environments](../environments.md)
 * [Triggers](../triggers.md)
-* [Release definitions and releases](index.md)
+* [Release pipelines and releases](index.md)
 
 ## See also
 

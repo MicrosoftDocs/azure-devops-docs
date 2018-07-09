@@ -12,12 +12,15 @@ ms.date: 03/22/2017
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Specify conditions
 
 **VSTS | TFS 2018 | TFS 2017.3** 
 
-Inside the **Control Options** of each task, and in the **Additional options** for a phase in a release definition,
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
+Inside the **Control Options** of each task, and in the **Additional options** for a phase in a release pipeline,
 you can specify the conditions under which the task or phase will run:
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
@@ -328,6 +331,6 @@ No. If you cancel a build while it's in the queue, then the entire build is canc
 
 ### I've got a task condition that runs even when the deployment was canceled. How do I specify this?
 
-This scenario is not yet supported for release definitions.
+This scenario is not yet supported for release pipelines.
 
 <!-- ENDSECTION -->

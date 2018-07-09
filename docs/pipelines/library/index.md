@@ -16,14 +16,18 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 *Library* is a collection of _shared_ build and release assets for a project.
-Assets defined in a library can be used in multiple build and release definitions of the project.
+Assets defined in a library can be used in multiple build and release pipelines of the project.
 The **Library** tab can be accessed directly in the **Build &amp; Release** hub in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).
 
 At present, the library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).
 
-> Variable groups are available to only release definitions in VSTS and TFS 2017 and newer at present.
-Task groups and service endpoints are available to build and release definitions in TFS 2015 and newer, and VSTS.
+> Variable groups are available to only release pipelines in VSTS and TFS 2017 and newer at present.
+Task groups and service connections are available to build and release pipelines in TFS 2015 and newer, and VSTS.
 
 <h2 id="security">Library Security</h2>
 
@@ -34,7 +38,7 @@ operations you can perform on those items.
 | Role on a library item | Purpose |
 |-------------------------|---------|
 | Reader | Members of this role can view the item. |
-| User | Members of this role can use the item when authoring build or release definitions. For example, you must be a 'User' for a variable group to be able to use it in a release definition.  |
+| User | Members of this role can use the item when authoring build or release pipelines. For example, you must be a 'User' for a variable group to be able to use it in a release pipeline.  |
 | Administrator | In addition to all the above operations, members of this role can manage membership of all other roles for the item. The user that created an item is automatically added to the Administrator role for that item.
 
 The security settings for the **Library** tab control access for _all_ items in the library. Role memberships for individual items are automatically inherited from those of the **Library** node.

@@ -8,25 +8,26 @@ ms.assetid: 86c37a92-59a7-444b-93c7-220fcf91e29c
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2017'
 ---
 
 # Utility: Jenkins Download Artifacts
 
 ![](_img/jenkinsdownloadartifacts.png) Download artifacts produced by a Jenkins job
 
-::: moniker range=">tfs-2018"
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/JenkinsDownloadArtifactsV1.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Jenkins service endpoint</td><td>(Required) Select the service endpoint for your Jenkins instance.  To create one, click the Manage link and create a new Jenkins Service Endpoint.</td></tr>
+<tr><td>Jenkins service connection</td><td>(Required) Select the service connection for your Jenkins instance.  To create one, click the Manage link and create a new Jenkins service connection.</td></tr>
 <tr><td>Job name</td><td>(Required) The name of the Jenkins job to download artifacts from.  This must exactly match the job name on the Jenkins server.</td></tr>
 <tr><td>Jenkins job type</td><td>(Optional) Jenkins job type, detected automatically.</td></tr>
 <tr><td>Save to</td><td>(Required) Jenkins artifacts will be downloaded and saved to this directory.  This directory will be created if it does not exist.</td></tr>

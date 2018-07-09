@@ -55,7 +55,7 @@ Get the code for the sample application into your own GitHub or VSTS repository.
 
 1. In VSTS, navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-1. Inspect the `.vsts-ci.yml` file at the root of your imported repository. The YAML file contains the instructions for the build process. Here's an example snippet from a Gradle build definition. The actual content in your file depends on the sample application you chose.
+1. Inspect the `.vsts-ci.yml` file at the root of your imported repository. The YAML file contains the instructions for the build process. Here's an example snippet from a Gradle build pipeline. The actual content in your file depends on the sample application you chose.
 
   ```yaml
   queue: 'Hosted VS2017'
@@ -92,7 +92,7 @@ In VSTS:
 
 1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New Build Pipeline**.
 
-1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your  repository. You'll need to authorize access to your repo via a GitHub service endpoint.
+1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your  repository. You'll need to authorize access to your repo via a GitHub service connection.
 
 1. You are then asked to select a template for the pipeline. Select **YAML**, and then select **Apply**.
 
@@ -147,7 +147,7 @@ Back in VSTS:
 
 You've just learned the basics of using YAML to create and run a VSTS build process.
 This pipeline automatically builds and validates whatever code is checked in by your team. 
-Now you're ready to configure your CI definition for the programming language you're using.
+Now you're ready to configure your CI pipeline for the programming language you're using.
 
 * [.NET Core](languages/dotnet-core.md)
 * [Android](languages/android.md)

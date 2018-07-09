@@ -14,8 +14,6 @@ monikerRange: 'vsts'
 
 # Deploy to an Azure Web App for Containers
 
-**VSTS**
-
 We'll show you how to set up continuous deployment of your Docker-enabled app to an Azure web app using
 Visual Studio Team Services (VSTS).
 

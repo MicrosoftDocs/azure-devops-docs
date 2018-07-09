@@ -26,12 +26,9 @@ Otherwise, use the latest version of the Xcode task.**
 
 xcode
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/XcodePackageiOSV0.md)]
-
 ::: moniker-end
 
 ## Arguments
