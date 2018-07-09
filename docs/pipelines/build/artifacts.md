@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 **VSTS | TFS 2015.3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.

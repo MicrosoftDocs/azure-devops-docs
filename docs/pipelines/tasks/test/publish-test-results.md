@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ![icon](_img/publish-test-results-icon.png)
@@ -41,14 +41,11 @@ The build agent must have the following capabilities:
 * Azure PowerShell
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/PublishTestResultsV2.md)]
-
 ::: moniker-end
 
-## Arguments 
+## Arguments
 
 | Argument | Description |
 | -------- | ----------- |

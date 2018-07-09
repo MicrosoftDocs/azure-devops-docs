@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 # Releases in Release Management
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]

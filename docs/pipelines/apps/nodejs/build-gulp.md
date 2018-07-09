@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 **VSTS | TFS 2018 | TFS 2017.3**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Follow these steps to set up a continuous integration (CI) process for a Node.js app using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).

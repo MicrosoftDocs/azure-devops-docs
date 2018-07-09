@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/azuremysqldeployment.png) This is an early preview. Run your scripts and make changes to your Azure DB for Mysql​.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AzureMysqlDeploymentV1.md)]
-
 ::: moniker-end
 
 ## Arguments

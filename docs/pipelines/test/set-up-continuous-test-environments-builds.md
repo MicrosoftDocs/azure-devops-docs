@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 To test your app using different platforms and configurations using test automation,

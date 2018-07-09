@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 # .NET Core
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 This guidance explains how to build .NET Core projects. Before you read this topic, you should understand the type
@@ -181,7 +181,7 @@ to VSTS Package Management. These credentials are derived from either the **Proj
 account or the **Project Build Service** account depending on the option selected in your build pipeline.
 
 If you want to specify a NuGet repository, put the URLs in a `NuGet.config` file in your repository.
-If your feed is authenticated, manage its credentials by creating a NuGet service endpoint in the **Services** tab under **Project Settings**.
+If your feed is authenticated, manage its credentials by creating a NuGet service connection in the **Services** tab under **Project Settings**.
 
 ::: moniker-end
 
@@ -227,12 +227,12 @@ To restore packages from a custom feed:
     projects: "**/*.csproj"
     feedsToUse: config
     nugetConfigPath: NuGet.config    # Relative to root of the repository
-    externalFeedCredentials: <Name of the NuGet service endpoint>
+    externalFeedCredentials: <Name of the NuGet service connection>
 ```
 
 > [!NOTE]
 > 
-> Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service endpoint.
+> Make sure the custom feed is specified in your `NuGet.config` file and that credentials are specified in the NuGet service connection.
 
 ::: moniker-end
 

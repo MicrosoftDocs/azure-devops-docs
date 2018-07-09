@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 # Build and Release Agents
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more.

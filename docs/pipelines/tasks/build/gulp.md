@@ -24,11 +24,8 @@ monikerRange: '>= tfs-2015'
 gulp
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/GulpV0.md)]
-
 ::: moniker-end
 
 ## Arguments

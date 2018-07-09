@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2018'
 **VSTS | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 [Deployment groups](index.md) make it easy to define logical groups of target machines for deployment,
@@ -187,9 +187,9 @@ To use the template:
 
    * **Enable Prerequisites**: select **Configure with Deployment Group Agent**.
 
-   * **TFS/VSTS endpoint**: Select an existing Team Foundation Server/TFS service endpoint that points
+   * **TFS/VSTS endpoint**: Select an existing Team Foundation Server/TFS service connection that points
      to your target account. Agent registration for deployment groups requires access to your Visual
-     Studio project. If you do not have an existing service endpoint, choose **Add** and create one now.
+     Studio project. If you do not have an existing service connection, choose **Add** and create one now.
      Configure it to use a [Personal Access Token (PAT)](https://go.microsoft.com/fwlink/?linkid=844181)
      with scope restricted to **Deployment Group**.
 

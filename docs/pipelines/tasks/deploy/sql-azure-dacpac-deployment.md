@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/sqlazuredacpacdeployment.png) Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/SqlAzureDacpacDeploymentV1.md)]
-
 ::: moniker-end
 
 ## Arguments

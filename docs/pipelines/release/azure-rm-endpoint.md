@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting Azure Resource Manager service endpoints in VSTS and TFS
-description: DevOps CI CD - Troubleshoot Azure Resource Manager service endpoints in VSTS and Team Foundation Server (TFS)
+title: Troubleshooting Azure Resource Manager service connections in VSTS and TFS
+description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in VSTS and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,34 +12,38 @@ ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Troubleshoot Azure Resource Manager service endpoints
+# Troubleshoot Azure Resource Manager service connections
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 This topic will help you resolve issues you may encounter when creating
-a connection to Microsoft Azure using an **Azure Resource Manager** service endpoint
+a connection to Microsoft Azure using an **Azure Resource Manager** service connection
 for your DevOps CI/CD processes.
 
 <a name="whathappens"></a>
-## What happens when you create a Resource Manager service endpoint?
+## What happens when you create a Resource Manager service connection?
 
-You open the **Add Azure Resource Manager Service Endpoint** dialog,
+You open the **Add Azure Resource Manager srvice connection** dialog,
 provide a connection name, and select a subscription from drop-down
 list of your subscriptions.  
 
-![The Add Azure Resource Manager Service Endpoint dialog](_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
+![The Add Azure Resource Manager srvice connection dialog](_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
 
 When you choose **OK**, the system:
 
 1. Connects to the Azure Active Directory (AAD) tenant for to the selected subscription
 1. Creates an application in AAD on behalf of the user
 1. After the application has been successfully created, assigns the application as a contributor to the selected subscription
-1. Creates an Azure Resource Manager service endpoint using this application's details
+1. Creates an Azure Resource Manager service connection using this application's details
 
 <a name="troubleshoot"></a>
 ## How to troubleshoot errors that may occur
 
-Errors that may occur when the system attempts to create the service endpoint include:
+Errors that may occur when the system attempts to create the service connection include:
 
 * [Insufficient privileges to complete the operation](#privileges)
 * [Failed to obtain an access token](#sessionexpired)
@@ -101,7 +105,7 @@ you can make the user a member of the **Global administrator** role as follows:
 1. Save the change.
 
 It typically takes 15 to 20 minutes to apply the changes globally.
-After this period has elapsed, the user can retry creating the service endpoint.
+After this period has elapsed, the user can retry creating the service connection.
 
 <a name="notauthtoadd"></a>
 #### The user is not authorized to add applications in the directory
@@ -133,9 +137,9 @@ To resolve these issues:
 * If you are prompted to sign out, do so.
 * Sign in using the appropriate credentials.
 * Choose the account you want to use from the list.
-* Select the project you want to add the service endpoint to.
-* Create the service endpoint you need by opening the **Settings** page, selecting the **Services** tab,
-  choosing **New service endpoint**, and selecting **Azure Resource Manager**.
+* Select the project you want to add the service connection to.
+* Create the service connection you need by opening the **Settings** page, selecting the **Services** tab,
+  choosing **New service connection**, and selecting **Azure Resource Manager**.
 
 <a name="contributorrole"></a>
 ### Failed to assign Contributor role

@@ -12,12 +12,15 @@ ms.date: 07/05/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Package: npm
 
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ![](_img/npm.png) Install and publish npm packages
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ## Install npm packages
 
@@ -25,11 +28,8 @@ monikerRange: '>= tfs-2015'
 [npm](https://nodejs.org/en/download/)
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/NpmV1.md)]
-
 ::: moniker-end
 
 ### Arguments
@@ -63,7 +63,7 @@ monikerRange: '>= tfs-2015'
             **Registries in my .npmrc:**
             <ul>
                 <li>Select this option to use feeds specified in a [.npmrc](https://docs.npmjs.com/files/npmrc) file you've checked into source control.</li>
-                <ul><li>Credentials for registries outside this account/collection can be used to inject credentials you've provided as an [npm service endpoint](../../library/service-endpoints.md#sep-npm) into your .npmrc as the build runs.</li></ul>
+                <ul><li>Credentials for registries outside this account/collection can be used to inject credentials you've provided as an [npm service connection](../../library/service-endpoints.md#sep-npm) into your .npmrc as the build runs.</li></ul>
             </ul>
             **Use packages from this VSTS/TFS registry:**
             <ul>
@@ -117,7 +117,7 @@ monikerRange: '>= tfs-2015'
             <ul>
                 <li>**Registry I select here** publishes to a Package Management registry in the same account/collection as the build. After you select this option, select the target registry from the dropdown.
                 </li>
-                <li>**External npm registry (including other accounts/collections)** publishes to an external server such as [npm](https://www.npmjs.com/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS account or TFS collection. After you select this option, create and select an [npm service endpoint](../../library/service-endpoints.md#sep-npm).
+                <li>**External npm registry (including other accounts/collections)** publishes to an external server such as [npm](https://www.npmjs.com/), [MyGet](http://www.myget.org/), or a Package Management feed in another VSTS account or TFS collection. After you select this option, create and select an [npm service connection](../../library/service-endpoints.md#sep-npm).
                 </li>
             </ul>
         </td>
@@ -181,7 +181,7 @@ monikerRange: '>= tfs-2015'
             **Registries in my .npmrc:**
             <ul>
                 <li>Select this option to use feeds specified in a [.npmrc](https://docs.npmjs.com/files/npmrc) file you've checked into source control.</li>
-                <li>Credentials for registries outside this account/collection can be used to inject credentials you've provided as an [npm service endpoint](../../library/service-endpoints.md#sep-npm) into your .npmrc as the build runs.</li>
+                <li>Credentials for registries outside this account/collection can be used to inject credentials you've provided as an [npm service connection](../../library/service-endpoints.md#sep-npm) into your .npmrc as the build runs.</li>
             </ul>
             **Use packages from this VSTS/TFS registry:**
             <ul>

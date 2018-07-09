@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 **VSTS | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Java application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.

@@ -90,7 +90,7 @@ This section explores possibilities for further integrating VSTS and GitHub. You
 
 ### How do I use a personal access token to authorize the VSTS to GitHub connection?
 
-See this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for creating a GitHub personal access token. You can use the token in the VSTS **Get sources** task of your build or release pipelines by creating a GitHub [service endpoint](../library/service-endpoints.md) and entering the token.
+See this [article](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for creating a GitHub personal access token. You can use the token in the VSTS **Get sources** task of your build or release pipelines by creating a GitHub [service connection](../library/service-endpoints.md) and entering the token.
 
 ## Next steps
 

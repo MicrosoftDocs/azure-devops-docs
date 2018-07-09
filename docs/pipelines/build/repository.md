@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190721%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory.
@@ -263,7 +263,7 @@ If your main repository and submodules are in a Git repository in your VSTS proj
 
 Make sure that whichever account you use has access to both the main repository as well as the submodules.
 
-If your main repository and submodules are in the same GitHub organization, then the token stored in the GitHub service endpoint is used to access the sources.
+If your main repository and submodules are in the same GitHub organization, then the token stored in the GitHub service connection is used to access the sources.
 
 #### Alternative to using the Checkout submodules option
 

@@ -16,7 +16,7 @@ ms.date: 08/10/2016
 ![](../_img/nuget-packager.png) Create a NuGet package from either a .csproj or .nuspec file.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ## Demands
@@ -24,11 +24,8 @@ ms.date: 08/10/2016
 None
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../../_shared/yaml/NuGetPackagerV0.md)]
-
 ::: moniker-end
 
 ## Arguments

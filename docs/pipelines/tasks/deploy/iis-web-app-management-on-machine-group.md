@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/iiswebappmanagementonmachinegroup.png) Create or update a Website, Web App, Virtual Directories, and Application Pool
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/IISWebAppManagementOnMachineGroupV0.md)]
-
 ::: moniker-end
 
 ## Arguments

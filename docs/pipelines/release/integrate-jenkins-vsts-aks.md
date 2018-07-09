@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 # Tutorial:  Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and VSTS CD
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Visual Studio Team Services (VSTS) provides integration with Jenkins so that you can:
@@ -262,13 +262,13 @@ You create a Jenkins build job to use the source code stored in your VSTS reposi
  
 1. **Save** the Jenkins project.
 
-## Create a Jenkins and AKS Service Endpoints in VSTS
+## Create a Jenkins and AKS service connection in VSTS
 
-You configure a Jenkins Service Endpoint to allow VSTS to connect to your Jenkins server.  You also need to configure an AKS service endpoint to allow VSTS to access your AKS cluster to configure deployment.
+You configure a Jenkins service connection to allow VSTS to connect to your Jenkins server.  You also need to configure an AKS service connection to allow VSTS to access your AKS cluster to configure deployment.
 
-1. Open the **Services** page in VSTS, open the **New Service Endpoint** list, and choose **Jenkins**.
+1. Open the **Services** page in VSTS, open the **New service connection** list, and choose **Jenkins**.
 
-     ![Add a Jenkins endpoint](_img/integrate-jenkins-vsts-cicd/add-jenkins-endpoint.png)
+     ![Add a Jenkins connection](_img/integrate-jenkins-vsts-cicd/add-jenkins-endpoint.png)
 
 1. Enter a name for the connection.
 
@@ -279,11 +279,11 @@ You configure a Jenkins Service Endpoint to allow VSTS to connect to your Jenkin
 
 1. Choose **Verify connection** to check that the information is correct.
 
-1. Choose **OK** to create the service endpoint.
+1. Choose **OK** to create the service connection.
 
-Add a second service endpoint for the AKS cluster.
+Add a second service connection for the AKS cluster.
 
-1. Opening the **New Service Endpoint** list, and choose **Kubernetes**.
+1. Opening the **New service connection** list, and choose **Kubernetes**.
 
 1. Enter a name for the connection.
 
@@ -299,7 +299,7 @@ Add a second service endpoint for the AKS cluster.
     az aks get-credentials --resource-group <yourResourceGroup> --name <yourAKSCluster> 
     ```
 
-    This command will get the access credentials for the AKS cluster.  Navigate to the **.kube** folder under your home directory, such as **C:\Users\YOUR_HOMEDIR\.kube**.  Copy the contents of the **config** file and paste it in the **Kubernetes Connection** window.  Select **OK** to create the service endpoint.
+    This command will get the access credentials for the AKS cluster.  Navigate to the **.kube** folder under your home directory, such as **C:\Users\YOUR_HOMEDIR\.kube**.  Copy the contents of the **config** file and paste it in the **Kubernetes Connection** window.  Select **OK** to create the service connection.
 
 ## Create Jenkins Service Hooks in VSTS
 You must also configure two Jenkins service hooks so you can execute CI builds via automated triggers for both simple commits as well as pull requests to your VSTS Git repository.
@@ -317,7 +317,7 @@ You must also configure two Jenkins service hooks so you can execute CI builds v
 
 1. Choose **Test** to check that the information is correct.
 
-1. Choose **Finish** to create the service endpoint.
+1. Choose **Finish** to create the service connection.
 
 1. Repeat the steps in this section to create another **service hook** for the **pull request merge attempted** trigger type.  This will allow either simple commits to the repository as well as pull requests to both trigger the Jenkins build.
 
@@ -343,7 +343,7 @@ Before you create the release pipeline, you need to install a VSTS extension tha
 
 1. Select the **Empty** template by choosing **Start with an Empty process**.
 
-1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service endpoint connection. Then select the Jenkins source job and choose **Add**.
+1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service connection. Then select the Jenkins source job and choose **Add**.
 
 Add two tasks to the release pipeline.  The first task updates the **K8sDeploy.yaml** file to pull the image tagged with the current Jenkins build id.
 
@@ -357,7 +357,7 @@ The second task deploys to the AKS cluster:
 
 1. Select the **+** button to add a second task.  Search for the **Deploy to Kubernetes** task.  Select **Add** to add the task.
 
-1. Set the **Kubernetes Service Connection** to the name of the service endpoint that you created for the AKS cluster.
+1. Set the **Kubernetes Service Connection** to the name of the service connection that you created for the AKS cluster.
 
 1. Set the **Command** to **apply**.
 
@@ -373,7 +373,7 @@ The second task deploys to the AKS cluster:
 
 1. Set **Secret name** to the secret provided in the **K8sDeploy.yaml** file which is named **regsecret**.  This is the name of an object in the AKS cluster that is used to store an authentication token.  The cluster uses this token to authenticate to the ACR to pull images.
 
-1. Ensure the **name** for your release pipeline matches the same name you chose earlier during the **Create a Jenkins Service Endpoint and Service Hooks in VSTS** steps.
+1. Ensure the **name** for your release pipeline matches the same name you chose earlier during the **Create a Jenkins service connection and service hooks in VSTS** steps.
 
 1. Click **Save**, and then click **OK** to save the release pipeline.
 

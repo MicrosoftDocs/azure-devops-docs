@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 # Publish to NuGet feeds
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 You can publish NuGet packages from your build to NuGet feeds. You can publish these packages to 
@@ -145,7 +145,7 @@ To publish NuGet packages created by your build, add the **NuGet** task and conf
 
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
 
-To publish to a external NuGet feed, you must first create a service endpoint to point to that feed. You can do this by going to **Project settings**, then choosing **Service endpoints**, and then creating a **New Service Endpoint**. Select the **NuGet** option for the service endpoint. Fill in feed URL and the API key or token to connect to the feed.
+To publish to a external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **NuGet** option for the service connection. Fill in feed URL and the API key or token to connect to the feed.
 
 #  [YAML](#tab/yaml)
 
@@ -156,7 +156,7 @@ YAML is not supported in TFS.
 ::: moniker range="vsts"
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
 
-To publish to a external NuGet feed, you must first create a service endpoint to point to that feed. You can do this by going to **Project settings**, then choosing **Service endpoints**, and then creating a **New Service Endpoint**. Select the **NuGet** option for the service endpoint. Fill in feed URL and the API key or token to connect to the feed.
+To publish to a external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **NuGet** option for the service connection. Fill in feed URL and the API key or token to connect to the feed.
 
 To publish a package to a NuGet feed, add the following snippet to your .vsts-ci.yml file.
 
@@ -165,7 +165,7 @@ To publish a package to a NuGet feed, add the following snippet to your .vsts-ci
   inputs:
     command: push
     nuGetFeedType: external
-    publishFeedCredentials: '<Name of the NuGet service endpoint>'
+    publishFeedCredentials: '<Name of the NuGet service connection>'
     versioningScheme: byEnvVar
     versionEnvVar: Version
 ```

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [ver
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 A release is a collection of artifacts in your DevOps CI/CD processes. An **artifact** is a deployable
@@ -241,10 +241,10 @@ The following features are available when using TFVC, Git, and GitHub sources:
 <h3 id="jenkinssource">Jenkins</h3>
 
 To consume Jenkins artifacts, you must create a
-service endpoint with credentials to connect to
+service connection with credentials to connect to
 your Jenkins server. For more details, see
-[service endpoints](../library/service-endpoints.md)
-and [Jenkins service endpoint](../library/service-endpoints.md#sep-jenkins).
+[service connections](../library/service-endpoints.md)
+and [Jenkins service connection](../library/service-endpoints.md#sep-jenkins).
 You can then link a Jenkins project to a release
 pipeline. The Jenkins project must be configured
 with a post build action to publish the artifacts.
@@ -287,9 +287,9 @@ For more information about Jenkins integration capabilities, see
 
 When deploying containerized apps, the container image is first pushed to a container registry.
 After the push is complete, the container image can be deployed to the Web App for Containers service or a Docker/Kubernetes cluster.
-You must create a service endpoint with credentials to connect to 
+You must create a service connection with credentials to connect to 
 your service to deploy images located there, or to your Azure account. For more details, see
-[service endpoints](../library/service-endpoints.md).
+[service connections](../library/service-endpoints.md).
 
 The following features are available when using Azure Container Registry, Docker, Kubernetes sources:
 
@@ -353,8 +353,8 @@ published in one Team Foundation Server from another Team Foundation Server.
 To enable these scenarios, you must install the
 [TFS artifacts for Release Management](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-externaltfs)
 extension from Visual Studio Marketplace. Then create a
-service endpoint with credentials to connect to your
-TFS server (see [service endpoints](../library/service-endpoints.md)
+service connection with credentials to connect to your
+TFS server (see [service connections](../library/service-endpoints.md)
 for details).
 
 You can then link a TFS build pipeline to your release pipeline. Choose
@@ -397,8 +397,8 @@ To integrate with TeamCity, you must first install the
 extension from Marketplace.
 
 To consume TeamCity artifacts, start by creating a
-service endpoint with credentials to connect to your
-TeamCity server (see [service endpoints](../library/service-endpoints.md)
+service connection with credentials to connect to your
+TeamCity server (see [service connections](../library/service-endpoints.md)
 for details).
 
 You can then link a TeamCity build configuration to a

@@ -28,25 +28,22 @@ None
 A generic service connection for a PyPI index.
 
 > [!TIP]
-> To configure a new generic service endpoint, go to Settings -> Services -> New Service Endpoint -> Generic.
+> To configure a new generic service connection, go to Settings -> Services -> New service connection -> Generic.
 > * **Connection Name**: A friendly connection name of your choice
 > * **Server URL**: PyPI package server (for example: https://upload.pypi.org/legacy/)
 > * **User name**: username for your PyPI account
 > * **Password/Token Key**: password for your PyPI account
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 | Argument | Description |
 |----------|-------------|
-| PyPI connection | A generic service endpoint for connecting to the package index. |
+| PyPI connection | A generic service connection for connecting to the package index. |
 | Python package directory | The directory of the Python package to be created and published, where setup.py is present. |
 | Also publish a wheel | Select whether to create and publish a [universal wheel](https://packaging.python.org/tutorials/distributing-packages/#wheels) package (platform independent) in addition to an sdist package. |
 

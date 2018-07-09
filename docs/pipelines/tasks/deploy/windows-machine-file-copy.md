@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ![icon](_img/windows-machine-file-copy-icon.png) Copy files to remote machines.
@@ -28,11 +28,8 @@ install the application on Windows Machines. It uses RoboCopy, the
 command-line utility built for fast copying of data.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/WindowsMachineFileCopyV2.md)]
-
 ::: moniker-end
 
 ## Arguments

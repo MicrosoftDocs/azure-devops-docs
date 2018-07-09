@@ -24,11 +24,8 @@ monikerRange: '>= tfs-2015'
 None
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/DeleteFilesV1.md)]
-
 ::: moniker-end
 
 ## Arguments

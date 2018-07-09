@@ -20,7 +20,7 @@ After your build finishes running continuous tests using Visual Studio Team Serv
 review your test results to start analyzing any problems that you found.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 <a name="reviewtests"></a>  

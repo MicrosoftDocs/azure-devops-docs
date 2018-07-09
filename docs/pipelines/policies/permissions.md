@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 To support security of your build and release operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from the **Build and Release** hub of the web portal, either from the user or admin context. 
@@ -42,7 +42,7 @@ pools and queues, or for an individual pool or queue.
 
 Roles are also defined to help you configure security on shared
 [library entities](../library/index.md) such as [variable groups](../library/index.md#security)
-and [service endpoints](../library/service-endpoints.md#security).
+and [service connection](../library/service-endpoints.md#security).
 Membership of these roles can be configured hierarchically, as well
 as at either team project level or individual entity level.
 
@@ -170,9 +170,9 @@ Permissions for library artifacts, such as variable groups and secure files, are
 
 [!INCLUDE [temp](../../organizations/security/_shared/library-roles.md)]
 
-## Service endpoint security roles
+## Service connection security roles
 
-You [add users to the following roles](set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service endpoints for build and release](../library/service-endpoints.md).   
+You [add users to the following roles](set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service connections for build and release](../library/service-endpoints.md).   
 
 [!INCLUDE [temp](../../organizations/security/_shared/service-endpoint-roles.md)]
 

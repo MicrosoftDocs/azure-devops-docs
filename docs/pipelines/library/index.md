@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 **VSTS | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 *Library* is a collection of _shared_ build and release assets for a project.
@@ -27,7 +27,7 @@ The **Library** tab can be accessed directly in the **Build &amp; Release** hub 
 At present, the library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).
 
 > Variable groups are available to only release pipelines in VSTS and TFS 2017 and newer at present.
-Task groups and service endpoints are available to build and release pipelines in TFS 2015 and newer, and VSTS.
+Task groups and service connections are available to build and release pipelines in TFS 2015 and newer, and VSTS.
 
 <h2 id="security">Library Security</h2>
 

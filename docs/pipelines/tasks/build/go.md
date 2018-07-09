@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/go.png) Get, build, test a go application, or run a custom go command.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/GoV0.md)]
-
 ::: moniker-end
 
 ## Arguments

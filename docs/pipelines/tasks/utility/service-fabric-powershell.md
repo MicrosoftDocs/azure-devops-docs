@@ -28,18 +28,15 @@ deploy to a Service Fabric cluster.
 * [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/ServiceFabricPowerShellV1.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 | Argument | Description |
 | -------- | ----------- |
-| **Cluster Connection** | The Azure Service Fabric service endpoint to use to connect and authenticate to the cluster. |
+| **Cluster Connection** | The Azure Service Fabric service connection to use to connect and authenticate to the cluster. |
 | **Script Type** | Specify whether the script is provided as a file or inline in the task. |
 | **Script Path** | Path to the PowerShell script to run. Can include wildcards and variables. Example: `$(system.defaultworkingdirectory)/**/drop/projectartifacts/**/docker-compose.yml`. **Note**: combining compose files is not supported as part of this task. |
 | **Script Arguments** | Additional parameters to pass to the PowerShell script. Can be either ordinal or named parameters. |

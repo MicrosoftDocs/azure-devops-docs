@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/downloadbuildartifacts.png) Download Build Artifacts
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/DownloadBuildArtifactsV0.md)]
-
 ::: moniker-end
 
 ## Arguments

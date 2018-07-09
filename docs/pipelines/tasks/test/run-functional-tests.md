@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 # Test: Run Functional Tests
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
@@ -41,11 +41,8 @@ tests on the build machine.
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.md)]
-
 ::: moniker-end
 
 ### Arguments

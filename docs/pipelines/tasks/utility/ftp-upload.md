@@ -12,23 +12,23 @@ ms.date: 08/18/2016
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Utility: FTP Upload
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
 ![](_img/ftp-upload.png) Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS.
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 ## Demands
 
 None
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/FtpUploadV1.md)]
-
 ::: moniker-end
 
 ## Arguments
@@ -41,9 +41,9 @@ None
 </tr>
 </thead>
 <tr>
-<td>FTP Service Endpoint</td>
+<td>FTP service connection</td>
 <td>
-<p>Select the service endpoint for your FTP server.  To create one, click the Manage link and create a new Generic Service Endpoint, enter the FTP server URL for the server URL, e.g. <b>`ftp://server.example.com`</b>, and required credentials.<p>Secure connections will always be made regardless of the specified protocol (<b>`ftp://`</b> or <b>`ftps://`</b>) if the target server supports FTPS.  To allow only secure connections, use the <b>`ftps://`</b> protocol, e.g. <b>`ftps://server.example.com`</b>.  Connections to servers not supporting FTPS will fail if <b>`ftps://`</b> is specified.</p>
+<p>Select the service connection for your FTP server.  To create one, click the Manage link and create a new Generic service connection, enter the FTP server URL for the server URL, e.g. <b>`ftp://server.example.com`</b>, and required credentials.<p>Secure connections will always be made regardless of the specified protocol (<b>`ftp://`</b> or <b>`ftps://`</b>) if the target server supports FTPS.  To allow only secure connections, use the <b>`ftps://`</b> protocol, e.g. <b>`ftps://server.example.com`</b>.  Connections to servers not supporting FTPS will fail if <b>`ftps://`</b> is specified.</p>
 </td>
 </tr>
 <tr>

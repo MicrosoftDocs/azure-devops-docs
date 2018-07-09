@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ![icon](_img/copy-files-over-ssh.png) Copy files from source folder to target folder on a remote machine over SSH. 
@@ -32,18 +32,15 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 * The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 | Argument | Description |
 | -------- | ----------- |
-| **SSH endpoint** | The name of an SSH service endpoint containing connection details for the remote machine.<br />- The hostname or IP address of the remote machine, the port number, and the user name are required to create an SSH endpoint.<br />- The private key and the passphrase must be specified for authentication. |
+| **SSH endpoint** | The name of an SSH service connection containing connection details for the remote machine.<br />- The hostname or IP address of the remote machine, the port number, and the user name are required to create an SSH endpoint.<br />- The private key and the passphrase must be specified for authentication. |
 | **Source folder** | The source folder for the files to copy to the remote machine. If omitted, the root of the repository is used. Names containing wildcards such as `*.zip` are not supported. Use [variables](../../build/variables.md) if files are not in the repository. Example: `$(Agent.BuildDirectory)` |
 | **Contents** | File paths to include as part of the copy. Supports multiple lines of [minimatch patterns](../file-matching-patterns.md). Default is `**` which includes all files (including sub folders) under the source folder.<br />- Example: `**/*.jar \n **/*.war` includes all jar and war files (including sub folders) under the source folder.<br />- Example: `** \n !**/*.xml` includes all files (including sub folders) under the source folder but excludes xml files. |
 | **Target folder** | Target folder on the remote machine to where files will be copied. Example: `/home/user/MySite`. Preface with a tilde (**~**) to specify the user's home directory. |

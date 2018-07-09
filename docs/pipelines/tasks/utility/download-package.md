@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/downloadpackage.png) Download a package from a Package Management feed in VSTS or TFS.  Requires the Package Management extension.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/DownloadPackageV0.md)]
-
 ::: moniker-end
 
 ## Arguments

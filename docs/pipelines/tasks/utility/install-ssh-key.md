@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/installsshkey.png) Install an SSH key prior to a build or release
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/InstallSSHKeyV0.md)]
-
 ::: moniker-end
 
 ## Arguments

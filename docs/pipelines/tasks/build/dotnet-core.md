@@ -18,6 +18,10 @@ monikerRange: '>= tfs-2017'
 
 If your .NET Core or .NET Standard build depends on NuGet packages, make sure to add two copies of this step: one with the `restore` command and one with the `build` command.
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 ## Restore NuGet packages
 
 ### Demands
@@ -25,9 +29,7 @@ If your .NET Core or .NET Standard build depends on NuGet packages, make sure to
 None
 
 ::: moniker range="> tfs-2018"
-
 ### YAML snippet
-
 ```YAML
 # .NET Core
 # Restore NuGet packages.
@@ -37,7 +39,6 @@ None
     projects: '**/*.csproj'
     #verbosityRestore: 'detailed' # Options: quiet, minimal, normal, detailed, diagnostic
 ```
-
 ::: moniker-end
 
 ### Arguments
@@ -56,9 +57,7 @@ None
 None
 
 ::: moniker range="> tfs-2018"
-
 ### YAML snippet
-
 ```YAML
 # .NET Core
 # Pack NuGet packages.
@@ -77,7 +76,6 @@ None
     #buildProperties: # Optional
     #verbosityPack: 'detailed' # Options: quiet, minimal, normal, detailed, diagnostic
 ```
-
 ::: moniker-end
 
 ### Arguments
@@ -108,9 +106,7 @@ If you choose 'Use the build number', this will use the build number to version 
 None
 
 ::: moniker range="> tfs-2018"
-
 ### YAML snippet
-
 ```YAML
 # .NET Core
 # Push NuGet packages.
@@ -122,7 +118,6 @@ None
     #publishVstsFeed: # Required when command == push && NuGetFeedType == internal
     #publishFeedCredentials: # Required when command == push && NuGetFeedType == external
 ```
-
 ::: moniker-end
 
 ### Arguments
@@ -132,16 +127,14 @@ None
 <tr><td>Target feed location</td><td>(Required) Use 'internal' for this account/collection. Use 'external' for an external NuGet server (including other accounts/collections).</td></tr>
 <tr><td>Path to NuGet package(s) to publish</td><td>(Required) The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with '-:'. Example: `**\*.nupkg;-:**\*.Tests.nupkg`</td></tr>
 <tr><td>Target feed</td><td>(Required) Select a feed hosted in this account. You must have Package Management installed and licensed to select a feed here.</td></tr>
-<tr><td>NuGet server</td><td>(Required) The NuGet service endpoint that contains the external NuGet server’s credentials.</td></tr>
+<tr><td>NuGet server</td><td>(Required) The NuGet service connection that contains the external NuGet server’s credentials.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
 ## Custom NuGet command
 
 ::: moniker range="> tfs-2018"
-
 ### YAML snippet
-
 ```YAML
 # .NET Core
 # Custom NuGet command.
@@ -152,7 +145,6 @@ None
     custom: 'Enter your custom NuGet command here'
     arguments: '--configuration release --output $(build.artifactStagingDirectory)'
 ```
-
 ::: moniker-end
 
 ### Arguments

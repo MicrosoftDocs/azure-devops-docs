@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](languages/dotnet-core.md#troubleshooting)
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ## Run commands locally at the command prompt

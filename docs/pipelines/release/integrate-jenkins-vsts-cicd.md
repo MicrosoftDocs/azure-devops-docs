@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 # Tutorial:  Integrate your Jenkins CI jobs with VSTS CD to Azure
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Visual Studio Team Services (VSTS) provides integration with Jenkins so that you can use Jenkins for Continuous Integration (CI) while gaining several DevOps benefits from a VSTS release pipeline to Azure such as:
@@ -42,7 +42,7 @@ You will:
 > * Get the Sample App
 > * Configure Jenkins credentials and the VSTS plugin
 > * Configure a Jenkins CI build with VSTS integration
-> * Create a Jenkins Service Endpoint and Service Hooks in VSTS
+> * Create a Jenkins service connection and Service Hooks in VSTS
 > * Create a VSTS Release Pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * (Optionally) Create a VSTS build pipeline to wrap the Jenkins CI job
@@ -146,11 +146,11 @@ You create a Jenkins build job to use the source code stored in your VSTS reposi
  
 1. **Save** the Jenkins project.
 
-## Create a Jenkins Service Endpoint and Service Hooks in VSTS
+## Create a Jenkins service connection and Service Hooks in VSTS
 
-You configure a Jenkins Service Endpoint to allow VSTS to connect to your Jenkins server.  You must also configure two Jenkins service hooks so you can execute CI builds via automated triggers for both simple commits as well as pull requests to your VSTS Git repository.
+You configure a Jenkins service connection to allow VSTS to connect to your Jenkins server.  You must also configure two Jenkins service hooks so you can execute CI builds via automated triggers for both simple commits as well as pull requests to your VSTS Git repository.
 
-1. Open the **Services** page in VSTS, open the **New Service Endpoint** list, and choose **Jenkins**.
+1. Open the **Services** page in VSTS, open the **New service connection** list, and choose **Jenkins**.
     ![Add a Jenkins endpoint](_img/integrate-jenkins-vsts-cicd/add-jenkins-endpoint.png)
 
 1. Enter a name for the connection.
@@ -162,7 +162,7 @@ You configure a Jenkins Service Endpoint to allow VSTS to connect to your Jenkin
 
 1. Choose **Verify connection** to check that the information is correct.
 
-1. Choose **OK** to create the service endpoint.
+1. Choose **OK** to create the service connection.
 
 1. From the **Service Hooks** page in VSTS, Select the **+** to add a new service and choose **Jenkins**.  Select **next**.
 
@@ -177,7 +177,7 @@ You configure a Jenkins Service Endpoint to allow VSTS to connect to your Jenkin
 
 1. Choose **Test** to check that the information is correct.
 
-1. Choose **Finish** to create the service endpoint.
+1. Choose **Finish** to create the service connection.
 
 1. Repeat the steps in this section to create another **service hook** for the **pull request merge attempted** trigger type.  This will allow either simple commits to the repository as well as pull requests to both trigger the Jenkins build.
 
@@ -191,7 +191,7 @@ To create the release pipeline in VSTS:
 
 1. Select the **Empty** template by choosing **Start with an Empty process**.
 
-1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service endpoint connection. Then select the Jenkins source job and choose **Add**.
+1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service connection. Then select the Jenkins source job and choose **Add**.
 
 1. Next to the **1 phase, 0 environments** link, select the **+** on the **Agent Phase** to add a task to the phase. 
 
@@ -203,7 +203,7 @@ To create the release pipeline in VSTS:
 
 1. For the **Package or folder** setting, select the ellipsis to browse, and then select your **.war artifact**.
 
-1. Ensure the **name** for your release pipeline matches the same name you chose earlier during the **Create a Jenkins Service Endpoint and Service Hooks in VSTS** steps.
+1. Ensure the **name** for your release pipeline matches the same name you chose earlier during the **Create a Jenkins service connection and Service Hooks in VSTS** steps.
 
 1. Click **Save**, and then click **OK** to save the release pipeline.
 
@@ -247,7 +247,7 @@ There is an additional approach (pattern) possible when integrating Jenkins and 
 
 1. For the **Job name** parameter, enter the **Jenkins Job name** you created in the earlier steps of this tutorial.  This name must match exactly.  This will allow you to queue the Jenkins job and download the artifacts it produces.
 
-1. Select the **Jenkins service endpoint**.
+1. Select the **Jenkins service connection**.
  
 1. Select **Get sources**, and then check the **Don't sync sources** option.  Since the Jenkins job is handling fetching the sources from VSTS, we do not need the VSTS build pipeline to perform this step.  However, this step will configure a local working directory on the VSTS build agent.
 
@@ -261,7 +261,7 @@ There is an additional approach (pattern) possible when integrating Jenkins and 
 
 1. **Delete** the artifact you used earlier.  **Add** a new artifact by choosing your VSTS build pipeline.  The VSTS build pipeline will now provide the artifact for the CD part of the pipeline.
 
-1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service endpoint connection. Then select the Jenkins source job and choose **Add**.
+1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service connection. Then select the Jenkins source job and choose **Add**.
 
 You can now test the pipeline (as you did on earlier steps) with a pull request or by pushing new code to your branch.  A VSTS build will initiate, a Jenkins job executes, and a VSTS release pipeline will deploy your changes to Azure.
 
@@ -273,7 +273,7 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * Get the Sample App
 > * Configure Jenkins credentials and VSTS plugin
 > * Configure a Jenkins CI build with VSTS integration
-> * Create a Jenkins Service Endpoint and Service Hooks in VSTS
+> * Create a Jenkins service connection and service hooks in VSTS
 > * Create a VSTS Release Pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * (Optionally) Create a VSTS build pipeline to wrap the Jenkins CI job

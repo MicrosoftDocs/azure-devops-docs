@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 **VSTS | TFS 2018 | TFS 2017.3**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 This quickstart explains how to set up continuous integration (CI) to build a container image and push it to a Docker registry like Azure Container Registry or Docker Hub. At the end of this topic, you'll be ready to continuously deploy your image to a Kubernetes cluster or an Azure Web App for Containers.

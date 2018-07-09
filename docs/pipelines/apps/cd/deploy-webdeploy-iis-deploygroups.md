@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 **VSTS | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 We'll show you how to set up continuous deployment of your ASP.NET or Node app to an IIS web server running on Windows using

@@ -21,11 +21,8 @@ monikerRange: 'vsts'
 xcode
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/XcodeV5.md)]
-
 ::: moniker-end
 
 ## Arguments

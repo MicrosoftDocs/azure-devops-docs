@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ## Demands
@@ -27,11 +27,8 @@ Can be used in only an [agentless phase](../../process/server-phases.md) of a re
 None
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/QueryWorkItemsV0.md)]
-
 ::: moniker-end
 
 ## Arguments

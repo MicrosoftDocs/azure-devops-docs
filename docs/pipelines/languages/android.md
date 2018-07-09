@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 **VSTS | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 This guide explains creating pipelines for Android projects. Before this guidance, read the [designer quickstart](../get-started-designer.md) or [YAML quickstart](../get-started-yaml.md).
@@ -113,7 +113,7 @@ Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task t
 
 ### Google Play
 
-Install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) and use the following tasks to automate interaction with Google Play. By default, these tasks authenticate to Google Play using a [service endpoint](..//library/service-endpoints.md) that you configure.
+Install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) and use the following tasks to automate interaction with Google Play. By default, these tasks authenticate to Google Play using a [service connection](..//library/service-endpoints.md) that you configure.
 
 #### Release
 

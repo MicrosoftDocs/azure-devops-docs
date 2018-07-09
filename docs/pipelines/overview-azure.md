@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 # Deploy to Azure
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](_shared/concept-rename-note.md)]
 ::: moniker-end
 
 Visual Studio Team Services (VSTS) is Microsoft's DevOps solution for Azure. The Build and Release services provide streamlined experiences to deploy your apps to one of Azure's many services. These services provide a continuous delivery solution if your code is managed in GitHub, VSTS Git or Team Foundation Version Control, or in one of the other Git servers.

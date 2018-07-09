@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/helminstaller.png) Install Helm and Kubernetes on agent machine.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/HelmInstallerV0.md)]
-
 ::: moniker-end
 
 ## Arguments

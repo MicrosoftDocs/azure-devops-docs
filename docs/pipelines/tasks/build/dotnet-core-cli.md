@@ -16,11 +16,8 @@ monikerRange: 'vsts'
 ![](_img/dotnetcorecli.png) Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/DotNetCoreCLIV2.md)]
-
 ::: moniker-end
 
 ## Arguments
@@ -46,7 +43,7 @@ monikerRange: 'vsts'
 </td></tr>
 <tr><td>Target feed location</td><td>(Required) undefined</td></tr>
 <tr><td>Target feed</td><td>(Required) Select a feed hosted in this account. You must have Package Management installed and licensed to select a feed here.</td></tr>
-<tr><td>NuGet server</td><td>(Required) The NuGet service endpoint that contains the external NuGet server’s credentials.</td></tr>
+<tr><td>NuGet server</td><td>(Required) The NuGet service connection that contains the external NuGet server’s credentials.</td></tr>
 <tr><td>Path to csproj or nuspec file(s) to pack</td><td>(Required) Pattern to search for csproj or nuspec files to pack.
 
 You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with '-:'. Example: &ast;&ast;/&ast;.csproj;-:&ast;&ast;/&ast;.Tests.csproj</td></tr>

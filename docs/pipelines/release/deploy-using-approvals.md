@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 # Use approvals and gates to control your deployment
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 By using a combination of manual deployment approvals, gates, and manual

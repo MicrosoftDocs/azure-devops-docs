@@ -92,7 +92,7 @@ In VSTS:
 
 1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New Build Pipeline**.
 
-1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your  repository. You'll need to authorize access to your repo via a GitHub service endpoint.
+1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your  repository. You'll need to authorize access to your repo via a GitHub service connection.
 
 1. You are then asked to select a template for the pipeline. Select **YAML**, and then select **Apply**.
 

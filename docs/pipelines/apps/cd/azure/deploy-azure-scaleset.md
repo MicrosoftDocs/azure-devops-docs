@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 VSTS | TFS 2018 | TFS 2017
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 The **Build Machine Image** task makes it easy for users who are new to immutable
@@ -73,7 +73,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    - **Packer template**: You can use your own packer configuration JSON file or use the auto-generate feature where the task generates a packer template for you. This example uses the auto-generated packer configuration.
    
    - **Azure subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Storage location**: The location of storage account where the VHD will be stored. This should be the same location where the virtual machine scale set is located, or where it will be created.
    
@@ -90,7 +90,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    - **Azure Connection Type**: Select `Azure Resource Manager`
    
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Script type**: Select `Inline Script`
    

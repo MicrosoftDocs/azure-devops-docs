@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/pipeline-aka-definition.md)]
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 ![](_img/msbuild.png) Build with MSBuild
@@ -29,11 +29,8 @@ msbuild
 > **VSTS:** If your team uses Visual Studio 2017 and you want to use our Microsoft-hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="> tfs-2018"
-
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/MSBuildV1.md)]
-
 ::: moniker-end
 
 ## Arguments
