@@ -13,8 +13,6 @@ monikerRange: 'vsts'
 
 # Tool: Use Python Version
 
-**VSTS**
-
 ![icon](_img/python.png) Selects a version of Python to run on an agent.  Optionally adds it to PATH.
 
 ## Demands
@@ -26,12 +24,9 @@ None
 
 This task will fail if no Python versions are found in the tool cache.
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/UsePythonVersionV0.md)]
-
 ::: moniker-end
 
 ## Arguments

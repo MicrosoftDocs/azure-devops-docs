@@ -8,11 +8,15 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Test: Run Functional Tests
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ::: moniker range=">= tfs-2018"
 
@@ -36,12 +40,9 @@ tests on the build machine.
 
 This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.md)]
-
 ::: moniker-end
 
 ### Arguments

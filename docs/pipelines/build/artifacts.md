@@ -12,10 +12,13 @@ ms.date: 10/12/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Artifacts in Team Build
 
 **VSTS | TFS 2015.3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 
@@ -23,7 +26,7 @@ Release Management can pick up and use your build artifacts as part of a continu
 
 ## Examples
 
-Here are some examples of how to publish artifacts from the **Tasks** tab of your build definition.
+Here are some examples of how to publish artifacts from the **Tasks** tab of your build pipeline.
 
 ### Publish a README.md file
 

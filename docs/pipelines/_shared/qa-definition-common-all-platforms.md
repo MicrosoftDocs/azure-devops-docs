@@ -18,7 +18,7 @@ ms.topic: include
 * TFVC: [Use gated check-in](../build/triggers.md#gated).
 
 
-### How do I modify other parts of my build definition?
+### How do I modify other parts of my build pipeline?
 
 * [Specify your build tasks](../tasks/index.md) to run tests, scripts, and a wide range of other processes.
 
@@ -30,12 +30,10 @@ ms.topic: include
 
 * [Specify build retention policies](../policies/retention.md) to automatically delete old builds.
 
-
 ### I selected parallel multi-configuration, but only one build is running at a time.
 
-If you're using VSTS, you might need more concurrent jobs. See [Concurrent build and release pipelines in VSTS](../licensing/concurrent-jobs-vsts.md).
+If you're using VSTS, you might need more concurrent jobs. See [Concurrent build and release jobs in VSTS](../licensing/concurrent-jobs-vsts.md).
 
+### How do I see what has changed in my build pipeline?
 
-### How do I see what has changed in my build definition?
-
-[View the change history of your build definition](../build/history.md)
+[View the change history of your build pipeline](../build/history.md)

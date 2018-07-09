@@ -14,8 +14,11 @@ layout: LandingPage
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Build and release
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](_shared/concept-rename-note.md)]
+::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 
@@ -79,7 +82,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 
 ## Concepts
 
-- [Release definitions](release/index.md)
+- [Release pipelines](release/index.md)
 - [Build and release agents](agents/agents.md)
 - [Build and release tasks](process/tasks.md)  
 - [Licensing and build and release pipelines](licensing/concurrent-jobs-vsts.md)

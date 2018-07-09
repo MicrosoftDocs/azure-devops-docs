@@ -15,12 +15,9 @@ monikerRange: 'vsts'
 
 ![](_img/kubernetes.png) Deploy, configure, update your Kubernetes cluster in Azure Container Service by running kubectl commands.
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/KubernetesV1.md)]
-
 ::: moniker-end
 
 ## Arguments

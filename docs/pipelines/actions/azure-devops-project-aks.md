@@ -11,10 +11,9 @@ author: mlearned
 monikerRange: 'vsts'
 ---
 
-
 # Tutorial:  Deploy your ASP.NET Core App to Azure Kubernetes Service (AKS) with the Azure DevOps Project
 
-The Azure DevOps Project presents a simplified experience where you bring your existing code and Git repository, or choose from one of the sample applications to create a continuous integration (CI) and continuous delivery (CD) pipeline to Azure.  The DevOps project automatically creates Azure resources such as AKS, creates and configures a release pipeline in VSTS that includes a build definition for CI, sets up a release definition for CD, and then creates an Azure Application Insights resource for monitoring.
+The Azure DevOps Project presents a simplified experience where you bring your existing code and Git repository, or choose from one of the sample applications to create a continuous integration (CI) and continuous delivery (CD) pipeline to Azure.  The DevOps project automatically creates Azure resources such as AKS, creates and configures a release pipeline in VSTS that includes a build pipeline for CI, sets up a release pipeline for CD, and then creates an Azure Application Insights resource for monitoring.
 
 You will:
 
@@ -22,8 +21,8 @@ You will:
 > * Create an Azure DevOps project for an ASP.NET Core App and AKS
 > * Configure VSTS and an Azure subscription 
 > * Examine the AKS cluster
-> * Examine the VSTS CI Build definition
-> * Examine the VSTS CD Release Management definition
+> * Examine the VSTS CI Build pipeline
+> * Examine the VSTS CD Release Management pipeline
 > * Commit changes to VSTS and automatically deploy to Azure
 > * Clean up resources
 
@@ -75,41 +74,41 @@ The Azure DevOps Project automatically configures an AKS cluster.  You can explo
 
 1. On the right-side of the screen, select **View Kubernetes dashboard**.  Optionally follow the steps to open the Kubernetes dashboard.
 
-## Examine the VSTS CI Build definition
+## Examine the VSTS CI Build pipeline
 
-The Azure DevOps Project automatically configures a full VSTS CI/CD pipeline in your VSTS account.  You can explore and customize the pipeline.  Follow the steps below to familiarize yourself with the VSTS build definition.
+The Azure DevOps Project automatically configures a full VSTS CI/CD pipeline in your VSTS account.  You can explore and customize the pipeline.  Follow the steps below to familiarize yourself with the VSTS build pipeline.
 
 1. Navigate to the **Azure DevOps Project dashboard**.
 
-1. Select **Build Pipelines** from the **top** of the **Azure DevOps project dashboard**.  This link opens a browser tab and opens the VSTS build definition for your new project.
+1. Select **Build Pipelines** from the **top** of the **Azure DevOps project dashboard**.  This link opens a browser tab and opens the VSTS build pipeline for your new project.
 
-1. Move the mouse cursor to the right of the build definition next to the **Status** field. Select the **ellipsis** that appears.  This action opens a menu where you can perform several activities such as **queue a new build**, **pause a build**, and **edit the build definition**.
+1. Move the mouse cursor to the right of the build pipeline next to the **Status** field. Select the **ellipsis** that appears.  This action opens a menu where you can perform several activities such as **queue a new build**, **pause a build**, and **edit the build pipeline**.
 
 1. Select **Edit**.
 
-1. From this view, **examine the various tasks** for your build definition.  The build performs various tasks such as fetching sources from the VSTS Git repository, restoring dependencies, and publishing outputs used for deployments.
+1. From this view, **examine the various tasks** for your build pipeline.  The build performs various tasks such as fetching sources from the VSTS Git repository, restoring dependencies, and publishing outputs used for deployments.
 
-1. At the top of the build definition, select the **build definition name**.
+1. At the top of the build pipeline, select the **build pipeline name**.
 
-1. Change the **name** of your build definition to something more descriptive.  Select **Save & queue**, then select **Save**.
+1. Change the **name** of your build pipeline to something more descriptive.  Select **Save & queue**, then select **Save**.
 
-1. Under your build definition name, select **History**.  You see an audit trail of your recent changes for the build.  VSTS keeps track of any changes made to the build definition and allows you to compare versions.
+1. Under your build pipeline name, select **History**.  You see an audit trail of your recent changes for the build.  VSTS keeps track of any changes made to the build pipeline and allows you to compare versions.
 
 1. Select **Triggers**.  The Azure DevOps project automatically created a CI trigger, and every commit to the repository initiates a new build.  You can optionally choose to include or exclude branches from the CI process.
 
 1. Select **Retention**.  Based on your scenario, you can specify policies to keep or remove a certain number of builds.
 
-## Examine the VSTS CD Release Management definition
+## Examine the VSTS CD Release Management pipeline
 
-The Azure DevOps Project automatically creates and configures the necessary steps to deploy from your VSTS account to your Azure subscription.  These steps include configuring an Azure service connection to authenticate VSTS to your Azure subscription.  The automation also creates a VSTS Release Definition, and this provides the CD to the Azure.  Follow the steps below to examine more about the VSTS Release Definition.
+The Azure DevOps Project automatically creates and configures the necessary steps to deploy from your VSTS account to your Azure subscription.  These steps include configuring an Azure service connection to authenticate VSTS to your Azure subscription.  The automation also creates a VSTS Release Pipleline, and this provides the CD to the Azure.  Follow the steps below to examine more about the VSTS Release Pipleline.
 
-1. Select **Build and Release**, then choose **Releases**.  The Azure DevOps project created a VSTS release definition to manage deployments to Azure.
+1. Select **Build and Release**, then choose **Releases**.  The Azure DevOps project created a VSTS release pipeline to manage deployments to Azure.
 
-1. On the left-hand side of the browser, select the **ellipsis** next to your release definition, then choose **Edit**.
+1. On the left-hand side of the browser, select the **ellipsis** next to your release pipeline, then choose **Edit**.
 
-1. The release definition contains a **pipeline**, which defines the release process.  Under **Artifacts**, select **Drop**.  The build definition you examined in the previous steps produces the output used for the artifact. 
+1. The release pipeline contains a **pipeline**, which defines the release process.  Under **Artifacts**, select **Drop**.  The build pipeline you examined in the previous steps produces the output used for the artifact. 
 
-1. To the right-hand side of the **Drop** icon, select the **Continuous deployment trigger** **icon** (which appears as a lightning bolt.)  This release definition has an enabled CD trigger.  The trigger initiates a deployment every time there is a new build artifact available.  Optionally, you can disable the trigger, so your deployments will then require manual execution. 
+1. To the right-hand side of the **Drop** icon, select the **Continuous deployment trigger** **icon** (which appears as a lightning bolt.)  This release pipeline has an enabled CD trigger.  The trigger initiates a deployment every time there is a new build artifact available.  Optionally, you can disable the trigger, so your deployments will then require manual execution. 
 
 1. On the right-hand side of the browser, select **View releases**.  This view shows a history of releases.
 
@@ -124,7 +123,7 @@ The Azure DevOps Project automatically creates and configures the necessary step
  > [!NOTE]
  > The steps below test the CI/CD pipeline with a simple text change to your web app.
 
-You're now ready to collaborate with a team on your app with a CI/CD process that automatically deploys your latest work to your web site.  Each change to the VSTS git repo initiates a build in VSTS, and a VSTS Release Management definition deploys your changes to Azure.  Follow the steps below, or use other techniques to commit changes to your repository.  For example, you can **clone** the Git repository in your favorite tool or IDE, and then push changes to this repo.
+You're now ready to collaborate with a team on your app with a CI/CD process that automatically deploys your latest work to your web site.  Each change to the VSTS git repo initiates a build in VSTS, and a VSTS Release Management pipeline deploys your changes to Azure.  Follow the steps below, or use other techniques to commit changes to your repository.  For example, you can **clone** the Git repository in your favorite tool or IDE, and then push changes to this repo.
 
 1. Select **Code** and then **Files** from the VSTS menu, and navigate to your repository.
 1. Navigate to the **Views\Home** directory, then select the **ellipsis** next to the **Index.cshtml** file, and then choose **Edit**.
@@ -147,14 +146,14 @@ If you are testing, you can clean up resources to avoid accruing billing charges
 
 ## Next steps
 
-You can optionally modify these build and release definitions to meet the needs of your team. You can also use this CI/CD pattern as a template for your other projects.  You learned how to:
+You can optionally modify these build and release pipelines to meet the needs of your team. You can also use this CI/CD pattern as a template for your other projects.  You learned how to:
 
 > [!div class="checklist"]
 > * Create an Azure DevOps project for an ASP.NET Core App and AKS
 > * Configure VSTS and an Azure subscription 
 > * Examine the AKS cluster
-> * Examine the VSTS CI Build definition
-> * Examine the VSTS CD Release Management definition
+> * Examine the VSTS CI Build pipeline
+> * Examine the VSTS CD Release Management pipeline
 > * Commit changes to VSTS and automatically deploy to Azure
 > * Clean up resources
 

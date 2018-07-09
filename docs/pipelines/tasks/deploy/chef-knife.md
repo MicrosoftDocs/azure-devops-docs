@@ -15,12 +15,9 @@ monikerRange: 'vsts'
 
 ![](_img/chefknife.png) Run Scripts with knife commands on your chef workstation
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/ChefKnifeV1.md)]
-
 ::: moniker-end
 
 ## Arguments

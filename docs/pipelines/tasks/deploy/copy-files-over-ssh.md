@@ -1,6 +1,6 @@
 ---
 title: Copy Files Over SSH task for use in VSTS and TFS
-description: How to copy Files Over SSH task for use in the phases of all of your build and release definitions in Microsoft VSTS and TFS
+description: How to copy Files Over SSH task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.prod: devops
 ms.technology: devops-cicd 
@@ -8,13 +8,17 @@ ms.topic: reference
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Deploy: Copy Files Over SSH
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
 ![icon](_img/copy-files-over-ssh.png) Copy files from source folder to target folder on a remote machine over SSH. 
 
@@ -27,19 +31,16 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 * The task supports use of an SSH key pair to connect to the remote machine(s). 
 * The public key must be pre-installed or copied to the remote machine(s).
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 | Argument | Description |
 | -------- | ----------- |
-| **SSH endpoint** | The name of an SSH service endpoint containing connection details for the remote machine.<br />- The hostname or IP address of the remote machine, the port number, and the user name are required to create an SSH endpoint.<br />- The private key and the passphrase must be specified for authentication. |
+| **SSH endpoint** | The name of an SSH service connection containing connection details for the remote machine.<br />- The hostname or IP address of the remote machine, the port number, and the user name are required to create an SSH endpoint.<br />- The private key and the passphrase must be specified for authentication. |
 | **Source folder** | The source folder for the files to copy to the remote machine. If omitted, the root of the repository is used. Names containing wildcards such as `*.zip` are not supported. Use [variables](../../build/variables.md) if files are not in the repository. Example: `$(Agent.BuildDirectory)` |
 | **Contents** | File paths to include as part of the copy. Supports multiple lines of [minimatch patterns](../file-matching-patterns.md). Default is `**` which includes all files (including sub folders) under the source folder.<br />- Example: `**/*.jar \n **/*.war` includes all jar and war files (including sub folders) under the source folder.<br />- Example: `** \n !**/*.xml` includes all files (including sub folders) under the source folder but excludes xml files. |
 | **Target folder** | Target folder on the remote machine to where files will be copied. Example: `/home/user/MySite`. Preface with a tilde (**~**) to specify the user's home directory. |

@@ -35,7 +35,7 @@ None
 | Action | Select:<br /><br />**Activate** for the first instance of this build task, which should come before any instances of the Xamarin.Android or Xamarin.iOS tasks.<br /><br />**Deactivate** for the second instance of this build task, which should come after all instances of the Xamarin.Android and Xamarin.iOS tasks. You should also select **Always run** under **Control options** for the last instance of the Xamarin license task. |
 | Email | Xamarin account email address. |
 | Password | Xamarin account password.<br /><br />Use a [secret variable](../../build/variables.md) to avoid exposing this value. |
-| Xamarin Product | Select the build task that you're running in this build definition, such as **Xamarin.Android** or **Xamarin.iOS**. |
+| Xamarin Product | Select the build task that you're running in this build pipeline, such as **Xamarin.Android** or **Xamarin.iOS**. |
 | Advanced - Timeout in Seconds | Specify how long you want to allow the build task to wait for the activation or deactivation. |
 | [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] |
 

@@ -13,10 +13,7 @@ ms.date: 11/15/2017
 monikerRange: 'vsts'
 ---
 
-
 # Tool: Java Tool Installer
-
-**VSTS**
 
 ![icon](_img/java.png) Acquires a specific version of Java from a user supplied Azure blob, a location in the souce or on the agent, or the tools cache and sets JAVA_HOME. Use this task to change the version of Java used in Java tasks.
 
@@ -24,12 +21,9 @@ monikerRange: 'vsts'
 
 None
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/JavaToolInstallerV0.md)]
-
 ::: moniker-end
 
 ## Arguments
