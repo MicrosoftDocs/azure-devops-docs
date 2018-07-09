@@ -138,10 +138,10 @@ For a different experience than one of the default options use the **CustomerQnA
 
 ```json
 {
-    "CustomerQnASupport": {
-        "enableqna":"true",
+    "customerQnaSupport": {
+        "enableqna": true,
         "url": "http://uservoice.visualstudio.com"
-    } 
+    }
 }
 ```
 
@@ -159,28 +159,28 @@ Properties for the CustomerQnASupport section:
 
 ```json
 {
-     "CustomerQnASupport": {
-        "enableqna":"true",
+    "customerQnaSupport": {
+        "enableqna": true,
         "url": "http://uservoice.visualstudio.com"
-    } 
+    }
 }
 ```
 #### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
 
 ```json
 {
-     "CustomerQnASupport": {
-        "enableqna":"true"
-    } 
+    "customerQnaSupport": {
+        "enableqna": true
+    }
 }
 ```
 #### Example 12: Extension disabling Q&A section
 
 ```json
 {
-     "CustomerQnASupport": {
-        "enableqna":"false"
-    } 
+    "customerQnaSupport": {
+        "enableqna": false
+    }
 }
 ```
 
