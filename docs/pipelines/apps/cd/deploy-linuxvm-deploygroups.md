@@ -16,6 +16,10 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018**
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
 Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 2018. You can use the steps in this
 quickstart for any app as long as your continuous integration process publishes a web deployment package.
@@ -47,32 +51,32 @@ If you don't already have a Linux VM with Nginx, create one now in Azure using t
 
 Your CD release process picks up the artifacts published by your CI build and then deploys them to your nginx servers.
 
-1. Do one of the following to start creating a release definition:
+1. Do one of the following to start creating a release pipeline:
 
    * If you've just completed a CI build then, in the build's **Summary** tab under **Deployments**,
-     choose **Create release** followed by **Yes**. This starts a new release definition that's automatically linked to the build definition.
+     choose **Create release** followed by **Yes**. This starts a new release pipeline that's automatically linked to the build pipeline.
 
-     ![Creating a new release definition from the build summary](../_shared/_img/release-from-build-summary.png)
+     ![Creating a new release pipeline from the build summary](../_shared/_img/release-from-build-summary.png)
 
    * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
-     in the list of release definitions, and choose **Create release definition**.
+     in the list of release pipelines, and choose **Create release pipeline**.
 
-     ![Creating a new release definition in the Releases page](../_shared/_img/release-from-release-page.png)
+     ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)
 
 1. Choose **Start with an Empty process**.
 
-1. If you created your new release definition from a build summary, check that the build definition and artifact
-   is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release definition from
+1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
+   is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from
    the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-   ![Checking or selecting the build definition and artifact](_img/deploy-linuxvm-deploygroups/confirm-or-add-artifact.png)
+   ![Checking or selecting the build pipeline and artifact](_img/deploy-linuxvm-deploygroups/confirm-or-add-artifact.png)
 
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the
    continuous deployment trigger is enabled, and add a filter that includes the **master** branch.
 
    ![Checking or setting the Continuous deployment trigger](_img/deploy-linuxvm-deploygroups/confirm-or-set-cd-trigger.png)
 
-   > Continuous deployment is not enabled by default when you create a new release definition from the **Releases** tab.
+   > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
 
 1. Open the **Tasks** tab, select the **Agent phase**, and choose **Remove** to remove this phase.
 
@@ -100,13 +104,13 @@ Your CD release process picks up the artifacts published by your CI build and th
 
    ![Configuring the Shell Script task](_img/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
 
-1. Save the release definition.
+1. Save the release pipeline.
 
-   ![Saving the release definition](_img/deploy-linuxvm-deploygroups/save-definition.png)
+   ![Saving the release pipeline](_img/deploy-linuxvm-deploygroups/save-definition.png)
 
 ## Create a release to deploy your app
 
-You're now ready to create a release, which means to start the process of running the release definition
+You're now ready to create a release, which means to start the process of running the release pipeline
 with the artifacts produced by a specific build. This will result in deploying the build.
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]

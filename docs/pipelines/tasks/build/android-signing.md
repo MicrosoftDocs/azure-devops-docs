@@ -25,12 +25,9 @@ The build agent must have the following capabilities:
 
  * Java JDK
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AndroidSigningV2.md)]
-
 ::: moniker-end
 
  ## Arguments

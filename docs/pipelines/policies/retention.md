@@ -12,10 +12,13 @@ ms.date: 08/26/2016
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Build and release retention policies
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 Retention policies are used to configure how long builds and
 releases are to be retained by the system. The primary reasons to
@@ -29,10 +32,10 @@ In most cases you don't need to retain completed builds longer than
 a certain number of days. Using build retention policies, you can
 control **how many days** you want to keep each build before
 deleting it and the **minimum number of builds** that should be
-retained for each definition.
+retained for each pipeline.
 
-As an author of a build definition, you can customize retention
-policies for builds of your definition on the **Retention** tab.
+As an author of a build pipeline, you can customize retention
+policies for builds of your pipeline on the **Retention** tab.
 You can also customize these policies on a branch-by-branch basis
 if you are building from [Git repositories](#git-repositories).
 
@@ -65,13 +68,13 @@ Global build retention policy settings can be managed from the **Build and Relea
 ::: moniker-end
 
 The **maximum retention policy** sets the upper limit for how longs
-builds can be retained for all build definitions.
-Authors of build definitions cannot configure settings for their
+builds can be retained for all build pipelines.
+Authors of build pipelines cannot configure settings for their
 definitions beyond the values specified here.
 
-The **default retention policy** sets the default retention values for all the build definitions. Authors of build definitions can override these values.
+The **default retention policy** sets the default retention values for all the build pipelines. Authors of build pipelines can override these values.
 
-The **build destruction policy** helps you keep the builds for a certain period of time after they are deleted. This policy cannot be overridden in individual build definitions.
+The **build destruction policy** helps you keep the builds for a certain period of time after they are deleted. This policy cannot be overridden in individual build pipelines.
 
 ### Git repositories
 
@@ -87,12 +90,12 @@ For example, your team may want to keep:
 * Master and feature branch builds for 10 days, with a minimum of three successful or partially successful builds for each of these branches. You exclude a special feature branch that you want to keep for a longer period of time.
 * Builds from the special feature branch and all other branches for 15 days, with a minimum of a single successful or partially successful build for each branch.
 
-The following example retention policy for a build definition
+The following example retention policy for a build pipeline
 meets the above requirements:
 
 ![define git retention policies](_img/define-git-retention-policies.png)
 
-When specifying custom policies for each definition, you cannot exceed the maximum limits set by administrator.
+When specifying custom policies for each pipeline, you cannot exceed the maximum limits set by administrator.
 
 <h4 id="branch-policy-pr-builds">Clean up pull request builds</h4>
 
@@ -114,7 +117,7 @@ When the system is purging old builds, it evaluates each build against the polic
 
 The "All" branches policy is automatically added as the last policy in the evaluation order to enforce the maximum limits for all other branches.
 
-![define git retention policy max shown in definition](_img/define-git-retention-policy-max-shown-in-definition.png)
+![define git retention policy max shown in pipeline](_img/define-git-retention-policy-max-shown-in-definition.png)
 
 ### What parts of the build get deleted
 
@@ -142,12 +145,12 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 <h2 id="release">Release retention</h2>
 
-The release retention policies for a release definition determine how long a release
-and the build linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each definition. The retention timer on a release is reset every time a release is modified or deployed to an environment. The minimum number or releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
+The release retention policies for a release pipeline determine how long a release
+and the build linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. The retention timer on a release is reset every time a release is modified or deployed to an environment. The minimum number or releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
 recent three will be retained indefinitely - irrespective of the number of
 days specified. However, you can manually delete these releases when you no longer require them.
 
-As an author of a release definition, you can customize retention policies for releases of your definition on the **Retention** tab.
+As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
 You can also customize these policies on an [environment-by-environment basis](#environment-specific-retention).
 
 ### Global release retention policy
@@ -162,12 +165,12 @@ Global release retention policy settings can be managed from the **Release** set
 * On-premises: `https://{your_server}/tfs/{collection_name}/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained
-for all release definitions. Authors of release definitions cannot
+for all release pipelines. Authors of release pipelines cannot
 configure settings for their definitions beyond the values specified here.
 
-The **default retention policy** sets the default retention values for all the release definitions. Authors of build definitions can override these values.
+The **default retention policy** sets the default retention values for all the release pipelines. Authors of build pipelines can override these values.
 
-The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release definitions.
+The **destruction policy** helps you keep the releases for a certain period of time after they are deleted. This policy cannot be overridden in individual release pipelines.
 
 > In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
@@ -181,9 +184,9 @@ For example, your team may want to keep:
 * Releases deployed to QA environment for 30 days, with a minimum of two last deployed releases.
 * Releases deployed to Dev environment for 10 days, with a minimum of one last deployed release.
 
-The following example retention policy for a release definition meets the above requirements:
+The following example retention policy for a release pipeline meets the above requirements:
 
-![Configuring the release retention setting for a release definition](_img/retention-policy-01.png)
+![Configuring the release retention setting for a release pipeline](_img/retention-policy-01.png)
 
 In this example, if a release that is deployed to Dev is not
 promoted to QA for 10 days, it is a potential candidate for
@@ -191,7 +194,7 @@ deletion. However, if that same release is deployed to QA eight
 days after being deployed to Dev, its retention timer is reset,
 and it is retained in the system for another 30 days.
 
-When specifying custom policies per definition, you cannot exceed the maximum limits set by administrator.
+When specifying custom policies per pipeline, you cannot exceed the maximum limits set by administrator.
 
 ::: moniker range=">= tfs-2017"
 
@@ -204,7 +207,7 @@ the build for the same period as the release, set the
 overrides the retention policy for the build, and ensures that the
 artifacts are available if you need to redeploy that release.
 
-When you delete a release definition, delete a release, or when the
+When you delete a release pipeline, delete a release, or when the
 retention policy deletes a release automatically, the retention policy
 for the associated build will determine when that build is deleted.
 
@@ -222,14 +225,14 @@ No
 
 ### If I mark a build or a release to be retained indefinitely, does the retention policy still apply?
 
-No. Neither the definition's retention policy nor the maximum
+No. Neither the pipeline's retention policy nor the maximum
 limits set by the administrator are applied when you mark an
 individual build or release to be retained indefinitely.
 It will remain until you stop retaining it indefinitely.
 
 ### How do I specify that builds deployed to production will be retained longer?
 
-Customize the retention policy on the release definition. Specify
+Customize the retention policy on the release pipeline. Specify
 the number of days that releases deployed to production must be
 retained. In addition, indicate that builds associated with that
 release are to be retained. This will override the build retention

@@ -8,25 +8,26 @@ ms.assetid: B832BEC5-8C27-4FEF-9FB8-6BEC8524AD8A
 ms.manager: dastahel
 ms.author: dastahel
 ms.date: 05/04/2018
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2017'
 ---
 
 # Deploy: App Center Distribute
 
 ![](_img/appcenterdistribute.png) Distribute app builds to testers and users via App Center
 
-::: moniker range=">tfs-2018"
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
 
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/AppCenterDistributeV1.md)]
-
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>App Center connection</td><td>(Required) Select the service endpoint for your Visual Studio App Center connection. To create one, click the Manage link and create a new service endpoint.</td></tr>
+<tr><td>App Center connection</td><td>(Required) Select the service connection for your Visual Studio App Center connection. To create one, click the Manage link and create a new service connection.</td></tr>
 <tr><td>App slug</td><td>(Required) The app slug is in the format of **{username}/{app_identifier}**.  To locate **{username}** and **{app_identifier}** for an app, click on its name from https://appcenter.ms/apps, and the resulting URL is in the format of [https://appcenter.ms/users/<b>{username}</b>/apps/<b>{app_identifier}</b>](https://appcenter.ms/users/{username}/apps/{app_identifier}). If you are using orgs, the app slug is of the format **{orgname}/{app_identifier}**.</td></tr>
 <tr><td>Binary file path</td><td>(Required) Relative path from the repo root to the APK or IPA file you want to publish</td></tr>
 <tr><td>Symbols type</td><td>(Optional) undefined</td></tr>

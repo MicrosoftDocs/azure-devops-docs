@@ -118,7 +118,7 @@
     items:
     - name: What is Release Management?
       href: release/what-is-release-management.md
-    - name: Release definitions
+    - name: Release pipelines
       href: release/index.md
     - name: Environments
       href: release/environments.md
@@ -171,7 +171,7 @@
       href: library/variable-groups.md
     - name: Task groups
       href: library/task-groups.md
-    - name: Service endpoints
+    - name: Service connections
       href: library/service-endpoints.md
     - name: Secure files
       href: library/secure-files.md

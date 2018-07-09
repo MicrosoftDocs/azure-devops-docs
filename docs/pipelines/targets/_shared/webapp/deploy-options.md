@@ -1,6 +1,6 @@
 ## Deploy to a Government cloud or Azure Stack
 
-Do this by creating a suitable service endpoint:
+Do this by creating a suitable service connection:
 
 * [Azure Government Cloud deployment](../../../library/government-cloud.md)
 * [Azure Stack deployment](../../../library/connect-to-azure.md#connect-stack)

@@ -11,11 +11,13 @@ ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---
 
-
-
 # Restore Package Management NuGet packages in Team Build
 
 **VSTS | TFS 2018 | TFS 2017**
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 This walkthrough will cover setting up an existing build to restore NuGet packages from Package Management feeds. It assumes that you've already:
 
@@ -74,8 +76,8 @@ If your NuGet.config contains feeds in a different VSTS account (*account*.visua
 5. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button
 6. Set the path to your NuGet.config in the **Path to NuGet.config**
 7. In **Credentials for feeds outside this account/collection**, click the **+**
-8. In the service endpoint dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3
-9. Save the service endpoint and the build, then queue a new build
+8. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3
+9. Save the service connection and the build, then queue a new build
 
 ## Q & A
 

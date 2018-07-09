@@ -1,6 +1,6 @@
 ---
 title: Connect to Microsoft Azure
-description: Use an ARM Service Endpoint to connect VSTS or TFS to Microsoft Azure
+description: Use an ARM service connection to connect VSTS or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,11 +12,15 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Create an Azure service endpoint
+# Create an Azure service connection
 
 **VSTS | TFS 2018 | TFS 2017**
 
-This topic explains how to create an Azure Resource Manager Service Endpoint for connecting
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
+This topic explains how to create an Azure Resource Manager service connection for connecting
 to Microsoft Azure resources. It starts by showing the simple case where you select the 
 subscription, and optionally the Azure Resource Group, to which you want to connect. Use this
 approach:
@@ -29,34 +33,34 @@ approach:
 If you have problems using this simple approach (such as no subscriptions being shown in the drop-down list),
 or if you want to further limit users' permissions, you can do so by using a service principal as shown [here](#use-spn).  
 
-## Create an Azure Resource Manager service endpoint
+## Create an Azure Resource Manager service connection
 
 1. Open the **Services** page from the "settings" icon in the top menu bar.
 
    ![Opening the Services page](_img/new-service-endpoint-1.png)
 
-1. Choose **+ New Service Endpoint** and select **Azure Resource Manager**. 
+1. Choose **+ New service connection** and select **Azure Resource Manager**. 
 
-   ![Choosing a service endpoint type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
 
 1. Fill in the following parameters for the endpoint.
 
    | Parameter | Description |
    | --------- | ----------- |
    | Connection Name | Required. The name you will use to refer to this endpoint in task properties. This is not the name of your Azure account or subscription. |
-   | Subscription | Select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service endpoints](../release/azure-rm-endpoint.md). |
+   | Subscription | Select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
    | Resource Group | Leave empty to allow users to access all resources defined within the subscription - users will be able to access only the resources defined within that group. Or select a resource group to which you want to restrict the users' access - users will be able to access only the resources defined within that group. |
 
-1. After the new service endpoint is created:
+1. After the new service connection is created:
 
    * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
    * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
-See also: [Troubleshoot Azure Resource Manager service endpoints](../release/azure-rm-endpoint.md).
+See also: [Troubleshoot Azure Resource Manager service connection](../release/azure-rm-endpoint.md).
 
 <a name="use-spn"></a>
 
-## Create an Azure Resource Manager service endpoint with an existing service principal
+## Create an Azure Resource Manager service connection with an existing service principal
 
 1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
@@ -67,15 +71,15 @@ See also: [Troubleshoot Azure Resource Manager service endpoints](../release/azu
 
    ![Opening the Services page](_img/new-service-endpoint-1.png)
 
-1. Choose **+ New Service Endpoint** and select **Azure Resource Manager**. 
+1. Choose **+ New service connection** and select **Azure Resource Manager**. 
 
-   ![Choosing a service endpoint type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
 
 1. Switch from the simplified version of the dialog to the full version using the link in the dialog.
 
-   ![Opening the full version of the service endpoint dialog](_img/rm-endpoint-link.png)
+   ![Opening the full version of the service  dialog](_img/rm-endpoint-link.png)
 
-1. Enter a user-friendly name to use when referring to this service endpoint connection.
+1. Enter a user-friendly name to use when referring to this service connection.
 
 1. Select the Environment name (such as Azure Cloud, Azure Stack, or an Azure Government Cloud).
 
@@ -92,7 +96,7 @@ See also: [Troubleshoot Azure Resource Manager service endpoints](../release/azu
    * Service Principal Key
    * Tenant ID<p/>
 
-1. After the new service endpoint is created:
+1. After the new service connection is created:
 
    * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** setting of your pipeline.
    * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
@@ -102,7 +106,7 @@ See also: [Troubleshoot Azure Resource Manager service endpoints](../release/azu
    [This blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
    also contains more information about using service principal authentication.
 
-See also: [Troubleshoot Azure Resource Manager service endpoints](../release/azure-rm-endpoint.md).
+See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
 
 <a name="connect-govt"></a>
 

@@ -12,23 +12,23 @@ ms.date: 08/30/2016
 monikerRange: '>= tfs-2017'
 ---
 
-
 # Build: Jenkins Queue Job
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
 
 ![](_img/jenkins-queue-job.png) Queue a job on a Jenkins server
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 ## Demands
 
 None
 
-::: moniker range=">tfs-2018"
-
+::: moniker range="> tfs-2018"
 ## YAML snippet
-
 [!INCLUDE [temp](../_shared/yaml/JenkinsQueueJobV2.md)]
-
 ::: moniker-end
 
 ## Arguments
@@ -42,9 +42,9 @@ None
 </thead>
 
 <tr>
-<td>Jenkins service endpoint</td>
+<td>Jenkins service connection</td>
 <td>
-<p>Select the service endpoint for your Jenkins instance.  To create one, click **Manage** and create a new Jenkins Service Endpoint.</p>
+<p>Select the service connection for your Jenkins instance.  To create one, click **Manage** and create a new Jenkins service connection.</p>
 </td>
 </tr>
 

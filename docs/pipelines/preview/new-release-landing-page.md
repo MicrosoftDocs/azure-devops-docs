@@ -20,9 +20,9 @@ or from the [user profile **Previews** panel](../../project/navigation/preview-f
 
 ## Highlights
 
-* [See a list of the release definitions you release often](#listdefs)
+* [See a list of the release pipelines you release often](#listdefs)
 * [Search for your definitions and favorite them](#favorite) 
-* [Get great artifact traceability - see only the most relevant releases for a definition currently deployed to an environment](#filter) 
+* [Get great artifact traceability - see only the most relevant releases for a pipeline currently deployed to an environment](#filter) 
 * [View the pipeline easily by expanding a release](#pipeline)
 * [Create folders for organization and security](#folders)
 * [Set permissions at a folder level](#folders)
@@ -30,12 +30,12 @@ or from the [user profile **Previews** panel](../../project/navigation/preview-f
 ## Active tab
 
 <a name="listdefs"></a>
-The **Active** tab shows a list of release definitions, and contains links to create or import a definition,
-edit the selected definition, and create a release. 
+The **Active** tab shows a list of release pipelines, and contains links to create or import a pipeline,
+edit the selected pipeline, and create a release. 
 
 ![](_img/releases-page/1.png)
 
-Use the drop-down menu to create a draft release, or to delete, clone, or export the selected release definition. 
+Use the drop-down menu to create a draft release, or to delete, clone, or export the selected release pipeline. 
 
 ![](_img/releases-page/2.png)
 
@@ -57,9 +57,9 @@ Use the drop-down menu to open a release and see the pipeline, abandon an execut
 ##All definitions tab
 
 <a name="folders"></a>
-The **All definitions** tab shows all your release definitions as a folder tree.
+The **All definitions** tab shows all your release pipelines as a folder tree.
 Create folders and set permissions at folder level.
-Use the drop-down menu to create a release or work with the selected definition.
+Use the drop-down menu to create a release or work with the selected pipeline.
 
 ![](_img/releases-page/6.png)
 

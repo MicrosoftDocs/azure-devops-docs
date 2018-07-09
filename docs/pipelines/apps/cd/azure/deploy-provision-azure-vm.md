@@ -14,9 +14,13 @@ monikerRange: '>= tfs-2015'
 
 # CD of an Azure virtual machine using a Resource Manager template
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+::: moniker-end
+
 In just a few steps, you can provision Azure virtual machines (VMs)
 using [Resource Manager (RM) templates](https://azure.microsoft.com/documentation/articles/resource-group-template-deploy/).
-Managing the definitions for virtual machines in this
+Managing the pipelines for virtual machines in this
 way is considered **Infrastructure as code** and is
 a good DevOps practice.
 
@@ -31,15 +35,15 @@ Before you begin, you need a CI build that creates your Azure RM template. To se
 Carry out the following steps to deploy the Azure Resource Group.
 
 1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
-   "**+**" icon to create a new release definition.
+   "**+**" icon to create a new release pipeline.
 
-1. In the **Create release definition** dialog, select the **Empty** template and choose **Next**.
+1. In the **Create release pipeline** dialog, select the **Empty** template and choose **Next**.
 
-1. In the next page, select the build definition you created 
-   earlier and choose **Create**. This creates a new release definition 
+1. In the next page, select the build pipeline you created 
+   earlier and choose **Create**. This creates a new release pipeline 
    with one default environment.
 
-1. In the new release definition, select **+ Add tasks** and add an **Azure Resource Group Deployment** task.
+1. In the new release pipeline, select **+ Add tasks** and add an **Azure Resource Group Deployment** task.
    Optionally edit the name to help identify the task, such as **Provision Windows 2012 R2 VM**.
 
 1. Configure the **Azure Resource Group Deployment** task as follows:
@@ -47,7 +51,7 @@ Carry out the following steps to deploy the Azure Resource Group.
    ![Azure Resource Group Deployment](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2) - Deploy files to an Azure Resource Group.
    
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
-     connection to your Azure subscription. For more details, see [Azure Resource Manager service endpoint](../../../library/connect-to-azure.md).
+     connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
    - **Action**: `Create or Update Resource Group`
    
@@ -77,7 +81,7 @@ Carry out the following steps to deploy the Azure Resource Group.
    environment configuration variables. Encrypt the value
    of **vmpassword** by selecting the "padlock" icon.
 
-1. Enter a name for the release definition and save it.
+1. Enter a name for the release pipeline and save it.
 
 1. Create a new release, select the latest build, and 
    deploy it to the single environment.

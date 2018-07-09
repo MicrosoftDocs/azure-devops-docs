@@ -12,6 +12,10 @@ ms.date: 5/3/2018
 monikerRange: '>= tfs-2018'
 ---
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
+
 # Deployment group phases
 
 [Deployment groups](../release/deployment-groups/index.md) make it easy to define groups of target servers for deployment. Tasks that you define in a deployment group phase run on some or all of the target servers, depending on the arguments you specify for the tasks and the phase itself.
@@ -20,10 +24,10 @@ You can select specific sets of servers from a deployment group to receive the d
 
 # [Web](#tab/web)
 
-You add a deployment group phase in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a release definition. The properties for the deployment group phase are displayed when you select the phase in the editor.
+You add a deployment group phase in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a release pipeline. The properties for the deployment group phase are displayed when you select the phase in the editor.
 
 > [!NOTE]
-> Deployment group phases can only be used in release definitions. They cannot be used in build definitions.
+> Deployment group phases can only be used in release pipelines. They cannot be used in build pipelines.
 
 # [YAML](#tab/yaml)
 

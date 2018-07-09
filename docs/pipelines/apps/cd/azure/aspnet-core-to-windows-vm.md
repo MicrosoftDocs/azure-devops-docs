@@ -19,7 +19,6 @@ ms.custom: mvc
 monikerRange: 'vsts'
 ---
 
-
 # Deploy your ASP.NET Core app to a Windows virtual machine
 
 Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to a Windows virtual machine (VM) in Azure.
@@ -67,13 +66,13 @@ Your code changes automatically appear on your site:
 
  ![Screenshot showing dotnet core template](../../../apps/aspnet/_shared/_img/apply-aspnet-core-build-template.png)
 
- You now see all the tasks that were automatically added to the build definition by the template. These are the tasks that will automatically run every time you push code changes.
+ You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
 1. For the **Agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
-1. Click the **Triggers** tab in the build definition. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
 
-1. Click **Save & queue** to kick off your first build. On the **Save build definition and queue** dialog box, click **Save & queue**.
+1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 
 A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens. Wait for the build to complete and succeed before proceeding to the next section.
 
@@ -90,17 +89,17 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
  ![Screenshot showing release action on build summary](_shared/_img/cicd-get-started-dotnetcore-release.png)
 
-1. In the **Create release definition** wizard, select **IIS Website Deployment** template, and then click **Apply**.
+1. In the **Create release pipeline** wizard, select **IIS Website Deployment** template, and then click **Apply**.
 
  ![Screenshot showing IIS website deployment template](../../../apps/_shared/_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
 
 1. Click the **Tasks** tab, and then click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
- ![iis deployment group in release definition](../../../apps/_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
+ ![iis deployment group in release pipeline](../../../apps/_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
 1. Click **Save**. On the Save dialog box, click **OK**.
 
-1. To test the release definition, click **Release** and then **Create Release**.
+1. To test the release pipeline, click **Release** and then **Create Release**.
 
  ![create release](_shared/_img/create-release.png)
 
@@ -123,7 +122,7 @@ You're ready to collaborate with a team on an ASP.NET Core app with a CI/CD proc
 
 ## Next steps
 
-You've just put your own CI/CD processes in place. You can modify these build and release definitions to meet the needs of your team. To learn more see one of these tutorials:
+You've just put your own CI/CD processes in place. You can modify these build and release pipelines to meet the needs of your team. To learn more see one of these tutorials:
 
 * [Customize CD process](../../../release/define-multistage-release-process.md)
 

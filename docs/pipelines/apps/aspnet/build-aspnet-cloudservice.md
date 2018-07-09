@@ -12,7 +12,6 @@ ms.date: 01/02/2017
 monikerRange: 'vsts'
 ---
 
-
 # Build your Azure cloud service
 
 [!INCLUDE [temp](../../_shared/version.md)]
@@ -28,7 +27,7 @@ For the instructions in this topic, you need an Azure cloud service project in V
 
 ## Define your CI build process
 
-### Create the build definition
+### Create the build pipeline
 
 <ol>
     [!INCLUDE [include](../../_shared/begin-create-build-definition.md)]
@@ -38,7 +37,7 @@ For the instructions in this topic, you need an Azure cloud service project in V
 
     <li>As the repository source, select the team project, repository, and branch.</li>
 
-    <li>Remove the **Azure Cloud Service Deployment task** from the build definition, since you will be deploying the cloud service later through a release definition.</li>
+    <li>Remove the **Azure Cloud Service Deployment task** from the build pipeline, since you will be deploying the cloud service later through a release pipeline.</li>
 </ol>
 
 ### Enable continuous integration (CI)
@@ -47,11 +46,11 @@ On the Triggers tab, enable **continuous integration** (CI). This tells the syst
 
 ## Queue and test the build
 
-Save the build definition and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the cloud service package (.cspkg file) produced by the build. This is the package that your release definition will consume to deploy your app.
+Save the build pipeline and queue a new build by selecting the **Queue new build** command. Once the build is done, click **Artifacts** and then **Explore** to see the cloud service package (.cspkg file) produced by the build. This is the package that your release pipeline will consume to deploy your app.
 
 ## Deploy your app
 
-After you've run the build, you're ready to create a release definition to deploy your app to:
+After you've run the build, you're ready to create a release pipeline to deploy your app to:
 
 * <a href="../cd/deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/_img/azure-cloud-service-deployment-icon.png"/> An Azure cloud service</a>
 

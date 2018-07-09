@@ -10,14 +10,15 @@ ms.date: 04/26/2017
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Secure files
 
-**VSTS**
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+::: moniker-end
 
 Use the **Secure Files** library to store files such as signing certificates, Apple Provisioning Profiles, Android Keystore files, and SSH keys on the server without having to commit them to your source repository. Secure files are defined and managed in the **Library** tab of the **Build &amp; Release** hub.
 
-The contents of the secure files are encrypted and can only be used during the build or release process by referencing them from a task. The secure files are available across multiple build and release definitions in the team project based on the security settings. Secure files follow the [library security model](index.md#security).
+The contents of the secure files are encrypted and can only be used during the build or release process by referencing them from a task. The secure files are available across multiple build and release pipelines in the team project based on the security settings. Secure files follow the [library security model](index.md#security).
 
 There's a size limit of 10 MB for each secure file. 
 
@@ -25,9 +26,9 @@ There's a size limit of 10 MB for each secure file.
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### How can I consume secure files in a Build or Release Definition?
+### How can I consume secure files in a Build or Release Pipeline?
 
-Use the [Download Secure File](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/utility/download-secure-file?view=vsts) Utility task to consume secure files within a Build or Release Definition.
+Use the [Download Secure File](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/utility/download-secure-file?view=vsts) Utility task to consume secure files within a Build or Release Pipeline.
 
 ### How can I create a custom task using secure files?
 
