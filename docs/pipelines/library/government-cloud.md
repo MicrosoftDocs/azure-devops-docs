@@ -30,7 +30,7 @@ and deployment orchestration must execute outside the Government Cloud.
 
 To enable connection to an Azure Government Cloud, you specify it as the **Environment** parameter when you create an
 [Azure Resource Manager service connection](connect-to-azure.md).
-You must use the full version of the endpoint dialog to manually define the connection.
+You must use the full version of the service connection dialog to manually define the connection.
 Before you configure a service connection, you should also ensure you meet all relevant compliance requirements for your application.
 
 You can then use the service connection in your [build and release pipeline tasks](../tasks/index.md).

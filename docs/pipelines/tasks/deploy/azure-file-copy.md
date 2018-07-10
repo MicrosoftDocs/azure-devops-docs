@@ -146,8 +146,7 @@ and browse for **Storage accounts (Classic)** or
   Microsoft accounts such as **joe@live.com** and 
   **joe@hotmail.com** are not supported.
   
-* For Azure Resource Manager VMs, use an **Azure Resource Manager** service 
-  endpoint type. More details at [Automating Azure Resource Group deployment using a Service Principal](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
+* For Azure Resource Manager VMs, use an **Azure Resource Manager** service connection type. See more details at [Automating Azure Resource Group deployment using a Service Principal](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/).
   
 * If you are using an **Azure Resource Manager** 
   service connection type, or an **Azure** service connection 
