@@ -43,8 +43,8 @@ This task can be used in only an [agentless phase](../../process/server-phases.m
 | **Method** | Required. The HTTP method with which the API will be invoked; for example, **GET**, **PUT**, or **UPDATE**. |
 | **Headers** | Optional. The header in JSON format to be attached to the request sent to the API. |
 | **Body** | Optional. The request body for the function call in JSON format. |
-| **Url Suffix and parameters** | The string to append to the baseUrl from endpoint while making the HTTP call | 
-| **Completion Event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
+| **URL suffix and parameters** | The string to append to the baseUrl from the Generic service connection while making the HTTP call | 
+| **Completion event** | Required. How the task reports completion. Can be **API response** (the default) - completion is when function returns success and success criteria evaluates to true, or **Callback** - the Azure function makes a callback to update the timeline record. |
 | **Success criteria** | Optional. How to parse the response body for success. |
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
