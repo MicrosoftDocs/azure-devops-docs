@@ -48,7 +48,7 @@ Add secrets to a key vault:
 
 When you want to access secrets:
 
-* Ensure the Azure endpoint has at least **Get** and **List** permissions
+* Ensure the Azure service connection has at least **Get** and **List** permissions
   on the vault. You can set these permissions in the [Azure portal](https://portal.azure.com):
 
   - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.

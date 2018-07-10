@@ -125,7 +125,7 @@ Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemNam
 - task: GooglePlayRelease@2
   inputs:
     apkFile: '**/*.apk'
-    serviceEndpoint: 'yourGooglePlayServiceEndpointName'
+    serviceEndpoint: 'yourGooglePlayServiceConnectionName'
     track: 'internal'
 ```
 
@@ -141,7 +141,7 @@ Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemNam
 - task: GooglePlayPromote@2
   inputs:
     packageName: 'com.yourCompany.appPackageName'
-    serviceEndpoint: 'yourGooglePlayServiceEndpointName'
+    serviceEndpoint: 'yourGooglePlayServiceConnectionName'
     sourceTrack: 'internal'
     destinationTrack: 'alpha'
 ```
@@ -158,7 +158,7 @@ Add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/item
 - task: GooglePlayIncreaseRollout@1
   inputs:
     packageName: 'com.yourCompany.appPackageName'
-    serviceEndpoint: 'yourGooglePlayServiceEndpointName'
+    serviceEndpoint: 'yourGooglePlayServiceConnectionName'
     userFraction: '0.5' # 0.0 to 1.0 (0% to 100%)
 ```
 
