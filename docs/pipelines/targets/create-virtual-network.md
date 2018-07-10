@@ -253,11 +253,11 @@ You can create any of the above topologies using the SCVMM extension, as shown i
    
 1. In a build or release pipeline, add a new **SCVMM** task.
 
-1. In the **SCVMM** task, select an endpoint for the SCVMM server connection where you want to provision
+1. In the **SCVMM** task, select a service connection for the SCVMM server where you want to provision
    your virtual network and then select **New Virtual machines using Templates/Stored VMs and VHDs**
    to provision your VMs.
 
-   ![Selecting an endpoint for the SCVMM server](_img/virtual-networks/27.png)
+   ![Selecting a service connection for the SCVMM server](_img/virtual-networks/27.png)
 
 1. You can create VMs from templates, stored VMs, and VHD/VHDx.
    Choose the appropriate option and enter the VM names and corresponding source information.
