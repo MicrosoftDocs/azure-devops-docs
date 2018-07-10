@@ -2487,12 +2487,12 @@
     },
     {
       "source_path": "docs/tfvc/create-and-run-unit-tests-vs.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
+      "redirect_url": "/visualstudio/test/developer-testing-scenarios",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/debug-your-app-vs.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/debugger/index",
+      "redirect_url": "/visualstudio/debugger/index",
       "redirect_document_id": false
     },
     {
@@ -3387,7 +3387,7 @@
     },
     {
       "source_path": "docs/build-release/apps/jenkins/build-deploy-jenkins.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-build-deploy-jenkins",
+      "redirect_url": "/azure/virtual-machines/linux/tutorial-build-deploy-jenkins",
       "redirect_document_id": false
     },
     {
@@ -3412,7 +3412,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/deploy/mobile-center-upload.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/appcenter/distribution/",
+      "redirect_url": "/appcenter/distribution/",
       "redirect_document_id": false
     },
     {
@@ -3437,7 +3437,7 @@
     },
     {
       "source_path": "docs/pipelines/tasks/package/xamarin-component-restore.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/cross-platform/troubleshooting/component-nuget",
+      "redirect_url": "/xamarin/cross-platform/troubleshooting/component-nuget",
       "redirect_document_id": false
     },
     {
@@ -3452,12 +3452,12 @@
     },
     {
       "source_path": "docs/design/overview.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
+      "redirect_url": "/visualstudio/modeling/analyze-and-model-your-architecture",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/design/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
+      "redirect_url": "/visualstudio/modeling/analyze-and-model-your-architecture",
       "redirect_document_id": false
     },
     {
@@ -3726,11 +3726,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/build-release/test/test-build.md",
-      "redirect_url": "/vsts/pipelines/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/test/continuous-testing/test-with-unified-agent-and-phases.md",
       "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
@@ -3757,92 +3752,92 @@
     },
     {
       "source_path": "docs/test/developer-testing/developer-testing.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
+      "redirect_url": "/visualstudio/test/developer-testing-scenarios",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
+      "redirect_url": "/visualstudio/test/developer-testing-scenarios",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/getting-started/create-unit-tests-menu.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu",
+      "redirect_url": "/visualstudio/test/create-unit-tests-menu",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/getting-started/getting-started-with-developer-testing.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing",
+      "redirect_url": "/visualstudio/test/getting-started-with-unit-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/attribute-glossary.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/attribute-glossary",
+      "redirect_url": "/visualstudio/test/intellitest-manual/attribute-glossary",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/exploration-bounds.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/exploration-bounds",
+      "redirect_url": "/visualstudio/test/intellitest-manual/exploration-bounds",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/getting-started.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/getting-started",
+      "redirect_url": "/visualstudio/test/intellitest-manual/getting-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/index",
+      "redirect_url": "/visualstudio/test/intellitest-manual/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/input-generation.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/input-generation",
+      "redirect_url": "/visualstudio/test/intellitest-manual/input-generation",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/introduction.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/introduction",
+      "redirect_url": "/visualstudio/test/intellitest-manual/introduction",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/settings-waterfall.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/settings-waterfall",
+      "redirect_url": "/visualstudio/test/intellitest-manual/settings-waterfall",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/static-helper-classes.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/static-helper-classes",
+      "redirect_url": "/visualstudio/test/intellitest-manual/static-helper-classes",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/test-generation.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/test-generation",
+      "redirect_url": "/visualstudio/test/intellitest-manual/test-generation",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/warnings-and-errors.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/warnings-and-errors",
+      "redirect_url": "/visualstudio/test/intellitest-manual/warnings-and-errors",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012",
+      "redirect_url": "/visualstudio/test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/lab-management/use-build-or-rm-instead-of-lab-management.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management",
+      "redirect_url": "/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle",
+      "redirect_url": "/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/lab-management/test-machines/install-configure-test-agents.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents",
+      "redirect_url": "/visualstudio/test/lab-management/install-configure-test-agents",
       "redirect_document_id": false
     },
     {
@@ -4157,7 +4152,7 @@
     },
     {
       "source_path": "docs/test/test-machines/install-configure-test-agents.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents",
+      "redirect_url": "/visualstudio/test/lab-management/install-configure-test-agents",
       "redirect_document_id": false
     },
     {
@@ -6196,12 +6191,12 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "vsts/pipelines/packages/nuget-pack-publish.md",
+      "source_path": "docs/pipelines/packages/nuget-pack-publish.md",
       "redirect_url": "/vsts/pipelines/targets/nuget",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/packages/npm.md",
+      "source_path": "docs/pipelines/packages/npm.md",
       "redirect_url": "/vsts/pipelines/targets/npm",
       "redirect_document_id": false
     },
@@ -7176,12 +7171,12 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "vsts/build-release/apps/cd/aspnet-core-to-azure-webapp.md",
+      "source_path": "docs/build-release/apps/cd/aspnet-core-to-azure-webapp.md",
       "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/apps/cd/aspnet-core-to-azure-webapp.md",
+      "source_path": "docs/pipelines/apps/cd/aspnet-core-to-azure-webapp.md",
       "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": false
     },
@@ -7401,22 +7396,22 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/apps/cd/scvmm/configure-scvmm.md",
+      "source_path": "docs/pipelines/apps/cd/scvmm/configure-scvmm.md",
       "redirect_url": "/vsts/pipelines/targets/scvmm",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/targets/manage-vms-using-scvmm.md",
+      "source_path": "docs/pipelines/targets/manage-vms-using-scvmm.md",
       "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/apps/cd/provision-vm-in-vmware.md",
+      "source_path": "docs/pipelines/apps/cd/provision-vm-in-vmware.md",
       "redirect_url": "/vsts/pipelines/targets/vmware",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/library/azure-stack.md",
+      "source_path": "docs/pipelines/library/azure-stack.md",
       "redirect_url": "/vsts/pipelines/targets/azure-stack",
       "redirect_document_id": false
     },
@@ -7891,17 +7886,17 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/agents/configure-tfs-authentication.md",
+      "source_path": "docs/pipelines/agents/configure-tfs-authentication.md",
       "redirect_url": "/vsts/pipelines/agents/agents",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/apps/cd/deploy-database-sqlscripts.md",
+      "source_path": "docs/pipelines/apps/cd/deploy-database-sqlscripts.md",
       "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/apps/cd/deploy-dacpac-sqlpackage.md",
+      "source_path": "docs/pipelines/apps/cd/deploy-dacpac-sqlpackage.md",
       "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
       "redirect_document_id": false
     }
