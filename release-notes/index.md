@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 6/29/2018
+ms.date: 7/10/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -22,7 +22,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Feature  |Area  |Server  |
 |---------|---------|---------|
 |GVFS - Performance improvements for status|Code|2019|
-|Git Pull Requests – Teams aren’t added by default when creating new pull requests|Code|TBD|
 |Git Pull Requests – Change target branch for an active pull request|Code|TBD|
 |Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
 |Visual Studio Git - Stash|Code|N/A|
@@ -34,7 +33,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Release Management orchestration improvements – Tag based triggers|Release|2019|
 |[Agent-based deployment in Release Management](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/03/deployment-groups/) – Sharing of VMs|Release|2019|
 |Release traceability – Pull request integration|Release|2019|
-|Deployment Groups auto triggering a release for all new Azure VMs|Release|TBD|
 |Updated landing pages for Release|Release|2019|
 |Canvas-based Release Summary views to track progress of releases|Release|2019|
 |Deployment Groups easy configuration of Azure VMs|Release|TBD|
@@ -88,6 +86,21 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+
+        <tr>
+            <td rowspan="11">[10 July 2018](2018/jul-10-vsts.md)</td>
+            <td>Create pull requests without a default team as reviewer</td><td>*2019*</td>
+        </tr>
+        <tr><td>Allow bypassing branch policies without giving up push protection</td><td>*2019*</td></tr>
+        <tr><td>Link to headings within a page</td><td>*2019*</td></tr>
+        <tr><td>View broken links</td><td>*2019*</td></tr>
+        <tr><td>Attach files and images in folders</td><td>*2019*</td></tr>
+        <tr><td>Open page in new tab</td><td>*2019*</td></tr>
+        <tr><td>Build and release with Microsoft-hosted Linux and macOS agents</td><td>N/A</td></tr>
+        <tr><td>Automatically deploy to new targets in a deployment group</td><td>*2019*</td></tr>
+        <tr><td>Hold deployments until gates succeed consistently</td><td>*2019*</td></tr>
+        <tr><td>Get started with pre-installed Package Management</td><td>N/A</td></tr>
+        <tr><td>Connect or disconnect Azure Active Directory as a Project Collection Admin</td><td>N/A</td></tr>
         <tr>
             <td rowspan="17">[19 June 2018](2018/jun-19-vsts.md)</td>
             <td>Preview our new navigation hub</td><td>*2019*</td>
