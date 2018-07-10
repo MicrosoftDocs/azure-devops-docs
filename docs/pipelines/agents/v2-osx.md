@@ -229,7 +229,7 @@ Command:
 
 #### Automatic log on and lock
 
-The service runs when the user logs in. If you want the agent service start when the machine restarts, you can configure the machine it to automatically log on and lock on startup. See [Auto Logon and Lock](http://www.tuaw.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/).
+The service runs when the user logs in. If you want the agent service start when the machine restarts, you can configure the machine it to automatically log on and lock on startup. See [Auto Logon and Lock](https://www.engadget.com/2011/03/07/terminally-geeky-use-automatic-login-more-securely/).
 
 <h3 id="service-update-environment-variables">Update environment variables</h3>
 
