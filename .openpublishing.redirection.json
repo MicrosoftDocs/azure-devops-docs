@@ -607,7 +607,7 @@
     },
     {
       "source_path": "docs/accounts/requirements.md",
-      "redirect_url": "/vsts/tfs-server/requirements",
+      "redirect_url": "/tfs/server/requirements",
       "redirect_document_id": false
     },
     {
@@ -762,7 +762,7 @@
     },
     {
       "source_path": "docs/marketplace/get-hockeyapp.md",
-      "redirect_url": "/vsts/billing/get-hockeyapp",
+      "redirect_url": "https://www.visualstudio.com/app-center/",
       "redirect_document_id": false
     },
     {
@@ -827,7 +827,7 @@
     },
     {
       "source_path": "docs/setup-admin/requirements.md",
-      "redirect_url": "/vsts/tfs-server/requirements",
+      "redirect_url": "/tfs/server/requirements",
       "redirect_document_id": false
     },
     {
@@ -877,7 +877,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/link-msdn-subscription-to-organizational-account-vs.md",
-      "redirect_url": "/vsts/billing/faq-link-msdn-subscription-org-account",
+      "redirect_url": "/visualstudio/subscriptions/vs-alternate-identity",
       "redirect_document_id": false
     },
     {
@@ -967,7 +967,7 @@
     },
     {
       "source_path": "docs/marketplace/buy-vs-subscriptions.md",
-      "redirect_url": "/vsts/billing/vs-subscriptions/buy-vs-subscriptions",
+      "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
       "redirect_document_id": false
     },
     {
@@ -1142,67 +1142,67 @@
     },
     {
       "source_path": "docs/work/scrum/velocity-and-forecasting.md",
-      "redirect_url": "/vsts/report/guidance/team-velocity",
+      "redirect_url": "/vsts/report/dashboards/team-velocity",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/install-tfs/dual-server.md",
-      "redirect_url": "/vsts/tfs-server/install/dual-server",
+      "redirect_url": "/tfs/server/install/dual-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/install-tfs/get-started.md",
-      "redirect_url": "/vsts/tfs-server/install/get-started",
+      "redirect_url": "/tfs/server/install/get-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/install-tfs/overview.md",
-      "redirect_url": "/vsts/tfs-server/install/get-started",
+      "redirect_url": "/tfs/server/install/get-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/install-tfs/multiple-server.md",
-      "redirect_url": "/vsts/tfs-server/install/multiple-server",
+      "redirect_url": "/tfs/server/install/multiple-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/install-tfs/single-server.md",
-      "redirect_url": "/vsts/tfs-server/install/single-server",
+      "redirect_url": "/tfs/server/install/single-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade-tfs/express.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/express",
+      "redirect_url": "/tfs/server/upgrade/express",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade-tfs/get-started.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/get-started",
+      "redirect_url": "/tfs/server/upgrade/get-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade-tfs/upgrade.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/get-started",
+      "redirect_url": "/tfs/server/upgrade/get-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade-tfs/pre-production.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/pre-production",
+      "redirect_url": "/tfs/server/upgrade/pre-production",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade-tfs/pre-upgrade.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/pre-upgrade",
+      "redirect_url": "/tfs/server/upgrade/pre-upgrade",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade-tfs/tfs-2005-to-2015.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/tfs-2005-to-2015",
+      "redirect_url": "/tfs/server/upgrade/tfs-2005-to-2015",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/upgrade-tfs/walkthrough.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/walkthrough",
+      "redirect_url": "/tfs/server/upgrade/walkthrough",
       "redirect_document_id": false
     },
     {
@@ -1237,7 +1237,7 @@
     },
     {
       "source_path": "docs/work/guidance/work-item-field-index.md",
-      "redirect_url": "/vsts/work/guidance/work-item-field",
+      "redirect_url": "/vsts/work/work-items/guidance/work-item-field",
       "redirect_document_id": false
     },
     {
@@ -1247,7 +1247,7 @@
     },
     {
       "source_path": "docs/work/customize/new-form-layout.md",
-      "redirect_url": "/vsts/work/process/new-work-item-experience",
+      "redirect_url": "/vsts/work/customize/process/new-work-item-experience",
       "redirect_document_id": false
     },
     {
@@ -1527,7 +1527,7 @@
     },
     {
       "source_path": "docs/connect/person-centric-features.md",
-      "redirect_url": "/vsts/connect/account-home-pages",
+      "redirect_url": "/vsts/user-guide/account-home-pages",
       "redirect_document_id": false
     },
     {
@@ -1712,7 +1712,7 @@
     },
     {
       "source_path": "docs/package/get-started/feeds/common-identities.md",
-      "redirect_url": "/vsts/package/feeds/common-identities",
+      "redirect_url": "/vsts/package/feeds/feed-permissions",
       "redirect_document_id": false
     },
     {
@@ -1837,7 +1837,7 @@
     },
     {
       "source_path": "docs/tfs-server/overview.md",
-      "redirect_url": "/vsts/tfs-server/admin/config-tfs-resources",
+      "redirect_url": "/tfs/server/admin/config-tfs-resources",
       "redirect_document_id": false
     },
     {
@@ -1907,17 +1907,17 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/connect-to-visual-studio-online.md",
-      "redirect_url": "/vsts/connect/connect-team-projects",
+      "redirect_url": "/vsts/user-guide/connect-team-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/connect-to-visual-studio-online-vs.md",
-      "redirect_url": "/vsts/connect/connect-team-projects",
+      "redirect_url": "/vsts/user-guide/connect-team-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/connect-to-visual-studio-team-services.md",
-      "redirect_url": "/vsts/connect/connect-team-projects",
+      "redirect_url": "/vsts/user-guide/connect-team-projects",
       "redirect_document_id": false
     },
     {
@@ -2012,7 +2012,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/add-sharepoint-to-tfs.md",
-      "redirect_url": "/vsts/tfs-server/admin/add-sharepoint-to-tfs",
+      "redirect_url": "/tfs/server/admin/add-sharepoint-to-tfs",
       "redirect_document_id": false
     },
     {
@@ -2022,32 +2022,32 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/back-up-restore-tfs.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/back-up-restore-tfs",
+      "redirect_url": "/tfs/server/admin/backup/back-up-restore-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/config-backup-sched-plan.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/config-backup-sched-plan",
+      "redirect_url": "/tfs/server/admin/backup/config-backup-sched-plan",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/manually-backup-tfs.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/manually-backup-tfs",
+      "redirect_url": "/tfs/server/admin/backup/manually-backup-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/refresh-data-caches.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/refresh-data-caches",
+      "redirect_url": "/tfs/server/admin/backup/refresh-data-caches",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/restore-application-tier-server.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/restore-application-tier-server",
+      "redirect_url": "/tfs/server/admin/backup/restore-application-tier-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/restore-data-different-instance.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/restore-data-different-instance",
+      "redirect_url": "/tfs/server/admin/backup/restore-data-different-instance",
       "redirect_document_id": false
     },
     {
@@ -2057,22 +2057,22 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/restore-lab-management-components.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/restore-lab-management-components",
+      "redirect_url": "/tfs/server/admin/backup/restore-lab-management-components",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/tut-single-svr-home.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/tut-single-svr-home",
+      "redirect_url": "/tfs/server/admin/backup/tut-single-svr-home",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/tut-single-svr-install-config-tfs.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/tut-single-svr-install-config-tfs",
+      "redirect_url": "/tfs/server/admin/backup/tut-single-svr-install-config-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/tut-single-svr-prep-new-hw.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/tut-single-svr-prep-new-hw",
+      "redirect_url": "/tfs/server/admin/backup/tut-single-svr-prep-new-hw",
       "redirect_document_id": false
     },
     {
@@ -2082,37 +2082,37 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/backup/tut-single-svr-restore-dbs.md",
-      "redirect_url": "/vsts/tfs-server/admin/backup/tut-single-svr-restore-dbs",
+      "redirect_url": "/tfs/server/admin/backup/tut-single-svr-restore-dbs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/change-caching-app-tier.md",
-      "redirect_url": "/vsts/tfs-server/admin/change-caching-app-tier",
+      "redirect_url": "/tfs/server/admin/change-caching-app-tier",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/change-deployment.md",
-      "redirect_url": "/vsts/tfs-server/admin/change-deployment",
+      "redirect_url": "/tfs/server/admin/change-deployment",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/change-permission-levels.md",
-      "redirect_url": "/vsts/tfs-server/admin/change-permission-levels",
+      "redirect_url": "/vsts/organizations/security/change-individual-permissions",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/change-service-account-or-password-sql-reporting.md",
-      "redirect_url": "/vsts/tfs-server/admin/change-service-account-or-password-sql-reporting",
+      "redirect_url": "/tfs/server/admin/change-service-account-or-password-sql-reporting",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/change-service-account-password.md",
-      "redirect_url": "/vsts/tfs-server/admin/change-service-account-password",
+      "redirect_url": "/tfs/server/admin/change-service-account-password",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/config-ent-sharepoint0710-dashboards.md",
-      "redirect_url": "/vsts/tfs-server/admin/config-ent-sharepoint0710-dashboards",
+      "redirect_url": "/tfs/server/admin/config-ent-sharepoint0710-dashboards",
       "redirect_document_id": false
     },
     {
@@ -2122,17 +2122,17 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/config-tfs-resources.md",
-      "redirect_url": "/vsts/tfs-server/admin/config-tfs-resources",
+      "redirect_url": "/tfs/server/admin/config-tfs-resources",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/manage-file-types.md",
-      "redirect_url": "/vsts/tfs-server/admin/manage-file-types",
+      "redirect_url": "/tfs/server/admin/manage-file-types",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/manage-team-project-collections.md",
-      "redirect_url": "/vsts/tfs-server/admin/manage-team-project-collections",
+      "redirect_url": "/tfs/server/admin/manage-team-project-collections",
       "redirect_document_id": false
     },
     {
@@ -2142,22 +2142,22 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/move-across-domains.md",
-      "redirect_url": "/vsts/tfs-server/admin/move-across-domains",
+      "redirect_url": "/tfs/server/admin/move-across-domains",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/move-clone-hardware.md",
-      "redirect_url": "/vsts/tfs-server/admin/move-clone-hardware",
+      "redirect_url": "/tfs/server/admin/move-clone-hardware",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/move-project-collection.md",
-      "redirect_url": "/vsts/tfs-server/admin/move-project-collection",
+      "redirect_url": "/tfs/server/admin/move-project-collection",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/rebuild-client-cache.md",
-      "redirect_url": "/vsts/tfs-server/admin/rebuild-client-cache",
+      "redirect_url": "/tfs/server/admin/rebuild-client-cache",
       "redirect_document_id": false
     },
     {
@@ -2167,17 +2167,17 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/setup-ad-groups.md",
-      "redirect_url": "/vsts/tfs-server/admin/setup-ad-groups",
+      "redirect_url": "/tfs/server/admin/setup-ad-groups",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/setup-customize-alerts.md",
-      "redirect_url": "/vsts/tfs-server/admin/setup-customize-alerts",
+      "redirect_url": "/tfs/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/setup-secure-sockets-layer.md",
-      "redirect_url": "/vsts/tfs-server/admin/setup-secure-sockets-layer",
+      "redirect_url": "/tfs/server/admin/setup-secure-sockets-layer",
       "redirect_document_id": false
     },
     {
@@ -2187,32 +2187,32 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/stop-start-stuff.md",
-      "redirect_url": "/vsts/tfs-server/admin/stop-start-stuff",
+      "redirect_url": "/tfs/server/admin/stop-start-stuff",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/upgrade.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/upgrade",
+      "redirect_url": "/tfs/server/upgrade/upgrade",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/background-job-agent.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/background-job-agent",
+      "redirect_url": "/tfs/server/upgrade/background-job-agent",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/examples-complex-topo.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/examples-complex-topo",
+      "redirect_url": "/tfs/server/upgrade/examples-complex-topo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/examples-moderate-topo.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/examples-moderate-topo",
+      "redirect_url": "/tfs/server/upgrade/examples-moderate-topo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/examples-simple-topo.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/examples-simple-topo",
+      "redirect_url": "/tfs/server/upgrade/examples-simple-topo",
       "redirect_document_id": false
     },
     {
@@ -2227,27 +2227,27 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/sql-server-databases.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/sql-server-databases",
+      "redirect_url": "/tfs/server/upgrade/sql-server-databases",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/tfs-concepts.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/tfs-concepts",
+      "redirect_url": "/tfs/server/upgrade/tfs-concepts",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/command-line/open-admin-console.md",
-      "redirect_url": "/vsts/tfs-server/command-line/open-admin-console",
+      "redirect_url": "/tfs/server/ref/command-line/open-admin-console",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/command-line/tfsconfig-cmd.md",
-      "redirect_url": "/vsts/tfs-server/command-line/tfsconfig-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfsconfig-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/command-line/tfsdeleteproject-cmd.md",
-      "redirect_url": "/vsts/tfs-server/command-line/tfsdeleteproject-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfsdeleteproject-cmd",
       "redirect_document_id": false
     },
     {
@@ -2257,102 +2257,102 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/command-line/tfssecurity-cmd.md",
-      "redirect_url": "/vsts/tfs-server/command-line/tfssecurity-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfssecurity-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/command-line/tfsservicecontrol-cmd.md",
-      "redirect_url": "/vsts/tfs-server/command-line/tfsservicecontrol-cmd",
+      "redirect_url": "/tfs/server/ref/command-line/tfsservicecontrol-cmd",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/create-tfs-farm.md",
-      "redirect_url": "/vsts/tfs-server/install/create-tfs-farm",
+      "redirect_url": "/tfs/server/install/create-tfs-farm",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/dual-server.md",
-      "redirect_url": "/vsts/tfs-server/install/dual-server",
+      "redirect_url": "/tfs/server/install/dual-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/get-started.md",
-      "redirect_url": "/vsts/tfs-server/install/get-started",
+      "redirect_url": "/tfs/server/install/get-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/install-2013/add-tfs-svc-acct-report-svr.md",
-      "redirect_url": "/vsts/tfs-server/install/install-2013/add-tfs-svc-acct-report-svr",
+      "redirect_url": "/tfs/server/install/install-2013/add-tfs-svc-acct-report-svr",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/install-2013/config-tfs-advanced.md",
-      "redirect_url": "/vsts/tfs-server/install/install-2013/config-tfs-advanced",
+      "redirect_url": "/tfs/server/install/install-2013/config-tfs-advanced",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/install-2013/config-tfs-basic.md",
-      "redirect_url": "/vsts/tfs-server/install/install-2013/config-tfs-basic",
+      "redirect_url": "/tfs/server/install/install-2013/config-tfs-basic",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/install-2013/config-tfs-standard.md",
-      "redirect_url": "/vsts/tfs-server/install/install-2013/config-tfs-standard",
+      "redirect_url": "/tfs/server/install/install-2013/config-tfs-standard",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/install-2013/install-tfs.md",
-      "redirect_url": "/vsts/tfs-server/install/install-2013/install-tfs",
+      "redirect_url": "/tfs/server/install/install-2013/install-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/install-proxy-setup-remote.md",
-      "redirect_url": "/vsts/tfs-server/install/install-proxy-setup-remote",
+      "redirect_url": "/tfs/server/install/install-proxy-setup-remote",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/multiple-server.md",
-      "redirect_url": "/vsts/tfs-server/install/multiple-server",
+      "redirect_url": "/tfs/server/install/multiple-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/sharepoint/config-enterprise-app-def.md",
-      "redirect_url": "/vsts/tfs-server/install/sharepoint/config-enterprise-app-def",
+      "redirect_url": "/tfs/server/install/sharepoint/config-enterprise-app-def",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/sharepoint/install-sharepoint.md",
-      "redirect_url": "/vsts/tfs-server/install/sharepoint/install-sharepoint",
+      "redirect_url": "/tfs/server/install/sharepoint/install-sharepoint",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/sharepoint/move-sharepoint-new-hardware.md",
-      "redirect_url": "/vsts/tfs-server/install/sharepoint/move-sharepoint-new-hardware",
+      "redirect_url": "/tfs/server/install/sharepoint/move-sharepoint-new-hardware",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/sharepoint/setup-remote-sharepoint.md",
-      "redirect_url": "/vsts/tfs-server/install/sharepoint/setup-remote-sharepoint",
+      "redirect_url": "/tfs/server/install/sharepoint/setup-remote-sharepoint",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/sharepoint/verify-sharepoint.md",
-      "redirect_url": "/vsts/tfs-server/install/sharepoint/verify-sharepoint",
+      "redirect_url": "/tfs/server/install/sharepoint/verify-sharepoint",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/single-server.md",
-      "redirect_url": "/vsts/tfs-server/install/single-server",
+      "redirect_url": "/tfs/server/install/single-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/sql-server/collation-requirements.md",
-      "redirect_url": "/vsts/tfs-server/install/sql-server/collation-requirements",
+      "redirect_url": "/tfs/server/install/sql-server/collation-requirements",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/install/sql-server/install-sql-server.md",
-      "redirect_url": "/vsts/tfs-server/install/sql-server/install-sql-server",
+      "redirect_url": "/tfs/server/install/sql-server/install-sql-server",
       "redirect_document_id": false
     },
     {
@@ -2362,77 +2362,77 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/install/sql-server/use-always-on-groups.md",
-      "redirect_url": "/vsts/tfs-server/install/sql-server/use-always-on-groups",
+      "redirect_url": "/tfs/server/install/sql-server/use-always-on-groups",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/change-product-key.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/change-product-key",
+      "redirect_url": "/tfs/server/upgrade/change-product-key",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/express.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/express",
+      "redirect_url": "/tfs/server/upgrade/express",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/get-started.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/get-started",
+      "redirect_url": "/tfs/server/upgrade/get-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/pre-production.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/pre-production",
+      "redirect_url": "/tfs/server/upgrade/pre-production",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/pre-upgrade.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/pre-upgrade",
+      "redirect_url": "/tfs/server/upgrade/pre-upgrade",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/run-upgrade-wizard.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/run-upgrade-wizard",
+      "redirect_url": "/tfs/server/upgrade/run-upgrade-wizard",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/tfs-2005-to-2015.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/tfs-2005-to-2015",
+      "redirect_url": "/tfs/server/upgrade/tfs-2005-to-2015",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/upgrade-2013/backup-and-restore-data.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/upgrade-2013/backup-and-restore-data",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/backup-and-restore-data",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/upgrade-2013/new-app-tier-hardware.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/upgrade-2013/new-app-tier-hardware",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/new-app-tier-hardware",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/upgrade-2013/same-app-tier-hardware.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/upgrade-2013/same-app-tier-hardware",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/same-app-tier-hardware",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/upgrade-2013/setup-sql-server.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/upgrade-2013/setup-sql-server",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/setup-sql-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/upgrade-2013/upgrade-2013-requirements.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/upgrade-2013/upgrade-2013-requirements",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/upgrade-2013-requirements",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/upgrade-2013/use-same-sharepoint-site.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/upgrade-2013/use-same-sharepoint-site",
+      "redirect_url": "/tfs/server/upgrade/upgrade-2013/use-same-sharepoint-site",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/tfs/upgrade/walkthrough.md",
-      "redirect_url": "/vsts/tfs-server/upgrade/walkthrough",
+      "redirect_url": "/tfs/server/upgrade/walkthrough",
       "redirect_document_id": false
     },
     {
@@ -2442,7 +2442,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-account-vs",
+      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
@@ -2487,12 +2487,12 @@
     },
     {
       "source_path": "docs/tfvc/create-and-run-unit-tests-vs.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
+      "redirect_url": "/visualstudio/test/developer-testing-scenarios",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/debug-your-app-vs.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/debugger/index",
+      "redirect_url": "/visualstudio/debugger/index",
       "redirect_document_id": false
     },
     {
@@ -2667,7 +2667,7 @@
     },
     {
       "source_path": "docs/connect-to-vs.md",
-      "redirect_url": "/vsts/connect/connect-team-projects",
+      "redirect_url": "/vsts/user-guide/connect-team-projects",
       "redirect_document_id": false
     },
     {
@@ -2752,7 +2752,7 @@
     },
     {
       "source_path": "docs/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-account-vs",
+      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
@@ -3217,7 +3217,7 @@
     },
     {
       "source_path": "docs/whats-new.md",
-      "redirect_url": "/vsts/tfs-server/whats-new",
+      "redirect_url": "/tfs/server/whats-new",
       "redirect_document_id": false
     },
     {
@@ -3312,7 +3312,7 @@
     },
     {
       "source_path": "docs/work/troubleshoot/resolve-backlog-reorder-issues.md",
-      "redirect_url": "/vsts/backlogs/resolve-backlog-reorder-issues",
+      "redirect_url": "/vsts/work/backlogs/resolve-backlog-reorder-issues",
       "redirect_document_id": false
     },
     {
@@ -3387,7 +3387,7 @@
     },
     {
       "source_path": "docs/build-release/apps/jenkins/build-deploy-jenkins.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-build-deploy-jenkins",
+      "redirect_url": "/azure/virtual-machines/linux/tutorial-build-deploy-jenkins",
       "redirect_document_id": false
     },
     {
@@ -3412,7 +3412,7 @@
     },
     {
       "source_path": "docs/build-release/tasks/deploy/mobile-center-upload.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/appcenter/distribution/",
+      "redirect_url": "/appcenter/distribution/",
       "redirect_document_id": false
     },
     {
@@ -3437,7 +3437,7 @@
     },
     {
       "source_path": "docs/pipelines/tasks/package/xamarin-component-restore.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/cross-platform/troubleshooting/component-nuget",
+      "redirect_url": "/xamarin/cross-platform/troubleshooting/component-nuget",
       "redirect_document_id": false
     },
     {
@@ -3452,12 +3452,12 @@
     },
     {
       "source_path": "docs/design/overview.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
+      "redirect_url": "/visualstudio/modeling/analyze-and-model-your-architecture",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/design/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture",
+      "redirect_url": "/visualstudio/modeling/analyze-and-model-your-architecture",
       "redirect_document_id": false
     },
     {
@@ -3726,11 +3726,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/build-release/test/test-build.md",
-      "redirect_url": "/vsts/pipelines/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/test/continuous-testing/test-with-unified-agent-and-phases.md",
       "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
@@ -3757,92 +3752,92 @@
     },
     {
       "source_path": "docs/test/developer-testing/developer-testing.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
+      "redirect_url": "/visualstudio/test/developer-testing-scenarios",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios",
+      "redirect_url": "/visualstudio/test/developer-testing-scenarios",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/getting-started/create-unit-tests-menu.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu",
+      "redirect_url": "/visualstudio/test/create-unit-tests-menu",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/getting-started/getting-started-with-developer-testing.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing",
+      "redirect_url": "/visualstudio/test/getting-started-with-unit-testing",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/attribute-glossary.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/attribute-glossary",
+      "redirect_url": "/visualstudio/test/intellitest-manual/attribute-glossary",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/exploration-bounds.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/exploration-bounds",
+      "redirect_url": "/visualstudio/test/intellitest-manual/exploration-bounds",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/getting-started.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/getting-started",
+      "redirect_url": "/visualstudio/test/intellitest-manual/getting-started",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/index",
+      "redirect_url": "/visualstudio/test/intellitest-manual/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/input-generation.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/input-generation",
+      "redirect_url": "/visualstudio/test/intellitest-manual/input-generation",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/introduction.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/introduction",
+      "redirect_url": "/visualstudio/test/intellitest-manual/introduction",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/settings-waterfall.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/settings-waterfall",
+      "redirect_url": "/visualstudio/test/intellitest-manual/settings-waterfall",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/static-helper-classes.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/static-helper-classes",
+      "redirect_url": "/visualstudio/test/intellitest-manual/static-helper-classes",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/test-generation.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/test-generation",
+      "redirect_url": "/visualstudio/test/intellitest-manual/test-generation",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/developer-testing/intellitest-manual/warnings-and-errors.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/intellitest-manual/warnings-and-errors",
+      "redirect_url": "/visualstudio/test/intellitest-manual/warnings-and-errors",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012",
+      "redirect_url": "/visualstudio/test/lab-management/upgrade-scvmm-2008-r2-scvmm-2012",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/lab-management/use-build-or-rm-instead-of-lab-management.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management",
+      "redirect_url": "/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle",
+      "redirect_url": "/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/test/lab-management/test-machines/install-configure-test-agents.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents",
+      "redirect_url": "/visualstudio/test/lab-management/install-configure-test-agents",
       "redirect_document_id": false
     },
     {
@@ -4157,7 +4152,7 @@
     },
     {
       "source_path": "docs/test/test-machines/install-configure-test-agents.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents",
+      "redirect_url": "/visualstudio/test/lab-management/install-configure-test-agents",
       "redirect_document_id": false
     },
     {
@@ -4552,7 +4547,7 @@
     },
     {
       "source_path": "docs/work/reference/expand-list-items-and-exclude-groups-from-lists.md",
-      "redirect_url": "/vsts/work/customize/reference/cexpand-list-items-and-exclude-groups-from-lists",
+      "redirect_url": "/vsts/work/customize/reference/expand-list-items-and-exclude-groups-from-lists",
       "redirect_document_id": false
     },
     {
@@ -5141,8 +5136,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/work/guidance/cmmi/guidance-create-solution-upgrade.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-create-solution-upgrade",
+      "source_path": "docs/work/guidance/cmmi/guidance-create-solution-architecture.md",
+      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-create-solution-archtecture",
       "redirect_document_id": false
     },
     {
@@ -5387,7 +5382,7 @@
     },
     {
       "source_path": "docs/git/concepts/pull-requests.md",
-      "redirect_url": "/vsts/git/concepts/pull-requests-overview",
+      "redirect_url": "/vsts/git/pull-requests-overview",
       "redirect_document_id": false
     },
     {
@@ -5412,7 +5407,7 @@
     },
     {
       "source_path": "docs/report/address-inaccuracies-published-for-summary-values.md",
-      "redirect_url": "/vsts/report/dashboards/address-inaccuracies-published-for-summary-values",
+      "redirect_url": "/vsts/report/sql-reports/address-inaccuracies-published-for-summary-values",
       "redirect_document_id": false
     },
     {
@@ -5592,7 +5587,7 @@
     },
     {
       "source_path": "docs/billing/link-msdn-subscription-concept.md",
-      "redirect_url": "/vsts/billing/faq-vs-subscriptions",
+      "redirect_url": "/visualstudio/subscriptions/vscloud-overview",
       "redirect_document_id": false
     },
     {
@@ -5607,7 +5602,7 @@
     },
     {
       "source_path": "docs/billing/link-msdn-subscription-to-organizational-account-vs.md",
-      "redirect_url": "/vsts/billing/faq-link-msdn-subscription-org-account",
+      "redirect_url": "/visualstudio/subscriptions/vs-alternate-identity",
       "redirect_document_id": false
     },
     {
@@ -6196,12 +6191,12 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "vsts/pipelines/packages/nuget-pack-publish.md",
+      "source_path": "docs/pipelines/packages/nuget-pack-publish.md",
       "redirect_url": "/vsts/pipelines/targets/nuget",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/packages/npm.md",
+      "source_path": "docs/pipelines/packages/npm.md",
       "redirect_url": "/vsts/pipelines/targets/npm",
       "redirect_document_id": false
     },
@@ -7175,13 +7170,13 @@
       "redirect_url": "/vsts/pipelines",
       "redirect_document_id": true
     },
-          {
-      "source_path": "vsts/build-release/apps/cd/aspnet-core-to-azure-webapp.md",
+    {
+      "source_path": "docs/build-release/apps/cd/aspnet-core-to-azure-webapp.md",
       "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": false
-    },  
+    },
     {
-      "source_path": "vsts/pipelines/apps/cd/aspnet-core-to-azure-webapp.md",
+      "source_path": "docs/pipelines/apps/cd/aspnet-core-to-azure-webapp.md",
       "redirect_url": "/vsts/pipelines/targets/webapp",
       "redirect_document_id": false
     },
@@ -7401,22 +7396,22 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/apps/cd/scvmm/configure-scvmm.md",
+      "source_path": "docs/pipelines/apps/cd/scvmm/configure-scvmm.md",
       "redirect_url": "/vsts/pipelines/targets/scvmm",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/targets/manage-vms-using-scvmm.md",
+      "source_path": "docs/pipelines/targets/manage-vms-using-scvmm.md",
       "redirect_url": "/vsts/pipelines/",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/apps/cd/provision-vm-in-vmware.md",
+      "source_path": "docs/pipelines/apps/cd/provision-vm-in-vmware.md",
       "redirect_url": "/vsts/pipelines/targets/vmware",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/library/azure-stack.md",
+      "source_path": "docs/pipelines/library/azure-stack.md",
       "redirect_url": "/vsts/pipelines/targets/azure-stack",
       "redirect_document_id": false
     },
@@ -7891,19 +7886,19 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/agents/configure-tfs-authentication.md",
+      "source_path": "docs/pipelines/agents/configure-tfs-authentication.md",
       "redirect_url": "/vsts/pipelines/agents/agents",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/apps/cd/deploy-database-sqlscripts.md",
+      "source_path": "docs/pipelines/apps/cd/deploy-database-sqlscripts.md",
       "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
       "redirect_document_id": false
     },
     {
-      "source_path": "vsts/pipelines/apps/cd/deploy-dacpac-sqlpackage.md",
+      "source_path": "docs/pipelines/apps/cd/deploy-dacpac-sqlpackage.md",
       "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
       "redirect_document_id": false
-    }    
+    }
   ]
 }
