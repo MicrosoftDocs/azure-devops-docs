@@ -7,7 +7,7 @@ ms.assetid: 125D4C50-1098-4A4D-81B8-97501BE47FC5
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/08/2018
+ms.date: 07/09/2018
 ms.topic: conceptual
 layout: LandingPage
 monikerRange: '>= tfs-2013'
@@ -27,13 +27,13 @@ Learn how to build your app and deploy it to your choice of Azure service.
 ### Use Azure DevOps Project to deploy your App to Azure
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
-<div class="ico48Link"><a href="../pipelines/apps/cd/azure/azure-devops-project-aspnetcore.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div>
-<div class="ico48Link"><a href="../pipelines/apps/cd/azure/azure-devops-project-go.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_go.svg"><span>Go</span></a></div>
-<div class="ico48Link"><a href="../pipelines/apps/cd/azure/azure-devops-project-java.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_java.svg"><span>Java</span></a></div>
-<div class="ico48Link"><a href="../pipelines/apps/cd/azure/azure-devops-project-php.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_php.svg"><span>PHP</span></a></div>
-<div class="ico48Link"><a href="../pipelines/apps/cd/azure/azure-devops-project-python.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_python.svg"><span>Python</span></a></div>
-<div class="ico48Link"><a href="../pipelines/apps/cd/azure/azure-devops-project-nodejs.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_nodejs.svg"><span>Node.js</span></a></div>
-<div class="ico48Link"><a href="../pipelines/apps/cd/azure/azure-devops-project-ruby.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_ruby.svg"><span>Ruby</span></a></div>
+<div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-aspnet-core"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div>
+<div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-go"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_go.svg"><span>Go</span></a></div>
+<div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-java"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_java.svg"><span>Java</span></a></div>
+<div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-php"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_php.svg"><span>PHP</span></a></div>
+<div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-python"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_python.svg"><span>Python</span></a></div>
+<div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-nodejs"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_nodejs.svg"><span>Node.js</span></a></div>
+<div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-ruby"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_ruby.svg"><span>Ruby</span></a></div>
 </div>
 
 ### Use VSTS to deploy your App to Azure
@@ -45,11 +45,11 @@ Learn how to build your app and deploy it to your choice of Azure service.
 
 ## Step-by-Step Tutorials  
 
-* [Azure DevOps Project for GitHub](../pipelines/actions/azure-devops-project-github.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
-* [Azure DevOps Project for VMs](../pipelines/actions/azure-devops-project-vms.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
-* [Azure DevOps Project for SQL Database](../pipelines/actions/azure-devops-project-sqldb.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
-* [Azure DevOps Project for AKS](../pipelines/actions/azure-devops-project-aks.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
-* [Azure DevOps Project for Service Fabric](../pipelines/actions/azure-devops-project-servicefabric.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
+* [Azure DevOps Project for GitHub](/azure/devops-project/azure-devops-project-github)
+* [Azure DevOps Project for VMs](/azure/devops-project/azure-devops-project-vms)
+* [Azure DevOps Project for SQL Database](/azure/devops-project/azure-devops-project-sql-database)
+* [Azure DevOps Project for AKS](/azure/devops-project/azure-devops-project-aks)
+* [Azure DevOps Project for Service Fabric](/azure/devops-project/azure-devops-project-service-fabric)
 * [Set up multi-stage release](../pipelines/release/define-multistage-release-process.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 * [CI builds for Git in VSTS](../pipelines/build/ci-build-git.md?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json)
 * [Deploy apps to Azure App Service with VSTS and CI/CD](https://docs.microsoft.com/learn/deploy-apps-to-azure/index)

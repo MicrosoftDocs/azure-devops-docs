@@ -26,7 +26,7 @@ Built with Java teams in mind, VSTS offers an open, cloud-hosted hub for Java De
 
 Get started with VSTS and Java using your IDE and your tools.
 
- - [Java DevOps with Azure](../pipelines/apps/cd/azure/azure-devops-project-java.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
+ - [Java DevOps with Azure](/azure/devops-project/azure-devops-project-java.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Android Studio plugin](../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Eclipse plugin](../git/share-your-code-in-git-eclipse.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json)
  - [IntelliJ IDEA plugin](../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json)
@@ -59,7 +59,7 @@ Check out the [Java ALM channel on YouTube](https://www.youtube.com/channel/UCJX
 
 Learn the basics of CI/CD for your Java app using VSTS and a variety of tools.
 
- - [Use VSTS with GitHub for Azure DevOps](../pipelines/actions/azure-devops-project-github.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
+ - [Use VSTS with GitHub for Azure DevOps](/azure/devops-project/azure-devops-project-github.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
 
 ## Reference
 

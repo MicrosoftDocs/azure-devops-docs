@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: douge
 author: erickson-doug
 ms.reviewer: dastahel
-ms.date: 01/31/2018
+ms.date: 07/10/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -23,8 +23,11 @@ and Git version control systems.
 For information on connecting to a VSTS Git repo from Eclipse with TEE, read [Share your code with Eclipse and VSTS Git](/vsts/git/share-your-code-in-git-eclipse).
 
 ## Eclipse Update Site for Latest Release
-The latest release of TEE can always be installed in Eclipse using this update site URL:
-* **https://marketplace.eclipse.org/content/team-explorer-everywhere**
+The latest release of [TEE](https://marketplace.eclipse.org/content/team-explorer-everywhere) can always be installed in Eclipse using this update site URL:
+
+* **https://dl.microsoft.com/eclipse**
+
+
 
 ## Standalone Download Links
 
