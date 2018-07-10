@@ -53,7 +53,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 
 1. Specify your Azure subscription end point and the name of the vault containing your secrets.
 
-   Ensure the Azure endpoint has at least **Get** and **List** management permissions on the vault for secrets.
+   Ensure the Azure service connection has at least **Get** and **List** management permissions on the vault for secrets.
    You can enable VSTS to set these permissions by choosing **Authorize** next to the vault name.
    Alternatively, you can set the permissions manually in the [Azure portal](https://portal.azure.com):
 

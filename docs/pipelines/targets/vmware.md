@@ -74,8 +74,7 @@ the agent machine:
      in Visual Studio Marketplace, upload it to your 
      Team Foundation Server, and install it.<p />
 
-1. Follow these steps to create a vCenter Server Service 
-   endpoint in your project:
+1. Follow these steps to create a vCenter Server service connection in your project:
 
    * Open your VSTS or TFS project in 
      your web browser. Choose the **Settings** icon in the menu bar and select **Services**.
