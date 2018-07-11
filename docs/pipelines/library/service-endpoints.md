@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -17,7 +17,9 @@ monikerRange: '>= tfs-2015'
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
+
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
 ::: moniker-end
 
 You will typically need to connect to external and remote services to execute tasks
@@ -37,7 +39,7 @@ Service connections are created at project scope. A service connection created i
 
 <a name="create-new"></a>
 
-## Create and use a service connection
+## Create a service connection
 
 1. Open the **Services** page from the "settings" icon in the top menu bar.
 
@@ -52,15 +54,52 @@ Service connections are created at project scope. A service connection created i
 
    ![Azure Resource Manager connection dialog](_img/connection-dialog-arm.png)
 
-1. After the new service connection is created:
+1. Choose **OK** to create the connection.
 
-   * If you are using it in the UI, select the connection name you assigned in the **Azure subscription** (or the equivalent connection name) setting of your pipeline.
+> You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
+ 
+<a name="security"></a>
 
-   ![If you are using it in the UI](_img/ui-connection-setting.png)
+## Secure a service connection
 
-   * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** (or the equivalent connection name) value.
+You can control who can define new service connections in a library, and who can use an existing service connection.
+**Roles** are defined for  service connections, and **membership** in these roles governs the operations you can perform on those service connections.
 
-   ![If you are using it in YAML](_img/yaml-connection-setting.png)
+| Role on a library service connection | Purpose |
+|------------------------------------|---------|
+| User | Members of this role can use the service connection when authoring build or release pipelines. |
+| Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection. The user that created the service connection is automatically added to the Administrator role for that service connection.
+
+Two special groups called **Service connection administrators** and **Service connection creators** are added to every project. 
+Members of the Service connection administrators group can manage all service connections. By default, project administrators are added as members of this group. This group is also added as an administrator to every service connection created.
+Members of the Service connection creators group can create new service connections. By default, project contributors are added as members of this group. 
+
+To modify the security for a connection:
+
+1. Open the **Services** page from the "settings" icon in the top menu bar.
+
+   ![Opening the Services page](_img/new-service-endpoint-1.png)
+
+1. Choose the **Roles** link to open the security tab.
+
+   ![Editing the roles](_img/endpoint-roles.png)
+
+1. Add users or groups, turn on and off inheritance, or change the role for existing users and groups as required.
+
+
+## Use a service connection
+
+After the new service connection is created:
+
+* If you are using it in the UI, select the connection name you assigned in the **Azure subscription** (or the equivalent connection name) setting of your pipeline.
+
+  ![If you are using it in the UI](_img/ui-connection-setting.png)
+
+* If you are using it in YAML, copy the connection name into your code as the **azureSubscription** (or the equivalent connection name) value.
+
+  ![If you are using it in YAML](_img/yaml-connection-setting.png)
+
+> You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
 <a name="ep-types"></a>
 
@@ -511,6 +550,8 @@ Defines and secures a connection to Visual Studio App Center.
 
 [How do I create a new service connection?](#create-new)
 
+*****
+
 ## Extensions for other service connections
 
 Other service connection types and tasks can be installed in VSTS
@@ -544,21 +585,6 @@ available through extensions are:
   Services or Team Foundation Server to provision,
   start, stop, or snapshot VMware virtual machines.
 
-For information about creating your own custom extensions, see
-[Overview of extensions for VSTS](../../integrate/index.md).
-
-<h2 id="security">Service connection security</h2>
-
-You can control who can define new service connections in a library, and who can use an existing service connection. **Roles** are defined for  service connections, and **membership** in these roles governs the operations you can perform on those service connections.
-
-| Role on a library service connection | Purpose |
-|------------------------------------|---------|
-| User | Members of this role can use the service connection when authoring build or release pipelines. |
-| Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection. The user that created the service connection is automatically added to the Administrator role for that service connection.
-
-Two special groups called **Service connection administrators** and **Service connection creators** are added to every project. 
-Members of the Service connection administrators group can manage all service connections. By default, project administrators are added as members of this group. This group is also added as an administrator to every service connection created.
-Members of the Service connection creators group can create new service connections. By default, project contributors are added as members of this group. 
-
+> You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
