@@ -8,7 +8,7 @@ ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/31/2018
+ms.date: 07/11/2018
 monikerRange: 'vsts'
 ---
 
@@ -32,8 +32,11 @@ To use a Microsoft-hosted agent pool, first decide which queue to use:
 Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
 
 Notes on choosing **Hosted macOS**:
-* This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+
+* This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/TrustCenter/CloudServices/vsts/data-location)
 * For manual selection of tool versions on this Microsoft-hosted agent, see **Q & A** below.
+* To disable the Hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under Admin settings > Agent pools > Hosted macOS.
+* To disable the Hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under Project settings > Agent pools > Hosted macOS.
 
 <h2 id="software">Software</h2>
 
