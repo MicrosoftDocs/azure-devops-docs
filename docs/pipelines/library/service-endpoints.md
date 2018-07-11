@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: ahomer
 author: alexhomer1
-ms.date: 04/09/2018
+ms.date: 07/11/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -556,9 +556,8 @@ You can control who can define new service connections in a library, and who can
 | User | Members of this role can use the service connection when authoring build or release pipelines. |
 | Administrator | In addition to using the service connection, members of this role can manage membership of all other roles for the service connection. The user that created the service connection is automatically added to the Administrator role for that service connection.
 
-Two special groups called **Service connection administrators** and **Service connection creators** are added to every project. 
-Members of the Service connection administrators group can manage all service connections. By default, project administrators are added as members of this group. This group is also added as an administrator to every service connection created.
-Members of the Service connection creators group can create new service connections. By default, project contributors are added as members of this group. 
-
+Two special groups called **Endpoint Administrators** and **Endpoint Creators** are added to every project.
+Members of the Endpoint Administrators group can manage all service connections. By default, project administrators are added as members of this group. This group is also added as an administrator to every service connection created.
+Members of the Endpoint Creators group can create new service connections. By default, project contributors are added as members of this group.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
