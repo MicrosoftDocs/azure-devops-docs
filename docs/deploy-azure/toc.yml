@@ -6,21 +6,21 @@
     href: /vsts/pipelines/overview-azure?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
 - name: Quickstarts
   items:
-  - name: Azure DevOps for your app
+  - name: Azure DevOps Project
     items:
-    - name: "DevOps Project for ASP.NET Core"
+    - name: "ASP.NET Core"
       href: /azure/devops-project/azure-devops-project-aspnet-core?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: "DevOps Project for Node.js"
+    - name: "Node.js"
       href: /azure/devops-project/azure-devops-project-nodejs?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: "DevOps Project for Java"
+    - name: "Java"
       href: /azure/devops-project/azure-devops-project-java?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: "DevOps Project for Python"
+    - name: "Python"
       href: /azure/devops-project/azure-devops-project-python?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: "DevOps Project for PHP"
+    - name: "PHP"
       href: /azure/devops-project/azure-devops-project-php?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: "DevOps Project for Ruby"
+    - name: "Ruby"
       href: /azure/devops-project/azure-devops-project-ruby?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: "DevOps Project for Go"
+    - name: "Go"
       href: /azure/devops-project/azure-devops-project-go?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: "Azure Web App"
     href: /vsts/pipelines/targets/webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
@@ -30,17 +30,17 @@
     href: /vsts/pipelines/apps/cd/deploy-docker-webapp?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
 - name: Tutorials
   items:
-  - name: Azure DevOps for your app
+  - name: Azure DevOps Project
     items:
-    - name: DevOps Project for GitHub
+    - name: GitHub
       href: /azure/devops-project/azure-devops-project-github?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: DevOps Project for VMs
+    - name: VMs
       href: /azure/devops-project/azure-devops-project-vms?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: DevOps Project with SQL Database
+    - name: SQL Database
       href: /azure/devops-project/azure-devops-project-sql-database?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: DevOps Project with AKS
+    - name: AKS
       href: /azure/devops-project/azure-devops-project-aks?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
-    - name: DevOps Project for Service Fabric
+    - name: Service Fabric
       href: /azure/devops-project/azure-devops-project-service-fabric?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
   - name: Set up multi-stage release
     href: /vsts/pipelines/release/define-multistage-release-process?toc=/vsts/deploy-azure/toc.json&bc=/vsts/deploy-azure/breadcrumb/toc.json
