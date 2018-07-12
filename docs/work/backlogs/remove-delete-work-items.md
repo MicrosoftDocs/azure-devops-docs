@@ -11,7 +11,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-ms.date: 03/20/2018
+ms.date: 07/12/2018
 ---
 
 
@@ -305,8 +305,8 @@ Restoring or deleting work items from the web portal isn't a supported feature f
 
 # [Command Line](#tab/command-line)
 
-::: moniker range="vsts"
-Deleting work items from the command line isn't a supported feature for VSTS
+::: moniker range=">tfs-2018"
+Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for VSTS.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
