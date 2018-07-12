@@ -18,26 +18,13 @@ monikerRange: '>= tfs-2017'
 
 **VSTS** | **TFS 2018** | **TFS 2017**
 
-Package Management is an *extension* to VSTS and TFS.  This means you'll need the Package Management extension installed in your account and have Package Management assigned to you in order to view, upload, and download packages.  
+Package Management is an *extension* to VSTS and TFS. The Package Management extension comes pre-installed in both VSTS and TFS (2017 and 2018).
 
 ::: moniker range="vsts" 
 
 ## Install Package Management in VSTS
 
-Package Management is an extension that must be installed from the Marketplace. 
-
-### Install Package Management extension
-1. Go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
-
-1. Select **Get**
-
-    ![Package Management extension for VSTS in Visual Studio Marketplace](_img/marketplace.png)
-
-1. Select your account into which the Package Management extension should be installed
-
-1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you aren't sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
-
-1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group
+The Package Management extension comes pre-installed from the Marketplace. If for some reason you do not see Package Management in your account, you can install it from the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ::: moniker-end
 
@@ -53,9 +40,11 @@ Package Management is installed by default for TFS 2017 customers.  You must upg
 
 ## Assign Package Management in VSTS
 
-If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
+Each account gets five (5) free licenses. If you need more than 5 licenses, go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Click **Buy** and purchase the additional licenses you need.  If you aren't sure, you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
 
-If you selected **Buy** or **Get it free**, you will need to assign your licenses by following the instructions below:
+You will need to assign your licenses by following the instructions below:
+
+> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
 
 1. Go to your account, select the **Users** hub, and select **Package Management**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
