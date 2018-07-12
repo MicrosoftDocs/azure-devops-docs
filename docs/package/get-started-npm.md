@@ -20,27 +20,19 @@ monikerRange: '>= tfs-2017'
 
 This tutorial is an end-to-end guide on using npm to store JavaScript packages using Visual Studio Team Services or Team Foundation Server. It covers installation, license assigning, and setup.
 
-## Step 1: Install and license the Package Management extension
-
-Package Management is an extension that must be installed from the Marketplace. 
+## Step 1: License the Package Management extension
 
 ### Install Package Management extension
-1. Go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
-1. Select **Get**
+Package Management is an extension that comes pre-installed from the Marketplace. If your account doesn't have the Package Management extension installed, go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
-    ![Package Management extension for VSTS in Visual Studio Marketplace](_img/marketplace.png)
-
-1. Select your account into which the Package Management extension should be installed
-
-1. Each account gets five (5) free licenses. If you need more than 5 licenses, click **Buy** and purchase the additional licenses you need.  If you aren't sure you can click **Start 30 day free trial** and every user in your account will be granted access to Package Management for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
-
-1. After the install is completed, select **Proceed to the account**. Then, go to any project and select the **Packages** hub in the **Build & Release** hub group
+In your VSTS/TFS account, go to any project and select the **Packages** hub in the **Build & Release** hub group to access Package Management.
 
 ### Assign licenses
-If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
 
-If you selected **Buy** or **Get it free**, you will need to assign your licenses by following the instructions below:
+You will need to assign your licenses by following the instructions below: 
+
+> If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
 
 1. Go to your account, select the **Users** hub, and select **Package Management**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**

@@ -19,7 +19,7 @@ When writing an application which interfaces with VSTS, you will have to authent
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
- Interactive client-side (REST) | Client application, that allows user interaction, calling VSTS REST APIs | Console application enumerating projects in an account | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
+ Interactive client-side (REST) | Client application, that allows user interaction, calling [VSTS REST APIs](https://docs.microsoft.com/en-us/rest/api/vsts) | Console application enumerating projects in an account | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
 | Interactive client-side (Client library) | Client application, that allows user interaction, calling VSTS Client libraries | Console application enumerating bugs assigned to the current user |  [Client libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying project information for a user | [Active Directory authentication Library for JS (ADAL JS)](https://github.com/AzureAD/azure-activedirectory-library-for-js) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/JavascriptWebAppSample) |
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
@@ -38,7 +38,7 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 
 ## Q&A
 
-#### Q: I am making an interactive client-side application. Should I use [VSTS Client Libraries](./../client-libraries/dotnet.md) or [VSTS REST API's](https://visualstudio.microsoft.com/en-us/docs/integrate/api/overview)?
+#### Q: I am making an interactive client-side application. Should I use [VSTS Client Libraries](./../client-libraries/dotnet.md) or [VSTS REST APIs](https://docs.microsoft.com/en-us/rest/api/vsts)?
 A: We recommend using VSTS Client Libraries over REST API's when accessing VSTS resources. They are simplier and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST API's.
 
 #### Q: Can I use ADAL if I log into my VSTS account with a Microsoft account (MSA)?
