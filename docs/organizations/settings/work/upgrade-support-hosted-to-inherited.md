@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 robots: NOINDEX, NOFOLLOW
@@ -65,7 +66,8 @@ When you upgrade a Hosted XML process to an inherited process, the customization
 > | Custom rules | All custom rules to fields and workflow are ignored.   | 
 > | Custom link controls  | Custom link controls are ignored. |
 > | Extensions | The inherited process supports an opt-out model for custom control extensions, while the Hosted XML process supports an opt-in model. This means that work item types defined within the upgraded inherited process will show all contributions from all installed and enabled extensions. You can selectively hide or remove them as needed. |
-> |Categories | Changes made to a [default category](../../../work/customize/reference/use-categories-to-group-work-item-types.md#default-categories-and-process-configuration) are preserved, but any custom categories are ignored. | 
+> | Categories | Changes made to a [default category](../../../work/customize/reference/use-categories-to-group-work-item-types.md#default-categories-and-process-configuration) are preserved, but any custom categories are ignored. Also note that system work item types such as Issue or Impediment are not supported on a backlog level. | 
+
 
 [!INCLUDE [temp](../_shared/post-upgrade-steps.md)]
 

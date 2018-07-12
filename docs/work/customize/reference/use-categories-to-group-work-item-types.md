@@ -44,7 +44,7 @@ You use categories to accomplish the following operations:
   
 <a name="process"></a> 
 ##Default categories and process configuration  
- Process configuration references the default categories defined for a team project. Here are the default categories that are defined in the  (default process template)(../../work-items/guidance/choose-process.md):  
+ Process configuration references the default categories defined for a team project. Here are the default categories that are defined in the [default process template](../../work-items/guidance/choose-process.md):  
   
 -   Bug Category    
 -   Code Review Request Category and Code Review Response Category    
