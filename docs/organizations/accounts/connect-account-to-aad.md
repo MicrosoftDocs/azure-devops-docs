@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/04/2018
+ms.date: 07/10/2018
 monikerRange: 'vsts'
 ---
 
@@ -101,7 +101,7 @@ While there is no downtime, users will be affected by this change, so it's best 
 1. Ensure the following about the user performing the connection. This user:
 
     * Exists in the target Azure AD tenant as a member.
-    * Is an [owner of the VSTS account](https://docs.microsoft.com/en-us/vsts/organizations/accounts/faq-change-account-ownership#find-owner-pca).
+    * Is a [Project Collection Administrator for the VSTS account](../security/lookup-account-owner-admin.md).
     * Is not using the Microsoft account identity that matches the Azure AD identity, for example, the Microsoft account you currently use is JamalHarnett@fabrikam.com and the Azure AD identity you will use after connecting is also JamalHarnett@fabrikam.com. You must use a single identity that spans both applications (MSA that's in the target Azure AD tenant), rather than two separate identities using the same email.
 
    If the emails are the same, then follow these steps, otherwise continue on to Connect your VSTS account to your organization directory.
@@ -116,7 +116,7 @@ While there is no downtime, users will be affected by this change, so it's best 
 
 6. Sign in to your VSTS account as the new user.
 
-7. Go to **Settings** in VSTS (as a Project Collection Administrator) and change the owner of the account to the new user, only after the new user has logged in.
+7. Go to **Security** in VSTS (as a Project Collection Administrator) and add the new user as a Project Collection Administrator, only after the new user has signed in.
    
 8. Use this new user to complete the migration.
 
@@ -133,7 +133,7 @@ While there is no downtime, users will be affected by this change, so it's best 
     > [!div class="mx-imgBorder"]
 ![Azure portal, browse to team services](_img/connect-account-to-aad/select-team-services-accounts.PNG)
 
-3. Select your VSTS account. If you don't see your account, check to make sure you are using the expected tenant in the upper right of the Azure portal and confirm that you are logged in with a Microsoft account that is the owner of the VSTS account in question.
+3. Select your VSTS account. If you don't see your account, check to make sure you are using the expected tenant in the upper right of the Azure portal and confirm that you are logged in with a Microsoft account that is a Project Collection Administrator of the VSTS account in question.
 
    ![Azure portal, browse to team services](_img/connect-account-to-aad/team-services-accounts-aad.PNG)
 
@@ -154,7 +154,7 @@ While there is no downtime, users will be affected by this change, so it's best 
 7. Your account is now connected to your organization's directory.
 
 8. To confirm that the process has been completed, open your favorite browser in a private session and sign in to your VSTS account with your Azure AD/work credentials.
-9. If you created a temporary user to complete the migration, change the owner of the VSTS account back to the initial user and delete the temporary Microsoft account, as it is no longer needed.
+9. If you created a temporary user to complete the migration, delete the temporary Microsoft account, as it is no longer needed.
 
 ## Inform users of the completed change
 
@@ -181,10 +181,9 @@ When you inform your users of the completed change, include the following tasks 
 
 ## (Optional) Close the temporary MSA (if you created one)
 
-1. Go to the **Settings** page in VSTS and [change the owner](https://docs.microsoft.com/en-us/vsts/organizations/accounts/change-account-ownership-vs?view=vsts) of the account back to yourself.
-2. Go to the **Users** page in VSTS and remove the temporary new user.
-3. Go to the Azure portal and remove the new user from the Azure AD tenant.
-4. [Close the temporary MSA](https://support.microsoft.com/en-us/help/12412/microsoft-account-how-to-close-account) you created.
+1. Go to the **Users** page in VSTS and remove the temporary new user.
+2. Go to the Azure portal and remove the new user from the Azure AD tenant.
+3. [Close the temporary MSA](https://support.microsoft.com/en-us/help/12412/microsoft-account-how-to-close-account) you created.
 
    [More questions about connecting?](faq-azure-access.md#faq-connect)
 
