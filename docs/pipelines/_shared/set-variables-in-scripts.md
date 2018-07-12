@@ -4,7 +4,8 @@ ms.topic: include
 
 <h3 id="set-in-script">Define and modify your variables in a script</h3>
 
-To define or modify a variable from a script, use the `task.setvariable` logging command. Note that the updated variable value is scoped to the phase being executed and does not flow across phases. 
+To define or modify a variable from a script, use the `task.setvariable` logging command.
+Note that the updated variable value is scoped to the phase being executed, and does not flow across phases or environments. 
 
 > [!TIP]
 > 
