@@ -47,6 +47,7 @@ Package:
 Admin:
 
 - [Connect or disconnect Azure Active Directory as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
+- [Public projects available in preview for all accounts](#public-projects-available-in-preview-for-all-accounts)
 
 ## Code
 
@@ -142,6 +143,16 @@ The Package Management extension is pre-installed into all accounts. If you're u
 ### Connect or disconnect Azure Active Directory as a Project Collection Admin
 
 A Project Collection Administrator (PCA) can now [connect or disconnect their account from Azure Active Directory](/vsts/organizations/accounts/connect-account-to-aad?view=vsts). Previously this had to be done by an account owner.
+
+### Public projects available in preview for all accounts
+
+> [!IMPORTANT]
+> To use this capability, an account administrator must [enable public projects](/vsts/organizations/public/create-public-project?view=vsts&tabs=horizontal#enable-anonymous-access-to-projects-for-your-organization) from the **Settings** page. 
+
+As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/), we're bringing [public projects](/vsts/organizations/public/index?view=vsts) to VSTS. For the first time, you'll be able to mark a VSTS Team Project as public. This will enable anonymous (un-authenticated) users to be able to view the contents of that project, including work items, code, and build results. Although the feature is still in preview, as of this sprint you will no longer need to be invited to join the private preview.
+
+> [!IMPORTANT]
+> If you're using a public project to build a repository hosted on GitHub, note that while pull requests (PRs) from branches within your repository will build fine, PRs opened from forks of your repository will not build right now.
 
 ## Feedback
 
