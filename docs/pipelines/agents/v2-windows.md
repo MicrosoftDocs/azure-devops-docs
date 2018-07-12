@@ -102,7 +102,7 @@ For guidance on whether to run the agent in interactive mode or as a service, se
 
  If you configured the agent to run interactively, to run it:
 
- ```ps
+ ```powershell
  .\run.cmd
  ```
 
@@ -116,7 +116,7 @@ If you need to change the logon account, don't do it from the services snap-in. 
 
 To remove the agent:
 
-```ps
+```powershell
 .\config remove
 ```
 
@@ -126,7 +126,7 @@ After you've removed the agent, you can [configure it again](#download-configure
 
 To learn about other options:
 
-```ps
+```powershell
 .\config --help
 ```
 

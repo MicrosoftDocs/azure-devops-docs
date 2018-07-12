@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 12/15/2017  
 ---
@@ -129,7 +130,7 @@ Now, add the Initiative Category. This adds the Initiative backlog to process co
 
 Add the Initiative Category to the Categories.xml file. (The Categories.xml file is located in the WorkItem Tracking folder.)  
 	
-```  
+```xml
   <CATEGORY name="Initiative Category" refname="FabrikamFiber.InitiativeCategory">  
     <DEFAULTWORKITEMTYPE name="Initiative" />  
   </CATEGORY>  
@@ -147,7 +148,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 	Add the Initiative Category by adding the following syntax. Replace the names, workflow state values, and default column fields to match those that you use. 
 
-	```
+	```xml
     <PortfolioBacklog category="FabrikamFiber.InitiativeCategory" pluralName="Initiatives" singularName="Initiative" workItemCountLimit="1000">
       <States>
         <State value="New" type="Proposed" />
@@ -176,7 +177,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 2.	Edit the ```PortfolioBacklog``` element for the Epic Category to point to ```Initiative``` as the parent backlog.  
 	
-	```
+	```xml
 	<PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics"  
 	   singularName="Epic" parent="FabrikamFiber.InitiativeCategory"      
 	   workItemCountLimit="1000">   
@@ -187,7 +188,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 	Intermediate portfolio backlogs require specifying the parent category, which must be configured as a portfolio backlog.  
 
 4.	Add the color to use for Initiative to the ```WorkItemColors``` section.  
-	```
+	```xml
 	    <WorkItemColor primary="FFCC66FF" secondary="FFF0D1FF" name="Initiative" />
 	```
 

@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d99e9d10-9629-4782-9c2c-3b5fdf2550a6
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 08/04/2016
 ---
@@ -129,7 +130,7 @@ API values for the name, description and metadata arguments are now overridden b
 
 These properties are defined in the [ProcessTemplate.xml file](https://msdn.microsoft.com/library/aa395261.aspx).
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <ProcessTemplate>    
   <metadata>   

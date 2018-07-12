@@ -5,7 +5,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 67560004-04d6-411c-97fb-07f66303ef11
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 06/16/2017
 ---
 
@@ -127,7 +128,7 @@ reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >
   
 ## Example  
   
-```  
+```xml
 <FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension">  
    <HELPTEXT>Type of work involved</HELPTEXT>  
    <SUGGESTEDVALUES>  
