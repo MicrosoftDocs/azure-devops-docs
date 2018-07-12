@@ -39,6 +39,7 @@ Build and release:
 - [Build and release with Microsoft-hosted Linux and macOS agents](#build-and-release-with-microsoft-hosted-linux-and-macos-agents)
 - [Automatically deploy to new targets in a deployment group](#automatically-deploy-to-new-targets-in-a-deployment-group)
 - [Hold deployments until gates succeed consistently](#hold-deployments-until-gates-succeed-consistently)
+- [Azure DevOps Projects now generally available](#azure-devops-projects-now-generally-available)
 
 Package:
 
@@ -128,6 +129,10 @@ Release gates enable automatic evaluation of health criteria before a release is
 
 > [!div class="mx-imgBorder"]
 ![Gates hold setting](_img/137_07.png)
+
+### Azure DevOps Projects now generally available
+
+Back in [November](/vsts/release-notes/2017/nov-28-vsts#azure-devops-project-release-tagimgrelease-notes-tagreleasepng) we introduced DevOps Projects, which helps ou get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
 
 ## Package
 
