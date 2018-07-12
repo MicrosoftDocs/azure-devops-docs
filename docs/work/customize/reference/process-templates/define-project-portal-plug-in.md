@@ -71,7 +71,7 @@ For an example of a task that specifies a simple project portal, see the WssTask
   
  Specify the site template using the site element.  
   
-```  
+```xml
 <site template="" language=""/>  
 ```  
   

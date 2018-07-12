@@ -46,7 +46,7 @@ The process that you're importing doesn't include the named field in the process
 #### Scenario example
 
 1. Add custom field to Bug.xml work item
-```
+```xml
   <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
 ```
 2. [Import process](import-process.md)
@@ -68,7 +68,7 @@ The process that you're updating doesn't include the named WIT that exists in th
 
 #### Scenerio example
 1. [Create](../customize-wit-form.md) new work item type called "LSI"  
-``` 
+```xml
    <WORKITEMTYPE name="LSI" refname="My.LSI">  
 ```
 2. [Import process](import-process.md)  
@@ -86,12 +86,12 @@ As part of updating the existing process, the system will rename the WIT in the 
 
 #### Scenario example
 1. [Create](../customize-wit-form.md) new work item type called "LSI"  
-``` 
+```xml
   <WORKITEMTYPE name="LSI" refname="My.LSI">  
 ```
 2. [Import process](import-process.md)  
 3. Rename the LSI work item type to Live Site Incident  
-``` 
+```xml
   <WORKITEMTYPE name="Live Site Incident" refname="My.LSI">  
 ```
 4. [Import updated process](import-process.md)  
@@ -119,13 +119,13 @@ check the case structure of your elements. Also, the case structure of opening a
 
 #### Error examples
 Custom XML tag:
-```
+```xml
   <WORKITEMTYPE name="Bug" refname="My.Bug">
     <FOO>Hello World</FOO>
     ...
 ```
 Extra attribute added to XML element:
-```
+```xml
   <WORKITEMTYPE name="Bug" refname="My.Bug" foo="hello world">
 ```
 
@@ -152,7 +152,7 @@ Edit the ProcessTemplate.xml file to specify a version.
 
 #### Error example
 ProcessTemplate.xml file specifies the same ```version``` GUID as for the Agile process, which is a locked process.
-```
+```xml
 <ProcessTemplate>
   <metadata>
     <name>Fabrikam Agile</name>
@@ -161,7 +161,7 @@ ProcessTemplate.xml file specifies the same ```version``` GUID as for the Agile 
 ```
 #### Resolution example
 A different GUID is specified.
-```
+```xml
 <ProcessTemplate>
   <metadata>
     <name>Fabrikam Agile</name>
@@ -184,7 +184,7 @@ Then, either update the plug-in to remove the missing named file, or add the nam
 The WorkItemTracking plug-in specifies ```fileName="WorkItem Tracking\TypeDefinitions\Epic.xml```, 
 however it hasn't been added to the WorkItem Tracking\TypeDefinitions folder.
 
-```
+```xml
      <WORKITEMTYPE fileName="WorkItem Tracking\TypeDefinitions\Epic.xml" />
 ```
 #### Resolution example
@@ -196,7 +196,7 @@ Correct the ProcessTemplate.xml file for the named plug-in to reduce the number 
 
 #### Error example
 The WorkItemTracking plug-in contains two ```tasklist``` statements.
- ```
+ ```xml
     <group id="WorkItemTracking" description="Workitem definitions uploading." completionMessage="Work item tracking tasks completed.">
       <dependencies>
         <dependency groupId="Classification" />
@@ -207,7 +207,7 @@ The WorkItemTracking plug-in contains two ```tasklist``` statements.
     </group>
 ```
 #### Resolution example
- ```
+ ```xml
     <group id="WorkItemTracking" description="Workitem definitions uploading." completionMessage="Work item tracking tasks completed.">
       <dependencies>
         <dependency groupId="Classification" />
@@ -222,7 +222,7 @@ The WorkItemTracking plug-in contains two ```tasklist``` statements.
 
 #### Error example
 The WorkItems.xml file contains two ```CATEGORIES``` statements.
- ```
+ ```xml
   <task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">
     <dependencies>
       <dependency taskId="WITs" />
@@ -235,7 +235,7 @@ The WorkItems.xml file contains two ```CATEGORIES``` statements.
 ```
 #### Resolution example
 The WorkItems.xml file has been updated to contain only one ```CATEGORIES``` statement.
- ```
+ ```xml
   <task id="Categories" name="Categories definitions" plugin="Microsoft.ProjectCreationWizard.WorkItemTracking" completionMessage="Work item type categories created">
     <dependencies>
       <dependency taskId="WITs" />
@@ -251,7 +251,7 @@ The WorkItems.xml file has been updated to contain only one ```CATEGORIES``` sta
 
 #### Error example
 The WorkItems.xml file contains duplicate ```ProjectConfiguration``` statements.
-  ```
+  ```xml
     <taskXml>
       <PROCESSCONFIGURATION>
         <ProjectConfiguration fileName="WorkItem Tracking\Process\ProcessConfiguration.xml"/>
@@ -265,7 +265,7 @@ The WorkItems.xml file contains duplicate ```ProjectConfiguration``` statements.
  ```
 #### Resolution example
 The WorkItems.xml file has been updated to contain only one ```ProjectConfiguration``` statement.
- ```
+ ```xml
     <taskXml>
       <PROCESSCONFIGURATION>
         <ProjectConfiguration fileName="WorkItem Tracking\Process\ProcessConfiguration.xml"/>
@@ -280,7 +280,7 @@ Either the file isn't specified, contains an out-of-date specification, the spec
  
 #### Error example
 The configuration specified is out-of-date and specifies two files that aren't contained in the Process folder. 
-```
+```xml
     <taskXml>
       <PROCESSCONFIGURATION>
         <CommonConfiguration fileName="WorkItem Tracking\Process\CommonConfiguration.xml"/> 
@@ -290,7 +290,7 @@ The configuration specified is out-of-date and specifies two files that aren't c
 ```
 #### Resolution example
 The WorkItems.xml file has been updated to contain the correct configuration ```ProjectConfiguration``` statement.
- ```
+ ```xml
     <taskXml>
       <PROCESSCONFIGURATION>
         <ProjectConfiguration fileName="WorkItem Tracking\Process\ProcessConfiguration.xml"/>
@@ -309,21 +309,21 @@ Modify the WIT definition in your process zip file that contains *[refName]* and
 
 #### Error example
 The UserStory WIT definition contains ```FIELD``` element for Fabrikam.Product.Family with friendly name Product.
-```
+```xml
       <FIELD name="Product" refname="Fabrikam.Product.Family" type="String" reportable="dimension">
         <HELPTEXT>Enter the name of the product family for this story or feature.</HELPTEXT>
       </FIELD>
 ```
 
 However, in an existing process, Fabrikam.Product.Versions uses the friendly name *Product*. 
-```
+```xml
       <FIELD name="Product" refname="Fabrikam.Product.Versions" type="String" reportable="dimension">
         <HELPTEXT>Enter the name of the product version for this story or feature.</HELPTEXT>
       </FIELD>
 ```
 #### Resolution example
 Update the UserStory WIT definition to match the existing field.
- ```
+ ```xml
       <FIELD name="Product" refname="Fabrikam.Product.Versions" type="String" reportable="dimension">
         <HELPTEXT>Enter the name of the product version for this story or feature.</HELPTEXT>
       </FIELD>
@@ -335,7 +335,7 @@ You must specify the ```Microsoft.ProjectCreationWizard.WorkItemTracking``` plug
 
 #### Error example
 The ```Microsoft.ProjectCreationWizard.WorkItemTracking``` plug-in is missing from the ```plugins``` section of the ProcessTemplate.xml file.
- ```
+ ```xml
    <plugins>
       <plugin name="Microsoft.ProjectCreationWizard.Classification" wizardPage="false" />
       <plugin name="Microsoft.ProjectCreationWizard.Reporting" wizardPage="false" />
@@ -348,7 +348,7 @@ The ```Microsoft.ProjectCreationWizard.WorkItemTracking``` plug-in is missing fr
     </plugins>
 ```
 #### Resolution example
- ```
+ ```xml
    <plugins>
       <plugin name="Microsoft.ProjectCreationWizard.Classification" wizardPage="false" />
       <plugin name="Microsoft.ProjectCreationWizard.Reporting" wizardPage="false" />
@@ -391,7 +391,7 @@ ProcessConfiguration references the Epic Category, however it is missing from th
 
 #### Resolution example
 Epic Category is added to the Categories file. 
-```
+```xml
   <CATEGORY name="Epic Category" refname="Microsoft.EpicCategory">
     <DEFAULTWORKITEMTYPE name="Epic" />
   </CATEGORY>
@@ -413,13 +413,13 @@ Review your Categories.xml file for references to a WIT that isn't included in t
 
 #### Error example
 The name of the WIT referenced for Microsoft.EpicCategory is misspelled.
-```
+```xml
   <CATEGORY name="Epic Category" refname="Microsoft.EpicCategory">
     <DEFAULTWORKITEMTYPE name="EpicABC" />
   </CATEGORY>
 ```
 #### Resolution example
-```
+```xml
   <CATEGORY name="Epic Category" refname="Microsoft.EpicCategory">
     <DEFAULTWORKITEMTYPE name="Epic" />
   </CATEGORY>
@@ -436,7 +436,7 @@ ProcessConfiguration doesn't reference Microsoft.EpicCategory, although it's def
 
 #### Resolution example
 Add ```PortfolioBacklog``` to ProcessConfiguration to reference Microsoft.EpicCategory.  
-```
+```xml
     <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics" singularName="Epic" workItemCountLimit="1000">
       <States>
         <State value="New" type="Proposed" />
@@ -474,7 +474,7 @@ The Classification.xml definition file must conform to the syntax and rules desc
 
 #### Error example
 Classification.xml file contains a second ```property name="MSPROJ"``` statement under the ```properties``` container element.
-```
+```xml
       <properties>
         <property name="MSPROJ" value="Classification\FileMapping.xml" isFile="true" />
         <property name="MSPROJ" value="Classification\Fabrikam_FileMapping.xml" isFile="true" />
@@ -483,7 +483,7 @@ Classification.xml file contains a second ```property name="MSPROJ"``` statement
 ```
 #### Resolution example
 Remove the duplicate statement.
-```
+```xml
       <properties>
         <property name="MSPROJ" value="Classification\Fabrikam_FileMapping.xml" isFile="true" />
         <property name="Process Template" value="Fabrikam Agile"/>
@@ -496,14 +496,14 @@ The file specified in the Classification.xml file isn't present in the specified
 
 #### Error example
 The Classification folder path is misspelled. 
-```
+```xml
        <properties>
         <property name="MSPROJ" value="Calssification\Fabrikam_FileMapping.xml" isFile="true" />
         <property name="Process Template" value="Agile"/>
       </properties>
 ```
 #### Resolution example
-```
+```xml
       <properties>
         <property name="MSPROJ" value="Classification\Fabrikam_FileMapping.xml" isFile="true" />
         <property name="Process Template" value="Fabrikam Agile"/>
@@ -517,7 +517,7 @@ Reference: [Add and modify area and iteration paths](../set-area-paths.md).
 
 #### Error example
 The Path names include the # character which is not allowed. 
-```
+```xml
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
             <Node StructureType="ProjectLifecycle" Name="Sprint #1" />
@@ -528,7 +528,7 @@ The Path names include the # character which is not allowed.
 ```
 #### Resolution example
 The Path names have been corrected. 
-```
+```xml
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
             <Node StructureType="ProjectLifecycle" Name="Sprint 1" />
@@ -547,7 +547,7 @@ Review the ```Node``` elements that you've specified and remove any unsupported 
 
 #### Error example
 ```ProjectLifecycle``` has been misspelled. 
-```
+```xml
         <Node StructureType="ProjectLifecylce" Name="Iteration" xmlns="">
           <Children>
             <Node StructureType="ProjectLifecycle" Name="Sprint 1" />
@@ -558,7 +558,7 @@ Review the ```Node``` elements that you've specified and remove any unsupported 
 ```
 #### Resolution example
 Misspelled name has been corrected. 
-```
+```xml
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
             <Node StructureType="ProjectLifecycle" Name="Sprint 1" />
@@ -577,7 +577,7 @@ Review the ```property``` elements you've specified and remove any unsupported a
 
 #### Error example
 The ```value``` attribute is misspelled. 
-```
+```xml
        <properties>
         <property name="MSPROJ" vaule="Classification\Fabrikam_FileMapping.xml" isFile="true" />
         <property name="Process Template" value="Agile" />
@@ -585,7 +585,7 @@ The ```value``` attribute is misspelled.
 ```
 #### Resolution example
 Misspelled attribute has been corrected. 
-```
+```xml
       <properties>
         <property name="MSPROJ" value="Classification\Fabrikam_FileMapping.xml" isFile="true" />
         <property name="Process Template" value="Fabrikam Agile"/>
@@ -596,7 +596,7 @@ Misspelled attribute has been corrected.
 Review the ```Node``` elements you've specified and remove extra root level nodes.
 #### Error example
 Classification.xml file contains a second ```Node StructureType="ProjectLifecycle" ``` statement under the ```Nodes``` container element.
-```
+```xml
       <Nodes>
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
@@ -611,7 +611,7 @@ Classification.xml file contains a second ```Node StructureType="ProjectLifecycl
 ```
 #### Resolution example
 Remove the second statement.
-```
+```xml
       <Nodes>
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
@@ -630,7 +630,7 @@ Add the missing *[pathName]* to the Classification.xml file or remove it from th
 Classification.xml file specfies sprints, not iterations. 
 
 **GroupsandPermissions.xml** ```teamSettings``` specifies Iterations. 
-```
+```xml
     <teamSettings areaPath="Area">
         <iterationPaths backlogPath="Iteration">
             <iterationPath path="Iteration 1" />
@@ -640,7 +640,7 @@ Classification.xml file specfies sprints, not iterations.
     </teamSettings>
 ```
 However, the Classification.xml specifies sprints. 
-```
+```xml
         <Node StructureType="ProjectLifecycle" Name="Iteration" xmlns="">
           <Children>
             <Node StructureType="ProjectLifecycle" Name="Sprint 1" />
@@ -652,7 +652,7 @@ However, the Classification.xml specifies sprints.
 
 #### Resolution example 
 Update GroupsandPermissions.xml to use sprints.  
-```
+```xml
     <teamSettings areaPath="Area">
         <iterationPaths backlogPath="Iteration">
             <iterationPath path="Sprint 1" />
@@ -681,7 +681,7 @@ Review your WorkItems.xml plug-in file for all ```LINKTYPE``` element statements
 And then, remove the corresponding  link type definition file from the LinkTypes folder.
 
 The following ```LINKTYPE``` element statements within the WorkItems.xml plug-in file are valid: 
-```
+```xml
       <LINKTYPES>
         <LINKTYPE fileName="WorkItem Tracking\LinkTypes\Affects.xml" />
         <LINKTYPE fileName="WorkItem Tracking\LinkTypes\SharedStep.xml" />
@@ -718,7 +718,7 @@ The ProcessConfiguration.xml definition file must conform to the syntax and rule
 Update the ```States``` section within the named element in the ProcessConfiguration.xml file to provide the missing metastate mapping or remove extra mappings.   
 #### Error example
 ProcessConfiguration.xml ```RequirementBacklog``` element is missing a metastate mapping for ```type="Proposed"```. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Backlog items" singularName="Backlog item">
    <States>
       <State value="Committed" type="InProgress" />
@@ -729,7 +729,7 @@ ProcessConfiguration.xml ```RequirementBacklog``` element is missing a metastate
 ```
 #### Resolution example
 Missing metastate mappings have been added. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Backlog items" singularName="Backlog item">
    <States>
       <State value="New" type="Proposed" />
@@ -752,7 +752,7 @@ named element in the ProcessConfiguration.xml file to provide the missing metast
 Update the ```States``` section within the named element in the ProcessConfiguration.xml file to provide the missing metastate mapping. 
 #### Error example
 ProcessConfiguration.xml ```RequirementBacklog``` element is missing a metastate mapping for ```type="InProgress"```. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Backlog items" singularName="Backlog item">
    <States>
       <State value="New" type="Proposed" />
@@ -763,7 +763,7 @@ ProcessConfiguration.xml ```RequirementBacklog``` element is missing a metastate
 ```
 #### Resolution example
 Missing metastate mappings have been added. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Backlog items" singularName="Backlog item">
    <States>
       <State value="New" type="Proposed" />
@@ -780,7 +780,7 @@ Metastate value cannot be mapped to more than one workflow state.
 
 #### Error example
 ProcessConfiguration.xml ```RequirementBacklog``` element contains two metastate mappings for ```value="Active"```. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
       <State value="Active" type="Proposed" />
@@ -793,7 +793,7 @@ ProcessConfiguration.xml ```RequirementBacklog``` element contains two metastate
 ```
 #### Resolution example
 Metastate mappings have been corrected. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
       <State value="New" type="Proposed" />
@@ -812,7 +812,7 @@ Either correct the ProcessConfiguration.xml file or the ```WORKFLOW``` section o
 
 #### Error example 
 ProcessConfiguration.xml ```RequirementBacklog``` element specifies ```value="Committed"```, however UserStory.xml doesn't define Committed as a State.    
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
       <State value="New" type="Proposed" />
@@ -826,7 +826,7 @@ ProcessConfiguration.xml ```RequirementBacklog``` element specifies ```value="Co
 ```
 #### Resolution example
 Removed the ```State``` element for Committed. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
       <State value="New" type="Proposed" />
@@ -845,7 +845,7 @@ Review the ```STATES``` section in the ProcessConfiguration.xml file for the nam
 
 #### Error example
 ProcessConfiguration.xml ```RequirementBacklog``` element is missing the state ```New``` which exists on the ```User Story``` work item type.  It should be in the ```STATES``` list mapped to ```type=Proposed"```. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
       <State value="Active" type="InProgress" />
@@ -857,7 +857,7 @@ ProcessConfiguration.xml ```RequirementBacklog``` element is missing the state `
 ```
 #### Resolution example
 Metastate mapping has been corrected. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
       <State value="New" type="Proposed" />
@@ -875,7 +875,7 @@ Review the ```STATES``` section in the ProcessConfiguration.xml file for the nam
 
 #### Error example
 ProcessConfiguration.xml ```RequirementBacklog``` element contains a misspelled metastate mapping for ```type=Proposed"```. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
       <State value="New" type="Propsed" />
@@ -888,7 +888,7 @@ ProcessConfiguration.xml ```RequirementBacklog``` element contains a misspelled 
 ```
 #### Resolution example
 Metastate mapping has been corrected. 
-```
+```xml
 <RequirementBacklog category="Microsoft.RequirementCategory" pluralName="Stories" singularName="Story">
    <States>
       <State value="New" type="Proposed" />
@@ -918,7 +918,7 @@ Edit the ProcessConfiguration.xml file to add the missing named ```TypeField``` 
 Review [ProcessConfiguration XML element reference](../reference/process-configuration-xml-element.md) for required ```TypeField``` elements. 
 #### Example
 The Scrum process specifies the following ```TypeField``` elements. If any of these are missing, you'll receive error TF402574.
-```
+```xml
 <TypeFields>
     <TypeField refname="System.AreaPath" type="Team" />
     <TypeField refname="Microsoft.VSTS.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
@@ -946,7 +946,7 @@ Only one child portfolio backlog can map to a single parent backlog.
 Edit ProcessConfiguration to correct the parent-child backlog specifications.
 
 #### Error example
-```
+```xml
   <PortfolioBacklog category="Microsoft.EpicCategory" parent="Microsoft.InitiativeCategory" pluralName="Epics" singularName="Epic">
     ...
   </PortfolioBacklog>
@@ -958,7 +958,7 @@ Edit ProcessConfiguration to correct the parent-child backlog specifications.
 
 #### Resolution example
 Change the parent on the Feature backlog to point to the Epic backlog.
-```
+```xml
   <PortfolioBacklog category="Microsoft.EpicCategory" parent="Microsoft.InitiativeCategory" pluralName="Epics" singularName="Epic">
     ...
   </PortfolioBacklog>
@@ -973,13 +973,13 @@ Change the parent on the Feature backlog to point to the Epic backlog.
 The ProcessConfiguration.xml definition contains a ```parent``` value that references an undefined portfolio backlog.
 
 #### Error example
-```
+```xml
   <PortfolioBacklog category="Microsoft.FeatureCategory" parent="Microsoft.EpicCategory" pluralName="Features" singularName="Feature">
 ```
 
 #### Resolution example
 Add the Epic ```PortfioloBacklog``` to the ProcessConfiguration.xml file.
-```
+```xml
   <PortfolioBacklog category="Microsoft.EpicCategory" pluralName="Epics" singularName="Epic">
     <States>
       <State value="New" type="Proposed" />
@@ -1003,7 +1003,7 @@ Add the Epic ```PortfioloBacklog``` to the ProcessConfiguration.xml file.
 Only one portfolio backlog, the top backlog, may be unparented. All other backlogs must include a ``` parent="Microsoft.FooCategory" ``` attribute and value.
 
 #### Resolution example
-```
+```xml
   <PortfolioBacklog category="Microsoft.FeatureCategory" parent="Microsoft.EpicCategory" pluralName="Features" singularName="Feature">
 ```
 
@@ -1036,11 +1036,11 @@ The namespaces-System.*XXX* and Microsoft.VSTS.*XXX*-are reserved by VSTS.
 See [All WITD XML elements reference](../reference/all-witd-xml-elements-reference.md) for more information.
 
 #### Error example
-```
+```xml
 <WORKITEMTYPE name="Bug">
 ```
 #### Resolution example
-```
+```xml
 <WORKITEMTYPE name="Bug" refname="MyCompany.Bug">
 ```
 
@@ -1052,11 +1052,11 @@ Reference names of custom fields and WITs can't use reserved namespaces: System.
 Edit the ```refname``` attribute of the named WIT. 
 
 #### Error example
-```
+```xml
 <FIELD name="Custom Field" refname="Microsoft.VSTS.CustomField" type="String" />
 ```
 #### Resolution example
-```
+```xml
 <FIELD name="Custom Field" refname="*CustomNamespace.CustomField*" type="String" />
 ```
 
@@ -1067,11 +1067,11 @@ WIT reference names must adhere to established naming conventions: only letters,
 Edit the ```refname``` attribute of the named WIT to meet naming requirements.. 
 
 #### Error example
-```
+```xml
 <WORKITEMTYPE name="Bug" refname="MyCompanyBug32">
 ```
 #### Resolution example
-```
+```xml
 <WORKITEMTYPE name="Bug" refname="MyCompany.Bug">
 ```
 
@@ -1109,7 +1109,7 @@ Replace all instances of ```GLOBALLIST``` elements with
 Reference:  [Define pick lists](../reference/define-pick-lists.md).
 
 #### Error example
-```
+```xml
 <FIELD name="CustomField" refname="MyCompany.CustomField" type="String">
   <ALLOWEDVALUES>
     <GLOBALLIST name="Disciplines" />
@@ -1117,7 +1117,7 @@ Reference:  [Define pick lists](../reference/define-pick-lists.md).
 </FIELD>
 ```
 #### Resolution example
-```
+```xml
 <FIELD name="CustomField" refname="MyCompany.CustomField" type="String">
   <ALLOWEDVALUES>
     <LISTITEM value="Architecture" />
@@ -1138,7 +1138,7 @@ Global lists are not supported in VSTS. Replace all instances of ```GLOBALLIST``
 Reference: [Define pick lists](../reference/define-pick-lists.md).
 
 #### Error example
-```
+```xml
 <FIELD name="CustomField" refname="MyCompany.CustomField" type="String">
   <ALLOWEDVALUES>
     <GLOBALLIST name="Disciplines" />
@@ -1146,7 +1146,7 @@ Reference: [Define pick lists](../reference/define-pick-lists.md).
 </FIELD>
 ```
 #### Resolution example
-```
+```xml
 <FIELD name="CustomField" refname="MyCompany.CustomField" type="String">
   <ALLOWEDVALUES>
     <LISTITEM value="Architecture" />
@@ -1167,7 +1167,7 @@ Reference names of custom fields and types can't use these namespaces.
 To fix this error, simply rename the ```refname``` attribute for the named field in the WIT definition files where it appears. 
 
 #### Error example
-```
+```xml
 <FIELD name="CustomField" refname="System.CustomField" type="String" />
   
   - OR - 
@@ -1176,7 +1176,7 @@ To fix this error, simply rename the ```refname``` attribute for the named field
   
 ```
 #### Resolution example
-```
+```xml
 <FIELD name="CustomField" refname="MyCompany.CustomField" type="String" />
 ```
 <a id="TF402544"></a>
@@ -1194,7 +1194,7 @@ named field and specifies the same pick list as is defined for it in the Task.xm
  
 #### Error example
 Bug.xml has the field defined, but not the pick list.
-```
+```xml
       <FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension">
         <HELPTEXT>Type of work involved</HELPTEXT>
       </FIELD> 
@@ -1202,7 +1202,7 @@ Bug.xml has the field defined, but not the pick list.
 
 #### Resolution example
 Corrected Bug.xml
-```
+```xml
       <FIELD name="Activity" refname="Microsoft.VSTS.Common.Activity" type="String" reportable="dimension">
         <HELPTEXT>Type of work involved</HELPTEXT>
         <SUGGESTEDVALUES>
@@ -1223,7 +1223,7 @@ You should also include a ```Control``` element within the ```FORM``` section of
 
 #### Error example
 ProcessConfiguration.xml specifies two custom fields. However, these fields aren't defined in the UserStory.xml file. 
-```
+```xml
 <AddPanel>
    <Fields>
       <Field refname="System.Title" />
@@ -1234,7 +1234,7 @@ ProcessConfiguration.xml specifies two custom fields. However, these fields aren
 ```
 #### Resolution example
 Missing ```FIELD``` elements added to the UserStory.xml file.
-```
+```xml
       <FIELD name="Product" refname="Fabrikam.Product" type="String" reportable="dimension">
      <FIELD name="Technology" refname="Fabrikam.Technology" type="String" reportable="dimension"> 
 ```
@@ -1247,7 +1247,7 @@ In the ProcessConfiguration you created a ```TypeField``` with ```TypeFieldValue
 
 #### Error example
 ProcessConfiguration.xml
-```
+```xml
   <TypeField refname="Custom.ApplicationType" type="ApplicationType">
     <TypeFieldValues>
       <TypeFieldValue value="Web application" type="WebApp" />
@@ -1257,7 +1257,7 @@ ProcessConfiguration.xml
   </TypeField>  
 ```
 FeedbackRequest.xml is using the Microsoft.VSTS.Feedback.ApplicationType field when it should be using the Custom.ApplicationType field.
-``` 
+```xml
   <FIELD name="Application Type" refname="Microsoft.VSTS.Feedback.ApplicationType" type="String">
     ...
   </FIELD>
@@ -1265,7 +1265,7 @@ FeedbackRequest.xml is using the Microsoft.VSTS.Feedback.ApplicationType field w
 
 #### Resolution example
 FeedbackRequest.xml
-```
+```xml
   <FIELD name="Application Type" refname="Custom.ApplicationType" type="String">
     ...
   </FIELD>
@@ -1292,14 +1292,14 @@ Reserved System.*XXX* and Microsoft.VSTS.*XXX* fields have required name and typ
 TF402556: For field Microsoft.VSTS.TCM.ReproSteps to be well defined, you must name it Repro Steps and set its type to HTML. Provided Microsoft.VSTS.TCM.ReproSteps is My Repro Steps and type is HTML.
 
 In Bug.xml, the friendly field name has been changed to "My Repro Steps".
-```
+```xml
   <FIELD name="My Repro Steps" refname="Microsoft.VSTS.TCM.ReproSteps" type="HTML">
     <HELPTEXT>How to see the bug. End by contrasting expected with actual behavior.</HELPTEXT>
   </FIELD> 
 ```
 #### Resolution example
 Bug.xml
-```
+```xml
   <FIELD name="Repro Steps" refname="Microsoft.VSTS.TCM.ReproSteps" type="HTML">
     <HELPTEXT>How to see the bug. End by contrasting expected with actual behavior.</HELPTEXT>
   </FIELD> 
@@ -1312,23 +1312,23 @@ Check to ensure that the ```refName```, ```name```, and ```type``` attributes ar
 
 #### Error example
 Bug.xml
-```
+```xml
   <FIELD name="Hair Color" refname="MyCompany.CustomFields.HairColor" type="String" reportable="dimension" />
 ```
 
 UserStory.xml
-```
+```xml
   <FIELD name="Hair Color 2" refname="MyCompany.CustomFields.HairColor" type="Double" reportable="dimension" />
 ```
 Notice that the ```name``` and ```type``` attributes differ from that in the Bug.xml work item type
 
 #### Resolution example
 Bug.xml
-```
+```xml
   <FIELD name="Hair Color" refname="MyCompany.CustomFields.HairColor" type="String" reportable="dimension" />
 ```
 UserStory.xml
-```
+```xml
   <FIELD name="Hair Color" refname="MyCompany.CustomFields.HairColor" type="String" reportable="dimension" />
 ```
 
@@ -1340,7 +1340,7 @@ one way in Process A and another way in Process B.  All ```FIELD``` element attr
 
 #### Example
 Process A, Bug.xml
-```
+```xml
   <FIELDS>  
     ...   
     <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
@@ -1350,7 +1350,7 @@ Process A, Bug.xml
 
 Process B, Bug.xml
 
-```
+```xml
   <FIELDS>  
     ...   
     <FIELD name="Bar" refname="MyCompany.CustomFields.Foo" type="Double" reportable="dimension" />
@@ -1393,7 +1393,7 @@ The number of fields with  ```syncnamechanges="true"``` defined for the named WI
 Review the ```FIELDS``` section of the named WIT and determine which custom fields to remove or modify.
 
 #### Example
-```
+```xml
   <FIELD name="Assigned To" refname="System.AssignedTo" type="String" reportable="dimension" syncnamechanges="true" >
     ...
   </FIELD>
@@ -1407,7 +1407,7 @@ The number of ```LISTITEM``` elements defined for the named field in the named W
 Edit the named WIT to reduce the number of```LISTITEM``` elements so as not to exceed the allowed maximum. 
 
 #### Example
-```
+```xml
   <FIELD name="Favorite Color" refname="MyCompany.CustomFields.FavColor" type="String" reportable="dimension">
     <ALLOWEDVALUES>
       <LISTITEM value="Color1" />
@@ -1425,14 +1425,14 @@ notice the bug and user story ```refname``` values are different
 The ```"for"``` and ```"not"``` attributes are not supported at all for any field rule for import to VSTS.  
 Review the ```FIELDS``` and ```WORKFLOW``` sections for the presence of ```"for"``` and ```"not"``` attributes and remove them. 
 #### Error example
-```
+```xml
 <FIELD name="Title">
   <READONLY for="Dev Team" not="Test Team" />
 </FIELD>
 ```
 
 #### Resolution example
-```
+```xml
 <FIELD name="Title">
   <READONLY />
 </FIELD>
@@ -1454,7 +1454,7 @@ All fields defined by VSTS in the reserved namespaces-System.*XXX* and Microsoft
 
 #### Error example
 Bug.xml has the priority field defined, but has a different list of values than expected.
-```
+```xml
       <FIELD name="Priority" refname="Microsoft.VSTS.Common.Priority" type="Integer" reportable="dimension">
         <ALLOWEDVALUES expanditems="true">
           <LISTITEM value="0"/>
@@ -1467,7 +1467,7 @@ Bug.xml has the priority field defined, but has a different list of values than 
 
 #### Resolution example
 Corrected Bug.xml including a new field
-```
+```xml
       <FIELD name="Priority" refname="Microsoft.VSTS.Common.Priority" type="Integer" reportable="dimension">
         <HELPTEXT>Business importance. 1=must fix; 4=unimportant.</HELPTEXT>
         <ALLOWEDVALUES expanditems="true">
@@ -1497,13 +1497,13 @@ Custom project scoped groups are not supported. You can only reference account l
 
 #### Error example
 Bug.xml is referencing a project scoped group.
-```
+```xml
 ... "[project]\Organization Leaders"
 ```
 
 #### Resolution example
 Create a new account (collection) level group "Organization Leaders" and reference it accordingly in the XML.
-```
+```xml
 ... "[global]\Organization Leaders"
 ```
 
@@ -1517,7 +1517,7 @@ Field name already exist with that same name on a different field. Change the na
 
 #### Resolution example
 Change the field name of Custom.NewField.ExternalID
-```
+```xml
 <FIELD name="External ID" refname="Custom.NewField.ExternalID" type="string" reportable="dimension" />
 ```
 
@@ -1535,7 +1535,7 @@ This warning is generated if you have a required field in a work item type that 
 In the new form layout, a group can only contain one HTMLFieldControl or WebPageControl. 
 
 #### Error example
-```
+```xml
 <Section>
 	<Group Label="Description:">
 		<Control Label="Reason For Request:" Type="HtmlFieldControl" FieldName="System.Description" />
@@ -1548,7 +1548,7 @@ In the new form layout, a group can only contain one HTMLFieldControl or WebPage
 To resolve this, create two seperate groups that contain one control each.
 
 #### Resolution example
-```
+```xml
 <Section>
 	<Group Label="Reason for Request">
 		<Control Label="Reason For Request:" Type="HtmlFieldControl" FieldName="System.Description" />       
@@ -1563,15 +1563,15 @@ To resolve this, create two seperate groups that contain one control each.
 ### TF402594: File violates the schema with the following error: The element 'Control' cannot contain child element 'Link' because the parent element's content model is empty.
 
 #### Error example
-```
+```xml
   <Control Type="FieldContvisualstudio.microsoft.comomfield.foo" Label="Foo" LabelPosition="Left">
     <Link UrlRoot="http://www.visualstudio.com/team-services" />
   </Control>
 ```
 
 #### Resolution example
-```
-  <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
+```xml
+  <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1">
     <LabelText>  
         <Text>  visualstudio.microsoft.com
           <Link UrlRoot="http://www.visualstudio.com/team-services" />  
@@ -1596,14 +1596,14 @@ Edit the ```WORKFLOW``` section of the named WIT and remove the extra ```STATE``
 Field names must be unique within the work item type. 
 
 #### Error example
-```
+```xml
   <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
   <FIELD name="Foo" refname="MyCompany.CustomFields.Bar" type="String" reportable="dimension" />
 ```
 Notice there are two fields with the name ``` <FIELD name="Foo" ```
 
 #### Resolution example
-```
+```xml
   <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />
   <FIELD name="Bar" refname="MyCompany.CustomFields.Bar" type="String" reportable="dimension" />
 ```
@@ -1615,12 +1615,12 @@ Fields referencing the same ```refname="MyCompany.FieldName"``` must have the sa
 
 #### Error example
 Process A, Bug.xml
-```
+```xml
   <FIELD name="Foo" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />  
 ```
 
 Process B, Bug.xml
-```
+```xml
   <FIELD name="Bar" refname="MyCompany.CustomFields.Foo" type="String" reportable="dimension" />  
 ```
 Because both fields share the same reference name, ```refname="MyCompany.CustomFields.Foo" ```, 
@@ -1633,24 +1633,24 @@ WIT friendly names ```WORKITEMTYPE name="Name" ``` must be unique within the pro
 
 #### Error example
 My Work Item A.xml
-```
+```xml
   <WORKITEMTYPE name="My Work Item" refname="My.MyWorkItemA">
 ```
 
 My Work Item B.xml
-```
+```xml
   <WORKITEMTYPE name="My Work Item" refname="My.MyWorkItemB">
 ```
 Notice how the ```WORKITEMTYPE name=``` is the same across both work item types. 
 
 #### Resolution example
 My Work Item A.xml
-```
+```xml
   <WORKITEMTYPE name="My Work Item A" refname="My.MyWorkItemA">
 ```
 
 My Work Item B.xml
-```
+```xml
   <WORKITEMTYPE name="My Work Item B" refname="My.MyWorkItemB">
 ```
 
@@ -1660,22 +1660,22 @@ WIT reference names ```refname="value" ``` must be unique within the process.
 
 #### Error example
 Bug.xml
-```
+```xml
   <WORKITEMTYPE name="Bug" refname="MyCompany.Name">
 ```
 UserStory.xml
-```
+```xml
   <WORKITEMTYPE name="User Story" refname="MyCompany.Name"> 
 ```
 notice both ```refname``` values equal "MyCompany.Name"
 
 #### Resolution example
 Bug.xml
-```
+```xml
   <WORKITEMTYPE name="Bug" refname="MyCompany.Bug">
 ```
 UserStory.xml
-```
+```xml
   <WORKITEMTYPE name="User Story" refname="MyCompany.UserStory"> 
 ```
 
@@ -1686,7 +1686,7 @@ Custom controls are not supported in VSTS. Review the ```FORM``` section for the
 
 #### Error example 
 ```Type="OneViewMultiValueControl"``` specifies a custom control. This must be removed or replaced to a supported control.    
-``` 
+```xml
     <Group Label="Engineering Alignment">
         <Column PercentWidth="100">
             <Control FieldName="Fabrikam.Content.Product" Type="FieldControl" Label="Product" LabelPosition="Left" />
@@ -1714,14 +1714,14 @@ Correct the named tasked in your TestManagement.xml file.
 
 #### Error example 
 The ```TestResolutionStates``` element has been misspelled.   
-```
+```xml
     <taskXml>
       <TestResolutionSattes fileName="Test Management\TestResolutionState.xml" />
     </taskXml>
 ```
 #### Resolution example 
 Corrected misspellings.  
-```
+```xml
     <taskXml>
       <TestResolutionStates fileName="Test Management\TestResolutionState.xml" />
     </taskXml>
