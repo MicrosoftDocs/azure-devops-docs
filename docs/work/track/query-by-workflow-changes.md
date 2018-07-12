@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1FD042F2-D503-40A3-A6C7-1E25A0F664C6  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
@@ -40,6 +41,7 @@ If you're new to creating queries, see [Use the query editor to list and manage 
 
 
 <a id="me"/>
+
 ## Query by assignment and account-specific fields 
 
 You can use the search box or query editor to quickly find work items based on assignment.  Also, you can filter for work items based on who changed, resolved, or closed a work item. By specifying a time period, you can scope your query even further which can help with performance. 
@@ -188,6 +190,7 @@ You use the State, Reason, and Resolved Reason fields to query for items based o
 </table>
 
 <a id="workflow-change-who"/> 
+
 ## Query by who made workflow changes
 
 You can quickly find items that you changed, resolved or closed. You can also find items that were changed by other team members. Several fields&mdash;such as the Created By, Changed By, Resolved By, and Closed By&mdash;are populated based on changes to the workflow.  
@@ -224,7 +227,9 @@ You can quickly find items that you changed, resolved or closed. You can also fi
 
 <a id="kanban_query_fields">  </a>
 ::: moniker range=">= tfs-2015"
-## Query by Kanban board changes  
+
+## Query by Kanban board changes
+
 Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board Lane&mdash;you can list work items according to their flow status on the Kanban board. And, you can create a [status or trend chart](../../report/dashboards/charts.md) based on these queries. 
 ::: moniker-end
 
