@@ -75,7 +75,7 @@ Provide others access to your account by adding their email address.
    ![Web portal, account admin context, Add new users dialog](../../user-guide/_img/invite-users-add-user-dialog.png)
 
    * **Users**: Enter the Microsoft account (MSA) email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that in MSAs, the email addresses display in red.
-    * **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
+   * **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
    * **Add to projects**: Select the project that you named in the previous procedure.
    * **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
 
