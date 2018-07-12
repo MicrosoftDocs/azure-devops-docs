@@ -111,21 +111,20 @@ allocate upto 35% of the size of all the collections that will be indexed.
 Search has the following dependencies, which are installed automatically
 as part of the configuration:
 
-* [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Note 1)
+* [Elasticsearch](https://www.elastic.co/products/elasticsearch) by Elasticsearch BV (see Notes 1 and 2)
 * [Elasticsearch NEST client](https://www.elastic.co/guide/en/elasticsearch/client/net-api/current/index.html) 
-* [Oracle Server JRE 8 Update 20 or higher](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html) Java runtime environment (see Note 2)
+* [Oracle Server JRE 8 Update 20 or higher](http://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html) Java runtime environment (see Note 3)
 * [Markdowndeep](http://www.toptensoftware.com/markdowndeep/) by Topten Software
 * [Roslyn](https://github.com/dotnet/roslyn) compiler platform
 * [ANTLR](http://www.antlr.org/) language recognition parser
 
 **NOTES**:
  
-* A modified version of Elasticsearch ships with TFS. 
-  Search will work only with this version of Elasticsearch.
-  
-* A newer version of Elasticsearch ships with TFS 2018 Update 2 and above. Upgrading from an older version of Search will result in all content being re-indexed after the installation. Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete.
-
-* The system or TFS administrator must ensure that Server JRE is
+1. A modified version of Elasticsearch ships with TFS. 
+   Search will work only with this version of Elasticsearch.  
+1. A newer version of Elasticsearch ships with TFS 2018 Update 2 and above. Upgrading from an older version of Search will result in all content being re-indexed after the installation.
+   Depending on the volume of content (code files, work items, and wiki pages), re-indexing can take some time to complete.
+1. The system or TFS administrator must ensure that Server JRE is
   maintained and updated in line with the software provider's recommendations. 
   Also see the [installation notes](#java-notes) that follow.
 
