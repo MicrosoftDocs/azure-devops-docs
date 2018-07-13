@@ -16,7 +16,7 @@ ms.date: 06/21/2018
 
 
 <a id="adjust-work">  </a>
-# Adjust work to fit team capacity
+# 4. Adjust work to fit sprint capacity
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 

@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 03/20/2018
 ---
 
@@ -133,7 +134,7 @@ To modify the pick list for most string or integer fields within a work item for
 
 Rules support combining lists, restricting to whom a list applies, and setting conditions on when a list appears on the work item form. Rules control whether a distribution list is expanded to show its individual members or a list is filtered by using the optional **expanditems** and **filteritems** attributes. Use global lists to minimize the work that is required to update a list that is shared across WITs or team projects.
 
-When you use a list in several WITs or across several team projects, maintaining it as a global list minimizes your maintenance requirements. Also, if you need to have parts of lists show up as different across WITs or team projects, you can define a global list for part of a pick list. See see [Define pick lists](https://msdn.microsoft.com/library/ms194947.aspx) and [Define global lists](reference/define-global-lists.md).
+When you use a list in several WITs or across several team projects, maintaining it as a global list minimizes your maintenance requirements. Also, if you need to have parts of lists show up as different across WITs or team projects, you can define a global list for part of a pick list. See see [Define pick lists](reference/define-pick-lists.md) and [Define global lists](reference/define-global-lists.md).
 
 <a id="add-rules">  </a>
 ### Add rules to a field
@@ -174,7 +175,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 
 0.  Locate the section of the XML file that begins with ```FIELDS```.
 
-0.  Add the ```FIELD``` element that specifies the name of the custom field to add. You must specify the following required attributes: friendly ```name```, ```refname``` (reference name), and ```type```. For more information, see [FIELD (Definition) element reference](https://msdn.microsoft.com/Library/aa337627.aspx).
+0.  Add the ```FIELD``` element that specifies the name of the custom field to add. You must specify the following required attributes: friendly ```name```, ```refname``` (reference name), and ```type```. For more information, see [FIELD (Definition) element reference](reference/field-definition-element-reference.md).
 
     The following code specifies the custom field, Requestor, with a reference name of ```FabrikamFiber.MyTeam.Requestor``` and a pick list of allowed values, with the default value of Customer.
 
@@ -256,15 +257,21 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 <a id="custom-control">  </a>
 ## Add a custom control  
 
-Using the [object model for tracking work items](/tfs/server/architecture/extend-vs-for-alm), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+Using the [object model for tracking work items](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb130347(v%3dvs.120)), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+
+::: moniker range=">= tfs-2017 <=tfs-2018"
+
+Using [REST APIs for tracking work items](https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
 Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=VSTS&sortBy=Relevance). For example:
 
--   [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) that supports the input of multiple values for a field by showing a list of check boxes
--   [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control) that supports adding color to pick list items
+-   [Multi-value control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control) that supports the input of multiple values for a field by showing a list of check boxes  
+-   [Color picklist control](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.color-form-control) that supports adding color to pick list items  
 -   [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions) that provides a group extension with a customizable set of rules which support one-click action.    
 
 To add a custom control to the new web form, see [WebLayout and Control elements](reference/weblayout-xml-elements.md). 
+
+::: moniker-end 
 
 <!--- NOT A SUPPORTED FEATURE 
 
@@ -336,7 +343,7 @@ Other related topics or resources:
 - [WebLayout and Control elements](reference/weblayout-xml-elements.md)
 - [Guide to administrative tasks](../../organizations/accounts/account-management.md)  
 - [Import, export, and manage work item fields (witadmin)](reference/witadmin/manage-work-item-fields.md).
-- [Team Foundation Server - Project Management & Work Item forum](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking)  
+  
 
 
 ### Required permissions
@@ -404,7 +411,7 @@ In addition to the attributes that you can change for a work item field, there a
 
 ![Work Item Field Explorer](_img/IC633020.png)
 
-For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](http://blogs.msdn.com/b/visualstudioalm/archive/2012/08/17/work-item-field-attributes-what-you-can-and-can-t-change.aspx).
+For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](https://blogs.msdn.microsoft.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-cant-change/).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="integration-fields">  </a>

@@ -13,7 +13,7 @@ ms.date: 06/21/2018
 ---
 
 
-# Sprint burndown 
+# Monitor sprint burndown 
  
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 

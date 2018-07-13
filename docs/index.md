@@ -1177,7 +1177,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="https://visualstudio.microsoft.com/en-us/docs/integrate/api/overview">
+                                <a href="https://docs.microsoft.com/en-us/rest/api/vsts">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
