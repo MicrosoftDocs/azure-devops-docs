@@ -16,7 +16,7 @@ ms.date: 06/21/2018
 
 <a id="set-capacity">  </a>
 
-## Set your team's capacity
+# 3. Set sprint capacity
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
