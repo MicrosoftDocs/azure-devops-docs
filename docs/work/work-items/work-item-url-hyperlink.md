@@ -33,12 +33,12 @@ Examples in this topic use the following conventions:
 
 ## VSTS
 
-<b>https://</b>*AccountName.visualstudio.com/ProjectName/*<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
+<b>https://</b>*AccountName.visualstudio.com/ProjectName/*<b>_workitems/edit/</b>*WorkItemNumber*
 
 **Example:** 
 
 ```
-https://fabrikam/DefaultCollection/Phone%20Saver/_workitems?id=133&_a=edit
+https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
 ```  
 
 ::: moniker-end  

@@ -102,6 +102,9 @@ Are there custom hubs which expose important details?
  
 ## Partial migration tips
 
+Accounts containing sensitive material should not enable the public projects policy.
+In that case, we recommend creating an entirely separate account to host your public projects.
+
 <a id="move-work-items" />
 ### Move work items to a private project 
 
@@ -109,9 +112,9 @@ If one or a handful of work items are sensitive, you can [move them](../../work/
 Cross-project links will continue to work for members.
 Non-members won't have access to the content since it resides in a private project.
 
-If you have a large number of sensitive work items, consider keeping your current project private and creating a new public project.
-You can migrate a few work items by hand into the new project.
-Migrating a large number of work items can be accomplished using the open source [WiMigrator](https://github.com/Microsoft/vsts-work-item-migrator) maintained by Microsoft.
+If you have a large number of sensitive work items, consider keeping your current project private.
+Instead, create a new public project in another account.
+Migrating work items can be accomplished using the open source [WiMigrator](https://github.com/Microsoft/vsts-work-item-migrator) maintained by Microsoft.
 
 ### Git tip-only migration
 If a repository cannot be shared due to problematic history, consider doing a tip-only migration to a new repository in a different project.
