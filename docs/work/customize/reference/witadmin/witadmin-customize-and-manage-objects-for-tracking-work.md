@@ -99,7 +99,7 @@ All **witadmin** commands can be run against an on-premises TFS. If you are new 
 
 ##[Work items](remove-work-items-permanently.md) 
 
-- **witadmin destroywi**: Permanently delete work items    
+- **destroywi**: Permanently delete work items    
 
 
 ##[Client cache](rebuild-client-cache.md)

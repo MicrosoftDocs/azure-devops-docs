@@ -39,6 +39,7 @@ Build and release:
 - [Build and release with Microsoft-hosted Linux and macOS agents](#build-and-release-with-microsoft-hosted-linux-and-macos-agents)
 - [Automatically deploy to new targets in a deployment group](#automatically-deploy-to-new-targets-in-a-deployment-group)
 - [Hold deployments until gates succeed consistently](#hold-deployments-until-gates-succeed-consistently)
+- [Azure DevOps Projects now generally available](#azure-devops-projects-now-generally-available)
 
 Package:
 
@@ -47,6 +48,7 @@ Package:
 Admin:
 
 - [Connect or disconnect Azure Active Directory as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
+- [Public projects available in preview for all accounts](#public-projects-available-in-preview-for-all-accounts)
 
 ## Code
 
@@ -128,6 +130,10 @@ Release gates enable automatic evaluation of health criteria before a release is
 > [!div class="mx-imgBorder"]
 ![Gates hold setting](_img/137_07.png)
 
+### Azure DevOps Projects now generally available
+
+Back in [November](/vsts/release-notes/2017/nov-28-vsts#azure-devops-project-release-tagimgrelease-notes-tagreleasepng) we introduced DevOps Projects, which helps ou get up and running with a full DevOps pipeline on Azure, from code through monitoring, in just a few minutes. We've added services along the way and incorporated a lot of your feedback. We'll now continue moving forward with it in generally availability to help you go even further on your journey with DevOps. See the [Azure DevOps Projects general availability post](https://blogs.msdn.microsoft.com/devops/2018/07/12/azure-devops-project-general-availability/) on the Microsoft DevOps Blog for more information.
+
 ## Package
 
 ### Get started with pre-installed Package Management
@@ -142,6 +148,16 @@ The Package Management extension is pre-installed into all accounts. If you're u
 ### Connect or disconnect Azure Active Directory as a Project Collection Admin
 
 A Project Collection Administrator (PCA) can now [connect or disconnect their account from Azure Active Directory](/vsts/organizations/accounts/connect-account-to-aad?view=vsts). Previously this had to be done by an account owner.
+
+### Public projects available in preview for all accounts
+
+> [!IMPORTANT]
+> To use this capability, an account administrator must [enable public projects](/vsts/organizations/public/create-public-project?view=vsts&tabs=horizontal#enable-anonymous-access-to-projects-for-your-organization) from the **Settings** page. 
+
+As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/), we're bringing [public projects](/vsts/organizations/public/index?view=vsts) to VSTS. For the first time, you'll be able to mark a VSTS Team Project as public. This will enable anonymous (un-authenticated) users to be able to view the contents of that project, including work items, code, and build results. Although the feature is still in preview, as of this sprint you will no longer need to be invited to join the private preview.
+
+> [!IMPORTANT]
+> If you're using a public project to build a repository hosted on GitHub, note that while pull requests (PRs) from branches within your repository will build fine, PRs opened from forks of your repository will not build right now.
 
 ## Feedback
 
