@@ -16,7 +16,7 @@ ms.date: 06/21/2018
 
 
 <a id="define-tasks">  </a>
-# Define tasks to complete backlog items 
+# Add tasks to backlog items 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 

@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 06/21/2018
 ---
 
-# Update and monitor your Taskboard  
+# 6. Update and monitor your Taskboard  
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)] 
 
