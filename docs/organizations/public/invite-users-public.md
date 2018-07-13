@@ -19,7 +19,11 @@ monikerRange: 'vsts'
 
 # Invite users to contribute to your public project
 
-To enable users to contribute to your project, you must add them as a member. Before you do so, review the notes provided in [Private-to-public migration checklist](migration-checklist.md).
+To enable users to contribute to your project, you must add them as a member.
+
+> [!IMPORTANT]
+> Before you add a member, review the notes provided in [private-to-public migration checklist](migration-checklist.md) as well as
+> the [additional cross-project resources](../accounts/resources-granted-to-project-members.md) this grants.
 
 
 ## Open Settings>Users hub
