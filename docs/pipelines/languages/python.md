@@ -22,7 +22,7 @@ You can build Python projects using [Microsoft-hosted agents](../agents/hosted.m
 
 # [YAML](#tab/yaml)
 
-Create a file named **vsts-ci.yml** in the root of your repository. Then, add applicable phases and tasks to the YAML file as described below.
+Create a file named **.vsts-ci.yml** in the root of your repository. Then, add applicable phases and tasks to the YAML file as described below.
 
 # [Designer](#tab/designer)
 
