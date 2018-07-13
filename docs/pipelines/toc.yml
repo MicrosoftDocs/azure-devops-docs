@@ -38,7 +38,7 @@
     href: apps/mobile/xcode-ios.md
 - name: Targets
   items:
-  - name: Azure Container Service (Kubernetes)
+  - name: Azure Kubernetes Service
     href: apps/cd/azure/deploy-container-kubernetes.md
   - name: Azure Stack
     href: targets/azure-stack.md
