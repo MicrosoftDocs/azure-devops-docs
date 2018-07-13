@@ -38,7 +38,7 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 
 ## Q&A
 
-#### Q: I am making an interactive client-side application. Should I use [VSTS Client Libraries](./../client-libraries/dotnet.md) or [VSTS REST APIs](https://docs.microsoft.com/en-us/rest/api/vsts)?
+#### Q: I am making an interactive client-side application. Should I use [VSTS Client Libraries](./../client-libraries/dotnet.md) or [VSTS REST API's](https://docs.microsoft.com/en-us/rest/api/vsts)?
 A: We recommend using VSTS Client Libraries over REST API's when accessing VSTS resources. They are simplier and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST API's.
 
 #### Q: Can I use ADAL if I log into my VSTS account with a Microsoft account (MSA)?

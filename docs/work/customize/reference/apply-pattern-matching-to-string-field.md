@@ -5,7 +5,8 @@ description: Syntax and usage for the MATCH element to force values in a field o
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 1134a153-0133-4404-8690-d25e934a45f7
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: reference
 ms.date: 02/10/2017
@@ -23,7 +24,7 @@ You can use the **MATCH** element to force values in a field of String type to f
 ## MATCH Element Syntax Structure  
  You use the **MATCH** element to enforce basic pattern matching by defining a pattern that values in String type fields must match.  
   
-```  
+```xml
 <MATCH pattern="patternValue" for="userGroupName" not="userGroupName" />  
   
 ```  

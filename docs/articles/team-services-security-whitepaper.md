@@ -103,9 +103,9 @@ attachments. For more information, see documentation on
 
 Administrators can manage access to resources by granting or restricting
 permissions on user identities or groups. VSTS uses federated
-authentication of user identities via Azure Active Directory (AAD) and
+authentication of user identities via Azure Active Directory (Azure AD) and
 Microsoft Account (MSA, formerly LiveID). During authentication, the
-user is routed to the authentication provider (AAD or MSA) where they
+user is routed to the authentication provider (Azure AD or MSA) where they
 provide their credentials. Once the authentication provider has verified
 the user's credentials, VSTS issues an authentication cookie to the user,
 which allows them to remain authenticated against VSTS. In this way, the
@@ -517,17 +517,17 @@ for more information on how to classify your data.
 ### Adopt Azure Active Directory
 
 Another action you can take to improve the security of your end users'
-credentials is to use Azure Active Directory (AAD) instead of Microsoft
+credentials is to use Azure AD instead of Microsoft
 Accounts (MSA) to manage your organization's access to VSTS. 
 This allows your IT department to manage its end user access policy including
 password complexity, password refreshes and expiration if the user
 leaves your organization. Through Active Directory federation, you can
 directly link Azure Active Directory to your organization's central
 directory so you have only one location to manage these details for your
-enterprise. Here is a brief comparison between MSA and AAD
+enterprise. Here is a brief comparison between MSA and Azure AD
 characteristics relative to VSTS access:
 
-| Properties                            | MSA                        | AAD  |
+| Properties                            | MSA                        | Azure AD  |
 | :-------------------------------------|:---------------------------|:-----|
 | Identity creator      | User | Organization |
 | Single user name / password for all work assets      | No      |   Yes |
@@ -544,9 +544,9 @@ You can learn more about how to
 ### Require two-factor authentication
 
 In some cases, you might want to restrict access to your VSTS account 
-by requiring more than one factor to sign in. AAD lets you require multiple factors, 
+by requiring more than one factor to sign in. Azure AD lets you require multiple factors, 
 such as phone authentication in addition to a username and password, for all 
-authentication requests. You can [learn more](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/) about turning on multifactor authentication for AAD.
+authentication requests. You can [learn more](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/) about turning on multifactor authentication for Azure AD.
 
 ### Use BitLocker
 

@@ -321,7 +321,7 @@ You must also configure two Jenkins service hooks so you can execute CI builds v
 
 1. Repeat the steps in this section to create another **service hook** for the **pull request merge attempted** trigger type.  This will allow either simple commits to the repository as well as pull requests to both trigger the Jenkins build.
 
-## Install the Release Management Utilty tasks VSTS extension
+## Install the Release Management Utility tasks VSTS extension
 
 A release pipeline specifies the process VSTS executes to deploy the app.  In this example, you deploy your app that originates from the Jenkins CI system.  You deploy to a Docker image running Tomcat and a Spring Boot app to an AKS cluster.
 
