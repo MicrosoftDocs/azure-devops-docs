@@ -67,15 +67,8 @@ To enable users to contribute to your project, you must add them as a member.
 	> [!div class="mx-imgBorder"]  
 	> ![Invite new users](_img/invite-users/add-new-user-form.png)
 
-	> [!NOTE]
- 	> You must add email addresses for
- 	> ["personal" Microsoft accounts](https://www.microsoft.com/account). If your users don't have Microsoft accounts,
-	> have them [sign up](https://signup.live.com/).
- 	> Alternatively, you can use [Azure Active Directory (Azure AD)](../../accounts/connect-account-to-aad.md) 
-	> to authenticate users and control account access.
-
-	- **Users**: Enter the email address (Microsoft account address) for the user account. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.
-	- **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. You can add up to 5 users (total including your user account) with *Basic* access. Otherwise, you can add an unlimited number of users with *Stakeholder* access. To learn more, see [About access levels](../security/access-levels.md).
+	- **Users**: Enter the email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that for Microsoft accouts (MSAs), the email addresses display in red.
+	- **Access level**: You can add up to 5 users (total including your own user account) with *Basic* access. Otherwise, you can add an unlimited number of users with *Stakeholder* access. In public projects, both the Stakeholder and the Basic access level grant full access to **Code**, **Work**, and **Build and Release**, but Stakeholders only get partial access to **Test** and **Dashboards**.  To learn more, see [Default roles & access for public projects](default-roles-access-public.md).
 	- **Add to projects**: Select the public project that you created, or select **Add All** to add the user to all projects defined for the organization.  
 	- **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../security/permissions-access.md).
 
