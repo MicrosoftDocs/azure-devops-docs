@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.article:   
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
  
 ms.date: 09/29/2017  
@@ -44,7 +45,7 @@ https://fabrikam.visualstudio.com/DefaultCollection/_workitems?_a=query&wiql=SEL
 
 The decoded WIQL conforms to: 
 
-```
+```sql
 SELECT [System.ID], [System.Title]
    FROM WorkItems 
    WHERE [System.TeamProject]='FabrikamFiber' 

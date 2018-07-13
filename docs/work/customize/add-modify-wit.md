@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 02/02/2017
 ---
@@ -84,7 +85,7 @@ You can apply field rules when you change state, specify a reason, or during a w
 
 For example, by adding the **EMPTY** rule when the state is set to Active, you can automatically nullify the Closed Date and Closed By fields and make them read-only. This is useful when reactivating a work item from a closed state.
 
-```
+```xml
 <STATE value="Active">
    <FIELDS>
 . . .
@@ -236,7 +237,7 @@ How do you restrict users from creating work items of a certain type?
 
 If you have a WIT that you want to retire, but maintain the work items that have been created based on that type, you can add a rule that disables all valid users from saving the work item type.
 
-```
+```xml
 <TRANSITION from=" " to="New">
   <FIELDS>
      <FIELD refname="System.CreatedBy">

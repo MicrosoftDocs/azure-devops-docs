@@ -369,7 +369,7 @@ If you don't know the query you want to execute, you can use the [work item quer
 >    //create instance of work item tracking http client
 >    using (WorkItemTrackingHttpClient workItemTrackingHttpClient = new WorkItemTrackingHttpClient(_uri, _credentials))
 >    {
->        //execute the query to get the list of work items in teh results
+>        //execute the query to get the list of work items in the results
 >        WorkItemQueryResult workItemQueryResult = workItemTrackingHttpClient.QueryByWiqlAsync(wiql).Result;
 >     
 >        //some error handling                

@@ -80,7 +80,7 @@ This section explores possibilities for further integrating VSTS and GitHub. You
 1. Navigate to your GitHub account. Select **Code**. Create a Readme.md file unless one already exists.
 1. For this step, paste the following markdown into your Readme.md file. Replace the tokens using the name of the build pipeline and the `definitionId` that you obtained above.
 
-    `[![Build status](https://{your-vsts-account}.visualstudio.com/{your-vsts-project}/_apis/build/status/{build-definition-name}?branch=master)](https://{your-vsts-account}.visualstudio.com/{your-vsts-project}/_build/latest?definitionId={definitionId}&branch=master)]`
+    `[![Build status](https://{your-vsts-account}.visualstudio.com/{your-vsts-project}/_apis/build/status/{build-definition-name}?branch=master)](https://{your-vsts-account}.visualstudio.com/{your-vsts-project}/_build/latest?definitionId={definitionId}&branch=master)`
 
 1. **Commit** your Readme.md file to the repository. The rendered Readme now shows the build badge.
 1. Click on the build badge to navigate to the last completed build in VSTS.

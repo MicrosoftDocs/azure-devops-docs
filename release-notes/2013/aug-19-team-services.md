@@ -20,7 +20,7 @@ Here’s a snip from the middle of the page. The first column is the date that t
   
 ![Release archive](_img/8_19_01.png)
 
-For now you can access this page through the [Release archive](https://visualstudio.microsoft.com/en-us/articles/news/features-timeline) link. On Wednesday, we’ll be adding a link to the [Team Foundation Service News](https://visualstudio.microsoft.com/team-services/updates/) page so you can get to it from there.
+For now you can access this page through the [Release archive](../features-timeline.md) link. On Wednesday, we’ll be adding a link to the [Team Foundation Service News](https://visualstudio.microsoft.com/team-services/updates/) page so you can get to it from there.
 
 ##Code commenting improvements
 
