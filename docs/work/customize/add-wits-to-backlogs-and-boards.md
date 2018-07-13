@@ -188,7 +188,7 @@ WITs that you add to the Requirement Category show up on the product backlog and
 
 4.	Edit the Categories definition. Add the WIT to the Requirement category. Here we add Service App.  
 
-	```
+	```xml
 	 <CATEGORY name="Requirement Category" refname="Microsoft.RequirementCategory">
 	    <DEFAULTWORKITEMTYPE name="User Story" />
 	    <WORKITEMTYPE name="Service App" />
@@ -354,7 +354,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 
 3.	Edit the Categories definition. Add the WIT to the Task category. Here we add Service Task.  
 
-	```
+	```xml
 	 <CATEGORY name="Task Category" refname="Microsoft.TaskCategory">
 	    <DEFAULTWORKITEMTYPE name="Task" />
 	    <WORKITEMTYPE name="Service Task" />
@@ -406,7 +406,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 
 3.	Edit the Categories definition. Add the WIT to the Bug Category. Here we add two WITs.  
 
-	```
+	```xml
 	 <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
 	    <DEFAULTWORKITEMTYPE name="Bug" />  
 	    <WORKITEMTYPE name="Service Bug" />  
@@ -434,7 +434,7 @@ WITs that you add to the Bug Category will be treated based on the [team setting
     </States>  
 	```
 5.	Add the WIT color definition to the ProcessConfiguration ```WorkItemColors``` section. For example:  
-	```
+	```xml
 	<WorkItemColor primary="FFF2CB1D" secondary="FFF6F5D2" name="Service Bug" />  
 	<WorkItemColor primary="FFFF00FF" secondary="FFFFCCFF" name="Feedback" />  
 	```

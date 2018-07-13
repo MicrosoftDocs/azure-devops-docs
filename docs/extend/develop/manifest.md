@@ -78,7 +78,7 @@ If your extension is ready for users on the Marketplace to try, but you are stil
     ]
 }            
 ```
-####Paid flag
+#### Paid flag
 
 If you want to sell your extension on the Marketplace, you can mark it as `paid`:
 
@@ -138,10 +138,10 @@ For a different experience than one of the default options use the **CustomerQnA
 
 ```json
 {
-    "CustomerQnASupport": {
-        "enableqna":"true",
+    "customerQnaSupport": {
+        "enableqna": true,
         "url": "http://uservoice.visualstudio.com"
-    } 
+    }
 }
 ```
 
@@ -157,30 +157,30 @@ Properties for the CustomerQnASupport section:
 
 #### Example 10: Extension using custom Q&A
 
-```
+```json
 {
-     "CustomerQnASupport": {
-        "enableqna":"true",
+    "customerQnaSupport": {
+        "enableqna": true,
         "url": "http://uservoice.visualstudio.com"
-    } 
+    }
 }
 ```
 #### Example 11: Extension with GitHub repository but using Marketplace Q&A instead of GitHub issues
 
-```
+```json
 {
-     "CustomerQnASupport": {
-        "enableqna":"true"
-    } 
+    "customerQnaSupport": {
+        "enableqna": true
+    }
 }
 ```
 #### Example 12: Extension disabling Q&A section
 
-```
+```json
 {
-     "CustomerQnASupport": {
-        "enableqna":"false"
-    } 
+    "customerQnaSupport": {
+        "enableqna": false
+    }
 }
 ```
 
@@ -228,7 +228,7 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 
 #### Example 1: Extension that works with VSTS and Team Foundation Server
 
-```
+```json
 {
     "targets": [
         {
@@ -240,7 +240,7 @@ Supported identifiers for **integrations** (tools or services that integrate wit
 
 #### Example 2: Extension that works only with VSTS
 
-```
+```json
 {
     "targets": [
         {
@@ -254,7 +254,7 @@ Installation targets can also be used in the manifest of integrations (i.e. prod
 
 #### Example 3: Integration that works with VSTS and Team Foundation Server
 
-```
+```json
 {
     "targets": [
         {
@@ -266,7 +266,7 @@ Installation targets can also be used in the manifest of integrations (i.e. prod
 
 #### Example 4: Integration that only works with Team Foundation Server
 
-```
+```json
 {
     "targets": [
         {
@@ -303,7 +303,7 @@ Version numbers for Team Foundation Server:
 
 #### Example 5: Extension that works with VSTS and Team Foundation Server 2017 and later
 
-```
+```json
 {
     "targets": [
         {
@@ -319,7 +319,7 @@ Version numbers for Team Foundation Server:
 
 #### Example 6: Integration that works with Team Foundation Server 2015 and later
 
-```
+```json
 {
     "targets": [
         {
@@ -332,7 +332,7 @@ Version numbers for Team Foundation Server:
 
 #### Example 7: Integration that works with Team Foundation Server 2013 and 2015
 
-```
+```json
 {
     "targets": [
         {
@@ -347,7 +347,7 @@ Version numbers for Team Foundation Server:
 
 `Microsoft.VisualStudio.Services` is a shortcut for VSTS and Team Foundation Server 2015 Update 2 and later. So this:
 
-```
+```json
 {
     "targets": [
         {
@@ -359,7 +359,7 @@ Version numbers for Team Foundation Server:
 
 is equivalent to:
 
-```
+```json
 {
     "targets": [
         {
@@ -379,7 +379,7 @@ Installation targets and demands are used together to present users with an accu
 
 #### Example 8: Extension that uses version 3.0 APIs
 
-```
+```json
 {
     "targets": [
         {
@@ -399,7 +399,7 @@ Resolves to the following installation targets:
 
 #### Example 9: Integration that uses version 2.0 APIs
 
-```
+```json
 {
     "targets": [
         {

@@ -68,7 +68,7 @@ in order to get more details about the resource.
 
 Sample JSON:
 
-```
+```json
 	{
 	    "event.type": "git.push",
 	    ...

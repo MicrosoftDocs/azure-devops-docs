@@ -49,7 +49,6 @@ You can scale your system as needed by adding teams and/or team projects. These 
  
 
 To learn more, see the following topics:  
-/azure/devops/agile/scale-agile-large-teams
 - [Scale Agile to large teams](/azure/devops/agile/scale-agile-large-teams)
 - [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) 
 - Manage a [portfolio of backlogs](portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.  
