@@ -54,7 +54,7 @@ PAT nearing expiration
 - Connecting to a VSTS git repo using git.exe.  This creates a token with a display name like "git: https://MyAccount.visualstudio.com/ on MyMachine".
 - Setting up an Azure App Service web app deployment.  This creates a token with a display name like "Service Hooks :: Azure App Service :: Deploy web app".
 - Setting up web load testing as part of a pipeline.  This creates a token with a display name like "WebAppLoadTestCDIntToken".
-- Setting up Microsoft Teams Integration Messaging Extension.  This creates a token with a display name like "Microsoft Teams Integration"
+- Setting up Microsoft Teams Integration Messaging Extension.  This creates a token with a display name like "Microsoft Teams Integration".
 
 If you still believe a PAT was created in error, we suggest [revoking the PAT](https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/pats?view=vsts). The next step would be to investigate whether or not your password has been compromised; changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.  
 
