@@ -96,7 +96,7 @@ To understand what fields are available to use, look at the [events reference](.
 
 Work item fields appear in the event in the fields array, like this:
 
-```
+```json
     " fields": {
                 " System.AreaPath": "Fabrikam-Fiber-Git", 
                 " System.TeamProject": "Fabrikam-Fiber-Git", 

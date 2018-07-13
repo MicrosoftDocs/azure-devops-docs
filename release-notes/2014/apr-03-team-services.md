@@ -40,7 +40,7 @@ Many of our users started out with VS Online before we’d painted much of a pic
 
 ##Application Insights Limited Preview
 
-Application Insights, first [announced](https://visualstudio.microsoft.com/en-us/articles/news/2013/nov-13-team-services) back in November of 2013, is moving to “Limited Preview” and an invitation code is no longer required to try it out. With this change you can login to Visual Studio Online and start using Application Insights by selecting “Try Application Insights” tile.
+Application Insights, first [announced](../2013/nov-13-team-services.md) back in November of 2013, is moving to “Limited Preview” and an invitation code is no longer required to try it out. With this change you can login to Visual Studio Online and start using Application Insights by selecting “Try Application Insights” tile.
 
 ![Visual Studio Online: Try Application Insights](_img/4_3_01.png)
 

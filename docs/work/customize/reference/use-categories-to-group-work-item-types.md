@@ -21,7 +21,7 @@ Categories associate one or more WITs as belonging to the same category. The [Ag
   
 Here's an example of the feature and bug category entries within the Categories XML definition file:  
   
-```  
+```xml
 <CATEGORY name="Bug Category" refname="Microsoft.BugCategory">  
     <DEFAULTWORKITEMTYPE name="Bug" />  
   </CATEGORY>  

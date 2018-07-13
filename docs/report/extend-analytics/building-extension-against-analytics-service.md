@@ -49,7 +49,7 @@ as your extension image
 7. In the Analytics Extension folder create a new web page called **Analytics.html**
 8. Copy the following html and javascript in the Analytics.html page
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -94,7 +94,7 @@ VSS.notifyLoadSucceeded();
 For a more comprehensive discussion of authentication, see [Choosing the right authentication mechanism](../../integrate/get-started/authentication/authentication-guidance.md).
 To get an authorization token, replace the **Get authentication token** comment from the code above with the following:
 
-```
+```javascript
 //Get the access token and invoke a callback function
 VSS.getAccessToken().then(function(token){
 // Get the token
@@ -110,7 +110,7 @@ Once the token is retrieved, you need to add it to the request for data from the
 **Get analytics data** comment with the following:
 
 
-```
+```javascript
     //Get the access token and invoke a callback function
     VSS.getAccessToken().then(function(token){
 
@@ -144,7 +144,7 @@ The success and error callbacks are called respectively after the call to the An
 
 Finally, to build the chart, replace the **Create the chart** comment with the following code:
 
-```
+```javascript
 //Retrieve the JSON data
 var jsonData = JSON.parse(data);
 
@@ -186,7 +186,7 @@ var chart = c3.generate({
 Full documentation on extension manifests can be found in the [Extension manifest reference](../../extend/develop/manifest.md) documentation.
 For the purposes of this sample, use the following manifest and copy it into a file called vss-extension.json in the root folder.
 
-```
+```json
 {
   "manifestVersion": 1,
   "id": "AnalyticsSampleAddIn",

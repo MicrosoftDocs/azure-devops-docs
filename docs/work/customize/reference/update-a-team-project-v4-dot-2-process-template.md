@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/15/2017
 ---
 
@@ -201,8 +202,8 @@ Open a web portal and [determine if all features are available to you](../new-fe
   
 1.  Open Notepad or a text editor, and copy the following code into the file:  
   
-    ```  
-    <?xml version="1.0" encoding="utf-16"?  
+    ```xml
+    <?xml version="1.0" encoding="utf-16"?>
     <BugFilerMappings workitemtypetocreate="Bug">  
           <ReproSteps>Microsoft.VSTS.TCM.ReproSteps</ReproSteps>  
           <SystemInformation>Microsoft.VSTS.TCM.SystemInfo</SystemInformation>  
