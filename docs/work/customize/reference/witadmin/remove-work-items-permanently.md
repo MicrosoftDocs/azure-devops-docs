@@ -9,7 +9,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2018'
-ms.date: 03/20/2018
+ms.date: 07/12/2018
 ---
 
 # Remove work items permanently
@@ -36,7 +36,12 @@ You can permanently remove one or more work items from the on-premises Team Foun
 ```  
 witadmin destroywi /collection:CollectionURL /id:id [/noprompt]  
 ```  
-  
+
+::: moniker range="tfs-2018"
+> [!NOTE]
+> This command has been deprecated for TFS 2018.2 and later versions. Instead, you can use the [Recycle bin](../../../backlogs/remove-delete-work-items.md#restore-or-permanently-delete-work-items) to permanently delete work items, or use [REST API `DELETE`](https://docs.microsoft.com/rest/api/vsts/wit/work%20items/delete).
+::: moniker-end
+
 #### Parameters  
   
 |**Parameter**|**Description**|  
@@ -49,7 +54,7 @@ witadmin destroywi /collection:CollectionURL /id:id [/noprompt]
   
 ## Permanently remove work items from the database  
  
-The following example deletes the work item 2003 from the database for Collection1 on the AdventureWorksServer server:  
+The following example deletes the work item *2003* from the database for *Collection1* on the *AdventureWorksServer* server:  
   
 ```  
 witadmin destroywi /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /id:2003  
