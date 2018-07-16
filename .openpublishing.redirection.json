@@ -756,6 +756,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/git/branch-permissions-before-2017.md",
+      "redirect_url": "/vsts/git/branch-permissions?view=tfs-2017",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/git/howto/pr-status-policy.md",
       "redirect_url": "/vsts/git/how-to/pr-status-policy",
       "redirect_document_id": false

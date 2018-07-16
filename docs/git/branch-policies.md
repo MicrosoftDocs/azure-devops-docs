@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 06/07/2018
+ms.date: 07/13/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -51,7 +51,7 @@ The basic policy requires that a certain number of reviewers approve the code wi
 
 ![Check the Require Code Reviews box](_img/branch-policies/RequireCodeReviews.png)  
 
-- If **Allow users to approve their own changes** is not selected, a user can still vote **Approve** on their pull request, but their vote won't count toward the **Require a minimum number of reviewers** policy.
+- If **Allow users to approve their own changes** is not selected, the creator of the pull request can still vote **Approve** on their pull request, but their vote won't count toward the **Require a minimum number of reviewers** policy.
 - If any reviewer rejects the changes, the pull request cannot be completed unless the **Allow completion even if some reviewers vote "Waiting" or "Reject"** is selected.
 - To reset code reviewer votes when new changes are pushed to the source branch, check **Reset code reviewer votes when there are new changes.**
 
@@ -166,16 +166,30 @@ Select **Optional** if you want to add reviewers automatically, but not require 
 When the required reviewers approve the code, you can complete the pull request.
 
 ![Pull request status shows that reviewers have approved](_img/branch-policies/RequiredReviewerApproved.png)   
+
 ::: moniker range=">= tfs-2015" 
 
 ## Bypass branch policies
 
-In some cases, you need to bypass policy requirements so you can push changes to the branch directly. For these situations, grant the **Exempt from policy enforcement** permission to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](../organizations/security/permissions.md#git-repository-permissions-object-level).  
+>[!NOTE]
+>There are several permissions that allow users to bypass branch policy. In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** permission allows users with this permission to perform the following actions:
+>
+>- When completing a pull request, opt-in to override policies and complete a pull request even if the current set of branch policies is not satisfied.
+>- Push directly to a branch even if that branch has branch policies set. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
+>
+>[In VSTS](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission is removed and its functionality divided into the following two new permissions:
+>
+>- **Bypass policies when completing pull requests**
+>- **Bypass policies when pushing**
+>
+>Users that previously had **Exempt from policy enforcement** enabled now have the two new permissions enabled instead.
+
+In some cases, you need to bypass policy requirements so you can push changes to the branch directly or complete a pull request even if branch policies are not satisfied. For these situations, grant the the desired permission from the previous list to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along the with other [Git permissions](../organizations/security/permissions.md#git-repository-permissions-object-level).  
 
 ![Exempt from policy enforcement permission](_img/branch-policies/PolicyExemptPermission.png)
 
 >[!IMPORTANT]
-> Users with **Exempt from policy enforcement permission** set to allow can complete pull requests even if the branch policy is not satisfied. Use caution when granting this permission, especially
+> Use caution when granting these permissions, especially
 > at the repo and team project level.
 
 ::: moniker-end 
@@ -184,7 +198,7 @@ In some cases, you need to bypass policy requirements so you can push changes to
 
 ## Q & A
 
-
+ms
 - [Can I push changes directly to a branch after a branch policy is configured?](#can-i-push-changes-directly-to-a-branch-after-a-branch-policy-is-configured)
 - [What is auto-complete?](#what-is-auto-complete)
 - [When are the conditions set in branch policies checked?](#when-are-the-conditions-set-in-branch-policies-checked)
@@ -198,6 +212,9 @@ In some cases, you need to bypass policy requirements so you can push changes to
 #### Can I push changes directly to a branch after a branch policy is configured?
 
 No. After you set up a branch policy, you cannot directly push changes to the branch. Changes to the branch are only made through [pull requests](pull-requests-overview.md).
+
+>[!NOTE]
+>If you have permissions that allow you to [bypass branch policies](#bypass-branch-policies) you can push directly to a branch after branch policy is configured.
 
 #### What is auto-complete?
 
