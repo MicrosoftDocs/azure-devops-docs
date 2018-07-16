@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 06/21/2018  
@@ -73,7 +74,7 @@ The following example shows how to find all closed bugs by modifying the
 0.	Save the query to your **My Queries** folder.  
 	::: moniker range="vsts"
 	> [!div class="mx-imgBorder"]  
-	> ![Save As query query dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
+	> ![Save Query As dialog, new experience](_img/view-run-queries/save-as-new-exp.png)  
 	::: moniker-end
 	::: moniker range=">= tfs-2015 <= tfs-2018"	 
 	![Save Query As](_img/6.png)    
