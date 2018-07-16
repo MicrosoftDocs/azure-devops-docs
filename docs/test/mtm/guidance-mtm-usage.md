@@ -21,7 +21,13 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) offer both w
 * The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
 * The **Test hub** in VSTS and TFS is a web-based manual testing solution, which works across all platforms and with all browsers. We have invested in Test hub over past two years to provide you better experiences across Plan, Author, Execute and Track phases of Manual testing.
 
->Because the **Test hub** is a fully featured Test management solution which works across all platforms and with all browsers, 
+*****
+To use the Test hub you must have either a [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
+subscription, or have installed the [Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
+available from Visual Studio Marketplace.
+*****
+
+Because the **Test hub** is a fully featured Test management solution which works across all platforms and with all browsers, 
 we **recommend** you use the **Test hub** over Microsoft Test Manager for
 all your test management requirements.
 You can use Microsoft Test Manager to test your desktop applications by

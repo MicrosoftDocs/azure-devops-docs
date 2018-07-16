@@ -9,7 +9,7 @@ ms.technology: devops-security
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 02/07/2018
+ms.date: 06/28/2018
 monikerRange: '>= tfs-2013'
 ---
 # Default Git repository and branch permissions
