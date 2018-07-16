@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 07/13/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -55,51 +55,60 @@ Control branch permission settings from the branch permission view. Users and gr
 
 > [!NOTE] 
 > These permissions have changed in TFS 2017 Update 1 and VSTS.
-> If you are using an earlier version of TFS, see the [previous list of permissions](branch-permissions-before-2017.md).
+> Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
+> in the upper left corner of the window.
+>
+> ![Documentation version selector](../_img/documentation-version-selector.png)
 
-<table valign="top" width="100%">
-<tbody valign="top">
-	<tr>
-		<th width="30%">Permission</th>
-		<th width="70%">Description</th>
-	</tr>
-	<tr>
-		<th id="git-contribute-permission">Contribute</th>
-		<td>
-			Users with this permission can push new commits to the branch and lock the branch.
-		</td>
-	</tr>
-	<tr>
-		<th id="git-edit-policies-permission">Edit Policies</th>
-		<td>
-			Can edit [branch policies](branch-policies.md).
-		</td>
-	</tr>
-	<tr>
-		<th id="git-exempt-from-policy-enforcement-permission">Exempt from policy enforcement</th>
-		<td>
-			Users with this permission are exempt from the [branch policy](branch-policies.md) set for the branch.
-		</td>
-	</tr>
-	<tr>
-		<th id="git-force-push-permission">Force Push (Rewrite History and Delete Branches)</th>
-		<td>
-			Can force push to a branch, which can rewrite history.
-			This permission is also required to delete a branch.
-		</td>
-	</tr>
-	<tr>
-		<th id="git-manage-permissions-permission">Manage Permissions</th>
-		<td>
-			Can set permissions for the branch.
-		</td>
-	</tr>
-	<tr>
-		<th id="git-remove-others-locks-permission">Remove Others' Locks</th>
-		<td>
-			Can remove [locks](lock-branches.md) set on branches by other users.
-		</td>
-	</tr>
-</tbody>
-</table>
- 
+
+::: moniker range=">= tfs-2017 <= tfs-2018" 
+
+### Permissions in TFS 2017 Update 1 through TFS 2018 Update 2
+
+| Permission | Description                                                                                                 |
+|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| Contribute                                       | Users with this permission can push new commits to the branch and lock the branch.                          |
+| Edit Policies                                    | Can edit [branch policies](branch-policies.md).                                                                                   |
+| Exempt from policy enforcement                   | Users with this permission are exempt from the [branch policy](branch-policies.md) set for the branch when completing pull requests and can override the policies by checking **Override branch policies and enable merge** when completing a PR. Users with this permission can also push to a branch that has branch policies enabled. |
+| Force Push (Rewrite History and Delete Branches) | Can force push to a branch, which can rewrite history. This permission is also required to delete a branch. |
+| Manage Permissions                               | Can set permissions for the branch.                                                                         |
+| Remove Others' Locks                             | Can remove [locks](lock-branches.md) set on branches by other users.                                                            |
+
+::: moniker-end 
+
+::: moniker range="<= tfs-2017" 
+
+### Permissions in TFS 2017 and lower 
+
+| Permission   | Description                                                                                                                                                                                  |
+|-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Administer                                                            | Users with this permission can set branch permissions for other users, delete the branch, and lock the branch.                                                                               |
+| Contribute                                                            | Users with this permission can push new commits to the branch. Users with this permission cannot rewrite the existing commits on the branch. Users with this permission can lock the branch. |
+| Exempt from policy enforcement                                        | Users with this permission are exempt from the [branch policy](branch-policies.md) set for the branch.                                                                                                             |
+| Rewrite and destroy history (force push)                              | Can force push to a branch. This permission is also required to delete a branch.   Users with this permission can modify the commit history of a branch.    |                                                        
+
+::: moniker-end    
+
+::: moniker range="vsts" 
+
+### Permissions in VSTS
+
+>[!NOTE]
+>[In VSTS](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission (which is still available in TFS 2015 through TFS 2018 Update 2) was removed and its functionality divided into the following two new permissions:
+>
+>- **Bypass policies when completing pull requests**
+>- **Bypass policies when pushing**
+>
+>Users that previously had **Exempt from policy enforcement** enabled now have the two new permissions enabled instead. See the following table for more details on these two new permissions.
+
+| Permission  | Description |
+|-------------|-------------|
+| Contribute                                       | Users with this permission can push new commits to the branch and lock the branch.                          |
+| Edit Policies                                    | Can edit [branch policies](branch-policies.md).                                                                                   |
+| Bypass policies when completing pull requests    | Users with this permission are exempt from the [branch policy](branch-policies.md) set for the branch when completing pull requests and can opt-in to override the policies by checking **Override branch policies and enable merge** when completing a PR.                            |
+| Bypass policies when pushing   | Users with this permission can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.  |
+| Force Push (Rewrite History and Delete Branches) | Can force push to a branch, which can rewrite history. This permission is also required to delete a branch. |
+| Manage Permissions                               | Can set permissions for the branch.                                                                         |
+| Remove Others' Locks                             | Can remove [locks](lock-branches.md) set on branches by other users.                                                            |
+
+::: moniker-end 
