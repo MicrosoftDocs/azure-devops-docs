@@ -10,7 +10,7 @@ ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 02/12/2018
+ms.date: 07/13/2018
 monikerRange: '>= tfs-2013'
 ---
 # Permissions and groups in VSTS and TFS
@@ -842,7 +842,7 @@ You manage project-level permissions from the [web portal admin context](../../u
 
 With shared Analytics views, you can grant specific permissions to view, edit, or delete a view that you create.  You manage the security of Analytics views from the [web portal](../../report/analytics/analytics-security.md). 
 
-> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]
 > ![Manage permissions](../../report/analytics/_img/editable-views/view-permissions.png)  
 
 The following permissions are defined for each shared Analytics view. All valid users are automatically granted all permissions to manage Analytics views. Consider granting select permissions to specific shared views to other team members or security group that you create. See also, [What are Analytics views?](../../report/analytics/what-are-analytics-views.md)
@@ -1052,7 +1052,17 @@ Rename Repository
 
 You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../git/branch-permissions.md) from the web portal, the [TF command line tool](../../tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a team project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
 
+::: moniker range="vsts" 
+
 <img src="_img/permissions/git-repo-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
+
+::: moniker-end 
+
+::: moniker range=">=tfs-2015 <= tfs-2018" 
+
+<img src="_img/permissions/git-repo-permissions-tfs.png" style="border: 1px solid #C3C3C3;" />
+
+::: moniker-end 
 
 Set permissions across all Git repositories by making changes to the top-level **Git repositories** entry.  
 
@@ -1128,9 +1138,30 @@ By default, the team project level and collection level Readers groups have only
 	<tr>
 		<td id="git-exempt-from-policy-permission">Exempt From Policy Enforcement</td>
 		<td>
-		Can bypass branch policies.
+		Can bypass branch policies and perform the following two actions:<br>
+        <ul>
+          <li>Override branch policies and complete PRs that don't satisfy branch policy</li>
+          <li>Push directly to branches that have branch policies set</li>
+        </ul>
+        <br>
+        <b>This permission is present in TFS 2015 through TFS 2018 Update 2. [In VSTS it is replaced with the following two permissions](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection).</b>
 		</td>
 	</tr>
+	<tr>
+		<td id="git-bypass-policies-when-completing-pull-requests">Bypass policies when completing pull requests</td>
+		<td>
+		Can opt-in to override branch policies by checking **Override branch policies and enable merge** when completing a PR.<br><br>
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b> in the current version of VSTS.
+		</td>
+	</tr>
+	<tr>
+		<td id="git-bypass-policies-when-pushing">Bypass policies when pushing</td>
+		<td>
+		Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.<br><br>
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b> in the current version of VSTS.
+		</td>
+	</tr>
+
 	<tr>
 		<td id="git-force-push-permission">Force Push (Rewrite History and Delete Branches)</td>
 		<td>
