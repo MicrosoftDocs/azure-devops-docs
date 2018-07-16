@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 06/07/2018
+ms.date: 07/16/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -91,7 +91,10 @@ To create a tag, you must have the [Create Tag](../../organizations/security/per
 
 # [Web Portal](#tab/vsts-tfs-web-portal)
 
-You can create annotated tags using the web portal from both the **Tags** view and the **Commits** view. To create a lightweight tag, you can use [Git command line](https://git-scm.com/book/en/v2/Git-Basics-Tagging) or [Visual Studio](git-tags.md?tabs=visual-studio#create-tag).
+You can create annotated tags using the web portal from both the **Tags** view and the **Commits** view. 
+
+>[!IMPORTANT]
+> You can only create annotated tags in the web portal. To create a lightweight tag, you can use [Git command line](https://git-scm.com/book/en/v2/Git-Basics-Tagging) or [Visual Studio](git-tags.md?tabs=visual-studio#create-tag).
 
 
 
@@ -101,7 +104,7 @@ You can create annotated tags using the web portal from both the **Tags** view a
 
   ![Create tag](_img/git-tags/create-tag-button.png)
 
-1. Specify a **Name**, select the branch to **Tag from**, enter a **Description**, and select **Create**.
+1. Specify a **Name**, select the branch to **Tag from**, enter a **Description** (required since you are creating an annotated tag), and select **Create**.
 
   ![Create tag](_img/git-tags/create-tag.png)
 
