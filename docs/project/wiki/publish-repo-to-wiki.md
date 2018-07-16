@@ -81,7 +81,7 @@ Choose this option when you maintain markdown files in an existing Git repo and 
 
 	Specify the root of the repository when you want to publish all markdown files in the repository to your wiki.  
 
-3. Choose **Publish**. The wiki repo is populated with the markdown files and folders included within the repo you selected. If a sub-folder does not contain a markdown file, it will not show up in the  Wiki.
+3. Choose **Publish**. The wiki repo is populated with the markdown files and folders included within the repo you selected. 
 
 	For example, the following image shows the published repo for the files contained in the azure-docs-sdk-node repository selected in Step 2. 
 
