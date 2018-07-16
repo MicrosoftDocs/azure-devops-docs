@@ -31,7 +31,7 @@ Locale settings include language, date and time pattern, time zone, and user int
 
 ::: moniker range="vsts"
 
-To change your your account information, open your profile menu.
+To change your account information, open your profile menu.
 
 ![VSTS, My Profile link on Account menu](_img/user-prefs/open-profile-vsts.png)
 
