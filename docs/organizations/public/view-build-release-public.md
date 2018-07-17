@@ -25,7 +25,16 @@ When viewing a public project, you can view the status of build and release pipe
 
 [!INCLUDE [temp](_shared/navigation.md)] 
 
-# [Horizontal navigation](#tab/horizontal)  
+
+# [New navigation](#tab/new-nav)
+
+To view the status of recent builds, choose **Builds** under **Build and release**. To view a summary or history of any build, choose a build. 
+
+> [!div class="mx-imgBorder"]
+> ![Build and Release hub, Recent Builds, vertical navigation ](_img/pipelines/view-build-vert-brn.png)
+
+
+# [Previous navigation](#tab/previous-nav)  
 
 To view the status of recent builds, choose **Build and Release**.  To view a summary or history of any build, choose a build. 
 
@@ -33,19 +42,25 @@ To view the status of recent builds, choose **Build and Release**.  To view a su
 > ![Build and Release hub, Recent Builds page ](_img/pipelines/view-build-status.png)
 
 
-# [Vertical navigation](#tab/vertical)
-
-To view the status of recent builds, choose **Builds** under **Build and release**. To view a summary or history of any build, choose a build. 
-
-> [!div class="mx-imgBorder"]
-> ![Build and Release hub, Recent Builds, vertical navigation ](_img/pipelines/view-build-vert-brn.png)
-
 ---
 
 
 ## View active release pipelines and definitions 
 
-# [Horizontal navigation](#tab/horizontal)  
+# [New navigation](#tab/new-nav)  
+
+To view active release pipelines, choose **Releases** under **Build and release**. 
+
+> [!div class="mx-imgBorder"]
+> ![Build and Release, Recent Releases, vertical navigation ](_img/pipelines/view-releases-vert.png)
+
+From there, you can drill into the details of a release. For example, here we show  the **Release-3** pipeline.   
+
+> [!div class="mx-imgBorder"]
+> ![Build and Release hub, Build status page ](_img/pipelines/release-chart.png)
+
+
+# [Previous navigation](#tab/previous-nav)  
 
 To view active release pipelines, choose **Build and Release>Releases**. 
 
@@ -57,18 +72,7 @@ From there, you can drill into the details of a release. For example, here we sh
 > [!div class="mx-imgBorder"]
 > ![Build and Release hub, Build status page ](_img/pipelines/release-chart.png)
 
- 
-# [Vertical navigation](#tab/vertical)  
 
-To view active release pipelines, choose **Releases** under **Build and release**. 
-
-> [!div class="mx-imgBorder"]
-> ![Build and Release, Recent Releases, vertical navigation ](_img/pipelines/view-releases-vert.png)
-
-From there, you can drill into the details of a release. For example, here we show  the **Release-3** pipeline.   
-
-> [!div class="mx-imgBorder"]
-> ![Build and Release hub, Build status page ](_img/pipelines/release-chart.png)
 
 ---
 
