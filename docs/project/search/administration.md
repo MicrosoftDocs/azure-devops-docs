@@ -42,7 +42,7 @@ All users have access to Work Item Search.
 ## Install Code Search in VSTS
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in your VSTS account as an administrator.
+to install the extension in VSTS as an administrator.
 Non-administrative users can also go here to request the extension be added to VSTS. 
 
 For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
@@ -69,7 +69,7 @@ Search can be used on any size physical server or virtual machine that runs
 TFS 2017 or above. It can be configured on the same server as TFS,
 or on a separate server dedicated to Search.
 When configuring Search on the same server as TFS,
-you must take into account the existing CPU utlization
+you must consider the existing CPU utlization
 factor due to TFS itself.
 
 **For production environments we recommend you configure Search on a separate server.**

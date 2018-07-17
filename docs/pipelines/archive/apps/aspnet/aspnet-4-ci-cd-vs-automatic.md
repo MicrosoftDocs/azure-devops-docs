@@ -28,7 +28,9 @@ In this walkthrough we'll show how to use Visual Studio to automatically define 
 
 ## Install the Continuous Delivery Tools extension
 
-The quickest way to create a continuous delivery process is with the Continuous Delivery Tools for Visual Studio (2017 RC.3 and newer), which automate the creation of build and release definitions. The tools assume that you have an existing VSTS account, and that your project has been added to source control in a Team Project.
+The quickest way to create a continuous delivery process is with the Continuous Delivery Tools for Visual Studio (2017 RC.3 and newer),
+which automate the creation of build and release definitions. The tools assume that you have an existing VSTS subscription,
+and that your project has been added to source control in a Team Project.
 
 To install the extension within Visual Studio, select **Tools > Extensions and Updates...** and search for **Continuous Delivery Tools for Visual Studio**. Alternatively, you can download the installer from the [Visual Studio Gallery](http://aka.ms/CD4VS).
 

@@ -36,51 +36,53 @@ Before you can create a public project, you must enable anonymous access for you
 
 [!INCLUDE [temp](_shared/navigation.md)] 
 
-# [Horizontal navigation](#tab/horizontal)
-
-0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
-
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](../../_img/open-account-settings-horz-brn.png) 
-
-0. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.     
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](_img/create-public-project/turn-on-anonymous-access.png)  
-
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
 
 0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../_img/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
 
 0. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.     
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](_img/create-public-project/open-policy-vert.png) 
 
+
+# [Previous navigation](#tab/previous-nav)
+
+0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
+
+0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-account-settings-horz-brn.png) 
+
+0. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.     
+
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Policy page, Security policies](_img/create-public-project/turn-on-anonymous-access.png)  
+
+
+
 ---
 
 
 ## Add a public project to your organization 
 
+# [New navigation](#tab/new-nav)
 
-# [Horizontal navigation](#tab/horizontal)
-
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. .
+0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/create-public-project/open-org-hub.png)  
+	> ![Open organizational hub](../../_shared/_img/settings/open-projects-hub-vert-brn.png)  
 
 0. Choose **New Project**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose New Project](_img/create-public-project/choose-new-project.png)  
+	> ![Choose New Project](_img/create-public-project/add-proj-vert-brn.png)  
 
 0. Provide a name for your project and choose **Public**. Keep the remaining defaults, or select the initial source control type and process for work item tracking. 
 
@@ -93,17 +95,18 @@ Before you can create a public project, you must enable anonymous access for you
 	> ![Public project created page](_img/create-public-project/public-project-created.png)
 
 
-# [Vertical navigation](#tab/vertical)
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. 
+# [Previous navigation](#tab/previous-nav)
+
+0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. .
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/create-public-project/open-projects-hub-vert-brn.png)  
+	> ![Open organizational hub](_img/create-public-project/open-org-hub.png)  
 
 0. Choose **New Project**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose New Project](_img/create-public-project/add-proj-vert-brn.png)  
+	> ![Choose New Project](_img/create-public-project/choose-new-project.png)  
 
 0. Provide a name for your project and choose **Public**. Keep the remaining defaults, or select the initial source control type and process for work item tracking. 
 

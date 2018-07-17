@@ -81,7 +81,7 @@ Consider using Release Management if:
   problem.
 
 * **You need audit history for all releases and their deployments.**
-  Release Management provides a history of all changes to the definitions,
+  Release Management provides a history of all changes to the pipelines,
   configurations, and deployments. It also provides a history of all the
   activity performed during each deployment. Each release is accompanied
   by a listing of new features and developer commits that went into that

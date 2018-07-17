@@ -123,12 +123,12 @@ Also, test run duration is in minutes, not seconds. For example,
 if your test run duration is 5 minutes and 15 seconds, 
 then that duration is rounded up to 6 minutes. 
    
-A minimum of 250 virtual user minutes, including the warm-up period, is deducted from your account for:
+A minimum of 250 virtual user minutes, including the warm-up period, is deducted from your subscription for:
 
 * Completed runs, based on the full duration of the run
 * Aborted runs, based on the elapsed run duration
 
-For runs that end in an error state, no virtual user minutes will be deducted from your account.
+For runs that end in an error state, no virtual user minutes will be deducted from your subscription.
 
 Note that there is an additional charge for [resource retention](#retain-resources).
 
@@ -205,7 +205,7 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 <a name="deletetests"></a>
 ### Q: How do I delete a load test?
 
-**A**: Currently, only test runs can be deleted, and only by the user that created that test run. The load test itself cannot be deleted because the data resides at the account level.
+**A**: Currently, only test runs can be deleted, and only by the user that created that test run. The load test itself cannot be deleted because the data resides at the subscription level.
 
 ----------
 
@@ -255,17 +255,17 @@ and [coded UI tests](https://docs.microsoft.com/visualstudio/test/use-ui-automat
 
 [Go to related topic &gt;](app-service-web-app-performance-test.md)
 
-### Q: Why can't I see my existing VSTS account to run load tests? 
+### Q: Why can't I see my existing VSTS subscription to run load tests? 
 
-**A**: To use a VSTS account for running load tests from the Azure
+**A**: To use a VSTS subscription for running load tests from the Azure
 portal, one of the following criteria must be satisfied:
 
-* The account is backed by Azure Active Directory,
+* The subscription is backed by Azure Active Directory,
   [Has an Azure subscription](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory)
   is linked to it, and the user is a member of the linked Azure subscription.
 
-* The account is backed by [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/)
-  and the user is an owner of the account.
+* The subscription is backed by [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/)
+  and the user is an owner of the subscription.
 
 <a name="qaazure-limits"></a>
 ### Q: What is the maximum test duration and number of concurrent users? 
@@ -303,9 +303,9 @@ We'd be pleased to hear from you if you need support for other file formats.
 Email us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
 <a name="Team ServicesAccount"></a>
-### Q: What else can I do with a VSTS account?
+### Q: What else can I do with a VSTS subscription?
 
-**A**: To find your new account, go to ```https://{accountname}.visualstudio.com```. 
+**A**: To find your new subscription, go to ```https://{subscription-name}.visualstudio.com```. 
 Share your code, build, test, track work, and ship software - all in the cloud 
 using any tool or language. Learn more about how [VSTS](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
 features and services help your team collaborate more easily and deploy continuously.
@@ -325,10 +325,10 @@ features and services help your team collaborate more easily and deploy continuo
 
 **A**: Yes, you can include unit tests and coded web tests, but not coded UI tests.
 
-### Q: How long do I have to wait until I can run my load test after creating a VSTS account?
+### Q: How long do I have to wait until I can run my load test after creating a VSTS subscription?
 
 **A**:  It can take between 5 seconds to 3 hours until you get permissions 
-to run the load test in the cloud. If you previously created your VSTS account, 
+to run the load test in the cloud. If you previously created your VSTS subscription, 
 you might be able to run the load test right away.
 
 ### Q: How do I provide different values to the same test?
@@ -349,15 +349,15 @@ If you need more help, contact
 ### Q: Where are the test agents used for my load test runs located?
 
 **A**:  When you set up your load test run, you can select the test agent location from any supported Azure datacenter, starting with Visual Studio Ultimate 2013 Update 5 and Visual Studio Enterprise 2015. 
-After your run finishes, your results are stored in the same location as your VSTS account.
+After your run finishes, your results are stored in the same location as your VSTS subscription.
 
 ![Edit load test to set location](_img/CLT_LoadTestSetLocation.png)
 
 If you're using an earlier version of Visual Studio, 
 the agent location is based on the location that you chose 
-when you created your VSTS account.
+when you created your VSTS subscription.
 
-| VSTS Account Region | Test Agent Azure Datacenter |
+| VSTS Region | Test Agent Azure Datacenter |
 | :---------------------------------- | :-------------------------- |
 | South Central US                    | East US 2                   |
 | West Europe                         | West Europe                 |
@@ -555,10 +555,10 @@ for your app there. If you see data collected there, report your issue to
   ![Checking that the apps are listed in the Azure portal](_img/get-performance-data-for-load-tests/get-load-test-insights-05.png)
  
 * The Azure Resource Manager access token has expired. The token is valid for 12 hours 
-  in the context of VSTS. Sign out of your VSTS account and then sign 
+  in the context of VSTS. Sign out of VSTS and then sign 
   in again to refresh the token.
 
-* Azure Active Directory is not enabled for your VSTS account.
+* Azure Active Directory is not enabled for your VSTS subscription.
   See [Access VSTS with Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md).
 
 If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).

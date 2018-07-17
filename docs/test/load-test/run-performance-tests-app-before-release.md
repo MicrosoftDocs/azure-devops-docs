@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 Find performance issues before you release your app by running load tests with Visual Studio 
 Enterprise using [Cloud-based Load Testing](http://go.microsoft.com/fwlink/?LinkID=317257)
 to provide virtual machines in the cloud that generate the load of many users accessing your web site at the same time.
-All you need is a [Visual Studio Team Services (VSTS) account](http://go.microsoft.com/fwlink/?LinkId=307137).
+All you need is a [Visual Studio Team Services (VSTS) subscription](http://go.microsoft.com/fwlink/?LinkId=307137).
 
 In this tutorial, you'll learn how to:
 
@@ -45,7 +45,7 @@ actions in your app at the same time.
 
    If you don't see the template for the web performance and load test project type,
    ensure you have installed the required packages during Visual Studio setup.
- Â  You can re-run the installer by choosing **Get tools and features** on the Visual Studio **Tools** menu.
+   You can re-run the installer by choosing **Get tools and features** on the Visual Studio **Tools** menu.
 
    ![Installing packages required for web performance and load testing](_img/run-performance-tests-app-before-release/install-tools.png)
 
@@ -108,7 +108,7 @@ actions in your app at the same time.
 
    ![Select which tests to include in the test mix](_img/run-performance-tests-app-before-release/select-tests-for-test-mix.png)
 
-1. When you run cloud-based load tests using your VSTS account, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
+1. When you run cloud-based load tests using VSTS, you can run those tests and generate load in an Azure datacenter that's closer to your users. That way, you reduce latency and simulate local conditions.
    Select the location where you want to run your load test.
 
    ![Select load test location](_img/run-performance-tests-app-before-release/select-load-test-location.png)
@@ -121,7 +121,7 @@ actions in your app at the same time.
 ## Run and analyze your load test
 
 You can run your load test locally, or you can run it in the cloud using VSTS. 
-All you need is a [VSTS account](../../organizations/accounts/set-up-vs.md). 
+All you need is a [VSTS subscription](../../organizations/accounts/set-up-vs.md). 
 If you run the load test in the cloud, you can generate more load without setting up test controllers and test agents. 
 To learn how easy it is to use Cloud-based Load Testing to run your load tests, go 
 [here](getting-started-with-performance-testing.md).

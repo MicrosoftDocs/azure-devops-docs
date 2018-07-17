@@ -19,11 +19,11 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across team project collections and team projects. In VSTS, agent pools are scoped to the VSTS account; so you can share an agent pool across team projects.
+Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across project collections and projects. In VSTS, agent pools are scoped to the VSTS account; so you can share an agent pool across projects.
 
-An **agent queue** provides access to an agent pool. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your team project in TFS 2017 and newer and in VSTS, so you can only use them across build and release pipelines within a team project.
+An **agent queue** provides access to an agent pool. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer and in VSTS, so you can only use them across build and release pipelines within a project.
 
-To share an agent pool with multiple team projects, you create an agent queue pointing to that pool in each of those team projects. While multiple queues across team projects can use the same agent pool, multiple queues within a team project cannot use the same pool. Also, each queue can use only one agent pool.
+To share an agent pool with multiple projects, you create an agent queue pointing to that pool in each of those projects. While multiple queues across projects can use the same agent pool, multiple queues within a project cannot use the same pool. Also, each queue can use only one agent pool.
 
 ::: moniker range=">= tfs-2017"
 
@@ -37,7 +37,7 @@ To share an agent pool with multiple team projects, you create an agent queue po
 
 #### TFS 2015
 
-In TFS 2015 agent queues are scoped to team project collections.
+In TFS 2015 agent queues are scoped to project collections.
 
 ![TFS 2015 build system architecture](_img/build-system-architecture-tfs-2015.png)
 
@@ -71,7 +71,7 @@ We provide the following agent pools by default:
 * **Hosted macOS** pool (VSTS only): Enables you to build and release on
   Mac machines without having to configure a self-hosted agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
 
-Each of these hosted pools is exposed to each team project through a corresponding hosted queue. By default, all contributors in a team project are members of the **User** role on each hosted queue. This allows every contributor in a team project to author and run build and release pipelines using Microsoft-hosted queues.
+Each of these hosted pools is exposed to each project through a corresponding hosted queue. By default, all contributors in a project are members of the **User** role on each hosted queue. This allows every contributor in a project to author and run build and release pipelines using Microsoft-hosted queues.
 
 ::: moniker-end
 
@@ -81,11 +81,11 @@ If you've got a lot of agents intended for different teams or purposes, you migh
 
 Here are some typical situations when you might want to create agent pools and queues:
 
-* You're a member of a team project and you want to use a set of machines owned by your team for running build and deployment jobs. First make sure you're a member of a group in **All Queues** with the **Administrator** role. Next create a **New queue** in your team project and select the option to **Create a new pool**. As a result, both a queue and a pool will be created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+* You're a member of a project and you want to use a set of machines owned by your team for running build and deployment jobs. First make sure you're a member of a group in **All Queues** with the **Administrator** role. Next create a **New queue** in your project and select the option to **Create a new pool**. As a result, both a queue and a pool will be created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
-* You're  a member of the infrastructure team and would like to set up a pool of agents for use in all team projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New pool** and select the option to **Auto-provision queues in all projects** while creating the pool. This setting ensures all team projects have a queue to access the pool. The system creates a queue for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
+* You're  a member of the infrastructure team and would like to set up a pool of agents for use in all projects. First make sure you're a member of a group in **All Pools** with the **Administrator** role. Next create a **New pool** and select the option to **Auto-provision queues in all projects** while creating the pool. This setting ensures all projects have a queue to access the pool. The system creates a queue for existing projects, and in the future it will do so whenever a new project is created. Finally [install](agents.md#install) and configure agents to be part of that agent pool.
 
-* You want to share a set of agent machines with multiple team projects, but not all of them. First create an agent queue in one of the projects and select the option to **Create a new pool** while creating that queue. Next, go to each of the other team projects, and create a queue in each of them while selecting the option to **Use an existing pool**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
+* You want to share a set of agent machines with multiple projects, but not all of them. First create an agent queue in one of the projects and select the option to **Create a new pool** while creating that queue. Next, go to each of the other projects, and create a queue in each of them while selecting the option to **Use an existing pool**. Finally, [install](agents.md#install) and configure agents to be part of the shared agent pool.
 
 <h2 id="security">Security of agent pools and queues</h2>
 
@@ -100,8 +100,8 @@ In VSTS and TFS 2017 and newer, **roles** are defined on each agent pool, and **
 | Role on an agent pool | Purpose |
 |------|---------|
 | Reader | Members of this role can view the pool as well as agents. You typically use this to add operators that are responsible for monitoring the agents and their health.  |
-| Service Account | Members of this role can use the pool to create an agent queue in a team project. If you follow the guidelines above for creating new pools and queues, you typically do not have to add any members here. |
-| Administrator | In addition to all the above permissions, members of this role can register or unregister agents from the pool. They can also use the agent pool when creating an agent queue in a team project. Finally, they can also manage membership for all roles of the pool. The user that created the pool is automatically added to the Administrator role for that pool. |
+| Service Account | Members of this role can use the pool to create an agent queue in a project. If you follow the guidelines above for creating new pools and queues, you typically do not have to add any members here. |
+| Administrator | In addition to all the above permissions, members of this role can register or unregister agents from the pool. They can also use the agent pool when creating an agent queue in a project. Finally, they can also manage membership for all roles of the pool. The user that created the pool is automatically added to the Administrator role for that pool. |
 
 The **All Pools** node in the Agent Pools tab is used to control the security of _all_ agent pools. Role memberships for individual agent pools are automatically inherited from those of the 'All Pools' node. By default, TFS administrators are also administrators of the 'All Pools' node.
 
@@ -113,7 +113,7 @@ Roles are also defined on each agent queue, and memberships in these roles gover
 | User | Members of this role can use the queue when authoring build or release pipelines. |
 | Administrator | In addition to all the above operations, members of this role can manage membership for all roles of the queue. User that created the queue is automatically added to the Administrator role for that queue.
 
-The **All Queues** node in the Agent Queues tab is used to control the security of _all_ agent queues in a team project. Role memberships for individual agent queues are automatically inherited from those of the 'All Queues' node. By default, the following groups are added to the Administrator role of 'All Queues': Build Administrators, Release Administrators, Project Administrators.
+The **All Queues** node in the Agent Queues tab is used to control the security of _all_ agent queues in a project. Role memberships for individual agent queues are automatically inherited from those of the 'All Queues' node. By default, the following groups are added to the Administrator role of 'All Queues': Build Administrators, Release Administrators, Project Administrators.
 
 ::: moniker-end
 
@@ -135,7 +135,7 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 
 ### I'm trying to create a queue that uses an existing pool, but the controls are grayed out. Why?
 
-On the Create Queue dialog box, you can't use an existing pool if it is already referenced by another queue. Each pool can be referenced by only one queue within a given team project collection.
+On the Create Queue dialog box, you can't use an existing pool if it is already referenced by another queue. Each pool can be referenced by only one queue within a given project collection.
 
 ::: moniker range="vsts"
 

@@ -30,33 +30,36 @@ To enable users to contribute to your project, you must add them as a member.
 
 [!INCLUDE [temp](_shared/navigation.md)] 
 
-# [Horizontal navigation](#tab/horizontal)
 
-0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. You also must be the owner, belong to the Project Collection Administrators security group, or have been granted the necessary permissions to manage users.  
 
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](../../_img/open-account-settings-horz-brn.png) 
-
-0. Then, choose **Users** to open **Manage users**. Choose **Add new users** to open the dialog.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Add new users dialog](_img/invite-users/open-add-new-users-dialog.png)
-
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
 
 0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../_img/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
 
 0. Then, choose **Users** to open **Manage users**. Choose **Add new users** to open the dialog.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Add new users dialog](_img/invite-users/open-manage-users-vert.png)
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. You also must be the owner, belong to the Project Collection Administrators security group, or have been granted the necessary permissions to manage users.  
+
+0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-account-settings-horz-brn.png) 
+
+0. Then, choose **Users** to open **Manage users**. Choose **Add new users** to open the dialog.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Add new users dialog](_img/invite-users/open-add-new-users-dialog.png)
 
 ---
 

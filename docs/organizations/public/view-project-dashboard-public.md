@@ -30,20 +30,20 @@ From your web browser, open the public project.
 
 [!INCLUDE [temp](_shared/navigation.md)] 
 
-# [Horizontal navigation](#tab/horizontal)
 
-To open the project home page, choose the project listed in the top navigation bar.  
-
-> [!div class="mx-imgBorder"]
-> ![Open the Project Home Page, anonymous user](_img/project-page-anon.png)  
-
-
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 To open the project home page, choose **Summary** from the sidebar.
 
 > [!div class="mx-imgBorder"]
 > ![Open the Project Home Page, anonymous user](_img/project-page-vert-brn.png) 
+
+# [Previous navigation](#tab/previous-nav)
+
+To open the project home page, choose the project listed in the top navigation bar.  
+
+> [!div class="mx-imgBorder"]
+> ![Open the Project Home Page, anonymous user](_img/project-page-anon.png)  
 
 ---
 
@@ -57,16 +57,15 @@ You're invited to clone the project's main Git repository to your computer. To l
 
 To view a dashboard, choose **Dashboards**. You'll see the set of dashboards defined for the default team. Choose one of the dashboards to open it. 
 
-# [Horizontal navigation](#tab/horizontal)  
-
-> [!div class="mx-imgBorder"]
-> ![Open Dashboards, anonymous user](_img/dashboard-view.png) 
-
-
-# [Vertical navigation](#tab/vertical)  
+# [New navigation](#tab/new-nav)  
 
 > [!div class="mx-imgBorder"]
 > ![Open Dashboards, anonymous user](_img/open-dashboards-vert.png) 
+
+# [Previous navigation](#tab/previous-nav)  
+
+> [!div class="mx-imgBorder"]
+> ![Open Dashboards, anonymous user](_img/dashboard-view.png) 
 
 
 --- 

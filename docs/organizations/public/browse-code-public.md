@@ -26,19 +26,22 @@ When viewing a public project, you're able to browse and download the code store
 
 ## Open the Code hub 
 
-# [Horizontal navigation](#tab/horizontal)  
+# [New navigation](#tab/new-nav)  
+
+Choose **Code>Files**.
+
+> [!div class="mx-imgBorder"]
+> ![Open Code, anonymous user](_img/browse-code/open-code-vert-brn.png) 
+
+
+
+# [Previous navigation](#tab/previous-nav)  
 
 Choose **Code**.  
 
 ![Open Code hub](_img/browse-code/select-code-hub.png)
 
 
-# [Vertical navigation](#tab/vertical)  
-
-Choose **Code>Files**.
-
-> [!div class="mx-imgBorder"]
-> ![Open Code, anonymous user](_img/browse-code/open-code-vert-brn.png) 
 
 ---
 
@@ -46,15 +49,15 @@ Choose **Code>Files**.
 
 Select the repository of interest from the repository selector.  
 
-# [Horizontal navigation](#tab/horizontal)  
-
-![Open Code hub](_img/browse-code/select-repository.png)
-
-
-# [Vertical navigation](#tab/vertical)  
+# [New navigation](#tab/new-nav)  
 
 > [!div class="mx-imgBorder"]
 > ![Open Code, anonymous user](_img/browse-code/select-repository-vert.png) 
+
+
+# [Previous navigation](#tab/previous-nav)  
+
+![Open Code hub](_img/browse-code/select-repository.png)
 
 
 ---
@@ -73,14 +76,15 @@ Within a Git repository, you can view any of the following items: **Files**, **C
 
 In the following example, we view **Commits**. 
 
-# [Horizontal navigation](#tab/horizontal)  
-
-![Commits](_img/browse-code/commits.png)
-
-# [Vertical navigation](#tab/vertical)  
+# [New navigation](#tab/new-nav)  
 
 > [!div class="mx-imgBorder"]
 > ![Download code ](_img/browse-code/view-commits-vert.png)
+
+
+# [Previous navigation](#tab/previous-nav)  
+
+![Commits](_img/browse-code/commits.png)
 
 ---
 

@@ -28,9 +28,9 @@ to enable fundamental build and deployment scenarios.
 
 In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS)
 offers a number of extensions; each of which, when installed to your
-account or collection, extends the task catalog with one or more tasks.
+subscription or collection, extends the task catalog with one or more tasks.
 Furthermore, you can write your own [custom extensions](../../integrate/index.md)
-to add tasks to your account in VSTS or your collection in TFS.
+to add tasks to VSTS or TFS.
 
 When you add a task to your build or release pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
@@ -108,7 +108,7 @@ Select this check box if you want the task to run even if the build or deploymen
 
 > **VSTS preview feature**
 >
-> To use this capability you must be working on VSTS and enable the **Task tool installers** [preview feature](../../project/navigation/preview-features.md) for your account.
+> To use this capability you must be working on VSTS and enable the **Task tool installers** [preview feature](../../project/navigation/preview-features.md).
 
 Tool installers enable your build process to install and control your dependencies. Specifically, you can:
 

@@ -137,10 +137,10 @@ You create a Jenkins build job to use the source code stored in your VSTS reposi
 
 1. Select the **Post-build Actions** tab.  Choose **Add post-build action**, then select **Trigger release in TFS/Team Services**.
 
-1. Enter a **Collection url**.  An example is 
+1. Enter a **collection URL**. An example is 
 `http://{YourVSTSAccount}.visualstudio.com/DefaultCollection`
 
-1. Enter the **Team project** and choose a **Release pipeline** name.  Store the **Release pipeline** name since it is needed on later steps in this tutorial.
+1. Enter the **project** and choose a **release pipeline** name. Store the **release pipeline** name since it is needed in later steps of this tutorial.
 
 1. Enter the **username** and **PAT** you created earlier.
  

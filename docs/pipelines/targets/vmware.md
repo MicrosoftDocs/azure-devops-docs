@@ -64,7 +64,7 @@ the agent machine:
      `C:\vSphereSDK\SDK\vsphere-ws\java\JAXWS\lib\vim25.jar`<p />
 
 1. Install the VMware extension 
-   from Visual Studio Marketplace into your TFS server or VSTS account.
+   from Visual Studio Marketplace into TFS or VSTS.
 
    * If you are using **VSTS**, 
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vmwareapp)
