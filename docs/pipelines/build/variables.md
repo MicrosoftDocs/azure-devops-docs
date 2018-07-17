@@ -630,7 +630,7 @@ If the build was [triggered by another build](triggers.md#BuildCompletion), then
 
 Environment variable: BUILD_TRIGGEREDBY_PROJECTID
 
-If the build was [triggered by another build](triggers.md#BuildCompletion), then this variable is set to ID of the team project that contains the triggering build.
+If the build was [triggered by another build](triggers.md#BuildCompletion), then this variable is set to ID of the project that contains the triggering build.
 
 ::: moniker-end
 
@@ -743,7 +743,7 @@ Environment variable: SYSTEM_TEAMPROJECT
 
 Scope: All
 
-The name of the team project that contains this build.
+The name of the project that contains this build.
 
 ### System.TeamProjectId
 
@@ -751,7 +751,7 @@ Environment variable: SYSTEM_TEAMPROJECTID
 
 Scope: All
 
-The ID of the team project that this build belongs to.
+The ID of the project that this build belongs to.
 
 ### TF_BUILD
 

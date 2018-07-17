@@ -7,7 +7,7 @@ ms.topic: include
 You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.
 
 > [!NOTE]
-> You can only use this feature when the source repository in your build is a Git or TFVC repository from your team project.
+> You can only use this feature when the source repository in your build is a Git or TFVC repository from your project.
 
 In the **Label format** you can use user-defined and predefined variables that have a scope of "All." For example:
 

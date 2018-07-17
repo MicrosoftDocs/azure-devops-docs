@@ -8,7 +8,7 @@ Now you get to see the magic of a release pipeline at work! You'll make a change
 
 1. Change the text within the &lt;p&gt; tag, for example, to _Hello continuous integration and continuous deployment!_
 
-1. Save the file, push/check-in the changes to the Team Project:
+1. Save the file, push/check-in the changes to the project:
     * If you're using Git in Visual Studio, click the changes icon on the status bar:
 
         ![Location of the changes button on the Visual Studio status bar](./_img/commit-change-in-vs.png)
