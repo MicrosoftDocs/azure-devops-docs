@@ -606,9 +606,9 @@ If your pipeline has a pattern that you want to replicate in other definitions, 
 
 After you clone a pipeline, you can make changes and then save it.
 
-After you export a pipeline, you can import it from the **All Definitions** tab.
+After you export a pipeline, you can import it from the **All pipelines** tab.
 
-After you create a template, your team members can use it to follow the pattern in new definitions.
+After you create a template, your team members can use it to follow the pattern in new pipelines.
 
 > [!TIP]
 >

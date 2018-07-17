@@ -200,7 +200,7 @@ If your sources are in a Git repository in your project, then this option displa
 * **Commits**: Indicates the build status of the each commit (this requires continuous integration (CI) trigger to be enabled for your builds).
 * **Branches**: Indicates the status of the latest build for each branch.
 
-If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the definitions. In the case when this option is enabled on multiple definitions, the badge in the **Code** hub indicates the status of the latest build across all the definitions. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
+If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge in the **Code** hub indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
 
 ::: moniker-end
 
