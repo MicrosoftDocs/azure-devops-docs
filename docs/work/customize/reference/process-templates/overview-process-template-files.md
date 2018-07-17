@@ -47,7 +47,7 @@ For details, review [Plug-in file descriptions and PCW support](#PlugInFiles).
 
 <!---
 > [!NOTE]    
->For VSTS, even if you initiate creating a team project from Visual Studio/Team Explorer, you'll be taken to the web portal to complete the operation. For TFS 2017.4 and later versions, you'll be redirected to the web portal to create a team project. 
+>For VSTS, even if you initiate creating a team project from Visual Studio/Team Explorer, you'll be taken to the web portal to complete the operation. For TFS 2017.3 and later versions, you'll be redirected to the web portal to create a team project. 
 --> 
   
 <a name="Root"></a> 
@@ -88,7 +88,7 @@ The following table describes each plug-in file and whether or not it is support
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>Defines the initial security permissions used by Team Foundation Build and uploads build template files.
 <blockquote>
-For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only default permissions are defined. 
+For VSTS and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. 
 </blockquote></td>
 </tr>
 
@@ -119,7 +119,7 @@ For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only def
 <td>Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management. 
 
 <blockquote>
- For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only default permissions are defined. Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
+ For VSTS and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
 </blockquote>
 
 </td>
@@ -134,7 +134,7 @@ For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only def
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>Creates the Report Manager site for the team project and uploads the Reporting Services reports. Only supported for on-premises TFS. 
 <blockquote>
- For TFS 2017.4 and later versions, you can only create team projects through the web portal which ignores this plug-in. To add reports after creating a team project, see [Add reports to a team project](../../../../report/admin/add-reports-to-a-team-project.md).
+ For TFS 2017.3 and later versions, you can only create team projects through the web portal which ignores this plug-in. To add reports after creating a team project, see [Add reports to a team project](../../../../report/admin/add-reports-to-a-team-project.md).
 </blockquote>
 </td>
 </tr>
@@ -168,7 +168,7 @@ Test Management<br/>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>Defines the initial security permissions for Git and Team Foundation version control (TFVC), and for TFVC, check-in notes and whether exclusive check-out is required. 
 <blockquote>
-For VSTS and TFS 2017.4 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a team project, you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or [permissions](../../../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.
+For VSTS and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a team project, you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or [permissions](../../../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.
 </blockquote>
 </td>
 </tr>
@@ -227,7 +227,7 @@ Work Item Tracking <br/>
 <li>**[TypeDefinitions](add-wit-definitions-process-template.md)**: Defines the 15 or more work item type XML definition files contained within the TypeDefinition folder. The definitions differ depending on the process template selected. </li>
 <li>**[Work items](add-work-item-instance-process-template.md)**: Defines one or more work items. No definitions are defined within the default process templates. 
 <blockquote>
-For VSTS and TFS 2017.4 and later versions, definitions for work item instances will be ignored when creating team projects.  </blockquote></li>
+For VSTS and TFS 2017.3 and later versions, definitions for work item instances will be ignored when creating team projects.  </blockquote></li>
 </ul> 
 
 </td>
