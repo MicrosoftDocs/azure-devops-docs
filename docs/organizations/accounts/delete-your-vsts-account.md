@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/08/2018
+ms.date: 07/17/2018
 monikerRange: 'vsts'
 ---
 
@@ -50,7 +50,7 @@ To unlink your account, you'll need VSTS account owner permissions and at least 
 4. Choose **Unlink**.
   Your VSTS account is unlinked from your Azure subscription.
 
-  **Azure portal**
+**Azure portal**
 
   ![Unlink your account from an Azure subscription](_img/delete-organization/app_unlinkvsoaccount2.png)
 
@@ -62,14 +62,39 @@ You'll need at least Basic access and VSTS account owner
 permissions to delete your VSTS account.
 [How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner)
 
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+2. Highlight the account that you want to delete and then choose ![gear icon](../../_img/icons/gear-icon.png), **Admin settings**.
+
+   ![Choose Admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Choose **Overview** and then **Delete**.
+
+   ![Choose Overview, and then Delete](_img/delete-vsts-account/organization-overview-settings.PNG)
+
+4. In the resulting popup, choose your reason for deleting the account from the dropdown menu, enter the name of your account, and then choose **Delete**.
+
+   ![Select reason for deletion, and then select delete](_img/delete-vsts-account/delete-account-popup.PNG)
+
+5. To review your accounts, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view) where you'll see your deleted account.
+
+   [Need help?](faq-delete-restore-vsts-account.md#get-support)
+---
+# [Previous navigation](#tab/previous-nav)
+
 1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
-2. Go to your VSTS account settings and choose **Delete Account**.
+2. Choose ![gear icon](../../_img/icons/gear-icon.png), the  admin settings icon.
 
-![Delete your account in VSTS](_img/delete-organization/delete-organization-in-vsts.png)
+   ![Open admin settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
 
-3. To review your accounts, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view) where you'll see your deleted account.
+3. Choose **Delete **.
 
-  ![Your account will appear deleted on your account list](_img/delete-organization/deleted-organization.png)
+   ![Choose Delete](_img/delete-vsts-account/organization-settings-delete.PNG)
+
+4. To review your accounts, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view) where you'll see your deleted account.
 
   [Need help?](faq-delete-restore-vsts-account.md#get-support)
+
+---
