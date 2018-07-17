@@ -18,7 +18,7 @@ ms.date: 01/18/2017
 You can use the keyboard shortcuts provided in this topic from the web portal or from Visual Studio Team Explorer. 
 
 
-## Work hub, Queries page 
+## Work>Queries page 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-shortcuts.md)] 
 
