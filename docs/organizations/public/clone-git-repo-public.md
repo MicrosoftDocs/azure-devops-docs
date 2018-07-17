@@ -30,22 +30,7 @@ Cloning a repo downloads all commits and branches in the repo and sets up a name
 Before you can clone the repo from a public project, you'll need the clone URL.
 
 
-# [Horizontal navigation](#tab/horizontal)  
-
-0. To open a repository, choose **Code**.   
-
-	> [!div class="mx-imgBorder"]
-	> ![Open Code, anonymous user](_img/browse-code/select-code-hub.png) 
-
-0. Choose the repository you want to clone from the repository selector. 
-
-	![Open Code hub](_img/browse-code/select-repository.png)
-
-0.  Choose **Clone**. In the Clone repository dialog, choose the ![](../../_img/icons/copy-clone-icon.png) copy-clone icon to have the URL copied to your clipboard. Store it in a place where you can find it easily.
-
-    ![Copy clone URL](_img/clone-git-repo-public/clone-url-horz.png)
-
-# [Vertical navigation](#tab/vertical)  
+# [New navigation](#tab/new-nav)  
 
 0. To open a repository, choose **Code>Files**.
 
@@ -61,6 +46,23 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 
 	> [!div class="mx-imgBorder"]
 	> ![Clone URL, vertical navigation](_img/clone-git-repo-public/clone-url-vert.png)
+
+# [Previous navigation](#tab/previous-nav)  
+
+0. To open a repository, choose **Code**.   
+
+	> [!div class="mx-imgBorder"]
+	> ![Open Code, anonymous user](_img/browse-code/select-code-hub.png) 
+
+0. Choose the repository you want to clone from the repository selector. 
+
+	![Open Code hub](_img/browse-code/select-repository.png)
+
+0.  Choose **Clone**. In the Clone repository dialog, choose the ![](../../_img/icons/copy-clone-icon.png) copy-clone icon to have the URL copied to your clipboard. Store it in a place where you can find it easily.
+
+    ![Copy clone URL](_img/clone-git-repo-public/clone-url-horz.png)
+
+
 
 ---
 

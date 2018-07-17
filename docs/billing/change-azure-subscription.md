@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 06/07/2018
+ms.date: 07/10/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -16,48 +16,63 @@ ms.date: 06/07/2018
 
 **VSTS**
 
-If you want to use a different Azure subscription to bill purchases for your VSTS account, you will need to unlink your VSTS account from your current Azure subscription and relink your account to another Azure subscription. You must be the VSTS account owner.
+If you want to use a different Azure subscription to bill purchases for your VSTS account, you can either move it to a different Azure subscription that you have access to, or remove the current Azure subscription and then buy again using a new subscription.
 
-## Prerequisites
+## Move to a different subscription
 
-The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
+If the target subscription is in the same Azure Active Directory as the destination subscription and you have access to both, just follow the steps below or learn more about [moving resources to new resource groups or subscriptions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-move-resources).
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Choose **Resource groups**.
+
+   ![Choose Azure Resource groups](_img/change-azure-subscription/azure-resource-groups.PNG)
+
+3. Select the resource group containing your VSTS account.
+4. Choose **Move** and then **Move to another subscription**.
+
+   ![Select Move and then Move to another resource group](_img/change-azure-subscription/select-move-to-another-subscription.png)
+
+5. Select your target subscription and resource group.
+6. Choose **OK**.
+
+## Remove billing subscription and purchase again
+
+### Prerequisites
 
 1. [VSTS project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 2. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
-To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
-
 >[!NOTE]
-> When you unlink your account, any paid quantities of VSTS users, Package Management users, Test Manager users, Microsoft-hosted CI/CD, and self-hosted CI/CD  
-> committed for the month will continue uninterrupted until the 1st of next month, 
-> but your account will revert immediately to the Free Tier for cloud-based load testing. Unlinking will also cancel any non-Microsoft paid extensions without refund or credit.
->
-> After you relink your account to another Azure subscription, you'll need to make your purchases again for this VSTS account in the Visual Studio Marketplace, to ensure you have continued coverage at the 1st of the next month. You will only incur incremental charges if the quantities of Microsoft resources you select exceed what you've already paid for the current month. Purchases of non-Microsoft extensions will be treated as new purchases and billed immediately to your new Azure subscription.
->
-> If you wait until the 1st of next month to relink and to make your purchases again, your VSTS account will revert back to the Free Tier and users in excess of the free limits will appear as expired in your account.
+> When you remove the billing subscription from your account, any paid quantities of VSTS Basic, Package Management users, Test Manager users, Microsoft-hosted Pipelines, and self-hosted Pipelines you’ve paid for this month will continue uninterrupted until the 1st of next month, but your account will revert immediately to the Free Tier for cloud-based load testing. Removing the subscription will also cancel any non-Microsoft paid extensions without refund or credit.
 
-## Change subscription
+### Change subscription
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS account owner and as Azure subscription co-administrator or greater.
 
     If you experience browser problems with Azure,
     make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Go to **More services** > **Developer tools** > **VSTS accounts**. Select your VSTS account.
+2. Go to **All services** > **Team Services accounts**. Select your account.
 
- ![More services, Developer tools, VSTS, select your account](_img/_shared/AP_VSO_SelectLinkedOrganization.png)
+   ![More services, Developer tools, VSTS, select your account](_img/_shared/AP_VSO_SelectLinkedOrganization.png)
 
-3. Unlink your VSTS account.
+3. Choose Remove billing.
 
- ![Unlink your account](_img/_shared/azure-portal-unlink-subscription.png)
+   ![Unlink your account](_img/_shared/azure-portal-unlink-subscription.png)
 
- Your VSTS account is removed from this Azure subscription, breaking the billing relationship.
+### Purchase again using the new subscription
 
-4. Make your purchases again. During your first purchase, select the new Azure subscription to use for billing going forward.
+1. Make your purchases again in the [VSTS Marketplace](https://marketplace.visualstudio.com/vsts). During your first purchase, select the new Azure subscription to use for billing going forward.
+
+>[!NOTE]
+> You will only incur incremental charges if the quantities of Microsoft resources you select exceed what you've already paid for the current month. Purchases of non-Microsoft extensions will be treated as new purchases and billed immediately to your new Azure subscription.
+If you wait until the 1st of next month to make your purchases again, your VSTS account will revert to the Free Tier and users in excess of the free limits will appear as expired.
 
 ## Related articles
 
 - [VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
+- [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
+- [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 - Any non-Microsoft services you're buying through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).

@@ -38,7 +38,7 @@ continuous deployment (CD) process](define-multistage-release-process.md).
 **You must have completed that tutorial first.**
 
 You'll also need a **work item query** that returns some work items from
-your VSTS or TFS account. This query is used in the gate you
+VSTS or TFS. This query is used in the gate you
 will configure. You can use one of the built-in queries, or create a
 new one just for this gate to use. For more information, see
 [Create managed queries with the query editor](../../work/track/using-queries.md).

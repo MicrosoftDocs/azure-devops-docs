@@ -13,15 +13,19 @@ ms.date: 06/02/2017
 
 # Adhoc vs managed work item queries
 
-<b>VSTS | TFS 2018 | TFS 2017</b> 
+**VSTS | TFS 2018 | TFS 2017**
 
 
-> [!NOTE]    
->**Feature availability:**&#160;&#160;The Work item search feature is available from VSTS and TFS 2017 and later versions.     
 
-You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the Work hub, Queries page.  
+You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the **Work>Queries** page.  
 
 ![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
+
+
+::: moniker range="tfs-2017"
+> [!NOTE]    
+> The Work item search feature is available from TFS 2017 and later versions.     
+::: moniker-end
 
 >[!div class="mx-tdCol2BreakAll"]    
 > |Use adhoc queries when you want to: | Use managed queries when you want to: |

@@ -58,26 +58,26 @@ You can choose from the following repository types:
 
 | Repository type               | VSTS (YAML) | VSTS | TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
 |-------------------------------|-------------|------|--------------------------------|--------------|
-| Git repo in a team project    |Yes|Yes|Yes|Yes|
+| Git repo in a project    |Yes|Yes|Yes|Yes|
 | Git repo in Bitbucket Cloud   |No|Yes|No|No|
 | Git repo in GitHub            |Yes|Yes|No|No|
 | Git repo in GitHub Enterprise |No|Yes|No|No|
 | Git repo (external/remote)    |No|Yes|Yes|Yes|
 | Subversion                    |No|Yes|Yes|No|
-| Team Foundation Version Control (TFVC) repo in a team project |No|Yes|Yes|Yes|
+| Team Foundation Version Control (TFVC) repo in a project |No|Yes|Yes|Yes|
 
 > [!NOTE]
 > To build code from Subversion, you must install a Subversion client (`svn`) on your [build agents](../agents/agents.md#install).
 
 ## Git options
 
-When you select a Git repo (in a team project, GitHub, Bitbucket, or Remote Git repo), you've got the following options.
+When you select a Git repo (in a project, GitHub, Bitbucket, or remote Git repo), you've got the following options.
 
 | Feature | VSTS | TFS 2018 | TFS 2017.2 | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
 |---------|------|------|----------|------------|--------------|------------|--------------|
 |Branch|Yes|Yes|Yes|Yes|Yes|Yes|
 |Clean|Yes|Yes|Yes|Yes|Yes|Yes|
-|Tag or label sources|Team project|Team project|Team project|Team project|Team project|No|
+|Tag or label sources|Project|Team project|Team project|Team project|Team project|No|
 |Report build status|Yes|Yes|Yes|Yes|No|No|
 |Checkout submodules|Yes|Yes|Yes|Yes|Yes|Yes|
 |Checkout files from LFS|Yes|Yes|Yes|macOS and Linux agents|macOS and Linux agents|macOS and Linux agents|
@@ -200,7 +200,7 @@ If your sources are in a Git repository in your project, then this option displa
 * **Commits**: Indicates the build status of the each commit (this requires continuous integration (CI) trigger to be enabled for your builds).
 * **Branches**: Indicates the status of the latest build for each branch.
 
-If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the definitions. In the case when this option is enabled on multiple definitions, the badge in the **Code** hub indicates the status of the latest build across all the definitions. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
+If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge in the **Code** hub indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
 
 ::: moniker-end
 
@@ -380,7 +380,7 @@ Include with a type value of **Map** only the folders that your build process re
 
 Make sure that you **Map** all folders that contain files that your build process requires. For example, if you add another project, you might have to add another mapping to the workspace.
 
-**Cloak** folders you don't need. By default the root folder of team project is mapped in the workspace. This configuration results in the build agent downloading all the files in the version control folder of your team project. If this folder contains lots of data, your build could waste build system resources and slow down your build process by downloading large amounts of data that it does not require.
+**Cloak** folders you don't need. By default the root folder of project is mapped in the workspace. This configuration results in the build agent downloading all the files in the version control folder of your project. If this folder contains lots of data, your build could waste build system resources and slow down your build process by downloading large amounts of data that it does not require.
 
 When you remove projects, look for mappings that you can remove from the workspace.
 

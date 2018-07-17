@@ -298,7 +298,7 @@ To run multiple jobs using multi-configuration option,
   for each one.
 
 * If you want to limit the number of agents used during the deployment to a
-  number less than you have configured for your account, enter that value as the
+  number less than you have configured for your subscription, enter that value as the
   **Maximum number of agents** parameter.
 
 For example, you might define two variables named **Location** and **Browser** as follows::

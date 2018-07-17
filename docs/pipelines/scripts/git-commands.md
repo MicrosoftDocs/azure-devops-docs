@@ -44,9 +44,9 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 
 <p>If you see this page, select the repo, and then click the link:</p>
 
-<p>![control panel top to team project](_img/control-panel-top-to-team-project.png)</p>
+<p>![control panel top to project](_img/control-panel-top-to-team-project.png)</p>
 
-<p>![control panel team project version control tab](_img/control-panel-team-project-version-control-tab.png)</p>
+<p>![control panel project version control tab](_img/control-panel-team-project-version-control-tab.png)</p>
 
 </div>
 

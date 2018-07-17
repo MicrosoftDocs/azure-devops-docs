@@ -21,8 +21,7 @@ using an HTTP Archive file and Visual Studio Team Services (VSTS).
 
 Before you start:
 
-* [Create a VSTS account](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
-  if you don't have one already. 
+* Create a VSTS subscription if you don't have one already. 
 
 * You can use your monthly free 20,000 virtual user minutes (VUM) allowance to try it. 
   If you want to use load testing beyond this, you can
@@ -129,7 +128,7 @@ using your browser.
 Follow these steps to create a load test in the VSTS
 web portal using an HTTP Archive (**.har**) file.
 
-1. Sign in to your VSTS account (**https://**your-account-name**.visualstudio.com**).
+1. Sign into VSTS (**https://**your-subscription-name**.visualstudio.com**).
 
 1. Go to the **Load Test** hub, open the **+ New**
    menu and choose **HTTP Archive based test**.

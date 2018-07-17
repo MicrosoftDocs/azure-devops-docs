@@ -32,7 +32,7 @@ or [run load tests locally with Visual Studio](https://docs.microsoft.com/visual
 * [Download and install Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs), 
   if you don't already have it.
 
-* [Create a VSTS account](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
+* [Create a VSTS subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
   if you don't have one already. You can have any access 
   level assigned to you in VSTS 
   when you use Visual Studio Enterprise to run load tests.
@@ -46,45 +46,44 @@ or [run load tests locally with Visual Studio](https://docs.microsoft.com/visual
 <a name="article10"></a>
 ## Get the sample load test project
 
-1.  [Download the sample load test project](https://code.msdn.microsoft.com/Getting-started-with-17a52e95), 
+1. [Download the sample load test project](https://code.msdn.microsoft.com/Getting-started-with-17a52e95), 
    unblock the zip file in its **Properties** dialog,
    and unzip the files into a local folder on your computer.
 
-1.  Open the **GettingStartedWithLoadTesting.sln** solution
+1. Open the **GettingStartedWithLoadTesting.sln** solution
    in Visual Studio Enterprise.
 
-1.  Open the **SampleWebTest.webtest** file. 
+1. Open the **SampleWebTest.webtest** file. 
    Replace the URL with the URL of your app's web page.
 
    ![Open SampleWebTest.webtest. In Properties window, replace URL with your web page address](_img/getting-started-with-performance-testing/LoadTest_ReplaceURL.png)
 
 <a name="ConnectVSOnline"></a>
-## Connect to your VSTS account
+## Connect to VSTS
 
 Before you can run load tests in the cloud, 
-connect Visual Studio to your VSTS account.
+connect Visual Studio to VSTS.
 
-1. In Team Explorer, connect to your VSTS account.
+1. In Team Explorer, connect to VSTS.
 
-   ![Connect to your VSTS account](_img/getting-started-with-performance-testing/LoadTestConnect1.png)
+   ![Connect to VSTS](_img/getting-started-with-performance-testing/LoadTestConnect1.png)
 
 1. Connect to one of your projects.
  
    ![Select Projects](_img/getting-started-with-performance-testing/LoadTestConnect2.png)
 
-   - If you haven't connected to your VSTS 
-     account before, add your account to the server list.
+   - If you haven't connected to VSTS before, add it to the server list.
 
-     ![Click Servers to add your VSTS account](_img/getting-started-with-performance-testing/LoadTestConnect3.png)
+     ![Click Servers to add your VSTS subscription](_img/getting-started-with-performance-testing/LoadTestConnect3.png)
 
-   - Enter your VSTS account name 
-     (your-account-name**.visualstudio.com**).
+   - Enter your VSTS subscription name 
+     (your-subscription-name**.visualstudio.com**).
 
-     ![Enter your account name](_img/getting-started-with-performance-testing/LoadTestConnect4.png)
+     ![Enter your subscription name](_img/getting-started-with-performance-testing/LoadTestConnect4.png)
 
    - If you're prompted to sign in to VSTS, do that now.
 
-1. Select your VSTS account from the list, 
+1. Select your VSTS subscription from the list, 
    then choose your project. Now you can connect.
     
    ![Choose your project](_img/getting-started-with-performance-testing/LoadTestConnect6.png)

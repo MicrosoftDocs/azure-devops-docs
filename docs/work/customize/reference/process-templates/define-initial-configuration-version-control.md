@@ -18,7 +18,7 @@ ms.date: 10/11/2017
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!NOTE]  
->  For VSTS and for TFS 2017.4 and later versions, you create team projects from the web 
+>  For VSTS and for TFS 2017.3 and later versions, you create team projects from the web 
 >  portal, which ignores this plug-in. Instead, default permissions are set for 
 >  project-level and collection-level security groups. After you create a team project, 
 >  you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or 
