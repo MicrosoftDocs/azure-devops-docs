@@ -23,7 +23,7 @@ By using Work Item Search you can:
 
 * **Search over all your projects**:
   Search in your own and your partner teams' backlog. Use cross-project 
-  searches over all the work items in your VSTS account to search 
+  searches over all the work items in VSTS to search 
   across your organization's entire work items. Narrow your search by using project and 
   area path filters. 
   

@@ -216,7 +216,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
      ![Configuring continuous deployment](_img/continuous-test-selenium/continuous-test-selenium-08.png)
 
-   * Open the **Tasks** tab, select the **Environment 1** section, and enter your account
+   * Open the **Tasks** tab, select the **Environment 1** section, and enter your subscription
      information and the name of the web app where you want to deploy the app and tests.
      These settings are applied to the **Deploy Azure App Service** task.
 
