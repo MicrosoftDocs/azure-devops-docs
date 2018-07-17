@@ -55,7 +55,7 @@ Here are the steps to migrate from XAML builds to newer builds:
 1. When you no longer need the history and artifacts from your XAML builds, delete the XAML builds, and then the XAML build pipelines.
 
  > [!WARNING]
- > After you delete the XAML builds and definitions, you cannot get them back.
+ > After you delete the XAML builds and pipelines, you cannot get them back.
 
 ## Create new build pipelines
 
@@ -79,7 +79,7 @@ In each of the following sections we show the XAML user interface, and then prov
 
 | XAML setting | TFS 2017 equivalent | VSTS and TFS 2018 and newer equivalent |
 |-|-|-|
-| Build pipeline name | You can change it whenever you save the pipeline. | <p>When editing the pipeline: On the **Tasks** tab, in left pane click **Process**, and the **Name** field appears in right pane.</p><p>In the **Builds** hub (**Mine** or **All Definitions** tab), open the action menu and choose **Rename**.</p> |
+| Build pipeline name | You can change it whenever you save the pipeline. | <p>When editing the pipeline: On the **Tasks** tab, in left pane click **Process**, and the **Name** field appears in right pane.</p><p>In the **Builds** hub (**Mine** or **All pipelines** tab), open the action menu and choose **Rename**.</p> |
 | Description (optional) | Not supported. | Not supported. |
 | Queue processing | Not yet supported. As a partial alternative, disable the triggers. | Not yet supported. As an alternative, disable the triggers. |
 
@@ -318,9 +318,9 @@ If you don't see a template for the kind of app you can start from an empty pipe
 
 ### Task groups (TFS 2017 or newer)
 
-In XAML builds, if you change the template, then you also change the behavior of all definitions based on it. In the new build system, templates don't work this way. Instead, a template behaves as a traditional template. After you create the build pipeline, subsequent changes to the template have no effect on build pipelines.
+In XAML builds, if you change the template, then you also change the behavior of all pipelines based on it. In the new build system, templates don't work this way. Instead, a template behaves as a traditional template. After you create the build pipeline, subsequent changes to the template have no effect on build pipelines.
 
-If you want to create a reusable and automatically updated piece of logic, then [create a task group](../library/task-groups.md). You can then later modify the task group in one place and cause all the definitions that use it to automatically be changed.
+If you want to create a reusable and automatically updated piece of logic, then [create a task group](../library/task-groups.md). You can then later modify the task group in one place and cause all the pipelines that use it to automatically be changed.
 
 ## Q & A
 

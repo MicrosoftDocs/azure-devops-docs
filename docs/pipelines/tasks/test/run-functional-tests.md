@@ -109,7 +109,7 @@ These scenarios are supported for:
     Automatic checking for new test agent versions is not supported in this topology.
 
 * **CI/CD workflow**
-  - The Build-Deploy-Test (BDT) tasks are supported in both build and release management definitions.
+  - The Build-Deploy-Test (BDT) tasks are supported in both build and release pipelines.
 
 * **Machine group configuration**
   - Only Windows machines are supported when using BDT tasks inside a Machine Group. Using
