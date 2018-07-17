@@ -6,7 +6,7 @@ ms.topic: include
 
 Deployment groups in VSTS make it easier to organize the servers that you want to use to host your app. A deployment group is a collection of machines with a VSTS agent on each of them. Each machine interacts with VSTS to coordinate deployment of your app.
 
-1. Open the VSTS web portal (`https://{your-account}.visualstudio.com`), navigate to the **Build and Release** hub, and then click **Deployment groups**.
+1. Open the VSTS web portal, navigate to the **Build and Release** hub, and then click **Deployment groups**.
 
 1. Click **Add Deployment group** (or **New** if there are already deployment groups in place.
 

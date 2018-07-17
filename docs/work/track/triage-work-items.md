@@ -45,7 +45,7 @@ In this topic you'll learn how to:
 
 The buttons to move up or down within the query results list are outside the work item form. Click Bottom to cycle through the choices for where the work item form appears: Bottom, Right, or Off. 
 
-![Web portal, choose Work hub, Queries](_img/triage-queries/triage-buttons-new-exp.png)
+![Web portal, choose Work>Queries](_img/triage-queries/triage-buttons-new-exp.png)
 
 ::: moniker-end
 

@@ -23,7 +23,7 @@ You can automatically deploy your database updates to Azure SQL database after e
 ::: moniker range="vsts"
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use YAML you must have the **Build YAML pipelines** [preview feature](/vsts/project/navigation/preview-features) enabled.
 
 ::: moniker-end
 
@@ -33,9 +33,9 @@ The simplest way to deploy a database is to create [data-tier package or DACPAC]
 
 # [Designer](#tab/designer)
 
-When setting up a build definition for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
+When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
 
-When setting up a release definition, choose **Start with an Empty process**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
+When setting up a release pipeline, choose **Start with an empty process**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
 
 # [YAML](#tab/yaml)
 
@@ -190,7 +190,7 @@ The **Azure SQL Database Deployment** task is the primary mechanism to deploy a 
 
 ::: moniker range="vsts"
 
-The easiest way to get started with this task is to be signed in as a user that owns both the VSTS account and the Azure subscription.
+The easiest way to get started with this task is to be signed in as a user that owns both the VSTS and the Azure subscriptions.
 In this case, you won't have to manually create the service connection.
 Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
@@ -208,7 +208,7 @@ You may choose to deploy only certain builds to your Azure database.
 
 # [Designer](#tab/designer)
 
-In your release definition you can implement various checks and conditions to control the deployment.
+In your release pipeline you can implement various checks and conditions to control the deployment.
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
 * Set **pre-deployment approvals** as a pre-condition for deployment to an environment.

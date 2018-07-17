@@ -33,7 +33,7 @@ Before you read this topic, you should understand the type of pipeline that you'
 ::: moniker range="vsts"
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use YAML you must have the **Build YAML pipelines** [preview feature](/vsts/project/navigation/preview-features) enabled.
 
 ::: moniker-end
 
@@ -163,7 +163,7 @@ input. The Azure service connection stores the credentials to connect from VSTS 
 
 ::: moniker range="vsts"
 
-The easiest way to get started with this task is to be signed in as a user that owns both the VSTS account and the Azure subscription.
+The easiest way to get started with this task is to be signed in as a user that owns both the VSTS and the Azure subscriptions.
 In this case, you won't have to manually create the service connection.
 Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 

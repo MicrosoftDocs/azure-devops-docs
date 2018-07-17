@@ -146,8 +146,7 @@ sources.
 ### Team Build
 
 You can link a release pipeline to any of
-the build pipelines in your Visual Studio Team Services (VSTS) account
-or Team Foundation Server project collection.
+the build pipelines in VSTS or TFS project collection.
 
 > [!NOTE]
 > You must include a **Publish Artifacts** task in your build
@@ -160,7 +159,7 @@ Some of the differences in capabilities between different versions of TFS and VS
   You can link multiple definitions, but you cannot specify default versions. You can set up a continuous deployment trigger on only one of the definitions.
   When multiple build pipelines are linked, the latest builds of all the other definitions are used, along with the build that triggered the release creation.
 
-* **TFS 2017 and newer** and **VSTS**: You can link build pipelines from any of the projects in your collection or account.
+* **TFS 2017 and newer** and **VSTS**: You can link build pipelines from any of the projects in VSTS or TFS.
   You can link multiple build pipelines and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
@@ -288,7 +287,7 @@ For more information about Jenkins integration capabilities, see
 When deploying containerized apps, the container image is first pushed to a container registry.
 After the push is complete, the container image can be deployed to the Web App for Containers service or a Docker/Kubernetes cluster.
 You must create a service connection with credentials to connect to 
-your service to deploy images located there, or to your Azure account. For more details, see
+your service to deploy images located there, or to Azure. For more details, see
 [service connections](../library/service-endpoints.md).
 
 The following features are available when using Azure Container Registry, Docker, Kubernetes sources:
@@ -347,7 +346,7 @@ your investments in your on-premises TFS server, and take advantage of the
 Release Management capabilities in VSTS.
 
 >Using this mechanism, you can also deploy artifacts published in one
-VSTS account from another VSTS account, or deploy artifacts
+VSTS subscription from another VSTS, or deploy artifacts
 published in one Team Foundation Server from another Team Foundation Server.
 
 To enable these scenarios, you must install the

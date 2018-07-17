@@ -31,7 +31,7 @@ Select this trigger if you want the build to run whenever someone checks in code
 
 Select this check box if you have a lot of team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
 
-> You can batch changes when your code is in Git in the team project or on GitHub. This option is not available if your code is in a remote Git repo or in Subversion.
+> You can batch changes when your code is in Git in the project or on GitHub. This option is not available if your code is in a remote Git repo or in Subversion.
 
 ### Git filters
 
@@ -160,7 +160,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 Large products have several components that are dependent on each other. 
 These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated.
 
-In situations like these, add a build completion trigger to run your build upon the successful completion of the **triggering build**. You can select any other build in the same team project.
+In situations like these, add a build completion trigger to run your build upon the successful completion of the **triggering build**. You can select any other build in the same project.
 
 After you add a **build completion** trigger, select the **triggering build**. If the triggering build is sourced from a Git repo, you can also specify **branch filters**. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 

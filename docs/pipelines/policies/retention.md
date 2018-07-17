@@ -41,11 +41,11 @@ if you are building from [Git repositories](#git-repositories).
 
 ### Global build retention policy
 
-If you are using an on-premises Team Foundation Server, you can specify build retention policy defaults and maximums for a team project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
+If you are using an on-premises Team Foundation Server, you can specify build retention policy defaults and maximums for a project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
 If you are using VSTS, you can view but not change these settings for your account.
 
-Global build retention policy settings can be managed from the **Build and Release** settings of your account or team project collection:
+Global build retention policy settings can be managed from the **Build and Release** settings of your account or project collection:
 
 ::: moniker range="vsts"
 
@@ -155,11 +155,11 @@ You can also customize these policies on an [environment-by-environment basis](#
 
 ### Global release retention policy
 
-If you are using an on-premises Team Foundation Server, you can specify release retention policy defaults and maximums for a team project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
+If you are using an on-premises Team Foundation Server, you can specify release retention policy defaults and maximums for a project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using VSTS, you can view but not change these settings for your team project.
+If you are using VSTS, you can view but not change these settings for your project.
 
-Global release retention policy settings can be managed from the **Release** settings of your team project:
+Global release retention policy settings can be managed from the **Release** settings of your project:
 
 * VSTS: `https://{your_account}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`

@@ -29,7 +29,7 @@ monikerRange: 'vsts'
 <tr><td>Azure SQL Server Name</td><td>(Required) Azure SQL Server name, like Fabrikam.database.windows.net,1433 or Fabrikam.database.windows.net.</td></tr>
 <tr><td>Database Name</td><td>(Required) Name of the Azure SQL Database, where the files will be deployed.</td></tr>
 <tr><td>Server Admin Login</td><td>(Optional) Specify the Azure SQL Server administrator login.</td></tr>
-<tr><td>Password</td><td>(Optional) Password for the Azure SQL Server administrator.<br>It can accept variable defined in Build/Release Definitions as '$(passwordVariable)'.<br>You may mark the variable type as 'secret' to secure it.</td></tr>
+<tr><td>Password</td><td>(Optional) Password for the Azure SQL Server administrator.<br>It can accept variables defined in build/release pipelines as '$(passwordVariable)'.<br>You may mark the variable type as 'secret' to secure it.</td></tr>
 <tr><td>Type</td><td>(Optional) </td></tr>
 <tr><td>DACPAC File</td><td>(Required) Location of the DACPAC file on the automation agent or on a UNC path accessible to the automation agent like, \\\\BudgetIT\Web\Deploy\FabrikamDB.dacpac. Predefined system variables like, $(agent.releaseDirectory) can also be used here.</td></tr>
 <tr><td>SQL Script</td><td>(Required) Location of the SQL script file on the automation agent or on a UNC path accessible to the automation agent like, \\\\BudgetIT\Web\Deploy\FabrikamDB.sql. Predefined system variables like, $(agent.releaseDirectory) can also be used here.</td></tr>

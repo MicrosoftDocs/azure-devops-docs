@@ -1,7 +1,7 @@
 ---
-title: Navigate using the account hub pages 
+title: Quickly navigate to projects, teams, and favorites from the projects pages 
 titleSuffix: VSTS & TFS 
-description: Quickly link to work items, pull requests, team projects, and more using your account home page in Visual Studio Team Services & Team Foundation Server 
+description: Quickly link to work items, pull requests, team projects, and more using your projects page in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-new-user
 ms.prod: devops
 ms.assetid: B4406575-4D4D-42E3-88FD-93830546B67F
@@ -12,13 +12,13 @@ author: chcomley
 ms.date: 06/07/2018
 monikerRange: '>= tfs-2017'
 ---
-# Work effectively from your account hub
+# Work effectively from your projects page
 
 **VSTS | TFS 2018 | TFS 2017.1**
 
 From your account, you gain access to a number of page views that are particularly helpful if you work in several team projects. These pages provide quick access and filter functions to support your work within a single team project or  work you're doing across several projects.  
 
-For example, you can quickly access and navigate to work of interest from the following Account hubs:
+For example, you can quickly access and navigate to work of interest from the following pages:
 
 ::: moniker range="vsts"
 
@@ -144,16 +144,16 @@ To filter the list, type a keyword in the *Filter favorites* box. The list will 
 ## Work: View and open work items
 
 ::: moniker range="vsts"
-Open the **My work items** hub to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in.
+Open the **My work items** page to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-Open the **Work items** hub to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in.
+Open the **Work items** page to access the set of work items assigned to you or followed by you. The lists available from each page span all team projects that you work in.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
 > [!NOTE]  
-> You can also access the **My work items** hub [from a mobile device](../project/navigation/mobile-work.md).
+> You can also access the **My work items** page [from a mobile device](../project/navigation/mobile-work.md).
 ::: moniker-end
 
 ### View your assigned work items

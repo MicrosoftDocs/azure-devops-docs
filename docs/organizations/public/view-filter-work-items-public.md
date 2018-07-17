@@ -28,7 +28,19 @@ When viewing a public project, you're able to view work items defined for that p
 [!INCLUDE [temp](_shared/navigation.md)] 
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [New navigation](#tab/new-nav)
+
+To view **Work Items**, choose **Work**. You can view recently created, updated, and completed work items.  
+
+> [!div class="mx-imgBorder"]
+![Work hub, Work Items page ](_img/view-work-items/open-work-items-vert-brn.png)
+
+By default, completed work items are hidden. To show them, choose the ![](../../_img/icons/view-options-icon.png) view options icon, and switch the slider to show **Completed Work Items**.
+  
+To view a work item, choose its title. As an anonymous user (one not signed into the project), you can only view the details shown. You can't modify or add information to the work item. 
+
+
+# [Previous navigation](#tab/previous-nav)
 
 Open **Work** located in the top navigation bar. From the **Work Items** page, you can view recently created, updated, and completed work items.  
 
@@ -40,24 +52,8 @@ By default, completed work items are hidden. To show them, choose the ![](../../
 To view a work item, choose its title. As an anonymous user (one not signed into the project), you can only view the details shown. You can't modify or add information to the work item. 
 
 
-
-# [Vertical navigation](#tab/vertical)
-
-To view **Work Items**, choose **Work**. You can view recently created, updated, and completed work items.  
-
-> [!div class="mx-imgBorder"]
-![Work hub, Work Items page ](_img/view-work-items/open-work-items-vert-brn.png)
-
-By default, completed work items are hidden. To show them, choose the ![](../../_img/icons/view-options-icon.png) view options icon, and switch the slider to show **Completed Work Items**.
-  
-To view a work item, choose its title. As an anonymous user (one not signed into the project), you can only view the details shown. You can't modify or add information to the work item. 
-
 ---
 
-<!---
-## Copy a list of work items 
-
--->
 ## Choose your work item view
 
 Using the drop-down menu, you can focus on relevant items using one of the three pivots described next. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  
@@ -110,14 +106,4 @@ To view or hide completed work items, choose the ![](../../_img/icons/view-optio
 > [View project homepage or a dashboard](view-project-dashboard-public.md) 
 
 
-<!---
-[Vertical navigation](#tab/vertical) 
 
-From the **Work** hub, click the **Work Items** link located in the left navigation pane.
-
-> [!div class="mx-imgBorder"]
-![Work items link, vertical navigation](_img/view-work-items-vertical.png) 
-
-For help navigating to a project or hub, see Navigation basics. 
-
--->

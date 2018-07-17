@@ -25,22 +25,23 @@ With code search, you can locate specific types of code and easily narrow or wid
 
 [!INCLUDE [temp](_shared/navigation.md)] 
 
-# [Horizontal navigation](#tab/horizontal)  
+# [New navigation](#tab/new-nav)
 
-1. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
+To start your search, choose **Code>Files** or other hub under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+
+> [!div class="mx-imgBorder"]
+> ![Work Item Search box, vertical navigation](_img/search/code-search-vert.png)    
+
+# [Previous navigation](#tab/previous-nav)  
+
+0. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
 
    ![Switching between searching for code and work items](../../project/search/_img/code-search-get-started/title-bar-search-box-empty-outlined.png)
 
-1. Enter a search string in the text box, and press _Enter_ (or choose the 
+0. Enter a search string in the text box, and press _Enter_ (or choose the 
    ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon) to start your search.
 
 
-# [Vertical navigation](#tab/vertical)
-
-0. To start your search, choose **Code>Files** or other hub under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box, vertical navigation](_img/search/code-search-vert.png)    
 
 ---
 

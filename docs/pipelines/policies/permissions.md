@@ -44,11 +44,11 @@ Roles are also defined to help you configure security on shared
 [library entities](../library/index.md) such as [variable groups](../library/index.md#security)
 and [service connection](../library/service-endpoints.md#security).
 Membership of these roles can be configured hierarchically, as well
-as at either team project level or individual entity level.
+as at either project level or individual entity level.
 
 ## Build permissions
 
-Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the team project level and can be overridden on an individual build pipeline.
+Permissions in Build follow a hierarchical model. Defaults for all the permissions can be set at the project level and can be overridden on an individual build pipeline.
 
 To set the permissions at project level for all build pipelines in a project, choose **Security** from the action bar on the main page of Builds hub.
 
@@ -78,7 +78,7 @@ The following permissions are defined in Build. All of these can be set at both 
 
 <p />
 Default values for all of these permissions are set for team
-project collections and team project groups. For example,
+project collections and project groups. For example,
 **Project Collection Administrators**, **Project Administrators**, and
 **Release Administrators** are given all of the above permissions by
 default. **Contributors** are given all permissions except
@@ -88,7 +88,7 @@ are denied all permissions except **View release pipeline** and
 
 When it comes to security, there are different best practices and levels of permissiveness. While there's no one right way to handle permissions, we hope these examples help you empower your team to work securely with builds.
 
-* By default, contributors in a team project cannot create or edit build pipelines. To grant permissions to work on build pipelines, select _Contributors_ and set the **Edit build pipeline** permission to _Allow_.
+* By default, contributors in a project cannot create or edit build pipelines. To grant permissions to work on build pipelines, select _Contributors_ and set the **Edit build pipeline** permission to _Allow_.
 
 * In many cases you probably also want to set **Delete build pipeline** to _Allow_. Otherwise these team members can't delete even their own build pipelines.
 
@@ -99,7 +99,7 @@ When it comes to security, there are different best practices and levels of perm
 ## Release permissions
 
 Permissions in Release Management follow a hierarchical model.
-Defaults for all the permissions can be set at the team project
+Defaults for all the permissions can be set at the project
 level and can be overridden on an individual release pipeline.
 Some of the permissions can also be overridden on a specific
 environment within a pipeline. The hierarchical model helps
@@ -120,7 +120,7 @@ To specify security settings for individual environments in a release pipeline, 
 the **Permissions** dialog by choosing **Security** on the shortcut menu that opens
 from the ellipses (**...**) on an environment in the release pipeline editor.
 
-The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the team project, release pipeline, or environment level.
+The following permissions are defined in Release Management. The scope column explains whether the permission can be set at the project, release pipeline, or environment level.
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description | Scopes |
@@ -141,7 +141,7 @@ The following permissions are defined in Release Management. The scope column ex
 
 <p />
 Default values for all of these permissions are set for team
-project collections and team project groups. For example,
+project collections and project groups. For example,
 **Project Collection Administrators**, **Project Administrators**, and
 **Release Administrators** are given all of the above permissions by
 default. **Contributors** are given all permissions except
@@ -151,7 +151,7 @@ are denied all permissions except **View release pipeline** and
 
 ## Task group permissions
 Task group permissions follow a hierarchical model. 
-Defaults for all the permissions can be set at the team project
+Defaults for all the permissions can be set at the project
 level and can be overridden on an individual task group pipeline.
 
 You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.

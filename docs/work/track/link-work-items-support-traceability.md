@@ -154,7 +154,7 @@ You can also use Excel or Project to change the link structure. See [Bulk add or
 
 You can link work items to test cases using the **Tested/Tested By** link types. You use the same link controls you use to link work items to other work items as [described earlier](#link-work-items). 
 
-The following image shows the full set of link types used in linking test management work item types. most links between test management artifacts occur by executing a task from the Test hub or Microsoft Test Manager. 
+The following image shows the full set of link types used in linking test management work item types. most links between test management artifacts occur by executing a task from the **Test** pages or Microsoft Test Manager. 
 
 <img src="_img/link-tracking-work-item-test-case-link-types.png" alt="Link types used to link test objects " style="border: 2px solid #C3C3C3;" />
 
@@ -164,7 +164,7 @@ For example, when you add Shared Steps to a Test Case, they are automatically li
 
 ![Create shared steps](_img/IC666631.png) 
 
-From the Test hub you can add test plans, test suites, and test cases&mdash;which are linked, but not through a specific link type. Also, the test system creates and manages the associations of test results to test cases and test plans. 
+From **Test** you can add test plans, test suites, and test cases&mdash;which are linked, but not through a specific link type. Also, the test system creates and manages the associations of test results to test cases and test plans. 
 
 
 ## Link work items, code artifacts, and builds  
@@ -259,7 +259,7 @@ For query examples, see [Link and attachment queries](linking-attachments.md).
 
 
 > [!NOTE]  
-> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using Parent/Child or any other link type. You can only view the hierarchy through the [Test Plans page of the Test hub](../../test/create-a-test-plan.md). 
+> You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using Parent/Child or any other link type. You can only view the hierarchy through the [**Test>Test Plans** page](../../test/create-a-test-plan.md). 
 
 
 <a id="link-type-guidance"></a>

@@ -27,7 +27,31 @@ With work item search, you can quickly find work items defined within a public p
 
 [!INCLUDE [temp](_shared/navigation.md)] 
 
-# [Horizontal navigation](#tab/horizontal)  
+# [New navigation](#tab/new-nav)
+
+0. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Work Item Search box, vertical navigation](_img/search/work-item-search-vert.png)    
+
+0. Search results are displayed in a snippet view where the matches found are shown in bold.
+
+   ![Search results](../../project/search/_img/work-item-search-get-started/results-matching.png)
+
+   This is a full text search that uses simple search strings for words or phrases.
+   Work item search matches derived forms of your search terms; for example, a search for
+   "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
+
+0. Select a snippet of a work item to display it in the right window. 
+  
+   >Open the search results in a new browser tab from a search box by
+   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
+   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   to the new browser tab. 
+
+
+# [Previous navigation](#tab/previous-nav)  
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
@@ -53,40 +77,16 @@ With work item search, you can quickly find work items defined within a public p
    to the new browser tab. 
 
 
-# [Vertical navigation](#tab/vertical)
-
-0. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box, vertical navigation](_img/search/work-item-search-vert.png)    
-
-0. Search results are displayed in a snippet view where the matches found are shown in bold.
-
-   ![Search results](../../project/search/_img/work-item-search-get-started/results-matching.png)
-
-   This is a full text search that uses simple search strings for words or phrases.
-   Work item search matches derived forms of your search terms; for example, a search for
-   "updating" will also find instances of the word "updated" and "update". Note that searches are _not_ case-sensitive.
-
-0. Select a snippet of a work item to display it in the right window. 
-  
-   >Open the search results in a new browser tab from a search box by
-   pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/_img/_shared/start-search-icon.png) icon.
-   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-   to the new browser tab. 
 
 --- 
 
-## Fine tune your search
-
-# [Horizontal navigation](#tab/horizontal)  
+# [New navigation](#tab/new-nav)
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/work-item-search-filters.png)    
+	> ![Search from VSTS title bar](_img/search/search-work-vert.png)    
 
    The quick filters you can use are:
 
@@ -112,13 +112,15 @@ With work item search, you can quickly find work items defined within a public p
    and states, by using the drop-down selector lists at the top of the results page.
 
 
-# [Vertical navigation](#tab/vertical)
+## Fine tune your search
+
+# [Previous navigation](#tab/previous-nav)  
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/search-work-vert.png)    
+	> ![Search from VSTS title bar](_img/search/work-item-search-filters.png)    
 
    The quick filters you can use are:
 

@@ -118,7 +118,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
    The following sequence of events occurs:
  
-   - Azure Continuous Delivery creates a build and a release definition in the VSTS account
+   - Azure Continuous Delivery creates a build and a release definition in the VSTS subscription
      you specified, together with a service endpoint to connect to Azure.
  
    - If you chose to create a new Azure App Service instance for load tests, and/or a new slot for
@@ -182,8 +182,8 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
    You can stop a deployment to your Azure App Service by choosing **Disconnect** at the top of
    the **Continuous Deployment** blade. This deletes the Azure Continuous Delivery
-   configuration in the Azure portal and turns off the build triggers in your VSTS
-   account for this configuration. 
+   configuration in the Azure portal and turns off the build triggers in VSTS
+   for this configuration. 
 
    ![Stopping a deployment](_img/continuous-app-service/12.png)
 
@@ -208,7 +208,7 @@ The Azure Continuous Delivery feature is a preview version. You
 may encounter the following known issues:
 
 * If you do not have relevant permission to create build and release definitions 
-  in the VSTS account, the Continuous Delivery configuration will fail
+  in VSTS, the Continuous Delivery configuration will fail
   with an appropriate error message. See 
   [Manage users and access in VSTS](../../../../organizations/accounts/add-account-users-from-user-hub.md).
   
@@ -219,12 +219,10 @@ may encounter the following known issues:
   while deploying to Azure App Service, see
   [Troubleshoot Azure Resource Manager service endpoints](../../../release/azure-rm-endpoint.md).
   
-* There is a known issue where users are able to see their Visual Studio Team
-  Services account information within the [Azure classic portal](https://manage.windowsazure.com/),
+* There is a known issue where users are able to see their VSTS information within the [Azure classic portal](https://manage.windowsazure.com/),
   but not in the [Azure dashboard](https://portal.azure.com/). You may see a
   "No accounts found" message in this situation. To resolve this, you can
-  configure your VSTS account to be backed by an
-  Azure Active Directory (AAD) instance. For information on how to do this, see
+  configure VSTS to be backed by an Azure Active Directory (AAD) instance. For information on how to do this, see
   [VSTS - Access with Azure Active Directory](../../../../organizations/accounts/access-with-azure-ad.md).
 
 ## Q&A

@@ -50,7 +50,7 @@ You will:
 
 ## Prerequisites
 
-* A VSTS account. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the team project you want to use.
+* A VSTS account. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
 
 * An Azure subscription. You can get one free from [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
@@ -83,7 +83,7 @@ GitHub](https://github.com/spring-guides/gs-spring-boot-docker.git).  This tutor
 
 1. Click **Import** to copy the sample code into your Git repo.
 
-1.  Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial. 
+1. Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial. 
 
 ## Configure the sample app to build and push a Docker image to your ACR
 
@@ -256,7 +256,7 @@ You create a Jenkins build job to use the source code stored in your VSTS reposi
 1. Enter a **Collection URL**.  An example is 
 `http://{YourVSTSAccount}.visualstudio.com/DefaultCollection`
 
-1. Enter the **Team project** and choose a **Release pipeline** name.  Store the **Release pipeline** name since it is needed on later steps in this tutorial.
+1. Enter the **project** and choose a **release pipeline** name. Store the **release pipeline** name since it is needed in later steps of this tutorial.
 
 1. Enter the **username** and **PAT** you created earlier.
  

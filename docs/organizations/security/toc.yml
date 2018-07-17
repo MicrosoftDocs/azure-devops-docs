@@ -123,7 +123,7 @@
   - name: TFSSecurity command (TFS)
     href: /tfs/server/ref/command-line/tfssecurity-cmd?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
   - name: REST API, Permissions
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/organizations/security/permissions 
+    href: /rest/api/vsts/security/permissions 
 - name: Resources
   items:
   - name: Account Management (VSTS)
@@ -133,6 +133,6 @@
   - name: Authentication guidance for REST APIs
     href: ../../integrate/get-started/authentication/authentication-guidance.md
   - name: Security REST APIs
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/organizations/security/
+    href: /rest/api/vsts/security/
   - name: Technical Articles
     href: ../../articles/index.md
