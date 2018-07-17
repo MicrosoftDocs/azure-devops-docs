@@ -20,13 +20,13 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="vsts"
 
-We'll show you how to use VSTS pipelines to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your team project. You'll also become familiar with all the basic concepts of VSTS pipelines.
+We'll show you how to use VSTS pipelines to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your project. You'll also become familiar with all the basic concepts of VSTS pipelines.
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 
-We'll show you how to use TFS to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your team project. You'll also become familiar with all the basic concepts of build and release in TFS.
+We'll show you how to use TFS to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your project. You'll also become familiar with all the basic concepts of build and release in TFS.
 
 ::: moniker-end
 
@@ -101,7 +101,7 @@ Create a build pipeline that prints "Hello world."
 
    ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
-1. Make sure that the **source**, **team project**, **repository**, and default **branch** match the location in which you created the script.
+1. Make sure that the **source**, **project**, **repository**, and default **branch** match the location in which you created the script.
 
 1. Start with an **empty process**
 
@@ -606,9 +606,9 @@ If your pipeline has a pattern that you want to replicate in other definitions, 
 
 After you clone a pipeline, you can make changes and then save it.
 
-After you export a pipeline, you can import it from the **All Definitions** tab.
+After you export a pipeline, you can import it from the **All pipelines** tab.
 
-After you create a template, your team members can use it to follow the pattern in new definitions.
+After you create a template, your team members can use it to follow the pattern in new pipelines.
 
 > [!TIP]
 >

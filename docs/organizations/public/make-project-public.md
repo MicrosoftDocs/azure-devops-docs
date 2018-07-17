@@ -36,61 +36,44 @@ Before you can change a private project, to a public project, you must enable an
 
 [!INCLUDE [temp](_shared/navigation.md)] 
 
-# [Horizontal navigation](#tab/horizontal)
 
-0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
-
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](../../_img/open-account-settings-horz-brn.png) 
-
-0. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.     
-
-	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](_img/create-public-project/turn-on-anonymous-access.png)  
-
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
 
 0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../_img/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
 
 0. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.     
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](_img/create-public-project/open-policy-vert.png) 
 
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
+
+0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-account-settings-horz-brn.png) 
+
+0. Choose the **Policy** page, and select **On** for **Anonymous access to projects**.     
+
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Policy page, Security policies](_img/create-public-project/turn-on-anonymous-access.png)  
+
 ---
 
 ## Make a private project public 
 
 
-# [Horizontal navigation](#tab/horizontal)
 
-0. To open the project admin context, choose the ![](../../_img/icons/gear-icon.png) gear icon. 
-
-0. Choose the **Specific People** link. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/open-private-public-form.png) 
-
-0. To switch from private to public, choose the **Public** icon.   
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/change-project-visibility-from-private-to-public.png)  
-
-0. Review the information provided, and choose **Change** to confirm your action.    
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/confirm-change-project-visibility-public.png)  
-
-
-
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 0. Choose **Project Settings** in the sidebar.
 
@@ -112,32 +95,34 @@ Before you can change a private project, to a public project, you must enable an
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational hub](_img/make-public-private/confirm-change-project-visibility-public.png)  
 
+
+# [Previous navigation](#tab/previous-nav)
+
+0. To open the project admin context, choose the ![](../../_img/icons/gear-icon.png) gear icon. 
+
+0. Choose the **Specific People** link. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open organizational hub](_img/make-public-private/open-private-public-form.png) 
+
+0. To switch from private to public, choose the **Public** icon.   
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open organizational hub](_img/make-public-private/change-project-visibility-from-private-to-public.png)  
+
+0. Review the information provided, and choose **Change** to confirm your action.    
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open organizational hub](_img/make-public-private/confirm-change-project-visibility-public.png)  
+
+
+
+
 ---
 
 ## Make a public project private 
 
-
-# [Horizontal navigation](#tab/horizontal)
-
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open the project admin context. 
-
-0. Choose the **Public** link. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/make-public-project-private-link.png) 
-
-0. To switch from public to private, choose the **Private** icon.   
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/change-project-visibility-public.png)  
-
-0. Choose **Change** to confirm your action.    
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open organizational hub](_img/make-public-private/change-project-visilibity-public-to-private.png)  
-
-
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 0. Choose **Project Settings** in the sidebar.
 
@@ -158,6 +143,29 @@ Before you can change a private project, to a public project, you must enable an
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational hub](_img/make-public-private/change-project-visilibity-public-to-private.png)  
+
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open the project admin context. 
+
+0. Choose the **Public** link. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open organizational hub](_img/make-public-private/make-public-project-private-link.png) 
+
+0. To switch from public to private, choose the **Private** icon.   
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open organizational hub](_img/make-public-private/change-project-visibility-public.png)  
+
+0. Choose **Change** to confirm your action.    
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open organizational hub](_img/make-public-private/change-project-visilibity-public-to-private.png)  
+
+
 
 ---
 

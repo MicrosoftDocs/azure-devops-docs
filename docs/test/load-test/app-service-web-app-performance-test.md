@@ -25,11 +25,9 @@ confident that your app can handle the traffic during peak use or at your next m
 
 * You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* You'll need a [Visual Studio Team Services (VSTS)](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
-  account to keep your performance test history. A suitable account will be created 
-  automatically when you set up your performance test. Or you can create a new account 
-  or use an existing account if you're the account owner. 
-  [What else can I do with a VSTS account?](reference-qa.md#Team ServicesAccount)
+* You'll need a VSTS subscription to keep your performance test history. A suitable subscription will be created 
+  automatically when you set up your performance test. Or you can create a new subscription 
+  or use an existing subscription if you're the owner. 
 
 * Deploy your app for testing in a non-production environment. 
   Have your app use an App Service plan other than the plan used in production. 
@@ -39,8 +37,8 @@ confident that your app can handle the traffic during peak use or at your next m
 ## Set up and run your performance test
 
 1. Sign in to the [Azure Portal](https://portal.azure.com). 
-   To use a VSTS account that you own, 
-   sign in as the account owner.
+   To use a VSTS subscription that you own, 
+   sign in as the owner.
 
 1. Go to your web app.
 
@@ -50,14 +48,13 @@ confident that your app can handle the traffic during peak use or at your next m
 
    ![Go to Development Tools, Performance Test](_img/app-service-web-app-performance-test/azure-np-web-app-details-tools-expanded.png)
  
-1. Now you'll link a [VSTS](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
-   account to keep your performance test history. Choose **Set Account**.
+1. Now you'll link a VSTS subscription to keep your performance test history. Choose **Set Account**.
 
-   ![Select existing VSTS account, or create a new account](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
+   ![Select existing VSTS subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
 
-1. If you have a VSTS account to use, select that account. If you don't, create a new account.
+1. If you have a VSTS subscription to use, select that. If you don't, create a new one.
 
-   ![Select existing VSTS account, or create a new account](_img/app-service-web-app-performance-test/azure-np-select-vso-account.png)
+   ![Select existing VSTS subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-select-vso-account.png)
 
 1. Choose **+ New** to create a new performance test.
 
