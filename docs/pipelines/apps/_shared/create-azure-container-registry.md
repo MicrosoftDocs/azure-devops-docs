@@ -6,7 +6,7 @@ ms.topic: include
 
 You can use [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/) to host the Docker image that is published by the CI process.  Follow the steps below to create and configure a registry.  In later steps, you use VSTS to deploy the image to an Azure Web App for Containers.
 
-1. Sign into your Azure Account at [https://portal.azure.com](https://portal.azure.com).
+1. Sign into Azure at [https://portal.azure.com](https://portal.azure.com).
 
 1. In the Azure Portal, choose **New**, **Containers**, then choose **Azure Container Registry**.    
 

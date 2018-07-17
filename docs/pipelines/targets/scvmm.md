@@ -39,7 +39,7 @@ You need to first configure how TFS connects to SCVMM. You must have a build and
    Supported version: [System Center 2012 R2 Virtual Machine Manager](https://technet.microsoft.com/library/hh546785.aspx).
 
 1. Install the **System Center Virtual Machine Manager (SCVMM)** extension
-   from Visual Studio Marketplace into your TFS server or VSTS account:
+   from Visual Studio Marketplace into TFS or VSTS:
 
    * If you are using **VSTS**,
      install the extension from [this location](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.scvmmapp)

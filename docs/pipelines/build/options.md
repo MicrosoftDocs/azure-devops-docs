@@ -37,7 +37,7 @@ Here we explain settings you can change on the build pipeline **Options** tab.
 >
 > This section is available under <b>General<b> tab.
 
-If you specify a description here, it is shown near the name of the build pipeline when you select it in the Build area of your team project.
+If you specify a description here, it is shown near the name of the build pipeline when you select it in the Build area of your project.
 
 <h2 id="build-number-format">Build number format</h2>
 
@@ -47,7 +47,7 @@ If you leave it blank, your completed build is given a unique integer as its nam
 
 At the time the build is queued:
 
-* Team project name: Fabrikam
+* Project name: Fabrikam
 
 * Build pipeline name: CIBuild
 
@@ -168,9 +168,9 @@ Select the [queue](../agents/pools-queues.md) that's attached to the pool that c
 
 Specify the authorization scope for a build job. Select:
 
-* **Project Collection** if the build needs access to multiple team projects.
+* **Project Collection** if the build needs access to multiple projects.
 
-* **Current Project** if you want to restrict this build to have access only the resources in the current team project.
+* **Current Project** if you want to restrict this build to have access only the resources in the current project.
 
 ## Build job timeout in minutes
 

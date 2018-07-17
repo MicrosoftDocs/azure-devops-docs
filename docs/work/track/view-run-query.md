@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018  
+ms.date: 07/21/2018  
 ---
 
 
@@ -32,24 +32,63 @@ By default, all contributors and stakeholders can view and run all shared querie
 
 ## Run a query 
 
-To run any query, expand a folder and choose the title of the query.
+To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**.
 
 > [!TIP]    
-> The **Queries** tabs, as with many web portal tabs, remembers the view you last navigated to and returns you to that view.
+> The **Queries** page, as with other web portal pages, remembers the view you last navigated to and returns you to that view.
 	
-The view opens to display the query **Results**.
-
 ::: moniker range="vsts"
 0. Choose **All** to open the page where you can view all queries you've defined or that are shared within your team project. 
 
-> [!div class="mx-imgBorder"]  
-> ![Web portal, choose Work hub, Queries, All page ](_img/view-run-queries/queries-all.png)  
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, choose Work>Queries>ll page](_img/view-run-queries/queries-all.png)  
 
 0. Choose **My Queries** as needed. 
 	- To view all work items assigned to you, choose **Assigned to me**. This query uses the **@Me**  macro to list all work items assigned to you.  
 	- To view all work items you are following, choose **Followed work items**. This query uses the **@Follows**  macro (ID in @Follows) to list all work items you've elected to follow. To learn more, see [Follow a work item or pull request](../work-items/follow-work-items.md).  
 
 0. Choose **Shared Queries** to expand the folder and access queries saved as shared queries. 
+
+0. Choose a folder within a breadcrumb to open a query folder. 
+	> [!div class="mx-imgBorder"]  
+	> ![queries breadcrumb example](_img/example-queries/queries-breadcrumb-example.png)
+::: moniker-end
+
+
+::: moniker range="vsts"
+<a id="tips-queries-hub"> </a>  
+## Tips for working with the directory-focused **Queries** pages 
+
+The **Queries** page now contains a directory-focused view which you can filter to find specific queries of interest. Previously, the **Queries** page presented the queries folders, query editor, and query results all within the same view. 
+
+With this change, some functionality has been added and some has changed. Here are some tips to find the work items of interest:
+
+### Where can I find work assigned to me or work that I'm following? 
+Open **Queries>All**. Under the **My Queries** section are two fully customizable queries: **Assigned to me** and **Followed work items**.    
+
+### Where can I find recent work item activity?**
+- Open **Work>Work Items** and select the **Recently updated** view. See [View and add work items](../work-items/view-add-work-items.md).  
+
+- You can also use the macros &mdash; **@Me**, **@Follows**, **MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** &mdash; to create custom queries that can filter for work items assigned to you, that you are following, and so on. To learn more about these macros, see [Query macros and variables](query-operators-variables.md#query-macros-or-variables). 
+
+### How do I quickly navigate to queries I view frequently?  
+- Favorite those queries and other artifacts that you view frequently. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a query. 
+- Favorited queries (![](../../_img/icons/icon-favorited.png) favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
+	![queries selector](_img/example-queries/queries-selector.png)  
+- Or, you can select from any of your favorited items by choosing the ![](../../_img/icons/inbox.png) inbox icon and choose **Favorites**.  
+	![queries selector](_img/example-queries/favorites-selector.png)  
+
+### How do I quickly navigate to queries within the same query folder?  
+When viewing a query, you can use the queries breadcrumb selector (![](../../_img/icons/breadcrumb-selector.png) the breadcrumb icon changes to ![](../../_img/icons/context-menu-selector.png) a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
+	![queries breadcrumb example](_img/view-run-queries/folder-selector.png)  
+
+### Can I run several queries at the same time?  
+Yes. Simply open a query in a new browser tab to run several queries at the same time.  
+
+### How can I best use queries to monitor progress on a project or team?  
+- [Define a chart for a query](../../report/dashboards/charts.md) and add it to a dashboard, or add the [Query Results widget](../../report/dashboards/widget-catalog.md#query-results-widget) to a dashboard. Each time you open the dashboard, the query will automatically run and refresh. 
+- Periodically, [triage query results](triage-work-items.md) to review and update status.  
+
 ::: moniker-end
 
 ## View, rename, or delete a query

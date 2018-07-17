@@ -26,7 +26,7 @@ subscription, and optionally the Azure Resource Group, to which you want to conn
 approach:
 
 * If you are connecting from VSTS, and not from TFS. 
-* If you are the owner of both the Azure subscription and the VSTS account you are connecting from, and both accept the same credentials as you are currently signed into VSTS with.
+* If you are the owner of both the Azure and the VSTS subscriptions you are connecting from, and both accept the same credentials as you are currently signed into VSTS with.
 * You do not need to further limit the permissions for Azure resources accessed through the service connection.
 * You are not connecting to [Azure Stack](#connect-stack) or an [Azure Government Cloud](#connect-govt).
 
@@ -47,7 +47,7 @@ or if you want to further limit users' permissions, you can do so by using a ser
 
    | Parameter | Description |
    | --------- | ----------- |
-   | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. |
+   | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure subscription. |
    | Subscription | Select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
    | Resource Group | Leave empty to allow users to access all resources defined within the subscription - users will be able to access only the resources defined within that group. Or select a resource group to which you want to restrict the users' access - users will be able to access only the resources defined within that group. |
 

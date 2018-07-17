@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
 
 To use the Test &amp; Feedback extension in **Connected** mode you must connect 
-to your VSTS account or TFS 2015 and later.
+to VSTS or TFS 2015 and later.
 This automatically configures the extension based on your access level: 
 
 * Users with **Basic** access can use the extension to perform exploratory
@@ -37,8 +37,8 @@ This automatically configures the extension based on your access level:
 ## Connect to VSTS or TFS
 
 1. If you want to use VSTS, and you haven't already done so, 
-   [sign up for a VSTS account](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
-   now. Make sure you create a project when you create your account.
+   [sign up for a VSTS subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
+   now. Make sure you create a project when you create your subscription.
 
 1. If you haven't already, [install the Test &amp; Feedback extension](perform-exploratory-tests.md).
 
@@ -46,9 +46,9 @@ This automatically configures the extension based on your access level:
 
    ![Start the extension in Connected mode](_img/_shared/connectedmode-01.png)
  
-1. Enter the URL of the VSTS account or TFS you want to connect to and choose **Next**.
+1. Enter the VSTS or TFS URL you want to connect to and choose **Next**.
 
-   ![Enter the URL of your VSTS account or TFS](_img/_shared/connectedmode-02.png)
+   ![Enter the VSTS or TFS URL you want to connect to](_img/_shared/connectedmode-02.png)
 
    If you are connecting for the first time, you may be prompted to sign in. 
  

@@ -179,7 +179,7 @@ If you misspell a tag, don't assign the misspelled tag to any work item and the 
 
 ::: moniker range=">= tfs-2018" 
 
-Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a page under the Work hub to manage tags. 
+Another option is to install the [Marketplace Tags Manager](https://marketplace.visualstudio.com/items?itemName=YodLabs.TagsManager2) which adds a **Tags** page under **Work** to manage tags. 
 
 ::: moniker-end
 

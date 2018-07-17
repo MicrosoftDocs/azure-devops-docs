@@ -29,12 +29,12 @@ is causing performance problems.
    if you haven't already done so.
 
 1. [Enable Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md)
-   for your VSTS account, if you haven't already done so.
+   for your VSTS subscription, if you haven't already done so.
 
-1. [Link your VSTS account with your Azure subscription](../../organizations/accounts/connect-account-to-aad.md),
+1. [Link VSTS with your Azure subscription](../../organizations/accounts/connect-account-to-aad.md),
    if you haven't already done so.
 
-1. Sign in to your VSTS account from your web browser to refresh the Azure Resources Manager access token. 
+1. Sign in to VSTS from your web browser to refresh the Azure Resources Manager access token. 
    The token is valid for 12 hours in the context of VSTS.
 
    - If you have already signed, you must sign out and then sign in again.<p />

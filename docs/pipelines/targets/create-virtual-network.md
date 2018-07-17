@@ -249,7 +249,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
    For more information, see [SCVMM deployment](scvmm.md).
 
    >The **SCVMM task** provides a more efficient way capability to perform lab management operations using build and release
-   definitions. You can manage SCVMM environments, provision isolated virtual networks, and implement build-deploy-test scenarios.
+   pipelines. You can manage SCVMM environments, provision isolated virtual networks, and implement build-deploy-test scenarios.
    
 1. In a build or release pipeline, add a new **SCVMM** task.
 

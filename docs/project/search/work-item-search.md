@@ -1,5 +1,5 @@
 ---
-title: Search for work items in a VSTS account
+title: Search for work items in VSTS
 description: How To Use Work Item Search to search across all work item fields over all projects of your VSTS and TFS projects
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: devops
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
 
-Work Item Search provides fast and flexible search across all your work items over all projects in an account. 
+Work Item Search provides fast and flexible search across all your work items over all your projects. 
 
 See also: [Adhoc vs managed work item queries](../../work/track/adhoc-vs-managed-queries.md?toc=/vsts/project/search/toc.json&bc=/vsts/project/search/breadcrumb/toc.json)
 
