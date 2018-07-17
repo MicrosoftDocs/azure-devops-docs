@@ -18,12 +18,12 @@ monikerRange: 'vsts'
 
 Before you start your load testing:
 
-* [Create your Visual Studio Team Services (VSTS) account](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
+* [Create your Visual Studio Team Services (VSTS) subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
   if you don't have one already.
 
 **To run a JMeter load test:**
 
-1. Sign in to your VSTS account (**https://**your-account-name**.visualstudio.com**).
+1. Sign into VSTS.
 
 1. Go to the **Load Test** hub, open the **+ New**
    menu and choose **Apache JMeter test**.

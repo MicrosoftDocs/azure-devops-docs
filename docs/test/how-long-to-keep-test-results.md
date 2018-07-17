@@ -34,8 +34,7 @@ Visual Studio Team Services (VSTS) keeps manual test results related to builds,
 even after you delete those builds. That way, build policies don't delete 
 your test results before you can analyze the data.
 
-1. Sign to your VSTS account (**https://**your-account-name**.visualstudio.com**). 
-   You'll need at least project administrator permissions.
+1. Sign into VSTS. You'll need at least project administrator permissions.
 
 1. Go to your project.
 
@@ -56,8 +55,7 @@ only as long as you keep those builds. To keep test results after you delete you
 edit the build retention policy. If you use Git for version control, 
 you can specify how long to keep automated test results based on the branch. 
 
-1. Sign to your VSTS account (**https://**your-account-name**.visualstudio.com**). 
-   You'll need at least build level permissions to edit build definitions.
+1. Sign into VSTS. You'll need at least build level permissions to edit build definitions.
 
 1. Go to your project. Find and edit your build definition.
 
