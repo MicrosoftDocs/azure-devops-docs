@@ -38,7 +38,7 @@ You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.
 
 ## Example: Version your assemblies
 
-For example, to version to your assemblies, copy and upload this script to your team project:
+For example, to version to your assemblies, copy and upload this script to your project:
 
 ```ps
 ##-----------------------------------------------------------------------

@@ -71,7 +71,7 @@ steps:
 If your code is in VSTS, then a new build is automatically created and queued.
 
  > [!NOTE]
- > If your team project already has a build pipeline that's pointing to the file, then the system does not automatically create another build pipeline.
+ > If your project already has a build pipeline that's pointing to the file, then the system does not automatically create another build pipeline.
 
 ## Manually create a YAML build pipeline
 
