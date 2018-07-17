@@ -23,7 +23,7 @@ You can automatically deploy your database updates to Azure SQL database after e
 ::: moniker range="vsts"
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled.
 
 ::: moniker-end
 
@@ -190,7 +190,7 @@ The **Azure SQL Database Deployment** task is the primary mechanism to deploy a 
 
 ::: moniker range="vsts"
 
-The easiest way to get started with this task is to be signed in as a user that owns both the VSTS account and the Azure subscription.
+The easiest way to get started with this task is to be signed in as a user that owns both the VSTS and the Azure subscriptions.
 In this case, you won't have to manually create the service connection.
 Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
