@@ -193,7 +193,7 @@ all platforms and all browsers, and has a rich and modern web UI that improves y
 experience across all phases of manual testing. 
 
 All the test plans, test suites, test cases, and other test management data you create
-using MTM are stored in your VSTS account or TFS, so existing
+using MTM are stored in VSTS or TFS, so existing
 MTM users can easily get started using the **Test hub**.
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

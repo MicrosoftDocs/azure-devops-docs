@@ -27,7 +27,7 @@ Some examples are:
   machines that run your load tests.
 
 * Install an Azure Management Certificate; for example, if your unit tests must perform operations such as
-  creating a new storage account or deploying an Azure website by using Windows Azure Management API. You can use a setup script to
+  creating a new storage subscription or deploying an Azure website by using Windows Azure Management API. You can use a setup script to
   install the certificate.
 
 * Install software on the machines running the load test agents in the cloud to collect data or metrics;

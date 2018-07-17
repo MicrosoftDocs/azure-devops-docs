@@ -30,10 +30,10 @@ This topic shows two primary scenarios where such a configuration may be useful.
   load test run has completed execution. When these machines are used, you are charged
   [VUMs](reference-qa.md#VUM) as applicable for your load test run.
 * **Self-provisioned machines**. These are load-generating machines that you provision yourself (in your Azure
-  subscription or on-premises). These machines can be configured to register themselves against your VSTS account
+  subscription or on-premises). These machines can be configured to register themselves against your VSTS subscription
   and then they can run a cloud-based load test. This scenario is the focus of this topic.
 * **Cloud load agent**. This is the agent that works with the CLT service. This agent will be installed when
-  you use self-provisioned machines, and must be configured for your VSTS account. Once configured, it can then
+  you use self-provisioned machines, and must be configured for your VSTS subscription. Once configured, it can then
   be used for running a load test. The cloud-load agent is NOT the same as the Test Controller and Test Agent
   combination that you may have used previously for running load tests or automated tests.
 
@@ -55,13 +55,13 @@ This topic shows two primary scenarios where such a configuration may be useful.
 ## Solutions
 
 * **Use machines located on-premises**. You can provision as many machines as you need on-premises and run a PowerShell
-  script that installs the cloud load agents and configures these machines against your VSTS account. For more details
+  script that installs the cloud load agents and configures these machines against your VSTS subscription. For more details
   and to obtain the PowerShell script, see
   [Testing private and intranet apps using cloud-based load testing](clt-behind-firewall.md).
   The agents communicate with the CLT service only using HTTP(S), so you don't need to open any other ports.
 * **Use virtual machines in Azure**. While you can certainly adopt the same approach as above by provisioning the machines
   and then running the PowerShell script to install and configure the load agents, a simpler approach is to use Azure Resource
-  Manager (ARM) templates. You specify just a few inputs such as your VSTS account, a PAT token for authentication, and the
+  Manager (ARM) templates. You specify just a few inputs such as your VSTS subscription, a PAT token for authentication, and the
   number of agent machines you need. The machines are provisioned in your Azure subscription and you have complete
   control over them. Two ARM templates are available in the
   [Azure quick-start templates repository](https://github.com/Azure/azure-quickstart-templates) on GitHub:

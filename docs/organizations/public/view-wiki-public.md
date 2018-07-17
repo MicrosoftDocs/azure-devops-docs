@@ -28,7 +28,14 @@ You can view public project wikis. If you're a contributor, you can also [add an
 
 Choose **Wiki**.  
 
-# [Horizontal navigation](#tab/horizontal)
+
+# [New navigation](#tab/new-nav)
+
+> [!div class="mx-imgBorder"]
+> ![Open the Wiki link, vertical navigation](_img/wiki/open-wiki-vert-brn.png) 
+
+
+# [Previous navigation](#tab/previous-nav)
 
 > [!div class="mx-imgBorder"]  
 > ![Open Wiki hub](/vsts/project/wiki/_img/wiki/wiki-connect-browser.png)
@@ -36,13 +43,6 @@ Choose **Wiki**.
 If you don't see the **Wiki** hub, your screen size may be reduced. Choose the ![](/vsts/_shared/_img/ellipses-reduced-screen-size.png) three dots (elipses), and then choose **Wiki>Wiki**.
 
 ![Open wiki hub, reduced screen size](/vsts/project/wiki/_img/wiki/open-wiki-hub.png)
-
-
-# [Vertical navigation](#tab/vertical)
-
-> [!div class="mx-imgBorder"]
-> ![Open the Wiki link, vertical navigation](_img/wiki/open-wiki-vert-brn.png) 
-
 
 
 ---

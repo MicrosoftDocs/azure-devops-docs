@@ -106,7 +106,7 @@ will see the deployment group you added and you can assign project-specific mach
 
 ### Create a new deployment pool
 
-You can add a new deployment pool to an account, share it amongst your projects, and then add deployment groups to it.
+You can add a new deployment pool, share it amongst your projects, and then add deployment groups to it.
 In the **Deployment Pools** page, choose **+ New**. In the **New deployment pool** panel,
 enter a name for the pool and then select the projects for which you want it to be available.
 

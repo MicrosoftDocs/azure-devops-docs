@@ -21,13 +21,13 @@ monikerRange: 'tfs-2017 || vsts'
 >
 > Our thanks to those of you who tried the early previews of our new build editor and gave us feedback. We're getting ready to retire the old build editor. So if you haven't yet gotten familiar with the new build editor, we encourage you to do so now.
 
-We have launched a preview version of a new experience for creating and editing build definitions in your VSTS account. 
+We have launched a preview version of a new experience for creating and editing build definitions in VSTS. 
 You can explore this experience by creating a new build definition, or by opening your existing build definitions in the new editor after turning it on 
 from the Build Definitions page. 
 
  ![Schematic showing tasks](_img/2017-user-experience/opt-in.png)
  
-You can also enable this editor for your entire account from the [preview features](../../../project/navigation/preview-features.md) menu. 
+You can also enable this editor from the [preview features](../../../project/navigation/preview-features.md) menu. 
 
 ## What's in the new build editor
 

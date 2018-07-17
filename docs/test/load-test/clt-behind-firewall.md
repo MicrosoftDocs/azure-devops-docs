@@ -46,16 +46,16 @@ This topic discusses only scenarios **3** and **4**.
    is within an Azure VNet, or if there is ExpressRoute connectivity between the app's private network
    and Azure, you can use a pre-defined ARM template deploy IaaS VMs in Azure in a specific VNet to act
    and have these VMs act as load agents. The machines will be provisioned in your Azure subscription
-   and registered against your VSTS account. The VNet where you create these machines must have line-of-sight
+   and registered against your VSTS subscription. The VNet where you create these machines must have line-of-sight
    to the app so that the load generators can reach it.
 1. **[Use an ARM template to deploy load agents with static IPs](#static-ip)**. If you don't have
    ExpressRoute connectivity and want to test apps hosted on-premises, you can use an ARM template
    to deploy IaaS VMs in Azure that act as load agents. Create these VMs with static IP addresses
    for which you can configure your firewall to allow inbound traffic from the CLT service.
-   The machines will be provisioned in your Azure subscription and registered against your VSTS account.
+   The machines will be provisioned in your Azure subscription and registered against your VSTS subscription.
 1. **Use cloud load agents on your own infrastructure**. A simple PowerShell script can help you 
    configure physical or virtual machines as load agents. These machines are registered against your own
-   VSTS account and used for load generation. For more details, see
+   VSTS subscription and used for load generation. For more details, see
    [Run cloud-based load tests using your own machines](clt-with-private-machines.md). 
 1. **Use the Test Controller and Test Agents for on-premises testing on your own infrastructure**.
    If you want to test apps on-premises and have constraints such as not being able to store results in the cloud (perhaps for regulatory compliance)
@@ -171,14 +171,14 @@ to manage self-provisioned agents. Download the script and unblock the file befo
 
 **Script parameters**
 
-* **TeamServicesAccountName**. The name of your VSTS account you want to manage. Specify just the account name.
-  For example, if your VSTS account is xyz.visualstudio.com, enter just **xyz**.
-* **PATToken**. Required for authentication. Obtain a PAT token for your VSTS account [as described here](https://visualstudio.microsoft.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
+* **TeamServicesAccountName**. The name of your VSTS subscription you want to manage. Specify just the name.
+  For example, if your VSTS subscription is xyz.visualstudio.com, enter just **xyz**.
+* **PATToken**. Required for authentication. Obtain a PAT token for your VSTS subscription [as described here](https://visualstudio.microsoft.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
   Ensure the selected scope is **Load Test (read and write)**.
 
 The available operations and the switches for the script are:
 
-* **Get agent groups**. Lists all the registered agent groups within the VSTS account. Example:
+* **Get agent groups**. Lists all the registered agent groups within the VSTS subscription. Example:
 
 ```PowerShell
 .\ManageVSTSCloudLoadAgent.ps1 -TeamServicesAccountName https://xyz.visualstudio.com
@@ -248,15 +248,15 @@ These logs are also displayed in the PowerShell window. Run execution logs are i
 
 **A:** There is a REST API for this. You first need to get the target **AgentGroup Id** using the REST API:
 
-`https://<VSTS account name>.vsclt.visualstudio.com/_apis/clt/agentgroups`
+`https://<VSTS subscription name>.vsclt.visualstudio.com/_apis/clt/agentgroups`
 
 Then use this to get the list of outgoing URLs:
 
-`https://<VSTS account name>.vsclt.visualstudio.com/_apis/clt/agentgroups?agentGroupId=<Agent Group Id>&outgoingRequestUrls=true`
+`https://<VSTS subscription name>.vsclt.visualstudio.com/_apis/clt/agentgroups?agentGroupId=<Agent Group Id>&outgoingRequestUrls=true`
 
 The output is a list of strings where the first two inputs are the Azure Blob and Table service URLs. 
-Another outgoing URL is your Visual Studio account URL. Other than these three URLs, you also need to
-allow the URL `https://<VSTS account name>.vsclt.visualstudio.com`.
+Another outgoing URL is your Visual Studio subscription URL. Other than these three URLs, you also need to
+allow the URL `https://<VSTS subscription name>.vsclt.visualstudio.com`.
 
 ## See also
 
