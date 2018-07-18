@@ -21,11 +21,11 @@ of an app by generating load from Azure. This type of load generation can only a
 generate load on an Internet-located or publicly accessible app. However, you may want
 to load test an app which is not publicly accessible, perhaps to:
 
-* **Test an app that runs only on an internal network**. In many large-scale organizations
-  there are apps and websites that cater for the needs of the whole organization and it is
+* **Test an app that runs only on an internal network**. In many large-scale enterprises
+  there are apps and websites that cater for the needs of the whole enterprise and it is
   crucial to test it with peak load to discover any performance or stress-related issues.
 * **Test an app internally before releasing it on the Internet** Before going public,
-  organizations typically want to ensure there are no performance issues that may affect
+  enterprises typically want to ensure there are no performance issues that may affect
   the app under high user load.
 
 Consider the following decision tree that shows six possible scenarios.
