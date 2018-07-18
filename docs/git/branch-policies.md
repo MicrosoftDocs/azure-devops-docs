@@ -198,7 +198,6 @@ In some cases, you need to bypass policy requirements so you can push changes to
 
 ## Q & A
 
-ms
 - [Can I push changes directly to a branch after a branch policy is configured?](#can-i-push-changes-directly-to-a-branch-after-a-branch-policy-is-configured)
 - [What is auto-complete?](#what-is-auto-complete)
 - [When are the conditions set in branch policies checked?](#when-are-the-conditions-set-in-branch-policies-checked)
