@@ -52,13 +52,13 @@ If the target subscription is in the same Azure Active Directory as the destinat
     If you experience browser problems with Azure,
     make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Go to **All services** > **Team Services accounts**. Select your account.
+2. Go to **All services** > **Team Services accounts**. 
 
-   ![More services, Developer tools, VSTS, select your account](_img/_shared/AP_VSO_SelectLinkedOrganization.png)
+   ![Choose All services and Team Services accounts](_img/change-azure-subscription/all-services-team-services-accounts.png)
 
-3. Choose Remove billing.
+3. Select your account and remove billing.
 
-   ![Unlink your account](_img/_shared/azure-portal-unlink-subscription.png)
+   ![Remove billing from your account](_img/change-azure-subscription/choose-account-and-remove-billing.png)
 
 ### Purchase again using the new subscription
 

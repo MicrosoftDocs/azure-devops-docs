@@ -248,6 +248,9 @@ The [Analytics service](https://docs.microsoft.com/en-us/vsts/report/analytics/w
 
 ### Easily navigate to dashboards
 
+> [!IMPORTANT]
+> To use this capability, you must have the **New Navigation** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
+
 You can now easily navigate to other dashboards that belong to your team! While the new dashboard experience was in preview, we worked to respond to your biggest piece of feedback around losing the ability to quickly switch between the dashboards. The dashboard picker has now been updated to make it easier to get to the dashboards you care about. The updated picker now contains two pivots: **Mine** and **All**. The **Mine** pivot makes it easy to find the teams that you belong to and their corresponding dashboards, as well as showing you the dashboards that you have favorited. The **All** pivot, continues to show you all of the dashboards within the project.
 
 Favorites are at the top.
