@@ -85,7 +85,7 @@ the **Task Groups** tab of the **Build &amp; Release** hub.
 
 Use the **Export** shortcut command to save a copy of the task group as a JSON pipeline,
 and the **Import** icon to import previously saved task group definitions. Use this feature to
-transfer task groups between projects and organizations, or replicate and save copies of your task groups.
+transfer task groups between projects and enterprises, or replicate and save copies of your task groups.
 
 Select a task group name to open the details page.
 

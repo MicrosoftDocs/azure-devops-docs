@@ -46,7 +46,7 @@ in one operation, use [task groups](../library/task-groups.md) instead of enviro
 
 ## Q & A
 
-### Can I export templates or share them with other subscriptions, organizations, or projects?
+### Can I export templates or share them with other subscriptions, enterprises, or projects?
 
 Custom templates that you create are scoped to the project that you created them in.
 Templates cannot be exported or shared with another project, collection, server, or account.
