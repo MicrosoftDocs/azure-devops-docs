@@ -21,7 +21,7 @@ By using Code Search you can:
 * **Search across all of your projects**:
   Search in your own codebase and your partner teams' codebases. Use cross-project 
   searches over all the code in your VSTS or TFS instance to search 
-  across your organization's entire codebase. Narrow your search by using project, repository, 
+  across your enterprise's entire codebase. Narrow your search by using project, repository, 
   path, file name, and other filter operators. Use wildcards to widen your search and 
   Boolean operators to fine-tune it. 
 

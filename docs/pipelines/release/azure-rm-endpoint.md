@@ -150,7 +150,7 @@ the **Contributor** role.
 
 ![Failed to assign Contributor role error](_img/azure-rm-endpoint/azure-rm-endpoint-09.png)
 
-To resolve this issue, ask the subscription administrator
-to configure an **Admin Access** role for your identity.
+To resolve this issue, ask the subscription administrator to
+[configure your identity in an **Admin Access** role](https://docs.microsoft.com/en-gb/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
