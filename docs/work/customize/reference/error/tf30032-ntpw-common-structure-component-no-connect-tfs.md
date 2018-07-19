@@ -49,4 +49,4 @@ This error occurs when the New Team Project Wizard is unable to connect to the a
 3.  If the problem persists, contact your Team Foundation Server administrator.  
   
 ## Related articles  
-- [Create a team project](../../../../organizations/accounts/create-team-project.md)
+- [Create a team project](../../../../organizations/projects/create-project.md)

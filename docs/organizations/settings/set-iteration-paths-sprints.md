@@ -27,7 +27,7 @@ You add iteration paths under this root. To understand how the system uses area 
 * You must be a member of a project. If you don't have a project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../../accounts/create-team-project.md). If you haven't been added as a team member, [get added now](../security/add-users-team-project.md). 
+* You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../security/add-users-team-project.md). 
 ::: moniker-end
 * To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 

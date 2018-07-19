@@ -71,7 +71,7 @@ When you share your storyboards to a shared network location, you can link the s
 	> [!NOTE]  
 	>The **Storyboards** tab is no longer supported in the web form from VSTS  or TFS 2017 with the new web form enabled. However, you can link to a storyboard from the **Links** tab using the Storyboard link.  
 
-3.  If you're not already connected to a team project, [connect now](../../../user-guide/connect-team-projects.md). If you can't connect, [get added as a team member](../../scale/multiple-teams.md#add-team-members).
+3.  If you're not already connected to a team project, [connect now](../../../organizations/projects/connect-to-projects.md). If you can't connect, [get added as a team member](../../scale/multiple-teams.md#add-team-members).
 
     ![Connect to TFS](_img/IC652016.png)
 

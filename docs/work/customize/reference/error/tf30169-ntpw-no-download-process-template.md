@@ -41,4 +41,4 @@ The New Team Project Wizard encountered a problem downloading or extracting the 
 4.  Contact the administrator for the local computer to confirm that your user account has sufficient permissions to write data to the storage area for local program downloads and that the local hard disk is functioning correctly.  
     
 ## Related articles 
-- [Create a team project](../../../../organizations/accounts/create-team-project.md)
+- [Create a team project](../../../../organizations/projects/create-project.md)

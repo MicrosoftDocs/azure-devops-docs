@@ -41,7 +41,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="portal_enabled"></a> Determine if your team project portal is enabled  
  If you cannot access Excel reports or dashboards, you might want to verify whether a portal has been enabled for your team project.  
   
-1.  From Visual Studio or Team Explorer, [connect to your team project](../../user-guide/connect-team-projects.md).  
+1.  From Visual Studio or Team Explorer, [connect to your team project](../../organizations/projects/connect-to-projects.md).  
   
 2.  Open Portal Settings.  
   

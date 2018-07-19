@@ -23,7 +23,7 @@ In some cases, you might want to modify your workspace or create multiple worksp
 
 ## Add, edit, or remove a workspace
 
-After you have [connected to the team project](../user-guide/connect-team-projects.md) (Keyboard: Ctrl + 0, C), you can manage your workspaces from the Team Explorer home page (Keyboard: Ctrl + 0, H)
+After you have [connected to the team project](../organizations/projects/connect-to-projects.md) (Keyboard: Ctrl + 0, C), you can manage your workspaces from the Team Explorer home page (Keyboard: Ctrl + 0, H)
 
 ![Manage workspaces from Team Explorer](_img/create-work-workspaces/IC698935.png)   
    
@@ -45,7 +45,7 @@ If you want to remove the workspace, before you do so, make sure there are no pe
 
 When you switch from one workspace to another, to avoid confusing yourself, make sure you switch to the same workspace in both **Team Explorer** and **Source Control Explorer**.
 
-1.  [Connect to the team project](../user-guide/connect-team-projects.md) (Keyboard: Ctrl + 0, C).
+1.  [Connect to the team project](../organizations/projects/connect-to-projects.md) (Keyboard: Ctrl + 0, C).
 
 2.  On the home page (Keyboard: Ctrl + 0, H) choose the workspace you want to use.
 

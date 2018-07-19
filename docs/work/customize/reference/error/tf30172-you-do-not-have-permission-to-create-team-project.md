@@ -28,5 +28,5 @@ You receive this error when your run the New Team Project Wizard under the follo
      To create a team project or manage process templates on an on-premises TFS, you must connect using the same version level of Visual Studio or Team Explorer. That is, to create a team project for an on-premises TFS 2015, you must connect from Team Explorer 2015. You can [download and install released versions of Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs) in a side by side configuration for free.  
   
 ## Related articles  
-- [Create a team project](../../../../organizations/accounts/create-team-project.md)   
+- [Create a team project](../../../../organizations/projects/create-project.md)   
 - [Add administrators, set permissions at the project-level or project collection-level](../../../../organizations/security/set-project-collection-level-permissions.md)

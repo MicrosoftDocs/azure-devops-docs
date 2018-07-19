@@ -63,7 +63,7 @@ After you've run the build, you're ready to create a release pipeline to deploy 
 
 <h3 id="new_solution">How do I create an SQL server database solution?</h3>
 
-0. In Visual Studio, [connect to your project](../../../user-guide/connect-team-projects.md#visual-studio).
+0. In Visual Studio, [connect to your project](../../../organizations/projects/connect-to-projects.md#visual-studio).
 
 0. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 

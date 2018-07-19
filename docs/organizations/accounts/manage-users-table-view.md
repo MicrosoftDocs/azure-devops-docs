@@ -72,7 +72,7 @@ and **Remove from account** (deletes user).
 ## Related notes
 
 - [Change number of paid extension users](../../billing/change-number-paid-extension-users.md)
-- [Connect to a team project](../../user-guide/connect-team-projects.md)
+- [Connect to a team project](../../organizations/projects/connect-to-projects.md)
 - [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 - [Delete users from VSTS](delete-account-users.md)
