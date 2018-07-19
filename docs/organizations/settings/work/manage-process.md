@@ -105,7 +105,7 @@ You can change the process a project uses from a system process or inherited pro
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
 
-0. The Create new project page opens. For details, see [Create a project](../../../organizations/accounts/create-team-project.md).
+0. The Create new project page opens. For details, see [Create a project](../../../organizations/projects/create-project.md).
 
 <a id="copy-process">  </a>
 ## Copy a process

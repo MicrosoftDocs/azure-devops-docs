@@ -108,6 +108,9 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
+    - name: Project Management
+      tocHref: /vsts/organizations/projects/
+      topicHref: /vsts/organizations/projects/index
     - name: Account Management
       tocHref: /vsts/organizations/accounts/
       topicHref: /vsts/organizations/accounts/index

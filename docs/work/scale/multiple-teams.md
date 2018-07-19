@@ -50,7 +50,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../organizations/accounts/create-team-project.md)-->.
+1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../organizations/projects/create-project.md)-->.
 
 	<img src="_img/add-teams-open-admin-context-tfs-2017.png" alt="Open team project admin page" style="border: 2px solid #C3C3C3;" />
 

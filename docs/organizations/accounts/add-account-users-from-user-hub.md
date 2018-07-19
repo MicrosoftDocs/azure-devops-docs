@@ -127,7 +127,7 @@ Next steps: [Manage users in table view](manage-users-table-view.md)
 
 ## Related articles
 
-* [Connect to a team project](../../user-guide/connect-team-projects.md)
+* [Connect to a team project](../../organizations/projects/connect-to-projects.md)
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Visual Studio Team Services (VSTS)](delete-account-users.md)

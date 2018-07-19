@@ -28,14 +28,12 @@
   items:
   - name: Add subscription user to account
     href: add-basic-or-vs-subscription-users.md
-  - name: Resources granted to project members
-    href: resources-granted-to-project-members.md
   - name: Glossary
     href: ../../organizations/security/security-glossary.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Set your preferences
-    href: ../settings/set-user-preferences.md
+    href: ../settings/set-your-preferences.md
   - name: Manage your account
     items:
     - name: Change account owner
@@ -50,20 +48,6 @@
       href: ../../user-guide/connect-team-projects.md#logindifferentcred
     - name: Change account location (region)
       href: change-account-location.md
-  - name: Manage team projects
-    items:
-    - name: Create team project
-      href: create-team-project.md
-    - name: Add users to projects
-      href: add-team-members-vs.md
-    - name: Rename team project
-      href: rename-team-project.md
-    - name: Delete team project
-      href: delete-team-project.md
-    - name: Save team project data
-      href: save-team-project-data.md
-    - name: Connect to team projects
-      href: /vsts/user-guide/connect-team-projects?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
   - name: Manage access to your account
     items:
     - name: Add users to your account
@@ -150,6 +134,8 @@
   items:
   - name: New User Guide
     href: ../../user-guide/index.md
+  - name: Project Management
+    href: ../projects/index.md
   - name: Billing
     href: ../../billing/index.md
   - name: Migrate from TFS to VSTS

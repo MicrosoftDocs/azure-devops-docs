@@ -43,7 +43,7 @@ To create a pull request in VSTS:
 
   ![Creating Pull Request through pushed branch in VSTS](../_img/pull-requests/create-pr-from-push-files-tab.png)
  
-  You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../user-guide/connect-team-projects.md).
+  You can also initiate a pull request from Visual Studio. Select the **Pull Requests** view when [connected to your Team Project](../../organizations/projects/connect-to-projects.md).
 
   ![Pull Requests](../_img/pull-requests/pull-requests.png)
 

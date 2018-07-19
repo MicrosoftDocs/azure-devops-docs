@@ -61,7 +61,7 @@ Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git |Home page with TFVC |
 > |-------------|----------|
-> |<img src="../user-guide/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /> | <img src="../user-guide/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /> |
+> |<img src="../organizations/projects/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" /> | <img src="../organizations/projects/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" /> |
 
 
 ## Office integration tools 
