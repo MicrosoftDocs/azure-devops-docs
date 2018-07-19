@@ -1,6 +1,6 @@
 ---
-title: Create a VSTS account with a Microsoft account or a work/organization account
-description: Create your VSTS account with a personal Microsoft account or a work/school/organization account
+title: Create a VSTS account with a Microsoft account or a work account
+description: Create your VSTS account with a personal Microsoft account or a work/school account
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
@@ -8,10 +8,10 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2017
+ms.date: 07/18/2017
 monikerRange: 'vsts'
 ---
-# Create your VSTS account with a personal Microsoft account or a work/school/organization account
+# Create your VSTS account with a personal Microsoft account or a work/school account
 
 **VSTS**
 
@@ -34,21 +34,21 @@ so your team can build often, test early, and ship faster.
 ##	What do I need to sign up for a VSTS account?
 
 *	To use only Microsoft accounts 
-	with your VSTS account, follow the steps below and ignore the Azure Active Directory (Azure AD) call outs. 
+	with your VSTS account, follow the steps below and ignore the Azure Active Directory (Azure Active Directory) call outs. 
 
 	Don't have a Microsoft account?  You can create a Microsoft account 
 	when you sign up for VSTS.
 
 	Use your Microsoft account if you don't need to authenticate users 
-	for an organization with [Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
+	for an organization with [Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
 	All users must sign in with Microsoft accounts to your VSTS account.
 
 *	Alternatively, to authenticate users and control account access through your 
-	organization's directory (tenant) in Azure AD, follow the steps below and pay attention to the Azure AD call outs.
+	organization's directory (tenant) in Azure Active Directory, follow the steps below and pay attention to the Azure Active Directory call outs.
 
 	Use your work or school account to **automatically connect** your VSTS account to your organization's directory. 
 	All users must be members in that directory to get access to your VSTS account, or you must use 
-	[Azure AD business-to-business (B2B) collaboration capabilities](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to 
+	[Azure Active Directory business-to-business (B2B) collaboration capabilities](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to 
 	add users from other organizations.
 
 	You'll need a work or school account that's managed by your organization's directory. 
@@ -56,42 +56,43 @@ so your team can build often, test early, and ship faster.
 	[sign up for Azure as an organization](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/).
 
 	To use existing on-premises identities with VSTS, learn how to 
-	[use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).
+	[use Azure Active Directory Connect for integrating on-premises directories with Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).
 
 
-## How does Azure AD control access to VSTS?
+## How does Azure Active Directory control access to VSTS?
 
 VSTS authenticates users through your organization's directory 
 so that only users who are members in that directory can get access to your VSTS account. 
 When you remove users from that directory, 
 they can't access your account anymore. Only specific 
-[Azure AD administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/) 
+[Azure Active Directory administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/) 
 can manage users in your directory, so administrators control who can get access to your VSTS account.
 
-Without Azure AD, you're solely responsible for controlling 
+Without Azure Active Directory, you're solely responsible for controlling 
 VSTS account access. And all users must sign in with Microsoft accounts. 
 [What are other differences?](faq-create-account.md#SignInAccountDifferences)
 
 
 <a name="SignIn"></a>
+
 ## Create your account and sign up for VSTS
 
-0.	Go to [VSTS](https://go.microsoft.com/fwlink/?LinkId=307137).  Enter the email address for your Microsoft account, or for Azure AD use your work or school account.
+1.	Go to [VSTS](https://go.microsoft.com/fwlink/?LinkId=307137).  Enter the email address for your Microsoft account, or for Azure Active Directory use your work or school account.
 
 	**Microsoft account**: If you're a Visual Studio subscriber and get VSTS as a benefit, use the Microsoft account associated with your subscription. 
 
-	**Azure AD**: Your sign-in page might look different, based on the work or school account that you used.
+	**Azure Active Directory**: Your sign-in page might look different, based on the work or school account that you used.
 
 	![Enter your email address](_img/_shared/sign-in.png)
 
 	Got [browser problems?](faq-create-account.md#browser-problems)
 
 0.	Enter your email address for your Microsoft account. Then enter your password to finish signing in.  If you are not 
-using **Azure AD**, and you don't have a Microsoft account, you can create a Microsoft account at this time.
+using **Azure Active Directory**, and you don't have a Microsoft account, you can create a Microsoft account at this time.
 
 	![Enter password for your Microsoft account](_img/_shared/sign-in-msa2.png)
 	
-	**Azure AD**: Enter your password for your work or school account.
+	**Azure Active Directory**: Enter your password for your work or school account.
 	
 	![Enter your password for your work or school account](_img/_shared/sign-in-aad.png)
 
@@ -104,32 +105,31 @@ using **Azure AD**, and you don't have a Microsoft account, you can create a Mic
 	Learn which version control ([Git](../../git/overview.md) or [Team Foundation Version Control](../../tfvc/overview.md)) 
 	works best for you.
 
-0.	Confirm your account's location, and if you're using **Azure AD**, confirm the **directory** 
+0.	Confirm your account's location, and if you're using **Azure Active Directory**, confirm the **directory** 
 that you're connecting to your VSTS account. 
 
-	![Rename team project, change account location, or select another process](_img/sign-up-visual-studio-team-services/check-organization-location-standard.png)
+	![Rename project, change account location, or select another process](_img/sign-up-visual-studio-team-services/check-organization-location-standard.png)
 	
-	**Azure AD**:
+	**Azure Active Directory**:
 	
-	![Rename team project, change account location, or select another process](_img/sign-up-visual-studio-team-services/change-organization-directory.png)
+	![Rename project, change account location, or select another process](_img/sign-up-visual-studio-team-services/change-organization-directory.png)
 
-	**Microsoft account and Azure AD**: VSTS creates your first team project as "MyFirstProject" 
+	**Microsoft account and Azure Active Directory**: VSTS creates your first project as "MyFirstProject" 
 	and uses Agile as your default work item process to organize your work. 
 	Choose **Change details** to 
-	[rename your team project, change the account location, or select another process, like Scrum](faq-create-account.md#account-location).
+	[rename your project, change the account location, or select another process, like Scrum](faq-create-account.md#account-location).
 	
-	**Azure AD**: After you create your account, only members of
+	**Azure Active Directory**: After you create your account, only members of
 	the directory shown here can get access to your VSTS account, or you must use 
-	[Azure AD business-to-business (B2B) collaboration capabilities](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to 
+	[Azure Active Directory business-to-business (B2B) collaboration capabilities](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to 
 	add users from other organizations.  If you belong to multiple directories, check that you want
 	to connect this directory to your VSTS account.  Changing the directory now is easier than [changing the
 	directory later](faq-create-account.md#ChangeDirectory).
 
-0.	After VSTS creates your account and team project, 
-add code, work items, or more users. 
+0.	After VSTS creates your account and project, 
+add code, work items, or more users.
 
-	![Add code or work items](_img/_shared/team-project-created.png)
-
+    ![Add code or work items](_img/_shared/project-created.png)
 	Congratulations, you're now a VSTS account owner! 
 
 	To sign in to your VSTS account at any time, go to ```https://{youraccount}.visualstudio.com```.
@@ -140,6 +140,7 @@ add code, work items, or more users.
 	> subscription so you can use your subscriber benefits in VSTS.
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Manage users and access](add-account-users-from-user-hub.md)
 
