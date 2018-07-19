@@ -15,7 +15,7 @@ ms.date: 02/05/2018
 
 <a id="scale">  </a>
 <a id="collection-project-team-structure">  </a>
-## Support a growing organization, manage work across the enterprise
+# Support a growing organization, manage work across the enterprise
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

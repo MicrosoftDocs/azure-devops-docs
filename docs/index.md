@@ -211,6 +211,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/git/forks-overview">Forks</a></li>
                                         <li><a class="barLink" href="/vsts/git/branch-policies-overview">Branch Policies</a></li>
                                         <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
+                                        <li><a class="barLink" href="/vsts/java/index">Java DevOps</a></li>
                                     </ul>
                                     <h3>Continuous Integration &amp; Delivery</h3>
                                     <ul>
@@ -264,14 +265,16 @@ featureFlags:
                                 <div class="group">
                                     <h3>Admin</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/organizations/accounts/index">Account Management</a></li>
-                                        <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/accounts/index">Project Management</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/security/index">Security and Identity</a></li>
-                                        <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/settings/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
-                                        <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration</a></li>
-                                        <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration</a></li>
+
+                                        <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/accounts/index">Account Management (VSTS)</a></li>
+                                        <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
+                                        <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration (TFS)</a></li>
+                                        <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration (TFS)</a></li>
                                     </ul>
                                     <h3>Extend</h3>
                                     <ul>

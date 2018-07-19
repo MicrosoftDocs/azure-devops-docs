@@ -23,4 +23,4 @@ and finish connecting.
 If you get connection errors, try choosing HTTPS as your protocol.
 
 To connect to VSTS with Visual Studio 2015 and later, 
-learn [how to connect to team projects](../user-guide/connect-team-projects.md). 
+learn [how to connect to team projects](../organizations/projects/connect-to-projects.md). 

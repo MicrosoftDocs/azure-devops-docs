@@ -31,7 +31,7 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
   
 ### To correct this error    
   
-1.  Confirm that you have the required permissions to create a team project. This includes the required permissions on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../../organizations/accounts/create-team-project.md).  
+1.  Confirm that you have the required permissions to create a team project. This includes the required permissions on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../../organizations/projects/create-project.md).  
   
 2.  Contact your Team Foundation Server administrator to verify that the server configuration is correct.  
   
@@ -58,4 +58,4 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
 5.  If the problem persists, contact your Team Foundation Server administrator.  
     
 ## Related articles
-- [Create a team project](../../../../organizations/accounts/create-team-project.md)
+- [Create a team project](../../../../organizations/projects/create-project.md)

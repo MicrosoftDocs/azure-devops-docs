@@ -24,4 +24,4 @@ The New Team Project Wizard encountered an unexpected error while creating the t
 2.  If the problem persists, contact your Team Foundation Server administrator.  
     
 ## Related articles
-- [Create a team project](../../../../organizations/accounts/create-team-project.md)
+- [Create a team project](../../../../organizations/projects/create-project.md)
