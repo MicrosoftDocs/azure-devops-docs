@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across project collections and projects. In VSTS, agent pools are scoped to the VSTS account; so you can share an agent pool across projects.
+Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across project collections and projects. In VSTS, agent pools are scoped to the VSTS organization; so you can share an agent pool across projects.
 
 An **agent queue** provides access to an agent pool. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer and in VSTS, so you can only use them across build and release pipelines within a project.
 
@@ -125,7 +125,7 @@ In TFS 2015, special **groups** are defined on agent pools, and membership in th
 
 Members of **Agent Pool Administrators** can register new agents in the pool and add additional users as administrators or service accounts.
 
-Add people to the account-level Agent Pool Administrators group to grant them permission manage all the agent pools. This enables people to create new pools and modify all existing pools. Members of Team Foundation Administrators group can also perform all these operations.
+Add people to the organization-level Agent Pool Administrators group to grant them permission manage all the agent pools. This enables people to create new pools and modify all existing pools. Members of Team Foundation Administrators group can also perform all these operations.
 
 Users in the **Agent Pool Service Accounts** group have permission to listen to the message queue for the specific pool to receive work.  In most cases you should not have to manage members of this group. The agent registration process takes care of it for you. The service account you specify for the agent (commonly Network Service) is automatically added when you register the agent.
 
@@ -141,7 +141,7 @@ On the Create Queue dialog box, you can't use an existing pool if it is already 
 
 ### I can't select the Hosted queue and I can't queue my build. How do I fix this?
 
-Ask the owner of your VSTS account to grant you permission to use the queue. See [Security of agent pools and queues](#security).
+Ask the owner of your VSTS organization to grant you permission to use the queue. See [Security of agent pools and queues](#security).
 
 ::: moniker-end
 
@@ -149,7 +149,7 @@ Ask the owner of your VSTS account to grant you permission to use the queue. See
 
 ### I need more hosted build resources. What can I do?
 
-A: The hosted pool provides all VSTS accounts with a single hosted build agent and a limited number of free build minutes each month. If you need more hosted build resources, or need to run more than one build concurrently, then you can either:
+A: The hosted pool provides all VSTS organizations with a single hosted build agent and a limited number of free build minutes each month. If you need more hosted build resources, or need to run more than one build concurrently, then you can either:
 
 * [Deploy your own on-premises build agents](agents.md).
 * [Buy additional hosted pipelines](../../billing/buy-more-build-vs.md#buy-build-release).

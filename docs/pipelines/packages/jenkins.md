@@ -65,7 +65,7 @@ The easiest way to use the VSTS NuGet service is by adding the [Microsoft.Visual
 
 
 ## Set up a feed in VSTS and add it to your project
-* [Create a feed](/vsts/package/feeds/create-feed) in your VSTS account called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
+* [Create a feed](/vsts/package/feeds/create-feed) in your VSTS organization called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
 * Add the URL for the feed you just generated to the nuget.config in the root of your repo.
   * Find the `<packageSources>` section of nuget.config.
   * Just before `</packageSources>`, add a line using this template: `<add key="MyGreatFeed" value="{feed_url}" />`. Change `{feed_url}` to the URL of your feed.
