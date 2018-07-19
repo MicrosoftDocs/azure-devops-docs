@@ -43,7 +43,7 @@ Notes on choosing **Hosted macOS**:
 Software on Microsoft-hosted agents is updated once each month.
 
 * [Inventory of software currently installed on the Hosted VS2017 agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
-* [Inventory of software currently installed on the Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile).
+* [Inventory of software currently installed on the Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/README.md#standard-images).
 * [Inventory of software currently installed on the Hosted macOS agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md).
 * [Inventory of software currently installed on the Microsoft-hosted agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).
 
