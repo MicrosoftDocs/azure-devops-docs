@@ -1,6 +1,6 @@
 ---
-title: Delete a team project from VSTS and TFS
-description: Delete or remove a team project from Visual Studio Team Services (VSTS) or from Team Foundation Server (TFS)
+title: Delete a project from VSTS and TFS
+description: Delete or remove a project from Visual Studio Team Services (VSTS) or from Team Foundation Server (TFS)
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,39 +8,65 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 03/06/2018
+ms.date: 07/18/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Delete a team project
+# Delete a project
 
 **VSTS** | **[Previous Versions](https://msdn.microsoft.com//library/ff357756%28v=vs.110%29.aspx)**
 
-If you find that you have a team project you no longer use, you can delete it. Deleting a team project helps simplify the navigation to team projects that are in use.
+If you find that you have a project you no longer use, you can delete it. Deleting a project helps simplify the navigation to projects that are in use.
 
->**Caution:**  Deleting a team project permanently removes data associated with that project from the database. You cannot recover it later. Therefore, you should [save team project data](save-team-project-data.md) that you might want to access later.
+>**Caution:**  Deleting a project permanently removes data associated with that project from the database. You cannot recover it later. Therefore, you should [save project data](save-team-project-data.md) that you might want to access later.
 
-Delete a team project from VSTS or from an on-premises deployment of Team Foundation Server (TFS).
+Delete a project from VSTS or from an on-premises deployment of Team Foundation Server (TFS).
 
-## Delete a team project from VSTS
+::: moniker range="vsts"
 
-1. Open the administration console for the team project collection by choosing the ![gear icon image](_img/delete-team-project/ic623347.png) gear icon and then choosing **Account settings**.
+## Delete a project from VSTS
+
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+   ![Choose Admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Choose **Projects**, then open the ![action icon image](../../work/_img/icons/actions-icon.png) menu and choose **Delete**.
+
+   ![Delete project button](_img/delete-team-project/delete-project.png)
+4. You must type the name of the project in order to initiate the delete operation, and then choose **Delete Project**.
+
+   ![Enter project name to delete project](_img/delete-team-project/delete-project-warning.PNG)
+---
+# [Previous navigation](#tab/previous-nav)
+
+1. Open the administration console for the project collection by choosing the ![gear icon image](_img/delete-team-project/ic623347.png) gear icon and then choosing **Account settings**.
 
    >[!div class="mx-imgBorder"]
    ![open-admin-console-team-services](_img/delete-team-project/open-admin-console-team-projects.PNG)
 
-2. Open the ![action icon image](../../work/_img/icons/actions-icon.png) menu for the team project that you want to delete.
+2. Open the ![action icon image](../../work/_img/icons/actions-icon.png) menu for the project that you want to delete.
 
    >[!div class="mx-imgBorder"]
    ![choose-delete-team-project](_img/delete-team-project/choose-delete-team-project.png)
 
     If you don't see the actions icon ![actions icon image](../../work/_img/icons/actions-icon.png), either you're not accessing VSTS or you're not a member of the Project Collection Administrators group.  Learn about [joining the Project Collection Administrators group](../../organizations/security/set-project-collection-level-permissions.md).
 
-3. You must type the name of the team project in order to initiate the delete operation. 
+3. You must type the name of the project in order to initiate the delete operation. 
 
    >[!div class="mx-imgBorder"]
    ![delete-team-project-dialog](_img/delete-team-project/delete-team-project-dialog.png)
 <a name="delete-team-proj"></a>
+
+---
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
 
 ## Delete a team project from Team Foundation Server (on-premises)
 
@@ -92,3 +118,5 @@ For on-premises deployments, review the status and log files for the delete acti
     Review the information about the failure, and then try to delete the project again.
 
     If partial data remains, you can also use the [TFSDeleteProject](/tfs/server/command-line/tfsdeleteproject-cmd) command line tool.
+::: moniker-end
+
