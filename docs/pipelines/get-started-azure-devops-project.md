@@ -28,7 +28,7 @@ If you don't have an Azure subscription, you can get one free through [Visual St
 
 ## Sign in to the Azure portal
 
-The Azure DevOps Project creates a CI/CD pipeline in VSTS.  You can create a free **new VSTS** account or use an **existing account**.  The DevOps Project also creates **Azure resources** in the **Azure subscription** of your choice.
+The Azure DevOps Project creates a CI/CD pipeline in VSTS.  You can create a free **new VSTS** organization or use an **existing organization**.  The DevOps Project also creates **Azure resources** in the **Azure subscription** of your choice.
 
 1. Sign into the [Microsoft Azure portal](https://portal.azure.com).
 
@@ -46,11 +46,11 @@ The Azure DevOps Project creates a CI/CD pipeline in VSTS.  You can create a fre
  
 ## Configure VSTS and an Azure subscription
 
-1. Create a **new** VSTS account or choose an **existing** account.  Choose a **name** for your VSTS project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
+1. Create a **new** VSTS organization or choose an **existing** organization.  Choose a **name** for your VSTS project.  Select your **Azure subscription**, **location**, and choose a **name** for your application.  When you're done, choose **Done**.
 
    	![Enter VSTS info](_img/azure-devops-project/vstsazureinfo.png)
 
-1. In a few minutes, the **project dashboard** loads in the Azure portal.  A sample application is set up in a repository in your VSTS account, a build executes, and your application deploys to Azure.  This dashboard provides visibility into your **code repository**, **VSTS CI/CD pipeline**, and your **application in Azure**.  On the right side of the dashboard, select **Browse** to view your running application.
+1. In a few minutes, the **project dashboard** loads in the Azure portal.  A sample application is set up in a repository in your VSTS organization, a build executes, and your application deploys to Azure.  This dashboard provides visibility into your **code repository**, **VSTS CI/CD pipeline**, and your **application in Azure**.  On the right side of the dashboard, select **Browse** to view your running application.
 
    	![Dashboard view](_img/azure-devops-project/dashboardnopreview.png) 
 	
@@ -58,7 +58,7 @@ The Azure DevOps project automatically configures a CI build and release trigger
 
 ## Commit code changes and execute CI/CD
 
-The Azure DevOps project created a Git repository in your VSTS or GitHub account.  Follow the steps below to view the repository and make code changes to your application. Some of these steps will vary depending on the language that you started with.
+The Azure DevOps project created a Git repository in your VSTS or GitHub organization.  Follow the steps below to view the repository and make code changes to your application. Some of these steps will vary depending on the language that you started with.
 
 1. On the left-hand side of the DevOps project dashboard, select the link for your **master** branch.  This link opens a opens a view to the newly created Git repository.
 
@@ -74,7 +74,7 @@ The Azure DevOps project created a Git repository in your VSTS or GitHub account
 
 ## Examine the VSTS CI/CD pipeline
 
-The Azure DevOps project automatically configured a full VSTS CI/CD pipeline in your VSTS account.  Explore and customize the pipeline as needed.  Follow the steps below to familiarize yourself with the VSTS build and release pipelines.
+The Azure DevOps project automatically configured a full VSTS CI/CD pipeline in your VSTS organization.  Explore and customize the pipeline as needed.  Follow the steps below to familiarize yourself with the VSTS build and release pipelines.
 
 1. Select **Build Pipelines** from the **top** of the Azure DevOps project dashboard.  This link opens a browser tab and opens the VSTS build pipeline for your new project.
 

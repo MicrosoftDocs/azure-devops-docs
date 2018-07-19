@@ -1,8 +1,8 @@
 ## Get set up
 
-### VSTS account
+### VSTS organization
 
-You'll need an account on VSTS. To create one, visit [Sign up for VSTS](https://visualstudio.microsoft.com/vsts/).
+You'll need an organization on VSTS. To create one, visit [Sign up for VSTS](https://visualstudio.microsoft.com/vsts/).
 
 You can also use Team Foundation Server (TFS) if your enterprise requires the use of on-premises servers instead of VSTS, and we'll show some of those details. Also see [Get Started with TFS](/tfs/server/install/get-started) for general information.
 

@@ -40,7 +40,7 @@ ms.topic: include
 
    - **Registry or Namespace**: Enter the path to your Azure Container Registry. Typically this is _your-registry-name_**.azurecr.io**
 
-   - **Repository**: Enter the name of your repository, which is typically of the format `<account name>/<code-repo-name>` or just the repository name.
+   - **Repository**: Enter the name of your repository, which is typically of the format `<organization name>/<code-repo-name>` or just the repository name.
 
    > You can find these values in the Azure portal in the **Overview** and **Repositories** tabs for your container registry.
 

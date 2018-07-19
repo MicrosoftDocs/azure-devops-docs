@@ -56,7 +56,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 ::: moniker range="vsts"
 ### Server URL on VSTS
 
-`https://{your-account}.visualstudio.com`
+`https://{your-organization}.visualstudio.com`
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < vsts"
