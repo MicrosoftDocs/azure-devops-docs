@@ -37,9 +37,9 @@ like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-t
 ## Prerequisites
 
 If you don't have a project yet,
-[create your project first](../../user-guide/connect-team-projects.md).
+[create your project first](../projects/connect-to-projects.md).
 To add members to projects, you'll need
-[project administrator](../../organizations/security/set-project-collection-level-permissions.md),
+[project administrator](../security/set-project-collection-level-permissions.md),
 [project collection administrator, or account owner](faq-add-team-members.md#find-pca-owner) permissions.
 
 ## Add members to your project
@@ -131,7 +131,7 @@ To add members to projects, you'll need
 
 ## Next steps
 
-* [Connect to a team project](../../user-guide/connect-team-projects.md)
+* [Connect to a team project](../projects/connect-to-projects.md)
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 

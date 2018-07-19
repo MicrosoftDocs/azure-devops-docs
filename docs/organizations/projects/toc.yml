@@ -1,0 +1,86 @@
+- name: Project Management
+  href: index.md
+- name: Overview
+  items:
+  - name: About projects and scaling your organization
+    href: about-projects.md
+  - name: What do I get with a project?
+    href: ../../user-guide/services.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+- name: Quickstarts
+  items:
+  - name: Define area paths
+    href: ../settings/set-area-paths.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: Define iteration paths or sprints
+    href: ../settings/set-iteration-paths-sprints.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: Add users to a team project or team 
+    href: ../security/add-users-team-project.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: "Add a team & team members"
+    href: ../../work/scale/multiple-teams.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+  - name: Add a team administrator
+    href: ../../work/scale/add-team-administrator.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+- name: Tutorials
+  items:
+  - name: Change individual permissions 
+    href: ../security/change-individual-permissions.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: Grant or restrict permissions
+    href: ../security/restrict-access.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+- name: Concepts
+  items:
+  - name: About areas and iterations
+    href: ../settings/about-areas-iterations.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: About teams and Agile tools
+    href: ../settings/about-teams-and-settings.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: Resources granted to project members
+    href: resources-granted-to-project-members.md
+  - name: "How do VSTS & TFS differ"
+    href: ../../user-guide/about-vsts-tfs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+- name: How-to guides
+  items:
+  - name: Create a project
+    href: create-project.md
+  - name: Rename a project
+    href: rename-project.md
+  - name: Delete a project
+    href: delete-project.md
+  - name: Save project data
+    href: save-project-data.md
+  - name: Connect to projects
+    href: connect-to-projects.md
+- name: Troubleshooting
+  items:
+  - name: Create a project
+    href: faq-create-project.md
+  - name: Rename a project
+    href: faq-rename-project.md
+  - name: Add administrators
+    href: ../accounts/faq-add-administrators.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: Set up Visual Studio
+    href: ../accounts/faq-set-up-vs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: Troubleshoot connection
+    href: ../../user-guide/troubleshoot-connection.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: "TF31002: Unable to connect"
+    href: ../../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: Features index
+    href: ../../user-guide/alm-devops-features.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: "Default permissions & access (Security)"
+    href: ../security/permissions-access.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: "Permission lookup guide (Security)"
+    href: ../security/permissions-lookup-guide.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+- name: Resources
+  items:
+  - name: Get started guide
+    href: ../../user-guide/index.md
+  - name: Public Projects
+    href: ../public/index.md
+  - name: Project & Organization Settings
+    href: ../settings/index.md
+  - name: "Security & Identity"
+    href: ../security/index.md
+  - name: Notifications
+    href: ../../notifications/index.md
+  - name: Technical articles
+    href: ../../articles/index.md
+  - name: Migrate from TFS to VSTS
+    href: ../../articles/migrate-to-vsts-from-tfs.md

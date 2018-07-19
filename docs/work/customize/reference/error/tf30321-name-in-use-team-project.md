@@ -31,4 +31,4 @@ This error occurs when you type a name for the new team project that duplicates 
 >  If you are sure that the name you typed is not being used by a team project on Team Foundation Server, contact your administrator for the server and ask him or her to run the **TFSDeleteProject** command-line utility to free the name.
   
 ## Related articles
-- [Create a team project](../../../../organizations/accounts/create-team-project.md) 
+- [Create a team project](../../../../organizations/projects/create-project.md) 

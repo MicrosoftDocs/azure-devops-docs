@@ -23,7 +23,7 @@ This error may occur under the following conditions:
   
 -   The wizard, while creating a team project, encounters another server component (for example, the virtual directory used by Internet Information Services) and does not find the required permissions set on your user account.    
   
- To create a team project, you must have the required permissions set on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../../organizations/accounts/create-team-project.md) .  
+ To create a team project, you must have the required permissions set on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../../organizations/projects/create-project.md) .  
   
 ### To correct this error  
   

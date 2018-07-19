@@ -58,7 +58,7 @@ Use this topic to learn how to:
 
 ::: moniker range="tfs-2018"
 
-* You must have a team project. If you don't have a team project yet, create one in your [on-premises TFS](../../organizations/accounts/create-team-project.md).
+* You must have a team project. If you don't have a team project yet, create one in your [on-premises TFS](../../organizations/projects/create-project.md).
 * You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) in order to provision a wiki or publish markdown files from an existing Git repo to a wiki. 
 * Anyone who is a member of the Contributors security group can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki. 
 

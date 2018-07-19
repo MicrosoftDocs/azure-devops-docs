@@ -43,7 +43,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 ##  <a name="guid_enabled"></a> Determine if process guidance is enabled for your team project portal  
   
-1.  From Visual Studio or Team Explorer, [connect to your team project](/vsts/user-guide/connect-team-projects).  
+1.  From Visual Studio or Team Explorer, [connect to your team project](/vsts/organizations/projects/connect-to-projects).  
   
 2.  Open Portal Settings.  
   
