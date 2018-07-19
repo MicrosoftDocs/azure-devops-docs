@@ -26,15 +26,27 @@ For information on region availability, see [Products available by region](https
 
 To find the region where your account is located:
 
-1. Sign in to your Team Services account: ```https://{youraccount}.visualstudio.com```
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
 
-2. On your account toolbar, choose the gear icon, and choose **Settings**: ```https://{youraccount}.visualstudio.com/_admin/_home/settings```
+# [Vertical navigation](#tab/vertical)
+
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+2. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Admin settings icon.
+
+   ![Choose the gear, Admin settings icon](_img/_shared/sign-in-1.png)
+
+3. Choose **Overview** and you will see the region listed beneath Account information.
+
+   ![Find region in account settings](_img/change-account-location/account-settings-region.png)
+
+# [Horizontal navigation](#tab/horizontal)
+
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+
+2. On your account toolbar, choose the gear icon, and then choose **Settings**: ```https://{youraccount}.visualstudio.com/_admin/_home/settings```
 
 3. Look under **Region**.
 
 To change your account region, you need to call [VSTS Support](https://visualstudio.microsoft.com/team-services/support), and 
 they will coordinate changing the region with the account owner.
-
-
-
 

@@ -32,7 +32,7 @@ your tasks. For example, you can create a service connection for your Azure subs
 and use this service connection name in an Azure Web Site Deployment task in a release pipeline.
 
 You define and manage service connections from the Admin settings of your project.
-* VSTS: `https://{account}.visualstudio.com/{teamproject}/_admin/_services`
+* VSTS: `https://{organization}.visualstudio.com/{teamproject}/_admin/_services`
 * TFS: `https://{tfsserver}/{collection}/{teamproject}/_admin/_services`
 
 Service connections are created at project scope. A service connection created in one project is not visible in another project.
@@ -343,7 +343,7 @@ for the token: **repo, user, admin:repo_hook**. See
 on GitHub for information about obtaining an access token. Then register your
 GitHub account in your profile:
 
-* Open your profile from your account name at the right of the VSTS page heading.
+* Open your profile from your organization name at the right of the VSTS page heading.
 * At the top of the left column, under **DETAILS**, choose **Security**.
 * In the **Security** tab, in the right column, choose **Personal access tokens**.
 * Choose the **Add** link and enter the information required to create the token.
@@ -518,7 +518,7 @@ Defines and secures a connection to the Subversion repository.
 
 <h3 id="sep-tfsts">Team Foundation Server / VSTS service connection</h3>
 
-Defines and secures a connection to another TFS or VSTS account.
+Defines and secures a connection to another TFS or VSTS organization.
 
 | Parameter | Description |
 | --------- | ----------- |

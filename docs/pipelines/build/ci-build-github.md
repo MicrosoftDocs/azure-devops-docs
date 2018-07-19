@@ -41,11 +41,11 @@ Follow the steps below to configure GitHub as a source for your VSTS build.
 > [!IMPORTANT]
 > Ensure your browser does not block the pop-up on step 4 below.
 
-1. Navigate to your VSTS account and project. Select **Build and Release**, and then select **Builds**.
+1. Navigate to your VSTS organization and project. Select **Build and Release**, and then select **Builds**.
 1. Select **New** to create a new build pipeline.
 1. Select **GitHub** for the type of repository.
 1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
-1. When prompted, sign in to your **GitHub account**. Then select **Authorize** to grant access to your VSTS account. If you already are signed into GitHub in another browser tab, you may not see this step.
+1. When prompted, sign in to your **GitHub account**. Then select **Authorize** to grant access to your VSTS organization. If you already are signed into GitHub in another browser tab, you may not see this step.
 1. Choose the repository that contains the sample you forked earlier and select **Continue**.
 1. Select the **ASP.NET Core** build template or a template that is appropriate for your application.
 1. Choose **Hosted VS2017** for Agent queue.
@@ -59,11 +59,11 @@ Follow the steps below to configure GitHub as a source for your VSTS build.
 > Ensure your browser does not block the pop-up on step 6 below.
 
 1. Ensure that you have a `.vsts-ci.yml` file at the root of your repository in `master` branch. If you started from the [sample .NET Core repo](https://github.com/adventworks/dotnetcore-sample) it already has one. See the various other languages that we support in this documentation for examples of YAML file for the type of app you are interested in.
-1. Navigate to your VSTS account and project. Select **Build and Release**, and then select **Builds**.
+1. Navigate to your VSTS organization and project. Select **Build and Release**, and then select **Builds**.
 1. Select **New** to create a new build pipeline.
 1. Select **GitHub** for the type of repository.
 1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
-1. When prompted, sign in to your **GitHub account**. Then select **Authorize** to grant access to your VSTS account. If you already are signed into GitHub in another browser tab, you may not see this step.
+1. When prompted, sign in to your **GitHub account**. Then select **Authorize** to grant access to your VSTS organization. If you already are signed into GitHub in another browser tab, you may not see this step.
 1. Choose the repository that contains the sample you forked earlier and select **Continue**.
 1. Select the **YAML** build template.
 1. Choose **Hosted VS2017** for Agent queue.
@@ -80,7 +80,7 @@ This section explores possibilities for further integrating VSTS and GitHub. You
 1. Navigate to your GitHub account. Select **Code**. Create a Readme.md file unless one already exists.
 1. For this step, paste the following markdown into your Readme.md file. Replace the tokens using the name of the build pipeline and the `definitionId` that you obtained above.
 
-    `[![Build status](https://{your-vsts-account}.visualstudio.com/{your-vsts-project}/_apis/build/status/{build-definition-name}?branch=master)](https://{your-vsts-account}.visualstudio.com/{your-vsts-project}/_build/latest?definitionId={definitionId}&branch=master)]`
+    `[![Build status](https://{your-vsts-organization}.visualstudio.com/{your-vsts-project}/_apis/build/status/{build-definition-name}?branch=master)](https://{your-vsts-organization}.visualstudio.com/{your-vsts-project}/_build/latest?definitionId={definitionId}&branch=master)]`
 
 1. **Commit** your Readme.md file to the repository. The rendered Readme now shows the build badge.
 1. Click on the build badge to navigate to the last completed build in VSTS.

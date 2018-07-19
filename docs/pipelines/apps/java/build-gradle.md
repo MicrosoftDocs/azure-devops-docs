@@ -27,7 +27,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use a TFS server instead of a VSTS account.
+* While the simplest way to try this quickstart is to use a VSTS organization, you can also use a TFS server instead of a VSTS organization.
 
 ## Get sample app code
 

@@ -58,8 +58,8 @@ You will:
 * You need access to a Jenkins server with Maven configured. If you have not yet created a Jenkins server,
   see [Create a Jenkins master on an Azure Virtual Machine](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template). 
 
-* Sign in to your VSTS account (`https://{youraccount}.visualstudio.com`). 
-  You can get a [free VSTS account](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~home-vsts-hero~27308&campaign=o~msft~vscom~home-vsts-hero~27308).
+* Sign in to your VSTS organization (`https://{youraccount}.visualstudio.com`). 
+  You can get a [free VSTS organization](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~home-vsts-hero~27308&campaign=o~msft~vscom~home-vsts-hero~27308).
 
   > [!NOTE]
   > For more information, see [Connect to VSTS](https://visualstudio.microsoft.com/docs/setup-admin/team-services/connect-to-visual-studio-team-services).
@@ -88,14 +88,14 @@ You must configure credentials for connecting to VSTS, and a plug in for **VS Te
   > [!NOTE]
   Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in VSTS**.
  
-1.  Create a PAT in your VSTS account. Jenkins requires this information to access your VSTS account.  Ensure you **store** the token information for upcoming steps in this section.
+1.  Create a PAT in your VSTS account. Jenkins requires this information to access your VSTS organization.  Ensure you **store** the token information for upcoming steps in this section.
   Read [How do I create a personal access token for VSTS and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to generate a PAT, or use an existing PAT if you have one.
 
 1. Open your Jenkins account and select **Credentials**, **System**, and then choose **Add Domain**.
 
 1. Enter a **name**, **description**, and then select **Add** **hostname**.
 
-1. In the **Include** text box, enter ```\*.visualstudio.com``` to enable this credential for all VSTS accounts.  You can optionally enter your specific VSTS account.
+1. In the **Include** text box, enter ```\*.visualstudio.com``` to enable this credential for all VSTS organizations.  You can optionally enter your specific VSTS organization.
 
 1. Select **Ok**.  You will see a message about empty credentials.  Select the link for **adding some credentials**.
 
@@ -235,7 +235,7 @@ There is an additional approach (pattern) possible when integrating Jenkins and 
 
 1. Select the **Build Triggers** tab, then remove the **tick** for the check boxes for **Build when a change is pushed to TFS/Team Services** and **Build when a change is pushed to a TFS pull request**.  These two options are not needed for this pattern since the VSTS build pipeline has the ability to trigger the CI/CD pipeline when new code is pushed to the repo.
 
-1. Navigate to your **VSTS account**.
+1. Navigate to your **VSTS organization**.
 
 1. Open **Builds** on the **Build &amp; Release** hub in VSTS, and choose **+ New** to create a new build pipeline. 
 
