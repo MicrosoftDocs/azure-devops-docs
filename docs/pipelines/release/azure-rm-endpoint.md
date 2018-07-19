@@ -136,7 +136,7 @@ To resolve these issues:
 * Open an InPrivate or incognito browser window and navigate to [https://visualstudio.microsoft.com/team-services/](https://visualstudio.microsoft.com/team-services/).
 * If you are prompted to sign out, do so.
 * Sign in using the appropriate credentials.
-* Choose the account you want to use from the list.
+* Choose the organization you want to use from the list.
 * Select the project you want to add the service connection to.
 * Create the service connection you need by opening the **Settings** page, selecting the **Services** tab,
   choosing **New service connection**, and selecting **Azure Resource Manager**.

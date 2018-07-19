@@ -44,7 +44,7 @@ We'll assume for the purposes of this tutorial that you want to build a Cordova 
 0. Open your team project in your web browser.
 
  * On-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_team_project}``` 
- * VSTS  ```https://{your_account}.visualstudio.com/DefaultCollection/{your_team_project}```
+ * VSTS  ```https://{your_organization}.visualstudio.com/DefaultCollection/{your_team_project}```
 
 0. Create a build definition. 
 

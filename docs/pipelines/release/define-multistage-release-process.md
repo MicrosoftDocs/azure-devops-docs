@@ -155,13 +155,13 @@ you deploy to production. In this section, you will add an approval step to the 
 
    ![Viewing the pre-deployment approvers settings](_img/define-multistage-release-process/open-approvers.png)
 
-1. In the **Approvers** section, choose your account from the list. You
+1. In the **Approvers** section, choose your organization from the list. You
    can type part of a name to search for matches. Also make sure you clear (untick) the checkbox 
    **User requesting a release...** so that you can approve your own releases.
 
    ![Selecting the pre-deployment approvers](_img/define-multistage-release-process/select-approvers.png)
 
-   You can add as many approvers as you need, both individual accounts and account groups.
+   You can add as many approvers as you need, both individual accounts and organization groups.
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the environment item in the pipeline diagram.
    For more information, see [Approvals and gates overview](../../pipelines/release/approvals/index.md?toc=/vsts/deploy-azure/toc.json).
 

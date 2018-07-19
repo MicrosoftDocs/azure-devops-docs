@@ -1,6 +1,6 @@
 ---
-title: Create a team project in VSTS or Team Foundation Server (TFS)
-description: Add a team project in VSTS or on-premises Team Foundation Server (TFS)
+title: Create a project in VSTS or Team Foundation Server (TFS)
+description: Add a project in VSTS or on-premises Team Foundation Server (TFS)
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,25 +8,25 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2017
+ms.date: 07/18/2018
 monikerRange: '>= tfs-2015'
 ---
-# Create a team project
+# Create a project
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions](https://msdn.microsoft.com/library/ms181477%28v=vs.120%29.aspx)**  
 >[!NOTE]
 >If you don't want to manage an on-premises server, you can 
-[sign up for VSTS and create a team project](create-account-msa-or-work-student.md). This topic applies to creating a team project when you have an on-premises Team Foundation Server (TFS) deployed.
+[sign up for VSTS and create a project](create-account-msa-or-work-student.md). This topic applies to creating a project when you have an on-premises Team Foundation Server (TFS) deployed.
 
-Create a team project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Team projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). 
+Create a project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). 
 
-If you have a team project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../git/gitquickstart.md).
+If you have a project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../git/gitquickstart.md).
 
 
 >[!IMPORTANT]  
->When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
+>When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 >
->If you want these features to be to be available on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
+>If you want these features to be to be available on your on-premises TFS, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
 
 
 ## From the web
@@ -35,7 +35,33 @@ If you have a team project already, and want to start coding an application proj
 
 ### VSTS
 
-1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To create team projects you must have the Create new projects permission set to **Allow**.
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. If you're not a member of the Project Collection Administrators Group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To create projects you must have the *Create new projects* permission set to **Allow**.
+
+2. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+
+3. Choose **Create project**.
+
+   ![Choose Create project](_img/create-team-project/Choose-create-project.PNG)
+
+4. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project. Choose **Create**.
+
+    See [choosing the right version control for your project](../../tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance. 
+
+   ![Create new project form](_img/create-team-project/create-new-project-form.PNG)
+  
+   Your project is created.
+  
+   ![Created project display](_img/_shared/project-created.png)
+
+---
+
+# [Previous navigation](#tab/previous-nav)
+
+1. If you're not a member of the Project Collection Administrators Group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To create projects you must have the Create new projects permission set to **Allow**.
 
 2. Navigate to the administration overview page by choosing the ![Settings Icon (TFS Web Portal)](_img/rename-team-project/gearicon.png) gear icon at the top of the page.
 
@@ -43,12 +69,13 @@ If you have a team project already, and want to start coding an application proj
 
     ![New Team Project VSTS](_img/create-team-project/newteamprojectvsts.png)
 
-
-4. Provide a name for your new team project, select its initial source control type, select a process, and choose with whom to share the project.
+4. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
     See [choosing the right version control for your project](../../tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance. 
 
-    ![Create Team Project VSTS](_img/create-team-project/clickcreatevsts.png)
+    ![Create Project VSTS](_img/create-team-project/clickcreatevsts.png)
+---
+
 
 ::: moniker-end
 

@@ -138,7 +138,7 @@ To publish NuGet packages created by your build, add the **NuGet** task and conf
 
 - **Command:** push
 - **Path to NuGet package(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you decided earlier to pack your packages in another location in the last task.
-- **Target feed location:** You can publish to a VSTS or TFS Package Management feed in this account or collection, to NuGet.org, or to an internal NuGet repository.
+- **Target feed location:** You can publish to a VSTS or TFS Package Management feed in this organization or collection, to NuGet.org, or to an internal NuGet repository.
 - **Target feed:** Select the feed you want to publish to.
 
 ![Publish packages from team build](_img/nuget/publish-packages-from-team-build.png)

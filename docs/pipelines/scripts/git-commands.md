@@ -35,7 +35,7 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 <div class="collapse" id="expando-version-control-permissions">
 
 <ul>
-<li>VSTS: <code>https:&#x2F;&#x2F;{your-account}.visualstudio.com/DefaultCollection/{your-team-project}/_admin/_versioncontrol</code></li>
+<li>VSTS: <code>https:&#x2F;&#x2F;{your-organization}.visualstudio.com/DefaultCollection/{your-team-project}/_admin/_versioncontrol</code></li>
 
 <li>On-premises: <code>https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-team-project}/_admin/_versioncontrol</code></li>
 </ul>
