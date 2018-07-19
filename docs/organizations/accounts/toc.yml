@@ -12,7 +12,7 @@
     href: create-account-msa-or-work-student.md
   - name: Try extensions for free
     href: ../../billing/try-additional-features-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
-  - name: Add admins or set permissions
+  - name: Set permissions
     href: ../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json 
   - name: Add a team admin
     href: ../../work/scale/add-team-administrator.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json

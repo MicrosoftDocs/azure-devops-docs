@@ -37,6 +37,29 @@ Make sure that the new owner:
 
 ## Change VSTS account owner
 
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+
+# [Vertical navigation](#tab/vertical)
+
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+2. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Admin settings icon.
+
+   ![Choose the gear, Admin settings icon](_img/_shared/sign-in-1.png)
+
+3. Choose Overview and you will see the account owner listed beneath Account information.
+
+   ![Find account owner](_img/change-account-ownership/find-account-owner.png)
+
+4. Change the account owner.
+
+   ![Change account owner](_img/change-account-ownership/change-account-owner.png)
+
+5. Enter and then **Save** the new account owner.
+
+   ![Save new account owner](_img/change-account-ownership/save-new-account-owner.png)  
+
+# [Horizontal navigation](#tab/horizontal)
+
 1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-account-ownership.md#ChooseOrgAcctMSAcct)
