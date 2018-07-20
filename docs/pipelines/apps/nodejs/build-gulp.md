@@ -368,7 +368,7 @@ See [Deploy to a Linux Virtual Machine](../cd/deploy-linuxvm-deploygroups.md).
 > [!IMPORTANT]
 > Make sure you followed the **[deployment instructions above](#deploy)** with the **Container** tab selected.
 
-See [Build and push a Docker image](../containers/build.md).
+See [Build and push a Docker image](../../languages/docker.md).
 
 ---
 
