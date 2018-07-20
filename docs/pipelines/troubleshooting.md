@@ -75,7 +75,7 @@ Agent diagnostic logs provide a record of how the agent was configured and what 
 
  - Cannot be opened until the process is terminated.
 
- - Attempts to connect to your Team Foundation Server or VSTS account.
+ - Attempts to connect to your Team Foundation Server or VSTS organization.
 
  - Shows when each job was run, and how it completed
 

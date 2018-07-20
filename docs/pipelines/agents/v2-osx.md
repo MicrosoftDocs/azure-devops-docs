@@ -79,7 +79,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ::: moniker range="vsts"
 
-VSTS: `https://{your-account}.visualstudio.com`
+VSTS: `https://{your-organization}.visualstudio.com`
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ In the section below, these tokens are replaced:
 
 For example, you have configured an agent (see above) with the name `our-osx-agent`. In the following examples, `{tfs-name}` will be either:
 
-* VSTS: the name of your account. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `vsts.agent.fabrikam.our-osx-agent`
+* VSTS: the name of your organization. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `vsts.agent.fabrikam.our-osx-agent`
 
 * TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `
 vsts.agent.our-server.our-osx-agent`

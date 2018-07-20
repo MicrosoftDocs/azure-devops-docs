@@ -33,7 +33,7 @@ of build pipeline that you're creating:  [designer](../get-started-designer.md) 
 ::: moniker range="vsts"
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your organization.
 
 ::: moniker-end
 

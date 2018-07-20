@@ -10,6 +10,7 @@
           "**/obj/**",
           "**/includes/**",
           "**/_data/**",
+          "**/_shared/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",

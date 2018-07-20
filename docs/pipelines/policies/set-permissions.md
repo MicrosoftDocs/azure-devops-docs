@@ -126,7 +126,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ## Set collection-level permissions to administer build resources
  
-1. From the web portal user context, open the admin context by clicking the ![gear icon](../../_img/icons/gear_icon.png) gear Settings icon and choosing **Account settings** or **Collection settings**.
+1. From the web portal user context, open the admin context by clicking the ![gear icon](../../_img/icons/gear_icon.png) gear Settings icon and choosing **Organization settings** or **Collection settings**.
 
 1. Click **Security**, and then choose the group whose permissions you want to modify. 
 
@@ -174,7 +174,7 @@ You manage the security for [agent pools](../agents/pools-queues.md) and [deploy
 
 You will need to be a member of the Project Collection Administrator group to manage the security for a pool. Once you've been added to the Administrator role, you can then manage the pool. For a description of each role, see [About security roles](../../organizations/security/about-security-roles.md). 
 
-1. From the web portal, click the ![gear settings icon](../../_img/icons/gear_icon.png) gear Settings icon and choose Account settings or Collection settings to open the collection-level settings admin context. 
+1. From the web portal, click the ![gear settings icon](../../_img/icons/gear_icon.png) gear Settings icon and choose Organization settings or Collection settings to open the collection-level settings admin context. 
 
 1. Click **Deployment Pools**, and then open the **Security** dialog for all deployment pools.    
 
