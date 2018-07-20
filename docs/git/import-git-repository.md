@@ -8,13 +8,13 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: quickstart
-ms.date: 04/25/2018
+ms.date: 07/20/2018
 monikerRange: '>= tfs-2013'
 ---
 
 
 # Import a Git repo
-#### VSTS | TFS 2018 | TFS 2017 Update 1
+#### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013
 
 This guide shows you how to import an existing Git repo from GitHub, Bitbucket, GitLab, or other location into a new or empty existing repo in your VSTS project.
 
@@ -41,7 +41,8 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 ## Prerequisites
 
 * A VSTS account. If you don't have one, you can [sign up](../organizations/accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
-  * If you are using TFS, you must have TFS 2017 Update 1 or higher. For instructions on manually importing a Git repo using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
+* To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher. 
+* To import a respository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
 ::: moniker range=">= tfs-2017"
 
