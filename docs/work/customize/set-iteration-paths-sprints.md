@@ -20,7 +20,7 @@ ms.date: 03/20/2018
 
 Newly created team projects contain a single, root area that corresponds to the team project name. Team projects typically specify a predefined set of iterations to help you get started tracking your work. All you need to do is specify the dates. 
 
-You add iteration paths under this root. To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md). 
+You add iteration paths under this root. To understand how the system uses area paths, see [About area and iteration paths](../../organizations/settings/about-areas-iterations.md). 
 
 ## Prerequisites
 <a name="permissions"></a>
@@ -34,7 +34,7 @@ You add iteration paths under this root. To understand how the system uses area 
 
 	If you aren't a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to **Edit project-level information**.   
 
-For naming restrictions on area and iteration paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+For naming restrictions on area and iteration paths, see [About areas and iterations, Naming restrictions](../../organizations/settings/about-areas-iterations.md#name-restrictions).
 
 
 <a id="open-admin-context">  </a>

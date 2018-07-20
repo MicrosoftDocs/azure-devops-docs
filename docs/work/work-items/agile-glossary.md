@@ -33,7 +33,7 @@ A family of engineering best processes with a goal of enabling rapid delivery of
 A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Learn more: [About Agile tools and Agile project management](../backlogs/overview.md).
 
 ## Area path
-A node on the Common Structure Services hierarchy that represents a feature area. Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The area path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../customize/about-areas-iterations.md).
+A node on the Common Structure Services hierarchy that represents a feature area. Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The area path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../../organizations/settings/about-areas-iterations.md).
 
 ## Bug
 A type of work item that records a potential source of dissatisfaction with the product. The common name of a work item type for tracking code defects.  
@@ -81,7 +81,7 @@ The Inheritance process model provides support for customizing work tracking obj
 
 
 ## Iteration path
-A node on the Common Structure Services hierarchy that represents a time period. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The iteration path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../customize/about-areas-iterations.md).
+A node on the Common Structure Services hierarchy that represents a time period. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The iteration path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../../organizations/settings/about-areas-iterations.md).
 
 ## Kanban board 
 An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../kanban/kanban-basics.md).
