@@ -8,7 +8,7 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 05/11/2018
+ms.date: 07/16/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -16,6 +16,12 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
+::: moniker-end
+
+::: moniker range="tfs-2017"
+> [!NOTE]
+> 
+> This guidance applies to TFS version 2017.3 and newer.
 ::: moniker-end
 
 ::: moniker range="vsts"
@@ -53,25 +59,33 @@ Create a PowerShell script that prints `Hello world`.
 
 1. Add a file.
 
- ::: moniker range="vsts"
+   ::: moniker range="vsts"
 
- ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018-2.png) 
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   >![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-newnav-tfs-2018-2.png)
+   > 
 
- ::: moniker-end
+   # [Previous navigation](#tab/previous-nav)
+   ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018-2.png) 
 
- ::: moniker range="tfs-2018"
+   ---
 
- ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018.png) 
+   ::: moniker-end
 
- ::: moniker-end
+   ::: moniker range="tfs-2018"
 
- ::: moniker range="tfs-2017"
+   ![On the Files tab, from the repo node, select the 'New -> File' option](_img/get-started-designer/add-a-file-tfs-2018.png) 
 
- ![On the Files tab, from the repo node, select the 'Add file' option](_img/get-started-designer/add-a-file.png)
+   ::: moniker-end
 
- ::: moniker-end
+   ::: moniker range="tfs-2017"
 
-1. In the dialog box name your new file.
+   ![On the Files tab, from the repo node, select the 'Add file' option](_img/get-started-designer/add-a-file.png)
+
+   ::: moniker-end
+
+1. In the dialog box, name your new file and create it.
  ```
 HelloWorld.ps1
 ```
@@ -95,23 +109,39 @@ Create a build pipeline that prints "Hello world."
 
 1. Select the **Build and Release** hub in your VSTS project, and then choose **Builds**.
 
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-newnav-tfs-2018-2.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
    ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
+
+   ---
 
 1. Create a new pipeline.
 
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-vsts-newnavon.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
    ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
+
+   ---
 
 1. Make sure that the **source**, **project**, **repository**, and default **branch** match the location in which you created the script.
 
-1. Start with an **empty process**
+1. Start with an **empty process**.
 
-1. Select **Process** and specify whatever **Name** you want to use. For the **Agent queue**, select **Hosted VS2017**.
+1. On the left side, select **Process** and specify whatever **Name** you want to use. For the **Agent queue**, select **Hosted VS2017**.
 
-1. On the left side, select the plus sign **( + )** for Phase 1 to add a task to the phase, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
+1. On the left side, select the plus sign **( + )** to add a task to **Phase 1**. On the right side, select the **Utility** category, select the **PowerShell** task from the list, and then choose **Add**.
 
    ![builds-tab-add-task-to-phase](_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
 
-1. On the left side select your new **PowerShell** script task.
+1. On the left side, select your new **PowerShell** script task.
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
@@ -139,7 +169,7 @@ Create a build pipeline that prints "Hello world."
 
    ![builds-tab-add-task-to-phase](_img/get-started-designer/builds-tab-add-task-tfs-2018.png)
 
-1. On the left side select your new **PowerShell** script task.
+1. On the left side, select your new **PowerShell** script task.
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
@@ -169,7 +199,7 @@ Create a build pipeline that prints "Hello world."
 
 1. On the left side select **Add Task**, and then on the right side select the **Utility** category, select the **PowerShell** task, and then select **Add**.
 
-1. On the left side select your new **PowerShell** script task.
+1. On the left side, select your new **PowerShell** script task.
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your repository and select the script you created.
 
@@ -187,7 +217,7 @@ A typical build produces an artifact that can then be deployed to various enviro
 
 ::: moniker range="vsts"
 
-1. On the **Tasks** tab, select the plus sign **( + )** for Phase 1 to add a task to the phase.
+1. On the **Tasks** tab, select the plus sign **( + )** to add a task to **Phase 1**.
 
 1. Select the **Utility** category, select the **Publish Build Artifacts** task, and then select **Add**.
 
@@ -195,15 +225,11 @@ A typical build produces an artifact that can then be deployed to various enviro
 
    **Path to publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
 
-   **Artifact name**
+   **Artifact name**: Enter `drop`.
 
-   ```
-   drop
-   ```
+   **Artifact publish location**: Select **Visual Studio Team Services/TFS**.
 
-   **Artifact publish location**: **Visual Studio Team Services/TFS**.
-
-::: moniker-end
+   ::: moniker-end
 
 
 ::: moniker range=">= tfs-2017 < vsts"
@@ -216,13 +242,9 @@ A typical build produces an artifact that can then be deployed to various enviro
 
  **Path to Publish**: Select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse and select the script you created.
 
- **Artifact Name**
+ **Artifact Name**: Enter `drop`.
 
- ```
-drop
-```
-
- **Artifact Type**: **Server**.
+ **Artifact Type**: Select **Server**.
 
 ::: moniker-end
 
@@ -242,11 +264,49 @@ drop
 
 Save and queue a build manually and test your build pipeline.
 
-::: moniker range=">= tfs-2018 <= vsts"
+::: moniker range="vsts"
 
 1. Select **Save & queue**, and then select **Save & queue**.
 
-1. On the dialog box select **Save & queue** once more.
+1. On the dialog box, select **Save & queue** once more.
+
+   This queues a new build on the Microsoft-hosted agent. 
+
+1. You see a link to the new build on the top of the page. 
+
+   # [New navigation](#tab/new-nav)
+   > [!div class="mx-imgBorder"] 
+   > ![build console](_img/get-started-designer/build-console-link-to-new-build-newnav-tfs-2018-2.png)
+   >
+
+   # [Previous navigation](#tab/previous-nav)
+   ![build console](_img/get-started-designer/build-console-link-to-new-build-tfs-2018-2.png)
+
+   ---
+
+   Choose the link to watch the new build as it happens. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
+
+   > [!div class="mx-imgBorder"] 
+   > ![build console](_img/get-started-designer/build-console-vsts.png)
+   >
+
+1. Go to the build summary.
+
+   > [!div class="mx-imgBorder"] 
+   > ![build console](_img/get-started-designer/build-console-link-to-build-summary-vsts.png)
+   >
+
+1. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
+
+   ![artifacts explorer](_img/get-started-designer/artifacts-explorer-vsts.png)
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+1. Select **Save & queue**, and then select **Save & queue**.
+
+1. On the dialog box, select **Save & queue** once more.
 
    This queues a new build on the Microsoft-hosted agent. 
    
@@ -262,7 +322,7 @@ Save and queue a build manually and test your build pipeline.
 
    ![build console link to build summary](_img/get-started-designer/build-console-link-to-build-summary.png)
 
-1. On the **Artifacts** tab of the build notice that the script is published as an artifact.
+1. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
 
    ![artifacts explorer](_img/get-started-designer/artifacts-explorer.png)
 
@@ -272,7 +332,7 @@ Save and queue a build manually and test your build pipeline.
 
 1. Select **Save & queue**, and then select **Save & queue**.
 
-1. On the dialog box select the **Queue** button.
+1. On the dialog box, select the **Queue** button.
 
    This queues a new build on the agent. Once the agent is allocated, you'll start seeing the live logs of the build. Notice that the PowerShell script is run as part of the build, and that "Hello world" is printed to the console.
 
@@ -282,7 +342,7 @@ Save and queue a build manually and test your build pipeline.
 
    ![build console link to build summary](_img/get-started-designer/build-console-link-to-build-summary.png)
 
-1. On the **Artifacts** tab of the build notice that the script is published as an artifact.
+1. On the **Artifacts** tab of the build, notice that the script is published as an artifact.
 
    ![artifacts explorer](_img/get-started-designer/artifacts-explorer.png)
 
@@ -338,7 +398,16 @@ Write-Host Trigger: $trigger
 
 1. Notice that the person who changed the code has their name printed in the greeting message. You also see printed that this was a CI build.
 
- ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log.png)
+   ::: moniker range="vsts"
+   > [!div class="mx-imgBorder"]
+   > ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log-vsts.png)
+   >
+   ::: moniker-end
+   ::: moniker range="< vsts"
+   > [!div class="mx-imgBorder"]
+   > ![build summary powershell script log](_img/get-started-designer/build-summary-powershell-script-log.png)
+   >
+   ::: moniker-end
 
 > We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](build/variables.md).
 
@@ -372,7 +441,7 @@ Define the process for running the script in two environments.
 
 1. On the **Add tasks** dialog box, select **Utility**, locate the **PowerShell** task, and then select its **Add** button.
 
-1. On the left side select your new **PowerShell** script task.
+1. On the left side, select your new **PowerShell** script task.
 
 1. For the **Script Path** argument, select the <span style="background-color: rgb(244,244,244);font-weight:bold;padding:5px">...</span> button to browse your artifacts and select the script you created.
 
@@ -524,11 +593,11 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
  Your new code automatically is deployed in the **QA** environment, and then in the **Production** environment.
 
-::: moniker range=">= tfs-2018 <= vsts"
+   ::: moniker range=">= tfs-2018 <= vsts"
 
- ![release script step final log](_img/get-started-designer/release-script-step-final-log-tfs-2018-2.png)
+   ![release script step final log](_img/get-started-designer/release-script-step-final-log-tfs-2018-2.png)
 
- ::: moniker-end
+   ::: moniker-end
 
  ::: moniker range="tfs-2017"
 

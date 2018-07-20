@@ -7002,7 +7002,12 @@
     },
     {
       "source_path": "docs/build-release/apps/containers/build.md",
-      "redirect_url": "/vsts/pipelines/apps/containers/build",
+      "redirect_url": "/vsts/pipelines/languages/docker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "vsts/pipelines/apps/containers/build.md",
+      "redirect_url": "/vsts/pipelines/languages/docker",
       "redirect_document_id": true
     },
     {
