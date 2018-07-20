@@ -22,8 +22,8 @@
     href: languages/android.md
   - name: C/C++
     href: apps/windows/cpp.md
-  - name: Docker image
-    href: apps/containers/build.md
+  - name: Docker
+    href: languages/docker.md
   - name: Go
     href: apps/go/go.md
   - name: Java
