@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Release artifacts and artifact sources
 
-[!INCLUDE [ver
+[!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end

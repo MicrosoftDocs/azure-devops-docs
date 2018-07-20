@@ -109,7 +109,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 
 * [Azure App Service Deployment Overview](https://azure.microsoft.com/documentation/articles/app-service-deployment-readme/)
 
-* [Using the Azure Portal to deploy and manage your Azure resources](https://azure.microsoft.com/en-gb/documentation/articles/resource-group-portal/)
+* [Using the Azure Portal to deploy and manage your Azure resources](/azure/azure-resource-manager/resource-group-portal)
 
 ## Q & A
 
