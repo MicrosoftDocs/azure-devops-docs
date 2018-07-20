@@ -1,6 +1,6 @@
 ---
 title: VSTS - Add team project members | VSTS
-description: How to add members to team projects in VSTS so you can share code, work with your team, track status, coordinate dev, build, test, and release activities
+description: How to add members to projects in VSTS so you can share code, work with your team, track status, coordinate dev, build, test, and release activities
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/05/2018
+ms.date: 07/18/2018
 monikerRange: 'vsts'
 ---
-# Add team project members in VSTS
+# Add project members in VSTS
 
 **VSTS**
 
-Add members to your team project in VSTS, 
+Add members to your project in VSTS, 
 so you can share code and work with your team, track their status,
 coordinate dev, build, test, and release activities, and more.
-For Team Foundation Server, learn [how to add team project members here](../../organizations/security/add-users-team-project.md).
+For Team Foundation Server, learn [how to add project members here](../../organizations/security/add-users-team-project.md).
 
-When you add members to team projects,
+When you add members to projects,
 VSTS automatically assigns
 [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/),
 if your account has seats available, 
@@ -36,13 +36,36 @@ like [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-t
 
 ## Prerequisites
 
-If you don't have a team project yet,
-[create your team project first](../../user-guide/connect-team-projects.md).
-To add members to team projects, you'll need
-[project administrator](../../organizations/security/set-project-collection-level-permissions.md),
+If you don't have a project yet,
+[create your project first](../projects/connect-to-projects.md).
+To add members to projects, you'll need
+[project administrator](../security/set-project-collection-level-permissions.md),
 [project collection administrator, or account owner](faq-add-team-members.md#find-pca-owner) permissions.
 
-## Add members to your team project
+## Add members to your project
+
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)] 
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```) as project administrator, project collection administrator, or account owner.
+
+   [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
+
+2. On the landing page (which is your projects page ```https://{youraccount}.visualstudio.com/_projects```), select your  project.
+
+   ![From landing page, select project](_img/_shared/select-project.PNG)
+
+3. Invite members to your project.
+
+   ![On your project home page, choose Invite a friend](_img/add-team-members/add-member-to-project.PNG)
+
+4. Enter user and team information, and then choose **Add**. 
+
+   ![Add user to project](_img/add-team-members/add-user-to-project.PNG)
+---
+
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```) as project administrator, project collection administrator, or account owner.
 
@@ -108,7 +131,7 @@ To add members to team projects, you'll need
 
 ## Next steps
 
-* [Connect to a team project](../../user-guide/connect-team-projects.md)
+* [Connect to a team project](../projects/connect-to-projects.md)
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 

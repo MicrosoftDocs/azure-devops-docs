@@ -8,7 +8,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/31/2018
+ms.date: 07/09/2018
 monikerRange: 'vsts'
 ---
 
@@ -62,7 +62,35 @@ link to the account page.
 
 Provide others access to your account by adding their email address.
 
-1. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Account Settings** option.
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+
+# [Vertical navigation](#tab/vertical)
+
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+
+2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+    ![Open Admin Settings](_img/_shared/open-admin-settings-vert.PNG)
+ 
+3. Choose **Users** and then choose **Add new users** to open the form.
+
+   ![Choose Add new users](_img/_shared/add-new-users.png)
+
+4. Fill out the form.
+
+   ![Web portal, account admin context, Add new users dialog](_img/add-account-users-from-user-hub/invite-users-add-user-dialog.PNG)
+
+   * **Users**: Enter the Microsoft account (MSA) email address for the user account. You can add several email addresses by separating them with a semicolon (;). Note that in MSAs, the email addresses display in red.
+   * **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
+   * **Add to projects**: Select the project that you named in the previous procedure.
+   * **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
+
+5. Choose **Add** to complete your invitation.
+
+
+# [Horizontal navigation](#tab/horizontal)
+
+1. From your web browser, choose ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Account Settings** option.
 
    ![Open Account Settings](../../user-guide/_img/sign-up/open-account-settings.png)
 
@@ -97,9 +125,9 @@ Then fill in the "Add new users" dialog:
 Next steps: [Manage users in table view](manage-users-table-view.md)
 -->
 
-## Related notes
+## Related articles
 
-* [Connect to a team project](../../user-guide/connect-team-projects.md)
+* [Connect to a team project](../../organizations/projects/connect-to-projects.md)
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Visual Studio Team Services (VSTS)](delete-account-users.md)

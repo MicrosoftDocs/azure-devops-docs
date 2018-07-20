@@ -33,7 +33,7 @@ A family of engineering best processes with a goal of enabling rapid delivery of
 A suite of web-based tools used to track work and support Agile methodologies. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Learn more: [About Agile tools and Agile project management](../backlogs/overview.md).
 
 ## Area path
-A node on the Common Structure Services hierarchy that represents a feature area. Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The area path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../customize/about-areas-iterations.md).
+A node on the Common Structure Services hierarchy that represents a feature area. Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The area path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../../organizations/settings/about-areas-iterations.md).
 
 ## Bug
 A type of work item that records a potential source of dissatisfaction with the product. The common name of a work item type for tracking code defects.  
@@ -81,7 +81,7 @@ The Inheritance process model provides support for customizing work tracking obj
 
 
 ## Iteration path
-A node on the Common Structure Services hierarchy that represents a time period. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The iteration path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../customize/about-areas-iterations.md).
+A node on the Common Structure Services hierarchy that represents a time period. Iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. The iteration path allows you to define a hierarchy of paths. Learn more: [About area and iteration paths](../../organizations/settings/about-areas-iterations.md).
 
 ## Kanban board 
 An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../kanban/kanban-basics.md).
@@ -142,7 +142,7 @@ With teams, enterprises can sub-categorize work to better focus on all the work 
 
 ## Team project
 
-A repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. A team project resides within a VSTS account or TFS team project collection. It provides support for focusing on those objects defined within the team project. Learn more: [Create a team project](../../organizations/accounts/create-team-project.md).   
+A repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. A team project resides within a VSTS account or TFS team project collection. It provides support for focusing on those objects defined within the team project. Learn more: [Create a team project](../../organizations/projects/create-project.md).   
 
 ## User story
 A type of work item that defines the applications, requirements, and elements that teams plan to create. Product owners typically define and stack rank user stories. User story is defined with the Agile process.  Learn more: [Agile process work item types and workflow](guidance/agile-process-workflow.md).   

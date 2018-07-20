@@ -205,11 +205,11 @@ If your code is in a Git repo on VSTS or Team Foundation Server, you can create 
 
 ### My build didn't run. What happened?
 
-Someone must view a page in your VSTS account regularly for CI and scheduled builds to run. It can be any page, including, for example, the **Build and release** hub. 
+Someone must view a page in your VSTS organization regularly for CI and scheduled builds to run. It can be any page, including, for example, the **Build and release** hub. 
 
-Your VSTS account goes dormant five minutes after the last user signed out. After that, each of your build pipelines will run one more time. For example, while your account is dormant:
+Your VSTS organization goes dormant five minutes after the last user signed out. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
 
- * A nightly build of code in your VSTS account will run only one night until someone signs in again.
+ * A nightly build of code in your VSTS organization will run only one night until someone signs in again.
 
  * CI builds of an external Git repo will stop running until someone signs in again.
 

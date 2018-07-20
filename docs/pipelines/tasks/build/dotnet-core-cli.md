@@ -35,14 +35,14 @@ monikerRange: 'vsts'
 <tr><td>Use packages from this VSTS/TFS feed</td><td>(Required) Include the selected feed in the generated NuGet.config. You must have Package Management installed and licensed to select a feed here.</td></tr>
 <tr><td>Use packages from NuGet.org</td><td>(Required) Include NuGet.org in the generated NuGet.config.</td></tr>
 <tr><td>Path to NuGet.config</td><td>(Required) The NuGet.config in your repository that specifies the feeds from which to restore packages.</td></tr>
-<tr><td>Credentials for feeds outside this account/collection</td><td>(Optional) Credentials to use for external registries located in the selected NuGet.config. For feeds in this account/collection, leave this blank; the build’s credentials are used automatically.</td></tr>
+<tr><td>Credentials for feeds outside this organization/collection</td><td>(Optional) Credentials to use for external registries located in the selected NuGet.config. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically.</td></tr>
 <tr><td>Disable local cache</td><td>(Required) Prevents NuGet from using packages from local machine caches.</td></tr>
 <tr><td>Destination directory</td><td>(Required) Specifies the folder in which packages are installed. If no folder is specified, packages are restored into the default NuGet package cache.</td></tr>
 <tr><td>Verbosity</td><td>(Required) Specifies the amount of detail displayed in the output.</td></tr>
 <tr><td>Path to NuGet package(s) to publish</td><td>(Required) The pattern to match or path to nupkg files to be uploaded. Multiple patterns can be separated by a semicolon, and you can make a pattern negative by prefixing it with '-:'. Example: &ast;&ast;/&ast;.nupkg;-:&ast;&ast;/&ast;.Tests.nupkg
 </td></tr>
 <tr><td>Target feed location</td><td>(Required) undefined</td></tr>
-<tr><td>Target feed</td><td>(Required) Select a feed hosted in this account. You must have Package Management installed and licensed to select a feed here.</td></tr>
+<tr><td>Target feed</td><td>(Required) Select a feed hosted in this organization. You must have Package Management installed and licensed to select a feed here.</td></tr>
 <tr><td>NuGet server</td><td>(Required) The NuGet service connection that contains the external NuGet server’s credentials.</td></tr>
 <tr><td>Path to csproj or nuspec file(s) to pack</td><td>(Required) Pattern to search for csproj or nuspec files to pack.
 

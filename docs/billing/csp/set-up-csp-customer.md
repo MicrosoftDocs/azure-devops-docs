@@ -23,7 +23,7 @@ via the [Partner Center](https://partnercenter.microsoft.com).
 Get started:
 
 * Partners need to have the appropriate permissions role to purchase in the Partner Center. [Learn more](https://msdn.microsoft.com/partner-center/create-user-accounts-and-set-permissions) about roles in Partner Center.
-* Set up a customer tenant and CSP-based Azure subscription in Partner Center by following these steps:
+* Set up a customer and CSP-based Azure subscription in the Partner Center by following these steps:
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-Customer-Provisioning/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 

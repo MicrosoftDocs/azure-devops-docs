@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/30/2018
+ms.date: 07/18/2018
 monikerRange: 'vsts'
 ---
 # Add external users to your VSTS account
@@ -21,9 +21,8 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS account user who wa
 
 * You must set the policy 'External Guest Access' to 'On' for the account which you would like to invite external users to.
 
-> [!div class="mx-imgBorder"]
-![External Guest Access](_img/add-external-user/aad-guest-policy.png)
-
+   [!div class="mx-imgBorder"]
+   ![External Guest Access](_img/add-external-user/aad-guest-policy.png)
 
 * You must be a member of the Project Collection Administrators group for the account which you would like to invite external users to.
 
@@ -33,21 +32,48 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS account user who wa
 
 ## Invite external users to your VSTS account
 
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+
+2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+   ![Open Admin Settings](_img/_shared/open-admin-settings-vert.PNG)
+
+3. Choose **Users** and then choose **Add new users**.
+
+   ![Choose Add new users](_img/_shared/add-new-users.png)
+
+4. Enter the external user's email address followed by a semicolon, and then choose **Add**. A warning message will appear indicating that an external user is being added from outside of your directory.
+
+   [!div class="mx-imgBorder"]
+   ![Add external user to VSTS](_img/add-external-user/add-external-user-vert.png)
+
+5. Advise the external user to locate the email they received from VSTS and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which will add the user to your account.
+
+# [Previous navigation](#tab/previous-nav)
+
 1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
 
 2. Go to the **Users** tab in Settings.
 
+   ![Go to the Users tab in Settings](../../_shared/_img/users-hub-updated-ui.png)
+
 3. Choose **Add new users**.
+
+   ![Choose Add new users](_img/add-external-user/choose-add-new-users.PNG)
 
 4. Enter the external user's email address followed by a semicolon, and then choose **Add**. A warning message will appear indicating that an external user is being added from outside of your directory.
 
 > [!div class="mx-imgBorder"]
 ![Add external user to VSTS](_img/add-external-user/add-external-user.png)
 
-5. Advise the external user to locate the email they received from VSTS and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which will add the user to your tenant.
+5. Advise the external user to locate the email they received from VSTS and go to the Azure B2B redemption URL, which will add the user to your account.
 
 >[!Note]
->If you need to resend the invitation email, go to the **Users** page, select the user, and choose **Resend invite**.
+>If you need to resend the invitation email, go to **Users**, select the user, and choose **Resend invite**.
 
 The external user is added to the VSTS account to which they were invited and has immediate access.
 
