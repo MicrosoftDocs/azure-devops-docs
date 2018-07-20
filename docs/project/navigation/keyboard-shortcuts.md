@@ -147,7 +147,7 @@ Use these shortcuts when working in Team Explorer.
 <p>**Navigate**</p> 
 **Ctrl+0,a**&nbsp;&nbsp;&nbsp;Open web portal  
 **Ctrl+0,b**&nbsp;&nbsp;&nbsp;Open [Build](../../pipelines/overview.md)  
-**Ctrl+0,c**&nbsp;&nbsp;&nbsp;Open [Connect](../../user-guide/connect-team-projects.md)  
+**Ctrl+0,c**&nbsp;&nbsp;&nbsp;Open [Connect](../../organizations/projects/connect-to-projects.md)  
 **Ctrl+0,d**&nbsp;&nbsp;&nbsp;Open [Documents](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md)  
 **Ctrl+0,e**&nbsp;&nbsp;&nbsp;Open [Branches (Git)](../../git/gitquickstart.md)   
 **Ctrl+0,g**&nbsp;&nbsp;&nbsp;Open [Changes (Git)](../../git/gitquickstart.md)  

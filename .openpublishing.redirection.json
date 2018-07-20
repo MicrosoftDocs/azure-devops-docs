@@ -777,7 +777,7 @@
     },
     {
       "source_path": "docs/setup-admin/account-preferences.md",
-      "redirect_url": "/vsts/organizations/settings/set-user-preferences",
+      "redirect_url": "/vsts/organizations/settings/set-your-preferences",
       "redirect_document_id": false
     },
     {
@@ -802,7 +802,7 @@
     },
     {
       "source_path": "docs/setup-admin/create-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/create-team-project",
+      "redirect_url": "/vsts/organizations/projects/create-project",
       "redirect_document_id": false
     },
     {
@@ -827,7 +827,7 @@
     },
     {
       "source_path": "docs/setup-admin/rename-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/rename-team-project",
+      "redirect_url": "/vsts/organizations/projects/rename-project",
       "redirect_document_id": false
     },
     {
@@ -967,7 +967,7 @@
     },
     {
       "source_path": "docs/setup-admin/delete-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/delete-team-project",
+      "redirect_url": "/vsts/organizations/projects/delete-project",
       "redirect_document_id": false
     },
     {
@@ -1527,7 +1527,7 @@
     },
     {
       "source_path": "docs/connect/account-preferences.md",
-      "redirect_url": "/vsts/organizations/settings/set-user-preferences",
+      "redirect_url": "/vsts/organizations/settings/set-your-preferences",
       "redirect_document_id": false
     },
     {
@@ -1822,12 +1822,12 @@
     },
     {
       "source_path": "docs/tfs-server/create-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/create-team-project",
+      "redirect_url": "/vsts/organizations/projects/create-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/delete-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/delete-team-project",
+      "redirect_url": "/vsts/organizations/projects/delete-project",
       "redirect_document_id": false
     },
     {
@@ -1857,7 +1857,7 @@
     },
     {
       "source_path": "docs/tfs-server/rename-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/rename-team-project",
+      "redirect_url": "/vsts/organizations/projects/rename-project",
       "redirect_document_id": false
     },
     {
@@ -2677,7 +2677,7 @@
     },
     {
       "source_path": "docs/create-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/create-team-project",
+      "redirect_url": "/vsts/organizations/projects/create-project",
       "redirect_document_id": false
     },
     {
@@ -2687,7 +2687,7 @@
     },
     {
       "source_path": "docs/delete-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/delete-team-project",
+      "redirect_url": "/vsts/organizations/projects/delete-project",
       "redirect_document_id": false
     },
     {
@@ -2752,7 +2752,7 @@
     },
     {
       "source_path": "docs/rename-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/rename-team-project",
+      "redirect_url": "/vsts/organizations/projects/rename-project",
       "redirect_document_id": false
     },
     {
@@ -7272,7 +7272,7 @@
     },
     {
       "source_path": "docs/settings/switch-team-context.md",
-      "redirect_url": "/vsts/organizations/settings/switch-team-context",
+      "redirect_url": "/vsts/project/navigation/go-to-project-repo",
       "redirect_document_id": false
     },
     {
@@ -7637,12 +7637,12 @@
     },
     {
       "source_path": "docs/accounts/account-preferences.md",
-      "redirect_url": "/vsts/organizations/settings/set-user-preferences",
+      "redirect_url": "/vsts/organizations/settings/set-your-preferences",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/account-preferences.md",
-      "redirect_url": "/vsts/organizations/settings/set-user-preferences",
+      "redirect_url": "/vsts/organizations/settings/set-your-preferences",
       "redirect_document_id": false
     },
     {
@@ -7702,7 +7702,7 @@
     },
     {
       "source_path": "docs/accounts/create-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/create-team-project",
+      "redirect_url": "/vsts/organizations/projects/create-project",
       "redirect_document_id": false
     },
     {
@@ -7712,7 +7712,7 @@
     },
     {
       "source_path": "docs/accounts/delete-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/delete-team-project",
+      "redirect_url": "/vsts/organizations/projects/delete-project",
       "redirect_document_id": false
     },
     {
@@ -7767,7 +7767,7 @@
     },
     {
       "source_path": "docs/accounts/faq-create-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/faq-create-team-project",
+      "redirect_url": "/vsts/organizations/projects/faq-create-project",
       "redirect_document_id": false
     },
     {
@@ -7782,7 +7782,7 @@
     },
     {
       "source_path": "docs/accounts/faq-rename-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/faq-rename-team-project",
+      "redirect_url": "/vsts/organizations/projects/faq-rename-project",
       "redirect_document_id": false
     },
     {
@@ -7832,7 +7832,7 @@
     },
     {
       "source_path": "docs/accounts/rename-team-project.md",
-      "redirect_url": "/vsts/organizations/accounts/rename-team-project",
+      "redirect_url": "/vsts/organizations/projects/rename-project",
       "redirect_document_id": false
     },
     {
@@ -7842,12 +7842,12 @@
     },
     {
       "source_path": "docs/accounts/resources-granted-to-project-members.md",
-      "redirect_url": "/vsts/organizations/accounts/resources-granted-to-project-members",
+      "redirect_url": "/vsts/organizations/projects/resources-granted-to-project-members",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/save-team-project-data.md",
-      "redirect_url": "/vsts/organizations/accounts/save-team-project-data",
+      "redirect_url": "/vsts/organizations/projects/save-project-data",
       "redirect_document_id": false
     },
     {
@@ -7903,6 +7903,56 @@
     {
       "source_path": "docs/pipelines/apps/cd/deploy-dacpac-sqlpackage.md",
       "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/set-user-preferences.md",
+      "redirect_url": "/vstsorganizations/settings/set-your-preferences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/connect-team-projects.md",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/rename-team-project.md",
+      "redirect_url": "/vsts/organizations/projects/rename-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/faq-rename-team-project.md",
+      "redirect_url": "/vsts/organizations/projects/faq-rename-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/delete-team-project.md",
+      "redirect_url": "/vsts/organizations/projects/delete-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/create-team-project.md",
+      "redirect_url": "/vsts/organizations/projects/create-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/faq-create-team-project.md",
+      "redirect_url": "/vsts/organizations/projects/faq-create-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/resources-granted-to-project-members.md",
+      "redirect_url": "/vsts/organizations/projects/resources-granted-to-project-members",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/save-team-project-data.md",
+      "redirect_url": "/vsts/organizations/projects/save-project-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/switch-team-context.md",
+      "redirect_url": "/vsts/project/navigation/go-to-project-repo",
       "redirect_document_id": false
     }
   ]

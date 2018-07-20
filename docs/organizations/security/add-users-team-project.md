@@ -26,7 +26,7 @@ Once users have been added to a team project, you can browse for that name by di
 
 ## Prerequisites
 
-* You must have a team project. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../accounts/create-team-project.md).
+* You must have a team project. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../projects/create-project.md).
 * To add users to a team project, you must be a member of the [Project Administrators Group or have your **Edit project-level information** set to Allow](set-project-collection-level-permissions.md).
 * To add users to a team, you must have been [added as a team administrator for the team](../../work/scale/add-team-administrator.md), or you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow.
 
