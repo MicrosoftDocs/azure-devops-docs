@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Newly created team projects contain a single, root area that corresponds to the team project name. You add area paths under this root. To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md). 
+Newly created team projects contain a single, root area that corresponds to the team project name. You add area paths under this root. To understand how the system uses area paths, see [About area and iteration paths](../../organizations/settings/about-areas-iterations.md). 
 
 ## Prerequisites
 <a name="permissions"></a>
@@ -30,7 +30,7 @@ Newly created team projects contain a single, root area that corresponds to the 
 
 	If you aren't a project administrator, [get added as one](../../organizations/security/set-project-collection-level-permissions.md) or have someone provide you with explicit permissions to **Edit project-level information**.   
 
-For naming restrictions on area and iteration paths, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#name-restrictions).
+For naming restrictions on area and iteration paths, see [About areas and iterations, Naming restrictions](../../organizations/settings/about-areas-iterations.md#name-restrictions).
 
 <a id="open-admin-context">  </a>
 <a id="admin-intro-team-services" /> 
@@ -133,7 +133,7 @@ You can quickly generate [queries](../track/using-queries.md) to view the progre
 ## Related articles 
 As you can see, areas play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
 
-*	[About areas and iterations](about-areas-iterations.md)  
+*	[About areas and iterations](../../organizations/settings/about-areas-iterations.md)  
 *	[Add another team](../scale/multiple-teams.md)  
 *	[Set team defaults](../../organizations/settings/set-team-defaults.md)  
 *	[Configure team settings and add team administrators](../scale/manage-team-assets.md)   

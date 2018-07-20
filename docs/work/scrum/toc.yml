@@ -37,7 +37,7 @@
   - name: Scrum and sprint planning tools
     href: scrum-sprint-planning-tools.md
   - name: About areas and iterations
-    href: ../customize/about-areas-iterations.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../../organizations/settings/about-areas-iterations.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: "Workflow states & state categories"
     href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: About teams and Agile tools
