@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 #### VSTS | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015
 
-Create pull requests to review and merge code in a [Git team project](../organizations/accounts/create-team-project.md).
+Create pull requests to review and merge code in a [Git team project](../organizations/projects/create-project.md).
 Pull requests let your team review code and give feedback on changes before
 merging it into the master branch. Pull requests can come from either
 topic branches within the same repository or from a branch in a
@@ -73,7 +73,7 @@ Pick the branch you wish to have reviewed and the branch you want to merge the c
 
 Initiate pull requests directly from Visual Studio. 
 
-0. [Connect to your Team Project from Visual Studio](../user-guide/connect-team-projects.md).
+0. [Connect to your Team Project from Visual Studio](../organizations/projects/connect-to-projects.md).
 0. Open Team Explorer (select **View**, then **Team Explorer** or use the `Ctrl+\`, `Ctrl+M` hotkey)
 0. Open **Pull Requests** in Team Explorer by selecting the **Home** icon and choosing **Pull Requests**.
 

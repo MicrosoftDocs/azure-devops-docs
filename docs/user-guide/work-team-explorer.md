@@ -44,7 +44,7 @@ Team Explorer connects Visual Studio to team projects. You can manage source cod
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git  |Home page with TFVC  |
 > |-------------|----------|
-> |<img src="_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" />|<img src="_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" />|
+> |<img src="../organizations/projects/_img/te-home-page-git-repo.png" title="Team Explorer Home page with Git as source control" alt="Team Explorer Home page with Git as source control" />|<img src="../organizations/projects/_img/te-home-page-tfvc-repo.png" title="Team Explorer Home page w/ TFVC as source control" alt="Team Explorer Home page w/ TFVC as source control" />|
 
 
 >[!NOTE]  
@@ -76,17 +76,17 @@ Based on the page you select and the options configured for your team project.
 
 From the **Connect** page, you can select the team projects you want to connect to and quickly switch context between team projects.
 
-![Team Explorer, Connect](_img/te-connect-manage.png)
+![Team Explorer, Connect](../organizations/projects/_img/te-connect-manage.png)
 
 > [!div class="mx-tdBreakAll"]  
 > |Git: Local Git repo |TFVC: Map workspace |
 > |-------------|----------|
-> |If you connect to a Git repo, you also can [create, add, or clone repositories](../git/tutorial/creatingrepo.md).<br/>![Team Explorer, Connect, local Git repo options](_img/te-connect-local-git-repos.png) |If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../pipelines/build/options.md) on first connect.<br/>![Team Explorer, Connect, configure TFVC workspace](_img/te-tfvc-configure-workspace.png)|
+> |If you connect to a Git repo, you also can [create, add, or clone repositories](../git/tutorial/creatingrepo.md).<br/>![Team Explorer, Connect, local Git repo options](../organizations/projects/_img/te-connect-local-git-repos.png) |If you connect to a TFVC repo, you'll be prompted to [Configure your workspace (TFVC)](../pipelines/build/options.md) on first connect.<br/>![Team Explorer, Connect, configure TFVC workspace](../organizations/projects/_img/te-tfvc-configure-workspace.png)|
 
 
 
 > [!IMPORTANT]  
-> From the Visual Studio plug-in, you can [Create a team project](../organizations/accounts/create-team-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
+> From the Visual Studio plug-in, you can [Create a team project](../organizations/projects/create-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
 
 
 

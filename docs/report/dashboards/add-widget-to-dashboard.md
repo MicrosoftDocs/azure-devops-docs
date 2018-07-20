@@ -46,7 +46,7 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widets to
 
 ## Connect to the web portal for your team project 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../organizations/accounts/create-team-project.md)-->.
+To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/create-account-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../organizations/projects/create-project.md)-->.
 
 Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../../work/scale/multiple-teams.md#add-team-members).
 

@@ -3,7 +3,7 @@ ms.topic: include
 ---
 
 
-Before you start tracking work, you must have a team project. To create one hosted in the cloud, see [Sign up for VSTS](/vsts/user-guide/sign-up-invite-teammates). To create one hosted on an on-premises TFS, see [Create a team project](/vsts/organizations/accounts/create-team-project).   
+Before you start tracking work, you must have a team project. To create one hosted in the cloud, see [Sign up for VSTS](/vsts/user-guide/sign-up-invite-teammates). To create one hosted on an on-premises TFS, see [Create a team project](/vsts/organizations/projects/create-project).   
 
 If you have a team project, start tracking work:  
 

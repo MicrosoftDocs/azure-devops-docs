@@ -231,7 +231,7 @@ may encounter the following known issues:
 
 <h3 id="new_solution">How do I create an ASP.NET 4 web app?</h3>
 
-1. In Visual Studio, [connect to your team project](../../../../user-guide/connect-team-projects.md#visual-studio).
+1. In Visual Studio, [connect to your team project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
 
 1. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 

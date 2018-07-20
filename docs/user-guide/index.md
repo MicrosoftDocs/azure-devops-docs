@@ -60,8 +60,8 @@ Get started with a free account, share your code using Git, and track your work 
 - [Navigate using your account home page](account-home-pages.md)
 - [Go mobile](../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Manage your notifications](https://docs.microsoft.com/en-us/vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
-- [Set your preferences](../organizations/settings/set-user-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Sign in to the web or a client](connect-team-projects.md)
+- [Set your preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Sign in to the web or a client](../organizations/projects/connect-to-projects.md)
 
 ## Reference
 

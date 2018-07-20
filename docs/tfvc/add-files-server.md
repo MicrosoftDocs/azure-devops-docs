@@ -28,7 +28,7 @@ You can simultaneously create a new team project and add it to version control s
 
 ![New Project dialog box](_img/add-files-server/IC579084.png)
 
-1.  In Visual Studio, if you have not already done so, [connect to the team project](../user-guide/connect-team-projects.md).
+1.  In Visual Studio, if you have not already done so, [connect to the team project](../organizations/projects/connect-to-projects.md).
 
 2.  Choose **File**, **New**, **Project** (Keyboard: Ctrl + Shift + N).
 
@@ -57,7 +57,7 @@ To add an existing solution to version control, move all the solution files into
 >[!NOTE]  
 >Avoid using the **Add Solution to Source Control** dialog box to upload your solution into version control. Use the following procedure instead.
 
-1.  In Visual Studio, if you have not already done so, [connect to the team project](../user-guide/connect-team-projects.md).
+1.  In Visual Studio, if you have not already done so, [connect to the team project](../organizations/projects/connect-to-projects.md).
 
 2.  Choose **View**, **Other Windows**, **Source Control Explorer**.
 
@@ -100,7 +100,7 @@ When you use Solution Explorer to add a file to your code project, the system au
 
 If you are using a [local workspace](decide-between-using-local-server-workspace.md), then new files are automatically detected by the **Pending Changes** page.
 
-1.  In Visual Studio, if you have not already done so, [connect to the team project](../user-guide/connect-team-projects.md).
+1.  In Visual Studio, if you have not already done so, [connect to the team project](../organizations/projects/connect-to-projects.md).
 
 2.  Choose **View**, **Other Windows**, **Source Control Explorer**.
 
