@@ -6,7 +6,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: 473E452D-59F7-4F6F-97C6-657ECD99ADCB
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 ms.date: 09/01/2017  
 monikerRange: '>= tfs-2017'
@@ -117,7 +118,7 @@ If you have [enabled the **New Navigation** preview features](preview-features.m
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another team](../../work/scrum/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
-2.  Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear appear on your **Favorites** page and towards the top of the team backlog selector menu.
+2.  Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear on your **Favorites** page and towards the top of the team backlog selector menu.
 
 ::: moniker-end
 
