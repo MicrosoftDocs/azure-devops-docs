@@ -36,7 +36,7 @@ This quickstart explains how to set up continuous integration (CI) to build a co
 
 * An Azure subscription for pushing your container image to Azure Container Registry. If you don't have one, you can [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-* While the simplest way to try this quickstart is to use a VSTS account, you can also use TFS server. With TFS, make sure that you have [configured a build agent](../../agents/agents.md) with Docker installed.
+* While the simplest way to try this quickstart is to use a VSTS organization, you can also use TFS server. With TFS, make sure that you have [configured a build agent](../../agents/agents.md) with Docker installed.
 
 [!INCLUDE [create-azure-container-registry](../_shared/create-azure-container-registry.md)]
 

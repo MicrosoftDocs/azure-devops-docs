@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 When you define a CI build on VSTS, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build pipelines give you the advantages of configuration as code.
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML pipelines** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use YAML you must have the **Build YAML pipelines** [preview feature](/vsts/project/navigation/preview-features) enabled on your organization.
 
 In a YAML build pipeline, your CI build process configured as code, which means:
 

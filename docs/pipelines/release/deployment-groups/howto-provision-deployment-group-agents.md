@@ -65,7 +65,7 @@ For information about agents and pipelines, see:
 
    - When prompted for the user account, press *Return* to accept the defaults.
 
-   - Wait for the script to finish with the message `Service vstsagent.{account-name}.{computer-name} started successfully`.<p />
+   - Wait for the script to finish with the message `Service vstsagent.{organization-name}.{computer-name} started successfully`.<p />
 
 1. In the **Deployment groups** page of the **Build &amp; Release** hub, open the **Machines** tab and verify that the agents are running. If the tags you configured are not visible, refresh the page.
  

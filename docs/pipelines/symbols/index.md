@@ -31,7 +31,7 @@ For example, ```**\bin\**\*.pdb``` searches for all *.pdb* files in all subdirec
 ![Publish Symbols Task](_img/symboltaskv2.png)
 
 ### Publish symbols for NuGet packages
-To publish symbols for NuGet packages, include the above task in the build pipeline that produces the NuGet packages. Then the symbols will be available to all users in the VSTS account.
+To publish symbols for NuGet packages, include the above task in the build pipeline that produces the NuGet packages. Then the symbols will be available to all users in the VSTS organization.
 
 ## Portable PDBs
 

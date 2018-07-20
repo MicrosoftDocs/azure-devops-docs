@@ -89,7 +89,7 @@ After you've added these users, additional licenses will appear on the resource 
 
 ## Purchase additional concurrent jobs
 
-If you need to run more concurrent releases, you can [buy additional private jobs from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent jobs from Marketplace for a TFS instance at present, you must first buy concurrent jobs for a VSTS account. After you buy the private jobs for a VSTS account, you enter the number of purchased concurrent jobs manually on the resource limits page described below.
+If you need to run more concurrent releases, you can [buy additional private jobs from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent jobs from Marketplace for a TFS instance at present, you must first buy concurrent jobs for a VSTS organization. After you buy the private jobs for a VSTS organization, you enter the number of purchased concurrent jobs manually on the resource limits page described below.
 
 ## View and manage concurrent jobs
 

@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/25/2018
+ms.date: 07/17/2018
 monikerRange: 'vsts'
 ---
 # Add a group rule to assign access levels and extensions to users
@@ -23,6 +23,7 @@ This eliminates the need for automating license management on your own to reflec
 ## Prerequisites
 
 To manage licenses and group rules, you must be a Project Collection Administrator (PCA) for the VSTS account. If you're not a member of the Project Collection Administrators Group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md).
+To assign an extension to a user (and, consequently, a group) a PCA must have first [installed the extension on the account](../../marketplace/install-vsts-extension.md).
 
 ## Assign required licenses
 
@@ -49,3 +50,8 @@ As users sign in to your VSTS account, they will be assigned access levels and e
 1. Go to the **Users** page in account settings. There will be a notification indicating that there are users missing extensions or basic access levels.
 2. To see how many of each resource is missing, choose **Fix assignment errors**.
 3. Complete purchases for any missing resources, and then choose **Fix errors** to have them automatically assigned to the specified users.
+
+## Related articles
+
+* [Buy and install paid VSTS extensions](../../marketplace/install-paid-vsts-extension.md)
+* [Install Active Directory/Azure Active Directory users or groups to a built-in security group](../security/add-ad-aad-built-in-security-groups.md)

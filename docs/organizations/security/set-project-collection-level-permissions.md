@@ -12,7 +12,7 @@ ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Add administrators, set permissions at the project-level or project collection-level
+# Quickstart: Set permissions at the project-level or project collection-level
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
