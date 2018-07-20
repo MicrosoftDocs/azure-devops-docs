@@ -7272,7 +7272,7 @@
     },
     {
       "source_path": "docs/settings/switch-team-context.md",
-      "redirect_url": "/vsts/organizations/settings/switch-team-context",
+      "redirect_url": "/vsts/project/navigation/go-to-project-repo",
       "redirect_document_id": false
     },
     {
@@ -7950,5 +7950,10 @@
       "redirect_url": "/vsts/organizations/projects/save-project-data",
       "redirect_document_id": false
     },
+    {
+      "source_path": "docs/organizations/settings/switch-team-context.md",
+      "redirect_url": "/vsts/project/navigation/go-to-project-repo",
+      "redirect_document_id": false
+    }
   ]
 }

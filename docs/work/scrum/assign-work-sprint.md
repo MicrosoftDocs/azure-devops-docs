@@ -27,7 +27,7 @@ During the planning meeting, your product owner works with your team to identify
 > [!NOTE]   
 > Your project comes with several predefined sprints. You can quickly add more sprints 
 > from your backlog as needed. Or, change the dates of the predefined sprints. To learn more about sprints, also referred to as iterations, 
-> see [About areas and iterations](../customize/about-areas-iterations.md). 
+> see [About areas and iterations](../../organizations/settings/about-areas-iterations.md). 
 
 Here's an example of a sprint plan that consists of backlog items and the tasks required to complete each item. By setting team capacity and estimating tasks, the team can see when the team or a team member is at, under, or over capacity.
 
