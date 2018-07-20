@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 07/20/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -165,4 +165,4 @@ An exception to this recommendation is if you are using a form of continuous dep
 Use [release management](../../pipelines/index.md) tools when working with continuous deployment to promote builds from your master branch to your deployment targets.
 
 ## Videos
-> [!VIDEO https://www.youtube.com/embed/ykZbBD-CmP8?start=0]
+> [!VIDEO https://www.youtube.com/embed/t_4lLR6F_yk?start=0]
