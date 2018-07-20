@@ -27,7 +27,7 @@ Remove unused Git repos from your team project when they are no longer needed.
 > You must have [Delete Repository permissions](../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) to delete a repo from a team project. 
 
 >[!NOTE]
->The steps in this article show how to delete a Git repo from your team project. If you want to delete the entire team project, see [Delete a team project](../organizations/accounts/delete-team-project.md).
+>The steps in this article show how to delete a Git repo from your team project. If you want to delete the entire team project, see [Delete a team project](../organizations/projects/delete-project.md).
 
 ## Delete a Git repo from the web 
 

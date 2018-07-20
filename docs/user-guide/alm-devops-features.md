@@ -36,7 +36,7 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 
 
 <p><b>Browsers</b></p>
-[Connect to the web portal](connect-team-projects.md) from the latest versions of these supported browsers:  
+[Connect to the web portal](../organizations/projects/connect-to-projects.md) from the latest versions of these supported browsers:  
 - Chrome  
 - Edge    
 - Firefox   
@@ -54,7 +54,7 @@ Track work and integrate with your code, build, and test environments from the f
 - [IntelliJ](/vsts/java/download-intellij-plug-in)   
 - [Visual Studio Code](/vsts/java/vscode-extension)   
  
-To learn how to connect, see [Connect to a team project](connect-team-projects.md).  
+To learn how to connect, see [Connect to a team project](../organizations/projects/connect-to-projects.md).  
 <br/>
 <p><b>Office integration clients</b></p>
 Use features supported by these familiar clients to manage your project and illustrate your requirements.  
@@ -1872,7 +1872,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Web portal preferences </b></p>
-<p><p>Choose your name to access [your profile settings](../organizations/settings/set-user-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
+<p><p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md) and set your web portal preferences which include language (currently only English is supported for VSTS), date and time pattern, and time zone.</p>
 ![Profile drop down menu](_img/features/features-global-profile.png)  
 <br/>
 
@@ -2094,7 +2094,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](account-home-pages.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access [your profile settings](../organizations/settings/set-user-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
+<p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
 ![Profile drop down menu](_img/features/alm-index-my-profile-menu.png)  
 <br/>
 
@@ -2596,17 +2596,17 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a team project?</b></p>
-<p>A [team project](../organizations/accounts/create-team-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
+<p>A [team project](../organizations/projects/create-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
 
 <p><b>Create a team project </b></p>
-<p>You can [create a team project hosted in the cloud (VSTS)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../organizations/accounts/create-team-project.md).</p>
+<p>You can [create a team project hosted in the cloud (VSTS)](sign-up-invite-teammates.md), avoiding maintenance and administrative overhead, or [create a team project on an on-premises TFS](../organizations/projects/create-project.md).</p>
 
 
 <p><b>Rename a team project</b></p>
-<p>[Rename a team project](../organizations/accounts/rename-team-project.md) as needed to reflect changes that occur within your org.</p>
+<p>[Rename a team project](../organizations/projects/rename-project.md) as needed to reflect changes that occur within your org.</p>
 
 <p><b>Delete a team project</b></p>
-<p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](../organizations/accounts/delete-team-project.md). </p>
+<p>Simplify the navigation to team projects that are in use by [deleting team projects you no longer use](../organizations/projects/delete-project.md). </p>
 
 </td>
 <td width="33%">

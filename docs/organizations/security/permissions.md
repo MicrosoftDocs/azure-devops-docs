@@ -596,7 +596,7 @@ You manage collection-level permissions through the [web portal admin context](.
 			<blockquote>
 				Additional permissions may be required depending on your deployment.
 	
-				[Create a New Team Project Wizard](../accounts/create-team-project.md).
+				[Create a New Team Project Wizard](../projects/create-project.md).
 			</blockquote>
 		</td>
 	</tr>
@@ -621,7 +621,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="delete-team-project-permission">Delete team project</td>
 		<td>
-			Can [delete team projects](../accounts/delete-team-project.md).
+			Can [delete team projects](../projects/delete-project.md).
 			<blockquote>
 				Deleting a team project will delete all data that is associated with the team project.
 				You cannot undo the deletion of a team project except
@@ -752,7 +752,7 @@ You manage project-level permissions from the [web portal admin context](../../u
 	</tr>
 	<tr>
 		<td id="delete-team-project-permission">Delete team project</td>
-		<td>Can [delete the team project](../accounts/delete-team-project.md) from the collection.</td>
+		<td>Can [delete the team project](../projects/delete-project.md) from the collection.</td>
 	</tr>
 	<tr>
 		<td id="delete-test-runs-permission">Delete test runs</td>
@@ -816,7 +816,7 @@ You manage project-level permissions from the [web portal admin context](../../u
 	</tr>
 	<tr>
 		<td id="rename-team-project-permission">Rename team project</td>
-		<td>Can [change the name of the team project](../accounts/rename-team-project.md).</td>
+		<td>Can [change the name of the team project](../projects/rename-project.md).</td>
 	</tr>
 	<tr>
 		<td id="view-analytics-permission">View analytics</td>

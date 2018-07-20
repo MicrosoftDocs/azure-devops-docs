@@ -13,6 +13,7 @@ author: chcomley
 ms.date: 04/05/2018
 monikerRange: 'vsts'
 ---
+
 # Invite external users
 
 The team project is a container and security boundary for your software development assets: work items, code, builds, etc.
@@ -22,9 +23,9 @@ If someone is not already a member of your account, when you add them to a proje
 
 ## Additional groups & scopes
 
-Under the hood, a project member belongs to one or more [project-related security groups](../../organizations/security/about-security-identity.md#security-groups-and-permissions) such as "Project Valid Users" and "Project Contributors".
+Under the hood, a project member belongs to one or more [project-related security groups](../security/about-security-identity.md#security-groups-and-permissions) such as "Project Valid Users" and "Project Contributors".
 That person is also a member of an account-level group known as "Project Collection Valid Users".
-Also, that person's identity appears in the [identity service](../../organizations/security/about-security-identity.md#authentication) which backs the account.
+Also, that person's identity appears in the [identity service](../security/about-security-identity.md#authentication) which backs the account.
 Accounts backed by [Azure Active Directory](/azure/active-directory/) can have [native identities](/azure/active-directory/add-users-azure-active-directory) or [guest identities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), which grant different levels of access.
 
 ## Account-level resources
@@ -35,9 +36,9 @@ Those resources are:
 * Information about other members, including their email address and other contact details, that is hidden from non-members.
 * The Settings area, including security groups and permissions.
 * All installed extensions, including paid extensions (if you assign a license).
-* [Process](../../organizations/settings/work/manage-process.md) metadata from all processes in the account, which includes the work item types, its fields and picklist items. Picklist items could show sensitive information such as release dates, as shown in the image below:
+* [Process](../settings/work/manage-process.md) metadata from all processes in the account, which includes the work item types, its fields and picklist items. Picklist items could show sensitive information such as release dates, as shown in the image below:
 
-  ![Edit field release in feature](_img/edit-field-release-in-feature.png)
+  ![Edit field release in feature](../projects/_img/edit-field-release-in-feature.png)
 
 * When the WIT Client OM is used, which includes the usage of Excel and VS integration with VSTS, it stores sensitive information in a cache on the local disk. This cache includes the metadata of all processes in the account and the identities and group memberships of all members of the account.
 

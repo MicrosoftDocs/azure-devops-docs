@@ -43,13 +43,13 @@ if you are building from [Git repositories](#git-repositories).
 
 If you are using an on-premises Team Foundation Server, you can specify build retention policy defaults and maximums for a project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using VSTS, you can view but not change these settings for your account.
+If you are using VSTS, you can view but not change these settings for your organization.
 
-Global build retention policy settings can be managed from the **Build and Release** settings of your account or project collection:
+Global build retention policy settings can be managed from the **Build and Release** settings of your organization or project collection:
 
 ::: moniker range="vsts"
 
-* VSTS: `https://{your_account}.visualstudio.com/_admin/_buildQueue`
+* VSTS: `https://{your_organization}.visualstudio.com/_admin/_buildQueue`
 
 ::: moniker-end
 
@@ -161,7 +161,7 @@ If you are using VSTS, you can view but not change these settings for your proje
 
 Global release retention policy settings can be managed from the **Release** settings of your project:
 
-* VSTS: `https://{your_account}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+* VSTS: `https://{your_organization}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained

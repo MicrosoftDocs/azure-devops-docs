@@ -16,7 +16,7 @@ ms.date: 01/20/2017
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]  
 
-This error occurs when a required plug-in is missing from the process template being used by the New Team Project Wizard to [create a team project](../../../../organizations/accounts/create-team-project.md). Two conditions can cause this error:  
+This error occurs when a required plug-in is missing from the process template being used by the New Team Project Wizard to [create a team project](../../../../organizations/projects/create-project.md). Two conditions can cause this error:  
   
 -   The name of the plug-in is missing or misspelled in the XML process template file.  
   

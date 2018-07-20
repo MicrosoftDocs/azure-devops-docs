@@ -50,4 +50,4 @@ This error occurs when Team Explorer is not synchronized with or cannot establis
   
 ## Related articles
 -  [Add an administrator](../../../../organizations/security/set-project-collection-level-permissions.md)   
--  [Connect to team projects](../../../../user-guide/connect-team-projects.md)
+-  [Connect to team projects](../../../../organizations/projects/connect-to-projects.md)

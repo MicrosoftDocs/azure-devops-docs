@@ -43,7 +43,7 @@ Notes on choosing **Hosted macOS**:
 Software on Microsoft-hosted agents is updated once each month.
 
 * [Inventory of software currently installed on the Hosted VS2017 agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/win/Vs2017-Server2016-Readme.md).
-* [Inventory of software currently installed on the Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile).
+* [Inventory of software currently installed on the Hosted Linux agent](https://github.com/Microsoft/vsts-agent-docker/blob/master/README.md#standard-images).
 * [Inventory of software currently installed on the Hosted macOS agent](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md).
 * [Inventory of software currently installed on the Microsoft-hosted agent](https://github.com/adventworks/hosted-pool-images/blob/2017.10.02/vs2015-on-windows-2012r2/image.md).
 
@@ -80,15 +80,15 @@ When you use a Microsoft-hosted agent, you should always use [variables](../buil
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
 
-By default, all project contributors in an account have access to the Microsoft-hosted agents. But, your account administrator may limit the access of Microsoft-hosted agents to select users or projects. Ask the owner of your VSTS account to grant you permission to use a Microsoft-hosted agent. See [agent queue security](pools-queues.md#security).
+By default, all project contributors in an organization have access to the Microsoft-hosted agents. But, your organization administrator may limit the access of Microsoft-hosted agents to select users or projects. Ask the owner of your VSTS organization to grant you permission to use a Microsoft-hosted agent. See [agent queue security](pools-queues.md#security).
 
 ### I need more agents. What can I do?
 
-A: All VSTS accounts are provided with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release job concurrently, then you can buy [concurrent jobs](../licensing/concurrent-jobs-vsts.md).
+A: All VSTS organizations are provided with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release job concurrently, then you can buy [concurrent jobs](../licensing/concurrent-jobs-vsts.md).
 
 ### I'm looking for the Microsoft-hosted XAML build controller. Where did it go?
 
-The Microsoft-hosted XAML build controller is no longer supported. If you have an account in which you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx), you should set up a [self-hosted build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx) and a [self-hosted build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx).
+The Microsoft-hosted XAML build controller is no longer supported. If you have an organization in which you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx), you should set up a [self-hosted build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx) and a [self-hosted build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx).
 
 ### How can I manually select versions of tools on the Hosted macOS agent?
 * **Xamarin**

@@ -29,4 +29,4 @@ You might receive this error when you try to connect to Visual Studio Team Servi
 ## Related articles 
 - [Add users to team projects](../../../../organizations/security/add-users-team-project.md)   
 - [Assign licenses to users of VSTS](../../../../organizations/accounts/add-account-users-from-user-hub.md)
-- [Connect to team projects](../../../../user-guide/connect-team-projects.md)
+- [Connect to team projects](../../../../organizations/projects/connect-to-projects.md)

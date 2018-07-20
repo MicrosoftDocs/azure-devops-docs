@@ -26,7 +26,7 @@ If your team project uses TFVC in your VSTS account, read on. However, if your t
 <a name="tfvc"></a>
 ## Share using TFVC
 
-1. If you haven't yet, [Connect to VSTS using Eclipse](../user-guide/connect-team-projects.md).
+1. If you haven't yet, [Connect to VSTS using Eclipse](../organizations/projects/connect-to-projects.md).
 
 2. In Package Explorer, right-click the project and choose Team, Share Project.
 

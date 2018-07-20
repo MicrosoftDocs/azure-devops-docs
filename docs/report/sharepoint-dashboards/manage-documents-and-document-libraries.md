@@ -83,7 +83,7 @@ You can share documents and files that you want to make available to all team me
 2.  Right-click the target folder, and then click **Paste**.  
   
     > [!NOTE]
-    >  If you create a list of work items as a document in one team project and then move or copy that list to another team project, the bindings and references in that list continue to the first team project. For example, if a list of work items is contained in a Microsoft Excel (.xls) or Microsoft Project (.mpp) file, these files continue to be bound to the team project where the work items are defined. If you move the files to another team project, you do not change the server bindings. For information about how to change the server to which a document is bound, see [Connect Excel or Project to a team project](../../user-guide/connect-team-projects.md).  
+    >  If you create a list of work items as a document in one team project and then move or copy that list to another team project, the bindings and references in that list continue to the first team project. For example, if a list of work items is contained in a Microsoft Excel (.xls) or Microsoft Project (.mpp) file, these files continue to be bound to the team project where the work items are defined. If you move the files to another team project, you do not change the server bindings. For information about how to change the server to which a document is bound, see [Connect Excel or Project to a team project](../../organizations/projects/connect-to-projects.md).  
   
 #### To delete a document or folder  
   

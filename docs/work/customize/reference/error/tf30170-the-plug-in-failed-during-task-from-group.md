@@ -27,4 +27,4 @@ This error occurs when a third-party plug-in does not operate in the manner the 
 2.  If the problem persists, reinstall the third-party plug-in.  
     
 ## Related articles 
-- [Create a team project](../../../../organizations/accounts/create-team-project.md)
+- [Create a team project](../../../../organizations/projects/create-project.md)
