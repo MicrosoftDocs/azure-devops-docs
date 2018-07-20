@@ -69,4 +69,4 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 * [Blog posts for test management](https://blogs.msdn.microsoft.com/devops/?s=test+management)
 * [Load and performance testing](load-test/index.md)
 * [Continuous testing](../pipelines/index.md)
-* [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code)
+* [Unit testing](/visualstudio/test/unit-test-your-code)
