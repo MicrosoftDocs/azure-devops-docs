@@ -31,7 +31,7 @@ Customizations you make occur at one of three levels:
 <a id="shared-resources"></a>
 ## Shared resources  
 
-Each team project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](about-areas-iterations.md). 
+Each team project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](../../organizations/settings/about-areas-iterations.md). 
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Area path pick lists | Sprint/iteration pick lists |
