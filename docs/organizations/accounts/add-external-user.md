@@ -22,7 +22,7 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS account user who wa
 * You must set the policy 'External Guest Access' to 'On' for the account which you would like to invite external users to.
 
 > [!div class="mx-imgBorder"]
-![External Guest Access](_img/add-external-user/aad-guest-policy.png)
+> ![External Guest Access](_img/add-external-user/aad-guest-policy.png)
 
 
 * You must be a member of the Project Collection Administrators group for the account which you would like to invite external users to.
@@ -42,7 +42,8 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS account user who wa
 4. Enter the external user's email address followed by a semicolon, and then choose **Add**. A warning message will appear indicating that an external user is being added from outside of your directory.
 
 > [!div class="mx-imgBorder"]
-![Add external user to VSTS](_img/add-external-user/add-external-user.png)
+
+> ![Add external user to VSTS](_img/add-external-user/add-external-user.png)
 
 5. Advise the external user to locate the email they received from VSTS and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which will add the user to your tenant.
 
