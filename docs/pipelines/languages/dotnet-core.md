@@ -19,8 +19,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This guidance explains how to build .NET Core projects. Before you read this topic, you should understand the type
-of build pipeline that you're creating:  [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+This guidance explains how to build .NET Core projects. 
 
 ::: moniker range="tfs-2017"
 
@@ -51,16 +50,25 @@ https://github.com/adventworks/dotnetcore-sample
 
 # [Designer](#tab/designer)
 
-After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template.
-This automatically adds some of the most commonly required tasks. Save the pipeline and queue a build to see it in action.
-Then read through the rest of this topic to learn some of the more common changes people make to customize a .NET Core build process.
+> [!IMPORTANT]
+> If you are new to creating build pipelines, then complete the [designer](../get-started-designer.md) quickstart first before following these instructions.
+
+* After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository. 
+* Select **Process** under the **Tasks** tab in the build pipeline editor and change the properties as follows:
+  * **Agent queue:** `Hosted Linux`
+  * **Projects to test:** `**/*[Tt]ests/*.csproj`
+
+Save the pipeline and queue a build to see it in action. Then read through the rest of this topic to learn some of the more common changes people make to customize a .NET Core build process.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
+> [!IMPORTANT]
+> If you are new to creating build pipelines using YAML, then complete the [YAML](../get-started-yaml.md) quickstart first before following these instructions.
+
 The sample code above includes a `.vsts-ci.yml` file at the root of the repository.
-You can use this file to build the app. Push a change to your YAML file and see how the build is triggered.
+You can use this file to build the app. Push a trivial change to your YAML file and see how the build is triggered.
 Then read through the rest of this topic learn some of the more common changes people make to customize a .NET Core build process.
 
 ::: moniker-end
