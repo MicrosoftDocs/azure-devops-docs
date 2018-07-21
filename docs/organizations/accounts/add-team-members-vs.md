@@ -104,7 +104,7 @@ To add members to projects, you'll need
 	 * You must add email addresses for users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) 
 	unless your VSTS account [uses your organization's directory](faq-add-team-members.md#ConnectedDirectory) 
 	to authenticate users and control account access through 
-	[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
+	[Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis). 
 	If new users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).
 
     * If your VSTS account is connected to your organization’s directory, all users must be directory members and sign in to VSTS with work or school accounts that are managed by your organization’s directory. If they are not members, they will need to be [added to the directory](https://docs.microsoft.com/en-us/vsts/organizations/accounts/add-external-user?view=vsts).

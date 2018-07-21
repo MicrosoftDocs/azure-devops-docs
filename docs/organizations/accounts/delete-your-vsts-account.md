@@ -41,7 +41,7 @@ To delete your VSTS account, you'll need VSTS account owner permissions. [How do
 
 If your VSTS account uses an Azure subscription to bill purchases, you must first unlink your account from your Azure subscription before deleting your account.
 
-To unlink your account, you'll need VSTS account owner permissions and at least Azure subscription Co-Administrator permissions. [How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner) Or learn more about [Azure subscription administrators](https://azure.microsoft.com/en-us/documentation/articles/billing-add-change-azure-subscription-administrator/).
+To unlink your account, you'll need VSTS account owner permissions and at least Azure subscription Co-Administrator permissions. [How do I find the account owner?](faq-delete-restore-vsts-account.md#find-owner) Or learn more about [Azure subscription administrators](/azure/billing/billing-add-change-azure-subscription-administrator).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 

@@ -21,7 +21,7 @@ As your team grows and contracts, you can increase or decrease the number of pai
 > To reduce or cancel users who have paid Basic access for the next month, you must make your changes before the last day of the month.
 > Your charges won't change until the next month because paid users are monthly purchases.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
