@@ -3,7 +3,7 @@ title: View builds, releases, pipelines
 titleSuffix: VSTS Public Project
 description: View build and release status an definitions for a public project
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli

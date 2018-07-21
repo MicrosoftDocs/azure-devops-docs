@@ -3,7 +3,7 @@ title: Migration checklist
 titleSuffix: VSTS Public Project 
 description: Best practices when changing a private project to a public project 
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge
