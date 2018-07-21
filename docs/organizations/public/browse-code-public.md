@@ -3,7 +3,7 @@ title: Browse repos, files, branches, pushes, commits, & pull requests
 titleSuffix: VSTS Public Project
 description: Review the code base and current work by browsing repos, files, branches, pushes, commits, & pull requests 
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: sdanie

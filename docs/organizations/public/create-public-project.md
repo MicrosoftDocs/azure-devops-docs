@@ -3,7 +3,7 @@ title: Create a public project
 titleSuffix: VSTS Public Project  
 description: Create or add a public project to your Visual Studio Team Services account 
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
