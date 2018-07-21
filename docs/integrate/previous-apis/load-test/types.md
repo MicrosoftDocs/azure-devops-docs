@@ -183,6 +183,6 @@ Types used in the Cloud Load Test APIs. Note that some of the objects have shall
 ### Load Generation Geo Locations
 | Field Name | Type | Description |
 |:----------|:-----|:----------------|
-| location | string | [Azure region](https://azure.microsoft.com/en-us/regions/#overview) |
+| location | string | [Azure region](https://azure.microsoft.com/regions/#overview) |
 | percentage | integer | The percentage of the load being generated from the Azure region |
 

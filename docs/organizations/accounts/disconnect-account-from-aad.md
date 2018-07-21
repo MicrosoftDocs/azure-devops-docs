@@ -34,7 +34,7 @@ including yourself as VSTS account owner.
 for your Microsoft account as the VSTS account owner. You'll need both 
 because Azure AD users can't disconnect VSTS accounts from directories. 
 You can add Microsoft accounts to a directory as external users. 
-Learn about [managing Azure administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
+Learn about [managing Azure administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
 **What happens to current users?**  Users continue working seamlessly if they have Microsoft accounts 
 that share the same sign-in addresses that they use now.
