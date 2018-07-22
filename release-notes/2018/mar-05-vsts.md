@@ -106,7 +106,7 @@ Then watch build tags appear on your GitHub or GitHub Enterprise repository.
 
 ### Isolate Azure Resource Manager service endpoints to Resource Groups
 
-By default, the Azure Resource Manager service endpoints that are automatically configured in VSTS get **Contributor** role on the subscription. Now you have the option to create an endpoint and restrict the scope to a specific resource group within the subscription, which provides some isolation to ensure the endpoint only interacts with what it should. Select **Advanced options** when prompted to **Authorize** the Azure subsciption.
+By default, the Azure Resource Manager service endpoints that are automatically configured in VSTS get **Contributor** role on the subscription. Now you have the option to create an endpoint and restrict the scope to a specific resource group within the subscription, which provides some isolation to ensure the endpoint only interacts with what it should. Select **Advanced options** when prompted to **Authorize** the Azure subscription.
 
 > [!div class="mx-imgBorder"]
 ![Azure subscription Authorize advanced options](_img/131_10.png)
