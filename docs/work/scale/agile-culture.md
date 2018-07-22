@@ -165,7 +165,7 @@ Before you can create or work with any of the Agile tools, you need a team proje
 
 If you're ready to move from one team to two teams, or configure several teams, see [Multiple teams](multiple-teams.md). To add a team administrator or configure team assets, see [Configure team settings](manage-team-assets.md). 
 
-For addtional guidance, see these topics: 
+For additional guidance, see these topics: 
 - [Practices that scale](practices-that-scale.md) 
 - [Visibility across teams](visibility-across-teams.md)
 - [Review team delivery plans](review-team-plans.md)
