@@ -490,7 +490,7 @@ lessons learned by operating the service.
 Finally, for some customers, it is important to understand third-party
 evaluation of our data security procedures. Towards that end, we have
 achieved ISO 27001:2013, HIPAA (Health Insurance Portability and Accountability Act)
- BAA (Business Associate Agreeement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications. 
+ BAA (Business Associate Agreement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications. 
 The SOC audit for VSTS covers controls for data security, availability, 
 processing integrity, and confidentiality. In general, the availability of SOC 1,
 SOC 2 reports and other audit material is restricted to customers who have signed 
