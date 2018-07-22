@@ -28,7 +28,7 @@ You can manage your notifications, which you access from your account menu. Othe
 
 - Team notifications, managed by a team administrator
 - Project notifications, manage by a member of the Project Administrators group
-- Account/collection-level notifications, managed by a member of the Project collection Administartors group
+- Account/collection-level notifications, managed by a member of the Project collection Administrators group
 
 ## Preferred email address
 
