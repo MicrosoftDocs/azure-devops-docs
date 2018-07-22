@@ -169,7 +169,7 @@ Name the task and enter an estimate for *Remaining Work*. Also, if you know who'
 <a id="task-form-tfs-2015-13" /> 
 <!--- Task form, old form -->
 
-<img src="_img/IC797606.png" alt="Web portal, Task form, oldform"  style="border: 1px solid #C3C3C3;" />  	
+<img src="_img/IC797606.png" alt="Web portal, Task form, old form"  style="border: 1px solid #C3C3C3;" />  	
 ::: moniker-end
 
 At the planning stage, *Remaining Work* corresponds to an estimate of how long it will take to complete the task.  
