@@ -35,7 +35,7 @@ We recommend that for any project that has not been customized, that you review 
 
 ## Update to a System Process
 
-If you started with an older version of TFS, odds are your projects are still using an older process template. If those projects have not been updated using the [Configure Features Wizard](../work/customize/configure-features-after-upgrade.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) then TfsMigrator will find process errors. In some rare cases, if your process is so old, even the Configure Features Wizard will not reslove the errors.
+If you started with an older version of TFS, odds are your projects are still using an older process template. If those projects have not been updated using the [Configure Features Wizard](../work/customize/configure-features-after-upgrade.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) then TfsMigrator will find process errors. In some rare cases, if your process is so old, even the Configure Features Wizard will not resolve the errors.
 
 Here are some examples of error messages you will probably receive:
 
