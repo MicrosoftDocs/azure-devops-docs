@@ -77,7 +77,7 @@ Anonymous users won't be able to view or interact with select widgets. In place 
 > [!div class="mx-imgBorder"]
 > ![Open Dashboards, anonymous user](_img/unavailable-widget-image.png)
 
-The following dashboard widgets are't available to anonymous users:
+The following dashboard widgets aren't available to anonymous users:
 
 [!INCLUDE [temp](_shared/unavailable-widgets.md)]  
 
