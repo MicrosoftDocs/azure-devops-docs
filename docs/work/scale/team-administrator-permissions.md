@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 08/15/2017
 ---
@@ -18,7 +19,7 @@ ms.date: 08/15/2017
 While most permissions are governed by belonging to a security group or defined at the object level, team settings are managed by the team administrator role.
 
 For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing and configuring [team assets](../../organizations/settings/about-teams-and-settings.md).  
-
+Administrators
 In addition to team administrators, all members of the Project Administrators and Project Collection Administrators groups can manage settings for all teams as well as add team administors. 
 
 ## Set team defaults 
