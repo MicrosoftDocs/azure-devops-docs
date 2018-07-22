@@ -33,7 +33,7 @@ or when a VSTS build finishes.
 Be sure to set a secondary user name because you won't be able to use your email address
 to connect VSTS to Bamboo.
 
-   <img alt="Profile, credentials tab, alternative credentials enabled wiht a secondary user name" src="./_img/bamboo/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Profile, credentials tab, alternative credentials enabled with a secondary user name" src="./_img/bamboo/alternate-credentials.png" style="border: 1px solid #CCCCCC" />
 
 ## Set up a Bamboo build plan
 
