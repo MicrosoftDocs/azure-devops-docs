@@ -221,7 +221,7 @@ In the VSTS web portal, choose **CODE > History** or **CODE > Explorer > History
 
 ![Viewing Branch history in VSTS](./_img/mapping-my-tfvc-actions-to-git/ActionMap-History-Web.png)
 
-At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TVFC actions. 
+At this point, you have successfully explored the create -> clone -> branch -> change -> commit -> push [workflow](http://www.git-scm.com/book/en/v2/Git-Branching-Branching-Workflows), based on common TFVC actions. 
 
 You also have the option of issuing a [pull request](pull-requests.md), to publish and stage your changes on the server/remote repo at this point.
 
