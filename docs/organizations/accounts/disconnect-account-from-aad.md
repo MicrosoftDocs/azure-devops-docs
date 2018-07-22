@@ -55,7 +55,7 @@ with your Microsoft account as the VSTS account owner.
 
     ![Azure portal, VSTS, select your account](_img/manage-work-access/select-team-services-account.png)
 
-0.	Chooose **Disconnect**.
+0.	Choose **Disconnect**.
 
 	![Configure account](_img/manage-work-access/azure-configure-disconnect.png)
 
