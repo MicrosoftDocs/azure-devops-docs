@@ -143,7 +143,7 @@ For details, go [here](/azure/notification-hubs/).
  
    For details about the subscription wizard, go [here](../index.md).
 
-   <img alt="Add a sevice hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add a service hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
 5. Pick and configure the VSTS event.
 
