@@ -1593,7 +1593,7 @@ You manage query and query folder permissions through the [web portal](../../wor
 
 <img src="_img/permissions/query-folder-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
 
-Consider granting the Contribute permissions to users or groups that require the abilityto create and share work item queries for the team project. To learn more, see [Set permissions on queries](../../work/track/set-query-permissions.md).
+Consider granting the Contribute permissions to users or groups that require the ability to create and share work item queries for the team project. To learn more, see [Set permissions on queries](../../work/track/set-query-permissions.md).
 
 > To create query charts [you need Basic access](change-access-levels.md).
 
