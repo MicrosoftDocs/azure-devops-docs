@@ -107,7 +107,7 @@ Release Management consists of various pre-created components which you can conf
 independently or in conjunction with other components through workflows.
 
 You might face pain points when you manually deploy an entire system. For a large complex system 
-with multiple components, like service, web jobs, and dapac scripts, here are example pain points:
+with multiple components, like service, web jobs, and dacpac scripts, here are example pain points:
 
 *   A large amount of time goes into configuration of each component
 
