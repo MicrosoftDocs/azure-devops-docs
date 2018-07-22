@@ -183,7 +183,7 @@ your TFS to pick up the latest builds or even select builds.
 
 We also discussed the benefits that we found by taking up these practices:
 
-*   Minimal wastage of time due to automations of build, deploy phases
+*   Minimal wastage of time due to automation of build and deploy phases
 
 *   Higher code quality due to Gated check-ins (with integrated Test Automation), Code Analysis, 
 and Fortify Integration
