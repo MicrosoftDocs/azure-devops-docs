@@ -6,7 +6,7 @@ ms.topic: include
 
 To programmatically interact with queries, see one of these REST API resources:  
 
-- [Fetch work items with queries programatically](../../integrate/quickstarts/work-item-quickstart.md) 
+- [Fetch work items with queries programmatically](../../integrate/quickstarts/work-item-quickstart.md) 
 - [Queries](https://docs.microsoft.com/rest/api/vsts/wit/queries)
 - [Work item query language](https://docs.microsoft.com/rest/api/vsts/wit/wiql)
 
