@@ -42,7 +42,7 @@ This option is simpler, but will result in more downtime, especially if your TFS
 
 **Option 2:**
 
-This option is more work, but it will work with customized team projects and it reduces dowbtime because you don't have to upgrade twice.
+This option is more work, but it will work with customized team projects and it reduces downtime because you don't have to upgrade twice.
 
 * [Upgrade your TFS instance to TFS 2015](/tfs/server/upgrade/get-started).
 * Manually update each team project:
