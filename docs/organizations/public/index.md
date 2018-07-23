@@ -3,7 +3,7 @@ title: Public Projects
 titleSuffix: VSTS Public Project 
 description: Index to topics for creating and working in public projects for Visual Studio Team Services (VSTS)
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli

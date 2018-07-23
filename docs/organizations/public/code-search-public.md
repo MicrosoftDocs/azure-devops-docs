@@ -3,7 +3,7 @@ title: Search the code base of a public project
 titleSuffix: VSTS Public Project
 description: Search across all repositories defined in a public project to find specific types of code   
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: ahomer
