@@ -3,7 +3,7 @@ title: Glossary for public projects
 titleSuffix: VSTS Public Project
 description: Description of key concepts and terms 
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.reviewer:
 ms.manager: douge
