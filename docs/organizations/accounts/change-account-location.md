@@ -19,10 +19,10 @@ monikerRange: 'vsts'
 When you [create an account](create-account-msa-or-work-student.md), you can choose the region where VSTS hosts your
 account.  You may choose your account's region due to locality and network latency or because you have sovereignty
 requirements for data centers.  Your account's default location is based on the closest 
-[Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
+[Microsoft Azure region](https://azure.microsoft.com/regions) 
 where VSTS is available.
 
-For information on region availability, see [Products available by region](https://azure.microsoft.com/en-us/global-infrastructure/services/).
+For information on region availability, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/).
 
 To find the region where your account is located:
 

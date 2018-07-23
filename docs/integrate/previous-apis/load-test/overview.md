@@ -58,6 +58,6 @@ The following steps are essential to be successful with these APIs. These are de
 [4]:https://msdn.microsoft.com/library/dn250793.aspx
 [5]:https://en.wikipedia.org/wiki/Application_performance_management
 [6]:http://go.microsoft.com/fwlink/?LinkId=506854
-[7]:https://azure.microsoft.com/en-us/documentation/articles/app-insights-metrics-explorer/
-[8]:http://azure.microsoft.com/en-us/regions/
+[7]:/azure/application-insights/app-insights-metrics-explorer
+[8]:https://azure.microsoft.com/regions/
 

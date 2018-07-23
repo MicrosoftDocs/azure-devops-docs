@@ -27,7 +27,7 @@ The task has the following pre-requisites:
 
 * An Azure subscription linked to Team Foundation Server or VSTS using the [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
-* An [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) containing the secrets.
+* An [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) containing the secrets.
 
 You can create a key vault:
 

@@ -13,7 +13,7 @@ A:	Change these when you sign up for your VSTS account.
 VSTS uses Agile as the default 
 [process](https://msdn.microsoft.com/Library/vs/alm/work/work-items/guidance/choose-process) 
 to organize your work. And your account's default location is based on the closest 
-[Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
+[Microsoft Azure region](https://azure.microsoft.com/regions) 
 where VSTS is available. For a better experience, 
 select a location that's closest to most users in your account. If a new VSTS region or location opens later, you can 
 [change your account location or region](../organizations/accounts/change-account-location.md).

@@ -124,7 +124,7 @@ for pricing related to their services.
 
 #### Q: Can I get more information about Microsoft Azure storage?
 
-A: Yes, go [here](http://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-queues/).
+A: Yes, go [here](/azure/storage/queues/storage-dotnet-how-to-use-queues).
 
 #### Q: Can I programmatically create subscriptions?
 

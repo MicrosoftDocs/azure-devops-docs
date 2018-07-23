@@ -21,7 +21,7 @@ In this quickstart, you'll learn how to buy private or hosted pipelines and chan
 With VSTS you can run builds and deploy releases using the Microsoft-hosted CI/CD service, your own machines, or both.
 We offer a **Free Tier** for each.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Microsoft-hosted CI/CD (formerly Hosted Pipelines)
 

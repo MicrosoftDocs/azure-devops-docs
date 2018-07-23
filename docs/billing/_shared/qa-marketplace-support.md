@@ -17,7 +17,7 @@ A: Depending on the support you need:
 
 A:	Yes, please buy directly from the Visual Studio Marketplace 
 where you can bill purchases to the Azure subscription that was created 
-under your [Enterprise Agreement (EA)](https://azure.microsoft.com/en-us/pricing/enterprise-agreement/). 
+under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). 
 Don't order Visual Studio Marketplace services through your reseller.
 
 

@@ -2970,7 +2970,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[9 Mar 2015](http://azure.microsoft.com/en-us/documentation/articles/app-insights-java-get-started/)</td>
+            <td>[9 Mar 2015](/azure/application-insights/app-insights-java-get-started)</td>
             <td>Application Insights support for Java</td>
             <td>N/A</td>
         </tr>
@@ -2997,7 +2997,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[29 Jan 2015](http://azure.microsoft.com/en-us/updates/application-insights-support-for-windows-phone-and-windows-store/)</td>
+            <td>[29 Jan 2015](http://azure.microsoft.com/updates/application-insights-support-for-windows-phone-and-windows-store/)</td>
             <td>Application Insights support for Windows Phone and Windows Store Applications</td>
             <td>N/A</td>
         </tr>
@@ -3050,11 +3050,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td rowspan="2">11 Dec 2014</td>
-            <td>[Application Insights Status Monitor and SDK updates](http://azure.microsoft.com/en-us/updates/application-insights-status-monitor-and-sdk-updated/)</td>
+            <td>[Application Insights Status Monitor and SDK updates](http://azure.microsoft.com/updates/application-insights-status-monitor-and-sdk-updated/)</td>
             <td>N/A</td>
         </tr>
         <tr>
-            <td>[Application Insights includes telemetry export and segmentation editing](http://azure.microsoft.com/en-us/updates/application-insights-adds-telemetry-export-and-segmentation-chart-editing/)</td>
+            <td>[Application Insights includes telemetry export and segmentation editing](http://azure.microsoft.com/updates/application-insights-adds-telemetry-export-and-segmentation-chart-editing/)</td>
             <td>N/A</td>
         </tr>
         <tr>

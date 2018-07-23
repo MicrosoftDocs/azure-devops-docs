@@ -1957,7 +1957,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is Application Insights</b></p>
-<p>Application Insights, an extensible analytics service that monitors your live web application, supports developers to continuously improve the performance and usability of apps. With it you can [detect and diagnose performance issues, and understand what users actually do with your app](https://azure.microsoft.com/en-in/documentation/articles/app-insights-overview/). </p>
+<p>Application Insights, an extensible analytics service that monitors your live web application, supports developers to continuously improve the performance and usability of apps. With it you can [detect and diagnose performance issues, and understand what users actually do with your app](/azure/application-insights/app-insights-overview). </p>
 
 
 <p><b>Web site availability monitoring </b></p>
@@ -1992,7 +1992,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Gain a clear view of [where your users are coming from and how they use your app ](https://azure.microsoft.com/documentation/articles/app-insights-overview-usage/). Add custom instrumentation to determine usage patterns and next version investment areas.  </p>
 
 <p><b>Diagnose dependency issues</b></p>
-<p>See how long your application [waits for dependencies and how often a dependency call fails](https://azure.microsoft.com/en-in/documentation/articles/app-insights-dependencies/). Dependencies are external components that your app calls such as an HTTP service, database, or file system. </p>
+<p>See how long your application [waits for dependencies and how often a dependency call fails](/azure/application-insights/app-insights-asp-net-dependencies). Dependencies are external components that your app calls such as an HTTP service, database, or file system. </p>
 
 
 <p><b>Custom data collectors </b></p>

@@ -32,7 +32,7 @@ In this tutorial, you learn to:
 If your VSTS account was created with a Microsoft account,
 you can connect your VSTS account to your
 organization's directory (tenant) in
-[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/).
+[Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 You can then sign in to VSTS with the same username
 and password that you use with these Microsoft services.
 You can also [enforce conditional access policies](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) for accessing
