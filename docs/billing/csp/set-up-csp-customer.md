@@ -48,7 +48,7 @@ customer's end user.  You can also delete existing assigned subscriptions or rea
 ## Converting your customers from other Azure billing to CSP
 If your customer has been buying VSTS, Visual Studio cloud subscriptions, or Xamarin University directly through Microsoft and wants to transition to paying through you as a CSP, here's what they'll need to do:
 0. Reduce paid quantities to zero.
-0. Inform you of the ongoing paid quanties of each service and product to start billing on the first day of the next calendar month. In the case of Visual Studio annual cloud subscriptions, the customer should 
+0. Inform you of the ongoing paid quantities of each service and product to start billing on the first day of the next calendar month. In the case of Visual Studio annual cloud subscriptions, the customer should 
 provide you with the month (or months) to start purchases of these subscriptions so that they can continue coverage from the point it will expire from their existing annual cloud subscription purchases.
 
 For VSTS, see additional details about [buying VSTS through CSP](buy-csp-vsts.md).

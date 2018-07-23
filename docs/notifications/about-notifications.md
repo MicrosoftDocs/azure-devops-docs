@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2017'
 
 **VSTS | TFS 2018 | TFS 2017**
 
-Notifications help you and your team stay informed about activity occuring within your Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) team projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds, you can be notified via email. For example, you can get notified whenever a bug that you opened is resolved or a work item is assigned to you. 
+Notifications help you and your team stay informed about activity occurring within your Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) team projects. With notifications, you are notified when changes occur to work items, code reviews, pull requests, source control files, and builds, you can be notified via email. For example, you can get notified whenever a bug that you opened is resolved or a work item is assigned to you. 
 
 You receive notifications based on rules or subscriptions. Subscriptions arise from these areas: 
 - Out of the box or default subscriptions
@@ -28,7 +28,7 @@ You can manage your notifications, which you access from your account menu. Othe
 
 - Team notifications, managed by a team administrator
 - Project notifications, manage by a member of the Project Administrators group
-- Account/collection-level notifications, managed by a member of the Project collection Administartors group
+- Account/collection-level notifications, managed by a member of the Project collection Administrators group
 
 ## Preferred email address
 

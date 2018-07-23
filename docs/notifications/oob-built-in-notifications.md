@@ -67,7 +67,7 @@ You can create subscriptions using the following templates for yourself, a team,
 |Code (Git)| A pull request is created or updated |
 |Code (TFVC)| Code is checked in |
 |Code (TFVC)| Code is checked in with a policy override |
-|Code (TFVC)| A filewith a specific extension is checked in |
+|Code (TFVC)| A file with a specific extension is checked in |
 |Code (TFVC)| A file under a specific path is checked in |
 |Code (TFVC)| A code review I am working on changes |
 |Work | A work item I created is changed |
