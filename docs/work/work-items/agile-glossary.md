@@ -47,7 +47,7 @@ A configurable view that displays work from multiple teams and projects laid out
 
 ## Favorite 
 
-A method for tagging an object to support quick navigation by yourself or other team members. You can tag work item queries and build definitions as personal and team favorites. Other objects you can favorite for youself only include code branches, delivery plans, test plans, and teams or team projects. Learn more: [Set personal or team favorites](../../project/navigation/set-favorites.md). 
+A method for tagging an object to support quick navigation by yourself or other team members. You can tag work item queries and build definitions as personal and team favorites. Other objects you can favorite for yourself only include code branches, delivery plans, test plans, and teams or team projects. Learn more: [Set personal or team favorites](../../project/navigation/set-favorites.md). 
 
 ## Field 
 Supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can query and generate charts to view status and trends. Your team project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](guidance/work-item-field.md).   

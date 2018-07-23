@@ -47,7 +47,7 @@ to open up the menu, and find **Apps and integrations**:
 1. Paste the web hook URL from the Slack integration that you created and click Finish.
 <img alt="Action dialog box with the web hook URL" src="./_img/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-1. Now, when the event you configured happens in your project, a notification will apear in your team's Slack channel.
+1. Now, when the event you configured happens in your project, a notification will appear in your team's Slack channel.
 <img alt="General channel with a real pull request notification" src="./_img/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 ## Pricing

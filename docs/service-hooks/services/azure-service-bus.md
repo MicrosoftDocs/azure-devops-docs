@@ -91,7 +91,7 @@ You can verify this in your application or service.
 
    <img alt="Azure Service Bus Topic" src="./_img/azure-service-bus/topics.png" style="border: 1px solid #CCCCCC" />
 
-2. Create or modify your app's code to recieve
+2. Create or modify your app's code to receive
 VSTS messages using a Azure Service Bus topic.
 For details, go [here](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions).
 
@@ -143,7 +143,7 @@ For details, go [here](/azure/notification-hubs/).
  
    For details about the subscription wizard, go [here](../index.md).
 
-   <img alt="Add a sevice hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add a service hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
 5. Pick and configure the VSTS event.
 

@@ -55,7 +55,7 @@ for pricing related to their services.
 
 ## Q & A
 
-<!-- BEGINSECTON class="m-qanda" -->
+<!-- BEGINSECTION class="m-qanda" -->
 
 ####Q: Can I programmatically create subscriptions?
 

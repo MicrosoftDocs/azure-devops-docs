@@ -67,7 +67,7 @@ The new web form is only available from TFS 2017 and later versions.
 # [Old web form](#tab/old-web-form)
 
 ::: moniker range=">= tfs-2017"
-The old web form is only availble for TFS 2017 and earlier versions. 
+The old web form is only available for TFS 2017 and earlier versions. 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items-tfs.md). 

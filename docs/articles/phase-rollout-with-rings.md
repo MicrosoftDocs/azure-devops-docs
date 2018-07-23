@@ -176,7 +176,7 @@ Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to s
 ##Reference information
 * [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
 * [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
-* [DevOps @ MIcrosoft](https://aka.ms/devops)
+* [DevOps @ Microsoft](https://aka.ms/devops)
 
 > Authors: Josh Garverick, Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  
