@@ -3,7 +3,7 @@ title: Make your project public or private
 titleSuffix: VSTS Public Project 
 description: Switch your project from private to public or from public to private 
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge

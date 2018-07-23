@@ -3,7 +3,7 @@ title: View a project page or dashboard
 titleSuffix: VSTS Public Project
 description: View a project home page or dashboard 
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge

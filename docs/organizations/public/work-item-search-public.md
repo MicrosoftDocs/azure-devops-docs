@@ -3,7 +3,7 @@ title: Search for work items in a public project
 titleSuffix: VSTS Public Project
 description: Use Work Item Search to search across all work item fields over one or more public projects  
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: ahomer

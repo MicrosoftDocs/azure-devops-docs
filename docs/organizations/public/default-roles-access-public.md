@@ -3,7 +3,7 @@ title: Default roles & access for public projects
 titleSuffix: VSTS Public Project
 description: Overview of public project user roles and access
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
