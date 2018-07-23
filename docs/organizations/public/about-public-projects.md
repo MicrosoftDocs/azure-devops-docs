@@ -3,7 +3,7 @@ title: What is a public project?
 titleSuffix: VSTS Public Project
 description: Understand the benefits of creating a public project, provide anonymous users ability to view your projects
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.manager: douge
 ms.author: kaelli
