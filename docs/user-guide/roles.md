@@ -109,7 +109,7 @@ Responsible for project level settings, including:
 
 ### Project collection administrators
 
-Responsible for account or collection-level settings. These include:
+Responsible for organization or collection-level settings. These include:
 
 - Manage billing  
 - Add and manage team projects    
@@ -117,7 +117,7 @@ Responsible for account or collection-level settings. These include:
 - Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Account Management](../organizations/accounts/account-management.md). 
+To get started, see [Organization Management](../organizations/accounts/organization-management.md). 
 
  
 ### TFS administrators

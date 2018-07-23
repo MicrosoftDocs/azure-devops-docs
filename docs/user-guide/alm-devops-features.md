@@ -84,7 +84,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Access levels</b></p>
 <p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
-- [Manage users (VSTS)](../organizations/accounts/add-account-users-from-user-hub.md)   
+- [Manage users (VSTS)](../organizations/accounts/add-organization-users-from-user-hub.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
 <p><b>Permissions</b></p>
@@ -1388,7 +1388,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Share dashboards with stakeholders</b></p>
-<p>Grant non-licensed users access as Stakeholders ([VSTS](../organizations/accounts/add-account-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
+<p>Grant non-licensed users access as Stakeholders ([VSTS](../organizations/accounts/add-organization-users-from-user-hub.md) | [TFS](../organizations/security/change-access-levels.md)) so they can view progress, run queries, and contribute ideas.  </p>
 
 <p><b>Velocity charts</b></p>
 <p>[Team velocity](../report/dashboards/team-velocity.md) tracks the total estimated effort (story points or size) of backlog items (user stories or requirements) completed or still in progress within each sprint. </p>
@@ -2091,7 +2091,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Account hub </b></p>
-<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](account-home-pages.md). </p>
+<p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [account hub](organization-home-pages.md). </p>
 
 <p><b>Your profile and preferences</b></p>
 <p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
@@ -2157,7 +2157,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Collection-project-team structure</b></p>
 <p>The [collection-project-team structure](work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)
+![Single collection-project-team conceptual image](_img/web-portal-organization-project-team-concept.png)
 <br/>
 
 <p><b>My favorites</b></p>
@@ -2613,7 +2613,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <p><b>Collection-project-team structure</b></p>
 <p>The [collection-project-team structure](work-web-portal.md#collection-project-team-structure) provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level.</p>
-![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)
+![Single collection-project-team conceptual image](_img/web-portal-organization-project-team-concept.png)
 <br/>
 
 <p><b>Change the process (VSTS) </b></p>
@@ -2624,7 +2624,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>View your work across teams and team projects (VSTS)</b></p>
-<p>From your [account hub](account-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
+<p>From your [account hub](organization-home-pages.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
 
 <p><b>Customize a team project (TFS) </b></p>
 <p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../work/customize/customize-work.md).  </p>

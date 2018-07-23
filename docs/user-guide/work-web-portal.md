@@ -20,9 +20,9 @@ monikerRange: '>= tfs-2013'
 
 The web portal provides support for teams to collaborate through the planning, development, and release cycles. You use the web portal to perform both software development and administrative tasks.  
 
-You can manage source code, plan and track work, define builds, run tests, and manage releases. The web portal connects you to the team project defined for an account in Visual Studio Team Services (VSTS) or within an on-premises Team Foundation Server (TFS). 
+You can manage source code, plan and track work, define builds, run tests, and manage releases. The web portal connects you to the team project defined for an organization in Visual Studio Team Services (VSTS) or within an on-premises Team Foundation Server (TFS). 
 
-If you don't have a team project yet, create one in [VSTS](../organizations/accounts/create-account-msa-or-work-student.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) or set one up in an [on-premises TFS](../organizations/projects/create-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
+If you don't have a team project yet, create one in [VSTS](../organizations/accounts/create-organization-msa-or-work-student.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) or set one up in an [on-premises TFS](../organizations/projects/create-project.md). If you don't have access to the team project, [get invited to the team](../work/scale/multiple-teams.md#add-team-members).
 
 >[!NOTE]  
 >The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTS or your on-premises TFS and [options that you or your admin have enabled](../project/navigation/preview-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json). However, the basic functionality available to you remains the same unless explicitly mentioned.  
@@ -36,7 +36,7 @@ If you don't have a team project yet, create one in [VSTS](../organizations/acco
 To get started, from a [supported web browser](/tfs/server/compatibility#browsers) enter the following URL:
 
 ::: moniker range="vsts"
-<pre><code>https://<i>AccountName</i>.visualstudio.com/DefaultCollection/<i>ProjectName</i></code></pre>
+<pre><code>https://<i>OrganizationName</i>.visualstudio.com/DefaultCollection/<i>ProjectName</i></code></pre>
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013"
@@ -60,23 +60,23 @@ There are three main navigational concepts to understand. The first is the colle
 
 ### Collection-project-team structure
 
-When you connect to VSTS or an on-premises TFS, you connect to an account or team project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system.
+When you connect to VSTS or an on-premises TFS, you connect to an organization or project collection. Within that collection, one or more team projects may be defined. At a minimum, at least one team project must be created in order to use the system.
 
 When you create your team project, a team of the same name is automatically created. For small teams, this is sufficient.  
 
-However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or team projects. These can be created within the single account or collection.
+However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or team projects. These can be created within the single organization or collection.
 
 <table width="100%">
 <tbody valign="top">
 <tr>
 <td width="40%">
-**Single team project, team defined within an account/collection**  
-![Single collection-project-team conceptual image](_img/web-portal-account-project-team-concept.png)  
+**Single team project, team defined within an organization/collection**  
+![Single collection-project-team conceptual image](_img/web-portal-organization-project-team-concept.png)  
 </td>
 
 <td width="60%">
-**Multiple team projects and teams defined within an account/collection**   
-![Scaled collection-project-team conceptual image](_img/web-portal-account-project-team-scale-concept.png)  
+**Multiple team projects and teams defined within an organization/collection**   
+![Scaled collection-project-team conceptual image](_img/web-portal-organization-project-team-scale-concept.png)  
 
 </td>
 </tr>
@@ -127,7 +127,7 @@ Click any hub to open that hub. Hover your mouse over a hub to access a drop-dow
  
 Click any hub to open that hub. Hover your mouse over a hub to access a drop-down menu of pages and other options for that hub. To access administrative options, click the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon or choose the admin level you want from the drop-down menu.  
 
-<img src="_img/wwp-user-context-tfs-2017-1.png" alt="VSTS-Account Landing Off, User context hubs" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/wwp-user-context-tfs-2017-1.png" alt="VSTS Organization Landing Off, User context hubs" style="border: 1px solid #CCCCCC;" /> 
 
 -->
 
@@ -146,25 +146,25 @@ Click any hub to open that hub. Then, click a page within the hub to open that p
 <a id="admin-context">  </a>
 
 **Administrative context**  
-You use the administrative context to set team, team project, and account or collection settings. The hubs and pages available change based on what level of administrative context you're in. 
+You use the administrative context to set team, team project, and organization or collection settings. The hubs and pages available change based on what level of administrative context you're in. 
 
-To learn more about each administrative context level, see the [Administrative context and team, team project, and account/collection settings](#administrative-context) later in this topic.
+To learn more about each administrative context level, see the [Administrative context and team, team project, and organization/collection settings](#administrative-context) later in this topic.
 
 <a id="user-focused-features">  </a>
 
 ## User-focused features
 
-Several features display information based on the logged-in user account or the selected team context. First off, users can [set their preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) through their profile or account menu:
+Several features display information based on the logged-in user organization or the selected team context. First off, users can [set their preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) through their profile or organization menu:
 
-<img src="../organizations/accounts/_img/organization-prefs/open-profile-team-services.png" alt="VSTS, My Profile link on Account menu" style="border: 1px solid #CCCCCC;" />   
+<img src="../organizations/accounts/_img/organization-prefs/open-profile-team-services.png" alt="VSTS, My Profile link on Organization menu" style="border: 1px solid #CCCCCC;" />   
 
 In addition, they have access to special queries&mdash;Assigned to me query, Followed work items, and more&mdash; dashboard widget such as the Assigned to me widget, and the ability to save favorites under a **My favorites** folder. Here's an example of the Assigned to me widget that you can add to a dashboard. 
 
-<img src="_img/web-portal-assigned-to-me-widget.png" alt="VSTS, web portal, user profile/account menu" style="border: 1px solid #CCCCCC;" /> 
+<img src="_img/web-portal-assigned-to-me-widget.png" alt="VSTS, web portal, user profile/organization menu" style="border: 1px solid #CCCCCC;" /> 
 
 
 >[!NOTE]  
->If you work in VSTS, you can also use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).     
+>If you work in VSTS, you can also use your organization hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your organization hub](organization-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).     
 
 
 <a id="team-scoped-features">  </a>
@@ -198,7 +198,7 @@ The **Home** or **Dashboards** hub supports a configurable Welcome page and dash
 > [!div class="mx-tdBreakAll"]
 > |[Home or Dashboards](../report/dashboards/overview.md) |[Work](../work/work-items/index.md)|
 > |-------------|----------|
-> |- [Account hub](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Project vision and status page](../project/wiki/project-vision-status.md)<br/>- [Project welcome page](../project/wiki/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Overview (view/edit default dashboard)](../report/dashboards/dashboards.md)<br/>- >[Add/modify dashboards](../report/dashboards/dashboards.md) |- Backlogs: [Create your backlog](../work/backlogs/create-your-backlog.md)  &#124; [Organize backlogs](../work/backlogs/organize-backlog.md) &#124; [Plan sprints](../work/scrum/assign-work-sprint.md)<br/>- Boards: [Kanban board](../work/kanban/kanban-basics.md) &#124; [Features and epics](../work/kanban/kanban-epics-features-stories.md) &#124;  [Cumulative flow chart](../report/dashboards/cumulative-flow.md)<br/>- Boards: [Add task checklists](../work/kanban/add-task-checklists.md) &#124; [Task board](../work/scrum/task-board.md)<br/>- Queries: [Run/define queries](../report/dashboards/cumulative-flow.md) &#124; [Add work items](../work/backlogs/add-work-items.md)  &#124; [Manage bugs](../work/backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) |
+> |- [Organization hub](organization-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Project vision and status page](../project/wiki/project-vision-status.md)<br/>- [Project welcome page](../project/wiki/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)<br/>- [Overview (view/edit default dashboard)](../report/dashboards/dashboards.md)<br/>- >[Add/modify dashboards](../report/dashboards/dashboards.md) |- Backlogs: [Create your backlog](../work/backlogs/create-your-backlog.md)  &#124; [Organize backlogs](../work/backlogs/organize-backlog.md) &#124; [Plan sprints](../work/scrum/assign-work-sprint.md)<br/>- Boards: [Kanban board](../work/kanban/kanban-basics.md) &#124; [Features and epics](../work/kanban/kanban-epics-features-stories.md) &#124;  [Cumulative flow chart](../report/dashboards/cumulative-flow.md)<br/>- Boards: [Add task checklists](../work/kanban/add-task-checklists.md) &#124; [Task board](../work/scrum/task-board.md)<br/>- Queries: [Run/define queries](../report/dashboards/cumulative-flow.md) &#124; [Add work items](../work/backlogs/add-work-items.md)  &#124; [Manage bugs](../work/backlogs/manage-bugs.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json) |
 
 
 ### Source code control: Git and TFVC repositories
@@ -223,7 +223,7 @@ The **Build & Release** hub supports defining and managing builds and releases t
 
 
 <a id="administrative-context">  </a>
-## Administrative context and team, team project, and account/collection settings
+## Administrative context and team, team project, and organization/collection settings
 
 From a user context, open the admin context by clicking the ![gear icon](_img/work-tfs-web-portal/IC623347.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.
 
@@ -289,9 +289,9 @@ You must be a member of the listed administrator group or role to perform the ta
 > |Required membership: [Team administrator role](../work/scale/add-team-administrator.md)<br/><br/>- [Overview: Add team members](../work/scale/multiple-teams.md)  &#124; [Add team admins](../work/scale/add-team-administrator.md)<br/>- [Select backlog levels](../work/customize/select-backlog-navigation-levels.md) &#124; [Set working days](../work/scale/capacity-planning.md)  &#124; [Working with bugs](../work/customize/show-bugs-on-backlog.md)<br/>- [Work/Iterations & Areas (team defaults)](../work/scale/set-team-defaults.md)<br/>- [Work/Templates](../work/backlogs/work-item-template.md)<br/>- [Security (manage team-level permissions)](../work/scale/team-administrator-permissions.md)<br/>- [Notifications](../notifications/manage-team-notifications.md)<br/><br/>For a complete overview of all team assets that you<br/>can configure, see  [Manage team assets](../work/scale/manage-team-assets.md) |Required membership:  [Project Administrators](../security/set-project-collection-level-permissions.md)<br/><br/>-  [Overview: Add teams](../work/scale/multiple-teams.md)<br/>- [Work/Iterations & Areas (project-wide)](../work/customize/set-area-paths.md)<br/>- [Security (manage project-level permissions)](../organizations/security/permissions.md#team-project-level-permissions)<br/>- [Notifications](../notifications/manage-team-notifications.md)<br/>- [Version Control (manage repository permissions)](../organizations/security/permissions.md#git-repository)<br/>- [Agent queues](../pipelines/agents/pools-queues.md)<br/>- [Service hooks](../service-hooks/services/webhooks.md)<br/>- [Services](../pipelines/library/service-endpoints.md)<br/>- [Test (manage test retention policies](../test/how-long-to-keep-test-results.md) 
 
 > [!div class="mx-tdBreakAll"]
-> |Account settings  | 
+> |Organization settings  | 
 > |-------------|----------| 
-> |Required membership: [Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/><br/>- [Overview: Create team projects](../organizations/projects/create-project.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)  &#124; [Rename team project](../organizations/projects/rename-project.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)<br/>[Delete team project](../organizations/projects/delete-project.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) &#124; [Change process](../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)<br/>- [Settings: Set account preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) &#124; [Change application access policies](../organizations/accounts/change-application-access-policies-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)<br/>[Change account owner](../organizations/accounts/change-account-ownership-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) &#124; [Delete your account](../organizations/accounts/delete-your-vsts-account.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) &#124; [Recover your account](../organizations/accounts/recover-your-vsts-account.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)<br/>- [Security (manage collection-level permissions)](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- [Process (customize work tracking)](../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)<br/>- [Build (manage build policies)](../pipelines/policies/retention.md)<br/>- [Agent pools (manage build agents)](../pipelines/agents/pools-queues.md) <br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md) |  
+> |Required membership: [Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/><br/>- [Overview: Create team projects](../organizations/projects/create-project.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)  &#124; [Rename team project](../organizations/projects/rename-project.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)<br/>[Delete team project](../organizations/projects/delete-project.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) &#124; [Change process](../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)<br/>- [Settings: Set organization preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) &#124; [Change application access policies](../organizations/accounts/change-application-access-policies-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)<br/>[Change organization owner](../organizations/accounts/change-organization-ownership-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) &#124; [Delete your organization](../organizations/accounts/delete-your-vsts-organization.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json) &#124; [Recover your organization](../organizations/accounts/recover-your-vsts-organization.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)<br/>- [Security (manage collection-level permissions)](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- [Process (customize work tracking)](../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)<br/>- [Build (manage build policies)](../pipelines/policies/retention.md)<br/>- [Agent pools (manage build agents)](../pipelines/agents/pools-queues.md) <br/>- [Extensions (install/manage extensions)](../marketplace/install-vsts-extension.md) |  
 > 
 ::: moniker-end
 
@@ -323,7 +323,7 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 Additional resources you may find of interest:
 
-- [Work effectively from your account home page](account-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Work effectively from your organization home page](organization-home-pages.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Connect to team projects](../organizations/projects/connect-to-projects.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
 - [Work in Team Explorer](work-team-explorer.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
 - [Troubleshoot connection](troubleshoot-connection.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)  
@@ -349,25 +349,25 @@ The admin project setting hubs appear. While the hub names are similar to those 
 
 <img src="_img/web-portal-admin-project-settings-new-nav.png" alt="Web portal, new nav, project admin setting" style="border: 1px solid #CCCCCC;" />    
 
-#### Admin account settings 
-To open the admin account settings, choose the Account settings option from the project/team menu.
+#### Admin organization settings 
+To open the admin organization settings, choose the Organization settings option from the project/team menu.
 
-![Web portal, new nav, open account settings](_img/web-portal-open-account-settings-new-nav.png)    
+![Web portal, new nav, open organization settings](_img/web-portal-open-organization-settings-new-nav.png)    
 
-The admin account setting hubs appear.
+The admin organization setting hubs appear.
 
-<img src="_img/web-portal-admin-account-settings-new-nav.png" alt="Web portal, new nav, account admin settings" style="border: 1px solid #CCCCCC;" />  
+<img src="_img/web-portal-admin-organization-settings-new-nav.png" alt="Web portal, new nav, organization admin settings" style="border: 1px solid #CCCCCC;" />  
 
 To return to a team or project user context, select the team or project from the project/team menu.
 -->
 
-### User accounts and licensing  
+### User organizations and licensing  
 
 ::: moniker range="vsts"
 
-To connect to the web portal, you need your user account added to the team project. This is typically done by the [account owner](../organizations/accounts/add-account-users-from-user-hub.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
+To connect to the web portal, you need your organization added to the project. This is typically done by the [organization owner](../organizations/accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
 
-Five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). Find out more about licensing from [VSTS pricing](https://visualstudio.microsoft.com/team-services/pricing/).
+Five organization users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../billing/buy-basic-access-add-users.md). Find out more about licensing from [VSTS pricing](https://visualstudio.microsoft.com/team-services/pricing/).
 
 ::: moniker-end
 
@@ -423,7 +423,7 @@ Although you can access source code, work items, and builds from both clients, s
 <li><p>[Team rooms](../notifications/collaborate-in-a-team-room.md)</p></li>
 <li><p>[Request feedback](../project/feedback/get-feedback.md)</p></li>
 <li><p>Web-based Test Management</p></li>
-<li><p>Administration pages to administer accounts, team projects, and teams</p></li>
+<li><p>Administration pages to administer organizations, projects, and teams</p></li>
 </ul></td>
 <td><ul>
 <li><p>Task specific interfaces that integrate with Git and TFVC, such as:

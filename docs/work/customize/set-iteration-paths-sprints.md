@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 ms.date: 03/20/2018
 ---
@@ -25,7 +26,7 @@ You add iteration paths under this root. To understand how the system uses area 
 ## Prerequisites
 <a name="permissions"></a>
 ::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../organizations/accounts/add-account-users-from-user-hub.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../organizations/accounts/add-organization-users-from-user-hub.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 * You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../organizations/projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 

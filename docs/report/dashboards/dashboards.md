@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
 ms.date: 03/27/2018
@@ -55,8 +56,8 @@ Open a browser window and choose the **Dashboards** hub.
 <!---The URL follows this pattern: 
 - VSTS: ```https://{account name}.visualstudio.com/{project name}/_backlogs```  
 - Team Foundation Server (on-premises): ```http://{server}:8080/tfs/DefaultCollection/{project name}/_backlogs```  
--->
-If you don't see the team or team project you want, click the ![project icon](../../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/account-home-pages.md).    
+-->organization-home-pages.md
+If you don't see the team or team project you want, click the ![project icon](../../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/organization-home-pages.md).    
 ::: moniker-end
 
 

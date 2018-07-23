@@ -24,7 +24,7 @@ You add another project to establish a repository for source code and a place fo
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]
 > If you don't want to manage an on-premises server, you can 
-[sign up for VSTS and create a project](../accounts/create-account-msa-or-work-student.md). 
+[sign up for VSTS and create a project](../accounts/create-organization-msa-or-work-student.md). 
 ::: moniker-end
 
 If you have a project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../git/gitquickstart.md).
