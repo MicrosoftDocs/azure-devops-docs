@@ -3,7 +3,7 @@ title: Rate and service limits on public projects
 titleSuffix: VSTS Public Project
 description: Terms of service  
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge

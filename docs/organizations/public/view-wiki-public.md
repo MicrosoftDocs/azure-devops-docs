@@ -3,7 +3,7 @@ title: View and filter project wiki pages
 titleSuffix: VSTS Public Project
 description: View public project wikis 
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge
