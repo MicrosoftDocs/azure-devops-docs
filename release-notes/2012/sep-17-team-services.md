@@ -30,7 +30,7 @@ Another useful update in this sprint is ability to collapse the left panel on in
 
 ![Backlog page with the left panel expanded](_img/9_17_03.png)
 
-![Backlog page with the left panel collasped](_img/9_17_04.png)
+![Backlog page with the left panel collapsed](_img/9_17_04.png)
 
 ##Continued UX updates
 
