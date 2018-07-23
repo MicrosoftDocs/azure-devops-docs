@@ -149,7 +149,7 @@ $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 <a name="oauth"></a>
 ## Use the OAuth token to access the REST API
 
-To enable your script to use the build process OAuth token, go to the **Options** tab of the build pipeline and select **Allow Scripts to Access OAuth Token**.
+To enable your script to use the build process OAuth token, go to the **Agent Phase** of the build pipeline and under **Additional Options** section, select **Allow Scripts to Access OAuth Token**.
 
 After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [VSTS REST API](https://visualstudio.microsoft.com/en-us/integrate/api/overview). For example:
 
