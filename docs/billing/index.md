@@ -49,15 +49,15 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ## Step-by-step tutorials
 
-* [Change the Azure AD for your VSTS account](change-azure-subscription.md)
+* [Change the Azure AD for your VSTS organization](change-azure-subscription.md)
 
 ## How-to guides
 
 Manage billing
 
 * [Add a backup billing manager](add-backup-billing-managers.md)
-* [Change the Azure subscription your VSTS account uses for billing](change-azure-subscription.md)
-* [Change the number of paid users on your VSTS account](reduce-cancel-paid-vsts-users.md)
+* [Change the Azure subscription your VSTS organization uses for billing](change-azure-subscription.md)
+* [Change the number of paid users on your VSTS organization](reduce-cancel-paid-vsts-users.md)
 * [Billing FAQ](vsts-billing-faq.md)
 
 Manage Marketplace extensions
@@ -90,7 +90,7 @@ Guidance for Cloud Solution Providers
 
 * [New User Guide](https://docs.microsoft.com/en-us/vsts/user-guide/?view=vsts)
 
-* [Account Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/index?view=vsts)
+* [Organization Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/index?view=vsts)
 
 * [TFS Server Administration documentation](https://docs.microsoft.com/en-us/tfs/server/index?view=vsts)
 

@@ -13,12 +13,11 @@ monikerRange: 'vsts'
 ---
 
 
-# Sign up for a free VSTS account and invite others to join your team
+# Sign up for a free VSTS organization and invite others to join your team
 
 **VSTS**
  
-Sign up for a VSTS 
-account to upload and share code in a free unlimited private 
+Sign up for a VSTS organization to upload and share code in a free unlimited private 
 Git repository. You can then connect to your favorite development tool like Eclipse, Xcode, 
 Visual Studio, IntelliJ, or Android Studio to work on apps anytime, anywhere. 
 
@@ -44,18 +43,18 @@ Then enter your password, and finish signing in.
 	If you don't have a Microsoft account, 
 	you can create a Microsoft account at this time. 
 
-0.	Enter a name for your account. The name you enter cannot contain spaces or special characters (such as / \ [ ] : | < > + = ; ? or &#42;), cannot end in a period or comma, must be less than 256 characters, and must be unique within the VSTS namespace. 
+0.	Enter a name for your organization. The name you enter cannot contain spaces or special characters (such as / \ [ ] : | < > + = ; ? or &#42;), cannot end in a period or comma, must be less than 256 characters, and must be unique within the VSTS namespace. 
 
 	To manage your code, choose Git or Team Foundation Version Control.
 
-	<img src="../organizations/accounts/_img/sign-up-visual-studio-team-services/create-team-services-organization.png" alt="Name your VSTS account, choose your version control" style="border: 1px solid #C3C3C3;" />
+	<img src="../organizations/accounts/_img/sign-up-visual-studio-team-services/create-team-services-organization.png" alt="Name your VSTS organization, choose your version control" style="border: 1px solid #C3C3C3;" />
 
 	Choose Git for distributed source control and TFVC for centralized source control. To learn more, review [Git](../git/overview.md) 
 	or [Team Foundation Version Control](../tfvc/overview.md).
 
-0.	(Optional) Click **Change details** to change default assignments. Otherwise, click **Continue** to confirm to initiate your account creation.
+0.	(Optional) Click **Change details** to change default assignments. Otherwise, click **Continue** to confirm to initiate your organization creation.
 
-	<img src="../organizations/accounts/_img/sign-up-visual-studio-team-services/check-organization-location-standard.png" alt="Rename team project, change account location, or select another process" style="border: 2px solid #C3C3C3;" />
+	<img src="../organizations/accounts/_img/sign-up-visual-studio-team-services/check-organization-location-standard.png" alt="Rename team project, change organization location, or select another process" style="border: 2px solid #C3C3C3;" />
 
 	To change default assignments, use this guidance:
 
@@ -63,38 +62,38 @@ Then enter your password, and finish signing in.
    - **Organize work using**: The default work tracking process is set to **Agile**. If you want to work with Scrum or CMMI processes, then select those now.  You can't change the process after the team project is created. (To learn more, see [Choose process](../work/work-items/guidance/choose-process.md). 
    - **Host your projects in**: You can choose between [several locations for where you want your data hosted](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location).
  
-	<img src="_img/sign-up/change-details.png" alt="Choose details for your VSTS account" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/sign-up/change-details.png" alt="Choose details for your VSTS organization" style="border: 2px solid #C3C3C3;" />
 
-0.	By default, VSTS creates your first team project as "MyFirstProject". After VSTS creates your account and team project, 
+0.	By default, VSTS creates your first team project as "MyFirstProject". After VSTS creates your organization and team project, 
 you can invite others to join your project, add code, start planning and tracking using work items, or rename your team project. 
 
 	<img src="../organizations/accounts/_img/_shared/team-project-created.png" alt="Add code or work items" style="border: 2px solid #C3C3C3;" />
 
-	Congratulations, you're now a VSTS account owner! 
+	Congratulations, you're now a VSTS organization owner! 
 
-	To sign in to your account at any time, go to ```https://{youraccount}.visualstudio.com```.
+	To sign in to your organization at any time, go to ```https://{yourorganization}.visualstudio.com```.
 
 <a id="invite-others" />
 
 ## Invite others to join your team 
 
-You provide others access to your account by adding their email address. 
+You provide others access to your organization by adding their email address. 
 
-0. Turn on **Streamlined User Management** for your account. 
+0. Turn on **Streamlined User Management** for your organization. 
 
 	> [!NOTE] 
 	> **Streamlined User Management** is in preview. Turning it on now shows you how to enable preview features, and also provides you access to the enhanced user interface for managing users. 
 
-	a. From your user account menu (you'll see a letter or an image of your profile), click the **Preview features** option.   
-	<!--- <img src="_img/invite-users-open-preview-features.png" alt="Click on your user account menu, choose Preview Features" style="border: 2px solid #C3C3C3;" /> -->
+	a. From your user organization menu (you'll see a letter or an image of your profile), click the **Preview features** option.   
+	<!--- <img src="_img/invite-users-open-preview-features.png" alt="Click on your user organization menu, choose Preview Features" style="border: 2px solid #C3C3C3;" /> -->
 	<img src="../_shared/_img/preview-features-open.png" alt="Open Preview Features" style="border: 2px solid #C3C3C3;" /> 
 
-	b. In the first drop-down menu, choose the option for all accounts. 
+	b. In the first drop-down menu, choose the option for all organizations. 
 
-	<img src="../project/navigation/_img/preview-features-admin-s117.png" alt="Preview features options for the account" style="border: 1px solid #CCCCCC;" /> 
+	<img src="../project/navigation/_img/preview-features-admin-s117.png" alt="Preview features options for the organization" style="border: 1px solid #CCCCCC;" /> 
 
 	>[!TIP]  
-	>If you don't see the user/account menu option, then you aren't an account administrator. 
+	>If you don't see the organization menu option, then you aren't an organization administrator. 
 
 	c. Enable the **Streamlined User Management** option. 
 
@@ -102,9 +101,9 @@ You provide others access to your account by adding their email address.
 
 	Click the close icon (![close-icon](../_img/icons/close-icon.png) to close the preview features dialog window. 
 
-0. Click ![gear icon](../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Account Settings** option
+0. Click ![gear icon](../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Organization Settings** option
  
-	![Open Account Settings](_img/sign-up/open-account-settings.png)
+	![Open Organization Settings](_img/sign-up/open-organization-settings.png)
 
 0. Then, click **Users** to open the Manage users page. Click **Add new users** to open the dialog. 
 
@@ -112,14 +111,14 @@ You provide others access to your account by adding their email address.
 
 0. Fill out the form. 
  
-	<img src="_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
+	<img src="_img/invite-users-add-user-dialog.png" alt="Web portal, organization admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
 
-	- **Users**: Enter the email address (Microsoft account address) for the user account. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.  
+	- **Users**: Enter the email address (Microsoft account address) for the user organization. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.  
 		> [!NOTE]   
 		> You must add email addresses for 
 		> ["personal" Microsoft accounts](https://www.microsoft.com/account) 
 		> unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
-		> to authenticates users and control account access.  
+		> to authenticates users and control organization access.  
 		> If your users don't have Microsoft accounts, 
 		> have them [sign up](https://signup.live.com/).  
 	- **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../organizations/security/access-levels.md). 
@@ -135,5 +134,5 @@ You provide others access to your account by adding their email address.
 > or 
 > [Plan and track work](plan-track-work.md) 
 
-For more information on managing users and account access, see [Add account users for VSTS](../organizations/accounts/add-account-users-from-user-hub.md).
+For more information on managing users and organization access, see [Add organization users for VSTS](../organizations/accounts/add-organization-users-from-user-hub.md).
  

@@ -7,7 +7,8 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2015'
 ms.date: 03/22/2017
 ---
@@ -165,8 +166,8 @@ You can change the repository used to support your project vision, including poi
 
 ## Related articles  
 
-- [Markdown guidance](../../project/wiki/markdown-guidance.md) 
-- [Work effectively from your account hub](../../user-guide/account-home-pages.md)
+- [Markdown guidance](../../project/wiki/markdown-guidance.morganization-home-pages.md
+- [Work effectively from your account hub](../../user-guide/organization-home-pages.md)
 
 
  

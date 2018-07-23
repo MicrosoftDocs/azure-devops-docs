@@ -34,7 +34,7 @@ Individual contributors can set their user preferences, enable select features t
 <tr>
 <td>**General**</td>
 <td><ul>
-<li>[Set account preferences](../accounts/account-preferences.md)</li>
+<li>[Set your preferences](set-your-preferences.md)</li> 
 <li>[Enable preview features](../../project/navigation/preview-features.md)</li>
 </ul></td>
 <td>For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md).</td>
@@ -152,7 +152,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <tr>
 <td>**Security**</td>
 <td><ul>
-<li>[Add user accounts to a project](../accounts/account-preferences.md)</li>
+<li>[Add users to a project](../security/add-users-team-project.md)</li>
 <li>[Change individual permissions, grant select access to specific functions](../security/change-individual-permissions.md)</li>
 <li>[Grant or restrict access to select features](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
@@ -246,7 +246,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all VSTS projects defined for an account or organization. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
-For an overview of managing your VSTS account, see [About account management](../accounts/account-management.md).
+For an overview of managing your VSTS account, see [About account management](../accounts/organization-management.md).
 
 
 <table>
@@ -266,15 +266,15 @@ For an overview of managing your VSTS account, see [About account management](..
 <tr>
 <td>**Overview, Account settings**</td>
 <td><ul>
-<li>Add and manage accounts: [change account owner](../accounts/change-account-ownership-vs.md), [Rename](../accounts/rename-vsts-account.md), [Delete](../../accounts/delete-your-vsts-account.md), [Recover](../accounts/recover-your-vsts-account.md)</li>
-<li>[Find or change your account location](../accounts/change-account-location.md)</li>
+<li>Add and manage accounts: [change account owner](../accounts/change-organization-ownership-vs.md), [Rename](../accounts/rename-vsts-organization.md), [Delete](../accounts/delete-your-vsts-organization.md), [Recover](../accounts/recover-your-vsts-organization.md)</li>
+<li>[Find or change your account location](../accounts/change-organization-location.md)</li>
 </ul></td>
 <td>From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects defined under your account.</td>
 </tr>
 <tr>
 <td>**Billing**</td>
 <td><ul>
-<li>[Set up billing](../../billing/set-up-billing-for-your-account-vs.md)</li>
+<li>[Set up billing](../../billing/set-up-billing-for-your-organization-vs.md)</li>
 <li>[Start free trials for paid features and extensions](../../billing/try-additional-features-vs.md)</li>
 <li>[Pay for users (Basic)](../../billing/buy-basic-access-add-users.md)</li>
 <li>[Buy CI/CD](../../billing/buy-more-build-vs.md)</li>
@@ -302,10 +302,10 @@ For an overview of managing your VSTS account, see [About account management](..
 <tr>
 <td>**Users**</td>
 <td><ul>
-<li>[Add users](../accounts/add-account-users-from-user-hub.md)</li>
+<li>[Add users](../accounts/add-organization-users-from-user-hub.md)</li>
 <li>[Add external users](../accounts/add-external-user.md)</li>
 <li>[Manage user access levels](../accounts/manage-users-table-view.md)</li>
-<li>[Remove users](../accounts/delete-account-users.md)</li>
+<li>[Remove users](../accounts/delete-organization-users.md)</li>
 <li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
 </ul></td>
 <td>For large organizations with a sizable number of users, we recommend that you [manage user access through Azure Active Directory](../accounts/access-with-azure-ad.md). For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level **Users** page, you can also [export the set of users and their access levels](../security/export-users-audit-log.md).  </td>
@@ -317,7 +317,7 @@ For an overview of managing your VSTS account, see [About account management](..
 <li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
 <li>[Add administrators](../security/set-project-collection-level-permissions.md)</li>
 <li>[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups-vsts.md)</li>
-<li>[Connect to Azure Active Directory](../accounts/connect-account-to-aad.md)</li>
+<li>[Connect to Azure Active Directory](../accounts/connect-organization-to-aad.md)</li>
 <li>[Manage conditional access](../accounts/manage-conditional-access.md)</li>
 </ul></td>
 <td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>

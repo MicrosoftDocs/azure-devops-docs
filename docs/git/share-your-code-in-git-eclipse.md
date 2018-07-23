@@ -20,7 +20,7 @@ Share your Eclipse project with your team in a VSTS/TFS Git repo.
 
 ## Prerequisites
 
-* A VSTS account. If you don't have one, you can [sign up](../organizations/accounts/create-account-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
+* A VSTS account. If you don't have one, you can [sign up](../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 
 <a name="git"></a>
 

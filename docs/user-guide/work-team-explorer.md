@@ -86,7 +86,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 
 
 > [!IMPORTANT]  
-> From the Visual Studio plug-in, you can [Create a team project](../organizations/projects/create-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
+> From the Visual Studio plug-in, you can [Create a team project](../organizations/projects/create-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal/collection administration context. 
 
 
 
