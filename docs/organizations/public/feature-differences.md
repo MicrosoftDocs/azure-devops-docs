@@ -3,7 +3,7 @@ title: Differences and limitations for non-members
 titleSuffix: VSTS Public Project
 description: Differences and limitations for non-members
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.reviewer:
 ms.manager: douge

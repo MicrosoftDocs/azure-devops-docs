@@ -3,7 +3,7 @@ title: View and filter work items
 titleSuffix: VSTS Public Project
 description: View and filter work items using the work items page       
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid:
 ms.reviewer: 
 ms.manager: douge

@@ -3,7 +3,7 @@ title: Invite users to collaborate on your public project
 titleSuffix: VSTS Public Project  
 description: Invite others to contribute to you public project  
 ms.technology: devops-public-projects
-ms.prod: devops-alm
+ms.prod: devops
 ms.assetid: 
 ms.reviewer:
 ms.manager: douge
