@@ -548,7 +548,7 @@ for your app there. If you see data collected there, report your issue to
 **A**: This can happen because:
 
 * No apps are configured to push analytics data to Application Insights. See 
-  [Get started with Visual Studio Application Insights](https://azure.microsoft.com/en-in/documentation/articles/app-insights-get-started/).
+  [Get started with Visual Studio Application Insights](/azure/application-insights/app-insights-overview).
   Also check that you can see the apps in **Application Insights** in the 
   Azure portal, as shown here:
   
