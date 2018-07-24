@@ -100,7 +100,7 @@ You'll need to be a [project administrator](../../organizations/security/set-pro
 
 	Repeat this step for all teams and management areas.  
 
-2. In this next step, you want to move the areas paths associated with feature teams from a flat structure to a hierarchical structure. For details on this step, see [Set team default area paths](set-team-defaults.md#team-area-paths) 
+2. In this next step, you want to move the areas paths associated with feature teams from a flat structure to a hierarchical structure. For details on this step, see [Set team default area paths](../../organizations/settings/set-team-defaults.md#team-area-paths) 
 	<table>
 	<tbody valign="top">
 	<tr>
@@ -157,7 +157,7 @@ Here we've defined the start and end dates of the first 6 sprints corresponding 
 
 These next set of steps can be performed by a team administrator.  
 - [Add team members](multiple-teams.md#add-team-members)
-- [Select sprints for the team](../../organizations/settings/set-team-defaults.md#activate)
+- [Select sprints for the team](../../organizations/settings/../../organizations/settings/set-team-defaults.md#activate)
 - [Activate backlog levels](../customize/select-backlog-navigation-levels.md) 
 - [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md) 
 

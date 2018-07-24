@@ -7,8 +7,8 @@ ms.prod: devops
 ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
-monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
-ms.date: 03/22/2018
+monikerRange: '>= tfs-2017'
+ms.date: 07/21/2018
 ---
 
 <a id="set-permissions">  </a>
@@ -16,32 +16,24 @@ ms.date: 03/22/2018
 
 **VSTS | TFS 2018 | TFS 2017.1**
 
-<!---
-
->[!NOTE]  
->**Feature availability:**  For VSTS and TFS 2017.1 and later versions, you can set dashboard permissions. 
--->
-
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
 As a team admin you can set dashboard permissions for your team. As a member of the Project Administrators group, you can set dashboard permissions for all teams. 
 
 To learn more about adding and viewing dashboards, see [Add and manage dashboards](dashboards.md).   
 
 > [!TIP]    
-> If a user reports that they can't create or edit a team dashboard, and you've set the permissions to allow them to do so, check that they have been added as a member of the team. This includes adding them as a team member to the default team project team. For details, see [Add users to a team project or specific team](../../organizations/security/add-users-team-project.md). 
+> If a user reports that they can't create or edit a team dashboard, and you've set the permissions to allow them to do so, check that they have been added as a member of the team. This includes adding them as a team member to the default project team. For details, see [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). 
 
+::: moniker range="tfs-2017"
+> [!NOTE]  
+> The set dashboard permissions feature is available for TFS 2017.1 and later versions. 
 ::: moniker-end
-
-# [New Dashboards Experience](#tab/new-query-exp) 
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md). 
+By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for administrators. You can change the edit permissions for specific team dashboards. 
 
-By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the team project have view only permissions, except for administrators. You can change the edit permissions for specific team dashboards. 
-
-1. To change the permissions for a dashboard, open the dashboard and then click the ![gear icon](_img/icons/gear-icon.png) gear icon for the dashboard. 
+1. To change the permissions for a dashboard, open the dashboard and then choose the ![gear icon](_img/icons/gear-icon.png) gear icon for the dashboard. 
 
 	For example, here we open the Settings dialog for the Fabrikam Fiber team's Overview dashboard. 
 
@@ -64,23 +56,20 @@ By default, all team members have permissions to edit dashboards defined for the
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-The New Dashboard experience is only available from VSTS at this time. 
+::: moniker range=">= tfs-2017  <= tfs-2018"  
+By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the project have view only permissions, except for administrators. You can change the view, edit, and manage permissions for all team dashboards for members of your team. 
+
 ::: moniker-end
-
-
-# [Old Dashboards Experience](#tab/old-query-exp)  
-
-By default, all team members have permissions to edit dashboards defined for the team. All other valid users of the team project have view only permissions, except for administrators. You can change the view, edit, and manage permissions for all team dashboards for members of your team. 
 
 ::: moniker range="tfs-2017"
 
 > [!NOTE]   
-> To set the permissions, requires TFS 2017.1 or later version. For TFS 2017 and earlier versions, only team and project administrators can add and edit dashboards. 
+> Setting dashboard permissions requires TFS 2017.1 or later version. For TFS 2017 and earlier versions, only team and project administrators can add and edit dashboards. 
 
 ::: moniker-end
 
-1. To change the permissions for a dashboard, open the dashboard and then click the ![configure icon](_img/icons/configure-icon.png) wrench icon for the dashboard.
+::: moniker range=">= tfs-2017  <= tfs-2018"  
+1. To change the permissions for a dashboard, open the dashboard and then choose the ![configure icon](_img/icons/configure-icon.png) wrench icon for the dashboard.
 
 	For example, here we open the Manage Dashboards dialog for the Fabrikam Fiber Web team's Test dashboard. 
 
@@ -88,7 +77,7 @@ By default, all team members have permissions to edit dashboards defined for the
 
 2. Choose the **Permissions** tab and check those checkboxes to grant or restrict permissions to your team members to edit and manage your team dashboards. The default settings, as shown in the illustration, provide all team members permissions to edit and manage dashboards.  
 
-	::: moniker range="vsts || >= tfs-2018"  
+	::: moniker range="tfs-2018"  
 	> [!div class="mx-imgBorder"]
 	> ![Manage dashboards - permissions dialog, VSTS and TFS 2018](_img/dashboards-permissions.png)   
 	::: moniker-end  
@@ -101,15 +90,11 @@ By default, all team members have permissions to edit dashboards defined for the
 
 3. Choose **Save** to save your changes and dismiss the Settings dialog. 
 
----
+::: moniker-end
 
 
-## Related notes
+## Related articles
 
-- [Add users to a team project or specific team](../../organizations/security/add-users-team-project.md)
+- [Add users to a project or specific team](../../organizations/security/add-users-team-project.md)
 - [Add a team administrator](../../work/scale/add-team-administrator.md)
  
-
-<!---
-or add a user or group and set permissions for them. For an overview of how to do add users or groups, see [Add users to a team project or specific team](../../organizations/security/add-users-team-project.md).
--->

@@ -100,7 +100,7 @@ To get started, see [Manage team assets](../work/scale/manage-team-assets.md).
 
 Responsible for project level settings, including:
 
-- [Area paths](../work/customize/set-area-paths.md) and [Iteration paths](../work/customize/set-iteration-paths-sprints.md)
+- [Area paths](../organizations/settings/set-area-paths.md) and [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)
 - [Project permissions and repository security](../organizations/security/permissions.md)
 - [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
 - [Build agents, pools, and service endpoints](../pipelines/overview.md) 
@@ -109,7 +109,7 @@ Responsible for project level settings, including:
 
 ### Project collection administrators
 
-Responsible for account or collection-level settings. These include:
+Responsible for organization or collection-level settings. These include:
 
 - Manage billing  
 - Add and manage team projects    
@@ -117,7 +117,7 @@ Responsible for account or collection-level settings. These include:
 - Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Account Management](../organizations/accounts/account-management.md). 
+To get started, see [Organization Management](../organizations/accounts/organization-management.md). 
 
  
 ### TFS administrators

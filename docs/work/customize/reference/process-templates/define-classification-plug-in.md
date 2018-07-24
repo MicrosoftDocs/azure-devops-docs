@@ -18,15 +18,15 @@ ms.date: 09/08/2017
 
 Classifications facilitate tracking, grouping, and reporting on work based on useful categories, such as related product features and project milestones. You define areas to organize work items into logical, physical, or functional categories. You define iterations to group work items into milestones or time cycle categories. For example, a team could organize the product work into a client area, a server area, and an extensibility area. Iterations that you define determine how many times the team will repeat a particular set of major activities, such as plan, develop, and test.  
   
-The classifications that you define appear on the **Areas** and **Iterations** pages, as the following illustration shows and described in [Set project-level area paths](../../set-area-paths.md) and [Set project-level iteration paths](../../set-iteration-paths-sprints.md). You access this page from the administration web portal.  
+The classifications that you define appear on the **Areas** and **Iterations** pages, as the following illustration shows and described in [Set project-level area paths](../../../../organizations/settings/set-area-paths.md) and [Set project-level iteration paths](../../../../organizations/settings/set-iteration-paths-sprints.md). You access this page from the administration web portal.  
   
 [!INCLUDE [temp](../../../_shared/image-differences.md)]
 
 <img src="../../_img/mareas-work-areas-admin-page.png" alt="Areas, defaults defined for team project" style="border: 1px solid #C3C3C3;" /> 
 
-For an overview of using the web portal, see [Work in the web portal](../../../../user-guide/work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).  
+For an overview of using the web portal, see [Navigation basics](../../../../project/navigation/index.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).  
   
- After a team project has been created, you [modify the areas](../../set-area-paths.md) and [iterations](../../set-iteration-paths-sprints.md) from the web portal. You can also define permissions to control access to a project area or iteration.  
+ After a team project has been created, you [modify the areas](../../../../organizations/settings/set-area-paths.md) and [iterations](../../../../organizations/settings/set-iteration-paths-sprints.md) from the web portal. You can also define permissions to control access to a project area or iteration.  
   
  In addition to areas and iterations, you specify the mapping file for Microsoft Project to upload within the Classification plug-in and the process template property.  
   
@@ -149,7 +149,7 @@ The following example shows how to specify four iterations: Milestone 1, Milesto
 ##  <a name="elements"></a> Classification plug-in element reference  
  You specify the following  elements within a `taskXml` container element in the Classification plug-in file. , See [Define the tasks to process a plug-in](define-tasks-to-process-a-plug-in.md) for information about `taskXml`.  
   
- Define areas and iterations by specifying a tree path of nested nodes and children nodes. For more information, see [Customize your area and iteration paths](../../set-area-paths.md).  
+ Define areas and iterations by specifying a tree path of nested nodes and children nodes. For more information, see [Customize your area and iteration paths](../../../../organizations/settings/set-area-paths.md).  
   
 <table>
 <tr><th>Element</th><th>Description and syntax</th></tr>
@@ -206,6 +206,6 @@ Required child element of **properties**. Defines project-related data such as t
   
   
 ## Related articles 
-*	[Set project-level area paths](../../set-area-paths.md)  
-*	[Set project-level iteration paths](../../set-iteration-paths-sprints.md)  
+*	[Set project-level area paths](../../../../organizations/settings/set-area-paths.md)  
+*	[Set project-level iteration paths](../../../../organizations/settings/set-iteration-paths-sprints.md)  
  

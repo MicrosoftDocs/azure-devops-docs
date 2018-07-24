@@ -35,7 +35,7 @@ You can use the Bug Trends report in Office Excel to track the rate at which the
 -   Define Bugs, and specify their **Iteration** and **Area** paths.  
   
     > [!NOTE]
-    >  For information about how to define area and iteration paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 -   Update the **State** of each Bug as it is fixed, verified, and closed.  
   

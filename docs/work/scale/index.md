@@ -46,7 +46,7 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 ## How-to Guides
 - [Define a work item template](../backlogs/work-item-template.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 - [Configure team settings](manage-team-assets.md) 
-- [Set team defaults](set-team-defaults.md) 
+- [Set team defaults](../../organizations/settings/set-team-defaults.md) 
 - [Scaled Agile Framework](scaled-agile-framework.md)   
 
 
