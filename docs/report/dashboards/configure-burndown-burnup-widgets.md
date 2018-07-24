@@ -90,8 +90,8 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 1. Select the **Teams** you want to track.   
 	Select at least one **Project** and one **Team**.   
 	![Burndown Widget - Configuration - Select team](./_img/burndown-widget/burndownup-config-select-team.png)    
-	If you wish to track progress across teams, just add more teams using the team selector. You may also select teams from other projects.  
-	![Burndown Widget - Configuration - Select multple teams](./_img/burndown-widget/burndownup-config-select-multiple-teams.png)  
+	If you wish to track progress across teams, just add more teams using the team selector. You may also select teams from other team projects.  
+	![Burndown Widget - Configuration - Select multiple teams](./_img/burndown-widget/burndownup-config-select-multiple-teams.png)  
 	The Burndown chart will display the burndown of remaining work for all selected teams.   
 
    > [!NOTE]   
