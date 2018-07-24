@@ -71,5 +71,5 @@ After you've verified your customizations, you can now apply the inherited proce
 
 ## Related articles
 - [Supported upgrade operations when moving from Hosted XML process to an inherited process](upgrade-support-hosted-to-inherited.md)
-- [Upgrade a Hosted XML process to an Inheritance process](upgrade-hosted-to-inherited.md) 
+- [Clone a Hosted XML process to an Inheritance process](upgrade-hosted-to-inherited.md) 
 

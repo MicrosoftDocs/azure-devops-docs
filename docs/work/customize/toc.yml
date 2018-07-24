@@ -81,7 +81,7 @@
       items:
       - name: Supported upgrade operations
         href: ../../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
-      - name: Upgrade a Hosted XML process to Inheritance
+      - name: Clone a Hosted XML process to Inheritance
         href: ../../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Change a project from Hosted XML to Inheritance
         href: ../../organizations/settings/work/change-process-from-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
