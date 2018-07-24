@@ -130,7 +130,7 @@ with a callback that loads the grid control with the results.
 	Change this:
 
 	```javascript
-	// Initialize the grid control with two colums, "key" and "value"
+	// Initialize the grid control with two columns, "key" and "value"
     var dataSource = [];
     dataSource.push({key: "key", value: "value"});
 
