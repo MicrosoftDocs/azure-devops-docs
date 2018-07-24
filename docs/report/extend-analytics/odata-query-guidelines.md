@@ -204,7 +204,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
     groupby((DateSK), aggregate($count as Count))
 ```
 
-To learn more about aggregaations, see [Aggregate data](aggregated-data-analytics.md).
+To learn more about aggregations, see [Aggregate data](aggregated-data-analytics.md).
 
 <a id="restrict-aggregate-snapshot"> </a>
 ### ✔️ DO include `DateSK` or `DateValue` column in `groupby` clause when you aggregate over snapshot tables
