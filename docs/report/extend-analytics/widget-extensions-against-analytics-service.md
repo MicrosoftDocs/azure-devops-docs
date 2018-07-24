@@ -22,7 +22,7 @@ with the returned data. This documentation will show you how to do both.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-The following topics describe how to build an extension and a widet extension:  
+The following topics describe how to build an extension and a widget extension:  
 - [Overview of extensions for VSTS](../../extend/get-started/node.md)  
 - [Add a dashboard widget](../../extend/develop/add-dashboard-widget.md)  
  
