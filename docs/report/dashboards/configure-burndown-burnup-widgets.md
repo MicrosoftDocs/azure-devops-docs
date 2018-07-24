@@ -167,7 +167,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	The burndown chart uses the end date of each iteration to plot the remaining work for that iteration.
 
 	> [!NOTE]   
-	> The Average Burndown assumes that every iteration is the same length. It does not account for iterations that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first iteration is a full iteration, even if the length of time between **Start Date** and the first iteration's end date does not match your typical length of iteration. For best restuls, enter a **Start Date** that is the same as the first iteration's start date. 
+	> The Average Burndown assumes that every iteration is the same length. It does not account for iterations that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first iteration is a full iteration, even if the length of time between **Start Date** and the first iteration's end date does not match your typical length of iteration. For best results, enter a **Start Date** that is the same as the first iteration's start date. 
 
 	If you select to plot based on an iteration schedule, you will not be able to select **End Date**. The burndown assumes the **End Date** is the last iteration's end date.
 
