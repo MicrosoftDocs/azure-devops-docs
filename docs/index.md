@@ -271,7 +271,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
 
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
-                                        <li><a class="barLink" href="/vsts/organizations/accounts/index">Account Management (VSTS)</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/accounts/index">Organization Management (VSTS)</a></li>
                                         <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration (TFS)</a></li>
@@ -910,7 +910,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Search</h3>
-                                                    <p>Quickly find the code or work items you need to access across your account
+                                                    <p>Quickly find the code or work items you need to access across your organization
                                                         or collection.</p>
                                                 </div>
                                             </div>
@@ -954,8 +954,8 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Account Management</h3>
-                                                    <p>Setup and manage your account and configure key settings to support your
+                                                    <h3>Organization Management</h3>
+                                                    <p>Setup and manage your organization and configure key settings to support your
                                                         teams.</p>
                                                 </div>
                                             </div>

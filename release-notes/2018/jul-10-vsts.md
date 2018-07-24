@@ -49,6 +49,7 @@ Admin:
 
 - [Connect or disconnect Azure Active Directory as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
 - [Public projects available in preview for all accounts](#public-projects-available-in-preview-for-all-accounts)
+- [Adopt the word "organization" when referring to a collection of projects in VSTS](#adopt-the-word-organization-when-referring-to-a-collection-of-projects-in-vsts)
 
 ## Code
 
@@ -158,6 +159,10 @@ As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/
 
 > [!IMPORTANT]
 > If you're using a public project to build a repository hosted on GitHub, note that while pull requests (PRs) from branches within your repository will build fine, PRs opened from forks of your repository will not build right now.
+
+### Adopt the word "organization" when referring to a collection of projects in VSTS
+
+We've made a change to our terminology when it comes to referring to a collection of projects in VSTS. Previously we used the term "account" but have found that this has caused a lot of confusion for the broader developer and open source community. We've chosen to replace the term "account" with "organization". You'll start seeing this change rollout in documentation and in-product with this Update. See the [Adopting the word “organization” post](https://blogs.msdn.microsoft.com/devops/2018/07/19/adopting-the-word-organization/) on the Microsoft DevOps Blog for more information.
 
 ## Feedback
 

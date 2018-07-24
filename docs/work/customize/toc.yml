@@ -79,7 +79,7 @@
       href: customize-wit-form.md
     - name: Migrate Hosted XML to inherited (Preview)
       items:
-      - name: Supported upgrade operations
+      - name: Supported clone operations
         href: ../../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
       - name: Clone a Hosted XML process to Inheritance
         href: ../../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
