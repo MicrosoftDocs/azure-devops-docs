@@ -120,7 +120,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
 	You can filter by any field available in your project, even a specific tag.   For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
 	![Burndown Widget - Configuration - Select field criteria](./_img/burndown-widget/burndownup-config-select-field-criteria.png)  
-	You may add multiple field critiera, by selecting **Add criteria**. For example, you can also select a custom field such as Release, to create a burndown chart of only those items assigned to a specific release.    
+	You may add multiple field criteria, by selecting **Add criteria**. For example, you can also select a custom field such as Release, to create a burndown chart of only those items assigned to a specific release.    
 	![Burndown Widget - Configuration - Select field criteria](./_img/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
    
 	> [!NOTE]  
