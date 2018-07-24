@@ -20,10 +20,10 @@ ms.date: 05/30/2018
 > [!NOTE]  
 > This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your account(s).
 
-Once you've [upgraded your Hosted XML process to an inherited process](upgrade-hosted-to-inherited.md), you can change the project(s) from the Hosted XML process to the inherited process. You change a project from a Hosted XML process to its derived inherited process to start customizing the process through the user interface.  
+Once you've [cloned your Hosted XML process to an inherited process](upgrade-hosted-to-inherited.md), you can change the project(s) from the Hosted XML process to the inherited process. You change a project from a Hosted XML process to its derived inherited process to start customizing the process through the user interface.  
 
 > [!CAUTION] 
-> Choosing to upgrade a team project from a Hosted XML process model to an inherited process is an irreversible operation. Before you change the process of an existing project from Hosted XML to the upgraded inherited process, review [Supported upgrade operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md) to understand which customizations are preserved and which are not before you change the process of a project from Hosted XML to an inherited process. Also, [create a test project](upgrade-hosted-to-inherited.md#verify) to verify the customizations preserved or reapplied to a process.
+> Choosing to clone a team project from a Hosted XML process model to an inherited process is an irreversible operation. Before you change the process of an existing project from Hosted XML to the cloned inherited process, review [Supported operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md) to understand which customizations are preserved and which are not before you change the process of a project from Hosted XML to an inherited process. Also, [create a test project](upgrade-hosted-to-inherited.md#verify) to verify the customizations preserved or reapplied to a process.
 
 ## Prerequisites 
 - You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
@@ -70,6 +70,6 @@ After you've verified your customizations, you can now apply the inherited proce
 
 
 ## Related articles
-- [Supported upgrade operations when moving from Hosted XML process to an inherited process](upgrade-support-hosted-to-inherited.md)
+- [Supported operations when moving from Hosted XML process to an inherited process](upgrade-support-hosted-to-inherited.md)
 - [Clone a Hosted XML process to an Inheritance process](upgrade-hosted-to-inherited.md) 
 
