@@ -106,7 +106,7 @@ The `uri` property references a page that will be rendered within the content ar
                 };
             })();
             
-            // Register form object to be used accross this extension
+            // Register form object to be used across this extension
             VSS.register("registration-form", registrationForm);
         </script>
     </body>
