@@ -1529,7 +1529,7 @@ pipelines\tasks\build\_img
 <br/>
 
 <p><b>Required team activities to generate useful reports</b></p>
-<p>To gain useful, actionable information from your reports, [team members must perform certain activites](../report/admin/review-team-activities-for-useful-reports.md). </p>
+<p>To gain useful, actionable information from your reports, [team members must perform certain activities](../report/admin/review-team-activities-for-useful-reports.md). </p>
 
 
 </td>
