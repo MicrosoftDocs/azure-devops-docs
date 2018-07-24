@@ -33,11 +33,9 @@ The Inheritance process model supports most customizations, however some of the 
 > [!NOTE]  
 > Before you [change the process of an existing project](change-process-from-hosted-to-inherited.md) from Hosted XML to the upgraded inherited process, review this article to understand which customizations are preserved and which are ignored.  
 
-
-
 ## Customizations preserved during upgrade  
 
-When you upgrade a Hosted XML process to an inherited process, the customizations listed in the following table are preserved.  
+When you clone a Hosted XML process to an inherited process, the customizations listed in the following table are preserved.  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Artifact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description |
@@ -75,6 +73,6 @@ When you upgrade a Hosted XML process to an inherited process, the customization
 ## Related articles
 
 - [About process customization and inherited processes](inheritance-process-model.md)  
-- [Upgrade a Hosted XML process to Inheritance](upgrade-hosted-to-inherited.md) 
+- [Clone a Hosted XML process to Inheritance](upgrade-hosted-to-inherited.md) 
 - [Change a project from a Hosted XML process to Inheritance](change-process-from-hosted-to-inherited.md) 
  

@@ -1,27 +1,28 @@
 ---
-title: Upgrade a Hosted XML process to an inherited process
+title: Clone a Hosted XML process to an inherited process
 titleSuffix: VSTS     
-description: Upgrade a Hosted XML process model to an inherited process in Visual Studio Team Services
+description: Clone a Hosted XML process model to an inherited process in Visual Studio Team Services
 ms.technology: devops-agile
 ms.prod: devops
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
 robots: NOINDEX, NOFOLLOW
 ms.date: 05/30/2018
 ---
 
-# Upgrade a Hosted XML process to an Inheritance process   
+# Clone a Hosted XML process to an Inheritance process   
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
 > [!NOTE]  
 > This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your account(s).
 
-Upgrading your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
+Cloning your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
 
-Before you upgrade a Hosted XML process, we recommend that you review [Supported upgrade operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md). 
+Before you clone a Hosted XML process, we recommend that you review [Supported upgrade operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md). 
  
 
 ## Prerequisites
@@ -34,27 +35,27 @@ Before you upgrade a Hosted XML process, we recommend that you review [Supported
 
 The general sequence of steps to support upgrade are:  
 0. Open the **Settings>Process** hub 
-0. Choose the Hosted XML process you want to upgrade and select **Upgrade  to inheritance** from its context menu
-0. Verify the customizations that are present in the inherited process created as part of the upgrade 
-0. Manually reapply customizations that were ignored during upgrade  
+0. Choose the Hosted XML process you want to clone and select **Clone process to inheritance** from its context menu
+0. Verify the customizations that are present in the inherited process created as part of the clone
+0. Manually reapply customizations that were ignored during clone
 0. Create a test project to verify customizations. 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
 
 
-## Upgrade a Hosted XML process to an Inheritance process 
+## Clone a Hosted XML process to an Inheritance process 
 
-0. Open the &hellip; context menu for the Hosted XML process and choose the **Upgrade to inheritance** option. 
+0. Open the &hellip; context menu for the Hosted XML process and choose the **Clone process to inherited** option. 
 
 	Here we open the menu for the Design Agile Process. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Agile process context menu, Choose Upgrade to inheritance](_img/migration/upgrade-to-inherited-option-menu.png) 
+	> ![Agile process context menu, Choose Clone process to inherited](_img/migration/upgrade-to-inherited-option-menu.png) 
 
 0. Review the information provided in the dialog that opens and then choose **Continue**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Upgrade from XML to inheritance dialog information](_img/migration/upgrade-from-xml-to-inheritance.png)   
+	> ![Clone from XML to inheritance dialog information](_img/migration/upgrade-from-xml-to-inheritance.png)   
 
 0. In the next dialog, you can change the name of the inherited process to be created and optionally change the parent process and provide a description. 
 
@@ -64,9 +65,9 @@ The general sequence of steps to support upgrade are:
 	> ![Upgrade from XML to inheritance dialog information](_img/migration/upgrade-from-xml-to-inheritance-dialog.png)  
 
 	> [!IMPORTANT]  
-	> The system performs a best effort to detect the correct parent process. Verify that the process selected meets your expectations, or change it as needed. Once you've completed the upgrade, you can't upgrade it a second time based on a different system process. 
+	> The system performs a best effort to detect the correct parent process. Verify that the process selected meets your expectations, or change it as needed. Once you've completed the clone, you can't clone it a second time based on a different system process. 
 
-0. After  you've confirmed that the information is correct, choose **Save**. 
+0. After you've confirmed that the information is correct, choose **Save**. 
 
 [!INCLUDE [temp](../_shared/post-upgrade-steps.md)]
 
