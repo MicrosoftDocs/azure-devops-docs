@@ -38,7 +38,7 @@ The method for adding a user or group to a built-in security group is the same, 
     -   To add users who will contribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
     -   For users who will need to administrate the project, choose **Project Administrators**. 
 
-	If you are adding a user to VSTS for the first time, see [Add account users for VSTS](../accounts/add-account-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json).
+	If you are adding a user to VSTS for the first time, see [Add account users for VSTS](../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json).
 
 0. Next, click the **Members** tab.
 

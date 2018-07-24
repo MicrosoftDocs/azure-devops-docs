@@ -64,7 +64,7 @@ After the team has estimated its tasks and begun work, you can use the Remaining
 -   Define tasks, stories, and bugs, and specify the **Iteration** and **Area** paths for each work item.  
   
     > [!NOTE]
-    >  For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 -   Specify and update the **HoursCompleted** and **HoursRemaining** fields for each task or subtask as the team makes progress on each work item.  
   

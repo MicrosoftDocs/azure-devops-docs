@@ -72,7 +72,7 @@ Teams who are responsible for testing software can use the Build Quality report 
 -   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case.  
   
     > [!NOTE]
-    >  The project administrator for each team project defines area and iteration paths for that project so that the team can track progress by those designations. For more information, see[Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  The project administrator for each team project defines area and iteration paths for that project so that the team can track progress by those designations. For more information, see[Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 ##  <a name="Updating"></a> Updating and customizing the report  
  You can update the Build Quality report by opening it in Office Excel and changing the filter options for the PivotTable report for one of the worksheets. You can customize each report to support other views, as the following table describes.  

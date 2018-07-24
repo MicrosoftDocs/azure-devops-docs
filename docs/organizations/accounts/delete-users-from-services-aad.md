@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 
-You can simply [delete the user from each VSTS account](delete-account-users.md) 
+You can simply [delete the user from each VSTS organization](delete-organization-users.md) 
 where you need to remove them. If you delete the user only from Azure AD, they may still show up in VSTS, but 
 they won't be able to sign in.
 
@@ -28,10 +28,10 @@ they won't be able to sign in.
     > You can find the connected Azure AD 
     > only through the Azure classic portal.
 
-2. Go to **Azure Active Directory**. Find the Azure AD that's connected to your VSTS account.
+2. Go to **Azure Active Directory**. Find the Azure AD that's connected to your VSTS organization.
 
-    ![Find the directory connected to your account](_img/manage-work-access/azurefindconnecteddirectory.png)
+    ![Find the directory connected to your organization](_img/manage-work-access/azurefindconnecteddirectory.png)
 
 3. Follow [these steps](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
 
-4. [Remove the user](delete-account-users.md) from your VSTS account and reassign their access levels, if necessary.
+4. [Remove the user](delete-organization-users.md) from your VSTS organization and reassign their access levels, if necessary.

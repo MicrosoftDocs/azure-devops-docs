@@ -72,4 +72,4 @@ Either choose the context menu for the item that you want to remove and select U
  
 You navigate to your team context from the top navigation bar.   
 
-![Choose another team from the team project menu](_img/switch-team-context.png)  
+![Choose another team from the project menu](_img/switch-team-context.png)  

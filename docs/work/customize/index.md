@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
 ms.date: 05/31/2018
@@ -64,7 +65,7 @@ Use the guidance provided in the following topics based on the process model or 
 
 - **Hosted XML process model**
 	- [Supported upgrade operations](../../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
-	- [Upgrade a Hosted XML process to Inheritance](../../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
+	- [Clone a Hosted XML process to Inheritance](../../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
 	- [Change a project from Hosted XML to Inheritance](../../organizations/settings/work/change-process-from-hosted-to-inherited.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)  
 	- [Customize a Hosted XML process](import-process/customize-process.md)  
     - [Import a process](import-process/import-process.md)

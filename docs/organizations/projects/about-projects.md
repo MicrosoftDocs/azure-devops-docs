@@ -202,6 +202,23 @@ As your organization grows, you'll want to add teams to provide them the Agile t
 
 To review  stories and short videos on how Microsoft transitioned from waterfall to Agile, see [Scaling Agile Across the Enterprise](https://stories.visualstudio.com/scaling-agile-across-the-enterprise/).
 
+
+<a id="clients">  </a>
+## Clients that support connection to a project
+
+In addition to connecting through a web browser, you can connect to a team project from these clients:
+
+- [Visual Studio (Professional, Enterprise, Test Professional)](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs)
+- [Visual Studio Code](https://code.visualstudio.com/Docs)
+- [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
+- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
+- [Office Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Office Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md)
+- [PowerPoint Storyboarding](../../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
+- [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
+- [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
+
+
 ## Related articles
 
 - [What do I get with a project?](../../user-guide/services.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)

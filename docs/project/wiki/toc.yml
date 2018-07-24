@@ -46,8 +46,6 @@
     href: markdown-guidance.md
   - name: Keyboard shortcuts to manage Wiki pages 
     href: wiki-keyboard-shortcuts.md
-  - name: Navigate in the web portal
-    href: ../../user-guide/work-web-portal.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json 
   - name: "Default permissions (Security)"
     href: wiki-readme-permissions.md
   - name: "REST API, Wikis"
@@ -56,6 +54,8 @@
     href: https://docs.microsoft.com/en-us/rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
 - name: Resources 
   items:
+  - name: Navigate Basics
+    href: ../navigation/index.md
   - name: Dashboards
     href: ../../report/dashboards/index.md
   - name: Work Items
