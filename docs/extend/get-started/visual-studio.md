@@ -204,7 +204,7 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 		// Get the Web Context to create the uri
 		var VSTSContext = VSS.getWebContext();
 
-		// Navigate to the new View Assoicated Work Items hub.
+		// Navigate to the new View Associated Work Items hub.
 		// Fabrikam is the extension's namespace and Fabrikam.HelloWorld is the hub's id.
 		window.parent.location.href = VSTSContext.host.uri +
 			vstsContext.project.name + "/_apps/hub/" +
