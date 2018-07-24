@@ -76,7 +76,7 @@ code to use on the Xamarin site:
 
 8. The email that you will receive looks like this:
 
- ![Example email with redeption code](_img/xamarin/08-xamarin-email.png)
+ ![Example email with redemption code](_img/xamarin/08-xamarin-email.png)
 
 <a name="q-n-a"></a>
 
