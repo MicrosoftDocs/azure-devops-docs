@@ -491,7 +491,7 @@ https://tseadm.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
 
 By default, all the snapshot tables are modeled as *daily snapshot fact* tables. Consequently, if you query for a time range it will get a value for each day. Long time ranges result in a very large number of records. If you don't need such high precision, you can use weekly or even monthly snapshots. 
 
-You can achieve this with additional filter expressions to remove days which don't finish a given week or monnth. Use the `IsLastDayOfPeriod` property, which was added to the Analytics Service with this scenario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can determine if a day finishes in different periods (e.g. weeks, months, etc).
+You can achieve this with additional filter expressions to remove days which don't finish a given week or month. Use the `IsLastDayOfPeriod` property, which was added to the Analytics Service with this scenario in mind. This property is of type `Microsoft.VisualStudio.Services.Analytics.Model.Period` and can determine if a day finishes in different periods (e.g. weeks, months, etc).
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
