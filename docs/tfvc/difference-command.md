@@ -177,7 +177,7 @@ The *format* parameter, used with the **/format** option, specifies many differe
 
         # signs seprated by commas indicate a line range.
         # signs before the character indicate line numbers in the first file
-        # signs after the character indidicate line numbers in the second file
+        # signs after the character indicate line numbers in the second file
 
         /// No end of line marker at the end of the file:
         /// \ No newline at end of file
