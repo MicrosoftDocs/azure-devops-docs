@@ -849,7 +849,7 @@ return {
 
 <br>
 The hard-coded query path in `getQueryInfo` should be replaced with the configured query path which can be extracted from the parameter `widgetSettings` that is passed to the method.
-Add the below in the very beginning of the `getQueryInfo` method and replace the hard-coded querypath with `settings.queryPath`.
+Add the below in the very beginning of the `getQueryInfo` method and replace the hard-coded query path with `settings.queryPath`.
 
 ```JavaScript
 var settings = JSON.parse(widgetSettings.customSettings.data);
