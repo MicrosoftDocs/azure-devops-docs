@@ -64,9 +64,9 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	<img src="_img/add-teams-select-team-tfs-2017.png" alt="Web portal, team project admin context, Overview page, Select a team to configure it" style="border: 2px solid #C3C3C3;" />
 
-4. To select the set of sprints the team will use, open the **Work>Iterations** page for the team. See [Set team defaults, Select team sprints and default iteration path](set-team-defaults.md#activate).
+4. To select the set of sprints the team will use, open the **Work>Iterations** page for the team. See [Set team defaults, Select team sprints and default iteration path](../../organizations/settings/set-team-defaults.md#activate).
 
-5. To change the area paths that the team will reference, open the **Work>Areas** page. See [Set team defaults, Set team default area path(s)](set-team-defaults.md#team-area-paths).
+5. To change the area paths that the team will reference, open the **Work>Areas** page. See [Set team defaults, Set team default area path(s)](../../organizations/settings/set-team-defaults.md#team-area-paths).
 
 <!---
 #### TFS 2015, TFS 2013 
@@ -86,9 +86,9 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 	<img src="_img/scale-agile-select-team-to-configure-it-co.png" alt="Web portal, admin context, team project, Overview page, Select a sub-team to configure it" style="border: 2px solid #C3C3C3;" />
 
-4. To select the set of sprints the team will use, open the **Iterations** page for the team. See [Set team defaults, Select team sprints and default iteration path](set-team-defaults.md#activate).  
+4. To select the set of sprints the team will use, open the **Iterations** page for the team. See [Set team defaults, Select team sprints and default iteration path](../../organizations/settings/set-team-defaults.md#activate).  
 
-5. To change the area paths that the team will reference, open the **Areas** page. See [Set team defaults, Set team default area path(s)](set-team-defaults.md#team-area-paths).  
+5. To change the area paths that the team will reference, open the **Areas** page. See [Set team defaults, Set team default area path(s)](../../organizations/settings/set-team-defaults.md#team-area-paths).  
  
 -->     
 

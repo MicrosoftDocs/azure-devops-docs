@@ -2,8 +2,10 @@
   href: index.md
 - name: Overview
   items:
-  - name: Support a growing organization
-    href: ../../work/scale/scale-teams.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+  - name: About projects and scaling your organization
+    href: ../projects/about-projects.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+  - name: About settings
+    href: about-settings.md
   - name: "About teams & Agile tools"
     href: about-teams-and-settings.md
 - name: Quickstarts
@@ -22,7 +24,7 @@
     href: set-team-defaults.md
   - name: Configure team settings
     href: ../../work/scale/manage-team-assets.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
-  - name: Change user preferences
+  - name: Change your preferences
     href: set-your-preferences.md
   - name: Switch team context
     href: switch-team-context.md

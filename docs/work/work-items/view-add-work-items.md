@@ -107,7 +107,7 @@ For example, here we choose User Story.
 ![Work hub, Work Items page, Add a work item ](_img/view-add/work-items-hub-new.png)
 
 > [!TIP]    
-> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
+> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json).
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -190,7 +190,7 @@ Use the following three controls to manage your views.
 - [Enable preview features](../../project/navigation/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)
 - [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
-- [Work from the account home page](../../user-guide/organization-home-pages.md)
+- [Work across projects](../../project/navigation/work-across-projects.md)
 
 > [!NOTE]
 > You can create and manage work items from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).

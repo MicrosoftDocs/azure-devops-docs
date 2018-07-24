@@ -50,7 +50,7 @@
 </tr>
 
 <tr>
-<td align="left">Navigate using the Account hub pages
+<td align="left">Navigate using the Project pages
 </td>
 <td>![checkmark](_img/checkmark.png)</td>
 <td>![checkmark](_img/checkmark.png)</td>

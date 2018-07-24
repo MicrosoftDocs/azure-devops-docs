@@ -105,4 +105,4 @@ Service accounts don't require a TFS CAL or other purchase.
 - [Change access levels (TFS)](change-access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access for VSTS and TFS](permissions-access.md)
-- [Work in the web portal](../../user-guide/work-web-portal.md)  
+- [Navigation basics](../../project/navigation/index.md)  

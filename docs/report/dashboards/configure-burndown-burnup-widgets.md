@@ -90,16 +90,16 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 1. Select the **Teams** you want to track.   
 	Select at least one **Project** and one **Team**.   
 	![Burndown Widget - Configuration - Select team](./_img/burndown-widget/burndownup-config-select-team.png)    
-	If you wish to track progress across teams, just add more teams using the team selector. You may also select teams from other team projects.  
+	If you wish to track progress across teams, just add more teams using the team selector. You may also select teams from other projects.  
 	![Burndown Widget - Configuration - Select multple teams](./_img/burndown-widget/burndownup-config-select-multiple-teams.png)  
 	The Burndown chart will display the burndown of remaining work for all selected teams.   
 
    > [!NOTE]   
-   > While you can select teams from other team projects, all of the available configuration options&mdash;**Work items**, **Field criteria**, and **Burndown on** will show selections from your **current team project**.   
-   > The list of selectable backlogs, work item types, and fields are based on your current team project. 
+   > While you can select teams from other projects, all of the available configuration options&mdash;**Work items**, **Field criteria**, and **Burndown on** will show selections from your **current project**.   
+   > The list of selectable backlogs, work item types, and fields are based on your current project. 
    > 
-   > For example, if you select a work item type that doesn't exist in another team project, the burndown will not include work items from that team project. If you select a field that doesn't exist in another team project, that field will be considered blank for the burndown. 
-   > Therefore, a burndown created across multiple team projects will only work if the [Process](../..//work/work-items/guidance/choose-process.md) for those projects are the same, or at least very similar.
+   > For example, if you select a work item type that doesn't exist in another project, the burndown will not include work items from that project. If you select a field that doesn't exist in another project, that field will be considered blank for the burndown. 
+   > Therefore, a burndown created across multiple projects will only work if the [Process](../..//work/work-items/guidance/choose-process.md) for those projects are the same, or at least very similar.
 
 1. Choose your work items. The burndown can include work based on items in your **Backlog** or by **Work item type**.   
 	You can select a **Backlog**, which include all the work items in that backlog.    
@@ -118,7 +118,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    > When setting filters in this step or the following step, it is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../analytics/analytics-historical-filtering.md) for more information.
 
 1. (Optional) Select field criteria to limit the work items that appear in the chart.  
-	You can filter by any field available in your team project, even a specific tag.   For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
+	You can filter by any field available in your project, even a specific tag.   For example, you can narrow your burndown to top priority items by adding a filter **Priority <= 2**.      
 	![Burndown Widget - Configuration - Select field criteria](./_img/burndown-widget/burndownup-config-select-field-criteria.png)  
 	You may add multiple field critiera, by selecting **Add criteria**. For example, you can also select a custom field such as Release, to create a burndown chart of only those items assigned to a specific release.    
 	![Burndown Widget - Configuration - Select field criteria](./_img/burndown-widget/burndownup-config-select-multiple-field-criteria.png)  
@@ -152,7 +152,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 
 	### Plot based on an iteration schedule
    
-	After selecting the **Start Date**, set **Plot burndown by** to **Iteration**. You can select iterations from your current team project.  
+	After selecting the **Start Date**, set **Plot burndown by** to **Iteration**. You can select iterations from your current project.  
 	![Burndown Widget - Configuration - select time period iterations](./_img/burndown-widget/burndownup-config-select-iterations.png)
    
 	Add multiple iterations by selecting **Add iterations**.
@@ -162,7 +162,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	The iteration selection box support search, so you can simply type a partial name of an iteration and it will find the closest match.  
 	![Burndown Widget - Configuration - Select iterations search](./_img/burndown-widget/burndownup-config-select-iterations-search.png)
 
-	The selectable iterations are based on the **current team project**, even if you selected teams from other team projects. Since the burndown chart plots remaining work based on the end date of the iteration, it calculates remaining work across all teams/team projects, based on that iteration end date. For example, if an iteration ends on 11/10/2017, the burndown chart calculates remaining work as of 11/10/2017, counting or summing all work items for every team/team project. Therefore, a cross-project burndown will work when plotting by iterations, as long as you are OK with having all the teams reporting on the same iteration schedule.
+	The selectable iterations are based on the **current project**, even if you selected teams from other projects. Since the burndown chart plots remaining work based on the end date of the iteration, it calculates remaining work across all teams/projects, based on that iteration end date. For example, if an iteration ends on 11/10/2017, the burndown chart calculates remaining work as of 11/10/2017, counting or summing all work items for every team/project. Therefore, a cross-project burndown will work when plotting by iterations, as long as you are OK with having all the teams reporting on the same iteration schedule.
 
 	The burndown chart uses the end date of each iteration to plot the remaining work for that iteration.
 
@@ -264,8 +264,8 @@ Configuring the Burnup widget is exactly like configuring the Burnup widget, exc
 
 ## Related notes 
 
-* [Define sprints for the team project](../../work/customize/set-iteration-paths-sprints.md)
-* [Select sprints for a team](../../work/scale/set-team-defaults.md)
+* [Define sprints for the project](../../organizations/settings/set-iteration-paths-sprints.md)
+* [Select sprints for a team](../../organizations/settings/set-team-defaults.md)
 * [Add a custom field to a work item type](../../organizations/settings/work/customize-process-field.md)
 
 ####Industry resources 

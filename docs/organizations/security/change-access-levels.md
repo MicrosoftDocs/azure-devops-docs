@@ -133,5 +133,5 @@ Within the admin context, there are several hubs which support administrating fe
 - [About access levels](access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Permissions & access](permissions-access.md)  
-- [Work in the web portal](../../user-guide/work-web-portal.md)  
+- [Navigation basics](../../project/navigation/index.md)  
 

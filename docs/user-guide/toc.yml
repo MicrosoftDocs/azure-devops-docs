@@ -53,7 +53,7 @@
   - name: "Use #ID to link to work items"
     href: ../notifications/add-links-to-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Navigate using your organization home page
-    href: organization-home-pages.md
+    href: ../project/navigation/work-across-projects.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
   - name: Go mobile
     href: ../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: Manage your notifications
@@ -82,14 +82,14 @@
     href: ../project/navigation/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Markdown guidance
     href: ../project/wiki/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json   
-  - name: Navigate in the web portal
-    href: work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Navigate in Team Explorer
     href: work-team-explorer.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: FAQs
-    href: faqs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
+    href: faqs.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
 - name: Resources
   items:
+  - name: Navigate Basics
+    href: ../project/navigation/index.md
   - name: Visual Studio IDE
     href: https://docs.microsoft.com/visualstudio/
   - name: Visual Studio Code 

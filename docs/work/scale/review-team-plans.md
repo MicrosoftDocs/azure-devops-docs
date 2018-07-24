@@ -41,7 +41,7 @@ In order to add and configure a plan, you must have the following in place:
 - [Installed the Plans extension](#install-plans)  
 - Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
 - [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the team project  
-- [Configured teams](multiple-teams.md) and [set team defaults and team sprints](set-team-defaults.md)   
+- [Configured teams](multiple-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
 
 All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../organizations/security/get-started-stakeholder.md), however, don't have access to Delivery Plans.) 

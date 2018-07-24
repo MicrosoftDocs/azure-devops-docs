@@ -28,6 +28,8 @@
   items:
   - name: Add subscription user to organization
     href: add-basic-or-vs-subscription-users.md
+  - name: Resources granted to project members
+    href: resources-granted-to-project-members.md
   - name: Glossary
     href: ../../organizations/security/security-glossary.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
 - name: How-to guides
@@ -102,10 +104,6 @@
     href: faq-add-delete-users.md
   - name: Add team members
     href: faq-add-team-members.md
-  - name: Create team project
-    href: faq-create-team-project.md
-  - name: Rename team project
-    href: faq-rename-team-project.md
   - name: Access with Azure AD
     href: faq-azure-access.md
   - name: Change app access
@@ -130,18 +128,18 @@
     href: ../../organizations/security/permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
   - name: VSTS data protection overview
     href: ../../articles/team-services-security-whitepaper.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
+  - name: Migrate from TFS to VSTS
+    href: ../../articles/migrate-to-vsts-from-tfs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
 - name: Resources
   items:
   - name: New User Guide
     href: ../../user-guide/index.md
   - name: Project Management
     href: ../projects/index.md
-  - name: Billing
-    href: ../../billing/index.md
-  - name: Migrate from TFS to VSTS
-    href: ../../articles/migrate-to-vsts-from-tfs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
   - name: "Security & Identity"
     href: ../../organizations/security/index.md
+  - name: Billing
+    href: ../../billing/index.md
   - name: Manage Extensions
     href: ../../marketplace/index.md
   - name: Service hooks

@@ -9,9 +9,9 @@ ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= tfs-2013'
-ms.date: 03/01/2018  
----   
+monikerRange: '>= tfs-2018'
+ms.date: 07/21/2018
+---
 
 #  View and update work items via the mobile browser   
 
@@ -24,25 +24,18 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
 ::: moniker range="vsts"
 
 > [!NOTE]  
-> The mobile browser is available to support work tracking in VSTS. To sign up for VSTS, go to [VSTS](https://visualstudio.microsoft.com/team-services/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application.      
+> The mobile browser supports work tracking in VSTS OR TFS 2018 and later versions. To sign up for VSTS, go to [VSTS](https://www.visualstudio.com/team-services/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application.      
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
 > [!NOTE]  
-> The mobile browser is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/en-us/news/releasenotes/tfs2018-relnotes). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
+> The mobile browser is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/tfs2018-relnotes). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2017"
 
-> [!NOTE]  
-> The mobile browser is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/en-us/news/releasenotes/tfs2018-relnotes). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application. 
-
-::: moniker-end
-
-::: moniker range="vsts >= tfs-2018"
 <a id="mobile"></a>
 ## Open the mobile work item form  
 
@@ -99,7 +92,7 @@ Click the History tab to view history.
 
 ## View and open work items in your activity lists 
 
-From within the mobile work item form, you can access your account Work items hub. The mobile hub allows you to view and open work items which fall into these categories: 
+From within the mobile work item form, you can access your work items. The mobile browser allows you to view and open work items which fall into these categories: 
 - **Assigned to me**: lists all work items assigned to you 
 - **Following**: lists all work items that you have elected to follow 
 - **My activity**: lists all work items that you have recently viewed or updated.
@@ -114,10 +107,9 @@ Then, click **Work items**.
 
 ![Click Work items](_img/mobile-work-click-work-items.png)
 
-The hub opens to the Assigned to me page. From there, you can click Following or My activity to access the other pages. To learn more about the account hub, see [Work effectively from your account hub](../../user-guide/organization-home-pages.md). 
+The browser opens to the **Assigned to me** page. From there, you can choose **Following** or **My activity** to access the other pages. To learn more about the **Work Items** view, see [View and add work items](../../work/work-items/view-add-work-items.md). 
 
-<img src="_img/mobile-work-account-work-items-pages.png" alt="Mobile work item form, Change State action" style="border: 1px solid #C3C3C3;" /> 
-
+![Mobile work item form, Change State action](_img/mobile-work-account-work-items-pages.png)  
 
 ## Related articles  
 
@@ -136,4 +128,4 @@ To provide feedback,  click the list control from the work item form and then cl
 
 <img src="_img/mobile-work-send-feedback.png" alt="Mobile work item form, Send feedback" style="border: 1px solid #C3C3C3;" /> 
 
-::: moniker-end 
+

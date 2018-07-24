@@ -7,8 +7,7 @@ ms.technology: devops-collab
 ms.prod: devops
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
 ms.manager: douge
-ms.author: kaelli
-author: KathrynEE
+ms.author: kaelliauthor: KathrynEE
 monikerRange: '>= tfs-2015'
 ms.date: 03/22/2017
 ---
@@ -74,7 +73,7 @@ You can share your project vision and objective, as well as ways for team member
 
 To edit the project README.md file, click the Edit button. You'll need to be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your Edit project-level information permission set to allow. 
 
-You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../git/create-a-readme.md) and [Markdown guidance](../../project/wiki/markdown-guidance.md). 
+You can use Markdown language to format the README file and add images. To learn more about adding a README file, see [Create a README for your repo](../../git/create-a-readme.md) and [Markdown guidance](../wiki/markdown-guidance.md). 
 
 <img src="_img/project-home-page-sample-vs-code-readme.png" alt="Example project home page" style="border: 1px solid #C3C3C3;" />       
 
@@ -166,8 +165,8 @@ You can change the repository used to support your project vision, including poi
 
 ## Related articles  
 
-- [Markdown guidance](../../project/wiki/markdown-guidance.morganization-home-pages.md
-- [Work effectively from your account hub](../../user-guide/organization-home-pages.md)
+- [Markdown guidance](../wiki/markdown-guidance.md) 
+- [Work across projects](../navigation/work-across-projects.md)
 
 
  
