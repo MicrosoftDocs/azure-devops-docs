@@ -55,15 +55,20 @@ To get started with a code base, [set up Git](../../git/gitquickstart.md) or [se
 
     The default Port is 8080. Specify the port number and directory for your server if defaults aren't used.
 	::: moniker-end
+
 0.  When you access the server for the first time, a Windows Identity dialog box will appear. Fill in your credentials and choose the **OK** button.
 
     > [!TIP]
-    > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect.  
+    > If you select the **Remember me** check box you won't have to enter your credentials the next time you connect. 
+ 
 ::: moniker range=">= tfs-2017"   
 0. From the project summary page, hover over a service and then choose the page of interest. To choose another project, choose the ![](../../_img/icons/project-icon.png) VSTS icon.  
+
 	> [!div class="mx-imgBorder"]  
 	> ![Choose a service page, horizontal nav](_img/connect-projects/project-summary-page-choose-app-horz.png)  
+
 ::: moniker-end  
+
 ::: moniker range=">= tfs-2013 <= tfs-2015"   
 0.  Choose your project or team from the set of available links, or choose Browse to access all projects and teams.   
 

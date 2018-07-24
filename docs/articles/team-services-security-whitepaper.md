@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 06/29/2018
+ms.date: 07/19/2018
 monikerRange: 'vsts'
 ---
 
@@ -381,7 +381,8 @@ The GDPR's main objective is to strengthen the protection and security of your p
 will replace the Directive and all local laws relating to it. VSTS is relied upon as system of record with strict 
 integrity, traceability and audit rules, we view all information within VSTS to be business critical and therefore cannot be modified from its original state. 
 These existing obligations affect our delete and retention obligations for GDPR. As such, we do not support GDPR delete requests from within VSTS. 
-We have ensured that when an entire VSTS account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period). To learn more about how VSTS honors Data Subject Requests (DSR), please visit the following [page](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
+We have ensured that when an entire VSTS account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period). 
+To learn more about how VSTS honors Data Subject Requests (DSR), please visit the following [page](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
 To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
@@ -485,16 +486,15 @@ the corporate vice-president in charge of VSTS, maintains a very active
 [blog](https://blogs.msdn.com/b/bharry/) addressing, among other things,
 lessons learned by operating the service.
 
-### Certification
+## Compliance Certifications
 
-Finally, for some customers, it is important to understand third-party
+For some customers, it is important to understand third-party
 evaluation of our data security procedures. Towards that end, we have
 achieved ISO 27001:2013, HIPAA (Health Insurance Portability and Accountability Act)
  BAA (Business Associate Agreeement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications. 
 The SOC audit for VSTS covers controls for data security, availability, 
-processing integrity, and confidentiality. In general, the availability of SOC 1,
-SOC 2 reports and other audit material is restricted to customers who have signed 
-non-disclosure agreements with Microsoft. The audit materials are available upon request.
+processing integrity, and confidentiality. VSTS' SOC reports are available via the [Microsoft's Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports). 
+If you dont have access to Microsoft's Service Trust Portal, you can contact VSTSSOCReports@microsoft.com to request a copy of VSTS' SOC Reports.
 
 
 ## Steps you can take
