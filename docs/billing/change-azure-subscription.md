@@ -52,7 +52,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS organization owner and as Azure subscription co-administrator or greater.
 
     If you experience browser problems with Azure,
-    make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
+    make sure that you use a [supported browser](/azure/azure-preview-portal-supported-browsers-devices).
 
 2. Go to **All services** > **Team Services organizations**. 
 

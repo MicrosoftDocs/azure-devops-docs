@@ -29,11 +29,11 @@ A: To connect your VSTS organization to an Office 365 Azure AD,
 you can't use the [free subscription](https://technet.microsoft.com/library/dn832618.aspx)
 that you can activate for your Office 365 Azure AD.
 
-You must [sign up for a new Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/)
+You must [sign up for a new Azure subscription](https://azure.microsoft.com/pricing/purchase-options/)
 or use an existing Azure subscription
 that's **not** from one of these offers:
 
-* An [Azure Free Trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/)
+* An [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
 
 * A [free Azure AD subscription](https://technet.microsoft.com/library/dn832618.aspx)
 
@@ -209,7 +209,7 @@ You can do this by adding your Microsoft account as a member to your Azure AD.
 
 A: You must be a member or have read access in those directories.
 Otherwise, you can add them
-[using B2B collaboration through your Azure AD administrator](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/), 
+[using B2B collaboration through your Azure AD administrator](/azure/active-directory/b2b/what-is-b2b), 
 using their Microsoft accounts, 
 or create new work accounts for them in your directory.
 
@@ -228,10 +228,10 @@ Learn [how to link work or school accounts to Visual Studio with MSDN subscripti
 
 A: Yes, but only for external users who are
 [added as guests through Office 365](https://support.office.com/en-us/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232)
-or [added using B2B collaboration by your Azure AD administrator](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/).
+or [added using B2B collaboration by your Azure AD administrator](/azure/active-directory/b2b/what-is-b2b).
 These external users are managed outside the connected directory.
 To learn more, contact your Azure AD administrator. The setting below doesn't affect
-[users who are added directly to your organization's directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-create-users/).
+[users who are added directly to your organization's directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
 
 > Before you start, make sure you have at least Basic access, not Stakeholder.
 
@@ -265,8 +265,8 @@ learn what you're missing in this FAQ:
 ### Q: Why don't I see a directory associated with my Azure subscription?
 
 A: You need an active and valid
-["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/),
-such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/),
+["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/),
+such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/offers/ms-azr-0003p/),
 associated with your organization's Azure AD and at
 least co-administrator permissions for your subscription.
 You need both to make your directory appear in the Azure portal,
@@ -282,16 +282,16 @@ A: This might happen because:
 
 * You don't have [VSTS organization owner permissions](faq-change-app-access.md#find-owner) to manage directory connections.
 
-* You don't have an active and valid ["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/), such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/), associated with your organization's Azure AD and at least co-administrator permissions for your subscription. You need both to make your directory appear in the Azure portal, so that you can link your subscription and connect your Azure AD to your VSTS organization. Learn [how to manage Azure subscription administrators](../../billing/add-backup-billing-managers.md).
+* You don't have an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/), such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/offers/ms-azr-0003p/), associated with your organization's Azure AD and at least co-administrator permissions for your subscription. You need both to make your directory appear in the Azure portal, so that you can link your subscription and connect your Azure AD to your VSTS organization. Learn [how to manage Azure subscription administrators](../../billing/add-backup-billing-managers.md).
 
   For example, if you want to use an Office 365 Azure AD,
   you can't use the [free subscription](https://technet.microsoft.com/library/dn832618.aspx)
   that you can get for Office 365 Azure AD.
-  You must [sign up for a new Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/)
+  You must [sign up for a new Azure subscription](https://azure.microsoft.com/pricing/purchase-options/)
   or use an existing Azure subscription
   that's **not** from one of these offers:
 
-  * An [Azure Free Trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/)
+  * An [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
   * A [free Azure AD subscription](https://technet.microsoft.com/library/dn832618.aspx)
 
   You must then associate that subscription with your Office 365 Azure AD.
@@ -309,7 +309,7 @@ A: This might happen because:
   **Important** This link also sets up organization billing,
   so you can bill VSTS purchases to your Azure subscription.
   Some Azure subscriptions have a
-  [spending limit](https://azure.microsoft.com/en-us/pricing/spending-limits/).
+  [spending limit](https://azure.microsoft.com/pricing/spending-limits/).
   If your Azure subscription has a spending limit,
   and you want to bill purchases to this subscription,
   you must remove this limit **indefinitely**.
@@ -321,7 +321,7 @@ A: This might happen because:
   and Azure resources. Learn more about
   [how to manage your subscription's spending limit](https://msdn.microsoft.com/library/azure/dn465781.aspx).
 
-  If you're the subscription [Organization Administrator](https://azure.microsoft.com/en-us/documentation/articles/billing-add-change-azure-subscription-administrator),
+  If you're the subscription [Organization Administrator](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator),
   visit the Azure Account Center to remove the spending limit:
 
 1. Sign in to [Azure Account Center (**Account** > **subscriptions**)](https://portal.azure.com).
@@ -367,8 +367,8 @@ again for the organization that you connected.
 A:  Make sure their sign-in addresses are in the
 connected directory and in your VSTS organization.
 If they're not directory members, and you have at least
-[user administrator permissions](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/),
-you can [add them to the directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-create-users/).
+[user administrator permissions](/azure/active-directory/users-groups-roles/directory-assign-admin-roles),
+you can [add them to the directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
 
 Some users have sign-in addresses that are shared by their
 Microsoft account and their work or school account.

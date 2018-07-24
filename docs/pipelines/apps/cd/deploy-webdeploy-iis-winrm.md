@@ -79,7 +79,7 @@ Follow these steps to configure each target server.
 
 1. Check your .NET Framework version. You need version 4.5
    or higher installed on every target machine. See
-   [How to: Determine Which .NET Framework Versions Are Installed](https://msdn.microsoft.com/en-in/library/hh925568(v=vs.110).aspx).
+   [How to: Determine Which .NET Framework Versions Are Installed](https://msdn.microsoft.com/library/hh925568(v=vs.110).aspx).
 
 1. Download from GitHub [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/WinRM/WinRM-Http-Https/ConfigureWinRM.ps1)
    for Windows 10 and Windows Server 2016, or

@@ -168,7 +168,7 @@ Over the course of the last several sprints, we delivered several crucial pieces
 With all the above now in place, we are ready to deprecate these two tasks. While existing definitions that use the deprecated tasks will continue to work, we encourage you to move to using VSTest to take advantage of continued enhancement over time.
 
 ### Delete Test Plans / Test suites
-Users can now delete Test Plans / Test suites if they the following permisssions 
+Users can now delete Test Plans / Test suites if they the following permissions 
 * Test suite delete: View test runs + Delete test runs + Manage test suites
 * Test plan delete: View test runs + Delete test runs + Manage plan suites
 

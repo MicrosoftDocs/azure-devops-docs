@@ -43,7 +43,7 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 
 	![Buy the extension](_img/get-vsts-extensions/test-manager-extension.png)
 
-0.	Select an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) that you'll use to pay for extension access.
+0.	Select an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) that you'll use to pay for extension access.
 	
 	![Select an Azure subscription for billing](_img/get-vsts-extensions/select-azure-sub.png)
 

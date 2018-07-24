@@ -26,7 +26,7 @@ To subscribe to Xamarin University you need:
 * A [Microsoft account](https://www.microsoft.com/account), such as, an outlook.com or hotmail.com address,
 or a work or school account, such as someone@fabrikam.com.
 
-* A [Microsoft Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
+* A [Microsoft Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
 to use for billing.  There is no cost to create an Azure subscription, which essentially is a billing account
 that gets charged when you buy something.
 

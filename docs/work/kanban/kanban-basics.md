@@ -9,7 +9,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 92395eeb-6372-49b3-935d-dab5feef1d54
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 06/21/2018
 ---
@@ -63,7 +64,7 @@ For user stories, the New, Active, Resolved, and Closed states track progress fr
 
 </td>
 <td>
-![Default kanboard boward, Agile template](_img/ALM_KB_Empty.png)
+![Default Kanban board, Agile template](_img/ALM_KB_Empty.png)
 
 </td>
 </tr>

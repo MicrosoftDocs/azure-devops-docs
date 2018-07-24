@@ -146,7 +146,7 @@ When you want to see what's happening right now and in recent history, check out
 
 ###All Definitions tab adds folders
 
-Does your team have a lot of build defintions. You can now use folders to keep them organized in the **All Definitions** tab.
+Does your team have a lot of build definitions. You can now use folders to keep them organized in the **All Definitions** tab.
 
 ![Definitions, All](_img/8_17_14.png)
 

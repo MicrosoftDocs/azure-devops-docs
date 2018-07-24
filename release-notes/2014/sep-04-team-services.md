@@ -23,7 +23,7 @@ We made a bunch of incremental improvements around working with work items in th
 -Full screen mode is now enabled on all queries and on all work items. Just click the command in the toolbar to ditch all the chrome and maximize screen real estate.
 -Additionally, we included a new right-click command on query results that allow you to open a work item in a new browser tab (not shown in the screenshot).
 
-![Return to Qureyr with Highlights](_img/9_04_01.png)
+![Return to Query with Highlights](_img/9_04_01.png)
 
 ##Quick search through tree controls
 

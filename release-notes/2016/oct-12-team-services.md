@@ -18,7 +18,7 @@ In mid-August, we enabled an opt-in mode allowing customers to preview our new n
 * 30%+ of the web traffic is now serving the new nav, and this number continues to grow. This gives us both confidence on quality and significant coverage of use cases
 * Since the opt-in release, over 20 usability and bug fixes have reported by users and all have been addressed
 
-The most constructive feedback we have received is that users want to manage this change, and we need to be respectful of that. In this sprint, we are still allowing users to opt out of the new experience. This provides admins and users with a window to prepare and accommodate their teams for the change. Our current plan is to remove the previous nav next sprint, and continue to innovate our navigation using the new navigation experience as the base going foward.
+The most constructive feedback we have received is that users want to manage this change, and we need to be respectful of that. In this sprint, we are still allowing users to opt out of the new experience. This provides admins and users with a window to prepare and accommodate their teams for the change. Our current plan is to remove the previous nav next sprint, and continue to innovate our navigation using the new navigation experience as the base going forward.
 
 ##Cherry-pick and revert
 

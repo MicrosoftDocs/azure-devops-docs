@@ -156,7 +156,7 @@ from having a physical representation.</td>
 <tr>
 <td>[Packaging](./packaging/overview.md)</td>
 <td>*Packages* are bundles of DLLs, resources, and other software components combined with metadata. Common package formats include: NuGet, npm, and Maven.
-*Feeds* contain packages and enforce *permissions* about who can access the packages. This API gives you accesss to feeds, packages, and permissions.</td>
+*Feeds* contain packages and enforce *permissions* about who can access the packages. This API gives you access to feeds, packages, and permissions.</td>
 <td>
 <ul><li>Get a list of feeds</li>
 <li>Create a feed</li></ul>
