@@ -62,7 +62,7 @@ After the team has started to find and fix bugs, you can track the team's progre
 -   Specify the **Priority** and **Severity** of each bug.  
   
     > [!NOTE]
-    >  For information about how to define area and iteration paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 -   Assign each bug to the team member who is working to resolve or close it.  
   

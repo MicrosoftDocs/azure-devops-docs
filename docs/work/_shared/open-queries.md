@@ -15,7 +15,7 @@ From your web browser, (1) check that you have selected the right project, (2) c
 If it is your first time opening the hub, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can click **All** to view all queries you've defined and shared queries defined for the team project.  
 
 > [!TIP]    
-> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Account hub page. To learn more, see [Set personal or team favorites](/vsts/project/navigation/set-favorites). 
+> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Project page. To learn more, see [Set personal or team favorites](/vsts/project/navigation/set-favorites). 
 
 ::: moniker-end
 
@@ -34,7 +34,7 @@ From your web browser, (1) select the project, choose (2) **Work**, (3) **Querie
 If it is your first time opening the hub, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can click **All** to view all queries you've defined and shared queries defined for the team project.  
 
 > [!TIP]    
-> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Account hub page. To learn more, see [Set personal or team favorites](/vsts/project/navigation/set-favorites). 
+> Queries you or your team have favorited show up on the **Favorites** page. Queries you have favorited along with other objects also appear on your Project page. To learn more, see [Set personal or team favorites](/vsts/project/navigation/set-favorites). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"

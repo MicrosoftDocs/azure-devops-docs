@@ -39,13 +39,13 @@ you can request extensions instead.
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-account-owner](../_shared/qa-find-account-owner.md)]
+[!INCLUDE [find-organization-owner](../_shared/qa-find-organization-owner.md)]
 
 [!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
 
 <a name="no-accounts"></a>
 
-[!INCLUDE [no-accounts](../billing/_shared/qa-no-accounts.md)]
+[!INCLUDE [no-organizations](../billing/_shared/qa-no-organizations.md)]
 
 #### Q: Why can't I install extensions for VSTS?
 
@@ -85,7 +85,7 @@ for users who need access.
 
 A:	This might happen for several reasons.
 
-*	You don't have at VSTS 
+*	You don't have VSTS 
 [project collection administrator or account owner permissions](#find-owner).
 
 *	Your users don't have the correct access levels. 

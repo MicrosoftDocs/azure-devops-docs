@@ -33,7 +33,7 @@ For example using PATs, see using [Git credential managers](../../git/set-up-cre
 
 ### Q: What is my Visual Studio Team Services URL?
 
-**A:** https://{youraccount}.visualstudio.com, for example.
+**A:** https://{yourorganization}.visualstudio.com, for example.
 
 ### Q: What notifications may I receive regarding my PAT?
 
@@ -47,7 +47,7 @@ PAT nearing expiration
 
 ![PAT nearing expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
 
-### Q: What do I do if I believe that someone other than me is creating access tokens on my account?
+### Q: What do I do if I believe that someone other than me is creating access tokens on my organization?
 
 **A:** If you receive a notification of a PAT being created and you're unaware of what caused this, there are a number of actions that may have automatically create a PAT on your behalf, for example:
 
@@ -55,5 +55,5 @@ PAT nearing expiration
 - Setting up an Azure App Service web app deployment.  This creates a token with a display name like "Service Hooks :: Azure App Service :: Deploy web app".
 - Setting up web load testing as part of a pipeline.  This creates a token with a display name like "WebAppLoadTestCDIntToken".
 
-If you still believe a PAT was created in error, we suggest [revoking the PAT](https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/pats?view=vsts). The next step would be to investigate whether or not your password has been compromised; changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your account was used from an unknown source/location.  
+If you still believe a PAT was created in error, we suggest [revoking the PAT](https://docs.microsoft.com/en-us/vsts/integrate/get-started/authentication/pats?view=vsts). The next step would be to investigate whether or not your password has been compromised; changing your password is always a good first step to defend against this attack vector. If you’re an Azure Active Directory user, talk with your administrator to check if your organization was used from an unknown source/location.  
 

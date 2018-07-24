@@ -32,7 +32,7 @@ These include the following associations made for each team:
 - The default iteration path 
 - The selected iteration paths 
 
-For details, see [Set team defaults](set-team-defaults.md). 
+For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
 
 ## Enable team backlogs and configure how bugs are managed on backlogs and boards    
 

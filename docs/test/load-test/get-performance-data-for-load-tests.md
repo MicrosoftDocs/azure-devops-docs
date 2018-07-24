@@ -31,7 +31,7 @@ is causing performance problems.
 1. [Enable Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md)
    for your VSTS subscription, if you haven't already done so.
 
-1. [Link VSTS with your Azure subscription](../../organizations/accounts/connect-account-to-aad.md),
+1. [Link VSTS with your Azure subscription](../../organizations/accounts/connect-organization-to-aad.md),
    if you haven't already done so.
 
 1. Sign in to VSTS from your web browser to refresh the Azure Resources Manager access token. 

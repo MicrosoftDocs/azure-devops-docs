@@ -88,10 +88,10 @@ process is transparent, and you'll never see any kind of sign-in experience.
 With VSTS, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You'll either 
 authenticate with  [Microsoft Account](http://www.microsoft.com/account) credentials or with
 [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) account 
-credentials, depending on your VSTS account setup. You can also set up Azure AD 
+credentials, depending on your VSTS organization setup. You can also set up Azure AD 
 to require features like multi-factor-authentication, IP address restrictions, and so on.
 
-We recommend that organizations configure their VSTS accounts to use Azure AD rather than 
+We recommend that organizations configure their VSTS organizations to use Azure AD rather than 
 Microsoft Accounts. This provides a better experience in many scenarios and more options for enhanced 
 security.
 
@@ -104,7 +104,7 @@ As users are added and removed in AD they also gain and lose access to TFS.
 In VSTS, you can use a similar mechanism to 
 [provide access to groups of users](../organizations/accounts/manage-azure-active-directory-groups-vsts.md) 
 by adding Azure AD groups to TFS groups. If you use Microsoft Accounts instead of Azure AD, you will have to
-[add users](../organizations/accounts/add-account-users-from-user-hub.md) one at a time. 
+[add users](../organizations/accounts/add-organization-users-from-user-hub.md) one at a time. 
 
 ### Manage user access
 
@@ -120,15 +120,15 @@ Visual Studio subscribers can have either Basic or Advanced access, based on the
 Note that TFS does not attempt to verify these licenses or enforce compliance. 
 
 In VSTS, you must 
-[assign an access level](../organizations/accounts/add-account-users-from-user-hub.md)
-to each user in your account's Users hub. VSTS validates Visual Studio subscribers as 
+[assign an access level](../organizations/accounts/add-organization-users-from-user-hub.md)
+to each user in your organization's Users hub. VSTS validates Visual Studio subscribers as 
 they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions. 
-To give Basic access to more users, you'll need to set up billing for your account and
+To give Basic access to more users, you'll need to set up billing for your organization and
 [pay for more users](../billing/buy-basic-access-add-users.md). 
 Otherwise, all other users get Stakeholder access.
 
 If you use Azure AD groups to provide access to groups of users, VSTS will assign appropriate 
-access levels to them automatically when they sign in for the first time. For VSTS accounts configured 
+access levels to them automatically when they sign in for the first time. For VSTS organizations configured 
 to use Microsoft Accounts for sign-in, you will have to assign access levels to each user explicitly.
 
 ### Security and data protection
@@ -188,7 +188,7 @@ that can be imported into VSTS.
 * Process templates are associated with all team projects created from them, and changes made to the process are reflected 
 in each team project.
 
-Team projects in accounts which participate in this process customization private preview will not update automatically with 
+Team projects in organizations which participate in this process customization private preview will not update automatically with 
 VSTS upgrades. 
 
 ### Reporting
@@ -203,7 +203,7 @@ very easy to set up and use.
 In addition, with VSTS you have access to the following services:
 * [Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets-vsts.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 * [PowerBI integration](../report/powerbi/overview.md) which supports getting Analytics data into Power Bi reports, providing a nice combination of simplicity and power. 
-* [OData support](../report/extend-analytics/index.md) which allows you to directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or their entire VSTS account.
+* [OData support](../report/extend-analytics/index.md) which allows you to directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or their entire VSTS organization.
 
 We plan to make these services available in TFS in a future release.
 

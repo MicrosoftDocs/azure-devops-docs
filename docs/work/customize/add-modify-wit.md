@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 02/02/2017
 ---
@@ -158,7 +159,7 @@ This topic addressed how to add and customize WITs and process configuration for
 
 Other related topics or resources: 
 
-- [Guide to administrative tasks](../../organizations/accounts/account-management.md)  
+- [Guide to administrative tasks](../../organizations/accounts/organization-management.md)  
 - [ProcessConfiguration XML elements](reference/process-configuration-xml-element.md)
 - [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)
 - [Customize the work tracking experience](customize-work.md)  

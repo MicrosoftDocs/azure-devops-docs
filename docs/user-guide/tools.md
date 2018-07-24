@@ -104,16 +104,16 @@ TFS 2013       |             | 9 and later       | 5 and later    | most recent 
 
 Edge, Firefox, and Chrome automatically update themselves, so VSTS and TFS support the most recent version. 
 
-To learn more, see [Work in the web portal](work-web-portal.md).
+To learn more, see [Navigation basics](../project/navigation/index.md).
 
 ### Browser-based extensions
 
 The following extensions are available from the Visual Studio Marketplace and are built and maintained by the VSTS product team. 
 
 - [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web): Run tests using your browser with simple pass/fail of steps, add comments/attachments, take screenshots and file bugs. You can accomplish all of this  with automatic end-to-end traceability.  
-- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed): Build packages of reusable code components and share them within your organization. The Package Management extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm . It makes packages available to your team, your builds, and your releases. 
-- [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increases cross-team collaboration and code sharing by enabling developers to quickly locate relevant information within the code base of all team projects hosted within an account or collection. With it, you can discover implementation examples, browsing definitions, and find error text. 
-- [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items by searching across all work item fields over all projects in an account. Perform full text searches across all fields to efficiently locate relevant work items. Use in-line search filters, on any work item field, to quickly narrow down to a list of work items.  
+- [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed): Build packages of reusable code components and share them. The Package Management extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm . It makes packages available to your team, your builds, and your releases. 
+- [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increases cross-team collaboration and code sharing by enabling developers to quickly locate relevant information within the code base of all team projects hosted within an organization or collection. With it, you can discover implementation examples, browsing definitions, and find error text. 
+- [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items by searching across all work item fields over all projects in an organization. Perform full text searches across all fields to efficiently locate relevant work items. Use in-line search filters, on any work item field, to quickly narrow down to a list of work items.  
   
 Find additional extensions from the [Marketplace](https://marketplace.visualstudio.com) 
 

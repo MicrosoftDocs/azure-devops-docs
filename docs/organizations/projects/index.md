@@ -20,7 +20,7 @@ Add, rename, and delete projects as you scale your organization.
 ## 5-Minute Quickstarts
 
 - [View permissions](../security/view-permissions.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
-- [Look up a project administrator](../security/lookup-account-owner-admin.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
+- [Look up a project administrator](../security/lookup-organization-owner-admin.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
 - [Add users to a project or team](../security/add-users-team-project.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
 - [Add administrators or set permissions at the project or collection level](../security/set-project-collection-level-permissions.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)  
 

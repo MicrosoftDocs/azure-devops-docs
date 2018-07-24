@@ -278,14 +278,14 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@CurrentIteration** <sup>1</sup></td>
-	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../organizations/settings/switch-team-context.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<td>Use in conjunction with the **Iteration Path** field to automatically filter for work items assigned to the current sprint based on the [current team focus or context](../../project/navigation/go-to-project-repo.md). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
 	<p>This macro only works when run from the web portal. You can't use the macro when [copying or cloning test suites and test cases](../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md), [defining alerts](../../notifications/index.md), or with [REST APIs](../../integrate/get-started/rest/basics.md).</p>
 </td>
 </tr>
 
 <tr>
 	<td><b>@CurrentIteration +/- <i>n</i></b> <sup>2</sup></td>
-	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
+	<td>Use in conjunction with the **Iteration Path** field to filter the set of work items assigned to the current sprint +/- n sprints based on the [current team focus or context](../../project/navigation/go-to-project-repo.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json). For specific examples, see [Query by date or current iteration](query-by-date-or-current-iteration.md).
 </td>
 </tr>
 

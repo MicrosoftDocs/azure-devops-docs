@@ -27,7 +27,7 @@ For anyone to access a team project, you must add them to a security group. For 
 ## 5-Minute Quickstarts
   
 - [View permissions](view-permissions.md)
-- [Look up the account owner or a project administrator](lookup-account-owner-admin.md)
+- [Look up the organization owner or a project administrator](lookup-organization-owner-admin.md)
 - [Add users to a team project or team](add-users-team-project.md)
 - [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
 - [Add administrators or set permissions at the project or collection level](set-project-collection-level-permissions.md)  

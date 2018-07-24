@@ -86,7 +86,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 
 
 > [!IMPORTANT]  
-> From the Visual Studio plug-in, you can [Create a team project](../organizations/projects/create-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal account/collection administration context. 
+> From the Visual Studio plug-in, you can [Create a team project](../organizations/projects/create-project.md). The ability to create team projects is not supported from the Eclipse plug-in. You can, however, create team projects from the web portal/collection administration context. 
 
 
 
@@ -96,7 +96,7 @@ From the **Connect** page, you can select the team projects you want to connect 
 > [!div class="mx-tdBreakAll"]  
 > |Home|Work Items  |Build |
 > |-------------|----------|----------|
-> |-[Configure workspace](../tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](work-web-portal.md#user-context)<br/>- Open [Task Board](../work/scrum/task-board.md)<br/>- Open [Team Room](../notifications/collaborate-in-a-team-room.md) |- [Add work items](../work/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../work/track/using-queries.md)<br/>- [Organize query folders and set query permissions](../work/track/set-query-permissions.md)<br/>- [Open query in Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../work/track/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build definitions](../pipelines/tasks/index.md)<br/>- [View and manage builds](../pipelines/overview.md)<br/>- [Manage the build queue](../pipelines/agents/pools-queues.md) |
+> |-[Configure workspace](../tfvc/share-your-code-in-tfvc-vs.md#configure-your-workspace)<br/>- Open [Web portal](../project/navigation/index.md)<br/>- Open [Task Board](../work/scrum/task-board.md)<br/>- Open [Team Room](../notifications/collaborate-in-a-team-room.md) |- [Add work items](../work/backlogs/add-work-items.md)<br/>- [Use the query editor to list and manage queries](../work/track/using-queries.md)<br/>- [Organize query folders and set query permissions](../work/track/set-query-permissions.md)<br/>- [Open query in Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)<br/>- [Open query in Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)<br/>- [Email query results list using Outlook](../work/track/share-plans.md)<br/>- [Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md) (TFS only) |- [Create build definitions](../pipelines/tasks/index.md)<br/>- [View and manage builds](../pipelines/overview.md)<br/>- [Manage the build queue](../pipelines/agents/pools-queues.md) |
 
 > [!NOTE]  
 > If inline images aren't displaying correctly, see [Resolve images that don't display in Team Explorer](#images-missing-te). 
@@ -129,12 +129,12 @@ Most of the links open to a web portal administration page. Not all settings are
 > [!div class="mx-tdBreakAll"]  
 > |Team project settings | Collection settings (TFS)  |
 > |-------------|----------|
-> |Required membership: [Project Administrators](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/><br/>- [Security (manage project-level permissions)](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- [Group membership: manage group permissions](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC)<br/>- [Work Item Areas (project-wide)](../work/customize/set-area-paths.md)<br/>- [Work Item Areas (project-wide)](../work/customize/set-iteration-paths-sprints.md)<br/>- [Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)<br/><br/>- [Security (manage project-level permissions)](../organizations/security/permissions.md#collection-level)<br/>- [Group membership: manage group permissions](../organizations/security/permissions.md)<br/>- Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC)<br/>- [Process Template Manager: download or upload a process template](../work/work-items/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) |
+> |Required membership: [Project Administrators](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/><br/>- [Security (manage project-level permissions)](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- [Group membership: manage group permissions](../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)<br/>- Source Control: Configure the [check-in and check-out policies](../tfvc/add-check-policies.md) (TFVC)<br/>- [Work Item Areas (project-wide)](../organizations/settings/set-area-paths.md)<br/>- [Work Item Areas (project-wide)](../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Portal Settings (Enable portal or process guidance)](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)<br/>-[Project Alerts](../work/track/alerts-and-notifications.md) |Required membership: [Project Collection Administrators](../organizations/security/set-project-collection-level-permissions.md)<br/><br/>- [Security (manage project-level permissions)](../organizations/security/permissions.md#collection-level)<br/>- [Group membership: manage group permissions](../organizations/security/permissions.md)<br/>- Source Control: Configure the [default workspace type for the collection](../tfvc/decide-between-using-local-server-workspace.md#manage-team-project-collection-workspace-settings-for-your-team) (TFVC)<br/>- [Process Template Manager: download or upload a process template](../work/work-items/guidance/manage-process-templates.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) |
 
-To learn more about administration features, see [Work in the web portal, administration context](work-web-portal.md#admin-context).
+To learn more about administration features, see [About team, project, and organizational-level settings](../organizations/settings/about-settings.md).
 
 
-## Related notes
+## Related articles
 
 You've now got a basic understanding of how to work in the Team Explorer add-in for Visual Studio and Eclipse.
 
@@ -146,7 +146,7 @@ You've now got a basic understanding of how to work in the Team Explorer add-in 
 
 In addition to connecting through Team Explorer, you can connect to a team project from these clients: 
 
-- [Web portal](work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
+- [Web portal](../project/navigation/index.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
