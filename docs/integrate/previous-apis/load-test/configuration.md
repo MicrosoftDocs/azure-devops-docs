@@ -19,7 +19,7 @@ ms.date: 08/04/2016
 
 ## Get configuration
 
-Gets a list of valid geo-locations ([Azure regions](http://azure.microsoft.com/en-us/regions)) available for your account
+Gets a list of valid geo-locations ([Azure regions](https://azure.microsoft.com/regions)) available for your account
 
 ```no-highlight
 GET https://{account}.vsclt.visualstudio.com/_apis/clt/configuration

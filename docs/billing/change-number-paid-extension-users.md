@@ -18,7 +18,7 @@ ms.date: 04/06/2018
 
 To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 

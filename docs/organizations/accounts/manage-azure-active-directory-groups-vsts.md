@@ -24,7 +24,7 @@ you can use the same identities with your VSTS organization.
 to control access and authenticate users through your Azure Active Directory. 
 
 When you organize directory members with 
-[Azure AD groups](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups), 
+[Azure AD groups](/azure/active-directory/fundamentals/active-directory-manage-groups), 
 you can reuse those groups to manage permissions 
 in bulk for your VSTS organization. 
 Just add those groups to the VSTS group that you want. 
@@ -36,7 +36,7 @@ so you don't have to manage group members one at a time.
 
 Not familiar with Azure AD, 
 but want to check it out? Learn more about 
-[Azure AD benefits](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/)
+[Azure AD benefits](/azure/active-directory/fundamentals/active-directory-whatis)
 and differences in how you 
 [control VSTS organization access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
 

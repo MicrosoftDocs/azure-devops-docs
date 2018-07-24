@@ -21,7 +21,7 @@ This quickstart will help you set up billing for your VSTS organization in advan
 
 **All VSTS services are billed via Azure**, and you are not required to use any other Azure services.
 
-If you don't have an Azure subscription, [create one](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin. Please note that the Azure Free Trial is not supported.
+If you don't have an Azure subscription, [create one](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin. Please note that the Azure Free Trial is not supported.
 
 ## Prerequisites
 

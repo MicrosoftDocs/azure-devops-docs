@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 05c10281-e873-43ea-80a3-23050438c379
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
@@ -83,7 +84,7 @@ Mapping enterprise project EntProjA . . . Done.
 Mapping enterprise project EntProjA to team project MyTeamProj . . . Done.  
 ```  
   
- In addition to associating the enterprise project plan with the team project, the **/MapPlantoTeamProject** option adds the **Project Server** tab to the work item forms for the types of work items that you specify.  
+ In addition to associating the enterprise project plan with the team project, the **/MapPlanToTeamProject** option adds the **Project Server** tab to the work item forms for the types of work items that you specify.  
   
  If you try to map an enterprise project to a team project for which no fields have been mapped, a message indicates that a mapping is required, and no more operations are performed. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md).  
   

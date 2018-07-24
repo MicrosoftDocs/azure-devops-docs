@@ -27,7 +27,7 @@ Deployment groups in VSTS make it easier to organize the servers that you want t
    > The account under which the agent runs needs **Manage** permissions for the C:\Windows\system32\inetsrv\ directory.
    Adding non-admin users to this directory is not recommended. In addition, if you have a custom user identity for the application pools,
    the identity needs permission to read the crypto-keys. Local service accounts and user accounts must be given read access for this.
-   For more details, see [Keyset does not exist error message](https://support.microsoft.com/en-in/help/977754/-keyset-does-not-exist-error-message-when-you-try-to-change-the-identi).
+   For more details, see [Keyset does not exist error message](https://support.microsoft.com/help/977754/-keyset-does-not-exist-error-message-when-you-try-to-change-the-identi).
 
 1. When the script is done, it displays the message *Service vstsagent.account.computername started successfully*.
 

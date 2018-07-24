@@ -72,12 +72,12 @@ Sample JSON:
 	{
 	    "event.type": "git.push",
 	    ...
-	    "messsages": {
+	    "messages": {
 	        "text": "...",
 	        "html": "...",
 	        "markdown": "..."
 	    },
-	    "detailedMesssages": {
+	    "detailedMessages": {
 	        "text": "...",
 	        "html": "...",
 	        "markdown": "..."

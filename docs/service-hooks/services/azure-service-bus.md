@@ -59,7 +59,7 @@ when you create a Service Hook subscription.
    <img alt="Azure Service Bus Queue" src="./_img/azure-service-bus/queues.png" style="border: 1px solid #CCCCCC" />
 
 2. Create or modify your app's code to receive VSTS
-messages using a Azure Service Bus queue. For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-queues/).
+messages using a Azure Service Bus queue. For details, go [here](azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues).
 
 0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
@@ -91,9 +91,9 @@ You can verify this in your application or service.
 
    <img alt="Azure Service Bus Topic" src="./_img/azure-service-bus/topics.png" style="border: 1px solid #CCCCCC" />
 
-2. Create or modify your app's code to recieve
+2. Create or modify your app's code to receive
 VSTS messages using a Azure Service Bus topic.
-For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-topics-subscriptions/).
+For details, go [here](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions).
 
 3. Open the admin page for the team project in VSTS.
 
@@ -135,7 +135,7 @@ For more information about notification hubs go [here](https://msdn.microsoft.co
 
 2. Create or modify an app to receive messages from VSTS through the notification hub. 
 The steps and code required to set up your app depend on the target platform (Android, iOS, Windows Phone 8, and Windows Store).
-For details, go [here](http://azure.microsoft.com/en-us/documentation/services/notification-hubs/).
+For details, go [here](/azure/notification-hubs/).
 
 3. Open the admin page for the team project in VSTS.
 
@@ -143,7 +143,7 @@ For details, go [here](http://azure.microsoft.com/en-us/documentation/services/n
  
    For details about the subscription wizard, go [here](../index.md).
 
-   <img alt="Add a sevice hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add a service hook" src="./_img/azure-service-bus/add-service-hook.png" style="border: 1px solid #CCCCCC" />
 
 5. Pick and configure the VSTS event.
 
@@ -186,7 +186,7 @@ A: Use the following taking care to concatenate the variable and value in the pa
 
 #### Q: Can I get more information about the differences between service bus queues and service bus topics?
 
-A: Get more details [here](http://azure.microsoft.com/en-us/documentation/articles/fundamentals-service-bus-hybrid-solutions/).
+A: Get more details [here](/azure/service-bus-messaging/service-bus-fundamentals-hybrid-solutions).
 
 #### Q: Can I programmatically create subscriptions?
 

@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Deploy apps to Azure Stack
 
-[Azure Stack](https://azure.microsoft.com/en-in/overview/azure-stack/)
+[Azure Stack](https://azure.microsoft.com/overview/azure-stack/)
 is an extension of Azure that enables the agility and fast-paced innovation of cloud computing
 through a hybrid cloud and on-premises environment.
 

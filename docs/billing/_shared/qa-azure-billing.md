@@ -24,7 +24,7 @@ purchases will show up on your monthly Azure bill.
 
 A:	Yes, please buy directly from the Visual Studio Marketplace 
 where you can bill purchases to the Azure subscription that was created 
-under your [Enterprise Agreement (EA)](https://azure.microsoft.com/en-us/pricing/enterprise-agreement/). 
+under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). 
 Don't order Visual Studio Marketplace services through your reseller.
 
 ### Q:	Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?

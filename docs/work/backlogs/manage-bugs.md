@@ -67,7 +67,7 @@ The new web form is only available from TFS 2017 and later versions.
 # [Old web form](#tab/old-web-form)
 
 ::: moniker range=">= tfs-2017"
-The old web form is only availble for TFS 2017 and earlier versions. 
+The old web form is only available for TFS 2017 and earlier versions. 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items-tfs.md). 
@@ -370,9 +370,9 @@ To learn how to add SQL Server reports for a team project, see [Add reports to a
 SonarQube provides a way of automatically measuring some technical debt. SonarQube finds important violations of best coding practices. You implement Sonar to ensure that developers follow important code metrics like appropriate class and method size or low cyclomatic complexity (a quantitative measure of the number of linearly independent paths through a program's source code).  
 
 By integrating your on-premises TFS with a SonarQube server, you can get the following data:  
-- Results of .Net and JavaScript code analysis  
+- Results of .NET and JavaScript code analysis  
 - Code clone analysis  
 - Code coverage data from tests  
-- Metrics for .Net and JavaScript  
+- Metrics for .NET and JavaScript  
 
 See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/05/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build.aspx) for details.

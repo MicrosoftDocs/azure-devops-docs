@@ -171,12 +171,12 @@ Refer to [Variables in Release Management](/vsts/pipelines/release/variables).
 
 ### How can you manage secrets used by the pipeline?
 
-Refer to [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to safeguard cryptographic keys and other secrets used by your pipelines.
+Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to safeguard cryptographic keys and other secrets used by your pipelines.
 
 ##Reference information
 * [CI/CD pipeline examples](https://blogs.msdn.microsoft.com/visualstudioalmrangers/tag/cicd-pipeline/)
 * [Configuring your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
-* [DevOps @ MIcrosoft](https://aka.ms/devops)
+* [DevOps @ Microsoft](https://aka.ms/devops)
 
 > Authors: Josh Garverick, Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  
