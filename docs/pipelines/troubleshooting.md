@@ -49,7 +49,7 @@ Start by looking at the logs in your completed build or release. If they don't p
 
 ### Diagnostic logs
 
-0. On the build summmary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
+0. On the build summary page, find the **Queue new build** button, next to it there is a drop down. Click the down arrow and choose **Queue new build with diagnostic logs**.
 
 0. Queue the build.
 
