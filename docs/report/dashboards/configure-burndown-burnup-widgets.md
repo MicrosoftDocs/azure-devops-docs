@@ -179,7 +179,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
 	If you select **Weeks**, then you'll be able to select the **Last day of week**. The remaining work for each interval will be calculated based on that day.  
 	![Burndown Widget - Configuration - select time period daily](./_img/burndown-widget/burndownup-config-select-time-period-weekly.png)
 
-	If you select **Months**, then burndown will be caluclated based the last day of each month.  
+	If you select **Months**, then burndown will be calculated based the last day of each month.  
 
 	> [!NOTE]    
 	> The **Average Burndown** assumes that every interval is the same length. It does not account for months that are different lengths. Additionally, it assumes that the interval between the **Start Date** and the first month is a full month, even if the length of time between **Start Date** and the first months's end date does not match your typical length of a month. For example, a **Start Date** of 11/15/2017, would plot the first month as 10/31/2017, but would be counted as a full month for your **Average Burndown**. For best results, enter a **Start Date** that is the same as the first months's start date. **This is also true when plotting by weekly itervals.**
