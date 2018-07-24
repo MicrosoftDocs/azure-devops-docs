@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 # .NET client libraries for VSTS (and TFS)
 
 ## Overview
-For .NET developers building Windows apps and services that integrate with Visual Studio Team Services (VSTS), client libraries are available for integrating with work item tracking, version control, build, and other services are now available. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
+For .NET developers building Windows apps and services that integrate with Visual Studio Team Services (VSTS), client libraries are available for integrating with work item tracking, version control, build, and other services. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
 
 ### Features
 * Downloadable from nuget.org and easily importable into your Visual Studio projects
