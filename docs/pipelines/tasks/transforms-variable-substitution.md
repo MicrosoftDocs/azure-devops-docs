@@ -203,7 +203,7 @@ As an example, consider the task of changing the following values in `Web.config
         <!-- Change AdminUserName in this line: --> 
         <add key="AdminUserName" value="__AdminUserName__" />
         <!-- Change AdminPassword in this line: --> 
-        <add key="AdminPassword" value="__AdminPasword__" />
+        <add key="AdminPassword" value="__AdminPassword__" />
     </appSettings>
     <entityFramework>
         <defaultConnectionFactory type="System.Data.Entity.LocalDbConnectionFactory">
