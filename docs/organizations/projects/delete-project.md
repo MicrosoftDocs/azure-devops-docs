@@ -21,7 +21,7 @@ If you find that you have a project you no longer use, you can delete it. Deleti
 
 [!INCLUDE [temp](../../_shared/navigation.md)] 
 
-[!INCLUDE [temp](../../_shared/open-admin-account-settings.md)] 
+[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)] 
 
 ## Choose to delete a project 
 

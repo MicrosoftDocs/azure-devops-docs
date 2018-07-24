@@ -20,6 +20,7 @@ monikerRange: '>= tfs-2013'
 
 You can use the keyboard shortcuts listed in this topic when you work within Visual Studio Team Services (VSTS), the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
 
+For specific guidance on navigating within the web portal, see [Navigation basics](index.md).
 
 ## Web portal
 
@@ -63,16 +64,16 @@ You can use these keyboard shortcuts when working in the web portal for VSTS or 
 
 ## Web portal, global shortcuts
 
-Type **?** to access the Global and hub-specific shortcuts.   
+Type **?** to access the Global and page-specific shortcuts.   
 
 >[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2015.2 and later versions. Type **?** to access the Global and hub-specific shortcuts.   
+><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/global-shortcuts.md)]
 
-Hub-specific shortcuts only work when in a specific hub. For example, type **g c** to open the Code hub, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
+Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
 
-## Code hub 
+## Code  
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/code-shortcuts.md)]
 
@@ -80,7 +81,7 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 ::: moniker range="vsts"
 
-## Work hub, Work Items page 
+## Work>Work Items 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
@@ -90,17 +91,17 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 ::: moniker-end
 
-## Work hub, Backlog page 
+## Work>Backlogs 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)]
 
 ::: moniker range=">= tfs-2015"
 
-## Work hub, Kanban board page 
+## Work>Boards 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-board-shortcuts.md)]
 
-## Work hub, Queries page 
+## Work>Queries 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-shortcuts.md)]
 
@@ -108,7 +109,7 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 ::: moniker range=">= tfs-2017"
 
-## Work hub, Plans page
+## Work>Plans
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
@@ -116,7 +117,7 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 ::: moniker range=">= tfs-2015"
 
-## Test hub, Test Plans, Parameters, and Runs pages 
+## Test>Test Plans, Parameters, and Runs  
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/test-shortcuts.md)]
 
@@ -124,7 +125,7 @@ Hub-specific shortcuts only work when in a specific hub. For example, type **g c
 
 
 ::: moniker range=">= tfs-2018"
-## Wiki hub
+## Wiki  
 ::: moniker-end
 ::: moniker range="tfs-2018"
 > [!NOTE]  
@@ -247,7 +248,7 @@ Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete cont
 - [Customize Visual Studio keyboard shortcuts](https://msdn.microsoft.com/library/5zwses53.aspx)  
 - [Default keyboard shortcuts for Visual Studio](https://msdn.microsoft.com/library/da5kh0wa.aspx)  
 - [Accessibility Features of Visual Studio](https://docs.microsoft.com/en-us/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
-- [Work in the web portal](../../user-guide/work-web-portal.md) 
+- [Navigation basics](..//navigation/index.md) 
 
 ###Install Team Explorer  
 

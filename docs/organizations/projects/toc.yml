@@ -32,6 +32,8 @@
     href: ../settings/about-teams-and-settings.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md
+  - name: Clients & Tools
+    href: ../../user-guide/tools.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
   - name: "How do VSTS & TFS differ"
     href: ../../user-guide/about-vsts-tfs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
 - name: How-to guides

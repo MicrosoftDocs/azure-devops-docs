@@ -21,11 +21,11 @@ Hosted Pipelines.
 
 ## Prerequisites
 
-If you are setting up billing for a customer who has already created a VSTS account using a Microsoft account identity
+If you are setting up billing for a customer who has already created a VSTS organization using a Microsoft account identity
 (i.e., not an identity in their Azure Active Directory), you will need the customer to take a few actions first:
 
-1. Your customer must [change their VSTS account to be backed by their Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md)
-2. Your customer must [unlink the existing Azure subscription used for billing on their VSTS account](../change-azure-subscription.md), if they had set up billing previously.
+1. Your customer must [change their VSTS organization to be backed by their Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md)
+2. Your customer must [unlink the existing Azure subscription used for billing on their VSTS organization](../change-azure-subscription.md), if they had set up billing previously.
 
 Make sure that your identity has not been added into the customer's Azure Active Directory. If it has, you will need to have it removed before you can go through the purchasing steps for your customer.
 
@@ -38,7 +38,7 @@ Make sure that your identity has not been added into the customer's Azure Active
 3. Choose **Service Management**.
 4. Choose **Visual Studio Marketplace**
 5. Make sure that you're in the VSTS tab, and then search for and choose **VSTS Users**.
-6. Choose the **Get** button, and move through the purchase process. Choose the VSTS account that needs more users and choose the Azure subscription to bill for the purchase.  Enter the number of users your customer needs.  Review the order and complete it.
+6. Choose the **Get** button, and move through the purchase process. Choose the VSTS organization that needs more users and choose the Azure subscription to bill for the purchase.  Enter the number of users your customer needs.  Review the order and complete it.
 
 You can purchase other items the same way by, for example, searching for **Test Manager**, **Package Management**, or **Hosted Pipelines** after choosing **Visual Studio
 Marketplace**.

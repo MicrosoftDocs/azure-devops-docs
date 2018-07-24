@@ -32,7 +32,7 @@ The first time that you set up billing for your VSTS account - whether you do th
 * [VSTS project collection administrator (PCA) or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner) - if you aren't a PCA or account owner, you'll be prompted to send a purchase request to the admins for your VSTS account.
 
    > [!div class="mx-imgBorder"]
-![Non-project admin submit request](_img/buy-more-basic-access/non-account-admin-purchase-request.png)
+![Non-project admin submit request](_img/buy-more-basic-access/non-organization-admin-purchase-request.png)
 
 * [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
@@ -47,10 +47,10 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
    > [!div class="mx-imgBorder"]
 ![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/marketplace-choose-get-vsts-users.PNG)
 
-2. Select your VSTS account, if you have multiple accounts, and then choose **Buy**.
+2. Select your VSTS organization, if you have multiple organizations, and then choose **Buy**.
 
    > [!div class="mx-imgBorder"]
-![Select your account](_img/buy-more-basic-access/marketplace-choose-buy.PNG)
+![Select your organization](_img/buy-more-basic-access/marketplace-choose-buy.PNG)
 
 3. Confirm the Azure subscription, where your VSTS charges will be billed, and then choose **Continue**.
 
@@ -69,7 +69,7 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
    > [!div class="mx-imgBorder"]
 ![VSTS Marketplace review and confirm order](_img/buy-more-basic-access/marketplace-choose-confirm.png)
 
-6. Choose **Manage users** to go to your VSTS account and [add new users](../organizations/accounts/add-account-users-from-user-hub.md).
+6. Choose **Manage users** to go to your VSTS organization and [add new users](../organizations/accounts/add-organization-users-from-user-hub.md).
 
 The number of users to whom you can assign Basic appears on the right side of your screen.
 

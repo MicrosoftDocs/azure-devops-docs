@@ -158,7 +158,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 Enables you to add work items from the dashboard. You [use work items to plan and track work](../../work/backlogs/add-work-items.md).  <br/><br/>
 
-Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [Set team defaults](../../work/scale/set-team-defaults.md).
+Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [Set team defaults](../../organizations/settings/set-team-defaults.md).
 
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -178,18 +178,18 @@ Requires TFS 2015.1 or later version.
 Provides links to the following features: 
 - Opens a form to initiate a [request to provide feedback](/vsts/project/feedback/get-feedback?toc=/vsts/project/feedback/toc.json).
 - Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../work/scrum/define-sprints.md).
-- Opens the team's quick dialog to modify your [team's area path](../../work/scale/set-team-defaults.md).
+- Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-team-defaults.md).
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
-The following links are displayed when the corresponding resource is configured for the team project: 
+The following links are displayed when the corresponding resource is configured for the project: 
 
 ![Other links widget](_img/widget-other-links-tfs.png)  
 
-- [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the team project's portal.  
-- [View process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the team project's process guidance.  
-- [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md). 
+- [View project portal](../sharepoint-dashboards/share-information-using-the-project-portal.md) (opens either a SharePoint site or URL that's been configured as the project's portal.  
+- [View process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md) (opens either a SharePoint site or URL that's been configured as the project's process guidance.  
+- [View reports](../sql-reports/reporting-services-reports.md) (opens SQL Server Reporting Services). To add or update reports for a project, see [Add reports to a project](../admin/add-reports-to-a-team-project.md). 
 
 ----
 
@@ -266,12 +266,12 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
  
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
-Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
+Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
 ::: moniker-end
 
 ::: moniker range=" tfs-2015"
 
-Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../work/scale/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
+Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ----
@@ -607,7 +607,7 @@ Requires TFS 2015.1 or later version.
 
 ![How to links widget](_img/widget-how-to-links.png)
 
-Provides links to the **Work**, **Code**, and **Build** or **Build-Release** hubs and reference documentation on how to add charts.
+Provides links to the **Work**, **Code**, and **Build** or **Build-Release** pages and reference documentation on how to add charts.
 
 ::: moniker-end
 ::: moniker range="tfs-2015"

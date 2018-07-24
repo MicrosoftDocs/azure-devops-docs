@@ -1,0 +1,99 @@
+---
+title: Project and navigational elements, key concepts, objects, and terms
+titleSuffix: VSTS & TFS
+description: Understand the key concepts that support navigation and managing projects available with Visual Studio Team Services and Team Foundation Server  
+ms.prod: devops
+ms.technology: devops-collab
+ms.assetid: 
+ms.manager: douge
+ms.author: kaelli
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2017'
+ms.date: 07/21/2018
+---
+
+
+# Project management and navigation glossary   
+
+[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+ 
+This glossary describes terms used when navigating in the web portal for  Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  See also: 
+- [Agile glossary](../../work/work-items/agile-glossary.md) 
+- [Security glossary](../../organizations/security/security-glossary.md)  
+
+
+## Backlogs 
+An interactive list of work items that corresponds to a team's project plan or roadmap for what the team plans to deliver. The product backlog supports prioritizing work, forecasting work by sprints, and quickly linking work to portfolio backlog items. You can define your backlog items and then manage their status using the Kanban board. 
+
+Each product backlog can be customized by a team. Learn more: [Create your backlog](../../work/backlogs/create-your-backlog.md).   
+
+::: moniker range="vsts" 
+## Analytics views
+Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for VSTS. 
+::: moniker-end
+
+[!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
+
+## Boards (Kanban) 
+An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../../work/kanban/kanban-basics.md).
+
+
+[!INCLUDE [temp](../../_shared/glossary-terms/dashboards.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/extensions.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/favorites.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/follow.md)] 
+
+## Git repository
+
+A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../git/index.md).  
+
+> [!NOTE]   
+> Git in Visual Studio and VSTS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with VSTS.
+
+[!INCLUDE [temp](../../_shared/glossary-terms/notifications.md)]
+
+
+## Pipelines 
+
+Pipelines are artifacts that you define to run concurrent builds or deploy concurrent releases. Two types of pipelines are supported, private and hosted. To learn more, see [CI/CD concurrent jobs](../../pipelines/licensing/concurrent-jobs-vsts.md). 
+
+![Pipeline concept end-to-end](/vsts/pipelines/_img/pipeline-concept-end-to-end.png)
+
+[!INCLUDE [temp](../../_shared/glossary-terms/plans.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/process.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/projects.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/public-projects.md)] 
+
+
+[!INCLUDE [temp](../../_shared/glossary-terms/queries.md)] 
+
+## Repositories
+
+A source control folder or container you configure to help you track file changes in. You can have any number of repository on your computer, each stored in their own folder. Each repository is independent, so changes saved in one repository don't affect the contents of another. Learn more: [Create a new Git repo](../../git/tutorial/creatingrepo.md).    
+
+[!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
+
+## Sprint backlog 
+An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../../work/scrum/assign-work-sprint.md).  
+
+ 
+[!INCLUDE [temp](../../_shared/glossary-terms/taskboard.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
+
+
+[!INCLUDE [temp](../../_shared/glossary-terms/tfvc-repo.md)] 
+
+
+[!INCLUDE [temp](../../_shared/glossary-terms/widgets.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/work-items.md)] 
+
+[!INCLUDE [temp](../../_shared/glossary-terms/work-item-types.md)] 

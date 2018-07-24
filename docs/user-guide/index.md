@@ -57,7 +57,7 @@ Get started with a free account, share your code using Git, and track your work 
 - [Enable preview features](../project/navigation/preview-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Use @mentions to further discussion](../notifications/at-mentions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Use #ID to link to work items](https://docs.microsoft.com/en-us/vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
-- [Navigate using your account home page](account-home-pages.md)
+- [Navigate using your account home page](../project/navigation/work-across-projects.md)
 - [Go mobile](../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Manage your notifications](https://docs.microsoft.com/en-us/vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Set your preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
@@ -69,7 +69,7 @@ Get started with a free account, share your code using Git, and track your work 
 - [Permissions and access](../organizations/security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Keyboard shortcuts](../project/navigation/keyboard-shortcuts.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Markdown guidance](../project/wiki/markdown-guidance.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Navigate in the web portal](work-web-portal.md)
+- [Navigate in the web portal](../project/navigation/index.md)
 - [Navigate in Team Explorer](work-team-explorer.md)
 - [FAQs](faqs.md)
 

@@ -41,7 +41,7 @@ You can use the Bug Reactivations report to determine how effectively the team i
 -   Define Bugs.  
   
     > [!NOTE]
-    >  For information about how to define area and iteration paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 -   Update the **State** of each Bug as the team fixes, verifies, closes, or reactivates it.  
   

@@ -19,14 +19,14 @@ Do you want an easier way to control who can access your team's
 critical resources and key business assets in VSTS? 
 If you already use Microsoft services like Office 365 or 
 [Azure Active Directory (Azure AD)](https://www.microsoft.com/en-us/server-cloud/products/azure-active-directory/), 
-you can use the same identities with your VSTS account. 
-[Azure AD works with your VSTS account](access-with-azure-ad.md) 
-to control access and authenticate users through your organization's directory. 
+you can use the same identities with your VSTS organization. 
+[Azure AD works with your VSTS organization](access-with-azure-ad.md) 
+to control access and authenticate users through your Azure Active Directory. 
 
 When you organize directory members with 
 [Azure AD groups](/azure/active-directory/fundamentals/active-directory-manage-groups), 
 you can reuse those groups to manage permissions 
-in bulk for your VSTS account. 
+in bulk for your VSTS organization. 
 Just add those groups to the VSTS group that you want. 
 For example, add them to built-in groups like 
 Project Collection Administrators or Contributors, 
@@ -38,16 +38,16 @@ Not familiar with Azure AD,
 but want to check it out? Learn more about 
 [Azure AD benefits](/azure/active-directory/fundamentals/active-directory-whatis)
 and differences in how you 
-[control VSTS account access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
+[control VSTS organization access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
 
 
 ## Before you start
 
-* Your VSTS account must be connected 
-to your organization's directory (tenant) in Azure AD. 
-[My account uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA)
+* Your VSTS organization must be connected 
+to your Azure Active Directory. 
+[My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA)
 * You must be a VSTS project administrator, 
-project collection administrator, or account owner. 
+project collection administrator, or organization owner. 
 You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, 
 you must have tenant administrator permissions 
@@ -58,7 +58,7 @@ or have the tenant administrator delegate those permissions to you in the
 
 ##	Add an Azure AD group to a VSTS group
 
-1.	Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+1.	Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
@@ -78,8 +78,8 @@ the contact card icon to the right of the name.
     ![Browse directory for groups](_img/manage-azure-ad-groups/addaadgrouppanelbrowse.png)
     
     You [invite guests into your Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) 
-    and into your Azure AD backed VSTS accounts, without waiting for them 
+    and into your Azure AD backed VSTS organizations, without waiting for them 
     to accept, which in turn allows you 
-    to add those guests to your account, grant access to projects, assign extensions, etc.
+    to add those guests to your organization, grant access to projects, assign extensions, etc.
 
 6.	Add more groups, or save your changes if you're done.

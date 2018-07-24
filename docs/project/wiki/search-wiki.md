@@ -19,7 +19,7 @@ ms.date: 03/22/2017
 
 **VSTS | TFS 2018.2**
 
-With wiki search, you can search within a team project wiki or across all wikis created for the account. Simply select the **Search wiki** option from the search box and type a keyword or phrase within the search box. 
+With wiki search, you can search within a project wiki or across all wikis created for the account. Simply select the **Search wiki** option from the search box and type a keyword or phrase within the search box. 
 
 > [!div class="mx-imgBorder"]  
 > ![Wiki search option](_img/wiki/wiki-search.png)   
@@ -38,8 +38,8 @@ English language stemming support helps you find the most relevant wiki pages. F
 
 ## Related articles
 
-- [Search code](../../project/search/code-search.md)
-- [Search work items](../../project/search/work-item-search.md)
+- [Search code](..//search/code-search.md)
+- [Search work items](..//search/work-item-search.md)
 
 
 <!---

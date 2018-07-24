@@ -66,5 +66,5 @@ If your team has completed multiple sprints, you can forecast release and produc
   
 ## Related notes
  [Scrum process](../../work/work-items/guidance/scrum-process.md)   
- [Define iteration paths (sprints)](../../work/customize/set-iteration-paths-sprints.md)   
+ [Define iteration paths (sprints)](../../organizations/settings/set-iteration-paths-sprints.md)   
  [Velocity chart and widget](../guidance/team-velocity.md)
