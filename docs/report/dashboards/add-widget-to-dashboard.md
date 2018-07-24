@@ -142,7 +142,7 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 ## Configure a widget  
 
-Most widgets support configuration, which may include specifying the title, seeting the widget size, and other widget-specific variables.
+Most widgets support configuration, which may include specifying the title, setting the widget size, and other widget-specific variables.   
 
 ::: moniker range=">= tfs-2018"
 
