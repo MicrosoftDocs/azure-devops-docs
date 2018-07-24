@@ -537,7 +537,7 @@ You manage server-level permissions through the [Team Foundation Administration 
 
 ## Collection-level 
 
-You manage collection-level permissions through the [web portal admin context](../../user-guide/work-web-portal.md#admin-context) or [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
+You manage collection-level permissions through the [web portal admin context](../../project/navigation/go-to-service-page.md#collection-admin-context) or [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#collection-level-permissions). Project Collection Administrators are granted all collection-level permissions. Other collection-level groups have select permission assignments.
 
 
 <table valign="top" width="100%">
@@ -733,7 +733,7 @@ You manage collection-level permissions through the [web portal admin context](.
 
 ## Project-level permissions
 
-You manage project-level permissions from the [web portal admin context](../../user-guide/work-web-portal.md#admin-context) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
+You manage project-level permissions from the [web portal admin context](../../project/navigation/go-to-service-page.md#project-admin-context) or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#team-project-level-permissions). Project Administrators are assigned all project-level permissions. Other project-level groups are assigned a subset of these permissions.
 
 
 <table valign="top" width="100%">

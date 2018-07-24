@@ -61,7 +61,7 @@ The Stories Overview report lists all user stories, filtered by area and iterati
 -   Stories appear in gray type when their assigned iteration or area is outside the filtered set, but they have tasks or child stories that are within the filtered set of iterations or product areas.  
   
     > [!NOTE]  
-    >  For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 ### Required Activities for Tracking Work Items  
  For the Stories Overview report to be useful and accurate, the team must perform the following activities to track work items:  
@@ -82,7 +82,7 @@ The Stories Overview report lists all user stories, filtered by area and iterati
 -   Specify the **Iteration** and **Area** paths for each story, task, test case, and bug.  
   
     > [!NOTE]  
-    >  For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 <a name="Interpreting"></a> 
 ## Interpreting the Report  

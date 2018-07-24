@@ -101,7 +101,7 @@ A security group that is defined when a team is created and automatically popula
 
 ## Tenant
 
-An Azure Active Directory used to manage access or billing. To learn more, see [Change Azure AD tenant](../accounts/change-account-location.md)
+An Azure Active Directory used to manage access or billing. To learn more, see [Change Azure AD tenant](../accounts/change-organization-location.md)
 
 
 <!---

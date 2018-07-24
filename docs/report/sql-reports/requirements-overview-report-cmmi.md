@@ -60,7 +60,7 @@ The Requirements Overview report lists all requirements, filtered by area and it
 -   Requirements appear in gray type when their assigned iteration or area is outside the filtered set, but they have Tasks or child Requirements that are within the filtered set of iterations or product areas.  
   
     > [!NOTE]
-    >  For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 ### Required Activities for Tracking Work Items  
  For the Requirements Overview report to be useful and accurate, the team must perform the following activities to track work items:  
@@ -81,7 +81,7 @@ The Requirements Overview report lists all requirements, filtered by area and it
 -   Specify the **Iteration** and **Area** paths for each requirement, task, test case, and bug.  
   
     > [!NOTE]
-    >  For information about how to define iteration and area paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  For information about how to define iteration and area paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 ##  <a name="Interpreting"></a> Interpreting the Report  
  The Requirements Overview report shows overall work progress in the three areas that are important to completing and closing a Requirement:  

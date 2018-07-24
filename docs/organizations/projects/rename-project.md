@@ -24,7 +24,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 
 [!INCLUDE [temp](../../_shared/navigation.md)] 
 
-[!INCLUDE [temp](../../_shared/open-admin-account-settings.md)] 
+[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)] 
 
 ## Choose to rename a project 
 ::: moniker range=">= tfs-2017"

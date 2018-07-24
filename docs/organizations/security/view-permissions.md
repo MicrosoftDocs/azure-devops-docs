@@ -68,6 +68,6 @@ From the web portal, open the Security dialog for the object whose permissions y
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Look up the account owner or a project administrator](lookup-account-owner-admin.md) 
+> [Look up the organization owner or a project administrator](lookup-organization-owner-admin.md) 
 
 

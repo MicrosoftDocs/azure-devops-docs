@@ -19,7 +19,7 @@ ms.date: 08/15/2017
 While most permissions are governed by belonging to a security group or defined at the object level, team settings are managed by the team administrator role.
 
 For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing and configuring [team assets](../../organizations/settings/about-teams-and-settings.md).  
-Administrators
+
 In addition to team administrators, all members of the Project Administrators and Project Collection Administrators groups can manage settings for all teams as well as add team administrators. 
 
 ## Set team defaults 
@@ -33,7 +33,7 @@ These include the following associations made for each team:
 - The default iteration path 
 - The selected iteration paths 
 
-For details, see [Set team defaults](set-team-defaults.md). 
+For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
 
 ## Enable team backlogs and configure how bugs are managed on backlogs and boards    
 

@@ -70,7 +70,7 @@ To get started with a code base, [set up Git](../../git/gitquickstart.md) or [se
 	![Web portal, TFS, Overview](_img/connect-tp-tfs-web-portal.png) 
 ::: moniker-end   
 
-To learn more about each page and the tasks you can perform, see [Work in the web portal](../../user-guide/work-web-portal.md).
+To learn more about each page and the tasks you can perform, see [Navigation basics](../../project/navigation/index.md).
 
 
 <a name="logindifferentcred"></a>
@@ -295,7 +295,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 ## Related articles
 
-- [Work in web portal](../../user-guide/work-web-portal.md)  
+- [Work in web portal](../../project/navigation/index.md)  
 - [Work in Team Explorer](../../user-guide/work-team-explorer.md)  
 - [Troubleshoot connection](../../user-guide/troubleshoot-connection.md)  
 
@@ -305,7 +305,7 @@ To start planning and tracking work, see [Get started with Agile tools to plan a
 
 ### User accounts and licensing
 
-To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (VSTS)](../accounts/add-account-users-from-user-hub.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
+To connect to a project, you need your user account added to the project. This is typically done by the [organization owner (VSTS)](../accounts/add-organization-users-from-user-hub.md) or a [project administrator](../security/set-project-collection-level-permissions.md). 
 
 ::: moniker range="vsts"
 VSTS provides access to the first 5 account users free. After that, you need to [pay for more users (VSTS)](../../billing/buy-basic-access-add-users.md). 

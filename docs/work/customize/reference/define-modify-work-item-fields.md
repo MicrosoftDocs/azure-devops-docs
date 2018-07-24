@@ -83,7 +83,7 @@ The following list shows the supported data types:
 </td></tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td><p>Specifies a field that displays entries in a hierarchical or tree structure, such as the requirements to display area and iteration paths for a product.   For more information, see [Add and modify area and iteration paths](../set-area-paths.md).</p>
+	<td><p>Specifies a field that displays entries in a hierarchical or tree structure, such as the requirements to display area and iteration paths for a product.   For more information, see [Add and modify area and iteration paths](../../../organizations/settings/set-area-paths.md).</p>
 
 <blockquote><b>Note:</b> The **System.AreaPath** and **System.IterationPath** fields are the only fields that use this data type. You cannot define a custom field using this data type. For the client work item form, you add the **System.AreaPath** and **System.IterationPath** fields to a work item form by using the **WorkItemClassificationControl type** attribute. </blockquote>
 </td></tr>

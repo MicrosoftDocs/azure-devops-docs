@@ -191,9 +191,9 @@ The Analytics service, which is in preview, provides a number of [additional wid
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Additional charts  
-- If your team project has a project portal and SharePoint site configured, you can access several [Excel charts](../excel/excel-reports.md). These include charts to monitor code quality, testing, and bug tracking activity.
-- If your team project has [SQL Server reports](../sql-reports/reporting-services-reports.md) added, you can access several reports that include status and trend activities. If you need to add reporting, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).
-- If your team project has reporting services added, you can [create an Excel chart from a work item query](../excel/create-status-and-trend-excel-reports.md).
+- If your project has a project portal and SharePoint site configured, you can access several [Excel charts](../excel/excel-reports.md). These include charts to monitor code quality, testing, and bug tracking activity.
+- If your project has [SQL Server reports](../sql-reports/reporting-services-reports.md) added, you can access several reports that include status and trend activities. If you need to add reporting, see [Add reports to a project](../admin/add-reports-to-a-team-project.md).
+- If your project has reporting services added, you can [create an Excel chart from a work item query](../excel/create-status-and-trend-excel-reports.md).
 
 ### Query-based charts versus Excel-generated PivotCharts  
 
