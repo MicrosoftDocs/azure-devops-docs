@@ -122,7 +122,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
   &$expand=TargetWorkItem($select=WorkItemId, Title)
 ```
 
-Alternatively, you can move the filter to `$filter` expand option in the `$expand` clause. However, it changes the semantic of the query. For example, the following query gets all the links from a given project and conditionally expands the target only if it exists in the same project. Although valid, this approach might cause onfusion as it may be difficult to determine whether a property is not expanded because it is `null` or because it was filtered out. Use this solution only if you really need this particular behavior.
+Alternatively, you can move the filter to `$filter` expand option in the `$expand` clause. However, it changes the semantic of the query. For example, the following query gets all the links from a given project and conditionally expands the target only if it exists in the same project. Although valid, this approach might cause confusion as it may be difficult to determine whether a property is not expanded because it is `null` or because it was filtered out. Use this solution only if you really need this particular behavior.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
