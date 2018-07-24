@@ -459,14 +459,14 @@ Combine these elements to apply multiple emphasis to text.
 
 <pre>
 Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~ 
-**_Bold, italizied text_**  
+**_Bold, italicized text_**  
 **~~Bold, strike-through text~~**
 </pre>
 
 <br/>
 **Result:**  
 Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italizied text_**   
+**_Bold, italicized text_**   
 **~~Bold, strike-through text~~**  
 
 
