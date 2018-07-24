@@ -104,7 +104,7 @@ following recommendations:
 
 The amount of disk space taken up by Search depends mainly on the type of
 code files in version control that will be indexed. As a general guideline,
-allocate upto 35% of the size of all the collections that will be indexed.
+allocate up to 35% of the size of all the collections that will be indexed.
 
 ### Software Dependencies
 
