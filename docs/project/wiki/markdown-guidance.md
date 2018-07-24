@@ -363,7 +363,7 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 
 ![Sample flowchart with three items](../../git/_img/pull-requests/markdown_sample_image.png)
 
-The path to the image file can be a relative path or the absolute path in Git or TVFC, just like the path to another Markdown file in a link.  
+The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
 <ul>
 <li>Relative path:<br/> ```![Image alt text](./image.png)``` </li>
 <li>Absolute path in Git:<br/> ```![Image alt text](/_img/markdown-guidance/image.png)``` </li>
