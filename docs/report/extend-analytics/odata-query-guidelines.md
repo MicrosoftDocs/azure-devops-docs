@@ -63,7 +63,7 @@ Queries that violate an OData error rule will result in a failed response with a
 - [✔️ DO wait or stop the operation if your query exceeds usage limits](#restrict-wait-stop)
 - [✔️ DO wait or stop the operation if your query fails with a timeout](#question-41065)
 - [✔️ DO include `DateSK` or `DateValue` column in `groupby` clause when you aggregate over snapshot tables](#restrict-aggregate-snapshot)
-- [✔️ DO explicitly address entities with filter clauses](#restrict-explicity-address-entities)
+- [✔️ DO explicitly address entities with filter clauses](#restrict-explicitly-address-entities)
 - [✔️ DO use `WorkItemRevisions` entity set to load all the revisions for a given work item](#restrict-workitem-revisions)
 - [✔️ DO use batch endpoint for long queries](#restrict-do-use-batch-endpoint)
 - [✔️ DO specify time zone when filtering on date columns](#restrict-time-zone)
@@ -222,7 +222,7 @@ OData syntax provides a way to access a particular entity by including its keys 
 
 As the error messages hints, certain client tools can abuse direct entity addressing. Instead of loading all the data in a single request, such clients might choose to query for each entity independently. This is discouraged as it can result in a very high number of requests. Instead, we recommend you use explicit entity addressing as explained in the following section.
 
-<a id="restrict-explicity-address-entities"> </a>
+<a id="restrict-explicitly-address-entities"> </a>
 ### ✔️ DO explicitly address entities with filter clauses
 
 If you want to fetch data for a single entity, you should use the same approach as for a collection of entities and explicitly define filters in the `$filter` clause.
