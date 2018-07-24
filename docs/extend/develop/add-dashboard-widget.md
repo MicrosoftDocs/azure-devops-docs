@@ -830,7 +830,7 @@ This will allow the framework to uniquely identify the widget within the extensi
 The function mapped to `HelloWorldWidget3` via `VSS.register` currently returns an object that satisfies the `IWidget` contract.
 Since our widget now needs configuration, this function needs to be updated to return an object that satisfies the `IConfigurableWidget` contract.
 To do this, update the return statement to include a property called reload as below. The value for this property will be a function that calls the `getQueryInfo` method one more time.
-This reload method gets called by the framework everytime the user input changes to show the live preview. This is also called when the configuration is saved.
+This reload method gets called by the framework every time the user input changes to show the live preview. This is also called when the configuration is saved.
 
 ```JavaScript
 return {
@@ -1035,7 +1035,7 @@ This is because our sample widgets do not display the widget name anywhere. Let 
 
 To do this, replace the hard-coded text "Hello World" with `widgetSettings.name` in the line where we set the text of the `h2` element.
 This will ensure that the widget name gets displayed every time the widget gets loaded on page refresh.
-Since we want the live preview to be updated everytime the configuration changes, we should add the same code in the `reload` part of our code as well.
+Since we want the live preview to be updated every time the configuration changes, we should add the same code in the `reload` part of our code as well.
 The final return statement in `hello-world3.html` will be as follows:
 
 ```JavaScript
