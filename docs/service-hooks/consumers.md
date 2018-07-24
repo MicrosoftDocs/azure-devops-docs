@@ -399,7 +399,7 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
    * Required: **No**
  * **buildParams**
    * Build parameters
-   * Build parameteres names and values separated by a colon(e.g. "param1:value1") with each name-value pair appearing on its own line of text
+   * Build parameters names and values separated by a colon(e.g. "param1:value1") with each name-value pair appearing on its own line of text
    * Data type: **string**
    * Required: **No**
 
