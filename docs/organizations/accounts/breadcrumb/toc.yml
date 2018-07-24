@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
-    - name: Account Management
+    - name: Organization Management
       tocHref: /vsts/
       topicHref: /vsts/organizations/accounts/index

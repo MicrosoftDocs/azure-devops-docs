@@ -32,7 +32,7 @@ You can use the Bug Progress report in Office Excel to track the team's progress
 -   Define Bugs, and specify their **Iteration** and **Area** paths.  
   
     > [!NOTE]
-    >  For information about how to define area and iteration paths, see [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) .  
+    >  For information about how to define area and iteration paths, see [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) .  
   
 -   Specify the **Priority** of each Bug.  
   

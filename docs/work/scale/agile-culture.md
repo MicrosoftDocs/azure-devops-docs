@@ -161,7 +161,7 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 ## Related articles  
 
-Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one in VSTS](../../organizations/projects/connect-to-projects.md)  or on an [on-premises TFS](../../organizations/projects/create-project.md). 
+Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one](../../organizations/projects/create-project.md). 
 
 If you're ready to move from one team to two teams, or configure several teams, see [Multiple teams](multiple-teams.md). To add a team administrator or configure team assets, see [Configure team settings](manage-team-assets.md). 
 

@@ -1,6 +1,6 @@
 ---
 title: Remove direct assignments
-description: Learn how to remove direct assignments in your VSTS (Visual Studio Online, VSO, VSTS) account
+description: Learn how to remove direct assignments in your VSTS (Visual Studio Online, VSO, VSTS) organization
 ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
@@ -18,11 +18,11 @@ If you want a user’s resources to only be managed by the groups which they are
 
 ## Prerequisites
 
-* You must be a member of the Project Collection Administrators group for the account which you would like to manage users' direct assignments.
+* You must be a member of the Project Collection Administrators group for the organization which you would like to manage users' direct assignments.
 
 ## Remove assignments
 
-1. Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
 2. Go to the **Users** tab in Settings.
 

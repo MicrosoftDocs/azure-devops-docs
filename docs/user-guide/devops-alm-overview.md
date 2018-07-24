@@ -113,12 +113,12 @@ Release Management helps you automate the deployment and testing of your softwar
 
 As your team grows, your tools will grow with you. You can easily add teams which can focus on their set of backlog stories. Each team you create gets access to their set of dashboards, Agile planning tools, and other collaborative tools.  
 
-[![Add teams](_img/overview/ov-scale-1.png)](../work/scale/multiple-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../work/scale/set-team-defaults.md)[![Manage team assets](_img/overview/ov-scale-3.png)](../work/scale/manage-team-assets.md)  
+[![Add teams](_img/overview/ov-scale-1.png)](../work/scale/multiple-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-team-defaults.md)[![Manage team assets](_img/overview/ov-scale-3.png)](../work/scale/manage-team-assets.md)  
 
  
 ## Related notes
 
-Once you've signed up for VSTS or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](work-web-portal.md).    
+Once you've signed up for VSTS or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).    
 
 Other topics of interest:  
  

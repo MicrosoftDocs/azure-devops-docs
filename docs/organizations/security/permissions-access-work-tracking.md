@@ -78,7 +78,7 @@ You set project-level information permissions from the admin page for a team pro
 
 
 <tr>
-<td align="left">Area node: [Edit work items under the node](../../work/customize/set-area-paths.md) 
+<td align="left">Area node: [Edit work items under the node](../../organizations/settings/set-area-paths.md) 
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -87,7 +87,7 @@ You set project-level information permissions from the admin page for a team pro
 <td>![checkmark](_img/icons/checkmark.png)</td>
 </tr>
 <tr>
-<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../work/customize/set-iteration-paths-sprints.md)  
+<td align="left">[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)  
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -203,7 +203,7 @@ Stakeholder access supports business owners and analysts and other team members 
 For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://visualstudio.microsoft.com/vsts/compare-features/).
 
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
-- **VSTS**: [Add users and assign licenses in VSTS](../accounts/add-account-users-from-user-hub.md)
+- **VSTS**: [Add users and assign licenses in VSTS](../accounts/add-organization-users-from-user-hub.md)
 - **TFS**: [Change access levels](change-access-levels.md)  
 
 

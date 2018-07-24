@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
 
-Team members and members of the of the Contributors group for a team project can view charts and dashboards. The most common built-in groups include Readers, Contributors, and Project Administrators. For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../../organizations/security/permissions-access.md).  
+Team members and members of the of the Contributors group for a project can view charts and dashboards. The most common built-in groups include Readers, Contributors, and Project Administrators. For a simplified view of all default permissions assigned to built-in groups, see [Default permissions and access](../../organizations/security/permissions-access.md).  
 
 Stakeholders have limited access to view charts and dashboards. To learn more, see [About access levels](../../organizations/security/access-levels.md).
 
@@ -25,5 +25,5 @@ For an overview of dashboard and chart features, see [Dashboards, charts, & widg
 
 ## Related notes
 
-- [Work effectively from your account hub](../../user-guide/account-home-pages.md)
+- [Work across projects](../../project/navigation/work-across-projects.md)
 - [Add a team administrator](../../work/scale/add-team-administrator.md) 

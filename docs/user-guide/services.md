@@ -166,7 +166,7 @@ There are a number of features and tasks associated with administrating a collab
 <img src="_img/tour-admin-project-level.png" alt="Product backlog" style="border: 2px solid #C3C3C3;" />
 
 > [!div class="mx-tdBreakAll"]  
-> |Account Management (VSTS)  | Administration (TFS)  | 
+> |Organization Management (VSTS)  | Administration (TFS)  | 
 > |-------------|----------| 
 > |- Manage users, access, and billing<br/>- Add and manage team projects and teams<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions|-Manage users, access, and permissions<br/>- Add and manage teams, team projects, and collections<br/>- Customize work tracking processes<br/>- Manage build retention policies<br/>- Add and manage build agent pools<br/>- Add and manage extensions<br/>- Configure an SMTP server (supports feedback requests and notification features)<br/>- Configure a backup schedule and manage database backups<br/>- Manage upgrades |
 

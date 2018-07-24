@@ -35,8 +35,8 @@ Use this topic to access articles that will show you how to:
 ## Manage organizational access with Azure AD
 
 * [Add VSTS users to your Azure AD](../../organizations/accounts/add-users-to-aad.md)
-* [Connect VSTS account to Azure AD](../../organizations/accounts/connect-account-to-aad.md)
-* [Disconnect VSTS account from Azure AD](../../organizations/accounts/disconnect-account-from-aad.md)
+* [Connect VSTS account to Azure AD](../../organizations/accounts/connect-organization-to-aad.md)
+* [Disconnect VSTS account from Azure AD](../../organizations/accounts/disconnect-organization-from-aad.md)
 * [Delete users from VSTS connected to Azure AD](../../organizations/accounts/delete-users-from-services-aad.md)
 * [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) 
 

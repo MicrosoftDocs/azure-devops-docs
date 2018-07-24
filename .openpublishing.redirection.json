@@ -2502,7 +2502,7 @@
     },
     {
       "source_path": "docs/work/customize/modify-areas-iterations.md",
-      "redirect_url": "/vsts/work/customize/set-area-paths",
+      "redirect_url": "/vsts/organizations/settings/set-area-paths",
       "redirect_document_id": false
     },
     {
@@ -7958,6 +7958,31 @@
     {
       "source_path": "docs/organizations/settings/switch-team-context.md",
       "redirect_url": "/vsts/project/navigation/go-to-project-repo",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "docs/work/customize/about-areas-iterations.md",
+      "redirect_url": "/vsts/organizations/settings/about-areas-iterations",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "docs/work/customize/set-area-paths.md",
+      "redirect_url": "/vsts/organizations/settings/set-area-paths",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "docs/work/customize/set-iteration-paths-sprints.md",
+      "redirect_url": "/vsts/organizations/settings/set-iteration-paths-sprints",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "docs/work/scale/set-team-defaults.md",
+      "redirect_url": "/vsts/organizations/settings/set-team-defaults",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/work-web-portal.md",
+      "redirect_url": "/vsts/project/navigation/index",
       "redirect_document_id": false
     }
   ]

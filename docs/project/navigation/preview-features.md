@@ -10,13 +10,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-ms.date: 06/21/2018
+ms.date: 07/21/2018
 ---
 
 
 # Enable preview features 
 
-<b>VSTS</b>
+**VSTS**
 
 As new features are introduced, you can turn them on or off. That way, you can try them out, provide feedback, and work with those features that meet your requirements.  
 
@@ -28,7 +28,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level)| [Preview features per VSTS organization](#account-level)|  
 > |-------------|----------|  
-> |- [New build result page]()<br/>- [New Dashboards Experience](../../report/dashboards/dashboards.md)<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>- [New Test Plan Experience](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#test-1)<br/>   |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/build/yaml.md)<br/>- [Git Forks](../../git/concepts/forks.md)<br/>- [New Dashboards Experience](../../report/dashboards/dashboards.md)<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>- [New Test Plan Experience](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#test-1)<br/>   |
+> |- [New build result page]()<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/build/yaml.md)<br/>- [Git Forks](../../git/concepts/forks.md)<br/>- New build results page<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)  |
 
 
 <a id="user-level">  </a>
@@ -36,16 +36,30 @@ Some features provide a new user interface and functionality, which can be manag
 
 From time to time, a new feature is introduced in Preview mode, which allows you to turn it on or off. 
 
-0. To access the Preview features options, open your personal account menu, and select **Preview features**. 
+ [New navigation](#tab/new-nav)
+
+0. To access the Preview features options, open your profile menu, and select **Preview features**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](_img/manage-features/profile-menu.png)  
+	> ![Open Preview Features](../../_shared/_img/settings/profile-menu-vert.png)  
 
-0. To enable or disable a feature, click the slider. 
+0. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Preview features options for yourself](_img/manage-features/preview-features-user-level-s136.png) 
+	> ![Preview features options for yourself](_img/manage-features/user-s137.png) 
 
+
+# [Previous navigation](#tab/previous-nav)  
+
+0. To access the Preview features options, open your profile menu, and select **Preview features**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Preview Features](../../_shared/_img/settings/profile-menu-horz.png)  
+
+0. To enable or disable a feature, choose the slider. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Preview features options for yourself](_img/manage-features/user-s137.png) 
 
 <a id="account-level">  </a>
 ## Enable features at the organization (account) level (for all users)  
@@ -56,16 +70,17 @@ When you enable a feature at the account level, you essentially turn it on for a
 > If you don't see the **for this account** menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for the account](_img/manage-features/preview-features-account-level-s136.png)
+> ![Preview features options for the account](_img/manage-features/account-s137.png)
 
 
-## Features now enabled for all accounts 
+## Features now enabled for all VSTS projects 
 - [Approval gates in releases](../../pipelines/release/approvals/index.md)  
-- [New Queries Experience](../../work/track/view-run-query.md)  
 - [Combine email recipients](../../notifications/manage-team-notifications.md) 
-- [New Account Landing page](../../user-guide/account-home-pages.md)  
-- [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)   
+- [New Dashboards Experience](../../report/dashboards/dashboards.md)  
+- [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)  
+- [New Queries Experience](../../work/track/view-run-query.md)   
 - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md) 
+- [New Test Plan Experience](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#test-1)<br/>
 - [New Work Items Hub](../../work/work-items/view-add-work-items.md)   
 - [NuGet.org upstream sources](../../package/nuget/upstream-sources.md) 
 - [Out of the box notifications](../../notifications/manage-personal-notifications.md).   
@@ -78,11 +93,6 @@ When you enable a feature at the account level, you essentially turn it on for a
 - [Wiki](../wiki/add-edit-wiki.md)  
 
 <!---
-<a id="wiki">  </a>
-## Wiki 
-
-You can enable a built-in Wiki for your team project. This feature is in preview and when enabled adds a **Wiki** hub from which you can [view and edit wiki pages](add-edit-wiki.md). If you were using the Wiki Marketplace extension, you can [migrate your existing pages to the new team project wiki](migrate-extension-wiki-pages.md). 
-
 
 <a id="oob-notifications">  </a>
 ## Out of the box notifications 

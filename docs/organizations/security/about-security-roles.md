@@ -83,9 +83,9 @@ For [each team that you add](../../work/scale/multiple-teams.md), you can assign
 - **Create and manage team alerts**  
 	Can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../notifications/manage-team-notifications.md).	 
 - <a id="team-rooms" />**Select team area paths**   
-	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. For details, see [Set team defaults](../../work/scale/set-team-defaults.md).	
+	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md).	
 - **Select team sprints** 
-	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. For details, see [Set team defaults](../../work/scale/set-team-defaults.md). 
+	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
 - **Configure team backlogs**   
 	Can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. For details, see [Select backlog levels for your team](../../work/customize/select-backlog-navigation-levels.md).  
 - **Customize the Kanban board**   

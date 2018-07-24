@@ -156,7 +156,7 @@ For more information, see [Add administrators, set permissions at the project-le
   
      For *DirectoryPath*, specify the directory location of the TypeDefinitions folder for the process template that you downloaded. The directory path should follow this structure: *Drive*:*MSFTemplateFolder* WorkItem TrackingTypeDefinitions.  
   
--   (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../../user-guide/work-web-portal.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json#refresh-web-portal) to see the changes.  
+-   (Optional) Verify the work item types are accessible by opening Team Explorer or the web portal. You might have to [refresh the cache](../../../project/navigation/index.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json#refresh-web-portal) to see the changes.  
   
 ## 7. Import the categories file  
  Import the category file located in the WorkItem Tracking folder of the process template that you downloaded. Categories support intelligent grouping of work item types. To learn more, see [Use categories to group work item types](use-categories-to-group-work-item-types.md).  
@@ -248,7 +248,7 @@ Open a web portal and [determine if all features are available to you](../new-fe
   
  You can grant permissions by following the procedures that are indicated for the specific scope area:  
   
--   You can set project-level permissions or area node permissions from the administration page of web portal. See [Permissions reference](../../../organizations/security/permissions.md) and [Customize your area or iteration paths](../set-area-paths.md).  update-a-team-project-manually-to-support-test-management.md
+-   You can set project-level permissions or area node permissions from the administration page of web portal. See [Permissions reference](../../../organizations/security/permissions.md) and [Customize your area or iteration paths](../../../organizations/settings/set-area-paths.md).  update-a-team-project-manually-to-support-test-management.md
   
 -   You can set project collection permissions from Team Explorer by choosing **Team, Team Project Collection Settings, Security**, by opening and using the administration console for Team Foundation, or by using the **TFSSecurity** and **tf** command-line tools. For more information, see [Add an administrator](../../../organizations/security/set-project-collection-level-permissions.md).  
   

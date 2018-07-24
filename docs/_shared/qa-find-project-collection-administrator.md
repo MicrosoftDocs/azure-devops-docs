@@ -6,7 +6,7 @@ in your VSTS account's security settings.
 
 0.	Go to your VSTS account's security settings. 
 
-	<img alt="Click gear button, Security" src="./_img/account-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Click gear button, Security" src="./_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
 
 0.	Under **Security**, view your project collection administrators.
 

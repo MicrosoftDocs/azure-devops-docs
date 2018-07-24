@@ -1,6 +1,6 @@
 ---
-title: Add a user who can purchase for your VSTS account
-description: Add a backup user or other billing manager who can buy via the Visual Studio Marketplace for your VSTS account (Visual Studio Team Services)
+title: Add a user who can purchase for your VSTS organization
+description: Add a backup user or other billing manager who can buy via the Visual Studio Marketplace for your VSTS organization (Visual Studio Team Services)
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
@@ -12,12 +12,12 @@ ms.date: 04/18/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
-# Add a user to make purchases for your VSTS account
+# Add a user to make purchases for your VSTS organization
 
 **VSTS**
 
-To let another user manage billing or make purchases through Visual Studio Marketplace for your VSTS account,
-add [**owner**](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner), [**contributor**](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor), [**service admin**](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), or [**co-admin**](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) roles to users in the Azure subscription that's linked to your VSTS account.
+To let another user manage billing or make purchases through Visual Studio Marketplace for your VSTS organization,
+add [**owner**](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner), [**contributor**](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor), [**service admin**](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), or [**co-admin**](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) roles to users in the Azure subscription that's linked to your VSTS organization.
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
 
@@ -39,7 +39,7 @@ add [**owner**](https://docs.microsoft.com/en-us/azure/role-based-access-control
 
 6. If your update is complete, choose **Save**.
 
-A backup billing manager is added to your VSTS account.
+A backup billing manager is added to your VSTS organization.
 
 >[!Note]
 >If you're giving access to a user who isn't already in your directory, this user must accept their invitation, received via email, before they have access to the Azure subscription.

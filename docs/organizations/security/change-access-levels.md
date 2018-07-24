@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013 <= tfs-2018'
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!IMPORTANT]
-> This topic applies to managing access levels for team projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for VSTS, see [Manage users and access in VSTS](../accounts/add-account-users-from-user-hub.md). For VSTS feature availability, see the [VSTS Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs).
+> This topic applies to managing access levels for team projects defined on an on-premises Team Foundation Server (TFS). To manage access levels for VSTS, see [Manage users and access in VSTS](../accounts/add-organization-users-from-user-hub.md). For VSTS feature availability, see the [VSTS Feature Matrix](https://visualstudio.microsoft.com/pricing/visual-studio-online-feature-matrix-vs).
 
 To connect and use the functions and features that TFS provides, [users must be added to a group with the appropriate permissions](add-users-team-project.md). To use select web portal features, they must also belong to the access level that enables access to that feature. For a description and usage information for each access level, see [Access levels](access-levels.md).
 
@@ -133,5 +133,5 @@ Within the admin context, there are several hubs which support administrating fe
 - [About access levels](access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Permissions & access](permissions-access.md)  
-- [Work in the web portal](../../user-guide/work-web-portal.md)  
+- [Navigation basics](../../project/navigation/index.md)  
 
