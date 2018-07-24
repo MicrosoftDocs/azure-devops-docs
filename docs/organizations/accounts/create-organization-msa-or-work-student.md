@@ -40,7 +40,7 @@ so your team can build often, test early, and ship faster.
 	when you sign up for VSTS.
 
 	Use your Microsoft account if you don't need to authenticate users 
-	for an organization with [Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
+	for an organization with [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis). 
 	All users must sign in with Microsoft accounts to your VSTS organization.
 
 *	Alternatively, to authenticate users and control organization access through your 
@@ -53,10 +53,10 @@ so your team can build often, test early, and ship faster.
 
 	You'll need a work or school account that's managed by your organization's directory. 
 	If you use Azure or Office 365, you might have this already.  If you don't, learn how to 
-	[sign up for Azure as an organization](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/).
+	[sign up for Azure as an organization](/azure/active-directory/fundamentals/sign-up-organization).
 
 	To use existing on-premises identities with VSTS, learn how to 
-	[use Azure Active Directory Connect for integrating on-premises directories with Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).
+	[use Azure Active Directory Connect for integrating on-premises directories with Azure Active Directory](/azure/active-directory/connect/active-directory-aadconnect).
 
 
 ## How does Azure Active Directory control access to VSTS?
@@ -65,7 +65,7 @@ VSTS authenticates users through your organization's directory
 so that only users who are members in that directory can get access to your VSTS organization. 
 When you remove users from that directory, 
 they can't access your organization anymore. Only specific 
-[Azure Active Directory administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/) 
+[Azure Active Directory administrators](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 
 can manage users in your directory, so administrators control who can get access to your VSTS organization.
 
 Without Azure Active Directory, you're solely responsible for controlling 

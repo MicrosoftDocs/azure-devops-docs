@@ -13,7 +13,7 @@ hide_comments: true
 
 # Work Items hub and VM-based Azure DevOps Project – VSTS Sprint 131 Update
 
-In the **Sprint 131 Update** of Visual Studio Team Services (VSTS), there are a few features that have received a large amount of feedback and activity on UserVoice. One is the [Work Items hub](#focus-on-important-work-using-the-work-items-hub), which now becomes generally available to bring important work to the forefront of your daily workflow. We also added [virtual machine](#retain-more-control-of-your-app-by-deploying-your-azure-devops-project-to-a-virtual-machine) as an option for configuring [Azure DevOps Projects](https://azure.microsoft.com/en-us/features/devops-projects/) since we know that retaining lower-level control over web applications is important for some.
+In the **Sprint 131 Update** of Visual Studio Team Services (VSTS), there are a few features that have received a large amount of feedback and activity on UserVoice. One is the [Work Items hub](#focus-on-important-work-using-the-work-items-hub), which now becomes generally available to bring important work to the forefront of your daily workflow. We also added [virtual machine](#retain-more-control-of-your-app-by-deploying-your-azure-devops-project-to-a-virtual-machine) as an option for configuring [Azure DevOps Projects](https://azure.microsoft.com/features/devops-projects/) since we know that retaining lower-level control over web applications is important for some.
 
 Other highlights include:
 
@@ -106,7 +106,7 @@ Then watch build tags appear on your GitHub or GitHub Enterprise repository.
 
 ### Isolate Azure Resource Manager service endpoints to Resource Groups
 
-By default, the Azure Resource Manager service endpoints that are automatically configured in VSTS get **Contributor** role on the subscription. Now you have the option to create an endpoint and restrict the scope to a specific resource group within the subscription, which provides some isolation to ensure the endpoint only interacts with what it should. Select **Advanced options** when prompted to **Authorize** the Azure subsciption.
+By default, the Azure Resource Manager service endpoints that are automatically configured in VSTS get **Contributor** role on the subscription. Now you have the option to create an endpoint and restrict the scope to a specific resource group within the subscription, which provides some isolation to ensure the endpoint only interacts with what it should. Select **Advanced options** when prompted to **Authorize** the Azure subscription.
 
 > [!div class="mx-imgBorder"]
 ![Azure subscription Authorize advanced options](_img/131_10.png)

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eb47069f-e49b-424d-a674-91cb733f3518
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
@@ -124,7 +125,7 @@ Open a work item and click the Links tab. From the links control tab you can lin
 
 ![Work item form link toolbar controls](_img/IC673344.png)  
 
-# [Team Explorer Everwhere](#tab/tee) 
+# [Team Explorer Everywhere](#tab/tee) 
 
 Open a work item and click the Links tab. From the links control tab you can link to new or existing work items, delete a link, or open the linked object.
 

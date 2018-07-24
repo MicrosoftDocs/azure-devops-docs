@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
 
 This tutorial shows how to configure a continuous delivery (CD) workflow for
-[Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/app-service-changes-existing-services/)
+[Azure App Service](/azure/app-service/app-service-web-overview)
 by using VSTS. CD is a great option for projects that require multiple and frequent
 contributions to be integrated.
 
