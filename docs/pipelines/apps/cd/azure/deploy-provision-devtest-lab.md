@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-The [Azure DevTest Labs](https://azure.microsoft.com/en-us/services/devtest-lab/)
+The [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/)
 service lets you quickly provision development and test environments using reusable
 templates. You can use pre-created images, minimize waste with quotas and policies,
 and minimize costs by using automated shutdown. 

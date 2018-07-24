@@ -168,7 +168,7 @@ Once you’ve configured a manually triggered policy, users can run it by select
 
 ![manual build queue](_img/05_10_13.png)
 
-For required reviewer policies, we added the ability for administrators to specify a note that will be appended to the pull request timelime when the policy applies.
+For required reviewer policies, we added the ability for administrators to specify a note that will be appended to the pull request timeline when the policy applies.
 
 ![required reviewer dialog](_img/05_10_14.png)
 

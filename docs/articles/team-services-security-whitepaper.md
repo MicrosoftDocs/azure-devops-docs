@@ -91,7 +91,7 @@ This data includes potentially sensitive or private information such as
 the contents of source files and the attachments on work items. For most
 VSTS projects, the majority of storage in use is this type of
 unstructured blob storage. For more information, see documentation on
-[Azure Blob Storage](https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-blobs/).
+[Azure Blob Storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
 **Azure SQL database storage** is used to store the structured and
 transactional aspects of your account, including project metadata, the
@@ -99,7 +99,7 @@ versioned source control history, and work item details. Database
 storage gives you fast access to the important elements of your project
 and provides indexes into the blob storage to look up files and
 attachments. For more information, see documentation on 
-[Azure SQL Database](https://azure.microsoft.com/en-us/documentation/services/sql-database/).
+[Azure SQL Database](/azure/sql-database/).
 
 Administrators can manage access to resources by granting or restricting
 permissions on user identities or groups. VSTS uses federated
@@ -230,7 +230,7 @@ your team's success. Because of this, we publish a service level
 agreement (SLA) and provide a financial guarantee to ensure we meet this
 agreement each month. For more specifics on our SLA and financial
 guarantees, please see 
-[VSTS SLAs](https://azure.microsoft.com/en-us/support/legal/sla/visual-studio-team-services/).
+[VSTS SLAs](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/).
 
 Of course, sometimes our partner teams or dependencies have incidents
 that affect VSTS. All our partner teams follow similar approaches to
@@ -490,7 +490,7 @@ lessons learned by operating the service.
 Finally, for some customers, it is important to understand third-party
 evaluation of our data security procedures. Towards that end, we have
 achieved ISO 27001:2013, HIPAA (Health Insurance Portability and Accountability Act)
- BAA (Business Associate Agreeement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications. 
+ BAA (Business Associate Agreement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications. 
 The SOC audit for VSTS covers controls for data security, availability, 
 processing integrity, and confidentiality. In general, the availability of SOC 1,
 SOC 2 reports and other audit material is restricted to customers who have signed 

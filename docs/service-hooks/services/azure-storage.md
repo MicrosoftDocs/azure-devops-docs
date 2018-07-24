@@ -52,7 +52,7 @@ and a queue can contain millions of messages, up to the total capacity limit of 
 
    <img alt="Open manage access keys" src="./_img/azure-storage/manage-access-keys.png" style="border: 1px solid #CCCCCC" />
 
-5. Copy the storage account name and primary acccess key.
+5. Copy the storage account name and primary access key.
 You need to provide these values when you create a Service Hook subscription.
 
    <img alt="Copy name and primary key values" src="./_img/azure-storage/access-keys.png" style="border: 1px solid #CCCCCC" />
@@ -124,7 +124,7 @@ for pricing related to their services.
 
 #### Q: Can I get more information about Microsoft Azure storage?
 
-A: Yes, go [here](http://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-queues/).
+A: Yes, go [here](/azure/storage/queues/storage-dotnet-how-to-use-queues).
 
 #### Q: Can I programmatically create subscriptions?
 

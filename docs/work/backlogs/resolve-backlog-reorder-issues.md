@@ -47,7 +47,7 @@ While you can create a hierarchy of backlog items, tasks, and bugs&mdash;we don'
 
 Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list. In other words, only create parent-child links one level deep between items that belong to a different category. Use the Feature work item type when you want to group user stories (Agile), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](../backlogs/organize-backlog.md), which creates parent-child links in the background.    
 
-<img src="../customize/_img/create-hierarchy-with-different-wits.png" alt="Create work items using different hiearchy" style="border: 1px solid #C3C3C3;" /> 
+<img src="../customize/_img/create-hierarchy-with-different-wits.png" alt="Create work items using different hierarchy" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="leaf-nodes">  </a>
 ## When you track bugs as requirements

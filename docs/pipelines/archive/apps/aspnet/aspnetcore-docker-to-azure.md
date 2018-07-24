@@ -32,7 +32,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 
 > [!Note]
 >
-> For a detailed walkthrough of manually creating a release pipeline, including the necessary Azure Container Service, see the following article in the Azure documentation: [Continuous Integration and Deployment of Multi-Container Docker Applications to Azure Container Service](https://azure.microsoft.com/en-us/documentation/articles/container-service-setup-ci-cd/).
+> For a detailed walkthrough of manually creating a release pipeline, including the necessary Azure Container Service, see the following article in the Azure documentation: [Continuous Integration and Deployment of Multi-Container Docker Applications to Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-setup-ci-cd/).
 
 ## Explore the release pipeline
 
@@ -80,7 +80,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 
 <h3 id="create_acs">How do I create an Azure Container Service?</h3>
 
-Follow the instructions on [Deploy an Azure Container Service cluster](https://azure.microsoft.com/documentation/articles/container-service-deployment/). Alternately, see [Continuous Integration and Deployment of Multi-Container Docker Applications to Azure Container Service](https://azure.microsoft.com/en-us/documentation/articles/container-service-setup-ci-cd/). Note that you'll always be asked to create a new resource group for the container service because the service is composed of many separate resources that you'll certainly want to manage as a group.
+Follow the instructions on [Deploy an Azure Container Service cluster](https://azure.microsoft.com/documentation/articles/container-service-deployment/). Alternately, see [Continuous Integration and Deployment of Multi-Container Docker Applications to Azure Container Service](https://azure.microsoft.com/documentation/articles/container-service-setup-ci-cd/). Note that you'll always be asked to create a new resource group for the container service because the service is composed of many separate resources that you'll certainly want to manage as a group.
 
 A key piece of information you need for the service is the public SSH key. Creating this is described in [How to use SSH keys with Windows on Azure](https://azure.microsoft.com/documentation/articles/virtual-machines-linux-ssh-from-windows/#which-key-files-do-you-need-to-create). In this topic, be sure to read both the "Create a private key" and "Create a private key for PuTTY" because the latter describes how to obtain the public SSH key that you need in the Azure portal.
 

@@ -22,7 +22,7 @@ can with Microsoft services like Office 365 and Azure?
 If your VSTS organization was created with a Microsoft account,
 you can connect your VSTS organization to your
 organization's directory (tenant) in
-[Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/).
+[Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 You can then sign in to VSTS with the same username
 and password that you use with these Microsoft services.
 You can also enforce policies for accessing
@@ -30,7 +30,7 @@ your team's critical resources and key assets.
 
 > To use existing on-premises identities with VSTS,
 > you can integrate on-premises directories with Azure AD by using
-> [Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).
+> [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 > To switch your VSTS organization to another directory,
 > learn [how to change your directory in Azure AD](change-organization-location.md).
 
@@ -43,7 +43,7 @@ get access to your VSTS organization.
 When users are removed from your directory,
 for example, because they've moved elsewhere,
 they can't access your organization anymore.
-Only specific [Azure AD administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/)
+Only specific [Azure AD administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)
 can manage users in your directory,
 so they control who can get access to your VSTS organization.
 
@@ -59,8 +59,8 @@ You'll need the following:
 
 * [Ownership of the VSTS organization](faq-add-delete-users.md#find-owner) that you want to connect to Azure AD.
 
-* A ["full" Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/),
-such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/en-us/offers/ms-azr-0003p/),
+* A ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/),
+such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/offers/ms-azr-0003p/),
 associated with your Azure Active Directory and at
 least co-administrator permissions for your subscription.
 You'll need both to make your directory appear in the Azure portal,
@@ -73,7 +73,7 @@ Azure AD to your VSTS organization. Learn about
 * To add users to Azure AD, you need global administrator permissions for your directory so you can add current VSTS users to that directory.
 
 Otherwise, work with your directory's global administrator to add users.
-Learn more about [Azure AD administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/).
+Learn more about [Azure AD administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
   To check your permissions, [Sign in to the Azure classic portal](https://manage.windowsazure.com/) with your
   work or school account. Go to your target directory.

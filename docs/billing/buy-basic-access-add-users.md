@@ -23,7 +23,7 @@ In this quickstart, you'll learn how to pay for more users in your VSTS account.
 For a list of features included, see our
 [feature comparison](https://visualstudio.microsoft.com/team-services/compare-features/).
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
