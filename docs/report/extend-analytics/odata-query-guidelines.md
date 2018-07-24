@@ -694,7 +694,7 @@ OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
 Host: {account}.analytics.visualstudio.com
 ```
-If the dataset exceeds the limit of 1000 records the query will immediatelly fail with the following error.
+If the dataset exceeds the limit of 1000 records the query will immediately fail with the following error.
 
 > *Query result contains 1,296 rows and it exceeds maximum allowed size of 1000. Please reduce the number of records by applying additional filters*
 
