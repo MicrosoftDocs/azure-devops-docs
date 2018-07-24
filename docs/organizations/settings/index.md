@@ -17,7 +17,7 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 
 ## 5-Minute Quickstarts    
 
-- [Add a team & team members](../../work/scale/multiple-teams.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)  
+- [About projects and scaling your organization](../projects/about-projects.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)  
 - [Add a team administrator](../../work/scale/add-team-administrator.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)  
 
 ## Concepts 
@@ -25,7 +25,7 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 - [Team administrator role and permissions](../../work/scale/team-administrator-permissions.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)
 
 ## How-to Guides
-- [Set team defaults](../../work/scale/set-team-defaults.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)    
+- [Set team defaults](../../organizations/settings/set-team-defaults.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)    
 - [Configure team settings](../../work/scale/manage-team-assets.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json) 
 
 

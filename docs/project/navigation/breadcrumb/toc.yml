@@ -1,0 +1,11 @@
+- name: VSTS & TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Project
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=apps&panel=overview
+    items:
+    - name: Navigation Basics
+      tocHref: /vsts/
+      topicHref: /vsts/overview/navigation/index

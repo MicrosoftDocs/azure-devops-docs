@@ -103,7 +103,7 @@ In addition, several tools reference the team's default iteration and selected i
 <tr valign="top" > 
 <td>Portfolio or product backlogs</td>
 <td>Selected area path(s)</td>
-<td>Equal to or under team's [backlog iteration path](../../work/scale/set-team-defaults.md#set-backlog-iteration)</td>
+<td>Equal to or under team's [backlog iteration path](../../organizations/settings/set-team-defaults.md#set-backlog-iteration)</td>
 <td>Active (corresponds to a Proposed or InProgress state category, see notes 2, 3)</td>
 </tr>
 
@@ -111,7 +111,7 @@ In addition, several tools reference the team's default iteration and selected i
 <tr valign="top" > 
 <td>Kanban boards (see note 4)</td>
 <td>Selected area path(s)</td>
-<td>Equal to or under team's [backlog iteration path](../../work/scale/set-team-defaults.md#set-backlog-iteration)</td>
+<td>Equal to or under team's [backlog iteration path](../../organizations/settings/set-team-defaults.md#set-backlog-iteration)</td>
 <td>Any state (see notes 3, 5)</td>
 </tr>
 
@@ -141,7 +141,7 @@ In addition, several tools reference the team's default iteration and selected i
 
 <p><b>Notes:</b><p>
 <ol>
-<li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../work/scale/set-team-defaults.md#team-area-paths).</li>
+<li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-team-defaults.md#team-area-paths).</li>
 <li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.</li>
 <li>You can add custom workflow states and assign them to one of three state categories. The [state categories](../../work/customize/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
 <li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../work/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
@@ -178,7 +178,7 @@ Yes. When you add user accounts to a team project, you can add them as members o
 ## Summary 
 - Every team owns their own backlog, to create a new backlog you [create a new team](../../work/scale/multiple-teams.md) 
 - Every backlog has a corresponding [Kanban board](../../work/kanban/kanban-basics.md) you can use to track progress and update status  
-- The [team's specified area and iteration paths](../../work/scale/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
+- The [team's specified area and iteration paths](../../organizations/settings/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](../../work/customize/show-bugs-on-backlog.md)   
 - For an overview of all team assets and how to configure them, see [Configure team settings](../../work/scale/manage-team-assets.md)   
 - To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../work/scale/portfolio-management.md) 
@@ -187,9 +187,9 @@ Yes. When you add user accounts to a team project, you can add them as members o
 ## Related notes 
 
 - [Add another team](../../work/scale/multiple-teams.md)  
-- [Set team defaults](../../work/scale/set-team-defaults.md)  
+- [Set team defaults](../../organizations/settings/set-team-defaults.md)  
 - [Configure team settings ](../../work/scale/manage-team-assets.md)      
-- [Work effectively from your account hub ](../../user-guide/organization-home-pages.md)  
+- [Work across projects ](../../project/navigation/work-across-projects.md)  
 
 
 

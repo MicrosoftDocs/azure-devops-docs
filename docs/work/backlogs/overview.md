@@ -71,7 +71,7 @@ For an overview of all your customization options, see [Customize your work trac
 
 ### Work across team projects 
   
-If you work in VSTS and TFS 2017.1 or later version, you can use your account hub to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work effectively from your account hub](../../user-guide/organization-home-pages.md).  
+If you work in VSTS and TFS 2017.1 or later version, you can use your Project page to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work across projects](../../project/navigation/work-across-projects.md).  
  
 
  

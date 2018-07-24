@@ -141,4 +141,4 @@ You can use the Progress dashboard to track team progress toward completing an i
   
 ## Related notes
 
-- [Define area paths](../../work/customize/set-area-paths.md) or [Define iteration paths](../../work/customize/set-iteration-paths-sprints.md) 
+- [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) 

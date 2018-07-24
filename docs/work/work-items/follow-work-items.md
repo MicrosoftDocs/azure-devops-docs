@@ -91,7 +91,7 @@ From this view, you can view all items you're following across all team projects
 
 However, this view isn't based on a query so you can't modify the parameters of the view. 
 
-You can also view and manage work that you're following from your home pages. To learn more, see [Work effectively from your account hub](../../user-guide/organization-home-pages.md). 
+You can also view and manage work that you're following from your home pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  

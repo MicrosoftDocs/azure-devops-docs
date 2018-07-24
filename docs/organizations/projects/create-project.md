@@ -82,7 +82,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 ::: moniker range=">= tfs-2013  <= tfs-2018"
 
-**Vertical navigation** isn't supported on TFS at this time. Choose the **Horizontal navigation** tab for guidance.  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 
 ::: moniker-end
 

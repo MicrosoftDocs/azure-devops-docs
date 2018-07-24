@@ -10,23 +10,17 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
-ms.date: 03/27/2018
+ms.date: 07/21/2018
 ---
 
 # Add widgets to a dashboard
 
 **VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
 
-
-::: moniker range=">= tfs-2015"
-
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
 You can add one or more charts or widgets to your dashboard. Up to 200 widets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
-
-::: moniker-end
-
 
 
 ::: moniker range="vsts"
@@ -41,87 +35,79 @@ You can add one or more charts or widgets to your dashboard. Up to 200 widets to
 [!INCLUDE [temp](../_shared/dashboard-prerequisites-tfs-2015.md)]
 ::: moniker-end
 
+## Connect to the web portal for your project 
 
-::: moniker range=">= tfs-2015"
+To add a widget to a dashboard, you connect to your project using a [supported web browser](/tfs/server/compatibility#supported-browsers). 
 
-## Connect to the web portal for your team project 
+[!INCLUDE [temp](../../_shared/new-navigation-dashboards.md)] 
 
-To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers).  If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/create-organization-msa-or-work-student.md)<!--- or set one up in an [on-premises TFS](../../organizations/projects/create-project.md)-->.
+# [New navigation](#tab/new-nav)
 
-Open a browser window and click the **Dashboards** hub. If you haven't been added as a team member, [get added now](../../work/scale/multiple-teams.md#add-team-members).
+::: moniker range="vsts" 
 
-![Open the Dashboards hub](_img/dashboards-go-to.png) 
+Open a web browser and choose **Overview>Dashboards**. 
 
-If you don't see the team or team project you want, click the ![project icon](../../work/_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/organization-home-pages.md).  
+> [!div class="mx-imgBorder"]  
+> ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
-    
-::: moniker-end
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
 
-::: moniker range=">= tfs-2015"
+::: moniker-end  
+
+::: moniker range=">= tfs-2015  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+
+# [Previous navigation](#tab/previous-nav)
+
+Open a web browser and choose **Dashboards**.
+
+![Open Dashboards](_img/dashboards-go-to.png) 
+
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+
+
+---
 
 ## Select a dashboard to modify 
 
 All dashboards are associated with a team. You need to be a team administrator, project administrator, or a team member with permissions to modify a dashboard. 
 
-::: moniker-end
-
-# [New Dashboards Experience](#tab/new-query-exp) 
 
 ::: moniker range="vsts"
 
-To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
-
-1. From the **Dashboards** hub, open the selector and choose  the **Browse all dashboards** option. 
+1. From **Overview>Dashboards** , open the selector and choose the **Browse all dashboards** option. 
  
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards hub, Browse all dashboards option](_img/dashboards/browse-all-dashboards.png)  
+	> ![Dashboards, Browse all dashboards option](_img/dashboards/browse-all-dashboards.png)  
 
-2. The **All** page lists all dashboards defined for the team project in alphabetical order. You can filter the list by team or by keyword.   
+2. The **All** page lists all dashboards defined for the project in alphabetical order. You can filter the list by team or by keyword.   
  
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards hub, Browse all dashboards option](_img/dashboards/all-dashboards-list.png)  
+	> ![Dashboards, Browse all dashboards option](_img/dashboards/all-dashboards-list.png)  
    
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-The New Dashboard experience is only available from VSTS at this time. 
+::: moniker range=">= tfs-2015  <= tfs-2018"  
+1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md).
 
-::: moniker-end
+2. Choose **Dashboards**.
 
-
-# [Old Dashboards Experience](#tab/old-query-exp)
-
-::: moniker range=">= tfs-2015"
-
-1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch team project or team focus](../../organizations/settings/switch-team-context.md).
-
-2. Click the **Dashboards** hub.
-
-3. Click the name of the dashboard to modify it. 
+3. Choose the name of the dashboard to modify it. 
 
 	For example, here we choose to view the Work in Progress dashboard. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Dashboards hub, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
+	> ![Dashboards, Choose a team dashboard](_img/dashboards/choose-dashboard.png)  
 
-::: moniker-end
+::: moniker-end  
 
----
 
 
 ## Add a widget to a dashboard  
 
-
-<!---
-Widget images may vary depending on which platform you access. This topic shows images that appear in VSTS. However, the widget title and functionality described in this topic are valid for both VSTS and TFS. For example, dashboard edit mode controls shown below are valid for VSTS and TFS 2015.2 and later version. Some functionality differs when you connect to TFS 2015.1 or earlier versions.  
--->
-
- 
-# [New Dashboards Experience](#tab/new-query-exp) 
-
 ::: moniker range="vsts"
-
-To enable the New Dashboard experience, see [Enable preview features](../../project/navigation/preview-features.md).  
 
 To add widgets to the dashboard, click ![Edit dashboard icon](_img/icons/edit-icon.png). 
 
@@ -137,20 +123,10 @@ To remove a widget, click the ![actions icon](../../_img/icons/actions-icon.png)
 > [!div class="mx-imgBorder"]  
 > ![Delete a widget from a dashboard](_img/dashboards/delete-widget.png) 
 
-
-
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
-The New Dashboard experience is only available from VSTS at this time. 
-::: moniker-end
-
-
-# [Old Dashboards Experience](#tab/old-query-exp)
-
-::: moniker range=">= tfs-2015"
-
-Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard. Click ![add a widget icon](_img/add-widget-icon.png) to add a widget to the dashboard.  
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+Choose ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard. Choose ![add a widget icon](_img/add-widget-icon.png) to add a widget to the dashboard.  
 
 The [widget catalog](widget-catalog.md) describes all the available widgets, many of which are scoped to the selected team context.  
 
@@ -161,20 +137,14 @@ Or, you can drag and drop a widget from the catalog onto the dashboard.
 
 ::: moniker-end
 
----
-
-
-::: moniker range=">= tfs-2015"
 
 <a id="configure" />
 
 ## Configure a widget  
 
-Most widgets support configuration, which may include specifying the title, seeting the widget size, and other widget-specific variables.   
+Most widgets support configuration, which may include specifying the title, seeting the widget size, and other widget-specific variables.
 
-::: moniker-end
-
-::: moniker range="vsts || >= tfs-2018"
+::: moniker range=">= tfs-2018"
 
 To configure a widget, add the widget to a dashboard, click open the ![actions icon](../../_img/icons/actions-icon.png) menu, and select **Configure**.  
 
@@ -195,19 +165,15 @@ Once you've configured the widget, you can edit it by opening the actions menu.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
 
 ## Move or delete a widget from a dashboard 
 
 To move a widget, you need to enable the dashboard edit mode. To delete a widget, simply select the delete option provided from the widget's options menu. 
 
-::: moniker-end
-
 ::: moniker range="tfs-2015"
 Just as you have to be a team or project admin to add items to a dashboard, you must have admin permissions to remove items. 
 ::: moniker-end
 
-# [New Dashboards Experience](#tab/new-query-exp) 
 
 ::: moniker range="vsts"
 
@@ -223,15 +189,12 @@ When you're finished with your changes, click  **Done Editing** to exit dashboar
 ::: moniker-end
 
 
-# [Old Dashboards Experience](#tab/old-query-exp)
-
-::: moniker range=">= tfs-2015"
-
-Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+Choose ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
+::: moniker range="tfs-2018"
 
 To remove a widget, click the ![actions icon](../../_img/icons/actions-icon.png) actions icon and select the **Delete** option from the menu.  
 
@@ -246,14 +209,11 @@ To remove a widget, click the widget's ![Trash icon](_img/dashboard-trash-icon.p
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+::: moniker range=">= tfs-2015 <= tfs-2018"  
 
 When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
 
-
 ::: moniker-end
-
----
 
 ::: moniker range=">= tfs-2018"
 
@@ -265,7 +225,7 @@ You can copy a widget to another dashboard defined for your team. If you want to
 
 ::: moniker range="vsts"
 
-To copy a configured widget to another team dashboard, click the ![Actions icon](../../_img/icons/actions-icon.png) actions icon and select **Copy to dashboard** and then the dashboard to copy it to. 
+To copy a configured widget to another team dashboard, choose the ![Actions icon](../../_img/icons/actions-icon.png) actions icon and select **Copy to dashboard** and then the dashboard to copy it to. 
 
 > [!div class="mx-imgBorder"]  
 > ![Copy a widget to another dashboard](_img/add-widgets/copy-to-dashboard.png) 
@@ -274,8 +234,7 @@ To copy a configured widget to another team dashboard, click the ![Actions icon]
 
 ::: moniker range="tfs-2018"
 
-
-To copy a configured widget to another team dashboard, click the ![Actions icon](../../_img/icons/actions-icon.png) actions icon and select **Add to dashboard** and then the dashboard to copy it to. 
+To copy a configured widget to another team dashboard, choose the ![Actions icon](../../_img/icons/actions-icon.png) actions icon and select **Add to dashboard** and then the dashboard to copy it to. 
 
 <img src="_img/dashboards-copy-widget.png" alt="Copy a widget to another team dashboard" style="border: 2px solid #C3C3C3;" />  
 
@@ -291,7 +250,7 @@ The Analytics Service is in preview and provides access to several widgets. To l
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015"
+
 
 ## Try this next 
 
@@ -321,4 +280,3 @@ If your account or project collection administrator disables a marketplace widge
 
 To regain access to it, request your admin to reinstate or reinstall the widget.  
 
-::: moniker-end

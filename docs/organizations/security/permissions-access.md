@@ -120,6 +120,6 @@ To manage notifications, see [Manage personal notifications](../../notifications
 - [Add users to a project or team](../../organizations/security/add-users-team-project.md)  
 - [Permissions and groups reference](permissions.md)  
 - [About access levels](access-levels.md)
-- [Work in the web portal](../../user-guide/work-web-portal.md) 
+- [Navigation basics](../../project/navigation/index.md) 
 
  

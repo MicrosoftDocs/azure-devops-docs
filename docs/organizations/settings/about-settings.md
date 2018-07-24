@@ -129,7 +129,7 @@ For a complete overview of all team assets that you can configure, see [Manage t
 </tbody>
 </table>
 
-
+<a id="project" />
 ## Project administrator role and managing projects
 
 Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can perform project-level  tasks as well.   
@@ -241,7 +241,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 </tbody>
 </table>
 
-
+<a id="admin" />
 ## Project collection administrator role and managing collections of projects 
 
 Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all VSTS projects defined for an account or organization. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   

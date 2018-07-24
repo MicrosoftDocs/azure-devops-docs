@@ -21,8 +21,8 @@ monikerRange: 'vsts'
 
 This glossary describes terms used when working with public projects in Visual Studio Team Services (VSTS). See also: 
 - [Agile glossary](../../work/work-items/agile-glossary.md) 
+- [Project management and navigation glossary](../../project/navigation/glossary.md)  
 - [Security glossary](../security/security-glossary.md)  
-
 
 ## Anonymous user	
 
@@ -90,13 +90,9 @@ Pipelines are artifacts that you define to run concurrent builds or deploy concu
 A project created within an organization that is visible only to members of the organization hosting the project. Only organizational members can discover them.  Administrators can control who gets to fully contribute. Administrators can switch a project from private to public, and vice-versa, as described in [Change the project visibility](make-project-public.md). 
 
 
-## Project
-A project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. A project is defined for a VSTS organization. It provides support for focusing on those objects defined within the project. Learn more: [Create a project](create-public-project.md).
+[!INCLUDE [temp](../../_shared/glossary-terms/projects.md)] 
 
-
-## Public project	
-
-A project created within a VSTS organization that is visible to the whole world. Everyone in the world can discover them and perform limited operations. Administrators can control who gets to fully contribute. Administrators can switch a project from private to public, and vice-versa, as described in [Change the project visibility](make-project-public.md). 
+[!INCLUDE [temp](../../_shared/glossary-terms/public-projects.md)] 
 
 
 ## Public user	
@@ -109,21 +105,12 @@ An authenticated user of a project who is not a member of the project.
 An authenticated user of a project who was granted Stakeholder access. An unlimited number of users can be granted membership as Stakeholders for free. Stakeholders can add and modify work items, approve releases, view dashboards and wikis. Learn more: [Get started as a Stakeholder](../security/get-started-stakeholder.md). 
 
 
-<!---
-## Team Foundation Version Control (TFVC) repository 
 
-A TFVC repository supports a centralized version control system for tracking changes, reviewing contributions to the code, and more. Historical data of the code base is maintained on a centralized server. Branches are path-based and created on the server. You can add only one TFVC repository to a project. TFVC repositories aren't viewable by anonymous users of a public project. Learn more: [TFVC](../../tfvc/index.md).  
+[!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
 
--->
+[!INCLUDE [temp](../../_shared/glossary-terms/widgets.md)] 
 
-## Team 
 
-A team corresponds to a selected set of project members. With teams, organizations can sub-categorize work to better focus on all the work they're tracking within a project. Each team gets access to a suite of Agile tools. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. Each team can configure and customize each tool to meet their work requirements. Learn more: [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
-
- 
-
-## Widget 
-Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts created by the system. Learn more: [Widget catalog](../../report/widget-catalog.md).
 
 <!---
 Branch 

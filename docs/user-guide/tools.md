@@ -104,7 +104,7 @@ TFS 2013       |             | 9 and later       | 5 and later    | most recent 
 
 Edge, Firefox, and Chrome automatically update themselves, so VSTS and TFS support the most recent version. 
 
-To learn more, see [Work in the web portal](work-web-portal.md).
+To learn more, see [Navigation basics](../project/navigation/index.md).
 
 ### Browser-based extensions
 

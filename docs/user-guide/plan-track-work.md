@@ -26,7 +26,7 @@ Here we show how to add work items from the web portal and view work items you'v
 
 ## Prerequisites
 
-You can start adding work items once you connect to a team project. If you don't have an organization or  team project yet, create one in [VSTS](sign-up-invite-teammates.md).
+You can start adding work items once you connect to a project. If you don't have an organization or project yet, create one in [VSTS](sign-up-invite-teammates.md).
 
 ## Add a work item 
 
@@ -36,7 +36,7 @@ You can start adding work items once you connect to a team project. If you don't
 
 	You can use this URL to quickly open the project, substituting the {organization name} and {project name} with your specific organization and project name (remove braces). 
 
-	If you don't see the team or team project you want, click the ![VSTS icon](../work/_img/icons/project-icon.png) VSTS icon to [browse all team projects and teams](organization-home-pages.md).  
+	If you don't see the team or team project you want, click the ![VSTS icon](../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2.	Click **Work>New Work Items** and choose the work item type you want.  Here, we choose to create a **User Story**. 
 
@@ -66,7 +66,7 @@ Create as many work items as you need of the type you need to track the work you
 
 To view work items you just created, open the **Work Items** page. Since this feature is in preview, you'll need to turn it on. 
 
-0. From your organization menu, click the **Preview features** option.   
+0. From your user profile menu, click the **Preview features** option.   
 
 	<img src="../_shared/_img/preview-features-open.png" alt="Open Preview Features" style="border: 1px solid #C3C3C3;" /> 
 

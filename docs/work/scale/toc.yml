@@ -38,7 +38,7 @@
     href: manage-team-assets.md 
     items:
     - name: Set team defaults
-      href: set-team-defaults.md  
+      href: ../../organizations/settings/set-team-defaults.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
     - name: Select backlog levels
       href: ../customize/select-backlog-navigation-levels.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
     - name: "Show bugs on backlogs & boards"
