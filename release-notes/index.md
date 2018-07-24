@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 7/10/2018
+ms.date: 7/24/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -26,7 +26,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
 |Visual Studio Git - Stash|Code|N/A|
 |Work Item support for Markdown editing|Work|2019|
-|Cross account linking for Work Items|Work|TBD|
+|Cross organization linking for Work Items|Work|TBD|
 |Migration from a Hosted XML processes to an Inherited process|Work|N/A|
 |Configuration as code (YAML) for builds – Generally Available|Build|2019|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
@@ -40,7 +40,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Release traceability – Work Item integration|Release|TBD|
 |Configuration as code (YAML) releases - Public Preview|Release|TBD|
 |Package Management – Repo, Build provenance information for a package|Package|2019|
-|Package Management – Upstreams sources for VSTS feeds across accounts with the same Azure Active Directory|Package|2019|
+|Package Management – Upstreams sources for VSTS feeds across organizations with the same Azure Active Directory|Package|2019|
 |Package Management – Package consumption metrics|Package|2019|
 |Package Management – Maven Upstream support|Package|TBD|
 |PyPI (Python ecosystem) package hosting and upstream sources|Package|TBD|
@@ -53,8 +53,8 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
 |[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
 |[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
-|[Azure Active Directory users in Microsoft Account-backed account](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
-|Connect your VSTS account to Azure Active Directory from within VSTS|Admin|N/A|
+|[Azure Active Directory users in Microsoft Account-backed organization](https://blogs.msdn.microsoft.com/devops/2018/03/28/deadline-extended-for-connecting-vsts-accounts-to-azuread/)|Admin|N/A|
+|Connect your VSTS organizations to Azure Active Directory from within VSTS|Admin|N/A|
 |Publisher certification process|Marketplace|N/A|
 |CC/BCC (carbon copy) recipient support for email notifications|Notifications|2019|
 |Notification feed|Notifications|2019|
@@ -67,10 +67,10 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |A discussion-centric Work Item form|Work|TBD|
 |TFS Support for Move work item to another team project / Change work item type|Work|2019|
 |Extensible Pool Providers|Build|TBD|
-|Upstreams sources for VSTS feeds across accounts in an “organization”|Package|TBD|
+|Upstreams sources for VSTS feeds across organizations in an enterprise|Package|TBD|
 |Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
 |Analytics - Available for TFS|Reporting|2019|
-|[Bring multiple accounts under and “organization”](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
+|[Bring multiple organizations under an enterprise](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 
 ## Current features
 
@@ -88,7 +88,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     <tbody>
 
         <tr>
-            <td rowspan="13">[10 July 2018](2018/jul-10-vsts.md)</td>
+            <td rowspan="14">[10 July 2018](2018/jul-10-vsts.md)</td>
             <td>Create pull requests without a default team as reviewer</td><td>*2019*</td>
         </tr>
         <tr><td>Allow bypassing branch policies without giving up push protection</td><td>*2019*</td></tr>
@@ -103,6 +103,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Get started with pre-installed Package Management</td><td>N/A</td></tr>
         <tr><td>Connect or disconnect Azure Active Directory as a Project Collection Admin</td><td>N/A</td></tr>
         <tr><td>Public projects available in preview for all accounts</td><td>N/A</td></tr>
+        <tr><td>Adopt the word "organization" when referring to a collection of projects in VSTS</td><td>N/A</td></tr>
         <tr>
             <td rowspan="17">[19 June 2018](2018/jun-19-vsts.md)</td>
             <td>Preview our new navigation hub</td><td>*2019*</td>

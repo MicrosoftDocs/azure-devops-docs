@@ -22,7 +22,7 @@ ms.date: 05/30/2018
 
 Cloning your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
 
-Before you clone a Hosted XML process, we recommend that you review [Supported upgrade operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md). 
+Before you clone a Hosted XML process, we recommend that you review [Supported operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md). 
  
 
 ## Prerequisites
@@ -31,9 +31,9 @@ Before you clone a Hosted XML process, we recommend that you review [Supported u
 - You must be a member of the Project Collection Administrators group, the organization owner, or be granted explicit permissions to edit, create, or manage a specific process and to create a project. 
 
 
-## Sequence of upgrade steps
+## Sequence of steps
 
-The general sequence of steps to support upgrade are:  
+The general sequence of steps to support clone are:  
 0. Open the **Settings>Process** hub 
 0. Choose the Hosted XML process you want to clone and select **Clone process to inheritance** from its context menu
 0. Verify the customizations that are present in the inherited process created as part of the clone
@@ -62,7 +62,7 @@ The general sequence of steps to support upgrade are:
 	Here, we accept the defaults provided by the system.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Upgrade from XML to inheritance dialog information](_img/migration/upgrade-from-xml-to-inheritance-dialog.png)  
+	> ![Clone from XML to inheritance dialog information](_img/migration/upgrade-from-xml-to-inheritance-dialog.png)  
 
 	> [!IMPORTANT]  
 	> The system performs a best effort to detect the correct parent process. Verify that the process selected meets your expectations, or change it as needed. Once you've completed the clone, you can't clone it a second time based on a different system process. 
