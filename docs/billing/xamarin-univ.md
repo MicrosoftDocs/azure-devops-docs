@@ -63,7 +63,7 @@ with your Microsoft account, or with your work or school account:
 
 6. Confirm your purchase:
 
- ![Confirm your purcase](_img/xamarin/05-xamarin-confirm.png)
+ ![Confirm your purchase](_img/xamarin/05-xamarin-confirm.png)
 
  Your purchase is complete, and you can get started:
 
