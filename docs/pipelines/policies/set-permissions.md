@@ -157,7 +157,7 @@ For example, here we show how to add a user to the Administrator role for a serv
 
    For example, here we add Raisa to the Administrator role. 
 
-   ![Add a user to the Adminstrator role](_img/manage-roles/add-user-role-endpoint-service.png)  
+   ![Add a user to the Administrator role](_img/manage-roles/add-user-role-endpoint-service.png)  
 
 1. Click **Add**.  
 
@@ -186,7 +186,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
    For example, here we add Raisa to the Administrator role. 
 
-   ![Add a user to the Adminstrator role](_img/manage-roles/add-user-role-deployment-pool.png)  
+   ![Add a user to the Administrator role](_img/manage-roles/add-user-role-deployment-pool.png)  
 
 1. Click **Add**.  
 
