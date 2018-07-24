@@ -47,7 +47,7 @@
     - name: Recover organization
       href: recover-your-vsts-organization.md
     - name: Sign in with different credentials
-      href: ../../user-guide/connect-team-projects.md#logindifferentcred
+      href: ../../organizations/projects/connect-to-projects.md#logindifferentcred
     - name: Change organization location (region)
       href: change-organization-location.md
   - name: Manage access to your organization
