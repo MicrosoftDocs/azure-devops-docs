@@ -69,7 +69,7 @@ Search can be used on any size physical server or virtual machine that runs
 TFS 2017 or above. It can be configured on the same server as TFS,
 or on a separate server dedicated to Search.
 When configuring Search on the same server as TFS,
-you must consider the existing CPU utlization
+you must consider the existing CPU utilization
 factor due to TFS itself.
 
 **For production environments we recommend you configure Search on a separate server.**
