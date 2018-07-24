@@ -60,7 +60,7 @@ Work Item Search is available in TFS 2017 Update 2 and later.
 Wiki Search is available in TFS 2018 Update 2 and later.
 Configure the Search service using the dedicated pages in the TFS Configuration Wizard
 as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
-afterwards by running the TFS Configuration Wizard again or lauching the Search Configuration Wizard.
+afterwards by running the TFS Configuration Wizard again or launching the Search Configuration Wizard.
 
 <a name="hardware-recommendations"></a>
 ### Hardware recommendations
