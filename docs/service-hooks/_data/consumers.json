@@ -742,7 +742,7 @@
 {
 "id": "buildParams",
 "name": "Build parameters",
-"description": "Build parameteres names and values separated by a colon(e.g. \"param1:value1\") with each name-value pair appearing on its own line of text",
+"description": "Build parameters names and values separated by a colon(e.g. \"param1:value1\") with each name-value pair appearing on its own line of text",
 "inputMode": "textArea",
 "isConfidential": false,
 "useInDefaultDescription": false,
