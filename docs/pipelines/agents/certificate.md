@@ -94,7 +94,7 @@ IIS has a SSL setting that requires all incoming requests to TFS must present cl
 
 When that IIS SSL setting enabled, you need to use `2.125.0` or above version agent and follow these extra steps in order to configure the build machine against your TFS server.
 
-- Prepare all required certificate informations
+- Prepare all required certificate information
   - CA certificate(s) in `.pem` format (This should contains the public key and signature of the CA certificate, you need put the root ca certificate and all your intermediate ca certificates into one `.pem` file)  
   - Client certificate in `.pem` format (This should contains the public key and signature of the Client certificate)  
   - Client certificate private key in `.pem` format (This should contains only the private key of the Client certificate)  
