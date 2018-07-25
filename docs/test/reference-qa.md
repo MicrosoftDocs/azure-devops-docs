@@ -157,7 +157,7 @@ When you review, you can update and add new test cases.
 Or, you can filter and sort the test cases in list view. Then select 
 just the ones that you want to bulk edit using the grid.
 
-![Select test cases in listview to bulk edit in grid view](_img/create-test-cases/GridEditSelected.png)
+![Select test cases in list view to bulk edit in grid view](_img/create-test-cases/GridEditSelected.png)
 
 To return to the test suite view, switch the view 
 from Grid back to List.
