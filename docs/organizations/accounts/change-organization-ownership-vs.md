@@ -41,7 +41,7 @@ Make sure that the new owner:
 
 # [Vertical navigation](#tab/vertical)
 
-1. Sign in to your VSTS organizationt (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 2. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Admin settings icon.
 
    ![Choose the gear, Admin settings icon](_img/_shared/sign-in-1.png)

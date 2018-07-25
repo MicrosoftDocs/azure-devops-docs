@@ -74,7 +74,7 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS organization user w
 >[!Note]
 >If you need to resend the invitation email, go to **Users**, select the user, and choose **Resend invite**.
 
-The external user is added to the VSTS organizationt to which they were invited and has immediate access.
+The external user is added to the VSTS organization to which they were invited and has immediate access.
 
 ## Related information
 
