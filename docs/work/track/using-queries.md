@@ -27,7 +27,7 @@ In this topic you'll learn:
 > * How to add or create a query 
 > * How to group query clauses 
 > * Understand when to use a flat-list, tree, or direct-links query 
-> * How to query across team projects    
+> * How to query across projects    
 
 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
@@ -59,7 +59,7 @@ The following example shows how to find all closed bugs by modifying the
 	>If you're working in Visual Studio Team Explorer, open the **Work** page to access your queries and shared queries. If Team Explorer isn't visible, choose **View>Team Explorer** from the top level menu.   
 
 0.	Edit the query to find closed bugs and then run the query. 
-	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current team project. To find work items defined in several team projects, see [Query across team projects](using-queries.md#across-projects).   	
+	Use ![Insert new filter line](_img/3.png) to insert a clause above the current clause. Use ![Remove this filter line](_img/4.png) to delete a clause.  Queries are automatically scoped to the current project. To find work items defined in several projects, see [Query across projects](using-queries.md#across-projects).   	
 	::: moniker range="vsts"	
 	![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](_img/using-queries-new-vsts-exp.png) 
 	::: moniker-end
@@ -180,14 +180,14 @@ To learn more about each link type, see [Link work items to support traceability
 
 
 <a id="across-projects" />  
-## Query across team projects  
-By default, shared queries and new queries are scoped to the current team project. However, you can create queries to find work items defined within the team project collection. You save cross-project queries under a specific team project. 
+## Query across projects  
+By default, shared queries and new queries are scoped to the current project. However, you can create queries to find work items defined within the project collection. You save cross-project queries under a specific project. 
 
 ::: moniker range=">= tfs-2015"
 
-To list work items defined in two or more team projects, checkmark **Query across projects**. For example, the following query finds all features created in all team projects within the last 30 days.
+To list work items defined in two or more projects, checkmark **Query across projects**. For example, the following query finds all features created in all projects within the last 30 days.
  
-<img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across team projects" style="border: 1px solid #C3C3C3;" /> 
+<img src="_img/using-queries-query-across-projects.png" alt="Web portal, Queries page, Query Editor, Checkbox, Query across projects" style="border: 1px solid #C3C3C3;" /> 
 
 ::: moniker-end
 
@@ -197,26 +197,26 @@ To list work items defined in two or more team projects, checkmark **Query acros
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
-With the **Query across projects** checked, you can add the Team Project field to filter to a select number of team projects.   
+With the **Query across projects** checked, you can add the Team Project field to filter to a select number of projects.   
 
-<img src="_img/using-queries-query-across-select-projects.png" alt="VSTS and TFS 2015.1, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="_img/using-queries-query-across-select-projects.png" alt="VSTS and TFS 2015.1, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]    
 > Separate multiple project names with the list separator that corresponds to the regional settings defined for your client computer, for example, a comma (,). 
 
-The *Team Project* field becomes available only after you check  **Query across projects**.  Moreover, when **Query across projects** is unchecked, only those fields from those WITs defined in the current team project appear in the Field drop-down menu. When **Query across projects** is checked, all fields from all WITs defined in all team projects in the collection appear in the Field drop-down menu.  
+The *Team Project* field becomes available only after you check  **Query across projects**.  Moreover, when **Query across projects** is unchecked, only those fields from those WITs defined in the current project appear in the Field drop-down menu. When **Query across projects** is checked, all fields from all WITs defined in all projects in the collection appear in the Field drop-down menu.  
 
 ::: moniker-end
 
 ::: moniker range="tfs-2013"   
 
-To find all features created in all team projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
+To find all features created in all projects within the last 30 days, remove the **Team Project=@Project** clause from the query.  
 
-<img src="_img/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select team projects using the In operator" style="border: 2px solid #C3C3C3;" />
+<img src="_img/using-queries-query-across-all-projects-tfs.png" alt="TFS 2013-2015, Web portal, Query across select projects using the In operator" style="border: 2px solid #C3C3C3;" />
 
-All fields from all WITs defined in all team projects in the collection always appear in the Field drop-down menu.  
+All fields from all WITs defined in all projects in the collection always appear in the Field drop-down menu.  
 
-Use **Team Project=@Project** to scope the query to find only those work items defined for the current team project. 
+Use **Team Project=@Project** to scope the query to find only those work items defined for the current project. 
 
 ::: moniker-end
 
@@ -225,7 +225,7 @@ Use **Team Project=@Project** to scope the query to find only those work items d
 You may notice and wonder why the contents of the task board differ from those listed with its created query? To learn more, see [Task board items versus query list items](../backlogs/backlogs-boards-plans.md#task-board-items).
 
 ## Export a query  
-From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a team project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
+From the query editor in Team Explorer, use the File menu to save a query as a .wiq file. When you create a project, the shared queries are created based on [.wiq files defined in a process](../customize/reference/process-templates/define-work-item-query-process-template.md). 
 
 See also:
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  

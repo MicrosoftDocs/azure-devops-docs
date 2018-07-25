@@ -18,7 +18,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-You find and create lists of work items by creating work item queries. By defining one or more clauses, you filter from all work items within a team project or team project collection to return the set of work items that interest you. For each clause, you specify a field, an operator, and a value or variable.  
+You find and create lists of work items by creating work item queries. By defining one or more clauses, you filter from all work items within a project or project collection to return the set of work items that interest you. For each clause, you specify a field, an operator, and a value or variable.  
 
 For example, you can search for all work items assigned to you by specifying the **Assigned To** field, the equals (=) operator, and the as **@Me** variable which represents your user account.
 
@@ -53,7 +53,7 @@ For more general information about queries, see [Use the query editor to list an
 
 3.  In the same row, under the **Value** column heading, either type a value, or choose the down arrow, and choose an item in the list.
 
-    For more information about how to use variables to specify the current team project, user, or date, see [Variables](#variables).
+    For more information about how to use variables to specify the current project, user, or date, see [Variables](#variables).
 
 5.  To add a clause, choose **Click here to add a new clause** or **Add a new clause**.
 
@@ -125,7 +125,7 @@ The value you specify for a field must conform to the data type for that field. 
 	<td><p>Short text string that can contain up to 255 Unicode characters. String text fields are often used to support pick lists or drop-down menus.  </p></td></tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
-	<td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a team project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [teration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to [associate with a team](../../organizations/settings/set-team-defaults.md).</p> 
+	<td><p>A branching tree structure, such as an Area Path or Iteration path. You can choose an item from a list of valid values. You can find work items that equal, not equal, under or not under a tree structure, or use the In or Not In operators to specify several values.  You define the tree structure for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [teration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to [associate with a team](../../organizations/settings/set-team-defaults.md).</p> 
 	<p>For more information on constructing queries, see [Query by area or iteration path](query-by-area-iteration-path.md) or [Query by date or current iteration](query-by-area-iteration-path.md).</p></td>
 </tr>
 
@@ -235,7 +235,7 @@ You can use query operators in the following table to specify how each value in 
 <tr>
 	<td><p><strong>Not in Group</strong></p></td>
 	<td><p>Does not match a value that is a member of the group in the clause.</p></td>
-	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a team project.</p>
+	<td><p> <strong>String</strong>  that matches the name of a user group in Team Foundation Server or a category group defined for a project.</p>
 <blockquote><strong>Note:</strong> You can use the <strong>Not In Group</strong> operator only with fields that use the <strong>String</strong> data type or the <strong>Work Item Type</strong> field.
 </blockquote>
 </td>
@@ -291,7 +291,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td>**@Follows** <sup>3</sup></td>
-	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following in the team project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md). 
+	<td>Use in conjunction with the **ID** field and **In** operator to list all work items that you are following in the project. To learn more about the Follow feature, see [Follow a work item or pull request](../work-items/follow-work-items.md). You can view this same list from the [Work Items page, **Following** pivot view](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 
@@ -303,14 +303,14 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td><b>@MyRecentActivity</b> <sup>4</sup></td>
-	<td>Use in conjunction with the **ID** field and **In** operator to list work items that you have viewed or updated in the team project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
+	<td>Use in conjunction with the **ID** field and **In** operator to list work items that you have viewed or updated in the project within the last 30 days. You can view this same list from the [Work Items page, **My activity** pivot view](../work-items/view-add-work-items.md).
 </td>
 </tr>
 
 
 <tr>
 	<td>**@Project** <sup>5</sup></td>
-	<td>Use in conjunction with the **Team Project** field to filter for work items in the current team project. For example, you can find all the work items in the current team project with the clause `Team Project=@Project`. 
+	<td>Use in conjunction with the **Team Project** field to filter for work items in the current project. For example, you can find all the work items in the current project with the clause `Team Project=@Project`. 
 </td>
 </tr>
 
@@ -322,7 +322,7 @@ You can use the macros described in the following table to filter your queries b
 
 <tr>
 	<td><b>@RecentProjectActivity</b> <sup>6</sup></td>
-	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the team project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
+	<td>Use in conjunction with the **ID** field and **In** operator to list work items that have been updated in the project within the last 30 days. You can view similar lists from the [Work Items page, **Recently created**, **Recently updated** and **Recently completed** pivot views](../work-items/view-add-work-items.md). 
 </td>
 </tr>
 
@@ -344,7 +344,7 @@ You can use the macros described in the following table to filter your queries b
 0. The **@CurrentIteration +/- n** macro is supported for VSTS and only when run from the web portal. 
 0. The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
 0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018.2 and later versions.
-0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current team project. To learn more, see [Query across team projects](using-queries.md#across-projects). 
+0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
 0. The **@RecentProjectActivity** macro is supported for VSTS only at this time.
 0. The **@TeamAreas** macro is supported for VSTS only at this time.
  
@@ -366,7 +366,7 @@ For examples, see [Example work item queries](example-queries.md) and [Query for
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 Team Foundation automatically indexes all long-text fields with a data type of **PlainText** and **HTML** and the **Title** field for full-text search. The index and operators are only available when the SQL Server that supports Team Foundation Server supports full-text search.
 
-Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the team project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
+Full-text searches require a SQL collation that corresponds to a language which has a word breaker registered with SQL Server. If the collation settings for the project collection database used for your Team Foundation Server instance do not correspond to a supported language, your search results may not match your expectations. In these cases, you might try using the **Contains** or **Does Not Contain** operators.
 
 For more information, see [Full-Text Search Queries and Collation Settings](/tfs/server/install/sql-server/collation-requirements).
 

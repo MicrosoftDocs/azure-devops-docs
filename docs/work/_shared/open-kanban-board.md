@@ -9,13 +9,13 @@ Your Kanban board is one of two types of boards available to you. For an overvie
  
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
 0. (1) Check that you have selected the right project, (2) choose **Work>Boards**, and then (3) select the correct team from the team selector menu. 
 
-	![Open your Kanban board, agile  hubs](/vsts/work/kanban/_img/quickstart/open-kanban-board-agile.png)  
+	![Open your Kanban board](/vsts/work/kanban/_img/quickstart/open-kanban-board-agile.png)  
 
 	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/vsts/_img/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
@@ -38,13 +38,13 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
-0. To view your Kanban board, open your (1) team project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
+0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 
 	![Open Portfolio Kanban board, Features](/vsts/kanban_img/quickstart/open-kanban-board.png)
 
-	If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![](/vsts/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/vsts/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work hub when screen size is reduced](/vsts/work/kanban/_img/kanban-quickstart-reduced-screensize.png)   
 

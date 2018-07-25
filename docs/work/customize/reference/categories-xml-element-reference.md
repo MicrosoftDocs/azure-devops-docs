@@ -33,23 +33,23 @@ You use the `CATEGORIES` element to group work item types (WITs). [Use categorie
   
 |Element|Attribute|Description|  
 |-------------|---------------|-----------------|  
-|`CATEGORIES`||Required element within the XML categories file.<br /><br /> Container element for specifying one or more `CATEGORY` elements that are defined for a team project.|  
+|`CATEGORIES`||Required element within the XML categories file.<br /><br /> Container element for specifying one or more `CATEGORY` elements that are defined for a project.|  
 |`CATEGORY`||Required `CATEGORIES` child element.<br /><br /> Specifies a named category group that contains one default `DEFAULTWORKITEMTYPE` element and zero or more `WORKITEMTYPE` elements.|  
-||`name`|Required `CATEGORY` attribute.<br /><br /> The attribute type is `typelib:FriendlyName`.<br /><br /> Specifies the display name of the category. Must be between 1 to 254 characters and unique within the team project.|  
+||`name`|Required `CATEGORY` attribute.<br /><br /> The attribute type is `typelib:FriendlyName`.<br /><br /> Specifies the display name of the category. Must be between 1 to 254 characters and unique within the project.|  
 ||`refname`|Required `CATEGORY` attribute.<br /><br /> The attribute type is `typelib:ReferenceName`.<br /><br /> Specify a name no longer than 70 Unicode characters that uses alphanumeric, underscore, and hyphen characters. The reference name must contain at least one period (.), but no period can appear at the start or end of a name. Also, the reference name cannot start with a number or an underscore, and it cannot have multiple consecutive hyphens, such as (--).<br /><br /> Do not specify a name that overlaps with the reserved System. *XXX* and Microsoft. *XXX* namespaces. See [Naming restrictions, Work item tracking objects](../../../organizations/settings/naming-restrictions.md).|  
 |`DEFAULTWORKITEMTYPE`||Required `CATEGORY` element.<br /><br /> Specifies a work item type to be tagged as belonging to the named category and to be used as the default type for the category.|  
-||`name`|Required `DEFAULTWORKITEMTYPE` attribute.<br /><br /> The attribute type is `WorkItemTypeRef`.<br /><br /> Specifies the reference name of a valid work item type for the team project that will be used as the default type for the category.|  
+||`name`|Required `DEFAULTWORKITEMTYPE` attribute.<br /><br /> The attribute type is `WorkItemTypeRef`.<br /><br /> Specifies the reference name of a valid work item type for the project that will be used as the default type for the category.|  
 |`WORKITEMTYPE`||Optional `CATEGORY` element.<br /><br /> Specifies a work item type to be tagged as belonging to the named category.|  
-||`name`|Required `WORKITEMTYPE` attribute.<br /><br /> The attribute type is `WorkItemTypeRef`.<br /><br /> Specifies the reference name of a valid work item type for the team project that will belong to the named category.|  
+||`name`|Required `WORKITEMTYPE` attribute.<br /><br /> The attribute type is `WorkItemTypeRef`.<br /><br /> Specifies the reference name of a valid work item type for the project that will belong to the named category.|  
   
 ## Remarks  
  `CATEGORIES` is the root element of the categories schema.  
   
- A category is defined within the `CATEGORIES` set of `CATEGORY` elements that is stored and used by a team project. Each `CATEGORIES` element must have at least one `CATEGORY` element defined.  
+ A category is defined within the `CATEGORIES` set of `CATEGORY` elements that is stored and used by a project. Each `CATEGORIES` element must have at least one `CATEGORY` element defined.  
   
  A category cannot be empty. Each `CATEGORY` element must have at least one `DEFAULTWORKITEMTYPE` or `WORKITEMTYPE` element defined.  
   
- Each category has a friendly name and a reference name that must be unique within the team project. Each category friendly name must meet the following requirements:  
+ Each category has a friendly name and a reference name that must be unique within the project. Each category friendly name must meet the following requirements:  
   
 -   Names can have up to 254 Unicode characters.    
 -   Names must not be empty.    

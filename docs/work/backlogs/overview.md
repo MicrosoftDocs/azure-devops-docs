@@ -16,9 +16,9 @@ ms.date: 08/15/2017
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
-You access all Agile tools from the **Work** hub. If you're new to Agile, see [What is Agile?](/azure/devops/agile/what-is-agile) for an overview.
+You access all Agile tools from **Work**. If you're new to Agile, see [What is Agile?](/azure/devops/agile/what-is-agile) for an overview.
 
-<img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/plan-intro.png" alt="Work>product backlog page" style="border: 1px solid #C3C3C3;" />  
 
 Most Agile tools are [scoped to a team](../../organizations/settings/about-teams-and-settings.md). This supports team autonomy as well as scaling the system.  
 
@@ -54,10 +54,16 @@ The Scrum method uses sprints to plan work to perform by a team within a specifi
 
 You can quickly assign work items to a sprint by dragging and dropping them from the product backlog to the sprint. 
 
+::: moniker range=">= tfs-2017"
+## Work across projects 
+  
+Use your Project page to view and quickly navigate to teams, projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work across projects](../../project/navigation/work-across-projects.md).  
+ 
+::: moniker-end
 
 ## Try this next  
 
-Take these tools for a test run by [creating an account on VSTS for free](../../organizations/accounts/create-organization-msa-or-work-student.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
+Take these tools for a test run by [signing up for a free VSTS organization](../../organizations/accounts/create-organization-msa-or-work-student.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
 
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 
@@ -69,9 +75,5 @@ You access tools provided by VSTS and TFS by connecting from a client to the ser
 For an overview of all your customization options, see [Customize your work tracking experience](../customize/customize-work.md). 
 
 
-### Work across team projects 
-  
-If you work in VSTS and TFS 2017.1 or later version, you can use your Project page to view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you. For details, see [Work across projects](../../project/navigation/work-across-projects.md).  
- 
 
  

@@ -1,7 +1,7 @@
 ---
 title: Add link type definitions to a process template 
 titleSuffix: TFS
-description: Define additional types of links that team members can create between work items for a team project for Team Foundation Server  
+description: Define additional types of links that team members can create between work items for a project for Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 803dbff8-fa50-4288-9bfb-dc807f4522bf
@@ -16,7 +16,7 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-You can define additional link types that team members can create between work items for a team project. A link type defines the labels and rules that govern the relationships or links between work items of that type. The link types that you specify supplement the default types for hierarchical, dependent, and related links. 
+You can define additional link types that team members can create between work items for a project. A link type defines the labels and rules that govern the relationships or links between work items of that type. The link types that you specify supplement the default types for hierarchical, dependent, and related links. 
 
 You specify the definition file for each link type in a separate file, or you can specify them all in one file. You then add entries to the **taskxml** element of the WorkItemTracking plug-in for each definition file to upload.  
   
@@ -24,7 +24,7 @@ You specify the definition file for each link type in a separate file, or you ca
   
  The type definitions for links must be uploaded before the type definitions for work items. For more information, see [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   
- After a team project is created, you can add, remove, rename, and change the types of links for a team project collection by using the **witadmin** command-line tool. For more information, see [Manage link types](../witadmin/manage-link-types.md).  
+ After a project is created, you can add, remove, rename, and change the types of links for a project collection by using the **witadmin** command-line tool. For more information, see [Manage link types](../witadmin/manage-link-types.md).  
   
 <a name="create"></a> 
 ##  Define link types  

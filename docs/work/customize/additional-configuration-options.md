@@ -22,10 +22,10 @@ Supports the following FWLINK: Additional configuration options are available - 
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
->This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
+>This topic applies only to projects hosted on an on-premises Team Foundation Server (TFS). Projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
 
 
-After you update your team project with the Configure Features wizard, you have access to the latest features. However, you may need to make some additional configurations or customizations to support your work tracking needs. Also, you have access to some features based on the source control setting selected when your team project was created.  
+After you update your project with the Configure Features wizard, you have access to the latest features. However, you may need to make some additional configurations or customizations to support your work tracking needs. Also, you have access to some features based on the source control setting selected when your project was created.  
 
 <table>
 <tbody valign="top">
@@ -44,7 +44,7 @@ Adds the Code Review Request and Code Review Response work item types (WITs). Wi
 <td>
 **Required:** [Configure an SMTP server for TFS](/tfs/server/admin/setup-customize-alerts). <br/>
 **Required:** Visual Studio (any version).
-**Availability:** Only supported when your team project uses Team Foundation version control for source control.
+**Availability:** Only supported when your project uses Team Foundation version control for source control.
 </td></tr>
 <tr>
 <td>
@@ -55,7 +55,7 @@ Adds support for automatic update of bug status when using My Work. Use to autom
 </td>
 <td>
 **Required:** Visual Studio (any version).
-**Availability:** Only supported when your team project uses Team Foundation version control for source control.
+**Availability:** Only supported when your project uses Team Foundation version control for source control.
 </td>
 </tr>
 <tr>
@@ -125,7 +125,7 @@ With this feature, you can [storyboard your ideas using the Storyboarding add-in
 <td>
 Most of your team will be able to view and create Epics and Features once you've enabled the Portfolio Backlogs feature. However, you may need to enable one or more of these backlogs for a team as described in [Organize your backlogs](../backlogs/organize-backlog.md). <br/>
 
-All stakeholders and contributors to your team project can view and add items to a portfolio backlog. However, to reorder, reparent, and exercise other portfolio backlog features, you need to have [Advanced access](../../organizations/security/change-access-levels.md).<br/>
+All stakeholders and contributors to your project can view and add items to a portfolio backlog. However, to reorder, reparent, and exercise other portfolio backlog features, you need to have [Advanced access](../../organizations/security/change-access-levels.md).<br/>
 
 <p>Other resources you may find useful to manage your teams and backlogs:</p>
 <ul>
@@ -186,25 +186,25 @@ To get started, each team must choose their preference as described in [Show bug
 
 ## Related articles 
 
-If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../organizations/security/add-users-team-project.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the team project.)
+If you are the server administrator for TFS and don't actually contribute to a team, then you may want to [remove yourself as a member, and add a project lead as the team administrator](../../organizations/security/add-users-team-project.md). (When you ran the Configure Features wizard, the system automatically added your user account as a team administrator for the project.)
 
-If you have updated a team project based on v5.0 of MSF for Agile, do the manual updates described in [Update the Workflow for Agile Team Projects](reference/update-the-workflow-for-agile-team-projects.md).
+If you have updated a project based on v5.0 of MSF for Agile, do the manual updates described in [Update the Workflow for Agile Team Projects](reference/update-the-workflow-for-agile-team-projects.md).
 
 <a id="test-case-management">   </a> 
 
 ###Test case management and custom workflow states 
-If you add or change the workflow states for the test plan or test suite type definitions, and you work from a Test Manager client provided with Visual Studio 2013.2 or earlier versions, you must also update the process configuration for the team project as well. Otherwise, you'll encounter an **Application detected an unexpected fault** error when you connect to your team project. 
+If you add or change the workflow states for the test plan or test suite type definitions, and you work from a Test Manager client provided with Visual Studio 2013.2 or earlier versions, you must also update the process configuration for the project as well. Otherwise, you'll encounter an **Application detected an unexpected fault** error when you connect to your project. 
 
 ![Application fault error message after TFS upgrade](_img/ALM_CF_AppFaultErrMsg.png)  
 
 To resolve this error, see [Import and export process configuration [witadmin]](reference/witadmin/witadmin-import-export-process-configuration.md).  
 
 <a id="update-from-2012">   </a> 
-###Recommended updates to team projects created from TFS 2012 process templates 
+###Recommended updates to projects created from TFS 2012 process templates 
 
 There are no additional required customizations to make after updating from TFS 2012 to TFS 2015. However, there are some recommended updates to make to the workflow of specific WITs.
 
-The updates bring your team project up to date with the workflow settings that are defined in the latest versions of the default process templates. 
+The updates bring your project up to date with the workflow settings that are defined in the latest versions of the default process templates. 
 
 You might want to update the workflow of specific WITs to support missing transitions, additional reasons, and field assignments. Making this update revises the workflow for the following WITs to the latest version of their process template workflow: 
 
@@ -212,16 +212,16 @@ You might want to update the workflow of specific WITs to support missing transi
 * Agile 6.0 to Agile 2013: User Story  
 * CMMI 6.0 to CMMI 2013: Requirement  
 
-For details, see [Upgrade your 2012 team project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../work-items/guidance/changes-to-process-templates.md).
+For details, see [Upgrade your 2012 project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../work-items/guidance/changes-to-process-templates.md).
 
 
-If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your team project and then [import the updated WITs](reference/witadmin/witadmin-import-export-manage-wits.md).
+If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your project and then [import the updated WITs](reference/witadmin/witadmin-import-export-manage-wits.md).
 
 <a id="update-from-2010">   </a> 
-###Recommended updates to team projects created from TFS 2010 process templates 
+###Recommended updates to projects created from TFS 2010 process templates 
 
-If you've updated a team project that was created with an MSF v 5.0 Agile process template, then you'll also want to [manually update the user story and task workflow assignments](reference/update-the-workflow-for-agile-team-projects.md). 
+If you've updated a project that was created with an MSF v 5.0 Agile process template, then you'll also want to [manually update the user story and task workflow assignments](reference/update-the-workflow-for-agile-team-projects.md). 
 
 If you don't update the workflow, then the task board provides only two states, Active and Closed. This prevents you and your team from distinguishing between tasks that are in progress from those that haven't been started.
 
-Also, you might want to apply the workflow updates to the User Story as described in [Upgrade your 2012 team project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). 
+Also, you might want to apply the workflow updates to the User Story as described in [Upgrade your 2012 project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). 

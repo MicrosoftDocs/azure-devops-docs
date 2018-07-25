@@ -48,7 +48,7 @@ To add a board to support an additional portfolio backlog, see [Add a portfolio 
 
 0. To add a work item, simply choose the ![](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter on your keyboard. 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -65,7 +65,7 @@ The system automatically saves the work item with the title you entered. You can
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)]
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 To add a work item, simply choose the ![](../_img/icons/add_icon.png) plus sign, enter a title, and then press Enter on your keyboard. 
 
@@ -99,16 +99,16 @@ You can quickly update a field or reassign ownership directly from the board. If
 ::: moniker range="vsts"
 ## Invite others to work on your Kanban board 
 
-All members of a team project will be able to view and contribute to your Kanban board. To invite users to start contributing, copy the URL of your Kanban board and email it to those you want to invite to your project. 
+All members of a project will be able to view and contribute to your Kanban board. To invite users to start contributing, copy the URL of your Kanban board and email it to those you want to invite to your project. 
 
 <img src="_img/kanban-basics-url.png" alt="Browser URL for the Kanban board" style="border: 1px solid #C3C3C3;" /> 
 
-To add users to your team project, see [Add users to a team project](../../organizations/security/add-users-team-project.md)   
+To add users to your project, see [Add users to a project](../../organizations/security/add-users-team-project.md)   
 ::: moniker-end
 
 ## Try this next 
 
-To get the full power of the Kanban board working for you, you'll want to configure it to map the flow of work and set WIP limits for your team. To configure the Kanban board, you must be [added as a team administrator](../scale/add-team-administrator.md) or be a member of the Project Administrators group. If you're the account owner or creator of the team project, then you'll have these permissions. 
+To get the full power of the Kanban board working for you, you'll want to configure it to map the flow of work and set WIP limits for your team. To configure the Kanban board, you must be [added as a team administrator](../scale/add-team-administrator.md) or be a member of the Project Administrators group. If you're the organization owner or creator of the project, then you'll have these permissions. 
 
 > [!div class="nextstepaction"]
 > [Kanban basics](kanban-basics.md)  

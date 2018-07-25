@@ -14,7 +14,7 @@ ms.date: 05/10/2017
 
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For defining custom pick lists for the Inheritance process model, see [Customize a field for a process](../../../organizations/settings/work/customize-process-field.md). 
+>This topic applies to project customization for Hosted XML and On-premises XML process models. For defining custom pick lists for the Inheritance process model, see [Customize a field for a process](../../../organizations/settings/work/customize-process-field.md). 
 >
 >For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -91,7 +91,7 @@ You can enumerate a set of values for a field by defining a pick list as part of
 ##  <a name="GLOBALLIST"></a> Syntax structure for GLOBALLIST and LISTITEM elements  
  You can use the `GLOBALLIST` and `LISTITEM` elements to enumerate a list of items that can be updated globally or that are specific to a single field.  
   
--   You use **GLOBALLIST** to define a set of **LISTITEM** elements that is stored for a team project collection and that all team projects in that collection can use. **GLOBALLIST** is a required child element of the **GLOBALLISTS** element and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. You can define a global list within a work item definition, a global list definition, or a global workflow.  
+-   You use **GLOBALLIST** to define a set of **LISTITEM** elements that is stored for a project collection and that all projects in that collection can use. **GLOBALLIST** is a required child element of the **GLOBALLISTS** element and an optional child element of the `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES` elements. You can define a global list within a work item definition, a global list definition, or a global workflow.  
   
     ```  
     <GLOBALLIST name="globalListName">  

@@ -14,21 +14,21 @@ ms.date: 01/12/2017
 # Specify the work item types to synchronize
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
-<a name="Top"></a> To support synchronization of data between an enterprise project plan and a team project, you must specify the types of work items that you want to participate in synchronization. You can define the types when you associate a project plan to a team project, and you can add or remove types later.  
+<a name="Top"></a> To support synchronization of data between an enterprise project plan and a project, you must specify the types of work items that you want to participate in synchronization. You can define the types when you associate a project plan to a project, and you can add or remove types later.  
   
 > [!NOTE]
->  All types of work items that are mapped for a team project are available to participate in data synchronization with all enterprise project plans that you have currently mapped to that team project or that you may map later.  
+>  All types of work items that are mapped for a project are available to participate in data synchronization with all enterprise project plans that you have currently mapped to that project or that you may map later.  
   
- Before you can manage the types of work items that participate in synchronization, you must have configured the integration of Visual Studio Team Foundation Server and Microsoft Project Server, and you must have mapped an enterprise project plan with the team project. For more information, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
+ Before you can manage the types of work items that participate in synchronization, you must have configured the integration of Visual Studio Team Foundation Server and Microsoft Project Server, and you must have mapped an enterprise project plan with the project. For more information, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   
  **Requirements**  
   
- To perform these procedures, your **Administer Project Server integration** permission must be set to **Allow** for a team project collection. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instances of PWA that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+ To perform these procedures, your **Administer Project Server integration** permission must be set to **Allow** for a project collection. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instances of PWA that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 ##  <a name="GetList"></a> List the types of work items that are configured to participate in data synchronization  
- By using the following command, you can determine which types for a team project are already mapped and available to use with an enterprise project plan.  
+ By using the following command, you can determine which types for a project are already mapped and available to use with an enterprise project plan.  
   
-#### To list types of work items that are mapped for a team project  
+#### To list types of work items that are mapped for a project  
   
 1.  To run the **TfsAdmin** command-line tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
   
@@ -44,7 +44,7 @@ ms.date: 01/12/2017
     TfsAdmin ProjectServer /GetMappedWorkItemTypes /collection:tpcUrl /teamProject: TeamProjectName  
     ```  
   
-     Replace *tpcUrl* with the URL of the project collection and *TeamProjectName* with the name of the team project.  
+     Replace *tpcUrl* with the URL of the project collection and *TeamProjectName* with the name of the project.  
   
      The following message appears:  
   
@@ -53,9 +53,9 @@ ms.date: 01/12/2017
      *List of Work Item Types*  
   
 ##  <a name="MapTypes"></a> Specify the types of work items that can participate in data synchronization  
- You can configure one or more types of work items for a team project to participate in data synchronization with tasks in project plans. The project plans may be currently mapped to the team project, or you can configure them later to synchronize data with the team project.  
+ You can configure one or more types of work items for a project to participate in data synchronization with tasks in project plans. The project plans may be currently mapped to the project, or you can configure them later to synchronize data with the project.  
   
-#### To map types of work items for a team project  
+#### To map types of work items for a project  
   
 -   At the command prompt, type the following command, and then choose the **Enter** key.  
   
@@ -63,7 +63,7 @@ ms.date: 01/12/2017
     TfsAdmin ProjectServer /MapWorkItemTypes /collection:tpcUrl /teamProject:TeamProjectName /workItemTypes:ListOfWorkItemTypes  
     ```  
   
-     Replace *tpcUrl* with the URL of the team project collection and *TeamProjectName* with the name of the team project. Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. For example, you can specify the following types of work items to support an agile process as "*User Story,Task*" or *"User Story",Task*. Do not include a space after the comma.  
+     Replace *tpcUrl* with the URL of the project collection and *TeamProjectName* with the name of the project. Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. For example, you can specify the following types of work items to support an agile process as "*User Story,Task*" or *"User Story",Task*. Do not include a space after the comma.  
   
      You can specify the optional `/skipUIChanges` flag to indicate that no modifications should be made to the **Project Server** tab for the work item forms of the types that you specify.  
   
@@ -72,16 +72,16 @@ ms.date: 01/12/2017
   
      The following messages appear:  
   
-     **Configuring synchronization for the following work item types for team project** *TeamProjectName*: *List of Work Item Types*`.`  
+     **Configuring synchronization for the following work item types for project** *TeamProjectName*: *List of Work Item Types*`.`  
   
-     **You have successfully configured the following work item types for team project** *TeamProjectName*: *List of Work Item Types*`.`  
+     **You have successfully configured the following work item types for project** *TeamProjectName*: *List of Work Item Types*`.`  
   
- If you have added a type and did not specify the `/skipUIChanges` flag, you can verify that the type has been modified by refreshing the team project in Team Explorer and then opening a work item of the type that you added. The **Project Server** tab should appear in the work item form.  
+ If you have added a type and did not specify the `/skipUIChanges` flag, you can verify that the type has been modified by refreshing the project in Team Explorer and then opening a work item of the type that you added. The **Project Server** tab should appear in the work item form.  
   
 ##  <a name="UnmapTypes"></a> Remove a work item type from participating in data synchronization  
  Before you can remove a type of work item from participating in data synchronization, you should remove the links that bind the work items of that type to tasks that are defined in an enterprise project plan. As an alternative, you can use the `/force` flag to force the removal of these links and then remove the type.  
   
-#### To unmap a work item type from a team project  
+#### To unmap a work item type from a project  
   
 -   At the command prompt, type the following command, and then choose the **Enter** key.  
   
@@ -89,17 +89,17 @@ ms.date: 01/12/2017
     TfsAdmin ProjectServer /UnmapWorkItemTypes /collection:tpcUrl /teamProject:TeamProjectName /workItemTypes:ListOfWorkItemTypes  
     ```  
   
-     Replace *tpcUrl* with the URL of the team project collection, *TeamProjectName* with the name of the team project, and *ListOfWorkItemTypes* with the name or names of the types of work items to unmap.  
+     Replace *tpcUrl* with the URL of the project collection, *TeamProjectName* with the name of the project, and *ListOfWorkItemTypes* with the name or names of the types of work items to unmap.  
   
      You can specify the optional `/force` flag to remove links that bind work items to Project tasks. By using this option, you can remove types of work item from participating in data synchronization, even if work items of that type are currently being synchronized.  
   
      The following messages appear:  
   
-     **Removing the following work item types from participating in synchronization of data for team project** *TeamProjectName* **:** *List of Work Item Types* **.**  
+     **Removing the following work item types from participating in synchronization of data for project** *TeamProjectName* **:** *List of Work Item Types* **.**  
   
-     **The following work item types have been successfully removed from participating in synchronization for team project** *TeamProjectName* **:** *List of Work Item Types* **.**  
+     **The following work item types have been successfully removed from participating in synchronization for project** *TeamProjectName* **:** *List of Work Item Types* **.**  
   
-     You can verify whether the type has been removed by refreshing the team project in Team Explorer and then opening a work item of the type that you removed. The **Project Server** tab should be removed from the work item form.  
+     You can verify whether the type has been removed by refreshing the project in Team Explorer and then opening a work item of the type that you removed. The **Project Server** tab should be removed from the work item form.  
   
 ## Related articles  
  [Define the work item types to synchronize](define-work-item-types-available-synchronization.md)   

@@ -21,7 +21,7 @@ ms.date: 03/16/2017
  You should grant permissions after you have installed Team Foundation Server Extensions for Project Server Integration. For more information, see [System and setup requirements](system-and-setup-requirements.md).  
   
 ## Before you begin  
- Before you begin, you'll want to know which Project Web Access or Project Web App (PWA) instances and TFS team project collections will participate in data synchronization. You'll also want to have answers to the following questions.  
+ Before you begin, you'll want to know which Project Web Access or Project Web App (PWA) instances and TFS project collections will participate in data synchronization. You'll also want to have answers to the following questions.  
   
 ###  <a name="assign_perm"></a> Do you have all the permissions you need to assign permissions?  
  Make sure you belong to the following groups:  
@@ -113,7 +113,7 @@ ms.date: 03/16/2017
  Depending on the role, you grant permissions to each PWA instance that participates in data synchronization to the SharePoint server, to the enterprise resource pool, and to TFS.  
   
 ##  <a name="grant_pwa_permissions"></a> 2. Grant permissions to access each PWA instance  
- Do the following tasks, based on the version and permission mode used in your deployment. You must add accounts for each PWA instance that you will register and map to a team project.  
+ Do the following tasks, based on the version and permission mode used in your deployment. You must add accounts for each PWA instance that you will register and map to a project.  
   
 |Task|Set for these configuration:|  
 |----------|----------------------------------|  
@@ -366,20 +366,20 @@ ms.date: 03/16/2017
   
  Accounts of users who work in Project Professional or TFS require permissions to view or contribute to TFS.  
   
- From the TFS web portal administration Security page for the team project, you can add accounts to either the project collection or each team project. Add accounts or the Active Directory groups to the appropriate roles.  
+ From the TFS web portal administration Security page for the project, you can add accounts to either the project collection or each project. Add accounts or the Active Directory groups to the appropriate roles.  
   
- ![Choose the team project group and add members](_img/addausertoateamprojectgroup.png "Addausertoateamprojectgroup")  
+ ![Choose the project group and add members](_img/addausertoateamprojectgroup.png "Addausertoateamprojectgroup")  
   
- Verify that user accounts or groups have been added to the following TFS groups for each team project that will participate in data synchronization:  
+ Verify that user accounts or groups have been added to the following TFS groups for each project that will participate in data synchronization:  
   
 -   **Contributor** role: Team members who work in a TFS project that is integrated with Project Server. This includes all user accounts assigned as resources in the project plan or to the Assigned To field for a work item. These users submit status updates that flow into the status queue for the project manager.  
   
--   **Reader** role: Users who modify enterprise project plans that are mapped to a team project.  
+-   **Reader** role: Users who modify enterprise project plans that are mapped to a project.  
   
- For more info, see [Add users to team projects](../../organizations/security/add-users-team-project.md).
+ For more info, see [Add users to projects](../../organizations/security/add-users-team-project.md).
   
 ## Permission checklist  
- Use the following checklist to review that all permissions have been set according to your version and authentication mode. Remember that permissions must be granted to accounts for all PWA instances, team projects, and project collections that will participate in data synchronization between TFS and Project Server. If you customize a role or security categories for a role, you might inadvertently remove required permissions.  
+ Use the following checklist to review that all permissions have been set according to your version and authentication mode. Remember that permissions must be granted to accounts for all PWA instances, projects, and project collections that will participate in data synchronization between TFS and Project Server. If you customize a role or security categories for a role, you might inadvertently remove required permissions.  
   
 |Account|Permissions|Project Server 2010|Project Server 2013 (Permission mode)|Project Server 2013 (SharePoint mode)|Application|  
 |-------------|-----------------|-------------------------|---------------------------------------------|---------------------------------------------|-----------------|  

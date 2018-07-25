@@ -22,7 +22,7 @@ ms.date: 03/16/2017
 > **Feature availability:** The new form and its corresponding features are available from VSTS and the web portal for TFS 2017 and later versions.<br/> 
 > - For users of VSTS that use the [Inheritance process model](../../organizations/settings/work/manage-process.md), the switch to the new form is automatic.<br/>
 > - For users of VSTS that use [Hosted XML process model](import-process/import-process.md), an admin must [enable the new form](../customize/manage-new-form-rollout.md).<br/>
-> - For on-premises TFS 2017 users, the new form is automatically available when you add teamvisualstudio.microsoft.comction. For existing team projects, an admin is required to enable the new form as described in this topic. (The reason the new form isn't automatically enabled for existing team projects is to prevent overwriting customizations made to existing work item types.) <br/>
+> - For on-premises TFS 2017 users, the new form is automatically available when you add teamvisualstudio.microsoft.comction. For existing projects, an admin is required to enable the new form as described in this topic. (The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing work item types.) <br/>
 > - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://visualstudio.microsoft.com/downloads/#team-foundation-server-2017) to access the new form.
 
 Enabling the new form initiates a transformation of the form definitions for all work item types (WITs) defined in your project collection. 
@@ -37,7 +37,7 @@ When you're ready to rollout the new form, you choose the opt-in model which ena
 
 You enable the new form from the project collection admin page.     
 
-1. To start, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings icon to open the admin context for the team project collection.  
+1. To start, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings icon to open the admin context for the project collection.  
 
 	<img src="_img/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
 <!--- 
@@ -59,7 +59,7 @@ You enable the new form from the project collection admin page.
 <!---
 You enable the new form from the project collection admin page.    
 
-1. To start, open the admin context for the team project.  
+1. To start, open the admin context for the project.  
 
 	![Open admin context](../../organizations/settings/work/_img/team-services-open-admin-context.png)  
 
@@ -77,7 +77,7 @@ You enable the new form from the project collection admin page.
 <a id="review"></a>
 ## Review the new web forms  
 
-The default opt-in model is to enable the new forms for members of the Project Administrators group for all team projects. Before you change the opt-in model, review the web forms to ensure they represent the fields and functions needed. 
+The default opt-in model is to enable the new forms for members of the Project Administrators group for all projects. Before you change the opt-in model, review the web forms to ensure they represent the fields and functions needed. 
 
 Open a work item of each type to review the new form layout. Here, we open a user story. Switch to show the new form. 
 
@@ -121,7 +121,7 @@ If you find that you need to revert to the old WIT forms, you can do so.
 
 <img src="_img/manage-new-form-disable-dialog.png" alt="Disable new form dialog" style="border: 2px solid #C3C3C3;" />
 
-Disabling the new form will remove the **WebLayout** section from the XML definition files for all WITs defined within all team projects in the collection.  
+Disabling the new form will remove the **WebLayout** section from the XML definition files for all WITs defined within all projects in the collection.  
 
 
 ## Related articles

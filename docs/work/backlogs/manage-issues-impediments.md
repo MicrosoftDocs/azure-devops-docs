@@ -37,7 +37,7 @@ In this topic you'll learn:
 
 ::: moniker range=">= tfs-2017"
 <!---#### VSTS, TFS 2018, TFS 2017 (new form enabled) --> 
-From the **Work** hub, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu. 
+From **Work**, choose Impediment from the New Work Item list of options. Click the ![pin icon](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
 <img src="_img/cyb-new-work-item-impediment.png" alt="VSTS, TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
   

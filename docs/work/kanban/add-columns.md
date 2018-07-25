@@ -97,9 +97,9 @@ To keep teams working on the highest priority items, you'll want to react quickl
 
 Now that you've got the essentials of how to work with your Kanban board, here's how you get it to look like what you need it to.
 
-You'll see different column titles and choices based on the [Process](../work-items/guidance/choose-process.md) you used to create your team project and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).
+You'll see different column titles and choices based on the [Process](../work-items/guidance/choose-process.md) you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).
   
-First, open the Kanban portal for your team project. Click the **Board** link from the **Work>Backlogs** page. 
+First, open the Kanban portal for your project. Click the **Board** link from the **Work>Backlogs** page. 
 
 <img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 
@@ -243,7 +243,7 @@ First, open the Kanban portal for your team project. Click the **Board** link fr
 	You'll see different column titles and choices based on the following:  
 	
 	- You connect to VSTS, TFS 2015 Update 1, or TFS 2015  
-	- The [Process](../work-items/guidance/choose-process.md) you used to create your team project  
+	- The [Process](../work-items/guidance/choose-process.md) you used to create your project  
 	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
 
 	**VSTS and TFS 2015 Update 1 options:**  

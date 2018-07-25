@@ -1532,12 +1532,17 @@
     },
     {
       "source_path": "docs/connect/person-centric-features.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/connect/user-focused-features.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/account-home-pages.md",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
       "redirect_document_id": false
     },
     {
@@ -1912,17 +1917,17 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/connect-to-visual-studio-online.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/connect-to-visual-studio-online-vs.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/connect-to-visual-studio-team-services.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
@@ -2672,7 +2677,7 @@
     },
     {
       "source_path": "docs/connect-to-vs.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
@@ -5222,12 +5227,12 @@
     },
     {
       "source_path": "docs/connect/account-home-pages.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/connect/connect-team-projects.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
@@ -5312,7 +5317,7 @@
     },
     {
       "source_path": "docs/work/productivity/productivity-tips.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
       "redirect_document_id": false
     },
     {
