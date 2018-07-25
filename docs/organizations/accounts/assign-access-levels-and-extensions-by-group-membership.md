@@ -47,7 +47,7 @@ A notification is displayed that shows the status and outcome of the rule. If th
 
 As users sign in to your VSTS organization, they will be assigned access levels and extensions based on their group memberships. If there are not enough licenses or extensions to assign the specified resources to the user, based on their group memberships, VSTS will notify all Project Collection Administrators via email that further resources need to be purchased. To find users in an error state, the Project Collection Administrator can do the following.
 
-1. Go to the **Users** page in organizationt settings. There will be a notification indicating that there are users missing extensions or basic access levels.
+1. Go to the **Users** page in organization settings. There will be a notification indicating that there are users missing extensions or basic access levels.
 2. To see how many of each resource is missing, choose **Fix assignment errors**.
 3. Complete purchases for any missing resources, and then choose **Fix errors** to have them automatically assigned to the specified users.
 
