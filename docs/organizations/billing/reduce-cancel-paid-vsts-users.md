@@ -55,7 +55,7 @@ Whether you do this via the Azure portal or as part of making a purchase in the 
    > [!div class="mx-imgBorder"]
 ![Review your changes and confirm total paid users](_img/reduce-cancel-paid-vsts-users/review-and-confirm.png)
 
-5. Go back to your VSTS organization to [reassign access levels for your users, if necessary](../organizations/accounts/add-organization-users-from-user-hub.md).
+5. Go back to your VSTS organization to [reassign access levels for your users, if necessary](../accounts/add-organization-users-from-user-hub.md).
 
 ## Next steps
 
