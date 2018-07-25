@@ -110,7 +110,7 @@ VSTS and TFS support a variety of service connection types by default. Some of t
 * [Azure Classic service connection](#sep-azure-classic)
 * [Azure Resource Manager service connection](#sep-azure-rm)
 * [Azure Service Bus service connection](#sep-servbus)
-* [Bitbucket Cloud service enconnectiondpoint](#sep-bbucket)
+* [Bitbucket service connection](#sep-bbucket)
 * [Chef service connection](#sep-chef)
 * [Docker Host service connection](#sep-dochost)
 * [Docker Registry service connection](#sep-docreg)
