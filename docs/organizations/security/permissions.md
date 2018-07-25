@@ -1027,7 +1027,7 @@ Commenting this section out as it duplicates that defined in the following table
 <a id="git-repo">  </a>
 <a id="git-repository">  </a>
 <a id="git-repository-permissions-object-level">  </a>
-<a id="nbspnbspnbspgit-repository-object-level">  </a>
+<a id="git-repository-object-level">  </a>
 ## Git repository (object-level)
 
 <!---
