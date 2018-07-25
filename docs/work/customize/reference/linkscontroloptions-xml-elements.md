@@ -16,7 +16,7 @@ ms.date: 02/02/2018
 
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015) ](linkscontroloptions-elements.md). <br/><br/>
+>This topic applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015, see [LinksControlOptions elements (Client and web, TFS 2015) ](linkscontroloptions-elements.md). <br/><br/>
 >Customizing the links control is not a supported feature For the Inheritance process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
  
 By linking work items to other objects, you can track related work, dependencies, and changes made over time. With the updated [**Control** element](weblayout-xml-elements.md), you can specify a scoped links control within the work item form for the web portal by setting **type="LinksControl"**.    
@@ -300,7 +300,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p> <strong>Filter</strong> </p></td>
 <td><p>Required child element of the <strong>WorkItemTypeFilters</strong> container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control. </p>
 <pre><code>&lt;Filter WorkItemType=&quot;WorkItemTypeName&quot;  /&gt;</code></pre>
-<p>You can specify any work item type defined within the team project or project collection, including custom work item types. Typically, the work item types you specify depend on the process used to create your team project. See [Choose a process](../../work-items/guidance/choose-process.md) for details.</p>  
+<p>You can specify any work item type defined within the project or project collection, including custom work item types. Typically, the work item types you specify depend on the process used to create your project. See [Choose a process](../../work-items/guidance/choose-process.md) for details.</p>  
 <p>The following lists the default work item types available based on the default system processes:</p>
 <div style="float:left;width:120px;margin:3px;font-size:100%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Agile</p>
@@ -366,7 +366,7 @@ WorkItemFiltersScope="Project" &gt;
 <li><strong>ShowCallToAction</strong>: Can be set to ```true```, normally is ```false```. Determines whether call-to-actions appear below linked artifacts. 
 <blockquote><b>Note: </b>Currently, the only supported call-to-action experience occurs when ```ZeroDataExperience="Development"```.
 </blockquote></li>
-<li><strong>WorkItemFiltersScope</strong>: Can be set to ```Project```. When set to ```Project```, users can only link to work items within the current team project scope. </li>
+<li><strong>WorkItemFiltersScope</strong>: Can be set to ```Project```. When set to ```Project```, users can only link to work items within the current project scope. </li>
 </ul>
 </td>
 </tr>

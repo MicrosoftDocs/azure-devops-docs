@@ -83,7 +83,7 @@ SELECT [System.ID], [System.Title], [System.State]
 ```  
 https://{ServerName}/{CollectionName}/q.aspx?pname={TeamProjectName}&wiql={WorkItemQueryLanguage]
 ```
-For example, the following hyperlink lists the ID, title, and state of all bugs that have build number 9.0.30304 for the FabrikamFiber team project hosted on the fabrikam server. 
+For example, the following hyperlink lists the ID, title, and state of all bugs that have build number 9.0.30304 for the FabrikamFiber project hosted on the fabrikam server. 
 
 ```
 http://fabrikam:8080/tfs/DefaultCollection/q.aspx?pname=FabrikamFiber&wiql=

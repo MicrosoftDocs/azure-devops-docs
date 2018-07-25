@@ -21,17 +21,17 @@ ms.date: 03/20/2018
 >To learn more about customization and process models, see [Customize work tracking](../customize-work.md). 
 
 VSTS supports adding and updating processes through a web based [import process](import-process.md) administrative experience. 
-Once you add a process, you can create one or more team projects from it. 
+Once you add a process, you can create one or more projects from it. 
 You can update the process at any time by importing the process again. 
-The changes made to the process template are then applied to all team projects using that process.  
+The changes made to the process template are then applied to all projects using that process.  
 
-A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in VSTS. Some building blocks will update existing team projects, while others only apply to new team projects. See the table below for the full list.
+A process is a zip file containing a set of interdependent files used to define the building blocks of the work item tracking system as well as other sub-systems in VSTS. Some building blocks will update existing projects, while others only apply to new projects. See the table below for the full list.
 
 <table>
 <tbody>
 <tr>
 <th>Used when importing/updating a process </th>
-<th>Used when creating a new team project</th> 
+<th>Used when creating a new project</th> 
 <th>Replaced by system defaults</th> 
 <th>Ignored </th>   
 </tr>
@@ -259,7 +259,7 @@ To limit the account names that are valid within an identity field, specify the 
         <HELPTEXT>The program manager responsible for signing off on the user story.</HELPTEXT>
     </FIELD>
 ```
-Prior to importing the process, make sure that you've created the group in the team project(s) that the process will update. 
+Prior to importing the process, make sure that you've created the group in the project(s) that the process will update. 
 
 
 **Incorrect example**  

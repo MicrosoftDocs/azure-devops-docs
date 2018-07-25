@@ -47,15 +47,15 @@ Groups one or more work item types to support flexible reporting, queries, and o
 [!INCLUDE [temp](../../_shared/glossary-terms/favorites.md)] 
 
 ## Fields 
-Supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can query and generate charts to view status and trends. Your team project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](guidance/work-item-field.md).   
+Supports tracking a piece of information about the work to perform. Values you assign to a field are stored in the work tracking data store which you can query and generate charts to view status and trends. Your project contains 100 or more data fields. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. For a definition of each predefined field, see [Work item field index](guidance/work-item-field.md).   
 
 [!INCLUDE [temp](../../_shared/glossary-terms/follow.md)] 
 
 ## Global lists 
-Defines a list of menu items or pick list items that are shared across WITs and team projects within a team project collection. Global lists help to minimize the work that is required to update lists. You can define global lists within WITs that you upload with your process template. Learn more: [Manage global lists for work item types](../customize/reference/witadmin/manage-global-lists-for-work-item-types.md). (Only supported for Hosted XML and On-premises XML process models) 
+Defines a list of menu items or pick list items that are shared across WITs and projects within a project collection. Global lists help to minimize the work that is required to update lists. You can define global lists within WITs that you upload with your process template. Learn more: [Manage global lists for work item types](../customize/reference/witadmin/manage-global-lists-for-work-item-types.md). (Only supported for Hosted XML and On-premises XML process models) 
 
 ## Global workflow 
-Specifies both work item fields and global lists that multiple team projects and types of work items can share. Learn more: [Manage global workflow](../customize/reference/witadmin/witadmin-import-export-global-workflow.md) (Only supported for On-premises XML process model).   
+Specifies both work item fields and global lists that multiple projects and types of work items can share. Learn more: [Manage global workflow](../customize/reference/witadmin/witadmin-import-export-global-workflow.md) (Only supported for On-premises XML process model).   
 
 <a id="hidden-types"> </a> 
 ## Hidden types categories  
@@ -68,10 +68,10 @@ Specifies the set of work item types that you don't want users to create manuall
 You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. 
 
 ## Hosted XML process model  
-The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a team project by modifying and importing a process template. This process model is only available for select accounts hosted on the Visual Studio Team Services cloud platform.  To learn more, see [Hosted process model](../customize/hosted-xml-process-model.md).
+The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. This process model is only available for select accounts hosted on the Visual Studio Team Services cloud platform.  To learn more, see [Hosted process model](../customize/hosted-xml-process-model.md).
 
 ## Inheritance process model 
-The Inheritance process model provides support for customizing work tracking objects and Agile tools for a team project through the user interface. This process model is only available for accounts hosted on the Visual Studio Team Services cloud platform. Team projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
+The Inheritance process model provides support for customizing work tracking objects and Agile tools for a project through the user interface. This process model is only available for accounts hosted on the Visual Studio Team Services cloud platform. Projects inherit the customizations made to a process. To learn more, see [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md).
 
 
 ## Iteration paths (aka sprints)
@@ -86,7 +86,7 @@ Specifies an object used to form link relationships between different WITs. Lear
 
 
 ## On-premises XML process model 
-The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a team project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. This process model is only available for on-premises TFS. To learn more, see [On-premises process model](../customize/on-premises-xml-process-model.md).
+The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. This process model is only available for on-premises TFS. To learn more, see [On-premises process model](../customize/on-premises-xml-process-model.md).
 
 
 ## Pick lists
@@ -105,10 +105,10 @@ An interactive list of work items, similar to the product backlog, that supports
 Specifies the default configuration and functional capabilities that your teams can access using the Agile tools. These web portal tools include the product backlog, sprint backlogs, Kanban board, and task board. (Only supported for Hosted XML and On-premises XML process models)  
 
 ## Process model  
-The work tracking customization method supported by your account or collection. One of three process models are supported, Inheritance and Hosted XML for VSTS and On-premises XML for on-premises TFS. Learn more: [Customize your work tracking experience](../customize/customize-work.md) 
+The work tracking customization method supported by your organization or collection. One of three process models are supported, Inheritance and Hosted XML for VSTS and On-premises XML for on-premises TFS. Learn more: [Customize your work tracking experience](../customize/customize-work.md) 
 
 ## Process template
-Specifies an inter-related set of files that contain the XML definitions for tracking work and defining the initial configuration of other functional areas. The system provides three default process templates&mdash;[Agile](guidance/agile-process.md), [Scrum](guidance/scrum-process.md), or [CMMI](guidance/cmmi-process.md). You can create a team project and then customize it, or customize a process template that you then use to create a team project. (Only supported for Hosted XML and On-premises XML process models) 
+Specifies an inter-related set of files that contain the XML definitions for tracking work and defining the initial configuration of other functional areas. The system provides three default process templates&mdash;[Agile](guidance/agile-process.md), [Scrum](guidance/scrum-process.md), or [CMMI](guidance/cmmi-process.md). You can create a project and then customize it, or customize a process template that you then use to create a project. (Only supported for Hosted XML and On-premises XML process models) 
 
 ## Product backlog 
 An interactive list of work items that corresponds to a team's project plan or roadmap for what the team plans to deliver. The product backlog supports prioritizing work, forecasting work by sprints, and quickly linking work to portfolio backlog items. You can define your backlog items and then manage their status using the Kanban board. 
@@ -150,6 +150,6 @@ Workflow is an integral aspect of a work item and is defined by it's correspondi
 
 
 <!---
-To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your team project.  
+To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your project.  
 
 -->

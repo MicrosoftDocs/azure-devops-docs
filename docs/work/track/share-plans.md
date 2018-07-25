@@ -242,11 +242,11 @@ For details, see [Dashboards, charts, & widgets](../../report/dashboards/overvie
 
 ::: moniker range=">= tfs-2018"
 
-## Team project wiki 
+## Project wiki 
 
-You can use your team project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.  
+You can use your project wiki to share information with other team members. Each wiki corresponds to its own git repository and supports collaborative editing of its content and structure.  
 
-To learn more, see [Create a wiki for your team project](../../project/wiki/wiki-create-repo.md). 
+To learn more, see [Create a wiki for your project](../../project/wiki/wiki-create-repo.md). 
 
 ::: moniker-end
 
@@ -255,7 +255,7 @@ To learn more, see [Create a wiki for your team project](../../project/wiki/wiki
 
 ## SharePoint project portal
 
-You can use a SharePoint site to share and access documents from your team project. Your team can use the SharePoint site, also referred to as the project portal, to share information in the following ways:  
+You can use a SharePoint site to share and access documents from your project. Your team can use the SharePoint site, also referred to as the project portal, to share information in the following ways:  
 - Share data contained in reports or dashboards  
 - Share team progress using predefined or customized SharePoint dashboards  
 - Share documents, files, images  

@@ -20,7 +20,7 @@ ms.date: 11/28/2017
 You use the **WebLayout** element to define the layout and controls that appear on work item forms displayed through the web portal. It supports the [new work item experience](../process/new-work-item-experience.md). It is in addition to the [**Layout** element](all-form-xml-elements-reference.md) which defines the form elements that appear when viewed through Visual Studio and other non-web clients.
 
 > [!IMPORTANT]  
-> This topic applies to team project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
+> This topic applies to project customization for Hosted XML and On-premises XML (TFS 2017 and later versions) process models. For TFS 2015 and earlier versions, see [Layout XML element reference](layout-xml-element-reference.md). 
 >
 > For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -38,7 +38,7 @@ When the new form roll out is enabled, the XML definitions for all work item typ
 The new form makes available several new features as described in [New work item experience](../process/new-work-item-experience.md). Your account or project collection administrator manages the [switch to the new form](../manage-new-form-rollout.md).  
 - For the [Inheritance process model](../../../organizations/settings/work/manage-process.md), the switch to the new form is automatic for all user accounts.  
 - For the [Hosted XML process model](../import-process/import-process.md), an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
-- For TFS 2017, the new form is automatically available when you add team projects to a new collection.visualstudio.microsoft.comrojects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
+- For TFS 2017, the new form is automatically available when you add projects to a new collection.visualstudio.microsoft.comrojects, an admin must [enable the new form](../manage-new-form-rollout.md). <br/>
 - For TFS 2015 the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads/) to access the new form.
  
 
@@ -259,7 +259,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
    &lt;/Inputs&gt;
 &lt;/ControlContribution&gt;
 </code></pre>
-<p>The *ContributionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
+<p>The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
 </td>
 </tr>
 
@@ -269,7 +269,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 <pre><code>&lt;Extension Id="ExtensionId" /&gt;
 </code></pre>
 
-<p>The *ExtensionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed extensions](#extensions).</p>
+<p>The *ExtensionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed extensions](#extensions).</p>
 <p> </p>
 
 </td>
@@ -313,7 +313,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 	<td><p>Optional child element of **Section** within  **WebLayout** used to specify a group-level work item extension to appear on the form. The extension will appear as a group within the form.   </p>
 <pre><code>&lt;GroupContribution Id="ContributionId" Label="Name" /&gt;
 </code></pre>
-<p>The *ContributionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
+<p>The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
 </td>
 </tr>
 
@@ -356,7 +356,7 @@ ReadOnly=&quot;True | False&quot; Name=&quot;InstanceName&quot; /&gt;
 	<td><p>Optional child element of **WebLayout** used to specify a page-level work item extension to appear on the form. The extension will appear as a page within the form. </p>
 <pre><code>&lt;PageContribution Id="ContributionId" Label="Name"  /&gt;
 </code></pre>
-<p>The *ContributionId* you specify must be installed on the account or team project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
+<p>The *ContributionId* you specify must be installed on the account or project collection. The WIT definition files that you export contain a [list of installed contributions](#extensions).</p>
 </td>
 </tr>
 
@@ -529,7 +529,7 @@ Label=&quot;Start Date&quot; LabelPosition=&quot;Left&quot; /&gt;
 ![Date-Time control, Calendar field](_img/weblayout-date-time-control.png)   
 <pre><code>&lt;Control Type=&quot;DateTimeControl&quot; FieldName=&quot;FabrikamFiber.Schedule.SubmittedDate&quot; 
 Label=&quot;Submitted Date:&quot; LabelPosition=&quot;Left&quot;  Format=&quot;Short&quot; /&gt;</code></pre>
-<blockquote>**Note:**The date-time format displayed matches the [user profile account preferences](/vsts/organizations/settings/set-user--preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
+<blockquote>**Note:**The date-time format displayed matches the [user profile user profile](/vsts/organizations/settings/set-user--preferences). The WebLayout section doesn't not accept the **Layout** element `CustomFormat` property.  
 </blockquote>
 </td>
 </tr>

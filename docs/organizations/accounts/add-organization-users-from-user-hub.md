@@ -64,7 +64,7 @@ Provide others access to your organization by adding their email address.
 
 [!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
@@ -88,7 +88,7 @@ Provide others access to your organization by adding their email address.
 5. Choose **Add** to complete your invitation.
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 1. From your web browser, choose ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Organization Settings**
 

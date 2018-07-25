@@ -19,11 +19,11 @@ Agile, a term coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org)
 
 All tools support viewing and defining work items. Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier, an ID, which is unique within an account or project collection. 
 
-Your Agile tool set, available from the **Work** hub, consists of the following main interactive lists and signboards. Each of these pages provide a filtered set of work items. 
+Your Agile tool set, available from **Work**, consists of the following main interactive lists and signboards. Each of these pages provide a filtered set of work items. 
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 - **Work items**: Use to quickly find work items assigned to you or pivot or filter work items based on other criteria  
@@ -38,7 +38,7 @@ Your Agile tool set, available from the **Work** hub, consists of the following 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2018"
 - **Work items**: Use to quickly find work items assigned to you or pivot or filter work items based on other criteria  
@@ -86,7 +86,7 @@ Your view and options available will differ somewhat depending on if you have [e
 Open **Work Items** to access several personalized pivots and filter functions to focus on work items you care about. You can quickly find work items assigned to you, that you're following, or have viewed or modified recently&mdash;event when defined for different teams and projects. To learn more, see [View and add work items](view-add-work-items.md). 
 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  
 > ![Open Work>Work Items, new navigation](_img/about-agile/view-work-items-page.png)
@@ -96,18 +96,18 @@ Open **Work Items** to access several personalized pivots and filter functions t
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range="vsts"   
 > [!div class="mx-imgBorder"]
-> ![Work hub, Work Items page ](_img/view-add/view-work-items-hub-s136.png)
+> ![Work>Work Items ](_img/view-add/view-work-items-hub-s136.png)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
 > [!div class="mx-imgBorder"]
-> ![Work hub, Work Items page ](_img/view-add/work-items-hub.png)
+> ![Work>Work Items ](_img/view-add/work-items-hub.png)
 
 ::: moniker-end   
 
@@ -123,7 +123,7 @@ The Work Items tab isn't an available feature for TFS 2017 and earlier versions.
 
 Boards present work items as cards and support quick status updates through drag-and-drop, similar to sticky notes on a physical whiteboard. Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../kanban/kanban-quickstart.md). 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
 ![New Navigation, Kanban board, Agile template](_img/about-agile/view-boards-agile.png)   
 
@@ -133,7 +133,7 @@ Boards present work items as cards and support quick status updates through drag
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
 ::: moniker-end 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"   
 ![Kanban board, Agile template](../kanban/_img/kanban-basics-intro.png)     
@@ -150,7 +150,7 @@ Boards present work items as cards and support quick status updates through drag
 
 Backlogs present work items as lists. A product backlog represents your project plan, the roadmap for what your team plans to deliver. Your backlog also provides a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy. To get started, see [Create your backlog](../backlogs/create-your-backlog.md). 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
 ![New Navigation, Work>Backlogs](_img/about-agile/view-backlogs.png)    
 ::: moniker-end
@@ -159,13 +159,13 @@ Backlogs present work items as lists. A product backlog represents your project 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
 ::: moniker-end 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
-!["Web portal, choose Work hub, Backlogs](_img/view-add/view-stories-backlogs-standard.png)
+!["Web portal, choose Work>Backlogs](_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Work hub, backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Work>backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
 ---
@@ -175,7 +175,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 Sprint backlogs and taskboards provide a filtered view of work items a team has assigned to a specific iteration path, or sprint. Sprints are defined for a project and then selected by teams. From your backlog, you can map work to an iteration path using drag-and-drop, and then view that work in a separate **sprint backlog**. 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
 ![New Navigation, Work>Sprints>Backlog](_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
@@ -184,13 +184,13 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
 ::: moniker-end 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
-!["Web portal, choose Work hub, Backlogs, Sprint](_img/view-add/view-sprint-backlog.png)
+!["Web portal, choose Work>Backlogs, Sprint](_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Work hub, backlogs, TFS 2015, 2013 web portal](../scrum/_img/IC795962.png)
+![Work>backlogs, TFS 2015, 2013 web portal](../scrum/_img/IC795962.png)
 ::: moniker-end
 
 ---

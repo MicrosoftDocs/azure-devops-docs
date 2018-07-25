@@ -36,7 +36,7 @@ You can customize how data is published and refreshed by modifying the Microsoft
   
 -   [TFSFieldMapping](upload-or-download-the-microsoft-project-mapping-file.md)  
   
-     **Use the TFSFieldMapping command**. To modify the Microsoft Project field mapping file for a team project, you must first download the file.  
+     **Use the TFSFieldMapping command**. To modify the Microsoft Project field mapping file for a project, you must first download the file.  
   
 ## Related articles 
 -  [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)   

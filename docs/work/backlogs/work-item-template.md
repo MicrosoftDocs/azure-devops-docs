@@ -293,7 +293,7 @@ You manage templates from the team admin context. All templates are defined for 
 
 	If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can change work item templates.  
 
-2. Choose **Templates** under the **Work** hub.  
+2. Choose **Templates** under **Work**.  
 
 	<img src="_img/wit-templates-work-templates-page.png" alt="Open Work - Templates page for team" style="border: 1px solid #CCCCCC;" />  
 

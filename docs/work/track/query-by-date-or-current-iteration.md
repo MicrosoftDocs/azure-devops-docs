@@ -234,7 +234,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>Iteration Path</td>
-  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a team project](../../organizations/settings/set-iteration-paths-sprints.md), and you [select iteration paths](../../organizations/settings/set-team-defaults.md) for a team. 
+  <td>Groups work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy. You [define iteration paths for a project](../../organizations/settings/set-iteration-paths-sprints.md), and you [select iteration paths](../../organizations/settings/set-team-defaults.md) for a team. 
 <p>Reference name=System.IterationPath, Data type=TreePath</p>
   </td>
   <td>All</td>

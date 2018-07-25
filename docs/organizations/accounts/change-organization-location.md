@@ -28,7 +28,7 @@ To find the region where your organization is located:
 
 [!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 2. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Admin settings icon.
@@ -39,7 +39,7 @@ To find the region where your organization is located:
 
    ![Find region in organization settings](_img/change-organization-location/organization-settings-region.png)
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 

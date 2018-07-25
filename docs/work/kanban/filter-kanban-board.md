@@ -96,7 +96,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 For example, here we filter for all items assigned to Jamal and Raisa. 
 
 ![Kanban board, Filter on assignment field](../kanban/_img/filter-kb-filters-chosen.png)  
-Filters remain in place until you explicitly clear them by clicking **Clear filters**. When you refresh your Kanban board or log in from another browser, filters remain set to your previous values. 
+Filters remain in place until you explicitly clear them by clicking **Clear filters**. When you refresh your Kanban board or sign in from another browser, filters remain set to your previous values. 
 
 Once the board is filtered, you can click the filter icon to hide the drop downs and view the applied filters on the board. The filter icon also turns opaque to signify a filtered board.
 

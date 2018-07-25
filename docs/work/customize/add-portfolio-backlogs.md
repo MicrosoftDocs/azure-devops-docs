@@ -17,13 +17,13 @@ ms.date: 12/15/2017
 [!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process.md). 
+>This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process.md). 
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md).  
 
 Portfolio backlogs are useful for organizing your backlog under business initiatives. When you [organize your backlogs into portfolios](../backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
 
-Your team project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.  
+Your project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.  
 
 > [!NOTE]    
 >If you haven't yet enabled the Portfolio Backlogs feature for your on-premises TFS, [do that first](configure-features-after-upgrade.md).  
@@ -33,7 +33,7 @@ Here, we add a third portfolio backlog, Initiative. With it, the management team
 <a id="image-diff"></a>  
 
 > [!NOTE]  
-> The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your team project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). However, the basic functionality available to you remains the same unless explicitly mentioned. 
+> The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md). However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
 ![A view of three portfolio backlogs enabled](_img/three-level-portfolio-backlog.png)
@@ -44,17 +44,17 @@ You can add up to five levels of portfolio backlogs. And, each team can [choose 
 ##Process overview
 
 The process to add another portfolio backlog differs slightly depending on the [process model](customize-work.md) you use.   
-- For **Hosted XML**: You'll first export your process, add or update definition files, and then import that process to either update existing team projects or use it to create a team project.  
-- For **On-premises XML**: You'll first export your work tracking definition files, update them, and then import them to your team project.  
+- For **Hosted XML**: You'll first export your process, add or update definition files, and then import that process to either update existing projects or use it to create a project.  
+- For **On-premises XML**: You'll first export your work tracking definition files, update them, and then import them to your project.  
 
-This topic walks you through adding a portfolio backlog to a team project based on the [Agile process](../work-items/guidance/agile-process.md) in these five steps: 
+This topic walks you through adding a portfolio backlog to a project based on the [Agile process](../work-items/guidance/agile-process.md) in these five steps: 
 1.	[Export the files you need](#export-files)
 2.	[Create the Initiative work item type](#create-initiative)
 3.	[Update Categories with the Initiative Category](#update-categories)
 4.	[Update ProcessConfiguration to add the Initiative portfolio backlog](#update-processconfig)
-5.	[Update your team project and verify your changes](#update-team-project)  
+5.	[Update your project and verify your changes](#update-team-project)  
 
-You can apply the same steps if you work with a team project based on the [Scrum](../work-items/guidance/scrum-process.md) or [CMMI](../work-items/guidance/cmmi-process.md) process. When you're done, you'll get to manage your portfolio of projects by grouping work within these four levels: User Stories (or Product backlog items or Requirements), Features, Epics, and Initiatives.   
+You can apply the same steps if you work with a project based on the [Scrum](../work-items/guidance/scrum-process.md) or [CMMI](../work-items/guidance/cmmi-process.md) process. When you're done, you'll get to manage your portfolio of projects by grouping work within these four levels: User Stories (or Product backlog items or Requirements), Features, Epics, and Initiatives.   
  
 For an overview of the three system processes, see [Choose a process](../work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
 
@@ -62,14 +62,14 @@ For an overview of the three system processes, see [Choose a process](../work-it
 ##1. Export the files you need
 <ol>
 
-<li>If you aren't the account owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../organizations/security/set-project-collection-level-permissions.md). You need these permissions to customize the team project.</li>   
+<li>If you aren't the organization owner or a member of the Project Collection Administrator's group, [get added as an administrator](../../organizations/security/set-project-collection-level-permissions.md). You need these permissions to customize the project.</li>   
 <li>Get the files you need: 
 <ul>
 <li>For **Hosted XML**: [Export the process you want to update](import-process/import-process.md)<br/>
 Save the files to a folder that you'll use to update these files and folders: Categories, ProcessConfiguration, and WorkItemTypes</li> 
 <li> For **On-premises XML**: <br/>
 <ul>
-<li> If you haven't done so yet, update your team project to [enable the latest features](configure-features-after-upgrade.md)  </li> 
+<li> If you haven't done so yet, update your project to [enable the latest features](configure-features-after-upgrade.md)  </li> 
 <li> [Export the definition files you'll need](#import-export): Epic, Categories, and ProcessConfiguration </li> 
 </ul> 
 </li>
@@ -196,9 +196,9 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 
 
 <a id="update-team-project">  </a>
-##5. Update your team project and verify access to the new portfolio backlog  
+##5. Update your project and verify access to the new portfolio backlog  
 
-1.	Update your team project: 
+1.	Update your project: 
 	- For **Hosted XML:**  [Import your process](import-process/import-process.md).  
 	- For **On-premises XML:**  [Import the definition files you updated](#import-export) in this order:  
 		a. Initiative.xml  
@@ -213,7 +213,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 <a id="import-export">  </a>
 ## Import and export definition files (on-premises TFS only) 
 
-If you're updating a team project that connects to an on-premises TFS, you'll use the **witadmin** commands to import and export definition files. You need to export the following files: 
+If you're updating a project that connects to an on-premises TFS, you'll use the **witadmin** commands to import and export definition files. You need to export the following files: 
 - Epic.xml
 - Categories.xml (located in the WorkItem Tracking folder)
 - ProcessConfiguration.xml (located in the WorkItem Tracking/Process folder)
@@ -226,7 +226,7 @@ If you're updating a team project that connects to an on-premises TFS, you'll us
 
 	```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
 
-		For *CollectionURL* specify the URL of a team project collection and for *ProjectName* specify the name of a team project defined within the collection. You must specify the URL in the following format: ```http://ServerName:Port/VirtualDirectoryName/CollectionName```.  
+		For *CollectionURL* specify the URL of a project collection and for *ProjectName* specify the name of a project defined within the collection. You must specify the URL in the following format: ```http://ServerName:Port/VirtualDirectoryName/CollectionName```.  
 
 		For *DirectoryPath*, specify the path to the ```WorkItem Tracking/TypeDefinitions``` folder that holds the process template that you downloaded. The directory path must follow this structure: ```Drive:\TemplateFolder\WorkItem Tracking\TypeDefinitions```.
 

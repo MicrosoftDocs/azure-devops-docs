@@ -21,11 +21,11 @@ You can define the URL for a work item using the syntax provided based on the ve
 
 Examples in this topic use the following conventions:
 
--   *AccountName* specifies the name of the VSTS account  
+-   *OrganizationName* specifies the name of the VSTS organization  
 -   *ServerName* specifies the name of the TFS application tier server   
 -   *Port* specifies the port, default=8080
--   *CollectionName* specifies the name of the team project collection.
--   *TeamProjectName* specifies the team project name
+-   *CollectionName* specifies the name of the project collection.
+-   *TeamProjectName* specifies the project name
 -   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
  
 
@@ -33,7 +33,7 @@ Examples in this topic use the following conventions:
 
 ## VSTS
 
-<b>https://</b>*AccountName.visualstudio.com/ProjectName/*<b>_workitems/edit/</b>*WorkItemNumber*
+<b>https://</b>*OrganizationName.visualstudio.com/ProjectName/*<b>_workitems/edit/</b>*WorkItemNumber*
 
 **Example:** 
 

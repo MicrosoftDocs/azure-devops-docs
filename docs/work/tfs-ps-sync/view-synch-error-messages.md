@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 # View synchronization engine error messages
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
-<a name="Top"></a> To help troubleshoot the integration of Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you can display a list of recent synchronization errors. You can display the most recent errors that were logged for a team project collection by using the `/GetSyncMessages` option of the **TFSAdmin ProjectServer** command-line tool.  
+<a name="Top"></a> To help troubleshoot the integration of Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you can display a list of recent synchronization errors. You can display the most recent errors that were logged for a project collection by using the `/GetSyncMessages` option of the **TFSAdmin ProjectServer** command-line tool.  
   
 > [!NOTE]
 >  For information about the synchronization process, see [Overview of integration features](overview-tfs-project-server-integration.md).  
@@ -29,7 +29,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
   
  **Requirements**  
   
- To use this command, your **Administer Project Server integration** permission must be set to **Allow** for the team project collection. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of Project Web Access or Project Web App (PWA) that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+ To use this command, your **Administer Project Server integration** permission must be set to **Allow** for the project collection. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of Project Web Access or Project Web App (PWA) that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
  
   
@@ -43,7 +43,7 @@ TfsAdmin ProjectServer /GetSyncMessages /collection:tpcUrl
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**: `tpcUrl`|Specifies the uniform resource locator (URL) of a team project collection. You specify the URI in the following format:<br /><br /> **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory, you specify the URI in the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*|  
+|**/collection**: `tpcUrl`|Specifies the uniform resource locator (URL) of a project collection. You specify the URI in the following format:<br /><br /> **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory, you specify the URI in the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*|  
 |**/?** or **help**|Displays information about the command.|  
   
 ## Return value  
@@ -51,7 +51,7 @@ TfsAdmin ProjectServer /GetSyncMessages /collection:tpcUrl
   
 -   **Date**: Date when the message was logged.  
   
--   **Team Project Collection Name\Team Project Name**: Names of the team project collection and the team project.  
+-   **Team Project Collection Name\Team Project Name**: Names of the project collection and the project.  
   
 -   **Project Name**: Name of the enterprise project plan.  
   

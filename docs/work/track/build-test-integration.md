@@ -181,8 +181,8 @@ Repro Steps (or Steps to reproduce)
 **Notes**  
 1.  Do not customize the pick list for these fields. The system accepts only those values listed.  
 2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Fields that support integration with test, build, and version control](https://msdn.microsoft.com/en-us/library/ms194965.aspx).  
-3.  Requires TFS 2013.2 or TFS 2013.3 to be installed on the application-tier server and existing team projects to be updated to support Shared Parameters. To learn more, see Configure features after a TFS upgrade.  
-4.  Requires TFS 2013.3 to be installed on the application-tier server and existing team projects to be updated to support Test Plan and Test Suite.
+3.  Requires TFS 2013.2 or TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see Configure features after a TFS upgrade.  
+4.  Requires TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.
 
 ## Additional fields
 
@@ -262,7 +262,7 @@ The following fields do not appear on work item forms, but these fields are trac
 </table>
 
 **Notes**  
-1.  Requires TFS 2013.3 to be installed on the application-tier server and existing team projects to be updated to support Test Plan and Test Suite.  
+1.  Requires TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.  
 2.  Do not customize the pick list for these fields. The system accepts only those values listed.
 
 ## Related articles
@@ -280,5 +280,5 @@ Test Manager and the test work item types (WITs) use the following fields to tra
 |---|---|---|
 |<ul><li>Bug</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li><li>Test Plan</li><li>Test Suite</li></ul>|
 
-To learn more about upgrading an existing team project to get WITs that your team project currently doesn't have, see [Configure features after an upgrade](../customize/configure-features-after-upgrade.md).
+To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](../customize/configure-features-after-upgrade.md).
 

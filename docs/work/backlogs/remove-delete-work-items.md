@@ -20,7 +20,7 @@ ms.date: 07/12/2018
 
 **VSTS**
 
-Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect team project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
+Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
 
 ::: moniker-end
 
@@ -41,7 +41,7 @@ In this topic you'll learn:
 
 >[!div class="checklist"]    
 > * How to change the work item type of one or more work items   
-> * How to move one or more work items to another team project     
+> * How to move one or more work items to another project     
 > * How to remove work items from the backlog by changing the State to Removed     
 > * How to delete work items and test artifacts  
 > * How to restore or permanently delete work items (web portal)
@@ -80,7 +80,7 @@ You can access the following actions for which you have permissions. If you are 
 > [!div class="mx-tdCol2BreakAll"]
 > |Contributors|Project Administrators|  
 > |-------------|----------|---------|  
-> |- [Change work item type](#change-type) <br/>- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete) (web portal) <br/>- [Restore work items](#restore) (web portal)|- [Move a work item to another team project](#move) <br/>- [Permanently delete work items](#restore) (web portal)<br/>- [Permanently delete test artifacts](#delete-test) |  
+> |- [Change work item type](#change-type) <br/>- [Remove work items (change State)](#remove)<br/>- [Delete work items](#delete) (web portal) <br/>- [Restore work items](#restore) (web portal)|- [Move a work item to another project](#move) <br/>- [Permanently delete work items](#restore) (web portal)<br/>- [Permanently delete test artifacts](#delete-test) |  
 
 
 You can't change type, move work items, or delete/restore work items whose WITs support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.   
@@ -130,7 +130,7 @@ You can't change type, move work items, or delete/restore work items whose WITs 
   
 * To change the work item type, delete, or remove work items, you must be a member of the Contributors group or be granted [Stakeholder access](/vsts/organizations/security/get-started-stakeholder) 
 	Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
-* To move work items to another team project, you must be a member of the Project Administrators group or have the **Move work items out of this project** permission set to Allow. The Contributors group does not have this permission set at the project-level by default.
+* To move work items to another project, you must be a member of the Project Administrators group or have the **Move work items out of this project** permission set to Allow. The Contributors group does not have this permission set at the project-level by default.
 * To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.
 
 ::: moniker-end
@@ -170,13 +170,13 @@ Changing the work item type refreshes the work item form with the fields defined
 You can change a single work item or several [multi-selected work items](bulk-modify-work-items.md) to a new type. 
 
 
-1. Select the ![Change team project icon](../_img/icons/change-type-icon.png) Change type... option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
+1. Select the ![Change project icon](../_img/icons/change-type-icon.png) Change type... option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
 
 	![Work item form, Change work item type menu option](_img/move-change-delete/change-work-item-type.png)  
 
 	Or, from the backlog or query results page, multi-select several work items whose type you want to change. You can select several work items of the same type or different type so long as you want to change them all to the same work item type. 
 
-	Click ![actions icon](../_img/icons/actions-icon.png) to open the context menu of one of the selected work items, and choose the ![Change team project icon](../_img/icons/change-type-icon.png) **Change type&hellip;** option.    
+	Click ![actions icon](../_img/icons/actions-icon.png) to open the context menu of one of the selected work items, and choose the ![Change project icon](../_img/icons/change-type-icon.png) **Change type&hellip;** option.    
 
 	> [!IMPORTANT]   
 	>From the Query results page, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
@@ -201,15 +201,15 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 ::: moniker range="vsts"
 
 <a id="move"> </a>  
-## Move a work item to another team project  
+## Move a work item to another project  
 
-When you discover that a work item belongs to a different team project within your account or collection, you can move it where it belongs. You can move a single work item or several [multi-selected work items](bulk-modify-work-items.md). 
+When you discover that a work item belongs to a different project within your organization or collection, you can move it where it belongs. You can move a single work item or several [multi-selected work items](bulk-modify-work-items.md). 
 
 <!---
-Feature availability: The **Move to team project&hellip;** menu option is supported only from VSTS.
+Feature availability: The **Move to project&hellip;** menu option is supported only from VSTS.
 -->  
 
-You can only move work items from one team project to another team project within the account or collection. You can't move work items associated with test management. To move work items to another team project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
+You can only move work items from one project to another project within the organization or collection. You can't move work items associated with test management. To move work items to another project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
 
 1. Open the work item and choose the ![Move work item icon](../_img/icons/change-team-project-icon.png) **Move...** option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
 
@@ -219,7 +219,7 @@ You can only move work items from one team project to another team project withi
 
 	Click ![actions icon](../_img/icons/actions-icon.png) to open the context menu of one of the selected work items, and choose the ![Move work item icon](../_img/icons/change-team-project-icon.png) **Move&hellip;** option. 
 
-2. Select the destination team project and optionally enter a comment.  
+2. Select the destination project and optionally enter a comment.  
 
 	![VSTS, Move work item type dialog](_img/move-change-delete/move-work-item-dialog.png)
   
@@ -265,7 +265,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
  
 	![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
 
-	Or, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from the Work hub. 
+	Or, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from **Work**. 
 
 ::: moniker-end
 
@@ -349,17 +349,17 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 <a id="delete-test"> </a> 
 ## Delete test artifacts  
 
-You must be a member of the Project Administrators group or have the [**Delete test artifacts** permission set to **Allow**](../../organizations/security/set-permissions-access-work-tracking.md#delete-test-permissions). You must also have your [access level set to Advanced](../../organizations/security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from the work hub that aren't linked to any test plans or test suites. 
+You must be a member of the Project Administrators group or have the [**Delete test artifacts** permission set to **Allow**](../../organizations/security/set-permissions-access-work-tracking.md#delete-test-permissions). You must also have your [access level set to Advanced](../../organizations/security/change-access-levels.md), which provides access to the full Test feature set. Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites. 
 
 To delete test artifacts, the following restrictions and operations apply:  
-- Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from the work hub that aren't linked to any test plans or test suites.  
+- Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. That is, they can delete test cases created from **Work** that aren't linked to any test plans or test suites.  
 - When you delete a test plan, test suite, test case, shared steps, or shared parameters, you not only permanently delete them, you also delete all associated test artifacts such as test results.  
 - You can't bulk delete test artifacts. If test artifacts are part of a bulk selection to be deleted, all other work items except the test artifact(s) will get deleted.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!IMPORTANT]   
-><b>Feature availability: </b> The permanently delete feature of test artifacts is available from the Test and Work hubs for TFS 2017.1 and later versions. 
+><b>Feature availability: </b> The permanently delete feature of test artifacts is available from the Test and Work for TFS 2017.1 and later versions. 
 >
 >We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
 ::: moniker-end
@@ -376,9 +376,9 @@ To delete test artifacts, the following restrictions and operations apply:
   
 	![Confirm delete of test artifacts](_img/move-change-delete/perm-delete-test-artifacts-dialog.png)  
  
-3. You can also delete test plans and test suites directly from the Test hub. 
+3. You can also delete test plans and test suites directly from **Test**. 
 
-	![Delete test plans and artifacts from Test hub](_img/move-change-delete/delete-test-plans.png)  
+	![Delete test plans and artifacts from Test pages](_img/move-change-delete/delete-test-plans.png)  
 
 4.	To delete shared steps and shared parameters you need to first manually remove all references to them before you can delete them. 
 	

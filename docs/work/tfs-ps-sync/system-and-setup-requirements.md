@@ -39,7 +39,7 @@ ms.date: 01/12/2017
     >   
     >  For Project Server 2013, both **Classic Mode** and **Claims Based** authentication are supported.  
   
--   **For project managers**: Visual Studio 2012 and one of the following versions of Microsoft Project must be installed on the same machine that will be used to manage enterprise project plans that will participate in data synchronization with team projects:  
+-   **For project managers**: Visual Studio 2012 and one of the following versions of Microsoft Project must be installed on the same machine that will be used to manage enterprise project plans that will participate in data synchronization with projects:  
   
     -   Project Professional 2007 with SP2 and the update that you can download from the following page on the Microsoft website: [Description of the Office Project 2007 hotfix package (Project-x-none.msp): February 23, 2010](http://go.microsoft.com/fwlink/?LinkId=211633).  
   
@@ -57,7 +57,7 @@ ms.date: 01/12/2017
   
 |Software|Install on|  
 |--------------|----------------|  
-|Visual Studio 2013 or Team Explorer 2013|Each machine on which Project Professional is used to synchronize data between enterprise project plans and team projects and each machine that is used to administer the configuration of the two server products. **Note:**  You can download Team Explorer 2013 from [Visual Studio 2013 Download](https://visualstudio.microsoft.com/vs/older-downloads/).|  
+|Visual Studio 2013 or Team Explorer 2013|Each machine on which Project Professional is used to synchronize data between enterprise project plans and projects and each machine that is used to administer the configuration of the two server products. **Note:**  You can download Team Explorer 2013 from [Visual Studio 2013 Download](https://visualstudio.microsoft.com/vs/older-downloads/).|  
 |Visual Studio Team Foundation Server 2013|Each application-tier server that hosts Team Foundation Server and that will participate in synchronizing data with Project Server. For more information, see [Install](/tfs/server/install/get-started).|  
 |Team Foundation Server Extensions for Project Server|Each web-tier and application-tier server that hosts Project Server  and that will participate in synchronizing data with Team Foundation Server.<br /><br /> For more information, see [How to: Add Project Server to Team Foundation Server](https://msdn.microsoft.com/library/hh548139.aspx).|  
   
@@ -66,11 +66,11 @@ ms.date: 01/12/2017
   
 1.  **Project Server must be configured**. Before you configure the integration of TFS and Project Server, you must have configured Project Server to support your enterprise project plans. You must have defined at least once instance of Project Web Access or Project Web App (PWA) that will participate in data synchronization.  
   
-2.  **At least one enterprise project plan must be defined**. Before you can map the project plan with a team project, you must have created the plan and published it to Project Server.  
+2.  **At least one enterprise project plan must be defined**. Before you can map the project plan with a project, you must have created the plan and published it to Project Server.  
   
-3.  **At least one team project collection must be defined**. Before you can map a collection to an instance of PWA, you must define that collection.  
+3.  **At least one project collection must be defined**. Before you can map a collection to an instance of PWA, you must define that collection.  
   
-4.  **The team project that you want to synchronize must be defined**.  You must have a team project that you will map to an enterprise project plan. You can synchronize data with any team project. Also, before you upload field mappings to a team project collection, you must have defined a team project for that collection.  
+4.  **The project that you want to synchronize must be defined**.  You must have a project that you will map to an enterprise project plan. You can synchronize data with any project. Also, before you upload field mappings to a project collection, you must have defined a project for that collection.  
   
 5.  **Configure the integration**. As the following illustration shows, you must perform six main steps when you configure the integration of the two server products.  
   
@@ -78,9 +78,9 @@ ms.date: 01/12/2017
   
      For more information, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   
-6.  **Customize the field mappings**. You will have to customize the default field mappings if you are mapping a project plan to a team project that was created from the Visual Studio Scrum process template.  
+6.  **Customize the field mappings**. You will have to customize the default field mappings if you are mapping a project plan to a project that was created from the Visual Studio Scrum process template.  
   
-     You might have to customize the field mappings if the team project was not created from a Microsoft process template, either Agile Software Development or Capability Maturity Model Integration (CMMI) Process Improvement. Also, if you have customized the types of work items in your team project, you might have to further customize the field mappings to support data synchronization.  
+     You might have to customize the field mappings if the project was not created from a Microsoft process template, either Agile Software Development or Capability Maturity Model Integration (CMMI) Process Improvement. Also, if you have customized the types of work items in your project, you might have to further customize the field mappings to support data synchronization.  
   
      For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md).  
   

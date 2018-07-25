@@ -18,9 +18,9 @@ ms.date: 02/26/2018
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
->This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). To update a team project that uses the Hosted XML process, see [Import process](import-process/import-process.md).
+>This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). To update a project that uses the Hosted XML process, see [Import process](import-process/import-process.md).
 
-When the Configure Features wizard can't update your team project, it's because your team project was created from a process template other than those TFS provides, or you've customized your team project in ways that conflict with its ability to apply the updates. In these situations, you have these options to update your existing team projects: 
+When the Configure Features wizard can't update your project, it's because your project was created from a process template other than those TFS provides, or you've customized your project in ways that conflict with its ability to apply the updates. In these situations, you have these options to update your existing projects: 
 
 
 * **Option A**: Add features to your customized process template, and then run the Configure Features wizard 
@@ -35,13 +35,13 @@ When the Configure Features wizard can't update your team project, it's because 
 
 	Choose this option when you have made very few customizations to your process template. 
 
-* **Option C**: [Manually update your team project to add features](add-features-manually.md)
+* **Option C**: [Manually update your project to add features](add-features-manually.md)
 
-	Choose this option when you've made customizations to your team project that aren't present in any of your process templates.
+	Choose this option when you've made customizations to your project that aren't present in any of your process templates.
 
-* **Option D**: Programmatically update many team projects. First, choose **Option A** or **Option B** to update your customized process template. Then, batch update all team projects defined for a team project collection using the following information and resources: [How to Configure Features for dozens of team projects](http://blogs.msdn.com/b/visualstudioalm/archive/2012/05/31/how-to-configure-features-for-dozens-of-team-projects.aspx) and [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
+* **Option D**: Programmatically update many projects. First, choose **Option A** or **Option B** to update your customized process template. Then, batch update all projects defined for a project collection using the following information and resources: [How to Configure Features for dozens of projects](http://blogs.msdn.com/b/visualstudioalm/archive/2012/05/31/how-to-configure-features-for-dozens-of-team-projects.aspx) and [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
 
-	Choose this option when you have dozens of team projects that were created from the same process template.
+	Choose this option when you have dozens of projects that were created from the same process template.
 
 ><b>Tip: </b>Review [Changes made to process templates](../work-items/guidance/changes-to-process-templates.md) to learn about changes made to the default process templates to enable new features. 
 
@@ -57,7 +57,7 @@ When the Configure Features wizard can't update your team project, it's because 
 
 1. If you aren't a member of the Project Collection Administrators group, [get added](https://msdn.microsoft.com/library/dd547204.aspx). You need the **Manage process template permission** set to Allow to download and manage process templates.
 
-1. After TFS has been upgraded, [download the latest process template from TFS](../work-items/guidance/manage-process-templates.md) and choose the process template that most closely matches the one used to create your team project. 
+1. After TFS has been upgraded, [download the latest process template from TFS](../work-items/guidance/manage-process-templates.md) and choose the process template that most closely matches the one used to create your project. 
 
 	To download or upload process templates, you must connect to TFS 2015 from either Visual Studio 2015 or Team Explorer 2015.
 
@@ -100,7 +100,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 ## 3. Apply your customizations to the process template (Option B)
 
-![Step 3](../_img/icons/ProcGuid_3.png) With this option, you apply customizations you've made to your team project or process template to the latest process template that most closely matches the template used to create your team project. 
+![Step 3](../_img/icons/ProcGuid_3.png) With this option, you apply customizations you've made to your project or process template to the latest process template that most closely matches the template used to create your project. 
 
 
 1. Apply the customizations that you've made to the new process template folder:
@@ -373,14 +373,14 @@ Perform the following steps for each WIT that you add to your process template. 
 
 	The Configure Features wizard uses the ```version``` statement to determine which process template within a category is the latest version and automatically selects that version. 
 	
-	If the ```version``` statement isn't present, the Configure Features wizard can't select the process template for updating a team project. Also, if more than one process template has been uploaded that specifies the same highest version number, then none of these process templates can be selected for updating a team project.
+	If the ```version``` statement isn't present, the Configure Features wizard can't select the process template for updating a project. Also, if more than one process template has been uploaded that specifies the same highest version number, then none of these process templates can be selected for updating a project.
 1. [Upload the process template](../work-items/guidance/manage-process-templates.md).
 
-	To verify your changes, create a test project. See [create a team project](../../organizations/projects/create-project.md).
+	To verify your changes, create a test project. See [create a project](../../organizations/projects/create-project.md).
 
 ## 5. Run the Configure Features wizard
 
-![Step 5](../_img/icons/ProcGuid_5.png) When you've verified that the process template supports your customizations, run the [Configure Features wizard  to update your existing team projects](configure-features-after-upgrade.md). 
+![Step 5](../_img/icons/ProcGuid_5.png) When you've verified that the process template supports your customizations, run the [Configure Features wizard  to update your existing projects](configure-features-after-upgrade.md). 
 
 1.	Verify the features you want work as expected by exercising them as described in the following topics: 
 	<table>
@@ -489,7 +489,7 @@ You can post a question or search for answers to your update questions in one of
 
 ### Customizations that interfere with smooth updates 
 
-What types of customizations stop the Configure Features wizard from being able to update a team project?
+What types of customizations stop the Configure Features wizard from being able to update a project?
  
 The following changes made to a process template can interfere with the Configure Features wizard's ability to run:
 
@@ -501,7 +501,7 @@ To learn more, see [Process configuration XML element reference](reference/proce
  
 ###Add portfolio backlog levels
 
-You can add up to five portfolio backlogs total. This includes the Feature and Epic portfolio backlogs. You can add this to a custom process template or after your team project is updated. To get started, see [Add a portfolio backlog](add-portfolio-backlogs.md).  
+You can add up to five portfolio backlogs total. This includes the Feature and Epic portfolio backlogs. You can add this to a custom process template or after your project is updated. To get started, see [Add a portfolio backlog](add-portfolio-backlogs.md).  
 
 ###Rename a work item type 
 
