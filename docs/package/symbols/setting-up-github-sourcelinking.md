@@ -69,7 +69,7 @@ In this article we've shown you how to get up and running using the symbol serve
 
 ### Does this work with private GitHub repositories?
 
-No, currently the Source Link implementation in Visual Studio is not designed to work with authenticated GitHub repositories. This functionaly is being added in will be available in the future release of Visual Studio 2017.
+No, currently the Source Link implementation in Visual Studio is not designed to work with authenticated GitHub repositories. This functionality is being added in will be available in the future release of Visual Studio 2017.
 
 ## Reference Information
 
