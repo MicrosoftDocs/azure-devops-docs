@@ -27,7 +27,7 @@ The custom panel opens in the same space that the mapping panel opens if it were
 ![panel extension on the VSTS Portfolio backlog page](_img/add-panel-show-custom-panel.png)
 
 
-There are three types of backlogs that can be targets for panel extensions: Portfolio backlogs, Product backlogs, and Iteration backlogs. For the Agile template, this breakdown is as below. This is representitive of Scrum and CMMI as well. For custom templates, please consult your process to see which backlogs are requirement or portfolio category. 
+There are three types of backlogs that can be targets for panel extensions: Portfolio backlogs, Product backlogs, and Iteration backlogs. For the Agile template, this breakdown is as below. This is representative of Scrum and CMMI as well. For custom templates, please consult your process to see which backlogs are requirement or portfolio category. 
 
 <!---
 ![backlog panel contribution point breakdown](../_shared/procedures/_img/backlog-pane/backlogPaneContributionPointBreakdown.png)
