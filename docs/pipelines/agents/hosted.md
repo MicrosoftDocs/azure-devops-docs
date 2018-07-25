@@ -1,6 +1,6 @@
 ---
 title: Microsoft-hosted agents for VSTS
-description: Learn about uing the Microsoft-hosted agents provided in Visual Studio Team Services (VSTS)
+description: Learn about using the Microsoft-hosted agents provided in Visual Studio Team Services (VSTS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
