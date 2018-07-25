@@ -230,7 +230,7 @@ This error may indicate the agent lost communication with the server for a span 
 #### TFS Job Agent not started
 This may be characterized by a message in the web console "Waiting for an agent to be requested". Verify the TFSJobAgent (display name: *Visual Studio Team Foundation Background Job Agent*) Windows service is started.
 
-#### Misconfigured notifcation URL (1.x agent version)
+#### Misconfigured notification URL (1.x agent version)
 This may be characterized by a message in the web console "Waiting for console output from an agent", and the process eventually times out.
 
 A mismatching notification URL may cause the worker to process to fail to connect to the server. See *Team Foundation Administration Console*, *Application Tier*. The 1.x agent listens to the message queue using the URL that it was configured with. However, when a job message is pulled from the queue, the worker process uses the notification URL to communicate back to the server.
