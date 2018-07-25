@@ -14,13 +14,14 @@ There are a number of other features across Code, Wiki, Package, and Administrat
 
 ## Next steps
 
-> [!NOTE]
-> These features will be rolling out over the next two to three weeks.
-
 Read about the new features below and head over to VSTS to try them for yourself.
 
 > [!div class="nextstepaction"]
 > [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/6PH5i_f3ErA?rel=0]
 
 ## Features
 
@@ -119,6 +120,9 @@ Now you can right click on a wiki page and open it in new tab or simply press CT
 
 The Microsoft-hosted Linux and macOS agents are now out of preview and generally available. After several months in preview, listening to feedback, and tuning the infrastructure to provide a consistent service, we're excited to offer these now in GA. See the [Microsoft-hosted agents](/vsts/pipelines/agents/hosted?view=vsts) documentation for more information.
 
+> [!IMPORTANT]
+> Due to the way the hosted pools were implemented in preview, the agent pools in existing organizations will continue to have the "Preview" moniker (in name only). Pools marked "Preview" have reached general availability and will be equivalent to corresponding, newly-named pools that will soon roll out.
+
 ### Automatically deploy to new targets in a deployment group
 
 Previously, when new targets were added to a deployment group, a manual deployment was required to ensure all targets have the same release. You can now configure the environment to automatically deploy the last successful release to the new targets. We plan to add additional trigger events and actions to the auto redeploy configuration in coming sprints. See the [Deployment Groups](/vsts/pipelines/release/deployment-groups/) documentation for more information.
@@ -141,7 +145,7 @@ Back in [November](/vsts/release-notes/2017/nov-28-vsts#azure-devops-project-rel
 
 ### Get started with pre-installed Package Management
 
-The Package Management extension is pre-installed into all accounts. If you're using the new navigation preview, look for it at the bottom of the list of services. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each account comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Manage extensions using the menu in the top-right of the navigation.
+The Package Management extension is pre-installed into all accounts. If you're using the new navigation preview, look for it at the bottom of the list of services. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each account comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Soon you'll also be able to toggle the visibility of this service in your organization using the Services admin page within the new navigation as you can with the others.
 
 > [!div class="mx-imgBorder"]
 ![Packages service](_img/137_06.png)
