@@ -191,7 +191,7 @@ Running the agent as a service may help to eliminate programs from prompting for
 Analyzing a dump of the process can help to identify what a deadlocked process is waiting on.
 
 ### WiX project
-Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutofProc=true` will workaround the issue.
+Building a WiX project when custom MSBuild loggers are enabled, can cause WiX to deadlock waiting on the output stream. Adding the additional MSBuild argument `/p:RunWixToolsOutOfProc=true` will workaround the issue.
 
 ## Agent connection issues
 
