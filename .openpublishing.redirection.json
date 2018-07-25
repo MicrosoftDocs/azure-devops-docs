@@ -7984,6 +7984,96 @@
       "source_path": "docs/user-guide/work-web-portal.md",
       "redirect_url": "/vsts/project/navigation/index",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "docs/billing/csp/buy-csp-vsts.md",
+      "redirect_url": "/vsts/organizations/billing/csp/buy-csp-vsts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/csp/buy-vs-app-center.md",
+      "redirect_url": "/vsts/organizations/billing/csp/buy-vs-app-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/csp/set-up-csp-customer.md",
+      "redirect_url": "/vsts/organizations/billing/csp/set-up-csp-customer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/add-backup-billing-managers.md",
+      "redirect_url": "/vsts/organizations/billing/add-backup-billing-managers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/buy-access-tfs-test-hub.md",
+      "redirect_url": "/vsts/organizations/billing/buy-access-tfs-test-hub",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/buy-basic-access-add-users.md",
+      "redirect_url": "/vsts/organizations/billing/buy-basic-access-add-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/buy-load-testing-vs.md",
+      "redirect_url": "/vsts/organizations/billing/buy-load-testing-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/buy-more-build-vs.md",
+      "redirect_url": "/vsts/organizations/billing/buy-more-build-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/change-azure-subscription.md",
+      "redirect_url": "/vsts/organizations/billing/change-azure-subscription",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/change-number-paid-extension-users.md",
+      "redirect_url": "/vsts/organizations/billing/change-number-paid-extension-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/faq-extension-trials.md",
+      "redirect_url": "/vsts/organizations/billing/faq-extension-trials",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/index.md",
+      "redirect_url": "/vsts/organizations/billing/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/overview.md",
+      "redirect_url": "/vsts/organizations/billing/overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/reduce-cancel-paid-vsts-users.md",
+      "redirect_url": "/vsts/organizations/billing/reduce-cancel-paid-vsts-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/set-up-billing-for-your-organization-vs.md",
+      "redirect_url": "/vsts/organizations/billing/set-up-billing-for-your-organization-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/try-additional-features-vs.md",
+      "redirect_url": "/vsts/organizations/billing/try-additional-features-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/vsts-billing-faq.md",
+      "redirect_url": "/vsts/organizations/billing/vsts-billing-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/xamarin-univ.md",
+      "redirect_url": "/vsts/organizations/billing/xamarin-univ",
+      "redirect_document_id": true
+    }    
   ]
 }

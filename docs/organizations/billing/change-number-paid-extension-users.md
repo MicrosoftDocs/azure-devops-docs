@@ -23,7 +23,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 ## Prerequisites
 
 You'll need VSTS
-[project collection administrator or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner).
+[project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 
 1. Sign in to your VSTS organization. (```https://{yourorganization}.visualstudio.com```).
 
@@ -45,7 +45,7 @@ The number of paid extension users is updated.
 
 ## Next steps
 
-- [Assign features or extensions to users](../marketplace/assign-paid-extensions.md)
+- [Assign features or extensions to users](../../marketplace/assign-paid-extensions.md)
 - [Uninstall or disable extensions](https://docs.microsoft.com/en-us/vsts/marketplace/uninstall-disable-extensions?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
 
 ## Related articles
