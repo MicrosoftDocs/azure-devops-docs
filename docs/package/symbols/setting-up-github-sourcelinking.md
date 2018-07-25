@@ -60,7 +60,7 @@ Once consent is granted Visual Studio will download the source files directly fr
 ![Source code loaded from GitHub using symbols information](_img/codeloadedfromgithubusingsymbolsinfo.png)
 
 > [!NOTE]
-> When attaching to a process, you may need to uncheck the **Enable Just My Code** option unde the _Debugging | General_ options.
+> When attaching to a process, you may need to uncheck the **Enable Just My Code** option under the _Debugging | General_ options.
 
 ## Conclusion
 In this article we've shown you how to get up and running using the symbol server integrated with VSTS even when your source code is coming from GitHub.
