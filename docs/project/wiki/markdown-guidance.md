@@ -411,7 +411,7 @@ Lightweight task lists are a great way to track progress on a list of todos as e
 
 You can Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with either `-<space>` or `1.<space>` (any numeral).
 
-**Example - Apply the task list markdown to a higlighted list**
+**Example - Apply the task list markdown to a highlighted list**
 
 > [!div class="mx-imgBorder"]  
 > ![Apply markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-apply.png) 
