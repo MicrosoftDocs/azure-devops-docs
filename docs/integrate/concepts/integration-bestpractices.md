@@ -23,7 +23,7 @@ For many teams, VSTS is one of several tools that are used to effectively run an
 ##Push only actionable work items
 Only push items into VSTS when it is an actionable work item that your team actually going to engage on or address in the future. Keep work items out of VSTS until absolutely necessary. 
 
-For example, don't attempt to store telemetry data in Team Sevices.
+For example, don't attempt to store telemetry data in Team Services.
 
 ##Maintain your own data store
 Don't add work items into VSTS for the sake of having them all in one place. VSTS is not designed as a data storage service. You should maintain your own data store.
