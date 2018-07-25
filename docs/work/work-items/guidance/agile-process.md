@@ -18,7 +18,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-The Agile process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as features, user stories, and tasks. These artifacts are created when you create a team project using the Agile  process. They are based on Agile principles and values.  
+The Agile process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as features, user stories, and tasks. These artifacts are created when you create a project using the Agile  process. They are based on Agile principles and values.  
  
 <img src="_img/agile-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 2px solid #C3C3C3;" />
 
@@ -26,18 +26,18 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> You can customize the work tracking system for your team project based on the Agile process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
+> You can customize the work tracking system for your project based on the Agile process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]  
-> The latest version of the Agile process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../../customize/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
+> The latest version of the Agile process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../customize/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
 >The following WITs are available as follows: Epic, TFS 2015 and later versions; 
 >Shared Parameters, TFS 2013.2 and later versions; 
 >and Test Plan and Test Suite, TFS 2013.3 and later versions.   
 >
->Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a team project from an on-premises TFS. Other resource requirements apply. 
+>Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a project from an on-premises TFS. Other resource requirements apply. 
 ::: moniker-end
 
 ## Plan and track work
@@ -86,9 +86,9 @@ To get started, you can open a shared query and create a chart based on your tra
 <a id="reports"></a>
 ## SQL Server reports
 
-If your team project collection and the team project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of Agile reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
+If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of Agile reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
 
-If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md).  
+If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md).  
 
 ::: moniker-end
 
@@ -98,7 +98,7 @@ If you need to add reporting services or update reports to the latest versions, 
 
 You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
-To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your team project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ Product owners can use the shared queries that are defined in the following tabl
 
 The following table describes the shared queries that are listed under the **Current Iteration** folder. These queries find work items that are assigned to a specified iteration. As you plan additional iterations, you can modify these queries to specify a different iteration and then save them to additional folders that you create, such as **Iteration 2** or **Iteration 3**.
 
-The project administrator for each team project [defines area and iteration paths](../../../organizations/settings/set-area-paths.md) for that project so that the team can track progress by those designations.
+The project administrator for each project [defines area and iteration paths](../../../organizations/settings/set-area-paths.md) for that project so that the team can track progress by those designations.
 
 <table>
 <thead>
@@ -228,7 +228,7 @@ The **Work Items With Summary Values** shared query, which is located in the **T
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 ### Workbooks
 
-You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your team project has been configured with a SharePoint portal. 
+You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal. 
 Each workbook references a shared query.  
 
 -   The [Issues workbook](https://msdn.microsoft.com/library/dd380707.aspx) uses the Open Issues shared query.  

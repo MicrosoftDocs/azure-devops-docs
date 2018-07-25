@@ -18,9 +18,9 @@ ms.date: 07/25/2017
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
-You access all Agile tools from the **Work** hub. If you're new to Agile, see [What is Agile?](/azure/devops/agile/what-is-agile) for an overview.
+You access all Agile tools from **Work**. If you're new to Agile, see [What is Agile?](/azure/devops/agile/what-is-agile) for an overview.
 
-<img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
+<img src="_img/plan-intro.png" alt="Work>product backlog page" style="border: 1px solid #C3C3C3;" />  
 
 
 > [!NOTE]
@@ -37,7 +37,7 @@ You build your project plan by creating a backlog of work items that represent t
 
 ## Try this next  
 
-Take these tools for a test run by [creating an account on VSTS for free](../../organizations/accounts/create-organization-msa-or-work-student.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
+Take these tools for a test run by [signing up for a free VSTS organization](../../organizations/accounts/create-organization-msa-or-work-student.md). From there, you're ready to [create your backlog](create-your-backlog.md).  
 
 Once you've started tracking work, you'll want to monitor and track progress, identify trends, and share your plans. See [Charts, dashboards, and widgets](../../report/overview.md). 
 

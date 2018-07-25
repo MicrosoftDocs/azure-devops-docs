@@ -18,7 +18,7 @@ ms.date: 01/18/2017
 
 With keyboard shortcuts, you can quickly navigate within a web page or the web work item form. 
 
-## Work hub, Work Items page 
+## Work>Work Items 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
 

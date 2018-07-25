@@ -203,7 +203,7 @@ With this option, you can copy an HTML formatted table of selected items. You ca
 
     The formatted table contains a link to each work item included in your selected results list.  
 
-3.  Paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the team project or area node for those work items.   
+3.  Paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the project or area node for those work items.   
 
 <a id="print-items"></a>
 ## Print items  
@@ -256,7 +256,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 <a id="release-summary"></a>
 ## Email release summary
 
-From the Release hub, choose a specific release and click the ![email](../_img/icons/email-icon.png) Send Email icon to share the results of that release.  
+From **Build and release>Releases**, choose a specific release and click the ![email](../_img/icons/email-icon.png) Send Email icon to share the results of that release.  
 
 
 > [!NOTE]    

@@ -18,18 +18,18 @@ ms.date: 02/02/2017
 **TFS 2015 | TFS 2013**
 
 > [!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model for TFS 2015 and earlier versions. For the Hosted XML process model and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md).  
+>This topic applies to project customization for the On-premises XML process model for TFS 2015 and earlier versions. For the Hosted XML process model and TFS 2017 and later versions, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md).  
 >
 >Customizing link control options is not a supported feature for the Hosted XML process model. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 
 You use the `LinksControlOptions` element to define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item. When you add a links control to a work item form, you can specify filters that restrict the types of links that users can be view and create and the types of work items to which users can create links. Specifically, you use the following elements as indicated:  
   
--   `WorkItemLinkFilters`: Use to restrict the types of links between work items in the current team project.  
+-   `WorkItemLinkFilters`: Use to restrict the types of links between work items in the current project.  
   
 -   `ExternalLinkFilters`: Use to restrict the types of links that can be created between work items and other objects, such as changesets, hyperlinks, or version controlled files.  
   
--   `WorkItemTypeFilters`: Use to restrict the link relationships that users can create based on work item type and whether the work item is defined in the current team project.  
+-   `WorkItemTypeFilters`: Use to restrict the link relationships that users can create based on work item type and whether the work item is defined in the current project.  
   
 In each of these elements, you can specify `Filter` elements to specify the link types or work item types that you want to include or exclude. For more information about how to use these elements, see [Define link controls to restrict link relationships](define-link-controls.md).  
   
@@ -64,10 +64,10 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 |Element|Attribute|Description|  
 |-------------|---------------|-----------------|  
 |`LinksControlOptions`||Optional `Control` element when `type="LinksControl"`.<br /><br /> Provides a container for elements that define what links can be added to a work item and the default columns to appear for the list of link relationships in a work item. |  
-|`WorkItemLinkFilters`||Optional `LinksControlOptions` element.<br /><br /> Provides a container for one or more `Filter` elements that specify the link filter criteria to use for link types that are defined for the team project collection and that create relationships between work items. |  
+|`WorkItemLinkFilters`||Optional `LinksControlOptions` element.<br /><br /> Provides a container for one or more `Filter` elements that specify the link filter criteria to use for link types that are defined for the project collection and that create relationships between work items. |  
 ||`FilterType`|Required `WorkItemLinkFilters` attribute.<br /><br /> Defines the method used to filter the set of link types provided in the set of `Filter` elements. <br /><br /> Valid values that you can use are:<br /><br /> -   `exclude`: Use to disallow links to be created from those link types listed in the `Filter` elements.<br />-   `excludeAll`: Use to disallow all link types.<br />-   `include`: Use to allow only those link types listed in the `Filter` elements.<br />-   `includeAll`: Use to allow links to be created from all link types.|  
 |`Filter`||Required `WorkItemLinkFilters` element when the `FilterType` is `exclude` or `include`.<br /><br /> When the `FilterType` is `excludeAll` or `includeAll`, no `Filter` elements should be specified.<br /><br /> Specifies the types of links that are to be included or excluded from the set of links that can be created for the work item. |  
-||`LinkType`|Required `Filter` attribute.<br /><br /> Specifies the reference name for a type of link. Valid types include the following system defined link types:<br /><br /> -   `Storyboard`<br />-   System.LinkTypes.Dependency<br />-   System.LinkTypes.Hierarchy<br />-   System.LinkTypes.Related<br /><br /> In addition, you can specify the reference name for custom link types defined for the team project collection. For more information, see [LinkTypes](link-type-element-reference.md).|  
+||`LinkType`|Required `Filter` attribute.<br /><br /> Specifies the reference name for a type of link. Valid types include the following system defined link types:<br /><br /> -   `Storyboard`<br />-   System.LinkTypes.Dependency<br />-   System.LinkTypes.Hierarchy<br />-   System.LinkTypes.Related<br /><br /> In addition, you can specify the reference name for custom link types defined for the project collection. For more information, see [LinkTypes](link-type-element-reference.md).|  
 ||`FilterOn`|Optional `Filter` attribute.<br /><br /> Specifies the type of filter to apply to the link type.<br /><br /> Valid values are:<br /><br /> -   `forwardname`: Use to filter on the forward name defined for a type of link.<br />-   `reversename`: Use to filter on the reverse name defined for a type of link.<br /><br /> If unspecified, then both the forward and reverse names are used to filter the link type. **Note:**  If the link type topology is Network, the forward and reverse names are the same. For more information, see [LinkTypes](link-type-element-reference.md).|  
 |`ExternalLinkFilters`||Optional `LinksControlOptions` element.<br /><br /> Provides a container for one or more `Filter` elements that specify the link types that users can specify to create relationships to objects that are not work items, such as changesets, hyperlinks, and files under version control.|  
 ||`FilterType`|Optional `ExternalLinkFilters` attribute.<br /><br /> Defines the method that is used to filter the list of link types provided in the set of `Filter` elements.<br /><br /> You can use the following values:<br /><br /> -   `exclude`: Use to disallow links to be created from those link types that appear in the `Filter` elements.<br />-   `excludeAll`: Use to disallow all link types.<br />-   `include`: Use to allow only those link types listed in the `Filter` elements.<br />-   `includeAll`: Use to allow links to be created from all link types.<br /><br /> If unspecified, all links to external work items are excluded.|  
@@ -80,8 +80,8 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 ||`WorkItemType`|Required `Filter` attribute.<br /><br /> Specifies the reference name of a work item type to be filtered. The attribute type is: `typelib:NonEmptyPlainConstant`.<br /><br /> Minimum length: 1; maximum length: 255.<br /><br /> Pattern value: ^[^\\\\]*$<br /><br /> Pattern value example: Task|  
 |`LinkColumns`||Optional `LinksControlOptions` element.<br /><br /> Provides a container for one or more `LinkColumn` elements. |  
 |`LinkColumn`||Required `LinkColumns` element.<br /><br /> Specifies the work item fields and link type attributes displayed for the list of links defined for a work item.<br /><br /> This column list is the default display. The user can add and remove columns from the link list.<br /><br /> The order in which the `LinkColumn` elements are listed defines the order in which the column fields are displayed in the work item form.|  
-||`RefName`|Optional `LinkColumn` attribute. Specify `RefName` or `LinkAttribute`, but not both.<br /><br /> Specifies the reference name corresponding to a valid work item field for the team project collection. The attribute type is `typelib:ReferenceFieldName`.|  
-||`LinkAttribute`|Optional `LinkColumn` attribute. Specify `RefName` or `LinkAttribute`, but not both.<br /><br /> Specifies the reference name corresponding to any attribute for a valid link type for the team project collection. The attribute type is `typelib:ReferenceFieldName`.|  
+||`RefName`|Optional `LinkColumn` attribute. Specify `RefName` or `LinkAttribute`, but not both.<br /><br /> Specifies the reference name corresponding to a valid work item field for the project collection. The attribute type is `typelib:ReferenceFieldName`.|  
+||`LinkAttribute`|Optional `LinkColumn` attribute. Specify `RefName` or `LinkAttribute`, but not both.<br /><br /> Specifies the reference name corresponding to any attribute for a valid link type for the project collection. The attribute type is `typelib:ReferenceFieldName`.|  
   
 ### Parent Elements  
   
@@ -93,7 +93,7 @@ The `LinksControlOptions` element is a child element of the `CONTROL` element.
 `LinksControlOptions` is an optional child element of `Control` element where `ControlType="LinksControl"`. You can use the `LinksControlOptions` element to support the following actions:   
 -   Specify the restrictions that govern the creation of relationships to other work items based on the link type and, optionally, the forward and reverse names of the link types.  
 -   Specify the restrictions that govern the creation of relationships to objects other than work items, such as changeset, hyperlink, and so on, based on external link types.   
--   Specify the restrictions that govern the creation of relationships to other work items based on work item type and, optionally, the team project where those work items are defined.    
+-   Specify the restrictions that govern the creation of relationships to other work items based on work item type and, optionally, the project where those work items are defined.    
 -   Specify the default column fields that you want to display information for the link list.  
   
 ## Example  

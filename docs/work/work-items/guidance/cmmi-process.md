@@ -19,7 +19,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a team project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](https://msdn.microsoft.com/library/ee461556.aspx) process.
+The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](https://msdn.microsoft.com/library/ee461556.aspx) process.
 
 <img src="_img/cmmi-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 1px solid #C3C3C3;" />  
 
@@ -27,18 +27,18 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> You can customize the work tracking system for your team project based on the CMMI process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
+> You can customize the work tracking system for your project based on the CMMI process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]  
-> The latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../../customize/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
+> The latest version of the CMMI process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../customize/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
 >The following WITs are available as follows: Epic, TFS 2015 and later versions; 
 >Shared Parameters, TFS 2013.2 and later versions; 
 >and Test Plan and Test Suite, TFS 2013.3 and later versions.   
 >
->Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a team project from TFS. Other resource requirements apply. 
+>Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a project from TFS. Other resource requirements apply. 
 ::: moniker-end
 
 
@@ -93,9 +93,9 @@ To get started, you can open a shared query and create a chart based on your tra
 ## SQL Server reports  
 
 
-If your team project collection and the team project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of CMMI reports. For these reports to be useful, [teams must perform certain activities](../../../report/admin/review-team-activities-for-useful-reports.md), such as define build processes, link work items, and update status or remaining work.  
+If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of CMMI reports. For these reports to be useful, [teams must perform certain activities](../../../report/admin/review-team-activities-for-useful-reports.md), such as define build processes, link work items, and update status or remaining work.  
 
-If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md).  
+If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md).  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
@@ -104,7 +104,7 @@ If you need to add reporting services or update reports to the latest versions, 
 
 You can access Agile process dashboards displayed through SharePoint. These dashboards display project data, support investigation tasks, and help teams to perform common tasks quickly. These dashboards support the display of web access parts for listing work items and reports that were built in the Analysis Services cube.
 
-To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your team project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-portal-dashboards.md) your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
 ::: moniker-end
 
 
@@ -168,7 +168,7 @@ Team members can use the shared queries that are described in the following tabl
 | My Test Cases | Lists all test cases that are not closed and that are assigned to the team member who is running the query. Test cases are sorted by priority and then ID. |
 | Open Tasks | Lists all tasks that are not closed, sorted by rank, priority, and then ID. |
 | Open Test Cases | Lists all test cases that are not closed, sorted by priority and then ID. |
-| Resolved Bugs | Lists all resolved bugs that are defined for the team project, sorted by rank, priority, and severity. |
+| Resolved Bugs | Lists all resolved bugs that are defined for the project, sorted by rank, priority, and severity. |
 | Test Tasks | Lists all tasks whose **Discipline** is set to **Test**, sorted by ID. |
 
 #### Backlog management queries
@@ -214,7 +214,7 @@ Product owners can use the shared queries that are described in the following ta
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 ### Workbooks
 
-You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your team project has been configured with a SharePoint portal. Each workbook references a shared query.  
+You can use the following Excel workbooks to review open issues and to rank and assign untriaged work items. Workbooks are only available when your project has been configured with a SharePoint portal. Each workbook references a shared query.  
 
 -   The [Issues workbook](https://msdn.microsoft.com/library/ee461548.aspx) uses the Open Issues shared query  
 -   The [Triage workbook](https://msdn.microsoft.com/library/ee461525.aspx) uses the Untriaged Work Items shared query  

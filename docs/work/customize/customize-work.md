@@ -15,13 +15,13 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context. The method you use to customize team projects, which impacts all teams, depends on the process model you use.  
+As you plan and track your project, you'll find you may want to configure a feature or customize your experience to meet your team's tracking needs. You configure teams and team Agile tools through the web portal administration context. The method you use to customize projects, which impacts all teams, depends on the process model you use.  
 
 Customizations you make occur at one of three levels:   
 
 - **Team assets or tools**: Each team can customize or configure their specific tools, for details,see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md)
-- **Team project level**: Add or modify work item types, data fields, backlog levels, and other objects shared across teams  
-- **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the team project and assigning users or groups to specific access levels.  
+- **Project level**: Add or modify work item types, data fields, backlog levels, and other objects shared across teams  
+- **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.  
 
 > [!NOTE]    
 >If you're new to the work tracking system, see [Get started with Agile tools to plan and track work](../backlogs/overview.md). 
@@ -31,7 +31,7 @@ Customizations you make occur at one of three levels:
 <a id="shared-resources"></a>
 ## Shared resources  
 
-Each team project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](../../organizations/settings/about-areas-iterations.md). 
+Each project provides a number of shared resources that support all teams added to the project. You configure these features through the user interface or the admin context of the web portal. To understand how the system uses area and iteration paths, see [About area and iteration paths](../../organizations/settings/about-areas-iterations.md). 
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Area path pick lists | Sprint/iteration pick lists |
@@ -47,9 +47,9 @@ Each team project provides a number of shared resources that support all teams a
 
 <a id="process-models"></a>
 
-## Team projects and process customizations  
+## Projects and process customizations  
 
-Your team project determines the objects available to tracking work and the configuration of Agile tools. Specifically, the team project determines the work item types (WITs)&mdash;user stories, tasks, bugs&mdash; and the data fields used to capture information. Customized objects are shared across teams added to the team project.  
+Your project determines the objects available to tracking work and the configuration of Agile tools. Specifically, the project determines the work item types (WITs)&mdash;user stories, tasks, bugs&mdash; and the data fields used to capture information. Customized objects are shared across teams added to the project.  
 
 > [!NOTE]    
 >The method you use to customize work tracking depends on the process model you subscribe to: 
@@ -99,7 +99,7 @@ The following table summarizes the differences between the three supported proce
 
 
 <tr>
-<td align="left">Updated process changes automatically apply to team projects</td>
+<td align="left">Updated process changes automatically apply to projects</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td> </td>
@@ -127,14 +127,14 @@ The following table summarizes the differences between the three supported proce
 </tr>
 
 <tr>
-<td align="left">Use the [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit team projects</td>
+<td align="left">Use the [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) to edit projects</td>
 <td> </td>
 <td> </td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
-<td align="left">Use the **witadmin** command-line tools to list information about team projects</td>
+<td align="left">Use the **witadmin** command-line tools to list information about projects</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
 <td>![checkmark](../_img/icons/checkmark.png)</td>
@@ -180,7 +180,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <a id="test-experience"></a>
 ## Customize the test experience
 
-Several WITs support the test experience within the web portal Test hub and Test Manager client. You can customize these WITs as you would any other WIT. The following image illustrates the support link relationships.  
+Several WITs support the test experience within the web portal **Test** pages and Test Manager client. You can customize these WITs as you would any other WIT. The following image illustrates the support link relationships.  
 
   ![Test management work item types](../work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)
 
@@ -199,7 +199,7 @@ See the following resources for additional usage and customization information:
 To add values for fields associated with user accounts such as **Assigned To** add users to a security group or by restricting access to a group or set of users. By default, the list for the Assigned To field contains the account names for all users and groups that have been added to the server. These accounts are often synchronized with Active Directory or Azure Active Directory. See [Add AD/Azure AD users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md). 
 
 ## Less common customizations   
-You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. The customizations made to process configuration apply to all teams added to the team project.  
+You can only perform the following customizations when working with the Hosted XML or On-premises XML process models. The customizations made to process configuration apply to all teams added to the project.  
 
 <a id="limits">  </a>
 ### Backlog and board limits (Hosted XML, On-premises XML) 

@@ -17,7 +17,7 @@ ms.date: 05/10/2017
 <p><b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b></p>
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
+>This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
@@ -43,7 +43,7 @@ For information on modifying fields or adding field rules to a WIT definition fi
 <a id="help-text" /> 
 ## Help text
 
-You can customize the help text or tooltip text that appears when a user points to a field that appears on a work item form. You can customize and localize the Help text for the same field that appears in different WITs and different team projects. Help text is restricted to 255 Unicode characters.
+You can customize the help text or tooltip text that appears when a user points to a field that appears on a work item form. You can customize and localize the Help text for the same field that appears in different WITs and different projects. Help text is restricted to 255 Unicode characters.
 
 The following example shows the assignment of Help text to a custom Business Justification field:
 
@@ -57,7 +57,7 @@ The following example shows the assignment of Help text to a custom Business Jus
 To provide users guidance that exceeds the 255 characters limit, see [Provide help text, hyperlinks, or web content on a work item form](provide-help-text-hyperlinks-web-content-form.md).
 
 > [!NOTE]    
->The presence of `HELPTEXT` adds to the size of your data store and can impact scalability. If you support several hundreds of team projects within a single TFS collection or instance, be conservative in your use of `HELPTEXT` rules.
+>The presence of `HELPTEXT` adds to the size of your data store and can impact scalability. If you support several hundreds of projects within a single TFS collection or instance, be conservative in your use of `HELPTEXT` rules.
 
 <a id="pick-list" /> 
 ## Pick list rules
@@ -83,7 +83,7 @@ Pick list rules define the values that a user can or can't choose for a String f
 </tr>
 <tr>
 <td><p><strong>GLOBALLIST</strong></p></td>
-<td><p>Specifies the name of a global list that contains values maintained for a team project or project collection.</p></td>
+<td><p>Specifies the name of a global list that contains values maintained for a project or project collection.</p></td>
 </tr>
 <tr>
 <td><p><strong>PROHIBITEDVALUES</strong></p></td>
@@ -286,12 +286,12 @@ When you restrict a rule to a group, you must indicate the domain or scope of th
 
 Person-name fields can accept values that reference both users and groups. Field attributes, for and not, apply to groups. You can use the following tokens when specifying values for these items.
 
--   **Scope to a group within a team project &mdash;[Project]:**
+-   **Scope to a group within a project &mdash;[Project]:**
 
-    The [Project] token is used to specify a group that is defined for a team project. This could correspond to a team, built-in TFS group, such as the [Project]\Contributors group, a custom TFS group you create at the project level, or a Windows group that you added to a TFS group. 
+    The [Project] token is used to specify a group that is defined for a project. This could correspond to a team, built-in TFS group, such as the [Project]\Contributors group, a custom TFS group you create at the project level, or a Windows group that you added to a TFS group. 
 
 	> [!NOTE]    
-	>[Project] is used as is. You don't replace it with the name of your team project.
+	>[Project] is used as is. You don't replace it with the name of your project.
         
 	Some examples:
 
@@ -299,9 +299,9 @@ Person-name fields can accept values that reference both users and groups. Field
       
         When you create a team, a TFS group is created that contains the members assigned to the team.
 
-    -   Team project group: `[Project]\Contributors`
+    -   Project group: `[Project]\Contributors`
 
-    -   Windows group added to a team project: `[Project]\Triage Committee`
+    -   Windows group added to a project: `[Project]\Triage Committee`
 
     > [!TIP]  
     >You can view a list of valid groups by [opening the Security page](../../../organizations/security/set-project-collection-level-permissions.md) in the web portal administration context.
@@ -481,7 +481,7 @@ In the following XML example, SubStatus will be emptied as you type "Approved Ag
 <!--- 
 #### Q: When would I define field rules using global workflow?
 
-**A:** Use global workflow only when you are tasked with maintaining many fields with the same definitions and rules across multiple team projects. Similar to global lists, using global workflow can minimize the work required when you have to update field definitions. For more information, see [Customize global workflow](global-workflow-xml-element-reference.md).
+**A:** Use global workflow only when you are tasked with maintaining many fields with the same definitions and rules across multiple projects. Similar to global lists, using global workflow can minimize the work required when you have to update field definitions. For more information, see [Customize global workflow](global-workflow-xml-element-reference.md).
 
 
 -->

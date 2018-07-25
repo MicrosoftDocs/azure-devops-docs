@@ -31,7 +31,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 -   Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  
   
- If your team project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
+ If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
   
 1.  Add required fields to the WITs that will capture the rollup values.  
   
@@ -56,7 +56,7 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 1.  Update the Microsoft Project Mapping file to contain the field mappings you need to support rollup. For details, see [Upload or download the Microsoft Project Mapping file](../../customize/reference/upload-or-download-the-microsoft-project-mapping-file.md).  
   
-     Depending on the process template used to create your team project, some of these mappings may be there already. Here's an example of fields to include:  
+     Depending on the process template used to create your project, some of these mappings may be there already. Here's an example of fields to include:  
   
     ```  
     <Mapping WorkItemTrackingFieldReferenceName=" Microsoft.VSTS.Scheduling.OriginalEstimate" ProjectField="pjTaskBaselineWork" ProjectUnits="pjHour" PublishOnly="false" IfSummaryRefreshOnly="false" />  
@@ -105,11 +105,11 @@ Because Microsoft Project has a scheduling engine, it automatically will generat
   
 1.  If you've created your work items in Project, then skip to step 2.  
   
-     To get rollup of work items you've defined in TFS, open Project, connect to the team project, and open the query you created in the last procedure.  
+     To get rollup of work items you've defined in TFS, open Project, connect to the project, and open the query you created in the last procedure.  
   
-     ![Connect to a team project from Microsoft Project](_img/alm_prj_chooseteamproject.png "ALM_PRJ_ChooseTeamProject")  
+     ![Connect to a project from Microsoft Project](_img/alm_prj_chooseteamproject.png "ALM_PRJ_ChooseTeamProject")  
   
-     Project is now bound to your team project. The Team Foundation Gantt view supports entry and display of several TFS fields.  
+     Project is now bound to your project. The Team Foundation Gantt view supports entry and display of several TFS fields.  
   
      If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md). To get the Team Foundation add-in, you need to have Team Explorer installed if you don't have Visual Studio installed.  
   

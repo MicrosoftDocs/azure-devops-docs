@@ -182,7 +182,7 @@ The Backlog Priority and Stack Rank fields don't appear on the work item forms. 
 
 To add the field to the form: 
 
-- **VSTS**: Add the Stack Rank field to a work item type ([for the custom process that your team project references](../../organizations/settings/work/customize-process-form.md)).
+- **VSTS**: Add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
 - **TFS**: [Modify the WIT XML definition to add the following control element](../customize/add-modify-wit.md):
 
 	`<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`

@@ -137,7 +137,7 @@ Then, add a stacked area trend chart that sums the Story Points.
 <a id="work"/>
 ##Queries and charts based on remaining and completed work 
 
-Based on the process your team project references, you can assign the following fields to tasks or bugs. 
+Based on the process your project references, you can assign the following fields to tasks or bugs. 
 
 | Process | Available fields   |
 |---------|---------|---------|
@@ -290,7 +290,7 @@ The following table describes the activity-based and numeric fields that you can
 **Notes:**
 
 1.  To change the menu selection (on-premises TFS only), see [Add or modify a field, customize a pick list](../customize/add-modify-field.md).   
-2.  The values displayed in the [Capacity page](../scrum/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all team projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the team projects for the field assigned to `type="Activity"`.</p>
+2.  The values displayed in the [Capacity page](../scrum/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.</p>
 
 3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../customize/reference/process-configuration-xml-element.md).
 
