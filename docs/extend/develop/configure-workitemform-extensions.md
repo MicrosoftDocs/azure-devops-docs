@@ -80,7 +80,7 @@ A work item type can be exported as XML using witadmin tool, that includes the l
  ```
 
 <br>
-**Step 6:**  Specifying the extensions in the xml automaticaly places both the **page** and **group** contributions defined in the extensions inside the form. You can move the contributions following the examples below: 
+**Step 6:**  Specifying the extensions in the xml automatically places both the **page** and **group** contributions defined in the extensions inside the form. You can move the contributions following the examples below: 
 
 #### Add page contribution
 ```xml
