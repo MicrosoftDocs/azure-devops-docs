@@ -1,6 +1,6 @@
 ---
-title: Buy Continuous Integration/Continuous Delivery (CI/CD)
-description: Learn how to pay for more continuous integration and continuous delivery (CI/CD) concurrency using VSTS (Visual Studio Online, VSO, VSTS)
+title: Buy Continuous Integration/Continuous Delivery
+description: Learn how to pay for more continuous integration and continuous delivery concurrency using VSTS (Visual Studio Online, VSO, VSTS)
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
