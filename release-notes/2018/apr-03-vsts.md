@@ -1,5 +1,7 @@
 ---
 title: Deployment Groups and Build completion trigger – VSTS Sprint 132 Update
+author: alexcnichols
+ms.author: alexn
 ms.date: 4/3/2018
 description: The Sprint 132 Update of Visual Studio Team Services (VSTS) brings a few key features to help you scale your build and release pipeline.
 ---
