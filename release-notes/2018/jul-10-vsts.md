@@ -51,7 +51,7 @@ Package:
 Admin:
 
 - [Connect or disconnect Azure Active Directory as a Project Collection Admin](#connect-or-disconnect-azure-active-directory-as-a-project-collection-admin)
-- [Public projects available in preview for all accounts](#public-projects-available-in-preview-for-all-accounts)
+- [Public projects available in preview for all organizations](#public-projects-available-in-preview-for-all-organizations)
 - [Adopt the word "organization" when referring to a collection of projects in VSTS](#adopt-the-word-organization-when-referring-to-a-collection-of-projects-in-vsts)
 
 ## Code
@@ -59,7 +59,7 @@ Admin:
 ### Create pull requests without a default team as reviewer
 
 > [!IMPORTANT]
-> To use this capability, you must have the **New Navigation** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or account.
+> To use this capability, you must have the **New Navigation** [preview feature](/vsts/project/navigation/preview-features) enabled on your profile or organization.
 
 When we first launched the pull request (PR) experience, we thought it would make sense to assign all PRs to the team context that you had selected when creating the PR. This behavior has been a frustration point, since many people did not notice the connection between the team context and the PR assignment. In fact, this has been one of our top [UserVoice suggestions](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/18780553-dont-add-the-default-team-as-reviewer-when-doing-a).
 ​
@@ -145,7 +145,7 @@ Back in [November](/vsts/release-notes/2017/nov-28-vsts#azure-devops-project-rel
 
 ### Get started with pre-installed Package Management
 
-The Package Management extension is pre-installed into all accounts. If you're using the new navigation preview, look for it at the bottom of the list of services. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each account comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Soon you'll also be able to toggle the visibility of this service in your organization using the Services admin page within the new navigation as you can with the others.
+The Package Management extension is pre-installed into all organizations. If you're using the new navigation preview, look for it at the bottom of the list of services. If you're still on the current navigation, look for the **Packages** hub in the **Build and release** hub group. Each organization comes with 5 free Package Management users, and additional users can be purchased from [the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed). Soon you'll also be able to toggle the visibility of this service in your organization using the Services admin page within the new navigation as you can with the others.
 
 > [!div class="mx-imgBorder"]
 ![Packages service](_img/137_06.png)
@@ -154,12 +154,12 @@ The Package Management extension is pre-installed into all accounts. If you're u
 
 ### Connect or disconnect Azure Active Directory as a Project Collection Admin
 
-A Project Collection Administrator (PCA) can now [connect or disconnect their account from Azure Active Directory](/vsts/organizations/accounts/connect-account-to-aad?view=vsts). Previously this had to be done by an account owner.
+A Project Collection Administrator (PCA) can now [connect or disconnect their organization from Azure Active Directory](/vsts/organizations/accounts/connect-organization-to-aad?view=vsts). Previously this had to be done by an organization owner.
 
-### Public projects available in preview for all accounts
+### Public projects available in preview for all organizations
 
 > [!IMPORTANT]
-> To use this capability, an account administrator must [enable public projects](/vsts/organizations/public/create-public-project?view=vsts&tabs=horizontal#enable-anonymous-access-to-projects-for-your-organization) from the **Settings** page. 
+> To use this capability, an organization administrator must [enable public projects](/vsts/organizations/public/create-public-project?view=vsts&tabs=horizontal#enable-anonymous-access-to-projects-for-your-organization) from the **Settings** page. 
 
 As we [announced back in April](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/), we're bringing [public projects](/vsts/organizations/public/index?view=vsts) to VSTS. For the first time, you'll be able to mark a VSTS Team Project as public. This will enable anonymous (un-authenticated) users to be able to view the contents of that project, including work items, code, and build results. Although the feature is still in preview, as of this sprint you will no longer need to be invited to join the private preview.
 
