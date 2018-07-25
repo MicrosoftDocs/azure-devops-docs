@@ -108,7 +108,7 @@ The following steps will help you resolve this issue.
     ``` 
 
 	> [!NOTE]   
-	> You may need to revise the definition if you need more granularity than *State Category* provides.  *State Category* provides correct sorting across all work item types reguardless of any *State* customizations.
+	> You may need to revise the definition if you need more granularity than *State Category* provides.  *State Category* provides correct sorting across all work item types regardless of any *State* customizations.
 
 4. Open the **Data** view and select the *State* field.
 
