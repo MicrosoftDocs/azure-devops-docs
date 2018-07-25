@@ -137,7 +137,7 @@ You can't remove or delete the default server level groups.
 			</p>
 			<p>
 				This group should contain only service accounts
-				and not user accounts or groupsthat contain user accounts.
+				and not user accounts or groups that contain user accounts.
 				By default, this group is a member of <strong>Team Foundation Administrators</strong>.
 			</p>
 			<p>
