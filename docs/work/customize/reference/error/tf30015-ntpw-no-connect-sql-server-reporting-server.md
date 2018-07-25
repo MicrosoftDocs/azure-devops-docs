@@ -21,7 +21,7 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
   
  Possible causes of this error include:  
   
--   You do not have the required permissions to create a team project.  
+-   You do not have the required permissions to create a project.  
   
 -   A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
   
@@ -31,13 +31,13 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
   
 ### To correct this error    
   
-1.  Confirm that you have the required permissions to create a team project. This includes the required permissions on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a team project](../../../../organizations/projects/create-project.md).  
+1.  Confirm that you have the required permissions to create a project. This includes the required permissions on each server that hosts Team Foundation Server, SharePoint Products, and SQL Server Reporting Services. For more information, see [Create a project](../../../../organizations/projects/create-project.md).  
   
 2.  Contact your Team Foundation Server administrator to verify that the server configuration is correct.  
   
 3.  Contact the administrator for the SQL Server Reporting Services server {*name*} to confirm that the server is available on the network.  
   
-4.  If the server shows available on the network, review the team project creation log and follow any instructions provided.  
+4.  If the server shows available on the network, review the project creation log and follow any instructions provided.  
   
      The log shows each action taken by the wizard at the time of the failure and may include additional details about the error. To open the log:  
   
@@ -58,4 +58,4 @@ The New Team Project Wizard was unable to connect to {*name*}, the server that h
 5.  If the problem persists, contact your Team Foundation Server administrator.  
     
 ## Related articles
-- [Create a team project](../../../../organizations/projects/create-project.md)
+- [Create a project](../../../../organizations/projects/create-project.md)

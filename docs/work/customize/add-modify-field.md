@@ -17,11 +17,11 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-Your team project contains 100 or more data fields, based on the process&#151;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&#151;used to create the team project. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
+Your project contains 100 or more data fields, based on the process&#151;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&#151;used to create the project. You update data by [modifying the data field within a work item](../backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
 You can modify an existing field or add a custom field to support tracking additional data requirements. For example, you can customize the pick list within a drop-down menu, add a rule to specify a default value or restrict the value it can take, or change a field attribute.  
 
-Not all pick lists are defined in the same way. Some lists are defined through the user interface, the workflow for a WIT, or by adding user accounts to a team project as indicated in the following table.   
+Not all pick lists are defined in the same way. Some lists are defined through the user interface, the workflow for a WIT, or by adding user accounts to a project as indicated in the following table.   
 
 > [!NOTE]    
 > **Feature availability:** You can exercise some features only from an on-premises TFS and are noted as such. 
@@ -37,9 +37,9 @@ Not all pick lists are defined in the same way. Some lists are defined through t
 ## Methods by which work item fields get added 
 You use work item fields to track data for a work item type and to define the filter criteria for queries as well as to generate reports. Any data element, except for system  fields, that you want to track must be defined as a work item field. You can define work item fields within the definition of a work item type or global workflow.
 
-Work item fields are maintained for a team project collection. You add fields when you perform one of the following tasks:
+Work item fields are maintained for a project collection. You add fields when you perform one of the following tasks:
 
--   **Create a team project**. All fields that are defined within the definitions for work item types or global workflow and that are defined for the selected process template are created. The core system fields are automatically defined for every work item type that is defined for a team project. For a list of these fields, see [Work item field index](../work-items/guidance/work-item-field.md).
+-   **Create a project**. All fields that are defined within the definitions for work item types or global workflow and that are defined for the selected process template are created. The core system fields are automatically defined for every work item type that is defined for a project. For a list of these fields, see [Work item field index](../work-items/guidance/work-item-field.md).
 
 -   **Import a WIT definition**. All new fields that are defined within the definition for a type of work item are added to the collection. For more information, see [All WITD XML elements reference](reference/all-witd-xml-elements-reference.md).
 
@@ -47,7 +47,7 @@ Work item fields are maintained for a team project collection. You add fields wh
 
 -   **Map a project collection to an instance of Project Web App (PWA)**. After you install the Team Foundation Server Extensions for Project Server, configure the integration by mapping various components of Team Foundation. When you map a collection, a global workflow definition that supports several fields in Project Server fields is imported. For more information, see [Project Server fields added to TFS to support data synchronization](../tfs-ps-sync/project-server-fields-added-to-tfs.md).
 
-All fields that are defined in all WITs and all global workflows for all team projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises TFS and reporting. 
+All fields that are defined in all WITs and all global workflows for all projects make up the complete set of fields defined within the collection. You can change the attribute of, rename, and delete existing fields. However, you incur certain costs when you make these kinds of changes, specifically for on-premises TFS and reporting. 
 
 To add or customize a field for a collection, modify the XML content for the  WIT definition. Define each field through a **FIELD** element within the **FIELDS** section of the WIT definition. For information about the structure and location of these files, see [All FIELD XML elements reference](reference/all-field-xml-elements-reference.md).
 
@@ -132,9 +132,9 @@ To modify the pick list for most string or integer fields within a work item for
 </table>
 
 
-Rules support combining lists, restricting to whom a list applies, and setting conditions on when a list appears on the work item form. Rules control whether a distribution list is expanded to show its individual members or a list is filtered by using the optional **expanditems** and **filteritems** attributes. Use global lists to minimize the work that is required to update a list that is shared across WITs or team projects.
+Rules support combining lists, restricting to whom a list applies, and setting conditions on when a list appears on the work item form. Rules control whether a distribution list is expanded to show its individual members or a list is filtered by using the optional **expanditems** and **filteritems** attributes. Use global lists to minimize the work that is required to update a list that is shared across WITs or projects.
 
-When you use a list in several WITs or across several team projects, maintaining it as a global list minimizes your maintenance requirements. Also, if you need to have parts of lists show up as different across WITs or team projects, you can define a global list for part of a pick list. See see [Define pick lists](reference/define-pick-lists.md) and [Define global lists](reference/define-global-lists.md).
+When you use a list in several WITs or across several projects, maintaining it as a global list minimizes your maintenance requirements. Also, if you need to have parts of lists show up as different across WITs or projects, you can define a global list for part of a pick list. See see [Define pick lists](reference/define-pick-lists.md) and [Define global lists](reference/define-global-lists.md).
 
 <a id="add-rules">  </a>
 ### Add rules to a field
@@ -242,7 +242,7 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 	</Column>
 	```
 
-0.  Change the label for the field so that the Portuguese branch office working on this particular team project can read the name of the **Title** field when they work with the work item form. Include the Portuguese word for title (Titulo) in the Title field.
+0.  Change the label for the field so that the Portuguese branch office working on this particular project can read the name of the **Title** field when they work with the work item form. Include the Portuguese word for title (Titulo) in the Title field.
 
 	> [!div class="tabbedCodeSnippets"]
 	```XML
@@ -273,34 +273,6 @@ To add a custom control to the new web form, see [WebLayout and Control elements
 
 ::: moniker-end 
 
-<!--- NOT A SUPPORTED FEATURE 
-
-<a id="limit-account-names">  </a>
-## Limit the Assigned To field list of names
-
-By default, the drop-down menu for the Assigned To field displays all users who have been granted access to the team project. This is the default valid users group. The exception to this rule is the list that appears in the web portal--the context menus that support assigning work items are limited to members of the team.
-
-The most efficient way to apply security restrictions is to create custom groups that you manage either in Windows or a collection or team project  group.
-
-1.  Create the security group that you want to use and add the accounts to the group. For example, create a new group called **Team Contributors**. See [Add users to team projects](../../organizations/security/add-users-team-project.md).
-
-2.  Modify the definition file for each work item type that you want to limit the user set. Add the **VALIDUSER** element to the **FIELD** element definition for the Assigned To field, and specify the TFS group.
-
-    For example, the following code snippet can be added to the Task definition to limit the set of users for the Assigned To field to only those team members added to the TFS Team Task Group.
-
-	> [!div class="tabbedCodeSnippets"]
-	```XML
-     <FIELD name="Assigned To" refname="System.AssignedTo" type="String" reportable="dimension" syncnamechanges="true">
-        <HELPTEXT>The person currently working on this task</HELPTEXT>
-        <ALLOWEXISTINGVALUE />
-        <VALIDUSER group="Team Contributors" />
-     </FIELD>
-	```  
-
-    By specifying the **ALLOWEXISTINGVALUE** element, you avoid validation errors that would otherwise occur when members leave the team and are no longer registered as project contributors.
-
--->
-
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="change-attribute">  </a>
@@ -318,7 +290,7 @@ The following table summarizes the attributes you can change using [witadmin cha
 | Attribute | Description |
 |---|---|
 | Data type | Specifies the type of data that the field accepts. In general, you cannot change the field data type once it is defined. You can switch the field data type only for fields of type **HTML** or **PlainText**. |
-| Friendly name | The friendly name appears in the drop-down menus of work item queries and it must be unique across all fields that are defined within a team project collection. The friendly name may differ from the form label that appears on the work item form. |
+| Friendly name | The friendly name appears in the drop-down menus of work item queries and it must be unique across all fields that are defined within a project collection. The friendly name may differ from the form label that appears on the work item form. |
 | Reporting attributes | You can change the name of the field as it appears in a report, the report reference name, and the reporting type. You can localize the reporting friendly name.<br /><br />The reporting type determines whether the field's data is written to the relational warehouse database, to both the relational warehouse database and to the OLAP cube, or to generate a pre-calculated sum of values when processing the OLAP cube.<br /><br />For a complete list of the default reportable fields, see [Reportable fields reference](reference/reportable-fields-reference.md). For more information about reportable attributes, see [Field data type and reportable attributes](reference/define-modify-work-item-fields.md). |
 | Synchronization | You can enable or disable synchronization for person-name fields with Active Directory. |
 
@@ -348,7 +320,7 @@ Other related topics or resources:
 
 ### Required permissions
  
-- To list fields, you must have your **View project-level information** permission for the team project in the collection set to **Allow**.  
+- To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
 - (TFS) To add or customize a field, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.  
 - (TFS) To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   

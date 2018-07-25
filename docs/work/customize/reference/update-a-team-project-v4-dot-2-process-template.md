@@ -1,7 +1,7 @@
 ---
-title: Update a team project
+title: Update a project
 titleSuffix: TFS
-description: Update a team project based on a Microsoft Solutions Framework (MSF) version 4.2 process template.
+description: Update a project based on a Microsoft Solutions Framework (MSF) version 4.2 process template.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
@@ -10,14 +10,14 @@ ms.author: kaelliauthor: KathrynEE
 ms.date: 12/15/2017
 ---
 
-# Update a team project based on a MSF v4.2 process template 
+# Update a project based on a MSF v4.2 process template 
 
 **TFS 2017 | TFS 2015 | TFS 2013** 
 
 > [!IMPORTANT]  
-> This topic applies to team project that was created using a Microsoft Solutions Framework (MSF) version 4.2 process template and is defined on an on-premises Team Foundation Server (TFS). You only have to follow the procedures in this topic if you are upgrading a team project that you created with a process template provided with Visual Studio Team System 2008 Team Foundation Server, or one that does not contain the work item types Test Cases and Shared Steps.   
+> This topic applies to project that was created using a Microsoft Solutions Framework (MSF) version 4.2 process template and is defined on an on-premises Team Foundation Server (TFS). You only have to follow the procedures in this topic if you are upgrading a project that you created with a process template provided with Visual Studio Team System 2008 Team Foundation Server, or one that does not contain the work item types Test Cases and Shared Steps.   
 
-If you have upgraded from Visual Studio Team System 2008 Team Foundation Server to TFS 2013, you can update your team project manually. If your team project was based on a MSF version 4.2 process template, follow the procedures in this topic. After you apply these updates, you'll be able to access the new features described in [Configure features after an upgrade](../configure-features-after-upgrade.md) as well as interface with Microsoft Test Manager.  
+If you have upgraded from Visual Studio Team System 2008 Team Foundation Server to TFS 2013, you can update your project manually. If your project was based on a MSF version 4.2 process template, follow the procedures in this topic. After you apply these updates, you'll be able to access the new features described in [Configure features after an upgrade](../configure-features-after-upgrade.md) as well as interface with Microsoft Test Manager.  
   
 These procedures will only support access to new features available with TFS 2012 and later versions. Additional work is required to add new queries or the latest reports, update customized reports, or access dashboards. For more information, see [Additional information about changes made when upgrading TFS](#additional_info).  
   
@@ -39,18 +39,18 @@ These procedures will only support access to new features available with TFS 201
   
 **Requirements**  
   
--   To download a process template, you must be a member of the **Project Collection Administrators** group. If the required security permissions are set explicitly, your **Manage process template** permission for the team project collection must be set to **Allow**.  
+-   To download a process template, you must be a member of the **Project Collection Administrators** group. If the required security permissions are set explicitly, your **Manage process template** permission for the project collection must be set to **Allow**.  
   
--   To run the **witadmin** and **tcm** command-line tools, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the team project.  
+-   To run the **witadmin** and **tcm** command-line tools, you must be a member of one of the following groups: **Team Foundation Administrators**, **Project Collection Administrators**, or **Project Administrators** for the project.  
   
--   To grant permissions, you must be a member of the administrative group at the level of the group that you want to change. For example, if you want to change permissions for a group or user at the team project collection level, you must be a member of the **Project Collection Administrators** group for that collection, or your **Edit Collection-Level Information** permission must be set to **Allow**.  
+-   To grant permissions, you must be a member of the administrative group at the level of the group that you want to change. For example, if you want to change permissions for a group or user at the project collection level, you must be a member of the **Project Collection Administrators** group for that collection, or your **Edit Collection-Level Information** permission must be set to **Allow**.  
   
 For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../../organizations/security/set-project-collection-level-permissions.md).  
   
 ## 1. Rename system fields  
- Because the friendly names of several system fields were renamed in Visual Studio Team Foundation Server 2010, you need to manually rename these fields in your team project collection. System fields that were renamed include System.AreaID, System.IterationID, System.HyperLinkCount, System.ExternalLinkCount, and System.AttachedFileCount.  
+ Because the friendly names of several system fields were renamed in Visual Studio Team Foundation Server 2010, you need to manually rename these fields in your project collection. System fields that were renamed include System.AreaID, System.IterationID, System.HyperLinkCount, System.ExternalLinkCount, and System.AttachedFileCount.  
   
- Perform this task for each team project collection defined on the application-tier server you've upgraded.  
+ Perform this task for each project collection defined on the application-tier server you've upgraded.  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
   
@@ -73,7 +73,7 @@ For more information, see [Add administrators, set permissions at the project-le
 > [!NOTE]   
 >  Of course, renaming the Scenario work item type will require you to update existing reports and queries that reference the Scenario work item type. However, because of the schema changes made to the data warehouse with the upgrade to TFS 2010, the pre-existing or pre-upgrade reports need to be rewritten to work with the new schema. See [Locating reports after the upgrade to TFS 2010](http://msdn.microsoft.com/en-us/library/ff452588%28v=vs.100%29.aspx).  
   
- Perform this task for each team project that you want to update.  
+ Perform this task for each project that you want to update.  
   
 -   Type the following command, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
   
@@ -98,7 +98,7 @@ For more information, see [Add administrators, set permissions at the project-le
 ## 4. Import link types  
  Import the link types, SharedSteps and TestedBy, located in the LinkTypes folder in the process template that you downloaded in task 3.  
   
- Perform this task for each team project collection defined on your upgraded application-tier server.  
+ Perform this task for each project collection defined on your upgraded application-tier server.  
   
 -   Type the following two commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
   
@@ -142,7 +142,7 @@ For more information, see [Add administrators, set permissions at the project-le
   
 -   **CMMI**: Bug, Task, Requirement, Test Case, Shared Steps, Code Review Request, Code Review Response, Feedback Request, Feedback Response  
   
- Perform this task for each team project that you want to update.  
+ Perform this task for each project that you want to update.  
   
 -   Type the following command for each work item type that you need to import, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
   
@@ -187,7 +187,7 @@ For more information, see [Add administrators, set permissions at the project-le
 Open a web portal and [determine if all features are available to you](../new-features-added.md).  
   
 > [!NOTE]  
->  You will not have to perform the additional steps to update the workflow for Agile team projects as described here: [Update the workflow for agile team projects](update-the-workflow-for-agile-team-projects.md). By following the procedures in this topic, you will have applied these changes already.  
+>  You will not have to perform the additional steps to update the workflow for Agile projects as described here: [Update the workflow for agile projects](update-the-workflow-for-agile-team-projects.md). By following the procedures in this topic, you will have applied these changes already.  
   
 ## Additional tasks to interface with Microsoft Test Manager  
  Perform the following tasks to complete the updates required to interface with Test Manager.  
@@ -197,7 +197,7 @@ Open a web portal and [determine if all features are available to you](../new-fe
 <a id="map_bug_type" /> 
 
 ### 1. Specify the bug type to be created in Microsoft Test Manager  
- To support the automatic creation of a work item to track code defects or bugs that are found when a test team member uses Test Manager, you must specify the bug type to be used for your existing team project. The **tcm bugfieldmapping** command supports the import and export of a mapping file to the team project. The mapping file defines the type of work item to create and the three data fields to be filled by Test Manager. The three fields are reproducible steps, system information, and the build in which the defect was found. When a tester runs a test and finds a defect, they can create a bug in which the three fields are automatically filled.  
+ To support the automatic creation of a work item to track code defects or bugs that are found when a test team member uses Test Manager, you must specify the bug type to be used for your existing project. The **tcm bugfieldmapping** command supports the import and export of a mapping file to the project. The mapping file defines the type of work item to create and the three data fields to be filled by Test Manager. The three fields are reproducible steps, system information, and the build in which the defect was found. When a tester runs a test and finds a defect, they can create a bug in which the three fields are automatically filled.  
   
 1.  Open Notepad or a text editor, and copy the following code into the file:  
   
@@ -232,19 +232,19 @@ Open a web portal and [determine if all features are available to you](../new-fe
 ###  2. Grant permissions to test team members  
  You must grant permissions to team members who will manage test environments and test configurations, create and view test runs, and perform other tasks.  
   
- The following table describes the permissions that control access to test functions and support interfacing with the team project for testing. It also indicates the default assignments that are made in version 5.0 of the Agile and CMMI process templates, in addition to the recommended permissions to grant manual testers and test leads.  
+ The following table describes the permissions that control access to test functions and support interfacing with the project for testing. It also indicates the default assignments that are made in version 5.0 of the Agile and CMMI process templates, in addition to the recommended permissions to grant manual testers and test leads.  
   
 |**Permission**|**Description**|Scope|Readers|Contributors|Builders|Recommended for manual testers|Recommended for test leads|  
 |--------------------|---------------------|-----------|-------------|------------------|--------------|------------------------------------|--------------------------------|  
 |**View project-level information**|Can view membership of project-level groups and the permissions of those members.|Project-level|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |**View test runs**|Can view test plans in this node.|Project-level|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**Create test runs**|Can add and remove test results and add or modify test runs for the team project.|Project-level||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**Manage test configurations**|Can create and delete test configurations for the team project.|Project-level||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**Manage test environments**|Can create and delete test environments for the team project.|Project-level||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**Delete test runs**|Can delete a scheduled test for the team project.|Project-level||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**Create test runs**|Can add and remove test results and add or modify test runs for the project.|Project-level||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**Manage test configurations**|Can create and delete test configurations for the project.|Project-level||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**Manage test environments**|Can create and delete test environments for the project.|Project-level||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**Delete test runs**|Can delete a scheduled test for the project.|Project-level||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |**View this node**|Can view the security settings for an area node.|Area node|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |**Manage test plans**|Can create and edit test plans that are assigned to an area node. If test plans have not been run, you can also delete them.|Area node||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**Manage test controllers**|Can register and unregister test controllers for the team project collection.|Project collection|||||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**Manage test controllers**|Can register and unregister test controllers for the project collection.|Project collection|||||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
   
  You can grant permissions by following the procedures that are indicated for the specific scope area:  
   
@@ -259,7 +259,7 @@ Open a web portal and [determine if all features are available to you](../new-fe
 After you have completed the upgrade tasks that are described earlier in this topic, you can start Microsoft Test Manager, connect to your project, and start to plan your test efforts. 
 
 > [!NOTE]    
->Microsoft Test Manager is in the process of being deprecated. The web portal Test hub for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use the Test hub over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from the Test hub. To learn more, see [Guidance on Microsoft Test Manager usage](../../../test/mtm/guidance-mtm-usage.md). 
+>Microsoft Test Manager is in the process of being deprecated. The web portal **Test** pages for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use **Test** over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from **Test**. To learn more, see [Guidance on Microsoft Test Manager usage](../../../test/mtm/guidance-mtm-usage.md). 
  
 
 

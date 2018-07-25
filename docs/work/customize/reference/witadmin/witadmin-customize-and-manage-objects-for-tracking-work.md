@@ -25,7 +25,7 @@ You can change how you track your team's progress by creating and customizing ob
 > The **witadmin** command-line tool is not supported on Visual Studio Team Services. Instead, you use [inherited processes](../../../../organizations/settings/work/manage-process.md). 
 
 
-As the following illustration shows, you manage categories and types of and work items for each team project. You manage global lists, types of links, and fields in work item for each team project collection. You can customize global workflow for a team project or a collection.  
+As the following illustration shows, you manage categories and types of and work items for each project. You manage global lists, types of links, and fields in work item for each project collection. You can customize global workflow for a project or a collection.  
   
 ![Work Item Tracking Objects](_img/pnt_wit_objects.png "PNT_WIT_Objects")  
   

@@ -18,7 +18,7 @@ ms.date: 02/10/2017
 [!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
->This topic applies to team project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and team project to support reporting. See [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md). 
+>This topic applies to project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and project to support reporting. See [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md). 
 >
 >For an overview of process models and customization options, see [Customize your work tracking experience](../customize-work.md). 
 
@@ -35,26 +35,26 @@ You use work item fields to track data for a work item type, to define the filte
 ###  Best practices  
  Before you add or modify a field, review the following best practices:  
   
--   Determine whether you can use a field that is already defined in the team project collection that contains your team project. Use of an existing field supports cross-project reporting.    
+-   Determine whether you can use a field that is already defined in the project collection that contains your project. Use of an existing field supports cross-project reporting.    
 -   Determine whether you can use a field that is already defined in another project collection in the deployment of Visual Studio Team Foundation Server. Use of an existing field supports cross-project reporting.    
 -   You can have no more than 1,024 fields in each project collection and no more than 1,024 unique reportable fields in all project collections throughout a deployment of Team Foundation Server. Merged fields count as one reportable field.   
--   Institute a standard procedure and review process to add and modify fields in process templates, team projects, or project collections.   
--   Use systematic naming conventions when you label fields for reporting. When you assign reference names in a systematic manner across all team project collections in a deployment of Team Foundation Server, you guarantee a more consistent and usable warehouse and cube schema, and you avoid schema conflicts in the warehouse. For more information, see [Resolve data warehouse schema conflicts](../../../report/admin/resolve-schema-conflicts.md).  
+-   Institute a standard procedure and review process to add and modify fields in process templates, projects, or project collections.   
+-   Use systematic naming conventions when you label fields for reporting. When you assign reference names in a systematic manner across all project collections in a deployment of Team Foundation Server, you guarantee a more consistent and usable warehouse and cube schema, and you avoid schema conflicts in the warehouse. For more information, see [Resolve data warehouse schema conflicts](../../../report/admin/resolve-schema-conflicts.md).  
   
      You can assign up to four label attributes to a work item field:  
   
     > [!NOTE]  
     >  Fields that are defined in the process templates for Microsoft Solutions Framework are not assigned a reporting name or a reporting reference name. By default, the reference name and name attributes are used.  
   
-    -   `name`. The friendly name of the field that appears in the drop-down menus of work item queries. The friendly name must be unique across all fields that are defined in a team project. Also, the friendly name may be different from the displayed label that is assigned to the field on the work item form. For more information, see [Control](control-xml-element-reference.md).  
+    -   `name`. The friendly name of the field that appears in the drop-down menus of work item queries. The friendly name must be unique across all fields that are defined in a project. Also, the friendly name may be different from the displayed label that is assigned to the field on the work item form. For more information, see [Control](control-xml-element-reference.md).  
   
-    -   `refname`. The unique label that is assigned to the field that distinguishes it from all other fields that are defined in the team project collection. The value that is assigned to the `refname` cannot be changed.  
+    -   `refname`. The unique label that is assigned to the field that distinguishes it from all other fields that are defined in the project collection. The value that is assigned to the `refname` cannot be changed.  
   
          For requirements of and restrictions on friendly names and reference names for fields, see [Naming conventions for work item tracking objects](../../../organizations/settings/naming-restrictions.md#ProjectNames).  
   
     -   `reportingname`. Optional attribute. The name that is used to identify a field in reports. When not explicitly set, the value that is assigned to the `name` attribute is used.  
   
-    -   `reportingrefname`. Optional attribute. The unique label that is assigned to a reportable field that distinguishes it from all other reportable fields that are defined in all team project collections. When not explicitly set, the value that is assigned to the `refname` attribute is used. For recommended naming conventions, see [Best Practices when Assigning Reporting Reference Names](#bp_labels) later in this topic.  
+    -   `reportingrefname`. Optional attribute. The unique label that is assigned to a reportable field that distinguishes it from all other reportable fields that are defined in all project collections. When not explicitly set, the value that is assigned to the `refname` attribute is used. For recommended naming conventions, see [Best Practices when Assigning Reporting Reference Names](#bp_labels) later in this topic.  
   
         > [!NOTE]  
         >  The reporting reference names are visible only from a PivotTable report or the Analysis Services cube.  
@@ -65,7 +65,7 @@ You use work item fields to track data for a work item type, to define the filte
 ##  Use an existing field  
  You should use a field that is already defined if that field matches the information that you want to track and report on. To use an existing field, perform the following steps:  
   
--   Identify the field that you want to use. Use the **witadmin listfields** command to identify the fields and their attributes that are defined for all project collections. For more information, see [List fields that are defined for a team project collection](#list_fields) later in this topic.  
+-   Identify the field that you want to use. Use the **witadmin listfields** command to identify the fields and their attributes that are defined for all project collections. For more information, see [List fields that are defined for a project collection](#list_fields) later in this topic.  
   
 -   Determine whether the field is reportable and whether the reportable attributes meet your reporting needs.  
   
@@ -74,7 +74,7 @@ You use work item fields to track data for a work item type, to define the filte
 -   For the project collection where the field is not defined, add it to the XML definition files for the work item types that you want to use to track data. For more information, see [Add fields to support reporting](#add_a_field) later in this topic.  
 
 <a name="list_fields"></a>   
-##  List fields that are defined for a team project collection  
+##  List fields that are defined for a project collection  
  You can use the **witadmin listfields** command to list fields and their attributes. You can list a specified field or all fields that are defined in a project collection. The **witadmin listfields** command has the following syntax:  
   
 ```  
@@ -128,7 +128,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
   
  You can use the following sequence of steps to change the attribute assignment of a field:  
   
-1.  You can use the **witadmin changefield** command to change an attribute assignment to a field. You exercise this command for a team project collection. Use the following syntax:  
+1.  You can use the **witadmin changefield** command to change an attribute assignment to a field. You exercise this command for a project collection. Use the following syntax:  
   
     ```  
     witadmin changefield /collection:CollectionURL /n:RefName [/name:NewName] [/syncnamechanges:true | false] [/reportingname:ReportingName] [/reportingrefname:ReportingRefName] [/reportingtype:Type] [/reportingformula:Formula] [/noprompt]  
@@ -160,7 +160,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
 
 <a name="add_a_field"></a>   
 ##  Add fields to support reporting  
- You can add fields to the definition of a work item type or types. When you add the field, you should add the same field element definition to all types of work items for which the field will support reporting. If you want the field to support cross-project reporting, the field should be added to all work item types in all team projects that will be reported on.  
+ You can add fields to the definition of a work item type or types. When you add the field, you should add the same field element definition to all types of work items for which the field will support reporting. If you want the field to support cross-project reporting, the field should be added to all work item types in all projects that will be reported on.  
   
  For more information, see [Define and modify work item fields](define-modify-work-item-fields.md).  
 
@@ -181,7 +181,7 @@ witadmin listfields /collection:CollectionURL /n:RefName
 ##  Best practices when assigning reporting reference names  
  For reporting reference names, you want to assign labels so that you can easily find the fields in the PivotTable report and the cube. You can achieve this by applying systematic naming conventions so that fields are grouped in a logical sequence. In addition, if the fields are not grouped in a useful manner, you can change the reporting reference name of a field.  
   
- Applying a systematic naming convention becomes increasingly important because all reportable data from all team projects that are defined in all project collections is written to a single relational data warehouse. Data from that warehouse is then processed and written to the cube. Because work item fields are managed distinctly for each project collection, different labels may be applied and may lead to a set of fields that is not well organized to support authoring reports.  
+ Applying a systematic naming convention becomes increasingly important because all reportable data from all projects that are defined in all project collections is written to a single relational data warehouse. Data from that warehouse is then processed and written to the cube. Because work item fields are managed distinctly for each project collection, different labels may be applied and may lead to a set of fields that is not well organized to support authoring reports.  
   
  Work item fields that have a reportable type of dimension correspond to dimension attributes in the cube. Dimension attributes are organized into folders that are based on the reporting reference name that is assigned in the process template or work item type definition. The following types of mapping occur:  
   
@@ -237,5 +237,5 @@ witadmin listfields /collection:CollectionURL /n:RefName
 -  [Resolve data warehouse schema conflicts](../../../report/admin/resolve-schema-conflicts.md)   
 -  [Modify a field or add a custom field](../add-modify-field.md)   
 -  [Index of work item fields](../../work-items/guidance/work-item-field.md) 
--  [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md)    
+-  [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md)    
 -  [Dashboards and reports](../../../report/overview.md)

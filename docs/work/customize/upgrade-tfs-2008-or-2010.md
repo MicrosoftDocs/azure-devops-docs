@@ -18,43 +18,43 @@ ms.date: 08/04/2016
 <b>TFS 2015</b> 
 
 > [!NOTE]   
-> **Feature availability:** This topic applies only to team projects hosted on an on-premises Team Foundation Server (TFS). Team projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).
+> **Feature availability:** This topic applies only to projects hosted on an on-premises Team Foundation Server (TFS). Projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index).
 
-Each version of Team Foundation Server (TFS) typically introduces one or more changes to work tracking. To gain access to the new features that rely on these changes, your existing team projects must be updated. 
+Each version of Team Foundation Server (TFS) typically introduces one or more changes to work tracking. To gain access to the new features that rely on these changes, your existing projects must be updated. 
 
-The Configure Features wizard is designed to make the update process pain free, however, customized team projects may prevent the wizard from being successful.
+The Configure Features wizard is designed to make the update process pain free, however, customized projects may prevent the wizard from being successful.
 If you're upgrading from TFS 2008 or TFS 2010, you have some additional steps.  
 
 **Option 1:**
 
-This option is simpler, but will result in more downtime, especially if your TFS databases are very large. It may not work if you have customized your team projects heavily.
+This option is simpler, but will result in more downtime, especially if your TFS databases are very large. It may not work if you have customized your projects heavily.
 
 * [Upgrade your TFS instance to TFS 2012 by downloading the TFS 2012 ISO](http://go.microsoft.com/fwlink?linkid=255990).
-* [Run the Configure Features Wizard for TFS 2012 on each team project](configure-features-after-upgrade.md).
+* [Run the Configure Features Wizard for TFS 2012 on each project](configure-features-after-upgrade.md).
 	You need to do this before you upgrade to TFS 2015 so that you'll be able to use the Confugure Features Wizard for TFS 2015.
-* [Update a team project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md).
+* [Update a project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md).
 * [Upgrade your TFS instance to TFS 2015](/tfs/server/upgrade/get-started).
-* [Run the Configure Features Wizard for TFS 2015 on each team project](configure-features-after-upgrade.md).
-	Each team project owner can do this when it makes sense. You don't have to configure features for all team projects at this time.
-* [Perform additional configurations for each team project.](additional-configuration-options.md).
-	Each team project can make these configuration changes when it makes sense, too.
+* [Run the Configure Features Wizard for TFS 2015 on each project](configure-features-after-upgrade.md).
+	Each project owner can do this when it makes sense. You don't have to configure features for all projects at this time.
+* [Perform additional configurations for each project.](additional-configuration-options.md).
+	Each project can make these configuration changes when it makes sense, too.
 	
 
 **Option 2:**
 
-This option is more work, but it will work with customized team projects and it reduces dowbtime because you don't have to upgrade twice.
+This option is more work, but it will work with customized projects and it reduces dowbtime because you don't have to upgrade twice.
 
 * [Upgrade your TFS instance to TFS 2015](/tfs/server/upgrade/get-started).
-* Manually update each team project:
-	* [Update a team project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md).
+* Manually update each project:
+	* [Update a project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md).
 	* [Update the Workflow for Agile Team Projects](https://msdn.microsoft.com/library/hh500412.aspx).
 	* [Apply updates manually based on the features you want to enable](add-features-manually.md).
-* [Perform additional configurations for each team project](additional-configuration-options.md).
+* [Perform additional configurations for each project](additional-configuration-options.md).
 
 <a id="earlier-versions">  </a> 
 
-## Updating team projects based on earlier versions of MSF process templates 
-If you upgrade your TFS instance to TFS 2015 and your existing team projects were created with MSF version 5.0 or earlier process templates, you may have to apply a few updates manually. Two specific problems can occur having to do with a missing field or workflow state.  
+## Updating projects based on earlier versions of MSF process templates 
+If you upgrade your TFS instance to TFS 2015 and your existing projects were created with MSF version 5.0 or earlier process templates, you may have to apply a few updates manually. Two specific problems can occur having to do with a missing field or workflow state.  
 
 ### Value Area field missing   
 The following message reported by the Configure Features wizard indicates that the Value Area field is missing from either the User Story or Requirement WIT definition:  

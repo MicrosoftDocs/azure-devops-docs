@@ -22,7 +22,7 @@ When you customize your work item form, you may want to provide information or l
   
 By using the form controls that are described in this topic, you can add tooltip text for individual fields, stand-alone text, or hyperlinks to Web pages, or embed HTML content or Web content in the form.  
   
-To modify an existing WIT, you modify the XML definition file for the WIT and then import it to your team project [based on the process model you use](../customize-work.md). 
+To modify an existing WIT, you modify the XML definition file for the WIT and then import it to your project [based on the process model you use](../customize-work.md). 
  
   
 [!INCLUDE [temp](../../_shared/process-editor.md)]

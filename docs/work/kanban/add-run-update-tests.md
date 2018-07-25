@@ -39,13 +39,13 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
-0. To view your Kanban board, open your team project from a web browser and choose (1) **Work**, (2) **Boards**, and then (3) select the team's board from the selector. 
+0. To view your Kanban board, open your project from a web browser and choose (1) **Work**, (2) **Boards**, and then (3) select the team's board from the selector. 
 
-	![Open your Kanban board, agile  hubs](_img/quickstart/open-kanban-board-agile.png)  
+	![Open your Kanban board](_img/quickstart/open-kanban-board-agile.png)  
 
 	To choose another team's board, open the selector and select a different team or choose the ![home-icon](/vsts/_img/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
@@ -62,12 +62,12 @@ Tests you create from the Kanban board are automatically linked to the user stor
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
-0. To view your Kanban board, open your (1) team project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
+0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 	![Taskboard, collapsed backlog items, cloud service](_img/quickstart/open-kanban-board.png)
 
-	If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![](/vsts/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/vsts/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work hub when screen size is reduced](_img/kanban-quickstart-reduced-screensize.png)   
 
@@ -126,7 +126,7 @@ You can update the status of the test from the ![Actions icon](../_img/icons/act
  
 Updating the status of tests enable you to [track test results](../../test/track-test-status.md).  
 
-[Why doesn't the Kanban board show the status for test suites and plans already created in the Test hub?](#test-status-kanban)
+[Why doesn't the Kanban board show the status for test suites and plans already created in **Test**?](#test-status-kanban)
 
 ## Expand or collapse inline tests  
 

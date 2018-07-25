@@ -1,7 +1,7 @@
 ---
 title: Import and export categories
 titleSuffix: TFS  
-description: Import and export categories defined for a team project in Team Foundation Server 
+description: Import and export categories defined for a project in Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
@@ -17,9 +17,9 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../../../_shared/customization-witadmin-plus-version-header.md)]  
 
-You can import and export categories defined for a team project by using the following **witadmin** commands:   
+You can import and export categories defined for a project by using the following **witadmin** commands:   
 -   **exportcategories**:  Exports the XML definition of categories defined on a server that runs Team Foundation Server.   
--   **importcategories**:  Imports a work item type XML definition file into a team project on a server that runs TFS.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type does not already exist, this command creates a new category.  
+-   **importcategories**:  Imports a work item type XML definition file into a project on a server that runs TFS.  If a category with the same name already exists, this command overwrites the existing definition. If the work item type does not already exist, this command creates a new category.  
   
 To learn about the default categories and how they are used, see [Use categories to group work item types](../use-categories-to-group-work-item-types.md).  
   
@@ -29,7 +29,7 @@ To learn about the default categories and how they are used, see [Use categories
   
  **Requirements**  
   
-For the team project for which the categories are defined, you must have the following permissions set:   
+For the project for which the categories are defined, you must have the following permissions set:   
 -   To export categories of work item types, you must have your **View project-level information** permission set to **Allow**.   
 -   To import categories of work item types, you must be a member of the **Project Administrators** security group or have the **Edit project-level information** permission set to **Allow**.  
   
@@ -47,8 +47,8 @@ witadmin importcategories /collection:CollectionURL /p:Project /f:FileName [/e:E
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
-|**/p**:`Project`|The name of the team project from which the categories are exported or to which the categories are imported.|  
+|**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
+|**/p**:`Project`|The name of the project from which the categories are exported or to which the categories are imported.|  
 |**/f**:*FileName*|The path and file name of the XML definition file that contains the categories to be exported or imported. If you omit this parameter when you use the **exportcategories** command, the command lists the categories in the Command Prompt window.|  
 |**/e**:*Encoding*|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e`:`utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  
@@ -64,7 +64,7 @@ witadmin importcategories /collection:CollectionURL /p:Project /f:FileName [/e:E
 ## Examples  
  Unless otherwise specified, the following values apply in each example:  
   
--   URI for the team project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
+-   URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
 -   Project name: AdventureWorks    
 -   Input or output file name: myCategories.xml   
 -   Default encoding: UTF-8  
@@ -79,7 +79,7 @@ witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/Defau
 ### Add a category to the Hidden Types categories  
  You add a category to the Hidden Types categories to remove support for users to create work item types in that category.  
   
-1.  Export the definition file for categories for your team project.  
+1.  Export the definition file for categories for your project.  
   
     ```  
     witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myCategories.xml   
@@ -114,7 +114,7 @@ witadmin exportcategories /collection:http://AdventureWorksServer:8080/tfs/Defau
     </CATEGORY>  
     ```  
   
-4.  Import the definition file for categories to your team project.  
+4.  Import the definition file for categories to your project.  
   
     ```  
     witadmin importcategories /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /p:AdventureWorks /f:myCategories.xml   

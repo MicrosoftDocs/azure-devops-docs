@@ -18,7 +18,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a team project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
+The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 
 <img src="_img/scrum-process-work-tracking-wits.png" alt="Agile process work item types" style="border: 1px solid #C3C3C3;" />  
 
@@ -26,19 +26,19 @@ In addition to the WITs, teams have access to a set of shared work item queries 
 
 ::: moniker range="vsts"
 > [!NOTE]  
-> You can customize the work tracking system for your team project based on the Scrum process by creating and customizing an inherited process and applying that process to your team project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
+> You can customize the work tracking system for your project based on the Scrum process by creating and customizing an inherited process and applying that process to your project. To learn more, see [Inheritance process model](../../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]  
-> The latest version of the Scrum process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize team projects](../../customize/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
+> The latest version of the Scrum process uploads automatically when you install or upgrade to the latest version of TFS. You can [customize projects](../../customize/on-premises-xml-process-model.md) and use the [Process Template Manager](manage-process-templates.md) to upload and download process templates. 
 >
 > The following WITs are available as follows: Epic, TFS 2015 and later versions; 
 > Shared Parameters, TFS 2013.2 and later versions; 
 >and Test Plan and Test Suite, TFS 2013.3 and later versions.   
 >
-> Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a team project from an on-premises TFS. Other resource requirements apply. 
+> Additional artifacts, such as [SQL Server reports](#reports) and [SharePoint dashboards](#dashboards), are only available when you connect to a project from an on-premises TFS. Other resource requirements apply. 
 ::: moniker-end
 
 
@@ -92,9 +92,9 @@ To get started, you can open a shared query and create a chart based on your tra
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ## Scrum process and SQL Server reports
 
-If your team project collection and the team project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of Scrum reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
+If your project collection and the project are configured with SQL Server Analysis Services and Reporting Services, you'll have access to a number of Scrum reports. For these reports to be useful, [teams must perform certain activities,](../../../report/admin/review-team-activities-for-useful-reports.md) such as define build processes, link work items, and update status or remaining work.  
 
-If you need to add reporting services or update reports to the latest versions, see [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md).  
+If you need to add reporting services or update reports to the latest versions, see [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md).  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
@@ -103,7 +103,7 @@ If you need to add reporting services or update reports to the latest versions, 
 
 You can access the [Release](../../../report/sharepoint-dashboards/release-scrum.md) dashboard displayed through the SharePoint project portal. This dashboard displays project data, support investigation tasks, and help teams to perform common tasks quickly. 
 
-To access this dashboard, your team project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+To access this dashboard, your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
 ::: moniker-end
 
 ## Related notes 
@@ -133,7 +133,7 @@ For a summary of updates made to process templates, see [Changes made to process
 
 Your product owner can plan and track product backlog items and bugs in the product backlog by using the **Product Backlog** query. You can find work items that are assigned to the current sprint by using the shared queries that are listed under the **Current Sprint** folder. These queries find work items that are assigned to a specified iteration or sprint. As you plan additional sprints, you can modify these queries to specify the latest sprint and save them to additional folders that you create, such as **Sprint 2** or **Sprint 3**.
 
-The project administrator for each team project [defines area paths](../../../organizations/settings/set-area-paths.md) and [iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md) for that project so that the team can track progress by those designations.  
+The project administrator for each project [defines area paths](../../../organizations/settings/set-area-paths.md) and [iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md) for that project so that the team can track progress by those designations.  
 
 |Shared queries|Description| 
 |---|---|  

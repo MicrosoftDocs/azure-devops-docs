@@ -339,7 +339,7 @@ The following table lists the macros or variables you can use within a WIQL quer
 |---|---|
 | **@Me** |Use this variable to automatically search for the current user's alias in a field that contains user aliases. For example, you can find work items that you opened if you set the **Field** column to **Activated By**, the **Operator** column to **=**, and the **Value** column to **@Me**.|
 | **@CurrentIteration** |Use this variable to automatically filter for work items assigned to the current sprint for the selected team based on the selected team context.|
-| **@Project** |Use this variable to search for work items in the current team project. For example, you can find all the work items in the current team project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to **@Project**.|
+| **@Project** |Use this variable to search for work items in the current project. For example, you can find all the work items in the current project if you set the **Field** column to **Team Project**, the **Operator** column to **=**, and the **Value** column to **@Project**.|
 | **@Today** |Use this variable to search for work items that relate to the current date or to an earlier date. You can also modify the **@Today** variable by subtracting days. For example, you can find all items activated in the last week if you set the **Field** column to **Activated Date**, the **Operator** column to **&gt;=**, and the **Value** column to **@Today - 7**.|
 | **[Any]** |Use this variable to search for work items that relate to any value that is defined for a particular field.|
 

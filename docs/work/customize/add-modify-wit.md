@@ -16,7 +16,7 @@ ms.date: 02/02/2017
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-Your team project contains 14 or more work item types (WITs), based on the process&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;used to create the team project. A WIT is the object you use to [track different types of work](../backlogs/add-work-items.md).  
+Your project contains 14 or more work item types (WITs), based on the process&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;used to create the project. A WIT is the object you use to [track different types of work](../backlogs/add-work-items.md).  
 
 You can modify an existing WIT or add a custom WIT based on your team's tracking requirements or workflow processes. The most common reasons to modify a WIT are to add or modify the set of fields or field rules, change the workflow, or customize the work item form.   
 
@@ -38,7 +38,7 @@ Most WIT customizations are made to the WIT definition, however, other customiza
 <a id="modify-wit">  </a>
 ## Add or modify a WIT 
 
-To add a custom WIT or modify an existing WIT, you define or modify the XML definition file for the WIT and then import it to your team project [based on the process model you use](../customize/customize-work.md). You modify a WIT by specifying the elements defined within the three main sections of the WIT definition file: **FIELDS**, **WORKFLOW**, and **FORM**.  
+To add a custom WIT or modify an existing WIT, you define or modify the XML definition file for the WIT and then import it to your project [based on the process model you use](../customize/customize-work.md). You modify a WIT by specifying the elements defined within the three main sections of the WIT definition file: **FIELDS**, **WORKFLOW**, and **FORM**.  
 
 ![Summary of WIT elements](_img/IC729919.png)
 
@@ -131,7 +131,7 @@ You can customize the form to accomplish the following objectives:
 <a id="change-wit-backlog-board">  </a>
 ## Add or remove a WIT from the backlog or task board
 
-The Agile planning tools&mdash;product backlog, sprint backlog, and task board pages&mdash;display specific WITs based on the process template used to create your team project. You can add or remove WITs to appear on these pages. For example, if your team project uses Scrum WITs, both product backlog items and bugs appear on the backlog pages. However, if your team project was created using the Agile, CMMI, or other process template, bugs don't appear on your backlog or task board.
+The Agile planning tools&mdash;product backlog, sprint backlog, and task board pages&mdash;display specific WITs based on the process template used to create your project. You can add or remove WITs to appear on these pages. For example, if your project uses Scrum WITs, both product backlog items and bugs appear on the backlog pages. However, if your project was created using the Agile, CMMI, or other process template, bugs don't appear on your backlog or task board.
 
 For example, you can add bugs from the product backlog page.
 
@@ -169,7 +169,7 @@ Other related topics or resources:
 
 ### Required permissions
 
-- To list work item types, you must have your **View project-level information** permission for the team project in the collection set to **Allow**.  
+- To list work item types, you must have your **View project-level information** permission for the project in the collection set to **Allow**.  
 - (TFS) To add or customize a WIT, you must be a member of the Project Administrators group or have your **Edit project-level information** permission set to Allow.
 - (VSTS)  To add or customize a WIT by customizing a process template, you must be a member of the Project Collection Administrators group or have your **Edit process** permission set to Allow    
   
@@ -180,9 +180,9 @@ To get added as an administrator, see [Add administrators](../../organizations/s
 ### Import and export WIT definition files (On-premises XML)
 
 > [!NOTE]    
->If you use the Hosted XML process model, you need to import and export the process template used by your team project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
+>If you use the Hosted XML process model, you need to import and export the process template used by your project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
-0. If you don't have administration permissions for your team project, [get them](../../organizations/security/set-project-collection-level-permissions.md).   
+0. If you don't have administration permissions for your project, [get them](../../organizations/security/set-project-collection-level-permissions.md).   
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
 
 0. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
@@ -206,11 +206,11 @@ To get added as an administrator, see [Add administrators](../../organizations/s
 > [!NOTE]    
 ><b>Feature availability: </b>You can exercise the Configure Features Wizard only from an on-premises TFS. 
 
-What customizations can you make and still use the Configure Features Wizard to update my team project after a TFS upgrade?  
+What customizations can you make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
 
-You can add custom WITs and change the form layout. The [Configure Features Wizard](configure-features-after-upgrade.md) will update your team projects and you'll get access to the latest features.
+You can add custom WITs and change the form layout. The [Configure Features Wizard](configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.
 
-Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your team project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
+Changing the workflow or renaming a WIT might require you to perform some manual operations when updating your project. To learn about other customizations that you can safely make and which you should avoid, see [Customize the work tracking experience: Before you customize, understand the maintenance and upgrade implications](on-premises-xml-process-model.md#before-you-customize).  
 
 
 <a name="rename-wit" />
@@ -226,7 +226,7 @@ To rename an existing WIT use **witadmin renamewitd**. For example, you can rena
 witadmin renamewitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"QoS Item" /new:"Service Agreement"
 ```
 
-When you rename a WIT that belongs to a category, you have to update the categories definition for the team project to reflect the new name. In particular, the [backlogs and boards](../backlogs/backlogs-boards-plans.md) will not work until you update the categories definition.
+When you rename a WIT that belongs to a category, you have to update the categories definition for the project to reflect the new name. In particular, the [backlogs and boards](../backlogs/backlogs-boards-plans.md) will not work until you update the categories definition.
 
 For more information, see [Import, export, and manage work item types](reference/witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](reference/witadmin/witadmin-import-export-categories.md).
 
@@ -263,11 +263,11 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 <a id="delete-wit">  </a>
 ### Delete a WIT (On-premises XML) 
 
-To prevent team members from using a specific WIT to create a work item, you can remove it from the team project. When you use **witadmin destroywitd**, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use "Impediment", you can delete the WIT labeled "Impediment" from the Fabrikam Web Site project.
+To prevent team members from using a specific WIT to create a work item, you can remove it from the project. When you use **witadmin destroywitd**, you permanently remove all work items that were created using that WIT as well as the WIT itself. For example, if your team doesn't use "Impediment", you can delete the WIT labeled "Impediment" from the Fabrikam Web Site project.
 
     witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment" 
 
-When you delete a WIT that belongs to a category, you must update the categories definition for the team project to reflect the new name. For more information, see [Import, export, and manage work item types](reference/witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](reference/witadmin/witadmin-import-export-categories.md).
+When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. For more information, see [Import, export, and manage work item types](reference/witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](reference/witadmin/witadmin-import-export-categories.md).
 
 
 ### How do WIT modifications affect existing work items?
@@ -299,4 +299,4 @@ Also, if you have several work items with type changes you want to make, you mig
 
 When you change the workflow for the test plan or test suite&mdash;and you work from a Test Manager client provided with Visual Studio 2013.2 or earlier versions&mdash;these WITs became available when you updated your application-tier server to TFS 2013.3. that appears on an Agile planning tool page.
 
-If you encounter an **Application detected an unexpected fault** error when you connect to your team project after you changed the workflow, you can resolve it by mapping the new workflow states to metastates. To resolve this error, see [Import and export process configuration](reference/witadmin/witadmin-import-export-process-configuration.md).  
+If you encounter an **Application detected an unexpected fault** error when you connect to your project after you changed the workflow, you can resolve it by mapping the new workflow states to metastates. To resolve this error, see [Import and export process configuration](reference/witadmin/witadmin-import-export-process-configuration.md).  

@@ -16,7 +16,7 @@ ms.date: 03/02/2017
 <p><b>TFS 2017 | TFS 2015 | TFS 2013</b></p>
 
 > [!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
+>This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -232,8 +232,8 @@ You can control the spacing and size of many elements on a work item form by spe
 |Element|Required?|Description|  
 |-------------|---------------|-----------------|  
 |`LinksControlOptions`|Optional `Control` element when `type="LinksControl"`|Provides a container for elements that define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item.|  
-|`WorkItemLinkFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the link filter criteria to use for link types that are defined for the team project collection.|  
-|`ExternalLinkFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the filter criteria to use for link types that are defined in other team projects.|  
+|`WorkItemLinkFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the link filter criteria to use for link types that are defined for the project collection.|  
+|`ExternalLinkFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the filter criteria to use for link types that are defined in other projects.|  
 |`WorkItemTypeFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the filter criteria to apply to work item types.|  
 |`Filter` (link types)|Required `WorkItemLinkFilters` element when the `FilterType` attribute is `exclude` or `include`.<br /><br /> Required `ExternalLinkFilters` element when the `FilterType` attribute is `exclude` or `include`.|Specifies the types of links to include or exclude from the set of links that can be created for the work item.|  
 |`Filter` (work item types)|Optional `WorkItemTypeFilters` element when the `FilterType` attribute is `exclude` or `include`.|Specifies the types of work items to include or exclude from the set of work item types between which users can link.|  
