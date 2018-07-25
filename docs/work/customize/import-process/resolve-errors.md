@@ -1545,7 +1545,7 @@ In the new form layout, a group can only contain one HTMLFieldControl or WebPage
 
 ```
 
-To resolve this, create two seperate groups that contain one control each.
+To resolve this, create two separate groups that contain one control each.
 
 #### Resolution example
 ```xml
