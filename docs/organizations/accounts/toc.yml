@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Organization management
+  - name: About Organization management
     href: organization-management.md
   - name: Access with Azure AD
     href: access-with-azure-ad.md
