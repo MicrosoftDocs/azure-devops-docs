@@ -1,5 +1,5 @@
 ---
-title: Buy CI/CD by using Viual Studio Team Services
+title: Buy CI/CD by using Visual Studio Team Services
 description: Learn how to pay for more continuous integration and continuous delivery (CI/CD) concurrency by using Visual Studio Team Services
 ms.prod: devops
 ms.technology: devops-billing
@@ -23,7 +23,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Microsoft-hosted CI/CD (formerly Hosted Pipelines)
 
-Each Team Services instance starts out with the free tier of Microsoft-hosted CI/CD. This tier provides the ability to run one concurrent build or release job, for up to 4 hours per month. If you need to run more than 4 hours per month, or you need to run more than one job at a time, you can switch to paid Microsoft-hosted CI/CD. 
+Each Team Services instance starts with the free tier of Microsoft-hosted CI/CD. This tier provides the ability to run one concurrent build or release job, for up to 4 hours per month. If you need to run more than 4 hours per month, or you need to run more than one job at a time, you can switch to paid Microsoft-hosted CI/CD. 
 
 When you pay per concurrent job, there are no monthly time limits for your builds and releases. The maximum runtime for a single job increases from 30 minutes to 6 hours. With Microsoft-hosted CI/CD, the price includes all infrastructure that Microsoft runs (for example, virtual machines, databases, storage, and egress) to deliver this service.
 
@@ -32,7 +32,7 @@ When you pay per concurrent job, there are no monthly time limits for your build
 ## Self-hosted CI/CD (formerly Private Pipelines)
 
 Team Services also offers you a way to run a Microsoft CI/CD agent on machines that you manage, whether your machines are on-premises or in the cloud. The free tier is one concurrent job.
-Typically you'll choose this option when either of these is true:
+Typically, you'll choose this option in either of these situations:
 
 * Custom software that runs in your build process is not included in the Microsoft-hosted option.
 * You already have a Team Foundation Server build server running, and you aren't ready to move your build definitions to Team Services.
@@ -48,62 +48,54 @@ The first time that you set up billing for your Team Services organization--whet
 * [VSTS project collection administrator or organization owner permissions](vsts-billing-faq.md#find-owner)
 * [The owner or contributor role on your Azure subscription](add-backup-billing-managers.md)
 
-To make subsequent edits to paid quantities in your Team Services organization, you only need the owner or contributor role on your Azure subscription.
+To make subsequent edits to paid quantities in your Team Services organization, you need only the owner or contributor role on your Azure subscription.
 
 ## Buying process
 
-1. As Team Services project collection administrator or organization owner, sign in to either:
+1. As a Team Services project collection administrator or organization owner, sign in to either:
 
- * [Visual Studio Marketplace > Build and release > Hosted pipelines for Build and Release](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
- * [Visual Studio Marketplace > Build and release > Private pipelines for Build and Release](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
+   * [Visual Studio Marketplace > Build and release > Hosted pipelines for Build and Release](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines)
+   * [Visual Studio Marketplace > Build and release > Private pipelines for Build and Release](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 
 2. Select **Get**.
 
-    ![Select your VSTS organization](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
+   ![Select "Get" for Microsoft-hosted CI/CD](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
 
 3. Select your VSTS organization, if you have multiple organizations. Then select **Buy**.
 
-    ![Select your VSTS organization](_img/get-more-build-load-testing/select-team-services-organization.png)
+   ![Select your VSTS organization](_img/get-more-build-load-testing/select-team-services-organization.png)
 
 4. Confirm the Azure subscription that you'll use for billing. (You'll see this only the first time you set up billing.) Then select **Continue**.
 
-    If you have multiple Azure subscriptions,
-  select the Azure subscription that you want to use.
-  Or if you don't have an Azure subscription,
-  create a new subscription now to use for billing.
-  For more information, see [VSTS billing FAQ](vsts-billing-faq.md).
+   If you have multiple Azure subscriptions, select the Azure subscription that you want to use. If you don't have an Azure subscription, create a new subscription now to use for billing.
+  
+   For more information, see [VSTS billing FAQ](vsts-billing-faq.md).
 
-    ![Confirm or select your Azure subscription](_img/get-more-build-load-testing/select-azure-subscription.png)
+   ![Confirm or select your Azure subscription](_img/get-more-build-load-testing/select-azure-subscription.png)
 
 5. Select the number of concurrent jobs that you want to buy, and then select **Continue**.
 
-    ![Select number of concurrent jobs to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
+    ![Select the number of concurrent jobs to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
 
 6. Review your order and select **Confirm**.
 
-    ![Review hosted pipeline order](_img/get-more-build-load-testing/review-confirm-order.png)
+    ![Review the hosted pipeline order](_img/get-more-build-load-testing/review-confirm-order.png)
 
 7. To view your current CI/CD capacity, go to your Team Services organization and select **Manage Pipelines**.
 
-    ![View CI/CD capacity in your Team Services organization](_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png)
+   ![View CI/CD capacity in your Team Services organization](_img/get-more-build-load-testing/confirm-hosted-pipeline-purchase.png)
 
-     ![Go to Team Services organization toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
+   ![Go to Team Services organization toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
-  To return to the Build & Release hub in
-  your VSTS organization at any time,
-  go to your VSTS organization toolbar,
-  then go to **Build and Release**
+To return to the **Build and Release** hub in your VSTS organization at any time, go to your VSTS organization toolbar, and then go to **Build and Release**
   (```https://{yourorganization}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
 
-## XAML Build
+## XAML build
 
-The hosted XAML build controller is no longer supported.
-  Organizations created on or after April 2016 do not have access to it.
-  We plan to remove the hosted XAML build controller from all organizations in the near future.
+The hosted XAML build controller is no longer supported. Organizations created on or after April 2016 do not have access to it. We plan to remove the hosted XAML build controller from all organizations in the near future.
 
-  > **Important:** If you have an organization where you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx),
-  > you should set up an [on-premises build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)
-  > and switch to an [on-premises build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx) now.
+> [!IMPORTANT] 
+> If you have an organization where you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx), you should set up an [on-premises build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx) and switch to an [on-premises build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx) now.
 
 <a name="change-paid-pipelines"></a>
 
@@ -126,6 +118,6 @@ When your team's needs for build or release capacity change, you can change the 
 
 ## Related articles
 
-* [VSTS: CI/CD concepts](../pipelines/licensing/concurrent-jobs-vsts.md)
-* [TFS: CI/CD concepts](../pipelines/licensing/concurrent-pipelines-tfs.md)
-* [Pricing for VSTS CI/CD](https://visualstudio.microsoft.com/team-services/pricing)
+* [Team Services: CI/CD concepts](../pipelines/licensing/concurrent-jobs-vsts.md)
+* [Team Foundation Server: CI/CD concepts](../pipelines/licensing/concurrent-pipelines-tfs.md)
+* [Pricing for Team Services CI/CD](https://visualstudio.microsoft.com/team-services/pricing)
