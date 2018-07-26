@@ -20,10 +20,10 @@ monikerRange: '>= tfs-2015'
 ## Set up your test plan to use your build  
  
 To set up your test plan to run the automated test that you have created,
-you must select the correct build definition used to build your automated
-test or a build definition that has the correct build drop location for your
+you must select the correct build pipeline used to build your automated
+test or a build pipeline that has the correct build drop location for your
 existing automated test assemblies. You must do this so that the automated
-test can be found in the share location for your build definition and then
+test can be found in the share location for your build pipeline and then
 it can be run from Microsoft Test Manager.
 
 > If you have multiple build configurations, the test assemblies to run the
@@ -42,14 +42,14 @@ To set up your test plan to use your team build:
 
 1. To set up your test plan to run the automated tests, choose **Properties**
    and then choose the drop-down arrow to the right of **Filter for builds**.
-   The dialog box that shows build definition and quality is displayed.
+   The dialog box that shows build pipeline and quality is displayed.
 
-1. To select the build definition that is used to build your automated tests, choose **Build definition**.
+1. To select the build pipeline that is used to build your automated tests, choose **Build definition**.
 
 1. Each build can be given a specific value to reflect the quality of the build.
    To select the quality of the builds you want to be able to view, choose **Build quality**.
 
-   >For more information about build definitions and build quality, see
+   >For more information about build pipelines and build quality, see
    [Continuous integration on any platform](../../pipelines/overview.md).
  
 1. To save your changes, choose **Set build filter**.
