@@ -59,7 +59,7 @@ To make subsequent edits to paid quantities in your Team Services organization, 
 
 2. Select **Get**.
 
-   ![Select "Get" for Microsoft-hosted CI/CD](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
+   ![Select Get for Microsoft-hosted CI/CD](_img/get-more-build-load-testing/buy-hosted-build-release-pipelines.png)
 
 3. Select your VSTS organization, if you have multiple organizations. Then select **Buy**.
 
@@ -75,11 +75,11 @@ To make subsequent edits to paid quantities in your Team Services organization, 
 
 5. Select the number of concurrent jobs that you want to buy, and then select **Continue**.
 
-    ![Select the number of concurrent jobs to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
+   ![Select the number of concurrent jobs to buy](_img/get-more-build-load-testing/select-number-hosted-pipelines.png)
 
 6. Review your order and select **Confirm**.
 
-    ![Review the hosted pipeline order](_img/get-more-build-load-testing/review-confirm-order.png)
+   ![Review the hosted pipeline order](_img/get-more-build-load-testing/review-confirm-order.png)
 
 7. To view your current CI/CD capacity, go to your Team Services organization and select **Manage Pipelines**.
 
@@ -87,8 +87,7 @@ To make subsequent edits to paid quantities in your Team Services organization, 
 
    ![Go to Team Services organization toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
-To return to the **Build and Release** hub in your VSTS organization at any time, go to your VSTS organization toolbar, and then go to **Build and Release**
-  (```https://{yourorganization}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
+To return to the **Build and Release** hub in your VSTS organization at any time, go to your VSTS organization toolbar, and then go to **Build and Release** (`https://{yourorganization}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits`).
 
 ## XAML build
 
@@ -103,9 +102,9 @@ The hosted XAML build controller is no longer supported. Organizations created o
 
 When your team's needs for build or release capacity change, you can change the number of paid concurrent jobs.
 
-1. Go to your Team Services organization toolbar, and then go to **Build and Release** (```https://{yourorganization}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
+1. Go to your Team Services organization toolbar, and then go to **Build and Release** (`https://{yourorganization}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits`).
 
-    ![Go to VSTS organization toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
+   ![Go to VSTS organization toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 
 2. Select **Change** for either Microsoft-hosted or self-hosted CI/CD, which takes you to the Visual Studio Marketplace.
 
