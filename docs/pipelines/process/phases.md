@@ -103,7 +103,7 @@ If you want to specify just the queue, you can do that and skip the other proper
 ```yaml
 phases:
 - phase: Run this job on a Linux agent
-  queue: Hosted Linux
+  queue: Hosted Linux Preview
   steps:
     ...
 ```
