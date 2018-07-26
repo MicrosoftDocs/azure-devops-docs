@@ -39,7 +39,7 @@ you have to create a new subscription, something like this. In many cases,
 you have to do some work in the other service, too. For specific details, 
 look at the information on the service that you're interested in.
 
-1.	Open the admin page for a team project in web access.
+1.	Open the admin page for a project in web access.
 
     <img alt="Open the admin page" src="./_img/openadmin.png" style="border: 1px solid #CCCCCC" />
 
@@ -89,11 +89,11 @@ and
 tfssecurity /a+ /collection:https://fabrikam.visualstudio.com/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
 ```
 
-The GUID is the ID of the team project. You can get it using the [Projects](https://docs.microsoft.com/en-us/rest/api/vsts/) REST API.
+The GUID is the ID of the project. You can get it using the [Projects](https://docs.microsoft.com/en-us/rest/api/vsts/) REST API.
 
 ####Q: What are the security implications of granting *Edit subscriptions* and *View subscriptions* permissions?
 
-A: The user with these permissions can see all subscriptions created in the team project 
+A: The user with these permissions can see all subscriptions created in the project 
 project and the notification history for those subscriptions. That user will be able to 
 create any type of service hook subscription in that project. If the user sets up a 
 subscription for a resource that he does not otherwise have permission to access, the 

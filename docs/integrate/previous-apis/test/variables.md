@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/variables?api-vers
 |:-------------------|:--------|:--------|:---------------------
 | URL
 | instance           | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  |         | Name or ID of the team project.
+| project            | string  |         | Name or ID of the project.
 | Query
 | api-version        | string  |         | Version of the API to use.
 | $skip				 | int     |         | Number of test variables to skip.
@@ -49,7 +49,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/variables/{variabl
 |:-------------------|:--------|:---------------------
 | URL
 | instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  | Name or ID of the team project.
+| project            | string  | Name or ID of the project.
 | variableId               | int     | ID of the test variable to get.
 | Query
 | api-version        | string  | Version of the API to use.
@@ -76,7 +76,7 @@ Content-Type: application/json
 |:------------|:---------|:----------------------------|:---------------------
 | URL
 | instance    | string   |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |                             | Name or ID of the team project.
+| project     | string   |                             | Name or ID of the project.
 | Query
 | api-version | string   |                             | Version of the API to use.
 | Body
@@ -106,7 +106,7 @@ Content-Type: application/json
 |:------------|:---------|:----------------------------|:---------------------
 | URL
 | instance    | string   |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |                             | Name or ID of the team project.
+| project     | string   |                             | Name or ID of the project.
 | variableId               | int     |                 | ID of the test variable to update.
 | Query
 | api-version | string   |                             | Version of the API to use.
@@ -128,7 +128,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/variables/{vari
 |:-------------------|:--------|:---------------------
 | URL
 | instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  | Name or ID of the team project.
+| project            | string  | Name or ID of the project.
 | variableId               | int     | ID of the test variable to delete.
 | Query
 | api-version        | string  | Version of the API to use.

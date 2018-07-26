@@ -80,7 +80,7 @@ Configuring integration between Team Foundation Server and Teams is a two step p
 
 ### From Team Foundation Server
 
-1. From your TFS team project page (```https://mycompany/tfs/[collection]/[project]```), navigate to **Service Hooks** in the settings:
+1. From your TFS project page (```https://mycompany/tfs/[collection]/[project]```), navigate to **Service Hooks** in the settings:
 <img alt="VSTS Service Hook Settings" src="./_img/slack/vsts-service-hooks.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. Click **Create subscription** and select the "Teams" service.

@@ -35,7 +35,7 @@ to open up the menu, and find **Apps and integrations**:
 
 0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Team project administration page](./_img/add-service-hook.png)
+	![Project administration page](./_img/add-service-hook.png)
 
 	Click **Create Subscription**.
     
@@ -60,8 +60,8 @@ for pricing related to their services.
 
 ####Q: Why don't I have the pull request events as an option when I configure my trigger?
 
-A: Pull requests are only available with team projects that use Git.
-If your team project uses TFVC, pull event triggers aren't available,
+A: Pull requests are only available with projects that use Git.
+If your project uses TFVC, pull event triggers aren't available,
 and your code event is called "Code checked in" instead of "Code pushed".
 
 ####Q: How can I get multiple events to show up in my Slack channel?

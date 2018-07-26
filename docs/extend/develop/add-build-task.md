@@ -248,7 +248,7 @@ Installing an extension that is shared with you is simple and can be done in a f
 2. In the Extensions tab, find your extension in the "Extensions Shared With Me" group, click on the extension link.
 3. Install the extension!
 
-If you can't see the Extensions tab, make sure you're in the control panel (the project collection level administration page - `https://{account}.visualstudio.com/_admin`) and not the administration page for a team project.
+If you can't see the Extensions tab, make sure you're in the control panel (the project collection level administration page - `https://{account}.visualstudio.com/_admin`) and not the administration page for a project.
 
 If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions may not be enabled for your account. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 

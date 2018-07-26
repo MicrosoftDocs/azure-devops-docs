@@ -84,7 +84,7 @@ For VSTS, *instance* is `{account}.visualstudio.com` and *collection* is `Defaul
 VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-For example, here's how to get a list of team projects in a VSTS account.
+For example, here's how to get a list of projects in a VSTS account.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
@@ -139,7 +139,7 @@ Most samples on this site use Personal Access Tokens as they're a compact exampl
 For TFS, `instance` is `{server:port}` and by default the port is 8080.
 The default collection is `DefaultCollection`, but can be any collection.
 
-Here's how to get a list of team projects from TFS using the default port and collection.
+Here's how to get a list of projects from TFS using the default port and collection.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0

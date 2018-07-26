@@ -40,13 +40,13 @@ Work items can also be [tagged](./tags.md).
 ## Work item metadata resources
 
 Work items are governed by metadata.
-Some of the metadata is scoped to a specific team project, and other metadata is scoped to a project collection (like your Visual Studio Team Services account's default collection).
+Some of the metadata is scoped to a specific project, and other metadata is scoped to a project collection (like your Visual Studio Team Services account's default collection).
 
 ### Project-scoped metadata
 
-Your team project has a set of [work item types](./work-item-types.md). Each work item type may belong to a [category](./categories.md) such as "requirement" or 
+Your project has a set of [work item types](./work-item-types.md). Each work item type may belong to a [category](./categories.md) such as "requirement" or 
 "bug" to define its role in the project.
-[Classification nodes](./classification-nodes.md) define the set of values that can be used in the area and iteration fields for the work items in the team project.
+[Classification nodes](./classification-nodes.md) define the set of values that can be used in the area and iteration fields for the work items in the project.
 
 * [Categories](./categories.md)
 * [Classification nodes](./classification-nodes.md) (areas and iterations)
@@ -112,16 +112,16 @@ Make sure you provide at least a title. Some types of work items will require va
 2. Get the ID of the [tag](./tags.md#byname) that you want to add. If it doesn't exist, [create](./tags.md#createatag) it.
 3. Add the tag to the work item by [updating the tags field](./work-items.md#addatag).
 
-### Get the fields used in a team project
-1. Get the [types of work items](./work-item-types.md#getalistofworkitemtypes) used in a team project.
+### Get the fields used in a project
+1. Get the [types of work items](./work-item-types.md#getalistofworkitemtypes) used in a project.
 2. Get each [work item type](./work-item-types.md#getaworkitemtype) to see the fields that it uses. (Skip past the xmlform to fieldinstances.)
 
 ### Get categories of work items
-Use [categories of work items](./categories.md#getalistofworkitemtypecategories) to get the types of work items used in a team project for different functions.
+Use [categories of work items](./categories.md#getalistofworkitemtypecategories) to get the types of work items used in a project for different functions.
 For example, to see the work items that appear on the backlog, get the requirements [category](./categories.md#getaworkitemtypecategory).
 
 ### Get areas and iterations
-Get the [area hierarchy](classification-nodes.md#gettheareatreewith2levelsofchildren) or [iteration hierarchy](./classification-nodes.md#gettheiterationtreewith2levelsofchildren) for your team project.
+Get the [area hierarchy](classification-nodes.md#gettheareatreewith2levelsofchildren) or [iteration hierarchy](./classification-nodes.md#gettheiterationtreewith2levelsofchildren) for your project.
 
 ### Get types of work item relations
 Get the available [types of work item links](./relation-types.md#getalistofrelationtypes) that are available in your project collection.
