@@ -60,7 +60,7 @@ ms.date: 08/04/2016
 
 ## Team settings
 
-[Team projects](../tfs/projects.md) have one or more [teams](../tfs/teams.md) that contribute to that project. This API enables editing of team settings (not project or process settings). 
+[Projects](../tfs/projects.md) have one or more [teams](../tfs/teams.md) that contribute to that project. This API enables editing of team settings (not project or process settings). 
 
 | Setting Name  | Description | Reference
 |:-----------   |:---------   |:---------
@@ -82,7 +82,7 @@ ms.date: 08/04/2016
 
 ### Change the [bug behavior](./team-settings.md#SetTeamSettings) for the team
 
-1. Get a list of [teams](../tfs/projects.md) in a team project.
+1. Get a list of [teams](../tfs/projects.md) in a project.
 2. Get the [team settings](./team-settings.md#GetTeamSettings) of a team.
 3. Set the [team settings](./team-settings.md#SetTeamSettings) of a team.
 
@@ -90,14 +90,14 @@ ms.date: 08/04/2016
 
 ### Get the list of areas or team field values that a team owns
 
-1. Get a list of [teams](../tfs/projects.md) in a team project.
+1. Get a list of [teams](../tfs/projects.md) in a project.
 2. Get the [areas or team field values](./team-field-values.md#GetTeamFieldValues) of a team.
 
 
 
 ### Change a team's ownership of areas or team field values
 
-1. Get a list of [teams](../tfs/projects.md) in a team project.
+1. Get a list of [teams](../tfs/projects.md) in a project.
 2. Get a list of [areas or team field values](./team-field-values.md) of a team.
 3. Set the [areas or team field values](./team-field-values.md#UpdateTeamFieldValues) of a team.
 
@@ -105,7 +105,7 @@ ms.date: 08/04/2016
 
 ### Add an iteration to the set of team iterations
 
-1. Get a list of [teams](../tfs/projects.md) in a team project.
+1. Get a list of [teams](../tfs/projects.md) in a project.
 2. Get a list of [iterations](./iterations.md) of a team.
 3. Set the [iterations](./iterations.md#AddTeamIteration) of a team.
 
@@ -113,7 +113,7 @@ ms.date: 08/04/2016
 
 ### Change a team member's capacity per day
 
-1. Get a list of [teams](../tfs/projects.md) in a team project.
+1. Get a list of [teams](../tfs/projects.md) in a project.
 2. Get a list of [iterations](./iterations.md) of a team.
 3. Get the [capacity](./capacity.md#GetTeamMembersCapacity) information for that iteration.
 3. Set the [capacity](./capacity.md#UpdateTeamMemberCapacity) of one team member for that iteration.
@@ -123,6 +123,6 @@ ms.date: 08/04/2016
 ## Common tasks with the Process Configuration API
 
 ### Investigate what field maps to "Effort" in the agile experiences
-1. Get a list of [team projects](../tfs/projects.md) in a collection
-2. Get the [process configuration](./process-configuration.md) for a team project.
+1. Get a list of [projects](../tfs/projects.md) in a collection
+2. Get the [process configuration](./process-configuration.md) for a project.
 3. Find the typeField mapping for "Effort".

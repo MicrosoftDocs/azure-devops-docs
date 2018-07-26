@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 # Categories of work item types
 [!INCLUDE [API_version](../_data/version.md)]
 
-[Categories](http://msdn.microsoft.com/en-us/library/dd695775.aspx) define the set of work item types that are used in a specific role in your team project.
+[Categories](http://msdn.microsoft.com/en-us/library/dd695775.aspx) define the set of work item types that are used in a specific role in your project.
 For example, work item types in the "requirements" category show up in your backlog.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
@@ -30,7 +30,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/workItemTypeCategor
 |:--------------|:----------|:-----------------
 | URL
 | instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project 		| string 	| Name or ID of a team project that contains the categories
+| project 		| string 	| Name or ID of a project that contains the categories
 | Query
 | api-version   | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -50,7 +50,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/workItemTypeCategor
 | Property  | Type 		| Description |
 |:--------------|:----------|:-----------------
 | instance  | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project 	| string 	| Name or ID of a team project that contains the categories
+| project 	| string 	| Name or ID of a project that contains the categories
 | name 		| string 	| Name of the category
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.

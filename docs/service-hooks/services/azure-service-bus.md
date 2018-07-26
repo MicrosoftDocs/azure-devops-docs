@@ -63,7 +63,7 @@ messages using a Azure Service Bus queue. For details, go [here](http://azure.mi
 
 0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Team project administration page](./_img/add-service-hook.png)
+	![Project administration page](./_img/add-service-hook.png)
 
 	Click **Create Subscription**.
 
@@ -95,7 +95,7 @@ You can verify this in your application or service.
 VSTS messages using a Azure Service Bus topic.
 For details, go [here](http://azure.microsoft.com/en-us/documentation/articles/service-bus-dotnet-how-to-use-topics-subscriptions/).
 
-3. Open the admin page for the team project in VSTS.
+3. Open the admin page for the project in VSTS.
 
 4. On the **Service Hooks** tab, run the subscription wizard.
 
@@ -137,7 +137,7 @@ For more information about notification hubs go [here](https://msdn.microsoft.co
 The steps and code required to set up your app depend on the target platform (Android, iOS, Windows Phone 8, and Windows Store).
 For details, go [here](http://azure.microsoft.com/en-us/documentation/services/notification-hubs/).
 
-3. Open the admin page for the team project in VSTS.
+3. Open the admin page for the project in VSTS.
 
 4. On the **Service Hooks** tab, run the subscription wizard.
  

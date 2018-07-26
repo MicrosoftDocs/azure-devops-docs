@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:-----------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string | [Team project](../tfs/projects.md) ID or name.
+| project    | string | [Project](../tfs/projects.md) ID or name.
 | repository | string | ID or name of the [repository](./repositories.md).
 | objectId   | string | objectId of Tag to be fetched, returned only if it is annotated tag
 | Query
@@ -59,7 +59,7 @@ Content-Type: application/json
 |:-----------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance              | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project               | string | [Team project](../tfs/projects.md) ID or name.
+| project               | string | [Project](../tfs/projects.md) ID or name.
 | repository            | string | ID or name of the [repository](./repositories.md).
 | Query                 |
 | name                  | string | name of the tag to be created

@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/test/session?api
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name of a team project.
+| project   | string  | | Name of a project.
 | team	    | string  | Project's default team name| Name of a team within the project.
 | version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -58,7 +58,7 @@ Content-Type: application/json
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name of a team project.
+| project   | string  | | Name of a project.
 | team	    | string  | Project's default team name | Name of a team within the project.
 | version   | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
@@ -108,7 +108,7 @@ Content-Type: application/json
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name of a team project.
+| project   | string  | | Name of a project.
 | team	    | string  | Project's default team Name| Name of a team within the project.
 | version   | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body

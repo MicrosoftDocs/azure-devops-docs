@@ -49,7 +49,7 @@ you'll authorize access to your VSTS account when you add Git repositories from 
 
 ####Q: Does AppVeyor change anything in my VSTS account?
 
-A: Yes. It adds a service hook subscription to your team project.
+A: Yes. It adds a service hook subscription to your project.
 
 <img alt="VSTS AppVeyor consumer added" src="./_img/appveyor/appveyor-service-hook.png" style="border: 1px solid #CCCCCC" />
 
