@@ -32,6 +32,10 @@ To use a Package Management feed with a scope, follow the instructions below, bu
 - `registry=<your feed URL>` with
 - `@fabrikam:registry=<your feed URL>`
 
+And replace:
+- `always-auth=true` with
+- `@fabrikam:always-auth=true`
+
 ## Upstreams or scopes?
 Scopes add an additional restriction when naming your packages: each package name must start with `@<scope>`. If you're ok with this limitation, and don't intend to ever publish your private packages to npmjs.com, scopes are an alternative to [upstream sources](upstream-sources.md).
 
