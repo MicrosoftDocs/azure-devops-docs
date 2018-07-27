@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/_apis/tagging/scopes/{scope}/tags?api-v
 |:----------------|:--------|:-------|:------------
 | URL
 | instance        | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| scope           | GUID    |         | ID of the enclosing scope.<br/>Typically, this is the ID if the team project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.
+| scope           | GUID    |         | ID of the enclosing scope.<br/>Typically, this is the ID if the project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.
 | Query
 | api-version     | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | includeInactive | bool    | false   | If true, inactive tags are returned.<br/>Inactive tags are typically retained for work item history and would not normally be shown to the user.
@@ -56,7 +56,7 @@ GET https://{instance}/DefaultCollection/_apis/tagging/scopes/{scope}/tags/{tag}
 |:----------------|:--------|:------------
 | URL
 | instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| scope           | GUID    | ID of the enclosing scope.<br/>Typically, this is the ID if the team project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.
+| scope           | GUID    | ID of the enclosing scope.<br/>Typically, this is the ID if the project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.
 | tag             | string  | ID or name of the tag.<br/>Use ID for durable links to the tag because the name can change.
 | Query
 | api-version     | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -97,7 +97,7 @@ Content-type: Application/json
 |:----------------|:--------|:------------
 | URL
 | instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| scope           | GUID    | ID of the enclosing scope.<br/>Typically, this is the ID if the team project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.<br/>If the scope does not exist, a new scope will be created and used.<br/>To verify that the scope ID represents a team project, check for the existence of the [team project](../tfs/projects.md#getateamproject) by that ID.
+| scope           | GUID    | ID of the enclosing scope.<br/>Typically, this is the ID if the project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.<br/>If the scope does not exist, a new scope will be created and used.<br/>To verify that the scope ID represents a project, check for the existence of the [project](../tfs/projects.md#getateamproject) by that ID.
 | Query
 | api-version     | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Request body
@@ -128,7 +128,7 @@ Content-type: Application/json
 |:----------------|:--------|:------------
 | URL
 | instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| scope           | GUID    | ID of the enclosing scope.<br/>Typically, this is the ID if the team project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.<br/>If the scope does not exist, a new scope will be created and used.<br/>To verify that the scope ID represents a team project, check for the existence of the [team project](../tfs/projects.md#getateamproject) by that ID.
+| scope           | GUID    | ID of the enclosing scope.<br/>Typically, this is the ID if the project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.<br/>If the scope does not exist, a new scope will be created and used.<br/>To verify that the scope ID represents a project, check for the existence of the [project](../tfs/projects.md#getateamproject) by that ID.
 | tag             | string  | ID or name of the tag to update.
 | Query
 | api-version     | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -154,7 +154,7 @@ PATCH https://{instance}/DefaultCollection/_apis/tagging/scopes/{scope}/tags/{ta
 |:----------------|:--------|:------------
 | URL
 | instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| scope           | GUID    | ID of the enclosing scope.<br/>Typically, this is the ID if the team project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.
+| scope           | GUID    | ID of the enclosing scope.<br/>Typically, this is the ID if the project. You can define your own scope GUIDs, but tags using this scope would not appear in the work item tracking user interface.
 | tag             | string  | ID or name of the tag to delete.
 | Query
 | api-version     | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.

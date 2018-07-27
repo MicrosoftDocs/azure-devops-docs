@@ -59,7 +59,7 @@ This update has the following new features:
 * [New licensing model for Build and Release Management](#nov2316-license)
 * [Build and deploy Docker apps to Azure more easily](#nov2316-dockerapps)
 * [Hosted Linux pool preview](#nov2316-hostedlinux)
-* [Task versioning for Build and Release definitions](#nov2316-taskversion)
+* [Task versioning for Build and release pipelines](#nov2316-taskversion)
 * [Inline service connections in Build and Release](#nov2316-inlineservices)
 * [Link build artifacts from another project](#nov2316-linkartifacts)
 
@@ -132,32 +132,32 @@ in the Visual Studio Marketplace.
 
 To use the Hosted Linux pool:
 
-* In your build definition, go to the **General** tab, open the **Default agent queue** menu, and then select **Hosted Linux**.
-* In your release definition, go to the **Environments** tab, select your **Run on agent** task,
+* In your build pipeline, go to the **General** tab, open the **Default agent queue** menu, and then select **Hosted Linux**.
+* In your release pipeline, go to the **Environments** tab, select your **Run on agent** task,
   open the **Deployment queue** menu, and then select **Hosted Linux**.
 
 If you don't see the option yet, just give it a little time. We're rolling this option out to accounts over the next few weeks.
 
 <a name="nov2316-taskversion"></a>
-**Task versioning for Build and Release definitions**
+**Task versioning for build and release pipelines**
 
 By popular request, we're giving you control over the major version of a task
 that you run in your build or release. We expect this change to result in
 fewer unpredictable errors that were caused by automatic updates to the agent
 and task version. You now specify the major version of the task on the **Build**
-tab of your definition, or on the **Environments** tab of your release definition.
+tab of your definition, or on the **Environments** tab of your release pipeline.
 
 When a minor version is released (for example, 1.2 to 1.3), you get that change
 automatically in your build. But if a new major version is released (for example 2.0),
 your build stays locked to version 1.3 until you edit the definition and manually
-change to the new major version. A flag in the build definition alerts you to new major versions.
+change to the new major version. A flag in the build pipeline alerts you to new major versions.
 
 If you select a version named something such as **1.\* (preview)**, keep in mind
 that this version is still under development and might have known problems.
 
->**Tip**: In a build definition, you have a few options to test a new major version of a task.
+>**Tip**: In a build pipeline, you have a few options to test a new major version of a task.
 If you change the version and have problems, you can revert the change from the **History** tab.
-Clone the build definition and test the cloned definition with the new major task version.
+Clone the build pipeline and test the cloned definition with the new major task version.
 
 <a name="nov2316-inlineservices"></a>
 **Inline service connections in Build and Release**
@@ -169,7 +169,7 @@ for all extensions which are defined declaratively, such as Docker, Jenkins, VMW
 <a name="nov2316-linkartifacts"></a>
 **Link build artifacts from another project**
 
-Until now, release definitions could only link artifact sources from the
+Until now, release pipelines could only link artifact sources from the
 current project. Now, you can now link build artifacts from another project
 as well. While linking an artifact, the project drop down will list all
 the projects in the account.
@@ -208,7 +208,7 @@ This update has the following new features:
 
 Want to schedule your releases to be created more
 than one time in a day? You can now configure
-multiple scheduled triggers in a release definition.
+multiple scheduled triggers in a release pipeline.
 
 <a name="oct12-argimp"></a>
 **Azure Resource Group improvements**
@@ -253,7 +253,7 @@ See [Deploy: Azure CLI](../../tasks/deploy/azure-cli.md).
 **Simplified Azure endpoint creation**
 
 In an earlier sprint, we made it easier to create a new
-Azure Resource Manager service endpoint from VSTS.
+Azure Resource Manager service connection from VSTS.
 That experience only worked in accounts that are backed by
 Azure Active Directory. In this deployment, we are bringing
 the same simplified experience for all the other accounts
@@ -263,7 +263,7 @@ from VSTS, you can create an Azure Resource Manager
 endpoint without needing to run tedious PowerShell scripts
 or follow the steps in a blog.
 
-See [Azure Resource Manager service endpoint](../../library/connect-to-azure.md).
+See [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
 <a name="update-sep21-16"></a>
 ### September 21, 2016 Update (VSTS)
@@ -271,11 +271,11 @@ See [Azure Resource Manager service endpoint](../../library/connect-to-azure.md)
 **Deployment Status widget**
 
 A build can be deployed and tested in different release
-environments across multiple release definitions. In such
+environments across multiple release pipelines. In such
 a scenario, the Deployment Status widget shows you a
 consolidated status of the deployment and test pass rate
 across multiple environments for a recent set of builds
-from a build definition.
+from a build pipeline.
 
 <a name="update-sep2-16"></a>
 ### September 2, 2016 Update (VSTS)
@@ -284,7 +284,7 @@ This update has the following new features:
 
 * [Jenkins with untrusted SSL certificates](#sep2-jenkins)
 * [Deployment manual intervention](#sep2-manualinter)
-* [Service endpoint improvements](#sep2-servendpoint)
+* [service connection improvements](#sep2-servendpoint)
 * [SQL database deployment task scripts](#sep2-sqldeploy)
 
 <a name="sep2-jenkins"></a>
@@ -315,16 +315,16 @@ You can also reject the deployment and prevent further tasks from
 executing after a manual intervention.
 
 <a name="sep2-servendpoint"></a>
-**Service endpoint improvements**
+**service connection improvements**
 
 An option to validate the connection has been added to all
-service endpoint dialogs so that users can test that the parameters
+service connection dialogs so that users can test that the parameters
 they entered are correct. The link uses a REST call to the
 external service using the information entered, and returns
 success when the REST call passes.
 
-Service endpoints have also been enhanced by the introduction of icons.
-Service endpoint authors can specify the icon to be displayed for
+service connections have also been enhanced by the introduction of icons.
+service connection authors can specify the icon to be displayed for
 each endpoint they create.
 
 <a name="sep2-sqldeploy"></a>
@@ -354,12 +354,12 @@ This update has the following new features:
 **Task groups**
 
 A *task group* lets you to encapsulate a sequence of tasks already defined
-in a build or a release definition into a single reusable task that can be
-added to a build or release definition just like any other task. You can
+in a build or a release pipeline into a single reusable task that can be
+added to a build or release pipeline just like any other task. You can
 choose to extract the parameters from the encapsulated tasks as configuration
 variables, and abstract the rest of the task information. The new task group
 is automatically added to the task catalogue, ready to add to other release
-and build definitions.
+and build pipelines.
 
 ![Task groups to encapsulate multiple tasks](_img/rm-archived/release-notes-23.png)
 
@@ -381,28 +381,28 @@ Two new features make it easier to deploy applications to Azure:
 
 * **Simplified Service Principal Authentication configuration**.
   If the VSTS or TFS instance you are using is backed by Azure Active
-  Directory authentication, a simplified version of the service endpoint dialog
+  Directory authentication, a simplified version of the service connection dialog
   allows you to select an existing Azure subscription. This automatically
   creates a new Azure service principal that is assigned the **Contributor** role
   and so has access to all resources within the subscription. For more details, see
-  [Azure Resource Manager service endpoint](../../library/connect-to-azure.md).
+  [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
- ![Configuring a Service Principal Authentication based Azure service endpoint](_img/rm-archived/rel103-01.png)
+ ![Configuring a Service Principal Authentication based Azure service connection](_img/rm-archived/rel103-01.png)
 
 * **Deployment to national Azure clouds**. Use the new **Environment** setting in an
-  Azure Classic service endpoint to target a specific Azure cloud, including pre-defined
+  Azure Classic service connection to target a specific Azure cloud, including pre-defined
   national clouds such as Azure China cloud, Azure US Government cloud, and Azure German cloud.
   For more details, see
-  [Azure Classic service endpoint](../../library/service-endpoints.md#sep-azure-classic).
+  [Azure Classic service connection](../../library/service-endpoints.md#sep-azure-classic).
 
- ![Configuring an Azure Classic service endpoint to target a specific Azure cloud](_img/rm-archived/rel103-02.png)
+ ![Configuring an Azure Classic service connection to target a specific Azure cloud](_img/rm-archived/rel103-02.png)
 
 <a name="jul28-softdelete"></a>
 **Soft delete of releases**
 
 When you delete a release, or it is automatically deleted by a retention policy,
 the release is removed from the overview and details lists.
-However, it is retained with the release definition for a period (typically
+However, it is retained with the release pipeline for a period (typically
 14 days) before it is permanently deleted. During this period, it is shown in
 the **Deleted** tab of the overview and details lists. You can restore any of
 these releases by opening the shortcut menu and choosing **Undelete**.
@@ -410,7 +410,7 @@ these releases by opening the shortcut menu and choosing **Undelete**.
 <a name="jul28-retainspecific"></a>
 **Retain releases and builds for each environment**
 
-The release retention policy for a release definition determines how long a release
+The release retention policy for a release pipeline determines how long a release
 and the build linked to it are retained. By default, a release
 is retained for 60 days - releases that have not been
 deployed or modified during that time will automatically be
@@ -432,11 +432,11 @@ list of releases by the branch from which the artifacts were generated.
 
 Two new features make it easier to work with artifacts and artifact sources:
 
-* You can link multiple artifact sources to a release definition.
+* You can link multiple artifact sources to a release pipeline.
   Each of the artifacts is downloaded into a folder on the agent called the _source alias_.
   You can now edit the source alias of a linked artifact. For example, when you change the
-  name of the build definition, you can edit the source alias to reflect the name of the
-  build definition.
+  name of the build pipeline, you can edit the source alias to reflect the name of the
+  build pipeline.
 
  For more details, see [Artifact source alias](../../release/artifacts.md#source-alias).
 
@@ -459,7 +459,7 @@ to make sure that the automation scripts for the deployment can handle the rollb
 
 This update has the following new features:
 
-* [Clone, export, and import release definitions](#jun24-clone)
+* [Clone, export, and import release pipelines](#jun24-clone)
 * [Test results displayed in the release summary](#jun24-testresults)
 * [Pass OAuth tokens to scripts](#jun24-tokens)
 * [Task-level timeouts](#jun24-timeouts)
@@ -471,10 +471,10 @@ This update has the following new features:
 * [Web app deployment using ARM](#jun24-webappdeploy)
 
 <a name="jun24-clone"></a>
-**Clone, export, and import release definitions**
+**Clone, export, and import release pipelines**
 
 By popular demand, we have incorporated the ability to
-clone, export, and import release definitions within the Release hub
+clone, export, and import release pipelines within the Release hub
 in VSTS, without requiring installation of an extension.
 If you are using Team Foundation Server 2015 Update 2 or higher, you
 can download and install **[this extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.rm-import-export)**
@@ -503,7 +503,7 @@ current OAuth token.
 
 ![Setting the option to allow access to the OAuth token](_img/rm-archived/release-notes-18.png)
 
-This is a simple example showing how to get a build definition:
+This is a simple example showing how to get a build pipeline:
 
 ```powershell
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build-release/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
@@ -519,12 +519,12 @@ Write-Host "Definition = $($definition | ConvertTo-Json -Depth 1000)"
 
 In addition to specifying the timeout for an entire deployment, you
 can now specify the timeout for every task individually; in both
-release and build definitions. This allows you to exert more
+release and build pipelines. This allows you to exert more
 fine-grained control over the release and deployment process. The
 value is specified in the **Control Options** parameters for each
 task as a number of minutes. The default is zero (infinite timeout).
 
-![Setting the timeout for a task in a release definition](_img/rm-archived/release-notes-19.png)
+![Setting the timeout for a task in a release pipeline](_img/rm-archived/release-notes-19.png)
 
 For more details, see [Out-of-the-box tasks](../../process/tasks.md#task-control-options)
 
@@ -535,7 +535,7 @@ Build and release tasks have an option to **Continue on error** in
 the **Control Options** parameters for each task. In a build
 definition, this results in a **Build partially succeeded** result
 if a task with this option set should fail. The
-same behavior is now available in release definitions. If a task fails,
+same behavior is now available in release pipelines. If a task fails,
 the overall release result will show as "Release partially succeeded".
 
 ![Release summary shows partially successful releases in orange color](_img/rm-archived/release-notes-20a.png)
@@ -559,7 +559,7 @@ directly, without passing them through a build process, as described in
 **[this topic](../../release/artifacts.md#tfvcsource)**.
 You can now do the same if your code in stored in a GitHub repository.
 
-![Linking code in a GutHub repository to a release definition](_img/rm-archived/release-notes-21.png)
+![Linking code in a GutHub repository to a release pipeline](_img/rm-archived/release-notes-21.png)
 
 For more details, see [TFVC, Git, and GitHub sources](../../release/artifacts.md#tfvcsource)
 
@@ -599,14 +599,14 @@ IIS web apps and databases from VSTS and TFS.
 
 A new version of the **Azure Web App Deployment** task is available, called
 **[AzureRM Web App Deployment](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/AzureRmWebAppDeploymentV4/README.md)**.
-It uses MSDeploy and an Azure Resource Manager service endpoint connection.
+It uses MSDeploy and an Azure Resource Manager service connection connection.
 Use this task to deploy Azure Web Jobs and Azure API apps, in addition to
 ASP.NET 4, Node, and Python based web apps. The task also supports common
 publishing options such as the ability to retain app data, take an app off-line,
 and remove additional files at the destination. More features, such as
 configuration transformations, may appear in forthcoming versions.
 
-![Using the AzureRM Web App Deployment task in a release definition](_img/rm-archived/release-notes-22.png)
+![Using the AzureRM Web App Deployment task in a release pipeline](_img/rm-archived/release-notes-22.png)
 
 <a name="update-may23-16"></a>
 ### May 23, 2016 Update (VSTS)
@@ -626,7 +626,7 @@ capabilities to build your Docker images, and upload
 them to Docker Hub as part of your continuous integration flow.
 Then deploy those images to a number of Docker hosts as
 part of Release Management. The [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)
-in VisualStudio Marketplace adds all the service endpoint
+in VisualStudio Marketplace adds all the service connection
 types and tasks necessary for you to work with Docker
 from VSTS.
 
@@ -637,7 +637,7 @@ If you are a TeamCity user, you can now consume TeamCity
 builds as artifacts in Release Management. Install the
 [TeamCity artifacts](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity)
 extension from VisualStudio Marketplace to setup a TeamCity
-service endpoint. Then configure your release definitions
+service connection. Then configure your release pipelines
 to deploy artifacts produced by TeamCity builds.
 See [TeamCity artifact sources](../../release/artifacts.md#teamcitysource).
 
@@ -666,23 +666,23 @@ Example usage for this SDK can be found
 
 This update provides several major improvements to Release Management:
 
-* [Simplified release definition wizard](#apr26-wizard)
+* [Simplified release pipeline wizard](#apr26-wizard)
 * [View the history of a release](#apr26-history)
 * [TFVC and TF Git as artifact sources](#apr26-tfsonprem)
 * [Promote releases at a specific time](#apr26-timedrelease)
 * [REST APIs for Release Management](#apr26-restapi)
-* [Import, export, and clone release definitions](#apr26-import)
+* [Import, export, and clone release pipelines](#apr26-import)
 * [Additional variables for job execution](#apr26-newvars)
 
 <a name="apr26-wizard"></a>
-**Simplified wizard to create a release definition**
+**Simplified wizard to create a release pipeline**
 
-Try the simplified wizard for creating a release definition. You can
+Try the simplified wizard for creating a release pipeline. You can
 enter most of the inputs in this wizard to set up a definition with a
 single environment. We have also simplified the process of adding more
 environments to a definition, and cloning an environment.
 
-![Simplified wizard to create a release definition](_img/rm-archived/release-notes-13.png)
+![Simplified wizard to create a release pipeline](_img/rm-archived/release-notes-13.png)
 
 <a name="apr26-history"></a>
 **View the history of a release**
@@ -704,7 +704,7 @@ build artifacts with the same files?
 
 Release Management supports
 linking Team Foundation Version Control (TFVC) and Team Foundation
-Git repositories as artifact sources in a release definition.
+Git repositories as artifact sources in a release pipeline.
 At present there is no support for auto-triggering new releases when a
 commit is made into these repositories.
 
@@ -724,7 +724,7 @@ it at the specified time.
 **REST APIs for Release Management**
 
 You can use the REST APIs for the Release Management service to
-create release definitions and releases, and manage many aspects of
+create release pipelines and releases, and manage many aspects of
 deploying a release. Most of these APIs also work with the
 on-premises releases of Release Management in TFS 2015 Update 2
 (the differences between TFS and VSTS versions are indicated
@@ -732,9 +732,9 @@ in the documentation). You'll find some basic examples that use the APIs in
 [this blog post](http://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
 
 <a name="apr26-import"></a>
-**Import, export, and clone release definitions**
+**Import, export, and clone release pipelines**
 
-Looking for a way to clone release definitions? Or copy release
+Looking for a way to clone release pipelines? Or copy release
 definitions from one project to another? These features will be
 available out-of-the-box soon, but until then you can use an
 [extension available from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.rm-clone-rd).
@@ -742,7 +742,7 @@ available out-of-the-box soon, but until then you can use an
 <a name="apr26-newvars"></a>
 **Additional variables available during job execution**
 
-When there are multiple artifact sources linked to a release definition,
+When there are multiple artifact sources linked to a release pipeline,
 you can access information about all the artifact sources when
 executing deployment jobs. The information is available from
 variables of the format:
@@ -754,8 +754,8 @@ When used in a script, replace the underscore with a period:
 `RELEASE.ARTIFACTS.[alias].[variable-name]`
 
 Replace `[alias]` with the name of the alias for the artifact source
-included in the release definition. You can find the alias name in the
-**Artifacts** tab of a release definition.
+included in the release pipeline. You can find the alias name in the
+**Artifacts** tab of a release pipeline.
 
 Replace `[variable-name]` with one of the following:
 
@@ -781,7 +781,7 @@ A new extension makes it easy to deploy on-premises
 TFS builds with VSTS Release Management,
 even if the TFS machine is not reachable directly
 from VSTS. The extension adds a TFS
-service endpoint connection, and you use a new type of
+service connection connection, and you use a new type of
 artifact named **Team Build (external)** through
 which you deploy builds from the TFS machine.
 
@@ -798,9 +798,9 @@ Send the details of a release, including all the
 sections (such as deployment status, work items,
 commits, and build details) to email recipients.
 
-**Release definition summary - dashboard widget**
+**release pipeline summary - dashboard widget**
 
-Pin a release definition to the dashboard - an
+Pin a release pipeline to the dashboard - an
 easy way to make a summary of releases for that
 definition visible to all your team.
 
@@ -820,7 +820,7 @@ For more details, see [Parallel forked and joined deployments](../../release/tri
 **Inline scripting with the PowerShell task**
 
 You can now author an inline PowerShell script
-within a release definition by using the
+within a release pipeline by using the
 **PowerShell** task. This is ideal for those simple
 scenarios where you do not want to check in and
 publish the script as part of a build artifact.
@@ -895,7 +895,7 @@ or Team Foundation Server and create, delete, or
 apply snapshots to virtual machines managed in
 vCenter.
 
-This allows you to create build and release definitions
+This allows you to create build and release pipelines
 in which you deploy to virtual machines managed in
 VMware after dynamically provisioning them, or after
 restoring them from a clean snapshot.
@@ -913,7 +913,7 @@ or run PowerShell scripts with SCVMM cmdlets.
 
 This allows you to replicate one of the key features
 from Team Foundation Server Lab Management. You can
-now create build and release definitions in which
+now create build and release pipelines in which
 you deploy to virtual machines managed in SCVMM
 after restoring them to a clean checkpoint.
 Additional actions to create and delete virtual
@@ -960,7 +960,7 @@ A note on security: this feature does not offer full
 flexibility for editing the deployment flow graph
 across environments to all those with permission to
 create a new release. That flexibility is still only
-available to release definition authors.
+available to release pipeline authors.
 
 <a name="feb24schedtrigger"></a>
 **Scheduled trigger for creating new releases**
@@ -978,7 +978,7 @@ is automatically deployed to environments is
 determined by the deployment conditions configured
 on those environments. You configure a scheduled
 trigger for creating new releases on the **Triggers**
-tab of a release definition.
+tab of a release pipeline.
 
 ![Scheduled trigger](_img/rm-archived/release-notes-08.png)
 
@@ -988,7 +988,7 @@ tab of a release definition.
 You can now control how long releases are retained
 by setting a retention policy for each release
 definition. The default retention policy for all
-release definitions is 60 days and so
+release pipelines is 60 days and so
 releases that have not been deployed or modified
 during that time will automatically be deleted.
 
@@ -1025,7 +1025,7 @@ Release Management:
 **More control over the order of deployments to environments in a release**
 
 You now have the flexibility to implement triggered deployment
-orchestration on each environment in a release definition.
+orchestration on each environment in a release pipeline.
 No longer are you constrained to a linear deployment pipeline.
 For example, these scenarios can be easily implemented:
 
@@ -1126,8 +1126,8 @@ Tie the output of the first task to the input list of machines in the second tas
   will help you understand the contents of a release. There is more work needed
   in this space, but this is a start.
 
-* **Release definition history**. You can now see what's changed in a release
-  definition. Track the changes in a release definition using the **History** tab.
+* **release pipeline history**. You can now see what's changed in a release
+  definition. Track the changes in a release pipeline using the **History** tab.
 
 * **Configurable email settings**. Choose whether the environment owner should be
   notified of all deployments, or only failed deployments.
@@ -1137,7 +1137,7 @@ Tie the output of the first task to the input list of machines in the second tas
 
 * **Hosted agents support**. You can now use hosted agent pool for running
   deployment tasks in your releases. To start using the hosted agent, select
-  each environment in a release definition in turn, open the shortcut menu
+  each environment in a release pipeline in turn, open the shortcut menu
   from the ellipses (...), and select **Agent options**. In the CONFIGURE
   dialog for each environment, select **Hosted** as the default queue.
 
@@ -1175,24 +1175,24 @@ Tie the output of the first task to the input list of machines in the second tas
 
  * **Consume Build artifacts more easily**. You can now easily consume multiple
   artifacts published within a Team Build from RM. Linking a build
-  definition to a release definition has also been simplified.
+  definition to a release pipeline has also been simplified.
 
    However, this change is a breaking change that requires you to edit
-   and save your release definitions again. In particular, the paths to
+   and save your release pipelines again. In particular, the paths to
    which artifacts are downloaded by the agent have changed. With this
-   update, all artifacts provided by a source (build definition) are
-   downloaded to the **$(System.DefaultWorkingDirectory)\\{**_build definition name_**}**
+   update, all artifacts provided by a source (build pipeline) are
+   downloaded to the **$(System.DefaultWorkingDirectory)\\{**_build pipeline name_**}**
    folder by the agent. Use the artifact file picker whenever possible
    to specify the paths to files as you set the parameters of tasks.
 
-   If you already have release definitions created prior to this update,
-   open each release definition in turn and:
+   If you already have release pipelines created prior to this update,
+   open each release pipeline in turn and:
 
    - Remove the artifacts that were added to the definition
    - Re-link the artifact sources (add them back) to the definition
    - Re-establish the trigger to that artifact source
    - Edit the properties of the tasks to ensure that the input paths are correctly specified
-   - Save the release definition
+   - Save the release pipeline
 
 
  * **Select artifacts more easily**. A file picker has been introduced
@@ -1214,7 +1214,7 @@ Tie the output of the first task to the input list of machines in the second tas
    to approvers when an approval is pending, and to environment owners
    when the deployment to an environment has completed.
 
- * **Azure Service Principals**. When adding an Azure service endpoint,
+ * **Azure Service Principals**. When adding an Azure service connection,
    you can now specify a service principal based authentication. This
    will be required if you use 2-Factor Authentication with Azure Active Directory.
 

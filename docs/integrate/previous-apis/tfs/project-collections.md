@@ -3,7 +3,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
 title: Project Collections | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with team project collections programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+description: Work with project collections programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
 ms.assetid: 8172F58D-5131-4571-91D0-C1E11B05C4FE
 ms.manager: douge
 ms.topic: article
@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](../_data/disclaimer.md)]
 
-[Project collections](http://msdn.microsoft.com/en-us/library/dd236915.aspx) contain [team projects](./projects.md) that have source code, work items, and other resources.
+[Project collections](http://msdn.microsoft.com/en-us/library/dd236915.aspx) contain [projects](./projects.md) that have source code, work items, and other resources.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 

@@ -10,7 +10,7 @@ ms.topic: include
 
 0. On the Repository tab:
 
- * Git: Make sure the repository and branch containing your application are selected.  (By default the repository with the same name as the team project is selected.)
+ * Git: Make sure the repository and branch containing your application are selected.  (By default the repository with the same name as the project is selected.)
 
  * TFVC: Make sure the folder that contains your app is mapped.
 

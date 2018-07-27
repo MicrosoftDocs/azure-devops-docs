@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/codeCoverage?api-v
 |:------------|:---------------------------------------|:------------------------
 | URL
 | instance    | string                                 | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string                                 | Name or ID of the team project.
+| project     | string                                 | Name or ID of the project.
 | Query
 | api-version | string                                 | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | buildId     | int                                    | ID of the build for which code coverage data needs to be fetched.
@@ -45,7 +45,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/codeCov
 |:------------|:---------------------------------------|:------------------------
 | URL
 | instance    | string                                 | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string                                 | Name or ID of the team project.
+| project     | string                                 | Name or ID of the project.
 | run         | int                                    | ID of the test run for which code coverage data needs to be fetched.
 | Query
 | api-version | string                                 | [Version](../../concepts/rest-api-versioning.md) of the API to use.

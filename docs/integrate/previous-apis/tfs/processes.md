@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 # Processes
 [!INCLUDE [API_version](../_data/version.md)]
 
-Processes contain configuration settings for team projects.
+Processes contain configuration settings for projects.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 

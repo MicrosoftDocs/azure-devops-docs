@@ -30,7 +30,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:-----------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project    | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string   |         | ID or name of the [repository](./repositories.md).
 | Query
 | api-version| string   |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -75,7 +75,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:------------------|:---------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project           | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string   |         | ID of the [repository](./repositories.md).
 | pushId            | integer  |         | ID of the push.
 | Query
@@ -103,7 +103,7 @@ Each new push is limited to 1 commit, but this commit can contain 1 or more chan
 |:------------------|:---------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance          | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project           | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository        | string   |         | ID of the [repository](./repositories.md).
 | Body
 | refUpdates        | array    |         | The name of the branch to update or create with the new commit. ```name```: the name of the new or existing branch (value should start with ```refs/heads```). ```oldObjectId```: SHA1 of the commit this new commit is based on (i.e. the previous HEAD for existing branches). This value should be omitted when a new branch is specified by ```name```. 

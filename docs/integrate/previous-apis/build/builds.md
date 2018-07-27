@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds?api-versio
 |:--------------|:---------|:------------
 | URL
 | instance      | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | Query
 | definitions   | string   | A comma-delimited list of definition IDs.
 | queues        | string   | A comma-delimited list of queue IDs.
@@ -70,7 +70,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/build/builds?api-versi
 |:----------|:-------|:------------
 | URL
 | instance      | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string | [Team project](../tfs/projects.md) ID or name.
+| project       | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | version       | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
@@ -92,7 +92,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}?
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
 | version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -112,7 +112,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -129,7 +129,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 |:----------|:-------|:------------
 | URL
 | instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string | [Team project](../tfs/projects.md) ID or name.
+| project     | string | [Project](../tfs/projects.md) ID or name.
 | buildId     | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -147,7 +147,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}
 |:----------|:-------|:------------
 | URL
 | instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string | [Team project](../tfs/projects.md) ID or name.
+| project     | string | [Project](../tfs/projects.md) ID or name.
 | buildId     | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -165,7 +165,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -182,7 +182,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -200,7 +200,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -219,7 +219,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId}/
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -236,7 +236,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildI
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -254,7 +254,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildId
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -280,7 +280,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/builds/{buildI
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | buildId   | int    | ID of the build.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

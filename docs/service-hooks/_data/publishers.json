@@ -329,7 +329,7 @@
 		"inputDescriptors": [{
 			"id": "projectId",
 			"name": "Project",
-			"description": "Team Project to restrict events to",
+			"description": "Project to restrict events to",
 			"type": null,
 			"inputMode": "none",
 			"isConfidential": false,
@@ -920,7 +920,7 @@
 			"id": "git.pullrequest.updated",
 			"url": "https://mseng.visualstudio.com/_apis/hooks/publishers/tfs/eventTypes/git.pullrequest.updated",
 			"name": "Pull request updated",
-			"description": "Pull request is updated – status, review list, reviewer vote changed or the source branch is updated with a push",
+			"description": "Pull request is updated ï¿½ status, review list, reviewer vote changed or the source branch is updated with a push",
 			"supportedResourceVersions": [
 				"1.0-preview.1"
 			],
@@ -1242,7 +1242,7 @@
 		"inputDescriptors": [{
 			"id": "projectId",
 			"name": "Project",
-			"description": "Team Project to restrict events to",
+			"description": "Project to restrict events to",
 			"type": null,
 			"inputMode": "none",
 			"isConfidential": false,

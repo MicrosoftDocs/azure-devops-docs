@@ -3,7 +3,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
 title: Projects | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Work with team projects programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
+description: Work with projects programmatically using the REST APIs for Visual Studio Team Services and Team Foundation Server.
 ms.assetid: 537E1A1F-DAE8-4110-AF0F-63D5D52F2AB6
 ms.manager: douge
 ms.topic: article
@@ -12,17 +12,17 @@ author: elbatk
 ms.date: 08/16/2016
 ---
 
-# Team projects
+# Projects
 [!INCLUDE [API_version](../_data/version.md)]
 
-Team projects contain source code, work items, and other resources.
+Projects contain source code, work items, and other resources.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-## Get a list of team projects
+## Get a list of projects
 <a id="GetProjects"></a>
 
-Get all team projects in the project collection that the authenticated user has access to.
+Get all projects in the project collection that the authenticated user has access to.
 
 ```no-highlight
 GET https://{instance}/DefaultCollection/_apis/projects?api-version={version}[&stateFilter{string}&$top={integer}&skip={integer}]
@@ -34,9 +34,9 @@ GET https://{instance}/DefaultCollection/_apis/projects?api-version={version}[&s
 | instance           | string                                                   |            | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
 | Query                                                                                                                                                         
 | api-version        | string                                                   |            | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| stateFilter        | enum {<br/>&nbsp;&nbsp;WellFormed,<br/>&nbsp;&nbsp;CreatePending,<br/>&nbsp;&nbsp;Deleting,<br/>&nbsp;&nbsp;New,<br/>&nbsp;&nbsp;All<br/>}   | WellFormed | Return team projects in a specific [team project state](#Bystate). 
-| $top               | integer                                                  | 100        | Number of team projects to return.
-| $skip              | integer                                                  | 0          | Number of team projects to skip. 
+| stateFilter        | enum {<br/>&nbsp;&nbsp;WellFormed,<br/>&nbsp;&nbsp;CreatePending,<br/>&nbsp;&nbsp;Deleting,<br/>&nbsp;&nbsp;New,<br/>&nbsp;&nbsp;All<br/>}   | WellFormed | Return projects in a specific [project state](#Bystate). 
+| $top               | integer                                                  | 100        | Number of projects to return.
+| $skip              | integer                                                  | 0          | Number of projects to skip. 
 
 [!code-REST [GET__projects_json](./_data/projects/GET__projects.json)]
 
@@ -49,11 +49,11 @@ GET https://{instance}/DefaultCollection/_apis/projects?api-version={version}[&s
 
 | State Name    | Explanation
 |:--------------|:-----------------
-| All           | All team projects regardless of state. 
-| CreatePending | Team project has been queued for creation, but the process has not yet started. 
-| Deleting      | Team project is in the process of being deleted. 
-| New           | Team project is in the process of being created.  
-| WellFormed    | <b>Default: </b>Team project is completely created and ready to use. 
+| All           | All projects regardless of state. 
+| CreatePending | Project has been queued for creation, but the process has not yet started. 
+| Deleting      | Project is in the process of being deleted. 
+| New           | Project is in the process of being created.  
+| WellFormed    | <b>Default: </b>Project is completely created and ready to use. 
 
 [!code-REST [GET__projects__stateFilter-_state__json](./_data/projects/GET__projects__stateFilter-_state_.json)]
 
@@ -66,7 +66,7 @@ GET https://{instance}/DefaultCollection/_apis/projects?api-version={version}[&s
 
 [!code-REST [GET__projects__top-_top___skip-_skip__json](./_data/projects/GET__projects__top-_top___skip-_skip_.json)]
 
-## Get a team project
+## Get a project
 <a id="GetProject"></a>
 <a name="getateamproject" />
 
@@ -78,15 +78,15 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}?api-version={v
 |:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance           | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  |         | Name or ID of the team project.   
+| project            | string  |         | Name or ID of the project.   
 | Query                                                                                                                                                         
 | api-version        | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| includeCapabilites | boolean | `false` | Use `true` to [include capabilities](#withcapabilities) (such as source control) in the team project result.
+| includeCapabilites | boolean | `false` | Use `true` to [include capabilities](#withcapabilities) (such as source control) in the project result.
 | includeHistory     | boolean | `false` | Use `true` to search within renamed projects that had such name in the past. 
 
 ### With capabilities
 <a name="withcapabilities" />
-Get metadata on a team project, including its capabilities.
+Get metadata on a project, including its capabilities.
 
 [!code-REST [GET__projects__projectName__includeCapabilities-true_json](./_data/projects/GET__projects__projectName__includeCapabilities-true.json)]
 
@@ -94,9 +94,9 @@ Get metadata on a team project, including its capabilities.
 
 * [C# (GetProjectDetails method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/ProjectsAndTeams/ProjectsSample.cs#L98)
 
-## Create a team project
+## Create a project
 <a name="createateamproject" />
-Create a team project in a Visual Studio Team Services account. Use the [GetOperation](#GetOperation) to periodically check for create project status.
+Create a project in a Visual Studio Team Services account. Use the [GetOperation](#GetOperation) to periodically check for create project status.
 
 ```no-highlight
 POST https://{instance}/defaultcollection/_apis/projects?api-version={version}
@@ -120,10 +120,10 @@ POST https://{instance}/defaultcollection/_apis/projects?api-version={version}
 
 * [C# (CreateProject method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/ProjectsAndTeams/ProjectsSample.cs#L121)
 
-## Update a team project
+## Update a project
 <a name="updateateamproject" />
 
-Update a team project's description or name. Use the [GetOperation](#GetOperation) to periodically check for update project status.
+Update a project's description or name. Use the [GetOperation](#GetOperation) to periodically check for update project status.
 
 ```no-highlight
 PATCH https://{instance}/defaultcollection/_api/projects/{projectID}?api-version={version}
@@ -148,10 +148,10 @@ Content-Type: application/json
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Request Body
-| name        | string | Name of the team project. 
-| description | string | Description for the team project.
+| name        | string | Name of the project. 
+| description | string | Description for the project.
 
-### Rename a team project
+### Rename a project
 <a id="UpdateName"></a>
 
 [!code-REST [PATCH__projects__projectId__json](./_data/projects/PATCH__projects__projectId_name_.json)]   
@@ -160,7 +160,7 @@ Content-Type: application/json
 
 * [C# (RenameProject method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/ProjectsAndTeams/ProjectsSample.cs#L280)
 
-### Change a team project description
+### Change a project description
 <a id="UpdateDescription"></a>
 
 [!code-REST [PATCH__projects__projectId__json](./_data/projects/PATCH__projects__projectId_description_.json)]    
@@ -192,10 +192,10 @@ GET https://{instance}/defaultcollection/_apis/operations/{operationid}?api-vers
 
 * [C# (WaitForLongRunningOperation method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/ProjectsAndTeams/ProjectsSample.cs#L204)
 
-## Delete a team project
+## Delete a project
 <a id="DeleteProject"></a>
 
-Delete a team project. Use the [GetOperation](#GetOperation) to periodically check for delete project status.
+Delete a project. Use the [GetOperation](#GetOperation) to periodically check for delete project status.
 
 ```no-highlight
 DELETE https://{instance}/defaultcollection/_apis/projects/{id}?api-version={version}
@@ -205,7 +205,7 @@ DELETE https://{instance}/defaultcollection/_apis/projects/{id}?api-version={ver
 |:-----------|:--------:|:---------------------------------------------------
 | URL
 | instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| id         | string | ID for the team project.
+| id         | string | ID for the project.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -224,7 +224,7 @@ DELETE https://fabrikam.visualstudio.com/DefaultCollection/_apis/projects/98dd5d
 <a name="Get project properties"></a>
 
 ## Get project properties
-Get a collection of team project properties.
+Get a collection of project properties.
 
 
 ```no-highlight
@@ -244,26 +244,26 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>projectId</code> | URL | GUID | Required. The team project ID.
+| <code>projectId</code> | URL | GUID | Required. The project ID.
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '4.0-preview' to use this version of the API.
-| <code>keys</code> | Query | array (string) | Optional. A comma-delimited string of team project property names. Wildcard characters ("?" and "*") are supported. If no key is specified, all properties will be returned.
+| <code>keys</code> | Query | array (string) | Optional. A comma-delimited string of project property names. Wildcard characters ("?" and "*") are supported. If no key is specified, all properties will be returned.
 
 #### Response
 
 | Type       | Notes
 |:-----------|:---------
-| VssJsonCollectionWrapper&lt;array ([ProjectProperty](./contracts.md#ProjectProperty))&gt; | A collection of team project properties.
+| VssJsonCollectionWrapper&lt;array ([ProjectProperty](./contracts.md#ProjectProperty))&gt; | A collection of project properties.
 
-### Get all team project properties
+### Get all project properties
 [!code-REST [GET__projects__project__properties.json](../_data/Core/properties/GET__projects__project__properties.json)]
 
-### Get specific team project properties
+### Get specific project properties
 [!code-REST [GET__projects__project__properties_keys-_propertyName_,_wildcard_.json](../_data/Core/properties/GET__projects__project__properties_keys-_propertyName_,_wildcard_.json)]
 
 <a name="Set project properties"></a>
 
 ## Set project properties
-Create, update, and delete team project properties.
+Create, update, and delete project properties.
 
 
 ```no-highlight
@@ -282,12 +282,12 @@ For more details, see section on how to [authorize access to REST APIs](../../ge
 #### Request parameters
 | Name | In  | Type | Notes
 |:--------------|:-----------|:---------|:------------
-| <code>projectId</code> | URL | GUID | Required. The team project ID.
+| <code>projectId</code> | URL | GUID | Required. The project ID.
 | <code>api-version</code> | Query | string | Required. [Version](../../concepts/rest-api-versioning.md) of the API to use.  This should be set to '4.0-preview' to use this version of the API.
 | | Body | [JsonPatchDocument](./contracts.md#JsonPatchDocument) | Required.  A JSON Patch document that represents an array of property operations. See RFC 6902 for more details on JSON Patch. The accepted operation verbs are Add and Remove, where Add is used for both creating and updating properties. The path consists of a forward slash and a property name. Media Type: "application/json-patch+json"
 
-### Create or update a team project property
+### Create or update a project property
 [!code-REST [PATCH__projects__project__properties.json](../_data/Core/properties/PATCH__projects__project__properties.json)]
 
-### Delete a team project property
+### Delete a project property
 [!code-REST [PATCH__projects__project__properties2.json](../_data/Core/properties/PATCH__projects__project__properties2.json)]
