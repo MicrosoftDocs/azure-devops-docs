@@ -62,7 +62,7 @@ You can use the forecast tool to get an idea of how many items you can complete 
 
 To forecast your product backlog, perform the following actions.
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -110,14 +110,14 @@ To forecast your product backlog, perform the following actions.
 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 To forecast your product backlog, perform the following actions.
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page, standard hubs](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	You can only forecast the product backlog of Stories, Backlog items, or Requirements.
 

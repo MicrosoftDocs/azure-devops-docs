@@ -18,7 +18,7 @@ ms.date: 05/10/2017
 [!INCLUDE [temp](../../_shared/version-tfs-2013-2017.md)]
 
 > [!NOTE]  
-> This topic applies to team project customization for the On-premises XML process model using the old form layout. For the new form layout, see [WebLayout and Control elements](weblayout-xml-elements.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
+> This topic applies to project customization for the On-premises XML process model using the old form layout. For the new form layout, see [WebLayout and Control elements](weblayout-xml-elements.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
 If you are designing a work item form from the ground up, you might want to add the control to attach files to the work item. In general, each work item form contains a tab that supports the attachment of files, such as an email thread, a document, an image, a log file, or another type of file.  
   

@@ -41,7 +41,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -72,12 +72,12 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page, standard hubs](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -99,21 +99,21 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 From the **Capacity** page, you can enter the team time off, and set capacity and days off for each member of your team. If your team tracks capacity by activity, then also select the Activity for each team member.  
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
 0. If you don't see your team members listed, add them. Choose the ![](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../scale/multiple-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
-	> ![Add team members, agile hubs](_img/capacity/add-team-members.png) 
+	> ![Add team members](_img/capacity/add-team-members.png) 
 
 0. If you need to add other contributors to your project, choose the ![](../../_img/icons/blue-add-icon.png) **Add user**.  
 
 0. Next, set any time off that the team will take. Choose the **0 days** link as shown.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Add team members, agile hubs](_img/capacity/team-members-added-set-team-days-off.png) 
+	> ![Add team members](_img/capacity/team-members-added-set-team-days-off.png) 
 
 	In the Days off for the entire team dialog, select the start and end days during the sprint that the team will take off. 
 
@@ -135,13 +135,13 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2015"
 0. If you don't see your team members listed, add them. Choose the ![](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../scale/multiple-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
-	> ![Add team members, standard hubs](_img/capacity/add-team-members-standard.png)  
+	> ![Add team members](_img/capacity/add-team-members-standard.png)  
 
 0.  If you need to add other contributors to your project, choose the ![](../_img/icons/add-light-icon.png) **Add user** icon.  
 ::: moniker-end  
@@ -149,7 +149,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 0. Set any time off that the team will take. Choose the **0 days** link as shown.
 
 	> [!div class="mx-imgBorder"]
-	> ![Add team members, standard hubs](_img/capacity/set-team-days-off-standard.png) 
+	> ![Add team members](_img/capacity/set-team-days-off-standard.png) 
 
 	In the Days off for the entire team dialog, select the start and end days during the sprint that the team will take off. 
 
@@ -163,7 +163,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 	For example, Christie Church's capacity is 6 hours/day for design work. 
 	::: moniker range=">= tfs-2017"  
 	> [!div class="mx-imgBorder"]  
-	> ![Set team capacity, standard hubs, TFS 2017 and later versions](_img/capacity/capacity-planning-set-capacity-tfs-15.png)
+	> ![Set team capacity, standard, TFS 2017 and later versions](_img/capacity/capacity-planning-set-capacity-tfs-15.png)
 	::: moniker-end  
 	::: moniker range=">= tfs-2013 <= tfs-2015"  
 	#### TFS 2015.1  
@@ -188,7 +188,7 @@ By copying the capacity from the previous sprint, you save time. With the basics
 
 ::: moniker-end
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -202,7 +202,7 @@ By copying the capacity from the previous sprint, you save time. With the basics
 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 For example, here we choose Sprint 2 and copy the capacity set for Sprint 1. 
 
@@ -234,12 +234,12 @@ To remove a user, choose the option from the users ![](../../_img/icons/actions-
 
 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
 > [!div class="mx-imgBorder"]  
-> ![Remove user from capacity list, agile hubs](_img/capacity/remove-user-agile.png)
+> ![Remove user from capacity list](_img/capacity/remove-user-agile.png)
 
 ::: moniker-end
 
@@ -247,7 +247,7 @@ To remove a user, choose the option from the users ![](../../_img/icons/actions-
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 ::: moniker range=">= tfs-2015"
 ![Capacity planning, Remove a user](_img/capacity/capacity-planning-remove-user.png) 
 ::: moniker-end

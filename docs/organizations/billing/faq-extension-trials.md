@@ -40,16 +40,16 @@ during the trial period. There's no need to assign the feature or extension to y
 automatically. Some partner extensions may also be available to Stakeholders during the trial.
 
 When the trial is over and you've chosen to purchase, you will then be able to 
-[assign the feature or extension to your users](../marketplace/assign-paid-extensions.md) from within the Users hub. 
+[assign the feature or extension to your users](../../marketplace/assign-paid-extensions.md) from within the Users hub. 
 
 ### Q: Who can start a trial?
 
 A: You must be the VSTS [organization owner or project collection administrator](vsts-billing-faq.md#find-owner)
-to start a trial. If you don't have permissions, you can [request the extension](../marketplace/request-vsts-extension.md) instead.
+to start a trial. If you don't have permissions, you can [request the extension](../../marketplace/request-vsts-extension.md) instead.
 
 ### Q: How do I cancel my trial?
 
-A: To stop your trial, just [uninstall the extension](../marketplace/uninstall-disable-vsts-extensions.md) from your VSTS organization.
+A: To stop your trial, just [uninstall the extension](../../marketplace/uninstall-disable-vsts-extensions.md) from your VSTS organization.
 
 <a name="check-trial"></a>
 
@@ -68,7 +68,7 @@ assign Package Management to 11 total users in your organization.
 
 ## Related articles
 
-- [Assign features or extensions to users](../marketplace/assign-paid-extensions.md)
+- [Assign features or extensions to users](../../marketplace/assign-paid-extensions.md)
 - [Buy or change the number of paid users for a feature or extension](../billing/change-number-paid-extension-users.md)
 - [Set up billing](set-up-billing-for-your-organization-vs.md)
 - [Change the Azure subscription for billing](change-azure-subscription.md)

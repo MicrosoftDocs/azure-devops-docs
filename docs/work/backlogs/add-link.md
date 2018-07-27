@@ -78,7 +78,7 @@ When you link work items, you select a link type. In general, use the following 
 - Use the **Duplicate** link type when two work items have been created that essentially capture the same information; close one of the work items and keep the other one active  
 - Use the **Parent/Child** link types when you want to break down work items into smaller items&mdash;for example, break down features into stories, or stories into tasks
 - Use  **Predecessor-Successor** link types when you want to track tasks that must be completed before others can be started; this link type is most often used when you plan work using Project 
-- Use the **Related** link type when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different team projects or managed by different teams.
+- Use the **Related** link type when the work items being linked are at the same level&mdash;such as two user stories that define features that overlap one another&mdash;or to link work items that are defined in different projects or managed by different teams.
 
 
 # [Browser](#tab/browser) 
@@ -102,7 +102,7 @@ To link to multiple work items, you can use inline add which finds work items ba
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](_img/add-link/link-multi-to-existing.png)   
 
-To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can choose the &hellip; context menu to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
+To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, you can choose the &hellip; context menu to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 ::: moniker-end	
 
 ::: moniker range=">= tfs-2018"
@@ -130,7 +130,7 @@ For example, here we use the Related link type to link several items to the user
 
 <img src="_img/add-link-related-existing-item-vs.png" alt="Visual Studio, Add link dialog" style="border: 1px solid #C3C3C3;" />  		
 
-To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different team project, you can click the Browse button to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
+To link to multiple work items, enter their IDs separated by commas or spaces. If you don't know the IDs or you want to link to an item in a different project, you can click the Browse button to open a dialogue that will support you in [choosing work items based on IDs, a query, or title keyword](#find-items). 
 
 You'll need to bulk save the work items you've modified. 
  	
@@ -191,7 +191,7 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 
 	<img src="_img/add-link-choose-linked-work-item-by-title.png" alt="Choose Linked work items" style="border: 1px solid #C3C3C3;" /> 
 
-	If the work items are defined in another team project, then first select the Project. Then, make your selections: 
+	If the work items are defined in another project, then first select the Project. Then, make your selections: 
 
 	-   **Query**. Use this method when you have defined a query that you know contains the set or superset of the work items that you want.   
 	-   **IDs**. Use this method when you know the IDs of the work items that you want to link to. 
@@ -203,7 +203,7 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
   
 6.  Click the **Find** button.
   
-     Only those work items defined for the selected team project and specified work item type are listed. To sort on a column field, choose the column title. 
+     Only those work items defined for the selected project and specified work item type are listed. To sort on a column field, choose the column title. 
 
 	<!--- You can change the display of the work items that are listed by using one of the following user interface controls:  
   

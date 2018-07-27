@@ -1,5 +1,5 @@
 ---
-title: Map a project plan that was previously bound to a team project
+title: Map a project plan that was previously bound to a project
 titleSuffix: TFS 
 description: Specify work items that you want to synchronize using Team Foundation Server & Project Server
 ms.prod: devops
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
-# Map a project plan that was previously bound to a team project
+# Map a project plan that was previously bound to a project
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
@@ -24,23 +24,23 @@ ms.date: 01/12/2017
 > [!IMPORTANT]
 >  Before you can perform the procedures in this topic, you must first configure the integration of the two server products. For more information, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
 >   
->  If you have customized the field-mapping file for Microsoft Project, you may need to customize the field mapping between Project Server and Team Foundation Server. To perform this configuration, you first register the instance of PWA, then you map the instance to a team project collection, and then you upload field mappings. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md).  
+>  If you have customized the field-mapping file for Microsoft Project, you may need to customize the field mapping between Project Server and Team Foundation Server. To perform this configuration, you first register the instance of PWA, then you map the instance to a project collection, and then you upload field mappings. For more information, see [Customize the field mapping](customize-field-mapping-tfs-project-server.md).  
    
   
  **Required Permissions**  
   
  To perform these procedures, you must have the following permissions:  
   
--   To map a project plan to a team project, you must have the **Administer Project Server integration** permission for a team project collection, or you must belong to the **Team Foundation Administrators**  group. Also, the service account for Team Foundation Server must have administrative permissions to the instances of PWA that will participate in data synchronization.  
+-   To map a project plan to a project, you must have the **Administer Project Server integration** permission for a project collection, or you must belong to the **Team Foundation Administrators**  group. Also, the service account for Team Foundation Server must have administrative permissions to the instances of PWA that will participate in data synchronization.  
   
--   To publish and refresh work items in Excel and to set work items to be synchronized, you must be a member of the **Contributors** group for the team project that is mapped in Team Foundation Server.  
+-   To publish and refresh work items in Excel and to set work items to be synchronized, you must be a member of the **Contributors** group for the project that is mapped in Team Foundation Server.  
   
 -   To approve and publish updates, you must be a member of the **Project Manager** group on Project Server.  
   
  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 ##  <a name="capture_ids"></a> Record IDs of Work Items That You Want to Synchronize  
- You must record the IDs of all work items that you will want to synchronize after you map your project plan to the team project. You will use these IDs to perform a later step in the process.  
+ You must record the IDs of all work items that you will want to synchronize after you map your project plan to the project. You will use these IDs to perform a later step in the process.  
   
 #### To record the IDs of work items that you want to synchronize  
   
@@ -72,9 +72,9 @@ ms.date: 01/12/2017
 2.  Save the plan, publish it to Project Server, and then close the plan.  
   
 ##  <a name="map"></a> Map the Project Plan to the Team Project  
- You map your project plan to a team project by using the **TfsAdmin ProjectServer** command-line tool.  
+ You map your project plan to a project by using the **TfsAdmin ProjectServer** command-line tool.  
   
-#### To map an enterprise project plan to a team project  
+#### To map an enterprise project plan to a project  
   
 1.  Open a Command Prompt window where either Visual Studio 2013 or Team Explorer 2013 is installed and enter:  
   
@@ -92,16 +92,16 @@ ms.date: 01/12/2017
   
      Make the following replacements and specifications:  
   
-    -   Replace *tpcUrl* with the URL of the team project collection.  
+    -   Replace *tpcUrl* with the URL of the project collection.  
   
     -   Replace *EnterpriseProjectName* with the name of the enterprise project plan.  
   
-    -   Replace *TeamProjectName* with the name of the team project.  
+    -   Replace *TeamProjectName* with the name of the project.  
   
     -   Replace *ListOfWorkItemTypes* with the names of the types of work items that you want to participate in data synchronization. This list should correspond to the types of work items whose IDs you recorded in the first procedure in this topic, [Record the IDs of Work Items That You Want to Synchronize](#capture_ids).  
   
         > [!IMPORTANT]
-        >  Map all work item types that you want to synchronize with the team project.  
+        >  Map all work item types that you want to synchronize with the project.  
   
     -   (Optional) Specify the **/noFixedWork** argument if you want to prevent fixed-task-type assignments.  
   
@@ -109,9 +109,9 @@ ms.date: 01/12/2017
   
      The following messages appear:  
   
-     **Mapping enterprise project** *EnterpriseProjectName* **to team project** *TeamProjectName*  
+     **Mapping enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*  
   
-     **You have successfully mapped enterprise project** *EnterpriseProjectName* **to team project** *TeamProjectName*  
+     **You have successfully mapped enterprise project** *EnterpriseProjectName* **to project** *TeamProjectName*  
   
 3.  If your project plan is open, close it, and then close Project Professional.  
   
@@ -124,17 +124,17 @@ ms.date: 01/12/2017
   
 2.  In the **Work Items Group**, choose the **New List** button.  
   
-3.  In the **Connect to Team Project** dialog box, choose the name of the server that contains the team project that you have mapped to the project plan.  
+3.  In the **Connect to Team Project** dialog box, choose the name of the server that contains the project that you have mapped to the project plan.  
   
-4.  In the **Select a Team Foundation Server** list, choose the name of the server that contains the team project to which your enterprise project plan is mapped.  
+4.  In the **Select a Team Foundation Server** list, choose the name of the server that contains the project to which your enterprise project plan is mapped.  
   
-5.  Under **Team Project Collections**, choose the name of the project collection that hosts the team project.  
+5.  Under **Team Project Collections**, choose the name of the project collection that hosts the project.  
   
-6.  In the **Team Projects** list, choose the name of the team project that contains the work items that you want, and then choose **OK**.  
+6.  In the **Team Projects** list, choose the name of the project that contains the work items that you want, and then choose **OK**.  
   
 7.  In the **New List** dialog box, choose the **Input List** option button, and then choose the **OK** button.  
   
-     The worksheet data is refreshed and includes the name of the team project and project collection.  
+     The worksheet data is refreshed and includes the name of the project and project collection.  
   
 8.  Choose a cell within the table area, and then, on the **Team** ribbon, choose the **Get Work Items** button.  
   

@@ -1,7 +1,7 @@
 ---
 title: TF30005-The New Team Project Wizard group security component could not connect
 titleSuffix: VSTS & TFS
-description: Occurs when the New Team Project Wizard is unable to connect to the application-tier server {name} while creating a team project.
+description: Occurs when the New Team Project Wizard is unable to connect to the application-tier server {name} while creating a project.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eecc6e96-3c39-4cff-aad4-5ab57582ba2e
@@ -16,7 +16,7 @@ ms.date: 02/22/2017
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
-This error occurs when the New Team Project Wizard is unable to connect to the application-tier server {*name*} while creating a team project. An active connection cannot be made due to one of the following conditions:  
+This error occurs when the New Team Project Wizard is unable to connect to the application-tier server {*name*} while creating a project. An active connection cannot be made due to one of the following conditions:  
   
 -   A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
   
@@ -30,7 +30,7 @@ This error occurs when the New Team Project Wizard is unable to connect to the a
   
 1.  Contact your Team Foundation Server administrator to verify that the server configuration is correct.  
   
-2.  If the server configuration is correct, review the team project creation log and follow any instructions provided.  
+2.  If the server configuration is correct, review the project creation log and follow any instructions provided.  
   
      The log shows each action taken by the wizard at the time of the failure and may include additional details about the error. To open the log:  
   
@@ -51,4 +51,4 @@ This error occurs when the New Team Project Wizard is unable to connect to the a
 3.  If the problem persists, contact your Team Foundation Server administrator.  
     
 ## Related articles
-- [Create a team project](../../../../organizations/projects/create-project.md)
+- [Create a project](../../../../organizations/projects/create-project.md)

@@ -18,7 +18,7 @@ The only required field for all WITs is **Title**. When the work item is saved, 
 	<td><p>Enter a description of 255 characters or less. You can always modify the title later.</p></td></tr>
 <tr>
 	<td><p>[Assigned To](/vsts/work/track/query-by-workflow-changes)</p></td>
-	<td><p>Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the team project.</p></td></tr>
+	<td><p>Assign the work item to the team member responsible for performing the work. Depending on the context you are working in, the drop-down menu will list only team members or contributors to the project.</p></td></tr>
 <tr>
 	<td><p>[State](/vsts/work/track/query-by-workflow-changes)</p></td>
 	<td><p>When the work item is created, the State defaults to the first state in the workflow. As work progresses, update it to reflect the current state.</p></td></tr>

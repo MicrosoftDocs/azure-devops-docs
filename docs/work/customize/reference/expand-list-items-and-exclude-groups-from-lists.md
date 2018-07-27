@@ -14,7 +14,7 @@ ms.date: 05/10/2017
 <b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
+>This topic applies to project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  
 
 You can expand and filter lists by using the `expanditems` and `filteritems` attributes. You can apply these attributes to these list type elements: `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES`.  
   
@@ -51,9 +51,9 @@ To better understand how these attributes are used to populate a field's drop-do
 </ul> 
 </td>
 <td> 
-<p>A team project group that contains the names of three business analyst team members.</p>
+<p>A project group that contains the names of three business analyst team members.</p>
 
-<p>**Note:** Use the literal prefix [Project] instead of using the actual name of the team project.</p>
+<p>**Note:** Use the literal prefix [Project] instead of using the actual name of the project.</p>
 </td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@ To better understand how these attributes are used to populate a field's drop-do
 </ul> 
 </td>
 <td> 
-<p>A team project group that contains one team member, juser, and three subgroups, where each subgroup contains the name of one team member.</p>
+<p>A project group that contains one team member, juser, and three subgroups, where each subgroup contains the name of one team member.</p>
 </td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ To better understand how these attributes are used to populate a field's drop-do
 </ul> 
 </td>
 <td>
-<p>A team project group that contains the names of three team members and one subgroup which contains the names of two team members.</p>
+<p>A project group that contains the names of three team members and one subgroup which contains the names of two team members.</p>
 </td>
 </tr>
 <tr>

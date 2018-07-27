@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Organization management
+  - name: About Organization management
     href: organization-management.md
   - name: Access with Azure AD
     href: access-with-azure-ad.md
@@ -11,7 +11,7 @@
   - name: Create your VSTS organization
     href: create-organization-msa-or-work-student.md
   - name: Try extensions for free
-    href: ../../billing/try-additional-features-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../billing/try-additional-features-vs.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
   - name: Set permissions
     href: ../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json 
   - name: Add a team admin
@@ -139,7 +139,7 @@
   - name: "Security & Identity"
     href: ../../organizations/security/index.md
   - name: Billing
-    href: ../../billing/index.md
+    href: ../billing/index.md
   - name: Manage Extensions
     href: ../../marketplace/index.md
   - name: Service hooks

@@ -117,7 +117,7 @@ Learn [how to buy Visual Studio subscriptions](https://docs.microsoft.com/visual
 
 	**Note** If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, 
 	make sure to remove your subscription's default spending limit indefinitely. 
-	[Learn more](../../billing/vsts-billing-faq.md).
+	[Learn more](../billing/vsts-billing-faq.md).
 
 
 ## User access

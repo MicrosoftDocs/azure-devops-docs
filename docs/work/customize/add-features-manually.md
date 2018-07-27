@@ -1,7 +1,7 @@
 ---
 title: Manually add features after an upgrade 
 titleSuffix: TFS
-description: Manually update an existing team project to access new features after upgrading Team Foundation Server  
+description: Manually update an existing project to access new features after upgrading Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 21AB0EE7-FB48-43E6-89EA-EC438C5D4F21
@@ -13,25 +13,25 @@ monikerRange: '>= tfs-2013 <= tfs-2018'
 ms.date: 12/15/2017  
 ---
 
-# Add updates to team projects manually  
+# Add updates to projects manually  
 
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
->This topic applies only to team projects defined on an on-premises Team Foundation Server (TFS). Team projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
+>This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
 >
 >For an overview of customization options, see [Customize your work tracking experience](../customize/customize-work.md)
 
-You can update team projects that were created in earlier versions of Team Foundation Server (TFS) to use new features added with the upgrade to TFS. You should update team projects by using the [Configure Features wizard](configure-features-after-upgrade.md). However, if the wizard is unable to add a feature, you can add it manually.  
+You can update projects that were created in earlier versions of Team Foundation Server (TFS) to use new features added with the upgrade to TFS. You should update projects by using the [Configure Features wizard](configure-features-after-upgrade.md). However, if the wizard is unable to add a feature, you can add it manually.  
 
 > [!NOTE]     
->If you're upgrading a team project that was based on a Microsoft Solutions Framework (MSF) version 4.2 process template, follow the procedures provided in [Update a team project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md). If you have several team projects you need to update, see [apply updates programmatically](configure-features-after-upgrade.md#program-updates).
+>If you're upgrading a project that was based on a Microsoft Solutions Framework (MSF) version 4.2 process template, follow the procedures provided in [Update a project based on a MSF v4.2 process template](reference/update-a-team-project-v4-dot-2-process-template.md). If you have several projects you need to update, see [apply updates programmatically](configure-features-after-upgrade.md#program-updates).
 
 
-## Update a team project 
-Prior to manually adding or editing a work tracking object, first [download the latest process template](#download-latest-pt). You'll use the definition files from the process template that most closely matches your existing team project. 
+## Update a project 
+Prior to manually adding or editing a work tracking object, first [download the latest process template](#download-latest-pt). You'll use the definition files from the process template that most closely matches your existing project. 
 
-Several features, such as Code Review and Feedback, simply require importing WITs from the process template that you download, and updating the Categories and ProcessConfiguration file. Other features, however, may require more extensive changes depending on the customizations you've made to your team project.  
+Several features, such as Code Review and Feedback, simply require importing WITs from the process template that you download, and updating the Categories and ProcessConfiguration file. Other features, however, may require more extensive changes depending on the customizations you've made to your project.  
 
 > [!NOTE]    
 >Follow the links for each step to detail procedures provide later in this topic. 
@@ -124,7 +124,7 @@ Planning Tools
 <ul>
 <li>Add fields that support planning tools to WITs that you include for the Requirement Category, Task Category, and Bug Category  </li>
 <li>Edit the workflow of WITs that you include for the Requirement Category, Task Category, and Bug Category to support any-to-any transitions; add Removed state if not present. <br/>
-If you're upgrading a team project that was based on version 5.0 of the Microsoft Solutions Framework (MSF) Agile process template, follow the procedures provided in [Update the workflow for agile team projects](reference/update-the-workflow-for-agile-team-projects.md).  </li>
+If you're upgrading a project that was based on version 5.0 of the Microsoft Solutions Framework (MSF) Agile process template, follow the procedures provided in [Update the workflow for agile projects](reference/update-the-workflow-for-agile-team-projects.md).  </li>
 </ul>
 </li>
 <li>[Update Categories](#update-categories): 
@@ -266,7 +266,7 @@ Bug Behavior
 
 ## Get the latest version of the most compatible process template  
 
-The quickest way to make many of these updates is to copy definition files from the latest process template and import them to your team project.   
+The quickest way to make many of these updates is to copy definition files from the latest process template and import them to your project.   
 
 1.	Open the same version of Visual Studio or Team Explorer as the on-premises TFS that you connect to. Fvisualstudio.microsoft.comonnect to a TFS 2015 instance, you must connect from Visual Studio 2015 or Team Explorer 2015.  
 	You can always download a free version of Team Explorer from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
@@ -277,7 +277,7 @@ The quickest way to make many of these updates is to copy definition files from 
 
 	 ![Open Process Template Manager](../work-items/guidance/_img/open-process-template-manager.png)
 
-	You'll see a list of each process template that has been uploaded to the team project collection.  
+	You'll see a list of each process template that has been uploaded to the project collection.  
 
 	 ![Select process template to work with](../work-items/guidance/_img/process-template-manager.png)
 
@@ -285,9 +285,9 @@ The quickest way to make many of these updates is to copy definition files from 
  
 3.	Download the process template to a local computer, select a folder where the process template will be downloaded. 
 visualstudio.microsoft.com
-	Choose the process that corresponds to the one you used previously to create your team project. For example, if you're updating a team project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). 
+	Choose the process that corresponds to the one you used previously to create your project. For example, if you're updating a project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). 
  
-You can determine which process template to select based on the [work item types defined for your existing team project](../work-items/guidance/manage-process-templates.md#wit_correlation).
+You can determine which process template to select based on the [work item types defined for your existing project](../work-items/guidance/manage-process-templates.md#wit_correlation).
 
 To learn more about managing process templates, see, [Upload or download a process template](../work-items/guidance/manage-process-templates.md).
 
@@ -301,7 +301,7 @@ To learn more about managing process templates, see, [Upload or download a proce
 
 	```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
 
-		For *CollectionURL* specify the URL of a team project collection and for *ProjectName* specify the name of a team project defined within the collection. You must specify the URL in the following format: ```http://ServerName:Port/VirtualDirectoryName/CollectionName```.  
+		For *CollectionURL* specify the URL of a project collection and for *ProjectName* specify the name of a project defined within the collection. You must specify the URL in the following format: ```http://ServerName:Port/VirtualDirectoryName/CollectionName```.  
 
 		For *DirectoryPath*, specify the path to the ```WorkItem Tracking/TypeDefinitions``` folder that holds the process template that you downloaded. The directory path must follow this structure: ```Drive:\TemplateFolder\WorkItem Tracking\TypeDefinitions```.
 
@@ -325,7 +325,7 @@ Depending on the customizations that you've made and the features you want to en
 
 	```witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName [/f:FileName]```
 
-2.	Make the updates required to support your team project and add new features.  
+2.	Make the updates required to support your project and add new features.  
 	
 	Here's a checklist of updates to make:
 	<table>
@@ -439,7 +439,7 @@ Depending on the customizations that you've made and the features you want to en
 
 	If you don't have a categories file, then copy the one from a default process template. Categories were introduced with TFS 2012 to more easily manage multiple work item types (WITs) as a group. 
 
-2.	Make the updates required to support your team project and add new features. 
+2.	Make the updates required to support your project and add new features. 
 	Here's a checklist of categories to import to add or verify to support new features:   
 
 	-	**Code Review**: Code Review Request Category and Code Review Response Category
@@ -478,7 +478,7 @@ Agile planning tools and Portfolio Backlogs depend on the WITs, categories, and 
 
 <p>If you don't have a ProcessConfiguration file, then copy the one from a default process template. ProcessConfiguration was introduced with TFS 2013 and replaced the CommonConfiguration and AgileConfiguration files.</p>
 </li>
-<li>Make the updates required to support your team project and add new features. If you've customized the workflow for WITs defined in the Requirement, Task, Bug, Epic, or Feature categories, review [Process configuration, Map workflow states to metastates](reference/process-configuration-xml-element.md#map).  <br/>
+<li>Make the updates required to support your project and add new features. If you've customized the workflow for WITs defined in the Requirement, Task, Bug, Epic, or Feature categories, review [Process configuration, Map workflow states to metastates](reference/process-configuration-xml-element.md#map).  <br/>
 
 <p>Here's a checklist of updates to make:</p>
 <table>
@@ -553,7 +553,7 @@ For example:<br/>
 <td>Planning Tools</td>
 <td>```WorkItemColors```</td>
 <td>
-Add primary and secondary HEX colors for each WIT defined for the team project. For example: 
+Add primary and secondary HEX colors for each WIT defined for the project. For example: 
 ```    <WorkItemColor primary="FF009CCC" secondary="FFD6ECF2" name="User Story" />  ```  
 ```    <WorkItemColor primary="FF773B93" secondary="FFEEE2F2" name="Feature" />  ```  
 ```    <WorkItemColor primary="FFFF7B00" secondary="FFFFD7B5" name="Epic" />  ```  
@@ -637,7 +637,7 @@ Migrate existing test plans and suites to work item based test plans and suites.
 After a successful data migration, all test management data should be available for use. For more information about this utility, go here.
 
 ## Review and verify access to new features
-After you update your team project manually, you have access to the latest features. However, you still might want to make some additional configurations or customizations to support your work tracking needs. 
+After you update your project manually, you have access to the latest features. However, you still might want to make some additional configurations or customizations to support your work tracking needs. 
 
 See [Additional configuration options](additional-configuration-options.md) for information on how to verify or activate each feature. 
 

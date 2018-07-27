@@ -1,7 +1,7 @@
 ---
 title: TF24023-Team Foundation Server configuration failure
 titleSuffix: VSTS & TFS
-description: Occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server while creating a team project 
+description: Occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server while creating a project 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 83546f98-1ca6-4b07-afe5-134df7f291bf
@@ -16,7 +16,7 @@ ms.date: 02/22/2017
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
-This error occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server {*name*} while creating a team project. Possible causes of this error include:  
+This error occurs when the New Team Project Wizard is unable to connect to the Team Foundation Server {*name*} while creating a project. Possible causes of this error include:  
   
 -   A server in the Team Foundation deployment is incorrectly configured. This problem is especially common after a server move, failover, or other maintenance activity.  
   
@@ -34,7 +34,7 @@ This error occurs when the New Team Project Wizard is unable to connect to the T
   
 3.  Contact the administrator for the Team Foundation Server {*name*} to confirm the availability of the server on the network.  
   
-4.  If the server is available on the network, review the team project creation log, and follow any instructions provided.  
+4.  If the server is available on the network, review the project creation log, and follow any instructions provided.  
   
      The log shows each action taken by the wizard at the time of the failure and may include additional details about the error. To open the log:  
   
@@ -55,4 +55,4 @@ This error occurs when the New Team Project Wizard is unable to connect to the T
 5.  If the problem persists, contact your Team Foundation Server administrator.  
     
 ## Related articles
-- [Create a team project](../../../../organizations/projects/create-project.md) 
+- [Create a project](../../../../organizations/projects/create-project.md) 

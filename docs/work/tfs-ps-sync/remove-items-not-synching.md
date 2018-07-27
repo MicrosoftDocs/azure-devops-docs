@@ -16,7 +16,7 @@ ms.date: 01/12/2017
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
-When you delete a task from Microsoft Project Professional that has been synchronized with a work item in Team Foundation, you remove the association between the task and the work item. This removal occurs after you publish the plan to Microsoft Project Server and the synchronization process completes to update the changes. However, the synchronization process does not delete the corresponding work item from the team project. Work items remain stored in the database for Team Foundation. Team members can set the state of the work item to Closed.  
+When you delete a task from Microsoft Project Professional that has been synchronized with a work item in Team Foundation, you remove the association between the task and the work item. This removal occurs after you publish the plan to Microsoft Project Server and the synchronization process completes to update the changes. However, the synchronization process does not delete the corresponding work item from the project. Work items remain stored in the database for Team Foundation. Team members can set the state of the work item to Closed.  
   
  If you want to completely remove from Team Foundation work items whose tasks have been deleted from Project, you can use the **witadmin destroywi** command. For more information, see [Remove work items permanently](../../work/backlogs/remove-delete-work-items.md).  
   

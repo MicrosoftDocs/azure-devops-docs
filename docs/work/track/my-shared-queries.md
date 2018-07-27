@@ -30,7 +30,7 @@ Otherwise, you can use the Query Editor to craft simple or more complex queries 
 *	[List showing dependencies using a direct links query](using-queries.md#directs-link-query) 
 
 
-Managed queries are useful for monitoring progress. All team projects created with a default process come with a defined set of managed queries. Here are a few of the ways that you can use managed queries...
+Managed queries are useful for monitoring progress. All projects created with a default process come with a defined set of managed queries. Here are a few of the ways that you can use managed queries...
 
 **Teams**
 
@@ -57,7 +57,7 @@ Here are some of the tools you can use to manage queries:
 
 
 ### General guidance 
-- Create a new folder under the Shared Queries folder for each new team added to a team project 
+- Create a new folder under the Shared Queries folder for each new team added to a project 
 
 
 

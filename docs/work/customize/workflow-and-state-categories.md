@@ -93,9 +93,9 @@ Here's how the default, inherited states map to the state categories for all thr
 <a id="add-state-vs-kanban-column" />
 ## When to add a State versus a Kanban column
 
-Both States and Kanban columns are used to track the status of work. Workflow states are shared across a team project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  
+Both States and Kanban columns are used to track the status of work. Workflow states are shared across a project while Kanban columns are shared within a team. Only project collection admins can add custom states, while team admins can add Kanban columns.  
 
-Add custom states when you want all teams to track the status according to the business workflow adopted by the organization. By customizing the process, you automatically customize the team projects and WITs that reference that process. 
+Add custom states when you want all teams to track the status according to the business workflow adopted by the organization. By customizing the process, you automatically customize the projects and WITs that reference that process. 
 
 Also, by adding custom states to support those workflow states that several teams want to track, you avoid the confusion that can arise when team's create a query based on a Kanban column. Because each team can customize the Kanban board columns and swimlanes, the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path. Another work around is to formalize the columns by adding custom states which can be shared across teams. 
 
