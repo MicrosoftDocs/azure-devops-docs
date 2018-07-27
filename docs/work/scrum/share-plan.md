@@ -35,7 +35,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ## Open a Sprint backlog for a team 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -64,12 +64,12 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page, standard hubs](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -89,7 +89,7 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 
 ## Create query of your sprint plan 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -101,12 +101,12 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 0. To email your sprint plan, create and save the query for the sprint backlog. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose create query from sprint backlog, agile hubs](_img/share-plan/create-query-agile.png) 
+	> ![Choose create query from sprint backlog](_img/share-plan/create-query-agile.png) 
 
 0.  Then, open the query and choose the email icon. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Email created query from sprint backlog, agile hubs](_img/share-plan/email-query-agile.png) 
+	> ![Email created query from sprint backlog](_img/share-plan/email-query-agile.png) 
 
 0.  In the form that appears, enter the name(s) of valid users (ones who have access to the project). 
  
@@ -119,14 +119,14 @@ Any stakeholder on your team (someone with permissions to connect to your projec
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 
 0. (Optional) To choose which columns should display and in what order, choose **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 0. To email the sprint plan, create and save the query for the sprint backlog. 
 
-	![Share plan, standard hubs](_img/share-plan/create-query-standard.png)
+	![Share plan](_img/share-plan/create-query-standard.png)
 
 0.	Then, open the query and choose the email icon. 
 

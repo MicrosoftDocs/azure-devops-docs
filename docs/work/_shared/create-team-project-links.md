@@ -3,9 +3,9 @@ ms.topic: include
 ---
 
 
-Before you start tracking work, you must have a team project. To create one hosted in the cloud, see [Sign up for VSTS](/vsts/user-guide/sign-up-invite-teammates). To create one hosted on an on-premises TFS, see [Create a team project](/vsts/organizations/projects/create-project).   
+Before you start tracking work, you must have a project. To create one hosted in the cloud, see [Sign up for VSTS](/vsts/user-guide/sign-up-invite-teammates). To create one hosted on an on-premises TFS, see [Create a project](/vsts/organizations/projects/create-project).   
 
-If you have a team project, start tracking work:  
+If you have a project, start tracking work:  
 
 -   [Add work items to manage a project](/vsts/work/backlogs/add-work-items) - to gain more familiarity with the work item form features  
 -   [Create a backlog](/vsts/work/backlogs/create-your-backlog) - to develop your product backlog   

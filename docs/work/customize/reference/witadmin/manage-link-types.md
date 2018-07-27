@@ -16,9 +16,9 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../../../_shared/customization-witadmin-plus-version-header.md)]
 
-Similar to work item types, you can define and modify custom link types. However, you can't make any changes to system-defined link types. Before you add a new link type to your team project collection, review the link types available for your use. See [Manage dependencies, link work items](../../../track/link-work-items-support-traceability.md).  
+Similar to work item types, you can define and modify custom link types. However, you can't make any changes to system-defined link types. Before you add a new link type to your project collection, review the link types available for your use. See [Manage dependencies, link work items](../../../track/link-work-items-support-traceability.md).  
   
-You manage the link types defined for a team project collection by using the following **witadmin** commands:  
+You manage the link types defined for a project collection by using the following **witadmin** commands:  
 -   **deactivatelinktype**:  Deactivates the specified link type. Users will no longer be able to create links of this type. Existing links of this type will continue to function correctly.    
 -   **deletelinktype**:  Permanently removes the specified link type from the database. All links defined with this link type are also removed.    
 -   **exportlinktype**:  Exports the definitions of link types. You can export the definition of a single link type or all link types defined for the server. 
@@ -30,15 +30,15 @@ You manage the link types defined for a team project collection by using the fol
 
  **Requirements**  
   
- For the team project collection where the link types are defined, you must have the following permissions set:  
+ For the project collection where the link types are defined, you must have the following permissions set:  
   
--   To list or export link types, you must have your **View project-level information** permission for a team project in the collection set to **Allow**.    
+-   To list or export link types, you must have your **View project-level information** permission for a project in the collection set to **Allow**.    
 -   To delete, import, or reactive link types, you must be a member of the **Project Collection Administrators** security group or have your **Manage work item link types** permission set to **Allow**.  
   
 For more information, see [Add an administrator](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]
->  Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**.  For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**.  For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ## Syntax  
   
@@ -55,7 +55,7 @@ witadmin reactivatelinktype /collection:CollectionURL /n:LinkName
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*. |  
+|**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*. |  
 |**/n:** `LinkName`|The name or the reference name of the link type to deactivate or delete.|  
 |**/f:** `FileName`|The XML file of link types. Required for import, optional for export. If you omit this parameter, the command output appears on the display.|  
 |**/e:** `encoding`|The name of a .NET Framework 2.0 encoding format. The specified encoding will be used to export or import the XML data. For example, `/e:utf-7` specifies Unicode (UTF-7) encoding. If you omit this parameter, **witadmin** attempts to detect the encoding, and if detection fails, **witadmin** uses UTF-8.|  
@@ -70,7 +70,7 @@ For the structure of the link type definition schema or information about how yo
 ## Examples  
  Unless otherwise specified, the following values apply in each example:  
   
--   URI for the team project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
+-   URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
 -   Server name: AdventureWorksServer    
 -   Input or output file name: myLinkTypes.xml    
 -   Link type name: mylinktype    

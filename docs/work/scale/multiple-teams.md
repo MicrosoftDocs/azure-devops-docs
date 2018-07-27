@@ -50,9 +50,9 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../organizations/projects/create-project.md)-->.
+1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the project. If you don't have a project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md)<!---or set one up in an [on-premises TFS](../../organizations/projects/create-project.md)-->.
 
-	<img src="_img/add-teams-open-admin-context-tfs-2017.png" alt="Open team project admin page" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/add-teams-open-admin-context-tfs-2017.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**.
 
@@ -62,7 +62,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 3. Select the team from the Overview tab to configure it. 
 
-	<img src="_img/add-teams-select-team-tfs-2017.png" alt="Web portal, team project admin context, Overview page, Select a team to configure it" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/add-teams-select-team-tfs-2017.png" alt="Web portal, project admin context, Overview page, Select a team to configure it" style="border: 2px solid #C3C3C3;" />
 
 4. To select the set of sprints the team will use, open the **Work>Iterations** page for the team. See [Set team defaults, Select team sprints and default iteration path](../../organizations/settings/set-team-defaults.md#activate).
 
@@ -72,9 +72,9 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 #### TFS 2015, TFS 2013 
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the team project.  
+1. From the web portal, click the ![gear settings icon](../_img/icons/gear_icon.png) icon to open the administration page for the project.  
 
-	<img src="../user-guide/_img/ALM_CAL_OpenAdminPage.png" alt="Open team project admin page" style="border: 2px solid #C3C3C3;" />
+	<img src="../user-guide/_img/ALM_CAL_OpenAdminPage.png" alt="Open project admin page" style="border: 2px solid #C3C3C3;" />
 
 2. Create a new team. Give the team a name, and make sure to select **Create an area path with the name of the team**. 
 
@@ -84,7 +84,7 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 3. Select the team from the Overview tab to configure it.  
 
-	<img src="_img/scale-agile-select-team-to-configure-it-co.png" alt="Web portal, admin context, team project, Overview page, Select a sub-team to configure it" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/scale-agile-select-team-to-configure-it-co.png" alt="Web portal, admin context, project, Overview page, Select a sub-team to configure it" style="border: 2px solid #C3C3C3;" />
 
 4. To select the set of sprints the team will use, open the **Iterations** page for the team. See [Set team defaults, Select team sprints and default iteration path](../../organizations/settings/set-team-defaults.md#activate).  
 
@@ -95,12 +95,12 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 <a id="add-team-members"> </a>  
 
 ## Add team members
-If you're moving from one team to two teams, team members already have access to the team project. If you're setting up a team structure for the first time, adding user accounts as team members provides them access to the team project and team assets. Access to the team project is required to support sharing code and planning and tracking work. 
+If you're moving from one team to two teams, team members already have access to the project. If you're setting up a team structure for the first time, adding user accounts as team members provides them access to the project and team assets. Access to the project is required to support sharing code and planning and tracking work. 
 
 Several Agile tools, like capacity planning and team alerts, and dashboard widgets are team-scoped. That is, they automatically reference the user accounts of team members to support planning activities or sending alerts. 
 
 > [!NOTE]   
-> If you use VSTS, you must first [add user accounts to the team project](../../organizations/accounts/add-organization-users-from-user-hub.md) or [setup your account to work with Azure AD](../../organizations/accounts/access-with-azure-ad.md). This way user accounts will be available to add to a team.
+> If you use VSTS, you must first [add user accounts to the project](../../organizations/accounts/add-organization-users-from-user-hub.md) or [setup your account to work with Azure AD](../../organizations/accounts/access-with-azure-ad.md). This way user accounts will be available to add to a team.
 >
 >For TFS, the first time you add an account you must enter the full domain name and the alias. Afterwards, you can browse for that name by display name as well as account name. To learn more, see [Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups).
 
@@ -138,7 +138,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
 
 1. From the Overview tab for your team, add a user account.  
 
-	<img src="_img/scale-agile-add-team-account.png" alt="Web portal, admin context, team project, Overview page, Add a Windows user or group account" style="border: 1px solid #C3C3C3;" /> 
+	<img src="_img/scale-agile-add-team-account.png" alt="Web portal, admin context, project, Overview page, Add a Windows user or group account" style="border: 1px solid #C3C3C3;" /> 
 
 2. Enter the sign-in addresses or display name for each account you want to add. Add them one at a time or all at the same time. 
 
@@ -151,7 +151,7 @@ Several Agile tools, like capacity planning and team alerts, and dashboard widge
  
 3. Now these users are members of the Email team. You can always return to this page to add or remove members.  
 
-	<img src="_img/agile-scale-manage-team-members.png" alt="Web portal, admin context, team project, Overview page, Manage team members" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/agile-scale-manage-team-members.png" alt="Web portal, admin context, project, Overview page, Manage team members" style="border: 2px solid #C3C3C3;" />
 
 4. To add an account as a team administrator, click **Add** located in the Team Profile page. For details, see [Configure team settings and add team administrators](manage-team-assets.md).</p>
 
@@ -176,12 +176,12 @@ Now that your two feature teams are configured, you'll want to move existing wor
 
 <a id="include-area-paths"> </a>  
 
-## Configure the default team project  
-One last step in moving from one team to two teams requires configuring the default team project to exclude sub-areas.  
+## Configure the default project  
+One last step in moving from one team to two teams requires configuring the default project to exclude sub-areas.  
 
-1. Open the Areas tab administration page for the team project, and change the setting as shown.  
+1. Open the Areas tab administration page for the project, and change the setting as shown.  
 
-	<img src="_img/multiple-teams-exclude-sub-area-paths.png" alt="Web portal, Admin context, default team project, Exclude work items defined in sub-area paths" style="border: 1px solid #C3C3C3;" /> 
+	<img src="_img/multiple-teams-exclude-sub-area-paths.png" alt="Web portal, Admin context, default project, Exclude work items defined in sub-area paths" style="border: 1px solid #C3C3C3;" /> 
 
 2.	Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam\Account Management area path.  
 
@@ -189,11 +189,11 @@ One last step in moving from one team to two teams requires configuring the defa
 
 ## Delete a team 
 
-1. To delete a team, open the team project admin context, open the &hellip; context menu for the team you want to delete, and choose the **Delete** option.   
+1. To delete a team, open the project admin context, open the &hellip; context menu for the team you want to delete, and choose the **Delete** option.   
 
-	<img src="_img/multiple-teams-delete-team.png" alt="Web portal, admin context-team project level, Delete team" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/multiple-teams-delete-team.png" alt="Web portal, admin context-project level, Delete team" style="border: 1px solid #C3C3C3;" />  
 
-	You must be a member of the Project Administrators group or be [granted explicit permissions to edit project information](../../organizations/security/set-project-collection-level-permissions.md)to delete a team project. 
+	You must be a member of the Project Administrators group or be [granted explicit permissions to edit project information](../../organizations/security/set-project-collection-level-permissions.md)to delete a project. 
  
 	> [!IMPORTANT]   
 	>Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
@@ -215,7 +215,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).
  
-By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and  [collaborate on a Git team project](../../git/gitquickstart.md) or  [check in work to the team's code base](../../tfvc/check-your-work-team-codebase.md). 
+By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and  [collaborate on a Git project](../../git/gitquickstart.md) or  [check in work to the team's code base](../../tfvc/check-your-work-team-codebase.md). 
 
 ![Default permissions assigned to team contributors](_img/default-permissions-assigned-to-team-contributors.png)  
 

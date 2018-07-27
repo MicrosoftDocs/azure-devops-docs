@@ -102,7 +102,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Hold deployments until gates succeed consistently</td><td>*2019*</td></tr>
         <tr><td>Get started with pre-installed Package Management</td><td>N/A</td></tr>
         <tr><td>Connect or disconnect Azure Active Directory as a Project Collection Admin</td><td>N/A</td></tr>
-        <tr><td>Public projects available in preview for all accounts</td><td>N/A</td></tr>
+        <tr><td>Public projects available in preview for all organizations</td><td>N/A</td></tr>
         <tr><td>Adopt the word "organization" when referring to a collection of projects in VSTS</td><td>N/A</td></tr>
         <tr>
             <td rowspan="17">[19 June 2018](2018/jun-19-vsts.md)</td>

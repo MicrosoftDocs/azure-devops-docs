@@ -16,7 +16,7 @@ ms.date: 07/12/2018
 
 [!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
 
-You can permanently remove one or more work items from the on-premises Team Foundation database for a team project collection by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Permanently removed work items are removed from the database and cannot be restored nor reactivated.  
+You can permanently remove one or more work items from the on-premises Team Foundation database for a project collection by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Permanently removed work items are removed from the database and cannot be restored nor reactivated.  
   
  Each work item represents an object that is stored in the Team Foundation database and that is assigned a unique identifier, which is referred to as a work item ID. Work item IDs are unique within a project collection.  
   
@@ -26,10 +26,10 @@ You can permanently remove one or more work items from the on-premises Team Foun
   
  **Requirements**  
   
--   You must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the team project collection. See [Add administrators, set permissions at the project-level or project collection-level](../../../../organizations/security/set-project-collection-level-permissions.md).  
+-   You must be a member of the **Team Foundation Administrators** security group or the **Project Administrators** security group for the project collection. See [Add administrators, set permissions at the project-level or project collection-level](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]
->  Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the shortcut menu for **Command Prompt**, and choose **Run as Administrator**. For more information, see the [Microsoft Web site](http://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ## Syntax  
   
@@ -46,7 +46,7 @@ witadmin destroywi /collection:CollectionURL /id:id [/noprompt]
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
+|**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/id**:`id`|The ID of a work item to destroy. To specify multiple work items, separate IDs using only commas, without whitespace.|  
 |**/noprompt**|Disables the prompt for confirmation.|  
 |**/?** or **help**|Displays help about the command in the Command Prompt window.|  

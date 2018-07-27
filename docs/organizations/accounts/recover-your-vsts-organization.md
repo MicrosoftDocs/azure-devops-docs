@@ -44,7 +44,7 @@ After 30 days, your organization and data are permanently deleted.
 
 4.  After you restore your organization:
 
-    *	If billing was set up for your organization, you'll have to set it up again. Just [relink your organization](../../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
+    *	If billing was set up for your organization, you'll have to set it up again. Just [relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
 
     *   If your organization was connected to Azure AD for authenticating user access, you won't have to reconnect it again.
 
