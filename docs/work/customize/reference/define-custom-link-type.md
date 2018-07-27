@@ -17,11 +17,11 @@ ms.date: 02/10/2017
 [!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
->This topic applies to team project customization for On-premises XML process models. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
+>This topic applies to project customization for On-premises XML process models. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models, see [Customize your work tracking experience](../customize-work.md). 
 
 You can customize an existing link type or create a link type to meet your project tracking requirements. You use a link type to define the link labels, topology type, and restrictions that are used when creating relationships between work items.  You can customize an existing link type or create a link type to meet your project tracking requirements.  
 
-Before you start to add or modify a link type, you should assess the link types available and how they are used in your team project. See [Manage dependencies, link work items](../../track/link-work-items-support-traceability.md).  
+Before you start to add or modify a link type, you should assess the link types available and how they are used in your project. See [Manage dependencies, link work items](../../track/link-work-items-support-traceability.md).  
   
 > [!NOTE]  
 >  You cannot customize the system-defined link types that correspond to the Related, Parent-Child, and Successor-Predecessor links.  
@@ -32,7 +32,7 @@ You may want to modify or create a link type for one of the following reasons:
 -   Add a link type to track a particular relationship that is unique to your team's process.  
   
 
-The link type is specified in a type definition XML file that you import to a team project collection. See [LinkTypes](link-type-element-reference.md).  
+The link type is specified in a type definition XML file that you import to a project collection. See [LinkTypes](link-type-element-reference.md).  
   
 With the `witadmin` command-line utility, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](witadmin/manage-link-types.md).  
   

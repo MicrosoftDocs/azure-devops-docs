@@ -25,7 +25,7 @@ Use bulk modify when you need to quickly make the same change to a number of wor
 > To add work items in bulk or update multiple fields with different values, use [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). You can't perform a bulk add of work items through the web portal.   
 
 
-With bulk modify, you can edit fields, add or remove tags, reassign work, or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other team projects. The options available to you depend on the platform you work from and the permissions you've been granted.
+With bulk modify, you can edit fields, add or remove tags, reassign work, or move work to a specific sprint. You can also use bulk modify to change the work item type or move work items to other projects. The options available to you depend on the platform you work from and the permissions you've been granted.
 
 In this topic you'll learn:  
 
@@ -55,7 +55,7 @@ All of the following actions can be performed by team members that belong to the
 > [!div class="mx-tdBreakAll"]  
 > |Multi-select work items|Bulk edit/update/delete|Copy, clone, change type,<br/>move, or email work items|  
 > |-------------|----------|---------|  
-> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select)<br/><br/>**Link work items**<hr/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)<br/>- [New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup>|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Add/remove tags](#tags)<br/>- [Update from template](work-item-template.md)<sup>1</sup><br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../track/share-plans.md)<br/>- [Change work item type](remove-delete-work-items.md#change-type)<sup>1</sup><br/>- [Move items to another team project](remove-delete-work-items.md#move)<sup>1, 3</sup>|                
+> |- [Multi-select-query results](#multi-select)<br/>- [Multi-select-backlog](#multi-select)<br/><br/>**Link work items**<hr/>- [Link to a new item](add-link.md#link)<br/>- [Link to an existing item](add-link.md#link)<br/>- [New branch](connect-work-items-to-git-dev-ops.md)<sup>1</sup>|- [Edit field(s)](#edit)<br/>- [Assign to](#assign-to)<br/>- [Move to iteration](#move-iteration)<br/>- [Change position](create-your-backlog.md#move-items-priority-order)<br/>- [Change parent](organize-backlog.md#reparent)<br/>- [Add/remove tags](#tags)<br/>- [Update from template](work-item-template.md)<sup>1</sup><br/>- [Delete](remove-delete-work-items.md#delete) <sup>1</sup>|- [Clone or copy a single item](copy-clone-work-items.md#copy-clone) <sup>2</sup><br/>- [Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)<br/>- [Email selected item(s)](../track/share-plans.md)<br/>- [Change work item type](remove-delete-work-items.md#change-type)<sup>1</sup><br/>- [Move items to another project](remove-delete-work-items.md#move)<sup>1, 3</sup>|                
 
 
 **Notes:**  
@@ -262,14 +262,14 @@ Bulk update of work items to add or remove tags from the web portal requires TFS
 
 ## Related articles
 
-To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your team project.  
+To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your project.  
 
  
 ### Migrate or change a large number of work items 
 
 For large scale, organizational moves, use the REST API calls for [Work item batch operations](https://visualstudio.microsoft.com/en-us/docs/integrate/api/wit/batch). 
 
-At this time, you can't move work items to a different account or collection. You can only migrate work item information by exporting and then importing them using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+At this time, you can't move work items to a different organization or collection. You can only migrate work item information by exporting and then importing them using [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
 ### Add multiple values to a field  
 If you have implemented a [custom control that supports multiple values](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-extensions-multivalue-control), you can use Excel to bulk edit the field, but you can't modify it using the web portal. In the web portal, you can only select a single value for the field.   

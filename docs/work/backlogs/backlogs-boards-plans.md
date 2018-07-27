@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
-ms.date: 03/20/2018
+ms.date: 07/25/2018
 ---
 
 ::: moniker range=">= tfs-2017"
@@ -49,22 +49,78 @@ Which view should you use to work with Agile methods?
 -  Each backlog and board is configurable for each team.  
 ::: moniker-end
 
-<!---
-Delivery Plans are available for VSTS and TFS 2017.2 and later versions. You access them by [installing the Marketplace Plans extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans)
--->
 
 With list backlogs you can quickly develop your project plan; group and prioritize work; and perform bulk updates on selected work items. With boards, you can quickly update status and fields displayed for each work item. 
 ::: moniker range=">= tfs-2017"
 And with plans, you can monitor progress, deliverables, and dependencies across several teams.  
 ::: moniker-end
-You access your backlogs and boards from the **Work** hub. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [Get started with Agile project management](overview.md).
+
+
+You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [Get started with Agile project management](overview.md).
+
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"
+
+0. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
+
+	![Open Work, Backlogs, for a team](../scrum/_img/assign-items-sprint/open-work-backlogs-agile.png)
+
+	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](../scrum/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
+
+	> [!TIP]    
+	> Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+
+0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../scrum/_img/assign-items-sprint/select-product-backlog-agile.png) 
+
+0. (Optional) To choose which columns should display and in what order, choose the ![](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Column Options](../scrum/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+
+[!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
+
+::: moniker-end
+
+
+# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
-<img src="_img/plan-intro.png" alt="Work hub, product backlog page" style="border: 1px solid #C3C3C3;" />  
+
+From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
+
+> [!div class="mx-imgBorder"]
+> ![Open the Work>Backlogs page](../scrum/_img/assign-items-sprint/open-work-backlogs-standard.png) 
+
+To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
+
+> [!div class="mx-imgBorder"]  
+> ![Choose another team](../scrum/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+	
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Work hub, backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+
+From your web browser, open your team's product backlog. Select **Work>Backlogs**. 
+
+![Work>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+
 ::: moniker-end
+
+---
+
 
 ## Three classes of backlogs, two types of boards  
 
@@ -250,7 +306,7 @@ On your [backlog](create-your-backlog.md), set **In progress items** to **Show**
 
 ::: moniker range=">= tfs-2017"  
 <a id="plans">  </a>
-## Review team deliverables using Delivery Plans   
+## Delivery plans display team deliverables  
 
 With Delivery Plans, you gain  tailor-made views across several teams and their development backlogs&mdash;stories, features, or epics.  You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule. All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.   
 

@@ -35,7 +35,7 @@ The SAFe big picture addresses how a portfolio vision is met by a hierarchy of t
 
 Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any team project hosted on Visual Studio Team Services (VSTS) or an on-premises TFS.
+Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Visual Studio Team Services (VSTS) or an on-premises TFS.
 
 ![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
 
@@ -147,7 +147,7 @@ In this section, we'll go from having one project, named "Fabrikam" and one team
 
 ![Hierarchical areas support 3 levels of 9 teams](_img/safe-config-teams.png) 
 
-Each team project has a default team. You can configure additional teams for program-level and feature team-level work. And, you can also redefine the default team as the portfolio team that manages epics.  
+Each project has a default team. You can configure additional teams for program-level and feature team-level work. And, you can also redefine the default team as the portfolio team that manages epics.  
 
 In this way, all teams can manage their own workload and priorities while clearly understanding how their work supports those epics managed in the portfolio team's backlog. At the same time, the portfolio team can monitor progress of its backlog on their own Kanban board, prioritize the items on their backlog, and view progress across release trains.
 
@@ -158,7 +158,7 @@ You'll need to be a [member of the Project Administrators group](../../organizat
 
 ###Create areas to support your team hierarchy
 
-1.  Connect to the team project you want to configure to support SAFe, and use the gear icon ![Settings icon](../_img/icons/gear_icon.png) to open the administration page for the default team.  
+1.  Connect to the project you want to configure to support SAFe, and use the gear icon ![Settings icon](../_img/icons/gear_icon.png) to open the administration page for the default team.  
 2.  On the **Areas** page, create a child under the top-level area path and name it to correspond to one of the program teams you'll create.
 
 	![Create child area](_img/safe-add-area-path.png)  
@@ -194,7 +194,7 @@ If you need more-detailed guidance, see [Portfolio management](portfolio-managem
 You'll need to be a [project administrator](../../organizations/security/add-users-team-project.md) to perform these steps. 
 ####Create and configure each Program team
 
-1. From the Overview page for the team project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  
+1. From the Overview page for the project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  
 
 	![Create team](_img/safe-create-team.png)  
 
@@ -244,7 +244,7 @@ Next, we'll create some feature teams to get work done at the third level of the
 ####Configure the Portfolio team
 Now that your sub-team structure is configured, we reconfigure the default team to act as the Portfolio team. While this team will continue to have the name of the project, the changes you make to this top-level team will help ensure that it effectively tracks epics across PIs at the highest level.  
 
-1. On the Areas page for the team project, change the settings so that sub-areas are not included. Make sure you choose the team project and not the default team, Fabrikam.  
+1. On the Areas page for the project, change the settings so that sub-areas are not included. Make sure you choose the project and not the default team, Fabrikam.  
 
 	![Areas page for Portfolio team, Exclude sub areas](_img/safe-exclude-sub-areas-for-portfolio-team.png)  
 

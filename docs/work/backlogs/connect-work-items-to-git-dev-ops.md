@@ -61,7 +61,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 	Branches you create are automatically linked to the work item.  
 
 	> [!NOTE]  
-	>You can only create a branch once you've added files to the main branch, which is always named ```master```. The system automatically adds a README file to the initial repo created with each new team project.   
+	>You can only create a branch once you've added files to the main branch, which is always named ```master```. The system automatically adds a README file to the initial repo created with each new project.   
 
 2. The system will open to the repository and branch that you just created. 
 
@@ -83,7 +83,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	<img src="_img/git-dev-pr-create-pull-request-b.png" alt="Work item form, create pull request" style="border: 1px solid #C3C3C3;" /> 
 
-5.	Your view will switch to the Code hub, Pull Requests page. Complete creating the pull request as shown. 
+5.	Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
  	<img src="_img/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" />  
 

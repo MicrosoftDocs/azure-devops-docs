@@ -69,7 +69,7 @@ You can export a query to Excel that contains the work items you want to provide
 To learn more about Excel macros, see [Automate tasks with the Macro Recorder](https://support.office.com/article/Automate-tasks-with-the-Macro-Recorder-974ef220-f716-4e01-b015-3ea70e64937b).  
 
 > [!TIP]
-> To provide support for opening work items and query results in Excel from the web portal of VSTS or TFS, add the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension to your account or collection.
+> To provide support for opening work items and query results in Excel from the web portal of VSTS or TFS, add the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension to your organization or collection.
 
 ## Microsoft Project and rollup of work tracking data  
  Project natively supports rollup of summary tasks. With Project, you can round trip work tracking data to obtain rollup values.  
@@ -108,7 +108,7 @@ You can use the [Analytics Service](../../../report/analytics/what-is-analytics.
 -   [Stories Overview](../../../report/sql-reports/stories-overview-report-agile.md)   
 -   [Requirements Overview](../../../report/sql-reports/requirements-overview-report-cmmi.md)  
   
-If you need to add reports to your on-premises TFS deployment, see [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md).  
+If you need to add reports to your on-premises TFS deployment, see [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md).  
   
 ## TFS-Project Server integration (TFS only)
 
@@ -130,7 +130,7 @@ Like Project, Project Server natively supports rollup of summary tasks. If you h
     -   Completed Work (Microsoft.VSTS.Scheduling.CompletedWork): The amount of work that has been spent implementing a task. (Agile and CMMI)   
     -   Remaining Work (Microsoft.VSTS.Scheduling.RemainingWork): This field is used to support burndown charts.  
   
-     If your team project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
+     If your project was created using the Visual Studio Scrum process template, only Remaining Work is defined in the task.  
   
      To learn more about adding fields, see [Modify a field or add a custom field](../add-modify-field.md).  
   

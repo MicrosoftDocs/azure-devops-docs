@@ -96,7 +96,7 @@ To start planning and tracking work, see [About Agile tools](../../work/work-ite
 
 To connect to the web portal, you need your user account added to a project. This is typically done by the [organization owner](../../organizations/accounts/add-organization-users-from-user-hub.md).
 
-Five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../../billing/buy-basic-access-add-users.md). Find out more about licensing from [VSTS pricing](https://www.visualstudio.com/team-services/pricing/).
+Five account users are free as are Visual Studio subscribers and stakeholders. After that, you need to [pay for more users](../../organizations/billing/buy-basic-access-add-users.md). Find out more about licensing from [VSTS pricing](https://www.visualstudio.com/team-services/pricing/).
 
 Limited access is available to an unlimited number of stakeholders for free. For details, see [Work as a Stakeholder](../../organizations/security/get-started-stakeholder.md). 
 

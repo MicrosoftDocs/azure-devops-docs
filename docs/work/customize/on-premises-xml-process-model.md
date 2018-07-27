@@ -24,7 +24,7 @@ ms.date: 03/20/2018
 > **Feature availability**:  The On-premises XML process model is supported for on-premises TFS.  
 
 
-The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a team project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
+The On-premises XML process model provides support for customizing work tracking objects and Agile tools for a project. With this model, you can update the XML definition of work item types, the process configuration, categories, and more. You can also update the attributes of fields. 
 
 
 You can perform the following tasks when you work with the On-premises XML process model. 
@@ -60,7 +60,7 @@ In addition, you can use the **witadmin** tool to list objects, rename WITs, per
 
 <a id="before-you-customize"></a>
 ## Maintenance and upgrade implications
-Before you customize, you should understand how your customizations may impact your team project when you upgrade your application-tier server.  
+Before you customize, you should understand how your customizations may impact your project when you upgrade your application-tier server.  
 
 Upgrades to an on-premises TFS can introduce new features that require updates to the objects used to track work. These objects include work item types, categories, and process configuration. Minimizing changes to the workflow for a WIT or the process configuration can help minimize the work you must do when you upgrade your TFS. 
 
@@ -70,7 +70,7 @@ To minimize the amount of manual work you'll need to do after a TFS upgrade, und
 
 ### Compatible for quick updating  
 
-With the following customizations, you can use the Configure Features Wizard to automatically apply any changes to your team project required for new features.
+With the following customizations, you can use the Configure Features Wizard to automatically apply any changes to your project required for new features.
 
 <ul>
 <li>Fields: Add custom fields, customize a pick list, add or modify area and iteration paths, add rules to a field  </li>
@@ -85,7 +85,7 @@ To learn more about the Configure Features Wizard, see [Configure features after
 
 ### Compatible, but may require manual updates
 
-The Configure Features Wizard requires that specific work item types, workflow states, and fields exist in the team project. When you make the following customizations, you might need to modify your custom process for the wizard to run, or you might have to update your team project manually. 
+The Configure Features Wizard requires that specific work item types, workflow states, and fields exist in the project. When you make the following customizations, you might need to modify your custom process for the wizard to run, or you might have to update your project manually. 
 
 <ul>
 <li>Fields: Change attributes of an existing field, remove fields that are referenced in the process configuration </li>
@@ -99,7 +99,7 @@ In addition, changes you make to WITs or the workflow could require updates to o
  
 
 ### Customizations to avoid
-You should avoid making the following customizations because they can result in schema conflicts in the data warehouse or cause problems when updating team projects after a TFS upgrade. 
+You should avoid making the following customizations because they can result in schema conflicts in the data warehouse or cause problems when updating projects after a TFS upgrade. 
 
 *	Fields:  
 	*	Change the friendly name of a field (a field specified within a WIT definition file)  
@@ -110,7 +110,7 @@ You should avoid making the following customizations because they can result in 
 To learn more about reporting attributes, see [Add or modify work item fields to support reporting](http://msdn.microsoft.com/library/ee921481.aspx).
 
 ### Recommended practices  
-*	Identify the best options for customizing WITs that support your tracking requirements. When you change objects that track work items, you should identify how these changes will affect existing and future team projects.  
+*	Identify the best options for customizing WITs that support your tracking requirements. When you change objects that track work items, you should identify how these changes will affect existing and future projects.  
 *	Put processes and all XML definition files under version control. Do not deploy objects that you define but have not stored in a repository.  
 *	Test your customized objects just as you would test your software.  
 *	Minimize the number of custom fields that you introduce. Minimize the number of fields that you make reportable.  
@@ -118,7 +118,7 @@ To learn more about reporting attributes, see [Add or modify work item fields to
  
 
 ## Replace team area path with a team field (On-premises TFS)  
-The default configuration for team projects associates each team with an area path. If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
+The default configuration for projects associates each team with an area path. If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
 [Use team fields instead of area paths to support teams](../customize/use-team-fields-instead-area-paths.md) describes how to change the default configuration.
 

@@ -41,7 +41,7 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 From the web portal, open the **Settings** context for the project.
 
 <!---
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"  
 You define both areas and iterations from the **Work>Project configuration** hub of the project **Settings** hub. 
@@ -65,7 +65,7 @@ You define both areas and iterations from the **Work>Project configuration** hub
 Vertical navigation isn't a supported feature for TFS at this time. 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal) 
+# [Previous navigation](#tab/previous-nav) 
 
 --> 
 

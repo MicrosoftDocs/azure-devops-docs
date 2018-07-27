@@ -15,7 +15,7 @@ ms.date: 02/14/2017
 <b>TFS 2017 (Hosted XML) | TFS 2015 | TFS 2013</b>
 
 > [!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
+>This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [LinksControlOptions XML elements](linkscontroloptions-xml-elements.md). (Customizing the link controls isn't a supported feature For the Inheritance process model.)  
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -64,7 +64,7 @@ When you add a link control to a work item form, you can specify filters that re
 |-------------|-----------------|  
 |`WorkItemLinkFilters`|Restricts the types of links that can be used to link to work items.|  
 |`ExternalLinkFilters`|Restricts the types of links that can be used to link to an object that is not a work item type, such as a changeset, hyperlink, or version control item.|  
-|`WorkItemTypeFilters`|Restricts the types of work items to which a user can link, and the team projects in which those work items are defined.|  
+|`WorkItemTypeFilters`|Restricts the types of work items to which a user can link, and the projects in which those work items are defined.|  
 |`Filter`|Specifies the link types or work item types that you want to include or exclude.|  
     
   
@@ -102,7 +102,7 @@ When you add a link control to a work item form, you can specify filters that re
   
 <a name="NonWILinks"></a> 
 ## Restrict link relationships to external objects (not work items)   
- You use the `ExternalLinkFilters` and the `Filter` child elements to define which link types to items that are external to the team project the links control should include or exclude. These objects correpond to changesets, hyperlinks, commits, and other objects. The syntax for these elements is as follows.  
+ You use the `ExternalLinkFilters` and the `Filter` child elements to define which link types to items that are external to the project the links control should include or exclude. These objects correpond to changesets, hyperlinks, commits, and other objects. The syntax for these elements is as follows.  
   
 ```xml
 <ExternalLinkFilters FilterType="include | exclude | includeAll | excludeAll">  
@@ -144,7 +144,7 @@ When you add a link control to a work item form, you can specify filters that re
 ```   
   
 ##  <a name="WorkItemTypes"></a> Restricting Link Relationships to Types of Work Items  
- You use the `WorkItemTypeFilters` and `Filter` child elements to restrict the types of work items to which a links control can link. You can restrict link relationships to the team project or by work item type. The syntax for these elements is as follows.  
+ You use the `WorkItemTypeFilters` and `Filter` child elements to restrict the types of work items to which a links control can link. You can restrict link relationships to the project or by work item type. The syntax for these elements is as follows.  
   
 ```xml
 <WorkItemTypeFilters Scope=" project | all" FilterType=" include | exclude | includeAll" >  
@@ -160,7 +160,7 @@ When you add a link control to a work item form, you can specify filters that re
   
  **Example: Limiting Link Relations to Task Work Items**  
   
- The following example defines a links control that allows only hierarchical relationships to be formed to tasks that are defined in the team project.  
+ The following example defines a links control that allows only hierarchical relationships to be formed to tasks that are defined in the project.  
   
 ```xml
 <Control Type="LinksControl" Name="UniqueName">  

@@ -14,7 +14,7 @@ ms.date: 12/15/2017
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
-Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to team project.
+Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to project.
 
 Configuration elements specify the work item types (WITs), default columns, fields used by the tools, and other elements. The main configurations made determine which items will display for the portfolio, product, and sprint backlogs by defining the **PortfolioBacklog**, **RequirementBacklog**, and **TaskBacklog** sections of the process configuration XML definition file. In addition, process configuration defines the workflow mapping of state-to-state category for all WITs that require mapping.
 
@@ -33,19 +33,19 @@ Areas that you can customize through ProcessConfiguration:
 > |- [Configure the quick add panel](#add) <br/>- [Define default columns](#columns) <br/>- [Map state categories for a WIT category](#map)<br/>- [Set number of task board items](#number_items)<br/>- [Set weekend days (Scrum)](#weekend_days) <sup>1</sup><br/>- [Set default Show bugs on backlogs](#behaviors)  <sup>1</sup><br/>- [Set default hidden backlogs](#behaviors) <sup>1</sup>  |- [Specify the WIT color](#wit-colors)<br/>- [Specify the workflow state color](#state-colors)  <sup>2</sup><br/>- [Specify the WIT icon](#wit-icons)  <sup>3</sup> |- [Assign Agile tool fields](#fields)<br/>- [Map tool-specific state categories](#tool_wits) <br/>- [Specify properties](#behaviors) |
 
 **Notes:**
-1. Items noted with an asterisk set a default for the team project. These items can be changed for each team through [team settings](../../scale/manage-team-assets.md).
+1. Items noted with an asterisk set a default for the project. These items can be changed for each team through [team settings](../../scale/manage-team-assets.md).
 2. Supported for Hosted XML, and for On-premises XML for TFS 2015.2 or later version.  
 3. Supported for Hosted XML, and for On-premises XML for TFS 2017.2 or later version.  
 
 > [!IMPORTANT]  
->If you want to customize your team project to add custom work item types to appear on your backlogs or boards or add custom portfolio backlogs, see [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md) and [Add portfolio backlogs](../add-portfolio-backlogs.md).  
+>If you want to customize your project to add custom work item types to appear on your backlogs or boards or add custom portfolio backlogs, see [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md) and [Add portfolio backlogs](../add-portfolio-backlogs.md).  
 
 ### Update the process configuration 
 
 > [!NOTE]    
 >To access the latest version of the process templates, install the latest version of TFS and download the templates using the [Process Template Manager](../../work-items/guidance/manage-process-templates.md).
 
-To update the process configuration for a team project, you export the XML definition file, edit it, and then import the file. You export these files either by [exporting a process](../import-process/import-process.md#export-a-process) or [exporting the process configuration definition file](witadmin/witadmin-import-export-process-configuration.md).
+To update the process configuration for a project, you export the XML definition file, edit it, and then import the file. You export these files either by [exporting a process](../import-process/import-process.md#export-a-process) or [exporting the process configuration definition file](witadmin/witadmin-import-export-process-configuration.md).
 
 [![Export ProcessConfig definition file](_img/export-process-step-1.png)](witadmin/witadmin-import-export-process-configuration.md)[![Edit XML definition file](_img/export-process-step-2.png)](#areas-to-customize)[![Import WIT definition file](_img/export-process-step-3.png)](witadmin/witadmin-import-export-process-configuration.md)![Refresh and verify changes](_img/export-process-step-4.png)  
 
@@ -118,7 +118,7 @@ You configure backlogs within the XML sections that appear in the following samp
 
 <p>Assign values to the attributes as described:</p>
 <ul>
-<li><p><strong>category</strong>: Specify the name of a category that you have defined in the categories definition file for the team project that contains the WITs to be associated with this backlog type.</p></li>
+<li><p><strong>category</strong>: Specify the name of a category that you have defined in the categories definition file for the project that contains the WITs to be associated with this backlog type.</p></li>
 <li><p><strong>parent</strong>: Specify the name of the category that represents the parent portfolio backlog within the hierarchy.</p></li>
 <li><p><strong>pluralName</strong>: Specify the plural label to use when referring to the WITs associated with this backlog type. For example, Stories, Goals, Initiatives, or Epics.</p></li>
 <li><p><strong>singularName</strong>: Specify the singular label to use when referring to the WITs associated with this backlog type. For example, Story, Goal, Initiative, or Epic.</p></li>
@@ -160,9 +160,9 @@ singularName=&quot;Task workItemCountLimit=&quot;MaximumLimit&quot;&gt;
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 -   By default, each backlog is restricted to a total of 1000 work items. For TFS you can change this limit by specifying a value for the `workItemCountLimit` attribute.  
 ::: moniker-end
--   The values assigned to *CategoryName* must correspond to a category group defined for the team project. You [specify category groups in the definition file for Categories](categories-xml-element-reference.md).  
--   You use [portfolio backlogs](../../backlogs/organize-backlog.md) to organize your backlog, view the rollup of backlog items at lower levels, and to view progress across several teams. New and upgraded team projects contain two portfolio backlog levels: Features and Epics. You can add up to three additional levels. Only the top level portfolio backlog doesn't specify a parent category.  
--   Your [product backlog](../../backlogs/create-your-backlog.md) corresponds to your project plan, the roadmap for what your team plans to deliver. It lists work items whose WITs belong to the Requirements Category. In order to manage different WITs than those provided by your default team project, you can add WITs to the Requirements Category and map the workflow states to state categories.  
+-   The values assigned to *CategoryName* must correspond to a category group defined for the project. You [specify category groups in the definition file for Categories](categories-xml-element-reference.md).  
+-   You use [portfolio backlogs](../../backlogs/organize-backlog.md) to organize your backlog, view the rollup of backlog items at lower levels, and to view progress across several teams. New and upgraded projects contain two portfolio backlog levels: Features and Epics. You can add up to three additional levels. Only the top level portfolio backlog doesn't specify a parent category.  
+-   Your [product backlog](../../backlogs/create-your-backlog.md) corresponds to your project plan, the roadmap for what your team plans to deliver. It lists work items whose WITs belong to the Requirements Category. In order to manage different WITs than those provided by your default project, you can add WITs to the Requirements Category and map the workflow states to state categories.  
 -   Your [sprint or iteration backlogs](https://msdn.microsoft.com/library/ee191595) display both the set of requirements that you and your team have committed to in a specific sprint cycle and the tasks that you have linked to those requirements. You link tasks to requirements using the parent-child link type. Because the WITs that appear on these backlogs correspond to the same types that appear on the product backlog, much of the customization work that you do for the product backlog will define the functionality of the sprint backlog.  
 
 <a id="map">  </a>
@@ -375,7 +375,7 @@ State category mappings are defined for additional WIT categories. For the Scrum
 ```
 
 
-The following table describes the additional elements used to define the state category mappings for tool-specific work item types. See [Map state categories for a category of work item types](#map) for information about assigning the actual state values and types. The *CategoryName* must correspond to a category defined for the team project.
+The following table describes the additional elements used to define the state category mappings for tool-specific work item types. See [Map state categories for a category of work item types](#map) for information about assigning the actual state values and types. The *CategoryName* must correspond to a category defined for the project.
 
 #### Syntax for tool-specific state category mapping elements
 
@@ -425,7 +425,7 @@ The following table describes the additional elements used to define the state c
 </tr>
 <tr>
 <td><p><strong>TestPlanWorkItems</strong></p></td>
-<td><p>Only required when you customize the workflow state for Test Plan and you support connections to the team project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.</p>
+<td><p>Only required when you customize the workflow state for Test Plan and you support connections to the project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.</p>
 <p>Container element that defines the state category mappings for work item types assigned to the Test Plan Category. For example:</p>
 
 <pre><code>&lt;TestPlanWorkItems category=&quot;Microsoft.TestPlanCategory&quot;  
@@ -440,7 +440,7 @@ The following table describes the additional elements used to define the state c
 </tr>
 <tr>
 <td><p><strong>TestSuiteWorkItems</strong></p></td>
-<td><p>Only required when you customize the workflow state for Test Suite and you support connections to the team project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.</p>
+<td><p>Only required when you customize the workflow state for Test Suite and you support connections to the project from versions of Test Manager installed with Visual Studio 2013.2 or earlier versions.</p>
 <p>Container element that defines the state category mappings for work item types assigned to the Test Suite Category. For example:</p>
 
 <pre><code>&lt;TestSuiteWorkItems  
@@ -513,7 +513,7 @@ For example, if you change the `refname` assigned to `type="Activity"` then you 
 <p><strong>For Agile tools:</strong></p>
 <ul>
 <li><p><strong>Activity</strong>: Used to support the capacity-by-activity feature. Specify the same field used in the WIT assigned to the Task Category.</p>
-<p><strong>Note</strong>: The values displayed by the Capacity tool reflect a union of all values defined for the field in all team projects within the project collection instance. Therefore, to restrict the values that appear for sprint Capacity, you must make the values match in all the team projects for the field assigned to `type="Activity"`.</p></li>
+<p><strong>Note</strong>: The values displayed by the Capacity tool reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for sprint Capacity, you must make the values match in all the projects for the field assigned to `type="Activity"`.</p></li>
 <li><p><strong>Effort</strong>: Used to calculate the team velocity. Specify the same field used in the WIT assigned to the Requirement Category that you use to capture the estimated level of effort, story points, or size for the amount of work that a backlog item requires to implement.</p></li>
 <li><p><strong>Order</strong>: Used to define the sort order for items on the backlogs and boards. The system lists work items according to their ascending order as defined by the field for this type.</p>
 
@@ -571,7 +571,7 @@ You should not have to change the default assignments made for the following <st
 <a id="weekend_days">  </a>
 ## Set non-working days 
 
-Non-working days are removed from calculations made by the [capacity planning tool](../../scrum/set-capacity.md) and [burndown charts](../../scrum/sprint-burndown.md). Default processes&mdash;[Agile](../../work-items/guidance/agile-process.md), [Scrum](../../work-items/guidance/scrum-process.md), or [CMMI](../../work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a team project, [each team can set their specific non-working days](../set-working-days.md).
+Non-working days are removed from calculations made by the [capacity planning tool](../../scrum/set-capacity.md) and [burndown charts](../../scrum/sprint-burndown.md). Default processes&mdash;[Agile](../../work-items/guidance/agile-process.md), [Scrum](../../work-items/guidance/scrum-process.md), or [CMMI](../../work-items/guidance/cmmi-process.md)&mdash;specify Saturday and Sunday as non-working days. After you create a project, [each team can set their specific non-working days](../set-working-days.md).
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -671,7 +671,7 @@ The Scrum process template defines the following color assignments. Similar ones
 <a id="behaviors">  </a> 
 ## Specify properties and behaviors
 
-The first two properties that you can set, `BugsBehavior` and `HiddenBacklogs` set the default value for a team project. However, each team can change the behavior through their team settings. The third property `StateColors` defines the colors associated with the workflow states for all WITs. The values you set are used for all teams across a team project.   
+The first two properties that you can set, `BugsBehavior` and `HiddenBacklogs` set the default value for a project. However, each team can change the behavior through their team settings. The third property `StateColors` defines the colors associated with the workflow states for all WITs. The values you set are used for all teams across a project.   
 
 Example `Properties` configuration:  
 
@@ -707,7 +707,7 @@ The `HiddenBacklogs` property determines which backlogs/portfolio backlogs appea
 </tr>
 <tr>
 <td><p><strong>Property</strong></p></td>
-<td><p>Specifies the default assignment made to new teams or existing teams when updating a team project with new features. Teams can choose the behavior they want through their team settings.</p>
+<td><p>Specifies the default assignment made to new teams or existing teams when updating a project with new features. Teams can choose the behavior they want through their team settings.</p>
 <p>Valid property names are:</p>
 <ul>
 <li><p><strong>BugsBehavior</strong> sets the default for the [Show bugs on backlogs and board](../show-bugs-on-backlog.md). Allowed values correspond to:</p>
@@ -796,7 +796,7 @@ The supported set of icons you can specify for a work item type are shown below.
 >Icons noted with an asterisk are supported on VSTS and TFS 2017.3 and later versions.
 
 
-The system applies the color defined for the work item type to the icon. Colors and icons appear in the web portal where ever work items are displayed. This includes under **Related work** in PRs, list of links, the account work item pages as well as the work hub backlogs, boards, queries, and plans.  
+The system applies the color defined for the work item type to the icon. Colors and icons appear in the web portal where ever work items are displayed. This includes under **Related work** in PRs, list of links, the **Project** pages as well as **Work** backlogs, boards, queries, and plans.  
 
 For example, here you see a list view&hellip; 
 

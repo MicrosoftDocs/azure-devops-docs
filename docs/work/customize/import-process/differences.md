@@ -37,8 +37,8 @@ Any reference to the following objects in any of the XML definition files will r
 *   Team field support
 *   for and not rules support
 
-The following plug-ins and their associated files aren't used in defining a process, nor used to update existing team projects. 
-However, they are used to create objects or artifacts when you create a new team project.  
+The following plug-ins and their associated files aren't used in defining a process, nor used to update existing projects. 
+However, they are used to create objects or artifacts when you create a new project.  
 *   Classification      
 *   Work item queries (defined using the WIQL syntax)  
 *   Test Management

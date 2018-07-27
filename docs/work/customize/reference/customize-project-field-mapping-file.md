@@ -18,7 +18,7 @@ You can customize how work item fields that are defined in Team Foundation map t
   
  For information on using Project and TFS to track work, see [Create your backlog and tasks using Project](../../backlogs/office/create-your-backlog-tasks-using-project.md).  
   
- To modify the field mappings for a team project, you [export and then import the Microsoft Project Mapping File using the TFSFieldMapping command line tool](upload-or-download-the-microsoft-project-mapping-file.md).  
+ To modify the field mappings for a project, you [export and then import the Microsoft Project Mapping File using the TFSFieldMapping command line tool](upload-or-download-the-microsoft-project-mapping-file.md).  
   
 <a name="FieldMappings"></a> 
 ##Mapping element  
@@ -99,7 +99,7 @@ For more information about how to use the synchronization field in Project, see 
   
  This is an optional element. If this element is not specified in the mapping, then Microsoft Project separates resource names by using the default mappings that are defined in the following table:  
   
-|If Active Directory and the team project list separator is|Then in Office Project replace with|  
+|If Active Directory and the project list separator is|Then in Office Project replace with|  
 |----------------------------------------------------------------|-----------------------------------------|  
 |,|;|  
 |;|:|  

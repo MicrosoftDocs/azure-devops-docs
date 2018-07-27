@@ -18,7 +18,7 @@ ms.date: 01/20/2017
 
 As you run tests to verify your requirements, you are bound to find bugs. Use the bug work item to describe and track progress for each bug that you find.  
   
- ![Bug for CMMI team project &#40;work item form&#41;](_img/procguid_cmmiwitform.png "ProcGuid_CMMIwitForm")  
+ ![Bug for CMMI project &#40;work item form&#41;](_img/procguid_cmmiwitform.png "ProcGuid_CMMIwitForm")  
   
  For more information about how to create bug work items, see [Run manual tests](../../../../test/run-manual-tests.md). As bugs are found, follow the process in this topic to prioritize them, to make sure that they get fixed, and to make sure that you have a record of the work and the decisions that were involved.  
   
@@ -29,7 +29,7 @@ As you run tests to verify your requirements, you are bound to find bugs. Use th
   
  Before triage starts, devise a set of criteria to determine which bugs should be fixed and in what priority. The criteria will typically identify the severity of bugs, bugs that are associated with features of significant value (or significant opportunity cost of delay), or other project risks.  
   
- The triage criteria should be stored in the Documents folder of your team project. Over time, the document will be updated. It is assumed that your project has version control turned on and that the specific criteria that are being used at any given time on the project can be retrieved for audit and appraisal evidence purposes.  
+ The triage criteria should be stored in the Documents folder of your project. Over time, the document will be updated. It is assumed that your project has version control turned on and that the specific criteria that are being used at any given time on the project can be retrieved for audit and appraisal evidence purposes.  
   
  Early in the project, you will likely decide to fix most of the bugs that you triage. However, as the project proceeds, the triage criteria (or bar) may be raised to reduce the number of bugs that are fixed.  
   

@@ -27,8 +27,8 @@ If you don't have an Azure subscription, [create one](https://azure.microsoft.co
 
 The first time that you set up billing for your VSTS organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-* [VSTS project collection administrator or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
-* [An Azure subscription you can use to purchase](https://docs.microsoft.com/en-us/vsts/billing/add-backup-billing-managers?view=vsts)
+* [VSTS project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* [An Azure subscription you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent edits to paid quantities in your VSTS organization, you only need have access to purchase on the Azure subscription.
 

@@ -20,11 +20,11 @@ ms.date: 12/15/2017
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize/customize-work.md). 
 
-Just as you have been able to customize the form layout for your work item types, you can continue to do so with the new web form. The new form makes available several features that are not available with the old form.  Your account or project collection administrator manages the [switch to the new form](manage-new-form-rollout.md). When the new form is enabled for the account or team project collection, the WebLayout section is added to the XML definition for each WIT defined in the collection.  
+Just as you have been able to customize the form layout for your work item types, you can continue to do so with the new web form. The new form makes available several features that are not available with the old form.  Your account or project collection administrator manages the [switch to the new form](manage-new-form-rollout.md). When the new form is enabled for the account or project collection, the WebLayout section is added to the XML definition for each WIT defined in the collection.  
  
 
 > [!NOTE]    
->Prior to customizing the web form, your account administrator must have [enabled the new form for your account on VSTS and TFS](manage-new-form-rollout.md). 
+>Prior to customizing the web form, your administrator must have [enabled the new form for your account on VSTS and TFS](manage-new-form-rollout.md). 
 
 You customize transformed WITs in much the same way as you have previously.  The path is slightly different depending on your platform and previous customization choices. 
 
@@ -64,7 +64,7 @@ See the following topics to make the indicated customizations:
 <a id="witadmin">  </a>  
 ## Import and export WIT definition files 
 
-0.  If you don't have administration permissions for your team project, [get them](../../organizations/security/set-project-collection-level-permissions.md).  
+0.  If you don't have administration permissions for your project, [get them](../../organizations/security/set-project-collection-level-permissions.md).  
   
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
@@ -72,7 +72,7 @@ See the following topics to make the indicated customizations:
 
         witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
 
-    An example of a *CollectionURL* for a VSTS account is https://*MyAccountName*.visualstudio.com/DefaultCollection.
+    An example of a *CollectionURL* for a VSTS organization is https://*MyOrganizationName*.visualstudio.com/DefaultCollection.
 
 0.  Edit the file. For details, see [WebLayout XML elements](reference/weblayout-xml-elements.md).  
 
