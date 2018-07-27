@@ -16,7 +16,7 @@ ms.date: 01/12/2017
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
-<a name="top"></a> After you have configured Visual Studio Team Foundation Server (TFS) and Microsoft Project Server to support data synchronization, you might need to perform additional administrative tasks when you change your deployment. For example, you might need to remove, re-register, or re-map a component before or after you move or delete a team project, a team project collection, or an application-tier server. Before you change your deployment or perform maintenance operations, you should consider the impact that these operations have on the synchronization process.  
+<a name="top"></a> After you have configured Visual Studio Team Foundation Server (TFS) and Microsoft Project Server to support data synchronization, you might need to perform additional administrative tasks when you change your deployment. For example, you might need to remove, re-register, or re-map a component before or after you move or delete a project, a project collection, or an application-tier server. Before you change your deployment or perform maintenance operations, you should consider the impact that these operations have on the synchronization process.  
   
  Review the following notes and resources before you change a deployment where you have integrated TFS and Project Server.  
   
@@ -25,11 +25,11 @@ ms.date: 01/12/2017
 ##  <a name="deleting"></a> Delete components  
  Whenever you delete a mapped component, you should unmap it and review the following guidelines:  
   
--   **Delete an enterprise project plan or a team project**. Before you delete a mapped project plan or a mapped team project, you must first unmap all project plans that are mapped to the team project. For more information, see [Associate enterprise projects and team projects](manage-associations-enterprise-projects.md).  
+-   **Delete an enterprise project plan or a project**. Before you delete a mapped project plan or a mapped project, you must first unmap all project plans that are mapped to the project. For more information, see [Associate enterprise projects and projects](manage-associations-enterprise-projects.md).  
   
--   **Delete an instance of Project Web Access or Project Web App (PWA)**. Before you delete an instance of PWA, you must first remove all associations of team project collections that are mapped to the instance and then unregister it. For more information, see [Remove a component](remove-component-from-synchronization.md) and [Remove an Instance of PWA from participating in synchronization](remove-component-from-synchronization.md#removepwa).  
+-   **Delete an instance of Project Web Access or Project Web App (PWA)**. Before you delete an instance of PWA, you must first remove all associations of project collections that are mapped to the instance and then unregister it. For more information, see [Remove a component](remove-component-from-synchronization.md) and [Remove an Instance of PWA from participating in synchronization](remove-component-from-synchronization.md#removepwa).  
   
--   **Delete a team project collection**. Before you delete a mapped collection, you should unmap it by following the procedure in [Remove a component](remove-component-from-synchronization.md).  
+-   **Delete a project collection**. Before you delete a mapped collection, you should unmap it by following the procedure in [Remove a component](remove-component-from-synchronization.md).  
   
     > [!NOTE]
     >  If you delete not only a mapped project collection but also all instances of PWA that were mapped to it, you will remove all mappings of work items that have been synchronized. However, the instance of PWA that is registered to Team Foundation Server remains registered.  
@@ -45,7 +45,7 @@ ms.date: 01/12/2017
   
 1.  Move or split the collection.  
 
-     For more information, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections).  
+     For more information, see [Manage project collections](/tfs/server/admin/manage-team-project-collections).  
   
 2.  Grant required permissions to the service account for the second instance of Team Foundation Server.  
   
@@ -66,11 +66,11 @@ ms.date: 01/12/2017
 1.  Use the **/UnmapPwaFromCollection** command option with the **/force** switch to unmap each collection that you are moving.  
   
     > [!WARNING]
-    >  By using the **/force** switch, you break all associations between enterprise project plans and team projects that are defined for the collection.  
+    >  By using the **/force** switch, you break all associations between enterprise project plans and projects that are defined for the collection.  
   
 2.  Move or split the collection.  
 
-     For more information, see [Manage team project collections](/tfs/server/admin/manage-team-project-collections).  
+     For more information, see [Manage project collections](/tfs/server/admin/manage-team-project-collections).  
   
 3.  Assign all required permissions.  
   
@@ -80,7 +80,7 @@ ms.date: 01/12/2017
   
 5.  Use the **/MapPwaToCollection** command option to map each collection that you moved to the second instance of PWA.  
   
-6.  Use the **/MapPlanToTeamProject** command option to map each plan to the team project that was moved to a different collection.  
+6.  Use the **/MapPlapToTeamProject** command option to map each plan to the project that was moved to a different collection.  
   
  For more information, see the following topics:  
 
@@ -90,7 +90,7 @@ ms.date: 01/12/2017
   
 -   [Register an instance of PWA](register-pwa.md)  
   
--   [Map a team project collection](map-team-project-collection-to-pwa.md)  
+-   [Map a project collection](map-team-project-collection-to-pwa.md)  
   
 -   [Manage mappings](manage-mappings-enterprise-project-team-project.md)  
   

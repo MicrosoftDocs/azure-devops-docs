@@ -15,11 +15,11 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-You can add categories to your process template. A category associates a group label with one or more work item types (WITs). Categories are useful when your team projects contain similar WITs that are named differently. You specify the category definitions in one file, and then you specify that file to upload within the **taskxml** element of the WorkItemTracking plug-in.  
+You can add categories to your process template. A category associates a group label with one or more work item types (WITs). Categories are useful when your projects contain similar WITs that are named differently. You specify the category definitions in one file, and then you specify that file to upload within the **taskxml** element of the WorkItemTracking plug-in.  
   
 The default process templates define over ten categories that are used to support Agile tools, test case management, and other features. You can customize or create a category definition file. The category file is defined in the WorkItem Tracking folder. For more information, see [Use categories to group work item types](../use-categories-to-group-work-item-types.md).  
   
-After a team project is created from the process template, you can [export and import categories](../witadmin/witadmin-import-export-categories.md) for a team project collection by using the **witadmin** command-line tool.  
+After a project is created from the process template, you can [export and import categories](../witadmin/witadmin-import-export-categories.md) for a project collection by using the **witadmin** command-line tool.  
   
 
 <a name="create"></a> 

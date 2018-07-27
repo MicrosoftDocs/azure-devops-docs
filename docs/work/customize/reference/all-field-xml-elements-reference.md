@@ -227,7 +227,7 @@ expanditems="true | false" filteritems="excludegroups"&gt;
 <table Responsive="true" summary="table">
 <tr Responsive="true"><th scope="col"><p>Element</p></th><th scope="col"><p>Description</p></th></tr>
 <tbody valign="top">
-<tr><td data-th="Element"><p><strong>GLOBALIST</strong></p></td><td data-th="Description"><p>Defines a set of <strong>LISTITEM</strong> elements that is stored for a team project collection and that all team projects in a collection can use.</p>
+<tr><td data-th="Element"><p><strong>GLOBALIST</strong></p></td><td data-th="Description"><p>Defines a set of <strong>LISTITEM</strong> elements that is stored for a project collection and that all projects in a collection can use.</p>
 <pre><code>&lt;GLOBALLIST name="globalListName"&gt;
     &lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;
 &lt;/GLOBALLIST&gt; </code></pre>

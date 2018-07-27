@@ -1,7 +1,7 @@
 ---
 title: Choose a process
 titleSuffix: VSTS & TFS
-description: Choose a process or process template, work with team project artifacts in Visual Studio Team Services & Team Foundation Server 
+description: Choose a process or process template, work with project artifacts in Visual Studio Team Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
@@ -15,9 +15,9 @@ ms.date: 03/02/2017
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Anytime you create a team project, you must choose a process or process template based on the process model you use. 
-- A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for VSTS. This model supports customization of team projects through a WYSIWYG user interface. 
-- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of team projects through the modification and import of XML definition files. 
+Anytime you create a project, you must choose a process or process template based on the process model you use. 
+- A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for VSTS. This model supports customization of projects through a WYSIWYG user interface. 
+- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files. 
 
 To learn more about process models, see [Customize your work tracking experience](../../customize/customize-work.md). 
 
@@ -103,8 +103,8 @@ If you need more than three backlog levels, you can add more based on the proces
 ## Main distinctions among the default processes
 The default processes are designed to meet the needs of most teams. 
 If your team has unusual needs and connects to an on-premises TFS, 
-you can customize a process and then create the team project. 
-Or, you can create a team project from a process and then customize the project.  
+you can customize a process and then create the project. 
+Or, you can create a project from a process and then customize the project.  
 
 The following table summarizes the main distinctions between the WITs and states 
 used by the three default processes.  
@@ -407,7 +407,7 @@ When you change the state of a work item to Removed, Closed, or Done, the system
 *   **Closed** or **Done**: Work items in this state don't appear on the portfolio backlog and backlog pages. However, they do appear on the sprint backlog pages, Kanban board, and task board. Also, when you change the portfolio backlog view to show backlog items, for example, to view Features to Product Backlog Items, items in the closed and done state will appear.   
 *   **Removed**: Work items in this state don't appear on any backlog or board.   
 
-Work items are maintained in a team project as long as the team project is active. 
+Work items are maintained in a project as long as the project is active. 
 Even if you set them to Closed, Done, or Removed, a record is kept in the data store. 
 You can use a record to create queries or reports.  
 
@@ -431,7 +431,7 @@ Work item types that are added to the Hidden Types category don't appear in the 
 
 
 > [!NOTE]    
->**Feature availability**:  If you upgraded your team project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../customize/configure-features-after-upgrade.md).  
+>**Feature availability**:  If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../customize/configure-features-after-upgrade.md).  
 >
 >The following WITs were added with the indicated TFS version: 
 >- Shared Parameters added with TFS 2013.2  
@@ -455,7 +455,7 @@ If you change the workflow for the test plan and test suite, you might need to u
 ## Related articles
 <a id="term-note"></a>
 
-You can customize a process before or after you create a team project that uses that project. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).    
+You can customize a process before or after you create a project that uses that project. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).    
  
 - [Upload/download process templates](manage-process-templates.md)  
 - [Changes made to process templates](changes-to-process-templates.md)  

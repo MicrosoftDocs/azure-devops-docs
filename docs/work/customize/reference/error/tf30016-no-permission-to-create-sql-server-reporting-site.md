@@ -16,7 +16,7 @@ ms.date: 02/22/2017
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
-This error occurs when the permissions granted to your user account on the SQL Server Reporting Services server {*name*} are not sufficient to enable you to create the reporting site. You use the reporting site as the team project Report site. You must be granted specific permission by the SQL Server Reporting Services administrator.  
+This error occurs when the permissions granted to your user account on the SQL Server Reporting Services server {*name*} are not sufficient to enable you to create the reporting site. You use the reporting site as the project Report site. You must be granted specific permission by the SQL Server Reporting Services administrator.  
   
 ### To correct this error  
   
@@ -25,5 +25,5 @@ This error occurs when the permissions granted to your user account on the SQL S
 You must also have the **Full Control** permission set on the server that hosts SharePoint Products. Your Team Foundation Server administrator may also be able to grant you the required permissions.  
   
 ## Related articles  
-- [Create a team project](../../../../organizations/projects/create-project.md)
+- [Create a project](../../../../organizations/projects/create-project.md)
 - [Grant permissions to view or create reports](../../../../report/admin/grant-permissions-to-reports.md)

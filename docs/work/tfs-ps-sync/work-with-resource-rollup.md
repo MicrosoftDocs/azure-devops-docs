@@ -1,5 +1,5 @@
 ---
-title: Work with resource rollup in enterprise projects mapped to team projects
+title: Work with resource rollup in enterprise projects mapped to projects
 titleSuffix: TFS 
 description: Work with resource rollup in enterprise projects when synchronizing data between Team Foundation Server & Project Server
 ms.technology: devops-agile
@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 
-# Work with resource rollup in enterprise projects mapped to team projects
+# Work with resource rollup in enterprise projects mapped to projects
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> As a project manager or resource manager, you can track work that is allocated to resources in either Microsoft Project Professional or Team Foundation. The synchronization engine for Visual Studio Team Foundation Server and Microsoft Project Server supports the flow of rollup calculations and resource data, referred to as resource rollup, between the two server products. You can view the assignment of work by resources in Project Professional or from Project Web Access or Project Web App (PWA). Regardless of the method that you use to manage your project plan, you can use resource rollup to view resource allocation and work estimates, perform resource leveling, and determine whether a resource is over-allocated within a single project or across multiple projects.  
   
 > [!NOTE]
->  You can view resource rollup only for an enterprise project plan that is mapped to a team project. For more information, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
+>  You can view resource rollup only for an enterprise project plan that is mapped to a project. For more information, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   
  Because the two server products track work differently, you should become familiar with how data is stored and what happens when it is modified.  
  
@@ -109,7 +109,7 @@ ms.date: 01/12/2017
 ### Primary or Active Owner for a Task or Work Item  
  You can assign only one active user to a task that is published to Team Foundation Server. However, multiple resources appear in Project for summary tasks that contain the rollup of child work items.  
   
- When you assign a **Resource** in Project to a task that you will publish to a team project, you must specify a primary or active owner of the task. This information corresponds to the user name in the Assigned To field in Team Foundation.  
+ When you assign a **Resource** in Project to a task that you will publish to a project, you must specify a primary or active owner of the task. This information corresponds to the user name in the Assigned To field in Team Foundation.  
   
 ### Assigning and Reassigning Resources to Work Items and Tasks  
  After a task is linked in Team Foundation, it owns rolled-up resource assignments, which are virtually read-only in Project. In Project, you can still reassign tasks that are not rolled up.  

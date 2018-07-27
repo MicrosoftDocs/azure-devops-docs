@@ -21,7 +21,7 @@ ms.date: 03/20/2018
 
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
 
-Each workflow consists of a set of states,  valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your team project. 
+Each workflow consists of a set of states,  valid transitions between  states, and reasons for transitioning the work item to the selected state. [Workflow states and reasons](../work-items/guidance/choose-process.md#workflow-states) differ among the work item types (WITs) and default processes used to create your project. 
 
 Most work items move from a New, Active, or Proposed state to a Done or Closed state. As each work item moves from one state to another, the item might also be reassigned to various members of the team. For example, a tester might create a bug that is assigned to another team member during triage. When the other team member resolves the bug, it is reassigned to the tester who created it.  
 
@@ -245,7 +245,7 @@ For example, you can list items based on the team area path, and if they are in 
 <img src="_img/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
 
 > [!NOTE]    
-> Queries are now scoped to the current team project by default. Check the **Query across projects** to find work items defined in other team projects within the collection.  
+> Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
 
 
 <table valign="top">
@@ -459,7 +459,7 @@ For information about data types and default field attributes, see [Work item da
 #### Notes
   
 <a id="sync">  </a>
-1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a team project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
+1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or AAD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
     
 	::: moniker range=">= tfs-2013 <= tfs-2018"  
 	You can enable or disable synchronization for a person-name field by using the **witadmin changefield** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../customize/reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../customize/reference/field-definition-element-reference.md).    
