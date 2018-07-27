@@ -45,19 +45,19 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 1. Sign in to [**Visual Studio Marketplace** > **Other** > **VSTS Users**](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser), and choose **Get**.
 
    > [!div class="mx-imgBorder"]
-![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/marketplace-choose-get-vsts-users.PNG)
+![Go to Visual Studio Marketplace, Other, VSTS Users](_img/buy-more-basic-access/marketplace-choose-get-vsts-users.png)
 
 2. Select your VSTS organization, if you have multiple organizations, and then choose **Buy**.
 
    > [!div class="mx-imgBorder"]
-![Select your organization](_img/buy-more-basic-access/marketplace-choose-buy.PNG)
+![Select your organization](_img/buy-more-basic-access/marketplace-choose-buy.png)
 
 3. Confirm the Azure subscription, where your VSTS charges will be billed, and then choose **Continue**.
 
    If you have multiple Azure subscriptions, select the Azure subscription that you want to use. Or if you don't have an Azure subscription, you can create a new one.
 
    > [!div class="mx-imgBorder"]
-![Confirm or select your azure subscription](_img/buy-more-basic-access/marketplace-confirm-subscription.PNG)
+![Confirm or select your azure subscription](_img/buy-more-basic-access/marketplace-confirm-subscription.png)
 
 4. Enter the number of paid VSTS users and then choose **Continue**. You will also see the number of free users included, which is separate.
 
