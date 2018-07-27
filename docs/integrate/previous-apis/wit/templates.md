@@ -30,7 +30,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates/{t
 |:----------------|:--------|:------------|
 | URL             |         |             |            
 | instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).  | 
-| project         | string  | Name or ID of the team project.  |
+| project         | string  | Name or ID of the project.  |
 | team            | string  | Name or ID of the team.          |  
 | templateid      | GUID    | ID of the template.  | 
 | Query |         |         |  
@@ -49,7 +49,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates?[w
 |:--------------------|:--------|:------------------------------|:------------|
 | URL                 |         |                               |             | 
 | instance            | string  |                               | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}). | 
-| project             | string  |                               | Name or ID of the team project.| 
+| project             | string  |                               | Name or ID of the project.| 
 | team                | string  |                               | Name or ID of the team.        |  
 | Query               |         |                               |             | 
 | api-version         | string  |                               | [Version](../../concepts/rest-api-versioning.md) of the API to use.| 
@@ -74,7 +74,7 @@ POST https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates?a
 |:----------------|:--------|:------------| 
 | URL             |         |             | 
 | instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}). | 
-| project         | string  | Name or ID of the team project. |
+| project         | string  | Name or ID of the project. |
 | team            | string  | Name or ID of the team.         |  
 | Query             |         |             |
 | api-version     | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use. | 
@@ -97,7 +97,7 @@ PUT https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates/{t
 |:----------------|:--------|:------------| 
 | URL             |         |             |
 | instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).  |  
-| project         | string  | Name or ID of the team project.  |  
+| project         | string  | Name or ID of the project.  |  
 | team            | string  | Name or ID of the team.         |  
 | templateid      | GUID    | ID of the template to replace.  |  
 | Query             |         |             |
@@ -122,7 +122,7 @@ DELETE https://{instance}/DefaultCollection/{project}/{team}/_apis/wit/templates
 |:----------------|:--------|:------------|  
 | URL             |         |             | 
 | instance        | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).  |  
-| project         | string  | Name or ID of the team project.  |  
+| project         | string  | Name or ID of the project.  |  
 | templateid      | GUID    | ID of the template to remove.  |  
 | team            | string  | Name or ID of the team.         |  
 | Query            |         |             | 

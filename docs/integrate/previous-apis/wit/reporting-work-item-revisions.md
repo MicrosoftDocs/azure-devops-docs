@@ -44,7 +44,7 @@ GET https://{instance}/DefaultCollection/[{project}/]_apis/wit/reporting/workIte
 |:-------------------|:---------|:----------------------------
 | URL
 | instance           | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string   | Filters the results to work items in the specified team project. The project can be specified by name or ID.
+| project            | string   | Filters the results to work items in the specified project. The project can be specified by name or ID.
 | Query
 | continuationToken  | string   | Specifies the continuationToken to start the batch from. Omit this parameter to get the first batch of revisions.
 | fields             | string   | A comma-separated list of fields to return in work item revisions. Omit this parameter to get all reportable fields.
@@ -87,7 +87,7 @@ Content-type: Application/json
 |:-------------------|:-----------------|:----------------------------
 | URL
 | instance           | string           | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string           | Filters the results to work items in the specified team project.
+| project            | string           | Filters the results to work items in the specified project.
 | Query
 | continuationToken  | string           | Specifies the continuationToken to start the batch from. Omit this parameter to get the first batch of revisions.
 | startDateTime      | datetime         | Date/time to use as a starting point for revisions, all revisions will occur after this date/time. Cannot be used in conjunction with 'continuationToken' parameter.

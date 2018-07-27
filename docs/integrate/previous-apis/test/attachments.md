@@ -40,7 +40,7 @@ Content-Type: application/json
 |:---------------|:-------|:------------------|:------------------------
 | URL
 | instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string |                   | Name or ID of the [team project](../tfs/projects.md).
+| project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run against which attachment has to be uploaded.
 | Query
 | api-version    | string |                   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -76,7 +76,7 @@ Content-Type: application/json
 |:---------------|:-------|-------------------|:------------------------
 | URL
 | instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string |                   | Name or ID of the [team project](../tfs/projects.md).
+| project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run that contains the result.
 | result         | int    |                   | ID of the test results against which attachment has to be uploaded.
 | Query
@@ -99,7 +99,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/attachm
 |:---------------|:-------|:------------------|:------------------------
 | URL
 | instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string |                   | Name or ID of the [team project](../tfs/projects.md).
+| project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run whose attachment has to be downloaded.
 | attachment     | int    |                   | ID of the test run attachment to be downloaded
 | Query
@@ -129,7 +129,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 |:---------------|:-------|:------------------|:------------------------
 | URL
 | instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string |                   | Name or ID of the [team project](../tfs/projects.md).
+| project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run that contains the result.
 | result         | int    |                   | ID of the test result whose attachment has to be downloaded 
 | attachment     | int    |                   | ID of the test result attachment to be downloaded
@@ -159,7 +159,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/attachm
 |:---------------|:-------|:------------------|:------------------------
 | URL
 | instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string |                   | Name or ID of the [team project](../tfs/projects.md).
+| project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run whose attachment has to be downloaded.
 | Query
 | api-version    | string |                   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -176,7 +176,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/results
 |:---------------|:-------|:------------------|:------------------------
 | URL
 | instance       | string |                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string |                   | Name or ID of the [team project](../tfs/projects.md).
+| project        | string |                   | Name or ID of the [project](../tfs/projects.md).
 | run            | int    |                   | ID of the test run that contains the result.
 | result         | int    |                   | ID of the test result whose attachment has to be downloaded 
 | Query

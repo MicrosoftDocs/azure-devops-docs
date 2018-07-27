@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 |:--------------------|:------|:--------|:---------------------------------
 | URL
 | instance            | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project             | string |         | Name or ID of the team project.
+| project             | string |         | Name or ID of the project.
 | plan                | int    |         | ID of the test plan.
 | suite               | int    |         | ID of the suite that contains the points.
 | Query
@@ -76,7 +76,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 |:--------------------|:------|:---------------------------------
 | URL
 | instance            | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project             | string | Name or ID of the team project.
+| project             | string | Name or ID of the project.
 | plan                | int    | ID of the test plan.
 | suite               | int    | ID of the suite that contains the point.
 | point               | int    | ID of the test point to get.
@@ -114,7 +114,7 @@ Content-Type: application/json
 |:--------------------|:------|:---------------------------------
 | URL
 | instance            | string     | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project             | string     | Name or ID of the team project.
+| project             | string     | Name or ID of the project.
 | plan                | int        | ID of the test plan.
 | suite               | int        | ID of the suite that contains the point.
 | point               | int,int... | ID of the test point to get.<br/>Use a comma-separated list of IDs to update multiple test points.
@@ -163,7 +163,7 @@ Content-Type: application/json
 |:------------------|:-------|:--------|:------------------------
 | URL
 | instance          | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string |         | Name or ID of the team project.
+| project           | string |         | Name or ID of the project.
 | Query
 | api-version       | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | $skip             | int    |         | Number of test points to skip.

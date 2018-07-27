@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 
 If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md)  
 
-You start by opening your personal notification settings. If you don't have a team project yet, create one in [VSTS](../organizations/accounts/set-up-vs.md).
+You start by opening your personal notification settings. If you don't have a project yet, create one in [VSTS](../organizations/accounts/set-up-vs.md).
 
 1. From the web portal, click the icon with your initials or picture icon, and select **Notification settings** from the drop-down menu. 
 

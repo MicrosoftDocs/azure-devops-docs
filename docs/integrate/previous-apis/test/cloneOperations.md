@@ -37,7 +37,7 @@ Content-Type: application/json
 |:------------|:---------       |:----------------------------|:---------------------
 | URL
 | instance    | string          |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string          |                             | Name or ID of the team project.
+| project     | string          |                             | Name or ID of the project.
 | planId      | int             |                             | ID of the test plan in which suite to be cloned is present
 | suiteId      | int             |                             | ID of the test suite to be cloned
 | api-version | string          |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -71,7 +71,7 @@ Content-Type: application/json
 |:------------|:---------|:----------------------------|:---------------------
 | URL
 | instance    | string   |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |                             | Name or ID of the team project.
+| project     | string   |                             | Name or ID of the project.
 | planId      | int      |                             | ID of the test plan to be cloned
 | api-version | string   |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
@@ -93,7 +93,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/cloneOperation/{op
 |:-------------------|:--------|:---------------------
 | URL
 | instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  | Name or ID of the team project.
+| project            | string  | Name or ID of the project.
 | operationID        | int     | Operation ID returned when we queue a clone operation
 | Query
 | api-version        | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.

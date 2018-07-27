@@ -23,7 +23,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/distributedtask/service
 |:--------------|:---------|:------------
 | URL
 | instance      | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | Query
 | version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -39,7 +39,7 @@ POST https://{instance}/defaultcollection/{project}/_apis/distributedtask/servic
 |:--------------|:---------|:------------
 | URL
 | instance      | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | Query
 | version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
@@ -63,7 +63,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/distributedtask/service
 |:--------------|:---------|:------------
 | URL
 | instance      | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | id            | string   | Endpoint ID.
 | Query
 | version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -80,7 +80,7 @@ PUT https://{instance}/defaultcollection/{project}/_apis/distributedtask/service
 |:--------------|:---------|:------------
 | URL
 | instance      | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | id            | string   | Endpoint ID.
 | Query
 | version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -97,7 +97,7 @@ DELETE https://{instance}/defaultcollection/{project}/_apis/distributedtask/serv
 |:--------------|:---------|:------------
 | URL
 | instance      | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | id            | string   | Endpoint ID.
 | Query
 | version       | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.

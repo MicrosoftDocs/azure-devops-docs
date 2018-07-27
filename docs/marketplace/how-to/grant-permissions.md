@@ -72,6 +72,6 @@ To grant permissions for publishing or updating to users or groups, use [TFSSecu
     ```
 
 You can add users later to "TFS Extension Publishers". This is a server-level permission, 
-so updating and deleting an extension will affect all the team project collections that use the extension.
+so updating and deleting an extension will affect all the project collections that use the extension.
 
 ::: moniker-end
