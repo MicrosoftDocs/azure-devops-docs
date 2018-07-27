@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2017
+ms.date: 07/26/2018
 monikerRange: '>= tfs-2013'
 ---
 # Organization Management
@@ -20,16 +20,20 @@ Sign up for a VSTS organization, add users, and manage permissions and access.
 ## 5-Minute Quickstarts
 
 * [Create your VSTS organization](create-organization-msa-or-work-student.md)
+* [Pay for users](../billing/buy-basic-access-add-users.md)
+* [Buy CI/CD](../billing/buy-more-build-vs.md)
 * [Try extensions for free](../billing/try-additional-features-vs.md)
+* [Buy cloud-based load testing](../billing/buy-load-testing-vs.md)
 
 ## Step-by-Step Tutorials
 
-* [Connect VSTS to AAD](connect-organization-to-aad.md)
+* [Connect VSTS to Azure AD](connect-organization-to-aad.md)
 
 ## Reference
 
+* [Permissions](../security/permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)
 * [Default permissions and access](../../organizations/security/permissions-access.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)
-* [Access with Azure AD](access-with-azure-ad.md)
+* [About access levels](../security/access-levels.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json)
 
 ## Resources
 

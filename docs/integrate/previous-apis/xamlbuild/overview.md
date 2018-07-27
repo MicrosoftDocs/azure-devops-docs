@@ -46,7 +46,7 @@ For example, find the build that you requested by using the request ID.
 
 ###Set the build quality
 
-1. If you don't know what qualities are available in your team project, get the list of [qualities](./qualities.md).
+1. If you don't know what qualities are available in your project, get the list of [qualities](./qualities.md).
 2. Set the [quality](./builds.md#setthebuildquality) of the build.
 3. You can also define what [qualities](./qualities.md#addaquality) are available.
 

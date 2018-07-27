@@ -70,7 +70,7 @@ Provide others access to your organization by adding their email address.
 
 2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
-    ![Open Admin Settings](_img/_shared/open-admin-settings-vert.PNG)
+    ![Open Admin Settings](_img/_shared/open-admin-settings-vert.png)
  
 3. Choose **Users** and then choose **Add new users** to open the form.
 
@@ -78,7 +78,7 @@ Provide others access to your organization by adding their email address.
 
 4. Fill out the form.
 
-   ![Web portal, organization admin context, Add new users dialog](_img/add-organization-users-from-user-hub/invite-users-add-user-dialog.PNG)
+   ![Web portal, organization admin context, Add new users dialog](_img/add-organization-users-from-user-hub/invite-users-add-user-dialog.png)
 
    * **Users**: Enter the Microsoft account (MSA) email address for the user organization. You can add several email addresses by separating them with a semicolon (;). Note that in MSAs, the email addresses display in red.
    * **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
