@@ -35,7 +35,7 @@ POST https://{instance}/defaultcollection/_apis/wit/$batch
 |:----------|:----------|:------------------------------
 | URL
 | instance  | string	| [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string	| Name or ID of a team project.
+| project   | string	| Name or ID of a project.
 | Body
 | method	| string	| API Verb: PATCH (Currently only create/update requests are supported)
 | uri		| string	| The url you would use for the call if it were being made independently. 
@@ -80,7 +80,7 @@ Using the Work Item api for [updating a field](work-items.md#updateafield), we c
 
 > **API Availability**: Team Services only (not TFS)
  
-Using the Work Item api for [moving a work item](work-items.md#moveworkitem), we can move two work items to team project "Fabrikam-Scrum".
+Using the Work Item api for [moving a work item](work-items.md#moveworkitem), we can move two work items to project "Fabrikam-Scrum".
 
 [!code-REST [POST__wit__batch2_json](./_data/witChangeProjectAndType/POST__wit__batch.json)]
 

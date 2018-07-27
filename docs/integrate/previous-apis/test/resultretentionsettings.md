@@ -17,7 +17,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)] Look [here](https://visualstudio.microsoft.com/en-us/docs/test/manual-exploratory-testing/getting-started/how-long-to-keep-test-results) to know more about result retention settings.
 
-Below APIs fetch or update result retention settings for a team project. To get list of team projects, look [here](../tfs/projects.md).
+Below APIs fetch or update result retention settings for a project. To get list of projects, look [here](../tfs/projects.md).
 
 ## Get result retention settings
 
@@ -29,7 +29,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/resultretentionset
 |:------------------------|:---------|:-----------------------
 | URL
 | instance                | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project                 | string   | Name or ID of the team project.
+| project                 | string   | Name or ID of the project.
 | Query
 | version	              | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -53,7 +53,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/test/resultretentions
 |:------------------------|:-------|:------------------------
 | URL
 | instance                | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project                 | string | Name or ID of the team project.
+| project                 | string | Name or ID of the project.
 | Query
 | version                 | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body

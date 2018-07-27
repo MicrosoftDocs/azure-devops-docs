@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2017
+ms.date: 07/26/2018
 monikerRange: 'vsts'
 ---
 # VSTS: Access with Azure Active Directory (Azure AD) groups
@@ -50,30 +50,57 @@ to your Azure Active Directory.
 project collection administrator, or organization owner. 
 You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, 
-you must have tenant administrator permissions 
-or have the tenant administrator delegate those permissions to you in the 
+you must have Azure AD administrator permissions 
+or have the directory administrator delegate those permissions to you in the 
 [Azure portal](https://portal.azure.com).
 * Be aware that Azure AD changes may take up to 24 hours for VSTS to see the changes.
 
 
 ##	Add an Azure AD group to a VSTS group
 
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+
+	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
+
+2.  Go to your VSTS admin settings.
+
+    ![Open VSTS admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Choose **Security**, select the VSTS group you want to add a member to, choose **Members**, and then choose **Add...**.
+
+   ![Add a member to your selected VSTS group](_img/manage-azure-ad-groups/admin-settings-security-choose-group-add-member.png)
+4. Add groups and then save your changes.
+
+    ![Bulk add members to group](_img/manage-azure-ad-groups/bulk-add-groups.png)
+ 
+    You [invite guests into your Azure AD](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/11/inviting-directory-guests-to-aad-backed-vsts-accounts) 
+    and into your Azure AD backed VSTS organizations, without waiting for them 
+    to accept, which in turn allows you 
+    to add those guests to your organization, grant access to projects, assign extensions, etc.
+
+5.	Add more users or groups, or save your changes if you're done.
+
+# [Previous navigation](#tab/prev-nav)
+
 1.	Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
-2.	Go to your team project collection or team project, 
+2.	Go to your project collection or project, 
 depending on the VSTS group that you want to work on.
 
-3.  Go to the control panel by choosing the gear icon in the top navigation bar and **Security** in the menu.
+1.  Go to the control panel by choosing the gear icon in the top navigation bar and **Security** in the menu.
 
 4.	Select the VSTS group where you want to add your Azure AD group.
 
     ![Select a VSTS group. Go to Members, Add](_img/manage-azure-ad-groups/vsogroupaddmemberbutton.png)
 
-5.	Find the Azure AD group that you want to add. Just start typing the group's name, alias, 
-or display name. Then select the group to add it.  You can get more details about a group and its members by choosing 
-the contact card icon to the right of the name.
+5.	Find the Azure AD user or group that you want to add. Just start typing the name, alias, 
+or display name. Then select it. You can get more details about a group and its members by choosing the contact card icon to the right of the name.
 
     ![Browse directory for groups](_img/manage-azure-ad-groups/addaadgrouppanelbrowse.png)
     
@@ -82,4 +109,6 @@ the contact card icon to the right of the name.
     to accept, which in turn allows you 
     to add those guests to your organization, grant access to projects, assign extensions, etc.
 
-6.	Add more groups, or save your changes if you're done.
+6.	Add more users or groups, or save your changes if you're done.
+
+---

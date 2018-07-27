@@ -99,7 +99,7 @@ GET https://{instance}/DefaultCollection/_apis/projects/{project}/teams/{team}/m
          
 ## Create a team
 <a id="Create"></a>
-Create a team in a team project
+Create a team in a project
 
 ```no-highlight
 POST https://{instance}.VisualStudio.com/DefaultCollection/_apis/projects/{project}/teams?api-version={version}

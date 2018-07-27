@@ -60,9 +60,9 @@ Or if you don't want to use a credential manager, you can
 ## Add users and assign access
 
 To share work with others,
-[add users and assign access](add-organization-users-from-user-hub.md).add users and assign access
+[add users and assign access](add-organization-users-from-user-hub.md).
 That way, you control the access that each user gets.
-Or [add users to your team project](add-team-members-vs.md),
+Or [add users to your project](add-team-members-vs.md),
 and let VSTS assign the next available access to them.
 
 ## Try extensions for free

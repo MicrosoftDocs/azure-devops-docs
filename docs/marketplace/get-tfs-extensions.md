@@ -58,14 +58,14 @@ you can create a new subscription when you make your first purchase.
 > to the Azure subscription that you want to use for billing. 
 > Co-administrator permissions are available only in the classic Azure portal.
 
-Your team project collection will reuse your Azure subscription 
+Your project collection will reuse your Azure subscription 
 for future Visual Studio Marketplace purchases. 
 [Where can I find more info about Azure billing?](#billing)
 
 0.  From your TFS home page (```https://{server}:8080/tfs/```), 
-go to the team project collection where you want to install the extension.
+go to the project collection where you want to install the extension.
 
-0.  From your team project collection, 
+0.  From your project collection, 
 go to the Visual Studio Marketplace.
 
 	<img alt="Browse Marketplace in new navigation" src="_shared/_img/browse-marketplace2-new.png" style="border: 1px solid #CCCCCC" />
@@ -85,9 +85,9 @@ go to the Visual Studio Marketplace.
 
    <img alt="Install or buy the extension" src="./_img/get-tfs-extensions/connected/buy-test-manager-extension.png" style="border: 1px solid #CCCCCC" />
 
-0.	Confirm the team project collection where you want to install this extension.
+0.	Confirm the project collection where you want to install this extension.
 
-	<img alt="Select team project collection" src="./_img/get-tfs-extensions/connected/select-team-project-collection.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Select project collection" src="./_img/get-tfs-extensions/connected/select-team-project-collection.png" style="border: 1px solid #CCCCCC" />
 
 0.	If you chose a paid extension, 
 select the [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
@@ -103,7 +103,7 @@ that you'll use to pay for extension access.
 
 0.	If you installed a paid extension, 
 make sure to [assign the extension to users who need access](#assign-extension). 
-Otherwise, you can go to your team project collection to use your extension. 
+Otherwise, you can go to your project collection to use your extension. 
 Also, remember tell your team about this extension, 
 so they can start using its capabilities too. 
 
@@ -116,7 +116,7 @@ so they can start using its capabilities too.
 
 While you're disconnected from TFS, you can install free and preview extensions, 
 but not paid extensions, by downloading them, uploading them to your TFS, 
-and then installing them in a team project collection.
+and then installing them in a project collection.
 
 ### Who can upload extensions?
 
@@ -176,21 +176,21 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 	[Why can't I upload extensions?](#no-upload)
 
-### Install in your team project collection
+### Install in your project collection
 
 0. Select and install the extension that you just uploaded. 
 
 	<img alt="Select extension, then click Install" src="./_img/get-tfs-extensions/standalone/install-extension.png" style="border: 1px solid #CCCCCC" />
 
-0. Choose the team project collection where you want to install the extension.
+0. Choose the project collection where you want to install the extension.
 
-	<img alt="Select team project collection, click Continue" src="./_img/get-tfs-extensions/standalone/choose-collection.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Select project collection, click Continue" src="./_img/get-tfs-extensions/standalone/choose-collection.png" style="border: 1px solid #CCCCCC" />
 
 0. Review the permissions that the extension will get when it's installed. Finish installing your extension.
 
 	<img alt="Review the permissions granted to this extension" src="./_img/get-tfs-extensions/standalone/confirm.png" style="border: 1px solid #CCCCCC" />
 
-   You can now go to your team project collection to use your extension. Also, remember to tell your team about this extension, so they can start using its capabilities too. 
+   You can now go to your project collection to use your extension. Also, remember to tell your team about this extension, so they can start using its capabilities too. 
 
 ## Pre-installed extensions (first-party) for disconnected TFS
 

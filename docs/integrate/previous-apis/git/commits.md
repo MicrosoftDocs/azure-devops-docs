@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:-----------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project    | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string   |         | ID of the [repository](./repositories.md).
 | Query
 | api-version| string   |         | Version of the API to use.
@@ -111,7 +111,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 |:-----------|:---------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance   | string   |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project    | string   |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project    | string   |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository | string   |         | ID of the [repository](./repositories.md).
 | Query
 | api-version| string   |         | Version of the API to use.
@@ -137,7 +137,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance    | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string  |         | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string  |         | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  |         | ID of the [repository](./repositories.md).
 | commitId    | string  |         | ID of the commit.
 | Query
@@ -180,7 +180,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 |:--------------|:---------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance      | string                                     | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string                                     | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                     | ID of the [repository](./repositories.md).
+| project       | string                                     | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                     | ID of the [repository](./repositories.md).
 | Query
 | api-version   | string                                     | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
@@ -202,7 +202,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:--------------|:---------------------------------------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
 | instance      | string                                 | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string                                 | ID or name of the [team project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                 | ID of the [repository](./repositories.md).
+| project       | string                                 | ID or name of the [project](../tfs/projects.md). *Optional if specifying an ID for repository.*| repository    | string                                 | ID of the [repository](./repositories.md).
 | Query
 | api-version   | string                                 | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 

@@ -55,11 +55,11 @@ only as long as you keep those builds. To keep test results after you delete you
 edit the build retention policy. If you use Git for version control, 
 you can specify how long to keep automated test results based on the branch. 
 
-1. Sign into VSTS. You'll need at least build level permissions to edit build definitions.
+1. Sign into VSTS. You'll need at least build level permissions to edit build pipelines.
 
-1. Go to your project. Find and edit your build definition.
+1. Go to your project. Find and edit your build pipeline.
 
-   ![Build definition](_img/how-long-to-keep-test-results/edit-build-def.png)
+   ![Build pipeline](_img/how-long-to-keep-test-results/edit-build-def.png)
 
    By default, test results are deleted when the build is deleted.  
 

@@ -28,7 +28,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 1. Select the **Tools > Extensions and Updates...** command, then search for and install the "Continuous Delivery Tools for Visual Studio" extension that matches your version of Visual Studio. (Or install from the [Visual Studio Gallery](http://aka.ms/CD4VS).)
 1. In Visual Studio Solution Explorer, right-click the project and select **Configure Continuous Delivery...**.
 1. In the Configure Continuous Delivery dialog, select an Azure subscription that has Azure Container Service running. See the [Q&A below](#create_acs) for information on creating the service.
-1. Click Create and watch the output window for completion of the process, which will include direct links to the team project, build definition, and release definition. A build will also have been started automatically, so you can monitor the progress of the build and deployment in the VSTS portal.
+1. Click Create and watch the output window for completion of the process, which will include direct links to the project, build definition, and release definition. A build will also have been started automatically, so you can monitor the progress of the build and deployment in the VSTS portal.
 
 > [!Note]
 >
@@ -36,7 +36,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 
 ## Explore the release pipeline
 
-1. Navigate to your team project using the link in the Visual Studio output window after **Configure Continuous Delivery...** command.
+1. Navigate to your project using the link in the Visual Studio output window after **Configure Continuous Delivery...** command.
 1. Click on the **Build and Release** tab.
 1. Click **Builds**, select the build definition shown there, and click **Edit**.
    1. The sequence of tasks that appear are what builds the application when code is committed to the repository, and includes tasks to run unit tests.
@@ -60,9 +60,9 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 > 
 > Docker-enabled ASP.NET Core projects are supported only in Visual Studio 2017 RC.3 and higher.
 
-1. In Visual Studio, [connect first to a Team Project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
+1. In Visual Studio, [connect first to a project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
  
-1. On the Team Explorer home page under **Solutions**, click **New**. (By connecting to a Team Project first and using the command in Team Explorer, the new project is automatically added to source control in the Team Project.)
+1. On the Team Explorer home page under **Solutions**, click **New**. (By connecting to a project first and using the command in Team Explorer, the new project is automatically added to source control in the project.)
  
 1. In the **New Project** dialog box, search on "ASP.NET Core".
  
