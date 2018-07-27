@@ -71,11 +71,11 @@ permissions to delete your VSTS organization.
 
 3. Choose **Overview** and then **Delete**.
 
-   ![Choose Overview, and then Delete](_img/delete-vsts-organization/organization-overview-settings.PNG)
+   ![Choose Overview, and then Delete](_img/delete-vsts-organization/organization-overview-settings.png)
 
 4. In the resulting popup, choose your reason for deleting the organization from the dropdown menu, enter the name of your organization, and then choose **Delete**.
 
-   ![Select reason for deletion, and then select delete](_img/delete-vsts-organization/delete-organization-popup.PNG)
+   ![Select reason for deletion, and then select delete](_img/delete-vsts-organization/delete-organization-popup.png)
 
 5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view) where you'll see your deleted organization.
 
@@ -91,7 +91,7 @@ permissions to delete your VSTS organization.
 
 3. Choose **Delete **.
 
-   ![Choose Delete](_img/delete-vsts-organization/organization-settings-delete.PNG)
+   ![Choose Delete](_img/delete-vsts-organization/organization-settings-delete.png)
 
 4. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view) where you'll see your deleted organization.
 

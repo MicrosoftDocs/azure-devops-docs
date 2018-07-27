@@ -31,7 +31,7 @@ To assign an extension to a user (and, consequently, a group) a PCA must have fi
 2. Go to the **Security** page and check the membership of the Project Collection Administrators group.
 3. Choose the **Group rules** tab. This view shows you all your created group rules.
 
-   ![view-group-rules](_img/manage-group-licensing/view-group-rules.PNG)
+   ![view-group-rules](_img/manage-group-licensing/view-group-rules.png)
 
 4. Choose **Add a group rule** and complete the resulting dialog for the group that you would like to create a rule for, including an access level for that group and any optional project access or extensions that you would like the group to have.
 
