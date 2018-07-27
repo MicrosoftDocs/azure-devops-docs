@@ -145,7 +145,7 @@ You'll need to be a [project administrator](../../organizations/security/set-pro
 
 If your feature teams use Scrum and work in sprints, you'll want to set up a series of sprints that all teams can use. By default, you'll see a set of predefined sprints. Add more sprints and set their sprint dates as described in [Add iterations and set iteration dates](../../organizations/settings/set-iteration-paths-sprints.md). 
 
-You do this from the team project admin context. 
+You do this from the project admin context. 
 
 <img src="_img/setup-sprint-schedule.png" alt="Setup sprint schedule" style="border: 1px solid #C3C3C3;" /> 
 

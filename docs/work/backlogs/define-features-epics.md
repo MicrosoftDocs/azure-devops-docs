@@ -51,7 +51,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -83,12 +83,12 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs>Features, standard hubs](_img/features-epics/open-features-epics.png) 
+	> ![Open the Work>Backlogs>Features](_img/features-epics/open-features-epics.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -111,7 +111,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 Just as you can [add items to your product backlog](create-your-backlog.md), you can add items to your features and epics backlogs. 
 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -126,7 +126,7 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 	Here, we've added six features.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Add a feature, agile hubs](_img/features-epics/features-backlog-agile.png) 
+	> ![Add a feature](_img/features-epics/features-backlog-agile.png) 
 
 	You can add epics in the same way. Simply open the **Epics** backlog from the backlogs selector.  
 
@@ -139,12 +139,12 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 0. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Add a feature, standard hubs](_img/features-epics/add-feature-standard.png) 
+	> ![Add a feature](_img/features-epics/add-feature-standard.png) 
 
 0. 	Repeat this step until you've captured all your main ideas. 
 
@@ -223,7 +223,7 @@ With your features defined, you're able to add child items to them. From any bac
 You can add features to epics, and backlog items to features. 
  
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -232,9 +232,9 @@ To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png) 
 Here we add a product backlog item as a child to the Customer Web - Phase 1 feature. 
 
 > [!div class="mx-imgBorder"]
-> ![Add a product backlog item as a child to a feature, agile hubs](_img/features-epics/add-child-item-to-feature.png) 
+> ![Add a product backlog item as a child to a feature](_img/features-epics/add-child-item-to-feature.png) 
 
-Whenever you see the plus ![plus-icon](../../_img/icons/blue-add-icon.png), you can add a child item. The work item always corresponds to the hierarchy of work item types that are defined for your team project.
+Whenever you see the plus ![plus-icon](../../_img/icons/blue-add-icon.png), you can add a child item. The work item always corresponds to the hierarchy of work item types that are defined for your project.
 
 > [!TIP]    
 > You can also add child user stories from the Kanban board for Features. For details, see 
@@ -249,7 +249,7 @@ Whenever you see the plus ![plus-icon](../../_img/icons/blue-add-icon.png), you 
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 To add a work item, choose the ![plus icon](../_img/icons/green_plus_icon.png) and choose from the options provided.
 
@@ -258,17 +258,17 @@ Here we add a product backlog item as a child to the Customer Web - Phase 1 feat
 ![Add a child item to a backlog work item](_img/org-backlog-features-add-child-ts.png)
 
 Whenever you see the plus ![plus icon](../_img/icons/green_plus_icon.png), you can add a child item. 
-The work item always corresponds to the hierarchy of work item types that are defined for your team project.   
+The work item always corresponds to the hierarchy of work item types that are defined for your project.   
 
 ---
 
-For Scrum team projects, your hierarchy is as shown: 
+For Scrum projects, your hierarchy is as shown: 
 
 ![Hierarchical view of backlogs](_img/ALM_OB_Scrum_WIT_Hier_C.png) 
 
 Because [teams can also set bugs as tasks](../customize/show-bugs-on-backlog.md), bugs can be added as children of PBIs. 
 
-The work item types you'll see depends on the [process you selected to create your team project](../work-items/guidance/choose-process.md). 
+The work item types you'll see depends on the [process you selected to create your project](../work-items/guidance/choose-process.md). 
 
 If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../customize/show-bugs-on-backlog.md). 
 

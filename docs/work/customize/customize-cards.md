@@ -124,7 +124,7 @@ As a first step, you'll see that you can change the card display for each work i
 
 0. Select the WIT you want to customize. Different WITs may present different options for customization.   
 
-	Here we choose User Story. Your choices will vary based on the [process](../work-items/guidance/choose-process.md) used to create your team project and whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md).     
+	Here we choose User Story. Your choices will vary based on the [process](../work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](show-bugs-on-backlog.md).     
   
     ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"      
     ![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)   
@@ -286,7 +286,7 @@ You can control the test plan under which inline tests you add through the Kanba
 	  
 ### Open the test plan, test suite from a card
 
-From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Click the ![open icon](../_img/icons/open-icon.png) open icon to open another browser tab showing the Test hub and associated test plan and test suite that controls the inline tests.
+From a card on the Kanban board, you can easily navigate to the underlying test plan and test suite under which the tests are created. Click the ![open icon](../_img/icons/open-icon.png) open icon to open another browser tab showing **Test** and associated test plan and test suite that controls the inline tests.
 
 <img src="_img/c-cards-navigate-to-test-suite.png" alt="Kanban board, Card, Go to test plan" style="border: 1px solid #C3C3C3;" />  
 

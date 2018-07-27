@@ -39,7 +39,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 
 ### Prerequisites
 
-1. [VSTS project collection administrator or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
+1. [VSTS project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 2. [The **owner** or **contributor** role on your Azure subscription](add-backup-billing-managers.md)
 
 >[!NOTE]

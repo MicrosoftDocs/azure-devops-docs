@@ -38,7 +38,7 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
 </tr>
 <tr>
 <td>**Status synchronization**::</td>
-<td>![Step 5](_img/procguid_5.png "ProcGuid_5") A team lead or team member either modifies a work item in Team Foundation that is linked to a task in an enterprise project or creates a work item and sets the **Submit to Project Server** value to **Yes**. The synchronization engine queries the changes that are made for mapped team projects and sends requests to the approval queue or queues in Project Web Access or Project Web App (PWA).</td>
+<td>![Step 5](_img/procguid_5.png "ProcGuid_5") A team lead or team member either modifies a work item in Team Foundation that is linked to a task in an enterprise project or creates a work item and sets the **Submit to Project Server** value to **Yes**. The synchronization engine queries the changes that are made for mapped projects and sends requests to the approval queue or queues in Project Web Access or Project Web App (PWA).</td>
 </tr>
 <tr>
 <td>**Approval synchronization**:</td>
@@ -51,11 +51,11 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
    
 ### Managing approvals and rejections  
- All changes to work items that are linked to Project Server must be submitted for approval to the project manager of the enterprise project plan that is mapped to the team project. You can set up automatic approval so that all updates from Team Foundation are automatically approved. For more information, see [Approve or reject task updates](http://go.microsoft.com/fwlink/?LinkId=203361).  
+ All changes to work items that are linked to Project Server must be submitted for approval to the project manager of the enterprise project plan that is mapped to the project. You can set up automatic approval so that all updates from Team Foundation are automatically approved. For more information, see [Approve or reject task updates](http://go.microsoft.com/fwlink/?LinkId=203361).  
   
  Approved work items typically get rolled back into the enterprise project plan. Rejected work items require resolution and resubmission.  
   
- For rejected updates, a message appears in the History field for the work item. The message indicates the value that was rejected and who rejected it. For team projects that map to project plans that are hosted on Project Server 2010, the message also contains any comments that the project manager provided about why the item was rejected. Team members must either reconcile the work item and resubmit it or remove it from being submitted to the enterprise project. Also, team members can create a work item query that finds all rejected items based on the **Project Server Last Submit Status**. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
+ For rejected updates, a message appears in the History field for the work item. The message indicates the value that was rejected and who rejected it. For projects that map to project plans that are hosted on Project Server 2010, the message also contains any comments that the project manager provided about why the item was rejected. Team members must either reconcile the work item and resubmit it or remove it from being submitted to the enterprise project. Also, team members can create a work item query that finds all rejected items based on the **Project Server Last Submit Status**. For more information, see [Monitor submissions and resolve rejections](monitor-submissions-resolve-rejections.md).  
   
 ### Synchronization and retry intervals  
  Data synchronization occurs on a schedule and not when each work item is updated. The synchronization job service runs every 30 seconds. During that time, it queries for the relevant work items and fields that have been modified in Project Server or Team Foundation Server or that the project manager has approved.  
@@ -69,46 +69,46 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
   
 ### Objects that are configured to participate in synchronization  
- The following configurations determine which objects participate in the synchronization process. Administrators for Team Foundation generally perform these configurations. However, project managers may also map their enterprise project plans to team projects.  
+ The following configurations determine which objects participate in the synchronization process. Administrators for Team Foundation generally perform these configurations. However, project managers may also map their enterprise project plans to projects.  
   
--   **PWA Instance That Is Mapped to a Team Project Collection**: This mapping configures the team project collection to support synchronization and determines which instances of PWA can synchronize with a collection.  
+-   **PWA Instance That Is Mapped to a Team Project Collection**: This mapping configures the project collection to support synchronization and determines which instances of PWA can synchronize with a collection.  
   
--   **Enterprise Project Plan That Is Mapped to a Team Project**: This mapping configures both the enterprise project plan and the team project to participate in synchronization. This mapping also determines which enterprise projects can synchronize with a team project.  
+-   **Enterprise Project Plan That Is Mapped to a Team Project**: This mapping configures both the enterprise project plan and the project to participate in synchronization. This mapping also determines which enterprise projects can synchronize with a project.  
   
--   **Work Item Types That Are Mapped for Synchronization**: When you map an enterprise project plan to a team project, you specify the types of work items that can be synchronized. This mapping adds the **Project Server** tab to the work item form and adds validation rules for each work item type to the enterprise project plan.  
+-   **Work Item Types That Are Mapped for Synchronization**: When you map an enterprise project plan to a project, you specify the types of work items that can be synchronized. This mapping adds the **Project Server** tab to the work item form and adds validation rules for each work item type to the enterprise project plan.  
   
 -   **Work Item Fields That Are Mapped to Project Server Fields**: By default, the synchronization engine synchronizes the following fields in Team Foundation: Title, Assigned To, Completed Work, Remaining Work, Original Estimate, Start Date, and End Date. You can add fields and set parameters that determine how fields synchronize. For example, you can determine which fields appear on the work item form and whether to allow separate values for a specific field.  
   
  For more information, see [Map components](map-project-server-components.md) and [Specify work item types](specify-wits-to-synchronize.md).  
   
 ### Individual task and work items that are configured for synchronization  
- Project managers determine the tasks in an enterprise project plan that they want to publish to TFS. Team members determine the work items in a team project that they want to submit to Project Server. Project managers can publish detailed breakdowns of deliverables and tasks to TFS or publish and manage only summary task elements. Some restrictions apply to the publishing of subordinate tasks or parent-child work items, as [Data Validation Performed During Updates and Upon Submission](#DataValidation) describes later in this topic.  
+ Project managers determine the tasks in an enterprise project plan that they want to publish to TFS. Team members determine the work items in a project that they want to submit to Project Server. Project managers can publish detailed breakdowns of deliverables and tasks to TFS or publish and manage only summary task elements. Some restrictions apply to the publishing of subordinate tasks or parent-child work items, as [Data Validation Performed During Updates and Upon Submission](#DataValidation) describes later in this topic.  
   
  For more information, see [Manage project details](manage-project-details.md) and [Top-down planning of business requirements](top-down-plan-mapped-team-project.md).  
   
 > [!NOTE]
->  You can map multiple enterprise project plans to one team project, but you can map or link only one task in a project plan to a work item in Team Foundation. Each task in an enterprise project plan is distinct in Project Server. Tasks that are submitted to Project Server update only one work item in Team Foundation. Also, work items that are created in Team Foundation and submitted to Project Server update only one enterprise project plan.  
+>  You can map multiple enterprise project plans to one project, but you can map or link only one task in a project plan to a work item in Team Foundation. Each task in an enterprise project plan is distinct in Project Server. Tasks that are submitted to Project Server update only one work item in Team Foundation. Also, work items that are created in Team Foundation and submitted to Project Server update only one enterprise project plan.  
   
 <a name="DataValidation"></a> 
 
 ##  Data validation performed during updates and upon submission  
- The synchronization process validates tasks and work items that have been tagged for synchronization before they are published to Project Server. Data validation is enforced in both the enterprise project plan and the team project.  
+ The synchronization process validates tasks and work items that have been tagged for synchronization before they are published to Project Server. Data validation is enforced in both the enterprise project plan and the project.  
   
 ### When project managers publish an enterprise project plan  
- When a project manager who is working in Project Professional publishes an enterprise project plan that is mapped to a team project, specific validation checks are performed. The Team Foundation add-in performs the following validation checks on those tasks that are set to publish to Team Foundation (that is, **Publish to Team Project=Yes**):  
+ When a project manager who is working in Project Professional publishes an enterprise project plan that is mapped to a project, specific validation checks are performed. The Team Foundation add-in performs the following validation checks on those tasks that are set to publish to Team Foundation (that is, **Publish to Team Project=Yes**):  
   
--   The value that is set for the **Work Item Type** field must match a type of work item that has been configured to participate in synchronization for the target team project.  
+-   The value that is set for the **Work Item Type** field must match a type of work item that has been configured to participate in synchronization for the target project.  
   
     > [!IMPORTANT]
-    >  **Text30** is the default Project field that is associated with the **Work Item Type** column that is used in synchronizing tasks with work items. If you ever connect the project plan to Team Foundation Server by using the **Choose Team Project** option on the Team ribbon menu, an additional Project field, which is also labeled **Work Item Type**, becomes available. This field, with a default Project field of Text24, supports mapping of project plans that are bound to Team Foundation but does not support synchronizing plans. The Text24-based field contains the full list of work item types for the team project. You can verify whether you have the correct field by pointing to it and verifying that **Text30** appears.  
+    >  **Text30** is the default Project field that is associated with the **Work Item Type** column that is used in synchronizing tasks with work items. If you ever connect the project plan to Team Foundation Server by using the **Choose Team Project** option on the Team ribbon menu, an additional Project field, which is also labeled **Work Item Type**, becomes available. This field, with a default Project field of Text24, supports mapping of project plans that are bound to Team Foundation but does not support synchronizing plans. The Text24-based field contains the full list of work item types for the project. You can verify whether you have the correct field by pointing to it and verifying that **Text30** appears.  
   
--   All values for mapped Project fields must pass specific checks to make sure that their values do not violate a rule that was set for the target work item type. These rules are added to the enterprise project plan when it is mapped to a team project.  
+-   All values for mapped Project fields must pass specific checks to make sure that their values do not violate a rule that was set for the target work item type. These rules are added to the enterprise project plan when it is mapped to a project.  
   
 -   After a task is published, the values that are set for **Publish to Team Project** and **Work Item Type** cannot change. If you do not want to continue to synchronize a task, you must delete it.  
   
 -   If a task and one of its subordinate tasks are both marked for synchronization, all tasks between them must also be marked for synchronization.  
   
--   The value of the **Resource Name** field for a task must match the name of a valid contributor for the target team project.  
+-   The value of the **Resource Name** field for a task must match the name of a valid contributor for the target project.  
   
 -   If multiple resources are assigned to the same task, only one resource assignment must be selected as active. For more information, see [Make Agile team progress visible](make-agile-team-progress-visible-to-the-pmo.md).  
   
@@ -121,9 +121,9 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
 -   The value of the **Assigned To** field must correspond to a team member who also has been added to the enterprise resource pool and the project resources in the project plan. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
--   If only one enterprise project plan is mapped to a team project, its name automatically appears for the **Enterprise Project** field on the **Project Server** tab for newly created work items.  
+-   If only one enterprise project plan is mapped to a project, its name automatically appears for the **Enterprise Project** field on the **Project Server** tab for newly created work items.  
   
--   If more than one enterprise project is mapped to the team project, you must specify a value for the **Enterprise Project** field for new work items that are created and whose **Submit to Project Server** value is set to **Yes**.  
+-   If more than one enterprise project is mapped to the project, you must specify a value for the **Enterprise Project** field for new work items that are created and whose **Submit to Project Server** value is set to **Yes**.  
   
 -   You cannot change the hierarchical structure of work items after they have been linked to Project tasks. For more information, see [Summary Tasks, Task Hierarchy, and Submissions of Work Items that Are Nested at Multiple Levels](understand-how-updates-to-specific-fields-managed.md#updates_nested_tasks).  
   
@@ -157,7 +157,7 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
   
 -   You must grant the service account under which the TfsJobAgent runs the permissions that are required to access each mapped instance of PWA.  
   
--   Users who are assigned to tasks in Project Professional or work items in Team Foundation must be recognized as Contributors in the team project. Those users must also be recognized as resources of the enterprise project plan and granted permission to log on to the instances of PWA that participate in the synchronization process.  
+-   Users who are assigned to tasks in Project Professional or work items in Team Foundation must be recognized as Contributors in the project. Those users must also be recognized as resources of the enterprise project plan and granted permission to sign in to the instances of PWA that participate in the synchronization process.  
   
  For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   

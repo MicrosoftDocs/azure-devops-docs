@@ -20,7 +20,7 @@ ms.date: 02/22/2017
 > [!IMPORTANT]  
 >You can use [Project to plan and schedule work items](create-your-backlog-tasks-using-project.md) that you define in VSTS or Team Foundation Server (TFS). Some features may require customizing the Microsoft Project Mapping file which is only supported for the On-Premises XML process model. For an overview of process models and supported customizations, see [Customize your work tracking experience](../../customize/customize-work.md).  
 
-You can use Project 2010 or later versions to plan team projects, schedule tasks, assign resources, and track changes to data that is stored in VSTS and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
+You can use Project 2010 or later versions to plan projects, schedule tasks, assign resources, and track changes to data that is stored in VSTS and TFS. By using Project, you can access many tools and functions through the simplified graphical menus and Office Ribbon. The Team tab menu, as shown in the following illustration, displays the same functions that are available from the Team tab in Excel.
 
 > [!NOTE]  
 >For version compatibility between VSTS/TFS and Office clients, see [Requirements and compatibility, Office](/tfs/server/compatibility#office).  
@@ -30,7 +30,7 @@ You can use Project 2010 or later versions to plan team projects, schedule tasks
 ![Team Menu ribbon](_img/tfs_oiproj_ribbon.png "TFS_OIProj_Ribbon")  
   
   
-Project 2010 and later versions support several new project fields and functions. Depending on how you use Project to schedule team tasks, you may want to update the task work item form to display some of the new fields. To maintain new Project fields in both your project plan and in TFS, you have to customize the task work item type and the Microsoft Project Field mapping file for the team project. 
+Project 2010 and later versions support several new project fields and functions. Depending on how you use Project to schedule team tasks, you may want to update the task work item form to display some of the new fields. To maintain new Project fields in both your project plan and in TFS, you have to customize the task work item type and the Microsoft Project Field mapping file for the project. 
 
 > [!NOTE]  
 >Customizing the Project Field mapping file is only support for on-premises TFS and the On-premises XML process model.  
@@ -71,14 +71,14 @@ For team members to be able to view or modify new Project fields from the web po
   
 The following table provides the sequence of tasks to perform and related topics for completing these tasks.  
   
-### Determine the Project fields to add to your team project
+### Determine the Project fields to add to your project
 
 If you want team members to schedule tasks manually from a Team Foundation client, you must add the Project fields that store the manual date and duration for tasks to the work item form and project mapping file. You can use the following information to determine which of these Project scheduling fields to add:
 - To support manually scheduled tasks, add one or more of the pjTaskStartText, pjTaskFinishText, or pjTaskDurationText fields to the mapping file. You must map pj\*Text fields to String fields in Team Foundation. These fields accept text strings only.
 - The pjTaskStart, pjTaskFinish, and pjTaskDuration fields contain the scheduled committed dates and duration of a task. 
 
 	> [!TIP]  
-	>By default, these fields are mapped based on the process template that was used to create your team project.
+	>By default, these fields are mapped based on the process template that was used to create your project.
 
 - The scheduling engine uses the pjTaskScheduledStart, pjTaskScheduledFinish, and pjTaskScheduledDuration fields to store the calculated dates and duration of an autoscheduled task.
 - The pjTaskManual, pjTaskPlaceholder, and pjTaskWarning fields indicate whether a task is scheduled manually or automatically, whether a manual task has insufficient information to be scheduled, and whether a Project has identified a potential scheduling conflict with the start date, finish date, or duration, respectively, of a manually scheduled task. 
@@ -99,7 +99,7 @@ For more information, see:
 
 
 ###Update the Microsoft Project Mapping File
-The project mapping file determines how the fields in each task are mapped to fields in Team Foundation and how each field is published and refreshed. Each team project is associated with its own mapping file. You use the `TFSFieldMapping` command-line tool to download and upload the project mapping XML file.
+The project mapping file determines how the fields in each task are mapped to fields in Team Foundation and how each field is published and refreshed. Each project is associated with its own mapping file. You use the `TFSFieldMapping` command-line tool to download and upload the project mapping XML file.
 
 To learn more, see [TFSFieldMapping](../../customize/reference/upload-or-download-the-microsoft-project-mapping-file.md).   
   

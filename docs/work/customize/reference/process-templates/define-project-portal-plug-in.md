@@ -1,7 +1,7 @@
 ---
 title: Define the project portal plug-in for a process template 
 titleSuffix: TFS
-description: Define the initial document libraries, library structure, and documents of a team project's SharePoint portal for Team Foundation Server 
+description: Define the initial document libraries, library structure, and documents of a project's SharePoint portal for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 3351a292-1ce5-4573-ac88-b86ad7482ac0
@@ -25,18 +25,18 @@ ms.date: 10/11/2017
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 
-When you create a team project from Visual Studio Team Explorer, the project portal plug-in creates a SharePoint site and uploads several files contained within the process template. These files will appear under the specifies the folder structure and set of reports that will appear under the **Documents** node in Team Explorer. 
+When you create a project from Visual Studio Team Explorer, the project portal plug-in creates a SharePoint site and uploads several files contained within the process template. These files will appear under the specifies the folder structure and set of reports that will appear under the **Documents** node in Team Explorer. 
 
-By using the portal plug-in, you can define the initial document libraries, library structure, and documents of a [team project's portal](../../../../report/sharepoint-dashboards/share-information-using-the-project-portal.md). You can also include the tasks that create dashboards and Excel reports that are designed to work with the default [process templates](../../../work-items/guidance/choose-process.md).  
+By using the portal plug-in, you can define the initial document libraries, library structure, and documents of a [project's portal](../../../../report/sharepoint-dashboards/share-information-using-the-project-portal.md). You can also include the tasks that create dashboards and Excel reports that are designed to work with the default [process templates](../../../work-items/guidance/choose-process.md).  
 
-The tasks that you specify in the plug-in for SharePoint Products are run only when you create a SharePoint site when you [create a team project](../../../../organizations/projects/create-project.md). For more information about site requirements and administration, see [SharePoint Products requirements for Team Foundation Server](/tfs/server/requirements#sharepoint). 
+The tasks that you specify in the plug-in for SharePoint Products are run only when you create a SharePoint site when you [create a project](../../../../organizations/projects/create-project.md). For more information about site requirements and administration, see [SharePoint Products requirements for Team Foundation Server](/tfs/server/requirements#sharepoint). 
 
 
 > [!IMPORTANT]  
-> When you create a team project from the web portal, the WssTasks.xml 
-> plug-in file is ignored. To add SharePoint integration after you create your team project, 
+> When you create a project from the web portal, the WssTasks.xml 
+> plug-in file is ignored. To add SharePoint integration after you create your project, 
 > see [Configure or add a project portal](../../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
-> Clients that support team project creation vary depending on the TFS version. 
+> Clients that support project creation vary depending on the TFS version. 
 > For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).    
 
 
@@ -79,7 +79,7 @@ For an example of a task that specifies a simple project portal, see the WssTask
   
 |**Attribute**|**Description**|  
 |-------------------|---------------------|  
-|template|Specifies which template to use. You must specify a template that is defined on the server that hosts SharePoint Products for the team projects that will be created.<br />To use the features that are available with the current version of the process templates, specify the following string: `Team Foundation Server Project Portal`.<br />|  
+|template|Specifies which template to use. You must specify a template that is defined on the server that hosts SharePoint Products for the projects that will be created.<br />To use the features that are available with the current version of the process templates, specify the following string: `Team Foundation Server Project Portal`.<br />|  
 |language|Specifies a locale ID to indicate which language version of the site template to use. The English version is 1033.|  
   
 The following example shows how to reference the English version of the Agile process template, which supports dashboards.  
@@ -100,15 +100,15 @@ The following example shows how to reference the English version of the Agile pr
 >  All other tasks defined within the portal plug-in depend on the site creation task because the project portal must be created before you can create additional document libraries or copy files.  
   
 ### Process template performance  
- The files that you specify in WssTasks.xml are included as part of the process template when it is uploaded. The size of the process template affects how long it takes to create a new team project. Larger process templates take longer to create new team projects. Therefore you should consider alternate strategies to provide files when process template performance degrades.  
+ The files that you specify in WssTasks.xml are included as part of the process template when it is uploaded. The size of the process template affects how long it takes to create a new project. Larger process templates take longer to create new projects. Therefore you should consider alternate strategies to provide files when process template performance degrades.  
   
 ### Use the site template  
- You can include files as part of the SharePoint site template. This moves files out of the process template and into the site template and improves performance when creating new team projects.  
+ You can include files as part of the SharePoint site template. This moves files out of the process template and into the site template and improves performance when creating new projects.  
   
  However, there is a benefit to listing files in WssTasks.xml. You can bind Microsoft Project and Microsoft Excel files to a query using the queryid attribute described previously. This assists team members when they open the files because they will already be connected to the correct Team Foundation Server and query.  
   
 ### Use an alternate website  
- If you have a large collection of files that are shared amongst multiple team projects, you can use an alternate Web site to host the files and link to the files from the project portal or Web pages. This strategy also increases performance when creating team projects since the files do not need to be copied to the project portal. For more information, see [Configure or add a project portal](../../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
+ If you have a large collection of files that are shared amongst multiple projects, you can use an alternate Web site to host the files and link to the files from the project portal or Web pages. This strategy also increases performance when creating projects since the files do not need to be copied to the project portal. For more information, see [Configure or add a project portal](../../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
   
 <a name="DocLibraries"></a> 
 ##  Create document libraries  
@@ -206,12 +206,12 @@ The following example shows how to reference the English version of the Agile pr
 ```  
   
 > [!NOTE]
->  You could include folders and files as part of the site template, and you would not have to list them in the XML.  If you specify .exe files and the SharePoint site does not support .exe files, you will not be able to create a team project successfully by using the process template.  
+>  You could include folders and files as part of the site template, and you would not have to list them in the XML.  If you specify .exe files and the SharePoint site does not support .exe files, you will not be able to create a project successfully by using the process template.  
   
 
   
 ### Process guidance content and support files  
-Process guidance is content that documents the processes to be followed by team members who work on a software project. Work items, reports, and queries can all change during the lifecycle of a team project, and they can be different between team projects. Process guidance content provides details about a team project, such as information about how to complete work item fields, examples of healthy and unhealthy reports, and descriptions of the queries. Process guidance also provides details about the process to follow on a team project, such as roles to assume and activities to complete.  
+Process guidance is content that documents the processes to be followed by team members who work on a software project. Work items, reports, and queries can all change during the lifecycle of a project, and they can be different between projects. Process guidance content provides details about a project, such as information about how to complete work item fields, examples of healthy and unhealthy reports, and descriptions of the queries. Process guidance also provides details about the process to follow on a project, such as roles to assume and activities to complete.  
   
 To support access to process guidance from the work item forms in Team Explorer, a set of .htm files are uploaded to the Process Guidance folder within the Documents SharePoint library. These files specify URLs to the visualstudio.com content that is opened when a team member chooses the process guidance ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") icon within a work item form. These files are uploaded based on the `file` tasks defined within the portal plug-in. For example, the Agile process template defines the following `file` tasks:  
   
@@ -244,7 +244,7 @@ You can customize these files to point to other resources for process guidance. 
 ##  Activating dashboard features  
 Dashboards show project data, support investigation, and help teams quickly perform common tasks. Dashboards display several Excel reports and Team Web Access Web parts.  
   
-You use the **activateFeatures** element to cause the creation of the dashboards and Excel reports. You must include the following code in the portal plug-in file, within the **Portal** element, to activate the creation of the dashboards and Excel reports for a team project.  
+You use the **activateFeatures** element to cause the creation of the dashboards and Excel reports. You must include the following code in the portal plug-in file, within the **Portal** element, to activate the creation of the dashboards and Excel reports for a project.  
   
 **To activate dashboard features that are designed for use with the process template for Scrum**:  
   

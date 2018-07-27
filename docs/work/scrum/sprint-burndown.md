@@ -58,7 +58,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 
 ## Open the Sprint backlog for your team 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -88,12 +88,12 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page, standard hubs](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -114,7 +114,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 ## Open the sprint burndown chart 
 
 Choose the chart to display it in a larger view. 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  
@@ -127,7 +127,7 @@ Choose the chart to display it in a larger view.
 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 ::: moniker range=">= tfs-2017"
 > [!div class="mx-imgBorder"]  
 > ![Open sprint burndown chart](_img/burndown/sprint-burndown-open-chart.png)
@@ -174,7 +174,7 @@ In order to access the sprint burndown chart and use it to monitor your sprint p
 ##Current and past sprint burndown charts
 As you complete each sprint, the system maintains a history of your activity. 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
 To view a past sprint and its burndown chart, select the sprint from the Sprint selector.  
 > [!div class="mx-imgBorder"]  
@@ -190,7 +190,7 @@ To view a past sprint and its burndown chart, select the sprint from the Sprint 
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
 ::: moniker range=">= tfs-2017"
 > [!div class="mx-imgBorder"]  

@@ -40,7 +40,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -70,12 +70,12 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page, standard hubs](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -98,12 +98,12 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 To view capacity charts, you'll want to turn **Work details** on for a sprint.
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
 > [!div class="mx-imgBorder"]  
-> ![Turn work details on, agile hubs](_img//adjust-work/work-details-on.png)
+> ![Turn work details on](_img//adjust-work/work-details-on.png)
 
 ::: moniker-end
 
@@ -114,10 +114,10 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 > [!div class="mx-imgBorder"]  
-> ![Turn work details on, standard hubs](_img//adjust-work/work-details-on-standard.png)
+> ![Turn work details on](_img//adjust-work/work-details-on-standard.png)
 
 
 ---
@@ -127,7 +127,7 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 
 If your team's over capacity, you can move items from the sprint backlog back to the product backlog. This will reset the Iteration Path to the default set for your team. Or, you can move the item into the next sprint your team will work in. All the tasks that you've defined for that item will move with the backlog items.   
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -143,7 +143,7 @@ Here we select two items at the bottom of the sprint backlog, open the ![](../..
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature-not-supported.md)] 
 
 ::: moniker-end
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 Here we select the last item in the sprint backlog and drag it to the product backlog. 
 

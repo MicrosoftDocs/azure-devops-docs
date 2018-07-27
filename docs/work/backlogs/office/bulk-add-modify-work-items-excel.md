@@ -23,7 +23,7 @@ You can also bulk add and modify work items using [Microsoft Project](create-you
 In this topic you'll learn:  
 
 >[!div class="checklist"]    
-> * Connect to a team project from Excel 
+> * Connect to a project from Excel 
 > * Add or edit work items and publish your changes to TFS or VSTS
 > * Refresh your Excel worksheet with the latest changes made to the work tracking data store   
 > * Select user accounts  
@@ -39,7 +39,7 @@ In this topic you'll learn:
 
 1.  If you don't have Office Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For VSTS and TFS 2017 and later versions, you'll need Excel 2010 or a later version. 
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?linkid=691127), you'll need to install one of these versions to connect to a team project hosted on VSTS or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or the [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads), you'll need to install one of these versions to connect to a project hosted on VSTS or an on-premises TFS. 
 	
 	> [!NOTE]   
 	>The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration supports connection to VSTS and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
@@ -51,19 +51,19 @@ In this topic you'll learn:
     > [!TIP]  
     >If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/ms268871.aspx). 
 
-4.  Connect to your team project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
+4.  Connect to your project hosted in VSTS or an on-premises TFS where you want to add work items. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
 
     ![ALM\_EXL\_Connect](_img/IC680074.png)
 
-    If it is your first time connecting from Excel, you might have to add your VSTS account or on-premises TFS to the list of recognized servers.
+    If it is your first time connecting from Excel, you might have to add your VSTS organization or on-premises TFS to the list of recognized servers.
 
     ![ALM\_EXL\_AddServer](_img/IC658167.png)
 
     ![Select input list](_img/bulk-modify-excel-new-input-list.png)
 
-5.  Your worksheet is now bound to your team project as a flat list. What this means is that you can add work items to the team project from the worksheet or add work items to the worksheet from the team project.
+5.  Your worksheet is now bound to your project as a flat list. What this means is that you can add work items to the project from the worksheet or add work items to the worksheet from the project.
 
-    ![Empty flat list connected to a team project](_img/bulk-modify-excel-connected-list.png)
+    ![Empty flat list connected to a project](_img/bulk-modify-excel-connected-list.png)
 
 6.  Specify the titles of the work items you want to add and their work item type.
 
@@ -275,9 +275,9 @@ When you open a direct links query in Excel, the Team Foundation add-in converts
 
 ### Multiple worksheets
 
-Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same team project within a project collection.  
+Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same project within a project collection.  
 
-To bulk add or modify work items in a different team project, open a new Excel workbook. 
+To bulk add or modify work items in a different project, open a new Excel workbook. 
 
 ### Use Excel cut and paste functions
 

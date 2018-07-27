@@ -1,7 +1,7 @@
 ---
 title: Upload, download, or delete a process template 
 titleSuffix: TFS
-description: Upload, download, delete, or make default a process template for a team project collection 
+description: Upload, download, delete, or make default a process template for a project collection 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
@@ -19,15 +19,15 @@ ms.date: 02/26/2018
 > [!NOTE]    
 ><b>Feature availability: </b>From an on-premises Team Foundation Server (TFS), you can upload, download, and delete process templates. From Visual Studio Team Services (VSTS), you can only download process templates.  
 
-When you create a team project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a team project or create a team project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).  
+When you create a project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a project or create a project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).  
 
 
 > [!IMPORTANT]  
->When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a SharePoint project portal or Report Manager site aren't supported. SharePoint integration has been deprecated as described in [Discontinue SharePoint integration](../../../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
+>When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a SharePoint project portal or Report Manager site aren't supported. SharePoint integration has been deprecated as described in [Discontinue SharePoint integration](../../../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md).
 >
->For TFS 2018 and later version, if you want to use SQL Server Reporting with your on-premises TFS, then you'll have to add support after you create your team project. For details, see [Process template and plug-in files, Client support for project creation](../../customize/reference/process-templates/overview-process-template-files.md#client-support).  
+>For TFS 2018 and later version, if you want to use SQL Server Reporting with your on-premises TFS, then you'll have to add support after you create your project. For details, see [Process template and plug-in files, Client support for project creation](../../customize/reference/process-templates/overview-process-template-files.md#client-support).  
 
-You can upload, download, and delete process templates for a team project collection. Also, you can mark a template to appear as the default when you add team projects. 
+You can upload, download, and delete process templates for a project collection. Also, you can mark a template to appear as the default when you add projects. 
 
 [!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
 
@@ -43,7 +43,7 @@ You can upload, download, and delete process templates for a team project collec
 
 	![Open Process Template Manager](_img/open-process-template-manager.png)
 
-	You'll see a list of each process template that has been uploaded to the team project collection. 
+	You'll see a list of each process template that has been uploaded to the project collection. 
 
 	![Select process template to work with](_img/process-template-manager.png)
 	
@@ -71,8 +71,8 @@ You can upload, download, and delete process templates for a team project collec
 	</td>
 	<td>To download the process template to a local computer.<br/>
 	<p>In the **Download Process Template** dialog box, select a folder where the process template will be downloaded.</p>
-	<p>If you're downloading a process template to use to [configure new features](../../customize/configure-features-after-upgrade.md), [manually add new features](../../customize/add-features-manually.md) or [update a custom process template to enable new features](../../customize/update-customized-process-template.md)--choose the process that corresponds to the one you used previously to create your team project. For example, if you're updating a team project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). </p>
-	<p>You can determine which process template to select based on the [work item types defined for your existing team project](#wit_correlation).</p>
+	<p>If you're downloading a process template to use to [configure new features](../../customize/configure-features-after-upgrade.md), [manually add new features](../../customize/add-features-manually.md) or [update a custom process template to enable new features](../../customize/update-customized-process-template.md)--choose the process that corresponds to the one you used previously to create your project. For example, if you're updating a project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). </p>
+	<p>You can determine which process template to select based on the [work item types defined for your existing project](#wit_correlation).</p>
 	</td>
 	</tr>
 	
@@ -100,8 +100,8 @@ You can upload, download, and delete process templates for a team project collec
 
 <a id="wit_correlation"> </a>
 
-##Process template correlation with an existing team project
-<p>To determine the type of process template that was used to create your team project, review the work item types that appear in the <b>New Work Item</b> menu for Team Explorer and then compare them with the work item types in the following chart. If your work item types differ from those shown listed, then a custom process template might have been used.</p>
+##Process template correlation with an existing project
+<p>To determine the type of process template that was used to create your project, review the work item types that appear in the <b>New Work Item</b> menu for Team Explorer and then compare them with the work item types in the following chart. If your work item types differ from those shown listed, then a custom process template might have been used.</p>
 
 <table>
 <tbody valign="top">
@@ -145,7 +145,7 @@ For additional restrictions, see [Naming restrictions](../../../organizations/se
 
 Periodically, updates are made to the process templates to support new features. For details, see [Changes made to process templates](changes-to-process-templates.md).  
 
-- [Create a team project](../../../organizations/projects/create-project.md)   
+- [Create a project](../../../organizations/projects/create-project.md)   
 - [Customize a process template](../../customize/reference/process-templates/customize-process.md)   
 - [Process template and plug-in files](../../customize/reference/process-templates/overview-process-template-files.md)  
 - [Import and update a process (Hosted XML)](../../customize/import-process/import-process.md)     
@@ -155,8 +155,8 @@ Periodically, updates are made to the process templates to support new features.
 ### Update a process template to enable new features 
 When you upgrade your on-premises TFS to a later version, new features may become available. [To gain access to these new features](../../customize/configure-features-after-upgrade.md), you may need to [update a customized process template](../../customize/update-customized-process-template.md). 
 
-### Add another team project 
-You can add a team project from the web portal or Visual Studio/Team Explorer. Some process template files are ignored when you create a team project from the web portal. For details, see [Process template and plug-in files, Client support for project creation](../../customize/reference/process-templates/overview-process-template-files.md#client-support). 
+### Add another project 
+You can add a project from the web portal or Visual Studio/Team Explorer. Some process template files are ignored when you create a project from the web portal. For details, see [Process template and plug-in files, Client support for project creation](../../customize/reference/process-templates/overview-process-template-files.md#client-support). 
 
 
 
