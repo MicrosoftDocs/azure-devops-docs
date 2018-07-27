@@ -45,7 +45,7 @@ Typically, you'll choose this option in either of these situations:
 
 ## Prerequisites
 
-The first time that you set up billing for your VSTS organization--whether via the Azure portal or as part of making a purchase in the Visual Studio Marketplace--you'll need:
+The first time that you set up billing for your VSTS organization - whether via the Azure portal or as part of making a purchase in the Visual Studio Marketplace - you'll need:
 
 * [VSTS project collection administrator or organization owner permissions](vsts-billing-faq.md#find-owner)
 * [The owner or contributor role on your Azure subscription](add-backup-billing-managers.md)
