@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs?api-version={
 |:------------------|:-------|:--------|:------------------------
 | URL
 | instance          | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string |         | Name or ID of the team project.
+| project           | string |         | Name or ID of the project.
 | Query
 | api-version       | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | buildUri          | string |         | URI of the build that the runs used.
@@ -70,7 +70,7 @@ Content-Type: application/json
 |:------------------|:-------|:--------|:------------------------
 | URL
 | instance          | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string |         | Name or ID of the team project.
+| project           | string |         | Name or ID of the project.
 | Query
 | api-version       | string |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | includeRunDetails | bool   | false   | If true, include all the properties of the runs.
@@ -92,7 +92,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}?api-ver
 |:------------------|:-------|:------------------------
 | URL
 | instance          | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string | Name or ID of the team project.
+| project           | string | Name or ID of the project.
 | run               | int    | ID of the run to get.
 | Query
 | api-version       | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -109,7 +109,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/statist
 |:------------------|:-------|:------------------------
 | URL
 | instance          | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string | Name or ID of the team project.
+| project           | string | Name or ID of the project.
 | run               | int    | ID of the run to get.
 | Query
 | api-version       | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -126,7 +126,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}/message
 |:------------------|:-------|:------------------------
 | URL
 | instance          | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project           | string | Name or ID of the team project.
+| project           | string | Name or ID of the project.
 | run               | int    | ID of the run to get.
 | Query
 | api-version       | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -186,13 +186,13 @@ Content-Type: application/json
 |:------------------------------------|:---------|:-----------------------------------|:------------------------
 | URL
 | instance                            | string   |                                    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project                             | string   |                                    | Name or ID of the team project.
+| project                             | string   |                                    | Name or ID of the project.
 | Query
 | api-version                         | string   |                                    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | name                                | string   |		                              | Name of the test run.
 | plan.id                             | int      |                                    | ID of the test plan to contain the run.
-| iteration                           | string   | Root iteration of the team project | The iteration in which to create the run.
+| iteration                           | string   | Root iteration of the project | The iteration in which to create the run.
 | build.id                            | int      |                                    | ID the build to use.
 | state                               | enum { NotStarted, InProgress, Waiting } | NotStarted | The state to place the run in when it's created.
 | dueDate                             | DateTime |                                    | Due date and time for test run.
@@ -270,7 +270,7 @@ Content-Type: application/json
 |:------------------------------------|:---------|:------------------------
 | URL
 | instance                            | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project                             | string   | Name or ID of the team project.
+| project                             | string   | Name or ID of the project.
 | run                                 | int      | ID of the run to update.
 | Query
 | api-version                         | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -325,7 +325,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/runs/{run}?api-
 |:------------------------|:---------|:------------------------
 | URL
 | instance                | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project                 | string   | Name or ID of the team project.
+| project                 | string   | Name or ID of the project.
 | run                     | int      | ID of the run to update
 | Query
 | api-version             | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.

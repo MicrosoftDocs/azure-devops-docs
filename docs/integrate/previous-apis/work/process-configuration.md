@@ -22,7 +22,7 @@ ms.date: 08/17/2016
 ## Get a project's process configuration 
 <a id="GetProcessConfiguration"></a>
 
-[Team projects](../tfs/projects.md) have process configuration, process configuration defines the behavior of backlogs and boards.  
+[Projects](../tfs/projects.md) have process configuration, process configuration defines the behavior of backlogs and boards.  
 
 | Setting Name       | Description 
 |:------------------ |:---------   

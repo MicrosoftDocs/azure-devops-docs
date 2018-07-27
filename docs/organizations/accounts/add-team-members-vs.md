@@ -1,5 +1,5 @@
 ---
-title: VSTS - Add team project members | VSTS
+title: VSTS - Add project members | VSTS
 description: How to add members to projects in VSTS so you can share code, work with your team, track status, coordinate dev, build, test, and release activities
 ms.prod: devops
 ms.technology: devops-accounts
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/18/2018
+ms.date: 07/26/2018
 monikerRange: 'vsts'
 ---
 # Add project members in VSTS
@@ -54,15 +54,16 @@ To add members to projects, you'll need
 
 2. On the landing page (which is your projects page ```https://{yourorganization}.visualstudio.com/_projects```), select your  project.
 
-   ![From landing page, select project](_img/_shared/select-project.PNG)
+   ![From landing page, select project](_img/_shared/select-project.png)
 
 3. Invite members to your project.
 
-   ![On your project home page, choose Invite a friend](_img/add-team-members/add-member-to-project.PNG)
+   ![On your project home page, choose Invite a friend](_img/add-team-members/add-member-to-project.png)
 
 4. Enter user and team information, and then choose **Add**. 
 
-   ![Add user to project](_img/add-team-members/add-user-to-project.PNG)
+    ![Add user to project](_img/add-team-members/add-user-to-project.png)
+
 ---
 
 # [Previous navigation](#tab/previous-nav)
@@ -71,17 +72,17 @@ To add members to projects, you'll need
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
-2. On the organization landing page (which is your projects page, ```https://{yourorganization}.visualstudio.com/_projects```), find and select your team project.
+2. On the organization landing page (which is your projects page, ```https://{yourorganization}.visualstudio.com/_projects```), find and select your project.
 
-   ![On your Projects page, select your team project](_img/add-team-members/select-team-project-updated-ui.png)
+   ![On your Projects page, select your project](_img/add-team-members/select-team-project-updated-ui.png)
 
-3. Invite members to your new team project...
+3. Invite members to your new project...
 
-    ![On your team project home page, choose Invite a friend](_img/add-team-members/invite-team.png)
+    ![On your project home page, choose Invite a friend](_img/add-team-members/invite-team.png)
 
-   Or invite them to an existing team project.
+   Or invite them to an existing project.
 
-   ![On your team project page, choose Manage team members](_img/add-team-members/invite-team-existing.png)
+   ![On your project page, choose Manage team members](_img/add-team-members/invite-team-existing.png)
 
     Adding members from the project page adds them to the default team for the project.
 
@@ -111,13 +112,13 @@ To add members to projects, you'll need
 
 	![Add members' sign-in addresses or display names](_img/add-team-members/add-user2.png)
 
-	![Members are now added to your team project](_img/add-team-members/team-project-members.png) 	
+	![Members are now added to your project](_img/add-team-members/team-project-members.png) 	
 
-	After you add members to your team project, 
+	After you add members to your project, 
 	each member gets an invitation email that 
 	links to your VSTS organization. 
 	They can use this link to sign in to your organization 
-	and find your team project.
+	and find your project.
 	First-time members might be asked for extra details 
 	when they sign in to personalize their experience.
 
@@ -131,7 +132,7 @@ To add members to projects, you'll need
 
 ## Next steps
 
-* [Connect to a team project](../projects/connect-to-projects.md)
+* [Connect to a project](../projects/connect-to-projects.md)
 * [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 

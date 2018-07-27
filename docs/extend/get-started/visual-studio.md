@@ -40,7 +40,7 @@ and an action on the queries context menu to launch your hub.
 ## Create a hub
 
 Use a hub to surface your web app in an iframe in VSTS.
-The one we're creating here will show up in the team project's **Work** hub group.
+The one we're creating here will show up in the project's **Work** hub group.
 
 ![Location of a new hub in VSTS](../_shared/procedures/_img/hub-location.png)
 
@@ -179,7 +179,7 @@ with a callback that loads the grid control with the results.
     });
 	```
 
-	This code assumes you have at least four work items in your team project. If you don't create them before you try the action.
+	This code assumes you have at least four work items in your project. If you don't create them before you try the action.
 
 1. Refresh the page to see the data from your REST API call displayed in the grid.
 

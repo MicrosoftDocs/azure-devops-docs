@@ -30,7 +30,7 @@ In this walkthrough we'll show how to use Visual Studio to automatically define 
 
 The quickest way to create a continuous delivery process is with the Continuous Delivery Tools for Visual Studio (2017 RC.3 and newer),
 which automate the creation of build and release definitions. The tools assume that you have an existing VSTS subscription,
-and that your project has been added to source control in a Team Project.
+and that your project has been added to source control.
 
 To install the extension within Visual Studio, select **Tools > Extensions and Updates...** and search for **Continuous Delivery Tools for Visual Studio**. Alternatively, you can download the installer from the [Visual Studio Gallery](http://aka.ms/CD4VS).
 
@@ -46,7 +46,7 @@ To create both the build (CI) and release (CD) definitions for a project, in Vis
 
 <h3 id="new_solution">How do I create an ASP.NET 4 web app?</h3>
 
-1. In Visual Studio, [connect to your team project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
+1. In Visual Studio, [connect to your project](../../../../organizations/projects/connect-to-projects.md#visual-studio).
 
 1. On the Team Explorer home page (Keyboard: Ctrl + 0, H), under **Solutions**, click **New**.
 

@@ -27,7 +27,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 |:--------------|:---------|:------------
 | URL
 | account       | string   | Your Visual Studio Team Services account.
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | Query
 | definitionId  | int   | Releases for this definition.
 | createdBy     | string   | Releases created by this user.<br/>Alias of the user. `chuckreinhart@outlook.com`, for example.
@@ -55,7 +55,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 |:----------|:-------|:------------
 | URL
 | account   | string | Your Visual Studio Team Services account.
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | releaseId   | int    | ID of the release.
 | Query
 | version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -91,7 +91,7 @@ Content-Type: application/json
 |:----------|:-------|:------------
 | URL
 | account   | string | Your Visual Studio Team Services account.
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Request body
@@ -123,7 +123,7 @@ Content-Type: application/json
 |:------------|:--------|:------------
 | URL
 | account     | string  | Your Visual Studio Team Services account.
-| project     | string  | [Team project](../tfs/projects.md) ID or name.
+| project     | string  | [Project](../tfs/projects.md) ID or name.
 | releaseId     | int     | ID of the release.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -154,7 +154,7 @@ Content-Type: application/json
 |:------------|:--------|:------------
 | URL
 | account     | string  | Your Visual Studio Team Services account.
-| project     | string  | [Team project](../tfs/projects.md) ID or name.
+| project     | string  | [Project](../tfs/projects.md) ID or name.
 | releaseId     | int     | ID of the release.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -176,7 +176,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 |:----------|:-------|:------------
 | URL
 | account   | string | Your Visual Studio Team Services account.
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | releaseId | int    | Logs for this release.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -194,7 +194,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 |:----------|:-------|:------------
 | URL
 | account   | string | Your Visual Studio Team Services account.
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | releaseId | int |	Release ID for which this approval belongs to.
 | environmentId | string |	Environment ID for which this approval belongs to.
 | taskId	| int |	Task iD for the log.

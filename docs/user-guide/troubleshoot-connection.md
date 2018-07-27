@@ -40,7 +40,7 @@ There are two types of identities that can sign in to VSTS - Microsoft accounts 
 > 401 - Not Authorized
 
 > [!div class="mx-imgBorder"]
-![troubleshoot VSTS connection 401 error1](_img/troubleshoot-connection/401_notauthorized.PNG)
+![troubleshoot VSTS connection 401 error1](_img/troubleshoot-connection/401_notauthorized.png)
 
 The most common error page encountered is the "401 Not Authorized" error. This occurs when your identity does not have permission to enter a VSTS account. Common reasons for this include:
 

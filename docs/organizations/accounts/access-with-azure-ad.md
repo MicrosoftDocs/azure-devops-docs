@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-/ms.date: 07/24/2018
+/ms.date: 07/26/2018
 monikerRange: 'vsts'
 ---
 
@@ -75,8 +75,8 @@ Azure AD to your VSTS organization. Learn about
 Otherwise, work with your directory's global administrator to add users.
 Learn more about [Azure AD administrators](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
-  To check your permissions, [Sign in to the Azure classic portal](https://manage.windowsazure.com/) with your
-  work or school account. Go to your target directory.
+  To check your permissions, [Sign in to the Azure portal](https://ms.portal.azure.com) with your
+  work or school account. Go to your directory.
 
   ![Check that you're a global administrator](_img/access-with-azure-ad/check-your-role-azure-active-directory.png)
 
