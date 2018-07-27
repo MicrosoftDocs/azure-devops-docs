@@ -119,7 +119,7 @@ A build template to help with this configuration is under development.
 
 ### Q: How do I automate the process of provisioning machines and shutting them down?
 
-**A**: You can do this with using a build definition. In this context, think of the build
+**A**: You can do this with using a build pipeline. In this context, think of the build
 (CI pipeline) as an automation orchestrator rather than a system that does build.
 A build template to help with this configuration is under development.
 

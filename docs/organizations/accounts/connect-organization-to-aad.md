@@ -43,7 +43,7 @@ If your users are being asked to choose between signing in to VSTS with their pe
 [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
 >[!div class="mx-imgBorder"]
-![Choose between work or school account and a personal account](_img/connect-organization-to-aad/disambiguation-screen-VSTS.PNG)
+![Choose between work or school account and a personal account](_img/connect-organization-to-aad/disambiguation-screen-VSTS.png)
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 
@@ -78,13 +78,13 @@ All users of the VSTS must exist in the target Azure AD tenant. Any user that is
 
     * If any users exist on the VSTS Users page, but are missing from your target Azure AD tenant, [add them as B2B guests](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-iw-add-users).
 
-      ![Add guest user to Azure AD](_img/connect-organization-to-aad/Add-Guest-User-AAD.PNG)
+      ![Add guest user to Azure AD](_img/connect-organization-to-aad/Add-Guest-User-AAD.png)
 
        These guests can be external to your organization (User@othercompany.com) or existing Microsoft account (MSA) users (user@outlook.com or user@gmail.com).
 
     * If you are notified that you do not have permissions to invite users, verify that your user organization is authorized to invite external users under User Settings.
 
-      ![User organization user settings](_img/connect-organization-to-aad/external-user-settings-aad.PNG)
+      ![User organization user settings](_img/connect-organization-to-aad/external-user-settings-aad.png)
 
        If you have recently modified these settings or assigned the Guest Inviter role to a user, there might be a 15- 60-minute delay before the changes take effect.
 
@@ -131,11 +131,11 @@ While there is no downtime, users will be affected by this change, so it's best 
 2. Browse to your VSTS organization by entering **Team services organizations** into the **Search** box, and choosing **Team Services organizations**.
 
     > [!div class="mx-imgBorder"]
-![Azure portal, browse to team services](_img/connect-organization-to-aad/select-team-services-organizations.PNG)
+![Azure portal, browse to team services](_img/connect-organization-to-aad/select-team-services-organizations.png)
 
 3. Select your VSTS organization. If you don't see your organization, check to make sure you are using the expected tenant in the upper right of the Azure portal and confirm that you are logged in with a Microsoft account that is a Project Collection Administrator of the VSTS organization in question.
 
-   ![Azure portal, browse to team services](_img/connect-organization-to-aad/team-services-organizations-aad.PNG)
+   ![Azure portal, browse to team services](_img/connect-organization-to-aad/team-services-organizations-aad.png)
 
 4. Choose **Connect**.
 

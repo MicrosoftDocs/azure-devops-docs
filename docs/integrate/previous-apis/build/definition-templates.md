@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/templ
 |:--------------|:---------------------|:------------
 | URL
 | instance      | string               | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string               | [Team project](../tfs/projects.md) ID or name.
+| project       | string               | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -43,7 +43,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definition/templa
 |:-------------|:-------|:------------
 | URL
 | instance     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project      | string | [Team project](../tfs/projects.md) ID or name.
+| project      | string | [Project](../tfs/projects.md) ID or name.
 | templateId   | int    | ID of the build definition template.
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -61,7 +61,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/build/definitions/templ
 |:--------------|:---------------------|:------------
 | URL
 | instance      | string               | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string               | [Team project](../tfs/projects.md) ID or name.
+| project       | string               | [Project](../tfs/projects.md) ID or name.
 | templateId    | int                  | ID of the build definition template.
 | Query
 | api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -79,7 +79,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/definitions/te
 |:--------------|:---------------------|:------------
 | URL
 | instance      | string               | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string               | [Team project](../tfs/projects.md) ID or name.
+| project       | string               | [Project](../tfs/projects.md) ID or name.
 | templateId    | int                  | ID of the build definition template.
 | Query
 | api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.

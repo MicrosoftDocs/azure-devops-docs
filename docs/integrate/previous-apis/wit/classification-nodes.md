@@ -30,7 +30,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnodes
 |:--------------|:----------|:------------
 | URL
 | instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project 		| string 	| Name or ID of a team project that contains the classification nodes. |
+| project 		| string 	| Name or ID of a project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string    | Path of the classification node. |
 | Query
@@ -71,7 +71,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnodes
 |:--------------|:----------|:------------
 | URL
 | instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project 		| string 	| Name or ID of a team project that contains the classification nodes. |
+| project 		| string 	| Name or ID of a project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string 	| Path of the classification node. |
 | Query
@@ -102,7 +102,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 |:--------------|:--------------------|:------------
 | URL
 | instance      | string              | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project 		| string			  | Name or ID of a team project that contains the classification nodes. |
+| project 		| string			  | Name or ID of a project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string 			  | Path of the classification nodes. |
 | Query
@@ -137,7 +137,7 @@ PATCH https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnod
 |:--------------|:--------------------|:------------
 | URL
 | instance      | string              | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project 		| string              | Name or ID of a team project that contains the classification nodes. |
+| project 		| string              | Name or ID of a project that contains the classification nodes. |
 | nodeType		| enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath      | string 	          | Path of the classification nodes. |
 | Query
@@ -176,7 +176,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/wit/classificationnode
 |:--------------|:--------------------|:------------
 | URL
 | instance      | string              | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project 	| string                  | Name or ID of a team project that contains the classification nodes. |
+| project 	| string                  | Name or ID of a project that contains the classification nodes. |
 | nodeType	| enum {areas, iterations} | The type of classification node you are trying access. |
 | targetNodePath| string 	          | Path of the target parent classification node.  |
 | Query
@@ -206,7 +206,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/classificationno
 |:--------------       |:--------------------     |:------------
 | URL
 | instance             | string                   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project              | string                   | Name or ID of a team project that contains the classification nodes. |
+| project              | string                   | Name or ID of a project that contains the classification nodes. |
 | nodeType		       | enum {areas, iterations} | The type of classification node you are trying access. |
 | nodePath             | string 	              | Path of the classification nodes.|
 | Query

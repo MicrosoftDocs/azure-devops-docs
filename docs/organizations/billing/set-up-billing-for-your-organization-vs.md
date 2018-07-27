@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/17/2018
+ms.date: 07/26/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -25,7 +25,7 @@ If you don't have an Azure subscription, [create one](https://azure.microsoft.co
 
 ## Prerequisites
 
-The first time that you set up billing for your VSTS organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
+The first time that you set up billing for your VSTS organization - whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need the following:
 
 * [VSTS project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 * [An Azure subscription you can use to purchase](add-backup-billing-managers.md)
@@ -40,30 +40,25 @@ If you'd like to set up billing for your organization prior to buying something 
 
     [Browser problems in Azure?](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/)
 
-2. Enter *Team Services organizations* into the search box at the top of your screen and then select **Team Services organizations** in the drop-down menu.
+2. Choose **All services** and then select **Team Services administration**.
 
-    > [!div class="mx-imgBorder"]
-![More services, Developer tools, VSTS organizations, select your organization](_img/set-up-billing/azure-portal-team-services-organizations.png)
+   ![More services, Developer tools, VSTS organizations, select your organization](_img/set-up-billing/azure-portal-team-services.png)
 
 3. Select your organization.
 
-   > [!div class="mx-imgBorder"]
-   > ![Azure portal select your organization](_img/set-up-billing/azure-portal-select-your-organization.png)
+   ![Azure portal select your organization](_img/set-up-billing/azure-portal-select-organization.png)
 
-4. Choose **Link**.
+4. Choose **Set up billing**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Choose Link button over middle panel](_img/set-up-billing/azure-portal-select-link.png)
+    ![Choose Link button over middle panel](_img/set-up-billing/azure-portal-choose-set-up-billing.png)
 
 5. Select your Azure subscription and then choose **Link**.
 
-   > [!div class="mx-imgBorder"]
-![Select an Azure subscription](_img/set-up-billing/azure-portal-select-subscription.png)
+   ![Select an Azure subscription](_img/set-up-billing/azure-portal-link-your-organization.png)
 
  After Azure sets up the link, your VSTS organization appears linked to your Azure subscription.
 
-> [!div class="mx-imgBorder"]
-![Your VSTS organization is now linked to your Azure subscription](_img/set-up-billing/azure-portal-linked-to-vsts-organization.png)
+![Your VSTS organization is now linked to your Azure subscription](_img/set-up-billing/azure-portal-billing-set-up-complete.png)
 
 ## Next steps
 

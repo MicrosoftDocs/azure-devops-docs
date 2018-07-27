@@ -42,7 +42,7 @@ Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set th
 
 ```yaml
 # https://aka.ms/yaml
-queue: 'Hosted Linux'
+queue: 'Hosted Linux Preview'
 steps:
 
 - task: UsePythonVersion@0

@@ -147,9 +147,10 @@
     items:
     - name: Tasks
       href: process/tasks.md
-    - name: Phases
-      href: process/phases.md
+    - name: Jobs
       items: 
+      - name: Phases
+        href: process/phases.md
       - name: Server phases
         href: process/server-phases.md
       - name: Deployment group phases

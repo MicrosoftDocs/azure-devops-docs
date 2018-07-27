@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/24/2017
+ms.date: 07/26/2017
 monikerRange: 'vsts'
 ---
 # Create your VSTS organization with a personal Microsoft account or a work/school account
@@ -34,7 +34,7 @@ so your team can build often, test early, and ship faster.
 ##	What do I need to sign up for a VSTS organization?
 
 *	To use only Microsoft accounts 
-	with your VSTS organization, follow the steps below and ignore the Azure Active Directory (Azure Active Directory) call outs. 
+	with your VSTS organization, complete the following steps, ignoring the Azure Active Directory (Azure Active Directory) call outs. 
 
 	Don't have a Microsoft account?  You can create a Microsoft account 
 	when you sign up for VSTS.
