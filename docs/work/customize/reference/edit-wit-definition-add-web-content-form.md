@@ -91,21 +91,21 @@ For information about the syntax structure of the elements used to add Web conte
     -   **To specify a dynamic URL to be determined at run time**:  
   
         ```xml
-        <Tab Label="Tab Label">  
-              <Group>  
-              <Column PercentWidth="100">  
-                 <Control Type="WebpageControl" Name="Webpage" Label=" Name of Web Page" LabelPosition="Top" >  
-                       <WebpageControlOptions AllowScript="false">  
-                       <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters">  
-              <Param Index="0" Value="Param Value 0"/>  
-              <Param Index="1" Value="Param Value 1"/>  
-              <Param Index="2" Value="Param Value 2"/>  
-                       </Link>  
-                       </WebpageControlOptions>  
-                 </Control>  
-              </Column>  
-              </Group>  
-        </Tab>  
+        <Tab Label="Tab Label">
+            <Group>
+                <Column PercentWidth="100">
+                    <Control Type="WebpageControl" Name="Webpage" Label="Name of Web Page" LabelPosition="Top">
+                        <WebpageControlOptions AllowScript="false">
+                            <Link UrlRoot="URL of Web Page" URLPath="URL path with parameters">
+                                <Param Index="0" Value="Param Value 0" />
+                                <Param Index="1" Value="Param Value 1" />
+                                <Param Index="2" Value="Param Value 2" />
+                            </Link>
+                        </WebpageControlOptions>
+                    </Control>
+                </Column>
+            </Group>
+        </Tab>
         ```  
   
          Replace *Tab Label*, *URL of Web Page, URL path with parameters*, and *Param Value 1, 2, and 3* with the information that you want to appear on the work item form.  
