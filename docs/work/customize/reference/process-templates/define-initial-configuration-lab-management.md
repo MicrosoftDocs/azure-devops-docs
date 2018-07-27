@@ -1,7 +1,7 @@
 ---
 title: Define the initial configuration of Lab Management 
 titleSuffix: VSTS & TFS
-description: Customizes the team project's initial security configuration for activities that are performed by using Visual Studio Lab Management for Team Foundation Server
+description: Customizes the project's initial security configuration for activities that are performed by using Visual Studio Lab Management for Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: cd34554f-1ab8-450d-b997-942e7a2352cf
@@ -16,7 +16,7 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-You can customize a team project's initial security configuration for activities that are performed by using Visual Studio Lab Management. The lab.xml plug-in file specifies the security permissions for lab management activities of all team projects that are created with the same process template. It also specifies the task to upload the default template file for Lab Management, which is named LabDefaultTemplate.xaml. This file is uploaded to the database for the team project.  
+You can customize a project's initial security configuration for activities that are performed by using Visual Studio Lab Management. The lab.xml plug-in file specifies the security permissions for lab management activities of all projects that are created with the same process template. It also specifies the task to upload the default template file for Lab Management, which is named LabDefaultTemplate.xaml. This file is uploaded to the database for the project.  
   
 The names of the file, the folder, and the plug-in for the default process templates are as follows:  
     

@@ -38,7 +38,7 @@ To run any query, expand a folder and choose the title of the query. The view op
 > The **Queries** page, as with other web portal pages, remembers the view you last navigated to and returns you to that view.
 	
 ::: moniker range="vsts"
-0. Choose **All** to open the page where you can view all queries you've defined or that are shared within your team project. 
+0. Choose **All** to open the page where you can view all queries you've defined or that are shared within your project. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, choose Work>Queries>ll page](_img/view-run-queries/queries-all.png)  
@@ -121,7 +121,7 @@ You can perform most tasks for viewing and running queries from each of the quer
 > |Task |Favorites |All | 
 > |-------------|----------|---------| 
 > |View all favorited queries, yours or a team you belong to | ![Checkmark](../_img/icons/checkmark.png) |  | 
-> |View all your queries or shared queries for the current team project |  | ![Checkmark](../_img/icons/checkmark.png) | 
+> |View all your queries or shared queries for the current project |  | ![Checkmark](../_img/icons/checkmark.png) | 
 > |Run a query, open the context menu for a query  |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |
 > |Expand or collapse container folders or query folders |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |
 > |Filter the list of queries |![Checkmark](../_img/icons/checkmark.png) |![Checkmark](../_img/icons/checkmark.png) |
@@ -165,7 +165,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ![Web portal, Query Editor/Results, Copy query URL](_img/view-run-queries/copy-url-old-exp.png)  
 
 > [!NOTE]
-> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the team project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](/tfs/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> With **Email query**, the system will email the formatted list to those team mates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](/tfs/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 ::: moniker-end
 
 ## Try this next

@@ -25,7 +25,7 @@ ms.date: 03/20/2018
 > **Feature availability**:  The Hosted XML process model is only supported for select accounts of Visual Studio Team Services.  
 
 
-The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a team project by modifying and importing a process template. Updates made to the process template are applied to team projects that were created using that process.
+The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
 
 You can perform the following tasks with the Hosted XML process model. 
 
@@ -46,6 +46,6 @@ You can perform the following tasks with the Hosted XML process model.
 
 <a id="hosted-xml-sequence"></a>
  
-Use the following sequences when you manage your VSTS through the Hosted XML process model. This sequence requires you to update your team project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
+Use the following sequences when you manage your VSTS through the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
 
 [![Export process](_img/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](reference/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  

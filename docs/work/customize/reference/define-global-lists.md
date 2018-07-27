@@ -1,6 +1,6 @@
 ---
 title: Define global lists | TFS
-description: Syntax and usage for the GLOBALLIST elements for defining pick lists used across several team projects and work item types  
+description: Syntax and usage for the GLOBALLIST elements for defining pick lists used across several projects and work item types  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
@@ -17,7 +17,7 @@ ms.date: 05/23/2017
 <b>VSTS (Hosted XML) | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013</b> 
 
 > [!IMPORTANT]  
->This topic applies to team project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Differences between VSTS and TFS process template customizations](../import-process/differences.md).
+>This topic applies to project customization for Hosted XML and On-premises XML process models. Hosted XML customization supports adding and updating global lists with a process update. To learn more, see [Differences between VSTS and TFS process template customizations](../import-process/differences.md).
 >
 >The Inheritance process model doesn't support global lists. For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -25,7 +25,7 @@ By using global lists, you can minimize the work that is required to update a li
 
 You can share list items among several WITs for a collection by including the list items in one or more `GLOBALLIST` elements.  
   
- As you define WITs, you might find that some fields share the same values. Frequently, you can share across several WITs and even across several team projects. Some of these values, such as the build number of nightly builds, change frequently, which requires an administrator to frequently update these lists in many locations. Global lists can be especially useful when a list must be derived from an external system. For example, suppose a company maintains a separate customer database. When you file a bug that a customer discovered, the customer's name is entered into a custom `Found By Customer` field.  
+ As you define WITs, you might find that some fields share the same values. Frequently, you can share across several WITs and even across several projects. Some of these values, such as the build number of nightly builds, change frequently, which requires an administrator to frequently update these lists in many locations. Global lists can be especially useful when a list must be derived from an external system. For example, suppose a company maintains a separate customer database. When you file a bug that a customer discovered, the customer's name is entered into a custom `Found By Customer` field.  
   
  You can manage global lists for a collection as an XML file that you can list, import, export, and delete. The name of each global list can have up to 254 Unicode characters and must be unique within a collection.  
   
@@ -34,7 +34,7 @@ You can share list items among several WITs for a collection by including the li
   
 **Requirements**  
   
-For the team project collection where the global lists are defined, you must have the following permissions set:  
+For the project collection where the global lists are defined, you must have the following permissions set:  
   
 - To export or list global lists, you must be a member of the **Project Collection Valid Users** group or have your **View collection-level information** permission set to **Allow**.  
   
@@ -45,12 +45,12 @@ To add or modify a global list, use the **witadmin** command-line tool to import
 <a name="add-manage"></a>   
 ##  Add and manage global lists  
 
-A global list is a set of `LISTITEM` elements that is stored and used globally by all team projects in a collection. Global lists are useful for fields that are defined within several types of work items, such as Operating System, Found in Build, and Fixed in Build.  
+A global list is a set of `LISTITEM` elements that is stored and used globally by all projects in a collection. Global lists are useful for fields that are defined within several types of work items, such as Operating System, Found in Build, and Fixed in Build.  
 
 You can define one or more global lists and their items by using one of the following methods in the following ways based on the process model you use:
-- Within a WIT XML definition that you add to a team project or process template (Hosted XML and On-premises XML)
-- Within a global list XML definition file that you import to a team project collection (On-premises XML)
-- Within a [global workflow XML definition file](global-workflow-xml-element-reference.md) that you import to a team project collection (On-premises XML). 
+- Within a WIT XML definition that you add to a project or process template (Hosted XML and On-premises XML)
+- Within a global list XML definition file that you import to a project collection (On-premises XML)
+- Within a [global workflow XML definition file](global-workflow-xml-element-reference.md) that you import to a project collection (On-premises XML). 
  
   
 > [!NOTE]    
@@ -76,7 +76,7 @@ The following table describes the **GLOBALLIST** and **LISTITEM** elements. You 
 <tbody valign="top">
 <tr>
 <td><p><strong>GLOBALLIST</strong></p></td>
-<td><p>Defines a set of **LISTITEM** elements that are stored for a collection and that all team projects in a collection can use.</p>
+<td><p>Defines a set of **LISTITEM** elements that are stored for a collection and that all projects in a collection can use.</p>
 
 <code>
 &#60;GLOBALLIST name="globalListName"&#62;  

@@ -1,6 +1,6 @@
 ---
 title: New work item web form 
-titleSuffix: VSTS & TFS 
+titleSuffix: TFS 
 description: The new web form and work item tracking experience supports more integrated and collaborative experiences
 ms.technology: devops-agile
 ms.prod: devops
@@ -8,17 +8,17 @@ ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts || >= tfs-2017 <= tfs-2018'
+monikerRange: '>= tfs-2017 <= tfs-2018'
 ms.date: 03/20/2018
 ---
 
 # New work item tracking experience
 
-**VSTS | TFS 2018 | TFS 2017**  
+**TFS 2018 | TFS 2017**  
 
 > [!IMPORTANT]  
-> **Feature availability:**&#160;&#160;The new form and its corresponding features are available from the web portal for VSTS and TFS 2017 and later versions.<br/> 
-> - For TFS 2017 users, the new form is automatically available when you add team projects to a new collection. For existing team projects, an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
+> The new form and its corresponding features are available from the web portal for TFS 2017 and later versions.<br/> 
+> - For TFS 2017 users, the new form is automatically available when you add projects to a new collection. For existing projects, an admin is required to [enable the new form](../manage-new-form-rollout.md).<br/>
 > - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://visualstudio.microsoft.com/downloads/#team-foundation-server-2017) to access the new form.  
 
 Work items have received a facelift. To provide a fresher, more modern experience to tracking work, we've replaced our "old and clunky" form. Along with the noticeable responsive form layout, with the nre form you now have access to these features:
@@ -89,12 +89,12 @@ When you switch, all forms displayed through the web portal for all work item ty
 
 ![User story, Switch to New form](../_img/m-new-form-try-switch.png)
  
-As this switch is set on a per-user basis, other account users will continue to see the old form until they also choose to switch.  
+As this switch is set on a per-user basis, other users will continue to see the old form until they also choose to switch.  
 
 <a id="switch-back">  </a> 
 ###Switch back to the old form 
 
-If your admin has enabled opt-in to support switch back. Simply click the ![Actions icon](../../_img/icons/actions-icon.png) to open the context menu to switch back to the old layouts.  
+If your admin has enabled opt-in to support switch back. Simply choose the ![Actions icon](../../_img/icons/actions-icon.png) to open the context menu to switch back to the old layouts.  
 
 ![New web form, user story, Back to old form menu option](../_img/m-new-form-user-story-switch-to-old-form.png)
 
@@ -123,7 +123,7 @@ For news of upcoming features, or extending the work tracking experience, see th
 
 Yes, however, we're always interested in how to improve the experience. What do you like or don't like about the new form layout and experience?  
 
-Send your suggestions via **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**
+Send your suggestions to **[UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services)**
 
 
 ### Will this impact Visual Studio work item forms?  

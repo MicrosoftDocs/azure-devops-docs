@@ -17,11 +17,11 @@ ms.date: 11/07/2017
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 
-As with most team project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
+As with most project objects, you can control who has access by setting permissions. With queries, you can configure users and groups to create, delete, view, and manage permissions of shared queries and shared query folders. 
 
 All users can create and edit their own queries and save them under My Queries.
 
-By creating folders under Shared Queries, you can grant permissions to users for each folder. For example, if you have several teams contributing to a team project, then you might want to create a folder under Shared Queries for each team to manage their own set of shared queries.  
+By creating folders under Shared Queries, you can grant permissions to users for each folder. For example, if you have several teams contributing to a project, then you might want to create a folder under Shared Queries for each team to manage their own set of shared queries.  
 
 You set permissions from the web portal. By default, only members of the Project Collection Administrators group or Project Administrators group can create or edit a shared query and manage permissions. 
 

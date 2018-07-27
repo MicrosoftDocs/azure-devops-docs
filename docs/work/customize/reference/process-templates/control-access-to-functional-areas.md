@@ -1,7 +1,7 @@
 ---
 title: Control access to functional areas
 titleSuffix: VSTS & TFS
-description: Configure the initial security settings for the following functional areas for a team project in Team Foundation Server  
+description: Configure the initial security settings for the following functional areas for a project in Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6c967b40-4842-41db-9350-bb3320f3e57c
@@ -16,7 +16,7 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-You can configure the initial security settings for the following functional areas for a team project: 
+You can configure the initial security settings for the following functional areas for a project: 
 - Work item queries
 - Team Foundation version control (TFVC) 
 - Team Foundation Build
@@ -61,7 +61,7 @@ In the workitems plug-in file, you can assign permissions that control access to
 ```  
   
 > [!NOTE]  
->  After the team project is created, you can set permissions by right-clicking a query folder or query. For details, see [Set permissions on queries](../../../track/set-query-permissions.md).  
+>  After the project is created, you can set permissions by right-clicking a query folder or query. For details, see [Set permissions on queries](../../../track/set-query-permissions.md).  
   
   
 <a name="VersionControl"></a> 

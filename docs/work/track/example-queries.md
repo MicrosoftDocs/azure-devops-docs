@@ -108,8 +108,8 @@ To learn about query charts and widgets, see these topics:
 - [Query tile widget](../../report/dashboards/widget-catalog.md#query-tile-widget) 
  
 
-### Query within or across team projects
-By default, you query within a single team project. However, using the query editor, you can [query across team projects](using-queries.md#across-projects). 
+### Query within or across projects
+By default, you query within a single project. However, using the query editor, you can [query across projects](using-queries.md#across-projects). 
 
 ### Visualize related work and other objects 
 

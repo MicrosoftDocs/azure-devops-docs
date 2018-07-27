@@ -1,7 +1,7 @@
 ---
 title: TF30247-The New Team Project Wizard could not load the plug-in 
 titleSuffix: VSTS & TFS
-description: Occurs an error when a required plug-in is missing from the process template being used by the New Team Project Wizard to create a team project.
+description: Occurs an error when a required plug-in is missing from the process template being used by the New Team Project Wizard to create a project.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 900b529d-989b-455e-960a-2553829b953f
@@ -16,7 +16,7 @@ ms.date: 01/20/2017
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]  
 
-This error occurs when a required plug-in is missing from the process template being used by the New Team Project Wizard to [create a team project](../../../../organizations/projects/create-project.md). Two conditions can cause this error:  
+This error occurs when a required plug-in is missing from the process template being used by the New Team Project Wizard to [create a project](../../../../organizations/projects/create-project.md). Two conditions can cause this error:  
   
 -   The name of the plug-in is missing or misspelled in the XML process template file.  
   

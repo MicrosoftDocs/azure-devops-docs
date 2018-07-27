@@ -15,7 +15,7 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a team project collection. This restriction encourages organizations to use common fields across projects and work item types.
+The field data type determines the kind and size of data that you can store in the field. A field can have only one type defined within a project collection. This restriction encourages organizations to use common fields across projects and work item types.
 
 Reportable attributes determine which fields show up in the data warehouse. Reportable attributes are only valid for on-premises TFS.  
 

@@ -18,18 +18,18 @@ ms.date: 04/10/2018
 
 [!INCLUDE [temp](../../../_shared/version-header-tfs-only.md)]
 
-When you create a team project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and team project collection where you will create a team project with SQL Server Analysis Services and SQL Server Reporting Services. (VSTS uses the [Analytics Service](../../../../report/analytics/what-is-analytics.md) to provide in-depth reporting.) 
+When you create a project, the Reporting plug-in creates a Report site and specifies the folder structure and set of reports that will appear under the ![Report](_img/icon_reportte.png "Icon_reportTE")**Reports** node in Team Explorer. This plug-in requires that you have configured your on-premises TFS instance and project collection where you will create a project with SQL Server Analysis Services and SQL Server Reporting Services. (VSTS uses the [Analytics Service](../../../../report/analytics/what-is-analytics.md) to provide in-depth reporting.) 
   
 > [!IMPORTANT]  
-> When you create a team project from the web portal, the ReportsTasks.xml  
-> plug-in file is ignored. To add reports after you create your team project, 
-> see [Add reports to a team project](../../../../report/admin/add-reports-to-a-team-project.md).  
-> Clients that support team project creation vary depending on the TFS version. 
+> When you create a project from the web portal, the ReportsTasks.xml  
+> plug-in file is ignored. To add reports after you create your project, 
+> see [Add reports to a project](../../../../report/admin/add-reports-to-a-team-project.md).  
+> Clients that support project creation vary depending on the TFS version. 
 > For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
 
 You specify two main tasks by using the Reporting plug-in. First, you create the reporting site by using the **site** element. Second, you specify the folder structure and the reports to be uploaded to the site by using the **folder** and **report** elements. The reports that you upload have an .rdl extension and are designed for use with Reporting Services. For an overview of the reports that the TFS process templates provide, see [Reporting Services Reports](../../../../report/sql-reports/reporting-services-reports.md).  
   
-After a team project is created from the process template, you can add, remove, rename, and change the folder structure for reports. For more information, see [View, upload, and organize reports](../../../../report/admin/view-upload-organize-reporting-services-reports.md).  
+After a project is created from the process template, you can add, remove, rename, and change the folder structure for reports. For more information, see [View, upload, and organize reports](../../../../report/admin/view-upload-organize-reporting-services-reports.md).  
   
 <a name="name"></a> 
 ##  Reporting plug-in name and location  
@@ -169,7 +169,7 @@ The following syntax shows the structure of the **ReportingServices** element an
 ```  
 
 
-The following table describes the elements that you use to specify a report to upload to a team project and that can be accessed through SQL Server Reporting Services.
+The following table describes the elements that you use to specify a report to upload to a project and that can be accessed through SQL Server Reporting Services.
   
 <table>
 <tr>
@@ -189,7 +189,7 @@ The following table describes the elements that you use to specify a report to u
  
 <tr>
 <td >**folder**</td>
-<td>Required child element of **folders**. Defines the name of a folder to create under the **Reports** node for a team project.<br/>
+<td>Required child element of **folders**. Defines the name of a folder to create under the **Reports** node for a project.<br/>
 <pre><code>&lt;folder path="FolderName" /&gt;
 </code></pre>
 </td>
@@ -304,7 +304,7 @@ Where each attribute has the following definition:
   
 <tr>
 <td >**site**</td>
-<td>Required element for the Reporting plug-in. Specifies that a reporting site for the team project will be created.
+<td>Required element for the Reporting plug-in. Specifies that a reporting site for the project will be created.
 <pre><code>&lt;site&gt;
       . . . 
 &lt;/site&gt;
