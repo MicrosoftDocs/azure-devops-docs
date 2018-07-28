@@ -617,7 +617,7 @@
     },
     {
       "source_path": "docs/accounts/add-account-users-assign-access-levels.md",
-      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-organization-users-from-user-hub",
       "redirect_document_id": false
     },
     {
