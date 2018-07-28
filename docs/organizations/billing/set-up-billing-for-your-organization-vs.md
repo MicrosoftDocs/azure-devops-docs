@@ -26,7 +26,7 @@ If you don't have an Azure subscription, [create one](https://azure.microsoft.co
 
 ## Prerequisites
 
-The first time that you set up billing for your VSTS organization - whether via the Azure portal or as part of making a purchase in the Visual Studio Marketplace - you will need:
+The first time that you set up billing for your VSTS organization - whether via the Azure portal or as part of making a purchase in the Visual Studio Marketplace - you'll need:
 
 * [VSTS project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner)
 * [An Azure subscription that you can use to purchase](add-backup-billing-managers.md)
