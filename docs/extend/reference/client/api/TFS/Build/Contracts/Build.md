@@ -51,7 +51,7 @@ Module path: `TFS/Build/Contracts`
 
 * `priority`: [QueuePriority](./QueuePriority.md). The build&#x27;s priority
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). The team project
+* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). The project
 
 * `properties`: any. 
 

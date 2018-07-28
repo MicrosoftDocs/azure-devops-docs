@@ -25,7 +25,7 @@ When you don't need an extension anymore, you can uninstall or disable this exte
 Only [Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) can uninstall or disable extensions. 
 
 
-0. Go to your VSTS or TFS home page, then go to your team project:
+0. Go to your VSTS or TFS home page, then go to your project:
     * VSTS: ```https://{account-name}.visualstudio.com/{team-project}```
     * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
 

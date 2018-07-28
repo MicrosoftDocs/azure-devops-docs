@@ -27,10 +27,10 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions?api-v
 |:--------------|:-------|:------------
 | URL
 | instance      | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string | [Team project](../tfs/projects.md) ID or name.
+| project       | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
-| projectName   | string | Name of the team project that contains the build definitions.<br/>Wildcards (*) are supported.
+| projectName   | string | Name of the project that contains the build definitions.<br/>Wildcards (*) are supported.
 
 [!code-REST [GET__build_definitions_json](./_data/definitions/GET__build_definitions.json)]
 
@@ -44,7 +44,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{defi
 |:-------------|:-------|:------------
 | URL
 | instance     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project      | string | [Team project](../tfs/projects.md) ID or name.
+| project      | string | [Project](../tfs/projects.md) ID or name.
 | definitionId | int    | ID of the build definition.
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

@@ -89,7 +89,7 @@
                "imageUrl": "https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection/_api/_common/identityImage?id=8c8c7d32-6b1b-47f4-b2e9-30b477b5ab3d"
             },
             "createdDate": "2014-01-24T19:20:46.577Z",
-            "comment": "Created team project folder $/Fabrikam-Fiber-TFVC via the Team Project Creation ",
+            "comment": "Created project folder $/Fabrikam-Fiber-TFVC via the Project Creation ",
             "commentTruncated": true
          },
          {

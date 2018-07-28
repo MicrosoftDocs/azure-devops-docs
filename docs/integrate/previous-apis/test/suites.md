@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}). 
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}). 
-| project   | string | Name or ID of the team project.
+| project   | string | Name or ID of the project.
 | plan      | int    | ID of the test plan that contains the suites.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -56,7 +56,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/suites/?api-versio
 |:------------|:-------|:-----------
 | URL
 | instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string | Name or ID of the team project.
+| project     | string | Name or ID of the project.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | testCaseId  | int    | ID of the test case for which suites need to be fetched.
@@ -73,7 +73,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suite
 |:-------------------|:-------|:--------|:----------------
 | URL
 | instance           | string |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string |         | Name or ID of the team project.
+| project            | string |         | Name or ID of the project.
 | plan               | int    |         | ID of the test plan that contains the suites.
 | suite              | int    |         | ID of the suite to get.
 | Query
@@ -112,7 +112,7 @@ Content-Type: application/json
 |:---------------|:-------|:-----------
 | URL
 | instance       | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project        | string | Name or ID of the team project.
+| project        | string | Name or ID of the project.
 | plan           | int    | ID of the test plan that contains the suite.
 | parent         | int    | ID of the parent suite.
 | Query
@@ -142,7 +142,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/suit
 |:-------------------|:--------|:----------------
 | URL
 | instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  | Name or ID of the team project.
+| project            | string  | Name or ID of the project.
 | plan               | int     | ID of the test plan that contains the suite.
 | suite              | int     | ID of the suite to get.
 | testcases			 | int,int | IDs of the test cases to add to the suite.
@@ -161,7 +161,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/su
 |:-------------------|:--------|:----------------
 | URL
 | instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  | Name or ID of the team project.
+| project            | string  | Name or ID of the project.
 | plan               | int     | ID of the test plan that contains the suite.
 | suite              | int     | ID of the suite to get.
 | testcases			 | int,int | IDs of the test cases to remove from the suite.
@@ -194,7 +194,7 @@ Content-Type: application/json
 |:-----------------------------|:-------|:-----------
 | URL
 | instance                     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project                      | string | Name or ID of the team project.
+| project                      | string | Name or ID of the project.
 | plan                         | int    | ID of the test plan that contains the suite.
 | suite                        | int    | ID of the test suite to update.
 | Query
@@ -230,7 +230,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}/su
 |:-----------------------------|:-------|:-----------
 | URL
 | instance                     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project                      | string | Name or ID of the team project.
+| project                      | string | Name or ID of the project.
 | plan                         | int    | ID of the test plan that contains the suite.
 | suite                        | int    | ID of the test suite to delete.
 | Query
