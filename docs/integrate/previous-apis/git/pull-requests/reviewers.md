@@ -33,7 +33,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
 | instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string  | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | Query
@@ -53,7 +53,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:------------|:--------|:---------------------------------------------------------------------------------------
 | URL
 | instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string  | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | reviewer    | Guid    | ID of the reviewer. This can be retrieved from the [Teams API](../../tfs/teams.md) or by [getting a list of reviewers](#get_list). 
@@ -80,7 +80,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:------------|:--------------------|:--------|---------------------
 | URL
 | instance    | string              |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string              |         | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string              |         | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string              |         | ID of the [repository](../repositories.md).
 | pullRequest | integer             |         | ID of the pull request.
 | reviewer    | Guid                |         | ID of the reviewer.
@@ -103,7 +103,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{re
 |:------------|:--------|:------------
 | URL
 | instance    | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string  | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string  | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string  | ID of the [repository](../repositories.md).
 | pullRequest | integer | ID of the pull request.
 | reviewer    | Guid    | ID of the reviewer.
@@ -127,7 +127,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 |:------------|:------------------|:------------|
 | URL
 | instance    | string            | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string            | ID or name of the [team project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
+| project     | string            | ID or name of the [project](../../tfs/projects.md). *Optional if specifying an ID for repository.*
 | repository  | string            | ID of the [repository](../repositories.md).
 | pullRequest | integer           | ID of the pull request. |
 | reviewer    | Guid              | ID of the reviewer. Must be an actual user (not a team or group).

@@ -35,7 +35,7 @@ Members of the Project Administrators groups can create and administer team room
 ## Join the conversation
 1. From your team's home page, open the room.  
 
-	![Team room tile on team project home page](_img/ALM_CT_TeamroomTile.png) 
+	![Team room tile on project home page](_img/ALM_CT_TeamroomTile.png) 
 	
 	If you don't see the room tile, [(VSTS) ask your account administrator to grant you a Basic license](../organizations/accounts/add-organization-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
 
@@ -63,7 +63,7 @@ Members of the Project Administrators groups can create and administer team room
 
 <a id="addmembers"></a> 
 ## Add members
-You can invite others who have access to the account or team project to participate in your team room. 
+You can invite others who have access to the account or project to participate in your team room. 
 
 1. If you're not a team administrator, [get added as one](../work/scale/add-team-administrator.md). 
 

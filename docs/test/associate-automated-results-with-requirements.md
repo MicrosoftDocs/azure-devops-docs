@@ -1,6 +1,6 @@
 ---
 title: Associate automated test results with requirements
-description: Continuous testing. Associate automated test results with requirements using Microsoft Test Manager (MTM) with a build or release definition
+description: Continuous testing. Associate automated test results with requirements using Microsoft Test Manager (MTM) with a build or release pipeline
 ms.assetid: 30F9B666-02D7-4A94-9EA1-EC8B8E5F1D8F
 ms.prod: devops
 ms.technology: devops-test
@@ -40,7 +40,7 @@ and choose the **Associate tests to work item** (link) icon.
    ![Select **Requirements** in the **Group by** list](_img/associate-automated-results-with-requirements/associate-tests-groupby.png)
 
 1. On your team's dashboard, add the **Requirements quality** widget and configure
-   it for the appropriate build definition and work item query.  
+   it for the appropriate build pipeline and work item query.  
 
    ![Add the **Requirements quality** widget](_img/associate-automated-results-with-requirements/associate-tests-configuration.png)
 

@@ -48,7 +48,7 @@ to a Git repository in our VSTS account to show how that works.
 
    <img alt="Allow access to the action app account" src="./_img/zapier/authorize.png" style="border: 1px solid #CCCCCC" />
 
-7. You can filter the events coming from VSTS for this zap. For example, this zap will only act on code pushes in the master branch of the default repository for this team project. Pushes in other team projects, other repositories, or other branches of this repository will be ignored by this zap.
+7. You can filter the events coming from VSTS for this zap. For example, this zap will only act on code pushes in the master branch of the default repository for this project. Pushes in other projects, other repositories, or other branches of this repository will be ignored by this zap.
 
    <img alt="Select the branch to trigger on for new code pushes" src="./_img/zapier/filter-triggers.png" style="border: 1px solid #CCCCCC" />
 

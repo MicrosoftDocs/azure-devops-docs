@@ -41,7 +41,7 @@ To setup a Cordova build in VSTS or TFS 2015, you will need to install the Cordo
 We'll assume for the purposes of this tutorial that you want to build a Cordova app for Android, iOS, and Windows and you want to build everything on Windows except iOS. We will accomplish this by using the concept of a "demand" in two separate build definitions to route the work to the correct OS.
 
 ### Create the definition
-0. Open your team project in your web browser.
+0. Open your project in your web browser.
 
  * On-premises ```http://{your_server}:8080/tfs/DefaultCollection/{your_team_project}``` 
  * VSTS  ```https://{your_organization}.visualstudio.com/DefaultCollection/{your_team_project}```

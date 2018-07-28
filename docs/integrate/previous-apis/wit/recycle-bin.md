@@ -30,7 +30,7 @@ GET https://{instance}/DefaultCollection/{project}_apis/wit/recycleBin?api-versi
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Team project of the deleted work items
+| project   | string  | Project of the deleted work items
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -50,7 +50,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/recyclebin/{id}?api
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Team project of the deleted work items
+| project   | string  | Project of the deleted work items
 | id        | int     | ID of the deleted item
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -71,7 +71,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/recyclebin?ids={ids
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Team project of the deleted work items
+| project   | string  | Project of the deleted work items
 | ids       | string  | A comma-separated list of up to 200 IDs of the deleted work items to get.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -130,7 +130,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/recycleBin/{id}?
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Team project of the deleted work items
+| project   | string  | Project of the deleted work items
 | id        | int     | ID of the deleted item
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.

@@ -52,7 +52,9 @@ In the edit feed dialog:
 
 ## Package permissions in Team Build
 
-To use packages from a feed in Team Build, the appropriate build identity must have permission to your feed. By default, the Project Collection Build Service is a Contributor. If you've changed your builds to run at [project scope](../../pipelines/build/options.md#build-job-authorization-scope), you won't be able to use packages from VSTS feeds.
+To use packages from a feed in Team Build, the appropriate build identity must have permission to your feed. By default, the **Project Collection Build Service** is a Contributor. If you've changed your builds to run at [project scope](../../pipelines/build/options.md#build-job-authorization-scope), you'll need to add the project-level build identity as a Reader or Contributor, as desired. The project-level build identity is named as follows:
+
+`[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo)) 
 
 ## Sharing packages with everyone in your account
 

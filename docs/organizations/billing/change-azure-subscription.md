@@ -28,7 +28,7 @@ If the target subscription is in the same Azure Active Directory instance as the
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **Resource groups**.
 
-   ![Choose Azure resource groups](_img/change-azure-subscription/azure-resource-groups.PNG)
+   ![Choose Azure resource groups](_img/change-azure-subscription/azure-resource-groups.png)
 
 3. Select the resource group that contains your VSTS organization.
 4. Select **Move** > **Move to another subscription**.

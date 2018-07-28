@@ -63,7 +63,7 @@ Creates a team
 ### Parameters
 
 * `team`: [Contracts.WebApiTeam](../../../TFS/Core/Contracts/WebApiTeam.md). The team data used to create the team.
-* `projectId`: string. The name or ID (GUID) of the team project in which to create the team.
+* `projectId`: string. The name or ID (GUID) of the project in which to create the team.
 
 ### Returns
 
@@ -81,7 +81,7 @@ Deletes a team
 
 ### Parameters
 
-* `projectId`: string. The name or ID (GUID) of the team project containing the team to delete.
+* `projectId`: string. The name or ID (GUID) of the project containing the team to delete.
 * `teamId`: string. The name of ID of the team to delete.
 
 ### Returns
@@ -192,7 +192,7 @@ Get project references with the specified state
 
 ### Parameters
 
-* `stateFilter`: any. Optional. Filter on team projects in a specific team project state (default: WellFormed).
+* `stateFilter`: any. Optional. Filter on projects in a specific project state (default: WellFormed).
 * `top`: number. Optional. 
 * `skip`: number. Optional. 
 
