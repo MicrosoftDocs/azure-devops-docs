@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: sdanie
 author: steved0x
 ms.topic: conceptual
-ms.date: 03/14/2018
+ms.date: 07/30/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -19,6 +19,9 @@ Git stores history as a graph of snapshots &mdash; called commits &mdash; of the
 Each commit also contains a pointer to one or more previous commits.
 Commits can have multiple parents, creating a history that looks like a graph instead of a straight line.
 This difference in history is incredibly important and is the main reason users find Git confusing.
+
+>[!NOTE]
+>If you can't find a change in your Git history that you know you made, learn more about how Git history simplification works at [Git lost my changes: Taking a look at Git's history simplification](/vsts/articles/git-log-history-simplification?view=vsts).
 
 ## Commit history basics
 
@@ -82,3 +85,4 @@ There are three people who merge commits from their own branches into the master
 ![console log of git graph](_img/history/gitlogconsole.png)
 
 Now that you understand how branches and merges create the shape of the graph, this shouldn't be too scary!
+
