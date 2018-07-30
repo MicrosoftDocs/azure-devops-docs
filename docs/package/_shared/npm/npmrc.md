@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-For **Linux** or **Mac** users, the _Connect to feed_ dialog will generate an appropriately-formatted token that you can place into your **_.npmrc_** file with a lifespan of 90 days.
+The _Connect to feed_ dialog will generate an appropriately-formatted token that you can place into your **_.npmrc_** file with a lifespan of 90 days.
 
 >  If you want to create a token that lasts _longer than 90 days_, skip to the second method below.
 
@@ -17,6 +17,7 @@ For **Linux** or **Mac** users, the _Connect to feed_ dialog will generate an ap
     ![Connect to feed from VSTS Package Management Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds.png)
 
 **Create a token that lasts longer than 90 days:**
+
 1. Navigate to security and generate a [PAT](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with a narrow scope of "Packaging (read and write)".
 2. Base64 encode the PAT.  On Windows you can use...
 
