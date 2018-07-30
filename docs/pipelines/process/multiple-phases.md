@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 
 You can add multiple [phases](phases.md) to a pipeline. By using different phases in a pipeline, you can:
 
-::: moniker range=">=tfs-2018"
+::: moniker range="vsts"
 
 * Partition your process into sections targeting different agent queues
 * Partition your process into sections targeting different sets of self-hosted agents using different demands
@@ -28,6 +28,18 @@ You can add multiple [phases](phases.md) to a pipeline. By using different phase
 * Publish build artifacts in one phase and consume those in subsequent phases
 * Pause the deployment in the middle using a manual intervention task
 * Reduce build time by running multiple phases in parallel
+* Reduce deployment time by selectively downloading different artifacts in different phases of a deployment process
+* [Conditionally execute](conditions.md) a set of tasks
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+
+* Partition your process into sections targeting different agent queues
+* Partition your process into sections targeting different sets of self-hosted agents using different demands
+* Partition your process into sections that run on agents and those that run without an agent
+* Publish build artifacts in one phase and consume those in subsequent phases
+* Pause the deployment in the middle using a manual intervention task
 * Reduce deployment time by selectively downloading different artifacts in different phases of a deployment process
 * [Conditionally execute](conditions.md) a set of tasks
 
@@ -71,7 +83,7 @@ When you specify multiple phases in a build pipeline, they run in parallel by de
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
-Multiple phases you add to a build pipeline run in parallel. Multiple phases you add to a release pipeline run in sequence. You cannot configure the order of dependencies between phases in this version of TFS.
+Multiple phases you add to a build or a release pipeline run in sequence. You cannot configure the order of dependencies between phases in this version of TFS.
 ::: moniker-end
 
 ::: moniker range="< tfs-2018"

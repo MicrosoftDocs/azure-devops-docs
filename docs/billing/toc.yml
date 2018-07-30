@@ -19,7 +19,7 @@
 - name: Tutorials
   items:
   - name: Connect VSTS to Azure AD
-    href: ../organizations/accounts/change-organization-location.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../organizations/accounts/connect-organization-to-aad.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Manage billing 

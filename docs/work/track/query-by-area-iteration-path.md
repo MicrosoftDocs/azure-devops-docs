@@ -17,7 +17,7 @@ ms.date: 04/27/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a team project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) &mdash;and then select the ones you want to [associate with a team](../../organizations/settings/set-team-defaults.md). 
+The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) &mdash;and then select the ones you want to [associate with a team](../../organizations/settings/set-team-defaults.md). 
 
 To better understand how to work with area and iteration paths, see [About area and iteration paths (aka sprints)](../../organizations/settings/about-areas-iterations.md).
 
@@ -102,7 +102,7 @@ If you define a path name that is longer than 256 characters, you will not be ab
 
 You can't apply most field rules to the System.AreaPath and System.IterationPath fields. To learn more, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
 
-The following fields do not appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a team project. You can use these fields to filter queries and create reports.
+The following fields do not appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
 
 |**Field name**|**Description**|**Reference name**|**Data type**|
 |---|---|---|---|

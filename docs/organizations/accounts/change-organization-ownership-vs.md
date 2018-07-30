@@ -39,7 +39,7 @@ Make sure that the new owner:
 
 [!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 2. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Admin settings icon.
@@ -58,7 +58,7 @@ Make sure that the new owner:
 
    ![Save new organization owner](_img/change-organization-ownership/save-new-organization-owner.png)  
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 

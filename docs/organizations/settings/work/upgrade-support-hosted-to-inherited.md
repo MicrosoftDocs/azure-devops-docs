@@ -65,6 +65,7 @@ When you clone a Hosted XML process to an inherited process, the customizations 
 > | Custom link controls  | Custom link controls are ignored. |
 > | Extensions | The inherited process supports an opt-out model for custom control extensions, while the Hosted XML process supports an opt-in model. This means that work item types defined within the cloned inherited process will show all contributions from all installed and enabled extensions. You can selectively hide or remove them as needed. |
 > | Categories | Changes made to a [default category](../../../work/customize/reference/use-categories-to-group-work-item-types.md#default-categories-and-process-configuration) are preserved, but any custom categories are ignored. Also note that system work item types such as Issue or Impediment are not supported on a backlog level. | 
+> | Identity fields with string values | Lists that contains an identity value in ALLOWEDVALUES or PROHIBITEDVALUES will automatically be converted into the Identity field type. Any other string values in the list will be ignored. | 
 
 
 [!INCLUDE [temp](../_shared/post-upgrade-steps.md)]

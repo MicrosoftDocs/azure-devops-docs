@@ -85,7 +85,7 @@ On the Wiki landing page, choose **Create Wiki** to provision a new Git reposito
 
 If you don't have access to create a Wiki Git repository, you will see a page as follows.
 
-<img align="top" src="_img/wiki/wiki-security-no-contributor.PNG" alt="Unable to create a Wiki repository" style="border: 1px solid #C3C3C3;" />  
+<img align="top" src="_img/wiki/wiki-security-no-contributor.png" alt="Unable to create a Wiki repository" style="border: 1px solid #C3C3C3;" />  
 
 You can contact your administrator to provision the Wiki Git repository or request that they elevate your permissions. Stakeholders can't be granted permissions to create a wiki as they have no permissions to work in the **Code** hub.
 
@@ -123,6 +123,6 @@ However, you can navigate to it from the following URL:
 
 You can click **More** followed by **Clone Wiki** to access the Wiki URL.
 
-<img align="top" src="_img/wiki/clone-wiki.PNG" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
+<img align="top" src="_img/wiki/clone-wiki.png" alt="Clone wiki" style="border: 1px solid #C3C3C3;" />    
 
 This will expose the URL of the wiki Git repository and you can paste it into your web browser to access the underlying Git repo.

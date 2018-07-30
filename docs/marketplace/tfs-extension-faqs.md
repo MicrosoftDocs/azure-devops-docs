@@ -66,7 +66,7 @@ included with their subscriptions as benefits. They can use these extensions aft
 A: This might happen for these reasons: 
 
 * You must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md) 
-with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the team project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./how-to/request-tfs-extensions.md) instead.
+with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) in the project collection where you want to install extensions. If you don't have permissions, you can [request extensions](./how-to/request-tfs-extensions.md) instead.
 
 * If you get an error that your extension is already installed or requested, check with your project collection administrator and ask them to assign the extension to you.
 
@@ -74,9 +74,9 @@ with [**Edit collection-level information** permissions](../organizations/securi
 
 <a name="no-team-project collection"></a>
 
-### Q: Why don't I see the team project collection I want?
+### Q: Why don't I see the project collection I want?
 
-A:	You must be a member of your team project collection. 
+A:	You must be a member of your project collection. 
 Follow these steps to check your identity that you use 
 to sign in to the Visual Studio Marketplace. 
 
@@ -86,7 +86,7 @@ go to the top right corner of the page, and click your user name to view your pr
 0.	Close all browser windows.
 0.	Open a private or incognito browsing session.
 0.	Sign in to your TFS home page (```https://{server}:8080/tfs/```) 
-with the identity that's a user in the team project collection 
+with the identity that's a user in the project collection 
 where you want to install the extension.
 
 	> If you're asked to choose "work or school account" or 
@@ -97,9 +97,9 @@ where you want to install the extension.
 	> they're still separate identities with different profiles, 
 	> security settings, and permissions.
 	> 
-	> Choose the identity that's the user in your team project collection. 
+	> Choose the identity that's the user in your project collection. 
 
-0.	From your team project collection, go to the Visual Studio Marketplace.
+0.	From your project collection, go to the Visual Studio Marketplace.
 
 <a name="no-download"></a>
 
@@ -135,6 +135,6 @@ for the Team Foundation Server where you want to upload extensions.
 
 ## Purchases & billing
 
-- [VSTS billing overview](../billing/overview.md)
-- [VSTS billing FAQ](../billing/vsts-billing-faq.md)
-- [How to pay for TFS users](../billing/buy-access-tfs-test-hub.md)
+- [VSTS billing overview](../organizations/billing/overview.md)
+- [VSTS billing FAQ](../organizations/billing/vsts-billing-faq.md)
+- [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)

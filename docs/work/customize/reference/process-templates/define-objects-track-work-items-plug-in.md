@@ -1,7 +1,7 @@
 ---
 title: Define work item types for a process template 
 titleSuffix: VSTS & TFS
-description: Use the plug-in for tracking work items and defining a team project's initial objects for tracking work for Team Foundation Server 
+description: Use the plug-in for tracking work items and defining a project's initial objects for tracking work for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6d6103d6-2558-460c-b022-9eda2ffe4023
@@ -16,7 +16,7 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-By using the plug-in for tracking work items, you define a team project's initial objects for tracking work. These objects include types of work items, work item queries, categories, link types, and instances of work items. After you create a team project, you can modify these objects by using the **witadmin** command-line tool.  
+By using the plug-in for tracking work items, you define a project's initial objects for tracking work. These objects include types of work items, work item queries, categories, link types, and instances of work items. After you create a project, you can modify these objects by using the **witadmin** command-line tool.  
   
  In the plug-in file, you specify one or more tasks and their dependencies. In general, you specify one task for each major upload activity, such as link types, work item types, queries, and categories.  
   

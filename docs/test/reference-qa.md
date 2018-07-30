@@ -451,7 +451,7 @@ unless you chose to indefinitely retain a build associated with those results.
 
 ### Q: What is the default test retention policy for XAML builds?
 
-**A**: By default, a XAML build definition is set up to delete builds older 
+**A**: By default, an XAML build definition is set up to delete builds older 
 than the 10 most recent builds. But related test results aren't automatically
 deleted when those builds are deleted. 
 [Learn more](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx). 

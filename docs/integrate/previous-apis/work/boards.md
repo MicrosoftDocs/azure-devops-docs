@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards?api-
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name or ID of a team project.
+| project   | string  | | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | Query
 | api-version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -51,7 +51,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/boards/{boa
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name or ID of a team project.
+| project   | string  | | Name or ID of a project.
 | team	    | string  | Project's default team Id| Name or ID of a team within the project.
 | board	| string  || Name or ID of the specific board.
 | Query

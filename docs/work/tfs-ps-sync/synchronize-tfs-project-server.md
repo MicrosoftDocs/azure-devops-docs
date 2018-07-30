@@ -20,12 +20,12 @@ ms.topic: overview
 > [!IMPORTANT]  
 >TFS 2017 and later versions no longer support native integration with Office Project Server. If you upgrade to TFS 2017 or want to use a third party option, see [Synchronize TFS with Project Server](sync-ps-tfs.md).
 
-By installing Team Foundation Server Extensions for Project Server, project managers can use Microsoft Project Server to access up-to-date project status and resource availability across agile and formal software teams who work in Team Foundation.  This integration enables data to flow from work items in Team Foundation Server (TFS) to tasks in enterprise project plans in Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and share information transparently. After the two server products are configured, the synchronization engine maintains scheduling data and resource usage for the configured data in the mapped enterprise project plan and team project.  
+By installing Team Foundation Server Extensions for Project Server, project managers can use Microsoft Project Server to access up-to-date project status and resource availability across agile and formal software teams who work in Team Foundation.  This integration enables data to flow from work items in Team Foundation Server (TFS) to tasks in enterprise project plans in Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and share information transparently. After the two server products are configured, the synchronization engine maintains scheduling data and resource usage for the configured data in the mapped enterprise project plan and project.  
   
  To enable this flow of data, you must install Team Foundation Server Extensions for Project Server on the application-tier or web-tier servers that run Project Server that will participate in data synchronization. For more information, see [How to: Add Project Server to Team Foundation Server](https://msdn.microsoft.com/library/hh548139.aspx).  Project managers that use Project Professional must install Visual Studio 2013 or Team Explorer 2013 on their client computers.  
   
 > [!NOTE]
->  You can download a virtual machine that demonstrates how to integrate TFS and Project Server 2010 to allow teams to share data between the two server products. This virtual machine includes enterprise project plans in Project Server that are mapped to team projects in TFS, along with sample data to highlight key integration scenarios. The walkthrough documents illustrate four scenarios that simulate the interactions between the project manager, who is working in Project Server, and members of the software development team, who are working in TFS.  
+>  You can download a virtual machine that demonstrates how to integrate TFS and Project Server 2010 to allow teams to share data between the two server products. This virtual machine includes enterprise project plans in Project Server that are mapped to projects in TFS, along with sample data to highlight key integration scenarios. The walkthrough documents illustrate four scenarios that simulate the interactions between the project manager, who is working in Project Server, and members of the software development team, who are working in TFS.  
 >   
 >  For more information, see the following page on the Microsoft website: [TFS 2010 and Microsoft Project Server 2010 Integration Hyper-V Virtual Machine](http://go.microsoft.com/fwlink/?LinkID=196413). Some details might differ between the procedures demonstrated in the video and those described here because this video was made for the previous release of Team Foundation Server.  
   
@@ -36,7 +36,7 @@ By installing Team Foundation Server Extensions for Project Server, project mana
 
 ### Review setup, configuration, and administration tasks 
 
-As an administrator for the integration of TFS and Project Server, you must configure the integration of the two server products to support the flow of data from team projects to enterprise project plans. For the initial configuration, you must install software, grant permissions, register instances of Project Web Access or Project Web App (PWA), and map components of Project Server to components of Team Foundation.
+As an administrator for the integration of TFS and Project Server, you must configure the integration of the two server products to support the flow of data from projects to enterprise project plans. For the initial configuration, you must install software, grant permissions, register instances of Project Web Access or Project Web App (PWA), and map components of Project Server to components of Team Foundation.
 
 Review these topics: 
 -   [Administer TFS-Project Server integration](administrate-integration-tfs-project-server.md)
@@ -81,7 +81,7 @@ You can configure the integration to support the specific manner in which you wa
 For details, see [Manage projects](manage-projects.md). 
 
 ### Understand the synchronization process and features
-You can manage the project plans that map to team projects and the tasks that are synchronized with work items in Team Foundation. See these topics: 
+You can manage the project plans that map to projects and the tasks that are synchronized with work items in Team Foundation. See these topics: 
 - [Synchronization process overview](synchronization-process-overview.md)
 - [Overview of integration features](overview-tfs-project-server-integration.md)   
 

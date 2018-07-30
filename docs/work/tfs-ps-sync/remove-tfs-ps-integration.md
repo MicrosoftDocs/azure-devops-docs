@@ -29,8 +29,8 @@ When you upgrade TFS 2015 or earlier version which has the native TFS-Project Se
 <ol start="2">
 <li>Uninstall TFS extensions for Project Server</li>
 <li>Remove the Project Server tab and synchronizing fields from TFS work item types (WITs)</li>
-<li>Delete the TFS-PS category from mapped team projects</li>
-<li>Delete TFS-PS global workflow rules from team projects and project collections</li>
+<li>Delete the TFS-PS category from mapped projects</li>
+<li>Delete TFS-PS global workflow rules from projects and project collections</li>
 <li>Delete all TFS-PS related fields from project collections</li>
 <li>Delete TFS tables from the Project Server database</li>
 <li>Delete enterprise fields and look-up tables from Project Server</li>
@@ -39,7 +39,7 @@ When you upgrade TFS 2015 or earlier version which has the native TFS-Project Se
 
 ###Required permissions
 
-To run the **TFSAdmin** commands, your **Administer Project Server integration** permission for the team project collection must be set to **Allow**. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of PWA that will participate in data synchronization. For more information, see [Assign permissions to support TFS-Project Server integration](assign-permissions-support-tfs-project-server-integration.md).
+To run the **TFSAdmin** commands, your **Administer Project Server integration** permission for the project collection must be set to **Allow**. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of PWA that will participate in data synchronization. For more information, see [Assign permissions to support TFS-Project Server integration](assign-permissions-support-tfs-project-server-integration.md).
 
 To run the **witadmin** commands you must be a member of the Team Foundation Administrators security group or the Project Collection Administrators security group.
 
@@ -52,10 +52,10 @@ To run the **witadmin** commands you must be a member of the Team Foundation Adm
 1. To get a list of all mapped collections, run this command on the application tier server for TFS:  
 	```TfsAdmin ProjectServer /GetMappedCollections /tfs:tfsUrl ```  
 
-2. To get a list of all mapped team projects, run this command on each mapped collection:  
+2. To get a list of all mapped projects, run this command on each mapped collection:  
 	```TfsAdmin ProjectServer /GetMappedProjects /collection:tpcUrl ```
 
-3. To get a list of all mapped WITs, run this command on each mapped team project:  
+3. To get a list of all mapped WITs, run this command on each mapped project:  
 	```TfsAdmin ProjectServer /GetMappedWorkItemTypes /collection:tpcUrl teamProject:TeamProjectName```
 
 4. To get a list of all mapped fields, download the field mapping file:  
@@ -73,7 +73,7 @@ If you don't remove the extensions, users will receive error messages when they 
 <a id="remove">  </a>
 ## 3. Remove the Project Server tab and synchronizing fields from WITs 
 
-**Where:**&#160;&#160;From all mapped WITs in all mapped team projects in each mapped team project collection. You should have a list of all mapped elements from step [1. List mapped elements](#list).   
+**Where:**&#160;&#160;From all mapped WITs in all mapped projects in each mapped project collection. You should have a list of all mapped elements from step [1. List mapped elements](#list).   
  
 To remove the Project Server tab and associated fields, run **witadmin** to export and then import the mapped WIT XML definition file. This will remove the Project Server integration for specific fields from the WIT and its work item form. 
 
@@ -97,9 +97,9 @@ To remove the Project Server tab and associated fields, run **witadmin** to expo
 	```witadmin importwitd /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:task.xml```
 
 
-## 4. Delete the TFS-PS category from mapped team projects
+## 4. Delete the TFS-PS category from mapped projects
 
-**Where**: From all mapped team projects. You should have a list of all mapped elements from step [1. List mapped elements](#list).   
+**Where**: From all mapped projects. You should have a list of all mapped elements from step [1. List mapped elements](#list).   
 
 Work item types that were mapped to Project Server will appear in the WIT category "Microsoft.Sync.ProjSrv.WorkitemCategory"? that indicates they are mapped to Project Server. You need to use the **witadmin** command to export the categories in the Team Project, remove this particular category and re-import using **witadmin**. 
 
@@ -108,7 +108,7 @@ Work item types that were mapped to Project Server will appear in the WIT catego
 
 Example steps:
 
-1. Export categories for a mapped team project collection: 
+1. Export categories for a mapped project collection: 
 
 	```witadmin exportcategories /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:categories.xml```
 
@@ -124,15 +124,15 @@ Example steps:
 	```witadmin importglobalworkflow /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:categories.xml```
 
 
-## 5. Delete TFS-PS global workflow rules from team projects and project collections  
+## 5. Delete TFS-PS global workflow rules from projects and project collections  
 
-**Where**:&#160;&#160;From all mapped team projects and mapped team project collections. You should have a list of all mapped elements from step [1. List mapped elements](#list).
+**Where**:&#160;&#160;From all mapped projects and mapped project collections. You should have a list of all mapped elements from step [1. List mapped elements](#list).
  
-Doing this doesn't remove any fields but does remove rules that were defined at the team project-level and collection-level for those fields. In most cases you shouldn't have manually modified the global workflow rules. If so, simply export and import with a default content below. If you have made customization you would need to determine the customizations you made and which you want to keep, and then simply remove those rules associated with TFS-PS integration.  
+Doing this doesn't remove any fields but does remove rules that were defined at the project-level and collection-level for those fields. In most cases you shouldn't have manually modified the global workflow rules. If so, simply export and import with a default content below. If you have made customization you would need to determine the customizations you made and which you want to keep, and then simply remove those rules associated with TFS-PS integration.  
 
 Example steps:
 
-1. Export the global workflow XML definition file for a mapped team project: 
+1. Export the global workflow XML definition file for a mapped project: 
 
 	```witadmin exportglobalworkflow /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:tpgf.xml```
 
@@ -147,7 +147,7 @@ Example steps:
 
 	```witadmin importcategories /collection:http://fabrikam:8080/tfs/defaultcollection /p:PsAgile1 /f:tpgf.xml```
 
-4. Repeat steps 1 through 3 for each mapped team project collection using these commands: 
+4. Repeat steps 1 through 3 for each mapped project collection using these commands: 
 	```witadmin exportglobalworkflow /collection:http://fabrikam:8080/tfs/defaultcollection /f:tpgf.xml```     
 
 	```witadmin importglobalworkflow /collection:http://fabrikam:8080/tfs/defaultcollection /f:tpgf.xml```    
@@ -158,9 +158,9 @@ A copy of global workflow with default mapping fields would help.
 	
 ## 6. Delete all TFS-PS related fields 
  
-**Where**: From each mapped team project collection. You should have a list of all mapped elements from step [1. List mapped elements](#list).
+**Where**: From each mapped project collection. You should have a list of all mapped elements from step [1. List mapped elements](#list).
  
-Several work item fields were added to your team project collection when they were mapped for TFS-PS integration. These fields store both data and metadata related to the synchronization. In previous steps, we removed usage of these fields from the WITs and global workflow. With those steps completed, you are ready to delete these fields.
+Several work item fields were added to your project collection when they were mapped for TFS-PS integration. These fields store both data and metadata related to the synchronization. In previous steps, we removed usage of these fields from the WITs and global workflow. With those steps completed, you are ready to delete these fields.
  
 1. Delete all fields that begin with *Microsoft.Sync.ProjSrv.&#42;*.  
 
@@ -210,7 +210,7 @@ Use the following commands to delete the TFS tables:
 `DROP TABLE [dbo].[TFS_mapped_projects]`   
 `DROP TABLE [dbo].[TFS_status_approvals]`   
 
->**Note:** If you don't delete the TFS tables and uninstall the TFS extensions for Project Server, you'll receive an error similar to the one shown below when using Microsoft Project with your formerly mapped team projects. The 'Team' ribbon needed to publish and refresh Project (not Project Server) with TFS won't be available.   
+>**Note:** If you don't delete the TFS tables and uninstall the TFS extensions for Project Server, you'll receive an error similar to the one shown below when using Microsoft Project with your formerly mapped projects. The 'Team' ribbon needed to publish and refresh Project (not Project Server) with TFS won't be available.   
 >
 >![Sample screenshot of error message](_img/ps-tfs-integ-error-message.png)
 
@@ -251,7 +251,7 @@ From Project Server, remove all fields that end in `(TFS)`.
 
 **Where**:&#160;&#160;From the TFS data-tier. 
 
-The final elements which remain correspond to entries in the TFS_Configuration database that define the mappings of team projects and project collections. These entries can remain as they are without causing any problems.
+The final elements which remain correspond to entries in the TFS_Configuration database that define the mappings of projects and project collections. These entries can remain as they are without causing any problems.
 
 If you choose to remove these entries, run the following commands on the data-tier server in the order provided:  
 

@@ -53,11 +53,11 @@ In this topic you'll learn how to:
 
 ## Open your backlog from the web portal
 
-From your web browser, open your product backlog from the **Work** hub, **Backlogs** page.  
+From your web browser, open your product backlog from **Work**, **Backlogs** page.  
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -92,14 +92,14 @@ From your web browser, open your product backlog from the **Work** hub, **Backlo
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
 
 From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 > [!div class="mx-imgBorder"]
-> ![Open the Work>Backlogs page, standard hubs](../scrum/_img/assign-items-sprint/open-work-backlogs-standard.png) 
+> ![Open the Work>Backlogs page](../scrum/_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -111,7 +111,7 @@ To choose another team, open the project/team selector and select a different te
 
 From your web browser, open your team's product backlog. Select **Work>Backlogs**. 
 
-![Work hub, backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Work>backlogs, TFS 2015, 2013 web portal](_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 
 ::: moniker-end
 
@@ -121,24 +121,24 @@ From your web browser, open your team's product backlog. Select **Work>Backlogs*
 
 ## Show parents and expand the tree hierarchy  
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
 0. To view Parents or a tree hierarchy, choose the ![](../../_img/icons/view-options-icon.png) view options icon and slide **Parents** to **On**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs hub, Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
+	> ![New Navigation, Work>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/show-parents-agile.png)
 
 	The hierarchical view displays. From this view, you can reparent items by drag and drop, moving a child item to a new parent. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Hierarchical view, agile hubs](_img/organize-backlog/hierarchical-view-agile.png)
+	> ![Hierarchical view](_img/organize-backlog/hierarchical-view-agile.png)
 
 0. Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![collapse icon](../_img/icons/collapse_icon.png) icons to expand or collapse one level of the hierarchy.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Hierarchical view, expand and collapse icons, agile hubs](_img/organize-backlog/expand-collapse-agile.png)  
+	> ![Hierarchical view, expand and collapse icons](_img/organize-backlog/expand-collapse-agile.png)  
 
 
 ::: moniker-end
@@ -149,7 +149,7 @@ From your web browser, open your team's product backlog. Select **Work>Backlogs*
 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 From the product backlog page, set **Parents** to **Show** when you want to drill up or down within the hierarchy. You can also drag and drop items to reparent items from this view.   
 
@@ -168,14 +168,14 @@ Use the expand ![expand icon](../_img/icons/expand_icon.png) and collapse ![coll
 ## Map items to group them under a feature or epic 
 If you've already created your backlog, and now you want to organize it, you can do that most easily by mapping child items to parents.   
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
 0. Choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs hub, Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)
+	> ![New Navigation, Work>Backlogs>Open view options and choose Parents ON](_img/organize-backlog/turn-mapping-on-agile.png)
 
 	The Mapping pane displays immediately. 
 
@@ -195,7 +195,7 @@ If you've already created your backlog, and now you want to organize it, you can
 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 To map a backlog item under a feature, you first turn mapping on from your backlog (Backlog items, Stories, or Requirements). Next, find the Unparented backlog items group by turning the Parents control to Show. Unparented backlog items will appear at the end of the parented set of backlog items. 
  

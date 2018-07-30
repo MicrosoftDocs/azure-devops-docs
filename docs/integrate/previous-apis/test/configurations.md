@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/configurations?api
 |:-------------------|:--------|:--------|:---------------------
 | URL
 | instance           | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  |         | Name or ID of the team project.
+| project            | string  |         | Name or ID of the project.
 | Query
 | api-version        | string  |         | Version of the API to use.
 | $skip				 | int     |         | Number of test configurations to skip.
@@ -85,7 +85,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/configurations/{co
 |:-------------------|:--------|:---------------------
 | URL
 | instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  | Name or ID of the team project.
+| project            | string  | Name or ID of the project.
 | configurationId    | int     | ID of the test configuration to get.
 | Query
 | api-version        | string  | Version of the API to use.
@@ -116,14 +116,14 @@ Content-Type: application/json
 |:------------|:---------|:----------------------------|:---------------------
 | URL
 | instance    | string   |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |                             | Name or ID of the team project.
+| project     | string   |                             | Name or ID of the project.
 | Query
 | api-version | string   |                             | Version of the API to use.
 | Body
 | name        | string   |                             | Name of the new test configuration.
 | description | string   |                             | Description of the new test configuration.
 | values      | NameValuePair|                             | An array of test variable name and corresponding selected value pairs.
-| area        | string | Team project root area | Name of the area under which the configuration is created.
+| area        | string | Project root area | Name of the area under which the configuration is created.
 | state       | enum { Active, Inactive } | Active       | State of the test configuration.
 
 [!code-REST [POST__test_configurations_json](./_data/configurations/POST__test_configurations.json)]
@@ -156,7 +156,7 @@ Content-Type: application/json
 |:------------|:---------|:----------------------------|:---------------------
 | URL
 | instance    | string   |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |                             | Name or ID of the team project.
+| project     | string   |                             | Name or ID of the project.
 | configurationId               | int     |            | ID of the test configuration to update.
 | Query
 | api-version | string   |                             | Version of the API to use.
@@ -164,7 +164,7 @@ Content-Type: application/json
 | name        | string   |                             | Name of the test configuration.
 | description | string   |                             | Description of the test configuration.
 | values      | NameValuePair|                             | An array of test variable name and corresponding selected value pairs.
-| area        | string| Team project root area | Name of the area under which the configuration is created.
+| area        | string| Project root area | Name of the area under which the configuration is created.
 | state       | enum { Active, Inactive } | Active       | State of the test configuration.
 
 [!code-REST [PATCH__test_configurations__configurationId__json](./_data/configurations/PATCH__test_configurations__configurationId_.json)]
@@ -179,7 +179,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/configurations/
 |:-------------------|:--------|:---------------------
 | URL
 | instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  | Name or ID of the team project.
+| project            | string  | Name or ID of the project.
 | configurationId               | int     | ID of the test configuration to get.
 | Query
 | api-version        | string  | Version of the API to use.

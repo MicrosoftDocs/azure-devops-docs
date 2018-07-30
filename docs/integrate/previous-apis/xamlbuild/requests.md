@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/requests[?request
 |:----------------|:-------|:------------
 | URL
 | instance        | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project         | string | [Team project](../tfs/projects.md) ID or name.
+| project         | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version     | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | requestedFor    | string | Person who submitted the build request.<br/>Wildcards (*) are supported.
@@ -84,7 +84,7 @@ Content-Type: application/json
 |:----------------|:-------|:---------|:------------
 | URL
 | instance        | string | yes      | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project         | string | yes      | [Team project](../tfs/projects.md) ID or name containing the build definition.
+| project         | string | yes      | [Project](../tfs/projects.md) ID or name containing the build definition.
 | Request body
 | buildDefinition | int    | yes      | ID of the build definition to use.
 | reason          | enum {<br/>&nbsp;&nbsp;BatchedCI,<br/>&nbsp;&nbsp;CheckInShelveset,<br/>&nbsp;&nbsp;IndividualCI,<br/>&nbsp;&nbsp;Manual,<br/>&nbsp;&nbsp;None,<br/>&nbsp;&nbsp;Schedule,<br/>&nbsp;&nbsp;ScheduleForced,<br/>&nbsp;&nbsp;Triggered,<br/>&nbsp;&nbsp;UserCreated,<br/>&nbsp;&nbsp;ValidateShelveset<br/>} | yes | Reason for the request.
@@ -112,7 +112,7 @@ Content-Type: application/json
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | request   | int    | ID of the build request to update.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -134,7 +134,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/requests/{requ
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string | [Team project](../tfs/projects.md) ID or name.
+| project   | string | [Project](../tfs/projects.md) ID or name.
 | request   | int    | ID of the build request to delete.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

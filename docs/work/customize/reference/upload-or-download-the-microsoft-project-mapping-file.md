@@ -15,9 +15,9 @@ ms.date: 12/15/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
   
-Use **TFSFieldMapping** to upload and download the Microsoft Project mapping file. This file controls how Microsoft Project publishes tasks to a team project that connects to an on-premises Team Foundation Server (TFS). For example, you can modify the file to support fields you added to work item types or modify the way in which existing fields are published and refreshed.  
+Use **TFSFieldMapping** to upload and download the Microsoft Project mapping file. This file controls how Microsoft Project publishes tasks to a project that connects to an on-premises Team Foundation Server (TFS). For example, you can modify the file to support fields you added to work item types or modify the way in which existing fields are published and refreshed.  
   
- You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the team project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
+ You can specify which work tracking fields map to Project fields. You can also control publishing behavior through the **PublishOnly** attribute, and designate special fields such as the context field. For the complete XML syntax of the mapping file, see [Customize the Microsoft Project field mapping file](customize-project-field-mapping-file.md). This file is the same file that was defined in the process template that was used to create the project. See [Map Microsoft Project fields](map-microsoft-project-fields-to-tf-fields.md)  
   
 The **TFSFieldMapping** command-line tool works for both on-premises TFS and cloud-hosted VSTS. To run the tool, open a Command Prompt window where Team Foundation Server is installed. 
  
@@ -50,8 +50,8 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
 |**Argument**|**Description**|  
 |------------------|---------------------|  
 |**upload &#124; download**|Specifies whether to download or upload the field mapping file.|  
-|**/collection**:<i>CollectionURL</i>|Specifies the URI of the team project collection in the following format: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory is used, you must use the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*<br /><br /> If you have previously connected to the server, you can specify the friendly name for the server instead of the URI.|  
-|**/teamproject:**<i>ProjectName</i>|Specfies the name of the team project whose mapping parameters you want to modify. If the name contains spaces, enclose it in quotation marks.|  
+|**/collection**:<i>CollectionURL</i>|Specifies the URI of the project collection in the following format: **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory is used, you must use the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*<br /><br /> If you have previously connected to the server, you can specify the friendly name for the server instead of the URI.|  
+|**/teamproject:**<i>ProjectName</i>|Specfies the name of the project whose mapping parameters you want to modify. If the name contains spaces, enclose it in quotation marks.|  
 |**/mappingfile:**<i>MappingFile</i>|Specifies the name and file path of the mapping file.|  
   
 ## To change how work item fields are mapped to Project  
@@ -88,7 +88,7 @@ TFSFieldMapping upload | download /collection:CollectionURL /teamproject:Project
        IfSummaryRefreshOnly=""/>    
     ```  
   
-     For example, to add additional scheduling fields to a team project created using the Scrum process template, add the following mappings:  
+     For example, to add additional scheduling fields to a project created using the Scrum process template, add the following mappings:  
   
     > [!div class="tabbedCodeSnippets"]
 	```XML   

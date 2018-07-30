@@ -5,7 +5,8 @@ description: Index to XML syntax elements and main attributes for the work item 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 07E12386-621F-4749-BF75-F753B710393B
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.manager: douge
 ms.topic: reference
 ms.date: 03/02/2017
@@ -16,7 +17,7 @@ ms.date: 03/02/2017
 <p><b>TFS 2017 | TFS 2015 | TFS 2013</b></p>
 
 > [!IMPORTANT]  
->This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
+>This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
 >
 >For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -185,14 +186,14 @@ You can control the spacing and size of many elements on a work item form by spe
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false" >  
-      <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">  
-      <Param index="IndexValue" value="ParamValue" type ="Original | Current"/>  
-      </Link>  
-      <Content>  
-      <![CDATA[Contents of HTML]]>  
-      </Content>  
-</WebpageControlOptions>  
+<WebpageControlOptions AllowScript="true | false" ReloadOnParamChange="true | false">
+    <Link UrlRoot="UrlRoot" UrlPath ="UrlPathWithParameters">
+        <Param Index="IndexValue" Value="ParamValue" Type="Original | Current"/>
+    </Link>
+    <Content>
+    <![CDATA[Contents of HTML]]>
+    </Content>
+</WebpageControlOptions>
 ```  
   
  You use the elements that are described in the following table to define plain text or hyperlinked labels, add hyperlinks to a field, or display Web page content in a work item form. For more information, see [Provide help text, hyperlinks, or web content](provide-help-text-hyperlinks-web-content-form.md).  
@@ -201,8 +202,8 @@ You can control the spacing and size of many elements on a work item form by spe
 |-------------|---------------|-----------------|  
 |`Content`|Optional `WebpageControlOptions` element.|Specifies the CDATA HTML-based content to appear in a work item form.<br /><br /> `<Content>    <![CDATA[Contents of HTML]]> </Content>`<br /><br /> For more information, see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md).|  
 |`LabelText`|Optional `Control` element when `type="LabelControl"`.|Defines either a plain or hyperlinked label.<br /><br /> For more information, see [LabelText and Text](labeltext-and-text-xml-elements-reference.md).|  
-|`Link`|Optional `Control` element when `type="FieldControl"`.<br /><br /> Optional `Text` element.<br /><br /> Optional `WebpageControl` element.<br /><br /> Optional `WebpageControlOptions` element.|Defines the hyperlink for a field, label, or Web browser content to appear in a work item form.<br /><br /> `<Link URLRoot="URLRoot" URLPath ="URLPathWithParameters">    <Param /> </Link>`<br /><br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
-|`Param`|Optional `Link` element.|Specifies a value to determine the URL of the hyperlink when `URLPath` is specified for the `Link` element.<br /><br /> `<Param index="IndexValue " value="ParamValue " type ="Original &#124; Current"/>`<br /><br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
+|`Link`|Optional `Control` element when `type="FieldControl"`.<br /><br /> Optional `Text` element.<br /><br /> Optional `WebpageControl` element.<br /><br /> Optional `WebpageControlOptions` element.|Defines the hyperlink for a field, label, or Web browser content to appear in a work item form.<br /><br /> `<Link URLRoot="URLRoot" URLPath="URLPathWithParameters">    <Param /> </Link>`<br /><br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
+|`Param`|Optional `Link` element.|Specifies a value to determine the URL of the hyperlink when `URLPath` is specified for the `Link` element.<br /><br /> `<Param Index="IndexValue" Value="ParamValue" Type="Original &#124; Current"/>`<br /><br /> For more information, see [Link and Param](link-param-xml-elements-reference.md).|  
 |`Text`|Optional `LabelText` element.|Container element for the information or label to appear on the work item form.<br /><br /> `<Text>    <Link >       <Param />    </Link>LabelText </Text>`<br /><br /> For more information, see [LabelText and Text](labeltext-and-text-xml-elements-reference.md).|  
 |`WebpageControlOptions`|Optional `Control` element when `type="WebpageControl"`|Container element that specifies the options for the Web page control.<br /><br /> For more information, see [WebpageControlOptions](webpagecontroloptions-xml-elements-reference.md).|  
   
@@ -232,8 +233,8 @@ You can control the spacing and size of many elements on a work item form by spe
 |Element|Required?|Description|  
 |-------------|---------------|-----------------|  
 |`LinksControlOptions`|Optional `Control` element when `type="LinksControl"`|Provides a container for elements that define the options for controlling what links can be added to a work item and the default columns that you want to appear for the list of links in a work item.|  
-|`WorkItemLinkFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the link filter criteria to use for link types that are defined for the team project collection.|  
-|`ExternalLinkFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the filter criteria to use for link types that are defined in other team projects.|  
+|`WorkItemLinkFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the link filter criteria to use for link types that are defined for the project collection.|  
+|`ExternalLinkFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the filter criteria to use for link types that are defined in other projects.|  
 |`WorkItemTypeFilters`|Optional `LinksControlOptions` element|Provides a container for one or more `Filter` elements that specify the filter criteria to apply to work item types.|  
 |`Filter` (link types)|Required `WorkItemLinkFilters` element when the `FilterType` attribute is `exclude` or `include`.<br /><br /> Required `ExternalLinkFilters` element when the `FilterType` attribute is `exclude` or `include`.|Specifies the types of links to include or exclude from the set of links that can be created for the work item.|  
 |`Filter` (work item types)|Optional `WorkItemTypeFilters` element when the `FilterType` attribute is `exclude` or `include`.|Specifies the types of work items to include or exclude from the set of work item types between which users can link.|  

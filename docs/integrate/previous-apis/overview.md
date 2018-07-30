@@ -166,16 +166,16 @@ from having a physical representation.</td>
 <td>[Projects and teams](./tfs/overview.md)</td>
 <td>Team Services accounts host projects, and each project has one or more teams that contribute to it. Get access to both with the Projects and Teams API.</td>
 <td>
-<ul><li>Get a list of team projects</li>
+<ul><li>Get a list of projects</li>
 <li>Get a project's source control provider</li>
-<li>Get the teams in a team project</li>
-<li>Create a team project</li></ul>
+<li>Get the teams in a project</li>
+<li>Create a project</li></ul>
 </td>
 </tr>
 <tr>
 <td>[Queues](./queues/overview.md)</td>
 <td>An agent queue provides access to a pool of agents. When you create a build or release definition, you specify which queue it uses. 
-Queues are scoped to your team project collection, so you can share them across build and release definitions in multiple team projects.</td>
+Queues are scoped to your project collection, so you can share them across build and release definitions in multiple projects.</td>
 <td>
 <ul><li>Get a list of queues</li>
 <li>Get a single queue</li></ul>

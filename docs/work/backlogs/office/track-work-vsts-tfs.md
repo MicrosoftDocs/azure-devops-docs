@@ -45,7 +45,7 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 One advantage of working in Excel or Project is that you can work offline and add or modify work items. The following procedures show you how to disconnect an Excel work item list or a Project plan from VSTS and TFS and later reconnect to synchronize the document with the work item database.  
   
 > [!NOTE]
->  If the team project that contains work items for your Excel or Project document is moved to a different account, project collection or TFS instance, you must reconfigure the server to which the document connects. For more information, see [Connect to team projects, Connect to Excel or Project](../../../organizations/projects/connect-to-projects.md#excel-project).  
+>  If the project that contains work items for your Excel or Project document is moved to a different organization, project collection or TFS instance, you must reconfigure the server to which the document connects. For more information, see [Connect to projects, Connect to Excel or Project](../../../organizations/projects/connect-to-projects.md#excel-project).  
   
 
 <a name="WorkingOffline"></a> 
@@ -91,7 +91,7 @@ To reconnect an Excel or Project document file:
 
 ## Related articles
 
-- [Connect to team projects, Connect to Excel or Project](../../../organizations/projects/connect-to-projects.md#excel-project)  
+- [Connect to projects, Connect to Excel or Project](../../../organizations/projects/connect-to-projects.md#excel-project)  
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)

@@ -1,7 +1,7 @@
 ---
 title: Manage work item fields using witadmin
 titleSuffix: TFS  
-description: Change an attribute for a work item field defined for a team project in Team Foundation Server
+description: Change an attribute for a work item field defined for a project in Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 445d9c20-2e7d-420b-9bdc-2448e8883cd6
@@ -16,9 +16,9 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../../../_shared/customization-witadmin-plus-version-header.md)]
 
-You can manage the fields defined for work item types (WITs) that are defined for a team project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
+You can manage the fields defined for work item types (WITs) that are defined for a project collection (On-premises XML) by using the following **witadmin** commands. If you want to add a global field (valid for On-premises XML) you can do so by [modifying the global workflow file](../global-workflow-xml-element-reference.md) and [importing it to the collection](witadmin-import-export-global-workflow.md).  
   
--   **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and team projects within the team project collection:   
+-   **changefield**: Changes one or more attributes of a field. When you change one of the following attributes, you change it for all work item types and projects within the project collection:   
     -   **Data type** for `PlainText` or `HTML` fields.    
         > [!IMPORTANT]  
         >  When you upgrade Team Foundation Server from an earlier version to the current version, the type assignment for the **Description** (System.Description) field is automatically converted from `PlainText` to `HTML`. With the `changefield` command, you can restore the content of this field to display plain text.  
@@ -39,13 +39,13 @@ For an overview of the fields defined within a default process template, see [Wo
   
  **Requirements**  
   
--   To list fields, you must have your **View project-level information** permission for the team project in the collection set to **Allow**.    
+-   To list fields, you must have your **View project-level information** permission for the project in the collection set to **Allow**.    
 -   To delete or rename fields or change an attribute of a field, you must be a member of the **Team Foundation Administrators** security group or the **Project Collection Administrators** security group.  
   
 For more information, see [Add an administrator](../../../../organizations/security/set-project-collection-level-permissions.md).  
   
 > [!NOTE]  
->  Even if you log on with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
+>  Even if you sign in with administrative permissions, you must open an elevated Command Prompt window to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt window, choose **Start**, open the **Command Prompt** shortcut menu, and then choose **Run as Administrator**. For more information, see the Microsoft Web site: [User Access Control](http://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ## Syntax  
   
@@ -63,7 +63,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 |**Parameter**|**Description**|  
 |-------------------|---------------------|  
-|**/collection**:`CollectionURL`|Specifies the URI of the team project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
+|**/collection**:`CollectionURL`|Specifies the URI of the project collection. For example:<br /><br /> **On-premises TFS format:  http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, then the format for the URI is the following: **http**://*ServerName:Port/CollectionName*.|  
 |**/n**:`RefName`<br />**/n**:`Name`|The reference name of a work item type field.|  
 |**/index**|Specifies to enable or disable indexing for the specified field. Specify **on** to enable indexing and **off** to disable indexing.|  
 |**/name:** `NewName`|Specifies the new name for the field.|  
@@ -73,7 +73,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 |**/reportingtype:** `Type`|Specifies how the field is used in the warehouse for reporting. The following values are valid:<br /><br /> -   **dimension:** Used for the Integer, String, or DateTime fields.<br />-   **detail:** Used for the Integer, Double, String, or DateTime fields.<br />-   **measure:** Used for the Integer and Double fields. The default aggregation type is sum. You can specify another aggregation type by using the **formula** parameter.<br />-   **none:** Used to disable reportability on the field.<br /><br /> For more information, see [Define and modify work item fields](../define-modify-work-item-fields.md).|  
 |**/reportingformula:** `Formula`|Specifies the aggregation formula to be used when the field is reported as a `measure`. The only supported formula is `sum`.|  
 |**/type:** `HTML` &#124; `PlainText`|Specifies to convert the contents of the field from `PlainText` to `HTML` or from `HTML` to `PlainText`. You can specify this option only for fields whose type assignment is `PlainText` or `HTML`. See [FIELD (Definition) element reference](../field-definition-element-reference.md).|  
-|**/unused**|Lists all fields that are not used by any team project defined in the team project collection.|  
+|**/unused**|Lists all fields that are not used by any project defined in the project collection.|  
 |**/noprompt**|Disables prompt for confirmation.|  
 |**/? or help**|Displays help about the command in the Command Prompt window.|  
   
@@ -84,7 +84,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
  By default, the following fields are indexed: Assigned To, Created Date, Changed By, State, Reason, Area ID, Iteration ID, and Work Item Type. If there are other fields that your team frequently uses in their queries, you can add them to the query index.  
   
 ### Synchronizing person names with Active Directory  
- You must manually enable synchronization of any custom work item fields that are used to assign person names that reference Active Directory. You must enable synchronization for each field for each team project collection that contains the custom fields.  
+ You must manually enable synchronization of any custom work item fields that are used to assign person names that reference Active Directory. You must enable synchronization for each field for each project collection that contains the custom fields.  
   
  All system reference fields that show person-names have the attribute `syncnamechanges` set to `true`. Such fields include System.AuthorizedAs, System.AssignedTo, System.ChangedBy and System.CreatedBy.  Synchronization in enabled for each person name field that is defined in one of the default process templates. For more information, see [Assignments and workflow fields](../../../track/query-by-workflow-changes.md).  
   
@@ -108,12 +108,12 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 ## Examples  
  Unless otherwise specified, the following values apply in each example:  
   
--   URI for the team project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
+-   URI for the project collection: http://AdventureWorksServer:8080/tfs/DefaultCollection    
 -   Work item field name: AdventureWorks.Field    
 -   Default encoding: UTF-8  
   
 ### List fields  
- Use **witadmin listfields** to see the set of fields in use, to select one to add to a work item type. Also, you can list the attribute assignments defined for a specific field and determine which fields are used by which team projects.  
+ Use **witadmin listfields** to see the set of fields in use, to select one to add to a work item type. Also, you can list the attribute assignments defined for a specific field and determine which fields are used by which projects.  
   
 ### View the attributes of a work item field  
   
@@ -136,9 +136,9 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
      The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](../../../work-items/guidance/work-item-field.md).  
   
-### List all fields in a team project collection  
+### List all fields in a project collection  
   
--   Enter the following command to list all fields defined for a team project collection.  
+-   Enter the following command to list all fields defined for a project collection.  
   
     ```  
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
@@ -148,7 +148,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
 ### List fields that are not being used  
   
-- Enter the following command to list the fields that are no longer being used in the team project collection by any work item type.  
+- Enter the following command to list the fields that are no longer being used in the project collection by any work item type.  
   
     ```  
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /unused  
@@ -180,7 +180,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
     ```  
   
 ### Rename a field  
- You can change the friendly name of a work item field to meet the naming conventions that your team uses. Note that the new name is applied to all work item types that reference the changed field in all team projects in the project collection. The friendly name displays when you define filter criteria in a work item query. The name that appears on a work item form may be different than the friendly name defined for the field.  
+ You can change the friendly name of a work item field to meet the naming conventions that your team uses. Note that the new name is applied to all work item types that reference the changed field in all projects in the project collection. The friendly name displays when you define filter criteria in a work item query. The name that appears on a work item form may be different than the friendly name defined for the field.  
   
 #### To rename a work item field  
   
@@ -224,7 +224,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
   
      This work item is created from the work item type that you changed and imported.  
   
-11. Notice, in the **Status** box, that the label for the renamed field, **Rank**, has not changed. This is because the field labels on the work item forms are scoped to the parent team project and are independent of the server-wide field name just specified.  
+11. Notice, in the **Status** box, that the label for the renamed field, **Rank**, has not changed. This is because the field labels on the work item forms are scoped to the parent project and are independent of the server-wide field name just specified.  
   
     > [!NOTE]  
     >  For more information about how to change field labels on work item forms, see [ Control XML element reference](../control-xml-element-reference.md).  
@@ -276,7 +276,7 @@ witadmin reportfield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
      If the change request fails, an error message appears. The most common mistakes that can be made are trying to change a system reference field, or trying to change a field of a data type other than String. These operations are not supported.  
   
 ### Delete a field  
- Before you delete a field, verify that the field is not in use. If the field is in use, you must first remove the field from the work item types that use it prior to deleting it from the team project collection. The following command deletes the field AdventureWorks.Field from Collection1:  
+ Before you delete a field, verify that the field is not in use. If the field is in use, you must first remove the field from the work item types that use it prior to deleting it from the project collection. The following command deletes the field AdventureWorks.Field from Collection1:  
   
 ```  
 witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:AdventureWorks.Field  
@@ -301,7 +301,7 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
     Indexed: False  
     ```  
   
-2.  If the **Use** field indicates that the field is in use, then you must delete it from each work item type for each team project that is listed. For example, the Microsoft.VSTS.TCM.SystemInfo field indicates that it is being used by the Bug and Code Defect work item types for four projects: Arroyo, Desert, Palm, and Springs.  
+2.  If the **Use** field indicates that the field is in use, then you must delete it from each work item type for each project that is listed. For example, the Microsoft.VSTS.TCM.SystemInfo field indicates that it is being used by the Bug and Code Defect work item types for four projects: Arroyo, Desert, Palm, and Springs.  
   
     ```  
     Field: Microsoft.VSTS.TCM.SystemInfo  
@@ -312,9 +312,9 @@ witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
     Indexed: False  
     ```  
   
-     Before you can delete this field, you must remove it from each of the work item types listed for each team project for which it is defined. To remove the field, you modify the definition for the work item type by deleting the `FIELD` and `Control` elements that contain the field reference name. See [Import, export, and manage work item types](witadmin-import-export-manage-wits.md), [FIELD (Definition) element reference](../field-definition-element-reference.md), and [Control](../control-xml-element-reference.md).  
+     Before you can delete this field, you must remove it from each of the work item types listed for each project for which it is defined. To remove the field, you modify the definition for the work item type by deleting the `FIELD` and `Control` elements that contain the field reference name. See [Import, export, and manage work item types](witadmin-import-export-manage-wits.md), [FIELD (Definition) element reference](../field-definition-element-reference.md), and [Control](../control-xml-element-reference.md).  
   
-#### Delete a field from a team project collection  
+#### Delete a field from a project collection  
   
 Enter the following command to delete the MyCompany.MyProcess.MyField field, and then choose Enter.  
   
@@ -325,8 +325,8 @@ Enter **y** at the confirmation prompt to complete this step.
   
 ## Q & A  
   
-### Q: What customizations can I make and still use the Configure Features Wizard to update my team project after a TFS upgrade?  
- **A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](../../configure-features-after-upgrade.md) will update your team projects and you'll get access to the latest features.  
+### Q: What customizations can I make and still use the Configure Features Wizard to update my project after a TFS upgrade?  
+ **A:** You can add custom fields, customize a pick list, and add rules to a field. The [Configure Features Wizard](../../configure-features-after-upgrade.md) will update your projects and you'll get access to the latest features.  
   
  Changing field attributes is not recommended. To learn about which customizations you can safely make and which you should avoid, see [On-premises XML process model, Maintenance and upgrade implications](../../on-premises-xml-process-model.md#before-you-customize).  
   

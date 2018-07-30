@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 # Work item queries and query folders
 [!INCLUDE [API_version](../_data/version.md)]
 
-The queries in a team project are organized in folders.
+The queries in a project are organized in folders.
 
 A sample structure of queries and folders might appear as shown here.
 
@@ -41,7 +41,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/queries[/{folderPat
 |:----------|:--------|:--------|:------------------------------
 | URL
 | instance  | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  |         | Name or ID of a team project that contains the queries.
+| project   | string  |         | Name or ID of a project that contains the queries.
 | folderPath    | string  |         | Path to the folder you want to enumerate
 | Query
 | api-version | string  |       | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -82,7 +82,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/queries/{folderPath
 |:----------|:--------|:--------|:------------------------------
 | URL
 | instance  | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  |         | Name or ID of a team project that contains the queries.
+| project   | string  |         | Name or ID of a project that contains the queries.
 | folderPath    | string  |         | ID or path to the query or folder you want to retrieve
 | Query
 | api-version | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -154,7 +154,7 @@ Content-type: Application/json
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Name or ID of a team project that contains the queries.
+| project   | string  | Name or ID of a project that contains the queries.
 | folderPath | string  | ID or Path to the folder you want to create the query in
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -187,7 +187,7 @@ Content-type: Application/json
 |:----------|:---------|:------------------------------
 | URL
 | instance  | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string   | Name or ID of a team project that contains the queries.
+| project   | string   | Name or ID of a project that contains the queries.
 | folderPath    | string  | ID or Path to the folder you want to create the folder in
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -219,7 +219,7 @@ Content-type: Application/json
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Name or ID of a team project that contains the queries.
+| project   | string  | Name or ID of a project that contains the queries.
 | query     | string  | ID of the query to update.
 | folderPath    | string  | Path to the folder you want to enumerate
 | Query
@@ -251,7 +251,7 @@ Content-type: Application/json
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Name or ID of a team project that contains the queries.
+| project   | string  | Name or ID of a project that contains the queries.
 | queryPath    | string  | ID or Path of the query to rename.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -282,7 +282,7 @@ Content-type: Application/json
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Name or ID of a team project that contains the queries.
+| project   | string  | Name or ID of a project that contains the queries.
 | folderPath    | string  | ID or Path of the folder to update.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -313,7 +313,7 @@ Content-type: Application/json
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Name or ID of a team project that contains the queries.
+| project   | string  | Name or ID of a project that contains the queries.
 | folderPath    | string  | ID or Path to the folder you want to enumerate
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -332,7 +332,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/wit/queries/{queryPa
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Name or ID of a team project that contains the queries.
+| project   | string  | Name or ID of a project that contains the queries.
 | queryPath | string  | ID or path of the query or folder to delete.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -371,7 +371,7 @@ Content-type: Application/json
 |:----------|:--------|:------------------------------
 | URL
 | instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | Name or ID of a team project that contains the queries.
+| project   | string  | Name or ID of a project that contains the queries.
 | id    | string  | ID of the folder or query to undelete.
 | Query
 | api-version | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.

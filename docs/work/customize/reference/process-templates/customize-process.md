@@ -1,7 +1,7 @@
 ---
 title: Customize a process template
 titleSuffix: VSTS & TFS
-description: Define the objects and processes available to you when you create a team project in Team Foundation Server 
+description: Define the objects and processes available to you when you create a project in Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 3122f0e7-2ad9-46a1-a65f-32af37c0f444
@@ -17,7 +17,7 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
  
-Process templates define the objects and processes available to you when you create a team project. By customizing a process template, you customize one of more objects. Common types of customizations you can make include:  
+Process templates define the objects and processes available to you when you create a project. By customizing a process template, you customize one of more objects. Common types of customizations you can make include:  
   
 - Add a new field to an existing work item type (WIT)  
 - Modify the pick list of values for a field  
@@ -28,7 +28,7 @@ Process templates define the objects and processes available to you when you cre
 
 
 > [!NOTE]    
->If you're looking for **project templates** for software development, see [Creating Visual Studio templates](https://msdn.microsoft.com/library/ms247121.aspx). This topic describes process templates used to create team projects on VSTS and TFS.  
+>If you're looking for **project templates** for software development, see [Creating Visual Studio templates](https://msdn.microsoft.com/library/ms247121.aspx). This topic describes process templates used to create projects on VSTS and TFS.  
   
 Default process templates define default configurations as well as the following artifacts that your team uses to plan and track work, collaborate, and share information.
 
@@ -40,25 +40,25 @@ For example, the Agile process template defines the set of artifacts shown in th
   
 Many of these artifacts depend on WITs which are used to track work. For example, data fields defined in the definition of WITs&mdash;such as, Feature, Bug, User Story, or Task&mdash;are also used to define work item queries and reports. In addition to these artifacts, you can also define the initial project areas and milestones, security configuration, and other default settings that support version control and test management.  
   
- After you create a team project, you can change configurations and customize artifacts. However, by customizing the process template before you create your team projects, all resulting team projects that you create from it will match a standard set of team processes. The main reasons you might want to customize a process template include:  
+ After you create a project, you can change configurations and customize artifacts. However, by customizing the process template before you create your projects, all resulting projects that you create from it will match a standard set of team processes. The main reasons you might want to customize a process template include:  
   
--   You plan to create several team projects and you want to minimize repetitive tasks that you'll have to implement later in each team project that you create.  
+-   You plan to create several projects and you want to minimize repetitive tasks that you'll have to implement later in each project that you create.  
   
 -   You want to make sure all teams adhere to certain standards by providing the templates and structures within the toolset your software development teams will use.  
   
 -   You need to update a custom process template to support using the Configure Features wizard after a TFS upgrade  
   
-If you work with only a single team project, then you might consider simply creating the team project and customizing one or more objects later.  
+If you work with only a single project, then you might consider simply creating the project and customizing one or more objects later.  
   
 ## How are process templates used?  
-The primary use of process templates is to create a team project. For the Hosted XML process model, it is also used to update a team project. A team project provides the set of objects, artifacts, and configurations defined in the interdependent set of template files. You use your team project to organize source code, track work and information, build software, and support test activities.  
+The primary use of process templates is to create a project. For the Hosted XML process model, it is also used to update a project. A project provides the set of objects, artifacts, and configurations defined in the interdependent set of template files. You use your project to organize source code, track work and information, build software, and support test activities.  
   
  **Hosted XML process model**   
--   Create a team project   
+-   Create a project   
 -   [Add or refresh a process](../../import-process/import-process.md) (limited availability)  
   
 **On-premises XML process model**    
--   Create a team project   
+-   Create a project   
 
   
 ## Where should I start?  
@@ -68,17 +68,17 @@ The primary use of process templates is to create a team project. For the Hosted
   
 -   If you want to become familiar with the file structure of a process template, [review a description for each file](overview-process-template-files.md) or [download a process template](../../../work-items/guidance/manage-process-templates.md).  
   
-     You can modify the processes for your team project after it is created. As you work with a team project, the initial settings that the process template defined may no longer meet your needs.  
+     You can modify the processes for your project after it is created. As you work with a project, the initial settings that the process template defined may no longer meet your needs.  
   
--   If you're most interested in customizing objects used to track work, which includes test plans, test suites, and test cases, review [Customize your work tracking experience](../../customize-work.md).  The customizations you make by modifying an XML definition file for a team project are the same types of customizations you make in a process template file.  
+-   If you're most interested in customizing objects used to track work, which includes test plans, test suites, and test cases, review [Customize your work tracking experience](../../customize-work.md).  The customizations you make by modifying an XML definition file for a project are the same types of customizations you make in a process template file.  
   
-     If you want to [add or modify types of work items](../../add-modify-wit.md), you can achieve this without changing the whole process template. You can make and test changes by using an existing team project. For the On-premises XML process model, you can use the **witadmin exportwit** and **importwitd** command-line tools to download and upload the XML definition files for work item types.  
+     If you want to [add or modify types of work items](../../add-modify-wit.md), you can achieve this without changing the whole process template. You can make and test changes by using an existing project. For the On-premises XML process model, you can use the **witadmin exportwit** and **importwitd** command-line tools to download and upload the XML definition files for work item types.  
   
 -   If you need to update a custom process template to support using the Configure Features wizard after a TFS upgrade, see [Configure features after an upgrade](../../configure-features-after-upgrade.md).  
   
      Upgrading TFS to a later version uploads the latest versions of the default TFS process templates. To use the available updated templates and to access customizations that you made previously, you may need to add customizations provided with the new templates.  
   
--   If you're considering making extensive customizations, [review how the changes you make will impact maintenance and upgrade of your team projects](../../on-premises-xml-process-model.md#before-you-customize).  
+-   If you're considering making extensive customizations, [review how the changes you make will impact maintenance and upgrade of your projects](../../on-premises-xml-process-model.md#before-you-customize).  
   
 <a name="plan"></a> 
 ##  Process template files and functional areas you can customize  
@@ -87,9 +87,9 @@ Process templates consist of nine plug-ins. Each plug-in defines a set of tasks 
 ![Process Template Plugins](_img/tfs_pt_plugins.png "TFS_PT_Plugins")  
   
 > [!IMPORTANT]  
->When you create a team project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
+>When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. These features aren't supported for VSTS. 
 >
->If you want these features to be created for a team project on your on-premises TFS, then create your team project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
+>If you want these features to be created for a project on your on-premises TFS, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).  
 
 The Build, Portal, and Reporting plug-ins require the following resources have been installed and configured.  
   
@@ -100,7 +100,7 @@ The Build, Portal, and Reporting plug-ins require the following resources have b
 |Reporting|||![Required](_img/aml_proj_bluefield_whitecheckmark.png "AML_Proj_BlueField_WhiteCheckmark")|![Required](_img/aml_proj_bluefield_whitecheckmark.png "AML_Proj_BlueField_WhiteCheckmark")|  
 
 
-To customize a process template, you customize one or more files associated with a functional area. While customizing any one object is fairly simple, you'll want to make sure that you don't break any interdependencies when you customize.  The [ProcessTemplate.xml plug-in file](define-root-tasks-process-template-plug-in.md) defines which plug-ins to include in the template. This file contains all the task groups that you want to run to create a team project. Each task group references a subordinate XML plug-in file where the specific tasks for that plug-in are defined.     
+To customize a process template, you customize one or more files associated with a functional area. While customizing any one object is fairly simple, you'll want to make sure that you don't break any interdependencies when you customize.  The [ProcessTemplate.xml plug-in file](define-root-tasks-process-template-plug-in.md) defines which plug-ins to include in the template. This file contains all the task groups that you want to run to create a project. Each task group references a subordinate XML plug-in file where the specific tasks for that plug-in are defined.     
   
 
 #### Teams, groups, permissions, & area and iteration paths 
@@ -152,20 +152,20 @@ When you add objects to a process template, you will want to make sure that you 
  
 -   Restrictions are put on the names or labels of most Team Foundation objects. For an overview of naming restrictions that apply to process templates, security groups, area and iteration nodes, work item types, and work item fields, see [Naming restrictions](../../../../organizations/settings/naming-restrictions.md).  
   
--   Most process template components that you customize will affect only the team project that you create by using the process template. The exceptions to this rule are global lists, link types, and work item fields. These objects are defined for a team project collection.  
+-   Most process template components that you customize will affect only the project that you create by using the process template. The exceptions to this rule are global lists, link types, and work item fields. These objects are defined for a project collection.  
   
 -   Each work item field has an associated field reference name that uniquely identifies each field. The reference name cannot be changed after it is assigned.  
   
-     In addition, a work item field can have a reporting name that is assigned to it. The reporting name must match across all work item types that are defined for a team project collection. If they do not, validation errors might occur when you upload the process template, or conflicts might occur in the data warehouse databases.  
+     In addition, a work item field can have a reporting name that is assigned to it. The reporting name must match across all work item types that are defined for a project collection. If they do not, validation errors might occur when you upload the process template, or conflicts might occur in the data warehouse databases.  
   
-     Work item field names, link type names, and global lists are scoped to a team project collection. If you customize any of these objects, the change will be reflected in all team projects that are defined in the collection and in the work item types that contain that work item field.  
+     Work item field names, link type names, and global lists are scoped to a project collection. If you customize any of these objects, the change will be reflected in all projects that are defined in the collection and in the work item types that contain that work item field.  
 
 -   The maximum size of a process template is two gigabytes. When you customize a process template, make sure that your changes do not increase its size beyond that value.  
 
 
 <a name="pt_workflow"></a> 
 ##  Steps to customize a process template  
- Customizing a process template is an iterative process. You will need a team project collection that is defined on a server that is running Team Foundation Server where you can test your process template to make sure that it was customized correctly.  
+ Customizing a process template is an iterative process. You will need a project collection that is defined on a server that is running Team Foundation Server where you can test your process template to make sure that it was customized correctly.  
   
  To customize a process template, you first download an existing process template, modify or add files, upload the process template files, and then verify your changes.  
   
@@ -175,9 +175,9 @@ When you add objects to a process template, you will want to make sure that you 
 |----------|----------|  
 |![Step 1](_img/procguid_1.png "ProcGuid_1")|[Download a process template](../../../work-items/guidance/manage-process-templates.md). Before you can customize a process template, you must download it to your local computer.<br /><br /> To minimize the modifications that you must make, [select a template](../../../work-items/guidance/choose-process.md) that most closely matches your team processes. In general, you choose a process template based on types of work items and workflow.|  
 |![Step 2](_img/procguid_2.png "ProcGuid_2")|**Modify or add files**. You customize a process template by modifying, deleting, or adding files that are defined for a process template. You customize a plug-in or definition file by modifying its XML content. Each plug-in file and type definition file must conform to its XML schema definition.<br /><br /> The first time that you customize a process template, make a small change. If you make many changes without a good understanding of how the changes may affect your template, you risk encountering multiple mistakes that will be difficult to debug.<br /><br /> Make sure that the name of your process template is unique. If you download a process template, make changes, and upload it, you must change its name or it will over-write the existing process template from the project collection.|  
-|![Step 3](_img/procguid_3.png "ProcGuid_3")|[Upload a process template](../../../work-items/guidance/manage-process-templates.md). After you have customized your template, upload it to the team project collection where you will create the team project.<br /><br /> Ideally, you should use a team project collection that is not used by other team projects. By working in a test-bed project collection, you avoid introducing a change that might collide with existing team processes that are still under development. Also, you will want the project collection to support the same resources that you want to access, such as a project portal and a reporting site.<br /><br /> Make sure that the name of your process template is unique. If you downloaded a process template from a team project collection, made a change, and are now uploading the template, you must change its name or delete the existing process template from the team project collection.<br /><br /> The upload process performs a verification check to make sure that the XML is valid. If you receive any errors when you try to upload the process template, the changes that you made will have caused the error. Review your changes, and correct any XML syntax errors that you find.|  
-|![Step 4](_img/procguid_4.png "ProcGuid_4")|[Create a team project](../../../../organizations/projects/create-project.md). To test new process templates, you must create a team project. You create a team project by accessing the New Team Project Wizard from Team Explorer.<br /><br /> If any errors occur, view the log for team project creation. It contains a list of the tasks that it tried to run and shows which tasks failed. You can map failed tasks back to the XML to determine the cause of the errors.<br /><br /> You can clean up unnecessary team projects by using the [TFSDeleteProject command-line tool](../../../../organizations/projects/delete-project.md).|  
-|![Step 5](_img/procguid_6.png "ProcGuid_6")|**Verify changes to process templates**. Before you put your process template in production mode and use it as the basis for several team projects, you should verify that it is well-defined. You perform this task by systematically verifying that each object and artifact works as expected.<br /><br /> If you added a report, make sure that it appears in Team Explorer. If you added a field, make sure that you didn't introduce any schema conflicts.|  
+|![Step 3](_img/procguid_3.png "ProcGuid_3")|[Upload a process template](../../../work-items/guidance/manage-process-templates.md). After you have customized your template, upload it to the project collection where you will create the project.<br /><br /> Ideally, you should use a project collection that is not used by other projects. By working in a test-bed project collection, you avoid introducing a change that might collide with existing team processes that are still under development. Also, you will want the project collection to support the same resources that you want to access, such as a project portal and a reporting site.<br /><br /> Make sure that the name of your process template is unique. If you downloaded a process template from a project collection, made a change, and are now uploading the template, you must change its name or delete the existing process template from the project collection.<br /><br /> The upload process performs a verification check to make sure that the XML is valid. If you receive any errors when you try to upload the process template, the changes that you made will have caused the error. Review your changes, and correct any XML syntax errors that you find.|  
+|![Step 4](_img/procguid_4.png "ProcGuid_4")|[Create a project](../../../../organizations/projects/create-project.md). To test new process templates, you must create a project. You create a project by accessing the New Team Project Wizard from Team Explorer.<br /><br /> If any errors occur, view the log for project creation. It contains a list of the tasks that it tried to run and shows which tasks failed. You can map failed tasks back to the XML to determine the cause of the errors.<br /><br /> You can clean up unnecessary projects by using the [TFSDeleteProject command-line tool](../../../../organizations/projects/delete-project.md).|  
+|![Step 5](_img/procguid_6.png "ProcGuid_6")|**Verify changes to process templates**. Before you put your process template in production mode and use it as the basis for several projects, you should verify that it is well-defined. You perform this task by systematically verifying that each object and artifact works as expected.<br /><br /> If you added a report, make sure that it appears in Team Explorer. If you added a field, make sure that you didn't introduce any schema conflicts.|  
   
 <a name="add_resources"></a> 
 ## Related articles 
@@ -227,7 +227,7 @@ The Process Editor provides a user interface that you can use to customize the f
     -   Review files to be uploaded and their folder structure    
     -   Add files to be uploaded.  
 
-You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a team project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](http://msdn.microsoft.com/80a9c78f-f495-4f54-99a1-b5e907afa319).  
+You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](http://msdn.microsoft.com/80a9c78f-f495-4f54-99a1-b5e907afa319).  
  
 
  

@@ -19,7 +19,7 @@ ms.date: 01/20/2017
 You can use the code review and feedback fields to create queries and reports that track the status of these processes. The fields appear in the following work item types, which are included with the default processes for VSTS and TFS: Code Review Request, Code Review Response, Feedback Request, and Feedback Response.  
   
 > [!NOTE]  
->  If your TFS application server has been upgraded from an earlier version you might need to update your team project to get access to these work item types. See [Configure features after an upgrade](../../customize/configure-features-after-upgrade.md)  
+>  If your TFS application server has been upgraded from an earlier version you might need to update your project to get access to these work item types. See [Configure features after an upgrade](../../customize/configure-features-after-upgrade.md)  
   
 ##  <a name="codereviews"></a> Fields used to track code reviews  
  The following fields are used to track code review requests and responses. You can only make a Code Review request against code maintained in a [Team Foundation version control (TFVC) repository](../../../tfvc/overview.md). A code review response is created for each person who's been requested to provide review comments. See [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  

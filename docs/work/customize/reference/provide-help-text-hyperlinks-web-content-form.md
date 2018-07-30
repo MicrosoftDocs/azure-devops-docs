@@ -23,7 +23,7 @@ When you customize your work item form, you may want to provide information or l
   
 By using the form controls that are described in this topic, you can add tooltip text for individual fields, stand-alone text, or hyperlinks to Web pages, or embed HTML content or Web content in the form.  
   
-To modify an existing WIT, you modify the XML definition file for the WIT and then import it to your team project [based on the process model you use](../customize-work.md). 
+To modify an existing WIT, you modify the XML definition file for the WIT and then import it to your project [based on the process model you use](../customize-work.md). 
  
   
 [!INCLUDE [temp](../../_shared/process-editor.md)]
@@ -81,16 +81,17 @@ To modify an existing WIT, you modify the XML definition file for the WIT and th
  The following example illustrates how to add a hyperlink to part of a field label. In this example, the URL is determined by the values that are assigned to the `Param` elements based on the specific work item.  
   
 ```xml
-<Control Type="FieldControl" FieldName="System.IterationPath">  
-      <LabelText LabelPosition="Left">  
-      <Text>  
-         <Link UrlRoot="@ProcessGuidance" UrlPath="{0}.html">  
-               <Param Index="0" vValue"System.WorkItemType"/>         </Link>  
-               Iteration Path  
-      </Text>  
-      <Text> (must be 3 levels deep)</Text>  
-      </LabelText>  
-</Control>  
+<Control Type="FieldControl" FieldName="System.IterationPath">
+    <LabelText LabelPosition="Left">
+        <Text>
+            <Link UrlRoot="@ProcessGuidance" UrlPath="{0}.html">
+                <Param Index="0" Value="System.WorkItemType" />
+            </Link>
+            Iteration Path
+        </Text>
+        <Text> (must be 3 levels deep)</Text>
+    </LabelText>
+</Control>
 ```  
   
 #### Example: hyperlink text label  
@@ -141,10 +142,11 @@ Combining Text and Hyperlinks in a Single Label
  The following example illustrates how to add a hyperlink to a field label that is generated from parameter values that are evaluated for the open work item.  
   
 ```xml
-<Control Type="FieldControl" FieldName="System.State" Label="&State:" LabelPosition="Left">  
-      <Link OpenInNewWindow="true" UrlRoot="http://" UrlPath="myserver.com:8080/tfs/myproject/{0}/_workItems#_a=edit&id=">      <Param Index="0" Value="System.State" Type ="Original"/>  
-      </Link>  
-</Control>  
+<Control Type="FieldControl" FieldName="System.State" Label="&amp;State:" LabelPosition="Left">
+    <Link OpenInNewWindow="true" UrlRoot="http://" UrlPath="myserver.com:8080/tfs/myproject/{0}/_workItems#_a=edit&amp;id=">
+        <Param Index="0" Value="System.State" Type="Original" />
+    </Link>
+</Control>
 ```  
   
 ##  <a name="WebBrowserControl"></a> Displaying web content  

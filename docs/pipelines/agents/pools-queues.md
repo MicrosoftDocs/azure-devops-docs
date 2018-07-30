@@ -152,6 +152,6 @@ Ask the owner of your VSTS organization to grant you permission to use the queue
 A: The hosted pool provides all VSTS organizations with a single hosted build agent and a limited number of free build minutes each month. If you need more hosted build resources, or need to run more than one build concurrently, then you can either:
 
 * [Deploy your own on-premises build agents](agents.md).
-* [Buy additional hosted pipelines](../../billing/buy-more-build-vs.md#buy-build-release).
+* [Buy additional hosted pipelines](../../organizations/billing/buy-more-build-vs.md#buy-build-release).
 
 ::: moniker-end

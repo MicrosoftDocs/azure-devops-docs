@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/suiteEntry/{suiteI
 |:------------|:-------|:-----------
 | URL
 | instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}). 
-| project     | string | Name or ID of the team project.
+| project     | string | Name or ID of the project.
 | suiteId     | int    | ID of the parent suite of the suite entries to get.
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -56,7 +56,7 @@ Content-Type: application/json
 |:----------------|:-------|:------------ |:------------------------------
 | URL
 | instance        | string |               |[VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}). 
-| project         | string |               |Name or ID of the team project.
+| project         | string |               |Name or ID of the project.
 | suiteId         | int    |               |ID of the parent suite of the suite entries to reorder.
 | api-version     | string |               |[Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body

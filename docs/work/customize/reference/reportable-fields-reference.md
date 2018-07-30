@@ -12,7 +12,7 @@ ms.date: 02/17/2017
 
 
 > [!IMPORTANT]  
->This topic applies to team project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and team project to support reporting. See [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md). 
+>This topic applies to project customization for On-premises XML process models. For you to view reports, you must have configured your TFS and project to support reporting. See [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md). 
 >
 >For an overview of process models and customization options, see [Customize your work tracking experience](../customize-work.md). 
 
@@ -55,7 +55,7 @@ A default set of fields appears in the relational warehouse database or the cube
 |Due Date|The forecasted due date by which an issue will be resolved. (Agile process template only)|Microsoft.VSTS.Scheduling.DueDate|DateTime|  
 |Finish Date|The date and time when the schedule indicates that the task will be completed.|Microsoft.VSTS.Scheduling.FinishDate|DateTime|  
 |Found In|The product build number, also known as a revision, in which a bug was found.|Microsoft.VSTS.Build.FoundIn|String|  
-|ID|The unique identifier that is assigned to a work item. Work item IDs are unique across all team projects and work items that are defined in a team project collection.|System.Id|Integer|  
+|ID|The unique identifier that is assigned to a work item. Work item IDs are unique across all projects and work items that are defined in a project collection.|System.Id|Integer|  
 |Integration Build|The product build number that incorporates the code or fixes a bug.|Microsoft.VSTS.Build.IntegrationBuild|String|  
 |Issue|Indicates that the shared step is associated with an expected result. Allowed values are **Yes** and **No**. **Note:**  This field is not included in the work item form and is not populated with any data.|Microsoft.VSTS.Common.Issue|String|  
 |Iteration Path|Groups the work items by named sprints or time periods. The iteration must be a valid node in the project hierarchy.|System.IterationPath|TreePath|  
@@ -71,7 +71,7 @@ A default set of fields appears in the relational warehouse database or the cube
 |Stack Rank|A subjective rating of the user story, task, issue, or bug compared to other work items of the same type. An item that is assigned a lower number should be fixed before an item that is assigned a higher number.|Microsoft.VSTS.Common.Rank|Double|  
 |Start Date|The date and time when the schedule indicates that the task will start.|Microsoft.VSTS.Scheduling.StartDate|DateTime|  
 |State|The current state of the work item. The valid values for state are specific to each type of work item.|System.State|String|  
-|Team Project|The team project to which this work item belongs.|System.TeamProject|String|  
+|Team Project|The project to which this work item belongs.|System.TeamProject|String|  
 |Title|A short description that summarizes what the work item is and helps users to distinguish it from other work items in a list.|System.Title|String|  
 |Work Item Type|The name of the work item type.|System.WorkItemType|String|  
   
@@ -91,4 +91,4 @@ A default set of fields appears in the relational warehouse database or the cube
   
 ## Related articles
 -  [Index of work item fields](../../work-items/guidance/work-item-field.md)
--  [Add reports to a team project](../../../report/admin/add-reports-to-a-team-project.md)
+-  [Add reports to a project](../../../report/admin/add-reports-to-a-team-project.md)

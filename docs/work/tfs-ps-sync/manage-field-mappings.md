@@ -17,7 +17,7 @@ ms.date: 01/12/2017
 
 <a name="BackToTop"></a> You can customize how you synchronize data between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server by modifying the field mapping file. This file defines the data fields that are synchronized and how they are synchronized to support the integration of TFS and Project Server. You can manage this file by using the following options of the **TfsAdmin ProjectServer** command-line tool:  
   
--   **/DownloadFieldMappings**: Downloads the field mapping file that is defined for a team project collection.  
+-   **/DownloadFieldMappings**: Downloads the field mapping file that is defined for a project collection.  
   
 -   **/UploadFieldMappings**: Validates the XML syntax of the field mapping file, and uploads it to a collection. To validate the syntax but not upload the file, you can use the `/validateonly` option.  
   
@@ -36,7 +36,7 @@ cd %programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE
   
  **Requirements**  
   
- To use these commands, your **Administer Project Server integration** permission must be set to **Allow** for the team project collection. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of Project Web Access or Project Web App (PWA) that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+ To use these commands, your **Administer Project Server integration** permission must be set to **Allow** for the project collection. Also, the service account for Team Foundation Server must be granted the necessary permissions to interact with the instance of Project Web Access or Project Web App (PWA) that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
  
   
@@ -54,7 +54,7 @@ TfsAdmin ProjectServer /UploadFieldMappings /collection:tpcUrl /filePath:mapping
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|**/collection**:`tpcURL`|Specifies the uniform resource locator (URL) of a team project collection. You specify the URL in the following format:<br /><br /> **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory, you specify the URI in the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*|  
+|**/collection**:`tpcURL`|Specifies the uniform resource locator (URL) of a project collection. You specify the URL in the following format:<br /><br /> **http**://*ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If you do not specify a virtual directory, you specify the URI in the following format:<br /><br /> **http**://*ServerName:Port/CollectionName*|  
 |**/filePath**:`mappingFile`|Specifies the path and file name of the XML definition file that contains the field mappings. **Note:**  If you are using Windows Vista, you might not have permissions to access certain folders. If you try to export the work item type to a location where you do not have permissions, the registry virtualization technology automatically redirects the exported file and saves it to the virtual store. To avoid this redirection, you can export the file to a location where you have permissions. For more information, see the following pages on the Microsoft website: [Registry Virtualization](http://go.microsoft.com/fwlink/?LinkId=92325) and [Common file and registry virtualization issues in Windows Vista](http://go.microsoft.com/fwlink/?LinkId=92323).|  
 |**/encoding**:`encoding`|Specifies the name of an encoding format for the .NET Framework 2.0. The command exports or imports the XML data in the encoding format that you specify. For example, /e:utf-7 specifies Unicode (UTF-7) encoding. If you do not specify this parameter, the command tries to detect the encoding and uses UTF-8 if detection fails.|  
 |**/validateOnly**|Validates the mapping file but does not upload it.|  
@@ -81,7 +81,7 @@ You have downloaded field mappings to C:MappingFile. . . Done.
   
 -   Each mirror field in Team Foundation is configured to comply with the mapped fields.  
   
--   For work item types that have been mapped for a collection or a team project, the new mappings appear on the **Project Server** tab of the work item form.  
+-   For work item types that have been mapped for a collection or a project, the new mappings appear on the **Project Server** tab of the work item form.  
   
 > [!IMPORTANT]
 >  When you map a field from Team Foundation Server to Project Server, make sure that you match the data types of those fields. Otherwise, the following error might appear when you try to upload the field mappings:  
@@ -92,7 +92,7 @@ You have downloaded field mappings to C:MappingFile. . . Done.
   
 ## Examples  
   
-### Download the field mapping file that is defined for a team project collection  
+### Download the field mapping file that is defined for a project collection  
  The following example downloads the field mappings that are defined for AdventureWorksCollection to AWMappingFile.xml.  
   
 ```  
@@ -100,7 +100,7 @@ TfsAdmin ProjectServer /DownloadFieldMappings /collection:http://AdventureWorksS
   
 ```  
   
-### Upload the field mapping file for a team project collection  
+### Upload the field mapping file for a project collection  
  The following example uploads AWMappingFile.xml to AdventureWorksCollection.  
   
 ```  

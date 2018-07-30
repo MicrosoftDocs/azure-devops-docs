@@ -82,7 +82,7 @@ The system displays an information message about the deletion.
 ### TF402601: Work item type *[witName]* will be renamed to *[name1]* from *[name2]*.
 The process contains a renamed WIT. The WIT will be renamed in the existing process.  
 The process that you're updating contains a WIT that's been renamed from the name in the current process.  
-As part of updating the existing process, the system will rename the WIT in the current process. All work items in existing team projects that reference the process are also renamed.
+As part of updating the existing process, the system will rename the WIT in the current process. All work items in existing projects that reference the process are also renamed.
 
 #### Scenario example
 1. [Create](../customize-wit-form.md) new work item type called "LSI"  
@@ -137,7 +137,7 @@ Correct the schema error in the named file.
 ## Process template plug-in errors
 The ProcessTemplate.xml is the root file that defines the entire process and all XML definition files that 
 will be imported to add or update a process. This file contains all of the plug-ins and task groups that are referenced 
-when creating a team project. Each task group references a subordinate XML file (often in a subfolder) where 
+when creating a project. Each task group references a subordinate XML file (often in a subfolder) where 
 the specific tasks are defined. In general, you specify one task group for each plug-in.
 
 The ProcessTemplate.xml definition file must conform to the syntax and rules described in [ProcessTemplate XML element reference](../reference/process-templates/process-template-xml-elements-reference.md).   

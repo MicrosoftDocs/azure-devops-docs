@@ -16,7 +16,7 @@ ms.date: 01/24/2017
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
-When you create a team project using the [CMMI process](../cmmi-process.md), you can define fields to track requirements to be developed and their importance to the overall product.  
+When you create a project using the [CMMI process](../cmmi-process.md), you can define fields to track requirements to be developed and their importance to the overall product.  
   
  For more information about data types and field attributes, see [Define and modify work item fields](../../../customize/reference/define-modify-work-item-fields.md).  
   
