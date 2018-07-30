@@ -54,10 +54,10 @@ Optimize your queries to return a modest number of results. Complex conditions a
 * When possible, reduce the number of overall clauses to achieve your objective
 * When possible, avoid sorting on anything other than core fields such as ID
 * If you want to sort on a custom field it performs best if you are using it in your filters
-* If querying, specify a Team Project if possible. Otherwise the query gets scoped to the entire collection and could take dramatically longer than it needs to. Uncheck "Query across projects on the top right corner" of the query editor.
+* If querying, specify a Project if possible. Otherwise the query gets scoped to the entire collection and could take dramatically longer than it needs to. Uncheck "Query across projects on the top right corner" of the query editor.
 
 ####Query Across projects
-* If the query does require search across projects, specify which Team Project it is looking for.
+* If the query does require search across projects, specify which Project it is looking for.
 * When possible, use "Tags" instead of "Keywords" (unless searching for partial text of a string is needed)
 * Don't forget about VSTS dashboard charts, as behind each charts are queries (and trending view impact performance the worst).
 

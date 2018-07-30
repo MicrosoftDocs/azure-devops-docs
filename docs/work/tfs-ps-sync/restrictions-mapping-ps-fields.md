@@ -18,7 +18,7 @@ ms.date: 01/12/2017
 
 [!INCLUDE [temp](../_shared/tfs-ps-sync-header.md)]
 
-<a name="top"></a> When you add fields to participate in data synchronization between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, make sure that you do not map fields that are restricted. You map fields by customizing the field mappings for a team project collection. You can map both built-in and custom fields in Project. You can map some of those fields only to the status queue and some fields only to TFS. In general, you should map resource-level information, pjResource\* fields, from Team Foundation Server to Project Server within the **tfsToTarget** element and only task-level information, pjTask\* fields, from Project Server to TFS within the **targetToTfs** element. For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).  
+<a name="top"></a> When you add fields to participate in data synchronization between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, make sure that you do not map fields that are restricted. You map fields by customizing the field mappings for a project collection. You can map both built-in and custom fields in Project. You can map some of those fields only to the status queue and some fields only to TFS. In general, you should map resource-level information, pjResource\* fields, from Team Foundation Server to Project Server within the **tfsToTarget** element and only task-level information, pjTask\* fields, from Project Server to TFS within the **targetToTfs** element. For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).  
   
  You must also match the data types of mapped fields, both built-in and custom, according to the criteria that this topic describes. For more information about built-in fields, see [Available fields reference](http://go.microsoft.com/fwlink/?LinkId=203358).  
   
@@ -33,7 +33,7 @@ ms.date: 01/12/2017
 -   If you rename the `ActiveTfsAssignment(TFS)` field in Project and try to publish your enterprise project plan, the **Validation Resolution** dialog box will appear. To resolve this condition, you must rename the field to its original name.  
   
 ##  <a name="taskname"></a> Task name and work item title field  
- Project **Name** (pjTaskName) is the only field that is mapped from Project Server to Team Foundation and the status queue. This field maps to the Title (System.Title) field in Team Foundation. No other fields can be mapped to both Team Foundation Server and the status queue. The two-way mapping allows changes in both the enterprise project plan and team project to flow in both directions.  
+ Project **Name** (pjTaskName) is the only field that is mapped from Project Server to Team Foundation and the status queue. This field maps to the Title (System.Title) field in Team Foundation. No other fields can be mapped to both Team Foundation Server and the status queue. The two-way mapping allows changes in both the enterprise project plan and project to flow in both directions.  
   
  This mapping is represented in the following code of the field mappings:  
   

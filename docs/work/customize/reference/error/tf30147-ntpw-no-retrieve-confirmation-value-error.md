@@ -23,7 +23,7 @@ This error occurs when the New Team Project Wizard is building the **Confirm Tea
   
 1.  Close the New Team Project Wizard and try running the wizard again.  
   
-2.  If you get this error message again, review the team project creation error log to identify the name of the plug-in.  
+2.  If you get this error message again, review the project creation error log to identify the name of the plug-in.  
   
     1.  Open Notepad.  
   
@@ -42,4 +42,4 @@ This error occurs when the New Team Project Wizard is building the **Confirm Tea
 3.  Contact the vendor who created or supplied the plug-in.  
   
 ## Related articles  
-- [Create a team project](../../../../organizations/projects/create-project.md)
+- [Create a project](../../../../organizations/projects/create-project.md)

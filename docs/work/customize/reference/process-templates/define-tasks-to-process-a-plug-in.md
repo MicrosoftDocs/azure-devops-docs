@@ -17,7 +17,7 @@ ms.date: 09/08/2017
 
 <a name="top"></a> 
 
-You use the **tasks** element and its child elements to define the artifacts to be uploaded or specific elements to be created for a plug-in. A task specifies work that must occur to configure something specific to the process in a new team project. A number of the tasks that you define upload the work item types, work item queries, documents, and reports for a team project. Other tasks that you can define configure other areas of Visual Studio Application Lifecycle Management, such as Team Foundation Build, Visual Studio Lab Management, Test Manager, and Team Foundation version control.    
+You use the **tasks** element and its child elements to define the artifacts to be uploaded or specific elements to be created for a plug-in. A task specifies work that must occur to configure something specific to the process in a new project. A number of the tasks that you define upload the work item types, work item queries, documents, and reports for a project. Other tasks that you can define configure other areas of Visual Studio Application Lifecycle Management, such as Team Foundation Build, Visual Studio Lab Management, Test Manager, and Team Foundation version control.    
  
 <a name="syntax"></a>  
 ##  Tasks Syntax Structure  
@@ -66,7 +66,7 @@ You use the **tasks** element and its child elements to define the artifacts to 
 </tr>
 
 <tr><td><strong>ProcessTemplate</strong></td>
-<td>Optional child element of **taskXml** element for the Build and Lab plug-ins. Specifies the name, location, and destination of a file to upload to support build processes for a team project.
+<td>Optional child element of **taskXml** element for the Build and Lab plug-ins. Specifies the name, location, and destination of a file to upload to support build processes for a project.
 <pre><code>&lt;ProcessTemplate Type="FileType" Filename="LocalPathAndFileName" 
 Description="FileDescription" ServerPath="UploadLocation" /&gt;
 </code></pre>
@@ -80,7 +80,7 @@ Description="FileDescription" ServerPath="UploadLocation" /&gt;
 </tr>
 
 <tr><td><strong>task</strong></td>
-<td>Required child element of **tasks**. Specifies work that must occur to configure something specific to the process in a new team project.
+<td>Required child element of **tasks**. Specifies work that must occur to configure something specific to the process in a new project.
 
 <pre><code>&lt;task id="task id" name="name of task"     plugin="Microsoft.ProjectCreationWizard.PluginName" 
 completionMessage="SuccessfulCompletionMessage"     
@@ -94,15 +94,15 @@ completionDescription="InProcessMessage"&gt;
 <li>**Type**: **id**: Specifies a name that identifies the task. If another task depends on this task, it references this ID. You must assign a unique value for the ID within the plug-in file.</li>
 <li>**name**: Describes what the task does.</li>
 <li>**plugin**: Identifies which plug-in must run this task.</li>
-<li>**completionMessage**: Specifies the message to display during team project creation to indicate that the task completed successfully. Maximum length is 256 characters.</li>
-<li>**completionDescription**: Specifies the message to display during team project creation to indicate that the task is being processed. Minimum length is 1 character.</li>
+<li>**completionMessage**: Specifies the message to display during project creation to indicate that the task completed successfully. Maximum length is 256 characters.</li>
+<li>**completionDescription**: Specifies the message to display during project creation to indicate that the task is being processed. Minimum length is 1 character.</li>
 </ul>
 
 </td>
 </tr>
 
 <tr><td><strong>tasks</strong></td>
-<td>Required child element of **taskXml**. Contains a collection of **task** elements that each specify work that must occur to configure something specific to the process in a new team project.
+<td>Required child element of **taskXml**. Contains a collection of **task** elements that each specify work that must occur to configure something specific to the process in a new project.
 <pre><code>&lt;tasks&gt;
      &lt;task/&gt;. . . &lt;/task&gt;
 &lt;/tasks /&gt;

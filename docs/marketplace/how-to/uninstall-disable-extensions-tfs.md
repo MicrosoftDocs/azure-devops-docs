@@ -28,7 +28,7 @@ with [**Edit collection-level information** permissions](../../organizations/sec
 can uninstall or disable extensions. 
 
 0.	From your TFS home page (```https://{server}:8080/tfs/```), 
-go to the team project collection where you want to uninstall or disable the extension.
+go to the project collection where you want to uninstall or disable the extension.
 
 0.	Manage your extensions.
 

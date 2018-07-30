@@ -161,7 +161,7 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 ## Related articles  
 
-Before you can create or work with any of the Agile tools, you need a team project. If you don't have one yet, you can [create one](../../organizations/projects/create-project.md). 
+Before you can create or work with any of the Agile tools, you need a project. If you don't have one yet, you can [create one](../../organizations/projects/create-project.md). 
 
 If you're ready to move from one team to two teams, or configure several teams, see [Multiple teams](multiple-teams.md). To add a team administrator or configure team assets, see [Configure team settings](manage-team-assets.md). 
 
@@ -179,12 +179,12 @@ For additional guidance, see these topics:
 - [Scaled Agile Framework (SAFe)](http://www.scaledagileframework.com/)  
 - [Scaling Agile Software Development, - Disciplined Agility at Scale (White Paper)](http://disciplinedagileconsortium.org/Resources/Documents/ScalingAgileSoftwareDevelopment.pdf)   
 
-### Scale with teams and not team projects  
-Often times, organizations look at adding a team project for each software development project. 
+### Scale with teams and not projects  
+Often times, organizations look at adding a project for each software development project. 
 
-Adding teams to scale your tools rather than adding team projects is recommended for the following reasons:  
+Adding teams to scale your tools rather than adding projects is recommended for the following reasons:  
 - **Visibility:**  It's much easier to view progress across all teams  
 - **Tracking and auditing:**  It's easier to [link work items and other objects](../track/link-work-items-support-traceability.md) for tracking and auditing purposes
 - **Maintainability:**  You minimize the maintenance of security groups and process updates.  
 
-[Why You Should use a Single (Giant) TFS Team Project](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx) provides a more detailed discussion as to the pros and cons of going with a single team project.   
+[Why You Should use a Single (Giant) TFS Team Project](http://geekswithblogs.net/Optikal/archive/2013/09/05/153944.aspx) provides a more detailed discussion as to the pros and cons of going with a single project.   

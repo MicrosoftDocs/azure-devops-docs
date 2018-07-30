@@ -1,7 +1,7 @@
 ---
 title: Add a team administrator 
 titleSuffix: VSTS & TFS
-description: Add a user account to the team administrator role in Visual Studio Team Services & Team Foundation Server   
+description: Add a user to the team administrator role in Visual Studio Team Services & Team Foundation Server   
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
@@ -28,12 +28,12 @@ As a team administrator, you can configure, customize, and manage all team-relat
 ## Prerequisites
 
 ::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../organizations/accounts/add-organization-users-from-user-hub.md). 
+* You must be a member of a project. If you don't have a project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../organizations/accounts/add-organization-users-from-user-hub.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../../organizations/projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
+* You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../../organizations/projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
 ::: moniker-end
-* To get added as a team administrator, ask another team admin, the account owner, or a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) to add you.  
+* To get added as a team administrator, ask another team admin, the organization owner, or a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) to add you.  
 
 If you need to add a team, see [Add teams and team members](multiple-teams.md).
 
@@ -47,9 +47,9 @@ From the web portal, open the admin page for the team.
 0. From the web portal and team context, click the ![](../_img/icons/gear_icon.png) gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, VSTS, Open Admin context, team project level](_img/open-admin-context-ts.png)
+	> ![Web portal, VSTS, Open Admin context, project level](_img/open-admin-context-ts.png)
 
-	If you click the ![](../_img/icons/gear_icon.png) gear icon from the team project context, then click **Overview**, and select the team you want to add an administrator to.   
+	If you click the ![](../_img/icons/gear_icon.png) gear icon from the project context, then click **Overview**, and select the team you want to add an administrator to.   
 
 0. Choose the **Add** link to open the dialog for adding user identities.    
      
@@ -67,9 +67,9 @@ From the web portal, open the admin page for the team.
 0. From the web portal and team context, click the ![](../_img/icons/gear_icon.png) gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Web portal, TFS, Open Admin context, team project level](_img/open-admin-context-tfs.png)
+	> ![Web portal, TFS, Open Admin context, project level](_img/open-admin-context-tfs.png)
 
-	If you click the ![](../_img/icons/gear_icon.png) gear icon from the team project context, then click **Overview**, and select the team you want to add an administrator to.   
+	If you click the ![](../_img/icons/gear_icon.png) gear icon from the project context, then click **Overview**, and select the team you want to add an administrator to.   
 
 0. Choose the **Add** link to open the dialog for adding user identities.    
   
@@ -77,7 +77,7 @@ From the web portal, open the admin page for the team.
 
 0. Enter the identities you want to add to the team administrator role.     
 
-	![Add account as a team administrator](_img/add-team-admin-dialog.png)    
+	![Add user as a team administrator](_img/add-team-admin-dialog.png)    
 	
 ::: moniker-end     
 

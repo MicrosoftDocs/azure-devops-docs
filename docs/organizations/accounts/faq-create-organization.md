@@ -69,7 +69,7 @@ which may be available for free or paid.
 
 For example, [web-based test case management](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 requires that you install the Test Manager extension, 
-but you can [try paid extensions for free](../../billing/try-additional-features-vs.md), 
+but you can [try paid extensions for free](../billing/try-additional-features-vs.md), 
 if you haven't started the extension trials already. 
 Otherwise, you can [pay for user access](/vsts/marketplace/install-vsts-extension) 
 to these features.

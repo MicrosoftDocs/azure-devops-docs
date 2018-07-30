@@ -58,7 +58,7 @@ When you want to track the progress of a single work item, click the ![Follow ic
 
 You'll only receive notifications when other members of your team modifies the work item, such as adding to the discussion, changing a field value, or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your account preferences](../../notifications/change-email-address.md)
+Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md)
 
 To stop following changes, click the ![Following icon](../_img/icons/following-icon.png) icon.
  
@@ -71,7 +71,7 @@ To track the progress of a single pull request, click the ![Follow icon](../_img
 
 You'll only receive notifications when other members of your team modifies the PR, such as adding to the discussion or adding an attachment. 
 
-Notifications are sent to your preferred email address, which [you can change from your account preferences](../../notifications/change-email-address.md).  
+Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
 To stop following changes, open the PR context menu and click the ![Following icon](../_img/icons/following-icon.png) icon. 
 
@@ -81,7 +81,7 @@ You can review and manage all the work items you've selected to follow from the 
 
 <img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />  
 
-From this view, you can view all items you're following across all team projects within the account. Also, you can perform similar actions supported with a query results view, such as:
+From this view, you can view all items you're following across all projects within the account. Also, you can perform similar actions supported with a query results view, such as:
 - Refresh the view
 - Add or remove visible columns
 - Sort the order of specific columns

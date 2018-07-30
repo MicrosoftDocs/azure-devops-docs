@@ -13,13 +13,13 @@ ms.date: 08/04/2016
 ---
 
 # Service hooks in VSTS
-Using the [Subscriptions](https://visualstudio.microsoft.com/en-us/docs/integrate/api/hooks/subscriptions) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a team project. For example, you can create a subscription to notify your service when a build fails.
+Using the [Subscriptions](https://visualstudio.microsoft.com/en-us/docs/integrate/api/hooks/subscriptions) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:
 - build completed
-- code pushed (for Git team projects)
-- pull request create or updated (for Git team projects)
-- code checked in (TFVC team projects)
+- code pushed (for Git projects)
+- pull request create or updated (for Git projects)
+- code checked in (TFVC projects)
 - work item created, updated, deleted, restored or commented on
 - message posted to a team room
 

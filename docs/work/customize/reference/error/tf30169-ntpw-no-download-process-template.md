@@ -16,7 +16,7 @@ ms.date: 01/20/2017
 
 [!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
 
-The New Team Project Wizard encountered a problem downloading or extracting the process template {*name*} selected to create the team project. This error can occur due to one of the following conditions:  
+The New Team Project Wizard encountered a problem downloading or extracting the process template {*name*} selected to create the project. This error can occur due to one of the following conditions:  
   
 -   Process templates are not available on the server that hosts SharePoint Products.  
   
@@ -41,4 +41,4 @@ The New Team Project Wizard encountered a problem downloading or extracting the 
 4.  Contact the administrator for the local computer to confirm that your user account has sufficient permissions to write data to the storage area for local program downloads and that the local hard disk is functioning correctly.  
     
 ## Related articles 
-- [Create a team project](../../../../organizations/projects/create-project.md)
+- [Create a project](../../../../organizations/projects/create-project.md)

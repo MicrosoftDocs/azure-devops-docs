@@ -1,7 +1,7 @@
 ---
 title: Configure initial groups, teams, members, and permissions
 titleSuffix: VSTS & TFS
-description: Configure the initial security settings for a team project using the plug-in file for Groups and Permissions in Team Foundation Server  
+description: Configure the initial security settings for a project using the plug-in file for Groups and Permissions in Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 518b3c00-0587-45fe-8cbb-43f6a2760ea0
@@ -16,11 +16,11 @@ ms.date: 09/08/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-By using the plug-in file for Groups and Permissions, you can configure the initial security settings for a team project. You accomplish this by defining tasks that create security groups, nest groups, define groups as teams, configure initial team settings, assign members to groups, and allow or deny specific permissions to each group. In addition to performing these tasks, you can specify the initial security settings for collection-level, project-level, and project-classification areas.  
+By using the plug-in file for Groups and Permissions, you can configure the initial security settings for a project. You accomplish this by defining tasks that create security groups, nest groups, define groups as teams, configure initial team settings, assign members to groups, and allow or deny specific permissions to each group. In addition to performing these tasks, you can specify the initial security settings for collection-level, project-level, and project-classification areas.  
   
  Microsoft process templates assign several permissions to default groups. You can modify these assignments by customizing the plug-in file for Groups and Permissions. For more information about this plug-in, see [Define groups, teams, and permissions](define-groups-teams-permissions-plug-in.md).  
   
- For information about how to configure the initial security settings for a team project's functional areas, such as Team Foundation Build, Team Foundation version control, and Visual Studio Lab Management, see [Control access to functional areas](control-access-to-functional-areas.md).  
+ For information about how to configure the initial security settings for a project's functional areas, such as Team Foundation Build, Team Foundation version control, and Visual Studio Lab Management, see [Control access to functional areas](control-access-to-functional-areas.md).  
   
  For information about how to customize types of work items to allow or deny access to groups or users, see [Apply a field rule](../apply-rule-work-item-field.md).  
 
@@ -46,7 +46,7 @@ The following table describes the attributes for the **group**, **member**, and 
 ||**description**|Describes the purpose of the group to other users.|  
 |**member**|**name**|Specifies the name of a group that you are adding as a member of another group. You can create groups and pre-populate them with any of the following types of members:<br /><br /> <ul><li>Default groups that are defined in Team Foundation Server</li><li>Project groups that have been previously created in the groupsandpermissions.xml file (for example, [$$PROJECTNAME$$]\Contributors)</li><li>Groups and users who are defined in Active Directory, which you specify by using the following format:<br /><br /> <ul><li>DOMAIN\USERNAME</li><li>DOMAIN\GROUPNAME</li></ul></li></ul><br /> For information about the format to use when you specify default groups, see [Group macros and default groups](#group-macros) later in this topic.<br /><br /> The **permissions** container element must precede the **members** container element.|  
 |**permission**|**name**|Identifies which permission is being applied. For a list of the supported permissions, see the following sections later in this topic:<br /><br /> -   [Assign collection-level permissions](#CollectionLevel)<br />-   [Assign project-level permissions](#Project)<br />-   [Assign permissions to control area paths](#AreaPaths)<br />-   [Assign permissions to control iteration paths](#IterationPaths)<br /><br /> The **permissions** container element must precede the **members** container element.|  
-||**class**|Identifies the class, or area, where the group permission is granted. The following values are valid:<br /><br /> -   **NAMESPACE**: Specifies collection-level permissions.<br />-   **PROJECT**: Specifies project-level permissions.<br />-   **CSS_NODE**: Specifies permissions for viewing and managing area paths for a team project.<br />-   **ITERATION_NODE**: Specifies permissions for viewing and managing iteration paths for a team project.<br />-|  
+||**class**|Identifies the class, or area, where the group permission is granted. The following values are valid:<br /><br /> -   **NAMESPACE**: Specifies collection-level permissions.<br />-   **PROJECT**: Specifies project-level permissions.<br />-   **CSS_NODE**: Specifies permissions for viewing and managing area paths for a project.<br />-   **ITERATION_NODE**: Specifies permissions for viewing and managing iteration paths for a project.<br />-|  
 ||**allow**|Uses a **true** or **false** value to indicate whether the permission is allowed or denied.|  
 ||**path**|Identifies the node of the area path or iteration path where the permission is being applied. This attribute is valid only when **class** is set to CSS_NODE or ITERATION_NODE.|  
   
@@ -108,9 +108,9 @@ The following table describes the attributes for the **group**, **member**, and 
   
 <a name="team"></a> 
 ##Define a team  
- In addition to creating groups, you can assign a group as a team. Creating a team project also creates a default team. If you have several teams that want to organize their work separately from the other teams, then you can either define these teams within the Groups and Permissions plug-in file, or you can configure them after you create the team project. See [Add another team](../../../scale/multiple-teams.md).  
+ In addition to creating groups, you can assign a group as a team. Creating a project also creates a default team. If you have several teams that want to organize their work separately from the other teams, then you can either define these teams within the Groups and Permissions plug-in file, or you can configure them after you create the project. See [Add another team](../../../scale/multiple-teams.md).  
   
- The following example shows how to configure a group as a team. In this example, you specify the group, Dream Team, as a team and add the team project creator as a member of the team. Whatever iteration paths that you specify for the team must be defined in the Classifications plug-in file. See [Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md).  
+ The following example shows how to configure a group as a team. In this example, you specify the group, Dream Team, as a team and add the project creator as a member of the team. Whatever iteration paths that you specify for the team must be defined in the Classifications plug-in file. See [Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md).  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -136,7 +136,7 @@ The following table describes the attributes for the **group**, **member**, and 
   
 <a name="CollectionLevel"></a> 
 ##  Assign collection-level permissions  
-You can assign collection-level permissions by using the group **permission** element and the NAMESPACE class. These permissions control access to resources that are available across team projects. You can set collection-level permissions for only the following categories of users:  
+You can assign collection-level permissions by using the group **permission** element and the NAMESPACE class. These permissions control access to resources that are available across projects. You can set collection-level permissions for only the following categories of users:  
   
 -   Collection-level users and groups, such as Project Collection Administrators    
 -   Project-level groups that have been added to the collection level on your server that is running Team Foundation    
@@ -144,11 +144,11 @@ You can assign collection-level permissions by using the group **permission** el
   
 For the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
 
-The following example shows how to grant collection-level permissions to the project administrators for a team project.  
+The following example shows how to grant collection-level permissions to the project administrators for a project.  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<group name="PROJECTADMINGROUP" description="Members of this group can add, modify, and delete items within the team project.">  
+<group name="PROJECTADMINGROUP" description="Members of this group can add, modify, and delete items within the project.">  
    <permissions>  
        <permission name="GENERIC_READ" class="NAMESPACE" allow="true" />  
        <permission name="WORK_ITEM_WRITE" class="NAMESPACE" allow="true" />  
@@ -166,21 +166,21 @@ The following table describes the collection-level permissions that you can assi
 |**Permission**|**Description**|  
 |--------------------|---------------------|  
 |**DIAGNOSTIC_TRACE**|**Alter trace settings**. Can change the trace settings for gathering more detailed diagnostic information about Web services for Team Foundation Server.|  
-|**CREATE_PROJECTS**|**Create new projects**. Can create projects in the team project collection.|  
-|**GENERIC_WRITE**|**Edit collection-level information**. Can edit collection-level permissions for users and groups in the team project collection. Users who have this permission can perform the following tasks:<br /><br /> -   Add, remove, or rename a collection-level application group from the collection in Team Foundation Server. **Note:**      You cannot remove default collection-level groups, such as Project Collection Administrators.<br />-   Add or remove a user or group in Windows user or another application group in Team Foundation Server (at the server level).<br />-   Change collection-level permissions for users and groups.<br /><br /> Additionally, users who have this permission can modify permissions for version control, and they have write access to all files in version control unless their access is explicitly denied by other permissions.|  
-|**MANAGE_TEMPLATE**|**Manage process templates**. Can download, create, edit, and upload process templates to the team project collection.|  
-|**MANAGE_TEST_CONTROLLERS**|**Manage test controllers**. Can register and de-register test controllers for the team project collection.|  
+|**CREATE_PROJECTS**|**Create new projects**. Can create projects in the project collection.|  
+|**GENERIC_WRITE**|**Edit collection-level information**. Can edit collection-level permissions for users and groups in the project collection. Users who have this permission can perform the following tasks:<br /><br /> -   Add, remove, or rename a collection-level application group from the collection in Team Foundation Server. **Note:**      You cannot remove default collection-level groups, such as Project Collection Administrators.<br />-   Add or remove a user or group in Windows user or another application group in Team Foundation Server (at the server level).<br />-   Change collection-level permissions for users and groups.<br /><br /> Additionally, users who have this permission can modify permissions for version control, and they have write access to all files in version control unless their access is explicitly denied by other permissions.|  
+|**MANAGE_TEMPLATE**|**Manage process templates**. Can download, create, edit, and upload process templates to the project collection.|  
+|**MANAGE_TEST_CONTROLLERS**|**Manage test controllers**. Can register and de-register test controllers for the project collection.|  
 |**GENERIC_READ**|**View collection-level information**. Can view membership of collection-level groups and the permissions of those users.|  
   
 <a name="Project"></a> 
 ##Assign project-level permissions  
  You can assign project-level permissions in the Groups and Permissions plug-in file. You assign these permissions by using the group **permission** element and the PROJECT class. These permissions control access to a single project's resources. You can grant access to users and groups in Windows, groups in Team Foundation, and groups that you have previously defined in the Groups and Permissions plug-in file. For the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
   
- The following example shows how to grant several permissions to the Contributors group for a team project.  
+ The following example shows how to grant several permissions to the Contributors group for a project.  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML 
-<group name="Contributors" description="Members of this group can add, modify, and delete items within the team project.">  
+<group name="Contributors" description="Members of this group can add, modify, and delete items within the project.">  
    <permissions>  
       <permission name="GENERIC_READ" class="PROJECT" allow="true" />  
       <permission name="DELETE_TEST_RESULTS" class="PROJECT" allow="true" />  
@@ -198,22 +198,22 @@ The following table describes the project-level permissions that you can assign 
 |--------------------|---------------------|-------------|------------------|--------------------------|  
 |**GENERIC_READ**|**View project-level information**. Can view membership of project-level groups and the permissions of those members.|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
 |**VIEW_TEST_RESULTS**|**View test runs**. Can view test plans in this node.|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**MANAGE_TEST_CONFIGURATIONS**|**Manage test configurations**. Can create and delete test configurations for the team project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**MANAGE_TEST_ENVIRONMENTS**|**Manage test environments**. Can create and delete test environments for the team project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**PUBLISH_TEST_RESULTS**|**Create test runs**. Can add and remove test results and add or modify test runs for the team project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**DELETE_TEST_RESULTS**|**Delete test runs**. Can delete a scheduled test for the team project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
-|**DELETE**|**Delete team project**. Can delete from Team Foundation Server the project for which the user has this permission.||||  
+|**MANAGE_TEST_CONFIGURATIONS**|**Manage test configurations**. Can create and delete test configurations for the project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**MANAGE_TEST_ENVIRONMENTS**|**Manage test environments**. Can create and delete test environments for the project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**PUBLISH_TEST_RESULTS**|**Create test runs**. Can add and remove test results and add or modify test runs for the project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**DELETE_TEST_RESULTS**|**Delete test runs**. Can delete a scheduled test for the project.||![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|![check mark](_img/icon_witcheckgreen.png "Icon_WITcheckgreen")|  
+|**DELETE**|**Delete project**. Can delete from Team Foundation Server the project for which the user has this permission.||||  
 |**GENERIC_WRITE**|**Edit project-level information**. Can edit project-level permissions for users and groups in Team Foundation Server.||||  
   
 <a name="AreaPaths"></a> 
 ##Assign permissions to control area paths  
  You can assign permissions that control access to area definitions by using the group **permission** element and the CSS_NODE class. These permissions control access to a single project's classification structure. You can grant access to users and groups in Windows, groups in Team Foundation, and groups that you have previously defined in the Groups and Permissions plug-in file. For information about the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
   
- The following example shows how to grant several permissions to the Contributors group for a team project.  
+ The following example shows how to grant several permissions to the Contributors group for a project.  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<group name="Contributors" description="Members of this group can add, modify, and delete items within the team project.">  
+<group name="Contributors" description="Members of this group can add, modify, and delete items within the project.">  
    <permissions>  
       <permission name="GENERIC_READ" class="CSS_NODE" allow="true" />  
       <permission name="WORK_ITEM_READ" class="CSS_NODE" allow="true" />  
@@ -243,11 +243,11 @@ The following table describes the project-level permissions that you can assign 
 
 You assign permissions that control access to iteration paths by using the group **permission** element and the **ITERATION_NODE** class. These permissions control access to the milestone releases or iterations for a single project. You can grant access to users and groups in Windows, default TFS groups, and groups that you have previously defined in the Groups and Permissions plug-in file. For information about the format to use when you specify groups, see [Group macros and default groups](#group-macros) earlier in this topic.  
   
- The following example shows how to grant several permissions to the Contributors group for a team project:  
+ The following example shows how to grant several permissions to the Contributors group for a project:  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<group name="Contributors" description="Members of this group can add, modify, and delete items within the team project.">  
+<group name="Contributors" description="Members of this group can add, modify, and delete items within the project.">  
    <permissions>  
       <permission name="GENERIC_READ" class="ITERATION_NODE" allow="true" />  
       <permission name="GENERIC_WRITE" class="ITERATION_NODE" allow="true" />  

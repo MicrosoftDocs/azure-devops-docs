@@ -190,7 +190,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/workitems/${workIte
 |:------------------|:----------|:-------------------------------------------------------------------
 | URL
 | instance          | string	| [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project			| string	| Name or ID of a [team project](../tfs/projects.md) where the work item type is defined.
+| project			| string	| Name or ID of a [project](../tfs/projects.md) where the work item type is defined.
 | workItemTypeName	| string    | Name of the [work item type](./work-item-types.md).
 | Query
 | api-version       | string    | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -272,7 +272,7 @@ Content-Type: application/json-patch+json
 |:------------------|:--------------------------------------|:-------------------------------------------------------------------
 | URL
 | instance          | string                                | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project			| string								| Name or ID of a [team project](../tfs/projects.md) where the work item should be created.
+| project			| string								| Name or ID of a [project](../tfs/projects.md) where the work item should be created.
 | workItemTypeName	| string                                | Name of the [work item type](./work-item-types.md).
 | Query
 | api-version       | string                                | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -371,7 +371,7 @@ If any of the new field values or relations are not valid, or if the work item h
 
 > **API Availability**: Team Services only (not TFS)
 
-In order to move a work item, we need to update 3 fields (System.TeamProject, System.AreaPath and System.IterationPath). The below example shows that a work item was moved to a destination team project (Fabrikam-Scrum). 
+In order to move a work item, we need to update 3 fields (System.TeamProject, System.AreaPath and System.IterationPath). The below example shows that a work item was moved to a destination project (Fabrikam-Scrum). 
 
 [!code-REST [PATCH__wit_workitems__taskId__json](./_data/witChangeProjectAndType/PATCH__wit_workitems__bug1Id_.json)]
 

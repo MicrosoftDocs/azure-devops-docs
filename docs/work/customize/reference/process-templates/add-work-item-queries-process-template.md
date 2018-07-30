@@ -1,7 +1,7 @@
 ---
 title: Add work item queries to a process template
 titleSuffix: VSTS & TFS
-description: Define the initial set of shared queries and query folder structure for a team project in Team Foundation Server
+description: Define the initial set of shared queries and query folder structure for a project in Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 74f21c5c-76a0-4b0f-9cdf-d599f7a08eeb
@@ -16,7 +16,7 @@ ms.date: 02/24/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-By adding work item queries to your process template, you can define the initial set of shared queries and query folder structure for a team project. All team members use queries to find the bugs, tasks, and other work items on which they must take action.  
+By adding work item queries to your process template, you can define the initial set of shared queries and query folder structure for a project. All team members use queries to find the bugs, tasks, and other work items on which they must take action.  
   
  Work item queries specify criteria for generating a list of work items, such as a list of active bugs or closed tasks. Files for work item queries have a .wiq extension and are stored in the Queries subfolder of the WorkItem Tracking folder for the default process templates.  
   
@@ -25,7 +25,7 @@ By adding work item queries to your process template, you can define the initial
   
  You specify the query definitions to upload as a task within the WorkItemTracking plug-in. This task may be required because several artifacts in a process template may depend on a query. In addition, the task to upload queries depends on the successful completion of the task for uploading work item types. You specify each query file to upload within the **taskXml** element.  
   
-  After a team project is created from the process template, you can add, remove, and change queries by using the Query Editor. For more information, see [Use the query editor to list and manage queries](../../../track/using-queries.md).  
+  After a project is created from the process template, you can add, remove, and change queries by using the Query Editor. For more information, see [Use the query editor to list and manage queries](../../../track/using-queries.md).  
   
  For information about how to assign query permissions to groups, see [Control access to functional areas](control-access-to-functional-areas.md). For information about how to create query folders, see [Define objects for tracking work items](define-objects-track-work-items-plug-in.md).  
   

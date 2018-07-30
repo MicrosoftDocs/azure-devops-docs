@@ -488,7 +488,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Task</p></td>
 <td><ul>
 <li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links between requirements and tasks.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -496,7 +496,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Code Review Request</p></td>
 <td><ul>
 <li><p>Allows only <strong>Parent</strong> and <strong>Child</strong> links to Code Review Response work items.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -504,7 +504,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Change Request</p></td>
 <td><ul>
 <li><p>Allows only <strong>Affects</strong> link type to link change requests to requirements.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -512,7 +512,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><p>Feedback Response</p></td>
 <td><ul>
 <li><p>Allows only <strong>Related</strong> links to requirements.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -529,7 +529,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><ul>
 <li><p>Allows only <strong>Tested By</strong> links.</p></li>
 <li><p>Allows links only to test cases.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 <tr>
@@ -538,7 +538,7 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 <td><ul>
 <li><p>Allows only <strong>Tests</strong> links.</p></li>
 <li><p>Allows links only to requirements.</p></li>
-<li><p>Excludes links to work items in other team projects.</p></li>
+<li><p>Excludes links to work items in other projects.</p></li>
 </ul></td>
 </tr>
 </tbody>

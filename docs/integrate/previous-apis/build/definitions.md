@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions?api-v
 |:--------------|:---------------------|:------------
 | URL
 | instance      | string               | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string               | [Team project](../tfs/projects.md) ID or name.
+| project       | string               | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | name          | string               | Filters to definitions whose names equal this value. Append a `*` to filter to definitions whose names start with this value. For example: `MS*`.
@@ -45,7 +45,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{defi
 |:-------------|:-------|:------------
 | URL
 | instance     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project      | string | [Team project](../tfs/projects.md) ID or name.
+| project      | string | [Project](../tfs/projects.md) ID or name.
 | definitionId | int    | ID of the build definition.
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -69,7 +69,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/build/definitions?api-
 |:--------------|:---------------------|:------------
 | URL
 | instance      | string               | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string               | [Team project](../tfs/projects.md) ID or name.
+| project       | string               | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -86,7 +86,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{defi
 |:--------------|:---------------------|:------------
 | URL
 | instance      | string               | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string               | [Team project](../tfs/projects.md) ID or name.
+| project       | string               | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int                  | ID of the build definition.
 | Query
 | api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -106,7 +106,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{d
 |:--------------|:---------------------|:------------
 | URL
 | instance      | string               | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string               | [Team project](../tfs/projects.md) ID or name.
+| project       | string               | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int                  | ID of the build definition.
 | Query
 | api-version   | string               | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -124,7 +124,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/build/definitions/{defi
 |:-------------|:-------|:------------
 | URL
 | instance     | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project      | string | [Team project](../tfs/projects.md) ID or name.
+| project      | string | [Project](../tfs/projects.md) ID or name.
 | definitionId | int    | ID of the build definition.
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

@@ -607,7 +607,7 @@
                {
                   "id": "projectId",
                   "name": "Project",
-                  "description": "Team Project to restrict events to",
+                  "description": "Project to restrict events to",
                   "inputMode": "none",
                   "isConfidential": false,
                   "useInDefaultDescription": false,

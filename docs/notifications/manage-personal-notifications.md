@@ -53,7 +53,7 @@ With custom personal subscriptions, you can define precise criteria for the even
 
 2. Choose the category and template you want to use. For a list of supported templates, see [Default and supported notifications](oob-built-in-notifications.md).
 
-	Here we choose to get notified when a pull request is created within a specific team project, Fabrikam Fiber.   
+	Here we choose to get notified when a pull request is created within a specific project, Fabrikam Fiber.   
 
 	<img src="_img/manage-personal-notifications-new-subscription-dialog.png" alt="New subscription dialog" style="border: 2px solid #C3C3C3;" />
 

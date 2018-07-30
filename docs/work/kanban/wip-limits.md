@@ -117,7 +117,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
     ::: moniker range="tfs-2013"          
 	![Open configuration settings](../customize/_img/kanban-card-customize-open-settings.png)    
     ::: moniker-end 
-	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your team project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
  
 2. Click a column tab to set the WIP limit for that column. 
 	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"   

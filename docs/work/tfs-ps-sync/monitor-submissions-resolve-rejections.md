@@ -47,7 +47,7 @@ ms.date: 01/12/2017
   
 2.  On the **Project Server** tab, change **Submit to Project Server** to **Yes** for the appropriate enterprise project plan.  
   
-3.  If the team project is mapped to more than one project plan, in **Enterprise Project**, click the plan that corresponds to the project manager's comments.  
+3.  If the project is mapped to more than one project plan, in **Enterprise Project**, click the plan that corresponds to the project manager's comments.  
   
 4.  Save the work item.  
   
@@ -83,7 +83,7 @@ ms.date: 01/12/2017
  To view which work items have and have not been submitted, click **Column Options**, and add **Project Server Submit** to the list of columns that appear in the results. You can filter the query to find only those tasks that have not been submitted by adding a clause with **Project Server Submit <> Yes**.  
   
 > [!NOTE]
->  By default, **Project Server Submit** is set to **No** for each work item that you create. However, any work items that you created before the project plan was mapped to the team project may contain an empty value for the **Project Server Submit** field.    
+>  By default, **Project Server Submit** is set to **No** for each work item that you create. However, any work items that you created before the project plan was mapped to the project may contain an empty value for the **Project Server Submit** field.    
   
 ##  <a name="FieldsAvailable"></a> Fields That Support Queries That Relate to Data Synchronization  
  When you specify a type of work item to participate in data synchronization, more than 25 fields are added to the work item type and are available to support queries. All fields start with "Project Server. Most fields are read-only. The following table indicates the label of the field on the **Project Server** tab and the friendly name of the field, which you use to specify it in the Query Editor. For information about more fields that you can use to support queries, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  

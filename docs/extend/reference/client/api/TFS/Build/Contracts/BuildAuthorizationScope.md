@@ -18,4 +18,4 @@ Module path: `TFS/Build/Contracts`
 ### Values
 
 * `ProjectCollection` The identity used should have build service account permissions scoped to the project collection. This is useful when resources for a single build are spread across multiple projects.
-* `Project` The identity used should have build service account permissions scoped to the project in which the build definition resides. This is useful for isolation of build jobs to a particular team project to avoid any unintentional escalation of privilege attacks during a build.
+* `Project` The identity used should have build service account permissions scoped to the project in which the build definition resides. This is useful for isolation of build jobs to a particular project to avoid any unintentional escalation of privilege attacks during a build.

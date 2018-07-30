@@ -29,7 +29,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -45,7 +45,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 0. Choose **Set sprint dates**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Work>Sprints hub, set dates](_img/define-sprints/set-sprint-dates-scrum-agile.png)
+	> ![Work>Sprints>set dates](_img/define-sprints/set-sprint-dates-scrum-agile.png)
 
 2. Choose the calendar icon to select the start date, and then the end date of the sprint. 
 
@@ -55,7 +55,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 3. Choose **Save and close**. You'll see the date listed. 
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Sprints hub, Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
+	> ![New Navigation, Work>Sprints>Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
 
 ::: moniker-end
 
@@ -66,12 +66,12 @@ To quickly get started, you can use the default sprints, also referred to as ite
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page, standard hubs](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -125,11 +125,11 @@ Each sprint that you select for your team provides access to a [sprint backlog, 
 
 For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access to six sprint backlogs. They also get access to capacity planning tools and a task board for each sprint. 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
-![Selected sprints for a team, agile hubs](_img/define-sprints/selected-team-iterations-agile.png)
+![Selected sprints for a team](_img/define-sprints/selected-team-iterations-agile.png)
 
 ::: moniker-end
 
@@ -139,9 +139,9 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
-![Selected sprints for a team, standard hubs](_img/define-sprints/selected-team-iterations-vsts.png)
+![Selected sprints for a team](_img/define-sprints/selected-team-iterations-vsts.png)
 
 ---
 
@@ -161,13 +161,13 @@ If you work with several teams, and each team wants their own backlog view, you 
 
 You'll want to [set the start and end dates for your sprint](define-sprints.md#quick-start-schedule). 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 > [!div class="mx-imgBorder"]  
 > ![Choose New Sprint](_img/define-sprints/choose-new-sprint-agile-hubs-on.png)   
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 
 
@@ -188,19 +188,19 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 [!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 1. Open **Work>Backlogs** and then choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs hub, Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
+	> ![New Navigation, Work>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
 
 2. You can drag and drop items from the **Backlog** onto a sprint. 
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs hub, Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
+	> ![New Navigation, Work>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 1. Open **Work>Backlogs**. You can drag and drop from the **Backlog** or **Board** page as shown in the following image. 
 

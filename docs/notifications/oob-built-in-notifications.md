@@ -47,7 +47,7 @@ Within the personal notifications page, OOB subscriptions appear with the follow
 | Release| 	Deployment completed	| Deployment to an approved environment failed	| Notifies you when a deployment you approved fails to complete successfully  and makes the environment unhealthy | 
 | Release| 	Deployment completed| 	Deployment completion failures	| Notifies you when a deployment you requested fails to complete successfully  and makes the environment unhealthy | 
 | Release| 	Release approval pending| 	Deployment approval pending| 	Notifies you when an approval for a deployment is pending on you | 
-| Work| 	Work item| 	A work item is moved from this team project	| Notifies you when the area path for a work item is moved to another team project | 
+| Work| 	Work item| 	A work item is moved from this project	| Notifies you when the area path for a work item is moved to another project | 
 | Work	| Work item	| A work item assigned	| Notifies you when you are assigned or unassigned a work item | 
 
 

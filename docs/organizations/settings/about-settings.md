@@ -274,14 +274,14 @@ For an overview of managing your VSTS account, see [About account management](..
 <tr>
 <td>**Billing**</td>
 <td><ul>
-<li>[Set up billing](../../billing/set-up-billing-for-your-organization-vs.md)</li>
-<li>[Start free trials for paid features and extensions](../../billing/try-additional-features-vs.md)</li>
-<li>[Pay for users (Basic)](../../billing/buy-basic-access-add-users.md)</li>
-<li>[Buy CI/CD](../../billing/buy-more-build-vs.md)</li>
-<li>[Buy cloud-based load testing](../../billing/buy-load-testing-vs.md)</li>
-<li>[Add a user to make purchases](../../billing/add-backup-billing-managers.md)</li>
+<li>[Set up billing](../billing/set-up-billing-for-your-organization-vs.md)</li>
+<li>[Start free trials for paid features and extensions](../billing/try-additional-features-vs.md)</li>
+<li>[Pay for users (Basic)](../billing/buy-basic-access-add-users.md)</li>
+<li>[Buy CI/CD](../billing/buy-more-build-vs.md)</li>
+<li>[Buy cloud-based load testing](../billing/buy-load-testing-vs.md)</li>
+<li>[Add a user to make purchases](../billing/add-backup-billing-managers.md)</li>
 </ul></td>
-<td>All billing is managed through Azure. To learn more, see [Billing overview](../../billing/overview.md). </td>
+<td>All billing is managed through Azure. To learn more, see [Billing overview](../billing/overview.md). </td>
 </tr>
 <tr>
 <td>**Projects**</td>
@@ -335,7 +335,7 @@ For an overview of managing your VSTS account, see [About account management](..
 <li>[Install and manage Marketplace extensions](../../marketplace/install-vsts-extension.md)</li>
 <li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
 <li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
-<li>[Change the number of paid users](../../billing/change-number-paid-extension-users.md) </li>
+<li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>

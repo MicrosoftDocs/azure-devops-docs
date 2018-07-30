@@ -33,7 +33,7 @@ Get a HipChat authorization token
 
 0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Team project administration page](./_img/add-service-hook.png)
+	![Project administration page](./_img/add-service-hook.png)
 
 	Click **Create Subscription**.
 
