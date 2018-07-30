@@ -19,8 +19,7 @@ monikerRange: '>= tfs-2017'
 
 Views filter the feed to a subset of packages that meet criteria defined by the view.
 
-Right now, the only [kind of view](#views-for-other-scenarios) is a *release view*. 
-Release views contain the subset of the feed's package-versions that have been *promoted* into that view.
+Right now, the only [kind of view](#views-for-other-scenarios) is a *release view*. Release views contain the subset of the feed's package-versions that have been *promoted* into that view. Release views work with NuGet and npm packages.
 
 *If you've never used release views, read more about [why and how they're useful for package continuous integration and delivery](../concepts/views.md) before getting started.*
 
