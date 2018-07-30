@@ -102,7 +102,7 @@ The sample code above includes a `.vsts-ci.yml` file at the root of the reposito
 ```yaml
 queue: 'Hosted Linux Preview'
 variables:
-buildConfiguration: 'Release'
+   buildConfiguration: 'Release'
     
 steps:
 - task: DotNetCoreCLI@2
@@ -183,8 +183,6 @@ queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
 
 Use the **Hosted Linux Preview** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to facilitate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
 
-You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
-
 ### Microsoft-hosted VS2017 (Windows) agents
 
 Use the **Hosted VS2017** agent queue to build Windows container images. When you use this queue, you get a fresh Windows Server 2016 virtual machine with each build. The virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Some of the common images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/aspnetcore-build`, `microsoft/windowsservercore`, and `microsoft/nanoserver` are pre-cached on this Docker host. Building new images from these images will therefore be faster.
@@ -192,6 +190,10 @@ Use the **Hosted VS2017** agent queue to build Windows container images. When yo
 > [!NOTE]
 > * Using Hosted VS2017 agents, you can only build Docker images with Windows Server 2016 as the container OS. You cannot build Docker images with Windows Server 1803 as the container OS since the host operating system on the virtual machines is Windows Server 2016.
 > * We do not yet have a pool of Microsoft-hosted agents running Windows Server 1803. Until this is available, you can build Windows Server 1803 images using self-hosted agents.
+
+### Microsoft-hosted MacOS agents
+
+You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
 
 ### Self-hosted agents
 
@@ -246,7 +248,7 @@ To build an image that you plan to push to Azure Container Registry, add the fol
 - task: Docker@0
   displayName: Build an image
   inputs:
-    azureSubscription: 'Build_Eng (3f56da7f-5953-4018-8ca8-e20dbfa0a7e2)'
+    azureSubscription: '<Azure service connection>'
     azureContainerRegistry: '{"loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/<Azure subscription id>/resourceGroups/<Resource group where your container registry is hosted>/providers/Microsoft.ContainerRegistry/registries/<Name of your registry>"}' # for example, "loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/adventworks/providers/Microsoft.ContainerRegistry/registries/adventworks"
 ```
 
