@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 # Service hook subscriptions
 [!INCLUDE [API_version](../_data/version.md)]
 
-A service hooks subscription defines the action to perform on a consumer service when an event occurs in a team project. 
+A service hooks subscription defines the action to perform on a consumer service when an event occurs in a project. 
 For example, a subscription can cause a card to be created on a Trello board when a work item is created. 
 
 

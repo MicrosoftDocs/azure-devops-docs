@@ -16,7 +16,7 @@ ms.date: 08/04/2016
 
 If you use Jenkins to build your apps, you can store your code in VSTS
 and continue to use Jenkins for your continuous integration builds.
-You can trigger a Jenkins build when you push code to your team project's
+You can trigger a Jenkins build when you push code to your project's
 Git repository or when you check code in to Team Foundation version control.
 
 ## Configure Jenkins
@@ -36,7 +36,7 @@ Git repository or when you check code in to Team Foundation version control.
    <img alt="Build name and type in Jenkins" src="./_img/jenkins/my-build.png" style="border: 1px solid #CCCCCC" />
 
 3. Set the URL for your Git repository in VSTS.
-The URL is in the form ```https://{VSTS account}.visualstudio.com/DefaultCollection/_git/{team project}```.
+The URL is in the form ```https://{VSTS account}.visualstudio.com/DefaultCollection/_git/{project}```.
 
    <img alt="Source code management settings with Git selected" src="./_img/jenkins/source-code-management-settings.png" style="border: 1px solid #CCCCCC" />
 
@@ -50,7 +50,7 @@ to connect VSTS to Jenkins.
 
 0. Go to your VSTS project service hooks page: `https://{account_name}.visualstudio.com/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Team project administration page](./_img/add-service-hook.png)
+	![Project administration page](./_img/add-service-hook.png)
 
 	Click **Create Subscription**.
 

@@ -27,7 +27,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 |:--------------|:-------|:------------
 | URL
 | account       | string | Your Visual Studio Team Services account.
-| project       | string | [Team project](../tfs/projects.md) ID or name.
+| project       | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | $expand		| enum {<br/>&nbsp;&nbsp;environments,<br/>&nbsp;&nbsp;artifacts,<br/>&nbsp;&nbsp;none<br/>} | The property that should be expanded in the list of Release Definition.
@@ -50,7 +50,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 |:-------------|:-------|:------------
 | URL
 | account      | string | Your Visual Studio Team Services account.
-| project      | string | [Team project](../tfs/projects.md) ID or name.
+| project      | string | [Project](../tfs/projects.md) ID or name.
 | definitionId | int    | ID of the release definition.
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -67,7 +67,7 @@ POST https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/r
 |:-------------|:-------|:------------
 | URL
 | account      | string | Your Visual Studio Team Services account.
-| project      | string | [Team project](../tfs/projects.md) ID or name.
+| project      | string | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version  | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -91,7 +91,7 @@ DELETE https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis
 |:--------------|:-------|:------------
 | URL
 | account       | string | Your Visual Studio Team Services account.
-| project       | string | [Team project](../tfs/projects.md) ID or name.
+| project       | string | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int    | ID of the release definition.
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -108,7 +108,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 |:--------------|:-------|:------------
 | URL
 | account       | string | Your Visual Studio Team Services account.
-| project       | string | [Team project](../tfs/projects.md) ID or name.
+| project       | string | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int    | ID of the release definition.
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -125,7 +125,7 @@ GET https://{account}.vsrm.visualstudio.com/defaultcollection/{project}/_apis/re
 |:--------------|:-------|:------------
 | URL
 | account       | string | Your Visual Studio Team Services account.
-| project       | string | [Team project](../tfs/projects.md) ID or name.
+| project       | string | [Project](../tfs/projects.md) ID or name.
 | definitionId  | int    | ID of the release definition.
 | revisionId  | int    | ID of the revision
 | Query

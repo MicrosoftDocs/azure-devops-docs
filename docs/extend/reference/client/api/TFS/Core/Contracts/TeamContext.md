@@ -19,9 +19,9 @@ Module path: `TFS/Core/Contracts`
 
 ### Members
 
-* `project`: string. The team project ID or name.  Ignored if ProjectId is set.
+* `project`: string. The project ID or name.  Ignored if ProjectId is set.
 
-* `projectId`: string. The team project ID.  Required if Project is not set.
+* `projectId`: string. The project ID.  Required if Project is not set.
 
 * `team`: string. The team ID or name.  Ignored if TeamId is set.
 

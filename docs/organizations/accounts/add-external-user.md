@@ -40,7 +40,7 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS organization user w
 
 2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
-   ![Open Admin Settings](_img/_shared/open-admin-settings-vert.PNG)
+   ![Open Admin Settings](_img/_shared/open-admin-settings-vert.png)
 
 3. Choose **Users** and then choose **Add new users**.
 
@@ -52,6 +52,7 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS organization user w
    ![Add external user to VSTS](_img/add-external-user/add-external-user-vert.png)
 
 5. Advise the external user to locate the email they received from VSTS and go to the redemption URL. The external user must navigate through an Azure B2B redemption experience, which will add the user to your organization
+
 # [Previous navigation](#tab/previous-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
@@ -62,7 +63,7 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS organization user w
 
 3. Choose **Add new users**.
 
-   ![Choose Add new users](_img/add-external-user/choose-add-new-users.PNG)
+   ![Choose Add new users](_img/add-external-user/choose-add-new-users.png)
 
 4. Enter the external user's email address followed by a semicolon, and then choose **Add**. A warning message will appear indicating that an external user is being added from outside of your directory.
 
@@ -70,6 +71,8 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS organization user w
    >![Add external user to VSTS](_img/add-external-user/add-external-user.png)
 
 5. Advise the external user to locate the email they received from VSTS and go to the Azure B2B redemption URL, which will add the user to your organization.
+
+---
 
 >[!Note]
 >If you need to resend the invitation email, go to **Users**, select the user, and choose **Resend invite**.

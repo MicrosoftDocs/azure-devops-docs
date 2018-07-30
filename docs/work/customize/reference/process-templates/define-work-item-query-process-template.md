@@ -15,11 +15,11 @@ ms.date: 02/24/2017
 
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-<a name="top"></a> You can create a work item query (.wiq) file most easily in Team Explorer. In an existing team project, you can use Team Explorer to create all work item queries that you want to add to your process template and then follow the steps in this topic to save each query as a .wiq file. For more information about how to create work item queries, see [Use the query editor to list and manage queries](../../../track/using-queries.md).  
+<a name="top"></a> You can create a work item query (.wiq) file most easily in Team Explorer. In an existing project, you can use Team Explorer to create all work item queries that you want to add to your process template and then follow the steps in this topic to save each query as a .wiq file. For more information about how to create work item queries, see [Use the query editor to list and manage queries](../../../track/using-queries.md).  
   
  **Requirements**  
   
--   To create a query, you must be a member of the **Readers** group, or your **View work items in this node** permission must be set to **Allow** for each team project in the query.  
+-   To create a query, you must be a member of the **Readers** group, or your **View work items in this node** permission must be set to **Allow** for each project in the query.  
   
 -   To save a query as a team query, you must have the appropriate permissions described in [Set permissions on queries](../../../track/set-query-permissions.md).  
   
@@ -31,7 +31,7 @@ ms.date: 02/24/2017
 3.  In the **Save Query As** dialog box, choose **File**, and specify a location and file name for the .wiq file. As an alternative, choose **Browse**, specify a file name, browse to the location to save the file, and then choose **Save**.    
 4.  Copy the file to the **\WorkItem Tracking\Queries** folder, which is in the folder to which you downloaded your process template.    
 5.  Open the .wiq file in a text editor.    
-6.  Remove the `<TeamFoundationServer>` and `<TeamProject>` elements that associate the query with a specific server that is running Visual Studio Team Foundation Server and a specific team project, as the following example shows:  
+6.  Remove the `<TeamFoundationServer>` and `<TeamProject>` elements that associate the query with a specific server that is running Visual Studio Team Foundation Server and a specific project, as the following example shows:  
   
     > [!div class="tabbedCodeSnippets"]
 	```XML 
@@ -40,21 +40,21 @@ ms.date: 02/24/2017
     ```  
   
     > [!NOTE]  
-    >  You must edit the .wiq file in a text editor and remove the `<TeamFoundationServer>` and `<TeamProject>` elements that associate the query with a specific server and team project. Otherwise, the query will not work correctly if the process template is uploaded to a different server. As an alternative, use macros where you can so that your query does not contain the explicit name of the current team project or any other values that are specific to a certain environment.  
+    >  You must edit the .wiq file in a text editor and remove the `<TeamFoundationServer>` and `<TeamProject>` elements that associate the query with a specific server and project. Otherwise, the query will not work correctly if the process template is uploaded to a different server. As an alternative, use macros where you can so that your query does not contain the explicit name of the current project or any other values that are specific to a certain environment.  
   
 7.  Remove any additional elements that are specific to a user.  
   
 
 <a name="path"></a> 
 ##  Create a work item query that references an iteration path  
- You can define a query that references a specific iteration path by including the macro for the team project, $$PROJECTNAME$$, and the name of an iteration path that is defined in the Classification plug-in file. For example, the following syntax specifies a query that includes only those work items whose iteration path is under Iteration 1.  
+ You can define a query that references a specific iteration path by including the macro for the project, $$PROJECTNAME$$, and the name of an iteration path that is defined in the Classification plug-in file. For example, the following syntax specifies a query that includes only those work items whose iteration path is under Iteration 1.  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML 
 AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'  
 ```  
   
- When the team project is created, the macro is replaced with the name of the team project.  
+ When the project is created, the macro is replaced with the name of the project.  
   
  By using this macro, you can define workbooks that reference specific iteration paths. The Agile process template contains an iteration-specific query, Iteration1Backlog.wiq, that supports the iteration-specific workbook, Iteration Backlog.xlsm.  
   
@@ -119,9 +119,9 @@ AND  [Source].[System.IterationPath] UNDER '$$PROJECTNAME$$\Iteration 1'
 
 |Element|Syntax|Description|  
 |-------------|------------|-----------------|  
-|**TeamFoundationServer**|`<TeamFoundationServer>`<br />      `   collectionURL`<br /> `</TeamFoundatonServer>`|Optional child element of **WorkItemQuery**.<br /><br /> **Important:** In general, you remove this element from queries that you add to process templates.<br /><br /> Specifies the URI of the team project collection in the following format:<br /><br /> **http://** *ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, use the following format for the URI:<br /><br /> **http://** *ServerName:Port/CollectionName*<br /><br /> The attribute type is **ServerNameType** with a maximum length of 2047.|  
-|**TeamProject**|`<TeamProject>`<br />      `TeamProjectName`<br /> `</TeamProject>`|Optional child element of **WorkItemQuery**.<br /><br /> **Important:** In general, you remove this element from queries that you add to process templates.<br /><br /> Specifies the team project against which to run the query.<br /><br /> The attribute type is **ProjectNameType** with a maximum length of 255 characters.|  
-|**Wiql**|`<Wiql>`<br />      `WorkItemQueryLanguage`<br /> `</Wiql>`|Required child element of **WorkItemQuery**.<br /><br /> Specifies a sequence of Structured Query Language (SQL) commands that act as filter criteria to find a set of work items in a team project and return the values that are assigned to a set number of fields. For details, see [Work Item Query Language](../../../track/wiql-syntax.md). <br /><br /> The default process templates provide several examples of the SQL commands that the **Wiql** element supports. These files are located in the Queries folder of the WorkItem Tracking folder. |  
+|**TeamFoundationServer**|`<TeamFoundationServer>`<br />      `   collectionURL`<br /> `</TeamFoundatonServer>`|Optional child element of **WorkItemQuery**.<br /><br /> **Important:** In general, you remove this element from queries that you add to process templates.<br /><br /> Specifies the URI of the project collection in the following format:<br /><br /> **http://** *ServerName:Port/VirtualDirectoryName/CollectionName*<br /><br /> If no virtual directory is used, use the following format for the URI:<br /><br /> **http://** *ServerName:Port/CollectionName*<br /><br /> The attribute type is **ServerNameType** with a maximum length of 2047.|  
+|**TeamProject**|`<TeamProject>`<br />      `TeamProjectName`<br /> `</TeamProject>`|Optional child element of **WorkItemQuery**.<br /><br /> **Important:** In general, you remove this element from queries that you add to process templates.<br /><br /> Specifies the project against which to run the query.<br /><br /> The attribute type is **ProjectNameType** with a maximum length of 255 characters.|  
+|**Wiql**|`<Wiql>`<br />      `WorkItemQueryLanguage`<br /> `</Wiql>`|Required child element of **WorkItemQuery**.<br /><br /> Specifies a sequence of Structured Query Language (SQL) commands that act as filter criteria to find a set of work items in a project and return the values that are assigned to a set number of fields. For details, see [Work Item Query Language](../../../track/wiql-syntax.md). <br /><br /> The default process templates provide several examples of the SQL commands that the **Wiql** element supports. These files are located in the Queries folder of the WorkItem Tracking folder. |  
   
 ## Related articles   
 -  [Create managed queries](../../../track/example-queries.md)  

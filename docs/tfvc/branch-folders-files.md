@@ -187,4 +187,4 @@ To perform this procedure, your **Check out** permission and your **Merge** perm
  [Branch Command](branch-command.md)  
  [Branches Command](branches-command.md)  
  [Branch strategically](branch-strategically.md)  
-[Visual Studio TFS Branching Guide](http://go.microsoft.com/fwlink/?LinkId=191400)
+[Visual Studio TFS Branching Guide](https://docs.microsoft.com/en-us/vsts/tfvc/branching-strategies-with-tfvc)

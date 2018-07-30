@@ -474,7 +474,7 @@ Module path: `TFS/VersionControl/TfvcRestClient`
 <a name="method_getProjectInfo"></a>
 <h2 class='method'>getProjectInfo()</h2>
 
-[Obsolete - Use the Projects API instead] Retrieve the version control information for a given Team Project
+[Obsolete - Use the Projects API instead] Retrieve the version control information for a given Project
 
 ### Syntax
 <pre class='syntax'>
@@ -483,7 +483,7 @@ Module path: `TFS/VersionControl/TfvcRestClient`
 
 ### Parameters
 
-* `projectId`: string. The ID (or name) of the team project
+* `projectId`: string. The ID (or name) of the project
 * `project`: string. Optional. Project ID or project name
 
 ### Returns

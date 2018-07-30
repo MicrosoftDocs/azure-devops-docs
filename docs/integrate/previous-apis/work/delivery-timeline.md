@@ -22,7 +22,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/work/plans/{id}/deliver
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name or ID of a team project.
+| project   | string  | | Name or ID of a project.
 | id        | string  | | ID of the specific plan.
 | Query
 | revision  | string  | Latest revision of the plan | Current revision of the plan

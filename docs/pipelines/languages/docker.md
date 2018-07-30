@@ -64,7 +64,7 @@ https://github.com/adventworks/dotnetcore-sample
 1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks that you typically need to build an ASP.NET Core app.
 
 1. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
-  * **Agent queue:** `Hosted Linux`
+  * **Agent queue:** `Hosted Linux Preview`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
 1. Modify the **.NET Core Publish** task in the build pipeline as follows:
@@ -96,7 +96,7 @@ Save the pipeline and queue a build to see it in action.
 The sample code above includes a `.vsts-ci.yml` file at the root of the repository. Replace the contents of this file with the following:
 
 ```yaml
-queue: 'Hosted Linux'
+queue: 'Hosted Linux Preview'
 variables:
 buildConfiguration: 'Release'
     
@@ -159,14 +159,14 @@ In the build pipeline, select **Tasks**, then select the **Process** node, and f
 Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
 
 ```yaml
-queue: 'Hosted Linux' # other options - 'Hosted VS2017'
+queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
 ```
 
 ---
 
 ### Microsoft-hosted Linux agents
 
-Use the **Hosted Linux** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to facilitate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
+Use the **Hosted Linux Preview** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to facilitate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
 
 You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
 
@@ -292,7 +292,7 @@ Then, define your build pipeline:
 Create a `.vsts-ci-yml` file at the root of your repo with the following content:
 
 ```yaml
-queue: 'Hosted Linux'
+queue: 'Hosted Linux Preview'
 steps:
   - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
 ```

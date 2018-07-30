@@ -41,7 +41,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 
 ## Open a Sprint backlog for a team 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -71,12 +71,12 @@ Add as many tasks as needed to capture the work required to complete each item. 
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page, standard hubs](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -103,7 +103,7 @@ For each sprint backlog item, add a task. Adding tasks from the sprint backlog o
 > [!TIP]    
 > You can quickly add several tasks on the task board by simply entering a title. You can then later bulk edit items to assign them or add additional details. You can also enter *Remaining Work* onto the card by making sure you [add that field to display on the task board](../customize/customize-cards.md#task-board). 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -131,7 +131,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 You can add tasks from the sprint **Backlog** or **Board** (aka task board). 
 
@@ -210,11 +210,11 @@ During the sprint, team members update remaining work to continually reflect the
 
 Tasks without links to parent backlog items or user stories appear at the top of the task board. You can track unparented tasks in similar ways to other tasks, or drag them to an existing backlog item to parent them. The Unparented card tracks the total of remaining work defined for all unparented tasks, however, it isn't associated with any work item.
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  
-> ![Unparented tasks, agile hubs taskboard](_img/add-tasks/unparented-tasks.png) 
+> ![Unparented tasks, agile taskboard](_img/add-tasks/unparented-tasks.png) 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
@@ -222,7 +222,7 @@ Tasks without links to parent backlog items or user stories appear at the top of
 
 ::: moniker-end
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 ![Unparented tasks](_img/ALM_TB_UnparentedTasks_CO.png)
 

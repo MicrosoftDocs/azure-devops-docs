@@ -28,7 +28,7 @@ ms.date: 01/12/2017
   
 -   **Verify the health of the synchronization engine**: If synchronization had been performing as you expect before a problem occurred, you can perform the following procedures:  
   
-    -   **Check synchronization messages**. By using the `/GetSyncMessages` option of the `TFSAdmin ProjectServer` command-line tool, you can display the errors that were logged most recently for a team project collection. For more information, see [View error messages](view-synch-error-messages.md).  
+    -   **Check synchronization messages**. By using the `/GetSyncMessages` option of the `TFSAdmin ProjectServer` command-line tool, you can display the errors that were logged most recently for a project collection. For more information, see [View error messages](view-synch-error-messages.md).  
   
     -   **Review how fields get updated**. If you find that one or more fields are not being updated as you expect, review the information in [Understand how updates to specific fields are managed](understand-how-updates-to-specific-fields-managed.md). In particular, you might discover why a field is not being updated even though no synchronization messages are being logged. The data type of the field, the `OnConflict` attribute for mapping fields, and the task hierarchy affect how the synchronization engine updates specific fields.  
   

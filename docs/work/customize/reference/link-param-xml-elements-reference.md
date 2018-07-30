@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6651e599-52d4-4edc-87cf-264d64befbac
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 04/05/2017
 ---
@@ -30,9 +31,9 @@ The `Link` element is either a child element of the `Control` element, or a chil
   
 > [!div class="tabbedCodeSnippets"]
 ```XML
-<Link URLRoot="URLRoot" URLPath ="URLPathWithParameters">  
-      <Param Index="IndexValue " Value="ParamValue " Type ="Original | Current"/>  
-</Link>  
+<Link URLRoot="URLRoot" URLPath="URLPathWithParameters">
+    <Param Index="IndexValue" Value="ParamValue" Type="Original | Current" />
+</Link>
 ```  
   
 ## Attributes and elements  
@@ -43,7 +44,7 @@ The `Link` element is either a child element of the `Control` element, or a chil
 |Element|Attribute|Description|  
 |-------------|---------------|-----------------|  
 |`Link`|  |Optional `Control` element when `type="FieldControl"`.<br /> Optional `LabelText` element.<br />Optional `Text` element.<br /> Optional `WebpageControlOptions` element.<br />Container element for defining a hyperlink or URL. |  
-|  |`UrlRoot`|Required `Link` attribute.<br /> Specifies the protocol and the server name of the URL to which the label links. Supported protocols are HTTP, HTTPS and MAILTO.<br /> You can either hardcode the specified server name , or you can use one of the following macros and optionally append additional address information to a macro: **Note:**  Each macro links to the URL that is defined and enabled for the team project of the work item form for which the `Link` element is defined. If any of the resources are not provisioned or enabled for the team project, a "page not found" error will appear. <br />-   `@PortalPage`: The URL of the SharePoint site for the current team project (for example, http://*serverName*/sites/*collectionName/TeamProjectName*).<br />-   `@ProcessGuidance`: The URL of the SharePoint site for the process guidance for a team project.<br />-   `@ReportManagerUrl`: The URL of the server that hosts Report Manager for the current team project. This provides a link to the folder view for the reports (for example, `http://serverName/Reports/Pages/Folder.aspx?ItemPath=/*collectionName/teamProjectName*`).<br />-   `@ReportServiceSiteUrl`: The URL of the server that hosts SQL Server Reporting Services for the current team project plus the base path for the team project (for example, http://*serverName*/Reports/Pages/reportservice.asmx?ItemPath=/*collectionName/teamProjectName*).<br /> To determine the hardcoded value for the first two macros, you can open the project portal settings for a team project. For more information, see [Configure or redirect process guidance](../../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md). |  
+|  |`UrlRoot`|Required `Link` attribute.<br /> Specifies the protocol and the server name of the URL to which the label links. Supported protocols are HTTP, HTTPS and MAILTO.<br /> You can either hardcode the specified server name , or you can use one of the following macros and optionally append additional address information to a macro: **Note:**  Each macro links to the URL that is defined and enabled for the project of the work item form for which the `Link` element is defined. If any of the resources are not provisioned or enabled for the project, a "page not found" error will appear. <br />-   `@PortalPage`: The URL of the SharePoint site for the current project (for example, http://*serverName*/sites/*collectionName/TeamProjectName*).<br />-   `@ProcessGuidance`: The URL of the SharePoint site for the process guidance for a project.<br />-   `@ReportManagerUrl`: The URL of the server that hosts Report Manager for the current project. This provides a link to the folder view for the reports (for example, `http://serverName/Reports/Pages/Folder.aspx?ItemPath=/*collectionName/teamProjectName*`).<br />-   `@ReportServiceSiteUrl`: The URL of the server that hosts SQL Server Reporting Services for the current project plus the base path for the project (for example, http://*serverName*/Reports/Pages/reportservice.asmx?ItemPath=/*collectionName/teamProjectName*).<br /> To determine the hardcoded value for the first two macros, you can open the project portal settings for a project. For more information, see [Configure or redirect process guidance](../../../report/sharepoint-dashboards/configure-or-redirect-process-guidance.md). |  
 |  |`UrlPath`|Optional `Link` attribute.<br /> Specifies a URL path for the hyperlink. You use this attribute to specify variable parameters that are determined at run time.  |  
 |`Param`|  |Optional `Link` element. Required when `UrlPath` is specified.<br /> Specifies a value to be used to determine the URL of the hyperlink when `UrlPath` is specified.<br />  |  
 |  |`Index`|Required `Param` attribute.<br /> Specifies the index of the parameter where the value must be formatted into the URL string. It is not required to order the Index values sequentially; however, they must match the number of the index in the `URLPath` string. The first index number should be 0.|  

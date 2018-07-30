@@ -19,7 +19,7 @@ You can customize the way in which work item fields that are stored in Team Foun
   
  You can customize the mappings, for example, to support a field that you created or to map fields to predefined columns instead of to custom columns. For complete documentation on the field mapping file for Microsoft Project, see [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md).  
   
- You customize the mapping by modifying the FileMapping.xml file. The following table summarizes the names of the file, the folder, and the plug-in for the default process templates. The plug-in contains the definition of the task that uploads the file to the team projection collection.  
+ You customize the mapping by modifying the FileMapping.xml file. The following table summarizes the names of the file, the folder, and the plug-in for the default process templates. The plug-in contains the definition of the task that uploads the file to the projection collection.  
   
 - File name: FileMapping.xml    
 - Folder name: Classification  

@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/18/2017
+ms.date: 07/26/2017
 monikerRange: 'vsts'
 ---
 # Create your VSTS organization with a personal Microsoft account or a work/school account
@@ -34,7 +34,7 @@ so your team can build often, test early, and ship faster.
 ##	What do I need to sign up for a VSTS organization?
 
 *	To use only Microsoft accounts 
-	with your VSTS organization, follow the steps below and ignore the Azure Active Directory (Azure Active Directory) call outs. 
+	with your VSTS organization, complete the following steps, ignoring the Azure Active Directory (Azure Active Directory) call outs. 
 
 	Don't have a Microsoft account?  You can create a Microsoft account 
 	when you sign up for VSTS.
@@ -44,14 +44,14 @@ so your team can build often, test early, and ship faster.
 	All users must sign in with Microsoft accounts to your VSTS organization.
 
 *	Alternatively, to authenticate users and control organization access through your 
-	Azure Active Directory, follow the steps below and pay attention to the Azure Active Directory call outs.
+	Azure Active Directory, complete the following steps, while paying attention to the Azure Active Directory call outs.
 
 	Use your work or school account to **automatically connect** your VSTS organization to your Azure Active Directory. 
 	All users must be members in that directory to get access to your VSTS organization, or you must use 
 	[Azure Active Directory business-to-business (B2B) collaboration capabilities](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to 
 	add users from other organizations.
 
-	You'll need a work or school account that's managed by your organization's directory. 
+	You'll need a work or school account that's managed by your Azure Active Directory. 
 	If you use Azure or Office 365, you might have this already.  If you don't, learn how to 
 	[sign up for Azure as an organization](/azure/active-directory/fundamentals/sign-up-organization).
 
@@ -61,7 +61,7 @@ so your team can build often, test early, and ship faster.
 
 ## How does Azure Active Directory control access to VSTS?
 
-VSTS authenticates users through your organization's directory 
+VSTS authenticates users through your Azure Active Directory 
 so that only users who are members in that directory can get access to your VSTS organization. 
 When you remove users from that directory, 
 they can't access your organization anymore. Only specific 
@@ -126,8 +126,7 @@ that you're connecting to your VSTS organization.
 	to connect this directory to your VSTS organization.  Changing the directory now is easier than [changing the
 	directory later](faq-create-organization.md#ChangeDirectory).
 
-0.	After VSTS creates your organization and project, 
-add code, work items, or more users.
+0.	After VSTS creates your organization and project, add code, work items, or more users.
 
     ![Add code or work items](_img/_shared/project-created.png)
 	Congratulations, you're now a VSTS organization owner! 

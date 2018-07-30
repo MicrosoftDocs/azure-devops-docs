@@ -124,7 +124,7 @@ In VSTS, you must
 to each user in your organization's Users hub. VSTS validates Visual Studio subscribers as 
 they sign in. You can assign Basic access for free to five users without Visual Studio subscriptions. 
 To give Basic access to more users, you'll need to set up billing for your organization and
-[pay for more users](../billing/buy-basic-access-add-users.md). 
+[pay for more users](../organizations/billing/buy-basic-access-add-users.md). 
 Otherwise, all other users get Stakeholder access.
 
 If you use Azure AD groups to provide access to groups of users, VSTS will assign appropriate 

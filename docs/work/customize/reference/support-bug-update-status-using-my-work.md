@@ -14,13 +14,13 @@ ms.date: 01/20/2017
 
 With My Work in Team Explorer you can conduct and respond to code reviews. If you have customized the workflow states for work item types (WITs) that you use to track bugs, you may need to update the process configuration state-to-metastate mappings. **My Work** uses these mappings to update the bug state as developers update the bug status using My Work. **My Work** allows developers to manage their work in progress, suspend and resume work, and request code reviews. See [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
   
- You specify all the WITs that you use to track bugs in the definition for the Bug Category, and you define state-to-metatstates mappings in the ProcessConfiguration. Changes that you make to the definition files apply for all teams that work in the team project that you customize.  
+ You specify all the WITs that you use to track bugs in the definition for the Bug Category, and you define state-to-metatstates mappings in the ProcessConfiguration. Changes that you make to the definition files apply for all teams that work in the project that you customize.  
   
  **Requirements**  
   
 -   To access **My Work**, you must use Team Foundation Version Control (TFVC) for your source control.   
   
--   To run the **witadmin** command-line tool, you must be a member of the **Team Foundation Administrators** group or a member of the **Project Administrators** group for the team project. For more information, see [Add an administrator](../../../organizations/security/set-project-collection-level-permissions.md).  
+-   To run the **witadmin** command-line tool, you must be a member of the **Team Foundation Administrators** group or a member of the **Project Administrators** group for the project. For more information, see [Add an administrator](../../../organizations/security/set-project-collection-level-permissions.md).  
   
 <a name="default"></a> 
 ##Default metastate assignments made to workflow states for bugs  
@@ -55,7 +55,7 @@ With My Work in Team Explorer you can conduct and respond to code reviews. If yo
 <a name="add"></a> 
 
 ##Add WITs to the Bug category  
-You add WITs to a category by updating the [Categories definition file](categories-xml-element-reference.md) and importing it to your team project. Follow the [customization sequence](../customize-work.md) that matches your process model. 
+You add WITs to a category by updating the [Categories definition file](categories-xml-element-reference.md) and importing it to your project. Follow the [customization sequence](../customize-work.md) that matches your process model. 
  
 0.  Open the categories file in Notepad and locate the `CATEGORY` element for the `"Bug Category"`.  
   
@@ -104,7 +104,7 @@ You add WITs to a category by updating the [Categories definition file](categori
     ```  
   
     > [!IMPORTANT]  
-    > You must specify a value for the `State` element that corresponds to a valid workflow state. A valid workflow state is one that has been defined for a work item type that is included in Bug Category for your team project. Also, you must assign a metastate type within the Agile or Bug group, that is `Proposed`, `InProgress`, `Resolved`, or `Complete`.  
+    > You must specify a value for the `State` element that corresponds to a valid workflow state. A valid workflow state is one that has been defined for a work item type that is included in Bug Category for your project. Also, you must assign a metastate type within the Agile or Bug group, that is `Proposed`, `InProgress`, `Resolved`, or `Complete`.  
   
 0.  Import the modified definition file.  
 

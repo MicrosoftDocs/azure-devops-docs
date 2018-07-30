@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans?api-version=
 |:-------------------|:--------|:--------|:---------------------
 | URL
 | instance           | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  |         | Name or ID of the team project.
+| project            | string  |         | Name or ID of the project.
 | Query
 | api-version        | string  |         | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | owner              | string  |         | Filter for test plan by owner ID or name.
@@ -60,7 +60,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/test/plans/{plan}?api-v
 |:-------------------|:--------|:---------------------
 | URL
 | instance           | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project            | string  | Name or ID of the team project.
+| project            | string  | Name or ID of the project.
 | plan               | int     | ID of the test plan to get.
 | Query
 | api-version        | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -91,14 +91,14 @@ Content-Type: application/json
 |:------------|:---------|:----------------------------|:---------------------
 | URL
 | instance    | string   |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |                             | Name or ID of the team project.
+| project     | string   |                             | Name or ID of the project.
 | Query
 | api-version | string   |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | name        | string   |                             | Name of the new test plan.
 | description | string   |                             | Description of the new test plan.
-| area.name   | string   | Team project root area      | Name of the area in which to create the test plan.
-| iteration   | string   | Team project root iteration | Name of the iteration in which to create the test plan.
+| area.name   | string   | Project root area      | Name of the area in which to create the test plan.
+| iteration   | string   | Project root iteration | Name of the iteration in which to create the test plan.
 | startDate   | DateTime | Current date                | Start date for test plan.
 | endDate     | DateTime | Start date + 7 days         | End date for test plan.
 
@@ -141,14 +141,14 @@ Content-Type: application/json
 |:------------|:---------|:----------------------------|:---------------------
 | URL
 | instance    | string   |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |                             | Name or ID of the team project.
+| project     | string   |                             | Name or ID of the project.
 | Query
 | api-version | string   |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | name        | string   |                             | Name of the new test plan.
 | description | string   |                             | Description of the new test plan.
-| area.name   | string   | Team project root area      | Name of the area in which to create the test plan.
-| iteration   | string   | Team project root iteration | Name of the iteration in which to create the test plan.
+| area.name   | string   | Project root area      | Name of the area in which to create the test plan.
+| iteration   | string   | Project root iteration | Name of the iteration in which to create the test plan.
 | startDate   | DateTime | Current date                | Start date for test plan.
 | endDate     | DateTime | Start date + 7 days         | End date for test plan.
 | build       | int      |                             | ID of the build to test.
@@ -179,7 +179,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/test/plans/{planId}?
 |:------------|:---------|:----------------------------|:---------------------
 | URL
 | instance    | string   |                             | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project     | string   |                             | Name or ID of the team project.
+| project     | string   |                             | Name or ID of the project.
 | planId      | int      |                             | ID of the test plan to delete.
 | Query
 | api-version | string   |                             | [Version](../../concepts/rest-api-versioning.md) of the API to use.

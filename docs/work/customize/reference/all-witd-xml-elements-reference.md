@@ -16,11 +16,11 @@ ms.date: 02/14/2017
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
 
-You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a team project, such as a bug, requirement, or risk. You create a team project either in [VSTS](../../../organizations/accounts/create-organization-msa-or-work-student.md) or on an [on-premises Team Foundation Server (TFS)](../../../organizations/projects/create-project.md).  
+You can customize an existing work item type (WIT) or create a WIT to meet your project tracking requirements. A WIT defines the fields, rules, and workflow states and transitions for an item of work that will be tracked for a project, such as a bug, requirement, or risk. You create a project either in [VSTS](../../../organizations/accounts/create-organization-msa-or-work-student.md) or on an [on-premises Team Foundation Server (TFS)](../../../organizations/projects/create-project.md).  
   
- The root element in each definition of a WIT is the `WITD` element, which must have only one `WORKITEMTYPE` element defined. The name of each WIT must be unique in a team project, and each type name must be no more than 128 Unicode characters long.  
+ The root element in each definition of a WIT is the `WITD` element, which must have only one `WORKITEMTYPE` element defined. The name of each WIT must be unique in a project, and each type name must be no more than 128 Unicode characters long.  
   
- To customize or create a WIT definition, you modify the type definition XML file. WITs are scoped to a team project within a project collection.  
+ To customize or create a WIT definition, you modify the type definition XML file. WITs are scoped to a project within a project collection.  
   
 <a name="SyntaxStructure"></a> 
 ##  WITD syntax structure  
@@ -63,7 +63,7 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 </td>
 </tr>
 <tr>
-<td data-th="Element"><p>**WORKITEMTYPE**</p></td><td data-th="Description"><p>Names of WITs must be unique in a specific team project. At run time, you use the name specified by this element. For example, the name can appear as a menu option. In this case, a user could choose <strong>Bug</strong> on the <strong>New Work Item</strong> menu. </p>
+<td data-th="Element"><p>**WORKITEMTYPE**</p></td><td data-th="Description"><p>Names of WITs must be unique in a specific project. At run time, you use the name specified by this element. For example, the name can appear as a menu option. In this case, a user could choose <strong>Bug</strong> on the <strong>New Work Item</strong> menu. </p>
 <pre><code>
 &lt;WORKITEMTYPE name="WorkItemTypeName" refname="WITReferenceName" &gt;  
 &#160;&#160;&#160;&lt;DESCRIPTION&gt;Text&lt;/DESCRIPTION&gt;  
@@ -73,7 +73,7 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 &#160;&#160;&#160;&lt;FORM&gt; . . .&lt;/FORM&gt;  
 &lt;/WORKITEMTYPE&gt;
 </code></pre>
-<p>Friendly name (*name*): Appears in the drop-down menus of work item queries. The friendly name must be unique across all WIT names that are defined within a team project.  Specify a name no longer than 128 Unicode characters that uses alphanumeric, underscore, and hyphen characters.  </p>
+<p>Friendly name (*name*): Appears in the drop-down menus of work item queries. The friendly name must be unique across all WIT names that are defined within a project.  Specify a name no longer than 128 Unicode characters that uses alphanumeric, underscore, and hyphen characters.  </p>
 <p>Reference name (*refname*): Specify a name no longer than 70 Unicode characters that uses alphanumeric, underscore, and hyphen characters. The reference name must contain at least one period (.), but no period can appear at the start or end of a name. Also, the reference name cannot start with a number or an underscore, and it cannot have multiple consecutive hyphens, such as (--).</p><p>Do not specify a name that overlaps with the reserved System. <em>XXX</em> and Microsoft. <em>XXX</em> namespaces. </p></td></tr>
 <tr><td data-th="Element"><p>**DESCRIPTION**</p></td>
 <td data-th="Description"><p>Specifies a string that describes the type of work item that you are defining. The description should help any user who is customizing the WIT.</p>
@@ -87,7 +87,7 @@ xmlns:witd="http://schemas.microsoft.com/VisualStudio/2008/workitemtracking/type
 <p>You specify a string of text that describes the type of work item that you are defining. </p></td></tr
 <tr>
 <td data-th="Element"><b>GLOBALLISTS</b></td>
-<td><p>Contains the global list definitions that are used by the WIT. You use global lists to share pick lists among multiple WITs defined for a team project collection. <a href="define-global-lists.md">Define global lists</a> to support cross-group collaboration and ease of maintenance. </p>
+<td><p>Contains the global list definitions that are used by the WIT. You use global lists to share pick lists among multiple WITs defined for a project collection. <a href="define-global-lists.md">Define global lists</a> to support cross-group collaboration and ease of maintenance. </p>
 <code></pre>
 &lt;GLOBALLIST name="globalListName"&gt;  
    &lt;LISTITEM&gt; . . . &lt;/LISTITEM&gt;  

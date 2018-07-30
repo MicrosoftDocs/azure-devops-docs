@@ -59,7 +59,7 @@ A: Use tfssecurity.exe from the command line, for example:
     tfssecurity /a+ /collection: https://fabrikam-fiber-inc.visualstudio.com/DefaultCollection ServiceHooks PublisherSecurity/abcdef00-abcd-0000-0000-abcdef000000 EditSubscriptions n:fabrikamfiber4@hotmail.com ALLOW
 ```
 
-**Note:** The GUID represents the team project ID which can be retrieved using the [Projects](/vsts/integrate/previous-apis/tfs/projects) REST API.
+**Note:** The GUID represents the project ID which can be retrieved using the [Projects](/vsts/integrate/previous-apis/tfs/projects) REST API.
 
 #### Q: Can I programmatically create subscriptions? 
 

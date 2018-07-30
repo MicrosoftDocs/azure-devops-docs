@@ -1,7 +1,7 @@
 ---
 title: Define the initial configuration of Team Foundation version control (TFVC) or Git
 titleSuffix: VSTS & TFS
-description: Configure the team project's initial security permissions, check-out policies, and check-in notes for version control in Team Foundation Server  
+description: Configure the project's initial security permissions, check-out policies, and check-in notes for version control in Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a7dff64f-4bb7-4083-bcf5-12d70e4915ea
@@ -18,14 +18,14 @@ ms.date: 10/11/2017
 [!INCLUDE [temp](../../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!NOTE]  
->  For VSTS and for TFS 2017.3 and later versions, you create team projects from the web 
+>  For VSTS and for TFS 2017.3 and later versions, you create projects from the web 
 >  portal, which ignores this plug-in. Instead, default permissions are set for 
->  project-level and collection-level security groups. After you create a team project, 
+>  project-level and collection-level security groups. After you create a project, 
 >  you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or 
 >  [permissions](../../../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.  
 
 
-By using the plug-in for version control, you can configure a team project's initial security permissions, check-out policies, and check-in notes.  
+By using the plug-in for version control, you can configure a project's initial security permissions, check-out policies, and check-in notes.  
   
  In the XML file, you specify one or more tasks and their dependencies. Generally, you need only one task to configure settings for version control. For an example of a task that specifies these settings, see the VersionControl.xml file that is defined for the default process templates.  
   
@@ -59,7 +59,7 @@ You can change the name of the XML file and the folder name but not the name of 
 ```  
   
 ##  <a name="Latest"></a> Get Latest on Check Out  
- You use the **get_latest_on_checkout** element to configure the default behavior when a user checks out a file for a team project.  
+ You use the **get_latest_on_checkout** element to configure the default behavior when a user checks out a file for a project.  
   
 > [!div class="tabbedCodeSnippets"]
 ```XML  
@@ -111,7 +111,7 @@ The following example shows how to create an additional check-in note labeled "D
 ##  Permissions    
 Version control has a specific set of permissions that you can configure for a process template. By specifying permissions, you define what actions security groups and individuals can perform on items that are under version control. For more information, see [Control access to functional areas](control-access-to-functional-areas.md).  
   
-The default assignments for TFVC and GIt permissions made to all default process templates are as shown. You can set these permissions after you create the team project from the web UI, see [Set repository permissions for Git or TFVC](../../../../organizations/security/set-git-tfvc-repository-permissions.md).
+The default assignments for TFVC and GIt permissions made to all default process templates are as shown. You can set these permissions after you create the project from the web UI, see [Set repository permissions for Git or TFVC](../../../../organizations/security/set-git-tfvc-repository-permissions.md).
 
  
 > [!div class="tabbedCodeSnippets"]

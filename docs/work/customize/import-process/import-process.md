@@ -12,7 +12,7 @@ monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
 
-# Process and team projects    
+# Process and projects    
 
 <b>VSTS (Hosted XML)</b>   
 
@@ -26,15 +26,15 @@ ms.date: 03/20/2018
 In VSTS, you manage customization of work tracking objects through a process.
 Processes are imported and exported through a web based administration experience. 
 
-When you import a new process, you're able to create new team projects using it.  
-When you import an existing process, all team projects that use that process are updated to reflect the changes. 
+When you import a new process, you're able to create new projects using it.  
+When you import an existing process, all projects that use that process are updated to reflect the changes. 
 
-For example, updates made to any of the custom processes listed below automatically update the two team projects that use the process.
+For example, updates made to any of the custom processes listed below automatically update the two projects that use the process.
  
 ![Custom processes mapped to projects](_img/ALM_IP_ProcessUse.png)
 
 As you discover additional customizations that you need to make, you can export the existing process, update the process XML definition files, 
-zip the result and re-import the newly updated process. Your changes will be applied to all your existing team projects that use that process.    
+zip the result and re-import the newly updated process. Your changes will be applied to all your existing projects that use that process.    
 
 Import process supports the following scenarios:   
 *   [Import an existing process from an on-premises Team Foundation Server (TFS)](#import-from-TFS)  
@@ -49,7 +49,7 @@ These steps can be followed if you want to test your process in TFS to see if it
 In Team Foundation Server, each project has its own copy of process so careful consideration needs to be made as to which processes should exist for your organization.
 Migration to VSTS is a great time to think about process alignment across your organization and reducing the number of variants of that centralized process.  
  
-1.  Run the [process export script](customize-process.md#open-process-wit) to generate a process for a given team project.   
+1.  Run the [process export script](customize-process.md#open-process-wit) to generate a process for a given project.   
 
 2.  (Optional) Edit the ProcessTemplate.xml file name and description. Ensure it conforms to the rules and constraints outlined in [Customize a process](customize-process.md).
 
@@ -59,7 +59,7 @@ Migration to VSTS is a great time to think about process alignment across your o
 
 5.  Repeat the above process for each process you want to import to VSTS.
 
-6.  Using the imported process(es), create team projects on VSTS for each you want to migrate. 
+6.  Using the imported process(es), create projects on VSTS for each you want to migrate. 
 
 <a id="open-process-wit">  </a>
 ### Open Process in the admin context
@@ -74,12 +74,12 @@ Migration to VSTS is a great time to think about process alignment across your o
 Prior to importing a process, you'll want to [customize it to support your work tracking needs](customize-process.md). 
 Name your process something other than Scrum, Agile, or CMMI. These system processes are locked and you're prevented from overwriting them.   
 
-1. Only administrators can import process so if you aren't the account owner or a member of the Project Collection Administrator's group, [get added](../../../organizations/security/set-project-collection-level-permissions.md). 
+1. Only administrators can import process so if you aren't the organization owner or a member of the Project Collection Administrator's group, [get added](../../../organizations/security/set-project-collection-level-permissions.md). 
 
 2.  From the Process tab, choose import and then browse to the zip file of the process you've customized.  
   
     > [!NOTE]    
-    >If you don't see the **Import process** link, then your account isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../process/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
+    >If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../process/manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
 
     <img src="_img/import-process-import.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />
 
@@ -97,9 +97,9 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
     If the process doesn't pass the validation checks performed on import, you'll receive a list of error messages.  
     [Correct each error](resolve-errors.md) and then retry the import. 
 
-4.  You can immediately create a team project using the newly imported process. 
+4.  You can immediately create a project using the newly imported process. 
 
-	<img src="_img/import-process-new-team-project.png" alt="Create team project from imported process" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/import-process-new-team-project.png" alt="Create project from imported process" style="border: 2px solid #C3C3C3;" />
 
 <a id="update-process">  </a>
 ## Update an existing process
@@ -115,13 +115,13 @@ Once you've added a process, you can update it by importing a zip file where you
 
     <img src="_img/ALM_IP_UpdateProcessConfirm.png" alt="Import process confirmation dialog" style="border: 2px solid #C3C3C3;" />
 
-3.  You'll see the following dialog while the system updates all team projects that were created using the updated process.  
+3.  You'll see the following dialog while the system updates all projects that were created using the updated process.  
 
     <img src="_img/ALM_IP_ApplyProcessChanges.png" alt="Apply process changes dialog" style="border: 2px solid #C3C3C3;" />
 
-4.  Upon successful import, you'll see the following messsage. All team projects that were created with the process are updated with the modifications. 
+4.  Upon successful import, you'll see the following messsage. All projects that were created with the process are updated with the modifications. 
 
-    <img src="_img/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and team projects updated" style="border: 2px solid #C3C3C3;" />
+    <img src="_img/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and projects updated" style="border: 2px solid #C3C3C3;" />
 
 5.  If you renamed or deleted fields or work item types, you will receive a confirmation message. 
     Go ahead and check the box and proceed with the import. To learn more about each message, click the forward link provided. 
@@ -134,7 +134,7 @@ Once you've added a process, you can update it by importing a zip file where you
 <a id="default-process">  </a>
 ## Set the default process
 
-Set a process as the default to have it preselected for all new team projects you plan to create. 
+Set a process as the default to have it preselected for all new projects you plan to create. 
 
 <img src="_img/import-process-set-default.png" alt="Process page, Set default process" style="border: 2px solid #C3C3C3;" />
 
