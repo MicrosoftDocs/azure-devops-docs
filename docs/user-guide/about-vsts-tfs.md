@@ -170,7 +170,7 @@ of these changes was recently introduced, and more changes are on the way.
 With these new VSTS process customization capabilities, you can make customizations directly within the 
 VSTS Web UI. If you want to customize your processes programmatically, you can also make customizations
 through REST endpoints. When you customize team projects in this way, those projects will continue to update
-automatically when we release new versions of their base processes with VSTS updgrades. 
+automatically when we release new versions of their base processes with VSTS upgrades. 
 
 To learn more, see [Customize your work tracking experience](../work/customize/customize-work.md).
 

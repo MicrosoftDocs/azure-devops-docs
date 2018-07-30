@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-If you are a sole developer, or work on a small team, chances are that you participate in many activites&mdash;performing tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
+If you are a sole developer, or work on a small team, chances are that you participate in many activities&mdash;performing tasks associated with issue tracking, feature planning, coding, testing, build, and deployment.  
 
 However, if you work within a large organization, you're probably more focused on a specific set of tasks that are traditionally aligned with one or two specific roles, such as software development, project management, and DevOps.    
 

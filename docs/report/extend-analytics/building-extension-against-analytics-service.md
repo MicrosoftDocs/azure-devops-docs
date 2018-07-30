@@ -268,7 +268,7 @@ For the purposes of this sample, use the following manifest and copy it into a f
 > [!IMPORTANT]  
 > Remember to replace the publisher name and image name as appropriate.  
 > In this example the license.md and overview.md files
-do exist, but they have no content. They must exist otherwise the extension cannot be compiled into a VSIX pacakage. 
+do exist, but they have no content. They must exist otherwise the extension cannot be compiled into a VSIX package. 
 
 There are a few key things to note here:
 * This extension adds a work-hub-group (extension points are described in [Extension points](../../extend/reference/targets/overview.md))

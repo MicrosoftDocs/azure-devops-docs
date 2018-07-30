@@ -39,7 +39,7 @@ as feedback without debate, criticism, or argument.
 * Make sure that your responses add value and are relevant to your customers' comments.
 * Focus on precisely addressing questions or problems. If you need more details, ask the customer to contact you over email, rather discuss in reviews. When you 
 resolve the problem, please update your reply with the resolution. You can edit your reply, just like customers can edit their reviews.
-* If you come across any inappropriate reviews, like spam, abusive, or offensivecontent, for any extension, please flag it for our review.
+* If you come across any inappropriate reviews, like spam, abusive, or offensive content, for any extension, please flag it for our review.
 
 ## Publisher request to void a review
 

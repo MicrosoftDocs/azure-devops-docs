@@ -1,6 +1,6 @@
 ---
 title: File transforms and variable substitution
-description: File transforms and variable substitution for tasks in Viosual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: File transforms and variable substitution for tasks in Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: C287712A-8979-444C-8B1F-A7B3016801D6
 ms.prod: devops
 ms.technology: devops-cicd
@@ -203,7 +203,7 @@ As an example, consider the task of changing the following values in `Web.config
         <!-- Change AdminUserName in this line: --> 
         <add key="AdminUserName" value="__AdminUserName__" />
         <!-- Change AdminPassword in this line: --> 
-        <add key="AdminPassword" value="__AdminPasword__" />
+        <add key="AdminPassword" value="__AdminPassword__" />
     </appSettings>
     <entityFramework>
         <defaultConnectionFactory type="System.Data.Entity.LocalDbConnectionFactory">
@@ -315,7 +315,7 @@ As an example, consider the task of overriding values in this JSON file:
     },
     "DebugMode": "enabled",
     "DBAccess": {
-      "Admininstrators": ["Admin-1", "Admin-2"],
+      "Administrators": ["Admin-1", "Admin-2"],
       "Users": ["Vendor-1", "vendor-3"]
     },
     "FeatureFlags": {
@@ -368,7 +368,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
        },
        "DebugMode": "disabled",
        "DBAccess": {
-         "Admininstrators": ["Admin-1", "Admin-2"],
+         "Administrators": ["Admin-1", "Admin-2"],
          "Users": ["Admin-3", "vendor-3"]
        },
        "FeatureFlags": {

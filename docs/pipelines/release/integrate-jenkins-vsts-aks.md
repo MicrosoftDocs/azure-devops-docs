@@ -42,7 +42,7 @@ You will:
 > * Configure Jenkins Maven global settings
 > * Create Jenkins Service Hooks in VSTS
 > * Configure a Jenkins CI build with VSTS integration
-> * Install the Release Management Utilty tasks VSTS extension
+> * Install the Release Management Utility tasks VSTS extension
 > * Create a VSTS release pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * View the deployed sample app
@@ -64,7 +64,7 @@ You will:
 
 * Access to a Jenkins server with Maven and the VSTS plugin configured. If you have not yet created a Jenkins server,
   see [Create a Jenkins master on an Azure Virtual Machine](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template).  Also, the following Jenkins plugins must be installed:
-    * **VS Team Services Continous Deployment** plugin.  You can find additional information about the **VSTS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
+    * **VS Team Services Continuous Deployment** plugin.  You can find additional information about the **VSTS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
     * **Config File Provider** plugin.  You can find additional information about the **Config File plugin** [here](https://wiki.jenkins.io/display/JENKINS/Config+File+Provider+Plugin).
     * **Maven Integration** plugin.  You can find additional information about the **Maven Integration plugin** [here](https://plugins.jenkins.io/maven-plugin).
 
@@ -434,7 +434,7 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * Configure Jenkins Maven global settings
 > * Create Jenkins Service Hooks in VSTS
 > * Configure a Jenkins CI build with VSTS integration
-> * Install the Release Management Utilty tasks VSTS extension
+> * Install the Release Management Utility tasks VSTS extension
 > * Create a VSTS release pipeline for CD to Azure
 > * Test the CI/CD pipeline with a pull request
 > * View the deployed sample app
