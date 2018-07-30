@@ -105,7 +105,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 ### With a Task Runner (e.g. make gulp work)
 
-When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build definition. This will inject credentials into your proejct's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
+When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build definition. This will inject credentials into your project's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
 
 1. Add a build definition in VSTS under the **Build and Release** --> **Builds** hub.
 

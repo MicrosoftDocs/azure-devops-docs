@@ -42,7 +42,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 	<img src="../work/backlogs/_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
-	If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![elipses](../_shared/_img/ellipses-reduced-screen-size.png)), then click **Work**, **New Work Items**, and then choose the work item type you want. 
+	If you don't see the **Work** hub, your screen size may be reduced. Click the three dots (![ellipses](../_shared/_img/ellipses-reduced-screen-size.png)), then click **Work**, **New Work Items**, and then choose the work item type you want. 
 
 	![Open Work hub when screen size is reduced](_img/plan-track-work/open-work-hub-reduced-screen-size.png) 
 

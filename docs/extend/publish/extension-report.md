@@ -16,7 +16,7 @@ Now that your extension is available in the [Visual Studio Marketplace](https://
 To view the extension's report, visit your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension.
 
 ## Uninstall
-You can view how many accounts have uninstalled your extension, daily trend of uninstall, detailed deedback shared during uninstall and top uninstall reasons.
+You can view how many accounts have uninstalled your extension, daily trend of uninstall, detailed feedback shared during uninstall and top uninstall reasons.
 You can use search for text and dates to analyze and draw more insights from the detailed feedback. 
 
 If your extension is paid you can also Contact your users for transactional communication. Marketplace will broker the first communication with the user as our privacy policy doesn't allow direct sharing of customer email address.

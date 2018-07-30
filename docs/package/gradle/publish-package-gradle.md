@@ -91,7 +91,7 @@ publishing {
             url 'https://{your-VSTS-account-name-here}.pkgs.visualstudio.com/_packaging/{your-VSTS-project-name-here}' 
             credentials { 
                 username "VSTS" 
-                //The VSTS build system will use the "VSTS_ENV_ACCCESS_TOKEN" to authenticate to VSTS feeds 
+                //The VSTS build system will use the "VSTS_ENV_ACCESS_TOKEN" to authenticate to VSTS feeds 
                 password System.getenv("VSTS_ENV_ACCESS_TOKEN") != null ? System.getenv("VSTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
             } 
         } 
@@ -104,7 +104,7 @@ repositories {
         url 'https://{your-VSTS-account-name-here}.pkgs.visualstudio.com/_packaging/{your-VSTS-project-name-here}' 
         credentials { 
             username "VSTS" 
-            //The VSTS build system will use the "VSTS_ENV_ACCCESS_TOKEN" to authenticate to VSTS feeds 
+            //The VSTS build system will use the "VSTS_ENV_ACCESS_TOKEN" to authenticate to VSTS feeds 
             password System.getenv("VSTS_ENV_ACCESS_TOKEN") != null ? System.getenv("VSTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
         } 
     } 

@@ -1,5 +1,5 @@
 ---
-title: Use Team Build with Maven Package Mangement feeds | Visual Studio Team Services
+title: Use Team Build with Maven Package Management feeds | Visual Studio Team Services
 description: Learn about how you can use Maven artifacts with Team Build in Visual Studio Team Services or Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-artifacts

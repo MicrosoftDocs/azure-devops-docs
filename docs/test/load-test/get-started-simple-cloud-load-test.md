@@ -1,6 +1,6 @@
 ---
 title: URL-based load testing with VSTS
-description: Get app performance data when you load testusing the features of the Test hub in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Get app performance data when you load test using the features of the Test hub in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: 65E96414-756B-4BD9-92C3-4DDB4C7A6B57
 ms.prod: devops
 ms.technology: devops-test
