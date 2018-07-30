@@ -2691,6 +2691,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/git/concepts/history-simplification.md",
+      "redirect_url": "/vsts/articles/git-log-history-simplification",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/delete-team-project.md",
       "redirect_url": "/vsts/organizations/projects/delete-project",
       "redirect_document_id": false
