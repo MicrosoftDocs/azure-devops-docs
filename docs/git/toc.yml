@@ -65,8 +65,6 @@
   items:
   - name: History in Git
     href: concepts/history.md
-  - name: History simplification
-    href: concepts/history-simplification.md
   - name: Branch organization
     href: concepts/git-branching-guidance.md
   - name: Pull requests
