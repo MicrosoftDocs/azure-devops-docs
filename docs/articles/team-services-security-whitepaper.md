@@ -7,7 +7,7 @@ ms.technology: devops-whitepapers
 ms.author: mlearned
 author: mlearned
 ms.manager: douge
-ms.date: 07/19/2018
+ms.date: 07/30/2018
 monikerRange: 'vsts'
 ---
 
@@ -168,7 +168,8 @@ incorrect, the sentiment is right.  The good news is that we regularly
 practice restoring various data sets from backup.  The geo-redundant 
 storage that we get from Azure is tested regularly. In addition, from 
 time to time we restore from backups to recover from human error, 
-such as when a customer has inadvertently deleted  a VSTS team project. While our turnaround time sometimes takes more than day, we have always 
+such as when a customer has inadvertently deleted a VSTS team project. We have the capability of restoring your account data to any point in time over the last 30 days.
+While our turnaround time sometimes takes more than day, we have always 
 been able to restore the customer's data given enough time.  Since 
 there are many permutations of disaster and data corruption 
 scenarios, we continue to plan and execute new tests on a regular basis 
@@ -494,7 +495,7 @@ achieved ISO 27001:2013, HIPAA (Health Insurance Portability and Accountability 
  BAA (Business Associate Agreeement), EU Model Clauses, SOC 1 Type 2 and SOC 2 Type 2 certifications. 
 The SOC audit for VSTS covers controls for data security, availability, 
 processing integrity, and confidentiality. VSTS' SOC reports are available via the [Microsoft's Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20/%20SSAE%2016%20Reports). 
-If you dont have access to Microsoft's Service Trust Portal, you can contact VSTSSOCReports@microsoft.com to request a copy of VSTS' SOC Reports.
+If you dont have access to Microsoft's Service Trust Portal, you can contact [VSTSSOCReports](mailto:VSTSSOCReports@microsoft.com) to request a copy of VSTS' SOC Reports.
 
 
 ## Steps you can take
