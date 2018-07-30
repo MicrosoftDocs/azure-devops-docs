@@ -134,7 +134,7 @@ sources.
 * [TFVC, Git, and GitHub](#tfvc)
 * [Jenkins](#jenkins)
 * [Azure Container Registry, Docker, and Kubernetes](#container)
-* [NuGet, npm, and Maven with Package Management](#nuget)
+* [NuGet and npm with Package Management](#nuget)
 * [External or on-premises TFS](#externaltfs)
 * [TeamCity](#teamcity)
 * [Other sources](#others)
@@ -304,16 +304,16 @@ The following features are available when using Azure Container Registry, Docker
 
 <a name="nuget"></a>
 
-<h3 id="nugetsource">NuGet, npm, and Maven with Package Management</h3>
+<h3 id="nugetsource">NuGet and npm packages from Package Management</h3>
 
-To integrate with NuGet, npm, or Maven, you must first install the
+To integrate with NuGet, or npm (Maven is not currently supported), you must first install the
 [Package Management](https://docs.microsoft.com/en-us/vsts/package/install)
-extension from Marketplace. For more information, see
+extension from the Marketplace. For more information, see
 [Package Management Overview](https://docs.microsoft.com/en-us/vsts/package/overview).
 
 Scenarios where you may want to consume Package Management artifacts are:
 
-1.	You have your application build (such as TFS, VSTS, TeamCity, Jenkins) published as a package (NuGet, npm, or Maven) to Package Management and you want to consume the artifact in a release.
+1.	You have your application build (such as TFS, VSTS, TeamCity, Jenkins) published as a package (NuGet or npm) to Package Management and you want to consume the artifact in a release.
 2.	As part of your application deployment, you need additional packages stored in Package Management.
 
 When you link a Package Management artifact to your release pipeline, you must select the Feed, Package, and the Default version for the package.

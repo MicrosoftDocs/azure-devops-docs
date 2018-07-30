@@ -21,6 +21,8 @@
 | <code>vso.gallery_acquire</code> | Marketplace (acquire) | Grants read access and the ability to acquire items. |  |
 | <code>vso.gallery_publish</code> | Marketplace (publish) | Grants read access and the ability to upload, update, and share items. | vso.gallery_manage |
 | <code>vso.gallery_manage</code> | Marketplace (manage) | Grants read access, the ability to publish and manage items and publishers. |  |
+| <code>vso.graph_write</code> | Graph (read and write) | Grants the ability to read user, group, scope, and group membership information, and to add users and groups and manage group memberships. |  |
+| <code>vso.graph</code> | Graph (read) | Grants the ability to read users, group, scope, and group membership information. |  |
 | <code>vso.identity</code> | Identity (read) | Grants the ability to read identities and groups. |  |
 | <code>vso.notification</code> | Notifications (read) | Provides read access to subscriptions and event metadata, including filterable field values. | vso.notification_write<br>vso.notification_manage |
 | <code>vso.notification_write</code> | Notifications (write) | Provides read/write access to subscriptions and read access to event metadata, including filterable field values. | vso.notification_manage |
