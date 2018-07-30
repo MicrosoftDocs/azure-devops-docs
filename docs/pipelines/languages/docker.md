@@ -75,12 +75,16 @@ https://github.com/adventworks/dotnetcore-sample
 1. Remove the **Publish artifact** task.
 
 1. Add **Docker** task after the **.NET Core Publish** task and configure it as follows to build an image using the **Dockerfile** in the repository:
-  * **Action:** `Build an image`
+   * **Action:** `Build an image`
+   * **Container registry type:** `Container registry`
+   * **Docker registry connection:** Select `New` and create a connection to your Docker hub registry.
 
 1. Add another **Docker** task and configure it as follows to push the image to your Docker hub registry:
-  * **Action:** `Push an image`
-  * **Container registry type:** `Container registry`
-  * **Docker registry connection:** Select `New` and create a connection to your Docker hub registry.
+   * **Action:** `Push an image`
+   * **Container registry type:** `Container registry`
+   * **Docker registry connection:** Select the same connection to your Docker hub registry.
+   * **Qualify Image Name:** Clear this check box
+   * **Image Name:** `[your-Docker-ID]/$(Build.Repository.Name):$(Build.BuildId)`  
 
 Save the pipeline and queue a build to see it in action.
 
