@@ -27,7 +27,7 @@ By default, Team Foundation Server (TFS) limits the size of work item attachment
   
      `http://localhost:8080/tfs/DefaultCollection/WorkItemTracking/v1.0/ConfigurationSettingsService.asmx?op=SetMaxAttachmentSize`  
   
-     If the team project resides on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
+     If the project resides on a different project collection, specify the name of the collection in place of *DefaultCollection*.  
   
 4.  Enter the size in bytes, and then choose **Invoke**.  
   

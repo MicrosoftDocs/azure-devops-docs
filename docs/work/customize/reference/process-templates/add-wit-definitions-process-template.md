@@ -30,7 +30,7 @@ The [default process templates](../../../work-items/guidance/choose-process.md) 
   
 Also, the task to upload the definition files for link types must precede the task to upload the type definitions for WITs. For more information, see [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   
-After a team project is created using the process template, you can add, remove, rename, and change the definitions of WITs by using the **witadmin** command-line tool. For more information, see [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md).  
+After a project is created using the process template, you can add, remove, rename, and change the definitions of WITs by using the **witadmin** command-line tool. For more information, see [Import, export, and manage work item types](../witadmin/witadmin-import-export-manage-wits.md).  
   
 <a name="create"></a> 
 ##  Define a WIT   

@@ -25,7 +25,7 @@ Risk implies that actual outcomes may vary, sometimes significantly, from desire
 ##  <a name="Defining"></a> Define risks  
  Thinking of risks in this manner is sometimes referred to as the event-driven risk model. This implies that a list of risks is a list of potential future events. Each risk describes some event that may occur in the future. It may include some information about the probability of occurrence. It should include a description of the impact that such an occurrence would have on the project plan. It may also include a description of ways to reduce the probability of occurrence and ways to mitigate the impact of occurrence. It may also include suggested forms of recovery after an occurrence.  
   
- For each risk that is identified, create a risk work item in the team project.  
+ For each risk that is identified, create a risk work item in the project.  
   
 ##  <a name="WorkItem"></a> The risk work item  
  The Risk Management (RSKM) process area in the CMMI focuses on the management of these event-related risks. MSF for CMMI Process Improvement and Visual Studio Team Foundation Server make this easier by providing the risk work item type. By using the risk work item type, you can define and track a list of risks. It provides fields to describe the risk, the probability of occurrence. It also provides fields for actions that can be taken to reduce the probability of occurrence, mitigate the impact, and implement contingency plans for recovery in the event of an occurrence.  

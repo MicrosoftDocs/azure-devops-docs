@@ -24,7 +24,7 @@ ms.date: 01/12/2017
  
  **Requirements**  
   
- To perform the procedures in this topic, your **Administer Project Server integration** permission for the team project collection must be set to **Allow**. Also, the service account for TFS must be granted the necessary permissions to interact with the instance of Project Web Access or Project Web App (PWA) that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
+ To perform the procedures in this topic, your **Administer Project Server integration** permission for the project collection must be set to **Allow**. Also, the service account for TFS must be granted the necessary permissions to interact with the instance of Project Web Access or Project Web App (PWA) that will participate in data synchronization. For more information, see [Assign permissions](assign-permissions-support-tfs-project-server-integration.md).  
   
 ##  <a name="options"></a> Recommended update sequence  
  To update an existing deployment to the latest version of Visual Studio Team Foundation Server, perform the following actions.  

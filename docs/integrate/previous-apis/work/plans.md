@@ -22,7 +22,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/work/plans?api-version=
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name or ID of a team project.
+| project   | string  | | Name or ID of a project.
 | Query
 | api-version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -39,7 +39,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/work/plans/{id}?api-ver
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name or ID of a team project.
+| project   | string  | | Name or ID of a project.
 | id        | string  || ID of the specific plan.
 | Query
 | api-version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -56,7 +56,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/work/plans?api-version
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name or ID of a team project.
+| project   | string  | | Name or ID of a project.
 | Query
 | api-version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -74,7 +74,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/work/plans{id}?api-vers
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name or ID of a team project.
+| project   | string  | | Name or ID of a project.
 | id        | string  || ID of the specific plan.
 | Query
 | api-version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -91,7 +91,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/work/plans/{id}?api-
 |:----------|:--------|:------------ |:------------------------------
 | URL
 | instance  | string  | | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project   | string  | | Name or ID of a team project.
+| project   | string  | | Name or ID of a project.
 | id        | string  || ID of the specific plan.
 | Query
 | api-version | string  | | [Version](../../concepts/rest-api-versioning.md) of the API to use.

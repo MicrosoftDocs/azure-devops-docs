@@ -26,7 +26,7 @@ such as working with your backlog, work items, and queries
 who also get Basic features, and in some cases, additional features with specific extensions, such as 
 [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) 
 
-[Need more users with Basic features or Visual Studio subscriptions?](../../billing/buy-basic-access-add-users.md)
+[Need more users with Basic features or Visual Studio subscriptions?](../billing/buy-basic-access-add-users.md)
 
 > [!NOTE]
 > You can add people to team projects, 
@@ -71,7 +71,7 @@ and **Remove from organization** (deletes user).
 
 ## Related notes
 
-- [Change number of paid extension users](../../billing/change-number-paid-extension-users.md)
+- [Change number of paid extension users](../billing/change-number-paid-extension-users.md)
 - [Connect to a team project](../../organizations/projects/connect-to-projects.md)
 - [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)

@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/dev15-version-header.md)]    
 
-There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the team project or work item type when copying/cloning a work item. 
+There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the project or work item type when copying/cloning a work item. 
 
 The second copy function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
 
@@ -46,7 +46,7 @@ Copy a work item when you want to create another instance of it and optionally c
 
 	<img src="_img/copy-wi-copy-clone-ts.png" alt="VSTS, web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
 
-2. Choose the team project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
+2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
 	<img src="_img/copy-wi-copy-clone-ts-dialogue.png" alt="VSTS, web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
 
@@ -59,7 +59,7 @@ Copy a work item when you want to create another instance of it and optionally c
 
 	<img src="_img/copy-wi-copy-clone-2017.png" alt="TFS 2017, web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
 
-2. Choose the team project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
+2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
 	<img src="_img/copy-wi-copy-clone-2017-dialogue.png" alt="TFS 2017, web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
 ::: moniker-end
@@ -70,7 +70,7 @@ Copy a work item when you want to create another instance of it and optionally c
 
 	<img src="_img/copy-wi-copy-clone-2015.png" alt="TFS 2015, web portal, user story work item form, click copy-clone icon" style="border: 1px solid #CCCCCC;" /> 
 
-2. Choose the team project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type. 
+2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type. 
 ::: moniker-end
 
 
@@ -81,7 +81,7 @@ Copy a work item when you want to create another instance of it and optionally c
 
 	<img src="_img/IC712055.png" alt="TFS 2013, web portal, user story work item form, click copy-clone icon" style="border: 1px solid #CCCCCC;" /> 
 
-2. Choose the team project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type.  
+2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type.  
 ::: moniker-end
 
 ::: moniker range="vsts"
@@ -143,7 +143,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
 ## Paste the contents into your email client
 
-Paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the team project or area node for those work items. 
+Paste the contents of the clipboard into your email client or other application. To open a linked work item, requires users to have read access to the project or area node for those work items. 
 
 The formatted table contains a link to each work item included in your selected results list. A link to a query that will open only those work items selected is also provided. 
 

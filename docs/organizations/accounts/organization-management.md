@@ -60,9 +60,9 @@ Or if you don't want to use a credential manager, you can
 ## Add users and assign access
 
 To share work with others,
-[add users and assign access](add-organization-users-from-user-hub.md).add users and assign access
+[add users and assign access](add-organization-users-from-user-hub.md).
 That way, you control the access that each user gets.
-Or [add users to your team project](add-team-members-vs.md),
+Or [add users to your project](add-team-members-vs.md),
 and let VSTS assign the next available access to them.
 
 ## Try extensions for free
@@ -71,13 +71,13 @@ Help your team do more with [Marketplace extensions](https://marketplace.visuals
 For example, VSTS organization owners can
 try the Test Manager extension free for 90 days.
 During the trial, all users with Basic access can
-[try Test Manager for free](../../billing/try-additional-features-vs.md).
+[try Test Manager for free](../billing/try-additional-features-vs.md).
 
 ## Set up billing
 
 If you need more than the free users and amounts
 of services included with your organization,
-[set up billing for your organization](../../billing/set-up-billing-for-your-organization-vs.md).
+[set up billing for your organization](../billing/set-up-billing-for-your-organization-vs.md).
 You can then pay for more users with Basic access,
 buy more services, and purchase extensions for your organization.
 

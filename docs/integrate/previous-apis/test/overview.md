@@ -43,7 +43,7 @@ A [test run](./runs.md) consists of a set of test points. The [results](./result
 ## Common tasks
 
 ### Create a test plan
-1. Get the [team project](../tfs/projects.md) that you're working in.
+1. Get the [project](../tfs/projects.md) that you're working in.
 2. Create the [test plan](./plans.md#createatestplan).
 
 ### Create a test suite with test cases

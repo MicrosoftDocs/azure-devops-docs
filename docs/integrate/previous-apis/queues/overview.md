@@ -13,7 +13,7 @@ ms.date: 08/04/2016
 ---
 # Agent queues
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
-An Agent queue provides visibility to an agent pool from within a team project.
+An Agent queue provides visibility to an agent pool from within a project.
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
 ## Get a list of queues
@@ -24,7 +24,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/distributedtask/queues?
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | queueName   | string | Filters queues whose names start with this prefix.
@@ -39,7 +39,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/distributedtask/queues/
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | queueId   | int    | The queue id.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -54,7 +54,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/distributedTask/queues
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 [!code-REST [POST__distributedtask_queues_json](./_data/POST__distributedtask_queues.json)]
@@ -67,7 +67,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/distributedtask/queu
 |:----------|:-------|:------------
 | URL
 | instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project       | string   | [Team project](../tfs/projects.md) ID or name.
+| project       | string   | [Project](../tfs/projects.md) ID or name.
 | queueId   | int    | The queue id.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

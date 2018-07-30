@@ -20,7 +20,7 @@ ms.date: 04/14/2017
 > [!IMPORTANT]  
 > **Feature availability:** Team fields are only supported for on-premises TFS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
-The default configuration for team projects configures each team as an area path. For information on adding a team, see [Multiple teams](../scale/multiple-teams.md).
+The default configuration for projects configures each team as an area path. For information on adding a team, see [Multiple teams](../scale/multiple-teams.md).
 
 If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
@@ -28,14 +28,14 @@ Many features available through the web portal for TFS are scoped to a team. Tea
 
 
 
-When you customize your team project to support team fields, the Team field tab appears in the administration page for the team project and each team.
+When you customize your project to support team fields, the Team field tab appears in the administration page for the project and each team.
 
 [!INCLUDE [temp](../_shared/image-differences.md)] 
 
-<img src="_img/use-team-fields-instead-area-paths-support-teams/IC686847.png" alt="Web portal, team project admin context, Team field page added" style="border: 2px solid #C3C3C3;" />
+<img src="_img/use-team-fields-instead-area-paths-support-teams/IC686847.png" alt="Web portal, project admin context, Team field page added" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]    
->This topic describes how to reconfigure a team project that is based on the Scrum process template. If your team project is based on another process template and that template is compatible with TFS 2013 or later version, you can make similar changes. Even if you've used the default configuration, you can reconfigure your team project. 
+>This topic describes how to reconfigure a project that is based on the Scrum process template. If your project is based on another process template and that template is compatible with TFS 2013 or later version, you can make similar changes. Even if you've used the default configuration, you can reconfigure your project. 
 
 
 <a id="globallist">  </a>  
@@ -45,7 +45,7 @@ When you customize your team project to support team fields, the Team field tab 
 
 [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
 
-0.  Export the global list for the team project collection.
+0.  Export the global list for the project collection.
 
         witadmin exportgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 
@@ -69,7 +69,7 @@ When you customize your team project to support team fields, the Team field tab 
 
         witadmin importgloballist /collection:"http://MyServer:8080/tfs/DefaultCollection" /f:Directory/globallist.xml"
 
-    Note that global lists are defined for all team projects within a team project collection.
+    Note that global lists are defined for all projects within a project collection.
 
 
 
@@ -165,9 +165,9 @@ Add a custom team field to all work item types (WITs) that are included in the F
 <a id="config-teamfield">  </a>  
 ### 4. Configure the Team field for each team
 
-Create and configure teams in the web portal to both match and reference the Team field. Each team, including the team project, Fabrikam Fiber Website, must be configured with a default value for the Team field.
+Create and configure teams in the web portal to both match and reference the Team field. Each team, including the project, Fabrikam Fiber Website, must be configured with a default value for the Team field.
 
-1.  Refresh your web portal, and from the team project home page, open a product backlog item, PBI or user story. Verify that the changes appear as you expect and that you can select a team.
+1.  Refresh your web portal, and from the project home page, open a product backlog item, PBI or user story. Verify that the changes appear as you expect and that you can select a team.
 
     <img src="_img/use-team-fields-instead-area-paths-support-teams/IC649971.png" alt="Open PBI and confirm the Team field" style="border: 2px solid #C3C3C3;" />
 
@@ -177,17 +177,17 @@ Create and configure teams in the web portal to both match and reference the Tea
 
     If you have previously created teams, they will continue to exist. You can rename them as needed.
 
-3.  Open the product backlog or the task board for the team project. You'll see an error indicating you'll need to select a team area.
+3.  Open the product backlog or the task board for the project. You'll see an error indicating you'll need to select a team area.
 
     ![Select team's areas link on Backlogs page in the web portal](_img/use-team-fields-instead-area-paths-support-teams/IC686839.png)
 
 4.  On the administration page, open the **Team field** tab and select the value or values from the global list that you want to associate with the default team.
 
-    ![Unconfigured Team field for a team project](_img/use-team-fields-instead-area-paths-support-teams/IC686842.png)
+    ![Unconfigured Team field for a project](_img/use-team-fields-instead-area-paths-support-teams/IC686842.png)
 
     To support rollup of all teams to the default team, all teams are selected.
 
-    ![Team field page for team project admin context](_img/use-team-fields-instead-area-paths-support-teams/IC686846.png)
+    ![Team field page for project admin context](_img/use-team-fields-instead-area-paths-support-teams/IC686846.png)
 
 5.  Next, configure each team within the hierarchy of teams with the Team field value that matches their name.
 
@@ -197,7 +197,7 @@ Create and configure teams in the web portal to both match and reference the Tea
 
 ### Assign work to teams using the Team field
 
-From the product backlog page for the team project, you can create backlog items and assign them to teams by opening each item and selecting the Team field. Assigned items will show up on the team's backlog, and they can then work with them using their sprint backlog and task board.
+From the product backlog page for the project, you can create backlog items and assign them to teams by opening each item and selecting the Team field. Assigned items will show up on the team's backlog, and they can then work with them using their sprint backlog and task board.
 
 <img src="_img/use-team-fields-instead-area-paths-support-teams/IC778365.png" alt="Work from a common backlog" style="border: 2px solid #C3C3C3;" />
 
@@ -212,18 +212,18 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 - [ProcessConfiguration XML element reference](reference/process-configuration-xml-element.md) 
 
 
-### Q: Why don't teams that I add to a team project show up in the Team field?
+### Q: Why don't teams that I add to a project show up in the Team field?
 
-**A:** Teams that you [add to a team project from the Overview page of the team project](../scale/multiple-teams.md), will not show up in the pick list of the custom field that you created to capture teams. You must update the global list that you created in [Create a global list to manage teams](#globallist) for new teams to appear.
+**A:** Teams that you [add to a project from the Overview page of the project](../scale/multiple-teams.md), will not show up in the pick list of the custom field that you created to capture teams. You must update the global list that you created in [Create a global list to manage teams](#globallist) for new teams to appear.
 
 
-### Q: How do I configure features for an upgraded team project that has been customized to use team fields?
+### Q: How do I configure features for an upgraded project that has been customized to use team fields?
 
-**A:** Before you can [configure features for an upgraded team project](configure-features-after-upgrade.md) that you have customized to use team fields, you'll need to customize the latest process template with the same changes outlined in this topic. Here are the basic steps:
+**A:** Before you can [configure features for an upgraded project](configure-features-after-upgrade.md) that you have customized to use team fields, you'll need to customize the latest process template with the same changes outlined in this topic. Here are the basic steps:
 visualstudio.microsoft.com
 1.  Upgrade TFS [to the latest version](https://visualstudio.microsoft.com/downloads).
 
-2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your team project.
+2.  [Download the process template](../work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your project.
 
   > [!IMPORTANT]  
   >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 

@@ -1532,12 +1532,17 @@
     },
     {
       "source_path": "docs/connect/person-centric-features.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/connect/user-focused-features.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/user-guide/account-home-pages.md",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
       "redirect_document_id": false
     },
     {
@@ -1912,17 +1917,17 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/connect-to-visual-studio-online.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/connect-to-visual-studio-online-vs.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/connect-to-visual-studio-team-services.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
@@ -2672,7 +2677,7 @@
     },
     {
       "source_path": "docs/connect-to-vs.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
@@ -5222,12 +5227,12 @@
     },
     {
       "source_path": "docs/connect/account-home-pages.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/connect/connect-team-projects.md",
-      "redirect_url": "/vsts/user-guide/connect-team-projects",
+      "redirect_url": "/vsts/organizations/projects/connect-to-projects",
       "redirect_document_id": false
     },
     {
@@ -5312,7 +5317,7 @@
     },
     {
       "source_path": "docs/work/productivity/productivity-tips.md",
-      "redirect_url": "/vsts/user-guide/account-home-pages",
+      "redirect_url": "/vsts/project/navigation/work-across-projects",
       "redirect_document_id": false
     },
     {
@@ -7637,7 +7642,7 @@
     },
     {
       "source_path": "docs/accounts/account-management.md",
-      "redirect_url": "/vsts/organizations/accounts/account-management",
+      "redirect_url": "/vsts/organizations/accounts/organization-management",
       "redirect_document_id": false
     },
     {
@@ -7652,7 +7657,7 @@
     },
     {
       "source_path": "docs/accounts/add-account-users-from-user-hub.md",
-      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-organization-users-from-user-hub",
       "redirect_document_id": false
     },
     {
@@ -7682,12 +7687,12 @@
     },
     {
       "source_path": "docs/accounts/change-account-location.md",
-      "redirect_url": "/vsts/organizations/accounts/change-account-location",
+      "redirect_url": "/vsts/organizations/accounts/change-organization-location",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/change-account-ownership-vs.md",
-      "redirect_url": "/vsts/organizations/accounts/change-account-ownership-vs",
+      "redirect_url": "/vsts/organizations/accounts/change-organization-ownership-vs",
       "redirect_document_id": false
     },
     {
@@ -7697,12 +7702,12 @@
     },
     {
       "source_path": "docs/accounts/connect-account-to-aad.md",
-      "redirect_url": "/vsts/organizations/accounts/connect-account-to-aad",
+      "redirect_url": "/vsts/organizations/accounts/connect-organization-to-aad",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/create-account-msa-or-work-student.md",
-      "redirect_url": "/vsts/organizations/accounts/create-account-msa-or-work-student",
+      "redirect_url": "/vsts/organizations/accounts/create-organization-msa-or-work-student",
       "redirect_document_id": false
     },
     {
@@ -7712,7 +7717,7 @@
     },
     {
       "source_path": "docs/accounts/delete-account-users.md",
-      "redirect_url": "/vsts/organizations/accounts/delete-account-users",
+      "redirect_url": "/vsts/organizations/accounts/delete-organization-users",
       "redirect_document_id": false
     },
     {
@@ -7727,12 +7732,12 @@
     },
     {
       "source_path": "docs/accounts/delete-your-vsts-account.md",
-      "redirect_url": "/vsts/organizations/accounts/delete-your-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/delete-your-vsts-organization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/accounts/disconnect-account-from-aad.md",
-      "redirect_url": "/vsts/organizations/accounts/disconnect-account-from-aad",
+      "redirect_url": "/vsts/organizations/accounts/disconnect-organization-from-aad",
       "redirect_document_id": false
     },
     {
@@ -7757,7 +7762,7 @@
     },
     {
       "source_path": "docs/accounts/faq-change-account-ownership.md",
-      "redirect_url": "/vsts/organizations/accounts/faq-change-account-ownership",
+      "redirect_url": "/vsts/organizations/accounts/faq-change-organization-ownership",
       "redirect_document_id": false
     },
     {
@@ -7767,7 +7772,7 @@
     },
     {
       "source_path": "docs/accounts/faq-create-account.md",
-      "redirect_url": "/vsts/organizations/accounts/faq-create-account",
+      "redirect_url": "/vsts/organizations/accounts/faq-create-organization",
       "redirect_document_id": false
     },
     {
@@ -7777,7 +7782,7 @@
     },
     {
       "source_path": "docs/accounts/faq-delete-restore-vsts-account.md",
-      "redirect_url": "/vsts/organizations/accounts/faq-delete-restore-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/faq-delete-restore-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -7827,7 +7832,7 @@
     },
     {
       "source_path": "docs/accounts/recover-your-vsts-account.md",
-      "redirect_url": "/vsts/organizations/accounts/recover-your-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/recover-your-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -7842,7 +7847,7 @@
     },
     {
       "source_path": "docs/accounts/rename-vsts-account.md",
-      "redirect_url": "/vsts/organizations/accounts/rename-vsts-account",
+      "redirect_url": "/vsts/organizations/accounts/rename-vsts-organization",
       "redirect_document_id": false
     },
     {
@@ -7912,7 +7917,7 @@
     },
     {
       "source_path": "docs/organizations/settings/set-user-preferences.md",
-      "redirect_url": "/vstsorganizations/settings/set-your-preferences",
+      "redirect_url": "/vst/sorganizations/settings/set-your-preferences",
       "redirect_document_id": false
     },
     {
@@ -7984,6 +7989,101 @@
       "source_path": "docs/user-guide/work-web-portal.md",
       "redirect_url": "/vsts/project/navigation/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/billing/csp/buy-csp-vsts.md",
+      "redirect_url": "/vsts/organizations/billing/csp/buy-csp-vsts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/csp/buy-vs-app-center.md",
+      "redirect_url": "/vsts/organizations/billing/csp/buy-vs-app-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/csp/set-up-csp-customer.md",
+      "redirect_url": "/vsts/organizations/billing/csp/set-up-csp-customer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/add-backup-billing-managers.md",
+      "redirect_url": "/vsts/organizations/billing/add-backup-billing-managers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/buy-access-tfs-test-hub.md",
+      "redirect_url": "/vsts/organizations/billing/buy-access-tfs-test-hub",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/buy-basic-access-add-users.md",
+      "redirect_url": "/vsts/organizations/billing/buy-basic-access-add-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/buy-load-testing-vs.md",
+      "redirect_url": "/vsts/organizations/billing/buy-load-testing-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/buy-more-build-vs.md",
+      "redirect_url": "/vsts/organizations/billing/buy-more-build-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/change-azure-subscription.md",
+      "redirect_url": "/vsts/organizations/billing/change-azure-subscription",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/change-number-paid-extension-users.md",
+      "redirect_url": "/vsts/organizations/billing/change-number-paid-extension-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/faq-extension-trials.md",
+      "redirect_url": "/vsts/organizations/billing/faq-extension-trials",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/index.md",
+      "redirect_url": "/vsts/organizations/billing/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/overview.md",
+      "redirect_url": "/vsts/organizations/billing/overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/reduce-cancel-paid-vsts-users.md",
+      "redirect_url": "/vsts/organizations/billing/reduce-cancel-paid-vsts-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/set-up-billing-for-your-organization-vs.md",
+      "redirect_url": "/vsts/organizations/billing/set-up-billing-for-your-organization-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/try-additional-features-vs.md",
+      "redirect_url": "/vsts/organizations/billing/try-additional-features-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/vsts-billing-faq.md",
+      "redirect_url": "/vsts/organizations/billing/vsts-billing-faq",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/xamarin-univ.md",
+      "redirect_url": "/vsts/organizations/billing/xamarin-univ",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/billing/set-up-billing-for-your-account.md",
+      "redirect_url": "/vsts/organizations/billing/set-up-billing-for-your-organization",
+      "redirect_document_id": true
     }
   ]
 }

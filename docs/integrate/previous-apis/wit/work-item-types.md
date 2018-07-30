@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/workItemTypes?api-v
 |:--------------|:----------|:---------------------------
 | URL
 | instance      | string    | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project 		| string 	| Name or ID of a team project that contains the work item types
+| project 		| string 	| Name or ID of a project that contains the work item types
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -45,7 +45,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/wit/workItemTypes/{name
 |:---------|:-------|:---------------------------
 | URL
 | instance | string	| [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
-| project  | string | Name or ID of a team project that contains the work item types
+| project  | string | Name or ID of a project that contains the work item types
 | name 	   | string | Name of the work item type
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

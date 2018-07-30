@@ -15,7 +15,7 @@ Enable live updates to automatically refresh your Kanban board when changes occu
 ::: moniker-end 
 
 
-# [Vertical navigation](#tab/vertical)
+# [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
 
@@ -31,7 +31,7 @@ Choose the ![](/vsts/_img/icons/view-options-icon.png) view options icon and mov
 ::: moniker-end
 
 
-# [Horizontal navigation](#tab/horizontal)
+# [Previous navigation](#tab/previous-nav)
 
 Choose the ![](/vsts/work/_img/icons/live-updates-icon.png) **Live updates** icon.  
 

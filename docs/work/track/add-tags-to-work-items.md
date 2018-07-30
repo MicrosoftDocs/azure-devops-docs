@@ -185,7 +185,7 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
 
 ## Related articles
 
-Tags are a shared resource, they're associated with a team project and not a team. If your team project contains multiple teams, all teams will add to and work from the same set of tags. 
+Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags. 
 - [Use the query editor to list and manage queries](using-queries.md) 
 - [Show tags on cards](../customize/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
@@ -206,7 +206,7 @@ To learn more about filtering, see [Filter your backlog or board](../backlogs/fi
 -->
 
 ### Limits on number of tags
-While no hard limit exists, creating more than 100K tags for a team project collection can negatively impact performance. Also, the auto-complete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
+While no hard limit exists, creating more than 100K tags for a project collection can negatively impact performance. Also, the auto-complete dropdown menu for the tag control displays a maximum of 200 tags. When more than 200 tags are defined, begin typing to cause the tag control to display relevant tags.  
 
 You can't assign more than 100 tags to a work item or you'll receive the following message:  
 

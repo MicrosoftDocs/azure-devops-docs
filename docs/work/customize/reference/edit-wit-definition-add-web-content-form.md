@@ -15,7 +15,7 @@ ms.date: 02/14/2017
 <p><b>TFS 2017 (Hosted XML) | TFS 2015 </b></p>
 
 > [!IMPORTANT]  
-> This topic applies to team project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
+> This topic applies to project customization for the On-premises XML process model. For the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../../organizations/settings/work/customize-process.md).
 >
 > For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
 
@@ -138,7 +138,7 @@ For information about the syntax structure of the elements used to add Web conte
 <a name="Verify"></a> 
 ## Verify the Web page or HTML content appears in the form  
   
-1.  In Team Explorer, open Work Items for the team project that contains the WIT definition that you modified, and choose ![Refresh](_img/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
+1.  In Team Explorer, open Work Items for the project that contains the WIT definition that you modified, and choose ![Refresh](_img/icon_refreshnode.png "Icon_refreshNode") **Refresh**.  
   
      The latest updates are downloaded from the server, including the changes that you just imported. Wait several seconds until the **Work Items** node is refreshed. Nodes that are still loading display the word **working**.  
   
