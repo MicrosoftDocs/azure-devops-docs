@@ -27,7 +27,7 @@ The build agent must have the following capability:
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/MavenV2.md)]
+[!INCLUDE [temp](../_shared/yaml/MavenV3.md)]
 ::: moniker-end
 
 ## Arguments
