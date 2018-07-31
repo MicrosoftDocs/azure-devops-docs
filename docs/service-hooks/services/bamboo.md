@@ -26,7 +26,7 @@ or when a VSTS build finishes.
 
 2. If you use Bamboo on-premises, [enable HTTPS](https://confluence.atlassian.com/display/BAMBOO/Advanced+actions) on your Bamboo server.
 
-3. If your project uses Team Foundation version control and not Git, install the [TFS respository add-on](https://marketplace.atlassian.com/search?q=tfs) for Bamboo.
+3. If your project uses Team Foundation version control and not Git, install the [TFS repository add-on](https://marketplace.atlassian.com/search?q=tfs) for Bamboo.
 
 ## Enable VSTS basic authentication
 1. If you haven't already, enable [alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) in your VSTS profile.
