@@ -138,7 +138,7 @@ Open any admin page by choosing it's name. Choose or hover over the ![](../../_i
 ::: moniker range="vsts"
 ## Open Admin settings 
 
-Account owners and members of the Project Collection Administators group configure resources for all projects or the entire organization, including adding users, from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
+Account owners and members of the Project Collection Administrators group configure resources for all projects or the entire organization, including adding users, from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ Account owners and members of the Project Collection Administators group configu
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 ## Open Admin settings 
 
-Account owners and members of the Project Collection Administators group configure resources for all projects or the entire project collection from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
+Account owners and members of the Project Collection Administrators group configure resources for all projects or the entire project collection from the Admin settings pages. This includes managing permissions at the organization-level. For an overview of all admin settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
 ::: moniker-end
 
