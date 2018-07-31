@@ -1478,7 +1478,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td>[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
-            <td>Team Room Deprecation Annoucement</td>
+            <td>Team Room Deprecation Announcement</td>
             <td>[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)</td>
         </tr>
         <tr>
