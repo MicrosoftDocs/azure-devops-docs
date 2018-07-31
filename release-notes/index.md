@@ -232,7 +232,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Leave account</td><td>N/A</td></tr>
         <tr>
             <td rowspan="22">[24 Jan 2018](2018/jan-24-vsts.md)</td>
-            <td>View Analystics Widgets as a Stakeholder</td>
+            <td>View Analytics Widgets as a Stakeholder</td>
             <td>*2019*</td>
         </tr>
         <tr><td>Integrate Power BI with VSTS Analytics using new views</td><td>*2019*</td></tr>
