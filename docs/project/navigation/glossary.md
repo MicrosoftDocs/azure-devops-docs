@@ -49,7 +49,7 @@ An interactive, electronic sign board that supports visualization of the flow of
 
 ## Git repository
 
-A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../git/index.md).  
+A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../repos/git/index.md).  
 
 > [!NOTE]   
 > Git in Visual Studio and VSTS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with VSTS.
@@ -76,7 +76,7 @@ Pipelines are artifacts that you define to run concurrent builds or deploy concu
 
 ## Repositories
 
-A source control folder or container you configure to help you track file changes in. You can have any number of repository on your computer, each stored in their own folder. Each repository is independent, so changes saved in one repository don't affect the contents of another. Learn more: [Create a new Git repo](../../git/tutorial/creatingrepo.md).    
+A source control folder or container you configure to help you track file changes in. You can have any number of repository on your computer, each stored in their own folder. Each repository is independent, so changes saved in one repository don't affect the contents of another. Learn more: [Create a new Git repo](../../repos/git/creatingrepo.md).    
 
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 

@@ -19,14 +19,14 @@ monikerRange: 'vsts'
 
 After you create a new account and team project in VSTS, you can begin sharing your code with others. 
 
-To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../git/tutorial/commits.md) and [branches](../git/tutorial/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
+To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team. 
 
 ## Install Git command line tools 
 
 0. Install one of the following Git command line tools:
 
-  - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../git/set-up-credential-managers.md#windows)
-  - To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](../git/set-up-credential-managers.md#macos-and-linux)
+  - To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](../repos/git/set-up-credential-managers.md#windows)
+  - To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linix](../repos/git/set-up-credential-managers.md#macos-and-linux)
 
 ## Clone the repo to your computer
 
@@ -41,7 +41,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
   ```
   git clone https://contoso-ltd.visualstudio.com/MyFirstProject/_git/contoso-demo
   ```
-  Git downloads a copy of the code, including all [commits](../git/tutorial/commits.md) and [branches](../git/tutorial/branches.md) from the repo, into a new folder for you to work with.
+  Git downloads a copy of the code, including all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) from the repo, into a new folder for you to work with.
 
   Keep this command window open, as you'll use it in the following steps.
 
@@ -73,11 +73,11 @@ In this step, we'll make a change to the files on your computer, commit the chan
 
 0. Switch back to the web portal and select **History** from the **Code** view to view your new commit. The new repo has two commits: the first commit where the README and .gitignore were added when the repo was created, and the commit you just made.
 
-  ![View commit history](../git/_img/repo-mgmt/commit-push.png)
+  ![View commit history](../repos/git/_img/repo-mgmt/commit-push.png)
 
 0. Switch to the **Files** tab and click on the README file to view your changes.
 
-  ![View changed file](../git/_img/repo-mgmt/readme-changed-file.png)  
+  ![View changed file](../repos/git/_img/repo-mgmt/readme-changed-file.png)  
 
 ## Try this next  
 
@@ -86,4 +86,4 @@ In this step, we'll make a change to the files on your computer, commit the chan
 > or
 > [Plan & track work](plan-track-work.md)
 
-Or, [learn more about working with a Git repo](../git/index.md)
+Or, [learn more about working with a Git repo](../repos/git/index.md)

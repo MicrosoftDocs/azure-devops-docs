@@ -256,7 +256,7 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Tag</td>
-<td>Used to link a work item to a tag that's been defined for a git commit or git repository. See [Work from the Git command prompt](../../../git/command-prompt.md) for more information. </td>
+<td>Used to link a work item to a tag that's been defined for a git commit or git repository. See [Work from the Git command prompt](../../../repos/git/command-prompt.md) for more information. </td>
 </tr>
 <tr>
 <td>Test Result </td>

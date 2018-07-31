@@ -27,7 +27,7 @@ You add another project to establish a repository for source code and a place fo
 [sign up for VSTS and create a project](../accounts/create-organization-msa-or-work-student.md). 
 ::: moniker-end
 
-If you have a project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../git/gitquickstart.md).
+If you have a project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
 
 
 ::: moniker range=">= tfs-2017"
@@ -73,7 +73,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
@@ -97,7 +97,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
@@ -116,7 +116,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, tfs](_img/create-project/clickcreatetfs.png) 
@@ -147,7 +147,7 @@ If you're using TFS 2015.2 or later version, then you can create a project from 
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, tfs](_img/create-project/clickcreatetfs.png) 
@@ -228,7 +228,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
     ![ALM\_CTP\_SelectSource](_img/IC671600.png)
 
     Not sure which system to use? Learn more about 
-	[Git](../../git/overview.md) or [TFVC](../../tfvc/overview.md). 
+	[Git](../../repos/git/overview.md) or [TFVC](../../repos/tfvc/overview.md). 
 
 	After you've created your project, you can[add repositories](#git-and-tfvs-repos). 
 
@@ -275,7 +275,7 @@ You can create and get projects and other VSTS items from the command line or sc
 Once you've added a project, you'll have a default repository in which to add code. You'll want to add team members and structure your project to support your business needs. See these resources: 
 
 - [Add team members](../../organizations/security/add-users-team-project.md) to enable other users to connect to your project.
-- Start [developing your app in Team Foundation version control](../../tfvc/index.md) or [use Git](../../git/overview.md).
+- Start [developing your app in Team Foundation version control](../../repos/tfvc/index.md) or [use Git](../../repos/git/overview.md).
 - [Additional project structure activities](about-projects.md#project-structure)
 
 
@@ -284,7 +284,7 @@ Once you've added a project, you'll have a default repository in which to add co
 ::: moniker range=">= tfs-2015"
 
 ### Add repositories
-From the admin context of the web portal, you can add additional repositories to a project, either Git (distributed) or TFVC (centralized). While you can create many Git repositories, you can only create a single TFVC repository for a project.  Additional steps to address permissions may be required. See [Use Git and TFVC repos in the same team project](../../git/team-projects.md). 
+From the admin context of the web portal, you can add additional repositories to a project, either Git (distributed) or TFVC (centralized). While you can create many Git repositories, you can only create a single TFVC repository for a project.  Additional steps to address permissions may be required. See [Use Git and TFVC repos in the same team project](../../repos/git/team-projects.md). 
 
 ::: moniker-end
 

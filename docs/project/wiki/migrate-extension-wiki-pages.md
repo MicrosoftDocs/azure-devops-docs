@@ -90,7 +90,7 @@ Here are the detailed steps for Wiki migration:
 - [Wiki page title naming conventions](add-edit-wiki.md#page-title-names)  
 - [Clone and update wiki pages offline](wiki-update-offline.md)  
 - [Source code for the wiki tools](https://github.com/Microsoft/vsts-wikiTools)  
-- [Git quickstart](../../git/gitquickstart.md)
+- [Git quickstart](../../repos/git/gitquickstart.md)
  
 
 ### Contributions 

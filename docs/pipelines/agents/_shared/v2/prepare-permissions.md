@@ -13,11 +13,11 @@ or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```
 
 1.  From your home page, open your profile. Go to your security details.
 
- ![test](../../../../git/_shared/_img/my-profile-team-services.png)
+ ![test](../../../../repos/git/_shared/_img/my-profile-team-services.png)
 
 1. Create a personal access token.
 
- ![test](../../../../git/_shared/_img/add-personal-access-token.png)
+ ![test](../../../../repos/git/_shared/_img/add-personal-access-token.png)
 
 1. For the scope select **Agent Pools (read, manage)** and make sure all the other boxes are cleared.
    If it's a [deployment group](../../../release/deployment-groups/index.md) agent, for the scope select **Deployment group (read, manage)** and make sure all the other boxes are cleared.

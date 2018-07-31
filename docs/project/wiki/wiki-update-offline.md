@@ -8,7 +8,8 @@ ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
 ms.date: 04/05/2018  
@@ -25,7 +26,7 @@ Here we show the web portal **Files** page for the **Fabrikam Fiber.wiki** repo.
 > [!div class="mx-imgBorder"]  
 > ![Wiki Master files](_img/wiki/wikimaster-files.png)
 
-You can use any client you want or git command line tools to update your wiki offline. For details on working with Git repositories and supported tools, see [Git Repositories](../../git/index.md). 
+You can use any client you want or git command line tools to update your wiki offline. For details on working with Git repositories and supported tools, see [Git Repositories](../../repos/git/index.md). 
 
 The basic steps to update wiki content offline are:
 1. Clone your wiki Git repo to your local IDE or workspace 
@@ -59,9 +60,9 @@ You can perform these steps to migrate markdown pages from another wiki to your 
 	> ![Wiki Master files](_img/wiki/work-offline-wikiMaster-files.png)   
 
 3. Use the URL that you copied to clone the repo in the IDE that you use. To learn more, see one of these articles: 
-	- [Clone an existing Git repo](../../git/tutorial/clone.md) 
+	- [Clone an existing Git repo](../../repos/git/clone.md) 
 	- [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-	- [Get Started with Git and VSTS](../../git/gitquickstart.md?view=vsts&tabs=visual-studio)
+	- [Get Started with Git and VSTS](../../repos/git/gitquickstart.md?view=vsts&tabs=visual-studio)
 
 
 ## Add pages to your local Git repository
@@ -117,7 +118,7 @@ To add pages at the root of the wiki tree, add a markdown file at the root of th
 
 ### Push your changes 
 
-- When done with all your updates, [push the files to the Git repository](../../git/tutorial/pushing.md). 
+- When done with all your updates, [push the files to the Git repository](../../repos/git/pushing.md). 
 
 	The pages and sub-pages you added will appear immediately in your wiki.
 
@@ -132,8 +133,8 @@ To add pages at the root of the wiki tree, add a markdown file at the root of th
 
 - [Create a wiki for your team project](wiki-create-repo.md)
 - [Wiki Git repository files and file structure](wiki-file-structure.md)
-- [Clone an existing Git repo](../../git/tutorial/clone.md)
-- [Share code with push](../../git/tutorial/pushing.md)
+- [Clone an existing Git repo](../../repos/git/clone.md)
+- [Share code with push](../../repos/git/pushing.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md).
 

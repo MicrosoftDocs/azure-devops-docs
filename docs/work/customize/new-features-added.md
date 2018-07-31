@@ -56,7 +56,7 @@ TFS 2017
 Code Review
 </td>
 <td>
-Adds the Code Review Request and Code Review Response WITs and categories to the project. These items support [code review requests and responses from the My Work page in Team Explorer](../../tfvc/get-code-reviewed-vs.md). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed.<br /> 
+Adds the Code Review Request and Code Review Response WITs and categories to the project. These items support [code review requests and responses from the My Work page in Team Explorer](../../repos/tfvc/get-code-reviewed-vs.md). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed.<br /> 
 To manually add them to a project, see [Add features manually](add-features-manually.md).   
 </td>
 <td>
@@ -69,7 +69,7 @@ My Work
 </td>
 <td>
 Supports your ability to [develop code and manage pending changes](https://msdn.microsoft.com/library/ms245462.aspx#my_work) from the My Work page in Team Explorer. My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed.<br /> 
-Adds the metastate-to-workflow state mapping in ProcessConfiguration for the Bug Category. If you need to manually update the bug workflow states and metastates, see [Support bug update status using My Work](../../tfvc/develop-code-manage-pending-changes.md).   
+Adds the metastate-to-workflow state mapping in ProcessConfiguration for the Bug Category. If you need to manually update the bug workflow states and metastates, see [Support bug update status using My Work](../../repos/tfvc/develop-code-manage-pending-changes.md).   
 </td>
 <td>
 TFS 2012

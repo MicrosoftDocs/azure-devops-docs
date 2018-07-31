@@ -6,6 +6,11 @@ ms.topic: include
 
 To define or modify a variable from a script, use the `task.setvariable` logging command.
 Note that the updated variable value is scoped to the phase being executed, and does not flow across phases or environments. 
+Variable names are transformed to uppercase, and the characters "." and " " are replaced by "_".
+
+For example, `Agent.WorkFolder` becomes `AGENT_WORKFOLDER`.
+On Windows, you access this as `%AGENT_WORKFOLDER` or `$env:AGENT_WORKFOLDER`.
+On Linux and macOS, you use `$AGENT_WORKFOLDER`.
 
 > [!TIP]
 > 
@@ -20,11 +25,11 @@ Note that the updated variable value is scoped to the phase being executed, and 
 
 **Batch script**
 
-![icon](../tasks/utility/_img/batch-script.png) Set the `sauce` and `secretSauce` variables
+![icon](../tasks/utility/_img/batch-script.png) Set the `sauce` and `secret.Sauce` variables
 
 ```bat
 @echo ##vso[task.setvariable variable=sauce]crushed tomatoes
-@echo ##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic
+@echo ##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with garlic
 ```
 
 ![icon](../tasks/utility/_img/batch-script.png) Read the variables
@@ -32,7 +37,7 @@ Note that the updated variable value is scoped to the phase being executed, and 
 Arguments
 
 ```arguments
-"$(sauce)" "$(secretSauce)"
+"$(sauce)" "$(secret.Sauce)"
 ```
 
 Script
@@ -42,7 +47,7 @@ Script
 set sauceArgument=%~1
 set secretSauceArgument=%~2
 @echo No problem reading %sauceArgument% or %SAUCE%
-@echo But I cannot read %SECRETSAUCE%
+@echo But I cannot read %SECRET_SAUCE%
 @echo But I can read %secretSauceArgument% (but the log is redacted so I do not spoil
       the secret)
 ```
@@ -51,11 +56,11 @@ set secretSauceArgument=%~2
 
 **PowerShell script**
 
-![icon](../tasks/utility/_img/powershell.png) Set the `sauce` and `secretSauce` variables
+![icon](../tasks/utility/_img/powershell.png) Set the `sauce` and `secret.Sauce` variables
 
 ```powershell
 Write-Host "##vso[task.setvariable variable=sauce]crushed tomatoes"
-Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with
+Write-Host "##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with
             garlic"
 ```
 
@@ -64,7 +69,7 @@ Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed to
 Arguments
 
 ```arguments
--sauceArgument "$(sauce)" -secretSauceArgument "$(secretSauce)"
+-sauceArgument "$(sauce)" -secretSauceArgument "$(secret.Sauce)"
 ```
 
 Script
@@ -74,20 +79,20 @@ Param(
    [string]$sauceArgument,
    [string]$secretSauceArgument
 )
-Write-Host No problem reading $env:sauce or $sauceArgument
-Write-Host But I cannot read $env:secretSauce
+Write-Host No problem reading $env:SAUCE or $sauceArgument
+Write-Host But I cannot read $env:SECRET_SAUCE
 Write-Host But I can read $secretSauceArgument "(but the log is redacted so I do not
            spoil the secret)"
 ```
 
 # [Shell](#tab/shell)
 
-![icon](../tasks/utility/_img/shell-script.png) Set the `sauce` and `secretSauce` variables
+![icon](../tasks/utility/_img/shell-script.png) Set the `sauce` and `secret.Sauce` variables
 
 ```bash
 #!/bin/bash
 echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
-echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+echo "##vso[task.setvariable variable=secret.Sauce;issecret=true]crushed tomatoes with garlic"
 ```
 
 ![icon](../tasks/utility/_img/shell-script.png) Read the variables
@@ -95,7 +100,7 @@ echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes
 Arguments
 
 ```arguments
-"$(sauce)" "$(secretSauce)"
+"$(sauce)" "$(secret.Sauce)"
 ```
 
 Script
@@ -103,7 +108,7 @@ Script
 ```bash
 #!/bin/bash
 echo "No problem reading $1 or $SAUCE"
-echo "But I cannot read $SECRETSAUCE"
+echo "But I cannot read $SECRET_SAUCE"
 echo "But I can read $2 (but the log is redacted so I do not spoil the secret)"
 ```
 

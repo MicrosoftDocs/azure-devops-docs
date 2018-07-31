@@ -279,4 +279,4 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * (Optionally) Create a VSTS build pipeline to wrap the Jenkins CI job
 
 > [!div class="nextstepaction"]
-> [Improve code quality with branch policies](https://docs.microsoft.com/vsts/git/branch-policies)
+> [Improve code quality with branch policies](https://docs.microsoft.com/vsts/repos/git/branch-policies)

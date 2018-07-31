@@ -38,7 +38,7 @@ gradle -v
 You're ready to start! This tutorial will guide you through the process of publishing a Maven artifact using Gradle.
 
 > [!NOTE]
-> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](/vsts/git/tutorial/clone).
+> This topic assumes you have cloned your Git repo to your local machine. If you aren't sure how to clone your repo, read [Clone a repo](/vsts/repos/git/clone).
 
 ## Set up authentication
 
