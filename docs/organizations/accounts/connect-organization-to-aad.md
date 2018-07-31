@@ -8,7 +8,7 @@ ms.topic: tutorial
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/27/2018
+ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
 
@@ -35,7 +35,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
 > [!VIDEO https://www.youtube.com/embed/-LkYGi9orhc] 
 
-We currently offer a path to connect to an Azure Active Directory where the email addresses for the users are the same before and after the connection.  For example, you currently sign in with an MSA, jamalhartnett@fabrikam.com, and after connecting you will sign in with an Azure Active Directory identity, jamalhartnett@fabrikam.com.
+We offer a path to connect to an Azure Active Directory where the email addresses for the users are the same before and after the connection.  For example, you currently sign in with an MSA, jamalhartnett@fabrikam.com, and after connecting you will sign in with an Azure Active Directory identity, jamalhartnett@fabrikam.com.
 
 We will update this guidance accordingly when we have a solution that we can offer for scenarios where email addresses must be changed.
 
@@ -48,25 +48,25 @@ We will update this guidance accordingly when we have a solution that we can off
 2. Ensure the following about the user performing the connection.
    This user:
 
-    * Exists in the Azure Active Directory as a member.
+   * Exists in the Azure Active Directory as a member.
     * Is a Project Collection Administrator or [owner of the VSTS organization](https://docs.microsoft.com/en-us/vsts/organizations/accounts/faq-change-organization-ownership#find-owner-pca).
     * Is not using the Microsoft account identity that matches the Azure Active Directory identity, for example, the Microsoft account you currently use is JamalHarnett@fabrikam.com and the Azure Active Directory identity you will use after connecting is also JamalHarnett@fabrikam.com. You must use a single identity that spans both applications (MSA that's in Azure Active Directory), rather than two separate identities using the same email.
 
    If the emails are the same, then follow these next steps, otherwise continue on to Connect your VSTS organization to your Azure Active Directory.
 
-   a. [Create a new MSA](https://signup.live.com/), for example, Fabrikam@outlook.com. This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
+    >a. [Create a new MSA](https://signup.live.com/), for example, Fabrikam@outlook.com. This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
 
-   b. Sign in to your VSTS organization (as a Project Collection Administrator) and add the new user as a member of the organization.
+   >b. Sign in to your VSTS organization (as a Project Collection Administrator) and add the new user as a member of the organization.
 
-   c. [Sign in to the Azure portal](https://portal.azure.com/) and add the new user as a B2B guest of the Azure Active Directory and an email invitation sent to the new user.
+   >c. [Sign in to the Azure portal](https://portal.azure.com/) and add the new user as a B2B guest of the Azure Active Directory and an email invitation sent to the new user.
 
-   d. Go to your email invitations from Azure and choose the **Call-To-Action** in each email. You will be required to choose **Next/Continue** on a few screens to fully register the new user.
+   >d. Go to your email invitations from Azure and choose the **Call-To-Action** in each email. You will be required to choose **Next/Continue** on a few screens to fully register the new user.
 
-   e. Sign in to your VSTS organization as the new user.
+   >e. Sign in to your VSTS organization as the new user.
 
-   f. Go to **Settings** in VSTS (as a Project Collection Administrator) and change the owner of the organization to the new user, only after the new user has signed in.
+   >f. Go to **Settings** in VSTS (as a Project Collection Administrator) and change the owner of the organization to the new user, only after the new user has signed in.
 
-   g. Use this new user to complete the migration.
+   >g. Use this new user to complete the migration.
 
 3. Ensure all VSTS users are in the Azure Active Directory.
 
@@ -80,9 +80,9 @@ We will update this guidance accordingly when we have a solution that we can off
 
     * If any users exist on the VSTS Users page, but are missing from your Azure Active Directory, [add them as B2B guests](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-iw-add-users).
 
-      ![Add guest user to Azure Active Directory](_img/connect-organization-to-aad/azure-portal-new-guest-user.PNG)
+      ![Add guest user to Azure Active Directory](_img/connect-organization-to-aad/add-new-users.png)
 
-    These guests can be external to your organization (User@othercompany.com) or existing Microsoft account (MSA) users (user@outlook.com or user@gmail.com).
+      These guests can be external to your organization (User@othercompany.com) or existing Microsoft account (MSA) users (user@outlook.com or user@gmail.com).
 
     * If you are notified that you do not have permissions to invite users, verify that your user organization is authorized to invite external users under User Settings.
 
@@ -96,34 +96,30 @@ We will update this guidance accordingly when we have a solution that we can off
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) with the Microsoft account chosen in the previous step.
 
-    The directory is selected in the upper right corner of the Azure portal.
+    Make sure you are connected to the correct directory. The directory is selected in the upper right corner of the Azure portal.
 
     ![Confirm Azure Active Directory](_img/connect-organization-to-aad/confirm-directory-azure-ad.png)
 
-2. Choose **All services** and then **Team Services administration**.
+2. Choose **All services** > **Team Services administration**.
 
-   ![All services, Team Services administration](../billing/_img/set-up-billing/azure-portal-team-services.png)
+   ![All services, Team Services administration](_img/_shared/azure-portal-team-services-administration.png)
 
 3. Select your VSTS organization. If you don't see your organization, check to make sure you are using the expected directory in the upper right of the Azure portal and confirm that you are logged in with a Microsoft account that is the owner of the VSTS organization in question.
 
-   ![Select your VSTS organization](../billing/_img/set-up-billing/azure-portal-select-organization.png)
+   ![Select your VSTS organization](_img/_shared/azure-portal-select-organization.png)
 
 4. Choose **Connect AAD**.
 
-   ![Connect to Azure Active Directory](_img/connect-organization-to-aad/azure-portal-choose-connect-aad.png)
+   ![Connect to Azure Active Directory](_img/connect-organization-to-aad/azure-portal-choose-connect.png)
 
-5. Make sure this is the directory you want to connect to. If you have more than one directory, you can select the directory to connect to in the top right of the menu.
-
-   ![Confirm correct Azure Active Directory](_img/connect-organization-to-aad/confirm-correct-directory.png)
-
-6. Choose **Yes** to connect.
+5. Choose **Yes** to connect.
 
    ![Choose Yes to connect](_img/connect-organization-to-aad/choose-yes-to-connect.png)
 
-7. Your organization is now connected to your Azure Actice Directory.
+6. Your organization is now connected to your Azure Actice Directory.
 
-8. To confirm that the process has been completed, open your favorite browser in a private session and sign in to your VSTS organization with your Azure Active Directory/work credentials.
-9. If you created a temporary user to complete the migration, change the owner of the VSTS organization back to the initial user and delete the temporary Microsoft account, as it is no longer needed.
+7. To confirm that the process has been completed, open your favorite browser in a private session and sign in to your VSTS organization with your Azure Active Directory/work credentials.
+8. If you created a temporary user to complete the migration, change the owner of the VSTS organization back to the initial user and delete the temporary Microsoft account, as it is no longer needed.
 
 ## Inform users of the completed change
 
