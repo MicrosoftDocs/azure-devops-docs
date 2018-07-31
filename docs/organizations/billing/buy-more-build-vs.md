@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/18//2018
+ms.date: 07/31/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -99,7 +99,7 @@ To make subsequent edits to paid quantities in your VSTS organization, you only 
 
 The hosted XAML build controller is no longer supported.
   Organizations created on or after April 2016 do not have access to it.
-  We plan to remove the hosted XAML build controller from all organizations in the near future.
+  The hosted YAML model is our newest build model, and as a best practice, consider adopting it. Read more about it [here](../../pipelines/build/yaml.md).
 
   > **Important:** If you have an organization where you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx),
   > you should set up an [on-premises build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)
