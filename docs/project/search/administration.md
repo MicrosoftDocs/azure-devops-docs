@@ -60,7 +60,7 @@ Work Item Search is available in TFS 2017 Update 2 and later.
 Wiki Search is available in TFS 2018 Update 2 and later.
 Configure the Search service using the dedicated pages in the TFS Configuration Wizard
 as you install TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
-afterwards by running the TFS Configuration Wizard again or lauching the Search Configuration Wizard.
+afterwards by running the TFS Configuration Wizard again or launching the Search Configuration Wizard.
 
 <a name="hardware-recommendations"></a>
 ### Hardware recommendations
@@ -69,7 +69,7 @@ Search can be used on any size physical server or virtual machine that runs
 TFS 2017 or above. It can be configured on the same server as TFS,
 or on a separate server dedicated to Search.
 When configuring Search on the same server as TFS,
-you must consider the existing CPU utlization
+you must consider the existing CPU utilization
 factor due to TFS itself.
 
 **For production environments we recommend you configure Search on a separate server.**
@@ -104,7 +104,7 @@ following recommendations:
 
 The amount of disk space taken up by Search depends mainly on the type of
 code files in version control that will be indexed. As a general guideline,
-allocate upto 35% of the size of all the collections that will be indexed.
+allocate up to 35% of the size of all the collections that will be indexed.
 
 ### Software Dependencies
 

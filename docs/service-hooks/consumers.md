@@ -356,7 +356,7 @@ Triggers a build configured to use a Git repository using the [Jenkins Git Plugi
    * Required: **Yes**
  * **password**
    * User API token (or password)
-   * The user's API token, which is available in the Jenkin user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins the real user password must be specified.
+   * The user's API token, which is available in the Jenkins user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins the real user password must be specified.
    * Data type: **string**
    * Required: **Yes**
 
@@ -379,7 +379,7 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
    * Required: **Yes**
  * **password**
    * User API token (or password)
-   * The user's API token, which is available in the Jenkin user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins the real user password must be specified.
+   * The user's API token, which is available in the Jenkins user configuration page. The API token is new since version 1.426. For earlier versions of Jenkins the real user password must be specified.
    * Data type: **string**
    * Required: **Yes**
  * **buildName**
@@ -399,7 +399,7 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
    * Required: **No**
  * **buildParams**
    * Build parameters
-   * Build parameteres names and values separated by a colon(e.g. "param1:value1") with each name-value pair appearing on its own line of text
+   * Build parameters names and values separated by a colon(e.g. "param1:value1") with each name-value pair appearing on its own line of text
    * Data type: **string**
    * Required: **No**
 

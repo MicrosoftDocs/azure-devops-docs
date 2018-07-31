@@ -164,7 +164,7 @@ from having a physical representation.</td>
 </tr>
 <tr>
 <td>[Projects and teams](./tfs/overview.md)</td>
-<td>Team Services accounts host projects, and each project has one or more teams that contibute to it. Get access to both with the Projects and Teams API.</td>
+<td>Team Services accounts host projects, and each project has one or more teams that contribute to it. Get access to both with the Projects and Teams API.</td>
 <td>
 <ul><li>Get a list of projects</li>
 <li>Get a project's source control provider</li>

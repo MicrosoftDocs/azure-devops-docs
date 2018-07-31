@@ -363,7 +363,7 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 
 ![Sample flowchart with three items](../../git/_img/pull-requests/markdown_sample_image.png)
 
-The path to the image file can be a relative path or the absolute path in Git or TVFC, just like the path to another Markdown file in a link.  
+The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
 <ul>
 <li>Relative path:<br/> ```![Image alt text](./image.png)``` </li>
 <li>Absolute path in Git:<br/> ```![Image alt text](/_img/markdown-guidance/image.png)``` </li>
@@ -411,7 +411,7 @@ Lightweight task lists are a great way to track progress on a list of todos as e
 
 You can Use `[ ]` or `[x]` to support checklists. You need to precede the checklist with either `-<space>` or `1.<space>` (any numeral).
 
-**Example - Apply the task list markdown to a higlighted list**
+**Example - Apply the task list markdown to a highlighted list**
 
 > [!div class="mx-imgBorder"]  
 > ![Apply markdown task list format to a highlighted list in a PR](_img/markdown-guidance/checklist-pr-apply.png) 
@@ -459,14 +459,14 @@ Combine these elements to apply multiple emphasis to text.
 
 <pre>
 Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~ 
-**_Bold, italizied text_**  
+**_Bold, italicized text_**  
 **~~Bold, strike-through text~~**
 </pre>
 
 <br/>
 **Result:**  
 Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italizied text_**   
+**_Bold, italicized text_**   
 **~~Bold, strike-through text~~**  
 
 

@@ -18,7 +18,7 @@ You have the option of hosting static content for your extension (like HTML, CSS
 
 >[!IMPORTANT]
 >If your extension needs to create a custom table in the TFS database, do not create it using the '**dbo**' schema. Instead, custom
->tables should be created in a seperate schema. For example, '**YourExtensionName**'.
+>tables should be created in a separate schema. For example, '**YourExtensionName**'.
 
 ## Host on VSTS
 

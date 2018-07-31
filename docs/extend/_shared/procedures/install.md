@@ -1,4 +1,4 @@
-1. From your account control panel (```https://{account}.visualstudio.com/_admin/_ext```), go to the project collection administraton page. 
+1. From your account control panel (```https://{account}.visualstudio.com/_admin/_ext```), go to the project collection administration page. 
 
 	![Control panel, view the collection administration page link](./_img/install/collection-page.png)
 
