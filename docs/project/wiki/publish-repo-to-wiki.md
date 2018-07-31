@@ -50,7 +50,7 @@ In order to perform these steps, you'll want to understand the underlying struct
 ## Prerequisites  
 
 * You must have a team project. If you don't have a team project yet, create one in [VSTS](../../organizations/accounts/set-up-vs.md).  
-* You must have a Git repository defined in your team project. Ideally, this repository contains at least one markdown file which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../git/create-new-repo.md). 
+* You must have a Git repository defined in your team project. Ideally, this repository contains at least one markdown file which you want to publish to your wiki. If you need to add a Git repository, see [Create a new Git repo in your project](../../repos/git/create-new-repo.md). 
 * You must have the permission **Create repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
 * Anyone who has permissions to contribute to the Git repository can add or edit wiki pages. Anyone with access to the team project, including [stakeholders](../../organizations/security/get-started-stakeholder.md), can view the wiki. 
 
@@ -67,7 +67,7 @@ Choose this option when you maintain markdown files in an existing Git repo and 
 	> ![Create wiki, publish existing repo markdown files](_img/wiki/create-wiki-or-publish-publish-option.png) 
 
 	> [!NOTE]   
-	> The **Publish code as Wiki** option won't appear if your project doesn't have a Git repository defined. [Create a new Git repo](../../git/create-new-repo.md) and then return and refresh this page.  
+	> The **Publish code as Wiki** option won't appear if your project doesn't have a Git repository defined. [Create a new Git repo](../../repos/git/create-new-repo.md) and then return and refresh this page.  
 
 	Or, if you have already provisioned a team project wiki, from the context menu for Wikis, choose the **Publish code as wiki** menu option.
 

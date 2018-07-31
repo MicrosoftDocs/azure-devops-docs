@@ -27,9 +27,9 @@ For a complete reference of all built-in groups and permissions, see [Permission
 
 ## Code: Git and TFVC  
 
-You can connect to your code from the Code hub or the web portal, and using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, Visual Studio Code. For an overview of code features and functions, see [Git](../../git/overview.md) and [Use Team Foundation Version Control (TFVC)](../../tfvc/overview.md). Stakeholders have no access to the Code hub or its features.
+You can connect to your code from the Code hub or the web portal, and using Xcode, Eclipse, IntelliJ, Android Studio, Visual Studio, Visual Studio Code. For an overview of code features and functions, see [Git](../../repos/git/overview.md) and [Use Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md). Stakeholders have no access to the Code hub or its features.
 
-From the team project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../../git/branch-permissions.md). 
+From the team project admin content for Version Control, you can [set permissions on a repository](set-git-tfvc-repository-permissions.md). From the **Code>Branches** page, you can [set permissions for a specific branch and set branch policies](../../repos/git/branch-permissions.md). 
 
 ### Git
 [!INCLUDE [temp](_shared/code-git.md)]

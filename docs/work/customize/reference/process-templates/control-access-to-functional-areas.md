@@ -89,7 +89,7 @@ You can assign permissions that control access to build activities by changing t
    
   
 > [!NOTE]  
->  The **Override check-in validation by build** permission should be assigned only to service accounts for build services and to build administrators who are responsible for the quality of the code. For more information, see [Perform a gated check-in](../../../../tfvc/check-folder-controlled-by-gated-check-build-process.md).  
+>  The **Override check-in validation by build** permission should be assigned only to service accounts for build services and to build administrators who are responsible for the quality of the code. For more information, see [Perform a gated check-in](../../../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).  
   
   
 <a name="LabManagement"></a> 

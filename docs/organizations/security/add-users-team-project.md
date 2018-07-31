@@ -129,7 +129,7 @@ You can also control access to projects, version control, build, and work items;
 learn how from these topics: 
 
 * [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
-* [Set Git branch permissions](../../git/branch-permissions.md)
+* [Set Git branch permissions](../../repos/git/branch-permissions.md)
 * [Set build and release permissions](../../pipelines/policies/set-permissions.md)
 * [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
 

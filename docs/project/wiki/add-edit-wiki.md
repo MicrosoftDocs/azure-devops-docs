@@ -105,7 +105,7 @@ To reset the home page, open the context menu of the page and click **Set as wik
 
 - [Syntax guidance for Markdown files, widgets, wikis, and pull request comments](../../reference/markdown-guidance.md) 
 - [Keyboard shortcuts to manage wiki pages](wiki-keyboard-shortcuts.md) 
-- [Get Started with Git](../../git/gitquickstart.md)
+- [Get Started with Git](../../repos/git/gitquickstart.md)
 - [Manage README and Wiki permissions](manage-readme-wiki-permissions.md)
 
 <a id="page-title-names"></a>

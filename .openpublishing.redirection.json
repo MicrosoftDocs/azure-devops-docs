@@ -752,7 +752,7 @@
     },
     {
       "source_path": "docs/git/howto/create-pr-status-server.md",
-      "redirect_url": "/vsts/git/how-to/create-pr-status-server",
+      "redirect_url": "/vsts/repos/git/create-pr-status-server",
       "redirect_document_id": false
     },
     {
@@ -762,7 +762,7 @@
     },
     {
       "source_path": "docs/git/howto/pr-status-policy.md",
-      "redirect_url": "/vsts/git/how-to/pr-status-policy",
+      "redirect_url": "/vsts/repos/git/pr-status-policy",
       "redirect_document_id": false
     },
     {
@@ -772,7 +772,7 @@
     },
     {
       "source_path": "docs/marketplace/xamarin-univ.md",
-      "redirect_url": "/vsts/billing/xamarin-univ",
+      "redirect_url": "/vsts/organizations/billing/xamarin-univ",
       "redirect_document_id": false
     },
     {
@@ -792,7 +792,7 @@
     },
     {
       "source_path": "docs/setup-admin/buy-access-tfs-test-hub.md",
-      "redirect_url": "/vsts/billing/buy-access-tfs-test-hub",
+      "redirect_url": "/vsts/organizations/billing/buy-access-tfs-test-hub",
       "redirect_document_id": false
     },
     {
@@ -852,17 +852,17 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/buy-basic-access-add-team-services-users.md",
-      "redirect_url": "/vsts/billing/buy-basic-access-add-users",
+      "redirect_url": "/vsts/organizations/billing/buy-basic-access-add-users",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/buy-load-testing-vs.md",
-      "redirect_url": "/vsts/billing/buy-load-testing-vs",
+      "redirect_url": "/vsts/organizations/billing/buy-load-testing-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/setup-admin/team-services/buy-more-build-vs.md",
-      "redirect_url": "/vsts/billing/buy-more-build-vs",
+      "redirect_url": "/vsts/organizations/billing/buy-more-build-vs",
       "redirect_document_id": false
     },
     {
@@ -912,7 +912,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/try-additional-features-vs.md",
-      "redirect_url": "/vsts/billing/try-additional-features-vs",
+      "redirect_url": "/vsts/organizations/billing/try-additional-features-vs",
       "redirect_document_id": false
     },
     {
@@ -1497,7 +1497,7 @@
     },
     {
       "source_path": "docs/tfvc-team-projects.md",
-      "redirect_url": "/vsts/git/team-projects",
+      "redirect_url": "/vsts/repos/git/team-projects",
       "redirect_document_id": false
     },
     {
@@ -1572,17 +1572,17 @@
     },
     {
       "source_path": "docs/git/get-started.md",
-      "redirect_url": "/vsts/git/gitquickstart",
+      "redirect_url": "/vsts/repos/git/gitquickstart",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/git/gitquickstart-vs2017.md",
-      "redirect_url": "/vsts/git/gitquickstart",
+      "redirect_url": "/vsts/repos/git/gitquickstart",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/git/rebase.md",
-      "redirect_url": "/vsts/git/tutorial/rebase",
+      "redirect_url": "/vsts/repos/git/rebase",
       "redirect_document_id": false
     },
     {
@@ -1622,7 +1622,7 @@
     },
     {
       "source_path": "docs/git/tutorial/howto-cmdline.md",
-      "redirect_url": "/vsts/git/tutorial/howto",
+      "redirect_url": "/vsts/repos/git/howto",
       "redirect_document_id": false
     },
     {
@@ -1817,7 +1817,7 @@
     },
     {
       "source_path": "docs/tfs-server/buy-access-tfs-test-hub.md",
-      "redirect_url": "/vsts/billing/buy-access-tfs-test-hub",
+      "redirect_url": "/vsts/organizations/billing/buy-access-tfs-test-hub",
       "redirect_document_id": false
     },
     {
@@ -1887,17 +1887,17 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/buy-basic-access-add-team-services-users.md",
-      "redirect_url": "/vsts/billing/buy-basic-access-add-users",
+      "redirect_url": "/vsts/organizations/billing/buy-basic-access-add-users",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/buy-load-testing-vs.md",
-      "redirect_url": "/vsts/billing/buy-load-testing-vs",
+      "redirect_url": "/vsts/organizations/billing/buy-load-testing-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/buy-more-build-vs.md",
-      "redirect_url": "/vsts/billing/buy-more-build-vs",
+      "redirect_url": "/vsts/organizations/billing/buy-more-build-vs",
       "redirect_document_id": false
     },
     {
@@ -1937,12 +1937,12 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/get-more-build-or-load-testing-vs.md",
-      "redirect_url": "/vsts/billing/buy-more-build-vs",
+      "redirect_url": "/vsts/organizations/billing/buy-more-build-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/team-services/get-more-user-licenses-vs.md",
-      "redirect_url": "/vsts/billing/buy-basic-access-add-users",
+      "redirect_url": "/vsts/organizations/billing/buy-basic-access-add-users",
       "redirect_document_id": false
     },
     {
@@ -1982,12 +1982,12 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
+      "redirect_url": "/vsts/organizations/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
+      "redirect_url": "/vsts/organizations/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
@@ -2452,7 +2452,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
+      "redirect_url": "/vsts/organizations/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
@@ -2687,7 +2687,7 @@
     },
     {
       "source_path": "docs/cross-platform/share-your-eclipse-projects-vs.md",
-      "redirect_url": "/vsts/git/share-your-code-in-git-eclipse",
+      "redirect_url": "/vsts/repos/git/share-your-code-in-git-eclipse",
       "redirect_document_id": false
     },
     {
@@ -2742,7 +2742,7 @@
     },
     {
       "source_path": "docs/get-started/share-your-eclipse-projects-vs.md",
-      "redirect_url": "/vsts/git/share-your-code-in-git-eclipse",
+      "redirect_url": "/vsts/repos/git/share-your-code-in-git-eclipse",
       "redirect_document_id": false
     },
     {
@@ -2767,7 +2767,7 @@
     },
     {
       "source_path": "docs/set-up-billing-for-your-account-vs.md",
-      "redirect_url": "/vsts/billing/set-up-billing-for-your-organization-vs",
+      "redirect_url": "/vsts/organizations/billing/set-up-billing-for-your-organization-vs",
       "redirect_document_id": false
     },
     {
@@ -2887,7 +2887,7 @@
     },
     {
       "source_path": "docs/tfvc/team-projects.md",
-      "redirect_url": "/vsts/git/team-projects",
+      "redirect_url": "/vsts/repos/git/team-projects",
       "redirect_document_id": false
     },
     {
@@ -5247,7 +5247,7 @@
     },
     {
       "source_path": "docs/connect/work-web-portal.md",
-      "redirect_url": "/vsts/user-guide/work-web-portal",
+      "redirect_url": "/vsts/project/navigation/index",
       "redirect_document_id": false
     },
     {
@@ -5362,17 +5362,17 @@
     },
     {
       "source_path": "docs/articles/git-branching-guidance.md",
-      "redirect_url": "/vsts/git/concepts/git-branching-guidance",
+      "redirect_url": "/vsts/repos/git/git-branching-guidance",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/mapping-my-tfvc-actions-to-git.md",
-      "redirect_url": "/vsts/git/concepts/mapping-my-tfvc-actions-to-git",
+      "redirect_url": "/vsts/repos/git/mapping-my-tfvc-actions-to-git",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/articles/branching-strategies-with-tfvc.md",
-      "redirect_url": "/vsts/tfvc/branching-strategies-with-tfvc",
+      "redirect_url": "/vsts/repos/tfvc/branching-strategies-with-tfvc",
       "redirect_document_id": false
     },
     {
@@ -5397,7 +5397,7 @@
     },
     {
       "source_path": "docs/git/concepts/pull-requests.md",
-      "redirect_url": "/vsts/git/pull-requests-overview",
+      "redirect_url": "/vsts/repos/git/pull-requests-overview",
       "redirect_document_id": false
     },
     {
@@ -5577,7 +5577,7 @@
     },
     {
       "source_path": "docs/articles/git-dates.md",
-      "redirect_url": "/vsts/git/concepts/git-dates",
+      "redirect_url": "/vsts/repos/git/git-dates",
       "redirect_document_id": false
     },
     {
@@ -5607,7 +5607,7 @@
     },
     {
       "source_path": "docs/billing/billing-concepts.md",
-      "redirect_url": "/vsts/billing/overview",
+      "redirect_url": "/vsts/organizations/billing/overview",
       "redirect_document_id": false
     },
     {
@@ -5627,7 +5627,7 @@
     },
     {
       "source_path": "docs/git/concepts/pull-requests-overview.md",
-      "redirect_url": "/vsts/git/pull-requests-overview",
+      "redirect_url": "/vsts/repos/git/pull-requests-overview",
       "redirect_document_id": false
     },
     {
@@ -5682,17 +5682,17 @@
     },
     {
       "source_path": "docs/billing/faq-azure-billing.md",
-      "redirect_url": "/vsts/billing/vsts-billing-faq",
+      "redirect_url": "/vsts/organizations/billing/vsts-billing-faq",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/faq-billing-setup.md",
-      "redirect_url": "/vsts/billing/vsts-billing-faq",
+      "redirect_url": "/vsts/organizations/billing/vsts-billing-faq",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/faq-pay-for-basic-users.md",
-      "redirect_url": "/vsts/billing/vsts-billing-faq",
+      "redirect_url": "/vsts/organizations/billing/vsts-billing-faq",
       "redirect_document_id": false
     },
     {
@@ -5712,12 +5712,12 @@
     },
     {
       "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
-      "redirect_url": "/vsts/billing/change-number-paid-extension-users",
+      "redirect_url": "/vsts/organizations/billing/change-number-paid-extension-users",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/marketplace/billing-overview.md",
-      "redirect_url": "/vsts/billing/overview",
+      "redirect_url": "/vsts/organizations/billing/overview",
       "redirect_document_id": false
     },
     {
@@ -7147,12 +7147,12 @@
     },
     {
       "source_path": "docs/build-release/apps/cd/deploy-dacpac-sqlpackage.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/deploy-dacpac-sqlpackage",
-      "redirect_document_id": true
+      "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/deploy-database-sqlscripts.md",
-      "redirect_url": "/vsts/pipelines/apps/cd/deploy-database-sqlscripts",
+      "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
       "redirect_document_id": true
     },
     {
@@ -7208,7 +7208,7 @@
     {
       "source_path": "docs/build-release/apps/cd/sql-server-actions.md",
       "redirect_url": "/vsts/pipelines/targets/azure-sqldb",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/define-multistage-release-process.md",
@@ -7969,23 +7969,23 @@
       "source_path": "docs/organizations/settings/switch-team-context.md",
       "redirect_url": "/vsts/project/navigation/go-to-project-repo",
       "redirect_document_id": false
-   },
-   {
+    },
+    {
       "source_path": "docs/work/customize/about-areas-iterations.md",
       "redirect_url": "/vsts/organizations/settings/about-areas-iterations",
       "redirect_document_id": false
     },
-   {
+    {
       "source_path": "docs/work/customize/set-area-paths.md",
       "redirect_url": "/vsts/organizations/settings/set-area-paths",
       "redirect_document_id": false
     },
-   {
+    {
       "source_path": "docs/work/customize/set-iteration-paths-sprints.md",
       "redirect_url": "/vsts/organizations/settings/set-iteration-paths-sprints",
       "redirect_document_id": false
     },
-   {
+    {
       "source_path": "docs/work/scale/set-team-defaults.md",
       "redirect_url": "/vsts/organizations/settings/set-team-defaults",
       "redirect_document_id": false
@@ -8088,6 +8088,901 @@
     {
       "source_path": "docs/billing/set-up-billing-for-your-account.md",
       "redirect_url": "/vsts/organizations/billing/set-up-billing-for-your-organization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/add-check-policies.md",
+      "redirect_url": "/vsts/repos/tfvc/add-check-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/add-command.md",
+      "redirect_url": "/vsts/repos/tfvc/add-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/add-files-server.md",
+      "redirect_url": "/vsts/repos/tfvc/add-files-server",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/administering-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/administering-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/associate-file-type-file-comparison-tool.md",
+      "redirect_url": "/vsts/repos/tfvc/associate-file-type-file-comparison-tool",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/associate-file-type-merge-tool.md",
+      "redirect_url": "/vsts/repos/tfvc/associate-file-type-merge-tool",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/branch-command.md",
+      "redirect_url": "/vsts/repos/tfvc/branch-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/branch-folders-files.md",
+      "redirect_url": "/vsts/repos/tfvc/branch-folders-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/branch-strategically.md",
+      "redirect_url": "/vsts/repos/tfvc/branch-strategically",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/branches-command.md",
+      "redirect_url": "/vsts/repos/tfvc/branches-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/branching-strategies-with-tfvc.md",
+      "redirect_url": "/vsts/repos/tfvc/branching-strategies-with-tfvc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/changeset-command.md",
+      "redirect_url": "/vsts/repos/tfvc/changeset-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/check-folder-controlled-by-gated-check-build-process.md",
+      "redirect_url": "/vsts/repos/tfvc/check-folder-controlled-by-gated-check-build-process",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/check-out-edit-files.md",
+      "redirect_url": "/vsts/repos/tfvc/check-out-edit-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/check-your-work-team-codebase.md",
+      "redirect_url": "/vsts/repos/tfvc/check-your-work-team-codebase",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/checkin-command.md",
+      "redirect_url": "/vsts/repos/tfvc/checkin-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/checkout-or-edit-command.md",
+      "redirect_url": "/vsts/repos/tfvc/checkout-or-edit-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/clean-up-files-when-users-leave.md",
+      "redirect_url": "/vsts/repos/tfvc/clean-up-files-when-users-leave",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/compare-files.md",
+      "redirect_url": "/vsts/repos/tfvc/compare-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/compare-folders-files.md",
+      "redirect_url": "/vsts/repos/tfvc/compare-folders-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/compare-folders.md",
+      "redirect_url": "/vsts/repos/tfvc/compare-folders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/comparison-git-tfvc.md",
+      "redirect_url": "/vsts/repos/tfvc/comparison-git-tfvc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/configure-check-notes.md",
+      "redirect_url": "/vsts/repos/tfvc/configure-check-notes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/configure-check-out-settings.md",
+      "redirect_url": "/vsts/repos/tfvc/configure-check-out-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/configure-command.md",
+      "redirect_url": "/vsts/repos/tfvc/configure-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/control-access-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/control-access-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/create-work-workspaces.md",
+      "redirect_url": "/vsts/repos/tfvc/create-work-workspaces",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md",
+      "redirect_url": "/vsts/repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/day-life-alm-developer-write-new-code-user-story.md",
+      "redirect_url": "/vsts/repos/tfvc/day-life-alm-developer-write-new-code-user-story",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/decide-between-using-local-server-workspace.md",
+      "redirect_url": "/vsts/repos/tfvc/decide-between-using-local-server-workspace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/delete-command-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/delete-command-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/delete-restore-files-folders.md",
+      "redirect_url": "/vsts/repos/tfvc/delete-restore-files-folders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/destroy-command-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/destroy-command-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/destroy-version-controlled-files.md",
+      "redirect_url": "/vsts/repos/tfvc/destroy-version-controlled-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/develop-code-manage-pending-changes.md",
+      "redirect_url": "/vsts/repos/tfvc/develop-code-manage-pending-changes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/develop-your-app-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/develop-your-app-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/difference-command.md",
+      "redirect_url": "/vsts/repos/tfvc/difference-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/dir-command.md",
+      "redirect_url": "/vsts/repos/tfvc/dir-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/download-get-files-from-server.md",
+      "redirect_url": "/vsts/repos/tfvc/download-get-files-from-server",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/edit-check-policies.md",
+      "redirect_url": "/vsts/repos/tfvc/edit-check-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/enable-disable-check-policies.md",
+      "redirect_url": "/vsts/repos/tfvc/enable-disable-check-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/find-view-changesets.md",
+      "redirect_url": "/vsts/repos/tfvc/find-view-changesets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/folder-comparison-filters.md",
+      "redirect_url": "/vsts/repos/tfvc/folder-comparison-filters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/folderdiff-command.md",
+      "redirect_url": "/vsts/repos/tfvc/folderdiff-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/get-code-reviewed-vs.md",
+      "redirect_url": "/vsts/repos/tfvc/get-code-reviewed-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/get-command.md",
+      "redirect_url": "/vsts/repos/tfvc/get-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/get-history-item.md",
+      "redirect_url": "/vsts/repos/tfvc/get-history-item",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/git-permission-command.md",
+      "redirect_url": "/vsts/repos/tfvc/git-permission-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/git-view-command.md",
+      "redirect_url": "/vsts/repos/tfvc/git-view-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/help-command-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/help-command-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/history-command.md",
+      "redirect_url": "/vsts/repos/tfvc/history-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/index.md",
+      "redirect_url": "/vsts/repos/tfvc/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/label-command-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/label-command-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/labels-command.md",
+      "redirect_url": "/vsts/repos/tfvc/labels-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/localversions-command.md",
+      "redirect_url": "/vsts/repos/tfvc/localversions-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/lock-command.md",
+      "redirect_url": "/vsts/repos/tfvc/lock-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/lock-unlock-folders-files.md",
+      "redirect_url": "/vsts/repos/tfvc/lock-unlock-folders-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/merge-command.md",
+      "redirect_url": "/vsts/repos/tfvc/merge-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/merge-folders-files.md",
+      "redirect_url": "/vsts/repos/tfvc/merge-folders-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/merges-command.md",
+      "redirect_url": "/vsts/repos/tfvc/merges-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/msdn-command.md",
+      "redirect_url": "/vsts/repos/tfvc/msdn-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/optimize-your-workspace.md",
+      "redirect_url": "/vsts/repos/tfvc/optimize-your-workspace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/overview.md",
+      "redirect_url": "/vsts/repos/tfvc/overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/permission-command.md",
+      "redirect_url": "/vsts/repos/tfvc/permission-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/properties-or-info-command.md",
+      "redirect_url": "/vsts/repos/tfvc/properties-or-info-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/proxy-command.md",
+      "redirect_url": "/vsts/repos/tfvc/proxy-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/reconcile-differences-between-two-folders.md",
+      "redirect_url": "/vsts/repos/tfvc/reconcile-differences-between-two-folders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/remove-access-version-control-files.md",
+      "redirect_url": "/vsts/repos/tfvc/remove-access-version-control-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/remove-check-policies.md",
+      "redirect_url": "/vsts/repos/tfvc/remove-check-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/rename-command-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/rename-command-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/rename-move-files-folders.md",
+      "redirect_url": "/vsts/repos/tfvc/rename-move-files-folders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/resolve-command.md",
+      "redirect_url": "/vsts/repos/tfvc/resolve-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/resolve-team-foundation-version-control-conflicts.md",
+      "redirect_url": "/vsts/repos/tfvc/resolve-team-foundation-version-control-conflicts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/roll-back-changesets.md",
+      "redirect_url": "/vsts/repos/tfvc/roll-back-changesets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/rollback-command-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/rollback-command-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/set-enforce-quality-gates.md",
+      "redirect_url": "/vsts/repos/tfvc/set-enforce-quality-gates",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/set-up-team-foundation-version-control-your-dev-machine.md",
+      "redirect_url": "/vsts/repos/tfvc/set-up-team-foundation-version-control-your-dev-machine",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/share-your-code-in-tfvc-eclipse.md",
+      "redirect_url": "/vsts/repos/tfvc/share-your-code-in-tfvc-eclipse",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/share-your-code-in-tfvc-vs.md",
+      "redirect_url": "/vsts/repos/tfvc/share-your-code-in-tfvc-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/share-your-code-in-tfvc-xcode.md",
+      "redirect_url": "/vsts/repos/tfvc/share-your-code-in-tfvc-xcode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/shelve-command.md",
+      "redirect_url": "/vsts/repos/tfvc/shelve-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/shelvesets-command.md",
+      "redirect_url": "/vsts/repos/tfvc/shelvesets-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/status-command.md",
+      "redirect_url": "/vsts/repos/tfvc/status-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/suspend-your-work-manage-your-shelvesets.md",
+      "redirect_url": "/vsts/repos/tfvc/suspend-your-work-manage-your-shelvesets",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/undelete-command.md",
+      "redirect_url": "/vsts/repos/tfvc/undelete-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/understand-lock-types.md",
+      "redirect_url": "/vsts/repos/tfvc/understand-lock-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/undo-changes-another-user-workspace.md",
+      "redirect_url": "/vsts/repos/tfvc/undo-changes-another-user-workspace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/undo-command.md",
+      "redirect_url": "/vsts/repos/tfvc/undo-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/unlabel-command.md",
+      "redirect_url": "/vsts/repos/tfvc/unlabel-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/unshelve-command.md",
+      "redirect_url": "/vsts/repos/tfvc/unshelve-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/use-branches-isolate-risk-team-foundation-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/use-branches-isolate-risk-team-foundation-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/use-labels-take-snapshot-your-files.md",
+      "redirect_url": "/vsts/repos/tfvc/use-labels-take-snapshot-your-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/use-source-control-explorer-manage-files-under-version-control.md",
+      "redirect_url": "/vsts/repos/tfvc/use-source-control-explorer-manage-files-under-version-control",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/use-team-foundation-version-control-commands.md",
+      "redirect_url": "/vsts/repos/tfvc/use-team-foundation-version-control-commands",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/use-visual-studio-git.md",
+      "redirect_url": "/vsts/repos/tfvc/use-visual-studio-git",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/view-branch-hierarchy-team-project.md",
+      "redirect_url": "/vsts/repos/tfvc/view-branch-hierarchy-team-project",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/view-command.md",
+      "redirect_url": "/vsts/repos/tfvc/view-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/view-file-changes-using-annotate.md",
+      "redirect_url": "/vsts/repos/tfvc/view-file-changes-using-annotate",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/view-manage-past-versions.md",
+      "redirect_url": "/vsts/repos/tfvc/view-manage-past-versions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/view-where-when-changesets-have-been-merged.md",
+      "redirect_url": "/vsts/repos/tfvc/view-where-when-changesets-have-been-merged",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/work-version-control-locks.md",
+      "redirect_url": "/vsts/repos/tfvc/work-version-control-locks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/workfold-command.md",
+      "redirect_url": "/vsts/repos/tfvc/workfold-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/workspace-command.md",
+      "redirect_url": "/vsts/repos/tfvc/workspace-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/tfvc/workspaces-command.md",
+      "redirect_url": "/vsts/repos/tfvc/workspaces-command",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/branches.md",
+      "redirect_url": "/vsts/repos/git/branches",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/cherry-pick.md",
+      "redirect_url": "/vsts/repos/git/cherry-pick",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/clone.md",
+      "redirect_url": "/vsts/repos/git/clone",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/commits.md",
+      "redirect_url": "/vsts/repos/git/commits",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/creatingrepo.md",
+      "redirect_url": "/vsts/repos/git/creatingrepo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/gitworkflow.md",
+      "redirect_url": "/vsts/repos/git/gitworkflow",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/history.md",
+      "redirect_url": "/vsts/repos/git/review-history",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/howto.md",
+      "redirect_url": "/vsts/repos/git/howto",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/ignore-files.md",
+      "redirect_url": "/vsts/repos/git/ignore-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/merging.md",
+      "redirect_url": "/vsts/repos/git/merging",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/pulling.md",
+      "redirect_url": "/vsts/repos/git/pulling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/pullrequest.md",
+      "redirect_url": "/vsts/repos/git/pullrequest",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/pushing.md",
+      "redirect_url": "/vsts/repos/git/pushing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/rebase.md",
+      "redirect_url": "/vsts/repos/git/rebase",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/tutorial/undo.md",
+      "redirect_url": "/vsts/repos/git/undo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/how-to/create-pr-status-server-with-azure-functions.md",
+      "redirect_url": "/vsts/repos/git/create-pr-status-server-with-azure-functions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/how-to/create-pr-status-server.md",
+      "redirect_url": "/vsts/repos/git/create-pr-status-server",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/how-to/git-tags.md",
+      "redirect_url": "/vsts/repos/git/git-tags",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/how-to/pr-status-policy.md",
+      "redirect_url": "/vsts/repos/git/pr-status-policy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/how-to/require-branch-folders.md",
+      "redirect_url": "/vsts/repos/git/require-branch-folders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/case-sensitivity.md",
+      "redirect_url": "/vsts/repos/git/case-sensitivity",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/forks.md",
+      "redirect_url": "/vsts/repos/git/forks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/git-branching-guidance.md",
+      "redirect_url": "/vsts/repos/git/git-branching-guidance",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/git-config.md",
+      "redirect_url": "/vsts/repos/git/git-config",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/git-dates.md",
+      "redirect_url": "/vsts/repos/git/git-dates",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/git-names.md",
+      "redirect_url": "/vsts/repos/git/git-names",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/history.md",
+      "redirect_url": "/vsts/repos/git/history",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/mapping-my-tfvc-actions-to-git.md",
+      "redirect_url": "/vsts/repos/git/mapping-my-tfvc-actions-to-git",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/pull-request-status.md",
+      "redirect_url": "/vsts/repos/git/pull-request-status",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/concepts/repository-settings.md",
+      "redirect_url": "/vsts/repos/git/repository-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/auth-overview.md",
+      "redirect_url": "/vsts/repos/git/auth-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/branch-permissions.md",
+      "redirect_url": "/vsts/repos/git/branch-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/branch-policies-overview.md",
+      "redirect_url": "/vsts/repos/git/branch-policies-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/branch-policies.md",
+      "redirect_url": "/vsts/repos/git/branch-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/command-prompt.md",
+      "redirect_url": "/vsts/repos/git/command-prompt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/commit-details.md",
+      "redirect_url": "/vsts/repos/git/commit-details",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/commit-history.md",
+      "redirect_url": "/vsts/repos/git/commit-history",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/create-a-readme.md",
+      "redirect_url": "/vsts/repos/git/create-a-readme",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/create-branch.md",
+      "redirect_url": "/vsts/repos/git/create-branch",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/create-new-repo.md",
+      "redirect_url": "/vsts/repos/git/create-new-repo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/create-repo-intellij.md",
+      "redirect_url": "/vsts/repos/git/create-repo-intellij",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/delete-branch.md",
+      "redirect_url": "/vsts/repos/git/delete-branch",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/delete-existing-repo.md",
+      "redirect_url": "/vsts/repos/git/delete-existing-repo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/find-a-file.md",
+      "redirect_url": "/vsts/repos/git/find-a-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/forks-overview.md",
+      "redirect_url": "/vsts/repos/git/forks-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/gcm-ssh-passphrase.md",
+      "redirect_url": "/vsts/repos/git/gcm-ssh-passphrase",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/get-started-vs2013.md",
+      "redirect_url": "/vsts/repos/git/get-started-vs2013",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/git-index-lock.md",
+      "redirect_url": "/vsts/repos/git/git-index-lock",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/gitquickstart-vs2015.md",
+      "redirect_url": "/vsts/repos/git/gitquickstart-vs2015",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/gitquickstart.md",
+      "redirect_url": "/vsts/repos/git/gitquickstart",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/import-from-TFVC.md",
+      "redirect_url": "/vsts/repos/git/import-from-TFVC",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/import-git-repository.md",
+      "redirect_url": "/vsts/repos/git/import-git-repository",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/index.md",
+      "redirect_url": "/vsts/repos/git/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/lfs-kerberos.md",
+      "redirect_url": "/vsts/repos/git/lfs-kerberos",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/limits.md",
+      "redirect_url": "/vsts/repos/git/limits",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/lock-branches.md",
+      "redirect_url": "/vsts/repos/git/lock-branches",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/manage-large-files.md",
+      "redirect_url": "/vsts/repos/git/manage-large-files",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/manage-your-branches.md",
+      "redirect_url": "/vsts/repos/git/manage-your-branches",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/merging-with-squash.md",
+      "redirect_url": "/vsts/repos/git/merging-with-squash",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/overview-2013.md",
+      "redirect_url": "/vsts/repos/git/overview-2013",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/overview.md",
+      "redirect_url": "/vsts/repos/git/overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/pull-requests-overview.md",
+      "redirect_url": "/vsts/repos/git/pull-requests-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/pull-requests.md",
+      "redirect_url": "/vsts/repos/git/pull-requests",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/repo-rename-tfs2015.md",
+      "redirect_url": "/vsts/repos/git/repo-rename-tfs2015",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/repo-rename.md",
+      "redirect_url": "/vsts/repos/git/repo-rename",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/restore-deleted-branch.md",
+      "redirect_url": "/vsts/repos/git/restore-deleted-branch",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/set-up-credential-managers.md",
+      "redirect_url": "/vsts/repos/git/set-up-credential-managers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/share-your-code-in-git-cmdline.md",
+      "redirect_url": "/vsts/repos/git/share-your-code-in-git-cmdline",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/share-your-code-in-git-eclipse.md",
+      "redirect_url": "/vsts/repos/git/share-your-code-in-git-eclipse",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/share-your-code-in-git-vs-2013.md",
+      "redirect_url": "/vsts/repos/git/share-your-code-in-git-vs-2013",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/share-your-code-in-git-vs-2017.md",
+      "redirect_url": "/vsts/repos/git/share-your-code-in-git-vs-2017",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/share-your-code-in-git-vs.md",
+      "redirect_url": "/vsts/repos/git/share-your-code-in-git-vs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/share-your-code-in-git-xcode.md",
+      "redirect_url": "/vsts/repos/git/share-your-code-in-git-xcode",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/team-projects.md",
+      "redirect_url": "/vsts/repos/git/team-projects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/git/use-ssh-keys-to-authenticate.md",
+      "redirect_url": "/vsts/repos/git/use-ssh-keys-to-authenticate",
       "redirect_document_id": true
     }
   ]

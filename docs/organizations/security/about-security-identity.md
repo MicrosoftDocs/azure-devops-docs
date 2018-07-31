@@ -47,7 +47,7 @@ For on-premises TFS, AD is recommended when managing a large group of users. For
 
 Other applications and services can integrate with VSTS and TFS services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
 
-*	[Alternate credentials](../../git/auth-overview.md#alternate-credentials) 
+*	[Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) 
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 
@@ -68,11 +68,11 @@ to generate tokens for accessing [REST APIs](/vsts/integrate/get-started/rest/ba
 and [Profiles](/vsts/integrate/api/shared/profiles) 
 APIs support only OAuth. 
 
-*	[SSH authentication](../../git/use-ssh-keys-to-authenticate.md) 
+*	[SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
 to generate encryption keys when you use Linux, macOS, 
 or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
 and can't use 
-[Git credential managers](../../git/set-up-credential-managers.md) 
+[Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
 for HTTPS authentication.
 

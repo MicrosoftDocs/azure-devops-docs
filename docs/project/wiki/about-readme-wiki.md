@@ -49,8 +49,8 @@ You can provide guidance to your team in these places using Markdown:
 - [Pulbish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)    
-- [Repository Readme files](../../git/create-a-readme.md) 
-- [Pull request comments](../../git/pull-requests.md) 
+- [Repository Readme files](../../repos/git/create-a-readme.md) 
+- [Pull request comments](../../repos/git/pull-requests.md) 
  
 ::: moniker-end
 
@@ -60,8 +60,8 @@ You can provide guidance to your team in these places using Markdown:
 - [Add and edit wiki pages](add-edit-wiki.md)    
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)  
-- [Repository Readme files](../../git/create-a-readme.md) 
-- [Pull request comments](../../git/pull-requests.md) 
+- [Repository Readme files](../../repos/git/create-a-readme.md) 
+- [Pull request comments](../../repos/git/pull-requests.md) 
  
 ::: moniker-end
 
@@ -69,8 +69,8 @@ You can provide guidance to your team in these places using Markdown:
       
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)  
-- [Repository Readme files](../../git/create-a-readme.md) 
-- [Pull request comments](../../git/pull-requests.md) 
+- [Repository Readme files](../../repos/git/create-a-readme.md) 
+- [Pull request comments](../../repos/git/pull-requests.md) 
  
 ::: moniker-end
 

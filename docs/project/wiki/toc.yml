@@ -23,7 +23,7 @@
   - name: Wiki file structure
     href: wiki-file-structure.md 
   - name: Create a README 
-    href: ../../git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json 
+    href: ../../repos/git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json 
 - name: How-to Guides
   items:
   - name: View wiki history and revert

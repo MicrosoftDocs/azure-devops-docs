@@ -840,29 +840,29 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with Git in Visual Studio </b></p>
-<p>To get started working with Git, [clone a repository, add code, and create topic branches in VSTS](../git/gitquickstart.md) or [Visual Studio](../git/get-started.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
+<p>To get started working with Git, [clone a repository, add code, and create topic branches in VSTS](../repos/git/create-new-repo.md) or [Visual Studio](../repos/git/gitquickstart.md). Learn how to commit, publish, and conduct a pull request of your changes. </p>
 ![Visual Studio Git UI pages](_img/features/features-git-vs-ui.png)  
 <br/>
 
 <p><b>Clone repositories</b></p>
-<p>To work locally, you [clone a repository](../git/get-started.md). </p>
+<p>To work locally, you [clone a repository](../repos/git/clone.md). </p>
 
 <p><b>Commit changes</b></p>
-<p>Enter commit messages and [quickly push your local changes to the shared repo](../git/get-started.md).</p>
+<p>Enter commit messages and [quickly push your local changes to the shared repo](../repos/git/pushing.md).</p>
 ![Commit and push changes](_img/features/alm-feature-git-dev-commit-push.png)  
 <br/>
 
 <p><b>Pull requests</b></p>
-<p>Use [pull requests to review and merge branch code to a master branch](../git/pull-requests.md).   </p>
+<p>Use [pull requests to review and merge branch code to a master branch](../repos/git/pull-requests.md).   </p>
 <p><b>Sync</b></p>
 
-<p>Quickly [sync your local branch with a shared repo](../git/get-started.md).</p>
+<p>Quickly [sync your local branch with a shared repo](../repos/git/pulling.md).</p>
 
 
 </td>
 <td width="33%">
 <p><b>Get started using Eclipse</b></p>
-<p>[Work with Git repositories](../git/share-your-code-in-git-eclipse.md) using the Team Explorer Everwhere IDE for Eclipse.  </p>
+<p>[Work with Git repositories](../repos/git/share-your-code-in-git-eclipse.md) using the Team Explorer Everwhere IDE for Eclipse.  </p>
 
 <p><b>Add reviewers to get feedback </b></p>
 <p>Use the [**@mention** control to add reviewers](../work/productivity/productivity-tips.md) to your pull request to get their feedback about your changes.  </p>
@@ -871,7 +871,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Resolve Git merge conflicts</b></p>
-<p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to [prevent and resolve merge conflicts](../git/tutorial/merging.md).   </p>
+<p>Merge conflicts occur when commits have changes to the same files as other newer commits in the branch history. Learn how to [prevent and resolve merge conflicts](../repos/git/merging.md).   </p>
 
 <p><b>Code search</b></p>
 <p>Maximize cross-team collaboration and code sharing by finding code across all the projects to which you have access. Narrow down your results and focus in on code by using [filters, preview code, view history, compare versions, and more](../project/search/overview.md) </p>
@@ -879,20 +879,20 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get notified about pull requests</b></p>
-<p>Subscribe to email alerts to get notified about [new pull requests, changes, approvals, and rejections](../git/pull-requests.md#notifications).</p>
+<p>Subscribe to email alerts to get notified about [new pull requests, changes, approvals, and rejections](../repos/git/pull-requests.md#notifications).</p>
 
 <p><b>Set branch policies </b></p>
-<p>To improve code quality, [set branch policies to require code reviews or  automatically add reviewers](../git/branch-policies.md). </p>
+<p>To improve code quality, [set branch policies to require code reviews or  automatically add reviewers](../repos/git/branch-policies.md). </p>
 
 <p><b>Automatically build pull requests </b></p>
-<p>Set a branch policy to [automatically generate a build for a pull request to selected branches](../git/branch-policies.md).</p>
+<p>Set a branch policy to [automatically generate a build for a pull request to selected branches](../repos/git/branch-policies.md).</p>
 
 <p><b>Create Git repositories </b></p>
-<p>When you create a team project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](../git/repo-rename.md) from the admin context. </p>
+<p>When you create a team project with Git as your version control system, you automatically create a Git repo. You can [Create additional Git repos](../repos/git/repo-rename.md) from the admin context. </p>
 
 
 <p><b>Rename a Git repository </b></p>
-<p>[Rename Git repos](../git/repo-rename.md) from the admin context. </p>
+<p>[Rename Git repos](../repos/git/repo-rename.md) from the admin context. </p>
 
 </td>
 <td width="33%">
@@ -907,18 +907,18 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Use the [**#ID** control to link work items](../work/productivity/productivity-tips.md) to your pull request to support tracking work.    </p>
 
 <p><b>Get started using Xcode </b></p>
-<p>[Work with Git repositories](../git/share-your-code-in-git-xcode.md) using the Xcode IDE.  </p>
+<p>[Work with Git repositories](../repos/git/share-your-code-in-git-xcode.md) using the Xcode IDE.  </p>
 
 <p><b>Git commands</b></p>
-<p>Use [Git command line tools](../git/command-prompt.md) when you need to perform select manual tasks or to automate work using a script.</p>
+<p>Use [Git command line tools](../repos/git/command-prompt.md) when you need to perform select manual tasks or to automate work using a script.</p>
 
 
 
 <p><b>Bypass a branch policy</b></p>
-<p>Grant an [Exempt from policy enforcement permission](../git/branch-policies.md) to a user or group.</p>
+<p>Grant an [Exempt from policy enforcement permission](../repos/git/branch-policies.md) to a user or group.</p>
 
 <p><b>Rebase a branch</b></p>
-<p>Before merging a topic branch into master, you may choose to first [rebase your topic branch onto the latest commit in master](../git/rebase.md).</p>
+<p>Before merging a topic branch into master, you may choose to first [rebase your topic branch onto the latest commit in master](../repos/git/rebase.md).</p>
 
 
 
@@ -944,7 +944,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Get started with TFVC in Visual Studio </b></p>
-<p>[Develop and share your code](../tfvc/share-your-code-in-tfvc-vs.md). Learn how to configure your workspace, check-in your code, compare file changes, and view file history. </p>
+<p>[Develop and share your code](../repos/tfvc/share-your-code-in-tfvc-vs.md). Learn how to configure your workspace, check-in your code, compare file changes, and view file history. </p>
 ![Visual Studio Git UI pages](_img/features/features-tfvc-ui-vs.png)  
 <br/>
 
@@ -1101,7 +1101,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Branch policies (Git)</b></p>
-<p>Improve code quality by [setting branch policies](../git/branch-policies.md) to ensure build are never broken or getting the right people to review changes. </p>
+<p>Improve code quality by [setting branch policies](../repos/git/branch-policies.md) to ensure build are never broken or getting the right people to review changes. </p>
 
 
 </td>
@@ -2094,7 +2094,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your [Project page](../project/navigation/work-across-projects.md). </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md), set preferences, [create personal access tokens (VSTS)](../git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
+<p>Choose your name to access [your profile settings](../organizations/settings/set-your-preferences.md), set preferences, [create personal access tokens (VSTS)](../repos/git/command-prompt.md#pat), [set alerts](../work/track/alerts-and-notifications.md), and log-in or out.</p>
 ![Profile drop down menu](_img/features/alm-index-my-profile-menu.png)  
 <br/>
 
@@ -2121,7 +2121,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Provide team guidance through [Welcome](../project/wiki/markdown-guidance.md) (Markdown format) pages and add team [dashboards](../report/dashboards/dashboards.md) to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
-<p>Manage source code using distributed [Git repositories](../git/get-started.md) or [Team Foundation version control](https://msdn.microsoft.com/library/ms181384%28v=vs.140%29).  to </p>
+<p>Manage source code using distributed [Git repositories](../repos/git/index.md) or [Team Foundation version control](../repos/tfvc/index.md).  to </p>
 
 <p><b>Work</b></p>
 <p>Plan and track work by [creating a product backlog](../work/backlogs/create-your-backlog.md), and managing work using [Kanban](../work/kanban/kanban-basics.md) or [Scrum](../work/scrum/assign-work-sprint.md) processes. Find work items you want to review or update by [creating queries](../work/track/using-queries.md), or visualize progress by [creating query-based charts](../report/dashboards/charts.md)  </p>
@@ -2313,7 +2313,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Grant or restrict access to: </p>
 <ul>
 <li>[Git repositories](../organizations/security/set-git-tfvc-repository-permissions.md)</li>
-<li>[Git branches](../git/branch-permissions.md)</li>
+<li>[Git branches](../repos/git/branch-permissions.md)</li>
 <li>[TFVC source code and folders](../organizations/security/set-git-tfvc-repository-permissions.md)</li>
 <li>[Build](../pipelines/policies/set-permissions.md)</li>
 <li>[Test](../organizations/security/set-project-collection-level-permissions.md))</li>
@@ -2762,7 +2762,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="50%">
 
 <p><b>Git code changes </b></p>
-<p>[Get detailed information about what changes have been made to your local and centralized branches and repositories](../git/get-started.md), compare files and folders, review history of commits and  file changes. </p>
+<p>[Get detailed information about what changes have been made to your local and centralized branches and repositories](../repos/git/history.md), compare files and folders, review history of commits and file changes. </p>
 
 <p><b>Integrate Git development with work tracking (VSTS) </b></p>
 <p>Drive Git development and stay in sync as a team to complete backlog items and tasks using the [Git Development section](../work/backlogs/connect-work-items-to-git-dev-ops.md). Add branches, create pull requests, and view all development performed to support the specific work item.  </p>

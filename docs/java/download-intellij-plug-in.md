@@ -39,7 +39,7 @@ The plugin can be installed from IntelliJ by browsing the Plugin Repository.
 1. Click the `Install plugin` button and restart IntelliJ IDEA. 
  
  ## Next Steps 
-* Learn more about the IntelliJ plugin from our [VSTS Git with IntelliJ documentation](/vsts/git/create-repo-intellij).
+* Learn more about the IntelliJ plugin from our [VSTS Git with IntelliJ documentation](/vsts/repos/git/create-repo-intellij).
  
  ## Frequently Asked Questions (FAQ)
 

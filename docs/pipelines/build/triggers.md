@@ -183,7 +183,7 @@ After your create your YAML build definition, you can use the designer to specif
 
 <h2 id="gated">TFVC gated check-in</h2>
 
-If your code is in a [Team Foundation version control (TFVC)](../../tfvc/overview.md) repo, use gated check-in to protect against breaking changes.
+If your code is in a [Team Foundation version control (TFVC)](../../repos/tfvc/overview.md) repo, use gated check-in to protect against breaking changes.
 
 By default **Use workspace mappings for filters** is selected. Builds are triggered whenever a change is checked in under a path specified in your mappings in the [source repository settings](repository.md).
 
@@ -197,7 +197,7 @@ When a developers try to check-in, they are prompted to build their changes.
 
 The system then creates a shelveset and builds it.
 
-For details on the gated check-in experience, see [Check in to a folder that is controlled by a gated check-in build process](../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
+For details on the gated check-in experience, see [Check in to a folder that is controlled by a gated check-in build process](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 
 ### Option to run CI builds
@@ -269,7 +269,7 @@ After your create your YAML build definition, you can use the designer to specif
 
 ### How do I protect my Git codebase from build breaks?
 
-If your code is in a Git repo on VSTS or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../git/branch-policies.md). This option is not available for GitHub repos.
+If your code is in a Git repo on VSTS or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../repos/git/branch-policies.md). This option is not available for GitHub repos.
 
 ::: moniker range="vsts"
 

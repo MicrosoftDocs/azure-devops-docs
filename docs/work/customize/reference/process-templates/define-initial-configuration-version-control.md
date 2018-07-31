@@ -21,7 +21,7 @@ ms.date: 10/11/2017
 >  For VSTS and for TFS 2017.3 and later versions, you create projects from the web 
 >  portal, which ignores this plug-in. Instead, default permissions are set for 
 >  project-level and collection-level security groups. After you create a project, 
->  you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or 
+>  you can manage [TFVC check-in policies](../../../../repos/tfvc/add-check-policies.md) or 
 >  [permissions](../../../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.  
 
 
@@ -141,4 +141,4 @@ The default assignments for TFVC and GIt permissions made to all default process
 
 ## Related articles  
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
--  [Code](../../../../git/overview.md)
+-  [Code](../../../../repos/git/overview.md)
