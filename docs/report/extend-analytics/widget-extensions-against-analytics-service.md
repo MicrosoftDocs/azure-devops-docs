@@ -76,7 +76,7 @@ Next copy the following HTML to the **Analytics.html** file:
 ```
 
 This code simply sets up the structure of the page - we'll write the code in a separate javascript file. The **title** div is the title of the 
-widget and the **chart** div will hold the chart. The size dimensions allow for room around the chart for asthetics.
+widget and the **chart** div will hold the chart. The size dimensions allow for room around the chart for aesthetics.
 
 Add the following css to the **widget.css** file:
 
