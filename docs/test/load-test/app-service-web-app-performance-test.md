@@ -102,7 +102,7 @@ Visual Studio Web Test file are:
 To upload and run a Visual Studio Web Test file:
  
 1. Follow the [steps above](#singletest) to open the **New performance test** blade.
-   In this blade, choose the CONFIGFURE TEST USING option to open the 
+   In this blade, choose the CONFIGURE TEST USING option to open the 
    **Configure test using** blade.  
 
    ![Opening the Configure load testing blade](_img/app-service-web-app-performance-test/multiple-01-authoring-blade.png)
