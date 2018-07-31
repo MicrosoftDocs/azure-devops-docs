@@ -22,7 +22,7 @@ ms.date: 11/3/2016
 ## Get items linked to a pull request
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/workitems?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/workitems?api-version={version}
 ```
 
 | Parameter   | Type    | Notes

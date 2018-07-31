@@ -39,7 +39,7 @@ Code coverage is available only in the build workflow.
 <a name="beforestart"></a>
 ## Before you start
 
-* [Check in your solution](../../git/overview.md) 
+* [Check in your solution](../../repos/git/overview.md) 
   to VSTS. Include your test projects.
 
 <a name="createbuild"></a>

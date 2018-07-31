@@ -1178,7 +1178,7 @@ Version control paths must conform to the following restrictions. See also [Opti
 
 ## TFVC files
 
-The version control system stores many different types of files. [Set up Team Foundation version control on your dev machine](../../tfvc/set-up-team-foundation-version-control-your-dev-machine.md) provides details on how to add existing Visual Studio projects or solutions.
+The version control system stores many different types of files. [Set up Team Foundation version control on your dev machine](../../repos/tfvc/set-up-team-foundation-version-control-your-dev-machine.md) provides details on how to add existing Visual Studio projects or solutions.
 
 Files and folders you add to Team Foundation version control must conform to the following restrictions.
 
@@ -1293,7 +1293,7 @@ Shelveset names must conform to the following restrictions.
 
 ##TFVC workspaces
 
-A workspace is a client-side copy of the files and folders in Team Foundation version control (TFVC). When you create multiple workspaces, you can have different versions of the same version control folder on a client computer. [Create and work with workspaces](../../tfvc/create-work-workspaces.md) provides more details. 
+A workspace is a client-side copy of the files and folders in Team Foundation version control (TFVC). When you create multiple workspaces, you can have different versions of the same version control folder on a client computer. [Create and work with workspaces](../../repos/tfvc/create-work-workspaces.md) provides more details. 
 
 Workspace names must conform to the following restrictions.  
 

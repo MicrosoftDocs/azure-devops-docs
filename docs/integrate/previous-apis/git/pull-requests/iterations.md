@@ -25,7 +25,7 @@ request is created, an iteration is created.  Each iteraction can contain more t
 ## Get a list of iterations
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/iterations?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/iterations?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
@@ -45,7 +45,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get a specific iteration
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/iterations/{iterationId}?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/iterations/{iterationId}?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
@@ -65,7 +65,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get the commits for an iteration
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/iterations/{iterationId}/commits?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/iterations/{iterationId}/commits?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
@@ -84,7 +84,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get the changes in the pull request at an iteration
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/iterations/{iterationId}/changes?$top={top};$skip={skip};$compareTo={compareTo};api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/iterations/{iterationId}/changes?$top={top};$skip={skip};$compareTo={compareTo};api-version={version}
 ```
 
 | Parameter   | Type    | Notes

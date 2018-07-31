@@ -151,7 +151,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <li>`CheckInShelveset`: **Gated check-in** trigger.</li>
 <li>`PullRequest`: The build was triggered by a Git branch policy that requires a build.</li>
 </ul>
-See [Build pipeline triggers](../triggers.md), [Improve code quality with branch policies](../../../git/branch-policies.md).
+See [Build pipeline triggers](../triggers.md), [Improve code quality with branch policies](../../../repos/git/branch-policies.md).
 </td>
 </tr>
 
@@ -180,8 +180,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Provider</td>
 <td>The type of [repository you selected](../repository.md).
 <ul>
-<li>`TfsGit`: [TFS Git repository](../../../git/overview.md)
-<li>`TfsVersionControl`: [Team Foundation Version Control](../../../tfvc/overview.md)
+<li>`TfsGit`: [TFS Git repository](../../../repos/git/overview.md)
+<li>`TfsVersionControl`: [Team Foundation Version Control](../../../repos/tfvc/overview.md)
 <li>`Git`: Git repository hosted on an external server
 <li>`Svn`: Subversion
 </ul>
@@ -191,7 +191,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>Build.Repository.Tfvc.Workspace</td>
-<td>Defined if your [repository](../repository.md) is Team Foundation Version Control. The name of the [TFVC workspace](../../../tfvc/create-work-workspaces.md) used by the build agent.
+<td>Defined if your [repository](../repository.md) is Team Foundation Version Control. The name of the [TFVC workspace](../../../repos/tfvc/create-work-workspaces.md) used by the build agent.
 <br/><br/>
 For example, if the Agent.BuildDirectory is `c:\agent\_work\12` and the Agent.Id is `8`, the workspace name could be: `ws_12_8`
 <br/><br/>
@@ -266,8 +266,8 @@ Note: In TFVC, if you are running a gated check-in build or manually building a 
 <td>Build.SourceVersion</td>
 <td>The latest version control change that is included in this build.
 <ul>
-<li>Git: The [commit](../../../git/tutorial/commits.md) ID.</li>
-<li>TFVC: the [changeset](../../../tfvc/find-view-changesets.md).</li>
+<li>Git: The [commit](../../../repos/git/commits.md) ID.</li>
+<li>TFVC: the [changeset](../../../repos/tfvc/find-view-changesets.md).</li>
 </ul>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -291,7 +291,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.SourceTfvcShelveset</td>
 <td>Defined if your [repository](../repository.md) is Team Foundation Version Control.
 <br/><br/>
-If you are running a [gated build](../triggers.md#gated) or a [shelveset build](../../get-started-designer.md#queueabuild), this is set to the name of the [shelveset](../../../tfvc/suspend-your-work-manage-your-shelvesets.md) you are building.
+If you are running a [gated build](../triggers.md#gated) or a [shelveset build](../../get-started-designer.md#queueabuild), this is set to the name of the [shelveset](../../../repos/tfvc/suspend-your-work-manage-your-shelvesets.md) you are building.
 <br/><br/>
 Note: This variable yields a value that is invalid for build use in a build number format.
 </td>
@@ -348,22 +348,22 @@ Otherwise, it is set to `False`. Available in <strong>TFS 2018.2</strong>.</td>
 
 <tr>
 <td>System.PullRequest.PullRequestId</td>
-<td>The ID of the pull request that caused this build. For example: `17`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../git/branch-policies.md#require-the-pull-request-to-build).)</td>
+<td>The ID of the pull request that caused this build. For example: `17`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation).)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.SourceBranch</td>
-<td>The branch that is being reviewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../git/branch-policies.md#require-the-pull-request-to-build).)</td>
+<td>The branch that is being reviewed in a pull request. For example: `refs/heads/users/raisa/new-feature`. (This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation).)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.SourceRepositoryURI</td>
-<td>The URL to the repo that contains the pull request. For example: `http://our-server:8080/tfs/DefaultCollection/_git/OurProject`. (This variable is initialized only if the build ran because of a [VSTS Git PR affected by a branch policy](../../../git/branch-policies.md#require-the-pull-request-to-build).)</td>
+<td>The URL to the repo that contains the pull request. For example: `http://our-server:8080/tfs/DefaultCollection/_git/OurProject`. (This variable is initialized only if the build ran because of a [VSTS Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation).)</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.TargetBranch</td>
-<td>The branch that is the target of a pull request. For example: `refs/heads/master`. This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../git/branch-policies.md#require-the-pull-request-to-build).</td>
+<td>The branch that is the target of a pull request. For example: `refs/heads/master`. This variable is initialized only if the build ran because of a [Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation).</td>
 </tr>
 
 <tr>

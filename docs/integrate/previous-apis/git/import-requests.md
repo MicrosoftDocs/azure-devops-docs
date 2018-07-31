@@ -15,7 +15,7 @@ ms.contentid: 95B4933F-8191-4073-835A-3A0E218987D3
 ## Get a list of import requests
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/importRequests?api-version={version}[&includeAbandoned={bool}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/importRequests?api-version={version}[&includeAbandoned={bool}]
 ```
 
 | Parameter         | Type    | Default | Notes
@@ -39,7 +39,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get an import request
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/importRequests/{importRequestId}?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/importRequests/{importRequestId}?api-version={version}
 ```
 
 | Parameter         | Type    | Notes
@@ -57,7 +57,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Create a request to import a repository
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/importRequests?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/importRequests?api-version={version}
 ```
 ```
 {
@@ -93,7 +93,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 There can only be one active import request associated with a repository. Marking a failed import request abandoned makes it inactive.
 
 ```no-highlight
-PATCH https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/importRequests/{importRequestId}?api-version={version}
+PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/importRequests/{importRequestId}?api-version={version}
 ```
 ```
 {

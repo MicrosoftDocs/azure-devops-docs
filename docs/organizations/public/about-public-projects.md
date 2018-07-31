@@ -50,7 +50,7 @@ To contribute to a project by adding or modifying code, work items, pipelines, o
 * [Define a README for your project](../../project/wiki/project-vision-status.md)
 
 **To share code:**
-* [Share your code](../../git/gitquickstart.md)
+* [Share your code](../../repos/git/gitquickstart.md)
 
 **To define pipelines:** 
 * [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)

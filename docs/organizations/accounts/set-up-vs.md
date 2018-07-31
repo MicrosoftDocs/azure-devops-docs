@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 When you first launch [Visual Studio 2015](https://visualstudio.microsoft.com/products/vs-2015-product-editions), 
 you can sign in and connect to [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs).
 
-If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../../git/gitquickstart.md) to connect to 
+If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../../repos/git/gitquickstart.md) to connect to 
 your VSTS from the Team Explorer window.
 
 Once connected, you can store or share code in free, unlimited, private, 
@@ -40,7 +40,7 @@ Learn [what else you get with VSTS](https://visualstudio.microsoft.com/pricing/v
 If you want, you can also use VSTS with any IDE or code editor, like:
 
 *	[Eclipse, Android Studio, or IntelliJ](/vsts/java)
-*	Xcode (see [Git](../../git/share-your-code-in-git-xcode.md) or [TFVC](../../tfvc/share-your-code-in-tfvc-xcode.md))
+*	Xcode (see [Git](../../repos/git/share-your-code-in-git-xcode.md) or [TFVC](../../repos/tfvc/share-your-code-in-tfvc-xcode.md))
 *	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 ##	How do I set up Visual Studio 2015 for VSTS during sign in?
@@ -89,8 +89,8 @@ and choose the version control to manage your code.
 
 	Not sure which to choose? Learn which 
 	[process](../../work/work-items/guidance/choose-process.md) 
-	and version control ([Git](../../git/overview.md) 
-	or [Team Foundation Version Control](../../tfvc/overview.md))
+	and version control ([Git](../../repos/git/overview.md) 
+	or [Team Foundation Version Control](../../repos/tfvc/overview.md))
 	work best for you.
 
 0.	If you're a new Visual Studio user, you can change your settings here, 
@@ -110,8 +110,8 @@ or change them later in Visual Studio options.
 
 *	[Add users to your VSTS organization](add-organization-users-from-user-hub.md)
 
-*	Add code to [Git](../../git/share-your-code-in-git-vs.md) 
-or [Team Foundation](../../tfvc/share-your-code-in-tfvc-vs.md) version control
+*	Add code to [Git](../../repos/git/share-your-code-in-git-vs.md) 
+or [Team Foundation](../../repos/tfvc/share-your-code-in-tfvc-vs.md) version control
 
 *	[Create your backlog](../../work/backlogs/create-your-backlog.md) to organize your work, 
 	[manage your process](../../organizations/settings/work/manage-process.md), 

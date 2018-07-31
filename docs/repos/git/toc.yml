@@ -1,0 +1,203 @@
+- name: Git Repositories
+  href: index.md
+- name: Overview
+  items:
+  - name: Learn about Git
+    href: overview.md
+  - name: Learn about pull requests
+    href: pull-requests-overview.md
+  - name: Learn about branch policies
+    href: branch-policies-overview.md
+  - name: Learn about forks
+    href: forks-overview.md 
+- name: Quickstarts
+  items:
+  - name: Create repo - Web
+    href: create-new-repo.md
+  - name: Create repo - CLI
+    href: share-your-code-in-git-cmdline.md
+  - name: Create repo - Visual Studio
+    href: share-your-code-in-git-vs-2017.md
+  - name: Create repo - IntelliJ
+    href: create-repo-intellij.md
+  - name: Create repo - Xcode
+    href: share-your-code-in-git-xcode.md
+  - name: Create repo - Eclipse
+    href: share-your-code-in-git-eclipse.md
+  - name: Import repo - Web
+    href: import-git-repository.md
+- name: Tutorials
+  href: gitworkflow.md
+  items:
+  - name: Commit, share, and sync your code
+    href: gitquickstart.md
+  - name: Create a new repo
+    href: creatingrepo.md
+  - name: Clone an existing repo
+    href: clone.md
+  - name: Save work with commits
+    href: commits.md
+  - name: Create work in branches
+    href: branches.md
+  - name: Share code with push
+    href: pushing.md
+  - name: Update code with fetch and pull
+    href: pulling.md
+  - name: Review code with pull requests
+    href: pullrequest.md
+  - name: Apply changes with rebase
+    href: rebase.md
+  - name: Copy changes with cherry-pick
+    href: cherry-pick.md
+  - name: Resolve merge conflicts
+    href: merging.md
+  - name: Undo changes
+    href: undo.md
+  - name: Ignore files
+    href: ignore-files.md
+  - name: Review history
+    href: review-history.md
+- name: Samples
+  items:
+  - name: VSTS Samples for .NET
+    href: https://github.com/Microsoft/vsts-dotnet-samples
+- name: Concepts
+  items:
+  - name: History in Git
+    href: history.md
+  - name: Branch organization
+    href: git-branching-guidance.md
+  - name: Pull requests
+    items:
+    - name: Review code with pull requests
+      href: pull-requests.md
+    - name: Squash merge pull requests
+      href: merging-with-squash.md
+    - name: Extend pull request workflows with pull request status
+      href: pull-request-status.md
+  - name: Forks
+    href: forks.md
+  - name: Authentication
+    href: auth-overview.md
+  - name: Understand dates in Git
+    href: git-dates.md
+  - name: Understand names in Git
+    href: git-names.md
+  - name: Case sensitivity
+    href: case-sensitivity.md
+  - name: Git preferences and settings
+    href: git-config.md
+  - name: Repository settings
+    href: repository-settings.md
+  - name: Scale
+    items:
+    - name: Manage large files
+      href: manage-large-files.md
+- name: How-to Guides
+  items:
+  - name: Authenticate with SSH
+    href: use-ssh-keys-to-authenticate.md
+  - name: Authenticate with the Git Credential Manager
+    href: set-up-credential-managers.md
+  - name: Pull request status
+    items:
+    - name: Create a pull request status server
+      href: create-pr-status-server.md
+    - name: Use Azure Functions to create custom branch policies
+      href: create-pr-status-server-with-azure-functions.md
+    - name: Configure branch policy for an external service
+      href: pr-status-policy.md
+  - name: Define a CI build for your repo
+    href: ../../pipelines/build/ci-build-git.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+  - name: Drive Git development from a work item
+    href: ../../work/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+  - name: Import a repo from TFVC
+    href: import-from-TFVC.md
+  - name: Manage repos
+    items:
+    - name: Delete a repo
+      href: delete-existing-repo.md
+    - name: Rename a repo
+      href: repo-rename.md
+    - name: Find a file
+      href: find-a-file.md
+    - name: Create a readme
+      href: create-a-readme.md
+    - name: Git and TFVC repos
+      href: team-projects.md
+    - name: "Set Git permissions (Security)"
+      href: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+  - name: Manage branches
+    items:
+    - name: Manage your branches
+      href: manage-your-branches.md
+    - name: Create a new branch
+      href: create-branch.md
+    - name: Delete a branch
+      href: delete-branch.md
+    - name: Restore a deleted branch
+      href: restore-deleted-branch.md
+    - name: Require branch folders
+      href: require-branch-folders.md
+    - name: Lock a branch
+      href: lock-branches.md
+    - name: Branch policies
+      href: branch-policies.md
+    - name: "Branch permissions (Security)"
+      href: branch-permissions.md
+  - name: Map TFVC actions to Git
+    href: mapping-my-tfvc-actions-to-git.md
+  - name: Set up continuous integration
+    href: ../../pipelines/build/triggers.md
+  - name: Work with tags
+    href: git-tags.md
+- name: Reference
+  items:
+  - name: Command reference
+    href: command-prompt.md
+  - name: Format comments with markdown
+    href: ../../project/wiki/markdown-guidance.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+  - name: Frequently asked questions
+    href: howto.md
+  - name: History
+    items:
+    - name: Commit history
+      href: commit-history.md
+    - name: Commit details
+      href: commit-details.md
+  - name: "Default Git permissions (Security)"
+    href: ../../organizations/security/default-git-permissions.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+  - name: Git limits
+    href: limits.md
+- name: Resources
+  items:
+  - name: What is Git?
+    href: /azure/devops/git/what-is-git
+  - name: What is version control?
+    href: /azure/devops/git/what-is-version-control
+  - name: Plan your migration to Git
+    href: /azure/devops/git/centralized-to-git
+  - name: Migrate from TFVC to Git
+    href: /azure/devops/git/migrate-from-tfvc-to-git
+  - name: Git REST APIs
+    href: https://visualstudio.com/docs/integrate/api/repos/git/overview
+  - name: Pro Git
+    href: https://www.git-scm.com/book/en/v2
+    name: Learn Git
+    href: /azure/devops/git/learn-git-with-team-services/
+  - name: Git at Scale
+    href: /azure/devops/git/git-at-scale
+  - name: How we use Git at Microsoft
+    href: /azure/devops/devops-at-microsoft/use-git-microsoft
+  - name: Marketplace extensions
+    href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
+  - name: IDE integration and extension
+    items:
+    - name: Visual Studio
+      href: ../../organizations/accounts/set-up-vs.md
+    - name: Visual Studio Code
+      href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.team
+    - name: Eclipse
+      href: /vsts/java/download-eclipse-plug-in
+    - name: IntelliJ IDEA
+      href: /vsts/java/download-intellij-plug-in
