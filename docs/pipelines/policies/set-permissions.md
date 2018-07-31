@@ -130,7 +130,7 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 1. Click **Security**, and then choose the group whose permissions you want to modify. 
 
-   Here we choose the Build Administrators group and change the **Use build resources** permission. For a description of each permissions, see [Permissions and groups reference, Collection-level permissionss](../../organizations/security/permissions.md#collection-level).
+   Here we choose the Build Administrators group and change the **Use build resources** permission. For a description of each permissions, see [Permissions and groups reference, Collection-level permissions](../../organizations/security/permissions.md#collection-level).
 
    <img src="_img/set-build-release-permissions/set-build-collection-level-permission-dialog.png" alt="Security dialog for Project Collection Build Administrators group" style="border: 1px solid #C3C3C3;" />
 
@@ -157,7 +157,7 @@ For example, here we show how to add a user to the Administrator role for a serv
 
    For example, here we add Raisa to the Administrator role. 
 
-   ![Add a user to the Adminstrator role](_img/manage-roles/add-user-role-endpoint-service.png)  
+   ![Add a user to the Administrator role](_img/manage-roles/add-user-role-endpoint-service.png)  
 
 1. Click **Add**.  
 
@@ -186,7 +186,7 @@ You will need to be a member of the Project Collection Administrator group to ma
 
    For example, here we add Raisa to the Administrator role. 
 
-   ![Add a user to the Adminstrator role](_img/manage-roles/add-user-role-deployment-pool.png)  
+   ![Add a user to the Administrator role](_img/manage-roles/add-user-role-deployment-pool.png)  
 
 1. Click **Add**.  
 

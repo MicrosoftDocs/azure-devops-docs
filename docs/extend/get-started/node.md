@@ -227,7 +227,7 @@ To test an extension, it must be installed to a VSTS account. Installing require
 
 2. Click the **+ Account** button, enter the name of your account, and press enter.
 
-   ![Share with accounbt](_img/share-dialog.png)
+   ![Share with account](_img/share-dialog.png)
 
 3. Click the **X** to close this panel.
 

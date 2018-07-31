@@ -40,7 +40,7 @@ When VSTS presents the authorization approval page to your user,
 it will use your company name, and app name and descriptions,
 along with the URLs for your company's web site, your app's website, and your terms of service and privacy statements, like this.
 
-<img alt="Visaul Studio Online authorization page with your company and app information" src="./_img/grant-access.png" style="border: 1px solid #CCCCCC" />
+<img alt="Visual Studio Online authorization page with your company and app information" src="./_img/grant-access.png" style="border: 1px solid #CCCCCC" />
 
 When you call VSTS to ask for a user's authorization, and the user grants it,
 VSTS will redirect the user's browser to your authorization callback URL with the authorization code for that authorization.
