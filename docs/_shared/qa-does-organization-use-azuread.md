@@ -1,4 +1,4 @@
-####Q:  How do I find out if my VSTS organization controls access with Azure Active Directory (Azure AD)?
+#### Q:  How do I find out if my VSTS organization controls access with Azure Active Directory (Azure AD)?
 
 A:	If you have at least Basic access, here's how:
 

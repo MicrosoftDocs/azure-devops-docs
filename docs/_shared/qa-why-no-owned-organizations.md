@@ -1,4 +1,4 @@
-####Q:	Why don't I see the VSTS organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
+#### Q:	Why don't I see the VSTS organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
 
 A:	The list of organizations that you own are 
 associated with the identity that you use 

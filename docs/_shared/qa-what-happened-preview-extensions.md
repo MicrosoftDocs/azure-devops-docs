@@ -1,4 +1,4 @@
-####Q:	What happened to my preview extension?
+#### Q:	What happened to my preview extension?
 
 A:	Your extension is no longer in preview and 
 is now generally available as a paid extension, 

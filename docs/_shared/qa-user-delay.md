@@ -1,4 +1,4 @@
-####Q: Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?
+#### Q: Why don't users appear or disappear promptly in VSTS after I add or delete them in the Users hub?
 
 A:	If you experience delays finding users or having them 
 promptly removed from VSTS, like in drop-down 
