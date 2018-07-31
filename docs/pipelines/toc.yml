@@ -112,7 +112,7 @@
       href: build/repository.md
     - name: Triggers
       href: build/triggers.md
-    - name: Variables
+    - name: Predefined variables
       href: build/variables.md
   - name: Releases
     items:
@@ -159,6 +159,8 @@
         href: process/multiple-phases.md
     - name: Conditions
       href: process/conditions.md
+    - name: Variables
+      href: process/variables.md
   - name: Licensing
     items:
     - name: Pipelines in TFS

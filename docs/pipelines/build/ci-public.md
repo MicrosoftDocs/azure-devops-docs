@@ -69,7 +69,7 @@ By default, secrets associated with your build pipeline are not made available t
 * These items, if used by your build:
   * [Service connection](../library/service-endpoints.md) credentials
   * Files from the [Secure Files library](../library/secure-files.md)
-  * Build [variables](../build/variables.md#user-defined-variables) marked **secret**
+  * Build [variables](../process/variables.md#user-defined-variables) marked **secret**
 
 To bypass this precaution, enable the checkbox labeled **Make secrets available to builds of forks**. Be aware of this setting's impact on security as described below.
 
