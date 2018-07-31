@@ -205,7 +205,7 @@ Drag items that are currently unparented to the feature under which they belong.
 
 ::: moniker range=">= tfs-2017"
 
-You can multi-selectwork items on the backlog and sprint backlogs in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
+You can multi-select work items on the backlog and sprint backlogs in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
 ::: moniker-end
 ::: moniker range="tfs-2015"
 Multi-select of work items on the backlog and sprint backlogs requires TFS 2015.1 or later versions. This feature works in the same way as [multi-select works within query results](../backlogs/bulk-modify-work-items.md).   
