@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/09/2018
+ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
 
@@ -32,8 +32,7 @@ Make sure that the new owner:
 * Has signed in to your VSTS organization, created a Visual Studio profile, and agreed to the Terms of Service.
 * Has accessed the organization, following initial profile creation, at least once.
 
-  >[!div class="mx-imgBorder"]
-![Last sign in never](_img/change-organization-ownership/user_last_access.png)
+   ![Last sign in never](_img/change-organization-ownership/user-last-access.png)
 
 ## Change VSTS organization owner
 
@@ -44,7 +43,7 @@ Make sure that the new owner:
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 2. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Admin settings icon.
 
-   ![Choose the gear, Admin settings icon](_img/_shared/sign-in-1.png)
+   ![Choose the gear, Admin settings icon](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Choose Overview and you will see the organization owner listed beneath Organization information.
 

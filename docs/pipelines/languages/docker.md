@@ -127,19 +127,25 @@ steps:
       command: 'publish'
       arguments: '--configuration $(buildConfiguration) --output out'
       zipAfterPublish: false
-    
+      addProjectNameToPublishPath: false
+     
 - task: Docker@0
   displayName: Build an image
   inputs:
     containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: '<Name of your Docker hub service connection>'
+    dockerRegistryConnection: '<name of your Docker hub service connection>'
+    action: 'Build an image'
+    qualifyImageName: false
+    imageName: '<your Docker ID>/$(Build.Repository.Name):$(Build.BuildId)' 
 
 - task: Docker@0
   displayName: Push an image
   inputs:
     containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: '<Name of your Docker hub service connection>'
+    dockerRegistryConnection: '<name of your Docker hub service connection>'
     action: 'Push an image'
+    qualifyImageName: false
+    imageName: '<your Docker ID>/$(Build.Repository.Name):$(Build.BuildId)' 
 
 ```
     
