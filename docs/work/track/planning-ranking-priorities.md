@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: sample
 ms.date: 04/14/2017  
 ---
@@ -157,7 +158,7 @@ The following table describes the fields that you can use to plan and prioritize
 <tr>
 	<td><p>Value Area  <sup>1</sup></p></td>
 	<td><p>The area of customer value addressed by the epic, feature, or backlog item. Values include:</p><ul><li><p><strong>Architectural</strong> &mdash; technical services to implement business features that deliver solution</p></li><li><p><strong>Business</strong> &mdash; services that fulfill customers or stakeholder needs that directly deliver customer value to support the business (Default)</p></li></ul>
-<p>Reference name=Microsoft.VSTS.Common.BusinessValue, Data type=String</p>  </td>
+<p>Reference name=Microsoft.VSTS.Common.ValueArea, Data type=String</p>  </td>
 
 	<td>Bug, Epic, Feature, Product Backlog Item (Scrum) Requirement (CMMI), User Story (Agile)</td>
 </tr>
