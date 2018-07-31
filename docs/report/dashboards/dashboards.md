@@ -1,6 +1,6 @@
 ---
 title: Add and manage team dashboards
-titlesuffix: VSTS & TFS  
+titleSuffix: VSTS & TFS  
 description: View progress and trends by defining dashboards in Visual Studio Team Services & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-analytics
