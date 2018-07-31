@@ -57,6 +57,9 @@ You can add multiple [phases](phases.md) to a pipeline. By using different phase
 
 ::: moniker-end
 
+> [!NOTE]
+> Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [concurrent jobs](../licensing/concurrent-jobs-vsts.md).
+
 # [Web](#tab/web)
 
 To add a new phase, select '...' on the process channel in **Tasks** tab of the pipeline. The conditions and order of execution for a phase are displayed when you select the  phase in the editor.
