@@ -195,7 +195,7 @@ Alias to reference a build variable. For example:
 
 Some of the more useful predefined variables include:
 
-* `Build.Reason` which you can use to check whether the build was the result of a [build trigger](../build/triggers.md), a [Git PR affected by a branch policy](../../git/branch-policies.md), or a [TFVC gated check-in](../../tfvc/check-folder-controlled-by-gated-check-build-process.md).
+* `Build.Reason` which you can use to check whether the build was the result of a [build trigger](../build/triggers.md), a [Git PR affected by a branch policy](../../repos/git/branch-policies.md), or a [TFVC gated check-in](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 * `Build.SourceBranch`
 

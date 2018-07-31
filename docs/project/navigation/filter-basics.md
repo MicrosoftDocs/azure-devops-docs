@@ -77,8 +77,8 @@ To learn more about filtering using tags, see [Add tags to work items to categor
 ::: moniker-end
 
 ## Related articles  
-- [Commit history](../../git/commit-history.md)
-- [Working with Git tags](../../git/how-to/git-tags.md)
+- [Commit history](../../repos/git/commit-history.md)
+- [Working with Git tags](../../repos/git/git-tags.md)
 - [Filter backlogs and queries](../../work/backlogs/filter-backlogs.md)
 - [Filter your Kanban board](../../work/kanban/filter-kanban-board.md)
 - [Add tags to work items](../../work/track/add-tags-to-work-items.md) 

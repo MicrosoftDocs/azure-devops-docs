@@ -647,17 +647,17 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
  * [Visual Studio Code for Windows, macOS, and Linux](https://code.visualstudio.com)
 
- * [Visual Studio with Git for Windows](../git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+ * [Visual Studio with Git for Windows](../repos/git/share-your-code-in-git-vs.md) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 
- * [Visual Studio with TFVC](../tfvc/share-your-code-in-tfvc-vs.md)
+ * [Visual Studio with TFVC](../repos/tfvc/share-your-code-in-tfvc-vs.md)
 
- * [Eclipse](../git/share-your-code-in-git-eclipse.md)
+ * [Eclipse](../repos/git/share-your-code-in-git-eclipse.md)
 
- * [Xcode](../git/share-your-code-in-git-xcode.md)
+ * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
 
  * [IntelliJ](/vsts/java/download-intellij-plug-in)
 
- * [Command line](../git/share-your-code-in-git-cmdline.md)
+ * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
 
 * Services
 
@@ -714,9 +714,9 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a Git repository
 
- - Build a [branch](../git/tutorial/branches.md) or a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging).
+ - Build a [branch](../repos/git/branches.md) or a [tag](http://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
- - Build a [commit](../git/tutorial/commits.md).
+ - Build a [commit](../repos/git/commits.md).
 
 * In a TFVC repository
 

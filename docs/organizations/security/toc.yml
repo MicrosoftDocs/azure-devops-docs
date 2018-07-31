@@ -59,7 +59,7 @@
   - name: Set object-level or role-based permissions
     items: 
     - name: Set Git branch permissions
-      href: ../../git/branch-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
+      href: ../../repos/git/branch-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
     - name: Set build and release permissions
       href: ../../pipelines/policies/set-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
     - name: Set package feed permissions

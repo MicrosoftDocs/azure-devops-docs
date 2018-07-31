@@ -96,7 +96,7 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Add your code</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/en-us/vsts/git/">Git Repositories</a></li>
+                                                    <li><a class="barLink" href="/en-us/vsts/repos/git/">Git Repositories</a></li>
                                                     <li><a class="barLink" href="/en-us/vsts/java/">Get started with Java</a></li>
                                                 </ul>
                                             </div>
@@ -206,11 +206,11 @@ featureFlags:
                                 <div class="group">
                                     <h3>Code</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/git/index">Git Repositories</a></li>
-                                        <li><a class="barLink" href="/vsts/git/pull-requests-overview">Pull Requests</a></li>
-                                        <li><a class="barLink" href="/vsts/git/forks-overview">Forks</a></li>
-                                        <li><a class="barLink" href="/vsts/git/branch-policies-overview">Branch Policies</a></li>
-                                        <li><a class="barLink" href="/vsts/tfvc/index">TFVC</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/index">Git Repositories</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/pull-requests-overview">Pull Requests</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/forks-overview">Forks</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/git/branch-policies-overview">Branch Policies</a></li>
+                                        <li><a class="barLink" href="/vsts/repos/tfvc/index">TFVC</a></li>
                                         <li><a class="barLink" href="/vsts/java/index">Java DevOps</a></li>
                                     </ul>
                                     <h3>Continuous Integration &amp; Delivery</h3>
@@ -316,7 +316,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/pull-requests-overview">
+                                <a href="/vsts/repos/git/pull-requests-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -335,7 +335,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/forks-overview">
+                                <a href="/vsts/repos/git/forks-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -354,7 +354,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/git/branch-policies-overview">
+                                <a href="/vsts/repos/git/branch-policies-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -373,7 +373,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/tfvc">
+                                <a href="/vsts/repos/tfvc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

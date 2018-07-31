@@ -123,5 +123,5 @@ With both a *provisioned wiki* and *publish as code wikis*, you can work offline
 - [Create a wiki for your team project](./wiki-create-repo.md)
 - [Wiki Git repository files and file structure](wiki-file-structure.md)
 - [Publish a Git repository to a wiki](publish-repo-to-wiki.md) 
-- [Get Started with Git](../../git/gitquickstart.md)
+- [Get Started with Git](../../repos/git/gitquickstart.md)
 

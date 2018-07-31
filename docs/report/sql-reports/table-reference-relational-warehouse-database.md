@@ -58,7 +58,7 @@ You can create reports and query for data by using the warehouse database. The d
 |[Build Project tables](table-reference-build-project.md)|Files that were built and the platforms and flavors that were used.|  
 |[Work Item Changeset tables](work-item-changeset-tables.md)|Links between work items and changesets.|  
   
- For more information about version control, see [Code](../../tfvc/overview.md).  
+ For more information about version control, see [Code](../../repos/tfvc/overview.md).  
   
 ##  <a name="TestResults"></a> Tests  
  You can query for information about test results and analyze how well the tests cover the code by using the tables in the following illustration.  

@@ -122,9 +122,9 @@ To learn more, see [Add links to work items](../backlogs/add-link.md).
 
 The Development links control displays all of your development links, whether based on a git or Team Foundation version control (TFVC) repository. It displays links in a set order, and provides calls-to-action that support users to [drive development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).  
 
-Team Foundation version control (TFVC) lets you link work items to version control changesets or versioned source code files by using the Changeset and Versioned Item link types. When you check in pending changes or use My Work to check in changes, [work items are automatically linked to your changes](../../tfvc/check-your-work-team-codebase.md).  
+Team Foundation version control (TFVC) lets you link work items to version control changesets or versioned source code files by using the Changeset and Versioned Item link types. When you check in pending changes or use My Work to check in changes, [work items are automatically linked to your changes](../../repos/tfvc/check-your-work-team-codebase.md).  
 
-Git lets you link work items to commits by using the Commit link type. To learn how, see [Manage and commit your changes](../../git/tutorial/commits.md).  
+Git lets you link work items to commits by using the Commit link type. To learn how, see [Manage and commit your changes](../../repos/git/commits.md).  
 
 ### Related scoped links control 
 The Related Work links control displays links to other work items in a set order on the front page of the form. It supports these link types: Duplicate/Duplicate of, Parent/Child, Predecessor/Successor, Related, and Tests/Tested by. To learn more about different link types, see [Link work items to support traceability and manage dependencies](../track/link-work-items-support-traceability.md).

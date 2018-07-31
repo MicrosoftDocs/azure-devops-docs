@@ -22,7 +22,7 @@ Git annotated tags are tags with additional metadata including the person who cr
 ## Get annotated tag
 
 ```httprequest
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/annotatedTags/{objectId}?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/annotatedTags/{objectId}?api-version={version}
 ```
 
 | Parameter  | Type   | Notes
@@ -40,7 +40,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Create annotated tag
 
 ```httprequest
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/annotatedTags?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/annotatedTags?api-version={version}
 ```
 ```http
 Content-Type: application/json

@@ -56,7 +56,7 @@ You can use the Progress dashboard to track team progress toward completing an i
 |![Step 6](_img/procguid_6a.png "ProcGuid_6a")|List of upcoming events. The list is derived from a SharePoint Web Part.<br /><br /> ![Import Events Web part](_img/sharepoint_dashboard.png "SharePoint_Dashboard")|  
 |![Step 7](_img/procguid_7.png "ProcGuid_7")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number.<br /><br /> ![Project Work Items Web part](_img/twsa_dashprojectwi.png "TWSA_DashProjectWI")|  
 |![Step 8](_img/procguid_8.png "ProcGuid_8")|List of recent builds and their status. You can view more details about a specific build by choosing it.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> See also [Run, monitor, and manage](../../pipelines/overview.md).|  
-|![9](_img/procguid_9.png "ProcGuid_9")|List of the most recent check-ins. You can view more details about a specific check-in by choosing it.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")<br /><br /> See also [Manage pending changes](../../tfvc/develop-code-manage-pending-changes.md).|  
+|![9](_img/procguid_9.png "ProcGuid_9")|List of the most recent check-ins. You can view more details about a specific check-in by choosing it.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")<br /><br /> See also [Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md).|  
   
 ##  <a name="RequiredActivities"></a> Required activities for tracking progress  
  For the reports that appear in the Progress dashboard to be useful and accurate, the team must perform the following activities:  

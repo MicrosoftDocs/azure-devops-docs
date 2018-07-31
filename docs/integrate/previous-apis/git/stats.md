@@ -23,13 +23,13 @@ In the picture below, `feature1` is 2 commits ahead of and 3 commits behind `mas
 
 ![Two branches illustrating ahead/behind](./_img/ahead-behind.png)
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Git/BranchStatsSample.cs) available for this endpoint.
+There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/BranchStatsSample.cs) available for this endpoint.
 
 
 ## Get branch statistics
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/stats/branches[/{name}]?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/stats/branches[/{name}]?api-version={version}
 ```
 
 | Parameter         | Type                         | Default | Notes

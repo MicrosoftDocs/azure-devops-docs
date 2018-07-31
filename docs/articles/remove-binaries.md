@@ -36,7 +36,7 @@ Imagine that you commit a large file, such as a video, to your git server. In a 
 >
 > The following steps will remove the video from your branch history,
 > but the file remains in your repo history when you clone your repo from VSTS. Removing the files from your branch history prevents the files from being updated, which will
-> create another version of the large file in your repo. Learn more about [managing large files in Git](../git/manage-large-files.md) and 
+> create another version of the large file in your repo. Learn more about [managing large files in Git](../repos/git/manage-large-files.md) and 
 > see this [blog post](https://blogs.msdn.microsoft.com/congyiw/2015/12/14/why-does-cloning-from-vsts-return-old-unreferenced-objects/) for a detailed explanation and workaround for this behavior 
 > when using VSTS Git repos.
 
@@ -116,7 +116,7 @@ __Use with caution, as you can easily lose data on the server!!__
 
 *Notice that you must authenticate to the server for this to work*
 
-If you are using VSTS, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](../git/auth-overview.md?view=vsts#personal-access-tokens).
+If you are using VSTS, you may need to set up an alternate credential that doesn't use special characters (such as the "@" in an email address). To do this, follow the instructions [here](../repos/git/auth-overview.md?view=vsts#personal-access-tokens).
 
 Now, the branch will be permanently gone from the server, and subsequent clones and syncs by project team members will not download the large files you were trying to remove.  Users will need to pull down from the server in order to make sure that they are in sync with the new server repo state.
 

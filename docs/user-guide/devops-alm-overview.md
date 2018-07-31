@@ -56,10 +56,10 @@ Depending on whether you use Git or TFVC as a repo, you can develop your code in
 
 Git is a distributed version control system. Each developer has a copy of the source repository on their dev machine. Developers can commit each set of changes on their dev machine and perform version control operations such as history and compare without a network connection. Branches are lightweight. 
 
-[![Android Studio](_img/overview/code-git-android-studio-1.png)](/vsts/java/download-android-studio-plug-in)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](_img/overview/code-git-eclipse-2.png)](../git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](_img/overview/code-git-intellij-3.png)](/vsts/java/download-intellij-plug-in)  
+[![Android Studio](_img/overview/code-git-android-studio-1.png)](/vsts/java/download-android-studio-plug-in)&#160;&#160;&#160;&#160;&#160;&#160;[![Eclipse](_img/overview/code-git-eclipse-2.png)](../repos/git/share-your-code-in-git-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![IntelliJ](_img/overview/code-git-intellij-3.png)](/vsts/java/download-intellij-plug-in)  
 
 <br/>
-[![Visual Studio](_img/overview/code-git-visual-studio.png)](../git/share-your-code-in-git-vs.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](_img/overview/code-git-xcode.png)](../git/share-your-code-in-git-xcode.md)  
+[![Visual Studio](_img/overview/code-git-visual-studio.png)](../repos/git/share-your-code-in-git-vs.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio Code](_img/overview/code-git-visual-studio-code.png)](https://code.visualstudio.com/docs/editor/versioncontrol)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](_img/overview/code-git-xcode.png)](../repos/git/share-your-code-in-git-xcode.md)  
 
 ### TFVC
 
@@ -67,7 +67,7 @@ TFVC is a centralized version control system that lets you apply granular permis
 
 You can use TFVC to scale from small to large projects, and by using server workspaces, you can scale up to very large codebases with millions of files per branch and large binary files. And with compare and annotate you can identify the exact changes that they made.
 
-[![Eclipse](_img/overview/code-tfvc-eclipse.png)](../tfvc/share-your-code-in-tfvc-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio](_img/overview/code-tfvc-visualstudio.png)](../tfvc/share-your-code-in-tfvc-vs.md#workspace)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](_img/overview/code-tfvc-xcode.png)](../tfvc/share-your-code-in-tfvc-xcode.md)  
+[![Eclipse](_img/overview/code-tfvc-eclipse.png)](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Visual Studio](_img/overview/code-tfvc-visualstudio.png)](../repos/tfvc/share-your-code-in-tfvc-vs.md#workspace)&#160;&#160;&#160;&#160;&#160;&#160;[![Xcode](_img/overview/code-tfvc-xcode.png)](../repos/tfvc/share-your-code-in-tfvc-xcode.md)  
 
 
 ### Package management and code search 

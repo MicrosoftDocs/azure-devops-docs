@@ -102,7 +102,7 @@ using **Azure Active Directory**, and you don't have a Microsoft account, you ca
 
 	![Name your organization, choose your version control](_img/sign-up-visual-studio-team-services/create-team-services-organization-directory.png)
 
-	Learn which version control ([Git](../../git/overview.md) or [Team Foundation Version Control](../../tfvc/overview.md)) 
+	Learn which version control ([Git](../../repos/git/overview.md) or [Team Foundation Version Control](../../repos/tfvc/overview.md)) 
 	works best for you.
 
 0.	Confirm your organization's location, and if you're using **Azure Active Directory**, confirm the **directory** 
@@ -146,15 +146,15 @@ that you're connecting to your VSTS organization.
 *	Add code to Git or Team Foundation version control
 
 	*	Git with [Eclipse](/vsts/java/download-eclipse-plug-in), 
-	[Xcode](../../git/share-your-code-in-git-xcode.md), 
+	[Xcode](../../repos/git/share-your-code-in-git-xcode.md), 
 	[Android Studio](/vsts/java/download-android-studio-plug-in), 
 	[IntelliJ](/vsts/java/download-intellij-plug-in), 
-	[Visual Studio](../../git/share-your-code-in-git-vs-2017.md), or 
+	[Visual Studio](../../repos/git/share-your-code-in-git-vs-2017.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 	*	TFVC using [Eclipse](/vsts/java/download-eclipse-plug-in), 
-	[Xcode](../../tfvc/share-your-code-in-tfvc-xcode.md), 
-	[Visual Studio](../../tfvc/use-visual-studio-git.md), or 
+	[Xcode](../../repos/tfvc/share-your-code-in-tfvc-xcode.md), 
+	[Visual Studio](../../repos/tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
 *	[Create your backlog](../../work/backlogs/create-your-backlog.md), 

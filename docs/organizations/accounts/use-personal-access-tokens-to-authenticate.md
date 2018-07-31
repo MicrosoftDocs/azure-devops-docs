@@ -19,15 +19,15 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) use enterpri
 natively support Microsoft account and Azure AD authentication, so you can directly use those authentication methods to sign in.
 
 For non-Microsoft tools that integrate into VSTS but do not support Microsoft account or Azure AD authentication
-interactions (for example, Git, NuGet, or Xcode), you need to set up personal access tokens by using [Git credential managers](../../git/set-up-credential-managers.md) or by creating PATs manually (see below).  You can also use personal access tokens when there is no "pop up UI" such as with command-line tools, integrating tools or tasks into build pipelines, or using  [REST APIs](../../integrate/get-started/rest/basics.md).
+interactions (for example, Git, NuGet, or Xcode), you need to set up personal access tokens by using [Git credential managers](../../repos/git/set-up-credential-managers.md) or by creating PATs manually (see below).  You can also use personal access tokens when there is no "pop up UI" such as with command-line tools, integrating tools or tasks into build pipelines, or using  [REST APIs](../../integrate/get-started/rest/basics.md).
 
-Personal access tokens essentially are alternate passwords that you create in a secure way using your normal authentication, and PATs can have expiration dates, limited scopes (for example, only certain REST APIs or command line operations are valid), and specific VSTS accounts.  You can put them into environment variables so that scripts do not hard code passwords.  For more information, see [Authentication overview](../../git/auth-overview.md) and  [scopes](../../integrate/get-started/authentication/oauth.md#scopes).
+Personal access tokens essentially are alternate passwords that you create in a secure way using your normal authentication, and PATs can have expiration dates, limited scopes (for example, only certain REST APIs or command line operations are valid), and specific VSTS accounts.  You can put them into environment variables so that scripts do not hard code passwords.  For more information, see [Authentication overview](../../repos/git/auth-overview.md) and  [scopes](../../integrate/get-started/authentication/oauth.md#scopes).
 
-[!INCLUDE [personal-access-tokens-procedure](../../git/_shared/personal-access-tokens.md)]
+[!INCLUDE [personal-access-tokens-procedure](../../repos/git/_shared/personal-access-tokens.md)]
 
 ## Using PATs
 
-For example using PATs, see using [Git credential managers](../../git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../package/nuget/consume.md#mac-os), and [Reporting clients](../../report/analytics/client-authentication-options.md#enter-credentials-within-a-client).
+For example using PATs, see using [Git credential managers](../../repos/git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../package/nuget/consume.md#mac-os), and [Reporting clients](../../report/analytics/client-authentication-options.md#enter-credentials-within-a-client).
 
 ## Frequently asked questions (FAQ)  
 
