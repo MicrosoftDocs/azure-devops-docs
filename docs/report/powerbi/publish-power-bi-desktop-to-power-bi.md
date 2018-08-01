@@ -64,7 +64,7 @@ Once you've [created a Power BI Desktop file](access-analytics-power-bi.md) and 
 At this point, the data will update on your scheduled basis using the credentials entered.
 
 >[!IMPORTANT]   
->Any VSTS data included in the Analytics View and published Power BI.com will be accessible to all users with access to the report reguardless of the project permissions configured in VSTS.    
+>Any VSTS data included in the Analytics View and published Power BI.com will be accessible to all users with access to the report regardless of the project permissions configured in VSTS.    
 
 
 

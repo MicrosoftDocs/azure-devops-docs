@@ -157,7 +157,7 @@ When you review, you can update and add new test cases.
 Or, you can filter and sort the test cases in list view. Then select 
 just the ones that you want to bulk edit using the grid.
 
-![Select test cases in listview to bulk edit in grid view](_img/create-test-cases/GridEditSelected.png)
+![Select test cases in list view to bulk edit in grid view](_img/create-test-cases/GridEditSelected.png)
 
 To return to the test suite view, switch the view 
 from Grid back to List.
@@ -523,7 +523,7 @@ Some browser versions do not currently support all the features of the Test &amp
 | Create tasks and test cases | &nbsp; **Yes** | &nbsp; **Yes** |
 | Create feedback requests | &nbsp; **Yes** | &nbsp; **Yes** |
 | Export session report for sharing | &nbsp; **Yes** | &nbsp; **Yes** |
-| End-to-end tracability for workitems | &nbsp; **Yes** | &nbsp; **Yes** |
+| End-to-end traceability for workitems | &nbsp; **Yes** | &nbsp; **Yes** |
 | Simplified bug and task tracking and triaging | &nbsp; **Yes** | &nbsp; **Yes** |
 | View and get insights from sessions | &nbsp; **Yes** | &nbsp; **Yes** |
 | View similar existing bugs | &nbsp; **Yes** | &nbsp; **Yes** |

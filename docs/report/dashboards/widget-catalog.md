@@ -296,7 +296,7 @@ Provides quick access to open the following Agile tools and team resources:
 ::: moniker range="vsts"
 ## Analytics
 
-To add Analytics widgets to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
+To add Analytics widgets to your dashboard, you first need to install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 
 ##&nbsp;&nbsp;&nbsp;Burndown chart 
 <a id="burndown-analytics-widget"></a>  

@@ -209,7 +209,7 @@ takes care of starting `ssh-agent` for you.
 
 ### What notifications may I receive regarding my SSH keys?
 
-Whenever you register a new SSH Key with VSTS, you will recevie an email notification informing you that a new SSH key has been added to your account.
+Whenever you register a new SSH Key with VSTS, you will receive an email notification informing you that a new SSH key has been added to your account.
 
 ![SSH notification example](_img/use-ssh-authentication/ssh_notification.png)
 

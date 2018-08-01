@@ -14,7 +14,7 @@ ms.date: 06/27/2017
 
 # Fetch work items with queries programmatically in VSTS
 
-A common scenario in Visual Studio Team Services (VSTS) is to fetch work items using queries. This guide details how to implement that scenario programatically using our REST APIs or .NET client libraries. 
+A common scenario in Visual Studio Team Services (VSTS) is to fetch work items using queries. This guide details how to implement that scenario programmatically using our REST APIs or .NET client libraries. 
 
 ## Prerequisites
 To work on this Quickstart, you'll need the following prerequisites:

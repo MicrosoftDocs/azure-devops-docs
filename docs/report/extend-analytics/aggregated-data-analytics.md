@@ -35,7 +35,7 @@ In this topic you'll learn:
 Analytics relies on OData to author queries over your VSTS data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
 ## Basic root URL
-Use the following basic root URL as a prefix for all the examples provided in this topic. Replace `{aacount}` with your VSTS account. 
+Use the following basic root URL as a prefix for all the examples provided in this topic. Replace `{account}` with your VSTS account. 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
