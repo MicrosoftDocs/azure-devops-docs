@@ -77,7 +77,8 @@ Learn more about [Azure AD administrators](https://azure.microsoft.com/en-us/doc
   To check your permissions, [Sign in to the Azure portal](https://ms.portal.azure.com) with your
   work or school account. Go to your directory.
 
-  ![Check that you're a global administrator](_img/access-with-azure-ad/check-your-role-azure-active-directory.png)
+  > [!div class="mx-imgBorder"]  
+  >![Check that you're a global administrator](_img/access-with-azure-ad/check-your-role-azure-active-directory.png)
 
 * You must add your Microsoft account to your Azure AD.
 
