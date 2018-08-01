@@ -1564,7 +1564,7 @@ To resolve this, create two seperate groups that contain one control each.
 
 #### Error example
 ```
-  <Control Type="FieldContvisualstudio.microsoft.comomfield.foo" Label="Foo" LabelPosition="Left">
+  <Control Type="FieldControl" FieldName="customfield.foo" Label="Foo" LabelPosition="Left">
     <Link UrlRoot="http://www.visualstudio.com/team-services" />
   </Control>
 ```
@@ -1573,7 +1573,7 @@ To resolve this, create two seperate groups that contain one control each.
 ```
   <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1"  
     <LabelText>  
-        <Text>  visualstudio.microsoft.com
+        <Text>  
           <Link UrlRoot="http://www.visualstudio.com/team-services" />  
               Title 2  
         </Text>  
