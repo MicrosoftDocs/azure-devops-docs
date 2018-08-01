@@ -14,7 +14,7 @@
 </tr>
 <tbody valign="top" align="center">
 <tr>
-<td align="left">View build and release definitions 
+<td align="left">View build and release pipelines 
 </td>
 <td>  </td>
 <td>![checkmark](_img/checkmark.png)</td>

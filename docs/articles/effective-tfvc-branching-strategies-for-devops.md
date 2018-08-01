@@ -82,7 +82,7 @@ Automate your build to:
 |Main|CI_Bld|Dev|Triggered with every checkin to main|
 |V1.00|RC_Bld|Dev -> QA -> UAT -> Staging -> Prod|Triggered with every checkin to release|
 
-When version 2 becomes the Release Candidate, you can update your existing RC build definition to point to the V2.00 branch. It will now build and release just as V1.00 did when it was the current version.
+When version 2 becomes the Release Candidate, you can update your existing RC build pipeline to point to the V2.00 branch. It will now build and release just as V1.00 did when it was the current version.
 
 |Branch|Build|Pipelines|Notes|
 |------|-----|---------|-----|

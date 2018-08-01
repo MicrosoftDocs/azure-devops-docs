@@ -43,7 +43,7 @@ From the team project admin content for Version Control, you can [set permission
 
 You can define and manage your builds and releases from the web portal, **Build and Release** hub. For an overview of build and release management features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
 
-From the **Build and Release** hub, you can set permissions for all or individual build definitions, release definitions, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
+From the **Build and Release** hub, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
 
 [!INCLUDE [temp](_shared/build-release.md)]
 

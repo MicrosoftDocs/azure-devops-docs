@@ -104,7 +104,7 @@ There are two options for setting up authentication in a build task:
 #### Without a Task Runner
 To set up **npm** authentication in a build task _without_ a task runner, follow the directions below.
 
-1. Add a build definition in VSTS under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in VSTS under the **Build and Release** --> **Builds** hub.
 
     ![Connect to feed from VSTS Package Management](../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
@@ -112,42 +112,42 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 1. Select _Empty process_ at the top of the form
 
-1. Add a task to **Phase 1** of your build definition by clicking the **"+"**:
+1. Add a task to **Phase 1** of your build pipeline by clicking the **"+"**:
 
-    ![Add task to build definition](_shared/_img/build-definition/add-task-build-definition.png)
+    ![Add task to build pipeline](_shared/_img/build-definition/add-task-build-definition.png)
 
 1. Select **Package** or search for _npm_ in the search bar, select **npm** and select _Add_:
 
-    ![Add task to build definition](_shared/_img/build-definition/build-definition-npm-task.png)
+    ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-task.png)
 
 1. Select the **npm install** task underneath **Phase 1**:
 
-    ![Add task to build definition](_shared/_img/build-definition/build-definition-npm-install.png)
+    ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-install.png)
 
 1. Browse to and select your **Working folder with package.json**:
 
-    ![Add task to build definition](_shared/_img/build-definition/build-definition-working-folder.png)
+    ![Add task to build pipeline](_shared/_img/build-definition/build-definition-working-folder.png)
 
 1. Expand **Custom registries and authentication**, here you have a few options: 
 
     * Registries in my **_.npmrc_**
 
-        ![Add task to build definition](_shared/_img/build-definition/registries-in-my-npmrc.png)
+        ![Add task to build pipeline](_shared/_img/build-definition/registries-in-my-npmrc.png)
 
-        > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../pipelines/library/service-endpoints.md#sep-npm)
+        > You can choose credentials to authenticate to outside of your current account/collection by setting up [service connections.](../pipelines/library/service-endpoints.md#sep-npm)
 
     * Registry I select here
 
-        ![Add task to build definition](_shared/_img/build-definition/registry-i-select-here.png)
+        ![Add task to build pipeline](_shared/_img/build-definition/registry-i-select-here.png)
 
         When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
 
 
 #### With a Task Runner (e.g. make gulp work)
 
-When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build definition. This will inject credentials into your proejct's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
+When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This will inject credentials into your proejct's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
 
-1. Add a build definition in VSTS under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in VSTS under the **Build and Release** --> **Builds** hub.
 
     ![Connect to feed from VSTS Package Management](../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
@@ -155,23 +155,23 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
 1. Select _Empty process_ at the top of the form
 
-1. Add a task to **Phase 1** of your build definition by clicking the **"+"**:
+1. Add a task to **Phase 1** of your build pipeline by clicking the **"+"**:
 
-    ![Add task to build definition](_shared/_img/build-definition/add-task-build-definition.png)
+    ![Add task to build pipeline](_shared/_img/build-definition/add-task-build-definition.png)
 
 1. Select **Package** or search for _npm_ in the search bar, select **npm Authenticate** and select _Add_:
 
-    ![Add task to build definition](_shared/_img/build-definition/build-definition-npm-auth-task.png)
+    ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-auth-task.png)
 
 1. Select the **npm Authenticate** task underneath **Phase 1**:
 
-    ![Add task to build definition](_shared/_img/build-definition/build-definition-npm-auth-task-phase.png)
+    ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-auth-task-phase.png)
 
 1. Browse to and select your **.npmrc file to authenticate**:
 
-    ![Add task to build definition](_shared/_img/build-definition/build-definition-npm-auth-task-file.png)
+    ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-auth-task-file.png)
 
-    > You can choose credentials to authenticate to outside of your current account/collection by setting up [service endpoints.](../pipelines/library/service-endpoints.md#sep-npm)
+    > You can choose credentials to authenticate to outside of your current account/collection by setting up [service connections.](../pipelines/library/service-endpoints.md#sep-npm)
 
 1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
 

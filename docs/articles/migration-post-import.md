@@ -39,14 +39,14 @@ This means that you shouldn't have to take any other import steps if your identi
 Dry run imports do not have their licenses reset on the 1st of the month. Unlike production imports, their grace period extends for the life of the organization. So you don't need to worry about purchasing licenses while testing out an import. 
 
 ## Builds
-Next, you will want to configure your build agents. As part of the migration, all of your build definitions have been brought over, but agents and pools need to be reconfigured against the new VSTS organization. VSTS offers the ability to use a hosted pool of build agents that you can pay to use, or you can connect your private build agent(s). It's important to note that only one private build agent is included for free. After that there is a [fee](https://visualstudio.microsoft.com/en-us/products/visual-studio-team-services-pricing-vs.aspx) for having additional private build agents. To pay for hosted and private build agents you will need to link a subscription to your VSTS organization. See the following resources for details on performing this task:
+Next, you will want to configure your build agents. As part of the migration, all of your build pipelines have been brought over, but agents and pools need to be reconfigured against the new VSTS organization. VSTS offers the ability to use a Microsoft-hosted pool of build agents that you can use, or you can connect your self-hosted build agent(s). It's important to note that only one self-hosted build agent is included for free. After that there is a [fee](https://visualstudio.microsoft.com/en-us/products/visual-studio-team-services-pricing-vs.aspx) for having additional self-hosted build agents. To pay for Microsoft-hosted and self-hosted build agents you will need to link a subscription to your VSTS organization. See the following resources for details on performing this task:
 
 * [Build Agents](../pipelines/agents/agents.md) 
 
 If you plan on using your existing on-premises private build agents, there is one more recommended step that needs to be taken after registering them to your new organization. Clearing their cache will ensure that you don't encounter any build issues related to older TFVC or Git pointers to your on-premises TFS collection. See [refreshing caches on client computers](/tfs/server/admin/backup/refresh-data-caches) for details on how to accomplish this task. 
 
 ## Release Management
-If you used Release Management in TFS then your release definitions and history data will be included with your import. However, like builds, [agents](../pipelines/agents/agents.md) and pools need to be reconfigured against the new VSTS organization. 
+If you used Release Management in TFS then your release pipelines and history data will be included with your import. However, like builds, [agents](../pipelines/agents/agents.md) and pools need to be reconfigured against the new VSTS organization. 
 
 ## Package Management (Preview)
 If you elected to include [preview](https://aka.ms/vstsimportpreview) features with your import and you had [Package Management](https://visualstudio.microsoft.com/team-services/package-management/) data in your TFS collection, then you will need to install the Package Management [extension](https://marketplace.visualstudio.com/items?itemName=ms.feed#) on your organization post import. 
