@@ -1,4 +1,4 @@
-####Q: What happens if I forget my password?
+#### Q: What happens if I forget my password?
 
 A: You can recover your 
 [Microsoft account password here](https://account.live.com/ResetPassword.aspx)

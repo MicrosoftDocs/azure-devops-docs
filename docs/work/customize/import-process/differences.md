@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 2B500AEA-165C-428D-B580-C9C0A8D01635
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.date: 03/20/2018
 ---
@@ -16,7 +17,7 @@ ms.date: 03/20/2018
 <b>VSTS (Hosted XML)</b>   
  
 > [!IMPORTANT]  
->**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:vsocustpt@microsoft.com) if you have any questions about VSTS process customization. 
+>**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:dahellem@microsoft.com) if you have any questions about VSTS process customization. 
 >
 >If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an Inheritance process](../process/manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../work-items/guidance/manage-process-templates.md) and [Customize a process template](../reference/process-templates/customize-process.md).
 >

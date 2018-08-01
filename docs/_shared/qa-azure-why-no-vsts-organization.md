@@ -1,4 +1,4 @@
-####Q:  Why don't I see my VSTS organization in the Azure portal?
+#### Q:  Why don't I see my VSTS organization in the Azure portal?
 
 A:  In both Azure portals, you must have 
 [Azure Service Administrator or Co-administrator](https://docs.microsoft.com/en-us/azure/billing-add-change-azure-subscription-administrator) 
