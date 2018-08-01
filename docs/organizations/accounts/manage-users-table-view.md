@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 02/23/2018
+ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
 # Manage users for VSTS
@@ -38,11 +38,7 @@ who also get Basic features, and in some cases, additional features with specifi
 >
 > When people don't need access to your VSTS organization anymore, [delete them](delete-organization-users.md) from your organization. 
 
-
-
-
 ## Prerequisites
-
 
 You'll need [VSTS project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).   
 
@@ -53,8 +49,33 @@ The Users view shows key information per user in a table. You can see and modify
 access levels.  You can multi-select users and bulk edit their extensions and access.  You can filter by searching for 
 partial user names, access level, or extension names.  You can see the last access date for each user to help you choose 
 from whom you might remove access or lower access to stay within your license limits.
+
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+
+	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
+
+2. Go to your VSTS admin settings.
+
+    ![Open VSTS admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select the **Users** tab and then **Add new users**.
+
+   ![Users tab, Add new users](_img/_shared/add-new-users.png)
+
+4. Choose a user or group of users in the table and then select the **...** icon at the end of the name column to open the context menu. The menu supports **Add to projects**, **Remove from projects**, **Assign extensions**, **Revoke extensions** (if there are extensions), **Change access levels**, **Remove direct assignments**,
+and **Remove from organization** (deletes user).
+
+    ![User hub, context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
+
+5. **Save** your changes.
+
+# [Previous navigation](#tab/prev-nav)
  
-1. Open the **Users** page for your organization. Click ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Organization Settings** option
+1. Open the **Users** page for your organization. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Organization Settings** option
  
 	![Open Organization Settings](../../user-guide/_img/sign-up/open-organization-settings.png)
 
@@ -66,10 +87,11 @@ from whom you might remove access or lower access to stay within your license li
 menu. The menu supports **Change access levels**, **Manage projects**, **Resend invite**, **Manage extensions** (if there are extensions), 
 and **Remove from organization** (deletes user).
 
-	![User hub, context menu](_img/manage-users/manage-users-show-context-menu.png)
+  ![User hub, context menu](_img/manage-users/manage-users-show-context-menu.png)
 
+---
 
-## Related notes
+## Related articles
 
 - [Change number of paid extension users](../billing/change-number-paid-extension-users.md)
 - [Connect to a team project](../../organizations/projects/connect-to-projects.md)

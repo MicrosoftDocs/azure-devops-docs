@@ -51,7 +51,7 @@ steps:
 
 Add the [Android Signing](../tasks/build/android-signing.md) task to sign and zipalign a built APK. An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM it consumes.
 
-<blockquote><strong>Important: </strong>We recommend storing each of the specified passwords in a [secret variable](../build/variables.md#secret-variables).</blockquote>
+<blockquote><strong>Important: </strong>We recommend storing each of the specified passwords in a [secret variable](../process/variables.md#secret-variables).</blockquote>
 
 ::: moniker range="> tfs-2018"
 

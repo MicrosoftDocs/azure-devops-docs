@@ -49,7 +49,7 @@
 - name: Resources    
   items:
   - name: Git
-    href: ../git/index.md
+    href: ../repos/git/index.md
   - name: Work items
     href: ../work/work-items/index.md
   - name: Service Hooks

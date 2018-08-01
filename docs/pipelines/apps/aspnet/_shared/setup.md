@@ -8,4 +8,4 @@ You can also use Team Foundation Server (TFS) if your enterprise requires the us
 
 ### Set up local version control and a project
 
-Creating a release pipeline relies on having your application code in version control. To set up a local repository and connect it to a remote repository in a project, follow the instructions in either [Share your code with Git and Visual Studio](../../../../git/share-your-code-in-git-vs.md) or [Share your code with TFVC and Visual Studio](../../../../tfvc/share-your-code-in-tfvc-vs.md).
+Creating a release pipeline relies on having your application code in version control. To set up a local repository and connect it to a remote repository in a project, follow the instructions in either [Share your code with Git and Visual Studio](../../../../repos/git/share-your-code-in-git-vs.md) or [Share your code with TFVC and Visual Studio](../../../../repos/tfvc/share-your-code-in-tfvc-vs.md).

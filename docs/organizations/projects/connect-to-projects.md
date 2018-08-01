@@ -22,7 +22,7 @@ To share code, build apps, track work, and collaborate with team members, you co
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
-- [Eclipse/Team Explorer Everywhere](../../git/share-your-code-in-git-eclipse.md)
+- [Eclipse/Team Explorer Everywhere](../../repos/git/share-your-code-in-git-eclipse.md)
 - [Android Studio with the VSTS Plugin for Android Studio](../../java/download-android-studio-plug-in.md)  
 - [IntelliJ with the VSTS Plugin for IntelliJ](../../java/download-intellij-plug-in.md) 
 - [Visual Studio Code](../../java/vscode-extension.md)    
@@ -34,7 +34,7 @@ If you don't have a project yet, create one in [VSTS](../accounts/set-up-vs.md) 
 
 From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 
-To get started with a code base, [set up Git](../../git/gitquickstart.md) or [set up TFVC](../../tfvc/overview.md).
+To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
 
 <a id="web-portal">  </a>
 
@@ -304,7 +304,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 - [Work in Team Explorer](../../user-guide/work-team-explorer.md)  
 - [Troubleshoot connection](../../user-guide/troubleshoot-connection.md)  
 
-If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../git/gitquickstart.md) and [Manage bugs](../../work/backlogs/manage-bugs.md).  
+If all you need is a code repository and bug tracking solution, then start with the [Git get started guide](../../repos/git/gitquickstart.md) and [Manage bugs](../../work/backlogs/manage-bugs.md).  
 
 To start planning and tracking work, see [Get started with Agile tools to plan and track work](../../work/backlogs/overview.md). 
 
@@ -342,7 +342,7 @@ If your remote team uses a [TFS Proxy server](/tfs/server/install/install-proxy-
 
     Make sure you specify the port number that your administrator assigned to TFS Proxy.
 
-To **Configure User Tools** to associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../../tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../../tfvc/associate-file-type-merge-tool.md).
+To **Configure User Tools** to associate a file type with a compare or merge tool, see [Associate a file type with a file-comparison tool](../../repos/tfvc/associate-file-type-file-comparison-tool.md) or [Associate a file type with a merge tool](../../repos/tfvc/associate-file-type-merge-tool.md).
 
 
 ### What other clients support connection to VSTS and TFS?

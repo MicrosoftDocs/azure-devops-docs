@@ -24,7 +24,7 @@ Visual Studio Code (VS Code) is a code editor produced by Microsoft. You can fin
 
  - You already have a VSTS account. If you do not already have a VSTS account, [sign up](https://docs.microsoft.com/en-us/vsts/organizations/accounts/create-account-msa-or-work-student).
  - You have Visual Studio Code 1.11.1 or later installed on your machine (if not, [download and install it](https://code.visualstudio.com/Download)).
- - You have already [cloned a VSTS Git repository](https://docs.microsoft.com/en-us/vsts/git/tutorial/clone?tabs=command-line) to your computer locally.
+ - You have already [cloned a VSTS Git repository](https://docs.microsoft.com/en-us/vsts/repos/git/clone?tabs=command-line) to your computer locally.
 
 > [!VIDEO https://www.youtube.com/embed/HnDNdm1WCIo]
 

@@ -1,6 +1,6 @@
-####Q:		Why can't users access extension features?
+#### Q: Why can't users access extension features?
 
-A:	This can happen for these reasons: 
+A:	This can happen for the following reasons: 
 
 *	Most extensions require that users have at least Basic access, not Stakeholder. 
 For example, you can install the free 
@@ -14,18 +14,18 @@ For more details, see the extension's description
 in the [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
 <a name="trial-expired"></a>
-*	If you're using a VSTS account, and you started a free extension trial, 
+*	If you're using a VSTS organization, and you started a free extension trial, 
 your trial might have expired. To check whether your trial expired:
 
-	0.	On your VSTS account toolbar, go to **Users**.
+	0.	On your VSTS organization toolbar, go to **Users**.
 	0.	Go to the extension pane.
 	0.	Check for an expiration message to find if or when your extension expired.
 
 <a name="extension-not-assigned"></a>
-*	If you're using a VSTS account, and you paid for this extension, 
+*	If you're using a VSTS organization, and you paid for this extension, 
 make sure that you assigned this extension to users.
 
-	0.	On your VSTS account toolbar, go to **Users**.
+	0.	On your VSTS organization toolbar, go to **Users**.
 	0.	Go to the extension pane.
 	0.	Check whether the extension is assigned to the user. 
 	If not, assign the extension to the user.

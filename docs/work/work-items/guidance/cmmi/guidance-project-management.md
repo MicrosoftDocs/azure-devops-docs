@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.assetid: 9079e8f8-ce21-4b26-96a1-3f28f9cfa90c
 ms.topic: conceptual
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 03/16/2017
 ---
@@ -55,7 +56,7 @@ You can use the Project Management section of the MSF for CMMI process improveme
 ### Large projects  
  A project in which a team works through a series of iterations may be part of a larger project or program. A large project has several teams that work in parallel. Each team typically has four to 16 people.  
   
- Open a separate version control branch for each team. Each team should integrate with the main branch at the end of each iteration. For more information, see [Use branches](../../../../tfvc/use-branches-isolate-risk-team-foundation-version-control.md).  
+ Open a separate version control branch for each team. Each team should integrate with the main branch at the end of each iteration. For more information, see [Use branches](../../../../repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md).  
   
  Reserve the main branch for integration and tests. The build machine should perform a complete set of tests after an integration.  
   

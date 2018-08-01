@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 <a name="cant-add-users"></a>
 
-### Q:	Why can't I add any more members to my team project?
+#### Q:	Why can't I add any more members to my team project?
 
 A:	Your VSTS organization is free for the first 5 users with Basic access. 
 You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. 
@@ -36,7 +36,7 @@ from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscr
 
 <a name="WhyCantSignIn"></a>
 
-### Q:	Why can't some users sign in?
+#### Q:	Why can't some users sign in?
 
 A:	This might happen because users must 
 sign in with Microsoft accounts 
@@ -55,7 +55,7 @@ Learn [how to control organization access with Azure AD](access-with-azure-ad.md
 
 [!INCLUDE [no-access-existing-features](../../_shared/qa-no-access-existing-features.md)]
 
-### Q:	 Why did some users lose access to certain features?
+#### Q:	 Why did some users lose access to certain features?
 
 A:	This might happen for [different reasons](faq-add-delete-users.md#stopped-features).  
 
@@ -65,14 +65,14 @@ A:	This might happen for [different reasons](faq-add-delete-users.md#stopped-fea
 
 <a name="RemovePeople"></a>
 
-### Q:	How do I remove users from my VSTS organization?
+#### Q:	How do I remove users from my VSTS organization?
 
 A:	Learn [how to delete users](delete-organization-users.md) 
 across all team projects in your VSTS organization. 
 If you paid for more users, but don't need their organization access
 anymore, you must reduce your paid users to avoid charges.
 
-### Q: Why can't I find members from my connected Azure AD, even though I am the Azure AD global admin?
+#### Q: Why can't I find members from my connected Azure AD, even though I am the Azure AD global admin?
 
 A: You are probably a guest in the Azure AD that backs VSTS. By default, Azure AD guests cannot search into the Azure AD and that's why you are not finding users in your Azure AD to add to your VSTS organization.
 

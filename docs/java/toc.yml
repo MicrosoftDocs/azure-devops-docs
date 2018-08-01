@@ -7,13 +7,13 @@
 - name: Quickstarts
   items:
   - name: DevOps Project for Java
-    href: /azure/devops-project/azure-devops-project-java.md?toc=/vsts/java/toc.json&bc=/vsts/pipelines/breadcrumb/toc.json
+    href: /azure/devops-project/azure-devops-project-java?toc=/vsts/java/toc.json&bc=/vsts/pipelines/breadcrumb/toc.json
   - name: Use IntelliJ
-    href: ../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    href: ../repos/git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
   - name: Use Eclipse
-    href: ../git/share-your-code-in-git-eclipse.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    href: ../repos/git/share-your-code-in-git-eclipse.md?toc=/vsts/java/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
   - name: Use Android Studio
-    href: ../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json
+    href: ../repos/git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
   - name: Build with Maven
     href: ../pipelines/apps/java/build-maven.md?toc=/vsts/java/toc.json&bc=/vsts/pipelines/breadcrumb/toc.json
   - name: Build with Gradle
@@ -64,7 +64,7 @@
     - name: Publish artifacts with Gradle
       href: ../package/gradle/publish-package-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
   - name: Use Git Credential Manager
-    href: ../git/set-up-credential-managers.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+    href: ../repos/git/set-up-credential-managers.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
   - name: Add VSCode extension
     href: vscode-extension.md
   - name: Load-test with JMeter

@@ -1,10 +1,11 @@
 
 
 <a name="which-azure-sub-for-billing"></a>
-###Q: Which Azure subscriptions can I link to my VSTS account and use for billing?
 
-A: You can use an [Azure subscription](https://azure.microsoft.com/pricing/purchase-options/) 
-that's not:
+#### Q: Which Azure subscriptions can I link to my VSTS organization and use for billing?
+
+A: You can use an [Azure subscription](https://azure.microsoft.com/en-us/pricing/purchase-options/) 
+that's not the following:
 
 *	An [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/)
 *	A [free Azure AD subscription](https://technet.microsoft.com/library/dn832618.aspx)
@@ -20,8 +21,7 @@ or [monthly credits for Visual Studio Dev Essentials](https://azure.microsoft.co
 You can still use these types of Azure subscriptions for billing, 
 but the monthly credits won't apply, so your credit card will be billed for charges instead.
  
-*	Before you use these Azure subscriptions for billing, you must remove their 
-[default spending limit indefinitely](/azure/billing/billing-spending-limit).
+* Before you use these Azure subscriptions for billing, you must remove their [default spending limit indefinitely](https://azure.microsoft.com/en-us/pricing/spending-limits/).
 
     This prevents disabling your Azure subscription 
     when your monthly charges are billed the next month. 
@@ -33,7 +33,7 @@ but the monthly credits won't apply, so your credit card will be billed for char
 
     <img alt="Remove spending limit indefinitely" src="_img/azure-remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
-	If you have Account Administrator permissions for your subscription, 
+	If you have Administrator permissions for your subscription, 
 	remove the spending limit by visiting the 
 	[Azure Account Center](https://account.windowsazure.com):
 	

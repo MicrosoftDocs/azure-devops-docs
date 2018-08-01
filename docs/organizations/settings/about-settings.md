@@ -52,9 +52,9 @@ Individual contributors can set their user preferences, enable select features t
 <td><ul>
 <li>[Authenticate access with personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md)</li>
 <li>[Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md)</li>
-<li>[Use SSH key authentication](../../git/use-ssh-keys-to-authenticate.md)</li>
+<li>[Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)</li>
 </ul></td>
-<td>For an overview of supported authentication methods, see [Authentication overview](../../git/auth-overview.md#alternate-credentials).</td>
+<td>For an overview of supported authentication methods, see [Authentication overview](../../repos/git/auth-overview.md#alternate-credentials).</td>
 </tr>
 <tr>
 <td>**Favorites**</td>
@@ -205,12 +205,12 @@ Members of the [Project Administrators group](../security/set-project-collection
 <tr>
 <td>**Code** </td>
 <td><ul>
-<li>[Create additional Git repos](../../git/tutorial/creatingrepo.md)</li>
+<li>[Create additional Git repos](../../repos/git/creatingrepo.md)</li>
 <li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>
-<li>[Manage branch policies](../../git/branch-policies.md)</li>
-<li>[Add TFVC Check-In Policies](../../tfvc/add-check-policies.md)</li>
+<li>[Manage branch policies](../../repos/git/branch-policies.md)</li>
+<li>[Add TFVC Check-In Policies](../../repos/tfvc/add-check-policies.md)</li>
 </ul></td>
-<td>You can manage code using [Git repositories](../../git/overview.md) or one [Team Foundation Version Control (TFVC) repository](../../tfvc/overview.md). </td>
+<td>You can manage code using [Git repositories](../../repos/git/overview.md) or one [Team Foundation Version Control (TFVC) repository](../../repos/tfvc/overview.md). </td>
 </tr>
 <tr>
 <td>**Test** </td>

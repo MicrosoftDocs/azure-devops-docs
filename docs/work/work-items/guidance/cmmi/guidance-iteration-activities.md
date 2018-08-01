@@ -35,7 +35,7 @@ In MSF for CMMI Process Improvement, you plan a project as a series of iteration
 ## During an iteration  
   
 ### Task execution  
- Team members start and complete tasks, recording these events in work items. Completion of a task might include checking in program code and other artifacts. Each task should last no more than a few days; larger tasks are split during iteration planning. For more information, see and [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
+ Team members start and complete tasks, recording these events in work items. Completion of a task might include checking in program code and other artifacts. Each task should last no more than a few days; larger tasks are split during iteration planning. For more information, see and [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
   
  If a team member encounters any obstacle to their work that cannot be resolved immediately, they should log an issue work item.  
   
@@ -91,7 +91,7 @@ The requirements are considered completed only if the associated tests pass.
 -   What you will do as a result.  
   
 ### Integration  
- If this project is part of a larger program, each team performs its work in a branch  of the version control system. The Main branch is reserved for integrating the work of the teams. At the end of an iteration, the team might perform an integration with the main branch. For more information, see [Use branches](../../../../tfvc/use-branches-isolate-risk-team-foundation-version-control.md).  
+ If this project is part of a larger program, each team performs its work in a branch  of the version control system. The Main branch is reserved for integrating the work of the teams. At the end of an iteration, the team might perform an integration with the main branch. For more information, see [Use branches](../../../../repos/tfvc/use-branches-isolate-risk-team-foundation-version-control.md).  
   
  The integration consists of two steps:  
   

@@ -58,4 +58,4 @@ Eclipse's EGit is built on JGit, and unfortunately, recent versions of JGit acti
 
 ### Does the Eclipse plug-in support TFVC?
 
-Yes, see [Share your code in TFVC using Eclipse](../tfvc/share-your-code-in-tfvc-eclipse.md) for details.
+Yes, see [Share your code in TFVC using Eclipse](../repos/tfvc/share-your-code-in-tfvc-eclipse.md) for details.

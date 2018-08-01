@@ -77,7 +77,7 @@ Choose a **Code** service&mdash;such as **Files**, **Commits**, or **Pull Reques
 > [!div class="mx-imgBorder"]
 ![Add artifact](_img/add-artifact/add-repo-vert.png)
 
-For details on adding a Git repository, see [Git repository](../../git/tutorial/creatingrepo.md). 
+For details on adding a Git repository, see [Git repository](../../repos/git/creatingrepo.md). 
 
 ::: moniker-end
 
@@ -87,7 +87,7 @@ For details on adding a Git repository, see [Git repository](../../git/tutorial/
 
 # [Previous navigation](#tab/previous-nav)
 
-From **Code**, open the context menu for the current repository and choose ![plus icon](../../_img/icons/blue-add-icon.png) **New repository**. For details on adding a Git repository, see [Git repository](../../git/tutorial/creatingrepo.md)
+From **Code**, open the context menu for the current repository and choose ![plus icon](../../_img/icons/blue-add-icon.png) **New repository**. For details on adding a Git repository, see [Git repository](../../repos/git/creatingrepo.md)
 
 > [!div class="mx-imgBorder"]
 ![Code, add artifact](_img/add-artifact/add-repo-horz.png)
@@ -98,9 +98,9 @@ From one of the other **Code** pages, you can add files or folders, a new branch
 
 Note that you can only add one TFVC repository per project, but an unlimited number of Git repositories. To learn more about Git artifacts, see one of the following articles:
 
-- [Git repository](../../git/tutorial/creatingrepo.md)
-- [Git branch](../../git/create-branch.md)
-- [Git pull request](../../git/tutorial/pullrequest.md) 
+- [Git repository](../../repos/git/creatingrepo.md)
+- [Git branch](../../repos/git/create-branch.md)
+- [Git pull request](../../repos/git/pullrequest.md) 
 - [Add work items](../../work/work-items/view-add-work-items.md)
 
 

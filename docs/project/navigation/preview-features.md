@@ -28,7 +28,7 @@ Some features provide a new user interface and functionality, which can be manag
 > [!div class="mx-tdBreakAll"]  
 > |[Preview features per user](#user-level)| [Preview features per VSTS organization](#account-level)|  
 > |-------------|----------|  
-> |- [New build result page]()<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/build/yaml.md)<br/>- [Git Forks](../../git/concepts/forks.md)<br/>- New build results page<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)  |
+> |- [New build result page]()<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/build/yaml.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- New build results page<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/en-us/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)  |
 
 
 <a id="user-level">  </a>
@@ -36,35 +36,36 @@ Some features provide a new user interface and functionality, which can be manag
 
 From time to time, a new feature is introduced in Preview mode, which allows you to turn it on or off. 
 
- [New navigation](#tab/new-nav)
+# [New navigation](#tab/new-nav)
 
 0. To access the Preview features options, open your profile menu, and select **Preview features**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](../../_shared/_img/settings/profile-menu-vert.png)  
+	> ![Open Preview Features](_img/manage-features/choose-preview-features-vert.png)  
 
 0. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Preview features options for yourself](_img/manage-features/user-s137.png) 
-
 
 # [Previous navigation](#tab/previous-nav)  
 
 0. To access the Preview features options, open your profile menu, and select **Preview features**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](../../_shared/_img/settings/profile-menu-horz.png)  
+	> ![Open Preview Features](_img/manage-features/choose-preview-features-horz.png)  
 
 0. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Preview features options for yourself](_img/manage-features/user-s137.png) 
 
+---
+
 <a id="account-level">  </a>
 ## Enable features at the organization (account) level (for all users)  
 
-When you enable a feature at the account level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
+When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
 
 > [!TIP]  
 > If you don't see the **for this account** menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
@@ -84,7 +85,7 @@ When you enable a feature at the account level, you essentially turn it on for a
 - [New Work Items Hub](../../work/work-items/view-add-work-items.md)   
 - [NuGet.org upstream sources](../../package/nuget/upstream-sources.md) 
 - [Out of the box notifications](../../notifications/manage-personal-notifications.md).   
-- [Pull Request Status Policy](../../git/how-to/pr-status-policy.md) 
+- [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
 - [Symbol server](../../pipelines/symbols/index.md)  
 - [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
 - [Task tool installers](../../pipelines/process/tasks.md#tool-installers) 

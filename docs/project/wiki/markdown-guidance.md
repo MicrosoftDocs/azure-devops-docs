@@ -28,8 +28,8 @@ You can provide guidance to your team in these places using markdown:
 - [Publish code as wiki](publish-repo-to-wiki.md)
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)    
-- [Repository Readme files](../../git/create-a-readme.md) 
-- [Pull request comments](../../git/pull-requests.md)  
+- [Repository Readme files](../../repos/git/create-a-readme.md) 
+- [Pull request comments](../../repos/git/pull-requests.md)  
 ::: moniker-end
 
 
@@ -37,15 +37,15 @@ You can provide guidance to your team in these places using markdown:
 - [Add and edit wiki pages](add-edit-wiki.md)    
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)  
-- [Repository Readme files](../../git/create-a-readme.md) 
-- [Pull request comments](../../git/pull-requests.md) 
+- [Repository Readme files](../../repos/git/create-a-readme.md) 
+- [Pull request comments](../../repos/git/pull-requests.md) 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 <= tfs-2017"        
 - [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Project vision page or Welcome pages](project-vision-status.md)  
-- [Repository Readme files](../../git/create-a-readme.md) 
-- [Pull request comments](../../git/pull-requests.md) (Supported in TFS 2017  and later versions)
+- [Repository Readme files](../../repos/git/create-a-readme.md) 
+- [Pull request comments](../../repos/git/pull-requests.md) (Supported in TFS 2017  and later versions)
 ::: moniker-end  
     
 In this topic you'll find some basic Markdown syntax guidance. You can use both common [Markdown conventions](http://daringfireball.net/projects/markdown/syntax) and [GitHub-flavored extensions](https://help.github.com/articles/github-flavored-markdown/).
@@ -361,7 +361,7 @@ Use the following syntax to add an image: <div id="do_not_render"><pre>&#33;&#91
 <br/>
 **Result:** 
 
-![Sample flowchart with three items](../../git/_img/pull-requests/markdown_sample_image.png)
+![Sample flowchart with three items](../../repos/git/_img/pull-requests/markdown_sample_image.png)
 
 The path to the image file can be a relative path or the absolute path in Git or TFVC, just like the path to another Markdown file in a link.  
 <ul>
@@ -553,7 +553,7 @@ In pull request comments and wiki pages, you can use emojis to add character and
 <br/>
 **Result:**  
 
-![Emojis in markdown](../../git/_img/pull-requests/emoji-markdown.png)
+![Emojis in markdown](../../repos/git/_img/pull-requests/emoji-markdown.png)
 
 To escape emojis, enclose them using the \` character.
 
@@ -791,8 +791,8 @@ $$
 ## Related articles  
 
 - [Project vision page or Welcome pages](project-vision-status.md) 
-- [Readme files](../../git/create-a-readme.md) 
-- [Pull requests](../../git/pull-requests.md) 
+- [Readme files](../../repos/git/create-a-readme.md) 
+- [Pull requests](../../repos/git/pull-requests.md) 
 - [Markdown widget](../../report/dashboards/add-markdown-to-dashboard.md)  
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Widget catalog](../../report/dashboards/widget-catalog.md) 

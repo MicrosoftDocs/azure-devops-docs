@@ -15,7 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker images.
+This guidance explains how to build Docker images that you can upload to a range of containers such as
+Docker Hub or Azure Container Registry, and then deploy to a range of targets.
 
 ::: moniker range="vsts"
 
@@ -42,6 +43,9 @@ This guidance explains how to build Docker images.
 
 <a name="example"></a>
 ## Example
+
+This example shows how to build a Docker image and upload it to Docker Hub.
+For information about uploading a Docker image to other types of containers, see [Build an image](#buildimage).
 
 To build a Docker image, you need a _Dockerfile_. If you want some sample code that includes this file and works with this guidance, then import (into VSTS or TFS) or fork (into GitHub) this repo:
 
@@ -212,6 +216,8 @@ As an alternative to using Microsoft-hosted agents, you can set up [self-hosted 
 Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure that you have Docker installed on the agent.
 
 ::: moniker-end
+
+<a name="buildimage"></a>
 
 ## Build an image
 

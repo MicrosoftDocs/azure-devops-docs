@@ -23,9 +23,9 @@ monikerRange: 'vsts'
 
 <a name="NoNewOwner"></a>
 
-### Q: Why can't I find the user I want to make the new owner?
+#### Q: Why can't I find the user I want to make the new owner?
 
-A: This might happen because:
+A: This might happen because of one of the following:
 
 *	They're not in your VSTS organization, 
 or they don't have organization access. 
@@ -41,36 +41,36 @@ list until they meet the requirements above.
 
 [!INCLUDE [recover-password](../../_shared/qa-recover-password.md)]
 
-### Q: Can I reverse the organization owner change?
+#### Q: Can I reverse the organization owner change?
 
 A: Yes, if you're a project collection administrator.
 
-### Q: Can I change the organization name (URL) too?
+#### Q: Can I change the organization name (URL) too?
 
 A: Only the organization owner can change the URL. 
 If you're the organization owner, learn how to 
 [change the organization URL here](rename-vsts-organization.md).
 
-### Q :	How many organization owners can I have?
+#### Q :	How many organization owners can I have?
 
 A:	Your organization can have only one owner. 
 Only they can [perform certain actions](#owner-differences), 
 so make sure to keep your organization owner updated.
 
-### Q: Why did you ask for extra information when I signed in?
+#### Q: Why did you ask for extra information when I signed in?
 
 A: If our Terms of Service have changed since you last signed in, 
 you might be asked to agree and confirm that your information is up to date.
 
 <a name="owner-differences"></a>
 
-### Q: What makes the organization owner different than other organization users?
+#### Q: What makes the organization owner different than other organization users?
 
 A: The organization owner manages payments and access for organization users and also manages billing for the organization through the 
 [Azure classic portal](https://manage.windowsazure.com/) or the
 [Azure portal](https://portal.azure.com). 
 
-Organization owners also have permissions to perform these tasks:
+Organization owners also have permissions to perform the following tasks:
 
 *	Pay for users accessing the organization
 *	Pay for additional organization services

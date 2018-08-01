@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 
 ## Permissions 
 
-#### Q: Why can't I manage users?
+### Q: Why can't I manage users?
 
 A:  To access the Users hub and manage users, you must have 
 [VSTS project collection administrator or organization owner permissions](#find-owner).
@@ -41,7 +41,7 @@ A:  To access the Users hub and manage users, you must have
 
 <a name="MSDNSubscriber"></a>
 
-#### Q: When do I select "Visual Studio/MSDN Subscriber"?
+### Q: When do I select "Visual Studio/MSDN Subscriber"?
 
 A: Assign this access level to users who have active and valid 
 [Visual Studio subscriptions](#EligibleMSDNSubscriptions). 

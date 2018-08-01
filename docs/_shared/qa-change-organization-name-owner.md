@@ -1,7 +1,7 @@
-####Q:	Can I change my VSTS account name (URL) or owner?
+#### Q:	Can I change my VSTS organization name (URL) or owner?
  
 A:	Yes, if you have at least Basic access, 
-you can do this in your account settings. Learn how to:
+you can do this in your organization settings. Learn how to:
 
-*	[Rename your account](/vsts/organizations/accounts/rename-vsts-account).
-*	[Change the account owner](/vsts/organizations/accounts/change-account-ownership-vs).
+*	[Rename your organization](/vsts/organizations/accounts/rename-vsts-organization).
+*	[Change the organization owner](/vsts/organizations/accounts/change-organization-ownership-vs).

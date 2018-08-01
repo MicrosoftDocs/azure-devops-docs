@@ -102,7 +102,7 @@ Requires TFS 2015.1 or later version.
 Adds a configurable tile to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the Git repository for the pull requests of interest. 
 
 You need to add a widget for each Git repository of interest.
-To learn more about pull requests, see [Review code with pull requests](../../git/pull-requests.md).
+To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
 
 ::: moniker-end
 ::: moniker range="tfs-2015"
