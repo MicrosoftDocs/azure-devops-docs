@@ -7,7 +7,7 @@
 - name: Quickstarts
   items:
   - name: DevOps Project for Java
-    href: /azure/devops-project/azure-devops-project-java.md?toc=/vsts/java/toc.json&bc=/vsts/pipelines/breadcrumb/toc.json
+    href: /azure/devops-project/azure-devops-project-java?toc=/vsts/java/toc.json&bc=/vsts/pipelines/breadcrumb/toc.json
   - name: Use IntelliJ
     href: ../repos/git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
   - name: Use Eclipse
