@@ -18,8 +18,9 @@ ms.date: 03/20/2018
 
 <b>VSTS | TFS 2018 | TFS 2017.2</b> 
 
-
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
+
+Delivery plans is also interactive. You can change the assigned sprint of a work item by dragging it to a new sprint as shown in the following image. 
  
 ![Moving a card to a different iteration](_img/plans_move1.png)
 
@@ -186,8 +187,6 @@ As changes occur to the schedule, you can update the iteration for a backlog ite
 
 
 ## Related articles  
-
-So now you've got an idea of how to use plans to create a project schedule view across multiple teams. From the settings dialog, you can also
 
 For additional resources for working with multiple teams, see these additional topics: 
 

@@ -40,12 +40,12 @@ who also get Basic features, and in some cases, additional features with specifi
 
 [!INCLUDE [browser-problems](../../_shared/qa-browser-problems.md)]
 
-####Q:  Which Visual Studio subscriptions can I use with VSTS?
+#### Q:  Which Visual Studio subscriptions can I use with VSTS?
 
 A:	Go here to find 
 [Visual Studio subscriptions that include VSTS](faq-add-delete-users.md#EligibleMSDNSubscriptions).
 
-####Q:	Why am I asked to provide profile details?
+#### Q:	Why am I asked to provide profile details?
 
 A:	If you're a new user, you can change your profile details. 
 You only have to do this step once. 
@@ -62,7 +62,7 @@ You only have to do this step once.
 
 [!INCLUDE [organization-location-process-template](../../_shared/qa-organization-location-process-template.md)]
 
-####Q:	Why are some features not available with my organization?
+#### Q:	Why are some features not available with my organization?
 
 A:	Some features require that you install an extension, 
 which may be available for free or paid. 
@@ -74,7 +74,7 @@ if you haven't started the extension trials already.
 Otherwise, you can [pay for user access](/vsts/marketplace/install-vsts-extension) 
 to these features.
 
-####Q:	How many VSTS organizations can I create?
+#### Q:	How many VSTS organizations can I create?
 
 A:	You can [create multiple VSTS organizations](#create-another-organization). 
 But rather than create another organization, you might consider 
@@ -85,7 +85,7 @@ There's no limit on how many VSTS organizations where you can be a member.
 
 <a name="create-another-organization"></a>
 
-####Q:	How do I create another VSTS organization?
+#### Q:	How do I create another VSTS organization?
 
 A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
@@ -107,7 +107,7 @@ A:	Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 
 <a name="SignInOrganizationDifferences"></a>
 
-### Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
+#### Q:	What's the difference between using a Microsoft account and a work account or school account to sign up?
 
 A:	Your choice affects how you control access and 
 authenticate users for your VSTS organization.
@@ -136,7 +136,7 @@ Learn more about
 
 <a name="ChangeDirectory"></a>
 
-### Q:	Can I change the directory after signup?
+#### Q:	Can I change the directory after signup?
 
 A:	Yes, see [Change your organization's Azure AD](change-organization-location.md).
 

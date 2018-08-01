@@ -4,7 +4,7 @@
 A: [Find your organization's region](../organizations/accounts/change-organization-location.md)
 
 
-####Q: How do I change my team project name, organization location, or process? 
+#### Q: How do I change my team project name, organization location, or process? 
 
 A:	Change these when you sign up for your VSTS organization. 
 

@@ -1,6 +1,6 @@
 
 
-###Q: Why is my first Azure bill larger than expected?
+#### Q: Why is my first Azure bill larger than expected?
 
 A:	Charges for your first purchase are prorated during the 
 1st month and are combined with charges for the next month, 

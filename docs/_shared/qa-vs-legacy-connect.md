@@ -1,4 +1,4 @@
-####Q:	Can I use earlier versions of Visual Studio to connect to VSTS?
+#### Q:	Can I use earlier versions of Visual Studio to connect to VSTS?
 
 A:	Yes, you can use Visual Studio 2013 or 2012. You can also use Visual Studio 2010, 
 but you'll need to install [Service Pack 1](https://www.microsoft.com/en-us/download/details.aspx?id=34677) 
