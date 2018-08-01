@@ -196,7 +196,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <td>**CI/CD** </td>
 <td><ul>
 <li>[Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)</li>
-<li>[Manage service endpoints](../../pipelines/library/service-endpoints.md)</li>
+<li>[Manage service connections](../../pipelines/library/service-endpoints.md)</li>
 <li>[Manage deployment pools and groups](../../pipelines/release/deployment-groups/index.md)</li>
 <li>[Set retention policies](../../pipelines/policies/retention.md)</li>
 </ul></td>

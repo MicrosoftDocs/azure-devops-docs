@@ -1,6 +1,6 @@
 ---
-title: Create a Java project release definition for deployment with VSTS
-description: Tutorial lab for creating a Java project release definition for Azure Container deployment with Visual Studio Team Services (VSTS)
+title: Create a Java project release pipeline for deployment with VSTS
+description: Tutorial lab for creating a Java project release pipeline for Azure Container deployment with Visual Studio Team Services (VSTS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
@@ -13,9 +13,9 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Create a Java project release definition for continuous deployment with VSTS
+# Create a Java project release pipeline for continuous deployment with VSTS
 
-In this exercise, you are going to create a Release Definition that will start the container images from the build lab. You will then create an Azure Container Service (ACS) and modify the Release to start containers in ACS.
+In this exercise, you are going to create a release pipeline that will start the container images from the build lab. You will then create an Azure Container Service (ACS) and modify the Release to start containers in ACS.
 
 > [!NOTE]
 > These Hands-On Labs use a virtual machine with a Java environment configured by our partner, [Northwest Cadence](https://www.nwcadence.com/).
@@ -48,9 +48,9 @@ In this task you will install a VSTS extension from the [VSTS Marketplace](https
 
 1. In the dialog that appears, ensure that your VSTS account is selected and click Continue. Once your permissions have been verified, click the Confirm button.
 
-## Create a Release Definition
+## Create a Release Pipeline
 
-In this task you will create a Release Definition with a single environment called AzureVM. You will configure the release to run the MyShuttle application containers (one is a mysql container with the database and the second is a tomcat container running the MyShuttle war). You will also add an integration test run that will ensure that the app is working correctly.
+In this task you will create a release pipeline with a single environment called AzureVM. You will configure the release to run the MyShuttle application containers (one is a mysql container with the database and the second is a tomcat container running the MyShuttle war). You will also add an integration test run that will ensure that the app is working correctly.
 
 1. Connect to the virtual machine with the user credentials which you specified when creating the VM in Azure.
 
@@ -58,11 +58,11 @@ In this task you will create a Release Definition with a single environment call
 
 1. Click on the `jdev` team project to navigate to it.
 
-1. Under the "Build and Releases" hub, click on "Releases" and click the button in the page to create a new release definition.
+1. Under the "Build and Releases" hub, click on "Releases" and click the button in the page to create a new release pipeline.
 
     ![Go to the Releases tab](../_img/releasemanagement/goto-releases.png)
 
-1. In the template flyout (on the right side), select an empty process as the template for the release definition.
+1. In the template flyout (on the right side), select an empty process as the template for the release pipeline.
 
     ![Select empty process](../_img/releasemanagement/select-emptyprocess.png)
 
@@ -70,17 +70,17 @@ In this task you will create a Release Definition with a single environment call
 
     ![Rename Environment1](../_img/releasemanagement/rename-env1.png)
 
-1. In the "Artifacts" component of the release definition, click on the "Add artifact" button to add a build definition as an artifact source to the release definition.
+1. In the "Artifacts" component of the release pipeline, click on the "Add artifact" button to add a build pipeline as an artifact source to the release pipeline.
 
     ![Add artifact](../_img/releasemanagement/add-artifact.png)
 
-1. In the Artifacts flyout, choose the MyShuttle2 build definition as the artifact, keep the default version as latest and the default value of the source alias. Then press the "Add" button.
+1. In the Artifacts flyout, choose the MyShuttle2 build pipeline as the artifact, keep the default version as latest and the default value of the source alias. Then press the "Add" button.
 
     ![Add MyShuttle2 artifact](../_img/releasemanagement/add-myshuttle2artifact.png)
 
-1. Click in the name of the release definition and rename it.
+1. Click in the name of the release pipeline and rename it.
 
-    ![Rename release definition](../_img/releasemanagement/edit-definitionname.png)
+    ![Rename release pipeline](../_img/releasemanagement/edit-definitionname.png)
 
 1. Click on the trigger icon on the Build Artifact. In the property flyout, ensure that the Continuous Deployment trigger is enabled. Set the branch filter to master so that only builds from the master branch trigger the deployment automatically.
 
@@ -167,7 +167,7 @@ In this task you will create a Release Definition with a single environment call
 
     > **Note**: You will need to use your azure container registry (e.g. `cdjavadev.azurecr.io`) in the image variables. Instead of using the `:latest` tag for the images, we explicitly use the build number, which was used to tag the images during the build. This allows us to "roll-forward" to previous tags for the images if we want to revert a release. The scope setting allows us to make variables that live at a release level (Release) or are environment-specific (like AzureVM). If you clone the environment to repeat this release in additional environments, you can just specify new values for the variables for those environments.
 
-1. Click the Save button in the toolbar to save the definition.
+1. Click the Save button in the toolbar to save the pipeline.
 
 1. Click the "+ Release" button and then click Create Release.
 

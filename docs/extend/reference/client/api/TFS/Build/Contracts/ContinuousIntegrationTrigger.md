@@ -27,5 +27,5 @@ Extends: [BuildTrigger](./BuildTrigger.md)
 
 * `pollingInterval`: number. The polling interval in seconds.
 
-* `pollingJobId`: string. This is the ID of the polling job that polls the external repository.  Once the build definition is saved/updated, this value is set.
+* `pollingJobId`: string. This is the ID of the polling job that polls the external repository.  Once the build pipeline is saved/updated, this value is set.
 

@@ -10,7 +10,7 @@ exports.submitRequests = function() {
     // get endpoint types
     apiwriter.getJson('/distributedtask/serviceendpointtypes');
     
-    // Get list of service endpoints
+    // Get list of service connections
     apiwriter.getJson('/distributedtask/serviceendpoints',
     function(context, result) {
         for (var i = 0; i < result.responseBody.count; i++) {

@@ -31,7 +31,7 @@ A project member has access to features based on the access level assigned to th
 * **Code**: Team Foundation Version Control (TFVC) repositories are hidden 
 * **Work**: **Work items** are available, but **Backlogs**, **Boards**, **Sprints**, **Queries**, and **Plans** are hidden. 
 * **Build and Release**: **Builds** and **Releases** are available, but **Library**, **Task Groups**, **Deployment Groups**, **Packages**, and XAML build system are hidden.
-	* Definition and task editors for build and release pipelines are unavailable  
+	* Pipeline and task editors for build and release pipelines are unavailable  
 	* Only the new **Releases*** page, which is in Public preview, is available.
 * **Test**: The **Test** hub and its associated manual and cloud load testing features are hidden.
 * **Analytics**: The **Analytics** hub is hidden, and the Analytics OData feed is not supported for non-members. 
@@ -42,7 +42,7 @@ A project member has access to features based on the access level assigned to th
 
 
 In addition, non-members have no access or limited access to the following features: 
-* Any form of editing or creating artifacts such as files, work items, and pipeline definitions 
+* Any form of editing or creating artifacts such as files, work items, and pipelines 
 * Favoriting and following existing artifacts 
 * Information about members of a project is limited to their name and picture. Email addresses and other contact information are not available. Also, lists of artifacts cannot be filtered by identity.
 * The ability to switch between two public projects in the same organization; non-members must navigate directly to a public project using a URL. 

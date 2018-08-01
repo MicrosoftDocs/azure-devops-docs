@@ -778,7 +778,7 @@ Module path: `TFS/DistributedTask/TaskAgentRestClient`
 <a name="method_queryServiceEndpoint"></a>
 <h2 class='method'>queryServiceEndpoint()</h2>
 
- Proxy for a GET request defined by an service endpoint. The request is authorized using a data source in service endpoint. The response is filtered using an XPath/Json based selector.
+ Proxy for a GET request defined by a service connection. The request is authorized using a data source in the service connection. The response is filtered using an XPath/Json based selector.
 
 ### Syntax
 <pre class='syntax'>
