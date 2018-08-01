@@ -42,7 +42,7 @@ monikerRange: 'vsts'
 -   To add permissions for Reporting Services, you must be a member of the **Content Managers** group or the **Team Foundation Content Managers** group for Reporting Services.
 
 >**Important:**
->  To perform administrative tasks such as creating team project collections, your user account requires administrative permissions, and the service account that the Team Foundation Background Job Agent uses also must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/tfs/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).
+>  To perform administrative tasks such as creating team project collections, your user requires administrative permissions, and the service account that the Team Foundation Background Job Agent uses also must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/tfs/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/tfs/server/architecture/background-job-agent).
 
 #### Q: Where can I find information about each individual permission? 
 
@@ -50,11 +50,11 @@ monikerRange: 'vsts'
 
 ## Team project
 
-0. From the team page, choose the ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
+1. From the team page, choose the ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
 
-0. Add the user to the **Project Administrators** group.
+2. Add the user to the **Project Administrators** group.
 
-0. If you use SharePoint with TFS, go to the team project portal and choose **Share** to give the user **Full Control**.
+3. If you use SharePoint with TFS, go to the team project portal and choose **Share** to give the user **Full Control**.
 
     ![Choose the SharePoint group and add users](_img/add-administrator-tfs/invite-administrators.png)
 

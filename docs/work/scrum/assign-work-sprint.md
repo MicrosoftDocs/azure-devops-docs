@@ -80,8 +80,6 @@ some or all of the items based on these estimates.
 
 ## Open your team's product backlog
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
-
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
