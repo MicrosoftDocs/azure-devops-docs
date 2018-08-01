@@ -398,7 +398,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	Code Review
 	</td>
 	<td>
-	 [Request a code review from the My Work page in Team Explorer]../../tfvc/get-code-reviewed-vs.md). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
+	 [Request a code review from the My Work page in Team Explorer]../../repos/tfvc/get-code-reviewed-vs.md). My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
 	</td>
 	</tr>
 	<tr>
@@ -406,7 +406,7 @@ Perform the following steps for each WIT that you add to your process template. 
 	My Work
 	</td>
 	<td>
-	[Develop code and manage pending changes](../../tfvc/develop-code-manage-pending-changes.md) from the My Work page in Team Explorer. My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
+	[Develop code and manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md) from the My Work page in Team Explorer. My Work only appears when you have Visual Studio Premium or Visual Studio Ultimate installed. 
 	</td>
 	</tr>
 	<tr>

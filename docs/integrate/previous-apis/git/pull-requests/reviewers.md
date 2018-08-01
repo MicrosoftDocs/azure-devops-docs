@@ -26,7 +26,7 @@ automatically added based on the policies set on the target branch of the pull r
 ## Get a list of reviewers
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
@@ -46,7 +46,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get a reviewer
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers/{reviewer}?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers/{reviewer}?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
@@ -68,7 +68,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 Adds a reviewer and optionally sets their vote.
 
 ```no-highlight
-PUT https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers/{reviewer}?api-version={version}
+PUT https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers/{reviewer}?api-version={version}
 ```
 ```json
 {
@@ -96,7 +96,7 @@ PUT https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 Removes a reviewer and their vote from a pull request.
 
 ```no-highlight
-DELETE https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers/{reviewer}?api-version={version}
+DELETE https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers/{reviewer}?api-version={version}
 ```
 
 | Parameter   | Type    | Notes
@@ -115,7 +115,7 @@ DELETE https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{re
 ## Update a reviewer's vote
 
 ```no-highlight
-PUT https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers/{reviewer}?api-version={version}
+PUT https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pullRequests/{pullRequest}/reviewers/{reviewer}?api-version={version}
 ```
 ```json
 {

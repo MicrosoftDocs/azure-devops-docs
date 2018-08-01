@@ -17,13 +17,13 @@ ms.date: 08/04/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Git/RepositoriesSample.cs) available for this endpoint.
+There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/RepositoriesSample.cs) available for this endpoint.
 
 
 ## Get a list of repositories
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories?api-version={version}
 ```
 
 | Parameter         | Type   | Notes
@@ -44,7 +44,7 @@ Get all the repositories in your Visual Studio Team Services account, rather tha
 <a name="inateamproject" />
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}?api-version={version}
 ```
 
 | Parameter  | Type   | Notes
@@ -77,7 +77,7 @@ GET {gitCloneUrl}/vsts/info
 Create a Git repository in a project.
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/?api-version={version}
 ```
 ```http
 Content-Type: application/json
@@ -107,7 +107,7 @@ Content-Type: application/json
 ## Modify a repository
 
 ```no-highlight
-PATCH https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}?api-version={version}
+PATCH https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}?api-version={version}
 ```
 ```http
 Content-Type: application/json
@@ -139,7 +139,7 @@ Content-Type: application/json
 Permanently delete a repository. 
 
 ```no-highlight
-DELETE https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}?api-version={version}
+DELETE https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}?api-version={version}
 ```
 
 | Parameter  | Type   | Notes

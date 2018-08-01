@@ -286,7 +286,7 @@ Use a secret variable in your project or build pipeline to store the personal ac
 
 ### Checkout files from LFS
 
-Select if you want to download files from [large file storage (LFS)](../../git/manage-large-files.md).
+Select if you want to download files from [large file storage (LFS)](../../repos/git/manage-large-files.md).
 
 ::: moniker-end
 
@@ -386,7 +386,7 @@ When you remove projects, look for mappings that you can remove from the workspa
 
 If this is a CI build, in most cases you should make sure that these mappings match the filter settings of your CI trigger on the [Triggers tab](triggers.md).
 
-For more information on how to optimize a TFVC workspace, see [Optimize your workspace](../../tfvc/optimize-your-workspace.md).
+For more information on how to optimize a TFVC workspace, see [Optimize your workspace](../../repos/tfvc/optimize-your-workspace.md).
 
 ### Clean the local repo on the agent
 
@@ -435,7 +435,7 @@ Select **true** to delete the repository folder.
 
 [!INCLUDE [include](_shared/label-sources.md)]
 
-The build process labels your sources with a [TFVC label](../../tfvc/use-labels-take-snapshot-your-files.md).
+The build process labels your sources with a [TFVC label](../../repos/tfvc/use-labels-take-snapshot-your-files.md).
 
 ::: moniker-end
 

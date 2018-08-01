@@ -21,7 +21,7 @@ If the repository contains [submodules](https://git-scm.com/docs/git-submodule),
 
 ![Items are blobs and trees](./_img/git-items.png)
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Git/ItemsSample.cs) available for this endpoint.
+There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/ItemsSample.cs) available for this endpoint.
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
@@ -39,7 +39,7 @@ This API does content negotiation based on the `Accept` header you send.
 <a name="afile" />
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/items?api-version={version}&scopePath={filePath}[&includeContentMetadata={bool}&lastProcessedChange={bool}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopePath={filePath}[&includeContentMetadata={bool}&lastProcessedChange={bool}]
 ```
 
 | Parameter              | Type    | Default | Notes
@@ -63,7 +63,7 @@ When you get an item that is a file, the response is a stream (`application/octe
 
 ####Sample request
 ```no-highlight
-GET http://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/git/repositories/Fabrikam-Fiber-Git/items?scopePath=/WebSite/WebSite/Views/Home/_Home.cshtml&api-version=1.0
+GET http://Fabrikam-Fiber-inc.VisualStudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/repos/git/repositories/Fabrikam-Fiber-Git/items?scopePath=/WebSite/WebSite/Views/Home/_Home.cshtml&api-version=1.0
 ```
 ####Sample response
 
@@ -106,7 +106,7 @@ Set `scopePath` to the folder that you want to get in a zipped format and includ
 Accept: application/zip
 ```
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/items?api-version={version}&scopePath={folderPath}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopePath={folderPath}
 ```
 
 You can get a .zip file that contains the contents of a [specific version](#getaspecificversion) of folder, too.
@@ -123,7 +123,7 @@ Set the accept header to `application/json` to get the metadata for a file, or f
 Accept: application/json
 ```
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/items?api-version={version}&scopepath=/mywebsite/mywebsite/views/home/_home.cshtml
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopepath=/mywebsite/mywebsite/views/home/_home.cshtml
 ```
 
 ####Response

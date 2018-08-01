@@ -17,13 +17,13 @@ monikerRange: 'vsts'
 
 ## General
 
-### Q: I made changes to Azure AD, but they didn't seem to take effect?
+#### Q: I made changes to Azure AD, but they didn't seem to take effect?
 
 A: Changes made in Azure AD may take up to 24 hours to be visible in VSTS.
 
 <a name="o365aad"></a>
 
-### Q: Can I use Office 365 Azure AD with VSTS?
+#### Q: Can I use Office 365 Azure AD with VSTS?
 
 A: To connect your VSTS organization to an Office 365 Azure AD,
 you can't use the [free subscription](https://technet.microsoft.com/library/dn832618.aspx)
@@ -50,7 +50,7 @@ Learn how to [associate your Azure subscription to your Office 365 Azure AD](htt
 
 <a name="ChangeMSA"></a>
 
-### Q: My organization uses Microsoft accounts only. Can I switch to Azure AD?
+#### Q: My organization uses Microsoft accounts only. Can I switch to Azure AD?
 
 A: Yes, but before you switch, make sure that Azure AD meets your needs
 for sharing work items, code, resources,
@@ -68,7 +68,7 @@ when you're ready.
 
 ## Understand Azure AD groups
 
-### Q: Why can't I assign VSTS permissions directly to an Azure AD group?
+#### Q: Why can't I assign VSTS permissions directly to an Azure AD group?
 
 A: Because these groups are created and managed in Azure,
 you can't assign VSTS permissions directly
@@ -81,7 +81,7 @@ you can assign these permissions to the VSTS group instead.
 Azure AD group members will inherit permissions from
 the VSTS group where you add them.
 
-### Q: Can I manage Azure AD groups in VSTS?
+#### Q: Can I manage Azure AD groups in VSTS?
 
 A: No, because these groups are created and managed in Azure. 
 VSTS doesn't store or sync member status for Azure AD groups. 
@@ -89,20 +89,20 @@ So, to manage Azure AD groups, use the
 [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM), 
 or the group management tools that your organization supports.
 
-### Q: How do I tell the difference between a VSTS group and an Azure AD group?
+#### Q: How do I tell the difference between a VSTS group and an Azure AD group?
 
 A: On the group's identity card, check the group's source:
 
 ![To find the group's source, check the group's identity card](_img/manage-azure-ad-groups/checkidentitysourceaad.png)
 
-### Q: Why doesn't the Users hub show all Azure AD group members?
+#### Q: Why doesn't the Users hub show all Azure AD group members?
 
 A: These users have to sign in to your VSTS 
 organization before they appear in the Users hub. 
 
 <a name="AssignLicenses"></a>
 
-### Q: How do I assign organization access to Azure AD group members?
+#### Q: How do I assign organization access to Azure AD group members?
 
 A: When these group members sign in to your VSTS organization for the first time,
 VSTS assigns an access level to them automatically. If they have
@@ -115,7 +115,7 @@ in this order: Basic, Stakeholder
 If you don't have enough access levels for all Azure AD group members,
 those members who sign in will get a Stakeholder access.
 
-### Q: Why doesn't the Security tab show all members when I select an Azure AD group?
+#### Q: Why doesn't the Security tab show all members when I select an Azure AD group?
 
 A: The Security tab shows Azure AD group members
 only after they sign in to your VSTS organization
@@ -124,29 +124,29 @@ and have an access level assigned to them.
 To see all Azure AD group members, use the [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM),
 or the group management tools that your organization supports.
 
-### Q: Why doesn't the team members widget show all Azure AD group members?
+#### Q: Why doesn't the team members widget show all Azure AD group members?
 
 A: The team members widget shows only users who previously
 signed in to your VSTS organization.
 
-### Q: Why doesn't the team capacity pane show all Azure AD group members?
+#### Q: Why doesn't the team capacity pane show all Azure AD group members?
 
 A: The team capacity pane shows only users who previously
 signed in to your VSTS organization.
 To set capacity, manually add users to your team.
 
-### Q: Why doesn't the team room show offline users?
+#### Q: Why doesn't the team room show offline users?
 
 A: The team room shows Azure AD group members,
 but only when they're online.
 
-### Q: Why doesn't VSTS reclaim access levels from users who aren't Azure AD group members anymore?
+#### Q: Why doesn't VSTS reclaim access levels from users who aren't Azure AD group members anymore?
 
 A: VSTS doesn't automatically 
 reclaim access levels from these users. 
 To manually remove their access, go to the Users hub.
 
-### Q: Can I assign work items to Azure AD group members who haven't signed in?
+#### Q: Can I assign work items to Azure AD group members who haven't signed in?
 
 A: You can assign work items to any Azure AD member who has permissions
 for your VSTS organization.
@@ -159,14 +159,14 @@ access level and in the security settings, too.
 
 A: No, querying on Azure AD groups is unsupported.
 
-### Q: Can I use Azure AD groups to set up field rules in my work item templates?
+#### Q: Can I use Azure AD groups to set up field rules in my work item templates?
 
 A: No, but read more here about our
 [process customization plans](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/27/visual-studio-online-process-customization-update.aspx).
 
 <a name="remove-user-azure-ad-group"></a>
 
-### Q: Why am I asked to remove a user from an Azure AD group when I delete that user from my VSTS organization?
+#### Q: Why am I asked to remove a user from an Azure AD group when I delete that user from my VSTS organization?
 
 A: Users can belong to your VSTS organization,
 both as individuals and as members of Azure AD groups
@@ -180,7 +180,7 @@ Although we'd like to make it possible to block
 access completely or make exceptions for such users,
 VSTS doesn't currently have this capability.
 
-### Q: How do I remove an Azure AD group from VSTS?
+#### Q: How do I remove an Azure AD group from VSTS?
 
 A: Go to your team project collection or team project.  Then, go to the control panel by choosing the gear icon in the
 top navigation bar and **Security** in the menu.
@@ -197,7 +197,7 @@ Find the Azure AD group, then delete that group from your VSTS organization.
 
 ## Add users to directory
 
-### Q: Can I switch current users from Microsoft accounts to work accounts in VSTS?
+#### Q: Can I switch current users from Microsoft accounts to work accounts in VSTS?
 
 A:  No, although you can add new work accounts to your VSTS organization,
 they're treated as new users. If you want to access all your work,
@@ -205,7 +205,7 @@ including its history, you must use the same sign-in addresses that
 you used before your VSTS organization was connected to your Azure AD.
 You can do this by adding your Microsoft account as a member to your Azure AD.
 
-### Q: Why can't I add users from other directories to my Azure AD?
+#### Q: Why can't I add users from other directories to my Azure AD?
 
 A: You must be a member or have read access in those directories.
 Otherwise, you can add them
@@ -213,7 +213,7 @@ Otherwise, you can add them
 using their Microsoft accounts, 
 or create new work accounts for them in your directory.
 
-### Q: How do I use my work or school account with my Visual Studio with MSDN subscription?
+#### Q: How do I use my work or school account with my Visual Studio with MSDN subscription?
 
 A:  If you used a Microsoft account to activate a
 [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/)
@@ -224,7 +224,7 @@ Learn [how to link work or school accounts to Visual Studio with MSDN subscripti
 
 <a name="guest-access"></a>
 
-### Q: Can I control access to my VSTS organization for external users in the connected directory?
+#### Q: Can I control access to my VSTS organization for external users in the connected directory?
 
 A: Yes, but only for external users who are
 [added as guests through Office 365](https://support.office.com/en-us/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232)
@@ -253,7 +253,7 @@ To learn more, contact your Azure AD administrator. The setting below doesn't af
 
 <a name="connect-o365-azure-ad"></a>
 
-### Q: Can I connect my VSTS organization to an Azure AD created from Office 365?
+#### Q: Can I connect my VSTS organization to an Azure AD created from Office 365?
 
 A: Yes, but if you can't find your Office 365 Azure AD
 when connecting your organization in the Azure portal,
@@ -276,7 +276,7 @@ and connect your Azure AD to your VSTS organization. Learn
 
 <a name="why-not-my-directory"></a>
 
-### Q: Why don't I see the directory that I want to connect? What should I do?
+#### Q: Why don't I see the directory that I want to connect? What should I do?
 
 A: This might happen because:
 
@@ -330,18 +330,18 @@ A: This might happen because:
 
 <a name="subscription-linked-already"></a>
 
-### Q: What if my VSTS organization is already linked to an Azure subscription?
+#### Q: What if my VSTS organization is already linked to an Azure subscription?
 
 A:  You can [change the Azure subscription](../billing/change-azure-subscription.md) that's linked to your VSTS organization.
 However, unlinking will cause your organization to revert to the free tier. See the [VSTS billing FAQ](../billing/vsts-billing-faq.md) for details.
 
-### Q:  What happens if I unlink my Azure subscription while my VSTS organization is connected to a directory?
+#### Q:  What happens if I unlink my Azure subscription while my VSTS organization is connected to a directory?
 
 A:  See the [VSTS billing FAQ](../billing/vsts-billing-faq.md) for details.
 
 <a name="AlreadyConnected"></a>
 
-### Q: Why is my VSTS organization already connected to a directory? Can I change that directory?
+#### Q: Why is my VSTS organization already connected to a directory? Can I change that directory?
 
 A: Your VSTS organization was connected to a directory when the
 organization owner created the organization or sometime after that.
@@ -353,7 +353,7 @@ and reconnect to another directory, but you might have to migrate some users.
 
 <a name="AlternateCredentials"></a>
 
-### Q: My alternate credentials don't work anymore. What do I do?
+#### Q: My alternate credentials don't work anymore. What do I do?
 
 A:  This happens after you connect your VSTS
 organization to a directory. You must
@@ -362,7 +362,7 @@ again for the organization that you connected.
 
 <a name="CantSignIn"></a>
 
-### Q: Why can't users sign in after my VSTS organization is connected to a directory?
+#### Q: Why can't users sign in after my VSTS organization is connected to a directory?
 
 A:  Make sure their sign-in addresses are in the
 connected directory and in your VSTS organization.
@@ -388,7 +388,7 @@ Learn [how to link work or school accounts to Visual Studio with MSDN subscripti
 
 ## Disconnect from directory
 
-### Q: Why can't users sign in after my VSTS organization is disconnected?
+#### Q: Why can't users sign in after my VSTS organization is disconnected?
 
 A:  They must now use Microsoft accounts to sign in.
 They can continue working seamlessly if they have Microsoft

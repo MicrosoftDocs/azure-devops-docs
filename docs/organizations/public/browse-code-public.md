@@ -90,11 +90,11 @@ In the following example, we view **Commits**.
 
 To learn more about these features, see these resources: 
 
-- [Find a file or folder in a Git repository](../../git/find-a-file.md)
-- [Commit details](../../git/commit-details.md)
-- [Manage branches](../../git/manage-your-branches.md)
-- [Working with tags](../../git/how-to/git-tags.md)
-- [Review code with pull requests](../../git/pull-requests.md)
+- [Find a file or folder in a Git repository](../../repos/git/find-a-file.md)
+- [Commit details](../../repos/git/commit-details.md)
+- [Manage branches](../../repos/git/manage-your-branches.md)
+- [Working with tags](../../repos/git/git-tags.md)
+- [Review code with pull requests](../../repos/git/pull-requests.md)
 
 
 ## Try this next

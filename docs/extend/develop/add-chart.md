@@ -14,8 +14,7 @@ ms.date: 10/10/2016
 
 # Add a chart
 
-This page demonstrates how you can add charts to your extensions. 
-Charts can be added to any VSTS extension. Currently, adding charts via extensions is only available for VSTS. 
+This page demonstrates how you can add charts to your extensions. Charts can be added to any VSTS extension. 
 
 These charts are easy to create, resizable, interactive and consistent with the VSTS look and feel. 
 The following chart types are supported: 

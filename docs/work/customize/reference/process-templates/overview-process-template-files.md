@@ -168,7 +168,7 @@ Test Management<br/>
 <td>![not supported](../../../_img/icons/delete_icon.png)</td>
 <td>Defines the initial security permissions for Git and Team Foundation version control (TFVC), and for TFVC, check-in notes and whether exclusive check-out is required. 
 <blockquote>
-For VSTS and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a project, you can manage [TFVC check-in policies](../../../../tfvc/add-check-policies.md) or [permissions](../../../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.
+For VSTS and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a project, you can manage [TFVC check-in policies](../../../../repos/tfvc/add-check-policies.md) or [permissions](../../../../organizations/security/set-git-tfvc-repository-permissions.md) from the web portal.
 </blockquote>
 </td>
 </tr>

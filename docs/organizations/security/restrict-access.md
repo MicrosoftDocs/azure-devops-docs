@@ -79,7 +79,7 @@ To delegate tasks to other members within your organization, consider creating a
 <tr>
 <td>Development lead (Git)</td>
 <td> Manage branch policies</td>
-<td>Edit policies, Force push, and Manage permissions<br/>See [Set branch permissions](../../git/branch-permissions.md).</td>
+<td>Edit policies, Force push, and Manage permissions<br/>See [Set branch permissions](../../repos/git/branch-permissions.md).</td>
 </tr>
 
 <tr>

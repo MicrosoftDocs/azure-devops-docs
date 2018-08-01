@@ -1,4 +1,4 @@
-####Q:	Why can't I sign in after I choose either "personal Microsoft account" or "work or school account"?
+#### Q:	Why can't I sign in after I choose either "personal Microsoft account" or "work or school account"?
 
 A:	This happens when your sign-in address is shared by your 
 personal Microsoft account and by your work account or school account, 

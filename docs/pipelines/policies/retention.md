@@ -99,7 +99,7 @@ When specifying custom policies for each pipeline, you cannot exceed the maximum
 
 <h4 id="branch-policy-pr-builds">Clean up pull request builds</h4>
 
-If you [protect your Git branches with pull request builds](../../git/branch-policies.md#require-the-pull-request-to-build), then you can use retention policies to automatically delete the completed builds. To do it, add a policy that keeps a minimum of `0` builds with the following branch filter:
+If you [protect your Git branches with pull request builds](../../repos/git/branch-policies.md#build-validation), then you can use retention policies to automatically delete the completed builds. To do it, add a policy that keeps a minimum of `0` builds with the following branch filter:
 
 ```
 refs/pull/*

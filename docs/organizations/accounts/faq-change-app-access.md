@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 <a name="Oauth"></a>
 
-####Q:   How do personal access tokens differ from alternate authentication credentials?
+#### Q:   How do personal access tokens differ from alternate authentication credentials?
 
 A:  Personal access tokens are a more convenient and 
 secure replacement for alternate authentication credentials. 
@@ -27,17 +27,17 @@ and to [scopes](https://visualstudio.microsoft.com/integrate/get-started/Authent
 of activities that the token authorizes. Learn more about 
 [personal access tokens here](use-personal-access-tokens-to-authenticate.md).
 
-####Q:  If I deny access to one authentication method in one VSTS organization, does that affect all the organizations I own?
+#### Q:  If I deny access to one authentication method in one VSTS organization, does that affect all the organizations I own?
 
 A:  No, you can still use that method in all the other VSTS organizations that you own. 
 [Personal access tokens](use-personal-access-tokens-to-authenticate.md) apply to specific organizations 
 or to all organizations, based on your selection when you created the token.
 
-####Q:  If I deny access to an authentication method, then allow access again, will the apps that need access continue to work?
+#### Q:  If I deny access to an authentication method, then allow access again, will the apps that need access continue to work?
 
 A:  Yes, those apps will continue working.
 
-####Q:  What apps integrate with VSTS?
+#### Q:  What apps integrate with VSTS?
 
 A:  Find the [apps that integrate with VSTS here](https://marketplace.visualstudio.com/VSTS).
 

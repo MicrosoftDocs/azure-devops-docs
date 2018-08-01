@@ -20,9 +20,9 @@ VSTS offers the capability for other apps to integrate with its services and res
 
 * [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for VSTS and Team Foundation Server](../../integrate/get-started/rest/basics.md). The [Organizations](../../integrate/api/shared/organizations.md) and [Profiles](../../integrate/api/shared/profiles.md) APIs support only OAuth.
 
-* [Alternate credentials](../../git/auth-overview.md#alternate-credentials) as a single set of credentials across all tools that don't have plug-in, extension, or native support. For example, you can use basic authentication to access [REST APIs for VSTS and TFS](../../integrate/get-started/rest/basics.md), but you must turn on alternate credentials.
+* [Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) as a single set of credentials across all tools that don't have plug-in, extension, or native support. For example, you can use basic authentication to access [REST APIs for VSTS and TFS](../../integrate/get-started/rest/basics.md), but you must turn on alternate credentials.
 
-* [SSH authentication](../../git/use-ssh-keys-to-authenticate.md) to generate encryption keys when you use Linux, macOS, or Windows running [Git for Windows](http://www.git-scm.com/download/win) and can't use [Git credential managers](../../git/set-up-credential-managers.md) or [personal access tokens](use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
+* [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys when you use Linux, macOS, or Windows running [Git for Windows](http://www.git-scm.com/download/win) and can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
 
 * [Personal access tokens](use-personal-access-tokens-to-authenticate.md) to generate tokens for:
 

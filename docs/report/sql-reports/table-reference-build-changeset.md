@@ -35,6 +35,6 @@ For information about the measures and dimensions that are associated with these
   
 ## Related notes
 - [Builds](perspective-build-analyze-report-build-details-coverage.md)   
-- [Find and view changesets](../../tfvc/find-view-changesets.md)   
+- [Find and view changesets](../../repos/tfvc/find-view-changesets.md)   
 - [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md) 
 - [Continuous integration on any platform](../../pipelines/overview.md) 

@@ -39,7 +39,7 @@ After you update your project with the Configure Features wizard, you have acces
 Code Review
 </td>
 <td>
-Adds the Code Review Request and Code Review Response work item types (WITs). With them, you can [request a code review and track code review responses](../../tfvc/get-code-reviewed-vs.md).  
+Adds the Code Review Request and Code Review Response work item types (WITs). With them, you can [request a code review and track code review responses](../../repos/tfvc/get-code-reviewed-vs.md).  
 </td>
 <td>
 **Required:** [Configure an SMTP server for TFS](/tfs/server/admin/setup-customize-alerts). <br/>
@@ -51,7 +51,7 @@ Adds the Code Review Request and Code Review Response work item types (WITs). Wi
 My Work
 </td>
 <td>
-Adds support for automatic update of bug status when using My Work. Use to automate some activities when [developing code and managing pending changes](../../tfvc/develop-code-manage-pending-changes.md).  
+Adds support for automatic update of bug status when using My Work. Use to automate some activities when [developing code and managing pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md).  
 </td>
 <td>
 **Required:** Visual Studio (any version).

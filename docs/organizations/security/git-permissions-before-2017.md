@@ -63,7 +63,7 @@ By default, the team project level and collection level Readers groups have only
 	<tr>
 		<td id="git-contribute-permission">Contribute</td>
 		<td>
-			At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](../../git/branch-policies.md). 
+			At the repository level, can push their changes to branches in the repository. Does not override restrictions in place from [branch policies](../../repos/git/branch-policies.md). 
 			At the branch level, can push their changes to the branch and lock the branch.
 		</td>
 	</tr>

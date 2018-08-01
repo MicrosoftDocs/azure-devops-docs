@@ -100,7 +100,7 @@ Watch a how-to video on pull requests on our [YouTube channel](https://www.youtu
 
 ### Where can I learn more about the VSTS Pull Request feature?
 
-This [Conduct a Git pull request](../git/tutorial/pullrequest.md) tutorial provides more details.
+This [Conduct a Git pull request](../repos/git/pullrequest.md) tutorial provides more details.
 
 ### What if I can't see any repositories after signing in?
 
