@@ -133,10 +133,10 @@ To add members to projects, you'll need
 ## Next steps
 
 * [Connect to a project](../projects/connect-to-projects.md)
-* [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
-* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 
 ## Related articles
 
+* [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

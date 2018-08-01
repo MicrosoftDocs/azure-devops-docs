@@ -79,7 +79,7 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS organization user w
 
 The external user is added to the VSTS organizationt to which they were invited and has immediate access.
 
-## Related information
+## Related articles
 
 * [What is Azure AD B2B Collaboration?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 
