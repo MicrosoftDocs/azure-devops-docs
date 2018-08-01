@@ -1529,7 +1529,7 @@ pipelines\tasks\build\_img
 <br/>
 
 <p><b>Required team activities to generate useful reports</b></p>
-<p>To gain useful, actionable information from your reports, [team members must perform certain activites](../report/admin/review-team-activities-for-useful-reports.md). </p>
+<p>To gain useful, actionable information from your reports, [team members must perform certain activities](../report/admin/review-team-activities-for-useful-reports.md). </p>
 
 
 </td>
@@ -1814,7 +1814,7 @@ the libraries needed by your app or service.</p>
 <p>Here are a number of [samples](https://github.com/Microsoft/vso-extension-samples) that work with the REST APIs directly.</p>
 
 <p><b>C# client library samples</b></p>
-<p>Here are a few quick [samples](../integrate/get-started/client-libraries/samples.md) to help you get started wiht the client libraries.</p>
+<p>Here are a few quick [samples](../integrate/get-started/client-libraries/samples.md) to help you get started with the client libraries.</p>
 
 
 </td>

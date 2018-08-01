@@ -42,7 +42,7 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 * A VSTS account. If you don't have one, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 * To use the **Import repository** feature in TFS, you must have TFS 2017 Update 1 or higher. 
-* To import a respository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
+* To import a repository using TFS 2017 RTM or earlier, see [Manually import a repo](#manually-import-a-repo).
 
 ::: moniker range=">= tfs-2017"
 

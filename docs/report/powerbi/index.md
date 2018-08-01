@@ -1,7 +1,7 @@
 ---
 title: Power BI 
 titleSuffix: VSTS
-description: Create PowerBI charts, reports, and dashboards based on the Analyltics Service for Visual Studio Team Services 
+description: Create PowerBI charts, reports, and dashboards based on the Analytics Service for Visual Studio Team Services 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual

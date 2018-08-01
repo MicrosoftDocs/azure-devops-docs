@@ -110,7 +110,7 @@ VSTS and TFS support a variety of service connection types by default. Some of t
 * [Azure Classic service connection](#sep-azure-classic)
 * [Azure Resource Manager service connection](#sep-azure-rm)
 * [Azure Service Bus service connection](#sep-servbus)
-* [Bitbucket Cloud service enconnectiondpoint](#sep-bbucket)
+* [Bitbucket service connection](#sep-bbucket)
 * [Chef service connection](#sep-chef)
 * [Docker Host service connection](#sep-dochost)
 * [Docker Registry service connection](#sep-docreg)
@@ -470,7 +470,7 @@ Defines and secures a connection to a Service Fabric cluster.
 | Username | Required when connection type is **Azure Active Directory**. The username for authentication. |
 | Password | Required when connection type is **Azure Active Directory**. The password for the username. |
 | Use Windows security | Required when connection type is **Others**. |
-| Cluster SPN | Required when connection type is **Others** and usiong Windows security. |
+| Cluster SPN | Required when connection type is **Others** and using Windows security. |
 <p />
 
 [How do I create a new service connection?](#create-new)

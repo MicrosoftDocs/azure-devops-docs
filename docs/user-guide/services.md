@@ -99,7 +99,7 @@ To learn more, see [Continuous integration on any platform](../pipelines/overvie
 
 ## Test
 
-Test features support manual and exploratory testing, load or performace testing, and continuous testing.  Here we show the **Test** hub that support creating and managing manual tests.  
+Test features support manual and exploratory testing, load or performance testing, and continuous testing.  Here we show the **Test** hub that support creating and managing manual tests.  
 
 <img src="_img/services/test-hub.png" alt="Test hub" style="border: 2px solid #C3C3C3;" />
 

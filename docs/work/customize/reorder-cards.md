@@ -7,7 +7,8 @@ ms.prod: devops
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
 monikerRange: '>= tfs-2013'
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 03/20/2018
 ---
@@ -54,7 +55,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
 
 2. From the Card reordering page you can choose between the two supported behaviors.    
-	<img src="../kanban/_img/kanban-card-reordering-up1.png" alt="Kanban board, Card reording configuration dialog" style="border: 1px solid #C3C3C3;" />   
+	<img src="../kanban/_img/kanban-card-reordering-up1.png" alt="Kanban board, Card reordering configuration dialog" style="border: 1px solid #C3C3C3;" />   
 
 	The setting you choose applies to all active Kanban boards for your team.  
 

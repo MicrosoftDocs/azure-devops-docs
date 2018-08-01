@@ -9,5 +9,5 @@ Check if your organization controls access with Azure AD.
 ![Go to Settings, check for a connected directory](_img/organization-check-connected-azure-ad-new-ui.png)
 
 If your organization is connected to your organization's directory, 
-this means that only users from your organization's directory can join yourorganization.
+this means that only users from your organization's directory can join your organization.
 Learn about [controlling organization access with Azure AD](/vsts/organizations/accounts/add-users-to-aad). 
