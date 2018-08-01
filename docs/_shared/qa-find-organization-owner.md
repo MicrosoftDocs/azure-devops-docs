@@ -1,7 +1,6 @@
-####Q:	How do I find the organization owner?
+#### Q:	How do I find the organization owner?
 
-If you have at least Basic access, 
-you can find the current owner in your VSTS organization settings.
+If you have at least Basic access, you can find the current owner in your VSTS organization settings.
 
 0.	Go to your VSTS organization settings.
 

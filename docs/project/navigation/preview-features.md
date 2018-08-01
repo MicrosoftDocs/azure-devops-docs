@@ -36,35 +36,36 @@ Some features provide a new user interface and functionality, which can be manag
 
 From time to time, a new feature is introduced in Preview mode, which allows you to turn it on or off. 
 
- [New navigation](#tab/new-nav)
+# [New navigation](#tab/new-nav)
 
 0. To access the Preview features options, open your profile menu, and select **Preview features**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](../../_shared/_img/settings/profile-menu-vert.png)  
+	> ![Open Preview Features](_img/manage-features/choose-preview-features-vert.png)  
 
 0. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Preview features options for yourself](_img/manage-features/user-s137.png) 
-
 
 # [Previous navigation](#tab/previous-nav)  
 
 0. To access the Preview features options, open your profile menu, and select **Preview features**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Preview Features](../../_shared/_img/settings/profile-menu-horz.png)  
+	> ![Open Preview Features](_img/manage-features/choose-preview-features-horz.png)  
 
 0. To enable or disable a feature, choose the slider. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Preview features options for yourself](_img/manage-features/user-s137.png) 
 
+---
+
 <a id="account-level">  </a>
 ## Enable features at the organization (account) level (for all users)  
 
-When you enable a feature at the account level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
+When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
 
 > [!TIP]  
 > If you don't see the **for this account** menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
