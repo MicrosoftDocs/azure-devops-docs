@@ -36,7 +36,7 @@ and so on.
 Here's the general process:
 
 1.	Identify the most important assets that you need to migrate - typically source code, work items, or both. Other assets in TFS - 
-build definitions, test plans, and so forth - are harder to manually migrate. 
+build pipelines, test plans, and so forth - are harder to manually migrate. 
 2.	Identify a good time to make the transition.
 3.	Prepare your target VSTS accounts. Create the accounts and team projects that you need, provision users, and so on.
 4.	Migrate your data.

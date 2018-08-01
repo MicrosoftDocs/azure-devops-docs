@@ -28,7 +28,7 @@ The workflow determines the logical progression and regression of work that team
 > [!NOTE]  
 > This topic describes how to customize a workflow state. If instead, you want to change the State assigned to a specific work item, see one of the following topics: [Add work items, Update work status](../../work-items/work-item-form-controls.md#update-work-status), [Kanban board, Track work in progress](../../kanban/kanban-basics.md#track-work), or [Task board, Update task status](../../scrum/task-board.md#update-task-status). You can also perform a [bulk update of the State for many work items](../../backlogs/bulk-modify-work-items.md).
 > 
-> For information about build definition workflows, see [Get started with CI/CD](../../../pipelines/get-started-designer.md).
+> For information about build pipeline workflows, see [Get started with CI/CD](../../../pipelines/get-started-designer.md).
 
 
 [!INCLUDE [temp](../../_shared/update-xml-wit.md)] 

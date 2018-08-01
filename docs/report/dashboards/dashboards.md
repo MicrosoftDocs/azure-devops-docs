@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2015'
 ms.date: 07/21/2018

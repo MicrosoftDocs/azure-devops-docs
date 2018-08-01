@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 Visual Studio Team Services now includes an integrated symbol server. When you run a build, PDB files are produced which you can upload to the symbol server. These symbols can then be later downloaded to debug production issues, or by other developers in your organization that might be reusing the code that you have published into a package. By default VSTS makes it very easy to index and publish symbols for source code that is hosted and built within VSTS, but did you know that you can also publish symbols for source code that is hosted on GitHub?
 
-When building .NET code in VSTS the _Index and Publish Symbols_ build task is responsible finding PDB files and inserting source file location information into them so that when they are later downloaded the debugger knows where to locate source files. The symbols task is included by default in build definition templates. All you need to do is check the **Publish Symbols** parameter to get started.
+When building .NET code in VSTS the _Index and Publish Symbols_ build task is responsible finding PDB files and inserting source file location information into them so that when they are later downloaded the debugger knows where to locate source files. The symbols task is included by default in build pipeline templates. All you need to do is check the **Publish Symbols** parameter to get started.
 
 ![Publish Symbols checkbox on Index & Publish Symbols task](_img/publishsymbolscheckbox.png)
 
@@ -28,12 +28,12 @@ For source code that is hosted in VSTS, that is all you need to do. However, for
 ## Installing the Source Link Package
 VSTS doesn't natively know how to map source code that originated from a GitHub repository so we need to give it a bit of a hand. To do that you need to install the ```SourceLink.Create.CommandLine``` package into your solution. This injects the logic necessary to map source code hosted in GitHub to symbols stored in PDB files so that the Visual Studio debugger can seamlessly download source files as another developer steps through your code.
 
-## Modifying Build Definition
-The next step is to modify the build definition to invoke Source Link. This is done by adding a ```/p:SourceLinkCreate=true``` parameter to the _MSBuild_ task.
+## Modifying the Build Pipeline
+The next step is to modify the build pipeline to invoke Source Link. This is done by adding a ```/p:SourceLinkCreate=true``` parameter to the _MSBuild_ task.
 
 ![SourceLinkCreate property added to MSBuild arguments](_img/msbuildsourcelinkcreateproperty.png)
 
-Once this is done you can save and queue the build definition and the GitHub source linking information will be embedded into the PDBs prior to be publishing to the symbol server in VSTS.
+Once this is done you can save and queue the build pipeline and the GitHub source linking information will be embedded into the PDBs prior to be publishing to the symbol server in VSTS.
 
 > [!NOTE]
 > You may notice that during the build process a warning is still produced by the _Index and Publish Symbols_ task that it cannot index the source code because it is not hosted in VSTS. You can ignore this warning because the source location information was embedded earlier in the build process via the Source Link tooling.

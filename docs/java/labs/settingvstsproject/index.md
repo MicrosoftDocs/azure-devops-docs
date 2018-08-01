@@ -51,7 +51,7 @@ In this task you will generate a personal access token for yourself. PATs essent
 
 ## Create a new project with VSTS Demo Generator...
 
-Next, you need to create a team project. You can create the team project manually or by using [VSTS Demo Generator](https://vstsdemogenerator.azurewebsites.net/), a tool that helps you create team projects on your VSTS account with sample content that include source code, work items, iterations, service endpoints, build and release definitions based on the template you choose during the configuration.
+Next, you need to create a team project. You can create the team project manually or by using [VSTS Demo Generator](https://vstsdemogenerator.azurewebsites.net/), a tool that helps you create team projects on your VSTS account with sample content that include source code, work items, iterations, service connections, build and release pipelines based on the template you choose during the configuration.
 
 The steps below use VSTS Demo Generator to provision a demo Java project for you.
 

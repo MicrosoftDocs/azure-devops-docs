@@ -35,7 +35,7 @@ VSTS also offers you a way to run a Microsoft CI/CD agent on machines that you m
 Typically you'll choose this option when:
 
 * there is custom software that runs in your build process which is not included in the Microsoft-hosted option above, or
-* you already have a TFS build server running, and aren't ready to move your build definitions to VSTS.
+* you already have a TFS build server running, and aren't ready to move your build pipelines to VSTS.
 
 [Buy self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 
