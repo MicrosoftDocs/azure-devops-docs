@@ -57,7 +57,7 @@ A build completes
 * Event ID: `build.complete`
 
 #### Settings
- * `definitionName`: Filter events to include only completed builds for the specified definition
+ * `definitionName`: Filter events to include only completed builds for the specified pipeline
  * `buildStatus`: Filter events to include only completed builds for the specified completion status
    * Valid values: 
       * `Succeeded` 
@@ -166,7 +166,7 @@ A release was abandoned
 * Event ID: `ms.vss-release.release-abandoned-event`
 
 #### Settings
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+ * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 ```json
@@ -181,9 +181,9 @@ A release was abandoned
     "markdown": "Release [Release-1](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) abandoned."
   },
   "detailedMessage": {
-    "text": "Release Release-1 from release definition Fabrikam.CD abandoned.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
-    "html": "Release <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> from <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a> release definition abandoned.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more <\\li>",
-    "markdown": "Release [Release-1](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) from release definition [Fabrikam.CD](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1) abandoned.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
+    "text": "Release Release-1 from release pipeline Fabrikam.CD abandoned.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
+    "html": "Release <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> from <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a> release pipeline abandoned.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more <\\li>",
+    "markdown": "Release [Release-1](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) from release pipeline [Fabrikam.CD](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1) abandoned.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
   },
   "resource": {
     "release": {
@@ -326,7 +326,7 @@ A release was created
 * Event ID: `ms.vss-release.release-created-event`
 
 #### Settings
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+ * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 ```json
@@ -341,9 +341,9 @@ A release was created
     "markdown": "Release [Release-1](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created."
   },
   "detailedMessage": {
-    "text": "Release Release-1 created from release definition Fabrikam.CD.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
-    "html": "Release <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created from release definition <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a>.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
-    "markdown": "Release [Release-1](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created from release definition [Fabrikam.CD](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1).\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegrationRequested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
+    "text": "Release Release-1 created from release pipeline Fabrikam.CD.\\r\\nRelease description: QFE release for fixing title\\r\\nContinuousIntegration Requested for Chuck Reinhart\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
+    "html": "Release <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5'>Release-1</a> created from release pipeline <a href='http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1'>Fabrikam.CD</a>.\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegration Requested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>",
+    "markdown": "Release [Release-1](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releases/5) created from release pipeline [Fabrikam.CD](http://fabfiber.vsrm.visualstudio.com/DefaultCollection/Fabrikam-Fiber-Git/_apis/Release/releasedefinitions/1).\\r\\n<li>Release description: QFE release for fixing title</li>\\r\\n<li>ContinuousIntegrationRequested for Chuck Reinhart</li>\\r\\n<li>Build: fabrikam.Bd.2016.04.10 & 2 more<\\li>"
   },
   "resource": {
     "release": {
@@ -695,7 +695,7 @@ A deployment approval has been requested
       * `1` - Pre-deployment
       * `2` - Post-deployment
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+ * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
 
 #### Sample payload
 ```json
@@ -887,7 +887,7 @@ A deployment completed
 
 #### Settings
  * `releaseEnvironmentId`: Filter events to include only completed deployments for the specified environment
- * `releaseDefinitionId`: Filter events to include only completed deployments for the specified definition
+ * `releaseDefinitionId`: Filter events to include only completed deployments for the specified pipeline
  * `releaseEnvironmentStatus`: Filter events to include only completed deployments with the specified status
    * Valid values: 
       * `8` - Canceled

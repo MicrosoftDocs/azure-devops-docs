@@ -123,9 +123,9 @@ Click VCS->Commit Changes to commit your changes to the repo.
 
 In this task you will create a build that will publish the MyShuttleCalc library to the Maven feed.
 
-1. Open VSTS and connect to your team project. Click on the Build & Release Hub and then click Builds. Click on +New to create a new build definition.
+1. Open VSTS and connect to your team project. Click on the Build & Release Hub and then click Builds. Click on +New to create a new build pipeline.
 
-    ![New build definition](../_img/mavenpmvsts/new-build.png)
+    ![New build pipeline](../_img/mavenpmvsts/new-build.png)
 
 1. In the templates window, type "maven" into the search box. Click apply on the Maven template.
 

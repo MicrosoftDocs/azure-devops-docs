@@ -18,7 +18,7 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `definitionUri`: string. Uri of the associated definition
+* `definitionUri`: string. URI of the associated definition
 
 * `fields`: {[key: string]: string}. fields associated with this build definition
 

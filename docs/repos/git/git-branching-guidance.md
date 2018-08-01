@@ -104,7 +104,7 @@ Set up a [branch policy](branch-policies.md) for your master branch that:
 0. Requires a successful build to complete a pull request. Code merged into the master branch should build cleanly.    
 
 >[!TIP]
->The build definition for your pull requests should be quick to complete, so it doesn't interfere with the review process. 
+>The build pipeline for your pull requests should be quick to complete, so it doesn't interfere with the review process. 
 
 ::: moniker-end 
 

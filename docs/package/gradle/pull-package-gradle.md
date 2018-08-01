@@ -129,4 +129,4 @@ Now, select the **gradlew build** step. You can use the default settings to star
 
 ![Configure the Gradle template](_img/gradle-build-template.png)
 
-Here, you can configure various Gradle tasks to run during the build.  Once you've configured the build definition, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!
+Here, you can configure various Gradle tasks to run during the build.  Once you've configured the build pipeline, click **Save & queue** from the top menu and start building with your Gradle wrapper. You're done!

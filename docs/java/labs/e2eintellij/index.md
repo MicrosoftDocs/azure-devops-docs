@@ -64,7 +64,7 @@ In this task you will enforce quality on the master branch by creating branch po
 
 1. Check "Check for linked work items" and set the radio to required.
 
-1. Under Build validation, click Add build policy. Select MyShuttle2 from the list of build definitions and click Save.
+1. Under Build validation, click Add build policy. Select MyShuttle2 from the list of build pipelines and click Save.
 
     ![Policy configuration](../_img/e2eintellij/policy.png)
 
