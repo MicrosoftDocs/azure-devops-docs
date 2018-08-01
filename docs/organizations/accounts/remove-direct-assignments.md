@@ -38,7 +38,7 @@ Direct assignments are removed from the users.
 
 >[!Note: If the user is not a member of any groups, they will not be affected.]
 
-## Related information
+## Related articles
 
 * [What is Azure AD B2B Collaboration?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 

@@ -85,4 +85,6 @@ Make sure that the new owner:
 
    ![Select new owner, save changes](_img/change-organization-ownership/vsosaveneworganizationowner.png)
 
+---
+
    Your VSTS organization has a new owner!
