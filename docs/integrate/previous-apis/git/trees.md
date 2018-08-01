@@ -27,7 +27,7 @@ Use the request header `Accept: application/zip` to download a folder and its co
 Accept: application/zip
 ```
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/trees/{objectId}?api-version={version}&fileName={fileName}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/trees/{objectId}?api-version={version}&fileName={fileName}
 ```
 
 | Parameter  | Type   | Default   | Notes

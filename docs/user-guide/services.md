@@ -61,7 +61,7 @@ From the Code hub for Git you can perform these tasks:
 - Review, create, approve, comment, and complete pull requests  
 - Add and manage Git tags   
 
-To learn more, see the overviews for [Git](../git/overview.md) or [TFVC](../tfvc/overview.md). 
+To learn more, see the overviews for [Git](../repos/git/overview.md) or [TFVC](../repos/tfvc/overview.md). 
 
 ## Plan and track work
 

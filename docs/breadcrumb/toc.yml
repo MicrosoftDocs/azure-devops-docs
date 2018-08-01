@@ -6,15 +6,15 @@
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
   - name: Code
-    tocHref: /vsts/git/
+    tocHref: /vsts/repos/git/
     topicHref: /vsts/index#pivot=services&panel=code
     items:
     - name: Git
-      tocHref: /vsts/git/
-      topicHref: /vsts/git/index
+      tocHref: /vsts/repos/git/
+      topicHref: /vsts/repos/git/index
     - name: TFVC
-      tocHref: /vsts/tfvc/
-      topicHref: /vsts/tfvc/index
+      tocHref: /vsts/repos/tfvc/
+      topicHref: /vsts/repos/tfvc/index
   - name: "Continuous Integration & Delivery"
     tocHref: /vsts/pipelines/
     topicHref: /vsts/index#pivot=services&panel=delivery

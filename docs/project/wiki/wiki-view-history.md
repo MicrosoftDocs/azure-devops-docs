@@ -8,7 +8,8 @@ ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.reviewer: sancha
 monikerRange: '>= tfs-2018'
 ms.date: 04/26/2018  
@@ -136,13 +137,13 @@ You can use the following steps to identify the commit that contains the content
 
 For more information, see the following topics: 
 
-- [Clone an existing Git repo](../../git/tutorial/clone.md)  
-- [Create work in branches](../../git/tutorial/branches.md)  
-- [Review history](../../git/tutorial/history.md)  
-- [Undo (revert) changes](../../git/tutorial/undo.md)
-- [Resolve merge conflicts](../../git/tutorial/merging.md)
-- [Copy changes with cherry-pick](../../git/tutorial/cherry-pick.md)
-- [Commit details](../../git/commit-details.md)
+- [Clone an existing Git repo](../../repos/git/clone.md)  
+- [Create work in branches](../../repos/git/branches.md)  
+- [Review history](../../repos/git/review-history.md)  
+- [Undo (revert) changes](../../repos/git/undo.md)
+- [Resolve merge conflicts](../../repos/git/merging.md)
+- [Copy changes with cherry-pick](../../repos/git/cherry-pick.md)
+- [Commit details](../../repos/git/commit-details.md)
 
 
 ::: moniker-end

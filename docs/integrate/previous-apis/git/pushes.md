@@ -17,13 +17,13 @@ ms.date: 08/04/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/Git/PushesSample.cs) available for this endpoint.
+There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/PushesSample.cs) available for this endpoint.
 
 
 ## Get a list of pushes
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pushes?api-version={version}[&fromDate={dateTime}&toDate={dateTime}&pusherId={guid}&$skip={integer}&$top={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pushes?api-version={version}[&fromDate={dateTime}&toDate={dateTime}&pusherId={guid}&$skip={integer}&$top={integer}]
 ```
 
 | Parameter  | Type     | Default | Notes
@@ -68,7 +68,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repos
 ## Get a push
 
 ```
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pushes/{pushId}?api-version={version}[&includeRefUpdates={bool}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pushes/{pushId}?api-version={version}[&includeRefUpdates={bool}]
 ```
 
 | Parameter         | Type     | Default | Notes
@@ -110,7 +110,7 @@ Each new push is limited to 1 commit, but this commit can contain 1 or more chan
 | commits           | array    |         | Commit to create. Must be an array of 1 item. See examples below.
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/pushes?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/pushes?api-version={version}
 ```
 
 ### Initial commit (Create a new branch)
@@ -123,7 +123,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 
 ### Add a binary file
 
-*Keep in mind that [Git isn't designed to store large or frequently-changing binaries](https://visualstudio.com/docs/git/manage-large-files).*
+*Keep in mind that [Git isn't designed to store large or frequently-changing binaries](https://visualstudio.com/docs/repos/git/manage-large-files).*
 
 [!code-REST [POST__git_repositories__tempRepoId__pushes3_json](./_data/pushes/POST__git_repositories__tempRepoId__pushes3.json)]
 

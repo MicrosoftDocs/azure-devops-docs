@@ -151,8 +151,8 @@ To learn more, see [Microsoft Azure - HockeyApp](https://docs.microsoft.com/azur
 
 You can perform many code development and administrative tasks using command line tools.
 
-- [Git commands](../git/command-prompt.md)
-- [TFVC commands](../tfvc/use-team-foundation-version-control-commands.md)
+- [Git commands](../repos/git/command-prompt.md)
+- [TFVC commands](../repos/tfvc/use-team-foundation-version-control-commands.md)
 - [TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)
 - [TFSDeleteProject](/tfs/server/ref/command-line/tfsdeleteproject-cmd)
 - [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)

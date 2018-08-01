@@ -41,7 +41,24 @@ If you specify a description here, it is shown near the name of the build pipeli
 
 <h2 id="build-number-format">Build number format</h2>
 
-If you leave it blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
+# [Designer](#tab/designer)
+
+If you leave this field blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
+
+# [YAML](#tab/yaml)
+
+In YAML, this property is called `name`.
+If not specified, your completed build is given a unique integer as its name.
+You can give completed builds much more useful names that are meaningful to your team.
+You can use a combination of tokens, variables, and underscore characters.
+
+```yaml
+name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+steps:
+- script: echo hello world
+```
+
+---
 
 ### Example
 
@@ -186,7 +203,7 @@ Specify the maximum time a build job is allowed to execute on an agent before be
 
 ::: moniker range=">= tfs-2017"
 
-<h2 id="job-cancel-timeout">Build job timeout in minutes (VSTS, TFS 2017.3 and newer)</h2>
+<h2 id="job-cancel-timeout">Build job cancel timeout in minutes</h2>
 
 Specify the maximum time a build job is allowed to respond after the a user cancels the build. You can specify a value from 1 to 60 minutes.
 

@@ -86,7 +86,7 @@ With the previous navigation enabled, you select a service&mdash;such as **Code*
 
 Now that you have an understanding of how the user interface is structured, it's time to get started using it. As you can see, there are a lot of features and functionality.  
 
-If all you need is a code repository and bug tracking solution, then start with the [Get started with Git](../../git/gitquickstart.md) and [Manage bugs](../../work/backlogs/manage-bugs.md).  
+If all you need is a code repository and bug tracking solution, then start with the [Get started with Git](../../repos/git/gitquickstart.md) and [Manage bugs](../../work/backlogs/manage-bugs.md).  
 
 To start planning and tracking work, see [About Agile tools](../../work/work-items/about-agile-tools.md?context=vsts/default).
 
@@ -144,8 +144,8 @@ Although you can access source code, work items, and builds from both clients, s
 <li><p>Task specific interfaces that integrate with Git and TFVC, such as:
 </p>
 <ul>
-<li><p><b>Git: </b> [Changes](../../git/tutorial/commits.md#stage-your-changes-and-commit) |  [Branches](../../git/tutorial/branches.md) | [Pull Requests](../../git/tutorial/pullrequest.md) | [Sync](../../git/tutorial/pulling.md) | [Work Items](../../work/backlogs/add-work-items.md) | [Builds](https://msdn.microsoft.com/library/ms181721.aspx) </p></li>
-<li><p><b>TFVC: </b> [My Work](../../tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work) | [Pending Changes](../../tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) | [Source Control Explorer](../../tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed)  | [Work Items](../../work/backlogs/add-work-items.md) | [Builds](https://msdn.microsoft.com/library/ms181721.aspx) </p></li>
+<li><p><b>Git: </b> [Changes](../../repos/git/commits.md#stage-your-changes-and-commit) |  [Branches](../../repos/git/branches.md) | [Pull Requests](../../repos/git/pullrequest.md) | [Sync](../../repos/git/pulling.md) | [Work Items](../../work/backlogs/add-work-items.md) | [Builds](https://msdn.microsoft.com/library/ms181721.aspx) </p></li>
+<li><p><b>TFVC: </b> [My Work](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-my-work-page-to-manage-your-work) | [Pending Changes](../../repos/tfvc/develop-code-manage-pending-changes.md#use-the-pending-changes-page-to-manage-your-work) | [Source Control Explorer](../../repos/tfvc/develop-code-manage-pending-changes.md#use-solution-explorer-or-source-control-explorer-to-view-what-you-changed)  | [Work Items](../../work/backlogs/add-work-items.md) | [Builds](https://msdn.microsoft.com/library/ms181721.aspx) </p></li>
 </ul>
 </li>
 <li><p>Greater integration with work items and Office-integration clients. You can open a work item or query result in an office supported client.</p></li>

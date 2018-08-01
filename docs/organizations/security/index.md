@@ -52,7 +52,7 @@ For anyone to access a team project, you must add them to a security group. For 
 
 ## How-to Guides
 
-- [Set Git branch permissions](../../git/branch-permissions.md?toc=/vsts/organizations/organizations/security/toc.json&bc=/vsts/organizations/organizations/security/breadcrumb/toc.json  ) 
+- [Set Git branch permissions](../../repos/git/branch-permissions.md?toc=/vsts/organizations/organizations/security/toc.json&bc=/vsts/organizations/organizations/security/breadcrumb/toc.json  ) 
 - [Set build and release permissions](../../pipelines/policies/set-permissions.md) 
 - [Set permissions and access for work tracking](set-permissions-access-work-tracking.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) 
 - [Change access levels (TFS)](change-access-levels.md)

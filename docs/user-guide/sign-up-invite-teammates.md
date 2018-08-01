@@ -49,8 +49,8 @@ Then enter your password, and finish signing in.
 
 	<img src="../organizations/accounts/_img/sign-up-visual-studio-team-services/create-team-services-organization.png" alt="Name your VSTS organization, choose your version control" style="border: 1px solid #C3C3C3;" />
 
-	Choose Git for distributed source control and TFVC for centralized source control. To learn more, review [Git](../git/overview.md) 
-	or [Team Foundation Version Control](../tfvc/overview.md).
+	Choose Git for distributed source control and TFVC for centralized source control. To learn more, review [Git](../repos/git/overview.md) 
+	or [Team Foundation Version Control](../repos/tfvc/overview.md).
 
 0.	(Optional) Click **Change details** to change default assignments. Otherwise, click **Continue** to confirm to initiate your organization creation.
 
