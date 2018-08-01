@@ -72,5 +72,9 @@ Create an alternate user name and password to access your Git repository using a
 Unlike personal access tokens, this login doesn't expire and can't be scoped to limit access to your VSTS data.
 Use alternate credentials as a last resort when you can't use personal access tokens or SSH keys.
 
+The username (secondary) is a value that is going to be stored on the VSTS account and cant be reused, for any other user even the user is not listed on the userhub.
+
+
+
 
 
