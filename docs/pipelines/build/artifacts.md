@@ -31,7 +31,7 @@ Here are some examples of how to publish artifacts from the **Tasks** tab of you
 ### Publish a README.md file
 
 > [!TIP]
-> If you want to try this and you don't already have a Git repo with a README.md file at the root, you can quickly [create one](../../git/create-new-repo.md).
+> If you want to try this and you don't already have a Git repo with a README.md file at the root, you can quickly [create one](../../repos/git/create-new-repo.md).
 
 ![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 

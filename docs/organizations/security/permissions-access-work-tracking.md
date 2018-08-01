@@ -217,7 +217,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 - [Create and edit child nodes under an existing iteration node](set-permissions-access-work-tracking.md)  
 - [Create shared queries and folders under the Shared Queries folder](../../work/track/set-query-permissions.md).  
  
-By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git team project](../../git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../tfvc/check-your-work-team-codebase.md).  
+By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git team project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 
 ![Default permissions assigned to team contributors](../../work/scale/_img/default-permissions-assigned-to-team-contributors.png)  
 

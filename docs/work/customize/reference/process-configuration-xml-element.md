@@ -389,7 +389,7 @@ The following table describes the additional elements used to define the state c
 <tbody valign="top">
 <tr>
 <td><p><strong>BugWorkItems</strong></p></td>
-<td><p>Optional. Container element that defines the state category mappings for work item types assigned to the Bug Category. In addition to how these mappings are used in the display of Agile tools, they also control how the <strong>My Work</strong> feature in Team Explorer updates the bug state as developers move bugs using <strong>My Work</strong>. To learn more, see [Get your code reviewed (TFVC)](../../../tfvc/get-code-reviewed-vs.md).</p>
+<td><p>Optional. Container element that defines the state category mappings for work item types assigned to the Bug Category. In addition to how these mappings are used in the display of Agile tools, they also control how the <strong>My Work</strong> feature in Team Explorer updates the bug state as developers move bugs using <strong>My Work</strong>. To learn more, see [Get your code reviewed (TFVC)](../../../repos/tfvc/get-code-reviewed-vs.md).</p>
 
 <pre><code>&lt;BugWorkItems category=&quot;CategoryName&quot;  
       pluralName=&quot;PluralName&quot; singularName=&quot;SingleName&quot;&gt;

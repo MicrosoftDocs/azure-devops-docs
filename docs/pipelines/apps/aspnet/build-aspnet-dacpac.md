@@ -69,7 +69,7 @@ After you've run the build, you're ready to create a release pipeline to deploy 
 
 0. Select the **SQL Server** templates section, and then choose the **SQL Server Database Project** template.
 
-0. [Commit and push (Git)](../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
+0. [Commit and push (Git)](../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ::: moniker range="< vsts"
 [!INCLUDE [temp](../../_shared/qa-versions.md)]

@@ -31,15 +31,15 @@ Team members are contributors who have access to the code base, work item tracki
 Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in VSTS or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
 
 - To get started using Git, see one of these resources: 
-	- [Share your code with Git and Visual Studio](../git/share-your-code-in-git-vs.md).
-	- [Share your code in Git using Eclipses](../git/share-your-code-in-git-eclipse.md).
-	- [Share your code in Git using Xcode](../git/share-your-code-in-git-xcode.md).
+	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md).
+	- [Share your code in Git using Eclipses](../repos/git/share-your-code-in-git-eclipse.md).
+	- [Share your code in Git using Xcode](../repos/git/share-your-code-in-git-xcode.md).
 	- [Share your code in Git using IntelliJ](/vsts/java/download-intellij-plug-in).
-	- [Get Started with Git and VSTS](../git/gitquickstart.md).
+	- [Get Started with Git and VSTS](../repos/git/gitquickstart.md).
 - To get started using TFVC, see one of the following resources: 
-	- [Develop and share your code in TFVC using Visual Studio](../tfvc/share-your-code-in-tfvc-vs.md)
-	- [Share your code in TFVC using Eclipse](../tfvc/share-your-code-in-tfvc-eclipse.md)
-	- [Share your code in TFVC using Xcode](../tfvc/share-your-code-in-tfvc-xcode.md)
+	- [Develop and share your code in TFVC using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)
+	- [Share your code in TFVC using Eclipse](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)
+	- [Share your code in TFVC using Xcode](../repos/tfvc/share-your-code-in-tfvc-xcode.md)
 
 ### Project managers
 

@@ -44,7 +44,7 @@ The plugin can be installed from Android Studio by browsing the Plugin Repositor
  
  ## Next Steps 
 
-* Learn more about the Android Studio plugin by reading [Create a Git repo with IntelliJ or Android Studio](/vsts/git/create-repo-intellij).
+* Learn more about the Android Studio plugin by reading [Create a Git repo with IntelliJ or Android Studio](/vsts/repos/git/create-repo-intellij).
  
  ## Frequently Asked Questions (FAQ)
 

@@ -147,11 +147,11 @@ You should get a response like this.
 The response is [JSON](http://json.org/).
 That's generally what you'll get back from the REST APIs,
 although there are a few exceptions,
-like [Git blobs](https://visualstudio.microsoft.com/docs/integrate/api/git/blobs).
+like [Git blobs](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/blobs).
 
 Now you should be able to look around the specific
-[API areas](https://visualstudio.microsoft.com/docs/integrate/api/git/overview) like [work item tracking](https://visualstudio.microsoft.com/docs/integrate/api/wit/overview)
-or [Git](https://visualstudio.microsoft.com/docs/integrate/api/git/overview) and get to the resources that you need.
+[API areas](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/overview) like [work item tracking](https://visualstudio.microsoft.com/docs/integrate/api/wit/overview)
+or [Git](https://visualstudio.microsoft.com/docs/integrate/api/repos/git/overview) and get to the resources that you need.
 Keep reading to learn more about the general patterns that are used in these APIs.
 
 ## HTTP verbs

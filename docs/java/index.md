@@ -27,9 +27,9 @@ Built with Java teams in mind, VSTS offers an open, cloud-hosted hub for Java De
 Get started with VSTS and Java using your IDE and your tools.
 
  - [Java DevOps with Azure](/azure/devops-project/azure-devops-project-java.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
- - [Android Studio plugin](../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
- - [Eclipse plugin](../git/share-your-code-in-git-eclipse.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json)
- - [IntelliJ IDEA plugin](../git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/git/breadcrumb/toc.json)
+ - [Android Studio plugin](../repos/git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
+ - [Eclipse plugin](../repos/git/share-your-code-in-git-eclipse.md?toc=/vsts/java/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json)
+ - [IntelliJ IDEA plugin](../repos/git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json)
  - [Build Android apps](../pipelines/languages/android.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Build with Gradle](../pipelines/apps/java/build-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Build with Maven](../pipelines/apps/java/build-maven.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)

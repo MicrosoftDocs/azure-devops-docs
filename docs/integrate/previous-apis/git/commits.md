@@ -20,7 +20,7 @@ ms.date: 08/23/2016
 ## Get a list of commits
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits?api-version={version}[&branch={string}&commit={string}&itemPath={string}&committer={string}&author={string}&fromDate={dateTime}&toDate={dateTime}[&$top={integer}&$skip={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits?api-version={version}[&branch={string}&commit={string}&itemPath={string}&committer={string}&author={string}&fromDate={dateTime}&toDate={dateTime}[&$top={integer}&$skip={integer}]
 ```
 
 | Parameter  | Type     | Default | Notes
@@ -104,7 +104,7 @@ Get the commits that were introduced to the repo by a push. This does not includ
 ## Get a batch of commits
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commitsBatch?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commitsBatch?api-version={version}
 ```
 
 | Parameter  | Type     | Default | Notes
@@ -131,7 +131,7 @@ To return the set of commits in the history of one version that are _not_ in the
 ## Get a single commit
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commitId}?api-version={version}[&changeCount={integer}]
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commitId}?api-version={version}[&changeCount={integer}]
 ```
 | Parameter   | Type    | Default | Notes
 |:------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------
@@ -162,7 +162,7 @@ For instance, it's used in VSTS to surface build status in the web UI.
 ### Add status
 
 ```no-highlight
-POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
+POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
 ```
 ```
 {
@@ -195,7 +195,7 @@ POST https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repo
 ### Get statuses
 
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
+GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/commits/{commit}/statuses?api-version={version}
 ```
 
 | Parameter     | Type                                   | Notes

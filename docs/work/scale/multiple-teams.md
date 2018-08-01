@@ -215,7 +215,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md).
  
-By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and  [collaborate on a Git project](../../git/gitquickstart.md) or  [check in work to the team's code base](../../tfvc/check-your-work-team-codebase.md). 
+By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and  [collaborate on a Git project](../../repos/git/gitquickstart.md) or  [check in work to the team's code base](../../repos/tfvc/check-your-work-team-codebase.md). 
 
 ![Default permissions assigned to team contributors](_img/default-permissions-assigned-to-team-contributors.png)  
 

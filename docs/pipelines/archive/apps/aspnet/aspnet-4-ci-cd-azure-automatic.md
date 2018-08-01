@@ -27,7 +27,7 @@ runs tests, and deploy to a staging slot and then to production.
 ## Code
 
 You must store your app's source code in a 
-[VSTS Git](../../../../git/gitquickstart.md), 
+[VSTS Git](../../../../repos/git/gitquickstart.md), 
 [GitHub](https://help.github.com/articles/create-a-repo),
 or any other Git repository to use Azure Continuous Delivery.
 Team Foundation Version Control (TFVC) repositories are not supported at present.
@@ -46,7 +46,7 @@ Carry out the following steps to create a simple
 1. Commit the solution to your chosen repository. 
 
 >For more information about publishing your project, see 
-[Get Started with Git and VSTS](../../../../git/gitquickstart.md)
+[Get Started with Git and VSTS](../../../../repos/git/gitquickstart.md)
 or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
 ## Configure
@@ -247,7 +247,7 @@ may encounter the following known issues:
 
 1. Clear **Host in the cloud** and click **OK**.
 
-1. [Commit and push (Git)](../../../../git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../tfvc/share-your-code-in-tfvc-vs.md) your code.
+1. [Commit and push (Git)](../../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../../_shared/qa-versions.md)]

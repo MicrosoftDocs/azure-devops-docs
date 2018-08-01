@@ -60,7 +60,7 @@ Specifies both work item fields and global lists that multiple projects and type
 <a id="hidden-types"> </a> 
 ## Hidden types categories  
 Specifies the set of work item types that you don't want users to create manually. By default this set includes:   
--   [Code Review Request and Code Review Response](../../tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
+-   [Code Review Request and Code Review Response](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md )    
 -   [Feedback Request and Feedback Response](../../project/feedback/get-feedback.md)    
 -   [Shared Steps and Shared Parameter](../../test/create-test-cases.md)    
 -   [Test Plan and Test Suite](../../test/create-a-test-plan.md)  

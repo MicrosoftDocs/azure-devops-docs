@@ -69,7 +69,7 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 ## Clone the repo to your local computer
 
 > [!NOTE]
-> The steps in this section show how to clone a public project Git repo in Visual Studio when you are not a member of the project. For instructions for cloning a public project Git repository when you are signed in to Visual Studio as a member of the public project, see [Clone a Git repo](../../git/tutorial/clone.md).
+> The steps in this section show how to clone a public project Git repo in Visual Studio when you are not a member of the project. For instructions for cloning a public project Git repository when you are signed in to Visual Studio as a member of the public project, see [Clone a Git repo](../../repos/git/clone.md).
 
 ### Clone using Visual Studio and Team Explorer
 
@@ -85,7 +85,7 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 ### Prerequisites
 
 * Ensure you have installed the [Git command line package](http://git-scm.com/download) for your platform as well as the 
-right [Git Credential Manager](../../git/set-up-credential-managers.md) before continuing.
+right [Git Credential Manager](../../repos/git/set-up-credential-managers.md) before continuing.
 
 You'll need a clone URL to tell Git what repository you want to clone to your computer. Use the URL you copied earlier during the [previous step](#clone_url) in this article.
 
