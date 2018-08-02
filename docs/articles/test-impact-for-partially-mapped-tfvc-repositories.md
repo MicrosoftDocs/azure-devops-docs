@@ -18,15 +18,15 @@ monikerRange: '>= tfs-2017'
 
 Test Impact Analysis (TIA) has been part of VSTest task starting with version 2. This feature helps speed up the DevOps cycle by helping you run only relevant tests for a build. Effectively, you end up running tests which are affected by incoming changes and not the entire test suite. For more information about Test Impact Analysis, see [Accelerated Continuous Testing with Test Impact Analysis - Part 1](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/). 
 
-In addition to supporting GitHub and Git in TFS/VSTS, TIA also supports TFVC. This article describes a known limitation about TIA in build/release definitions based on TFVC and a work around to get past this limitation. 
+In addition to supporting GitHub and Git in TFS/VSTS, TIA also supports TFVC. This article describes a known limitation about TIA in build/release pipelines based on TFVC and a work around to get past this limitation. 
 
 ## Issue with partially mapped TFVC repositories 
 
-The way TIA works is by collecting data on the files that a test method touches during its first run, also called the base line run. The collector which collects this data has visibility only of the enlisted repository on the agent machine. With TFVC based definitions, you get an option to enlist partial repositories. For example, consider a repository that has the following structure.
+The way TIA works is by collecting data on the files that a test method touches during its first run, also called the base line run. The collector which collects this data has visibility only of the enlisted repository on the agent machine. With TFVC based pipelines, you get an option to enlist partial repositories. For example, consider a repository that has the following structure.
 
 ![TFVC repository structure](./_img/test-impact-for-partially-mapped-tfvc-repositories/tfvc-repo-structure.png)
 
-Now, in your build/release definition you see **Get sources** tile under **Process** as shown in the following example. 
+Now, in your build/release pipeline you see **Get sources** tile under **Process** as shown in the following example. 
 
 ![Get sources](./_img/test-impact-for-partially-mapped-tfvc-repositories/get-sources-tile.png)
 

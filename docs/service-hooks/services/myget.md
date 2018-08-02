@@ -55,9 +55,9 @@ Use a MyGet feed for the following integration scenarios with VSTS:
 
 ## Deploy a package built on VSTS
  
-2. Add the VSTS build definition as a package source for your feed.
+2. Add the VSTS build pipeline as a package source for your feed.
 
-   <img alt="Choose VSTS build definition" src="./_img/myget/add-package-source.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Choose VSTS build pipeline" src="./_img/myget/add-package-source.png" style="border: 1px solid #CCCCCC" />
 
 3. Use your VSTS account.
 
@@ -67,9 +67,9 @@ Use a MyGet feed for the following integration scenarios with VSTS:
 
    <img alt="Accept the permission request" src="./_img/myget/authorize.png" style="border: 1px solid #CCCCCC" />
 
-5. Choose a build definition that includes a NuGet package in the build drop.
+5. Choose a build pipeline that includes a NuGet package in the build drop.
 
-   <img alt="Configure build definition" src="./_img/myget/configure-build-definition.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Configure build pipeline" src="./_img/myget/configure-build-definition.png" style="border: 1px solid #CCCCCC" />
 
     You've defined the package source.
 

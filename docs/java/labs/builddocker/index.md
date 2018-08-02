@@ -110,7 +110,7 @@ In this task you will update the pom.xml file for the MyShuttle2 application so 
 
 ## Create a VSTS Build to Build Docker Images
 
-In this task you will create a VSTS build definition that will create two containers (a mysql database container as well as a tomcat container for running the MyShuttle2 site). The build will publish the containers to the Azure Container Registry you just created.
+In this task you will create a VSTS build pipeline that will create two containers (a mysql database container as well as a tomcat container for running the MyShuttle2 site). The build will publish the containers to the Azure Container Registry you just created.
 
 1. Connect to the virtual machine with the user credentials which you specified when creating the VM in Azure.
 
@@ -118,9 +118,9 @@ In this task you will create a VSTS build definition that will create two contai
 
 1. Click on the `jdev` project and navigate to the "Build & Release" Hub.
 
-1. Click on Builds to go the Builds view. Click on "+ New" to create a new Build definition.
+1. Click on Builds to go the Builds view. Click on "+ New" to create a new build pipeline.
 
-    ![Create a new Build Definition](../_img/builddocker/new-build-def.png)
+    ![Create a new build pipeline](../_img/builddocker/new-build-def.png)
 
 1. Type "maven" into the search box. Select the Maven template and click Apply.
 

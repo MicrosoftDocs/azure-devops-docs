@@ -83,8 +83,8 @@ POST https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories
 | api-version                                        | string   | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | parameters.gitSource.url                           | string   | Url of the source Git repository to import from
-| parameters.serviceEndpointId                       | string   | [Service Endpoint](../endpoints/overview.md) ID. Required if source repository is private.
-| parameters.deleteServiceEndpointAfterImportIsDone  | bool     | If true, delete service endpoint after import is done.
+| parameters.serviceEndpointId                       | string   | [Service connection](../endpoints/overview.md) ID. Required if source repository is private.
+| parameters.deleteServiceEndpointAfterImportIsDone  | bool     | If true, delete service connection after import is done.
 
 [!code-REST [POST__git_repositories__repositoryId__importRequests_json](./_data/importRequests/POST__git_repositories__repositoryId__importRequests.json)]
 

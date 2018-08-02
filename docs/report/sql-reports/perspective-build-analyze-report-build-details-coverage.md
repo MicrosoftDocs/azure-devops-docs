@@ -69,7 +69,7 @@ By using PivotChart reports in Excel, you can display the build status over time
   
     -   **Year Week Date** from the **Date** dimension  
   
-    -   **Build Definition Name** from the **Build** dimension  
+    -   **Build Pipeline Name** from the **Build** dimension  
   
 4.  In the **Date** dimension, expand **More fields**, and drag the **Date**, **Week**, or **Month** fields to the **Axis Fields (Categories)** area to specify how granular a report you want to generate.  
   
@@ -111,11 +111,11 @@ By using PivotChart reports in Excel, you can display the build status over time
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
 |Assembly|Assembly|(Published test results only) The name of the code of the application that is tested as part of the build. For more information, see [Get started with continuous testing](../../pipelines/test/getting-started-with-continuous-testing.md).|  
-|Build|Build Definition Name|Name that is assigned to the build definition for which a build was executed.|  
-||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
-||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../pipelines/build/options.md).|  
+|Build|Build Pipeline Name|Name that is assigned to the build pipeline for which a build was executed.|  
+||Build ID|The number that is assigned to the build. Each time that a particular build pipeline is run, the **Build ID** is incremented by 1.|  
+||Build Name|The name or expression that uniquely identifies a build. For more information, see [build pipeline options](../../pipelines/build/options.md).|  
 ||Build Start Time|The date and time when the build started.|  
-||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of builds: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../pipelines/build/triggers.md).|  
+||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of builds: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build pipeline triggers](../../pipelines/build/triggers.md).|  
 ||Drop Location|The Uniform Resource Locator (URL) for the completed build. A URL specifies the protocol with which web browsers will to locate Internet resources. Each URL includes the name of the server on which the details of the build resides. You can also include the path to a resource.|  
 |Build Flavor|Build Flavor|(Published test results only) A name that designates the category of builds that was assigned to a set of completed builds that were published as part of a test run. For example, a build flavor can designate a beta release or final release. For more information, see [Command-Line options for publishing test results](https://msdn.microsoft.com/library/ms243151.aspx).|  
 |Build Platform|Build Platform|The name of the platform for which an end-to-end (not desktop) build was made (for example, **x86** or **Any CPU**). For an example of a report that uses this attribute, see [Build Summary](build-summary-report.md). For more information, see [How do I build multiple configurations for multiple platforms?](../../pipelines/tasks/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms).|  

@@ -31,7 +31,7 @@ You can analyze the progress and quality of your project by using the reports in
   
 
 ##Monitor code quality
-Build reports track the quality of software under development. By defining tests to run automatically as part of each build definition and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code. 
+Build reports track the quality of software under development. By defining tests to run automatically as part of each build pipeline and instrumenting tests to gather code coverage data, you can gain insight about the quality of the builds, tests, and code. 
 
 <table>
 <tr valign="top">

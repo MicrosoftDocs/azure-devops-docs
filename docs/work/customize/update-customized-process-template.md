@@ -52,10 +52,10 @@ When the Configure Features wizard can't update your project, it's because your 
 1. If you're updating a process template based on a version earlier than MSF 6.0 or Visual Studio Scrum 2.0, first apply the updates provided in the [2012 version of this topic](https://msdn.microsoft.com/library/ms194972%28v=vs.110%29.aspx).
 
 	You can check the **ProcessTemplate.xml** file for version information. 
-	visualstudio.microsoft.com
-1. If you haven't upgraded your application-tier server to the TFS version that contains the features you want, do that now. [Get the download](https://visualstudio.microsoft.com/downloads/visual-studio-2015-downloads-vs.aspx) and [Upgrade Team Foundation Server](https://msdn.microsoft.com/library/jj620933.aspx). 
 
-1. If you aren't a member of the Project Collection Administrators group, [get added](https://msdn.microsoft.com/library/dd547204.aspx). You need the **Manage process template permission** set to Allow to download and manage process templates.
+1. If you haven't upgraded your application-tier server to the TFS version that contains the features you want, do that now. [Get the download](https://visualstudio.microsoft.com/downloads) and [Upgrade Team Foundation Server](/tfs/server/upgrade/get-started). 
+
+1. If you aren't a member of the Project Collection Administrators group, [get added](../../organizations/security/set-project-collection-level-permissions.md). You need the **Manage process template permission** set to Allow to download and manage process templates.
 
 1. After TFS has been upgraded, [download the latest process template from TFS](../work-items/guidance/manage-process-templates.md) and choose the process template that most closely matches the one used to create your project. 
 
