@@ -148,7 +148,7 @@ This error typically occurs when a process has not been updated in a while. Try 
 
 #### TF402564: You've defined XX global lists. Only 64 are allowed.
 
-By default, VSTS will support 64 global lists. You will typically run across this error if you have a large amount of build definitions. The global list named Builds - **TeamProjectName** gets created for each new build definition. You will need remove the outdated global lists.
+By default, VSTS will support 64 global lists. You will typically run across this error if you have a large amount of build pipelines. The global list named Builds - **TeamProjectName** gets created for each new build pipeline. You will need remove the outdated global lists.
 
 ### Additional Resources
 

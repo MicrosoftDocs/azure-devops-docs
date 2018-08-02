@@ -202,13 +202,13 @@ the Release API.</td>
 </td>
 </tr>
 <tr>
-<td>[Service endpoints](./endpoints/overview.md)</td>
-<td>Service endpoints are a way for Team Services to connect to external systems or services. They are a bundle of properties securely stored by Team Services.
-With the Service Endpoints API, you can access these endpoints along with their permissions.</td>
+<td>[Service connections](./endpoints/overview.md)</td>
+<td>Service connections are a way for Team Services to connect to external systems or services. They are a bundle of properties securely stored by Team Services.
+With the service connections API, you can access these endpoints along with their permissions.</td>
 <td>
-<ul><li>Get a list of service endpoints</li>
-<li>Get a single service endpoint</li>
-<li>Create a service endpoint</li></ul>
+<ul><li>Get a list of service connections</li>
+<li>Get a single service connection</li>
+<li>Create a service connection</li></ul>
 </td>
 </tr>
 <tr>

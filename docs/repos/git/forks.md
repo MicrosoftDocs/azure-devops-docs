@@ -26,8 +26,8 @@ Once you're ready to share those changes, it's easy to contribute them back usin
 ## What's in a fork
 
 A fork starts with all the contents of its upstream (original) repository.
-When you create a fork, you can choose whether to include all branches or limit to only the  default branch.
-None of the permissions, policies, or build definitions are applied.
+When you create a fork, you can choose whether to include all branches or limit to only the default branch.
+None of the permissions, policies, or build pipelines are applied.
 The new fork acts as if someone cloned the original repository, then pushed to a new, empty repository.
 After a fork has been created, new files, folders, and branches are not shared between the repositories unless a PR carries them along.
 
@@ -138,7 +138,7 @@ Once all policies are satisfied, the PR can be completed and the changes become 
 
 >[!IMPORTANT]
 >Anyone with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission can open a PR to upstream.
-> If a PR build definition is configured, the build will run against the code introduced in the fork.
+> If a PR build pipeline is configured, the build will run against the code introduced in the fork.
 
 <a name="sync-fork" />
 ### Sync your fork to latest

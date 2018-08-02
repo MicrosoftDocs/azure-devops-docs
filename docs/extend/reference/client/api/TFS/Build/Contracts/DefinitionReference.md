@@ -30,5 +30,5 @@ Extends: [ShallowReference](./ShallowReference.md)
 
 * `type`: [DefinitionType](./DefinitionType.md). The type of the definition.
 
-* `uri`: string. The Uri of the definition
+* `uri`: string. The URI of the definition
 

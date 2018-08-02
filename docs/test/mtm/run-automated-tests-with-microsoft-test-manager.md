@@ -44,7 +44,7 @@ To set up your test plan to use your team build:
    and then choose the drop-down arrow to the right of **Filter for builds**.
    The dialog box that shows build pipeline and quality is displayed.
 
-1. To select the build pipeline that is used to build your automated tests, choose **Build definition**.
+1. To select the build pipeline that is used to build your automated tests, choose **Build pipeline**.
 
 1. Each build can be given a specific value to reflect the quality of the build.
    To select the quality of the builds you want to be able to view, choose **Build quality**.

@@ -64,7 +64,7 @@ If you use Visual Studio 2010 and you have queries save to disk, you will not be
 
 ### Q: Why does the existing Lab Management BDT in Visual Studio fail with the error 'oldprojectName' cannot be found?
 
-This issue is encountered when Build Controller 2013 is used with TFS 2015. To fix the issue, open the existing Build Definition, select the process tab under it, select the ellipses next to the Lab Process settings to
+This issue is encountered when Build Controller 2013 is used with TFS 2015. To fix the issue, open the existing build pipeline, select the process tab under it, select the ellipses next to the Lab Process settings to
 open the Lab Workflow Parameters wizard, and then select **Finish**. The issue is permanently resolved by using the TFS 2015 Build Controller that ships with TFS 2015.
 
 ![Process Tab](_img/rename-project/lab-build-process.png)
