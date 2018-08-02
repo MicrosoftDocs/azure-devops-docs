@@ -24,7 +24,7 @@ This topic provides a roadmap to support you in quickly coming up to speed on th
 
 ## Contributor roles
 
-Team members are contributors who have access to the code base, work item tracking, Agile tools, build definitions, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../organizations/security/permissions.md).   
+Team members are contributors who have access to the code base, work item tracking, Agile tools, build pipelines, test tools, and more. If you need to lock down specific areas to a select set of contributors, you can do that through the [permission management](../organizations/security/permissions.md).   
 
 ### Software developers
 
@@ -103,7 +103,7 @@ Responsible for project level settings, including:
 - [Area paths](../organizations/settings/set-area-paths.md) and [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)
 - [Project permissions and repository security](../organizations/security/permissions.md)
 - [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
-- [Build agents, pools, and service endpoints](../pipelines/overview.md) 
+- [Build agents, pools, and service connections](../pipelines/overview.md) 
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
  
 

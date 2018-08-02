@@ -19,11 +19,12 @@ ms.date: 03/16/2017
 **TFS 2018 | TFS 2017**  
 
 > [!IMPORTANT]  
-> **Feature availability:** The new form and its corresponding features are available from VSTS and the web portal for TFS 2017 and later versions.<br/> 
-> - For users of VSTS that use the [Inheritance process model](../../organizations/settings/work/manage-process.md), the switch to the new form is automatic.<br/>
-> - For users of VSTS that use [Hosted XML process model](import-process/import-process.md), an admin must [enable the new form](../customize/manage-new-form-rollout.md).<br/>
-> - For on-premises TFS 2017 users, the new form is automatically available when you add teamvisualstudio.microsoft.comction. For existing projects, an admin is required to enable the new form as described in this topic. (The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing work item types.) <br/>
-> - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017](https://visualstudio.microsoft.com/downloads/#team-foundation-server-2017) to access the new form.
+> **Feature availability:** The new form and its corresponding features are available for the web portal for TFS 2017 and later versions.
+>  
+> - For users of VSTS that use the [Inheritance process model](../../organizations/settings/work/manage-process.md), the switch to the new form is automatic.
+> - For users of VSTS that use [Hosted XML process model](import-process/import-process.md), an admin must [enable the new form](#enable).
+> - For on-premises TFS 2017 users, the new form is automatically available when you add projects to a collection. For existing projects, an admin is required to enable the new form as described in this article. (The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing work item types.) 
+> - For TFS 2015 users, the new form isn't available. You must [upgrade to TFS 2017 or a later version](https://visualstudio.microsoft.com/downloads) to access the new form.
 
 Enabling the new form initiates a transformation of the form definitions for all work item types (WITs) defined in your project collection. 
 
@@ -37,7 +38,7 @@ When you're ready to rollout the new form, you choose the opt-in model which ena
 
 You enable the new form from the project collection admin page.     
 
-1. To start, click the ![gear icon](../_img/icons/gear_icon.png) gear Settings icon to open the admin context for the project collection.  
+1. To start, choose the ![](../_img/icons/gear_icon.png) gear Settings icon to open the admin context for the project collection.  
 
 	<img src="_img/manage-new-form-open-tcp-admin-context.png" alt="TFS 2017, Web portal, Open project collection admin context" style="border: 1px solid #C3C3C3;" /> 
 <!--- 
@@ -55,7 +56,6 @@ You enable the new form from the project collection admin page.
 	<img src="_img/manage-new-form-enable-new-form-dialog.png" alt="Enable the new work item form layout dialog" style="border: 2px solid #C3C3C3;" />
 
 
- 
 <!---
 You enable the new form from the project collection admin page.    
 
@@ -90,7 +90,6 @@ Once you switch, all work item types for this project will display in the new fo
 If the work item is already open, refresh your browser to see the changes. 
 
 To customize the layout, see [Customize the new form](customize-wit-form.md). 
-
 
 <a id="opt-in"></a>
 ## Choose the opt-in model for rollout  

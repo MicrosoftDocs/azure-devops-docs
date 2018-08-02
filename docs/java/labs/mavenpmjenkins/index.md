@@ -182,7 +182,7 @@ In this task you will configure a VSTS Team Build in VSTS that will trigger the 
 
 1. Navigate to your VSTS Team Project and click on the gear icon and then Services.
 
-1. Click "+ New Service Endpoint" and select Jenkins from the list.
+1. Click "+ New service connection" and select Jenkins from the list.
 
 1. Enter the following:
 
@@ -199,7 +199,7 @@ In this task you will configure a VSTS Team Build in VSTS that will trigger the 
 
 1. In VSTS, click on Build & Release->Builds to open the builds hub.
 
-1. Click the "+ New" button to create a new definition.
+1. Click the "+ New" button to create a new pipeline.
 
 1. Enter "jenkins" into the search box and press enter. Click on the Jenkins template and click Apply. Configure the following settings and tasks.
 
@@ -209,7 +209,7 @@ In this task you will configure a VSTS Team Build in VSTS that will trigger the 
     | --------------- | ---------------------------- | --------------------------------------- |
     | Default agent queue | `default` | Run this build on your VSTS agent container |
     | Job Name | `MyShuttleCalc` | The name of the Jenkins job
-    | Jenkins service endpoint | `Azure VM Jenkins` | The endpoint you just created to Jenkins |
+    | Jenkins service connection | `Azure VM Jenkins` | The endpoint you just created to Jenkins |
 
 1. **Tasks->Get Sources**
     Connect to the MyShuttleCalc repo on the master branch.

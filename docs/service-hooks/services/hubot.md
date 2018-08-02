@@ -82,8 +82,8 @@ Now when you post commands starting with "hubot" to the selected room, Hubot wil
 Here are the available VSTS commands available to users:
 
 * ```vso assign <work item list> to <user name>```: Assigns one more or more work item(s) to a user (comma separated ids)
-* ```vso build <build definition number>```: Triggers a build
-* ```vso builds```: Shows a list of build definitions
+* ```vso build <build pipeline number>```: Triggers a build
+* ```vso builds```: Shows a list of build pipelines
 * ```vso commits [last <number> days]```: Shows a list of commits you have made in the last day (or specified number of days)
 * ```vso create pbi|bug|feature|impediment|task <title> with description <description>```: Creates a work item, and optionally sets a description (repro step for some work item types)
 * ```vso forget credentials```: Removes the access token issued to Hubot when you accepted the authorization request

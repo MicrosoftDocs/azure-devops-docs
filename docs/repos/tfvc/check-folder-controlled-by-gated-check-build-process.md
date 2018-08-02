@@ -34,9 +34,9 @@ If the **Gated Check-in** dialog box appears during your check-in, then your cha
 
 1.  In the **Gated Check-in** dialog box:
 
-    -   If a build definition is displayed, proceed to the next step.
+    -   If a build pipeline is displayed, proceed to the next step.
 
-    -   If the **Build definition** menu is displayed instead of the name of a build definition, on the **Build definition** menu, choose the build definition that your build engineer suggests that you use.
+    -   If the **Build pipeline** menu is displayed instead of the name of a build pipeline, on the **Build pipeline** menu, choose the build pipeline that your build engineer suggests that you use.
 
 2.  Decide how you want to proceed:
 

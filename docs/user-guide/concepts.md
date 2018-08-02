@@ -64,8 +64,8 @@ Project managers and developers share information by tracking work items  on the
 Rapid and reliable release of software comes from automating as many processes as possible. Our systems support build, test, and release automation. 
 
 - You can define builds to automatically run whenever a team member checks in code changes 
-- Your build definitions can include instructions to run tests after the build runs 
-- Release definitions support managing deployment of your software builds to staging or production environments 
+- Your build pipelines can include instructions to run tests after the build runs 
+- Release pipelines support managing deployment of your software builds to staging or production environments 
 
 ![Multiple platform continuous integration](../_img/multi-platform.png) 
 
@@ -84,8 +84,8 @@ You can configure and customize most services and applications to support your b
 - **Dashboards**: Each team can [configure their set of dashboards](../report/dashboards/dashboards.md) to share information and monitor their progress. 
 - **Source control**: For each [Git repository](../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](../organizations/settings/work/inheritance-process-model.md). 
-- **Build and Release**: You can fully customize your build and release definitions, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../pipelines/index.md).  
-- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build definitions. For details, see [Exploratory & Manual Testing](../test/index.md), [Load testing](../test/load-test/index.md), and [et up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md). 
+- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../pipelines/index.md).  
+- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../test/index.md), [Load testing](../test/load-test/index.md), and [et up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md). 
 
 ::: moniker-end
 
@@ -94,8 +94,8 @@ You can configure and customize most services and applications to support your b
 - **Dashboards**: Each team can [configure their set of dashboards](../report/dashboards/dashboards.md) to share information and monitor their progress. 
 - **Source control**: For each [Git repository](../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize the On-premises XML process model](../work/customize/on-premises-xml-process-model.md). 
-- **Build and Release**: You can fully customize your build and release definitions, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../pipelines/index.md).  
-- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build definitions. For details, see [Exploratory & Manual Testing](../test/index.md), [Load testing](../test/load-test/index.md), and [et up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md). 
+- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../pipelines/index.md).  
+- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../test/index.md), [Load testing](../test/load-test/index.md), and [et up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md). 
 
 ::: moniker-end
 

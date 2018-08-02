@@ -6,7 +6,8 @@ ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: overview
 monikerRange: 'vsts || >= tfs-2013'
 ms.date: 03/23/2018
@@ -41,7 +42,7 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
 
 ### Monitor code activity, build progress and deployment status
 
-With the code tile widgets, you can monitor the activity occuring within a repo or branch folder. Build history displays a histogram of all builds run for a specific build definition. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
+With the code tile widgets, you can monitor the activity occuring within a repo or branch folder. Build history displays a histogram of all builds run for a specific build pipeline. Bar color indicates: green-completed, red-failed, and yellow-completed without tests. 
 
 **Code, build, and release chart widgets**  
 

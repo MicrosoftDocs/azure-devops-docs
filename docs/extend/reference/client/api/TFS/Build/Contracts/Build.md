@@ -25,9 +25,9 @@ Module path: `TFS/Build/Contracts`
 
 * `buildNumberRevision`: number. Build number revision
 
-* `controller`: [BuildController](./BuildController.md). The build controller. This should only be set if the definition type is Xaml.
+* `controller`: [BuildController](./BuildController.md). The build controller. This should only be set if the pipeline type is XAML.
 
-* `definition`: [DefinitionReference](./DefinitionReference.md). The definition associated with the build
+* `definition`: [DefinitionReference](./DefinitionReference.md). The pipeline associated with the build
 
 * `deleted`: boolean. Indicates whether the build has been deleted.
 
@@ -57,7 +57,7 @@ Module path: `TFS/Build/Contracts`
 
 * `quality`: string. Quality of the xaml build (good, bad, etc.)
 
-* `queue`: [AgentPoolQueue](./AgentPoolQueue.md). The queue. This should only be set if the definition type is Build.
+* `queue`: [AgentPoolQueue](./AgentPoolQueue.md). The queue. This should only be set if the pipeline type is Build.
 
 * `queueOptions`: [QueueOptions](./QueueOptions.md). Queue option of the build.
 

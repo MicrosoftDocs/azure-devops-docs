@@ -18,7 +18,7 @@ ms.date: 02/22/2017
 
 You might receive this error when you try to connect to Visual Studio Team Services (VSTS) or an on-premises Team Foundation Server (TFS).  
   
-|Problem|Resolution|  visualstudio.microsoft.com
+|Problem|Resolution|  
 |-------------|----------------|  
 |You can't switch between different organizational accounts.|If you work with several VSTS organizations that connect to different directories, such as accounts that are created from the Microsoft Azure Preview Portal, the sign-out function might not work as expected. For example, you can't switch between different organizational accounts to connect to multiple accounts that are linked to directory tenants.<br /><br /> When this problem occurs, you see a flashing blank sign in dialog box several times. Then, you receive either TF31002 or TF31003 error after you connect to or add a new connection in "Connect to Team Foundation Server" dialog box.<br /><br /> To resolve this problem, apply the most recent [Visual Studio update](http://www.visualstudio.com/downloads).<br /><br /> To learn more, see [KB Article ID 2958966](http://support.microsoft.com/kb/2958966).|  
 |You have multiple Microsoft accounts that you use to connect to VSTS. You may have used another account for one purpose and it was cached.|To run Visual Studio under an account that is different from your logged on Windows account, open the context menu for `devenv.exe` to access your run as options.<br /><br /> ![Context menu for Visual Studio devenv.exe](_img/alm_cnt_runas.png "ALM_CNT_RunAs")<br /><br /> <br /><br /> The executable is in this folder: *Drive*:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\\.|  

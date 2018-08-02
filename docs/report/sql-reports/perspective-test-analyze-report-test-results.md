@@ -93,15 +93,15 @@ By using the Test perspective, you can create reports that answer the following 
  By using the attributes that this section describes, you can aggregate a measure, filter a report, or specify a report axis. These attributes are in addition to the **Team Project** and **Date** shared dimensions that [Working with shared dimensions](shared-dimensions-in-the-analysis-services-cube.md) describes.  
   
 ###  <a name="build"></a> Build, build flavor, and build platform dimensions  
- You can filter test reports based on build definition, build flavor, or build platform by using the attributes that the following table describes.  
+ You can filter test reports based on build pipeline, build flavor, or build platform by using the attributes that the following table describes.  
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Build|Build Definition Name|The name that is assigned to the build definition for which a build was executed.<br /><br /> For an example of a report that uses this attribute, see [Build Quality](../excel/build-quality-excel-report.md).|  
-||Build ID|The number that is assigned to the build. Each time that a particular build definition is run, the **Build ID** is incremented by 1.|  
-||Build Name|The name or expression that uniquely identifies a build. For more information, see [build definition options](../../pipelines/build/options.md).|  
+|Build|Build Pipeline Name|The name that is assigned to the build pipeline for which a build was executed.<br /><br /> For an example of a report that uses this attribute, see [Build Quality](../excel/build-quality-excel-report.md).|  
+||Build ID|The number that is assigned to the build. Each time that a particular build pipeline is run, the **Build ID** is incremented by 1.|  
+||Build Name|The name or expression that uniquely identifies a build. For more information, see [build pipeline options](../../pipelines/build/options.md).|  
 ||Build Start Time|The date and time when the build started.|  
-||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of build: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build definition triggers](../../pipelines/build/triggers.md).|  
+||Build Type|The reason why the build was run. Build types are associated with the trigger that was defined for the build. Team Foundation Server supports the following types of build: manual, continuous (triggered by every check-in), rolling (accumulate check-ins until the previous build finishes), gated check-in, and scheduled. For more information, see [Build pipeline triggers](../../pipelines/build/triggers.md).|  
 ||Drop Location|The drop folder that is defined for the build and that is specified as a Uniform Resource Locator (URL). A URL specifies the protocol with which web browsers will locate Internet resources. The URL also includes the name of the server on which the resource resides. You can also include the path to a resource.<br /><br /> For more information, see [Utility: Publish Build Artifacts](../../pipelines/tasks/utility/publish-build-artifacts.md).|  
 |Build Flavor|Build Flavor|(Published test results only) A name that designates the category of builds that are assigned to a set of completed builds that were published as part of a test run. For example, a build flavor can be used to designate a beta release or a final release.|  
 |Build Platform|Build Platform|The name of the machine platform for which an end-to-end (not desktop) build was made (for example, **x86** or **Any CPU**). |  

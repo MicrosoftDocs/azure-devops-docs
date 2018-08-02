@@ -46,7 +46,7 @@ and delivery cycles.
 Many teams have multiple requirements for build, but the following practices can be applied to most teams. 
 You may adopt the whole approach or just implement the components that work out best for you.
 
-**Daily Builds:** Have a build definition for scheduled builds. Aim for a daily schedule with builds 
+**Daily Builds:** Have a build pipeline for scheduled builds. Aim for a daily schedule with builds 
 released to the internal SWE environment by the end of each day.
 
 **One-click builds for non-internal environments:** For Integration/UAT environments, you automate the builds. 
@@ -60,10 +60,10 @@ gets checked in. It ensures that code quality remains high and that there are no
 and Code Analysis to get further insight into code quality.
 
 **Code Analysis Integrations:** To get insight into whether the code is of good quality or if any changes need to be made, 
-integrate Code Analysis into the build definitions and set the threshold to low. The changes 
+integrate Code Analysis into the build pipelines and set the threshold to low. The changes 
 can be identified and fixed early, which is required in the Agile world.
 
-**Fortify Integrations:** Use Fortify for security-based checks of the build definitions associated with 
+**Fortify Integrations:** Use Fortify for security-based checks of the build pipelines associated with 
 your check-ins and daily builds. This ensures that any security vulnerabilities are identified 
 as soon as possible and can be fixed quickly.
 
@@ -72,14 +72,14 @@ as soon as possible and can be fixed quickly.
 ### Using Deployment Scripts
 
 **Deployments for internal SWE environment:** Set up the internal SWE environments deployments with the 
-daily automated builds by integrating the build definitions with the deployment scripts. All the 
+daily automated builds by integrating the build pipelines with the deployment scripts. All the 
 checked-in changes will then be deployed at the end of each day, without any manual intervention.
 
 This way, the latest build is present in the SWE environment in case you would like to demo the 
 product to stakeholders.
 
 **Deployments for Integration/UAT environments:** For Integration/UAT environments, you can integrate the
-scripts with the build definitions without scheduling them and trigger them on an as-needed basis. 
+scripts with the build pipelines without scheduling them and trigger them on an as-needed basis. 
 Because you have set up one-click builds for them, when the build completes successfully, the scripts get 
 executed at the end and the product is deployed. Therefore, you do not have to manually deploy the 
 system. Instead it's deployed automatically by simply queuing a build.
@@ -153,11 +153,11 @@ automate for multiple environments - internal SWE envs, INT, UAT, and so on.
 
 *	**Build Components**: The build component is used configure the build and change any environment 
 specific configurations. It picks up the build from the remote machine in which VSTF auto-generates 
-the builds as per the build definition and runs the configuration changes that are defined within it.
+the builds as per the build pipeline and runs the configuration changes that are defined within it.
 
 *	**Release Templates**: Release template defines the workflow that you have set up as per your specific 
 needs of deployment. It also defines the sequence in which the RM components are to get executed. You need 
-to integrate your build definition from Team Foundation Server (TFS) with the release template to enable 
+to integrate your build pipeline from Team Foundation Server (TFS) with the release template to enable 
 continuous delivery. You can either pick up the latest build or select the build.
 
 	![Release template](./_img/build-deployment-best-practices/release-template.png)
@@ -169,15 +169,15 @@ delivery with higher quality. We discussed:
 
 *   **Build Automation**: Builds can be set up for triggering on a schedule or on an ad-hoc basis 
 just by a single click. It can vary based on the rhythm that works best for your team. Gated 
-check-ins should be set up on top of the build definitions to accept only the check-ins which meet 
+check-ins should be set up on top of the build pipelines to accept only the check-ins which meet 
 the criteria bar.
 
-*   **Code Analysis and Fortify Integration**: The build definitions should be integrated with Code 
+*   **Code Analysis and Fortify Integration**: The build pipelines should be integrated with Code 
 Analysis and Fortify to trigger on a schedule and also with the Gated Check-ins. Code Analysis 
 will improve the code quality and Fortify will point out the security-based gaps in the application, 
 if any.
 
-*   **Deployment Automation**: You can integrate PowerShell scripts with your build definitions to achieve 
+*   **Deployment Automation**: You can integrate PowerShell scripts with your build pipelines to achieve 
 deployment automation. You can also use Release Management to set up custom workflows and integrate it with 
 your TFS to pick up the latest builds or even select builds.
 

@@ -79,13 +79,13 @@ Each time a release is deployed, it logs information about the release to each o
 
 1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) and then open **Build and Release>Releases** to add a release definition chart to a team dashboard.   
 
-	![Add a Release definition chart to a dashboard](_img/add-cd-release-definition.png)  
+	![Add a Release pipeline chart to a dashboard](_img/add-cd-release-definition.png)  
 
 	If you aren't a team administrator, [get added as one](../../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
-2. Release definition charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
+2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
-	![Release definition tile](_img/add-cd-release-definition-tile.png)  
+	![Release pipeline tile](_img/add-cd-release-definition-tile.png)  
 
 ::: moniker-end
 
@@ -125,7 +125,7 @@ Requires TFS 2017.2 or later version.
 ::: moniker range=">= tfs-2017"
 1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
-2. Open a build summary for a build definition to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
+2. Open a build summary for a build pipeline to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
 	![Add a test plan chart to a dashboard](_img/add-chart-test-quality.png)  
 

@@ -2,8 +2,8 @@
 |:----- | ----------- | ------------------ | ----------- |
 | <code>vso.agentpools_manage</code> | Agent Pools (read, manage) | Grants the ability to manage pools, queues, and agents |  |
 | <code>vso.agentpools</code> | Agent Pools (read) | Grants the ability to view tasks, pools, queues, agents, and currently running or recently completed jobs for agents | vso.agentpools_manage |
-| <code>vso.build</code> | Build (read) | Grants the ability to access build artifacts, including build results, definitions, and requests, and the ability to receive notifications about build events via service hooks. | vso.build_execute |
-| <code>vso.build_execute</code> | Build (read and execute) | Grants the ability to access build artifacts, including build results, definitions, and requests, and the ability to queue a build, update build properties, and the ability to receive notifications about build events via service hooks. |  |
+| <code>vso.build</code> | Build (read) | Grants the ability to access build artifacts, including build results, pipelines, and requests, and the ability to receive notifications about build events via service hooks. | vso.build_execute |
+| <code>vso.build_execute</code> | Build (read and execute) | Grants the ability to access build artifacts, including build results, pipelines, and requests, and the ability to queue a build, update build properties, and the ability to receive notifications about build events via service hooks. |  |
 | <code>vso.chat_write</code> | Team rooms (read and write) | Grants the ability to access rooms and view, post, and update messages. Also grants the ability to receive notifications about new messages via service hooks. | vso.chat_manage |
 | <code>vso.chat_manage</code> | Team rooms (read, write, and manage) | Grants the ability to access rooms and view, post, and update messages. Also grants the ability to manage rooms and users and to receive notifications about new messages via service hooks. |  |
 | <code>vso.code</code> | Code (read) | Grants the ability to read source code and metadata about commits, changesets, branches, and other version control artifacts. Also grants the ability to get notified about version control events via service hooks. | vso.code_write<br>vso.code_manage |
@@ -35,9 +35,9 @@
 | <code>vso.project</code> | Project and team (read) | Grants the ability to read projects and teams. | vso.project_write<br>vso.project_manage |
 | <code>vso.project_write</code> | Project and team (read and write) | Grants the ability to read and update projects and teams. | vso.project_manage |
 | <code>vso.project_manage</code> | Project and team (read, write, and manage) | Grants the ability to create, read, update, and delete projects and teams. |  |
-| <code>vso.release</code> | Release (read) | Grants the ability to read release artifacts, including releases, release definitions and release environment. | vso.release_execute<br>vso.release_manage |
-| <code>vso.release_execute</code> | Release (read, write and execute) | Grants the ability to read and update release artifacts, including releases, release definitions and release environment, and the ability to queue a new release. | vso.release_manage |
-| <code>vso.release_manage</code> | Release (read, write, execute and manage) | Grants the ability to read, update and delete release artifacts, including releases, release definitions and release environment, and the ability to queue and approve a new release. |  |
+| <code>vso.release</code> | Release (read) | Grants the ability to read release artifacts, including releases, release pipelines and release environment. | vso.release_execute<br>vso.release_manage |
+| <code>vso.release_execute</code> | Release (read, write and execute) | Grants the ability to read and update release artifacts, including releases, release pipelines and release envrionment, and the ability to queue a new release. | vso.release_manage |
+| <code>vso.release_manage</code> | Release (read, write, execute and manage) | Grants the ability to read, update and delete release artifacts, including releases, release pipelines and release envrionment, and the ability to queue and approve a new release. |  |
 | <code>vso.symbols</code> | Symbols (read) | Grants the ability to read symbols. | vso.symbols_write<br>vso.symbols_manage |
 | <code>vso.symbols_write</code> | Symbols (read and write) | Grants the ability to read and write symbols. | vso.symbols_manage |
 | <code>vso.symbols_manage</code> | Symbols (read, write and manage) | Grants the ability to read, write and manage symbols. | |

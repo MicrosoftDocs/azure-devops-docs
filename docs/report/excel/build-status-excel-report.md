@@ -49,7 +49,7 @@ The Build Status report helps the team track the progress of their builds by sho
   
      For more information, see [Build and Release agents](../../pipelines/agents/agents.md).
   
--   **Create build definitions**. You can create several build definitions and then run each of them to produce code for a different platform. Also, you can run each build definition for a different configuration.  
+-   **Create build pipelines**. You can create several build pipelines and then run each of them to produce code for a different platform. Also, you can run each build pipeline for a different configuration.  
   
      For more information, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
   

@@ -26,12 +26,12 @@ Many role-based permissions can be set for all artifacts of a specific type in a
 <!---
 You manage the security for the following artifacts and features by adding a user or group to the roles which are described in the following sections. 
 
-[Agent queues](../../pipelines/policies/set-permissions.md)<br/>- [Agent pools](../../pipelines/policies/set-permissions.md)<br/>- [Deployment groups](../../pipelines/policies/set-permissions.md#deployment-group)<br/>- [Deployment pools](../../pipelines/policies/set-permissions.md#deployment-group) - [Secure files](../../pipelines/policies/set-permissions.md#library)<br/>- [Service endpoints](../../pipelines/policies/set-permissions.md)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#library)
+[Agent queues](../../pipelines/policies/set-permissions.md)<br/>- [Agent pools](../../pipelines/policies/set-permissions.md)<br/>- [Deployment groups](../../pipelines/policies/set-permissions.md#deployment-group)<br/>- [Deployment pools](../../pipelines/policies/set-permissions.md#deployment-group) - [Secure files](../../pipelines/policies/set-permissions.md#library)<br/>- [Service connections](../../pipelines/policies/set-permissions.md)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#library)
 
  
 ##Default role assignments
 
-By default, all contributors in a team project are members of the User role on each hosted queue.  This allows every contributor in a team project to author and run build and release definitions using hosted queues.
+By default, all contributors in a team project are members of the User role on each hosted queue.  This allows every contributor in a team project to author and run build and release pipelines using hosted queues.
 -->
 
 ## Agent queue security roles
@@ -64,9 +64,9 @@ You [add users to a library role](../../pipelines/policies/set-permissions.md#li
 
 [!INCLUDE [temp](_shared/library-roles.md)]
 
-## Service endpoint security roles
+## Service connection security roles
 
-You [add users to the following roles](../../pipelines/policies/set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service endpoints for build and release](../../pipelines/library/service-endpoints.md).
+You [add users to the following roles](../../pipelines/policies/set-permissions.md) from the project-level admin context, **Services** page. To create and manage these resources, see [Service connections for build and release](../../pipelines/library/service-endpoints.md).
 
 [!INCLUDE [temp](_shared/service-endpoint-roles.md)]
 

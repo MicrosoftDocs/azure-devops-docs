@@ -45,7 +45,7 @@ In this task you will create a Generic SonarQube Endpoint in VSTS. This endpoint
 
 1. Click on the `jdev` team project to navigate to it.
 
-1. Click on the gear icon and select Services to navigate to the service endpoint configuration page. Click "+ New Service Endpoint" and select Generic from the list of options. Enter the following information and click OK.
+1. Click on the gear icon and select Services to navigate to the service connection configuration page. Click "+ New service connection" and select Generic from the list of options. Enter the following information and click OK.
 
     | Property | Value | Notes |
     | --------------- | ---------------------------- | ----------------------------------------------------------- |
@@ -76,9 +76,9 @@ In this task you will create a SonarQube project.
 
 In this task you will modify the MyShuttle2 build to integrate with SonarQube.
 
-1. In VSTS in your browser, click on Build & Release and then Builds to view your builds. Click on the MyShuttle2 build. Click on the "..." to the right of the build definition, then click the "Edit" button.
+1. In VSTS in your browser, click on Build & Release and then Builds to view your builds. Click on the MyShuttle2 build. Click on the "..." to the right of the build pipeline, then click the "Edit" button.
 
-    ![Edit build definition](../_img/sonarqube/edit-builddefinition.png)
+    ![Edit build pipeline](../_img/sonarqube/edit-builddefinition.png)
 
 1. Click on the Maven task.
 
@@ -90,7 +90,7 @@ In this task you will modify the MyShuttle2 build to integrate with SonarQube.
 
     | Parameter | Value | Notes |
     | --------------- | ---------------------------- | ----------------------------------------------------------- |
-    | SonarQube Endpoint | `<your endpoint>` | The generic Service Endpoint to SonarQube you just created |
+    | SonarQube Endpoint | `<your endpoint>` | The generic service connection to SonarQube you just created |
     | SonarQube Project Name | `MyShuttle2` | The name of the project in SonarQube |
     | SonarQube Project Key | `MyShuttle2` | The key of the project in SonarQube |
     | SonarQube Project Version | `1.0` | A major version number |
