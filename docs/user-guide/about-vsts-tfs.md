@@ -57,26 +57,26 @@ and so on. Learn more about these concepts at
 [Manage team project collections](/tfs/server/admin/manage-team-project-collections). 
 
 VSTS is slightly different. It currently only has two options for scoping and scaling 
-data&mdash;accounts and team projects. Accounts in VSTS get their own URLs (for example, ```https://contoso.visualstudio.com```) 
-and always contain exactly one team project collection. Accounts can contain multiple team projects, like 
+data&mdash;organizations and team projects. Organizations in VSTS get their own URLs (for example, ```https://contoso.visualstudio.com```) 
+and always contain exactly one team project collection. Organizations can contain multiple team projects, like
 TFS team project collections.
 
 We are planning a third option for scoping and scaling data in VSTS&mdash;a new entity called an 
-Organization. Rather than adding support for multiple team project collections within an account, multiple
-accounts could be grouped within an organization. Additionally, we will merge accounts and their single
+Organization. Rather than adding support for multiple team project collections within an organization, multiple
+organizations could be grouped within an organization. Additionally, we will merge organizations and their single
 team project collections into a single entity. The organization will be similar to the TFS deployment,
-and the account will be similar to the TFS collection.
+and the organization will be similar to the TFS collection.
 
-To be ready to use the organization entity, we recommend that you create accounts in VSTS whenever you would
-have created collections in TFS. In the short term, having your work split across multiple accounts can cause some 
+To be ready to use the organization entity, we recommend that you create organizations in VSTS whenever you would
+have created collections in TFS. In the short term, having your work split across multiple organizations can cause some 
 problems, but we plan to address these when the organization entity is introduced. In particular:
 
-* You purchase VSTS users per account, meaning that paid users only have access to the VSTS account 
-in which the payment is made. If you have users who need access to multiple accounts, Visual Studio subscriptions can
-be an attractive option, since subscribers can be added to any number of VSTS accounts at no charge. We are
-also considering other ways we might make access to multiple accounts grouped into an organization available.
+* You purchase VSTS users per organization, meaning that paid users only have access to the VSTS organization 
+in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can
+be an attractive option, since subscribers can be added to any number of VSTS organizations at no charge. We are
+also considering other ways we might make access to multiple organizations grouped into an organization available.
 
-* You currently have to administer accounts one at a time, which can be cumbersome when you have many accounts. We're
+* You currently have to administer organizations one at a time, which can be cumbersome when you have many organizations. We're
 working to support organization-wide policies.
 
 ### Authentication

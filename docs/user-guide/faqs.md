@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 ### Q: How do I get started?
 
 **A: To get started in the cloud or on-premises:** 
-- To get started with Visual Studio Team Services (VSTS) begin by [creating a user account](https://visualstudio.microsoft.com/team-services/). Step-by-step instructions are provided in [Sign up for VSTS](../organizations/accounts/create-organization-msa-or-work-student.md).  
+- To get started with Visual Studio Team Services (VSTS) begin by [creating a user](https://visualstudio.microsoft.com/team-services/). Step-by-step instructions are provided in [Sign up for VSTS](../organizations/accounts/create-organization-msa-or-work-student.md).  
 - To get started with an on-premises TFS, download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/). See [Install and configure TFS](/tfs/server/install/get-started) for details.  
 - If you need to create a team project, create one in [VSTSs](../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../organizations/projects/create-project.md).   
 - If you don't have access to the team project, [get invited to the team](../organizations/security/add-users-team-project.md).  
