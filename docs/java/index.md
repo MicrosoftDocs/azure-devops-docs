@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2013'
 Built with Java teams in mind, VSTS offers an open, cloud-hosted hub for Java DevOps. Code in your favorite IDEs, collaborate on pull requests, build, test, and deploy to any platform.
 
 > [!div class="mx-imgBorder"]
-![Build definition page screen](_img/code-hub-with-java.png)
+![Build pipeline page screen](_img/code-hub-with-java.png)
 
 ## 5-Minute Quickstarts
 

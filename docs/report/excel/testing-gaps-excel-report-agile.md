@@ -7,7 +7,8 @@ ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 6f1a7509-2c47-411f-b033-ebd72b9c51d3
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
@@ -72,7 +73,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
   
 |Filters|Fields|  
 |-------------|------------|  
-|-   **Team Project - Team Project Hierarchy**: Includes builds that are defined for the selected team project.<br />-   **Build - Build Definition Name**: Includes builds that are associated with the selected build definitions.|-   **Build Coverage - Lines Covered**: The number of lines that are covered in the selected build.<br />-   **Build Coverage - Lines Not Covered**: The number of lines that are not covered in the selected build.<br />-   **Build Coverage - Lines Partially Covered**: The number of lines that are partially covered in the selected build. **Note:**      If multiple runs are performed against a build, the build coverage reflects the combined coverage of the runs, taking into consideration that there might be overlap in the lines covered across the runs.<br />-   **Build - Build Name**: The name of the build. Each time that a build is run, it is assigned a name that contains the build definition name as its prefix.<br />-   **Assembly - Assembly**: The assembly name against which the coverage statistics were generated.|  
+|-   **Team Project - Team Project Hierarchy**: Includes builds that are defined for the selected team project.<br />-   **Build - Build Pipeline Name**: Includes builds that are associated with the selected build pipelines.|-   **Build Coverage - Lines Covered**: The number of lines that are covered in the selected build.<br />-   **Build Coverage - Lines Not Covered**: The number of lines that are not covered in the selected build.<br />-   **Build Coverage - Lines Partially Covered**: The number of lines that are partially covered in the selected build. **Note:**      If multiple runs are performed against a build, the build coverage reflects the combined coverage of the runs, taking into consideration that there might be overlap in the lines covered across the runs.<br />-   **Build - Build Name**: The name of the build. Each time that a build is run, it is assigned a name that contains the build pipeline name as its prefix.<br />-   **Assembly - Assembly**: The assembly name against which the coverage statistics were generated.|  
   
 ##  <a name="RequiredActivities"></a> Required activities for monitoring testing gaps  
  For the Testing Gaps reports to be useful and accurate, the team must perform the activities that are described in the following table:  
@@ -94,7 +95,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
 |-   User Story Status<br />-   User Story Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed|Testing gaps for a product area|Change the filter for **Area** (default=All)|  
 |-   User Story Status<br />-   User Story Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed|Testing gaps for a specific test plan or set of test plans|Change the filter for **Test Plan** (default=All)|  
 |-   User Story Status by Config<br />-   Tests Not Executed|Testing gaps for a specific test suite|Change the filter for **Test Suite Hierarchy** (default=All)|  
-|-   Code Coverage|Code coverage for a specific build definition or set of build definitions|Change the filter for **Build Definition Name** (default=All)|  
+|-   Code Coverage|Code coverage for a specific build pipeline or set of build pipelines|Change the filter for **Build Pipeline Name** (default=All)|  
 |-   User Story Status<br />-   User Story Status by Config<br />-   Test Status by Area<br />-   Tests Not Executed<br />-   Code Coverage|Testing gaps or code coverage that includes data from the most recent six, eight, or more weeks|In the Columns PivotTable Field List, add the **Date - Sets** field, and specify **@@Last 6 weeks@@** or other set|  
   
 For more information about how to work with and customize PivotTable and PivotChart reports, see the following pages on the Microsoft Web site:  

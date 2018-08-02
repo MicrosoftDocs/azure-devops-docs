@@ -524,7 +524,7 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Task Reference</h3>
                                                     <p>Include build, utility, test, and deploy tasks in your build and release
-                                                        definitions.</p>
+                                                        pipelines.</p>
                                                 </div>
                                             </div>
                                         </div>

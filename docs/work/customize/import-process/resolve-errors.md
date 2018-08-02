@@ -1563,8 +1563,8 @@ To resolve this, create two separate groups that contain one control each.
 ### TF402594: File violates the schema with the following error: The element 'Control' cannot contain child element 'Link' because the parent element's content model is empty.
 
 #### Error example
-```xml
-  <Control Type="FieldContvisualstudio.microsoft.comomfield.foo" Label="Foo" LabelPosition="Left">
+```
+  <Control Type="FieldControl" FieldName="customfield.foo" Label="Foo" LabelPosition="Left">
     <Link UrlRoot="http://www.visualstudio.com/team-services" />
   </Control>
 ```
@@ -1573,7 +1573,7 @@ To resolve this, create two separate groups that contain one control each.
 ```xml
   <Control Type="FieldControl" FieldName="System.Title" LabelPosition="Left" Label="Title 1">
     <LabelText>  
-        <Text>  visualstudio.microsoft.com
+        <Text>  
           <Link UrlRoot="http://www.visualstudio.com/team-services" />  
               Title 2  
         </Text>  

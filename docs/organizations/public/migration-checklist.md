@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-Before changing the visibility of your private project to public, you'll want to consider what data may be exposed to non-members. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build definitions might have content you don't want to share publicly.
+Before changing the visibility of your private project to public, you'll want to consider what data may be exposed to non-members. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
 
 The checklist provided in this article indicates those items you may want to review before making a project public. It also provides tips for migrating work items or files to a new project so that you can expose only current and future content.
 
@@ -78,10 +78,10 @@ Because work-items maintain their history when migrated from a private to public
 
 ## Build and release 
 
-* Confirm that none of your pipeline definitions expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
+* Confirm that none of your pipelines expose sensitive data: credentials/secrets, obscure URLs, and private environment names.
 * Confirm that non-members don't require access to your private feeds. Builds can still access feeds, but non-members cannot.
 
-If you need to migrate build definitions to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/build/yaml.md).
+If you need to migrate build pipelines to a new project (perhaps because you're moving code or work items), you can import and export them using [YAML](../../pipelines/build/yaml.md).
 
 ## Test
 

@@ -23,7 +23,7 @@ Module path: `TFS/DistributedTask/Contracts`
 
 * `authorization`: [EndpointAuthorization](../../../TFS/DistributedTask/Contracts/EndpointAuthorization.md). Gets or sets the authorization data for talking to the endpoint.
 
-* `createdBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). The Gets or sets Identity reference for the user who created the Service endpoint
+* `createdBy`: [VSS_Common_Contracts.IdentityRef](../../../VSS/WebApi/Contracts/IdentityRef.md). The Gets or sets Identity reference for the user who created the service connection
 
 * `data`: {[key: string]: string}. 
 

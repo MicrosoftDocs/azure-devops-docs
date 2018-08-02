@@ -182,15 +182,15 @@ Below you'll find tutorials that cover different types of extensions so that you
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center">
-    <b>Add a new Service Endpoint</b>
+    <b>Add a new Service Connection</b>
     </div>
 </div>
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:65%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
     <div style="text-align:center;display:table-cell;vertical-align:middle"> 
-    Service endpoints are a way for VSTS to connect to external systems or services. Extensions can acquire stored details from the service endpoint 
-    to perform operations on that service. This tutorial walks through creating a custom service endpoint with data sources, and a build task that calls it. 
+    Service connections are a way for VSTS to connect to external systems or services. Extensions can acquire stored details from the service connection 
+    to perform operations on that service. This tutorial walks through creating a custom service connection with data sources, and a build task that calls it. 
     </div>
 </div>
 </div>

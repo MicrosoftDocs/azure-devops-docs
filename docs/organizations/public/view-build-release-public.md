@@ -1,7 +1,7 @@
 ---
 title: View builds, releases, pipelines 
 titleSuffix: VSTS Public Project
-description: View build and release status an definitions for a public project
+description: View build and release status an pipelines for a public project
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-When viewing a public project, you can view the status of build and release pipelines and their definitions. If you're a contributor, you can also [define build pipelines](../../pipelines/build/ci-public.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json).  
+When viewing a public project, you can view the status of build and release pipelines. If you're a contributor, you can also [define build pipelines](../../pipelines/build/ci-public.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json).  
 
 [!INCLUDE [temp](_shared/anon-user.md)]   
 
@@ -45,7 +45,7 @@ To view the status of recent builds, choose **Build and Release**.  To view a su
 ---
 
 
-## View active release pipelines and definitions 
+## View active release pipelines
 
 # [New navigation](#tab/new-nav)  
 
@@ -78,4 +78,4 @@ From there, you can drill into the details of a release. For example, here we sh
 
 ## Related articles 
 
-- [Release definitions](../../pipelines/release/index.md)
+- [Release pipelines](../../pipelines/release/index.md)
