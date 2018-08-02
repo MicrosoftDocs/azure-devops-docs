@@ -7716,6 +7716,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/organizations/accounts/connect-account-to-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/connect-organization-to-aad",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/accounts/create-account-msa-or-work-student.md",
       "redirect_url": "/vsts/organizations/accounts/create-organization-msa-or-work-student",
       "redirect_document_id": false
