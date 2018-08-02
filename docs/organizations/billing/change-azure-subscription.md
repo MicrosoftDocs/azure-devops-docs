@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/10/2018
+ms.date: 08/01/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -54,13 +54,13 @@ If the target subscription is in the same Azure Active Directory as the destinat
     If you experience browser problems with Azure,
     make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
-2. Go to **All services** > **Team Services organizations**. 
+2. Go to **All services** > **Team Services administration**. 
 
-   ![Choose All services and Team Services organizations](_img/change-azure-subscription/all-services-team-services-organizations.png)
+   ![Choose All services and Team Services administration](../accounts/_img/_shared/azure-portal-team-services-administration.png)
 
-3. Select your organization and remove billing.
+3. Select your organization and **Remove billing**.
 
-   ![Remove billing from your organization](_img/change-azure-subscription/choose-organization-and-remove-billing.png)
+   ![Remove billing from your organization](../accounts/_img/_shared/azure-portal-remove-billing.png)
 
 ### Purchase again using the new subscription
 
