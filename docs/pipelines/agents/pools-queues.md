@@ -69,7 +69,7 @@ We provide the following agent pools by default:
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
 
 * **Hosted macOS** pool (VSTS only): Enables you to build and release on
-  Mac machines without having to configure a self-hosted agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
+  macOS without having to configure a self-hosted agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
 
 Each of these hosted pools is exposed to each project through a corresponding hosted queue. By default, all contributors in a project are members of the **User** role on each hosted queue. This allows every contributor in a project to author and run build and release pipelines using Microsoft-hosted queues.
 

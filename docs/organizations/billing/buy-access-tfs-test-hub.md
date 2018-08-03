@@ -44,7 +44,7 @@ For more about TFS licensing, see the
 
 2. Based on the number of users who need TFS CALs, [pay for VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). Note that VSTS organizations include 5 free users, and these free users do not apply to TFS.
 
-3. If you haven't already, sign in to your VSTS account (```https://{yourorganization}.visualstudio.com```).
+3. If you haven't already, sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
 4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your VSTS organization so that you can track these users more easily.
 

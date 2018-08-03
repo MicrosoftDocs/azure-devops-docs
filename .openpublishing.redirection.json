@@ -897,7 +897,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/manage-users-and-access-user-hub-team-services.md",
-      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-organization-users-from-user-hub",
       "redirect_document_id": false
     },
     {
@@ -1872,7 +1872,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/add-account-users-assign-access-levels-team-services.md",
-      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-organization-users-from-user-hub",
       "redirect_document_id": false
     },
     {
@@ -1882,7 +1882,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/assign-licenses-to-users-vs.md",
-      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-organization-users-from-user-hub",
       "redirect_document_id": false
     },
     {
@@ -1962,7 +1962,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/manage-users-and-access-user-hub-team-services.md",
-      "redirect_url": "/vsts/organizations/accounts/add-account-users-from-user-hub",
+      "redirect_url": "/vsts/organizations/accounts/add-organization-users-from-user-hub",
       "redirect_document_id": false
     },
     {
@@ -7665,6 +7665,11 @@
       "redirect_url": "/vsts/organizations/accounts/add-organization-users-from-user-hub",
       "redirect_document_id": false
     },
+    { 
+      "source_path": "docs/organizations/accounts/add-account-users-from-user-hub.md",
+      "redirect_url": "/vsts/organizations/accounts/add-organization-users-from-user-hub",
+      "redirect_document_id": false
+    },
     {
       "source_path": "docs/accounts/add-basic-or-vs-subscription-users.md",
       "redirect_url": "/vsts/organizations/accounts/add-basic-or-vs-subscription-users",
@@ -7707,6 +7712,11 @@
     },
     {
       "source_path": "docs/accounts/connect-account-to-aad.md",
+      "redirect_url": "/vsts/organizations/accounts/connect-organization-to-aad",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/connect-account-to-aad.md",
       "redirect_url": "/vsts/organizations/accounts/connect-organization-to-aad",
       "redirect_document_id": false
     },

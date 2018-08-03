@@ -17,4 +17,5 @@
     #outputVariable: # Optional
     #appInsightsResourceGroupName: # Required when action == Enable Continuous Monitoring
     #applicationInsightsResourceName: # Required when action == Enable Continuous Monitoring
+    #applicationInsightsWebTestName: # Optional
 ```

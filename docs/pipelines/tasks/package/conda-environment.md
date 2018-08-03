@@ -41,7 +41,7 @@ None
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV0.md)]
+[!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV1.md)]
 ::: moniker-end
 
 ## Arguments

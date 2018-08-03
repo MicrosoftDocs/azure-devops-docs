@@ -77,7 +77,7 @@ A VSTS URL consists of an organization name and visual studio.com, for example: 
 
 To learn the version number, enter the following address in a web browser:
 ```
-https://AccountName.visualstudio.com/_home/About
+https://OrganizationName.visualstudio.com/_home/About
 ```
 A page similar to the one shown will open showing the version number.
 
