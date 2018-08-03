@@ -14,18 +14,10 @@ monikerRange: '> tfs-2018'
 
 # Python
 
-::: moniker range="<= tfs-2018"
-> [!NOTE]
-> 
-> This guidance applies to Visual Studio Team Services.
-::: moniker-end
-
 This guide explains creating pipelines for Python projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
 
-::: moniker range="vsts"
 > [!NOTE]
 > To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your organization.
-::: moniker-end
 
 ## Get started
 
