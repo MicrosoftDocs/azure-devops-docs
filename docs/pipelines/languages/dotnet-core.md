@@ -407,7 +407,7 @@ After you've packaged your app, you are ready to [publish to NuGet feeds](../tar
 
 ### Deploy a web app
 
-To create a .zip file archive that ready for publishing to a web app, add the following snippet:
+To create a .zip file archive that is ready for publishing to a web app, add the following snippet:
 
 ```yaml
 - task: DotNetCoreCLI@2

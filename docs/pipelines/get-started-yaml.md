@@ -8,8 +8,8 @@ ms.assetid: 5A8F1A12-72BF-4985-9B27-65CBC08462F7
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 5/10/2018
-monikerRange: 'vsts'
+ms.date: 8/03/2018
+monikerRange: '> tfs-2018'
 ---
 
 # Build a repository with YAML
@@ -27,15 +27,13 @@ If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, 
 
 Choose the sample application for the language of your choice from one of the following repositories.
 
-| Programming language | Repository with sample application |
+| Programming language | Repository with a sample application |
 |----------------------|----------------------------|
 | .NET Core | `https://github.com/adventworks/dotnetcore-sample` |
 | Android | `https://github.com/adventworks/android-sample` |
 | Go | `https://github.com/adventworks/go-sample` |
 | Java | `https://github.com/adventworks/java-sample` |
 | JavaScript | `https://github.com/adventworks/nodejs-sample` |
-| PHP | `https://github.com/adventworks/php-sample` |
-| Python | `https://github.com/adventworks/python-sample` |
 
 Get the code for the sample application into your own GitHub or VSTS repository.
 
@@ -67,7 +65,7 @@ Get the code for the sample application into your own GitHub or VSTS repository.
       testResultsFiles: '**/TEST-*.xml'
       tasks: 'build'
   ```
-    
+
   The next time you push a change to this YAML file, VSTS automatically builds your code.
 
 1. Choose **Edit** to make a change to the YAML file.
@@ -77,7 +75,7 @@ Get the code for the sample application into your own GitHub or VSTS repository.
   ```
   # This repository is built using VSTS.
   ```
-  
+
 1. Commit the above change to the master branch.
 
 1. Navigate to the **Build and Release** hub.
@@ -126,7 +124,7 @@ In GitHub:
   ```
   # This repository is built using VSTS.
   ```
-  
+
 1. Commit the above change to the master branch.
 
 Back in VSTS:
@@ -146,11 +144,5 @@ Back in VSTS:
 ## Next steps
 
 You've just learned the basics of using YAML to create and run a VSTS build process.
-This pipeline automatically builds and validates whatever code is checked in by your team. 
-Now you're ready to configure your CI pipeline for the programming language you're using.
-
-* [.NET Core](languages/dotnet-core.md)
-* [Android](languages/android.md)
-* [Go](apps/go/go.md)
-* [Java](apps/java/build-gradle.md)
-* [JavaScript](apps/nodejs/build-gulp.md)
+This pipeline automatically builds and validates whatever code is checked in by your team.
+Now you're ready to configure your CI pipeline for the [programming language you're using](index.md).

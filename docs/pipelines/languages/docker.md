@@ -203,7 +203,7 @@ Use the **Hosted VS2017** agent queue to build Windows container images. When yo
 
 ### Microsoft-hosted MacOS agents
 
-You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
+You cannot use **Hosted macOS** to build container images as Docker is not installed on these agents.
 
 ### Self-hosted agents
 
