@@ -41,7 +41,7 @@ take for the subscription.
 
 To create a subscription, the following data will be required:
 
-- project ID (use the [Project REST API](docs/extend/reference/client/api/TFS/Core/Contracts/ProjectInfo.md) to get the project ID)
+- project ID (use the [Project REST API](../extend/reference/client/api/TFS/Core/Contracts/ProjectInfo.md) to get the project ID)
 - event ID and settings (see the [event reference](./events.md))
 - consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 
