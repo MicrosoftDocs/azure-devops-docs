@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017 < tfs-2018'
 
 When developing an app for Android or iOS, you will eventually need to manage signing certificates, and in the case of iOS, [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article will highlight some features to help you manage and secure them for your app.
 
-> **Tip**: When building on a Mac, you should either set up the [agent](../../agents/agents.md) as a launchd service (./svc.sh install) or run it as an interactive process (./run.sh).
+> **Tip**: When building on macOS, you should either set up the [agent](../../agents/agents.md) as a launchd service (./svc.sh install) or run it as an interactive process (./run.sh).
 
 This article covers:
 
