@@ -15,7 +15,7 @@ ms.date: 08/04/2016
 
 # Create a service hooks subscription programmatically
 
-Using the [Subscriptions](https://docs.microsoft.com/en-us/rest/api/vsts/hooks/subscriptions) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
+Using the [Subscriptions](docs/integrate/previous-apis/hooks/subscriptions.md) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:
 
@@ -41,7 +41,7 @@ take for the subscription.
 
 To create a subscription, the following data will be required:
 
-- project ID (use the [Project REST API](https://docs.microsoft.com/en-us/rest/api/vsts/core/projects) to get the project ID)
+- project ID (use the [Project REST API](docs/extend/reference/client/api/TFS/Core/Contracts/ProjectInfo.md) to get the project ID)
 - event ID and settings (see the [event reference](./events.md))
 - consumer and action IDs and settings (see the [consumer reference](./consumers.md))
 
