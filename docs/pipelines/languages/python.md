@@ -8,33 +8,22 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 06/15/2018
+ms.date: 08/03/2018
 monikerRange: '> tfs-2018'
 ---
 
 # Python
 
-This guide explains creating pipelines for Python projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md) or [designer quickstart](../get-started-designer.md).
+This guide explains creating pipelines for Python projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
+
+> [!NOTE]
+> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your organization.
 
 ## Get started
 
 You can build Python projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Python. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
 
-# [YAML](#tab/yaml)
-
 Create a file named **.vsts-ci.yml** in the root of your repository. Then, add applicable phases and tasks to the YAML file as described below.
-
-# [Designer](#tab/designer)
-
-### Python packages
-
-If you are creating a Python package, such as an sdist or wheel, choose the **Python package** template as you create a pipeline for your project. This will get you started with tasks to create and test a Python package on multiple Python versions and upload it to a PyPI-compatible index.
-
-### Other Python projects
-
-For other Python projects, such as Django applications, choose the **Empty process** template as you create a pipeline for your project. Then, add applicable tasks as described below.
-
----
 
 ## Use a specific Python version
 

@@ -104,7 +104,7 @@ You can configure and customize most services and applications to support your b
 
 In addition to all the pre-built functionality available to you, you can add to it in the following  ways: 
 
-- [Visual Studio Marketplace](https://marketplace.visualstudio.com) : Provides extensions that you can install either on your account, server, or Visual Studio client 
+- [Visual Studio Marketplace](https://marketplace.visualstudio.com) : Provides extensions that you can install either on your organization, server, or Visual Studio client 
 - [Service hooks](../service-hooks/index.md): Enable you to perform tasks on other services when events happen within your team project hosted on VSTS or TFS 
 - [REST APIs](https://docs.microsoft.com/en-us/rest/api/vsts/): Provide the ability to create custom extensions that plug into VSTS or TFS
 - [Visual Studio SDK](https://msdn.microsoft.com/library/bb166441.aspx): Helps you extend Visual Studio features or integrate new features into Visual Studio. You can distribute your extensions to other users, as well as to the Visual Studio Marketplace. 

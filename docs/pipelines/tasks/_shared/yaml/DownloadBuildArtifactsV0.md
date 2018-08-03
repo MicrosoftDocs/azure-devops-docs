@@ -10,6 +10,7 @@
     #buildVersionToDownload: 'latest' # Required when buildType == Specific# Options: latest, latestFromBranch, specific
     #branchName: 'refs/heads/master' # Required when buildType == Specific && BuildVersionToDownload == LatestFromBranch
     #buildId: # Required when buildType == Specific && BuildVersionToDownload == Specific
+    #tags: # Optional
     #downloadType: 'single' # Options: single, specific
     #artifactName: # Required when downloadType == Single
     #itemPattern: '**' # Optional

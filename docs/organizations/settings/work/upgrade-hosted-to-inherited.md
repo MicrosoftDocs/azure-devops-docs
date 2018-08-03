@@ -97,3 +97,8 @@ We recommend that you create a test project based on the inherited process creat
 > [!div class="nextstepaction"]
 > [Change a project from a Hosted XML process to Inheritance](change-process-from-hosted-to-inherited.md) 
 
+## FAQ
+
+### Q: Why are some of my fields missing on the form when I clone a Hosted XML process to Inherited?
+
+During the cloning process we do our best to match your layout from Hosted XML and clone it into Inherited. However, if you have been creative with the form layout, we can't always replicate that same layout in Inherited. They system does a best attempt. Fields and layouts that are not understood get ignored. The fields however are still added to the process. You just need to manually add them to the form layout.

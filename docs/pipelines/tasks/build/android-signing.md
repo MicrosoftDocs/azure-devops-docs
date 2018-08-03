@@ -27,7 +27,7 @@ The build agent must have the following capabilities:
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/AndroidSigningV2.md)]
+[!INCLUDE [temp](../_shared/yaml/AndroidSigningV3.md)]
 ::: moniker-end
 
  ## Arguments

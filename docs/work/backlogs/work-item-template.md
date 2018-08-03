@@ -43,23 +43,24 @@ The steps to capture a work item differ based on the platform, version, and clie
 
 0. Choose the ![](../_img/icons/actions-icon.png) actions icon to open the menu. Choose **Templates** and then **Capture**.   
 
-	::: moniker range="vsts"
-	![Capture work item field definitions as a template, vsts](_img/templates/wi-templates-capture-bug-vsts-s136.png) 
-	::: moniker-end
-	::: moniker range=">= tfs-2017 <= tfs-2018"
+	::: moniker range="vsts"  
+	> [!div class="mx-imgBorder"]  
+	> ![Capture work item field definitions as a template, vsts](_img/templates/wi-templates-capture-bug-vsts-s136.png) 
+	::: moniker-end  
+	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	![Capture work item field definitions as a template](_img/templates/wi-templates-capture-bug-tfs.png) 
-	::: moniker-end
-	::: moniker range="vsts"
+	::: moniker-end  
+	::: moniker range="vsts"  
 	Name the template, select the team for which you want to save it under, and optionally define or clear fields. Save the template when finished. 
 
-	> [!div class="mx-imgBorder"]
+	> [!div class="mx-imgBorder"]  
 	> ![Capture template dialog](_img/templates/capture-template-vsts-s136.png) 
-	::: moniker-end
-	::: moniker range=">= tfs-2017 <= tfs-2018"
+	::: moniker-end  
+	::: moniker range=">= tfs-2017 <= tfs-2018"  
 	Name the template and optionally define or clear fields. Save the template when finished. The template is saved under the team you selected in the first step. 
 
 	![Capture template dialog](_img/wi-templates-capture-template-dialog.png) 
-	::: moniker-end
+	::: moniker-end  
 
 0. Once you've saved the template, choose **Copy link** to capture the URL for the template that you can use to add work items using the template.
 
@@ -222,7 +223,7 @@ You can apply a template to a single work item or perform a bulk update of sever
 	<img src="_img/wi-templates-apply-user-story-template-vsts.png" alt="Apply a template to an existing work item within the form" style="border: 1px solid #CCCCCC;" /> 
 	::: moniker-end
 	> [!TIP]  
-	> Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. Click **Manage&#133;** to open the team settings Templates admin page for your team to review or add templates.  
+	> Refresh your browser to discover the latest templates that have been added. If you don't see any templates, it may be that there are none defined for the work item type. 
 
 2. Save the work item for the changes to be applied. The fields changed are noted in the History field. </p>
 
@@ -258,7 +259,7 @@ You can't apply a template to existing work items from the web browser.
 
 1. Open or run a query that lists the work item(s) whose fields you want to capture.  
 
-2. Right-click the work items&mdash;which must be of the same type&mdash;  and click Apply Template from the context menu.  
+2. Right-click the work items&mdash;which must be of the same type&mdash; and choose **Apply Template** from the context menu.  
 
 	<img src="_img/wi-templates-apply-template-options-te.png" alt="Apply template to selected work item from Visual Studio with Power Tools installed" style="border: 1px solid #CCCCCC;" />
 
