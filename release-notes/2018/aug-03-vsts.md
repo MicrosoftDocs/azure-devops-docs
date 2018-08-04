@@ -10,7 +10,7 @@ description: In the Sprint 138 Update of Visual Studio Team Services (VSTS), the
 
 In the **Sprint 138 Update** of Visual Studio Team Services (VSTS), the results pages for **Release** pipelines has been enhanced with a [summarized view of test results](#review-summarized-test-results) that organizes related outcomes into a hierarchy. Also in **Build and release**, we've added a way to [view the details](#check-installed-software-on-microsoft-hosted-agent-pools) of the installed software on Microsoft-hosted agent pools.
 
-In **Work** you can now view your team's work on the Work Items hub, while over in **Reporting** you can bring dashboards directly into Microsoft Teams. Check out the [Features](#features) list below for more.
+In **Work** you can now view your team's work on the Work Items hub. Check out the [Features](#features) list below for more.
 
 ## Next steps
 
