@@ -38,7 +38,7 @@ However, you can't reorder items that another team owns.
 This enables management teams to focus on high level features and epics, and development teams 
 to focus on just those backlog items they're responsible to deliver. 
 
-To make this work for you, you'll need to [add teams and set their area paths](../scale/multiple-teams.md). 
+To make this work for you, you'll need to [add teams and set their area paths](../../organizations/settings/add-teams.md). 
 For example, you can create a team structure similar to this one with two management and three development teams.
 
 ![Conceptual image of backlogs and multi-team ownership](_img/ALM_OB_MultiTeam_C.png)

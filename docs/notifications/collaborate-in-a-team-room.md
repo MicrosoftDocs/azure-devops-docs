@@ -28,7 +28,7 @@ Team rooms, like chat rooms, provide teams with a space to discuss work in progr
 
 By using the team room instead of email threads, you automatically receive an audit trail of conversations and decisions. By reviewing the archive, you can quickly catch up with the team when you've been away or in a different time zone.
 
-A team room is created for [each team that gets created](../work/scale/multiple-teams.md). Team administrators can create additional rooms and manage their team rooms.  
+A team room is created for [each team that gets created](../organizations/settings/add-teams.md). Team administrators can create additional rooms and manage their team rooms.  
 
 Members of the Project Administrators groups can create and administer team rooms that they have created. And, members of the Project Collection Administrators groups can create and administer all team rooms.  
 
@@ -39,7 +39,7 @@ Members of the Project Administrators groups can create and administer team room
 	
 	If you don't see the room tile, [(VSTS) ask your account administrator to grant you a Basic license](../organizations/accounts/add-organization-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
 
-	If you can't enter the room, get added as a member: [(VSTS) Add team members](../organizations/accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../work/scale/multiple-teams.md#add-team-members).
+	If you can't enter the room, get added as a member: [(VSTS) Add team members](../organizations/accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../organizations/settings/add-teams.md#add-team-members).
 
 2. To switch to another team room, open it from the **Rooms** list. 
 
@@ -65,7 +65,7 @@ Members of the Project Administrators groups can create and administer team room
 ## Add members
 You can invite others who have access to the account or project to participate in your team room. 
 
-1. If you're not a team administrator, [get added as one](../work/scale/add-team-administrator.md). 
+1. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). 
 
 2. Open **Manage Members**.
 	
@@ -85,7 +85,7 @@ Adding events lets your team know when builds finish, source code is checked in,
 	
 	![Manage events link on the team room page](_img/ALM_CT_ConfigureEvents.png) 
 	
-	If you don't see the **Manage events** link, [get added as a team administrator](../work/scale/add-team-administrator.md).
+	If you don't see the **Manage events** link, [get added as a team administrator](../organizations/settings/add-team-administrator.md).
 
 2. Add events. 
 	
@@ -109,14 +109,14 @@ Adding events lets your team know when builds finish, source code is checked in,
 ## Add another room
 Adding other rooms provides areas for ad hoc discussions, cross-team interactions, virtual teams, or social discussions. 
 
-1. Add a room. If the **New** link is not active, [get added as a team administrator](../work/scale/add-team-administrator.md).
+1. Add a room. If the **New** link is not active, [get added as a team administrator](../organizations/settings/add-team-administrator.md).
 	
 	![New link on the Rooms page, New Room dialog box](_img/ALM_CT_NewRoom.png)
 
 2. Add members to the room as described earlier in this topic.
 
 ##Related articles
-A team room is automatically created when you [add a team](../work/scale/multiple-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Manage team assets](../work/scale/manage-team-assets.md).  
+A team room is automatically created when you [add a team](../organizations/settings/add-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Manage team assets](../organizations/settings/configure-team-settings.md).  
 
 - To completely exit a team room, close all browser instances where you've logged into the team room  
 - To mute the sound, click the ![Audio icon on the Rooms page](_img/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on  
@@ -131,11 +131,11 @@ You can grant permissions to users to administer a team room.
 
 1. From the context menu, open permissions for the team room.  
 
-	![Open team room permissions](../work/scale/_img/open-security-team-room.png)  
+	![Open team room permissions](_img/open-security-team-room.png)  
 
 2. Add an account, set the permissions for Administer to **Allow**, and save the changes.   
 
-	![Add menu on Permissions page for a team room](../work/scale/_img/add-team-admin-dialog.png) 
+	![Add menu on Permissions page for a team room](../organizations/settings/_img/add-team/team-admin-dialog.png) 
 
 
 <a id="team-room-event-permissions">  </a>

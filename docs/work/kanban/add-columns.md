@@ -103,13 +103,13 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 <img src="_img/kanban-basics-intro.png" alt="Kanban board, Agile template" style="border: 1px solid #C3C3C3;" />  
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
         
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.   
 
 	<img src="_img/add-columns-open-settings-ts.png" alt="VSTS, Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns. 
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns. 
 
 2. Click a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
@@ -147,9 +147,9 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
 
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns. 
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns. 
 
-2. Click a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
+2. Choose a column tab to see all the settings you can modify. Your initial column settings will look something like this. 
 
 	![Kanban board, Customize columns, default columns, Agile process](_img/add-columns-active-agile-update-1.png)
 
@@ -182,7 +182,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.   
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.   
 
 	![Kanban board, Customize columns, default columns, Agile process](_img/ALM_AC_CustomizeColumns.png)  
 
@@ -211,7 +211,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.   
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.   
 
 	![Kanban board, Customize columns, default columns, Agile process](_img/ALM_AC_CustomizeColumns.png)  
 
@@ -238,7 +238,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.  
 
 	You'll see different column titles and choices based on the following:  
 	

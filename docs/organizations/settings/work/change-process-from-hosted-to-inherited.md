@@ -9,7 +9,6 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-robots: NOINDEX, NOFOLLOW
 ms.date: 05/30/2018
 ---
 
@@ -23,7 +22,7 @@ ms.date: 05/30/2018
 Once you've [cloned your Hosted XML process to an inherited process](upgrade-hosted-to-inherited.md), you can change the project(s) from the Hosted XML process to the inherited process. You change a project from a Hosted XML process to its derived inherited process to start customizing the process through the user interface.  
 
 > [!CAUTION] 
-> Choosing to clone a team project from a Hosted XML process model to an inherited process is an irreversible operation. Before you change the process of an existing project from Hosted XML to the cloned inherited process, review [Supported operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md) to understand which customizations are preserved and which are not before you change the process of a project from Hosted XML to an inherited process. Also, [create a test project](upgrade-hosted-to-inherited.md#verify) to verify the customizations preserved or reapplied to a process.
+> Choosing to clone a project from a Hosted XML process model to an inherited process is an irreversible operation. Before you change the process of an existing project from Hosted XML to the cloned inherited process, review [Supported operations when moving from Hosted XML process to inherited process](upgrade-support-hosted-to-inherited.md) to understand which customizations are preserved and which are not before you change the process of a project from Hosted XML to an inherited process. Also, [create a test project](upgrade-hosted-to-inherited.md#verify) to verify the customizations preserved or reapplied to a process.
 
 ## Prerequisites 
 - You must be a member of the Project Administrators group for the project you want to change, or a member of the Project Collection Administrators group.
@@ -31,17 +30,17 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 <a id="open-process-wit">  </a>
 ## Open Settings>Process hub
 
-You create, manage, and make customizations to processes from the **Settings>Process** hub. 
+You create, manage, and make customizations to processes from the **Settings>Process** pages. 
 
-0. To open the admin context from the user context, choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Account settings**. 
+0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Organization settings**. 
 	
 	> [!div class="mx-imgBorder"]  
-	> ![VSTS web portal, open Account Settings](_img/process/open-account-settings.png)   
+	> ![VSTS web portal, open Organization Settings](_img/process/open-account-settings.png)   
 
 0. Choose **Process**. 
    
 	> [!div class="mx-imgBorder"]  
-	> ![Account Settings context, Process page](_img/process/open-process-page.png) 
+	> ![Organization Settings, Process page](_img/process/open-process-page.png) 
 
 
 <a id="change-inherited-process"></a>

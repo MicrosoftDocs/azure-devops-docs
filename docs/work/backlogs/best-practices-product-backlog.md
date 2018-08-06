@@ -34,7 +34,7 @@ Product owners play an important role in Scrum, primarily as the interface betwe
 * Helping stakeholders understand the decisions underlying the priority order of your backlog  
 * Responding to any and all requests from your team for more information concerning backlog priorities and requirements  
 
-If they will also be responsible for configuring team settings, [add them as a team administrator](../scale/manage-team-assets.md).  
+If they will also be responsible for configuring team settings, [add them as a team administrator](../../organizations/settings/configure-team-settings.md).  
 
 A product owner can reduce the need for detailed specifications by being more responsive to the team's questions about implementation details and clearly articulating acceptance criteria within each requirement.
 

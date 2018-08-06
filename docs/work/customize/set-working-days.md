@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 
 Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, Working days page. 
 
-If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team and project admins can change team settings. 
+If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can change team settings. 
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018" 
 <a id="team-services-work-days" />

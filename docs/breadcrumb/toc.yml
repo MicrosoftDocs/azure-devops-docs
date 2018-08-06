@@ -117,9 +117,12 @@
     - name: "Security & Identity"
       tocHref: /vsts/organizations/security/
       topicHref: /vsts/organizations/security/index
-    - name: "Scale & Configure Teams"
+    - name: Settings
       tocHref: /vsts/organizations/settings/
       topicHref: /vsts/organizations/settings/index
+    - name: "Scale & Configure Teams"
+      tocHref: /vsts/organizations/settings/scale/
+      topicHref: /vsts/organizations/settings/scale/index
     - name: Billing
       tocHref: /vsts/billing/
       topicHref: /vsts/billing/index

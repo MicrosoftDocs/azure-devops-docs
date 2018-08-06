@@ -10,18 +10,31 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 07/12/2018
+ms.date: 07/27/2018
 ---
 
-# About team, project, and organizational-level settings 
+
+::: moniker range="vsts" 
+# About user, team, project, and organization-level settings 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-From the administrative or **Settings** context, you configure resources that support your project and teams. This article provides a guide to the resources you can configure based on your role.  
-  
+You configure resources either for yourself, your team, a project, or your organization from an administrative **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
 
-## Individual contributor settings
-Individual contributors can set their user preferences, enable select features that are in preview, and manage their favorites and notifications. 
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+# About user, team, project, and collection-level settings 
+
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+
+You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to. 
+
+::: moniker-end  
+
+
+## User settings
+Individual contributors can set their user preferences, enable features that are in preview, and manage their favorites and notifications. 
 
 
 <table>
@@ -79,9 +92,9 @@ Individual contributors can set their user preferences, enable select features t
 
 ## Team administrator role and managing teams
 
-Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../work/scale/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
+Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
 
-For a complete overview of all team assets that you can configure, see [Manage team assets](../../work/scale/manage-team-assets.md).  
+For a complete overview of all Agile tools that you can configure, see [Configure team settings](configure-team-settings.md).  
 
 
 <table>
@@ -95,7 +108,7 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <td>**Team profile**</td>
 <td><ul>
 <li>[Add users to a project or specific team](../security/add-users-team-project.md)</li>
-<li>[Add team admins](../../work/scale/add-team-administrator.md)</li>
+<li>[Add team admins](../../organizations/settings/add-team-administrator.md)</li>
 </ul></td>
 <td>Members of a team are included within the team group which can be used in queries and **@mentions** in pull requests and work item discussions.</td>
 </tr>
@@ -115,7 +128,7 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <td>**Dashboards** </td>
 <td><ul>
 <li>[Create team dashboards](../../report/dashboards/dashboards.md)</li>
-<li>[Manage team dashboard permissions](../../report/dashboards/dashboard-permissions.md)</li>
+<li>[Set default team dashboard permissions, manage dashboard permissions](../../report/dashboards/dashboard-permissions.md)</li>
 </ul></td>
 <td>New dashboards added to a project are associated with a team. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
@@ -132,7 +145,44 @@ For a complete overview of all team assets that you can configure, see [Manage t
 <a id="project" />
 ## Project administrator role and managing projects
 
-Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can perform project-level  tasks as well.   
+Members of the [Project Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for a project and managing permissions at the project-level. Note that members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) can configure team settings as well.
+
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+::: moniker range="vsts"
+> [!NOTE]  
+> Project settings differ depending on the navigation model you've selected or that has been enabled for your organization. 
+::: moniker-end
+
+
+# [New navigation](#tab/new-nav)  
+
+::: moniker range="vsts"   
+**Project settings**  
+From the administrative **Project settings** page, you can configure the settings shown in the following image. 
+
+![Project settings, conceptual](_img/about/project-settings-concept.png) 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013  <= tfs-2018"
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+**Project-level settings**  
+From the administrative pages for a project, you can configure the settings shown in the following image. 
+
+> [!NOTE]  
+> Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
+
+::: moniker range=">= tfs-2013"
+![Project settings, conceptual](_img/about/project-settings-concept-prev-nav.png) 
+::: moniker-end
+
+---
 
 <table>
 <tbody valign="top">
@@ -142,12 +192,27 @@ Members of the [Project Administrators group](../security/set-project-collection
 <th width="45%">Notes</th>
 </tr>
 <tr>
+<td>**General**</td>
+<td><ul>
+<li>Set project description</li>
+<li>[Change the project visibility, public or private](../public/make-project-public.md) (VSTS only) </li>
+</ul></td>
+<td>Update the project description or change it's visibility.</p></td>
+</tr>
+<tr>
+<td>**Services** (VSTS only)</td>
+<td><ul>
+<li>[Turn a service on or off ](set-services.md)</li>
+</ul></td>
+<td>Services that aren't use by project members can be disabled so that they don't appear in the web portal. Turning a service off removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn the service on. </p></td>
+</tr>
+<tr>
 <td>**Teams**</td>
 <td><ul>
-<li>[Add another team and team members](../../work/scale/multiple-teams.md)</li>
-<li>[Add a team administrator](../../work/scale/add-team-administrator.md)</li>
+<li>[Add another team and team members](../../organizations/settings/add-teams.md)</li>
+<li>[Add a team administrator](../../organizations/settings/add-team-administrator.md)</li>
 </ul></td>
-<td>A default team is created when the organizational account is created. You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage. Teams have access to a product backlog, porfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more.<p>For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).</p></td>
+<td>A default team is created when you create a project. You add a team when you want to provide a group of users in your organization a set of Agile tools which they have full ownership to configure and manage. Teams have access to a product backlog, porfolio backlogs, sprint backlogs, dashboards, team-scoped widgets, and more.<p>For an overview of all tools that support a team, see [About teams and Agile tools](about-teams-and-settings.md).</p></td>
 </tr>
 <tr>
 <td>**Security**</td>
@@ -188,8 +253,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <li>[Define area paths](set-area-paths.md)</li>
 <li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
 </ul></td>
-<td>Area and iteration paths set at the project level are then used to set team defaults. To configure additional product backlogs, Kanban boards, and dashboards, you first [add a team](../../work/scale/multiple-teams.md).   
-<p>To customize the workflow, work item form, add fields or rules, or make other changes to the work tracking experience, you customize a process. For an overview of what you can customize, see [About process customization and inherited processes](work/inheritance-process-model.md).</p> 
+<td>Area and iteration paths set at the project level are then used to set team defaults. To configure additional product backlogs, Kanban boards, and dashboards, you first [add a team](../../organizations/settings/add-teams.md).   
 </td>
 </tr>
 <tr>
@@ -226,7 +290,7 @@ Members of the [Project Administrators group](../security/set-project-collection
 <td>**Wiki**</td>
 <td><ul>
 <li>[Create a wiki for your project](../../project/wiki/wiki-create-repo.md)</li>
-<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md)</li>
+<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md) (VSTS only)</li>
 <li>[Manage README and Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)</li>
 </ul></td>
 <td>To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. To learn more, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).</td>
@@ -244,10 +308,55 @@ Members of the [Project Administrators group](../security/set-project-collection
 <a id="admin" />
 ## Project collection administrator role and managing collections of projects 
 
-Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all VSTS projects defined for an account or organization. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
+Members of the [Project Collection Administrators group](../security/set-project-collection-level-permissions.md) are tasked with configuring resources for all projects defined for an organization or collection. They also can perform all tasks to add projects, manage projects, and manage permissions for the collection, a project, or an object.   
 
-For an overview of managing your VSTS account, see [About account management](../accounts/organization-management.md).
 
+::: moniker range="vsts"
+> [!NOTE]  
+> Project settings differ depending on the navigation model you've selected or that has been enabled for your organization. 
+::: moniker-end
+
+# [New navigation](#tab/new-nav)  
+
+::: moniker range="vsts"   
+**Organization settings**  
+From the administrative **Project settings** page, you can configure the settings shown in the following image. 
+
+![Project settings, conceptual](_img/about/organization-settings-concept.png) 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013  <= tfs-2018"
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end
+
+# [Previous navigation](#tab/previous-nav)
+
+
+::: moniker range="vsts"   
+
+**Organization settings**  
+From the **Admin settings** page, you can configure the settings shown in the following image. 
+
+![Organization settings, conceptual](_img/about/collection-settings-concept-prev-nav.png) 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013"  
+**Project collection-level settings**  
+From the administrative pages for a collection, you can configure the settings shown in the following image. 
+
+> [!NOTE]  
+> Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
+
+![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-concept-prev-nav.png) 
+::: moniker-end
+
+---
+
+
+::: moniker range="vsts" 
+For an overview of managing your organization, see [About organization management](../accounts/organization-management.md).
 
 <table>
 <tbody valign="top">
@@ -261,13 +370,14 @@ For an overview of managing your VSTS account, see [About account management](..
 <td><ul>
 <li>[Enable preview features](../../project/navigation/preview-features.md)</li>
 </ul></td>
-<td>Account owners can enable or disable account-level features that are in preview.  </td>
+<td>Organization administrators can enable or disable account-level features that are in preview.</td>
 </tr>
 <tr>
-<td>**Overview, Account settings**</td>
+<td>**Overview**</td>
 <td><ul>
-<li>Add and manage accounts: [change account owner](../accounts/change-organization-ownership-vs.md), [Rename](../accounts/rename-vsts-organization.md), [Delete](../accounts/delete-your-vsts-organization.md), [Recover](../accounts/recover-your-vsts-organization.md)</li>
-<li>[Find or change your account location](../accounts/change-organization-location.md)</li>
+<li>Add and manage organization information: [change organization owner](../accounts/change-organization-ownership-vs.md), [Rename](../accounts/rename-vsts-organization.md), [Delete](../accounts/delete-your-vsts-organization.md), [Recover](../accounts/recover-your-vsts-organization.md)</li>
+<li>[Find or change your organization location](../accounts/change-organization-location.md)</li>
+<li>[Set up billing](../billing/set-up-billing-for-your-organization-vs.md)</li>
 </ul></td>
 <td>From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects defined under your account.</td>
 </tr>
@@ -290,14 +400,14 @@ For an overview of managing your VSTS account, see [About account management](..
 <li>[Add users to projects](../security/add-users-team-project.md)</li>
 <li>[Save project data](../accounts/save-team-project-data.md)</li>
 </ul></td>
-<td>An VSTS project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of projects you create, to keep things simple. However, if you need to, you can add additional projects to your account. Users added to a project can contribute to that project. </td>
+<td>A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of projects you create, to keep things simple. Learn more [About projects and scaling your organization](../projects/about-projects.md). </td>
 </tr>
 <tr>
 <td>**Policy**</td>
 <td><ul>
 <li>[Change application access policies](../accounts/change-application-access-policies-vs.md) </li>
 </ul></td>
-<td>Account owners can set policies to allow or disallow access by other applications or services to their VSTS account. </td>
+<td>VSTS owners can set policies to allow or disallow access by other applications or services to their VSTS account. </td>
 </tr>
 <tr>
 <td>**Users**</td>
@@ -327,7 +437,7 @@ For an overview of managing your VSTS account, see [About account management](..
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when an account or organization is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md). </td>
+<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md). </td>
 </tr>
 <tr>
 <td>**Extensions**</td>
@@ -370,7 +480,93 @@ For an overview of managing your VSTS account, see [About account management](..
 </tbody>
 </table>
 
+::: moniker-end
 
+::: moniker range=">= tfs-2013  <= tfs-2018"
+For an overview of managing collections, see [Configure and manage TFS resources](/tfs/server/admin/config-tfs-resources).
+
+
+<table>
+<tbody valign="top">
+<tr>
+<th width="15%">Area</th>
+<th width="40%">Supported tasks</th>
+<th width="45%">Notes</th>
+</tr>
+<tr>
+<td>**Overview, Admin settings**</td>
+<td><ul>
+<li>[Change access levels](../security/change-access-levels.md)</li>
+</ul></td>
+<td>From the **Settings** page, you can manage the time zone, owner, region, and other settings that apply to all projects defined under your account.</td>
+</tr>
+<tr>
+<td>**Projects**</td>
+<td><ul>
+<li>Add and manage projects: [Create](../projects/create-project.md), [Rename](../projects/rename-project.md), [Delete](../projects/delete-project.md)</li>
+<li>[Add users to projects](../security/add-users-team-project.md)</li>
+<li>[Save project data](../accounts/save-team-project-data.md)</li>
+</ul></td>
+<td>A project provides the fundamental resource for storing your code, managing your CI/CD operations, and planning and tracking work for your project. In general, you'll want to minimize the number of projects you create, to keep things simple. Learn more [About projects and scaling your organization](../projects/about-projects.md). </td>
+</tr>
+<tr>
+<td>**Security**</td>
+<td><ul>
+<li>[Change individual permissions](../security/change-individual-permissions.md)</li>
+<li>[Grant or restrict access to select features ](../security/restrict-access.md)</li>
+<li>[Add collectino-level administrators](../security/set-project-collection-level-permissions.md)</li>
+<li>[Set up groups for use in TFS deployments](/tfs/server/admin/setup-ad-groups)</li>
+<li>[Add administrators to TFS](/tfs/server/admin/add-administrator-tfs)</li>
+</ul></td>
+<td>For an overview of security concepts, see [About permissions and groups](../security/about-permissions.md) and [About access levels](../security/access-levels.md). For a list of collection-level permissions, see [Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level).</p></td>
+</tr>
+<tr>
+<td>**Notifications**</td>
+<td><ul>
+<li>Manage collection-level notifications </li>
+</ul></td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md). </td>
+</tr>
+<tr>
+<td>**Extensions**</td>
+<td><ul>
+<li>[Install and manage Marketplace extensions](../../marketplace/install-vsts-extension.md)</li>
+<li>[Approve extensions](../../marketplace/approve-extensions.md)</li>
+<li>[Assign paid extension access to users](../../marketplace/assign-paid-extensions.md)</li>
+<li>[Change the number of paid users](../billing/change-number-paid-extension-users.md) </li>
+<li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
+<li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
+</ul></td>
+<td>An extension is an installable unit that contributes new capabilities to your VSTS projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
+</td>
+</tr>
+<tr>
+<td>**CI/CD**</td>
+<td><ul>
+<li>[Set retention policies](../../pipelines/policies/retention.md)</li>
+<li>[Set resource limits for pipelines](../../pipelines/licensing/concurrent-pipelines-ts.md)</li>
+<li>[Add and manage agent pools](../../pipelines/agents/pools-queues.md)</li>
+<li>[Add and manage deployment pools](../../pipelines/release/deployment-groups/index.md)</li>
+</ul></td>
+<td>You manage resources that support CI/CD operations for all projects through the **Agent pools**, **Deployment pools**, and **Retention and limits** pages.</td>
+</tr>
+</tbody>
+</table>
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2013  <= tfs-2018"
+<a id="admin" />
+## Server administrator role 
+
+Members of the [Team Foundation Server Administrators group](/tfs/server/admin/add-administrator-tfs) are tasked with configuring resources for all project collections. They also can perform all tasks to administer projects, collections, and server instances.     
+
+The main task they perform from the web portal is to set access levels for a user or security group. See [Change access levels](../security/change-access-levels.md). 
+
+For additional information, see [Team Foundation Server Administration Documentation](/tfs/index).
+
+::: moniker-end
 
 ## Related articles 
 - [Resources granted to project members](../accounts/resources-granted-to-project-members.md) 

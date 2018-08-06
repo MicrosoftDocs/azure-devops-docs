@@ -96,5 +96,5 @@ By default, all team members have permissions to edit dashboards defined for the
 ## Related articles
 
 - [Add users to a project or specific team](../../organizations/security/add-users-team-project.md)
-- [Add a team administrator](../../work/scale/add-team-administrator.md)
+- [Add a team administrator](../../organizations/settings/add-team-administrator.md)
  

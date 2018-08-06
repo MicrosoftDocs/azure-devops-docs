@@ -11,7 +11,9 @@ ms.topic: quickstart
 ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
 ---
-# Quickstart: Look up the account owner or a project administrator
+
+
+# Look up the account owner or a project administrator
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -21,23 +23,23 @@ For an overview of built-in security groups and default permission assignments, 
 
 ## Prerequisites
 
-* You must have a team project. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../projects/create-project.md).
+* You must have a project. If you don't have a project yet, [create one](../projects/create-project.md).  
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.  
 
 ## Find out who is a member of the Project Administrators group
 
-If you aren't a project administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by clicking on that group in the team project admin context and seeing who are members. 
+If you aren't a project administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by choosing that group from the **Project Settings>Security** page and seeing who are members. 
  
-0. From the web portal of your team project, click the ![gear icon](_img/icons/gear_icon.png) gear settings icon.
+0. From the web portal of your project, choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon.
 
-0. Click the **Security** page, **Project Administrators** group, and the **Members** tab.  
+0. Choose the **Security** page, **Project Administrators** group, and the **Members** tab.  
 
 	<img src="_img/view-permissions-project-level-membership.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 2px solid #C3C3C3;" />
 
 
 ## Determine who is a member of the Project Collection Administrators group
 
-If you need elevated permissions, you'll have to request them from a member of the [Project Collection Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all team projects. 
+If you need elevated permissions, you'll have to request them from a member of the [Project Collection Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all projects. 
 
 To find out who is a member, check the Security settings at the collection level. 
 
@@ -70,7 +72,7 @@ To find out who is a member, check the Security settings at the collection level
 
 ## Try this next
 > [!div class="nextstepaction"]
-> [Add users to a team project or team](add-users-team-project.md) 
+> [Add users to a project or team](add-users-team-project.md) 
 
 
 

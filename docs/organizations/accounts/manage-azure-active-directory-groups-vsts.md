@@ -58,7 +58,7 @@ or have the directory administrator delegate those permissions to you in the
 
 ##	Add an Azure AD group to a VSTS group
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

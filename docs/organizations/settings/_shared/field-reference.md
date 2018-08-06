@@ -15,13 +15,13 @@ For descriptions and usage of each field defined for the core system processes&m
 #### Field names  
 A work item field name uniquely identifies each work item field. Make sure your field names fall within these guidelines:  
 
-- Field names must be unique within the account/project collection  
+- Field names must be unique within the organization or project collection  
 - Field names must be 128 or fewer Unicode characters  
 - Field names can't contain any leading or trailing spaces, nor two or more consecutive spaces  
 - Field names must contain at least one alphabetic character  
 - Field names can't contain the following characters: ```.,;'`:~\/\*|?"&%$!+=()[]{}<>```.   
 
-Because all fields are defined for the account, you can't add a custom field with the same field name that already exists in the account or was added to a WIT in another inherited process. 
+Because all fields are defined for the organization, you can't add a custom field with the same field name that already exists in the organization or was added to a WIT in another inherited process. 
 
 
 <!-- 

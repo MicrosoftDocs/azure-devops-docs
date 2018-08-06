@@ -36,13 +36,13 @@ For an overview of all three processes, see [Choose a process](../work-items/gui
 You can start adding work items once you connect to a project. Here we show how to add work items from the web portal. For additional clients that you can use, see [Clients that support tracking work items](../work-items/about-work-items.md#clients).
 
 1. From a web browser, connect to the project that you want to work in. For example, the Fabrikam, Inc. team navigates to ```http://fabrikamprime:8080/tfs/DefaultCollection/Fabrikam%20Fiber%20Website/```.  
-	If you haven't been added as a team member, [get added now](../scale/multiple-teams.md#add-team-members).
+	If you haven't been added as a team member, [get added now](../../organizations/settings/add-teams.md#add-team-members).
 
 2. From a team home page, you can choose the type of work item you want to create.  
 
 	![Home page -  create work items](_img/work-items-tfs-team-home-page.png)  
 
-	Work items you add are automatically scoped to your [team's area and iteration paths](../scale/multiple-teams.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
+	Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/add-teams.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json)
 
 3. Enter a title and then save the work item. Before you change the default State, you must save it.  
 

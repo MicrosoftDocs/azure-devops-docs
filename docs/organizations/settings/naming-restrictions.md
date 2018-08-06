@@ -454,7 +454,7 @@ Must not contain any Unicode control characters or surrogate characters
 ### Teams 
 Team names identify a group of individuals or groups that collectively work together as a team in a project. Team members use this name to connect to the team or to query against members defined for a team. 
 
-As such, team names must conform to conventions that allow it to be rendered as part of a valid URL. In addition, each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different projects within a project collection. [Add another team or a hierarchy of teams](../../work/scale/multiple-teams.md) provides more information about working with teams.  
+As such, team names must conform to conventions that allow it to be rendered as part of a valid URL. In addition, each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different projects within a project collection. [Add another team or a hierarchy of teams](../../organizations/settings/add-teams.md) provides more information about working with teams.  
 
 Team names must conform to the following restrictions.   
 

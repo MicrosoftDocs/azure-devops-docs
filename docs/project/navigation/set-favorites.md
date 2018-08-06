@@ -364,7 +364,7 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
 - **Work/Queries**: A  [Shared work item queries](../../work/track/using-queries.md) to team favorites    
 - **Build/Explorer**: Add build definitions to team favorites   
 
-From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. Or, choose the Add to team favorites option from the context menu for the item. You must be [added as a team admin](../../work/scale/add-team-administrator.md) to manage team favorites.  
+From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. Or, choose the Add to team favorites option from the context menu for the item. You must be [added as a team admin](../../organizations/settings/add-team-administrator.md) to manage team favorites.  
 
 ![Drag items to team favorites](../../_img/alm-index-team-favorites.png)  
 

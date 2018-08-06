@@ -49,7 +49,7 @@ you can [enable them for your team](../customize/select-backlog-navigation-level
 
 For example, when you choose **Epics**, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

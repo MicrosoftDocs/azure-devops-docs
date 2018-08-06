@@ -22,7 +22,7 @@ You can use the following keyboard shortcuts from the web portal.
 **g,c**&nbsp;&nbsp;&nbsp;Go to the [Code hub](/vsts/repos/git/overview)<br/>
 **g,b**&nbsp;&nbsp;&nbsp;Go to the [Build-Release hub](/vsts/pipelines/overview)<br/>
 **g,t**&nbsp;&nbsp;&nbsp;Go to the [Test hub](/vsts/test/index)<br/>
-**g,s**&nbsp;&nbsp;&nbsp;Go to [Settings (Admin context)](/vsts/work/scale/manage-team-assets)<br/>
+**g,s**&nbsp;&nbsp;&nbsp;Go to [Settings (Admin context)](/vsts/organizations/settings/configure-team-settings)<br/>
 
 <br/>
 **f,n**&nbsp;&nbsp;&nbsp;Focus next section<br/>

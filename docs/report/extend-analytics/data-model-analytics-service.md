@@ -38,7 +38,7 @@ The data model contains the following entity sets:
 |Projects | All projects defined for the account or collection |
 |Process | Backlog information - used to expand or filter work items and work item types|  
 |Tags | All work item tags for each project |  
-|Teams | All teams defined for the project (To add a team, see [Add teams and team members](../../work/scale/multiple-teams.md)) |  
+|Teams | All teams defined for the project (To add a team, see [Add teams](../../organizations/settings/add-teams.md)) |  
 |Users | User information - used to expand or filter various work item properties (e.g. Assigned To, Created By)|  
 |WorkItems | The current state of work items|  
 |WorkItemLinks | The links between work items (e.g. child, parent, related) - includes history of links - hyperlinks not included  

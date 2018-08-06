@@ -5622,7 +5622,7 @@
     },
     {
       "source_path": "docs/user-guide/team-projects-teams-repos.md",
-      "redirect_url": "/vsts/work/scale/scale-teams",
+      "redirect_url": "/vsts/organizations/projects/about-projects",
       "redirect_document_id": false
     },
     {
@@ -8994,6 +8994,21 @@
       "source_path": "docs/git/use-ssh-keys-to-authenticate.md",
       "redirect_url": "/vsts/repos/git/use-ssh-keys-to-authenticate",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/work/scale/add-team-administrator.md",
+      "redirect_url": "/vsts/organizations/settings/add-team-administrator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/manage-team-assets.md",
+      "redirect_url": "/vsts/organizations/settings/configure-team-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/team-administrator-permissions.md",
+      "redirect_url": "/vsts/organizations/settings/team-administrator-permissions",
+      "redirect_document_id": false
     }
   ]
 }
