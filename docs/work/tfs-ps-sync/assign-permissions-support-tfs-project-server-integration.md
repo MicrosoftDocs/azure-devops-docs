@@ -243,7 +243,7 @@ ms.date: 03/16/2017
   
 1.  From the PWA settings page, under Operational policies, choose Active Directory resource pool synchronization.  
   
-     ![Open Active Directory Resource Pool Sync](_img/alm_pwa_setactivedirectresouce.png "ALM_PWA_SetActiveDirectResouce")  
+     ![Open Active Directory Resource Pool Sync](_img/alm_pwa_setactivedirectresouce.png "ALM_PWA_SetActiveDirectResource")  
   
 2.  Add the Active Directory group of TFS team members to the enterprise resource pool.  
   

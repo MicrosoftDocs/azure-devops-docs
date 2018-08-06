@@ -126,9 +126,9 @@ In the example below the most important part of the error message is:
 
 >Query result exceeds maximum size. Please reduce the number of records by applying additional filters.
 
-![QueryExceedsPreferedMaxSizeException](./_img/QueryExceedsPreferedMaxSizeException.png)
+![Query Exceeds Preferred Max Size Exception](./_img/QueryExceedsPreferedMaxSizeException.png)
 
-<a id="QueryExceedsPreferedMaxSizeException">  </a>
+<a id="QueryExceedsPreferredMaxSizeException">  </a>
 
 ### Q: What can I do to resolve: *Query result exceeds maximum size. Please reduce the number of records by applying additional filters*?
 

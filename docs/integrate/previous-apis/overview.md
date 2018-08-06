@@ -112,7 +112,7 @@ quality. With the Build (1.0) API, you can access each of these components. --NO
 <tr>
 <td>[Build (2.0)](./build/overview.md) </td>
 <td>The Build (2.0) APIs provide numerous ways to utilize builds from Team Services or TFS in your extensions. 
-Whether you're kicking a build off, retreiving a build, or just adding a tag, you'll find what you need here.</td>
+Whether you're kicking a build off, retrieving a build, or just adding a tag, you'll find what you need here.</td>
 <td>
 <ul><li>Start a build</li>
 <li>Get a build</li>

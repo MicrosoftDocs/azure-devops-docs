@@ -27,11 +27,11 @@ for your DevOps CI/CD processes.
 <a name="whathappens"></a>
 ## What happens when you create a Resource Manager service connection?
 
-You open the **Add Azure Resource Manager srvice connection** dialog,
+You open the **Add Azure Resource Manager Service connection** dialog,
 provide a connection name, and select a subscription from drop-down
 list of your subscriptions.  
 
-![The Add Azure Resource Manager srvice connection dialog](_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
+![The Add Azure Resource Manager Service connection dialog](_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
 
 When you choose **OK**, the system:
 

@@ -76,7 +76,7 @@ Next copy the following HTML to the **Analytics.html** file:
 ```
 
 This code simply sets up the structure of the page - we'll write the code in a separate javascript file. The **title** div is the title of the 
-widget and the **chart** div will hold the chart. The size dimensions allow for room around the chart for asthetics.
+widget and the **chart** div will hold the chart. The size dimensions allow for room around the chart for aesthetics.
 
 Add the following css to the **widget.css** file:
 
@@ -173,7 +173,7 @@ VSS.getAccessToken retrieves the authentication token for us. Once we have the t
 The next three lines are used to construct the Analytics Service URL to retrieve the data. This initial URL will return a count of work items 
 for the account and project the widget is in, grouped by work item type.
 
-The ajax call actually retrieves the data from the Analytics Service. The beforeSend function adds the authetication token to the header. The error function
+The ajax call actually retrieves the data from the Analytics Service. The beforeSend function adds the authentication token to the header. The error function
 called is boilerplate code which allows any errors to be passed to the widget infrastructure for handling. The success function is where the chart is
 built.
 

@@ -211,7 +211,7 @@ To learn more about aggregations, see [Aggregate data](aggregated-data-analytics
  
 Since all snapshot entities are modeled as **daily snapshot tables**, you should always include one of the day properties (`DateSK` or `DateValue`) in the grouping clause. Otherwise, the result may appear incorrectly inflated. 
 
-For example, if you grouped `WorkItemSnaphost` only by `AssignedTo` property and aggregate it with count, all the numbers of work items assigned to people would be multiplied by the number of days when each assignment was active. While you may have a  situation where this is your desired outcome, such cases are very rare.
+For example, if you grouped `WorkItemSnapshot` only by `AssignedTo` property and aggregate it with count, all the numbers of work items assigned to people would be multiplied by the number of days when each assignment was active. While you may have a  situation where this is your desired outcome, such cases are very rare.
 
 <a id="restrict-blocked-entity-keys"> </a>
 ### ❌ [BLOCKED] DO NOT use entity keys in resource paths for entity addressing

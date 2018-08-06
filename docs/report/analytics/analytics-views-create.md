@@ -149,7 +149,7 @@ For a snapshot of the current status, choose **Current only**. For trend charts,
 **Exclude closed items**  - The Analytics service stores all work item history, including any revisions for a closed work item. As a result, in an Analytics view if you select a rolling period of 14 days your view will include the current revision for all work items that were closed before this period. To Exclude work items that were completed before a specific date,simply check the corresponding box under any of the options for history. This greatly decreases the amount of data loaded into Power BI and helps advanced calculations, like [time in state](../powerbi/create-timeinstate-report.md) to be much more performant. For Rolling period and Date range, the date work items will be excluded by is set by the start of the period. For Current only and All history, you need to provide that date. For example, the image below excludes all work times that were completed before Mon May 14.
 
  > [!div class="mx-imgBorder"]
- >![Exclude work itmes for a rolling period of 14 days](_img/editable-views/history-exclude.png)
+ >![Exclude work items for a rolling period of 14 days](_img/editable-views/history-exclude.png)
 
 #### Granularity
 

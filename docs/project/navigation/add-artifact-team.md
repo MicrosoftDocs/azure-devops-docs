@@ -58,7 +58,7 @@ From a **Work** page, you can add a work item from the menu of options as shown 
 
 To add other work tracking artifacts, see one of the following articles: 
 
-- To add a board, backlog, or sprint backlog, first [add a team](../../work/scale/multiple-teams.md) which will be associated with those artifaces 
+- To add a board, backlog, or sprint backlog, first [add a team](../../work/scale/multiple-teams.md) which will be associated with those artifacts 
 - [Add a delivery plan](../../work/scale/review-team-plans.md)
 - [Add a managed work item query](../../work/track/using-queries.md) 
 - [Add work items](../../work/work-items/view-add-work-items.md).
