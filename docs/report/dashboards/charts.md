@@ -98,7 +98,7 @@ Select your option from the chart's context menu.
 
 ![Chart context menu, add to a team dashboard](_img/pin-chart-to-a-dashboard.png)
 
-To add a chart to your team's home page, you must be a [team administrator](../../work/scale/add-team-administrator.md). You can only add charts defined for shared queries.
+To add a chart to your team's home page, you must be a [team administrator](../../organizations/settings/add-team-administrator.md). You can only add charts defined for shared queries.
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
  
@@ -119,7 +119,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 2. Click ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify a dashboard, and then click ![add a widget icon](_img/add-widget-icon.png) to access the widget catalog.  
 
-	If you don't see these icons, then you need to be added as a [team administrator](../../work/scale/add-team-administrator.md) or a member of the Project Administrators group. 
+	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or a member of the Project Administrators group. 
 
 3. Choose the Chart for work items widget and then click Add. 
 
@@ -201,7 +201,7 @@ Query-based charts generate data from the work item tracking data store and ther
  
 ::: moniker-end
 
-[add-a-team]: ../../work/scale/multiple-teams.md
-[team-assets]: ../../work/scale/manage-team-assets.md
-[add-team-members]: ../../work/scale/multiple-teams.md#add-team-members
-[add-team-admin]: ../../work/scale/add-team-administrator.md
+[add-a-team]: ../../organizations/settings/add-teams.md
+[team-assets]: ../../organizations/settings/configure-team-settings.md
+[add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
+[add-team-admin]: ../../organizations/settings/add-team-administrator.md

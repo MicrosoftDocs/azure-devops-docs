@@ -151,7 +151,7 @@ Set an inherited process as the default to have it pre-selected for any addition
 
 To set a process as the default, open the &hellip; context menu for the inherited process and choose **Set as default process**. Note that this option is not available with any of the three system processes. 
 
-Account owners and Project Collection Administrators can add projects from the admin **Overview** page or the [account My Projects page](../../../project/navigation/work-across-projects.md). 
+VSTS owners and Project Collection Administrators can [add projects](../../projects/create-project.md) from the **Projects** page. 
 
 ## Try this next
 > [!div class="nextstepaction"]
@@ -169,7 +169,7 @@ Account owners and Project Collection Administrators can add projects from the a
 <a id="process-rest-api">  </a>
 ### Programmatically work with processes 
 
-You can get, create, update, and delete processes defined for an account using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
+You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
 
 
 

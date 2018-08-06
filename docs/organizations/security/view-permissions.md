@@ -1,7 +1,7 @@
 ---
-title: View permissions 
+title: View permissions for yourself or others
 titleSuffix: VSTS & TFS 
-description: Steps for finding what permissions you or your team members have, including project-level, collection-level, and object-level perms
+description: Steps for finding what permissions you or your team members have, including project-level, collection-level, and object-level permissions and security
 ms.assetid:  
 ms.prod: devops
 ms.technology: devops-security
@@ -9,55 +9,116 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
+ms.date: 07/27/2018
 ---
-# Quickstart: View permissions for yourself or others
+
+
+# View permissions for yourself or others
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 You can view your permissions or those defined for another which have been set in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). That way, if you don't have the permission to access a feature or function, you can request it from the right resource.
 
-Permissions are set at the collection, team project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
+Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
 ## Prerequisites
 
-* You must have a team project to connect to. If you don't have a team project yet, create one in [VSTS](../../user-guide/sign-up-invite-teammates.md) or set one up in an [on-premises TFS](../projects/create-project.md).
+* You must have a team project to connect to. If you don't have a team project yet, [create one](../projects/create-project.md).
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
 
 > [!NOTE]
-> This topic shows how to view permissions assigned to a user as the project-level. However, the steps are similar whether you work from the Security dialog of an object or at the account/collection level.
+> This article shows how to view permissions assigned to a user as the project-level. However, the steps are similar whether you work from the Security dialog of an object or at the organization or collection-level.
 
 ## View project-level permissions
 
-1. Open the admin context from the user/team project context. Click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"  
+
+0. Choose **Project Settings** and then **Security**.
+
+	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox)
 
 2. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that begin with the characters you type.  
 
-	<img src="_img/view-permissions-search-user-name.png" alt="Find a user account name" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]
+	> ![Find a user or group name](_img/view-permissions/search-user-name-vert-nav.png)  
 
-3. Click the name you want. The project-level permissions you have set are based on the groups you belong to or those specifically set for your account.      
+3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or those specifically set for your account.      
 
-	<img src="_img/view-permissions-project-level.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 1px solid #C3C3C3;" />   
+	> [!div class="mx-imgBorder"]
+	> ![Project Administrators Group, Members tab](_img/view-permissions/project-level-user-permissions-vsts.png)  
 
-4. Click **Member of** to see which security groups the user belongs to.  
+4. Choose **Member of** to see which security groups the user belongs to.  
 
-	Here we see that the user account, Jamal Hartnett, belongs to several teams as well as the Project Collection Administrators group. 
+	Here we see that *Jamal Hartnett* belongs to several teams as well as the Project Collection Administrators group. 
 
-	<img src="_img/view-permissions-member-of.png" alt="Web portal, Security tab, User name, Members tab" style="border: 1px solid #C3C3C3;" />    
+	> [!div class="mx-imgBorder"]
+	> ![Security tab, User name, Members tab](_img/view-permissions/project-level-member-of-permissions-vsts.png)  
+
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+
+# [Previous navigation](#tab/previous-nav)
+
+1. Open **Project Settings**. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and choose **Security**. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Open Project Settings>Security, previous nav](_img/view-permissions/open-project-level-security-horz.png)
+
+2. Begin typing the name into the *Filter users and groups* box. The system will automatically show the names that begin with the characters you type.  
+
+	::: moniker range="vsts"  
+	> [!div class="mx-imgBorder"]
+	> ![Project level permissions for a user, VSTS](_img/view-permissions/search-user-name-vert-nav.png)  
+	::: moniker-end  
+	::: moniker range=">= tfs-2013  <= tfs-2018"  
+	![Find a user account name](_img/view-permissions/search-user-name.png)
+	::: moniker-end  
+
+3. Choose the name you want. The project-level permissions you have set are based on the groups you belong to or those specifically set for your account.      
+
+	::: moniker range="vsts"  
+	> [!div class="mx-imgBorder"]
+	> ![Project level permissions for a user, VSTS](_img/view-permissions/project-level-user-permissions-vsts.png)  
+	::: moniker-end  
+	::: moniker range=">= tfs-2013  <= tfs-2018"  
+	> [!div class="mx-imgBorder"]
+	> ![Project level permissions for a user, TFS](_img/view-permissions/project-level-user-permissions-tfs.png)  
+	::: moniker-end  
+
+	For a description of each permissions, see [Permissions and groups reference](permissions.md#project-level). 
+
+4. Choose **Member of** to see which security groups the user belongs to.  
+
+	Here we see that *Jamal Hartnett* belongs to several teams as well as the Project Collection Administrators group. 
+
+	![Web portal, Security tab, User name, Members of](_img/view-permissions/view-permissions-member-of.png)    
+
+	For a description of each group, see [Permissions and groups reference](permissions.md#project-level-groups). 
+
+---
 
 ## View collection-level permissions 
 
-1. Open the admin context from the account context. Click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
+1. Open the admin context for the organization or collection. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and then **Security**. 
 
 2.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
 
 ## View object-level permissions 
 
-There are a number of objects that maintain permissions. You access them from the context menu of the object. 
+You can define the security or permissions for a number of objects. You access them from the context menu of the object. 
 
-From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see these topics: 
+From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see the following articles: 
 
 > [!div class="mx-tdBreakAll"]  
 > |Wiki & Dashboard permissions | DevOps permissions  |Agile/Work tracking permissions |  

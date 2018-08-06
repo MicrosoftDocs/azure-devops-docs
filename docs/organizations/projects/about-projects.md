@@ -39,7 +39,7 @@ When you create your project, a team of the same name is automatically created. 
 </tbody>
 </table>
 
-The collection-project-team structure provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level. As your organization grows, your tools can grow to support a [culture of team autonomy as well as organizational alignment](../../work/scale/agile-culture.md).  
+The collection-project-team structure provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level. As your organization grows, your tools can grow to support a [culture of team autonomy as well as organizational alignment](../../work/scale/agile-culture.md). 
 
 
 <a id="scale">  </a>
@@ -51,21 +51,35 @@ The collection-project-team structure provides teams a high-level of autonomy to
 
 When you connect to VSTS or TFS, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. 
 
+::: moniker range="vsts"
 You can scale your organization in the following ways:
 
-- Within an organization or project collection, you can add projects  
-- Within source control, you can add repositories and branches 
-- To support continuous integration and deployment, you can add agents, agent pools, and deployment pools 
-- To manage a large number of users, you can manage access through Azure Active Directory (cloud) or Active Directory (on-premises) 
+- To support different business units, you can add projects
 - Within a project, you can add teams 
+- Add repositories and branches 
+- To support continuous integration and deployment, you can add agents, agent pools, and deployment pools 
+- To manage a large number of users, you can manage access through Azure Active Directory 
+::: moniker-end
 
+
+::: moniker range=">= tfs-2013 <= tfs-2018"
+You can scale your on-premises TFS deployment in the following ways:
+
+- To increase performance, you can add server instances
+- To support different business units, you can add project collections and projects
+- Within a project, you can add teams 
+- Add repositories and branches 
+- To support continuous integration and deployment, you can add agents, agent pools, and deployment pools 
+- To manage a large number of users, you can manage access through Active Directory
+::: moniker-end
 
 Both VSTS and TFS are enterprise-ready platforms that support teams of any size, from tens to thousands. VSTS, our cloud service, provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
 
-## How to view projects defined for your organization 
+## How to view projects defined for your organization or collection 
 You can view the projects defined for your organization by opening the **Projects** page. 
 
-[!INCLUDE [temp](../../_shared/navigation.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+
 
 # [New navigation](#tab/new-nav)
 
@@ -81,7 +95,7 @@ You can view the projects defined for your organization by opening the **Project
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-**Vertical navigation** isn't supported on TFS at this time. Choose the **Horizontal navigation** tab for guidance.
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
@@ -159,7 +173,7 @@ When you add a project, look at using the following elements to structure it to 
 - [Create a Git repository](../../repos/git/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../repos/tfvc/branch-folders-files.md) for each sub-project.  
 - [Define area paths](../settings/set-area-paths.md) to support different sub-projects, products, features, or teams. 
 - [Define iteration paths (aka sprints)](../settings/set-iteration-paths-sprints.md) that can be shared across teams.
-- [Add a team](../../work/scale/multiple-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. 
+- [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. See also, [Portfolio management](../../work/scale/portfolio-management.md).
 - [Grant or restrict access to select features and functions](../security/restrict-access.md) using custom security groups. 
 - [Create query folders](../../work/track/organize-queries.md) to organize queries for teams or product areas into folders. 
 - [Define or modify notifications](../../notifications/index.md) set at the project level. 
@@ -189,7 +203,7 @@ You can configure and customize most services and applications to support your b
 ::: moniker-end
 
 
-## Scaling Agile tools across the enterprise
+## When to add a team, scaling Agile tools across the enterprise
 
 As your organization grows, you'll want to add teams to provide them the Agile tools that each team can configure to meet their workflow. To learn more, , see the following articles.  
 
@@ -218,9 +232,11 @@ In addition to connecting through a web browser, you can connect to a team proje
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 
+See also, [Compatibility with TFS versions](/tfs/server/compatibility).
 
 ## Related articles
 
+- [Navigation basics](../../project/navigation/index.md) 
 - [What do I get with a project?](../../user-guide/services.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
 - [Understand differences between VSTS and TFS](../../user-guide/about-vsts-tfs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
 

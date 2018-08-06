@@ -59,7 +59,7 @@ And with plans, you can monitor progress, deliverables, and dependencies across 
 You access your backlogs and boards from a web portal. When you work from the Stories (Agile) or Backlog items (Scrum) pages, you have access to the product backlog and Kanban board. When you work from a sprint page, you have access to the sprint backlog and task board. For an overview of working in Scrum or Kanban, see [Get started with Agile project management](overview.md).
 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
@@ -294,7 +294,7 @@ The following table indicates those elements or tasks associated with each type 
 1. Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and task boards. For details, see [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md).  
 2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](../../organizations/settings/about-teams-and-settings.md).  
 3. The **In progress items Show/Hide** control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](../scrum/forecast.md).  
-4. When you [add a team](../scale/multiple-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Configure team settings](../scale/manage-team-assets.md) for details.  
+4. When you [add a team](../../organizations/settings/add-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Configure team settings](../../organizations/settings/configure-team-settings.md) for details.  
 5. Duration refers to how you use your backlog or board to plan and track work over time. Once you change the State of a work item to done or completed, it no longer appears on a portfolio or project backlog. As you complete each sprint, the system maintains a history of your activity. You can review past sprints and sprint burndown charts by choosing the sprint listed under the Past section. For more information, see [Sprint burndown](../scrum/sprint-burndown.md#current-and-past-sprint-burndown-charts).
 
 
@@ -344,7 +344,7 @@ Now that you understand how backlogs and boards work, [get started using them to
 ::: moniker-end
 
 A few things to keep in mind...
-- Every team owns their own backlog, to add a new set of backlogs and boards, you [add a new team](../scale/multiple-teams.md) 
+- Every team owns their own backlog, to add a new set of backlogs and boards, you [add a new team](../../organizations/settings/add-teams.md) 
 - To have work performed by several teams roll up to a portfolio backlog, you'll want to [setup the team hierarchy](../scale/portfolio-management.md)   
 - Every backlog has a corresponding [Kanban board](../kanban/kanban-basics.md) you can use to track progress and update status  
 - Each team can control how [bugs show up on their backlogs](../customize/show-bugs-on-backlog.md)  

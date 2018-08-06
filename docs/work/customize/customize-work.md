@@ -174,7 +174,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 > [!div class="mx-tdBreakAll"]  
 > |Manage access   |Permissions  |Shared resources  |
 > |-------------|----------|---------|
-> |- [Add team members (VSTS)](../../organizations/accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../scale/multiple-teams.md#add-team-members)<br/>- [Stakeholder access](../../organizations/security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../organizations/security/change-access-levels.md) |- [Area path permissions](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../../organizations/security/set-permissions-access-work-tracking.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Tagging permissions](../../organizations/security/permissions.md#tags)<br/>- [Test permissions](../../organizations/security/permissions.md#project_test)| - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](../../organizations/settings/set-area-paths.md)<br/>- [Iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
+> |- [Add team members (VSTS)](../../organizations/accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../../organizations/settings/add-teams.md#add-team-members)<br/>- [Stakeholder access](../../organizations/security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../../organizations/security/change-access-levels.md) |- [Area path permissions](../../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../../organizations/security/set-permissions-access-work-tracking.md#process-permissions)<br/>- [Work item query and folder permissions](../track/set-query-permissions.md)<br/>- [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Tagging permissions](../../organizations/security/permissions.md#tags)<br/>- [Test permissions](../../organizations/security/permissions.md#project_test)| - [Alerts](../track/alerts-and-notifications.md)<br/>- [Area paths](../../organizations/settings/set-area-paths.md)<br/>- [Iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Queries](../track/using-queries.md)<br/>- [Tags](../track/add-tags-to-work-items.md) | 
   
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="test-experience"></a>
@@ -245,8 +245,8 @@ Here are a few options available to you:
 
  
 
-[add-team-members]: ../scale/multiple-teams.md#add-team-members
-[add-team-admin]: ../scale/add-team-administrator.md
+[add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
+[add-team-admin]: ../../organizations/settings/add-team-administrator.md
 
  
  

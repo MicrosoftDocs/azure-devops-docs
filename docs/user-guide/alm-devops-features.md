@@ -71,7 +71,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add users to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
+<p>To share and contribute to your project, add users to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../organizations/settings/add-teams.md#add-team-members).</p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
@@ -96,7 +96,7 @@ Use features supported by these familiar clients to manage your project and illu
 - [TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)  
 - [Dashboards](../report/dashboard-permissions.md)   
 - [Queries](../work/track/set-query-permissions.md)   
-- [Team admin role](../work/scale/team-administrator-permissions.md)  
+- [Team admin role](../organizations/settings/team-administrator-permissions.md)  
 - [Test](../organizations/security/set-project-collection-level-permissions.md)  
 - [Work item tags](../organizations/security/permissions.md#tags)  
 
@@ -586,7 +586,7 @@ Use features supported by these familiar clients to manage your project and illu
 <tr valign="top">
 <td width="33%">
 <p><b>Add another team</b></p>
-<p>[Add and structure teams](../work/scale/multiple-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams. </p>
+<p>[Add and structure teams](../organizations/settings/add-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams. </p>
 ![Multiple teams](_img/features/alm-feature-multiple-teams.png)  
 <br/>
 <p><b>Set team defaults</b></p>
@@ -2105,7 +2105,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Change team settings</b></p>
-<p>Customize features to meet your team needs by [configuring your team assets](../work/scale/manage-team-assets.md).</p>
+<p>Customize features to meet your team needs by [configuring your team assets](../organizations/settings/configure-team-settings.md).</p>
 ![Switch team context](_img/features/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
@@ -2172,7 +2172,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../organizations/settings/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../organizations/settings/add-teams.md), [set team defaults](../organizations/settings/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
@@ -2336,7 +2336,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team admin role and permissions</b></p>
-<p>Add users as team administrators to enable them to [configure team settings and manage team assets](../work/scale/manage-team-assets.md).</p>
+<p>Add users as team administrators to enable them to [configure team settings and manage team assets](../organizations/settings/configure-team-settings.md).</p>
 
 
 <p><b>Manage administrative permissions </b></p>
@@ -2594,7 +2594,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 
-
 <p><b>What is a team project?</b></p>
 <p>A [team project](../organizations/projects/create-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
 
@@ -2623,8 +2622,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 
-<p><b>View your work across teams and team projects (VSTS)</b></p>
-<p>From your [Project page](../project/navigation/work-across-projects.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization collection. </p>
+<p><b>View your work across teams and team projects</b></p>
+<p>From your [Project page](../project/navigation/work-across-projects.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization or collection. </p>
 
 <p><b>Customize a team project (TFS) </b></p>
 <p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../work/customize/customize-work.md).  </p>
@@ -2654,20 +2653,20 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a team?</b></p>
-<p>A team is an organizing unit used to support a number of [team-configurable tools and assets](../work/scale/manage-team-assets.md) to plan and manage work and facilitate collaboration.  </p>
+<p>A team is an organizing unit used to support a number of [team-configurable tools](../organizations/settings/configure-team-settings.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add organizations--[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add organizations-[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../organizations/security/add-users-team-project.md)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
 
 <p><b>Add a team</b></p>
-<p>As your organization grows, consider moving from your [default team of one to two or more teams](../work/scale/multiple-teams.md#add-team-members) to support feature-focused groups within your org.</p>
+<p>As your organization grows, consider moving from your [default team of one to two or more teams](../organizations/settings/add-teams.md) to support feature-focused groups within your org.</p>
 
 
 <p><b>Add a team admin</b></p>
-<p>Add users to the team admin role to enable them to [configure team settings](../work/scale/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
+<p>Add users to the team admin role to enable them to [configure team settings](../organizations/settings/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
 
 
 <p><b>Support stakeholders</b></p>
@@ -2700,7 +2699,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Manage team assets</b></p>
-<p>Configure, customize, and manage all [team-related activities](../work/scale/manage-team-assets.md)</p>
+<p>Configure, customize, and manage all [team-related activities](../organizations/settings/configure-team-settings.md)</p>
 
 
 

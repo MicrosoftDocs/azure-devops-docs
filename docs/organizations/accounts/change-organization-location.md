@@ -26,7 +26,7 @@ For information on region availability, see [Products available by region](https
 
 To find the region where your organization is located:
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

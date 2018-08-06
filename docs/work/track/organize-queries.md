@@ -26,7 +26,7 @@ If you're not a member of the Project Administrators group, [get added](../../or
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 
@@ -81,7 +81,7 @@ To add a query to the home page or a dashboard, open the ![](../_img/icons/actio
 
 Share queries with your team by adding them to a folder under the **Shared Queries** container.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 
-You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../scale/manage-team-assets.md). 
+You can only add shared queries to dashboards or as team favorites, and only if you have [team administrator or project administrator permissions](../../organizations/settings/configure-team-settings.md). 
 
 ::: moniker-end
 

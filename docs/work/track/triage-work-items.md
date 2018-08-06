@@ -36,7 +36,7 @@ In this topic you'll learn how to:
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 

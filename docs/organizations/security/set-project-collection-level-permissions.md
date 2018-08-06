@@ -142,6 +142,6 @@ If your TFS deployment is integrated with a SharePoint product or SQL Server Rep
 - [About permissions and groups](about-permissions.md)
 - [Permissions lookup reference](permissions-lookup-guide.md)
 - [Permissions and groups reference](permissions.md)
-- [Team administrator permissions](../../work/scale/team-administrator-permissions.md)
+- [Team administrator permissions](../../organizations/settings/team-administrator-permissions.md)
 
 

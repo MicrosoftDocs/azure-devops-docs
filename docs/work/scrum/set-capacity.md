@@ -39,7 +39,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ## Open a Sprint backlog for a team 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
@@ -103,7 +103,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 
 ::: moniker range="vsts"
 
-0. If you don't see your team members listed, add them. Choose the ![](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../scale/multiple-teams.md#add-team-members).  
+0. If you don't see your team members listed, add them. Choose the ![](../../_img/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members.png) 
@@ -138,7 +138,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2015"
-0. If you don't see your team members listed, add them. Choose the ![](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../scale/multiple-teams.md#add-team-members).  
+0. If you don't see your team members listed, add them. Choose the ![](_img/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](_img/capacity/add-team-members-standard.png)  
@@ -315,7 +315,7 @@ Setting capacity and [estimating remaining work for each task](assign-work-sprin
 - [Sprint burndown](../scrum/sprint-burndown.md)
 - [Velocity](../../report/dashboards/velocity-chart-data-store.md)    
 - [Forecasting](../scrum/forecast.md)    
-- [Configure team settings](../scale/manage-team-assets.md)
+- [Configure team settings](../../organizations/settings/configure-team-settings.md)
 
 
 

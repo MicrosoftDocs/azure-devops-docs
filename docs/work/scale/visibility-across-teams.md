@@ -24,7 +24,7 @@ You have three main ways to track progress across several teams.
 - Each management team can use their Agile tools, and in particular [portfolio backlogs](#portfolio-backlogs), to gain visibility of the feature teams defined under their area path
 - Management teams can create [dashboards](#dashboards) that monitor status, progress, and trends across several teams.
 
-For an overview of all team tools, see [Configure team settings](manage-team-assets.md).
+For an overview of all team tools, see [Configure team settings](../../organizations/settings/configure-team-settings.md).
 
 <a id="plans">  </a>
 ## Delivery Plans support a view of team backlogs on a calendar timeline
@@ -72,7 +72,7 @@ And, feature teams can turn on Show parents on their backlogs to see context and
 > [!TIP]
 >When estimating stories or product backlog items, start with one story point per person per day. Feature teams can later calibrate and adjust those estimates as needed. For example, the [velocity](../../report/dashboards/velocity-chart-data-store.md) of a seasoned team will be higher than a new team. The size of the work stays the same, but a seasoned team can just deliver faster.
 
-To learn more about this configuration, see [Portfolio management](portfolio-management.md), [Multiple teams](multiple-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
+To learn more about this configuration, see [Portfolio management](portfolio-management.md), [Add teams](../../organizations/settings/add-teams.md), and [Organize your backlog](../backlogs/organize-backlog.md).
 
 
 
@@ -145,9 +145,9 @@ Here are some additional topics that address working with multiple teams:
 
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)
 - [Review team plans](review-team-plans.md)
-- [Multiple teams](multiple-teams.md)
+- [Add teams](../../organizations/settings/add-teams.md)
 - [Portfolio management](portfolio-management.md)
-- [Configure team settings](manage-team-assets.md)
+- [Configure team settings](../../organizations/settings/configure-team-settings.md)
 - [Practices that scale](practices-that-scale.md)
 
 

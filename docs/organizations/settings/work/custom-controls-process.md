@@ -43,7 +43,7 @@ To add extensions or edit a process, you must be a member of the Project Collect
 
 From the **Settings** context, **Extensions** hub, you can view the extensions that are already installed. You may need to click ![Refresh](_img/process/custom-controls-refresh_extensions.png) to refresh the page to show newly installed extensions.  
 
-<img src="_img/process/custom-controls-extensions-admin-page-ts.png" alt="Account settings, Extensions page, VSTS" style="border: 1px solid #C3C3C3;" />  
+![Organization settings, Extensions page](_img/process/custom-controls-extensions-admin-page-ts.png)   
 
 To learn more about extensions, see [Install free extensions](../../../marketplace/install-vsts-extension.md).
 
@@ -59,7 +59,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 0. Select the extension you want to add. Here we choose the Work item checklist.
 
-0. Select the organization/account you want to add it to and choose **Install**.  
+0. Select the organization you want to add it to and choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Visual Studio Markeplace, install extension](_img/process/cprocess-install-extension.png) 
