@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 06/21/2018
+ms.date: 07/27/2018
 ---
 
 # Define iteration paths (aka sprints) 
@@ -24,10 +24,10 @@ You add iteration paths under this root. To understand how the system uses area 
 ## Prerequisites
 <a name="permissions"></a>
 ::: moniker range="vsts"
-* You must be a member of a project. If you don't have a project yet, create one in [VSTS](../../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../../accounts/add-account-users-assign-access-levels.md). 
+* You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-* You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../security/add-users-team-project.md). 
+* You must be a member of a project. If you don't have a project yet, [create one](../projects/create-project.md).
 ::: moniker-end
 * To create or modify areas or iterations, you must either be a member of the **Project Administrators** group, or your **Create and order child nodes**, **Delete this node**, and **Edit this node** permissions must be set to **Allow** for the area or iteration node that you want to modify.
 
@@ -39,79 +39,67 @@ For naming restrictions on area and iteration paths, see [About areas and iterat
 <a id="open-admin-context">  </a>
 
 
-## Open project settings   
 
-You define both areas and iterations from the **Work** hub of the project settings context.    
+## Open Project Settings, Project configuration    
 
-<!---
+From the web portal, open **Project Settings**.
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+
 # [New navigation](#tab/new-nav)
+
 ::: moniker range="vsts"  
-You define both areas and iterations from the **Work>Project configuration** hub of the project **Settings** hub. 
+You define both areas and iterations for a project from the **Project Settings>Work>Project configuration**. 
 
-0. To open **Settings**, from the web portal, choose the ![](../../_img/icons/settings-icon-vert.png) **Settings** icon (located toward the bottom of the left-pane).  
-
-0. Under **Work**, choose **Project Configuration**. 
+0. Choose (1) **Project Settings**, expand **Work** if needed, and choose (2) **Project configuration** and then (3) **Iterations**.   
 
 	> [!div class="mx-imgBorder"]  
-	> ![Settings hub, Open Work>Project Configuration](_img/areas/open-work-project-configuration.png)   
-
-0. Choose **Iterations**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Settings hub, Open Work>Project Configuration>Iterations page](_img/iterations/choose-iterations.png)   
+	> ![Project Settings>Work>Project Configuration](_img/iterations/open-work-project-config-iterations-vert.png)   
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
-Vertical navigation isn't a supported feature for TFS at this time. 
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]   
 ::: moniker-end
 
-# [Previous navigation](#tab/previous-nav)
--->
+# [Previous navigation](#tab/previous-nav) 
 
+You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![](../../_img/icons/gear-icon.png) gear icon. 
+<a id="admin-intro-team-services" /> 
 ::: moniker range=">= tfs-2017"  
 From the web portal, open **Project settings**. 
 
 <a id="admin-intro-team-services" /> 
 
 1. From the web portal for the project context, choose the ![](../../_img/icons/gear-icon.png) gear icon..  
-	::: moniker range=">= tfs-2018"
-	<img src="_img/areas/modify-areas-its-open-admin-context-ts.png" alt="Web portal, VSTS, Open Admin context, project level" style="border: 1px solid #C3C3C3;" />  
 
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, VSTS, Open Admin context, project level](_img/areas/modify-areas-its-open-admin-context-ts.png)  
+	
 	If you're currently working from a team context, then hover over the ![gear icon](../../_img/icons/gear_icon.png) and choose **Project settings**.  
 
-	<img src="_img/areas/modify-areas-its-choose-project-settings-admin-context-ts.png" alt="Default Collection Overview, Projects reference processes" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]
+	> ![Open Project Settings, horz nav](../../_shared/_img/settings/open-project-settings-horz.png)
 	::: moniker-end
-	::: moniker range="tfs-2017"
-	<a id="admin-intro-tfs-2017-1" /> 
-	**TFS 2017.1**  
-	<img src="_img/areas/modify-areas-its-open-admin-context-tfs-2017-1.png" alt="Web portal, TFS 2017.1, Open Admin context, project level" style="border: 1px solid #C3C3C3;" /> 
-	<a id="admin-intro-tfs-2017" /> 
-	**TFS 2017**  
-	<img src="_img/areas/modify-areas-its-choose-project-settings-admin-context-tfs-2017.png" alt="Web portal, TFS 2017, Open Admin context, project level" style="border: 1px solid #C3C3C3;" />
-	::: moniker-end
-2. Open the **Work** hub.   
+
+2. Choose **Work**.   
 
 ::: moniker-end 
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
 <a id="admin-intro-tfs-2015" />
+::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-1. From the web portal user context, choose the ![gear icon](../../_img/icons/gear_icon.png) gear Settings.   
+From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear icon to open project administration pages. Then, choose **Iterations**.  
 
-	<img src="../../_img/icons/ALM_OpenAdminContext.png" alt="Open the project administration page" style="border: 1px solid #C3C3C3;" /> 
+![Open the project administration page](../../_shared/_img/settings/open-project-settings-tfs-2015.png)
 
-2. Open the **Iterations** tab.  
-::: moniker-end  
+::: moniker-end
 
-
-
+---
 
 <a id="iterations"></a>  
 ## Add iterations and set iteration dates
 
-From the **Iterations** page, you can add iterations that teams can then select for their use. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Schedule sprints](../../work/scrum/define-sprints.md).  
+From **Iterations**, you can add iterations that teams can then select for their use. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../work/scrum/scrum-sprint-planning-tools.md).  
 
 ::: moniker range=">= tfs-2017"
 <a id="define-sprints-team-services">   </a>
@@ -142,7 +130,6 @@ For Scrum-based projects, you'll see the following set of sprints.
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
 <a id="tfs-2015-iteration-paths" />
-
 
 1. Open the **Iterations** tab for the project context. 
 

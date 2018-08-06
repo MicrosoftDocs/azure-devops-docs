@@ -37,7 +37,7 @@
   - name: "Manage permissions (Security)"
     href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json 
   - name: Configure team settings
-    href: ../scale/manage-team-assets.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json   
+    href: ../../organizations/settings/configure-team-settings.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json   
     items:
     - name: Set team defaults
       href: ../../organizations/settings/set-team-defaults.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json
@@ -352,9 +352,9 @@
   - name: Work items
     href: ../work-items/index.md
   - name: "Scale & Configure Teams"
-    href: ../../organizations/settings/index.md
-  - name: Account Management (VSTS)
-    href: ../../organizations/accounts/index.md
+    href: ../../organizations/settings/scale/index.md
+  - name: Project Management 
+    href: ../../organizations/projects/index.md
   - name: Marketplace extensions
     href: ../../marketplace/get-vsts-extensions.md
   - name: Extensibility and REST APIs

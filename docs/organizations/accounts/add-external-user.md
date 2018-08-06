@@ -32,7 +32,7 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS organization user w
 
 ## Invite external users to your VSTS organization
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

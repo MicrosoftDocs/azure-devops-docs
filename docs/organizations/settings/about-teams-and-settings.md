@@ -7,8 +7,10 @@ ms.prod: devops
 ms.assetid: 24C97BED-88F4-4D91-98D1-4AC0B39AB7D7
 ms.manager: douge
 ms.author: kaelli
-ms.topic: overview
-ms.date: 02/14/2018 
+author: KathrynEE
+ms.topic: conceptual
+monikerRange: '>= tfs-2013'
+ms.date: 07/27/2018
 ---
 
 # About teams and Agile tools
@@ -151,7 +153,7 @@ In addition, several tools reference the team's default iteration and selected i
 
 ## Structure hierarchical teams or scale agility within an enterprise 
 
-Although there is no concept of sub-teams, you can create teams whose area paths are under another team, which effectively creates a hierarchy of teams. To learn more, see [Add another team](../../work/scale/multiple-teams.md).
+Although there is no concept of sub-teams, you can create teams whose area paths are under another team, which effectively creates a hierarchy of teams. To learn more, see [Add another team](../../organizations/settings/add-teams.md).
 
 Also, these topics can walk you through the steps for configuring teams, area paths, and iterations to support portfolio management or enterprise organizations: 
 - [Portfolio management](../../work/scale/portfolio-management.md)
@@ -160,7 +162,7 @@ Also, these topics can walk you through the steps for configuring teams, area pa
 <a id="team-group"> </a>
 ## Team groups 
 
-When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Team Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
+When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
 
 <img src="../../work/scale/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
 
@@ -172,23 +174,31 @@ You can also use the **@mention** control within discussions and pull requests t
 
 Can a user account belong to more than one team?  
 
-Yes. When you add user accounts to a team project, you can add them as members of the team project, or you can add them to one or more teams added to the team project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](../../work/scrum/set-capacity.md). 
+Yes. When you add user accounts to a project, you can add them as members of the project, or you can add them to one or more teams added to the project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](../../work/scrum/set-capacity.md). 
+
+## Team member permissions 
+
+By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can collaborate with other team members and  [collaborate on a Git project](../../git/gitquickstart.md) or  [check in work to the team's code base](../../tfvc/check-your-work-team-codebase.md). 
+
+![Default permissions assigned to team contributors](_img/add-team/default-permissions-assigned-to-team-contributors.png)  
+
+You can choose to limit access to select features by making a user a [Stakeholder](../security/get-started-stakeholder.md) or limiting their access to read-only. For an overview of default permissions and access assignments set for work tracking features and built-in groups, see [Permissions and access for work tracking](../security/permissions-access-work-tracking.md). 
 
 
 ## Summary 
-- Every team owns their own backlog, to create a new backlog you [create a new team](../../work/scale/multiple-teams.md) 
+- Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md) 
 - Every backlog has a corresponding [Kanban board](../../work/kanban/kanban-basics.md) you can use to track progress and update status  
 - The [team's specified area and iteration paths](../../organizations/settings/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](../../work/customize/show-bugs-on-backlog.md)   
-- For an overview of all team assets and how to configure them, see [Configure team settings](../../work/scale/manage-team-assets.md)   
+- For an overview of all team assets and how to configure them, see [Configure team settings](configure-team-settings.md)   
 - To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../work/scale/portfolio-management.md) 
 - To add fields or work item types, see [Customize your work tracking experience](../../work/customize/customize-work.md).
 
 ## Related notes 
 
-- [Add another team](../../work/scale/multiple-teams.md)  
+- [Add another team](../../organizations/settings/add-teams.md)  
 - [Set team defaults](../../organizations/settings/set-team-defaults.md)  
-- [Configure team settings ](../../work/scale/manage-team-assets.md)      
+- [Configure team settings ](configure-team-settings.md)      
 - [Work across projects ](../../project/navigation/work-across-projects.md)  
 
 

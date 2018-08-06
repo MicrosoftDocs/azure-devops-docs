@@ -24,7 +24,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../../report/analytics/analytics-security.md)<br/>- [Analytics views](../../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to an account](../accounts/add-team-members-vs.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Analytics service](../../report/analytics/analytics-security.md)<br/>- [Analytics views](../../report/analytics/analytics-security.md)<br/>- [Customize process](set-permissions-access-work-tracking.md#process-permissions) |    
 
 ::: moniker-end
 
@@ -33,7 +33,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 > [!div class="mx-tdBreakAll"]  
 > |Users and groups  |DevOps permissions  |Agile/Work tracking permissions  |  
 > |-------------|----------|---------|   
-> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../work/scale/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SharePoint (TFS)](set-sharepoint-permissions.md)<br/>- [SQL Server Reports (TFS)](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions) |    
+> |- [Add users to an administrator role](set-project-collection-level-permissions.md)<br/>- [Add users to a team project or a team](add-users-team-project.md) <br/>- [Make a user a team admin](../../organizations/settings/add-team-administrator.md)<br/><br/>**Miscellaneous**<hr/>- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [SharePoint (TFS)](set-sharepoint-permissions.md)<br/>- [SQL Server Reports (TFS)](../../report/admin/grant-permissions-to-reports.md) |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repositories](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Releases](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md)<br/>- [Task groups](../../pipelines/policies/set-permissions.md#task-group)<br/>- [Variable groups](../../pipelines/policies/set-permissions.md#variable-group)<br/>- [Role-based resources](../../pipelines/policies/set-permissions.md) | - [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../work/track/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)<br/> - [Dashboard permissions](../../report/dashboards/dashboard-permissions.md#set-permissions) |    
 
 
 ::: moniker-end
@@ -388,7 +388,7 @@ For each team project that you create, the system creates the followings team pr
 			Any new teams you create will also have a group created for them and added to the Contributors group.
 			<blockquote>
 				You can grant permissions to administer team assets by
-				[adding members to the team administrator role](../../work/scale/add-team-administrator.md).
+				[adding members to the team administrator role](../../organizations/settings/add-team-administrator.md).
 			</blockquote>
 		</td>
 		<td>Add members of the team to this group.</td>
@@ -412,7 +412,7 @@ Show bugs on backlogs and boards
 
 ## Team administrator role
 
-For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing  team assets. To learn more, see [About security roles, Team administrator role](about-security-roles.md#team-administrator-role). To add a user as a team administrator, see [Add a team administrator](../../work/scale/add-team-administrator.md).
+For each team that you add, you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing  team assets. To learn more, see [About security roles, Team administrator role](about-security-roles.md#team-administrator-role). To add a user as a team administrator, see [Add a team administrator](../../organizations/settings/add-team-administrator.md).
 
 > [!NOTE]   
 > Project Administrators can manage all team admin areas for all teams. 
@@ -1409,7 +1409,7 @@ Members of the Project Administrators group are automatically granted permission
 > Multiple teams may contribute to a team project.
 > When that's the case, you can set up teams that are associated with an area.
 > Permissions for the team's work items are assigned by assigning permissions to the area.
-> There are other [team settings](../../work/scale/manage-team-assets.md)
+> There are other [team settings](../settings/configure-team-settings.md)
 > that configure the team's agile planning tools.
 
 <img src="_img/permissions/area-path-permissions-vsts.png" style="border: 1px solid #C3C3C3;" />
@@ -1517,7 +1517,7 @@ Iteration path permissions grant or restrict access to create and manage iterati
 Multiple teams may contribute to a team project. 
 When that's the case, you can set up teams that are associated with an area. 
 Permissions for the team's work items are assigned by assigning permissions to the area. 
-There are other [team settings](../../work/scale/manage-team-assets.md) 
+There are other [team settings](../settings/configure-team-settings.md) 
 that configure the team's agile planning tools.
 To learn more, see [Set permissions to restrict access to work items](../../organizations/security/set-permissions-access-work-tracking.md).
 
@@ -2005,6 +2005,6 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 - [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)   
 - [Add users to a team project](../../organizations/security/add-users-team-project.md) (TFS)   
 - [Add users to an administrator role](/tfs/server/admin/add-administrator-tfs)   
-- [Make a user a team admin](../../work/scale/manage-team-assets.md)  
+- [Make a user a team admin](../settings/configure-team-settings.md)  
 - [Change groups and permissions with TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)
 

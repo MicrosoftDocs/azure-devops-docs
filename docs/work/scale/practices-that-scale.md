@@ -116,7 +116,7 @@ As the amount of software, features, and complexity increase, you'll need to ado
 In addition to the above practices, you'll find additional guidance around scaling your Agile tools in the following topics: 
 
 - [Agile culture](agile-culture.md)
-- [Multiple teams](multiple-teams.md) 
+- [Add teams](../../organizations/settings/add-teams.md) 
 - [Portfolio management](portfolio-management.md) 
 - [Visibility across teams](visibility-across-teams.md)  
 - [Scaled Agile Framework](scaled-/azure/devops/agile/scale-agile-large-teams
