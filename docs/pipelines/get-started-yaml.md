@@ -29,7 +29,7 @@ Choose the sample application for the language of your choice from one of the fo
 
 | Programming language | Repository with a sample application |
 |----------------------|----------------------------|
-| .NET Core | `https://github.com/adventworks/dotnetcore-sample` |
+| .NET Core | `https://github.com/MicrosoftDocs/pipelines-dotnet-core` |
 | Android | `https://github.com/adventworks/android-sample` |
 | Go | `https://github.com/adventworks/go-sample` |
 | Java | `https://github.com/adventworks/java-sample` |
