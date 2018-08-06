@@ -62,7 +62,7 @@ link to the organization page.
 
 Provide others access to your organization by adding their email address.
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

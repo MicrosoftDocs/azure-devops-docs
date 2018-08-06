@@ -41,8 +41,7 @@ Add, rename, and delete projects as you scale your organization.
 
 - [Create a project](create-project.md)
 - [Rename a project](rename-project.md)
-- [Delete a project](delete-project.md)
-- [Save project data](save-project-data.md)
+- [Change service visibility](../settings/set-services.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
 - [Connect to projects](connect-to-projects.md)
 
 ## Reference

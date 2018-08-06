@@ -50,11 +50,13 @@
     href: ../../extend/develop/public-project.md
 - name: Resources
   items:
-  - name: Git
+  - name: Git Repositories
     href: ../../repos/git/index.md
-  - name: Work items
+  - name: Work Items
     href: ../../work/work-items/index.md 
-  - name: Process customization
+  - name: Project Management
+    href: ../projects/index.md 
+  - name: Process Customization
     href: ../settings/work/customize-process.md 
   - name: VSTS data protection overview
     href: ../../articles/team-services-security-whitepaper.md 

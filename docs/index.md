@@ -10,7 +10,7 @@ ms.technology: vs-devops-overview
 ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
 ms.manager: douge 
 ms.author: kaelli 
-ms.date: 02/24/2018
+ms.date: 08/02/2018
 featureFlags:
 - clicktale 
 ---
@@ -253,6 +253,7 @@ featureFlags:
                                     </ul>
                                     <h3>Collaboration</h3>
                                     <ul>
+                                        <li><a class="barLink" href="/vsts/project/navigation/index">Navigation Basics</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/public/index">Public Projects</a></li>
                                         <li><a class="barLink" href="/vsts/notifications/index">Notifications</a></li>
                                         <li><a class="barLink" href="/vsts/project/wiki/index">READMEs &amp; Wikis</a></li>
@@ -266,10 +267,10 @@ featureFlags:
                                     <h3>Admin</h3>
                                     <ul>
                                         <li><a class="barLink" href="/vsts/organizations/accounts/index">Project Management</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/settings/index">Settings</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/security/index">Security and Identity</a></li>
-                                        <li><a class="barLink" href="/vsts/organizations/settings/index">Scale and Configure Teams</a></li>
+                                        <li><a class="barLink" href="/vsts/organizations/settings/scale/index">Scale and Configure Teams</a></li>
                                         <li><a class="barLink" href="/vsts/marketplace/index">Manage Extensions</a></li>
-
                                         <li><a class="barLink" href="/vsts/billing/index">Billing</a></li>
                                         <li><a class="barLink" href="/vsts/organizations/accounts/index">Organization Management (VSTS)</a></li>
                                         <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
@@ -842,13 +843,32 @@ featureFlags:
                         <a href="#collaboration">Collaboration</a>
                         <ul id="collaboration" class="cardsA">
                             <li>
+                                <a href="/vsts/project/navigation/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Navigation Basics</h3>
+                                                    <p>Work effectively in the web portal to open services, pages, artifacts; use breadcrumbs and favorites; and work across projects.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/organizations/public/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/logo_vs-team-services.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -944,18 +964,18 @@ featureFlags:
                         <a href="#admin">Admin</a>
                         <ul id="admin" class="cardsA">
                             <li>
-                                <a href="/vsts/organizations/accounts/index">
+                                <a href="/vsts/organizations/projects/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/i_account-management.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Organization Management</h3>
-                                                    <p>Setup and manage your organization and configure key settings to support your
+                                                    <h3>Project Management</h3>
+                                                    <p>Add, structure, and manage projects to support your organization and 
                                                         teams.</p>
                                                 </div>
                                             </div>
@@ -964,18 +984,37 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/tfs/server/index">
+                                <a href="/vsts/organizations/settings/scale/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                        <img src="_img/index/i_configure-teams.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Server Administration (TFS)</h3>
-                                                    <p>Install, upgrade, and manage resources for your on-premises deployment.</p>
+                                                    <h3>Scale and Configure Teams</h3>
+                                                    <p>Add teams and team administrators; configure team settings.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts/organizations/settings/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_config-tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Settings</h3>
+                                                    <p>Configure and customize resources for your project, collection, or organization. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1003,6 +1042,26 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
+                                <a href="/vsts/organizations/accounts/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_account-management.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Organization Management</h3>
+                                                    <p>Setup and manage your organization and configure key settings to support your
+                                                        teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/vsts/billing/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -1022,25 +1081,6 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/organizations/settings/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_configure-teams.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Scale and Configure Teams</h3>
-                                                    <p>Add teams and team administrators; configure team settings.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="/vsts/marketplace/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -1053,6 +1093,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Manage Extensions</h3>
                                                     <p>Install or remove Marketplace extensions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/server/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Server Administration (TFS)</h3>
+                                                    <p>Install, upgrade, and manage resources for your on-premises deployment.</p>
                                                 </div>
                                             </div>
                                         </div>

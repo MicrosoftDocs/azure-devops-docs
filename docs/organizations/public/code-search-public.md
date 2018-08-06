@@ -30,7 +30,7 @@ With code search, you can locate specific types of code and easily narrow or wid
 To start your search, choose **Code>Files** or other hub under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
-> ![Work Item Search box, vertical navigation](_img/search/code-search-vert.png)    
+> ![Work Item Search box, new navigation](_img/search/code-search-vert.png)    
 
 # [Previous navigation](#tab/previous-nav)  
 

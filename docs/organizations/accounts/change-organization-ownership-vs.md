@@ -36,7 +36,7 @@ Make sure that the new owner:
 
 ## Change VSTS organization owner
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

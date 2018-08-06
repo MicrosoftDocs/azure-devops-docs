@@ -32,7 +32,7 @@ With work item search, you can quickly find work items defined within a public p
 0. Choose **Work>Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../../project/search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box, vertical navigation](_img/search/work-item-search-vert.png)    
+	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)    
 
 0. Search results are displayed in a snippet view where the matches found are shown in bold.
 

@@ -29,7 +29,7 @@ You grant or restrict access to various work tracking features by granting users
 
 Project collection-level permissions include all permissions you can set at the project-level.
 
-To add a user to the team administrator role, see [Add a team administrator](../../work/scale/add-team-administrator.md). 
+To add a user to the team administrator role, see [Add a team administrator](../../organizations/settings/add-team-administrator.md). 
 
 ## Edit project-level or collection-level/instance-level information
 

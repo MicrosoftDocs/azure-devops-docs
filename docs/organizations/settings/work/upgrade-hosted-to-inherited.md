@@ -9,7 +9,6 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-robots: NOINDEX, NOFOLLOW
 ms.date: 05/30/2018
 ---
 
@@ -18,7 +17,7 @@ ms.date: 05/30/2018
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
 > [!NOTE]  
-> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your account(s).
+> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your organization(s).
 
 Cloning your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -79,7 +78,7 @@ We recommend that you create a test project based on the inherited process creat
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a team project from the selected process](_img/migration/create-team-project-inherited-process.png)  
+	> ![Create a project from the selected process](_img/migration/create-team-project-inherited-process.png)  
 
 0. The Create new project page opens. Fill out the form. 
 

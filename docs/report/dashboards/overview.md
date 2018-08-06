@@ -194,9 +194,9 @@ Using the REST API service, you can [create a custom widget](../../extend/develo
 -->
 
 [excel-adhoc-query-report]: ../excel/create-status-and-trend-excel-reports.md
-[add-a-team]: ../../work/scale/multiple-teams.md
-[team-assets]: ../../work/scale/manage-team-assets.md
-[add-team-members]: ../../work/scale/multiple-teams.md#add-team-members
-[add-team-admin]: ../../work/scale/add-team-administrator.md
+[add-a-team]: ../../organizations/settings/add-teams.md
+[team-assets]: ../../organizations/settings/configure-team-settings.md
+[add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
+[add-team-admin]: ../../organizations/settings/add-team-administrator.md
    
 

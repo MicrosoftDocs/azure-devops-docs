@@ -15,7 +15,7 @@
   - name: Set permissions
     href: ../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json 
   - name: Add a team admin
-    href: ../../work/scale/add-team-administrator.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
+    href: ../settings/add-team-administrator.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Connect VSTS to Azure AD

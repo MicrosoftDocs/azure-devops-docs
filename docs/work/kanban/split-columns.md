@@ -63,7 +63,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.   
 	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)  	
-	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.
+	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.
    
 	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md). 
 
@@ -80,7 +80,7 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
 	
-	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.  
+	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.  
 
 	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
 

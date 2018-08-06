@@ -58,7 +58,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	* Choose the last option if your team manages bugs separate from requirements or tasks. Bugs will be associated with the Bugs category. 
 
 	> [!NOTE]    
-	> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
+	> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../../organizations/settings/add-team-administrator.md).
 	
 	::: moniker range="vsts || >= tfs-2018"  	
 	<img src="_img/show-bugs-settings-ts.png" alt="VSTS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
@@ -99,7 +99,7 @@ For an overview of process models, see [Customize your work tracking experience]
 Other quickly configurable options you can make:
 - [Customize cards on the Kanban board or task board](customize-cards.md)
 - [Enable backlog levels of interest to your team](../customize/select-backlog-navigation-levels.md) 
-- [Configure team settings](../scale/manage-team-assets.md)  
+- [Configure team settings](../../organizations/settings/configure-team-settings.md)  
 
 ### Nested items  
 As indicated in this topic, bugs can appear alongside user stories (requirements or product backlog items) or tasks. You don't need to link bugs to one of these items in order to manage them.

@@ -30,7 +30,7 @@ Once you've completed your sprint plan, you can easily share it with other membe
 Any stakeholder on your team (someone with permissions to connect to your project) can view your sprint plan. Simply send them the URL of your sprint backlog page. But also, you can share it with them through email or print a version. 
 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 
 ## Open a Sprint backlog for a team 

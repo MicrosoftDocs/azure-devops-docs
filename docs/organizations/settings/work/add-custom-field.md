@@ -15,7 +15,7 @@ ms.date: 05/31/2018
 # Add a custom field to a work item type    
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your account&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
+You add a custom field to support tracking data requirements you have that aren't met with the existing set of fields. For example, you can add a custom field to track a customer ticket number. For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](customize-process-field.md#review-fields).  
 
 > [!TIP]    
 > To customize a single project, always start by [creating an inherited process and migrating your project to that process](manage-process.md). Then, all the customizations that you make to the inherited process automatically appear for the project you migrated.
@@ -79,6 +79,37 @@ You always add a field to an existing work item type.
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
+
+# [New navigation](#tab/new-nav)
+
+0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
+
+0. The Create new project page opens. Fill out the form. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](_img/process/create-test-project.png) 
+
+0.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Work>Work Items, new navigation](../../../work/work-items/_img/view-add/open-work-items-agile.png)
+
+0. Select the WIT you customized. Here we choose **Bug**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Work, Work Items Page, Add New Work Item, Bug](_img/process/add-custom-field-verify-bug.png) 
+
+0.  Verify that the field you added appears on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Bug form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-bug-form.png) 
+	
+
+# [Previous navigation](#tab/previous-nav)
+
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
@@ -98,7 +129,8 @@ We recommend that you create a test project and apply your customized  inherited
 
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-bug-form.png) 
-	
+
+---	
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
 
 

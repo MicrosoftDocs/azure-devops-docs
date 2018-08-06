@@ -156,7 +156,7 @@ An extension is an installable unit that contributes new capabilities to your pr
 
 0. Select the extension you want to add. Here we choose the Work item checklist.
 
-0. Select the organization/account you want to add it to and choose **Install**.  
+0. Select the organization you want to add it to and choose **Install**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Visual Studio Markeplace, install extension](_img/process/cprocess-install-extension.png) 
@@ -195,7 +195,7 @@ You can add additional WITs to a backlog level or add another portfolio backlog.
 
 We recommend that you create a test project and apply your customized inherited process to it to verify the changes you've made. All customizations made to a process go into effect immediately on all projects. If you want to stage your changes, you can do that using one of two methods: 
 - [Create a test project and copy of your customized process](#test-project-copy-process)
-- [Create a test VSTS account/organization and import/export your process](#test-import-export-process)
+- [Create a test VSTS organization and import/export your process](#test-import-export-process)
 
 <a id="test-project-copy-process" />
 ### Create a test project and copy of your customized process
@@ -218,14 +218,14 @@ We recommend that you create a test project and apply your customized inherited 
 0.  Verify that the field(s) you added appear on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 <a id="test-import-export-process" />
-### Create a test VSTS account/organization and import/export your process
+### Create a test VSTS organization and import/export your process
 
 You can also use the following steps to verify the customizations you've made to an inherited process. 
  
-0. Create a test VSTS account/organization.  
+0. Create a test VSTS organization.  
 0. Use the [import/export process tool](https://github.com/Microsoft/process-migrator) to copy the process to the test organization.  
 0. Verify the process customizations in the test organization.   
-0. Use the import/export process tool again to import the modified process to the production account/organization.  
+0. Use the import/export process tool again to import the modified process to the production organization.  
 
 
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
@@ -234,7 +234,7 @@ You can also use the following steps to verify the customizations you've made to
 <a id="process-rest-api">  </a>
 ## Programmatically work with processes 
 
-You can get, create, update, and delete processes defined for an account using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
+You can get, create, update, and delete processes defined for an organization using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
 
 ## Related articles
 

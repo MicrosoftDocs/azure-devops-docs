@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;like your code, builds, and work tracking&mdash;you need to have permissions to those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with VSTS, or Active Directory if integrated with TFS. 
+To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with VSTS, or Active Directory if integrated with TFS. 
 
 Permissions may apply to a specific team project or objects within the team project, such as Git or TFVC repositories, branches, build pipelines, area paths, and more. Or, they can apply to an entire VSTS account or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
 
@@ -32,7 +32,7 @@ Here's what you need to know about permission settings:
 
 -   **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.
 
--   For most groups and almost all permissions, **Deny** trumps **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user will not be able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
+-   For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user will not be able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
 
     For members of the **Project Collection Administrators** or **Team Foundation Administrators** groups, Deny doesn't trump Allow. Permissions assigned to these groups take precedent over any Deny set within any other group to which that member might belong.
 
@@ -40,13 +40,10 @@ Here's what you need to know about permission settings:
 
 <a name="inheritance"></a>
 
-## Inheritance
+## Inheritance and security groups
 
 Some permissions are managed through a hierarchy. Within this hierarchy,
-permissions can be inherited from the parent or overridden. In
-certain cases, a set of permissions are grouped into a **role**
-to simplify administration. Membership of these roles governs
-access.
+permissions can be inherited from the parent or overridden. Security groups assign a set of permissions to those members of the group. For example, members of the **Contributors** group or **Project Administrators** group are assigned the permissions that are set as **Allowed** to those groups. 
 
 If a permission isn't directly allowed or denied for a user, then it may be inherited in two ways.
 
@@ -72,68 +69,65 @@ To understand why a permission is inherited, you can pause over the permission s
 
 ::: moniker range=">= tfs-2017"
 
-### VSTS, TFS 2017 
-
-<img src="_img/about-permissions-why.png" style="border: 1px solid #C3C3C3;" />
+![Permissions, Why link](_img/about-permissions-why.png)
 
 A new window opens that shows the inheritance information for that permission.  
 
-<img src="_img/about-permissions-trace.png" style="border: 1px solid #C3C3C3;" />
+![Permissions trace dialog](_img/about-permissions-trace.png)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-### TFS 2015, TFS 2013
-
-<img src="_img/permissions/inherited-permissions.png" style="border: 1px solid #C3C3C3;" />
+![Permissions, Why link](_img/permissions/inherited-permissions.png)  
 
 Some object level Security dialog boxes provide an Inheritance on/off option.
 Use this option to disable inheritance for folders, shared queries, and other objects.
 
-<img src="_img/permissions/turn-on-inheritance.png" style="border: 1px solid #C3C3C3;" />
+![Permissions trace dialog](_img/permissions/turn-on-inheritance.png)
 
-**When assigning permissions**
+::: moniker-end
+
+### When assigning permissions 
  
 **Do:**  
 - Use Windows groups when managing lots of users.  
 - Consider granting the [work item query folders **Contribute**](../../work/track/set-query-permissions.md) permission to users or groups that require the ability to create and share work item queries for the team project.  
-- When adding many teams, consider creating a **Team Administrators** group to TFS where you allocate a subset of the permissions available to **Project Administrators**.  
+- When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.  
 - When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.  
 
 
 **Don't:**  
-- Don't add accounts to the team project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
+- Don't add users to the team project **Readers** group that you've added to the **Project Administrators** group. Because the Readers group denies several permissions that the Project Administrators group allows, and deny takes precedence.  
 - Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to Deny for one of the Valid Users groups, no users in the group will be able to access the team project, collection, or deployment, depending on the group you set.  
 - Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
-::: moniker-end
 
 <a id="grant-permissions"  >  </a>  
 
 ## Permissions versus access levels 
 
-Permissions are different than access levels. Access levels control what features are 
+Permissions are different from access levels. Access levels control what features are 
 visible to users in the web portal, and are dependent on user licenses; permissions control a user's  ability to use features across TFS. 
 If you're just trying to give someone access to a team room or to Agile portfolio management 
 and test case management features, 
 you'll want to [change access levels](change-access-levels.md), not permissions.
 
-Setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or TFS group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project or a team](add-users-team-project.md).
+Setting the access level for  users or groups doesn't provide them access to a team project or the web portal. Only users or groups added to a team or security group can connect to a team project and the web portal. Make sure your users have both the permissions and the access level they need. You do this by making sure they're [added to the team project or a team](add-users-team-project.md).
 
 
-## Manage large numbers of users using Active Directory, Azure Active Directory, or Windows groups
+## Manage large numbers of users 
 
 If you need to set permissions for large numbers of users,
 create a group in Windows, Active Directory, or Azure Active Directory,
-add these groups to TFS groups or VSTS groups,
+add these groups to a default or custom security group,
 and add the same groups to grant access to additional resources.
 
-<img src="_img/permissions/grant-permissions.png" style="border: 1px solid #C3C3C3;" />
+![Conceptual image showing defining AD groups](_img/permissions/grant-permissions.png)
 
-Of course, you don't need to grant permissions for reports or the project portal
-if your team project doesn't use SQL Server Reporting Services or a SharePoint site.
-
+::: moniker range=">= tfs-2013 <= tfs-2018"
+Of course, you don't need to grant permissions for reports or the project portalif your project doesn't use SQL Server Reporting Services or a SharePoint site.
+::: moniker-end
 
 <a name="validusers"></a>
 
@@ -177,14 +171,22 @@ You use the [web portal administration context](../../organizations/security/add
 |[Release Management](permissions.md#release_management) |![check mark](../../_img/check.png)||||| |
 |[Lab Management](permissions.md#lab)|||||![check mark](../../_img/check.png)|
 
-## Setting permissions for SharePoint integration (TFS only)    
+
+::: moniker range=">= tfs-2013 <= tfs-2018"  
+## Setting permissions for SQL Server reports 
+
+For information about how to set permissions in Reporting Services,
+see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2017"  
+
+## Setting permissions for SharePoint integration     
 
 For information about how to set permissions for SharePoint Products integrated with TFS,
 see [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).
 
 For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc262690.aspx).
 
-## Setting permissions for SQL Server reports (TFS only) 
+::: moniker-end  
 
-For information about how to set permissions in Reporting Services,
-see [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md).

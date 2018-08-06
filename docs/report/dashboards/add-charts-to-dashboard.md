@@ -56,7 +56,7 @@ Each time a build is run, it logs information about the build, including the run
 
 	![Add a build summary chart to a dashboard](_img/add-chart-build-summary.png)  
 
-	If you aren't a team administrator, [get added as one](../../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
+	If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Build summary charts look like this:  
 
@@ -81,7 +81,7 @@ Each time a release is deployed, it logs information about the release to each o
 
 	![Add a Release pipeline chart to a dashboard](_img/add-cd-release-definition.png)  
 
-	If you aren't a team administrator, [get added as one](../../work/scale/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
+	If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). The Add to dashboard menu selection is disabled when you don't have permissions to add it to the dashboards of the selected team context.  
 
 2. Release pipeline charts show the success (green), in progress (blue), cancellation (red), or non-deployment (grey) to an environment for the current and last four releases:  
 
@@ -99,7 +99,7 @@ As you create and run tests, you can track your status by defining [lightweight 
 >[!NOTE]  
 >You can also add a [Chart for test plans widget](widget-catalog.md#chart-test-plan-widget) to a dashboard. 
 
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open **Test>Test Plans** and then **Charts** and select the dashboard to add the test chart to.  
 
@@ -123,7 +123,7 @@ You can add trends to the dashboard of the failures and duration of those [tests
 Requires TFS 2017.2 or later version. 
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
-1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../work/scale/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
+1. Select your [team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json), make sure you're a [team admin](../../organizations/settings/add-team-administrator.md), and if you haven't yet created the dashboard, [do that now](dashboards.md).  
 
 2. Open a build summary for a build pipeline to which you've added tests, open the Tests page, and click the bar chart for either Test failures or Test duration.    
 
@@ -149,7 +149,7 @@ You add work item queries and charts to a dashboard from the Queries page. Queri
 
 1. First, make sure you have selected your team context. Only those dashboards created for a team appear in the context menu for each query or chart. [Switch team context](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/toc.json&bc=/vsts/report/breadcrumb/toc.json) as needed.  
 
-2. If you aren't a team administrator, [get added as one](../../work/scale/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
+2. If you aren't a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can add and customize team dashboards.  
 
 3. If you haven't yet created the dashboard, [do that now](dashboards.md).  
 
