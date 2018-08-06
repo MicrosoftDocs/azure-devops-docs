@@ -25,7 +25,7 @@ To work on this Quickstart, you'll need the following prerequisites:
 
 ## Create a C# project in Visual Studio
 
-To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/)
+To learn about C# programming within Visual Studio, find the [Visual Studio C# programming documentation](/dotnet/csharp/programming-guide/inside-a-program/)
 
 ## C# code content
 There are a few things happening in the code sample below:

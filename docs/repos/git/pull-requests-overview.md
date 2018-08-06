@@ -250,7 +250,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg" />
+                            <img width="48" height="48" alt="" src="/azure/media/index/azurefunctions.svg" />
                         </div>
                     </div>
                     <div class="cardText">

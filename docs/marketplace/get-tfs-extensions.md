@@ -54,7 +54,7 @@ you can create a new subscription when you make your first purchase.
 > you must have at least Co-administrator permissions for that subscription. 
 > If you don't have permissions, have an Azure Account Administrator 
 > or Service Administrator go to the Azure classic portal and 
-> [add you as Co-administrator](https://docs.microsoft.com/en-us/azure/billing-add-change-azure-subscription-administrator) 
+> [add you as Co-administrator](/azure/billing-add-change-azure-subscription-administrator) 
 > to the Azure subscription that you want to use for billing. 
 > Co-administrator permissions are available only in the classic Azure portal.
 

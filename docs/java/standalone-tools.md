@@ -19,7 +19,7 @@ Use [PMD](https://pmd.github.io/), [CheckStyle](http://checkstyle.sourceforge.ne
 
 ## Enabling analysis
 
-To use your these tools you simply check the corresponding checkbox in the **Static Analysis** section of a [Maven build task](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/maven) or [Gradle build task](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/build/gradle).
+To use your these tools you simply check the corresponding checkbox in the **Static Analysis** section of a [Maven build task](/vsts/pipelines/tasks/build/maven) or [Gradle build task](/vsts/pipelines/tasks/build/gradle).
 
 > [!div class="mx-imgBorder"]
 ![Enable static analysis for Maven builds](_img/maven-with-static-analysis.png)

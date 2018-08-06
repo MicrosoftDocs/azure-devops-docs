@@ -23,7 +23,7 @@ If you want to use a different Azure subscription to bill purchases for your Vis
 
 ## Move to a different subscription
 
-If the target subscription is in the same Azure Active Directory instance as the destination subscription and you have access to both, use the following steps. You can [learn more about moving resources to new resource groups or subscriptions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-move-resources).
+If the target subscription is in the same Azure Active Directory instance as the destination subscription and you have access to both, use the following steps. You can [learn more about moving resources to new resource groups or subscriptions](/azure/azure-resource-manager/resource-group-move-resources).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **Resource groups**.

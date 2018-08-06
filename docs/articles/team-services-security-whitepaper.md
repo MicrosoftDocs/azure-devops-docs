@@ -383,7 +383,7 @@ will replace the Directive and all local laws relating to it. VSTS is relied upo
 integrity, traceability and audit rules, we view all information within VSTS to be business critical and therefore cannot be modified from its original state. 
 These existing obligations affect our delete and retention obligations for GDPR. As such, we do not support GDPR delete requests from within VSTS. 
 We have ensured that when an entire VSTS account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period). 
-To learn more about how VSTS honors Data Subject Requests (DSR), please visit the following [page](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
+To learn more about how VSTS honors Data Subject Requests (DSR), please visit the following [page](/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
 To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
@@ -547,7 +547,7 @@ You can learn more about how to
 In some cases, you might want to restrict access to your VSTS account 
 by requiring more than one factor to sign in. Azure AD lets you require multiple factors, 
 such as phone authentication in addition to a username and password, for all 
-authentication requests. You can [learn more](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/) about turning on multifactor authentication for Azure AD.
+authentication requests. You can [learn more](/azure/multi-factor-authentication/) about turning on multifactor authentication for Azure AD.
 
 ### Use BitLocker
 

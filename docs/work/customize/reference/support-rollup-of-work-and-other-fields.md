@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 02/16/2018
 ---
 
@@ -85,8 +86,8 @@ There are several extensions available from the [Marketplace](https://marketplac
 
 - [VSTS Rollup](https://marketplace.visualstudio.com/items?itemName=canarysautomationspvtltd.vstsrollup) supports VSTS only
 - [TFS Aggregrator](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-server-plugin#) supports VSTS and TFS 
-
-Or, you can write an extension using the [REST API for work tracking](https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregrator](https://tfsaggregator.github.io/).  
+/
+Or, you can write an extension using the [REST API for work tracking](/rest/api/vsts/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregrator](https://tfsaggregator.github.io/).  
 
 <a name="marketplace"></a>
 ## Analytics (VSTS only) 

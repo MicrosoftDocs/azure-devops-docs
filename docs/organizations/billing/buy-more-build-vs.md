@@ -117,7 +117,7 @@ When your team's needs for build or release capacity change, you can change the 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Start free trials](https://docs.microsoft.com/en-us/vsts/billing/try-additional-features-vs?view=vsts)
+> [Start free trials](/vsts/billing/try-additional-features-vs?view=vsts)
 
 ## Related articles
 

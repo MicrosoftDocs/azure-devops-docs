@@ -51,7 +51,7 @@ You will:
 
 * An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* A Tomcat and Java 8 based Azure Web App.  You can follow the steps for creating one [here](https://docs.microsoft.com/en-us/java/azure/java-quickstart-maven-webapps)
+* A Tomcat and Java 8 based Azure Web App.  You can follow the steps for creating one [here](/java/azure/java-quickstart-maven-webapps)
 
 * Basic Jenkins and Git knowledge.
 

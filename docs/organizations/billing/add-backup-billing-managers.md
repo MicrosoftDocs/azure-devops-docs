@@ -17,7 +17,7 @@ ms.date: 04/18/2018
 **VSTS**
 
 To let another user manage billing or make purchases through Visual Studio Marketplace for your VSTS organization,
-add [**owner**](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner), [**contributor**](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor), [**service admin**](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), or [**co-admin**](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) roles to users in the Azure subscription that's linked to your VSTS organization.
+add [**owner**](/azure/role-based-access-control/built-in-roles#owner), [**contributor**](/azure/role-based-access-control/built-in-roles#contributor), [**service admin**](/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription), or [**co-admin**](/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) roles to users in the Azure subscription that's linked to your VSTS organization.
 
 1. [Sign in to the Azure portal](https://portal.azure.com/) as the Azure subscription administrator.
 

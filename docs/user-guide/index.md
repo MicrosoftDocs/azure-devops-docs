@@ -56,10 +56,10 @@ Get started with a free account, share your code using Git, and track your work 
 
 - [Enable preview features](../project/navigation/preview-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Use @mentions to further discussion](../notifications/at-mentions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Use #ID to link to work items](https://docs.microsoft.com/en-us/vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
+- [Use #ID to link to work items](/vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Navigate using your account home page](../project/navigation/work-across-projects.md)
 - [Go mobile](../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Manage your notifications](https://docs.microsoft.com/en-us/vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
+- [Manage your notifications](/vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Set your preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Sign in to the web or a client](../organizations/projects/connect-to-projects.md)
 
@@ -78,6 +78,6 @@ Get started with a free account, share your code using Git, and track your work 
 - [Visual Studio IDE](https://docs.microsoft.com/visualstudio/)
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio for Mac](https://docs.microsoft.com/visualstudio/mac)
-- [Account Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/?view=vsts)
-- [Security & Identity](https://docs.microsoft.com/en-us/vsts/organizations/security/?view=vsts)
-- [Technical articles](https://docs.microsoft.com/en-us/vsts/articles/?view=vsts)
+- [Account Management](/vsts/organizations/accounts/?view=vsts)
+- [Security & Identity](/vsts/organizations/security/?view=vsts)
+- [Technical articles](/vsts/articles/?view=vsts)

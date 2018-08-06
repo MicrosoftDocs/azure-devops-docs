@@ -8,7 +8,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D4CE68D6-8056-4CB7-ACFA-1FCD05223040 
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
@@ -125,8 +126,8 @@ In addition, you can:
 - [Create a new branch, drive Git development](../backlogs/connect-work-items-to-git-dev-ops.md)
 - [Kanban board controls](kanban-board-controls.md)
 
-### REST API resources
-To programmatically create tasks, see the [REST API, Work Items reference](https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items).
+### REST API resources/
+To programmatically create tasks, see the [REST API, Work Items reference](/rest/api/vsts/wit/work%20items).
 
 
 <!---

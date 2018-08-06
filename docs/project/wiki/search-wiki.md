@@ -7,7 +7,8 @@ ms.technology: devops-collab
 ms.custom: wiki
 ms.assetid:  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.reviewer: sancha
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
@@ -27,8 +28,8 @@ With wiki search, you can search within a project wiki or across all wikis creat
 The search feature quickly returns wiki pages by title or page content.
 
 ::: moniker range="tfs-2018"
-> [!NOTE]  
-> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-update2). 
+> [!NOTE]  /
+> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
 
 English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.

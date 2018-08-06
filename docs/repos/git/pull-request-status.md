@@ -101,7 +101,7 @@ This further guarantees that the PR will not be able to be merged until the late
 
 ![Status policy reset conditions](_img/pull-request-status/pull-request-status-policy-reset-conditions.png)
 
-See the REST API examples for posting status [on an iteration](https://docs.microsoft.com/en-us/rest/api/vsts/repos/git/pull%20request%20statuses/create#on_iteration) and [on a pull request](https://docs.microsoft.com/en-us/rest/api/vsts/repos/git/pull%20request%20statuses/create#on_pull_request).
+See the REST API examples for posting status [on an iteration](/rest/api/vsts/repos/git/pull%20request%20statuses/create#on_iteration) and [on a pull request](/rest/api/vsts/repos/git/pull%20request%20statuses/create#on_pull_request).
 
 ## Status policy
 

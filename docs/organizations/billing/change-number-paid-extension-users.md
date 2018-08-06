@@ -41,12 +41,12 @@ You'll need VSTS
 
 The number of paid extension users is updated.
 
-> **To stop paying for an extension, [reduce the number of paid users to zero (0)](https://docs.microsoft.com/en-us/vsts/marketplace/how-to/change-paid-extension-users?view=vsts).**
+> **To stop paying for an extension, [reduce the number of paid users to zero (0)](/vsts/marketplace/how-to/change-paid-extension-users?view=vsts).**
 
 ## Next steps
 
 - [Assign features or extensions to users](../../marketplace/assign-paid-extensions.md)
-- [Uninstall or disable extensions](https://docs.microsoft.com/en-us/vsts/marketplace/uninstall-disable-extensions?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
+- [Uninstall or disable extensions](/vsts/marketplace/uninstall-disable-extensions?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
 
 ## Related articles
 

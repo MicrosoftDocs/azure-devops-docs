@@ -19,7 +19,7 @@ ms.date: 10/26/2017
 
 Extensions are simple add-ons that can be used to customize and extend your DevOps experience with VSTS. 
 They are written with standard technologies - HTML, JavaScript, CSS - and can be developed using your preferred dev tools.
-They utilize our [RESTful API Library](https://docs.microsoft.com/en-us/rest/api/vsts/) in order to easily interact with VSTS and applications/services.
+They utilize our [RESTful API Library](/rest/api/vsts/) in order to easily interact with VSTS and applications/services.
 The [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS) is where extensions are published, 
 where they can be kept privately for you and your team or shared with the millions of developers currently using VSTS. 
 

@@ -110,7 +110,7 @@ git push origin users/frank/feature
 ```
 
 > [!NOTE]
-> You can also create and get repos from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
+> You can also create and get repos from the command line or scripts using the [VSTS CLI](/cli/vsts/overview?view=vsts-cli-latest).
 
 ---
 

@@ -259,7 +259,7 @@ Running this task is equivalent to running `dotnet build` from a command prompt.
 
 If you need to run additional .NET Core commands, you can specify other **Command** settings such as **clean** or
 **publish**. If you need a command not listed, you can set **Command** to **custom** and then type the name of the
-command in the **Custom command** box. This is useful, for example, to install [dotnet global tools](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
+command in the **Custom command** box. This is useful, for example, to install [dotnet global tools](/dotnet/core/tools/global-tools)
 that are available in .NET Core 2.1.300 and newer.
 
 # [Designer](#tab/designer)

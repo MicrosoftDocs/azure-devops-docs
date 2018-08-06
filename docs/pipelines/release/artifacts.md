@@ -307,9 +307,9 @@ The following features are available when using Azure Container Registry, Docker
 <h3 id="nugetsource">NuGet and npm packages from Package Management</h3>
 
 To integrate with NuGet, or npm (Maven is not currently supported), you must first install the
-[Package Management](https://docs.microsoft.com/en-us/vsts/package/install)
+[Package Management](/vsts/package/install)
 extension from the Marketplace. For more information, see
-[Package Management Overview](https://docs.microsoft.com/en-us/vsts/package/overview).
+[Package Management Overview](/vsts/package/overview).
 
 Scenarios where you may want to consume Package Management artifacts are:
 

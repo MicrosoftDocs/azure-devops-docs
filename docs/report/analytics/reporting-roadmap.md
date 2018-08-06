@@ -47,4 +47,4 @@ We will continue to support SQL Server Reporting until Analytics is brought to T
 
 ## Roadmap timeline
 
-Check out the [Features Timeline](https://docs.microsoft.com/en-us/vsts/release-notes/) for the roadmap of reporting features.
+Check out the [Features Timeline](/vsts/release-notes/) for the roadmap of reporting features.

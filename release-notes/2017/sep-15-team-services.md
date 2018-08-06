@@ -247,7 +247,7 @@ This capability is dependent on changes in the Visual Studio test platform and r
 
 Similarly, webtests can be run using the **Run Functional Test** task. This capability is dependent on changes in the Test Agent, that will be available with the Visual Studio 2017 Update 5.
 
-See the [Load test your app in the cloud using Visual Studio and VSTS quickstart](https://docs.microsoft.com/en-us/vsts/load-test/getting-started-with-performance-testing) as an example of how you can use this together with load testing.
+See the [Load test your app in the cloud using Visual Studio and VSTS quickstart](/vsts/load-test/getting-started-with-performance-testing) as an example of how you can use this together with load testing.
 
 ### Chart widget for test plans and test suites
 

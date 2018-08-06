@@ -169,7 +169,7 @@ Account owners and Project Collection Administrators can add projects from the a
 <a id="process-rest-api">  </a>
 ### Programmatically work with processes 
 
-You can get, create, update, and delete processes defined for an account using the [REST API, Processes](https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes).
+You can get, create, update, and delete processes defined for an account using the [REST API, Processes](/rest/api/vsts/processes/processes).
 
 
 

@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: 'vsts'
 ms.topic: conceptual
 ms.date: 05/31/2018
@@ -111,8 +112,8 @@ To re-enable the WIT, choose **Enable** from the WIT context menu.
 	<img src="_img/process/cpit-destroy-wit-confirm.png" alt="Delete field, confirmation dialog" style="border: 1px solid #C3C3C3;" />  
  
 ### WIT extensibility
-
-To work with WITs programmatically, see [Work Item Types REST API](https://docs.microsoft.com/en-us/rest/api/vsts/processdefinitions/work%20item%20types). 
+/
+To work with WITs programmatically, see [Work Item Types REST API](/rest/api/vsts/processdefinitions/work%20item%20types). 
 
 
 ## Related articles  

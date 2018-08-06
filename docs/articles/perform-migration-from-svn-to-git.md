@@ -50,7 +50,7 @@ Configure a migration environment on a local workstation and install the followi
 * [git-svn utility](https://www.kernel.org/pub/software/scm/repos/git/docs/git-svn.html) (already part of Git)
 
 You will also need to create a Git repository on your VSTS account to host the converted SVN repository, you may follow [Create a new Git repo in your project
-](https://docs.microsoft.com/en-us/vsts/repos/git/create-new-repo)
+](/vsts/repos/git/create-new-repo)
 
 ## Convert the source SVN repository to a local Git repository
 
@@ -117,7 +117,7 @@ git commit -m 'Convert svn:ignore properties to .gitignore.'
 > [!TIP]
 >
 > Read more about **.gitignore**: [Ignore file changes with Git](
-https://docs.microsoft.com/en-us/vsts/repos/git/ignore-files?tabs=visual-studio)
+/vsts/repos/git/ignore-files?tabs=visual-studio)
 
 ### Push repository to a bare git repository
 
@@ -178,9 +178,9 @@ Moving from a centralized version control system to Git is more than just migrat
 
 ## Reference information
 
-- [Choosing the right version control for your project](https://docs.microsoft.com/en-us/vsts/repos/tfvc/comparison-git-tfvc)
+- [Choosing the right version control for your project](/vsts/repos/tfvc/comparison-git-tfvc)
 - [Learn Git](/azure/devops/git/learn-git-with-team-services/)
-- [Ignore file changes with Git](https://docs.microsoft.com/en-us/vsts/repos/git/ignore-files?tabs=visual-studio)
+- [Ignore file changes with Git](/vsts/repos/git/ignore-files?tabs=visual-studio)
 - [Migrate from TFVC to Git](/azure/devops/git/migrate-from-tfvc-to-git)
 
 > Authors: Hosam Kamel, William H. Salazar | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
