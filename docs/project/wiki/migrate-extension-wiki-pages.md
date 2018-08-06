@@ -7,7 +7,8 @@ ms.custom: wiki
 ms.prod: devops
 ms.assetid: 535245F2-6227-410C-B91D-559FA509D81B
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.reviewer: sancha
 monikerRange: 'vsts || >= tfs-2018'
@@ -51,7 +52,7 @@ Here are the detailed steps for Wiki migration:
 
 6.	Clone the Wiki extension repo. The Wiki will be mapped to a folder given to you during the wiki creation. You can check that by going to "manage wiki" option in the existing wiki as shown below.
 
-	You'll find your existing wiki pages are saved under the folder labeles "Root".
+	You'll find your existing wiki pages are saved under the folder labeled "Root".
 
 	For example, say you have cloned the above mentioned "sampleWiki" in the location "C:\wiki\sampleWiki". The wiki pages are saved in the path "C:\wiki\sampleWiki\ _extensionWiki"	
 
