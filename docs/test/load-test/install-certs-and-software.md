@@ -75,8 +75,8 @@ Script to import a certificate into the Trusted Root Certification Authorities c
 certutil.exe -f -user -p password -importpfx %DeploymentDirectory%\mycertitficate.pfx NoRoot
 ```
 
-> See [CertMgr](https://docs.microsoft.com/en-us/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)
-  and [Certutil](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil)
+> See [CertMgr](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)
+  and [Certutil](/windows-server/administration/windows-commands/certutil)
   for more information about using these utilities.
 
 You can use the deployment options and a setup script to add **.exe** files or other files you want to deploy to the machines running the agent,

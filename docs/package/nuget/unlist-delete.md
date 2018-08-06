@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 There are two options available to remove a version of a NuGet package from a feed.
 
-1. **Unlist:** Unlisting a version of a package modifies how the package appears in NuGet clients (see the [NuGet docs](https://docs.microsoft.com/en-us/nuget/policies/deleting-packages) for a full description of how unlist works). Unlisting a version can help you prevent new usage of it without breaking dependent projects and builds.
+1. **Unlist:** Unlisting a version of a package modifies how the package appears in NuGet clients (see the [NuGet docs](/nuget/policies/deleting-packages) for a full description of how unlist works). Unlisting a version can help you prevent new usage of it without breaking dependent projects and builds.
 2. **Delete:**  Deleting a version of a package makes it unavailable for install. After deleting, a package can be [restored from the _Recycle Bin_](#recover-a-deleted-nuget-package) within 30 days of deletion. After 30 days, it is permanently unavailable to restore. Deleting a package will cause others that depend on it to break.
 
 Unlist and delete both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 

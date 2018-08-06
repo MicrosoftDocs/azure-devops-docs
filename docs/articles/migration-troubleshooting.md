@@ -69,7 +69,7 @@ Generally a non-supported collation can be converted to one of the supported col
 The collection database's collation '{collation}' is not supported for import to VSTS. It will need to be changed to a supported collation before it can be imported. See more details at https://aka.ms/vstsimportcollations
 ```
 
-In order to continue your collection's collation will need to be [changed](https://docs.microsoft.com/en-us/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on VSTS.
+In order to continue your collection's collation will need to be [changed](/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on VSTS.
     
 ## Dealing with Identity Errors
 Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current TFS version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
@@ -215,7 +215,7 @@ See the separate [Process Templates](migration-processtemplates.md) page for det
 #### <a name= "VS403442" ></a> **VS403442**
 In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
 
-Sometimes your local collection may have a field whose name may conflict with VSTS system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+Sometimes your local collection may have a field whose name may conflict with VSTS system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
@@ -224,7 +224,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 #### <a name= "VS403443" ></a> **VS403443**
 In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*
 
-Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
@@ -233,7 +233,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 #### <a name= "VS403444"> </a> **VS403444**
 In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.
 
-Sometimes your local collection may have different type for a particular field. Presently [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) allows type change for only those fields which are either of HTML or PlainText type. If your field type is either HTML or PlainText, then you can change its type to required type using witadmin.
+Sometimes your local collection may have different type for a particular field. Presently [witadmin](/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) allows type change for only those fields which are either of HTML or PlainText type. If your field type is either HTML or PlainText, then you can change its type to required type using witadmin.
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName  /type:PlainText | HTML
@@ -242,7 +242,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 > If your field type is something different than HTML|PlainText and field data is not important or field is not being used in any project, then we recommend using witadmin to delete that field.
 
 > [!Important]
-> Using [witadmin](https://docs.microsoft.com/en-us/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to delete a field will result in loss of field data across collection.
+> Using [witadmin](/vsts/work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to delete a field will result in loss of field data across collection.
 
 ```cmdline
 witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName

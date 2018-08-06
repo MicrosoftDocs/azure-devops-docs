@@ -338,13 +338,13 @@
   - name: REST APIs
     items:
     - name: Area and Iteration Paths
-      href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/classification%20nodes
+      href: /rest/api/vsts/wit/classification%20nodes
     - name: Processes
-      href: https://docs.microsoft.com/en-us/rest/api/vsts/processes/processes
+      href: /rest/api/vsts/processes/processes
     - name: Process Template
-      href: https://docs.microsoft.com/en-us/rest/api/vsts/processadmin/processes 
+      href: /rest/api/vsts/processadmin/processes 
     - name: Work Item Types
-      href: https://docs.microsoft.com/en-us/rest/api/vsts/processdefinitions/work%20item%20types
+      href: /rest/api/vsts/processdefinitions/work%20item%20types
     - name: Add a custom control to a form
       href: ../../extend/develop/custom-control.md
 - name: Resources

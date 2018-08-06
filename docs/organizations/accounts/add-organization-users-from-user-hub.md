@@ -55,7 +55,7 @@ using this Users view.  When you add users, each receives a notification email w
 link to the organization page.
 
  > [!NOTE]
- > If have an Azure Active Directory (Azure AD) backed VSTS organization, and you need to add users who are external to your Azure AD, first [add external users](https://docs.microsoft.com/en-us/vsts/organizations/accounts/add-external-user?view=vsts) to
+ > If have an Azure Active Directory (Azure AD) backed VSTS organization, and you need to add users who are external to your Azure AD, first [add external users](/vsts/organizations/accounts/add-external-user?view=vsts) to
  > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an
  > existing Microsoft account**.  After completing those steps, follow the steps below to add the external Azure AD
  > user to VSTS.

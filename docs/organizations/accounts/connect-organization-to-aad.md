@@ -22,7 +22,7 @@ organization's directory (tenant) in
 [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
 You can then sign in to VSTS with the same username
 and password that you use with these Microsoft services.
-You can also [enforce conditional access policies](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) for accessing
+You can also [enforce conditional access policies](/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) for accessing
 your team's critical resources and key assets.
 
 In this tutorial, you learn to:
@@ -49,7 +49,7 @@ We will update this guidance accordingly when we have a solution that we can off
    This user:
 
    * Exists in the Azure Active Directory as a member.
-    * Is a Project Collection Administrator or [owner of the VSTS organization](https://docs.microsoft.com/en-us/vsts/organizations/accounts/faq-change-organization-ownership#find-owner-pca).
+    * Is a Project Collection Administrator or [owner of the VSTS organization](/vsts/organizations/accounts/faq-change-organization-ownership#find-owner-pca).
     * Is not using the Microsoft account identity that matches the Azure Active Directory identity, for example, the Microsoft account you currently use is JamalHarnett@fabrikam.com and the Azure Active Directory identity you will use after connecting is also JamalHarnett@fabrikam.com. You must use a single identity that spans both applications (MSA that's in Azure Active Directory), rather than two separate identities using the same email.
 
    If the emails are the same, then follow these next steps, otherwise continue on to Connect your VSTS organization to your Azure Active Directory.
@@ -78,7 +78,7 @@ We will update this guidance accordingly when we have a solution that we can off
 
    b. Compare the list of email addresses in VSTS against the list of email addresses in your Azure Active Directory.
 
-    * If any users exist on the VSTS Users page, but are missing from your Azure Active Directory, [add them as B2B guests](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-iw-add-users).
+    * If any users exist on the VSTS Users page, but are missing from your Azure Active Directory, [add them as B2B guests](/azure/active-directory/active-directory-b2b-iw-add-users).
 
       ![Add guest user to Azure Active Directory](_img/connect-organization-to-aad/add-new-users.png)
 
@@ -131,7 +131,7 @@ When you inform your users of the completed change, include the following tasks 
 
     Deleting the **%LocalAppData%\GitCredentialManager\tenant.cache** file on each client machine will resolve the issue.
 
-2. If you use alternate authentication tokens used by tools or scripts, [regenerate new tokens](https://docs.microsoft.com/en-us/vsts/organizations/accounts/use-personal-access-tokens-to-authenticate) for the Azure Active Directory user.
+2. If you use alternate authentication tokens used by tools or scripts, [regenerate new tokens](/vsts/organizations/accounts/use-personal-access-tokens-to-authenticate) for the Azure Active Directory user.
 
     a. On your VSTS page, in the upper right, choose your profile image and choose **Security**.
 
@@ -139,16 +139,16 @@ When you inform your users of the completed change, include the following tasks 
 
     c. When the token is created, make a note of it as it cannot be viewed again. Copy it from the browser into the clipboard.
 
-3. If you use SSH tokens, [add new keys for the Azure Active Directory user](https://docs.microsoft.com/en-us/vsts/repos/git/use-ssh-keys-to-authenticate?view=vsts).
-4. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account) to a different email that does not conflict with your Azure Active Directory identity or simply [close your Microsoft account](https://docs.microsoft.com/en-us/vsts/organizations/accounts/connect-account-to-aad?view=vsts#optional-close-the-temporary-msa-if-you-created-one) if it's no longer needed.
+3. If you use SSH tokens, [add new keys for the Azure Active Directory user](/vsts/repos/git/use-ssh-keys-to-authenticate?view=vsts).
+4. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account) to a different email that does not conflict with your Azure Active Directory identity or simply [close your Microsoft account](/vsts/organizations/accounts/connect-account-to-aad?view=vsts#optional-close-the-temporary-msa-if-you-created-one) if it's no longer needed.
 
-5. If you used a Microsoft account to sign up for a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) that includes VSTS as a benefit, you can add a work or school account that's managed by Azure Active Directory to your subscription. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](https://docs.microsoft.com/en-us/vsts/billing/link-msdn-subscription-to-organizational-account-vs).
+5. If you used a Microsoft account to sign up for a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) that includes VSTS as a benefit, you can add a work or school account that's managed by Azure Active Directory to your subscription. Learn [how to link work or school accounts to Visual Studio with MSDN subscriptions](/vsts/billing/link-msdn-subscription-to-organizational-account-vs).
 
 ## (Optional)
 
 ### Close the temporary MSA (if you created one)
 
-1. Go to the **Settings** page in VSTS and [change the owner](https://docs.microsoft.com/en-us/vsts/organizations/accounts/change-organization-ownership-vs?view=vsts) of the organization back to yourself.
+1. Go to the **Settings** page in VSTS and [change the owner](/vsts/organizations/accounts/change-organization-ownership-vs?view=vsts) of the organization back to yourself.
 2. Go to the **Users** page in VSTS and remove the temporary new user.
 3. Go to the Azure portal and remove the new user from the Azure Active Directory.
 4. [Close the temporary MSA](https://support.microsoft.com/en-us/help/12412/microsoft-account-how-to-close-account) you created.
@@ -165,14 +165,14 @@ If the Azure subscription you’ve been using to pay for VSTS is associated with
 
 Set up VSTS billing correctly with one of the following options.
 
-1. You can [associate the subscription with the directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory) you’re now using to log in to VSTS. If you’re not able to change the directory in the Azure portal, you can [transfer that subscription to your work Azure Active Directory identity](https://docs.microsoft.com/en-us/azure/billing/billing-subscription-transfer).
-2. Or if you have a different Azure subscription to use for billing VSTS, you can [change the Azure subscription VSTS uses for billing](https://docs.microsoft.com/en-us/vsts/billing/change-azure-subscription?view=vsts). Read the topic carefully, as this option can disrupt billing for your organization if it isn’t set up correctly.
+1. You can [associate the subscription with the directory](/azure/active-directory/active-directory-how-subscriptions-associated-directory) you’re now using to log in to VSTS. If you’re not able to change the directory in the Azure portal, you can [transfer that subscription to your work Azure Active Directory identity](/azure/billing/billing-subscription-transfer).
+2. Or if you have a different Azure subscription to use for billing VSTS, you can [change the Azure subscription VSTS uses for billing](/vsts/billing/change-azure-subscription?view=vsts). Read the topic carefully, as this option can disrupt billing for your organization if it isn’t set up correctly.
 
 ## FAQ
 
 ### Q: Will my users still retain their existing Visual Studio subscriptions?
 
-A: Visual Studio subscription administrators typically assign subscriptions to a user's corporate email so that they can get the welcome email and notifications about the subscription. If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription. As your organization transitions from Microsoft to Azure Active Directory identities and the emails match, your user's benefits will continue to work with their new Azure Active Directory identity. If the email that the subscription is assigned to differs from your Azure Active Directory identity email address, then your subscription administrator will need to [reassign the subscription](https://docs.microsoft.com/en-us/vsts/billing/vs-subscriptions/manage-vs-subscriptions#getting-started), or the user will need to [add an alternate identity to their Visual Studio subscription](https://docs.microsoft.com/en-us/vsts/billing/faq-link-msdn-subscription-org-account#steps-to-add-an-alternate-identity-to-your-visual-studio-subscription).
+A: Visual Studio subscription administrators typically assign subscriptions to a user's corporate email so that they can get the welcome email and notifications about the subscription. If the email of the identity and the subscription match, the user will be able to access the benefits of that subscription. As your organization transitions from Microsoft to Azure Active Directory identities and the emails match, your user's benefits will continue to work with their new Azure Active Directory identity. If the email that the subscription is assigned to differs from your Azure Active Directory identity email address, then your subscription administrator will need to [reassign the subscription](/vsts/billing/vs-subscriptions/manage-vs-subscriptions#getting-started), or the user will need to [add an alternate identity to their Visual Studio subscription](/vsts/billing/faq-link-msdn-subscription-org-account#steps-to-add-an-alternate-identity-to-your-visual-studio-subscription).
 
 ### Q: What if sign-in is required when using the identity picker?
 

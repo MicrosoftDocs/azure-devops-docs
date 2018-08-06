@@ -7,7 +7,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 0BBD90C3-7156-4027-B100-9E46F5BD53FB
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
 ms.date: 03/20/2018
@@ -119,8 +120,8 @@ For TFS 2015 and earlier versions, you can't [query](../track/using-queries.md) 
 ::: moniker-end
 
 
-###REST API resources
-To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).
+###REST API resources/
+To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).
 
 
 

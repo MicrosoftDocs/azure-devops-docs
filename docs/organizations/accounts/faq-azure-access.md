@@ -40,7 +40,7 @@ that's **not** from one of these offers:
 You must then associate that subscription with your Office 365 Azure AD. You'll also need additional subscription
 administrator permissions beyond co-administrator permissions.
 
-Learn how to [associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/en-us/azure/billing-add-office-365-tenant-to-azure-subscription).
+Learn how to [associate your Azure subscription to your Office 365 Azure AD](/azure/billing-add-office-365-tenant-to-azure-subscription).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
@@ -298,9 +298,9 @@ A: This might happen because:
   To do this for your Office 365 Azure AD,
   you'll also need additional subscription administrator permissions
   beyond co-administrator permissions. Learn how to
-  [associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/en-us/azure/billing-add-office-365-tenant-to-azure-subscription),
+  [associate your Azure subscription to your Office 365 Azure AD](/azure/billing-add-office-365-tenant-to-azure-subscription),
   or learn more about the
-  [relationship between your Azure subscription and your Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory#how-an-azure-subscription-is-related-to-azure-ad).
+  [relationship between your Azure subscription and your Azure AD](/azure/active-directory/active-directory-how-subscriptions-associated-directory#how-an-azure-subscription-is-related-to-azure-ad).
 
 <a name="remove-spending-limit"></a>
 

@@ -69,7 +69,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 ### Is this task supported for target machines running operating systems other than Linux?
 This task is intended for target machines running Linux.
 - For copying files to a macOS machine, this task may be used, but authenticating with a password is not supported.
-- For copying files to a Windows machine, consider using [Windows Machine File Copy](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/deploy/windows-machine-file-copy?view=vsts).
+- For copying files to a Windows machine, consider using [Windows Machine File Copy](/vsts/pipelines/tasks/deploy/windows-machine-file-copy?view=vsts).
 
 ::: moniker range="< vsts"
 [!INCLUDE [qa-versions](../../_shared/qa-versions.md)]

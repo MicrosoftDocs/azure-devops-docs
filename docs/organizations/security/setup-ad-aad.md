@@ -45,7 +45,7 @@ Use this topic to access articles that will show you how to:
 
 Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing TFS.
 
-* [Install Active Directory Domain Services (Level 100)](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+* [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
 * [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
 
 ## Next steps

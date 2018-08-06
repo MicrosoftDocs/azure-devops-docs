@@ -116,7 +116,7 @@ For guidance in using the new form, see:
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
 - [VSTS Features Timeline](/vsts/release-notes/index)  
-- [REST API, Work Item Types](https://docs.microsoft.com/en-us/rest/api/vsts/processdefinitions/work%20item%20types)  
+- [REST API, Work Item Types](/rest/api/vsts/processdefinitions/work%20item%20types)  
 
 
 ### Will the new work item experience become permanent?  

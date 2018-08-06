@@ -33,5 +33,5 @@ A: It will remove the VSTS or Azure AD group from any project-level default grou
 
 ## Related articles
 
-- [Migrate to group-based resource management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/migrate-to-group-based-resource-management-in-vsts?view=vsts)
-- [Assign access levels and extensions to users by group membership](https://docs.microsoft.com/en-us/vsts/organizations/accounts/assign-access-levels-and-extensions-by-group-membership?view=vsts)
+- [Migrate to group-based resource management](/vsts/organizations/accounts/migrate-to-group-based-resource-management-in-vsts?view=vsts)
+- [Assign access levels and extensions to users by group membership](/vsts/organizations/accounts/assign-access-levels-and-extensions-by-group-membership?view=vsts)

@@ -582,7 +582,7 @@
     },
     {
       "source_path": "docs/integrate/api/overview.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/rest/api/vsts",
+      "redirect_url": "/rest/api/vsts",
       "redirect_document_id": false
     },
     {

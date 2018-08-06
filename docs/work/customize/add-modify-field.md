@@ -261,7 +261,7 @@ Using the [object model for tracking work items](https://docs.microsoft.com/prev
 
 ::: moniker range=">= tfs-2017 <=tfs-2018"
 
-Using [REST APIs for tracking work items](https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+Using [REST APIs for tracking work items](/rest/api/vsts/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
 Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=VSTS&sortBy=Relevance). For example:
 

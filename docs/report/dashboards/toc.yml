@@ -65,7 +65,7 @@
   - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
   - name: REST API, Dashboards
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/dashboard/
+    href: /rest/api/vsts/dashboard/
 - name: Resources
   items:
   - name: Agile

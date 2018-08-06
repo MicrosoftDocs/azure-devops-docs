@@ -236,7 +236,7 @@ To follow these procedures, you must be a member of the **Readers** group or hav
     ![Create a list connection between Excel and the data store](../../work/backlogs/office/_img/bulk-modify-excel-blank-list.png)
 
     > [!TIP]    
-    > If the **Team** ribbon no longer appears, you might need to [re-enable it](https://docs.microsoft.com/en-us/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
+    > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
 
 4.  Connect to a VSTS organization or a TFS instance and the project. If you can't connect, [get added as a team member](../security/add-users-team-project.md).
 

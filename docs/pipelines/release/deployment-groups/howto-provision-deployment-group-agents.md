@@ -199,7 +199,7 @@ To use the template:
 
    * **Copy Azure VM tags to agents**: When set (ticked), any tags already configured on the Azure VM will
      be copied to the corresponding deployment group agent. By default, all
-     [Azure tags](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-using-tags)
+     [Azure tags](/azure/azure-resource-manager/resource-group-using-tags)
      are copied using the format `Key: Value`. For example, `Role: Web`.
 
    ![Configuring the Azure Resource Group Deployment task](_img/howto-provision-azure-vm-agents/deploy-arg-task.png)

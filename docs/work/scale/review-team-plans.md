@@ -199,7 +199,7 @@ For additional resources for working with multiple teams, see these additional t
 
 <a id="plans-rest-api">  </a>
 ### Programmatically manage Delivery Plans  
-You can manage plans programmatically using the [REST API, Plans](https://docs.microsoft.com/en-us/rest/api/vsts/work/plans).
+You can manage plans programmatically using the [REST API, Plans](/rest/api/vsts/work/plans).
 
 
  

@@ -71,9 +71,9 @@
   - name: "Default permissions (Security)"
     href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/work/track/toc.json&bc=/vsts/work/track/breadcrumb/toc.json
   - name: REST API, Queries
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/queries 
+    href: /rest/api/vsts/wit/queries 
   - name: REST API, Wiql
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/wiql 
+    href: /rest/api/vsts/wit/wiql 
 - name: Resources
   items:
   - name: Work Items

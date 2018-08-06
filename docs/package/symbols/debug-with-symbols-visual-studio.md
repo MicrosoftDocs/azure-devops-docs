@@ -44,7 +44,7 @@ To debug the module, you can either:
 
 We recommend checking "Enable Source Link support" in Options > Debugging > General (it's checked by default).
 
-If you choose to enable source server support, please consider the [security implications](https://docs.microsoft.com/en-us/visualstudio/debugger/source-server-security-alert) before doing so.
+If you choose to enable source server support, please consider the [security implications](/visualstudio/debugger/source-server-security-alert) before doing so.
 
 ### Portable PDBs and Source Link
 

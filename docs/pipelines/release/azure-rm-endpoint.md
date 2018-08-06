@@ -88,9 +88,9 @@ Alternatively, if you are prepared to give the user additional (administrator-le
 you can make the user a member of the **Global administrator** role as follows:
 
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
-   The account should be an [owner](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner),
-   [global administrator](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
-   [user account administrator](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator). 
+   The account should be an [owner](/azure/role-based-access-control/built-in-roles#owner),
+   [global administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
+   [user account administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator). 
 
 1. Choose **Azure Active Directory** in the left navigation bar.
 

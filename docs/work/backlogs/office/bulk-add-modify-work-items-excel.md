@@ -301,7 +301,7 @@ If you want to disable the add-in, see [Add or remove an add-in](https://support
 
 ### Enable the Developer tab 
 
-See [Show the Developer Tab on the Ribbon](https://docs.microsoft.com/en-us/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon).
+See [Show the Developer Tab on the Ribbon](/visualstudio/vsto/how-to-show-the-developer-tab-on-the-ribbon).
 
 ### Excel for Mac 
 

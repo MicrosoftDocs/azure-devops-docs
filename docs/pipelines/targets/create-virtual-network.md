@@ -32,7 +32,7 @@ to create isolated networks of virtual machines.
 * You can have VMs from different networks residing in the same host machine and still be isolated from each other.
 * You can define IP address from the any IP pool of your choice for a VM Network.
 
-See also: [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/en-us/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server).
+See also: [Hyper-V Network Virtualization Overview](/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server).
 
 <a name="task-list"></a>
 
@@ -344,7 +344,7 @@ environments. You can create as many environments as you need with just a click 
 ## See also
 
 * [SCVMM deployment](scvmm.md)
-* [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/en-us/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server)
+* [Hyper-V Network Virtualization Overview](/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server)
 
 ## Q&A
 

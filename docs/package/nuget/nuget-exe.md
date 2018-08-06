@@ -26,7 +26,7 @@ NuGet 3 and later supports the Credential Provider, which automatically acquires
 
 [!INCLUDE [](../_shared/nuget/nuget-publish-endpoint.md)]
 
-Then, run any [nuget command](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference).
+Then, run any [nuget command](/nuget/tools/nuget-exe-cli-reference).
 
 ## Add a feed to NuGet 2
 NuGet 2 uses Personal Access Tokens to access feeds.
@@ -45,7 +45,7 @@ Run
 nuget.exe sources add -name {your feed name} -source {your feed URL} -username {anything} -password {your PAT}
 ```
 
-Then, run any [nuget command](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference).
+Then, run any [nuget command](/nuget/tools/nuget-exe-cli-reference).
 
 ## Download the credential provider directly
 You can download the credential provider directly from this link:

@@ -63,9 +63,9 @@ Manage billing
 Manage Marketplace extensions
 
 * [Change the number of paid users for a VSTS extension](change-number-paid-extension-users.md)
-* [Approve requests for extensions](https://docs.microsoft.com/en-us/vsts/marketplace/approve-extensions?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
-* [Assign paid extensions to users](https://docs.microsoft.com/en-us/vsts/marketplace/assign-paid-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
-* [Uninstall or disable extensions](https://docs.microsoft.com/en-us/vsts/marketplace/uninstall-disable-extensions?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
+* [Approve requests for extensions](/vsts/marketplace/approve-extensions?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
+* [Assign paid extensions to users](/vsts/marketplace/assign-paid-extensions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [Uninstall or disable extensions](/vsts/marketplace/uninstall-disable-extensions?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
 
 Guidance for Cloud Solution Providers
 
@@ -80,19 +80,19 @@ Guidance for Cloud Solution Providers
 
 ## Reference
 
-* [Permissions](https://docs.microsoft.com/en-us/vsts/organizations/security/permissions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
-* [About access levels](https://docs.microsoft.com/en-us/vsts/organizations/security/access-levels?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
-* [Default permissions & access](https://docs.microsoft.com/en-us/vsts/organizations/security/permissions-access?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [Permissions](/vsts/organizations/security/permissions?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [About access levels](/vsts/organizations/security/access-levels?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+* [Default permissions & access](/vsts/organizations/security/permissions-access?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 
 ::: moniker-end
 
 ## Other resources
 
-* [New User Guide](https://docs.microsoft.com/en-us/vsts/user-guide/?view=vsts)
+* [New User Guide](/vsts/user-guide/?view=vsts)
 
-* [Organization Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/index?view=vsts)
+* [Organization Management](/vsts/organizations/accounts/index?view=vsts)
 
-* [TFS Server Administration documentation](https://docs.microsoft.com/en-us/tfs/server/index?view=vsts)
+* [TFS Server Administration documentation](/tfs/server/index?view=vsts)
 
 * [Buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)

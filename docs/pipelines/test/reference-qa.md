@@ -238,7 +238,7 @@ on-demand test execution.
 ### Q: Should the agent run in interactive mode or as a service?
 
 **A:** If you are running UI tests such as
-[coded UI](https://docs.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code)
+[coded UI](/visualstudio/test/use-ui-automation-to-test-your-code)
 or [Selenium](continuous-test-selenium.md) tests,
 the agent on the test machines must be running in interactive mode with auto-logon enabled,
 not as a service, to allow the agent to launch a web browser. 

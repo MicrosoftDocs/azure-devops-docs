@@ -58,11 +58,11 @@
   - name:  Delivery plan keyboard shortcuts
     href: delivery-plan-keyboard-shortcuts.md
   - name: REST API, Teams
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/core/teams
+    href: /rest/api/vsts/core/teams
   - name: REST API, Plans
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/work/plans
+    href: /rest/api/vsts/work/plans
   - name: REST API, Area and Iteration Paths
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/classification%20nodes  
+    href: /rest/api/vsts/wit/classification%20nodes  
 - name: Resources
   items:
   - name: "Scale & Configure Teams"

@@ -8,7 +8,8 @@ ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2
 monikerRange: '>= tfs-2013'
 ms.topic: tutorial
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 03/20/2018
 ---
 
@@ -134,6 +135,6 @@ To customize the columns, swimlanes, or cards for each Kanban board, make sure y
 * [Add columns](add-columns.md)  
 * [Customize cards](../customize/customize-cards.md)  
 
-### REST API resources
-To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).
+### REST API resources/
+To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).
 

@@ -260,7 +260,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
 ## Add a project from the command line or scripts
 
-You can create and get projects and other VSTS items from the command line or scripts using the VSTS CLI. Check out the [VSTS CLI documentation](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest) to learn more.
+You can create and get projects and other VSTS items from the command line or scripts using the VSTS CLI. Check out the [VSTS CLI documentation](/cli/vsts/overview?view=vsts-cli-latest) to learn more.
 
 ::: moniker-end
 

@@ -28,7 +28,7 @@ There's a size limit of 10 MB for each secure file.
 
 ### How can I consume secure files in a Build or Release Pipeline?
 
-Use the [Download Secure File](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/utility/download-secure-file?view=vsts) Utility task to consume secure files within a Build or Release Pipeline.
+Use the [Download Secure File](/vsts/pipelines/tasks/utility/download-secure-file?view=vsts) Utility task to consume secure files within a Build or Release Pipeline.
 
 ### How can I create a custom task using secure files?
 

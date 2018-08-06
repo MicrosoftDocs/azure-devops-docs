@@ -83,7 +83,7 @@ To remove users or make an adjustment, sign in to VSTS, choose **Manage users**,
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Buy CI/CD](https://docs.microsoft.com/en-us/vsts/billing/buy-more-build-vs?view=vsts)
+> [Buy CI/CD](/vsts/billing/buy-more-build-vs?view=vsts)
 
 ## Related articles
 
