@@ -63,11 +63,11 @@ Learn the basics of CI/CD for your Java app using VSTS and a variety of tools.
 
 ## Reference
 
- - [Continuous Java testing with VSTS](/vsts/pipelines/test/continuous-test-java)
+ - [Continuous Java testing with VSTS](/vsts/pipelines/test/continuous-test-java.md)
 
 ## Resources
 
- - [VSTS CI/CD documentation](/vsts/pipelines/index)
+ - [VSTS CI/CD documentation](/vsts/pipelines/index.md)
  - [Get the IntelliJ plug-in](download-intellij-plug-in.md)
  - [Get the Eclipse plug-in](download-eclipse-plug-in.md)
  - [Get the Android Studio plug-in](download-android-studio-plug-in.md)

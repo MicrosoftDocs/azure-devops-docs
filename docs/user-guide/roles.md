@@ -34,7 +34,7 @@ Developers use Visual Studio or other [tools](tools.md) to develop their applica
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md).
 	- [Share your code in Git using Eclipses](../repos/git/share-your-code-in-git-eclipse.md).
 	- [Share your code in Git using Xcode](../repos/git/share-your-code-in-git-xcode.md).
-	- [Share your code in Git using IntelliJ](/vsts/java/download-intellij-plug-in).
+	- [Share your code in Git using IntelliJ](/../java/download-intellij-plug-in.md).
 	- [Get Started with Git and VSTS](../repos/git/gitquickstart.md).
 - To get started using TFVC, see one of the following resources: 
 	- [Develop and share your code in TFVC using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)
