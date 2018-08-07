@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 ### Overview
 
 ![icon](_img/azure-key-vault-icon.png) This task is used to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords
-from an [Azure Key Vault](https://docs.microsoft.com/en-us/rest/api/keyvault/about-keys--secrets-and-certificates) instance.
+from an [Azure Key Vault](https://docs.microsoft.com/rest/api/keyvault/about-keys--secrets-and-certificates) instance.
 The task can be used to fetch the latest values of all or a subset of secrets from the vault, and set them as variables that can be used in subsequent tasks of a pipeline.
 The task is Node-based, and works with agents on Linux, macOS, and Windows.
 
@@ -27,19 +27,19 @@ The task has the following pre-requisites:
 
 * An Azure subscription linked to Team Foundation Server or VSTS using the [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
-* An [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) containing the secrets.
+* An [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) containing the secrets.
 
 You can create a key vault:
 
 * In the [Azure portal](https://ms.portal.azure.com/#create/Microsoft.KeyVault)
 
-* By using [Azure PowerShell](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-get-started)
+* By using [Azure PowerShell](https://docs.microsoft.com/azure/key-vault/key-vault-get-started)
 
-* By using the [Azure CLI](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-manage-with-cli2)
+* By using the [Azure CLI](https://docs.microsoft.com/azure/key-vault/key-vault-manage-with-cli2)
 
 Add secrets to a key vault:
 
-* By using the PowerShell cmdlet [Set-AzureKeyVaultSecret](https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/set-azurekeyvaultsecret).
+* By using the PowerShell cmdlet [Set-AzureKeyVaultSecret](https://docs.microsoft.com/powershell/module/azurerm.keyvault/set-azurekeyvaultsecret).
   If the secret does not exist, this cmdlet creates it. If the secret already exists, this cmdlet creates a new version of that secret.
 
 * By using the Azure CLI. To add a secret to a key vault, for example a secret named **SQLPassword** with the value **Pa$$w0rd**, type:
