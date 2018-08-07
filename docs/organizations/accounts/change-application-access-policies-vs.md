@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/30/2018
+ms.date: 08/03/2018
 monikerRange: 'vsts'
 ---
 
@@ -40,6 +40,27 @@ When you deny access to an authentication method, no app can use that method to 
 To continue, you'll need at least Basic access and VSTS organization owner permissions.
 [How do I find the organization owner?](faq-change-app-access.md#find-owner)
 
+## Change application access policies
+
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+
+2. Choose ![gear icon](../../_img/icons/gear-icon.png), **Admin settings**.
+
+   ![Choose the gear, Admin settings icon](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. In the Policy tab, review your application connection settings. Change these settings, based on your security policies.
+
+   ![Under Application Connections, change each setting as necessary, save your changes](_img/change-application-access-policies/application-connection-policy-settings.png)
+
+   > [!Note] 
+   > Anonymous access is used to access both private and public repos. Go [here](../public/make-project-public.md) to learn more.
+
+# [Previous navigation](#tab/prev-nav)
+
 1. Sign in as the organization owner to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
@@ -50,6 +71,8 @@ To continue, you'll need at least Basic access and VSTS organization owner permi
 
 3. In the Policy tab, review your application connection settings. Change these settings, based on your security policies.
 
-    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-organization-access-policies/connections.png)
+    ![Under Application Connections, change each setting as necessary, save your changes](_img/change-application-access-policies/connections.png)
+
+---
 
    [Need help?](faq-change-app-access.md#get-support)

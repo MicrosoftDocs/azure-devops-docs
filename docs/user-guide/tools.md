@@ -46,10 +46,10 @@ Developers have access to a variety of tools through these versions of Visual St
 - **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size and those with a need to scale Supports designing, building and managing complex enterprise applications 
 - **Visual Studio Test Professional**: Provides access to Microsoft Test in addition to development tools to support quality and collaboration throughout the development process
 - **Visual Studio Team Explorer**: A free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
-- **[Eclipse/Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to VSTS or TFS  
-- **[Android Studio with the VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)**: Free plug-in to support Android developers and connect to Git repositories on VSTS or TFS
-- **[IntelliJ with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on VSTS or TFS 
-- **[Visual Studio Code](/vsts/java/vscode-extension)**: Free, open-source code editor with a free extension to support connecting to Git repositories on VSTS or TFS.  
+- **[Eclipse/Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connect to VSTS or TFS  
+- **[Android Studio with the VSTS Plugin for Android Studio](/../java/download-android-studio-plug-in.md)**: Free plug-in to support Android developers and connect to Git repositories on VSTS or TFS
+- **[IntelliJ with the VSTS Plugin for IntelliJ](/../java/download-intellij-plug-in.md)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on VSTS or TFS 
+- **[Visual Studio Code](/../java/vscode-extension.md)**: Free, open-source code editor with a free extension to support connecting to Git repositories on VSTS or TFS.  
 
 
 
@@ -91,7 +91,7 @@ The following clients support specific tasks, such as managing testing efforts, 
 
 ### Web portal
 
-The collaboration tools supported through the web portal are summarized under [Essential services](services.md). On VSTS, new features are deployed usually every three weeks, and for TFS, usually quarterly. For release notes, see [VSTS Features Timeline](/vsts/release-notes/index).
+The collaboration tools supported through the web portal are summarized under [Essential services](services.md). On VSTS, new features are deployed usually every three weeks, and for TFS, usually quarterly. For release notes, see [VSTS Features Timeline](/../release-notes/index).
  
 You can use these browsers to access the web portal (VSTS and TFS).
 
@@ -174,7 +174,7 @@ To learn more, visit the [Marketplace](https://marketplace.visualstudio.com) and
  
 The VSTS and TFS APIs are based on REST, OAuth, Json and service hooks&mdash;all standard web technologies broadly supported in the industry.
 
-REST APIs are provided to support building extensions to VSTS and TFS. To learn more, see [REST API overview](https://docs.microsoft.com/en-us/rest/api/vsts/).
+REST APIs are provided to support building extensions to VSTS and TFS. To learn more, see [REST API overview](https://docs.microsoft.com/rest/api/vsts/).
 
 
 

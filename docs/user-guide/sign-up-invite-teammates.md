@@ -60,7 +60,7 @@ Then enter your password, and finish signing in.
 
 	- **Project name**: You can specify your team project name. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ &#42; } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less.
    - **Organize work using**: The default work tracking process is set to **Agile**. If you want to work with Scrum or CMMI processes, then select those now.  You can't change the process after the team project is created. (To learn more, see [Choose process](../work/work-items/guidance/choose-process.md). 
-   - **Host your projects in**: You can choose between [several locations for where you want your data hosted](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location).
+   - **Host your projects in**: You can choose between [several locations for where you want your data hosted](https://www.microsoft.com/trustcenter/privacy/vsts-location).
  
 	<img src="_img/sign-up/change-details.png" alt="Choose details for your VSTS organization" style="border: 2px solid #C3C3C3;" />
 

@@ -110,11 +110,11 @@ except for their work history. Learn [how to manage VSTS organization users](add
 
 Alternate credentials won't work anymore for
 tools that run outside a web browser, like the Git command-line tool.  You'll have
-to [set up your credentials](http://support.microsoft.com/kb/2991274/en-us) again for the VSTS organization that you connected.
+to [set up your credentials](http://support.microsoft.com/kb/2991274/) again for the VSTS organization that you connected.
 
 ## What if I accidentally delete a user in Azure AD?
 
-You should [restore the user](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user will not be associated with the previous identity.
+You should [restore the user](https://docs.microsoft.com/azure/active-directory/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user will not be associated with the previous identity.
 
 ## Manage organization access with Azure AD
 

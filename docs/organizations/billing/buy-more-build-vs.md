@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.date: 07/31/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Quickstart: Buy CI/CD VSTS
 
@@ -21,7 +22,7 @@ In this quickstart, you'll learn how to buy private or hosted pipelines and chan
 With VSTS you can run builds and deploy releases using the Microsoft-hosted CI/CD service, your own machines, or both.
 We offer a **Free Tier** for each.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Microsoft-hosted CI/CD (formerly Hosted Pipelines)
 
@@ -101,9 +102,9 @@ The hosted XAML build controller is no longer supported.
   Organizations created on or after April 2016 do not have access to it.
   The hosted YAML model is our newest build model, and as a best practice, consider adopting it. Read more about it [here](../../pipelines/build/yaml.md).
 
-  > **Important:** If you have an organization where you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx),
-  > you should set up an [on-premises build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)
-  > and switch to an [on-premises build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx) now.
+  > **Important:** If you have an organization where you still need to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx),
+  > you should set up an [on-premises build server](https://msdn.microsoft.com/library/ms252495%28v=vs.120%29.aspx)
+  > and switch to an [on-premises build controller](https://msdn.microsoft.com/library/ee330987%28v=vs.120%29.aspx) now.
 
 <a name="change-paid-pipelines"></a>
 
@@ -122,7 +123,7 @@ When your team's needs for build or release capacity change, you can change the 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Start free trials](https://docs.microsoft.com/en-us/vsts/billing/try-additional-features-vs?view=vsts)
+> [Start free trials](try-additional-features-vs.md)
 
 ## Related articles
 

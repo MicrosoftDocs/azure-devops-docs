@@ -27,10 +27,10 @@ monikerRange: '>= tfs-2013'
 **A: To get started with a client tool:** 
 Go to one of these pages to download a version of Visual Studio or client tool plug-in that will support connecting to a team project: 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
-- [Eclipse/Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)  
-- [Android Studio with the VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)
-- [IntelliJ with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in) 
-- [Visual Studio Code](/vsts/java/vscode-extension)
+- [Eclipse/Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)  
+- [Android Studio with the VSTS Plugin for Android Studio](/../java/download-android-studio-plug-in.md)
+- [IntelliJ with the VSTS Plugin for IntelliJ](/../java/download-intellij-plug-in.md) 
+- [Visual Studio Code](/../java/vscode-extension.md)
 
 **A: To get started with sharing code, work item tracking, builds, or other tasks:** 
 See [Software development roles](roles.md).  

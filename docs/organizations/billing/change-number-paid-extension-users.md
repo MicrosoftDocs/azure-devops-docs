@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.date: 04/06/2018
+monikerRange: '>= tfs-2015'
 ---
-[//]: # (monikerRange: '>= tfs-2015')
+
 
 # Change the number of paid users for a VSTS extension
 
@@ -18,7 +19,7 @@ ms.date: 04/06/2018
 
 To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
@@ -41,12 +42,12 @@ You'll need VSTS
 
 The number of paid extension users is updated.
 
-> **To stop paying for an extension, [reduce the number of paid users to zero (0)](https://docs.microsoft.com/en-us/vsts/marketplace/how-to/change-paid-extension-users?view=vsts).**
+> **To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension).**[Change the number of paid users for a VSTS extension](#change-the-number-of-paid-users-for-a-vsts-extension)
 
 ## Next steps
 
 - [Assign features or extensions to users](../../marketplace/assign-paid-extensions.md)
-- [Uninstall or disable extensions](https://docs.microsoft.com/en-us/vsts/marketplace/uninstall-disable-extensions?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
+- [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=%2Fvsts%2Fbilling%2Ftoc.json&bc=%2Fvsts%2Fbilling%2Fbreadcrumb%2Ftoc.json&view=vsts)
 
 ## Related articles
 
