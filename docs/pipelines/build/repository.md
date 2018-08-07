@@ -337,6 +337,13 @@ Select if you want to limit how far back in history to download. Effectively thi
 
 In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download.
 
+> [!NOTE]
+> When the build is queued, the branch to build is resolved to a commit ID. Then, the agent
+> fetches the branch and checks out the desired commit. There is a small window between when a branch
+> is resolved to a commit ID and when the agent performs the checkout. If the branch updates rapidly
+> and you set a very small value for shallow fetch, the commit may not exist when the agent attempts
+> to check it out. If that happens, increase the shallow fetch depth setting.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
