@@ -1,5 +1,6 @@
 ---
-title: Set project-level or collection-level permissions for VSTS & TFS
+title: Set project-level or collection-level permissions 
+titleSuffix: VSTS & TFS
 description: How-to guide to set project-level permissions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-security
@@ -8,11 +9,11 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
+ms.date: 08/06/2017
 ---
 
-# Quickstart: Set permissions at the project-level or project collection-level
+# Set permissions at the project-level or project collection-level
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -60,32 +61,74 @@ As roles and responsibilities change, you might need to change the permission le
 
 Here we show how to add a user to the built-in Project Administrators group. The method is similar to adding an Azure Active Directory or Active Directory group. 
 
-0. Open the admin context from the user/team project context, click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
-0. Click the security group, Project Administrators, and then click Members, and then click **Add**.  
+# [New navigation](#tab/new-nav)
 
-	<img src="_img/project-level-permissions-add-member.png" alt="Web portal, Admin context, Security hub, Add member" style="border: 1px solid #C3C3C3;" /> 
+::: moniker range="vsts"  
 
-0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Click the match(es) that meets your choice. 
+0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
+0. Choose **Project Settings** and then **Security**.
+
+	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+
+0. Choose **Project Administrators** group, **Members**, and then **Add**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Admin context, Security hub, Add member](_img/project-level-permissions-add-member.png) 
+
+0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 
 	> [!NOTE]   
 	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-0. Click Save changes and you'll notice the user Project Administrators, and then click Members, and then click **Add**.  
- 
-	<img src="_img/project-level-permissions-member-added.png" alt="Web portal, Admin context, Security hub, Members of Project Administrators group" style="border: 1px solid #C3C3C3;" /> 
+0. Choose **Save changes**. Choose the ![](../../_img/icons/refresh.png) refresh icon to see the additions.  
+::: moniker-end  
+
+::: moniker range=">= tfs-2015  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
+
+0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open the administrative context.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Project Settings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
+
+0. Choose **Security**, **Project Administrators** group, **Members**, and then **Add**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Admin context, Security hub, Add member](_img/project-level-permissions-add-member.png) 
+
+0. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. The system will automatically search for matches. Choose the match(es) that meets your choice. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
+
+	> [!NOTE]   
+	> Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
+
+0. Choose **Save changes**. Choose the ![](../../_img/icons/refresh.png) refresh icon to see the additions.  
+
+---
+
 
 ## Change the permission level for a project-level group 
 
-0. To open the admin context from the user/team project context, click the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and click the **Security** tab. 
-
-0. Click the group whose permissions you want to change. 
+0. From the **Security** page, choose the group whose permissions you want to change. 
 
 	For example, here we grant permission to the Contributors group to delete and restore work items.  
 
-	<img src="_img/project-level-permissions-contributors-group.png" alt="Default Collections level groups and permissions" style="border: 1px solid #C3C3C3;" />  
+	> [!div class="mx-imgBorder"]  
+	> ![Contributors group, permissions](_img/project-level-permissions-contributors-group.png)  
 
 	> [!TIP]   
 	> In general, if you add a user to the Contributors group, they will be able to add and modify work items. You can restrict permissions of users or user groups to add and modify work items based on the area path. For details, see [Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path).
@@ -95,36 +138,85 @@ Here we show how to add a user to the built-in Project Administrators group. The
 	> [!NOTE]   
 	> You can't change the permission settings for the Project Administrators group. This is by design.  
 
-0. Click **Save changes**.   
+0. Choose **Save changes**.   
 
 <a id="collection-level" />
 ## Add a group and change its permissions at the organization or collection-level group 
 
-0. Open the admin context for the organization or collection. Click the ![gear icon](_img/icons/gear_icon.png) gear Settings icon and choose **Organization Settings** (VSTS) or **Collection Settings** (TFS), and then click the **Security** tab. 
 
-0. Click Create group to open the dialog for adding a group. 
+# [New navigation](#tab/new-nav)
 
-	<img src="_img/project-level-permissions-create-group.png" alt="Create security group at the organization or collection level" style="border: 1px solid #C3C3C3;" /> 
+::: moniker range="vsts"  
+
+0. Choose the ![](/vsts/_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization settings](/vsts/_shared/_img/settings/open-admin-settings-vert.png)  
+
+0.	Choose **Security**, and then choose **Create group** to open the dialog for adding a group. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Create security group at the organization or collection level](_img/project-level-permissions-create-group.png)  
 
 0. Enter a name for the group, and optionally a description. 
  
 	For example, here we define a Work Tracking Administrators group.  
-
-	<img src="_img/project-level-permissions-add-group.png" alt="Security group dialog, Add a security group at the organization or collection level" style="border: 1px solid #C3C3C3;" /> 
-
+	![Security group dialog, Add a security group at the organization or collection level](_img/project-level-permissions-add-group.png)  
 	For a description of each permission, see [Permissions and groups reference, collection-level permissions](permissions.md#collection-level).
 
-0. Click the group name you just created and change the permission levels. 
+0. Choose the group name you just created and change the permission levels. 
 
 	Here we grant this group permissions to [manage customizations for the Inheritance process model](../settings/work/manage-process.md). 
 
-	<img src="_img/collection-level-permissions-work-tracking-group.png" alt="Security group dialog, Add a security group at the organization or collection level" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Custom group, permissions](_img/collection-level-permissions-work-tracking-group.png)   
 
-0. Click **Save changes**.   
+0. Choose **Save changes**.   
 
-> [!NOTE]   
-> You can't change the permission settings for the Project Collection Administrators group. This is by design.  
+	> [!NOTE]   
+	> You can't change the permission settings for the Project Collection Administrators group. This is by design. 
+::: moniker-end  
 
+::: moniker range=">= tfs-2015  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings** (VSTS) or **Collection Settings** (TFS).
+ 
+	> [!IMPORTANT]  
+	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/work/customize/customize-work).
+	
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization Settings](/vsts/_shared/_img/settings/open-account-settings.png)  
+
+0.	Choose **Security**, and then choose **Create group** to open the dialog for adding a group. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Create security group at the organization or collection level](_img/project-level-permissions-create-group.png)  
+
+0. Enter a name for the group, and optionally a description. 
+ 
+	For example, here we define a Work Tracking Administrators group.  
+	![Security group dialog, Add a security group at the organization or collection level](_img/project-level-permissions-add-group.png)  
+	For a description of each permission, see [Permissions and groups reference, collection-level permissions](permissions.md#collection-level).
+
+0. Choose the group name you just created and change the permission levels. 
+
+	Here we grant this group permissions to [manage customizations for the Inheritance process model](../settings/work/manage-process.md). 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Custom group, permissions](_img/collection-level-permissions-work-tracking-group.png)   
+
+0. Choose **Save changes**.   
+
+	> [!NOTE]   
+	> You can't change the permission settings for the Project Collection Administrators group. This is by design.  
+
+---
+
+::: moniker range=">= tfs-2013  <= tfs-2018" 
 ## On-premises TFS
 
 For on-premises TFS, see these additional topics: 
@@ -136,6 +228,8 @@ If your TFS deployment is integrated with a SharePoint product or SQL Server Rep
 
 -  [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md) 
 -  [Grant permissions to view or create SQL Server reports in TFS](../../report/admin/grant-permissions-to-reports.md). 
+
+::: moniker-end 
 
 ## Related notes
 

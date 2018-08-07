@@ -10,9 +10,11 @@ ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 07/13/2018
 monikerRange: '>= tfs-2013'
+ms.date: 08/06/2017
 ---
+
+
 # Permissions and groups in VSTS and TFS
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
@@ -743,20 +745,20 @@ You manage project-level permissions from the [web portal admin context](../../p
 		<th width="70%">Description</th>
 	</tr>
 	<tr>
+		<td id="bypass-rules-permission">Bypass rules on work item updates</td>
+		<td><p>Users with this permission can save a work item that ignores rules, such as [assign value rules or conditional rules](../../work/customize/reference/apply-rule-work-item-field.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).</p></td>
+	</tr>
+	<tr>
+		<td id="change-process-team-project-permission">Change process of team project</td>
+		<td>Can change the Inheritance process for a team project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to VSTS only. </td>
+	</tr>
+	<tr>
 		<td id="create-tag-definition-permission">Create tag definition</td>
 		<td>Can add tags through a work item form.</td>
 	</tr>
 	<tr>
 		<td id="create-test-runs-permission">Create test runs</td>
 		<td>Can add and remove test results and add or modify test runs.</td>
-	</tr>
-	<tr>
-		<td id="delete-team-project-permission">Delete team project</td>
-		<td>Can [delete the team project](../projects/delete-project.md) from the collection.</td>
-	</tr>
-	<tr>
-		<td id="delete-test-runs-permission">Delete test runs</td>
-		<td>Can delete a scheduled test.</td>
 	</tr>
 	<tr>
 		<td id="delete-work-items-in-this-project-permission">
@@ -767,6 +769,19 @@ You manage project-level permissions from the [web portal admin context](../../p
 <li>For TFS 2015 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li>    
 </ul>
 </td>
+	</tr>
+	<tr>
+		<td id="delete-shared-analytic-views-permission">Delete shared Analytics view</td>
+		<td>Can delete [Analytics views](../../report/analytics/analytics-views-manage.md)
+that have been saved under the Shared area. Applies to VSTS only.</td>
+	</tr>
+	<tr>
+		<td id="delete-team-project-permission">Delete team project</td>
+		<td>Can [delete the team project](../projects/delete-project.md) from the collection.</td>
+	</tr>
+	<tr>
+		<td id="delete-test-runs-permission">Delete test runs</td>
+		<td>Can delete a scheduled test.</td>
 	</tr>
 	<tr>
 		<td id="edit-team-project-level-information-permission">Edit team project-level information</td>
@@ -791,9 +806,13 @@ You manage project-level permissions from the [web portal admin context](../../p
 		</td>
 	</tr>
 	<tr>
+		<td id="edit-shared-analytic-views-permission">Edit shared Analytics view</td>
+		<td>Can create and modify [shared Analytics views](../../report/analytics/analytics-views-manage.md). Applies to VSTS only.</td>
+	</tr>
+	<tr>
 		<td id="manage-team-project-property-permission">Manage project properties</td>
 		<td>
-			Can provide or edit metadata for a team project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](https://visualstudio.microsoft.com/docs/integrate/api/tfs/projects#set-project-properties). 
+			Can provide or edit metadata for a team project. For example, a user can provide high-level information about the contents of a project. Changing metadata is supported through the [Set project properties REST API](/rest/api/vsts/core/projects/set%20project%20properties). 
 		</td>
 	</tr>
 	<tr>
@@ -802,14 +821,13 @@ You manage project-level permissions from the [web portal admin context](../../p
 	</tr>
 	<tr>
 		<td id="manage-test-environments-permission">Manage test environments</td>
-		<td>Users who have this permission can create and delete test environments.</td>
+		<td>Can create and delete test environments.</td>
 	</tr>
 	<tr>
 		<td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
 		<td>Can [move a work item from one team project to another team project](../../work/backlogs/remove-delete-work-items.md) within the collection. Applies to VSTS only.
 		</td>
 	</tr>
-
 	<tr>
 		<td id="permanently-delete-work-items-in-this-project-permission">Permanently delete work items in this project</td>
 		<td>Can [permanently delete work items](../../work/backlogs/remove-delete-work-items.md) from this project.</td>
@@ -817,6 +835,14 @@ You manage project-level permissions from the [web portal admin context](../../p
 	<tr>
 		<td id="rename-team-project-permission">Rename team project</td>
 		<td>Can [change the name of the team project](../projects/rename-project.md).</td>
+	</tr>
+	<tr>
+		<td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
+		<td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update).</p></td>
+	</tr>
+	<tr>
+		<td id="update-project-visibility">Update project visibility</td>
+		<td>Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to VSTS only.</td>
 	</tr>
 	<tr>
 		<td id="view-analytics-permission">View analytics</td>
@@ -855,19 +881,19 @@ The following permissions are defined for each shared Analytics view. All valid 
 		<th width="70%">Description</th>
 	</tr>
 	<tr>
-		<td id="av-delete-permission">Delete</td>
+		<td id="av-delete-permission">Delete shared Analytics views</td>
 		<td>
 			Can delete the shared Analytics view.
 		</td>
 	</tr>
 	<tr>[]
-		<td id="av-edit-permission">Edit</td>
+		<td id="av-edit-permission">Edit shared Analytics views</td>
 		<td>
 			Can change the parameters of the shared Analytics view.
 		</td>
 	</tr>
 	<tr>
-		<td id="av-view-permission">View</td>
+		<td id="av-view-permission">View shared Analytics views</td>
 		<td>
 			Can view and use the shared Analytics view from Power BI desktop. 
 		</td>
@@ -1091,6 +1117,20 @@ By default, the team project level and collection level Readers groups have only
 	</tr>
 -->
 	<tr>
+		<td id="git-bypass-policies-when-completing-pull-requests">Bypass policies when completing pull requests</td>
+		<td>
+		Can opt-in to override branch policies by checking **Override branch policies and enable merge** when completing a PR.<br><br>
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to VSTS only.
+		</td>
+	</tr>
+	<tr>
+		<td id="git-bypass-policies-when-pushing">Bypass policies when pushing</td>
+		<td>
+		Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.<br><br>
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to VSTS only.
+		</td>
+	</tr>
+	<tr>
 		<td id="git-contribute-permission">Contribute</td>
 		<td>
 		At the repository level, can push their changes to existing branches in the repository and can complete pull requests. Users who lack this permission but who have [create branch](#git-create-branch-permission) may push changes to new branches. Does not override restrictions in place from [branch policies](../../repos/git/branch-policies.md).<br>
@@ -1099,12 +1139,12 @@ By default, the team project level and collection level Readers groups have only
 	</tr>
 
 	<tr>
-		<td id="git-contribute-to-pull-requests-permission">Contribute to Pull Requests</td>
+		<td id="git-contribute-to-pull-requests-permission">Contribute to pull requests</td>
 		<td>Can create, comment on, and vote on pull requests.</td>
 	</tr>
 
 	<tr>
-		<td id="git-create-branch-permission">Create Branch</td>
+		<td id="git-create-branch-permission">Create branch</td>
 		<td>
 			Can create and publish branches in the repository. 
 			Lack of this permission does not limit users from creating branches in their local repository; it merely prevents them from publishing local branches to the server.
@@ -1112,31 +1152,31 @@ By default, the team project level and collection level Readers groups have only
 		</td>
 	</tr>
 	<tr>
-		<td id="git-create-repository-permission">Create Repository</td>
+		<td id="git-create-repository-permission">Create repository</td>
 		<td>
 		Can create new repositories. This permission is only available from the Security dialog for the top-level **Git repositories** object. 
 		</td>
 	</tr>
 	<tr>
-		<td id="git-create-tag-permission">Create Tag</td>
+		<td id="git-create-tag-permission">Create tag</td>
 		<td>
 			Can push tags to the repository.
 		</td>
 	</tr>
 	<tr>
-		<td id="git-delete-repository-permission">Delete Repository</td>
+		<td id="git-delete-repository-permission">Delete repository</td>
 		<td>
 		Can delete the repository. At the top-level **Git repositories** level, can delete any repository.
 		</td>
 	</tr>
 	<tr>
-		<td id="git-edit-policies-permission">Edit Policies</td>
+		<td id="git-edit-policies-permission">Edit policies</td>
 		<td>
 		Can edit policies for the repository and its branches.
 		</td>
 	</tr>
 	<tr>
-		<td id="git-exempt-from-policy-permission">Exempt From Policy Enforcement</td>
+		<td id="git-exempt-from-policy-permission">Exempt From policy enforcement</td>
 		<td>
 		Can bypass branch policies and perform the following two actions:<br>
         <ul>
@@ -1144,37 +1184,22 @@ By default, the team project level and collection level Readers groups have only
           <li>Push directly to branches that have branch policies set</li>
         </ul>
         <br>
-        <b>This permission is present in TFS 2015 through TFS 2018 Update 2. [In VSTS it is replaced with the following two permissions](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection).</b>
+        <b>Applies to TFS 2015 through TFS 2018 Update 2. (In VSTS it is replaced with the following two permissions](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection); **Bypass policies when completing pull requests** and **Bypass policies when pushing**.)</b>
 		</td>
 	</tr>
 	<tr>
-		<td id="git-bypass-policies-when-completing-pull-requests">Bypass policies when completing pull requests</td>
-		<td>
-		Can opt-in to override branch policies by checking **Override branch policies and enable merge** when completing a PR.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b> in the current version of VSTS.
-		</td>
-	</tr>
-	<tr>
-		<td id="git-bypass-policies-when-pushing">Bypass policies when pushing</td>
-		<td>
-		Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b> in the current version of VSTS.
-		</td>
-	</tr>
-
-	<tr>
-		<td id="git-force-push-permission">Force Push (Rewrite History and Delete Branches)</td>
+		<td id="git-force-push-permission">Force push (rewrite history, delete branches and tags)</td>
 		<td>
 		Can force an update to a branch, delete a branch, and modify the commit history of a branch. Can delete tags and notes.
 		</td>
 	</tr>
 	<tr>
-		<td id="git-note-management-permission">Manage Notes</td>
+		<td id="git-note-management-permission">Manage notes</td>
 		<td>
 			Can push and edit Git notes.  
 		</td>
 	</tr>
-		<td id="git-create-repository-permission">Manage Permissions</td>
+		<td id="git-create-repository-permission">Manage permissions</td>
 		<td>
 		Can set permissions for the repository.
 		</td>
@@ -1186,13 +1211,13 @@ By default, the team project level and collection level Readers groups have only
 		</td>
 	</tr>
 	<tr>
-		<td id="git-remove-others-locks-permission">Remove Others' Locks</td>
+		<td id="git-remove-others-locks-permission">Remove others' locks</td>
 		<td>
 			Can remove [branch locks](../../repos/git/lock-branches.md) set by other users. Locking a branch blocks any new commits from being added to the branch by others and prevents other users from changing the existing commit history. 
 		</td>
 	</tr>
 	<tr>
-		<td id="git-rename-repository-permission">Rename Repository</td>
+		<td id="git-rename-repository-permission">Rename repository</td>
 		<td>
 			Can change the name of the repository. When set at the top-level **Git repositories** entry, can change the name of any repository.
 		</td>
@@ -1628,17 +1653,20 @@ Consider granting the Contribute permissions to users or groups that require the
 
 <a id="plan-permissions">  </a>
 
-::: moniker range="vsts || >= tfs-2017"
+::: moniker range=">= tfs-2017"
 
 
 ## Delivery Plans (object-level)   
 
 You manage plan permissions through the [web portal](set-permissions-access-work-tracking.md#plan-permissions). You manage permissions for each plan through it's Security dialog. Project Administors are granted all permissions to create, edit, and manage plans. Valid users are granted View (read-only) permissions. 
+::: moniker-end  
 
+::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!NOTE]  
-> For VSTS and TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+> For TFS 2017.2 and later versions, you can access plans by installing the [Delivery Plans Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans).
+::: moniker-end  
 
-
+::: moniker range=">= tfs-2017"
 <table valign="top" width="100%">
 <tbody valign="top">
 	<tr>
@@ -1686,16 +1714,12 @@ You can manage the permissions for each inherited process that you create  throu
 		<td>Can set or change the permissions for an inherited process.  </td>
 	</tr>
 	<tr>
-		<td id="create-process-permission">Create process</td>
-		<td>Can create an inherited process from a system process, or copy an inherited process.   </td>
-	</tr>
-	<tr>
 		<td id="delete-process-permission">Delete process</td>
 		<td>Can delete the inherited process.  </td>
 	</tr>
 	<tr>
 		<td id="edit-process-permission">Edit process</td>
-		<td>Can modify the inherited process.  </td>
+		<td>Can create an inherited process from a system process, or copy or modify an inherited process.  </td>
 	</tr>
 </tbody>
 </table>
@@ -1999,7 +2023,7 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 
 
 
-## Related notes
+## Related articles
 
 - [About permissions](about-permissions.md)  
 - [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)   
