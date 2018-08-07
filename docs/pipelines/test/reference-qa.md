@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for continuous testing and test automation
 
-[!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
-
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end

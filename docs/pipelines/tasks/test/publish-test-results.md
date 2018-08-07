@@ -1,6 +1,6 @@
 ---
 title: VSTS and TFS Build and Test - Publish Test Results task
-description: Publish Test Results with the Visual Studio to integrate cloud-based load tests into your build and release pipelines 
+description: Publish Test Results to integrate cloud-based load tests into your build and release pipelines 
 ms.assetid: 6D7152C7-2CC7-4CB3-8002-2498650A2509
 ms.prod: devops
 ms.technology: devops-cicd
@@ -50,7 +50,7 @@ The build agent must have the following capabilities:
 | Argument | Description |
 | -------- | ----------- |
 | **Test result format** | Specify the format of the results files you want to publish. The following formats are supported.<br /> - Version 1 of the task: [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html), [NUnit 2](http://nunit.org/documentation/), Visual Studio Test Results (TRX)<br />- Version 2 of the task: [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html), [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test Results (TRX) |
-| **Test results files** | Use this to specify one or more test results files.<br />- Version 1 of the task: You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. Multiple paths can be specified, separated by a semicolon.<br />- Version 2 of the task: Uses the [minimatch patterns](../file-matching-patterns.md). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. |
+| **Test results files** | Use this to specify one or more test results files.<br />- Version 1 of the task: You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. Multiple paths can be specified, separated by a semicolon.<br />- Version 2 of the task: Also accepts [minimatch patterns](../file-matching-patterns.md). For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. |
 | **Search folder** | Available only in version 2 of the task. Folder to search for the test result files. Default is `$(System.DefaultWorkingDirectory)` |
 | **Merge test results** | When this option is selected, test results from all the files will be reported against a single test run. If this option is not selected, a separate test run will be created for each test result file. |
 | **Test run title** | Use this option to provide a name for the test run against which the results will be reported. Variable names declared in the build or release process can be used. |
