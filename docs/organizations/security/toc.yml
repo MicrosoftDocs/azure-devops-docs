@@ -81,15 +81,13 @@
   - name: Set permissions to access a SharePoint project portal
     href: set-sharepoint-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
   - name: Sign-in to the web or a client
-    href: ../../user-guide/connect-team-projects.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
+    href: ../projects/connect-to-projects.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
   - name: Authenticate access with personal access tokens
     href: ../accounts/use-personal-access-tokens-to-authenticate.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json
 - name: Troubleshooting
   items:
-  - name: Resolve connection issues
-    href: ../../user-guide/troubleshoot-connection.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
-  - name: Add and delete account users
-    href: ../accounts/faq-add-delete-users.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json   
+  - name: Add and delete users
+    href: ../accounts/faq-add-delete-users.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
   - name: Add team members
     href: ../accounts/faq-add-team-members.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json   
   - name: Access with Azure AD
@@ -100,6 +98,8 @@
     href: ../accounts/faq-add-administrators.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json   
   - name: Manage group-based licensing
     href: ../accounts/faq-manage-group-based-licensing.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json   
+  - name: Resolve connection issues
+    href: ../../user-guide/troubleshoot-connection.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
   - name: "TF31002: Unable to connect"
     href: ../../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json   
   - name: Network connections
@@ -126,13 +126,11 @@
     href: /rest/api/vsts/security/permissions 
 - name: Resources
   items:
-  - name: Account Management (VSTS)
+  - name: Organization Management 
     href: ../accounts/index.md
-  - name: Server Administration (TFS) 
+  - name: TFS Server Administration 
     href: /tfs/server/index
   - name: Authentication guidance for REST APIs
     href: ../../integrate/get-started/authentication/authentication-guidance.md
-  - name: Security REST APIs
-    href: /rest/api/vsts/security/
   - name: Technical Articles
     href: ../../articles/index.md

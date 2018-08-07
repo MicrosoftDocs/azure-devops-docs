@@ -1,5 +1,6 @@
 ---
-title: Find an admin or account owner for VSTS or TFS
+title: Find an admin or account owner 
+titleSuffix: VSTS & TFS
 description: Steps for how to look up users who can help you gain access or change your permissions, project collection admin or project owner 
 ms.prod: devops
 ms.technology: devops-security
@@ -8,8 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 12/12/2017
 monikerRange: '>= tfs-2013'
+ms.date: 08/06/2017
 ---
 
 
@@ -30,44 +31,140 @@ For an overview of built-in security groups and default permission assignments, 
 
 If you aren't a project administrator, and you need to be, find someone who is, and have them add you. You can find who is a member of the Project Administrators group by choosing that group from the **Project Settings>Security** page and seeing who are members. 
  
-0. From the web portal of your project, choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon.
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"  
+
+0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+
+0. Choose **Project Settings** and then **Security**.
+
+	[ ![Project Settings>Security](_img/view-permissions/open-security-project-level-vert.png)](_img/view-permissions/open-security-project-level-vert-expanded.png#lightbox) 
+
+0. Choose the **Members** tab.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Security tab, Project Administrators Group, Members tab](_img/view-permissions-project-level-membership.png) 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
+
+0.  Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Project Settings**.
+
+   ![Open Project Setttings, horizontal nav](../../_shared/_img/settings/open-project-settings-horz.png)  
 
 0. Choose the **Security** page, **Project Administrators** group, and the **Members** tab.  
 
-	<img src="_img/view-permissions-project-level-membership.png" alt="Web portal, Security tab, Project Administrators Group, Members tab" style="border: 2px solid #C3C3C3;" />
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, Security tab, Project Administrators Group, Members tab](_img/view-permissions-project-level-membership.png) 
 
+---
 
 ## Determine who is a member of the Project Collection Administrators group
 
 If you need elevated permissions, you'll have to request them from a member of the [Project Collection Administrators group](set-project-collection-level-permissions.md). Project collection administrators manage features and functions that impact all projects. 
 
-To find out who is a member, check the Security settings at the collection level. 
+To find out who is a member, check the **Security** settings at the collection level. 
 
-0.	From the web portal, click the ![gear icon](../../_img/icons/gear-icon.png) gear icon and choose the **Security** page, **Project Collection Administrators** group, and then **Members**. 
 
-	<img alt="Click gear button, Security" src="_img//view-permissions/collection-admins.png" style="border: 1px solid #CCCCCC" />
-  
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"  
+
+0. Choose the ![](/vsts/_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization settings](/vsts/_shared/_img/settings/open-admin-settings-vert.png)  
+
+0. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins-vert.png)  
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings**.
+ 
+	> [!IMPORTANT]  
+	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/work/customize/customize-work).
+	
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization Settings](/vsts/_shared/_img/settings/open-account-settings.png)  
+
+0.	Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
+
+	![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins.png)
+
+
+---
+
+
 ::: moniker range="vsts"
 
 <a name="find-owner"></a>
 
 ## Look up the account owner 
+::: moniker-end
 
-0.	Open the admin context for your account.  
+# [New navigation](#tab/new-nav)
 
-	<img alt="Go to account settings" src="../../_shared/_img/organization-settings-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
+::: moniker range="vsts"  
+
+0. Choose the ![](/vsts/_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization settings](/vsts/_shared/_img/settings/open-admin-settings-vert.png)  
+
+0.	Choose **Overview** to find the current owner.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
+
+	To change the owner, see [Change organization owner ](../accounts/change-organization-ownership-vs.md). 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings**.
+ 
+	> [!IMPORTANT]  
+	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/work/customize/customize-work).
+	
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization Settings](/vsts/_shared/_img/settings/open-account-settings.png)   
 
 0.	Under **Settings**, find the current owner.
 
-	<img alt="Find current owner" src="../../_shared/_img/organization-owner-new-ui.png" style="border: 1px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Organization settings, Organization owner](../../_shared/_img/settings/organization-settings-info.png)
 
-	To change the account owner, see [Change account ownership](../accounts/change-organization-ownership-vs.md). 
+	To change the account owner, see [Change organization owner ](../accounts/change-organization-ownership-vs.md). 
 
-::: moniker-end
 
-<!---
-## Find out who is a team administrator for a specific team
---> 
+---
+
 
 
 ## Try this next
