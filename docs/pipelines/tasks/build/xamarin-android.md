@@ -76,7 +76,7 @@ Use a [variable](../../build/variables.md) to specify the folder where you want 
 <tr>
 <td>Additional Arguments</td>
 <td>
-You can pass additional arguments to MSBuild (on Windows) or xbuild (on macOS). For syntax, see [MSBuild Command-Line Reference](https://msdn.microsoft.com/en-us/library/ms164311.aspx).
+You can pass additional arguments to MSBuild (on Windows) or xbuild (on macOS). For syntax, see [MSBuild Command-Line Reference](https://msdn.microsoft.com/library/ms164311.aspx).
 </td>
 </tr>
 <tr>

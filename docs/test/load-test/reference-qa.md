@@ -524,6 +524,20 @@ allows you to run cloud-based load tests. See
 
 [Go to related topic &gt;](get-performance-data-for-load-tests.md)
 
+<a name="inject-url-variables"></a>
+
+### Q: Can I define load tests once and then run them against different hosts?
+
+**A**: Yes. Use context parameters to pass information and change values for parameters in the load test:
+
+1. Parameterize the URLs in your web test
+1. Add matching context parameters to your load test **runsettings** file.
+   To do this expand **Run Settings** in the load test editor, right-click your **[Active]** run settings entry, then choose **Add Context Parameter**.
+
+If you are running load tests in the CI/CD pipeline where the URL of the app may change from environment to environment,
+you can use the [Cloud Load Test task](../../pipelines/tasks/test/cloud-based-load-test.md). It enables you to override the context parameter value from the task UI and
+use any environment variables defined in the pipeline to pass in the required information.
+
 ### Q: Can I get more detailed profiler information?
 
 **A**: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-profiler).
@@ -543,6 +557,7 @@ for your app there. If you see data collected there, report your issue to
 [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com). 
 
 <a name="qaconnectts"></a>
+
 ### Q: Why do I get an "Unable to connect to VSTS due to network failure" error when trying to add apps using the Get Performance Data from Application Insights menu command?
  
 **A**: This can happen because:

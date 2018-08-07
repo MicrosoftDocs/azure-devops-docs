@@ -54,13 +54,13 @@ You will:
 
 * An Azure subscription. You can get one free from [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* The [Azure Command-Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/index?view=azure-cli-latest).
+* The [Azure Command-Line Interface (CLI)](https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest).
 
 * You need a Spring Boot app.  You can fork the sample app found [here](https://github.com/spring-guides/gs-spring-boot-docker.git).
 
-* You need An Azure Container Registry (ACR).  You can follow  steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-acr#deploy-azure-container-registry).
+* You need An Azure Container Registry (ACR).  You can follow  steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-prepare-acr#deploy-azure-container-registry).
 
-* An AKS cluster.  You can follow the steps for creating this [here](https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster).
+* An AKS cluster.  You can follow the steps for creating this [here](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-deploy-cluster).
 
 * Access to a Jenkins server with Maven and the VSTS plugin configured. If you have not yet created a Jenkins server,
   see [Create a Jenkins master on an Azure Virtual Machine](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template).  Also, the following Jenkins plugins must be installed:
@@ -367,7 +367,7 @@ The second task deploys to the AKS cluster:
 
 1. Set **Container Registry type** to **Azure Container Registry**.
 
-1. Set **Azure subscription** to your subscription.  If you do not have an existing Azure connection in VSTS, you can follow the steps [here](https://docs.microsoft.com/vsts/pipelines/library/connect-to-azure) to create one.
+1. Set **Azure subscription** to your subscription.  If you do not have an existing Azure connection in VSTS, you can follow the steps [here](../library/connect-to-azure.md) to create one.
 
 1. Set **Azure Container Registry** to the name of your ACR. 
 
@@ -398,7 +398,7 @@ You can initiate the CI build and the subsequent CD deployment to Azure by compl
 You are now using Jenkins CI builds with a VSTS code repository and release pipeline to perform CI/CD to **Azure Container Services (AKS)**.  You can easily track your code changes and deployments via the rich reporting capabilities of VSTS, and leverage Jenkins to execute CI builds.
 
 ## View the deployed sample app
-Once the app is deployed to the AKS cluster, you can query the external IP address using  **kubectl**, the Kubernetes command-line client.  You can learn how to install and connect **kubectl** to your AKS Cluster by following [these steps](https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster#install-the-kubectl-cli).
+Once the app is deployed to the AKS cluster, you can query the external IP address using  **kubectl**, the Kubernetes command-line client.  You can learn how to install and connect **kubectl** to your AKS Cluster by following [these steps](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-deploy-cluster#install-the-kubectl-cli).
 
 1. Use the following command for querying the external IP address for the deployed app:
 
@@ -441,5 +441,5 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * Delete your AKS cluster
 
 > [!div class="nextstepaction"]
-> [Integrate your Jenkins CI jobs with VSTS DevOps](https://docs.microsoft.com/en-us/vsts/pipelines/release/integrate-jenkins-vsts-cicd?view=vsts)
-> [Deploy to Kubernetes with Fabric8](https://docs.microsoft.com/en-us/java/azure/spring-framework/deploy-spring-boot-java-app-using-fabric8-maven-plugin)
+> [Integrate your Jenkins CI jobs with VSTS DevOps](integrate-jenkins-vsts-cicd.md)
+> [Deploy to Kubernetes with Fabric8](https://docs.microsoft.com/java/azure/spring-framework/deploy-spring-boot-java-app-using-fabric8-maven-plugin)

@@ -32,7 +32,7 @@ This guidance explains how to build .NET Core projects.
 ::: moniker range="vsts"
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your organization.
+> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
 
 ::: moniker-end
 

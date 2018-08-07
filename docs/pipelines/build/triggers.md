@@ -228,7 +228,7 @@ In situations like these, add a build completion trigger to run your build upon 
 After you add a **build completion** trigger, select the **triggering build**. If the triggering build is sourced from a Git repo, you can also specify **branch filters**. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 > [!NOTE]
-> Keep in mind that in some cases, a single [multi-phase build](/vsts/pipelines/process/phases) could meet your needs. 
+> Keep in mind that in some cases, a single [multi-phase build](../process/phases.md) could meet your needs. 
 > However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent process.
 
 ### Download artifacts from the triggering build
