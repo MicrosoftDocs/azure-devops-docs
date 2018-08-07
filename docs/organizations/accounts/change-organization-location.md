@@ -24,16 +24,15 @@ where VSTS is available.
 
 For information on region availability, see [Products available by region](https://azure.microsoft.com/en-us/global-infrastructure/services/).
 
-To find the region where your organization is located:
-
-[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
-2. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Admin settings icon.
 
-   ![Choose the gear, Admin settings icon](_img/_shared/sign-in-1.png)
+2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+   ![Open Admin Settings](_img/_shared/open-admin-settings-vert.png)
 
 3. Choose **Overview** and you will see the region listed beneath Organization information.
 
