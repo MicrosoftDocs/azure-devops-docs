@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 06/22/2017
+ms.date: 08/02/2018
 ---
 
 # Understand differences between VSTS and TFS
@@ -19,9 +19,9 @@ VSTS and Team Foundation Server (TFS) both provide an integrated, collaborative 
 
 VSTS is the cloud offering that provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24-7 operations team, and available in local data centers around the world. 
 
-Team Foundation Server is the on-premises offering built on a SQL Server backend. Organizations typically choose on-premises TFS when they need their data to stay within your network, or they want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
+Team Foundation Server is the on-premises offering built on a SQL Server back end. Enterprises typically choose on-premises TFS when they need their data to stay within your network, or they want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
-While both offerings provide the same [essential services](services.md), compared with TFS, VSTS provides organizations these added benefits:   
+While both offerings provide the same [essential services](services.md), compared with TFS, VSTS provides organizations the following added benefits:   
 
 - Simplified server management
 - Immediate access to the latest and greatest features
@@ -58,11 +58,10 @@ and so on. Learn more about these concepts at
 
 VSTS is slightly different. It currently only has two options for scoping and scaling 
 data&mdash;organizations and team projects. Organizations in VSTS get their own URLs (for example, ```https://contoso.visualstudio.com```) 
-and always contain exactly one team project collection. Organizations can contain multiple team projects, like
+and always contain exactly one team project collection. Organizations can contain multiple team projects, like 
 TFS team project collections.
 
-We are planning a third option for scoping and scaling data in VSTS&mdash;a new entity called an 
-Organization. Rather than adding support for multiple team project collections within an organization, multiple
+We are planning a third option for scoping and scaling data in VSTS&mdash;a new entity called an Enterprise. Rather than adding support for multiple team project collections within an organization, multiple
 organizations could be grouped within an organization. Additionally, we will merge organizations and their single
 team project collections into a single entity. The organization will be similar to the TFS deployment,
 and the organization will be similar to the TFS collection.
@@ -71,13 +70,9 @@ To be ready to use the organization entity, we recommend that you create organiz
 have created collections in TFS. In the short term, having your work split across multiple organizations can cause some 
 problems, but we plan to address these when the organization entity is introduced. In particular:
 
-* You purchase VSTS users per organization, meaning that paid users only have access to the VSTS organization 
-in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can
-be an attractive option, since subscribers can be added to any number of VSTS organizations at no charge. We are
-also considering other ways we might make access to multiple organizations grouped into an organization available.
+* You purchase VSTS users per organization, meaning that paid users only have access to the VSTS organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option, since subscribers can be added to any number of VSTS organizations at no charge. We arealso considering other ways we might make access to multiple organizations grouped into an organization available.
 
-* You currently have to administer organizations one at a time, which can be cumbersome when you have many organizations. We're
-working to support organization-wide policies.
+* You currently have to administer organizations one at a time, which can be cumbersome when you have many organizations. We're working to support enterprise-wide policies.
 
 ### Authentication
 
@@ -86,8 +81,8 @@ You authenticate with Windows Authentication and your Active Directory (AD) doma
 process is transparent, and you'll never see any kind of sign-in experience.
 
 With VSTS, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You'll either 
-authenticate with  [Microsoft Account](http://www.microsoft.com/account) credentials or with
-[Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) account 
+authenticate with  [Microsoft Organization](http://www.microsoft.com/account) credentials or with
+[Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)  
 credentials, depending on your VSTS organization setup. You can also set up Azure AD 
 to require features like multi-factor-authentication, IP address restrictions, and so on.
 
@@ -136,7 +131,7 @@ to use Microsoft Accounts for sign-in, you will have to assign access levels to 
 Many organizations want to know more about data protection when they consider moving to the cloud. Microsoft is committed to ensuring 
 that VSTS projects stay safe and secure. We have technical features and business processes in place 
 to deliver on that commitment. You can also take steps to secure your data. Learn more in our
-[Data Protection Overview whitepaper](../articles/team-services-security-whitepaper.md).
+[Data Protection Overview white paper](../articles/team-services-security-whitepaper.md).
 
 ## Key feature differences between VSTS and TFS
 
@@ -182,9 +177,11 @@ With this option, you
 [import customized process templates](../work/customize/import-process/import-process.md).
 This option is quite similar to using custom process templates in TFS, except that:
 
-* [Restrictions](../work/customize/import-process/import-process.md) exist in the customizations that can be imported into VSTS. 
+* [Restrictions](../work/customize/import-process/import-process.md) exist in the customizations 
+that can be imported into VSTS. 
 
-* Process templates are associated with all team projects created from them, and changes made to the process are reflected in each team project.
+* Process templates are associated with all team projects created from them, and changes made to the process are reflected 
+in each team project.
 
 Team projects in organizations which participate in this process customization private preview will not update automatically with 
 VSTS upgrades. 
@@ -208,12 +205,11 @@ We plan to make these services available in TFS in a future release.
 The following reports and dashboards are only available in TFS: 
 - [Excel reports](../report/excel/excel-reports.md) 
 - [SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md)  
-- [SharePoint dashboards](../report/sharepoint-dashboards/project-portal-dashboards.md)
+- [SharePoint dashboards](../report/sharepoint-dashboards/project-portal-dashboards.md) 
 
 And, available today only in VSTS:
-
 * A [PowerBI connector](../report/powerbi/overview.md) which provides a nice combination of simplicity and power. We plan to make it available in TFS in a future release.
-* [Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) is the reporting platform for Visual Studio Team Services (VSTS), which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
+* [Analytics](https://docs.microsoft.com/en-us/vsts/report/analytics/) which is the reporting platform for Visual Studio Team Services (VSTS), which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
 
 ## Related articles
  
