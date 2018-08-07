@@ -178,7 +178,7 @@ You [add users to the following roles](set-permissions.md) from the project-leve
 
 ## Deployment pool security roles
 
-You [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/vsts/pipelines/release/deployment-groups).   
+You [add users to the following roles](set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](../release/deployment-groups/index.md).   
 
 [!INCLUDE [temp](../../organizations/security/_shared/deployment-pool-roles.md)]
 
