@@ -4,7 +4,7 @@ ms.topic: include
 
 <!-- Windows Remote Management details and setup -->
 
-This task uses [Windows Remote Management](https://msdn.microsoft.com/en-us/library/aa384426.aspx)
+This task uses [Windows Remote Management](https://msdn.microsoft.com/library/aa384426.aspx)
 (WinRM) to access 
 on-premises physical computers or virtual computers that are
 domain-joined or workgroup-joined. 
@@ -21,7 +21,7 @@ automation agent will not validate the authenticity of the
 certificate as being issued by a trusted certification authority.
 
 * **Azure Classic Virtual Machines**. When you create a 
-[classic virtual machine](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-tutorial-classic-portal/)
+[classic virtual machine](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial-classic-portal/)
 from the Azure portal, the virtual machine is already set up for 
 WinRM over HTTPS, with the default port 5986 already opened in the firewall
 and a self-signed certificate installed on the machine. These virtual 
@@ -31,7 +31,7 @@ Existing Classic virtual machines can be also selected by using the
 task.
 
 * **Azure Resource Group**. If you have an 
-[Azure Resource Group](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-hero-tutorial/)
+[Azure Resource Group](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-hero-tutorial/)
 already defined in the Azure portal, you must configure it to use the WinRM HTTPS 
 protocol. You need to open port 5986 in the firewall, and install a 
 self-signed certificate. 
