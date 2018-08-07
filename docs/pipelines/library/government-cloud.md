@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-[Azure Government Clouds](https://azure.microsoft.com/en-us/overview/clouds/government/)
+[Azure Government Clouds](https://azure.microsoft.com/overview/clouds/government/)
 provide private and semi-isolated locations for specific Government or other services, separate from the normal
 Azure services. Highest levels of privacy have been adopted for these clouds, including restricted data access policies.
 

@@ -64,7 +64,7 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
 
 1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
-   * [Use the portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+   * [Use the portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)
    * [How to create and test Azure Service Principal using Azure CLI](https://blogs.msdn.microsoft.com/arsen/2016/05/11/how-to-create-and-test-azure-service-principal-using-azure-cli/)
 
 1. Open the **Services** page from the "settings" icon in the top menu bar.
@@ -102,7 +102,7 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
    * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
 1. If required, modify the service principal to expose the appropriate permissions. For more details, see 
-   [Use Role-Based Access Control to manage access to your Azure subscription resources](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal).
+   [Use Role-Based Access Control to manage access to your Azure subscription resources](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
    [This blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
    also contains more information about using service principal authentication.
 
@@ -114,7 +114,7 @@ See also: [Troubleshoot Azure Resource Manager service connections](../release/a
 
 For information about connecting to an Azure Government Cloud, see:
 
-* [Connecting from Visual Studio Team Services (Azure Government Cloud)](https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-get-started-connect-with-vsts)
+* [Connecting from Visual Studio Team Services (Azure Government Cloud)](https://docs.microsoft.com/azure/azure-government/documentation-government-get-started-connect-with-vsts)
 
 <a name="connect-stack"></a>
 
@@ -122,8 +122,8 @@ For information about connecting to an Azure Government Cloud, see:
 
 For information about connecting to Azure Stack, see:
 
-* [Connect to Azure Stack](https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-connect-azure-stack)
-* [Connect Azure Stack to Azure using VPN](https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-connect-vpn)
-* [Connect Azure Stack to Azure using ExpressRoute](https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-connect-expressroute)
+* [Connect to Azure Stack](https://docs.microsoft.com/azure/azure-stack/azure-stack-connect-azure-stack)
+* [Connect Azure Stack to Azure using VPN](https://docs.microsoft.com/azure/azure-stack/azure-stack-connect-vpn)
+* [Connect Azure Stack to Azure using ExpressRoute](https://docs.microsoft.com/azure/azure-stack/azure-stack-connect-expressroute)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
