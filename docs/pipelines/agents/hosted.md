@@ -33,7 +33,7 @@ Then, while [editing your build pipeline](../get-started-designer.md), on the **
 
 Notes on choosing **Hosted macOS**:
 
-* This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/TrustCenter/CloudServices/vsts/data-location)
+* This option affects where your data is stored. [Learn more](https://www.microsoft.com/TrustCenter/CloudServices/vsts/data-location)
 * For manual selection of tool versions on this Microsoft-hosted agent, see **Q & A** below.
 * To disable the Hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under Admin settings > Agent pools > Hosted macOS.
 * To disable the Hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under Project settings > Agent pools > Hosted macOS.

@@ -103,7 +103,7 @@ coverage in different areas.
 
 ## See also
 
-[VSTS Java website](/vsts/java)
+[VSTS Java website](../../java/index.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
  
