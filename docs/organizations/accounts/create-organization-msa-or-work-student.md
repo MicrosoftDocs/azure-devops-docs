@@ -40,7 +40,7 @@ so your team can build often, test early, and ship faster.
 	when you sign up for VSTS.
 
 	Use your Microsoft account if you don't need to authenticate users 
-	for an organization with [Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). 
+	for an organization with [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 	All users must sign in with Microsoft accounts to your VSTS organization.
 
 *	Alternatively, to authenticate users and control organization access through your 
@@ -53,10 +53,10 @@ so your team can build often, test early, and ship faster.
 
 	You'll need a work or school account that's managed by your Azure Active Directory. 
 	If you use Azure or Office 365, you might have this already.  If you don't, learn how to 
-	[sign up for Azure as an organization](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/).
+	[sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
 
 	To use existing on-premises identities with VSTS, learn how to 
-	[use Azure Active Directory Connect for integrating on-premises directories with Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).
+	[use Azure Active Directory Connect for integrating on-premises directories with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
 
 
 ## How does Azure Active Directory control access to VSTS?
@@ -65,7 +65,7 @@ VSTS authenticates users through your Azure Active Directory
 so that only users who are members in that directory can get access to your VSTS organization. 
 When you remove users from that directory, 
 they can't access your organization anymore. Only specific 
-[Azure Active Directory administrators](https://azure.microsoft.com/en-us/documentation/articles/active-directory-assign-admin-roles/) 
+[Azure Active Directory administrators](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/) 
 can manage users in your directory, so administrators control who can get access to your VSTS organization.
 
 Without Azure Active Directory, you're solely responsible for controlling 
@@ -145,14 +145,14 @@ that you're connecting to your VSTS organization.
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](/vsts/java/download-eclipse-plug-in), 
+	*	Git with [Eclipse](../../java/download-eclipse-plug-in.md).
 	[Xcode](../../repos/git/share-your-code-in-git-xcode.md), 
-	[Android Studio](/vsts/java/download-android-studio-plug-in), 
-	[IntelliJ](/vsts/java/download-intellij-plug-in), 
+	[Android Studio](/../../java/download-android-studio-plug-in), 
+	[IntelliJ](/../../java/download-intellij-plug-in), 
 	[Visual Studio](../../repos/git/share-your-code-in-git-vs-2017.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](/vsts/java/download-eclipse-plug-in), 
+	*	TFVC using [Eclipse](/../../java/download-eclipse-plug-in), 
 	[Xcode](../../repos/tfvc/share-your-code-in-tfvc-xcode.md), 
 	[Visual Studio](../../repos/tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)

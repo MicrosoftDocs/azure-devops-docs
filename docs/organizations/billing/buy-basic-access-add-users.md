@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.date: 08/02/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Quickstart: Pay for VSTS users (Basic)
 
@@ -23,7 +24,7 @@ In this quickstart, you'll learn how to pay for more users in your VSTS organiza
 For a list of features included, see our
 [feature comparison](https://visualstudio.microsoft.com/team-services/compare-features/).
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Prerequisites
 
@@ -83,7 +84,7 @@ To remove users or make an adjustment, sign in to VSTS, choose **Manage users**,
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Buy CI/CD](https://docs.microsoft.com/en-us/vsts/billing/buy-more-build-vs?view=vsts)
+> [Buy CI/CD](buy-more-build-vs.md#prerequisites)
 
 ## Related articles
 

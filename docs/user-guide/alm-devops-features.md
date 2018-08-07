@@ -48,11 +48,11 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 <p><b>Integrated Development Environments (IDE)
 </b></p>
 Track work and integrate with your code, build, and test environments from the following clients:   
-- [Eclipse (Team Explorer Everywhere)](/vsts/java/download-eclipse-plug-in)       
+- [Eclipse (Team Explorer Everywhere)](/../java/download-eclipse-plug-in)       
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)      
-- [Android Studio](/vsts/java/download-android-studio-plug-in)     
-- [IntelliJ](/vsts/java/download-intellij-plug-in)   
-- [Visual Studio Code](/vsts/java/vscode-extension)   
+- [Android Studio](/../java/download-android-studio-plug-in)     
+- [IntelliJ](/../java/download-intellij-plug-in)   
+- [Visual Studio Code](/../java/vscode-extension)   
  
 To learn how to connect, see [Connect to a team project](../organizations/projects/connect-to-projects.md).  
 <br/>
@@ -2789,7 +2789,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ## Related notes
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [VSTS - Features update](https://docs.microsoft.com/vsts/release-notes/index)  
+- [VSTS - Features update](https://docs.microsoft.com/vsts/release-notes/)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
 - [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)
 

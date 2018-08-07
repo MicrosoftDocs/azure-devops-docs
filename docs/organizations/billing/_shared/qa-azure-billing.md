@@ -24,7 +24,7 @@ purchases will show up on your monthly Azure bill.
 
 A:	Yes, please buy directly from the Visual Studio Marketplace 
 where you can bill purchases to the Azure subscription that was created 
-under your [Enterprise Agreement (EA)](https://azure.microsoft.com/en-us/pricing/enterprise-agreement/). 
+under your [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/). 
 Don't order Visual Studio Marketplace services through your reseller.
 
 ### Q:	Can I use the Azure Monetary Commitment funds from my Enterprise Agreement to buy from the Visual Studio Marketplace?
@@ -33,7 +33,7 @@ A:	Yes.  You can use these prepaid funds to pay for:
 
 *	[VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
 *	[Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
-*	[Virtual user minutes for Cloud-based Load Testing](/vsts/billing/buy-more-build-vs)
+*	[Virtual user minutes for Cloud-based Load Testing](/../organizations/billing/buy-more-build-vs)
 *   [Xamarin University](https://www.xamarin.com/university)
 
 You can't use these funds to pay for Visual Studio cloud 

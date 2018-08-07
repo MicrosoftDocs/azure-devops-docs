@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-Partners in the [Cloud Solution Provider (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) program
+Partners in the [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) program
 can purchase VSTS, Visual Studio cloud subscriptions, and Xamarin University for their customers
 via the [Partner Center](https://partnercenter.microsoft.com).
 

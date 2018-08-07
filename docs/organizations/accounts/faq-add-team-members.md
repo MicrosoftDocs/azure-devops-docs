@@ -89,7 +89,7 @@ If you are an Azure AD guest, do one of the following:
 * Have another VSTS admin - someone who is not an Azure AD guest - manage the users in VSTS for you. Members of the Project Collection Administrators group inside VSTS can administer users.
 * Have the AAD admin(s) remove you from the AAD and re-add you, making you an AAD member rather than a guest when they do. See "Can Azure AD B2B users be added as members instead of guests?"
 * Change the User Type of the Azure AD guest using Azure AD PowerShell. This is an advanced topic and is not advised, but it does work and allows the user to query Azure AD from VSTS thereafter. 
-1. [Download and install Azure AD PowerShell module](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+1. [Download and install Azure AD PowerShell module](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
 2. Open PowerShell and run the following cmdlets.
 
     a. Connect to Azure AD

@@ -34,14 +34,14 @@ or block access.
 > Accessing VSTS using personal access tokens (PATs), alternate authentication, OAuth, and SSH keys circumvents 
 > conditional access policies.
 
-See [more information and resources](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access).
+See [more information and resources](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
 
 ## Enable conditional access for VSTS
 
 You need to use the azure portal to enable conditional access.
 
-See [detailed instructions and requirements](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
+See [detailed instructions and requirements](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
 
 ![azure portal turning on conditional access for VSTS](_img/_shared/azure-conditional-access-738.png)
 
