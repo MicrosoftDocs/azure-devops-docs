@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.date: 04/18/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Quickstart: Buy cloud-based load testing in VSTS
 
@@ -22,7 +23,7 @@ VSTS offers a cloud-based solution for [load testing your apps](../../test/load-
 
 Load tests are measured and billed in virtual user minutes (VUM) as described in  this Q&A: [What are virtual user minutes (VUMs)? How many minutes will my load test use?](../../test/load-test/reference-qa.md#VUM).
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 <a name="buy-load-testing"></a>
 

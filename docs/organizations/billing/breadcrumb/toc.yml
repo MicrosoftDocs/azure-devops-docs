@@ -7,5 +7,5 @@
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
     - name: Billing
-      tocHref: /vsts/billing/
-      topicHref: /vsts/billing/index
+      tocHref: /vsts/organizations/billing/
+      topicHref: /vsts/organizations/billing/index

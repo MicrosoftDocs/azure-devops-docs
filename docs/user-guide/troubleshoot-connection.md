@@ -47,7 +47,7 @@ The most common error page encountered is the "401 Not Authorized" error. This o
 * Your identity is not a member of the target VSTS organization
 * Your identity has an invalid or missing license assignment
 
-If you believe you are a member of the organization but are blocked by this error page, feel free to [contact customer support](https://support.microsoft.com/en-us).
+If you believe you are a member of the organization but are blocked by this error page, feel free to [contact customer support](https://support.microsoft.com/).
 
 **Scenario 1:** Your work or school Azure AD account does not have access, but your personal MSA account does.
 
@@ -110,7 +110,7 @@ When this problem occurs, a blank screen flashes several times followed by one o
 
 To resolve this problem, apply Visual Studio 2013.2 or install a later version. Go to the [Visual Studio download website](http://visualstudio.microsoft.com/downloads).
 
-For a workaround in which you delete your browser cookies, see the following support article, [You can't switch between different organizations in Visual Studio Online](https://support.microsoft.com/en-us/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
+For a workaround in which you delete your browser cookies, see the following support article, [You can't switch between different organizations in Visual Studio Online](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
 
 ::: moniker-end
 

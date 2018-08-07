@@ -28,7 +28,7 @@ If you’re an Azure Active Directory (Azure AD)-backed VSTS organization user w
 
 * The VSTS organization, to which you want to invite external users, must allow for external invitations. Go to the Organization Settings page to confirm.
 
-* The Azure AD tenant, to which you want to invite external users, must allow you to add new users based on your AAD tenant’s guest policies. Learn [how to become eligible to invite external users on your Azure AD tenant](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-delegate-invitations).
+* The Azure AD tenant, to which you want to invite external users, must allow you to add new users based on your AAD tenant’s guest policies. Learn [how to become eligible to invite external users on your Azure AD tenant](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-delegate-invitations).
 
 ## Invite external users to your VSTS organization
 
@@ -81,7 +81,7 @@ The external user is added to the VSTS organizationt to which they were invited 
 
 ## Related articles
 
-* [What is Azure AD B2B Collaboration?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
+* [What is Azure AD B2B Collaboration?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 
 * [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-VSTS.md)
 

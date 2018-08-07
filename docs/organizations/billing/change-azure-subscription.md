@@ -9,8 +9,9 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.date: 08/01/2018
+monikerRange: 'vsts'
 ---
-[//]: # (monikerRange: 'vsts')
+
 
 # Change the Azure subscription that your VSTS organization uses for billing
 
@@ -20,7 +21,7 @@ If you want to use a different Azure subscription to bill purchases for your VST
 
 ## Move to a different subscription
 
-If the target subscription is in the same Azure Active Directory as the destination subscription and you have access to both, just follow the steps below or learn more about [moving resources to new resource groups or subscriptions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-move-resources).
+If the target subscription is in the same Azure Active Directory as the destination subscription and you have access to both, just follow the steps below or learn more about [moving resources to new resource groups or subscriptions](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Choose **Resource groups**.
@@ -52,7 +53,7 @@ If the target subscription is in the same Azure Active Directory as the destinat
 1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS organization owner and as Azure subscription co-administrator or greater.
 
     If you experience browser problems with Azure,
-    make sure that you use a [supported browser](https://azure.microsoft.com/en-us/documentation/articles/azure-preview-portal-supported-browsers-devices/).
+    make sure that you use a [supported browser](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/).
 
 2. Go to **All services** > **Team Services administration**. 
 

@@ -182,11 +182,9 @@ With this option, you
 [import customized process templates](../work/customize/import-process/import-process.md).
 This option is quite similar to using custom process templates in TFS, except that:
 
-* [Restrictions](../work/customize/import-process/import-process.md) exist in the customizations 
-that can be imported into VSTS. 
+* [Restrictions](../work/customize/import-process/import-process.md) exist in the customizations that can be imported into VSTS. 
 
-* Process templates are associated with all team projects created from them, and changes made to the process are reflected 
-in each team project.
+* Process templates are associated with all team projects created from them, and changes made to the process are reflected in each team project.
 
 Team projects in organizations which participate in this process customization private preview will not update automatically with 
 VSTS upgrades. 
@@ -210,11 +208,12 @@ We plan to make these services available in TFS in a future release.
 The following reports and dashboards are only available in TFS: 
 - [Excel reports](../report/excel/excel-reports.md) 
 - [SQL Server Reporting Services (SSRS) reports](../report/sql-reports/reporting-services-reports.md)  
-- [SharePoint dashboards](../report/sharepoint-dashboards/project-portal-dashboards.md) 
+- [SharePoint dashboards](../report/sharepoint-dashboards/project-portal-dashboards.md)
 
 And, available today only in VSTS:
+
 * A [PowerBI connector](../report/powerbi/overview.md) which provides a nice combination of simplicity and power. We plan to make it available in TFS in a future release.
-* [Analytics](https://docs.microsoft.com/en-us/vsts/report/analytics/) which is the reporting platform for Visual Studio Team Services (VSTS), which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
+* [Analytics](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) is the reporting platform for Visual Studio Team Services (VSTS), which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
 
 ## Related articles
  
