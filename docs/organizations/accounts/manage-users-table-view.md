@@ -98,8 +98,6 @@ and **Remove from organization** (deletes user).
 - [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 - [Delete users from VSTS](delete-organization-users.md)
-- [Troubleshoot adding and deleting organization users in the VSTS user hub](faq-add-delete-users.md)
-- [Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)](faq-add-team-members.md)
 
 
 ### How does *access* differ from *permissions*?
