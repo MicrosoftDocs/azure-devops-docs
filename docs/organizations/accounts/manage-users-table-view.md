@@ -77,7 +77,7 @@ and **Remove from organization** (deletes user).
  
 1. Open the **Users** page for your organization. Choose ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Organization Settings** option
  
-	![Open Organization Settings](../../user-guide/_img/sign-up/open-organization-settings.png)
+	![Open Organization Settings](../../_shared/_img/settings/open-organization-settings.png)
 
 	Then, click **Users** to open the Manage users page. Click **Add new users** to open the dialog. 
 
@@ -87,7 +87,7 @@ and **Remove from organization** (deletes user).
 menu. The menu supports **Change access levels**, **Manage projects**, **Resend invite**, **Manage extensions** (if there are extensions), 
 and **Remove from organization** (deletes user).
 
-  ![User hub, context menu](_img/manage-users/manage-users-show-context-menu.png)
+   > ![User hub, context menu](_img/manage-users/manage-users-show-context-menu.png)
 
 ---
 
