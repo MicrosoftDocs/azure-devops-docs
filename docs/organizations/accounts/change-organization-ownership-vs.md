@@ -36,7 +36,7 @@ Make sure that the new owner:
 
 ## Change VSTS organization owner
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
@@ -84,5 +84,7 @@ Make sure that the new owner:
 6. Save your changes.
 
    ![Select new owner, save changes](_img/change-organization-ownership/vsosaveneworganizationowner.png)
+
+---
 
    Your VSTS organization has a new owner!

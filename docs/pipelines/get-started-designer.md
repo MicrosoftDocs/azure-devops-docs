@@ -655,7 +655,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
  * [Xcode](../repos/git/share-your-code-in-git-xcode.md)
 
- * [IntelliJ](/vsts/java/download-intellij-plug-in)
+ * [IntelliJ](../java/download-intellij-plug-in.md)
 
  * [Command line](../repos/git/share-your-code-in-git-cmdline.md)
 
@@ -720,9 +720,9 @@ When you manually queue a build, you can, for a single run of the build:
 
 * In a TFVC repository
 
- - Specify the source version as a [label](https://msdn.microsoft.com/en-us/library/ms181439.aspx) or [changeset](https://msdn.microsoft.com/en-us/library/ms181408.aspx).
+ - Specify the source version as a [label](https://msdn.microsoft.com/library/ms181439.aspx) or [changeset](https://msdn.microsoft.com/library/ms181408.aspx).
 
- - Run a private build of a [shelveset](https://msdn.microsoft.com/en-us/library/ms181403.aspx). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
+ - Run a private build of a [shelveset](https://msdn.microsoft.com/library/ms181403.aspx). (You can use this option on either a [Microsoft-hosted agent](agents/hosted.md) or a [self-hosted agent](agents/agents.md).)
 
 ### Where can I learn more about build pipeline settings?
 
@@ -747,7 +747,7 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
+> You can also manage builds and build pipelines from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
 
 
 <!-- ENDSECTION -->

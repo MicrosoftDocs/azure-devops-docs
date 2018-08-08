@@ -88,7 +88,7 @@ These tools provide access to product and sprint backlogs, the Kanban board and 
 **Required:** To work with sprint backlogs and boards, you must [activate the sprints for each team](../scrum/define-sprints.md). <br/>
 Additional options that you can configure:<br/>
 <ul>
-<li>[Add a team or set up a hierarchy of teams](../scale/multiple-teams.md) </li>
+<li>[Add a team or set up a hierarchy of teams](../../organizations/settings/add-teams.md) </li>
 <li>[Set team working days off](../customize/set-working-days.md)</li>
 <li>[Define additional sprints or releases](../scrum/define-sprints.md).</li>
 </ul> 

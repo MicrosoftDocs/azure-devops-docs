@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/26/2018
+ms.date: 08/06/2018
 ---
 [//]: # (monikerRange: 'vsts')
 
@@ -37,7 +37,7 @@ To make subsequent edits to paid quantities in your VSTS organization, you only 
 
 If you want to set up billing for your organization before buying something in the Visual Studio Marketplace, you can do so from the Azure portal.
 
-1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS organization owner and as Azure subscription co-administrator or greater.
+1. [Sign in to the Azure portal](https://portal.azure.com/) as VSTS organization owner and as a user who can [make purchases on an Azure subscription](add-backup-billing-managers.md).
 
    [Browser problems in Azure?](https://azure.microsoft.com/documentation/articles/azure-preview-portal-supported-browsers-devices/)
 

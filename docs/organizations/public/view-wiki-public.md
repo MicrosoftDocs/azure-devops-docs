@@ -32,7 +32,7 @@ Choose **Wiki**.
 # [New navigation](#tab/new-nav)
 
 > [!div class="mx-imgBorder"]
-> ![Open the Wiki link, vertical navigation](_img/wiki/open-wiki-vert-brn.png) 
+> ![Open the Wiki link, new navigation](_img/wiki/open-wiki-vert-brn.png) 
 
 
 # [Previous navigation](#tab/previous-nav)

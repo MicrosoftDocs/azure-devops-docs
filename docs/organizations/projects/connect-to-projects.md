@@ -30,7 +30,7 @@ To share code, build apps, track work, and collaborate with team members, you co
 > [!NOTE]
 > A project defines a process and data storage in which you manage your software projects from planning to deployment. When you connect to a project, you connect to an organization or project collection. Within that collection, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. For more information, see [About projects and scaling your organization](about-projects.md).
 
-If you don't have a project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](create-project.md). If you need to add a team, see [Multiple teams](../../work/scale/multiple-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
+If you don't have a project yet, create one in [VSTS](../accounts/set-up-vs.md) or set one up in an [on-premises TFS](create-project.md). If you need to add a team, see [Add teams](../../organizations/settings/add-teams.md). If you don't have access to the project, [get invited to the team](../security/add-users-team-project.md). 
 
 From each of these clients, you can quickly switch context to a different project and connect under a different sign-in user name. If you work remotely, you can configure your client to [connect to a TFS Proxy server](#proxy).
 

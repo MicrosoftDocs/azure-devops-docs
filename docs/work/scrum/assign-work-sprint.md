@@ -31,7 +31,7 @@ During the planning meeting, your product owner works with your team to identify
 
 Here's an example of a sprint plan that consists of backlog items and the tasks required to complete each item. By setting team capacity and estimating tasks, the team can see when the team or a team member is at, under, or over capacity.
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
@@ -79,6 +79,7 @@ some or all of the items based on these estimates.
 
 
 ## Open your team's product backlog
+
 
 # [New navigation](#tab/new-nav)
 

@@ -7,7 +7,7 @@ ms.topic: include
 
 Your Kanban board is one of two types of boards available to you. For an overview of the features supported on each backlog and board, see [Backlogs, boards, and plans](/vsts/work/backlogs/backlogs-boards-plans). To switch to the [product backlog](/vsts/work/backlogs/create-your-backlog), choose **Stories backlog**. And, to switch to the [Task board](/vsts/work/scrum/task-board), choose **Sprints** and then choose **Taskboard**.  
  
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

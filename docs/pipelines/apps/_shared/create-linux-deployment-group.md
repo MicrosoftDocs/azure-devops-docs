@@ -17,7 +17,7 @@ Each machine interacts with VSTS to coordinate deployment of your app.
 
    `ssh <publicIpAddress>`
 
-   For more information, see [SSH into your VM](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli#ssh-into-your-vm).
+   For more information, see [SSH into your VM](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-cli#ssh-into-your-vm).
 
 1. Run the following command:
 

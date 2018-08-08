@@ -33,7 +33,7 @@ A:	Yes.  You can use these prepaid funds to pay for:
 
 *	[VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser) 
 *	[Microsoft-published extensions for VSTS and Team Foundation Server](https://marketplace.visualstudio.com/vsts)
-*	[Virtual user minutes for Cloud-based Load Testing](/vsts/billing/buy-more-build-vs)
+*	[Virtual user minutes for Cloud-based Load Testing](/../organizations/billing/buy-more-build-vs)
 *   [Xamarin University](https://www.xamarin.com/university)
 
 You can't use these funds to pay for Visual Studio cloud 

@@ -15,9 +15,9 @@
   - name: Add users to a team project or team 
     href: ../security/add-users-team-project.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
   - name: "Add a team & team members"
-    href: ../../work/scale/multiple-teams.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+    href: ../settings/add-teams.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
   - name: Add a team administrator
-    href: ../../work/scale/add-team-administrator.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+    href: ../settings/add-team-administrator.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
 - name: Tutorials
   items:
   - name: Change individual permissions 
@@ -44,6 +44,8 @@
     href: rename-project.md
   - name: Delete a project
     href: delete-project.md
+  - name: Change service visibility
+    href: ../settings/set-services.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
   - name: Save project data
     href: save-project-data.md
   - name: Connect to projects

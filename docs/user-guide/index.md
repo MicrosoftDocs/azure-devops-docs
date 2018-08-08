@@ -27,7 +27,7 @@ We'll walk you through the basics of the web interface and some common tasks.
 
 ## 5-Minute Quickstarts
 
-Get started with a free account, share your code using Git, and track your work using a Kanban board.
+Get started with a free organization, share your code using Git, and track your work using a Kanban board.
 
 - [Sign up and invite some teammates](sign-up-invite-teammates.md)  
 - [Code with Git](code-with-git.md)
@@ -39,7 +39,7 @@ Get started with a free account, share your code using Git, and track your work 
 
 ## Step-by-Step Tutorials
 
-- [Set favorites](/vsts/project/navigation/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+- [Set favorites](/../project/navigation/set-favorites?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Follow work and pull requests](../work/work-items/follow-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Get started as a Stakeholder](../organizations/security/get-started-stakeholder.md)
 
@@ -56,10 +56,10 @@ Get started with a free account, share your code using Git, and track your work 
 
 - [Enable preview features](../project/navigation/preview-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Use @mentions to further discussion](../notifications/at-mentions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Use #ID to link to work items](https://docs.microsoft.com/en-us/vsts/notifications/add-links-to-work-items?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
-- [Navigate using your account home page](../project/navigation/work-across-projects.md)
+- [Use #ID to link to work items](../notifications/add-links-to-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
+- [Navigate using your organization home page](../project/navigation/work-across-projects.md)
 - [Go mobile](../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Manage your notifications](https://docs.microsoft.com/en-us/vsts/notifications/manage-personal-notifications?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
+- [Manage your notifications](../notifications/manage-personal-notifications.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Set your preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Sign in to the web or a client](../organizations/projects/connect-to-projects.md)
 
@@ -78,6 +78,6 @@ Get started with a free account, share your code using Git, and track your work 
 - [Visual Studio IDE](https://docs.microsoft.com/visualstudio/)
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio for Mac](https://docs.microsoft.com/visualstudio/mac)
-- [Account Management](https://docs.microsoft.com/en-us/vsts/organizations/accounts/?view=vsts)
-- [Security & Identity](https://docs.microsoft.com/en-us/vsts/organizations/security/?view=vsts)
-- [Technical articles](https://docs.microsoft.com/en-us/vsts/articles/?view=vsts)
+- [Organization Management](../organizations/accounts/index.md)
+- [Security & Identity](../organizations/security/index.md)
+- [Technical articles](../articles/index.md)

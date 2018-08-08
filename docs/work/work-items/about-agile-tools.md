@@ -21,7 +21,7 @@ All tools support viewing and defining work items. Each work item represents an 
 
 Your Agile tool set, available from **Work**, consists of the following main interactive lists and signboards. Each of these pages provide a filtered set of work items. 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

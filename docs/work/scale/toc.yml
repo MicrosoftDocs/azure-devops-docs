@@ -9,7 +9,7 @@
   - name: Add and manage dashboards
     href: ../../report/dashboards/dashboards.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json  
   - name: Add a team administrator
-    href: add-team-administrator.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json  
+    href: ../../organizations/settings/add-team-administrator.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json  
 - name: Tutorials
   items:
   - name: Manage portfolios
@@ -27,7 +27,7 @@
   - name: Practices that scale
     href: practices-that-scale.md
   - name: Team administrator role and permissions
-    href: team-administrator-permissions.md	
+    href: ../../organizations/settings/team-administrator-permissions.md	
 - name: How-to Guides
   items:
   - name: Use work item templates
@@ -35,7 +35,7 @@
   - name: Manage team notifications
     href: ../../notifications/manage-team-notifications.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json   
   - name: Configure team settings
-    href: manage-team-assets.md 
+    href: ../../organizations/settings/configure-team-settings.md 
     items:
     - name: Set team defaults
       href: ../../organizations/settings/set-team-defaults.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
@@ -66,7 +66,7 @@
 - name: Resources
   items:
   - name: "Scale & Configure Teams"
-    href: ../../organizations/settings/index.md
+    href: ../../organizations/settings/scale/index.md
   - name: Customization
     href: ../customize/index.md
   - name: Agile culture

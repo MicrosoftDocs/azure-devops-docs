@@ -57,7 +57,7 @@ but you don't have a valid and active Visual Studio subscription, you can only
 
 #### Q: Which Visual Studio subscriptions can I use with VSTS?
 
-A:  See [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-vsts).
+A:  See [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com/visualstudio/subscriptions/vs-vsts).
 
 <a name="enterprise-professional"></a>
 
@@ -65,7 +65,7 @@ A:  See [VSTS benefits for Visual Studio subscribers](https://docs.microsoft.com
 
 #### Q: Why won't my Visual Studio subscription validate?
 
-A: See [Why won't VSTS recognize my Visual Studio subscription?](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity#faq)
+A: See [Why won't VSTS recognize my Visual Studio subscription?](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#faq)
 
 <a name="why-access-changed"></a>
 #### Q: Why do Visual Studio subscribers' access levels change after they sign in?
@@ -185,7 +185,7 @@ This might happen for different reasons.
 	be unlinked from your VSTS organization 
 	or might no longer be active. Learn more about 
 	[linking your VSTS organization](../../billing/set-up-billing-for-your-organization-vs.md), 
-	or visit the [Azure account portal](https://account.windowsazure.com/subscriptions) 
+	or visit the [Azure portal](https://account.windowsazure.com/subscriptions) 
 	to check your payment details.
 
 

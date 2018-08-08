@@ -93,7 +93,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <p style="font-weight:bold;padding-top:10px">More examples</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Continuous integration, test, and deployment](../test/example-continuous-testing.md)</li>
- <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using VSTS](/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts)</li>
+ <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using VSTS](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
 </ul>
 </div>
 
@@ -109,7 +109,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 
 * [Azure App Service Deployment Overview](https://azure.microsoft.com/documentation/articles/app-service-deployment-readme/)
 
-* [Using the Azure Portal to deploy and manage your Azure resources](/azure/azure-resource-manager/resource-group-portal)
+* [Using the Azure Portal to deploy and manage your Azure resources](https://azure.microsoft.com/documentation/articles/resource-group-portal/)
 
 ## Q & A
 

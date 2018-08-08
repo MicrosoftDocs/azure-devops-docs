@@ -26,4 +26,4 @@ For an overview of dashboard and chart features, see [Dashboards, charts, & widg
 ## Related notes
 
 - [Work across projects](../../project/navigation/work-across-projects.md)
-- [Add a team administrator](../../work/scale/add-team-administrator.md) 
+- [Add a team administrator](../../organizations/settings/add-team-administrator.md) 

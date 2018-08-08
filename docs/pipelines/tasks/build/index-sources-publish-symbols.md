@@ -216,15 +216,15 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 ### Where can I learn more about symbol stores and debugging?
 
-[Symbol Server and Symbol Stores](https://msdn.microsoft.com/en-us/library/ms680693%28VS.85%29.aspx)
+[Symbol Server and Symbol Stores](https://msdn.microsoft.com/library/ms680693%28VS.85%29.aspx)
 
-[SymStore](https://msdn.microsoft.com/en-us/library/ff558848%28VS.85%29.aspx)
+[SymStore](https://msdn.microsoft.com/library/ff558848%28VS.85%29.aspx)
 
-[Use the Microsoft Symbol Server to obtain debug symbol files](https://msdn.microsoft.com/en-us/library/windows/desktop/ee416588%28v=vs.85%29.aspx)
+[Use the Microsoft Symbol Server to obtain debug symbol files](https://msdn.microsoft.com/library/windows/desktop/ee416588%28v=vs.85%29.aspx)
 
-[The Srcsrv.ini File](https://msdn.microsoft.com/en-us/library/windows/hardware/ff558876%28v=vs.85%29.aspx)
+[The Srcsrv.ini File](https://msdn.microsoft.com/library/windows/hardware/ff558876%28v=vs.85%29.aspx)
 
-[Source Server](https://msdn.microsoft.com/en-us/library/windows/desktop/ms680641%28v=vs.85%29.aspx)
+[Source Server](https://msdn.microsoft.com/library/windows/desktop/ms680641%28v=vs.85%29.aspx)
 
 [Source Indexing and Symbol Servers: A Guide to Easier Debugging](http://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 

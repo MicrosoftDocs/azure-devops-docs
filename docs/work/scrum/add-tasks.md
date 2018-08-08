@@ -37,7 +37,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 [!INCLUDE [temp](../_shared/prerequisites.md)]
 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 ## Open a Sprint backlog for a team 
 

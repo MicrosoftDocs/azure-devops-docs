@@ -51,7 +51,7 @@ You will:
 
 * An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* A Tomcat and Java 8 based Azure Web App.  You can follow the steps for creating one [here](https://docs.microsoft.com/en-us/java/azure/java-quickstart-maven-webapps)
+* A Tomcat and Java 8 based Azure Web App.  You can follow the steps for creating one [here](https://docs.microsoft.com/java/azure/java-quickstart-maven-webapps)
 
 * Basic Jenkins and Git knowledge.
 
@@ -197,7 +197,7 @@ To create the release pipeline in VSTS:
 
 1. Search for the **Azure App Service Deploy** task. Select **Add** to add the task.
 
-1. Choose your **Azure Subscription**.  If you do not have an existing Azure connection in VSTS, you can follow the steps [here](https://docs.microsoft.com/vsts/pipelines/library/connect-to-azure) to create one.
+1. Choose your **Azure Subscription**.  If you do not have an existing Azure connection in VSTS, you can follow the steps [here](../library/connect-to-azure.md) to create one.
 
 1. Enter a name for your existing Web App for the **App Service name**.  This **name** must match your existing **Web App name** from the prerequisites.
 
@@ -279,4 +279,4 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 > * (Optionally) Create a VSTS build pipeline to wrap the Jenkins CI job
 
 > [!div class="nextstepaction"]
-> [Improve code quality with branch policies](https://docs.microsoft.com/vsts/repos/git/branch-policies)
+> [Improve code quality with branch policies](../../repos/git/branch-policies.md)

@@ -175,7 +175,7 @@ Account owners and members of the Project Collection Administators group configu
 0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-account-settings.png) 
+	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-organization-settings.png) 
 
 0. From there, you can choose a page. Settings are organized based on the service they support. 
 

@@ -21,7 +21,7 @@ monikerRange: 'vsts'
 If your VSTS organization was created with a Microsoft account, 
 you can connect your VSTS organization to your 
 organization's directory (tenant) in 
-[Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis). 
+[Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 You can then sign in to VSTS with the same username 
 and password that you use with these Microsoft services. 
 You can also enforce policies for accessing 
@@ -36,8 +36,8 @@ or the [Azure portal](https://portal.azure.com)
 as global administrator for your organization's directory. 
 See these topics for how to:
 
-	*	[Add users in the Azure classic portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-create-users).
-	*	[Add users in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-users-create-azure-portal).
+	*	[Add users in the Azure classic portal](https://docs.microsoft.com/azure/active-directory/active-directory-create-users).
+	*	[Add users in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-users-create-azure-portal).
 
 	[Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 

@@ -44,7 +44,7 @@ To add members to projects, you'll need
 
 ## Add members to your project
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 # [New navigation](#tab/new-nav)
 
@@ -108,7 +108,7 @@ To add members to projects, you'll need
 	[Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 	If new users don't have Microsoft accounts, have them [sign up](https://signup.live.com/).
 
-    * If your VSTS organization is connected to your organization’s directory, all users must be directory members and sign in to VSTS with work or school accounts that are managed by your organization’s directory. If they are not members, they will need to be [added to the directory](https://docs.microsoft.com/en-us/vsts/organizations/accounts/add-external-user?view=vsts).
+    * If your VSTS organization is connected to your organization’s directory, all users must be directory members and sign in to VSTS with work or school accounts that are managed by your organization’s directory. If they are not members, they will need to be [added to the directory](add-external-user.md).
 
 	![Add members' sign-in addresses or display names](_img/add-team-members/add-user2.png)
 
@@ -124,7 +124,7 @@ To add members to projects, you'll need
 
     What if new team members don't receive or lose the invitation email?
 
-    **Azure AD-backed organization**: If you're [inviting a user from outside your Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), the user must use the email. Removing a user from the VSTS organization will remove both the access and license from the user. However, any artifacts that were assigned to this user remain unchanged. You can always invite the user back into the organization if the user exists in the Azure AD tenant. Once the user is removed from Azure AD, you will not be able to assign any artifacts (work items, pull requests etc..) to this user. We will preserve the history of artifacts that as already been assigned to this user.
+    **Azure AD-backed organization**: If you're [inviting a user from outside your Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), the user must use the email. Removing a user from the VSTS organization will remove both the access and license from the user. However, any artifacts that were assigned to this user remain unchanged. You can always invite the user back into the organization if the user exists in the Azure AD tenant. Once the user is removed from Azure AD, you will not be able to assign any artifacts (work items, pull requests etc..) to this user. We will preserve the history of artifacts that as already been assigned to this user.
 
     **MSA-backed organizations**: You can send a link to the project page to the new team members, which is what the email contains. Removing a user from the VSTS organization will remove both the access and license from the user. You will not be able to assign any artifacts (work items, pull requests, etc.) to this user anymore. However, any artifacts that were assigned to this user remain unchanged.
 
@@ -133,10 +133,10 @@ To add members to projects, you'll need
 ## Next steps
 
 * [Connect to a project](../projects/connect-to-projects.md)
-* [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
-* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 
 ## Related articles
 
+* [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
 * [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)

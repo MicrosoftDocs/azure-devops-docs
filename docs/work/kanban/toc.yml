@@ -78,7 +78,7 @@
   - name: Customization
     href: ../customize/index.md
   - name: "Scale & Configure Teams"
-    href: ../../organizations/settings/index.md
+    href: ../../organizations/settings/scale/index.md
   - name: "What is Agile?"
     href: /azure/devops/agile/what-is-agile
   - name: "What is Agile development?"

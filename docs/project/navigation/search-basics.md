@@ -37,7 +37,7 @@ With the search box, you can quickly find a code file or work item.
 To start your search, choose **Code>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
-> ![Code Search box, vertical navigation](../../organizations/public/_img/search/code-search-vert.png) 
+> ![Code Search box, new navigation](../../organizations/public/_img/search/code-search-vert.png) 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017  <= tfs-2018"  
@@ -98,7 +98,7 @@ To learn more, see [Search code](../search/code-search.md).
 0. Choose any **Work** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![](../search/_img/_shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box, vertical navigation](_img/search/work-item-search-vert.png)    
+	> ![Work Item Search box, new navigation](_img/search/work-item-search-vert.png)    
 
 0. Search results are displayed in a snippet view where the matches found are shown in bold.
 

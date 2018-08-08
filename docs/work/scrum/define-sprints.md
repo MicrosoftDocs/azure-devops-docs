@@ -27,7 +27,7 @@ Many teams choose a two or three week cadence. However, you can specify shorter 
 
 To quickly get started, you can use the default sprints, also referred to as iterations, that were added when your project was created. Note, you must be a [member of the Project Administrators group](../../security/set-project-collection-level-permissions.md) in order to add sprints and schedule sprint dates. (If you created the project, you're a member.) 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
@@ -151,7 +151,7 @@ For example, by selecting Sprints 1 thru 6, the Fabrikam Fiber team gets access 
 > [Assign work to a sprint](assign-work-sprint.md) or [Define iterations for your project](../../organizations/settings/set-iteration-paths-sprints.md) 
 
 ## Related articles 
-If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../scale/multiple-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../../organizations/settings/set-team-defaults.md).  
+If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's [default area path and iteration path](../../organizations/settings/set-team-defaults.md).  
 
 
 
@@ -186,7 +186,7 @@ You'll want to [set the start and end dates for your sprint](define-sprints.md#q
 
 You can quickly assign work items to a sprint through drag-and-drop from the product backlog to the sprint. 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

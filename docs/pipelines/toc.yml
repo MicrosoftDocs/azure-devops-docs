@@ -206,6 +206,8 @@
       href: apps/cd/deploy-webdeploy-iis-winrm.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
+    - name: Azure Cosmos DB CI/CD
+      href: targets/cosmos-db.md
   - name: Test your apps
     items:
     - name: Unit test with builds
