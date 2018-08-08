@@ -8,11 +8,11 @@
   items:
   - name: Install and license Package Management
     href: install.md
-  - name: Get started with NuGet
+  - name: NuGet
     href: get-started-nuget.md
-  - name: Get started with npm
+  - name: npm
     href: get-started-npm.md
-  - name: Get started with Maven
+  - name: Maven
     href: get-started-maven.md
 - name: Concepts
   items:
