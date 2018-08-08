@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: 'vsts'
-ms.date: 11/13/2017
+ms.date: 08/06/2018
 ---
 
 # Add an Analytics widget to a dashboard
@@ -26,10 +26,9 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ## Prerequisites
 
-- You will need to have a VSTS account and team project. If you don't have one, see [Sign up for a free VSTS account](../../user-guide/sign-up-invite-teammates.md).
+- You must have a project defined for a VSTS organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
 
-   
 
 ## Install the Analytics extension on your VSTS account
 1.	Go to the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) in VSTS Market place. 
@@ -41,18 +40,45 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 To add a widget to a dashboard, you connect to your team project using a [supported web browser](/tfs/server/compatibility#supported-browsers). If you need to add a team project, see [Create a team project](../../organizations/projects/create-project.md)
 
-1. Connect to the web portal for your team project and click the Dashboards hub.  
+# [New navigation](#tab/new-nav)
+
+0. Connect to the web portal for your team project and choose **Overview>Dashboards**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, open Dashboards](../dashboards/_img/dashboards/open-dashboards-vert.png)
+
+	If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+
+0. [Choose the dashboard](../dashboards/dashboards.md#choose-dashboard) that you want to modify. 
+
+0. Choose ![](../dashboards/_img/icons/edit-icon.png) to modify a dashboard. The widget catalog opens.  
+
+0. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Velocity widget in widget catalog](_img/velocity-in-widget-catalog.png)
+
+0. Choose the widget, then **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. Learn more on [adding widgets to dashboard](../dashboards/add-widget-to-dashboard.md)
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Connect to the web portal for your team project and choose **Dashboards**.  
+
 	![Open the Dashboards hub](../dashboards/_img/dashboards-go-to.png)
 
 0. Select any dashboard or [create a new dashboard](../dashboards/dashboards.md).  
 
-0. Click ![Edit dashboard icon](../dashboards/_img/edit-dashboard-icon.png) to modify a dashboard. Click ![add a widget icon](../dashboards/_img/add-widget-icon.png) to add a widget to the dashboard.  
+0. Choose ![Edit dashboard icon](../dashboards/_img/edit-dashboard-icon.png) to modify a dashboard. Click ![add a widget icon](../dashboards/_img/add-widget-icon.png) to add a widget to the dashboard.  
 
 0. In the right pane search box, type **Velocity** to quickly locate the Velocity widget within the widget catalog.  
 
-	![velocity-in-widget-catalog](_img/velocity-in-widget-catalog.png)
+	> [!div class="mx-imgBorder"]  
+	> ![Velocity widget in widget catalog](_img/velocity-in-widget-catalog.png)
 
 0. Click the widget and then click **Add** to add it to the dashboard. Or, you can drag-and-drop it onto the dashboard. Learn more on [adding widgets to dashboard](../dashboards/add-widget-to-dashboard.md)
+
+--- 
 
 Congratulations! A new Velocity widget has been added to your dashboard. 
 
@@ -60,7 +86,7 @@ Congratulations! A new Velocity widget has been added to your dashboard.
 > You'll gain the greatest utility from the Velocity widget by [assigning work to sprints and completing work defined in those sprints](../../work/scrum/assign-work-sprint.md). To quickly define sprints, see [Schedule sprints](../../work/scrum/define-sprints.md). 
  
 
-##  Learn about your team��s velocity using the Velocity widget 
+##  Learn about your team's velocity using the Velocity widget 
 
 The Velocity widget will help you learn how much work your team can complete during a sprint. The widget shows the team's velocity by Story Points, work item count, or any custom field. You can also compare the work delivered against your plan and track work completed late. Using the Velocity widget, you will be able to answer questions like:
 * On average, what is the velocity of my team?

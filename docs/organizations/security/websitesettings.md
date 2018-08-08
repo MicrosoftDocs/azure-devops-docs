@@ -105,8 +105,8 @@ To avoid those certificate warnings and errors, you can export the root certific
 including:
 
 * Using the Certificates MMC snap-in to manually [export the certificate](https://technet.microsoft.com/library/cc730988.aspx) on the server and then import it on each client.
-* Using the [Export-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-certificate) powershell cmdlet, available in Windows 8 / Windows Server 2012 and later 
-operating systems, to export the certificate. [Import-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/import-certificate) can then be used to import it on each client.
+* Using the [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate) powershell cmdlet, available in Windows 8 / Windows Server 2012 and later 
+operating systems, to export the certificate. [Import-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/import-certificate) can then be used to import it on each client.
 * Using [Group Policy](https://technet.microsoft.com/library/dd807084.aspx) to automate distribution to clients. 
 
 ### Internal and external Certificate Authorities
@@ -116,7 +116,7 @@ is the case, the trusted root certificates for these authorities will already be
 certificates for Team Foundation Server. If your organization has its own public key infrastructure, this can be a good option for your TFS deployment.
 
 When other options are not appropriate or available, certificates may be obtained (typically at a cost) from an external Certificate Authority (CA). Instructions for 
-this process, which starts with creating a [Certificate Signing Request](https://technet.microsoft.com/en-us/library/cc732906(v=ws.10).aspx), can be found on most CA 
+this process, which starts with creating a [Certificate Signing Request](https://technet.microsoft.com/library/cc732906(v=ws.10).aspx), can be found on most CA 
 websites. Some important notes:
  
 * Make sure that the Common Name provided in the certificate request matches up with the host name you want in your public URL - for example, tfs.contoso.com. 

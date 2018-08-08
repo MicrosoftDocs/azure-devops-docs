@@ -84,7 +84,7 @@ If you want team members to schedule tasks manually from a Team Foundation clien
 - The pjTaskManual, pjTaskPlaceholder, and pjTaskWarning fields indicate whether a task is scheduled manually or automatically, whether a manual task has insufficient information to be scheduled, and whether a Project has identified a potential scheduling conflict with the start date, finish date, or duration, respectively, of a manually scheduled task. 
 
 To learn more, see: 
-- [Available Fields](https://support.office.com/en-us/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
+- [Available Fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
 - [Customize the Microsoft Project field mapping file](../../customize/reference/customize-project-field-mapping-file.md)
 
   

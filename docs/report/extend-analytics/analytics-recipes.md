@@ -27,7 +27,7 @@ For prerequistes and other information for getting started, see [Query your work
 **Retrieve the history of a work item**
 
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemRevisions?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemRevisions?
   $filter=WorkItemId eq {Id}
   &$select=WorkItemId, Title, State
 ```
@@ -35,7 +35,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemRevis
 **Retrieve all work items in a given iteration**
 
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   $filter=Iteration/IterationPath eq '{iteration path}'
   &$select=WorkItemId, Title, State
 ```
@@ -43,14 +43,14 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
 **Retrieve all work items in a given area**
 
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   $filter=Area/AreaPath eq '{area path}'
   &$select=WorkItemId, Title, State
 ```
 
 **Get the count of work items in each project**
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
@@ -62,7 +62,7 @@ Here your query is constrained by data
 contained within the VSTS data. 
 
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   $filter=Iteration/IterationPath eq '{iteration path}' 
     and ChangedDate ge Iteration/StartDate 
     and ChangedDate le Iteration/EndDate
@@ -76,7 +76,7 @@ From a usage perspective, the format is: **{Navigation Property}/any(d:d/{Field 
 but following this format keeps it simple.
 
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   $filter=Tags/any(d:d/TagName eq '{tag name}')
   &$select=WorkItemId, Title, State
 ```
@@ -84,7 +84,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
 **Retrieve all work items for a specific team**
 
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   $filter=Teams/any(d:d/TeamName eq '{team name}')
   &$select=WorkItemId, Title, State
 ```
@@ -92,7 +92,7 @@ https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
 **Retrieve all work items that at one time had a field set to a specific value (Similar to Work Item query "was ever")**
 
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   $filter=WorkItemType eq '{Type}'
      and Revisions/any(r:r/ResolvedBy/UserName eq '{User}')
 ```

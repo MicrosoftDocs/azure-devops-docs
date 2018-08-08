@@ -37,15 +37,15 @@ You construct the service root URL for a team project as shown:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata
 ```
 
-### Query for metadata on a Account
-The service root URL at the Account level is constructed as:
+### Query for metadata on an organization
+The service root URL at the organization-level is constructed as:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata
 ```
 
 ## Interpret the metadata response
@@ -226,5 +226,5 @@ Capabilities and Aggregation annotations define the set of [functions](./odata-s
 
 ## Related articles
 - [Data model for the Analytics Service](data-model-analytics-service.md)
-- [Account and project-scoped queries](account-scoped-queries.md).
+- [Organization and project-scoped queries](account-scoped-queries.md).
 - [OData Version 4.0. Part 3: Common Schema Definition Language (CSDL) Plus Errata 03, Entity Model Wrapper](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752500) 
