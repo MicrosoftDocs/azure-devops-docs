@@ -69,7 +69,7 @@ Some navigation properties result in a single entity, while others result in a c
 
 ##Entity Properties
 
-The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties€“CreatedDate, CreatedDateSK, CreatedOn-- show that the same value is often expressed in multiple properties, each designed for different scenarios.
+The following table provides a partial list of the WorkItemRevision entity properties to illustrate some common details. The last three properties&mdash;CreatedDate, CreatedDateSK, CreatedOn&mdash;show that the same value is often expressed in multiple properties, each designed for different scenarios.
 
 | Property | Type | Description|  
 |--------|------------|------------|  
