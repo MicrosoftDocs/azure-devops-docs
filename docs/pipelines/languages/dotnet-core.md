@@ -183,7 +183,7 @@ However, you might still need to use the **.NET Core** task to restore packages 
 ::: moniker range=">= tfs-2018"
 
 If your builds occasionally fail when restoring packages from NuGet.org due to connection issues,
-you can use VSTS Package Management in conjunction with [upstream sources](/vsts/package/upstream-sources.md),
+you can use VSTS Package Management in conjunction with [upstream sources](/vsts/package/nuget/upstream-sources),
 and cache the packages in VSTS. The credentials of the build pipeline are automatically used when connecting
 to VSTS Package Management. These credentials are derived from either the **Project Collection Build Service**
 account or the **Project Build Service** account depending on the option selected in your build pipeline.
