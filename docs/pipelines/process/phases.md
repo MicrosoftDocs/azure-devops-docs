@@ -200,6 +200,7 @@ If you specify demands in both the pipeline and in a phase, the union of the two
 
 Learn more about [build and release agent capabilities](../agents/agents.md#capabilities).
 
+<!-- remove until containers roll out everywhere 
 ## Container image
 
 If you are using YAML, you can specify a Docker container to use for your agent phase. 
@@ -272,7 +273,7 @@ YAML is not yet supported in TFS.
 Containers are not yet supported in the web editor.
 
 ---
-
+-->
 ## Timeouts
 
 To avoid hanging up your resources when your process is hung or waiting too long, it's a good idea to set a limit on how long your process is allowed to run. 
