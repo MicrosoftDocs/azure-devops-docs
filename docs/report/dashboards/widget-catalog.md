@@ -550,7 +550,7 @@ Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can 
 
 ![Team members widget](_img/widget-team-members.png)
 
-Shows team member profiles and, on-hover, their user account alias.
+Shows team member profiles and, on-hover, their user alias.
 For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).  
 
 > [!NOTE]  
@@ -627,7 +627,7 @@ These represent the basic widgets. Look forward to more widgets becoming availab
 
 You may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
 
-If your account or project collection administrator disables a marketplace widget, you'll see the following image: 
+If your organization owner or project collection administrator disables a marketplace widget, you'll see the following image: 
 
 <img src="_img/widget-catalog-disabled-widget.png" alt="Disabled widget extension notification" style="border: 2px solid #C3C3C3;" />   
 
@@ -635,7 +635,7 @@ To regain access to it, request your admin to reinstate or reinstall the widget.
 
 ##&nbsp;&nbsp;&nbsp;Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://docs.microsoft.com/en-us/rest/api/vsts/dashboard/dashboards).
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://docs.microsoft.com/rest/api/vsts/dashboard/dashboards).
 
 
 ::: moniker-end

@@ -129,7 +129,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker-end
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-update2). 
+> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
@@ -247,7 +247,7 @@ Del&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete cont
 - [Keyboard shortcuts for Microsoft Test Manager](https://msdn.microsoft.com/library/ff458183.aspx)  
 - [Customize Visual Studio keyboard shortcuts](https://msdn.microsoft.com/library/5zwses53.aspx)  
 - [Default keyboard shortcuts for Visual Studio](https://msdn.microsoft.com/library/da5kh0wa.aspx)  
-- [Accessibility Features of Visual Studio](https://docs.microsoft.com/en-us/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
+- [Accessibility Features of Visual Studio](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
 - [Navigation basics](..//navigation/index.md) 
 
 ###Install Team Explorer  

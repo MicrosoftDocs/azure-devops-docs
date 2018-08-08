@@ -70,6 +70,6 @@ For more information about the warehouse database, see [Table reference for the 
 
 - [Create Excel status and trend charts from a query](../excel/create-status-and-trend-excel-reports.md)
 - [Dashboards and reports](overview.md)
-- [Design Reporting Services Paginated Reports with Report Designer (SSRS)](https://msdn.microsoft.com/en-us/library/ms156280.aspx) 
-- [Report Builder in SQL Server 2016](https://msdn.microsoft.com/en-us/library/dd220460.aspx)
+- [Design Reporting Services Paginated Reports with Report Designer (SSRS)](https://msdn.microsoft.com/library/ms156280.aspx) 
+- [Report Builder in SQL Server 2016](https://msdn.microsoft.com/library/dd220460.aspx)
 

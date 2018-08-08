@@ -85,7 +85,7 @@ Process configuration defines the layout and fields used in the display of the p
 ## Related articles 
 - [Categories XML element reference](categories-xml-element-reference.md)  
 - [Import and export categories](witadmin/witadmin-import-export-categories.md)
-- [Visual Studio TFS forum for Project Management and Work item tracking](http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=tfsworkitemtracking).
+- [Visual Studio TFS forum for Project Management and Work item tracking](http://social.msdn.microsoft.com/Forums/vstudio/home?forum=tfsworkitemtracking).
   
 ### Category names 
 Each category has a friendly name and a reference name that must be unique within the project. For more information, see [Categories XML element reference](categories-xml-element-reference.md).  

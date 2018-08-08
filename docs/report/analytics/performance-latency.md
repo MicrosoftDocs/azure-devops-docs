@@ -22,7 +22,7 @@ When you use the Analytics Service for reporting, you€™ll want to understand the
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## Installing Analytics for the first time
-When you install the [Analytics Marketplace Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), you should expect the initial setup to take between 5 to 30 minutes. If after 24 hours you aren't able to access your data, contact [Microsoft Support](https://docs.microsoft.com/en-us/vsts/user-guide/provide-feedback?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
+When you install the [Analytics Marketplace Extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), you should expect the initial setup to take between 5 to 30 minutes. If after 24 hours you aren't able to access your data, contact [Microsoft Support](https://docs.microsoft.com/vsts/user-guide/provide-feedback?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 
 ## Query Performance
 Using the [recommended query patterns](../extend-analytics/odata-query-guidelines.md), the Analytics Service will respond to any [aggregation](../extend-analytics/aggregated-data-analytics.md) or [non-aggregated query](../extend-analytics/analytics-recipes.md) query within 3 to 5 seconds. The query response will be paged if it exceeds 10,000 results. 

@@ -23,13 +23,13 @@ In general, the order of authentication options should be the following (in orde
 
 ## Azure Active Directory (AAD) 
 
-"Azure Active Directory" is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [PowerBI.com](https://powerbi.microsoft.com) through ÄúOAuth2Äù selection when configuring data refresh.
+"Azure Active Directory" is also known as "Organizational Credential" in Power BI Desktop. You can use it in  [PowerBI.com](https://powerbi.microsoft.com) through OAuth selection when configuring data refresh.
 
 When connecting with Power BI Desktop you will be prompted to enter your credentials for the data source. Click Organizational account as shown here:
 
 <img src="../powerbi/_img/power-bi-organizational.png" alt="Organizational account prompt" style="border: 2px solid #C3C3C3;" /> 
 
-Click the Sign in button and you will be prompted to enter your AAD credentials. After that, you're done.
+Choose the Sign in button and you will be prompted to enter your AAD credentials. After that, you're done.
 
 To change an existing URL to use AAD instead of a PAT or AAC, see [Change authentication credentials](#update-credentials) later in this topic.
 
@@ -47,13 +47,9 @@ the **oAuth2** option.
 - If you need to provide a diagnostic trace and forget to replace the value, you can simply revoke the credential thereby maintaining secure access to VSTS.
 
 
-0. Log in to VSTS, open your user account menu, and select  **Security**.  
+0. Log in to VSTS, open your user profile menu, and select  **Security**.  
 
-	<img src="../../_shared/_img/open-security.png" alt="User Profile, My Security menu option" style="border: 1px solid #C3C3C3;" /> 
-
-0. From the Personal access tokens page, click **Add**:  
-
-	<img src="../../_shared/_img/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
+	![User Profile, My Security menu option](../../_shared/_img/open-security.png)  
 
 0. Enter the required information: 
 	- Add a description  
@@ -62,15 +58,16 @@ the **oAuth2** option.
 	- Choose Selected scopes
 	- Check the **Analytics (read)**
 	
-	And, then click **Create Token**.  
+	And, then choose **Create Token**.  
 
-	<img src="_img/client-authentication/personal-access-tokens-scoped-analytics.png" alt="Create personal access token" style="border: 2px solid #C3C3C3;" />   
+	> [!div class="mx-imgBorder"]  
+	> ![Create personal access token](_img/client-authentication/personal-access-tokens-scoped-analytics-s139.png)  
 
 0. Copy the token that displays. If you navigate away from the page, you won't be able to retrieve it later.  
 
-	<img src="_img/client-authentication/copy-personal-access-token.png" alt="PAT created" style="border: 2px solid #C3C3C3;" />  
+	![Copy Personal Access Token dialog](_img/client-authentication/copy-personal-access-token.png)  
 
-0. If you need to revoke a token, simply navigate to this page and click the **Revoke** link. That token will immediately be denied access to VSTS.
+0. If you need to revoke a token, simply navigate to this page and choose the **Revoke** link. That token will immediately be denied access to VSTS.
 	
 	These tokens are your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password. To help keep your token more secure, consider using credential managers so that you don't have to enter your credentials every time you push.  
 
@@ -81,9 +78,9 @@ authentication screens are identical. This walkthrough is done using Power BI De
 
 1. Open **Power BI Desktop**.  
 
-2. Click **Get Data**.  
+2. Choose **Get Data**.  
 
-3. Click **OData Feed** (or More > Other > OData Feed).  
+3. Click **OData Feed** (or **More>Other>OData Feed**).  
 
 4. Enter the URL for the OData endpoint and click **OK**.  
 
@@ -139,3 +136,9 @@ If you receive an access denied message, you may need to change your authenticat
 - [Access data through Power BI desktop](../powerbi/access-analytics-power-bi.md)  
 - [Publish a Power BI Desktop file to PowerBI.com](../powerbi/publish-power-bi-desktop-to-power-bi.md)  
 
+
+<!---
+From the Personal access tokens page, choose **Add**:  
+
+<img src="../../_shared/_img/security-personal-access-tokens.png" alt="Personal Access Tokens, Added" style="border: 2px solid #C3C3C3;" />  
+-->

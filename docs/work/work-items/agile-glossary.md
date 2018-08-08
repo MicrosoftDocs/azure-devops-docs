@@ -146,7 +146,7 @@ A type of work item that defines the applications, requirements, and elements th
 Workflow is an integral aspect of a work item and is defined by it's corresponding work item type. The workflow determines the logical progression and regression of work items, tracking the status of work as it progresses from a New or Active state to Closed or Completed state. It also specifies the values that appear in the drop-down menus for the State and Reason fields. Learn more: [Workflow states and state categories](../customize/workflow-and-state-categories.md).
 
 
-<!--- SEE ALSO https://msdn.microsoft.com/en-us/library/ms243130(v=vs.100).aspx --> 
+<!--- SEE ALSO https://msdn.microsoft.com/library/ms243130(v=vs.100).aspx --> 
 
 
 <!---

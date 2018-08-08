@@ -21,7 +21,7 @@ ms.date: 08/04/2016
 Add or update a process template with the given properties.  
 
 
-**Namespace**:  [Microsoft.TeamFoundation.Server](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.server(v=vs.120).aspx)  
+**Namespace**:  [Microsoft.TeamFoundation.Server](https://msdn.microsoft.com/library/microsoft.teamfoundation.server(v=vs.120).aspx)  
 **Assembly**:  Microsoft.TeamFoundation.Client (in Microsoft.TeamFoundation.Client.dll)
 
 
@@ -96,27 +96,27 @@ abstract AddUpdateTemplate : ```<br/>```
 
 *name*
 
-&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/en-us/library/system.string.aspx)  
+&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
 &#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored  
 
 *description*
 
-&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/en-us/library/system.string.aspx)  
+&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
 &#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored  
 
 *metadata*
 
-&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/en-us/library/system.string.aspx)  
+&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
 &#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored  
 
 *state*
 
-&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/en-us/library/system.string.aspx)  
+&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
 &#160;&#160;&#160;&#160;&#160;This value is no longer used and will be ignored  
 
 *zipFileName*
 
-&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/en-us/library/system.string.aspx)  
+&#160;&#160;&#160;&#160;&#160;Type: [System.String](https://msdn.microsoft.com/library/system.string.aspx)  
 &#160;&#160;&#160;&#160;&#160;The name of the zip file that contains the process template resources  
 
 

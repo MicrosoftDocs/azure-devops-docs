@@ -55,7 +55,7 @@ Before you get started using Power BI with VSTS, make sure you have completed th
 
 3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md).
 
-4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/en-us/documentation/powerbi-landing-page/).
+4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/).
 
 5. If you are not familiar with the VSTS Analytics Service, we recommend you read "[What is the Analytics Service](../analytics/what-is-analytics.md)" before continuing.
 

@@ -135,5 +135,5 @@ To customize the columns, swimlanes, or cards for each Kanban board, make sure y
 * [Customize cards](../customize/customize-cards.md)  
 
 ### REST API resources
-To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/en-us/rest/api/vsts/work/boards).
+To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/rest/api/vsts/work/boards).
 
