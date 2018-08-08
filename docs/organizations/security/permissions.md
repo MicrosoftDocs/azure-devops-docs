@@ -756,7 +756,7 @@ You manage project-level permissions from the [web portal admin context](../../p
 	</tr>
 	<tr>
 		<td id="delete-test-runs-permission">Delete test runs</td>
-		<td>Can delete a scheduled test.</td>
+		<td>Can delete test run.</td>
 	</tr>
 	<tr>
 		<td id="delete-work-items-in-this-project-permission">
