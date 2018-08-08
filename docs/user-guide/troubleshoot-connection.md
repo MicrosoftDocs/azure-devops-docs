@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 02/26/2018
+ms.date: 08/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2013'
 
 As a first step in resolving connectivity issues with VSTS, do the following:
 
-1. Sign out of your browser. You can do this by clicking this [Visual Studio Sign out link](http://aka.ms/VsSignout).
+1. Sign out of your browser. You can do this by choosing the [Visual Studio Sign out](http://aka.ms/VsSignout) link.
 
 2. Delete your browser cookies. For most browsers, you can do this by entering CTRL+SHIFT+DEL.
 
