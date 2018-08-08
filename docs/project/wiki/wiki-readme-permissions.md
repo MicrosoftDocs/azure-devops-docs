@@ -43,7 +43,7 @@ To manage notifications, see:
 ## Related articles
 
 - [Work across projects](../navigation/work-across-projects.md)
-- [Add a team administrator](../../work/scale/add-team-administrator.md) 
+- [Add a team administrator](../../organizations/settings/add-team-administrator.md) 
 - [Permissions and groups reference](../../organizations/security/permissions.md)
 
 

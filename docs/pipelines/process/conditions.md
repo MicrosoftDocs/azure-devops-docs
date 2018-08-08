@@ -145,7 +145,7 @@ Otherwise =\> True
 
 ### Number to Version
 
-Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](https://msdn.microsoft.com/en-us/library/system.int32.maxvalue%28v=vs.110%29.aspx) (decimal component also).
+Must be greater than zero and must contain a non-zero decimal. Must be less than [Int32.MaxValue](https://msdn.microsoft.com/library/system.int32.maxvalue%28v=vs.110%29.aspx) (decimal component also).
 
 #### Number to String
 
@@ -167,7 +167,7 @@ Otherwise not convertible
 
 Empty string =\> 0
 
-Otherwise try-parse using [InvariantCulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.invariantculture%28v=vs.110%29.aspx)  and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If try-parse fails, then not convertible.
+Otherwise try-parse using [InvariantCulture](https://msdn.microsoft.com/library/system.globalization.cultureinfo.invariantculture%28v=vs.110%29.aspx)  and the following rules: AllowDecimalPoint | AllowLeadingSign | AllowLeadingWhite | AllowThousands | AllowTrailingWhite. If try-parse fails, then not convertible.
 
 ### String to Version
 

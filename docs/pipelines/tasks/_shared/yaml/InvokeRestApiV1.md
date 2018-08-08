@@ -3,7 +3,9 @@
 # Invoke REST API as a part of your process.
 - task: InvokeRESTAPI@1
   inputs:
-    serviceConnection: 
+    #connectionType: 'connectedServiceName' # Options: connectedServiceName, connectedServiceNameARM
+    #serviceConnection: # Required when connectionType == ConnectedServiceName
+    #azureServiceConnection: # Required when connectionType == ConnectedServiceNameARM
     #method: 'POST' # Options: oPTIONS, gET, hEAD, pOST, pUT, dELETE, tRACE, pATCH
     #headers: '{Content-Type:application/json, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}' 
     #body: # Required when method != GET && Method != HEAD

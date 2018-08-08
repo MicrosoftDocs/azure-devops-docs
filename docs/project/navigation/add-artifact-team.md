@@ -58,7 +58,7 @@ From a **Work** page, you can add a work item from the menu of options as shown 
 
 To add other work tracking artifacts, see one of the following articles: 
 
-- To add a board, backlog, or sprint backlog, first [add a team](../../work/scale/multiple-teams.md) which will be associated with those artifaces 
+- To add a board, backlog, or sprint backlog, first [add a team](../../organizations/settings/add-teams.md) which will be associated with those artifaces 
 - [Add a delivery plan](../../work/scale/review-team-plans.md)
 - [Add a managed work item query](../../work/track/using-queries.md) 
 - [Add work items](../../work/work-items/view-add-work-items.md).
@@ -143,7 +143,7 @@ To learn more about adding other pipeline related artifacts, see the following a
 
 ## Add a team 
 
-Agile tools and dashboards are typically associated with teams. You add teams to a project. To learn more about teams, see [About teams and Agile tools](../../settings/about-teams-and-settings.md). To add a team, see [Add a team and team members](../../work/scale/multiple-teams.md). 
+Agile tools and dashboards are typically associated with teams. You add teams to a project. To learn more about teams, see [About teams and Agile tools](../../settings/about-teams-and-settings.md). To add a team, see [Add a team and team members](../../organizations/settings/add-teams.md). 
 
 <a id="view-teams" />
 ## View teams already defined 

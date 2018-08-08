@@ -9,7 +9,6 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'vsts'
-robots: NOINDEX, NOFOLLOW
 ms.date: 05/30/2018
 ---
 
@@ -18,7 +17,7 @@ ms.date: 05/30/2018
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
 > [!NOTE]  
-> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your account(s).
+> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your organization(s).
 
 Cloning your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -79,7 +78,7 @@ We recommend that you create a test project based on the inherited process creat
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create a team project from the selected process](_img/migration/create-team-project-inherited-process.png)  
+	> ![Create a project from the selected process](_img/migration/create-team-project-inherited-process.png)  
 
 0. The Create new project page opens. Fill out the form. 
 
@@ -97,3 +96,8 @@ We recommend that you create a test project based on the inherited process creat
 > [!div class="nextstepaction"]
 > [Change a project from a Hosted XML process to Inheritance](change-process-from-hosted-to-inherited.md) 
 
+## FAQ
+
+### Q: Why are some of my fields missing on the form when I clone a Hosted XML process to Inherited?
+
+During the cloning process we do our best to match your layout from Hosted XML and clone it into Inherited. However, if you have been creative with the form layout, we can't always replicate that same layout in Inherited. They system does a best attempt. Fields and layouts that are not understood get ignored. The fields however are still added to the process. You just need to manually add them to the form layout.

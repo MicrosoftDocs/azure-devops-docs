@@ -54,7 +54,7 @@ For usage guidance, see [Burndown guidance](../../report/dashboards/burndown-gui
 <a id="open-chart">  </a>
 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 ## Open the Sprint backlog for your team 
 

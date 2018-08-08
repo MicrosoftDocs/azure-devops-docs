@@ -45,7 +45,7 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 0.  Choose **Clone**. In the Clone repository dialog, choose the ![](../../_img/icons/copy-clone-icon.png) copy-clone icon to have the URL copied to your clipboard. Store it in a place where you can find it easily.
 
 	> [!div class="mx-imgBorder"]
-	> ![Clone URL, vertical navigation](_img/clone-git-repo-public/clone-url-vert.png)
+	> ![Clone URL, new navigation](_img/clone-git-repo-public/clone-url-vert.png)
 
 # [Previous navigation](#tab/previous-nav)  
 

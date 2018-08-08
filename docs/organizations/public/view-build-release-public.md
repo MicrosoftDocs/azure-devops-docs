@@ -31,7 +31,7 @@ When viewing a public project, you can view the status of build and release pipe
 To view the status of recent builds, choose **Builds** under **Build and release**. To view a summary or history of any build, choose a build. 
 
 > [!div class="mx-imgBorder"]
-> ![Build and Release hub, Recent Builds, vertical navigation ](_img/pipelines/view-build-vert-brn.png)
+> ![Build and Release hub, Recent Builds, new navigation ](_img/pipelines/view-build-vert-brn.png)
 
 
 # [Previous navigation](#tab/previous-nav)  
@@ -52,7 +52,7 @@ To view the status of recent builds, choose **Build and Release**.  To view a su
 To view active release pipelines, choose **Releases** under **Build and release**. 
 
 > [!div class="mx-imgBorder"]
-> ![Build and Release, Recent Releases, vertical navigation ](_img/pipelines/view-releases-vert.png)
+> ![Build and Release, Recent Releases, new navigation ](_img/pipelines/view-releases-vert.png)
 
 From there, you can drill into the details of a release. For example, here we show  the **Release-3** pipeline.   
 

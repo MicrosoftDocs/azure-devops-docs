@@ -13,5 +13,6 @@
     #compareType: 'LastSuccessful' # Optional. Options: lastSuccessful, specific
     #buildNumber: # Optional
     #overwriteExistingPkgArtifact: true # Optional
+    #imageNamesPath: # Optional
     #imageDigestsPath: # Required when updateType == Docker Image Settings
 ```

@@ -18,13 +18,13 @@ monikerRange: 'vsts'
 Do you want an easier way to control who can access your team's 
 critical resources and key business assets in VSTS? 
 If you already use Microsoft services like Office 365 or 
-[Azure Active Directory (Azure AD)](https://www.microsoft.com/en-us/server-cloud/products/azure-active-directory/), 
+[Azure Active Directory (Azure AD)](https://www.microsoft.com/server-cloud/products/azure-active-directory/), 
 you can use the same identities with your VSTS organization. 
 [Azure AD works with your VSTS organization](access-with-azure-ad.md) 
 to control access and authenticate users through your Azure Active Directory. 
 
 When you organize directory members with 
-[Azure AD groups](/azure/active-directory/fundamentals/active-directory-manage-groups), 
+[Azure AD groups](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups), 
 you can reuse those groups to manage permissions 
 in bulk for your VSTS organization. 
 Just add those groups to the VSTS group that you want. 
@@ -36,7 +36,7 @@ so you don't have to manage group members one at a time.
 
 Not familiar with Azure AD, 
 but want to check it out? Learn more about 
-[Azure AD benefits](/azure/active-directory/fundamentals/active-directory-whatis)
+[Azure AD benefits](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)
 and differences in how you 
 [control VSTS organization access with Microsoft accounts or with Azure AD](access-with-azure-ad.md).
 
@@ -58,7 +58,7 @@ or have the directory administrator delegate those permissions to you in the
 
 ##	Add an Azure AD group to a VSTS group
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

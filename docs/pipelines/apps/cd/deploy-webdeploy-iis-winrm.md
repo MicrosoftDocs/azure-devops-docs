@@ -62,7 +62,7 @@ For example, do not use WinRM over HTTP to communicate with a Workgroup machine.
 Similarly, do not use an IP address to access the target server(s) when you use HTTP.
 Instead, in both scenarios, use HTTPS.
 
-> If you need to deploy to a server that is not in the same workgroup or domain, add it to trusted hosts in your [WinRM configuration](https://msdn.microsoft.com/en-us/library/aa384372.aspx).
+> If you need to deploy to a server that is not in the same workgroup or domain, add it to trusted hosts in your [WinRM configuration](https://msdn.microsoft.com/library/aa384372.aspx).
 
 Follow these steps to configure each target server.
 
@@ -121,7 +121,7 @@ Follow these steps to configure each target server.
 
 If you are deploying an ASP.NET app, make sure that you have ASP.NET 4.5 or ASP.NET 4.6 installed on each of your IIS target servers. For more information, see [this topic](https://www.asp.net/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
-If you are deploying an ASP.NET Core application to IIS target servers, follow the additional instructions in [this topic](https://docs.microsoft.com/en-us/aspnet/core/publishing/iis) to install .NET Core Windows Server Hosting Bundle.
+If you are deploying an ASP.NET Core application to IIS target servers, follow the additional instructions in [this topic](https://docs.microsoft.com/aspnet/core/publishing/iis) to install .NET Core Windows Server Hosting Bundle.
 
 If you are deploying a Node application to IIS target servers, follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 

@@ -28,7 +28,7 @@ So before you start, find out
 To change your VSTS organization URL, you'll need at least Basic access and organization owner permissions. 
 [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

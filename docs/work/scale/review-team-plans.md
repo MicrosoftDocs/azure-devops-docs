@@ -10,7 +10,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 03/20/2018
+ms.date: 08/06/2018
 ---
 
 
@@ -22,7 +22,8 @@ Use the visualization options provided by Delivery Plans to review the schedule 
 
 Delivery plans is also interactive. You can change the assigned sprint of a work item by dragging it to a new sprint as shown in the following image. 
  
-![Moving a card to a different iteration](_img/plans_move1.png)
+> [!div class="mx-imgBorder"]  
+> ![Moving a card to a different iteration](_img/plans_move1.png)
 
 Use Delivery Plans to ensure your teams are aligned  with your organizational goals. You can view multiple backlogs and multiple teams across your whole account. You can interact with the plan with simple drag-and-drop operations to update or modify the schedule.  
 
@@ -42,7 +43,7 @@ In order to add and configure a plan, you must have the following in place:
 - [Installed the Plans extension](#install-plans)  
 - Be granted [Basic access or greater](../../organizations/security/access-levels.md) (Users with Stakeholder access can't add or view plans)  
 - [Defined iteration paths](../../organizations/settings/set-area-paths.md) for the project  
-- [Configured teams](multiple-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
+- [Configured teams](../../organizations/settings/add-teams.md) and [set team defaults and team sprints](../../organizations/settings/set-team-defaults.md)   
 - Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned them to iterations  
 
 All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. (Accounts assigned to [Stakeholder access](../../organizations/security/get-started-stakeholder.md), however, don't have access to Delivery Plans.) 
@@ -75,35 +76,77 @@ In this way, a Delivery Plan is a driver of alignment while allowing each team t
     
 ## Add a plan  
 
-Once you have [installed Delivery Plans](#install-plans), the Plans page appears under **Work**.
+Once you have [installed Delivery Plans](#install-plans), the **Plans** appears under **Work**.
 
-<img src="_img/review-team-plans-open-plans.png" alt="Plans menu item" style="border: 1px solid #C3C3C3;" /> 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
-0. To add a plan, click New Plan from the Plans page. 
+# [New navigation](#tab/new-nav)
 
-	<img src="_img/review-team-plans-no-plans-defined.png" alt="Create new plan" style="border: 1px solid #C3C3C3;" /> 
+::: moniker range="vsts"  
+
+0. Open **Work>Plans**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open work>Plans, new nav](_img/plans/open-plans-vert.png) 
+
+0. To add a plan, choose **New Plan** . 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add a plan](_img/plans/add-plan.png) 
 
 	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
 
 0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
 
-	<img src="_img/review-team-plans-new-plan.png" alt="Plans wizard" style="border: 2px solid #C3C3C3;" />
+	> [!div class="mx-imgBorder"]  
+	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
+::: moniker-end  
 
-	When defining a plan, note the following:  
-	- Use the name and description field to clearly identify your plan within the project 
-	- You can choose one or more teams from any project defined in the organization or collection  
-	- You can choose one or more [active backlogs for a team](../customize/select-backlog-navigation-levels.md)
-	- The order in which you enter the teams and team backlogs defines the order in which they'll appear in the plan 
-	-  To limit the number or types of work items, specify the field criteria.
+::: moniker range=">= tfs-2017  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Open **Work>Plans**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open work>Plans, previous nav](_img/plans/open-plans-horz.png) 
+
+0. To add a plan, choose **New Plan** . 
+
+	::: moniker range="vsts"  
+	> [!div class="mx-imgBorder"]  
+	> ![Add a plan](_img/plans/add-plan.png) 
+	::: moniker-end  
+	::: moniker range=">= tfs-2017  <= tfs-2018"  
+	![Add a plan](_img/review-team-plans-no-plans-defined.png)  
+	::: moniker-end  
+
+	All users, except users [assigned Stakeholder access](../../organizations/security/change-access-levels.md), have permissions to create a plan and manage the plans they create. To manage permissions for a plan, see [Set permissions and access for work tracking, Manage or edit Delivery Plans](../../organizations/security/set-permissions-access-work-tracking.md#plan-permissions).  
+
+0. Fill in the form to name, describe, and specify the team backlogs that you want to appear within your plan.    
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add a plan](_img/plans/new-delivery-plan-dialog.png) 
+
+---
+
+When defining a plan, note the following:  
+- Use the name and description field to clearly identify your plan within the project 
+- You can choose one or more teams from any project defined in the organization or collection  
+- You can choose one or more [active backlogs for a team](../customize/select-backlog-navigation-levels.md)
+- The order in which you enter the teams and team backlogs defines the order in which they'll appear in the plan 
+-  To limit the number or types of work items, specify the field criteria.
 
 <a id="card-settings">  </a>
 ## Edit a plan, add field criteria, customize cards, and add markers 
 
 Once you've defined a plan, you can further customize it. 
 
-1. Click the ![Settings gear icon](../_img/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog. 
+1. Choose the ![](_img/plans/gear-icon.png) gear icon to open the Settings dialog. 
 
-2. Then, click the page you want to edit. You can customize the plan in the following ways: 
+2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
 	- Edit the teams you've selected and their backlog level  
 	- Set field criteria to further limit the work items that will appear on the plan 
 	- Add markers to show important upcoming events on your timeline 
@@ -127,9 +170,8 @@ Once you've defined a few plans, you'll see them listed from the Plans page unde
 
 Use the favorite's star to favorite a plan so that you can quickly return to that plan. You can also search for other plans in the project.
 
-To open a plan, simply click the plan name.  
+To open a plan, simply choose the plan name.  
 
-<img src="_img/review-team-plans-view-plans.png" alt="Plan Favorites" style="border: 2px solid #C3C3C3;" />
 
 ## Interactive elements of plans, change the plan view  
  
@@ -170,20 +212,22 @@ To gain a summary view of work that is schedule, collapse all teams. You can the
 
 For example, here you can see the count of Features for Team 1 for the next 3 sprints. You can collapse/expand team rows by clicking the team name or the sprint name.
 
-<img src="_img/plans_view4.png" alt="Collapse click targets" style="border: 2px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Collapse click targets](_img/plans_view4.png)  
 
- 
 ### Minimize the fields displayed on cards  
 
 To quickly change the cards to only show their Title, enter the keyboard shortcut 't'. This will hide all other fields, as shown in the following image, the Assigned to field no longer appears. To persist this view, edit the [plan's settings for card fields](#card-settings).
 
-<img src="_img/plans_view5.png" alt="Cards showing the Title only" style="border: 2px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Cards showing the Title only](_img/plans_view5.png)   
 
 ### Update the iteration for a backlog item 
 
 As changes occur to the schedule, you can update the iteration for a backlog item by moving a card to a different iteration. This will help to drive alignment across your organization.
 
-![Move a card to a different iteration](_img/plans_move1.png)
+> [!div class="mx-imgBorder"]  
+> ![Move a card to a different iteration](_img/plans_move1.png)
 
 
 ## Related articles  
@@ -191,15 +235,15 @@ As changes occur to the schedule, you can update the iteration for a backlog ite
 For additional resources for working with multiple teams, see these additional topics: 
 
 - [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md)  
-- [Multiple teams](multiple-teams.md)  
+- [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  
-- [Configure team settings](manage-team-assets.md)  
+- [Configure team settings](../../organizations/settings/configure-team-settings.md)  
 - [Delivery plan keyboard shortcuts](delivery-plan-keyboard-shortcuts.md)  
 
 
 <a id="plans-rest-api">  </a>
 ### Programmatically manage Delivery Plans  
-You can manage plans programmatically using the [REST API, Plans](https://docs.microsoft.com/en-us/rest/api/vsts/work/plans).
+You can manage plans using the [REST API, Plans](https://docs.microsoft.com/en-us/rest/api/vsts/work/plans).
 
 
  

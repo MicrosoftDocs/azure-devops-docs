@@ -4,7 +4,7 @@
 - task: DownloadPackage@0
   inputs:
     feed: 
-    pipeline: 
+    definition: 
     version: 
     #downloadPath: '$(System.ArtifactsDirectory)' 
 ```

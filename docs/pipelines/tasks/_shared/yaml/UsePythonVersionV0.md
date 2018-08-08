@@ -3,7 +3,7 @@
 # Retrieves the specified version of Python from the tool cache. Optionally add it to PATH.
 - task: UsePythonVersion@0
   inputs:
-    #versionSpec: '>= 3.3' 
+    #versionSpec: '3.x' 
     #addToPath: true 
     #architecture: 'x64' # Options: x86, x64
 ```

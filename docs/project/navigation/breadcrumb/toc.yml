@@ -2,9 +2,9 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Project
+  - name: Collaboration
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=apps&panel=overview
+    topicHref: /vsts/index#pivot=apps&panel=collaboration
     items:
     - name: Navigation Basics
       tocHref: /vsts/

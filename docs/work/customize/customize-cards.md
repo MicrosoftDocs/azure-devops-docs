@@ -120,7 +120,7 @@ As a first step, you'll see that you can change the card display for each work i
 	::: moniker range="tfs-2015"  
 	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customization" style="border: 1px solid #C3C3C3;" />    
 	::: moniker-end  
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize cards. Learn more about accessing and using your Kanban board from [Kanban basics](../kanban/kanban-basics.md).  
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize cards. Learn more about accessing and using your Kanban board from [Kanban basics](../kanban/kanban-basics.md).  
 
 0. Select the WIT you want to customize. Different WITs may present different options for customization.   
 
@@ -162,7 +162,7 @@ You change the way cards display on the task board the same way you change the K
 
 	<img src="_img/task-board-customize-open-settings.png" alt="Task board, open card customization dialog" style="border: 1px solid #C3C3C3;" />  
 
-	Remember, only [team or project administrators](../scale/add-team-administrator.md) can customize the task board.
+	Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the task board.
 
 2.	Just as before, choose the WIT you want to customize, and then checkmark or select the options you want.     
     ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"    
@@ -253,7 +253,7 @@ To learn more about using these features, see [Add task checklists](../kanban/ad
 
 	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" /> 
 
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can set team settings.  
 
 2. From the Annotations tab, check those annotations that you want enabled. For example, to enable tasks but disable tests, check the following boxes.     
 
@@ -276,7 +276,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 1. To open, click the ![gear icon](../_img/icons/team-settings-gear-icon.png) gear icon from your team's Kanban board.  
 
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can set team settings.  
 
 2. From the Tests tab, choose the option you want. You must enable the Test annotation feature in order to configure tests. To select a test plan, click the ![Actions icon](../_img/icons/actions-icon.png) actions icon and select one test plan from the query provided.      
 

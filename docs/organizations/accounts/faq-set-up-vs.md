@@ -25,7 +25,7 @@ A:	Your Visual Studio settings,
 like automatic brace completion, 
 are saved with your profile. 
 These settings roam with your [personal Microsoft account](https://www.microsoft.com/account), 
-or your [work or school account](/azure/active-directory/fundamentals/sign-up-organization), 
+or your [work or school account](https://azure.microsoft.com/documentation/articles/sign-up-organization/), 
 when you sign in to Visual Studio on any computer. 
 
 Sign in to Visual Studio during the 30-day 
@@ -47,7 +47,7 @@ Learn more about
 
 A:	To create a profile and save your settings, 
 you'll need to sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
-or a [work or school account](/azure/active-directory/fundamentals/sign-up-organization) 
+or a [work or school account](https://azure.microsoft.com/documentation/articles/sign-up-organization/) 
 that's managed by Azure Active Directory.
 
 <a name="vs-versions"></a>
@@ -68,9 +68,9 @@ try [Subscription Support](https://visualstudio.microsoft.com/support/subscripti
 
 A:	Learn more about:
 
-*	[Installing Visual Studio](https://msdn.microsoft.com/en-us/library/e2h7fzkw.aspx).
+*	[Installing Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx).
 *	[Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
-*	[Managing multiple user organizations](https://msdn.microsoft.com/en-us/library/dn872465.aspx).
+*	[Managing multiple user organizations](https://msdn.microsoft.com/library/dn872465.aspx).
 
 Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
 

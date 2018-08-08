@@ -25,8 +25,8 @@
     #webConfigParameters: # Optional
     #appSettings: # Optional
     #configurationSettings: # Optional
-    #useWebDeploy: false # Optional
-    #deploymentType: 'webDeploy' # Required when useWebDeploy == True# Options: webDeploy, zipDeploy, runFromZip
+    #enableCustomDeployment: false # Optional
+    #deploymentType: 'webDeploy' # Required when enableCustomDeployment == True# Options: webDeploy, zipDeploy, runFromZip
     #takeAppOfflineFlag: true # Optional
     #setParametersFile: # Optional
     #removeAdditionalFilesFlag: false # Optional
