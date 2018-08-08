@@ -63,11 +63,6 @@ In a deployment process, the target can be either an agent, a [deployment group]
 
 When the target is an agent, the tasks are run on the computer that hosts the agent.
 
-# [Web](#tab/web)
-
-When you create a new pipeline, it starts with a single agent phase. 
-The properties for the agent phase are displayed when you select the agent phase in the editor.
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -108,20 +103,64 @@ phases:
     ...
 ```
 
+Phases can also be defined as templates in a separate file. This allows you
+to define your logic once and then reuse it in several places.
+Templates can include parameters which the pipeline definition can vary.
+
+```yaml
+# File: templates/npm.yml
+
+parameters:
+  name: ''  # defaults for any parameters that aren't specified
+  queue: ''
+
+phases:
+- phase: ${{ parameters.name }}
+  queue: ${{ parameters.queue }}
+  steps:
+  - script: npm install
+  - script: npm test
+```
+
+When you consume the template in your pipeline, specify values for
+the template parameters.
+
+```yaml
+# File: .vsts-ci.yml
+
+phases:
+- template: templates/npm.yml  # Template reference
+  parameters:
+    name: macOS
+    queue: Hosted macOS Preview
+
+- template: templates/npm.yml  # Template reference
+  parameters:
+    name: Linux
+    queue: Hosted Linux Preview
+
+- template: templates/npm.yml  # Template reference
+  parameters:
+    name: Windows
+    queue: Hosted VS2017
+```
+
+
 ::: moniker-end
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+When you create a new pipeline, it starts with a single agent phase. 
+The properties for the agent phase are displayed when you select the agent phase in the editor.
+
 ---
 
 ## Demands
 
 Use demands to specify what capabilities an agent must have to run jobs from your phase.
-
-# [Web](#tab/web)
-
-You have the option to specify demands in the pipeline, in the phases, or both.
-If you specify demands in both the pipeline and in a phase, the union of the two sets of demands is required for the system to select an agent.
 
 # [YAML](#tab/yaml)
 
@@ -151,6 +190,12 @@ steps:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+You have the option to specify demands in the pipeline, in the phases, or both.
+If you specify demands in both the pipeline and in a phase, the union of the two sets of demands is required for the system to select an agent.
+
 ---
 
 Learn more about [build and release agent capabilities](../agents/agents.md#capabilities).
@@ -158,10 +203,6 @@ Learn more about [build and release agent capabilities](../agents/agents.md#capa
 ## Container image
 
 If you are using YAML, you can specify a Docker container to use for your agent phase. 
-
-# [Web](#tab/web)
-
-Containers are not yet supported in the web editor.
 
 # [YAML](#tab/yaml)
 
@@ -225,19 +266,18 @@ phases:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+Containers are not yet supported in the web editor.
+
 ---
 
 ## Timeouts
 
 To avoid hanging up your resources when your process is hung or waiting too long, it's a good idea to set a limit on how long your process is allowed to run. 
 Use the phase timeout setting to specify the limit in minutes for jobs run by this phase. 
-A zero value means that the jobs will run for an effectively unlimited amount of time.
-
-# [Web](#tab/web)
-
-Select the phase and then specify the timeout value. 
-
-On the **Options** tab you can specify default values for all phases in the pipeline. If you specify a non-zero value for the phase timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
+A zero value means that the jobs will run forever (except in hosted pools, where they will be forcibly stopped).
 
 # [YAML](#tab/yaml)
 
@@ -255,6 +295,13 @@ queue:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+Select the phase and then specify the timeout value. 
+
+On the **Options** tab you can specify default values for all phases in the pipeline. If you specify a non-zero value for the phase timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
+
 ---
 
 ::: moniker range="vsts"
@@ -277,7 +324,34 @@ From a single phase you can run multiple jobs and multiple agents in parallel. S
 * **Multi-configuration testing:** An agent phase can be used in a build pipeline or in an
   environment of a release pipeline to run a set of tests in parallel - once for each test configuration. 
   
-# [Web](#tab/web)
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+The `matrix` setting enables a phase to be dispatched multiple times, with different variable sets. The `parallel` tag restricts the amount of parallelism. The following phase will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run in parallel at a time.
+
+```yaml
+phases:
+- phase: Test
+  queue:
+    parallel: 2
+    matrix: 
+      US_IE:
+        Location: US
+        Browser: IE
+      US_Chrome:
+        Location: US
+        Browser: Chrome
+      Europe_Chrome:
+        Location: Europe
+        Browser: Chrome
+```
+::: moniker-end
+::: moniker range="< vsts"
+YAML is not yet supported in TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
 
 To run multiple jobs using multi-configuration option,
   you identify a variable named a **multiplier**, and specify a list
@@ -314,41 +388,11 @@ a maximum of four agents at any one time:
 
 With multi-configuration you can run multiple jobs, each with a different value for one or more variables (multipliers). If you want to run the same job on multiple agents, then you can use **multi-agent** option of parallelism. The test slicing example above can be accomplished through multi-agent option.
 
-# [YAML](#tab/yaml)
-
-::: moniker range="vsts"
-
-The `matrix` setting enables a phase to be dispatched multiple times, with different variable sets. The `parallel` tag restricts the amount of parallelism. The following phase will be dispatched three times with the values of Location and Browser set as specified. However, only two jobs will run in parallel at a time.
-
-```yaml
-phases:
-- phase: Test
-  queue:
-    parallel: 2
-    matrix: 
-      US_IE:
-        Location: US
-        Browser: IE
-      US_Chrome:
-        Location: US
-        Browser: Chrome
-      Europe_Chrome:
-        Location: Europe
-        Browser: Chrome
-```
-::: moniker-end
-::: moniker range="< vsts"
-YAML is not yet supported in TFS.
-::: moniker-end
 ---
 
 ## Slicing
 
 An agent phase can be used to run a suite of tests in parallel. For example, you can run a large suite of 1000 tests on a single agent. Or, you can use two agents and run 500 tests on each one in parallel. To leverage slicing, the tasks in the phase should be smart enough to understand the slice they belong to. The Visual Studio Test task is one such task that supports test slicing. If you have installed multiple agents, you can specify how the Visual Studio Test task will run in parallel on these agents. Variables `System.SliceNumber` and `System.SliceCount` are added to each job.
-
-# [Web](#tab/web)
-
-Specify the **multi-agent** option on an agent phase to leverage slicing. The job is dispatched as many times as the number of agents you specify, and the variables `System.SliceNumber` and `System.SliceCount` are automatically set in each job.
 
 # [YAML](#tab/yaml)
 
@@ -366,14 +410,15 @@ phases:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+Specify the **multi-agent** option on an agent phase to leverage slicing. The job is dispatched as many times as the number of agents you specify, and the variables `System.SliceNumber` and `System.SliceCount` are automatically set in each job.
+
 ---
 
 ## Phase variables
 If you are using YAML, variables can be specified on the phase. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the environment variable.
-
-# [Web](#tab/web)
-
-Phase variables are not yet supported in the web editor.
 
 # [YAML](#tab/yaml)
 
@@ -399,12 +444,21 @@ steps:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+Phase variables are not yet supported in the web editor.
+
 ---
 
 <a name="artifact-download"></a>
 ## Artifact download
 
-# [Web](#tab/web)
+# [YAML](#tab/yaml)
+
+These options are not available in YAML.
+
+# [Designer](#tab/designer)
 
 In a release pipeline, you may choose to skip the
   [download of artifacts](../release/artifacts.md#download)
@@ -418,20 +472,12 @@ Alternatively, You can choose to download specific
 
 ::: moniker-end
 
-# [YAML](#tab/yaml)
-
-These options are not available in YAML.
-
 ---
 
 ## Access to OAuth token
 
  You can allow tasks running in this phase to access current VSTS or TFS OAuth security token.
   The token can be use to authenticate to the VSTS REST API.
-
-# [Web](#tab/web)
-
-Select the **Allow scripts to access OAuth token** option in the control options for the phase.
 
 # [YAML](#tab/yaml)
 
@@ -455,6 +501,11 @@ steps:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+Select the **Allow scripts to access OAuth token** option in the control options for the phase.
+
 ---
 
 ## Related topics
