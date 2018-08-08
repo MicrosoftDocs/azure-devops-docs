@@ -36,7 +36,7 @@ You will need:
 * A [test plan](create-a-test-plan.md)
   containing your automated tests, which you have associated with automated test methods using 
   [Visual Studio 2017](associate-automated-test-with-test-case.md), 
-  or [Visual Studio 2015 or earlier](https://msdn.microsoft.com/en-us/library/dd380741%28v=vs.120%29.aspx).
+  or [Visual Studio 2015 or earlier](https://msdn.microsoft.com/library/dd380741%28v=vs.120%29.aspx).
 
 * A [Team Build pipeline](../pipelines/apps/windows/dot-net.md)
   that generates builds containing the test binaries.
