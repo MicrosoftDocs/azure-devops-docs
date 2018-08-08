@@ -28,7 +28,7 @@ Follow the steps below to get started using the VSTS Power BI Data Connector:
 
 3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md).
 
-4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/en-us/documentation/powerbi-landing-page/).
+4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/).
 
 5. If you are not familiar with the VSTS Analytics Service, we recommend you read "[what is the Analytics Service](../analytics/what-is-analytics.md)" before continuing.
 
@@ -50,7 +50,7 @@ Follow the steps below to get started using the VSTS Power BI Data Connector:
  
 	![](./_img/data-connector-parameters.png)
 
-	- For *Account*, enter just the VSTS account name and not the full URL (e.g. use `fabrikam-fiber-inc` if the URL of your account is "`https://fabrikam-fiber-inc.visualstudio.com`").
+	- For *Account*, enter just the VSTS organization name and not the full URL (e.g. use `fabrikam-fiber-inc` if the URL of your account is "`https://fabrikam-fiber-inc.visualstudio.com`").
 	- For *Team project*, enter just the project name (e.g. use `Fabrikam-Fiber` if the URL of your project is "`https://fabrikam-fiber-inc.visualstudio.com/Fabrikam-Fiber`").
 
 	> [!IMPORTANT]  

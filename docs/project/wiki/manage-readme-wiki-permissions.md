@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 By default, all members of the Contributors group can edit README files and Wiki pages. 
 
 > [!NOTE]  
-> **Feature availability**: The built-in wiki is available with VSTS and TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/en-us/news/releasenotes/tfs2018-relnotes).    
+> **Feature availability**: The built-in wiki is available with VSTS and TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/news/releasenotes/tfs2018-relnotes).    
 
 <a id="manage-readme-permissions"></a>
 

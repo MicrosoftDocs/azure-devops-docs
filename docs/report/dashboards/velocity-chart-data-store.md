@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/14/2017
+ms.date: 08/06/2018
 ---
 
 # View and work with the built-in team velocity chart 
@@ -26,15 +26,15 @@ Teams track their velocity to help them determine how much work they can perform
 Use this topic to learn: 
 
 > [!div class="checklist"]
-> * How to view and work with the Velocity chart (work tracking datastore)     
-> * Required and recommended team activities to support velocity tracking      
+> * How to view and work with the Velocity chart (work tracking datastore)  
+> * Required and recommended team activities to support velocity tracking   
 
 Once your team has completed a few sprints, they can use their velocity to [forecast](../../work/scrum/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
 
-
+::: moniker range="vsts"  
 > [!NOTE]   
-> In addition to the built-in velocity chart, VSTS accounts have access to the [Velocity widget](team-velocity.md). The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart. 
-
+> In addition to the built-in velocity chart, VSTS users have access to the [Velocity widget](team-velocity.md). The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart. 
+::: moniker-end  
 
 <a id="velocity-chart">   </a>
 ## Work with the built-in team velocity chart 
@@ -42,11 +42,37 @@ Velocity provides a useful metric for gaining insight into how much work your te
 
 Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog.  
 
-[!INCLUDE [temp](../../work/_shared/image-differences-with-wits.md)]
+[!INCLUDE [temp](../../work/_shared/image-differences-with-wits.md)]  
 
-1.	From the backlog page, open the velocity chart.  
+From your web browser, open your product backlog.  
 
-	![Click the velocity chart in the upper right area of the page](_img/velocity-forecast-open-chart.png)  
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"
+
+0. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
+
+	![Open Work, Backlogs, for a team](../../work/scrum/_img/assign-items-sprint/open-work-backlogs-agile.png)
+
+	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose another team](../../work/scrum/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
+
+	> [!TIP]    
+	> Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+
+0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../../work/scrum/_img/assign-items-sprint/select-product-backlog-agile.png) 
+
+0. Open the velocity chart.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](_img/velocity/velocity-forecast-open-chart-vert.png) 
 
 	For charts to appear, your team must perform these activities: 
 	- Select sprints for your team  
@@ -57,11 +83,39 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 	As this chart shows, velocity will fluctuate from sprint-to-sprint for a variety of reasons. However, you can quickly determine the average velocity by averaging the values shown in green for each sprint. You can then plug the average into the Forecast tool.
 
-	<img src="_img/team-velocity-chart-web-7-iterations.png" alt="Web portal, Velocity chart showing seven sprints of in progress and completed work" style="border: 2px solid #C3C3C3;" />
+	![Web portal, Velocity chart showing seven sprints of in progress and completed work](_img/team-velocity-chart-web-7-iterations.png)  
 
-	>[!NOTE]  
-	>Work items based on the [Scrum process](../../work/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/customize/workflow-and-state-categories.md).
+	> [!NOTE]  
+	> Work items based on the [Scrum process](../../work/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/customize/workflow-and-state-categories.md).
 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+# [Previous navigation](#tab/previous-nav)
+
+1.	From the backlog page, open the velocity chart.  
+
+	![Choose the velocity chart in the upper right area of the page](_img/velocity/velocity-forecast-open-chart.png)  
+
+	For charts to appear, your team must perform these activities: 
+	- Select sprints for your team  
+	- Assign backlog items to sprints   
+	- Estimate backlog items by defining the Effort, Story Points, or Size.
+ 
+2.	The chart tracks your estimated backlog work (sum of Effort, Story Points, or Size) that your team has completed (green) in the previous sprints, or that are still in progress (blue).  
+
+	As this chart shows, velocity will fluctuate from sprint-to-sprint for a variety of reasons. However, you can quickly determine the average velocity by averaging the values shown in green for each sprint. You can then plug the average into the Forecast tool.
+
+	![Web portal, Velocity chart showing seven sprints of in progress and completed work](_img/team-velocity-chart-web-7-iterations.png)  
+
+	> [!NOTE]  
+	> Work items based on the [Scrum process](../../work/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/customize/workflow-and-state-categories.md).
+
+---
 	
 ## Required and recommended activities   
 

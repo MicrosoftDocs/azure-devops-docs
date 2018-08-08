@@ -90,7 +90,7 @@ Load test your app with hundreds of thousands of users using
 If you prefer to run your tests in a local environment rather than in the cloud, see
 [Load test with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project).
 
-> See also [Manual and exploratory testing](../index.md), [Continuous testing](../../pipelines/index.md), [Unit testing](https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code).
+> See also [Manual and exploratory testing](../index.md), [Continuous testing](../../pipelines/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/unit-test-your-code).
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
 

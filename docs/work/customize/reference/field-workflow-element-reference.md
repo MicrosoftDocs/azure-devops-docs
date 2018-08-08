@@ -13,7 +13,7 @@ ms.date: 02/10/2017
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-You use the **FIELD** (Workflow) element to specify the rules and conditions that apply to a field during a state change or workflow transition. The rule is applied based on where the **FIELD** (Workflow) element appears under the `STATE`, `TRANSITION`, `DEFAULTREASON`, or `REASON` element of which its parent `FIELDS` element is a child. To learn more, see [Q: Where should I apply a field rule?](https://msdn.microsoft.com/en-us/vstudio/ms404857(v=vs.98).aspx)  
+You use the **FIELD** (Workflow) element to specify the rules and conditions that apply to a field during a state change or workflow transition. The rule is applied based on where the **FIELD** (Workflow) element appears under the `STATE`, `TRANSITION`, `DEFAULTREASON`, or `REASON` element of which its parent `FIELDS` element is a child. To learn more, see [Q: Where should I apply a field rule?](https://msdn.microsoft.com/vstudio/ms404857(v=vs.98).aspx)  
   
 > [!NOTE]  
 > For information about the **FIELD** (Definition) element, which you use to define fields for a type of work item, see [FIELD (Definition) element reference](field-definition-element-reference.md).  

@@ -144,9 +144,9 @@ function createChart(VSS_Auth_Service, WidgetHelpers) {
     VSS.getAccessToken().then(function (token) {
         authToken = VSS_Auth_Service.authTokenManager.getAuthorizationHeader(token);
 
-        var accountName = VSS.getWebContext().account.name;
+        var organizationName = VSS.getWebContext().account.name;
         var projectName = VSS.getWebContext().project.name;
-        var urlString = "https://" + accountName + ".analytics.visualstudio.com/" + projectName
+        var urlString = "https://" + organizationName + ".analytics.visualstudio.com/" + projectName
             + "/_odata/v1.0-preview/WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))";
 
         $.ajax({

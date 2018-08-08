@@ -134,4 +134,4 @@ You can track your team's progress more easily by creating reports that contain 
      To successfully deploy the report, your project settings must be set to appropriate values. For more information, see [Create a Report Server Project](create-a-report-server-project.md).  
   
 ## Related notes
- [Table reference for the relational warehouse database](https://msdn.microsoft.com/en-us/library/ms244691.aspx)
+ [Table reference for the relational warehouse database](https://msdn.microsoft.com/library/ms244691.aspx)

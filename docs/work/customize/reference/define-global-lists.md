@@ -164,7 +164,7 @@ To add a global list to a project collection, you can import the following synta
 - [Customize work tracking](../customize-work.md)
 
 ### Are any global lists auto-populated with data?  
-Yes for on-premises TFS. The global list named **Builds**"“*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
+Yes for on-premises TFS. The global list named **Builds**.*TeamProjectName* gets appended each time a build is run. Over time, the list can become very long. Best practice is to routinely remove unused items from the list.  
   
 To learn more about using this list, see [Query based on build and test integration fields](../../track/build-test-integration.md).  
   

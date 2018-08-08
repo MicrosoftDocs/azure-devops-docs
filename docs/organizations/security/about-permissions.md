@@ -186,7 +186,7 @@ see [Grant permissions to view or create SQL Server reports in TFS](../../report
 For information about how to set permissions for SharePoint Products integrated with TFS,
 see [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).
 
-For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/en-us/library/cc262690.aspx).
+For more information, see [Determine permission levels and groups in SharePoint 2013](https://technet.microsoft.com/library/cc262690.aspx).
 
 ::: moniker-end  
 

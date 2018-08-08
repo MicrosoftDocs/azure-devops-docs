@@ -39,7 +39,7 @@ Use the following basic root URL as a prefix for all the examples provided in th
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0
 ``` 
 
 Use the above URL as a prefix for all the examples.   
@@ -57,7 +57,7 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count
 ``` 
 
 For comparison, using the OData aggregation extension, you add the following to your query:
@@ -68,7 +68,7 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
 ``` 
 
@@ -85,7 +85,7 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems/$count?
   $filter=State eq 'In Progress'
 ```
 
@@ -97,7 +97,7 @@ Where the full OData query is:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=
    filter(State eq 'In Progress')/
    aggregate($count as Count)
@@ -125,7 +125,7 @@ Using the `$apply` extension, you can obtain counts, sums, and additional inform
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
@@ -133,7 +133,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?
   $apply=aggregate($count as Count)
 ```
 
@@ -144,7 +144,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate(RemainingWork with sum as SumOfRemainingWork)
 ```
 
@@ -152,7 +152,7 @@ https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate(WorkItemId with max as MaxWorkItemId)
 ```
 
@@ -165,7 +165,7 @@ For example, the following clause will return a  count of work items:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
@@ -173,7 +173,7 @@ Add the `groupby` clause to return a count of work items by type:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=groupby((WorkItemType), aggregate($count as Count))
 ```
 
@@ -182,7 +182,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
+  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,Count)","value":[
     {
       "@odata.id":null,"WorkItemType":"Bug","Count":3
     },
@@ -197,7 +197,7 @@ You can also group by multiple properties as in the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=groupby((WorkItemType, State), aggregate($count as Count))
 ```
 
@@ -206,7 +206,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
+  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(WorkItemType,State,Count)",
   "value": [
     {
       "@odata.id": null,
@@ -243,7 +243,7 @@ For example, suppose you wanted to know how many areas are in each project. In O
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?
   $apply=groupby((Project/ProjectName), aggregate($count as Count))
 ```
 
@@ -257,7 +257,7 @@ Filters look like the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=
     filter(Iteration/IterationName eq 'Sprint 89')/
     filter(WorkItemType eq 'User Story')/
@@ -279,7 +279,7 @@ This will return a result that looks like the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
+  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
       "@odata.id":null,"SumOfCompletedWork":1525841.2900000005,"SumOfRemainingWork":73842.39
     }
@@ -296,7 +296,7 @@ When you need to use a mathematical expression to calculate properties for use i
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context":"https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
+  "@odata.context":"https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(SumOfCompletedWork,SumOfRemainingWork)","value":[
     {
       "@odata.id":null,"DonePercentage":0.96760221857946638,"SumOfRemainingWork":50715.95,"SumOfCompletedWork":1514698.3400000033
     }
@@ -310,7 +310,7 @@ Let's say you want to create a [cumulative flow diagram](../guidance/cumulative-
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardLocation/BoardName eq 'Stories' and BoardLocation/Team/TeamName eq '{teamName}')/groupby((DateValue, BoardLocation/ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemBoardSnapshot?$apply=filter(DateValue gt 2015-07-16Z and DateValue le 2015-08-16Z)/filter(BoardLocation/BoardName eq 'Stories' and BoardLocation/Team/TeamName eq '{teamName}')/groupby((DateValue, BoardLocation/ColumnName), aggregate(Count with sum as Count))&$orderby=DateValue
 ```
 
 This returns a result similar to the following, which you can then use directly within your data visualization of choice.
@@ -318,7 +318,7 @@ This returns a result similar to the following, which you can then use directly 
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemBoardSnapshot(DateValue,BoardLocation(ColumnName),Count)",
+  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemBoardSnapshot(DateValue,BoardLocation(ColumnName),Count)",
   "value": [
     {
       "@odata.id": null,
