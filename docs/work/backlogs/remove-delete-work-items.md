@@ -239,25 +239,52 @@ By changing the State of a work item to Removed, you effectively remove it from 
 
 To cause removed items to not show up in queries, you must add a clause that indicates which states you want the query to filter for. 
 
-::: moniker range=">= tfs-2015"
 <a id="delete"> </a> 
+
+
+
+::: moniker range="vsts" 
+
 ## Delete work items  
-::: moniker-end
-::: moniker range="tfs-2015"
-> [!NOTE]  
-><b>Feature availability: </b> The Delete and Recycle bin features are available from TFS 2015.2 and later versions. 
-::: moniker-end
-::: moniker range=">= tfs-2015"
+
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related WITS, see [Delete test artifacts](#delete-test). 
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
 2. Confirm you want to actually delete the item(s).  
 
-	![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)
+	> [!div class="mx-imgBorder"]
+	> ![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog.png)  
+
+4. You can also delete work items from your Kanban or task board. 
+ 
+	![Delete work item from Kanban board](_img/move-change-delete/delete-work-items-from-kanban-board.png)
+
+	Or, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from **Work**. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+## Delete work items  
+::: moniker-end  
+
+::: moniker range="tfs-2015"  
+> [!NOTE]  
+> The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. 
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
+Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related WITS, see [Delete test artifacts](#delete-test). 
+
+1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
+
+2. Confirm you want to actually delete the item(s).  
+
+	![Confirm delete dialog](_img/move-change-delete/delete-work-items-dialog-tfs.png)
 
 	> [!NOTE]    
-	> The Delete work items confirmation dialog indicates there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
+	> The Delete work items confirmation dialog for on-premises TFS may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
 
 3. Using multi-select from a backlog or query results list, you can delete several work items at once. 
 
@@ -268,7 +295,6 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	Or, you can drag them to the ![Recycle bin](_img/recycle-bin-icon.png) (Recycle bin). You can only access the (Recycle bin) from **Work**. 
 
 ::: moniker-end
-
 
 ## Restore or permanently delete work items   
 

@@ -108,7 +108,7 @@ The following table describes the attributes for the **group**, **member**, and 
   
 <a name="team"></a> 
 ##Define a team  
- In addition to creating groups, you can assign a group as a team. Creating a project also creates a default team. If you have several teams that want to organize their work separately from the other teams, then you can either define these teams within the Groups and Permissions plug-in file, or you can configure them after you create the project. See [Add another team](../../../scale/multiple-teams.md).  
+ In addition to creating groups, you can assign a group as a team. Creating a project also creates a default team. If you have several teams that want to organize their work separately from the other teams, then you can either define these teams within the Groups and Permissions plug-in file, or you can configure them after you create the project. See [Add another team](../../../../organizations/settings/add-teams.md).  
   
  The following example shows how to configure a group as a team. In this example, you specify the group, Dream Team, as a team and add the project creator as a member of the team. Whatever iteration paths that you specify for the team must be defined in the Classifications plug-in file. See [Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md).  
   

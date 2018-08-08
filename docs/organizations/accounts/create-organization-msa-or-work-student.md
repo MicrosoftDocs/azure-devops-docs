@@ -145,14 +145,14 @@ that you're connecting to your VSTS organization.
 
 *	Add code to Git or Team Foundation version control
 
-	*	Git with [Eclipse](/vsts/java/download-eclipse-plug-in), 
+	*	Git with [Eclipse](../../java/download-eclipse-plug-in.md).
 	[Xcode](../../repos/git/share-your-code-in-git-xcode.md), 
-	[Android Studio](/vsts/java/download-android-studio-plug-in), 
-	[IntelliJ](/vsts/java/download-intellij-plug-in), 
+	[Android Studio](/../../java/download-android-studio-plug-in), 
+	[IntelliJ](/../../java/download-intellij-plug-in), 
 	[Visual Studio](../../repos/git/share-your-code-in-git-vs-2017.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-	*	TFVC using [Eclipse](/vsts/java/download-eclipse-plug-in), 
+	*	TFVC using [Eclipse](/../../java/download-eclipse-plug-in), 
 	[Xcode](../../repos/tfvc/share-your-code-in-tfvc-xcode.md), 
 	[Visual Studio](../../repos/tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)

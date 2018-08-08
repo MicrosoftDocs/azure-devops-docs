@@ -78,32 +78,14 @@ To learn more, see [Grant permissions to manage extensions](../../marketplace/ho
 
 ## Team administrator role
 
-For [each team that you add](../../work/scale/multiple-teams.md), you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing the following team assets.
+For [each team that you add](../../organizations/settings/add-teams.md), you can assign one or more team members as administrators. The team admin role isn't a group with a set of defined permissions. Instead, the team admin role is tasked with managing team assets.
 
-- **Create and manage team alerts**  
-	Can add and modify alerts so that the team can receive email notifications as changes occur to work items, code reviews, source control files, and builds. For details, see [Manage team alerts](../../notifications/manage-team-notifications.md).	 
-- <a id="team-rooms" />**Select team area paths**   
-	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md).	
-- **Select team sprints** 
-	Can select the default area path(s) associated with the team. These settings affect a number of Agile tools available to the team. For details, see [Set team defaults](../../organizations/settings/set-team-defaults.md). 
-- **Configure team backlogs**   
-	Can choose which backlog levels are active for a team. For example, a feature team may choose to show only the product backlog and a management team may choose to show only the feature and epic backlogs. For details, see [Select backlog levels for your team](../../work/customize/select-backlog-navigation-levels.md).  
-- **Customize the Kanban board**   
-	Can fully customize the team's Kanban boards associate with the product and portfolio backlogs. This includes the following elements:
-	* **Cards**: [Fields](../../work/customize/customize-cards.md#kanban-board), [Styles](../../work/customize/customize-cards.md#style-rule), [Tag colors](../../work/customize/customize-cards.md#color-tags), [Annotations](../../work/customize/customize-cards.md#annotations), [Tests](../../work/customize/customize-cards.md#tests)  
-	* **Board**: [Columns](../../work/kanban/add-columns.md), [WIP limits](../../work/kanban/wip-limits.md), [Split columns](../../work/kanban/split-columns.md),    [Swimlanes](../../work/kanban/expedite-work.md), [Card reordering](../../work/customize/reorder-cards.md), [Definition of Done](../../work/kanban/definition-of-done.md)
-	* **Charts**: [Cumulative flow](../../report/dashboards/cumulative-flow.md#configure) 
-- **Manage team dashboards**  
-	Can add, configure, and manage permissions for team dashboards. For details, see [Add and manage dashboards](../../report/dashboards/dashboard-permissions.md#set-permissions).  
-- **Set working days off**    	
-	Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burn down. Team admins can choose which days are non-working days through the team's Settings dialog. For details, see [Set working days](../../work/customize/set-working-days.md).
-- **Show bugs on backlogs and boards**   
-	Team admins can choose whether bugs are treated similar to user stories and requirements or as tasks. For details, see [Set your team's preferences for tracking bugs](../../work/customize/show-bugs-on-backlog.md).
+For details, see [Team administrator role and permissions](../settings/team-administrator-permissions.md).
 
 > [!NOTE]
 > Members of the Project Administrators or Project Collection Administrators groups can manage all team admin areas for all teams.
 
-## Related notes
+## Related articles
 
 - [About permissions and groups](about-permissions.md)
 - [Permissions and groups reference](permissions.md)

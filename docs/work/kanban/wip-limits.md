@@ -110,7 +110,7 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 > [!TIP]    
 > If you haven't yet [mapped your team's work flow to Kanban columns](add-columns.md), do that first. For information about accessing your Kanban board, see [Kanban basics](kanban-basics.md). 
 
-1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns. Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can customize columns.    
+1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns. Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.    
 	::: moniker range="vsts || >= tfs-2017 <= tfs-2018" 
 	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
     ::: moniker-end

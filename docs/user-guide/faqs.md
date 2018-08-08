@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 ### Q: How do I get started?
 
 **A: To get started in the cloud or on-premises:** 
-- To get started with Visual Studio Team Services (VSTS) begin by [creating a user account](https://visualstudio.microsoft.com/team-services/). Step-by-step instructions are provided in [Sign up for VSTS](../organizations/accounts/create-organization-msa-or-work-student.md).  
+- To get started with Visual Studio Team Services (VSTS) begin by [creating a user](https://visualstudio.microsoft.com/team-services/). Step-by-step instructions are provided in [Sign up for VSTS](../organizations/accounts/create-organization-msa-or-work-student.md).  
 - To get started with an on-premises TFS, download and install the [latest version of TFS](https://visualstudio.microsoft.com/downloads/). See [Install and configure TFS](/tfs/server/install/get-started) for details.  
 - If you need to create a team project, create one in [VSTSs](../organizations/accounts/set-up-vs.md) or set one up in an [on-premises TFS](../organizations/projects/create-project.md).   
 - If you don't have access to the team project, [get invited to the team](../organizations/security/add-users-team-project.md).  
@@ -27,10 +27,10 @@ monikerRange: '>= tfs-2013'
 **A: To get started with a client tool:** 
 Go to one of these pages to download a version of Visual Studio or client tool plug-in that will support connecting to a team project: 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
-- [Eclipse/Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)  
-- [Android Studio with the VSTS Plugin for Android Studio](/vsts/java/download-android-studio-plug-in)
-- [IntelliJ with the VSTS Plugin for IntelliJ](/vsts/java/download-intellij-plug-in) 
-- [Visual Studio Code](/vsts/java/vscode-extension)
+- [Eclipse/Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)  
+- [Android Studio with the VSTS Plugin for Android Studio](/../java/download-android-studio-plug-in.md)
+- [IntelliJ with the VSTS Plugin for IntelliJ](/../java/download-intellij-plug-in.md) 
+- [Visual Studio Code](/../java/vscode-extension.md)
 
 **A: To get started with sharing code, work item tracking, builds, or other tasks:** 
 See [Software development roles](roles.md).  

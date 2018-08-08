@@ -52,7 +52,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 
 	![Kanban board, open common configuration settings](_img/customize-cards/open-config-dialog.png)  
 
-	If you're not a team admin, [get added as one](../scale/add-team-administrator.md). Only team and project admins can set team settings.  
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can set team settings.  
 
 2. From the Card reordering page you can choose between the two supported behaviors.    
 	<img src="../kanban/_img/kanban-card-reordering-up1.png" alt="Kanban board, Card reordering configuration dialog" style="border: 1px solid #C3C3C3;" />   

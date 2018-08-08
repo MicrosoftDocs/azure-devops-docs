@@ -8,7 +8,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/09/2018
+ms.date: 08/01/2018
 monikerRange: 'vsts'
 ---
 
@@ -55,14 +55,14 @@ using this Users view.  When you add users, each receives a notification email w
 link to the organization page.
 
  > [!NOTE]
- > If have an Azure Active Directory (Azure AD) backed VSTS organization, and you need to add users who are external to your Azure AD, first [add external users](https://docs.microsoft.com/en-us/vsts/organizations/accounts/add-external-user?view=vsts) to
+ > If have an Azure Active Directory (Azure AD) backed VSTS organization, and you need to add users who are external to your Azure AD, first [add external users](add-external-user.md) to
  > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an
  > existing Microsoft account**.  After completing those steps, follow the steps below to add the external Azure AD
  > user to VSTS.
 
 Provide others access to your organization by adding their email address.
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
@@ -78,7 +78,8 @@ Provide others access to your organization by adding their email address.
 
 4. Fill out the form.
 
-   ![Web portal, organization admin context, Add new users dialog](_img/add-organization-users-from-user-hub/invite-users-add-user-dialog.png)
+   > [!div class="mx-imgBorder"]  
+   >![Web portal, organization admin context, Add new users dialog](_img/add-organization-users-from-user-hub/invite-users-add-user-dialog.png)
 
    * **Users**: Enter the Microsoft account (MSA) email address for the user organization. You can add several email addresses by separating them with a semicolon (;). Note that in MSAs, the email addresses display in red.
    * **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
@@ -96,7 +97,8 @@ Provide others access to your organization by adding their email address.
 
 2. Choose **Users** and then choose **Add new users** to open the form.
 
-   ![Open Add new users dialog](../../user-guide/_img/sign-up/add-new-users.png)
+   > [!div class="mx-imgBorder"]  
+   >![Open Add new users dialog](../../user-guide/_img/sign-up/add-new-users.png)
 
 3. Fill out the form.
 

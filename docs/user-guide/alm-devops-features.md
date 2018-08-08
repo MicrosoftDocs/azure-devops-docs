@@ -10,7 +10,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
-ms.date: 06/07/2018
+ms.date: 08/02/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -48,11 +48,11 @@ If you're new to VSTS or TFS, see the [Key concepts](concepts.md) and other over
 <p><b>Integrated Development Environments (IDE)
 </b></p>
 Track work and integrate with your code, build, and test environments from the following clients:   
-- [Eclipse (Team Explorer Everywhere)](/vsts/java/download-eclipse-plug-in)       
+- [Eclipse (Team Explorer Everywhere)](/../java/download-eclipse-plug-in)       
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)      
-- [Android Studio](/vsts/java/download-android-studio-plug-in)     
-- [IntelliJ](/vsts/java/download-intellij-plug-in)   
-- [Visual Studio Code](/vsts/java/vscode-extension)   
+- [Android Studio](/../java/download-android-studio-plug-in)     
+- [IntelliJ](/../java/download-intellij-plug-in)   
+- [Visual Studio Code](/../java/vscode-extension)   
  
 To learn how to connect, see [Connect to a team project](../organizations/projects/connect-to-projects.md).  
 <br/>
@@ -71,7 +71,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add members to your team project adds them to the Contributor group. When managing a large group of users, use [built-in groups to manage users and their permissions](../organizations/security/permissions.md).</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add user accounts to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../work/scale/multiple-teams.md#add-team-members).</p>
+<p>To share and contribute to your project, add users to [VSTS](../organizations/accounts/add-team-members-vs.md) or your [TFS](../organizations/settings/add-teams.md#add-team-members).</p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
@@ -83,7 +83,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Access levels</b></p>
-<p>All users that you add to your VSTS account or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
+<p>All users that you add to your VSTS organization or to your TFS team project have access to Basic features by default, except [Stakeholders](../organizations/security/get-started-stakeholder.md) who have access to a limited set of features, or those added to the Advanced access level in TFS.</p>
 - [Manage users (VSTS)](../organizations/accounts/add-organization-users-from-user-hub.md)   
 - [Change access levels (TFS)](../organizations/security/change-access-levels.md)  
 <br/>
@@ -96,7 +96,7 @@ Use features supported by these familiar clients to manage your project and illu
 - [TFVC](../organizations/security/set-git-tfvc-repository-permissions.md)  
 - [Dashboards](../report/dashboard-permissions.md)   
 - [Queries](../work/track/set-query-permissions.md)   
-- [Team admin role](../work/scale/team-administrator-permissions.md)  
+- [Team admin role](../organizations/settings/team-administrator-permissions.md)  
 - [Test](../organizations/security/set-project-collection-level-permissions.md)  
 - [Work item tags](../organizations/security/permissions.md#tags)  
 
@@ -586,7 +586,7 @@ Use features supported by these familiar clients to manage your project and illu
 <tr valign="top">
 <td width="33%">
 <p><b>Add another team</b></p>
-<p>[Add and structure teams](../work/scale/multiple-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams. </p>
+<p>[Add and structure teams](../organizations/settings/add-teams.md) and organize work to support team autonomy and organizational alignment. Teams can manage their work independently of one another while the organization gains visibility across all teams. </p>
 ![Multiple teams](_img/features/alm-feature-multiple-teams.png)  
 <br/>
 <p><b>Set team defaults</b></p>
@@ -775,7 +775,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 <p><b>Personal and team notifications or alerts</b></p>
 <p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../notifications/manage-personal-notifications.md) or [team notifications](../notifications/manage-team-notifications.md).</p>
-![Open Notifications from Account menu](_img/features/features-notifications-option.png)  
+![Open Notifications from Organization menu](_img/features/features-notifications-option.png)  
 <br/>
 
 <p><b>Share queries and sprint plans</b></p>
@@ -1457,7 +1457,7 @@ pipelines\tasks\build\_img
 
 
 <p><b>Get started </b></p>
-<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS account once you connect to Power BI. </p>
+<p>You can [create dashboards, individual reports, or explore data](../report/powerbi/report-on-vso-with-power-bi-vs.md) collected for your VSTS organization once you connect to Power BI. </p>
 
 
  
@@ -1466,7 +1466,7 @@ pipelines\tasks\build\_img
 <td width="50%">
 
 <p><b>Connect to Power BI</b></p>
-<p>[Steps required to authorize Power BI to access your VSTS account](../report/powerbi/data-connector-connect.md).</p>
+<p>[Steps required to authorize Power BI to access your VSTS organization](../report/powerbi/data-connector-connect.md).</p>
 
 
 <p><b>Available data</b></p>
@@ -1853,7 +1853,7 @@ using [service hooks](../service-hooks/overview.md).</p>
 <td width="33%">
 
 <p><b>Authorize</b></p>
-<p>[Authorize](../service-hooks/authorize.md) other services to access your VSTS account using the industry standard OAuth 2.0.
+<p>[Authorize](../service-hooks/authorize.md) other services to access your VSTS organization using the industry standard OAuth 2.0.
 Oauth 2.0 provides safe, secure access to your resources like work items, source code and build results by those other services.</p>
 
 </td>
@@ -2105,7 +2105,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Change team settings</b></p>
-<p>Customize features to meet your team needs by [configuring your team assets](../work/scale/manage-team-assets.md).</p>
+<p>Customize features to meet your team needs by [configuring your team assets](../organizations/settings/configure-team-settings.md).</p>
 ![Switch team context](_img/features/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
@@ -2172,7 +2172,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team project admin context</b></p>
-<p>Open the admin context to [add teams](../work/scale/multiple-teams.md), [set team defaults](../organizations/settings/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
+<p>Open the admin context to [add teams](../organizations/settings/add-teams.md), [set team defaults](../organizations/settings/set-team-defaults.md), and [manage permissions](../organizations/security/change-individual-permissions.md). From any team project hub, choose the ![gear icon](../work/_img/icons/gear_icon.png) gear icon to open the admin context.</p>
 ![Admin context](_img/features/alm-feature-admin-context.png)  
 <br/>
 
@@ -2336,7 +2336,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team admin role and permissions</b></p>
-<p>Add user accounts as team administrators to enable them to [configure team settings and manage team assets](../work/scale/manage-team-assets.md).</p>
+<p>Add users as team administrators to enable them to [configure team settings and manage team assets](../organizations/settings/configure-team-settings.md).</p>
 
 
 <p><b>Manage administrative permissions </b></p>
@@ -2349,7 +2349,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <br/>
 
 <p><b>Restrict access</b></p>
-<p>You can restrict access to several features and tasks by setting the permission state to Deny to individual accounts or a security group.</p>
+<p>You can restrict access to several features and tasks by setting the permission state to Deny to individual userss or a security group.</p>
 
 
 </td>
@@ -2594,7 +2594,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 
-
 <p><b>What is a team project?</b></p>
 <p>A [team project](../organizations/projects/create-project.md) provides a repository for source code and a place for a group of developers to plan, track progress, and collaborate on building software solutions. A team project lives within a team project collection. You can grant permissions to and customize a team project to support your business needs. </p>
 
@@ -2623,8 +2622,8 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 
-<p><b>View your work across teams and team projects (VSTS)</b></p>
-<p>From your [Project page](../project/navigation/work-across-projects.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the account collection. </p>
+<p><b>View your work across teams and team projects</b></p>
+<p>From your [Project page](../project/navigation/work-across-projects.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization or collection. </p>
 
 <p><b>Customize a team project (TFS) </b></p>
 <p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../work/customize/customize-work.md).  </p>
@@ -2654,20 +2653,20 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>What is a team?</b></p>
-<p>A team is an organizing unit used to support a number of [team-configurable tools and assets](../work/scale/manage-team-assets.md) to plan and manage work and facilitate collaboration.  </p>
+<p>A team is an organizing unit used to support a number of [team-configurable tools](../organizations/settings/configure-team-settings.md) to plan and manage work and facilitate collaboration.  </p>
 
 <p><b>Add team members</b></p>
-<p>Add accounts--[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../work/scale/multiple-teams.md#add-team-members)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
+<p>Add organizations-[VSTS](../organizations/accounts/add-team-members-vs.md) | [TFS](../organizations/security/add-users-team-project.md)--to a team to enable users to share code, plan and track work, and access other team assets and resources. </p>
 ![Manage users, add team members](_img/features/alm-feature-manage-members.png)  
 <br/>
 
 
 <p><b>Add a team</b></p>
-<p>As your organization grows, consider moving from your [default team of one to two or more teams](../work/scale/multiple-teams.md#add-team-members) to support feature-focused groups within your org.</p>
+<p>As your organization grows, consider moving from your [default team of one to two or more teams](../organizations/settings/add-teams.md) to support feature-focused groups within your org.</p>
 
 
 <p><b>Add a team admin</b></p>
-<p>Add user accounts to the team admin role to enable them to [configure team settings](../work/scale/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
+<p>Add users to the team admin role to enable them to [configure team settings](../organizations/settings/add-team-administrator.md). Team settings can only be configured by a team or project admin. </p>
 
 
 <p><b>Support stakeholders</b></p>
@@ -2700,7 +2699,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Manage team assets</b></p>
-<p>Configure, customize, and manage all [team-related activities](../work/scale/manage-team-assets.md)</p>
+<p>Configure, customize, and manage all [team-related activities](../organizations/settings/configure-team-settings.md)</p>
 
 
 
@@ -2790,7 +2789,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ## Related notes
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [VSTS - Features update](https://docs.microsoft.com/vsts/release-notes/index)  
+- [VSTS - Features update](https://docs.microsoft.com/vsts/release-notes/)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
 - [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)
 

@@ -26,7 +26,7 @@ By default, all contributors and stakeholders can view and run all shared querie
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 [!INCLUDE [temp](../_shared/open-queries.md)] 
 

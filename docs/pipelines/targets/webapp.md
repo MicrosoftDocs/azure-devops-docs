@@ -33,7 +33,7 @@ Before you read this topic, you should understand the type of pipeline that you'
 ::: moniker range="vsts"
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML pipelines** [preview feature](/vsts/project/navigation/preview-features) enabled.
+> To use YAML you must have the **Build YAML pipelines** [preview feature](../../project/navigation/preview-features.md) enabled.
 
 ::: moniker-end
 

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/17/2018
+ms.date: 08/01/2018
 monikerRange: 'vsts'
 ---
 
@@ -41,14 +41,13 @@ To delete your VSTS organization, you'll need VSTS organization owner permission
 
 If your VSTS organization uses an Azure subscription to bill purchases, you must first unlink your organization from your Azure subscription before deleting your organization.
 
-To unlink your organization, you'll need VSTS organization owner permissions and at least Azure subscription Co-Administrator permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner) Or learn more about [Azure subscription administrators](https://azure.microsoft.com/en-us/documentation/articles/billing-add-change-azure-subscription-administrator/).
+To disconnect Azure AD from your organization, you'll need VSTS organization owner permissions and at least Azure subscription co-administrator permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner) Or learn more about [Azure subscription administrators](https://azure.microsoft.com/documentation/articles/billing-add-change-azure-subscription-administrator/).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-
-2. Enter *team services organizations* in the search box and then choose **Team Services organizations** in the resulting menu.
-3. Choose the organization you will be deleting.
-4. Choose **Unlink**.
-  Your VSTS organization is unlinked from your Azure subscription.
+2. Enter *team services* in the search box and then choose **Team Services organizations** in the resulting menu.
+3. Select the organization you will be deleting.
+4. Choose **Disconnect AAD**.
+  Your VSTS organization is disconnected from your Azure subscription.
 
 **Azure portal**
 

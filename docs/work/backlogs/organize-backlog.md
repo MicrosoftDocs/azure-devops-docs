@@ -55,7 +55,7 @@ In this topic you'll learn how to:
 
 From your web browser, open your product backlog from **Work**, **Backlogs** page.  
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

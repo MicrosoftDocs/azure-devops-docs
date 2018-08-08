@@ -116,11 +116,11 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 
 ## Related articles 
 
-*	[Add another team](../scale/multiple-teams.md)  
+*	[Add another team](../../organizations/settings/add-teams.md)  
 *	[Set team defaults](../../organizations/settings/set-team-defaults.md)  
 *	[Customize iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)  
 *	[Customize area paths](../../organizations/settings/set-area-paths.md)  
-*	[Manage team assets](../scale/manage-team-assets.md)  
+*	[Manage team assets](../../organizations/settings/configure-team-settings.md)  
 *	[Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) 
 
 

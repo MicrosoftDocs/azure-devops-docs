@@ -38,7 +38,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
 
-	If you're not a team administrator, [get added as one](../scale/add-team-administrator.md). Only team or project administrators can customize the Kanban board.
+	If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can customize the Kanban board.
 
 2. Open the Definition of Done for the column that applies to the criteria you'll enter. You can specify the Definition of Done for each intermediate column on your team's Kanban board.
 

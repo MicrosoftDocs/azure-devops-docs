@@ -40,7 +40,7 @@ that's **not** from one of these offers:
 You must then associate that subscription with your Office 365 Azure AD. You'll also need additional subscription
 administrator permissions beyond co-administrator permissions.
 
-Learn how to [associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/en-us/azure/billing-add-office-365-tenant-to-azure-subscription).
+Learn how to [associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/azure/billing-add-office-365-tenant-to-azure-subscription).
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
@@ -227,8 +227,8 @@ Learn [how to link work or school accounts to Visual Studio with MSDN subscripti
 #### Q: Can I control access to my VSTS organization for external users in the connected directory?
 
 A: Yes, but only for external users who are
-[added as guests through Office 365](https://support.office.com/en-us/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232)
-or [added using B2B collaboration by your Azure AD administrator](/azure/active-directory/b2b/what-is-b2b).
+[added as guests through Office 365](https://support.office.com/article/Share-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232)
+or [added using B2B collaboration by your Azure AD administrator](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/).
 These external users are managed outside the connected directory.
 To learn more, contact your Azure AD administrator. The setting below doesn't affect
 [users who are added directly to your organization's directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
@@ -282,7 +282,7 @@ A: This might happen because:
 
 * You don't have [VSTS organization owner permissions](faq-change-app-access.md#find-owner) to manage directory connections.
 
-* You don't have an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/), such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/offers/ms-azr-0003p/), associated with your organization's Azure AD and at least co-administrator permissions for your subscription. You need both to make your directory appear in the Azure portal, so that you can link your subscription and connect your Azure AD to your VSTS organization. Learn [how to manage Azure subscription administrators](../../billing/add-backup-billing-managers.md).
+* You don't have an active and valid ["full" Azure subscription](https://azure.microsoft.com/pricing/purchase-options/), such as a ["Pay-As-You-Go" subscription](https://azure.microsoft.com/offers/ms-azr-0003p/), associated with your organization's Azure AD and at least co-administrator permissions for your subscription. You need both to make your directory appear in the Azure portal, so that you can link your subscription and connect your Azure AD to your VSTS organization. Learn [how to manage Azure subscription administrators](../billing/add-backup-billing-managers.md).
 
   For example, if you want to use an Office 365 Azure AD,
   you can't use the [free subscription](https://technet.microsoft.com/library/dn832618.aspx)
@@ -298,9 +298,9 @@ A: This might happen because:
   To do this for your Office 365 Azure AD,
   you'll also need additional subscription administrator permissions
   beyond co-administrator permissions. Learn how to
-  [associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/en-us/azure/billing-add-office-365-tenant-to-azure-subscription),
+  [associate your Azure subscription to your Office 365 Azure AD](https://docs.microsoft.com/azure/billing-add-office-365-tenant-to-azure-subscription),
   or learn more about the
-  [relationship between your Azure subscription and your Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-how-subscriptions-associated-directory#how-an-azure-subscription-is-related-to-azure-ad).
+  [relationship between your Azure subscription and your Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory#how-an-azure-subscription-is-related-to-azure-ad).
 
 <a name="remove-spending-limit"></a>
 
@@ -367,8 +367,8 @@ again for the organization that you connected.
 A:  Make sure their sign-in addresses are in the
 connected directory and in your VSTS organization.
 If they're not directory members, and you have at least
-[user administrator permissions](/azure/active-directory/users-groups-roles/directory-assign-admin-roles),
-you can [add them to the directory](/azure/active-directory/fundamentals/add-users-azure-active-directory).
+[user administrator permissions](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/),
+you can [add them to the directory](https://azure.microsoft.com/documentation/articles/active-directory-create-users/).
 
 Some users have sign-in addresses that are shared by their
 Microsoft account and their work or school account.

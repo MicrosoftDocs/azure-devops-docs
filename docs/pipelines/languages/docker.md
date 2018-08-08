@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2017'
 
 # Docker
 
-This guidance explains how to build Docker images that you can upload to a range of containers such as
-Docker Hub or Azure Container Registry, and then deploy to a range of targets.
+This guidance explains how to build Docker images and push them to registries such as
+Docker Hub or Azure Container Registry.
 
 ::: moniker range="vsts"
 
 > [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](/vsts/project/navigation/preview-features) enabled on your account.
+> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your account.
 
 ::: moniker-end
 
@@ -44,19 +44,78 @@ Docker Hub or Azure Container Registry, and then deploy to a range of targets.
 <a name="example"></a>
 ## Example
 
-This example shows how to build a Docker image and upload it to Docker Hub.
-For information about uploading a Docker image to other types of containers, see [Build an image](#buildimage).
+This example shows how to build a Docker image and push it to a registry.
 
-To build a Docker image, you need a _Dockerfile_. If you want some sample code that includes this file and works with this guidance, then import (into VSTS or TFS) or fork (into GitHub) this repo:
+To start, import (into VSTS or TFS) or fork (into GitHub) this repo:
 
 ```
-https://github.com/adventworks/dotnetcore-sample
+https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
+
+The sample code above includes a `Dockerfile` file at the root of the repository.
+
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+The sample code also includes a `.vsts-ci.yml` file at the root of the repository. If you have a Docker Hub account, and would like to push the image to your **Docker Hub registry**, then replace the contents of `.vsts-ci.yml` file with the following:
+
+```yaml
+queue: Hosted Linux Preview
+variables:
+  buildConfiguration: 'Release'
+  dockerId: adventworks  # change this to match your Docker Id
+
+steps:
+- script: |
+    dotnet build --configuration $(buildConfiguration)
+    dotnet test dotnetcore-tests --configuration $(buildConfiguration) --logger trx
+    dotnet publish --configuration $(buildConfiguration) --output out
+    docker build -t $(dockerId)/dotnetcore-sample:$BUILD_BUILDID .
+    docker login -u $(dockerId) -p $pswd
+    docker push $(dockerId)/dotnetcore-sample:$BUILD_BUILDID
+  env:
+    pswd: $(dockerPassword)
+```
+
+If you set up an **Azure container registry** and would like to push the image to that registry, then replace the contents of your .vsts-ci.yml file with the following:
+
+```yaml
+queue: Hosted Linux Preview
+variables:
+  buildConfiguration: 'Release'
+  dockerId: adventworks  # change this to match your Docker Id
+
+steps:
+- script: |
+    dotnet build --configuration $(buildConfiguration)
+    dotnet test dotnetcore-tests --configuration $(buildConfiguration) --logger trx
+    dotnet publish --configuration $(buildConfiguration) --output out
+    docker build -t $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID .
+    docker login -u $(dockerId) -p $pswd $(dockerid).azurecr.io
+    docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
+  env:
+    pswd: $(dockerPassword)
+```
+
+Push the above change to master branch in your repository.
+
+Follow all the steps in [Build a repo with YAML](../get-started-yaml.md) to create a build pipeline for your app.
+
+In the build pipeline, define a new variable `dockerPassword` for storing your Docker password. If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal]((https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal)). You can get the user id and password from the **Access keys** section of the registry in Azure portal.
+
+Queue a new build and watch it create and push a Docker image to registry.
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not yet available on TFS.
+
+::: moniker-end
 
 # [Designer](#tab/designer)
-
-> [!IMPORTANT]
-> If you are new to creating build pipelines, then complete the [designer](../get-started-designer.md) quickstart first before following these instructions.
 
 ::: moniker range="< vsts"
 > [!NOTE]
@@ -65,7 +124,7 @@ https://github.com/adventworks/dotnetcore-sample
 
 ::: moniker range="vsts"
 
-1. After you have the sample code in your own repository, create a build pipeline and select the **ASP.NET Core** template. This automatically adds the tasks that you typically need to build an ASP.NET Core app.
+1. After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
 
 1. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
   * **Agent queue:** `Hosted Linux Preview`
@@ -78,90 +137,33 @@ https://github.com/adventworks/dotnetcore-sample
 
 1. Remove the **Publish artifact** task.
 
-1. Add **Docker** task after the **.NET Core Publish** task and configure it as follows to build an image using the **Dockerfile** in the repository:
-   * **Action:** `Build an image`
-   * **Container registry type:** `Container registry`
-   * **Docker registry connection:** Select `New` and create a connection to your Docker hub registry.
+1. Add **Bash** task after the **.NET Core Publish** task and configure it as follows to build and publish an image using the **Dockerfile** in the repository:
+   * **Type:** `Inline`
+   * **Script:**
 
-1. Add another **Docker** task and configure it as follows to push the image to your Docker hub registry:
-   * **Action:** `Push an image`
-   * **Container registry type:** `Container registry`
-   * **Docker registry connection:** Select the same connection to your Docker hub registry.
-   * **Qualify Image Name:** Clear this check box
-   * **Image Name:** `[your-Docker-ID]/$(Build.Repository.Name):$(Build.BuildId)`  
+    To push to Docker Hub, use the following script:
+
+    ```Bash
+    docker build -t $(dockerId)/dotnetcore-sample:$BUILD_BUILDID .
+    docker login -u $(dockerId) -p $(dockerPassword)
+    docker push $(dockerId)/dotnetcore-sample:$BUILD_BUILDID
+    ```
+
+    To push to Azure container registry, use the following script:
+
+    ```Bash
+    docker build -t $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID .
+    docker login -u $(dockerId) -p $(dockerPassword) $(dockerId).azurecr.io
+    docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
+    ```
+
+1. In the **Variables** tab of the build pipeline, define two variables:
+   * **dockerId:** Your Docker Id.
+   * **dockerPassword:** Your Docker password. Mark this variable as a secret variable.
+
+   If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal]((https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal)). You can get the user id and password from the **Access keys** section of the registry in Azure portal.
 
 Save the pipeline and queue a build to see it in action.
-
-::: moniker-end
-
-# [YAML](#tab/yaml)
-
-::: moniker range="vsts"
-
-> [!IMPORTANT]
-> If you are new to creating build pipelines using YAML, then complete the [YAML](../get-started-yaml.md) quickstart first before following these instructions.
-
-The sample code above includes a `.vsts-ci.yml` file at the root of the repository. Replace the contents of this file with the following:
-
-```yaml
-queue: 'Hosted Linux Preview'
-variables:
-   buildConfiguration: 'Release'
-    
-steps:
-- task: DotNetCoreCLI@2
-   inputs:
-      command: 'restore'
-      projects: '**/*.csproj'
-    
-- task: DotNetCoreCLI@2
-   inputs:
-      command: 'build'
-      projects: '**/*.csproj'
-      arguments: '--configuration $(buildConfiguration)'
-    
-- task: DotNetCoreCLI@2
-   inputs:
-      command: 'test'
-      projects: '**/*[Tt]ests/*.csproj'
-      arguments: '--configuration $(buildConfiguration)'
-    
-- task: DotNetCoreCLI@2
-   inputs:
-      command: 'publish'
-      arguments: '--configuration $(buildConfiguration) --output out'
-      zipAfterPublish: false
-      addProjectNameToPublishPath: false
-     
-- task: Docker@0
-  displayName: Build an image
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: '<name of your Docker hub service connection>'
-    action: 'Build an image'
-    qualifyImageName: false
-    imageName: '<your Docker ID>/$(Build.Repository.Name):$(Build.BuildId)' 
-
-- task: Docker@0
-  displayName: Push an image
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: '<name of your Docker hub service connection>'
-    action: 'Push an image'
-    qualifyImageName: false
-    imageName: '<your Docker ID>/$(Build.Repository.Name):$(Build.BuildId)' 
-
-```
-    
-You need to create a DockerHub service connection and use the name of that connection in the above YAML file. The DockerHub service connection tells VSTS how to connect to Docker hub. You can create a service connection under the **Service connections** tab of **Project settings** in the VSTS web UI.
-
-Push the above change to master branch in your repository, and then run a build using this YAML file to see it in action.
-
-::: moniker-end
-
-::: moniker range="< vsts"
-
-YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
@@ -175,10 +177,6 @@ Now that you've run a Docker build pipeline, you're ready to learn some of the m
 
 You can use VSTS to build and push your Docker images without needing to set up any infrastructure of your own. You can build either Windows or Linux container images. The [Microsoft-hosted agents](../agents/hosted.md) in VSTS have Docker pre-installed on them. We frequently update the version of Docker on these agent machines. To know which version of Docker is installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
-# [Designer](#tab/designer)
-
-In the build pipeline, select **Tasks**, then select the **Process** node, and finally select the **Agent queue** that you want to use.
-
 # [YAML](#tab/yaml)
 
 Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
@@ -187,11 +185,15 @@ Add the following snippet to your `.vsts-ci.yml` file to select the appropriate 
 queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
 ```
 
+# [Designer](#tab/designer)
+
+In the build pipeline, select **Tasks**, then select the **Process** node, and finally select the **Agent queue** that you want to use.
+
 ---
 
 ### Microsoft-hosted Linux agents
 
-Use the **Hosted Linux Preview** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build do not directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to facilitate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
+Use the **Hosted Linux Preview** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build don't directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
 
 ### Microsoft-hosted VS2017 (Windows) agents
 
@@ -199,11 +201,11 @@ Use the **Hosted VS2017** agent queue to build Windows container images. When yo
 
 > [!NOTE]
 > * Using Hosted VS2017 agents, you can only build Docker images with Windows Server 2016 as the container OS. You cannot build Docker images with Windows Server 1803 as the container OS since the host operating system on the virtual machines is Windows Server 2016.
-> * We do not yet have a pool of Microsoft-hosted agents running Windows Server 1803. Until this is available, you can build Windows Server 1803 images using self-hosted agents.
+> * We don't yet have a pool of Microsoft-hosted agents running Windows Server 1803. Until this is available, you can build Windows Server 1803 images using self-hosted agents.
 
 ### Microsoft-hosted MacOS agents
 
-You cannot use **Hosted Mac** to build container images as Docker is not installed on these agents.
+You cannot use **Hosted macOS** to build container images as Docker is not installed on these agents.
 
 ### Self-hosted agents
 
@@ -223,14 +225,6 @@ Your builds run on a [self-hosted agent](../agents/agents.md#install). Make sure
 
 You can build a Docker image by running the `docker build` command in a script or by using the **Docker** task.
 
-# [Designer](#tab/designer)
-
-1. Select **Tasks** in your build pipeline, and then add the **Docker** task to the phase.
-
-1. Select the task, and then for **Action**, select **Build an image**.
-
-1. Specify the connection to the registry that you plan to push the image to by selecting the **Container registry type** - `Container Registry` or `Azure Container Registry`. Then enter the properties for that connection type. If you plan to push the image to an Azure Container Registry, make sure that you [pre-create the registry in Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal).
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -238,39 +232,32 @@ You can build a Docker image by running the `docker build` command in a script o
 To run the command in a script, add the following snippet to your `.vsts-ci.yml` file.
 
 ```yaml
-steps:
-- script: docker build -f <Dockerfile>
+- script: docker build -t <docker-id>/<image> .  # add options to this command to meet your needs
 ```
 
-You can also use the Docker task to build an image. The task takes care of tagging the image correctly based on the registry that you intend to push the image to. The task is also particularly helpful if your Dockerfile depends on another image from a protected registry.
-
-To build an image that you plan to push to Docker hub, add the following snippet:
+You can run any docker commands as part of the script block in your YAML file. If your Dockerfile depends on another image from a protected registry, you have to first run a `docker login` command in your script.
 
 ```yaml
-- task: Docker@0
-  displayName: Build an image
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: 'Adventworks DockerHub'  # replace with your Docker hub service connection
+- script: docker login -u <docker-id> -p <docker-password> <docker-registry-url>
 ```
 
-To build an image that you plan to push to Azure Container Registry, add the following snippet:
+Make sure that you define the Docker password as a [secret variable](../process/variables.md) in the build pipeline and not in the YAML file.
 
-```yaml
-- task: Docker@0
-  displayName: Build an image
-  inputs:
-    azureSubscription: '<Azure service connection>'
-    azureContainerRegistry: '{"loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/<Azure subscription id>/resourceGroups/<Resource group where your container registry is hosted>/providers/Microsoft.ContainerRegistry/registries/<Name of your registry>"}' # for example, "loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/adventworks/providers/Microsoft.ContainerRegistry/registries/adventworks"
-```
-
-Note that you need to have an Azure service connection defined to do the above. In addition, you need to know the Azure subscription id, the name of the resource group, and the name of the container registry.
+You don't need to specify `docker-registry-url` in the `login` command, if you are connecting to Docker Hub.
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 YAML builds are not yet available on TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+1. Select **Tasks** in your build pipeline, and then add the **Docker** task to the phase.
+
+1. Select the task, and then for **Action**, select **Build an image**.
+
+1. Specify the connection to the registry that you plan to push the image to by selecting the **Container registry type** - `Container Registry` or `Azure Container Registry`. Then enter the properties for that connection type. If you plan to push the image to an Azure Container Registry, make sure that you [pre-create the registry in Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal).
 
 ---
 
@@ -294,7 +281,7 @@ The instructions in the [above example](#example) demonstrate this approach.
 
 In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage VSTS and TFS features such as tasks, phases, or test analytics.
 
-To follow this approach, create a _Dockerfile_ at the root of your repo with the following content:
+To use this approach for the sample app, create a _Dockerfile_ at the root of your repo with the following content:
 
 ```Dockerfile
 # First stage of multi-stage build
@@ -319,12 +306,6 @@ ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
 
 Then, define your build pipeline:
 
-# [Designer](#tab/designer)
-
-1. Select **Tasks** in the build pipeline, and then remove all the tasks.
-
-1. Add a **Docker** task, and then for **Action** select **Build an image**.
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -334,25 +315,52 @@ Create a `.vsts-ci-yml` file at the root of your repo with the following content
 ```yaml
 queue: 'Hosted Linux Preview'
 steps:
-  - script: docker build -f Dockerfile -t adventworks/dotnetcore-sample .
+  - script: docker build -t <dockerid>/<image-name>:$BUILD_BUILDID . # include other options to meet your needs
 ```
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
-
 YAML builds are not yet available on TFS.
-
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+1. Select **Tasks** in the build pipeline, and then remove all the tasks.
+
+1. Add a **Docker** task, and then for **Action** select **Build an image**.
 
 ---
 
 ## Push an image
 
-Once you've built a Docker image, you can use the **Docker** task to push it to a Docker registry or to Azure Container Registry (ACR).
-The **Docker** task makes the process easier for you because it sets up an authenticated connection to your registry or ACR.
+Once you've built a Docker image, you can push it to a Docker registry or to Azure Container Registry (ACR). You can do this using either `docker push` command or using `Docker` task. The **Docker** task makes the process easier for you because it sets up an authenticated connection to your registry or ACR.
 
-To push a Docker image:
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+To push the image to Docker hub, add the following snippet to the `.vsts-ci.yml` file at the root of your repo:
+
+```yaml
+- script: |
+    docker login -u <dockerId> -p <dockerPassword>
+    docker push <dockerId>/<image-name>
+```
+
+To push the image to Azure Container Registry, use the following snippet:
+
+```yaml
+- script: |
+    docker login -u <dockerId>.azurecr.io -p <dockerPassword> <dockerid>.azurecr.io
+    docker push <dockerId>.azurecr.io/<image-name>
+```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -362,41 +370,7 @@ To push a Docker image:
 
 1. Specify how to connect to your registry in the **Container registry type** and the corresponding service connection properties.
 
-# [YAML](#tab/yaml)
-
-::: moniker range="vsts"
-
-To push the image to Docker hub, add the following snippet to the `.vsts-ci.yml` file at the root of your repo:
-
-```yaml
-- task: Docker@0
-  displayName: Push an image
-  inputs:
-    containerregistrytype: 'Container Registry'
-    dockerRegistryConnection: 'Adventworks DockerHub'   # replace with your Docker hub service connection
-    action: 'Push an image'
-```
-
-To push the image to Azure Container Registry, you need to have an Azure service connection defined. In addition, you need to know the Azure subscription id, the name of the resource group, and the name of the container registry.
-
-```yaml
-- task: Docker@0
-  displayName: Push an image
-  inputs:
-    azureSubscription: '<Name of your Azure service connection>'
-    azureContainerRegistry: '{"loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/<Azure subscription id>/resourceGroups/<Resource group where your container registry is hosted>/providers/Microsoft.ContainerRegistry/registries/<Name of your registry>"}' # for example, "loginServer":"adventworks.azurecr.io", "id" : "/subscriptions/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/adventworks/providers/Microsoft.ContainerRegistry/registries/adventworks"
-    action: 'Push an image'
-```
-
-::: moniker-end
-
-::: moniker range="< vsts"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
 ---
-
-By default, the **Docker** task tags your image as `<Docker id>/<repo name>:<build id>`
 
 ## Use Docker Compose
 
@@ -407,7 +381,7 @@ You can wait for the test driver to finish running tests before bringing down th
 
 ::: moniker range="vsts"
 
-If you use Microsoft-hosted agents, you do not have to run any additional steps to install and use docker-compose.
+If you use Microsoft-hosted agents, you don't have to run any additional steps to install and use docker-compose.
 
 ::: moniker-end
 
@@ -451,16 +425,6 @@ fi
 
 1. Add a **Bash** task.
 
-# [Designer](#tab/designer)
-
-In the build pipeline, add a **Bash** task with the following inline script:
-
-```
-docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d
-docker wait docs_sut_1
-docker-compose -f docs/docker-compose.yml --project-directory . down
-```
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -468,15 +432,25 @@ Add the following snippet to your `.vsts-ci.yml` file.
 
 ```yaml
 - script: |
-    docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d |
-    docker wait docs_sut_1 |
-    docker-compose -f docs/docker-compose.yml --project-directory . down |
+    docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d
+    docker wait docs_sut_1
+    docker-compose -f docs/docker-compose.yml --project-directory . down
 ```
 ::: moniker-end
 
 ::: moniker range="< vsts"
 YAML builds are not yet available on TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+In the build pipeline, add a **Bash** task with the following inline script:
+
+```bash
+docker-compose -f docs/docker-compose.yml --project-directory . -p docs up -d
+docker wait docs_sut_1
+docker-compose -f docs/docker-compose.yml --project-directory . down
+```
 ---
 
 ::: moniker range="vsts"

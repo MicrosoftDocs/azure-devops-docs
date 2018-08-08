@@ -20,11 +20,11 @@ ms.date: 04/14/2017
 > [!IMPORTANT]  
 > **Feature availability:** Team fields are only supported for on-premises TFS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
-The default configuration for projects configures each team as an area path. For information on adding a team, see [Multiple teams](../scale/multiple-teams.md).
+The default configuration for projects configures each team as an area path. For information on adding a team, see [Add teams](../../organizations/settings/add-teams.md).
 
 If your organization has several teams that work from a common backlog and across many product areas, this configuration might not fit how you want to organize your work. By adding a custom field to represent teams in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths.
 
-Many features available through the web portal for TFS are scoped to a team. Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. To learn more, see [Configure team settings](../scale/manage-team-assets.md).
+Many features available through the web portal for TFS are scoped to a team. Teams access their set of team-scoped features by choosing their team context. Each team gets access to a suite of Agile tools and team assets. These tools provide teams the ability to work autonomously and collaborate with other teams across the enterprise. To learn more, see [Configure team settings](../../organizations/settings/configure-team-settings.md).
 
 
 
@@ -171,7 +171,7 @@ Create and configure teams in the web portal to both match and reference the Tea
 
     <img src="_img/use-team-fields-instead-area-paths-support-teams/IC649971.png" alt="Open PBI and confirm the Team field" style="border: 2px solid #C3C3C3;" />
 
-2.  If you haven't yet created teams to match those that are in your global list, do that now. See [Multiple teams, Add another team](../scale/multiple-teams.md).
+2.  If you haven't yet created teams to match those that are in your global list, do that now. See [Multiple teams, Add another team](../../organizations/settings/add-teams.md).
 
     ![Create teams](_img/use-team-fields-instead-area-paths-support-teams/IC757673.png)
 
@@ -206,7 +206,7 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 ## Related articles
 
-- [Add a team, add team members](../scale/multiple-teams.md)
+- [Add a team, add team members](../../organizations/settings/add-teams.md)
 - [Customize a process template](reference/process-templates/customize-process.md)  
 - [**witadmin** command-line tools](reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).
 - [ProcessConfiguration XML element reference](reference/process-configuration-xml-element.md) 
@@ -214,7 +214,7 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 ### Q: Why don't teams that I add to a project show up in the Team field?
 
-**A:** Teams that you [add to a project from the Overview page of the project](../scale/multiple-teams.md), will not show up in the pick list of the custom field that you created to capture teams. You must update the global list that you created in [Create a global list to manage teams](#globallist) for new teams to appear.
+**A:** Teams that you [add to a project from the Overview page of the project](../../organizations/settings/add-teams.md), will not show up in the pick list of the custom field that you created to capture teams. You must update the global list that you created in [Create a global list to manage teams](#globallist) for new teams to appear.
 
 
 ### Q: How do I configure features for an upgraded project that has been customized to use team fields?

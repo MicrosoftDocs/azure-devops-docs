@@ -38,7 +38,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 ## Open your Kanban board from the web portal
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

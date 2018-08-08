@@ -40,7 +40,7 @@ You can start viewing and adding work items once you connect to a project.
 <a id="browser" /> 
 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"

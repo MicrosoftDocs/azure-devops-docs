@@ -94,9 +94,9 @@ You'll need to be a [project administrator](../../organizations/security/set-pro
 
 1. To add a team, give the team a name, and make sure to select **Create an area path with the name of the team**.
 
-	![Create a sub-team with its own area path](_img/scale-agile-add-new-team-co.png)
+	![Create a sub-team with its own area path](../../organizations/settings/_img/add-team/scale-agile-co.png)
 
-	To access this page, choose the ![gear icon](../_img/icons/gear_icon.png) gear icon from your team home page.  
+	To access this page, choose the ![gear icon](../../_img/icons/gear_icon.png) gear icon from your team home page.  
 
 	Repeat this step for all teams and management areas.  
 
@@ -130,15 +130,16 @@ You'll need to be a [project administrator](../../organizations/security/set-pro
 
 4. Add team administrators for each feature team and management area. You do this from the Overview page of the team admin context.   
 
-	<img src="_img/pm-add-team-admins.png" alt="Open team administration context" style="border: 1px solid #C3C3C3;" />  
+	![Open team administration context](_img/pm-add-team-admins.png)
 
 	Add the account identity, for example the product owner, development lead, or other team member who has primary responsibility for planning and reporting progress.  
 
-	<img src="_img/add-team-admin-dialog.png" alt="Add account as a team administrator" style="border: 1px solid #C3C3C3;" />  
+	![Add account as a team administrator](_img/add-team-admin-dialog.png)
+ 
 
 	In this way, the team administrators can add additional team admins and team members. They can also configure their team settings and manage their Agile tools and team assets.  
 
-	Optionally, [grant team administrators additional permissions](multiple-teams.md#grant-add-permissions).  
+	Optionally, [grant team administrators additional permissions](../../organizations/settings/add-teams.md#grant-add-permissions).  
 
 
 ### Define a single sprint cadence for all teams 
@@ -156,12 +157,12 @@ Here we've defined the start and end dates of the first 6 sprints corresponding 
 ###Customize Agile tools and configure team settings 
 
 These next set of steps can be performed by a team administrator.  
-- [Add team members](multiple-teams.md#add-team-members)
+- [Add team members](../../organizations/settings/add-teams.md#add-team-members)
 - [Select sprints for the team](../../organizations/settings/../../organizations/settings/set-team-defaults.md#activate)
 - [Activate backlog levels](../customize/select-backlog-navigation-levels.md) 
 - [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md) 
 
-See [Configure team settings](manage-team-assets.md) for an overview of all Agile tools and team assets.
+See [Configure team settings](../../organizations/settings/configure-team-settings.md) for an overview of all Agile tools and team assets.
 
 
 ## Try this next

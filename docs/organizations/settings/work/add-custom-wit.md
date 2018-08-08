@@ -79,7 +79,7 @@ To learn more about what you can customize, see [About process customization and
 
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
-0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
+0.	Choose **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
 
 	> [!TIP]    
 	> Once you've added a field, you can drag-and-drop it within a page to relocate it on the form. If you have several fields you want to add to a custom page or group, then you may want to [add those elements first](customize-process-form.md) and then add your fields. 
@@ -87,6 +87,41 @@ To learn more about what you can customize, see [About process customization and
 ## Verify the customization you made 
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
+
+
+# [New navigation](#tab/new-nav)
+
+
+0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
+
+	> [!div class="mx-imgBorder"]  
+	> ![Create a project from the selected process](_img/process/add-new-team-project.png) 
+
+0. The Create new project page opens. Fill out the form. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](_img/process/create-test-project.png) 
+
+
+0.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Work>Work Items, new navigation](../../../work/work-items/_img/view-add/open-work-items-agile.png)  
+
+0. Select the WIT you customized. Here we choose **Ticket**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Work>Work Items page, add new work item, Ticket](_img/process/add-custom-wit-verify-ticket.png) 
+
+	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
+
+0.  Verify that the field you added appears on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png)  
+
+
+# [Previous navigation](#tab/previous-nav)
 
 0. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
 
@@ -110,6 +145,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Ticket form, Customer Ticket field added to Customer Focus group](_img/process/add-custom-field-verify-ticket-form.png) 
 
+---
 
 [!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
 
