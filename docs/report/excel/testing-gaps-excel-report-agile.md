@@ -106,5 +106,5 @@ For more information about how to work with and customize PivotTable and PivotCh
 -   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
   
 ## Related notes
- [Test Result tables](https://msdn.microsoft.com/en-us/library/ee620635.aspx)   
+ [Test Result tables](https://msdn.microsoft.com/library/ee620635.aspx)   
  [Excel reports](excel-reports.md)

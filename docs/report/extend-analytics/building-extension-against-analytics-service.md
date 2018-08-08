@@ -118,11 +118,11 @@ Once the token is retrieved, you need to add it to the request for data from the
     var authToken = VSS_Auth_Service.authTokenManager.getAuthorizationHeader(token);
 
     //Get the account name so that we're calling a valid Analytics Service endpoint
-    var accountName = VSS.getWebContext().account.name;
+    var organizationName = VSS.getWebContext().account.name;
 
     $.ajax({
     type: "GET",
-    url: "https://" + accountName + ".analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))",
+    url: "https://" + organizationName + ".analytics.visualstudio.com/_odata/v1.0-preview/WorkItems?$apply=groupby((WorkItemType), aggregate($count as Count))",
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     beforeSend: function (xhr) {

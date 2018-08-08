@@ -101,7 +101,7 @@ If your on-premises project used reporting, and you didn't choose to delete exte
 
 ## Remove the project portal
 
-If your on-premises project had a project portal, all links to that portal will be removed from TWA and Team Explorer, but the SharePoint site or website that acted as the portal will not be deleted. If you want to delete the portal, you must do so manually after the project has been deleted. See [How to: Create, Edit, and Delete Windows SharePoint Services Sites](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/ms253110(v%3dvs.100)).
+If your on-premises project had a project portal, all links to that portal will be removed from TWA and Team Explorer, but the SharePoint site or website that acted as the portal will not be deleted. If you want to delete the portal, you must do so manually after the project has been deleted. See [How to: Create, Edit, and Delete Windows SharePoint Services Sites](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms253110(v%3dvs.100)).
 
 ::: moniker-end
 

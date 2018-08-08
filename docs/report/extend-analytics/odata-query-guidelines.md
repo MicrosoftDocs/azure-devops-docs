@@ -32,7 +32,7 @@ Each query you execute gets checked against a set of predefined rules. Violation
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{account}.tfsallin.net/_odata/v1.0/$metadata#WorkItems",
+  "@odata.context": "https://{OrganizationName}.tfsallin.net/_odata/v1.0/$metadata#WorkItems",
   "@vsts.warnings": [
     "The specified query does not include a $select or $apply clause which is recommended for all queries."
   ],
@@ -103,7 +103,7 @@ For example, the following query fetches work items that belong to projects name
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectSK eq {projectSK1} or ProjectSK eq {projectSK2}
   &$select=WorkItemId, Title
 ```
@@ -116,7 +116,7 @@ You can do this in the regular `$filter` clause for simple navigation properties
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
   $filter=ProjectSK eq {projectSK} and TargetWorkItem/ProjectSK eq {projectSK}
   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
   &$expand=TargetWorkItem($select=WorkItemId, Title)
@@ -126,7 +126,7 @@ Alternatively, you can move the filter to `$filter` expand option in the `$expan
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemLinks?
   $filter=ProjectSK eq {projectSK}
   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
   &$expand=TargetWorkItem($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
@@ -136,7 +136,7 @@ You'll find that the `$filter` expand option is very useful when you use the exp
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectSK eq {projectSK}
   &$select=WorkItemId, Title
   &$expand=Children($filter=ProjectSK eq {projectSK}; $select=WorkItemId, Title)
@@ -155,7 +155,7 @@ With this simplification, the queries from the previous section could be rewritt
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemLinks?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemLinks?
   &$select=LinkTypeReferenceName, SourceWorkItemId, TargetWorkItemId
   &$expand=TargetWorkItem($select=WorkItemId, Title)
 ```
@@ -164,7 +164,7 @@ The query for work item children is also much shorter and simpler.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?
   &$select=WorkItemId, Title
   &$expand=Children($select=WorkItemId, Title)
 ```
@@ -198,7 +198,7 @@ For example, the query below gets the number of work items as by date to observe
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(DateSK ge 20170101 and DateSK le 20170131)/
     groupby((DateSK), aggregate($count as Count))
@@ -231,7 +231,7 @@ For example, the following query gets a single work item by its identifier.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=WorkItemId eq {id}
   &$select=WorkItemId, Title
 ```
@@ -266,7 +266,7 @@ For example, the following query returns all the revisions of a work item with t
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?
   $filter=WorkItemId eq {id}
   &$select=WorkItemId, Title
 ```
@@ -275,7 +275,7 @@ If you care about the full history for all the work items that match certain cri
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemRevisions?
   $filter=WorkItem/State eq 'Active'
   &$select=WorkItemId, Title
 ```
@@ -335,7 +335,7 @@ Another scenario that tends to generate long queries occurs when you include a l
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedOn/DayOfWeek eq 2
   &$select=WorkItemId, Title, State
 ```
@@ -352,7 +352,7 @@ To solve this problem, add the time zone information. For example, assuming that
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDate ge 2017-01-01T00:00:00-08:00
   &$select=WorkItemId, Title, State
 ```
@@ -365,7 +365,7 @@ To solve it, replace the `+` character with its encoded version, `%2B`. For exam
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDate ge 2017-01-01T00:00:00%2B08:00
   &$select=WorkItemId, Title, State
 ```
@@ -374,7 +374,7 @@ An alternative approach is to use date surrogate key properties as they do not k
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDateSK ge 20170101
   &$select=WorkItemId, Title, State
 ```
@@ -439,7 +439,7 @@ For example, the following query specifies the columns for work items.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $select=WorkItemId, Title, State
 ```
 
@@ -454,7 +454,7 @@ For example, the query below specifies the columns for both the work item and it
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $select=WorkItemId, Title, State
   &$expand=Parent($select=WorkItemId, Title, State)
 ```
@@ -523,7 +523,7 @@ For example, the following query returns a count of work items that were defined
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(IsLastDayOfPeriod has Microsoft.VisualStudio.Services.Analytics.Model.Period'Month')/
     groupby(
@@ -543,7 +543,7 @@ For example, the following query gets all the work items which were tagged with 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq '{tag}')
   &$select=WorkItemId, Title, State
 ```
@@ -552,7 +552,7 @@ This approach also works great when you need to filter on multiple tags. For exa
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq {tag1} or t/TagName eq {tag2})
   &$select=WorkItemId, Title, State
 ```
@@ -561,7 +561,7 @@ You can also combine these filters with an "and" operator. For example, the foll
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq {tag1}) and Tags/any(t:t/TagName eq {tag2})
   &$select=WorkItemId, Title, State
 ```
@@ -574,7 +574,7 @@ For example, the following query gets all the work items which were tagged with 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq '{tag}')
   &$select=WorkItemId, Title, State, TagNames
 ```
@@ -591,7 +591,7 @@ For example, the following query gets all the work items tagged with "QUALITY", 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=Tags/any(t:t/TagName eq 'quality')
   &$select=WorkItemId, Title, State, TagNames
 ```
@@ -610,11 +610,11 @@ The link to the next page is included in the `@odata.nextLink` property.
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{account}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(*)",
+  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/$metadata#WorkItems(*)",
   "value": [
     ...
   ],
-  "@odata.nextLink":"https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$skiptoken=12345"}
+  "@odata.nextLink":"https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?$skiptoken=12345"}
 ```
 
 > [!NOTE]
@@ -650,7 +650,7 @@ For example, the following query gets all the work items created since the begin
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDateSK ge 20170101
 ```
 
@@ -664,7 +664,7 @@ For example, the following query filters `WorkItems` using `ProjectSK` property 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=ProjectSK eq {projectSK}
 ```
 
@@ -687,12 +687,12 @@ This option is particularly helpful in data export scenarios. To use it you have
 For example, the following query returns work items provided that the dataset is smaller or equal to 1000 records.
 
 ```http
-GET https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems HTTP/1.1
+GET https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems HTTP/1.1
 User-Agent: {application}
 Prefer: VSTS.Analytics.MaxSize=1000
 OData-MaxVersion: 4.0
 Accept: application/json;odata.metadata=minimal
-Host: {account}.analytics.visualstudio.com
+Host: {OrganizationName}.analytics.visualstudio.com
 ```
 If the dataset exceeds the limit of 1000 records the query will immediatelly fail with the following error.
 
@@ -717,7 +717,7 @@ For example, the following query returns the total number of work items.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
@@ -729,7 +729,7 @@ For example, the following query returns the total number of work items.
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $apply=aggregate($count as Count)
 ```
 
@@ -741,7 +741,7 @@ For example, the following query uses `@createdDateSK` parameter to separate the
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=CreatedDateSK ge @createdDateSK
   &$select=WorkItemId, Title, State
   &@createdDateSK=20170101
@@ -757,7 +757,7 @@ For example, the following query first filters work items by `StoryPoint gt 5`, 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
+https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
   $filter=StoryPoints gt 2
   $apply=
     filter(StoryPoints gt 5)/

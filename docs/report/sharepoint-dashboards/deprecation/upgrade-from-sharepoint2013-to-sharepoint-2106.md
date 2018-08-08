@@ -23,7 +23,7 @@ Customers that have TFS 2017 with integration configured for SharePoint 2013 nee
 
 If you are upgrading from TFS 2017, or prior version, to TFS 2018, please see [Disable SharePoint integration after TFS 2018 upgrade](./disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md)
 
-**Please refer to the SharePoint topic: [Upgrade to SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc303420%28v=office.16%29.aspx), for full instructions on upgrading your SharePoint server.** The instructions below provide additional guidance to ensure the TFS SharePoint sites are functional after upgrading to SharePoint 2016.
+**Please refer to the SharePoint topic: [Upgrade to SharePoint Server 2016](https://technet.microsoft.com/library/cc303420%28v=office.16%29.aspx), for full instructions on upgrading your SharePoint server.** The instructions below provide additional guidance to ensure the TFS SharePoint sites are functional after upgrading to SharePoint 2016.
 
 ## Overview of problem
 
@@ -35,7 +35,7 @@ In this configuration, with Excel Services configured, your TFS sites on SharePo
 
 ![TFS/SharePoint Integration - Upgrading to SharePoint 2016 - TFS SharePoint 2013 Site - Before Upgrade](./_img/sharepoint-2016-upgrade-before-upgrade-site-example.png)
 
-To upgrade to SharePoint 2016, you must first set up a SharePoint 2016 Server. [Excel Services was deprecated in SharePoint 2016](https://technet.microsoft.com/en-us/library/mt346112%28v=office.16%29.aspx) and replaced with Office Online Server. If you had Excel Services configured in SharePoint 2013, then you will need to [configure Office Online Server](https://technet.microsoft.com/library/ff431687%28v=office.16%29.aspx) to ensure Excel Charts continue to display on the TFS SharePoint sites. See [References for configuring Office Online Server for SharePoint 2016](#references) later in this topic for more information.
+To upgrade to SharePoint 2016, you must first set up a SharePoint 2016 Server. [Excel Services was deprecated in SharePoint 2016](https://technet.microsoft.com/library/mt346112%28v=office.16%29.aspx) and replaced with Office Online Server. If you had Excel Services configured in SharePoint 2013, then you will need to [configure Office Online Server](https://technet.microsoft.com/library/ff431687%28v=office.16%29.aspx) to ensure Excel Charts continue to display on the TFS SharePoint sites. See [References for configuring Office Online Server for SharePoint 2016](#references) later in this topic for more information.
 
 The first step is to set up a SharePoint 2016 server. 
 
@@ -101,7 +101,7 @@ Remedy          : One or more web parts are referenced in the database [WSS_Cont
 ## Steps for solution
 The solution is to install the TFS Disconnector for SharePoint on the SharePoint 2016 server first. To do this, follow these steps:
 
-1. Execute the guidelines described in [Upgrade to SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc303420%28v=office.16%29.aspx), until you get to the "[Verify custom components](https://technet.microsoft.com/en-us/library/cc263299%28v=office.16%29.aspx)" step. 
+1. Execute the guidelines described in [Upgrade to SharePoint Server 2016](https://technet.microsoft.com/library/cc303420%28v=office.16%29.aspx), until you get to the "[Verify custom components](https://technet.microsoft.com/library/cc263299%28v=office.16%29.aspx)" step. 
 1. Download the [TFS Disconnector for SharePoint](https://go.microsoft.com/fwlink/?linkid=854633) to the SharePoint 2016 server. Unzip the files. You will be running script-2016.ps1 later.
 
    *The TFS Disconnector for SharePoint was last updated on Sep 9, 2017. Support for non-English was added.*
@@ -114,7 +114,7 @@ The solution is to install the TFS Disconnector for SharePoint on the SharePoint
 > [!NOTE] 
 > If you have problems running the scripts, please reach out to Customer Support. 
 >
-> Go to the [Team Foundation Server support page](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wf=0&wfName=productselection&gprid=10453&ccsid=636125714937824749), select the appropriate TFS version, then select "SharePoint Integration" as the Problem Type. Our support team will work with you to resolve the issue as quickly as possible. 
+> Go to the [Team Foundation Server support page](https://support.microsoft.com/getsupport?oaspworkflow=start_1.0.0.0&wf=0&wfName=productselection&gprid=10453&ccsid=636125714937824749), select the appropriate TFS version, then select "SharePoint Integration" as the Problem Type. Our support team will work with you to resolve the issue as quickly as possible. 
 
 This installs all the required references for TFS Sites to display properly, while disabling TFS/SharePoint integration. 
 
@@ -132,12 +132,12 @@ After the upgrade, your TFS SharePoint sites will display, but all integration f
 ## References for configuring Office Online Server for SharePoint 2016
 Deploying Office Online Server requires a considerable amount of configuration. We recommend you familiarize yourself with the topics below to ensure a successful deployment.
 
-* [Deploy Office Online Server](https://technet.microsoft.com/en-us/library/jj219455%28v=office.16%29.aspx)
-* [Configure Office Online Server for SharePoint Server 2016](https://technet.microsoft.com/en-us/library/ff431687%28v=office.16%29.aspx)
-* [Configure server-to-server authentication between Office Online Server and SharePoint Server 2016](https://technet.microsoft.com/en-us/library/mt346470%28v=office.16%29.aspx)
-* [Configure an Analysis Services (data model) server for Excel Online](https://technet.microsoft.com/en-us/library/jj219698%28v=office.16%29.aspx#SSAS)
+* [Deploy Office Online Server](https://technet.microsoft.com/library/jj219455%28v=office.16%29.aspx)
+* [Configure Office Online Server for SharePoint Server 2016](https://technet.microsoft.com/library/ff431687%28v=office.16%29.aspx)
+* [Configure server-to-server authentication between Office Online Server and SharePoint Server 2016](https://technet.microsoft.com/library/mt346470%28v=office.16%29.aspx)
+* [Configure an Analysis Services (data model) server for Excel Online](https://technet.microsoft.com/library/jj219698%28v=office.16%29.aspx#SSAS)
 * [Configure Analysis Services and Kerberos Constrained Delegation (KCD)](https://docs.microsoft.com/sql/analysis-services/instances/install-windows/configure-analysis-services-and-kerberos-constrained-delegation-kcd)
-* [ExcelWarnOnDataRefresh](https://technet.microsoft.com/en-us/library/jj219442.aspx)
+* [ExcelWarnOnDataRefresh](https://technet.microsoft.com/library/jj219442.aspx)
 
 
 

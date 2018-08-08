@@ -28,7 +28,7 @@ The search feature quickly returns wiki pages by title or page content.
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](https://docs.microsoft.com/en-us/visualstudio/releasenotes/tfs2018-update2). 
+> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
 
 English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.

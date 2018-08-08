@@ -56,7 +56,7 @@ Individual contributors can set their user preferences, enable features that are
 <td>**Security**</td>
 <td><ul>
 <li>[View permissions](../security/view-permissions.md)</li>
-<li>[Add an alternate account to your Visual Studio subscription](https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity)</li>
+<li>[Add an alternate account to your Visual Studio subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity)</li>
 </ul></td>
 <td>For an overview of default permission assignments by role, see [Default permissions and access](../security/permissions-access.md).</td>
 </tr>

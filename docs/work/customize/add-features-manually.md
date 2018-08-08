@@ -63,7 +63,7 @@ Code Review
 </ul>
 </li>
 <li>[Update ProcessConfiguration](#update-processconfig): Add work item colors for Code Review Request and Code Review Response</li>
-<li>To verify, [create a code review request](https://msdn.microsoft.com/en-us/library/hh474795.aspx).</li>
+<li>To verify, [create a code review request](https://msdn.microsoft.com/library/hh474795.aspx).</li>
 </ol>
 
 </td>
@@ -272,7 +272,7 @@ The quickest way to make many of these updates is to copy definition files from 
 
 	You can always download a free version of Team Explorer from the [Visual Studio download site](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs).
 
-	If you aren't a member of the Project Collection Administrators group, <a href="https://msdn.microsoft.com/en-us/library/dd547204(v=vs.140).aspx">get added as one</a>. 
+	If you aren't a member of the Project Collection Administrators group, <a href="https://msdn.microsoft.com/library/dd547204(v=vs.140).aspx">get added as one</a>. 
 
 2.	Open the Process Template Manager from the **Team, Team Project Collection Settings** menu. 
 
