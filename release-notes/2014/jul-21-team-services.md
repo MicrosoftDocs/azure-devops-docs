@@ -26,7 +26,7 @@ To get going, head over to the Azure Management portal, link your account, and n
 
 We have updated our getting started documentation for organizational access to help you get going.
 
-[Manage Organizational Access for your account](https://visualstudio.microsoft.com/get-started/manage-organization-access-for-your-account-vs)
+[Manage Organizational Access for your account](/vsts/manage-organization-access-for-your-account-vs)
 
 ##Viewing existing projects in the Azure Preview Portal
 
@@ -46,7 +46,7 @@ Brian [recently shared](http://blogs.msdn.com/b/bharry/archive/2014/07/09/upcomi
 
 ##Deleting your account
 
-In this sprint we also added the ability for an account owner to [delete their account](https://visualstudio.microsoft.com/get-started/delete-your-account-vs). Simply navigate to account settings in the collection administration page. From there, select delete account and follow the instructions. **WARNING:** when you delete an account, it will be disabled and all users of the account will lose access immediately. If you have set up billing, it will be discontinued after the current billing cycle. All metered services like builds and load test runs will be stopped immediately. Your account will then be in this state for 90 days, after which it will be deleted permanently. If at any point during this time, you need to recover the account, you can [contact support](https://visualstudio.microsoft.com/en-us/support/cloud-services-assisted-support-vs) to re-enable the account.
+In this sprint we also added the ability for an account owner to [delete their account](/vsts/delete-your-account-vs). Simply navigate to account settings in the collection administration page. From there, select delete account and follow the instructions. **WARNING:** when you delete an account, it will be disabled and all users of the account will lose access immediately. If you have set up billing, it will be discontinued after the current billing cycle. All metered services like builds and load test runs will be stopped immediately. Your account will then be in this state for 90 days, after which it will be deleted permanently. If at any point during this time, you need to recover the account, you can [contact support](https://visualstudio.microsoft.com/en-us/support/cloud-services-assisted-support-vs) to re-enable the account.
 
 ![Delete your account](_img/7_21_04.png)
 
