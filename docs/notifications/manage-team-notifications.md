@@ -32,7 +32,7 @@ A subscription lets you control what your team should be notified about and how 
 	
 	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
 
-2. Click **New subscription**. If you're not a team administrator, [get added as one](../work/scale/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
+2. Click **New subscription**. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). You need to be a team, project, or project collection administrator to create team alerts.
 
 	![New subscription](_img/new-subscription.png)
 	

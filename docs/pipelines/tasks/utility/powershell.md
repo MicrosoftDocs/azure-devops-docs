@@ -158,9 +158,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 ### Where can I learn about PowerShell scripts?
 
-[Scripting with Windows PowerShell](https://technet.microsoft.com/en-us/library/bb978526.aspx)
+[Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
 
-[Microsoft Script Center (the Scripting Guys)](https://technet.microsoft.com/en-us/scriptcenter/bb410849.aspx)
+[Microsoft Script Center (the Scripting Guys)](https://technet.microsoft.com/scriptcenter/bb410849.aspx)
 
 [Windows PowerShell Tutorial](http://www.computerperformance.co.uk/powershell/index.htm)
 

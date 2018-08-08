@@ -54,7 +54,8 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 0. Choose **Create Project** to add a project. You must be an account administrator or a member of the Project Collection Administrators group to [add a project](../../accounts/create-team-project.md).
 
-	![Account home, Projects page, New project](../../organizations/projects/_img/create-project/projects-hub-vert-create-project.png) 
+	> [!div class="mx-imgBorder"]  
+	> ![Account home, Projects page, New project](../../organizations/projects/_img/create-project/projects-hub-vert-create-project.png) 
 ::: moniker-end
 ::: moniker range=">= tfs-2017  <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
@@ -184,4 +185,4 @@ Open the project/team drop-down menu and select the project/team that you've rec
 
 ## Related articles
 - [Work across projects](work-across-projects.md)
-- [Add teams and team members](../../work/scale/multiple-teams.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json)
+- [Add teams](../../organizations/settings/add-teams.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json)

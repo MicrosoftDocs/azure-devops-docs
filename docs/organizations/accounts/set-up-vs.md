@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/17/2017
+ms.date: 08/01/2018
 monikerRange: 'vsts'
 ---
 # Set up Visual Studio with VSTS
@@ -106,9 +106,12 @@ or change them later in Visual Studio options.
 
     [Having browser problems with VSTS?](faq-set-up-vs.md#browser-problems)
 
-####	Next
+###	Next steps
 
-*	[Add users to your VSTS organization](add-organization-users-from-user-hub.md)
+> [!div class="nextstepaction"]
+   > [Add users to your VSTS organization](add-organization-users-from-user-hub.md)
+
+### Related articles
 
 *	Add code to [Git](../../repos/git/share-your-code-in-git-vs.md) 
 or [Team Foundation](../../repos/tfvc/share-your-code-in-tfvc-vs.md) version control

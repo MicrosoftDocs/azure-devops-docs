@@ -19,6 +19,7 @@
     #qualifyImageName: true # Optional
     #includeSourceTags: false # Optional
     #includeLatestTag: false # Optional
+    #addDefaultLabels: true # Optional
     #imageDigestFile: # Optional
     #containerName: # Optional
     #ports: # Optional

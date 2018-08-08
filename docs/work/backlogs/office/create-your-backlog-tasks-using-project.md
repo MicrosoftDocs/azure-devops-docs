@@ -56,7 +56,7 @@ Use this topic to learn how to:
 
     >**Tip:**  If the **Team** ribbon no longer appears, you might need to [re-enable it](https://msdn.microsoft.com/library/vstudio/ms268871.aspx).
 
-4.  Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../scale/multiple-teams.md).
+4.  Connect to TFS and the project that you want to plan. If you can't connect, [get added as a team member](../../../organizations/settings/add-teams.md).
 
     ![ALM\_EXL\_Connect](_img/create-your-backlog-tasks-using-project/IC680074.png)
 

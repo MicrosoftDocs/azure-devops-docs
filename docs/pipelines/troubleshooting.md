@@ -26,7 +26,7 @@ It is helpful to narrow whether a build or release failure is the result of a TF
 
 Check the logs for the exact command-line executed by the failing task. Attempting to run the command locally from the command line may reproduce the issue. It can be helpful to run the command locally from your own machine, and/or log-in to the machine and run the command as the service account.
 
-For example, is the problem happening during the MSBuild part of your build process (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/en-us/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/en-us/library/dd393574.aspx) problem.
+For example, is the problem happening during the MSBuild part of your build process (for example, are you using either the [MSBuild](tasks/build/msbuild.md) or [Visual Studio Build](tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](https://msdn.microsoft.com/library/ms164311.aspx) on a local machine using the same arguments.  If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](https://msdn.microsoft.com/library/dd393574.aspx) problem.
 
 ### Differences between local command prompt and agent
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
@@ -153,7 +153,7 @@ File or folder in use errors are often indicated by error messages such as:
 > Can't move [...] to [...]
 
 ### Detect files and folders in use
-On Windows, tools like [Process Monitor](https://technet.microsoft.com/en-us/sysinternals/processmonitor.aspx) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](https://technet.microsoft.com/en-us/sysinternals/processexplorer.aspx) or [Handle](https://technet.microsoft.com/en-us/sysinternals/handle.aspx) can be used.
+On Windows, tools like [Process Monitor](https://technet.microsoft.com/sysinternals/processmonitor.aspx) can be to capture a trace of file events under a specific directory. Or, for a snapshot in time, tools like [Process Explorer](https://technet.microsoft.com/sysinternals/processexplorer.aspx) or [Handle](https://technet.microsoft.com/sysinternals/handle.aspx) can be used.
 
 ### Anti-virus exclusion
 Anti-virus software scanning your files can cause file or folder in use errors during a build or release. Adding an anti-virus exclusion for your agent directory and configured "work folder" may help to identify anti-virus software as the interfering process.

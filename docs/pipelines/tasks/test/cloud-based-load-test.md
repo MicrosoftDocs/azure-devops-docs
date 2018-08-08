@@ -89,7 +89,7 @@ Use the **Number of permissible threshold violations**
 setting if your load test is not already configured 
 with information about how many violations will cause
 a failure to be reported. For more details, see: 
-[How to: Analyze Threshold Violations Using the Counters Panel in Load Test Analyzer](https://msdn.microsoft.com/en-us/library/ff426917.aspx).
+[How to: Analyze Threshold Violations Using the Counters Panel in Load Test Analyzer](https://msdn.microsoft.com/library/ff426917.aspx).
 
 [!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
 

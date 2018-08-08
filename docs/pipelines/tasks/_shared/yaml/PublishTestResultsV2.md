@@ -4,7 +4,7 @@
 - task: PublishTestResults@2
   inputs:
     #testRunner: 'JUnit' # Options: jUnit, nUnit, vSTest, xUnit
-    #testResultsFiles: '**\TEST-*.xml' 
+    #testResultsFiles: '**/TEST-*.xml' 
     #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
     #mergeTestResults: false # Optional
     #testRunTitle: # Optional

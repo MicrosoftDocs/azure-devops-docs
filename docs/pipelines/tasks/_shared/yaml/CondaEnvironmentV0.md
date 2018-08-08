@@ -1,13 +1,11 @@
 ```YAML
 # Conda Environment
 # Create and activate a Conda environment.
-- task: CondaEnvironment@1
+- task: CondaEnvironment@0
   inputs:
-    #createCustomEnvironment: # Optional
-    #environmentName: # Required when createCustomEnvironment == True
+    environmentName: 
     #packageSpecs: 'python=3' # Optional
     #updateConda: # Optional
-    #installOptions: # Optional
     #createOptions: # Optional
     #cleanEnvironment: # Optional
 ```

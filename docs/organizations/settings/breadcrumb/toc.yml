@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
-    - name: "Scale & Configure Teams"
+    - name: Settings
       tocHref: /vsts/
       topicHref: /vsts/organizations/settings/index

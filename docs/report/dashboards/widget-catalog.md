@@ -551,10 +551,10 @@ Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can 
 ![Team members widget](_img/widget-team-members.png)
 
 Shows team member profiles and, on-hover, their user account alias.
-For team admins, supports access to the quick dialog to [add or remove team members](../../work/scale/multiple-teams.md).  
+For team admins, supports access to the quick dialog to [add or remove team members](../../organizations/settings/add-teams.md).  
 
 > [!NOTE]  
-> This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../work/scale/multiple-teams.md#add-team-members). 
+> This widget is a convenient way to add team members to specific teams within projects.  If you remove it, you can still [add members to your team from the team administration page](../../organizations/settings/add-teams.md#add-team-members). 
 
 ::: moniker-end
 ::: moniker range="tfs-2015"

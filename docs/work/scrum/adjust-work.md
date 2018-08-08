@@ -38,7 +38,7 @@ Next, check whether any team member is under, at, or over capacity. Or, if someo
 
 ## Open a Sprint backlog for a team 
 
-[!INCLUDE [temp](../_shared/new-agile-hubs-feature.md)] 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 

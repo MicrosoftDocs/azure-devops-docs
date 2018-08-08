@@ -74,6 +74,8 @@ is causing performance problems.
 
    ![To get more performance details, click Go to Application Insights](_img/get-performance-data-for-load-tests/LoadTestGoToAppInsights.png)
 
+[Can I define load tests once and then run them against different hosts?](reference-qa.md#inject-url-variables)
+
 ## See also
 
 * [FAQs for load testing](reference-qa.md#qaappinsights)

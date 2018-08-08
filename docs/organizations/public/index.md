@@ -45,4 +45,11 @@ Create a public project, make an existing project public, or work in a public pr
 
 * [Default roles and permissions](default-roles-access-public.md) 
 * [Terms of service](service-limits-public.md)
-* [Feature differences for non-members](feature-differences.md) 
+* [Feature differences for non-members](feature-differences.md)  
+
+## Resources
+- [Git Repositories](../../git/index.md)  
+- [Work Items](../../work/work-items/index.md)  
+- [Project Management](../projects/index.md)  
+- [Process Customization](../settings/work/customize-process.md)   
+

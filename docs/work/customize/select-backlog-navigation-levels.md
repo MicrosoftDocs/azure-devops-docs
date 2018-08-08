@@ -39,7 +39,7 @@ If you want additional portfolio backlogs, see [Add portfolio backlogs](add-port
 
 ## Set your team's preferences for backlog levels
 
-Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../scale/add-team-administrator.md).
+Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../../organizations/settings/add-team-administrator.md).
  	
 
 ::: moniker range="vsts || >= tfs-2018" 

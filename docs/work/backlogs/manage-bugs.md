@@ -52,28 +52,32 @@ The bug work item form tracks similar information to the one shown for the Scrum
 [!INCLUDE [temp](../_shared/image-differences-with-wits.md)] 
 
 # [New web form](#tab/new-web-form)
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2017"  
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
 
-<img src="_img/manage-bugs-scrum-bug-from-ts.png" alt="Scrum bug work item form, VSTS" style="border: 2px solid #C3C3C3;" />
+![Scrum bug work item form, VSTS](_img/manage-bugs-scrum-bug-from-ts.png)  
 
 > [!TIP]
-> Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug. 
+> Use the [Discussion section](../work-items/work-item-form-controls.md#discussion) to add and review comments made about the work being performed to resolve the bug.  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range=">= tfs-2013 <= tfs-2015"  
 The new web form is only available from TFS 2017 and later versions. 
-::: moniker-end
-# [Old web form](#tab/old-web-form)
+::: moniker-end  
 
-::: moniker range=">= tfs-2017"
-The old web form is only available for TFS 2017 and earlier versions. 
-::: moniker-end
-::: moniker range=">= tfs-2013 <= tfs-2017"
-To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items-tfs.md). 
 
-<img src="_img/scrum-bug-wi-form.png" alt="Scrum bug work item form, TFS 2015 or earlier versions" style="border: 2px solid #C3C3C3;" />
-::: moniker-end
+# [Old web form](#tab/old-web-form)  
+
+::: moniker range=">= tfs-2017"  
+The old web form is only available for TFS 2017 and earlier versions.  
+::: moniker-end  
+::: moniker range=">= tfs-2013 <= tfs-2017"  
+To learn more about working in the old web form, see [Add work items to plan and track your project](add-work-items-tfs.md).  
+
+![Scrum bug work item form, TFS 2015 or earlier versions](_img/scrum-bug-wi-form.png)  
+::: moniker-end  
+
+
 ---
 
 ### Fields specific to bugs
@@ -99,7 +103,6 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <p>Describe the criteria that the team should use to verify whether the code defect is fixed. </p>
 </td>
 </tr>
-
 <tr>
 <td>
 <p>[System Info](../track/titles-ids-descriptions.md)</p>
@@ -112,10 +115,8 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <tr>
 	<td><p>[Acceptance Criteria](../track/titles-ids-descriptions.md)  </p></td>
 	<td><p>Provide the criteria to be met before the bug or user story can be closed. Before work begins, describe the customer acceptance criteria as clearly as possible. The acceptance criteria can be used as the basis for acceptance tests so that you can more effectively evaluate whether an item has been satisfactorily completed.</p>
-
 </td>
 </tr>
-::: moniker range="vsts" 
 <tr>
 <td>
 <p>[Found In Build](../track/build-test-integration.md)</p>
@@ -124,24 +125,10 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <td>
 <p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../test/test-different-configurations.md).</p>
 <p>When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug. </p>
+<p>For on-premises TFS, to access a drop-down menu of all builds that have been run, you can update the ```FIELD``` definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see [Query based on build and test integration fields](../track/build-test-integration.md).</p>
 <p>For information about how to define build names, see [build number format options](../../pipelines/build/options.md). </p>
 </td>
 </tr>
-::: moniker-end 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
-<tr>
-<td>
-<p>[Found In Build](../track/build-test-integration.md)</p>
-<p>[Integrated in Build](../track/build-test-integration.md)</p>
-</td>
-<td>
-<p>When Test Manager creates bugs, it automatically populates **System Info** and **Found in Build** with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see [Test different configurations](../../test/test-different-configurations.md).</p>
-<p>When you resolve the bug, use **Integrated in Build** to indicate the name of the build that incorporates the code that fixes the bug. </p>
-<p>To access a drop-down menu of all builds that have been run, you can update the ```FIELD``` definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see [Query based on build and test integration fields](../track/build-test-integration.md).</p>
-<p>For information about how to define build names, see [build number format options](../../pipelines/build/options.md). </p>
-</td>
-</tr>
-::: moniker-end 
 <tr>
 <td>
 [Priority](../track/planning-ranking-priorities.md) <sup>1</sup>
@@ -196,7 +183,6 @@ For information about fields specific to the CMMI process, see [Bugs, issues, an
 Add and review comments made about the work being performed by going to the discussion section. 
 
 
-
 ## Capture bugs using test tools
 
 You can create bugs during test sessions using one of the following tools: 
@@ -236,22 +222,11 @@ When bugs are treated as tasks, they're often automatically linked to a PBI or u
  
 Your team should consider fixing all bugs found during a sprint when testing a feature in development.  
 
-<!---
-
-
-> [!TIP]
->From VSTS and TFS 2015.1 and later versions, you can 
->[drag-and-drop work items onto a sprint from any backlog or board](../scrum/define-sprints.md#drag-drop-to-sprint).   
-
-
-
--->
 
 <a id="fix-resolve-close">  </a>
 ## Fix, resolve and close bugs (update status) 
 
 Bug fixes that involve more than a single section of code may require significant regression testing and may involve other team members. Record any conversations that relate to assessing the risk of bug fixes in the bug work item history.
-
 
 ### Bug workflow lifecycle  
 
@@ -269,23 +244,23 @@ For Scrum bugs, you simply change the State from Committed (similar to Active) t
 To verify a fix, a developer or tester should attempt to reproduce the bug and look for additional unexpected behavior. If necessary, they should reactivate the bug.
 
 When verifying a bug resolution, you may find that the bug was not completely fixed or you may disagree with the resolution. In this case, discuss the bug with the person who resolved it, come to an agreement, and possibly reactivate the bug. If you reactivate a bug, include the reasons for reactivating the bug in the bug description.
-
-::: moniker range=">= tfs-2017"
+ 
+::: moniker range=">= tfs-2017"  
 
 <a id="verify-bug">  </a>
 ###Verify a bug, re-run tests defined for web apps 
-::: moniker-end
-::: moniker range="vsts" 
-Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
-::: moniker-end
+::: moniker-end  
+::: moniker range="vsts"  
+Choose the **Verify** option to re-run tests which identified the bug. You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
+::: moniker-end  
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
-::: moniker-end
-::: moniker range=">= tfs-2017"
+Choose the **Verify** option to re-run tests which identified the bug. (Requires TFS 2017.1 or later version.) You can invoke the Verify option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.  
+::: moniker-end  
+::: moniker range=">= tfs-2017"  
 <img src="../_shared/_img/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
  
 To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).
-::: moniker-end
+::: moniker-end  
 
 <a id="close">  </a>
 ### Close a bug  
@@ -339,16 +314,16 @@ To track your bugs and integrate with other resources available to you, see thes
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
   
 
-::: moniker range="vsts"
+::: moniker range="vsts"  
 
 ### Use the Analytics service to create bug reports
 You can use Power BI to create more complex reports than what you can get from a query. To learn more, see [Connect to VSTS with Power BI Data Connector](../../report/powerbi/data-connector-connect.md). 
 
-::: moniker-end
+::: moniker-end  
 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 
 
 ### Pre-defined SQL Server bug reports
@@ -361,7 +336,7 @@ If you work from an on-premises TFS and you have SQL Server Analysis Services an
 
 To learn how to add SQL Server reports for a project, see [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md).  
 
-::: moniker-end
+::: moniker-end  
 
 
 
@@ -370,9 +345,9 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 SonarQube provides a way of automatically measuring some technical debt. SonarQube finds important violations of best coding practices. You implement Sonar to ensure that developers follow important code metrics like appropriate class and method size or low cyclomatic complexity (a quantitative measure of the number of linearly independent paths through a program's source code).  
 
 By integrating your on-premises TFS with a SonarQube server, you can get the following data:  
-- Results of .NET and JavaScript code analysis  
+- Results of .Net and JavaScript code analysis  
 - Code clone analysis  
 - Code coverage data from tests  
-- Metrics for .NET and JavaScript  
+- Metrics for .Net and JavaScript  
 
 See [Technical Debt Management: Announcing SonarQube integration with MSBuild and Team Build](http://blogs.msdn.com/b/visualstudioalm/archive/2015/05/05/technical-debt-management-announcing-sonarqube-integration-with-msbuild-and-team-build.aspx) for details.

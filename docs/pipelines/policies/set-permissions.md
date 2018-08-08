@@ -68,7 +68,7 @@ In addition to permission assignments, you manage security for several resources
 
 ## Manage Library roles for variable groups, secure files, and deployment groups
 
-Permissions for [variable groups](../library/variable-groups.md), [secure files](../library/secure-files.md), and [deployment groups](/vsts/pipelines/release/deployment-groups) are managed by roles. For a description of the roles, see [About security roles](../../organizations/security/about-security-roles.md). 
+Permissions for [variable groups](../library/variable-groups.md), [secure files](../library/secure-files.md), and [deployment groups](../release/deployment-groups/index.md) are managed by roles. For a description of the roles, see [About security roles](../../organizations/security/about-security-roles.md). 
 
 > [!NOTE]
 > **Feature availability**: These features are available on VSTS and TFS 2017 and later versions. 
