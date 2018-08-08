@@ -177,8 +177,8 @@ The VSTS and TFS APIs are based on REST, OAuth, Json and service hooks&mdash;all
 REST APIs are provided to support building extensions to VSTS and TFS. To learn more, see [REST API overview](https://docs.microsoft.com/rest/api/vsts/).
 
 
+## Related articles
 
-## Related notes 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
 - [Software development roles](roles.md)

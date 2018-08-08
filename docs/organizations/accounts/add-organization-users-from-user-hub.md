@@ -8,7 +8,7 @@ ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 08/01/2018
+ms.date: 08/08/2018
 monikerRange: 'vsts'
 ---
 
@@ -45,7 +45,7 @@ Access levels control which features are available to users, i.e. the full set o
 
 ## Prerequisites
 
-You'll need [VSTS project collection administrator or organization owner permissions[Quickstart: Add administrators, set permissions at the project-level or project collection-level](../security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
+To add users, you must have [VSTS project collection administrator or organization owner permissions](../security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
 
 ## Add users to your VSTS organization
 
@@ -57,7 +57,7 @@ link to the organization page.
  > [!NOTE]
  > If have an Azure Active Directory (Azure AD) backed VSTS organization, and you need to add users who are external to your Azure AD, first [add external users](add-external-user.md) to
  > your Azure AD.  Be sure on the **Tell us about this user page**, under **Type of user**, to choose **User with an
- > existing Microsoft account**.  After completing those steps, follow the steps below to add the external Azure AD
+ > existing Microsoft account**. Complete the following steps to add the external Azure AD
  > user to VSTS.
 
 Provide others access to your organization by adding their email address.
@@ -68,15 +68,15 @@ Provide others access to your organization by adding their email address.
 
 1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
 
-2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
     ![Open Admin Settings](_img/_shared/open-admin-settings-vert.png)
  
-3. Choose **Users** and then choose **Add new users** to open the form.
+3. Choose **Users** > **Add new users** to open the form.
 
    ![Choose Add new users](_img/_shared/add-new-users.png)
 
-4. Fill out the form.
+4. Complete the form.
 
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog](_img/add-organization-users-from-user-hub/invite-users-add-user-dialog.png)
@@ -86,21 +86,21 @@ Provide others access to your organization by adding their email address.
    * **Add to projects**: Select the project that you named in the previous procedure.
    * **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
 
-5. Choose **Add** to complete your invitation.
+5. Select **Add** to complete your invitation.
 
 
 # [Previous navigation](#tab/previous-nav)
 
 1. From your web browser, choose ![gear icon](../../_img/icons/gear-icon.png), the gear Settings icon, and choose the **Organization Settings**
 
-   ![Open Organization Settings](../../user-guide/_img/sign-up/open-organization-settings.png)
+   ![Open Organization Settings](../../_shared/_img/settings/open-organization-settings.png)
 
-2. Choose **Users** and then choose **Add new users** to open the form.
+2. Choose **Users** > **Add new users** to open the form.
 
    > [!div class="mx-imgBorder"]  
    >![Open Add new users dialog](../../user-guide/_img/sign-up/add-new-users.png)
 
-3. Fill out the form.
+3. Complete the form.
 
    ![Web portal, organization admin context, Add new users dialog](../../user-guide/_img/invite-users-add-user-dialog.png)
 
@@ -109,7 +109,7 @@ Provide others access to your organization by adding their email address.
    * **Add to projects**: Select the project that you named in the previous procedure.
    * **VSTS Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
 
-4. Choose **Add** to complete your invitation.
+4. Select **Add** to complete your invitation.
 
 <!---
 Go to the User Hub:

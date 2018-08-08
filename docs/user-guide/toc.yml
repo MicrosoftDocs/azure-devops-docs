@@ -74,8 +74,6 @@
     href: provide-feedback.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json
 - name: Reference
   items:
-  - name: Features index
-    href: alm-devops-features.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: "Permissions & access (Security)"
     href: ../organizations/security/permissions-access.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: Keyboard shortcuts

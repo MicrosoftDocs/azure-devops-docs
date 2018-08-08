@@ -79,11 +79,11 @@ and **Remove from organization** (deletes user).
  
 	![Open Organization Settings](../../_shared/_img/settings/open-organization-settings.png)
 
-	Then, click **Users** to open the Manage users page. Click **Add new users** to open the dialog. 
+	Then, select **Users** to open the Manage users page. Choose **Add new users** to open the dialog. 
 
 	![Open Add new users dialog](../../user-guide/_img/sign-up/add-new-users.png)
 
-2. Choose a user or group of users in the table and then click the **...** icon at the end of the name column to open the context 
+2. Choose a user or group of users in the table and then select the **...** icon at the end of the name column to open the context 
 menu. The menu supports **Change access levels**, **Manage projects**, **Resend invite**, **Manage extensions** (if there are extensions), 
 and **Remove from organization** (deletes user).
 

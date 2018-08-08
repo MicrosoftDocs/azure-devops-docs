@@ -29,11 +29,11 @@ Choose VSTS when you want quick setup, maintenance-free operations, easy collabo
 
 ## Where do I start?
 
-We've made it easy for you to start for free and try out our service. 
+We've made it easy for you to start for free and try out our service.
 
-Sign up for free by creating an organization and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods. 
+Sign up for free by creating an organization and then, either upload your code to share or source control, or begin tracking your work using Scrum, Kanban, or a combination of methods.
 
-[![Sign up for VSTS](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md) 
+[![Sign up for VSTS](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md)
 
 
 ## Try this next  
@@ -41,7 +41,8 @@ Sign up for free by creating an organization and then, either upload your code t
 > [!div class="nextstepaction"]
 > [Sign up and invite team mates](sign-up-invite-teammates.md)
 
-To learn more, see these topics: 
+## Related articles
+
 - [A tour of services](services.md)
 - [Key concepts](concepts.md)  
 - [Client-server tools](tools.md)
