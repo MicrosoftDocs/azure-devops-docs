@@ -151,7 +151,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Backlog and board settings</b></p>
-<p>Choose ![Settings icon](../work/_img/icons/team-settings-gear-icon.png)  to configure team backlogs and boards, including [show bugs on backlogs and boards](../work/customize/show-bugs-on-backlog.md) and [set team backlog levels](../work/customize/select-backlog-navigation-levels.md).  </p>
+<p>Choose ![Settings icon](../work/_img/icons/team-settings-gear-icon.png)  to configure team backlogs and boards, including [show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md) and [set team backlog levels](../organizations/settings/select-backlog-navigation-levels.md).  </p>
 ![Backlog and board settings](_img/features/alm-feature-team-settings-gear-icon.png)  
 <br/>
 
@@ -243,7 +243,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>New work item experience</b></p>
-<p>The [new work item experience](../work/customize/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
+<p>The [new work item experience](../reference/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
 
 
 <p><b>Manage bugs</b></p>
@@ -251,7 +251,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Choose how you want to track bugs</b></p>
-<p>Each team can [choose to manage bugs on their backlog or along with tasks](../work/customize/show-bugs-on-backlog.md). </p>
+<p>Each team can [choose to manage bugs on their backlog or along with tasks](../organizations/settings/show-bugs-on-backlog.md). </p>
 
 
 <p><b>Share plans and information</b></p>
@@ -299,7 +299,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Add or modify a field </b></p>
-<p>Add a custom field ([VSTS](../organizations/settings/work/customize-process.md) | [TFS](../work/customize/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
+<p>Add a custom field ([VSTS](../organizations/settings/work/customize-process.md) | [TFS](../reference/add-modify-field.md) to support tracking additional data requirements or modify an existing field to apply optional rules. </p>
 
 
 <p><b>Restrict access</b></p>
@@ -334,7 +334,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>New work item experience </b></p>
-<p>The [new work item experience](../work/customize/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
+<p>The [new work item experience](../reference/process/new-work-item-experience.md) provides access to a more modern form, additional features, and the ability to add fields and apply other customizations to the work item type. </p>
 
 <p><b>Customize a process</b></p>
 <p>Customizations you make to an inherited process automatically update all team projects that reference that process. You can customize your team project as follows:</p>
@@ -431,15 +431,15 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Add or modify a field </b></p>
-<p>[Add or modify a field](../work/customize/add-modify-field.md) to support work tracking and reporting by editing the WIT definition.</p>
+<p>[Add or modify a field](../reference/add-modify-field.md) to support work tracking and reporting by editing the WIT definition.</p>
 
 
 <p><b>Add rules to a field </b></p>
-<p>Apply [various rules to custom fields](../work/customize/reference/apply-rule-work-item-field.md) to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
+<p>Apply [various rules to custom fields](../reference/xml/apply-rule-work-item-field.md) to qualify the value it can have, to copy a value, to specify a default, to restrict who can modify it, to enforce pattern matching, or to enforce conditional values.  </p>
 
 
 <p><b>Remove a field </b></p>
-<p>[Stop tracking a field by removing the field](../work/customize/add-modify-field.md) from the work item form of select work item types. </p>
+<p>[Stop tracking a field by removing the field](../reference/add-modify-field.md) from the work item form of select work item types. </p>
 
 
 </td>
@@ -493,7 +493,7 @@ Use features supported by these familiar clients to manage your project and illu
 <br/>
 
 <p><b>Drag-n-drop</b></p>
-<p>[Drag and drop items](../work/customize/reorder-cards.md) on the Kanban board to update status and to reorder and reparent items.  </p>
+<p>[Drag and drop items](../boards/boards/reorder-cards.md) on the Kanban board to update status and to reorder and reparent items.  </p>
 
 <p><b>Add task checklists</b></p>
 <p>Add and mark tasks as done with [lightweight tasks checklists](../work/kanban/add-task-checklists.md). </p>
@@ -544,8 +544,8 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Customize cards</b></p>
-<p>[Add fields to cards](../work/customize/customize-cards.md) that you can edit directly on your Kanban and task boards.</p>  
-![Customized card with added work item fields and styling rules](../work/customize/_img/kanban-board-card-style-rule-example.png)  
+<p>[Add fields to cards](../boards/boards/customize-cards.md) that you can edit directly on your Kanban and task boards.</p>  
+![Customized card with added work item fields and styling rules](../boards/boards/_img/kanban-board-card-style-rule-example.png)  
 <br/>
 
 <p><b>Live updates </b></p>
@@ -561,13 +561,13 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add and mark user stories and other work items as done from your [Kanban features or epics boards](../work/kanban/kanban-epics-features-stories.md). </p>
 
 <p><b>Set team's card reorder preference </b></p>
-<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](../work/customize/reorder-cards.md).  </p>
+<p>You can preserve the backlog priority when you move a card to a new column by setting your team's [Kanban board card reordering setting](../boards/boards/reorder-cards.md).  </p>
 
 <p><b>Enable/disable card annotations</b></p>
-<p>Turn on or off [task checklists or inline tests](../work/customize/customize-cards.md#annotations) for your Kanban board. </p>
+<p>Turn on or off [task checklists or inline tests](../boards/boards/customize-cards.md#annotations) for your Kanban board. </p>
 
 <p><b>Configure inline tests</b></p>
-<p>Configure how new inline tests are added to the Kanban board: [create a new test plan/test suite or choose an existing test plan](../work/customize/customize-cards.md#tests). </p>
+<p>Configure how new inline tests are added to the Kanban board: [create a new test plan/test suite or choose an existing test plan](../boards/boards/customize-cards.md#tests). </p>
 
 </td>
 
@@ -743,11 +743,11 @@ Use features supported by these familiar clients to manage your project and illu
 <p>You can [define rules that change a field value](https://msdn.microsoft.com/library/ms194981.aspx) whenever you change the state, perform a transition, or select a reason.   </p>
 
 <p><b>Apply workflow conditional field rules (TFS)  </b></p>
-<p>You can define rules that [change a field value based on the contents of other fields](../work/customize/reference/apply-rule-work-item-field.md) during workflow changes. </p>
+<p>You can define rules that [change a field value based on the contents of other fields](../reference/xml/apply-rule-work-item-field.md) during workflow changes. </p>
 
 
 <p><b>Restrict who can make changes during workflow transitions (TFS)  </b></p>
-<p>Set a condition field rule that applies to a group to [restrict who can make changes to a workflow or a field](../work/customize/reference/apply-rule-work-item-field.md).  </p>
+<p>Set a condition field rule that applies to a group to [restrict who can make changes to a workflow or a field](../reference/xml/apply-rule-work-item-field.md).  </p>
 
 
 <p><b>Event-generated workflow changes or field assignments (TFS)</b></p>
@@ -2491,7 +2491,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Kanban process tools</b></p>
-<p>You can use the Kanban board with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Kanban tools support working with the [Kanban board](../work/kanban/kanban-basics.md), [adding task checklists](../work/kanban/add-task-checklists.md), [setting WIP limits](../work/kanban/wip-limits.md), [custom columns](../work/kanban/add-columns.md), [split columns](../work/kanban/split-columns.md), [custom swimlanes](../work/kanban/expedite-work.md), and [customizing cards](../work/customize/customize-cards.md). </p>
+<p>You can use the Kanban board with any process--Agile, Scrum, CMMI--or team project that you select or create. Agile Kanban tools support working with the [Kanban board](../work/kanban/kanban-basics.md), [adding task checklists](../work/kanban/add-task-checklists.md), [setting WIP limits](../work/kanban/wip-limits.md), [custom columns](../work/kanban/add-columns.md), [split columns](../work/kanban/split-columns.md), [custom swimlanes](../work/kanban/expedite-work.md), and [customizing cards](../boards/boards/customize-cards.md). </p>
 
 
 <p><b>Scrum process</b></p>
@@ -2562,7 +2562,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Configure Features Wizard</b></p>
-<p>Use the Configure Features Wizard to [configure team projects after a TFS upgrade to access new features](../work/customize/configure-features-after-upgrade.md).  </p>
+<p>Use the Configure Features Wizard to [configure team projects after a TFS upgrade to access new features](../reference/configure-features-after-upgrade.md).  </p>
 
 </td>
 <td width="33%">
@@ -2626,10 +2626,10 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>From your [Project page](../project/navigation/work-across-projects.md), you can view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you and that are stored in different team projects within the organization or collection. </p>
 
 <p><b>Customize a team project (TFS) </b></p>
-<p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../work/customize/customize-work.md).  </p>
+<p>You customize a team project defined on an on-premises TFS by [modifying definition files for work item types or process configuration, or changing field attributes](../reference/customize-work.md).  </p>
 
 <p><b>Update a team project after an upgrade (TFS)</b></p>
-<p>Some features added when you upgrade your on-premises application server may require you to [configure features to access them](../work/customize/configure-features-after-upgrade.md). </p>
+<p>Some features added when you upgrade your on-premises application server may require you to [configure features to access them](../reference/configure-features-after-upgrade.md). </p>
 
 
 <p><b>Upload reports (TFS) </b></p>

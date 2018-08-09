@@ -27,7 +27,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            |  
 > | ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) | [Filter by keywords, tags, or fields](filter-kanban-board.md)     | 
 > | ![Live updates icon](../_img/icons/live-updates-icon.png)  | [Enable live updates](kanban-basics.md#live-updates)  |
-> | ![Settings icon](../_img/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../customize/customize-cards.md)  &#124; [Card reordering](../customize/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../customize/select-backlog-navigation-levels.md) &#124; [Working days](../customize/set-working-days.md) &#124; [Working with bugs](../customize/show-bugs-on-backlog.md)   |
+> | ![Settings icon](../_img/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working days](../../organizations/settings/set-working-days.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
 > | ![full screen icon](../_img/icons/full-screen-icon.png) / ![exit full screen icon](../_img/icons/exit-full-screen-icon.png) | Enter or exit full screen mode      |  
 
 ::: moniker-end
@@ -41,7 +41,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            | 
 > | ![Kanban filter icon](../_img/icons/kanban-filter-icon.png) | [Filter by keywords, tags, or fields](filter-kanban-board.md)     | 
 > | ![Live updates icon](../_img/icons/live-updates-icon.png)  | [Enable live updates](kanban-basics.md#live-updates)  |
-> | ![Settings icon](../_img/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../customize/customize-cards.md)  &#124; [Card reordering](../customize/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../customize/select-backlog-navigation-levels.md) &#124; [Working days](../customize/set-working-days.md) &#124; [Working with bugs](../customize/show-bugs-on-backlog.md)   |
+> | ![Settings icon](../_img/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working days](../../organizations/settings/set-working-days.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
 > | ![full screen icon](../_img/icons/fullscreen_icon.png) / ![exit full screen icon](../_img/icons/exitfullscreen_icon.png) | Enter or exit full screen mode      |  
 
 ::: moniker-end
@@ -54,7 +54,7 @@ You can quickly switch from the backlog view to the board view using the **Backl
 > | **Backlog**               | [Switch to backlog view](../backlogs/create-your-backlog.md)           |
 > | **Board**    | [Switch to Kanban board view](kanban-quickstart.md)            | 
 > | ![Search filter](../_img/icons/search_filter_icon.png) | [Filter by keyword or tag](filter-kanban-board.md)   |  
-> | ![Settings icon](../_img/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../customize/customize-cards.md)  &#124; [Card reordering](../customize/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../customize/select-backlog-navigation-levels.md) &#124; [Working days](../customize/set-working-days.md) &#124; [Working with bugs](../customize/show-bugs-on-backlog.md)   |
+> | ![Settings icon](../_img/icons/team-settings-gear-icon.png) | Customize the board and configure team settings:<br/>[Cards](../../boards/boards/customize-cards.md)  &#124; [Card reordering](../../boards/boards/reorder-cards.md) &#124; [Columns](add-columns.md)  &#124; [Swimlanes](expedite-work.md)  &#124; [CFD chart](../../report/dashboards/cumulative-flow.md) &#124; [Backlogs](../../organizations/settings/select-backlog-navigation-levels.md) &#124; [Working days](../../organizations/settings/set-working-days.md) &#124; [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md)   |
 
 ::: moniker-end
 

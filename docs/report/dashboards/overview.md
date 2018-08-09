@@ -154,7 +154,7 @@ You can add data to support reporting requirements by [adding a custom field](..
 
 ### Add custom fields
   
-You can add data to support reporting requirements by [adding a custom field](../../work/customize/add-modify-field.md).  
+You can add data to support reporting requirements by [adding a custom field](../../reference/add-modify-field.md).  
 
 ::: moniker-end
 

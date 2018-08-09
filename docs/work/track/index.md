@@ -68,7 +68,7 @@ List bugs, user stories, or other work items based on field criteria you specify
 - [Backlogs](../backlogs/index.md)
 - [Kanban](../kanban/index.md)
 - [Scrum](../scrum/index.md)
-- [Work item customization](../customize/index.md)
+- [Work item customization](../../reference/index.md)
 - [Wiql Editor (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)   
 - [Enhanced Export (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export)
   

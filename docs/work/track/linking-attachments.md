@@ -241,9 +241,9 @@ You can view related work items and object within a work item form by installing
 
 ### Add custom link types or customize the links controls 
 
-To add link types (TFS only), see [Manage link types [witadmin]](../customize/reference/witadmin/manage-link-types.md). 
+To add link types (TFS only), see [Manage link types [witadmin]](../../reference/witadmin/manage-link-types.md). 
 
-All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../customize/reference/linkscontroloptions-xml-elements.md).  
+All tabs that support creating links between work items are implemented by using the **LinksControl** element on the work item form. This element controls filtering and restricting the types of work items to which you can link, the types of links that you can create, and whether you can link to work items in another project. To customize the link controls and restrictions, you modify the definition of the `LinksControlOptions` for a work item type, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).  
 
 
 
@@ -295,7 +295,7 @@ All lists of links display these data fields:
 -   State
 -   [Link Comment]
 
-You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../customize/reference/linkscontroloptions-xml-elements.md).
+You can add or remove columns from the list of links, and you can customize the default columns and the column order. For more information, see [LinksControlOptions XML elements](../../reference/xml/linkscontroloptions-xml-elements.md).
 
 For more information about these fields, see [Titles, IDs, and descriptions](titles-ids-descriptions.md) and [Create managed queries](example-queries.md).
 

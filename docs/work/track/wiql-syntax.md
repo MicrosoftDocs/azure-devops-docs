@@ -195,7 +195,7 @@ WHERE [System.AssignedTo] = 'joselugo'
 WHERE [Adatum.CustomMethodology.Severity] >= 2
 ```
 
-The table below summarizes all the supported operators for different field types. For additional information on each field type, see [Field data types and attributes](../../work/customize/reference/define-modify-work-item-fields.md).  
+The table below summarizes all the supported operators for different field types. For additional information on each field type, see [Field data types and attributes](../../reference/xml/define-modify-work-item-fields.md).  
 
 The `=, <>, >, <, >=, and <=` operators work as expected. For instance, `System.ID > 100` queries for all work items with an **ID** greater than 100. `System.ChangedDate > '1/1/16 12:00:00'` queries for all work items changed after noon of January 1, 2016.
 
@@ -446,7 +446,7 @@ https://msdn.microsoft.com/library/bb130306.aspx
 ## Related articles 
 
 - [Query fields, operators, values, and variables](query-operators-variables.md)  
-- [Field data types and attributes](../customize/reference/define-modify-work-item-fields.md) 
+- [Field data types and attributes](../../reference/xml/define-modify-work-item-fields.md) 
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
 
 ### Limits on WIQL length  

@@ -1,5 +1,6 @@
 ---
-title: Resolve backlog issues | VSTS & TFS
+title: Resolve backlog issues 
+titleSuffixe: VSTS & TFS
 description: Resolve error messages when working in backlogs or boards in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)  
 ms.technology: devops-agile
 ms.prod: devops
@@ -47,12 +48,12 @@ While you can create a hierarchy of backlog items, tasks, and bugs&mdash;we don'
 
 Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list. In other words, only create parent-child links one level deep between items that belong to a different category. Use the Feature work item type when you want to group user stories (Agile), product backlog items (Scrum), or requirements (CMMI). You can [quickly map product backlog items to features](../backlogs/organize-backlog.md), which creates parent-child links in the background.    
 
-<img src="../customize/_img/create-hierarchy-with-different-wits.png" alt="Create work items using different hiearchy" style="border: 1px solid #C3C3C3;" /> 
+<img src="../../reference/_img/create-hierarchy-with-different-wits.png" alt="Create work items using different hiearchy" style="border: 1px solid #C3C3C3;" /> 
 
 <a id="leaf-nodes">  </a>
 ## When you track bugs as requirements
 
-As mentioned previously, [each team can choose how they want to track bugs](../customize/show-bugs-on-backlog.md) to behave like requirements, or tasks, or as neither. 
+As mentioned previously, [each team can choose how they want to track bugs](../../organizations/settings/show-bugs-on-backlog.md) to behave like requirements, or tasks, or as neither. 
 
 When you make a bug or requirement a child of another bug or requirement, all items appear on the product backlog page, but only the child bug or requirement appears on the Kanban board. For example, the third user story, *Interim save on long form*, has a child bug, *Save takes too long*. 
 
@@ -60,11 +61,11 @@ The child bug, *Save takes too long*, appears on the Kanban board, but not the p
 
 **All bugs and requirements appear on the backlog**  
 
-![Child bug appears on backlog ](../customize/_img/bugs-appear-on-backlog.png)  
+![Child bug appears on backlog ](../../reference/_img/bugs-appear-on-backlog.png)  
 
 **Only leaf nodes appear on the Kanban board**  
 
-![Kanban board, leaf node bug appears](../customize/_img/bugs-appear-on-board.png)  
+![Kanban board, leaf node bug appears](../../reference/_img/bugs-appear-on-board.png)  
 
 <a id="bugs-as-tasks">  </a>
 ## When you track bugs as tasks
@@ -75,14 +76,14 @@ However, if you create parent-child links between a requirement and a bug, and t
 
 **Hierarchy of items assigned to the sprint backlog**  
 
-![Sprint backlog query shows linked bug and task ](../customize/_img/sprint-backlog-hierarchy.png)   
+![Sprint backlog query shows linked bug and task ](../../reference/_img/sprint-backlog-hierarchy.png)   
 
 **Only leaf nodes appear on the sprint backlog**  
 
-![Sprint backlog, leaf node task ](../customize/_img/sprint-backlog-leaf-only.png)  
+![Sprint backlog, leaf node task ](../../reference/_img/sprint-backlog-leaf-only.png)  
 
 **Only leaf nodes appear on the task board**   
-![Sprint board, leaf node task appears](../customize/_img/bugs-appear-on-taskboard.png)  
+![Sprint board, leaf node task appears](../../reference/_img/bugs-appear-on-taskboard.png)  
 
 Is there a workaround to display intermediate nodes within a hierarchy?  Not at this time. You can always check the entire list of items assigned to a sprint by using the **Create Query** link. 
 

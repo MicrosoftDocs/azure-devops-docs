@@ -11,12 +11,12 @@ A:	Change these when you sign up for your VSTS organization.
 <img alt="Change organization details" src="../_shared/_img/change-details-standard1.png" style="border: 1px solid #CCCCCC">
 
 VSTS uses Agile as the default 
-[process](https://msdn.microsoft.com/Library/vs/alm/work/work-items/guidance/choose-process) 
+[process](/vsts/work/work-items/guidance/choose-process) 
 to organize your work. And your organization's default location is based on the closest 
-[Microsoft Azure region](https://azure.microsoft.com/en-us/regions) 
+[Microsoft Azure region](https://azure.microsoft.com/regions) 
 where VSTS is available. For a better experience, 
 select a location that's closest to most users in your organization. If a new VSTS region or location opens later, you can 
-[change your organization location or region](../organizations/accounts/change-organization-location.md).
+[change your organization location or region](/vsts/organizations/accounts/change-organization-location).
 You can select another process, like Scrum, if that works best for you.
 
 <img alt="Rename team project, change organization location, or select another process" src="../_shared/_img/change-details-standard2.png" style="border: 1px solid #CCCCCC">

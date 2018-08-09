@@ -228,7 +228,7 @@ Other types of burndown charts
 Release burndown 
 -->
 
-For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../customize/reference/process-configuration-xml-element.md#fields).  
+For on-premises TFS deployments, you can [specify the format that appears&mdash;**h** for hours or **d** for days&mdash;for the remaining work field](../../reference/xml/process-configuration-xml-element.md#fields).  
 
 <a id="empty-chart">  </a>
 ### Empty sprint burndown chart 

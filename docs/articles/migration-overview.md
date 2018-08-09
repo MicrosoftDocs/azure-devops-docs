@@ -93,16 +93,16 @@ A: This is the same experience with TFS on-premises. If we make a change to a sy
 
 #### Q: Is there a difference between a team project that was created manually versus one that was created from data import?
 
-A. The features available to each team project are the same. The differences occur in how you modify the processes in your account. When you create an account, you will use the [Inheritance process model](../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](../work/customize/import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json) to customize the work tracking experience.
+A. The features available to each team project are the same. The differences occur in how you modify the processes in your account. When you create an account, you will use the [Inheritance process model](../organizations/settings/work/manage-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) to customize the work tracking experience. Team projects migrated via data import, however, will use the [Hosted XML process model](../organizations/settings/work/import-process/import-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) to customize the work tracking experience.
 
 #### Q: If my account is using Hosted XML, can I create new projects to use the Inheritance process model?
 
-A: Yes. For data import accounts, VSTS supports team projects that use  Inheritance as well as  Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json).  
+A: Yes. For data import accounts, VSTS supports team projects that use  Inheritance as well as  Hosted XML process models. To learn more about the Inheritance process, see [Manage processes](../organizations/settings/work/manage-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json).  
 
 #### Q: Where can I find more information on Hosted XML and the Inheritance process model?
 
-* [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
-* [Hosted XML](../work/customize/import-process/import-process.md?toc=/vsts/work/customize/toc.json&bc=/vsts/work/customize/breadcrumb/toc.json)
+* [Inheritance Process Model](../organizations/settings/work/manage-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
+* [Hosted XML](../organizations/settings/work/import-process/import-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
 
 #### Q: If I have feedback or additional questions is there somewhere I can reach out?
 

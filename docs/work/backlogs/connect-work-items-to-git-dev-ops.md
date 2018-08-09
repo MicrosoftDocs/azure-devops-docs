@@ -183,7 +183,7 @@ The link types you can add within the development section are Branch, Build, Cha
 
 <img src="_img/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
 
-To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../customize/reference/linkscontroloptions-xml-elements.md#development-links-control). 
+To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
  
 ::: moniker-end
 
