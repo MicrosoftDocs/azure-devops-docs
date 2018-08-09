@@ -81,7 +81,7 @@ Open a work item and click the ![Add icon](../_img/icons/Action_Add.png) icon to
 
 Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to initiate a link and define a new work item at the same time. For details, see [Add link to work items](../backlogs/add-link.md).
 
-<img src="../customize/reference/_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 2px solid #C3C3C3;" />
+<img src="../../reference/xml/_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 2px solid #C3C3C3;" />
 
 From the **Related Work** or **Links** tab, you can also perform these actions: 
 
@@ -183,11 +183,11 @@ The link types used to construct these links&mdash;as illustrated in the followi
 
 <img src="../backlogs/_img/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
 
-To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../customize/reference/linkscontroloptions-xml-elements.md#development-links-control). 
+To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
  
 ::: moniker-end
 
-You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../customize/process/new-work-item-experience.md). 
+You can add a link from the work item to the supported artifacts using the method [described earlier for linking work items](#link-work-items). However, an easier method is to add the work item ID to a commit, pull request, changeset, or other supported Git or TFVC operation at the time you create those items. Also, you can link work items from the Development section within the [new work item form](../../reference/process/new-work-item-experience.md). 
 
 ::: moniker range=">= tfs-2017"
 
@@ -266,7 +266,7 @@ For query examples, see [Link and attachment queries](linking-attachments.md).
 <a id="link-type-guidance"></a>
 ## Link type descriptions and guidance 
  
-Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following table to choose which link type to use based on the types of queries and reports you'll want to create. To learn more about link type restrictions and topologies, see [LinksControlOptions elements](../customize/reference/link-type-element-reference.md#topology).
+Link types you use to link work items are subject to certain restrictions based on their topology. Use the guidance provided in the following table to choose which link type to use based on the types of queries and reports you'll want to create. To learn more about link type restrictions and topologies, see [LinksControlOptions elements](../../reference/xml/link-type-element-reference.md#topology).
 
 
 <table>
@@ -399,8 +399,8 @@ You can view related work items and object within a work item form by installing
 
 You can create custom link types; export and import definitions of link types; and delete, activate, deactivate, and reactivate types of links. See the following topics:  
 
-- [Link type element reference](../customize/reference/link-type-element-reference.md) 
-- [Manage link types (witadmin)](../customize/reference/witadmin/manage-link-types.md) 
+- [Link type element reference](../../reference/xml/link-type-element-reference.md) 
+- [Manage link types (witadmin)](../../reference/witadmin/manage-link-types.md) 
 
 ::: moniker-end
 

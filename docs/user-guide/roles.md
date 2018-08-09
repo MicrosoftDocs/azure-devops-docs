@@ -102,7 +102,7 @@ Responsible for project level settings, including:
 
 - [Area paths](../organizations/settings/set-area-paths.md) and [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)
 - [Project permissions and repository security](../organizations/security/permissions.md)
-- [Customize work tracking objects (TFS only)](../work/customize/customize-work.md) 
+- [Customize work tracking objects (TFS only)](../reference/customize-work.md) 
 - [Build agents, pools, and service connections](../pipelines/overview.md) 
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
  

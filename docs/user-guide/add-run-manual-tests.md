@@ -27,7 +27,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your VSTS organization and click the **Work** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your VSTS organization and select the **Work** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
 	The URL follows this pattern: ```https://{organization name}.visualstudio.com/{project name}/_backlogs```  
 
@@ -88,7 +88,7 @@ See [Create manual tests](../test/create-test-cases.md) to learn more about defi
 
 	To learn more about test plans and test suites, see [Plan your tests](../test/create-a-test-plan.md).  
 
-2. If you have a number of tests to add, simply keep entering each title and choose Enter. 
+2. If you have a number of tests to add, simply keep entering each title and select **Enter** on your keyboard. 
 
 	<img src="../work/kanban/_img/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" style="border: 2px solid #C3C3C3;" />   
 

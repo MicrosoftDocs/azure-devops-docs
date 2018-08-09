@@ -42,22 +42,22 @@ Team administrators can choose which backlog levels are active for a team. For e
 Also, they can choose whether bugs are treated similar to user stories and requirements or as tasks. 
 
 For details, see these topics: 
-- [Select backlog levels for your team](../../work/customize/select-backlog-navigation-levels.md)
-- [Set your team's preferences for tracking bugs](../../work/customize/show-bugs-on-backlog.md).
+- [Select backlog levels for your team](select-backlog-navigation-levels.md)
+- [Set your team's preferences for tracking bugs](show-bugs-on-backlog.md).
 
 ## Customize  Kanban boards 
 	
 Team administrators can fully customize the team's Kanban boards associate with the product and portfolio backlogs. This includes the following elements:
-	* [Cards: Fields](../../work/customize/customize-cards.md#kanban-board)  
-	* [Cards: Styles](../../work/customize/customize-cards.md#style-rule)  
-	* [Cards: Tag colors](../../work/customize/customize-cards.md#color-tags)  
-	* [Cards: Annotations](../../work/customize/customize-cards.md#annotations)  
-	* [Cards: Tests](../../work/customize/customize-cards.md#tests)  
+	* [Cards: Fields](../../boards/boards/customize-cards.md#kanban-board)  
+	* [Cards: Styles](../../boards/boards/customize-cards.md#style-rule)  
+	* [Cards: Tag colors](../../boards/boards/customize-cards.md#color-tags)  
+	* [Cards: Annotations](../../boards/boards/customize-cards.md#annotations)  
+	* [Cards: Tests](../../boards/boards/customize-cards.md#tests)  
 	* [Board: Columns](../../work/kanban/add-columns.md)  
 	* [Board: WIP limits](../../work/kanban/wip-limits.md)    
 	* [Board: Split columns](../../work/kanban/split-columns.md)   
 	* [Board: Swimlanes](../../work/kanban/expedite-work.md)  
-	* [Board: Card reordering](../../work/customize/reorder-cards.md)  
+	* [Board: Card reordering](../../boards/boards/reorder-cards.md)  
 	* [Board: Definition of Done](../../work/kanban/definition-of-done.md)  
 	* [Charts: Cumulative flow](../../report/dashboards/cumulative-flow.md#configure) 
 
@@ -72,7 +72,7 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ## Set working days off    	
 	
-Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Team admins can choose which days are non-working days through the team's Settings dialog. For details, see [Set working days](../../work/customize/set-working-days.md).
+Sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Team admins can choose which days are non-working days through the team's Settings dialog. For details, see [Set working days](set-working-days.md).
 
 
 ## Manage team alerts 

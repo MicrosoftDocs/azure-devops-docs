@@ -159,8 +159,8 @@ Here we've defined the start and end dates of the first 6 sprints corresponding 
 These next set of steps can be performed by a team administrator.  
 - [Add team members](../../organizations/settings/add-teams.md#add-team-members)
 - [Select sprints for the team](../../organizations/settings/../../organizations/settings/set-team-defaults.md#activate)
-- [Activate backlog levels](../customize/select-backlog-navigation-levels.md) 
-- [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md) 
+- [Activate backlog levels](../../organizations/settings/select-backlog-navigation-levels.md) 
+- [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md) 
 
 See [Configure team settings](../../organizations/settings/configure-team-settings.md) for an overview of all Agile tools and team assets.
 
@@ -171,7 +171,7 @@ With the hierarchical set of teams in place, you're well positioned to start pla
 - [Review team plans](review-team-plans.md)
 - [Add management dashboards with multi-team views](visibility-across-teams.md#add-management-dashboards-with-multi-team-views). 
 - [Work with multi-team ownership of backlog items](../backlogs/work-multi-team-ownership-backlogs.md)
-- [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md) 
+- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md) 
 - [Track capacity when working on more than one team](../scrum/set-capacity.md#track-capacity-per-team) 
 
 ## Related articles
@@ -180,9 +180,9 @@ With the hierarchical set of teams in place, you're well positioned to start pla
 - [Kanban](../kanban/kanban-basics.md)
 - [assign-work-sprint](../scrum/assign-work-sprint.md)
 - [Organize your backlog](../backlogs/organize-backlog.md)
-- [Customize your work tracking experience](../customize/customize-work.md)
+- [Customize your work tracking experience](../../reference/customize-work.md)
 
-If you need additional portfolio backlogs&mdash;for example, Scenarios or Initiatives&mdash;you can [add them as well](../customize/add-portfolio-backlogs.md).  
+If you need additional portfolio backlogs&mdash;for example, Scenarios or Initiatives&mdash;you can [add them as well](../../reference/add-portfolio-backlogs.md).  
 
 ### Track dependencies across teams 
 

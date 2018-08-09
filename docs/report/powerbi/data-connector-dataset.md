@@ -76,7 +76,7 @@ You can select the following Analytics-based fields in an Analytics view:
 > | Tags | Semicolon delimited list of Tags | 
 > | WorkItemRevisionSK | The Analytics unique key for the work item revision, used to join related entities | 
 
-For information about state categories, see [Workflow states and state categories](../../work/customize/workflow-and-state-categories.md). For more detailed information on the Analytics service data model, see [Data model for the Analytics Service](../extend-analytics/data-model-analytics-service.md). 
+For information about state categories, see [Workflow states and state categories](../../work/work-items/workflow-and-state-categories.md). For more detailed information on the Analytics service data model, see [Data model for the Analytics Service](../extend-analytics/data-model-analytics-service.md). 
 
 To access any additional fields available through the [Analytics service](../extend-analytics/analytics-metadata.md), include the corresponding Surrogate Keys(SK) or Work Item Id in the Analytics view and create the necessary mapping tables based on the Analytics Navigational Property. 
 
@@ -107,7 +107,7 @@ For example, if you want to show a table of work items and values for the associ
 - [Data model for the Analytics Service](../extend-analytics/data-model-analytics-service.md)
 - [Power BI integration overview](overview.md)  
 - [Work item field index](../../work/work-items/guidance/work-item-field.md)
-- [Work item categories](../../work/customize/reference/use-categories-to-group-work-item-types.md)
+- [Work item categories](../../reference/xml/use-categories-to-group-work-item-types.md)
 - [Backlogs, boards, and plans](../../work/backlogs/backlogs-boards-plans.md)
 - [Connect to VSTS with Power BI Data Connector](./data-connector-connect.md)
 - [Data Connector - Example reports](./data-connector-examples.md)

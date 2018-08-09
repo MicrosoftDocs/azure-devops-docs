@@ -70,11 +70,11 @@ When you install any edition of Visual Studio or [Team Foundation Server Standal
 
 - **[Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)**: Use Excel to add and bulk modify work items.  
 - **[Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)**: Using Project you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
-- **[Project Professional](../work/tfs-ps-sync/synchronize-tfs-project-server.md)**: With Project Professional and the Team Foundation Server Extensions for Project Server you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information. 
+- **[Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md)**: With Project Professional and the Team Foundation Server Extensions for Project Server you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information. 
 - **[PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)**: Lets you illustrate user stories and requirements using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
 
 >[!IMPORTANT]
->Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See  [Synchronize TFS with Project Server](../work/tfs-ps-sync/sync-ps-tfs.md) for details. 
+>Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See  [Synchronize TFS with Project Server](../reference/tfs-ps-sync/sync-ps-tfs.md) for details. 
 
 ### Task-specific clients
 
@@ -157,7 +157,7 @@ You can perform many code development and administrative tasks using command lin
 - [TFSDeleteProject](/tfs/server/ref/command-line/tfsdeleteproject-cmd)
 - [TFSSecurity](/tfs/server/ref/command-line/tfssecurity-cmd)
 - [TFSServiceControl](/tfs/server/ref/command-line/tfsservicecontrol-cmd)
-- [witadmin (work item tracking)](../work/customize/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
+- [witadmin (work item tracking)](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) 
 
 
 ## Marketplace extensions
@@ -177,8 +177,8 @@ The VSTS and TFS APIs are based on REST, OAuth, Json and service hooks&mdash;all
 REST APIs are provided to support building extensions to VSTS and TFS. To learn more, see [REST API overview](https://docs.microsoft.com/rest/api/vsts/).
 
 
+## Related articles
 
-## Related notes 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
 - [Software development roles](roles.md)

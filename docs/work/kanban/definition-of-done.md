@@ -36,7 +36,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.  
 
-	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
+	![Kanban board, open common configuration settings](../../boards/boards/_img/customize-cards/open-config-dialog.png)
 
 	If you're not a team administrator, [get added as one](../../organizations/settings/add-team-administrator.md). Only team or project administrators can customize the Kanban board.
 
@@ -66,7 +66,7 @@ See these choices for further options to customize the Kanban board:
 - [Work in Progress limits](wip-limits.md)  
 - [Add swimlanes, expedite work](expedite-work.md)
 - [Split columns](split-columns.md) 
-- [Customize cards ](../customize/customize-cards.md)
+- [Customize cards ](../../boards/boards/customize-cards.md)
 
 ::: moniker-end
 

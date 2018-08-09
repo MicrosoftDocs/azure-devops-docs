@@ -129,7 +129,7 @@
   - name: Load testing FAQs
     href: load-test/reference-qa.md
   - name: Unable to connect
-    href: ../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json
+    href: ../reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json
   - name: Default permissions (Security)
     href: manual-test-permissions.md
 - name: Resources

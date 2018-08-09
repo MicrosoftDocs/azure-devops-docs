@@ -96,7 +96,7 @@ If you connect to an on-premises TFS and primarily create work items working in 
 	``` 
 
 	> [!TIP]  
-	> The URL won't contain defaults defined for the work item type. To specify a default field value, see [Add or modify a field](../customize/add-modify-field.md). Also, there's a 2000 character limit recognized by browsers. There's no work around to that limit.   
+	> The URL won't contain defaults defined for the work item type. To specify a default field value, see [Add or modify a field](../../reference/add-modify-field.md). Also, there's a 2000 character limit recognized by browsers. There's no work around to that limit.   
 
 4. Use the URL whenever you want to add a work item of the type you've defined with its predefined values. 
 

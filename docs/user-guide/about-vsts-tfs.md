@@ -154,7 +154,7 @@ For example, TFS 2013 introduced several new features which depended on new work
 changes. When you upgrade from TFS 2012 to TFS 2013, each team project collection gets new versions of each of the
 "in the box" process templates which include these changes. However, these changes are not automatically incorporated
 in existing team projects. Instead, after you finish upgrading you have to include them in each team project by using
-the [Configure Features](../work/customize/configure-features-after-upgrade.md)
+the [Configure Features](../reference/configure-features-after-upgrade.md)
 wizard or a more manual process.
 
 To avoid these issues in VSTS, custom process templates and **witadmin.exe** have always been disabled (only export functions are enabled). This has 
@@ -167,17 +167,17 @@ VSTS Web UI. If you want to customize your processes programmatically, you can a
 through REST endpoints. When you customize team projects in this way, those projects will continue to update
 automatically when we release new versions of their base processes with VSTS updgrades. 
 
-To learn more, see [Customize your work tracking experience](../work/customize/customize-work.md).
+To learn more, see [Customize your work tracking experience](../reference/customize-work.md).
 
 Over time we will support more and more types of process customizations with this new approach. If you need
 process customization features which are not yet available and cannot wait for them, a second option for process
 customization in VSTS is available, referred to as **Hosted XML** process model, and in private preview and by request only. 
 
 With this option, you 
-[import customized process templates](../work/customize/import-process/import-process.md).
+[import customized process templates](../organizations/settings/work/import-process/import-process.md).
 This option is quite similar to using custom process templates in TFS, except that:
 
-* [Restrictions](../work/customize/import-process/import-process.md) exist in the customizations 
+* [Restrictions](../organizations/settings/work/import-process/import-process.md) exist in the customizations 
 that can be imported into VSTS. 
 
 * Process templates are associated with all team projects created from them, and changes made to the process are reflected 

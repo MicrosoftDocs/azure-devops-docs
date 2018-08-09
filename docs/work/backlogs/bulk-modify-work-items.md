@@ -262,7 +262,7 @@ Bulk update of work items to add or remove tags from the web portal requires TFS
 
 ## Related articles
 
-To add fields or customize a work item form, see [Customize your work tracking experience](../customize/customize-work.md). The method you use depends on the process model that supports your project.  
+To add fields or customize a work item form, see [Customize your work tracking experience](../../reference/customize-work.md). The method you use depends on the process model that supports your project.  
 
  
 ### Migrate or change a large number of work items 

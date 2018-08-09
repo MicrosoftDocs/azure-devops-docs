@@ -30,14 +30,14 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker range="vsts"
 > [!NOTE]    
->If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work flow](../customize/customize-work.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+>If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Customize your work flow](../../reference/customize-work.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]    
->If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Add or modify a work item type](../customize/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
+>If you're looking at how to add columns to a task board, you need to customize the workflow. For details, see [Add or modify a work item type](../../reference/add-modify-wit.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   
 >
 >For an overview of the features supported on each backlog and board, see [Backlog, board, and plan views](../backlogs/backlogs-boards-plans.md).
 ::: moniker-end
@@ -97,7 +97,7 @@ To keep teams working on the highest priority items, you'll want to react quickl
 
 Now that you've got the essentials of how to work with your Kanban board, here's how you get it to look like what you need it to.
 
-You'll see different column titles and choices based on the [Process](../work-items/guidance/choose-process.md) you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).
+You'll see different column titles and choices based on the [Process](../work-items/guidance/choose-process.md) you used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).
   
 First, open the Kanban portal for your project. Click the **Board** link from the **Work>Backlogs** page. 
 
@@ -135,7 +135,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 6.	[Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
 
-	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).  
+	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting, add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md), or [customize the workflow](../../organizations/settings/work/customize-process-workflow.md).  
 
 
 ::: moniker-end
@@ -145,7 +145,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns. 
 
-	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
+	![Kanban board, open common configuration settings](../../boards/boards/_img/customize-cards/open-config-dialog.png)
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns. 
 
@@ -173,14 +173,14 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 6. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs). 
 
-	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md).</p>  
+	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md).</p>  
  
 
 #### TFS 2015 
 
 0. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open Customize Columns.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
+	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.   
 
@@ -200,7 +200,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 0. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).
 
-	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md).
+	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md).
 
 
 ::: moniker-end
@@ -209,7 +209,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 <!---TFS 2013--> 
 0. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open Customize Columns.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
+	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.   
 
@@ -229,14 +229,14 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 0. [Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).
 
-	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md).
+	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md).
  
 ::: moniker-end
 
 <!---
 1. To open, click ![gear icon](../_img/icons/team-settings-gear-icon.png), the gear icon, to open the team settings dialog and then click Columns.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
+	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.  
 
@@ -244,7 +244,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 	
 	- You connect to VSTS, TFS 2015 Update 1, or TFS 2015  
 	- The [Process](../work-items/guidance/choose-process.md) you used to create your project  
-	- Whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md)  
+	- Whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md)  
 
 	**VSTS and TFS 2015 Update 1 options:**  
 
@@ -286,7 +286,7 @@ First, open the Kanban portal for your project. Click the **Board** link from th
 
 6.	[Change State mappings as needed](#state-mappings) for added columns, added workflow states, or added work item types (WITs).  
 
-	Usually you need to do this when you change the [Working with bugs](../customize/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../customize/add-wits-to-backlogs-and-boards.md).  
+	Usually you need to do this when you change the [Working with bugs](../../organizations/settings/show-bugs-on-backlog.md) setting or add [WITs to the Requirement Category](../../reference/add-wits-to-backlogs-and-boards.md).  
 
 -->
 
@@ -331,11 +331,11 @@ Another "under the hood" item that impacts Kanban column-to-State mappings is ca
 
 What does this mean for Kanban board users? First, only work items whose WITs belong to the Requirement Category show up on the Kanban board. Second, if you add bugs or other WITs to appear on the Kanban board, you potentially introduce additional workflow states. This means that you may need to adjust the Kanban column-to-State mappings when you perform one of these additional customizations:
 
-* Your team admin chooses to [show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
-* Your project admin [adds WITs to backlogs and boards](../customize/add-wits-to-backlogs-and-boards.md)
-* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../../organizations/settings/work/customize-process-workflow.md) or [TFS](../customize/reference/change-workflow-wit.md)  
+* Your team admin chooses to [show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
+* Your project admin [adds WITs to backlogs and boards](../../reference/add-wits-to-backlogs-and-boards.md)
+* Your project collection or project admin customizes the workflow for a WIT in the Requirement Category: [VSTS](../../organizations/settings/work/customize-process-workflow.md) or [TFS](../../reference/xml/change-workflow-wit.md)  
 
-For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. For more information, see [Workflow states and state categories](../customize/workflow-and-state-categories.md). 
+For example, if you change the team setting and add bugs to the Requirements Category, the bug WIT will now appear in the Columns dialog. You'll want to make sure that the Kanban column-to-State mappings match what you want. For more information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
 ::: moniker range=">= tfs-2017"
 
@@ -360,7 +360,7 @@ That's about all you need to know about working with Kanban columns. Here are a 
 * [Add swimlanes, expedite work](expedite-work.md)   
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
-* [Customize cards](../customize/customize-cards.md) 
+* [Customize cards](../../boards/boards/customize-cards.md) 
 * [Cumulative flow diagram](../../report/dashboards/cumulative-flow.md)  
 
 

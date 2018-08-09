@@ -102,7 +102,7 @@ Here are a few things you can do. See at a glance the estimated size of work for
 ::: moniker range="tfs-2015"
 
 > [!NOTE]  
-> You can [reorder items within a column](../customize/reorder-cards.md#reorder-cards) from TFS 2015.1 and later versions.
+> You can [reorder items within a column](../../boards/boards/reorder-cards.md#reorder-cards) from TFS 2015.1 and later versions.
 
 ::: moniker-end
 
@@ -143,9 +143,9 @@ In addition to the above chart, you can add Analytics widgets to your dashboard.
 
 Here are some useful tips when working with the Kanban board:
 - To focus on select work items, [filter your Kanban board](filter-kanban-board.md)
-- To quickly assign items to a team member, add the Assign To field to display on the cards, see [Customize cards](../customize/customize-cards.md)     
+- To quickly assign items to a team member, add the Assign To field to display on the cards, see [Customize cards](../../boards/boards/customize-cards.md)     
 - Add a swimlane to track high-priority work or track work which falls into different service level agreements, see [Swimlanes](expedite-work.md)   
-- Highlight specific work items by color coding cards based on a field value or tag, (see [Customize cards](../customize/customize-cards.md)) 
+- Highlight specific work items by color coding cards based on a field value or tag, (see [Customize cards](../../boards/boards/customize-cards.md)) 
 - If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.  
 
 
@@ -154,7 +154,7 @@ Here are some useful tips when working with the Kanban board:
 Each team can manage their backlog and customize their Kanban board. [Add teams](../../organizations/settings/add-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 
 
 
-If you're new to tracking work with Agile tools and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
+If you're new to tracking work with Agile tools and want to understand what you can customize, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 ::: moniker range=">= tfs-2017"
 [!INCLUDE [temp](../_shared/live-updates.md)]  

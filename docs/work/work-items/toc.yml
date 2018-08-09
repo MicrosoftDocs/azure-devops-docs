@@ -96,9 +96,9 @@
   - name: "Link types & relationships"
     href: ../track/link-work-items-support-traceability.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json toc.json  
   - name: "Workflow states & categories"
-    href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/work-items/breadcrumb/toc.json  
+    href: workflow-and-state-categories.md
   - name: New work item experience
-    href: ../customize/process/new-work-item-experience.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
+    href: ../../reference/process/new-work-item-experience.md?toc=/vsts/work/work-items/toc.json&bc=/vsts/work/breadcrumb/toc.json 
 - name: Samples
   items:
   - name: Query by title or ID
@@ -169,6 +169,6 @@
   - name: Queries
     href: ../track/index.md
   - name: Customization
-    href: ../customize/index.md
+    href: ../../reference/index.md
   - name: What is Agile?
     href: /azure/devops/agile/what-is-agile
