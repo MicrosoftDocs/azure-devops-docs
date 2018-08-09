@@ -23,10 +23,10 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 <br/>
 **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>
 <br/>
-**Ctrl+**![Up arrow](/vsts/work/_img/icons/Arrow_Up.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
-**Ctrl+**![Down arrow](/vsts/work/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
-**Ctrl+**![Left arrow](/vsts/work/_img/icons/Arrow_Next.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
-**Ctrl+**![right arrow](/vsts/work/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/>  
+**Ctrl+**![Up arrow](/vsts/boards/_img/icons/Arrow_Up.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
+**Ctrl+**![Down arrow](/vsts/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
+**Ctrl+**![Left arrow](/vsts/boards/_img/icons/Arrow_Next.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
+**Ctrl+**![right arrow](/vsts/boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/>  
 <br/>
 **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to top of column<br/>
 **Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to bottom of column<br/>

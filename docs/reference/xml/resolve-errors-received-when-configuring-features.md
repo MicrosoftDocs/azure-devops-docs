@@ -40,11 +40,11 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 ###  <a name="process_template"></a> Resolve errors by modifying a process template  
  You modify a process template by performing these steps:  
   
-1.  Download the process template from Team Foundation Server. See [Download the latest process template](../../work/work-items/guidance/manage-process-templates.md).  
+1.  Download the process template from Team Foundation Server. See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
 2.  Modify a definition file for a work item type (WIT), categories, or process configuration. See [Customize your work tracking experience](../customize-work.md).  
   
-3.  Upload the process template to Team Foundation Server. See [Upload, download, and delete process templates](../../work/work-items/guidance/manage-process-templates.md).  
+3.  Upload the process template to Team Foundation Server. See [Upload, download, and delete process templates](../../boards/work-items/guidance/manage-process-templates.md).  
   
  See also [Update a customized process template to access new features](../update-customized-process-template.md).  
   
@@ -94,14 +94,14 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   
 -   [Export and import work item types](../witadmin/witadmin-import-export-manage-wits.md)    
 -   [Change the workflow](change-workflow-wit.md)    
--   [Download the latest process template](../../work/work-items/guidance/manage-process-templates.md)   
+-   [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md)   
 -   [Support bug update status using My Work](support-bug-update-status-using-my-work.md)  
   
 ###  <a name="storyboard"></a> Add the Storyboard links control tab  
- With the addition of [Storyboarding](../../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md), you can now link work items to storyboards. To do this, you add the **Storyboard** links control tab to the definition of the WIT. If the Configure Features wizard didn't or wasn't able to add the tab, then you can add it manually. In the latest versions of the process templates installed on the upgraded TFS, the **Storyboard** links control tab appears on all backlog WITs, such as Product Backlog, User Story, and Requirement.  
+ With the addition of [Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md), you can now link work items to storyboards. To do this, you add the **Storyboard** links control tab to the definition of the WIT. If the Configure Features wizard didn't or wasn't able to add the tab, then you can add it manually. In the latest versions of the process templates installed on the upgraded TFS, the **Storyboard** links control tab appears on all backlog WITs, such as Product Backlog, User Story, and Requirement.  
   
 > [!NOTE]  
-> The Configure Features wizard cannot add the **Storyboard** links control tab if the `TabGroup` element is missing from the work item `FORM` section. The following procedure adds just the **Storyboard** tab. If you want to add the standard set of tabs for your backlog WIT, see the type definition in the latest version of the process template for your project. See [Download the latest process template](../../work/work-items/guidance/manage-process-templates.md).  
+> The Configure Features wizard cannot add the **Storyboard** links control tab if the `TabGroup` element is missing from the work item `FORM` section. The following procedure adds just the **Storyboard** tab. If you want to add the standard set of tabs for your backlog WIT, see the type definition in the latest version of the process template for your project. See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
   

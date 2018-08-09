@@ -186,7 +186,7 @@ When you add a link control to a work item form, you can specify filters that re
 </LinkColumns>  
 ```  
   
- The order in which the elements are listed defines the order in which the column fields are displayed in the work item form. For a list of reference names and link attributes, see [Work item field index](../../work/work-items/guidance/work-item-field.md). The following syntax defines the display of four columns: ID, State, Title, and the link attribute Comment.  
+ The order in which the elements are listed defines the order in which the column fields are displayed in the work item form. For a list of reference names and link attributes, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). The following syntax defines the display of four columns: ID, State, Title, and the link attribute Comment.  
   
 ```  
 <Control Type="LinksControl">  
@@ -204,5 +204,5 @@ When you add a link control to a work item form, you can specify filters that re
 ```    
   
 ## Related articles 
--  [Link controls, restrictions, and fields](../../work/track/linking-attachments.md)   
+-  [Link controls, restrictions, and fields](../../boards/queries/linking-attachments.md)   
 -  [LinksControlOptions XML element reference](linkscontroloptions-xml-elements.md)    

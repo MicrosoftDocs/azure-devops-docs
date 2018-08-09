@@ -22,7 +22,7 @@ You use different link types to form link relationships between different work i
   
 Each link type defines the link labels, topology type, and restrictions that are used when links between work items are constructed. For example, the parent-child link type defines two labels (Parent and Child), supports a hierarchical or tree topology, and prevents circular references from being created between work items.  
   
-You can customize an existing link type or create a link type to meet your project tracking requirements. Before you start to add or modify a link type, you should assess the link types available and how they are used in your project. See [Manage dependencies, link work items](../../work/track/link-work-items-support-traceability.md). Links are added through the work item form, which contains the links control. See [Link controls, restrictions, and fields](../../work/track/linking-attachments.md).  
+You can customize an existing link type or create a link type to meet your project tracking requirements. Before you start to add or modify a link type, you should assess the link types available and how they are used in your project. See [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md). Links are added through the work item form, which contains the links control. See [Link controls, restrictions, and fields](../../boards/queries/linking-attachments.md).  
 
 > [!NOTE]  
 >  You cannot customize the system-defined link types that correspond to the Related, Parent-Child, and Successor-Predecessor links.  
@@ -122,7 +122,7 @@ Link category: System-defined</p>
 System.LinkTypes.Hierarchy-Reverse</p>
 <p>Topology type: Tree<br/>
 Link category: System-defined</p></td>
-<td>Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the [mapping function](../../work/backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../../work/scrum//assign-work-sprint.md) or [task board](../../work/scrum//task-board.md).  
+<td>Use to organize work item within a hierarchy. You can quickly create this hierarchy among backlog items using the [mapping function](../../boards/backlogs/organize-backlog.md) or among backlog items and tasks using the [sprint backlog](../../boards/sprints//assign-work-sprint.md) or [task board](../../boards/sprints//task-board.md).  
 </td>
 </tr>
 
@@ -251,7 +251,7 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Storyboard</td>
-<td>Used to link a work item to a file on a network. See [Storyboard your ideas using PowerPoint](../../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard) for details.  </td>
+<td>Used to link a work item to a file on a network. See [Storyboard your ideas using PowerPoint](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard) for details.  </td>
 </tr>
 
 <tr>
@@ -303,7 +303,7 @@ The topology types described in the following table determine the restrictions p
 
 <tr>
 <td><p>**Tree**: You can use tree links to create hierarchical relationships among work items. Tree links support multi-level hierarchical views, have directionality, and restrict circular relationships. The link name is different at the end points. Tree links are the only type of link that is supported by the **Tree of Work Items** query. With Parent/Child links, you can't assign two parents to a child.</p>
-<p>**Example usage**: Use a tree link to record tasks and subtasks from your team that must be completed to deliver a user story or backlog item. Or, [map backlog items to features, and features to epics](../../work/backlogs/organize-backlog.md). </p></td>
+<p>**Example usage**: Use a tree link to record tasks and subtasks from your team that must be completed to deliver a user story or backlog item. Or, [map backlog items to features, and features to epics](../../boards/backlogs/organize-backlog.md). </p></td>
 <td>![Tree topology](_img/IC268538.png)</td>
 </tr>
 
@@ -337,7 +337,7 @@ When you create or update a project, the link type definitions defined for the r
 In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](define-link-controls.md).  
 
 ## Related articles  
--  [Link work items to track dependencies](../../work/track/link-work-items-support-traceability.md)    
+-  [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)    
 -  [Customizing your work tracking experience](../customize-work.md)
 
 To programmatically interact with link types, see [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact%20link%20types/list).

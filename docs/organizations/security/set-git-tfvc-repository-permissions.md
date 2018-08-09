@@ -108,7 +108,7 @@ You can set the permissions for all Git repositories for a team project, or for 
 
 # [Previous navigation](#tab/previous-nav)
 
-0. From the web portal, open the admin context by choosing the ![](../../work/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
+0. From the web portal, open the admin context by choosing the ![](../../boards/_img/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
 
 1. Choose the TFVC repository for the project and then choose the security group whose permissions you want to manage.   
 

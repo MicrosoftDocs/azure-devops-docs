@@ -61,7 +61,7 @@ In the workitems plug-in file, you can assign permissions that control access to
 ```  
   
 > [!NOTE]  
->  After the project is created, you can set permissions by right-clicking a query folder or query. For details, see [Set permissions on queries](../../work/track/set-query-permissions.md).  
+>  After the project is created, you can set permissions by right-clicking a query folder or query. For details, see [Set permissions on queries](../../boards/queries/set-query-permissions.md).  
   
   
 <a name="VersionControl"></a> 

@@ -19,14 +19,14 @@ ms.date: 07/21/2018
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
  
 This glossary describes terms used when navigating in the web portal for  Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  See also: 
-- [Agile glossary](../../work/work-items/agile-glossary.md) 
+- [Agile glossary](../../boards/work-items/agile-glossary.md) 
 - [Security glossary](../../organizations/security/security-glossary.md)  
 
 
 ## Backlogs 
 An interactive list of work items that corresponds to a team's project plan or roadmap for what the team plans to deliver. The product backlog supports prioritizing work, forecasting work by sprints, and quickly linking work to portfolio backlog items. You can define your backlog items and then manage their status using the Kanban board. 
 
-Each product backlog can be customized by a team. Learn more: [Create your backlog](../../work/backlogs/create-your-backlog.md).   
+Each product backlog can be customized by a team. Learn more: [Create your backlog](../../boards/backlogs/create-your-backlog.md).   
 
 ::: moniker range="vsts" 
 ## Analytics views
@@ -36,7 +36,7 @@ Analytics views provide a simplified way to specify the filter criteria for a Po
 [!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
 
 ## Boards (Kanban) 
-An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../../work/kanban/kanban-basics.md).
+An interactive, electronic sign board that supports visualization of the flow of work from concept to completion and lean methods. Learn more: [Kanban basics](../../boards/boards/kanban-basics.md).
 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/dashboards.md)] 
@@ -81,7 +81,7 @@ A source control folder or container you configure to help you track file change
 [!INCLUDE [temp](../../_shared/glossary-terms/sprints.md)] 
 
 ## Sprint backlog 
-An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../../work/scrum/assign-work-sprint.md).  
+An interactive list of work items that have been assigned to the same sprint or iteration path for a team. The sprint backlog supports teams that use Scrum methodologies. Learn more: [Sprint planning](../../boards/sprints/assign-work-sprint.md).  
 
  
 [!INCLUDE [temp](../../_shared/glossary-terms/taskboard.md)] 

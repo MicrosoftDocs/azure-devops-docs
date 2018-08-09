@@ -32,7 +32,7 @@ You can manage the fields defined for work item types (WITs) that are defined fo
   
 [!INCLUDE [temp](../../_shared/witadmin-run-tool.md)] 
   
-For an overview of the fields defined within a default process template, see [Work item field index](../../work/work-items/guidance/work-item-field.md).  
+For an overview of the fields defined within a default process template, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
   
 [!INCLUDE [temp](../../_shared/process-editor.md)]
 
@@ -86,7 +86,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
 ### Synchronizing person names with Active Directory  
  You must manually enable synchronization of any custom work item fields that are used to assign person names that reference Active Directory. You must enable synchronization for each field for each project collection that contains the custom fields.  
   
- All system reference fields that show person-names have the attribute `syncnamechanges` set to `true`. Such fields include System.AuthorizedAs, System.AssignedTo, System.ChangedBy and System.CreatedBy.  Synchronization in enabled for each person name field that is defined in one of the default process templates. For more information, see [Assignments and workflow fields](../../work/track/query-by-workflow-changes.md).  
+ All system reference fields that show person-names have the attribute `syncnamechanges` set to `true`. Such fields include System.AuthorizedAs, System.AssignedTo, System.ChangedBy and System.CreatedBy.  Synchronization in enabled for each person name field that is defined in one of the default process templates. For more information, see [Assignments and workflow fields](../../boards/queries/query-by-workflow-changes.md).  
   
  After synchronization is enabled, the field no longer shows a static string. Instead, the field shows the name associated with a user account. When you change the user name in Active Directory or in Workgroup, a field with `syncnamechanges` set to `true` automatically shows the new name.  
   
@@ -134,7 +134,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
     Indexed: False  
     ```  
   
-     The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](../../work/work-items/guidance/work-item-field.md).  
+     The **Use** parameter indicates the name of each project and the work item type where the field is used. For more information about field attributes, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
   
 ### List all fields in a project collection  
   
@@ -144,7 +144,7 @@ witadmin listfields /collection:CollectionURL /n:RefName [/unused]
     witadmin listfields /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection  
     ```  
   
-     Field information for all the fields for the named project collection appears. See [Index of work item fields](../../work/work-items/guidance/work-item-field.md).  
+     Field information for all the fields for the named project collection appears. See [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
   
 ### List fields that are not being used  
   
@@ -333,6 +333,6 @@ Enter **y** at the confirmation prompt to complete this step.
 ## Related articles 
  
 -  [Customizing your work tracking experience](../customize-work.md)   
--  [Work item field index](../../work/work-items/guidance/work-item-field.md)   
+-  [Work item field index](../../boards/work-items/guidance/work-item-field.md)   
 -  [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)
   

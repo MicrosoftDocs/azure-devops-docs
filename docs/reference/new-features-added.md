@@ -94,7 +94,7 @@ TFS 2012
 Planning Tools
 </td>
 <td>
-Adds or updates process configuration that supports using the Agile tools: [product backlog](../work/backlogs/create-your-backlog.md), [plan sprints](../work/scrum//assign-work-sprint.md), [Kanban board](../work/kanban/kanban-basics.md), and [more](../work/scrum//define-sprints.md).<br/>
+Adds or updates process configuration that supports using the Agile tools: [product backlog](../boards/backlogs/create-your-backlog.md), [plan sprints](../boards/sprints//assign-work-sprint.md), [Kanban board](../boards/boards/kanban-basics.md), and [more](../boards/sprints//define-sprints.md).<br/>
 
 Agile tools depend on the WITs, categories, and process configuration definitions that are made.  Definitions are interdependent. <br/>
 
@@ -110,7 +110,7 @@ TFS 2012
 Storyboarding
 </td>
 <td>
-Adds the Storyboards control and tab to requirement WIT for the project--such as Product backlog item for Scrum, User Story for Agile, and Requirement for CMMI. The Storyboards control [supports linking storyboards to the work item as well as launching the Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md). <br/>
+Adds the Storyboards control and tab to requirement WIT for the project--such as Product backlog item for Scrum, User Story for Agile, and Requirement for CMMI. The Storyboards control [supports linking storyboards to the work item as well as launching the Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md). <br/>
 To manually add the tab to a WIT, see [Add features manually](add-features-manually.md). 
 </td>
 <td>

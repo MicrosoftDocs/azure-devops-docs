@@ -44,7 +44,7 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
 ### Configuration dialog 
 1. If you haven't yet added the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics), do that now. 
 
-2. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../work/kanban/add-columns.md) and [swimlanes](../../work/kanban/expedite-work.md) that support your workflow processes.  
+2. (Optional) If you haven't yet configured your team's Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 
 3. If you haven't yet [added the widgets to your dashboard](../add-widget-to-dashboard.md), do that now.  
 
@@ -62,7 +62,7 @@ In order to configure the Cycle Time and Lead Time widgets, you must have the fo
    
 	<img src="_img/cycle-lead-time-lt-sample-chart.png" alt="Example CFD chart, rolling 30 days" style="border: 2px solid #C3C3C3;" /> 
 
-	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../work/kanban/kanban-basics.md#track-work) in a timely manner those work items that the widgets track.  
+	For your lead/cycle time charts to provide useful data, your team must [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track.  
 
 
 ## Interpret the scatter-plot control charts 
@@ -106,17 +106,17 @@ The standard deviation appears as a band that encompasses the moving average. St
 
 We recommend your team review the lead/cycle time charts before or during each retrospective. Use lead time to help estimate delivery times and track service level agreements (SLAs). Use cycle time to identify potential process issues, spot variations in trends, and help with planning.   
 
-- [Kanban basics](../../work/kanban/kanban-basics.md)  
+- [Kanban basics](../../boards/boards/kanban-basics.md)  
 - [Cumulative flow diagram](cumulative-flow.md)
-- [Workflow states and state categories](../../work/work-items/workflow-and-state-categories.md)
-- [Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), and [CMMI](../../work/work-items/guidance/cmmi-process.md) processes
+- [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md)
+- [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes
 
  
 <!---
 ## Team activities to generate useful data 
     
-- Define backlog items that the widgets will track (see [Create your backlog](../../work/backlogs/create-your-backlog.md))
-- [Update the status](../../work/kanban/kanban-basics.md#track-work) in a timely manner those work items that the widgets track 
+- Define backlog items that the widgets will track (see [Create your backlog](../../boards/backlogs/create-your-backlog.md))
+- [Update the status](../../boards/boards/kanban-basics.md#track-work) in a timely manner those work items that the widgets track 
 	- The lead time timer begins when the work item is created, which corresponds to the proposed state category (New, Approved, Proposed) and the work item is only presented on the chart when it is in the closed state  
 	- The cycle time timer begins when the work item first enters an In-Progress state category (Active, Committed, Resolved)
 	- For both charts, a work item will only contribute to calculations if it was assigned to a Completed state category (Closed or Done) within the time period shown in the chart.        
@@ -124,13 +124,13 @@ We recommend your team review the lead/cycle time charts before or during each r
 
 ### Lead time versus cycle time   
 
-Your team can use the lead time and cycle time control charts whether they follow Scrum, Kanban, or other methods or the project is based on the [Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md) processes. 
+Your team can use the lead time and cycle time control charts whether they follow Scrum, Kanban, or other methods or the project is based on the [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes. 
 
 The diagram below illustrates how lead time differs from cycle time. These measures are calculated based on when work items are created (lead time), when work is started (cycle time), and when they are completed (both lead and cycle time). The system determines these times based on the workflow state, such as New, Proposed, or Approved, and the state category it is mapped to.  
 
 
 Only completed work items&mdash;ones that have entered a Done or Closed state&mdash;factor into the calculations of lead time and cycle time. If a work item is marked completed and then reenters an in progress state, then it will contribute to the lead/cycle time measures when it is marked completed for a second time.  
 
-If your team uses the Kanban board, you'll want to understand how your workflow states and custom Kanban columns map to state categories. For more information on configuring your Kanban board, see [Add columns](../../work/kanban/add-columns.md). And, to learn more about how workflow states map to state categories, see [Workflow states and state categories](../../work/work-items/workflow-and-state-categories.md).   
+If your team uses the Kanban board, you'll want to understand how your workflow states and custom Kanban columns map to state categories. For more information on configuring your Kanban board, see [Add columns](../../boards/boards/add-columns.md). And, to learn more about how workflow states map to state categories, see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
 
 -->

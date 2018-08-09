@@ -57,7 +57,7 @@ In the card shown below, the following customizations have been set for the bug 
 
 You can either increase or simplify the information that displays on your cards. It all depends on what's of interest to your team. Does your team like to refer to work items by their ID? Do they want to see estimates? Do they want to highlight work items according to set criteria? Or, will just the bare bones of title and assignment suffice? 
 
-Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and task boards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../work/kanban/kanban-basics.md) and [Sprint planning](../../work/scrum/assign-work-sprint.md). 
+Your best bet is to show fields on cards based on what your team frequently refers to or updates when using the Kanban and task boards. Also, add fields with information that you can use to filter the board. If you're new to working with these tools, see [Kanban basics](../../boards/boards/kanban-basics.md) and [Sprint planning](../../boards/sprints/assign-work-sprint.md). 
 
 
 <a id="fields"></a>
@@ -120,11 +120,11 @@ As a first step, you'll see that you can change the card display for each work i
 	::: moniker range="tfs-2015"  
 	<img src="_img/kanban-card-customize-open-settings.png" alt="Kanban board, open card customization" style="border: 1px solid #C3C3C3;" />    
 	::: moniker-end  
-	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize cards. Learn more about accessing and using your Kanban board from [Kanban basics](../../work/kanban/kanban-basics.md).  
+	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize cards. Learn more about accessing and using your Kanban board from [Kanban basics](../../boards/boards/kanban-basics.md).  
 
 0. Select the WIT you want to customize. Different WITs may present different options for customization.   
 
-	Here we choose User Story. Your choices will vary based on the [process](../../work/work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).     
+	Here we choose User Story. Your choices will vary based on the [process](../../boards/work-items/guidance/choose-process.md) used to create your project and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).     
   
     ::: moniker range=">= tfs-2017"      
     ![VSTS Kanban board, card customization dialog](_img/customize-cards/kanban-board-settings-card-fields-dialog-user-story.png)   
@@ -137,9 +137,9 @@ As a first step, you'll see that you can change the card display for each work i
 	::: moniker-end      
 0. Once you've clicked a WIT, select all the options that you want for that work item type.    
 
-	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../../work/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../work/work-items/guidance/agile-process.md)), and Size ([CMMI](../../work/work-items/guidance/cmmi-process.md)) field.
+	If you want work estimates to show, check the Show Effort, Story Points, Size, or Cost option. Cost corresponds to these fields: Effort ([Scrum](../../boards/work-items/guidance/scrum-process.md)), Story Points ([Agile](../../boards/work-items/guidance/agile-process.md)), and Size ([CMMI](../../boards/work-items/guidance/cmmi-process.md)) field.
 
-0. To add a field to a card, click ![](../../work/_img/icons/add_icon.png) add icon to select a field from the drop-down menu. 
+0. To add a field to a card, click ![](../_img/icons/add_icon.png) add icon to select a field from the drop-down menu. 
 
 	![Kanban board, Add fields to a card](_img/customize-cards/add-changed-by-field.png) 
 
@@ -150,7 +150,7 @@ As a first step, you'll see that you can change the card display for each work i
 	![Kanban board, Three fields added to a card](_img/customize-cards/three-fields-added.png)
 
 	> [!TIP]    
-	> You can edit a value in a field you add to a card, unless it's a read-only field, such as the Change By and Changed Date fields. You can also customize the cards that appear on the Kanban board for features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../../work/backlogs/define-features-epics.md).  
+	> You can edit a value in a field you add to a card, unless it's a read-only field, such as the Change By and Changed Date fields. You can also customize the cards that appear on the Kanban board for features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../../boards/backlogs/define-features-epics.md).  
 	
 <a id="task-board">  </a>
 ## Change how cards display on the task board
@@ -188,7 +188,7 @@ You change the way cards display on the task board the same way you change the K
 	Requires TFS 2015.1 or later version.  
 	::: moniker-end  
 	Follow these rules when creating and ordering your style rules:
-	- The criteria you specify works in a similar fashion as when [constructing a query](../../work/track/using-queries.md) 
+	- The criteria you specify works in a similar fashion as when [constructing a query](../../boards/queries/using-queries.md) 
 	- All clauses are considered AND clauses, grouping clauses isn't supported  
 	- Card rules apply to all work items that meet the rule criteria  
 	- Rule color applies to work items based on the order in which rules are listed. If you add more than one style rule, make sure that you move them in the order of most importance. Simply drag them into the order you want them applied.  
@@ -203,7 +203,7 @@ You change the way cards display on the task board the same way you change the K
 <a id="color-tags">  </a>
 ## Add color to your tags  
 
-1.	Prior to setting tag colors, first [add tags to backlog items](../../work/track/add-tags-to-work-items.md) that you want to highlight with color.  
+1.	Prior to setting tag colors, first [add tags to backlog items](../../boards/queries/add-tags-to-work-items.md) that you want to highlight with color.  
 
 2.	To add color to Kanban cards, open Tag colors and select a tag and the color you want it to display.  
 
@@ -228,7 +228,7 @@ As shown in the following examples, the Task and Test annotations indicate that 
 > |-------------|----------|----------|    
 > |<img src="_img/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #C3C3C3;" /> | <img src="_img/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #C3C3C3;" />  | <img src="_img/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #C3C3C3;" /> | 
 
-To learn more about using these features, see [Add task checklists](../../work/kanban/add-task-checklists.md) and [Add, run, and update inline tests](../../work/kanban/add-run-update-tests.md).  
+To learn more about using these features, see [Add task checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
 
 ::: moniker-end
  
@@ -277,9 +277,9 @@ From a card on the Kanban board, you can easily navigate to the underlying test 
 ## Related articles
 That's all there is to card customization. See these choices for further options to customize the Kanban and task board:
 
-*	[Add, rename, move, and delete columns](../../work/kanban/add-columns.md)
+*	[Add, rename, move, and delete columns](../../boards/boards/add-columns.md)
 *	[Card reordering](reorder-cards.md)  
-*	[Split columns](../../work/kanban/split-columns.md)  
-*	[Expedite work](../../work/kanban/expedite-work.md)  
+*	[Split columns](../../boards/boards/split-columns.md)  
+*	[Expedite work](../../boards/boards/expedite-work.md)  
 *	[Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 

@@ -17,7 +17,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-Your project contains 100 or more data fields, based on the process&#151;[Agile](../work/work-items/guidance/agile-process.md), [Scrum](../work/work-items/guidance/scrum-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md)&#151;used to create the project. You update data by [modifying the data field within a work item](../work/backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
+Your project contains 100 or more data fields, based on the process&#151;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&#151;used to create the project. You update data by [modifying the data field within a work item](../boards/backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
 You can modify an existing field or add a custom field to support tracking additional data requirements. For example, you can customize the pick list within a drop-down menu, add a rule to specify a default value or restrict the value it can take, or change a field attribute.  
 
@@ -39,7 +39,7 @@ You use work item fields to track data for a work item type and to define the fi
 
 Work item fields are maintained for a project collection. You add fields when you perform one of the following tasks:
 
--   **Create a project**. All fields that are defined within the definitions for work item types or global workflow and that are defined for the selected process template are created. The core system fields are automatically defined for every work item type that is defined for a project. For a list of these fields, see [Work item field index](../work/work-items/guidance/work-item-field.md).
+-   **Create a project**. All fields that are defined within the definitions for work item types or global workflow and that are defined for the selected process template are created. The core system fields are automatically defined for every work item type that is defined for a project. For a list of these fields, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
 
 -   **Import a WIT definition**. All new fields that are defined within the definition for a type of work item are added to the collection. For more information, see [All WITD XML elements reference](xml/all-witd-xml-elements-reference.md).
 
@@ -67,7 +67,7 @@ To add rules or add a custom field, export, edit, and then import the WIT defini
 
 [!INCLUDE [temp](../_shared/process-editor.md)]  
 
-Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../work/work-items/guidance/work-item-field.md).
+Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 <a id="boolean-field">  </a>
@@ -333,7 +333,7 @@ To get added as an administrator, [Add administrators](../organizations/security
 <a id="list-fields"></a> 
 ### List or review fields  
 
-To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](../work/work-items/guidance/work-item-field.md).  
+To list or review fields, you can use one of the following tools, depending on the process model&mdash;Inheritance, Hosted XML, or On-premises XML&mdash;you use. For an index of fields defined within the default processes, see [Work item field index](../boards/work-items/guidance/work-item-field.md).  
 
 <table>
 <tr valign="bottom">
@@ -403,7 +403,7 @@ For example, you can add the **Found In** and **Integrated in Build** fields tha
 </FIELD>
 ```
 
-For more information, see [Query based on build and test integration fields](../work/track/build-test-integration.md).
+For more information, see [Query based on build and test integration fields](../boards/queries/build-test-integration.md).
 
 ### Field names and reporting
 

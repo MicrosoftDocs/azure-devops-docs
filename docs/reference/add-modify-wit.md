@@ -16,7 +16,7 @@ ms.date: 02/02/2017
 
 [!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
-Your project contains 14 or more work item types (WITs), based on the process&mdash;[Agile](../work/work-items/guidance/agile-process.md), [Scrum](../work/work-items/guidance/scrum-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md)&mdash;used to create the project. A WIT is the object you use to [track different types of work](../work/backlogs/add-work-items.md).  
+Your project contains 14 or more work item types (WITs), based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. A WIT is the object you use to [track different types of work](../boards/backlogs/add-work-items.md).  
 
 You can modify an existing WIT or add a custom WIT based on your team's tracking requirements or workflow processes. The most common reasons to modify a WIT are to add or modify the set of fields or field rules, change the workflow, or customize the work item form.   
 
@@ -48,7 +48,7 @@ The easiest way to add a new WIT is to copy an existing WIT and then modify the 
 <a id="modify-field">  </a>
 ## Add or modify a field, field rule, label, or empty text  
 
-Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../work/work-items/guidance/work-item-field.md).
+Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
 
 You add fields and field rules to the **FIELDS** section. For the field to appear on the work item form, you must also add it to the **FORM** section of the WIT definition.
 
@@ -63,7 +63,7 @@ To learn more about defining fields, see [Add or modify a field](add-modify-fiel
 
 **STATES**  and **REASONS** sections within the **WORKFLOW** specify the pick list values in the **State** and **Reason** fields. They track the status of work items. The **TRANSITIONS** section specifies the valid transitions between states, as shown in the following illustration. You specify both forward and regressive transitions.
 
-![Example workflow state diagram, Agile user story](../work/work-items/guidance/_img/ALM_PT_Agile_WF_UserStory.png)
+![Example workflow state diagram, Agile user story](../boards/work-items/guidance/_img/ALM_PT_Agile_WF_UserStory.png)
 
 You change the workflow to accomplish the following objectives:
 
@@ -226,7 +226,7 @@ To rename an existing WIT use **witadmin renamewitd**. For example, you can rena
 witadmin renamewitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"QoS Item" /new:"Service Agreement"
 ```
 
-When you rename a WIT that belongs to a category, you have to update the categories definition for the project to reflect the new name. In particular, the [backlogs and boards](../work/backlogs/backlogs-boards-plans.md) will not work until you update the categories definition.
+When you rename a WIT that belongs to a category, you have to update the categories definition for the project to reflect the new name. In particular, the [backlogs and boards](../boards/backlogs/backlogs-boards-plans.md) will not work until you update the categories definition.
 
 For more information, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md) and [Import and export categories](witadmin/witadmin-import-export-categories.md).
 
@@ -248,7 +248,7 @@ If you have a WIT that you want to retire, but maintain the work items that have
 ```
 If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:
 
--   [Add the WIT to the Hidden Categories group](xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../work/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
+-   [Add the WIT to the Hidden Categories group](xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.
 
 -   Add [a field rule to the workflow](xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.
 
@@ -286,13 +286,13 @@ If you want to completely remove the fields from the data store, use [**witadmin
 
 ### Change the type of an existing work item  
 
-See [Move, change, or delete work items](../work/backlogs/remove-delete-work-items.md) for the features available to you based on your platform. 
+See [Move, change, or delete work items](../boards/backlogs/remove-delete-work-items.md) for the features available to you based on your platform. 
 
-When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../work/backlogs/copy-clone-work-items.md#copy-clone). For instance, you can copy an existing product backlog item and change the type to bug, as shown in the following illustration.
+When you connect to TFS, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](../boards/backlogs/copy-clone-work-items.md#copy-clone). For instance, you can copy an existing product backlog item and change the type to bug, as shown in the following illustration.
 
 ![Clone a WIT](_img/IC710198.png)  
 
-Also, if you have several work items with type changes you want to make, you might want to [export them using Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type.
+Also, if you have several work items with type changes you want to make, you might want to [export them using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type.
 
 
 ### Workflow changes and earlier versions of the Test Manager client

@@ -127,4 +127,4 @@ To view or modify changesets and to learn about other options, see [Changeset Co
 
 -   ![Tip](_img/find-view-changesets/IC572374.png) You can download the version of a file in a changeset. See [Download (get) files from the Server](download-get-files-from-server.md).
 
--   ![Tip](_img/find-view-changesets/IC572374.png) You can add a link between a changeset and one or more work items. See [Manage dependencies, link work items to support traceability](../../work/track/link-work-items-support-traceability.md).
+-   ![Tip](_img/find-view-changesets/IC572374.png) You can add a link between a changeset and one or more work items. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).

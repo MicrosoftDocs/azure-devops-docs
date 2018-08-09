@@ -53,12 +53,12 @@ Teams use project portals to share information and support how their team works.
 ## Related notes
 
 - [Dashboards and reports](../overview.md)   
-- [Agile process guidance](../../work/work-items/guidance/agile-process.md)
-- [CMMI process guidance](../../work/work-items/guidance/cmmi-process.md) 
-- [Scrum process guidance](../../work/work-items/guidance/scrum-process.md)
+- [Agile process guidance](../../boards/work-items/guidance/agile-process.md)
+- [CMMI process guidance](../../boards/work-items/guidance/cmmi-process.md) 
+- [Scrum process guidance](../../boards/work-items/guidance/scrum-process.md)
   
 ### Q: What artifacts are available with a SharePoint project portal?  
- **A:** The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../../work/work-items/guidance/choose-process.md).  
+ **A:** The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../../boards/work-items/guidance/choose-process.md).  
   
 ### Q: How do I access process guidance?  
  **A:** If your team project is configured with a SharePoint site for its project portal, you can access process guidance from the work item forms in Team Explorer.  Choose the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon or press F1.  These links access information contained in the Documents **Support** folder.  

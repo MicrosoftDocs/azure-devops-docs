@@ -27,11 +27,11 @@
   - name: Differences between process models
     href: ../organizations/settings/work/import-process/differences.md 
   - name: "Workflow states & state categories"
-    href: ../work/work-items/workflow-and-state-categories.md
+    href: ../boards/work-items/workflow-and-state-categories.md
   - name: Rollup of work and other fields
     href: ./xml/support-rollup-of-work-and-other-fields.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json
   - name: Agile glossary
-    href: ../work/work-items/agile-glossary.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json 
+    href: ../boards/work-items/agile-glossary.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json 
 - name: How-to Guides
   items:
   - name: "Manage permissions (Security)"
@@ -155,7 +155,7 @@
   - name: Process templates
     items:
     - name: Upload/download process templates
-      href: ../work/work-items/guidance/manage-process-templates.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json
+      href: ../boards/work-items/guidance/manage-process-templates.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json
     - name: Customize a process template
       href: ./process-templates/customize-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json
 - name: Troubleshooting
@@ -169,7 +169,7 @@
   - name: "Default permissions & access (Security)"
     href: ../organizations/security/permissions-access-work-tracking.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json
   - name: Changes made to process templates
-    href: ../work/work-items/guidance/changes-to-process-templates.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json
+    href: ../boards/work-items/guidance/changes-to-process-templates.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json
   - name: Work tracking object limits
     href: ../organizations/settings/work/object-limits.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json
   - name: Naming restrictions
@@ -350,7 +350,7 @@
 - name: Resources
   items:
   - name: Work items
-    href: ../work/work-items/index.md
+    href: ../boards/work-items/index.md
   - name: "Scale & Configure Teams"
     href: ../organizations/settings/scale/index.md
   - name: Project Management 

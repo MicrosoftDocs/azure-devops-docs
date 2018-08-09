@@ -11,7 +11,7 @@ A:	Change these when you sign up for your VSTS organization.
 <img alt="Change organization details" src="../_shared/_img/change-details-standard1.png" style="border: 1px solid #CCCCCC">
 
 VSTS uses Agile as the default 
-[process](/vsts/work/work-items/guidance/choose-process) 
+[process](/vsts/boards/work-items/guidance/choose-process) 
 to organize your work. And your organization's default location is based on the closest 
 [Microsoft Azure region](https://azure.microsoft.com/regions) 
 where VSTS is available. For a better experience, 
