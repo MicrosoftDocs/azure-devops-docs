@@ -44,7 +44,7 @@ By using PivotChart reports in Excel, you can display the number of bugs that we
   
  ![Bug Reactivations Excel Report](_img/procguid_agileexr.png "ProcGuid_AgileExR")  
   
- The process templates for [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) include the Bug Reactivations report in Excel. For more information, see [Bug Reactivations](../excel/bug-reactivations-excel-report.md).  
+ The process templates for [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) include the Bug Reactivations report in Excel. For more information, see [Bug Reactivations](../excel/bug-reactivations-excel-report.md).  
   
 ### Select and filter pivot fields  
  ![Pivot Fields for Bug Reactivations Report](_img/alm_rpt_pivot_bugreactivations.png "ALM_RPT_Pivot_BugReactivations")  
@@ -175,7 +175,7 @@ You can use **Date Filters** and **Numeric Filters** to filter a report based on
 <tbody>
 <tr valign="top">
 <td>
-For information about each field, see [Work item field index](../../work/work-items/guidance/work-item-field.md). Only fields that have `reportable="Dimension"` appear under the associated dimensions. Additional attributes appear when custom fields in the definitions of types of work items specify `Dimension` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).<br /><br /> For information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).
+For information about each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). Only fields that have `reportable="Dimension"` appear under the associated dimensions. Additional attributes appear when custom fields in the definitions of types of work items specify `Dimension` as the reportable attribute. For more information about how to use the `reportable` attribute, which is optional, and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).<br /><br /> For information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).
 </td>
 <td>
 ![Folder structure in OLAP data cube](_img/rpt_workitem_folders.png "RPT_WorkItem_Folders") 
@@ -289,11 +289,11 @@ You choose the **Work Item Changeset** entry in the combo box to access the Vers
   
 -   **Create work items**. Team members must create work items to manage the backlog of user stories or bugs, to track work by using tasks, and to manage test cases. Update the state of work items based on the process guidance for each type of work item.  
   
-     For more information, see [Agile work items and workflow](../../work/work-items/guidance/agile-process-workflow.md), [CMMI work items and workflow](../../work/work-items/guidance/cmmi-process-workflow.md), or [Scrum work items and workflow](../../work/work-items/guidance/scrum-process-workflow.md).  
+     For more information, see [Agile work items and workflow](../../boards/work-items/guidance/agile-process-workflow.md), [CMMI work items and workflow](../../boards/work-items/guidance/cmmi-process-workflow.md), or [Scrum work items and workflow](../../boards/work-items/guidance/scrum-process-workflow.md).  
   
 -   **Link work items to other work items or changesets**. To track relationships between work items, team members must create links between, for example, user stories and tasks. Team members can create other useful links such as those between user stories and test cases, bugs and test cases, and changesets and user stories, tasks, and bugs. Team members can show relatedness, dependency, or hierarchy by specifying the appropriate type of link.  
   
-     For more information, see [Manage dependencies, link work items](../../work/track/link-work-items-support-traceability.md).  
+     For more information, see [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md).  
   
 -   **Specify area and iteration paths**. To monitor status or trends on product areas or milestones by filtering reports, team members must set the Area and Iteration fields for each work item.  
   

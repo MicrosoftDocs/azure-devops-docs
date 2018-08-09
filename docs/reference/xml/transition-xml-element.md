@@ -108,7 +108,7 @@ When you link a work item to a pull request (PR), you have the option to automat
 > [!NOTE]   
 > **Feature availability**: The **Complete linked work items after merging** option is available from VSTS only at this time. It will become available with the release of TFS 2018 RTW.
 
-To learn more, see [Workflow states & state categories](../../work/work-items/workflow-and-state-categories.md).
+To learn more, see [Workflow states & state categories](../../boards/work-items/workflow-and-state-categories.md).
 
 ## Related articles 
 - [Change the workflow](change-workflow-wit.md)

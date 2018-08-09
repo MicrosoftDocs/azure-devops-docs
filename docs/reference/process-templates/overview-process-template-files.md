@@ -18,7 +18,7 @@ ms.date: 10/19/2017
 
 You customize the initial configuration of projects by customizing one or more process template files. You can customize several types of template files, which include the root XML file, plug-in files, and XML definition files. By customizing these files, you can define the initial configuration of all projects that are created from the process template.  
   
-For information about the default process templates, see [Choose a process](../../work/work-items/guidance/choose-process.md). To learn about customizing a process template, see [Customize a process template](customize-process.md).  
+For information about the default process templates, see [Choose a process](../../boards/work-items/guidance/choose-process.md). To learn about customizing a process template, see [Customize a process template](customize-process.md).  
    
 
 <a name="client-support"></a> 
@@ -219,7 +219,7 @@ Work Item Tracking <br/>
 <li>**SharedSteps**: Defines the link type that supports linking shared steps to test cases.</li>
 <li>**TestedBy**: Defines the link type that supports linking test cases to work items such as product backlog items, user stories, requirements, and bugs.</li>
 </ul>
-<p>Additional link types may be defined based on the process template. For a description of all link types, see [Link work items to support traceability and manage dependencies](../../work/track/link-work-items-support-traceability.md). </p>
+<p>Additional link types may be defined based on the process template. For a description of all link types, see [Link work items to support traceability and manage dependencies](../../boards/queries/link-work-items-support-traceability.md). </p>
 </li> 
 
 <li>**Process**: Defines the [ProcessConfiguration.xml file](../xml/process-configuration-xml-element.md) that specifies the default configuration for the Agile tool backlogs and boards.  </li>
@@ -242,7 +242,7 @@ For VSTS and TFS 2017.3 and later versions, definitions for work item instances 
 
 The schema definition for process templates uses a mix of camel-case and all capitalized elements. If you encounter errors when validating your type definition files, check the case structure of your elements. Also, the case structure of opening and closing tags must match according to the rules for XML syntax. See [Process template plug-ins: Index to XML element definitions](process-template-plug-ins-xml-elements-index.md).  
 
--  [Choose a process or process template](../../work/work-items/guidance/choose-process.md)   
+-  [Choose a process or process template](../../boards/work-items/guidance/choose-process.md)   
 -  [Customize a process template](customize-process.md)  
 -  [Customize your work tracking experience](../customize-work.md)
 

@@ -35,7 +35,7 @@ If you are designing a work item form from the ground up, you might want to add 
  ![Attach files to a work item](_img/procguid_attachment.png "ProcGuid_Attachment")  
   
   
- You must choose or attach a file before the buttons to open an attachment (![Open Attachment](_img/icon_openattachment.png "Icon_openAttachment")), save a copy (![Save](_img/icon_savewit.png "Icon_saveWIT") Save Copy), and delete an attachment (![Delete Item](_img/icon_deleteredxwit.png "Icon_deleteRedXWIT")) become available. For more information, see [Attachment control and fields](../../work/track/linking-attachments.md).  
+ You must choose or attach a file before the buttons to open an attachment (![Open Attachment](_img/icon_openattachment.png "Icon_openAttachment")), save a copy (![Save](_img/icon_savewit.png "Icon_saveWIT") Save Copy), and delete an attachment (![Delete Item](_img/icon_deleteredxwit.png "Icon_deleteRedXWIT")) become available. For more information, see [Attachment control and fields](../../boards/queries/linking-attachments.md).  
   
  You can control the spacing and size of the attachment control by specifying the attributes in the following table.  
   

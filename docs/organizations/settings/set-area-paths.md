@@ -161,7 +161,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 ## Chart progress by area 
 
-You can quickly generate [queries](../../work/track/using-queries.md) to view the progress based on an area path. As an example, you can [visualize progress of work items assigned to each team's area path](../../report/dashboards/charts.md) as shown in the following stacked bar chart.  
+You can quickly generate [queries](../../boards/queries/using-queries.md) to view the progress based on an area path. As an example, you can [visualize progress of work items assigned to each team's area path](../../report/dashboards/charts.md) as shown in the following stacked bar chart.  
 
 ![Stacked bar chart by area and state](_img/areas/stacked-bar-chart.png)
 
@@ -176,7 +176,7 @@ As you can see, areas play a major role in supporting Agile tools and managing w
 *	[Add another team](../../organizations/settings/add-teams.md)  
 *	[Configure team settings and add team administrators](configure-team-settings.md)   
 *	[Agile tools that rely on areas or iterations](about-teams-and-settings.md)
-*	[Query by area or iteration path](../../work/track/query-by-area-iteration-path.md)  
+*	[Query by area or iteration path](../../boards/queries/query-by-area-iteration-path.md)  
 *	 [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
 
 

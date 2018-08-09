@@ -50,7 +50,7 @@ Choose a **Work** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**
 From a **Work** page, you can add a work item from the menu of options as shown in the following image.
  
 > [!div class="mx-imgBorder"]
-![Work, add a work item](../../work/backlogs/_img/add-work-items-choose-user-story.png)
+![Work, add a work item](../../boards/backlogs/_img/add-work-items-choose-user-story.png)
 
  Or, you can open one of the pages&mdash;**Boards**, **Backlogs**, **Queries**, or **Plans**&mdash;to add an artifact specific to each of these functional pages.
  
@@ -59,9 +59,9 @@ From a **Work** page, you can add a work item from the menu of options as shown 
 To add other work tracking artifacts, see one of the following articles: 
 
 - To add a board, backlog, or sprint backlog, first [add a team](../../organizations/settings/add-teams.md) which will be associated with those artifaces 
-- [Add a delivery plan](../../work/scale/review-team-plans.md)
-- [Add a managed work item query](../../work/track/using-queries.md) 
-- [Add work items](../../work/work-items/view-add-work-items.md).
+- [Add a delivery plan](../../boards/plans/review-team-plans.md)
+- [Add a managed work item query](../../boards/queries/using-queries.md) 
+- [Add work items](../../boards/work-items/view-add-work-items.md).
 
 
 ## Add a pull request or Git repository 
@@ -101,7 +101,7 @@ Note that you can only add one TFVC repository per project, but an unlimited num
 - [Git repository](../../repos/git/creatingrepo.md)
 - [Git branch](../../repos/git/create-branch.md)
 - [Git pull request](../../repos/git/pullrequest.md) 
-- [Add work items](../../work/work-items/view-add-work-items.md)
+- [Add work items](../../boards/work-items/view-add-work-items.md)
 
 
 
@@ -168,7 +168,7 @@ To view the set of defined teams, open **Project settings**, and choose **Overvi
 
 To view the set of defined teams, open the admin context for the project, and choose **Overview**.  
 
-![Web portal, admin context, project, Overview page](../../work/scale/_img/multiple-teams-view-teams.png) 
+![Web portal, admin context, project, Overview page](../../boards/plans/_img/multiple-teams-view-teams.png) 
 
 ---
 

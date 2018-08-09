@@ -89,7 +89,7 @@ Repository README files and wikis are great ways to share information with your 
 ## Resources 
 
 - [Dashboards](../../report/dashboards/index.md)
-- [Work Items](../../work/work-items/index.md)
+- [Work Items](../../boards/work-items/index.md)
 
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/BdtlTJM6LpM?start=0]

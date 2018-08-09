@@ -19,7 +19,7 @@ ms.date: 03/20/2018
 > [!IMPORTANT]  
 >**Feature availability:**&#160;&#160;Import process supports the Hosted XML process model which allows you to manage customizations through updating select XML definition files of a process template. This feature is only available for organizations that have been migrated to VSTS using the [TFS Data Import Service](https://aka.ms/TFSDataImport). [Contact us](mailto:dahellem@microsoft.com) if you have any questions about VSTS process customization. 
 >
->If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an Inheritance process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../work/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
+>If you use the Inheritance process model, you can customize your work tracking through the user interface by [creating an Inheritance process](../manage-process.md). If you use the On-premises XML process model, you can customize a process template, see [Upload or download a process template](../../../../boards/work-items/guidance/manage-process-templates.md) and [Customize a process template](../../../../reference/process-templates/customize-process.md).
 >
 >To learn more about process models, see [Customize work tracking](../../../../reference/customize-work.md).  
 
@@ -68,7 +68,7 @@ When customizing a process template for import, limit the number of the objects 
 ## Tools with limited support 
 When you connect to VSTS, you can use the following tools subject to limitations:   
 
-- [Visual Studio Process Template Manager](../../../../work/work-items/guidance/manage-process-templates.md): You can download a process template, but all other functions are disabled.   
+- [Visual Studio Process Template Manager](../../../../boards/work-items/guidance/manage-process-templates.md): You can download a process template, but all other functions are disabled.   
 - Process Editor: You can use select functions to view or export a WIT definition or global list, or use the Work Item Field Explorer. Access is denied to save modified WIT and global list definitions.  
 - **witadmin** command line tool: Select commands, such as export and list commands, work when connected to VSTS. Review [witAdmin: Customize and manage objects for tracking work](../../../../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md) for which commands are supported.
 

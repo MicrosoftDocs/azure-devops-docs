@@ -74,7 +74,7 @@ To learn more about the built-in wiki, see [Add & edit wiki pages](../project/wi
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ## Related articles
 
-- [Link work items](../work/backlogs/add-link.md)
+- [Link work items](../boards/backlogs/add-link.md)
 - [Save work with commits](../repos/git/commits.md)
 - [Pull requests](../repos/git/pullrequest.md)
 - [Check in your work to the team code base](../repos/tfvc/check-your-work-team-codebase.md) 

@@ -73,7 +73,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
@@ -97,7 +97,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
@@ -116,7 +116,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, tfs](_img/create-project/clickcreatetfs.png) 
@@ -147,7 +147,7 @@ If you're using TFS 2015.2 or later version, then you can create a project from 
 
 0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
 
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../work/work-items/guidance/choose-process.md) for guidance.  
+    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form, tfs](_img/create-project/clickcreatetfs.png) 
@@ -219,7 +219,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
     ![ALM\_CTP\_NameProject](_img/IC671598.png)
 
-8.  Choose a process template. For a comparison of the default process templates, see [Choose a process](../../work/work-items/guidance/choose-process.md).
+8.  Choose a process template. For a comparison of the default process templates, see [Choose a process](../../boards/work-items/guidance/choose-process.md).
 
     ![ALM\_CTP\_SelectTemplate](_img/IC795955.png)
 

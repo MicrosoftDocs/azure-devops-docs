@@ -32,7 +32,7 @@
     - name: Set team defaults
       href: ../set-team-defaults.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Use work item templates
-      href: ../../../work/backlogs/work-item-template.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
+      href: ../../../boards/backlogs/work-item-template.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Customize cards on boards
       href: ../../../boards/boards/customize-cards.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Reorder cards

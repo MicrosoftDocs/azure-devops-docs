@@ -42,7 +42,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 
 ## Step-by-Step Tutorials
 
-* [Test from the Kanban board](../work/kanban/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
+* [Test from the Kanban board](../boards/boards/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
 
 ## How-to Guides
 

@@ -50,7 +50,7 @@ access levels.  You can multi-select users and bulk edit their extensions and ac
 partial user names, access level, or extension names.  You can see the last access date for each user to help you choose 
 from whom you might remove access or lower access to stay within your license limits.
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 

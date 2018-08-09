@@ -29,7 +29,7 @@ And, with the velocity widget, you can quickly determine the following:
 
 To configure or view Velocity charts, see [Configure and view Velocity charts](team-velocity.md).
 
-The velocity chart requires that teams estimate their backlog items with a number using the [Effort, Story Points, or Size fields](../../work/track/query-numeric.md).   
+The velocity chart requires that teams estimate their backlog items with a number using the [Effort, Story Points, or Size fields](../../boards/queries/query-numeric.md).   
 
 The velocity widget allows teams to track velocity based on the count of backlog items or with estimates for the Effort, Story Points, or Size fields.
 
@@ -51,7 +51,7 @@ Velocity simply provides an aid to determine team capacity. Nothing more, nothin
 
 While the velocity chart provides a measure of Effort, Story Points, or Size that gets completed sprint-over-sprint, there may be other types of velocity that you may want to track. You can create similar charts by creating a work item query and [chart the count of or sum of items](../dashboards/charts.md).  
 
-For example, you can create a chart of the number of Product backlog items and bugs completed for the last several sprints. For examples on creating this type of chart, see [Query by numeric fields](../../work/track/query-numeric.md).
+For example, you can create a chart of the number of Product backlog items and bugs completed for the last several sprints. For examples on creating this type of chart, see [Query by numeric fields](../../boards/queries/query-numeric.md).
 
 ![Velocity count of backlog items and bugs](_img/ALM_VF_VelocityCountItems.png) 
 
@@ -62,8 +62,8 @@ For example, you can create a chart of the number of Product backlog items and b
 
 
 See also:
-- [Forecast your sprints](../../work/scrum/forecast.md)
-- [Plan your sprint](../../work/scrum/assign-work-sprint.md).
+- [Forecast your sprints](../../boards/sprints/forecast.md)
+- [Plan your sprint](../../boards/sprints/assign-work-sprint.md).
 
 
 ### Industry resources

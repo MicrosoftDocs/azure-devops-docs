@@ -79,18 +79,18 @@ Planning Tools
 <td>
 These tools provide access to product and sprint backlogs, the Kanban board and task boards, and the ability to add teams.  
 <ul>
-<li>[Create-your-backlog](../work/backlogs/create-your-backlog.md) </li>
-<li>[Kanban basics](../work/kanban/kanban-basics.md) </li>
-<li>[Plan a sprint](../work/scrum//assign-work-sprint.md)</li>
-<li>[Work with the task board](../work/scrum//task-board.md).</li>
+<li>[Create-your-backlog](../boards/backlogs/create-your-backlog.md) </li>
+<li>[Kanban basics](../boards/boards/kanban-basics.md) </li>
+<li>[Plan a sprint](../boards/sprints//assign-work-sprint.md)</li>
+<li>[Work with the task board](../boards/sprints//task-board.md).</li>
 </ul> </td>
 <td>
-**Required:** To work with sprint backlogs and boards, you must [activate the sprints for each team](../work/scrum//define-sprints.md). <br/>
+**Required:** To work with sprint backlogs and boards, you must [activate the sprints for each team](../boards/sprints//define-sprints.md). <br/>
 Additional options that you can configure:<br/>
 <ul>
 <li>[Add a team or set up a hierarchy of teams](../organizations/settings/add-teams.md) </li>
 <li>[Set team working days off](../organizations/settings/set-working-days.md)</li>
-<li>[Define additional sprints or releases](../work/scrum/define-sprints.md).</li>
+<li>[Define additional sprints or releases](../boards/sprints/define-sprints.md).</li>
 </ul> 
 In addition, you can customize the following options by modifying the [ProcessConfiguration](xml/process-configuration-xml-element.md) definition:<br/>
 <ul>
@@ -111,7 +111,7 @@ If you've upgraded your TFS instance from [TFS 2010](#update-from-2010) or [TFS 
 Storyboarding
 </td>
 <td>
-With this feature, you can [storyboard your ideas using the Storyboarding add-in to PowerPoint](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md).  
+With this feature, you can [storyboard your ideas using the Storyboarding add-in to PowerPoint](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md).  
 </td>
 <td>
 **Required:** [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300)<br/>
@@ -120,17 +120,17 @@ With this feature, you can [storyboard your ideas using the Storyboarding add-in
 </tr>
 <tr>
 <td>Portfolio Backlogs</td>
-<td>With Portfolio Backlogs enabled, you can use the Feature and Epic portfolio backlogs to [organize your backlog](../work/backlogs/organize-backlog.md) by grouping related items into a hierarchical structure.  
+<td>With Portfolio Backlogs enabled, you can use the Feature and Epic portfolio backlogs to [organize your backlog](../boards/backlogs/organize-backlog.md) by grouping related items into a hierarchical structure.  
 </td>
 <td>
-Most of your team will be able to view and create Epics and Features once you've enabled the Portfolio Backlogs feature. However, you may need to enable one or more of these backlogs for a team as described in [Organize your backlogs](../work/backlogs/organize-backlog.md). <br/>
+Most of your team will be able to view and create Epics and Features once you've enabled the Portfolio Backlogs feature. However, you may need to enable one or more of these backlogs for a team as described in [Organize your backlogs](../boards/backlogs/organize-backlog.md). <br/>
 
 All stakeholders and contributors to your project can view and add items to a portfolio backlog. However, to reorder, reparent, and exercise other portfolio backlog features, you need to have [Advanced access](../organizations/security/change-access-levels.md).<br/>
 
 <p>Other resources you may find useful to manage your teams and backlogs:</p>
 <ul>
-<li>[Set up a hierarchy of teams and backlogs - Portfolio management](../work/scale/portfolio-management.md)</li>
-<li>[Implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs](../work/scale/scaled-agile-framework.md)</li>
+<li>[Set up a hierarchy of teams and backlogs - Portfolio management](../boards/plans/portfolio-management.md)</li>
+<li>[Implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs](../boards/plans/scaled-agile-framework.md)</li>
 <li>[Add up to 5 levels of portfolio backlogs](add-portfolio-backlogs.md) </li>
 </ul> 
 </td>
@@ -212,10 +212,10 @@ You might want to update the workflow of specific WITs to support missing transi
 * Agile 6.0 to Agile 2013: User Story  
 * CMMI 6.0 to CMMI 2013: Requirement  
 
-For details, see [Upgrade your 2012 project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../work/work-items/guidance/changes-to-process-templates.md).
+For details, see [Upgrade your 2012 project from RTM to Update 2](http://blogs.msdn.com/b/visualstudioalm/archive/2013/04/04/upgrade-your-2012-process-template-from-rtm-to-update-2.aspx). You can learn about additional changes made to enable features from [Changes made to process templates](../boards/work-items/guidance/changes-to-process-templates.md).
 
 
-If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../work/work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your project and then [import the updated WITs](witadmin/witadmin-import-export-manage-wits.md).
+If you haven't customized your work item types or process configuration, you can update the items quickly by using **witadmin**. Just [download the latest version of the process template](../boards/work-items/guidance/manage-process-templates.md) that is compatible with the one used to create your project and then [import the updated WITs](witadmin/witadmin-import-export-manage-wits.md).
 
 <a id="update-from-2010">   </a> 
 ###Recommended updates to projects created from TFS 2010 process templates 

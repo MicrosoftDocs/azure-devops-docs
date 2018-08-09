@@ -156,7 +156,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 	
 ![New work item widget](_img/widget-new-work-items.png)
 
-Enables you to add work items from the dashboard. You [use work items to plan and track work](../../work/backlogs/add-work-items.md).  <br/><br/>
+Enables you to add work items from the dashboard. You [use work items to plan and track work](../../boards/backlogs/add-work-items.md).  <br/><br/>
 
 Work items that you add using this widget are automatically scoped to the team's default area path and the team's current sprint or default iteration. To change team defaults, see [Set team defaults](../../organizations/settings/set-team-defaults.md).
 
@@ -177,7 +177,7 @@ Requires TFS 2015.1 or later version.
 
 Provides links to the following features: 
 - Opens a form to initiate a [request to provide feedback](/vsts/project/feedback/get-feedback?toc=/vsts/project/feedback/toc.json).
-- Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../work/scrum/define-sprints.md).
+- Opens the team's quick dialog to add or modify the active sprints or iteration paths for your team. To learn more see [Define sprints](../../boards/sprints/define-sprints.md).
 - Opens the team's quick dialog to modify your [team's area path](../../organizations/settings/set-team-defaults.md).
 
 ::: moniker-end
@@ -205,7 +205,7 @@ The following links are displayed when the corresponding resource is configured 
 
 Adds a configurable tile that lists the results of a shared query. 
 From the configuration dialog, select either a team favorite or shared query.  
-To create a shared query, see [Use the query editor to list and manage queries](../../work/track/using-queries.md). 
+To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
 
 
 ----
@@ -219,7 +219,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 Adds a configurable tile to display the summary of a shared query results.
 From the configuration dialog, select either a team favorite or shared query. You can optionally specify rules to change the query tile color based on the number of work items returned by the query. 
-To create a shared query, see [Use the query editor to list and manage queries](../../Work/track/using-queries.md). 
+To create a shared query, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md). 
   
 ----
 ::: moniker-end
@@ -234,7 +234,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 ![Sprint burndown widget](_img/widget-sprint-burndown.png)
 
 Adds the team's burndown chart for the current sprint to the dashboard. This chart always displays data for the current sprint.
-Teams [use the burndown chart to mitigate risk and check for scope creep](../../work/scrum/sprint-burndown.md) throughout the sprint cycle. 
+Teams [use the burndown chart to mitigate risk and check for scope creep](../../boards/sprints/sprint-burndown.md) throughout the sprint cycle. 
 
 
 ----
@@ -249,7 +249,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 
 
 Inserts the team's capacity bar chart for the current sprint.
-Teams [specify their capacity to plan and monitor their sprint resources](../../work/scrum/set-capacity.md).  
+Teams [specify their capacity to plan and monitor their sprint resources](../../boards/sprints/set-capacity.md).  
 
 ----
 ::: moniker-end
@@ -266,12 +266,12 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
  
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 
-Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
+Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
 ::: moniker-end
 
 ::: moniker range=" tfs-2015"
 
-Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../work/scrum/assign-work-sprint.md). 
+Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
 ::: moniker-end
 ::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
 ----
@@ -284,10 +284,10 @@ Inserts a visual overview of sprint progress indicating the number of backlog it
 ![Work links widget](_img/widget-work-links.png)  
 Provides quick access to open the following Agile tools and team resources:
 
-- [Backlog](../../Work/backlogs/create-your-backlog.md)  
-- [Kanban Board](../../Work/kanban/kanban-basics.md)  
-- [Task board](../../Work/scrum/task-board.md)  
-- [Queries](../../Work/track/using-queries.md)  
+- [Backlog](../../boards/backlogs/create-your-backlog.md)  
+- [Kanban Board](../../boards/boards/kanban-basics.md)  
+- [Task board](../../boards/sprints/task-board.md)  
+- [Queries](../../boards/queries/using-queries.md)  
 
 ----
 ::: moniker-end

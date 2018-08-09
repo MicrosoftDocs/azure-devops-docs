@@ -36,7 +36,7 @@ using just a web browser.
 
 ## Resources
 
-* [Adhoc vs managed work item queries](../../work/track/adhoc-vs-managed-queries.md?toc=/vsts/project/search/toc.json&bc=/vsts/project/search/breadcrumb/toc.json)
+* [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/vsts/project/search/toc.json&bc=/vsts/project/search/breadcrumb/toc.json)
 * [Search your Wiki](https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/)
 * [Code Search blog posts](https://social.msdn.microsoft.com/Search/?query=code%20search&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=5)
 * [Code Search on Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search)

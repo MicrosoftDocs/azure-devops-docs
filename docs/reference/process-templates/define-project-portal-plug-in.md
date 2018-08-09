@@ -27,7 +27,7 @@ ms.date: 10/11/2017
 
 When you create a project from Visual Studio Team Explorer, the project portal plug-in creates a SharePoint site and uploads several files contained within the process template. These files will appear under the specifies the folder structure and set of reports that will appear under the **Documents** node in Team Explorer. 
 
-By using the portal plug-in, you can define the initial document libraries, library structure, and documents of a [project's portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md). You can also include the tasks that create dashboards and Excel reports that are designed to work with the default [process templates](../../work/work-items/guidance/choose-process.md).  
+By using the portal plug-in, you can define the initial document libraries, library structure, and documents of a [project's portal](../../report/sharepoint-dashboards/share-information-using-the-project-portal.md). You can also include the tasks that create dashboards and Excel reports that are designed to work with the default [process templates](../../boards/work-items/guidance/choose-process.md).  
 
 The tasks that you specify in the plug-in for SharePoint Products are run only when you create a SharePoint site when you [create a project](../../organizations/projects/create-project.md). For more information about site requirements and administration, see [SharePoint Products requirements for Team Foundation Server](/tfs/server/requirements#sharepoint). 
 
@@ -63,7 +63,7 @@ The names of the file, the folder, and the plug-in for the default process templ
 -   Create folders, and upload files to the document libraries    
 -   Activate dashboard features  
   
-For an example of a task that specifies a simple project portal, see the WssTasks.xml file in one of the default process templates. You can [download the latest process templates](../../work/work-items/guidance/manage-process-templates.md).  
+For an example of a task that specifies a simple project portal, see the WssTasks.xml file in one of the default process templates. You can [download the latest process templates](../../boards/work-items/guidance/manage-process-templates.md).  
   
 <a name="SiteTemplate"></a> 
 ##  Create the site and specify the site template  
@@ -297,9 +297,9 @@ You use the **activateFeatures** element to cause the creation of the dashboards
 ## Related articles  
 - [Customize a process](customize-process.md)   
 - [Process template and plug-in files](overview-process-template-files.md)
-- [Scrum](../../work/work-items/guidance/scrum-process.md)
-- [Agile](../../work/work-items/guidance/agile-process.md)
-- [CMMI](../../work/work-items/guidance/cmmi-process.md) 
+- [Scrum](../../boards/work-items/guidance/scrum-process.md)
+- [Agile](../../boards/work-items/guidance/agile-process.md)
+- [CMMI](../../boards/work-items/guidance/cmmi-process.md) 
 - [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md) 
 
 ::: moniker-end  

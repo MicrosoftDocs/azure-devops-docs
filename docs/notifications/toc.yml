@@ -13,7 +13,7 @@
 - name: Tutorials
   items:
   - name: "Follow work & pull requests"
-    href: ../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: ../boards/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Manage your personal notifications
     href: manage-personal-notifications.md
 - name: How-to Guides
@@ -35,7 +35,7 @@
   - name: Get notified with Slack
     href: ../service-hooks/services/slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Set alerts (TFS) 
-    href: ../work/track/alerts-and-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
+    href: ../boards/queries/alerts-and-notifications.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json
   - name: Collaborate in a team room (TFS)
     href: collaborate-in-a-team-room.md
 - name: Reference
@@ -51,7 +51,7 @@
   - name: Git
     href: ../repos/git/index.md
   - name: Work items
-    href: ../work/work-items/index.md
+    href: ../boards/work-items/index.md
   - name: Service Hooks
     href: ../service-hooks/index.md
   - name: REST API

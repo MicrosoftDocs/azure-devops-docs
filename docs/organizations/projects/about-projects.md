@@ -39,7 +39,7 @@ When you create your project, a team of the same name is automatically created. 
 </tbody>
 </table>
 
-The collection-project-team structure provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level. As your organization grows, your tools can grow to support a [culture of team autonomy as well as organizational alignment](../../work/scale/agile-culture.md). 
+The collection-project-team structure provides teams a high-level of autonomy to configure their tools in ways that work for them. It also supports administrative tasks to occur at the appropriate level. As your organization grows, your tools can grow to support a [culture of team autonomy as well as organizational alignment](../../boards/plans/agile-culture.md). 
 
 
 <a id="scale">  </a>
@@ -130,7 +130,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ## When to add another project 
 
-In general, we recommend that you use a single project to support your organization or enterprise. A single project minimizes the maintenance of administrative tasks and allows full flexibility to [cross-link objects](../../work/track/link-work-items-support-traceability.md).  
+In general, we recommend that you use a single project to support your organization or enterprise. A single project minimizes the maintenance of administrative tasks and allows full flexibility to [cross-link objects](../../boards/queries/link-work-items-support-traceability.md).  
 
 Even if you have many teams working on hundreds of different applications and software projects, you can most easily manage them within a single project. A project serves to isolate data stored within it; you can't easily move data from one project to another. When you move data from one project to another, you typically lose the history associated with that data. 
 
@@ -173,9 +173,9 @@ When you add a project, look at using the following elements to structure it to 
 - [Create a Git repository](../../repos/git/creatingrepo.md) for each sub-project or application, or [create root folders within a TFVC repository](../../repos/tfvc/branch-folders-files.md) for each sub-project.  
 - [Define area paths](../settings/set-area-paths.md) to support different sub-projects, products, features, or teams. 
 - [Define iteration paths (aka sprints)](../settings/set-iteration-paths-sprints.md) that can be shared across teams.
-- [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. See also, [Portfolio management](../../work/scale/portfolio-management.md).
+- [Add a team](../../organizations/settings/add-teams.md) for each product team that develops a set of features for a product. Note that each team you create automatically creates a security group for that team which you can use to manage permissions for a team. See also, [Portfolio management](../../boards/plans/portfolio-management.md).
 - [Grant or restrict access to select features and functions](../security/restrict-access.md) using custom security groups. 
-- [Create query folders](../../work/track/organize-queries.md) to organize queries for teams or product areas into folders. 
+- [Create query folders](../../boards/queries/organize-queries.md) to organize queries for teams or product areas into folders. 
 - [Define or modify notifications](../../notifications/index.md) set at the project level. 
 
 ## Customizing and configuring projects
@@ -209,10 +209,10 @@ As your organization grows, you'll want to add teams to provide them the Agile t
 
 - [Scale Agile to large teams](/azure/devops/agile/scale-agile-large-teams)
 - [About teams and Agile tools](../settings/about-teams-and-settings.md) 
-- Manage a [portfolio of backlogs](../../work/scale/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.  
-- Use [Delivery plans](../../work/scale/review-team-plans.md) to review the schedule of stories or features your teams plan to deliver. Delivery plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view. 
-- Incrementally adopt [practices that scale](../../work/scale/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.
-- Structure projects to gain [visibility across teams](../../work/scale/visibility-across-teams.md) or to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../../work/scale/scaled-agile-framework.md). 
+- Manage a [portfolio of backlogs](../../boards/plans/portfolio-management.md) and gain insight into each team's progress as well as the progress of all programs.  
+- Use [Delivery plans](../../boards/plans/review-team-plans.md) to review the schedule of stories or features your teams plan to deliver. Delivery plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view. 
+- Incrementally adopt [practices that scale](../../boards/plans/practices-that-scale.md) to create greater rhythm and flow within your organization, engage customers, improve project visibility, and develop a productive workforce.
+- Structure projects to gain [visibility across teams](../../boards/plans/visibility-across-teams.md) or to support [epics, release trains, and multiple backlogs to support the Scaled Agile Framework](../../boards/plans/scaled-agile-framework.md). 
 
 To review  stories and short videos on how Microsoft transitioned from waterfall to Agile, see [Scaling Agile Across the Enterprise](https://stories.visualstudio.com/scaling-agile-across-the-enterprise/).
 
@@ -226,9 +226,9 @@ In addition to connecting through a web browser, you can connect to a team proje
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs.aspx)
 - [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in)
-- [Office Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Office Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md)
-- [PowerPoint Storyboarding](../../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
+- [Office Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Office Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)
+- [PowerPoint Storyboarding](../../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md)
 

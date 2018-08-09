@@ -107,7 +107,7 @@ The panel only displays fields that are included in the `FIELDS` section of the 
     ```  
   
      > [!TIP]    
-    > -  You can look up the reference name for a field using this [index](../../work/work-items/guidance/work-item-field.md).    
+    > -  You can look up the reference name for a field using this [index](../../boards/work-items/guidance/work-item-field.md).    
     > -  Add all required fields for work item types defined for the Requirements Category. That way, you avoid having to open the work item form to fill them in when you add backlog items through the panel.  
   
 5.  Import the process configuration file.  
