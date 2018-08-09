@@ -757,8 +757,8 @@ You manage project-level permissions from the [web portal admin context](../../p
 		<td>Can add tags through a work item form.</td>
 	</tr>
 	<tr>
-		<td id="create-test-runs-permission">Create test runs</td>
-		<td>Can add and remove test results and add or modify test runs.</td>
+		<td id="delete-test-runs-permission">Delete test runs</td>
+		<td>Can delete test run.</td>
 	</tr>
 	<tr>
 		<td id="delete-work-items-in-this-project-permission">
