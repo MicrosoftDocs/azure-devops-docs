@@ -50,5 +50,5 @@ This example provides a ready-made widget, covering basics from topics in Dashbo
 
 ##Next steps
 To avoid excess complexity in the sample, we omitted certain technologies and practices, which a production widget should certainly include. The [ui-fabric-react](https://github.com/Microsoft/vsts-extension-samples/tree/master/ui-fabric-react) sample on github highlights a build process which exercises these details.
-0. [Javascript bundling and content minification](https://docs.microsoft.com/en-us/aspnet/mvc/overview/performance/bundling-and-minification) - The set of small, loose script files in the sample can load much more quickly when consolidate into a single file, and minified.
-0. [Fabric UI Controls](https://developer.microsoft.com/en-us/fabric) - Fabric UI controls provide a rich set of configuration UI components for React.
+0. [Javascript bundling and content minification](https://docs.microsoft.com/aspnet/mvc/overview/performance/bundling-and-minification) - The set of small, loose script files in the sample can load much more quickly when consolidate into a single file, and minified.
+0. [Fabric UI Controls](https://developer.microsoft.com/fabric) - Fabric UI controls provide a rich set of configuration UI components for React.

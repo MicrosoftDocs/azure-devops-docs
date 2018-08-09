@@ -129,7 +129,7 @@ There are two modes of fetching used by PartialOpen, which the caller can use to
 
 By using PartialOpen, you can save bandwidth, resources, and time by paging in data for multiple work item fields up to the page size that is specified in [WorkItemCollection.PageSize](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitemcollection.pagesize%28v=vs.120%29.aspx). For VSTS customers, the Open method is rate limited whereas PartialOpen is not.
 
-This method does nothing if [IsPartialOpen](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem.ispartialopen%28v=vs.120%29.aspx), [IsOpen](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isopen%28v=vs.120%29.aspx) or [IsNew](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isnew%28v=vs.120%29.aspx) are true.
+This method does nothing if [IsPartialOpen](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.ispartialopen%28v=vs.120%29.aspx), [IsOpen](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isopen%28v=vs.120%29.aspx) or [IsNew](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isnew%28v=vs.120%29.aspx) are true.
 
 ## Sample Code
 
@@ -206,11 +206,11 @@ private static void UpdateWorkItemsUsingPartialOpen()
 
 ## .NET Framework Security
 
-- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](https://msdn.microsoft.com/en-us/library/8skskf63%28v=vs.120%29.aspx).
+- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](https://msdn.microsoft.com/library/8skskf63%28v=vs.120%29.aspx).
 
 
 ## Related articles
 
 
-- [WorkItem Class](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem%28v=vs.120%29.aspx)  
-- [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  
+- [WorkItem Class](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem%28v=vs.120%29.aspx)  
+- [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  

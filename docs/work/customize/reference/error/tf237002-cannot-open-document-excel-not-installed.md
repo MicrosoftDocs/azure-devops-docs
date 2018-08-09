@@ -31,7 +31,7 @@ See [How to: Re-enable an Add-in That Has Been Disabled](/visualstudio/vsto/how-
   
 ### To add a missing component in an Office client  
   
-1.  See [Install or remove individual Office programs and components](https://support.office.com/en-us/article/download-and-install-or-reinstall-office-365-or-office-2016-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658?ui=en-US&rs=en-US&ad=US).  
+1.  See [Install or remove individual Office programs and components](https://support.office.com/article/download-and-install-or-reinstall-office-365-or-office-2016-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658?ui=en-US&rs=en-US&ad=US).  
   
 2.  Verify or configure the .NET Programmability Support option to **Run from My Computer**.  
   
@@ -41,4 +41,4 @@ See [How to: Re-enable an Add-in That Has Been Disabled](/visualstudio/vsto/how-
   
 ### To repair your Office client  
   
--   See [Repair an Office application](https://support.office.com/en-us/article/repair-an-office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b).
+-   See [Repair an Office application](https://support.office.com/article/repair-an-office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b).

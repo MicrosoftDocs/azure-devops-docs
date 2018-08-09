@@ -49,4 +49,4 @@ ms.date: 09/05/2017
 
 ## Resources
 - [Microsoft Teams](../../service-hooks/services/teams.md)
-- [OneDrive for Business sync client](https://support.office.com/en-us/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49)
+- [OneDrive for Business sync client](https://support.office.com/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49)

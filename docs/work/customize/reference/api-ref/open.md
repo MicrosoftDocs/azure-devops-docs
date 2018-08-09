@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 
 Opens a work item for modification. This method is [rate limited](../../../../integrate/concepts/rate-limits.md) for VSTS customers. For better performance and to work around the rate limits, use [PartialOpen](partialopen.md).
 
-**Namespace:**   [Microsoft.TeamFoundation.WorkItemTracking.Client](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  
+**Namespace:**   [Microsoft.TeamFoundation.WorkItemTracking.Client](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  
 **Assembly:**  Microsoft.TeamFoundation.WorkItemTracking.Client (in Microsoft.TeamFoundation.WorkItemTracking.Client.dll)
 
 ## Syntax
@@ -107,17 +107,17 @@ Public Sub Open```
 
 ## Remarks
 
-This method should be used only if you require historical data, attachments, links or other non-field data. If you want to work only with the latest revision of the work item, use the [PartialOpen](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem.partialopen%28v=vs.120%29.aspx) method.
+This method should be used only if you require historical data, attachments, links or other non-field data. If you want to work only with the latest revision of the work item, use the [PartialOpen](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.partialopen%28v=vs.120%29.aspx) method.
 
 Using Open requires a round trip to the server for each work item and consumes local resources to store revision history and non-field data.
 
-This method does nothing if [IsOpen](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem.isopen%28v=vs.120%29.aspx) or [IsNew](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem.isnew%28v=vs.120%29.aspx) are true.
+This method does nothing if [IsOpen](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isopen%28v=vs.120%29.aspx) or [IsNew](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isnew%28v=vs.120%29.aspx) are true.
 
 ## .NET Framework Security
 
-- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](https://msdn.microsoft.com/en-us/library/8skskf63%28v=vs.120%29.aspx).
+- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](https://msdn.microsoft.com/library/8skskf63%28v=vs.120%29.aspx).
 
 ## Related articles
 
-- [WorkItem Class](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client.workitem%28v=vs.120%29.aspx)  
-- [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](https://msdn.microsoft.com/en-us/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  
+- [WorkItem Class](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem%28v=vs.120%29.aspx)  
+- [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  

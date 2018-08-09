@@ -45,7 +45,7 @@ With this in mind, the query to create a bug trend report looks like the followi
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(DateValue ge 2016-03-01Z and DateValue le 2016-03-31Z and WorkItemType eq 'Bug')/
     groupby((DateValue,State), aggregate($count as Count))
@@ -58,7 +58,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
+  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
   "value": [
     {
       "@odata.id": null,
@@ -86,7 +86,7 @@ To construct that query, do the following:
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItemSnapshot?
   $apply=
     filter(WorkItemType eq 'Bug')/
     filter(Iteration/IterationName eq 'Sprint 99')/
@@ -100,7 +100,7 @@ This returns a result similar to the following:
 > [!div class="tabbedCodeSnippets"]
 ```JSON
 {
-  "@odata.context": "https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
+  "@odata.context": "https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/$metadata#WorkItemSnapshot(DateValue,State,Count)",
   "value": [
     {
       "@odata.id": null,

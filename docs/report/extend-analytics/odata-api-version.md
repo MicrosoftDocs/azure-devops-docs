@@ -23,7 +23,7 @@ The API version follows the _odata element in the request path and is formatted 
 
 > [!div class="tabbedCodeSnippets"]
 ```OData
-https://{account}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata
+https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/{version}/$metadata
 ```
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]

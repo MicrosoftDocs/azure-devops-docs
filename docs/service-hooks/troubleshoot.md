@@ -41,6 +41,18 @@ and event payload data, select a subscription in the table and click **History**
 
 A: A subscription becomes restricted if too many failures occur.
 
+#### Q: What does the status Disabled (due to failures) mean?
+
+A: A subscription is automatically disabled after a series of consecutive failures over a prolonged period or a _terminal failure_ is encountered.  _Transient failures_ types are retried several times before being declared a failure.  _Enduring failure_ types are not retried.  The follow are examples of each type of failure.
+* Transient: 408 (Request Timeout), 502 (Bad Gateway), 503 (Service Unavailable), 504 (Gateway Timeout)
+* Terminal: 410 (Gone)
+* Enduring: All failures that are not transient or terminal
+
+#### Q: What does the status Disabled (user left project) mean?
+
+A: The user who created the subscription is no longer a member of the team.
+
+
 #### Q: What should I try if a service hook is not working? 
 
 A: Check these:

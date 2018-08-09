@@ -1,6 +1,6 @@
 ---
 title: Artifacts in Release Management
-description: DevOps CI CD - Understand build artifacts in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand build artifacts in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.prod: devops
 ms.technology: devops-cicd
