@@ -209,7 +209,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 0. Choose **File > Save As** to save your report to your local workspace. 
 
-0. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](https://docs.microsoft.com/en-us/power-bi/service-collaborate-power-bi-workspace).
+0. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
 
     > [!div class="mx-imgBorder"]
     > ![Latest active bug count](_img/active-bugs-report/publish-powerbi.png)

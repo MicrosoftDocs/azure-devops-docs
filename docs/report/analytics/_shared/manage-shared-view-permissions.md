@@ -7,11 +7,13 @@ ms.topic: include
 
 All members of the Contributors group for your team project can use **Shared** views in Power BI. For shared views that you create, you can manage the permissions of users and groups to create, delete, or view a specific shared view.
 
-1. To change the permissions for a shared view, click the ![](/vsts/report/_img/icons/actions-icon.png) actions icon and choose the **Security** option.
+0. To change the permissions for a shared view, open **Analytics views**, and choose **All**. For details, see [Create an Analytics view](/vsts/report/analytics/analytics-views-create.md). 
 
-1. Change the permissions so that the team member or group can't edit or delete the view.
+0. Choose the ![](/vsts/report/_img/icons/actions-icon.png) actions icon and then select **Security**.
 
-1. Add a user or group who you want to grant permissions to or restrict access.
+0. Change the permissions so that the team member or group can't edit or delete the view.
+
+0. Add a user or group who you want to grant permissions to or restrict access.
 
    > [!div class="mx-imgBorder"]
    > ![Manage permissions](/vsts/report/analytics/_img/editable-views/view-permissions.png)

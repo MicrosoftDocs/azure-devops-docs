@@ -81,8 +81,8 @@ If you need to switch to a different project, choose the ![](../../_img/icons/pr
 
 ---
 
-
-## Select a dashboard to view 
+<a id="choose-dashboard" />
+## Select a dashboard to view or modify
 
 All dashboards are associated with a team. 
 
@@ -156,7 +156,7 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
 
-From the **Dashboards** hub, click the ![plus icon](../../Work/_img/icons/green_plus_icon.png) and enter a dashboard name. 
+From the **Dashboards** hub, choose the ![plus icon](../../Work/_img/icons/green_plus_icon.png) and enter a dashboard name. 
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 
@@ -259,7 +259,7 @@ When you're finished with your changes, choose **Done Editing** to exit dashboar
 
 Choose ![Edit dashboard icon](_img/edit-dashboard-icon.png) to modify your dashboard. You can then drag tiles to reorder their sequence on the dashboard. 
 
-To remove a widget, click the widget's ![Trash icon](_img/dashboard-trash-icon.png) or ![Delete icon](_img/dashboard-delete-icon.png) delete icons. 
+To remove a widget, choose the widget's ![Trash icon](_img/dashboard-trash-icon.png) or ![Delete icon](_img/dashboard-delete-icon.png) delete icons. 
 
 When you're finished with your changes, click ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.
 
@@ -286,5 +286,5 @@ As you can see, you can use team dashboards to provide guidance and keep your te
 
 ### Extensibility 
 
-Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://docs.microsoft.com/en-us/rest/api/vsts/dashboard/dashboards).  
+Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://docs.microsoft.com/rest/api/vsts/dashboard/dashboards).  
 

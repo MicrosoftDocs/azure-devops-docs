@@ -47,7 +47,7 @@ Increasing the attachment size increases the amount of data in storage and the t
 
 Have been validated the FIPS service is causing exceptions, you need to disable the FIPS service in order to avoid the exception
 
-FIPS Documentation https://support.microsoft.com/en-us/help/811833/-system-cryptography-use-fips-compliant-algorithms-for-encryption--has
+FIPS Documentation https://support.microsoft.com/help/811833/-system-cryptography-use-fips-compliant-algorithms-for-encryption--has
 
 `Application: csc.exe
 Framework Version: v4.0.30319

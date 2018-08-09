@@ -119,7 +119,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
   
  Before you create a project, you can [customize the resolution states defined in the process template](../process-templates/define-initial-configuration-test-manager.md).  
   
- [When you analyze failed tests](https://msdn.microsoft.com/en-us/library/dd286731), you assign the failure type and resolution state.  
+ [When you analyze failed tests](https://msdn.microsoft.com/library/dd286731), you assign the failure type and resolution state.  
   
  ![Analyse test run page in MTM](_img/almt_wsa11analysetest.png "ALMT_wsa11analyseTest")  
   

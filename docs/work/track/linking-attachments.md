@@ -275,8 +275,8 @@ The default TFS process templates provide reports that require you to create lin
 </tr>
 <tr>
 <td><p>CMMI</p></td>
-<td><p>[Requirements Overview Report (CMMI)](https://msdn.microsoft.com/en-us/library/ee461517.aspx)</p>
-<p> [Requirements Progress Report (CMMI)](https://msdn.microsoft.com/en-us/library/ee461582.aspx) </p></td>
+<td><p>[Requirements Overview Report (CMMI)](https://msdn.microsoft.com/library/ee461517.aspx)</p>
+<p> [Requirements Progress Report (CMMI)](https://msdn.microsoft.com/library/ee461582.aspx) </p></td>
 <td><p>Link requirements and tasks (Parent-Child) and requirements and test cases(Tested by-Tests). Link each bug to the test case that identified the code defect (Tested By) or link it to the requirement (Related).</p></td>
 </tr>
 </tbody>
