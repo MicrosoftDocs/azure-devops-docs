@@ -224,7 +224,7 @@ If a work item enters a Completed state and then is reactivated and moved out of
 
 If your team uses the Kanban board, you'll want to understand how your Kanban columns map to workflow states. For more information on configuring your Kanban board, see [Add columns](../../work/kanban/add-columns.md). 
 
-To learn more about how the system uses the state categories&mdash;Proposed, In Progress, and Completed&mdash;see [Workflow states and state categories](../../work/customize/workflow-and-state-categories.md).   
+To learn more about how the system uses the state categories&mdash;Proposed, In Progress, and Completed&mdash;see [Workflow states and state categories](../../work/work-items/workflow-and-state-categories.md).   
 
 ## Plan using estimate delivery times based on lead/cycle times  
 You can use the average lead/cycle times and standard deviations to estimate delivery times. 

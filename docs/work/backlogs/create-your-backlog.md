@@ -104,7 +104,7 @@ You have a choice as to how you want to manage bugs. Some teams like to track bu
 
 If you're using the Scrum process, your default setup is to track bugs along with PBIs. However, if you're working in a project based on the [Agile or CMMI processes](../work-items/guidance/choose-process.md), bugs don't automatically appear on your backlog.
 
-Talk with your team to determine how they want to manage bugs and then [change your team settings](../customize/show-bugs-on-backlog.md) accordingly.
+Talk with your team to determine how they want to manage bugs and then [change your team settings](../../organizations/settings/show-bugs-on-backlog.md) accordingly.
 
 > [!NOTE]    
 > Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../../organizations/settings/add-team-administrator.md).
@@ -169,10 +169,10 @@ Talk with your team to determine how they want to manage bugs and then [change y
 	> ![Open configuration settings](_img/create-backlog/settings-working-with-bugs.png)  
 	::: moniker-end
 	::: moniker range="tfs-2017"  
-	<img src="../customize/_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
+	<img src="../../organizations/settings/_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end
 	::: moniker range=">= tfs-2013 <= tfs-2015"  
-	<img src="../customize/_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
+	<img src="../../organizations/settings/_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end 
 	* Choose the first option when your team wants to manage bugs similar to requirements. Bugs can be estimated and tracked against team velocity and cumulative flow. Bugs will be associated with the Requirements category.  
 
@@ -318,7 +318,7 @@ With [Sprint planning](../scrum/assign-work-sprint.md), teams define a sprint sc
 >Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
 the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
 >
->By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can [choose how they want to treat bugs: either as requirements or tasks](../customize/show-bugs-on-backlog.md). 
+>By default, PBIs and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can [choose how they want to treat bugs: either as requirements or tasks](../../organizations/settings/show-bugs-on-backlog.md). 
 
 
 ## Related articles

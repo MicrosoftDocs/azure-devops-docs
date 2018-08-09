@@ -34,15 +34,15 @@
     - name: Use work item templates
       href: ../../../work/backlogs/work-item-template.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Customize cards on boards
-      href: ../../../work/customize/customize-cards.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
+      href: ../../../boards/boards/customize-cards.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Reorder cards
-      href: ../../../work/customize/reorder-cards.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
+      href: ../../../boards/boards/reorder-cards.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Select backlog levels
-      href: ../../../work/customize/select-backlog-navigation-levels.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.jsontoc.json
+      href: ../select-backlog-navigation-levels.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.jsontoc.json
     - name: Show bugs on backlogs & boards
-      href: ../../../work/customize/show-bugs-on-backlog.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
+      href: ../show-bugs-on-backlog.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Set working days
-      href: ../../../work/customize/set-working-days.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
+      href: ../set-working-days.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
   - name: Switch team context
     href: ../../../project/navigation/go-to-project-repo.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
   - name: Manage team notifications

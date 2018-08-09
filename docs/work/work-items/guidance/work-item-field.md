@@ -19,7 +19,7 @@ Use this index to look up a description of each field used to track work items. 
 
 To support additional tracking needs, you can define your own custom work item fields. For more information, see:  
 - **VSTS**:  [Customize process](../../../organizations/settings/work/customize-process.md)  
-- **TFS**: [Modify or add a custom field](../../customize/add-modify-field.md)  
+- **TFS**: [Modify or add a custom field](../../../reference/add-modify-field.md)  
 
 
 ## Alphabetical index 
@@ -74,12 +74,12 @@ When adding custom fields, note the following limits:
 
 There are several non-changeable and virtually hidden attributes for each field. You can look up the assignments of these fields using the Work Item Field Explorer tool.  
 
-![Work item field explorer](../../customize/_img/IC633020.png)
+![Work item field explorer](../../../reference/_img/IC633020.png)
 
 For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](http://blogs.msdn.com/b/visualstudioalm/archive/2012/08/17/work-item-field-attributes-what-you-can-and-can-t-change.aspx).
 
 To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio):
- - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../../customize/process/new-work-item-experience.md). 
+ - For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../../../reference/process/new-work-item-experience.md). 
  - For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
 
 
@@ -89,9 +89,9 @@ To access the Work Item Field Explorer, you must install the Process Editor (req
 - [Create managed queries](../../track/example-queries.md)
 - [Define a query](../../track/using-queries.md) 
 - [Choose a process](choose-process.md)  
-- [Reportable fields reference](../../customize/reference/reportable-fields-reference.md) (on-premises TFS only)    
+- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises TFS only)    
 
-You can list the attributes of fields using the [**witadmin listfields** command](../../customize/reference/witadmin/manage-work-item-fields.md). 
+You can list the attributes of fields using the [**witadmin listfields** command](../../../reference/witadmin/manage-work-item-fields.md). 
 
 ### VSTS and the Inheritance process model  
 To add fields to a process, modify select field attributes, and review fields added to a process, see [Customize a process](../../../organizations/settings/work/customize-process.md).  
@@ -100,5 +100,5 @@ Also, you can [view the list of fields defined for a process](../../../organizat
 
 
 ### TFS   
-You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../customize/reference/witadmin/manage-work-item-fields.md).  
+You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../../reference/witadmin/manage-work-item-fields.md).  
 

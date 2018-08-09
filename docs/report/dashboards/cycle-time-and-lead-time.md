@@ -108,7 +108,7 @@ We recommend your team review the lead/cycle time charts before or during each r
 
 - [Kanban basics](../../work/kanban/kanban-basics.md)  
 - [Cumulative flow diagram](cumulative-flow.md)
-- [Workflow states and state categories](../../work/customize/workflow-and-state-categories.md)
+- [Workflow states and state categories](../../work/work-items/workflow-and-state-categories.md)
 - [Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), and [CMMI](../../work/work-items/guidance/cmmi-process.md) processes
 
  
@@ -131,6 +131,6 @@ The diagram below illustrates how lead time differs from cycle time. These measu
 
 Only completed work items&mdash;ones that have entered a Done or Closed state&mdash;factor into the calculations of lead time and cycle time. If a work item is marked completed and then reenters an in progress state, then it will contribute to the lead/cycle time measures when it is marked completed for a second time.  
 
-If your team uses the Kanban board, you'll want to understand how your workflow states and custom Kanban columns map to state categories. For more information on configuring your Kanban board, see [Add columns](../../work/kanban/add-columns.md). And, to learn more about how workflow states map to state categories, see [Workflow states and state categories](../../work/customize/workflow-and-state-categories.md).   
+If your team uses the Kanban board, you'll want to understand how your workflow states and custom Kanban columns map to state categories. For more information on configuring your Kanban board, see [Add columns](../../work/kanban/add-columns.md). And, to learn more about how workflow states map to state categories, see [Workflow states and state categories](../../work/work-items/workflow-and-state-categories.md).   
 
 -->

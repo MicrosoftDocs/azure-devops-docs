@@ -99,7 +99,7 @@ For additional tips when working with the new queries experience or the director
 - [Work item field index](../work-items/guidance/work-item-field.md)   
 - [Query permissions](set-query-permissions.md)  
 
-To add a custom field to support your query needs, see [Customize your work tracking experience](../customize/customize-work.md). 
+To add a custom field to support your query needs, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 To learn about query charts and widgets, see these topics:  
 - [Chart a flat-list query](../../report/dashboards/charts.md)   

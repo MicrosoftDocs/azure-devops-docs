@@ -37,7 +37,7 @@ When you add a team, you add a number of team assets which a team admin can  con
 To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 ::: moniker-end 
 ::: moniker range=">= tfs-2013 <= tfs-2018"   
-To add a board to support an additional portfolio backlog, see [Add a portfolio backlog level](../customize/add-portfolio-backlogs.md).
+To add a board to support an additional portfolio backlog, see [Add a portfolio backlog level](../../reference/add-portfolio-backlogs.md).
 ::: moniker-end   
 
 [!INCLUDE [temp](../_shared/open-kanban-board.md)] 
@@ -77,7 +77,7 @@ The system automatically saves the work item with the title you entered. You can
 
 ---
 
-To add details to any work item, choose the title. Or, you can directly modify any field that displays. For example, you can reassign a work item by clicking the Assigned To field. To customize the set of fields displayed on the card, see [Customize cards](../customize/customize-cards.md).
+To add details to any work item, choose the title. Or, you can directly modify any field that displays. For example, you can reassign a work item by clicking the Assigned To field. To customize the set of fields displayed on the card, see [Customize cards](../../boards/boards/customize-cards.md).
 
 <a id="update-status">  </a>
 ## Update status via drag-and-drop
@@ -89,7 +89,7 @@ As work completes in one stage, update the status of an item by dragging and dro
 ::: moniker range=">= tfs-2015"
 ## Update fields from the card 
 
-You can quickly update a field or reassign ownership directly from the board. If the field you want to update isn't showing, then [customize the card to show it](../customize/customize-cards.md). 
+You can quickly update a field or reassign ownership directly from the board. If the field you want to update isn't showing, then [customize the card to show it](../../boards/boards/customize-cards.md). 
 
 ![Kanban, assign items](_img/ALM_CC_UpdateFieldOnCard.png)
 
@@ -117,17 +117,17 @@ To get the full power of the Kanban board working for you, you'll want to config
 <!---
 
 
-If you're new to VSTS or TFS and want to understand what you can customize, see [Customize your work tracking experience](../customize/customize-work.md). 
+If you're new to VSTS or TFS and want to understand what you can customize, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 Here are a few things you can do. See at a glance the estimated size of work for each item which displays at the bottom right of each card. Add items to your backlog in the first column. When priorities change, move items up and down within a column. And, as work completes in one stage, update the status of an item by dragging and dropping it to a downstream stage.
 
 Each team can manage their backlog and customize their Kanban board. [Add teams](../../organizations/settings/add-teams.md) when you assign specific feature areas to different teams for development. Each team can then manage their backlog and focus on how they will develop their deliverables. 
 
 Here are some useful tips when working with the Kanban board:
-- To quickly assign items to a team member, add the Assign To field to display on the cards (see [Customize cards](../customize/customize-cards.md))   
+- To quickly assign items to a team member, add the Assign To field to display on the cards (see [Customize cards](../../boards/boards/customize-cards.md))   
 - Customize cards to show the fields you most care about  
 - Add a swimlane to track high-priority work or track work which falls into different service level agreements (see [Swimlanes](expedite-work.md))   
-- Highlight specific work items by color coding cards based on a field value or tag (see [Customize cards](../customize/customize-cards.md)) 
+- Highlight specific work items by color coding cards based on a field value or tag (see [Customize cards](../../boards/boards/customize-cards.md)) 
 - If you use Scrumban, drag-and-drop cards onto a sprint to quickly assign them to a sprint.  
 
 

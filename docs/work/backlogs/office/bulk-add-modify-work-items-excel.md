@@ -111,7 +111,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 	![Team ribbon, Select User](_img/bulk-add-excel-select-user-team-ribbon.png)  
 
-	A person-named field is any field whose ```syncnamechanges``` attribute has been set to [synchronize with Active Directory, Azure Active Directory, or a Workgroup](../../customize/reference/field-definition-element-reference.md).  
+	A person-named field is any field whose ```syncnamechanges``` attribute has been set to [synchronize with Active Directory, Azure Active Directory, or a Workgroup](../../../reference/xml/field-definition-element-reference.md).  
 
 3. Begin typing the name of the user account and the Assign User dialog will automatically filter the results until you can select the account of interest.  
 

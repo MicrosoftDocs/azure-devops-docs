@@ -123,6 +123,9 @@
     - name: "Scale & Configure Teams"
       tocHref: /vsts/organizations/settings/scale/
       topicHref: /vsts/organizations/settings/scale/index
+    - name: Customization
+      tocHref: /vsts/reference/
+      topicHref: /vsts/reference/index
     - name: Billing
       tocHref: /vsts/billing/
       topicHref: /vsts/billing/index

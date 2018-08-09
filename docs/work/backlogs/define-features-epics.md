@@ -45,7 +45,7 @@ With portfolio backlogs you can quickly add and group items into a hierarchy, dr
 ## View a backlog or portfolio backlog 
 To focus on one level of a backlog at a time, choose the name of the backlog you want to view. If you don't see all three backlog levels&mdash;
 Epics, Features, and Backlog items&mdash;
-you can [enable them for your team](../customize/select-backlog-navigation-levels.md). 
+you can [enable them for your team](../../organizations/settings/select-backlog-navigation-levels.md). 
 
 For example, when you choose **Epics**, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 
@@ -102,7 +102,7 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 ---
 
 > [!TIP]  
-> Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md).  
+> Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md).  
 
 
 <a name="add-features-epics"></a>
@@ -266,11 +266,11 @@ For Scrum projects, your hierarchy is as shown:
 
 ![Hierarchical view of backlogs](_img/ALM_OB_Scrum_WIT_Hier_C.png) 
 
-Because [teams can also set bugs as tasks](../customize/show-bugs-on-backlog.md), bugs can be added as children of PBIs. 
+Because [teams can also set bugs as tasks](../../organizations/settings/show-bugs-on-backlog.md), bugs can be added as children of PBIs. 
 
 The work item types you'll see depends on the [process you selected to create your project](../work-items/guidance/choose-process.md). 
 
-If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../customize/show-bugs-on-backlog.md). 
+If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../../organizations/settings/show-bugs-on-backlog.md). 
 
  
 ## Try this next  
@@ -285,7 +285,7 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs ](filter-backlogs.md)
-- [Select backlog navigation levels for your team](../customize/select-backlog-navigation-levels.md)   
+- [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](work-multi-team-ownership-backlogs.md)  
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 

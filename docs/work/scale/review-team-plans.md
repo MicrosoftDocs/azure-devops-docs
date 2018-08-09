@@ -135,7 +135,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 When defining a plan, note the following:  
 - Use the name and description field to clearly identify your plan within the project 
 - You can choose one or more teams from any project defined in the organization or collection  
-- You can choose one or more [active backlogs for a team](../customize/select-backlog-navigation-levels.md)
+- You can choose one or more [active backlogs for a team](../../organizations/settings/select-backlog-navigation-levels.md)
 - The order in which you enter the teams and team backlogs defines the order in which they'll appear in the plan 
 -  To limit the number or types of work items, specify the field criteria.
 
@@ -150,7 +150,7 @@ Once you've defined a plan, you can further customize it.
 	- Edit the teams you've selected and their backlog level  
 	- Set field criteria to further limit the work items that will appear on the plan 
 	- Add markers to show important upcoming events on your timeline 
-	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or task board](../customize/customize-cards.md).  
+	- Customize the fields that display on the cards, similar to how you [customize them for your Kanban or task board](../../boards/boards/customize-cards.md).  
 
 	Here, we add the Tags field criteria. Only work items that contain the *RC Review* tag will appear in the Delivery Plan. 
 

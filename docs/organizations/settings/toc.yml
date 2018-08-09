@@ -84,15 +84,15 @@
     - name: Use work item templates
       href: ../../work/backlogs/work-item-template.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
     - name: Customize cards on boards
-      href: ../../work/customize/customize-cards.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+      href: ../../boards/boards/customize-cards.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
     - name: Reorder cards
-      href: ../../work/customize/reorder-cards.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+      href: ../../boards/boards/reorder-cards.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
     - name: Select backlog levels
-      href: ../../work/customize/select-backlog-navigation-levels.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+      href: select-backlog-navigation-levels.md
     - name: Show bugs on backlogs & boards
-      href: ../../work/customize/show-bugs-on-backlog.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+      href: show-bugs-on-backlog.md
     - name: Set working days
-      href: ../../work/customize/set-working-days.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+      href: set-working-days.md
     - name: Switch team context
       href: ../../project/navigation/go-to-project-repo.md
   - name: Security
@@ -144,14 +144,14 @@
     - name: Customize backlogs & boards
       href: ./work/customize-process-backlogs-boards.md
     - name: Hosted XML process model
-      href: ../../work/customize/hosted-xml-process-model.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+      href: ./work/hosted-xml-process-model.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
       items:
       - name: Customize a Hosted XML process
-        href: ../../work/customize/import-process/customize-process.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+        href: ./work/import-process/customize-process.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
       - name: Import a process
-        href: ../../work/customize/import-process/import-process.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+        href: ./work/import-process/import-process.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
       - name: Customize form layout
-        href: ../../work/customize/customize-wit-form.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+        href: ../../reference/customize-wit-form.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
       - name: Migrate Hosted XML to inherited (Preview)
         items:
         - name: Supported clone operations

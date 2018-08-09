@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 02/26/2018
+ms.date: 08/08/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2013'
 
 As a first step in resolving connectivity issues with VSTS, do the following:
 
-1. Sign out of your browser. You can do this by clicking this [Visual Studio Sign out link](http://aka.ms/VsSignout).
+1. Sign out of your browser. You can do this by choosing the [Visual Studio Sign out](http://aka.ms/VsSignout) link.
 
 2. Delete your browser cookies. For most browsers, you can do this by entering CTRL+SHIFT+DEL.
 
@@ -92,7 +92,7 @@ Here's a list of the most frequently encountered connection problems and what to
 
 4. Verify whether your team project has been moved to another team project collection in TFS. If it has been moved, you must create a connection to the new server name.
 
-For additional troubleshooting tips, see [TF31002: Unable to connect to this Team Foundation Server](../work/customize/reference/error/tf31002-unable-connect-tfs.md).
+For additional troubleshooting tips, see [TF31002: Unable to connect to this Team Foundation Server](../reference/error/tf31002-unable-connect-tfs.md).
 
 ::: moniker-end
 
