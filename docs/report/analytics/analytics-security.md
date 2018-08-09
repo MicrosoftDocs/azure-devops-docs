@@ -23,17 +23,18 @@ To edit an Analytics view or connect to an Analytics view in Power BI, you must 
 
 If you are just adding an Analytics widget to a dashboard or viewing an Analytics widget added to a dashboard, then no special permissions are required. 
 
-## Set permissions to access the Analytics Service
+## Set permissions 
 
-The Analytics Service implements a subset of the security found in the VSTS operational store. The security container in the Analytics Service is at the team project level.   
-
-You grant permissions to a user by setting the **View analytics** permission to Allow through the team project admin Security page.    
-
-0. Open the admin context from the user/team project context, click the ![](../../_img/icons/gear-icon.png) gear settings icon, and click the **Security** tab.
+You grant or restrict permissions to a user by setting one or more permissions for the Analytics service to **Allow** or **Deny** through the team project **Security** page. By default, all members of the Contributors group are granted access to edit and delete shared Analytics views, and view Analytics service data.  
   
-0. Choose the group that you want to modify permissions for and then set the **View analytics** permission. 
+0. Open **Project Settings>Security**. For details, see [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+  
+0. Choose the person or group that you want to modify permissions for and then change their permission assignment. 
 
-	<img src="./_img/analytics-permissions.png" alt="Analytics Permission dialog" style="border: 1px solid #C3C3C3;" />
+	For example, here we set the permissions for Chuck Reinhart, denying him permission to delete or modify shared Analytics views, but allowing him to access the Analytics service data. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Project Settings>Security>User>Permissions dialog, set Analytics permissions](_img/analytics-security-permissions.png) 
 
 	To learn more about working with permissions, see [Security & Identity](../../organizations/security/index.md).
 
@@ -67,4 +68,5 @@ a project level filter instead of using a global query. For information on provi
 
 ## Related articles 
 
+-  [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md)
 -  [Power BI integration overview](../powerbi/overview.md)

@@ -28,22 +28,22 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
 
 2. Create a blank workbook
 
-3. Click the Data tab and then click New Query > From Other Sources > From OData Feed
+3. In the **Data** tab, choose **New Query>From Other Sources>From OData Feed**.
 
 	![Excel Get Data ](_img/excel1.png) 
 
-4. Enter the URL in the format below and click OK:  
+4. Enter the URL in the format below and choose **OK**:  
 
 	```
-	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
+	https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0-preview
 	```  
 
 	![Select OData Feed ](../powerbi/_img/pbi3.png)  
 
-	If the *account* is "fabrikam" then the URL is ```https://fabrikam.analytics.visualstudio.com/_odata/v1.0-preview```.
+	If the *OrganizationName* is "fabrikam" then the URL is ```https://fabrikam.analytics.visualstudio.com/_odata/v1.0-preview```.
 
 	>[!NOTE]  
-	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
+	>Alternatively, you can enter the URL ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
 
 5. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](client-authentication-options.md)
 6. Either select a single entity to retrieve the data for or check **Select multiple items** and choose the data to return
@@ -51,7 +51,7 @@ the Power Query add-in which you can do from [Microsoft Power Query for Excel](h
     ![Excel Navigator](_img/excel2.png)
 
 	At this point, if you click **Load**, Excel will load all of the data in each entity into Power Query. However, this may be more data than you want (or than Excel can handle). 
-    To filter the data, select the entity to filter and click Edit. This brings up the Query Editor. For each column you want to filter on, select it and set your filter. When this is complete click Close & Apply in the upper left corner.
+    To filter the data, select the entity to filter and choose **Edit**. This brings up the Query Editor. For each column you want to filter on, select it and set your filter. When this is complete choose **Close & Apply** in the upper left corner.
 
 	> [!IMPORTANT]  
     > Do *not* select any entity with the name **Snapshot** in it. These entities contain the state of every work item
@@ -66,7 +66,7 @@ This allows the following options:
 * To a worksheet which will just load the one entity per worksheet
 * To a model (which can be selected in addition to the other options) which loads the data into PowerPivot
 
-More information on these options can be found in the [Excel documentation](https://support.office.com/en-us/article/Add-a-query-to-an-Excel-worksheet-Power-Query-ca69e0f0-3db1-4493-900c-6279bef08df4?ui=en-US&rs=en-US&ad=US#querytoworksheet).
+More information on these options can be found in the [Excel documentation](https://support.office.com/article/Add-a-query-to-an-Excel-worksheet-Power-Query-ca69e0f0-3db1-4493-900c-6279bef08df4?ui=en-US&rs=en-US&ad=US#querytoworksheet).
 
 ##Handling relationships
  

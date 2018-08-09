@@ -37,15 +37,15 @@ You can access the Analytics Service data through the Power BI Desktop OData fee
 6.	Enter the URL in the format into a supported browser:  
 
 	```OData
-	https://{account}.analytics.visualstudio.com/_odata/v1.0-preview
+	https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0-preview
 	```  
 
 	<img src="_img/pbi3.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />   
 
-	If the *AccountName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/_odata/v1.0-preview```.
+	If the *OrganizationName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/_odata/v1.0-preview```.
 
 	>[!NOTE]  
-	>Alternatively, you can enter the URL ```https://{account}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
+	>Alternatively, you can enter the URL ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
 
 7. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](../analytics/client-authentication-options.md).  
 8. Next, select the entities you want to retrieve data for by checking those entities.

@@ -86,7 +86,7 @@ There are several extensions available from the [Marketplace](https://marketplac
 - [VSTS Rollup](https://marketplace.visualstudio.com/items?itemName=canarysautomationspvtltd.vstsrollup) supports VSTS only
 - [TFS Aggregrator](https://marketplace.visualstudio.com/items?itemName=tfsaggregatorteam.tfs-aggregator-server-plugin#) supports VSTS and TFS 
 
-Or, you can write an extension using the [REST API for work tracking](https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregrator](https://tfsaggregator.github.io/).  
+Or, you can write an extension using the [REST API for work tracking](https://docs.microsoft.com/rest/api/vsts/wit/work%20items) to get rollup. A code sample available on github that can get you started is [TFS Aggregrator](https://tfsaggregator.github.io/).  
 
 <a name="marketplace"></a>
 ## Analytics (VSTS only) 

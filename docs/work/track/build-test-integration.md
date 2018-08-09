@@ -97,7 +97,7 @@ To customize a field or pick list, see [Add or modify a field to support queries
 <li><p><strong>Not Automated</strong></p></li>
 <li><p><strong>Planned</strong></p></li>
 </ul>
-<p>To run automated tests, see [Automate a test case in Microsoft Test Manager](https://msdn.microsoft.com/en-us/library/dd380741.aspx).</p>
+<p>To run automated tests, see [Automate a test case in Microsoft Test Manager](https://msdn.microsoft.com/library/dd380741.aspx).</p>
 <p>Reference name=Microsoft.VSTS.TCM.AutomationStatus, Data type=String</p>
 </td>
 <td>Test Case</td>
@@ -180,7 +180,7 @@ Repro Steps (or Steps to reproduce)
 
 **Notes**  
 1.  Do not customize the pick list for these fields. The system accepts only those values listed.  
-2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Fields that support integration with test, build, and version control](https://msdn.microsoft.com/en-us/library/ms194965.aspx).  
+2.  By adding a `GLOBALLIST` element to the `FIELD` definition, you can provide a drop-down menu of builds that users can choose from. To learn how, see [Fields that support integration with test, build, and version control](https://msdn.microsoft.com/library/ms194965.aspx).  
 3.  Requires TFS 2013.2 or TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Shared Parameters. To learn more, see Configure features after a TFS upgrade.  
 4.  Requires TFS 2013.3 to be installed on the application-tier server and existing projects to be updated to support Test Plan and Test Suite.
 

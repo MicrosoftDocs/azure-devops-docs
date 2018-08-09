@@ -55,11 +55,11 @@ Before you get started using Power BI with VSTS, make sure you have completed th
 
 3. Configure the [permissions required to access the Analytics service](../analytics/analytics-security.md).
 
-4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/en-us/documentation/powerbi-landing-page/).
+4. Review the [knowledge base of Power BI articles](https://powerbi.microsoft.com/documentation/powerbi-landing-page/).
 
 5. If you are not familiar with the VSTS Analytics Service, we recommend you read "[What is the Analytics Service](../analytics/what-is-analytics.md)" before continuing.
 
 ## Deprecated PowerBI.com Content Pack
 
-In November, 2017 we deprecated the PowerBI.com Visual Studio Team Services (VSTS) Content Pack. We deprecated it due to the negative impact it has had on VSTS accounts, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won€™t be able to create any new datasets.
+In November, 2017 we deprecated the PowerBI.com Visual Studio Team Services (VSTS) Content Pack. We deprecated it due to the negative impact it had on the performance of VSTS organizations, including throttling end users access. Support will continue for all existing PowerBI.com datasets based on the Content Pack; however, you won't be able to create any new datasets.
 

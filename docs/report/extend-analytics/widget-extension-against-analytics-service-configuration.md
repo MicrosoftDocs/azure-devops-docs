@@ -344,7 +344,7 @@ function createChart(VSS_Auth_Service, WidgetHelpers, settings) {
     VSS.getAccessToken().then(function (token) {
         authToken = VSS_Auth_Service.authTokenManager.getAuthorizationHeader(token);
 
-        var accountName = VSS.getWebContext().account.name;
+        var organizationName = VSS.getWebContext().account.name;
         var projectName = VSS.getWebContext().project.name;
         var groupBy = "";
         var category = "";
@@ -368,7 +368,7 @@ function createChart(VSS_Auth_Service, WidgetHelpers, settings) {
             groupBy = "";
         }
 
-        var urlString = "https://" + accountName + ".analytics.visualstudio.com/" + projectName
+        var urlString = "https://" + organizationName + ".analytics.visualstudio.com/" + projectName
             + "/_odata/v1.0-preview/WorkItems?$apply=groupby((" + groupByClause + "), aggregate($count as Count))";
 
         $.ajax({

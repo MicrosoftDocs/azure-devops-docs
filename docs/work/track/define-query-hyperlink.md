@@ -99,7 +99,7 @@ SELECT [System.ID], [System.Title], [System.State]
 ## Related articles: 
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)  
 - [Wiql Editor, a Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)  
-- [REST API, Wiql](https://docs.microsoft.com/en-us/rest/api/vsts/wit/wiql)
+- [REST API, Wiql](https://docs.microsoft.com/rest/api/vsts/wit/wiql)
  
 > [!NOTE]  
 > For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.  

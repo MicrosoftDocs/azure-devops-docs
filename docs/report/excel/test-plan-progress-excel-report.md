@@ -95,4 +95,4 @@ You can use the Test Plan Progress report to monitor test activities and report 
 -   [Save a file to a SharePoint library or another Web location](http://go.microsoft.com/fwlink/?LinkId=165725)  
   
 ## Related notes
- [Test results](https://msdn.microsoft.com/en-us/library/ms244708)
+ [Test results](https://msdn.microsoft.com/library/ms244708)

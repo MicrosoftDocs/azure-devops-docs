@@ -260,7 +260,7 @@ Removed the Sprint type definition and All Sprints query, whose functionality ha
 <h4>The following changes were made to the Agile process:</h4>
 <ul>
 <li>
-<p>The ```New``` state was added as the initial state for User Stories and Tasks. This change was introduced to support transitioning User Stories and Tasks from a ```New``` state to an ```Active``` state. Without the ```New``` state, User Stories assigned to an iteration remain on the product backlog until they are resolved, which is not a desired or expected behavior. See <a href="https://msdn.microsoft.com/en-us/library/hh500412(v=vs.110).aspx">Update the Workflow for Agile Team Projects</a>. </p>
+<p>The ```New``` state was added as the initial state for User Stories and Tasks. This change was introduced to support transitioning User Stories and Tasks from a ```New``` state to an ```Active``` state. Without the ```New``` state, User Stories assigned to an iteration remain on the product backlog until they are resolved, which is not a desired or expected behavior. See <a href="https://msdn.microsoft.com/library/hh500412(v=vs.110).aspx">Update the Workflow for Agile Team Projects</a>. </p>
 </li>
 <li>
 <p>To support removing cut work items from the backlog, the ```Removed``` state was added to the workflow state for the following work item types: User Story and Task.  </p>

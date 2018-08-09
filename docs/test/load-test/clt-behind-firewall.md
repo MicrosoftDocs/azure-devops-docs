@@ -1,6 +1,6 @@
 ---
 title: Test private and intranet apps
-description: Test private and intranet apps using cloud-based load testing using the features of the Test hub in Microsoft VSTS
+description: Test private and intranet apps using cloud-based load testing with the Test hub in Microsoft VSTS
 ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
 ms.prod: devops
 ms.technology: devops-test
@@ -173,7 +173,7 @@ to manage self-provisioned agents. Download the script and unblock the file befo
 
 * **TeamServicesAccountName**. The name of your VSTS subscription you want to manage. Specify just the name.
   For example, if your VSTS subscription is xyz.visualstudio.com, enter just **xyz**.
-* **PATToken**. Required for authentication. Obtain a PAT token for your VSTS subscription [as described here](https://visualstudio.microsoft.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
+* **PATToken**. Required for authentication. Obtain a PAT token for your VSTS subscription [as described here](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
   Ensure the selected scope is **Load Test (read and write)**.
 
 The available operations and the switches for the script are:
