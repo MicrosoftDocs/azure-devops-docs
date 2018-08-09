@@ -88,7 +88,7 @@ and choose the version control to manage your code.
 	![Create your team project](_img/set-up-vs/create-team-project-vs.png)
 
 	Not sure which to choose? Learn which 
-	[process](../../work/work-items/guidance/choose-process.md) 
+	[process](../../boards/work-items/guidance/choose-process.md) 
 	and version control ([Git](../../repos/git/overview.md) 
 	or [Team Foundation Version Control](../../repos/tfvc/overview.md))
 	work best for you.
@@ -116,7 +116,7 @@ or change them later in Visual Studio options.
 *	Add code to [Git](../../repos/git/share-your-code-in-git-vs.md) 
 or [Team Foundation](../../repos/tfvc/share-your-code-in-tfvc-vs.md) version control
 
-*	[Create your backlog](../../work/backlogs/create-your-backlog.md) to organize your work, 
+*	[Create your backlog](../../boards/backlogs/create-your-backlog.md) to organize your work, 
 	[manage your process](../../organizations/settings/work/manage-process.md), 
 	or [customize your process](../../organizations/settings/work/customize-process.md)
 

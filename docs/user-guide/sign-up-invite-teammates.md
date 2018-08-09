@@ -51,7 +51,7 @@ Sign up for a VSTS organization to upload and share code in a free unlimited pri
 	To change default assignments, use the following guidance:
 
 	- **Project name**: You can specify your team project name. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ &#42; } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less.
-    - **Organize work using**: The default work tracking process is set to **Agile**. If you want to work with Scrum or CMMI processes, then select those now.  You can't change the process after the team project is created. (To learn more, see [Choose process](../work/work-items/guidance/choose-process.md). 
+    - **Organize work using**: The default work tracking process is set to **Agile**. If you want to work with Scrum or CMMI processes, then select those now.  You can't change the process after the team project is created. (To learn more, see [Choose process](../boards/work-items/guidance/choose-process.md). 
     - **Host your projects in**: You can choose between [several locations for where you want your data hosted](https://www.microsoft.com/trustcenter/privacy/vsts-location).
  
 	><img src="_img/sign-up/change-details.png" alt="Choose details for your VSTS organization" style="border: 2px solid #C3C3C3;" />
@@ -69,7 +69,7 @@ you can invite others to join your project, add code, start planning and trackin
 
 ## Invite others to join your team
 
-[!INCLUDE [temp](../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 

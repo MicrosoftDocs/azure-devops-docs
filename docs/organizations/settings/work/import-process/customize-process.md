@@ -284,7 +284,7 @@ The  ```WORKFLOW``` element and its child elements must conform to the syntax an
 *   Must define a transition between all workflow states that are mapped to the ```Proposed``` state category and workflow states mapped to the ```InProgress``` state category    
 *   Must define a transition between all workflow states that are mapped to the ```InProgress``` state category  and workflow states mapped to the ```Complete``` state category.   
 
-For a description of state category and mappings, see [Workflow states and state categories](../../../../work/work-items/workflow-and-state-categories.md).
+For a description of state category and mappings, see [Workflow states and state categories](../../../../boards/work-items/workflow-and-state-categories.md).
 
 
 <a id="wit-global-list-definitions"></a>

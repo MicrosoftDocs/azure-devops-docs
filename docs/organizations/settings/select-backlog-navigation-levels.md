@@ -45,7 +45,7 @@ Because this setting affects all team members' view of the team backlogs and boa
 ::: moniker range=">= tfs-2018" 
 1. From your team's backlog page, choose the ![](../../_img/icons/gear-icon.png) gear icon to open the common configuration team settings.
 
-	![Backlog board, open team settings](../../work/backlogs/_img/organize-backlog-open-ccdialog.png) 
+	![Backlog board, open team settings](../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
 
 2. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
 
@@ -58,7 +58,7 @@ Because this setting affects all team members' view of the team backlogs and boa
 
 1. From your team's backlog page, choose the ![](../../_img/icons/gear-icon.png) gear icon to open the common configuration team settings. 
 
-	![Backlog board, open team settings](../../work/backlogs/_img/organize-backlog-open-ccdialog.png)  
+	![Backlog board, open team settings](../../boards/backlogs/_img/organize-backlog-open-ccdialog.png)  
 
 2. Click the **Backlogs** tab and check the boxes of those backlog levels you want your team to manage. 
 
@@ -72,27 +72,27 @@ Requires TFS 2015.1 or later version.
 
 1. From your web portal, choose the ![](../../_img/icons/gear-icon.png) gear icon to open the administration page. 
 
-	![Gear icon provides access to admin pages](../../work/_img/icons/ALM_OpenAdminContext.png)  
+	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)  
 
 2. From **Overview**, choose the team whose settings you want to configure, and then choose **Settings**. 
 
-	![Backlog board, open team settings]((../../work/backlogs/_img/organize-backlog-open-ccdialog.png)  
+	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png)  
 
 3. Choose the **Backlogs** tab and check the boxes of those backlog levels you want your team to manage. 
 
-	![TFS 2015.1 or later, web portal, team settings dialog, Backlogs tab](../../work/backlogs/_img/ALM_OB_BacklogSettings.png)  
+	![TFS 2015.1 or later, web portal, team settings dialog, Backlogs tab](../../boards/backlogs/_img/ALM_OB_BacklogSettings.png)  
 
 4. To see the changes, open or refresh your team's backlog web page. 
  ::: moniker-end
 
 ## Related articles
 
-- [Get started with Agile tools to plan and track work](../../work/backlogs/overview.md)
-- [Backlogs, boards, and plans](../../work/backlogs/backlogs-boards-plans.md)
-- [Create your backlog](../../work/backlogs/create-your-backlog.md)  
-- [Define features and epics](../../work/backlogs/define-features-epics.md)
-- [Organize your backlog](../../work/backlogs/organize-backlog.md)   
-- [Portfolio management, setup a team hierarchy](../../work/scale/portfolio-management.md)  
-- [Work with multi-team ownership of backlog items](../../work/backlogs/work-multi-team-ownership-backlogs.md)
-- [Visibility across teams](../../work/scale/visibility-across-teams.md)  
+- [Get started with Agile tools to plan and track work](../../boards/backlogs/overview.md)
+- [Backlogs, boards, and plans](../../boards/backlogs/backlogs-boards-plans.md)
+- [Create your backlog](../../boards/backlogs/create-your-backlog.md)  
+- [Define features and epics](../../boards/backlogs/define-features-epics.md)
+- [Organize your backlog](../../boards/backlogs/organize-backlog.md)   
+- [Portfolio management, setup a team hierarchy](../../boards/plans/portfolio-management.md)  
+- [Work with multi-team ownership of backlog items](../../boards/backlogs/work-multi-team-ownership-backlogs.md)
+- [Visibility across teams](../../boards/plans/visibility-across-teams.md)  
 

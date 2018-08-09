@@ -26,7 +26,7 @@ When you customize a process template, you can make the following WIT customizat
   
 You specify the type definitions for a process template for several work items as a task within the WorkItemTracking plug-in. This task is required because work item types support tracking and reporting work. You specify each type definition file to upload within the **taskXml** element. The plug-ins for test management, reports, and the portal depend on the successful upload of the definitions for WITs.  
   
-The [default process templates](../../work/work-items/guidance/choose-process.md) define several WITs. The types and the fields that are defined within them are referenced in the definitions of categories, work item queries, and reports. Therefore, the task to upload the WIT definitions must successfully complete before the tasks to upload categories, work item queries, and reports.  
+The [default process templates](../../boards/work-items/guidance/choose-process.md) define several WITs. The types and the fields that are defined within them are referenced in the definitions of categories, work item queries, and reports. Therefore, the task to upload the WIT definitions must successfully complete before the tasks to upload categories, work item queries, and reports.  
   
 Also, the task to upload the definition files for link types must precede the task to upload the type definitions for WITs. For more information, see [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   

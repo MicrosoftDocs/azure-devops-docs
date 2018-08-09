@@ -99,7 +99,7 @@ From the web portal, choose the ![](../../_img/icons/gear_icon.png) gear icon to
 <a id="iterations"></a>  
 ## Add iterations and set iteration dates
 
-From **Iterations**, you can add iterations that teams can then select for their use. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../work/scrum/scrum-sprint-planning-tools.md).  
+From **Iterations**, you can add iterations that teams can then select for their use. You add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md).  
 
 ::: moniker range=">= tfs-2017"
 <a id="define-sprints-team-services">   </a>
@@ -135,19 +135,19 @@ For Scrum-based projects, you'll see the following set of sprints.
 
 	For Scrum-based projects, you'll see these set of sprints. 
 
-	<img src="../../work/scrum/_img/activate-team-sprints.png" alt="Example Iterations for a Team" style="border: 1px solid #C3C3C3;" />  
+	<img src="../../boards/sprints/_img/activate-team-sprints.png" alt="Example Iterations for a Team" style="border: 1px solid #C3C3C3;" />  
 
 	You can change the name, location within the tree hierarchy, or set dates for any sprint. Simply open it (double-click or press Enter key) and specify the info you want.
 
 2. Schedule the start and end dates for those sprints you plan to use. 
 
-	<img src="../../work/scrum/_img/set-sprint-start-end-dates.png" alt="Define start and end dates for a sprint" style="border: 1px solid #C3C3C3;" />  
+	<img src="../../boards/sprints/_img/set-sprint-start-end-dates.png" alt="Define start and end dates for a sprint" style="border: 1px solid #C3C3C3;" />  
 
 	After you set the start and end dates for one iteration, the calendar tool automatically attempts to set the next set of dates, based on the same iteration length you specified for the first. For example, if you set a three week sprint for Sprint 1, then when you select the start date for Sprint 2, the calendar tool automatically determines the start and end dates based on the next three weeks. You can accept or change these dates.  
 
 3. To add another sprint, select <b>New child</b> and name it what you want. Here, we call it Sprint 7.  
 
-	<img src="../../work/scrum/_img/create-new-child-under-sprint.png" alt="Iterations, defaults defined for Agile" style="border: 2px solid #C3C3C3;" />
+	<img src="../../boards/sprints/_img/create-new-child-under-sprint.png" alt="Iterations, defaults defined for Agile" style="border: 2px solid #C3C3C3;" />
 
 	Your next step is to [select the sprints each team will use](../../organizations/settings/set-team-defaults.md#activate-sprints-tfs). 
  
@@ -182,7 +182,7 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 
 ## Chart progress by iteration
 
-You can quickly generate [queries](../../work/track/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../../report/dashboards/charts.md) as shown in the following stacked bar chart.  
+You can quickly generate [queries](../../boards/queries/using-queries.md) to view the progress for those areas and iterations. As an example, you can [visualize progress of work items assigned to sprints](../../report/dashboards/charts.md) as shown in the following stacked bar chart.  
 
 <img src="_img/areas/ALM_CW_StackedBarChart.png" alt="Stacked bar chart by area" style="border: 1px solid #C3C3C3;" /> 
 
@@ -190,8 +190,8 @@ You can quickly generate [queries](../../work/track/using-queries.md) to view th
 As you can see, iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
 *	[Set team defaults](set-team-defaults.md)  
-*	[Agile tools and sprint definitions ](../../work/scrum/define-sprints.md)  
-*	[Query by date or current iteration](../../work/track/query-by-date-or-current-iteration.md)  
+*	[Agile tools and sprint definitions ](../../boards/sprints/define-sprints.md)  
+*	[Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
 *	 [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md)
  
  

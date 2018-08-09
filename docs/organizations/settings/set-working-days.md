@@ -24,7 +24,7 @@ If you're not a team administrator, [get added as one](add-team-administrator.md
 
 Open the Settings dialog from the Capacity page to set Working days.
 
-<img src="../../work/scale/_img/capacity-planning-open-team-settings-tfs-15.png" alt="VSTS, Capacity page, Settings, Working days" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/plans/_img/capacity-planning-open-team-settings-tfs-15.png" alt="VSTS, Capacity page, Settings, Working days" style="border: 2px solid #C3C3C3;" />
 
 ::: moniker-end
 
@@ -34,7 +34,7 @@ Open the Settings dialog from the Capacity page to set Working days.
 
 Open your team settings from the Overview tab of your team's admin context.  
 
-<img src="../../work/scale/_img/ALM_DS_WorkingDaysOff.png" alt="Team settings page for default working days" style="border: 1px solid #C3C3C3;" />
+<img src="../../boards/plans/_img/ALM_DS_WorkingDaysOff.png" alt="Team settings page for default working days" style="border: 1px solid #C3C3C3;" />
 
 ::: moniker-end 
 

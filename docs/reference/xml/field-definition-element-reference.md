@@ -103,7 +103,7 @@ reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >
   
 1.  `FIELD` (Definition) is a required child element of `FIELDS` (Definition).  
   
-2.  For an overview of all system and predefined fields that are defined for the TFS process templates, see [Index of work item fields](../../work/work-items/guidance/work-item-field.md).  
+2.  For an overview of all system and predefined fields that are defined for the TFS process templates, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
   
 3.  You cannot define a custom field that starts with the `System.` prefix. You can define a field by using the `Microsoft.` prefix, however, this practice is strongly discouraged because it might impede Team Foundation Server functionality.  
   
@@ -143,7 +143,7 @@ reportingname="ReportingDisplayName" reportingrefname="ReportingReferenceName" >
   
 ## Related articles   
 -  [Naming restrictions and conventions](../../organizations/settings/naming-restrictions.md)   
--  [Index of work item fields](../../work/work-items/guidance/work-item-field.md)   
+-  [Index of work item fields](../../boards/work-items/guidance/work-item-field.md)   
 -  [Customize your work tracking experience](../customize-work.md)    
 -  [Manage work item fields](../witadmin/manage-work-item-fields.md)   
 -  [Define and modify work item fields](define-modify-work-item-fields.md)   

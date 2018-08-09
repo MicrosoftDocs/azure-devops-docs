@@ -51,14 +51,14 @@ You can also check-in as you work in other areas of Visual Studio:
 
 When you check in changes, you should associate such work items with the changes. Benefits of doing so include:
 
--   A team member who looks at the work item can [link directly to the changeset](../../work/track/link-work-items-support-traceability.md) to see the work that you did.
+-   A team member who looks at the work item can [link directly to the changeset](../../boards/queries/link-work-items-support-traceability.md) to see the work that you did.
 -   A team member who [reviews the history of a file](view-manage-past-versions.md) you changed can view the changeset and see the work items that were the justification for the change.
 -   If you build your changes in your automated build system (for example with a [CI Build](../../pipelines/build/triggers.md) or a [Gated Check-in Build](../../pipelines/build/repository.md) your team members can see in which completed build the task was completed or the bug was fixed.
 
 To associate work items with your check-in:
 
 -   Choose the **Add Work Item by ID** link in the **Related Work Items** section.
--   Drag a work item from a work item query window from [Team Explorer's **Work Item**](../../work/track/using-queries.md) page into the **Related Work Items** section.
+-   Drag a work item from a work item query window from [Team Explorer's **Work Item**](../../boards/queries/using-queries.md) page into the **Related Work Items** section.
 
 Next to each work item, select how it should be related to your check-in: **Associate** or **Resolve** (available only if the work item is not already in a state that precludes this relationship, such as **Resolved**, **Done**, or **Closed**).   
 
@@ -120,4 +120,4 @@ If you want to be notified when someone checks in code in your TFVC project, you
 
 -   ![Tip](_img/check-your-work-team-codebase/IC572374.png) A check-in is performed atomically-the operation either succeeds completely or fails completely (with one exception). If any one of the changes cannot be submitted to your Team Foundation server, none of the changes is committed and a changeset is not created. For example, if you lose network connectivity in the middle of a check-in, the whole operation fails.
 
-    The exception is the association of work items with the changeset. If work item association fails but all other aspects of the check-in succeed, then the changeset is created. You can manually associate a work item with a changeset. See [Manage dependencies, link work items to support traceability](../../work/track/link-work-items-support-traceability.md).
+    The exception is the association of work items with the changeset. If work item association fails but all other aspects of the check-in succeed, then the changeset is created. You can manually associate a work item with a changeset. See [Manage dependencies, link work items to support traceability](../../boards/queries/link-work-items-support-traceability.md).

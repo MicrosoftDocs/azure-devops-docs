@@ -16,7 +16,7 @@ ms.date: 09/08/2017
 
 You can customize how work item fields that are defined in Team Foundation map to fields in Microsoft Project, and you can change how specific fields are published. Microsoft Project includes predefined fields, such as Task Name, and custom fields. When you publish or refresh work item data in Microsoft Project, the field map determines which fields in the work item database match the fields in Microsoft Project.  
   
- For information on using Project and TFS to track work, see [Create your backlog and tasks using Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md).  
+ For information on using Project and TFS to track work, see [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).  
   
  To modify the field mappings for a project, you [export and then import the Microsoft Project Mapping File using the TFSFieldMapping command line tool](upload-or-download-the-microsoft-project-mapping-file.md).  
   
@@ -92,7 +92,7 @@ You can customize how work item fields that are defined in Team Foundation map t
 <SyncField ProjectField="pjTaskText25" />  
 ```  
   
-For more information about how to use the synchronization field in Project, see [Create your backlog and tasks using Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md).  
+For more information about how to use the synchronization field in Project, see [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md).  
   
 ##  <a name="ResourceNameSeparator"></a> ResourceNameSeparator Element  
  You can use the `ResourceNameSeparator` to define the character that will distinguish resource names that are in a string. Team Foundation users and resources are synchronized with the users of the Active Directory directory service. The names for users and resources may include a delimiter, such as a comma, to separate the last name, first name, and middle initial of a resource.  

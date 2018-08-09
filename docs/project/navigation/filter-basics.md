@@ -39,7 +39,7 @@ To turn filtering on, choose the ![](../../_img/icons/filter-icon.png) filter ic
 
 You can filter work items by typing a keyword or using one or more of the fields provided, such as work item type, assigned to, state, and tags. Based on the keyword that you enter, the filter function will list work items based on any visible/displayed column or field, including tags. Also, you can enter a value for an ID, whether or not the ID field is visible.  
 
-![Work>Backlogs, turn filtering on](../../work/backlogs/_img/filter-backlogs-options.png)
+![Work>Backlogs, turn filtering on](../../boards/backlogs/_img/filter-backlogs-options.png)
 
 The filtered set is always a flat list, even if you've selected to show parents. 
 
@@ -57,7 +57,7 @@ You can use keywords to filter your backlogs or queries. The filter function lis
 
 Here, we filter the backlog to only show items that include 'Web' in any one of the displayed column fields. 
 
-![Apply text filter](../../work/backlogs/_img/cyb-filter-backlog.png)   
+![Apply text filter](../../boards/backlogs/_img/cyb-filter-backlog.png)   
 
 The filtered set is always a flat list, even if you've selected to show parents.  
 
@@ -70,18 +70,18 @@ The filter criteria ignores the following characters when the field value starts
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 ## Filter work tracking backlogs and queries based on tags
 
-If you've [added tags to your work items](../../work/track/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../../work/_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
+If you've [added tags to your work items](../../boards/queries/add-tags-to-work-items.md), you can filter your backlogs, Kanban boards, and query results using the ![tag filter icon](../../boards/_img/icons/tag_filter_icon.png) tag filter. For backlogs and query results, add Tags as a column option prior to filtering on tags.  
 
-To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../../work/track/add-tags-to-work-items.md#filter)
+To learn more about filtering using tags, see [Add tags to work items to categorize and filter lists and boards, Filter lists using tags](../../boards/queries/add-tags-to-work-items.md#filter)
  
 ::: moniker-end
 
 ## Related articles  
 - [Commit history](../../repos/git/commit-history.md)
 - [Working with Git tags](../../repos/git/git-tags.md)
-- [Filter backlogs and queries](../../work/backlogs/filter-backlogs.md)
-- [Filter your Kanban board](../../work/kanban/filter-kanban-board.md)
-- [Add tags to work items](../../work/track/add-tags-to-work-items.md) 
+- [Filter backlogs and queries](../../boards/backlogs/filter-backlogs.md)
+- [Filter your Kanban board](../../boards/boards/filter-kanban-board.md)
+- [Add tags to work items](../../boards/queries/add-tags-to-work-items.md) 
 
 
 <!---

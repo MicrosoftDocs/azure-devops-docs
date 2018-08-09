@@ -351,7 +351,7 @@ Learn more about reserved names: [Naming Files, Paths, and Namespaces](https://m
 A process defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or the web portal for an on-premises TFS. 
 
 > [!NOTE]   
->  **Terminology note**: Both "process" and "process template" refer to an interdependent set of files used to create a project. [Choose a process](../../work/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   
+>  **Terminology note**: Both "process" and "process template" refer to an interdependent set of files used to create a project. [Choose a process](../../boards/work-items/guidance/choose-process.md) describes the differences among the three default processes available to you.   
 
 Processes you define or customize must conform to the following restrictions.  
 
@@ -399,9 +399,9 @@ Must not exceed 2 GB (gigabytes).
 
 ### Kanban boards 
 
-Your [Kanban board](../../work/kanban/kanban-basics.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
+Your [Kanban board](../../boards/boards/kanban-basics.md) turns your backlog into an interactive signboard, providing a visual flow of work. As work progresses from idea to completion, you update the items on the board. Each column represents a work stage, and each card represents a user story (blue cards) or a bug (red cards) at that stage of work. 
 
-You can customize your Kanban boards to match how your team works by adding, removing, or renaming [columns](../../work/kanban/add-columns.md) and [swimlanes](../../work/kanban/expedite-work.md). Columns support the flow of work across the board. Swimlanes allow you to manage different classes of work as horizontal lanes on the board.
+You can customize your Kanban boards to match how your team works by adding, removing, or renaming [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md). Columns support the flow of work across the board. Swimlanes allow you to manage different classes of work as horizontal lanes on the board.
 
 Column and swimlane names must conform to the following restrictions.
 
@@ -781,7 +781,7 @@ The Microsoft namespace is used to define work item tracking fields. These field
 
 Customers and partners can create their own field namespaces for custom work item types.  
 
-For descriptions of system fields and fields defined in the default process templates, see [Index of work item fields](../../work/work-items/guidance/work-item-field.md).
+For descriptions of system fields and fields defined in the default process templates, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).
 
 <a id="ExamplesFieldReferenceNames">  </a>
     
@@ -944,7 +944,7 @@ Global lists must conform to the following restrictions.
 ### Work item tags
 
 Work item tags correspond to one or two keyword phrases that 
-supports your needs to filter work tracking tools such as backlogs, boards, and queries or define queries. To learn more, see [Add work item tags to categorize and filter lists and boards](../../work/track/add-tags-to-work-items.md)
+supports your needs to filter work tracking tools such as backlogs, boards, and queries or define queries. To learn more, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md)
 
 Tag names must conform to the following restrictions.  
 

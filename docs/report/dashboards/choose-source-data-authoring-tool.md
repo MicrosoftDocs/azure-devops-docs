@@ -37,7 +37,7 @@ For more information about how you can create reports that access the three sour
 
 |Authoring tool|Source of data|Related topic|
 |---|---|---|
-|Excel|Work item query results|[Use the query editor to list and manage queries](../../work/track/using-queries.md)|
+|Excel|Work item query results|[Use the query editor to list and manage queries](../../boards/queries/using-queries.md)|
 |Excel|OLAP data cube|[Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)|
 |Report Designer|OLAP data cube|[Create an aggregate report using Report Designer and the Analysis Services Cube](../sql-reports/create-aggregate-report-report-designer-analysis-services-cube.md) </li></ul>|
 |Report Designer|Warehouse database|[Create a Detailed Report using Report Designer](../sql-reports/create-a-detailed-report-using-report-designer.md)|

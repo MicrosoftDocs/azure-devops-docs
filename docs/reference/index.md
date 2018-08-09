@@ -49,7 +49,7 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 
 - [About areas and iterations](../organizations/settings/about-areas-iterations.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)  
 - [Differences between process models](../organizations/settings/work/import-process/differences.md) 
-- [Workflow states & state categories](../work/work-items/workflow-and-state-categories.md)
+- [Workflow states & state categories](../boards/work-items/workflow-and-state-categories.md)
 - [Inheritance process model](../organizations/settings/work/inheritance-process-model.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)   
 - [Hosted XML process model](../organizations/settings/work/hosted-xml-process-model.md)  
 - [On-premises XML process model](on-premises-xml-process-model.md)  
@@ -75,7 +75,7 @@ Use the guidance provided in the following topics based on the process model or 
     - [Add or modify a work item type](add-modify-wit.md)
 
 - **Process templates**
-    - [Upload or download a process template](../work/work-items/guidance/manage-process-templates.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
+    - [Upload or download a process template](../boards/work-items/guidance/manage-process-templates.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
     - [Customize a process template](./process-templates/customize-process.md)  
 
 ## Reference  
@@ -90,7 +90,7 @@ Use the guidance provided in the following topics based on the process model or 
  
 ## Resources 
 
-- [Work items](../work/work-items/index.md)
+- [Work items](../boards/work-items/index.md)
 - [Scale & configure teams](../organizations/settings/index.md)
 - [Marketplace extensions](../marketplace/install-vsts-extension.md)
 - [Extensibility and REST APIs](../extend/overview.md) 

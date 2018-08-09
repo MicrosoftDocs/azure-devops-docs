@@ -150,14 +150,14 @@ History of work item added by Project Server Sync
   
  .  
   
- The following illustration shows how the tasks have been divided for two requirements assigned to Iteration 0. For more information, see [Sprint planning](../../work/scrum/assign-work-sprint.md)  
+ The following illustration shows how the tasks have been divided for two requirements assigned to Iteration 0. For more information, see [Sprint planning](../../boards/sprints/assign-work-sprint.md)  
   
 > [!NOTE]
 >  The **Remaining Work** field for the parent work items automatically show the sum of all work defined for its child tasks.  
   
  ![Work breakdown of tasks shown in Excel](_img/tfs-ps_excel_wrkbrk_taskplan.png "TFS-PS_Excel_WrkBrk_TaskPlan")  
   
- As an alternative, you can open the Work Breakdown query in Excel and quickly define linked tasks and estimate work. See [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md).  
+ As an alternative, you can open the Work Breakdown query in Excel and quickly define linked tasks and estimate work. See [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).  
   
 ###  <a name="updateremaining"></a> Update Remaining and Completed Work  
  As work progresses, each team member should update the **Remaining Work** and **Completed Work** fields for each of their tasks. If more time is required to complete a task, additional time is added to the Remaining Work field.  Updates are reflected in the rollup of the requirement.  

@@ -28,7 +28,7 @@ This error occurs when a required plug-in is missing from the process template b
   
 1.  Perform one of the following steps:    
     -   If you are using a TFS default process template, ask your administrator to repair the installation of TFS.    
-    -   If the process template is provided by another company, [download the process template](../../work/work-items/guidance/manage-process-templates.md).     
+    -   If the process template is provided by another company, [download the process template](../../boards/work-items/guidance/manage-process-templates.md).     
 2.  Open the process template, and examine the names of the plug-ins. If possible, find the plug-in that is named in the error message. Confirm that it is intact, or correct any errors that you find.    
 3.  Upload the corrected process template to Team Foundation Server.   
 4.  Run the New Team Project Wizard again.  

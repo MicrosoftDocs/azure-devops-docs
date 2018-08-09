@@ -98,13 +98,13 @@ To delegate tasks to other members within your organization, consider creating a
 <td>Team administrators</td>
 <td>Add area paths for their team<br/>Add shared queries for their team</td>
 <td>Create child nodes, Delete this node, Edit this node<br/>See [Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>
-Contribute, Delete, Manage permissions (for a query folder), See [Set query permissions](../../work/track/set-query-permissions.md).</td>
+Contribute, Delete, Manage permissions (for a query folder), See [Set query permissions](../../boards/queries/set-query-permissions.md).</td>
 </tr>
 
 <tr>
 <td>Contributors</td>
 <td>Add shared queries under a query folder, Contribute to dashboards</td>
-<td>Contribute, Delete (for a query folder), See [Set query permissions](../../work/track/set-query-permissions.md)<br/>
+<td>Contribute, Delete (for a query folder), See [Set query permissions](../../boards/queries/set-query-permissions.md)<br/>
 View, Edit, and Manage dashboards, See [Set dashboard permissions](../../report/dashboards/dashboard-permissions.md).
 </td>
 </tr>

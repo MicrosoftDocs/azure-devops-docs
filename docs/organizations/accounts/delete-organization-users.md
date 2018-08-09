@@ -25,7 +25,7 @@ If a user no longer requires access to a team project or your VSTS organization,
 
 ## Remove users from your VSTS organization
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 
