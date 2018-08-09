@@ -103,7 +103,7 @@ Each team can set their preferences for the built-in cumulative flow charts.
 
 1. Open the backlog level for which you want to configure and then open the common configuration dialog. Click the ![gear icon](../../work/_img/icons/team-settings-gear-icon.png) gear icon.  
 
-	<img src="../../work/customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
+	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the team Kanban boards and CFD charts.  
 

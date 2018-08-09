@@ -53,7 +53,7 @@ Choose an on-premises TFS when you need your data to stay within your network or
 > [!div class="nextstepaction"]
 > [Install TFS](/tfs/server/install/single-server)
 
-To learn more, see these topics:
+## Related articles
 
 - [A tour of services](services.md)
 - [Key concepts](concepts.md)  

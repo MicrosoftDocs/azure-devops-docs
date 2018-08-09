@@ -57,7 +57,7 @@ Use the Test &amp; Feedback extension to explore and find bugs in your apps.
 ## Reference
 
 * [FAQs for manual testing](reference-qa.md)
-* [Unable to connect](../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
+* [Unable to connect](../reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
 
 ## Resources
 

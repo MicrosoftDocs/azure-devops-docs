@@ -34,7 +34,7 @@ Depending on the size of your team and the number of stories in progress, your K
 
 To filter the Kanban board, first customize the board settings so that the cards display the fields or tags that contain keywords that you want to filter on. Otherwise, the keywords you enter will filter work items based on title.    
 
-For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../customize/customize-cards.md).  
+For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../../boards/boards/customize-cards.md).  
 
 ::: moniker range="vsts || >= tfs-2018"
 ![Kanban board, customize card fields](_img/filter/filter-kb-card-field-settings-ts.png)
@@ -141,7 +141,7 @@ Cards are filtered based on the assignments made in the following order and logi
 
 ## Related articles  
 - [Tags](../track/add-tags-to-work-items.md) 
-- [Customize cards](../customize/customize-cards.md)
+- [Customize cards](../../boards/boards/customize-cards.md)
 
 
 

@@ -26,7 +26,7 @@ Additionally, your users in your collection will not have a Documents folder ava
 
 ## Activating dashboard features 
 
-When you create a team project, you have an option to include a SharePoint portal. If you choose this option, then the system activates certain dashboard features according to the process template selected. To learn more, see [Define the project portal plug-in for a process template](../../work/customize/reference/process-templates/define-project-portal-plug-in.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json). 
+When you create a team project, you have an option to include a SharePoint portal. If you choose this option, then the system activates certain dashboard features according to the process template selected. To learn more, see [Define the project portal plug-in for a process template](../../reference/process-templates/define-project-portal-plug-in.md?toc=/vsts/report/sharepoint-dashboards/toc.json&bc=/vsts/report/sharepoint-dashboards/breadcrumb/toc.json). 
 
 ## Related notes
 

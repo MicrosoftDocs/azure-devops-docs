@@ -145,7 +145,7 @@ In addition, several tools reference the team's default iteration and selected i
 <ol>
 <li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-team-defaults.md#team-area-paths).</li>
 <li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.</li>
-<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](../../work/customize/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
+<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](../../work/work-items/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
 <li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../work/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
 <li>Work items whose State equals Removed don't appear on boards.</li> 
 </ol>
@@ -189,10 +189,10 @@ You can choose to limit access to select features by making a user a [Stakeholde
 - Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md) 
 - Every backlog has a corresponding [Kanban board](../../work/kanban/kanban-basics.md) you can use to track progress and update status  
 - The [team's specified area and iteration paths](../../organizations/settings/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
--  Each team can control how [bugs show up on their backlogs and boards](../../work/customize/show-bugs-on-backlog.md)   
+-  Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)   
 - For an overview of all team assets and how to configure them, see [Configure team settings](configure-team-settings.md)   
 - To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../work/scale/portfolio-management.md) 
-- To add fields or work item types, see [Customize your work tracking experience](../../work/customize/customize-work.md).
+- To add fields or work item types, see [Customize your work tracking experience](../../reference/customize-work.md).
 
 ## Related notes 
 

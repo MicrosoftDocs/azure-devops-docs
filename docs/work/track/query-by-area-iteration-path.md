@@ -100,7 +100,7 @@ For each field, data path=```TreePath```, reportable type=```Dimension```, index
  
 If you define a path name that is longer than 256 characters, you will not be able to specify it in Microsoft Project. To avoid this problem, define path names of no more than 10 characters, and do not nest nodes more than 14 levels deep.
 
-You can't apply most field rules to the System.AreaPath and System.IterationPath fields. To learn more, see [Apply a field rule](../customize/reference/apply-rule-work-item-field.md).
+You can't apply most field rules to the System.AreaPath and System.IterationPath fields. To learn more, see [Apply a field rule](../../reference/xml/apply-rule-work-item-field.md).
 
 The following fields do not appear on work item forms but are tracked for each work item type. These fields provide a numeric value for each classification value that is defined for a project. You can use these fields to filter queries and create reports.
 
@@ -110,7 +110,7 @@ The following fields do not appear on work item forms but are tracked for each w
 |Iteration ID|The unique ID of the iteration to which this work item is assigned.|System.IterationId|Integer|
 |Node Name|The name of the leaf node of an area path. For example, if the area path is Project\A1\B2\C3, the node name is C3.|System.NodeName|String|
 
-The default reportable type is none. Area ID and Iteration ID are indexed, Node Name is not. To learn more about field attributes, see [Work item data type reference](../customize/reference/define-modify-work-item-fields.md).
+The default reportable type is none. Area ID and Iteration ID are indexed, Node Name is not. To learn more about field attributes, see [Work item data type reference](../../reference/xml/define-modify-work-item-fields.md).
 
 
 
@@ -127,7 +127,7 @@ The default reportable type is none. Area ID and Iteration ID are indexed, Node 
 <a name="field-rules"></a>
 ### Supported field rules  
 
-For the Hosted XML and On-premises XML process models, you can apply rules to fields. However, for system fields (System.XXX), such as the Area Path and Iteration Path, you can [specify only a small subset of rules](../customize/reference/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to  fields. 
+For the Hosted XML and On-premises XML process models, you can apply rules to fields. However, for system fields (System.XXX), such as the Area Path and Iteration Path, you can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to  fields. 
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  

@@ -63,7 +63,7 @@
   - name: Troubleshoot connection
     href: ../../user-guide/troubleshoot-connection.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
   - name: "TF31002: Unable to connect"
-    href: ../../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+    href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Features index

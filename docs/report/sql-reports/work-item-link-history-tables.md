@@ -81,5 +81,5 @@ order by wi.System_Id
   
 ## Related notes 
  [Test cases and work items](perspective-test-analyze-report-work.md)   
- [Define a custom link type](../../work/customize/reference/define-custom-link-type.md)   
+ [Define a custom link type](../../reference/xml/define-custom-link-type.md)   
  [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md)

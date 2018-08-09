@@ -143,7 +143,7 @@ Choose the ![Delete icon](../../../_img/icons/delete_icon.png) Delete option fro
 - [Add and manage fields](customize-process-field.md) 
 - [Add extensions and custom controls to a work item type](custom-controls-process.md) 
 - [Customize a project using an inherited process](customize-process.md)  
-- [Customize cards on boards](../../../work/customize/customize-cards.md)  
+- [Customize cards on boards](../../../boards/boards/customize-cards.md)  
 
 
 

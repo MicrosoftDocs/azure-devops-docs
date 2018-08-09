@@ -16,7 +16,7 @@ ms.date: 06/02/2017
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in this topic. To learn about process models, see [Customize your work tracking experience](../../../work/customize/customize-work.md).
+When customizing the work item types (WITs) defined in the Inheritance or Hosted XML process models, be aware of the limits placed on objects defined in this topic. To learn about process models, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 ## Inheritance and Hosted XML process models
 
@@ -38,7 +38,7 @@ Below you find maximum number of object in the Inheritance and Hosted XML proces
 | Global lists defined for a process | - | 64  |
 | List items defined within a global list | - | 512 | 
 
-For additional restrictions and conformance requirements of the Hosted XML process model, see [Customize a process when using Hosted XML](../../../work/customize/import-process/customize-process.md).
+For additional restrictions and conformance requirements of the Hosted XML process model, see [Customize a process when using Hosted XML](../../../organizations/settings/work/import-process/customize-process.md).
 
 > [!NOTE]    
 >For the Hosted XML process model, you can define an approximate total of 10K items for all global lists specified across all WITs. 
@@ -51,6 +51,6 @@ For additional restrictions and conformance requirements of the Hosted XML proce
 - You can't add an attachment size larger than 60MB to a work item.
 
 ## Related articles
-- [Customize your work tracking experience](../../../work/customize/customize-work.md)
-- [Customize a process when using Hosted XML](../../../work/customize/import-process/customize-process.md)
+- [Customize your work tracking experience](../../../reference/customize-work.md)
+- [Customize a process when using Hosted XML](import-process/customize-process.md)
 - [Create an Inheritance process](manage-process.md)

@@ -33,7 +33,7 @@ To request feedback, you fill out a form that generates an email request to your
 	![Request feedback link in Homepage](_img/request-feedback-link.png)  
 
 	> [!NOTE]  
-	> If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](../../work/customize/configure-features-after-upgrade.md). 
+	> If your on-premises TFS team project was upgraded from TFS 2010 or earlier version, you may have to update your team project using the [Configure Features wizard](../../reference/configure-features-after-upgrade.md). 
 
 	If the following message appears, you need to [configure an SMTP server](/tfs/server/admin/setup-customize-alerts).
 

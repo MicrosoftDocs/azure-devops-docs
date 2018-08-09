@@ -42,14 +42,14 @@ If you have a project already, and want to start coding an application project, 
 
 ::: moniker range="tfs-2018"
 > [!IMPORTANT]  
-> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. If you want SQL Server Reporting Services  to be to be available, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
+> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. If you want SQL Server Reporting Services  to be to be available, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support).  
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 > [!IMPORTANT]  
 > When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site and a SharePoint project portal aren't supported. 
 >
-> If you want these features to be to be available on your on-premises TFS, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../work/customize/reference/process-templates/overview-process-template-files.md#client-support).  
+> If you want these features to be to be available on your on-premises TFS, then create your project from Visual Studio or Team Explorer. For details, see [Process template and plug-in files, Client support for project creation](../../reference/process-templates/overview-process-template-files.md#client-support).  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
