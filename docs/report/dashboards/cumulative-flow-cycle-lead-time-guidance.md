@@ -111,7 +111,7 @@ CFD charts display the count of work items grouped by state/Kanban column over t
 
 1. The CFD widget (Analytics Service) and built-in CFD chart (work tracking data store) do not provide discrete numbers on Lead Time and Cycle Time. However, the [Lead Time and Cycle Time widgets](cycle-time-and-lead-time.md) do provide these numbers.  
 
-There is a very tight, well defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more work in progress, the longer the cycle time which leads to longer lead times. The opposite is also true&mdash;the less work in progress, the shorter the cycle and lead time is because the development team can focus on fewer items. This is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../work/kanban/wip-limits.md).  
+There is a very tight, well defined correlation between Lead Time/Cycle Time and Work in Progress (WIP). The more work in progress, the longer the cycle time which leads to longer lead times. The opposite is also true&mdash;the less work in progress, the shorter the cycle and lead time is because the development team can focus on fewer items. This is a key reason why you can and should set [Work In Progress limits on the Kanban board](../../boards/boards/wip-limits.md).  
 
 The count of work items indicates the total amount of work on a given day. In a fixed period CFD, a change in this count indicates scope change for a given period. In a continuous flow CFD, it indicates the total amount of work in the queue and completed for a given day.  
 
@@ -142,7 +142,7 @@ Two problems show up visually as flat lines and as bulges.
 <tr>
 <td width="235">
 
-<p>Flat lines appear when the team doesn't update their work with a regular cadence. The [Kanban board](../../work/kanban/kanban-basics.md) provides the quickest way to transition work from one column to another. </p>
+<p>Flat lines appear when the team doesn't update their work with a regular cadence. The [Kanban board](../../boards/boards/kanban-basics.md) provides the quickest way to transition work from one column to another. </p>
 <p>Flat lines can also appear when the work across one or more processes takes longer than planned for. For this to occur, flat lines must appear across many parts of the system because if only one part of the system or two parts of a system have problems then you'll see a bulge. </p>
 </td>
 <td width="35%">**Flat lines**  
@@ -196,12 +196,12 @@ Two potentially easy ways to solve this problem are: 1) Shift developers from th
 
 Scope changes apply to fixed period CFDs only. The top line of the chart indicates the scope of work because a sprint is pre-loaded with the work to do on the first day, this becomes a set level of work. Changes to this top line indicate worked was added or removed.  
 
-The one scenario where you can't track scope changes with a CFD occurs when the same number of works are added as removed on the same day. The line would continue to be flat. This is the primary reason why several charts should be used in conjunction with one another to monitor for specific issues. For example, the [sprint burndown chart](../../work/scrum/sprint-burndown.md) can also show scope changes.   
+The one scenario where you can't track scope changes with a CFD occurs when the same number of works are added as removed on the same day. The line would continue to be flat. This is the primary reason why several charts should be used in conjunction with one another to monitor for specific issues. For example, the [sprint burndown chart](../../boards/sprints/sprint-burndown.md) can also show scope changes.   
 
 
 ### Too much work in progress?  
 
-You can easily monitor [whether WIP limits have been exceed from the Kanban board](../../work/kanban/wip-limits.md). However, you can also see monitor it from the CFD.  
+You can easily monitor [whether WIP limits have been exceed from the Kanban board](../../boards/boards/wip-limits.md). However, you can also see monitor it from the CFD.  
 
 Not so oddly, a large amount of work in progress usually shows up as a vertical bulge. The longer there is a large amount of work in progress, the bulge will expand to become an oval which will indicate that the work in progress is negatively affecting the cycle and lead time.  
 
@@ -222,9 +222,9 @@ The diagram below illustrates how lead time differs from cycle time. Lead time i
 
 If a work item enters a Completed state and then is reactivated and moved out of that state, then any additional time it spends in a Proposed/In Progress state will contribute to its lead/cycle time when it enters a Completed state for the second time.
 
-If your team uses the Kanban board, you'll want to understand how your Kanban columns map to workflow states. For more information on configuring your Kanban board, see [Add columns](../../work/kanban/add-columns.md). 
+If your team uses the Kanban board, you'll want to understand how your Kanban columns map to workflow states. For more information on configuring your Kanban board, see [Add columns](../../boards/boards/add-columns.md). 
 
-To learn more about how the system uses the state categories&mdash;Proposed, In Progress, and Completed&mdash;see [Workflow states and state categories](../../work/work-items/workflow-and-state-categories.md).   
+To learn more about how the system uses the state categories&mdash;Proposed, In Progress, and Completed&mdash;see [Workflow states and state categories](../../boards/work-items/workflow-and-state-categories.md).   
 
 ## Plan using estimate delivery times based on lead/cycle times  
 You can use the average lead/cycle times and standard deviations to estimate delivery times. 

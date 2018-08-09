@@ -20,7 +20,7 @@ You can add a custom field to support tracking additional data requirements or m
 
 For a list of all fields defined for your organization&mdash;which includes all fields defined for system and inherited processes&mdash;see [Review fields](#review-fields). 
 
-Once you've added a custom field, you can create [queries](../../../work/track/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
+Once you've added a custom field, you can create [queries](../../../boards/queries/using-queries.md), [charts](../../../report/dashboards/charts.md), or [Analytics views and Power BI reports](../../../report/powerbi/create-quick-report.md) to track data related to it.  
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -34,7 +34,7 @@ Once you've added a custom field, you can create [queries](../../../work/track/u
 
 To review the list of fields defined for all processes and the WITs which reference them, choose **Process** and then **Fields**.  
 
-Fields listed correspond to all those defined for the organization. For descriptions and usage of each field, see [Work item field index](../../../work/work-items/guidance/work-item-field.md).  
+Fields listed correspond to all those defined for the organization. For descriptions and usage of each field, see [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]  
 > ![Make a copy of a selected inherited process](_img/process/list-fields.png) 
@@ -79,7 +79,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../work/track/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
 0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
 
@@ -162,7 +162,7 @@ Use the Identity field to add a field similar to the Assigned To field. Identity
 
 Existing fields correspond to any inherited field and custom field defined within the collection. Once you've added a custom field to one WIT, you can add it to others from the form menu. Simply open the work item and choose the existing field. 
 
-For a list of all work item fields defined for all WITs and processes, see the [Work item field index](../../../work/work-items/guidance/work-item-field.md).  
+For a list of all work item fields defined for all WITs and processes, see the [Work item field index](../../../boards/work-items/guidance/work-item-field.md).  
 
 Here we add the Customer Ticket field to the User Story WIT.  
 
@@ -260,6 +260,6 @@ The reference name for any new field you add is prefixed with the name of the in
 
 By adding all customizations to the same base inherited process, you simplify the naming conventions that get applied to a custom fields. This can be useful particularly when REST APIs are employed.  
 
-Each ![locked icon](_img/process/locked-icon.png) system process&mdash;[Agile](../../../work/work-items/guidance/agile-process.md), [Scrum](../../../work/work-items/guidance/scrum-process.md), or [CMMI](../../../work/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields. 
+Each ![locked icon](_img/process/locked-icon.png) system process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;contains 100 or more work item fields. 
 
 --> 

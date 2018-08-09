@@ -25,7 +25,7 @@ Review your sprint burndown chart throughout your sprint cycle to check for thes
 > * Based on the actual burn rate, does the team feel confident that they'll complete the work by the end of the sprint?    
 
 
-To configure or view sprint burndown charts, see [Sprint burndown](../../work/scrum/sprint-burndown.md).
+To configure or view sprint burndown charts, see [Sprint burndown](../../boards/sprints/sprint-burndown.md).
 
 
 <a id="scope-management">  </a>
@@ -47,7 +47,7 @@ As the team makes progress, divergences from the ideal trend line help the team 
 <p>Solutions may include reassigning tasks or recruiting additional resources. The team should move all non-essential sprint work to the backlog and consider it during the next sprint planning meeting.</p>
 </td>
 <td>
-![Sprint burndown chart: Increasing remaining work can indicate scope creep](../../work/scrum/_img/ALM_SB_ScopeCreep_75.png)
+![Sprint burndown chart: Increasing remaining work can indicate scope creep](../../boards/sprints/_img/ALM_SB_ScopeCreep_75.png)
 
 </td>
 </tr>
@@ -65,7 +65,7 @@ Your burn-down chart shows you if your project is on schedule. A daily check can
 <p>Teams should meet immediately to course correct and either reassign work, recruit more resources, or reset expectations.</p>
 </td>
 <td>
-![Sprint burndown chart: Actual remaining work high above ideal trend line](../../work/scrum/_img/ALM_SB_RiskMitigation.png)
+![Sprint burndown chart: Actual remaining work high above ideal trend line](../../boards/sprints/_img/ALM_SB_RiskMitigation.png)
 </td>
 </tr>
 </table>
@@ -74,7 +74,7 @@ Your burn-down chart shows you if your project is on schedule. A daily check can
 ##Try this next
 In addition to the sprint burndown chart, teams can review the velocity at which they work sprint over sprint. The velocity chart tracks how many backlog items your team works on in a sprint.  
 
-You can use your team [velocity](team-velocity.md) as input into the [forecast](../../work/scrum/forecast.md) tool to help plan your sprints.   
+You can use your team [velocity](team-velocity.md) as input into the [forecast](../../boards/sprints/forecast.md) tool to help plan your sprints.   
 
 
 

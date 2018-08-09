@@ -51,7 +51,7 @@
 - name: Reference
   items:
   - name: Work item field index
-    href: ../../work/work-items/guidance/work-item-field.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../../boards/work-items/guidance/work-item-field.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
   - name: Analytics OData v4 endpoint
     href: ../extend-analytics/data-model-analytics-service.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
   - name: API versioning
@@ -65,5 +65,5 @@
   - name: Extend Analytics with OData
     href: ../extend-analytics/index.md
   - name: Work Items
-    href: ../../work/work-items/index.md
+    href: ../../boards/work-items/index.md
 

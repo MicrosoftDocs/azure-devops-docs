@@ -4,7 +4,7 @@ ms.topic: include
 
 <a id="work-item-form-shortcuts"></a>
 
-You can use the following keyboard shortcuts when [interacting with a work item form](/vsts/work/work-items/work-item-form-controls). To view the valid shortcuts, enter **Shift+?** from within the form.
+You can use the following keyboard shortcuts when [interacting with a work item form](/vsts/boards/work-items/work-item-form-controls). To view the valid shortcuts, enter **Shift+?** from within the form.
 
 >[!NOTE]
 ><b>Feature availability: </b>The following shortcuts are available from VSTS.

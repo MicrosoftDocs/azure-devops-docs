@@ -45,27 +45,27 @@
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
   - name: Agile
-    tocHref: /vsts/work/
+    tocHref: /vsts/boards/
     topicHref: /vsts/index#pivot=services&panel=agile
     items:
     - name: Boards (Kanban) 
-      tocHref: /vsts/work/kanban/
-      topicHref: /vsts/work/kanban/index
+      tocHref: /vsts/boards/boards/
+      topicHref: /vsts/boards/boards/index
     - name: Backlogs
-      tocHref: /vsts/work/backlogs/
-      topicHref: /vsts/work/backlogs/index
+      tocHref: /vsts/boards/backlogs/
+      topicHref: /vsts/boards/backlogs/index
     - name: Sprints (Scrum)
-      tocHref: /vsts/work/scrum/
-      topicHref: /vsts/work/scrum/index
+      tocHref: /vsts/boards/sprints/
+      topicHref: /vsts/boards/sprints/index
     - name: Work items
-      tocHref: /vsts/work/work-items/
-      topicHref: /vsts/work/work-items/index
+      tocHref: /vsts/boards/work-items/
+      topicHref: /vsts/boards/work-items/index
     - name: Queries
-      tocHref: /vsts/work/track/
-      topicHref: /vsts/work/track/index
+      tocHref: /vsts/boards/queries/
+      topicHref: /vsts/boards/queries/index
     - name: Agile at Scale
-      tocHref: /vsts/work/scale/
-      topicHref: /vsts/work/scale/index
+      tocHref: /vsts/boards/plans/
+      topicHref: /vsts/boards/plans/index
   - name: Java 
     tocHref: /vsts/java/
     topicHref: /vsts/java/index 
@@ -133,8 +133,8 @@
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
     - name: Project Server Integration
-      tocHref: /vsts/work/tfs-ps-sync/
-      topicHref: /vsts/work/tfs-ps-sync/index
+      tocHref: /vsts/reference/tfs-ps-sync/
+      topicHref: /vsts/reference/tfs-ps-sync/index
     - name: Technical Articles
       tocHref: /vsts/articles/
       topicHref: /vsts/articles/index

@@ -37,7 +37,7 @@ If you're using Visual Studio Premium or Visual Studio Ultimate, you can use the
 
 ![To Do List on My Work Page in Team Navigator](_img/develop-code-manage-pending-changes/IC591023.png)  
 You can use My Work to:  
--   Track your work against [work items](../../work/track/link-work-items-support-traceability.md)    
+-   Track your work against [work items](../../boards/queries/link-work-items-support-traceability.md)    
 -   Suspend and later resume your work (including file changes, associated work items, and Visual Studio state such as window positions and breakpoints)  
 -   Request a code review
 
@@ -47,7 +47,7 @@ For a step-by-step example, see [Day in the life of an devops Developer: Write n
 
 -   You can control the kinds of work items that appear in the **Available Work Items** section. Choose one of the default options or any of your personal queries that are contained in the root **My Queries** folder. To work with these queries, in the team explorer choose ![Home icon](_img/develop-code-manage-pending-changes/IC547418.png) **Home**, and then choose **Work Items**.  
 -   When you move a work item to **Available**, **In Progress**, or **Suspended**, the work item state or comments are updated so that your team is automatically advised on the status of your work. For example, the task board for your team is updated to show your status. See [Collaborate [redirected]](https://msdn.microsoft.com/library/hh500404).  
--   If your project contains customized work item type definitions, you might have problems using My Work, unless an Administrator for your project has taken certain steps. See [Configure and customize Agile planning tools for a project](../../work/work-items/guidance/agile-process.md) and [Update a customized process template to access new features](https://msdn.microsoft.com/library/ms194972).
+-   If your project contains customized work item type definitions, you might have problems using My Work, unless an Administrator for your project has taken certain steps. See [Configure and customize Agile planning tools for a project](../../boards/work-items/guidance/agile-process.md) and [Update a customized process template to access new features](https://msdn.microsoft.com/library/ms194972).
 
 ## Use the Pending Changes page to manage your work
 
@@ -82,7 +82,7 @@ If items that you don't need to check in appear regularly in the **Promote Candi
 
 ### Associate work items
 
-It's a best practice to associate [work items](../../work/track/link-work-items-support-traceability.md) (such as tasks or bugs) with your changes. Under Related Work Items, drag work items from a [query](https://msdn.microsoft.com/library/dd286705) or add it by ID.
+It's a best practice to associate [work items](../../boards/queries/link-work-items-support-traceability.md) (such as tasks or bugs) with your changes. Under Related Work Items, drag work items from a [query](https://msdn.microsoft.com/library/dd286705) or add it by ID.
 
 ### Exclude changes
 

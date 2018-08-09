@@ -68,7 +68,7 @@ When the required number of reviewers approve the pull request, it can be comple
 
 ## Check for linked work items
 
-Require associations between pull requests and a work item to ensure that changes to your branch have [work item management tracking](../../work/backlogs/connect-work-items-to-git-dev-ops.md).
+Require associations between pull requests and a work item to ensure that changes to your branch have [work item management tracking](../../boards/backlogs/connect-work-items-to-git-dev-ops.md).
 Linking work items provides additional context for your changes and ensures that updates go through your work item tracking process.
 
 ![Require linked work items in your pull requests](_img/branch-policies/work_item_linking.png)

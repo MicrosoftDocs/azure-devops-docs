@@ -29,7 +29,7 @@ The  **LinksControlOptions** element is a child element of the **Control** eleme
 - **WorkItemTypeFilters**: Use to restrict the types of work items you can link to from the links control 
 - **Column**: Use to specify the work item fields and link type attributes listed within the links control
  
-<blockquote style="font-size: 13px"><b>Note: </b>The standard ![Links page icon](../../work/_img/icons/icon-links-tab-wi.png) [Links page](../../work/work-items/work-item-form-controls.md#link-wi) provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.  
+<blockquote style="font-size: 13px"><b>Note: </b>The standard ![Links page icon](../../boards/_img/icons/icon-links-tab-wi.png) [Links page](../../boards/work-items/work-item-form-controls.md#link-wi) provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.  
 </blockquote>      
 
 ## Summary of what's changed
@@ -103,10 +103,10 @@ When ```ListViewOptions GroupLinks="true"```, links are grouped within the web f
   
 ### Add links through a scoped links control 
 
-From the scoped links control, you can perform the same actions provided from the standard ![Links page icon](../../work/_img/icons/icon-links-tab-wi.png) Links page&mdash;you simply do them from a menu rather than a tool bar.  
+From the scoped links control, you can perform the same actions provided from the standard ![Links page icon](../../boards/_img/icons/icon-links-tab-wi.png) Links page&mdash;you simply do them from a menu rather than a tool bar.  
 
 - To open an associated item or object, click the linked item  
-- To delete a link, highlight it and click the ![delete icon](../../work/_img/icons/delete_icon.png) delete icon   
+- To delete a link, highlight it and click the ![delete icon](../../boards/_img/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
 <img src="_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
@@ -122,7 +122,7 @@ You can specify whether the links display as a list, grid, or dynamically by set
 
 ## Sample code for default scoped link controls  
 
-Core system processes&mdash;[Agile, Scrum, CMMI](../../work/work-items/guidance/choose-process.md)&mdash;have been updated to include the Development and Related Work scoped links control. 
+Core system processes&mdash;[Agile, Scrum, CMMI](../../boards/work-items/guidance/choose-process.md)&mdash;have been updated to include the Development and Related Work scoped links control. 
 
 
 <img src="_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
@@ -138,7 +138,7 @@ These controls appear on all default work item types, except the following:
 
 ### Development links control  
 
-The Development links control displays all of your development links, whether based on a git or Team Foundation version control (TFVC) repository. It displays links in a set order, and provides calls-to-action that support users to [drive development from a work item](../../work/backlogs/connect-work-items-to-git-dev-ops.md).  
+The Development links control displays all of your development links, whether based on a git or Team Foundation version control (TFVC) repository. It displays links in a set order, and provides calls-to-action that support users to [drive development from a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md).  
 
 The following code sample specifies the syntax used to code the Development link control. This control supports adding external links of the specified types&mdash; pull requests, builds, branches, commits, and other development-related links&mdash;  and grouping them according to the Development experience.  
 
@@ -268,7 +268,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p>Required <strong>Columns</strong> element used to specify the work item and link-related fields to display within the links control. </p>
 <p>The order in which the <strong>Column</strong> elements are listed defines the order in which the column fields display in the control's grid.</p>
 <pre><code>&lt;Column Name=&quot;FieldName&quot; /&gt;</code></pre>
-<p>To determine the reference name for a field, see [Work item field index](../../work/work-items/guidance/work-item-field.md).</p>
+<p>To determine the reference name for a field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).</p>
 <p>Link-related fields include: ```System.ExternalLinkCount, System.HyperLinkCount, System.Links.Comment, System.Links.LinkType,``` and ```System.Related.LinkCount```.</p>
 </td>
 </tr>
@@ -300,7 +300,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <td><p> <strong>Filter</strong> </p></td>
 <td><p>Required child element of the <strong>WorkItemTypeFilters</strong> container element. Specifies the name of a work item type to include as an allowed type that users can link to from the links control. </p>
 <pre><code>&lt;Filter WorkItemType=&quot;WorkItemTypeName&quot;  /&gt;</code></pre>
-<p>You can specify any work item type defined within the project or project collection, including custom work item types. Typically, the work item types you specify depend on the process used to create your project. See [Choose a process](../../work/work-items/guidance/choose-process.md) for details.</p>  
+<p>You can specify any work item type defined within the project or project collection, including custom work item types. Typically, the work item types you specify depend on the process used to create your project. See [Choose a process](../../boards/work-items/guidance/choose-process.md) for details.</p>  
 <p>The following lists the default work item types available based on the default system processes:</p>
 <div style="float:left;width:120px;margin:3px;font-size:100%">
 <p style="font-weight:bold;padding-bottom:0px;text-align:center;">Agile</p>
@@ -362,7 +362,7 @@ WorkItemFiltersScope="Project" &gt;
 <p>All attributes are optional. Supported attributes include: </p>
 <ul>
 <li><strong>ViewMode</strong>: Can be set to ```Dynamic``` (changing with size), `Grid`, or `List`.  Default is ```Dynamic```. These view modes correspond to those described earlier in this topic in [Responsive design and dynamic resizing](#dynamic-sizing).</li>
-<li><strong>ZeroDataExperience</strong>: Currently, only option is ```Development```. This option causes the call-to-action links to appear for development, such as *Create branch, Create a pull request,* and more. To learn more, see [Drive Git development](../../work/backlogs/connect-work-items-to-git-dev-ops.md).</li>
+<li><strong>ZeroDataExperience</strong>: Currently, only option is ```Development```. This option causes the call-to-action links to appear for development, such as *Create branch, Create a pull request,* and more. To learn more, see [Drive Git development](../../boards/backlogs/connect-work-items-to-git-dev-ops.md).</li>
 <li><strong>ShowCallToAction</strong>: Can be set to ```true```, normally is ```false```. Determines whether call-to-actions appear below linked artifacts. 
 <blockquote><b>Note: </b>Currently, the only supported call-to-action experience occurs when ```ZeroDataExperience="Development"```.
 </blockquote></li>
@@ -425,7 +425,7 @@ WorkItemFiltersScope="Project" &gt;
 
 ## Related articles 
 
-You use scoped links controls to support your team and business needs. You [link work items to support traceability and manage dependencies](../../work/track/link-work-items-support-traceability.md). To learn more about customizing the web form, see these topics: 
+You use scoped links controls to support your team and business needs. You [link work items to support traceability and manage dependencies](../../boards/queries/link-work-items-support-traceability.md). To learn more about customizing the web form, see these topics: 
 
 - [WebLayout and Control elements](weblayout-xml-elements.md)  
 - [Manage new form rollout](../manage-new-form-rollout.md)

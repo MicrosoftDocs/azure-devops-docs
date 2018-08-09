@@ -27,7 +27,7 @@
   - name: View the built-in velocity chart  
     href: velocity-chart-data-store.md
   - name: Work with sprint burndown
-    href: ../../work/scrum/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../../boards/sprints/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Burndown guidance

@@ -21,7 +21,7 @@ You can share documents and files that you want to make available to all team me
   
  You can view documents by double-clicking them. You can also upload, delete, move, and perform other tasks on the documents, libraries, and folders.  
   
- When you create a team project, the process template that you use determines the default names and content of the folders that are located under the **Documents** node of Team Explorer. For a description of the documents that are provided with the Microsoft Solutions Framework (MSF) process templates, see [Agile process template](../../work/work-items/guidance/agile-process.md) or [CMMI process template](../../work/work-items/guidance/cmmi-process.md). You can add other folders to the Documents node. The folders and subfolders always appear in alphabetical order.  
+ When you create a team project, the process template that you use determines the default names and content of the folders that are located under the **Documents** node of Team Explorer. For a description of the documents that are provided with the Microsoft Solutions Framework (MSF) process templates, see [Agile process template](../../boards/work-items/guidance/agile-process.md) or [CMMI process template](../../boards/work-items/guidance/cmmi-process.md). You can add other folders to the Documents node. The folders and subfolders always appear in alphabetical order.  
   
  You can use Team Explorer or your project portal to manage documents and document libraries. For information about how to manage documents in the project portal, see the help information that is provided for SharePoint Products.  
   

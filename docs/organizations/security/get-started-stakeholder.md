@@ -51,22 +51,22 @@ Use this topic to learn:
 
 ## Add a work item
 
-You might see different work item types in your view based on the process selected for your team project: [Scrum](../../work/work-items/guidance/scrum-process.md), [Agile](../../work/work-items/guidance/agile-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md). 
+You might see different work item types in your view based on the process selected for your team project: [Scrum](../../boards/work-items/guidance/scrum-process.md), [Agile](../../boards/work-items/guidance/agile-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md). 
  
 ::: moniker range="vsts"	
 > [!TIP]    
-> Use the [Work Items page](../../work/work-items/view-add-work-items.md) which supports personalized views of work items assigned to you or ones you've recently viewed or updated. Also, you can add work items from this page.  
+> Use the [Work Items page](../../boards/work-items/view-add-work-items.md) which supports personalized views of work items assigned to you or ones you've recently viewed or updated. Also, you can add work items from this page.  
 ::: moniker-end
     
 ::: moniker range="vsts || >= tfs-2017"
 
-From the Work hub, choose a work item, for example User Story, from the New Work Item list of options. Click the ![pin icon](../../work/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu.   
+From the Work hub, choose a work item, for example User Story, from the New Work Item list of options. Click the ![pin icon](../../boards/_img/icons/pin-icon.png) pin icon to have it show up within the Work hub drop down menu.   
 
-<img src="../../work/backlogs/_img/add-work-items-choose-user-story.png" alt="Web portal, project page, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" />  
+<img src="../../boards/backlogs/_img/add-work-items-choose-user-story.png" alt="Web portal, project page, Work hub, Add a work item" style="border: 1px solid #CCCCCC;" />  
 
-Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. For descriptions of each field, see [Work item field index](../../work/work-items/guidance/work-item-field.md). 
+Enter a title and then save the work item. Before you can change the State from its initial default, you must save it. For descriptions of each field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). 
 
-<img src="../../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
+<img src="../../boards/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 1px solid #CCCCCC;" />
 
 >[!NOTE]  
 >A caution icon on a tab indicates values that violate validation rules. You must correct information on that tab in order to save the work item. 
@@ -82,15 +82,15 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ::: moniker-end
 
-You can [add existing tags to any work item to support filter backlogs and queries](../../work/track/add-tags-to-work-items.md).
+You can [add existing tags to any work item to support filter backlogs and queries](../../boards/queries/add-tags-to-work-items.md).
 
 Work items you add are automatically scoped to your [team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch team project or team focus](../settings/switch-team-context.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json).
 	
 > [!NOTE]  
-> Depending on the process chosen when the team project was created&mdash;[Scrum](../../work/work-items/guidance/scrum-process.md), 
-[Agile](../../work/work-items/guidance/agile-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+> Depending on the process chosen when the team project was created&mdash;[Scrum](../../boards/work-items/guidance/scrum-process.md), 
+[Agile](../../boards/work-items/guidance/agile-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >	
-> For an overview of all three processes, see [Choose a process](../../work/work-items/guidance/choose-process.md). 
+> For an overview of all three processes, see [Choose a process](../../boards/work-items/guidance/choose-process.md). 
 
 
 <a id="check-backlog">  </a> 
@@ -99,10 +99,10 @@ Work items you add are automatically scoped to your [team's area and iteration p
 From your web browser, open your product backlog from the **Work** hub, **Backlogs** page. Work appears in the backlog in priority order. 
  
 ::: moniker range=">= tfs-2017"
-!["Web portal, choose Work hub, Backlogs](../../work/backlogs/_img/cyb-open-backlog-tfs-2017.png)
+!["Web portal, choose Work hub, Backlogs](../../boards/backlogs/_img/cyb-open-backlog-tfs-2017.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Work hub, backlogs, TFS 2015, 2013 web portal](../../work/backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Work hub, backlogs, TFS 2015, 2013 web portal](../../boards/backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -114,7 +114,7 @@ To view or edit a work item, select it and choose Enter.
 
 To add a new item, select the type and then name it. Your items are added to the bottom of the list.  
 
-<img src="../../work/backlogs/_img/create-backlog-add-new-items-ts.png" alt="Add work items to the backlog" style="border: 1px solid #C3C3C3;" />   
+<img src="../../boards/backlogs/_img/create-backlog-add-new-items-ts.png" alt="Add work items to the backlog" style="border: 1px solid #C3C3C3;" />   
 
 ## Check work in progress
 
@@ -132,9 +132,9 @@ To view the team's work status, click **Board** to open the Kanban board. Click 
 Click the **Work** hub, and then the **Work Items** page. 
 
 > [!div class="mx-imgBorder"]
-> ![Work hub, Work Items page ](../../work/work-items/_img/view-add/work-items-hub.png)
+> ![Work hub, Work Items page ](../../boards/work-items/_img/view-add/work-items-hub.png)
 
-Choose **Assigned to me** from the drop-down menu, you can focus on relevant items inside a team project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../work/work-items/view-add-work-items.md).  
+Choose **Assigned to me** from the drop-down menu, you can focus on relevant items inside a team project using one of the seven pivots as described next. Additionally, you can filter and sort each pivot view. For details, see [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).  
 
 > [!div class="mx-imgBorder"]
 > ![Work hub, Work Items page, Choose Assigned to Me](_img/stakeholder/work-items-assigned-to-me.png)
@@ -151,7 +151,7 @@ Or, open any of the queries defined in the Shared Queries folder.
 
 <img src="_img/work-as-a-stakeholder-open-shared-query.png" alt="Run a shared query" style="border: 1px solid #CCCCCC;" />  
 
-And, you can [create new queries or edit existing queries](../../work/track/using-queries.md) and save them under My Queries folder.  
+And, you can [create new queries or edit existing queries](../../boards/queries/using-queries.md) and save them under My Queries folder.  
 
 <img src="_img/work-as-a-stakeholder-edit-query.png" alt="Query Editor" style="border: 1px solid #CCCCCC;" />
 
@@ -168,7 +168,7 @@ The following features are available to Stakeholders from the web portal.
 > [!div class="mx-tdBreakAll"]
 > |Work  |Account, Dashboards, Wiki, and Notifications|
 > |-------------|----------|  
-> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../work/scrum/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../work/scrum/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../work/kanban/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../work/kanban/add-task-checklists.md) <sup>5, 3</sup><br/>- [Follow changes made to work items](../../work/work-items/follow-work-items.md) <br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md)<br/>- [Change work item type](../../work/backlogs/remove-delete-work-items.md)|- [Navigate to teams, team projects, and more](../../project/navigation/work-across-projects.md)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup><br/>- [View team dashboards](../../report/dashboards.md) <br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md)<br/>- [Invite users and assign licenses](../accounts/add-organization-users-from-user-hub.md) <sup>7</sup><br/>- [View wiki pages](../accounts/add-organization-users-from-user-hub.md) <sup>8</sup><br/><br/>**Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup><br/>- [Approve a release](../../pipelines/release/approvals/index.md) |
+> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md) <sup>5, 3</sup><br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) <br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md)<br/>- [Change work item type](../../boards/backlogs/remove-delete-work-items.md)|- [Navigate to teams, team projects, and more](../../project/navigation/work-across-projects.md)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup><br/>- [View team dashboards](../../report/dashboards.md) <br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md)<br/>- [Invite users and assign licenses](../accounts/add-organization-users-from-user-hub.md) <sup>7</sup><br/>- [View wiki pages](../accounts/add-organization-users-from-user-hub.md) <sup>8</sup><br/><br/>**Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup><br/>- [Approve a release](../../pipelines/release/approvals/index.md) |
 
 **Notes:**
 
@@ -190,7 +190,7 @@ The following features are available to Stakeholders from the web portal.
 > [!div class="mx-tdBreakAll"]
 > |Work  |Account, Dashboards, Wiki, and Notifications|
 > |-------------|----------|  
-> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../work/scrum/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../work/scrum/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../work/kanban/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../work/kanban/add-task-checklists.md) <sup>5, 3</sup><br/>- [Follow changes made to work items](../../work/work-items/follow-work-items.md) <br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md)<br/>- [Change work item type](../../work/backlogs/remove-delete-work-items.md)|- [Navigate to teams, team projects, and more](../../project/navigation/work-across-projects.md)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup><br/>- [View team dashboards](../../report/dashboards.md) <br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md)<br/>- [View wiki pages](../accounts/add-organization-users-from-user-hub.md) <sup>7</sup><br/><br/>**Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup><br/>- [Approve a release](../../pipelines/release/approvals/index.md) |
+> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md) <sup>5, 3</sup><br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) <br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md)<br/>- [Change work item type](../../boards/backlogs/remove-delete-work-items.md)|- [Navigate to teams, team projects, and more](../../project/navigation/work-across-projects.md)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup><br/>- [View team dashboards](../../report/dashboards.md) <br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md)<br/>- [View wiki pages](../accounts/add-organization-users-from-user-hub.md) <sup>7</sup><br/><br/>**Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup><br/>- [Approve a release](../../pipelines/release/approvals/index.md) |
 
 **Notes:**
 
@@ -212,7 +212,7 @@ The following features are available to Stakeholders from the web portal of the 
 > [!div class="mx-tdBreakAll"]
 > |Work  |Account, Dashboards, and Notifications|
 > |-------------|----------|  
-> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../work/scrum/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../work/scrum/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../work/kanban/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../work/kanban/add-task-checklists.md) <sup>2, 3</sup> (TFS 2015.1)<br/>- [Follow changes made to work items](../../work/work-items/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup><br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md) |- [Navigate to teams, team projects, and more](../../project/navigation/work-across-projects.md) (TFS 2017)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup> (TFS 2017)<br/>- [View team dashboards](../../report/dashboards.md) (TFS 2015)<br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md) (TFS 2017) <br/>- [Set personal alerts for changes to work items](../../work/track/alerts-and-notifications.md) (TFS 2013, 2015)<br/><br/>- **Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup> (TFS 2015.2)<br/>- [Approve a release](../../pipelines/release/approvals/index.md) <sup>5</sup> (TFS 2015.2) |
+> |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md) <sup>2, 3</sup> (TFS 2015.1)<br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup><br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md) |- [Navigate to teams, team projects, and more](../../project/navigation/work-across-projects.md) (TFS 2017)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup> (TFS 2017)<br/>- [View team dashboards](../../report/dashboards.md) (TFS 2015)<br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md) (TFS 2017) <br/>- [Set personal alerts for changes to work items](../../boards/queries/alerts-and-notifications.md) (TFS 2013, 2015)<br/><br/>- **Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup> (TFS 2015.2)<br/>- [Approve a release](../../pipelines/release/approvals/index.md) <sup>5</sup> (TFS 2015.2) |
 
 **Notes:**   
 1. Stakeholders can assign existing tags to work items, but not create new tags.  
@@ -245,8 +245,8 @@ If you need access to the following features&mdash;which support the daily work 
 
 For a comparison chart of Stakeholder vs Basic access, see this [feature matrix](https://visualstudio.microsoft.com/team-services/compare-features/). See also these quickstart guides: 
 
-- [Add work items](../../work/backlogs/add-work-items.md)  
-- [Create your backlog](../../work/backlogs/create-your-backlog.md)
-- [Kanban quickstart](../../work/kanban/kanban-quickstart.md)
+- [Add work items](../../boards/backlogs/add-work-items.md)  
+- [Create your backlog](../../boards/backlogs/create-your-backlog.md)
+- [Kanban quickstart](../../boards/boards/kanban-quickstart.md)
 
 If you want to provide a group of users access to provide feedback, then you don't need to give them Stakeholder access. Instead, simply [give reviewers permissions to provide feedback](../../project/feedback/give-permissions-feedback.md). 

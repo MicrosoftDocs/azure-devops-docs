@@ -1,0 +1,11 @@
+- name: VSTS and TFS
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Agile
+    tocHref: /vsts/
+    topicHref: /vsts/index#pivot=apps&panel=agile
+    items:
+    - name: Sprints (Scrum)
+      tocHref: /vsts/
+      topicHref: /vsts/boards/sprints/index

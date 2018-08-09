@@ -61,7 +61,7 @@ Either choose the context menu for the item that you want to remove and select U
 
 ##Related notes
 
-- [Define queries](../../work/track/using-queries.md) 
+- [Define queries](../../boards/queries/using-queries.md) 
 - [Define builds](../../pipelines/overview.md) 
 - [Test charts](../../test/track-test-status.md) 
 

@@ -42,7 +42,7 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
 ##Update the workflow and metastates
   
 > [!IMPORTANT]  
->  The procedures in this topic were written based on the Agile v6.0 process. To update your project to support the latest workflow defined for Agile v6.1 process, you can adapt these procedures to instead copy the `WORKFLOW` sections of the latest Agile process template. Significant updates were made to the [workflow for several work item types in the TFS 2012.1 update](../../work/work-items/guidance/changes-to-process-templates.md). These changes support backward transitions so that when you inadvertently drag a work item on the Kanban board or the task board to a resolved or closed state, you can drag it back to an earlier workflow state.  
+>  The procedures in this topic were written based on the Agile v6.0 process. To update your project to support the latest workflow defined for Agile v6.1 process, you can adapt these procedures to instead copy the `WORKFLOW` sections of the latest Agile process template. Significant updates were made to the [workflow for several work item types in the TFS 2012.1 update](../../boards/work-items/guidance/changes-to-process-templates.md). These changes support backward transitions so that when you inadvertently drag a work item on the Kanban board or the task board to a resolved or closed state, you can drag it back to an earlier workflow state.  
   
  You will need to perform the following steps:  
   
@@ -368,4 +368,4 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
      ![Agile task board with updated workflow](_img/alm_vrf_taskboard_agile_v6.png "ALM_VRF_TaskBoard_Agile_V6")  
 Task board for an Agile project with the updated workflow states  
   
-     To learn more about using the task board, see [Sprint planning](../../work/scrum//assign-work-sprint.md).
+     To learn more about using the task board, see [Sprint planning](../../boards/sprints//assign-work-sprint.md).

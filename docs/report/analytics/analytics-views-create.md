@@ -101,7 +101,7 @@ Specify filters to reduce the number of results returned by your view. In the wo
     > [!div class="mx-imgBorder"] 
     > ![Filter by Bugs, Priority, and Tags example](_img\editable-views\field-criteria.png)
 
-	For details about working with tags, see [Add work item tags to categorize and filter lists and boards](../../work/track/add-tags-to-work-items.md).
+	For details about working with tags, see [Add work item tags to categorize and filter lists and boards](../../boards/queries/add-tags-to-work-items.md).
 
    > [!NOTE]   
    > It is important to understand how filters are applied to historical data. Read [Filters applied to historical data](../analytics/analytics-historical-filtering.md) for more information.

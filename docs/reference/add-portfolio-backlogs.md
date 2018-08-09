@@ -21,7 +21,7 @@ ms.date: 12/15/2017
 >
 >For an overview of process models, see [Customize your work tracking experience](customize-work.md).  
 
-Portfolio backlogs are useful for organizing your backlog under business initiatives. When you [organize your backlogs into portfolios](../work/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
+Portfolio backlogs are useful for organizing your backlog under business initiatives. When you [organize your backlogs into portfolios](../boards/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
 
 Your project comes equipped with two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.  
 
@@ -33,7 +33,7 @@ Here, we add a third portfolio backlog, Initiative. With it, the management team
 <a id="image-diff"></a>  
 
 > [!NOTE]  
-> The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your project&mdash;[Agile](../work/work-items/guidance/agile-process.md), [Scrum](../work/work-items/guidance/scrum-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md). However, the basic functionality available to you remains the same unless explicitly mentioned. 
+> The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS, and the process template chosen when creating your project&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md). However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
 ![A view of three portfolio backlogs enabled](_img/three-level-portfolio-backlog.png)
@@ -47,16 +47,16 @@ The process to add another portfolio backlog differs slightly depending on the [
 - For **Hosted XML**: You'll first export your process, add or update definition files, and then import that process to either update existing projects or use it to create a project.  
 - For **On-premises XML**: You'll first export your work tracking definition files, update them, and then import them to your project.  
 
-This topic walks you through adding a portfolio backlog to a project based on the [Agile process](../work/work-items/guidance/agile-process.md) in these five steps: 
+This topic walks you through adding a portfolio backlog to a project based on the [Agile process](../boards/work-items/guidance/agile-process.md) in these five steps: 
 1.	[Export the files you need](#export-files)
 2.	[Create the Initiative work item type](#create-initiative)
 3.	[Update Categories with the Initiative Category](#update-categories)
 4.	[Update ProcessConfiguration to add the Initiative portfolio backlog](#update-processconfig)
 5.	[Update your project and verify your changes](#update-team-project)  
 
-You can apply the same steps if you work with a project based on the [Scrum](../work/work-items/guidance/scrum-process.md) or [CMMI](../work/work-items/guidance/cmmi-process.md) process. When you're done, you'll get to manage your portfolio of projects by grouping work within these four levels: User Stories (or Product backlog items or Requirements), Features, Epics, and Initiatives.   
+You can apply the same steps if you work with a project based on the [Scrum](../boards/work-items/guidance/scrum-process.md) or [CMMI](../boards/work-items/guidance/cmmi-process.md) process. When you're done, you'll get to manage your portfolio of projects by grouping work within these four levels: User Stories (or Product backlog items or Requirements), Features, Epics, and Initiatives.   
  
-For an overview of the three system processes, see [Choose a process](../work/work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
+For an overview of the three system processes, see [Choose a process](../boards/work-items/guidance/choose-process.md). For an overview of the three process models, see [Customize your work tracking experience](customize-work.md). 
 
 <a id="export-files">  </a>
 ##1. Export the files you need
@@ -205,7 +205,7 @@ In this last step, you add the Initiative portfolio backlog to the process and m
 		b. Categories.xml   
 		c. ProcessConfiguration.xml   
 
-2.	Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected. See [Organize your backlog](../work/backlogs/organize-backlog.md).  
+2.	Open or refresh the web portal and confirm that Initiative appears as a portfolio backlog as expected. See [Organize your backlog](../boards/backlogs/organize-backlog.md).  
 3.	Grant [Advanced access](../organizations/security/change-access-levels.md) to users who'll need to exercies all the features available with portfolio backlogs.  
 	For **Hosted XML:**  See [Assign licenses to users](../organizations/accounts/add-organization-users-from-user-hub.md).
 
@@ -285,7 +285,7 @@ Yes. For example, you can add Goal and Initiative WITs to a portfolio backlog ca
 
 **Can you nest backlog items in addition to using portfolio backlogs?**  
 
-While you can nest backlog items, we don't recommend you do. We don't support drag-and-drop linking of nested backlog items. Instead, we support [mapping of backlog items to portfolio items](../work/backlogs/organize-backlog.md).  
+While you can nest backlog items, we don't recommend you do. We don't support drag-and-drop linking of nested backlog items. Instead, we support [mapping of backlog items to portfolio items](../boards/backlogs/organize-backlog.md).  
 
-For examples of how hierarchically linked items that belong to the Requirements Category appear on the backlogs and boards, see [How backlogs and boards display hierarchical (nested) items](../work/backlogs/resolve-backlog-reorder-issues.md).
+For examples of how hierarchically linked items that belong to the Requirements Category appear on the backlogs and boards, see [How backlogs and boards display hierarchical (nested) items](../boards/backlogs/resolve-backlog-reorder-issues.md).
 

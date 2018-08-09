@@ -21,7 +21,7 @@ ms.date: 02/10/2017
 
 You can customize an existing link type or create a link type to meet your project tracking requirements. You use a link type to define the link labels, topology type, and restrictions that are used when creating relationships between work items.  You can customize an existing link type or create a link type to meet your project tracking requirements.  
 
-Before you start to add or modify a link type, you should assess the link types available and how they are used in your project. See [Manage dependencies, link work items](../../work/track/link-work-items-support-traceability.md).  
+Before you start to add or modify a link type, you should assess the link types available and how they are used in your project. See [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md).  
   
 > [!NOTE]  
 >  You cannot customize the system-defined link types that correspond to the Related, Parent-Child, and Successor-Predecessor links.  
@@ -36,10 +36,10 @@ The link type is specified in a type definition XML file that you import to a pr
   
 With the `witadmin` command-line utility, you can deactivate, delete, export, import, list, and reactivate link types. See [Manage link types](../witadmin/manage-link-types.md).  
   
-Links are added through the work item form, which contains the links control. See [Link controls, restrictions, and fields](../../work/track/linking-attachments.md).  
+Links are added through the work item form, which contains the links control. See [Link controls, restrictions, and fields](../../boards/queries/linking-attachments.md).  
   
 In addition to defining link types, you can customize the work item type definition to accept or prohibit specific links based on link type. You use the `LinksControlOptions` element to define the options that control what links can be added to a work item and to which work item types. Also, you can specify the default columns that you want to appear for the list of links in a work item. For more information, see [Define link controls to restrict link relationships](define-link-controls.md).  
   
 ## Related articles  
-- [Link work items to track dependencies](../../work/track/link-work-items-support-traceability.md)
+- [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)
 - [Customize your work tracking experience](../customize-work.md) 

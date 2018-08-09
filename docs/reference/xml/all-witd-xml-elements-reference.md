@@ -147,7 +147,7 @@ For the Hosted XML and On-premises XML process models (TFS 2017 and later versio
 <a name="PredefinedWITs"></a> 
 ## Process template work item types  
 
-Upon installing or upgrading an instance of an on-premises TFS, the [default process templates](../../work/work-items/guidance/choose-process.md) are downloaded to the following directory:  
+Upon installing or upgrading an instance of an on-premises TFS, the [default process templates](../../boards/work-items/guidance/choose-process.md) are downloaded to the following directory:  
 
 **For TFS 2017**: 
 ```  

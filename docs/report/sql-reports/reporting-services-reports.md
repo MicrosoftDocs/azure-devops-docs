@@ -68,16 +68,16 @@ Project management reports provide insight into how much work the team is tackli
 <td width="60%">
 <b>Work item tracking activities</b>
     <ol>
-        <li>[Create the backlog](../../work/backlogs/create-your-backlog.md).
+        <li>[Create the backlog](../../boards/backlogs/create-your-backlog.md).
             <ul>
                 <li>Create product backlog items and specify the <b>Effort</b> (Scrum).</li>
                 <li>Create user stories and specify the <b>Story Points</b> (Agile).</li>
                 <li>Create requirements and specify the <b>Size</b> (CMMI).</li>
             </ul>
         </li>
-        <li>[Work in sprints](../../work/scrum/assign-work-sprint.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.</li>
+        <li>[Work in sprints](../../boards/sprints/assign-work-sprint.md). Assign backlog items to sprints, create tasks and link them to parent backlog items, and assign to a team member.</li>
         <li>
-            [Update Remaining Work for tasks](../../work/scrum/task-board.md). For Agile and CMMI team projects, update <b>Completed Work</b> as well.
+            [Update Remaining Work for tasks](../../boards/sprints/task-board.md). For Agile and CMMI team projects, update <b>Completed Work</b> as well.
             <br />
             <b>Tip</b>
             <br />
@@ -212,7 +212,7 @@ Test planning reports support monitoring the test progress and coverage of backl
  **A:** See [Create areas or iterations](../../organizations/settings/set-area-paths.md).  
   
 ### Q: Do you want to bulk edit work items to assign them to an area, iteration, team member, or priority?  
- **A:**  See [Bulk modify work items](../../work/backlogs/bulk-modify-work-items.md).  
+ **A:**  See [Bulk modify work items](../../boards/backlogs/bulk-modify-work-items.md).  
   
 ### Q: Do you want to add a field to track additional data?  
 **A:**  See [Add or modify a work item field to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).   
