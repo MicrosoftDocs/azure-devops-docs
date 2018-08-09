@@ -2,7 +2,7 @@
 title: Review summarized test results – VSTS Sprint 138 Update
 author: alexcnichols
 ms.author: alexn
-ms.date: 8/3/2018
+ms.date: 08/03/2018
 description: In the Sprint 138 Update of Visual Studio Team Services (VSTS), the results pages for Build and release pipelines has been enhanced with a summarized view of test results that organizes related outcomes into a hierarchy.
 ---
 
@@ -47,6 +47,7 @@ Package:
 
 Reporting:
 
+- [View VSTS dashboards within Microsoft Teams](#view-vsts-dashboards-within-microsoft-teams)
 - [Investigate build history through a new build dashboard widget](#investigate-build-history-through-a-new-build-dashboard-widget)
 
 Admin:
@@ -135,6 +136,10 @@ Previously, you used to be able to see the dependencies of a package, but you ha
 ![Package dependencies](_img/138_08.png)
 
 ## Reporting
+
+### View VSTS dashboards within Microsoft Teams
+
+You can now bring any of your VSTS dashboards into [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) to strengthen conversations with your team. To set this up, install the [Microsoft Teams Integration extension](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and follow the instructions to select your dashboard. The selected dashboard will be added as a new tab in the Microsoft Teams channel. Dashboards are optimized for consumption and refresh every time you open the tab. You can drill into more details and take action in VSTS by clicking the links on selected widgets. See the [Microsoft Teams integration](/vsts/service-hooks/services/teams?view=vsts) documentation and the [post on Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/2018/08/09/make-your-visual-studio-team-services-dashboard-part-of-your-conversation-in-microsoft-teams/) for more information.
 
 ### Investigate build history through a new build dashboard widget
 
