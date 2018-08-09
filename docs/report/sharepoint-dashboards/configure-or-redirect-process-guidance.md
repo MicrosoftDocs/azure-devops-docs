@@ -163,6 +163,6 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 <a name="addportal"></a> 
 ###  Q: Can I embed process guidance within a work item form?  
- **A:** Yes. To specify text or a hyperlink within a work item form, see [LabelText and Text](../../work/customize/reference/labeltext-and-text-xml-elements-reference.md).  
+ **A:** Yes. To specify text or a hyperlink within a work item form, see [LabelText and Text](../../reference/xml/labeltext-and-text-xml-elements-reference.md).  
   
- To embed a webpage or html content within a work item form, see [WebpageControlOptions](../../work/customize/reference/webpagecontroloptions-xml-elements-reference.md).
+ To embed a webpage or html content within a work item form, see [WebpageControlOptions](../../reference/xml/webpagecontroloptions-xml-elements-reference.md).

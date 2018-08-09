@@ -109,7 +109,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 0. Choose the context menu for the node you want to manage.  
 	
-	![Open the security dialog](../../work/customize/_img/ALM_CW_OpenSecurityDialog.png)  
+	![Open the security dialog](../../reference/_img/ALM_CW_OpenSecurityDialog.png)  
 
 ::: moniker-end
 
@@ -121,7 +121,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 	
 	You can specify two explicit authorization states for permissions: **Deny** and **Allow**. In addition, permissions can exist in one of three additional states.  To learn more, see [About permissions and groups](about-permissions.md). 
 
-<!--- <img src=".../work/customize/_img/ALM_CW_PermisionsForArea.png" alt="Permissions for an area node" style="border: 1px solid #C3C3C3;" />--> 
+<!--- <img src=".../boards/boards/_img/ALM_CW_PermisionsForArea.png" alt="Permissions for an area node" style="border: 1px solid #C3C3C3;" />--> 
 
 ---
 
@@ -228,15 +228,15 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 ## Additional options for restricting access to work items   
 
 > [!NOTE]   
-> You can use one or more of the following options with the Hosted XML or On-premises XML process models. To learn more about process models, see [Customize work tracking experience](../../work/customize/customize-work.md).  
+> You can use one or more of the following options with the Hosted XML or On-premises XML process models. To learn more about process models, see [Customize work tracking experience](../../reference/customize-work.md).  
 
 You can restrict access to work tracking objects in one of two ways:
 
--   By [adding WITs to the Hidden Categories group](../../work/customize/reference/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../work/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
--   [Set a condition field rule](../../work/customize/reference/apply-rule-work-item-field.md), [a condition-based field rule](../../work/customize/reference/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
+-   By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../work/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
+-   [Set a condition field rule](../../reference/xml/apply-rule-work-item-field.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
 
 For more information about how to customize WITs, 
-see [Modify or add a custom work item type (WIT)](../../work/customize/add-modify-wit.md).
+see [Modify or add a custom work item type (WIT)](../../reference/add-modify-wit.md).
 
 
 

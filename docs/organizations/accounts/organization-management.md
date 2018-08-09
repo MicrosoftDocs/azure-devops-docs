@@ -1,6 +1,6 @@
 ---
 title: Create and manage your VSTS organization 
-description: Collaborate with others to develop apps using our cloud service, plan and track work, integrate with other services, and get more features or extensions
+description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
@@ -18,25 +18,25 @@ monikerRange: '>= tfs-2013'
 
 With a Visual Studio Team Services (VSTS) organization, you gain access to the platform in which you can:
 
-* Collaborate with others to develop applications using our cloud service
-* Plan and track your work as well as code defects and issues
-* Set up continuous integration and deployment
-* Integrate with other services using service hooks
-* Obtain additional features through Marketplace extensions
+* Collaborate with others to develop applications by using our cloud service.
+* Plan and track your work as well as code defects and issues.
+* Set up continuous integration and deployment.
+* Integrate with other services by using service hooks.
+* Obtain additional features through Azure Marketplace extensions.
 
 ## Create your organization
 
-To get started, you'll want to [create your VSTS organization](create-organization-msa-or-work-student.md) and then invite others so they can access your organization.
+To get started, [create your VSTS organization](create-organization-msa-or-work-student.md) and then invite others so they can access your organization.
 
-Choose Git or Team Foundation as your version control,
+Choose Git or Team Foundation Server as your version control,
 so that VSTS can create your team project for code and other assets,
 like builds, tests, and work items. If you're starting with Visual Studio
 as your development environment, you can create your VSTS organization when you
 [set up Visual Studio](set-up-vs.md).
 
-Your VSTS organization includes 5 free users
-with Basic access plus unlimited Visual Studio
-subscribers and Stakeholders at no extra charge.
+Your VSTS organization includes five free users
+with Basic access, plus unlimited Visual Studio
+subscribers and stakeholders at no extra charge.
 Your organization also includes free monthly amounts
 of additional services, like build and deployment,
 and cloud-based load testing.
@@ -89,5 +89,5 @@ with Microsoft services like Office 365 and Microsoft Azure.
 If your enterprise uses a directory managed by Azure AD,
 your VSTS organization can also
 [use your directory to authenticate access](access-with-azure-ad.md).
-Or [change your Azure AD](change-organization-location.md),
+Or [change your Azure AD instance](change-organization-location.md),
 if you're already connected to an existing directory.

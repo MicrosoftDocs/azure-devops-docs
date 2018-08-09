@@ -2,10 +2,10 @@
 
 If you have at least Basic access, you can find the current owner in your VSTS organization settings.
 
-0.	Go to your VSTS organization settings.
+1.	Go to your VSTS organization settings.
 
-	<img alt="Go to organization settings" src="./_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Go to your organization settings" src="./_img/organization-settings-new-ui.png" style="border: 1px solid #CCCCCC" />
 
-0.	Under **Settings**, find the current owner.
+1.	Under **Settings**, find the current owner.
 
-	<img alt="Find current owner" src="./_img/organization-owner-new-ui.png" style="border: 1px solid #CCCCCC" />
+	<img alt="Find the current owner" src="./_img/organization-owner-new-ui.png" style="border: 1px solid #CCCCCC" />

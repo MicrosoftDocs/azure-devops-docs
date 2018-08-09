@@ -115,7 +115,7 @@ Track the features and requirements you're developing, code defects or bugs, and
 - [Kanban](../kanban/index.md)
 - [Scrum](../scrum/index.md)
 - [Queries](../track/index.md)
-- [Customization](../customize/index.md)
+- [Customization](../../reference/index.md)
 
 
 

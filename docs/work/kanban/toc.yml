@@ -25,7 +25,7 @@
   - name: Kanban best practices
     href: best-practices-kanban.md
   - name: "Workflow states & state categories"
-    href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
+    href: ../work-items/workflow-and-state-categories.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: About teams and Agile tools
     href: ../../organizations/settings/about-teams-and-settings.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json 
   - name: Agile glossary
@@ -36,7 +36,7 @@
   - name: Add or edit columns
     href: add-columns.md
   - name: Customize cards
-    href: ../customize/customize-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
+    href: ../../boards/boards/customize-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json  
   - name: WIP limits
     href: wip-limits.md
   - name: Expedite work
@@ -46,7 +46,7 @@
   - name: Definition of done
     href: definition-of-done.md
   - name: Reorder cards
-    href: ../customize/reorder-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json
+    href: ../../boards/boards/reorder-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json
   - name: Filter your Kanban board
     href: filter-kanban-board.md 
   - name: "Manage permissions (Security)"
@@ -76,7 +76,7 @@
   - name: Queries
     href: ../track/index.md
   - name: Customization
-    href: ../customize/index.md
+    href: ../../reference/index.md
   - name: "Scale & Configure Teams"
     href: ../../organizations/settings/scale/index.md
   - name: "What is Agile?"

@@ -28,7 +28,7 @@ With SQL Server Reporting Services, you gain access to many default Excel and SQ
 Without these services, you can [create status and trend charts from work item queries](../charts.md) directly from the operational data stores.
 
 ##View, add, update, or customize reports or report functionality
-You use work item fields to track data for a work item type, to define the filter criteria for queries, and to design reports. To support reporting, you can add fields or change the attributes of existing fields. When you add or modify fields, you will want to apply systematic naming conventions to make sure that data is logically grouped into folders in the cube. To learn more, see [Add or modify work item fields to support reporting](../../work/customize/reference/add-or-modify-work-item-fields-to-support-reporting.md). 
+You use work item fields to track data for a work item type, to define the filter criteria for queries, and to design reports. To support reporting, you can add fields or change the attributes of existing fields. When you add or modify fields, you will want to apply systematic naming conventions to make sure that data is logically grouped into folders in the cube. To learn more, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md). 
 
 To bulk add or update reports for a team project, see [Upload reports to a team project](upload-reports.md). To manage Reporting Services Reports, see [Reporting Services Reports (SSRS)](https://msdn.microsoft.com/library/bb522712.aspx) .
 
@@ -75,7 +75,7 @@ You can manage the warehouse and analysis services cube to address the following
 
 ##Related content
 
-- [Reportable fields reference](../../work/customize/reference/reportable-fields-reference.md) provides definitions for each reportable field. A default set of fields appears in the relational warehouse database or the cube. These fields have a reportable attribute value of Detail, Dimension, or Measure. 
+- [Reportable fields reference](../../reference/xml/reportable-fields-reference.md) provides definitions for each reportable field. A default set of fields appears in the relational warehouse database or the cube. These fields have a reportable attribute value of Detail, Dimension, or Measure. 
 [Understanding SQL Server and SQL Server Reporting Services](/tfs/server/architecture/sql-server-databases) describes the relationships and dependencies between SQL Server and TFS.
 - [Manage team project collections](/tfs/server/admin/manage-team-project-collections) describes how you can enable and disable data that flows into the data warehouse by editing the reporting configuration for your team project collections. After you add a report server to your deployment, you can configure reporting resources for your team project collections and the projects in those collections.
 

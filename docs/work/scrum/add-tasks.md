@@ -101,7 +101,7 @@ If you haven't yet assigned backlog items to your sprint, [do that now](assign-w
 
 For each sprint backlog item, add a task. Adding tasks from the sprint backlog or board automatically links the task to its parent backlog item. 
 > [!TIP]    
-> You can quickly add several tasks on the task board by simply entering a title. You can then later bulk edit items to assign them or add additional details. You can also enter *Remaining Work* onto the card by making sure you [add that field to display on the task board](../customize/customize-cards.md#task-board). 
+> You can quickly add several tasks on the task board by simply entering a title. You can then later bulk edit items to assign them or add additional details. You can also enter *Remaining Work* onto the card by making sure you [add that field to display on the task board](../../boards/boards/customize-cards.md#task-board). 
 
 # [New navigation](#tab/new-nav)
 
@@ -122,7 +122,7 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 > ![Add task from the task board](_img/add-tasks/add-task-board-agile.png)
 
 > [!TIP]    
-> You can quickly add tasks through the Taskboard by just specifying the title of the work item. To show fields on the card, see [Customize cards](../customize/customize-cards.md#task-board).   
+> You can quickly add tasks through the Taskboard by just specifying the title of the work item. To show fields on the card, see [Customize cards](../../boards/boards/customize-cards.md#task-board).   
 
 ::: moniker-end
 
@@ -148,7 +148,7 @@ Another option, is to open the **Board**, and add tasks as cards. Simply click t
 > ![Add task from the task board](_img/add-tasks/add-task-board-standard.png)
 
 > [!TIP]    
-> You can quickly add tasks through the Board by just specifying the title of the work item. To show fields on the card, see [Customize cards](../customize/customize-cards.md#task-board).  
+> You can quickly add tasks through the Board by just specifying the title of the work item. To show fields on the card, see [Customize cards](../../boards/boards/customize-cards.md#task-board).  
 
 ---
 

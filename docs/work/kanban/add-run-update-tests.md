@@ -154,7 +154,7 @@ To create a copy of a test to add to a different user story, select the test, pr
 
 Use inline tests for lightweight traceability and to manage manual tests for user stories or other backlog items that they support. To learn more about test case management, see [Create manual tests](../../test/create-test-cases.md).  
 
-If you find that you don't use this feature, you can disable it from the [common configurations dialog](../customize/customize-cards.md#annotations). 
+If you find that you don't use this feature, you can disable it from the [common configurations dialog](../../boards/boards/customize-cards.md#annotations). 
 
 Additional ways you can quickly add linked items and objects to user stories from the Kanban board:
 - [Add inline tasks](add-task-checklists.md)

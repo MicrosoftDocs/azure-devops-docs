@@ -75,9 +75,9 @@ Open a new query, set the query type to Work items and direct links. Filter for 
 
 ## Build and test data fields  
 
-The following table describes the fields that are defined in one or more of the test WITs. For information about data types and field attributes, see [Define and modify work item fields](../customize/reference/define-modify-work-item-fields.md).
+The following table describes the fields that are defined in one or more of the test WITs. For information about data types and field attributes, see [Define and modify work item fields](../../reference/xml/define-modify-work-item-fields.md).
 
-To customize a field or pick list, see [Add or modify a field to support queries, reports, and workflow](../customize/add-modify-field.md).
+To customize a field or pick list, see [Add or modify a field to support queries, reports, and workflow](../../reference/add-modify-field.md).
 
 
 <table width="100%">
@@ -280,5 +280,5 @@ Test Manager and the test work item types (WITs) use the following fields to tra
 |---|---|---|
 |<ul><li>Bug</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li></ul>|<ul><li>Bug</li><li>Shared Parameters</li><li>Shared Steps</li><li>Test Case</li><li>Test Plan</li><li>Test Suite</li></ul>|
 
-To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](../customize/configure-features-after-upgrade.md).
+To learn more about upgrading an existing project to get WITs that your project currently doesn't have, see [Configure features after an upgrade](../../reference/configure-features-after-upgrade.md).
 

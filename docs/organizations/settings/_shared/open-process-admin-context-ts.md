@@ -23,7 +23,7 @@ You create, manage, and make customizations to processes from the **Organization
 	> ![Organization Settings, Process page](/vsts/organizations/settings/work/_img/process/open-process-page-vert.png) 
 
 	> [!IMPORTANT]  
-	>If you don't see **Process**, then you're working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/work/customize/customize-work).
+	>If you don't see **Process**, then you're working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/reference/customize-work).
 
 ::: moniker-end  
 
@@ -34,7 +34,7 @@ You create, manage, and make customizations to processes from the **Settings>Pro
 0. To open the admin context from the user context, choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Organization settings**.
  
 	> [!IMPORTANT]  
-	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/work/customize/customize-work).
+	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/reference/customize-work).
 	
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/vsts/_shared/_img/settings/open-account-settings.png)   
