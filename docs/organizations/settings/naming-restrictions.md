@@ -537,7 +537,7 @@ All work item tracking objects are associated with one or more names. Most have 
 
 Restrictions are placed on several elements associated with work items, including reference and friendly names, field names, and attachment size  
 
-You can [modify or add a custom work item type (WIT)](../../work/customize/add-modify-wit.md) to support your team's processes. 
+You can [modify or add a custom work item type (WIT)](../../reference/add-modify-wit.md) to support your team's processes. 
 
 ### Attachments  
 
@@ -562,7 +562,7 @@ Default maximum size: 4,096 kilobytes
 </li>
 <li>
 <p>Absolute maximum size: 2 gigabytes</p>
-<p>[Change the maximum attachment size for work items](../../work/customize/reference/change-maximum-attachment-size-work-items.md).</p></li>
+<p>[Change the maximum attachment size for work items](../../reference/xml/change-maximum-attachment-size-work-items.md).</p></li>
 </ul>
 </td>
 </tr>
@@ -834,7 +834,7 @@ Microsoft.VSTS.TCM.TestSuiteType</p>
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Field help text
 
-You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific project. [Apply a rule to a work item field](../../work/customize/reference/apply-rule-work-item-field.md) provides information on adding help text.
+You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific project. [Apply a rule to a work item field](../../reference/xml/apply-rule-work-item-field.md) provides information on adding help text.
 
 Help text that you add must conform to the following restrictions. 
 <table>
@@ -862,7 +862,7 @@ Help text that you add must conform to the following restrictions.
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Global lists 
 
-A global list is a set of list item values that you can use globally across all project collections within an instance of an on-premises TFS. As you define WITs, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple WITs and projects. See [Define global lists](../../work/customize/reference/define-global-lists.md) for details.
+A global list is a set of list item values that you can use globally across all project collections within an instance of an on-premises TFS. As you define WITs, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple WITs and projects. See [Define global lists](../../reference/xml/define-global-lists.md) for details.
 
 A global list, defined using the ```GLOBALLIST``` element contains one or more list items, specified using the ```LISTITEM``` element.
 
@@ -1347,5 +1347,5 @@ Names you assign to a wiki page title must conform to the following restrictions
 
 
 ## Related articles 
-*	[Customize work tracking objects to support your team's processes](../../work/customize/customize-work.md)
-*	[Customize a process template](../../work/customize/reference/process-templates/customize-process.md)
+*	[Customize work tracking objects to support your team's processes](../../reference/customize-work.md)
+*	[Customize a process template](../../reference/process-templates/customize-process.md)

@@ -56,6 +56,19 @@ ms.topic: include
 </tr>
 
 <tr>
+<td>Agent.OS</td>
+<td>
+The operating system of the agent host. Valid values are:
+<ul>
+<li>Windows_NT
+<li>Darwin
+<li>Linux
+</ul>
+If you're running in a container, the agent host and container may be running different operating systems.
+</td>
+</tr>
+
+<tr>
 <td>Agent.WorkFolder</td>
 <td>
 The working directory for this agent.

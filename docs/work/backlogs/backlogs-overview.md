@@ -48,7 +48,7 @@ You access tools provided by VSTS and TFS by connecting from a client to the ser
 
 
 
-For an overview of all your customization options, see [Customize your work tracking experience](../customize/customize-work.md). 
+For an overview of all your customization options, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 
  

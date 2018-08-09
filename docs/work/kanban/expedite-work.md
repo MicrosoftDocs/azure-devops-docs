@@ -55,7 +55,7 @@ Once you've identified one or two, add them to your working Kanban board.
 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Swimlanes.  
 
-	<img src="../customize/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" /> 
+	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 1px solid #C3C3C3;" /> 
 
 	If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
@@ -89,8 +89,8 @@ As you can see, swimlanes provides another way to organize and visualize the flo
 *	[Work in Progress limits](wip-limits.md)   
 *	[Split columns](split-columns.md)   
 *	[Definition of Done](definition-of-done.md)   
-*	[Customize cards](../customize/customize-cards.md)   
-*	[Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)   
+*	[Customize cards](../../boards/boards/customize-cards.md)   
+*	[Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)   
 
 
 

@@ -147,9 +147,9 @@ As your organization grows, you can scale your Agile tools in the following ways
 
 - **[Set up sprints and releases](../scrum/define-sprints.md):** You can structure your iterations to support a flat set of sprints, or a set of sprints embedded within scheduled releases. Each team activates the set of sprints and releases that they need to participate in. 
 
-- **[Manage portfolios](portfolio-management.md):** by setting up a hierarchy of teams and backlogs and [activating portfolio backlogs](../customize/select-backlog-navigation-levels.md). Feature teams focused on a subset of the product backlog can remain focused on just their backlog. Portfolio managers who want to view and organize backlogs to track progress and dependencies can manage portfolio backlogs of Features and Epics.  
+- **[Manage portfolios](portfolio-management.md):** by setting up a hierarchy of teams and backlogs and [activating portfolio backlogs](../../organizations/settings/select-backlog-navigation-levels.md). Feature teams focused on a subset of the product backlog can remain focused on just their backlog. Portfolio managers who want to view and organize backlogs to track progress and dependencies can manage portfolio backlogs of Features and Epics.  
 
-	If additional portfolio backlogs are needed --for example, Scenarios or Initiatives--you can [add them as well](../customize/add-portfolio-backlogs.md).  
+	If additional portfolio backlogs are needed --for example, Scenarios or Initiatives--you can [add them as well](../../reference/add-portfolio-backlogs.md).  
 
 - **[Configure dashboards](../../report/dashboards/dashboards.md):** With team dashboards, you can configure a number of charts that track progress within a team or across teams. Specifically, you can add status and trend charts based on queries you create. 
 

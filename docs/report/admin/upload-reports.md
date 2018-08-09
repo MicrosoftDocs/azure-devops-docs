@@ -142,7 +142,7 @@ To learn about which reports are provided with which process templates, see [Rev
 **A:** Reports will be out of date when all or some data stops flowing into the data warehouse. To verify the data flow, run the **GetProcessStatus** of the [Warehouse Control Web service](manually-process-data-warehouse-and-cube.md). Also, fix any [schema conflicts that may be occurring](resolve-schema-conflicts.md).
 
 ####Q: What tasks does tfpt addprojectreports perform?
-**A:** The **tfpt addprojectreports** command performs the instructions contained in the [ReportTasks file of the process template](../../work/customize/reference/process-templates/add-reports-to-the-process-template.md). This file is located in the Reports folder of the process template. The tasks include creating report folders, setting report parameters and data sources for each report, and uploading reports to the report server.
+**A:** The **tfpt addprojectreports** command performs the instructions contained in the [ReportTasks file of the process template](../../reference/process-templates/add-reports-to-the-process-template.md). This file is located in the Reports folder of the process template. The tasks include creating report folders, setting report parameters and data sources for each report, and uploading reports to the report server.
 
 ####Q: What if I just want to upload a single report?
 **A:** You can upload a single report using **Upload file** in Report Manager. You'll need to define the report's data source and possibly other parameters.

@@ -102,7 +102,7 @@ The Portfolio team can also view the progress of epics on their Kanban board.
 
  
 > [!TIP]  
->You can also [customize the card color based on various criteria](../customize/customize-cards.md#style-rule), such as the Value Area=Architectural, by applying styling rules.  
+>You can also [customize the card color based on various criteria](../../boards/boards/customize-cards.md#style-rule), such as the Value Area=Architectural, by applying styling rules.  
 
 ###Program teams' progress view 
 Program teams, primarily concerned with Release Trains, can see the features in their backlog, along with the PIs with which they're associated.
@@ -338,9 +338,8 @@ Resources mentioned earlier in this article and a few more are provided here for
 - [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai (also viewable from the [Scaled Agile Framework Foundations](http://scaledagileframework.com/foundations/)).
 - [Scaling Agile and SAFe Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.  
 - Agile Portfolio Management: Using TFS to support backlogs across multiple teams : white paper that shows how to configure TFS to support multiple teams and multiple backlogs.  
-- [Support rollup of work and other fields](../customize/reference/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
+- [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
 - [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
-- [Synchronize Team Foundation Server with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md): Describes how project managers and development teams can use the tools that they prefer and share information transparently by enabling data to flow from work items in TFS to tasks in enterprise project plans in Project Server.  
 - [Track your work when assigned to two or more teams](../scrum/set-capacity.md#track-capacity-per-team): Shows how a developer or tester can track work when they support more than one feature team.  
 
 ###About the authors

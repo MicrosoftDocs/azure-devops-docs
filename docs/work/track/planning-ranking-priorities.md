@@ -167,7 +167,7 @@ The following table describes the fields that you can use to plan and prioritize
 </table>
 
 ####Notes:  
-0.  To change the menu selection, see [Add or modify a field, customize a pick list](../customize/add-modify-field.md).  
+0.  To change the menu selection, see [Add or modify a field, customize a pick list](../../reference/add-modify-field.md).  
 0.  The sequence of items on the product backlog page is determined according to where you have added the items or dragged the items on the page. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, CMMI) field which is assigned to `type="Order"` in the ProcessConfiguration file.  
 
 
@@ -175,7 +175,7 @@ The following table describes the fields that you can use to plan and prioritize
 
 - [Query by a numeric field](query-numeric.md)   
 - [Work item field index](../work-items/guidance/work-item-field.md)  
-- [Data types and work item fields](../customize/reference/define-modify-work-item-fields.md).  
+- [Data types and work item fields](../../reference/xml/define-modify-work-item-fields.md).  
  
 ###More on Backlog Priority or Stack Rank fields
 
@@ -184,7 +184,7 @@ The Backlog Priority and Stack Rank fields don't appear on the work item forms. 
 To add the field to the form: 
 
 - **VSTS**: Add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
-- **TFS**: [Modify the WIT XML definition to add the following control element](../customize/add-modify-wit.md):
+- **TFS**: [Modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
 
 	`<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />`
 

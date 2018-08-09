@@ -64,7 +64,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 ## How-to Guides
 
 - [Add columns](add-columns.md) 
-- [Customize cards](../customize/customize-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
+- [Customize cards](../../boards/boards/customize-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
 - [Set WIP limits](wip-limits.md)  
 - [Split columns](split-columns.md)  
 - [Expedite work (swimlanes)](expedite-work.md)  
@@ -76,7 +76,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 ## How-to Guides
 
 - [Add columns](add-columns.md) 
-- [Customize cards](../customize/customize-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
+- [Customize cards](../../boards/boards/customize-cards.md?toc=/vsts/work/kanban/toc.json&bc=/vsts/work/kanban/breadcrumb/toc.json)    
 - [Set WIP limits](wip-limits.md)  
 ::: moniker-end  
 
@@ -101,7 +101,7 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Backlogs](../backlogs/index.md)
 - [Scrum](../scrum/index.md)
 - [Work item queries](../track/index.md)
-- [Work item customization](../customize/index.md) 
+- [Work item customization](../../reference/index.md) 
 - [What is Agile?](/azure/devops/agile/what-is-agile)   
 - [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
 

@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot setting up Visual Studio with VSTS
-description: Having problems installing, signing in, creating an organization, or expired subscription? Read these frequently asked questions and answers 
+description: Having problems installing Visual Studio, signing in, creating an organization, or handling an expired subscription? Read these frequently asked questions and answers. 
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
@@ -36,7 +36,7 @@ learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.
 *	Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, 
-you can also create a VSTS organization. 
+you can also create a Visual Studio Team Services (VSTS) organization. 
 
 Learn more about 
 [the benefits of signing in and creating a profile](https://msdn.microsoft.com/library/dn457348.aspx). 
@@ -94,8 +94,8 @@ A:	Learn how to [sign up for VSTS](create-organization-msa-or-work-student.md).
 
 #### Q: Can I change my VSTS organization location?
 
-A:	Yes, for a better experience, 
-you can change your organization's location during sign up
+A:	Yes. For a better experience, 
+you can change your organization's location during sign-up
 so that your organization is closest to most users.
 
 ![Change organization location](_img/set-up-vs/change-location.png)

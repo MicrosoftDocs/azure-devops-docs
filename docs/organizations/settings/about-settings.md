@@ -115,14 +115,14 @@ For a complete overview of all Agile tools that you can configure, see [Configur
 <tr>
 <td>**Work, Team configuration**</td>
 <td><ul>
-<li>[Backlog levels](../../work/customize/select-backlog-navigation-levels.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
-<li>[Show bugs on backlogs & boards](../../work/customize/show-bugs-on-backlog.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
-<li>[Set working days](../../work/customize/set-working-days.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
+<li>[Backlog levels](select-backlog-navigation-levels.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
+<li>[Show bugs on backlogs & boards](show-bugs-on-backlog.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
+<li>[Set working days](set-working-days.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)</li>
 <li>[Configure default area and iteration paths](set-team-defaults.md)</li>
 <li>[Select active iteration paths (sprints)](set-team-defaults.md)</li>
 <li>[Define work item templates](../../work/backlogs/work-item-template.md)</li>
 </ul></td>
-<td>For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view: [Columns](../../work/kanban/add-columns.md), [Swimlanes](../../work/kanban/expedite-work.md), [Cards](../../work/customize/customize-cards.md), [WIP limits](../../work/kanban/wip-limits.md). </td>
+<td>For an overview of team resources, see [About teams and Agile tools](about-teams-and-settings.md). You configure Kanban boards from the board view: [Columns](../../work/kanban/add-columns.md), [Swimlanes](../../work/kanban/expedite-work.md), [Cards](../../boards/boards/customize-cards.md), [WIP limits](../../work/kanban/wip-limits.md). </td>
 </tr>
 <tr>
 <td>**Dashboards** </td>

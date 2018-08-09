@@ -72,7 +72,7 @@ Once you've started tracking work, you'll want to monitor and track progress, id
 
 You access tools provided by VSTS and TFS by connecting from a client to the server, either in the cloud or on-premises. Some web portal tools require additional Visual Studio Subscriptions or Advanced/VS Enterprise access.  To learn more, see [Permissions and access for work tracking](../../organizations/security/permissions-access-work-tracking.md). 
 
-For an overview of all your customization options, see [Customize your work tracking experience](../customize/customize-work.md). 
+For an overview of all your customization options, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
 
 

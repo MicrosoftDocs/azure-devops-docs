@@ -101,7 +101,7 @@
   - name: Resolve connection issues
     href: ../../user-guide/troubleshoot-connection.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
   - name: "TF31002: Unable to connect"
-    href: ../../work/customize/reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json   
+    href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json   
   - name: Network connections
     href: faq-network-connections.md
   - name: Trace permissions

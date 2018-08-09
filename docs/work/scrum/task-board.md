@@ -95,19 +95,19 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Customize the task board 
 Each team can customize their task board in the following ways:
-- [Customize cards](../customize/customize-cards.md) that appear on the task board to show additional fields.
-- [Show bugs on the task board](../customize/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and task boards at the same level as tasks.
+- [Customize cards](../../boards/boards/customize-cards.md) that appear on the task board to show additional fields.
+- [Show bugs on the task board](../../organizations/settings/show-bugs-on-backlog.md), your team can choose to manage bugs similar to product backlog items, as shown in this topic, or manage them similar to tasks. When you track bugs similar to tasks, they'll show up on your sprint backlogs and task boards at the same level as tasks.
    
 An administrator can customize the task board for all teams in the following ways:  
 
 ::: moniker range="vsts"
-- [Add a custom workflow state to the task WIT for a process](../customize/process/customize-process-workflow.md)
-- [Add a custom work item type to the task board for a process](../customize/process/customize-process-backlogs-boards.md)
+- [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
+- [Add a custom work item type to the task board for a process](../../organizations/settings/work/customize-process-backlogs-boards.md)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-- [Modify the workflow for the task WIT definition](../customize/reference/change-workflow-wit.md).
-- [Add a work item type to a backlog or board](../customize/add-wits-to-backlogs-and-boards.md).
+- [Modify the workflow for the task WIT definition](../../reference/xml/change-workflow-wit.md).
+- [Add a work item type to a backlog or board](../../reference/add-wits-to-backlogs-and-boards.md).
 ::: moniker-end
 
 <a id="review-progress">  </a>
@@ -267,7 +267,7 @@ As you can see, the task board provides a lot of support for your Scrum activiti
 *	[Scrum best practices](best-practices-scrum.md)  
 *	[Sprint planning](assign-work-sprint.md)   
 *	[Schedule sprints](define-sprints.md)  
-*	[Customize cards on the task board](../customize/customize-cards.md#task-board)   
+*	[Customize cards on the task board](../../boards/boards/customize-cards.md#task-board)   
 *	[Capacity planning](../scrum/set-capacity.md)  
 
 <!--- 
@@ -281,7 +281,7 @@ As you can see, the task board provides a lot of support for your Scrum activiti
 | Capacity              | [Switch to Capacity planning](assign-work-sprint.md#set-capacity)   |
 | Group by Stories/People   | Switch grouping of cards based on backlog items or team members                        |
 | Person                    | Filter tasks to show items assigned to All or a selected team member            |
-| ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Open board settings](../customize/customize-cards.md)    |
+| ![Settings icon](../_img/icons/team-settings-gear-icon.png)    | [Open board settings](../../boards/boards/customize-cards.md)    |
 | ![full screen icon](../_img/icons/fullscreen_icon.png)/![exit full screen icon](../_img/icons/exitfullscreen_icon.png)     | Enter or exit full screen mode         |
 
 See also [Backlog keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md).     
@@ -323,5 +323,5 @@ Requires TFS 2015.1 or later version.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-Or, you can [increase the maximum number of allowed items](../customize/customize-work.md#limits). 
+Or, you can [increase the maximum number of allowed items](../../reference/customize-work.md#limits). 
 ::: moniker-end

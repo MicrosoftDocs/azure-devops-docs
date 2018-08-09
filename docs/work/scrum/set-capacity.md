@@ -118,11 +118,11 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 	In the Days off for the entire team dialog, select the start and end days during the sprint that the team will take off. 
 
 	> [!NOTE]
-	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. You set weekend days or other recurring days off under your team's [Settings, Working days](../customize/set-working-days.md) page. 
+	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. You set weekend days or other recurring days off under your team's [Settings, Working days](../../organizations/settings/set-working-days.md) page. 
 
 0. Now, set the **Activity** and **Capacity** per day for each team member. 
 
-	Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete. You only have to indicate planned days off. You [manage weekend days or other recurring days off](../customize/set-working-days.md) under team settings.
+	Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete. You only have to indicate planned days off. You [manage weekend days or other recurring days off](../../organizations/settings/set-working-days.md) under team settings.
 
 	For example, Christie Church's capacity is 6 hours/day for design work. 
 
@@ -154,11 +154,11 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 	In the Days off for the entire team dialog, select the start and end days during the sprint that the team will take off. 
 
 	> [!NOTE]
-	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, [Working days](../customize/set-working-days.md) page.  
+	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, [Working days](../../organizations/settings/set-working-days.md) page.  
 
 0. Now, set the **Activity** and **Capacity** per day for each team member. 
 
-	Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete. You only have to indicate planned days off. You [manage weekend days or other recurring days off](../customize/set-working-days.md) under team settings.
+	Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete. You only have to indicate planned days off. You [manage weekend days or other recurring days off](../../organizations/settings/set-working-days.md) under team settings.
 
 	For example, Christie Church's capacity is 6 hours/day for design work. 
 	::: moniker range=">= tfs-2017"  
@@ -175,7 +175,7 @@ From the **Capacity** page, you can enter the team time off, and set capacity an
 	::: moniker range=">= tfs-2013 <= tfs-2018"  
 	<a id="customize-activity-list">  </a>  
 	> [!NOTE]    
-	> You can add to or modify the items listed for the [Activity](../track/query-numeric.md) (Agile or Scrum) or [Discipline](../track/query-numeric.md) (CMMI) field by [customizing its pick list](../customize/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
+	> You can add to or modify the items listed for the [Activity](../track/query-numeric.md) (Agile or Scrum) or [Discipline](../track/query-numeric.md) (CMMI) field by [customizing its pick list](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
 	::: moniker-end
 
 ---

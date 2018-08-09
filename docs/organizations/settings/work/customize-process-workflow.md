@@ -24,7 +24,7 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 <img src="_img/process/cust-workflow-form-triage-header.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
 
 > [!NOTE]    
-> Before adding a workflow state, review [Workflow states and state categories](../../../work/customize/workflow-and-state-categories.md) to learn how workflow states map to state categories. 
+> Before adding a workflow state, review [Workflow states and state categories](../../../work/work-items/workflow-and-state-categories.md) to learn how workflow states map to state categories. 
 
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
@@ -39,7 +39,7 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 States you add will appear in the picklist for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State, except not to a Removed state. Also, default reasons are defined, such as Moved to state Triaged, Moved out of state Triaged.
 
 > [!NOTE]    
-> States that you add to the task WIT will add columns to the task board. If you [track bugs along with tasks](../../../work/customize/show-bugs-on-backlog.md), then states you add to the bug WIT will also add columns to the task board. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added.  
+> States that you add to the task WIT will add columns to the task board. If you [track bugs along with tasks](../show-bugs-on-backlog.md), then states you add to the bug WIT will also add columns to the task board. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added.  
 >
 > If you add a state to a WIT which you is associated with a backlog level, each team will need to update their [Kanban board columm settings](../../../work/kanban/add-columns.md) in order to view and use the affected Kanban board.  
 

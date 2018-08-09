@@ -132,7 +132,7 @@ For additional guidance on working with a checklist on a Kanban board, see [Add 
 To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then choose the ![](../../_img/icons/blue-gear.png) or ![](../../_img/icons/gear_icon.png) gear icon to open the Settings dialog. See these topics for details: 
 
 * [Add columns](add-columns.md)  
-* [Customize cards](../customize/customize-cards.md)  
+* [Customize cards](../../boards/boards/customize-cards.md)  
 
 ### REST API resources
 To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/rest/api/vsts/work/boards).
