@@ -39,7 +39,7 @@
   - name: About areas and iterations
     href: ../../organizations/settings/about-areas-iterations.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: "Workflow states & state categories"
-    href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
+    href: ../work-items/workflow-and-state-categories.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: About teams and Agile tools
     href: ../../organizations/settings/about-teams-and-settings.md?toc=/vsts/work/scrum/toc.json&bc=/vsts/work/scrum/breadcrumb/toc.json
   - name: Agile glossary
@@ -77,7 +77,7 @@
   - name: Queries
     href: ../track/index.md
   - name: Customization
-    href: ../customize/index.md
+    href: ../../reference/index.md
   - name: What is Scrum?
     href: /azure/devops/agile/what-is-scrum
 

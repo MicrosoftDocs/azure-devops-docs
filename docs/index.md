@@ -241,7 +241,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
                                         <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
                                         <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
-                                        <li><a class="barLink" href="/vsts/work/customize/index">Customization</a></li>
+                                        <li><a class="barLink" href="/vsts/reference/index">Customization</a></li>
                                         <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
                                     </ul>
                                     <h3>Reporting</h3>
@@ -275,7 +275,7 @@ featureFlags:
                                         <li><a class="barLink" href="/vsts/organizations/accounts/index">Organization Management (VSTS)</a></li>
                                         <li><a class="barLink" href="/tfs/server/index">Server Administration (TFS)</a></li>
                                         <li><a class="barLink" href="/vsts/report/sharepoint-dashboards/">SharePoint Integration (TFS)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/tfs-ps-sync/">Project Server Integration (TFS)</a></li>
+                                        <li><a class="barLink" href="/vsts/reference/tfs-ps-sync/">Project Server Integration (TFS)</a></li>
                                     </ul>
                                     <h3>Extend</h3>
                                     <ul>
@@ -718,7 +718,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/customize/index">
+                                <a href="/vsts/reference/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1138,7 +1138,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/tfs-ps-sync/">
+                                <a href="/vsts/reference/tfs-ps-sync/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

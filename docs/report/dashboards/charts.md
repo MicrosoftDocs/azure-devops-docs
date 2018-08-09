@@ -59,7 +59,7 @@ To learn more about default groups, see [About permissions and groups](../../org
 	If you don't see the field you want in the **Group by** drop-down list, add the field as a column to the query and save the query. You can group by any field except date-time and free-form text fields. For example: 
 	- To group by iterations, include the Iteration Path in the query or column options    
 	- To group by team, include the Area Path or Node Name in the query or column options  
-	- To group by a custom field, include it in a query clause or column options (See [Customize your work tracking experience](../../work/customize/customize-work.md) to learn about adding a custom field.).
+	- To group by a custom field, include it in a query clause or column options (See [Customize your work tracking experience](../../reference/customize-work.md) to learn about adding a custom field.).
 
 	If you receive an error message when you close the chart editor, you need to request [Basic access](../../organizations/security/change-access-levels.md).
 

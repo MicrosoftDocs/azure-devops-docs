@@ -36,7 +36,7 @@ In a nutshell, you manage bugs through the following tasks:
 >Depending on the process chosen to create your project&mdash;[Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;
 the items in your backlog may be called product backlog items (PBIs), user stories, or requirements. All three are similar: they describe the customer value to be delivered and the work to be performed.   
 >
->By default, product backlog items (PBIs) and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../customize/show-bugs-on-backlog.md). 
+>By default, product backlog items (PBIs) and bugs appear on Scrum backlogs, user stories on Agile backlogs, and requirements on CMMI backlogs. Each team can choose how [bugs show up on their backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
 [!INCLUDE [temp](../_shared/prerequisites-work-items.md)]    
 
@@ -53,7 +53,7 @@ The bug work item form tracks similar information to the one shown for the Scrum
 
 # [New web form](#tab/new-web-form)
 ::: moniker range=">= tfs-2017"  
-The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../customize/process/new-work-item-experience.md). 
+The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
 ![Scrum bug work item form, VSTS](_img/manage-bugs-scrum-bug-from-ts.png)  
 
@@ -175,7 +175,7 @@ A subjective rating of the impact of a bug on the project or software system. Fo
 </tbody>
 </table>  
  
-<sup>1</sup> To change the menu selection or pick list, see [Customize the work tracking experience](../customize/customize-work.md). The customization method depends on the process model used by your project. 
+<sup>1</sup> To change the menu selection or pick list, see [Customize the work tracking experience](../../reference/customize-work.md). The customization method depends on the process model used by your project. 
 
 For information about fields specific to the CMMI process, see [Bugs, issues, and risks field reference](../work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md). For information about all other fields, see [Work item field index](../work-items/guidance/work-item-field.md). 
 

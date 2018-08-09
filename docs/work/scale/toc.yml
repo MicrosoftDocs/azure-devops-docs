@@ -3,7 +3,7 @@
 - name: Overview
   items:
   - name: "About teams & Agile tools"
-    href: ../../organizations/settings/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json   
 - name: Quickstarts
   items:
   - name: Add and manage dashboards
@@ -40,15 +40,15 @@
     - name: Set team defaults
       href: ../../organizations/settings/set-team-defaults.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
     - name: Select backlog levels
-      href: ../customize/select-backlog-navigation-levels.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+      href: ../../organizations/settings/select-backlog-navigation-levels.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
     - name: "Show bugs on backlogs & boards"
-      href: ../customize/show-bugs-on-backlog.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+      href: ../../organizations/settings/show-bugs-on-backlog.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
     - name: Set working days
-      href: ../customize/set-working-days.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+      href: ../../organizations/settings/set-working-days.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: Scaled Agile Framework
     href: scaled-agile-framework.md
   - name: Switch project or team focus
-    href: ../../organizations/settings/switch-team-context.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
+    href: ../../project/navigation/go-to-project-repo.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
   - name: "Manage permissions & access (Security)"
     href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/work/scale/toc.json&bc=/vsts/work/scale/breadcrumb/toc.json 
 - name: Reference
@@ -68,7 +68,7 @@
   - name: "Scale & Configure Teams"
     href: ../../organizations/settings/scale/index.md
   - name: Customization
-    href: ../customize/index.md
+    href: ../../reference/index.md
   - name: Agile culture
     href: /azure/devops/agile/agile-culture
   - name: Scale Agile to large teams

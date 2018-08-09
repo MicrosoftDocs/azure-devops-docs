@@ -20,9 +20,9 @@ ms.date: 09/29/2017
 >
 >Projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). Whereas, updates to projects defined on an on-premises TFS may require running the Configure Feature Wizard after updating to a later version of TFS.       
 
-To support the addition of new features, changes are introduced periodically to the core system processes or process template. A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;secifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../customize/customize-work.md).
+To support the addition of new features, changes are introduced periodically to the core system processes or process template. A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;secifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
-If you've customized your project and haven't upgraded TFS for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you update TFS](../../customize/new-features-added.md) for a description of each feature added with the updates. 
+If you've customized your project and haven't upgraded TFS for a while, you may need to manually apply some changes to gain access to new features. Review the following table to determine which changes may apply to your situation. See [New features added when you update TFS](../../../reference/new-features-added.md) for a description of each feature added with the updates. 
 
 
 
@@ -42,8 +42,8 @@ If you've customized your project and haven't upgraded TFS for a while, you may 
 <p>TFS 2017</p>
 </td>
 <td>
-<p>Added the **WebLayout** section within the **FORM** section of all work item type (WIT) definitions. This section supports the new work item tracking experience in the web portal. It includes the **SystemControls** section and the new **LinksControlOptions** for managing link relationships.  To learn more, see [New work item experience](../../customize/process/new-work-item-experience.md), [WebLayout and Control elements](../../customize/reference/weblayout-xml-elements.md), and [LinksControlOptions XML elements (Web form)](../../customize/reference/linkscontroloptions-xml-elements.md).</p>
-<p>**Note**: When you upgrade an on-premises TFS to TFS 2017, the new web form is automatically available when you add projects to a collection. For existing projects, an admin is required to [enable the new form](../../customize/manage-new-form-rollout.md). The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing WIT definitions.</p>
+<p>Added the **WebLayout** section within the **FORM** section of all work item type (WIT) definitions. This section supports the new work item tracking experience in the web portal. It includes the **SystemControls** section and the new **LinksControlOptions** for managing link relationships.  To learn more, see [New work item experience](../../../reference/process/new-work-item-experience.md), [WebLayout and Control elements](../../../reference/xml/weblayout-xml-elements.md), and [LinksControlOptions XML elements (Web form)](../../../reference/xml/linkscontroloptions-xml-elements.md).</p>
+<p>**Note**: When you upgrade an on-premises TFS to TFS 2017, the new web form is automatically available when you add projects to a collection. For existing projects, an admin is required to [enable the new form](../../../reference/manage-new-form-rollout.md). The reason the new form isn't automatically enabled for existing projects is to prevent overwriting customizations made to existing WIT definitions.</p>
 </td>
 </tr>
 <tr>
@@ -178,7 +178,7 @@ If you've customized your project and haven't upgraded TFS for a while, you may 
 
 <li>WITs added: Feature</li>
 <li>Categories added: Feature Category </li>
-<li>Process configuration changes: Replaced AgileConfiguration and CommonConfiguration with a single file, [ProcessConfiguration](../../customize/reference/process-configuration-xml-element.md), supports these additional features: portfolio backlogs, color assignment to WITs, tags added to the default columns on all backlog pages. </li>
+<li>Process configuration changes: Replaced AgileConfiguration and CommonConfiguration with a single file, [ProcessConfiguration](../../../reference/xml/process-configuration-xml-element.md), supports these additional features: portfolio backlogs, color assignment to WITs, tags added to the default columns on all backlog pages. </li>
 <li>Build changes: Removed the build templates from the build plug-in. You now access build templates through the user interface <a href="https://msdn.microsoft.com/library/dd647547(v=vs.120).aspx">Use the Default Template for your build process</a>. </li>
 <li>Reporting Services updates: Backlog Overview (Scrum), <a href="https://msdn.microsoft.com/library/dd380648.aspx">Stories Overview</a> and <a href="https://msdn.microsoft.com/library/dd380641.aspx">Stories Progress</a> (Agile), and <a href="https://msdn.microsoft.com/library/ee461517.aspx">Requirements Overview</a> and <a href="https://msdn.microsoft.com/library/ee461582.aspx">Requirements Progress</a> (CMMI). These updates reflect changes required with the introduction of the Feature portfolio backlog work item type as described in this blog post: <a href="http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/22/update-your-overview-and-progress-reports-to-support-the-portfolio-backlogs.aspx">Update your Overview and Progress reports to support the Portfolio backlogs</a>.   
 <p>To update your project with the latest reports, see [Upload reports to a project](../../../Report/admin/upload-reports.md).</p>
@@ -204,7 +204,7 @@ If you've customized your project and haven't upgraded TFS for a while, you may 
 
 ![State diagram for Product Backlog Item](_img/tfs-vso-state-diagram-product-backlog-item.png)  
 
-<p>To apply the changes to your existing projects, you need to replace the <strong>WORKFLOW</strong> sections defined for each of the updated work item types with the new definitions. You can do this by modifying the work item type definition. See [Design the Workflow](../../customize/reference/change-workflow-wit.md) and [Import, export, and manage Work Item Types](../../customize/reference/witadmin/witadmin-import-export-manage-wits.md
+<p>To apply the changes to your existing projects, you need to replace the <strong>WORKFLOW</strong> sections defined for each of the updated work item types with the new definitions. You can do this by modifying the work item type definition. See [Design the Workflow](../../../reference/xml/change-workflow-wit.md) and [Import, export, and manage Work Item Types](../../../reference/witadmin/witadmin-import-export-manage-wits.md
 ) .</p>
 </td>
 </tr>
@@ -285,12 +285,12 @@ Removed the Sprint type definition and All Sprints query, whose functionality ha
  
 ##Related upgrade notes
 
-To update your existing projects hosted on an on-premises TFS to access new features, [run the Configure Features wizard](../../customize/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
+To update your existing projects hosted on an on-premises TFS to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
 
 See the following resources as they relate to updating your project:  
 
-- [Update a customized process template to access new features](../../customize/update-customized-process-template.md)
-- [Add features using a manual update process](../../customize/add-features-manually.md)
-- [Before you upgrade TFS](../../customize/upgrade-tfs-2008-or-2010.md)
-- [Additional configuration options](../../customize/additional-configuration-options.md)
+- [Update a customized process template to access new features](../../../reference/update-customized-process-template.md)
+- [Add features using a manual update process](../../../reference/add-features-manually.md)
+- [Before you upgrade TFS](../../../reference/upgrade-tfs-2008-or-2010.md)
+- [Additional configuration options](../../../reference/additional-configuration-options.md)
 - [Upload reports to a project](../../../Report/admin/upload-reports.md)

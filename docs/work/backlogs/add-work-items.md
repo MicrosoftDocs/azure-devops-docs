@@ -29,7 +29,7 @@ You add work items to plan and manage your project. You use different types of w
 
 <!---
 > [!IMPORTANT]   
-><b>Feature availability: </b>The new work item  form is available from VSTS and TFS 2017 and later versions. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../customize/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../customize/process/new-work-item-experience.md#switch-new). 
+><b>Feature availability: </b>The new work item  form is available from VSTS and TFS 2017 and later versions. This topic describes how to track work using the new form. If you don't see the new form, [your admin may need to enable it](../../reference/manage-new-form-rollout.md), or if it's enabled, [you may need to switch to use it](../../reference/process/new-work-item-experience.md#switch-new). 
 
 -->
 

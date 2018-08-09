@@ -39,7 +39,7 @@
   - name: Backlog priority or stack rank order
     href: stack-rank-backlog-position.md
   - name: "Workflow states & state categories"
-    href: ../customize/workflow-and-state-categories.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
+    href: ../work-items/workflow-and-state-categories.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Work in Excel or Project
     href: office/track-work-vsts-tfs.md?toc=/vsts/work/backlogs/toc.json&bc=/vsts/work/backlogs/breadcrumb/toc.json 
   - name: Schedule projects using Project
@@ -101,7 +101,7 @@
   - name: Queries
     href: ../track/index.md
   - name: Customization
-    href: ../customize/index.md
+    href: ../../reference/index.md
   - name: What is Agile?
     href: /azure/devops/agile/what-is-agile
   - name: What is Agile development?

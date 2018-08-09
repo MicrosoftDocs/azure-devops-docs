@@ -174,7 +174,7 @@ Click one or more items and then right-click to open the menu options to downloa
  ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Attachment size
 
-By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2GB](../customize/reference/change-maximum-attachment-size-work-items.md).
+By default, the size of work item attachments is limited to 4 MB. You can use the TFS web service to [increase the size of files you attach up to 2GB](../../reference/xml/change-maximum-attachment-size-work-items.md).
 
 ::: moniker-end 
 

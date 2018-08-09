@@ -251,15 +251,15 @@ The following table indicates those elements or tasks associated with each type 
 
 <tr>
 <td>Customize: Add more backlog or board views </td>
-<td>Yes, see [Select backlog navigation levels](../customize/select-backlog-navigation-levels.md)</td>
+<td>Yes, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)</td>
 <td>Yes, when you add another team (see note 4)</td>
-<td>Yes, see [Select backlog navigation levels](../customize/select-backlog-navigation-levels.md)</td>
+<td>Yes, see [Select backlog navigation levels](../../organizations/settings/select-backlog-navigation-levels.md)</td>
 <td>Yes, see [Schedule sprints](../scrum/define-sprints.md)</td>
 <td>Yes, see [Schedule sprints](../scrum/define-sprints.md)</td>
 </tr>
 
 <tr>
-<td>[Customize: cards](../customize/customize-cards.md)</td>
+<td>[Customize: cards](../../boards/boards/customize-cards.md)</td>
 <td>n/a</td>
 <td>n/a</td>
 <td>Yes</td>
@@ -291,7 +291,7 @@ The following table indicates those elements or tasks associated with each type 
 
 
 **Notes:**
-1. Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and task boards. For details, see [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md).  
+1. Each team can determine how they want to track bugs: as requirements, as tasks, or not at all. When tracked as requirements, they appear in your product backlog, sprint backlogs, and Kanban board. When tracked as tasks, they appear in your sprint backlogs and task boards. For details, see [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md).  
 2. Work items that appear on each team backlog and board meet the criteria defined for the [team selected area and iteration paths](../../organizations/settings/about-teams-and-settings.md).  
 3. The **In progress items Show/Hide** control is another filter you can apply to your product and portfolio backlogs. This control essentially shows or hides those work items where work has begun. It's useful to show/hide In Progress items when [forecasting sprint work](../scrum/forecast.md).  
 4. When you [add a team](../../organizations/settings/add-teams.md), you essentially add another product backlog associated with that team. Each team can then manage their own set of sprint backlogs and portfolio backlogs. See [Configure team settings](../../organizations/settings/configure-team-settings.md) for details.  
@@ -300,7 +300,7 @@ The following table indicates those elements or tasks associated with each type 
 
 ## Product backlog "In Progress" filter
  
-The In progress items **Show/Hide** filter causes some backlog items to display or not display. Bugs and other backlog items aren't listed when **In progress items=Hide** and their assigned State corresponds to an In Progress state category. Bugs in a New state will display, however, bugs in an Assigned state won't. To learn more about state categories, see  [Workflow states and state categories](../customize/workflow-and-state-categories.md).
+The In progress items **Show/Hide** filter causes some backlog items to display or not display. Bugs and other backlog items aren't listed when **In progress items=Hide** and their assigned State corresponds to an In Progress state category. Bugs in a New state will display, however, bugs in an Assigned state won't. To learn more about state categories, see  [Workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
 On your [backlog](create-your-backlog.md), set **In progress items** to **Show** to see all active bugs and other items on your backlog.  
 
@@ -330,7 +330,7 @@ If you need more than three backlog levels, you can add more. To learn how, see 
  
 ::: moniker range=">= tfs-2013 <= tfs-2018" 
 ## Customize backlog levels 
-If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../customize/add-portfolio-backlogs.md).
+If you need more than three backlog levels, you can add more. To learn how, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).
 ::: moniker-end
 
 ## Related articles  
@@ -347,7 +347,7 @@ A few things to keep in mind...
 - Every team owns their own backlog, to add a new set of backlogs and boards, you [add a new team](../../organizations/settings/add-teams.md) 
 - To have work performed by several teams roll up to a portfolio backlog, you'll want to [setup the team hierarchy](../scale/portfolio-management.md)   
 - Every backlog has a corresponding [Kanban board](../kanban/kanban-basics.md) you can use to track progress and update status  
-- Each team can control how [bugs show up on their backlogs](../customize/show-bugs-on-backlog.md)  
+- Each team can control how [bugs show up on their backlogs](../../organizations/settings/show-bugs-on-backlog.md)  
 - When you add child items they're linked to their parent using parent-child links which support hierarchical views and [tree queries](../track/using-queries.md#tree-query)    
 
  

@@ -50,7 +50,7 @@ You can add fields and specify the group and page where they should appear. Also
 0. Open **Settings>Work>Process**.  For details, see [Open Settings>Process hub](add-custom-wit.md#open-process-wit).
 
 	> [!IMPORTANT]  
-	>If you don't see the **Organization settings** option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../work/customize/on-premises-xml-process-model.md).
+	>If you don't see the **Organization settings** option, then you are working from an on-premises TFS. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](../../../reference/on-premises-xml-process-model.md).
 	
 0. With the WIT selected, click the ![add new field icon](_img/process/new-field-icon.png) (New Field icon).  
 
@@ -79,7 +79,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="_img/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../work/customize/customize-cards.md#fields), [task board](../../../work/customize/customize-cards.md#task-board)) or [creating queries](../../../work/track/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name when adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/boards/customize-cards.md#task-board)) or [creating queries](../../../work/track/using-queries.md) based on the field.   
 
 0.	Click **Add field** to complete adding the field. If you haven't specified it's layout location, it will be added to the first group of fields on the layout form.  
 
@@ -243,8 +243,8 @@ Deleting a field will delete all data associated with that field, including hist
 - [Add or modify a custom work item type](customize-process-wit.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)    
-- [Customize cards on boards](../../../work/customize/customize-cards.md)  
-- [Show bugs on backlogs and boards](../../../work/customize/show-bugs-on-backlog.md)  
+- [Customize cards on boards](../../../boards/boards/customize-cards.md)  
+- [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)  
 
 If you are working with test plans or test cases, see these topics: 
 - [Create a test plan](../../../manual-test/getting-started/create-a-test-plan.md)  

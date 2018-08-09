@@ -87,7 +87,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 - With regards to picklists, you currently can't perform these operations:
 	- Change the picklist of an inherited field, such as the Activity or Discipline field  
 	- Change the picklist order, picklists display in alphabetic order
-- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../work/customize/reference/define-global-lists.md).  
+- Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 > [!NOTE]    
 > With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../work/track/query-numeric.md), [Automation Status](../../../work/track/build-test-integration.md), [Discipline](../../../work/track/query-numeric.md), [Priority](../../../work/track/planning-ranking-priorities.md), plus others.  
@@ -188,7 +188,7 @@ When the display width won't accommodate all columns, columns appear stacked wit
 You can customize the workflow of any WIT by hiding inherited states or adding custom states. By default, each WIT is defined with three or four workflow states. Inherited states differ based on the system process &mdash;[Agile](../../../work/work-items/guidance/agile-process.md), [Scrum](../../../work/work-items/guidance/scrum-process.md), or [CMMI](../../../work/work-items/guidance/cmmi-process.md)&mdash;you chose from which to create your custom process. 
 
 > [!NOTE]    
-> Before adding a workflow state, review [Workflow states and state categories](../../../work/customize/workflow-and-state-categories.md) to learn how workflow states are used to support several Agile tools. 
+> Before adding a workflow state, review [Workflow states and state categories](../../../work/work-items/workflow-and-state-categories.md) to learn how workflow states are used to support several Agile tools. 
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -230,7 +230,7 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 - You can't insert a backlog level within the existing set of defined backlogs
 - You can't reorder the backlog levels  
 - You can't create a custom task level, although you can add custom WITs to the iteration backlog  
-- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../../../work/customize/show-bugs-on-backlog.md).
+- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
 
 
 ### Fields added to WITs associated with a backlog level 

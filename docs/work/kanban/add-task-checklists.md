@@ -104,7 +104,7 @@ To customize or change the layout of the board, see one of these topics.
 * [Add columns](add-columns.md)  
 * [WIP limits](wip-limits.md)  
 * [Add swimlanes, expedite work](expedite-work.md)   
-* [Customize cards](../customize/customize-cards.md)  
+* [Customize cards](../../boards/boards/customize-cards.md)  
 * [Split columns](split-columns.md)   
 * [Definition of Done](definition-of-done.md)  
 
@@ -115,9 +115,9 @@ To customize or change the layout of the board, see one of these topics.
  
 
 ## Related articles  
-Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../customize/customize-cards.md#annotations). 
+Use your task checklist for lightweight tracking of to-do lists. If you find that you don't use this feature, you can disable it from the [common configurations dialog](../../boards/boards/customize-cards.md#annotations). 
 
-You can also [add tags and show tags and fields on cards](../customize/customize-cards.md) to support other tracking needs.  
+You can also [add tags and show tags and fields on cards](../../boards/boards/customize-cards.md) to support other tracking needs.  
 
 In addition, you can:  
 

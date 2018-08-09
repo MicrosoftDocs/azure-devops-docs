@@ -561,7 +561,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="administer-Project-Server-integration-permission">Administer Project Server integration</td>
 		<td>
-			Can [configure the integration of TFS and Project Server](../../work/tfs-ps-sync/synchronize-tfs-project-server.md) to enable data synchronization between the two server products. Applies to TFS 2017 and earlier versions only.
+			Can [configure the integration of TFS and Project Server](../../reference/tfs-ps-sync/synchronize-tfs-project-server.md) to enable data synchronization between the two server products. Applies to TFS 2017 and earlier versions only.
 		</td>
 	</tr>
 	<tr>
@@ -746,7 +746,7 @@ You manage project-level permissions from the [web portal admin context](../../p
 	</tr>
 	<tr>
 		<td id="bypass-rules-permission">Bypass rules on work item updates</td>
-		<td><p>Users with this permission can save a work item that ignores rules, such as [assign value rules or conditional rules](../../work/customize/reference/apply-rule-work-item-field.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).</p></td>
+		<td><p>Users with this permission can save a work item that ignores rules, such as [assign value rules or conditional rules](../../reference/xml/apply-rule-work-item-field.md), defined for the work item type. Scenarios where this is useful are migrations where you don't want to update the by/date fields on import, or when you want to skip the validation of a work item.</p><p>Rules can be bypassed in one of two ways. The first is through the [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update) and setting the `bypassRules` parameter to `true`. The second is through the client object model, by initializing in bypassrules mode (initialize `WorkItemStore` with `WorkItemStoreFlags.BypassRules`).</p></td>
 	</tr>
 	<tr>
 		<td id="change-process-team-project-permission">Change process of team project</td>
