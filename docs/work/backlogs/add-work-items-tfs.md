@@ -110,5 +110,5 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 
 ## Related articles
 
-Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more. To customize a work item type, see [Customize your work tracking experience](../customize/customize-work.md). 
+Once you've added several work items, you can use additional features to get notified of changes, create queries, define status and trend charts, plus more. To customize a work item type, see [Customize your work tracking experience](../../reference/customize-work.md). 
 

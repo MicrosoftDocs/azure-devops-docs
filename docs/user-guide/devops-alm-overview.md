@@ -86,7 +86,7 @@ Code Search also makes team collaboration easier and helps maximize developer ef
 
 [![Define stories](_img/overview/ov-agile-plan-1.png)](../work/backlogs/create-your-backlog.md)[![Plan sprints](_img/overview/ov-agile-plan-2.png)](../work/scrum/assign-work-sprint.md)&#160;&#160;&#160;&#160;&#160;&#160;[![Kanban workflow](_img/overview/ov-agile-plan-3.png)](../work/kanban/kanban-basics.md) &#160;&#160;&#160;&#160;&#160;&#160;[![Dashboards](_img/overview/ov-agile-plan-dashboards-4.png)](../report/dashboards/dashboards.md)
 
-You also gain access to a [rich set of customization capabilities](../work/customize/customize-work.md).
+You also gain access to a [rich set of customization capabilities](../reference/customize-work.md).
  
 ## DevOps: Build - Test - Release
 
@@ -143,7 +143,6 @@ Our extensibility framework enables you to build integrations directly within VS
 With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the VSTS web portal.  
 
 - [Find marketplace extensions](../marketplace/index.md)
-- [Buy subscriptions](../billing/vs-subscriptions/buy-vs-subscriptions.md)
 - [Get extensions](../marketplace/install-vsts-extension.md)</li>
 - [Using service hooks](../service-hooks/index.md)
 - [Get started with REST APIs](../integrate/get-started/rest/basics.md)

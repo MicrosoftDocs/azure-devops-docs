@@ -92,7 +92,7 @@ Here's a list of the most frequently encountered connection problems and what to
 
 4. Verify whether your team project has been moved to another team project collection in TFS. If it has been moved, you must create a connection to the new server name.
 
-For additional troubleshooting tips, see [TF31002: Unable to connect to this Team Foundation Server](../work/customize/reference/error/tf31002-unable-connect-tfs.md).
+For additional troubleshooting tips, see [TF31002: Unable to connect to this Team Foundation Server](../reference/error/tf31002-unable-connect-tfs.md).
 
 ::: moniker-end
 

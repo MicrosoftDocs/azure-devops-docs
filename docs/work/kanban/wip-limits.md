@@ -112,12 +112,12 @@ With an understanding of how you'll use WIT limits, here's how you set them.
 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns. Go to [Kanban basics](kanban-basics.md) for information about accessing your Kanban board. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.    
 	::: moniker range="vsts || >= tfs-2017 <= tfs-2018" 
-	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
+	![Kanban board, open common configuration settings](../../boards/boards/_img/customize-cards/open-config-dialog.png)
     ::: moniker-end
     ::: moniker range="tfs-2013"          
-	![Open configuration settings](../customize/_img/kanban-card-customize-open-settings.png)    
+	![Open configuration settings](../../boards/boards/_img/kanban-card-customize-open-settings.png)    
     ::: moniker-end 
-	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
  
 2. Click a column tab to set the WIP limit for that column. 
 	::: moniker range="vsts || >= tfs-2017 <= tfs-2018"   
@@ -141,6 +141,6 @@ Here are some additional ways your team can implement Kanban practices and custo
 * [Split columns](split-columns.md)  
 * [Expedite work](expedite-work.md)  
 * [Definition of Done](definition-of-done.md)  
-* [Customize cards](../customize/customize-cards.md)  
-* [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md)  
+* [Customize cards](../../boards/boards/customize-cards.md)  
+* [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md)  
 

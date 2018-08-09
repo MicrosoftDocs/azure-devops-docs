@@ -27,7 +27,7 @@ The most common numeric fields track effort for items in the Requirements catego
 - Save changes you make to your query prior to adding or modifying a chart. 
 - To group one or more clauses, select them and then choose the ![Group Query Clause icon](../_img/icons/group-clauses-icon.png) group clauses icon. To ungroup, click on the grouped clause. 
 
-For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/dashboards/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../customize/add-modify-field.md).
+For additional details on creating queries and chart-based-queries, see [Use the query editor to list and manage queries](using-queries.md) and [Charts](../../report/dashboards/charts.md).  If you want to add a custom field to track and generate sums of other numeric values, see [Add or modify a field](../../reference/add-modify-field.md).
 
 ### Useful filters 
 <table width="100%">
@@ -289,15 +289,15 @@ The following table describes the activity-based and numeric fields that you can
 
 **Notes:**
 
-1.  To change the menu selection (on-premises TFS only), see [Add or modify a field, customize a pick list](../customize/add-modify-field.md).   
+1.  To change the menu selection (on-premises TFS only), see [Add or modify a field, customize a pick list](../../reference/add-modify-field.md).   
 2.  The values displayed in the [Capacity page](../scrum/set-capacity.md) for Activity(Agile or Scrum) or Discipline (CMMI) reflect a union of all values defined for the field in all projects within the project collection instance. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity"`.</p>
 
-3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../customize/reference/process-configuration-xml-element.md).
+3.  To change the ProcessConfiguration field assignment (on-premises TFS only), see [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 4. Each team can configure their Agile tools to determine if [bugs are treated similar to requirements or tasks](#show-bugs). Since bugs can appear either with requirements or tasks, fields used to estimate effort at the requirement-level and the task-level are included in the work item form. 
 
 ## Related articles 
-For information on adding custom fields, see [Customize your work tracking experience](../customize/customize-work.md).  
+For information on adding custom fields, see [Customize your work tracking experience](../../reference/customize-work.md).  
 
 The main tools you use to plan and track work are described here: 
 - [Create your backlog](../backlogs/create-your-backlog.md)
@@ -319,7 +319,7 @@ For more information on using work items and queries, see:
 ### Rollup numeric values across work item types  
 
 Rollup provides summed values of select fields for all child work items of a parent. Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the Task board. For other rollup requirements, see the following topics: 
-- [Support rollup of work and other fields](../customize/reference/support-rollup-of-work-and-other-fields.md)  
+- [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md)  
 -[Rollup estimated and actual work using Project](../backlogs/office/rollup-estimated-and-actual-work-using-project.md)  
 - [Create rollup charts with Power BI](../../report/powerbi/create-rollup-charts.md)
 
@@ -334,9 +334,9 @@ The default assignments of work item types to each category are listed below for
 | Scrum | Product Backlog Item | Task |
 | CMMI | Requirement | Task |
 
-However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../customize/show-bugs-on-backlog.md). 
+However, each team can determine if the Bug work item type appears in either the Requirement or Task category. See [Show bugs on backlogs and boards](../../organizations/settings/show-bugs-on-backlog.md). 
 
-Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../customize/add-modify-wit.md). 
+Also, you can add custom work item types to a backlog. For details, see [Add or modify a work item type, Add a custom WIT to a backlog or board ](../../reference/add-modify-wit.md). 
  
 
 

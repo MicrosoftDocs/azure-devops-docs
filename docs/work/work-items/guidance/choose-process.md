@@ -19,7 +19,7 @@ Anytime you create a project, you must choose a process or process template base
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for VSTS. This model supports customization of projects through a WYSIWYG user interface. 
 - A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files. 
 
-To learn more about process models, see [Customize your work tracking experience](../../customize/customize-work.md). 
+To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
 
 [!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
 
@@ -36,7 +36,7 @@ provides the most support for formal processes and change management.
 Choose the process that provides the best fit for your team.  
 
 > [!NOTE]    
->**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../customize/select-backlog-navigation-levels.md).  
+>**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
 
 <table valign="top" width="100%">
 <tbody>
@@ -97,7 +97,7 @@ Choose the process that provides the best fit for your team.
 
 If you need more than three backlog levels, you can add more based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](../../../organizations/settings/work/customize-process-backlogs-boards.md)  
-- **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../customize/add-portfolio-backlogs.md).  
+- **Hosted XML or On-premises XML**: [Add portfolio backlogs](../../../reference/add-portfolio-backlogs.md).  
 	
 <a id="main-distinctions"></a>
 ## Main distinctions among the default processes
@@ -279,10 +279,10 @@ used by the three default processes.
     The product backlog shows a single view of the current backlog of work that can be dynamically re-ordered and grouped. 
     Product owners can quickly prioritize work and outline dependencies and relationships.
 
-    Also, each team can configure how they want [bugs to show up on their backlogs and boards](../../customize/show-bugs-on-backlog.md).
+    Also, each team can configure how they want [bugs to show up on their backlogs and boards](../../../organizations/settings/show-bugs-on-backlog.md).
 
 2.  With portfolio backlogs you can define a hierarchy of backlogs to understand the scope of work across several teams and see how that work rolls up into broader initiatives.
-    Each team can configure which [portfolio backlogs appear for their use](../../customize/select-backlog-navigation-levels.md).
+    Each team can configure which [portfolio backlogs appear for their use](../../../organizations/settings/select-backlog-navigation-levels.md).
 
 3.  You can define tasks from the [sprint backlog and task board](../../scrum/assign-work-sprint.md). 
     With capacity planning, teams can quickly determine if they are over or under capacity for a sprint.  
@@ -397,7 +397,7 @@ Each image shows only the default reason associated with the transition.
 
 Most WITs used by Agile tools, ones that appear on backlogs and boards, support any-to-any transitions. You can update the status of a work item using the Kanban board or the task board by dragging it to its corresponding state column.
 
-You can change the workflow to support additional states, transitions, and reasons. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).
+You can change the workflow to support additional states, transitions, and reasons. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
 
 <a id="removed-closed-done"></a>
@@ -431,7 +431,7 @@ Work item types that are added to the Hidden Types category don't appear in the 
 
 
 > [!NOTE]    
->**Feature availability**:  If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../customize/configure-features-after-upgrade.md).  
+>**Feature availability**:  If you upgraded your project from TFS 2013 or an earlier version to a later version of TFS, you might have to add WITs that didn't exist in the earlier versions. For more information, see [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md).  
 >
 >The following WITs were added with the indicated TFS version: 
 >- Shared Parameters added with TFS 2013.2  
@@ -448,18 +448,18 @@ From the web portal or Test Manager, you can view which test cases are defined f
 and which test suites are defined for a test plan. 
 However, these objects aren't connected to each other through link types. 
 You can customize these WITs as you would any other WIT. 
-See [Customize work tracking objects to support your team's processes](../../customize/customize-work.md). 
+See [Customize work tracking objects to support your team's processes](../../../reference/customize-work.md). 
 
 If you change the workflow for the test plan and test suite, you might need to update the process configuration as described here. For definitions of each test field, see [Query based on build and test integration fields](../../track/build-test-integration.md).
 
 ## Related articles
 <a id="term-note"></a>
 
-You can customize a process before or after you create a project that uses that project. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../customize/customize-work.md).    
+You can customize a process before or after you create a project that uses that project. The methods you use depend on the process model you use. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).    
  
 - [Upload/download process templates](manage-process-templates.md)  
 - [Changes made to process templates](changes-to-process-templates.md)  
-- [Configure features after a TFS upgrade](../../customize/configure-features-after-upgrade.md)  
+- [Configure features after a TFS upgrade](../../../reference/configure-features-after-upgrade.md)  
 
 
 If you have additional questions, search for answers or post a question in the [Team Foundation Server - Team Project and Work Item forum](http://social.msdn.microsoft.com/Forums/tfsworkitemtracking/threads).

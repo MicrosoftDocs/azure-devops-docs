@@ -187,7 +187,7 @@ Another option is to install the [Marketplace Tags Manager](https://marketplace.
 
 Tags are a shared resource, they're associated with a project and not a team. If your project contains multiple teams, all teams will add to and work from the same set of tags. 
 - [Use the query editor to list and manage queries](using-queries.md) 
-- [Show tags on cards](../customize/customize-cards.md)
+- [Show tags on cards](../../boards/boards/customize-cards.md)
 - [Bulk modify work items from the web portal](../backlogs/bulk-modify-work-items.md)  
 - [Bulk modify work items from Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)  
 
@@ -196,7 +196,7 @@ Tags are a shared resource, they're associated with a project and not a team. If
 
 If you've added tags to your backlog or board items, you can filter your backlog list using the ![tag filter icon](../_img/icons/tag_filter_icon.png) tag filter.   
 
-To filter the Kanban board using tags, make sure that you first [customize cards to Show tags](../customize/customize-cards.md).  
+To filter the Kanban board using tags, make sure that you first [customize cards to Show tags](../../boards/boards/customize-cards.md).  
 
 > [!NOTE]    
 ><b>Feature availability: </b>This feature is currently supported only on the Kanban board from VSTS or the web portal for TFS 2015 Update 1 or later version. 
@@ -221,7 +221,7 @@ Limit queries to fewer than 25 tags. More than that and the query will likely ti
 
 ### Add tags to the default column view on the product backlog 
 
-To add the Tags field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../customize/reference/process-configuration-xml-element.md).
+To add the Tags field as a column field for the product backlog, you modify the ProcessConfiguration file to include ```System.Tags```.  To learn how, see the [Process configuration XML element reference](../../reference/xml/process-configuration-xml-element.md).
 
 ::: moniker-end
 

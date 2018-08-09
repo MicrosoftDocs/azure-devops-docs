@@ -81,7 +81,7 @@
   - name: Backlogs
     href: ../backlogs/index.md
   - name: Customization
-    href: ../customize/index.md
+    href: ../../reference/index.md
   - name: Wiql Editor (Marketplace extension)
     href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
   - name: Enhanced Export (Marketplace extension)

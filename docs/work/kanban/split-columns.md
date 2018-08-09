@@ -62,10 +62,10 @@ Now that you understand how your team can use split columns, here's how to turn 
 ::: moniker-end   
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"  
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.   
-	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)  	
+	![Kanban board, open common configuration settings](../../boards/boards/_img/customize-cards/open-config-dialog.png)  	
 	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.
    
-	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md). 
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md). 
 
 2.	Select each column that you want to split. Before you split columns, you'll want to have [mapped each stage of your team's process to a Kanban column](add-columns.md).
 	
@@ -78,11 +78,11 @@ Now that you understand how your team can use split columns, here's how to turn 
 
 1. From your Kanban board, click ![settings icon](../_img/icons/team-settings-gear-icon.png) and as needed, click Columns.    
 
-	![Kanban board, open common configuration settings](../customize/_img/customize-cards/open-config-dialog.png)
+	![Kanban board, open common configuration settings](../../boards/boards/_img/customize-cards/open-config-dialog.png)
 	
 	Go to [Kanban basics](kanban-basics.md) to learn how to access your Kanban board. And, if you aren't a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize columns.  
 
-	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../customize/show-bugs-on-backlog.md).  
+	You'll see different column titles and choices based on the [process](../work-items/guidance/choose-process.md) used to create your project  and whether your team has chosen to [treat bugs like requirements or like tasks](../../organizations/settings/show-bugs-on-backlog.md).  
 
 2.	Select each column that you want to split. 
  
@@ -105,7 +105,7 @@ For more ways to implement Kanban and customize your board:
 * [Work in Progress limits ](wip-limits.md)  
 * [Add swimlanes, expedite work](expedite-work.md)   
 * [Definition of Done](definition-of-done.md)  
-* [Customize cards](../customize/customize-cards.md)   
+* [Customize cards](../../boards/boards/customize-cards.md)   
 
 <!---
 > [!NOTE]   
