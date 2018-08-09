@@ -50,7 +50,7 @@ Services hooks can be found as a new hub in project administration.
 
 ![Selecting a target service](_img/5_12_01.png)
 
-[Learn more](https://visualstudio.microsoft.com/get-started/integrate/integrating-with-service-hooks-vs)
+[Learn more](/vsts/integrate/integrating-with-service-hooks-vs)
 
 [Creating subscriptions programmatically](https://visualstudio.microsoft.com/integrate/reference/reference-vso-hooks-subscriptions-vsi)
 

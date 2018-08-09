@@ -42,7 +42,7 @@ You can read all the offer details [here](https://visualstudio.microsoft.com/pro
 
 I assume some people will decide, for any number of reasons, that it’s time for them to migrate from the cloud to an on-premises Team Foundation Server installation. We promised months ago that we would provide a good migration path and we will. It’s not quite ready yet, but we’re expecting to have it available for anyone to use by January – at least a month before the “Early Adopter” period is over. This solution will enable you to export all of your data from VS Online as a Team Project Collection that can be imported into TFS. We’ll provide more details in a future news post.
 
-To get started with a paid account, the first thing to understand is that we are coupling your VS Online subscription to your Windows Azure account. VS Online is a Windows Azure resource and you can manage your subscription and billing with Windows Azure and, consequently, take advantage of all of the Windows Azure purchasing options and discounts. To get a detailed walk-through, visit our [getting started topic](https://visualstudio.microsoft.com/get-started/set-up-billing-for-your-account-vs).
+To get started with a paid account, the first thing to understand is that we are coupling your VS Online subscription to your Windows Azure account. VS Online is a Windows Azure resource and you can manage your subscription and billing with Windows Azure and, consequently, take advantage of all of the Windows Azure purchasing options and discounts. To get a detailed walk-through, visit our [getting started topic](/vsts/set-up-billing-for-your-account-vs).
 
 ![Set up your billing](_img/11_13_04.png)
 

@@ -22,7 +22,7 @@ For a while now, one of the [top customer requests](http://visualstudio.uservoic
 
 ###Create a new account and connect it to Azure Active Directory
 
-You can create a new account linked to an AAD tenant either from within the Azure portal or from the Visual Studio Online account creation experience. We’ve provided a [tutorial](https://visualstudio.microsoft.com/en-us/get-started/connect-to-vs) on how to do it.
+You can create a new account linked to an AAD tenant either from within the Azure portal or from the Visual Studio Online account creation experience. We’ve provided a [tutorial](/vsts/get-started/connect-to-vs) on how to do it.
 
 ![Logging into VS Online](_img/5_20_01.png)
 
@@ -34,7 +34,7 @@ It’s also possible to create an Azure Active Directory–connected Visual Stud
 
 If you want to find out more, head over to:
 
-[Connecting to an Azure Active Directory based account](https://visualstudio.microsoft.com/en-us/get-started/connect-to-vs)
+[Connecting to an Azure Active Directory based account](/vsts/get-started/connect-to-vs)
 
 ###Leverage your MSDN Visual Studio Online benefit with organizational credentials
 
