@@ -51,4 +51,4 @@ If so, we suggest you take a few minutes to walk step-by-step through a day in t
 
 -    [Testing the application](../../test/index.md) 
 
--    [Track work with Visual Studio devops and TFS](../../work/backlogs/overview.md) 
+-    [Track work with Visual Studio devops and TFS](../../boards/backlogs/overview.md) 

@@ -33,9 +33,9 @@ From a sprint task board, there are three types of rollup:
 - The sum of all Remaining Work defined for all tasks within a column displays at the top of each column
 - The sum of all Remaining Work defined for all tasks for a backlog item displays within each row, grouped by column.      
 
-![Task board, collapsed backlog items](../../work/scrum//_img/ALM_TB_Intro.png)
+![Task board, collapsed backlog items](../../boards/sprints//_img/ALM_TB_Intro.png)
 
-When you update the status of a task as Completed, the system automatically zeros out the Remaining Work for that task. To learn more, see [Task board](../../work/scrum//task-board.md).
+When you update the status of a task as Completed, the system automatically zeros out the Remaining Work for that task. To learn more, see [Task board](../../boards/sprints//task-board.md).
 
 
 ## Other tools that support rollup 
@@ -64,7 +64,7 @@ For example, here we show a pivot table that sums the story points for user stor
 
   
 ## Microsoft Excel and rollup of work tracking data 
-You can export a query to Excel that contains the work items you want to provide rollup. You can then write an Excel macro to get the sums and publish data back to TFS.  To learn more about Excel integration, see [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md).  
+You can export a query to Excel that contains the work items you want to provide rollup. You can then write an Excel macro to get the sums and publish data back to TFS.  To learn more about Excel integration, see [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).  
   
 To learn more about Excel macros, see [Automate tasks with the Macro Recorder](https://support.office.com/article/Automate-tasks-with-the-Macro-Recorder-974ef220-f716-4e01-b015-3ea70e64937b).  
 
@@ -76,7 +76,7 @@ To learn more about Excel macros, see [Automate tasks with the Macro Recorder](h
   
  ![Task board displays round&#45;trip rollup from Project](_img/alm_rup_roundtriprollup.png "ALM_RUP_RoundTripRollup")  
   
- To learn how, see [Rollup estimated and actual work](../../work/backlogs/office/rollup-estimated-and-actual-work-using-project.md).  
+ To learn how, see [Rollup estimated and actual work](../../boards/backlogs/office/rollup-estimated-and-actual-work-using-project.md).  
 
  
 <a name="marketplace"></a>

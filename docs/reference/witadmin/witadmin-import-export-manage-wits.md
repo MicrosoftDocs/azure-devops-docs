@@ -153,7 +153,7 @@ witadmin importwitd /collection:http://AdventureWorksServer:8080/tfs/DefaultColl
   
 If you want to restrict creation of a specific WIT to a group of users, there are two ways to restrict access:  
   
--  [Add the WIT to the Hidden Categories group](../xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../work/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.  
+-  [Add the WIT to the Hidden Categories group](../xml/use-categories-to-group-work-item-types.md) to prevent the majority of contributors from creating them. If you want to allow a group of users access, you [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them.  
 -  Add [a field rule to the workflow](../xml/apply-rule-work-item-field.md) for the System.CreatedBy field to effectively restrict a group of users from creating a work item of a specific type. As the following example shows, the user who creates the work item must belong to the `Allowed Group` in order to save the work item.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -176,7 +176,7 @@ If you want to restrict creation of a specific WIT to a group of users, there ar
 witadmin destroywitd /collection:"http://FabrikamPrime:8080/tfs/DefaultCollection" /p:"Fabrikam Web Site" /n:"Impediment"   
 ```  
   
-When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. In particular, the [Agile planning tools](../../work/backlogs/overview.md) will not work until you update the categories definition.  
+When you delete a WIT that belongs to a category, you must update the categories definition for the project to reflect the new name. In particular, the [Agile planning tools](../../boards/backlogs/overview.md) will not work until you update the categories definition.  
   
 For more information, see [Import and export categories](witadmin-import-export-categories.md).  
   

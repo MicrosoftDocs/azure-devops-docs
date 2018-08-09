@@ -102,7 +102,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
 </BugFilerMappings>  
 ```  
   
- For more information about fields that are used to track information that Test Manager finds, see [Build and test integration fields](../../work/track/build-test-integration.md).  
+ For more information about fields that are used to track information that Test Manager finds, see [Build and test integration fields](../../boards/queries/build-test-integration.md).  
   
 ##  <a name="resolution"></a> Mapping file for resolution states  
  The following XML syntax lists the default contents of the resolution states defined for the default process templates.  

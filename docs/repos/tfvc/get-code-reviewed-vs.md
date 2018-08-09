@@ -94,4 +94,4 @@ If you aren't getting them, you can sign up in the team explorer settings page.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Create your backlog](../../work/backlogs/create-your-backlog.md)
+> [Create your backlog](../../boards/backlogs/create-your-backlog.md)

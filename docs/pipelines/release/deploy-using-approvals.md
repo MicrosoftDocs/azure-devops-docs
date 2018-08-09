@@ -41,7 +41,7 @@ You'll also need a **work item query** that returns some work items from
 VSTS or TFS. This query is used in the gate you
 will configure. You can use one of the built-in queries, or create a
 new one just for this gate to use. For more information, see
-[Create managed queries with the query editor](../../work/track/using-queries.md).
+[Create managed queries with the query editor](../../boards/queries/using-queries.md).
 
 In the previous tutorial, you saw a simple use of manual approvals to allow an administrator
 to confirm that a release is ready to deploy to the production environment. In this 
@@ -82,7 +82,7 @@ meets a wide range or criteria, without requiring user intervention.
    ![Adding a Query Work Items approval gate](_img/deploy-using-approvals/gates-03.png)
 
 1. Configure the gate by selecting an existing work item query. You can use one of the built-in
-   VSTS and TFS queries, or [create your own query](../../work/track/using-queries.md).
+   VSTS and TFS queries, or [create your own query](../../boards/queries/using-queries.md).
    Depending on how many work items you expect it to return, set the maximum and minimum
    thresholds (run the query in the **Work** hub if you're not sure what to expect).
 

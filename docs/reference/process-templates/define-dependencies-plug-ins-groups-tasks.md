@@ -22,7 +22,7 @@ When you add a task group or a task to a plug-in file, you must add them in the 
 <a name="required"></a> 
 ##  Required plug-ins and plug-in dependencies  
 
-The following illustration shows the dependent relationships that are defined for the Team Foundation Server (TFS) [process templates](../../work/work-items/guidance/choose-process.md). As the illustration shows, the plug-in for Work Item Tracking depends on the successful completion of the plug-in for Groups and Permissions, which depends on the successful completion of the plug-in for Classifications. The plug-ins for both Test Management and Version Control depend on the completion of the first three plug-ins. The plug-ins for Build, Lab, Reports, and Portal depend on the completion of the plug-in for Version Control.  
+The following illustration shows the dependent relationships that are defined for the Team Foundation Server (TFS) [process templates](../../boards/work-items/guidance/choose-process.md). As the illustration shows, the plug-in for Work Item Tracking depends on the successful completion of the plug-in for Groups and Permissions, which depends on the successful completion of the plug-in for Classifications. The plug-ins for both Test Management and Version Control depend on the completion of the first three plug-ins. The plug-ins for Build, Lab, Reports, and Portal depend on the completion of the plug-in for Version Control.  
   
  ![Process Template Plug&#45;in Dependencies](_img/tfs_pt_dependencies.png "TFS_PT_Dependencies")  
   

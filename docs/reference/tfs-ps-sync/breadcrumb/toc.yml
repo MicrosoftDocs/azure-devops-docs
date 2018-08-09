@@ -7,5 +7,5 @@
     topicHref: /vsts/index#pivot=services&panel=admin
     items:
     - name: Project Server Integration
-      tocHref:  /vsts/work/tfs-ps-sync/
-      topicHref: /vsts/work/tfs-ps-sync/index
+      tocHref:  /vsts/reference/tfs-ps-sync/
+      topicHref: /vsts/reference/tfs-ps-sync/index

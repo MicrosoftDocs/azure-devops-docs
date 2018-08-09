@@ -49,7 +49,7 @@ To learn more about what you can customize, see [About process customization and
 
 	Click **Create** to save. 
 
-	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. To learn more, see [About work items](../../../work/work-items/about-work-items.md).
+	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. To learn more, see [About work items](../../../boards/work-items/about-work-items.md).
  
 	<img src="_img/process/weblayout-system-controls-details-page.png" alt="WIT header details" style="border: 1px solid #C3C3C3;" /> 
 
@@ -106,7 +106,7 @@ We recommend that you create a test project and apply your customized  inherited
 0.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work>Work Items, new navigation](../../../work/work-items/_img/view-add/open-work-items-agile.png)  
+	> ![Open Work>Work Items, new navigation](../../../boards/work-items/_img/view-add/open-work-items-agile.png)  
 
 0. Select the WIT you customized. Here we choose **Ticket**. 
 

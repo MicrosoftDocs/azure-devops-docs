@@ -79,7 +79,7 @@ different, consider creating separate test cases.
 ## See also
 
 * [FAQs for manual testing](reference-qa.md#testcases)
-* [Link test cases to work items](../work/track/link-work-items-support-traceability.md)
+* [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)
 
 ##  Next step
 

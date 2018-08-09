@@ -42,7 +42,7 @@ To continue, you'll need at least Basic access and VSTS organization owner permi
 
 ## Change application access policies
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 

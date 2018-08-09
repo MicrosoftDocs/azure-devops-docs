@@ -29,7 +29,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 ## Add a work item
 
-[!INCLUDE [temp](../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 
@@ -67,7 +67,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 2.	Select **Work** > **New Work Items** and choose the work item type you want.  Here, we choose to create a **User Story**. 
 
-	<img src="../work/backlogs/_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../boards/backlogs/_img/add-work-items-choose-user-story.png" alt="VSTS, TFS 2017, Work hub, Add a work item" style="border: 2px solid #C3C3C3;" /> 
 
 	If you don't see the **Work** hub, your screen size may be reduced. Select the three dots (![elipses](../_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work** > **New Work Items**, and then choose the work item type you want.
 
@@ -75,7 +75,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
-	<img src="../work/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
+	<img src="../boards/backlogs/_img/add-new-work-item-vsts-user-story.png" alt="Agile process, User story work item form" style="border: 2px solid #C3C3C3;" />  
 
 	That's it!
 ---
@@ -83,10 +83,10 @@ You can start adding work items once you connect to a project. If you don't have
 Create as many work items as you need of the type you need to track the work you want to manage.  
 
 >[!NOTE]  
->Depending on the process chosen when the team project was created&mdash;[Scrum](../work/work-items/guidance/scrum-process.md), 
-[Agile](../work/work-items/guidance/agile-process.md), or [CMMI](../work/work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
+>Depending on the process chosen when the team project was created&mdash;[Scrum](../boards/work-items/guidance/scrum-process.md), 
+[Agile](../boards/work-items/guidance/agile-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called product backlog items (Scrum), user stories (Agile), or requirements (CMMI). All three are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all three processes, see [Choose a process](../work/work-items/guidance/choose-process.md).
+> For an overview of all three processes, see [Choose a process](../boards/work-items/guidance/choose-process.md).
 
 
 ## View the work items you've just created  
@@ -108,7 +108,7 @@ Create as many work items as you need of the type you need to track the work you
 
 ---
 
-For more information on using the Work Items page, see [View and add work items](../work/work-items/view-add-work-items.md).
+For more information on using the Work Items page, see [View and add work items](../boards/work-items/view-add-work-items.md).
 
 ## Try this next  
  
@@ -117,8 +117,8 @@ For more information on using the Work Items page, see [View and add work items]
  
 To quickly add backlog items, such as user stories or requirements, see these topics:  
 > [!div class="nextstepaction"]
-> [Create your backlog](../work/backlogs/create-your-backlog.md)
-> [Kanban quickstart](../work/kanban/kanban-quickstart.md) 
+> [Create your backlog](../boards/backlogs/create-your-backlog.md)
+> [Kanban quickstart](../boards/boards/kanban-quickstart.md) 
 
-Or, [learn more about planning and tracking work](../work/work-items/index.md).
+Or, [learn more about planning and tracking work](../boards/work-items/index.md).
  

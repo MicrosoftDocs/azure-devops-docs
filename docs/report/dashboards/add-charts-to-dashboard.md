@@ -187,7 +187,7 @@ There are a number of system-generated charts that you can access from the web p
 
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)
 - [Team velocity](../guidance/team-velocity.md)
-- [Sprint burndown chart](../../work/scrum/sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
+- [Sprint burndown chart](../../boards/sprints/sprint-burndown.md), see [Sprint burndown widget](widget-catalog.md#sprint-burndown-widget)
 - [Cumulative flow](../guidance/cumulative-flow.md), see [CFD widget](widget-catalog.md#cfd-widget)
 
 ::: moniker-end

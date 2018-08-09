@@ -35,7 +35,7 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 
 You'll see two types of processes:
 
-- ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../../work/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
+- ![locked icon](_img/process/locked-icon.png) System processes &mdash;[Scrum, Agile, and CMMI](../../../boards/work-items/guidance/choose-process.md)&mdash;which are locked from being changed.   
 - ![inherited icon](_img/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process will automatically update your inherited process. 
 
 In addition, all processes are shared. That is, one or more projects can use a single process. Instead of customizing a single project, you customize a process. Changes made to the process automatically update all projects that use that process. 
@@ -59,7 +59,7 @@ To rename a process, open the &hellip; context menu for the process and choose *
 
 Each inherited process you create inherits the WITs defined in the system process&mdash;Agile, Scrum, or CMMI. For example, the Agile process provides bug, task, user story, feature, epic, issue and test-related WITs. 
 
-![Agile work item types](../../../work/work-items/guidance/_img/ALM_PT_Agile_WIT_Artifacts.png)
+![Agile work item types](../../../boards/work-items/guidance/_img/ALM_PT_Agile_WIT_Artifacts.png)
 
 You can add fields and modify the workflow and work item form for all inherited WITs that display on the **Work Item Types** page. If you don't want users to create a WIT, you can disable it. In addition, you can add custom WITs. 
 
@@ -90,7 +90,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 - Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 > [!NOTE]    
-> With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../work/track/query-numeric.md), [Automation Status](../../../work/track/build-test-integration.md), [Discipline](../../../work/track/query-numeric.md), [Priority](../../../work/track/planning-ranking-priorities.md), plus others.  
+> With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
 
 
 ### Configurable picklists 
@@ -185,10 +185,10 @@ When the display width won't accommodate all columns, columns appear stacked wit
 
 ## Workflow customizations
 
-You can customize the workflow of any WIT by hiding inherited states or adding custom states. By default, each WIT is defined with three or four workflow states. Inherited states differ based on the system process &mdash;[Agile](../../../work/work-items/guidance/agile-process.md), [Scrum](../../../work/work-items/guidance/scrum-process.md), or [CMMI](../../../work/work-items/guidance/cmmi-process.md)&mdash;you chose from which to create your custom process. 
+You can customize the workflow of any WIT by hiding inherited states or adding custom states. By default, each WIT is defined with three or four workflow states. Inherited states differ based on the system process &mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;you chose from which to create your custom process. 
 
 > [!NOTE]    
-> Before adding a workflow state, review [Workflow states and state categories](../../../work/work-items/workflow-and-state-categories.md) to learn how workflow states are used to support several Agile tools. 
+> Before adding a workflow state, review [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states are used to support several Agile tools. 
 
 
 > [!div class="mx-tdBreakAll"]  
@@ -247,7 +247,7 @@ The Stack Rank and Backlog Priority fields capture the relative priority of work
 
 The Story Points, Size, and Effort fields capture the relative work required to complete a WIT assigned to the Requirement backlog. This value is used to compute [velocity](../../../report/dashboards/velocity-chart-data-store.md).  
 
-And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../../work/scrum/define-sprints.md). 
+And, lastly, Remaining Work is used [Sprint burndown and capacity charts](../../../boards/sprints/define-sprints.md). 
 
 ## Object limits
 

@@ -41,7 +41,7 @@ By default, Team Foundation Server (TFS) limits the size of work item attachment
 
 ### Alternative solutions to increasing the attachment size   
 
-Increasing the attachment size increases the amount of data in storage and the time it takes to save a work item. To work around the size limit, add the attachment to source control and [add a link in the work item to the source control file](../../work/track/link-work-items-support-traceability.md) using the *Versioned Item* link type.  
+Increasing the attachment size increases the amount of data in storage and the time it takes to save a work item. To work around the size limit, add the attachment to source control and [add a link in the work item to the source control file](../../boards/queries/link-work-items-support-traceability.md) using the *Versioned Item* link type.  
 
 ### Review FIPS
 

@@ -53,7 +53,7 @@ To learn about our reporting solutions, read [VSTS/TFS Reporting Roadmap](../ana
 - [Configure a Lead Time or Cycle Time widget](cycle-time-and-lead-time.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 - [Configure the Velocity widget](team-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 - [View the built-in velocity chart](velocity-chart-data-store.md)
-- [Work with sprint burndown](../../work/scrum/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 
 ::: moniker-end
 
@@ -64,7 +64,7 @@ To learn about our reporting solutions, read [VSTS/TFS Reporting Roadmap](../ana
 
 - [Configure a Cumulative Flow chart](cumulative-flow.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 - [View the built-in velocity chart](velocity-chart-data-store.md)
-- [Work with sprint burndown](../../work/scrum/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
+- [Work with sprint burndown](../../boards/sprints/sprint-burndown.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 
 ::: moniker-end
 

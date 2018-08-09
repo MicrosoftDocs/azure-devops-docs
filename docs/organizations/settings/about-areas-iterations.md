@@ -46,7 +46,7 @@ Avoid creating an area structure that is too complex. You can create areas to pa
 You define as many child iterations as you need to reflect your project lifecycle. These paths represent a series of events, such as sprints, pre-beta and beta deliverables, and other release milestones. Teams typically leave work items assigned to the team's default iteration if they are not yet scheduled for work or for a release.  
 
 Add iterations to support these requirements:  
-* Define sprints your Scrum teams use to [plan and execute their sprints](../../work/scrum/assign-work-sprint.md)
+* Define sprints your Scrum teams use to [plan and execute their sprints](../../boards/sprints/assign-work-sprint.md)
 * Set up more complex multi-release and sprint cycles
 * Filter queries based on sprints, milestones, or cycle time for your project 
 * Support future work that you're not ready to assign to a target release cycle.  
@@ -85,8 +85,8 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 *	[Set project-level area paths](set-area-paths.md)  
 *	[Set project-level iteration paths](set-iteration-paths-sprints.md)  
 *	[Set team defaults](set-team-defaults.md)  
-*	[Agile tools and sprint definitions](../../work/scrum/define-sprints.md)  
-*	[Query by date or current iteration](../../work/track/query-by-date-or-current-iteration.md)  
+*	[Agile tools and sprint definitions](../../boards/sprints/define-sprints.md)  
+*	[Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
 
 
 <a name="export"></a>

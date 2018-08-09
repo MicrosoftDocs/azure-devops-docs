@@ -16,7 +16,7 @@ ms.date: 05/31/2018
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-You use different work item types (WITs) to plan and track different types of work. Your project contains several WITs that you can customize, based on the process&mdash;[Agile](../../../work/work-items/guidance/agile-process.md), [Scrum](../../../work/work-items/guidance/scrum-process.md), or [CMMI](../../../work/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 
+You use different work item types (WITs) to plan and track different types of work. Your project contains several WITs that you can customize, based on the process&mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;used to create your  project. Also, you can add a custom WIT to support additional tracking requirements. 
 
 For example, you may want to capture customer issues in a custom Ticket WIT.   
 
@@ -56,7 +56,7 @@ For example, you may want to capture customer issues in a custom Ticket WIT.
 0. Open the States page to view the default workflow states. Optionally, [customize the workflow states](customize-process-workflow.md).  
 <a id="backlog">  </a> 
 
-0. Optional. To add the WIT to a backlog, see [Customize your backlogs or boards for a process](customize-process-backlogs-boards.md). By default, custom WITs aren't added to any backlog. To learn more about different backlog levels, see [Backlogs, boards, and plans](../../../work/backlogs-boards-plans.md).   
+0. Optional. To add the WIT to a backlog, see [Customize your backlogs or boards for a process](customize-process-backlogs-boards.md). By default, custom WITs aren't added to any backlog. To learn more about different backlog levels, see [Backlogs, boards, and plans](../../../boards/backlogs/backlogs-boards-plans.md).   
 
 0. Verify the custom work item type appears as expected. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select the WIT you customized. Here we choose **Ticket**. 
 

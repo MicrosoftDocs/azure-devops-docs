@@ -49,7 +49,7 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
 ### Required activities to support the sprint burndown report  
  For the burndown report to be useful and accurate, your team must perform the following activities for tracking tasks:  
   
--   [Define sprints](../../work/scrum/define-sprints.md) for your team.  
+-   [Define sprints](../../boards/sprints/define-sprints.md) for your team.  
   
 -   [Define tasks for each product backlog item](http://msdn.microsoft.com/f13e32ae-fe77-421a-b524-43b6bcd1a0f3) you're working on within the sprint. If you work from your team's backlog and task board, the items you create will automatically be assigned to the current sprint (**Iteration**) and to your team's default **Area** path.  
   
@@ -72,5 +72,5 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
 -   How much work for the sprint is in progress?  
   
 ## Related notes
- [Scrum process](../../work/work-items/guidance/scrum-process.md)   
+ [Scrum process](../../boards/work-items/guidance/scrum-process.md)   
 [Define area paths](../../organizations/settings/set-area-paths.md) or [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md) 

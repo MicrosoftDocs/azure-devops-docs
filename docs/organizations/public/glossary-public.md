@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
 This glossary describes terms used when working with public projects in Visual Studio Team Services (VSTS). See also: 
-- [Agile glossary](../../work/work-items/agile-glossary.md) 
+- [Agile glossary](../../boards/work-items/agile-glossary.md) 
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 - [Security glossary](../security/security-glossary.md)  
 

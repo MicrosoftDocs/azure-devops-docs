@@ -1,5 +1,5 @@
 - name: TFS-Project Server Integration
-  href: index.md?toc=/vsts/work/tfs-ps-sync/toc.json&bc=/vsts/work/tfs-ps-sync/breadcrumb/toc.json 
+  href: index.md?toc=/vsts/reference/tfs-ps-sync/toc.json&bc=/vsts/reference/tfs-ps-sync/breadcrumb/toc.json 
 - name: Overview
   items:
   - name: Third-party support for synchronization
@@ -94,7 +94,7 @@
   - name: Resolve validation errors
     href: resolve-validation-errors.md
   - name: Resolve TFS-Office integration issues
-    href: ../../work/backlogs/office/tfs-office-integration-issues.md
+    href: ../../boards/backlogs/office/tfs-office-integration-issues.md
   - name: View error messages
     href: view-synch-error-messages.md
   - name: Verify synchronization
