@@ -19,7 +19,7 @@ ms.date: 02/17/2017
 
 A default set of fields appears in the relational warehouse database or the cube. The following tables list those reportable fields defined in the default process templates provided with the current release of Team Foundation Server. These fields have a `reportable` attribute value of `Detail`, `Dimension`, or `Measure`. See [Add or modify work item fields to support reporting](add-or-modify-work-item-fields-to-support-reporting.md).  
   
- For a complete list of fields that are defined in the default process templates, see [Work item field index](../../work/work-items/guidance/work-item-field.md).   
+ For a complete list of fields that are defined in the default process templates, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).   
   
 ##  <a name="detail"></a> Detail fields  
  Detail fields are written to the relational warehouse database, but not to the cube.  
@@ -90,5 +90,5 @@ A default set of fields appears in the relational warehouse database or the cube
 |Story Points|A subjective unit of measure that captures the size of a user story. If you assign more points to a user story, you indicate that more work is required to implement it. (Agile process template only)|Microsoft.VSTS.Scheduling.StoryPoints|Double|  
   
 ## Related articles
--  [Index of work item fields](../../work/work-items/guidance/work-item-field.md)
+-  [Index of work item fields](../../boards/work-items/guidance/work-item-field.md)
 -  [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md)

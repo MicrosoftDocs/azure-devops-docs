@@ -29,7 +29,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
  
 
 ## Step-by-Step Tutorials  
-- [Follow work & pull requests](../work/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Follow work & pull requests](../boards/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
 - [Set your personal notifications](manage-personal-notifications.md)
 
 

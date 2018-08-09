@@ -98,7 +98,7 @@ For details on each configuration option, see one of these topics:
 > [!div class="mx-tdBreakAll"]  
 > |Cards  | Boards  | Charts & widgets |  General  | 
 > |-------------|----------|---------|---------|   
-> |- [Fields](../../boards/boards/customize-cards.md)<br/>- [Styles](../../boards/boards/customize-cards.md#style-rule)<br/>- [Tag colors](../../boards/boards/customize-cards.md#color-tags)<br/>- [Annotations](../../boards/boards/customize-cards.md#annotations)<br/>- [Tests](../../boards/boards/customize-cards.md#tests) |- [Columns](../../work/kanban/add-columns.md)<br/>- [Swimlanes](../../work/kanban/expedite-work.md)<br/>- [Card reordering](../../boards/boards/reorder-cards.md) |- [Cumulative flow chart & widget](../../report/dashboards/cumulative-flow.md#configure)<br/>- [Lead & Cycle time widgets](../../report/dashboards/cycle-time-and-lead-time.md)<br/> - [Team-scoped widgets](../../report/dashboards/widget-catalog.md) <br/> - [Velocity chart and widget](../../report/dashboards/velocity-chart-data-store.md) |- [Backlogs](select-backlog-navigation-levels.md)<br/>- [Working days](../../work/kanban/expedite-work.md)<br/>- [Working with bugs](show-bugs-on-backlog.md) |
+> |- [Fields](../../boards/boards/customize-cards.md)<br/>- [Styles](../../boards/boards/customize-cards.md#style-rule)<br/>- [Tag colors](../../boards/boards/customize-cards.md#color-tags)<br/>- [Annotations](../../boards/boards/customize-cards.md#annotations)<br/>- [Tests](../../boards/boards/customize-cards.md#tests) |- [Columns](../../boards/boards/add-columns.md)<br/>- [Swimlanes](../../boards/boards/expedite-work.md)<br/>- [Card reordering](../../boards/boards/reorder-cards.md) |- [Cumulative flow chart & widget](../../report/dashboards/cumulative-flow.md#configure)<br/>- [Lead & Cycle time widgets](../../report/dashboards/cycle-time-and-lead-time.md)<br/> - [Team-scoped widgets](../../report/dashboards/widget-catalog.md) <br/> - [Velocity chart and widget](../../report/dashboards/velocity-chart-data-store.md) |- [Backlogs](select-backlog-navigation-levels.md)<br/>- [Working days](../../boards/boards/expedite-work.md)<br/>- [Working with bugs](show-bugs-on-backlog.md) |
 
 
 
@@ -117,4 +117,4 @@ If team members don't have access to all the features they want, check that they
 
 To favorite team artifacts, see [Set personal or team favorites](../../project/navigation/set-favorites.md). 
 
-To define work item templates for a team, see [Use templates to add and update work items](../../work/backlogs/work-item-template.md).
+To define work item templates for a team, see [Use templates to add and update work items](../../boards/backlogs/work-item-template.md).

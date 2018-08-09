@@ -38,7 +38,7 @@ Packages are versioned to ensure that code tested in one environment runs the sa
 ### Don't commit outputs
 
 Don't commit the binaries, logs, tracing output or diagnostic data from your builds and tests. These are outputs from your code, not the source code itself. Share logs and trace information
-with your team through [work item tracking](../../work/backlogs/add-work-items.md) tools or through team file sharing.
+with your team through [work item tracking](../../boards/backlogs/add-work-items.md) tools or through team file sharing.
 
 ### Store small, infrequently updated binary sources in Git
 

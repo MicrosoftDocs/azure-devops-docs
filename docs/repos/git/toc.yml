@@ -110,7 +110,7 @@
   - name: Define a CI build for your repo
     href: ../../pipelines/build/ci-build-git.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
   - name: Drive Git development from a work item
-    href: ../../work/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
+    href: ../../boards/backlogs/connect-work-items-to-git-dev-ops.md?toc=/vsts/repos/git/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json
   - name: Import a repo from TFVC
     href: import-from-TFVC.md
   - name: Manage repos

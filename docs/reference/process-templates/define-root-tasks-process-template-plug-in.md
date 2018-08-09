@@ -17,7 +17,7 @@ ms.date: 09/08/2017
 
 <a name="top"></a> By customizing ProcessTemplate.xml, you can add, remove, or change the sequence in which process template plug-in files are processed. The ProcessTemplate.xml is the root file that defines the entire process template and all subordinate XML files. This file contains all of the task groups that must run to successfully create a project. Each task group references a subordinate XML file (often in a subfolder) where the specific tasks are defined. In general, you specify one task group for each plug-in.  
   
-To learn more about the default process templates, see [Choose a process](../../work/work-items/guidance/choose-process.md). To learn about process template plug-in files, see [Overview of process template files](overview-process-template-files.md)  
+To learn more about the default process templates, see [Choose a process](../../boards/work-items/guidance/choose-process.md). To learn about process template plug-in files, see [Overview of process template files](overview-process-template-files.md)  
 
   
 <a name="structure"></a> 

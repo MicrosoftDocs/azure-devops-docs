@@ -95,7 +95,7 @@ We recommend that you create a test project and apply your customized  inherited
 0.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work>Work Items, new navigation](../../../work/work-items/_img/view-add/open-work-items-agile.png)
+	> ![Open Work>Work Items, new navigation](../../../boards/work-items/_img/view-add/open-work-items-agile.png)
 
 0. Select the WIT you customized. Here we choose **Bug**. 
 

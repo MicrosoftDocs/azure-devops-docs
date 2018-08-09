@@ -157,7 +157,7 @@ Shortcut menu for a work item (TFS web portal)
   
  The work item form for the task appears and is automatically linked to the requirement. In the form, for **Assigned To**, select the team member who will work on the task, and then type the estimated work for **Remaining Work**.  
   
- As an alternative, you can use the sprint task board in the web portal as described in [Task board](../../work/scrum/task-board.md). Or, you can open the Work Breakdown query in Excel and quickly define linked tasks and estimate work. For more information, see [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md).  
+ As an alternative, you can use the sprint task board in the web portal as described in [Task board](../../boards/sprints/task-board.md). Or, you can open the Work Breakdown query in Excel and quickly define linked tasks and estimate work. For more information, see [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).  
   
  After you have added missing tasks for the requirement, you can refresh the Work Breakdown query. Make sure that you set the **Submit to Project Server** field to **Yes**. The next status update for the requirement will transmit new requirements and tasks to the enterprise project plan. You can bulk edit several tasks to define select fields. See [Submit user stories to Project Server](make-agile-team-progress-visible-to-the-pmo.md#SubmitStories).  
   

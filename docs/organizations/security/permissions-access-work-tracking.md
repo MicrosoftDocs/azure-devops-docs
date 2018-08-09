@@ -158,7 +158,7 @@ The following table summarizes a subset of the default permissions assigned to t
 </tr>
 <tr>
 
-<td align="left">[View shared work item queries](../../work/track/using-queries.md)</p>
+<td align="left">[View shared work item queries](../../boards/queries/using-queries.md)</p>
 </td>
 <td>![checkmark](_img/icons/checkmark.png)</td>
 <td>![checkmark](_img/icons/checkmark.png)</td>
@@ -168,7 +168,7 @@ The following table summarizes a subset of the default permissions assigned to t
 
 <tr>
 <td align="left">
-[Manage shared query and query folder permissions](../../work/track/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
+[Manage shared query and query folder permissions](../../boards/queries/set-query-permissions.md)<br/>(Contribute, Delete, Manage Permissions)
 </p>
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
@@ -215,7 +215,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 - [Create and edit child nodes under their default area path](set-permissions-access-work-tracking.md)  
 - [Create and edit child nodes under an existing iteration node](set-permissions-access-work-tracking.md)  
-- [Create shared queries and folders under the Shared Queries folder](../../work/track/set-query-permissions.md).  
+- [Create shared queries and folders under the Shared Queries folder](../../boards/queries/set-query-permissions.md).  
  
 By default, team members inherit the permissions afforded to members of the team project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git team project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 

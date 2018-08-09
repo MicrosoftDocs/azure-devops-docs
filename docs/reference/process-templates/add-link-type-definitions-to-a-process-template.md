@@ -20,7 +20,7 @@ You can define additional link types that team members can create between work i
 
 You specify the definition file for each link type in a separate file, or you can specify them all in one file. You then add entries to the **taskxml** element of the WorkItemTracking plug-in for each definition file to upload.  
   
- The [default process templates](../../work/work-items/guidance/choose-process.md) defines several link types that the work item type (WIT) definitions reference. These are in addition to the system-defined link types. For more information, see [LinkTypes](../xml/link-type-element-reference.md).  
+ The [default process templates](../../boards/work-items/guidance/choose-process.md) defines several link types that the work item type (WIT) definitions reference. These are in addition to the system-defined link types. For more information, see [LinkTypes](../xml/link-type-element-reference.md).  
   
  The type definitions for links must be uploaded before the type definitions for work items. For more information, see [Define dependencies for task groups and tasks](define-dependencies-plug-ins-groups-tasks.md).  
   

@@ -99,7 +99,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    > The list of selectable backlogs, work item types, and fields are based on your current project. 
    > 
    > For example, if you select a work item type that doesn't exist in another project, the burndown will not include work items from that project. If you select a field that doesn't exist in another project, that field will be considered blank for the burndown. 
-   > Therefore, a burndown created across multiple projects will only work if the [Process](../..//work/work-items/guidance/choose-process.md) for those projects are the same, or at least very similar.
+   > Therefore, a burndown created across multiple projects will only work if the [Process](../..//boards/work-items/guidance/choose-process.md) for those projects are the same, or at least very similar.
 
 1. Choose your work items. The burndown can include work based on items in your **Backlog** or by **Work item type**.   
 	You can select a **Backlog**, which include all the work items in that backlog.    

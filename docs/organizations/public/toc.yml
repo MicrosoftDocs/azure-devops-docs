@@ -53,7 +53,7 @@
   - name: Git Repositories
     href: ../../repos/git/index.md
   - name: Work Items
-    href: ../../work/work-items/index.md 
+    href: ../../boards/work-items/index.md 
   - name: Project Management
     href: ../projects/index.md 
   - name: Process Customization

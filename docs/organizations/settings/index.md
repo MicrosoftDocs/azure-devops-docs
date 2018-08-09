@@ -44,9 +44,8 @@ Define area and iteration paths, add teams, and configure additional team, proje
 
 
 ## How-to Guides
-- [Set team defaults](../../work/scale/set-team-defaults.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)    
-- [Configure team settings](configure-team-settings.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json)   
-- [Switch team context](switch-team-context.md)
+- [Set team defaults](set-team-defaults.md)    
+- [Configure team settings](configure-team-settings.md)   
 
 
 ## Reference

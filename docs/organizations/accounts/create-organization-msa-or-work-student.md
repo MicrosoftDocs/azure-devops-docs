@@ -157,7 +157,7 @@ that you're connecting to your VSTS organization.
 	[Visual Studio](../../repos/tfvc/use-visual-studio-git.md), or 
 	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 
-*	[Create your backlog](../../work/backlogs/create-your-backlog.md), 
+*	[Create your backlog](../../boards/backlogs/create-your-backlog.md), 
 	[manage your process](../../organizations/settings/work/manage-process.md), 
 	or [customize your process](../../organizations/settings/work/customize-process.md)
 

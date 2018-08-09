@@ -237,6 +237,6 @@ witadmin listfields /collection:CollectionURL /n:RefName
 -  [Manage work item fields](../witadmin/manage-work-item-fields.md)   
 -  [Resolve data warehouse schema conflicts](../../report/admin/resolve-schema-conflicts.md)   
 -  [Modify a field or add a custom field](../add-modify-field.md)   
--  [Index of work item fields](../../work/work-items/guidance/work-item-field.md) 
+-  [Index of work item fields](../../boards/work-items/guidance/work-item-field.md) 
 -  [Add reports to a project](../../report/admin/add-reports-to-a-team-project.md)    
 -  [Dashboards and reports](../../report/overview.md)

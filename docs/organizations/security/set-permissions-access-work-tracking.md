@@ -131,7 +131,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 You can specify who can add or edit query folders or queries at the object-level. See [Set permissions on a shared query or query folder](../../organizations/security/set-permissions-access-work-tracking.md) to restrict who can modify the query or queries within a folder.
 
-To learn more about queries, see [Create managed queries to list, update, or chart work items](../../work/track/example-queries.md).
+To learn more about queries, see [Create managed queries to list, update, or chart work items](../../boards/queries/example-queries.md).
 
 
 ::: moniker range=">= tfs-2017"
@@ -139,9 +139,9 @@ To learn more about queries, see [Create managed queries to list, update, or cha
 <a id="plan-permissions">  </a>
 ## Manage or edit Delivery Plans 
 
-Plans are an object within a team project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../../work/track/set-query-permissions.md). The creator of a Delivery Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. 
+Plans are an object within a team project. You manage plan permissions for each plan similar to the way you [manage permissions for shared queries or query folders](../../boards/queries/set-query-permissions.md). The creator of a Delivery Plan as well as all members of the Project Collection Administrators and Project Administrators groups have permissions to edit, manage, and delete plans. 
 
-To learn more about Delivery Plans, see [Review team delivery plans](../../work/scale/review-team-plans.md).
+To learn more about Delivery Plans, see [Review team delivery plans](../../boards/plans/review-team-plans.md).
 ::: moniker-end
 ::: moniker range="tfs-2017"
 > [!NOTE]  
@@ -149,7 +149,7 @@ To learn more about Delivery Plans, see [Review team delivery plans](../../work/
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"  
-0. Open **Work>Plans**. For details, see [Review team delivery plans](../../work/scale/review-team-plans.md).  
+0. Open **Work>Plans**. For details, see [Review team delivery plans](../../boards/plans/review-team-plans.md).  
 
 0. To grant permissions to a group or user to manage or edit a specific plan, choose the ![](../../_img/icons/actions-icon.png) actions icon to open the **Security** dialog for the plan.  
 
@@ -192,11 +192,11 @@ In addition to the project-level permissions set in the previous section, team m
 
 [Open the **Security** page for area paths](#set-permissions-area-path) and choose the user or group you want to grant permissions. 
 
-![Open Area path permissions for the team project](../../work/backlogs/_img/delete-test-artifacts-open-area-permissions.png)  
+![Open Area path permissions for the team project](../../boards/backlogs/_img/delete-test-artifacts-open-area-permissions.png)  
 
 Set the permissions for **Manage test plans** and **Manage test suites** to **Allow**.  
 
-![Set Area path permissions for the team project](../../work/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
+![Set Area path permissions for the team project](../../boards/backlogs/_img/delete-test-artifacts-area-path-permissions.png)  
 
 To have full access to the Test feature set, your [access level must be set to Advanced](change-access-levels.md). Users with Basic access and with permissions to permanently delete work items and manage test artifacts can only delete orphaned test cases. 
  
@@ -232,7 +232,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 You can restrict access to work tracking objects in one of two ways:
 
--   By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../work/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
+-   By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
 -   [Set a condition field rule](../../reference/xml/apply-rule-work-item-field.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
 
 For more information about how to customize WITs, 
@@ -242,6 +242,6 @@ see [Modify or add a custom work item type (WIT)](../../reference/add-modify-wit
 
 ## Related articles 
 
-*	[Set permissions on queries and query folders](../../work/track/set-query-permissions.md)  
+*	[Set permissions on queries and query folders](../../boards/queries/set-query-permissions.md)  
 *	[Permissions and access for work tracking](permissions-access-work-tracking.md) 
 *	[Permissions and groups reference](permissions.md) 

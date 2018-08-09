@@ -25,22 +25,22 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 
 1. From your team's backlog page, choose the ![](../../_img/icons/gear-icon.png) gear icon to open the common configuration team settings.  
 	::: moniker range=">= tfs-2017"  
-	![Backlog board, open team settings]((../../work/backlogs/_img/organize-backlog-open-ccdialog.png) 
+	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
 	::: moniker-end
 	::: moniker range="tfs-2015" 
 	**TFS 2015.1**
-	![Backlog board, open team settings]((../../work/backlogs/_img/organize-backlog-open-ccdialog.png) 
+	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
 	**TFS 2015**
 	Click the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
 
-	![Gear icon provides access to admin pages]((../../work/_img/icons/ALM_OpenAdminContext.png)
+	![Gear icon provides access to admin pages]((../../boards/_img/icons/ALM_OpenAdminContext.png)
 
 	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
 	::: moniker-end
 	::: moniker range="tfs-2013"
 	Click the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page. Requires TFS 2013.4 or later version.  
 
-	![Gear icon provides access to admin pages]((../../work/_img/icons/ALM_OpenAdminContext.png)
+	![Gear icon provides access to admin pages]((../../boards/_img/icons/ALM_OpenAdminContext.png)
 
 	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
 	::: moniker-end
@@ -66,16 +66,16 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end 
 
-3. To see the changes, open or refresh the team's [backlog]((../../work/backlogs/create-your-backlog.md), [sprint backlog pages]((../../work/scrum/assign-work-sprint.md), or [Kanban board]((../../work/kanban/kanban-basics.md).
+3. To see the changes, open or refresh the team's [backlog]((../../boards/backlogs/create-your-backlog.md), [sprint backlog pages]((../../boards/sprints/assign-work-sprint.md), or [Kanban board]((../../boards/boards/kanban-basics.md).
 
 > [!TIP]  
-> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items]((../../work/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
+> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items]((../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
 
 
 <a id="add-other-wits" /> 
 ## Add other work item types to your backlogs or boards
 
-Bugs are a common item that teams want to track, and choose how they track it. See [Manage bugs](../../work/backlogs/manage-bugs.md) for more guidance. 
+Bugs are a common item that teams want to track, and choose how they track it. See [Manage bugs](../../boards/backlogs/manage-bugs.md) for more guidance. 
 
 However, what if you want to track other work item types (WITs) on your backlogs and boards?  
 
@@ -98,4 +98,4 @@ For an overview of process models, see [Customize your work tracking experience]
 ### Nested items  
 As indicated in this topic, bugs can appear alongside user stories (requirements or product backlog items) or tasks. You don't need to link bugs to one of these items in order to manage them.
 
-When you manage bugs with requirements or with tasks, they'll show up on one or more of your Agile tool backlogs and boards. However, if you nest items&mdash;create parent-child links of items that belong in either the Requirements or Task categories&mdash;then not all items may appear on your backlogs and boards. To learn more about how nested items are treated, see [How backlogs and boards display hierarchical (nested) items](../../work/backlogs/resolve-backlog-reorder-issues.md).
+When you manage bugs with requirements or with tasks, they'll show up on one or more of your Agile tool backlogs and boards. However, if you nest items&mdash;create parent-child links of items that belong in either the Requirements or Task categories&mdash;then not all items may appear on your backlogs and boards. To learn more about how nested items are treated, see [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md).

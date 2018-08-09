@@ -73,10 +73,10 @@ With flat-list queries, you can create various charts to monitor status, progres
 
 **Sequence for adding query-based charts to a dashboard**   
 
-[![Edit query](_img/gs-chart-query.png)](../../work/track/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
+[![Edit query](_img/gs-chart-query.png)](../../boards/queries/using-queries.md)[![Create chart](_img/gs-chart-create.png)](charts.md)[![Add chart to dashboard](_img/gs-chart-add-dashboard.png)](add-charts-to-dashboard.md#add-charts)   
 
 
-Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../../work/backlogs/create-your-backlog.md). 
+Prior to monitoring work progress and trends, you'll need to have [planned your project and made progress on work you're tracking](../../boards/backlogs/create-your-backlog.md). 
 
 
 ## Test progress, results, and trends  
@@ -102,16 +102,16 @@ There are a number of system-generated charts that you can access from the web p
 
 - [Cumulative flow](cumulative-flow.md)
 - [Team velocity](team-velocity.md)
-- [Sprint burndown chart](../../work/scrum/sprint-burndown.md)  
+- [Sprint burndown chart](../../boards/sprints/sprint-burndown.md)  
 
 
 ## Sprint charts     
 
-Each sprint provides access to two charts. The first [tracks capacity](../../work/scrum/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../../work/scrum/sprint-burndown.md) in terms of remaining work. 
+Each sprint provides access to two charts. The first [tracks capacity](../../boards/sprints/define-sprints.md) for the team, team activities&mdash;such as Development, Test, Design&mdash;and individual team members. The second tracks the [sprint burndown](../../boards/sprints/sprint-burndown.md) in terms of remaining work. 
 
 | Capacity bars | Burndown  |
 |-------| ----- |
-|![Capacity bars](../../work/scrum/_img/ALM_DS_CapacityBars_S.png) | ![Burndown chart](../../work/scrum/_img/ALM_DS_SprntBD_Chrt_S.png)  |
+|![Capacity bars](../../boards/sprints/_img/ALM_DS_CapacityBars_S.png) | ![Burndown chart](../../boards/sprints/_img/ALM_DS_SprntBD_Chrt_S.png)  |
 
 
 **Sprint chart widgets**  

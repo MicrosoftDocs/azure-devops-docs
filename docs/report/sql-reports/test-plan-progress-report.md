@@ -130,4 +130,4 @@ After the team creates test plans and starts to run tests by using the test mana
   
 ## Related notes
 -  [Reporting Services Reports](reporting-services-reports.md)   
--  [Agile process](../../work/work-items/guidance/agile-process.md)
+-  [Agile process](../../boards/work-items/guidance/agile-process.md)

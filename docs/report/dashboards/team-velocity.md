@@ -33,7 +33,7 @@ Use this topic to learn:
 > * Install and configure the Velocity widget available from the Analytics service     
 > * Required and recommended team activities to support velocity tracking      
 
-Once your team has completed a few sprints, they can use their velocity to [forecast](../../work/scrum/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
+Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
 
 There are two velocity charts, the one you access by adding the Velocity widget to a dashboard, and the one [viewed from the backlog of a team](velocity-chart-data-store.md). The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart.   
  

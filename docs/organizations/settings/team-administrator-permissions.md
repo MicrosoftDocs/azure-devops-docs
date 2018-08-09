@@ -54,12 +54,12 @@ Team administrators can fully customize the team's Kanban boards associate with 
 	* [Cards: Tag colors](../../boards/boards/customize-cards.md#color-tags)  
 	* [Cards: Annotations](../../boards/boards/customize-cards.md#annotations)  
 	* [Cards: Tests](../../boards/boards/customize-cards.md#tests)  
-	* [Board: Columns](../../work/kanban/add-columns.md)  
-	* [Board: WIP limits](../../work/kanban/wip-limits.md)    
-	* [Board: Split columns](../../work/kanban/split-columns.md)   
-	* [Board: Swimlanes](../../work/kanban/expedite-work.md)  
+	* [Board: Columns](../../boards/boards/add-columns.md)  
+	* [Board: WIP limits](../../boards/boards/wip-limits.md)    
+	* [Board: Split columns](../../boards/boards/split-columns.md)   
+	* [Board: Swimlanes](../../boards/boards/expedite-work.md)  
 	* [Board: Card reordering](../../boards/boards/reorder-cards.md)  
-	* [Board: Definition of Done](../../work/kanban/definition-of-done.md)  
+	* [Board: Definition of Done](../../boards/boards/definition-of-done.md)  
 	* [Charts: Cumulative flow](../../report/dashboards/cumulative-flow.md#configure) 
 
 

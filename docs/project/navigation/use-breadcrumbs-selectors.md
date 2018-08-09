@@ -133,12 +133,12 @@ Or, choose **Browse all team backlogs** to open the **Backlogs>All** page.
 (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 > [!div class="mx-imgBorder"]
-> ![Open the Work>Backlogs page, standard pages](../../work/scrum/_img/assign-items-sprint/open-work-backlogs-standard.png) 
+> ![Open the Work>Backlogs page, standard pages](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
 > [!div class="mx-imgBorder"]  
-> ![Choose another team](../../work/scrum/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
 
 ---
 

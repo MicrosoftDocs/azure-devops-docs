@@ -41,10 +41,10 @@ The following list shows the supported data types:
 </td></tr>
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
-	<td><p>Specifies a date according to Coordinated Universal Time (UTC) moment in time. Add a **DateTime** field to a work item form by using either the **FieldControl** or **DateTimeControl** **type** attributes. For query examples, see [Query by date or@CurrentIteration](../../work/track/query-by-date-or-current-iteration.md). </p></td></tr>
+	<td><p>Specifies a date according to Coordinated Universal Time (UTC) moment in time. Add a **DateTime** field to a work item form by using either the **FieldControl** or **DateTimeControl** **type** attributes. For query examples, see [Query by date or@CurrentIteration](../../boards/queries/query-by-date-or-current-iteration.md). </p></td></tr>
 <tr>
 	<td><p><strong>Double</strong> </p></td>
-	<td><p>Specifies a floating-point value, such as 0.2 or 3.5. Double fields are frequently used in query filters and results lists.Add a **Double** field to a work item form by using the **FieldControl** **type** attribute. For query examples, see [Query by numeric fields](../../work/track/query-numeric.md). </p></td></tr>
+	<td><p>Specifies a floating-point value, such as 0.2 or 3.5. Double fields are frequently used in query filters and results lists.Add a **Double** field to a work item form by using the **FieldControl** **type** attribute. For query examples, see [Query by numeric fields](../../boards/queries/query-numeric.md). </p></td></tr>
 <tr>
 	<td><p><strong>GUID</strong> </p></td>
 	<td><p>A character string that represents a unique ID.</p>
@@ -52,16 +52,16 @@ The following list shows the supported data types:
 </td></tr>
 <tr>
 	<td><p><strong>History</strong> </p></td>
-	<td><p>Custom formatted field used to track historical information. This data type is only used to support the <strong>History</strong> field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](../../work/track/query-operators-variables.md#full-text) described later in this topic. For query examples, see [History and auditing](../../work/track/history-and-auditing.md). </p>
+	<td><p>Custom formatted field used to track historical information. This data type is only used to support the <strong>History</strong> field. This field is automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](../../boards/queries/query-operators-variables.md#full-text) described later in this topic. For query examples, see [History and auditing](../../boards/queries/history-and-auditing.md). </p>
 
 <blockquote><b>Note:</b>  The **System.History** field is the only field that uses this data type. You cannot define a custom field using this data type. For the client work item form, you add the **System.History** field by using the **WorkItemLogControl** **type** attribute which supports rich text format controls.</blockquote>
 
 </td></tr>
 <tr>
 	<td><p> <strong>HTML</strong> </p></td>
-	<td><p>Supports the ability to capture rich-text data and to use longer text descriptions such as the <strong>Description</strong> or <strong>Repro Steps</strong> fields. An HTML field differs from a PlainText field in that an HTML field is strongly typed to HTML for richer displays of information. HTML fields are automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](../../work/track/query-operators-variables.md#full-text).</p>
+	<td><p>Supports the ability to capture rich-text data and to use longer text descriptions such as the <strong>Description</strong> or <strong>Repro Steps</strong> fields. An HTML field differs from a PlainText field in that an HTML field is strongly typed to HTML for richer displays of information. HTML fields are automatically indexed for full-text search when full-text search is available. See [Full-Text and partial word searches](../../boards/queries/query-operators-variables.md#full-text).</p>
 
-<p>Add an **HTML** field to a work item form by using the **HTMLControl** **type** attribute. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](../../work/track/titles-ids-descriptions.md). </p>
+<p>Add an **HTML** field to a work item form by using the **HTMLControl** **type** attribute. To query rich-text fields, see [Query by titles, IDs, and rich-text fields](../../boards/queries/titles-ids-descriptions.md). </p>
 </td>
 </tr>
 <tr>
@@ -71,8 +71,8 @@ The following list shows the supported data types:
 </td></tr>
 <tr>
 	<td><p> <strong>PlainText</strong> </p></td>
-	<td><p>Supports entry of a text string that can contain more than 255 Unicode characters, such as the <strong>Title</strong> field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](../../work/track/query-operators-variables.md#full-text).</p>
-<p>Add a **PlainText** field to a work item form by using either the **FieldControl** type attribute. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](../../work/track/titles-ids-descriptions.md).</p>
+	<td><p>Supports entry of a text string that can contain more than 255 Unicode characters, such as the <strong>Title</strong> field. These fields are automatically indexed for full-text search, when full-text search is available. See [Full-Text and partial word searches](../../boards/queries/query-operators-variables.md#full-text).</p>
+<p>Add a **PlainText** field to a work item form by using either the **FieldControl** type attribute. To query plain-text fields, see [Query by titles, IDs, and rich-text fields](../../boards/queries/titles-ids-descriptions.md).</p>
 
 </td></tr>
 <tr>
@@ -158,7 +158,7 @@ Predefined fields defined by the default process templates that TFS provides beg
 -   Microsoft.VSTS.Build.FoundIn   
 -   Microsoft.VSTS.TCM.Steps  
 
-For an overview of all system and predefined fields that are defined for the default processes/process templates, see [Work item field index](../../work/work-items/guidance/work-item-field.md). For more information about specifying field names, see [Naming restrictions](../../organizations/settings/naming-restrictions.md).
+For an overview of all system and predefined fields that are defined for the default processes/process templates, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). For more information about specifying field names, see [Naming restrictions](../../organizations/settings/naming-restrictions.md).
 
 
 ## Related articles

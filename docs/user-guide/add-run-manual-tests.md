@@ -17,13 +17,13 @@ monikerRange: 'vsts'
 
 **VSTS**
 
-A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../work/kanban/kanban-quickstart.md). 
+A quick and easy way to start manual testing is to add the test to the user story or bug you want to test. From the Kanban board, you can quickly define inline tests, or a set of manual tests, for a backlog item. Not only can you add tests, you can run them and update their status. If you're new to working with the Kanban board, see [Kanban quickstart](../boards/boards/kanban-quickstart.md). 
 
 Tests you create from the Kanban board are automatically linked to the user story or backlog item.  
  
 ## Open your Kanban board
 
-[!INCLUDE [temp](../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 
@@ -78,23 +78,23 @@ See [Create manual tests](../test/create-test-cases.md) to learn more about defi
 
 1. To start adding tests, open the menu for the work item.
 
-	<img src="../work/kanban/_img/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../boards/boards/_img/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" style="border: 2px solid #C3C3C3;" /> 
 
 	Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.  
 
 	For example, a test suite is created for each user story, and all inline tests are added to that suite. Below, user story 152 is highlighted which has three manual tests defined with IDs of 153, 155, and 161.  
 
-	<img src="../work/kanban/_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../boards/boards/_img/i-test-plan-suite.png" alt="Inline test cases get added to test suites and test plans" style="border: 2px solid #C3C3C3;" /> 
 
 	To learn more about test plans and test suites, see [Plan your tests](../test/create-a-test-plan.md).  
 
 2. If you have a number of tests to add, simply keep entering each title and select **Enter** on your keyboard. 
 
-	<img src="../work/kanban/_img/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" style="border: 2px solid #C3C3C3;" />   
+	<img src="../boards/boards/_img/i-test-story-with-3-inline-tests.png" alt="Work item with several test cases added" style="border: 2px solid #C3C3C3;" />   
 
 	To add details to the test case, open it. You can select the title, double-select the inline item, or open the context menu and choose **Open**.
 
-	<img src="../work/kanban/_img/i-test-case-form.png" alt="Open test case form from Kanban board" style="border: 2px solid #C3C3C3;" /> 
+	<img src="../boards/boards/_img/i-test-case-form.png" alt="Open test case form from Kanban board" style="border: 2px solid #C3C3C3;" /> 
 
 See [Create manual tests](../test/create-test-cases.md) to learn more about defining tests.
 
@@ -107,7 +107,7 @@ See [Create manual tests](../test/create-test-cases.md) to learn more about defi
 
 # [New navigation](#tab/new-nav)
 
-Run the test by selecting ![Run icon](../work/_img/icons/run_query.png) **Run test** from the ![Actions icon](../work/_img/icons/actions-icon.png) actions menu for the inline test.
+Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) **Run test** from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu for the inline test.
 
 ![Run manual test](_img/run-manual-test.png)
 
@@ -115,9 +115,9 @@ Microsoft Test Runner starts in a new browser instance. For details on running a
 
 # [Previous navigation](#tab/prev-nav)
 
-Run the test by selecting ![Run icon](../work/_img/icons/run_query.png) Run test from the ![Actions icon](../work/_img/icons/actions-icon.png) actions menu for the inline test.  
+Run the test by selecting ![Run icon](../boards/_img/icons/run_query.png) Run test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu for the inline test.  
 
-<img src="../work/kanban/_img/i-test-run-test.png" alt="Run a test" style="border: 2px solid #C3C3C3;" />  
+<img src="../boards/boards/_img/i-test-run-test.png" alt="Run a test" style="border: 2px solid #C3C3C3;" />  
 
 Microsoft Test Runner starts in a new browser instance. For details on running a test, see [Run manual tests](../test/run-manual-tests.md).
 
@@ -127,15 +127,15 @@ Microsoft Test Runner starts in a new browser instance. For details on running a
 
 # [New navigation](#tab/new-nav)
 
-You can update the status of the test from the ![Actions icon](../work/_img/icons/actions-icon.png) actions menu. 
+You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu. 
 
-<img src="../work/kanban/_img/i-test-update-status.png" alt="Check tasks that are complete" style="border: 2px solid #C3C3C3;" /> 
+<img src="../boards/boards/_img/i-test-update-status.png" alt="Check tasks that are complete" style="border: 2px solid #C3C3C3;" /> 
  
 Updating the status of tests enable you to [track test results](../test/track-test-status.md).
 
 # [Previous navigation](#tab/prev-nav)
 
-You can update the status of the test from the ![Actions icon](../work/_img/icons/actions-icon.png) actions menu.
+You can update the status of the test from the ![Actions icon](../boards/_img/icons/actions-icon.png) actions menu.
 
    ![pass-test](_img/pass-test.png)
  
@@ -159,11 +159,11 @@ Simply select the inline test summary to expand a collapsed set of tests. Select
 
 Upon first opening the Kanban board, you'll see an un-expanded view of checklists.
 
-![Inline tests collapsed](../work/kanban/_img/i-test-open-board-collapsed-tests.png)
+![Inline tests collapsed](../boards/boards/_img/i-test-open-board-collapsed-tests.png)
 
 Simply select the inline test summary to expand a collapsed set of tests. Select the same summary to collapse an expanded list.
 
-![Inline tests expanded](../work/kanban/_img/i-test-expanded-test-list.png)
+![Inline tests expanded](../boards/boards/_img/i-test-expanded-test-list.png)
 
 ---
 
@@ -173,7 +173,7 @@ Use inline tests for lightweight traceability and to manage manual tests for use
   
 > [!div class="nextstepaction"]
 > [Learn more about test case management](../test/create-test-cases.md)
-> [Kanban quickstart](../work/kanban/kanban-quickstart.md)
+> [Kanban quickstart](../boards/boards/kanban-quickstart.md)
 
 To initiate web-based exploratory testing for a user story, you need to install the Exploratory testing , see [Exploratory test your web app directly in your browser](../test/perform-exploratory-tests.md).
 

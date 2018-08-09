@@ -24,7 +24,7 @@ Customizations you make occur at one of three levels:
 - **Object level**: Grant or restrict access to work tracking tools, which includes setting permissions for objects and the project and assigning users or groups to specific access levels.  
 
 > [!NOTE]    
->If you're new to the work tracking system, see [Get started with Agile tools to plan and track work](../work/backlogs/overview.md). 
+>If you're new to the work tracking system, see [Get started with Agile tools to plan and track work](../boards/backlogs/overview.md). 
 
 
 
@@ -36,13 +36,13 @@ Each project provides a number of shared resources that support all teams added 
 > [!div class="mx-tdCol2BreakAll"]
 > | Area path pick lists | Sprint/iteration pick lists |
 > |-------------|----------| 
-> |Change the [pick list of area paths](../organizations/settings/set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../user-guide/_img/features/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../work/scrum//define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/>![Iterations or sprints](../user-guide/_img/features/alm-feature-define-sprints.png) |
+> |Change the [pick list of area paths](../organizations/settings/set-area-paths.md) to support grouping work items by team, product, or feature area.<br/>![Hierarchical area paths](../user-guide/_img/features/alm-feature-area-paths.png)|Change the [pick list of iteration paths](../boards/sprints//define-sprints.md) to support grouping work into sprints, milestones, or other event-specific or time-related period. Activate sprints for each team.<br/>![Iterations or sprints](../user-guide/_img/features/alm-feature-define-sprints.png) |
  
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Shared queries | Tags | 
 > |-------------|----------| 
-> |Open shared queries or create your own<br/>query using the [query editor](../work/track/using-queries.md) to list work items<br/>or show hierarchical or dependent items.<br/![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../work/track/add-tags-to-work-items.md) to filter backlogs and queries, or list items by tags<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
+> |Open shared queries or create your own<br/>query using the [query editor](../boards/queries/using-queries.md) to list work items<br/>or show hierarchical or dependent items.<br/![Shared queries](_img/customize-work-shared-queries-min.png) |[Add tags to work items](../boards/queries/add-tags-to-work-items.md) to filter backlogs and queries, or list items by tags<br/>![Add tags to filter backlogs, boards, and queries](_img/alm-feature-tags.png) |   
  
 
 <a id="process-models"></a>
@@ -57,7 +57,7 @@ Your project determines the objects available to tracking work and the configura
 >- **Hosted XML**: Supports customization through import/export of process templates, available for VSTS only    
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects      
  
-The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../work/work-items/agile-glossary.md).  
+The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../boards/work-items/agile-glossary.md).  
 
 <table width="90%">
 <tr valign="bottom">
@@ -174,7 +174,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 > [!div class="mx-tdBreakAll"]  
 > |Manage access   |Permissions  |Shared resources  |
 > |-------------|----------|---------|
-> |- [Add team members (VSTS)](../organizations/accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../organizations/settings/add-teams.md#add-team-members)<br/>- [Stakeholder access](../organizations/security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../organizations/security/change-access-levels.md) |- [Area path permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)<br/>- [Work item query and folder permissions](../work/track/set-query-permissions.md)<br/>- [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Tagging permissions](../organizations/security/permissions.md#tags)<br/>- [Test permissions](../organizations/security/permissions.md#project_test)| - [Alerts](../work/track/alerts-and-notifications.md)<br/>- [Area paths](../organizations/settings/set-area-paths.md)<br/>- [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Queries](../work/track/using-queries.md)<br/>- [Tags](../work/track/add-tags-to-work-items.md) | 
+> |- [Add team members (VSTS)](../organizations/accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../organizations/settings/add-teams.md#add-team-members)<br/>- [Stakeholder access](../organizations/security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../organizations/security/change-access-levels.md) |- [Area path permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)<br/>- [Work item query and folder permissions](../boards/queries/set-query-permissions.md)<br/>- [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Tagging permissions](../organizations/security/permissions.md#tags)<br/>- [Test permissions](../organizations/security/permissions.md#project_test)| - [Alerts](../boards/queries/alerts-and-notifications.md)<br/>- [Area paths](../organizations/settings/set-area-paths.md)<br/>- [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Queries](../boards/queries/using-queries.md)<br/>- [Tags](../boards/queries/add-tags-to-work-items.md) | 
   
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="test-experience"></a>
@@ -182,7 +182,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 
 Several WITs support the test experience within the web portal **Test** pages and Test Manager client. You can customize these WITs as you would any other WIT. The following image illustrates the support link relationships.  
 
-  ![Test management work item types](../work/work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)
+  ![Test management work item types](../boards/work-items/guidance/_img/ALM_PT_WITS_TestExperience.png)
 
 See the following resources for additional usage and customization information:
 
@@ -190,7 +190,7 @@ See the following resources for additional usage and customization information:
 - [Test resolution states](witadmin/tcm-customize-manage-test-experience.md) (TFS)
 - [Failure types](witadmin/tcm-customize-manage-test-experience.md)  
 - [Define the initial test management configuration (process template)](process-templates/define-initial-configuration-test-manager.md)
-- [Query based on build and test integration fields](../work/track/build-test-integration.md)
+- [Query based on build and test integration fields](../boards/queries/build-test-integration.md)
 
 ::: moniker-end
 
