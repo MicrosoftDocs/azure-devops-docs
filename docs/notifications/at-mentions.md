@@ -60,6 +60,6 @@ You can use the **@mention** control in pull request discussions, commit comment
 
 ## Related articles
 
-- [Work item form controls](../work/work-items/work-item-form-controls.md)  
+- [Work item form controls](../boards/work-items/work-item-form-controls.md)  
 - [Pull requests](../repos/git/pullrequest.md)
 

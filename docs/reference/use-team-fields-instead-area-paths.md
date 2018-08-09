@@ -223,7 +223,7 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 1.  Upgrade TFS [to the latest version](https://visualstudio.microsoft.com/downloads).
 
-2.  [Download the process template](../work/work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your project.
+2.  [Download the process template](../boards/work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your project.
 
   > [!IMPORTANT]  
   >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
@@ -243,7 +243,7 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 5.  As described in [Change process configuration to reference the team field](#processconfig), update the ProcessConfiguration file to use the custom team field.
 
-6.  [Upload the process template](../work/work-items/guidance/manage-process-templates.md) that you just modified.
+6.  [Upload the process template](../boards/work-items/guidance/manage-process-templates.md) that you just modified.
 
 7.  [Configure features](configure-features-after-upgrade.md) using the wizard. Upon verify, the wizard should select the process template that you uploaded in the previous step.
 

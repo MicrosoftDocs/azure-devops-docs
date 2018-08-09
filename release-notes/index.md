@@ -47,7 +47,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Universal Packages (“versioned bunch of files”) hosting|Package|TBD|
 |Analytics - Test Failures report for Build pipelines|Test|2019|
 |Analytics - Test Failures report for Release pipelines|Test|2019|
-|Microsoft Teams – Embed VSTS Dashboard in Channel|Reporting|2019|
 |Dashboards – Trend Charts for Work Items - based on Analytics|Reporting|2019|
 |Dashboards – Create dashboard separate from a team|Reporting|2019|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
@@ -87,7 +86,7 @@ Versions in the “Server” column are linked to the appropriate download locat
     </thead>
     <tbody>
         <tr>
-            <td rowspan="8">[3 August 2018](2018/aug-03-vsts.md)</td>
+            <td rowspan="9">[3 August 2018](2018/aug-03-vsts.md)</td>
             <td>Surface metadata for wiki pages and code preview using YAML tags</td><td>*2019*</td>
         </tr>
         <tr><td>View work for your team in the Work Items hub</td><td>*2019*</td></tr>
@@ -95,6 +94,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>Review summarized test results</td><td>*2019*</td></tr>
         <tr><td>View package download and user metrics</td><td>*2019*</td></tr>
         <tr><td>Browse dependencies in npm packages</td><td>*2019*</td></tr>
+        <tr><td>View VSTS dashboards within Microsoft Teams</td><td>*2019*</td></tr>
         <tr><td>Investigate build history through a new build dashboard widget</td><td>*2019*</td></tr>
         <tr><td>Manage billing for your organization directly through the Azure Portal</td><td>N/A</td></tr>
         <tr>

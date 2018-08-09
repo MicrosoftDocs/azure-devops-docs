@@ -38,7 +38,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 1. If you haven't already, 
    [sign up for VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
    [create your project](../organizations/accounts/organization-management.md), 
-   and [create your backlog](../work/backlogs/create-your-backlog.md). 
+   and [create your backlog](../boards/backlogs/create-your-backlog.md). 
 
 1. In VSTS, open your project.
 
@@ -90,7 +90,7 @@ Test plans, suites, and test cases are stored in VSTS and TFS as special types o
 ## See also
 
 * [FAQs for manual testing](reference-qa.md#testplans)
-* [Link test cases to work items](../work/track/link-work-items-support-traceability.md)
+* [Link test cases to work items](../boards/queries/link-work-items-support-traceability.md)
 
 ##  Next step
 

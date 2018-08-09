@@ -79,10 +79,10 @@ When you enable a feature at the organization level, you essentially turn it on 
 - [Combine email recipients](../../notifications/manage-team-notifications.md) 
 - [New Dashboards Experience](../../report/dashboards/dashboards.md)  
 - [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)  
-- [New Queries Experience](../../work/track/view-run-query.md)   
+- [New Queries Experience](../../boards/queries/view-run-query.md)   
 - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md) 
 - [New Test Plan Experience](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#test-1)<br/>
-- [New Work Items Hub](../../work/work-items/view-add-work-items.md)   
+- [New Work Items Hub](../../boards/work-items/view-add-work-items.md)   
 - [NuGet.org upstream sources](../../package/nuget/upstream-sources.md) 
 - [Out of the box notifications](../../notifications/manage-personal-notifications.md).   
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 

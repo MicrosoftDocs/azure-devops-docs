@@ -32,7 +32,7 @@ You can set favorites for the following artifacts from the indicated page.
 > | Code | Repositories | **Code>Branches**  (personal favorites only) | 
 > | Work, Agile tools for a team | Backlogs, boards, sprint backlogs, sprint taskboards | **Work>Queries** (requires enabling the [**New Navigation** or **New Navigation**](preview-features.md)) | 
 > | Work  | Queries | **Work>Queries** |
-> | Work | Delivery plans |  **Work>Plans** (personal favorites only, requires installation of the [Delivery Plans extension](../../work/scale/review-team-plans.md)) | 
+> | Work | Delivery plans |  **Work>Plans** (personal favorites only, requires installation of the [Delivery Plans extension](../../boards/plans/review-team-plans.md)) | 
 > | Build and Release | Pipeline definitions | **Build & Release>Build** or **Release**  | 
 > | Test | Test plans | **Test>Test Plans** (personal favorites only) |
 
@@ -48,7 +48,7 @@ You can set favorites for the following artifacts from the indicated page.
 > | Organization & projects | Projects and teams | **Projects**  (personal favorites only)  |  
 > | Code | Repositories | **Code>Branches**  (personal favorites only) | 
 > | Work  | Queries | **Work>Queries** |
-> | Work | Delivery plans |  **Work>Plans** (personal favorites only, requires installation of the [Delivery Plans extension](../../work/scale/review-team-plans.md)) | 
+> | Work | Delivery plans |  **Work>Plans** (personal favorites only, requires installation of the [Delivery Plans extension](../../boards/plans/review-team-plans.md)) | 
 > | Build and Release | Pipeline definitions | **Build & Release>Build** or **Release**  | 
 > | Test | Test plans | **Test>Test Plans** (personal favorites only) |
 
@@ -151,7 +151,7 @@ You can favorite several Agile tools for a team from a **Work** page.
 	To choose a specific team backlog, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all team backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../../work/scrum/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
+	> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 2.  Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear appear on your **Favorites** page and towards the top of the team backlog selector menu.
 
@@ -361,7 +361,7 @@ Similarly, you can unfavorite an artifact from the same page where you favorited
  You can define team favorites for the following:
 
 - **Code/Explorer**: Add repos or folders to team favories  
-- **Work/Queries**: A  [Shared work item queries](../../work/track/using-queries.md) to team favorites    
+- **Work/Queries**: A  [Shared work item queries](../../boards/queries/using-queries.md) to team favorites    
 - **Build/Explorer**: Add build definitions to team favorites   
 
 From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. Or, choose the Add to team favorites option from the context menu for the item. You must be [added as a team admin](../../organizations/settings/add-team-administrator.md) to manage team favorites.  

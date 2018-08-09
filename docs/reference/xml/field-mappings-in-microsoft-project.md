@@ -58,6 +58,6 @@ You can also prevent team members from changing calculated field values in Team 
 >  If you are using Project Server, there are additional fields that have "Enterprise" in the name, such as **pjTaskEnterpriseCost1**. TFS does not publish or refresh data to Project Server, unless you integrate it as described in [Synchronize TFS with Project Server](../tfs-ps-sync/synchronize-tfs-project-server.md). Therefore, these field names are not supported with the Team Foundation add-in to Project.  
   
 ## Related articles 
--  [Create your backlog and tasks using Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md)   
+-  [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)   
 -  [TFSFieldMapping](upload-or-download-the-microsoft-project-mapping-file.md)   
 -  [Add or change Project-to-TFS field mapping](add-or-change-how-project-fields-map-to-tfs-fields.md)

@@ -82,7 +82,7 @@ If you are adding a user to VSTS for the first time, see [Add account users for 
 
 6. In **Identities**, specify the name of the user or group you want to add.
 
-7. Depending on the user, you might want to customize their permissions for other functionality in the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../work/track/set-query-permissions.md).
+7. Depending on the user, you might want to customize their permissions for other functionality in the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
 
    > [!NOTE]
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
@@ -131,7 +131,7 @@ If you are adding a user to VSTS for the first time, see [Add account users for 
 
 6. In **Identities**, specify the name of the user or group you want to add.
 
-7. Depending on the user, you might want to customize their permissions for other functionality in the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../work/track/set-query-permissions.md).
+7. Depending on the user, you might want to customize their permissions for other functionality in the project, such as [areas and iterations](set-permissions-access-work-tracking.md) or [shared queries](../../boards/queries/set-query-permissions.md).
 
    > [!NOTE]
    > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).

@@ -25,13 +25,13 @@ When the Configure Features wizard can't update your project, it's because your 
 
 * **Option A**: Add features to your customized process template, and then run the Configure Features wizard 
 
-	Do steps: ![Step 1](..//work/_img/icons/ProcGuid_1.png), ![Step 2](..//work/_img/icons/ProcGuid_2.png), ![Step 4](..//work/_img/icons/ProcGuid_4.png), and ![Step 5](..//work/_img/icons/ProcGuid_5.png)
+	Do steps: ![Step 1](../boards/_img/icons/ProcGuid_1.png), ![Step 2](../boards/_img/icons/ProcGuid_2.png), ![Step 4](../boards/_img/icons/ProcGuid_4.png), and ![Step 5](../boards/_img/icons/ProcGuid_5.png)
 
 	Choose this option when you have made extensive customizations to your process template. 
 
 * **Option B**: Apply your customizations to the latest process template, and then run the Configure Features wizard
 
-	Do steps: ![Step 1](..//work/_img/icons/ProcGuid_1.png), ![Step 3](..//work/_img/icons/ProcGuid_3.png), ![Step 4](..//work/_img/icons/ProcGuid_4.png), and ![Step 5](..//work/_img/icons/ProcGuid_5.png)
+	Do steps: ![Step 1](../boards/_img/icons/ProcGuid_1.png), ![Step 3](../boards/_img/icons/ProcGuid_3.png), ![Step 4](../boards/_img/icons/ProcGuid_4.png), and ![Step 5](../boards/_img/icons/ProcGuid_5.png)
 
 	Choose this option when you have made very few customizations to your process template. 
 
@@ -43,11 +43,11 @@ When the Configure Features wizard can't update your project, it's because your 
 
 	Choose this option when you have dozens of projects that were created from the same process template.
 
-><b>Tip: </b>Review [Changes made to process templates](../work/work-items/guidance/changes-to-process-templates.md) to learn about changes made to the default process templates to enable new features. 
+><b>Tip: </b>Review [Changes made to process templates](../boards/work-items/guidance/changes-to-process-templates.md) to learn about changes made to the default process templates to enable new features. 
 
 ## 1. Download the latest process template
 
-![Step 1](..//work/_img/icons/ProcGuid_1.png) You will copy or add files from the folder of the latest version of process template that you download to the corresponding folder containing your customized process template definitions. 
+![Step 1](../boards/_img/icons/ProcGuid_1.png) You will copy or add files from the folder of the latest version of process template that you download to the corresponding folder containing your customized process template definitions. 
 
 1. If you're updating a process template based on a version earlier than MSF 6.0 or Visual Studio Scrum 2.0, first apply the updates provided in the [2012 version of this topic](https://msdn.microsoft.com/library/ms194972%28v=vs.110%29.aspx).
 
@@ -57,7 +57,7 @@ When the Configure Features wizard can't update your project, it's because your 
 
 1. If you aren't a member of the Project Collection Administrators group, [get added](../organizations/security/set-project-collection-level-permissions.md). You need the **Manage process template permission** set to Allow to download and manage process templates.
 
-1. After TFS has been upgraded, [download the latest process template from TFS](../work/work-items/guidance/manage-process-templates.md) and choose the process template that most closely matches the one used to create your project. 
+1. After TFS has been upgraded, [download the latest process template from TFS](../boards/work-items/guidance/manage-process-templates.md) and choose the process template that most closely matches the one used to create your project. 
 
 	To download or upload process templates, you must connect to TFS 2015 from either Visual Studio 2015 or Team Explorer 2015.
 
@@ -65,11 +65,11 @@ When the Configure Features wizard can't update your project, it's because your 
 
 ##2. Add features to your customized process template (Option A)
  
-![Step 2](..//work/_img/icons/ProcGuid_2.png) Update your customized process template by adding or updating the WITs, Categories, and ProcessConfiguration as described in [Add features using a manual update process](add-features-manually.md). Instead of using **witadmin** to export and import definition files, simply make the changes directly to your process template files.
+![Step 2](../boards/_img/icons/ProcGuid_2.png) Update your customized process template by adding or updating the WITs, Categories, and ProcessConfiguration as described in [Add features using a manual update process](add-features-manually.md). Instead of using **witadmin** to export and import definition files, simply make the changes directly to your process template files.
  
 Copy or add files from the folder of the latest version of process template that you download to the corresponding folder containing your customized process template definitions. 
 
-Review [Changes made to process templates](../work/work-items/guidance/changes-to-process-templates.md) to learn about all the changes made to the default process templates to enable new features. 
+Review [Changes made to process templates](../boards/work-items/guidance/changes-to-process-templates.md) to learn about all the changes made to the default process templates to enable new features. 
 
 ###Add a WIT to a process template  
 
@@ -100,7 +100,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 ## 3. Apply your customizations to the process template (Option B)
 
-![Step 3](..//work/_img/icons/ProcGuid_3.png) With this option, you apply customizations you've made to your project or process template to the latest process template that most closely matches the template used to create your project. 
+![Step 3](../boards/_img/icons/ProcGuid_3.png) With this option, you apply customizations you've made to your project or process template to the latest process template that most closely matches the template used to create your project. 
 
 
 1. Apply the customizations that you've made to the new process template folder:
@@ -314,7 +314,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 ## 4. Rename and upload the process template to TFS
 
-![Step 4](..//work/_img/icons/ProcGuid_4.png) For the Configure Features wizard to select the latest version of a process template, you must update the version statement to differentiate your updated process template ```version``` from previous versions. 
+![Step 4](../boards/_img/icons/ProcGuid_4.png) For the Configure Features wizard to select the latest version of a process template, you must update the version statement to differentiate your updated process template ```version``` from previous versions. 
 
 1. Open the **ProcessTemplate** plug-in file located in the top folder. 
 
@@ -374,13 +374,13 @@ Perform the following steps for each WIT that you add to your process template. 
 	The Configure Features wizard uses the ```version``` statement to determine which process template within a category is the latest version and automatically selects that version. 
 	
 	If the ```version``` statement isn't present, the Configure Features wizard can't select the process template for updating a project. Also, if more than one process template has been uploaded that specifies the same highest version number, then none of these process templates can be selected for updating a project.
-1. [Upload the process template](../work/work-items/guidance/manage-process-templates.md).
+1. [Upload the process template](../boards/work-items/guidance/manage-process-templates.md).
 
 	To verify your changes, create a test project. See [create a project](../organizations/projects/create-project.md).
 
 ## 5. Run the Configure Features wizard
 
-![Step 5](..//work/_img/icons/ProcGuid_5.png) When you've verified that the process template supports your customizations, run the [Configure Features wizard  to update your existing projects](configure-features-after-upgrade.md). 
+![Step 5](../boards/_img/icons/ProcGuid_5.png) When you've verified that the process template supports your customizations, run the [Configure Features wizard  to update your existing projects](configure-features-after-upgrade.md). 
 
 1.	Verify the features you want work as expected by exercising them as described in the following topics: 
 	<table>
@@ -421,14 +421,14 @@ Perform the following steps for each WIT that you add to your process template. 
 	Planning Tools
 	</td>
 	<td>
-	 [Create your backlog](../work/backlogs/create-your-backlog.md), [plan a sprint](../work/scrum//assign-work-sprint.md), [work with the Kanban board](../work/kanban/kanban-basics.md), and [more](../work/scrum//define-sprints.md). 
+	 [Create your backlog](../boards/backlogs/create-your-backlog.md), [plan a sprint](../boards/sprints//assign-work-sprint.md), [work with the Kanban board](../boards/boards/kanban-basics.md), and [more](../boards/sprints//define-sprints.md). 
 	</td>
 	</tr>
 	<tr>
 	<td>
 	Storyboarding
 	</td>
-	<td>[Launch Storyboarding or link a storyboard to a work item](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md).
+	<td>[Launch Storyboarding or link a storyboard to a work item](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md).
 	</td>
 	</tr>
 	<tr>

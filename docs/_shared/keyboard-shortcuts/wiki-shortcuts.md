@@ -19,8 +19,8 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
 &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new page<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit page<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new sub-page<br/><br/>
-**Ctrl+**![Up arrow](/vsts/work/_img/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order<br/>
-**Ctrl+**![Down arrow](/vsts/work/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order<br/><br/>
+**Ctrl+**![Up arrow](/vsts/boards/_img/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page up the order<br/>
+**Ctrl+**![Down arrow](/vsts/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move page down the order<br/><br/>
 **Ctrl+Shift+f**&nbsp;&nbsp;Filter page<br/>
 </td>
 </tr>

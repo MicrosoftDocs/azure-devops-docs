@@ -24,7 +24,7 @@ where VSTS is available.
 
 For information on region availability, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/).
 
-[!INCLUDE [temp](../../work/_shared/new-agile-hubs-feature.md)]
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 
 # [New navigation](#tab/new-nav)
 

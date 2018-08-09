@@ -58,7 +58,7 @@ Each default Analytics view provides a combination of options for work item type
 ## Common reportable fields  
 Default views automatically include the most common fields for the included work item types used for reporting. All custom fields are included. 
 
-For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item field index](../../work/work-items/guidance/work-item-field.md).  
+For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]
 > ![Analytics views common fields](_img\editable-views\common-fields.png)

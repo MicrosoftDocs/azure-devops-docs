@@ -74,11 +74,11 @@ As a team lead, you can use the backlog, task board, and work item pages in the 
 -   [Submit User Stories to Project Server](#SubmitStories)   
 -   [Update Remaining and Completed Work](#UpdateWork)  
   
-You can also export a shared query to Excel to perform bulk updates of user stories and tasks. See [Bulk add or modify work items with Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md).  
+You can also export a shared query to Excel to perform bulk updates of user stories and tasks. See [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).  
   
 <a name="DefineStories"></a> 
 ### Define user stories and tasks  
- You can use the sprint backlog page to [plan a sprint or iteration](../../work/scrum/assign-work-sprint.md). This page calculates individual and team capacity based on the estimated and remaining effort that is defined for tasks.  
+ You can use the sprint backlog page to [plan a sprint or iteration](../../boards/sprints/assign-work-sprint.md). This page calculates individual and team capacity based on the estimated and remaining effort that is defined for tasks.  
   
  As the following illustration shows, you can use the backlog page to define user stories and the tasks that are required to implement them. Tasks are automatically linked to user stories. This association supports the rollup of work hours from all tasks to the user story.  
   
@@ -120,7 +120,7 @@ Edit Work Items dialog box
      ![Save bulk edit updates](_img/tfs-ps_excel_prodbcklog_agileplan.png "TFS-PS_Excel_ProdBcklog_AgilePlan")  
   
 ###  <a name="UpdateWork"></a> Update remaining and completed work  
- Team members can update their work by using the web portal task board or work item forms in Team Explorer. To update both **Remaining Work** and **Completed Work**, you must open each task and update the fields. The value shown in the lower-left corner of each task corresponds to the **Remaining Work**. See [Task board](../../work/scrum/task-board.md).  
+ Team members can update their work by using the web portal task board or work item forms in Team Explorer. To update both **Remaining Work** and **Completed Work**, you must open each task and update the fields. The value shown in the lower-left corner of each task corresponds to the **Remaining Work**. See [Task board](../../boards/sprints/task-board.md).  
   
  ![Update tasks using the task board](_img/tfs-ps_excel_itbacklog_agileplanupd.png "TFS-PS_Excel_ItBacklog_AgilePlanUpd")  
   

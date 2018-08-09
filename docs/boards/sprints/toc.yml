@@ -1,0 +1,85 @@
+- name: Sprints (Scrum) 
+  href: index.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+- name: Overview
+  items:
+  - name: About Scrum
+    href: scrum-overview.md
+  - name: "Backlogs, boards, & plans"
+    href: ../backlogs/backlogs-boards-plans.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+- name: Quickstarts
+  items:
+  - name: Schedule sprints
+    href: define-sprints.md 
+  - name: Define iteration paths or sprints
+    href: ../../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json    
+- name: Tutorials 
+  items:
+  - name: 1. Assign backlog items to a sprint
+    href: assign-work-sprint.md
+  - name: 2. Add tasks 
+    href: add-tasks.md
+  - name: 3. Set sprint capacity 
+    href: set-capacity.md
+  - name: 4. Adjust work to fit capacity 
+    href: adjust-work.md
+  - name: 5. Share your sprint plan 
+    href: share-plan.md
+  - name: 6. Update the taskboard 
+    href: task-board.md
+  - name: Monitor sprint burndown
+    href: sprint-burndown.md
+  - name: Forecast
+    href: forecast.md
+- name: Concepts
+  items:
+  - name: Scrum best practices
+    href: best-practices-scrum.md
+  - name: Scrum and sprint planning tools
+    href: scrum-sprint-planning-tools.md
+  - name: About areas and iterations
+    href: ../../organizations/settings/about-areas-iterations.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: "Workflow states & state categories"
+    href: ../work-items/workflow-and-state-categories.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: About teams and Agile tools
+    href: ../../organizations/settings/about-teams-and-settings.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: Agile glossary
+    href: ../work-items/agile-glossary.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+- name: How-to Guides
+  items:
+  - name: "Filter backlogs & queries"
+    href: ../backlogs/filter-backlogs.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: Copy list
+    href: ../backlogs/copy-list.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: Bulk add or modify (Web)
+    href: ../backlogs/bulk-modify-work-items.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: Change column options
+    href: ../backlogs/set-column-options.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: "Manage permissions & access (Security)"
+    href: ../../organizations/security/set-permissions-access-work-tracking.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: Switch project or team focus
+    href: ../../organizations/settings/switch-team-context.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+- name: Reference
+  items:
+  - name: "Default permissions & access (Security)"
+    href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: Work item field index
+    href: ../work-items/guidance/work-item-field.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+  - name: Backlog keyboard shortcuts
+    href: ../backlogs/backlogs-keyboard-shortcuts.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json
+- name: Resources
+  items:
+  - name: Work Items
+    href: ../work-items/index.md
+  - name: Backlogs
+    href: ../backlogs/index.md
+  - name: Boards
+    href: ../boards/index.md
+  - name: Queries
+    href: ../queries/index.md
+  - name: Customization
+    href: ../../reference/index.md
+  - name: What is Scrum?
+    href: /azure/devops/agile/what-is-scrum
+
+
+
