@@ -54,7 +54,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
    
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://{account}.analytics.visualstudio.com/_odata/v1.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}"),
+        #"Get table" = VSTS.Feed("https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Teams?$select=TeamName,TeamSK&$filter=TeamName eq '{TeamName1}' or TeamName eq '{TeamName2}"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"TeamName", "TeamSK"})
     in
         #"Select columns"
@@ -71,7 +71,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?$select=AreaName,AreaSK"),
+        #"Get table" = VSTS.Feed("https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?$select=AreaName,AreaSK"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"AreaName", "AreaSK"})
     in
         #"Select columns"
@@ -83,7 +83,7 @@ The next step is to add the *Teams* entity to the Power BI data model and genera
 
     ```Query
     let
-        #"Get table" = VSTS.Feed("https://{account}.analytics.visualstudio.com/_odata/v1.0/Areas?$select=AreaSK&$expand=Teams($select=TeamSK)"),
+        #"Get table" = VSTS.Feed("https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/Areas?$select=AreaSK&$expand=Teams($select=TeamSK)"),
         #"Select columns" = Table.SelectColumns(#"Get table", {"AreaSK", "Teams"}),
         #"Expand Teams" = Table.ExpandTableColumn(#"Select columns", "Teams", {"TeamSK"}, {"TeamSK"})
     in
@@ -117,7 +117,7 @@ The last step is to create the necessary relationships in Power BI.
 	
 3. In the Manage Relationships dialog:  
 	a. Delete any relationships that might have been automatically detected.   
-	b. Choose **New** to create a bidirectional *Many to One* relationship between your *View* and *Area*. To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-bidirectional-filtering).  
+	b. Choose **New** to create a bidirectional *Many to One* relationship between your *View* and *Area*. To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-bidirectional-filtering).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Power BI Desktop, Manage Relationships dialog, View To Area](_img/ViewToArea.png)
@@ -156,4 +156,4 @@ Now you can filter all visualization on a report using a slicer or any other sup
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](../analytics/analytics-views-create.md)
 - [Get started with Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-getting-started)
-- [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-bidirectional-filtering)
+- [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-bidirectional-filtering)

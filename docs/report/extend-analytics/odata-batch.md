@@ -22,7 +22,7 @@ Batch requests are part of the OData spec, and the Analytics service for Visual 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
 ## The Analytics $batch endpoint
-The $batch endpoint is located at ```https://{account}.analytics.visualstudio.com/_odata/{version}/$batch```. Note that the $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
+The $batch endpoint is located at ```https://{OrganizationName}.analytics.visualstudio.com/_odata/{version}/$batch```. Note that the $batch endpoint is not available with a project scope, but the queries within a batch can contain project scoping.
 
 ### Supported $batch operations
 The OData spec allows for numerous operations per $batch request, however the Analytics service limits each $batch request to a single query. The Analytics $batch endpoint is also read-only, no change sets may be published to it.
@@ -32,7 +32,7 @@ Use $batch requests when you are in danger of exceeding the browser's limit on U
 
 ## $batch request example
 ### Request
-URL: ```https://{account}.analytics.visualstudio.com/_odata/{version}/$batch```  
+URL: ```https://{OrganizationName}.analytics.visualstudio.com/_odata/{version}/$batch```  
 Content-Type: ```multipart/mixed; boundary=batch_2af9a11e-9dec-4266-a3ab-0db9d10fb55a```  
 Request payload:
 ```
@@ -40,7 +40,7 @@ Request payload:
 Content-Type: application/http
 Content-Transfer-Encoding: binary
 
-GET https://{account}.analytics.vsts.me/_odata/{version}/Users?$filter=UserEmail eq 'john.smith@contoso.com'&$select=UserId,UserSK,UserName HTTP/1.1
+GET https://{OrganizationName}.analytics.vsts.me/_odata/{version}/Users?$filter=UserEmail eq 'john.smith@contoso.com'&$select=UserId,UserSK,UserName HTTP/1.1
 Accept: application/json
 
 --batch_1af9a11e-9dec-4266-a3ab-0db9d10fb55a
@@ -57,6 +57,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal; odata.streaming=true
 OData-Version: 4.0
 
-{"@odata.context":"https://{account}.analytics.vsts.me/_odata/{version}/$metadata#Users(UserId,UserSK,UserName)","value":[{"UserId":"04713655-3724-6024-b9a4-f0b1c6202dbc","UserSK":"04713655-3724-6024-b9a4-f0b1c6202dbc","UserName":"John Smith"}]}
+{"@odata.context":"https://{OrganizationName}.analytics.vsts.me/_odata/{version}/$metadata#Users(UserId,UserSK,UserName)","value":[{"UserId":"04713655-3724-6024-b9a4-f0b1c6202dbc","UserSK":"04713655-3724-6024-b9a4-f0b1c6202dbc","UserName":"John Smith"}]}
 --batchresponse_0cc7749e-dcec-4b5e-9380-eb05859fe733--
 ```

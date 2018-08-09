@@ -45,7 +45,7 @@ If your VSTS account is backed by Azure AD, then you can disable or delete the A
 For information on removing users from AD or Azure AD, see one of these topics: 
 
 * [Delete users from Azure AD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory#delete-users-from-azure-ad)
-* [Delete a User Account from Active Directory](https://technet.microsoft.com/en-us/library/cc753730.aspx)
+* [Delete a User Account from Active Directory](https://technet.microsoft.com/library/cc753730.aspx)
 
 ## Reduce the number of paid users, reassign paid extensions
 

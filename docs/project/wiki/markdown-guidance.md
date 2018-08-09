@@ -265,12 +265,12 @@ When linking to another Markdown page in the same Git or TFVC repository, the li
 
 **Example:**  
 <pre>
-&#91;C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
+&#91;C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
 </pre>
 
 **Result:**   
 
-[C# language reference](https://msdn.microsoft.com/en-us/library/618ayhy6.aspx)
+[C# language reference](https://msdn.microsoft.com/library/618ayhy6.aspx)
 
 
 ::: moniker range=">= tfs-2018"

@@ -151,6 +151,8 @@
       items: 
       - name: Phases
         href: process/phases.md
+      - name: Container phases
+        href: process/container-phases.md
       - name: Server phases
         href: process/server-phases.md
       - name: Deployment group phases
@@ -271,6 +273,8 @@
 - name: Reference
   href: tasks/index.md
   items:
+  - name: YAML schema
+    href: yaml-schema.md
   - name: Build tasks
     items:
     - name: .NET Core

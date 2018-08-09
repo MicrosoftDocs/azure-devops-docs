@@ -293,7 +293,7 @@ Elasticsearch).
 
 **Prerequisite**: TFS must be configured with a domain account.
 
-Follow the steps in [Creating Firewall Rules that Allow IPsec-protected Network Traffic](https://technet.microsoft.com/en-us/library/cc754873%28v%3Dws.10%29.aspx).
+Follow the steps in [Creating Firewall Rules that Allow IPsec-protected Network Traffic](https://technet.microsoft.com/library/cc754873%28v%3Dws.10%29.aspx).
 
 #### Configure security with authentication, integrity protection, and encryption
 
@@ -305,7 +305,7 @@ TFS App Tier servers).
 
 **Prerequisite**: TFS must be configured with a domain account.
 
-Follow the steps in [Isolating a Server by Requiring Encryption and Group Membership](https://technet.microsoft.com/en-us/library/cc772460%28v%3Dws.10%29.aspx).
+Follow the steps in [Isolating a Server by Requiring Encryption and Group Membership](https://technet.microsoft.com/library/cc772460%28v%3Dws.10%29.aspx).
 
 <a name="upgrading-search"></a>
 ## Upgrade the Search service

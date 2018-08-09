@@ -137,7 +137,7 @@ Teams who are responsible for testing software can use the Test Team Progress re
 |Worksheet report|Required activities|  
 |----------------------|-------------------------|  
 |-   Test Case Authoring Status<br />-   Automation Design Status|-   Define test cases, and update their **State** from **Design** to **Ready**.|  
-|-   Automation Design Status|-   [Automate test cases](https://msdn.microsoft.com/en-us/library/dd380741.aspx).|  
+|-   Automation Design Status|-   [Automate test cases](https://msdn.microsoft.com/library/dd380741.aspx).|  
 |-   Test Plan Progress<br />-   Test Status by Suite<br />-   Test Status by Area<br />-   Failure Analysis|-   Define test plans and test suites, and assign test cases to test plans and test suites.<br />-   [Run tests](../../test/run-manual-tests.md), and, for manual tests, mark the results of each validation step in the test case as passed or failed.|  
 |-   Test Case Authoring Status<br />-   Automation Design Status<br />-   Test Plan Progress<br />-   Test Status by Suite<br />-   Test Status by Area<br />-   Failure Analysis|-   (Optional) To support filtering, assign **Iteration** and **Area** paths to each test case. The **Test Result - Iteration Hierarchy** and **Test Result - Area Hierarchy** fields get their values from the **Iteration** and **Area** paths that are assigned to their corresponding test cases.|  
   
