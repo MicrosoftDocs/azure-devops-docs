@@ -54,10 +54,10 @@ See [Software development roles](roles.md).
 ### Q: Are there other clients that connect to VSTS or TFS? Are there other tools I can use?
 
 **A:** Yes. You can connect to a team project from one of these clients:  
-- [Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md) (Requires the Team Foundation add-in is installed)  
-- [Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)  (Requires the Team Foundation add-in is installed)  
+- [Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) (Requires the Team Foundation add-in is installed)  
+- [Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)  (Requires the Team Foundation add-in is installed)  
 - [Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md)   
-- [PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (Requires the Team Foundation add-in is installed)  
+- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md) (Requires the Team Foundation add-in is installed)  
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)  
 - [Test & Feedback extension (previously called the Exploratory Testing extension)](../test/provide-stakeholder-feedback.md)
 - [Microsoft Feedback Client](../project/feedback/give-feedback.md)  

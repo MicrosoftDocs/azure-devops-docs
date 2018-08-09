@@ -75,7 +75,7 @@ Contact the TFS system administrator and request that they verify the server con
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Q: How do I add my custom process template to the list?
 
-**A:** You'll need to first [upload your template](../../work/work-items/guidance/manage-process-templates.md) using the Process Template Manager. To learn more about customizing a process template, go [here](../../reference/process-templates/customize-process.md).
+**A:** You'll need to first [upload your template](../../boards/work-items/guidance/manage-process-templates.md) using the Process Template Manager. To learn more about customizing a process template, go [here](../../reference/process-templates/customize-process.md).
 
 <a id="log-file">  </a>
 

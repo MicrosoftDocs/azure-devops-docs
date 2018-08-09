@@ -127,8 +127,8 @@ featureFlags:
                                             <div class="cardText">
                                                 <h3>Agile</h3>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
-                                                    <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
+                                                    <li><a class="barLink" href="/vsts/boards/sprints/index">Sprints (Scrum)</a></li>
+                                                    <li><a class="barLink" href="/vsts/boards/boards/index">Boards (Kanban)</a></li>
                                                     <li><a class="barLink" href="/vsts/report/dashboards/index">Dashboards</a></li>
                                                 </ul>
                                             </div>
@@ -236,13 +236,13 @@ featureFlags:
                                 <div class="group">
                                     <h3>Agile</h3>
                                     <ul>
-                                        <li><a class="barLink" href="/vsts/work/work-items/index">Work Items</a></li>
-                                        <li><a class="barLink" href="/vsts/work/backlogs/index">Backlogs</a></li>
-                                        <li><a class="barLink" href="/vsts/work/kanban/index">Boards (Kanban)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scrum/index">Sprints (Scrum)</a></li>
-                                        <li><a class="barLink" href="/vsts/work/track/index">Queries</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/work-items/index">Work Items</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/backlogs/index">Backlogs</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/boards/index">Boards (Kanban)</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/sprints/index">Sprints (Scrum)</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/queries/index">Queries</a></li>
                                         <li><a class="barLink" href="/vsts/reference/index">Customization</a></li>
-                                        <li><a class="barLink" href="/vsts/work/scale/index">Agile at Scale</a></li>
+                                        <li><a class="barLink" href="/vsts/boards/plans/index">Agile at Scale</a></li>
                                     </ul>
                                     <h3>Reporting</h3>
                                     <ul>
@@ -621,7 +621,7 @@ featureFlags:
                         <a href="#agile">Agile</a>
                         <ul id="agile" class="cardsA">
                             <li>
-                                <a href="/vsts/work/work-items/index">
+                                <a href="/vsts/boards/work-items/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -641,7 +641,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/backlogs/index">
+                                <a href="/vsts/boards/backlogs/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -661,7 +661,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/kanban/index">
+                                <a href="/vsts/boards/boards/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -680,7 +680,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/scrum/index">
+                                <a href="/vsts/boards/sprints/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -699,7 +699,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/track/index">
+                                <a href="/vsts/boards/queries/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -737,7 +737,7 @@ featureFlags:
                                 </a>
                             </li>
                             <li>
-                                <a href="/vsts/work/scale/index">
+                                <a href="/vsts/boards/plans/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

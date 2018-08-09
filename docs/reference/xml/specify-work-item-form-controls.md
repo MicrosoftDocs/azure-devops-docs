@@ -42,7 +42,7 @@ You can control the label name, position, size of text box, and other display co
  Each work item field is associated with a data type. Use the `Label` attribute to specify the text that displays next to the control. Use the related `LabelPosition` attribute to specify where the label appears relative to the control.  
   
 > [!NOTE]  
-> You can't change the values of system fields, which are updated automatically. For example, the Created Date and Created By fields are defined when a work item is first saved. However, you can use these fields in search criteria.  For a description of each system field, see [Work item field index](../../work/work-items/guidance/work-item-field.md). 
+> You can't change the values of system fields, which are updated automatically. For example, the Created Date and Created By fields are defined when a work item is first saved. However, you can use these fields in search criteria.  For a description of each system field, see [Work item field index](../../boards/work-items/guidance/work-item-field.md). 
 
 
 ## Add a numeric field  

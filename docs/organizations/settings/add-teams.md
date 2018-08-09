@@ -169,7 +169,7 @@ For details, see [Add users to a project or specific team](../security/add-users
 ## Move work items under teams 
 Now that your two feature teams are configured, you'll want to move existing work items from their current assignments to the team's default area path. This way, the work items will show up on each team's backlog. 
 
-1.	The quickest way to do this, is to [create a query](../../work/track/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../work/backlogs/bulk-modify-work-items.md). 
+1.	The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md). 
 
 	::: moniker range="vsts"  
 	> [!div class="mx-imgBorder"]  

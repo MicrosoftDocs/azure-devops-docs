@@ -21,11 +21,11 @@ By adding work item queries to your process template, you can define the initial
  Work item queries specify criteria for generating a list of work items, such as a list of active bugs or closed tasks. Files for work item queries have a .wiq extension and are stored in the Queries subfolder of the WorkItem Tracking folder for the default process templates.  
   
 > [!IMPORTANT]  
-> The default process templates define several queries which differ based on the process&mdash;[Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or [CMMI](../../work/work-items/guidance/cmmi-process.md). Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    
+> The default process templates define several queries which differ based on the process&mdash;[Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../boards/work-items/guidance/cmmi-process.md). Query definitions depend on the fields and work item types defined in the process template. Also, some workbooks that are uploaded within the Portal plug-in depend on the query definitions.    
   
  You specify the query definitions to upload as a task within the WorkItemTracking plug-in. This task may be required because several artifacts in a process template may depend on a query. In addition, the task to upload queries depends on the successful completion of the task for uploading work item types. You specify each query file to upload within the **taskXml** element.  
   
-  After a project is created from the process template, you can add, remove, and change queries by using the Query Editor. For more information, see [Use the query editor to list and manage queries](../../work/track/using-queries.md).  
+  After a project is created from the process template, you can add, remove, and change queries by using the Query Editor. For more information, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md).  
   
  For information about how to assign query permissions to groups, see [Control access to functional areas](control-access-to-functional-areas.md). For information about how to create query folders, see [Define objects for tracking work items](define-objects-track-work-items-plug-in.md).  
   
@@ -110,5 +110,5 @@ By adding work item queries to your process template, you can define the initial
 
 
 ## Related articles
--  [Use the query editor to list and manage queries](../../work/track/using-queries.md)     
+-  [Use the query editor to list and manage queries](../../boards/queries/using-queries.md)     
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)

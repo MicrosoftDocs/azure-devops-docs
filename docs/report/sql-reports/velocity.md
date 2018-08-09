@@ -43,7 +43,7 @@ If your team has completed multiple sprints, you can forecast release and produc
 ### Required activities for tracking velocity  
  For the velocity graph to be useful and accurate, your team must perform the following activities for tracking work items:  
   
--   [Define sprints](../../work/scrum/define-sprints.md) for your team.  
+-   [Define sprints](../../boards/sprints/define-sprints.md) for your team.  
   
 -   Define product backlog items and bugs, and assign them to an **Iteration** and to your team's **Area** path.  
   
@@ -65,6 +65,6 @@ If your team has completed multiple sprints, you can forecast release and produc
 -   What is the average velocity of your team?  
   
 ## Related notes
- [Scrum process](../../work/work-items/guidance/scrum-process.md)   
+ [Scrum process](../../boards/work-items/guidance/scrum-process.md)   
  [Define iteration paths (sprints)](../../organizations/settings/set-iteration-paths-sprints.md)   
  [Velocity chart and widget](../guidance/team-velocity.md)

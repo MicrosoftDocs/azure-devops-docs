@@ -35,7 +35,7 @@ You can use the following procedures to save data that users most care about, su
 
 -   **Build data**: To save logs and data in your drop build folders, see [View build results](https://msdn.microsoft.com/library/ms181733.aspx).
 
--   **Work item tracking data:** Create a work item query and open it [using Excel](../../work/backlogs/office/bulk-add-modify-work-items-excel.md). Save the Excel spreadsheet.
+-   **Work item tracking data:** Create a work item query and open it [using Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Save the Excel spreadsheet.
 
     This process doesn't save any attachments, change history, or links to other artifacts.
 

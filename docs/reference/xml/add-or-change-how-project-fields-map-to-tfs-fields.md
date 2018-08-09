@@ -30,7 +30,7 @@ You can customize how data is published and refreshed by modifying the Microsoft
   
      **Review the types of Office Project fields that can be mapped to Team Foundation**. You can find specific support information about how to map Team Foundation fields and Microsoft Project fields.  
   
--   [Create your backlog and tasks using Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md)  
+-   [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)  
   
      **Understand how fields map between Project and TFS**. You can understand how data in your office project plan maps to work items in Team Foundation by viewing the Microsoft Project column mappings. The mappings identify which Microsoft Project column maps to a field in Team Foundation.  
   
@@ -40,5 +40,5 @@ You can customize how data is published and refreshed by modifying the Microsoft
   
 ## Related articles 
 -  [Address inaccuracies published for summary values](../../report/sql-reports/address-inaccuracies-published-for-summary-values.md)   
--  [Work in Excel and Project](../../work/backlogs/office/track-work-vsts-tfs.md)   
--  [Create your backlog and tasks using Project](../../work/backlogs/office/create-your-backlog-tasks-using-project.md)
+-  [Work in Excel and Project](../../boards/backlogs/office/track-work-vsts-tfs.md)   
+-  [Create your backlog and tasks using Project](../../boards/backlogs/office/create-your-backlog-tasks-using-project.md)

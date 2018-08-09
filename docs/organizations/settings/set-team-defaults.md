@@ -18,7 +18,7 @@ ms.date: 07/27/2018
  
 Each team has access to a number of Agile tools as described in [About teams and Agile tools](about-teams-and-settings.md). Each tool references the team's default area path(s). Several tools reference the team's default and active iteration paths or sprints. Most teams choose one area path and several iteration paths to support their work tracking activities. However, to support other scenarios, it's possible for teams to choose several area paths to appear on their backlogs and boards. 
 
-Prior to setting team defaults, [add the teams](../../organizations/settings/add-teams.md) you want and [schedule your shared sprint schedule](../../work/scrum/define-sprints.md). Optionally, [add area paths](set-area-paths.md) you want to use to group work items. 
+Prior to setting team defaults, [add the teams](../../organizations/settings/add-teams.md) you want and [schedule your shared sprint schedule](../../boards/sprints/define-sprints.md). Optionally, [add area paths](set-area-paths.md) you want to use to group work items. 
 
 <a id="default_path">  </a>
 ## Backlog iteration versus default iteration 
@@ -94,7 +94,7 @@ All work items assigned to the area paths selected for a team appear on the back
 The default area path determines the default area path assigned to work items that are created from the team context.  
 
 > [!IMPORTANT]  
-> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../work/kanban/add-columns.md) and [swimlanes](../../work/kanban/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
+> Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
 
 ::: moniker range=">= tfs-2017"  
 
@@ -137,7 +137,7 @@ The default area path determines the default area path assigned to work items th
 <a id="activate">  </a>
 ## Select team sprints and default iteration path  
 
-You [define sprints for the project](../../work/scrum/define-sprints.md) and then select them to be active for each team. You assign the default iteration to use when creating new work items. 
+You [define sprints for the project](../../boards/sprints/define-sprints.md) and then select them to be active for each team. You assign the default iteration to use when creating new work items. 
 
 <a id="activate-team-services">  </a>
 
@@ -158,7 +158,7 @@ You [define sprints for the project](../../work/scrum/define-sprints.md) and the
 
 	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
-0. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use **@CurrentIteration** to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../work/track/query-by-date-or-current-iteration.md#current-iteration).  
+0. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use **@CurrentIteration** to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
 
 	For example, you might want all new work items to be added to a future iteration path which you use to triage and assign to specific sprints at periodic intervals.  
 
@@ -176,7 +176,7 @@ You [define sprints for the project](../../work/scrum/define-sprints.md) and the
 
 	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration paths (aka sprints)](set-iteration-paths-sprints.md).   
 
-3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../work/backlogs/create-your-backlog.md).  
+3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
 ::: moniker-end  
 
@@ -193,7 +193,7 @@ You [define sprints for the project](../../work/scrum/define-sprints.md) and the
 
 	Here, we navigate to the Fabrikam Fiber Team.  
 
-	![Work, Iterations page for team](../../work/scrum/_img/dsprints-team-work-iterations-page.png)  
+	![Work, Iterations page for team](../../boards/sprints/_img/dsprints-team-work-iterations-page.png)  
 
 <a id="set-backlog-iteration">  </a>
 2. **Backlog iteration**. Only work items assigned to an iteration equal to or under this backlog iteration appear in the team's backlogs and boards. 
@@ -202,7 +202,7 @@ You [define sprints for the project](../../work/scrum/define-sprints.md) and the
 
 	Also, all work items added through a team's backlog or board are assigned the backlog iteration. 
 
-3. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use **@CurrentIteration** to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../work/track/query-by-date-or-current-iteration.md#current-iteration).  
+3. **Default iteration**. The default iteration defines the iteration used when a work item is created from the team dashboard (new work item widget) and queries page. You can use an explicit value or use **@CurrentIteration** to assign new work items to the team's current iteration. This is the same macro used in [queries to list work items assigned to the currently active iteration assigned to the team](../../boards/queries/query-by-date-or-current-iteration.md#current-iteration).  
 
 	For example, you might want all new work items to be added to a future iteration path which you use to triage and assign to specific sprints at periodic intervals.  
 
@@ -210,15 +210,15 @@ You [define sprints for the project](../../work/scrum/define-sprints.md) and the
 
 4. **Active sprints**. Add an iteration for each sprint backlog you want active for the team. Add each sprint, one by one, by selecting it from the menu.  
 
- 	![Work, Iterations page for team, select sprint to activate](../../work/scrum/_img/dsprints-add-sprints-to-team-iterations-page.png)
+ 	![Work, Iterations page for team, select sprint to activate](../../boards/sprints/_img/dsprints-add-sprints-to-team-iterations-page.png)
 
 	When you're done, you should see a list of sprints, similar to the following.  
 
-	![Work, Iterations page for team, activates sprint list](../../work/scrum/_img/dsprints-selected-active-sprints.png) 
+	![Work, Iterations page for team, activates sprint list](../../boards/sprints/_img/dsprints-selected-active-sprints.png) 
 
 	If you don't see the sprints you need, or the dates aren't set, then [return to the project admin context and define them there](set-iteration-paths-sprints.md#define-sprints-team-services).  
 
-3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../work/backlogs/create-your-backlog.md).  
+3.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
 ::: moniker-end
 
@@ -252,7 +252,7 @@ You [define sprints for the project](../../work/scrum/define-sprints.md) and the
 
 	Check boxes only appear for sprints defined under the default iteration path.  
 
-4.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../work/backlogs/create-your-backlog.md).  
+4.	To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
 ::: moniker-end
 
@@ -260,11 +260,11 @@ You [define sprints for the project](../../work/scrum/define-sprints.md) and the
 
 ## Related articles  
 
-- [Schedule sprints](../../work/scrum/define-sprints.md)  
+- [Schedule sprints](../../boards/sprints/define-sprints.md)  
 - [Set area paths](set-area-paths.md)  
-- [Query by date or current iteration](../../work/track/query-by-date-or-current-iteration.md)
+- [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)
 - [Add teams](add-teams.md)  
 - [Configure team settings](configure-team-settings.md)  
-- [Portfolio management](../../work/scale/portfolio-management.md)  
+- [Portfolio management](../../boards/plans/portfolio-management.md)  
 
 

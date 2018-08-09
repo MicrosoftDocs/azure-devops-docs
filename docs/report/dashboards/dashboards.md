@@ -156,11 +156,11 @@ Add a new dashboard as needed to support your team's needs. You can also edit an
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
 
-From the **Dashboards** hub, choose the ![plus icon](../../Work/_img/icons/green_plus_icon.png) and enter a dashboard name. 
+From the **Dashboards** hub, choose the ![plus icon](../../boards/_img/icons/green_plus_icon.png) and enter a dashboard name. 
 
 ![Add and name a dashboard](_img/dashboards-new-ts.png) 
 
-If you don't see the ![plus icon](../../work/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json). 
+If you don't see the ![plus icon](../../boards/_img/icons/green_plus_icon.png), then you're not a team admin for the currently selected team, or you don't have permissions to add and edit dashboards. Either [switch the context to your team](../../project/navigation/go-to-project-repo.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json), or request you be added as a [team admin](../../organizations/settings/add-team-administrator.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/breadcrumb/dashboards/toc.json). 
 
 With the dashboard selected, you can add [widgets and charts to the dashboard](add-widget-to-dashboard.md). Or, you can [add charts to a team dashboard from the Work, Build, or Test pages](add-charts-to-dashboard.md).
 

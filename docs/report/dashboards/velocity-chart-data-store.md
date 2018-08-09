@@ -29,7 +29,7 @@ Use this topic to learn:
 > * How to view and work with the Velocity chart (work tracking datastore)  
 > * Required and recommended team activities to support velocity tracking   
 
-Once your team has completed a few sprints, they can use their velocity to [forecast](../../work/scrum/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
+Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
 
 ::: moniker range="vsts"  
 > [!NOTE]   
@@ -42,7 +42,7 @@ Velocity provides a useful metric for gaining insight into how much work your te
 
 Velocity will vary depending on team capacity, sprint over sprint. However, over time, the velocity should indicate a reliable average that can be used to forecast the full backlog.  
 
-[!INCLUDE [temp](../../work/_shared/image-differences-with-wits.md)]  
+[!INCLUDE [temp](../../boards/_shared/image-differences-with-wits.md)]  
 
 From your web browser, open your product backlog.  
 
@@ -54,12 +54,12 @@ From your web browser, open your product backlog.
 
 0. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
-	![Open Work, Backlogs, for a team](../../work/scrum/_img/assign-items-sprint/open-work-backlogs-agile.png)
+	![Open Work, Backlogs, for a team](../../boards/sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
 
 	To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all sprints** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../../work/scrum/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
+	> ![Choose another team](../../boards/sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
 	> Choose the ![](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
@@ -67,7 +67,7 @@ From your web browser, open your product backlog.
 0. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../../work/scrum/_img/assign-items-sprint/select-product-backlog-agile.png) 
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../../boards/sprints/_img/assign-items-sprint/select-product-backlog-agile.png) 
 
 0. Open the velocity chart.  
 
@@ -86,7 +86,7 @@ From your web browser, open your product backlog.
 	![Web portal, Velocity chart showing seven sprints of in progress and completed work](_img/team-velocity-chart-web-7-iterations.png)  
 
 	> [!NOTE]  
-	> Work items based on the [Scrum process](../../work/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/work-items/workflow-and-state-categories.md).
+	> Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
 
 
 ::: moniker-end  
@@ -113,7 +113,7 @@ From your web browser, open your product backlog.
 	![Web portal, Velocity chart showing seven sprints of in progress and completed work](_img/team-velocity-chart-web-7-iterations.png)  
 
 	> [!NOTE]  
-	> Work items based on the [Scrum process](../../work/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../work/work-items/workflow-and-state-categories.md).
+	> Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
 
 ---
 	
@@ -124,14 +124,14 @@ For your team to gain the greatest utility from the velocity chart, follow these
 **Required:** 
 *	[Define sprints for the project](../../organizations/settings/set-iteration-paths-sprints.md) - Sprints should be of the same duration. 
 *	[Select sprints for each team](../../organizations/settings/set-team-defaults.md#activate)
-*	[Define and estimate backlog items](../../work/backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
+*	[Define and estimate backlog items](../../boards/backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
 *	Update the status of backlog items once work starts and when completed. Only backlog items whose State maps to a metastate of In Progress or Done will show up on the velocity chart or velocity widget. 
 
 **Recommended:**  
 *	Define and size backlog items to [minimize variability](velocity-guidance.md).  
 *	Determine how your team wants to [treat bugs](../../organizations/settings/show-bugs-on-backlog.md). If your team chooses to treat bugs like requirements, bugs will show up on the backlog and be counted within the Velocity chart and forecasting. 
 *	[Set your team's area path](../../organizations/settings/set-area-paths.md). The forecast tool will forecast those items based on your team's default settings. These settings can specify to include items in area paths under the team's default or exclude them.     
-*	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list-only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../../work/backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
+*	Don't  create a hierarchy of backlog items and bugs. The Kanban board, sprint backlog, and task board only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. <br/>Instead of nesting requirements, bugs, and tasks, we recommend that you maintain a flat list-only creating parent-child links one level deep between items. Use [Features to group requirements or user stories](../../boards/backlogs/organize-backlog.md). You can quickly map stories to features, which creates parent-child links in the background.  
 *	At the end of the sprint, update the status of those backlog items that the team has fully completed. Incomplete items should be moved back to the product backlog and considered in a future sprint planning meeting.   
 
 ## Add other teams

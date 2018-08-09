@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
 
-Similar to work item types, you can define and modify custom link types. However, you can't make any changes to system-defined link types. Before you add a new link type to your project collection, review the link types available for your use. See [Manage dependencies, link work items](../../work/track/link-work-items-support-traceability.md).  
+Similar to work item types, you can define and modify custom link types. However, you can't make any changes to system-defined link types. Before you add a new link type to your project collection, review the link types available for your use. See [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md).  
   
 You manage the link types defined for a project collection by using the following **witadmin** commands:  
 -   **deactivatelinktype**:  Deactivates the specified link type. Users will no longer be able to create links of this type. Existing links of this type will continue to function correctly.    
@@ -115,6 +115,6 @@ witadmin importlinktype /collection:http://AdventureWorksServer:8080/tfs/Default
 ## Related articles 
 - [Customize your work tracking experience](../customize-work.md)    
 - [LinksControlOptions](../xml/linkscontroloptions-xml-elements.md)
-- [Link controls, restrictions, and fields](../../work/track/linking-attachments.md)   
-- [Manage dependencies, link work items](../../work/track/link-work-items-support-traceability.md)   
+- [Link controls, restrictions, and fields](../../boards/queries/linking-attachments.md)   
+- [Manage dependencies, link work items](../../boards/queries/link-work-items-support-traceability.md)   
 - [witAdmin: Customize and manage objects for tracking work](witadmin-customize-and-manage-objects-for-tracking-work.md)

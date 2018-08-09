@@ -927,7 +927,7 @@
     },
     {
       "source_path": "docs/work/agile-project-management.md",
-      "redirect_url": "/vsts/work/backlogs/overview",
+      "redirect_url": "/vsts/boards/backlogs/overview",
       "redirect_document_id": false
     },
     {
@@ -1127,7 +1127,7 @@
     },
     {
       "source_path": "docs/work/track/follow-work-items.md",
-      "redirect_url": "/vsts/work/work-items/follow-work-items",
+      "redirect_url": "/vsts/boards/work-items/follow-work-items",
       "redirect_document_id": false
     },
     {
@@ -1212,17 +1212,17 @@
     },
     {
       "source_path": "docs/work/create-your-backlog-vs.md",
-      "redirect_url": "/vsts/work/backlogs/create-your-backlog",
+      "redirect_url": "/vsts/boards/backlogs/create-your-backlog",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/backlogs-vs-boards.md",
-      "redirect_url": "/vsts/work/backlogs/backlogs-boards-plans",
+      "redirect_url": "/vsts/boards/backlogs/backlogs-boards-plans",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/backlogs-boards-plans.md",
-      "redirect_url": "/vsts/work/backlogs/backlogs-boards-plans",
+      "redirect_url": "/vsts/boards/backlogs/backlogs-boards-plans",
       "redirect_document_id": false
     },
     {
@@ -1242,12 +1242,12 @@
     },
     {
       "source_path": "docs/work/guidance/work-item-field-index.md",
-      "redirect_url": "/vsts/work/work-items/guidance/work-item-field",
+      "redirect_url": "/vsts/boards/work-items/guidance/work-item-field",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/work-from-the-kanban-board-vs.md",
-      "redirect_url": "/vsts/work/kanban/kanban-basics",
+      "redirect_url": "/vsts/boards/boards/kanban-basics",
       "redirect_document_id": false
     },
     {
@@ -1262,22 +1262,22 @@
     },
     {
       "source_path": "docs/work/scale/culture.md",
-      "redirect_url": "/vsts/work/scale/agile-culture",
+      "redirect_url": "/vsts/boards/scale/agile-culture",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/work-in-sprints-vs.md",
-      "redirect_url": "/vsts/work/scrum/assign-work-sprint",
+      "redirect_url": "/vsts/boards/sprints/assign-work-sprint",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/track/query-on-boolean-field.md",
-      "redirect_url": "/vsts/work/track/example-queries",
+      "redirect_url": "/vsts/boards/queries/example-queries",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/queries.md",
-      "redirect_url": "/vsts/work/track/using-queries",
+      "redirect_url": "/vsts/boards/queries/using-queries",
       "redirect_document_id": false
     },
     {
@@ -2512,12 +2512,12 @@
     },
     {
       "source_path": "docs/work/plan.md",
-      "redirect_url": "/vsts/work/backlogs/overview",
+      "redirect_url": "/vsts/boards/backlogs/overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/productivity/work-item-template.md",
-      "redirect_url": "/vsts/work/backlogs/work-item-template",
+      "redirect_url": "/vsts/boards/backlogs/work-item-template",
       "redirect_document_id": false
     },
     {
@@ -3312,22 +3312,22 @@
     },
     {
       "source_path": "docs/work/concepts/agile-glossary.md",
-      "redirect_url": "/vsts/work/work-items/agile-glossary",
+      "redirect_url": "/vsts/boards/work-items/agile-glossary",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/concepts/workflow-and-state-categories.md",
-      "redirect_url": "/vsts/work/work-items/workflow-and-state-categories",
+      "redirect_url": "/vsts/boards/work-items/workflow-and-state-categories",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/concepts/work-item-form-controls.md",
-      "redirect_url": "/vsts/work/work-items/work-item-form-controls",
+      "redirect_url": "/vsts/boards/work-items/work-item-form-controls",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/troubleshoot/resolve-backlog-reorder-issues.md",
-      "redirect_url": "/vsts/work/backlogs/resolve-backlog-reorder-issues",
+      "redirect_url": "/vsts/boards/backlogs/resolve-backlog-reorder-issues",
       "redirect_document_id": false
     },
     {
@@ -3342,62 +3342,62 @@
     },
     {
       "source_path": "docs/work/office/add-share-storyboard-shapes.md",
-      "redirect_url": "/vsts/work/backlogs/office/add-share-storyboard-shapes",
+      "redirect_url": "/vsts/boards/backlogs/office/add-share-storyboard-shapes",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/bulk-add-modify-work-items-excel.md",
-      "redirect_url": "/vsts/work/backlogs/office/bulk-add-modify-work-items-excel",
+      "redirect_url": "/vsts/boards/backlogs/office/bulk-add-modify-work-items-excel",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/create-your-backlog-tasks-using-project.md",
-      "redirect_url": "/vsts/work/backlogs/office/create-your-backlog-tasks-using-project",
+      "redirect_url": "/vsts/boards/backlogs/office/create-your-backlog-tasks-using-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/resolve-excel-data-conflicts-publish-refresh.md",
-      "redirect_url": "/vsts/work/backlogs/office/resolve-excel-data-conflicts-publish-refresh",
+      "redirect_url": "/vsts/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/resolve-excel-data-validation-errors.md",
-      "redirect_url": "/vsts/work/backlogs/office/resolve-excel-data-validation-errors",
+      "redirect_url": "/vsts/boards/backlogs/office/resolve-excel-data-validation-errors",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/resolve-excel-invalid-links-tree-list.md",
-      "redirect_url": "/vsts/work/backlogs/office/resolve-excel-invalid-links-tree-list",
+      "redirect_url": "/vsts/boards/backlogs/office/resolve-excel-invalid-links-tree-list",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/resolve-problems-excel-workbooks-sharepoint.md",
-      "redirect_url": "/vsts/work/backlogs/office/resolve-problems-excel-workbooks-sharepoint",
+      "redirect_url": "/vsts/boards/backlogs/office/resolve-problems-excel-workbooks-sharepoint",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/rollup-estimated-and-actual-work-using-project.md",
-      "redirect_url": "/vsts/work/backlogs/office/rollup-estimated-and-actual-work-using-project",
+      "redirect_url": "/vsts/boards/backlogs/office/rollup-estimated-and-actual-work-using-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/schedule-projects-using-microsoft-project.md",
-      "redirect_url": "/vsts/work/backlogs/office/schedule-projects-using-microsoft-project",
+      "redirect_url": "/vsts/boards/backlogs/office/schedule-projects-using-microsoft-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/storyboard-your-ideas-using-powerpoint.md",
-      "redirect_url": "/vsts/work/backlogs/office/storyboard-your-ideas-using-powerpoint",
+      "redirect_url": "/vsts/boards/backlogs/office/storyboard-your-ideas-using-powerpoint",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/tfs-office-integration-issues.md",
-      "redirect_url": "/vsts/work/backlogs/office/tfs-office-integration-issues",
+      "redirect_url": "/vsts/boards/backlogs/office/tfs-office-integration-issues",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/track-work-vsts-tfs.md",
-      "redirect_url": "/vsts/work/backlogs/office/track-work-vsts-tfs",
+      "redirect_url": "/vsts/boards/backlogs/office/track-work-vsts-tfs",
       "redirect_document_id": false
     },
     {
@@ -4347,12 +4347,12 @@
     },
     {
       "source_path": "docs/work/how-to/email-work-items.md",
-      "redirect_url": "/vsts/work/work-items/email-work-items",
+      "redirect_url": "/vsts/boards/work-items/email-work-items",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/how-to/set-column-options.md",
-      "redirect_url": "/vsts/work/backlogs/set-column-options",
+      "redirect_url": "/vsts/boards/backlogs/set-column-options",
       "redirect_document_id": false
     },
     {
@@ -4387,7 +4387,7 @@
     },
     {
       "source_path": "docs/reference/wiql-syntax.md",
-      "redirect_url": "/vsts/work/track/wiql-syntax",
+      "redirect_url": "/vsts/boards/queries/wiql-syntax",
       "redirect_document_id": false
     },
     {
@@ -5072,162 +5072,162 @@
     },
     {
       "source_path": "docs/work/guidance/agile-process-workflow.md",
-      "redirect_url": "/vsts/work/work-items/guidance/agile-process-workflow",
+      "redirect_url": "/vsts/boards/work-items/guidance/agile-process-workflow",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/agile-process.md",
-      "redirect_url": "/vsts/work/work-items/guidance/agile-process",
+      "redirect_url": "/vsts/boards/work-items/guidance/agile-process",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/changes-to-process-templates.md",
-      "redirect_url": "/vsts/work/work-items/guidance/changes-to-process-templates",
+      "redirect_url": "/vsts/boards/work-items/guidance/changes-to-process-templates",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/choose-process.md",
-      "redirect_url": "/vsts/work/work-items/guidance/choose-process",
+      "redirect_url": "/vsts/boards/work-items/guidance/choose-process",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi-process-workflow.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi-process-workflow",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi-process-workflow",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi-process.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi-process",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi-process",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/guidance-code-review-feedback-field-reference.md",
-      "redirect_url": "/vsts/work/work-items/guidance/guidance-code-review-feedback-field-reference",
+      "redirect_url": "/vsts/boards/work-items/guidance/guidance-code-review-feedback-field-reference",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/manage-process-templates.md",
-      "redirect_url": "/vsts/work/work-items/guidance/manage-process-templates",
+      "redirect_url": "/vsts/boards/work-items/guidance/manage-process-templates",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/scrum-process-workflow.md",
-      "redirect_url": "/vsts/work/work-items/guidance/scrum-process-workflow",
+      "redirect_url": "/vsts/boards/work-items/guidance/scrum-process-workflow",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/scrum-process.md",
-      "redirect_url": "/vsts/work/work-items/guidance/scrum-process",
+      "redirect_url": "/vsts/boards/work-items/guidance/scrum-process",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/work-item-field.md",
-      "redirect_url": "/vsts/work/work-items/guidance/work-item-field",
+      "redirect_url": "/vsts/boards/work-items/guidance/work-item-field",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/arrange-requirements-into-a-product-plan.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-background-to-cmmi.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-background-to-cmmi",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-background-to-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-build-product.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-build-product",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-build-product",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-change-request-field-reference-cmmi.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-create-solution-architecture.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-create-solution-archtecture",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-create-solution-archtecture",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-develop-requirements.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-develop-requirements",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-develop-requirements",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-engineering.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-engineering",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-engineering",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-implement-development-tasks.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-implement-development-tasks",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-iteration-activities.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-iteration-activities",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-iteration-activities",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-manage-change.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-manage-change",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-manage-change",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-manage-issues-cmmi.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-manage-risks.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-manage-risks",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-manage-risks",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-plan-a-project-cmmi.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-plan-an-iteration-cmmi.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-project-activities.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-project-activities",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-project-activities",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-project-inception.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-project-inception",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-project-inception",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-project-management.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-project-management",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-project-management",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-requirements-field-reference-cmmi.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/guidance/cmmi/track-bugs.md",
-      "redirect_url": "/vsts/work/work-items/guidance/cmmi/track-bugs",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/track-bugs",
       "redirect_document_id": false
     },
     {
@@ -5327,7 +5327,7 @@
     },
     {
       "source_path": "docs/work/overview.md",
-      "redirect_url": "/vsts/work/backlogs/overview",
+      "redirect_url": "/vsts/boards/backlogs/overview",
       "redirect_document_id": false
     },
     {
@@ -5612,7 +5612,7 @@
     },
     {
       "source_path": "docs/user-guide/kanban-agile.md",
-      "redirect_url": "/vsts/work/backlogs/overview",
+      "redirect_url": "/vsts/boards/backlogs/overview",
       "redirect_document_id": false
     },
     {
@@ -7317,12 +7317,12 @@
     },
     {
       "source_path": "docs/collaborate/wiql-syntax.md",
-      "redirect_url": "/vsts/work/track/wiql-syntax",
+      "redirect_url": "/vsts/boards/queries/wiql-syntax",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/collaborate/follow-work-items.md",
-      "redirect_url": "/vsts/work/work-items/follow-work-items",
+      "redirect_url": "/vsts/boards/work-items/follow-work-items",
       "redirect_document_id": false
     },
     {
@@ -7887,12 +7887,12 @@
     },
     {
       "source_path": "docs/work/scrum/sprint-planning.md",
-      "redirect_url": "/vsts/work/scrum/assign-work-sprint",
+      "redirect_url": "/vsts/boards/sprints/assign-work-sprint",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/scale/capacity-planning.md",
-      "redirect_url": "/vsts/work/scrum/set-capacity",
+      "redirect_url": "/vsts/boards/sprints/set-capacity",
       "redirect_document_id": false
     },
     {
@@ -9022,7 +9022,7 @@
      },
      {
       "source_path": "docs/work/customize/workflow-and-state-categories.md",
-      "redirect_url": "/vsts/work/work-items/workflow-and-state-categories",
+      "redirect_url": "/vsts/boards/work-items/workflow-and-state-categories",
       "redirect_document_id": false
      },
      {
@@ -10018,6 +10018,716 @@
     {
       "source_path": "docs/work/tfs-ps-sync/xml-elements-added-to-wit-definition.md",
       "redirect_url": "/vsts/reference/tfs-ps-sync/xml-elements-added-to-wit-definition",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/add-link.md",
+      "redirect_url": "/vsts/boards/backlogs/add-link",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/add-work-items-tfs.md",
+      "redirect_url": "/vsts/boards/backlogs/add-work-items-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/add-work-items.md",
+      "redirect_url": "/vsts/boards/backlogs/add-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/backlogs-boards-plans.md",
+      "redirect_url": "/vsts/boards/backlogs/backlogs-boards-plans",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/backlogs-keyboard-shortcuts.md",
+      "redirect_url": "/vsts/boards/backlogs/backlogs-keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/backlogs-overview.md",
+      "redirect_url": "/vsts/boards/backlogs/backlogs-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/best-practices-product-backlog.md",
+      "redirect_url": "/vsts/boards/backlogs/best-practices-product-backlog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/bulk-modify-work-items.md",
+      "redirect_url": "/vsts/boards/backlogs/bulk-modify-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/connect-work-items-to-git-dev-ops.md",
+      "redirect_url": "/vsts/boards/backlogs/connect-work-items-to-git-dev-ops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/copy-clone-work-items.md",
+      "redirect_url": "/vsts/boards/backlogs/copy-clone-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/copy-list.md",
+      "redirect_url": "/vsts/boards/backlogs/copy-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/create-your-backlog.md",
+      "redirect_url": "/vsts/boards/backlogs/create-your-backlog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/define-features-epics.md",
+      "redirect_url": "/vsts/boards/backlogs/define-features-epics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/filter-backlogs.md",
+      "redirect_url": "/vsts/boards/backlogs/filter-backlogs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/index.md",
+      "redirect_url": "/vsts/boards/backlogs/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/manage-bugs.md",
+      "redirect_url": "/vsts/boards/backlogs/manage-bugs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/manage-issues-impediments.md",
+      "redirect_url": "/vsts/boards/backlogs/manage-issues-impediments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/organize-backlog.md",
+      "redirect_url": "/vsts/boards/backlogs/organize-backlog",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/overview.md",
+      "redirect_url": "/vsts/boards/backlogs/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/product-backlog-controls.md",
+      "redirect_url": "/vsts/boards/backlogs/product-backlog-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/remove-delete-work-items.md",
+      "redirect_url": "/vsts/boards/backlogs/remove-delete-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/resolve-backlog-reorder-issues.md",
+      "redirect_url": "/vsts/boards/backlogs/resolve-backlog-reorder-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/set-column-options.md",
+      "redirect_url": "/vsts/boards/backlogs/set-column-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/stack-rank-backlog-position.md",
+      "redirect_url": "/vsts/boards/backlogs/stack-rank-backlog-position",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/work-item-template.md",
+      "redirect_url": "/vsts/boards/backlogs/work-item-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/work-multi-team-ownership-backlogs.md",
+      "redirect_url": "/vsts/boards/backlogs/work-multi-team-ownership-backlogs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/add-share-storyboard-shapes.md",
+      "redirect_url": "/vsts/boards/backlogs/office/add-share-storyboard-shapes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/bulk-add-modify-work-items-excel.md",
+      "redirect_url": "/vsts/boards/backlogs/office/bulk-add-modify-work-items-excel",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/create-your-backlog-tasks-using-project.md",
+      "redirect_url": "/vsts/boards/backlogs/office/create-your-backlog-tasks-using-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/resolve-excel-data-conflicts-publish-refresh.md",
+      "redirect_url": "/vsts/boards/backlogs/office/resolve-excel-data-conflicts-publish-refresh",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/resolve-excel-data-validation-errors.md",
+      "redirect_url": "/vsts/boards/backlogs/office/resolve-excel-data-validation-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/resolve-excel-invalid-links-tree-list.md",
+      "redirect_url": "/vsts/boards/backlogs/office/resolve-excel-invalid-links-tree-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/resolve-problems-excel-workbooks-sharepoint.md",
+      "redirect_url": "/vsts/boards/backlogs/office/resolve-problems-excel-workbooks-sharepoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/rollup-estimated-and-actual-work-using-project.md",
+      "redirect_url": "/vsts/boards/backlogs/office/rollup-estimated-and-actual-work-using-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/schedule-projects-using-microsoft-project.md",
+      "redirect_url": "/vsts/boards/backlogs/office/schedule-projects-using-microsoft-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/storyboard-your-ideas-using-powerpoint.md",
+      "redirect_url": "/vsts/boards/backlogs/office/storyboard-your-ideas-using-powerpoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/tfs-office-integration-issues.md",
+      "redirect_url": "/vsts/boards/backlogs/office/tfs-office-integration-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/backlogs/office/track-work-vsts-tfs.md",
+      "redirect_url": "/vsts/boards/backlogs/office/track-work-vsts-tfs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/add-columns.md",
+      "redirect_url": "/vsts/boards/boards/add-columns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/add-run-update-tests.md",
+      "redirect_url": "/vsts/boards/boards/add-run-update-tests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/add-task-checklists.md",
+      "redirect_url": "/vsts/boards/boards/add-task-checklists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/best-practices-kanban.md",
+      "redirect_url": "/vsts/boards/boards/best-practices-kanban",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/definition-of-done.md",
+      "redirect_url": "/vsts/boards/boards/definition-of-done",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/expedite-work.md",
+      "redirect_url": "/vsts/boards/boards/expedite-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/filter-kanban-board.md",
+      "redirect_url": "/vsts/boards/boards/filter-kanban-board",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/index.md",
+      "redirect_url": "/vsts/boards/boards/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/kanban-basics.md",
+      "redirect_url": "/vsts/boards/boards/kanban-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/kanban-board-controls.md",
+      "redirect_url": "/vsts/boards/boards/kanban-board-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/kanban-board-keyboard-shortcuts.md",
+      "redirect_url": "/vsts/boards/boards/kanban-board-keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/kanban-epics-features-stories.md",
+      "redirect_url": "/vsts/boards/boards/kanban-epics-features-stories",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/kanban-overview.md",
+      "redirect_url": "/vsts/boards/boards/kanban-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/kanban-quickstart.md",
+      "redirect_url": "/vsts/boards/boards/kanban-quickstart",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/split-columns.md",
+      "redirect_url": "/vsts/boards/boards/split-columns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/kanban/wip-limits.md",
+      "redirect_url": "/vsts/boards/boards/wip-limits",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/agile-culture.md",
+      "redirect_url": "/vsts/boards/plans/agile-culture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/delivery-plan-keyboard-shortcuts.md",
+      "redirect_url": "/vsts/boards/plans/delivery-plan-keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/index.md",
+      "redirect_url": "/vsts/boards/plans/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/portfolio-management.md",
+      "redirect_url": "/vsts/boards/plans/portfolio-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/practices-that-scale.md",
+      "redirect_url": "/vsts/boards/plans/practices-that-scale",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/review-team-plans.md",
+      "redirect_url": "/vsts/boards/plans/review-team-plans",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/scaled-agile-framework.md",
+      "redirect_url": "/vsts/boards/plans/scaled-agile-framework",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scale/visibility-across-teams.md",
+      "redirect_url": "/vsts/boards/plans/visibility-across-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/add-tags-to-work-items.md",
+      "redirect_url": "/vsts/boards/queries/add-tags-to-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/adhoc-vs-managed-queries.md",
+      "redirect_url": "/vsts/boards/queries/adhoc-vs-managed-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/alerts-and-notifications.md",
+      "redirect_url": "/vsts/boards/queries/alerts-and-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/build-test-integration.md",
+      "redirect_url": "/vsts/boards/queries/build-test-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/define-query-hyperlink.md",
+      "redirect_url": "/vsts/boards/queries/define-query-hyperlink",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/example-queries.md",
+      "redirect_url": "/vsts/boards/queries/example-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/history-and-auditing.md",
+      "redirect_url": "/vsts/boards/queries/history-and-auditing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/index.md",
+      "redirect_url": "/vsts/boards/queries/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/link-work-items-support-traceability.md",
+      "redirect_url": "/vsts/boards/queries/link-work-items-support-traceability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/linking-attachments.md",
+      "redirect_url": "/vsts/boards/queries/linking-attachments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/my-shared-queries.md",
+      "redirect_url": "/vsts/boards/queries/my-shared-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/organize-queries.md",
+      "redirect_url": "/vsts/boards/queries/organize-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/planning-ranking-priorities.md",
+      "redirect_url": "/vsts/boards/queries/planning-ranking-priorities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/queries-keyboard-shortcuts.md",
+      "redirect_url": "/vsts/boards/queries/queries-keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/query-by-area-iteration-path.md",
+      "redirect_url": "/vsts/boards/queries/query-by-area-iteration-path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/query-by-date-or-current-iteration.md",
+      "redirect_url": "/vsts/boards/queries/query-by-date-or-current-iteration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/query-by-workflow-changes.md",
+      "redirect_url": "/vsts/boards/queries/query-by-workflow-changes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/query-numeric.md",
+      "redirect_url": "/vsts/boards/queries/query-numeric",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/query-operators-variables.md",
+      "redirect_url": "/vsts/boards/queries/query-operators-variables",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/search-box-queries.md",
+      "redirect_url": "/vsts/boards/queries/search-box-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/set-query-permissions.md",
+      "redirect_url": "/vsts/boards/queries/set-query-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/share-plans.md",
+      "redirect_url": "/vsts/boards/queries/share-plans",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/titles-ids-descriptions.md",
+      "redirect_url": "/vsts/boards/queries/titles-ids-descriptions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/triage-work-items.md",
+      "redirect_url": "/vsts/boards/queries/triage-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/using-queries.md",
+      "redirect_url": "/vsts/boards/queries/using-queries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/view-run-query.md",
+      "redirect_url": "/vsts/boards/queries/view-run-query",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/track/wiql-syntax.md",
+      "redirect_url": "/vsts/boards/queries/wiql-syntax",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/add-tasks.md",
+      "redirect_url": "/vsts/boards/sprints/add-tasks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/adjust-work.md",
+      "redirect_url": "/vsts/boards/sprints/adjust-work",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/assign-work-sprint.md",
+      "redirect_url": "/vsts/boards/sprints/assign-work-sprint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/best-practices-scrum.md",
+      "redirect_url": "/vsts/boards/sprints/best-practices-scrum",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/define-sprints.md",
+      "redirect_url": "/vsts/boards/sprints/define-sprints",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/forecast.md",
+      "redirect_url": "/vsts/boards/sprints/forecast",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/index.md",
+      "redirect_url": "/vsts/boards/sprints/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/scrum-overview.md",
+      "redirect_url": "/vsts/boards/sprints/scrum-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/scrum-sprint-planning-tools.md",
+      "redirect_url": "/vsts/boards/sprints/scrum-sprint-planning-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/share-plan.md",
+      "redirect_url": "/vsts/boards/sprints/share-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/sprint-burndown.md",
+      "redirect_url": "/vsts/boards/sprints/sprint-burndown",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/task-board.md",
+      "redirect_url": "/vsts/boards/sprints/task-board",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/scrum/set-capacity.md",
+      "redirect_url": "/vsts/boards/sprints/set-capacity",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/about-work-items.md",
+      "redirect_url": "/vsts/boards/work-items/about-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/agile-glossary.md",
+      "redirect_url": "/vsts/boards/work-items/agile-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/email-work-items.md",
+      "redirect_url": "/vsts/boards/work-items/email-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/index.md",
+      "redirect_url": "/vsts/boards/work-items/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/view-add-work-items.md",
+      "redirect_url": "/vsts/boards/work-items/view-add-work-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/work-item-form-controls.md",
+      "redirect_url": "/vsts/boards/work-items/work-item-form-controls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/work-item-form-keyboard-shortcuts.md",
+      "redirect_url": "/vsts/boards/work-items/work-item-form-keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/work-item-url-hyperlink.md",
+      "redirect_url": "/vsts/boards/work-items/work-item-url-hyperlink",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/agile-process-workflow.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/agile-process-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/agile-process.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/agile-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/changes-to-process-templates.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/changes-to-process-templates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/choose-process.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/choose-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi-process-workflow.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi-process-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi-process.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/guidance-code-review-feedback-field-reference.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/guidance-code-review-feedback-field-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/manage-process-templates.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/manage-process-templates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/scrum-process-workflow.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/scrum-process-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/scrum-process.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/scrum-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/work-item-field.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/work-item-field",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/arrange-requirements-into-a-product-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-background-to-cmmi.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-background-to-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-build-product.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-build-product",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-create-solution-architecture.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-create-solution-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-develop-requirements.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-develop-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-engineering.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-engineering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-implement-development-tasks.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-implement-development-tasks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-iteration-activities.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-iteration-activities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-manage-change.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-manage-change",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-manage-issues-cmmi.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-manage-issues-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-manage-risks.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-manage-risks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-plan-a-project-cmmi.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-plan-a-project-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-project-activities.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-project-activities",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-project-inception.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-project-inception",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-project-management.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-project-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/work/work-items/guidance/cmmi/track-bugs.md",
+      "redirect_url": "/vsts/boards/work-items/guidance/cmmi/track-bugs",
       "redirect_document_id": false
     }
   ]

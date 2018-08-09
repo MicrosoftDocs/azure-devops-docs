@@ -45,7 +45,7 @@ By using a PivotChart report in Excel, you can create a trend report that displa
   
  ![Code Churn Report](_img/procguid_codechurn.png "ProcGuid_CodeChurn")  
   
- The process templates for Microsoft Solutions Framework (MSF) [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) provide the Code Churn report in Excel. For more information, see [Code Churn](../excel/code-churn-excel-report.md).  
+ The process templates for Microsoft Solutions Framework (MSF) [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) provide the Code Churn report in Excel. For more information, see [Code Churn](../excel/code-churn-excel-report.md).  
   
 ### Select and filter pivot fields  
  ![Pivot Fields for Code Churn Report](_img/alm_rpt_pivot_codechurn.png "ALM_RPT_Pivot_CodeChurn")  

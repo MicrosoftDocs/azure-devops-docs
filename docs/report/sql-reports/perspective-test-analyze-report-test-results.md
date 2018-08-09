@@ -48,7 +48,7 @@ By using the Test perspective, you can create reports that answer the following 
   
  ![User Story Test Status Excel Report](_img/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
   
- The [Agile](../../work/work-items/guidance/agile-process.md) and [CMMI](../../work/work-items/guidance/cmmi-process.md) process templates include the [User Story Test Status](../excel/user-story-test-status-excel-report-agile.md) and [Requirement Test Status](../excel/requirement-test-status-excel-report-cmmi.md) in Excel, respectively.  
+ The [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process templates include the [User Story Test Status](../excel/user-story-test-status-excel-report-agile.md) and [Requirement Test Status](../excel/requirement-test-status-excel-report-cmmi.md) in Excel, respectively.  
   
 ### Specify and filter pivot fields  
 
@@ -117,7 +117,7 @@ The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspo
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
-|Test Case|Area Hierarchy and more|The Work Item and Test Case dimensions contain all attributes that relate to work items, such as State, Work Item Type, and Work Item ID. For information about the structure of the Test Case dimension, see [Test cases and work items](perspective-test-analyze-report-work.md).<br /><br /> For a description of each attribute, see [Work item field index](../../work/work-items/guidance/work-item-field.md).<br /><br /> For information about how to work with date, area, and iteration hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).<br /><br /> This measure group contains additional attributes when custom fields in the definition for a type of work item specify `Dimension` as the reportable attribute. For more information about how to use the optional `reportable` attribute and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).|  
+|Test Case|Area Hierarchy and more|The Work Item and Test Case dimensions contain all attributes that relate to work items, such as State, Work Item Type, and Work Item ID. For information about the structure of the Test Case dimension, see [Test cases and work items](perspective-test-analyze-report-work.md).<br /><br /> For a description of each attribute, see [Work item field index](../../boards/work-items/guidance/work-item-field.md).<br /><br /> For information about how to work with date, area, and iteration hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).<br /><br /> This measure group contains additional attributes when custom fields in the definition for a type of work item specify `Dimension` as the reportable attribute. For more information about how to use the optional `reportable` attribute and its values, see [Add or modify work item fields to support reporting](../../reference/xml/add-or-modify-work-item-fields-to-support-reporting.md).|  
 |Test Configuration|Configuration ID and Configuration Name|The number that the system assigns and the name of a test configuration.|  
 |Test Plan|Area Hierarchy, Area Path, Iteration Hierarchy, and Iteration Path|The product area and milestone that is assigned to the test plan.<br /><br /> For more information, see [Test cases and work items](perspective-test-analyze-report-work.md).|  
 ||End Date Hierarchy By Month or By Week<br /><br /> Start Date Hierarchy By Month or By Week|Optional values that a test plan owner can assign to the test plan. They represent the date on which the test plan should start and the date on which the test plan should finish.<br /><br /> For more information about how to work with date hierarchies, see [Shared dimensions](shared-dimensions-in-the-analysis-services-cube.md).|  
@@ -160,7 +160,7 @@ The following table describes the attributes that are defined for the Test Run d
 ###  Work item and work item linked dimensions  
 You can link test cases to other work items such as user stories, requirements, and bugs. By using the Work Item Linked dimension, you can create a report that provides test results that relate to the linked work items. The progress report for testing user stories, described earlier in this topic, provides an example of using the linked work item.  
   
- For a description of each attribute, see [Index of work item fields](../../work/work-items/guidance/work-item-field.md).  
+ For a description of each attribute, see [Index of work item fields](../../boards/work-items/guidance/work-item-field.md).  
   
 ##  <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  

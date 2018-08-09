@@ -86,7 +86,7 @@ To view work items assigned to you across projects, choose the ![](../../_img/ic
 > [!div class="mx-imgBorder"]  
 > ![View work assigned to you across projects](_img/projects-page/view-work-across-projects.png) 
 
-To view work items assigned to you for a specific project, [open **Work>Work Items>Assigned to Me**](../../work/work-items/view-add-work-items.md). 
+To view work items assigned to you for a specific project, [open **Work>Work Items>Assigned to Me**](../../boards/work-items/view-add-work-items.md). 
 
 
 ::: moniker-end  
@@ -123,7 +123,7 @@ The **Assigned to me** page lists all work items assigned to you in the order th
 
 ### Work you're following
 
-Choose **Following** to open the page that lists all the work items [you've marked to follow](../../work/work-items/follow-work-items.md). To stop following an item and remove it from your list, choose the ![followed icon](../../_img/icons/icon-followed.png) following icon.
+Choose **Following** to open the page that lists all the work items [you've marked to follow](../../boards/work-items/follow-work-items.md). To stop following an item and remove it from your list, choose the ![followed icon](../../_img/icons/icon-followed.png) following icon.
 
 ::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  

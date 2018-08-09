@@ -68,10 +68,10 @@ Team Explorer, a plug-in to all Visual Studio versions, provides connects Visual
 
 When you install any edition of Visual Studio or [Team Foundation Server Standalone Office Integration 2015 (free)](https://go.microsoft.com/fwlink/?LinkId=691127), the Team Foundation plug-in installed to integrate work item tracking with select Office clients. The Team Foundation plug-in installs to your existing Office client. The plug-in supports Office 2007, Office 2010, or Office 2013 versions.
 
-- **[Excel](../work/backlogs/office/bulk-add-modify-work-items-excel.md)**: Use Excel to add and bulk modify work items.  
-- **[Project](../work/backlogs/office/create-your-backlog-tasks-using-project.md)**: Using Project you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
+- **[Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)**: Use Excel to add and bulk modify work items.  
+- **[Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)**: Using Project you can plan projects, schedule tasks, assign resources, and track changes. You have access to features that TFS doesn't support, such as a project calendar, Gantt charts, and resource views.
 - **[Project Professional](../reference/tfs-ps-sync/synchronize-tfs-project-server.md)**: With Project Professional and the Team Foundation Server Extensions for Project Server you can manage projects that synchronize data that exists in both TFS and Project Server. Project managers and software development teams can use the tools that they prefer, work at the level of precision that supports their needs, and easily share information. 
-- **[PowerPoint Storyboarding](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md)**: Lets you illustrate user stories and requirements using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
+- **[PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md)**: Lets you illustrate user stories and requirements using PowerPoint. The Team Foundation plug-in installs to your existing PowerPoint client.
 
 >[!IMPORTANT]
 >Support for integrating TFS with Project Server is deprecated for TFS 2017. However, synchronization support is provided by a third party. See  [Synchronize TFS with Project Server](../reference/tfs-ps-sync/sync-ps-tfs.md) for details. 

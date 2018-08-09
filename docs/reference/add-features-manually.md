@@ -142,7 +142,7 @@ If you're upgrading a project that was based on version 5.0 of the Microsoft Sol
 <li>Add work item colors for those WITs that you include in the Requirement Category, Task Category, and Bug Category </li>
 </ul>
 </li>
-<li>To verify, [start creating your backlog](../work/backlogs/create-your-backlog.md).  </li>
+<li>To verify, [start creating your backlog](../boards/backlogs/create-your-backlog.md).  </li>
 </ol>
 </td>
 </tr>
@@ -153,7 +153,7 @@ Storyboarding
 <td>
 <ol>
 <li>[Edit WITs](#edit-wit): Add  ```StoryboardsControl``` to the ```FORM``` section of those WITs you include in the Requirement Category; for example, add it to the User Story (Agile), Requirement (CMMI), or Product backlog item (Scrum)  </li>
-<li>To verify, [open Storyboarding from the WIT you updated](../work/backlogs/office/storyboard-your-ideas-using-powerpoint.md).  </li>
+<li>To verify, [open Storyboarding from the WIT you updated](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md).  </li>
 </ol>
 </td>
 </tr>
@@ -173,7 +173,7 @@ Portfolio Backlogs
 <li>Add the ```HiddenBacklogs``` property to ProcessConfiguration </li>
 </ul>
 </li>
-<li>To verify, [add some features and epics](../work/backlogs/organize-backlog.md).</li>
+<li>To verify, [add some features and epics](../boards/backlogs/organize-backlog.md).</li>
 </ol>
 <blockquote><b>Note:</b> To add additional portfolio backlogs or further customize your portfolio backlogs, see [Add a portfolio backlog level](add-portfolio-backlogs.md).</blockquote>
 </td>
@@ -276,11 +276,11 @@ The quickest way to make many of these updates is to copy definition files from 
 
 2.	Open the Process Template Manager from the **Team, Team Project Collection Settings** menu. 
 
-	 ![Open Process Template Manager](../work/work-items/guidance/_img/open-process-template-manager.png)
+	 ![Open Process Template Manager](../boards/work-items/guidance/_img/open-process-template-manager.png)
 
 	You'll see a list of each process template that has been uploaded to the project collection.  
 
-	 ![Select process template to work with](../work/work-items/guidance/_img/process-template-manager.png)
+	 ![Select process template to work with](../boards/work-items/guidance/_img/process-template-manager.png)
 
 	The **Upload**, **Download**, **Make Default**, and **Delete** buttons are disabled when you don't have the necessary permissions to manage process templates. 
  
@@ -288,9 +288,9 @@ The quickest way to make many of these updates is to copy definition files from 
 
 	Choose the process that corresponds to the one you used previously to create your project. For example, if you're updating a project based on the Scrum process template, then select **Scrum**. Note that all version numbers have been removed from the process templates. If you don't see Agile, CMMI, or Scrum, then you need to [update TFS](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). 
  
-You can determine which process template to select based on the [work item types defined for your existing project](../work/work-items/guidance/manage-process-templates.md#wit_correlation).
+You can determine which process template to select based on the [work item types defined for your existing project](../boards/work-items/guidance/manage-process-templates.md#wit_correlation).
 
-To learn more about managing process templates, see, [Upload or download a process template](../work/work-items/guidance/manage-process-templates.md).
+To learn more about managing process templates, see, [Upload or download a process template](../boards/work-items/guidance/manage-process-templates.md).
 
 <a id="import-wit">   </a>
 
@@ -646,7 +646,7 @@ See [Additional configuration options](additional-configuration-options.md) for 
 ## Related articles 
 You can learn more about the objects used to track work and support Agile tools from these topics:  
 
-- [Choose a process](../work/work-items/guidance/choose-process.md) 
+- [Choose a process](../boards/work-items/guidance/choose-process.md) 
 - [Customize your work tracking experience](customize-work.md)
 - [Customize a process template](process-templates/customize-process.md) 
 - [Overview of process template files](process-templates/overview-process-template-files.md)

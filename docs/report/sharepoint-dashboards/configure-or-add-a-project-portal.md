@@ -137,7 +137,7 @@ The project portal is a site associated with a team project for the purposes of 
   
 ## Related notes 
 
-The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../..//work/work-items/guidance/choose-process.md).  
+The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../..//boards/work-items/guidance/choose-process.md).  
   
 - [SharePoint Online Tutorial](http://office.microsoft.com/sharepoint-server-help/sharepoint-pages-i-an-introduction-RZ101837217.aspx?CTT=1)
 

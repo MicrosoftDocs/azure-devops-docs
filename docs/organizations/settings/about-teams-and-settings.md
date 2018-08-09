@@ -23,9 +23,9 @@ Adding a team is the #1 way in which Agile tools supports a growing organization
 
 Depending on the size of your organization and your tracking needs, you can set up a team structure similar to the one shown. You do this by defining teams and their associated area path(s). 
 
-![Each team has its own view of the work](../../work/scale/_img/pm-team-structure.png) 
+![Each team has its own view of the work](../../boards/plans/_img/pm-team-structure.png) 
 
-For example, each feature team can be associated with a single feature area path&mdash;such as *Customer Profile*, *Shopping Cart*, *Email*&mdash;or several area paths. Each management team, which focuses on a set of features, can choose several area paths to monitor. This allows each feature team to have their distinct backlog to plan, prioritize, and track their work. And, portfolio or product owners can create their vision, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. To learn more, see [Portfolio management](../../work/scale/portfolio-management.md). 
+For example, each feature team can be associated with a single feature area path&mdash;such as *Customer Profile*, *Shopping Cart*, *Email*&mdash;or several area paths. Each management team, which focuses on a set of features, can choose several area paths to monitor. This allows each feature team to have their distinct backlog to plan, prioritize, and track their work. And, portfolio or product owners can create their vision, road map, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies. To learn more, see [Portfolio management](../../boards/plans/portfolio-management.md). 
 
 ## Each team gets their own set of tools 
 
@@ -49,14 +49,14 @@ These tools reference the team's default area path, iteration path, and selected
 > [!div class="mx-tdCol2BreakAll"]
 > |Backlogs  |Scrum |Kanban |  Widgets | Other tools |
 > |-------------|----------|---------|---------|---------|    
-> |- [Product backlog](../../work/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../work/backlogs/define-features-epics.md)<br/>- [Epics backlog](../../work/backlogs/define-features-epics.md)<br/>- [Forecast](../../work/scrum/forecast.md) |- [Sprint backlogs](../../work/scrum/assign-work-sprint.md)<br/>- [Sprint capacity](../../work/scrum/set-capacity.md)<br/>- [Task board](../../work/scrum/task-board.md)<br/>- [Sprint burndown](../../work/scrum/sprint-burndown.md)|- [Kanban board](../../work/kanban/kanban-basics.md)<br/>- [Features board](../../work/kanban/kanban-epics-features-stories.md)<br/>- [Epics board](../../work/kanban/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md)|- [New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../../project/navigation/set-favorites.md)<br/>-  [Work item templates](../../work/backlogs/work-item-template.md)<br/>- [Delivery plans](../../work/scale/review-team-plans.md)<br/>- [Queries](../../work/track/using-queries.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>- [Dashboards](../../report/dashboards/dashboards.md)<br/>- [Alerts](../../notifications/manage-team-notifications.md) |   
+> |- [Product backlog](../../boards/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Epics backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Forecast](../../boards/sprints/forecast.md) |- [Sprint backlogs](../../boards/sprints/assign-work-sprint.md)<br/>- [Sprint capacity](../../boards/sprints/set-capacity.md)<br/>- [Task board](../../boards/sprints/task-board.md)<br/>- [Sprint burndown](../../boards/sprints/sprint-burndown.md)|- [Kanban board](../../boards/boards/kanban-basics.md)<br/>- [Features board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Epics board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md)|- [New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../../project/navigation/set-favorites.md)<br/>-  [Work item templates](../../boards/backlogs/work-item-template.md)<br/>- [Delivery plans](../../boards/plans/review-team-plans.md)<br/>- [Queries](../../boards/queries/using-queries.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>- [Dashboards](../../report/dashboards/dashboards.md)<br/>- [Alerts](../../notifications/manage-team-notifications.md) |   
 ::: moniker-end
  
 ::: moniker range="tfs-2015"
 > [!div class="mx-tdCol2BreakAll"]
 > |Backlogs  |Scrum |Kanban |  Widgets | Other tools |
 > |-------------|----------|---------|---------|---------|    
-> |- [Product backlog](../../work/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../work/backlogs/define-features-epics.md)<br/>- [Epics backlog](../../work/backlogs/define-features-epics.md)<br/>- [Forecast](../../work/scrum/forecast.md) |- [Sprint backlogs](../../work/scrum/assign-work-sprint.md)<br/>- [Sprint capacity](../../work/scrum/set-capacity.md)<br/>- [Task board](../../work/scrum/task-board.md)<br/>- [Sprint burndown](../../work/scrum/sprint-burndown.md)|- [Kanban board](../../work/kanban/kanban-basics.md)<br/>- [Features board](../../work/kanban/kanban-epics-features-stories.md)<br/>- [Epics board](../../work/kanban/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md)|- [New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../../project/navigation/set-favorites.md)<br/>-  [Work item templates](../../work/backlogs/work-item-template.md)<br/>- [Queries](../../work/track/using-queries.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>- [Dashboards](../../report/dashboards/dashboards.md)<br/>- [Alerts](../../work/track/alerts-and-notifications.md)<br/>- [Team rooms](../../notifications/collaborate-in-a-team-room.md) |   
+> |- [Product backlog](../../boards/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Epics backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Forecast](../../boards/sprints/forecast.md) |- [Sprint backlogs](../../boards/sprints/assign-work-sprint.md)<br/>- [Sprint capacity](../../boards/sprints/set-capacity.md)<br/>- [Task board](../../boards/sprints/task-board.md)<br/>- [Sprint burndown](../../boards/sprints/sprint-burndown.md)|- [Kanban board](../../boards/boards/kanban-basics.md)<br/>- [Features board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Epics board](../../boards/boards/kanban-epics-features-stories.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md)|- [New work item](../../report/dashboards/widget-catalog.md#new-work-item-widget)<br/>- [Sprint burndown](../../report/dashboards/widget-catalog.md#sprint-burndown-widget)<br/>- [Sprint capacity](../../report/dashboards/widget-catalog.md#sprint-capacity-widget)<br/>- [Sprint overview](../../report/dashboards/widget-catalog.md#sprint-overview-widget)<br/>- [Team members](../../report/dashboards/widget-catalog.md#team-members-widget) | - [Favorites](../../project/navigation/set-favorites.md)<br/>-  [Work item templates](../../boards/backlogs/work-item-template.md)<br/>- [Queries](../../boards/queries/using-queries.md)<br/>- [Velocity](../../report/dashboards/team-velocity.md)<br/>- [Dashboards](../../report/dashboards/dashboards.md)<br/>- [Alerts](../../boards/queries/alerts-and-notifications.md)<br/>- [Team rooms](../../notifications/collaborate-in-a-team-room.md) |   
 ::: moniker-end
 
 
@@ -64,7 +64,7 @@ These tools reference the team's default area path, iteration path, and selected
 > [!div class="mx-tdCol2BreakAll"]
 > |Backlogs  |Scrum |Kanban | Other tools |
 > |-------------|----------|---------|---------|   
-> |- [Product backlog](../../work/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../work/backlogs/define-features-epics.md)<br/>- [Forecast](../../work/scrum/forecast.md) |- [Sprint backlogs](../../work/scrum/assign-work-sprint.md)<br/>- [Sprint capacity](../../work/scrum/set-capacity.md)<br/>- [Task board](../../work/scrum/task-board.md)<br/>- [Sprint burndown](../../work/scrum/sprint-burndown.md)|- [Kanban board](../../work/kanban/kanban-basics.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md) | - [Favorites](../../project/navigation/set-favorites.md)<br/>- [Work item templates](../../work/backlogs/work-item-template.md)<br/>-  [Queries](../../work/track/using-queries.md)<br/>- [Alerts](../../work/track/alerts-and-notifications.md)<br/>- [Team rooms](../../notifications/collaborate-in-a-team-room.md) |   
+> |- [Product backlog](../../boards/backlogs/create-your-backlog.md)<br/>- [Features backlog](../../boards/backlogs/define-features-epics.md)<br/>- [Forecast](../../boards/sprints/forecast.md) |- [Sprint backlogs](../../boards/sprints/assign-work-sprint.md)<br/>- [Sprint capacity](../../boards/sprints/set-capacity.md)<br/>- [Task board](../../boards/sprints/task-board.md)<br/>- [Sprint burndown](../../boards/sprints/sprint-burndown.md)|- [Kanban board](../../boards/boards/kanban-basics.md)<br/>- [Cumulative flow](../../report/dashboards/cumulative-flow.md) | - [Favorites](../../project/navigation/set-favorites.md)<br/>- [Work item templates](../../boards/backlogs/work-item-template.md)<br/>-  [Queries](../../boards/queries/using-queries.md)<br/>- [Alerts](../../boards/queries/alerts-and-notifications.md)<br/>- [Team rooms](../../notifications/collaborate-in-a-team-room.md) |   
 ::: moniker-end
 
 
@@ -145,8 +145,8 @@ In addition, several tools reference the team's default iteration and selected i
 <ol>
 <li>Agile tools filter items based on the team's selected area path(s). Teams can choose [whether to include or exclude items assigned to subarea paths](../../organizations/settings/set-team-defaults.md#team-area-paths).</li>
 <li>Work items whose State equals Closed, Done, or Removed (corresponding to a Completed category state) don't appear on portfolio and product backlogs.</li>
-<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](../../work/work-items/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
-<li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../work/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
+<li>You can add custom workflow states and assign them to one of three state categories. The [state categories](../../boards/work-items/workflow-and-state-categories.md) determine which work items appear on backlog and board views. </li>
+<li>Kanban boards, sprint backlogs, and task boards only show the last node in a hierarchy, called the leaf node. For example, if you link items within a hierarchy that is four levels deep, only the items at the fourth level appear on the Kanban board, sprint backlog, and task board. To learn more, see [parent-child links between items](../../boards/backlogs/resolve-backlog-reorder-issues.md#leaf-nodes).</li>
 <li>Work items whose State equals Removed don't appear on boards.</li> 
 </ol>
 
@@ -156,15 +156,15 @@ In addition, several tools reference the team's default iteration and selected i
 Although there is no concept of sub-teams, you can create teams whose area paths are under another team, which effectively creates a hierarchy of teams. To learn more, see [Add another team](../../organizations/settings/add-teams.md).
 
 Also, these topics can walk you through the steps for configuring teams, area paths, and iterations to support portfolio management or enterprise organizations: 
-- [Portfolio management](../../work/scale/portfolio-management.md)
-- [Implement Scaled Agile Framework to support epics, release trains, and multiple backlogs](../../work/scale/scaled-agile-framework.md)
+- [Portfolio management](../../boards/plans/portfolio-management.md)
+- [Implement Scaled Agile Framework to support epics, release trains, and multiple backlogs](../../boards/plans/scaled-agile-framework.md)
 
 <a id="team-group"> </a>
 ## Team groups 
 
 When you add a team, a security group is automatically created with the team name. You can use this group to filter queries. The name of team groups follows the pattern **[Project Name]\Team Name**. For example, the following query finds work assigned to members of the **[Fabrikam Fiber]\Email** team group.
 
-<img src="../../work/scale/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
+<img src="../../boards/plans/_img/query-in-group-email-team-work-in-progress.png" alt="Web portal, Queries page, Query that uses In Group operator and team group name" style="border: 2px solid #C3C3C3;" /> 
 
 ::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
 You can also use the **@mention** control within discussions and pull requests to notify all members of a team. Simply start typing the name of a team or a security group, click the search icon and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).     
@@ -174,7 +174,7 @@ You can also use the **@mention** control within discussions and pull requests t
 
 Can a user account belong to more than one team?  
 
-Yes. When you add user accounts to a project, you can add them as members of the project, or you can add them to one or more teams added to the project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](../../work/scrum/set-capacity.md). 
+Yes. When you add user accounts to a project, you can add them as members of the project, or you can add them to one or more teams added to the project. If you work on two or more Scrum teams, you'll want to make sure you, [specify your sprint capacity for each team you work on](../../boards/sprints/set-capacity.md). 
 
 ## Team member permissions 
 
@@ -187,11 +187,11 @@ You can choose to limit access to select features by making a user a [Stakeholde
 
 ## Summary 
 - Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md) 
-- Every backlog has a corresponding [Kanban board](../../work/kanban/kanban-basics.md) you can use to track progress and update status  
+- Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-basics.md) you can use to track progress and update status  
 - The [team's specified area and iteration paths](../../organizations/settings/set-team-defaults.md) determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   
 -  Each team can control how [bugs show up on their backlogs and boards](show-bugs-on-backlog.md)   
 - For an overview of all team assets and how to configure them, see [Configure team settings](configure-team-settings.md)   
-- To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../work/scale/portfolio-management.md) 
+- To have work performed by several teams roll up in to a portfolio backlog, you'll want to [setup the team hierarchy](../../boards/plans/portfolio-management.md) 
 - To add fields or work item types, see [Customize your work tracking experience](../../reference/customize-work.md).
 
 ## Related notes 

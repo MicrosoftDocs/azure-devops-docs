@@ -27,7 +27,7 @@ Work items have received a facelift. To provide a fresher, more modern experienc
 	- **@mention** which allows you to quickly add team members to receive an email notification with your comments and a link to the work item in which you mentioned them.
 	- **#ID** which provides a quick way to create links to other work items within the Discussion control 
 - **Related Work control** that provides a quick method to link to and view linked work items 
-- **Development control** where you're able to engage with code changes, pull requests, and builds through interactive experiences as described in [Drive Git development for a work item](../../work/backlogs/connect-work-items-to-git-dev-ops.md)
+- **Development control** where you're able to engage with code changes, pull requests, and builds through interactive experiences as described in [Drive Git development for a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md)
 - **History page** with improved readability and with indicators for important changes such as reassignment, change of state, discussion comment, and more 
 - **Attachment control** that supports drag-and-drop of attachments and attachment preview.
 - **Custom control support** that enables adding custom field, group, and page extensions such as multi-value control and toggle control
@@ -35,9 +35,9 @@ Work items have received a facelift. To provide a fresher, more modern experienc
 
 Here's what you'll see when you preview the new form.  
 
-<img src="../../work/_shared/_img/new-form-user-story-3-col.png" alt="New form for user story" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/_shared/_img/new-form-user-story-3-col.png" alt="New form for user story" style="border: 2px solid #C3C3C3;" />
 
-For guidance in using the new form features, see [Add work items to plan and track your project](../../work/backlogs/add-work-items.md).   
+For guidance in using the new form features, see [Add work items to plan and track your project](../../boards/backlogs/add-work-items.md).   
 
 ## New form features  
 
@@ -45,31 +45,31 @@ For guidance in using the new form features, see [Add work items to plan and tra
 
 First off, you'll notice that the form reflects the color of your work item type&mdash;bug, user story, or task. And, we've done away with duplicate titles to cut down on clutter. Whether you're working from a backlog, board, or query&mdash;your experience remains the same.  
 
-<img src="../../work/_shared/_img/new-form-bug-header.png" alt="New form, bug, header" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/_shared/_img/new-form-bug-header.png" alt="New form, bug, header" style="border: 2px solid #C3C3C3;" />
 
 ### Great consumption experience  
  
 Your data has more structure and organization. Plus, you can focus more easily on areas of interest by collapsing groups to hide details you don't care about. And as you resize the form, it quickly responds to provide you with a great viewing experience even within a limited screen width.  
  
-<img src="../../work/_shared/_img/new-form-exp-resized-user-story-form.png" alt="New form, collapsible groups, responsive form" style="border: 2px solid #C3C3C3;" />
+<img src="../../boards/_shared/_img/new-form-exp-resized-user-story-form.png" alt="New form, collapsible groups, responsive form" style="border: 2px solid #C3C3C3;" />
 
 
 ### More viewing area to support core experiences  
  
-All the core tabs&mdash;Details, History, Links, and Attachments&mdash;now have more screen space. See [History and auditing](../../work/track/history-and-auditing.md) for details on the new History tab.
+All the core tabs&mdash;Details, History, Links, and Attachments&mdash;now have more screen space. See [History and auditing](../../boards/queries/history-and-auditing.md) for details on the new History tab.
 
-<img src="../../work/backlogs/_img/add-work-item-history.png" alt="New form, history tab" style="border: 1px solid #C3C3C3;" />   
+<img src="../../boards/backlogs/_img/add-work-item-history.png" alt="New form, history tab" style="border: 1px solid #C3C3C3;" />   
 
 <a id="discussion">  </a>
 ### Discussion  
 
 Use the new Discussion section to add and review comments made about the work being performed. 
 
-Click the ![Discussions icon](../../work/_img/icons/icon-discussions-wi.png) discussion icon, which indicates how many comments have been added, to move your focus to the discussion section.  Click the ![full screen icon](../../work/_img/icons/fullscreen_icon.png) full screen icon to expand the display of the discussion section within the form.   
+Click the ![Discussions icon](../../boards/_img/icons/icon-discussions-wi.png) discussion icon, which indicates how many comments have been added, to move your focus to the discussion section.  Click the ![full screen icon](../../boards/_img/icons/fullscreen_icon.png) full screen icon to expand the display of the discussion section within the form.   
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
-<img src="../../work/backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #C3C3C3;" />  
+<img src="../../boards/backlogs/_img/add-work-items-discussion.png" alt="Discussion section" style="border: 1px solid #C3C3C3;" />  
 
 > [!IMPORTANT]
 > For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications.     
@@ -78,7 +78,7 @@ Within the discussion section, you can use the [**@mention** control](../../noti
 
 Looking for the toolbar task options? You access them now through the ![](../../_img/icons/actions-icon.png) actions icon.  
 
-<img src="../../work/backlogs/_img/new-form-action-menu.png" alt="New form, User story, Actions menu" style="border: 1px solid #C3C3C3;" />  
+<img src="../../boards/backlogs/_img/new-form-action-menu.png" alt="New form, User story, Actions menu" style="border: 1px solid #C3C3C3;" />  
 
 <a id="switch-new">  </a> 
 ## Switch to the new experience  
@@ -111,8 +111,8 @@ To manage the rollout of the new form or customize it, see:
 - [Customize the new form](../customize-wit-form.md) (On-premises XML process model)
 
 For guidance in using the new form, see:
-- [Add work items to plan and track your project](../../work/backlogs/add-work-items.md) 
-- [Drive Git development for a work item](../../work/backlogs/connect-work-items-to-git-dev-ops.md) 
+- [Add work items to plan and track your project](../../boards/backlogs/add-work-items.md) 
+- [Drive Git development for a work item](../../boards/backlogs/connect-work-items-to-git-dev-ops.md) 
 
 For news of upcoming features, or extending the work tracking experience, see these resources:  
 - [VSTS Features Timeline](/vsts/release-notes/index)  

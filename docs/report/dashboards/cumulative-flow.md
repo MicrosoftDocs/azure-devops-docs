@@ -30,7 +30,7 @@ For usage guidance, see [Cumulative flow, lead time, and cycle time guidance](cu
 ::: moniker range="vsts" 
 You use cumulative flow diagrams (CFD) to monitor the flow of work through a system. There are two CFD charts, the one viewed from the Kanban board and the one you access by adding the CFD widget to your dashboard. 
 
-The CFD widget provides more configuration options than those supported by the default CFD charts shown on the backlog and board pages. With the CFD widget, you can monitor the count of work items as they progressively move through various states which you define. You can configure the CFD chart to monitor the flow of epics, features, user stories, product backlog items, or requirements, depending on the process ([Agile](../../work/work-items/guidance/agile-process.md), [Scrum](../../work/work-items/guidance/scrum-process.md), or ([CMMI](../../work/work-items/guidance/cmmi-process.md)) you've selected.
+The CFD widget provides more configuration options than those supported by the default CFD charts shown on the backlog and board pages. With the CFD widget, you can monitor the count of work items as they progressively move through various states which you define. You can configure the CFD chart to monitor the flow of epics, features, user stories, product backlog items, or requirements, depending on the process ([Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), or ([CMMI](../../boards/work-items/guidance/cmmi-process.md)) you've selected.
 
 Use this topic to learn how to: 
 
@@ -57,9 +57,9 @@ A few options are available for you to [configure your chart](#configure) or [co
 You will need to be a team administrator or a member of the Project Administrators group to perform these tasks. See 
 [Manage team assets](../../organizations/settings/add-team-administrator.md)to get added as a team admin. 
 
-1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../work/kanban/add-columns.md) and [swimlanes](../../work/kanban/expedite-work.md) that support your workflow processes.  
+1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 
-2. If you want fixed scope CFD charts, make sure that you've [defined the sprint iterations](../../work/scrum/define-sprints.md) for those sprints of interest. 
+2. If you want fixed scope CFD charts, make sure that you've [defined the sprint iterations](../../boards/sprints/define-sprints.md) for those sprints of interest. 
 
 3. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](../add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget. 
 
@@ -89,11 +89,11 @@ You will need to be a team administrator or a member of the Project Administrato
 
 You open the built-in (work tracking datastore) cumulative flow chart for your backlog or portfolio backlog by clicking the image in the upper-right corner of your **Work>Backlogs** page. 
 
-<img src="../../work/kanban/_img/ALM_KB_Board5.png" alt="Open the cumulative flow diagram" style="border: 2px solid #C3C3C3;" />   
+<img src="../../boards/boards/_img/ALM_KB_Board5.png" alt="Open the cumulative flow diagram" style="border: 2px solid #C3C3C3;" />   
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement once work has started. 
 
-<img src="../../work/kanban/_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 2px solid #C3C3C3;" />   
+<img src="../../boards/boards/_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 2px solid #C3C3C3;" />   
 
 
 
@@ -102,7 +102,7 @@ The CFD shows the count of items in each Kanban column for the past 30 weeks or 
 
 Each team can set their preferences for the built-in cumulative flow charts.  
 
-1. Open the backlog level for which you want to configure and then open the common configuration dialog. Click the ![gear icon](../../work/_img/icons/team-settings-gear-icon.png) gear icon.  
+1. Open the backlog level for which you want to configure and then open the common configuration dialog. Click the ![gear icon](../../boards/_img/icons/team-settings-gear-icon.png) gear icon.  
 
 	<img src="../../boards/boards/_img/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
 
@@ -114,7 +114,7 @@ Each team can set their preferences for the built-in cumulative flow charts.
 
 3. Repeat steps 1 and 2 for each backlog level you want to configure.  
 
-For the CFD chart to reflect useful information, you'll want to update the status of work items to reflect progress as it occurs. The quickest way to make these updates is through your [Kanban board](../../work/kanban/kanban-basics.md). 
+For the CFD chart to reflect useful information, you'll want to update the status of work items to reflect progress as it occurs. The quickest way to make these updates is through your [Kanban board](../../boards/boards/kanban-basics.md). 
 
 ::: moniker-end
 
@@ -122,7 +122,7 @@ For the CFD chart to reflect useful information, you'll want to update the statu
  
 > [!div class="nextstepaction"]
 > [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md) or
-> [Kanban basics](../../work/kanban/kanban-basics.md)
+> [Kanban basics](../../boards/boards/kanban-basics.md)
 
 
 
