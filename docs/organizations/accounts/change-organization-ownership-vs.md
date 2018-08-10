@@ -1,6 +1,6 @@
 ---
 title: Change the VSTS organization owner 
-description: Learn how to assign a different user as the owner for your VSTS organization and what permissions are required to make updates
+description: Learn how to assign a different user as the owner for your VSTS organization, and learn what permissions are required to make updates.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
@@ -12,27 +12,27 @@ ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
 
-# Change organization owner for VSTS
+# Change the organization owner for VSTS
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-When your team's roles and responsibilities change, change your VSTS organization owner to another user.
+When your team's roles and responsibilities change, change your Visual Studio Team Services (VSTS) organization owner to another user.
 
 <a name="ChangeOwner"></a>
 
 ## Prerequisites
 
-You must have VSTS [project collection administrator or organization owner permissions](faq-change-organization-ownership.md#find-owner-pca).
-If no one has these permissions, contact
+To change the organization owner, you must have VSTS [*project collection administrator* or *organization owner* permissions](faq-change-organization-ownership.md#find-owner-pca).
+If no one in the organization has these permissions, contact
 [VSTS Support](https://visualstudio.microsoft.com/team-services/support).
 
 Make sure that the new owner:
 
-* Has been added and invited to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+* Has been added and invited to your VSTS organization (`https://<yourorganization>.visualstudio.com`).
 * Has signed in to your VSTS organization, created a Visual Studio profile, and agreed to the Terms of Service.
-* Has accessed the organization, following initial profile creation, at least once.
+* Has accessed the organization at least once after creating an initial profile.
 
-   ![Last sign in never](_img/change-organization-ownership/user-last-access.png)
+   ![Last access date](_img/change-organization-ownership/user-last-access.png)
 
 ## Change VSTS organization owner
 
@@ -40,51 +40,53 @@ Make sure that the new owner:
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
-2. Choose ![gear icon](../../_img/icons/gear-icon.png), **Admin settings**.
+1. Sign in to your VSTS organization (`https://<yourorganization>.visualstudio.com`).
 
-   ![Choose the gear, Admin settings icon](../../_shared/_img/settings/open-admin-settings-vert.png)
+2. Select **Admin settings** (![gear icon](../../_img/icons/gear-icon.png)).
 
-3. Choose Overview and you will see the organization owner listed beneath Organization information.
+   ![Select "Admin settings"](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-   ![Find organization owner](_img/change-organization-ownership/find-organization-owner.png)
+3. Select **Overview**.  
+    The organization owner is listed under **Organization information**.
 
-4. Change the organization owner.
+   ![Overview pane displaying the organization owner](_img/change-organization-ownership/find-organization-owner.png)
+
+4. To change the organization owner, select the **X**.
 
    ![Change organization owner](_img/change-organization-ownership/change-organization-owner.png)
 
-5. Enter and then **Save** the new organization owner.
+5. Enter a new organization owner name, and then select **Save**.
 
-   ![Save new organization owner](_img/change-organization-ownership/save-new-organization-owner.png)  
+   ![Enter and save a new organization owner](_img/change-organization-ownership/save-new-organization-owner.png)  
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your VSTS organization (`https://<yourorganization>.visualstudio.com`).
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-change-organization-ownership.md#ChooseOrgAcctMSAcct)
+   [Why am I asked to choose between my work or school account and my personal account?](faq-change-organization-ownership.md#SelectOrgAcctMSAcct)
 
-2. To find the current organization owner, go to your VSTS organization settings.
+2. To find the current organization owner, go to your VSTS organization settings pane.
 
-   ![Go to organization settings](../../_shared/_img/organization-settings-new-ui.png)
+   ![Organization settings pane](../../_shared/_img/organization-settings-new-ui.png)
 
-3. Under **Settings**, find the current owner.
+3. Under **Settings**, find the current organization owner.
 
-   ![Find current owner](../../_shared/_img/organization-owner-new-ui.png)
+   ![Find the current organization owner](../../_shared/_img/organization-owner-new-ui.png)
 
 4. Change the organization owner.
 
-   ![Change current owner](_img/change-organization-ownership/vsocontrolpanelchangeowner.png)
+   ![Change current organization owner](_img/change-organization-ownership/vsocontrolpanelchangeowner.png)
 
-5. Find and select the new owner.
+5. Find and select the new organization owner.
 
-   ![Find and select owner](_img/change-organization-ownership/vsofindneworganizationowner.png)
+   ![Find and select the organization owner](_img/change-organization-ownership/vsofindneworganizationowner.png)
 
    [Can't find the person you want?](faq-change-organization-ownership.md#NoNewOwner)
 
 6. Save your changes.
 
-   ![Select new owner, save changes](_img/change-organization-ownership/vsosaveneworganizationowner.png)
+   ![Select new organization owner, and save changes](_img/change-organization-ownership/vsosaveneworganizationowner.png)
 
 ---
 
-   Your VSTS organization has a new owner!
+   You have successfully changed your VSTS organization owner.
