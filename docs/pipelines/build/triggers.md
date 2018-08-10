@@ -25,6 +25,63 @@ On the **Triggers** tab you specify the events that will trigger the build. You 
 <a name="ci"></a>
 ## Continuous integration (CI)
 
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+YAML builds are configured by default with a CI trigger on all branches.
+
+You can control which branches get CI triggers with a simple syntax:
+
+```yaml
+name: My Cool Build
+trigger:
+- master
+- releases/*
+```
+
+You can also be more specific about branches to include and exclude.
+
+```yaml
+name: My Specific Branch Build
+trigger:
+  branches:
+    include:
+    - master
+    - releases/*
+    exclude:
+    - releases/old*
+```
+
+If your source repository is VSTS Git, you can also specify file paths to include or exclude.
+
+```yaml
+name: My Specific Path Build
+trigger:
+  branches:
+    include:
+    - master
+    - releases/*
+  paths:
+    include:
+    - docs/*
+    exclude:
+    - docs/README.md
+```
+
+You can opt out of CI builds entirely by specifying `trigger: none`.
+
+```yaml
+name: My CI-less Build
+trigger: none
+```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
 # [Designer](#tab/designer)
 
 Select this trigger if you want the build to run whenever someone checks in code.
@@ -78,58 +135,22 @@ Select the version control paths you want to include and exclude. In most cases,
 
 You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, VSTS or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
 
-# [YAML](#tab/yaml)
-
-YAML builds are configured by default with a CI trigger on all branches.
-
-You can control which branches get CI triggers with a simple syntax:
-
-```yaml
-name: My Cool Build
-trigger:
-- master
-- releases/*
-```
-
-You can also be more specific about branches to include and exclude.
-
-```yaml
-name: My Specific Branch Build
-trigger:
-  branches:
-    include:
-    - master
-    - releases/*
-    exclude:
-    - releases/old*
-```
-
-If your source repository is VSTS Git, you can also specify file paths to include or exclude.
-
-```yaml
-name: My Specific Path Build
-trigger:
-  branches:
-    include:
-    - master
-    - releases/*
-  paths:
-    include:
-    - docs/*
-    exclude:
-    - docs/README.md
-```
-
-You can opt out of CI builds entirely by specifying `trigger: none`.
-
-```yaml
-name: My CI-less Build
-trigger: none
-```
-
 ---
 
 ## Scheduled
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+Scheduled builds are not yet supported in YAML syntax.
+After your create your YAML build definition, you can use the designer to specify a scheduled trigger.
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -174,11 +195,6 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 ::: moniker-end
 
-# [YAML](#tab/yaml)
-
-Scheduled builds are not yet supported in YAML syntax.
-After your create your YAML build definition, you can use the designer to specify a scheduled trigger.
-
 ---
 
 <h2 id="gated">TFVC gated check-in</h2>
@@ -218,6 +234,11 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 <a name="BuildCompletion"></a>
 ## Build completion triggers
 
+# [YAML](#tab/yaml)
+
+Build completion triggers are not yet supported in YAML syntax.
+After your create your YAML build definition, you can use the designer to specify a build completion trigger.
+
 # [Designer](#tab/designer)
 
 Large products have several components that are dependent on each other. 
@@ -252,11 +273,6 @@ In many cases you'll want to download artifacts from the triggering build. To do
 1. Specify the **Artifact name** and make sure it matches the name of the artifact published by the triggering build.
 
 1. Specify the **Destination directory** to which you want to download the artifacts. For example: `$(Build.BinariesDirectory)`
-
-# [YAML](#tab/yaml)
-
-Build completion triggers are not yet supported in YAML syntax.
-After your create your YAML build definition, you can use the designer to specify a build completion trigger.
 
 ---
 

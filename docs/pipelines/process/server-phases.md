@@ -20,10 +20,6 @@ monikerRange: '>= tfs-2018'
 
 Tasks in a server phase are orchestrated by and executed on the server (VSTS or TFS). A server phase does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server phase at present. At present you can add only one task to each server phase in your pipeline.
 
-# [Web](#tab/web)
-
-You add a server phase in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a pipeline. The properties for the server phase are displayed when you select the phase in the editor.
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -52,6 +48,11 @@ phases:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+You add a server phase in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a pipeline. The properties for the server phase are displayed when you select the phase in the editor.
+
 ---
 
 ## Timeouts
@@ -59,10 +60,6 @@ YAML is not yet supported in TFS.
 Use the phase timeout to specify the timeout in minutes for jobs in this phase. A zero
   value for this option means that the timeout is effectively infinite and so, by default, jobs run until they complete or fail.
   You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
-
-# [Web](#tab/web)
-
-If you specify a non-zero value for the phase timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
 
 # [YAML](#tab/yaml)
 
@@ -80,6 +77,11 @@ queue:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+If you specify a non-zero value for the phase timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
+
 ---
 
 <a name="parallelexec"></a>
@@ -87,10 +89,6 @@ YAML is not yet supported in TFS.
 
 If you are using YAML, you can dispatch multiple server jobs from a single server phase.
   
-# [Web](#tab/web)
-
-Multi-configuration server phases are not supported in web designer.
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -117,14 +115,15 @@ phases:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+Multi-configuration server phases are not supported in web designer.
+
 ---
 
 ## Phase variables
 If you are using YAML, variables can be specified on the phase. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the environment variable.
-
-# [Web](#tab/web)
-
-Phase variables are not yet supported in the web editor.
 
 # [YAML](#tab/yaml)
 
@@ -150,6 +149,11 @@ steps:
 ::: moniker range="< vsts"
 YAML is not yet supported in TFS.
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+Phase variables are not yet supported in the web editor.
+
 ---
 
 ## Related topics

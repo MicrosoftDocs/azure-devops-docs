@@ -31,12 +31,6 @@ You can automatically deploy your database updates to Azure SQL database after e
 
 The simplest way to deploy a database is to create [data-tier package or DACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
 
-# [Designer](#tab/designer)
-
-When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
-
-When setting up a release pipeline, choose **Start with an empty process**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="< vsts"
@@ -62,6 +56,13 @@ To deploy a DACPAC to an Azure SQL database, add the following snippet to your .
 ```
 
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+When setting up a build pipeline for your Visual Studio database project, use the **.NET desktop** template. This template automatically adds the tasks to build the project and publish artifacts, including the DACPAC.
+
+When setting up a release pipeline, choose **Start with an empty process**, link the artifacts from build, and then add an [Azure SQL Database Deployment](../tasks/deploy/sql-azure-dacpac-deployment.md) task.
+
 ---
 
 ## SQL scripts
@@ -127,23 +128,7 @@ If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $A
 }
 ```
 
-# [Designer](#tab/designer)
-
-When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure powershell scripts to configure firewall rules are part of the build artifact.
-
-When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
-
-- First, use an [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the VSTS agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
-- Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
-- Third, use another [Azure Powershell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
-
 # [YAML](#tab/yaml)
-
-::: moniker range="< vsts"
-
-YAML is not supported in TFS.
-
-::: moniker-end
 
 ::: moniker range="vsts"
 
@@ -182,6 +167,23 @@ steps:
     azurePowerShellVersion: LatestVersion
 ```
 ::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML is not supported in TFS.
+
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+When you set up a build pipeline, make sure that the SQL script to deploy the database and the Azure powershell scripts to configure firewall rules are part of the build artifact.
+
+When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
+
+- First, use an [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the VSTS agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
+- Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
+- Third, use another [Azure Powershell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
+
 ---
 
 ## Azure service connection
@@ -205,17 +207,6 @@ To learn how to create an Azure service connection, see [Create an Azure service
 ## Deploying conditionally
 
 You may choose to deploy only certain builds to your Azure database. 
-
-# [Designer](#tab/designer)
-
-In your release pipeline you can implement various checks and conditions to control the deployment.
-
-* Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
-* Set **pre-deployment approvals** as a pre-condition for deployment to an environment.
-* Configure **gates** as a pre-condition for deployment to an environment.
-* Specify conditions for a task to run.
-
-To learn more, see [Release, branch, and environment triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 # [YAML](#tab/yaml)
 
@@ -249,6 +240,17 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 YAML builds are not yet available on TFS.
 
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+In your release pipeline you can implement various checks and conditions to control the deployment.
+
+* Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
+* Set **pre-deployment approvals** as a pre-condition for deployment to an environment.
+* Configure **gates** as a pre-condition for deployment to an environment.
+* Specify conditions for a task to run.
+
+To learn more, see [Release, branch, and environment triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 ---
 
