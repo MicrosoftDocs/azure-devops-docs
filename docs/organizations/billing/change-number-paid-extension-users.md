@@ -1,6 +1,6 @@
 ---
 title: Change the number of paid users for a VSTS extension
-description: Increase or decrease the number of paid users for a VSTS (Visual Studio Team Services) feature or extension as your team grows or gets smaller
+description: Increase or decrease the number of paid users for a Visual Studio Team Services (VSTS) feature or extension as your team grows or gets smaller
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Change the number of paid users for a VSTS extension
+# Change the number of paid users for a Visual Studio Team Services (VSTS) extension
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -23,26 +23,26 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-You'll need VSTS
-[project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
+You need VSTS [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 
-1. Sign in to your VSTS organization. (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your VSTS organization, ```https://{yourorganization}.visualstudio.com```.
 
-2. Go to **Extensions**, then select the extension you want to update.
+2. Go to **Extensions**. Then select the extension you want to update.
 
-   ![Choose the extensions tab](_img/_shared/choose-extensions-tab.png)
+   ![Select the Extensions tab](_img/_shared/choose-extensions-tab.png)
 
-3. Choose **Get**. You may be prompted to enter your credentials for the Marketplace.
+3. Select **Get**. You might be prompted to enter your credentials for the Marketplace.
 
-   ![Choose get in Marketplace for extension](_img/_shared/marketplace-extension.png)
+   ![Select Get in the Marketplace for the extension](_img/_shared/marketplace-extension.png)
 
-4. Update the number of total paid users, then choose **Update**.
+4. Update the total number of paid users. Then select **Update**.
 
     <img alt="Update total paid users" src="_img/assign-extensions/update-paid-users.png" style="border: 1px solid #CCCCCC" />
 
 The number of paid extension users is updated.
 
-> **To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension).**[Change the number of paid users for a VSTS extension](#change-the-number-of-paid-users-for-a-vsts-extension)
+> [!NOTE]
+> To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension). [Change the number of paid users for a VSTS extension](#change-the-number-of-paid-users-for-a-vsts-extension).
 
 ## Next steps
 
