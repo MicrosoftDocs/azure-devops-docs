@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Tutorial: Connect VSTS organization to Azure Active Directory (Azure AD)
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 If your VSTS organization was created with a Microsoft account,
 you can connect your VSTS organization to your

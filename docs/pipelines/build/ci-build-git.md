@@ -43,17 +43,6 @@ You can build every commit and pull request to your Git repository using VSTS or
 
 A common workflow with Git is to create temporary branches from your master branch.  These branches are called topic or feature branches and help you isolate your work.  In this workflow, you create a branch for a particular feature or bug fix.  Eventually, you merge the code back to the master branch and delete the topic branch.
 
-# [Designer](#tab/designer)
-
-Follow the steps below to create a CI trigger that will run a build for feature branches.
-
-1. Select **Build and Release**, and then choose **Builds**.
-2. Locate the build pipeline that services your master branch. Select **Edit**.
-3. Select the **Triggers** menu for your build.  Ensure you have **Continuous integration** enabled.
-4. Select the **+ Add** icon under **Branch filters**.
-5. Under the **Branch specification** dropdown, type `features/*` in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the master branch. Note that the filtered list of branches may not populate as you type `*`. You can still press **Enter** and save the branch filter.
-6. Select the **Save & queue** menu and then Select **Save**.
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -68,10 +57,20 @@ trigger:
 ::: moniker-end
 
 ::: moniker range="< vsts"
-
 YAML builds are not yet available on TFS.
-
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+Follow the steps below to create a CI trigger that will run a build for feature branches.
+
+1. Select **Build and Release**, and then choose **Builds**.
+2. Locate the build pipeline that services your master branch. Select **Edit**.
+3. Select the **Triggers** menu for your build.  Ensure you have **Continuous integration** enabled.
+4. Select the **+ Add** icon under **Branch filters**.
+5. Under the **Branch specification** dropdown, type `features/*` in the **Filter my branches** text box and press **Enter**. The trigger now supports CI for all feature branches that match the wildcard as well as the master branch. Note that the filtered list of branches may not populate as you type `*`. You can still press **Enter** and save the branch filter.
+6. Select the **Save & queue** menu and then Select **Save**.
+
 ---
 
 ## Automatically build a change in topic branch
@@ -92,6 +91,23 @@ Your typical development process includes developing code locally and periodical
 
 The master branch typically produces deployable artifacts such as binaries.  You do not need to spend time creating and storing those artifacts for short-lived feature branches.  You implement custom conditions in VSTS or TFS so that certain tasks only execute on your master branch during a build run.  You can use a single build with multiple branches and skip or perform certain tasks based on conditions.
 
+# [YAML](#tab/yaml)
+
+Edit the `.vsts-ci.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to `publish artifacts` task.
+
+::: moniker range="vsts"
+
+```yaml
+- task: PublishBuildArtifacts@1
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+```
+::: moniker-end
+::: moniker range="< vsts"
+
+YAML builds are not yet available on TFS.
+
+::: moniker-end
+
 # [Designer](#tab/designer)
 
 1. Locate the build pipeline that services your master branch. Select **Edit**.
@@ -110,22 +126,6 @@ and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 1.  Choose your **topic branch**.  Select **Queue**.  We are not building the master branch, and the task for **Publish artifacts** will not execute.
 1.  Select the build to monitor the progress.  Once the build completes, confirm the build skipped the **Publish artifacts** task.
 
-# [YAML](#tab/yaml)
-
-Edit the `.vsts-ci.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to `publish artifacts` task.
-
-::: moniker range="vsts"
-
-```yaml
-- task: PublishBuildArtifacts@1
-  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
-```
-::: moniker-end
-::: moniker range="< vsts"
-
-YAML builds are not yet available on TFS.
-
-::: moniker-end
 ---
 
 ## Validate pull requests
@@ -133,6 +133,18 @@ YAML builds are not yet available on TFS.
 Use policies to protect your branches by requiring successful builds before merging pull requests.  You have options to always require a new successful build before merging changes to important branches such as the master branch.  There are other branch policy settings to build less frequently.  You can also require a certain number of code reviewers to help ensure your pull requests are high quality and don't result in broken builds for your branches.
 
 ### GitHub repository
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+Unless you explicitly override `trigger` in your YAML file, all changes in any of the branches will trigger a build. And, this includes pull request changes.
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -144,10 +156,6 @@ Use policies to protect your branches by requiring successful builds before merg
 1. Edit a file in your new branch. **Commit** your change to the new branch.
 1. Select **Pull requests**. Select **New pull request**.
 1. Create the pull request. Navigate back to your build pipeline. A build will be queued or completed for the merge commit of your pull request.
-
-# [YAML](#tab/yaml)
-
-Unless you explicitly override `trigger` in your YAML file, all changes in any of the branches will trigger a build. And, this includes pull request changes.
 
 ---
 

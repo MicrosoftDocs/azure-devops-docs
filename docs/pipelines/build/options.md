@@ -41,11 +41,9 @@ If you specify a description here, it is shown near the name of the build pipeli
 
 <h2 id="build-number-format">Build number format</h2>
 
-# [Designer](#tab/designer)
-
-If you leave this field blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
-
 # [YAML](#tab/yaml)
+
+::: moniker range="vsts"
 
 In YAML, this property is called `name`.
 If not specified, your completed build is given a unique integer as its name.
@@ -57,6 +55,16 @@ name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)
 steps:
 - script: echo hello world
 ```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+If you leave this field blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
 
 ---
 

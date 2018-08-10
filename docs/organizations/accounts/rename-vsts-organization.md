@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/26/2018
 monikerRange: 'vsts'
 ---
+
 # Rename your VSTS organization
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 You can change your VSTS organization name (URL) at any time.
 

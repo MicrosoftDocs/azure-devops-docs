@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Cloud Solution Providers: set up billing for your customers for VSTS and Visual Studio
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../../_shared/version-vsts-only.md)]
 
 Partners in the [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) program
 can purchase VSTS, Visual Studio cloud subscriptions, and Xamarin University for their customers

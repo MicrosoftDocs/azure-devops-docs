@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Change application access policies for your organization
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 VSTS offers the capability for other apps to integrate with its services and resources in your VSTS organization. To access your organization without asking for user credentials multiple times, apps can use the following authentication methods:
 

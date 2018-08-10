@@ -12,9 +12,10 @@ author: chcomley
 ms.date: 03/21/2018
 monikerRange: 'vsts'
 ---
+
 # Troubleshoot managing group-based licensing
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 #### Q: Will my users lose their access level and project membership if I remove a group rule?
 

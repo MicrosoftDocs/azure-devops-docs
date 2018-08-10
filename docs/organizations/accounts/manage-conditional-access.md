@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 10/06/2017
 monikerRange: 'vsts'
 ---
-#	Manage conditional access to VSTS
 
-**VSTS**
+# Manage conditional access to VSTS
+
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Conditional access offers simple ways to help secure resources for VSTS organizations backed by an Azure Active 
 Directory (AAD) tenant.  Conditional access policies like multi-factor 

@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
+
 # Manage users for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Add users to your VSTS organization and specify the level of features they can use, such as Basic or Stakeholder.  
 These kinds of users can join your VSTS organization for free:

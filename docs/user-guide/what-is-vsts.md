@@ -8,24 +8,25 @@ ms.manager: douge
 ms.author: kaelli
 ms.date: 06/22/2017
 ms.topic: overview
+monikerRange: 'vsts'
 ---
 
 # What is VSTS?
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-Visual Studio Team Services (VSTS) is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including: 
+Visual Studio Team Services (VSTS) is a cloud service for collaborating on code development. It provides an integrated set of features that you access through your web browser or IDE client, including:
 
-- Git repositories for source control of your code   
-- Build and release management to support continuous integration and delivery of your apps 
-- Agile tools to support planning and tracking your work, code defects, and issues using Kanban and Scrum methods 
-- A variety of tools to test your apps, including manual/exploratory testing, load testing, and continuous testing 
-- Highly customizable dashboards for sharing progress and trends 
-- Built-in wiki for sharing information with your team 
+- Git repositories for source control of your code
+- Build and release management to support continuous integration and delivery of your apps
+- Agile tools to support planning and tracking your work, code defects, and issues using Kanban and Scrum methods
+- A variety of tools to test your apps, including manual/exploratory testing, load testing, and continuous testing
+- Highly customizable dashboards for sharing progress and trends
+- Built-in wiki for sharing information with your team
 
 In addition, the VSTS ecosystem provides support for adding extensions, integrating with other popular services, such as: Campfire, Slack, Trello, UserVoice, and more, and developing your own custom extensions.  
 
-Choose VSTS when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. 
+Choose VSTS when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights.
 
 ## Where do I start?
 
@@ -35,11 +36,10 @@ Sign up for free by creating an organization and then, either upload your code t
 
 [![Sign up for VSTS](_img/what-is-vsts-sign-up-step-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/what-is-vsts-add-code-ide-step-2.png)](code-with-git.md)
 
-
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Sign up and invite team mates](sign-up-invite-teammates.md)
+> [Sign up and invite teammates](sign-up-invite-teammates.md)
 
 ## Related articles
 

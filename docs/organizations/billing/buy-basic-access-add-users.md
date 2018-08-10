@@ -12,10 +12,9 @@ ms.date: 08/02/2018
 monikerRange: 'vsts'
 ---
 
-
 # Quickstart: Pay for VSTS users (Basic)
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 In this quickstart, you'll learn how to pay for more users in your VSTS organization. You only need to pay for users when your team size exceeds the free limits. It's free to add users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/team-services/pricing/), plus you get 5 additional users free in your VSTS organization.
 

@@ -12,11 +12,11 @@ ms.date: 10/06/2017
 monikerRange: 'vsts'
 ---
 
-
 <a name="SetUpCurrentUsers"></a>
-#  Add VSTS organization users to your Azure Active Directory
 
-**VSTS**
+# Add VSTS organization users to your Azure Active Directory
+
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 If your VSTS organization was created with a Microsoft account, 
 you can connect your VSTS organization to your 

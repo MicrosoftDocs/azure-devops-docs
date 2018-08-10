@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Access VSTS with Azure Active Directory
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Do you want to authenticate users and control access to
 your VSTS organization the same way that you

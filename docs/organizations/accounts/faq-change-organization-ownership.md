@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 10/09/2017
 monikerRange: 'vsts'
 ---
+
 # Troubleshoot changing organization owner for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="find-owner-pca"></a>
 

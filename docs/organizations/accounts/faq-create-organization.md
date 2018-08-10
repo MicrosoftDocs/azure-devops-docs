@@ -11,10 +11,10 @@ author: chcomley
 ms.date: 10/10/2017
 monikerRange: 'vsts'
 ---
-#	Troubleshoot creating a VSTS organization
 
-**VSTS**
+# Troubleshoot creating a VSTS organization
 
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="free-users"></a>
 

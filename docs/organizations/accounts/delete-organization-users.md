@@ -12,10 +12,9 @@ ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
 
-
 # Delete users from Visual Studio Team Services (VSTS)
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 If a user no longer requires access to a team project or your VSTS organization, you can remove their access to a team project or your organization.
 
