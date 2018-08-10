@@ -22,17 +22,25 @@ monikerRange: '>= tfs-2018'
 
 You can select specific sets of servers from a deployment group to receive the deployment by specifying the machine tags that you have defined for each server in the deployment group. You can also specify the proportion of the target servers that the process should deploy to at the same time. This ensures that the app running on these servers is capable of handling requests while the deployment is taking place.
 
-# [Web](#tab/web)
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+> [!NOTE]
+> Deployment group phases are not yet supported in YAML.
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
 
 You add a deployment group phase in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a release pipeline. The properties for the deployment group phase are displayed when you select the phase in the editor.
 
 > [!NOTE]
 > Deployment group phases can only be used in release pipelines. They cannot be used in build pipelines.
-
-# [YAML](#tab/yaml)
-
-> [!NOTE]
-> Deployment group phases are not yet supported in YAML.
 
 ---
 

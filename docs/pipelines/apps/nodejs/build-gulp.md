@@ -68,17 +68,9 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 Do you want to define your build process in your web browser or configure it as code in YAML?
 
-# [Web](#tab/web)
-
-**VSTS | TFS**
-
-Choose this option if you prefer a graphical interface in your web browser.
-
-![PowerShell script task says "Hello World"](../../_shared/_img/powershell-script-hello-world.png)
-
 # [YAML](#tab/yaml)
 
-**VSTS**
+::: moniker range="vsts"
 
 Choose this option if you want the advantages of configuration as code. This means your pipeline is versioned with your code and follows the same branching structure as your code. 
 
@@ -87,7 +79,19 @@ steps:
 - script: echo hello world 
 ```
 
-[Learn more about YAML builds](../../build/yaml.md).
+[Get started with YAML builds](../../get-started-yaml.md).
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+Choose this option if you prefer a graphical interface in your web browser.
+
+![PowerShell script task says "Hello World"](../../_shared/_img/powershell-script-hello-world.png)
 
 ---
 
@@ -99,7 +103,7 @@ steps:
 
 Begin by creating your build pipeline.
 
-# [VSTS or TFS repo](#tab/gitvsts/web)
+# [VSTS or TFS repo](#tab/gitvsts/designer)
 
 1. Navigate to the **Files** tab of the **Code** hub, and then choose **Set up build**.
 
@@ -121,7 +125,7 @@ To create a pipeline that is configured as code, you'll modify a YAML file in th
 
 1. Replace the contents of the file with code from the next section.
 
-# [GitHub repo](#tab/github/web)
+# [GitHub repo](#tab/github/designer)
 
 In VSTS:
 
@@ -148,7 +152,7 @@ While a CI build process is a powerful way to do day-to-day development, continu
 
 To get ready for continuous deployment, choose which kind of deployment target you want, and then adjust your CI process as needed.
 
-# [Azure web app or IIS server](#tab/deploy-windows/web)
+# [Azure web app or IIS server](#tab/deploy-windows/designer)
 
 All the tasks you need were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
@@ -185,7 +189,7 @@ steps:
 
 Commit the above change to the master branch.
 
-# [Linux VM](#tab/deploy-linux/web)
+# [Linux VM](#tab/deploy-linux/designer)
 
 To prepare your CI build to deploy to a Linux VM:
 
@@ -226,7 +230,7 @@ steps:
 
 Commit the above change to the master branch.
 
-# [Container](#tab/deploy-container/web)
+# [Container](#tab/deploy-container/designer)
 
 To deploy to a container service (such as Azure web apps for containers, or a Kubernetes cluster):
 
@@ -265,7 +269,7 @@ Commit the above change to the master branch.
 
 You're nearly ready to go. Just a few more steps to complete your CI build process.
 
-# [VSTS or TFS repo](#tab/gitvsts/web)
+# [VSTS or TFS repo](#tab/gitvsts/designer)
 
 1. For the **Agent queue**:
 
@@ -291,7 +295,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
 1. In the left column of the running build, select **Job**. After an agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
 
-# [GitHub repo](#tab/github/web)
+# [GitHub repo](#tab/github/designer)
 
 1. For the **Agent queue**:
 

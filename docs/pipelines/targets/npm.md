@@ -25,24 +25,7 @@ You can publish npm packages produced by your build to:
 
 Before you read this topic, you should understand the kind of build pipeline you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
-# [Web](#tab/web)
-
-To publish an npm package to a Package Management feed, add the **npm** task. Then, configure these options:
-
-- **working folder:** Select the folder that contains your `.npmrc` and `package.json`; leave blank if those files are at the root of the repo
-- **npm command:** `publish`
-
-![Team Build npm publish task configuration](_img/npm/team-build-npm-publish.png)
-
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
-
-To publish to a external npm registry, you must first create a service connection to point to that registry. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in registry URL and the credentials to connect to the registry.
-
 # [YAML](#tab/yaml)
-
-::: moniker range="< vsts"
-YAML is not supported in TFS.
-::: moniker-end
 
 ::: moniker range="vsts"
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
@@ -61,6 +44,24 @@ To publish a package to a npm registry, add the following snippet to your .vsts-
 For a list of other options, see the [npm task](../tasks/package/npm.md).
 
 ::: moniker-end
+
+::: moniker range="< vsts"
+YAML is not supported in TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+To publish an npm package to a Package Management feed, add the **npm** task. Then, configure these options:
+
+- **working folder:** Select the folder that contains your `.npmrc` and `package.json`; leave blank if those files are at the root of the repo
+- **npm command:** `publish`
+
+![Team Build npm publish task configuration](_img/npm/team-build-npm-publish.png)
+
+[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
+
+To publish to a external npm registry, you must first create a service connection to point to that registry. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in registry URL and the credentials to connect to the registry.
+
 ---
 
 > [!NOTE]

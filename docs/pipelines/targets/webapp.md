@@ -48,12 +48,6 @@ https://github.com/adventworks/dotnetcore-sample
 
 Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sample code.
 
-# [Designer](#tab/designer)
-
-After you have a build, create a release pipeline and select the **Azure App Service Deployment** template for your environment.
-This automatically adds the necessary tasks. Link the build as an artifact to this release pipeline. Save the pipeline and create a release to see it in action.
-Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure web app deployment.
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -69,19 +63,15 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
+# [Designer](#tab/designer)
+
+After you have a build, create a release pipeline and select the **Azure App Service Deployment** template for your environment.
+This automatically adds the necessary tasks. Link the build as an artifact to this release pipeline. Save the pipeline and create a release to see it in action.
+Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure web app deployment.
+
 ---
 
 ## Azure App Service Deploy task
-
-# [Designer](#tab/designer)
-
-The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** task. 
-This task is automatically added to the release pipeline when you select one of the pre-built deployment templates for Azure app service deployment.
-Templates exist for apps developed in various programming languages. If you cannot find a template for your language, select the generic **Azure App Service Deployment** template.
-
-When you link the artifact in your release pipeline to a build that compiles and publishes the web package,
-it is automatically downloaded and placed into the `$(System.ArtifactsDirectory)` folder on the agent as part of the release.
-This is where the task picks up the web package for deployment.
 
 # [YAML](#tab/yaml)
 
@@ -150,6 +140,16 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
+# [Designer](#tab/designer)
+
+The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** task. 
+This task is automatically added to the release pipeline when you select one of the pre-built deployment templates for Azure app service deployment.
+Templates exist for apps developed in various programming languages. If you cannot find a template for your language, select the generic **Azure App Service Deployment** template.
+
+When you link the artifact in your release pipeline to a build that compiles and publishes the web package,
+it is automatically downloaded and placed into the `$(System.ArtifactsDirectory)` folder on the agent as part of the release.
+This is where the task picks up the web package for deployment.
+
 ---
 
 <a name="endpoint"></a>
@@ -158,6 +158,20 @@ YAML builds are not yet available on TFS.
 
 The **Azure App Service Deploy** task, similar to other built-in Azure tasks, requires an Azure service connection as an
 input. The Azure service connection stores the credentials to connect from VSTS or TFS to Azure. 
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from VSTS to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not yet available on TFS.
+
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -175,28 +189,9 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ::: moniker-end
 
-# [YAML](#tab/yaml)
-
-::: moniker range="vsts"
-
-You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from VSTS to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
-
-::: moniker-end
-
-::: moniker range="< vsts"
-
-YAML builds are not yet available on TFS.
-
-::: moniker-end
-
 ---
 
 ## Deploy to a virtual application
-
-# [Designer](#tab/designer)
-
-By default, your deployment happens to the root application in the Azure web app. If you want to deploy to a specific virtual application,
-type its name in the **Virtual Application** property of the **Azure App Service Deploy** task.
 
 # [YAML](#tab/yaml)
 
@@ -218,14 +213,14 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
+# [Designer](#tab/designer)
+
+By default, your deployment happens to the root application in the Azure web app. If you want to deploy to a specific virtual application,
+type its name in the **Virtual Application** property of the **Azure App Service Deploy** task.
+
 ---
 
 ## Deploy to a slot
-
-# [Designer](#tab/designer)
-
-You can configure the Azure web app to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
-Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
 
 # [YAML](#tab/yaml)
 
@@ -259,14 +254,14 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
+# [Designer](#tab/designer)
+
+You can configure the Azure web app to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
+Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
+
 ---
 
 ## Deploy to multiple web apps
-
-# [Designer](#tab/designer)
-
-If you want to deploy to multiple web apps, add environments to your release pipeline.
-You can control the order of deployment. To learn more, see [Environments](../release/environments.md).
 
 # [YAML](#tab/yaml)
 
@@ -317,6 +312,11 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
+# [Designer](#tab/designer)
+
+If you want to deploy to multiple web apps, add environments to your release pipeline.
+You can control the order of deployment. To learn more, see [Environments](../release/environments.md).
+
 ---
 
 ## Configuration changes
@@ -326,15 +326,6 @@ This is particularly useful when you deploy the same build to multiple web apps 
 For example, if your **Web.config** file contains a connection string named `connectionString`,
 you can change its value before deploying to each web app. You can do this either by applying
 a web config transformation or by substituting variables in your Web.config file. 
-
-# [Designer](#tab/designer)
-
-To change the `connectionString` using variable substitution:
-
-1. Create a release pipeline with two environments.
-1. Link the artifact of the release to the build that produces the web package.
-1. Define `connectionString` as a variable in each of the environments. Set the appropriate value.
-1. Select the **XML variable substitution** option under the **File Transforms and Variable Substitution Options** of the **Azure App Service Deploy** task.
 
 # [YAML](#tab/yaml)
 
@@ -374,22 +365,20 @@ YAML builds are not yet available on TFS.
 
 ::: moniker-end
 
+# [Designer](#tab/designer)
+
+To change the `connectionString` using variable substitution:
+
+1. Create a release pipeline with two environments.
+1. Link the artifact of the release to the build that produces the web package.
+1. Define `connectionString` as a variable in each of the environments. Set the appropriate value.
+1. Select the **XML variable substitution** option under the **File Transforms and Variable Substitution Options** of the **Azure App Service Deploy** task.
+
 ---
 
 ## Deploying conditionally
 
 You may choose to deploy only certain builds to your Azure web app. 
-
-# [Designer](#tab/designer)
-
-In your release pipeline you can implement various checks and conditions to control the deployment.
-
-* Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
-* Set **pre-deployment approvals** as a pre-condition for deployment to an environment.
-* Configure **gates** as a pre-condition for deployment to an environment.
-* Specify conditions for a task to run.
-
-To learn more, see [Release, branch, and environment triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 # [YAML](#tab/yaml)
 
@@ -419,6 +408,17 @@ To learn more about conditions, see [Specify conditions](../process/conditions.m
 YAML builds are not yet available on TFS.
 
 ::: moniker-end
+
+# [Designer](#tab/designer)
+
+In your release pipeline you can implement various checks and conditions to control the deployment.
+
+* Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
+* Set **pre-deployment approvals** as a pre-condition for deployment to an environment.
+* Configure **gates** as a pre-condition for deployment to an environment.
+* Specify conditions for a task to run.
+
+To learn more, see [Release, branch, and environment triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 ---
 
