@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 # Add more users with Basic features or Visual Studio subscriptions
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 When your organization stays within the free limits, you don't have to pay for users to join your organization.
 You only have to pay if you have more than 5 users who need Basic features, and they don't have Visual Studio subscriptions.

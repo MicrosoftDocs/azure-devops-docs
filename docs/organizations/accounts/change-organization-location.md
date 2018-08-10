@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Find or change your VSTS organization location (region)
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 When you [create an organization](create-organization-msa-or-work-student.md), you can choose the region where VSTS hosts your
 organization.  You may choose your organization's region due to locality and network latency or because you have sovereignty

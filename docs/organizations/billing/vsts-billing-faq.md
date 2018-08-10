@@ -12,8 +12,9 @@ ms.date: 06/13/2018
 monikerRange: 'vsts'
 ---
 
-
 # Visual Studio Team Services (VSTS) billing FAQ
+
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Make sure to review [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services//) and the [VSTS billing overview](overview.md) to start.
 

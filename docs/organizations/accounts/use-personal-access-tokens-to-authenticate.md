@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 06/13/2018
+ms.date: 08/09/2018
 monikerRange: '>= tfs-2017'
 ---
 # Authenticate access with personal access tokens for VSTS and TFS
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+[!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
 
 Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) use enterprise-grade authentication, backed by Microsoft account or Azure Active Directory (Azure AD), to protect and secure your data.  Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in)
 natively support Microsoft account and Azure AD authentication, so you can directly use those authentication methods to sign in.

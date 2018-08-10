@@ -14,7 +14,6 @@ ms.date: 09/07/2017
 monikerRange: '>= tfs-2013'
 ---
 
-
 # Navigate in Team Explorer
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]

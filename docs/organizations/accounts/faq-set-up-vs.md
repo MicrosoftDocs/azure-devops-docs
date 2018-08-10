@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
+
 # Troubleshoot setting up Visual Studio with VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 ## Visual Studio
 

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # About organization management
 
-**VSTS|TFS 2018|TFS 2017|TFS 2015|TFS 2013**
+[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 With a Visual Studio Team Services (VSTS) organization, you gain access to the platform in which you can:
 

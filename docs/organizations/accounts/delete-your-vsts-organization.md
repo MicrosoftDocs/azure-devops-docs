@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Delete your VSTS organization
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 If you don't need your  VSTS organization, you can delete it.
 If you change your mind within 30 days,

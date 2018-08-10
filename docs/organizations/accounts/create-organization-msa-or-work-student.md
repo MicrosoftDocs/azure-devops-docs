@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/26/2017
 monikerRange: 'vsts'
 ---
+
 # Create your VSTS organization with a personal Microsoft account or a work/school account
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Sign up for a [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) 
 organization to upload and share code in free unlimited private 

@@ -12,7 +12,7 @@ monikerRange: 'vsts'
 ---
 # Add a group rule to assign access levels and extensions to users
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 VSTS includes group-based licensing for Azure AD groups and VSTS groups.
 You can assign an access level or extensions to a group, and VSTS will ensure that those resources are assigned to all members of the group.
