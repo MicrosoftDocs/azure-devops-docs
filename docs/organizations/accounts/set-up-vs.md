@@ -16,25 +16,25 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-When you first launch [Visual Studio 2015](https://visualstudio.microsoft.com/products/vs-2015-product-editions), 
-you can sign in and connect to [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs).
+When you first open [Visual Studio 2015](https://visualstudio.microsoft.com/products/vs-2015-product-editions), 
+you can sign in and connect to [Visual Studio Team Services (VSTS)](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs).
 
-If you have already gone through Visual Studio sign in, or you are using Visual Studio 2017, then [learn how](../../repos/git/gitquickstart.md) to connect to 
-your VSTS from the Team Explorer window.
+If you've already gone through Visual Studio sign-in, or you're using Visual Studio 2017, then [learn how](../../repos/git/gitquickstart.md) to connect to 
+VSTS from the Team Explorer window.
 
-Once connected, you can store or share code in free, unlimited, private, 
-cloud-based Git repositories or Team Foundation version control. 
-Organize and manage your work using Agile tools for DevOps, 
+After you're connected, you can store or share code in free, unlimited, private, 
+cloud-based Git repositories or Team Foundation Version Control. 
+Organize and manage your work by using Agile tools for DevOps, 
 continuous integration, and continuous delivery so your team can build often, 
 test early, and ship faster.
 
 > To set up Visual Studio without VSTS, 
-> learn how to [get started here](https://msdn.microsoft.com/library/e2h7fzkw.aspx). 
+> learn how to [get started](https://msdn.microsoft.com/library/e2h7fzkw.aspx). 
 > To host your own server, 
 > learn how to [install and set up Team Foundation Server](/tfs/server/install/get-started).
 
 VSTS is free for 
-[up to 5 users with access to Basic features](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) 
+[up to five users with access to Basic features](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) 
 and for unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/products/how-to-buy-vs) and 
 [Stakeholders who can access limited features](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs).
 Learn [what else you get with VSTS](https://visualstudio.microsoft.com/pricing/visual-studio-team-services-pricing-vs). 
@@ -46,7 +46,7 @@ If you want, you can also use VSTS with any IDE or code editor, like:
 
 ##	How do I set up Visual Studio 2015 for VSTS during sign in?
 
-0.  [Download and install Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409), 
+1.  [Download and install Visual Studio](https://go.microsoft.com/fwlink/?LinkId=309297&clcid=0x409&slcid=0x409), 
 if you don't have the version you want already. 
 [Which versions can I use with VSTS?](faq-set-up-vs.md#vs-versions)
 
@@ -55,7 +55,7 @@ if you don't have the version you want already.
 	that's available with your subscription.
 
 0.  Start Visual Studio, 
-then sign in to create your profile. 
+and then sign in to create your profile. 
 
 	This profile saves your settings and roams with you 
 	when you sign in to Visual Studio on any computer. 
@@ -68,9 +68,9 @@ then sign in to create your profile.
 	[Can't sign in?](faq-set-up-vs.md#cannot-sign-in)
 
 0.	Enter your sign-in address, 
-then enter your password.
+and then enter your password.
 
-0.	Add your Visual Studio profile details. You only have to do this once. 
+0.	Add your Visual Studio profile details. You have to do this only once. 
 
 	![Create your profile](_img/set-up-vs/profile-organization-details.png)
 
@@ -115,9 +115,9 @@ or change them later in Visual Studio options.
 ### Related articles
 
 *	Add code to [Git](../../repos/git/share-your-code-in-git-vs.md) 
-or [Team Foundation](../../repos/tfvc/share-your-code-in-tfvc-vs.md) version control
+or [Team Foundation Version Control](../../repos/tfvc/share-your-code-in-tfvc-vs.md).
 
 *	[Create your backlog](../../boards/backlogs/create-your-backlog.md) to organize your work, 
 	[manage your process](../../organizations/settings/work/manage-process.md), 
-	or [customize your process](../../organizations/settings/work/customize-process.md)
+	or [customize your process](../../organizations/settings/work/customize-process.md).
 
