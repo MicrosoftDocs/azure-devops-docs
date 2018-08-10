@@ -16,6 +16,8 @@ monikerRange: 'vsts'
 
 # Invite external users
 
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+
 The team project is a container and security boundary for your software development assets: work items, code, builds, etc.
 When you add someone as a member of a project, you are also trusting that person with some additional privileges.
 A project member has access to organization-level resources and additional groups (or scopes) beyond the project.

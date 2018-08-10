@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 # Frequently asked questions about trials for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="organization-trial"></a>
 

@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
 # Buy access to Team Foundation Server or the TFS Test hub
 
-**TFS 2018** | **TFS 2017** | **TFS 2015.2**
+[!INCLUDE [version-tfs-2015-rtm](../../pipelines/_shared/version-tfs-2015-rtm.md)]
 
 For [TFS](https://visualstudio.microsoft.com/tfs/) you pay per user for [Basic](https://visualstudio.microsoft.com/team-services/compare-features/) features like Code or Agile Planning.
 Users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/vs/pricing/) are free

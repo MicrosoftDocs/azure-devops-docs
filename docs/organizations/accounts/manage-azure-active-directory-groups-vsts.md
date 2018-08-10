@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 07/26/2018
 monikerRange: 'vsts'
 ---
-# VSTS: Access with Azure Active Directory (Azure AD) groups
 
-**VSTS**
+# Access with Azure Active Directory (Azure AD) groups
+
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Do you want an easier way to control who can access your team's 
 critical resources and key business assets in VSTS? 

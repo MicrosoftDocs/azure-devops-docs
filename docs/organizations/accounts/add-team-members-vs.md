@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 # Add project members in VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Add members to your project in VSTS, 
 so you can share code and work with your team, track their status,

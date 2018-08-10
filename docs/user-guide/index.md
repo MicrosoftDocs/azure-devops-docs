@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # New User Guide
 
-**VSTS**
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
 New to Visual Studio Team Services (VSTS)?
 

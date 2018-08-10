@@ -12,6 +12,8 @@ monikerRange: '>= tfs-2013'
 ---
 # Buy Visual Studio App Center resources
 
+[!INCLUDE [version-vsts-tfs-all-versions](../../../_shared/version-vsts-tfs-all-versions.md)]
+
 Partners in the CSP program can enable their customers to purchase [App Center resources](http://visualstudio.microsoft.com/app-center/),
 including build pipelines, test device concurrencies, and advanced push notifications, using a CSP-based Azure subscription.
 

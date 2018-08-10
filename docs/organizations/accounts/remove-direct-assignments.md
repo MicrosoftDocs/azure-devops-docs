@@ -10,9 +10,10 @@ author: chcomley
 ms.date: 04/20/2018
 monikerRange: 'vsts'
 ---
+
 # Remove direct assignments from users
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 If you want a user’s resources to only be managed by the groups which they are in, you must remove their direct assignments. If a user has resources assigned to them directly (via individual assignment), they will be assigned those resources whether or not they are assigned or taken away from groups they are in.
 

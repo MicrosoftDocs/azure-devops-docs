@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Delete users from VSTS connected to Azure AD
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with VSTS.
 

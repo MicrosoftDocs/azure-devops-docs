@@ -11,7 +11,10 @@ author: chcomley
 ms.date: 10/06/2017
 monikerRange: '>= tfs-2015'
 ---
+
 # Subscribe to the Xamarin University for continued learning
+
+[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 [Xamarin University](https://www.xamarin.com/university) offers live, online, and office hours classes, self-guided learning,
 and guest lectures.

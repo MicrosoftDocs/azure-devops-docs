@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 02/27/2018
 monikerRange: 'vsts'
 ---
+
 # Troubleshoot deleting or restoring your VSTS organization
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="find-owner"></a>
 

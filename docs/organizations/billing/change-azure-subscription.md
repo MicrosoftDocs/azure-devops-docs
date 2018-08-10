@@ -15,7 +15,7 @@ monikerRange: 'vsts'
 
 # Change the Azure subscription that your VSTS organization uses for billing
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 If you want to use a different Azure subscription to bill purchases for your VSTS organization, you can either move it to a different Azure subscription that you have access to, or remove the current Azure subscription and then buy again using a new subscription.
 

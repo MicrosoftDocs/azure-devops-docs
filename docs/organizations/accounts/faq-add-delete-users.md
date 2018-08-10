@@ -12,10 +12,9 @@ ms.date: 10/6/2017
 monikerRange: 'vsts'
 ---
 
-
 # Troubleshoot adding and deleting organization users in the VSTS Users hub
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 ## Permissions 
 

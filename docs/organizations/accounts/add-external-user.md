@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 # Add external users to your VSTS organization
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 If you’re an Azure Active Directory (Azure AD)-backed Visual Studio Team Services (VSTS) organization user who wants to collaborate with external users, you can invite external users to your VSTS organization. To do so, you must add the identities of your external users to your Azure AD and VSTS organizations. Doing this also grants the users some additional privileges. Learn more about the [additional organization-level resources](resources-granted-to-project-members.md).
 

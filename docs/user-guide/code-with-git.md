@@ -12,10 +12,9 @@ ms.topic: quickstart
 monikerRange: 'vsts'
 ---
 
-
 # Code with Git
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
 After you create a new organization and team project in VSTS, you can begin sharing your code with others.
 

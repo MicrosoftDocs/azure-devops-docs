@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 08/01/2018
 monikerRange: 'vsts'
 ---
+
 # Set up Visual Studio with VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 When you first launch [Visual Studio 2015](https://visualstudio.microsoft.com/products/vs-2015-product-editions), 
 you can sign in and connect to [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs).

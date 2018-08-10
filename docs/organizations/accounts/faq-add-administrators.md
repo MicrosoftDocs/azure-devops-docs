@@ -12,10 +12,9 @@ ms.date: 10/6/2017
 monikerRange: 'vsts'
 ---
 
-
 # Troubleshooting adding administrators to VSTS project collections and projects
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 #### Q: When do I need to add someone to the team project collection administrator role in TFS?
 
