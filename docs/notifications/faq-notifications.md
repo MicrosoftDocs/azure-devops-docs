@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2015'
 ## Can I receive emails in plain text? 
 No. This was supported in earlier versions of VSTS and TFS, but all emails are now HTML formatted.
 
-## How can I avoid receiving any notifications for activity in an account? 
+## How can I avoid receiving any notifications for activity in an organization? 
 Because of custom subscriptions created by other users and admins, there is no way to completely avoid receiving any notifications, but you can do these two actions to minimize the number you receive: 
 - Unsubscribe from all default and admin-created team and group subscriptions
 - Disable or remove all custom subscriptions.
@@ -37,7 +37,7 @@ Previously each recipient would receive their own individually-addressed email, 
 ## Related notes
 
 - [About notifications](about-notifications.md)
-- [Manage personal notifications](manage-team-notifications.md) 
+- [Manage personal notifications](howto-manage-team-notifications.md) 
 - [Unsubscribe from a notification](unsubscribe-default-notification.md) 
 
 

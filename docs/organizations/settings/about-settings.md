@@ -81,7 +81,7 @@ Individual contributors can set their user preferences, enable features that are
 <td><ul>
 <li>[View your subscriptions, opt-out as needed](../../notifications/unsubscribe-default-notification.md)</li>
 <li>[Change your preferred email address](../../notifications/change-email-address.md)</li>
-<li>[Manage personal notifications](../../notifications/manage-personal-notifications.md)</li>
+<li>[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)</li>
 </ul></td>
 <td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When an VSTS project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
 </ul></td>
@@ -135,7 +135,7 @@ For a complete overview of all Agile tools that you can configure, see [Configur
 <tr>
 <td> **Notifications** </td>
 <td><ul>
-<li>[Manage team notifications](../../notifications/manage-team-notifications.md)</li>
+<li>[Manage team notifications](../../notifications/howto-manage-team-notifications.md)</li>
 </ul></td>
 <td>A number of team notifications are automatically defined when a team is added. To learn more about how notifications are managed, see [About notifications](../../notifications/about-notifications.md).   </td>
 </tr>
@@ -231,7 +231,7 @@ From the administrative pages for a project, you can configure the settings show
 <td><ul>
 <li>Manage project-level notifications</li>
 </ul></td>
-<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md).</td>
+<td>A number of project-level notifications are automatically defined when a project is added. Notifications at the project-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md).</td>
 </tr>
 <tr>
 <td>**Service Hooks**</td>
@@ -437,7 +437,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md). </td>
+<td>A number of notifications are automatically defined when an organization is added. Notifications at the organization-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
 </tr>
 <tr>
 <td>**Extensions**</td>
@@ -525,7 +525,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <td><ul>
 <li>Manage collection-level notifications </li>
 </ul></td>
-<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/manage-team-notifications.md). </td>
+<td>A number of notifications are automatically defined when a project collection is added. Notifications at the collection-level are managed in much the same way as they are at the [team level](../../notifications/howto-manage-team-notifications.md). </td>
 </tr>
 <tr>
 <td>**Extensions**</td>

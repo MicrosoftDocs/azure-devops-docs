@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "docs/notifications/manage-personal-notifications.md",
+      "redirect_url": "/vsts/notifications/howto-manage-personal-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/notifications/manage-team-notifications.md",
+      "redirect_url": "/vsts/notifications/howto-team-personal-notifications",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/package/npm/install.md",
       "redirect_url": "/vsts/package/get-started-npm",
       "redirect_document_id": false

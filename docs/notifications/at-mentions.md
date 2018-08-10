@@ -24,7 +24,7 @@ The **@mention** control allows you to quickly pull someone into a work item o
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
-> The **@mention** control is available from TFS 2015.2 and later versions.    
+> The **@mention** control is available from TFS 2015 Update 2 and later versions.    
 ::: moniker-end
 
 <a id="mention-person-id">  </a>
@@ -50,7 +50,7 @@ Names of those that you mention appear in <span style="color:#0099FF">blue text<
 
 Upon completion of your selection and text entry, your **@mention** user will receive an email alerting them about the mention.  
 
-![Email sent to at-mention user account](_img/mail-to-at-mention-user.png)
+![Email sent to at-mention user organization](_img/mail-to-at-mention-user.png)
 
 When viewing their own mentioned names in conversations, users will notice that their own name is are highlighted in orange text.  
 

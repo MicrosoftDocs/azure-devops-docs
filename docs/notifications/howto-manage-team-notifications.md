@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 <b>VSTS | TFS 2018 | TFS 2017.1 | [Previous versions](../boards/queries/alerts-and-notifications.md)</b> 
 
 > [!NOTE]  
-> This topic applies to VSTS and to TFS 2017.1 and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their account menu and to receive notifications. 
+> This topic applies to VSTS, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../boards/queries/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications. 
  
 As changes occur to work items, code reviews, pull requests, source control files, and builds, your team can be notified via email. For example, when a high priority work item is assigned to your team's area path, an email can be sent to the team.
 
@@ -28,7 +28,7 @@ As changes occur to work items, code reviews, pull requests, source control file
 
 A subscription lets you control what your team should be notified about and how the team will receive those notifications.
 
-1. Open the Notifications hub under team settings: `https://{account}.visualstudio.com/{project}/_admin/_notifications?view=contents`
+1. Open the Notifications hub under team settings: `https://{organization}.visualstudio.com/{project}/_admin/_notifications?view=contents`
 	
 	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
 
@@ -72,7 +72,7 @@ A subscription lets you control what your team should be notified about and how 
 
 Choose the default method for your team to receive notifications by updating the **team delivery settings**.
 
-1. Open the Notifications hub under team settings: `https://{account}.visualstudio.com/{project}/_admin/_notifications?view=contents`
+1. Open the Notifications hub under team settings: `https://{organization}.visualstudio.com/{project}/_admin/_notifications?view=contents`
 	
 	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
 
@@ -86,5 +86,4 @@ Choose the default method for your team to receive notifications by updating the
 
 ## Related topics
 
-- [Manage personal notification settings](manage-personal-notifications.md)  
-
+- [Manage personal notification settings](howto-manage-personal-notifications.md)  

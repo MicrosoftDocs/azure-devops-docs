@@ -29,7 +29,7 @@ Use the **#ID** control to quickly link objects to work items.
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 > [!NOTE]  
-> The **#ID** special control feature is available from TFS 2015.1 and later versions.    
+> The **#ID** special control feature is available from TFS 2015 Update 1 and later versions.    
 
 ::: moniker-end
 
@@ -56,7 +56,7 @@ You can also use the **#ID** control in pull request discussions, commit comment
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
-> Requires TFS 2015.2 or a later version.   
+> Requires TFS 2015 Update 2 or a later version.   
 
 ::: moniker-end
 
