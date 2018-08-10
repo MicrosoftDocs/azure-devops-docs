@@ -63,7 +63,7 @@ Make sure that the new owner:
 
 1. Sign in to your VSTS organization (`https://<yourorganization>.visualstudio.com`).
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-change-organization-ownership.md#SelectOrgAcctMSAcct)
+   [Why am I asked to choose between my work or school account and my personal account?](faq-change-organization-ownership.md)
 
 2. To find the current organization owner, go to your VSTS organization settings pane.
 
