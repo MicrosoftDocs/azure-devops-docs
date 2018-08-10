@@ -37,7 +37,7 @@ Members of the Project Administrators groups can create and administer team room
 
 	![Team room tile on project home page](_img/ALM_CT_TeamroomTile.png) 
 	
-	If you don't see the room tile, [(VSTS) ask your account administrator to grant you a Basic license](../organizations/accounts/add-organization-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
+	If you don't see the room tile, [(VSTS) ask your organization administrator to grant you a Basic license](../organizations/accounts/add-organization-users-from-user-hub.md) or [(on-premises TFS) request Basic access from your TFS administrator](../organizations/security/change-access-levels.md).  
 
 	If you can't enter the room, get added as a member: [(VSTS) Add team members](../organizations/accounts/add-team-members-vs.md) or [(on-premises TFS) Add team members](../organizations/settings/add-teams.md#add-team-members).
 
@@ -63,17 +63,17 @@ Members of the Project Administrators groups can create and administer team room
 
 <a id="addmembers"></a> 
 ## Add members
-You can invite others who have access to the account or project to participate in your team room. 
+You can invite others who have access to the organization or project to participate in your team room. 
 
 1. If you're not a team administrator, [get added as one](../organizations/settings/add-team-administrator.md). 
 
 2. Open **Manage Members**.
 	
-	![Click manage users to add accounts to a team room](_img/ALM_CT_ManageMembers.png) 
+	![Click manage users to add organizations to a team room](_img/ALM_CT_ManageMembers.png) 
 	
 	Only team administrators can see the links for manage users and manage events.
 
-3. Add a user account or group.
+3. Add a user organization or group.
 	
 	![Add menu on the Manage Members dialog](_img/ALM_CT_AddMembers.png) 
 
@@ -133,7 +133,7 @@ You can grant permissions to users to administer a team room.
 
 	![Open team room permissions](_img/open-security-team-room.png)  
 
-2. Add an account, set the permissions for Administer to **Allow**, and save the changes.   
+2. Add an organization, set the permissions for Administer to **Allow**, and save the changes.   
 
 	![Add menu on Permissions page for a team room](../organizations/settings/_img/add-team/team-admin-dialog.png) 
 

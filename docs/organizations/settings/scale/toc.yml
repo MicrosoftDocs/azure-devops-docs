@@ -46,7 +46,7 @@
   - name: Switch team context
     href: ../../../project/navigation/go-to-project-repo.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
   - name: Manage team notifications
-    href: ../../../notifications/manage-team-notifications.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
+    href: ../../../notifications/howto-manage-team-notifications.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
   - name: Set team favorites
     href: ../../../project/navigation/set-favorites.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
 - name: Reference

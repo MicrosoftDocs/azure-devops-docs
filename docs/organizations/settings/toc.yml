@@ -35,7 +35,7 @@
   - name: Grant or restrict permissions to select tasks
     href: ../security/restrict-access.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
   - name: Manage personal notifications
-    href: ../../notifications/manage-personal-notifications.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json 
+    href: ../../notifications/howto-manage-personal-notifications.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json 
   - name: Customize a project
     href: ./work/customize-process.md
   - name: Create and manage a process
@@ -112,7 +112,7 @@
     - name: Change your email address
       href: ../../notifications/change-email-address.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
     - name: Manage team notifications
-      href: ../../notifications/manage-team-notifications.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+      href: ../../notifications/howto-manage-team-notifications.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
   - name: Service hooks
     href: ../../service-hooks/index.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
   - name: Set dashboard permissions

@@ -76,7 +76,7 @@ When you enable a feature at the organization level, you essentially turn it on 
 
 ## Features now enabled for all VSTS projects 
 - [Approval gates in releases](../../pipelines/release/approvals/index.md)  
-- [Combine email recipients](../../notifications/manage-team-notifications.md) 
+- [Combine email recipients](../../notifications/howto-manage-team-notifications.md) 
 - [New Dashboards Experience](../../report/dashboards/dashboards.md)  
 - [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)  
 - [New Queries Experience](../../boards/queries/view-run-query.md)   
@@ -84,12 +84,12 @@ When you enable a feature at the organization level, you essentially turn it on 
 - [New Test Plan Experience](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#test-1)<br/>
 - [New Work Items Hub](../../boards/work-items/view-add-work-items.md)   
 - [NuGet.org upstream sources](../../package/nuget/upstream-sources.md) 
-- [Out of the box notifications](../../notifications/manage-personal-notifications.md).   
+- [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md).   
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
 - [Symbol server](../../pipelines/symbols/index.md)  
 - [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
 - [Task tool installers](../../pipelines/process/tasks.md#tool-installers) 
-- [Team expansion for notifications](../../notifications/manage-team-notifications.md)
+- [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
 - [Updated package experience](../../package/index.md) 
 - [Wiki](../wiki/add-edit-wiki.md)  
 
@@ -105,14 +105,14 @@ With out-of-the-box notifications, users automatically receive notifications for
 * The user has a pull request that is updated  
 * The user has a build that completes  
 
-These subscriptions appear in the new user notifications experience, and users can easily choose to opt out of any of them. To learn more, see [Manage personal notifications](../../notifications/manage-personal-notifications.md). 
+These subscriptions appear in the new user notifications experience, and users can easily choose to opt out of any of them. To learn more, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md). 
 
 
 
 <a id="team-expansion-notifications">  </a>
 ## Team expansion for notifications 
 
-Enable this feature for your account when you want notifications to be sent by default for all team-associated events. Such events include when pull requests are created or updated. Team admins can choose to opt-out of these notifications. See [Manage team notifications](../../notifications/manage-team-notifications.md).  
+Enable this feature for your account when you want notifications to be sent by default for all team-associated events. Such events include when pull requests are created or updated. Team admins can choose to opt-out of these notifications. See [Manage team notifications](../../notifications/howto-manage-team-notifications.md).  
  
 
 <a id="task-tool-installers">  </a>
