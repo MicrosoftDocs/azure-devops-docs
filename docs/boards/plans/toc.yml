@@ -33,7 +33,7 @@
   - name: Use work item templates
     href: ../backlogs/work-item-template.md?toc=/vsts/boards/plans/toc.json&bc=/vsts/boards/plans/breadcrumb/toc.json 
   - name: Manage team notifications
-    href: ../../notifications/manage-team-notifications.md?toc=/vsts/boards/plans/toc.json&bc=/vsts/boards/plans/breadcrumb/toc.json   
+    href: ../../notifications/howto-manage-team-notifications.md?toc=/vsts/boards/plans/toc.json&bc=/vsts/boards/plans/breadcrumb/toc.json   
   - name: Configure team settings
     href: ../../organizations/settings/configure-team-settings.md 
     items:
