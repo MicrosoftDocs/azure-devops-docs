@@ -24,18 +24,18 @@ You receive notifications based on rules or subscriptions. Subscriptions arise f
 - Ones that an administrator creates for a team or group that you belong to
 - Ones that you create for yourself
 
-You can manage your notifications, which you access from your account menu. Other notifications are managed by an administrator at these different levels: 
+You can manage your notifications, which you access from your organization menu. Other notifications are managed by an administrator at these different levels: 
 
 - Team notifications, managed by a team administrator
-- Project notifications, manage by a member of the Project Administrators group
-- Account/collection-level notifications, managed by a member of the Project collection Administartors group
+- Project notifications, managed by a member of the Project Administrators group
+- Organization/collection-level notifications, managed by a member of the Project Collection Administartors group
 
 ## Preferred email address
 
-Notifications are sent by default to the preferred email address for your account profile. This is typically the email address you signed into VSTS or TFS with, but can be managed via your account preferences profile page. 
+Notifications are sent by default to the preferred email address for your organization profile. This is typically the email address you signed into VSTS or TFS with, but can be managed via your organization preferences profile page. 
 
 > [!NOTE]   
-> Your preferred email address applies across all of your accounts and cannot be changed on a per-account basis. 
+> Your preferred email address applies across all of your organizations and cannot be changed on a per-organization basis. 
 
 
 ## Integrating with other services 
@@ -54,6 +54,6 @@ You can also use a third-party service like Zapier to send notifications to hund
 
 ## On-premises SMTP server (TFS)
  
-For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their account menu and to  receive notifications. 
+For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to  receive notifications. 
 
 ::: moniker-end

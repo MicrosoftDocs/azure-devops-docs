@@ -43,7 +43,7 @@ The mobile work item form will open when you click **View work item** from an em
 
 - Changes were made to a work item you're following
 - You were **@mentioned** in a discussion
-- A notification is sent based on the work item alerts you've set using [Manage personal notifications](../../notifications/manage-personal-notifications.md). 
+- A notification is sent based on the work item alerts you've set using [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md). 
 
 <img src="_img/mobile-work-email-notice.png" alt="Email received in your mobile client" style="border: 1px solid #C3C3C3;" />  
 
@@ -115,8 +115,8 @@ The browser opens to the **Assigned to me** page. From there, you can choose **F
 
 Additional experiences are in the works to improve and expand on the mobile experience. For more information, see the blog post: [The mobile work item form (preview)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/24/the-mobile-work-item-form/).
   
-- [Set personal notifications](../../notifications/manage-personal-notifications.md)  
-- [Set team notifications](../../notifications/manage-team-notifications.md)  
+- [Set personal notifications](../../notifications/howto-manage-personal-notifications.md)  
+- [Set team notifications](../../notifications/howto-manage-team-notifications.md)  
 - [Follow a work item](../../boards/work-items/follow-work-items.md)    
 
 

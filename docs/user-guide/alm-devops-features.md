@@ -774,7 +774,7 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="30%">
 
 <p><b>Personal and team notifications or alerts</b></p>
-<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../notifications/manage-personal-notifications.md) or [team notifications](../notifications/manage-team-notifications.md).</p>
+<p>Get notified as changes occur to work items, code reviews, source control files, and builds by setting [personal notifications](../notifications/howto-manage-personal-notifications.md) or [team notifications](../notifications/howto-manage-team-notifications.md).</p>
 ![Open Notifications from Organization menu](_img/features/features-notifications-option.png)  
 <br/>
 

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/26/2018
+ms.date: 08/10/2018
 monikerRange: '>= tfs-2013'
 ---
 # Organization Management

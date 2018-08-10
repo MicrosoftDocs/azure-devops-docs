@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Get VSTS and TFS product support and provide feedback
 
-[!INCLUDE [temp](../boards/_shared/dev15-version-header.md)] 
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
 We're always working to improve VSTS, and we want you to be part of the process! Share your feedback and ideas with us, or join our communities.
 

@@ -59,7 +59,7 @@ Get started with a free organization, share your code using Git, and track your 
 - [Use #ID to link to work items](../notifications/add-links-to-work-items.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Navigate using your organization home page](../project/navigation/work-across-projects.md)
 - [Go mobile](../project/navigation/mobile-work.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
-- [Manage your notifications](../notifications/manage-personal-notifications.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
+- [Manage your notifications](../notifications/howto-manage-personal-notifications.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json&view=vsts)
 - [Set your preferences](../organizations/settings/set-your-preferences.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
 - [Sign in to the web or a client](../organizations/projects/connect-to-projects.md)
 
