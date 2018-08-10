@@ -30,7 +30,31 @@ Before you read this topic, you should understand the kind of build pipeline you
 
 There are a variety of ways to create NuGet packages during a build. If you're already using MSBuild or some other task to create your packages, skip this section to go ahead and [publish your packages](#publish-packages). Otherwise, add a **NuGet** task:
 
-# [Web](#tab/web)
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+To create a package, add the following snippet to your .vsts-ci.yml file.
+
+```yaml
+- task: NuGetCommand@2
+  inputs:
+    command: pack
+    packagesToPack: '**/*.csproj'
+```
+
+The NuGet task supports a number of options. Some of the key ones are described below. The rest are described in the [task documentation](../tasks/package/nuget.md).
+
+- **packagesToPack:** The path to the files that describe the package you want to create. If you don't have these, see the [NuGet documentation](/nuget/create-packages/creating-a-package) to get started.
+- **configuration:** The default is `$(BuildConfiguration)` unless you wish to always build either `Debug` or `Release` packages, or unless you have a custom build configuration.
+- **packDestination:** The default is `$(Build.ArtifactStagingDirectory)`. If you set this, make a note of the location so you can use it in the [publish task](#publish-packages).
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML is not supported in TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
 
 Add the **NuGet** task to your build in order to create a NuGet package. Make sure to add this task below the task that builds your application and above any tasks that require the packages you build.
 
@@ -44,29 +68,6 @@ The NuGet task supports a number of options. Some of the key ones are described 
 [next section](#package-versioning)
 
 ![A screenshot of the NuGet task configured as outlined above](_img/nuget/create-packages-in-team-build.png)
-
-# [YAML](#tab/yaml)
-
-::: moniker range="< vsts"
-YAML is not supported in TFS.
-::: moniker-end
-
-::: moniker range="vsts"
-To create a package, add the following snippet to your .vsts-ci.yml file.
-
-```yaml
-- task: NuGetCommand@2
-  inputs:
-    command: pack
-    packagesToPack: '**/*.csproj'
-```
-::: moniker-end
-
-The NuGet task supports a number of options. Some of the key ones are described below. The rest are described in the [task documentation](../tasks/package/nuget.md).
-
-- **packagesToPack:** The path to the files that describe the package you want to create. If you don't have these, see the [NuGet documentation](/nuget/create-packages/creating-a-package) to get started.
-- **configuration:** The default is `$(BuildConfiguration)` unless you wish to always build either `Debug` or `Release` packages, or unless you have a custom build configuration.
-- **packDestination:** The default is `$(Build.ArtifactStagingDirectory)`. If you set this, make a note of the location so you can use it in the [publish task](#publish-packages).
 
 ---
 
@@ -87,15 +88,7 @@ When you create a package in CI, you can use semantic versioning with prerelease
 
 * Use a script in your build process to generate the version.
 
-# [Web](#tab/web)
-
-In the **NuGet** task, choose **Pack options** and select one of the values for **Automatic package versioning**.
-
 #  [YAML](#tab/yaml)
-
-::: moniker range="< vsts"
-YAML is not supported in TFS.
-::: moniker-end
 
 ::: moniker range="vsts"
 This example shows how to use the date and time as the prerelease label.
@@ -119,6 +112,15 @@ steps:
 For a list of other possible values for `versioningScheme`, see the [NuGet task](../tasks/package/nuget.md).
 
 ::: moniker-end
+
+::: moniker range="< vsts"
+YAML is not supported in TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+In the **NuGet** task, choose **Pack options** and select one of the values for **Automatic package versioning**.
+
 ---
 
 While semantic versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that packages once produced are [immutable](/vsts/package/feeds/immutability) and so cannot be updated or replaced. When you’re producing a package in build, you can’t know whether it will be the version that you aim to release to your users or just a step along the way towards that release. While none of the following solutions are ideal, you can use one of these depending on your preference:
@@ -132,26 +134,7 @@ While semantic versioning with prerelease labels is a good solution for packages
 
 In the previous section, you learned how to create a package with every build. When you are ready to share the changes to your package with your users, you can publish it.
 
-# [Web](#tab/web)
-
-To publish NuGet packages created by your build, add the **NuGet** task and configure these options:
-
-- **Command:** push
-- **Path to NuGet package(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you decided earlier to pack your packages in another location in the last task.
-- **Target feed location:** You can publish to a VSTS or TFS Package Management feed in this organization or collection, to NuGet.org, or to an internal NuGet repository.
-- **Target feed:** Select the feed you want to publish to.
-
-![Publish packages from team build](_img/nuget/publish-packages-from-team-build.png)
-
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
-
-To publish to a external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **NuGet** option for the service connection. Fill in feed URL and the API key or token to connect to the feed.
-
 #  [YAML](#tab/yaml)
-
-::: moniker range="< vsts"
-YAML is not supported in TFS.
-::: moniker-end
 
 ::: moniker range="vsts"
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
@@ -170,6 +153,26 @@ To publish a package to a NuGet feed, add the following snippet to your .vsts-ci
     versionEnvVar: Version
 ```
 ::: moniker-end
+
+::: moniker range="< vsts"
+YAML is not supported in TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+To publish NuGet packages created by your build, add the **NuGet** task and configure these options:
+
+- **Command:** push
+- **Path to NuGet package(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you decided earlier to pack your packages in another location in the last task.
+- **Target feed location:** You can publish to a VSTS or TFS Package Management feed in this organization or collection, to NuGet.org, or to an internal NuGet repository.
+- **Target feed:** Select the feed you want to publish to.
+
+![Publish packages from team build](_img/nuget/publish-packages-from-team-build.png)
+
+[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
+
+To publish to a external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, then choosing **Service connections**, and then creating a **New service connection**. Select the **NuGet** option for the service connection. Fill in feed URL and the API key or token to connect to the feed.
+
 ---
 
 ## Publish symbols for your packages

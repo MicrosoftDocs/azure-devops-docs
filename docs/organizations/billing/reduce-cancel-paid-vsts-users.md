@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 # Change the number of paid VSTS users on your organization
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 As your team grows and contracts, you can increase or decrease the number of paid VSTS users in your organization.
 

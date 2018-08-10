@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 4/04/2018
 monikerRange: 'vsts'
 ---
+
 # Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="cant-add-users"></a>
 

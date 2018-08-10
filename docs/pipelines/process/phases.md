@@ -393,13 +393,17 @@ With multi-configuration you can run multiple jobs, each with a different value 
 
 ## Slicing
 
-An agent phase can be used to run a suite of tests in parallel. For example, you can run a large suite of 1000 tests on a single agent. Or, you can use two agents and run 500 tests on each one in parallel. To leverage slicing, the tasks in the phase should be smart enough to understand the slice they belong to. The Visual Studio Test task is one such task that supports test slicing. If you have installed multiple agents, you can specify how the Visual Studio Test task will run in parallel on these agents. Variables `System.SliceNumber` and `System.SliceCount` are added to each job.
+An agent phase can be used to run a suite of tests in parallel. For example, you can run a large suite of 1000 tests on a single agent. Or, you can use two agents and run 500 tests on each one in parallel.
+To leverage slicing, the tasks in the phase should be smart enough to understand the slice they belong to.
+The Visual Studio Test task is one such task that supports test slicing. If you have installed multiple agents, you can specify how the Visual Studio Test task will run in parallel on these agents.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-When `parallel` is specified and `matrix` is not defined, the setting indicates how many jobs to dispatch. Variables `System.SliceNumber` and `System.SliceCount` are added to each job. The variables can then be used within your scripts to divide work among the jobs. See [Parallel and multiple execution using agent phases](#parallelexec).
+When `parallel` is specified and `matrix` is not defined, the setting indicates how many jobs to dispatch.
+Variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are added to each job. The variables can then be used within your scripts to divide work among the jobs.
+See [Parallel and multiple execution using agent phases](#parallelexec).
 
 ```yaml
 phases:
@@ -414,7 +418,9 @@ YAML is not yet supported in TFS.
 
 # [Designer](#tab/designer)
 
-Specify the **multi-agent** option on an agent phase to leverage slicing. The job is dispatched as many times as the number of agents you specify, and the variables `System.SliceNumber` and `System.SliceCount` are automatically set in each job.
+Specify the **multi-agent** option on an agent phase to leverage slicing.
+The job is dispatched as many times as the number of agents you specify,
+and the variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are automatically set in each job.
 
 ---
 

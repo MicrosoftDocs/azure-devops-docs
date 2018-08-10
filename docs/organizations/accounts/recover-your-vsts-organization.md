@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 05/08/2018
 monikerRange: 'vsts'
 ---
+
 # Restore your VSTS organization
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Your organization will be disabled but available for 30 days after you delete it.
 If you change your mind during this time, you can recover your organization.

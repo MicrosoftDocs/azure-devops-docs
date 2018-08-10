@@ -12,10 +12,9 @@ ms.date: 07/31/2018
 monikerRange: 'vsts'
 ---
 
-
 # Quickstart: Buy CI/CD VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 In this quickstart, you'll learn how to buy private or hosted pipelines and change your paid CI/CD capacity.
 

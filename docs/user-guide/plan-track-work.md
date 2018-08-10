@@ -15,7 +15,7 @@ ms.date: 08/08/2018
 
 # Plan and track work
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
 You add work items to plan and manage your project. You use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.
 

@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 02/27/2018
 monikerRange: 'vsts'
 ---
+
 # Troubleshoot access with Azure Active Directory (Azure AD)
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 ## General
 

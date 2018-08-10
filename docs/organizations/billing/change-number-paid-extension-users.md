@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Change the number of paid users for a VSTS extension
 
-**VSTS** | **TFS 2018** | **TFS 2017** | **TFS 2015**
+[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
 To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.
 

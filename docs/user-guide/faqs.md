@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # FAQs
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
  
 ### Q: How do I get started?
 

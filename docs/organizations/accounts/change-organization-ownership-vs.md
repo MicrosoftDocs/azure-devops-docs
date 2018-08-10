@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Change organization owner for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 When your team's roles and responsibilities change, change your VSTS organization owner to another user.
 

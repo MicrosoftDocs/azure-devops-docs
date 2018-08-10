@@ -12,10 +12,9 @@ ms.date: 04/06/2018
 monikerRange: 'vsts'
 ---
 
-
 # Billing overview for VSTS
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Set up billing when you need more than the **Free Tier** of resources in your VSTS organization or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 

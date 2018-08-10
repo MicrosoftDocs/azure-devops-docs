@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 # Buy VSTS resources for your customers
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../../_shared/version-vsts-only.md)]
 
 Partners in the CSP program can purchase [VSTS resources](https://visualstudio.microsoft.com/team-services/pricing) for
 their customers including VSTS users (who get Basic  features), Test Manager, Package Management, Private Pipelines, and

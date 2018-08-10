@@ -11,9 +11,10 @@ author: chcomley
 ms.date: 10/6/2017
 monikerRange: 'vsts'
 ---
-#   Troubleshoot changing app access policies for your organization
 
-**VSTS**
+# Troubleshoot changing app access policies for your organization
+
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="Oauth"></a>
 

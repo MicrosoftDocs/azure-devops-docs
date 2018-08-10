@@ -56,11 +56,6 @@ For example, when you [create a new .NET app build](../apps/windows/dot-net.md),
 You are free to define additional variables in your pipelines.
 Both of these are considered user-defined variables.
 
-# [Designer](#tab/designer)
-
-On the **Variables** tab in the pipeline designer, you can create, set, and delete variables.
-Variables defined here are available to all phases in the pipeline.
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -239,6 +234,11 @@ phases:
 YAML builds are not yet supported on TFS.
 ::: moniker-end
 
+# [Designer](#tab/designer)
+
+On the **Variables** tab in the pipeline designer, you can create, set, and delete variables.
+Variables defined here are available to all phases in the pipeline.
+
 ---
 
 ### Secret variables
@@ -262,15 +262,9 @@ We recommend that you make the variable ![Secret](_img/variables/secret-variable
 ![Keep password secret](_img/variables/keep-password-secret.png)
 ::: moniker-end
 
-# [Designer](#tab/designer)
-
-Secret variables are encrypted at rest with a 2048-bit RSA key.
-They are automatically masked out of any log output from the pipeline.
-Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
-They *are* automatically decrypted for use as inputs to your build tasks.
-You can also pass them explicitly into a script from your build task (for example as `$(password)`).
-
 # [YAML](#tab/yaml)
+
+::: moniker range="vsts"
 
 Secret variables are encrypted at rest with a 2048-bit RSA key.
 They are automatically masked out of any log output from the pipeline.
@@ -305,6 +299,20 @@ This works: ***
 This does not work:
 This works: ***
 ```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+Secret variables are encrypted at rest with a 2048-bit RSA key.
+They are automatically masked out of any log output from the pipeline.
+Unlike a normal variable, they are not automatically decrypted into environment variables for scripts.
+They *are* automatically decrypted for use as inputs to your build tasks.
+You can also pass them explicitly into a script from your build task (for example as `$(password)`).
 
 ---
 
