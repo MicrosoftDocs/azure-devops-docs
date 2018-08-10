@@ -15,45 +15,37 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 
 [!INCLUDE [version-tfs-2015-rtm](../../pipelines/_shared/version-tfs-2015-rtm.md)]
 
-For [TFS](https://visualstudio.microsoft.com/tfs/) you pay per user for [Basic](https://visualstudio.microsoft.com/team-services/compare-features/) features like Code or Agile Planning.
-Users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/vs/pricing/) are free
-to add because Basic features are included in their subscription as a benefit.
-It's also free to add [stakeholders](../../organizations/security/get-started-stakeholder.md) to TFS, which provides access to a limited set of features.
+For [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/), you pay per user for [Basic](https://visualstudio.microsoft.com/team-services/compare-features/) features like Code or Agile Planning. Users who have a [Visual Studio subscription](https://visualstudio.microsoft.com/vs/pricing/) are free to add because Basic features are included in their subscription as a benefit. It's also free to add [stakeholders](../../organizations/security/get-started-stakeholder.md) to TFS, which provides access to a limited set of features.
 
->[!NOTE]
-> You will need TFS 2015.2 or later to pay for your TFS users monthly via the Visual Studio Marketplace, which uses Azure for billing.
+> [!NOTE]
+> You need TFS 2015.2 or later to pay monthly for your TFS users via the Visual Studio Marketplace, which uses Azure for billing.
 
-Paid VSTS users are entitled access to Basic features in your enterprise's TFS, making paying monthly for VSTS users a great alternative to buying TFS User CALs, which typically have a 3-year commitment term.
-Even when you buy access to TFS this way, you are not required to use VSTS (though of course you can if you wish, in
-addition to using TFS).
+Paid VSTS users are entitled access to Basic features in your enterprise's TFS. Paying monthly for VSTS users is a great alternative to buying TFS User CALs, which typically have a 3-year commitment term. When you buy access to TFS in this way, you aren't required to use VSTS (although you can use VSTS in addition to TFS).
 
-[Follow these steps to pay monthly for TFS users](#rent-cal).
+To pay monthly for TFS users, follow [these steps](#rent-cal).
 
-You can also buy [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for your TFS users on a monthly basis, as an alternative to buying a Visual Studio subscription that is entitled to use the Test hub in TFS.
+You can also buy [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for your TFS users on a monthly basis. This method is an alternative way to buy a Visual Studio subscription that's entitled to use the Test hub in TFS.
 
-[Follow these steps to pay monthly for TFS Test hub access](#test-hub).
+To pay monthly for TFS Test hub access, follow [these steps](#test-hub).
 
-To learn more about requirements to access TFS or the Test hub,
-see [Change access levels](../../organizations/security/change-access-levels.md).
-For more about TFS licensing, see the
-[Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
+To learn more about the requirements to access TFS or the Test hub, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about TFS licensing, see the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
 ## Buy monthly access to TFS for your users
 
 1. [Sign up for a VSTS organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
 
-2. Based on the number of users who need TFS CALs, [pay for VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). Note that VSTS organizations include 5 free users, and these free users do not apply to TFS.
+2. Based on the number of users who need TFS CALs, [pay for VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). VSTS organizations include five free users and these users don't apply to TFS.
 
-3. If you haven't already, sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+3. If you haven't already, sign in to your VSTS organization (`https://{yourorganization}.visualstudio.com`).
 
-4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your VSTS organization so that you can track these users more easily.
+4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your VSTS organization so you can more easily track these users.
 
-    Though these users will get invited to your VSTS organization, you're not required to use VSTS.
+    These users will be invited to your VSTS organization, but you're not required to use VSTS.
 
-5. As TFS administrator, now [add these same users to TFS](../../organizations/security/add-users-team-project.md#add-users-team-project), and [give them the necessary access](../../organizations/security/change-access-levels.md).
+5. As the TFS administrator, [add these same users to TFS](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them the necessary access](../../organizations/security/change-access-levels.md).
 
-    >[!NOTE]
-    > TFS doesn't detect what happens in VSTS so make sure to add these users to TFS and assign them the Basic access level.
+    > [!NOTE]
+    > TFS doesn't detect what happens in VSTS. Make sure to add these users to TFS and assign them the Basic access level.
     >
     > If you stop paying for these users within your VSTS organization, your TFS administrator should remove the users from TFS or buy TFS CALs for them.
 
@@ -65,19 +57,19 @@ For more about TFS licensing, see the
 
     Test Manager is installed automatically in TFS.
 
-3. If you haven't already, sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+3. If you haven't already, sign in to your VSTS organization (`https://{yourorganization}.visualstudio.com`).
 
-4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your VSTS organization and [assign them Test Manager](../../marketplace/assign-paid-extensions.md) via the Users hub in your VSTS organization so that you can track these users.
+4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your VSTS organization. [Assign them to Test Manager](../../marketplace/assign-paid-extensions.md) via the Users hub in your VSTS organization so you can track these users.
 
-    Though these users will get invited to your VSTS organization,you're not required to use VSTS. By assigning Test Manager within your VSTS organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they will not be able to run Test Professional.
+     These users will be invited to your VSTS organization, but you're not required to use VSTS. By assigning Test Manager within your VSTS organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they won't be able to run Test Professional.
 
-    >[!NOTE]
+    > [!NOTE]
     > These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your VSTS organization.
 
-5. As TFS administrator, [add these same users to TFS](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Advanced access](../../organizations/security/change-access-levels.md) so they can use the Test hub.
+5. As the TFS administrator, [add these same users to TFS](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Advanced access](../../organizations/security/change-access-levels.md) so they can use the Test hub.
 
-    >[!NOTE]
-    > TFS doesn't detect what happens in VSTS so make sure these users get Advanced access in TFS.
+    > [!NOTE]
+    > TFS doesn't detect what happens in VSTS. Make sure these users get Advanced access in TFS.
     > 
     > If you stop paying for these VSTS users, your TFS administrator should remove those users from TFS.
 
@@ -96,7 +88,7 @@ A: You get many benefits, for example:
 
 - Paying via VSTS gives your users the flexibility to access both TFS and VSTS for the same price.
 - You can pay monthly for users who need temporary access.
-- You get all the purchasing capabilities that Azure offers, like payment via credit card, through a Cloud Solution Provider (CSP) partner, through the Enterprise Agreement, and more.
+- You get all the purchasing capabilities that Azure offers like payment via credit card, through a Cloud Solution Provider (CSP) partner, through the Enterprise Agreement, and more.
 
 ### Q: Where can I learn more about TFS CALs and access levels for the Test hub?
 
