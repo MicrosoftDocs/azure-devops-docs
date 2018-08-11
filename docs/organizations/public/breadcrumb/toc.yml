@@ -2,9 +2,9 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Collaboration
+  - name: Management Tools
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
+    topicHref: /vsts/index#devops-services-supplemental
     items:
     - name: Public Projects
       tocHref: /vsts/organizations/public/

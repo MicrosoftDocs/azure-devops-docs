@@ -1,10 +1,10 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Test
+  - name: Azure Test Plans
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=testing
+    topicHref: /vsts/index-test
     items:
     - name: Test
       tocHref: /vsts/

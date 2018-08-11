@@ -33,9 +33,9 @@
 - name: Resources 
   items:
   - name: Agile
-    href: /vsts/index#pivot=services&panel=agile
+    href: /vsts/index-boards
   - name: Testing
-    href:  /vsts/index#pivot=services&panel=testing
+    href:  /vsts/index-test
   - name: Uservoice Integration (Marketplace extension)
     href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
   - name: UserVoice UI (Marketplace extension)

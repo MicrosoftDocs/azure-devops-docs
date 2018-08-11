@@ -1,11 +1,11 @@
-- name: VSTS and TFS 
+- name: Azure DevOps Services 
   tocHref: /vsts/
   topicHref: /vsts/index
   items:
-  - name: Code
+  - name: Azure Repos
     tocHref: /vsts/repos/tfvc/
-    topicHref: /vsts/index#pivot=services&panel=code
+    topicHref: /vsts/index-repos
     items:
     - name: TFVC
-      tocHref: /vsts/
+      tocHref: /vsts/repos/tfvc/
       topicHref: /vsts/repos/tfvc/index

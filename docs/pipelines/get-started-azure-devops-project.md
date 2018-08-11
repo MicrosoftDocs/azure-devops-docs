@@ -20,7 +20,7 @@ ms.custom: mvc
 monikerRange: 'vsts'
 ---
 
-# Create an Azure Devops project
+# Create an Azure DevOps project
 
 The Azure DevOps Project presents a simplified experience to create Azure resources and to set up a continuous integration (CI) and continuous delivery (CD) pipeline for your application to those resources. It uses Visual Studio Team Services (VSTS), which is Microsoft's DevOps solution for Azure, to configure the pipeline.
 

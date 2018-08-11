@@ -60,7 +60,7 @@
   - name: REST API, Teams
     href: https://docs.microsoft.com/en-us/rest/api/vsts/core/teams
   - name: REST API, Plans
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/work/plans
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/boards/plans
   - name: REST API, Area and Iteration Paths
     href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/classification%20nodes  
 - name: Resources

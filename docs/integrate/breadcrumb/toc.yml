@@ -1,10 +1,10 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Integrate
+  - name: Marketplace & Extensions
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=integrate
+    topicHref: /vsts/index#devops-services-extensions
     items:
     - name: Integrate
       tocHref: /vsts/

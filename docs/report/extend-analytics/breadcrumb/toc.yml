@@ -1,10 +1,10 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Extend
+  - name: Marketplace & Extensions
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=extend
+    topicHref: /vsts/index#devops-services-extensions
     items:
     - name:  Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/

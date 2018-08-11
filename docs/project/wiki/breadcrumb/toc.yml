@@ -1,10 +1,10 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Collaborate
+  - name: Shared Features
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
+    topicHref: /vsts/index#devops-services-supplemental
     items:
     - name: "README & Wikis"
       tocHref: /vsts/project/wiki/

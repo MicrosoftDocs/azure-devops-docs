@@ -1,0 +1,29 @@
+- name: Azure Boards get started
+  href: index.md
+  items:
+  - name: "What is Azure Boards?"
+    href: what-is-azure-boards.md
+  - name: Sign up and invite some teammates 
+    href: sign-up-invite-teammates.md
+  - name: Plan and track work
+    href: plan-track-work.md 
+  - name: Create your backlog
+    href: ../backlogs/create-your-backlog.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json 
+  - name: Use Kanban boards
+    href: ../boards/kanban-quickstart.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json  
+  - name: Default permissions (Security)
+    href: permissions-access-boards.md
+  - name: Key concepts
+    href: key-concepts.md
+  - name: Resources
+    items:
+    - name: Navigation Basics
+      href: ../../project/navigation/index.md
+    - name: Boards
+      href: ../boards/index.md
+    - name: Backlogs
+      href: ../backlogs/index.md
+    - name: Sprints (Scrum)
+      href: ../sprints/index.md
+    - name: Project Management
+      href: ../../organizations/projects/index.md
