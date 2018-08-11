@@ -1,4 +1,4 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items:

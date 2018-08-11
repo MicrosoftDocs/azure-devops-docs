@@ -2,9 +2,9 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Admin
+  - name: Management Tools
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+    topicHref: /vsts/index#devops-services-settings
     items:
     - name: Project Management
       tocHref: /vsts/

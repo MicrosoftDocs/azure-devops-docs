@@ -1,0 +1,7 @@
+- name: Azure DevOps Services
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Azure Artifacts
+    tocHref: /vsts/
+    topicHref: /vsts/packages/index

@@ -1,10 +1,10 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Collaborate
+  - name: Additional Resources
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
+    topicHref: /vsts/index#additional-resources
     items:
     - name: Feedback
       tocHref: /vsts/project/feedback/

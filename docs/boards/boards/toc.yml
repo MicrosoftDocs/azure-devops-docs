@@ -66,7 +66,7 @@
   - name: "Default permissions (Security)"
     href: ../../organizations/security/permissions-access-work-tracking.md?toc=/vsts/boards/boards/toc.json&bc=/vsts/boards/boards/breadcrumb/toc.json 
   - name: REST API, Boards
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/work/boards
+    href: https://docs.microsoft.com/en-us/rest/api/vsts/boards/boards
 - name: Resources
   items:
   - name: Backlogs

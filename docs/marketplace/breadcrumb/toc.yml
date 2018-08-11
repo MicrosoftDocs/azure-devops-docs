@@ -1,10 +1,10 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Admin
+  - name: Management Tools
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+    topicHref: /vsts/index#devops-services-settings
     items:
     - name: Manage Extensions
       tocHref: /vsts/

@@ -1,0 +1,21 @@
+- name: Azure Repos Get Started Guide
+  href: index.md
+  items:
+  - name: "What is Azure Repos?"
+    href: what-is-repos.md
+  - name: Sign up for Azure DevOps Services 
+    href: sign-up-invite-teammates.md
+  - name: Code with Git
+    href: code-with-git.md
+  - name: Key concepts
+    href: key-concepts-repos.md
+- name: Resources
+  items:
+  - name: Visual Studio IDE
+    href: https://docs.microsoft.com/visualstudio/
+  - name: Visual Studio Code 
+    href: https://code.visualstudio.com/docs
+  - name: Visual Studio for Mac
+    href: https://docs.microsoft.com/visualstudio/mac
+  - name: Project Management
+    href: ../../organizations/projects/index.md

@@ -1,0 +1,11 @@
+- name: Azure DevOps Services
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Management Tools
+    tocHref: /vsts/
+    topicHref: /vsts/index#devops-services-settings
+    items:
+    - name: Service Hooks
+      tocHref: /vsts/
+      topicHref: /vsts/service-hooks/index

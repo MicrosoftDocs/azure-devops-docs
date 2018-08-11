@@ -1,10 +1,10 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Reporting
+  - name: Shared Features
     tocHref: /vsts/report/
-    topicHref: /vsts/index#pivot=services&panel=reporting
+    topicHref: /vsts/index#devops-services-supplemental
     items:
     - name: "Analytics (VSTS)" 
       tocHref: /vsts/report/analytics/

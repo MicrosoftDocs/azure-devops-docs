@@ -1,10 +1,10 @@
-- name: VSTS and TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Visual Studio Team Foundation Server
+  tocHref: /tfs/
+  topicHref: /tfs/index
   items: 
-  - name: Admin
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+  - name: Deprecated Resources
+    tocHref: /vsts/index-tfs/
+    topicHref: /vsts/index-tfs/#tfs-deprecated
     items:
     - name: Project Server Integration
       tocHref:  /vsts/reference/tfs-ps-sync/

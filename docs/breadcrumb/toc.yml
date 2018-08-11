@@ -1,13 +1,22 @@
-- name: VSTS and TFS 
+- name: Azure DevOps Services
   tocHref: /vsts/
-  topicHref: /vsts/index#pivot=services
+  topicHref: /vsts/index
   items:
-  - name: New User Guide
+  - name: Get Started Guides
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
-  - name: Code
+  - name: Azure Repos Get Started Guide
+    tocHref: /vsts/repos/get-started/
+    topicHref: /vsts/repos/get-started/index
+  - name: Azure Boards Get Started Guide
+    tocHref: /vsts/boards/get-started/
+    topicHref: /vsts/boards/get-started/index
+  - name: Azure Pipelines Get Started Guide
+    tocHref: /vsts/pipelines/get-started/
+    topicHref: /vsts/pipelines/get-started/index
+  - name: AzureRepos
     tocHref: /vsts/repos/git/
-    topicHref: /vsts/index#pivot=services&panel=code
+    topicHref: /vsts/index-repos
     items:
     - name: Git
       tocHref: /vsts/repos/git/
@@ -15,9 +24,9 @@
     - name: TFVC
       tocHref: /vsts/repos/tfvc/
       topicHref: /vsts/repos/tfvc/index
-  - name: "Continuous Integration & Delivery"
+  - name: AzurePipelines
     tocHref: /vsts/pipelines/
-    topicHref: /vsts/index#pivot=services&panel=delivery
+    topicHref: /vsts/index-pipelines
     items:
     - name: Deploy to Azure
       tocHref: /vsts/deploy-azure/
@@ -31,9 +40,9 @@
     - name: Continuous Testing
       tocHref: /vsts/pipelines/
       topicHref: /vsts/pipelines/index
-  - name: Testing
+  - name: Azure Test Plans
     tocHref: /vsts/test/
-    topicHref: /vsts/index#pivot=services&panel=testing
+    topicHref: /vsts/index-test
     items:
     - name: Exploratory & Manual Testing
       tocHref: /vsts/test/
@@ -44,51 +53,47 @@
     - name: Unit Testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
-  - name: Agile
+  - name: Azure Boards 
     tocHref: /vsts/boards/
-    topicHref: /vsts/index#pivot=services&panel=agile
+    topicHref: /vsts/index-boards
     items:
     - name: Boards (Kanban) 
-      tocHref: /vsts/boards/boards/
-      topicHref: /vsts/boards/boards/index
+      tocHref: /vsts/boards/kanban/
+      topicHref: /vsts/boards/kanban/index
     - name: Backlogs
       tocHref: /vsts/boards/backlogs/
       topicHref: /vsts/boards/backlogs/index
     - name: Sprints (Scrum)
-      tocHref: /vsts/boards/sprints/
-      topicHref: /vsts/boards/sprints/index
+      tocHref: /vsts/boards/scrum/
+      topicHref: /vsts/boards/scrum/index
     - name: Work items
       tocHref: /vsts/boards/work-items/
       topicHref: /vsts/boards/work-items/index
     - name: Queries
-      tocHref: /vsts/boards/queries/
-      topicHref: /vsts/boards/queries/index
+      tocHref: /vsts/boards/track/
+      topicHref: /vsts/boards/track/index
     - name: Agile at Scale
-      tocHref: /vsts/boards/plans/
-      topicHref: /vsts/boards/plans/index
+      tocHref: /vsts/boards/scale/
+      topicHref: /vsts/boards/scale/index
   - name: Java 
     tocHref: /vsts/java/
     topicHref: /vsts/java/index 
-  - name: "VSTS Demo Generator"
+  - name: Azure DevOps Demo Generator
     tocHref: /vsts/demo-gen/
     topicHref: /vsts/demo-gen/index  
-  - name: Reporting
+  - name: Shared Features
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=reporting
+    topicHref: /vsts/index#devops-services-supplemental
     items:
     - name: Dashboards
       tocHref: /vsts/report/dashboards
       topicHref: /vsts/report/dashboards/index
-    - name: "Analytics (VSTS)"
+    - name: Analytics
       tocHref: /vsts/report/analytics/
       topicHref: /vsts/report/analytics/index
-    - name: "Power BI (VSTS)"
+    - name: Power BI
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index
-  - name: Collaborate
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=collaboration
-    items:
     - name: Public Projects
       tocHref: /vsts/organizations/public/
       topicHref: /vsts/organizations/public/index
@@ -104,9 +109,9 @@
     - name: Feedback
       tocHref: /vsts/project/feedback/
       topicHref: /vsts/project/feedback/index
-  - name: Admin
+  - name: Management Tools
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+    topicHref: /vsts/index#devops-services-setting
     items:
     - name: Project Management
       tocHref: /vsts/organizations/projects/
@@ -132,16 +137,19 @@
     - name: Manage Extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
-    - name: Project Server Integration
-      tocHref: /vsts/reference/tfs-ps-sync/
-      topicHref: /vsts/reference/tfs-ps-sync/index
     - name: Technical Articles
       tocHref: /vsts/articles/
       topicHref: /vsts/articles/index
-  - name: Extend
+  - name: "Marketplace & Extensions"
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=integration
+    topicHref: /vsts/index#devops-services-extensions
     items:
+    - name: Discover Extensions
+      tocHref: /vsts/marketplace/
+      topicHref: https://marketplace.visualstudio.com/
+    - name: Service Hooks
+      tocHref: /vsts/service-hooks/
+      topicHref: /vsts/service-hooks/index
     - name: Build extensions
       tocHref: /vsts/extend/
       topicHref: /vsts/extend/index
@@ -154,16 +162,13 @@
     - name: Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/
       topicHref: /vsts/report/extend-analytics/index
-  - name: Marketplace
-    tocHref: /vsts/extend/
-    topicHref: /vsts/index#pivot=services&panel=integration
+  - name: "TFS Administation"
+    tocHref: /tfs/server/
+    topicHref: /tfs/index
     items:
-    - name: Discover Extensions
-      tocHref: /vsts/marketplace/
-      topicHref: https://marketplace.visualstudio.com/
-    - name: Service Hooks
-      tocHref: /vsts/service-hooks/
-      topicHref: /vsts/service-hooks/index
-    - name: Visual Studio subscriptions
-      tocHref: /vsts/marketplace/vs-subscriptions/
-      topicHref: /vsts/marketplace/vs-subscriptions/buy-vs-subscriptions
+    - name: Project Server Integration
+      tocHref: /vsts/reference/tfs-ps-sync/
+      topicHref: /vsts/reference/tfs-ps-sync/index
+    - name: SQL Server Reporting
+      tocHref: /vsts/report/sql-reports/
+      topicHref: /vsts/report/sql-reports/index

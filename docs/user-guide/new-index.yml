@@ -1,0 +1,232 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Azure DevOps New User Guide
+metadata:
+  title: DevOps New User Guide documentation
+  description: Learn the basics of the DevOps Services interface and some common tasks.
+  ms.date: 09/05/2018
+  ms.prod: devops
+  ms.technology: vs-ide-code-analysis
+  ms.topic: landing-page
+  ms.author: chcomley
+  author: chcomley
+  manager: douge
+abstract:
+  description: New to Azure DevOps? Welcome! We'll walk you through the basics and some common tasks.
+  aside:
+    image:
+      alt: Get started logo
+      height: 133
+      width: 48
+      src: https://docs.microsoft.com/media/illustrations/biztalk-get-started-get-started.svg
+    title:
+sections:
+- title: 5-minute Quickstarts
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+      - href: sign-up-invite-teammates.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_get-started.svg
+        title: Sign up and invite teammates
+      - href: code-with-git.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_git-color.svg
+        title: Code with Git
+      - href: plan-track-work.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_quick-start.svg
+        title: Plan & track work
+      - href: add-run-manual-tests.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_test.svg
+        title: Add & run manual tests
+      - href: vsts/marketplace/install-vsts-extension.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_extensions.svg
+        title: Install a Marketplace extension
+      - href: ../organizations/security/view-permissions.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
+        title: View permissions
+      - href: index.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_management.svg
+        title: Manage a project
+      - href:  index.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_account-management.svg
+        title: Get started as an admin
+
+- title: Step-by-step Tutorials
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+      - href: ../project/navigation/set-favorites.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_setup.svg
+        title: Set favorites
+      - href: ./boards/work-items/follow-work-items.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Follow work & pull requests
+      - href: .md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Get started as a stakeholder
+      - href: vsts/organizations/accounts/add-organization-users-from-user-hub.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Add & manage users
+      - href: vsts/organizations/security/change-individual-permissions.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Change individual permissions
+      - href: vsts/organizations/security/restrict-access.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_security-management.svg
+        title: Grant or restrict permissions to select tasks
+      - href: vsts/organizations/settings/work/customize-process.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Customize a project
+
+- title: Concepts
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+      - href: key-concepts.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Key concepts
+      - href: source-control.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Source control
+      - href: vsts/work/backlogs/overview.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_tools.svg
+        title: Kanban & Agile tools
+      - href: tools.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_tools.svg
+        title: Clients & tools
+      - href: roles.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Software development roles
+      - href: about-vsts-tfs.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: What's the difference between Azure DevOps and TFS?
+
+- title: How-to guides
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+      - href: docs/organizations/projects/connect-to-projects.md
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Sign in to a web or a client
+
+- title: Reference
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+      - href: ../project/navigation/keyboard-shortcuts.md
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_reference.svg
+        title: Keyboard shortcuts
+      - href: ../project/wiki/markdown-guidance.md
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_reference.svg
+        title: Markdown guidance
+      - href: .work-team-explorer.md
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_reference.svg
+        title: Navigate in Team Explorer
+      - href: faqs.md
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_reference.svg
+        title: FAQs
+
+- title: Resources
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 2
+    items:
+      - href: ../project/navigation/index.md
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Navigation basics
+      - href: ../organizations/projects/index.md
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Project management
+      - href: ../organizations/security/index.md
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
+        title: Security & Identity
+      - href: https://docs.microsoft.com/visualstudio/?view=vsts
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-ide.svg
+        title: Visual Studio IDE
+      - href: https://code.visualstudio.com/docs
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_vs-code.svg
+        title: Visual Studio Code
+      - href: https://docs.microsoft.com/visualstudio/mac?view=vsts
+        html: <p>...</p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
+        title: Visual Studio for Mac
+
+    

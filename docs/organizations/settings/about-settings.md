@@ -90,6 +90,7 @@ Individual contributors can set their user preferences, enable features that are
 </table>
  
 
+<a id="team" />
 ## Team administrator role and managing teams
 
 Team administrators are tasked with configuring team resources which mostly correspond to Agile tools and dashboards. To configure team resources, you must be added as a [team administrator for the specific team](../../organizations/settings/add-team-administrator.md), or be a member of the Project Administrators or Project Collection Administrators groups.  
@@ -248,7 +249,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>New dashboards added to a project inherit the default dashboard permissions. The default permissions allow team members to create and edit dashboards for their team.</td>
 </tr>
 <tr>
-<td>**Work, Project configuration**</td>
+<td><a id="work" />**Work, Project configuration**</td>
 <td><ul>
 <li>[Define area paths](set-area-paths.md)</li>
 <li>[Define iteration paths or sprints](set-iteration-paths-sprints.md)</li>
@@ -257,7 +258,7 @@ From the administrative pages for a project, you can configure the settings show
 </td>
 </tr>
 <tr>
-<td>**CI/CD** </td>
+<td><a id="pipelines" />**CI/CD** </td>
 <td><ul>
 <li>[Manage Agent queues and agent pools](../../pipelines/agents/pools-queues.md)</li>
 <li>[Manage service connections](../../pipelines/library/service-endpoints.md)</li>
@@ -267,7 +268,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>To build your code or deploy your software you need at least one agent. Agent and deployment pools are build and release resources that you manage across projects. </td>
 </tr>
 <tr>
-<td>**Code** </td>
+<td><a id="repos" />**Code** </td>
 <td><ul>
 <li>[Create additional Git repos](../../repos/git/creatingrepo.md)</li>
 <li>[Manage repository permissions](../security/set-git-tfvc-repository-permissions.md)</li>
@@ -277,7 +278,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>You can manage code using [Git repositories](../../repos/git/overview.md) or one [Team Foundation Version Control (TFVC) repository](../../repos/tfvc/overview.md). </td>
 </tr>
 <tr>
-<td>**Test** </td>
+<td><a id="test-center" />**Test** </td>
 <td><ul>
 <li>[Set test retention policies](../../test/how-long-to-keep-test-results.md)</li>
 <li>[Manage test-related permissions at project level](../security/set-project-collection-level-permissions.md)</li>

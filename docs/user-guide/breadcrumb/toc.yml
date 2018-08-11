@@ -1,8 +1,8 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index#pivot=services
   items: 
-  - name: New User Guide
+  - name: Enterprise Get Started Guide
     tocHref: /vsts/
     topicHref: /vsts/user-guide/index
 

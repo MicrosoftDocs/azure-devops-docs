@@ -52,7 +52,7 @@ Sign up for free by creating an organization and then, either upload your code t
 
 <!---
 [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
-[Devops overview for VSTS and TFS](index.md)
+[DevOps overview for VSTS and TFS](index.md)
 *(c) 2016 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,
 including URL and other Internet Web site references, may change without
