@@ -1,7 +1,7 @@
-- name: Azure DevOps Pipelines Get Started Guide
+- name: Azure Pipelines Get Started Guide
   href: index.md
   items:
-  - name: "What do you get with Azure DevOps Pipelines ?"
+  - name: "What do you get with Azure Pipelines ?"
     href: what-is-pipelines.md
   - name: Sign up and invite some teammates 
     href: ../../user-guide/sign-up-invite-teammates.md

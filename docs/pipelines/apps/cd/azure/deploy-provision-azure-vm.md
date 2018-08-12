@@ -1,6 +1,6 @@
 ---
 title: CD of an Azure VM using a Resource Manager template
-description: Provision Azure virtual machines (VMs) using ARM templates by using Microsoft Release Management in VSTS and Team Foundation Server (TFS) 
+description: Provision Azure virtual machines (VMs) using ARM templates by using Azure Pipelines or Team Foundation Server (TFS) 
 ms.assetid: E6CF9C79-4A2A-45EF-8278-EA6AFA81CBAD
 ms.prod: devops
 ms.technology: devops-cicd
@@ -34,19 +34,19 @@ Before you begin, you need a CI build that creates your Azure RM template. To se
 
 Carry out the following steps to deploy the Azure Resource Group.
 
-1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
+1. Open the **Releases** tab of the **Pipelines** hub and choose the
    "**+**" icon to create a new release pipeline.
 
-1. In the **Create release pipeline** dialog, select the **Empty** template and choose **Next**.
+2. In the **Create release pipeline** dialog, select the **Empty** template and choose **Next**.
 
-1. In the next page, select the build pipeline you created 
+3. In the next page, select the build pipeline you created 
    earlier and choose **Create**. This creates a new release pipeline 
    with one default environment.
 
-1. In the new release pipeline, select **+ Add tasks** and add an **Azure Resource Group Deployment** task.
+4. In the new release pipeline, select **+ Add tasks** and add an **Azure Resource Group Deployment** task.
    Optionally edit the name to help identify the task, such as **Provision Windows 2012 R2 VM**.
 
-1. Configure the **Azure Resource Group Deployment** task as follows:
+5. Configure the **Azure Resource Group Deployment** task as follows:
 
    ![Azure Resource Group Deployment](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Deploy: Azure Resource Group Deployment](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2) - Deploy files to an Azure Resource Group.
    
@@ -75,13 +75,13 @@ Carry out the following steps to deploy the Azure Resource Group.
    You must do this because **adminPassword** is defined as a **SecureString**
    type in the Resource Manager template file.
 
-1. If you used [variables](../../../release/variables.md)
+6. If you used [variables](../../../release/variables.md)
    in the parameters of the **Azure Resource Group Deployment** task,
    such as **vmuser**, **vmpassword**, and **dns**, set the values for them in the
    environment configuration variables. Encrypt the value
    of **vmpassword** by selecting the "padlock" icon.
 
-1. Enter a name for the release pipeline and save it.
+7. Enter a name for the release pipeline and save it.
 
-1. Create a new release, select the latest build, and 
+8. Create a new release, select the latest build, and 
    deploy it to the single environment.

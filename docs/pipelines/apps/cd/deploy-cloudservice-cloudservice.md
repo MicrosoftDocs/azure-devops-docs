@@ -1,6 +1,6 @@
 ---
 title: Deploy ASP.NET app to an Azure cloud service
-description: Example of deploying an Azure cloud services package from Release Management in VSTS or Microsoft Team Foundation Server
+description: Example of deploying an Azure cloud services package from Release Management in Azure Pipelines or Team Foundation Server
 ms.assetid: 2FFE372F-0F5A-4B8C-9AEE-5D8E4F61F6F5
 ms.prod: devops
 ms.technology: devops-cicd
@@ -71,7 +71,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
      **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
      This starts a new release pipeline that's automatically linked to the build pipeline.
 
-   * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
+   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
 1. Select the **Azure Cloud Service Deployment** template and choose **Apply**.

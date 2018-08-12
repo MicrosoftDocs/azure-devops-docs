@@ -1,6 +1,6 @@
 ---
-title: Artifacts in Team Build | VSTS or Team Foundation Server
-description: Understand build artifacts in Team Build (TFBuild) for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Artifacts in Team Build | Azure Pipelines or Team Foundation Server
+description: Understand build artifacts in Team Build (TFBuild) for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.prod: devops
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Artifacts in Team Build
 
-**VSTS | TFS 2015.3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
+**Azure Pipelines | TFS 2015.3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -46,7 +46,7 @@ $(Build.SourcesDirectory)/README.md
 drop
 ```
 
-* Artifact publish location: Visual Studio Team Services/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ### Two sets of artifacts
 
@@ -65,7 +65,7 @@ $(Build.SourcesDirectory)/README.md
 drop1
 ```
 
-* Artifact publish location: Visual Studio Team Services/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
@@ -81,7 +81,7 @@ $(Build.SourcesDirectory)/README.md
 drop2
 ```
 
-* Artifact publish location: Visual Studio Team Services/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 The completed build delivers two sets of artifacts.
 
@@ -125,17 +125,17 @@ $(Build.ArtifactStagingDirectory)
 drop
 ```
 
-* Artifact publish location: Visual Studio Team Services/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
+* Artifact publish location: Azure Artifacts/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
 ## Tips
 
-* **Artifact publish location** argument: **Visual Studio Team Services/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in VSTS or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
+* **Artifact publish location** argument: **Azure Artifacts/TFS** (**TFS 2018 RTM and older**: Artifact type: Server) is the best and simplest choice in most cases. This choice causes the artifacts to be stored in Azure Artifacts or TFS. But if you're using a private Windows agent, you've got the option [drop to a UNC file share](#unc-file-share).
 
 * **Artifact name** argument: Just enter a name that's meaningful to you.
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
 
-* On VSTS and some versions of TFS there are two different [variables](variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
+* On Azure Pipelines and some versions of TFS there are two different [variables](variables.md) that point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
 
 * The directory referenced by `Build.ArtifactStagingDirectory` is cleaned up after each build.
 

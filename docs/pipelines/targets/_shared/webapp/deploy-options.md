@@ -8,7 +8,7 @@ Do this by creating a suitable service connection:
 ## Deployment mechanisms
 
 The examples above rely on the built-in [Azure App Service Deploy task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment),
-which provides simplified integration with Azure. 
+which provides simplified integration with Azure.
 
 If you use a Windows agent, this task uses Web Deploy technology to interact with the Azure web app.
 Web Deploy provides several convenient deployment options such as renaming locked files, excluding files from the App_Data folder during deployment, and so on.

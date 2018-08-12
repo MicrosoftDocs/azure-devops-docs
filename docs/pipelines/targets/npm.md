@@ -1,6 +1,6 @@
 ---
 title: Publishing npm packages | Microsoft Docs
-description: Publishing npm packages to VSTS package management or other npm registries
+description: Publishing npm packages to Azure Artifacts or other npm registries
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.prod: devops
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 
 You can publish npm packages produced by your build to:
 
-* The VSTS or TFS Package Management service
+* Azure Artifacts or the TFS Package Management service
 * Other registries such as `https://registry.npmjs.org/`
 
 Before you read this topic, you should understand the kind of build pipeline you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
@@ -69,6 +69,6 @@ To publish to a external npm registry, you must first create a service connectio
 
 ## Q&A
 
-### Where can I learn about the VSTS and TFS Package management service?
+### Where can I learn about the Azure Pipelines and TFS Package management service?
 
 [Package Management service](../../package/index.md) 

@@ -1,6 +1,6 @@
 ---
 title: Run Git commands in a script
-description: Learn how you can run a Git command in a build script for your workflow by using Team Foundation Server (TFS) or VSTS.
+description: Learn how you can run a Git command in a build script for your workflow by using Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -35,7 +35,7 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 <div class="collapse" id="expando-version-control-permissions">
 
 <ul>
-<li>VSTS: <code>https:&#x2F;&#x2F;{your-organization}.visualstudio.com/DefaultCollection/{your-team-project}/_admin/_versioncontrol</code></li>
+<li>Azure Repos: <code>https:&#x2F;&#x2F;{your-organization}.visualstudio.com/DefaultCollection/{your-team-project}/_admin/_versioncontrol</code></li>
 
 <li>On-premises: <code>https:&#x2F;&#x2F;{your-server}:8080/tfs/DefaultCollection/{your-team-project}/_admin/_versioncontrol</code></li>
 </ul>

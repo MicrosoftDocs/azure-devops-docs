@@ -1,6 +1,6 @@
 ---
-title: PowerShell | VSTS or Team Foundation Server
-description: Learn about how you can execute powershell scripts when you are building your code in VSTS and Team Foundation Server TFS
+title: PowerShell | Azure Pipelines or Team Foundation Server
+description: Learn about how you can execute powershell scripts when you are building your code in Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

@@ -1,6 +1,6 @@
 ---
 title: Azure Government Cloud deployment
-description: Understand Azure Government Cloud deployment in Microsoft Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Understand Azure Government Cloud deployment in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 857AB27D-FA16-44DB-B1C4-CBE946A0A1AD
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Deploy apps to Azure Government Cloud
 
-**VSTS | TFS 2017  | TFS 2018**
+**Azure Pipelines | TFS 2017  | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2017'
 provide private and semi-isolated locations for specific Government or other services, separate from the normal
 Azure services. Highest levels of privacy have been adopted for these clouds, including restricted data access policies.
 
-Visual Studio Team Services (VSTS) is not available in Azure Government Clouds, so there are some special considerations when you
+Azure Pipelines is not available in Azure Government Clouds, so there are some special considerations when you
 want to deploy apps to Government Clouds because artifact storage, build,
 and deployment orchestration must execute outside the Government Cloud.
 

@@ -1,6 +1,6 @@
 ---
 title: Deploy to an IIS web server on a Windows Virtual Machine
-description: Deploy an ASP.NET or Node web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
+description: Deploy an ASP.NET or Node.js web deployment package to an IIS web server on a Windows virtual machine using Deployment Groups
 ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,14 +14,14 @@ monikerRange: '>= tfs-2017'
 
 # Deploy to a Windows Virtual Machine
 
-**VSTS | TFS 2018**
+**Azure Pipelines | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-We'll show you how to set up continuous deployment of your ASP.NET or Node app to an IIS web server running on Windows using
-Visual Studio Team Services (VSTS). You can use the steps in this quickstart as long as your continuous integration process publishes a web deployment package.
+We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
+Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration process publishes a web deployment package.
 
 ![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
 
@@ -35,7 +35,7 @@ You'll need a continuous integration (CI) build process that publishes your web 
 
 * [Build your ASP.NET Core app](../../languages/dotnet-core.md)
 
-* [Build your Node app with Gulp](../nodejs/build-gulp.md)
+* [Build your Node.js app with gulp](../nodejs/build-gulp.md)
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ The configuration varies depending on the type of app you are deploying.
 
 [!INCLUDE [prepare-aspnetcore-windows-vm](../_shared/prepare-aspnetcore-windows-vm.md)]
 
-#### Node app
+#### Node.js app
 
 Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 
@@ -68,7 +68,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
      ![Creating a new release pipeline from the build summary](../_shared/_img/release-from-build-summary.png)
 
-   * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
+   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
      ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)

@@ -1,6 +1,6 @@
 ---
 title: Use IIS Deployment Groups for rolling deployments and databases
-description: Next steps for deploying an app to IIS servers using Deployment Groups in VSTS or Microsoft Team Foundation Server (TFS)
+description: Next steps for deploying an app to IIS servers using Deployment Groups in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 9FC7A7FC-0386-478A-BE1D-0A0B8104ED42
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,8 +18,8 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-You can quickly and easily deploy your ASP.NET or Node app to an IIS Deployment Group using
-Visual Studio Team Services (VSTS) or Microsoft Team Foundation Server (TFS),
+You can quickly and easily deploy your ASP.NET or Node.js app to an IIS Deployment Group using
+Azure Pipelines or Team Foundation Server (TFS),
 as demonstrated in [this example](deploy-webdeploy-iis-deploygroups.md).
 In addition, you can extend your deployment in a range of ways
 depending on your scenario and requirements. This topic shows you how to:

@@ -1,5 +1,5 @@
 ---
-title: Predefined Build variables | VSTS or Team Foundation Server
+title: Predefined Build variables | Azure Pipelines or Team Foundation Server
 description: A comprehensive list of all available predefined build variables
 ms.topic: reference
 ms.prod: devops

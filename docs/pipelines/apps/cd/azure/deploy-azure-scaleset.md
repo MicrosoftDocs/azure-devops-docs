@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Implement continuous deployment of your app to an Azure Virtual Machine Scale Set
 
-VSTS | TFS 2018 | TFS 2017
+Azure Pipelines | TFS 2018 | TFS 2017
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
@@ -45,7 +45,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 ## Create the release pipeline
 
-1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
+1. Open the **Releases** tab of the **Pipelines** hub and choose the
    "**+**" icon to create a new release pipeline.
 
 1. In the **Create release pipeline** dialog, select the **Empty** template and choose **Next**.
@@ -114,7 +114,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    You can use variables to pass values such as the resource group and virtual machine scale set names to the script if you wish.
 
-1. In the **Deployment conditions** dialog for the environment, ensure that the **Trigger** section is set to **After release creation**. 
+1. In the **Deployment conditions** dialog for the environment, ensure that the **Trigger** section is set to **After release creation**.
 
 1. Enter a name for the release pipeline and save it.
 

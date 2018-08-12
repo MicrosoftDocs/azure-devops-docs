@@ -1,6 +1,6 @@
 ---
 title: Deployment group phases in Build and Release Management
-description: Understand deployment group phases in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Understand deployment group phases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
 ms.prod: devops
 ms.technology: devops-cicd

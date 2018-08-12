@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 [!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
 
 Support a rapid release cadence and manage simultaneous releases. Set up 
-release paths that represent your stages from development to production. 
+release paths that represent your stages from development to production.
 Run actions to deploy your app to an environment for that stage. Add 
 approvers to sign off that the app has successfully passed each stage.
 Start your release process manually or automatically from a build. Then track your 

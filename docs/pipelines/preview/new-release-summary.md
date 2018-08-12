@@ -1,6 +1,6 @@
 ---
 title: New release progress views
-description: A preview of a new user experience for release progress on VSTS
+description: A preview of a new user experience for release progress on Azure Pipelines
 ms.assetid: 35CC58CC-0FB2-4C02-87C8-9C78459A84F4
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # New release progress views
 
-A new and fully redesigned user experience is available for release progress in VSTS.
+A new and fully redesigned user experience is available for release progress in Azure Pipelines.
 To use this page, you simply need to switch it on using one of the on-screen prompts,
 or from the [user profile **Previews** panel](../../project/navigation/preview-features.md#enable-features-for-your-use).
 
@@ -22,8 +22,8 @@ Open the new progress view using the **Release (pipeline view)** link in the too
 
 ![Opening the Pipeline view](_img/new-release-summary/pipeline-link.png)
 
-The view shows information about the release and the deployment results. 
-Use the links in the pipeline view to see more details. 
+The view shows information about the release and the deployment results.
+Use the links in the pipeline view to see more details.
 
 ![Opening the Pipeline view](_img/new-release-summary/pipeline-view.png)
 
@@ -101,7 +101,7 @@ view when you choose the test results icon. For example, extensions that appeare
 ![Previous release summary section for a release](_img/new-release-summary/old-rel-summary-4.png) 
 
 ... will not be displayed in the new progress view pages. Please let us know by using the 
-**Feedback** section of this topic if you are currently using this contribution point. 
+**Feedback** section of this topic if you are currently using this contribution point.
 
 ### New contribution points in the release progress view
 
@@ -112,7 +112,7 @@ provide a much better reporting experience for each environment:
 
   ![The new release-level view for a release](_img/new-release-summary/contrib-point-1.png) 
 
-* The **environment-level** view displays environment data such as the work items, commits, tasks, logs and tests. 
+* The **environment-level** view displays environment data such as the work items, commits, tasks, logs and tests.
 
   ![The new release-level view for a release](_img/new-release-summary/contrib-point-2.png) 
 
@@ -165,20 +165,20 @@ contribution point (the release environment editor tab):
 
    * The `onReleaseChanged` function for the release progress view tab contribution supplies the release object.
      This is called to initially render the extension, or to update it when a change to the release occurs.
-     This function is no longer required in the new contribution point. 
+     This function is no longer required in the new contribution point.
  
    * For the new environment-level contribution point, the `registeredObjectId` must be passed in **vss-extension.json**.
      This identifier is used to listen for updates occurring to the environment object. Instead of just initializing the extension,
      you must also register the extension for updates by using `registeredObjectId`. You will receive the `releaseEnvironment` object
      instead of the entire release object. If any update occurs to this object, an event is raised that will be received by the
-     `updateContext` function. 
+     `updateContext` function.
  
 1. Make the following changes to the extension code in **main.js**:
 
    ```
    // This code helps in the initial load of the extension 
    VSS.ready(()=>{ 
-        // Initial config from host i.e. selected release environment object. 
+        // Initial config from host i.e. selected release environment object.
        console.log(JSON.stringify(VSS.getConfiguration()));     
    }); 
  

@@ -1,6 +1,6 @@
 ---
 title: CMake build and release task
-description: CMake build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: CMake build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -71,7 +71,7 @@ The [Microsoft-hosted agents](../../agents/hosted.md) have CMake installed, but 
 [!INCLUDE [agent-pools-tab](../../agents/_shared/agent-pools-tab.md)]
 </li>
 
-<li>In the left column, click the name of the hosted pool that you are using. In the right column click **Capabilities**.</li>
+<li>In the left column, click the name of the Microsoft-hosted pool that you are using. In the right column click **Capabilities**.</li>
 
 <li>Click **Add capability** and set the fields to `cmake` and `yes`.</li>
 

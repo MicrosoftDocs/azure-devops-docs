@@ -1,6 +1,6 @@
 ---
-title: Build your Xamarin app | VSTS or Team Foundation Server
-description: Learn how you can define a CI process that builds your Xamarin solution on Team Foundation Server (TFS) and Visual VSTS.
+title: Build your Xamarin app | Azure Pipelines or Team Foundation Server
+description: Learn how you can define a CI process that builds your Xamarin solution on Team Foundation Server (TFS) and Visual Azure Pipelines.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 933A828E-CBB7-44C2-BAC0-1E1E9D78BFA0
@@ -14,21 +14,21 @@ monikerRange: '>= tfs-2017'
 
 # Build your Xamarin app
 
-**VSTS | TFS 2018 | TFS 2017.2**
+**Azure Pipelines | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xamarin app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
+Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xamarin app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS organization, you can also use a TFS server instead of a VSTS organization.
+* While the simplest way to try this quickstart is to use an Azure DevOps organization, you can also use a TFS server instead of an Azure DevOps organization.
 
-* You will build the sample app for Android and iOS using two build pipelines in this quickstart. If you use VSTS, you can use a Microsoft-hosted agent for both. If you use TFS, you will need a self-hosted agent to build Xamarin.Android and Xamarin.iOS. Xamarin.iOS requires an agent running on macOS. Set up a self-hosted agent and [install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your development machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for macOS.
+* You will build the sample app for Android and iOS using two build pipelines in this quickstart. If you use Azure Pipelines, you can use a Microsoft-hosted agent for both. If you use TFS, you will need a self-hosted agent to build Xamarin.Android and Xamarin.iOS. Xamarin.iOS requires an agent running on macOS. Set up a self-hosted agent and [install Xamarin](https://www.xamarin.com/download) on the agent machine. The Xamarin version on your development machine and build agent machine must be at least 4.0.3 for Windows and 5.10.3 for macOS.
 
  |Build | [Microsoft-hosted agents](../../agents/hosted.md) | [On-premises Windows agent](../../agents/v2-windows.md) | On-premises [macOS](../../agents/v2-osx.md) or [Linux](../../agents/v2-linux.md) agent |
  |:---:|:---:|:---:|:---:|
@@ -44,7 +44,7 @@ Xamarin enables you to develop a single solution and deploy it to Android, iOS, 
 https://github.com/adventworks/xamarin-sample
 ```
 
-# [VSTS or TFS repo](#tab/vsts)
+# [Azure Repos or TFS repo](#tab/vsts)
 
 [!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
@@ -66,17 +66,17 @@ You need to create two build pipelines - one for Xamarin.Android and one for Xam
 
 1. Create a new build pipeline.
 
- # [VSTS or TFS repo](#tab/vsts)
+ # [Azure Repos or TFS repo](#tab/vsts)
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build and Release** hub and asked to **Select a template** for the new build pipeline.
+ You are taken to the **Pipelines** hub and asked to **Select a template** for the new build pipeline.
 
  # [GitHub repo](#tab/github)
 
- Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
+ Navigate to the **Builds** tab of the **Pipelines** hub, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
  ---
 
@@ -86,13 +86,13 @@ You need to create two build pipelines - one for Xamarin.Android and one for Xam
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted VS2017_. This hosted pool of agents has the software needed to build your app.
+ * **Azure Pipelines:** Select _Hosted VS2017_. This Microsoft-hosted pool of agents has the software needed to build your app.
 
  * **TFS:** Select a queue that includes a [macOS](../../agents/v2-osx.md) or [Windows](../../agents/v2-windows.md) build agent.
 
 1. Click **Get sources** and then:
 
- # [VSTS or TFS repo](#tab/vsts)
+ # [Azure Repos or TFS repo](#tab/vsts)
 
  Observe that the new build pipeline is automatically linked to your repository.
 
@@ -117,7 +117,7 @@ You need to create two build pipelines - one for Xamarin.Android and one for Xam
 
 ### Define your Xamarin.iOS build
 
-Navigate to the **Builds** tab of the **Build and Release** hub, and then click **+ New**. You are asked to **Select a template** for the new build pipeline. This time, select the **Xamarin.iOS** template.
+Navigate to the **Builds** tab of the **Pipelines** hub, and then click **+ New**. You are asked to **Select a template** for the new build pipeline. This time, select the **Xamarin.iOS** template.
 
 1. For the **Agent queue**, select a hosted macOS queue such as **Hosted macOS**, or the private queue that includes your macOS agent.
 

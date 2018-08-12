@@ -10,7 +10,7 @@
     href: get-started-designer.md
   - name: Build a repo with YAML
     href: get-started-yaml.md
-  - name: Azure DevOps project
+  - name: Azure DevOps Project
     href: get-started-azure-devops-project.md
 - name: Languages
   items: 
@@ -74,9 +74,9 @@
     href: release/define-multistage-release-process.md
   - name: Use approvals and gates
     href: release/deploy-using-approvals.md
-  - name: Jenkins CI for VSTS Azure CD
+  - name: Jenkins CI for Azure Pipelines Azure CD
     href: release/integrate-jenkins-vsts-cicd.md
-  - name: Jenkins CI for VSTS Azure AKS
+  - name: Jenkins CI for Azure Pipelines Azure AKS
     href: release/integrate-jenkins-vsts-aks.md
 - name: Concepts
   items:
@@ -167,7 +167,7 @@
     items:
     - name: Pipelines in TFS
       href: licensing/concurrent-pipelines-tfs.md
-    - name: Jobs in VSTS
+    - name: Jobs in Azure Pipelines
       href: licensing/concurrent-jobs-vsts.md
   - name: Library
     href: library/index.md
@@ -299,7 +299,7 @@
       href: tasks/build/gradle.md
     - name: Grunt
       href: tasks/build/grunt.md
-    - name: Gulp
+    - name: gulp
       href: tasks/build/gulp.md
     - name: Index Sources & Publish Symbols
       href: tasks/build/index-sources-publish-symbols.md
@@ -509,7 +509,7 @@
       href: tasks/tool/java-tool-installer.md
     - name: .NET Core Tool Installer
       href: tasks/tool/dotnet-core-tool-installer.md
-    - name: Node Tool Installer
+    - name: Node.js Tool Installer
       href: tasks/tool/node-js.md
     - name: Use Python Version
       href: tasks/tool/use-python-version.md

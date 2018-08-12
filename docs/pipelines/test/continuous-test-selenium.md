@@ -1,6 +1,6 @@
 ---
-title: Selenium testing with continuous integration in VSTS - test automation tools
-description: UI Testing with Selenium in a continuous deployment pipeline in Visual Studio Team Services (VSTS) and Team Foundation Server TFS
+title: Selenium testing with continuous integration in Azure Pipelines - test automation tools
+description: UI Testing with Selenium in a continuous deployment pipeline in Azure Pipelines and Team Foundation Server TFS
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
 ms.prod: devops
 ms.technology: devops-cicd
@@ -48,7 +48,7 @@ from Visual Studio Test Explorer.
    then choose **Test** and select **Unit Test Project**. Alternatively,
    open the shortcut menu for the solution and choose
    **Add** then **New Project** and then
-   **Unit Test Project**. 
+   **Unit Test Project**.
 
 2. After the project is created, add the Selenium and
    browser driver references used by the browser to
@@ -99,10 +99,10 @@ from Visual Studio Test Explorer.
        public void TheBingSearchTest()
        {
          driver.Navigate().GoToUrl(appURL + "/");
-         driver.FindElement(By.Id("sb_form_q")).SendKeys("VSTS");
+         driver.FindElement(By.Id("sb_form_q")).SendKeys("Azure Pipelines");
          driver.FindElement(By.Id("sb_form_go")).Click();
          driver.FindElement(By.XPath("//ol[@id='b_results']/li/h2/a/strong[3]")).Click();
-         Assert.IsTrue(driver.Title.Contains("VSTS"), "Verified title of the page");
+         Assert.IsTrue(driver.Title.Contains("Azure Pipelines"), "Verified title of the page");
        }
  
        /// <summary>
@@ -159,7 +159,7 @@ from Visual Studio Test Explorer.
 ## Define your CI build process
 
 You'll need a continuous integration (CI) build process that builds your Selenium tests.
-For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md). 
+For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md).
 
 ## Create your web app
 
@@ -172,7 +172,7 @@ to deploy a web app, see [Deploy to Azure web apps](../targets/webapp.md).
 You can deploy and test your app using either the Microsoft-hosted agent in Azure, or a self-hosted agent that you install on the target servers.
 
 * When using the **Microsoft-hosted agent**, you should use the Selenium web drivers that are
-  pre-installed on the Microsoft-hosted agents because they are compatible with the browser versions installed on the Microsoft-hosted agent images. 
+  pre-installed on the Microsoft-hosted agents because they are compatible with the browser versions installed on the Microsoft-hosted agent images.
   The file paths to these drivers can be obtained from the environment variables named `IEWebDriver` (Internet Explorer),
   `ChromeWebDriver` (Google Chrome), and `GeckoWebDriver` (Firefox). For example,  
 
@@ -182,7 +182,7 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
   <p />
   
 * When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
-  See [Build and Release Agents](../agents/agents.md#account). 
+  See [Build and Release Agents](../agents/agents.md#account).
 
 <a name="include-test"></a>
 ## Include the test in a CD release
@@ -193,13 +193,13 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
 version of the **Visual Studio Test** task. These tasks are not available in TFS 2015 or TFS 2017.
 To run Selenium tests in these versions of TFS, you must use the 
 [Visual Studio Test Agent Deployment](../tasks/test/visual-studio-test-agent-deployment.md)
-and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead. 
+and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 ::: moniker-end
 
 1. If you don't have an existing release pipeline that deploys your web app:
 
-   * Open the **Releases** page in the **Build &amp; Release** hub and choose the **+** icon, then choose
+   * Open the **Releases** page in the **Pipelines** hub and choose the **+** icon, then choose
      **Create release pipeline**.
      
      ![Creating a new release pipeline](_img/continuous-test-selenium/continuous-test-selenium-06.png)
@@ -235,7 +235,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 1. If you added the **Visual Studio Test Platform Installer** task to your pipeline, change the
    **Test platform version** setting in the **Execution options** section of the **Visual Studio Test**
-   task to **Installed by Tools Installer**. 
+   task to **Installed by Tools Installer**.
  
    ![Setting the teat platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
 

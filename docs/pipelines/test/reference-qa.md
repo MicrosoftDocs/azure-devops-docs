@@ -1,6 +1,6 @@
 ---
-title: FAQs for continuous testing in VSTS and TFS - test automation tools  
-description: FAQs for continuous testing topics for Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS).
+title: FAQs for continuous testing in Azure Pipelines and TFS - test automation tools  
+description: FAQs for continuous testing topics for Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: F9F85914-C81A-4D9E-80CA-36EC4E8A5677 
 ms.prod: devops
 ms.technology: devops-cicd
@@ -139,7 +139,7 @@ If you're running release builds of .cpp unit tests, make sure that you have Win
 <a name="xaml-build"></a>
 ### Q: What are the differences if I am still using a XAML build?
 
-**A**: If you are using a XAML build in VSTS or TFS, you can run tests
+**A**: If you are using a XAML build in Azure Pipelines or TFS, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
 [Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 You can also run tests using Microsoft Test Manager (MTM) and a
@@ -162,8 +162,8 @@ You can also run tests using Microsoft Test Manager (MTM) and a
 ### Q: Can I configure work items to open in Visual Studio?
 
 **A**: Yes, if you want test work items to open inside Visual Studio
-instead of the default VSTS or TFS UI in your web browser,
-change the **Work Items | General** setting from the **Tools | Options** menu in Visual Studio. 
+instead of the default Azure Pipelines or TFS UI in your web browser,
+change the **Work Items | General** setting from the **Tools | Options** menu in Visual Studio.
 
 ![Change work item display mode](_img/work-item-compatibility.png)
 
@@ -196,9 +196,9 @@ Open the shortcut menu for the test suite in the left column and choose
 
 Enter the following values in the Run with options dialog and then choose **OK**:
 
-* **Test type and runner**: Select **Automated tests using Release environment**. 
+* **Test type and runner**: Select **Automated tests using Release environment**.
   
-* **Build**: Select the build that has the test binaries. The test results will be associated this build. 
+* **Build**: Select the build that has the test binaries. The test results will be associated this build.
  
 * **Release Pipeline**: Select a pipeline from the list of release pipelines that can consume the selected build artifact.
  
@@ -230,7 +230,7 @@ the test run results, and sets the test points associated with the
 test results in the test run. From an auditing perspective, the 
 Visual Studio task provides a trace from the historical releases
 and the test run identifiers to the tests that were submitted for
-on-demand test execution. 
+on-demand test execution.
 
 <a name="faq-agentmode"></a>
 ### Q: Should the agent run in interactive mode or as a service?
@@ -239,42 +239,42 @@ on-demand test execution.
 [coded UI](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code)
 or [Selenium](continuous-test-selenium.md) tests,
 the agent on the test machines must be running in interactive mode with auto-logon enabled,
-not as a service, to allow the agent to launch a web browser. 
+not as a service, to allow the agent to launch a web browser.
 If you are using a headless browser such as [PhantomJS](http://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 
 [Build and Release Agents](../../pipelines/agents/agents.md),
 [Deploy an agent on Windows](../../pipelines/agents/v2-windows.md),
-and [Agent pools and queues](../../pipelines/agents/pools-queues.md). 
+and [Agent pools and queues](../../pipelines/agents/pools-queues.md).
 
 ### Q: Where can I find detailed documentation on how to run Selenium tests?
 
-**A:** See [Get started with Selenium testing](continuous-test-selenium.md). 
+**A:** See [Get started with Selenium testing](continuous-test-selenium.md).
 
 ### Q: What happens if I select multiple configurations for the same test?
 
-**A:** Currently, the on-demand workflow is not configuration-aware. 
+**A:** Currently, the on-demand workflow is not configuration-aware.
 In future releases, we plan to pass configuration context to the test
-method and report the appropriate results. 
+method and report the appropriate results.
 
 ### Q: What if I need to download product binaries and test binaries from different builds? Or if I need to obtain artifacts from a source such as Jenkins?
 
 **A:** The current capability is optimized for a single team build
 to be tested on-demand using a Release Management workflow.
 We will evaluate support for multi-artifact releases, including
-non-Team Build artifacts such as Jenkins, based on user feedback. 
+non-Team Build artifacts such as Jenkins, based on user feedback.
 
 ### Q: I already have a scheduled testing release pipeline. Can I reuse the same pipeline to run test on-demand, or should I create a new pipeline as shown above? 
 
 **A:** We recommend you use a separate release pipeline and environment for on-demand automated testing from the **Test** hub because:
 
 * You may not want to deploy the app every time you want to run a few on-demand tests.
-Scheduled testing environments are typically set up to deploy the product and then run tests. 
+Scheduled testing environments are typically set up to deploy the product and then run tests.
 
 * New releases are triggered for every on-demand run. If you have many
 testers executing a few on-demand test runs every day, your scheduled
 testing release pipeline could be overloaded with releases for these
 runs, making it difficult to find releases that were triggered for the
-pipeline that contains scheduled testing and deployment to production. 
+pipeline that contains scheduled testing and deployment to production.
 
 * You may want to configure the Visual Studio Test task with a Test run
 identifier as an input so that you can trace what triggered the release.
@@ -283,7 +283,7 @@ See [How does selecting "Test run (for on-demand runs)" in the Visual Studio Tes
 ### Q: Can I trigger these runs and view the results in Microsoft Test Manager?
 
 **A:** No. MTM will not support running automated tests against Team Foundation
-builds. It only works in the web-based interface for VSTS and TFS.
+builds. It only works in the web-based interface for Azure Pipelines and TFS.
 All new manual and automated testing product development investments will be
 in the web-based interface. No further development is planned for MTM. See
 [Guidance on Microsoft Test Manager usage](../../test/mtm/guidance-mtm-usage.md).
@@ -299,8 +299,8 @@ runs can still be triggered but releases will be queued for processing
 until agents are available.
 
 * You have sufficient jobs to enable concurrent pipelines.
-See [Concurrent pipelines in VSTS](../../pipelines/licensing/concurrent-jobs-vsts.md) 
-or [Concurrent pipelines in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information. 
+See [Concurrent pipelines in Azure Pipelines](../../pipelines/licensing/concurrent-jobs-vsts.md) 
+or [Concurrent pipelines in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information.
 
 * Testers do not run the same tests in parallel. Doing so may cause
 results to be overwritten depending on the order of execution.
@@ -316,7 +316,7 @@ sources, set this option to
 
 * If your application does not support tests running in parallel
 from different sources, set this option to
-**Allow only one active deployment at a time**. 
+**Allow only one active deployment at a time**.
 
 <a name="faq-errors"></a>
 ### Q: What are the typical error scenarios or issues I should look out for if my tests don't run?
@@ -330,21 +330,21 @@ from different sources, set this option to
  
 * I get an error that I don't have sufficient permission to trigger a release.
    - Configure **Create releases** and **Manage deployments** permissions for
-     the user in the **Security** menu of the release pipeline. 
+     the user in the **Security** menu of the release pipeline.
      See [Release permissions](../../pipelines/policies/permissions.md#release-permissions).<p />
    
-* I get an error that no automated tests were found. 
+* I get an error that no automated tests were found.
    - Check the automation status of the selected tests. Do this in the work item
      for the test case, or use the **Column options** link in the **Test Plans**
      page of the **Test** hub to add the **Automation status** column to the list
      of tests. See the [pre-requisites section](../../test/run-automated-tests-from-test-hub.md#prerequisites) for information
      about automating manual tests.<p />
 
-* My tests didn't execute, and I suspect the release pipeline is incorrect. 
+* My tests didn't execute, and I suspect the release pipeline is incorrect.
    - Use the link in the **Run summary** page to access the release instance
      used to run the tests, and view the release logs.<p /> 
 
-* My tests go into the error state, or remain "in-progress" even after release to the environment is triggered. 
+* My tests go into the error state, or remain "in-progress" even after release to the environment is triggered.
    - Check if the release environment that you selected has the correct task
      and version selected. You must use version 2 or higher of the **Visual Studio
      Test** task. Version 1 of the task, and the **Run Functional Tests** task,

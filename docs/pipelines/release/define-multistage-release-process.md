@@ -1,6 +1,6 @@
 ---
-title: Define a multi-stage CD release process | VSTS Tutorial
-description: DevOps CI CD - Define a multi-stage continuous deployment (CD) process for your ASP.NET Core app using VSTS
+title: Define a multi-stage CD release process | Azure Pipelines Tutorial
+description: DevOps CI CD - Define a multi-stage continuous deployment (CD) process for your ASP.NET Core app using Azure Pipelines
 ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly
+Azure Pipelines and Team Foundation Server (TFS) provide a highly
 configurable and manageable pipeline for releases to multiple environments
 such as development, staging, QA, and production environments; including
 requiring approvals at specific stages.
@@ -40,7 +40,7 @@ You'll need:
   you can create it by working through any of the following quickstarts and tutorials:
 
   - [Deploy to an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
-  - [Azure DevOps project](../get-started-azure-devops-project.md)
+  - [Azure DevOps Project](../get-started-azure-devops-project.md)
   - [Deploy to IIS web server on Windows](../apps/cd/deploy-webdeploy-iis-deploygroups.md)
 
 * Two separate targets where you will deploy the app. These could be virtual machines,
@@ -54,7 +54,7 @@ You'll need:
 
 In this section, you will check that the triggers you need for continuous deployment are configured in your release pipeline.
 
-1. In the **Build &amp; Release** hub, open the **Releases** tab. Select your release pipeline and, in
+1. In the **Pipelines** hub, open the **Releases** tab. Select your release pipeline and, in
    the right pane, choose **Edit**.
 
    ![Opening the release pipeline for editing](_img/define-multistage-release-process/open-for-edit.png)

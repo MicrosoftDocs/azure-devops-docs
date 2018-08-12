@@ -1,5 +1,5 @@
 ---
-title: CI/CD index to content for VSTS and Team Foundation Server | VSTS & TFS    
+title: CI/CD index to content for Azure Pipelines and Team Foundation Server | Azure Pipelines & TFS    
 description: Learn how to configure CI/CD for the app and platform of your choice. Tutorials, references, and other documentation.  
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range=">= tfs-2015"
 
-VSTS and Team Foundation Server help you implement a continuous integration (CI), test, and deployment (CD) pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
+Azure Pipelines and Team Foundation Server help you implement a build, test, and deployment pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
 
 ## 5-Minute quickstarts
 
@@ -68,7 +68,7 @@ VSTS and Team Foundation Server help you implement a continuous integration (CI)
 
 ## Step-by-step tutorials
 
-* [CI builds for Git in VSTS](build/ci-build-git.md)
+* [CI builds for Git in Azure Pipelines](build/ci-build-git.md)
 * [Set up multi-stage release](release/define-multistage-release-process.md)
 
 ## Videos

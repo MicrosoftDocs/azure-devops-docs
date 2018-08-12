@@ -14,7 +14,7 @@ monikerRange: '> tfs-2018'
 
 # Build a repository with YAML
 
-If you manage your code in GitHub or in Visual Studio Team Services (VSTS) Git, then you can use VSTS pipelines to easily build the repo by adding a YAML file to it. VSTS pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
+If you manage your code in GitHub or in Azure Repos Git, then you can use Azure Pipelines pipelines to easily build the repo by adding a YAML file to it. Azure Pipelines pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
 
 > [!NOTE]
 > To use YAML you must have the **Build YAML pipelines** [preview feature](../project/navigation/preview-features.md) enabled on your organization.
@@ -35,9 +35,9 @@ Choose the sample application for the language of your choice from one of the fo
 | Java | `https://github.com/adventworks/java-sample` |
 | JavaScript | `https://github.com/adventworks/nodejs-sample` |
 
-Get the code for the sample application into your own GitHub or VSTS repository.
+Get the code for the sample application into your own GitHub or Azure Repos repository.
 
-# [VSTS Git repo](#tab/gitvsts)
+# [Azure Repos Git repo](#tab/gitvsts)
 
 [!INCLUDE [include](apps/_shared/get-sample-code-vsts.md)]
 
@@ -49,9 +49,9 @@ Get the code for the sample application into your own GitHub or VSTS repository.
 
 ## Get your first build
 
-# [VSTS Git repo](#tab/gitvsts)
+# [Azure Repos Git repo](#tab/gitvsts)
 
-1. In VSTS, navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+1. In Azure Repos, navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
 1. Inspect the `.vsts-ci.yml` file at the root of your imported repository. The YAML file contains the instructions for the build process. Here's an example snippet from a Gradle build pipeline. The actual content in your file depends on the sample application you chose.
 
@@ -66,19 +66,19 @@ Get the code for the sample application into your own GitHub or VSTS repository.
       tasks: 'build'
   ```
 
-  The next time you push a change to this YAML file, VSTS automatically builds your code.
+  The next time you push a change to this YAML file, Azure Pipelines automatically builds your code.
 
 1. Choose **Edit** to make a change to the YAML file.
 
 1. Add the following comment:
 
   ```
-  # This repository is built using VSTS.
+  # This repository is built using Azure Pipelines.
   ```
 
 1. Commit the above change to the master branch.
 
-1. Navigate to the **Build and Release** hub.
+1. Navigate to the **Pipelines** hub.
 
 1. Observe that there's a new build pipeline named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
 
@@ -86,9 +86,9 @@ Get the code for the sample application into your own GitHub or VSTS repository.
 
 # [GitHub repo](#tab/github)
 
-In VSTS:
+In Azure Pipelines:
 
-1. Navigate to the **Builds** tab of the **Build and Release** hub, and then choose **+ New Build Pipeline**.
+1. Navigate to the **Builds** tab of the **Pipelines** hub, and then choose **+ New Build Pipeline**.
 
 1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your  repository. You'll need to authorize access to your repo via a GitHub service connection.
 
@@ -115,19 +115,19 @@ In GitHub:
       tasks: 'build'
   ```
 
-  The next time you change any file in this repository, VSTS Pipelines will automatically build your code.
+  The next time you change any file in this repository, Azure Pipelines will automatically build your code.
 
-1. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
+2. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
 
-1. Add the following comment:
+3. Add the following comment:
 
   ```
-  # This repository is built using VSTS.
+  # This repository is built using Azure Pipelines.
   ```
 
 1. Commit the above change to the master branch.
 
-Back in VSTS:
+Back in Azure Pipelines:
 
 1. Observe that a new build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
 
@@ -143,6 +143,6 @@ Back in VSTS:
 
 ## Next steps
 
-You've just learned the basics of using YAML to create and run a VSTS build process.
+You've just learned the basics of using YAML to create and run an Azure Pipelines build process.
 This pipeline automatically builds and validates whatever code is checked in by your team.
 Now you're ready to configure your CI pipeline for the [programming language you're using](index.md).

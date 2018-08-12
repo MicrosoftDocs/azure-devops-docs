@@ -1,6 +1,6 @@
 ---
-title: Archive Files | VSTS or Team Foundation Server
-description: Learn all about how you can use an archive file to then create a source folder in VSTS and Team Foundation Server (TFS).  
+title: Archive Files | Azure Pipelines or Team Foundation Server
+description: Learn all about how you can use an archive file to then create a source folder in Azure Pipelines and Team Foundation Server (TFS).  
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -47,7 +47,7 @@ None
 <tr>
 <td>Prefix root folder name to archive paths</td>
 <td>If selected, the root folder name will be prefixed to file paths within the archive.  Otherwise, all file paths will start one level lower.
-<p>For example, suppose the selected root folder is: <b>`/home/user/output/classes/`</b>, and contains: <b>`com/acme/Main.class`</b>. 
+<p>For example, suppose the selected root folder is: <b>`/home/user/output/classes/`</b>, and contains: <b>`com/acme/Main.class`</b>.
 <ul>
     <li>If selected, the resulting archive would contain: <b>`classes/com/acme/Main.class`</b>.
     </li>

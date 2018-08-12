@@ -1,6 +1,6 @@
 ---
-title: Conditional expressions | VSTS or Team Foundation Server
-description: Learn about how you can write custom conditions for running your task in VSTS or Microsoft Team Foundation Server (TFS).
+title: Conditional expressions | Azure Pipelines or Team Foundation Server
+description: Learn about how you can write custom conditions for running your task in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Specify conditions
 
-**VSTS | TFS 2018 | TFS 2017.3** 
+**Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]

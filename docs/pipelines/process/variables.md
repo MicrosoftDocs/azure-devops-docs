@@ -1,5 +1,5 @@
 ---
-title: Pipeline variables | VSTS or Team Foundation Server
+title: Pipeline variables | Azure Pipelines or Team Foundation Server
 description: Pipeline variables are name-value pairs defined by you or provided by Build or Release Management. You can use variables as inputs and in your scripts.
 ms.topic: reference
 ms.prod: devops
@@ -22,8 +22,8 @@ Some variables are predefined by the system, and you are free to add your own as
 
 ## Working with variables
 
-Variables add a layer of indirection to your pipeline definition.
-Almost any place where a pipeline definition requires a text string or a number, you can use a variable instead of hard-coding a value.
+Variables add a layer of indirection to your pipeline.
+Almost any place where a pipeline requires a text string or a number, you can use a variable instead of hard-coding a value.
 The system will replace the variable with its current value during the pipeline's execution.
 
 Variable names consist of letters, numbers, `.`, and `_` characters.

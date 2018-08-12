@@ -1,6 +1,6 @@
 ---
-title: Variable groups for VSTS and TFS
-description: Understand variable groups in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) with Release Management
+title: Variable groups for Azure Pipelines and TFS
+description: Understand variable groups in Azure Pipelines and Team Foundation Server (TFS) with Release Management
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Variable groups for builds and releases
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 
 Use a variable group to store values that you want to make available across
 multiple build and release pipelines. Variable groups are defined and managed in the **Library** tab of the
-**Build &amp; Release** hub.
+**Pipelines** hub.
 
 ## Create a variable group
 
@@ -54,7 +54,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 1. Specify your Azure subscription end point and the name of the vault containing your secrets.
 
    Ensure the Azure service connection has at least **Get** and **List** management permissions on the vault for secrets.
-   You can enable VSTS to set these permissions by choosing **Authorize** next to the vault name.
+   You can enable Azure Pipelines to set these permissions by choosing **Authorize** next to the vault name.
    Alternatively, you can set the permissions manually in the [Azure portal](https://portal.azure.com):
 
    - Open the **Settings** blade for the vault, choose **Access policies**, then **Add new**.
@@ -62,7 +62,7 @@ Link an existing Azure key vault to a variable group and map selective vault sec
    - In the **Add access policy** blade, choose **Secret permissions** and ensure that **Get** and **List** are checked (ticked).
    - Choose **OK** to save the changes.<p />
 
-1. In the **Variable groups** page, choose **+ Add** to select specific secrets from your vault that will be mapped to this variable group. 
+1. In the **Variable groups** page, choose **+ Add** to select specific secrets from your vault that will be mapped to this variable group.
 
 ### Secrets management notes
 
@@ -72,12 +72,12 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 * Any changes made to *existing* secrets in the key vault, such as a change in the value of a secret, will be made available
   automatically to all the definitions in which the variable group is used.
 
-* When *new* secrets are added to the vault, they are **not** made available automatically to all the definitions. 
+* When *new* secrets are added to the vault, they are **not** made available automatically to all the definitions.
   New secrets must be explicitly added to the variable group in order to make them available to definitions
   in which the variable group is used.
 
 * Azure Key Vault supports storing and managing cryptographic keys and secrets in Azure.
-  Currently, VSTS variable group integration supports mapping only secrets from the Azure key vault.
+  Currently, Azure Pipelines variable group integration supports mapping only secrets from the Azure key vault.
   Cryptographic keys and certificates are not yet supported
 
 ## Use a variable group
@@ -92,16 +92,16 @@ also see a drop-down list of environments in the pipeline - you can link the var
 * In a **build pipeline**, the variable group is linked to the pipeline and all the variables in the group are available for use within this pipeline.
 * In a **release pipeline**, you can link a variable group to the pipeline itself, or to a specific environment of the release pipeline.
   - If you link to a release pipeline, all the variables in the group are available for use in the pipeline and in all environments of that pipeline.
-  - If you link to one or more environments in a release pipeline, the variables from the variable group are scoped to these environments and are not accessible in the other environments of the same release. 
+  - If you link to one or more environments in a release pipeline, the variables from the variable group are scoped to these environments and are not accessible in the other environments of the same release.
 
 > [!NOTE]
-> Linking a variable group to a specific environment is available only on VSTS and on TFS 2018 Update 2 and later. 
+> Linking a variable group to a specific environment is available only on Azure Pipelines and on TFS 2018 Update 2 and later.
 
 You access the value of the variables in a linked variable group in exactly
 the same way as [variables you define within the pipeline itself](../release/variables.md#custom-variables).
 For example, to access the value of a variable named **customer** in a variable group linked to the pipeline,
 use `$(customer)` in a task parameter or a script. However, secret variables (encrypted variables and key vault variables) 
-cannot be accessed directly in scripts - instead they must be passed as arguments to a task. 
+cannot be accessed directly in scripts - instead they must be passed as arguments to a task.
 
 [!INCLUDE [variable-collision](../_shared/variable-collision.md)]
 

@@ -1,6 +1,6 @@
 ---
 title: Copy and publish build artifacts
-description: Learn about how you can copy build artifacts to a staging folder and publish them with VSTS and Team Foundation Server (TFS).
+description: Learn about how you can copy build artifacts to a staging folder and publish them with Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 > [!IMPORTANT]
 > 
-> If you're using VSTS, or Team Foundation Server (TFS) 2017 or newer, then we recommend that you do not use this deprecated task. Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Team Build](../../build/artifacts.md).
+> If you're using Azure Pipelines, or Team Foundation Server (TFS) 2017 or newer, then we recommend that you do not use this deprecated task. Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Team Build](../../build/artifacts.md).
 
 ::: moniker-end
 

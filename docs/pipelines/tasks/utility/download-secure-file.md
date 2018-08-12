@@ -1,6 +1,6 @@
 ---
-title: Download Secure File | VSTS or Team Foundation Server
-description: Learn how you can download a secure file to a temporary location on the build or release agent in VSTS and Team Foundation Server
+title: Download Secure File | Azure Pipelines or Team Foundation Server
+description: Learn how you can download a secure file to a temporary location on the build or release agent in Azure Pipelines and Team Foundation Server
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 
 Use this task to download a [secure file](../../library/secure-files.md) from the server during a build or release.
 
-Once downloaded, the secure file is located in the `$(Agent.TempDirectory)` directory of the VSTS Agent.
+Once downloaded, the secure file is located in the `$(Agent.TempDirectory)` directory of the Azure Pipelines Agent.
 
 The full path of the downloaded file is stored to the `$env:DOWNLOADSECUREFILE_SECUREFILEPATH` environment variable.
 

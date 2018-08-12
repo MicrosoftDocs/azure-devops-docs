@@ -1,6 +1,6 @@
 ---
 title: Azure web app deployment | Microsoft Docs
-description: Deploy to Azure web apps from VSTS or TFS
+description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
@@ -39,7 +39,7 @@ Before you read this topic, you should understand the type of pipeline that you'
 
 ## Example
 
-If you want some sample code that works with this guidance, import (into VSTS or TFS) or fork (into GitHub) this repo:
+If you want some sample code that works with this guidance, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
 https://github.com/adventworks/dotnetcore-sample
@@ -142,7 +142,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** task. 
+The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** task.
 This task is automatically added to the release pipeline when you select one of the pre-built deployment templates for Azure app service deployment.
 Templates exist for apps developed in various programming languages. If you cannot find a template for your language, select the generic **Azure App Service Deployment** template.
 
@@ -157,13 +157,13 @@ This is where the task picks up the web package for deployment.
 ## Azure service connection
 
 The **Azure App Service Deploy** task, similar to other built-in Azure tasks, requires an Azure service connection as an
-input. The Azure service connection stores the credentials to connect from VSTS or TFS to Azure. 
+input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from VSTS to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
+You must supply an Azure service connection to the `AzureRmWebAppDeployment` task. The Azure service connection stores the credentials to connect from Azure Pipelines to Azure. See [Create an Azure service connection](../library/connect-to-azure.md).
 
 ::: moniker-end
 
@@ -177,7 +177,7 @@ YAML builds are not yet available on TFS.
 
 ::: moniker range="vsts"
 
-The easiest way to get started with this task is to be signed in as a user that owns both the VSTS and the Azure subscriptions.
+The easiest way to get started with this task is to be signed in as a user that owns both the Azure DevOps organization and the Azure subscription.
 In this case, you won't have to manually create the service connection.
 Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
@@ -325,7 +325,7 @@ You may want to apply a specific configuration for your web app target before de
 This is particularly useful when you deploy the same build to multiple web apps in a pipeline.
 For example, if your **Web.config** file contains a connection string named `connectionString`,
 you can change its value before deploying to each web app. You can do this either by applying
-a web config transformation or by substituting variables in your Web.config file. 
+a web config transformation or by substituting variables in your Web.config file.
 
 # [YAML](#tab/yaml)
 
@@ -378,7 +378,7 @@ To change the `connectionString` using variable substitution:
 
 ## Deploying conditionally
 
-You may choose to deploy only certain builds to your Azure web app. 
+You may choose to deploy only certain builds to your Azure web app.
 
 # [YAML](#tab/yaml)
 
@@ -399,7 +399,7 @@ The following example shows how to use step conditions to deploy only those buil
     WebAppName: '<Name of web app>'
 ```
 
-To learn more about conditions, see [Specify conditions](../process/conditions.md). 
+To learn more about conditions, see [Specify conditions](../process/conditions.md).
 
 ::: moniker-end
 

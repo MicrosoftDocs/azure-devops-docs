@@ -1,6 +1,6 @@
 ---
 title: Environment templates in Release Management
-description: DevOps CI CD - Understand environment templates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand environment templates in Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
 ms.prod: devops
 ms.technology: devops-cicd
@@ -27,7 +27,7 @@ appropriate tasks and settings, which can considerably reduce the time and
 effort required to create a release pipeline for your DevOps CI/CD processes.
 
 A set of pre-defined environment templates are available in
-VSTS and in each version of TFS. You can use these templates
+Azure Pipelines and in each version of TFS. You can use these templates
 when you create a new release pipeline or add a new
 environment to a pipeline. You can also create your own custom
 environment templates from an environment you have populated and
@@ -59,12 +59,12 @@ Yes. See [Adding release management environment templates to your VSS extension]
 
 ### How do I delete a custom environment template?
 
-You can delete an existing custom template from the list of templates that is displayed when you add a new environment to our pipeline. 
+You can delete an existing custom template from the list of templates that is displayed when you add a new environment to our pipeline.
 
 ![Delete custom template](_img/delete-custom-template.png)
 
 ### How do I update a custom environment template?
 
-To update an environment template, delete the existing template in a release pipeline and then save the environment as a template with the same name. 
+To update an environment template, delete the existing template in a release pipeline and then save the environment as a template with the same name.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

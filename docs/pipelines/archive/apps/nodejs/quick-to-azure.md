@@ -1,6 +1,6 @@
 ---
-title: Quick Start - Build and Deploy a Node.js app | VSTS
-description: Set up a continuous integration (CI) build for your Node.js app, and then a continuous deployment (CD) release to Azure using VSTS
+title: Quick Start - Build and Deploy a Node.js app | Azure Pipelines
+description: Set up a continuous integration (CI) build for your Node.js app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -15,13 +15,13 @@ monikerRange: 'vsts'
 
 # Implement a CI/CD process to build and deploy your Node.js app to Azure
 
-VSTS provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
-Node.js apps. 
+Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
+Node.js apps.
 This quickstart shows how to set up CI and CD to deploy
 a Node.js app
-to an Azure web app. 
-You create the web app using the Azure CLI, then set up CI/CD in VSTS.
-In the CI process, you use Gulp to run Mocha tests.
+to an Azure web app.
+You create the web app using the Azure CLI, then set up CI/CD in Azure Pipelines.
+In the CI process, you use gulp to run Mocha tests.
 
 ![node.js web app](_img/nodejs-web-app.png)
 
@@ -39,13 +39,13 @@ https://github.com/adventworks/nodejs-sample
 
 [!INCLUDE [temp](../_shared/set-up-ci-1.md)]
 
-In the right panel, search for `node`, select **NodeJS with Gulp**, and then click **Apply**.
+In the right panel, search for `node`, select **NodeJS with gulp**, and then click **Apply**.
 
  ![apply node.js gulp template](../../../apps/nodejs/_img/apply-nodejs-gulp-template.png)
 
 [!INCLUDE [temp](../_shared/set-up-ci-2.md)]
 
-Select the **Run gulp task** from the tasks. On the right side, you see the parameters for the task. Under the section **JUnit Test Results**, select the option to **Publish to TFS/VSTS**.
+Select the **Run gulp task** from the tasks. On the right side, you see the parameters for the task. Under the section **JUnit Test Results**, select the option to **Publish to Azure Pipelines/TFS**.
 
 [!INCLUDE [temp](../_shared/set-up-ci-3.md)]
 
@@ -59,7 +59,7 @@ Select the **Run gulp task** from the tasks. On the right side, you see the para
 
 ## Update to redeploy the code
 
-Navigate to the **Code** hub in the VSTS portal. Navigate to **server.js** file. Make the following simple change to that file by selecting the edit action.
+Navigate to the **Code** hub in the Azure DevOps portal. Navigate to **server.js** file. Make the following simple change to that file by selecting the edit action.
 
 ![Screenshot showing update to code](./_img/cicd-get-started-nodejs-update-code.png)
 

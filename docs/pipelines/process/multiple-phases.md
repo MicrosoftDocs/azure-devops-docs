@@ -1,6 +1,6 @@
 ---
 title: Workflow using multiple phases in Build and Release Management
-description: Understand how to configure a workflow using phases in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Understand how to configure a workflow using phases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 497316D5-F657-4FFF-9F31-6DBEE9408D99
 ms.prod: devops
 ms.technology: devops-cicd
@@ -189,7 +189,7 @@ In the example above:
    and, after this phase is complete, the agent is released.
 
 1. The server phase contains a Manual Intervention task
-   that runs on the VSTS or TFS.
+   that runs on the Azure Pipelines or TFS.
    It does not execute on, or require, an agent or any target servers.
    The Manual Intervention task displays its message and waits for a
    "resume" or "reject" response from the user. In this example, if

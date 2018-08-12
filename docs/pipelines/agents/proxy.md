@@ -1,6 +1,6 @@
 ---
 title: Run the agent behind a web proxy
-description: Learn how you can run a v2 private build and release agent behind a web proxy for VSTS and Team Foundation Server (TFS)
+description: Learn how you can run a v2 private build and release agent behind a web proxy for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -19,17 +19,17 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This topic explains how to run a v2 self-hosted agent behind a web proxy. 
+This topic explains how to run a v2 self-hosted agent behind a web proxy.
 
 ::: moniker range=">= tfs-2018"
 
-## VSTS, TFS 2018 RTM and newer
+## Azure Pipelines, TFS 2018 RTM and newer
 
 (Applies to agent version 2.122 and newer.)
 
 When your self-hosted agent is behind a web proxy, you can:
 
-* Allow your agent to connect to VSTS or TFS behind a web proxy.
+* Allow your agent to connect to Azure Pipelines or TFS behind a web proxy.
 
 * Allow your agent to get sources in the build job and download artifacts in the release job.
 
@@ -62,7 +62,7 @@ To enable the agent to run behind a web proxy
 
  # [macOS and Linux](#tab/unix)
 
- OSX: OSX Keychain
+ macOS: macOS Keychain
  
  Linux: Encrypted with symmetric key based on machine id
 
@@ -70,7 +70,7 @@ To enable the agent to run behind a web proxy
 
 1. **Limitation of agent version 122.0**
 
- This applies to TFS 2018 RTM. It also could apply to VSTS, unless you upgrade your agent.
+ This applies to TFS 2018 RTM. It also could apply to Azure Pipelines, unless you upgrade your agent.
 
  # [Windows](#tab/windows)
 
@@ -86,15 +86,15 @@ To enable the agent to run behind a web proxy
 
 ### How the agent handles the proxy within a build or release job
 
-After configuring proxy for agent, agent infrastructure will start talk to VSTS/TFS service through the web proxy specified in the `.proxy` file.  
+After configuring proxy for agent, agent infrastructure will start talk to Azure Pipelines/TFS service through the web proxy specified in the `.proxy` file.  
 
 Since the code for the `Get Source` task in builds and `Download Artifact` task in releases are also baked into the agent, those tasks will follow the agent proxy configuration from the `.proxy` file.  
 
 Agent will expose proxy configuration via environment variables for every task execution, task author need to use `vsts-task-lib` methods to retrieve back proxy configuration and handle proxy with their task.
 
-### Get proxy configuration by using [VSTS-Task-Lib](https://github.com/Microsoft/vsts-task-lib) method
+### Get proxy configuration by using [Azure Pipelines-Task-Lib](https://github.com/Microsoft/vsts-task-lib) method
 
-See [VSTS-Task-Lib doc](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/proxy.md) for details.
+See [Azure Pipelines-Task-Lib doc](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/proxy.md) for details.
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ See [VSTS-Task-Lib doc](https://github.com/Microsoft/vsts-task-lib/blob/master/n
 
 ## TFS 2017.2 and older
 
-(You also can use this method for VSTS and newer versions of TFS, but we recommend the above method in those cases.)
+(You also can use this method for Azure Pipelines and newer versions of TFS, but we recommend the above method in those cases.)
 
 In the agent root directory, create a .proxy file with your proxy server url.
 
@@ -147,7 +147,7 @@ export VSTS_HTTP_PROXY_PASSWORD=proxypassword
 
 If you are running your agent as a service:
 
-1. 
+1.
 
  ```bash
 export VSTS_HTTP_PROXY_USERNAME=proxyuser

@@ -1,6 +1,6 @@
 ---
-title: VSTS and Team Foundation Server Build and Deploy - Azure File Copy
-description: VSTS and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
+title: Azure Pipelines and Team Foundation Server Build and Deploy - Azure File Copy
+description: Azure Pipelines and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.prod: devops
 ms.technology: devops-cicd
@@ -42,7 +42,7 @@ contain virtual machines, use the
 has a sample template that can perform the required
 operations to set up the WinRM HTTPS
 protocol on the virtual machines, open the 5986 port 
-in the firewall, and install the test certificate. 
+in the firewall, and install the test certificate.
 
 ## Demands
 
@@ -107,7 +107,7 @@ to obtain this.
 #### What are the WinRM prerequisites for this task?
 
 The task uses Windows Remote Management (WinRM) HTTPS protocol to
-copy the files from the storage blob container to the Azure VMs. 
+copy the files from the storage blob container to the Azure VMs.
 This requires the WinRM HTTPS service to be configured on the VMs,
 and a suitable certificate installed.
 
@@ -117,7 +117,7 @@ WinRM HTTPS ports, follow these steps:
 1. Configure an inbound access rule to allow HTTPS on port 5986 of each VM.
 1. Disable [UAC remote restrictions](https://support.microsoft.com/kb/951016).
 1. Specify the credentials for the task to access the VMs using an administrator-level login in the simple form **username** without any domain part.
-1. Install a certificate on the machine that runs the automation agent. 
+1. Install a certificate on the machine that runs the automation agent.
 1. Set the **Test Certificate** parameter of the task if you are using a self-signed certificate.
 
 For more details, see [this blog post](http://blogs.msdn.com/b/muthus_blog/archive/2015/11/04/pre-requisites-for-using-azure-vms-in-winrm-based-tasks-in-build-and-rm-workflows.aspx).
@@ -139,7 +139,7 @@ and browse for **Storage accounts (Classic)** or
 
 
 * For Azure classic resources, use an **Azure** service connection
-  type with certificate or credentials-based authentication. 
+  type with certificate or credentials-based authentication.
   If you are using credentials-based authentication, 
   ensure that the credentials are for a 
   [school or work account](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/work-accounts-faq/).
@@ -165,7 +165,7 @@ and browse for **Storage accounts (Classic)** or
 
 If the specified Resource Group contains both 
 Azure Resource Manager and Classic VMs, the set of VMs that 
-will be targeted depends on the connection type. 
+will be targeted depends on the connection type.
 For certificate-based connections and credentials-based
 connections, the copy operation will be performed 
 only on Classic VMs. For Service Principal Name 

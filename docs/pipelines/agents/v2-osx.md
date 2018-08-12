@@ -1,6 +1,6 @@
 ---
 title: Deploy a build and release agent on macOS
-description: Learn how to deploy a macOS agent to build and deploy your iOS application for VSTS and Team Foundation Server (TFS)
+description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -21,14 +21,14 @@ monikerRange: '>= tfs-2015'
 To build and deploy Xcode apps or Xamarin.iOS projects, you'll need at least one macOS agent. This agent can also build and deploy Java and Android apps.
 
 > Before you begin:
-> * If your build and release pipelines are in [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private macOS agent.
+> * If your build and release pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private macOS agent.
 > *  Otherwise, you've come to the right place to set up an agent on macOS. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
 
 ## Check prerequisites
 
-Make sure your machine is prepared with our [macOS system prerequisites](https://aka.ms/vstsagentosxsystem). 
+Make sure your machine is prepared with our [macOS system prerequisites](https://aka.ms/vstsagentosxsystem).
 
 <h2 id="permissions">Prepare permissions</h2>
 
@@ -41,17 +41,17 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ::: moniker range=">= tfs-2017"
 
-### VSTS and TFS 2017 and newer
+### Azure Pipelines and TFS 2017 and newer
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](_shared/agent-pools-tab.md)]
 </li>
 
 <li>Click **Download agent**.</li>
 
-<li>On the **Get agent** dialog box, click **OS X**.</li>
+<li>On the **Get agent** dialog box, click **macOS**.</li>
 
 <li>Click the **Download** button.
 
@@ -79,7 +79,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ::: moniker range="vsts"
 
-VSTS: `https://{your-organization}.visualstudio.com`
+Azure Pipelines: `https://{your-organization}.visualstudio.com`
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ In the section below, these tokens are replaced:
 
 For example, you have configured an agent (see above) with the name `our-osx-agent`. In the following examples, `{tfs-name}` will be either:
 
-* VSTS: the name of your organization. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `vsts.agent.fabrikam.our-osx-agent`
+* Azure Pipelines: the name of your organization. For example if you connect to `https://fabrikam.visualstudio.com`, then the service name would be `vsts.agent.fabrikam.our-osx-agent`
 
 * TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `
 vsts.agent.our-server.our-osx-agent`

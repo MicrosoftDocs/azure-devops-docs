@@ -1,6 +1,6 @@
 ---
-title: Review continuous test results after a build VSTS and TFS 
-description: Review continuous test results after a build with a build or release pipeline in Microsoft VSTS or Team Foundation Server (TFS)
+title: Review continuous test results after a build Azure Pipelines and TFS 
+description: Review continuous test results after a build with a build or release pipeline in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 9A38578C-3310-4DE3-949F-C302AB545C10
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Review continuous test results after a build
 
-After your build finishes running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS),
+After your build finishes running continuous tests using Azure Pipelines or Team Foundation Server (TFS),
 review your test results to start analyzing any problems that you found. Note that some features are not available in TFS 2015.
 
 ::: moniker range="<= tfs-2018"
@@ -24,19 +24,19 @@ review your test results to start analyzing any problems that you found. Note th
 <a name="reviewtests"></a>  
 ## Review your test results
 
-1. In VSTS or TFS, go to your project.
+1. In Azure Pipelines or TFS, go to your project.
 
-1. Find your build and open the build summary.
+2. Find your build and open the build summary.
 
    ![Go to Build hub, build pipeline, build summary](_img/review-continuous-test-results-after-build/open-summary.png)
 
-1. Review the summary for your test run results.
+3. Review the summary for your test run results.
    Here you'll find changes in new, failed, and passed tests, 
    how long these tests took to run, how long these tests have been failing, and more.
 
    ![View test run results summary](_img/test-results-summary.png)
 
-1. If you collected code coverage information, the build **Summary** page displays an overview of the blocks and lines covered.
+4. If you collected code coverage information, the build **Summary** page displays an overview of the blocks and lines covered.
    You can download the code coverage results for a drill-down analysis in Visual Studio.
 
    ![View code coverage information](_img/review-continuous-test-results-after-build/code-coverage-results.png)
@@ -75,7 +75,7 @@ review your test results to start analyzing any problems that you found. Note th
 ## View tests in the Release hub
 
 * Test results are also summarized in the release summaries in the **Release** hub.
-  Choose any of the percentage values to see the full summary in the **Test** hub. 
+  Choose any of the percentage values to see the full summary in the **Test** hub.
 
   ![Test result summary in Release hub](_img/review-continuous-test-results-after-build/release-test-results-01.png)
 

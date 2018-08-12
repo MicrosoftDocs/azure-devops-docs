@@ -1,6 +1,6 @@
 ---
-title: Azure Stack deployment in Visual Studio Team Services and Team Foundation Server
-description: Understand Azure Stack deployment in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Azure Stack deployment in Azure Pipelines and Team Foundation Server
+description: Understand Azure Stack deployment in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 76C2080A-C1D9-44AF-AA76-1953BA4C2837
 ms.prod: devops
 ms.technology: devops-cicd
@@ -21,7 +21,7 @@ through a hybrid cloud and on-premises environment.
 >At present, Team Foundation Server can be used to deploy to Azure Stack with Azure AD and cannot be used to deploy to
 an [Azure Stack with Azure Directory Federated Services (AD FS)](https://docs.microsoft.com/azure/azure-stack/azure-stack-identity-overview). Azure Stack with AD FS requires
 a [service principal with certificate](https://docs.microsoft.com/azure/azure-stack/azure-stack-create-service-principals#create-service-principal-for-ad-fs),
-which is not currently supported in VSTS/TFS.
+which is not currently supported in Azure Pipelines/TFS.
 
 To enable connection to an Azure Stack, you specify it as the **Environment** parameter when you create an
 [Azure Resource Manager service connection](../library/connect-to-azure.md).

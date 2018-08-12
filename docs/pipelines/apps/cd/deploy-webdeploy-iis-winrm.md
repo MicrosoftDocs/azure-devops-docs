@@ -1,6 +1,6 @@
 ---
 title: Deploy a Web Deploy package to IIS using WinRM
-description: Deploy a ASP.NET or Node Web Deploy package to IIS servers from VSTS or TFS using Windows Remote Mamangement (WinRM)
+description: Deploy a ASP.NET or Node.js Web Deploy package to IIS servers from Azure Pipelines or TFS using Windows Remote Mamangement (WinRM)
 ms.assetid: 0D65C5BE-DF92-42F6-B6A4-217F0509D425
 ms.prod: devops
 ms.technology: devops-cicd
@@ -21,10 +21,10 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 > A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md)
-instead of WinRM. Deployment groups are currently in preview for some users in VSTS. They are not yet available in TFS.
+instead of WinRM. Deployment groups are currently in preview for some users in Azure Pipelines. They are not yet available in TFS.
 
 Continuous deployment means starting an automated deployment process whenever a new successful build is available.
-Here we'll show you how to set up continuous deployment of your ASP.NET or Node app to one or more IIS servers using Release Management.
+Here we'll show you how to set up continuous deployment of your ASP.NET or Node.js app to one or more IIS servers using Release Management.
 A task running on the [Build and Release agent](../../agents/agents.md) opens a WinRM connection to each IIS server to run Powershell scripts remotely in order to deploy the Web Deploy package.
 
 ## Get set up
@@ -37,7 +37,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 * [Build your ASP.NET Core app](../../languages/dotnet-core.md)
 
-* [Build your Node app with Gulp](../nodejs/build-gulp.md)
+* [Build your Node.js app with gulp](../nodejs/build-gulp.md)
 
 ### WinRM configuration
 
@@ -123,14 +123,14 @@ If you are deploying an ASP.NET app, make sure that you have ASP.NET 4.5 or ASP.
 
 If you are deploying an ASP.NET Core application to IIS target servers, follow the additional instructions in [this topic](https://docs.microsoft.com/aspnet/core/publishing/iis) to install .NET Core Windows Server Hosting Bundle.
 
-If you are deploying a Node application to IIS target servers, follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
+If you are deploying a Node.js application to IIS target servers, follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 
 In this example, we will deploy to the Default Web Site on each of the servers. If you need to deploy to another website, make sure you configure this as well.
 
 ### IIS WinRM extension
 
 Install the [IIS Web App Deployment Using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp)
-extension from Visual Studio Marketplace in VSTS or TFS.
+extension from Visual Studio Marketplace in Azure Pipelines or TFS.
 
 ## Define and test your CD release process
 
@@ -142,7 +142,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
      **Summary** tab under **Deployments**, choose **Create release** followed by **Yes**.
      This starts a new release pipeline that's automatically linked to the build pipeline.
 
-   * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
+   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
 1. Choose **Start with an Empty process**.

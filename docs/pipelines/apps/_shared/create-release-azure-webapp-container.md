@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Create a release pipeline
 
-1. In the **Build &amp; Release** hub, open the build summary for your build.
+1. In the **Pipelines** hub, open the build summary for your build.
 
    ![Opening the build summary](_img/open-build-summary.png)
 
@@ -24,7 +24,7 @@ ms.topic: include
    Configure the linked properties as follows:
 
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
-     If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
+     If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
 
      ![Authorizing an Azure subscription](_img/authorize-azure-subscription-in-new-release-definition.png)

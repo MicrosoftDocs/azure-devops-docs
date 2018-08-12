@@ -1,6 +1,6 @@
 ---
 title: CI/CD Concurrent Jobs in Team Services
-description: Learn about using Release Management concurrent job concepts to run concurrent jobs for Visual Studio Team Services (VSTS)
+description: Learn about using Release Management concurrent job concepts to run concurrent jobs for Azure Pipelines
 ms.topic: conceptual
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.prod: devops
@@ -13,20 +13,20 @@ monikerRange: '>=vsts'
 ---
 # CI/CD Concurrent Jobs in Team Services
 
-**VSTS | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
+**Azure Pipelines | [TFS 2018](concurrent-pipelines-tfs.md) | [TFS 2017](concurrent-pipelines-tfs.md)**
 
 > [!NOTE]
 > May 2018: For the past few months we have not enforced throttling of concurrent builds or releases on self-hosted agents because of an issue with our design. As a result, your ability to run multiple builds or releases concurrently on these agents was limited only by the number of agents in your organization.
 >
 > We've fixed the issue, and beginning in June 2018 we'll resume throttling and you'll be able to run only as many concurrent build or release jobs as explained below.
 
-A CI/CD _concurrent job_ gives you the ability to run a single build job or a single release job at a time in your organization. In VSTS you can run concurrent jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
+A CI/CD _concurrent job_ gives you the ability to run a single build job or a single release job at a time in your organization. In Azure Pipelines you can run concurrent jobs on Microsoft-hosted infrastructure or on your own (self-hosted) infrastructure.
 
 ## Microsoft-hosted CI/CD
 _formerly hosted pipelines_
 
-If you want to run builds and releases on machines managed by Microsoft, then you need Microsoft-hosted CI/CD. We provide a **free tier** of service by default in your VSTS organization,
-allowing you to run one concurrent job for up to 240 minutes per month. This uses our pool of [Microsoft-hosted agents](../agents/hosted.md) to run your builds and releases. Each build or release job can run for up to 30 minutes. 
+If you want to run builds and releases on machines managed by Microsoft, then you need Microsoft-hosted CI/CD. We provide a **free tier** of service by default in your Azure DevOps organization,
+allowing you to run one concurrent job for up to 240 minutes per month. This uses our pool of [Microsoft-hosted agents](../agents/hosted.md) to run your builds and releases. Each build or release job can run for up to 30 minutes.
 
 When the **free tier** of Microsoft-hosted CI/CD is no longer sufficient, you can pay for CI/CD capacity per concurrent job. Paid Microsoft-hosted CI/CD removes the monthly time limit and also allows you to run a single job for up to 6 hours.
 
@@ -36,16 +36,16 @@ When the **free tier** of Microsoft-hosted CI/CD is no longer sufficient, you ca
 ## Self-hosted CI/CD
 _formerly private pipelines_
 
-If you want to run builds and releases on your own machines, then you need _self-hosted CI/CD_. You'll start by deploying our [self-hosted agents](../agents/agents.md) on your machines. 
-You can register any number of these self-hosted agents in your VSTS organization for free. We charge based on the number of jobs you want to run at a time, not the number of agents registered.
+If you want to run builds and releases on your own machines, then you need _self-hosted CI/CD_. You'll start by deploying our [self-hosted agents](../agents/agents.md) on your machines.
+You can register any number of these self-hosted agents in your Azure DevOps organization for free. We charge based on the number of jobs you want to run at a time, not the number of agents registered.
 
-Your VSTS organization includes one self-hosted concurrent job free to get you started. Additionally, for each active Visual Studio Enterprise subscriber who is a member of your organization you get one additional self-hosted concurrent job. If you need additional capacity, you can buy more. There are no monthly time limits on self-hosted CI/CD.
+Your Azure DevOps organization includes one self-hosted concurrent job free to get you started. Additionally, for each active Visual Studio Enterprise subscriber who is a member of your organization you get one additional self-hosted concurrent job. If you need additional capacity, you can buy more. There are no monthly time limits on self-hosted CI/CD.
 
 [Buy self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines)
 
 ## How a concurrent job is consumed by a build or release
 
-For example, consider a VSTS organization that has only one Microsoft-hosted concurrent job. This allows users in that organization to collectively run only one build or release job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to complete.
+For example, consider an Azure DevOps organization that has only one Microsoft-hosted concurrent job. This allows users in that organization to collectively run only one build or release job at a time. When additional jobs are triggered, they are queued and will wait for the previous job to complete.
 
 A release consumes a concurrent job only when it is being actively deploying to an environment. While the release is waiting for an approval or a manual intervention, it does not consume a concurrent job.
 
@@ -69,7 +69,7 @@ A single build or release can comprise of multiple jobs through [phases](../proc
 
 ## Determine how many concurrent jobs you need
 
-You can begin by seeing if your teams can get by with the free tier of Microsoft-hosted CI/CD and self-hosted CI/CD offered in your VSTS organization. When you've reached the 240 minute limit 
+You can begin by seeing if your teams can get by with the free tier of Microsoft-hosted CI/CD and self-hosted CI/CD offered in your Azure DevOps organization. When you've reached the 240 minute limit 
 for the free tier of Microsoft-hosted CI/CD, then you can start by buying one concurrent job to remove this monthly time limit before deciding to increase the number of concurrent jobs further.
 
 As the number of queued builds and releases exceeds the number of concurrent jobs you have, your build and release queues will grow longer. When you find the queue delays are too long, 
@@ -119,7 +119,7 @@ In the future, we plan to support finer control on allocation of concurrent jobs
 
 ### Who can use the Build and Release Management features?
 
-VSTS users with [basic access](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) can author as many builds and releases as they want.
+Azure Pipelines users with [basic access](https://visualstudio.microsoft.com/products/visual-studio-team-services-feature-matrix-vs) can author as many builds and releases as they want.
 
 To approve releases, basic access is not necessary. Any user with [stakeholder access](../../organizations/security/get-started-stakeholder.md) can approve or reject releases.
 
@@ -132,6 +132,6 @@ No. You can create hundreds or even thousands of definitions for no charge. You 
 You can register one XAML build controller for each self-hosted concurrent job in your organization. Your organization gets at least one free self-hosted concurrent job, so you can register one 
 XAML build controller for no additional charge. For each additional XAML build controller, you'll need an additional self-hosted concurrent job.
 
-### As a Visual Studio Enterprise subscriber, do I get additional concurrent jobs for TFS and VSTS?
+### As a Visual Studio Enterprise subscriber, do I get additional concurrent jobs for TFS and Azure Pipelines?
 
-Yes. Visual Studio Enterprise subscribers get [one concurrent job in Team Foundation Server 2017 or later](concurrent-pipelines-tfs.md) and one self-hosted concurrent job in each VSTS organization of which they are a member.
+Yes. Visual Studio Enterprise subscribers get [one concurrent job in Team Foundation Server 2017 or later](concurrent-pipelines-tfs.md) and one self-hosted concurrent job in each Azure DevOps organization of which they are a member.

@@ -1,6 +1,6 @@
 ---
-title: Release Pipelines for Release Management in VSTS and TFS
-description: DevOps CI CD - Understand release pipelines in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Release Pipelines for Release Management in Azure Pipelines and TFS
+description: DevOps CI CD - Understand release pipelines in Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 604AFC89-57CD-44F9-B440-5F07F88F0BD4
 ms.prod: devops
 ms.technology: devops-cicd

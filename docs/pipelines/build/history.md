@@ -1,6 +1,6 @@
 ---
-title: Build pipeline history | VSTS or Team Foundation Server
-description: Learn about how you can determine what changed, when it happened, and who did it on VSTS and Team Foundation Server (TFS).
+title: Build pipeline history | Azure Pipelines or Team Foundation Server
+description: Learn about how you can determine what changed, when it happened, and who did it on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-From the **History** tab you can see a list of changes that includes who made the change and when the change occurred. 
+From the **History** tab you can see a list of changes that includes who made the change and when the change occurred.
 
 ::: moniker range="tfs-2017"
 

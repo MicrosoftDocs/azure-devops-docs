@@ -32,7 +32,7 @@ ms.topic: include
 
 ### I selected parallel multi-configuration, but only one build is running at a time.
 
-If you're using VSTS, you might need more concurrent jobs. See [Concurrent build and release jobs in VSTS](../licensing/concurrent-jobs-vsts.md).
+If you're using Azure Pipelines, you might need more concurrent jobs. See [Concurrent jobs in Azure Pipelines](../licensing/concurrent-jobs-vsts.md).
 
 ### How do I see what has changed in my build pipeline?
 

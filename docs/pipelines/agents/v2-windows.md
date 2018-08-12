@@ -1,6 +1,6 @@
 ---
 title: Deploy a build and release agent on Windows
-description: Learn how to use Windows Build and Release agents to build and deploy your Windows and Azure code for VSTS and TFS.
+description: Learn how to use Windows Build and Release agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,12 +14,12 @@ monikerRange: '>= tfs-2017'
 
 # Deploy an agent on Windows
 
-**VSTS | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | [TFS 2015](v1-windows.md) | [Previous versions (XAML builds)](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx)**
 
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 > Before you begin:
-> * If your code is in [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Windows agent.
+> * If your code is in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Windows agent.
 > * If your code is in an on-premises Team Foundation Server (TFS) 2015 server, see [Deploy an agent on Windows for on-premises TFS 2015](v1-windows.md).
 > *  Otherwise, you've come to the right place to set up an agent on Windows. Continue to the next section.
 
@@ -40,7 +40,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](_shared/agent-pools-tab.md)]
 </li>
 
@@ -54,7 +54,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 </ol>
 
 ::: moniker range="vsts"
-### Server URL on VSTS
+### Server URL on Azure Pipelines
 
 `https://{your-organization}.visualstudio.com`
 ::: moniker-end
@@ -68,7 +68,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 ### Authentication type
 
 ::: moniker range="vsts"
-#### VSTS
+#### Azure Pipelines
 
 Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.
 
@@ -79,7 +79,7 @@ Choose **PAT**, and then paste the [PAT token you created](#permissions) into th
 
 > [!IMPORTANT]
 > 
-> Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use. 
+> Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
   
 When you configure your agent to connect to TFS, you've got the following options:
 
@@ -89,10 +89,10 @@ When you configure your agent to connect to TFS, you've got the following option
 
 * **Integrated** (Default) Connect a Windows agent to TFS using the credentials of the signed-in user via a Windows authentication scheme such as NTLM or Kerberos. You won't be prompted for credentials after you choose this method.
  
-* **PAT** Supported only on VSTS and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
+* **PAT** Supported only on Azure Pipelines and TFS 2017 and newer. After you choose PAT, paste the [PAT token you created](#permissions) into the command prompt window. Use a personal access token (PAT) if your TFS instance and the agent machine are not in a trusted domain. PAT authentication is handled by your TFS instance instead of the domain controller.
 
 > [!NOTE]
-> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with VSTS or TFS](agents.md#communication).
+> When using PAT as the authentication method, the PAT token is used only for the initial configuration of the agent. Learn more at [Communication with Azure Pipelines or TFS](agents.md#communication).
 
 ::: moniker-end
 
@@ -106,7 +106,7 @@ For guidance on whether to run the agent in interactive mode or as a service, se
  .\run.cmd
  ```
 
-If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for "VSTS Agent (*name of your agent*)".
+If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for "Azure Pipelines Agent (*name of your agent*)".
 
 If you need to change the logon account, don't do it from the services snap-in. Instead, see the information below to re-configure the agent.
 

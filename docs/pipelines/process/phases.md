@@ -1,6 +1,6 @@
 ---
-title: Build and Release Automation Phases in VSTS and TFS
-description: Understand Build and Release Phases in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Build and Release Automation Phases in Azure Pipelines and TFS
+description: Understand Build and Release Phases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.prod: devops
 ms.technology: devops-cicd
@@ -29,7 +29,7 @@ You can organize your build or deployment process into phases. Every build or de
 ::: moniker range="tfs-2018"
 
 > [!NOTE]
-> You must install TFS 2018.2 to use phases in build processes. In TFS 2018 RTM you can use phases in release management deployment processes. 
+> You must install TFS 2018.2 to use phases in build processes. In TFS 2018 RTM you can use phases in release management deployment processes.
 
 ::: moniker-end
 
@@ -46,13 +46,13 @@ At run time (when either the build or release process is triggered), each phase 
 ::: moniker range="tfs-2017"
 
 > [!NOTE]
-> You must install Update 2 to use phases in TFS 2017, and they are available only in release management deployment processes. 
-> Phases in build pipelines are available in VSTS, TFS 2018.2, and newer versions.
+> You must install Update 2 to use phases in TFS 2017, and they are available only in release management deployment processes.
+> Phases in build pipelines are available in Azure Pipelines, TFS 2018.2, and newer versions.
 
 ::: moniker-end
 
 ::: moniker range="vsts"
-In a build process, the most common target is an agent. The other kind of target is the VSTS [server](server-phases.md).
+In a build process, the most common target is an agent. The other kind of target is the Azure Pipelines [server](server-phases.md).
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -85,7 +85,7 @@ phases:
     - script: echo Hello world
 ```
 
-The above syntax is necessary only if you want to define multiple phases or change the properties for a phase. You can skip the phase syntax if you need only a single phase with the standard options. 
+The above syntax is necessary only if you want to define multiple phases or change the properties for a phase. You can skip the phase syntax if you need only a single phase with the standard options.
 For example, the following YAML file runs a single phase on the Hosted VS2017 queue.
 
 ```yaml
@@ -105,7 +105,7 @@ phases:
 
 Phases can also be defined as templates in a separate file. This allows you
 to define your logic once and then reuse it in several places.
-Templates can include parameters which the pipeline definition can vary.
+Templates can include parameters which the pipeline can vary.
 
 ```yaml
 # File: templates/npm.yml
@@ -153,7 +153,7 @@ YAML is not yet supported in TFS.
 
 # [Designer](#tab/designer)
 
-When you create a new pipeline, it starts with a single agent phase. 
+When you create a new pipeline, it starts with a single agent phase.
 The properties for the agent phase are displayed when you select the agent phase in the editor.
 
 ---
@@ -203,7 +203,7 @@ Learn more about [build and release agent capabilities](../agents/agents.md#capa
 <!-- remove until containers roll out everywhere 
 ## Container image
 
-If you are using YAML, you can specify a Docker container to use for your agent phase. 
+If you are using YAML, you can specify a Docker container to use for your agent phase.
 
 # [YAML](#tab/yaml)
 
@@ -276,8 +276,8 @@ Containers are not yet supported in the web editor.
 -->
 ## Timeouts
 
-To avoid hanging up your resources when your process is hung or waiting too long, it's a good idea to set a limit on how long your process is allowed to run. 
-Use the phase timeout setting to specify the limit in minutes for jobs run by this phase. 
+To avoid hanging up your resources when your process is hung or waiting too long, it's a good idea to set a limit on how long your process is allowed to run.
+Use the phase timeout setting to specify the limit in minutes for jobs run by this phase.
 A zero value means that the jobs will run forever (except in hosted pools, where they will be forcibly stopped).
 
 # [YAML](#tab/yaml)
@@ -299,7 +299,7 @@ YAML is not yet supported in TFS.
 
 # [Designer](#tab/designer)
 
-Select the phase and then specify the timeout value. 
+Select the phase and then specify the timeout value.
 
 On the **Options** tab you can specify default values for all phases in the pipeline. If you specify a non-zero value for the phase timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
 
@@ -309,7 +309,7 @@ On the **Options** tab you can specify default values for all phases in the pipe
 > Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
 ::: moniker-end
 
-> You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions). 
+> You can also set the timeout for each task individually - see [task control options](tasks.md#controloptions).
 
 <a name="parallelexec"></a>
 ## Multi-configuration
@@ -320,10 +320,10 @@ From a single phase you can run multiple jobs and multiple agents in parallel. S
   example, you could build a Visual C++ app for both `debug` and `release` configurations on both `x86` and `x64` platforms. To learn more, see [Visual Studio Build - multiple configurations for multiple platforms](../tasks/build/visual-studio-build.md#multiconfiguration).
   
 * **Multi-configuration deployments:** An agent phase can be used in an environment of a release pipeline to run multiple deployment
-  jobs in parallel, for example, to different geographic regions. 
+  jobs in parallel, for example, to different geographic regions.
   
 * **Multi-configuration testing:** An agent phase can be used in a build pipeline or in an
-  environment of a release pipeline to run a set of tests in parallel - once for each test configuration. 
+  environment of a release pipeline to run a set of tests in parallel - once for each test configuration.
   
 # [YAML](#tab/yaml)
 
@@ -483,8 +483,8 @@ Alternatively, You can choose to download specific
 
 ## Access to OAuth token
 
- You can allow tasks running in this phase to access current VSTS or TFS OAuth security token.
-  The token can be use to authenticate to the VSTS REST API.
+ You can allow tasks running in this phase to access current Azure Pipelines or TFS OAuth security token.
+  The token can be use to authenticate to the Azure Pipelines REST API.
 
 # [YAML](#tab/yaml)
 
@@ -500,7 +500,7 @@ steps:
     $pipeline = Invoke-RestMethod -Uri $url -Headers @{
       Authorization = "Bearer $env:TOKEN"
     }
-    Write-Host "Pipeline = $($definition | ConvertTo-Json -Depth 100)"
+    Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
   env:
     TOKEN: $(system.accesstoken)
 ```

@@ -1,6 +1,6 @@
 ---
-title: Releases in VSTS and Team Foundation Server
-description: DevOps CI CD - Understand releases in Release Management for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Releases in Azure Pipelines and Team Foundation Server
+description: DevOps CI CD - Understand releases in Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.prod: devops
 ms.technology: devops-cicd

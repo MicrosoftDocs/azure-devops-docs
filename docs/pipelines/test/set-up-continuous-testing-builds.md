@@ -1,6 +1,6 @@
 ---
 title: Set up continuous testing for your builds - test automation tools
-description: Set up continuous testing for your builds in Microsoft VSTS and Team Foundation Server (TFS) with a build or release pipeline 
+description: Set up continuous testing for your builds in Azure Pipelines and Team Foundation Server (TFS) with a build or release pipeline 
 ms.assetid: 7849EF41-BE1A-4342-B1DA-583DB6DD1831
 ms.prod: devops
 ms.technology: devops-cicd
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)]
 
-Find problems early after changes are checked in and built by running continuous tests using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) and test automation.
+Find problems early after changes are checked in and built by running continuous tests using Azure Pipelines or Team Foundation Server (TFS) and test automation.
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -25,7 +25,7 @@ Find problems early after changes are checked in and built by running continuous
 **NOTE**: You can use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task to deploy and run
 unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
 and run tests on platforms that don't have Visual Studio installed by using the 
-[Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
+[Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/).
 
 For more details, see [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
 
@@ -37,7 +37,7 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
 ## Set up app deployment for your build
 
-1. In VSTS or TFS, go to your project.
+1. In Azure Pipelines or TFS, go to your project.
 
 2. Go to your build pipeline and open it for editing.
 
@@ -87,7 +87,7 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 **NOTE**: You can use version 2.x of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task to deploy and run
 unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
 and run tests on platforms that don't have Visual Studio installed by using the 
-[Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
+[Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/).
 
 If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
 

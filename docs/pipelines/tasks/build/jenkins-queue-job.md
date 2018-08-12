@@ -1,6 +1,6 @@
 ---
 title: Jenkins Queue Job build and release task
-description: Queue a job on a Jenkins server build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Queue a job on a Jenkins server build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -94,14 +94,14 @@ None
 
 ## Team Foundation Server Plug-in
 
-You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatically collect files from the Jenkins workspace and download them into the build. 
+You can use Team Foundation Server Plug-in (version 5.2.0 or newer) to automatically collect files from the Jenkins workspace and download them into the build.
 
 To set it up:
 
 <ol>
 <li>Install the [Team Foundation Server Plug-in](https://wiki.jenkins-ci.org/display/JENKINS/Team+Foundation+Server+Plugin) on the Jenkins server.
 </li>
-<li>On the Jenkins server, for each job you would like to collect results from, add the <b>Collect results for TFS/VSTS</b> <em>post-build action</em> and then configure it with one or more pairs of result type and include file pattern.
+<li>On the Jenkins server, for each job you would like to collect results from, add the <b>Collect results for Azure Pipelines/TFS</b> <em>post-build action</em> and then configure it with one or more pairs of result type and include file pattern.
 </li>
 <li>On the Jenkins Queue Job build task enable the <b>Capture console output and wait for completion</b> to collect results from the root level job, or the <b>Capture pipeline output and wait for pipeline completion</b> to collect results from all pipeline jobs.
 </ol>

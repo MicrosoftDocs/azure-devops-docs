@@ -1,6 +1,6 @@
 ---
-title: Quick Start - Build and Deploy a Java app | VSTS
-description: Set up a continuous integration (CI) build for your Java app, and then a continuous deployment (CD) release to Azure using VSTS
+title: Quick Start - Build and Deploy a Java app | Azure Pipelines
+description: Set up a continuous integration (CI) build for your Java app, and then a continuous deployment (CD) release to Azure using Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -15,12 +15,12 @@ monikerRange: 'vsts'
 
 # Implement a CI/CD process to build and deploy your Java app to Azure
 
-VSTS provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
+Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
 Java apps.
 This quickstart shows how to set up CI and CD to deploy
-a Java app. 
-to an Azure web app. 
-You create the web app using the Azure CLI, then set up CI/CD in VSTS.
+a Java app.
+to an Azure web app.
+You create the web app using the Azure CLI, then set up CI/CD in Azure Pipelines.
 In the CI process, you build the Java app and run JUnit tests using Maven. In the CD process, you deploy the build to an Azure web app.
 
 ![java web app](_img/quick-to-azure/java-web-app.png)
@@ -57,7 +57,7 @@ In the right panel, search for `java`, select **Maven**, and then click **Apply*
 
 ## Update to redeploy the code
 
-Navigate to the **Code** hub in the VSTS portal. Navigate to **src/main/webapp/index.jsp** file. Make the following simple change to that file by selecting the edit action.
+Navigate to the **Code** hub in the Azure DevOps portal. Navigate to **src/main/webapp/index.jsp** file. Make the following simple change to that file by selecting the edit action.
 
 ![Screenshot showing update to code](_img/quick-to-azure/cicd-get-started-update-code.png)
 

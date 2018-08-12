@@ -1,6 +1,6 @@
 ---
-title: Build pipeline triggers | VSTS or Team Foundation Server
-description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on VSTS and Team Foundation Server (TFS)
+title: Build pipeline triggers | Azure Pipelines or Team Foundation Server
+description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Build pipeline triggers
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190718%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/hh190718%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -53,7 +53,7 @@ trigger:
     - releases/old*
 ```
 
-If your source repository is VSTS Git, you can also specify file paths to include or exclude.
+If your source repository is Azure Repos Git, you can also specify file paths to include or exclude.
 
 ```yaml
 name: My Specific Path Build
@@ -96,9 +96,9 @@ Select this check box if you have a lot of team members uploading changes often 
 
 If your repository is Git then you can specify the branches where you want to trigger builds. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
-#### Path filters in VSTS and Team Foundation Services (TFS)
+#### Path filters in Azure Pipelines and Team Foundation Services (TFS)
 
-If your Git repo is in VSTS or TFS, you can also specify path filters to reduce the set of files that you want to trigger a build.
+If your Git repo is in Azure Repos or TFS, you can also specify path filters to reduce the set of files that you want to trigger a build.
 
  > **Tips:**
  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
@@ -112,7 +112,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 ::: moniker range=">= tfs-2017"
 
-**VSTS, TFS 2017.3 and newer**
+**Azure Pipelines, TFS 2017.3 and newer**
 
 ![ci trigger git branches](_img/triggers/ci-trigger-git-branches-neweditor.png)
 
@@ -133,7 +133,7 @@ Select the version control paths you want to include and exclude. In most cases,
 
 ### CI trigger for a remote Git repo or Subversion
 
-You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, VSTS or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
+You can also select the CI trigger if your code is in a remote Git repo or Subversion. In this case we poll for changes at a regular interval. For this to work, Azure Pipelines or your Team Foundation Server must be able to resolve the network address of the service or server where your code is stored. For example if there's a firewall blocking the connection, then the CI trigger won't work.
 
 ---
 
@@ -144,7 +144,7 @@ You can also select the CI trigger if your code is in a remote Git repo or Subve
 ::: moniker range="vsts"
 
 Scheduled builds are not yet supported in YAML syntax.
-After your create your YAML build definition, you can use the designer to specify a scheduled trigger.
+After your create your YAML build pipeline, you can use the designer to specify a scheduled trigger.
 
 ::: moniker-end
 
@@ -163,7 +163,7 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 ::: moniker range=">= tfs-2017"
 
-**VSTS, TFS 2017.3 and newer versions**
+**Azure Pipelines, TFS 2017.3 and newer versions**
 
 ![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
@@ -181,7 +181,7 @@ If your repository is Git, GitHub, or External Git, then you can also specify br
 
 ::: moniker range=">= tfs-2017"
 
-**VSTS, TFS 2017.3 and newer versions**
+**Azure Pipelines, TFS 2017.3 and newer versions**
 
 ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
@@ -237,11 +237,11 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 # [YAML](#tab/yaml)
 
 Build completion triggers are not yet supported in YAML syntax.
-After your create your YAML build definition, you can use the designer to specify a build completion trigger.
+After your create your YAML build pipeline, you can use the designer to specify a build completion trigger.
 
 # [Designer](#tab/designer)
 
-Large products have several components that are dependent on each other. 
+Large products have several components that are dependent on each other.
 These components are often independently built. When an upstream component (a library, for example) changes, the downstream dependencies have to be rebuilt and revalidated.
 
 In situations like these, add a build completion trigger to run your build upon the successful completion of the **triggering build**. You can select any other build in the same project.
@@ -249,7 +249,7 @@ In situations like these, add a build completion trigger to run your build upon 
 After you add a **build completion** trigger, select the **triggering build**. If the triggering build is sourced from a Git repo, you can also specify **branch filters**. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
 > [!NOTE]
-> Keep in mind that in some cases, a single [multi-phase build](../process/phases.md) could meet your needs. 
+> Keep in mind that in some cases, a single [multi-phase build](../process/phases.md) could meet your needs.
 > However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent process.
 
 ### Download artifacts from the triggering build
@@ -285,17 +285,17 @@ In many cases you'll want to download artifacts from the triggering build. To do
 
 ### How do I protect my Git codebase from build breaks?
 
-If your code is in a Git repo on VSTS or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../repos/git/branch-policies.md). This option is not available for GitHub repos.
+If your code is in a Git repo on Azure Repos or Team Foundation Server, you can create a branch policy that runs your build. See [Improve code quality with branch policies](../../repos/git/branch-policies.md). This option is not available for GitHub repos.
 
 ::: moniker range="vsts"
 
 ### My build didn't run. What happened?
 
-Someone must view a page in your VSTS organization regularly for CI and scheduled builds to run. It can be any page, including, for example, the **Build and release** hub. 
+Someone must view a page in your Azure DevOps organization regularly for CI and scheduled builds to run. It can be any page, including, for example, the **Pipelines** hub.
 
-Your VSTS organization goes dormant five minutes after the last user signed out. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
+Your Azure DevOps organization goes dormant five minutes after the last user signed out. After that, each of your build pipelines will run one more time. For example, while your organization is dormant:
 
- * A nightly build of code in your VSTS organization will run only one night until someone signs in again.
+ * A nightly build of code in your Azure DevOps organization will run only one night until someone signs in again.
 
  * CI builds of an external Git repo will stop running until someone signs in again.
 

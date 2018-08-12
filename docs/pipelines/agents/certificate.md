@@ -1,6 +1,6 @@
 ---
 title: Run the agent with a self-signed certificate
-description: Learn how to run the build and release agent with a self-signed certificate for VSTS and Team Foundation Server (TFS)
+description: Learn how to run the build and release agent with a self-signed certificate for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -53,7 +53,7 @@ The agent version 2.125.0 or above has the ability to ignore SSL server certific
 
 > [!IMPORTANT]
 > 
-> This is not secure and not recommended, we highly suggest you to install the certificate into your machine certificate store. 
+> This is not secure and not recommended, we highly suggest you to install the certificate into your machine certificate store.
 
 Pass `--sslskipcertvalidation` during agent configuration
 ```
@@ -66,7 +66,7 @@ Pass `--sslskipcertvalidation` during agent configuration
 > The libcurl library on your Linux or macOS machine needs to built with OpenSSL, [More Detail](https://github.com/dotnet/corefx/issues/9728)
 
 ### Git get sources fails with SSL certificate problem (Windows agent only)
-We ship git.exe as part of windows agent, we use this git.exe for all Git related operation. 
+We ship git.exe as part of windows agent, we use this git.exe for all Git related operation.
 When you have a self-signed SSL certificate for your on-premises TFS server, make sure to configure the git.exe we shipped to allow that self-signed SSL certificate.
 There are 2 approach to solve the problem.
 

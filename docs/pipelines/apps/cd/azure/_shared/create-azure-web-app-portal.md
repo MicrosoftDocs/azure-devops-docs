@@ -26,7 +26,7 @@ ms.topic: include
 
 1. Choose the **App Services** icon in the left navigation bar.
    After a few minutes, you'll see the new web app appear in the list.
-   Ensure that it is running. 
+   Ensure that it is running.
 
    ![Checking the new web app is running](_img/create-webapp-04.png)
 

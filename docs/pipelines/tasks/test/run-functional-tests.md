@@ -1,5 +1,5 @@
 ---
-title: VSTS and TFS Build and Test - Run Functional Tests task
+title: Azure Pipelines and TFS Build and Test - Run Functional Tests task
 description: Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
 ms.prod: devops
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range=">= tfs-2018"
 
-This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the
+This task is deprecated in Azure Pipelines and TFS 2018 and later. Use version 2.x or higher of the
 [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
 task together with [phases](../../process/phases.md)
 to run unit and functional tests on the universal agent.
@@ -96,7 +96,7 @@ test level.
 
 These scenarios are supported for:
 
-* **TFS on-premises and VSTS**
+* **TFS on-premises and Azure Pipelines**
 
 * **Build agents**
   - [Hosted](../../agents/hosted.md) and [on-premises](../../agents/agents.md) agents.

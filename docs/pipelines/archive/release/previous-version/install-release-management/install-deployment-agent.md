@@ -39,7 +39,7 @@ uninstall the deployment agent._
 1. Before you install the agent, confirm that you are a 
    member of the Windows **Administrators** security group on the computer 
    where you will install the agent. You must also be a member of the 
-   **Release Manager** role in Release Management. 
+   **Release Manager** role in Release Management.
 
    ***Tip:*** _Do you need to add team mates to the **Release Manager** role 
    in Release Management? See [Add users to Release Management](../add-users-and-groups.md)._
@@ -51,17 +51,17 @@ uninstall the deployment agent._
    information about obtaining a non-trial version, see 
    [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs). 
+   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
 1. Launch **rm_Deployment.exe**. If you want to install to a specific location 
    in the file system, choose the browse button (...) next to the default 
-   install location. Then choose **Install**. 
+   install location. Then choose **Install**.
    
    ![Starting the installation of the agent](_img/install-agent-02.png)
 
-1. Restart your computer, if prompted, and then choose **Launch**. 
+1. Restart your computer, if prompted, and then choose **Launch**.
 
    ***Tip:*** _If you join the Visual Studio Experience Improvement Program, 
    you can **[opt out](../manage-your-release.md#optout)** at any time._ 
@@ -74,7 +74,7 @@ uninstall the deployment agent._
    required. For example, if you need to install your application on this 
    machine as part of your release, add this identity to the local Windows 
    **Administrators** security group. If this identity will need to access 
-   builds on the network, make sure it has access to the network drop location. 
+   builds on the network, make sure it has access to the network drop location.
 
    ***Important:*** _If you specify an alternative account as the identity for 
    the agent, this must be in the form **domain\user**. Do not use the format 

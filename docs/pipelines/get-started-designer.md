@@ -1,6 +1,6 @@
 ---
-title: Create your first build and release | VSTS
-description: CI/CD novice? Create an automated build and release pipeline in VSTS and TFS
+title: Create your first build and release | Azure Pipelines
+description: CI/CD novice? Create an automated build and release pipeline in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -26,7 +26,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="vsts"
 
-We'll show you how to use VSTS pipelines to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your project. You'll also become familiar with all the basic concepts of VSTS pipelines.
+We'll show you how to use Azure Pipelines pipelines to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your project. You'll also become familiar with all the basic concepts of Azure Pipelines pipelines.
 
 ::: moniker-end
 
@@ -97,9 +97,9 @@ Write-Host "Hello world"
 
 1. **Commit** (save) the file.
 
-> In this tutorial, our focus is on CI/CD, so we're keeping the code part simple. We're working in a VSTS Git repository directly in your web browser.
+> In this tutorial, our focus is on CI/CD, so we're keeping the code part simple. We're working in an Azure Repos Git repository directly in your web browser.
 >
-> When you're ready to begin building and deploying a real app, you can use a wide range of version control clients and services with VSTS CI builds. [Learn more](#version-control).
+> When you're ready to begin building and deploying a real app, you can use a wide range of version control clients and services with Azure Pipelines CI builds. [Learn more](#version-control).
 
 ## Create a build pipeline
 
@@ -107,7 +107,7 @@ Create a build pipeline that prints "Hello world."
 
  ::: moniker range="vsts"
 
-1. Select the **Build and Release** hub in your VSTS project, and then choose **Builds**.
+1. Select the **Pipelines** hub in your Azure Pipelines project, and then choose **Builds**.
 
    # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
@@ -153,7 +153,7 @@ Create a build pipeline that prints "Hello world."
 
  ::: moniker range="tfs-2018"
 
-1. Select the **Build and Release** hub in your VSTS project, and then choose **Builds**.
+1. Select the **Pipelines** hub in your Azure Pipelines project, and then choose **Builds**.
 
    ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab-tfs-2018-2.png)
 
@@ -181,7 +181,7 @@ Create a build pipeline that prints "Hello world."
 
  ::: moniker range="tfs-2017"
 
-1. Select the **Build and Release** hub in your VSTS project, and then the **Builds** tab.
+1. Select the **Pipelines** hub in your Azure Pipelines project, and then the **Builds** tab.
 
  ![navigate to builds tab](_img/get-started-designer/navigate-to-builds-tab.png)
 
@@ -191,7 +191,7 @@ Create a build pipeline that prints "Hello world."
 
 1. Start with an **empty process**.
 
-1. Select **Process** and specify whatever **Name** you want to use. 
+1. Select **Process** and specify whatever **Name** you want to use.
 
 1. On the **Options** tab, select **Default** for the **Agent queue**, or select whichever queue you want to use that has Windows build agents.
 
@@ -227,7 +227,7 @@ A typical build produces an artifact that can then be deployed to various enviro
 
    **Artifact name**: Enter `drop`.
 
-   **Artifact publish location**: Select **Visual Studio Team Services/TFS**.
+   **Artifact publish location**: Select **Azure Artifacts/TFS**.
 
    ::: moniker-end
 
@@ -270,9 +270,9 @@ Save and queue a build manually and test your build pipeline.
 
 1. On the dialog box, select **Save & queue** once more.
 
-   This queues a new build on the Microsoft-hosted agent. 
+   This queues a new build on the Microsoft-hosted agent.
 
-1. You see a link to the new build on the top of the page. 
+1. You see a link to the new build on the top of the page.
 
    # [New navigation](#tab/new-nav)
    > [!div class="mx-imgBorder"] 
@@ -308,9 +308,9 @@ Save and queue a build manually and test your build pipeline.
 
 1. On the dialog box, select **Save & queue** once more.
 
-   This queues a new build on the Microsoft-hosted agent. 
+   This queues a new build on the Microsoft-hosted agent.
    
-1. You see a link to the new build on the top of the page. 
+1. You see a link to the new build on the top of the page.
 
    ![build console](_img/get-started-designer/build-console-link-to-new-build-tfs-2018-2.png)
 
@@ -348,7 +348,7 @@ Save and queue a build manually and test your build pipeline.
 
 ::: moniker-end
 
-> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in the **Build and Release** hub. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
+> You can view a summary of all the builds or drill into the logs for each build at any time by navigating to the **Builds** tab in the **Pipelines** hub. For each build, you can also view a list of commits that were built and the work items associated with each commit. You can also run tests in each build and analyze the test failures.
 
 ## Add some variables and commit a change to your script
 
@@ -392,7 +392,7 @@ Write-Host Trigger: $trigger
 
 1. **Commit** (save) the script.
 
-1. Go to the **Build and Release** hub and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
+1. Go to the **Pipelines** hub and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 
 1. Select the new build that was created and view its log.
 
@@ -467,7 +467,7 @@ Define the process for running the script in two environments.
 
 ::: moniker range="tfs-2017"
 
-1. Go to the **Build and Release** hub, and then to the **Releases** tab.
+1. Go to the **Pipelines** hub, and then to the **Releases** tab.
 
 1. Select the action to create a **New pipeline**.
 
@@ -611,7 +611,7 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 <a name="next-steps"></a>
 ## Next steps
 
-You've just learned the basics of using the designer to create and run a VSTS build and release process.
+You've just learned the basics of using the designer to create and run an Azure Pipelines build and release process.
 Now you're ready to configure your build pipeline for the programming language you're using.
 Go ahead and create a new build pipeline, and this time, use one of the following templates.
 
@@ -622,7 +622,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
 | [Go](apps/go/go.md) | Go |
 | [Java](apps/java/build-gradle.md) | Gradle |
-| [JavaScript](apps/nodejs/build-gulp.md) | NodeJS with Gulp (Grunt is also an option)|
+| [JavaScript](apps/nodejs/build-gulp.md) | NodeJS with gulp (Grunt is also an option)|
 | [Xcode](apps/mobile/xcode-ios.md) | Xcode |
 
 ## Q & A
@@ -639,7 +639,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 <a name="version-control"></a>
 ### What kinds of version control can I use
 
-We've used a Git repository in VSTS to keep things focused on CI/CD for this tutorial.
+We've used a Git repository in Azure Repos to keep things focused on CI/CD for this tutorial.
 
 When you're ready to get going with CI/CD for your app, you can use the version control system of your choice:
 
@@ -661,7 +661,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 * Services
 
- * [VSTS](https://visualstudio.microsoft.com/team-services/)
+ * [Azure Pipelines](https://visualstudio.microsoft.com/team-services/)
 
  * Git service providers such as GitHub and Bitbucket
 
@@ -747,7 +747,7 @@ To learn more about build pipeline settings, see:
 [REST API Reference: Create a build pipeline](../integrate/index.md)
 
 > [!NOTE]
-> You can also manage builds and build pipelines from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
+> You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
 
 
 <!-- ENDSECTION -->
