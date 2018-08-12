@@ -1,6 +1,6 @@
 ---
-title: Microsoft-hosted agents for VSTS
-description: Learn about uing the Microsoft-hosted agents provided in Visual Studio Team Services (VSTS)
+title: Microsoft-hosted agents for Azure Pipelines
+description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -80,11 +80,11 @@ When you use a Microsoft-hosted agent, you should always use [variables](../buil
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
 
-By default, all project contributors in an organization have access to the Microsoft-hosted agents. But, your organization administrator may limit the access of Microsoft-hosted agents to select users or projects. Ask the owner of your VSTS organization to grant you permission to use a Microsoft-hosted agent. See [agent queue security](pools-queues.md#security).
+By default, all project contributors in an organization have access to the Microsoft-hosted agents. But, your organization administrator may limit the access of Microsoft-hosted agents to select users or projects. Ask the owner of your Azure DevOps organization to grant you permission to use a Microsoft-hosted agent. See [agent queue security](pools-queues.md#security).
 
 ### I need more agents. What can I do?
 
-A: All VSTS organizations are provided with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release job concurrently, then you can buy [concurrent jobs](../licensing/concurrent-jobs-vsts.md).
+A: All Azure DevOps organizations are provided with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release job concurrently, then you can buy [concurrent jobs](../licensing/concurrent-jobs-vsts.md).
 
 ### I'm looking for the Microsoft-hosted XAML build controller. Where did it go?
 
@@ -103,7 +103,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
 * **Xcode**
 
-  If you use the [Xcode task](../tasks/build/xcode.md) included with VSTS and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
+  If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
 
   `/bin/bash -c "sudo xcode-select -s /Applications/Xcode_8.3.3.app/Contents/Developer"`
 

@@ -1,6 +1,6 @@
 ---
 title: Control deployments with gates in Release Management
-description: Understand gated releases in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Understand gated releases in Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,33 +14,33 @@ monikerRange: '>= tfs-2017'
 
 # Release deployment control using gates
 
-**VSTS**
+**Azure Pipelines**
 
 Gates allow automatic collection of health signals from external services, and then
 promote the release when all the signals are successful at the same time or stop the
-deployment on timeout. 
+deployment on timeout.
 Typically, gates are used in connection with incident management, problem management,
-change management, monitoring, and external approval systems. 
+change management, monitoring, and external approval systems.
 
 ## Scenarios for gates
 
 Some scenarios and use cases for gates are:
 
-  * **Incident and issues management**. Ensure the required status for work items, incidents, and issues. For example, ensure deployment occurs only if no priority zero bugs exist, and validation that there are no active incidents takes place after deployment. 
-  * **Seek approvals outside VSTS**. Notify non-VSTS users such as legal approval departments, auditors, or IT managers about a deployment by integrating with approval collaboration systems such as Microsoft Teams or Slack, and waiting for the approval to complete.
+  * **Incident and issues management**. Ensure the required status for work items, incidents, and issues. For example, ensure deployment occurs only if no priority zero bugs exist, and validation that there are no active incidents takes place after deployment.
+  * **Seek approvals outside Azure Pipelines**. Notify non-Azure Pipelines users such as legal approval departments, auditors, or IT managers about a deployment by integrating with approval collaboration systems such as Microsoft Teams or Slack, and waiting for the approval to complete.
   * **Quality validation**. Query metrics from tests on the build artifacts such as pass rate or code coverage and deploy only if they are within required thresholds.
   * **Security scan on artifacts**. Ensure security scans such as anti-virus checking, code signing, and policy checking for build artifacts have completed. A gate might initiate the scan and wait for it to complete, or just check for completion.
   * **User experience relative to baseline**. Using product telemetry, ensure the user experience hasn't regressed from the baseline state. The experience level before the deployment could be considered a baseline.
   * **Change management**. Wait for change management procedures in a system such as ServiceNow complete before the deployment occurs.
   * **Infrastructure health**. Execute monitoring and validate the infrastructure against compliance rules after deployment, or wait for healthy resource utilization and a positive security report.
 
-Most of the health parameters vary over time, regularly changing their status from healthy to unhealthy and back to healthy. 
-To account for such variations, all the gates are periodically re-evaluated until all of them are successful at the same time. 
+Most of the health parameters vary over time, regularly changing their status from healthy to unhealthy and back to healthy.
+To account for such variations, all the gates are periodically re-evaluated until all of them are successful at the same time.
 The release execution and deployment does not proceed if all gates do not succeed in the same interval and before the configured timeout.
 
 ## Define a gate for an environment
 
-1. Enable gates in the **Pre-deployment conditions** or **Post-deployment conditions** panel for an environment. 
+1. Enable gates in the **Pre-deployment conditions** or **Post-deployment conditions** panel for an environment.
 
    ![Opening the deployment conditions panel](_img/gated-releases-01.png)
 
@@ -86,14 +86,14 @@ The release execution and deployment does not proceed if all gates do not succee
      and the new results are evaluated. It is recommended that the sampling interval is greater than the longest
      typical response time of the configured gates to allow time for all responses to be received for evaluation.     
 
-   * **Timeout after which gates fail**. The maximum evaluation period for all gates. 
-     The deployment will be rejected if the timeout is reached before all gates succeed during the same sampling interval. 
+   * **Timeout after which gates fail**. The maximum evaluation period for all gates.
+     The deployment will be rejected if the timeout is reached before all gates succeed during the same sampling interval.
 
    * **Gates and approvals**. Select the required order of execution for gates and approvals if you have configured both.
      For pre-deployment conditions, the default is to prompt for manual (user) approvals first, then evaluate gates afterwards.
-     This saves the system from evaluating the gate functions if the release is rejected by the user. 
+     This saves the system from evaluating the gate functions if the release is rejected by the user.
      For post-deployment conditions, the default is to evaluate gates and prompt for manual approvals only when all gates are successful.
-     This ensures the approvers have all the information required for a sign-off. 
+     This ensures the approvers have all the information required for a sign-off.
 
    ![Selecting the gate and approval evaluation order](_img/gated-releases-04.png)
    
@@ -132,7 +132,7 @@ about the evaluation of all the gates you configured for the release.
 
 ## See also
 
-* [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
+* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 * [Tutorial: Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)

@@ -1,6 +1,6 @@
 ---
-title: Build your Xcode app | VSTS or Team Foundation Server
-description: Learn how you can use the continuous integration (CI) process in VSTS or Team Foundation Server (TFS) to build and test Xcode projects
+title: Build your Xcode app | Azure Pipelines or Team Foundation Server
+description: Learn how you can use the continuous integration (CI) process in Azure Pipelines or Team Foundation Server (TFS) to build and test Xcode projects
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: e1b5bda1-9cab-4083-a593-36ae52e82b4a
@@ -14,24 +14,24 @@ monikerRange: '>= tfs-2017'
 
 # Build your Xcode app
 
-**VSTS | TFS 2018 | TFS 2017.2**
+**Azure Pipelines | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xcode app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
+Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xcode app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS organization, you can also use a TFS server instead.
+* While the simplest way to try this quickstart is to use an Azure DevOps organization, you can also use a TFS server instead.
 
 * First, you will need a build agent configured on a Mac machine. You may use one of the following:
 
-  1. The **Hosted macOS** agent provided by VSTS, or
-  1. Provide your own agent by opening the macOS Terminal app on your Mac and following these [setup instructions](../../agents/v2-osx.md). The agent will automatically register itself with VSTS / TFS when you start it for the first time. Your Mac also needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed.
+  1. The **Hosted macOS** agent provided by Azure Pipelines, or
+  1. Provide your own agent by opening the macOS Terminal app on your Mac and following these [setup instructions](../../agents/v2-osx.md). The agent will automatically register itself with Azure Pipelines / TFS when you start it for the first time. Your Mac also needs to have Node.js, Xcode, and [xcpretty](https://github.com/supermarin/xcpretty) (for testing) installed.
 
 ## Get the sample code
 
@@ -41,7 +41,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 https://github.com/adventworks/xcode-sample
 ```
 
-# [VSTS or TFS repo](#tab/vsts)
+# [Azure Repos or TFS repo](#tab/vsts)
 
 [!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
@@ -51,7 +51,7 @@ https://github.com/adventworks/xcode-sample
 
 ---
 
-The sample provided here is an iOS app, but the concepts described here translate to other Xcode builds such as for macOS, tvOS, and watchOS apps. Results from running tests are published to VSTS using **[xcpretty](https://github.com/supermarin/xcpretty)**. That is why you will need to have xcpretty installed if you are using your own Mac machine to perform builds, since xcpretty is not part of Xcode itself.
+The sample provided here is an iOS app, but the concepts described here translate to other Xcode builds such as for macOS, tvOS, and watchOS apps. Results from running tests are published to Azure Pipelines using **[xcpretty](https://github.com/supermarin/xcpretty)**. That is why you will need to have xcpretty installed if you are using your own Mac machine to perform builds, since xcpretty is not part of Xcode itself.
 
 ## Set up continuous integration
 
@@ -59,17 +59,17 @@ The sample provided here is an iOS app, but the concepts described here translat
 
 1. Create a new build pipeline.
 
- # [VSTS or TFS repo](#tab/vsts)
+ # [Azure Repos or TFS repo](#tab/vsts)
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build and Release** hub and asked to **Select a template** for the new build pipeline.
+ You are taken to the **Pipelines** hub and asked to **Select a template** for the new build pipeline.
 
  # [GitHub repo](#tab/github)
 
- Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
+ Navigate to the **Builds** tab of the **Pipelines** hub in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
  ---
 
@@ -85,7 +85,7 @@ The sample provided here is an iOS app, but the concepts described here translat
 
 1. Click **Get sources** and then:
 
- # [VSTS or TFS repo](#tab/vsts)
+ # [Azure Repos or TFS repo](#tab/vsts)
 
  Observe that the new build pipeline is automatically linked to your repository.
 

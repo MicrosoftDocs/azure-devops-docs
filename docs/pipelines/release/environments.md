@@ -1,6 +1,6 @@
 ---
 title: Environments in Release Management
-description: DevOps CI CD - Understand environments in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand environments in Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: F3AB8DE0-CBB6-4B52-B483-435E0000E594
 ms.prod: devops
 ms.technology: devops-cicd
@@ -36,12 +36,12 @@ shipping the software to an app store, or the manufacturing process of a boxed p
 Second, you must be able to deploy to an environment **independently** of other environments in the pipeline.
 For example, your pipeline might consist of two environments A and B, and Release Management could deploy Release 2
 to A and Release 1 to B. If you make any assumptions in B about the existence of a certain release in A, the
-two environments are not independent. 
+two environments are not independent.
 
 Here are some suggestions and examples for environments:
 
 * **Dev, QA, Prod** - As new builds are produced, they can be deployed to Dev. They can then be promoted to QA, and finally to Prod.
-  At any time, each of these environments may have a different release (set of build artifacts) deployed to them. 
+  At any time, each of these environments may have a different release (set of build artifacts) deployed to them.
   This is a good example of the use of environments in a release pipeline.
 
 * **Customer adoption rings** (for example, early adopter ring, frequent adopter ring, late adopter ring) -

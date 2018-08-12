@@ -1,6 +1,6 @@
 ---
 title: Azure App Service Deploy
-description: Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
+description: Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 
 # Deploy: Azure App Service Deploy
 
-![](_img/azurermwebappdeployment.png) Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
+![](_img/azurermwebappdeployment.png) Update Azure WebApp Services On Windows, Web App On Linux with built-in images or docker containers, ASP.NET, .NET Core, PHP, Python or Node.js based Web applications, Function Apps, Mobile Apps, Api applications, Web Jobs using Web Deploy / Kudu REST APIs
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

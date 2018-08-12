@@ -1,6 +1,6 @@
 ---
-title: CI/CD with APP Service and Azure Cosmos DB | VSTS How-To
-description: Use VSTS to enable Continuous Integration (CI) and Continous Deployment (CD) for your ASP.NET App service and Azure Cosmos DB.
+title: CI/CD with APP Service and Azure Cosmos DB | Azure Pipelines How-To
+description: Use Azure Pipelines to enable Continuous Integration (CI) and Continous Deployment (CD) for your ASP.NET App service and Azure Cosmos DB.
 ms.author: mlearned
 ms.manager: douge
 ms.prod: devops
@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # How-To:  CI/CD with App Service and Azure Cosmos DB
 
-Create a continuous integration (CI) and continuous delivery (CD) pipeline for Azure Comsos DB backed Azure App Service Web App.  Azure Cosmos DB is Microsoft's globally distributed, multi-model database. Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions. 
+Create a continuous integration (CI) and continuous delivery (CD) pipeline for Azure Comsos DB backed Azure App Service Web App.  Azure Cosmos DB is Microsoft's globally distributed, multi-model database. Cosmos DB enables you to elastically and independently scale throughput and storage across any number of Azure's geographic regions.
 
 You will:
 
@@ -28,18 +28,18 @@ You will:
 ## Prerequisites
 
 * An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
-* A VSTS organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
+* A Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
 * A SQL API based Cosmos DB instance.  If you don't have one, you can follow the initial steps in [this tutorial](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet) to create a Cosmos DB instance and collection.
 
 ## Clone a sample Cosmos DB and Azure Web App to your repository
 
 This sample shows you how to use the Microsoft Azure Cosmos DB service to store and access data from an ASP.NET MVC application hosted on Azure App Service.  The application is a simple TODO application.  You can learn more about the sample application [here](https://github.com/Azure-Samples/documentdb-dotnet-todo-app).
 
-To import the sample app into a Git repo in VSTS:
+To import the sample app into a Git repo in Azure Repos:
 
- 1. Sign into your VSTS organization.
+ 1. Sign into your Azure DevOps organization.
 
- 1. On the **Code** hub for your project in VSTS, select the drop-down and choose the option to **Import repository**.
+ 1. On the **Code** hub for your project in Azure Repos, select the drop-down and choose the option to **Import repository**.
 
  1. On the **Import a Git repository** dialog box, paste https://github.com/Azure-Samples/documentdb-dotnet-todo-app.git into the **Clone URL** text box.
 
@@ -49,7 +49,7 @@ To import the sample app into a Git repo in VSTS:
 
 Set up CI for your ASP.NET application and Cosmos DB to build and create deployable artifacts.
 
-1. On the build and release hub for your project in VSTS, select **builds**.
+1. On the **Pipelines** hub for your project in Azure Pipelines, select **builds**.
 
 1. On the right-side of the screen, select **+ NEW** to create a new build.
 
@@ -67,9 +67,9 @@ Set up CI for your ASP.NET application and Cosmos DB to build and create deploya
 
 ## Set up CD to Azure for your App
 
-The CI for the sample app produces the artifacts needed for deployment to Azure.  Follow the steps below to create a release definition which uses the CI artifacts for deploying a Cosmos DB instance.
+The CI for the sample app produces the artifacts needed for deployment to Azure.  Follow the steps below to create a release pipeline which uses the CI artifacts for deploying a Cosmos DB instance.
 
-1. Select **Release** to create a release definition linked to the build artifacts from the CI pipeline you created with the previous steps.
+1. Select **Release** to create a release pipeline linked to the build artifacts from the CI pipeline you created with the previous steps.
 
 1. Choose the **Azure App Service deployment** template, and then choose **Apply**.
 
@@ -107,7 +107,7 @@ Follow the steps below to test and review the CI/CD pipeline.
 
 1. On the **Code** hub select the **ellipsis** (...) icon next to the **web.config** file in the **src** directory, and then select **Edit**.
 
-1. Replace the existing **value** (ToDoList) for the **database** key in the **appSettings** section of the web.config with a new value such as **NewToDoList**.  You will commit this change to demonstrate creating a new Cosmos DB database as part of the CI/CD pipeline.  This is a simple change to demonstrate CI/CD capabilities of Cosmos DB with VSTS.  However, more [complicated code changes](/azure/cosmos-db/sql-api-dotnet-samples) can also be deployed with the same CI/CD pipeline.
+1. Replace the existing **value** (ToDoList) for the **database** key in the **appSettings** section of the web.config with a new value such as **NewToDoList**.  You will commit this change to demonstrate creating a new Cosmos DB database as part of the CI/CD pipeline.  This is a simple change to demonstrate CI/CD capabilities of Cosmos DB with Azure Pipelines.  However, more [complicated code changes](/azure/cosmos-db/sql-api-dotnet-samples) can also be deployed with the same CI/CD pipeline.
 
 1. Select **Commit**, and then choose **Commit** to save the changes directly to the repostiory.
 
@@ -134,7 +134,7 @@ You can optionally modify these build and release definitions to meet the needs 
 > * Set up CD to Azure for your app
 > * Review the CI/CD pipeline
 
-To learn more about the VSTS pipeline see this tutorial:
+To learn more about Azure Pipelines, see this tutorial:
 
 > [!div class="nextstepaction"]
 > [ASP.NET MVC and Cosmos DB](/azure/cosmos-db/sql-api-dotnet-application)

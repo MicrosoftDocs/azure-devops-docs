@@ -1,6 +1,6 @@
 ---
-title: Install Apple Certificate | VSTS or Team Foundation Server
-description: Learn how you can install an Apple certificate required to build on a macOS agent on VSTS and Team Foundation Server TFS
+title: Install Apple Certificate | Azure Pipelines or Team Foundation Server
+description: Learn how you can install an Apple certificate required to build on a macOS agent on Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2018'
 
 ![](../build/_img/xcode.png) Install an Apple certificate required to build on a macOS agent
 
-You can use this task to install an Apple certificate that is stored as a [secure file](../../library/secure-files.md) on the server. 
+You can use this task to install an Apple certificate that is stored as a [secure file](../../library/secure-files.md) on the server.
 
 ## Demands
 

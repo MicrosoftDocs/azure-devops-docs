@@ -16,11 +16,11 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
 
-With Visual Studio 2015 and VSTS you can easily 
+With Visual Studio 2015 and Azure Pipelines you can easily 
 set up continuous deployment to Azure VMs.
 
 To automate your deployments, deploy the same way to multiple environments, 
-and run deployment and validation scripts, follow these steps. 
+and run deployment and validation scripts, follow these steps.
 For less complex scenarios, such as deploying to Azure websites or cloud services, 
 follow steps to set up continuous deployment from 
 **[TFVC](http://azure.microsoft.com/documentation/articles/cloud-services-continuous-delivery-use-vso/)** 
@@ -30,8 +30,8 @@ instead.
 
 Before you start, you'll need:
 
-* **A VSTS account**.
-* **A project**. 
+* **An Azure DevOps organization**.
+* **A project**.
 * **Azure VMs**. If you need to create them, 
   **[here's how](http://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
 * **An Azure storage account.** Create one 
@@ -51,7 +51,7 @@ along with the environments. You can add stages and environments, too.
 
    ![Create a release definition](_img/deploy-continuously-01.png) 
 
-2. Set each stage and its environment. To skip a stage, do not set its environment. 
+2. Set each stage and its environment. To skip a stage, do not set its environment.
    Dev, QA and Prod stages are created for you automatically.
  
    ![Set stages and environments](_img/deploy-continuously-02.png) 
@@ -63,11 +63,11 @@ along with the environments. You can add stages and environments, too.
    ![Add Azure subscription](_img/deploy-continuously-03.png) 
 
    * Provide Azure subcription details. If you have an Azure subscription file 
-   (.publishsettings file) on your computer, you can browse to that file. 
+   (.publishsettings file) on your computer, you can browse to that file.
    If you do not have a local copy of this file, you can
-   **[download a subscription file](https://manage.windowsazure.com/publishsettings)**. 
+   **[download a subscription file](https://manage.windowsazure.com/publishsettings)**.
    Once you select the file, the tool will detect all the Azure subscriptions 
-   available to you and show them in the **Subscription ID** dropdown list. 
+   available to you and show them in the **Subscription ID** dropdown list.
    For the subscription selected, you need to provide a storage account to 
    Release Management tool where the deployment bits can be uploaded during actual deployment.
 
@@ -81,7 +81,7 @@ along with the environments. You can add stages and environments, too.
    ![Set environments for Azure](_img/deploy-continuously-05.png) 
 
 4. Provide the path name and file name of the deployment script that you want 
-   to run. Same for the configuration script, if your deployment script needs it. 
+   to run. Same for the configuration script, if your deployment script needs it.
    For each environment, provide the credentials for an account that has access 
    to run the script. You can use the same credentials for all environments if you want.
 
@@ -102,16 +102,16 @@ along with the environments. You can add stages and environments, too.
 ###Q: How can I view and customize the deployment actions for each stage of my release?
 
 **A**: In the Release Management client, go to **Configure Apps**, **vNext Release 
-Templates** and open your release template. 
+Templates** and open your release template.
 Learn more **[here](release-without-agents.md)**.
 
 ![Release Template Designer](_img/deploy-continuously-09.png)
 
-###Q: How can I use a different VSTS account for my releases?
+###Q: How can I use a different Azure Pipelines account for my releases?
 
 **A**: In the Release Management client, go to **Administration**, **Settings**, and edit the URL.
 
-![Set VSTS URL](_img/deploy-continuously-10.png)
+![Set Azure Pipelines URL](_img/deploy-continuously-10.png)
 
 ## Related topics
 

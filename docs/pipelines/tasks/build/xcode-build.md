@@ -1,6 +1,6 @@
 ---
 title: Xcode Build build and release task
-description: Xcode Build build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Xcode Build build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 
 # Build: Xcode Build
 
-**[VSTS](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
+**[Azure Pipelines](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
 
 ![icon](_img/xcode.png) Build an Xcode workspace on macOS
 
@@ -134,7 +134,7 @@ Optionally specify the destination for the product exported from the archive.
 <tr>
 <td>Export Options</td>
 <td>
-Pick a way to pass in Export Options when exporting the archive. The task automatically detects the export method from the archive when the default `Auto` is selected. 
+Pick a way to pass in Export Options when exporting the archive. The task automatically detects the export method from the archive when the default `Auto` is selected.
 You can specify the export method and Team ID in the task by selecting `Specify` or provide the export options via a plist file by choosing `Plist`.
 </td>
 </tr>
@@ -191,9 +191,9 @@ Use [xcpretty](https://github.com/supermarin/xcpretty/blob/master/README.md) to 
 </td>
 </tr>
 <tr>
-<td>Publish to VSTS/TFS</td>
+<td>Publish to Azure Pipelines/TFS</td>
 <td>
-If you have selected Use xcpretty (described above), select this option if you want to publish JUnit Test results to VSTS/TFS.
+If you have selected Use xcpretty (described above), select this option if you want to publish JUnit Test results to Azure Pipelines/TFS.
 </td>
 </tr>
 <tr>

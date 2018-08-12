@@ -1,6 +1,6 @@
 ---
-title: Copy Files Over SSH task for use in VSTS and TFS
-description: How to copy Files Over SSH task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS
+title: Copy Files Over SSH task for use in Azure Pipelines and TFS
+description: How to copy Files Over SSH task for use in the phases of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.prod: devops
 ms.technology: devops-cicd 
@@ -20,15 +20,15 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-![icon](_img/copy-files-over-ssh.png) Copy files from source folder to target folder on a remote machine over SSH. 
+![icon](_img/copy-files-over-ssh.png) Copy files from source folder to target folder on a remote machine over SSH.
 
 This task allows you to connect to a remote machine using SSH and copy files matching a set of minimatch patterns from specified source folder to target folder on the remote machine.
-Supported protocols for file transfer are SFTP and SCP via SFTP. 
+Supported protocols for file transfer are SFTP and SCP via SFTP.
 In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
 
 ## Prerequisites
 
-* The task supports use of an SSH key pair to connect to the remote machine(s). 
+* The task supports use of an SSH key pair to connect to the remote machine(s).
 * The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"

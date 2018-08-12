@@ -1,6 +1,6 @@
 ---
-title: Build pipeline options | VSTS or Team Foundation Server
-description: Learn about building your code or deploying your software using build options on VSTS and Team Foundation Server (TFS).
+title: Build pipeline options | Azure Pipelines or Team Foundation Server
+description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -179,7 +179,7 @@ For an example, see [Use a script to customize your build process](../scripts/po
 
 Select the [queue](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
 
-**Tip:**  If your code is in Visual Studio Team Services (VSTS) and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
+**Tip:**  If your code is in Azure Pipelines and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
 
 ## Build job authorization scope
 
@@ -277,7 +277,7 @@ Register each build agent that has the capability.
 ## Multi-configuration
 
 Select this option to build multiple configurations. For example, you could build a C++ app for both debug and release configurations on both x86 and x64 platforms.
-In VSTS and TFS 2018, you set this option in the **Tasks** tab for each **Phase** in your pipeline (not in the **Options** tab).
+In Azure Pipelines and TFS 2018, you set this option in the **Tasks** tab for each **Phase** in your pipeline (not in the **Options** tab).
 To learn about multi-configuration, see the example [Build your C++ app for Windows](../apps/windows/cpp.md).
 
 ## Q & A
@@ -288,7 +288,7 @@ To learn about multi-configuration, see the example [Build your C++ app for Wind
 
 ::: moniker range="vsts"
 
-If you are using VSTS, then the time zone is UTC.
+If you are using Azure Pipelines, then the time zone is UTC.
 
 ::: moniker-end
 

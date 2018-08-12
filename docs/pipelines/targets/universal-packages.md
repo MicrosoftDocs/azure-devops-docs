@@ -1,6 +1,6 @@
 ---
 title: Publish Universal Packages in pipelines | Microsoft Docs
-description: Publishing Universal Packages to VSTS Package Management feeds
+description: Publishing Universal Packages to Azure Artifacts feeds
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.prod: devops
@@ -18,9 +18,9 @@ monikerRange: 'vsts'
 > [!NOTE]
 > Universal Packages are currently in private preview. See the [announcement blog post](https://blogs.msdn.microsoft.com/devops/2018/07/09/universal-packages-bring-large-generic-artifact-management-to-vsts/) for more details.
 
-When you want to publish a set of related files from a pipeline as a single package, you can use [Universal Packages](../../package/quickstarts/universal-packages.md) hosted in VSTS Package Management feeds.
+When you want to publish a set of related files from a pipeline as a single package, you can use [Universal Packages](../../package/quickstarts/universal-packages.md) hosted in Azure Artifacts feeds.
 
-Before you read this topic, you should understand the kind of build definition you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
+Before you read this topic, you should understand the kind of build pipeline you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ## Prepare your Universal Package
 
@@ -36,7 +36,7 @@ To publish the files you assembled previously as a Universal Package, add the **
 
 - **Command:** Publish
 - **Path to file(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you selected a different output directory in the last step.
-- **Feed location:** You can publish to a VSTS Package Management feed in this organization or in another organization.
+- **Feed location:** You can publish to an Azure Artifacts feed in this organization or in another organization.
 - **Destination feed:** Select the feed you want to publish to.
 - **Package name:** Select an existing package (to publish a new version of that package) or enter a new package name (to publish the first version of a new package).
 
@@ -101,6 +101,6 @@ In the **Universal Packages** snippet you added above, add the `versionOption` k
 
 ## Q&A
 
-### Where can I learn more about the VSTS and TFS Package Management service
+### Where can I learn more about Azure Artifacts and the TFS Package Management service
 
-[Package Management in VSTS and TFS](../../package/index.md)
+[Package Management in Azure Artifacts and TFS](../../package/index.md)

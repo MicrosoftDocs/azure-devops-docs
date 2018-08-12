@@ -1,6 +1,6 @@
 ---
-title: Approvals and gates overview in VSTS and TFS
-description: Understand deployment approvals and gates in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Approvals and gates overview in Azure Pipelines and TFS
+description: Understand deployment approvals and gates in Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2015'
 
 A release pipeline specifies the end-to-end release process for an app to be deployed across a range of environments.
 Deployments to each environment are fully automated by using 
-[phases](../../process/phases.md) and [tasks](../../process/tasks.md). 
+[phases](../../process/phases.md) and [tasks](../../process/tasks.md).
 
 **Approvals** and **gates** give you additional control over the start and completion of the deployment process.
 Each environment in a release pipeline can be configured with pre-deployment and post-deployment conditions
@@ -30,7 +30,7 @@ that can include waiting for users to manually approve or reject deployments, an
 systems until specific conditions are verified. In addition, you can configure a manual intervention to pause the
 deployment process and prompt users to carry out manual tasks, then resume or reject the deployment.
 
->At present, gates are available only in Visual Studio Team Services.
+>At present, gates are available only in Azure Pipelines.
 
 The following diagram shows how these features are combined in an environment of a release pipeline.
 
@@ -66,7 +66,7 @@ You can, of course, combine all three techniques within a release pipeline to fu
 
 ## See also
 
-* [Video: Deploy quicker and safer with gates in VSTS](https://channel9.msdn.com/Events/Connect/2017/T181)
+* [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
 * [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

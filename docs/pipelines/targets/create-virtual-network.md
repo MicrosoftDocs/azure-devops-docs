@@ -55,16 +55,16 @@ See also: [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/w
 ## Prerequisites
 
 * SCVMM Server 2012 R2 or later.
-* Window 2012 R2 host machines with Hyper-V set up with at least two physical NICs attached. 
+* Window 2012 R2 host machines with Hyper-V set up with at least two physical NICs attached.
 * One NIC (perhaps external) with corporate network or Internet access.
-* One NIC configured in Trunk Mode with a VLAN ID (such as 991) and routable IP subnets (such as 10.10.30.1/24). You network administrator can configure this. 
+* One NIC configured in Trunk Mode with a VLAN ID (such as 991) and routable IP subnets (such as 10.10.30.1/24). You network administrator can configure this.
 * All Hyper-V hosts in the host group have the same VLAN ID. This host group will be used for your isolated networks.
 
 Verify the setup is working correctly by following these steps:
 
 1. Open an RDP session to each of the host machines and open an administrator PowerShell session.
 
-1. Run the command `Get-NetVirtualizationProviderAddress`. This gets the provider address for the physical NIC configured in trunk mode with a VLAN ID. 
+1. Run the command `Get-NetVirtualizationProviderAddress`. This gets the provider address for the physical NIC configured in trunk mode with a VLAN ID.
 
    ![Run Get-NetVirtualizationProviderAddress](_img/virtual-networks/2.png)
 
@@ -207,7 +207,7 @@ port profiles, logical switches, and adding the switches to the Hyper-V hosts.
 1. Do the same for all the Hyper-V hosts in the host group.
 
 This is a one-time configuration for a specific host group of machines. After completing this setup, you can dynamically
-provision your isolated network of virtual machines using the **SCVMM extension** in TFS and VSTS builds and releases.
+provision your isolated network of virtual machines using the **SCVMM extension** in TFS and Azure Pipelines builds and releases.
 
 [Back to list of tasks](#task-list)
 
@@ -220,7 +220,7 @@ Isolated virtual networks can be broadly classified into three topologies.
 **Topology 1: AD-backed Isolated VMs**
 
 * A boundary VM with Internet/TFS connectivity.
-* A VSTS/TFS deployment group agent installed on the boundary VM.
+* An Azure Pipelines/TFS deployment group agent installed on the boundary VM.
 * An AD-DNS VM if you want to use a local Active Directory domain.
 * Isolated app VMs where you deploy and test your apps.
 
@@ -229,7 +229,7 @@ Isolated virtual networks can be broadly classified into three topologies.
 **Topology 2: Non-AD backed isolated VMs**
 
 * A boundary VM with Internet/TFS connectivity.
-* A VSTS/TFS deployment group agent installed on the boundary VM.
+* An Azure Pipelines/TFS deployment group agent installed on the boundary VM.
 * Isolated app VMs where you deploy and test your apps.
 
    ![Topology 2 Non-AD backed isolated VMs](_img/virtual-networks/25.png)
@@ -237,7 +237,7 @@ Isolated virtual networks can be broadly classified into three topologies.
 **Topology 3: AD-backed non-isolated VMs**
 
 * A boundary VM with Internet/TFS connectivity.
-* A VSTS/TFS deployment group agent installed on the boundary VM.
+* An Azure Pipelines/TFS deployment group agent installed on the boundary VM.
 * An AD-DNS VM if you want to use a local Active Directory domain.
 * App VMs that are also connected to the external network where you deploy and test your apps.
 
@@ -245,7 +245,7 @@ Isolated virtual networks can be broadly classified into three topologies.
 
 You can create any of the above topologies using the SCVMM extension, as shown in the following steps.
 
-1. Open your TFS or VSTS instance and install the **SCVMM extension** if not already installed.
+1. Open your TFS or Azure Pipelines instance and install the **SCVMM extension** if not already installed.
    For more information, see [SCVMM deployment](scvmm.md).
 
    >The **SCVMM task** provides a more efficient way capability to perform lab management operations using build and release
@@ -291,7 +291,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 
    ![Entering the settings for the VM Network and subnet](_img/virtual-networks/33.png)
 
-1. In the **Boundary Virtual Machine options** section, set **Create boundary VM for communication with VSTS/TFS**.
+1. In the **Boundary Virtual Machine options** section, set **Create boundary VM for communication with Azure Pipelines/TFS**.
    This will be the entry point for external communication.
 
 1. Enter the boundary VM name and the source template (the boundary VM source should always be a VM template),
@@ -299,10 +299,10 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 
    ![Entering the boundary VM name and the source template](_img/virtual-networks/34.png)
 
-1. Provide details for configuring the boundary VM agent to communicate with TFS/VSTS. You can configure a
+1. Provide details for configuring the boundary VM agent to communicate with Azure Pipelines/TFS. You can configure a
    deployment agent or an automation agent. This agent will be used for app deployments.
 
-   ![Configuring the boundary VM agent to communicate with TFS or VSTS](_img/virtual-networks/35.png)
+   ![Configuring the boundary VM agent to communicate with TFS or Azure Pipelines](_img/virtual-networks/35.png)
 
 1. Ensure the agent name you provide is unique. This will be used as demand in succeeding phase properties
    so that the correct agent will be selected. If you selected the deployment group agent option, this
@@ -337,7 +337,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 Now you can create release from this release pipeline. Each release will dynamically provision your
 isolated virtual network and run your deploy and test tasks in the environment. You can find the test
 results in the release summary. After your tests are completed, you can automatically decommission your
-environments. You can create as many environments as you need with just a click from the **Build &amp; Release** hub.
+environments. You can create as many environments as you need with just a click from the **Pipelines** hub.
 
 [Back to list of tasks](#task-list)
 

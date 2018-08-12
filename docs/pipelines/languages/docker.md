@@ -1,6 +1,6 @@
 ---
 title: Docker
-description: Building Docker images using VSTS and TFS
+description: Building Docker images using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E5BEDC1D-0209-40F3-A2AB-591CB7AE97E8
@@ -46,7 +46,7 @@ Docker Hub or Azure Container Registry.
 
 This example shows how to build a Docker image and push it to a registry.
 
-To start, import (into VSTS or TFS) or fork (into GitHub) this repo:
+To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
@@ -119,14 +119,14 @@ YAML builds are not yet available on TFS.
 
 ::: moniker range="< vsts"
 > [!NOTE]
-> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free VSTS account. Then [try this with VSTS](#example?view=vsts&tabs=designer).
+> This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then [try this with Azure Pipelines](#example?view=vsts&tabs=designer).
 ::: moniker-end
 
 ::: moniker range="vsts"
 
 1. After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
 
-1. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
+2. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
   * **Agent queue:** `Hosted Linux Preview`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
@@ -175,7 +175,7 @@ Now that you've run a Docker build pipeline, you're ready to learn some of the m
 
 ::: moniker range="vsts"
 
-You can use VSTS to build and push your Docker images without needing to set up any infrastructure of your own. You can build either Windows or Linux container images. The [Microsoft-hosted agents](../agents/hosted.md) in VSTS have Docker pre-installed on them. We frequently update the version of Docker on these agent machines. To know which version of Docker is installed, see [Microsoft-hosted agents](../agents/hosted.md).
+You can use Azure Pipelines to build and push your Docker images without needing to set up any infrastructure of your own. You can build either Windows or Linux container images. The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have Docker pre-installed on them. We frequently update the version of Docker on these agent machines. To know which version of Docker is installed, see [Microsoft-hosted agents](../agents/hosted.md).
 
 # [YAML](#tab/yaml)
 
@@ -279,7 +279,7 @@ The instructions in the [above example](#example) demonstrate this approach.
 
 ### Build and test in your Dockerfile
 
-In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage VSTS and TFS features such as tasks, phases, or test analytics.
+In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage Azure Pipelines and TFS features such as tasks, phases, or test analytics.
 
 To use this approach for the sample app, create a _Dockerfile_ at the root of your repo with the following content:
 
@@ -485,7 +485,7 @@ docker build -t <your-image-tag> .
 
 ::: moniker range="vsts"
 
-If you're able to build your image on your development machine, but are having trouble building it on VSTS or TFS, the following solutions might help:
+If you're able to build your image on your development machine, but are having trouble building it on Azure Pipelines or TFS, the following solutions might help:
 
 * Check that you are using the correct type of agents - Microsoft-hosted Linux or Microsoft-hosted Windows - to mimic the type of container images you build on your development machine.
 
@@ -497,6 +497,6 @@ If you're able to build your image on your development machine, but are having t
 
 ::: moniker range="< vsts"
 
-If you're able to build your image on your development machine, but are having trouble building it on VSTS or TFS, then check the version of Docker on the agent, and ensure that it matches what you have on your development machine. You can include a command line script `docker --version` in your build pipeline to print the version of Docker.
+If you're able to build your image on your development machine, but are having trouble building it on Azure Pipelines or TFS, then check the version of Docker on the agent, and ensure that it matches what you have on your development machine. You can include a command line script `docker --version` in your build pipeline to print the version of Docker.
 
 ::: moniker-end

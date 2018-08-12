@@ -1,6 +1,6 @@
 ---
 title: Build and Deploy - Azure Key Vault task
-description: Learn about Azure Key Vault task for use in the phases of all of your build and release pipelines in Microsoft VSTS and TFS
+description: Learn about Azure Key Vault task for use in the phases of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
 ms.prod: devops
 ms.technology: devops-cicd
@@ -25,7 +25,7 @@ The task is Node-based, and works with agents on Linux, macOS, and Windows.
 
 The task has the following pre-requisites:
 
-* An Azure subscription linked to Team Foundation Server or VSTS using the [Azure Resource Manager service connection](../../library/connect-to-azure.md).
+* An Azure subscription linked to Azure Pipelines or Team Foundation Server using the [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
 * An [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) containing the secrets.
 

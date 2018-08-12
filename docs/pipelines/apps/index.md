@@ -1,6 +1,6 @@
 ---
-title: Build and deploy your app - examples | VSTS & TFS 
-description: Build and deploy your app examples with VSTS and Team Foundation Server
+title: Build and deploy your app - examples | Azure Pipelines & TFS 
+description: Build and deploy your app examples with Azure Pipelines and Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -30,7 +30,7 @@ continuous integration (CI) and continuous deployment (CD) process.
  <li style="margin-bottom:5px">[ASP.NET Core apps](../languages/dotnet-core.md)</li>
  <li style="margin-bottom:5px">[Java apps with Gradle](../apps/java/build-gradle.md)</li>
  <li style="margin-bottom:5px">[Java apps with Maven](../apps/java/build-maven.md)</li>
- <li style="margin-bottom:5px">[Node apps](nodejs/build-gulp.md)</li>
+ <li style="margin-bottom:5px">[Node.js apps](nodejs/build-gulp.md)</li>
  <li style="margin-bottom:5px">[Cloud Services apps](aspnet/build-aspnet-cloudservice.md)</li>
  <li style="margin-bottom:5px">[SQL database DACPAC](aspnet/build-aspnet-dacpac.md)</li>
  <li style="margin-bottom:5px">[C++ apps for Windows](windows/cpp.md)</li>
@@ -93,7 +93,7 @@ continuous integration (CI) and continuous deployment (CD) process.
 <p style="font-weight:bold;padding-top:10px">More examples</p>
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[Continuous integration, test, and deployment](../test/example-continuous-testing.md)</li>
- <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using VSTS](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
+ <li style="margin-bottom:5px">[Continuous integration for a Service Fabric app using Azure Pipelines](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-set-up-continuous-integration/)</li>
 </ul>
 </div>
 

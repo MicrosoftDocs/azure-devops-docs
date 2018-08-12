@@ -1,6 +1,6 @@
 ---
-title: VSTS and Team Foundation Server Build and Deploy - Azure CLI
-description: VSTS and Team Foundation Server build task to run a shell or batch script containing Microsoft Azure CLI commands
+title: Azure Pipelines and Team Foundation Server Build and Deploy - Azure CLI
+description: Azure Pipelines and Team Foundation Server build task to run a shell or batch script containing Microsoft Azure CLI commands
 ms.assetid: C6F8437B-FF52-4EA1-BCB0-F34924303CA8
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,7 +22,7 @@ cross-platform agents running on Linux, macOS, or Windows operating systems.
  
 The task is under development. If you encounter problems, or wish to
 share feedback about the task and features you would like to see,
-please [contact us](mailto:RM_Customer_Queries@microsoft.com). 
+please [contact us](mailto:RM_Customer_Queries@microsoft.com).
 
 ### What's new in Version 1.0
 

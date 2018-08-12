@@ -31,7 +31,7 @@ The web app you created here will host an instance of that image and expose it a
 You can configure Web App for Containers to automatically configure deployment as part of the
 CI/CD process so that the web app is automatically updated when a new image is pushed to the container
 registry (this feature uses a [webhook](https://docs.microsoft.com/azure/container-registry/container-registry-webhook)).
-However, by using a separate release pipeline in VSTS or TFS you gain extra flexibility and traceability. You can:
+However, by using a separate release pipeline in Azure Pipelines or TFS you gain extra flexibility and traceability. You can:
 
 * Specify an appropriate tag that is used to select the deployment target for multi-environment deployments.
 * Use separate container registries for different environments.
@@ -39,6 +39,6 @@ However, by using a separate release pipeline in VSTS or TFS you gain extra flex
 * Avoid using the same tag for all the deployments. The default CD process for Web App for Containers
   uses the same tag for every deployment. While this may be appropriate for a tag such as **latest**,
   you can achieve end-to-end traceability from code to deployment by using a build-specific tag for each deployment.
-  For example, the Docker build tasks let you tag your images with the **Build.ID** for each deployment. 
+  For example, the Docker build tasks let you tag your images with the **Build.ID** for each deployment.
 
 *****

@@ -1,5 +1,5 @@
 ---
-title: YAML schema | VSTS
+title: YAML schema | Azure Pipelines
 description: An overview of all YAML features.
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,11 +13,11 @@ monikerRange: 'vsts'
 
 # YAML schema reference
 
-Here's a detailed reference guide to VSTS YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.
+Here's a detailed reference guide to Azure Pipelines YAML pipelines, including a catalog of all supported YAML capabilities, and the available options.
 This document is intended for people who already have a strong understanding of YAML pipelines.
 
 > The best way to get started with YAML pipelines is through the
-[quickstart guide](get-started-yaml.md). 
+[quickstart guide](get-started-yaml.md).
 > After that, to learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Phases](process/phases.md).
 
 ## Pipeline structure
@@ -107,7 +107,7 @@ resources:
 #### Type
 
 Pipelines support two types of repositories, `git` and `github`. `git` refers to
-VSTS Git repos. If you choose `git` as your type, then `name` refers to a repo
+Azure Repos Git repos. If you choose `git` as your type, then `name` refers to a repo
 within the same project as the one you are building. Cross-project references are
 not supported.
 
@@ -399,7 +399,7 @@ if non-zero, treated as a step failure. The system will prepend your script with
 
 `if ((Test-Path -LiteralPath variable:\LASTEXITCODE)) { exit $LASTEXITCODE }`
 
-If you don't want this behavior, set `ignoreLASTEXITCODE` to `true`. 
+If you don't want this behavior, set `ignoreLASTEXITCODE` to `true`.
 
 ```yaml
 steps:

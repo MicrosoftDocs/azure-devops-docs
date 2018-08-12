@@ -2,7 +2,7 @@
 title: Build and deploy your apps 
 titleSuffix: Azure DevOps 
 titleSuffix: Azure DevOps Services
-description: What do you get with Azure DevOps Pipelines  
+description: What do you get with Azure Pipelines
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 

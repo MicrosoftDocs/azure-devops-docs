@@ -1,6 +1,6 @@
 ---
-title: Continuous testing Java applications - VSTS - test automation tools
-description: Continuous testing with Java in a continuous integration pipeline with a build or release pipeline in Visual Studio Team Services (VSTS) and TFS 
+title: Continuous testing Java applications - Azure Pipelines - test automation tools
+description: Continuous testing with Java in a continuous integration pipeline with a build or release pipeline in Azure Pipelines and TFS 
 ms.assetid: 3A1A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +12,7 @@ ms.date: 07/16/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Testing Java applications with VSTS
+# Testing Java applications with Azure Pipelines
 
 [!INCLUDE [version-header-vs-vsts-tfs](_shared/version-header-vs-vsts-tfs.md)]
 
@@ -20,27 +20,27 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) include build tasks to
+Azure Pipelines and Team Foundation Server (TFS) include build tasks to
 make it easy to integrate your build and testing 
 efforts into your release pipelines with rich 
 reporting highlighting build-on-build changes, 
 easy-to-create actionable bugs for regressions and 
 the ability to create and display code coverage 
-with a simple checkbox. 
+with a simple checkbox.
 
 [See this topic on Channel9 video](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio/Testing-Java-Applications-with-Visual-Studio-Team-Services)
 
 <a name="build-integration"></a>
 ## Build integration
 
-VSTS build tasks make it 
+Azure Pipelines build tasks make it 
 easy to build to build Java applications. These 
 same tasks also make it easy to test your Java 
 applications. The example below uses Maven to build
 a Java application, runs JUnit tests, and uses Maven and 
 to test the application.
 
-![VSTS build and test integration](_img/continuous-test-java/continuous-test-java-01.png)
+![Azure Pipelines build and test integration](_img/continuous-test-java/continuous-test-java-01.png)
 
 The output of these tests and other testing 
 frameworks is made available in the standard 
@@ -53,12 +53,12 @@ importing the test results from JUnit.
 <a name="summary-results"></a>
 ## Build-on-build summary results
 
-VSTS automatically adds 
+Azure Pipelines automatically adds 
 build-on-build changes in the summary view to give 
 a clear indication if your quality is improving.
 In the example below you can see 16 new tests were 
 added, but 6 of these tests are now failing and the 
-build time is now much longer. 
+build time is now much longer.
 
 ![Tests now failing and the build time is much longer](_img/continuous-test-java/continuous-test-java-03.png)
 
@@ -103,7 +103,7 @@ coverage in different areas.
 
 ## See also
 
-[VSTS Java website](../../java/index.md)
+[Azure Pipelines Java website](../../java/index.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
  

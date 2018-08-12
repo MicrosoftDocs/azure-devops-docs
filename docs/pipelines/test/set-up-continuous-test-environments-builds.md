@@ -1,6 +1,6 @@
 ---
 title: Set up environments to run continuous tests with your builds - test automation tools
-description: Set up environments to run continuous test tasks with your build tasks with a build or release pipeline VSTS and TFS 
+description: Set up environments to run continuous test tasks with your build tasks with a build or release pipeline Azure Pipelines and TFS 
 ms.assetid: FFD51F1E-C3B7-4FAC-B25D-95ADD6C1A1A0
 ms.prod: devops
 ms.technology: devops-cicd
@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2015'
 
 To test your app using different platforms and configurations using test automation,
 set up separate environments to run your app and tests with your
-builds in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
+builds in Azure Pipelines or Team Foundation Server (TFS).
 
 ## Set up machines to run your app and tests
 
@@ -32,7 +32,7 @@ You'll need to set up physical or virtual machines to run your app and tests, fo
 
 * Machines with the necessary browsers to run your tests
 
-With VSTS, you can define environments that have physical and virtual machines, such as Azure VMs and Azure resource groups.
+With Azure Pipelines, you can define environments that have physical and virtual machines, such as Azure VMs and Azure resource groups.
 With TFS, you can define environments using only physical machines.
 Alternatively, you can [create a virtual network isolated environment for your build-deploy-test scenarios](../targets/create-virtual-network.md).
 
@@ -50,7 +50,7 @@ to install your agents.
 ## Define a list of machines to run your app and tests
 
 > [!NOTE]
-> Previous versions of VSTS and TFS included the capability to define
+> Previous versions of Azure Pipelines and TFS included the capability to define
 > **Machine Groups**. However, this feature is no longer available.
 
 As an alternative, consider:
@@ -58,7 +58,7 @@ As an alternative, consider:
 * If you use version 2.x or higher of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
   task you can deploy and run unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
   and run tests on platforms that don't have Visual Studio installed by using the 
-  [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/). 
+  [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/).
   In this case, you can use [deployment groups](../release/deployment-groups/index.md)
   to define your target machines. For more details, see
   [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
@@ -93,7 +93,7 @@ As an alternative, consider:
 The Visual Studio Test Platform (VSTest) supports running tests in parallel.
 Parallel test execution is available:
 
-* To all frameworks and within the IDE, the command line (CLI), and in VSTS.
+* To all frameworks and within the IDE, the command line (CLI), and in Azure Pipelines.
 * Within the IDE from all launch points (Test Explorer, CodeLens, various **Run** commands, and more).
 
 Parallel test execution:
@@ -127,7 +127,7 @@ Parallel Test Execution is **not** supported in the following cases:
 ### Enable parallel tests in Visual Studio 2017 Update 1 and VS Test task v1.x
 
 Configure a [.runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
-in the app source repository for Visual Studio IDE or the CLI, and in VSTS when using
+in the app source repository for Visual Studio IDE or the CLI, and in Azure Pipelines when using
 version 1.x of the  [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
 task.
 
@@ -149,7 +149,7 @@ The value for **MaxCpuCount** has the following semantics:
 ### Enable parallel tests in Visual Studio 2017 Update 2 and later
 
 Enable parallel test execution by using the button on the Test Explorer toolbar.
-This is an ON/OFF toggle setting. 
+This is an ON/OFF toggle setting.
 
 ![Using parallel execution in Visual Studio IDE](_img/run-tests-in-parallel/parallel-testexplorer.png)
 
@@ -159,12 +159,12 @@ For the CLI, **vstest.console.exe** supports a **/Parallel** command line switch
 
 [!INCLUDE [paralleltest-runsettingsmerge](_shared/paralleltest-runsettingsmerge.md)] 
 
-### Enable parallel tests in VSTS with VS Test task v2.x
+### Enable parallel tests in Azure Pipelines with VS Test task v2.x
 
 Enable parallel test execution by setting the **Run Tests in Parallel...** checkbox
 in the settings for the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task.
 
-![Using parallel execution in VSTS](_img/run-tests-in-parallel/parallel-vsts.png)
+![Using parallel execution in Azure Pipelines](_img/run-tests-in-parallel/parallel-vsts.png)
 
 [!INCLUDE [paralleltest-maxcpucount](_shared/paralleltest-maxcpucount.md)] 
 
@@ -189,13 +189,13 @@ For more information about the tasks see:
 You select the [specific version](../../pipelines/process/tasks.md#task-versions)
 of a task you want to use in the **Version** list at the top
 of the task properties pane. Use the **i** icon to show more information about the task or
-a selected property setting. 
+a selected property setting.
 
 ![Selecting a specific version of a task](_img/test-with-unified-agent-and-phases/v2task.png)
 
 ### Advantages of using the unified agent
 
-* You no longer need to use dedicated machines for testing (as was required by the **Run Functional Tests** task). 
+* You no longer need to use dedicated machines for testing (as was required by the **Run Functional Tests** task).
   With the unified agent, you can leverage the common agent pool.
   Administrators can set up a reusable pool of machines, making management much easier.
 

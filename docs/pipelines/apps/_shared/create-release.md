@@ -13,15 +13,15 @@ Your CD release process picks up the artifacts published by your CI build and th
 
      ![Creating a new release pipeline from the build summary](_img/release-from-build-summary.png)
 
-   * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
+   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
      ![Creating a new release pipeline in the Releases page](_img/release-from-release-page.png)
 
-1. The easiest way to create a release pipeline is to use a template. If you are deploying a Node app, select the **Deploy Node.js App to Azure App Service** template. 
+1. The easiest way to create a release pipeline is to use a template. If you are deploying a Node.js app, select the **Deploy Node.js App to Azure App Service** template.
    Otherwise, select the **Azure App Service Deployment** template. Then choose **Apply**.
 
-   > The only difference between these templates is that Node template configures the task to generate a **web.config** file containing a parameter that starts the **iisnode** service.
+   > The only difference between these templates is that Node.js template configures the task to generate a **web.config** file containing a parameter that starts the **iisnode** service.
 
 1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
    is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from
@@ -39,7 +39,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 1. Open the **Tasks** tab and, with **Environment 1** selected, configure the task property variables as follows:
 
    * **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
-     If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
+     If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
 
      ![Authorizing an Azure subscription](_img/authorize-azure-subscription-in-new-release-definition.png)

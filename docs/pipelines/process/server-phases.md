@@ -1,6 +1,6 @@
 ---
 title: Server phases in Build and Release Management
-description: Understand server phases in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Understand server phases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 093FD7B8-65F4-40E0-A429-A7944FD2ED9B
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2018'
 
 # Server phases
 
-Tasks in a server phase are orchestrated by and executed on the server (VSTS or TFS). A server phase does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server phase at present. At present you can add only one task to each server phase in your pipeline.
+Tasks in a server phase are orchestrated by and executed on the server (Azure Pipelines or TFS). A server phase does not require an agent or any target computers. Only a few tasks, such as the Manual Intervention and Invoke REST API tasks, are supported in a server phase at present. At present you can add only one task to each server phase in your pipeline.
 
 # [YAML](#tab/yaml)
 

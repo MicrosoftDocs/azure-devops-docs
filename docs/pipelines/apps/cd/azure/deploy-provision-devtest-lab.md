@@ -1,6 +1,6 @@
 ---
 title: Manage a virtual machine in Azure DevTest Labs
-description: Create, manage, and delete Azure virtual machines (VMs) in Azure DevTest Labs using Microsoft Release Management in VSTS and TFS
+description: Create, manage, and delete Azure virtual machines (VMs) in Azure DevTest Labs using Microsoft Release Management in Azure Pipelines and TFS
 ms.assetid: 4FC75F92-EC04-4458-8069-53EEBF855D2F
 ms.prod: devops
 ms.technology: devops-cicd
@@ -23,9 +23,9 @@ monikerRange: '>= tfs-2015'
 The [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/)
 service lets you quickly provision development and test environments using reusable
 templates. You can use pre-created images, minimize waste with quotas and policies,
-and minimize costs by using automated shutdown. 
+and minimize costs by using automated shutdown.
 
-By using an extension installed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) you
+By using an extension installed in Azure Pipelines or Team Foundation Server (TFS) you
 can easily integrate your build and release pipeline with  Azure DevTest Labs.
 The extension installs three tasks to create a VM, create a custom image from
 a VM, and delete a VM. This makes it easy to, for example, quickly deploy a 
@@ -41,7 +41,7 @@ Start by installing the
 [Azure DevTest Labs Tasks](https://marketplace.visualstudio.com/items?itemName=ms-azuredevtestlabs.tasks)
 extension from Visual Studio Marketplace:
 
-* For VSTS, choose **Install**
+* For Azure Pipelines, choose **Install**
 * For TFS, choose **Download** and install the extension on your server.
 
 ## Create an Azure RM template
@@ -59,10 +59,10 @@ use to create an Azure Virtual Machine on demand.
 1. Edit the **CreateVMTemplate.json** file as described in 
    [this post](http://www.visualstudiogeeks.com/blog/DevOps/Configure-winrm-with-ARM-template-in-AzureDevTestLab-VM-deployment-using-PowerShell-artifact)
    on Tarun Arora's blog to configure it for Windows Remote
-   Management (WinRM). 
+   Management (WinRM).
 
    >WinRM access is required to use deploy tasks such as 
-   **Azure File Copy** and **PowerShell on Target Machines**. 
+   **Azure File Copy** and **PowerShell on Target Machines**.
 
 1. Check the template into your source control system.
 
@@ -97,7 +97,7 @@ use to create an Azure Virtual Machine on demand.
    Write-Host "##vso[task.setvariable variable=labVMFqdn;]$labVMFqdn"
 
 1. Check the script into your source control system. Name 
-   it something like **GetLabVMParams.ps1**. 
+   it something like **GetLabVMParams.ps1**.
 
    >This script, when run on the agent as part of the release pipeline,
    collects values that you'll need to deploy your app to the VM
@@ -112,7 +112,7 @@ use to create an Azure Virtual Machine on demand.
 Carry out the following steps to create the 
 release pipeline in Release Management.
 
-1. Open the **Releases** tab of the **Build &amp; Release** hub and choose the
+1. Open the **Releases** tab of the **Pipelines** hub and choose the
    "**+**" icon to create a new release pipeline.
 
 1. In the **Create release pipeline** dialog, 
@@ -124,7 +124,7 @@ release pipeline in Release Management.
 
 1. In the new release pipeline, choose the ellipses (**...**) next 
    to the environment name to open the shortcut menu 
-   and select **Configure variables**. 
+   and select **Configure variables**.
 
 1. In the **Configure - environment** dialog, enter the following values
    for the variables you will use in the release pipeline tasks:
@@ -187,7 +187,7 @@ release pipeline in Release Management.
    **Azure File Copy** and **PowerShell on Target Machines**.
    - The information about the VM you'll need for the parameters of these 
      tasks is stored in three configuration variables
-     named **labVmRgName**, **labVMIpAddress**, and **labVMFqdn** within the release pipeline. 
+     named **labVmRgName**, **labVMIpAddress**, and **labVMFqdn** within the release pipeline.
    - If you just want to experiment with creating a DevTest Labs
      VM and a custom image, without deploying an app to it, just
      skip this step.<p />

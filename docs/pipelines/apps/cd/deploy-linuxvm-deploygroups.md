@@ -14,14 +14,14 @@ monikerRange: '>= tfs-2017'
 
 # Deploy to a Linux Virtual Machine
 
-**VSTS | TFS 2018**
+**Azure Pipelines | TFS 2018**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
 We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
-Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) 2018. You can use the steps in this
+Azure Pipelines or Team Foundation Server (TFS) 2018. You can use the steps in this
 quickstart for any app as long as your continuous integration process publishes a web deployment package.
 
 ![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
@@ -34,7 +34,7 @@ automatically show up on your site.
 You'll need a continuous integration (CI) build process that publishes your web application, as well as
 a deployment script that can be run locally on the Ubuntu server. To set up a CI build process, see:
 
-* [Build your Node app with Gulp](../nodejs/build-gulp.md)
+* [Build your Node.js app with gulp](../nodejs/build-gulp.md)
 
 > Make sure you follow the additional steps in that topic for creating a build to deploy to Linux.
 
@@ -58,7 +58,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
      ![Creating a new release pipeline from the build summary](../_shared/_img/release-from-build-summary.png)
 
-   * Open the **Releases** tab of the **Build &amp; Release** hub, open the **+** drop-down
+   * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
      ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)

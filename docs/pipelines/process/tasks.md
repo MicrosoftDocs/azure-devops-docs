@@ -1,6 +1,6 @@
 ---
-title: Build and Release Tasks in VSTS and TFS
-description: Understand Build and Release tasks in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: Build and Release Tasks in Azure Pipelines and TFS
+description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
 ms.prod: devops
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Tasks for builds and releases
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -26,11 +26,11 @@ A task is simply a packaged script or procedure that has been
 abstracted with a set of inputs. We provide some [built-in tasks](../tasks/index.md) 
 to enable fundamental build and deployment scenarios.
 
-In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/VSTS)
+In addition, [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts)
 offers a number of extensions; each of which, when installed to your
 subscription or collection, extends the task catalog with one or more tasks.
 Furthermore, you can write your own [custom extensions](../../integrate/index.md)
-to add tasks to VSTS or TFS.
+to add tasks to Azure Pipelines or TFS.
 
 When you add a task to your build or release pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
@@ -55,7 +55,7 @@ The build or release log will include an alert that a new major version is avail
 * If you select a preview version (such as **1.\* Preview**), be aware that this
   version is still under development and might have known issues.
 
-* If you change the version and have problems with your builds, you can revert the pipeline change from the **History** tab. 
+* If you change the version and have problems with your builds, you can revert the pipeline change from the **History** tab.
   The ability to restore to an older version of a release pipeline is not currently available. You must manually revert the changes to the release pipeline, then save the pipeline.
 
 * Consider cloning the pipeline and testing the cloned pipeline with the new major task version.
@@ -78,7 +78,7 @@ when you want to temporarily take task out of the process for testing or for spe
 The timeout for this task in minutes. The default is zero (infinite timeout).
 Setting a value other than zero overrides the setting for the parent task phase.
 
-### VSTS options
+### Azure Pipelines options
 
 #### Continue on error (partially successful)
 
@@ -104,11 +104,11 @@ Select this option if you want subsequent tasks in the same phase to run even if
 
 Select this check box if you want the task to run even if the build or deployment is failing.
 
-<h2 id="tool-installers">Build tool installers (VSTS)</h2>
+<h2 id="tool-installers">Build tool installers (Azure Pipelines)</h2>
 
-> **VSTS preview feature**
+> **Azure Pipelines preview feature**
 >
-> To use this capability you must be working on VSTS and enable the **Task tool installers** [preview feature](../../project/navigation/preview-features.md).
+> To use this capability you must be working on Azure Pipelines and enable the **Task tool installers** [preview feature](../../project/navigation/preview-features.md).
 
 Tool installers enable your build process to install and control your dependencies. Specifically, you can:
 
@@ -116,7 +116,7 @@ Tool installers enable your build process to install and control your dependenci
 
 * Validate your app or library against multiple versions of a dependency such as Node.js.
 
-For example, you can set up your build process to run and validate your app for multiple versions of Node.js. 
+For example, you can set up your build process to run and validate your app for multiple versions of Node.js.
 
 ### Example: Test and validate your app on multiple versions of Node.js
 
@@ -129,7 +129,7 @@ For example, you can set up your build process to run and validate your app for 
 
 Add these tasks:
 
-![icon](../tasks/tool/_img/node.png) Tool: Node Installer
+![icon](../tasks/tool/_img/node.png) Tool: Node.js Installer
 
 * Version Spec: 
 
@@ -166,9 +166,9 @@ On the [Variables tab](../build/variables.md) define this variable:
 
 On the [Options tab](../build/options.md):
 
-0. Enable **Multi-configuration**.
+1. Enable **Multi-configuration**.
 
-0. Specify **Multipliers**:
+2. Specify **Multipliers**:
 
  ```
 NodeVersionSpec
@@ -178,7 +178,7 @@ NodeVersionSpec
 
 #### Save & queue
 
-Click **Save & queue**. Observe how two builds are run. The [Node Tool Installer](../tasks/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../tasks/utility/command-line.md) task logs the location of the Node.js version on disk.
+Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Installer](../tasks/tool/node-js.md) downloads each of the Node.js versions if they are not already on the agent. The [Command Line](../tasks/utility/command-line.md) task logs the location of the Node.js version on disk.
 
 ### Tool installer tasks
 

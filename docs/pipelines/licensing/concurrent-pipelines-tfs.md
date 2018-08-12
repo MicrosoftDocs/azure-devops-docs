@@ -1,6 +1,6 @@
 ---
 title: Concurrent jobs in Team Foundation Server
-description: Learn about the Release Management concurrent jobs pricing and availability in Microsoft Team Foundation Server (TFS)
+description: Learn about the Release Management concurrent jobs pricing and availability in Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
 ms.prod: devops
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015 < vsts'
 
 # Concurrent release jobs in Team Foundation Server
 
-**[VSTS](concurrent-jobs-vsts.md) | TFS 2018 | TFS 2017**
+**[Azure Pipelines](concurrent-jobs-vsts.md) | TFS 2018 | TFS 2017**
 
 This article describes the licensing model for Release Management in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).
 
@@ -89,7 +89,7 @@ After you've added these users, additional licenses will appear on the resource 
 
 ## Purchase additional concurrent jobs
 
-If you need to run more concurrent releases, you can [buy additional private jobs from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent jobs from Marketplace for a TFS instance at present, you must first buy concurrent jobs for a VSTS organization. After you buy the private jobs for a VSTS organization, you enter the number of purchased concurrent jobs manually on the resource limits page described below.
+If you need to run more concurrent releases, you can [buy additional private jobs from the Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines). Since there is no way to directly purchase concurrent jobs from Marketplace for a TFS instance at present, you must first buy concurrent jobs for an Azure DevOps organization. After you buy the private jobs for an Azure DevOps organization, you enter the number of purchased concurrent jobs manually on the resource limits page described below.
 
 ## View and manage concurrent jobs
 
@@ -119,6 +119,6 @@ No.
 
 In TFS 2015, so long as your users have a TFS CAL, they can use release management for no additional charge in trial mode. We called it "trial mode" to indicate that we would eventually charge for release management. Despite this label, we fully support release management in TFS 2015.
 
-### How is release management licensed in VSTS?
+### How is release management licensed in Azure Pipelines?
 
-See [concurrent jobs in VSTS](concurrent-jobs-vsts.md).
+See [concurrent jobs in Azure Pipelines](concurrent-jobs-vsts.md).

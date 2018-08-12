@@ -1,6 +1,6 @@
 ---
-title: Publish Code Coverage Results from a VSTS or TFS build
-description: Publish Cobertura or JaCoCo code coverage results from a VSTS or TFS build
+title: Publish Code Coverage Results from an Azure Pipelines or TFS build
+description: Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build
 ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
 ms.prod: devops
 ms.technology: devops-cicd
@@ -30,7 +30,7 @@ Publishes code coverage results that were produced by a build in [Cobertura](htt
 <tr><td>Summary file</td><td>(Required) Path of the summary file containing code coverage statistics, such as line, method, and class coverage. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura/coverage.xml`</td></tr>
 <tr><td>Report directory</td><td>(Optional) Path of the code coverage HTML report directory. The report directory is published for later viewing as an artifact of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/MyApp/**/site/cobertura`</td></tr>
 <tr><td>Additional files</td><td>(Optional) File path pattern specifying any additional code coverage files to be published as artifacts of the build. The value may contain minimatch patterns. For example: `$(System.DefaultWorkingDirectory)/**/*.exec`</td></tr>
-<tr><td>Fail when code coverage results are missing</td><td>(Optional) Available only on VSTS and TFS 2018 and later. Fail the task if code coverage did not produce any results to publish.</td></tr>
+<tr><td>Fail when code coverage results are missing</td><td>(Optional) Available only on Azure Pipelines and TFS 2018 and later. Fail the task if code coverage did not produce any results to publish.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 

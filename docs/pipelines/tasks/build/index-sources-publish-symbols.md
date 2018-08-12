@@ -1,6 +1,6 @@
 ---
 title: Index Sources & Publish Symbols build and release task
-description: Index Sources & Publish Symbols build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
 
 > [!NOTE]
-> A symbol server is available with Package Management in **VSTS** and works best with **Visual Studio 2017.4 and newer**.
+> A symbol server is available with Package Management in **Azure Artifacts** and works best with **Visual Studio 2017.4 and newer**.
 > **Team Foundation Server** users and users without the Package Management extension can publish symbols to a file share using this task.
 
 ![](_img/index-sources-publish-symbols.png) Index your source code and optionally publish symbols to the Package Management symbol server or a file share.
@@ -30,7 +30,7 @@ Symbol servers enables your debugger to automatically retrieve the correct symbo
 > [!NOTE]
 > This build task works only:
 > 
-> * For code in Git or TFVC stored in Team Foundation Server (TFS) or VSTS. It does not work for any other type of repository.
+> * For code in Git or TFVC stored in Team Foundation Server (TFS) or Azure Repos. It does not work for any other type of repository.
 
 ## Demands
 
@@ -77,7 +77,7 @@ None
     <tr>
         <td>Symbol server type</td>
         <td>
-            **Package Management in Visual Studio Team Services:**
+            **Package Management in Azure Artifacts:**
             <ul>
                 <li>Select this option to use the symbol server built into the [Package Management extension](https://marketplace.visualstudio.com/items?itemName=ms.feed).</li>
             </ul>
@@ -212,7 +212,7 @@ tf.exe git view /collection:http://SERVER:8080/tfs/DefaultCollection /teamprojec
 
 ### Can I use source indexing on a portable PDB created from a .NET Core assembly?
 
-No, source indexing is currently not enabled for Portable PDBs as SourceLink doesn't support authenticated source repositories. The workaround at the moment is to configure the build to generate full PDBs. Note that if you are generating a .NET Standard 2.0 assembly and are generating full PDBs and consuming them in a .NET Framework (full CLR) application then you will be able to fetch sources from VSTS (provided you have embedded SourceLink information and enabled it in your IDE).
+No, source indexing is currently not enabled for Portable PDBs as SourceLink doesn't support authenticated source repositories. The workaround at the moment is to configure the build to generate full PDBs. Note that if you are generating a .NET Standard 2.0 assembly and are generating full PDBs and consuming them in a .NET Framework (full CLR) application then you will be able to fetch sources from Azure Repos (provided you have embedded SourceLink information and enabled it in your IDE).
 
 ### Where can I learn more about symbol stores and debugging?
 
@@ -232,6 +232,6 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 ### How long are Symbols retained?
 
-When symbols are published to VSTS they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinately.
+When symbols are published to Azure Pipelines they are associated with a build. When the build is deleted either manually or due to retention policy then the symbols are also deleted. If you want to retain the symbols indefinitely then you should mark the build as Retain Indefinately.
 
 <!-- ENDSECTION -->

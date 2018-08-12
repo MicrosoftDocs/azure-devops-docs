@@ -1,6 +1,6 @@
 ---
-title: CocoaPods | VSTS or Team Foundation Server (TFS)
-description: Learn all about how you can use CocoaPods packages when you are building code in VSTS or Team Foundation Server (TFS).
+title: CocoaPods | Azure Pipelines or Team Foundation Server (TFS)
+description: Learn all about how you can use CocoaPods packages when you are building code in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 
 ![icon](_img/cocoapods.png) Runs CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html)
 
-[CocoaPods](https://cocoapods.org/) is the dependency manager for Swift and Objective-C Cocoa projects. 
+[CocoaPods](https://cocoapods.org/) is the dependency manager for Swift and Objective-C Cocoa projects.
 
 ## Demands
 

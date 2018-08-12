@@ -1,6 +1,6 @@
 ---
 title: Publishing to NuGet feeds | Microsoft Docs
-description: Publishing NuGet packages to VSTS Package Management or other NuGet feeds
+description: Publishing NuGet packages to Azure Artifacts or other NuGet feeds
 services: vsts
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.prod: devops
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 
 You can publish NuGet packages from your build to NuGet feeds. You can publish these packages to 
 
-* The VSTS or TFS Package Management service
+* Azure Artifacts or the TFS Package Management service
 * Other NuGet services such as NuGet.org
 * Your internal NuGet repository
 
@@ -164,7 +164,7 @@ To publish NuGet packages created by your build, add the **NuGet** task and conf
 
 - **Command:** push
 - **Path to NuGet package(s) to publish:** Leave this set to `$(Build.ArtifactStagingDirectory)` unless you decided earlier to pack your packages in another location in the last task.
-- **Target feed location:** You can publish to a VSTS or TFS Package Management feed in this organization or collection, to NuGet.org, or to an internal NuGet repository.
+- **Target feed location:** You can publish to an Azure Artifacts or TFS Package Management feed in this organization or collection, to NuGet.org, or to an internal NuGet repository.
 - **Target feed:** Select the feed you want to publish to.
 
 ![Publish packages from team build](_img/nuget/publish-packages-from-team-build.png)
@@ -177,10 +177,10 @@ To publish to a external NuGet feed, you must first create a service connection 
 
 ## Publish symbols for your packages
 
-When you push packages to a Package Management feed, you can also [publish symbols](/vsts/pipelines/symbols/index). 
+When you push packages to a Package Management feed, you can also [publish symbols](/vsts/pipelines/symbols/index).
 
 ## Q&A
 
-### Where can I learn more about the VSTS and TFS Package Management service
+### Where can I learn more about Azure Artifacts and the TFS Package Management service
 
-[Package Management in VSTS and TFS](../../package/index.md)
+[Package Management in Azure Artifacts and TFS](../../package/index.md)

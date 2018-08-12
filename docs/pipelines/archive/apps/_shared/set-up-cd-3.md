@@ -2,13 +2,13 @@
 ms.topic: include
 ---
 
-Select the artifact trigger and make sure the **Continuous deployment trigger** is enabled. 
+Select the artifact trigger and make sure the **Continuous deployment trigger** is enabled.
 
-![build artifact trigger in release definition](_img/build-artifact-trigger-in-release-definition.png)
+![build artifact trigger in release pipeline](_img/build-artifact-trigger-in-release-definition.png)
 
-Click **Save**. In the Save dialog box, click **OK**. 
+Click **Save**. In the Save dialog box, click **OK**.
 
-To test the release definition, click **Release** and then **Create Release**.
+To test the release pipeline, click **Release** and then **Create Release**.
 
 ![create release](../../../apps/cd/azure/_shared/_img/create-release.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Variables in Release Management
-description: Understand variables in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Understand variables in Microsoft Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.prod: devops
 ms.technology: devops-cicd
@@ -100,8 +100,8 @@ Some of the most significant variables are described in the following tables.
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|--------------|
-> | System.TeamFoundationServerUri | The URL of the Release Management service connection in TFS or VSTS. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
-> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or VSTS. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
+> | System.TeamFoundationServerUri | The URL of the Release Management service connection in TFS or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
+> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
 > | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
 > | System.TeamProject | The name of the project to which this build or release belongs. | Fabrikam | |
 > | System.TeamProjectId | The ID of the project to which this build or release belongs. | 79f5c12e-3337-4151-be41-a268d2c73344 | TFS 2015 |
@@ -195,7 +195,7 @@ Some of the most significant variables are described in the following tables.
 For each artifact that is referenced in a release, you can use the following artifact variables.
 Not all variables are meaningful for each artifact type. The table below lists the default artifact
 variables and provides examples of the values that they have depending on the artifact type. If an example is empty,
-it implies that the variable is not populated for that artifact type. 
+it implies that the variable is not populated for that artifact type.
 
 > [!div class="mx-tdBreakAll"]
 > | Variable name | Description | Team Build example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|

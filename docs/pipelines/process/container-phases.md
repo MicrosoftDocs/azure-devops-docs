@@ -1,5 +1,5 @@
 ---
-title: Container Phases in VSTS and TFS
+title: Container Phases in Azure Pipelines and TFS
 description: Run pipeline phases inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.prod: devops
@@ -24,7 +24,7 @@ Over time, you may find that you want more control over the environment where yo
 
 Containers offer a lightweight abstraction over the host operating system.
 You can select the exact versions of operating systems, tools, and dependencies that your build requires.
-When you specify a container in your pipeline definition, the agent will first
+When you specify a container in your pipeline, the agent will first
 fetch and start the container.
 Then, each step of the phase will run inside the container.
 
@@ -49,7 +49,7 @@ steps:
 
 This tells the system to fetch the `ubuntu` image tagged `16.04` from
 [Docker Hub](https://hub.docker.com) and then start the container. When the
-`printenv` command runs, it will happen inside the `ubuntu:16.04` container. 
+`printenv` command runs, it will happen inside the `ubuntu:16.04` container.
 
 > [!Note]
 > Due to a bug, you must currently specify "Hosted Ubuntu 1604" as the
@@ -58,7 +58,7 @@ This tells the system to fetch the `ubuntu` image tagged `16.04` from
 
 ## Multiple phases
 
-Containers are also useful for running the same steps in [multiple phases](multiple-phases.md). 
+Containers are also useful for running the same steps in [multiple phases](multiple-phases.md).
 In the following example, the same steps run in multiple versions of Ubuntu Linux.
 
 ```yaml

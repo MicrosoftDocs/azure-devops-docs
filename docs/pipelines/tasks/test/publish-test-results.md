@@ -1,5 +1,5 @@
 ---
-title: VSTS and TFS Build and Test - Publish Test Results task
+title: Azure Pipelines and TFS Build and Test - Publish Test Results task
 description: Publish Test Results to integrate cloud-based load tests into your build and release pipelines 
 ms.assetid: 6D7152C7-2CC7-4CB3-8002-2498650A2509
 ms.prod: devops
@@ -21,14 +21,14 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 ![icon](_img/publish-test-results-icon.png)
-Publishes the test results to TFS or VSTS when tests are run
+Publishes the test results to TFS or Azure Pipelines when tests are run
 using a runner of your choice.
 
 The task supports popular test result formats
 including [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd),
 [NUnit 2](http://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format),
 Visual Studio Test (TRX), and
-[xUnit 2](https://xunit.github.io/docs/format-xml-v2.html). 
+[xUnit 2](https://xunit.github.io/docs/format-xml-v2.html).
 If you use the built-in tasks such as
 [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
 to run tests, results are automatically published and you do not need a separate publish test results task.  

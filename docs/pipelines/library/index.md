@@ -1,6 +1,6 @@
 ---
-title: Library for VSTS and Team Foundation Server
-description: Understand the library in Microsoft Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Library for Azure Pipelines and Team Foundation Server
+description: Understand the library in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 45C5042C-9E31-41F8-B63B-6D5C241EEC21
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Library
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure Pipelines | TFS 2018 | TFS 2017**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -22,12 +22,12 @@ monikerRange: '>= tfs-2017'
 
 *Library* is a collection of _shared_ build and release assets for a project.
 Assets defined in a library can be used in multiple build and release pipelines of the project.
-The **Library** tab can be accessed directly in the **Build &amp; Release** hub in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).
+The **Library** tab can be accessed directly in the **Pipelines** hub in Azure Pipelines and Team Foundation Server (TFS).
 
 At present, the library contains two types of assets: [variable groups](variable-groups.md) and [secure files](secure-files.md).
 
-> Variable groups are available to only release pipelines in VSTS and TFS 2017 and newer at present.
-Task groups and service connections are available to build and release pipelines in TFS 2015 and newer, and VSTS.
+> Variable groups are available to only release pipelines in Azure Pipelines and TFS 2017 and newer at present.
+Task groups and service connections are available to build and release pipelines in TFS 2015 and newer, and Azure Pipelines.
 
 <h2 id="security">Library Security</h2>
 

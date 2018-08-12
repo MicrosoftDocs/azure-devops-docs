@@ -1,5 +1,5 @@
 ---
-title: Deploy your ASP.NET Core app to a Windows VM | VSTS Quickstart
+title: Deploy your ASP.NET Core app to a Windows VM | Azure Pipelines Quickstart
 description: Set up a CI build for your ASP.NET Core app, and then a CD release an to Azure Windows VM
 ms.prod: devops
 ms.technology: devops-cicd
@@ -21,9 +21,9 @@ monikerRange: 'vsts'
 
 # Deploy your ASP.NET Core app to a Windows virtual machine
 
-Visual Studio Team Services (VSTS) provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to a Windows virtual machine (VM) in Azure.
+Azure Pipelines provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to a Windows virtual machine (VM) in Azure.
 
-You'll use the VSTS portal to set up CI/CD. Your CI process runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD process automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
+You'll use the Azure Pipelines portal to set up CI/CD. Your CI process runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD process automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
 
 ![A typical release pipeline for web applications](_shared/_img/vscode-git-ci-cd-to-azure.png)
 
@@ -42,7 +42,7 @@ Your code changes automatically appear on your site:
 
 [!INCLUDE [create-deployment-group](../../../apps/_shared/create-deployment-group.md)]
 
-## Import code for sample app into VSTS
+## Import code for a sample app into Azure Repos
 
 [!INCLUDE [import-code-aspnet-core-vsts](../../../apps/aspnet/_shared/import-code-aspnet-core-vsts.md)]
 
@@ -60,7 +60,7 @@ Your code changes automatically appear on your site:
 
  ![Screenshot showing button to set up build for a repository](../../../apps/_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build and Release** hub in VSTS and asked to **Choose a template**.
+ You are taken to the **Pipelines** hub in Azure Pipelines and asked to **Choose a template**.
 
 1. In the right panel, click **ASP.NET Core**, and then click **Apply**.
 

@@ -1,6 +1,6 @@
 ---
-title: Run unit tests with your builds in VSTS and TFS - test automation tools
-description: Get started with continuous testing. Run unit tests with your builds for continuous integration in VSTS and Team Foundation Server TFS 
+title: Run unit tests with your builds in Azure Pipelines and TFS - test automation tools
+description: Get started with continuous testing. Run unit tests with your builds for continuous integration in Azure Pipelines and Team Foundation Server TFS 
 ms.assetid: a4a33a7d-fb75-46e0-b74d-91623ae5187e
 ms.prod: devops
 ms.technology: devops-cicd
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 Make sure that your app still works after every
-check-in and build using Visual Studio Team Services (VSTS) or Team Foundation Server (TFS) by using test automation. 
+check-in and build using Azure Pipelines or Team Foundation Server (TFS) by using test automation.
 Find problems earlier by running tests 
 automatically with each build. When your build is 
 done, review your test results to start resolving 
@@ -29,7 +29,7 @@ the problems that you find.
 
 This example shows how to run unit tests with your build
 for .NET and ASP.NET apps. It uses the
-[Visual Studio Test](test-with-unified-agent-and-phases.md) task. 
+[Visual Studio Test](test-with-unified-agent-and-phases.md) task.
 
 > Typically you will run unit tests in your build workflow,
 and functional tests in your release workflow after your
@@ -40,16 +40,16 @@ Code coverage is available only in the build workflow.
 ## Before you start
 
 * [Check in your solution](../../repos/git/overview.md) 
-  to VSTS. Include your test projects.
+  to Azure Pipelines. Include your test projects.
 
 <a name="createbuild"></a>
 ## Create a build pipeline
 
-Your build pipeline must include a test task that runs unit tests. 
-For example, if you're building a Visual Studio solution in VSTS,
+Your build pipeline must include a test task that runs unit tests.
+For example, if you're building a Visual Studio solution in Azure Pipelines,
 your build pipeline should include a **Visual Studio Test** task. After your 
 build starts, this task automatically runs all the unit tests in your 
-solution - on the same build machine. 
+solution - on the same build machine.
 
 1. If your build pipeline does not contain a test task, add one to it.
 

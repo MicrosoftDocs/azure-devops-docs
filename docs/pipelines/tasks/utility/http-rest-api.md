@@ -1,6 +1,6 @@
 ---
-title: Invoke HTTP REST API task for Microsoft VSTS and TFS 
-description: Build and release task to invoke an HTTP API and parse the response with a build or release pipeline in VSTS and TFS
+title: Invoke HTTP REST API task for Azure Pipelines and TFS 
+description: Build and release task to invoke an HTTP API and parse the response with a build or release pipeline in Azure Pipelines and TFS
 ms.assetid: 3F5394FC-37A9-4381-8F49-4F39369E1BDD
 ms.prod: devops
 ms.technology: devops-cicd
@@ -52,7 +52,7 @@ Succeeds if the API returns success and the response body parsing is successful,
 
 The **Invoke REST API task** does not perform deployment actions directly.
 Instead, it allows you to invoke any generic HTTP REST API as part of the automated
-pipeline and, optionally, wait for it to be completed. 
+pipeline and, optionally, wait for it to be completed.
 
 ![Configuring an Invoke REST API task](_img/invoke-rest-api-task.png)
 

@@ -1,8 +1,8 @@
 ---
-title: Build and release permissions | VSTS or Team Foundation Server
-titleSuffix: VSTS & TFS
+title: Build and release permissions | Azure Pipelines or Team Foundation Server
+titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
-description: Understand how permissions and roles are used to securely manage build and release operations in VSTS and Team Foundation Server (TFS).
+description: Understand how permissions and roles are used to securely manage build and release operations in Azure Pipelines and Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: A7C38A15-C9FE-4353-8680-21BAC0F6C873
@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2015'
 
 # Build and release permissions and roles (Security)
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-To support security of your build and release operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from the **Build and Release** hub of the web portal, either from the user or admin context. 
+To support security of your build and release operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You manage security for the following objects from the **Pipelines** hub of the web portal, either from the user or admin context.
 
 This topic provides a description of the permissions and roles used to secure operations. To learn how to set permissions or add a user or group to a role, see [Set build and release permissions](set-permissions.md).
 
@@ -150,11 +150,11 @@ are denied all permissions except **View release pipeline** and
 **View releases**.
 
 ## Task group permissions
-Task group permissions follow a hierarchical model. 
+Task group permissions follow a hierarchical model.
 Defaults for all the permissions can be set at the project
 level and can be overridden on an individual task group pipeline.
 
-You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of the **Build and Release** hub.
+You use task groups to encapsulate a sequence of tasks already defined in a build or a release pipeline into a single reusable task. You [define and manage task groups](../library/task-groups.md) in the **Task groups** tab of the **Pipelines** hub.
 
 > [!div class="mx-tdCol2BreakAll"]
 > | Permission | Description | 
@@ -166,7 +166,7 @@ You use task groups to encapsulate a sequence of tasks already defined in a buil
 
 ## Library roles and permissions
 
-Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release pipelines. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab of the **Build and Release** hub.
+Permissions for library artifacts, such as variable groups and secure files, are managed by roles. You use a variable group to store values that you want to make available across multiple build and release pipelines. You [define and manage variable groups](../library/variable-groups.md) and [secure files](../library/secure-files.md) in the **Library** tab of the **Pipelines** hub.
 
 [!INCLUDE [temp](../../organizations/security/_shared/library-roles.md)]
 

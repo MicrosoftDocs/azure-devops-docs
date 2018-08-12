@@ -1,6 +1,6 @@
 ---
-title: Command line | VSTS or Team Foundation Server
-description: Learn all about how you can execute tools from a command prompt when building code in VSTS and Team Foundation Server (TFS).
+title: Command line | Azure Pipelines or Team Foundation Server
+description: Learn all about how you can execute tools from a command prompt when building code in Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

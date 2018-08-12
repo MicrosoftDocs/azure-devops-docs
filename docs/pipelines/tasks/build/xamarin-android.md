@@ -1,6 +1,6 @@
 ---
 title: Xamarin.Android build and release task
-description: Xamarin.Android build and release task for Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Xamarin.Android build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd

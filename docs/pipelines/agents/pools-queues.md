@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
-title: Agents, pools, and queues | VSTS or Team Foundation Server
+title: Agents, pools, and queues | Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
-description: Learn about organizing agents into agent pools and queues for build and release management in VSTS and Team Foundation Server
+description: Learn about organizing agents into agent pools for build and release management in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: BD5478A8-48CF-4859-A0CB-6E1948CE2C89
 ms.manager: douge
@@ -19,15 +19,15 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across project collections and projects. In VSTS, agent pools are scoped to the VSTS organization; so you can share an agent pool across projects.
+Instead of managing each [agent](agents.md) individually, you organize agents into **agent pools**. An agent pool defines the sharing boundary for all agents in that pool. In TFS, pools are scoped across all of your Team Foundation Server (TFS); so you can share an agent pool across project collections and projects. In Azure Pipelines, agent pools are scoped to the Azure DevOps organization; so you can share an agent pool across projects.
 
-An **agent queue** provides access to an agent pool. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer and in VSTS, so you can only use them across build and release pipelines within a project.
+An **agent queue** provides access to an agent pool. When you create a build or release pipeline, you specify which queue it uses. Queues are scoped to your project in TFS 2017 and newer and in Azure Pipelines, so you can only use them across build and release pipelines within a project.
 
 To share an agent pool with multiple projects, you create an agent queue pointing to that pool in each of those projects. While multiple queues across projects can use the same agent pool, multiple queues within a project cannot use the same pool. Also, each queue can use only one agent pool.
 
 ::: moniker range=">= tfs-2017"
 
-#### VSTS and TFS 2017 and newer
+#### Azure Pipelines and TFS 2017 and newer
 
 ![TFS 2017 and newer build system architecture](_img/build-system-architecture.png)
 
@@ -59,16 +59,16 @@ We provide the following agent pools by default:
 
 ::: moniker range="vsts"
 
-* **Hosted** pool (VSTS only): Contains at least one free Microsoft-hosted agent, and also any [Microsoft-hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of Microsoft-hosted agents. Machines in this pool have Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, and Visual Studio 2015 installed on Windows Server 2012 R2 operating system. For a complete list of software installed on Microsoft-hosted agents, see [Microsoft-hosted agents](hosted.md).
+* **Hosted** pool (Azure Pipelines only): Contains at least one free Microsoft-hosted agent, and also any [Microsoft-hosted agents you've purchased](../licensing/concurrent-pipelines-tfs.md). The **Hosted** pool is the built-in pool that is a collection of Microsoft-hosted agents. Machines in this pool have Visual Studio 2010, Visual Studio 2012, Visual Studio 2013, and Visual Studio 2015 installed on Windows Server 2012 R2 operating system. For a complete list of software installed on Microsoft-hosted agents, see [Microsoft-hosted agents](hosted.md).
 
-* **Hosted VS2017** pool (VSTS only): The **Hosted VS2017** pool is another built-in pool in VSTS. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
+* **Hosted VS2017** pool (Azure Pipelines only): The **Hosted VS2017** pool is another built-in pool in Azure Pipelines. Machines in this pool have Visual Studio 2017 installed on Windows Server 2016 operating system. For a complete list of software installed on these machines, see [Microsoft-hosted agents](hosted.md).
 
-* **Hosted Linux** pool (VSTS only): Enables you to build and release on
+* **Hosted Linux** pool (Azure Pipelines only): Enables you to build and release on
   Linux machines without having to configure a self-hosted agent. The agents
   in this pool run on an Ubuntu Linux host inside the
   [**vsts-agent-docker** container](https://github.com/Microsoft/vsts-agent-docker).
 
-* **Hosted macOS** pool (VSTS only): Enables you to build and release on
+* **Hosted macOS** pool (Azure Pipelines only): Enables you to build and release on
   macOS without having to configure a self-hosted agent. This option affects where your data is stored. [Learn more](https://www.microsoft.com/en-us/trustcenter/privacy/vsts-location)
 
 Each of these hosted pools is exposed to each project through a corresponding hosted queue. By default, all contributors in a project are members of the **User** role on each hosted queue. This allows every contributor in a project to author and run build and release pipelines using Microsoft-hosted queues.
@@ -93,9 +93,9 @@ Understanding how security works for agent pools and queues helps you control sh
 
 ::: moniker range=">= tfs-2017"
 
-### VSTS and TFS 2017 and newer
+### Azure Pipelines and TFS 2017 and newer
 
-In VSTS and TFS 2017 and newer, **roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
+In Azure Pipelines and TFS 2017 and newer, **roles** are defined on each agent pool, and **membership** in these roles governs what operations you can perform on an agent pool.
 
 | Role on an agent pool | Purpose |
 |------|---------|
@@ -141,7 +141,7 @@ On the Create Queue dialog box, you can't use an existing pool if it is already 
 
 ### I can't select the Hosted queue and I can't queue my build. How do I fix this?
 
-Ask the owner of your VSTS organization to grant you permission to use the queue. See [Security of agent pools and queues](#security).
+Ask the owner of your Azure DevOps organization to grant you permission to use the queue. See [Security of agent pools and queues](#security).
 
 ::: moniker-end
 
@@ -149,9 +149,9 @@ Ask the owner of your VSTS organization to grant you permission to use the queue
 
 ### I need more hosted build resources. What can I do?
 
-A: The hosted pool provides all VSTS organizations with a single hosted build agent and a limited number of free build minutes each month. If you need more hosted build resources, or need to run more than one build concurrently, then you can either:
+A: The Microsoft-hosted pools provide all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more hosted build resources, or need to run more than one build concurrently, then you can either:
 
 * [Deploy your own on-premises build agents](agents.md).
-* [Buy additional hosted pipelines](../../organizations/billing/buy-more-build-vs.md#buy-build-release).
+* [Buy additional concurrent jobs](../../organizations/billing/buy-more-build-vs.md#buy-build-release).
 
 ::: moniker-end

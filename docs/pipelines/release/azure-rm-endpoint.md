@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting Azure Resource Manager service connections in VSTS and TFS
-description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in VSTS and Team Foundation Server (TFS)
+title: Troubleshooting Azure Resource Manager service connections in Azure Pipelines and TFS
+description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Troubleshoot Azure Resource Manager service connections
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -72,7 +72,7 @@ to the user, is to increase the Guest user permissions as follows:
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
    The account should be an [owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner),
    [global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
-   [user account administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator). 
+   [user account administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator).
 
 1. Choose **Azure Active Directory** in the left navigation bar.
 
@@ -90,7 +90,7 @@ you can make the user a member of the **Global administrator** role as follows:
 1. Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com) using an administrator account.
    The account should be an [owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner),
    [global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#global-administrator), or
-   [user account administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator). 
+   [user account administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal#user-account-administrator).
 
 1. Choose **Azure Active Directory** in the left navigation bar.
 
@@ -132,7 +132,7 @@ These errors typically occur when your session has expired.
 
 To resolve these issues:
 
-* Sign out of VSTS or TFS.
+* Sign out of Azure Pipelines or TFS.
 * Open an InPrivate or incognito browser window and navigate to [https://visualstudio.microsoft.com/team-services/](https://visualstudio.microsoft.com/team-services/).
 * If you are prompted to sign out, do so.
 * Sign in using the appropriate credentials.

@@ -1,6 +1,6 @@
 ---
 title: Control deployments with approvals in Release Management
-description: Understand release approvals in Release Management for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+description: Understand release approvals in Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 3725541F-FC36-42E2-8153-21D2F9CA755B
 ms.prod: devops
 ms.technology: devops-cicd
@@ -29,7 +29,7 @@ You can enable manual deployment approvals for each environment in a release pip
 ## Define a deployment approval
 
 1. Decide if you need pre-deployment approvers, post-deployment approvers, or both
-   for an environment. Then open the appropriate conditions panel(s). 
+   for an environment. Then open the appropriate conditions panel(s).
 
    For a **pre-deployment** approval, choose the icon at the entry point of the environment
    and enable pre-deployment approvers.
@@ -42,14 +42,14 @@ You can enable manual deployment approvals for each environment in a release pip
    ![Post-deployment approvals settings](_img/environments-01a.png)
 
 1. Select one or more **Approvers** for the approval step. You can add multiple approvers for both pre-deployment
-   and post-deployment settings. These approvers can be individual users or groups of users. 
+   and post-deployment settings. These approvers can be individual users or groups of users.
    When a group is specified as an approver, only one of the users in that group needs to approve
    for the deployment to occur or the release to move forward.
 
-   * If you are using **Visual Studio Team Services** (VSTS), you
-     can use local groups managed in VSTS or
+   * If you are using **Azure Pipelines**, you
+     can use local groups managed in Azure Pipelines or
      Azure Active Directory (AAD) groups if they have been
-     added into VSTS.
+     added into Azure Pipelines.
    * If you are using **Team Foundation Server** (TFS),
      you can use local groups managed in TFS or Active
      Directory (AD) groups if they have been added into TFS.
@@ -57,16 +57,16 @@ You can enable manual deployment approvals for each environment in a release pip
    The creator of a deployment is considered to be a separate user
    role for deployments. For more details,
    see [Release permissions](../../policies/permissions.md#release-permissions).
-   Either the release creator or the deployment creator can be restricted from approving deployments. 
+   Either the release creator or the deployment creator can be restricted from approving deployments.
 
-1. Specify the **Timeout** for the approval. If no approval is granted within the timeout period you
+2. Specify the **Timeout** for the approval. If no approval is granted within the timeout period you
    specify, the deployment is rejected.
 
-1. Specify the **Approval policies** you require:
+3. Specify the **Approval policies** you require:
 
    * You can specify that the user who requested (initiated or created) the release cannot approve it.
-     If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments. 
-   * You can force a revalidation of the user identity to take into account recently changed permissions. 
+     If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
+   * You can force a revalidation of the user identity to take into account recently changed permissions.
    * You can reduce user workload by automatically approving subsequent prompts if the specified
      user has already approved the deployment to a previous environment in the pipeline
      (applies to pre-deployment approvals only). Take care when using this option; for example, you may

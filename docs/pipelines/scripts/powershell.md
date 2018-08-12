@@ -1,6 +1,6 @@
 ---
 title: Use a PowerShell script to customize your build process
-description: Learn how you can use a script to customize the build process in your workflow by using Team Foundation Server (TFS) or VSTS.
+description: Learn how you can use a script to customize the build process in your workflow by using Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Use a PowerShell script to customize your build process
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -44,7 +44,7 @@ For example, to version to your assemblies, copy and upload this script to your 
 ##-----------------------------------------------------------------------
 ## <copyright file="ApplyVersionToAssemblies.ps1">(c) Microsoft Corporation. This source is subject to the Microsoft Permissive License. See http://www.microsoft.com/resources/sharedsource/licensingbasics/sharedsourcelicenses.mspx. All other rights reserved.</copyright>
 ##-----------------------------------------------------------------------
-# Look for a 0.0.0.0 pattern in the build number. 
+# Look for a 0.0.0.0 pattern in the build number.
 # If found use it to version the assemblies.
 #
 # For example, if the 'Build number format' build process parameter 
@@ -151,7 +151,7 @@ $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 To enable your script to use the build process OAuth token, go to the **Options** tab of the build pipeline and select **Allow Scripts to Access OAuth Token**.
 
-After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [VSTS REST API](../../integrate/index.md). For example:
+After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
 
 ```ps
 $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build-release/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"

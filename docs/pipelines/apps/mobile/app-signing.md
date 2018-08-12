@@ -1,6 +1,6 @@
 ---
-title: Sign Your Mobile App During CI | VSTS or Team Foundation Server
-description: How to sign your mobile app during CI with VSTS or Team Foundation Server
+title: Sign Your Mobile App During CI | Azure Pipelines or Team Foundation Server
+description: How to sign your mobile app during CI with Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Sign your mobile app
 
-**VSTS | TFS 2018 | [TFS 2017.2](secure-certs.md)**
+**Azure Pipelines | TFS 2018 | [TFS 2017.2](secure-certs.md)**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]

@@ -9,7 +9,7 @@ ms.topic: include
 <p>(If you don't see your project listed on the home page, select **Browse**.)</p>
 <ul>
 <li>On-premises TFS: ```http://{your_server}:8080/tfs/DefaultCollection/{your_team_project}``` </li>
-<li>VSTS: ```https://{your_organization}.visualstudio.com/DefaultCollection/{your_team_project}```</li>
+<li>Azure Pipelines: ```https://{your_organization}.visualstudio.com/DefaultCollection/{your_team_project}```</li>
 </ul>
 <p>[The TFS URL doesn't work for me. How can I get the correct URL?](../../organizations/security/websitesettings.md)</p>
 </div>

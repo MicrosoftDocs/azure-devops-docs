@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range=">= tfs-2018"
 
-This task is deprecated in VSTS and TFS 2018 and later. Use version 2.x or higher of the [Visual Studio Test](vstest.md)
+This task is deprecated in Azure Pipelines and TFS 2018 and later. Use version 2.x or higher of the [Visual Studio Test](vstest.md)
 task together with [phases](../../process/phases.md) to run unit and functional tests on the universal agent.
 
 For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
@@ -83,13 +83,13 @@ Use this task for:
 The supported options for these scenarios are:
 
 * **TFS**
-  - On-premises and VSTS<p />
+  - On-premises and Azure Pipelines<p />
 * **Build and release agents**
   - Hosted and on-premises agents are supported.
-  - The agent must be able to communicate with all test machines. 
-    If the test machines are on-premises behind a firewall, a VSTS Microsoft-hosted agent
+  - The agent must be able to communicate with all test machines.
+    If the test machines are on-premises behind a firewall, an Azure Pipelines Microsoft-hosted agent
     cannot be used because it will not be able to communicate with the test machines.
-  - The agent must have Internet access to download test agents. 
+  - The agent must have Internet access to download test agents.
     If this is not the case, the test agent must be manually 
     downloaded, uploaded to a network location accessible to
     the agent, and the **Test Agent Location** parameter used 

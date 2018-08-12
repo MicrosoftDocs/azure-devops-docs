@@ -1,6 +1,6 @@
 ---
-title: NuGet Publisher Version 0.* | VSTS or Team Foundation Server
-description: Learn all about how you can publish NuGet packages when building code in Visual Studio Team Services and Team Foundation Server
+title: NuGet Publisher Version 0.* | Azure Pipelines or Team Foundation Server
+description: Learn all about how you can publish NuGet packages when building code in Azure Pipelines and Team Foundation Server
 ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E592A505-C253-4190-86D2-E4F679F5FCBE
@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 # Package: NuGet Publisher version 0.*
 
-**VSTS (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
+**Azure Pipelines (deprecated) | TFS 2017 Update 2 and below (deprecated in TFS 2018)**
 
 ![](../_img/nuget-publisher.png) Publish your NuGet package to a server and update your feed.
 
@@ -52,7 +52,7 @@ None
 <ul>
 <li>**External NuGetFeed** publishes to an external server such as [NuGet](https://www.nuget.org/) or [MyGet](http://www.myget.org/). After you select this option, you create and select a **NuGet server endpoint**.
 </li>
-<li>**Internal NuGet Feed** publishes to an internal or  Visual Studio Team Services feed. After you select this option, you specify the **internal feed URL**.
+<li>**Internal NuGet Feed** publishes to an internal or Azure Artifacts feed. After you select this option, you specify the **internal feed URL**.
 </li>
 </ul>
 </td>

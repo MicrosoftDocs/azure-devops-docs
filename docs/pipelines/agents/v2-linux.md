@@ -1,6 +1,6 @@
 ---
 title: Deploy a build and release agent on Linux
-description: Learn how you can easily deploy a private build and release agent on Linux for VSTS and Team Foundation Server (TFS).
+description: Learn how you can easily deploy a private build and release agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 To build or deploy you'll need at least one agent. A Linux agent can build and deploy different kinds of apps, including Java and Android apps. We support Ubuntu, Red Hat, and CentOS.
 
 > Before you begin:
-> * If your build and release pipelines are in [VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
+> * If your build and release pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
 > *  Otherwise, you've come to the right place to set up an agent on Linux. Continue to the next section.
 
 [!INCLUDE [include](_shared/concepts.md)]
@@ -32,7 +32,7 @@ Where are your builds and releases running?
 
 ::: moniker range="vsts"
 
-**VSTS**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md).
+**Azure Pipelines**: The agent is based on CoreCLR 2.0. You can run this agent on several Linux distributions. Make sure your machine is prepared with [our prerequisites](https://github.com/Microsoft/vsts-agent/blob/master/docs/start/envlinux.md).
 
 ::: moniker-end
 
@@ -59,11 +59,11 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ::: moniker range=">= tfs-2017"
 
-### VSTS and TFS 2017 and newer
+### Azure Pipelines and TFS 2017 and newer
 
 <ol>
 <li>Log on to the machine using the account for which you've prepared permissions as explained above.</li>
-<li>In your web browser, sign on to VSTS or TFS, and navigate to the **Agent pools** tab:
+<li>In your web browser, sign in to Azure Pipelines or TFS, and navigate to the **Agent pools** tab:
 [!INCLUDE [include](_shared/agent-pools-tab.md)]
 </li>
 
@@ -97,7 +97,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ::: moniker range="vsts"
 
-VSTS: `https://{your-organization}.visualstudio.com`
+Azure Pipelines: `https://{your-organization}.visualstudio.com`
 
 ::: moniker-end
 
@@ -234,7 +234,7 @@ A systemd service file is created:
 
 For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file will be either:
 
-* VSTS: the name of your organization. For example if you connect to `https://fabrikam.visualstudio.com` , then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
+* Azure Pipelines: the name of your organization. For example if you connect to `https://fabrikam.visualstudio.com`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
 
 * TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
 

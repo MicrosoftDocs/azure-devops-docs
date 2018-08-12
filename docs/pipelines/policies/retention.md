@@ -2,7 +2,7 @@
 ms.prod: devops
 title: Build and release retention policies
 ms.topic: conceptual
-description: Build and release retention policies in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.technology: devops-cicd
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
 ms.manager: douge
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Build and release retention policies
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
+**Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -43,13 +43,13 @@ if you are building from [Git repositories](#git-repositories).
 
 If you are using an on-premises Team Foundation Server, you can specify build retention policy defaults and maximums for a project collection. You can also specify when builds are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using VSTS, you can view but not change these settings for your organization.
+If you are using Azure Pipelines, you can view but not change these settings for your organization.
 
 Global build retention policy settings can be managed from the **Build and Release** settings of your organization or project collection:
 
 ::: moniker range="vsts"
 
-* VSTS: `https://{your_organization}.visualstudio.com/_admin/_buildQueue`
+* Azure Pipelines: `https://{your_organization}.visualstudio.com/_admin/_buildQueue`
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ The **build destruction policy** helps you keep the builds for a certain period 
 
 If your [repository type](../build/repository.md) is one of the following, you can define multiple retention policies with branch filters:
 
-* Git in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+* Git in Azure Repos or Team Foundation Server (TFS)
 * GitHub
 * External Git
 
@@ -135,7 +135,7 @@ The following information is deleted when a build is deleted:
 
 ### When are builds deleted
 
-#### VSTS
+#### Azure Pipelines
 
 Your retention policies are processed once per day. The timing of this process varies because we spread the work throughout the day for load balancing purposes. There is no option to change this process.
 
@@ -157,11 +157,11 @@ You can also customize these policies on an [environment-by-environment basis](#
 
 If you are using an on-premises Team Foundation Server, you can specify release retention policy defaults and maximums for a project. You can also specify when releases are permanently destroyed (removed from the **Deleted** tab in the build explorer).
 
-If you are using VSTS, you can view but not change these settings for your project.
+If you are using Azure Pipelines, you can view but not change these settings for your project.
 
 Global release retention policy settings can be managed from the **Release** settings of your project:
 
-* VSTS: `https://{your_organization}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+* Azure Pipelines: `https://{your_organization}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained
@@ -250,7 +250,7 @@ Test results published within an environment of a release are
 associated with both the release and the build. These test results
 are retained as specified by the retention policy configured for
 the build and for the test results. If you are not deploying Team
-Foundation or VSTS Build through Release Management, and are still
+Foundation or Azure Pipelines Build through Release Management, and are still
 publishing test results, the retention of these results is
 governed by the retention of the release they belong to.
 

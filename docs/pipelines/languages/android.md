@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Android
 
-**VSTS | TFS 2018 | TFS 2017.2**
+**Azure Pipelines | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2017'
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
 > 
-> This guidance applies to Visual Studio Team Services.
+> This guidance applies to Azure Pipelines.
 ::: moniker-end
 
 This guide explains creating pipelines for Android projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).

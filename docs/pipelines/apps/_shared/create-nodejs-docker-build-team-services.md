@@ -6,17 +6,17 @@ ms.topic: include
 
 1. Create a new build pipeline.
 
- # [VSTS or TFS repo](#tab/vsts)
+ # [Azure Repos or TFS repo](#tab/vsts)
 
  Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
  ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
- You are taken to the **Build and Release** hub and asked to **Select a template** for the new build pipeline.
+ You are taken to the **Pipelines** hub and asked to **Select a template** for the new build pipeline.
 
  # [GitHub repo](#tab/github)
 
- Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
+ Navigate to the **Builds** tab of the **Pipelines** hub in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
  ---
 
@@ -26,7 +26,7 @@ ms.topic: include
 
 1. Click **Get sources** and then:
 
-  # [VSTS or TFS repo](#tab/vsts)
+  # [Azure Repos or TFS repo](#tab/vsts)
 
   Observe that the new build pipeline is automatically linked to your repository.
 
@@ -38,7 +38,7 @@ ms.topic: include
 
 1. Select **+ Add Task** to add another task to the build pipeline. From the displayed task catalog, select **Docker** task. Change the parameters for this task as follows:
 
-   * **Azure subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. If you are using VSTS and if you see an **Authorize** button next to the input, click on it to authorize VSTS to connect to your Azure subscription. If you are using TFS or if you do not see
+   * **Azure subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription. If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
 
    * **Azure Container Registry:** Select the Azure container registry that you created above.

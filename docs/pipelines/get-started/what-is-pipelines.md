@@ -1,7 +1,7 @@
 ---
-title: What do you get with Azure DevOps Pipelines
+title: What do you get with Azure Pipelines
 titleSuffix: Azure DevOps Services
-description: What do you get with Azure DevOps Pipelines  
+description: What do you get with Azure Pipelines  
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 
@@ -11,8 +11,8 @@ ms.date: 06/22/2017
 ms.topic: overview
 ---
 
-# What is Azure DevOps Pipelines?
+# What is Azure Pipelines?
 
-**Azure DevOps Pipelines**
+**Azure Pipelines**
 
 To be completed

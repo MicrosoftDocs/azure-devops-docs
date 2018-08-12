@@ -10,4 +10,4 @@ You've just put your own CI process in place to automatically build and validate
 
 You can also modify this build pipeline to meet the needs of your team. To learn more see one of these topics:
 
-* [CI builds for Git in VSTS](../../build/ci-build-git.md)
+* [CI builds for Git in Azure Pipelines](../../build/ci-build-git.md)

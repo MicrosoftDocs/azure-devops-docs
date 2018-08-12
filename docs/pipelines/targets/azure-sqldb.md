@@ -1,6 +1,6 @@
 ---
 title: Azure SQL database deployment
-description: Deploy to an Azure SQL database from VSTS or TFS
+description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
 ms.prod: devops
 ms.technology: devops-cicd
@@ -77,7 +77,7 @@ Instead of using a DACPAC, you can also use SQL scripts to deploy your database.
   GO
 ```
 
-To run SQL scripts as part of a VSTS pipeline, you will need Azure Powershell scripts to create and remove firewall rules in Azure. Without the firewall rules, the VSTS agent cannot communicate with Azure SQL Database.
+To run SQL scripts as part of an Azure Pipelines pipeline, you will need Azure Powershell scripts to create and remove firewall rules in Azure. Without the firewall rules, the Azure Pipelines agent cannot communicate with Azure SQL Database.
 
 The following Powershell script creates firewall rules. You can check-in this script as `SetAzureFirewallRule.ps1` into your repository.
 
@@ -180,7 +180,7 @@ When you set up a build pipeline, make sure that the SQL script to deploy the da
 
 When you set up a release pipeline, choose **Start with an Empty process**, link the artifacts from build, and then use the following tasks:
 
-- First, use an [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the VSTS agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
+- First, use an [Azure Powershell](../tasks/deploy/azure-powershell.md) task to add a firewall rule in Azure to allow the Azure Pipelines agent to connect to Azure SQL Database. The script requires one argument - the name of the SQL server you created.
 - Second, use a [Command line](../tasks/utility/command-line.md) task to run the SQL script using the **SQLCMD** tool. The arguments to this tool are `-S {database-server-name}.database.windows.net -U {username}@{database-server-name} -P {password} -d {database-name} -i {SQL file}` For example, when the SQL script is coming from an artifact source, **{SQL file}** will be of the form: `$(System.DefaultWorkingDirectory)/contoso-repo/DatabaseExample.sql`.
 - Third, use another [Azure Powershell](../tasks/deploy/azure-powershell.md) task to remove the firewall rule in Azure.
 
@@ -188,11 +188,11 @@ When you set up a release pipeline, choose **Start with an Empty process**, link
 
 ## Azure service connection
 
-The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from VSTS or TFS to Azure. 
+The **Azure SQL Database Deployment** task is the primary mechanism to deploy a database to Azure. This task, as with other built-in Azure tasks, requires an Azure service connection as an input. The Azure service connection stores the credentials to connect from Azure Pipelines or TFS to Azure.
 
 ::: moniker range="vsts"
 
-The easiest way to get started with this task is to be signed in as a user that owns both the VSTS and the Azure subscriptions.
+The easiest way to get started with this task is to be signed in as a user that owns both the Azure DevOps organization and the Azure subscription.
 In this case, you won't have to manually create the service connection.
 Otherwise, to learn how to create an Azure service connection, see [Create an Azure service connection](../library/connect-to-azure.md).
 
@@ -206,7 +206,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ## Deploying conditionally
 
-You may choose to deploy only certain builds to your Azure database. 
+You may choose to deploy only certain builds to your Azure database.
 
 # [YAML](#tab/yaml)
 
@@ -231,7 +231,7 @@ The following example shows how to use step conditions to deploy only those buil
     DacpacFile: '<Location of Dacpac file in $(Build.SourcesDirectory) after compilation>'
 ```
 
-To learn more about conditions, see [Specify conditions](../process/conditions.md). 
+To learn more about conditions, see [Specify conditions](../process/conditions.md).
 
 ::: moniker-end
 

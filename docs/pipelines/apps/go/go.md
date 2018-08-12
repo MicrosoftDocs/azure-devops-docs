@@ -1,6 +1,6 @@
 ---
-title: Build your Go app  | VSTS or Team Foundation Server
-description: Learn how you can use the continuous integration (CI) process in VSTS or TFS to automatically build your Go application
+title: Build your Go app  | Azure Pipelines or Team Foundation Server
+description: Learn how you can use the continuous integration (CI) process in Azure Pipelines or TFS to automatically build your Go application
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: cd16d151-8786-4b65-82eb-95d152232f39
@@ -13,19 +13,19 @@ monikerRange: '>= tfs-2017'
 
 # Build your Go app
 
-**VSTS | TFS 2018 | TFS 2017.2**
+**Azure Pipelines | TFS 2018 | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Go application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a Go application.
+Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Go application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a Go application.
 
 ## Prerequisites
 
 [!INCLUDE [include](../../_shared/ci-cd-prerequisites-vsts.md)]
 
-* While the simplest way to try this quickstart is to use a VSTS organization, you can also use a TFS server instead of a VSTS organization. Make sure that you have [configured a build agent](../../agents/agents.md) for your project, and that you have Go installed on the agent machine.
+* While the simplest way to try this quickstart is to use an Azure DevOps organization, you can also use a TFS server instead of an Azure DevOps organization. Make sure that you have [configured a build agent](../../agents/agents.md) for your project, and that you have Go installed on the agent machine.
 
 ## Get sample app code
 
@@ -35,7 +35,7 @@ Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide a hi
 https://github.com/adventworks/go-sample
 ```
 
-# [VSTS or TFS repo](#tab/vsts)
+# [Azure Repos or TFS repo](#tab/vsts)
 
 [!INCLUDE [include](../_shared/get-sample-code-vsts-tfs-2017-update-2.md)]
 
@@ -53,17 +53,17 @@ https://github.com/adventworks/go-sample
 
 1. Create a new build pipeline.
 
-# [VSTS or TFS repo](#tab/vsts)
+# [Azure Repos or TFS repo](#tab/vsts)
 
 Navigate to the **Files** tab of the **Code** hub, and then click **Set up build**.
 
 ![Screenshot showing button to set up build for a repository](../_shared/_img/set-up-first-build-from-code-hub.png)
 
-You are taken to the **Build and Release** hub and asked to **Select a template** for the new build pipeline.
+You are taken to the **Pipelines** hub and asked to **Select a template** for the new build pipeline.
 
 ::: moniker range="> tfs-2018"
 
-  ### VSTS
+  ### Azure Pipelines
 
 1. In the right panel, search for `Go`, select **Go (Preview)**, and then click **Apply**.
 
@@ -71,7 +71,7 @@ You are taken to the **Build and Release** hub and asked to **Select a template*
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with Go installed.
+ * **Azure Pipelines:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with Go installed.
 
  * **TFS:** Select a queue that includes an agent with Go installed.
 
@@ -105,11 +105,11 @@ You are taken to the **Build and Release** hub and asked to **Select a template*
 
 # [GitHub repo](#tab/github)
 
-Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
+Navigate to the **Builds** tab of the **Pipelines** hub in Azure Pipelines or TFS, and then click **+ New**. You are asked to **Select a template** for the new build pipeline.
 
 ::: moniker range="> tfs-2018"
 
-  ### VSTS
+  ### Azure Pipelines
 
 1. In the right panel, search for `Go`, select **Go (Preview)**, and then click **Apply**.
 
@@ -117,7 +117,7 @@ Navigate to the **Builds** tab of the **Build and Release** hub in VSTS or TFS, 
 
 1. For the **Agent queue**:
 
- * **VSTS:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with Go installed.
+ * **Azure Pipelines:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with Go installed.
 
  * **TFS:** Select a queue that includes an agent with Go installed.
 

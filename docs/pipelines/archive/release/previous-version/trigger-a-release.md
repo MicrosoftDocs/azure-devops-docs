@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2013'
 Start a release automatically when you build your app using Team Foundation 
 Build (TFBuild). You can choose which stage of your release process to start 
 with. To trigger a release from a build, you must configure both your build 
-process and your release path. 
+process and your release path.
 
 **Note**: This procedure applies only to releases that use a deployment agent 
 and a Build template in TFS. For information about other release scenarios, 
@@ -70,7 +70,7 @@ Also, if you haven't yet set up your build system,
  
 1. If you haven't installed the Release Management client for Visual Studio 
    on the build server, 
-   **[do that now](install-release-management/install-server-and-client.md#installclient)**. 
+   **[do that now](install-release-management/install-server-and-client.md#installclient)**.
 
 1. Configure the Release Management client to connect to the Release 
    Management server.
@@ -224,7 +224,7 @@ package location at the time of deployment.
 <a name="token_files"></a>
 ### Q: How can I handle configuration files that need different values based on the target environment?
 
-**A**: Use tokenized configuration files. 
+**A**: Use tokenized configuration files.
 For each configuration file in your solution that requires different values 
 in different environments, create a tokenized version of that file.
 
