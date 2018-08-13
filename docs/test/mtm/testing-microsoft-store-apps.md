@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Testing Microsoft Store apps
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
-
 You have two options if you want to test Microsoft Store apps on a phone, tablet, or other device:  
   
 - Plan and perform your tests using the web portal, using a browser on the device or on another computer. When you use the web portal for testing, the test runner doesn't interact with the software that you're testing; it simply acts as a checklist of the test steps. Therefore, you don't have to run it on the device that you're testing.  

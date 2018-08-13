@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Connect Microsoft Test Manager to your project and test plan
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
-
 Use Microsoft Test Manager (MTM) to help you test the application you built. MTM stores your test plans and results on Team Foundation Server (TFS).  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
@@ -32,7 +30,7 @@ Use Microsoft Test Manager (MTM) to help you test the application you built. MTM
   
    ![Expand the server name and choose a project.](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect2.png) 
    
-   If you don't see your project, choose **Add server** and enter the URL of your VSTS or TFS server. 
+   If you don't see your project, choose **Add server** and enter the URL of your Azure DevOps or TFS server. 
   
 1. Create a new test plan, unless there's already a plan you want to use. Typically, you create a separate test plan for each sprint.  
   

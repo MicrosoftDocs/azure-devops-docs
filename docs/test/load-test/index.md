@@ -1,6 +1,6 @@
 ---
-title: Load Testing index and overview in VSTS and TFS
-description: Load Testing with Visual Studio and Visual Studio Team Services (VSTS)
+title: Load Testing index and overview in Azure DevOps and TFS
+description: Load Testing with Visual Studio and Azure DevOps
 ms.assetid: C5C81ACE-0BBA-4D32-9CC9-28CF5C5865A6
 ms.prod: devops
 ms.technology: devops-test
@@ -14,9 +14,7 @@ monikerRange: 'vsts'
 
 # Load Testing
 
-**Visual Studio 2017 | Visual Studio 2015 | VSTS | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**
-
-Load test your app with hundreds of thousands of users using Visual Studio Team Services (VSTS).
+Load test your app with hundreds of thousands of users using Azure DevOps.
 
 ## 5-Minute Quickstarts
 
@@ -24,7 +22,7 @@ Load test from your preferred UI, and compare the results.
 
 | | |
 | --- | --- |
-| ![icon](_img/visualstudio-icon.png)<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon](_img/vsts-icon.png)<br />[Load test with VSTS](get-started-simple-cloud-load-test.md) |
+| ![icon](_img/visualstudio-icon.png)<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon](_img/vsts-icon.png)<br />[Load test with Azure DevOps](get-started-simple-cloud-load-test.md) |
 | ![icon](_img/azure-icon.png)<br />[Load test with Azure portal](app-service-web-app-performance-test.md) | ![icon](_img/reviewresults-icon.png)<br />[View and compare results](performance-reports.md) |
 | | |
 
@@ -53,7 +51,7 @@ Learn how to run performance and load tests against your app.
 
 ## Troubleshooting
 
-* [VSTS connectivity](reference-qa.md#qaconnectts)
+* [Azure DevOps connectivity](reference-qa.md#qaconnectts)
 * [Visual Studio connectivity](reference-qa.md#troubleshooting)
 
 ## Reference

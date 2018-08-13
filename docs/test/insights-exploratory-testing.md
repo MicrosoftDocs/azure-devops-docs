@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Get insights across your exploratory testing sessions
  
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
-
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 
 
@@ -28,7 +26,7 @@ at team or individual level, and for a specific period.
  
      ![Opening the insights page from the extension](_img/insights-exploratory-testing/insights-exploratory-testing-01.png)
  
-   - From the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by opening the **Runs** tab and choosing **Recent exploratory sessions**.  
+   - From the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by opening the **Runs** page and choosing **Recent exploratory sessions**.  
 
      ![Opening the insights page](_img/insights-exploratory-testing/insights-exploratory-testing-02.png)
 

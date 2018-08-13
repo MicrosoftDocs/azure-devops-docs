@@ -14,8 +14,6 @@ monikerRange: 'vsts'
 
 # Get app performance data with your load tests
 
-[!INCLUDE [version-header-vs-ts](../_shared/version-header-vs-ts.md)]
-
 <a name="ApplicationInsights"></a>
 
 When you load test your app in the cloud using Azure DevOps, 

@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Exploratory testing using Microsoft Test Manager
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
-
 While you work with your application, Microsoft Test Manager (MTM) can record your actions, comments, screenshots and other data. The recording makes it easy to reproduce bugs. And you can quickly play back your tests whenever the application is updated.  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 

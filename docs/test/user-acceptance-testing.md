@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Perform user acceptance testing
 
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
-
 Today's faster development pace requires tools that 
 enable test teams to more easily verify value based
 on business requirements, and the high quality 
@@ -66,20 +64,18 @@ requirements.
 
 In scenarios where you have large development teams
 the ability search for an individual is also 
-important. Choose **Assign tester** from the drop-down
+important.
+
+Choose **Assign tester** from the drop-down
 menu. In the shortcut menu, choose **Assign testers
 to run all tests** and select the testers you want to
-include. 
-
-![Searching for and assigning testers](_img/user-acceptance-testing/uat5.png)
-
-Set the **Send email** option to send all
+include. Set the **Send email** option to send all
 of them a notification email.
 
 ## Easily track results
 
 A key principle of good user acceptance testing practice is to minimize the effort required to determine whether a requirement has been achieved. 
-There are two ways this can be achieved, you can focus on individual test runs and tests in the **Test** hub to see which failed or use the charts views make it much easy and accessible to all members of Azure DevOps makes this much easier.   
+There are two ways this can be achieved, you can focus on individual test runs and tests to see which failed or use the charts views make it much easy and accessible to all members of Azure DevOps makes this much easier.   
 
 ![Exploring test results](_img/user-acceptance-testing/uat8.png)
 

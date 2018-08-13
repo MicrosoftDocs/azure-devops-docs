@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Repeat a test with different data
  
-[!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
-
 When you write a [manual test](create-test-cases.md), 
 you often want to specify that the test should be repeated several 
 times with different test data. For example, if your users can add 
@@ -68,7 +66,7 @@ same data.
    shared parameter is displayed. 
  
 1. Add, edit and rename your shared parameter sets in the 
-   **Parameters** tab. View the test cases that reference 
+   **Parameters** page. View the test cases that reference 
    them in the **Test cases** pane.
 
    ![Adding, editing, viewing, and renaming a shared parameter](_img/repeat-test-with-different-data/repeat-test-with-different-data-05.png)

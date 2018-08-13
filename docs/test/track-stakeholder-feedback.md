@@ -14,15 +14,13 @@ monikerRange: '>= tfs-2017'
 
 # Track stakeholder feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
-
 [!INCLUDE [feedback-header-text](_shared/feedback-header-text.md)] 
 
 <a name="track"></a>
 ## Track feedback requests
 
 1. In Azure DevOps or TFS, select your project and open 
-   the **Queries** tab of the **Work** hub.
+   the **Queries** page of the **Work** hub.
 
    ![Opening the Queries tab of the Work hub](_img/track-stakeholder-feedback/track-stakeholder-feedback-30.png)
 

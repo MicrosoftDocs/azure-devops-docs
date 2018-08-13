@@ -14,14 +14,12 @@ monikerRange: '>= tfs-2017'
 
 # Request stakeholder feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
-
 [!INCLUDE [feedback-header-text](_shared/feedback-header-text.md)] 
 
 <a name="request"></a>
 ## Request feedback from stakeholders
 
-Request feedback from stakeholders directly from a Azure DevOps or TFS work item. 
+Request feedback from stakeholders directly from an Azure DevOps or TFS work item. 
 
 1. Open the work item form for the user story or feature for which
    you want to request feedback.

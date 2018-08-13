@@ -1,5 +1,5 @@
 ---
-title: Load Testing with Visual Studio and VSTS
+title: Load Testing with Visual Studio and Azure DevOps
 description: About Load Testing, overview of capabilities and features
 ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
 ms.prod: devops
@@ -14,12 +14,10 @@ monikerRange: 'vsts'
 
 # Load testing scenarios and capabilities
 
-**Visual Studio 2017 | Visual Studio 2015 | VSTS | [Previous version](https://msdn.microsoft.com/library/dn250793%28v=vs.120%29.aspx)**
-
 ![Cloud-based Load Testing](_img/performance-testing/IC838830.png)
 
 Load test your app with hundreds of thousands of users using 
-[Visual Studio Team Services (VSTS)](http://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~getstarted-hero~dn906133&campaign=o~msft~vscom~getstarted-hero~dn906133&scenario=test).
+[Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~getstarted-hero~dn906133&campaign=o~msft~vscom~getstarted-hero~dn906133&scenario=test).
 
 ## Comprehensive testing capabilities
 
@@ -27,7 +25,7 @@ Load test your app with hundreds of thousands of users using
 
 *  Author tests using [Visual Studio](run-performance-tests-app-before-release.md), 
     [Azure](app-service-web-app-performance-test.md), and
-    [VSTS](get-started-simple-cloud-load-test.md).
+    [Azure DevOps](get-started-simple-cloud-load-test.md).
 
 *  Quickly create load tests by specifying a [website](get-started-simple-cloud-load-test.md), referencing a 
     [JMeter test](get-started-jmeter-test.md) file, or
@@ -73,19 +71,19 @@ Load test your app with hundreds of thousands of users using
   of how long your test is and how many users the test simulates.
 
 * You get a generous allocation of virtual user minutes free each month.
-  See the [VSTS Pricing](https://visualstudio.microsoft.com/team-services/pricing/) page.
+  See the [Azure DevOps Pricing](https://visualstudio.microsoft.com/team-services/pricing/) page.
   
 ## More information
 
 * [Get started with load testing](getting-started-with-performance-testing.md)
 
-* [Run URL-based load tests with VSTS](get-started-simple-cloud-load-test.md)
+* [Run URL-based load tests with Azure DevOps](get-started-simple-cloud-load-test.md)
 
-* [Run Apache JMeter load tests with VSTS](get-started-jmeter-test.md)
+* [Run Apache JMeter load tests with Azure DevOps](get-started-jmeter-test.md)
 
 * [Performance test your Azure web app under load](app-service-web-app-performance-test.md)
 
-* [Pricing for VSTS features](https://visualstudio.microsoft.com/team-services/pricing/)
+* [Pricing for Azure DevOps features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 If you prefer to run your tests in a local environment rather than in the cloud, see
 [Load test with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project).

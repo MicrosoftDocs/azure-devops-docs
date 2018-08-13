@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2017'
 
 # Provide feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
-
 [!INCLUDE [feedback-header-text](_shared/feedback-header-text.md)] 
 
 <a name="provide"></a>

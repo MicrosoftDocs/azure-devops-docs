@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Plan manual tests with Microsoft Test Manager
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
-
 At the start of a sprint, find out what you need to test. Discussing test cases is a great way to help the team understand the detail of what your users need. Tests planned in this way provide a clear target for the development team.  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 

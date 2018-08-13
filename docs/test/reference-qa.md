@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for manual testing
 
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
-
 <a name="testplans"></a>
 ## Creating manual test plans
 

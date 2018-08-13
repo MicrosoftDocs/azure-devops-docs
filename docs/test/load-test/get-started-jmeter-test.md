@@ -14,8 +14,6 @@ monikerRange: 'vsts'
 
 # Run Apache JMeter load tests with Azure DevOps
 
-[!INCLUDE [version-header-ts](../_shared/version-header-ts.md)]
-
 Before you start your load testing:
 
 * [Create your Azure DevOps subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
@@ -25,7 +23,7 @@ Before you start your load testing:
 
 1. Sign into Azure DevOps.
 
-1. Go to the **Load Test** hub, open the **+ New**
+1. Go to the **Load Test** section of the [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], open the **+ New**
    menu and choose **Apache JMeter test**.
 
    ![Start a new load test from the New menu](_img/get-started-jmeter-test/JMeterLoadTestVSO-new-menu-item.png)
@@ -47,20 +45,20 @@ Before you start your load testing:
 
 1. When your test is done, look at the results to see how 
    well your app performed. For example, you can see an overview
-   of your app's performance in the **Summary** tab.
+   of your app's performance in the **Summary** page.
    This tab shows all of the main metrics such as average response
    time, user load, requests per second, failed requests, any errors
    that might have occurred, and test usage.
 
    ![Load test Summary tab results](_img/get-started-jmeter-test/JMeterLoadTestVSO-summary-tab.png)
  
-   The lower section of the **Summary** tab shows the settings used
+   The lower section of the **Summary** page shows the settings used
    for the test, and details of the five slowest requests during the test.
    If there are any transaction tests, the tab will also show the five slowest of these.
    Use the ![down arrow](_img/_shared/SimpleLoadTestVSO-sort-column.png)
    icon above a column to sort the list based on the contents of that column.
 
-1. Open the **Charts** tab to see a graphical representation of 
+1. Open the **Charts** page to see a graphical representation of 
    the test results over time. The charts show the average
    performance, throughput, errors, and the results of each test 
    request. Hover your mouse pointer over a chart to 
@@ -68,18 +66,18 @@ Before you start your load testing:
 
    ![Load test Charts tab results](_img/_shared/LoadTestVSO-charts.png)
 
-1. Open the **Diagnostics** tab to see detailed information such as a list
+1. Open the **Diagnostics** page to see detailed information such as a list
    of errors and status messages.
 
    ![Load test Diagnostics tab results](_img/get-started-jmeter-test/JMeterLoadTestVSO-diagnostics-tab.png)
 
    You can also use the ![arrow](_img/_shared/SimpleLoadTestVSO-summary-errors-icon.png)
-   icon in the **Errors** section of the **Summary** tab to go directly to the 
-   **Diagnostics** tab.
+   icon in the **Errors** section of the **Summary** page to go directly to the 
+   **Diagnostics** page.
 
    ![Opening the Diagnostics tab from the Summary tab](_img/_shared/SimpleLoadTestVSO-summary-errors-link.png)
 
-1. Open the **Logs** tab to see a list of test runs. Choose the link in
+1. Open the **Logs** page to see a list of test runs. Choose the link in
    the **Attachment** column to download the detailed log as a text file.
 
    ![Load test Logs tab results](_img/get-started-jmeter-test/JMeterLoadTestVSO-logs-tab.png)

@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Run manual tests
 
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
-
 Run your manual tests and record the test results for each test step 
 using Microsoft Test Runner. If you find an issue when testing, 
 use Test Runner to create a bug. Test steps, screenshots, and comments 
@@ -94,7 +92,7 @@ However, if you want to collect more types of data, run your tests using
 [Microsoft Test Manager client](mtm/run-manual-tests-with-microsoft-test-manager.md).
 
 1. Launch the test runner 
-   client from the **Test** hub by choosing **Run with options**
+   client from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] by choosing **Run with options**
    from the **Run** menu.
 
    ![Launching the test runner client](_img/_shared/collect-diagnostic-data-16.png)
