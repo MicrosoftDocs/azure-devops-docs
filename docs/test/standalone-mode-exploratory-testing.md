@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [version-header-ts-tfs](_shared/version-header-ts-tfs.md)] 
 
 All teams can use the Test &amp; Feedback extension in **Standalone** mode. 
-Users don't need a Visual Studio Team Services (VSTS) subscription 
+Users don't need an Azure DevOps subscription 
 or Team Foundation Server connection to use this mode.
 
 <a name="testmode"></a>

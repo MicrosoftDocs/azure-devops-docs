@@ -25,7 +25,7 @@ confident that your app can handle the traffic during peak use or at your next m
 
 * You'll need an Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* You'll need a VSTS subscription to keep your performance test history. A suitable subscription will be created 
+* You'll need an Azure DevOps subscription to keep your performance test history. A suitable subscription will be created 
   automatically when you set up your performance test. Or you can create a new subscription 
   or use an existing subscription if you're the owner. 
 
@@ -37,7 +37,7 @@ confident that your app can handle the traffic during peak use or at your next m
 ## Set up and run your performance test
 
 1. Sign in to the [Azure Portal](https://portal.azure.com). 
-   To use a VSTS subscription that you own, 
+   To use an Azure DevOps subscription that you own, 
    sign in as the owner.
 
 1. Go to your web app.
@@ -48,13 +48,13 @@ confident that your app can handle the traffic during peak use or at your next m
 
    ![Go to Development Tools, Performance Test](_img/app-service-web-app-performance-test/azure-np-web-app-details-tools-expanded.png)
  
-1. Now you'll link a VSTS subscription to keep your performance test history. Choose **Set Account**.
+1. Now you'll link an Azure DevOps subscription to keep your performance test history. Choose **Set Account**.
 
-   ![Select existing VSTS subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
+   ![Select existing Azure DevOps subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-no-vso-account.png)
 
-1. If you have a VSTS subscription to use, select that. If you don't, create a new one.
+1. If you have an Azure DevOps subscription to use, select that. If you don't, create a new one.
 
-   ![Select existing VSTS subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-select-vso-account.png)
+   ![Select existing Azure DevOps subscription, or create a new subscription](_img/app-service-web-app-performance-test/azure-np-select-vso-account.png)
 
 1. Choose **+ New** to create a new performance test.
 

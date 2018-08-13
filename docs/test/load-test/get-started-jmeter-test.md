@@ -1,6 +1,6 @@
 ---
-title: Apache JMeter cloud-based load testing with VSTS
-description: Using JMeter to performance test your application in the cloud using the features of the Test hub in Microsoft VSTS
+title: Apache JMeter cloud-based load testing with Azure DevOps
+description: Using JMeter to performance test your application in the cloud using the features of Azure DevOps and TFS
 ms.assetid: 3B2A725F-4E7B-4652-BFD1-FC7C9A248B7B
 ms.prod: devops
 ms.technology: devops-test
@@ -12,18 +12,18 @@ ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
 
-# Run Apache JMeter load tests with VSTS
+# Run Apache JMeter load tests with Azure DevOps
 
 [!INCLUDE [version-header-ts](../_shared/version-header-ts.md)]
 
 Before you start your load testing:
 
-* [Create your Visual Studio Team Services (VSTS) subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
+* [Create your Azure DevOps subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
   if you don't have one already.
 
 **To run a JMeter load test:**
 
-1. Sign into VSTS.
+1. Sign into Azure DevOps.
 
 1. Go to the **Load Test** hub, open the **+ New**
    menu and choose **Apache JMeter test**.
@@ -100,7 +100,7 @@ Before you start your load testing:
 
 * [FAQs for load testing](reference-qa.md#jmeter-tests)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with VSTS](get-started-simple-cloud-load-test.md) 
+* [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)

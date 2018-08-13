@@ -1,6 +1,6 @@
 ---
 title: Test different configurations when manual or exploratory testing
-description: Manual and exploratory testing - test different configurations with Team Services (VSTS) and Team Foundation Server (TFS)
+description: Manual and exploratory testing - test different configurations with Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
 ms.prod: devops
 ms.technology: devops-test
@@ -38,7 +38,7 @@ Then you can:
 * [Run tests with each of the configurations](#run-configs)
 * [Track your test results for each configuration](#track-configs)
 
-> **Note**: This feature is available only in VSTS.
+> **Note**: This feature is available only in Azure DevOps.
 In addition, Stakeholders and Basic users cannot create or manage configurations.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 

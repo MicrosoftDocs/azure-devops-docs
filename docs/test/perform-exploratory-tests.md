@@ -1,6 +1,6 @@
 ---
 title: Exploratory test your web app -  TestTools
-description: Test tools - Exploratory test your web app in VSTS from your web browser with the Microsoft Test & Feedback extension
+description: Test tools - Exploratory test your web app in Azure DevOps from your web browser with the Microsoft Test & Feedback extension
 ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
 ms.prod: devops
 ms.technology: devops-test
@@ -76,7 +76,7 @@ update it automatically.
    ![Choose connection mode](_img/perform-exploratory-tests/getstarted-06.png)
 
    **[Connected mode](connected-mode-exploratory-testing.md)**  
-   Available to all users of VSTS and TFS 2015 or later:
+   Available to all users of Azure DevOps and TFS 2015 or later:
 
    - Users with **Basic** access: Full capture and create capabilities
      to submit bugs, tasks, and test cases. Includes collaboration
@@ -86,14 +86,14 @@ update it automatically.
    - Users with **Stakeholder** access: Full capture and create capabilities,
      except for test cases, to submit feedback and respond to feedback
      requests from the team. 
-   - Feedback experience is available only in VSTS and TFS 2017 or later.<p />
+   - Feedback experience is available only in Azure DevOps and TFS 2017 or later.<p />
  
    **[Standalone mode](standalone-mode-exploratory-testing.md)**  
-   Available to everyone. No connection to VSTS or TFS is required. Take notes and screenshots with
+   Available to everyone. No connection to Azure DevOps or TFS is required. Take notes and screenshots with
    inline annotations to capture issues. Create bugs and export
    a session report to share findings.
  
->If you have problems connecting to VSTS or TFS, you may find
+>If you have problems connecting to Azure DevOps or TFS, you may find
 the topic [TF31002: Unable to connect](../reference/error/tf31002-unable-connect-tfs.md) useful.
 
 ## See also

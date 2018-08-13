@@ -1,6 +1,6 @@
 ---
-title: Manage how long to keep test results in VSTS
-description: Manage how long VSTS keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
+title: Manage how long to keep test results in Azure DevOps
+description: Manage how long Azure DevOps keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.prod: devops
 ms.technology: devops-test
@@ -12,7 +12,7 @@ ms.date: 04/09/2018
 monikerRange: 'vsts'
 ---
 
-# Control how long to keep test results in VSTS
+# Control how long to keep test results in Azure DevOps
 
 [!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
 
@@ -30,11 +30,11 @@ for example, up to a year.
 
 To delete manual test results after a specific number of days, 
 set the retention limit at the project level. 
-Visual Studio Team Services (VSTS) keeps manual test results related to builds, 
+Azure DevOps keeps manual test results related to builds, 
 even after you delete those builds. That way, build policies don't delete 
 your test results before you can analyze the data.
 
-1. Sign into VSTS. You'll need at least project administrator permissions.
+1. Sign into Azure DevOps. You'll need at least project administrator permissions.
 
 1. Go to your project.
 
@@ -50,12 +50,12 @@ your test results before you can analyze the data.
 
 ### Automated test results associated with builds
 
-By default, VSTS keeps automated test results related to builds 
+By default, Azure DevOps keeps automated test results related to builds 
 only as long as you keep those builds. To keep test results after you delete your builds, 
 edit the build retention policy. If you use Git for version control, 
 you can specify how long to keep automated test results based on the branch. 
 
-1. Sign into VSTS. You'll need at least build level permissions to edit build pipelines.
+1. Sign into Azure DevOps. You'll need at least build level permissions to edit build pipelines.
 
 1. Go to your project. Find and edit your build pipeline.
 

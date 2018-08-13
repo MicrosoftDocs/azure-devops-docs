@@ -1,6 +1,6 @@
 ---
 title: Repeat a test with different data
-description: Manual and exploratory testing - repeat a test with different data in Team Services (VSTS) and Team Foundation Server (TFS)
+description: Manual and exploratory testing - repeat a test with different data in Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
 ms.prod: devops
 ms.technology: devops-test
@@ -26,7 +26,7 @@ To do this, you insert parameters in your test steps. Along with
 the test steps, you provide a table of parameter values. You can 
 also share parameters and their data between test cases when you 
 use the web portal with TFS 2015 and later or 
-VSTS. That way you can run multiple test cases with the 
+Azure DevOps. That way you can run multiple test cases with the 
 same data.
 
 [!INCLUDE [feature-availability](_shared/feature-availability.md)] 

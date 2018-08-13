@@ -1,6 +1,6 @@
 ---
-title: Track test status - manual testing in VSTS
-description: Track test status with charts and graphs using VSTS
+title: Track test status - manual testing in Azure DevOps
+description: Track test status with charts and graphs using Azure DevOps
 ms.assetid: cd74abc1-44c0-4390-8d5d-4d1afbd4606c
 ms.prod: devops
 ms.technology: devops-test
@@ -131,7 +131,7 @@ create for test cases.
 1. Select the test plan or test suite for your chart in 
    the Test plan tab. Then add a test case chart.
 
-   ![Test hub: select test suite; Charts tab; New test case chart](_img/track-test-status/NewTestCaseChart.png)
+   ![Select test suite; Charts tab; New test case chart](_img/track-test-status/NewTestCaseChart.png)
 
    All charts roll up the information for any child test suites 
    of the test plan or test suite that you selected.

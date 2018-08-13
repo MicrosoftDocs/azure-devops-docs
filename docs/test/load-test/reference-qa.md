@@ -1,6 +1,6 @@
 ---
 title: FAQs and general solutions for load testing  
-description: FAQs for load testing topics using the features of the Test hub in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: FAQs for load testing topics using the features of Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.prod: devops
 ms.technology: devops-test
@@ -150,7 +150,7 @@ and virtual user minutes will be charged accordingly.
 **A**: Yes. Based on where you're running the test, each test run duration limit is:
 
 * Visual Studio IDE: 48 hours
-* VSTS Load test hub:
+* VSTS Load test page:
  - URL-based load tests: 48 hours
  - JMeter load tests: 4 hours
 * Azure portal: 1 hour

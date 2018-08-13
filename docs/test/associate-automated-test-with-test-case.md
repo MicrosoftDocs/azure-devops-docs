@@ -1,6 +1,6 @@
 ---
 title: Associate an automated test with a test case
-description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and VSTS with a build or release pipeline
+description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager (MTM) and Azure DevOps with a build or release pipeline
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
 ms.prod: devops
 ms.technology: devops-test
@@ -22,7 +22,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   to automate, but you still want to be able to run that test as part of a test plan.
   Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
   in the settings of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task.
-  Automated tests can also be run from the **Test** hub in VSTS and TFS.
+  Automated tests can also be run from the **Test** hub in Azure DevOps and TFS.
   If you are using [XAML builds](../pipelines/test/reference-qa.md#xaml-build) you can also
   [run these automated tests by using Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md).
 
@@ -38,7 +38,7 @@ The process to associate an automated test with a test case is:
 1. Create a test project containing your automated test.
    [What types of tests are supported?](../pipelines/test/reference-qa.md#test-types)
 
-1. Check your test project into a VSTS or Team
+1. Check your test project into a Azure DevOps or Team
    Foundation Server (TFS) repository.
 
 1. Create a build pipeline for your project, ensuring that it
@@ -51,7 +51,7 @@ The process to associate an automated test with a test case is:
    been added to a test plan that uses the build you just defined. 
 
 If you are using Team Foundation Build and Release Management in
-VSTS or TFS (not a [XAML build](../pipelines/test/reference-qa.md#xaml-build)), you can run associated tests in the 
+Azure DevOps or TFS (not a [XAML build](../pipelines/test/reference-qa.md#xaml-build)), you can run associated tests in the 
 Build and Release pipeline by using the
 [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md) task.
 You _cannot_ run tests on-demand using Microsoft Test Manager (MTM) unless you are using a [XAML build](../pipelines/test/reference-qa.md#xaml-build). 
@@ -126,7 +126,7 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 ## See Also
 
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
-* [Run automated tests from test plans in the Test hub](run-automated-tests-from-test-hub.md)
+* [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
 * [Run automated tests with Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md)
 * [Test with unified agents and phases](../pipelines/test/set-up-continuous-test-environments-builds.md#unified-agents)
 
