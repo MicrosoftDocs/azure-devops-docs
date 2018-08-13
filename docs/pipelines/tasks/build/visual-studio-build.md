@@ -26,7 +26,7 @@ monikerRange: '>= tfs-2015'
 
 msbuild, visualstudio
 
-> **Azure Pipelines:** If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **Hosted VS2017** as your default build queue.. See [Microsoft-hosted agents](../../agents/hosted.md).
+> **Azure Pipelines:** If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **Hosted VS2017** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -71,7 +71,7 @@ If you use TFVC, make sure that the solution is a child of one of the mappings o
 <p>The value you select here adds the ```/p:VisualStudioVersion={numeric_visual_studio_version}``` argument to the MSBuild command run by the build. For example, if you select <strong>Visual Studio 2015</strong>, ```/p:VisualStudioVersion=14.0``` is added to the MSBuild command.
 </p>
 <blockquote>
-<p><strong>Azure Pipelines:</strong>If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **Hosted VS2017** as your default build queue. See [Microsoft-hosted agents](../../agents/hosted.md).</p>
+<p><strong>Azure Pipelines:</strong>If your team wants to use Visual Studio 2017 with the Microsoft-hosted agents, select **Hosted VS2017** as your default build pool. See [Microsoft-hosted agents](../../agents/hosted.md).</p>
 </blockquote>
 </td>
 </tr>

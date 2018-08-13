@@ -68,7 +68,7 @@ Use the job timeout to specify the timeout in minutes for jobs in this job. A ze
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
 
 ```yaml
-queue:
+pool:
   timeoutInMinutes: number
   cancelTimeoutInMinutes: number
 ```

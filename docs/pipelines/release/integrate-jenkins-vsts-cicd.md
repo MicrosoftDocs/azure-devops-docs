@@ -243,7 +243,7 @@ There is an additional approach (pattern) possible when integrating Jenkins and 
 
 1. Search for the **Jenkins** template, and then select **Apply**.
 
-1. Select **Pipeline**, and then select **Hosted VS 2017** for the **Agent queue**.
+1. Select **Pipeline**, and then select **Hosted VS 2017** for the **Agent pool**.
 
 1. For the **Job name** parameter, enter the **Jenkins Job name** you created in the earlier steps of this tutorial.  This name must match exactly.  This will allow you to queue the Jenkins job and download the artifacts it produces.
 

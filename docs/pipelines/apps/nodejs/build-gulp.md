@@ -117,11 +117,11 @@ Begin by creating your build pipeline.
 
 # [Azure Repos or TFS repo](#tab/gitvsts/yaml)
 
-To create a pipeline that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. The first time you change this file, Azure Pipelines automatically uses it to create your build pipeline.
+To create a pipeline that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **azure-pipelines.yml**. The first time you change this file, Azure Pipelines automatically uses it to create your build pipeline.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-1. Choose the **.vsts-ci.yml** file, and then choose **Edit**.
+1. Choose the **azure-pipelines.yml** file, and then choose **Edit**.
 
 1. Replace the contents of the file with code from the next section.
 
@@ -137,11 +137,11 @@ In Azure Pipelines:
 
 # [GitHub repo](#tab/github/yaml)
 
-To create a pipeline that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **.vsts-ci.yml**. You'll then create a build pipeline that points to the YAML file.
+To create a pipeline that is configured as code, you'll modify a YAML file in the repo root that has a well-known name: **azure-pipelines.yml**. You'll then create a build pipeline that points to the YAML file.
 
 In GitHub:
 
-1. Edit the **.vsts-ci.yml** file in the root of your repo, and replace the contents of the file with code from the next section.
+1. Edit the **azure-pipelines.yml** file in the root of your repo, and replace the contents of the file with code from the next section.
 
 ---
 
@@ -271,11 +271,11 @@ You're nearly ready to go. Just a few more steps to complete your CI build pipel
 
 # [Azure Repos or TFS repo](#tab/gitvsts/designer)
 
-1. For the **Agent queue**:
+1. For the **Agent pool**:
 
  * **Azure Pipelines:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../agents/v2-windows.md).
+ * **TFS:** Select a pool that includes a [Windows build agent](../../agents/v2-windows.md).
 
 1. Select **Get sources** and then:
 
@@ -297,11 +297,11 @@ You're nearly ready to go. Just a few more steps to complete your CI build pipel
 
 # [GitHub repo](#tab/github/designer)
 
-1. For the **Agent queue**:
+1. For the **Agent pool**:
 
  * **Azure Pipelines:** Select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../agents/v2-windows.md).
+ * **TFS:** Select a pool that includes a [Windows build agent](../../agents/v2-windows.md).
 
 1. Select **Get sources** and then:
 
@@ -325,9 +325,9 @@ In Azure Pipelines:
 
 1. Select **Pipeline**.
 
-1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
+1. For the **Agent pool** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
-1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
+1. For the **Yaml path**, select the **azure-pipelines.yml** file in the root of your repo.
 
 1. Select the **Triggers** tab, and then enable continuous integration (CI).
 

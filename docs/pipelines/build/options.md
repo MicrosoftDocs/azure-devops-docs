@@ -167,7 +167,7 @@ Select this check box if you want to enable your script to use the build pipelin
 For an example, see [Use a script to customize your build pipeline](../scripts/powershell.md).
 
 
-## Default agent queue
+## Default agent pool
 
 ::: moniker range="<= tfs-2017"
 
@@ -177,7 +177,7 @@ For an example, see [Use a script to customize your build pipeline](../scripts/p
 
 ::: moniker-end
 
-Select the [queue](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
+Select the [pool](../agents/pools-queues.md) that's attached to the pool that contains the agents you want to run this pipeline.
 
 **Tip:**  If your code is in Azure Pipelines and you run your builds on Windows, in many cases the simplest option is to use the [Hosted pool](../agents/hosted.md).
 

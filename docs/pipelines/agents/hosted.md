@@ -18,18 +18,18 @@ monikerRange: 'vsts'
 
 ## Use a Microsoft-hosted agent
 
-To use a Microsoft-hosted agent pool, first decide which queue to use:
+To use a Microsoft-hosted agent pool, first decide which pool to use:
 
-| If your development team uses... | ...then choose this queue |
+| If your development team uses... | ...then choose this pool |
 |----------------------------------|---------------------------|
-| Visual Studio 2017 | Hosted VS2017 |
-| Development tools on Ubuntu | Hosted Linux |
 | Docker containers | Hosted Linux or Hosted VS2017 |
-| .NET Core | Hosted Linux (optimal) or Hosted VS2017 |
+| Development tools on Ubuntu | Hosted Linux |
 | Development tools on macOS | Hosted macOS (see notes below) |
+| .NET Core | Hosted Linux (optimal) or Hosted VS2017 |
+| Visual Studio 2017 | Hosted VS2017 |
 | Visual Studio 2013 or Visual Studio 2015 | Hosted |
 
-Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Pipeline** step, for the **Agent queue**, select the queue you decided on.
+Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Pipeline** step, for the **Agent pool**, select the pool you decided on.
 
 Notes on choosing **Hosted macOS**:
 
@@ -80,7 +80,7 @@ When you use a Microsoft-hosted agent, you should always use [variables](../buil
 
 ### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
 
-By default, all project contributors in an organization have access to the Microsoft-hosted agents. But, your organization administrator may limit the access of Microsoft-hosted agents to select users or projects. Ask the owner of your Azure DevOps organization to grant you permission to use a Microsoft-hosted agent. See [agent queue security](pools-queues.md#security).
+By default, all project contributors in an organization have access to the Microsoft-hosted agents. But, your organization administrator may limit the access of Microsoft-hosted agents to select users or projects. Ask the owner of your Azure DevOps organization to grant you permission to use a Microsoft-hosted agent. See [agent pool security](pools-queues.md#security).
 
 ### I need more agents. What can I do?
 

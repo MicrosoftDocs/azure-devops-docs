@@ -73,7 +73,7 @@ The full syntax to specify an agent job is:
 
 jobs:
 - job: string
-  queue:
+  pool:
     name: string
     demands: string | [ string ]
     container: string
@@ -86,19 +86,19 @@ jobs:
 ```
 
 The above syntax is necessary only if you want to define multiple jobs or change the properties for a job. You can skip the job syntax if you need only a single job with the standard options.
-For example, the following YAML file runs a single job on the Hosted VS2017 queue.
+For example, the following YAML file runs a single job on the Hosted VS2017 pool.
 
 ```yaml
 steps:
 - script: echo Hello world
 ```
 
-If you want to specify just the queue, you can do that and skip the other properties. For example:
+If you want to specify just the pool, you can do that and skip the other properties. For example:
 
 ```yaml
 jobs:
 - job: Run this job on a Linux agent
-  queue: Hosted Linux Preview
+  pool: Hosted Linux Preview
   steps:
     ...
 ```
@@ -112,11 +112,11 @@ Templates can include parameters which the pipeline can vary.
 
 parameters:
   name: ''  # defaults for any parameters that aren't specified
-  queue: ''
+  pool: ''
 
 jobs:
 - job: ${{ parameters.name }}
-  queue: ${{ parameters.queue }}
+  pool: ${{ parameters.pool }}
   steps:
   - script: npm install
   - script: npm test
@@ -126,23 +126,23 @@ When you consume the template in your pipeline, specify values for
 the template parameters.
 
 ```yaml
-# File: .vsts-ci.yml
+# File: azure-pipelines.yml
 
 jobs:
 - template: templates/npm.yml  # Template reference
   parameters:
     name: macOS
-    queue: Hosted macOS Preview
+    pool: Hosted macOS Preview
 
 - template: templates/npm.yml  # Template reference
   parameters:
     name: Linux
-    queue: Hosted Linux Preview
+    pool: Hosted Linux Preview
 
 - template: templates/npm.yml  # Template reference
   parameters:
     name: Windows
-    queue: Hosted VS2017
+    pool: Hosted VS2017
 ```
 
 
@@ -167,7 +167,7 @@ Use demands to specify what capabilities an agent must have to run jobs from you
 ::: moniker range="vsts"
 
 ```yaml
-queue:
+pool:
   name: myPrivateAgents
   demands: agent.os -equals Windows_NT
 steps:
@@ -177,7 +177,7 @@ steps:
 Or multiple demands:
 
 ```yaml
-queue:
+pool:
   name: myPrivateAgents
   demands:
   - agent.os -equals Darwin
@@ -218,7 +218,7 @@ resources:
     image: ubuntu:16.04
 jobs:
 - job: job_container
-  queue:
+  pool:
     name: default
     container: dev1
   steps:
@@ -247,7 +247,7 @@ resources:
       envVariable2: envValue2
 jobs:
 - job: job_container
-  queue:
+  pool:
     name: default
     container: $[variables['runtimeContainer']]
     matrix:
@@ -287,7 +287,7 @@ A zero value means that the jobs will run forever (except in hosted pools, where
 The `timeoutInMinutes` allows a limit to be set for the job execution time. When not specified, the default is 60 minutes. The `cancelTimeoutInMinutes` allows a limit to be set for the job cancel time. When not specified, the default is 5 minutes.
 
 ```yaml
-queue:
+pool:
   timeoutInMinutes: number
   cancelTimeoutInMinutes: number
 ```
@@ -334,7 +334,7 @@ The `matrix` setting enables a job to be dispatched multiple times, with differe
 ```yaml
 jobs:
 - job: Test
-  queue:
+  pool:
     parallel: 2
     matrix: 
       US_IE:
@@ -408,7 +408,7 @@ See [Parallel and multiple execution using agent jobs](#parallelexec).
 ```yaml
 jobs:
 - job: Test
-  queue:
+  pool:
     parallel: 2
 ```
 ::: moniker-end

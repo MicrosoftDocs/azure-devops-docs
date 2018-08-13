@@ -48,7 +48,7 @@ This example shows how to build a .NET Core project. To start, import (into Azur
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
-The sample code includes a `.vsts-ci.yml` file at the root of the repository.
+The sample code includes a `azure-pipelines.yml` file at the root of the repository.
 You can use this file to build the app.
 
 # [YAML](#tab/yaml)
@@ -75,7 +75,7 @@ YAML builds are not yet available on TFS.
 * After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
 
 * Select **Process** under the **Tasks** tab in the build pipeline editor and change the properties as follows:
-  * **Agent queue:** `Hosted Linux Preview`
+  * **Agent pool:** `Hosted Linux Preview`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
 * Save the pipeline and queue a build to see it in action.
@@ -90,20 +90,20 @@ Read through the rest of this topic to learn some of the common ways to customiz
 
 You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own.
 The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
-Use the **Hosted VS2017** agent queue (to build on Windows), the **Hosted Linux Preview** agent queue, or the **Hosted macOS Preview** queue.
+Use the **Hosted VS2017** agent pool (to build on Windows), the **Hosted Linux Preview** agent pool, or the **Hosted macOS Preview** pool.
 
 
 # [YAML](#tab/yaml)
 
-Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
+Add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017', 'Hosted macOS Preview'
+pool: 'Hosted Linux Preview' # other options - 'Hosted VS2017', 'Hosted macOS Preview'
 ```
 
 # [Designer](#tab/designer)
 
-To change the OS on which to build, select **Tasks**, then select the **Process** node, and finally select the **Agent queue** that you want to use.
+To change the OS on which to build, select **Tasks**, then select the **Process** node, and finally select the **Agent pool** that you want to use.
 
 ---
 
@@ -112,7 +112,7 @@ They also don't typically include prerelease versions. If you need these kinds o
 
 # [YAML](#tab/yaml)
 
-If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent, add the following snippet to your `.vsts-ci.yml` file:
+If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent, add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - task: DotNetCoreInstaller@0
@@ -255,7 +255,7 @@ You build your .NET Core project by running `dotnet build` command in your build
 
 ::: moniker range="vsts"
 
-To build your project using .NET Core task, add the following snippet to your `.vsts-ci.yml` file:
+To build your project using .NET Core task, add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - script: dotnet build # Include additional options such as --configuration to meet your need
@@ -313,7 +313,7 @@ These results are then made available to you in the build summary.
 
 ::: moniker range="vsts"
 
-Add the following snippet to your `.vsts-ci.yml` file:
+Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - task: DotNetCoreCLI@2

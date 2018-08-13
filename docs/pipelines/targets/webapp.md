@@ -52,7 +52,7 @@ Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sam
 
 ::: moniker range="vsts"
 
-The sample code above includes a `.vsts-ci.yml` file at the root of the repository. This file includes some additional instructions in comments to deploy
+The sample code above includes a `azure-pipelines.yml` file at the root of the repository. This file includes some additional instructions in comments to deploy
 the build to an Azure Web App. Read through this to learn how to edit the YAML file in order to deploy the sample app.
 
 ::: moniker-end
@@ -82,7 +82,7 @@ The simplest way to deploy to an Azure Web App is to use the **Azure App Service
 ### Deploy a web deploy package (ASP.NET)
 
 To deploy a .zip web deploy package (for example, from an [ASP.NET web app](../apps/aspnet/build-aspnet-4.md)) to an Azure Web App,
-add the following snippet to your .vsts-ci.yml file:
+add the following snippet to your azure-pipelines.yml file:
 
 ```yaml
 - task: AzureRmWebAppDeployment@3
@@ -274,7 +274,7 @@ Using jobs, you can control the order of deployment to multiple web apps.
 jobs:
 
 - job: buildandtest
-  queue: Hosted Linux Preview
+  pool: Hosted Linux Preview
   steps:
 
   # add steps here to build the app
@@ -288,7 +288,7 @@ jobs:
       WebAppName: '<name of test environment web app>'
 
 - job: prod
-  queue: Hosted Linux Preview
+  pool: Hosted Linux Preview
   dependsOn: buildandtest
   condition: succeeded()
   steps:

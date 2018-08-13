@@ -32,7 +32,7 @@ Before you read this topic, you should understand the kind of build pipeline you
 
 To publish to a external npm registry, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, then choosing **Services**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in registry URL and the credentials to connect to the registry.
 
-To publish a package to a npm registry, add the following snippet to your .vsts-ci.yml file.
+To publish a package to a npm registry, add the following snippet to your azure-pipelines.yml file.
 
 ```yaml
 - task: Npm@1

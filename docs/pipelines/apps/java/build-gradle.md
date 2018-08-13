@@ -75,11 +75,11 @@ The sample app in this repository is a Java servlet using JavaServer Pages (JSP)
 
  You now see all the tasks that were automatically added to the build pipeline by the template. These are the steps that will automatically run every time you push code changes.
 
-1. For the **Agent queue**:
+1. For the **Agent pool**:
 
  * **Azure Pipelines:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with the Java Development Kit (JDK) installed.
 
- * **TFS:** Select a queue that includes an agent with the Java Development Kit (JDK) installed.
+ * **TFS:** Select a pool that includes an agent with the Java Development Kit (JDK) installed.
 
 1. Click **Get sources** and then:
 

@@ -138,9 +138,9 @@ Permissions for task groups are subject to a hierarchical model. You use task gr
 
 ::: moniker range=">= tfs-2015"
 
-## Manage permissions for agent queues and service connections
+## Manage permissions for agent pools and service connections
 
-You manage the security for [agent pools](../agents/pools-queues.md) and [service connections](../library/service-endpoints.md) by adding users or groups to a role. The method is similar for both agent queues and service connections. You will need to be a member of the Project  Administrator group to manage the security for these resources.
+You manage the security for [agent pools](../agents/pools-queues.md) and [service connections](../library/service-endpoints.md) by adding users or groups to a role. The method is similar for both agent pools and service connections. You will need to be a member of the Project  Administrator group to manage the security for these resources.
  
 > [!NOTE]
 > **Feature availability**: These features are available on Azure Pipelines and TFS 2015 and later versions.

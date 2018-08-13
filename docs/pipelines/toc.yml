@@ -84,7 +84,7 @@
     items:
     - name: Build and release agents
       href: agents/agents.md
-    - name: Agent pools and queues
+    - name: Agent pools
       href: agents/pools-queues.md
     - name: Microsoft-hosted agents
       href: agents/hosted.md

@@ -69,11 +69,11 @@ https://github.com/adventworks/cpp-gpp-sample
 
 1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
 
-1. For the **Agent queue**:
+1. For the **Agent pool**:
 
  * **Azure Pipelines:** Select _Hosted Linux_ or _Hosted macOS_. This uses an Azure Pipelines pool of agents that have the software needed to build your app.
 
- * **TFS:** Select a queue that includes a [Linux or macOS build agent](../../agents/agents.md).
+ * **TFS:** Select a pool that includes a [Linux or macOS build agent](../../agents/agents.md).
 
 1. Click **Get sources** and then:
 

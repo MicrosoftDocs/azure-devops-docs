@@ -59,10 +59,10 @@ The sample code above includes a `Dockerfile` file at the root of the repository
 
 ::: moniker range="vsts"
 
-The sample code also includes a `.vsts-ci.yml` file at the root of the repository. If you have a Docker Hub account, and would like to push the image to your **Docker Hub registry**, then replace the contents of `.vsts-ci.yml` file with the following:
+The sample code also includes a `azure-pipelines.yml` file at the root of the repository. If you have a Docker Hub account, and would like to push the image to your **Docker Hub registry**, then replace the contents of `azure-pipelines.yml` file with the following:
 
 ```yaml
-queue: Hosted Linux Preview
+pool: Hosted Linux Preview
 variables:
   buildConfiguration: 'Release'
   dockerId: adventworks  # change this to match your Docker Id
@@ -79,10 +79,10 @@ steps:
     pswd: $(dockerPassword)
 ```
 
-If you set up an **Azure container registry** and would like to push the image to that registry, then replace the contents of your .vsts-ci.yml file with the following:
+If you set up an **Azure container registry** and would like to push the image to that registry, then replace the contents of your azure-pipelines.yml file with the following:
 
 ```yaml
-queue: Hosted Linux Preview
+pool: Hosted Linux Preview
 variables:
   buildConfiguration: 'Release'
   dockerId: adventworks  # change this to match your Docker Id
@@ -127,7 +127,7 @@ YAML builds are not yet available on TFS.
 1. After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
 
 2. Select **Pipeline** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
-  * **Agent queue:** `Hosted Linux Preview`
+  * **Agent pool:** `Hosted Linux Preview`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
 1. Modify the **.NET Core Publish** task in the build pipeline as follows:
@@ -179,25 +179,25 @@ You can use Azure Pipelines to build and push your Docker images without needing
 
 # [YAML](#tab/yaml)
 
-Add the following snippet to your `.vsts-ci.yml` file to select the appropriate agent queue:
+Add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
+pool: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
 ```
 
 # [Designer](#tab/designer)
 
-In the build pipeline, select **Tasks**, then select the **Pipeline** node, and finally select the **Agent queue** that you want to use.
+In the build pipeline, select **Tasks**, then select the **Pipeline** node, and finally select the **Agent pool** that you want to use.
 
 ---
 
 ### Microsoft-hosted Linux agents
 
-Use the **Hosted Linux Preview** agent queue to build Linux container images. When you use this queue, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build don't directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
+Use the **Hosted Linux Preview** agent pool to build Linux container images. When you use this pool, you get a fresh Linux virtual machine with each build. This virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Tasks in your build don't directly run on the virtual machine at present. Instead, they run in a Microsoft-provided Docker container on the virtual machine. [Shared volumes](https://docs.docker.com/storage/volumes/) are used to faciliate communication between the virtual machine and the container. You can run Docker commands as part of your build, since the `docker.sock` socket of the host is volume mounted in the container.
 
 ### Microsoft-hosted VS2017 (Windows) agents
 
-Use the **Hosted VS2017** agent queue to build Windows container images. When you use this queue, you get a fresh Windows Server 2016 virtual machine with each build. The virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Some of the common images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/aspnetcore-build`, `microsoft/windowsservercore`, and `microsoft/nanoserver` are pre-cached on this Docker host. Building new images from these images will therefore be faster.
+Use the **Hosted VS2017** agent pool to build Windows container images. When you use this pool, you get a fresh Windows Server 2016 virtual machine with each build. The virtual machine runs the [agent](../agents/agents.md) and acts as a Docker host. Some of the common images such as `microsoft/dotnet-framework`, `microsoft/aspnet`, `microsoft/aspnetcore-build`, `microsoft/windowsservercore`, and `microsoft/nanoserver` are pre-cached on this Docker host. Building new images from these images will therefore be faster.
 
 > [!NOTE]
 > * Using Hosted VS2017 agents, you can only build Docker images with Windows Server 2016 as the container OS. You cannot build Docker images with Windows Server 1803 as the container OS since the host operating system on the virtual machines is Windows Server 2016.
@@ -229,7 +229,7 @@ You can build a Docker image by running the `docker build` command in a script o
 
 ::: moniker range="vsts"
 
-To run the command in a script, add the following snippet to your `.vsts-ci.yml` file.
+To run the command in a script, add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
 - script: docker build -t <docker-id>/<image> .  # add options to this command to meet your needs
@@ -313,7 +313,7 @@ Then, define your build pipeline:
 Create a `.vsts-ci-yml` file at the root of your repo with the following content:
 
 ```yaml
-queue: 'Hosted Linux Preview'
+pool: 'Hosted Linux Preview'
 steps:
   - script: docker build -t <dockerid>/<image-name>:$BUILD_BUILDID . # include other options to meet your needs
 ```
@@ -340,7 +340,7 @@ Once you've built a Docker image, you can push it to a Docker registry or to Azu
 
 ::: moniker range="vsts"
 
-To push the image to Docker hub, add the following snippet to the `.vsts-ci.yml` file at the root of your repo:
+To push the image to Docker hub, add the following snippet to the `azure-pipelines.yml` file at the root of your repo:
 
 ```yaml
 - script: |
@@ -428,7 +428,7 @@ fi
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
-Add the following snippet to your `.vsts-ci.yml` file.
+Add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
 - script: |
