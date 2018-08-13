@@ -85,7 +85,7 @@ https://github.com/adventworks/cpp-gpp-sample
 
  Select your version control repository. You'll need to authorize access to your repo.
 
-1. Click the **+** icon on **Phase 1** of the build and then:
+1. Click the **+** icon on **Job 1** of the build and then:
 
 ::: moniker range=">= tfs-2018"
 

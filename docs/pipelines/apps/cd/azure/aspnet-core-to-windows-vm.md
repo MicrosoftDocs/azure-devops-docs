@@ -93,7 +93,7 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
  ![Screenshot showing IIS website deployment template](../../../apps/_shared/_img/aspnet-core-to-windows-vm/select-iis-website-deployment-release-template.png)
 
-1. Click the **Tasks** tab, and then click the **IIS Deployment** phase. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
+1. Click the **Tasks** tab, and then click the **IIS Deployment** job. For the **Deployment Group**, click the deployment group you created earlier, such as *myIIS*.
 
  ![iis deployment group in release pipeline](../../../apps/_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 

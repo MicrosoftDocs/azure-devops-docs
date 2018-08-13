@@ -63,7 +63,7 @@ If you deploy releases to multiple environments, you can substitute configuratio
 
 If your deployment group consists of many IIS target servers, you can deploy to a subset of servers at a time.
 This ensures that your application is available to your customers at all times.
-Simply select the **Deployment group phase** and use the slider to configure the **Maximum number of targets in parallel**.
+Simply select the **Deployment group job** and use the slider to configure the **Maximum number of targets in parallel**.
 
 ![Configuring safe rolling deployment for the proportion of environments to update in parallel](_img/howto-webdeploy-iis-deploygroups/safe-rolling-deployment.png)
 
@@ -75,20 +75,20 @@ To deploy a database with your app:
 1. Add both the IIS target servers and database servers to your deployment group.
    Tag all the IIS servers as `web` and all database servers as `database`.
 
-1. Add two machine group phases to environments in the release pipeline, and a task in each phase as follows:
+1. Add two machine group jobs to environments in the release pipeline, and a task in each job as follows:
 
-   **First [Run on deployment group phase](../../process/phases.md)** for configuration of web servers.
+   **First [Run on deployment group job](../../process/phases.md)** for configuration of web servers.
    
    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
    
    - **Machine tags**: `web`<p />
    
-   Then add an **IIS Web App Deploy** task to this phase.
+   Then add an **IIS Web App Deploy** task to this job.
    
-   **Second [Run on deployment group phase](../../process/phases.md)** for configuration of database servers.
+   **Second [Run on deployment group job](../../process/phases.md)** for configuration of database servers.
    
    - **Deployment group**: Select the deployment group you created in the [previous example](deploy-webdeploy-iis-deploygroups.md).
    
    - **Machine tags**: `database`<p />
    
-   Then add a **SQL Server Database Deploy** task to this phase.
+   Then add a **SQL Server Database Deploy** task to this job.

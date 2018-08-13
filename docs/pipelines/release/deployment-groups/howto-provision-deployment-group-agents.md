@@ -61,7 +61,7 @@ For information about agents and pipelines, see:
    - When prompted to configure tags for the agent, press `Y` and enter any tags you will use to identify subsets of the machines in the group for partial deployments.
 
      > Tags you assign allow you to limit deployment to specific servers when 
-     the deployment group is used in a [**Run on machine group** phase](../../process/deployment-group-phases.md).
+     the deployment group is used in a [**Run on machine group** job](../../process/deployment-group-phases.md).
 
    - When prompted for the user account, press *Return* to accept the defaults.
 
@@ -211,7 +211,7 @@ To use the template:
 
 ## Related topics
 
-* [Run on machine group phase](../../process/deployment-group-phases.md)
+* [Run on machine group job](../../process/deployment-group-phases.md)
 * [Deploy an agent on Windows](../../agents/v2-windows.md)
 * [Deploy an agent on macOS](../../agents/v2-osx.md)
 * [Deploy an agent on Linux](../../agents/v2-linux.md)

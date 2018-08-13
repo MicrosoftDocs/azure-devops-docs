@@ -22,10 +22,10 @@ monikerRange: '>= tfs-2015'
 
 This task is deprecated in Azure Pipelines and TFS 2018 and later. Use version 2.x or higher of the
 [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md)
-task together with [phases](../../process/phases.md)
+task together with [jobs](../../process/phases.md)
 to run unit and functional tests on the universal agent.
 
-For more details, see [Testing with unified agents and phases](../../test/test-with-unified-agent-and-phases.md).
+For more details, see [Testing with unified agents and jobs](../../test/test-with-unified-agent-and-phases.md).
 
 ::: moniker-end
 

@@ -267,13 +267,13 @@ Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to sp
 
 ::: moniker range="vsts"
 
-You can use [phases](../process/phases.md) in your YAML file to set up a pipeline of deployments.
-Using phases, you can control the order of deployment to multiple web apps.
+You can use [jobs](../process/phases.md) in your YAML file to set up a pipeline of deployments.
+Using jobs, you can control the order of deployment to multiple web apps.
 
 ```yaml
-phases:
+jobs:
 
-- phase: buildandtest
+- job: buildandtest
   queue: Hosted Linux Preview
   steps:
 
@@ -287,13 +287,13 @@ phases:
       azureSubscription: '<Test environment Azure service connection>'
       WebAppName: '<name of test environment web app>'
 
-- phase: prod
+- job: prod
   queue: Hosted Linux Preview
   dependsOn: buildandtest
   condition: succeeded()
   steps:
 
-  # step to download the artifacts from the previous phase
+  # step to download the artifacts from the previous job
   - task: DownloadBuildArtifacts@0
     inputs:
       artifactName: drop
@@ -334,8 +334,8 @@ a web config transformation or by substituting variables in your Web.config file
 The following snippet shows an example of variable substitution:
 
 ```yaml
-phases:
-- phase: test
+jobs:
+- job: test
   variables:
     connectionString: <test-environment connection string>
   steps:
@@ -345,7 +345,7 @@ phases:
       WebAppName: '<name of test environment web app>'
       enableXmlVariableSubstitution: true
 
-- phase: prod
+- job: prod
   dependsOn: test
   variables:
     connectionString: <prod-environment connection string>
@@ -386,7 +386,7 @@ You may choose to deploy only certain builds to your Azure Web App.
 
 To do this in YAML, you can use one of these techniques:
 
-* Isolate the deployment steps into a separate phase, and add a condition to that phase.
+* Isolate the deployment steps into a separate job, and add a condition to that job.
 * Add a condition to the step.
 
 The following example shows how to use step conditions to deploy only those builds that originate from master branch.

@@ -22,11 +22,11 @@ monikerRange: '>= tfs-2015'
 
 At the beginning of the build pipeline, the agent downloads files from your remote repository into a local sources directory.
 
-[//]: # (TODO: confirm 2018 was version of multiple phases)
+[//]: # (TODO: confirm 2018 was version of multiple jobs)
 
 ::: moniker range=">= tfs-2018"
 
-If your build consists of multiple jobs (for example, because of multiple phases), the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build pipeline.
+If your build consists of multiple jobs (for example, because of multiple jobs), the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build pipeline.
 
 ::: moniker-end
 

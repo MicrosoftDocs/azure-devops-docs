@@ -149,15 +149,15 @@
       href: process/tasks.md
     - name: Jobs
       items: 
-      - name: Phases
+      - name: Jobs
         href: process/phases.md
-      - name: Container phases
+      - name: Container jobs
         href: process/container-phases.md
-      - name: Server phases
+      - name: Server jobs
         href: process/server-phases.md
-      - name: Deployment group phases
+      - name: Deployment group jobs
         href: process/deployment-group-phases.md
-      - name: Multiple phases
+      - name: Multiple jobs
         href: process/multiple-phases.md
     - name: Conditions
       href: process/conditions.md

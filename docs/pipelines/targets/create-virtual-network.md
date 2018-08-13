@@ -304,7 +304,7 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 
    ![Configuring the boundary VM agent to communicate with TFS or Azure Pipelines](_img/virtual-networks/35.png)
 
-1. Ensure the agent name you provide is unique. This will be used as demand in succeeding phase properties
+1. Ensure the agent name you provide is unique. This will be used as demand in succeeding job properties
    so that the correct agent will be selected. If you selected the deployment group agent option, this
    parameter is replaced by the value of the tag, which must also be unique.
 
@@ -315,20 +315,20 @@ You can create any of the above topologies using the SCVMM extension, as shown i
 
 ## Enable your build-deploy-test scenario
 
-1. Create a new phase in your pipeline, after your network virtualization phase.
+1. Create a new job in your pipeline, after your network virtualization job.
 
 1. Based on the boundary VM agent (deployment group agent or automation agent) that is created as part of your
-   boundary VM provisioning, choose **Deployment group phase** or **Agent phase**.
+   boundary VM provisioning, choose **Deployment group job** or **Agent job**.
 
-1. In the phase properties, select the appropriate deployment group or automation agent pool.
+1. In the job properties, select the appropriate deployment group or automation agent pool.
 
 1. In the case of an automation pool, add a new **Demand** for **Agent.Name** value. Enter the unique name
-   used in the network virtualization phase. In the case of deployment group phase, you must set the tag in
+   used in the network virtualization job. In the case of deployment group job, you must set the tag in
    the properties of the group machines.
 
    ![Entering an agent demand or tag name](_img/virtual-networks/36.png)
 
-1. Inside the phase, add the tasks you require for deployment and testing.
+1. Inside the job, add the tasks you require for deployment and testing.
 
    ![Adding the tasks required for deployment and testing](_img/virtual-networks/37.png)
 

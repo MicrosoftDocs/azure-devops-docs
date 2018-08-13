@@ -78,21 +78,21 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
    > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
 
-1. Open the **Tasks** tab, select the **Agent phase**, and choose **Remove** to remove this phase.
+1. Open the **Tasks** tab, select the **Agent job**, and choose **Remove** to remove this job.
 
-   ![Removing the Agent phase](_img/deploy-linuxvm-deploygroups/remove-agent-phase.png)
+   ![Removing the Agent job](_img/deploy-linuxvm-deploygroups/remove-agent-phase.png)
 
-1. Choose **...** next to the **Environment 1** deployment pipeline and select **Add deployment group phase**.
+1. Choose **...** next to the **Environment 1** deployment pipeline and select **Add deployment group job**.
 
-   ![Adding a Deployment group phase](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
+   ![Adding a Deployment group job](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
 
 1. For the **Deployment Group**, select the deployment group you created earlier such as **myNginx**.
 
    ![Selecting the deployment group](_img/deploy-linuxvm-deploygroups/select-deployment-group.png)
 
-    The tasks you add to this phase will run on each of the machines in the deployment group you specified.
+    The tasks you add to this job will run on each of the machines in the deployment group you specified.
 
-1. Choose **+** next to the **Deployment group phase** and, in the task catalog, search for and add a
+1. Choose **+** next to the **Deployment group job** and, in the task catalog, search for and add a
    **Shell Script** task.
 
    ![Adding a Shell Script task](_img/deploy-linuxvm-deploygroups/add-shellscript-task.png)

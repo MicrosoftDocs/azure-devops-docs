@@ -1,6 +1,6 @@
 ---
-title: Container Phases in Azure Pipelines and TFS
-description: Run pipeline phases inside of a container
+title: Container Jobs in Azure Pipelines and TFS
+description: Run pipeline jobs inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.prod: devops
 ms.technology: devops-cicd
@@ -11,13 +11,13 @@ ms.date: 08/02/2018
 monikerRange: 'vsts'
 ---
 
-# Container phases
+# Container jobs
 
 > [!Note]
-> Container phases are rolling out during the month of August 2018.
+> Container jobs are rolling out during the month of August 2018.
 > They may not yet be available to your organization.
 
-By default, phases run on the host machine where the [agent](../agents/agents.md)
+By default, jobs run on the host machine where the [agent](../agents/agents.md)
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt continuous integration (CI).
 Over time, you may find that you want more control over the environment where your tasks run.
@@ -26,11 +26,11 @@ Containers offer a lightweight abstraction over the host operating system.
 You can select the exact versions of operating systems, tools, and dependencies that your build requires.
 When you specify a container in your pipeline, the agent will first
 fetch and start the container.
-Then, each step of the phase will run inside the container.
+Then, each step of the job will run inside the container.
 
 # [YAML](#tab/yaml)
 
-## Single phase
+## Single job
 
 A simple example:
 
@@ -56,9 +56,9 @@ This tells the system to fetch the `ubuntu` image tagged `16.04` from
 > queue name in order to run containers. Other queues will not work.
 > In late August, we expect to remove the need to specify a queue.
 
-## Multiple phases
+## Multiple jobs
 
-Containers are also useful for running the same steps in [multiple phases](multiple-phases.md).
+Containers are also useful for running the same steps in [multiple jobs](multiple-phases.md).
 In the following example, the same steps run in multiple versions of Ubuntu Linux.
 
 ```yaml
@@ -129,6 +129,6 @@ resources:
 
 # [Designer](#tab/designer)
 
-Container phases are not yet supported in the designer.
+Container jobs are not yet supported in the designer.
 
 ---

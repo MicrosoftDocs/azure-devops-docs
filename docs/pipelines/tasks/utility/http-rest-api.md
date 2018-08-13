@@ -28,7 +28,7 @@ This task is available in both builds and releases in TFS 2018.2 In TFS 2018 RTM
 
 ## Demands
 
-This task can be used in only an [agentless phase](../../process/server-phases.md).
+This task can be used in only an [agentless job](../../process/server-phases.md).
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

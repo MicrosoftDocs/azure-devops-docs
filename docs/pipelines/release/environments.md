@@ -61,7 +61,7 @@ Here are some suggestions and examples for environments:
   and - if all of them pass - swap all the staging slots to production slots.
   In this case, given the interdependence between the sites, you cannot model each site as a different environment.
   Instead, you must model this as a single environment with parallel deployment to multiple sites
-  (typically by using [phases](../process/phases.md)).
+  (typically by using [jobs](../process/phases.md)).
 
 * **Multiple test environments to test the same application** - Having one or more release pipelines,
   each with multiple environments intended to run test automation for a build, is a common practice.
@@ -71,7 +71,7 @@ Here are some suggestions and examples for environments:
   of the previous builds is still in progress.
 
 <a name="approvals"></a><a name="conditions"></a>
-The deployment pipeline of a release to an environment is defined in terms of [phases](../process/phases.md) and [tasks](../process/tasks.md).
+The deployment pipeline of a release to an environment is defined in terms of [jobs](../process/phases.md) and [tasks](../process/tasks.md).
 The physical deployment of a release to an environment is controlled through  
 [approvals and gates](approvals/index.md), [deployment conditions and triggers](triggers.md#env-triggers),
 and [queuing policies](#queuing-policies).

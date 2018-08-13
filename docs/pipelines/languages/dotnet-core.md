@@ -124,7 +124,7 @@ If you need a version of the .NET Core SDK that is not already installed on the 
 
 If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent:
 
-1. In the build pipeline, select **Tasks**, choose the phase that runs your build tasks, and then select **+** to add a new task to that phase.
+1. In the build pipeline, select **Tasks**, choose the job that runs your build tasks, and then select **+** to add a new task to that job.
 
 1. In the task catalog, find and add the **.NET Core Tool Installer** task.
 
@@ -233,7 +233,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+1. Select **Tasks** in the build pipeline, select the job that runs your build tasks, then select **+** to add a new task to that job.
 
 1. In the task catalog, find and add the **.NET Core** task.
 
@@ -280,7 +280,7 @@ YAML builds are not yet available on TFS.
 
 ### Build
 
-1. Select **Tasks** in the build pipeline, select the phase that runs your build tasks, then select **+** to add a new task to that phase.
+1. Select **Tasks** in the build pipeline, select the job that runs your build tasks, then select **+** to add a new task to that job.
 
 1. In the task catalog, find and add the **.NET Core** task.
 

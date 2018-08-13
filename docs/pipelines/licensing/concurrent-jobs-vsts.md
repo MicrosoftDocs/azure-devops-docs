@@ -57,15 +57,15 @@ A release consumes a concurrent job only when it is being actively deploying to 
 0. Release 11 waits for approvals. Fabrikam CI Build 101 starts because a release waiting for approvals does not consume a concurrent job.
 0. Release 11 is approved. It resumes only after Fabrikam CI Build 101 is completed.
 
-## How a concurrent job is consumed by a phase
+## How a concurrent job is consumed by a job
 
-A single build or release can comprise of multiple jobs through [phases](../process/phases.md) and [environments](../release/environments.md).
+A single build or release can comprise of multiple jobs through [jobs](../process/phases.md) and [environments](../release/environments.md).
 
-* An agent phase can create multiple jobs through multi-configuration or multi-agent options. Each of these consumes a concurrent job. If there are not enough concurrent jobs, then the jobs are queued up and run one after the other.
+* An agent job can create multiple jobs through multi-configuration or multi-agent options. Each of these consumes a concurrent job. If there are not enough concurrent jobs, then the jobs are queued up and run one after the other.
 
-* A server phase does not create any jobs, and hence does not consume any concurrent jobs.
+* A server job does not create any jobs, and hence does not consume any concurrent jobs.
 
-* A deployment group phase creates as many jobs as there are machines in the deployment group. Jobs that run on deployment group machines do not consume any concurrent jobs.
+* A deployment group job creates as many jobs as there are machines in the deployment group. Jobs that run on deployment group machines do not consume any concurrent jobs.
 
 ## Determine how many concurrent jobs you need
 

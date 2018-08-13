@@ -20,8 +20,8 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Inside the **Control Options** of each task, and in the **Additional options** for a phase in a release pipeline,
-you can specify the conditions under which the task or phase will run:
+Inside the **Control Options** of each task, and in the **Additional options** for a job in a release pipeline,
+you can specify the conditions under which the task or job will run:
 
 [!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
 * Custom conditions

@@ -27,7 +27,7 @@ deployment group is just another grouping of agents, much like an
 [agent pool](../../agents/pools-queues.md).
 
 When authoring an Azure Pipelines or TFS Release pipeline, you
-can specify the deployment targets for a [phase](../../process/phases.md)
+can specify the deployment targets for a [job](../../process/phases.md)
 using a deployment group. This makes it easy to define
 [parallel execution](../../process/phases.md#parallelexec)
 of deployment tasks.
@@ -55,7 +55,7 @@ server is available, the tags you assigned to each server, and the latest
 deployment to each server.
 
 The tags you assign allow you to limit deployment to specific servers when 
-the deployment group is used in a [Deployment group phase](../../process/deployment-group-phases.md).
+the deployment group is used in a [Deployment group job](../../process/deployment-group-phases.md).
 You manage the security for a deployment group by
 [assigning security roles](../../agents/pools-queues.md#security).
 
@@ -115,7 +115,7 @@ will see the deployment group you added and you can assign project-specific mach
 
 ## Related topics
 
-* [Run on machine group phase](../../process/deployment-group-phases.md)
+* [Run on machine group job](../../process/deployment-group-phases.md)
 * [Deploy an agent on Windows](../../agents/v2-windows.md)
 * [Deploy an agent on macOS](../../agents/v2-osx.md)
 * [Deploy an agent on Linux](../../agents/v2-linux.md)

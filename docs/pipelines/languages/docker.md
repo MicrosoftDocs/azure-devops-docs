@@ -253,7 +253,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in your build pipeline, and then add the **Docker** task to the phase.
+1. Select **Tasks** in your build pipeline, and then add the **Docker** task to the job.
 
 1. Select the task, and then for **Action**, select **Build an image**.
 
@@ -279,7 +279,7 @@ The instructions in the [above example](#example) demonstrate this approach.
 
 ### Build and test in your Dockerfile
 
-In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build pipeline. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build pipeline is entirely configured in your _Dockerfile_. This means your build pipeline is portable from the development machine to any build system. One disadvantage is that you can't leverage Azure Pipelines and TFS features such as tasks, phases, or test analytics.
+In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build pipeline. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build pipeline is entirely configured in your _Dockerfile_. This means your build pipeline is portable from the development machine to any build system. One disadvantage is that you can't leverage Azure Pipelines and TFS features such as tasks, jobs, or test analytics.
 
 To use this approach for the sample app, create a _Dockerfile_ at the root of your repo with the following content:
 
@@ -364,7 +364,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-1. In your build pipeline, select **Tasks**, and then add a **Docker** task to the phase that runs your build tasks.
+1. In your build pipeline, select **Tasks**, and then add a **Docker** task to the job that runs your build tasks.
 
 1. Select the **Docker** task, and then for **Action** select **Push an image**.
 

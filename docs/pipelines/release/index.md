@@ -27,7 +27,7 @@ You start using Release Management by authoring a release pipeline for your appl
 
 An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build pipeline. Release Management can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Team Build, Jenkins, or Team City.
 
-You define the **release pipeline** using [environments](environments.md), and restrict deployments into or out of an environment using [approvals](approvals/index.md). You define the automation in each environment using [phases](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
+You define the **release pipeline** using [environments](environments.md), and restrict deployments into or out of an environment using [approvals](approvals/index.md). You define the automation in each environment using [jobs](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
 
 An example of a release pipeline that can be modeled through a release pipeline in shown below:
 
@@ -44,14 +44,14 @@ An example of how deployment automation can be modeled within an environment is 
 
 ![Artifacts in a pipeline and release](_img/definition-02.png)
 
-In this example, a [phase](../process/phases.md) is used to deploy the app to websites across the globe in parallel within production ring 1.
-After all those deployments are successful, a second phase is used to switch traffic from the previous version to the newer version.
+In this example, a [job](../process/phases.md) is used to deploy the app to websites across the globe in parallel within production ring 1.
+After all those deployments are successful, a second job is used to switch traffic from the previous version to the newer version.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-> **TFS 2015**: Phases, and fork and join deployments, are not available in TFS 2015.
+> **TFS 2015**: Jobs, and fork and join deployments, are not available in TFS 2015.
 
 ::: moniker-end
 
