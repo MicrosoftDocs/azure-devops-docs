@@ -1,7 +1,7 @@
 ---
 title: How email recipients are determined
-titleSuffix: VSTS & TFS 
-description: Describes how email recipients are determined for notifications and events in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+titleSuffix: Azure DevOps Services & TFS 
+description: Describes how email recipients are determined for notifications and events in Azure DevOps Servicesand Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
@@ -16,10 +16,10 @@ monikerRange: '>= tfs-2017'
 
 # How email recipients are determined
 
-<b>VSTS | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+<b>Azure DevOps Services | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 > [!NOTE] 
-> This topic applies to VSTS, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 Who receives an email notification when an event matches a subscription involves a number of factors. Not understanding these factors can result in your inbox receiving too many (or too few) emails. The following explains how the type of subscription, its delivery settings, delivery preferences, and other factors determine the set of recipients.
 
@@ -35,9 +35,9 @@ The recipients for a custom personal subscription is the easiest to understand: 
 
 ![email-personal-other](_img/email-personal-other.png)
 
-## Delivery settings for teams and VSTS groups
+## Delivery settings for teams and Azure DevOps Services groups
 
-Before we look at the recipients for team and group subscriptions, let's look at the delivery settings for teams and VSTS groups in general. These settings control the default delivery behavior when the team or group is the recipient of a notification and the subscription is configured with a delivery option that looks at the recipient's delivery settings.
+Before we look at the recipients for team and group subscriptions, let's look at the delivery settings for teams and Azure DevOps Services groups in general. These settings control the default delivery behavior when the team or group is the recipient of a notification and the subscription is configured with a delivery option that looks at the recipient's delivery settings.
 
 > [!NOTE]
 > Teams are just a special type of group. Subscriptions and delivery settings for a team can be managed in the team level settings UX or at the organization level.
@@ -109,7 +109,7 @@ The delivery option for a default subscription is usually one or more roles. Whe
 
 When a team (or group) is the recipient of a notification and either the subscription or the team's delivery preference indicates that all members of that team should be notified, the team must be "expanded" to determine the actual set of email recipients. This is a potentially recursive process that starts by looking at the team's direct members.
 
-First, only members that have not opted out of the subscription are considered for the final recipient list. Next, any member that is an individual user or mail-enabled group is added to the recipient list. This leaves only VSTS groups remaining. For each group, the group's delivery preferences are examined:
+First, only members that have not opted out of the subscription are considered for the final recipient list. Next, any member that is an individual user or mail-enabled group is added to the recipient list. This leaves only Azure DevOps Services groups remaining. For each group, the group's delivery preferences are examined:
 
 * If "Do not deliver", no further evaluation is performed on this group and the next member group is evaluated
 * If "Deliver to email address", the email address is added to the final recipient list

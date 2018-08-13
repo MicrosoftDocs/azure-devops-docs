@@ -1,6 +1,6 @@
 ---
-title: Notifications index to content for VSTS & TFS
-description: Index to topics for getting notifications or alerts from VSTS or TFS  
+title: Notifications index to content for Azure DevOps Services & TFS
+description: Index to topics for getting notifications or alerts from Azure DevOps Services or TFS  
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: conceptual
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Notifications  
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015**
  
 Stay up-to-date with changes as they occur by subscribing to events such as code changes, build completions, or work item assignments.  
 

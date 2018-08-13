@@ -1,7 +1,7 @@
 ---
 title: View organization-level notifications statistics
-titleSuffix: VSTS & TFS 
-description: View organization-level notifications statistics in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+titleSuffix: Azure DevOps Services & TFS 
+description: View organization-level notifications statistics in Azure DevOps Servicesor Team Foundation Server (TFS)
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2017'
 
 # Analyze organization-level notifications statistics
 
-<b>VSTS | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+<b>Azure DevOps Services | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 > [!NOTE]  
-> This topic applies to VSTS, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or ealier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 ## View notification statistics for organization
 Notification statistics show the top 10 most active subscriptions and the top event initiators in your organization for the current day. Administrators should periodically review statistics to ensure there are no unintended high volume subscriptions or event initiators.
