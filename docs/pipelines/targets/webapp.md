@@ -1,5 +1,5 @@
 ---
-title: Azure web app deployment | Microsoft Docs
+title: Azure Web App deployment | Microsoft Docs
 description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Azure web app deployment
+# Azure Web App deployment
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -53,7 +53,7 @@ Follow the guidance in [.NET Core](../languages/dotnet-core.md) to build the sam
 ::: moniker range="vsts"
 
 The sample code above includes a `.vsts-ci.yml` file at the root of the repository. This file includes some additional instructions in comments to deploy
-the build to an Azure web app. Read through this to learn how to edit the YAML file in order to deploy the sample app.
+the build to an Azure Web App. Read through this to learn how to edit the YAML file in order to deploy the sample app.
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ YAML builds are not yet available on TFS.
 
 After you have a build, create a release pipeline and select the **Azure App Service Deployment** template for your environment.
 This automatically adds the necessary tasks. Link the build as an artifact to this release pipeline. Save the pipeline and create a release to see it in action.
-Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure web app deployment.
+Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
 ---
 
@@ -77,11 +77,11 @@ Then read through the rest of this topic to learn some of the more common change
 
 ::: moniker range="vsts"
 
-The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** (`AzureRmWebAppDeployment`) task.
+The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** (`AzureRmWebAppDeployment`) task.
 
 ### Deploy a web deploy package (ASP.NET)
 
-To deploy a .zip web deploy package (for example, from an [ASP.NET web app](../apps/aspnet/build-aspnet-4.md)) to an Azure web app,
+To deploy a .zip web deploy package (for example, from an [ASP.NET web app](../apps/aspnet/build-aspnet-4.md)) to an Azure Web App,
 add the following snippet to your .vsts-ci.yml file:
 
 ```yaml
@@ -118,7 +118,7 @@ For information on Azure service connections, see the [following section](#endpo
 
 If you are building a [JavaScript Node.js app](../apps/nodejs/build-gulp.md), you publish the entire contents of your
 working directory to the web app. The following snippet also generates a web.config file during deployment and starts
-iisnode handler on the Azure web app:
+iisnode handler on the Azure Web App:
 
 ```yaml
 - task: AzureRmWebAppDeployment@3
@@ -142,7 +142,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-The simplest way to deploy to an Azure web app is to use the **Azure App Service Deploy** task.
+The simplest way to deploy to an Azure Web App is to use the **Azure App Service Deploy** task.
 This task is automatically added to the release pipeline when you select one of the pre-built deployment templates for Azure app service deployment.
 Templates exist for apps developed in various programming languages. If you cannot find a template for your language, select the generic **Azure App Service Deployment** template.
 
@@ -197,7 +197,7 @@ To learn how to create an Azure service connection, see [Create an Azure service
 
 ::: moniker range="vsts"
 
-By default, your deployment happens to the root application in the Azure web app. You can deploy to a specific virtual application using the following:
+By default, your deployment happens to the root application in the Azure Web App. You can deploy to a specific virtual application using the following:
 
 ```yaml
 - task: AzureRmWebAppDeployment@3
@@ -215,7 +215,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-By default, your deployment happens to the root application in the Azure web app. If you want to deploy to a specific virtual application,
+By default, your deployment happens to the root application in the Azure Web App. If you want to deploy to a specific virtual application,
 type its name in the **Virtual Application** property of the **Azure App Service Deploy** task.
 
 ---
@@ -226,7 +226,7 @@ type its name in the **Virtual Application** property of the **Azure App Service
 
 ::: moniker range="vsts"
 
-You can configure the Azure web app to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
+You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 
 The following example shows how to deploy to a staging slot, and then swap to a production slot.
 
@@ -256,7 +256,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-You can configure the Azure web app to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
+You can configure the Azure Web App to have multiple slots. Slots allow you to safely deploy your app and test it before making it available to your customers.
 Use the option **Deploy to Slot** in the **Azure App Service Deploy** task to specify the slot to deploy to. You can swap the slots by using the **Azure App Service Manage** task.
 
 ---
@@ -378,7 +378,7 @@ To change the `connectionString` using variable substitution:
 
 ## Deploying conditionally
 
-You may choose to deploy only certain builds to your Azure web app.
+You may choose to deploy only certain builds to your Azure Web App.
 
 # [YAML](#tab/yaml)
 

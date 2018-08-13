@@ -28,7 +28,7 @@ monikerRange: '>= tfs-2013'
 Azure Pipelines provides integration with Jenkins so that you can:
 
 * Continue to use your existing investments in Jenkins.
-* Create a single release process using Azure Pipelines that deploys to a variety of Azure targets.
+* Create a single release pipeline using Azure Pipelines that deploys to a variety of Azure targets.
 
 In this tutorial, you use Jenkins for Continuous Integration (CI) and Azure Pipelines for Continuous Delivery (CD) to deploy a **Spring Boot app** to an **Azure Container Service (AKS) Kubernetes cluster**.  
 
@@ -323,7 +323,7 @@ You must also configure two Jenkins service hooks so you can execute CI builds v
 
 ## Install the Release Management Utilty tasks Azure Pipelines extension
 
-A release pipeline specifies the process Azure Pipelines executes to deploy the app.  In this example, you deploy your app that originates from the Jenkins CI system.  You deploy to a Docker image running Tomcat and a Spring Boot app to an AKS cluster.
+A release pipeline specifies the steps that Azure Pipelines executes to deploy the app.  In this example, you deploy your app that originates from the Jenkins CI system.  You deploy to a Docker image running Tomcat and a Spring Boot app to an AKS cluster.
 
 Before you create the release pipeline, you need to install an Azure Pipelines extension that will be used to replace the **K8sDeploy.yaml** file's **__Build.BuildId__** token with the current Jenkins build id.
 
@@ -341,7 +341,7 @@ Before you create the release pipeline, you need to install an Azure Pipelines e
 
 1. Open the **Releases** on the **Pipelines** hub, and choose **Create release pipeline**.
 
-1. Select the **Empty** template by choosing **Start with an Empty process**.
+1. Select the **Empty** template by choosing **Start with an empty pipeline**.
 
 1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service connection. Then select the Jenkins source job and choose **Add**.
 

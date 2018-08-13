@@ -24,7 +24,7 @@ monikerRange: '>= tfs-2015'
 An **environment** is a _logical_ and _independent_ entity that
 represents where you want to deploy a release generated from a release
 pipeline. We'll examine these two characteristics in more detail
-to help you understand how to divide your release process into
+to help you understand how to divide your release pipeline into
 environments in your DevOps CI/CD processes.
 
 First, an environment in a release pipeline is a **logical** entity.
@@ -71,7 +71,7 @@ Here are some suggestions and examples for environments:
   of the previous builds is still in progress.
 
 <a name="approvals"></a><a name="conditions"></a>
-The deployment process of a release to an environment is defined in terms of [phases](../process/phases.md) and [tasks](../process/tasks.md).
+The deployment pipeline of a release to an environment is defined in terms of [phases](../process/phases.md) and [tasks](../process/tasks.md).
 The physical deployment of a release to an environment is controlled through  
 [approvals and gates](approvals/index.md), [deployment conditions and triggers](triggers.md#env-triggers),
 and [queuing policies](#queuing-policies).

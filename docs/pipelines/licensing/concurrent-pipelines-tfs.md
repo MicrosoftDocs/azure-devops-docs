@@ -93,7 +93,7 @@ If you need to run more concurrent releases, you can [buy additional private job
 
 ## View and manage concurrent jobs
 
-0. Browse to **Collection settings**, **Build and Release**, **Resource limits**.
+0. Browse to **Collection settings**, **Pipelines**, **Resource limits**.
 
  ![control-panel-account-build-and-release-resource-limits](_img/concurrent-pipelines-tfs/control-panel-account-build-and-release-resource-limits.png)
 

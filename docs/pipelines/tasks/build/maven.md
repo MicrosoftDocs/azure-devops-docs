@@ -96,7 +96,7 @@ See [The Maven build task now supports PMD analysis out of the box](https://blog
 
 ## Example
 
-[Build and Deploy your Java application to an Azure web app](../../apps/java/build-maven.md)
+[Build and Deploy your Java application to an Azure Web App](../../apps/java/build-maven.md)
 
 
 ## Open source

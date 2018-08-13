@@ -1,6 +1,6 @@
 ---
 title: Build your Go app  | Azure Pipelines or Team Foundation Server
-description: Learn how you can use the continuous integration (CI) process in Azure Pipelines or TFS to automatically build your Go application
+description: Learn how you can use the continuous integration (CI) pipeline in Azure Pipelines or TFS to automatically build your Go application
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: cd16d151-8786-4b65-82eb-95d152232f39
@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your Go application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a Go application.
+Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build your Go application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline for a Go application.
 
 ## Prerequisites
 
@@ -152,14 +152,14 @@ Navigate to the **Builds** tab of the **Pipelines** hub in Azure Pipelines or TF
 
   ### Finish
 
-1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous integration** trigger. This will ensure that the build process is automatically triggered every time changes are pushed to your repository.
+1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous integration** trigger. This will ensure that the build pipeline is automatically triggered every time changes are pushed to your repository.
 
 1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 [//]: # (TODO:> [!TIP])
-[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
+[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build pipeline for your Git repo](#)
 
 ## View the build summary
 

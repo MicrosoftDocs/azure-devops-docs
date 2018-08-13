@@ -110,13 +110,13 @@ Select this check box if you want the task to run even if the build or deploymen
 >
 > To use this capability you must be working on Azure Pipelines and enable the **Task tool installers** [preview feature](../../project/navigation/preview-features.md).
 
-Tool installers enable your build process to install and control your dependencies. Specifically, you can:
+Tool installers enable your build pipeline to install and control your dependencies. Specifically, you can:
 
 * Install a tool or runtime on the fly (even on [Microsoft-hosted agents](../agents/hosted.md)) just in time for your CI build.
 
 * Validate your app or library against multiple versions of a dependency such as Node.js.
 
-For example, you can set up your build process to run and validate your app for multiple versions of Node.js.
+For example, you can set up your build pipeline to run and validate your app for multiple versions of Node.js.
 
 ### Example: Test and validate your app on multiple versions of Node.js
 

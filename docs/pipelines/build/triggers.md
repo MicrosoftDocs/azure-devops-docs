@@ -213,14 +213,14 @@ When a developers try to check-in, they are prompted to build their changes.
 
 The system then creates a shelveset and builds it.
 
-For details on the gated check-in experience, see [Check in to a folder that is controlled by a gated check-in build process](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
+For details on the gated check-in experience, see [Check in to a folder that is controlled by a gated check-in build pipeline](../../repos/tfvc/check-folder-controlled-by-gated-check-build-process.md).
 
 
 ### Option to run CI builds
 
 By default, CI builds are not run after the gated check-in process is complete and the changes are checked in.
 
-However, if you **do** want CI builds to run after a gated check-in, select the **Run CI triggers for committed changes** check box. When you do this, the build process does not add **&#42;&#42;&#42;NO_CI&#42;&#42;&#42;** to the changeset description. As a result, CI builds that are affected by the check-in are run.
+However, if you **do** want CI builds to run after a gated check-in, select the **Run CI triggers for committed changes** check box. When you do this, the build pipeline does not add **&#42;&#42;&#42;NO_CI&#42;&#42;&#42;** to the changeset description. As a result, CI builds that are affected by the check-in are run.
 
 
 ### A few other things to know
@@ -250,7 +250,7 @@ After you add a **build completion** trigger, select the **triggering build**. I
 
 > [!NOTE]
 > Keep in mind that in some cases, a single [multi-phase build](../process/phases.md) could meet your needs.
-> However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent process.
+> However, a build completion trigger is useful if your requirements include different configuration settings, options, or a different team to own the dependent pipeline.
 
 ### Download artifacts from the triggering build
 

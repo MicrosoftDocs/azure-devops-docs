@@ -17,4 +17,4 @@ Configure the inputs for the **Deploy Azure App Service** task in the release pi
 > [!NOTE]
 > If you don't see the Azure subscription in the menu, make sure you are a co-administrator of the Azure subscription you want to use. You can [create your own Azure subscription for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-Next, select the name of the Azure web app you created for the **App service name**.
+Next, select the name of the Azure Web App you created for the **App service name**.

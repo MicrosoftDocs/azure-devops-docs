@@ -64,7 +64,7 @@ YAML builds are not yet available on TFS.
 
 Follow the steps below to create a CI trigger that will run a build for feature branches.
 
-1. Select **Build and Release**, and then choose **Builds**.
+1. Select **Pipelines**, and then choose **Builds**.
 2. Locate the build pipeline that services your master branch. Select **Edit**.
 3. Select the **Triggers** menu for your build.  Ensure you have **Continuous integration** enabled.
 4. Select the **+ Add** icon under **Branch filters**.
@@ -75,7 +75,7 @@ Follow the steps below to create a CI trigger that will run a build for feature 
 
 ## Automatically build a change in topic branch
 
-Your are now ready for CI for both the master branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build process to ensure the quality of your code remains high.
+Your are now ready for CI for both the master branch and future feature branches that match the branch pattern.  Every code change for the branch will use an automated build pipeline to ensure the quality of your code remains high.
 
 Follow the steps below to edit a file and create a new topic branch.
 
@@ -85,7 +85,7 @@ Follow the steps below to edit a file and create a new topic branch.
 1. Navigate to the **Pipelines** menu in Azure Pipelines or TFS and select **Builds**.
 1. Select the build pipeline for this repo. You should now see a new build executing for the topic branch. This build was initiated by the trigger you created earlier. Wait for the build to finish.
 
-Your typical development process includes developing code locally and periodically pushing to your remote topic branch.  Each push you make results in a build process executing in the background.  The build process helps you catch errors earlier and helps you to maintain a quality topic branch that can be safely merged to master.  Practicing CI for your topic branches helps to minimize risk when merging back to master.
+Your typical development process includes developing code locally and periodically pushing to your remote topic branch.  Each push you make results in a build pipeline executing in the background.  The build pipeline helps you catch errors earlier and helps you to maintain a quality topic branch that can be safely merged to master.  Practicing CI for your topic branches helps to minimize risk when merging back to master.
 
 ## Exclude or include tasks for builds based on the branch being built
 
@@ -148,7 +148,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-1. Navigate to your project in Azure Pipelines or TFS. Select **Build and Release**, and then select **Builds**. Locate your build, and select **Edit**.
+1. Navigate to your project in Azure Pipelines or TFS. Select **Pipelines**, and then select **Builds**. Locate your build, and select **Edit**.
 1. Select **Triggers**. Enable the **Pull request validation** trigger. Ensure you include the **master branch** under **Branch filters**.
 1. Select **Save & queue**, then select **Save**.
 1. Navigate to your GitHub account. Navigate to the main page for your **repository**.

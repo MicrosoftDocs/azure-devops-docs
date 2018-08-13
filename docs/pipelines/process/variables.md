@@ -335,7 +335,7 @@ For example, on the [Build tab](../tasks/index.md) of a build pipeline, add this
 | ![](../tasks/utility/_img/command-line.png) **Utility: Command Line** | Tool: `echo`<br />Arguments: `$(PATH)` |
 
 > [!NOTE]
-> If you have defined a process variable of the same name as an environment variable (for example, `PATH`), your value overrides the agent host's environment variable.
+> If you have defined a pipeline variable of the same name as an environment variable (for example, `PATH`), your pipeline variable value overrides the agent host's environment variable.
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->

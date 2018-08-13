@@ -29,7 +29,7 @@ To use a Microsoft-hosted agent pool, first decide which queue to use:
 | Development tools on macOS | Hosted macOS (see notes below) |
 | Visual Studio 2013 or Visual Studio 2015 | Hosted |
 
-Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
+Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Pipeline** step, for the **Agent queue**, select the queue you decided on.
 
 Notes on choosing **Hosted macOS**:
 
@@ -67,7 +67,7 @@ Microsoft-hosted agents do not offer:
 
 * The ability to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx).
 
-* Potential performance advantages that you might get by using self-hosted agents which might start and process builds faster. [Learn more](agents.md#private-agent-performance-advantages)
+* Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 
 If Microsoft-hosted agents don't meet your needs, then you can [deploy your own self-hosted agents](agents.md#install).
 

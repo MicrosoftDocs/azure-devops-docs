@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 Performing user interface (UI) testing as part of the
-release process is a great way of detecting
+release pipeline is a great way of detecting
 unexpected changes, and need not be difficult. This
 topic describes using Selenium to test your website
 during a continuous deployment release and test automation.
@@ -156,15 +156,15 @@ from Visual Studio Test Explorer.
    
 4. Run the Selenium test locally using Test Explorer and check that it works.
 
-## Define your CI build process
+## Define your CI build pipeline
 
-You'll need a continuous integration (CI) build process that builds your Selenium tests.
+You'll need a continuous integration (CI) build pipeline that builds your Selenium tests.
 For more details, see [Build your .NET desktop app for Windows](../apps/windows/dot-net.md).
 
 ## Create your web app
 
-You'll need a web app to test. You can use an existing app, or deploy one in your CD release process.
-The example code above runs tests against Bing.com. For details of how to set up your own release process
+You'll need a web app to test. You can use an existing app, or deploy one in your CD release pipeline.
+The example code above runs tests against Bing.com. For details of how to set up your own release pipeline
 to deploy a web app, see [Deploy to Azure web apps](../targets/webapp.md).
 
 ## Decide how you will deploy and test your app
@@ -182,7 +182,7 @@ You can deploy and test your app using either the Microsoft-hosted agent in Azur
   <p />
   
 * When using a **self-hosted agent** that you deploy on your target servers, agents must be configured to run interactively with auto-logon enabled.
-  See [Build and Release Agents](../agents/agents.md#account).
+  See [Build and release agents](../agents/agents.md#account).
 
 <a name="include-test"></a>
 ## Include the test in a CD release

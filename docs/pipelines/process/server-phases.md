@@ -51,7 +51,7 @@ YAML is not yet supported in TFS.
 
 # [Designer](#tab/designer)
 
-You add a server phase in the editor by selecting '...' on **Process** channel in the **Tasks** tab of a pipeline. The properties for the server phase are displayed when you select the phase in the editor.
+You add a server phase in the editor by selecting '...' on the **Pipeline** channel in the **Tasks** tab of a pipeline. The properties for the server phase are displayed when you select the phase in the editor.
 
 ---
 

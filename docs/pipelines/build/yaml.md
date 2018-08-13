@@ -1,6 +1,6 @@
 ---
 title: CI Build in code using YAML | Azure Pipelines or Team Foundation Server
-description: Learn how to define your CI build process in YAML in Azure Pipelines and Team Foundation Server (TFS)
+description: Learn how to define your CI build pipeline in YAML in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,16 +14,16 @@ monikerRange: 'vsts'
 
 # How to use YAML builds
 
-When you define a CI build on Azure Pipelines, you've got a fundamental choice: use a web-based interface or configure your CI process as code in a YAML build. YAML build pipelines give you the advantages of configuration as code.
+When you define a CI build on Azure Pipelines, you've got a fundamental choice: use a web-based interface or configure your CI pipeline as code in a YAML build. YAML build pipelines give you the advantages of configuration as code.
 
 > [!NOTE]
 > To use YAML you must have the **Build YAML pipelines** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
 
-In a YAML build pipeline, your CI build process configured as code, which means:
+In a YAML build pipeline, your CI build steps are configured as code, which means:
 
 * The pipeline is versioned with your code and follows the same branching structure as your code. So you get validation of your changes through code reviews in pull requests and branch build policies.
 
-* If a change to the build process causes a break or results in an unexpected outcome, you can much more easily identify the issue because the change is in version control with the rest of your codebase. This way you can more clearly see the issue and fix it like any other kind of bug.
+* If a change to the build pipeline causes a break or results in an unexpected outcome, you can much more easily identify the issue because the change is in version control with the rest of your codebase. This way you can more clearly see the issue and fix it like any other kind of bug.
 
 ## Get started
 
@@ -85,7 +85,7 @@ If your code is in GitHub, or if you want to create multiple YAML build pipeline
 
 1. Select the repo that contains your .YML file.
 
-1. Click **Process**.
+1. Click **Pipeline**.
 
 1. For the **Agent queue** select any of the hosted options.
 

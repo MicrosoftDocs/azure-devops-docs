@@ -20,7 +20,7 @@ ms.topic: include
 
  ---
 
-1. In the right panel, click **Start with an Empty Process**.
+1. In the right panel, click **Start with an empty pipeline**.
 
 1. For the **Agent queue**, select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
@@ -54,11 +54,11 @@ ms.topic: include
 
    * **Action:** Push an image.
 
-1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 [//]: # (TODO:> [!TIP])
-[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
+[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build pipeline for your Git repo](#)

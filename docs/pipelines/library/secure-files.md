@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 Use the **Secure Files** library to store files such as signing certificates, Apple Provisioning Profiles, Android Keystore files, and SSH keys on the server without having to commit them to your source repository. Secure files are defined and managed in the **Library** tab of the **Pipelines** hub.
 
-The contents of the secure files are encrypted and can only be used during the build or release process by referencing them from a task. The secure files are available across multiple build and release pipelines in the project based on the security settings. Secure files follow the [library security model](index.md#security).
+The contents of the secure files are encrypted and can only be used during the build or release pipeline by referencing them from a task. The secure files are available across multiple build and release pipelines in the project based on the security settings. Secure files follow the [library security model](index.md#security).
 
 There's a size limit of 10 MB for each secure file.
 

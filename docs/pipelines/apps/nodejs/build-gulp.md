@@ -1,6 +1,6 @@
 ---
 title: CI build for a Node.js app with gulp
-description: Learn how you can define a continuous integration (CI) build process for your Node.js app with gulp in Azure Pipelines or Team Foundation Server (TFS)
+description: Learn how you can define a continuous integration (CI) build pipeline for your Node.js app with gulp in Azure Pipelines or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Follow these steps to set up a continuous integration (CI) process for a Node.js app using Azure Pipelines or Team Foundation Server (TFS).
+Follow these steps to set up a continuous integration (CI) pipeline for a Node.js app using Azure Pipelines or Team Foundation Server (TFS).
 
 As you walk through this quickstart, we'll ask you to choose:
 
@@ -28,7 +28,7 @@ As you walk through this quickstart, we'll ask you to choose:
 
 * How you want to define your build: in a web interface, or configured as code in YAML
 
-* For continuous deployment, what is your target: Azure web app or IIS server in a Windows VM, a Linux VM, or a Docker container.
+* For continuous deployment, what is your target: Azure Web App or IIS server in a Windows VM, a Linux VM, or a Docker container.
 
 As you choose from these options in the sections below, this topic will adapt to your choices.
 
@@ -66,7 +66,7 @@ Where do you want to keep your code? Whichever service you choose, our system ca
 
 ## Web or config as code
 
-Do you want to define your build process in your web browser or configure it as code in YAML?
+Do you want to define your build pipeline in your web browser or configure it as code in YAML?
 
 # [YAML](#tab/yaml)
 
@@ -95,7 +95,7 @@ Choose this option if you prefer a graphical interface in your web browser.
 
 ---
 
-## Create the CI process pipeline
+## Create the CI pipeline pipeline
 
 [!INCLUDE [include](../../_shared/ci-quickstart-intro.md)]
 
@@ -148,19 +148,19 @@ In GitHub:
 <a name="deploy"></a>
 ## Choose your deployment target
 
-While a CI build process is a powerful way to do day-to-day development, continuous deployment is how many teams accelerate how they deliver value to customers. After each successful CI build, you can automatically deploy your app.
+While a CI build pipeline is a powerful way to do day-to-day development, continuous deployment is how many teams accelerate how they deliver value to customers. After each successful CI build, you can automatically deploy your app.
 
-To get ready for continuous deployment, choose which kind of deployment target you want, and then adjust your CI process as needed.
+To get ready for continuous deployment, choose which kind of deployment target you want, and then adjust your CI pipeline as needed.
 
-# [Azure web app or IIS server](#tab/deploy-windows/designer)
+# [Azure Web App or IIS server](#tab/deploy-windows/designer)
 
 All the tasks you need were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
 Select **Tasks**. Select the **Run gulp** task from the tasks. On the right side, you see the parameters for the task. Under the section JUnit Test Results, make sure the option to **Publish to Azure Pipelines/TFS** is selected.
 
-Proceed to finish the CI process pipeline.
+Proceed to finish the CI pipeline pipeline.
 
-# [Azure web app or IIS server](#tab/deploy-windows/yaml)
+# [Azure Web App or IIS server](#tab/deploy-windows/yaml)
 
 ```yaml
 steps:
@@ -265,9 +265,9 @@ Commit the above change to the master branch.
 
 ---
 
-## Finish the CI process pipeline
+## Finish the CI pipeline pipeline
 
-You're nearly ready to go. Just a few more steps to complete your CI build process.
+You're nearly ready to go. Just a few more steps to complete your CI build pipeline.
 
 # [Azure Repos or TFS repo](#tab/gitvsts/designer)
 
@@ -281,7 +281,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
  Observe that the new build pipeline is automatically linked to your repository.
 
-1. Select the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Select the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 
 1. Choose **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, choose **Save & queue**.
 
@@ -307,7 +307,7 @@ You're nearly ready to go. Just a few more steps to complete your CI build proce
 
  Select your version control repository. You'll need to authorize access to your repo.
 
-1. Select the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Select the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 
 1. Choose **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, choose **Save & queue**.
 
@@ -323,7 +323,7 @@ In Azure Pipelines:
 
 1. Select **Get sources**, select **GitHub**, and then select your version control repository. You'll need to authorize access to your repo.
 
-1. Select **Process**.
+1. Select **Pipeline**.
 
 1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your app.
 
@@ -345,14 +345,14 @@ In Azure Pipelines:
 
 ## Next steps
 
-You've just put your own CI build process in place to automatically build and validate whatever code is checked in by your team. What do you want to do next?
+You've just put your own CI build pipeline in place to automatically build and validate whatever code is checked in by your team. What do you want to do next?
 
 ### Deploy your app
 
-# [Azure web app or IIS server](#tab/deploy-windows)
+# [Azure Web App or IIS server](#tab/deploy-windows)
 
 > [!IMPORTANT]
-> Make sure you followed the **[deployment instructions above](#deploy)** with the **Azure web app or IIS server** tab selected.
+> Make sure you followed the **[deployment instructions above](#deploy)** with the **Azure Web App or IIS server** tab selected.
 
 See one of the following:
 
@@ -378,7 +378,7 @@ See [Build and push a Docker image](../../languages/docker.md).
 
 ### Extend to other Git workflows
 
-Now that you have a CI build process for your master branch, you can extend the process to work with other branches in your repository, or to validate all pull requests. See:
+Now that you have a CI build pipeline for your master branch, you can extend it to work with other branches in your repository, or to validate all pull requests. See:
 
 * [CI builds for Git in Azure Pipelines](../../build/ci-build-git.md)
 

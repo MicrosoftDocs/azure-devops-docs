@@ -68,7 +68,7 @@
     href: build/ci-build-github.md
   - name: Build OSS repos
     href: build/ci-public.md
-  - name: CD to Azure web app
+  - name: CD to Azure Web App
     href: apps/cd/deploy-webdeploy-webapps.md
   - name: Set up multi-stage release
     href: release/define-multistage-release-process.md
@@ -143,7 +143,7 @@
       href: release/env-templates.md
     - name: Releases and deployments
       href: release/releases.md
-  - name: Process
+  - name: Pipeline
     items:
     - name: Tasks
       href: process/tasks.md

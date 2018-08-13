@@ -42,7 +42,7 @@ In this tutorial, you learn how to:
 > Ensure your browser does not block the pop-up on step 6 below.
 
 1. Ensure that you have a `.vsts-ci.yml` file at the root of your repository in `master` branch. If you started from the [sample .NET Core repo](https://github.com/adventworks/dotnetcore-sample) it already has one. See the various other languages that we support in this documentation for examples of YAML file for the type of app you are interested in.
-1. Navigate to your Azure DevOps organization and project. Select **Build and Release**, and then select **Builds**.
+1. Navigate to your Azure DevOps organization and project. Select **Pipelines**, and then select **Builds**.
 1. Select **New** to create a new build pipeline.
 1. Select **GitHub** for the type of repository.
 1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
@@ -63,7 +63,7 @@ Follow the steps below to configure GitHub as a source for your Azure Pipelines 
 > [!IMPORTANT]
 > Ensure your browser does not block the pop-up on step 4 below.
 
-1. Navigate to your Azure DevOps organization and project. Select **Build and Release**, and then select **Builds**.
+1. Navigate to your Azure DevOps organization and project. Select **Pipelines**, and then select **Builds**.
 1. Select **New** to create a new build pipeline.
 1. Select **GitHub** for the type of repository.
 1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.

@@ -21,13 +21,13 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ---
 
 
-# Implement a CI/CD process to build and deploy your ASP.NET Core app to Azure
+# Implement a CI/CD pipeline to build and deploy your ASP.NET Core app to Azure
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
 ASP.NET Core apps.
 This quickstart shows how to set up CI and CD to deploy
 an ASP.NET Core app
-to an Azure web app.
+to an Azure Web App.
 You create the web app using the Azure CLI, then set up CI/CD in Azure Pipelines.
 
 ![Screenshot showing ASP.NET Core web app](../../../apps/cd/azure/_img/aspnet-core-to-windows-vm/cicd-get-started-dotnetcore-sample.png)
@@ -73,7 +73,7 @@ Add the following line of text above the carousel display in the page:
 <h1>Demo of ASP.NET Core CI/CD!!</h1>
 ```
 
-Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
+Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure Web App.
 
 [!INCLUDE [temp](../_shared/browse-to-web-app.md)]
 

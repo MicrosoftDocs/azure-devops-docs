@@ -1,6 +1,6 @@
 ---
 title: Build your Xcode app | Azure Pipelines or Team Foundation Server
-description: Learn how you can use the continuous integration (CI) process in Azure Pipelines or Team Foundation Server (TFS) to build and test Xcode projects
+description: Learn how you can use the continuous integration (CI) pipeline in Azure Pipelines or Team Foundation Server (TFS) to build and test Xcode projects
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: e1b5bda1-9cab-4083-a593-36ae52e82b4a
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xcode app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
+Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build and package your Xcode app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline.
 
 ## Prerequisites
 
@@ -95,7 +95,7 @@ The sample provided here is an iOS app, but the concepts described here translat
 
  ---
 
-1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 

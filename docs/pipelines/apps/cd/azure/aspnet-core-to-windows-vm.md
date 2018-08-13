@@ -23,7 +23,7 @@ monikerRange: 'vsts'
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to a Windows virtual machine (VM) in Azure.
 
-You'll use the Azure Pipelines portal to set up CI/CD. Your CI process runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD process automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
+You'll use the Azure Pipelines portal to set up CI/CD. Your CI pipeline runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD pipeline automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
 
 ![A typical release pipeline for web applications](_shared/_img/vscode-git-ci-cd-to-azure.png)
 
@@ -70,7 +70,7 @@ Your code changes automatically appear on your site:
 
 1. For the **Agent queue**, select _Hosted VS2017_. This is how you can use our pool of agents that have the software you need to build your app.
 
-1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 
@@ -83,7 +83,7 @@ A new build is started. You'll see a link to the new build on the top of the pag
 
 ## Set up continuous deployment
 
-Continuous deployment (CD) is a lean practice that your team can use to keep production fresh. Here you'll set up a short automatic path from the availability of new code in version control to deployment. Specifically, you'll define a CD release management process that picks up the artifacts from your CI build and deploys you app to the IIS web server hosted in your Windows VM.
+Continuous deployment (CD) is a lean practice that your team can use to keep production fresh. Here you'll set up a short automatic path from the availability of new code in version control to deployment. Specifically, you'll define a CD pipeline that picks up the artifacts from your CI build and deploys you app to the IIS web server hosted in your Windows VM.
 
 1. Once the build succeeds, click the **Release** action on the build summary page.
 
@@ -109,7 +109,7 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 
  ![new release created message](_shared/_img/new-release-created-message.png)
 
-1. Click the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure web app.
+1. Click the **Logs** tab to watch the live logs from the deployment as it happens. Wait for the release to be deployed to the Azure Web App.
 
 1. Once deployment has completed, open your web browser and test your web app: `http://<publicIpAddress>`
 
@@ -118,12 +118,12 @@ Continuous deployment (CD) is a lean practice that your team can use to keep pro
 When the deployment is done, verify that your changes are live in your web browser: `
 http://<publicIpAddress>`
 
-You're ready to collaborate with a team on an ASP.NET Core app with a CI/CD process that automatically deploys your latest work to your web site.
+You're ready to collaborate with a team on an ASP.NET Core app with a CI/CD pipeline that automatically deploys your latest work to your web site.
 
 ## Next steps
 
 You've just put your own CI/CD processes in place. You can modify these build and release pipelines to meet the needs of your team. To learn more see one of these tutorials:
 
-* [Customize CD process](../../../release/define-multistage-release-process.md)
+* [Customize CD pipeline](../../../release/define-multistage-release-process.md)
 
 [//]: # (TODO MAYBE [!INCLUDE [include](_shared/quickstart-next-steps.md)

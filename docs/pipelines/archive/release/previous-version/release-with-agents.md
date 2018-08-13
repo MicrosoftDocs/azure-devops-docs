@@ -40,9 +40,9 @@ for your release.
    ![Scan for servers](_img/release-with-agents-01.png)
 
 1. Register the servers to use for your environments. You will deploy your app to 
-   the servers in an environment as part of your release process.
+   the servers in an environment as part of your release pipeline.
 
-   ![Register your server to use in the release process](_img/release-with-agents-02.png)
+   ![Register your server to use in the release pipeline](_img/release-with-agents-02.png)
 
 1. Create environments for each of your stages. Link the servers to your environments.
 
@@ -63,7 +63,7 @@ You also need a build definition that builds your app.
    Choose the environment and approvers to use for each stage of your release.
    You can add multiple final approvers for each stage if you want to.
 
-   ![Add the stages and approvers for your release process](_img/release-with-agents-05.png)
+   ![Add the stages and approvers for your release pipeline](_img/release-with-agents-05.png)
 
 1. Create a release template and use the release path that you just added.
    Link your build definition to this release template to have access to the build.

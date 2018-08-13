@@ -82,7 +82,7 @@ YAML builds are not yet available on TFS.
 
 ---
 
-Read through the rest of this topic to learn some of the common ways to customize your .NET Core build process.
+Read through the rest of this topic to learn some of the common ways to customize your .NET Core build pipeline.
 
 ## Build environment
 
@@ -249,7 +249,7 @@ YAML builds are not yet available on TFS.
 
 ## Build your project
 
-You build your .NET Core project by running `dotnet build` command in your build process.
+You build your .NET Core project by running `dotnet build` command in your build pipeline.
 
 # [YAML](#tab/yaml)
 
@@ -261,7 +261,7 @@ To build your project using .NET Core task, add the following snippet to your `.
 - script: dotnet build # Include additional options such as --configuration to meet your need
 ```
 
-You can run any `dotnet` command in your build process. The following example shows how to install and use a .NET global tool - [dotnetsay](https://www.nuget.org/packages/dotnetsay/).
+You can run any `dotnet` command in your build pipeline. The following example shows how to install and use a .NET global tool - [dotnetsay](https://www.nuget.org/packages/dotnetsay/).
 
 ```yaml
 - script: dotnet tool install -g dotnetsay
@@ -388,7 +388,7 @@ To create a .zip file archive that is ready for publishing to a web app, add the
     zipAfterPublish: True
 ```
 
-To publish this archive to a web app, see [Azure web app deployment](../targets/webapp.md).
+To publish this archive to a web app, see [Azure Web App deployment](../targets/webapp.md).
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -413,7 +413,7 @@ If you want to publish your code to a NuGet feed:
 
 1. Make sure you've selected the option to create a .zip file archive.
 
-1. To publish this archive to a web app, see [Azure web app deployment](../targets/webapp.md).
+1. To publish this archive to a web app, see [Azure Web App deployment](../targets/webapp.md).
 
 ---
 

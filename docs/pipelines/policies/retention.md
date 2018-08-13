@@ -45,7 +45,7 @@ If you are using an on-premises Team Foundation Server, you can specify build re
 
 If you are using Azure Pipelines, you can view but not change these settings for your organization.
 
-Global build retention policy settings can be managed from the **Build and Release** settings of your organization or project collection:
+Global build retention policy settings can be managed from the **Pipelines** settings of your organization or project collection:
 
 ::: moniker range="vsts"
 

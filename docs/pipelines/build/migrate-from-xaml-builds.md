@@ -79,7 +79,7 @@ In each of the following sections we show the XAML user interface, and then prov
 
 | XAML setting | TFS 2017 equivalent | Azure Pipelines and TFS 2018 and newer equivalent |
 |-|-|-|
-| Build pipeline name | You can change it whenever you save the pipeline. | <p>When editing the pipeline: On the **Tasks** tab, in left pane click **Process**, and the **Name** field appears in right pane.</p><p>In the **Builds** hub (**Mine** or **All pipelines** tab), open the action menu and choose **Rename**.</p> |
+| Build pipeline name | You can change it whenever you save the pipeline. | <p>When editing the pipeline: On the **Tasks** tab, in left pane click **Pipeline**, and the **Name** field appears in right pane.</p><p>In the **Builds** hub (**Mine** or **All pipelines** tab), open the action menu and choose **Rename**.</p> |
 | Description (optional) | Not supported. | Not supported. |
 | Queue processing | Not yet supported. As a partial alternative, disable the triggers. | Not yet supported. As an alternative, disable the triggers. |
 
@@ -184,7 +184,7 @@ On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (Azure Pipelines)
 | Advanced, MSBuild arguments | MSBuild Arguments | 
 | Advanced, MSBuild platform | Advanced, MSBuild Architecture |
 | Advanced, Perform code analysis | Use an MSBuild argument such as`/p:RunCodeAnalysis=true` |
-| Advanced, post- and pre-build scripts | You can run one or more scripts at any point in your build process by adding one or more instances of the PowerShell, Batch, and Command tasks. For example, see [Use a PowerShell script to customize your build process](../scripts/powershell.md). |
+| Advanced, post- and pre-build scripts | You can run one or more scripts at any point in your build pipeline by adding one or more instances of the PowerShell, Batch, and Command tasks. For example, see [Use a PowerShell script to customize your build pipeline](../scripts/powershell.md). |
 
 > [!IMPORTANT] 
 > 
@@ -216,7 +216,7 @@ See [Get started with continuous testing](../test/getting-started-with-continuou
 |-|-|-|
 | Maximum agent execution time | None | On the **Options** tab you can specify **Build job timeout in minutes**. |
 | Maximum agent reservation wait time | None | None |
-| Name filter, Tag comparison operator, Tags filter | A build process asserts demands that are matched with agent capabilities. See [Agent capabilities](../agents/agents.md#capabilities). | A build process asserts demands that are matched with agent capabilities. See [Agent capabilities](../agents/agents.md#capabilities). |
+| Name filter, Tag comparison operator, Tags filter | A build pipeline asserts demands that are matched with agent capabilities. See [Agent capabilities](../agents/agents.md#capabilities). | A build pipeline asserts demands that are matched with agent capabilities. See [Agent capabilities](../agents/agents.md#capabilities). |
 | Build number format | On the **General** tab, copy your build number format into the **Build number format** field. | On the **General** tab, copy your build number format into the **Build number format** field. |
 | Create work item on failure | On the **Options** tab, select this check box. | On the **Options** tab, enable this option. |
 | Update work items with build number | None | On the **Options** tab you can enable **Automatically link new work in this build**. | 
@@ -288,7 +288,7 @@ offers hundreds of extensions that you can install to add tasks that extend your
 
 ### Write a script
 
-A major feature of the new build system is its emphasis on using scripts to customize your build process. You can check your scripts into version control and customize your build using any of these methods:
+A major feature of the new build system is its emphasis on using scripts to customize your build pipeline. You can check your scripts into version control and customize your build using any of these methods:
 
 * [PowerShell scripts](../tasks/utility/powershell.md) (Windows)
 * [Batch scripts](../tasks/utility/batch-script.md) (Windows)
@@ -350,7 +350,7 @@ If you're not yet ready to migrate, then to enable XAML builds:
 
 ::: moniker-end
 
-### How do I add conditional logic to my build process?
+### How do I add conditional logic to my build pipeline?
 
 Although the new build pipelines are essentially linear, we do give you control of the conditions under which a task runs.
 

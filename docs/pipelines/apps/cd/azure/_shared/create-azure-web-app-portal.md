@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-## Create an Azure web app using the portal
+## Create an Azure Web App using the portal
 
 > [!NOTE]
 > If you already have a web app that you want to use, you can skip this and move to the next section.  

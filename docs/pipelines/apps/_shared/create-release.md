@@ -2,9 +2,9 @@
 ms.topic: include
 ---
 
-<h2 id="cd">Define your CD release process</h2>
+<h2 id="cd">Define your CD release pipeline</h2>
 
-Your CD release process picks up the artifacts published by your CI build and then deploys them to your Azure web site.
+Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your Azure web site.
 
 1. Do one of the following to start creating a release pipeline:
 
@@ -52,7 +52,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 <h2 id="deploy">Create a release to deploy your app</h2>
 
-You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
+You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
 1. Choose **+ Release** and select **Create Release**.
 

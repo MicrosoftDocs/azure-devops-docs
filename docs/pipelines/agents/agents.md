@@ -2,7 +2,7 @@
 ms.prod: devops
 title: Build and Release Agents | Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
-description: Learn about building your code or deploying your software using Build and Release Agents in Azure Pipelines and Team Foundation Server
+description: Learn about building your code or deploying your software using Build and release agents in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
 ms.manager: douge
@@ -12,7 +12,7 @@ ms.date: 05/31/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Build and Release Agents
+# Build and release agents
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
@@ -278,7 +278,7 @@ You can view the version of an agent by navigating to the **Agent pools** hub an
 
 In many cases, yes. Specifically:
 
-* If you use a self-hosted agent you can run incremental builds. For example, you define a CI build process that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits because the agent is destroyed after the build or release process is completed.
+* If you use a self-hosted agent you can run incremental builds. For example, you define a CI build pipeline that does not clean the repo and does not perform a clean build, your builds will typically run faster. When you use a Microsoft-hosted agent, you don't get these benefits because the agent is destroyed after the build or release pipeline is completed.
 
 * A Microsoft-hosted agent can take longer to start your build. While it often takes just a few seconds for your job to be assigned to a Microsoft-hosted agent, it can sometimes take several minutes for an agent to be allocated depending on the load on our system.
 

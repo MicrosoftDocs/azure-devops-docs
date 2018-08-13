@@ -20,13 +20,13 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-At the beginning of the build process, the agent downloads files from your remote repository into a local sources directory.
+At the beginning of the build pipeline, the agent downloads files from your remote repository into a local sources directory.
 
 [//]: # (TODO: confirm 2018 was version of multiple phases)
 
 ::: moniker range=">= tfs-2018"
 
-If your build consists of multiple jobs (for example, because of multiple phases), the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build process.
+If your build consists of multiple jobs (for example, because of multiple phases), the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build pipeline.
 
 ::: moniker-end
 
@@ -133,7 +133,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 Select one of the following options:
 
-* **Sources**: The build process performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
+* **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
  ```
  git clean -fdx
  git reset --hard HEAD
@@ -151,7 +151,7 @@ Select one of the following options:
 
 #### TFS 2017 RTM
 
-If you select **True** then the build process performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
+If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
 [!INCLUDE [temp](_shared/build-clean-variable.md)]
 
@@ -161,7 +161,7 @@ If you select **True** then the build process performs an undo of any changes. I
 
 #### TFS 2015.4
 
-If you select **True** then the build process performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
+If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
 [!INCLUDE [temp](_shared/build-clean-variable.md)]
 
@@ -179,11 +179,11 @@ Select **true** to delete the repository folder.
 
 [!INCLUDE [include](_shared/label-sources.md)]
 
-The build process labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
+The build pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
 Some build variables might yield a value that is not a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
 
-After the sources are tagged by your build process, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
+After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
 
 ::: moniker-end
 
@@ -227,7 +227,7 @@ If your source is in any other type of remote repository, then you cannot use Az
 Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
 
-The build process will check out your Git submodules as long as they are:
+The build pipeline will check out your Git submodules as long as they are:
 
 * **Unauthenticated:**  A public, unauthenticated repo with no credentials required to clone or fetch.
 
@@ -242,7 +242,7 @@ The build process will check out your Git submodules as long as they are:
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 > [!NOTE]
-> If you're running **TFS 2017.1, TFS 2017 RTM, or TFS 2015**, then the submodules must be children (immediate submodules)** of the Git repo you've selected for this build process. In effect, the build process runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
+> If you're running **TFS 2017.1, TFS 2017 RTM, or TFS 2015**, then the submodules must be children (immediate submodules)** of the Git repo you've selected for this build pipeline. In effect, the build pipeline runs ```git submodule update --init``` (not ```git submodule update -init --recursive```).
 
 ::: moniker-end
 
@@ -316,7 +316,7 @@ Use this option if you want to skip fetching new commits. This option can be use
 
 * Git init, config, and fetch using your own custom options.
 
-* Use a build process to just run automation (for example some scripts) that do not depend on code in version control.
+* Use a build pipeline to just run automation (for example some scripts) that do not depend on code in version control.
 
 If you want to disable downloading sources:
 
@@ -333,7 +333,7 @@ If you want to disable downloading sources:
 
 ### Shallow fetch
 
-Select if you want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build process more efficient. Your repository might be large if it has been in use for a long time. It also might be large if you added and later deleted large files.
+Select if you want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time. It also might be large if you added and later deleted large files.
 
 In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download.
 
@@ -383,11 +383,11 @@ Ignore this text box (**TFS 2017 RTM** or older).
 
 ### Mappings (workspace)
 
-Include with a type value of **Map** only the folders that your build process requires. If a subfolder of a mapped folder contains files that the build process does not require, map it with a type value of **Cloak**.
+Include with a type value of **Map** only the folders that your build pipeline requires. If a subfolder of a mapped folder contains files that the build pipeline does not require, map it with a type value of **Cloak**.
 
-Make sure that you **Map** all folders that contain files that your build process requires. For example, if you add another project, you might have to add another mapping to the workspace.
+Make sure that you **Map** all folders that contain files that your build pipeline requires. For example, if you add another project, you might have to add another mapping to the workspace.
 
-**Cloak** folders you don't need. By default the root folder of project is mapped in the workspace. This configuration results in the build agent downloading all the files in the version control folder of your project. If this folder contains lots of data, your build could waste build system resources and slow down your build process by downloading large amounts of data that it does not require.
+**Cloak** folders you don't need. By default the root folder of project is mapped in the workspace. This configuration results in the build agent downloading all the files in the version control folder of your project. If this folder contains lots of data, your build could waste build system resources and slow down your build pipeline by downloading large amounts of data that it does not require.
 
 When you remove projects, look for mappings that you can remove from the workspace.
 
@@ -412,7 +412,7 @@ For more information on how to optimize a TFVC workspace, see [Optimize your wor
 
 If you want to clean the repo, then select **true**, and then select one of the following options:
 
-* **Sources**: The build process performs an undo of any changes and scorches the current workspace under `$(Build.SourcesDirectory)`.
+* **Sources**: The build pipeline performs an undo of any changes and scorches the current workspace under `$(Build.SourcesDirectory)`.
 
 * **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`.
 
@@ -426,7 +426,7 @@ If you want to clean the repo, then select **true**, and then select one of the 
 
 #### TFS 2017 RTM, TFS 2015.4
 
-If you select **True** then the build process performs an undo of any changes and scorches the workspace.
+If you select **True** then the build pipeline performs an undo of any changes and scorches the workspace.
 
 [!INCLUDE [temp](_shared/build-clean-variable.md)]
 
@@ -442,7 +442,7 @@ Select **true** to delete the repository folder.
 
 [!INCLUDE [include](_shared/label-sources.md)]
 
-The build process labels your sources with a [TFVC label](../../repos/tfvc/use-labels-take-snapshot-your-files.md).
+The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-labels-take-snapshot-your-files.md).
 
 ::: moniker-end
 

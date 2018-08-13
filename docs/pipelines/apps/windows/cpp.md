@@ -1,6 +1,6 @@
 ---
 title: Build your Visual C++ app | Azure Pipelines or Team Foundation Server
-description: Learn how you can use the continuous integration (CI) process in Azure Pipelines or TFS to automatically build your Visual C++ app.
+description: Learn how you can use the continuous integration (CI) pipeline in Azure Pipelines or TFS to automatically build your Visual C++ app.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process for a C++ application compiled with Visual C++.
+Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build your C/C++ application whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline for a C++ application compiled with Visual C++.
 
 ## Prerequisites
 
@@ -100,7 +100,7 @@ https://github.com/adventworks/cpp-sample
 
  * `BuildPlatform` = `x86, x64`
 
-1. Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Click the **Triggers** tab and enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 
 1. Click the **Options** tab and then:
 
@@ -115,7 +115,7 @@ https://github.com/adventworks/cpp-sample
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 [//]: # (TODO:> [!TIP])
-[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
+[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build pipeline for your Git repo](#)
 
 ## View the build summary
 

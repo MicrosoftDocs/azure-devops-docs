@@ -93,7 +93,7 @@ In the following scenarios you might need multiple concurrent jobs:
 
 ## View available concurrent jobs
 
-0. Browse to **Organization settings**, **Build and Release**, **Resource limits**.
+0. Browse to **Organization settings**, **Pipelines**, **Resource limits**.
 
  ![control-panel-account-build-and-release-resource-limits](_img/concurrent-pipelines-vsts/control-panel-account-build-and-release-resource-limits.png)
 

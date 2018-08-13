@@ -388,7 +388,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 
 <tr>
 <td>System.HostType</td>
-<td>Set to `build` if the process is a build or `release` if the process is a release.</td>
+<td>Set to `build` if the pipeline is a build or `release` if the pipeline is a release.</td>
 <tr>
 
 <tr>

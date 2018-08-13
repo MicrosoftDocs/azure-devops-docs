@@ -22,17 +22,17 @@ monikerRange: '>= tfs-2017'
 
 We'll show you how to set up continuous deployment of your app to an nginx web server running on Ubuntu using
 Azure Pipelines or Team Foundation Server (TFS) 2018. You can use the steps in this
-quickstart for any app as long as your continuous integration process publishes a web deployment package.
+quickstart for any app as long as your continuous integration pipeline publishes a web deployment package.
 
 ![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will
 automatically show up on your site.
 
-## Define your CI build process
+## Define your CI build pipeline
 
-You'll need a continuous integration (CI) build process that publishes your web application, as well as
-a deployment script that can be run locally on the Ubuntu server. To set up a CI build process, see:
+You'll need a continuous integration (CI) build pipeline that publishes your web application, as well as
+a deployment script that can be run locally on the Ubuntu server. To set up a CI build pipeline, see:
 
 * [Build your Node.js app with gulp](../nodejs/build-gulp.md)
 
@@ -47,9 +47,9 @@ If you don't already have a Linux VM with Nginx, create one now in Azure using t
 
 [!INCLUDE [create-linux-deployment-group](../_shared/create-linux-deployment-group.md)]
 
-## Define your CD release process
+## Define your CD release pipeline
 
-Your CD release process picks up the artifacts published by your CI build and then deploys them to your nginx servers.
+Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your nginx servers.
 
 1. Do one of the following to start creating a release pipeline:
 
@@ -63,7 +63,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
      ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)
 
-1. Choose **Start with an Empty process**.
+1. Choose **Start with an empty pipeline**.
 
 1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
    is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from
@@ -82,7 +82,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
    ![Removing the Agent phase](_img/deploy-linuxvm-deploygroups/remove-agent-phase.png)
 
-1. Choose **...** next to the **Environment 1** deployment process and select **Add deployment group phase**.
+1. Choose **...** next to the **Environment 1** deployment pipeline and select **Add deployment group phase**.
 
    ![Adding a Deployment group phase](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
 

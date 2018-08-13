@@ -21,15 +21,15 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 A **release pipeline** is one of the fundamental concepts in Release Management for your DevOps CI/CD processes.
-It defines the end-to-end release process for an application to be deployed across various environments.
+It defines the end-to-end release pipeline for an application to be deployed across various environments.
 
-You start using Release Management by authoring a release pipeline for your application. To author a release pipeline, you must specify the [artifacts](artifacts.md) that make up the application and the **release process**.
+You start using Release Management by authoring a release pipeline for your application. To author a release pipeline, you must specify the [artifacts](artifacts.md) that make up the application and the **release pipeline**.
 
-An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build process. Release Management can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Team Build, Jenkins, or Team City.
+An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build pipeline. Release Management can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Team Build, Jenkins, or Team City.
 
-You define the **release process** using [environments](environments.md), and restrict deployments into or out of an environment using [approvals](approvals/index.md). You define the automation in each environment using [phases](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
+You define the **release pipeline** using [environments](environments.md), and restrict deployments into or out of an environment using [approvals](approvals/index.md). You define the automation in each environment using [phases](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
 
-An example of a release process that can be modeled through a release pipeline in shown below:
+An example of a release pipeline that can be modeled through a release pipeline in shown below:
 
 ![Artifacts in a pipeline and release](_img/definition-01.png)
 
@@ -55,7 +55,7 @@ After all those deployments are successful, a second phase is used to switch tra
 
 ::: moniker-end
 
-Besides the release process, release pipelines have a few options that can be customized: 
+Besides the release pipeline, release pipelines have a few options that can be customized: 
 [release names](#numbering) and [retention policies](../policies/retention.md).
 
 <h2 id="numbering">Release names</h2>

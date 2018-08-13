@@ -22,13 +22,13 @@ You can add multiple [phases](phases.md) to a pipeline. By using different phase
 
 ::: moniker range="vsts"
 
-* Partition your process into sections targeting different agent queues
-* Partition your process into sections targeting different sets of self-hosted agents using different demands
-* Partition your process into sections that run on agents and those that run without an agent
+* Partition your pipeline into sections targeting different agent queues
+* Partition your pipeline into sections targeting different sets of self-hosted agents using different demands
+* Partition your pipeline into sections that run on agents and those that run without an agent
 * Publish build artifacts in one phase and consume those in subsequent phases
 * Pause the deployment in the middle using a manual intervention task
 * Reduce build time by running multiple phases in parallel
-* Reduce deployment time by selectively downloading different artifacts in different phases of a deployment process
+* Reduce deployment time by selectively downloading different artifacts in different phases of a deployment pipeline
 * [Conditionally execute](conditions.md) a set of tasks
 
 ::: moniker-end
@@ -81,7 +81,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-To add a new phase, select '...' on the process channel in **Tasks** tab of the pipeline. The conditions and order of execution for a phase are displayed when you select the  phase in the editor.
+To add a new phase, select '...' on the pipeline channel in the **Tasks** tab of the pipeline. The conditions and order of execution for a phase are displayed when you select the phase in the editor.
 
 ---
 

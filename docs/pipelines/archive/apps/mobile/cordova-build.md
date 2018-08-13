@@ -206,7 +206,7 @@ As of this writing, you can build Cordova apps targeting Android, Windows, and W
 If you are not using the Azure Pipelines Microsoft-hosted agent pool or MacinCloud's streamlined [Azure Pipelines plan](http://go.microsoft.com/fwlink/?LinkID=691834), you can use your own hardware instead. Because of its design, you can easily install the [agent](https://github.com/Microsoft/vsts-agent) on Windows or macOS and integrate with either TFS or Azure Pipelines. The build machine simply needs to have HTTP access to the server with your TFS collection or Azure Pipelines.
 
 ### Custom Agent Setup
-Since the build process we will describe here is not directly dependent on MSBuild or Visual Studio for Android, you have two options for installing prerequisites on Windows:
+Since the build pipeline we will describe here is not directly dependent on MSBuild or Visual Studio for Android, you have two options for installing prerequisites on Windows:
 
 1. You can install Visual Studio 2015 and select the Tools for Apache Cordova option and let it install the prerequisites for you.
 

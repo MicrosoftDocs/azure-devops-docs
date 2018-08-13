@@ -26,13 +26,13 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="vsts"
 
-We'll show you how to use Azure Pipelines pipelines to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your project. You'll also become familiar with all the basic concepts of Azure Pipelines pipelines.
+We'll show you how to use Azure Pipelines to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end pipeline run every time you push new code into your project. You'll also become familiar with all the basic concepts of Azure Pipelines.
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 
-We'll show you how to use TFS to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end process run every time you push new code into your project. You'll also become familiar with all the basic concepts of build and release in TFS.
+We'll show you how to use TFS to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end pipeline run every time you push new code into your project. You'll also become familiar with all the basic concepts of build and release in TFS.
 
 ::: moniker-end
 
@@ -133,9 +133,9 @@ Create a build pipeline that prints "Hello world."
 
 1. Make sure that the **source**, **project**, **repository**, and default **branch** match the location in which you created the script.
 
-1. Start with an **empty process**.
+1. Start with an **empty pipeline**.
 
-1. On the left side, select **Process** and specify whatever **Name** you want to use. For the **Agent queue**, select **Hosted VS2017**.
+1. On the left side, select **Pipeline** and specify whatever **Name** you want to use. For the **Agent queue**, select **Hosted VS2017**.
 
 1. On the left side, select the plus sign **( + )** to add a task to **Phase 1**. On the right side, select the **Utility** category, select the **PowerShell** task from the list, and then choose **Add**.
 
@@ -161,9 +161,9 @@ Create a build pipeline that prints "Hello world."
 
    ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button-tab-tfs-2018-2.png)
 
-1. Start with an **empty process**
+1. Start with an **empty pipeline**
 
-1. Select **Process** and specify whatever **Name** you want to use. For the **Agent queue**, select **Default**.
+1. Select **Pipeline** and specify whatever **Name** you want to use. For the **Agent queue**, select **Default**.
 
 1. On the left side, select **+ Add Task** to add a task to the phase, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
 
@@ -189,9 +189,9 @@ Create a build pipeline that prints "Hello world."
 
  ![builds-tab-mine-new-button](_img/get-started-designer/builds-tab-mine-new-button.png)
 
-1. Start with an **empty process**.
+1. Start with an **empty pipeline**.
 
-1. Select **Process** and specify whatever **Name** you want to use.
+1. Select **Pipeline** and specify whatever **Name** you want to use.
 
 1. On the **Options** tab, select **Default** for the **Agent queue**, or select whichever queue you want to use that has Windows build agents.
 
@@ -209,7 +209,7 @@ Create a build pipeline that prints "Hello world."
 
  ::: moniker-end
 
-> A build pipeline is the entity through which you define your automated build process. In the build pipeline, you compose a set of tasks, each of which perform a step in your build. The task catalog provides a rich set of tasks for you to get started. You can also add PowerShell or shell scripts to your build pipeline.
+> A build pipeline is the entity through which you define your automated build pipeline. In the build pipeline, you compose a set of tasks, each of which perform a step in your build. The task catalog provides a rich set of tasks for you to get started. You can also add PowerShell or shell scripts to your build pipeline.
 
 ## Publish an artifact from your build
 
@@ -352,7 +352,7 @@ Save and queue a build manually and test your build pipeline.
 
 ## Add some variables and commit a change to your script
 
-We'll pass some build variables to the script to make our process a bit more interesting. Then we'll commit a change to a script and watch the CI process run automatically to validate the change.  
+We'll pass some build variables to the script to make our pipeline a bit more interesting. Then we'll commit a change to a script and watch the CI pipeline run automatically to validate the change.  
 
 1. Edit your build pipeline.
 
@@ -421,11 +421,11 @@ Define the process for running the script in two environments.
 
 ::: moniker range=">= tfs-2018 <= vsts"
 
-1. Go to the **Build and Release** tab, and then select **Releases**.
+1. Go to the **Pipelines** tab, and then select **Releases**.
 
 1. Select the action to create a **New pipeline**. If a release pipeline is already created, select the plus sign **( + )** and then select  **Create release pipeline**.
 
-1. Select the action to start with an **empty process**.
+1. Select the action to start with an **empty pipeline**.
 
 1. Name the environment **QA**.
 
@@ -507,7 +507,7 @@ Define the process for running the script in two environments.
 
 ::: moniker-end
 
-> A release pipeline is a collection of environments to which the application build artifacts are deployed. It also defines the actual deployment process for each environment, as well as how the artifacts are promoted from one environment to another.
+> A release pipeline is a collection of environments to which the application build artifacts are deployed. It also defines the actual deployment pipeline for each environment, as well as how the artifacts are promoted from one environment to another.
 >
 > Also, notice that we used some variables in our script arguments. In this case, we used [release variables](release/variables.md) instead of the build variables we used for the build pipeline.
 
@@ -567,7 +567,7 @@ Run the script in each environment.
 
  ::: moniker-end
 
-> You can track the progress of each release to see if it has been deployed to all the environments. You can track the commits that are part of each release, the associated work items, and the results of any test runs that you've added to the release process.
+> You can track the progress of each release to see if it has been deployed to all the environments. You can track the commits that are part of each release, the associated work items, and the results of any test runs that you've added to the release pipeline.
 
 ## Change your code and watch it automatically deploy to production
 
@@ -605,13 +605,13 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
  ::: moniker-end
 
-> In many cases, you probably would want to edit the release process so that the production deployment happens
+> In many cases, you probably would want to edit the release pipeline so that the production deployment happens
   only after some testing and approvals are in place. See [Approvals and gates overview](release/approvals/index.md).
 
 <a name="next-steps"></a>
 ## Next steps
 
-You've just learned the basics of using the designer to create and run an Azure Pipelines build and release process.
+You've just learned the basics of using the designer to create and run an Azure Pipelines build and release pipeline.
 Now you're ready to configure your build pipeline for the programming language you're using.
 Go ahead and create a new build pipeline, and this time, use one of the following templates.
 

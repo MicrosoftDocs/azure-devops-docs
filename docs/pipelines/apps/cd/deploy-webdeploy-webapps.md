@@ -16,9 +16,9 @@ monikerRange: '>= tfs-2015'
 
 **Azure Pipelines | TFS 2018 | TFS 2017.2**
 
-We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an Azure web app using
+We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an Azure Web App using
 Azure Pipelines or Team Foundation Server (TFS). You can use the steps in this quickstart
-as long as your continuous integration process publishes a Web Deploy package.
+as long as your continuous integration pipeline publishes a Web Deploy package.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 * [Build your Node.js app with gulp](../nodejs/build-gulp.md)
 
-You'll also need an Azure web app where you will deploy the app.
+You'll also need an Azure Web App where you will deploy the app.
 
 [!INCLUDE [create-release](../_shared/create-release.md)]
 
