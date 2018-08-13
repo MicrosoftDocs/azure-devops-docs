@@ -1,6 +1,6 @@
 ---
 title: Debug with symbols in Visual Studio
-description: Debug with symbols in Visual Studio using the Symbol Server in VSTS Package Management
+description: Debug with symbols in Visual Studio using the Symbol Server in Azure Artifacts
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -20,17 +20,17 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 
 ## Add the symbol server to Visual Studio
 
-To debug with symbols, select and add the VSTS symbol server to your Visual Studio environment using the Tools->Options->Debugger->Symbols page.
+To debug with symbols, select and add the Azure DevOps Services symbol server to your Visual Studio environment using the Tools->Options->Debugger->Symbols page.
 
-![Add VSTS Symbol Server in VS Debugger](_img/vsdebugger1.jpg)
+![Add Azure DevOps Services Symbol Server in VS Debugger](_img/vsdebugger1.jpg)
 
-In the **Connect to VSTS Symbol Server** dialog, select the VSTS account to which the symbols have been published and the corresponding user identity that has access to this VSTS account. 
+In the **Connect to Azure DevOps Services Symbol Server** dialog, select the Azure DevOps Services account to which the symbols have been published and the corresponding user identity that has access to this Azure DevOps Services account. 
 
-![Connect to VSTS Symbol Server](_img/connectsymbolserver.png)
+![Connect to Azure DevOps Services Symbol Server](_img/connectsymbolserver.png)
 
-Click **Connect** in the above dialog. The VSTS Symbol Server is now remembered by Visual Studio. When a debugging session begins, Visual Studio will be able to get symbols from VSTS.
+Click **Connect** in the above dialog. The Azure DevOps Services Symbol Server is now remembered by Visual Studio. When a debugging session begins, Visual Studio will be able to get symbols from Azure DevOps Services.
 
-![Add VSTS Symbol Server in VS Debugger](_img/vsdebugger2.png)
+![Add Azure DevOps Services Symbol Server in VS Debugger](_img/vsdebugger2.png)
 
 ## Debugging optimized modules
 
@@ -48,4 +48,4 @@ If you choose to enable source server support, please consider the [security imp
 
 ### Portable PDBs and Source Link
 
-If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), [Source Link](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md) cannot currently authenticate to private source repositories (like VSTS), and thus will not work.
+If you're using [Portable PDBs](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md), [Source Link](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md) cannot currently authenticate to private source repositories (like Azure DevOps Services), and thus will not work.

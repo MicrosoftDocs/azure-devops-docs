@@ -1,6 +1,6 @@
 ---
 title: Use NuGet or dotnet with Team Foundation Server feeds
-description: Authenticating to feeds with NuGet in VSTS
+description: Authenticating to feeds with NuGet in Azure DevOps Services
 ms.assetid: 1BB88A4E-C40E-48CD-B44A-25C90B935E5B
 ms.prod: devops
 ms.technology: devops-artifacts

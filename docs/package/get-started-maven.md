@@ -1,6 +1,6 @@
 ---
-title: Get Started with Maven Package Management in VSTS and TFS
-description: Quickly start hosting Maven artifacts in VSTS or Team Foundation Server
+title: Get Started with Maven Azure Artifacts in Azure DevOps Services and TFS
+description: Quickly start hosting Maven artifacts in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
@@ -13,21 +13,21 @@ ms.date: 01/31/2018
 monikerRange: '>= tfs-2018'
 ---
 
-# Get started with Maven Package Management in VSTS and TFS
+# Get started with Maven Azure Artifacts in Azure DevOps Services and TFS
 
-**VSTS** | **TFS 2018**
+**Azure DevOps Services** | **TFS 2018**
 
 ## Before you start
 
-This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
-[Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
+This guide assumes you've already set up Azure Artifacts. You can check out how to install and license the extension in the 
+[Install and license Azure Artifacts guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
 listing to install it.
 
 ### Prerequisites
 
 1. Apache Maven installed. It can be downloaded from the [Apache Maven Site](https://maven.apache.org/download.cgi).
 
-1. Have [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your VSTS account.
+1. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your Azure DevOps Services account.
 
 <a name="create-a-feed"></a>
 

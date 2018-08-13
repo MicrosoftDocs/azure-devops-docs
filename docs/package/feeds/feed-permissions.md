@@ -1,6 +1,6 @@
 ---
 title: Secure and share packages using feed permissions
-description: Secure and share packages using feed permissions in Package Management in VSTS or Team Foundation Server
+description: Secure and share packages using feed permissions in Azure Artifacts in Azure DevOps Services or Team Foundation Server
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -14,9 +14,9 @@ monikerRange: '>= tfs-2017'
 
 # Secure and share packages using feed permissions
 
-**VSTS | TFS 2017**
+**Azure DevOps Services | TFS 2017**
 
-Packages you host in Package Management are stored in a [feed](../concepts/feeds.md). Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
+Packages you host in Azure Artifacts are stored in a [feed](../concepts/feeds.md). Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
 
 ## Feed permissions overview
 Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level.
@@ -58,4 +58,4 @@ To use packages from a feed in Team Build, the appropriate build identity must h
 
 ## Sharing packages with everyone in your account
 
-If you want to make the packages in a feed available to all users in your VSTS account, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my account**.
+If you want to make the packages in a feed available to all users in your Azure DevOps Services account, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my account**.

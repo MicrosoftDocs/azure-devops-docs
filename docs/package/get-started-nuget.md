@@ -1,6 +1,6 @@
 ---
-title: Get Started with NuGet Package Management in VSTS and TFS
-description: Quickly start hosting NuGet packages in VSTS or Team Foundation Server
+title: Get Started with NuGet Azure Artifacts in Azure DevOps Services and TFS
+description: Quickly start hosting NuGet packages in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
@@ -12,13 +12,13 @@ ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Get started with NuGet Package Management in VSTS and TFS
+# Get started with NuGet Azure Artifacts in Azure DevOps Services and TFS
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
 ## Before you start
-This guide assumes you've already set up Package Management. You can check out how to install and license the extension in the 
-[Install and license Package Management guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
+This guide assumes you've already set up Azure Artifacts. You can check out how to install and license the extension in the 
+[Install and license Azure Artifacts guide](install.md), or go directly to the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.feed) 
 listing to install it.
 
 <a name="create-a-feed"></a>

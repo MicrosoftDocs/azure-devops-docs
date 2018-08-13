@@ -1,6 +1,6 @@
 ---
-title: Share your VSTS packages with badges
-description: Share your NuGet, npm, or Maven packages from VSTS with badges
+title: Share your Azure DevOps Services packages with badges
+description: Share your NuGet, npm, or Maven packages from Azure DevOps Services with badges
 ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -13,22 +13,22 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Share your NuGet, npm, and Maven packages from VSTS with badges
+# Share your NuGet, npm, and Maven packages from Azure DevOps Services with badges
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-You can share your packages anywhere you can share an image with badges. You can put a badge directly into your project's home page in Visual Studio Team Service (VSTS) or in any Markdown/README file so readers can easily discover and consume your package.
+You can share your packages anywhere you can share an image with badges. You can put a badge directly into your project's home page in Azure DevOps Services or in any Markdown/README file so readers can easily discover and consume your package.
 
 Example NuGet package badge:  
-![VSTS Package sharing badge for NuGet, npm, or Maven](_shared/_img/package-badge.png)
+![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](_shared/_img/package-badge.png)
 
 ## Enable package sharing
 
-To start sharing your VSTS-hosted packages with badges you'll first have to turn on **Package sharing** in your feed settings. 
+To start sharing your Azure DevOps Services-hosted packages with badges you'll first have to turn on **Package sharing** in your feed settings. 
 
 1. Go to your Feed settings page by clicking on the gear icon from your feed page: 
 
-    ![Edit a VSTS feed in Package](_shared/_img/edit-feed-full.png)
+    ![Edit a Azure DevOps Services feed in Package](_shared/_img/edit-feed-full.png)
 
     > Only feed administrators can edit the feed.
 
@@ -36,13 +36,13 @@ To start sharing your VSTS-hosted packages with badges you'll first have to turn
 
 This will enable the **Create badge** button for every package in that feed.
 
-![Create badge for NuGet, npm, or Maven packages in VSTS](_img/pm-create-badge.png)
+![Create badge for NuGet, npm, or Maven packages in Azure DevOps Services](_img/pm-create-badge.png)
 
 ## Create badge
 
 You can create a badge for any package that is in a feed with package sharing enabled. You can only create a badge for the latest version of each package.
 
-1. Go to your package in Visual Studio Team Services and click the **Create badge** option. 
+1. Go to your package in Azure DevOps Services and click the **Create badge** option. 
 
 2. Select a *Feed view* for your package badge. If you're using release views, select the view that contains the packages you want to share; otherwise, just use `No view`.
 

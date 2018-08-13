@@ -1,6 +1,6 @@
 ---
-title:  Package Management in VSTS and TFS | Microsoft Docs   
-description: Use package management to host and share NuGet packages and npm modules with VSTS or Team Foundation Server
+title:  Azure Artifacts in Azure DevOps Services and TFS | Microsoft Docs   
+description: Use Azure Artifacts to host and share NuGet packages and npm modules with Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: douge
@@ -12,9 +12,9 @@ layout: LandingPage
 monikerRange: '>= tfs-2017'
 ---
 
-# Package Management
+# Azure Artifacts
 
-Host your NuGet, npm, and Maven packages in **Visual Studio Team Services (VSTS)** and **Team Foundation Server 2017 Update 1** using Package Management feeds. 
+Host your NuGet, npm, and Maven packages in **Azure DevOps Services** and **Team Foundation Server 2017 Update 1** using Azure Artifacts feeds. 
 
 ## 5-Minute Quickstarts 
 
@@ -31,7 +31,7 @@ Host your NuGet, npm, and Maven packages in **Visual Studio Team Services (VSTS)
 
 ## Resources
 
-- [Build and Release with VSTS](/vsts/pipelines/index)
+- [Build and Release with Azure DevOps Services](/vsts/pipelines/index)
 
 ## Videos
 | | |

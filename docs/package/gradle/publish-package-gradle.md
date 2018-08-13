@@ -1,6 +1,6 @@
 ---
-title: Publish a Maven artifact using Gradle and VSTS
-description: Publish a Maven artifact using Gradle in a VSTS build
+title: Publish a Maven artifact using Gradle and Azure DevOps Services
+description: Publish a Maven artifact using Gradle in a Azure DevOps Services build
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: douge
@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2018'
 
 # Publish a Maven artifact using Gradle
 
-**VSTS** | **TFS 2018**
+**Azure DevOps Services** | **TFS 2018**
 
-This topic covers creating and publishing a Maven artifact with Gradle using Visual Studio Team Services (VSTS).
+This topic covers creating and publishing a Maven artifact with Gradle using Azure DevOps Services.
 
 ## Prerequisites
 
@@ -42,9 +42,9 @@ You're ready to start! This tutorial will guide you through the process of publi
 
 ## Set up authentication
 
-First, you need a **gradle.properties** file that contains a VSTS credential token.
+First, you need a **gradle.properties** file that contains a Azure DevOps Services credential token.
 
-Navigate to `https://{yourAccount}.visualstudio.com/_details/organizations/security/tokens`, where `{yourAccount}` is the name of your VSTS account.
+Navigate to `https://{yourAccount}.visualstudio.com/_details/organizations/security/tokens`, where `{yourAccount}` is the name of your Azure DevOps Services account.
 
 Click **Add**.
 
@@ -88,11 +88,11 @@ publishing {
     // Repositories *to* which Gradle can publish artifacts 
     repositories { 
         maven { 
-            url 'https://{your-VSTS-account-name-here}.pkgs.visualstudio.com/_packaging/{your-VSTS-project-name-here}' 
+            url 'https://{your-Azure DevOps Services-account-name-here}.pkgs.visualstudio.com/_packaging/{your-Azure DevOps Services-project-name-here}' 
             credentials { 
-                username "VSTS" 
-                //The VSTS build system will use the "VSTS_ENV_ACCCESS_TOKEN" to authenticate to VSTS feeds 
-                password System.getenv("VSTS_ENV_ACCESS_TOKEN") != null ? System.getenv("VSTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
+                username "Azure DevOps Services" 
+                //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 
+                password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
             } 
         } 
     } 
@@ -101,17 +101,17 @@ publishing {
 // Repositories *from* which Gradle can download dependencies; it's the same as above in this example
 repositories { 
     maven { 
-        url 'https://{your-VSTS-account-name-here}.pkgs.visualstudio.com/_packaging/{your-VSTS-project-name-here}' 
+        url 'https://{your-Azure DevOps Services-account-name-here}.pkgs.visualstudio.com/_packaging/{your-Azure DevOps Services-project-name-here}' 
         credentials { 
-            username "VSTS" 
-            //The VSTS build system will use the "VSTS_ENV_ACCCESS_TOKEN" to authenticate to VSTS feeds 
-            password System.getenv("VSTS_ENV_ACCESS_TOKEN") != null ? System.getenv("VSTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
+            username "Azure DevOps Services" 
+            //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 
+            password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
         } 
     } 
 } 
 ```
-In the above example, you are publishing artifacts and downloading dependent artifacts from the same VSTS account. You can configure
-publishing and downloading to use separate VSTS accounts, if you prefer.
+In the above example, you are publishing artifacts and downloading dependent artifacts from the same Azure DevOps Services account. You can configure
+publishing and downloading to use separate Azure DevOps Services accounts, if you prefer.
 
 Replace the following fields with your own values:
 

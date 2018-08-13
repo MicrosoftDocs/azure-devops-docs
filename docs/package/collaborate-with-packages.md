@@ -1,6 +1,6 @@
 ---
 title: Collaborate more and build faster with packages
-description: Componentize a large codebase with source and package composition using Package Management in VSTS or Team Foundation Server
+description: Componentize a large codebase with source and package composition using Azure Artifacts in Azure DevOps Services or Team Foundation Server
 ms.assetid: EA33E340-EC9A-4F75-A201-82CE9685662B
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -14,9 +14,9 @@ monikerRange: '>= tfs-2017'
 
 # Collaborate more and build faster with packages
 
-**VSTS | TFS 2017**
+**Azure DevOps Services | TFS 2017**
 
-*If you're familiar with componentization and composition, you can learn more about [Package Management in VSTS and TFS](overview.md).*
+*If you're familiar with componentization and composition, you can learn more about [Azure Artifacts in Azure DevOps Services and TFS](overview.md).*
 
 Your product is successful, your organization is growing, and it's time to scale up your codebase to match. As you scale out past 2-3 teams working in a single codebase on a single product, you may find yourself asking questions like:
 - How do my teams effectively share reusable components?
@@ -26,7 +26,7 @@ Your product is successful, your organization is growing, and it's time to scale
 These questions aren't just applicable to newly growing teams. 
 If you're an established team with a legacy codebase, you may be asking these same questions as you're being asked to deliver more value, ever faster. Regardless of your situation, componentization can help you build a codebase that scales to the size of your team and the speed of today's development. 
 
-In this article, we'll explore how binary composition through package management can help you manage and share your external dependencies, your OSS, and your isolated shared components.
+In this article, we'll explore how binary composition through Azure Artifacts can help you manage and share your external dependencies, your OSS, and your isolated shared components.
 
 ## Components and composition
 
@@ -85,4 +85,4 @@ At a high level, we've found the most success when source composition is used fo
 
 ## Jump in
 
-If you're ready to get started with package componentization, check out the [Package Management overview](overview.md).
+If you're ready to get started with package componentization, check out the [Azure Artifacts overview](overview.md).

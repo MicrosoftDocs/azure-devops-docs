@@ -1,6 +1,6 @@
 ---
 title: Constructing a complete package graph
-description: A complete package graph helps you share your packages with your consumers using a Visual Studio Team Services or Team Foundation Server feed
+description: A complete package graph helps you share your packages with your consumers using a Azure DevOps Services or Team Foundation Server feed
 ms.assetid: 3f273ac7-3c2e-47d0-b333-3ca44c19bbf4
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -14,15 +14,15 @@ ms.date: 2/6/2018
 
 # Constructing a complete package graph
 
-**VSTS | TFS 2017** ([availability note](../overview.md#versions-compatibility))
+**Azure DevOps Services | TFS 2017** ([availability note](../overview.md#versions-compatibility))
 
 When you release a package, it's important to ensure that any dependencies of that package are also available in your feed, either by republishing them directly (not recommended) or by consuming them from an [upstream source](upstream-sources.md). Once you consume a package from an upstream source once, a copy of it is always saved in your feed. Even if the upstream source goes down, your copy will remain available both to you and to your downstream consumers.
 
 ## How upstreams construct the set of available packages
 
-Because VSTS feeds can have other VSTS feeds as upstreams, it seems possible on the surface to have a cycle of upstream sources, where feed A upstreams to feed B which upstreams to feed C which upstreams back to feed A. Left unchecked, such a cycle could break package requests by creating an infinite loop where a user asks A for a package, then A asks B, then B asks C, then C asks A again, etc. Upstream sources are designed to prevent this.
+Because Azure DevOps Services feeds can have other Azure DevOps Services feeds as upstreams, it seems possible on the surface to have a cycle of upstream sources, where feed A upstreams to feed B which upstreams to feed C which upstreams back to feed A. Left unchecked, such a cycle could break package requests by creating an infinite loop where a user asks A for a package, then A asks B, then B asks C, then C asks A again, etc. Upstream sources are designed to prevent this.
 
-When a feed consults its upstream sources for a package (step 3 in the [search order](upstream-sources.md#search-order)), VSTS upstream sources will return the packages in the view configured for that upstream source. Thus, a query to feed A does not actually result in a transitive query to feed C (A -> B -> C), because views are [read-only](views.md#read-only). This means that A has access to any packages from C that a user of B has previously saved into B, but not the full set of packages available in C.
+When a feed consults its upstream sources for a package (step 3 in the [search order](upstream-sources.md#search-order)), Azure DevOps Services upstream sources will return the packages in the view configured for that upstream source. Thus, a query to feed A does not actually result in a transitive query to feed C (A -> B -> C), because views are [read-only](views.md#read-only). This means that A has access to any packages from C that a user of B has previously saved into B, but not the full set of packages available in C.
 
 Thus, the onus falls to B to ensure that its local packages represent a complete dependency graph, so that users who consume B's package via an upstream source from another feed are able to successfully resolve the graph and install their desired B package.
 

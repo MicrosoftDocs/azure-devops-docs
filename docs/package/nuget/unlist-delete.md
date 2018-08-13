@@ -1,6 +1,6 @@
 ---
 title: Unlist, delete, or recover a NuGet package
-description: Unlist, delete, or recover a deleted NuGet package from Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+description: Unlist, delete, or recover a deleted NuGet package from Azure DevOps Services or Team Foundation Server (TFS)
 ms.assetid: 173070F7-CF0B-41DE-AD8B-1881E04E1457
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Unlist, delete, or recover a NuGet package
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
 There are two options available to remove a version of a NuGet package from a feed.
 
@@ -24,13 +24,13 @@ There are two options available to remove a version of a NuGet package from a fe
 Unlist and delete both respect [feed immutability](../feeds/immutability.md). Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.
 
-## Unlisting or deleting a NuGet package in VSTS
+## Unlisting or deleting a NuGet package in Azure DevOps Services
 
 You must be a **contributor** to unlist and an **owner** to delete.
 
 Choose the package from the **Packages** hub in the **Build and Release** hub group and select the appropriate option from the menu:
 
-![Unlist or delete npm package Visual Studio Team Services](../_img/delete/unlist-delete-nuget-package.png)
+![Unlist or delete npm package Azure DevOps Services](../_img/delete/unlist-delete-nuget-package.png)
 
 ## Unlisting a NuGet package using NuGet.exe
 First, get the tools (make sure you're using NuGet 3.5 or later) and your feed URL:
@@ -43,7 +43,7 @@ Then, run
 nuget.exe delete {your_package_id} {version} -Source {feed URL} -ApiKey key
 ```
 
-Currently, NuGet.exe can only **unlist** packages; VSTS and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 
+Currently, NuGet.exe can only **unlist** packages; Azure DevOps Services and TFS interpret `nuget.exe delete` as an unlist operation to be consistent with NuGet.org. To **delete** a package, you must use either the REST APIs or the web interface. 
 
 ## Recover a deleted NuGet package
 

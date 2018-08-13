@@ -1,6 +1,6 @@
 ---
 title: Set up your client's npmrc
-description: Authenticating to feeds with npm in VSTS
+description: Authenticating to feeds with npm in Azure DevOps Services
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -14,23 +14,23 @@ monikerRange: '>= tfs-2017'
 
 # Set up your client's npmrc
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-All Package Management feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
+All Azure Artifacts feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
 ## Where are my **_.npmrc_** files?
 
-VSTS recommends using two **_.npmrc_** files:
+Azure DevOps Services recommends using two **_.npmrc_** files:
 
 1.	One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.  It should contain a "registry" line for your feed and it should not contain credentials since it will be checked into git.  You can find the registry information for your feed from the _Connect to Feed_ button:
 
     1. From your **Packages** page, click _Connect to Feed_
 
-        ![Connect to feed from VSTS Package Management](../_shared/_img/connect-to-feed.png)
+        ![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed.png)
 
     2. Copy the "registry" text:
 
-        ![Connect to feed from VSTS Package Management](../_shared/_img/connect-to-feed-npm-registry.png)
+        ![Connect to feed from Azure Artifacts](../_shared/_img/connect-to-feed-npm-registry.png)
         
 2.	On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 
@@ -76,9 +76,9 @@ There are two options for setting up authentication in a build task:
 ### Without a Task Runner
 To set up **npm** authentication in a build task _without_ a task runner, follow the directions below.
 
-1. Add a build pipeline in VSTS under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** hub.
 
-    ![Connect to feed from VSTS Package Management](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
+    ![Connect to feed from Azure Artifacts](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_
 
@@ -119,9 +119,9 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This will inject credentials into your proejct's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
 
-1. Add a build pipeline in VSTS under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** hub.
 
-    ![Connect to feed from VSTS Package Management](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
+    ![Connect to feed from Azure Artifacts](../../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_
 

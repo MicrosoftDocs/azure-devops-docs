@@ -1,6 +1,6 @@
 ---
 title: Edit a feed
-description: Edit a feed in VSTS or Team Foundation Server
+description: Edit a feed in Azure DevOps Services or Team Foundation Server
 ms.assetid: 83348be7-228b-43d1-8374-6046836ed0f5
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Edit a feed
 
-**VSTS | TFS 2017**
+**Azure DevOps Services | TFS 2017**
 
 Feeds have some basic settings: name, description, and permissions.
 

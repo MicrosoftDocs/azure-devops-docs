@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-Publish NuGet packages to a feed in Package Management to share them with your team and your organization.
+Publish NuGet packages to a feed in Azure Artifacts to share them with your team and your organization.
 First, get the tools and your feed URL:
 
 [!INCLUDE [](nuget-publish-endpoint.md)]
@@ -25,6 +25,6 @@ If you don't have a package but want to try this out, Microsoft provides a sampl
 * Run these two commands:
 
    ```Command
-   nuget.exe install VSTS-HelloWorld -ExcludeVersion
-   nuget.exe push -Source {NuGet package source URL} -ApiKey key VSTS-HelloWorld\VSTS-HelloWorld.nupkg
+   nuget.exe install Azure DevOps Services-HelloWorld -ExcludeVersion
+   nuget.exe push -Source {NuGet package source URL} -ApiKey key Azure DevOps Services-HelloWorld\Azure DevOps Services-HelloWorld.nupkg
    ```

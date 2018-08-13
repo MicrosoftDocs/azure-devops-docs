@@ -14,7 +14,7 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
 
 1. Click _Generate npm credentials_ and copy them to add them to your user **_.npmrc_** manually:
 
-    ![Connect to feed from VSTS Package Management Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds.png)
+    ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../_shared/_img/connect-to-feed-npm-creds.png)
 
 **Create a token that lasts longer than 90 days:**
 

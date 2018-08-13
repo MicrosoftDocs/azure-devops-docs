@@ -1,6 +1,6 @@
 ---
 title: Understand immutability of packages
-description: Immutable packages lead to predictable builds in VSTS or Team Foundation Server
+description: Immutable packages lead to predictable builds in Azure DevOps Services or Team Foundation Server
 ms.assetid: d8a522c4-cc96-4e41-9fdd-5e55a7ea8345
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Understand immutability of packages
 
-**VSTS | TFS 2017**
+**Azure DevOps Services | TFS 2017**
 
 Once you publish a particular version of a package to a feed, that version number is permanently reserved. 
 You cannot upload a newer revision package with that same version number, or delete it and upload a new package at the same version.

@@ -1,6 +1,6 @@
 ---
 title: Debug with symbols in WinDbg
-description: Debug with symbols in WinDbg using the Symbol Server in VSTS Package Management
+description: Debug with symbols in WinDbg using the Symbol Server in Azure Artifacts
 ms.assetid: C8C003EA-79C8-49EF-BEBD-35548505F0CF
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -30,11 +30,11 @@ tf.exe="CommonExtensions\Microsoft\TeamFoundation\Team Explorer\TF.exe"
 
 ## Add the symbol server to WinDbg
 
-To use the VSTS symbol server in WinDbg, you'll add your VSTS account to the symbol search path.
+To use the Azure DevOps Services symbol server in WinDbg, you'll add your Azure DevOps Services account to the symbol search path.
 
 1. Open WinDbg (you can [install it from the Store](https://www.microsoft.com/en-us/store/p/windbg-preview/9pgjgd53tn86)).
 2. Load the executable you wish to debug.
-3. Copy this command and replace `<your-account>` with your VSTS acccount name: `.sympath+ https://<your-account>.artifacts.visualstudio.com/_apis/symbol/symsrv`
+3. Copy this command and replace `<your-account>` with your Azure DevOps Services acccount name: `.sympath+ https://<your-account>.artifacts.visualstudio.com/_apis/symbol/symsrv`
 4. In the Command window in WinDbg, enter the command from the previous step
 5. Set a breakpoint (`bp`), which will cause WinDbg to issue a symbols request
 6. Create a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with the **Symbols (read)** scope and copy it to your clipboard
