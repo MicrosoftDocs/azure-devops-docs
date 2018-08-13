@@ -29,9 +29,15 @@ Follow the [Azure DevOps Release Notes](/vsts/release-notes/index) to get news o
 
 ## I preferred the old user interface. How do I go back?
 
-At this time, you can still use the old UI by
+At this time, you can still use the old UI by choosing your profile icon and selecting **XXXX** > **XXXX**.
+
+![Enabling the old UI by clicking on your profile icon](_img/checkmark.jpg)
+
+This will also change the service names to their old VSTS feature names, such as **Work** instead of **Boards**.
+
+To revert to the Azure DevOps service-oriented UI, choose your profile icon and select **XXXX** > **XXXX**.
 
 
 ## What about Team Foundation Server (TFS)?
 
-As of 9/5/2018, [Team Foundation Server](/tfs/index) (TFS) is unchanged and fully-supported as our on-prem Agile workflow and DevOps product. The latest version is TFS 2018, and the latest servicing update is ---, released on ---.
+As of 9/5/2018, [Team Foundation Server](/tfs/index) (TFS) is unchanged and fully-supported as our on-prem Agile workflow and DevOps product. The latest version is TFS 2018, and the latest servicing update is **Team Foundation Server 2018 Update 3**, which released on **August 28, 2018**.
