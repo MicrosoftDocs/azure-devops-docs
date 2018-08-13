@@ -12,10 +12,7 @@ ms.date: 04/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-
 # Run automated tests with Microsoft Test Manager
-
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
 
 ## Set up your test plan to use your build  
  

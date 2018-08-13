@@ -14,8 +14,6 @@ monikerRange: 'vsts'
 
 # Run cloud-based load tests using your own machines
 
-[!INCLUDE [version-header-ts](../_shared/version-header-ts.md)]
-
 When you run a cloud-based load test, the Cloud Load Test (CLT) service automatically provisions
 the necessary machines (load agents) to generate the load on your application.
 After the load test run has completed, these resources are removed. However, you can run

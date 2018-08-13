@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Share steps between test cases
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
-
 When you [plan manual tests](../create-a-test-plan.md) there are some sequences of steps, such as logging in, that occur in many test cases. To avoid having to enter these sequences again and again, create *shared steps*.  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 

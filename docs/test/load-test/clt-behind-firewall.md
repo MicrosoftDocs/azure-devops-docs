@@ -131,7 +131,7 @@ You can queue a load test run using the Azure DevOps portal or Visual Studio Ent
 
 ### Using the Azure DevOps portal
 
-Open the **Load test** page **Settings** tab and select **Use self-provisioned agents**. 
+Open the **Load test** page **Settings** page and select **Use self-provisioned agents**. 
 Then select the test rig you have configured with the ARM template, and optionally the number of agents to use.
 
 ![Selecting the test rig and optionally the number of agents to use](_img/clt-behind-firewall/vsts.png)

@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Collect screenshots, video, logs, and attachments in continuous tests
 
-[!INCLUDE [version-header-ts-tfs15](_shared/version-header-ts-tfs15.md)] 
-
 When running tests in a CI/CD pipeline, collecting diagnostic data such as
 screenshots, video, logs, and attachments is often useful to help troubleshoot failures.
 
@@ -68,7 +66,7 @@ If you are not using the **Visual Studio Test** task, you must publish attachmen
 
 * If you are running tests in the build (CI) pipeline, you can use the
   [Copy and Publish Build Artifacts](../pipelines/tasks/utility/copy-and-publish-build-artifacts.md) task to publish any additional files created in your tests.
-  These will appear in the **Artifacts** tab in your build summary. 
+  These will appear in the **Artifacts** page of your build summary. 
 
 * Use the REST APIs to publish the necessary attachments. Code samples can be found
   in [this GitHub repository](https://github.com/ManojBableshwar/VstsTestRestApiSamples/blob/master/PublishResultsFromCsvWithAttachments/PublishResultsFromCsvWithAttachments.cs). 

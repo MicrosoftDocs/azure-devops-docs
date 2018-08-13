@@ -14,17 +14,15 @@ monikerRange: '>= tfs-2015'
 
 # Run manual tests with Microsoft Test Manager
 
-[!INCLUDE [version-header-vs-ts-tfs](../_shared/version-header-vs-ts-tfs.md)] 
-
 Microsoft Test Runner sits at the side of the screen while you test your application. It displays the steps you planned and the results you expected, and you check them off as you work. It can record your actions along with comments, screenshots, and other data, so that if you find a bug, it's easy to reproduce.  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
   
 >**The web portal or Microsoft Test Runner?** Use the web-based test runner
-in the **Test** hub when you want to test web applications, and Microsoft 
+in the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] when you want to test web applications, and Microsoft 
 Test Runner for desktop applications. You can 
 [launch Microsoft Test Runner](../run-manual-tests.md#run-desktop)
-from the **Test** hub instead of using Microsoft Test Manager.
+from the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)], instead of using Microsoft Test Manager.
   
 ### Running test cases with Microsoft Test Runner  
   

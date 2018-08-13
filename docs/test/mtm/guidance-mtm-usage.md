@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Guidance on Microsoft Test Manager usage
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
+Azure DevOps and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
 
 * The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
 * The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides a better experiences across Plan, Author, Execute and Track phases of Manual testing.
@@ -141,7 +141,7 @@ You can use the Microsoft Test Runner client, launched from the [!INCLUDE [test-
 You can easily track your manual testing results using your chosen light-weight chart
 types, and pin them to your dashboard to quickly analyze the test results.
 View test case result history across test suites and test plans easily by using the
-right-hand pane in the **Test plans** tab of the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. 
+right-hand pane in the **Test plans** page of the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)]. 
 You can also select a retention policy to specify how long you want to keep your
 manual testing results.
 
@@ -192,7 +192,7 @@ all platforms and all browsers, and has a rich and modern web UI that improves y
 experience across all phases of manual testing. 
 
 All the test plans, test suites, test cases, and other test management data you create
-using MTM are stored in VSTS or TFS, so existing
+using MTM are stored in Azure DevOps or TFS, so existing
 MTM users can easily get started using the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)].
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

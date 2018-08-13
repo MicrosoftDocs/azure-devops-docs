@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2015'
 
 # Track test status
 
-[!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
-
 Quickly view the status of your testing using lightweight charts. 
 For example, find out how many test cases are ready to run,
 or how many tests are passing and failing in each test suite. 
@@ -117,7 +115,7 @@ Use test case charts to find out the progress of your
 test case authoring. The charts for test cases give 
 you the flexibility to report on columns that you add 
 to the Tests tab. By default, test case fields are not 
-added to the view in the Tests tab.
+added to the view in the tests page.
 
 If you already know how to add a chart, jump to the
 [examples](#ExamplesTestCase) below of charts that you can 
@@ -129,7 +127,7 @@ create for test cases.
    your test case charts.
 
 1. Select the test plan or test suite for your chart in 
-   the Test plan tab. Then add a test case chart.
+   the Test plans tab. Then add a test case chart.
 
    ![Select test suite; Charts tab; New test case chart](_img/track-test-status/NewTestCaseChart.png)
 

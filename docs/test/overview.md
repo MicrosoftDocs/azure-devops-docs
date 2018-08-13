@@ -179,7 +179,7 @@ Using the extension is a simple, three step process:
   bugs and tasks, and managing feedback requests in one place.
 
 As users perform exploratory testing, you can
-[get insights from the sessions](insights-exploratory-testing.md) in the **Test** hub of 
+[get insights from the sessions](insights-exploratory-testing.md) in the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)] of 
 Azure DevOps or TFS. View completed exploratory sessions and derive meaningful
 insights across all the sessions. Get end-to-end traceability such as a breakdown 
 of the work items created, the work items explored and not explored, session owners,

@@ -22,7 +22,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   to automate, but you still want to be able to run that test as part of a test plan.
   Tests can be run in the CI/CD pipeline by choosing the test plan or test suite
   in the settings of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task.
-  Automated tests can also be run from the **Test** hub in Azure DevOps and TFS.
+  Automated tests can also be run from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)] in Azure DevOps and TFS.
   If you are using [XAML builds](../pipelines/test/reference-qa.md#xaml-build) you can also
   [run these automated tests by using Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md).
 
@@ -38,7 +38,7 @@ The process to associate an automated test with a test case is:
 1. Create a test project containing your automated test.
    [What types of tests are supported?](../pipelines/test/reference-qa.md#test-types)
 
-1. Check your test project into a Azure DevOps or Team
+1. Check your test project into an Azure DevOps or Team
    Foundation Server (TFS) repository.
 
 1. Create a build pipeline for your project, ensuring that it
@@ -73,7 +73,7 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 1. Open your solution in Visual Studio.
 
 1. If you don't know the identifier of the work item for the test case,
-   locate the test case in the **Test** hub or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
+   locate the test case in the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)], or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
 
 1. When you know the identifier of the work item for the test case:
 
@@ -95,10 +95,10 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 
    **If you are using Visual Studio 2015 or earlier**, follow these steps to associate your tests.
 
-   - In **Team Explorer** open the **Work Items** tab. If the **Team Explorer**
+   - In **Team Explorer** open the **Work Items** page. If the **Team Explorer**
      window is not displayed, open it from the **View** menu.
 
-   - Expand the list of **Queries** in the **Work Items** tab to find one that displays your test cases, 
+   - Expand the list of **Queries** in the **Work Items** page to find one that displays your test cases, 
      for example the default **My Test Cases** query. 
    
    - Execute the query by choosing **View Results** on the shortcut menu
@@ -107,7 +107,7 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
    - Open the test case you want to associate by choosing **Open**
      on the shortcut menu (or double-click the test case name).
 
-   - In the work item, open the **ASSOCIATED AUTOMATION** tab. 
+   - In the work item, open the **ASSOCIATED AUTOMATION** page. 
      All the tests in the solution are shown in the list together
      with their associated test projects.
 

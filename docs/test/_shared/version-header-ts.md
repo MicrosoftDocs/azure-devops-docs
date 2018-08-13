@@ -1,5 +1,3 @@
 ---
 ms.topic: include
 ---
-
-**VSTS**

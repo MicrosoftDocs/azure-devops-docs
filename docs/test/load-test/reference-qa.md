@@ -1,6 +1,6 @@
 ---
 title: FAQs and general solutions for load testing  
-description: FAQs for load testing topics using the features of Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+description: FAQs for load testing topics using the features of Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
 ms.prod: devops
 ms.technology: devops-test
@@ -14,14 +14,12 @@ monikerRange: 'vsts'
 
 # FAQs for load testing
 
-[!INCLUDE [version-header-vs-ts](../_shared/version-header-vs-ts.md)] 
-
 <a name="qageneral"></a>
 ## General
 
 [Go to related topic &gt;](get-started-simple-cloud-load-test.md)
 
-[Pricing for VSTS features](https://visualstudio.microsoft.com/team-services/pricing/)
+[Pricing for Azure DevOps features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 ### Q: How do I learn more about Cloud-based Load Testing?
 
@@ -65,7 +63,7 @@ or projected conditions. Virtual users are simulated by test agents.
 that generate load by simulating virtual users. Test agents use agent cores 
 to create virtual users. Each core creates at least 1 virtual user. 
 
-For load test runs in Visual Studio Team Services (VSTS) with the Visual Studio IDE,
+For load test runs in Azure DevOps with the Visual Studio IDE,
 you can specify the number of cores to use. For example,
 if you get errors when you run your test, 
 you might have to increase the number of cores.
@@ -73,7 +71,7 @@ you might have to increase the number of cores.
 Otherwise, your tests and the number of virtual users that 
 you specify determine how many cores and agents are used.
 
-### Q: Where do I specify the number of cores for runs in VSTS with the Visual Studio IDE?
+### Q: Where do I specify the number of cores for runs in Azure DevOps with the Visual Studio IDE?
 
 **A**: You can do that here:
 
@@ -132,7 +130,7 @@ For runs that end in an error state, no virtual user minutes will be deducted fr
 
 Note that there is an additional charge for [resource retention](#retain-resources).
 
-[Pricing for VSTS features](https://visualstudio.microsoft.com/team-services/pricing/)
+[Pricing for Azure DevOps features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 <a name="iterations"></a>
 ### Q: I'm running load tests using test iterations. How is load test duration determined?
@@ -150,7 +148,7 @@ and virtual user minutes will be charged accordingly.
 **A**: Yes. Based on where you're running the test, each test run duration limit is:
 
 * Visual Studio IDE: 48 hours
-* VSTS Load test page:
+* Azure DevOps Load test page:
  - URL-based load tests: 48 hours
  - JMeter load tests: 4 hours
 * Azure portal: 1 hour
@@ -246,7 +244,7 @@ and [coded UI tests](https://docs.microsoft.com/visualstudio/test/use-ui-automat
 
 ### Q: Why should I use Cloud-based Load Testing?
 
-**A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using VSTS to access it.
+**A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Azure DevOps to access it.
 
 ----------
 
@@ -255,9 +253,9 @@ and [coded UI tests](https://docs.microsoft.com/visualstudio/test/use-ui-automat
 
 [Go to related topic &gt;](app-service-web-app-performance-test.md)
 
-### Q: Why can't I see my existing VSTS subscription to run load tests? 
+### Q: Why can't I see my existing Azure DevOps subscription to run load tests? 
 
-**A**: To use a VSTS subscription for running load tests from the Azure
+**A**: To use an Azure DevOps subscription for running load tests from the Azure
 portal, one of the following criteria must be satisfied:
 
 * The subscription is backed by Azure Active Directory,
@@ -303,11 +301,11 @@ We'd be pleased to hear from you if you need support for other file formats.
 Email us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
 <a name="Team ServicesAccount"></a>
-### Q: What else can I do with a VSTS subscription?
+### Q: What else can I do with an Azure DevOps subscription?
 
 **A**: To find your new subscription, go to ```https://{subscription-name}.visualstudio.com```. 
 Share your code, build, test, track work, and ship software - all in the cloud 
-using any tool or language. Learn more about how [VSTS](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
+using any tool or language. Learn more about how [Azure DevOps](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
 features and services help your team collaborate more easily and deploy continuously.
 
 ### Q: Can I get more detailed profiler information?
@@ -325,10 +323,10 @@ features and services help your team collaborate more easily and deploy continuo
 
 **A**: Yes, you can include unit tests and coded web tests, but not coded UI tests.
 
-### Q: How long do I have to wait until I can run my load test after creating a VSTS subscription?
+### Q: How long do I have to wait until I can run my load test after creating an Azure DevOps subscription?
 
 **A**:  It can take between 5 seconds to 3 hours until you get permissions 
-to run the load test in the cloud. If you previously created your VSTS subscription, 
+to run the load test in the cloud. If you previously created your Azure DevOps subscription, 
 you might be able to run the load test right away.
 
 ### Q: How do I provide different values to the same test?
@@ -349,15 +347,15 @@ If you need more help, contact
 ### Q: Where are the test agents used for my load test runs located?
 
 **A**:  When you set up your load test run, you can select the test agent location from any supported Azure datacenter, starting with Visual Studio Ultimate 2013 Update 5 and Visual Studio Enterprise 2015. 
-After your run finishes, your results are stored in the same location as your VSTS subscription.
+After your run finishes, your results are stored in the same location as your Azure DevOps subscription.
 
 ![Edit load test to set location](_img/CLT_LoadTestSetLocation.png)
 
 If you're using an earlier version of Visual Studio, 
 the agent location is based on the location that you chose 
-when you created your VSTS subscription.
+when you created your Azure DevOps subscription.
 
-| VSTS Region | Test Agent Azure Datacenter |
+| Azure DevOps Region | Test Agent Azure Datacenter |
 | :---------------------------------- | :-------------------------- |
 | South Central US                    | East US 2                   |
 | West Europe                         | West Europe                 |
@@ -428,9 +426,9 @@ when you set up the test, and it will be applied when the load test runs.
 
 [Go to related topic &gt;](performance-reports.md)
 
-### Q:  Can I use mstest to run load tests with VSTS?
+### Q:  Can I use mstest to run load tests with Azure DevOps?
 
-**A**: Yes, you can in VSTS, and in TFS 2015 and later.
+**A**: Yes, you can in Azure DevOps, and in TFS 2015 and later.
 For more information, see
 [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2015/08/24/cloud-load-test-support-in-mstest-exe-command-line-and-xaml-builds/).
 
@@ -442,14 +440,14 @@ For more information, see
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
 **A**: You can view the service status at the top of the 
-[VSTS support page](https://visualstudio.microsoft.com/support-overview-vs) 
+[Azure DevOps support page](https://visualstudio.microsoft.com/support-overview-vs) 
 and on our [service blog](http://blogs.msdn.com/b/vsoservice/). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
 
 ### Q: What are the possible load test run states?
 
-**A**: When you run load tests with VSTS, the test run states are:
+**A**: When you run load tests with Azure DevOps, the test run states are:
 
 * **In-Progress**: The test run is currently running in the cloud.
 * **Completed**: The test run was completed successfully.
@@ -506,7 +504,7 @@ such as VIEWSTATE, EVENTVALIDATION, and similar values. Your request may fail if
 contains other dynamic information. In these cases, you should 
 [run the tests using Visual Studio](record-and-replay-cloud-load-tests.md#exportvs).
 
-### Q: Can I test REST APIs using the functionality provided by the VSTS portal?
+### Q: Can I test REST APIs using the functionality provided by the Azure DevOps portal?
 
 **A**: Yes, you can use the URL-based test to test REST APIs. Enter the request URL of your 
 API and the details required to create your test.
@@ -558,7 +556,7 @@ for your app there. If you see data collected there, report your issue to
 
 <a name="qaconnectts"></a>
 
-### Q: Why do I get an "Unable to connect to VSTS due to network failure" error when trying to add apps using the Get Performance Data from Application Insights menu command?
+### Q: Why do I get an "Unable to connect to Azure DevOps due to network failure" error when trying to add apps using the Get Performance Data from Application Insights menu command?
  
 **A**: This can happen because:
 
@@ -570,11 +568,11 @@ for your app there. If you see data collected there, report your issue to
   ![Checking that the apps are listed in the Azure portal](_img/get-performance-data-for-load-tests/get-load-test-insights-05.png)
  
 * The Azure Resource Manager access token has expired. The token is valid for 12 hours 
-  in the context of VSTS. Sign out of VSTS and then sign 
+  in the context of Azure DevOps. Sign out of Azure DevOps and then sign 
   in again to refresh the token.
 
-* Azure Active Directory is not enabled for your VSTS subscription.
-  See [Access VSTS with Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md).
+* Azure Active Directory is not enabled for your Azure DevOps subscription.
+  See [Access Azure DevOps with Azure Active Directory](../../organizations/accounts/access-with-azure-ad.md).
 
 If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
 
@@ -617,7 +615,7 @@ connection will keep trying to connect indefinitely.
 **A**: If this happens, you must take the Visual Studio 
 product key from your MSDN subscription and use the "Change my Product License" 
 option on the Product Information page. You must do this on every machine where you want 
-to run load tests using VSTS. To get the product key, 
+to run load tests using Azure DevOps. To get the product key, 
 [visit this site](https://msdn.microsoft.com/subscriptions/keys/).
 
 ### Q: Why did the REST API calls that I use stop working?
@@ -631,7 +629,7 @@ in your REST API calls. To do this, see
 
 ### Q: I noticed that user code fails to execute if it depends on the test names. Are test names changed when run against the service?
 
-**A**: When the test runs using VSTS, 
+**A**: When the test runs using Azure DevOps, 
 test names in load tests are converted to lower case. 
 Any string match done on a test name by user code should 
 ignore the case or convert test names to lower case.
@@ -703,7 +701,7 @@ See [Load Test Run Settings Properties](https://docs.microsoft.com/visualstudio/
 * VS1550082
 * VS1550083
 
-[Contact VSTS Support](https://visualstudio.microsoft.com/team-services/support). 
+[Contact Azure DevOps Support](https://visualstudio.microsoft.com/team-services/support). 
 You will have to give them your test run id.
 
 ### Q: My run was aborted because the .loadtest xml file could not be parsed. What do I do?
@@ -733,7 +731,7 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ### Q: My load test got an error when it started or was aborted during the run. What do I do?
 
-**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact VSTS support. You will have to give them your test run id.
+**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact Azure DevOps support. You will have to give them your test run id.
 
 ### Q: Where can I find information about other errors?
 
