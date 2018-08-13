@@ -229,12 +229,12 @@ This is the default, and all tasks in the phase will run on that agent.
 The **Visual Studio Test** task runs in exactly the same way as version
 1 with single agent test execution.
 
-For example, you could deploy an Azure web app and run a small number
+For example, you could deploy an Azure Web App and run a small number
 of quick tests on it (for which a single agent is sufficient), along
 with some pre- and post-test setup and cleanup activities, using an
 environment configured as follows:
 
-![Configuring tasks for no parallelism to deploy and test an Azure web app](_img/test-with-unified-agent-and-phases/single-phase-env.png)
+![Configuring tasks for no parallelism to deploy and test an Azure Web App](_img/test-with-unified-agent-and-phases/single-phase-env.png)
 
 #### Multiple executions
 
@@ -289,7 +289,7 @@ For example, the log from a multiple agents test run, where some tests have fail
 ![Results in release when running three agents in parallel](_img/test-with-unified-agent-and-phases/multi-agent-test-run.png)
 
 Artifacts are automatically downloaded when the phase starts, so the test assemblies and other files
-are already located on the agent, and no "copy files" task is required. So, to publish an Azure web app
+are already located on the agent, and no "copy files" task is required. So, to publish an Azure Web App
 and run a large number of tests with fast test execution, you could model the environment as two phases -
 one being the deploy phase (which runs on a single agent because you don't want multiple agents to deploy
 the same app concurrently), and the other a test phase that uses multiple agents mode to achieve test distribution.

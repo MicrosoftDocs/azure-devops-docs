@@ -86,7 +86,7 @@ When you create a package in CI, you can use semantic versioning with prerelease
 
 * Use a version that is different from the build number. You can customize the major, minor, and patch versions for your packages in the NuGet task, and let the task generate a unique prerelease label based on date and time.
 
-* Use a script in your build process to generate the version.
+* Use a script in your build pipeline to generate the version.
 
 #  [YAML](#tab/yaml)
 

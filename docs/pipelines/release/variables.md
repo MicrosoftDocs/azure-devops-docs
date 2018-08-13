@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2015'
 
 As you compose the tasks for deploying your application into each environment in your DevOps CI/CD processes, variables will help you to:
 
-* Define a more generic deployment process once, and then
+* Define a more generic deployment pipeline once, and then
 customize it easily for each environment. For example, a variable
 can be used to represent the connection string for web deployment,
 and the value of this variable can be changed from one environment
@@ -30,7 +30,7 @@ to another. These are **custom variables**.
 
 * Use information about the context of the particular release,
 [environment](environments.md), [artifacts](artifacts.md), or
-[agent](../agents/agents.md) in which the deployment process is
+[agent](../agents/agents.md) in which the deployment pipeline is
 being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.

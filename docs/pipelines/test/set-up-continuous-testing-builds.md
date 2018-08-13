@@ -43,7 +43,7 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
    ![Edit build pipeline](_img/edit-build-definition.png)
    
-3. Choose the **+** icon for the process phase and add tasks to deploy your app for testing. For example, if you're testing a Visual Studio solution
+3. Choose the **+** icon for the pipeline phase and add tasks to deploy your app for testing. For example, if you're testing a Visual Studio solution
    and want to use the **Window Machine File Copy** and **PowerShell on Target Machines** tasks:
 
    ![Add File Copy and PowerShell tasks](_img/set-up-continuous-testing-builds/add-file-copy-powershell-steps.png)

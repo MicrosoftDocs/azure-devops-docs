@@ -32,7 +32,7 @@ You can then use the service connection in your [build and release pipeline task
 
 ### Next
 
-* [Deploy an Azure web app](../apps/cd/deploy-webdeploy-webapps.md)
+* [Deploy an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
 * [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
 * [Azure Stack Operator Documentation](https://docs.microsoft.com/azure/azure-stack/)
 

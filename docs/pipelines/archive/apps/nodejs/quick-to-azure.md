@@ -13,15 +13,15 @@ monikerRange: 'vsts'
 ---
 
 
-# Implement a CI/CD process to build and deploy your Node.js app to Azure
+# Implement a CI/CD pipeline to build and deploy your Node.js app to Azure
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and deployment (CD) automation system for your 
 Node.js apps.
 This quickstart shows how to set up CI and CD to deploy
 a Node.js app
-to an Azure web app.
+to an Azure Web App.
 You create the web app using the Azure CLI, then set up CI/CD in Azure Pipelines.
-In the CI process, you use gulp to run Mocha tests.
+In the CI pipeline, you use gulp to run Mocha tests.
 
 ![node.js web app](_img/nodejs-web-app.png)
 
@@ -73,7 +73,7 @@ to the following:
 res.send('Demo of CI/CD!!');
 ```
 
-Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure web app.
+Commit your changes in Git. This change triggers a CI build, and when the build completes, it triggers an automatic deployment to Azure Web App.
 
 [!INCLUDE [temp](../_shared/browse-to-web-app.md)]
 

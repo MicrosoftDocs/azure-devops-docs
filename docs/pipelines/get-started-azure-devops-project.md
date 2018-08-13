@@ -54,7 +54,7 @@ The Azure DevOps Project creates a CI/CD pipeline in Azure Pipelines.  You can c
 
    	![Dashboard view](_img/azure-devops-project/dashboardnopreview.png) 
 	
-The Azure DevOps Project automatically configures a CI build and release trigger.  You're now ready to collaborate with a team on a Node.js app with a CI/CD process that automatically deploys your latest work to your web site.
+The Azure DevOps Project automatically configures a CI build and release trigger.  You're now ready to collaborate with a team on a Node.js app with a CI/CD pipeline that automatically deploys your latest work to your web site.
 
 ## Commit code changes and execute CI/CD
 
@@ -90,19 +90,19 @@ The Azure DevOps Project automatically configured a full Azure Pipelines CI/CD p
 
 1. Under your build pipeline name, select **History**.  You see an audit trail of your recent changes for the build.  Azure Pipelines keeps track of any changes made to the build pipeline, and allows you to compare versions.
 
-1. Select **Triggers**.  The Azure DevOps Project automatically created a CI trigger, and every commit to the repository initiates a new build.  You can optionally choose to include or exclude branches from the CI process.
+1. Select **Triggers**.  The Azure DevOps Project automatically created a CI trigger, and every commit to the repository initiates a new build.  You can optionally choose to include or exclude branches from the CI pipeline.
 
 1. Select **Retention**.  Based on your scenario, you can specify policies to keep or remove a certain number of builds.
 
-1. Select **Build and Release**, then choose **Releases**.  The Azure DevOps Project created an Azure Pipelines release pipeline to manage deployments to Azure.
+1. Select **Pipelines**, then choose **Releases**.  The Azure DevOps Project created an Azure Pipelines release pipeline to manage deployments to Azure.
 
 1. On the left-hand side of the browser, select the **ellipsis** next to your release pipeline, then choose **Edit**.
 
-1. The release pipeline contains a **pipeline**, which defines the release process.  Under **Artifacts**, select **Drop**.  The build pipeline you examined in the previous steps produces the output used for the artifact.
+1. The release pipeline contains a **pipeline**, which defines the release pipeline.  Under **Artifacts**, select **Drop**.  The build pipeline you examined in the previous steps produces the output used for the artifact.
 
 1. To the right-hand side of the **Drop** icon, select the **Continuous deployment trigger**.  This release pipeline has an enabled CD trigger, which executes a deployment every time there is a new build artifact available.  Optionally, you can disable the trigger, so your deployments require manual execution.
 
-1. On the left-hand side of the browser, select **Tasks**.  The tasks are the activities your deployment process performs.  In this example, a task was created to deploy to **Azure App service**.
+1. On the left-hand side of the browser, select **Tasks**.  The tasks are the activities your deployment pipeline performs.  In this example, a task was created to deploy to **Azure App service**.
 
 1. On the right-hand side of the browser, select **View releases**.  This view shows a history of releases.
 
@@ -110,7 +110,7 @@ The Azure DevOps Project automatically configured a full Azure Pipelines CI/CD p
 
 1. Select **Commits**.  This view shows code commits associated with the specific deployment.
 
-1. Select **Logs**.  The logs contain useful information about the deployment process.  They can be viewed both during and after deployments.
+1. Select **Logs**.  The logs contain useful information about the deployment pipeline.  They can be viewed both during and after deployments.
 
 ## Clean up resources
 
@@ -118,10 +118,10 @@ When no longer needed, you can delete the Azure App service and related resource
 
 ## Next steps
 
-When you configured your CI/CD process in this quickstart, a build and release pipeline were automatically created in your Azure Pipelines project. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
+When you configured your CI/CD pipeline in this quickstart, a build and release pipeline were automatically created in your Azure Pipelines project. You can modify these build and release pipelines to meet the needs of your team. To learn more see this tutorial:
 
 > [!div class="nextstepaction"]
-> [Customize CD process](release/define-multistage-release-process.md)
+> [Customize CD pipeline](release/define-multistage-release-process.md)
 
 ## Videos
 

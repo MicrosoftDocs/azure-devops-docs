@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range=">= tfs-2018"
 
-You can organize your build or deployment process into phases. Every build or deployment process has at least one phase.
+You can organize your build or deployment pipeline into phases. Every build or deployment pipeline has at least one phase.
 
 ::: moniker-end
 
@@ -41,7 +41,7 @@ You can organize your deployment process into phases. Every deployment process h
 
 A phase is a series of tasks that run sequentially on the same target.
 At design time in your phase you specify a series of tasks that you want to run on a common target.
-At run time (when either the build or release process is triggered), each phase is dispatched as one or more jobs to its target.
+At run time (when either the build or release pipeline is triggered), each phase is dispatched as one or more jobs to its target.
 
 ::: moniker range="tfs-2017"
 
@@ -52,14 +52,14 @@ At run time (when either the build or release process is triggered), each phase 
 ::: moniker-end
 
 ::: moniker range="vsts"
-In a build process, the most common target is an agent. The other kind of target is the Azure Pipelines [server](server-phases.md).
+In a build pipeline, the most common target is an agent. The other kind of target is the Azure Pipelines [server](server-phases.md).
 ::: moniker-end
 
 ::: moniker range="< vsts"
-In a build process, the most common target is an agent. The other kind of target is the server (your TFS instance).
+In a build pipeline, the most common target is an agent. The other kind of target is the server (your TFS instance).
 ::: moniker-end
 
-In a deployment process, the target can be either an agent, a [deployment group](deployment-group-phases.md), or the server.
+In a deployment pipeline, the target can be either an agent, a [deployment group](deployment-group-phases.md), or the server.
 
 When the target is an agent, the tasks are run on the computer that hosts the agent.
 
@@ -276,7 +276,7 @@ Containers are not yet supported in the web editor.
 -->
 ## Timeouts
 
-To avoid hanging up your resources when your process is hung or waiting too long, it's a good idea to set a limit on how long your process is allowed to run.
+To avoid hanging up your resources when your release is hung or waiting too long, it's a good idea to set a limit on how long your release is allowed to run.
 Use the phase timeout setting to specify the limit in minutes for jobs run by this phase.
 A zero value means that the jobs will run forever (except in hosted pools, where they will be forcibly stopped).
 

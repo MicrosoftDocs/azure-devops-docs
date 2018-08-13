@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015**
 
-In this walkthrough we'll show how to use Visual Studio to automatically define a continuous integration (CI) and continuous deployment (CD) process to deploy an ASP.NET web application project to [Azure](https://azure.microsoft.com/).
+In this walkthrough we'll show how to use Visual Studio to automatically define a continuous integration (CI) and continuous deployment (CD) pipeline to deploy an ASP.NET web application project to [Azure](https://azure.microsoft.com/).
 
 [!INCLUDE [include](../../../apps/aspnet/_shared/ci-cd-description.md)]
 
@@ -28,7 +28,7 @@ In this walkthrough we'll show how to use Visual Studio to automatically define 
 
 ## Install the Continuous Delivery Tools extension
 
-The quickest way to create a continuous delivery process is with the Continuous Delivery Tools for Visual Studio (2017 RC.3 and newer),
+The quickest way to create a continuous delivery pipeline is with the Continuous Delivery Tools for Visual Studio (2017 RC.3 and newer),
 which automate the creation of build and release definitions. The tools assume that you have an existing Azure Pipelines subscription,
 and that your project has been added to source control.
 
@@ -36,7 +36,7 @@ To install the extension within Visual Studio, select **Tools > Extensions and U
 
 ## Create the build and release definitions automatically
 
-To create both the build (CI) and release (CD) definitions for a project, in Visual Studio, right-click the Solution node in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
+To create both the build (CI) and release (CD) pipelines for a project, in Visual Studio, right-click the Solution node in Solution Explorer and select **Configure Continuous Delivery....** In the dialog that appears, choose the appropriate repository branch, Azure subscription, and target App Service, and click OK. You'll see details in the Output pane during the process.
 
 [!INCLUDE [include](../../../apps/aspnet/_shared/commit-build-release.md)]
 

@@ -10,7 +10,7 @@ Do this by creating a suitable service connection:
 The examples above rely on the built-in [Azure App Service Deploy task](https://github.com/Microsoft/vsts-tasks/tree/master/Tasks/AzureRmWebAppDeployment),
 which provides simplified integration with Azure.
 
-If you use a Windows agent, this task uses Web Deploy technology to interact with the Azure web app.
+If you use a Windows agent, this task uses Web Deploy technology to interact with the Azure Web App.
 Web Deploy provides several convenient deployment options such as renaming locked files, excluding files from the App_Data folder during deployment, and so on.
 
 If you use the Linux agent, the task relies on the [Kudu REST APIs](https://github.com/projectkudu/kudu/wiki/REST-API).

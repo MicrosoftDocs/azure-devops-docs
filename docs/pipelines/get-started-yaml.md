@@ -14,7 +14,7 @@ monikerRange: '> tfs-2018'
 
 # Build a repository with YAML
 
-If you manage your code in GitHub or in Azure Repos Git, then you can use Azure Pipelines pipelines to easily build the repo by adding a YAML file to it. Azure Pipelines pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
+If you manage your code in GitHub or in Azure Repos Git, then you can use Azure Pipelines to easily build the repo by adding a YAML file to it. Azure Pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
 
 > [!NOTE]
 > To use YAML you must have the **Build YAML pipelines** [preview feature](../project/navigation/preview-features.md) enabled on your organization.
@@ -53,7 +53,7 @@ Get the code for the sample application into your own GitHub or Azure Repos repo
 
 1. In Azure Repos, navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-1. Inspect the `.vsts-ci.yml` file at the root of your imported repository. The YAML file contains the instructions for the build process. Here's an example snippet from a Gradle build pipeline. The actual content in your file depends on the sample application you chose.
+1. Inspect the `.vsts-ci.yml` file at the root of your imported repository. The YAML file contains the instructions for the build pipeline. Here's an example snippet from a Gradle build pipeline. The actual content in your file depends on the sample application you chose.
 
   ```yaml
   queue: 'Hosted VS2017'
@@ -94,7 +94,7 @@ In Azure Pipelines:
 
 1. You are then asked to select a template for the pipeline. Select **YAML**, and then select **Apply**.
 
-1. Select **Process**.
+1. Select **Pipeline**.
 
 1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your application.
 
@@ -102,7 +102,7 @@ In Azure Pipelines:
 
 In GitHub:
 
-1. Inspect the `.vsts-ci.yml` file at the root of your forked repository. The YAML file contains the instructions for the build process. Here is a snippet from the file. The contents in your file may be different depending on the sample application you chose.
+1. Inspect the `.vsts-ci.yml` file at the root of your forked repository. The YAML file contains the instructions for the build pipeline. Here is a snippet from the file. The contents in your file may be different depending on the sample application you chose.
 
   ```yaml
   queue: 'Hosted VS2017'
@@ -143,6 +143,6 @@ Back in Azure Pipelines:
 
 ## Next steps
 
-You've just learned the basics of using YAML to create and run an Azure Pipelines build process.
+You've just learned the basics of using YAML to create and run an Azure Pipelines build pipeline.
 This pipeline automatically builds and validates whatever code is checked in by your team.
 Now you're ready to configure your CI pipeline for the [programming language you're using](index.md).

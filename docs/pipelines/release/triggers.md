@@ -145,7 +145,7 @@ environment triggers you configure, such as a trigger
 on successful deployment to another environment, do not
 apply. The deployment occurs irrespective of these settings.
 This gives you the ability to override the release
-process. Performing such direct deployments requires
+pipeline. Performing such direct deployments requires
 the **Manage deployments** permission, which should
 only be given to selected and approved users.
 

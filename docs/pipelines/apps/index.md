@@ -21,7 +21,7 @@ This is a selection of the growing range of examples we are creating
 to demonstrate the many ways you can build and deploy
 a range of application types, code languages, development
 environments, and target platforms as part of a
-continuous integration (CI) and continuous deployment (CD) process.
+continuous integration (CI) and continuous deployment (CD) pipeline.
 
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Build your app</p>

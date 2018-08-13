@@ -111,7 +111,7 @@ To make continuous integration and deployment (CI/CD) of Docker apps a lot simpl
 * Released [Visual Studio 2017 RC](https://visualstudio.microsoft.com/vs/visual-studio-2017-rc/)
   and included [new continuous delivery tools](../apps/aspnet/aspnetcore-docker-to-azure.md)
   for ASP.NET Core Preview apps. You can use these tools to configure a
-  CI/CD process quickly in Azure Pipelines. Any ASP.NET Core project with
+  CI/CD pipeline quickly in Azure Pipelines. Any ASP.NET Core project with
   Docker support enabled can be set up to run an automated build and
   deployment to Azure Container Service with every Git push.
 
@@ -126,7 +126,7 @@ The agents in the hosted Linux pool run on an Ubuntu Linux host inside the
 This container includes all the standard Java, Node, Docker and .NET Core tooling.
 When we start the container we map in the Docker socket from the host VM and the
 working folder from /opt/vsts/work. This enables you to create or spawn other
-Docker containers as part of your build or release process using either a script or the
+Docker containers as part of your build or release pipeline using either a script or the
 [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker)
 in the Visual Studio Marketplace.
 
@@ -187,7 +187,7 @@ We're also announcing general availability of Release Management in Azure Pipeli
 
 **No charge for private agents:** [Private agents](../../agents/agents.md) are now free. In Azure Pipelines, you used to have to license each private agent after the first. Now you can run deployments concurrently for no additional charge.
 
-**Concurrent pipelines:** For each release process that you want to run concurrently, you need a concurrent pipeline. Some concurrent pipelines are included. If you need more, you can add more in a few ways.
+**Concurrent pipelines:** For each release pipeline that you want to run concurrently, you need a concurrent pipeline. Some concurrent pipelines are included. If you need more, you can add more in a few ways.
 
 [Concurrent pipelines for your releases in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md)
 
@@ -555,7 +555,7 @@ For more details, see [Environment deployment triggers](../../release/triggers.m
 **Consume artifacts stored in GitHub directly**
 
 Sometimes you may want to consume artifacts stored in a version control system
-directly, without passing them through a build process, as described in
+directly, without passing them through a build pipeline, as described in
 **[this topic](../../release/artifacts.md#tfvcsource)**.
 You can now do the same if your code in stored in a GitHub repository.
 

@@ -30,7 +30,7 @@ Before you begin, you need a CI build that creates your Azure RM template. To se
 
 * [Build an Azure virtual machine using an Azure RM template](build-azure-vm-template.md)
 
-## Define and test your CD release process
+## Define and test your CD release pipeline
 
 Carry out the following steps to deploy the Azure Resource Group.
 

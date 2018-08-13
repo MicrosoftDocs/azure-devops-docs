@@ -21,15 +21,15 @@ monikerRange: '>= tfs-2017'
 ::: moniker-end
 
 We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
-Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration process publishes a web deployment package.
+Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration pipeline publishes a web deployment package.
 
 ![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 
-## Define your CI build process
+## Define your CI build pipeline
 
-You'll need a continuous integration (CI) build process that publishes your web deployment package. To set up a CI build process, see:
+You'll need a continuous integration (CI) build pipeline that publishes your web deployment package. To set up a CI build pipeline, see:
 
 * [Build your ASP.NET 4 app](../aspnet/build-aspnet-4.md)
 
@@ -57,9 +57,9 @@ Follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to 
 
 [!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
 
-## Define your CD release process
+## Define your CD release pipeline
 
-Your CD release process picks up the artifacts published by your CI build and then deploys them to your IIS servers.
+Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your IIS servers.
 
 1. Do one of the following:
 
@@ -94,7 +94,7 @@ Your CD release process picks up the artifacts published by your CI build and th
 
 ## Create a release to deploy your app
 
-You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
+You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 

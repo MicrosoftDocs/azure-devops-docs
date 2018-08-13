@@ -189,7 +189,7 @@ To create the release pipeline in Azure Pipelines:
 
 1. Open **Releases** on the **Pipelines** hub in Azure Pipelines, and choose **Create release pipeline**.
 
-1. Select the **Empty** template by choosing **Start with an Empty process**.
+1. Select the **Empty** template by choosing **Start with an empty pipeline**.
 
 1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service connection. Then select the Jenkins source job and choose **Add**.
 
@@ -243,7 +243,7 @@ There is an additional approach (pattern) possible when integrating Jenkins and 
 
 1. Search for the **Jenkins** template, and then select **Apply**.
 
-1. Select **Process**, and then select **Hosted VS 2017** for the **Agent queue**.
+1. Select **Pipeline**, and then select **Hosted VS 2017** for the **Agent queue**.
 
 1. For the **Job name** parameter, enter the **Jenkins Job name** you created in the earlier steps of this tutorial.  This name must match exactly.  This will allow you to queue the Jenkins job and download the artifacts it produces.
 

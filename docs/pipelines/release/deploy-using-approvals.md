@@ -33,7 +33,7 @@ In this tutorial, you learn about:
 ## Prerequisites
 
 This tutorial extends the tutorial [Define your multi-stage
-continuous deployment (CD) process](define-multistage-release-process.md).
+continuous deployment (CD) pipeline](define-multistage-release-process.md).
 **You must have completed that tutorial first.**
 
 You'll also need a **work item query** that returns some work items from
@@ -121,7 +121,7 @@ Intervention** task in your pipeline.
 
    ![Opening the QA tasks editor](_img/deploy-using-approvals/open-qa-tasks.png)
 
-1. Choose the ellipses (**...**) in the **QA** deployment process bar and then choose **Add agentless phase**.
+1. Choose the ellipses (**...**) in the **QA** deployment pipeline bar and then choose **Add agentless phase**.
 
    ![Adding an Agentless phase to the task list](_img/deploy-using-approvals/add-agentless-phase.png)
 
@@ -132,7 +132,7 @@ Intervention** task in your pipeline.
 
    ![Adding a Manual Intervention task](_img/deploy-using-approvals/add-maninter-task.png)
 
-1. Configure the task by entering a message (the **Instructions**) to display when it executes and pauses the release process.
+1. Configure the task by entering a message (the **Instructions**) to display when it executes and pauses the release pipeline.
 
    ![Configuring the Manual Intervention task](_img/deploy-using-approvals/manual-intervention-task.png)
 
@@ -148,7 +148,7 @@ Intervention** task in your pipeline.
 ## View the logs for approvals 
 
 You typically need to validate and audit a release and the associated deployments
-after it has completed, or even during the deployment process. This is useful when
+after it has completed, or even during the deployment pipeline. This is useful when
 debugging a problematic deployment, or when checking when and by whom approvals were
 granted. The comprehensive logging capabilities provide this information.
 
@@ -159,7 +159,7 @@ granted. The comprehensive logging capabilities provide this information.
    ![Opening the release summary](_img/deploy-using-approvals/open-summary.png)
 
 1. Open the **Logs** page. You'll see a live log and status for each step in the release
-   process. After the release is complete, choose the icon in the **Action** column
+   pipeline. After the release is complete, choose the icon in the **Action** column
    for the **Manual Intervention** task to see details of who approved, when the approval
    occurred, and the message entered by the approver.  
 

@@ -146,7 +146,7 @@ Write-Error "$("the Write-Error PowerShell command reported that") $($env:ErrorM
 
 ### ApplyVersionToAssemblies.ps1
 
-[Use a script to customize your build process](../../scripts/powershell.md)
+[Use a script to customize your build pipeline](../../scripts/powershell.md)
 
 ## Open source
 

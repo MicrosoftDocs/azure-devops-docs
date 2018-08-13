@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-For some workflows you need your build process to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.  
+For some workflows you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.  
 
 Git.exe is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-premises agents](../agents/agents.md).
 
@@ -75,7 +75,7 @@ On the [options tab](../build/options.md) select **Allow scripts to access OAuth
 
 ## Make sure to clean up the local repo
 
-Certain kinds of changes to the local repository are not automatically cleaned up by the build process. So make sure to:
+Certain kinds of changes to the local repository are not automatically cleaned up by the build pipeline. So make sure to:
 
 * Delete local branches you create.
 * Undo git config changes.
@@ -163,9 +163,9 @@ Yes
 Add ```***NO_CI***``` to your commit message. For example, ```git merge origin/features/hello-world -m "Merge to master ***NO_CI***"```
 
 
-### How does enabling scripts to run Git commands affect how the build process gets build sources?
+### How does enabling scripts to run Git commands affect how the build pipeline gets build sources?
 
-When you set ```system.prefergit``` to ```true```, the build process uses git.exe instead of LibGit2Sharp to clone or fetch the source files.
+When you set ```system.prefergit``` to ```true```, the build pipeline uses git.exe instead of LibGit2Sharp to clone or fetch the source files.
 
 [!INCLUDE [temp](../_shared/qa-agents.md)]
 

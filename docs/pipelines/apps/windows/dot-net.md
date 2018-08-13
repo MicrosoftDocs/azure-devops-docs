@@ -1,7 +1,7 @@
 ---
 title: Build your .NET desktop app for Windows
 shorttitle: Visual Studio solution
-description: Learn how you can define a continuous integration (CI) process that builds your .NET app on Team Foundation Server and Azure Pipelines.
+description: Learn how you can define a continuous integration (CI) pipeline that builds your .NET app on Team Foundation Server and Azure Pipelines.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build your .NET desktop app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
+Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build your .NET desktop app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline.
 
 ## Prerequisites
 
@@ -103,14 +103,14 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  ---
 
-1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build process is automatically triggered every time you commit a change to your repository.
+1. Click the **Triggers** tab in the build pipeline. Enable the **Continuous Integration** trigger. This will ensure that the build pipeline is automatically triggered every time you commit a change to your repository.
 
 1. Click **Save & queue** to kick off your first build. On the **Save build pipeline and queue** dialog box, click **Save & queue**.
 
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
  [//]: # (TODO:> [!TIP])
- [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
+ [//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build pipeline for your Git repo](#)
 
 ## View the build summary
 

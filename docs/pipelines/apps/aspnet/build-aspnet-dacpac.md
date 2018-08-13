@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Here we'll show you how to define your continuous integration (CI) process for your SQL server database project.
+Here we'll show you how to define your continuous integration (CI) pipeline for your SQL server database project.
 
 ## Get set up
 
@@ -29,7 +29,7 @@ For the instructions in this topic, you need a SQL server database project in Vi
 > [!TIP]
 > If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
 
-## Define your CI build process
+## Define your CI build pipeline
 
 ### Create the build pipeline
 

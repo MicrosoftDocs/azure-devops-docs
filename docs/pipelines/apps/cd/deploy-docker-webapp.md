@@ -1,6 +1,6 @@
 ---
-title: Deploy a Docker container app to an Azure web app
-description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure web app from Release Management in Azure Pipelines or Team Foundation Server (TFS)
+title: Deploy a Docker container app to an Azure Web App
+description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Web App from Release Management in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Deploy to an Azure Web App for Containers
 
-We'll show you how to set up continuous deployment of your Docker-enabled app to an Azure web app using
+We'll show you how to set up continuous deployment of your Docker-enabled app to an Azure Web App using
 Azure Pipelines.
 
 For example, you can continuously deliver your app to a Windows VM hosted in Azure.
@@ -23,10 +23,10 @@ For example, you can continuously deliver your app to a Windows VM hosted in Azu
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 
-## Define your CI build process
+## Define your CI build pipeline
 
-You'll need a continuous integration (CI) build process that publishes a Docker container image.
-To set up a CI build process, see:
+You'll need a continuous integration (CI) build pipeline that publishes a Docker container image.
+To set up a CI build pipeline, see:
 
 * [Build and push a Docker image](../../languages/docker.md).
 

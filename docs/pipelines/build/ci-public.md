@@ -59,7 +59,7 @@ Follow the steps in [Your first build and release](../get-started-designer.md) t
 
 By default, your build pipeline is not automatically triggered for pull requests from forked repositories. You can change this behavior, but there are additional security considerations that you must take into account. To enable building pull requests from forks:
 
-1. Navigate to your Azure Pipelines project. Select **Build and Release**, and then select **Builds**. Locate your build pipeline, and select **Edit**.
+1. Navigate to your Azure Pipelines project. Select **Pipelines**, and then select **Builds**. Locate your build pipeline, and select **Edit**.
 1. Select the **Triggers** tab. Enable the checkbox labeled **Build pull requests from forks of this repository**.
 
 By default, secrets associated with your build pipeline are not made available to builds of pull requests from forks. Secrets include:

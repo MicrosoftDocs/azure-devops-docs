@@ -126,7 +126,7 @@ YAML builds are not yet available on TFS.
 
 1. After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
 
-2. Select **Process** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
+2. Select **Pipeline** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
   * **Agent queue:** `Hosted Linux Preview`
   * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
@@ -187,7 +187,7 @@ queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017'
 
 # [Designer](#tab/designer)
 
-In the build pipeline, select **Tasks**, then select the **Process** node, and finally select the **Agent queue** that you want to use.
+In the build pipeline, select **Tasks**, then select the **Pipeline** node, and finally select the **Agent queue** that you want to use.
 
 ---
 
@@ -269,7 +269,7 @@ Often you'll want to build and test your app before creating the Docker image. Y
 
 In this approach, you use the build pipeline to orchestrate building your code, running your tests, and creating an image. This approach is useful if you want to:
 
-* Leverage tasks (either built-in tasks or those you get from the Marketplace) to define the process used to build and test your app.
+* Leverage tasks (either built-in tasks or those you get from the Marketplace) to define the pipeline used to build and test your app.
 * Run tasks that require authentication via service connections (for example: authenticated NuGet or npm feeds).
 * Publish test results.
 
@@ -279,7 +279,7 @@ The instructions in the [above example](#example) demonstrate this approach.
 
 ### Build and test in your Dockerfile
 
-In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage Azure Pipelines and TFS features such as tasks, phases, or test analytics.
+In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build pipeline. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build pipeline is entirely configured in your _Dockerfile_. This means your build pipeline is portable from the development machine to any build system. One disadvantage is that you can't leverage Azure Pipelines and TFS features such as tasks, phases, or test analytics.
 
 To use this approach for the sample app, create a _Dockerfile_ at the root of your repo with the following content:
 

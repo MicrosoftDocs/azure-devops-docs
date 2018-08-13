@@ -242,7 +242,7 @@ the agent on the test machines must be running in interactive mode with auto-log
 not as a service, to allow the agent to launch a web browser.
 If you are using a headless browser such as [PhantomJS](http://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 
-[Build and Release Agents](../../pipelines/agents/agents.md),
+[Build and release agents](../../pipelines/agents/agents.md),
 [Deploy an agent on Windows](../../pipelines/agents/v2-windows.md),
 and [Agent pools and queues](../../pipelines/agents/pools-queues.md).
 

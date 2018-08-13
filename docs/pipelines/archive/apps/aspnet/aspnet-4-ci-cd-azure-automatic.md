@@ -56,7 +56,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    the "**+**" icon, selecting **Web App** from the **Web + Mobile** category,
    and providing a name and a resource group.
    
-   ![Creating a new Azure web app](_img/continuous-app-service/new-web-app.png)
+   ![Creating a new Azure Web App](_img/continuous-app-service/new-web-app.png)
 
 1. In your app's menu blade, choose **Continuous Delivery (Preview)** and then choose **Configure**.
 

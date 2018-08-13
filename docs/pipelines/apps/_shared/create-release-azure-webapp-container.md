@@ -48,7 +48,7 @@ ms.topic: include
 
 ## Create a release to deploy your app
 
-You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
+You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
 1. Choose **+ Release** and select **Create Release**.
 

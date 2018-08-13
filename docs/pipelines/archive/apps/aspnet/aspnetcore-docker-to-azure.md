@@ -37,7 +37,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018 || vsts'
 ## Explore the release pipeline
 
 1. Navigate to your project using the link in the Visual Studio output window after **Configure Continuous Delivery...** command.
-1. Click on the **Build and Release** tab.
+1. Click on the **Pipelines** tab.
 1. Click **Builds**, select the build pipeline shown there, and click **Edit**.
    1. The sequence of tasks that appear are what builds the application when code is committed to the repository, and includes tasks to run unit tests.
    1. At the end you'll see tasks that publish the build artifacts to a staging directory. This is the location that the release pipeline monitors, such that when new artifacts appear, the release pipeline will begin a new deployment.

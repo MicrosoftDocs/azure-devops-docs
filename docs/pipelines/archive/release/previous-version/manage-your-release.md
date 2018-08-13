@@ -86,17 +86,17 @@ If you are not prompted automatically, go to **Administration**, **Settings**.
 
 ![Configure service URL](_img/manage-release-02.png) 
 
-View the guide and checklist that is provided to help you to set up your release process.
+View the guide and checklist that is provided to help you to set up your release pipeline.
 First **[add users, set up groups, and control access](add-users-and-groups.md)**.  
 
-![Get started screen to help you with your release process steps](_img/manage-release-03.png) 
+![Get started screen to help you with your release pipeline steps](_img/manage-release-03.png) 
 
-The following steps guide you through the essential parts of the release process.
+The following steps guide you through the essential parts of the release pipeline.
 
 <a name="AddStages"></a>
 ### Set up stages
 
-From the **Administration** tab, add a stage type for each step you need in the release process of your app.
+From the **Administration** tab, add a stage type for each step you need in the release pipeline of your app.
 
 ![Add a stage type](_img/manage-release-04.png) 
 
@@ -158,7 +158,7 @@ Name the release and choose the release template that you want to use.
 
 ![Start a release](_img/manage-release-07.png)
 
-The release process begins.
+The release pipeline begins.
 
 ![Release in progress](_img/manage-release-08.png)
 

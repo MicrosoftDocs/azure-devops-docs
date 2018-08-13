@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2015'
 > A simpler way to deploy web applications to IIS servers is by using [deployment groups](deploy-webdeploy-iis-deploygroups.md)
 instead of WinRM. Deployment groups are currently in preview for some users in Azure Pipelines. They are not yet available in TFS.
 
-Continuous deployment means starting an automated deployment process whenever a new successful build is available.
+Continuous deployment means starting an automated deployment pipeline whenever a new successful build is available.
 Here we'll show you how to set up continuous deployment of your ASP.NET or Node.js app to one or more IIS servers using Release Management.
 A task running on the [Build and Release agent](../../agents/agents.md) opens a WinRM connection to each IIS server to run Powershell scripts remotely in order to deploy the Web Deploy package.
 
@@ -132,9 +132,9 @@ In this example, we will deploy to the Default Web Site on each of the servers. 
 Install the [IIS Web App Deployment Using WinRM](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.iiswebapp)
 extension from Visual Studio Marketplace in Azure Pipelines or TFS.
 
-## Define and test your CD release process
+## Define and test your CD release pipeline
 
-Continuous deployment (CD) means starting an automated release process whenever a new successful build is available. Your CD release process picks up the artifacts published by your CI build and then deploys them to your IIS servers.
+Continuous deployment (CD) means starting an automated release pipeline whenever a new successful build is available. Your CD release pipeline picks up the artifacts published by your CI build and then deploys them to your IIS servers.
 
 1. Do one of the following:
 
@@ -145,7 +145,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
    * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
 
-1. Choose **Start with an Empty process**.
+1. Choose **Start with an empty pipeline**.
 
 1. If you created your new release pipeline from a build summary, check that the build pipeline
    and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
@@ -190,7 +190,7 @@ Continuous deployment (CD) means starting an automated release process whenever 
 
 1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
 
-You're now ready to create a release, which means to start the process of running the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
+You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
 
 [!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
 

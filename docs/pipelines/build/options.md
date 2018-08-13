@@ -146,7 +146,7 @@ Select if you want to show the latest outcome of this build on external web site
 
 ## Create a work item on failure
 
-If the build process fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type.
+If the build pipeline fails, you can automatically create a work item to track getting the problem fixed. You can specify the work item type.
 
 You can also select if you want to assign the work item to the requestor. For example, if this is a CI build, and a team member checks in some code that breaks the build, then the work item is assigned to that person.
 
@@ -162,9 +162,9 @@ You can also select if you want to assign the work item to the requestor. For ex
 
 ## Allow scripts to access the OAuth token
 
-Select this check box if you want to enable your script to use the build process OAuth token.
+Select this check box if you want to enable your script to use the build pipeline OAuth token.
 
-For an example, see [Use a script to customize your build process](../scripts/powershell.md).
+For an example, see [Use a script to customize your build pipeline](../scripts/powershell.md).
 
 
 ## Default agent queue
@@ -251,7 +251,7 @@ Some build tasks won't run unless one or more demands are met by the build agent
 
 ### Manually entered demands
 
-You might need to use on-premises build agents with special capabilities. For example, your build process requires SpecialSoftware.
+You might need to use on-premises build agents with special capabilities. For example, your build pipeline requires SpecialSoftware.
 
 Add the demand to your build pipeline.
 

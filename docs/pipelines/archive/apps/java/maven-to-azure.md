@@ -1,6 +1,6 @@
 ---
-title: Build and Deploy your Java application to an Azure web app
-description: Build and Deploy your Java application to an Azure web app
+title: Build and Deploy your Java application to an Azure Web App
+description: Build and Deploy your Java application to an Azure Web App
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,7 +13,7 @@ monikerRange: 'tfs-2017'
 ---
 
 
-# Build and Deploy your Java app to an Azure web app
+# Build and Deploy your Java app to an Azure Web App
 
 **[Azure Pipelines](quick-to-azure.md) | TFS 2017 RTM**
 
@@ -25,7 +25,7 @@ Upload your code to Azure Pipelines or your on-premises Team Foundation Server. 
 
 [!INCLUDE [temp](_shared/java-web-app-sample-link.md)]
 
-## Enable Java, Apache Tomcat, and FTP for your Azure web app
+## Enable Java, Apache Tomcat, and FTP for your Azure Web App
 
 0. Sign in to the [Azure portal](https://portal.azure.com/).
 
@@ -49,8 +49,8 @@ On the Variables tab, store the data needed to copy files to Azure via FTP. Copy
 
 | Name | Notes |
 |---|---|---|
-| azure.ftp.userName | Take this value from your Azure web app essentials. For example if the name of your Azure web app is FabrikamJava, then the value would be : ```FabrikamJava\YourUserName``` |
-| azure.ftp.password | Take this value from your Azure subscription deployment settings. In your build pipeline variables, make sure to click secret to avoid exposing this password value. [I don't want to use my Azure subscription FTP credentials. Can I use credentials scoped to my Azure web app?](#azure_site_ftp) |
+| azure.ftp.userName | Take this value from your Azure Web App essentials. For example if the name of your Azure Web App is FabrikamJava, then the value would be : ```FabrikamJava\YourUserName``` |
+| azure.ftp.password | Take this value from your Azure subscription deployment settings. In your build pipeline variables, make sure to click secret to avoid exposing this password value. [I don't want to use my Azure subscription FTP credentials. Can I use credentials scoped to my Azure Web App?](#azure_site_ftp) |
 
 ![Java deployment build variables](_img/maven-to-azure/azure-java-deployment-variables.png)
 
@@ -78,7 +78,7 @@ On the Build tab, add these tasks:
 <li> Files: ```helloworld/target/hello.war```</li>
  <li> Username: ```$(azure.ftp.userName)```</li>
  <li> Password: ```$(azure.ftp.password)```</li>
- <li> URL: Take this value from your Azure web app essentials page on the [Azure portal](https://portal.azure.com/). For example, ```ftp://waws-prod-sn1-011.ftp.azurewebsites.windows.net```</li>
+ <li> URL: Take this value from your Azure Web App essentials page on the [Azure portal](https://portal.azure.com/). For example, ```ftp://waws-prod-sn1-011.ftp.azurewebsites.windows.net```</li>
  <li> Optional Arguments: ```-Q "+CWD site/wwwroot/webapps"```</li>
 </ul>
 </td>
@@ -109,7 +109,7 @@ After a successful build, check your site: ```http://{web_app_name}.azurewebsite
 
 
 <a name="azure_site_ftp"></a>
-### I don't want to use my Azure subscription FTP credentials. Can I use credentials scoped to my Azure web app?
+### I don't want to use my Azure subscription FTP credentials. Can I use credentials scoped to my Azure Web App?
 
 A: Yes.
 

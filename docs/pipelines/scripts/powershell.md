@@ -1,6 +1,6 @@
 ---
-title: Use a PowerShell script to customize your build process
-description: Learn how you can use a script to customize the build process in your workflow by using Azure Pipelines or Team Foundation Server (TFS).
+title: Use a PowerShell script to customize your build pipeline
+description: Learn how you can use a script to customize the build pipeline in your workflow by using Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-cicd
@@ -12,7 +12,7 @@ ms.date: 08/04/2016
 monikerRange: '>= tfs-2015'
 ---
 
-# Use a PowerShell script to customize your build process
+# Use a PowerShell script to customize your build pipeline
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/dn376353%28v=vs.120%29.aspx)**
 
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build process.
+When you are ready to move beyond the basics of compiling and testing your code, use a PowerShell script to add your team's business logic to your build pipeline.
 
 You can run a PowerShell Script on a [Windows build agent](../agents/v2-windows.md).
 
@@ -47,7 +47,7 @@ For example, to version to your assemblies, copy and upload this script to your 
 # Look for a 0.0.0.0 pattern in the build number.
 # If found use it to version the assemblies.
 #
-# For example, if the 'Build number format' build process parameter 
+# For example, if the 'Build number format' build pipeline parameter 
 # $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 # then your build numbers come out like this:
 # "Build HelloWorld_2013.07.19.1"
@@ -149,7 +149,7 @@ $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 <a name="oauth"></a>
 ## Use the OAuth token to access the REST API
 
-To enable your script to use the build process OAuth token, go to the **Options** tab of the build pipeline and select **Allow Scripts to Access OAuth Token**.
+To enable your script to use the build pipeline OAuth token, go to the **Options** tab of the build pipeline and select **Allow Scripts to Access OAuth Token**.
 
 After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
 

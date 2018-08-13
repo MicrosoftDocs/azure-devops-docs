@@ -1,6 +1,6 @@
 ---
 title: Build your Xamarin app | Azure Pipelines or Team Foundation Server
-description: Learn how you can define a CI process that builds your Xamarin solution on Team Foundation Server (TFS) and Visual Azure Pipelines.
+description: Learn how you can define a CI pipeline that builds your Xamarin solution on Team Foundation Server (TFS) and Visual Azure Pipelines.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 933A828E-CBB7-44C2-BAC0-1E1E9D78BFA0
@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) process to automatically build and package your Xamarin app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI process.
+Xamarin enables you to develop a single solution and deploy it to Android, iOS, and Windows devices. Azure Pipelines and Team Foundation Server (TFS) provide a highly customizable continuous integration (CI) pipeline to automatically build and package your Xamarin app whenever your team pushes or checks in code. In this quickstart you learn how to define your CI pipeline.
 
 ## Prerequisites
 
@@ -113,7 +113,7 @@ You need to create two build pipelines - one for Xamarin.Android and one for Xam
 1. A new build is started. You'll see a link to the new build on the top of the page. Click the link to watch the new build as it happens.
 
 [//]: # (TODO:> [!TIP])
-[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build process for your Git repo](#)
+[//]: # (TODO:> To learn more about GitHub CI builds, see [Define CI build pipeline for your Git repo](#)
 
 ### Define your Xamarin.iOS build
 

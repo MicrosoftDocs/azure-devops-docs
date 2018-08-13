@@ -62,7 +62,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/copy-files.png) [Copy Files](utility/copy-files.md). Copy files from source folder to target folder using minimatch patterns (The minimatch patterns will only match file paths, not folder paths). | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](utility/_img/curl-upload-files.png) [cURL Upload Files](utility/curl-upload-files.md). Use cURL to upload files with supported protocols. (FTP, FTPS, SFTP, HTTP, and more) | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](utility/_img/decryptfile.png) [Decrypt File](utility/decrypt-file.md). A thin utility task for file decryption using OpenSSL. | Azure Pipelines |
-| ![icon](utility/_img/delay.png) [Delay](utility/delay.md). Pause execution of the process for a fixed delay time. | Azure Pipelines |
+| ![icon](utility/_img/delay.png) [Delay](utility/delay.md). Pause execution of the pipeline for a fixed delay time. | Azure Pipelines |
 | ![icon](utility/_img/delete-files.png) [Delete Files](utility/delete-files.md). Delete files or folders. | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](utility/_img/downloadbuildartifacts.png) [Download Build Artifacts](utility/download-build-artifacts.md). Download build artifacts. | Azure Pipelines |
 | ![icon](utility/_img/downloadpackage.png) [Download Package](utility/download-package.md). Download a package from a Package Management feed in Azure Pipelines or TFS.  Requires the Package Management extension. | Azure Pipelines |

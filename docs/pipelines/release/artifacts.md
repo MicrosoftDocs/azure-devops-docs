@@ -180,15 +180,15 @@ The following features are available when using Team Build sources:
 
 There are scenarios in which you may want to
 consume artifacts stored in a version control system
-directly, without passing them through a build process.
+directly, without passing them through a build pipeline.
 For example:
 
 * You are developing a PHP or a JavaScript application
-  that does not require an explicit build process.
+  that does not require an explicit build pipeline.
 
 * You manage configurations for various environments
   in different version control repositories, and you want
-  to consume these configuration files directly from version control as part of the deployment process.
+  to consume these configuration files directly from version control as part of the deployment pipeline.
 
 * You manage your infrastructure and configuration as
   code (such as Azure Resource Manager templates) and
@@ -477,7 +477,7 @@ download the artifacts you require.
 In Azure Pipelines, you can, however, [select which artifacts you want to download](../process/phases.md#artifact-download)
 to the agent for a specific phase and environment of the deployment.
 Typically, you will do this to improve the efficiency of the deployment
-process when the tasks in that phase do not
+pipeline when the tasks in that phase do not
 require all or any of the artifacts, or if you implement custom code
 in a task to download the artifacts you require.
 

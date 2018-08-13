@@ -43,7 +43,7 @@ Before you start, you'll need:
 
 ## Create a release definition
 
-Set up stages for each step you need in the release process of your app, 
+Set up stages for each step you need in the release pipeline of your app, 
 along with the environments. You can add stages and environments, too.
 
 1. In Visual Studio Team Explorer, right-click a build definition and 

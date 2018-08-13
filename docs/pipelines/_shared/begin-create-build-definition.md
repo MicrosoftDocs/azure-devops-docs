@@ -15,7 +15,7 @@ ms.topic: include
 </div>
 </li>
 
-<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Build and Release tab > Builds) &#x25BC;</a></p>
+<li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab > Builds) &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-create">
 ![Build tab](_img/create-new-build-definition.png)
 <p></p>

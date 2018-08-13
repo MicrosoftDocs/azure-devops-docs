@@ -18,4 +18,4 @@ You will notice a new release being created. Select the link to navigate to the 
 
 ![new release created message](../../../apps/cd/azure/_shared/_img/new-release-created-message.png)
 
-You can watch the live logs for the deployment as it happens. Wait for the release to be deployed to the Azure web app.
+You can watch the live logs for the deployment as it happens. Wait for the release to be deployed to the Azure Web App.
