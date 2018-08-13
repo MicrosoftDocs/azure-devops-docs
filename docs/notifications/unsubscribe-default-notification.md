@@ -1,7 +1,7 @@
 ---
 title: View subscribed notifications, unsubscribe or opt-out  
-titleSuffix: VSTS & TFS
-description: View your notifications and unsubscribe from a default or built-in notfication in Visual Studio Team Services or Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS
+description: View your notifications and unsubscribe from a default or built-in notfication in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -16,11 +16,11 @@ monikerRange: '>= tfs-2017'
 
 # View your subscriptions, opt-out as needed 
 
-**VSTS | TFS 2018 | TFS 2017.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017.1**
 
 If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md)  
 
-You start by opening your personal notification settings. If you don't have a project yet, create one in [VSTS](../organizations/accounts/set-up-vs.md).
+You start by opening your personal notification settings. If you don't have a project yet, create one in [Azure DevOps Services](../organizations/accounts/set-up-vs.md).
 
 1. From the web portal, click the icon with your initials or picture icon, and select **Notification settings** from the drop-down menu. 
 

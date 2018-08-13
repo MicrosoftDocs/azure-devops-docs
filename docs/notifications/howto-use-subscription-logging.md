@@ -1,7 +1,7 @@
 ---
 title: How to use subscription logging
-titleSuffix: VSTS & TFS 
-description: How to use subcription logging to troubleshoot Visual Studio Team Services (VSTS) notifications
+titleSuffix: Azure DevOps Services & TFS 
+description: How to use subcription logging to troubleshoot Azure DevOps Servicesnotifications
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
@@ -16,10 +16,10 @@ monikerRange: '>= tfs-2018'
 
 # How to use subscription logging
 
-<b>VSTS | TFS 2018 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+<b>Azure DevOps Services | TFS 2018 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 > [!NOTE]  
-> This topic applies to VSTS, TFS 2018 Update 2, and later versions. For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This topic applies to Azure DevOps Services, TFS 2018 Update 2, and later versions. For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 Subscription logging is a valuable tool for troubleshooting.  It provides diagnostic information from the notifications pipeline and is disabled by default.  Once enabled, up to 25 logs, or one hour's worth of logs, will be collected for the subscription.
 

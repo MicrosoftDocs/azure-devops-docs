@@ -1,7 +1,7 @@
 ---
 title: Events, subscriptions, and notifications
-titleSuffix: VSTS & TFS 
-description: Learn about events and subscriptions in VSTS and TFS, and how they are used to create notifications to users
+titleSuffix: Azure DevOps Services & TFS 
+description: Learn about events and subscriptions in Azure DevOps Services and TFS, and how they are used to create notifications to users
 ms.technology: devops-collab
 ms.prod: devops
 ms.manager: douge
@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2017'
 
 # Events, subscriptions, and notifications
 
-<b>VSTS | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
+<b>Azure DevOps Services | TFS 2018 | TFS 2017.1 | [Previous versions](../work/track/alerts-and-notifications.md)</b> 
 
 > [!NOTE]
-> This topic applies to VSTS, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/tfs/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
 
 ## Events
 **Events** are raised when certain actions occur, like when a work item is created or a pull request is voted on. See the list of [supported event types](oob-supported-event-types.md).
@@ -39,9 +39,9 @@ Individual users can choose to opt out of any default subscription while other t
 Individuals can also create custom subscriptions which apply only to them. Learn how to [manage personal subscriptions](howto-manage-personal-notifications.md).
 
 ### Custom service hook subscriptions
-**Service hooks subscriptions** can be used to integrate with third party services. When a VSTS event matches a service hook subscription, a notification is delivered to the third party service. For example, when a VSTS build completes, a notification can be delivered to a Slack channel with links back to the build artifact in VSTS. To learn more, see [Integrating with third party services](howto-integrate-third-party-services.md).
+**Service hooks subscriptions** can be used to integrate with third party services. When a Azure DevOps Services event matches a service hook subscription, a notification is delivered to the third party service. For example, when a Azure DevOps Services build completes, a notification can be delivered to a Slack channel with links back to the build artifact in Azure DevOps Services. To learn more, see [Integrating with third party services](howto-integrate-third-party-services.md).
 
 ## Notifications
-When an **event** occurs in VSTS or TFS, its content is compared with every **subscription** of that event type. If the subscription's filter conditions are met by the event, a notification is generated. **A notification is generated for every subscription/event match.**
+When an **event** occurs in Azure DevOps Services or TFS, its content is compared with every **subscription** of that event type. If the subscription's filter conditions are met by the event, a notification is generated. **A notification is generated for every subscription/event match.**
 
 Each notification is then delivered based on the delivery properties defined in the subscription (either as an email or as a service hook). [Learn more about email delivery options](concepts-email-recipients.md).
