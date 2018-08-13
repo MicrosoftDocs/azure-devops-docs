@@ -1,6 +1,6 @@
 ---
 title: Move your packages to the cloud
-description: Leave your file shares behind and bring your packages to VSTS or Team Foundation Server
+description: Leave your file shares behind and bring your packages to Azure DevOps Services or Team Foundation Server
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -14,27 +14,27 @@ monikerRange: '>= tfs-2017'
 
 # Move your packages to the cloud
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-VSTS provides hosted NuGet feeds as a service. 
+Azure DevOps Services provides hosted NuGet feeds as a service. 
 If you're using NuGet packages as a part of your continuous delivery flow, 
-VSTS Package Management can eliminate your dependencies on on-premises file shares and hosted instances of NuGet.Server.
-VSTS Package Management works with any CI system that supports authenticated NuGet feeds. 
-This walkthrough assumes that you're using VSTS Team Build (not XAML Build).
+Azure Artifacts can eliminate your dependencies on on-premises file shares and hosted instances of NuGet.Server.
+Azure Artifacts works with any CI system that supports authenticated NuGet feeds. 
+This walkthrough assumes that you're using Azure DevOps Services Team Build (not XAML Build).
 
 ## Before you start
 
-VSTS NuGet service provides a number of benefits compared to file shares. However, some of these benefits may require changes to your existing workflows.
+Azure DevOps Services NuGet service provides a number of benefits compared to file shares. However, some of these benefits may require changes to your existing workflows.
 
-- **Indexing:** VSTS maintains an index of all the packages in each feed, which enables fast `nuget list` operations. 
+- **Indexing:** Azure DevOps Services maintains an index of all the packages in each feed, which enables fast `nuget list` operations. 
 List operations on your file shares require the client to open every `nupkg` and examine the `nuspec` for metadata unless your 
 file share has been configured to provide an index that the NuGet client understands.
 - **Immutability:** A package version (e.g. `MyPackage.1.0.0.0.nupkg`) can only be pushed to a feed once. 
 This ensures that any dependencies on that version are guaranteed to remain valid. 
-However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to VSTS NuGet feeds. Learn more about [Immutability in VSTS](../feeds/immutability.md).
-- **Well-formedness:** VSTS validates all pushed packages to ensure they're well-formed.
+However, if you have workflows that publish packages with newer binaries without changing the version number, those workflows will break when moved to Azure DevOps Services NuGet feeds. Learn more about [Immutability in Azure DevOps Services](../feeds/immutability.md).
+- **Well-formedness:** Azure DevOps Services validates all pushed packages to ensure they're well-formed.
 This prevents invalid packages from entering your development and build environments.
-However, any workflow that publishes malformed packages will break when moving to VSTS NuGet feeds.
+However, any workflow that publishes malformed packages will break when moving to Azure DevOps Services NuGet feeds.
 
 ### NuGet 3.x is recommended
 
@@ -43,13 +43,13 @@ However, any workflow that publishes malformed packages will break when moving t
 ### Authentication and authorization
 
 If you're using Active Directory-backed file shares, you and your on-prem build agents are likely authenticating automatically using Windows NTLM.
-Moving your packages to VSTS will require a few changes:
+Moving your packages to Azure DevOps Services will require a few changes:
 
 - **Authentication:** You need to provide the NuGet client with credentials in order to restore and push packages.
   - **Visual Studio 2015 users**: Credential acquisition happens automatically, as long as you've updated the 
   [NuGet Package Manager](../nuget/consume.md) extension to version 3.3 or higher by going to the Tools menu and using the Extensions and Updates window.
   - **nuget.exe 3.x users**: Credential acquisition happens automatically after you install the 
-[VSTS Credential Provider](../nuget/nuget-exe.md).
+[Azure DevOps Services Credential Provider](../nuget/nuget-exe.md).
 - **Authorization:** Ensure that any principal (user, service account, group, etc.) that needs access to your packages has the appropriate permissions. See the [permissions](#make-a-plan-for-permissions) section for details.
 
 ## Move your packages
@@ -77,7 +77,7 @@ Look for any lines with a UNC path (like `<add key="SMBNuGetServer" value="\\ser
 
 When setting up your new feeds, you can either:
   - Set up your feed permissions to match your existing file share permissions
-  - Align your feed permissions with existing VSTS teams and groups
+  - Align your feed permissions with existing Azure DevOps Services teams and groups
  
 If you want to match your existing file share permissions, note the permissions on each share that contains packages. 
 Specifically, note the principals with:
@@ -122,10 +122,10 @@ For each feed, click the **Connect to feed** button and copy the **Source URL** 
 
 Once you've set up your feeds, you can do a bulk push from each SMB share to its corresponding feed. To do so: 
 
-1. If you haven't already, open a PowerShell window in the repo where you installed the VSTS NuGet tools and run `init.ps1`. 
+1. If you haven't already, open a PowerShell window in the repo where you installed the Azure DevOps Services NuGet tools and run `init.ps1`. 
 This sets up your environment to allow you to work with nuget.exe and Team Service's NuGet feeds.
 1. For each share, push all packages in the share to the new feed: 
-`nuget push {your package path}\*.nupkg -Source {your NuGet package source URL} -ApiKey VSTS`
+`nuget push {your package path}\*.nupkg -Source {your NuGet package source URL} -ApiKey Azure DevOps Services`
 
 For larger teams, you should consider marking each share as read-only before doing the `nuget push` operation to ensure no one adds or updates packages during your migration.  
 
@@ -136,10 +136,10 @@ Now, return to each of the nuget.config files you found in the [inventory](#inve
 each share, find the corresponding `<add key="SMBNuGetServer" value="\\server\share\NuGet" />` and replace the `value` with the new feed's source URL. 
 
 <a name="add-the-vsts-nuget-tools-to-your-repo"></a>
-#### Add the VSTS NuGet tools to your repo
+#### Add the Azure DevOps Services NuGet tools to your repo
 
-The VSTS NuGet [bootstrap package](bootstrap-nuget.md) can automate the process of acquiring the right NuGet tools and credentials to use feeds.
-This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet 2.x, which don't have built-in support for VSTS auth.
+The Azure DevOps Services NuGet [bootstrap package](bootstrap-nuget.md) can automate the process of acquiring the right NuGet tools and credentials to use feeds.
+This is especially helpful for users of Visual Studio 2013 (or earlier) or NuGet 2.x, which don't have built-in support for Azure DevOps Services auth.
 
 <a name="integrate-with-your-builds"></a>
 #### Integrate with your builds

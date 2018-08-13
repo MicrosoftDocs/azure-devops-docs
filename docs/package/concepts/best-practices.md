@@ -1,5 +1,5 @@
 ---
-title: Best practices for using packages in VSTS and TFS
+title: Best practices for using packages in Azure DevOps Services and TFS
 description: Learn best practices for producing and consuming feeds and packages in Visaul Studio Team Services and Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -11,9 +11,9 @@ ms.date: 05/18/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Best practices for using Package Management 
+# Best practices for using Azure Artifacts 
 
-This article contains some general guidance and best practices when it comes to producing and consuming packages in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). 
+This article contains some general guidance and best practices when it comes to producing and consuming packages in Azure DevOps Services or Team Foundation Server (TFS). 
 
 ## Creating packages as part of a build
 
@@ -51,7 +51,7 @@ A feed is a container for packages, the only package source should be that singl
 
 Add any public sources as a public upstream.
 
-Add any internal sources as a VSTS upstream.
+Add any internal sources as a Azure DevOps Services upstream.
 
 Find out more information about [upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md).
 

@@ -1,12 +1,12 @@
-- name: Package Management
+- name: Azure Artifacts
   href: index.md
 - name: Overview
   items:
-  - name: About Package Management
+  - name: About Azure Artifacts
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Install and license Package Management
+  - name: Install and license Azure Artifacts
     href: install.md
   - name: NuGet
     href: get-started-nuget.md
@@ -34,21 +34,21 @@
     href: feeds/immutability.md
 - name: How-to
   items:
-  - name: Use Package Management in Team Build
+  - name: Use Azure Artifacts in Team Build
     items:
     - name: NuGet
       items:
-      - name: Restore Package Management NuGet packages
+      - name: Restore Azure Artifacts NuGet packages
         href: /vsts/pipelines/packages/nuget-restore?toc=/vsts/package/toc.json
-      - name: Publish Package Management NuGet packages
+      - name: Publish Azure Artifacts NuGet packages
         href: /vsts/pipelines/targets/nuget?toc=/vsts/package/toc.json
     - name: npm
       items:
-      - name: Use Package Management npm packages
+      - name: Use Azure Artifacts npm packages
         href: /vsts/pipelines/targets/npm?toc=/vsts/package/toc.json
     - name: Maven
       items:
-      - name: Use Package Management Maven packages
+      - name: Use Azure Artifacts Maven packages
         href: /vsts/pipelines/packages/maven?toc=/vsts/package/toc.json
   - name: Use feeds
     items:
@@ -68,9 +68,9 @@
       href: nuget/consume.md
     - name: Unlist, delete, or recover a NuGet package
       href: nuget/unlist-delete.md
-    - name: Use NuGet with VSTS
+    - name: Use NuGet with Azure DevOps Services
       href: nuget/nuget-exe.md
-    - name: Use dotnet with VSTS
+    - name: Use dotnet with Azure DevOps Services
       href: nuget/dotnet-exe.md
     - name: Use NuGet or dotnet with TFS
       href: nuget/tfs.md

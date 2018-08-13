@@ -1,6 +1,6 @@
 ---
 title: Communicate package quality with release views
-description: Use release views to communicate the quality of a package to your consumers in VSTS or Team Foundation Server
+description: Use release views to communicate the quality of a package to your consumers in Azure DevOps Services or Team Foundation Server
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Communicate package quality with release views
 
-**VSTS**
+**Azure DevOps Services**
 
 Views filter the feed to a subset of packages that meet criteria defined by the view.
 
@@ -79,4 +79,4 @@ In the edit feed dialog:
 
 ## Views for other scenarios
 
-In time, we expect to provide views for a wider range of scenarios. For example, you might create a view to filter to packages from a certain author or with a certain OSS license. If you have a scenario you'd like to suggest, please visit the [Package Management UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145266-package-management).
+In time, we expect to provide views for a wider range of scenarios. For example, you might create a view to filter to packages from a certain author or with a certain OSS license. If you have a scenario you'd like to suggest, please visit the [Azure Artifacts UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145266-package-management).

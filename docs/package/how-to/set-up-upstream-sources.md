@@ -1,6 +1,6 @@
 ---
-title: Set up upstream sources for packages in VSTS and TFS
-description: Find out how to configure upstream packages from multiple sources in VSTS and TFS
+title: Set up upstream sources for packages in Azure DevOps Services and TFS
+description: Find out how to configure upstream packages from multiple sources in Azure DevOps Services and TFS
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
@@ -11,9 +11,9 @@ ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Configure upstream sources for VSTS and TFS packages
+# Configure upstream sources for Azure DevOps Services and TFS packages
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other VSTS feeds in your account or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your account or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 For more in-depth information on the concepts and best practices regarding upstream sources, check out the [upstream sources concepts documentation](../concepts/upstream-sources.md).
 
@@ -28,7 +28,7 @@ Underneath _Upstream Sources_, select _Use packages from public sources through 
 Selecting this option now means **nuget.org** or **npmjs.org** do not have to be included in your nuget.config or npm config files to use packages from there.
 
 > [!NOTE]
-> You can add VSTS feeds as upstream sources as well following the directions below.
+> You can add Azure DevOps Services feeds as upstream sources as well following the directions below.
 
 ## Add upstream sources to existing feed
 
@@ -41,7 +41,7 @@ Selecting this option now means **nuget.org** or **npmjs.org** do not have to be
 
     ![Add upstream soures to existing feed](_img/us-upstreams-exist.png)
 
-3. You will see the following menu, choose if you'd like to add public sources or VSTS feeds 
+3. You will see the following menu, choose if you'd like to add public sources or Azure DevOps Services feeds 
 
     > Public sources may be greyed out if you chose to include public upstream sources when creating the feed and they already exist in your upstream sources.
 
@@ -52,17 +52,17 @@ Selecting this option now means **nuget.org** or **npmjs.org** do not have to be
     ![Add public upstream sources](_img/us-add-public-source.png)
 
     > [!NOTE] 
-    > **Attention Microsoft Users:** For VSTS feeds, the steps are different depending on whether or not your VSTS account is in an organization or not.
+    > **Attention Microsoft Users:** For Azure DevOps Services feeds, the steps are different depending on whether or not your Azure DevOps Services account is in an organization or not.
     
     If your account **isn't** in an organization, select the feed that you would like to configure as an upstream source, and the rest of the fields will populate automatically
 
-    ![Add VSTS upstream sources](_img/us-add-vsts-source.png)
+    ![Add Azure DevOps Services upstream sources](_img/us-add-vsts-source.png)
 
-    If your account **is** in an organization, input the **VSTS feed locator** (this can be found from the _Connect to feed_ panel of the feed you want to use as an upstream)
+    If your account **is** in an organization, input the **Azure DevOps Services feed locator** (this can be found from the _Connect to feed_ panel of the feed you want to use as an upstream)
 
-    ![Add VSTS upstream sources in an organization](_img/us-add-upstream-organization.png)
+    ![Add Azure DevOps Services upstream sources in an organization](_img/us-add-upstream-organization.png)
 
-### Adding VSTS feeds as upstream sources
+### Adding Azure DevOps Services feeds as upstream sources
 
 The view we picked is the "default view". The default view is covered in the [views concepts page](../concepts/views.md), but simply put it's the set of packages that the feed owner believes should be consumed and has chosen to release by default.
 

@@ -4,7 +4,7 @@ ms.topic: include
 
 To consume NuGet packages from a feed, add the feed's NuGet endpoint as a package source in Visual Studio.
 
-[!INCLUDE [Package Management and Visual Studio 2015](vs2015.md)]
+[!INCLUDE [Azure Artifacts and Visual Studio 2015](vs2015.md)]
 
 <a name="get-nuget-pkg-url"></a>
 
@@ -36,7 +36,7 @@ To consume NuGet packages from a feed, add the feed's NuGet endpoint as a packag
 1. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), uncheck the **nuget.org** package source.
 1. Select **OK** again.
 
-   ![Visual Studio for Mac preferences window with VSTS feed added](../_img/vs-mac-settings.png)
+   ![Visual Studio for Mac preferences window with Azure DevOps Services feed added](../_img/vs-mac-settings.png)
 
 <a name="consume-packages"></a>
 
@@ -62,7 +62,7 @@ If you're using [upstream sources](../../nuget/upstream-sources.md), package-ver
 
 ### Use symbols to debug
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers or package names. If [symbols have been published](/vsts/pipelines/symbols/index) for your packages, [connect Visual Studio to the Symbol Server in Package Management](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
+Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers or package names. If [symbols have been published](/vsts/pipelines/symbols/index) for your packages, [connect Visual Studio to the Symbol Server in Azure Artifacts](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
 
 <!-- TODO can we make this an FAQ bit at the end, so it's out of the way? -->
 

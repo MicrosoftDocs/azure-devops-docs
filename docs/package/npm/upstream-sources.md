@@ -1,6 +1,6 @@
 ---
 title: Use packages from npmjs.com
-description: Use packages from npmjs.com in Visual Studio Team Services and Team Foundation Server via upstream sources or scopes
+description: Use packages from npmjs.com in Azure DevOps Services and Team Foundation Server via upstream sources or scopes
 ms.assetid: E2DB1217-7113-4A75-A66D-3CADDB07AD37
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2017'
 
 # Use packages from npmjs.com
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-The npm client is designed to work with a single primary *registry* (what Package Management calls a *feed*). It also supports secondary *scoped* registries. Scoped registries can only be used to install packages whose names begin with the scope prefix, so their usage is more restrictive. If you want to use both private packages you've created **and** public packages from npmjs.com, we recommend using upstream sources. 
+The npm client is designed to work with a single primary *registry* (what Azure Artifacts calls a *feed*). It also supports secondary *scoped* registries. Scoped registries can only be used to install packages whose names begin with the scope prefix, so their usage is more restrictive. If you want to use both private packages you've created **and** public packages from npmjs.com, we recommend using upstream sources. 
 
-The npmjs.com upstream source allows you to merge the contents of npmjs.com into your feed such that the npm client can install packages from both locations.  Enabling upstream sources also automatically enables saving of packages you use from the upstream source. **This is the recommended way to use Package Management with npm.** Upstreams give you the most flexibility to use a combination of scoped- and non-scoped packages in your feed, as well as scoped- and non-scoped packages from npmjs.com.
+The npmjs.com upstream source allows you to merge the contents of npmjs.com into your feed such that the npm client can install packages from both locations.  Enabling upstream sources also automatically enables saving of packages you use from the upstream source. **This is the recommended way to use Azure Artifacts with npm.** Upstreams give you the most flexibility to use a combination of scoped- and non-scoped packages in your feed, as well as scoped- and non-scoped packages from npmjs.com.
 
 To learn more about the concept of upstream sources, please see the [concepts page](../concepts/upstream-sources.md).
 
@@ -41,7 +41,7 @@ To use npmjs.com as an upstream source, either create a new feed or edit an exis
 You can see the packages you have saved in your feed by selecting the "Source = npmjs.com" filter.
 
 > [!NOTE]
-> Right now, VSTS and TFS do not provide a guarantee that every package `npm installed` via a feed with upstreams enabled will be cached. 
+> Right now, Azure DevOps Services and TFS do not provide a guarantee that every package `npm installed` via a feed with upstreams enabled will be cached. 
 
 ![Viewing your cached packages](_img/view-cached-packages.png)
 

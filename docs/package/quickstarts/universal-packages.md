@@ -1,6 +1,6 @@
 ---
 title: Quickstart - Publish and then download a Universal Package
-description: Using Universal Packages in Visual Studio Team Services
+description: Using Universal Packages in Azure DevOps Services
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -17,12 +17,12 @@ monikerRange: 'vsts'
 > [!NOTE]
 > Universal Packages are currently in private preview. See the [announcement blog post](https://blogs.msdn.microsoft.com/devops/2018/07/09/universal-packages-bring-large-generic-artifact-management-to-vsts/) for more details.
 
-Universal Packages store one or more files together in a single unit that has a name and version. Universal Packages can be published from the command line using the [VSTS CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest). This quickstart shows you how to publish your first Universal Package using the CLI and how to download it using the CLI. To see your package, you can navigate to your feed in Package Management.
+Universal Packages store one or more files together in a single unit that has a name and version. Universal Packages can be published from the command line using the [Azure DevOps Services CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest). This quickstart shows you how to publish your first Universal Package using the CLI and how to download it using the CLI. To see your package, you can navigate to your feed in Azure Artifacts.
 
 ## Prerequisites
 
-1. Download [this private build](https://1drv.ms/u/s!AuzH567rcbHhv5JLiqDK0Csb1LT80g) of the VSTS CLI and install it.
-2. Using the onboarding instructions you were emailed, let us know your VSTS account name; this is how we'll enable the preview for your account.
+1. Download [this private build](https://1drv.ms/u/s!AuzH567rcbHhv5JLiqDK0Csb1LT80g) of the Azure DevOps Services CLI and install it.
+2. Using the onboarding instructions you were emailed, let us know your Azure DevOps Services account name; this is how we'll enable the preview for your account.
 
 ## Prepare files for publishing
 
@@ -30,11 +30,11 @@ Create a new directory and copy the files you want to publish as a package into 
 
 ## Create a feed
 
-If you don't already have a Package Management feed, [create one now](../feeds/create-feed.md) and note its name. If you already have a feed, just note the name.
+If you don't already have a Azure Artifacts feed, [create one now](../feeds/create-feed.md) and note its name. If you already have a feed, just note the name.
 
-## Log into VSTS
+## Log into Azure DevOps Services
 
-After you've installed the CLI, open your shell of choice (e.g. PowerShell, cmd, etc.) and navigate to the directory you just created. Then, log into VSTS using the command below, replacing the items in square brackets (`[]`) with appropriate values:
+After you've installed the CLI, open your shell of choice (e.g. PowerShell, cmd, etc.) and navigate to the directory you just created. Then, log into Azure DevOps Services using the command below, replacing the items in square brackets (`[]`) with appropriate values:
 
 ```vstscli-interactive
 vsts login --instance https://[your-organization].visualstudio.com --token [your personal access token]
@@ -48,7 +48,7 @@ vsts configure -d instance=https://[your-organization].visualstudio.com
 
 ## Publish a Universal Package
 
-Publish a package with vsts package universal publish. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* VSTS account with a placeholder description.
+Publish a package with vsts package universal publish. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* Azure DevOps Services account with a placeholder description.
 
 Update these values as desired and use the feed name you noted earlier. You must use a [Semantic Version (SemVer)](https://semver.org) for the version. Package names must be lower case and can only use letters, numbers, and dashes (`-`).
 

@@ -1,6 +1,6 @@
 ---
-title: Use dotnet with VSTS feeds
-description: Authenticating to feeds with NuGet in VSTS
+title: Use dotnet with Azure DevOps Services feeds
+description: Authenticating to feeds with NuGet in Azure DevOps Services
 ms.assetid: CA2DCB9D-93FB-4E2D-B953-BF78D5687B35
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -12,14 +12,14 @@ ms.date: 09/01/2017
 monikerRange: 'vsts'
 ---
 
-# Use dotnet with VSTS feeds
+# Use dotnet with Azure DevOps Services feeds
 
-**VSTS**
+**Azure DevOps Services**
 
 > [!NOTE]
 > This page covers interactive scenarios. In Team Build, use the [.NET Core step](../../pipelines/tasks/build/dotnet-core.md). 
 
-To use `dotnet` with VSTS NuGet feeds, you'll need to specify a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) in plain text.
+To use `dotnet` with Azure DevOps Services NuGet feeds, you'll need to specify a [Personal Access Token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) in plain text.
 
 On Windows, [NuGet 4](nuget-exe.md) is functionally equivalent to dotnet, and we recommend using that instead.
 

@@ -1,6 +1,6 @@
 ---
-title: Use npm to store JavaScript packages in Visual Studio Team Services
-description: Tutorial for using npm to store your JavaScript packages in Visual Studio Team Services or Team Foundation Server
+title: Use npm to store JavaScript packages in Azure DevOps Services
+description: Tutorial for using npm to store your JavaScript packages in Azure DevOps Services or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
@@ -14,19 +14,19 @@ monikerRange: '>= tfs-2017'
 
  
 
-# Quickstart: Use npm to store JavaScript packages in VSTS or TFS
+# Quickstart: Use npm to store JavaScript packages in Azure DevOps Services or TFS
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-This tutorial is an end-to-end guide on using npm to store JavaScript packages using Visual Studio Team Services or Team Foundation Server. It covers installation, license assigning, and setup.
+This tutorial is an end-to-end guide on using npm to store JavaScript packages using Azure DevOps Services or Team Foundation Server. It covers installation, license assigning, and setup.
 
-## Step 1: License the Package Management extension
+## Step 1: License the Azure Artifacts extension
 
-### Install Package Management extension
+### Install Azure Artifacts extension
 
-Package Management is an extension that comes pre-installed from the Marketplace. If your account doesn't have the Package Management extension installed, go to the [Marketplace page for Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+Azure Artifacts is an extension that comes pre-installed from the Marketplace. If your account doesn't have the Azure Artifacts extension installed, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
-In your VSTS/TFS account, go to any project and select the **Packages** hub in the **Build & Release** hub group to access Package Management.
+In your Azure DevOps Services/TFS account, go to any project and select the **Packages** hub in the **Build & Release** hub group to access Azure Artifacts.
 
 ### Assign licenses
 
@@ -34,10 +34,10 @@ You will need to assign your licenses by following the instructions below:
 
 > If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
 
-1. Go to your account, select the **Users** hub, and select **Package Management**.
+1. Go to your account, select the **Users** hub, and select **Azure Artifacts**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
 
-   > If you have a Visual Studio Enterprise license, you already have access to Package Management and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
+   > If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
 
 ## Step 2: Create a feed
 
@@ -56,21 +56,21 @@ You can change these settings later by [editing the feed](./feeds/edit-feed.md).
 
 ## Step 3: Set up your npmrc
 
-All Package Management feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
+All Azure Artifacts feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
 ### Where are my **_.npmrc_** files?
 
-VSTS recommends using two **_.npmrc_** files:
+Azure DevOps Services recommends using two **_.npmrc_** files:
 
 1.	One **_.npmrc_** should live at the root of your git repo adjacent to your project's **_package.json_**.  It should contain a "registry" line for your feed and it should not contain credentials since it will be checked into git.  You can find the registry information for your feed from the _Connect to Feed_ button:
 
     1. From your **Packages** page, click _Connect to Feed_
 
-        ![Connect to feed from VSTS Package Management](_shared/_img/connect-to-feed.png)
+        ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed.png)
 
     2. Copy the "registry" text:
 
-        ![Connect to feed from VSTS Package Management](_shared/_img/connect-to-feed-npm-registry.png)
+        ![Connect to feed from Azure Artifacts](_shared/_img/connect-to-feed-npm-registry.png)
         
 2.	On your development machine, you will also have a **_.npmrc_** in $home for Linux or Mac systems or $env.HOME for win systems.  This **_.npmrc_** should contain credentials for all of the registries that you need to connect to.  The NPM client will look at your project's **_.npmrc_**, discover the registry, and fetch matching credentials from $home/.npmrc or $env.HOME/.npmrc.  Credential acquisition will be discussed in the next section.
 
@@ -104,9 +104,9 @@ There are two options for setting up authentication in a build task:
 #### Without a Task Runner
 To set up **npm** authentication in a build task _without_ a task runner, follow the directions below.
 
-1. Add a build pipeline in VSTS under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** hub.
 
-    ![Connect to feed from VSTS Package Management](../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
+    ![Connect to feed from Azure Artifacts](../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_
 
@@ -147,9 +147,9 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
 When using a task runner, you'll need to add the **npm Authenticate** build task at the beginning of your build pipeline. This will inject credentials into your proejct's **_.npmrc_** and persist them for the lifespan of the build. This allows subsequent build steps to use the credentials in the **_.npmrc_**.
 
-1. Add a build pipeline in VSTS under the **Build and Release** --> **Builds** hub.
+1. Add a build pipeline in Azure DevOps Services under the **Build and Release** --> **Builds** hub.
 
-    ![Connect to feed from VSTS Package Management](../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
+    ![Connect to feed from Azure Artifacts](../pipelines/_img/get-started-designer/builds-tab-mine-new-button.png)
 
 1. Choose your source **Project**, **Repository**, and **Default branch** and select _Continue_
 

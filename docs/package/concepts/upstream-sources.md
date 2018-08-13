@@ -1,6 +1,6 @@
 ---
 title: Upstream sources 
-description: Upstream sources manage packages from public sources in a Visual Studio Team Services or Team Foundation Server feed
+description: Upstream sources manage packages from public sources in a Azure DevOps Services or Team Foundation Server feed
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -14,11 +14,11 @@ monikerRange: '>= tfs-2017'
 
 # Upstream sources
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
 Check the ([availability note](../overview.md#versions-compatibility)) to ensure compatibility. 
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other VSTS feeds in your account or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your account or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 Already familiar with the concepts and want to jump right in? Start with these how-tos:
 
@@ -42,7 +42,7 @@ To take full advantage of the benefits of upstream sources as a consumer of anot
 
 ### Use a single feed on the client
 
-In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your package feed configuration file&mdash;your .npmrc or nuget.config&mdash;references only your Package Management feed with upstream sources enabled. For NuGet, the `<packageSources>` section should look like:
+In order for your feed to provide [deterministic restore](#search-order), it's important to ensure that your package feed configuration file&mdash;your .npmrc or nuget.config&mdash;references only your Azure Artifacts feed with upstream sources enabled. For NuGet, the `<packageSources>` section should look like:
 
 ```xml
 <packageSources>
@@ -66,13 +66,13 @@ always-auth=true
 
 If you only use public upstream sources (e.g. nuget.org or npmjs.com), the order of your upstream sources is irrelevant. Requests to the feed will follow the [search order](#search-order).
 
-If you use multiple VSTS upstream sources, or a mixture of public and VSTS upstream sources, the order of those upstreams is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public upstream sources first. This ensures that you look for OSS packages from the public repos before checking any VSTS upstream sources, which could contain modified versions of public packages.
+If you use multiple Azure DevOps Services upstream sources, or a mixture of public and Azure DevOps Services upstream sources, the order of those upstreams is taken into account in step 3 of the [search order](#search-order). In that case, we recommend putting the public upstream sources first. This ensures that you look for OSS packages from the public repos before checking any Azure DevOps Services upstream sources, which could contain modified versions of public packages.
 
-In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the VSTS upstream source that contains these modified OSS packages before the public upstream sources to ensure you use your organization's modified versions.
+In rare cases, some organizations choose to modify OSS packages to fix security issues, to add functionality, or to satisfy requirements that the package is built from scratch internally, rather than consumed directly from the public repository. If your organization does this, put the Azure DevOps Services upstream source that contains these modified OSS packages before the public upstream sources to ensure you use your organization's modified versions.
 
 ### Use the suggested default view
 
-Upstream sources to VSTS feeds require you to select a *view* of the remote feed when you add it as an upstream source. This prevents your upstream sources from creating a cycle, and it requires and encourages your upstream feed to provide you with a [complete package graph](package-graph.md). In general, the feed owner should [select the correct default view](#local), as the view communicates which packages and versions the producer wants consumers to use.
+Upstream sources to Azure DevOps Services feeds require you to select a *view* of the remote feed when you add it as an upstream source. This prevents your upstream sources from creating a cycle, and it requires and encourages your upstream feed to provide you with a [complete package graph](package-graph.md). In general, the feed owner should [select the correct default view](#local), as the view communicates which packages and versions the producer wants consumers to use.
 
 ## Best practices: feed owners/package producers
 
@@ -136,4 +136,4 @@ For outages lasting more than 12 hours, which are quite infrequent, you will exp
 
 ## Legacy upstream source information
 
-Older Package Management feeds ("legacy feeds") use an older version of the npmjs.com upstream source and are also unable to use the nuget.org upstream source.
+Older Azure Artifacts feeds ("legacy feeds") use an older version of the npmjs.com upstream source and are also unable to use the nuget.org upstream source.

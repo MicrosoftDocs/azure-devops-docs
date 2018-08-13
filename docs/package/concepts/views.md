@@ -1,6 +1,6 @@
 ---
-title: Views on VSTS feeds
-description: Release views enable continuous integration and delivery of NuGet and npm packages in Package Management for VSTS and Team Foundation Server
+title: Views on Azure DevOps Services feeds
+description: Release views enable continuous integration and delivery of NuGet and npm packages in Azure Artifacts for Azure DevOps Services and Team Foundation Server
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -14,9 +14,9 @@ monikerRange: '>= tfs-2017'
 
  
 
-# Views on VSTS feeds
+# Views on Azure DevOps Services feeds
 
-**VSTS** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
 *If you're familiar with the principles behind views, you can jump to the [docs page](../feeds/views.md) to quickly start using them.*
 
@@ -30,7 +30,7 @@ Views and upstream sources are designed to work together to make it easy to prod
 
 ### The `@local` view
 
-All VSTS feeds come with 3 views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. The `@local` view is a special view that's commonly used in [upstream sources](upstream-sources.md).
+All Azure DevOps Services feeds come with 3 views: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired. The `@local` view is a special view that's commonly used in [upstream sources](upstream-sources.md).
 
 `@local` contains all packages published directly to the feed (e.g. by `nuget push` or `npm publish`) and all packages [saved from upstream sources](upstream-sources.md#saved-packages). If you don't use any other views, `@local` should be your [default view](#default-view). To learn more about why `@local` exists, read the [package graph](package-graph.md) doc.
 
@@ -38,7 +38,7 @@ All VSTS feeds come with 3 views: `@local`, `@prerelease`, and `@release`. The l
 
 ### Default view
 
-Your VSTS feed must have a default view. When the feed is created, the default view is `@local`. The default view is used when other feeds add your feed as an [upstream source](upstream-sources.md). To learn more about why upstream sources require the use of views, read the [package graph](package-graph.md) doc.
+Your Azure DevOps Services feed must have a default view. When the feed is created, the default view is `@local`. The default view is used when other feeds add your feed as an [upstream source](upstream-sources.md). To learn more about why upstream sources require the use of views, read the [package graph](package-graph.md) doc.
 
 <a name="read-only"></a>
 

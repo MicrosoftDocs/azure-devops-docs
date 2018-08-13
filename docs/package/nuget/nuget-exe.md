@@ -1,6 +1,6 @@
 ---
-title: Use NuGet with VSTS feeds
-description: Authenticating to feeds with NuGet in VSTS
+title: Use NuGet with Azure DevOps Services feeds
+description: Authenticating to feeds with NuGet in Azure DevOps Services
 ms.assetid: 10665DBC-846E-4192-8CAB-D5A4C6E40C65
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -12,9 +12,9 @@ ms.date: 09/01/2017
 monikerRange: 'vsts'
 ---
 
-# Use NuGet with VSTS feeds
+# Use NuGet with Azure DevOps Services feeds
 
-**VSTS**
+**Azure DevOps Services**
 
 > [!NOTE]
 > This page covers interactive scenarios. In Team Build, use the NuGet step to [restore](/vsts/pipelines/packages/nuget-restore) and [publish](/vsts/pipelines/targets/nuget) packages. 
@@ -59,7 +59,7 @@ For advanced scenarios, you can choose where to install the provider:
 
   - **Projects with a developer command prompt or enlistment:** Use the provider from an 
   [environment variable](http://docs.nuget.org/Consume/Credential-Providers#using-a-credential-provider-from-an-environment-variable) by copying `CredentialProvider.Vss.exe` to any folder, then run this command in PowerShell: `$env:NUGET_CREDENTIALPROVIDERS_PATH = {your folder}`
-  - **Projects using a non-VSTS CI server:** Use the provider from an 
+  - **Projects using a non-Azure DevOps Services CI server:** Use the provider from an 
   [environment variable](http://docs.nuget.org/Consume/Credential-Providers#using-a-credential-provider-from-an-environment-variable)
   - **Work on an individual machine:** Install the provider 
   [globally](http://docs.nuget.org/Consume/Credential-Providers#installing-a-credential-provider-globally) by copying `CredentialProvider.Vss.exe` to `$env:LOCALAPPDATA\NuGet\CredentialProviders`

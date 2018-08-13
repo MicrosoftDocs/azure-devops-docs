@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-Publish Maven artifacts to a feed in Package Management to share them with your team and organization.
+Publish Maven artifacts to a feed in Azure Artifacts to share them with your team and organization.
 
 To publish a Maven artifact, you'll need to have a Maven artifact to publish on your local machine. 
 If you don't have one, you can generate one by running the following command:
@@ -15,7 +15,7 @@ mvn -B archetype:generate -DarchetypeGroupId="org.apache.maven.archetypes" -Dgro
 
 2. Navigate to the directory containing your Maven artifact's **pom.xml** file.  If you've just created an artifact, the **pom.xml** file will be in the *myFirstApp* folder.
 
-3. From the **Connect to feed** dialog in VSTS, copy the `<repository>` information. Paste it into your **pom.xml** file twice (see the sample file above):
+3. From the **Connect to feed** dialog in Azure DevOps Services, copy the `<repository>` information. Paste it into your **pom.xml** file twice (see the sample file above):
 
    * Between the `<repositories>` tags.
    * Between the `<distributionManagement>` tags. 

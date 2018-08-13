@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-Publish npm packages to a feed in Package Management to share them with your team and your organization.
+Publish npm packages to a feed in Azure Artifacts to share them with your team and your organization.
 
 1. [Set up the npm client with your feed](../../npm/npmrc.md).
 
