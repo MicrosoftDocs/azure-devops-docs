@@ -53,7 +53,7 @@ Start by looking at the logs in your completed build or release. If they don't p
 
 0. Queue the build.
 
-0. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per phase. If you would like to download everything you can also choose to **Download all logs as zip**.
+0. On the build summary page, there will now be a **Diagnostic logs** section. You can download your diagnostic logs per job. If you would like to download everything you can also choose to **Download all logs as zip**.
 
 > Diagnostic logs are not yet available for releases.
 

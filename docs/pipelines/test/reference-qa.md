@@ -95,7 +95,7 @@ the default **Production** slot is used. After you deploy, you can swap an
 app to a different slot using the **Azure App Service Manage** task. See
 [Azure web apps deployment](../../pipelines/targets/webapp.md).
 
-You can use [task phases](../../pipelines/process/phases.md)
+You can use [task jobs](../../pipelines/process/phases.md)
 and the [**Manual Intervention**](../../pipelines/tasks/utility/manual-intervention.md) task
 in your release pipeline to pause a deployment; for example, to examine test results
 after the load tests have run and before the app is swapped from staging to production.

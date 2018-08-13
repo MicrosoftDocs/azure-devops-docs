@@ -61,7 +61,7 @@ As an alternative, consider:
   [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/).
   In this case, you can use [deployment groups](../release/deployment-groups/index.md)
   to define your target machines. For more details, see
-  [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
+  [Testing with unified agents and jobs](test-with-unified-agent-and-phases.md).
 
 * A **comma-delimited list** of machine IP addresses or 
   fully-qualified domain names (FQDNs), together with any port information,
@@ -172,7 +172,7 @@ in the settings for the [Visual Studio Test](https://github.com/Microsoft/vsts-t
 
 <a name="unified-agents"></a>
 
-## Testing with unified agents and phases
+## Testing with unified agents and jobs
 
 Version 2 of the **Visual Studio Test** task uses the unified Build and Release
 agent, instead of a different custom agent as was the case with version 1.
@@ -205,14 +205,14 @@ a selected property setting.
   This task is based on WinRM, which imposes several limitations.
 
 * You no longer need any "copy files" tasks because all execution is now local to the
-  automation agent, and task phases download the artifacts to the target machines automatically.
+  automation agent, and task jobs download the artifacts to the target machines automatically.
   There is no requirement to copy test assemblies and their dependencies when running tests remotely
   using the **Run Functional Tests** task.
 
-### How test tasks run in phases
+### How test tasks run in jobs
 
 You can add [different types of phases](../../pipelines/process/phases.md)
-to a release pipeline. The properties of these phases include settings for
+to a release pipeline. The properties of these jobs include settings for
 **Parallelism**.
 
 ![Selecting a mode to run tasks on multiple agents in parallel](_img/test-with-unified-agent-and-phases/agent-phase-settings.png)
@@ -220,7 +220,7 @@ to a release pipeline. The properties of these phases include settings for
 The following sections describe how this setting affects the operation
 of the **Visual Studio Test** and **Run Functional Tests** tasks.
 For a full description of the operation for all tasks, see
-[Parallel execution using agent phases](../../pipelines/process/phases.md#parallelexec).
+[Parallel execution using agent jobs](../../pipelines/process/phases.md#parallelexec).
 
 #### No parallelism
 
@@ -244,10 +244,10 @@ are run.
 
 In the case of Build, you typically use **BuildPlatform** and **BuildConfiguration** as multipliers.
 The same logic applies to testing. For example, you could deploy a web app to Azure and run
-cross-browser tests on IE and Firefox by configuring an environment to use two phases - one
+cross-browser tests on IE and Firefox by configuring an environment to use two jobs - one
 for the deploy phase and one for the test phase: 
 
-![Configuring the release pipeline with two phases for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig.png)
+![Configuring the release pipeline with two jobs for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig.png)
 
 The test phase is set up as a multiple executions process using a variable named **Browser**, which
 has the values `IE` and `Firefox`. The phase will run twice using these two configurations - one
@@ -290,21 +290,21 @@ For example, the log from a multiple agents test run, where some tests have fail
 
 Artifacts are automatically downloaded when the phase starts, so the test assemblies and other files
 are already located on the agent, and no "copy files" task is required. So, to publish an Azure Web App
-and run a large number of tests with fast test execution, you could model the environment as two phases -
+and run a large number of tests with fast test execution, you could model the environment as two jobs -
 one being the deploy phase (which runs on a single agent because you don't want multiple agents to deploy
 the same app concurrently), and the other a test phase that uses multiple agents mode to achieve test distribution.
 
-This also means that you can use different agent queues for the two phases, allowing you to manage agents
+This also means that you can use different agent queues for the two jobs, allowing you to manage agents
 for different purposes separately if required.
 
-![Configuring the release pipeline with two phases for distributed tests](_img/test-with-unified-agent-and-phases/distributed-tests.png)
+![Configuring the release pipeline with two jobs for distributed tests](_img/test-with-unified-agent-and-phases/distributed-tests.png)
 
 ### FAQs
 
 <a name="use-build"></a>
 #### Q: How do I do this with Build? 
 
-**A**: The phases capability is currently available only in Release Management. It will become available in Build soon.
+**A**: The jobs capability is currently available only in Release Management. It will become available in Build soon.
 
 <a name="vst-task-changes"></a>
 #### Q: Does the Visual Studio Test version 1 task behave the same way as the version 2 task?
@@ -348,7 +348,7 @@ See [Build and Release agent capabilities](../../pipelines/agents/agents.md#capa
 #### Q: How else can I use multiple executions mode?
 
 **A**: This mode can be used whenever you need multiple agents to execute jobs in parallel.
-For more examples, see [Parallel execution using agent phases](../../pipelines/process/phases.md#parallelexec).
+For more examples, see [Parallel execution using agent jobs](../../pipelines/process/phases.md#parallelexec).
 
 <a name="rft-task-changes"></a>
 #### Q: Has the Run Functional Tests task also changed?

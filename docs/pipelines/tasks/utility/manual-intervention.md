@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
@@ -43,7 +43,7 @@ custom variables used by the tasks in the release.
 
 The **Manual Intervention** task configuration includes an **Instructions** parameter that
 can be used to provide related information, or to specify the manual steps
-the user should execute during the Agentless phase. You can configure the task to
+the user should execute during the agentless job. You can configure the task to
 send email notifications to users and user groups when it is awaiting intervention,
 and specify the automatic response (reject or resume the deployment) after a configurable
 timeout occurs.

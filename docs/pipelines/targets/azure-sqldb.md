@@ -214,7 +214,7 @@ You may choose to deploy only certain builds to your Azure database.
 
 To do this in YAML, you can use one of these techniques:
 
-* Isolate the deployment steps into a separate phase, and add a condition to that phase.
+* Isolate the deployment steps into a separate job, and add a condition to that job.
 * Add a condition to the step.
 
 The following example shows how to use step conditions to deploy only those builds that originate from master branch.

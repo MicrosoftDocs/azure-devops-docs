@@ -111,7 +111,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
 * **Mono**
 
-  To manually select a Mono version to use on the **Hosted macOS** agent, before your Mono build task, execute this script in each phase of your build, replacing the Mono version number 5.4.1 as needed:
+  To manually select a Mono version to use on the **Hosted macOS** agent, before your Mono build task, execute this script in each job of your build, replacing the Mono version number 5.4.1 as needed:
 
   ```
   SYMLINK=5_4_1

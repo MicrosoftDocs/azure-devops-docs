@@ -34,7 +34,7 @@ to add tasks to Azure Pipelines or TFS.
 
 When you add a task to your build or release pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
-When you queue a build or a deployment, all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [phases](phases.md).
+When you queue a build or a deployment, all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
 
 <a name="taskversions"></a>
 ## Task versions
@@ -76,13 +76,13 @@ when you want to temporarily take task out of the process for testing or for spe
 ### Timeout
 
 The timeout for this task in minutes. The default is zero (infinite timeout).
-Setting a value other than zero overrides the setting for the parent task phase.
+Setting a value other than zero overrides the setting for the parent task job.
 
 ### Azure Pipelines options
 
 #### Continue on error (partially successful)
 
-Select this option if you want subsequent tasks in the same phase to possibly run even if this task fails. The build or deployment will be no better than partially successful. Whether subsequent tasks run depends on the **Run this task** setting.
+Select this option if you want subsequent tasks in the same job to possibly run even if this task fails. The build or deployment will be no better than partially successful. Whether subsequent tasks run depends on the **Run this task** setting.
 
 #### Run this task
 
@@ -98,7 +98,7 @@ Select the condition for running this task:
 
 #### Continue on error (partially successful)
 
-Select this option if you want subsequent tasks in the same phase to run even if this task fails. The build or deployment will be no better than partially successful.
+Select this option if you want subsequent tasks in the same job to run even if this task fails. The build or deployment will be no better than partially successful.
 
 #### Always run
 
@@ -186,7 +186,7 @@ For a list of our tool installer tasks, see [Tool installer tasks](../tasks/inde
 
 ## Related topics
 
-* [Task phases](phases.md)
+* [Task jobs](phases.md)
 * [Task groups](../library/task-groups.md)
 * [Built-in task catalog](../tasks/index.md)
  

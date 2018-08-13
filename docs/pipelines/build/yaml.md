@@ -51,7 +51,7 @@ If you're new to YAML builds, or to Azure Pipelines, we suggest you begin learni
 |Pause/disable pipeline from web editor|Not yet|Yes|
 |Set environment variables for scripts (useful for secrets)|Yes|Not yet|
 |Task groups|No|Yes|
-|Variables across phases|Yes|Not yet|
+|Variables across jobs|Yes|Not yet|
 
 ## Automatically create a YAML build pipeline
 

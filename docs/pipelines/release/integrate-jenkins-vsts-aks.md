@@ -347,7 +347,7 @@ Before you create the release pipeline, you need to install an Azure Pipelines e
 
 Add two tasks to the release pipeline.  The first task updates the **K8sDeploy.yaml** file to pull the image tagged with the current Jenkins build id.
 
-1. Next to the **1 phase, 0 environments** link, select the **+** on the **Agent Phase** to add a task to the phase.
+1. Next to the **1 job, 0 environments** link, select the **+** on the **Agent Job** to add a task to the job.
 
 1. Search for the **Tokenize with XPath/Regular expressions** task which was added with the extension that was installed in the previous step.  Select **Add** to add the task.
 

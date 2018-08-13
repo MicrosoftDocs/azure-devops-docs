@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2017'
 
 ## Demands
 
-Can be used in only an [agentless phase](../../process/server-phases.md) of a release pipeline.
+Can be used in only an [agentless job](../../process/server-phases.md) of a release pipeline.
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

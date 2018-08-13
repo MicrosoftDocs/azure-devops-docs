@@ -27,7 +27,7 @@ unit and functional tests without requiring the **Deploy Test Agent** and **Run 
 and run tests on platforms that don't have Visual Studio installed by using the 
 [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/).
 
-For more details, see [Testing with unified agents and phases](test-with-unified-agent-and-phases.md).
+For more details, see [Testing with unified agents and jobs](test-with-unified-agent-and-phases.md).
 
 ## Before you start
 
@@ -43,7 +43,7 @@ For more details, see [Testing with unified agents and phases](test-with-unified
 
    ![Edit build pipeline](_img/edit-build-definition.png)
    
-3. Choose the **+** icon for the pipeline phase and add tasks to deploy your app for testing. For example, if you're testing a Visual Studio solution
+3. Choose the **+** icon for the pipeline job and add tasks to deploy your app for testing. For example, if you're testing a Visual Studio solution
    and want to use the **Window Machine File Copy** and **PowerShell on Target Machines** tasks:
 
    ![Add File Copy and PowerShell tasks](_img/set-up-continuous-testing-builds/add-file-copy-powershell-steps.png)

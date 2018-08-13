@@ -182,7 +182,7 @@ Some of the most significant variables are described in the following tables.
 > | Agent.ReleaseDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as System.ArtifactsDirectory and System.DefaultWorkingDirectory. | C:\agent\_work\r1\a | |
 > | Agent.RootDirectory | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.WorkFolder and System.WorkFolder. | C:\agent\_work | |
 > | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder. | C:\agent\_work | |
-> | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group phases. | 1 | TFS 2018 U1 |
+> | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group jobs. | 1 | TFS 2018 U1 |
 
 <!--
 [AGENT_SERVEROMDIRECTORY] -> [C:\agent\externals\vstsom]

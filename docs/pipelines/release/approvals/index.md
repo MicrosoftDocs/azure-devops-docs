@@ -22,7 +22,7 @@ monikerRange: '>= tfs-2015'
 
 A release pipeline specifies the end-to-end release pipeline for an app to be deployed across a range of environments.
 Deployments to each environment are fully automated by using 
-[phases](../../process/phases.md) and [tasks](../../process/tasks.md).
+[jobs](../../process/phases.md) and [tasks](../../process/tasks.md).
 
 **Approvals** and **gates** give you additional control over the start and completion of the deployment pipeline.
 Each environment in a release pipeline can be configured with pre-deployment and post-deployment conditions
@@ -51,7 +51,7 @@ are useful include the following.
 | After deployment you want to wait for a specified time before prompting some users for a manual sign-off.  | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
 | During the deployment pipeline a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../../tasks/utility/manual-intervention.md) | 
 | During the deployment pipeline you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../../tasks/utility/manual-intervention.md) | 
-| During the deployment pipeline you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment phases.  | Planned | 
+| During the deployment pipeline you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment jobs.  | Planned | 
 
 You can, of course, combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
 

@@ -89,7 +89,7 @@ You are taken to the **Pipelines** hub and asked to **Select a template** for th
 
 1. Click **Get sources** and observe that the new build pipeline is automatically linked to your repository.
 
-1. Click the **+** icon on **Phase 1** of the build.
+1. Click the **+** icon on **Job 1** of the build.
 
 1. Search for the **Command Line** task and click **Add** to add it to your build.
 
@@ -135,7 +135,7 @@ Navigate to the **Builds** tab of the **Pipelines** hub in Azure Pipelines or TF
 
 1. Click **Get sources** and select your version control repository. You'll need to authorize access to it.
 
-1. Click the **+** icon on **Phase 1** of the build.
+1. Click the **+** icon on **Job 1** of the build.
 
 1. Search for the **Command Line** task and click **Add** to add it to your build.
 

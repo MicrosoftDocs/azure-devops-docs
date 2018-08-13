@@ -73,7 +73,7 @@ The CI for the sample app produces the artifacts needed for deployment to Azure.
 
 1. Choose the **Azure App Service deployment** template, and then choose **Apply**.
 
-1. On the **Environments** section, select the **phase and task** link.
+1. On the **Environments** section, select the **job and task** link.
 
 1. Select the **Azure Subscription**, and then select **Authorize**.
 

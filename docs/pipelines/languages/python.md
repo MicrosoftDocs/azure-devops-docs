@@ -23,7 +23,7 @@ This guide explains creating pipelines for Python projects. Before this guidance
 
 You can build Python projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Python. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
 
-Create a file named **.vsts-ci.yml** in the root of your repository. Then, add applicable phases and tasks to the YAML file as described below.
+Create a file named **.vsts-ci.yml** in the root of your repository. Then, add applicable jobs and tasks to the YAML file as described below.
 
 ## Use a specific Python version
 
@@ -42,12 +42,12 @@ steps:
 
 ## Use multiple Python versions
 
-To run a pipeline with multiple Python versions, such as to test your project using different versions, define a phase with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the phase for all versions in the matrix, depending on how many concurrent jobs are available.
+To run a pipeline with multiple Python versions, such as to test your project using different versions, define a job with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the job for all versions in the matrix, depending on how many concurrent jobs are available.
 
 ```yaml
 # https://aka.ms/yaml
-phases:
-- phase: 'Test'
+jobs:
+- job: 'Test'
   queue:
     name: 'Hosted Linux Preview'
     parallel: 1

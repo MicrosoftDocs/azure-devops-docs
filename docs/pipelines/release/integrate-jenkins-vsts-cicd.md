@@ -193,7 +193,7 @@ To create the release pipeline in Azure Pipelines:
 
 1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service connection. Then select the Jenkins source job and choose **Add**.
 
-1. Next to the **1 phase, 0 environments** link, select the **+** on the **Agent Phase** to add a task to the phase.
+1. Next to the **1 job, 0 environments** link, select the **+** on the **Agent Job** to add a task to the job.
 
 1. Search for the **Azure App Service Deploy** task. Select **Add** to add the task.
 
@@ -253,7 +253,7 @@ There is an additional approach (pattern) possible when integrating Jenkins and 
 
 1. Ensure the **Report build status** option is enabled so the build status will be reported on the code tab for the Azure Pipelines repository.
 
-1. Select the **Jenkins** build tasks under **Phase 1**, and then examine the additional options provided by the tasks.  There is a task to queue the Jenkins job, download the artifacts produced by the job, and then finally to publish the artifacts which can later be used by the Azure Pipelines release pipeline.
+1. Select the **Jenkins** build tasks under **Job 1**, and then examine the additional options provided by the tasks.  There is a task to queue the Jenkins job, download the artifacts produced by the job, and then finally to publish the artifacts which can later be used by the Azure Pipelines release pipeline.
 
 1. Select the **Queue Jenkins Job** task.  **Capture console output and wait for completion** is enabled to help provide the Jenkins logging information to Azure Pipelines, and also it will cause the Azure Pipelines build to wait for this step to complete successfully in Jenkins before proceeding.  This causes the Azure Pipelines build to succeed for fail based on the Jenkins result.  **Capture pipeline output and wait for completion** is similarly enabled to ensure Azure Pipelines succeeds or fails based on the entire Jenkins pipeline result.  These two options help you view Jenkins logging information in a single place (Azure Pipelines) for the entire CI/CD pipeline.
 

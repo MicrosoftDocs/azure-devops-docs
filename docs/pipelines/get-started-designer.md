@@ -137,9 +137,9 @@ Create a build pipeline that prints "Hello world."
 
 1. On the left side, select **Pipeline** and specify whatever **Name** you want to use. For the **Agent queue**, select **Hosted VS2017**.
 
-1. On the left side, select the plus sign **( + )** to add a task to **Phase 1**. On the right side, select the **Utility** category, select the **PowerShell** task from the list, and then choose **Add**.
+1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Utility** category, select the **PowerShell** task from the list, and then choose **Add**.
 
-   ![builds-tab-add-task-to-phase](_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
+   ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-tfs-2018-2.png)
 
 1. On the left side, select your new **PowerShell** script task.
 
@@ -165,9 +165,9 @@ Create a build pipeline that prints "Hello world."
 
 1. Select **Pipeline** and specify whatever **Name** you want to use. For the **Agent queue**, select **Default**.
 
-1. On the left side, select **+ Add Task** to add a task to the phase, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
+1. On the left side, select **+ Add Task** to add a task to the job, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
 
-   ![builds-tab-add-task-to-phase](_img/get-started-designer/builds-tab-add-task-tfs-2018.png)
+   ![builds-tab-add-task-to-job](_img/get-started-designer/builds-tab-add-task-tfs-2018.png)
 
 1. On the left side, select your new **PowerShell** script task.
 
@@ -217,7 +217,7 @@ A typical build produces an artifact that can then be deployed to various enviro
 
 ::: moniker range="vsts"
 
-1. On the **Tasks** tab, select the plus sign **( + )** to add a task to **Phase 1**.
+1. On the **Tasks** tab, select the plus sign **( + )** to add a task to **Job 1**.
 
 1. Select the **Utility** category, select the **Publish Build Artifacts** task, and then select **Add**.
 
@@ -437,7 +437,7 @@ Define the process for running the script in two environments.
 
 1. Select the **Tasks** tab and select your **QA** environment.
 
-1. Select the plus sign **( + )** for the phase to add a task to the phase.
+1. Select the plus sign **( + )** for the job to add a task to the job.
 
 1. On the **Add tasks** dialog box, select **Utility**, locate the **PowerShell** task, and then select its **Add** button.
 

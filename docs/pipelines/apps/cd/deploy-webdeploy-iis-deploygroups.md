@@ -86,7 +86,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
    ![Setting the continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
 
-1. Open the **Tasks** tab and select the **IIS Deployment** phase. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
+1. Open the **Tasks** tab and select the **IIS Deployment** job. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
 
    ![IIS deployment group in release pipeline](../_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 

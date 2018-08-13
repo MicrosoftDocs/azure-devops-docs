@@ -18,28 +18,28 @@ This document is intended for people who already have a strong understanding of 
 
 > The best way to get started with YAML pipelines is through the
 [quickstart guide](get-started-yaml.md).
-> After that, to learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Phases](process/phases.md).
+> After that, to learn how to configure your YAML pipeline the way you need it to work, see conceptual topics such as [Build variables](process/variables.md) and [Jobs](process/phases.md).
 
 ## Pipeline structure
 
-Pipelines are made of one or more phases and may include resources and
-variables. Phases are made of one or more steps plus some phase-specific data.
+Pipelines are made of one or more jobs and may include resources and
+variables. Jobs are made of one or more steps plus some job-specific data.
 Steps can be tasks, scripts, or references to external templates.
 This is reflected in the structure of the YAML file.
 
 - Pipeline
-  - Phase 1
+  - Job 1
     - Step 1.1
     - Step 1.2
     - ...
-  - Phase 2
+  - Job 2
     - Step 2.1
     - Step 2.2
     - ...
   - ...
 
 For simpler pipelines, not all of these levels are required. For example,
-in a single-phase build, you can omit the container for "phases" since there
+in a single-job build, you can omit the container for "jobs" since there
 are only steps. Also, many options shown here are optional and have good
 defaults, so your YAML definitions are unlikely to include all of them.
 
@@ -52,7 +52,7 @@ Conventions used in this topic:
 * `[` *datatype* `]` indicates an array of the mentioned data type. For instance, `[ string ]` is an array of strings.
 * `{` *datatype* `:` *datatype* `}` indicates a mapping of one data type to another. For instance, `{ string: string }` is a mapping of strings to strings.
 * `|` indicates there are multiple data types available for the keyword. For
-instance, `phase | templateReference` means either a phase definition or a
+instance, `job | templateReference` means either a job definition or a
 template reference are allowed.
 
 ## Pipeline
@@ -63,16 +63,16 @@ resources:
   containers: [ container ]
   repositories: [ repository ]
 variables: { string: string } | variable
-phases: [ phase | templateReference ]
+jobs: [ job | templateReference ]
 ```
 
-Learn more about [multi-phase pipelines](process/multiple-phases.md?tabs=yaml),
+Learn more about [multi-job pipelines](process/multiple-phases.md?tabs=yaml),
 using [containers](#container) and [repositories](#repository) in pipelines,
 and [variables](process/variables.md?tabs=yaml).
 
 ### Container
 
-[Container phases](process/container-phases.md) let you isolate your tools and
+[Container jobs](process/container-phases.md) let you isolate your tools and
 dependencies inside a container. The agent will launch an instance of your
 specified container, then run steps inside it. The `container` resource lets
 you specify your container images.
@@ -116,21 +116,21 @@ repo including the user or organization. For example, `Microsoft/vscode`. Also,
 GitHub repos require a [service connection](library/service-endpoints.md)
 for authorization.
 
-## Phase
+## Job
 
 <!-- to be renamed job soon -->
 
-A [phase](process/phases.md?tabs=yaml) is a collection of steps to be run by an
-[agent](agents/agents.md) or, in some cases, on the server. Phases can be
+A [job](process/phases.md?tabs=yaml) is a collection of steps to be run by an
+[agent](agents/agents.md) or, in some cases, on the server. Jobs can be
 run [conditionally](process/multiple-phases.md?tabs=yaml#conditions), and they
-may [depend on earlier phases](process/multiple-phases.md?tabs=yaml#dependencies).
+may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
 
 ```yaml
-- phase: string  # name of the phase, no spaces allowed
+- job: string  # name of the job, no spaces allowed
   displayName: string  # friendly name to display in the UI
   dependsOn: string | [ string ]
   condition: string
-  continueOnError: boolean  # 'true' if future phases should run even if this phase fails; defaults to 'false'
+  continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
   queue: string | queue
   server: true | server
   variables: { string: string } | [ variable ]
@@ -143,12 +143,12 @@ the schema references for [queue](#queue), [server](#server), [script](#script),
 and [step templates](#step-template).
 
 > [!Note]
-> If you have only one phase, you can use [single-phase syntax](process/phases.md?tabs=yaml)
+> If you have only one job, you can use [single-job syntax](process/phases.md?tabs=yaml)
 > which omits many of the keywords here.
 
-### Phase templates
+### Job templates
 
-Phases can also be specified in a phase template. Phase templates are separate
+Jobs can also be specified in a job template. Job templates are separate
 files which you can reference in the main pipeline definition.
 
 ```yaml
@@ -159,15 +159,15 @@ files which you can reference in the main pipeline definition.
 For example:
 
 ```yaml
-# File: phases/build.yml
+# File: jobs/build.yml
 
 parameters:
   name: ''
   queue: ''
   sign: false
 
-phases:
-- phase: ${{ parameters.name }}
+jobs:
+- job: ${{ parameters.name }}
   queue: ${{ parameters.queue }}
   steps:
   - script: npm install
@@ -179,18 +179,18 @@ phases:
 ```yaml
 # File: .vsts-ci.yml
 
-phases:
-- template: phases/build.yml  # Template reference
+jobs:
+- template: jobs/build.yml  # Template reference
   parameters:
     name: macOS
     queue: Hosted macOS Preview
 
-- template: phases/build.yml  # Template reference
+- template: jobs/build.yml  # Template reference
   parameters:
     name: Linux
     queue: Hosted Linux Preview
 
-- template: phases/build.yml  # Template reference
+- template: jobs/build.yml  # Template reference
   parameters:
     name: Windows
     queue: Hosted VS2017
@@ -246,15 +246,15 @@ the same resource will be used for the duration of the build.
 
 ## Queue
 
-`queue` specifies what [pool](agents/pools-queues.md) to use for a phase of the
-pipeline. It also holds information about the phase's strategy for running.
+`queue` specifies what [pool](agents/pools-queues.md) to use for a job of the
+pipeline. It also holds information about the job's strategy for running.
 
 ```yaml
-name: string  # name of the queue to run this phase in
+name: string  # name of the queue to run this job in
 demands: string | [ string ]  ## see below
 timeoutInMinutes: number
 cancelTimeoutInMinutes: number
-parallel: number  # maximum number of agents to use at once when running this phase; also see `matrix`
+parallel: number  # maximum number of agents to use at once when running this job; also see `matrix`
 matrix: { string: { string: string } }  ## see below
 ```
 
@@ -273,7 +273,7 @@ demands:
 
 ### Matrix
 
-`matrix` enables a phase to be run multiple times with different variable sets.
+`matrix` enables a job to be run multiple times with different variable sets.
 For example, a common scenario is to run the same build steps for varying
 permutations of architecture (x86/x64) and configuration (debug/release).
 
@@ -297,14 +297,14 @@ steps:
 
 ## Server
 
-`server` specifies a [server phase](process/server-phases.md). It has many
+`server` specifies a [server job](process/server-phases.md). It has many
 of the same YAML properties as a normal `queue`.
 
 ```yaml
 server: true
 timeoutInMinutes: number
 cancelTimeoutInMinutes: number
-parallel: number  # maximum number of agents to use at once when running this phase; also see `matrix`
+parallel: number  # maximum number of agents to use at once when running this job; also see `matrix`
 matrix: { string: { string: string } }  ## see `matrix` in the `queue` section
 ```
 
@@ -465,18 +465,18 @@ steps:
 ```yaml
 # File: .vsts-ci.yml
 
-phases:
-- phase: macOS
+jobs:
+- job: macOS
   queue: Hosted macOS Preview
   steps:
   - template: steps/build.yml # Template reference
 
-- phase: Linux
+- job: Linux
   queue: Hosted Linux Preview
   steps:
   - template: steps/build.yml # Template reference
 
-- phase: Windows
+- job: Windows
   queue: Hosted VS2017
   steps:
   - template: steps/build.yml # Template reference
@@ -535,15 +535,15 @@ In addition to YAML values, you can use template expressions to influence the
 structure of a YAML pipeline. For instance, to insert into a sequence:
 
 ```yaml
-# File: phases/build.yml
+# File: jobs/build.yml
 
 parameters:
   preBuild: []
   preTest: []
   preSign: []
 
-phases:
-- phase: Build
+jobs:
+- job: Build
   queue: Hosted VS2017
   steps:
   - script: cred-scan
@@ -558,8 +558,8 @@ phases:
 ```yaml
 # File: .vsts.ci.yml
 
-phases:
-- template: phases/build.yml
+jobs:
+- template: jobs/build.yml
   parameters:
     preBuild:
     - script: echo hello from pre-build
@@ -576,8 +576,8 @@ To insert into a mapping, you use the special property `${{ insert }}`.
 parameters:
   variables: {}
 
-phases:
-- phase: build
+jobs:
+- job: build
   variables:
     configuration: debug
     arch: x86
@@ -588,8 +588,8 @@ phases:
 ```
 
 ```yaml
-phases:
-- template: phases/build.yml
+jobs:
+- template: jobs/build.yml
   parameters:
     variables:
       TEST_SUITE: L0,L1

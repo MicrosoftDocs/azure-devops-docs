@@ -317,7 +317,7 @@ Scenarios where you may want to consume Package Management artifacts are:
 
 When you link a Package Management artifact to your release pipeline, you must select the Feed, Package, and the Default version for the package.
 You can choose to pick up the latest version of the package, use a specific version, or select the version at the time of release creation.
-During deployment, the package is downloaded to the agent folder and the contents are extracted as part of the phase execution.
+During deployment, the package is downloaded to the agent folder and the contents are extracted as part of the job execution.
 
 The following features are available when using Package Management sources:
 
@@ -465,8 +465,8 @@ perform incremental downloads to the agent.
 ::: moniker range="< vsts"
 
 You can, however, instruct Release Management to [skip the automatic download](../process/phases.md#artifact-download)
-of artifacts to the agent for a specific phase and environment of the deployment if you
-wish. Typically, you will do this when the tasks in that phase do not
+of artifacts to the agent for a specific job and environment of the deployment if you
+wish. Typically, you will do this when the tasks in that job do not
 require any artifacts, or if you implement custom code in a task to
 download the artifacts you require.
 
@@ -475,9 +475,9 @@ download the artifacts you require.
 ::: moniker range="vsts"
 
 In Azure Pipelines, you can, however, [select which artifacts you want to download](../process/phases.md#artifact-download)
-to the agent for a specific phase and environment of the deployment.
+to the agent for a specific job and environment of the deployment.
 Typically, you will do this to improve the efficiency of the deployment
-pipeline when the tasks in that phase do not
+pipeline when the tasks in that job do not
 require all or any of the artifacts, or if you implement custom code
 in a task to download the artifacts you require.
 
