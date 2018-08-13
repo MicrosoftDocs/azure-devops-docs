@@ -22,7 +22,7 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 
 ::: moniker range="vsts"
 
-* Partition your pipeline into sections targeting different agent queues
+* Partition your pipeline into sections targeting different agent pools
 * Partition your pipeline into sections targeting different sets of self-hosted agents using different demands
 * Partition your pipeline into sections that run on agents and those that run without an agent
 * Publish build artifacts in one job and consume those in subsequent jobs
@@ -35,7 +35,7 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 
 ::: moniker range="tfs-2018"
 
-* Partition your process into sections targeting different agent queues
+* Partition your process into sections targeting different agent pools
 * Partition your process into sections targeting different sets of self-hosted agents using different demands
 * Partition your process into sections that run on agents and those that run without an agent
 * Publish build artifacts in one job and consume those in subsequent jobs
@@ -47,7 +47,7 @@ You can add multiple [jobs](phases.md) to a pipeline. By using different jobs in
 
 ::: moniker range="tfs-2017"
 
-* Partition your process into sections targeting different agent queues
+* Partition your process into sections targeting different agent pools
 * Partition your process into sections targeting different sets of self-hosted agents using different demands
 * Partition your process into sections that run on agents and those that run without an agent
 * Pause the deployment in the middle using a manual intervention task
@@ -109,17 +109,17 @@ Example jobs that build in parallel (no dependencies):
 ```yaml
 jobs:
 - job: Windows
-  queue:
+  pool:
     demands: agent.os -equals Windows_NT
   steps:
   - script: echo hello from Windows
 - job: macOS
-  queue:
+  pool:
     demands: agent.os -equals Darwin
   steps:
   - script: echo hello from macOS
 - job: Linux
-  queue:
+  pool:
     demands: agent.os -equals Linux
   steps:
   - script: echo hello from Linux

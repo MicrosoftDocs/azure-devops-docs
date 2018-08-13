@@ -41,7 +41,7 @@ YAML is not supported in TFS.
 
 ::: moniker range="vsts"
 
-To deploy a DACPAC to an Azure SQL database, add the following snippet to your .vsts-ci.yml file.
+To deploy a DACPAC to an Azure SQL database, add the following snippet to your azure-pipelines.yml file.
 
 ```yaml
 - task: SqlAzureDacpacDeployment@1
@@ -132,7 +132,7 @@ If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $A
 
 ::: moniker range="vsts"
 
-Add the following to your .vsts-ci.yml file to run a SQL script.
+Add the following to your azure-pipelines.yml file to run a SQL script.
 
 ```yaml
 variables:

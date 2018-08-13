@@ -94,7 +94,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
-1. For the **Agent queue**:
+1. For the **Agent pool**:
 
  ::: moniker range="vsts"
 
@@ -104,7 +104,7 @@ This quickstart works for apps targeting the .NET Framework 4 or newer. The samp
 
  ::: moniker range="< vsts"
 
- * **TFS:** Select a queue that includes a [Windows build agent](../../agents/v2-windows.md).
+ * **TFS:** Select a pool that includes a [Windows build agent](../../agents/v2-windows.md).
  
  ::: moniker-end
 

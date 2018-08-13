@@ -91,7 +91,7 @@ steps:
 To use a variable in a YAML statement, wrap it in `$()`. For example:
 
 ```yaml
-queue: Hosted Linux Preview
+pool: Hosted Linux Preview
 steps:
 - script: ls
   workingDirectory: $(agent.homeDirectory)
@@ -106,12 +106,12 @@ referencing environment variables.
 ```yaml
 jobs:
 - job: LinuxOrMacOs
-  queue: Hosted Linux Preview
+  pool: Hosted Linux Preview
   steps:
   - bash: echo $AGENT_HOMEDIRECTORY
 
 - job: Windows
-  queue: Hosted VS2017
+  pool: Hosted VS2017
   steps:
   - script: echo %AGENT_HOMEDIRECTORY%
   - powershell: Write-Host $env:AGENT_HOMEDIRECTORY
@@ -124,7 +124,7 @@ This does not update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
 ```yaml
-queue: Hosted Linux Preview
+pool: Hosted Linux Preview
 
 steps:
 
@@ -148,7 +148,7 @@ jobs:
 
 # Set an output variable from job A
 - job: A
-  queue: Hosted VS2017
+  pool: Hosted VS2017
   steps: 
   - powershell: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the value"
     name: setvarStep
@@ -158,7 +158,7 @@ jobs:
 # Map the variable into job B
 - job: B
   dependsOn: A
-  queue: Hosted Linux Preview
+  pool: Hosted Linux Preview
   variables:
     myVarFromJobA: $[ dependencies.A.outputs['setvarStep.myOutputVar'] ]  # map in the variable
   steps:
@@ -176,7 +176,7 @@ jobs:
 
 # Set an output variable from a job with a matrix
 - job: A
-  queue:
+  pool:
     name: Hosted Linux Preview
     parallel: 2
     matrix:
@@ -195,7 +195,7 @@ jobs:
 # Map the variable from the debug job
 - job: B
   dependsOn: A
-  queue: Hosted Linux Preview
+  pool: Hosted Linux Preview
   variables:
     myVarFromJobADebug: $[ dependencies.A.outputs['debugJob.setvarStep.myOutputVar'] ]
   steps:
@@ -208,7 +208,7 @@ jobs:
 
 # Set an output variable from a job with slicing
 - job: A
-  queue:
+  pool:
     name: Hosted Linux Preview
     parallel: 2 # Two slices
   steps:
@@ -220,7 +220,7 @@ jobs:
 # Map the variable from the job for the first slice
 - job: B
   dependsOn: A
-  queue: Hosted Linux Preview
+  pool: Hosted Linux Preview
   variables:
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ]
   steps:

@@ -48,7 +48,7 @@ To publish to a external Universal Packages feed, you must first create a [servi
 
 #  [YAML](#tab/yaml)
 
-To publish a Universal Package to your feed, add the following snippet to your .vsts-ci.yml file.
+To publish a Universal Package to your feed, add the following snippet to your azure-pipelines.yml file.
 
 ```yaml
 - task: UniversalPackages@0

@@ -36,9 +36,9 @@ Once you have been added as a team member, you are a member of the Contributors 
 ## Security of agents and library entities
 
 You use pre-defined roles and manage membership in those roles to
-configure [security on agent pools and queues](../agents/pools-queues.md#security).
+configure [security on agent pools](../agents/pools-queues.md#security).
 You can configure this in a hierarchical manner either for all
-pools and queues, or for an individual pool or queue.  
+pools, or for an individual pool.  
 
 Roles are also defined to help you configure security on shared
 [library entities](../library/index.md) such as [variable groups](../library/index.md#security)

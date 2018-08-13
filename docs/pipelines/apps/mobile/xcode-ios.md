@@ -77,7 +77,7 @@ The sample provided here is an iOS app, but the concepts described here translat
 
  You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
-1. For the **Agent queue**, select **Hosted macOS** or a queue that includes the Mac agent you set up.
+1. For the **Agent pool**, select **Hosted macOS** or a pool that includes the Mac agent you set up.
 
 1. For the **Scheme**, enter `iOSHelloWorld`
 

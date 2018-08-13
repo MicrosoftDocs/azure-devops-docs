@@ -55,11 +55,11 @@ If you're new to YAML builds, or to Azure Pipelines, we suggest you begin learni
 
 ## Automatically create a YAML build pipeline
 
-To make it more convenient to create YAML build pipelines, Azure Pipelines automatically creates a pipeline when you add a file named .vsts-ci.yml to the root of your repository. It creates the build pipeline in a folder that has the same name as your repository.
+To make it more convenient to create YAML build pipelines, Azure Pipelines automatically creates a pipeline when you add a file named azure-pipelines.yml to the root of your repository. It creates the build pipeline in a folder that has the same name as your repository.
 
 1. Navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-2. In the root folder of the repo, create a new file called **.vsts-ci.yml**.
+2. In the root folder of the repo, create a new file called **azure-pipelines.yml**.
 
 3. Paste the following content into the file:
 
@@ -87,7 +87,7 @@ If your code is in GitHub, or if you want to create multiple YAML build pipeline
 
 1. Click **Pipeline**.
 
-1. For the **Agent queue** select any of the hosted options.
+1. For the **Agent pool** select any of the hosted options.
 
 1. For YAML path, click the **...** button, and then choose your .YML file.
 
@@ -95,7 +95,7 @@ If your code is in GitHub, or if you want to create multiple YAML build pipeline
 
 ## Example: Hello world
 
-To see a more interesting example in action, replace the content in **.vsts-ci.yml** with this content:
+To see a more interesting example in action, replace the content in **azure-pipelines.yml** with this content:
 
 ```YAML
 steps:

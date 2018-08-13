@@ -93,7 +93,7 @@ The master branch typically produces deployable artifacts such as binaries.  You
 
 # [YAML](#tab/yaml)
 
-Edit the `.vsts-ci.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to `publish artifacts` task.
+Edit the `azure-pipelines.yml` file in your `master` branch, locate a task in your YAML file, and add a condition to it. For example, the following snippet adds a condition to `publish artifacts` task.
 
 ::: moniker range="vsts"
 

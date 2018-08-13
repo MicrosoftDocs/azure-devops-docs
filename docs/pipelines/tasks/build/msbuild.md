@@ -26,7 +26,7 @@ monikerRange: '>= tfs-2015'
 
 msbuild
 
-> **Azure Pipelines:** If your team uses Visual Studio 2017 and you want to use the Microsoft-hosted agents, make sure you select as your default queue the **Hosted VS2017**. See [Microsoft-hosted agents](../../agents/hosted.md).
+> **Azure Pipelines:** If your team uses Visual Studio 2017 and you want to use the Microsoft-hosted agents, make sure you select as your default pool the **Hosted VS2017**. See [Microsoft-hosted agents](../../agents/hosted.md).
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet

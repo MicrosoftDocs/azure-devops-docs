@@ -84,11 +84,11 @@ You need to create two build pipelines - one for Xamarin.Android and one for Xam
 
  You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
-1. For the **Agent queue**:
+1. For the **Agent pool**:
 
  * **Azure Pipelines:** Select _Hosted VS2017_. This Microsoft-hosted pool of agents has the software needed to build your app.
 
- * **TFS:** Select a queue that includes a [macOS](../../agents/v2-osx.md) or [Windows](../../agents/v2-windows.md) build agent.
+ * **TFS:** Select a pool that includes a [macOS](../../agents/v2-osx.md) or [Windows](../../agents/v2-windows.md) build agent.
 
 1. Click **Get sources** and then:
 
@@ -119,7 +119,7 @@ You need to create two build pipelines - one for Xamarin.Android and one for Xam
 
 Navigate to the **Builds** tab of the **Pipelines** hub, and then click **+ New**. You are asked to **Select a template** for the new build pipeline. This time, select the **Xamarin.iOS** template.
 
-1. For the **Agent queue**, select a hosted macOS queue such as **Hosted macOS**, or the private queue that includes your macOS agent.
+1. For the **Agent pool**, select a hosted macOS pool such as **Hosted macOS**, or the private pool that includes your macOS agent.
 
 1. For the **Solution to build**, enter `HelloXamarinFormsWorld.sln`.
 

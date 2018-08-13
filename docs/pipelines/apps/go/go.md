@@ -69,11 +69,11 @@ You are taken to the **Pipelines** hub and asked to **Select a template** for th
 
  You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
-1. For the **Agent queue**:
+1. For the **Agent pool**:
 
  * **Azure Pipelines:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with Go installed.
 
- * **TFS:** Select a queue that includes an agent with Go installed.
+ * **TFS:** Select a pool that includes an agent with Go installed.
 
 1. Click **Get sources** and observe that the new build pipeline is automatically linked to your repository.
 
@@ -85,7 +85,7 @@ You are taken to the **Pipelines** hub and asked to **Select a template** for th
 
 1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
 
-1. For the **Agent queue**, select a queue that includes an agent with Go installed.
+1. For the **Agent pool**, select a pool that includes an agent with Go installed.
 
 1. Click **Get sources** and observe that the new build pipeline is automatically linked to your repository.
 
@@ -115,11 +115,11 @@ Navigate to the **Builds** tab of the **Pipelines** hub in Azure Pipelines or TF
 
  You now see all the tasks that were automatically added to the build pipeline by the template. These are the tasks that will automatically run every time you push code changes.
 
-1. For the **Agent queue**:
+1. For the **Agent pool**:
 
  * **Azure Pipelines:** Select _Hosted Linux_, _Hosted macOS_, or _Hosted VS2017_. This will use a Microsoft-hosted agent with Go installed.
 
- * **TFS:** Select a queue that includes an agent with Go installed.
+ * **TFS:** Select a pool that includes an agent with Go installed.
 
 1. Click **Get sources** and select your version control repository. You'll need to authorize access to it.
 
@@ -131,7 +131,7 @@ Navigate to the **Builds** tab of the **Pipelines** hub in Azure Pipelines or TF
 
 1. In the right panel, select **Empty**, and then click **Apply**. This template allows starting from scratch and adding your own build tasks.
 
-1. For the **Agent queue**, select a queue that includes an agent with Go installed.
+1. For the **Agent pool**, select a pool that includes an agent with Go installed.
 
 1. Click **Get sources** and select your version control repository. You'll need to authorize access to it.
 

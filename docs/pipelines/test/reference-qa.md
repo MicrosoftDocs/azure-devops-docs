@@ -244,7 +244,7 @@ If you are using a headless browser such as [PhantomJS](http://phantomjs.org/),
 the agent can be run as a service or in interactive mode. See 
 [Build and release agents](../../pipelines/agents/agents.md),
 [Deploy an agent on Windows](../../pipelines/agents/v2-windows.md),
-and [Agent pools and queues](../../pipelines/agents/pools-queues.md).
+and [Agent pools](../../pipelines/agents/pools-queues.md).
 
 ### Q: Where can I find detailed documentation on how to run Selenium tests?
 

@@ -224,7 +224,7 @@ For a full description of the operation for all tasks, see
 
 #### No parallelism
 
-A single agent from the specified queue will be allocated to this phase.
+A single agent from the specified pool will be allocated to this job.
 This is the default, and all tasks in the phase will run on that agent.
 The **Visual Studio Test** task runs in exactly the same way as version
 1 with single agent test execution.
@@ -294,7 +294,7 @@ and run a large number of tests with fast test execution, you could model the en
 one being the deploy phase (which runs on a single agent because you don't want multiple agents to deploy
 the same app concurrently), and the other a test phase that uses multiple agents mode to achieve test distribution.
 
-This also means that you can use different agent queues for the two jobs, allowing you to manage agents
+This also means that you can use different agent pools for the two jobs, allowing you to manage agents
 for different purposes separately if required.
 
 ![Configuring the release pipeline with two jobs for distributed tests](_img/test-with-unified-agent-and-phases/distributed-tests.png)

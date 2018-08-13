@@ -53,10 +53,10 @@ Get the code for the sample application into your own GitHub or Azure Repos repo
 
 1. In Azure Repos, navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
 
-1. Inspect the `.vsts-ci.yml` file at the root of your imported repository. The YAML file contains the instructions for the build pipeline. Here's an example snippet from a Gradle build pipeline. The actual content in your file depends on the sample application you chose.
+1. Inspect the `azure-pipelines.yml` file at the root of your imported repository. The YAML file contains the instructions for the build pipeline. Here's an example snippet from a Gradle build pipeline. The actual content in your file depends on the sample application you chose.
 
   ```yaml
-  queue: 'Hosted VS2017'
+  pool: 'Hosted VS2017'
 
   steps:  
   - task: Gradle@2
@@ -96,16 +96,16 @@ In Azure Pipelines:
 
 1. Select **Pipeline**.
 
-1. For the **Agent queue** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your application.
+1. For the **Agent pool** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your application.
 
-1. For the **Yaml path**, select the **.vsts-ci.yml** file in the root of your repo.
+1. For the **Yaml path**, select the **azure-pipelines.yml** file in the root of your repo.
 
 In GitHub:
 
-1. Inspect the `.vsts-ci.yml` file at the root of your forked repository. The YAML file contains the instructions for the build pipeline. Here is a snippet from the file. The contents in your file may be different depending on the sample application you chose.
+1. Inspect the `azure-pipelines.yml` file at the root of your forked repository. The YAML file contains the instructions for the build pipeline. Here is a snippet from the file. The contents in your file may be different depending on the sample application you chose.
 
   ```yaml
-  queue: 'Hosted VS2017'
+  pool: 'Hosted VS2017'
 
   steps:  
   - task: Gradle@2

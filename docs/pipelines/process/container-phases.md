@@ -40,7 +40,7 @@ resources:
   - container: my_container
     image: ubuntu:16.04
 
-queue:
+pool:
   container: my_container
   name: 'Hosted Ubuntu 1604'
 steps:
@@ -53,8 +53,8 @@ This tells the system to fetch the `ubuntu` image tagged `16.04` from
 
 > [!Note]
 > Due to a bug, you must currently specify "Hosted Ubuntu 1604" as the
-> queue name in order to run containers. Other queues will not work.
-> In late August, we expect to remove the need to specify a queue.
+> pool name in order to run containers. Other pools will not work.
+> In September 2018, we expect to remove the need to specify a pool.
 
 ## Multiple jobs
 
@@ -73,7 +73,7 @@ resources:
   - container: u18
     image: ubuntu:18.04
 
-queue:
+pool:
   name: 'Hosted Ubuntu 1604'
   matrix:
     ubuntu14:

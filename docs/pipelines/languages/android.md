@@ -37,11 +37,11 @@ This guide explains creating pipelines for Android projects. Before this guidanc
 
 You can build Android projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Android. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
 
-Start by adding the following YAML to a file named **vsts-ci.yml** in the root of your repository. Change any values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+Start by adding the following YAML to a file named **azure-pipelines.yml** in the root of your repository. Change any values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
 # https://aka.ms/yaml
-queue: 'Hosted VS2017'
+pool: 'Hosted VS2017'
 steps:
 - task: Gradle@2
   inputs:

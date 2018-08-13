@@ -131,14 +131,14 @@ may [depend on earlier jobs](process/multiple-phases.md?tabs=yaml#dependencies).
   dependsOn: string | [ string ]
   condition: string
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
-  queue: string | queue
+  pool: string | pool
   server: true | server
   variables: { string: string } | [ variable ]
   steps: [ script | bash | powershell | checkout | task | stepTemplate ]
 ```
 
 Learn more about [variables](process/variables.md?tabs=yaml). Also see
-the schema references for [queue](#queue), [server](#server), [script](#script),
+the schema references for [pool](#pool), [server](#server), [script](#script),
 [bash](#bash), [powershell](#powershell), [checkout](#checkout), [task](#task),
 and [step templates](#step-template).
 
@@ -163,12 +163,12 @@ For example:
 
 parameters:
   name: ''
-  queue: ''
+  pool: ''
   sign: false
 
 jobs:
 - job: ${{ parameters.name }}
-  queue: ${{ parameters.queue }}
+  pool: ${{ parameters.pool }}
   steps:
   - script: npm install
   - script: npm test
@@ -177,23 +177,23 @@ jobs:
 ```
 
 ```yaml
-# File: .vsts-ci.yml
+# File: azure-pipelines.yml
 
 jobs:
 - template: jobs/build.yml  # Template reference
   parameters:
     name: macOS
-    queue: Hosted macOS Preview
+    pool: Hosted macOS Preview
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Linux
-    queue: Hosted Linux Preview
+    pool: Hosted Linux Preview
 
 - template: jobs/build.yml  # Template reference
   parameters:
     name: Windows
-    queue: Hosted VS2017
+    pool: Hosted VS2017
     sign: true  # Extra step on Windows only
 ```
 
@@ -223,7 +223,7 @@ steps:
 ```
 
 ```yaml
-# File: .vsts-ci.yml
+# File: azure-pipelines.yml
 # Repository: https://contoso.visualstudio.com/MyProject/_git/MyRepo
 
 resources:
@@ -244,13 +244,13 @@ steps:
 Repositories are only resolved once, when the pipeline starts up. After that,
 the same resource will be used for the duration of the build.
 
-## Queue
+## Pool
 
-`queue` specifies what [pool](agents/pools-queues.md) to use for a job of the
+`pool` specifies which [pool](agents/pools-queues.md) to use for a job of the
 pipeline. It also holds information about the job's strategy for running.
 
 ```yaml
-name: string  # name of the queue to run this job in
+name: string  # name of the pool to run this job in
 demands: string | [ string ]  ## see below
 timeoutInMinutes: number
 cancelTimeoutInMinutes: number
@@ -280,7 +280,7 @@ permutations of architecture (x86/x64) and configuration (debug/release).
 For example:
 
 ```yaml
-queue:
+pool:
   matrix:
     x64_debug:
       buildArch: x64
@@ -298,14 +298,14 @@ steps:
 ## Server
 
 `server` specifies a [server job](process/server-phases.md). It has many
-of the same YAML properties as a normal `queue`.
+of the same YAML properties as a normal `pool`.
 
 ```yaml
 server: true
 timeoutInMinutes: number
 cancelTimeoutInMinutes: number
 parallel: number  # maximum number of agents to use at once when running this job; also see `matrix`
-matrix: { string: { string: string } }  ## see `matrix` in the `queue` section
+matrix: { string: { string: string } }  ## see `matrix` in the `pool` section
 ```
 
 ## Script
@@ -463,21 +463,21 @@ steps:
 ```
 
 ```yaml
-# File: .vsts-ci.yml
+# File: azure-pipelines.yml
 
 jobs:
 - job: macOS
-  queue: Hosted macOS Preview
+  pool: Hosted macOS Preview
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Linux
-  queue: Hosted Linux Preview
+  pool: Hosted Linux Preview
   steps:
   - template: steps/build.yml # Template reference
 
 - job: Windows
-  queue: Hosted VS2017
+  pool: Hosted VS2017
   steps:
   - template: steps/build.yml # Template reference
   - script: sign              # Extra step on Windows only
@@ -510,7 +510,7 @@ steps:
 ```
 
 ```yaml
-# File: .vsts-ci.yml
+# File: azure-pipelines.yml
 
 steps:
 - template: steps/msbuild.yml
@@ -544,7 +544,7 @@ parameters:
 
 jobs:
 - job: Build
-  queue: Hosted VS2017
+  pool: Hosted VS2017
   steps:
   - script: cred-scan
   - ${{ parameters.preBuild }}
@@ -623,7 +623,7 @@ steps:
 ```
 
 ```yaml
-# File: .vsts-ci.yml
+# File: azure-pipelines.yml
 
 steps:
 - template: steps/build.yml

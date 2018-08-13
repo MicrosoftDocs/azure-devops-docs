@@ -135,7 +135,7 @@ We don't yet support the **Build even if nothing has changed since the previous 
 
 | XAML process parameter | TFS 2017 and newer equivalent | Azure Pipelines equivalent |
 |-|-|-|
-| Build controller | On the **General** tab, select the default agent queue. | On the **Options** tab, select the default agent queue. |
+| Build controller | On the **General** tab, select the default agent pool. | On the **Options** tab, select the default agent pool. |
 | Staging location | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../build/artifacts.md). | On the **Tasks** tab, specify arguments to the Copy Files and Publish Build Artifacts tasks. See [Build artifacts](../build/artifacts.md). |
 
 The new build pipeline offers you some new options. For example:

@@ -135,7 +135,7 @@ Create a build pipeline that prints "Hello world."
 
 1. Start with an **empty pipeline**.
 
-1. On the left side, select **Pipeline** and specify whatever **Name** you want to use. For the **Agent queue**, select **Hosted VS2017**.
+1. On the left side, select **Pipeline** and specify whatever **Name** you want to use. For the **Agent pool**, select **Hosted VS2017**.
 
 1. On the left side, select the plus sign **( + )** to add a task to **Job 1**. On the right side, select the **Utility** category, select the **PowerShell** task from the list, and then choose **Add**.
 
@@ -163,7 +163,7 @@ Create a build pipeline that prints "Hello world."
 
 1. Start with an **empty pipeline**
 
-1. Select **Pipeline** and specify whatever **Name** you want to use. For the **Agent queue**, select **Default**.
+1. Select **Pipeline** and specify whatever **Name** you want to use. For the **Agent pool**, select **Default**.
 
 1. On the left side, select **+ Add Task** to add a task to the job, and then on the right side select the **Utility** category, select the **PowerShell** task, and then choose **Add**.
 
@@ -193,7 +193,7 @@ Create a build pipeline that prints "Hello world."
 
 1. Select **Pipeline** and specify whatever **Name** you want to use.
 
-1. On the **Options** tab, select **Default** for the **Agent queue**, or select whichever queue you want to use that has Windows build agents.
+1. On the **Options** tab, select **Default** for the **Agent pool**, or select whichever pool you want to use that has Windows build agents.
 
 1. On the **Tasks** tab, make sure that **Get sources** is set with the **Repository** and **Branch** in which you created the script.
 
@@ -706,7 +706,7 @@ You can queue builds [automatically](build/triggers.md) or manually.
 
 When you manually queue a build, you can, for a single run of the build:
 
-* Specify the [queue](agents/pools-queues.md) into which the build goes.
+* Specify the [pool](agents/pools-queues.md) into which the build goes.
 
 * Add and modify some [variables](build/variables.md).
 
