@@ -1,6 +1,6 @@
 ---
-title: URL-based load testing with VSTS
-description: Get app performance data when you load testusing the features of the Test hub in Microsoft Visual Studio Team Services (VSTS) and Microsoft Team Foundation Server (TFS)
+title: URL-based load testing with Azure DevOps
+description: Get app performance data when you load testusing the features of Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: 65E96414-756B-4BD9-92C3-4DDB4C7A6B57
 ms.prod: devops
 ms.technology: devops-test
@@ -12,12 +12,12 @@ ms.date: 07/09/2018
 monikerRange: 'vsts'
 ---
 
-# Run URL-based load tests with VSTS
+# Run URL-based load tests with Azure DevOps
 
 [!INCLUDE [version-header-ts](../_shared/version-header-ts.md)] 
 
 You can run a load test on your web app or site directly
-using Visual Studio Team Services (VSTS).
+using Azure DevOps.
 
 <a name="prepareenvir"></a>
 ## Prepare your environment
@@ -25,12 +25,12 @@ using Visual Studio Team Services (VSTS).
 * You will need a [Visual Studio Enterprise subscription](https://visualstudio.microsoft.com/products/visual-studio-enterprise-vs)
   (monthly, annual, or MSDN) to run URL-based load tests.
 
-* Create your VSTS subscription if you don't have one already. 
+* Create your Azure DevOps subscription if you don't have one already. 
 
 <a name="runtests"></a>
 ## Run a URL-based load test
 
-1. Sign into VSTS.
+1. Sign into Azure DevOps.
 
 1. Go to the **Test** hub, open the **Load test** tab, and choose **URL based test**
    from the **+ New** menu.

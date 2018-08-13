@@ -1,6 +1,6 @@
 ---
-title: Create a test plan - manual testing in VSTS TestTools
-description: Test tools - Create test plans in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
+title: Create a test plan - manual testing in Azure DevOps TestTools
+description: Test tools - Create test plans in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 99FD819E-A861-4F28-A486-FD452DB65D69
 ms.prod: devops
 ms.technology: devops-test
@@ -34,13 +34,13 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 ## Create a test plan
 
 1. If you haven't already, 
-   [sign up for VSTS](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
+   [sign up for Azure DevOps](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 
    [create your project](../organizations/accounts/organization-management.md), 
    and [create your backlog](../boards/backlogs/create-your-backlog.md). 
 
-1. In VSTS, open your project.
+1. In Azure DevOps, open your project.
 
-1. Go to the **Test Plans** tab of the **Test** hub. Create a test plan for your current sprint.
+1. Go to the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. Create a test plan for your current sprint.
 
    ![In test plan explorer, open the New (+) list, then click Test plan](_img/create-a-test-plan/CreateATestPlan1a.png)
 
@@ -82,7 +82,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
 
   ![Finding a test plan](_img/create-a-test-plan/select-test-plan.png)
 
-Test plans, suites, and test cases are stored in VSTS and TFS as special types of work items.
+Test plans, suites, and test cases are stored in Azure DevOps and TFS as special types of work items.
    
 ## See also
 

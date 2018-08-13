@@ -16,14 +16,14 @@ monikerRange: '>= tfs-2015'
  
 [!INCLUDE [version-header-vs-ts-tfs](_shared/version-header-vs-ts-tfs.md)] 
 
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) provide rich and powerful
+Azure DevOps and Team Foundation Server (TFS) provide rich and powerful
 tools everyone in the team can use to drive quality and collaboration throughout the development process.
 
 See also: [Load testing](load-test/index.md)
 
 ## 5-Minute Quickstarts
 
-Learn how to create tests plans and test cases, and run them using the VSTS or TFS web portal.
+Learn how to create tests plans and test cases, and run them using the Azure DevOps or TFS web portal.
 Use the Test &amp; Feedback extension to explore and find bugs in your apps. 
 
 | | | |

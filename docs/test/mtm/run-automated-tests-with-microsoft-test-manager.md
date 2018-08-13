@@ -137,7 +137,7 @@ To view and update the test results:
   
 ## See Also  
 
-* [Run automated tests from test plans in the Test hub](../run-automated-tests-from-test-hub.md)
+* [Run automated tests from test plans](../run-automated-tests-from-test-hub.md)
 * [Test with unified agents and phases](../../pipelines/test/set-up-continuous-test-environments-builds.md)
 * [Continuous testing scenarios and capabilities](../../pipelines/index.md)
 

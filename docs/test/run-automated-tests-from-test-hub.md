@@ -1,6 +1,6 @@
 ---
-title: Run automated tests from test plans in the Test hub VSTS and TFS 
-description: Run automated tests on-demand against Team Foundation builds from test plans in the Test hub with a build or release pipeline
+title: Run automated tests from test plans in the Test Manager 
+description: Run automated tests on-demand against Team Foundation builds from test plans in the Test Manager with a build or release pipeline
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
 ms.prod: devops
 ms.technology: devops-test
@@ -13,11 +13,9 @@ monikerRange: '>= tfs-2017'
 ---
 
 
-# Run automated tests from test plans in the Test hub
+# Run automated tests from test plans
 
-**VSTS | TFS 2018 | TFS 2017.2**
-
-Automate test cases in your test plans and run them directly from the **Test** hub:
+Automate test cases in your test plans and run them directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]:
 
 * Provides a user-friendly process for testers who may not be well
   versed with running tests in Build or Release workflows.

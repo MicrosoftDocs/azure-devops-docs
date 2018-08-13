@@ -1,6 +1,6 @@
 ---
-title: Create manual tests - VSTS and Team Foundation Server TestTools
-description: Test tools - Create manual tests in Microsoft VSTS and TFS to make sure each of the deliverables meets your users needs
+title: Create manual tests - Azure DevOps and Team Foundation Server TestTools
+description: Test tools - Create manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
 ms.prod: devops
 ms.technology: devops-test
@@ -72,7 +72,7 @@ different, consider creating separate test cases.
 1. After you select the testers, email them so they
    know the tests are ready for them to run. (You just need 
    [Basic access](https://visualstudio.microsoft.com/products/visual-studio-online-Basic-vs)
-   to run tests from VSTS.)
+   to run tests from Azure DevOps.)
 
    ![Assign testers to run all tests and send emails to them](_img/create-test-cases/AssignMultipleTestersEmail.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Track stakeholder feedback using the Test &amp; Feedback extension
-description: Track stakeholder feedback in VSTS or TFS using the Exploratory Testing browser extension when you want to test your applications
+description: Track stakeholder feedback in Azure DevOps or TFS using the Exploratory Testing browser extension when you want to test your applications
 ms.assetid: DADC6608-1830-4FDA-9007-6539859F4866
 ms.prod: devops
 ms.technology: devops-test
@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2017'
 <a name="track"></a>
 ## Track feedback requests
 
-1. In VSTS or TFS, select your project and open 
+1. In Azure DevOps or TFS, select your project and open 
    the **Queries** tab of the **Work** hub.
 
    ![Opening the Queries tab of the Work hub](_img/track-stakeholder-feedback/track-stakeholder-feedback-30.png)

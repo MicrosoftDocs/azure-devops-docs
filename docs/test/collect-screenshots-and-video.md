@@ -1,6 +1,6 @@
 ---
 title: Collect screenshots, video, logs, and attachments in continuous tests
-description: Collect screenshots, video, logs, and attachments in a continuous integration pipeline with Visual Studio Team Services (VSTS) and TFS 
+description: Collect screenshots, video, logs, and attachments in a continuous integration pipeline with Azure DevOps and TFS 
 ms.assetid: 234848A2-BDED-4DD5-8D15-AD56F6B49AD5
 ms.prod: devops
 ms.technology: devops-test
@@ -48,7 +48,7 @@ screenshots, video, logs, and attachments is often useful to help troubleshoot f
    }
    ``` 
 
-1. View the test results and the collected files as attachments to your test results in VSTS or TFS. 
+1. View the test results and the collected files as attachments to your test results in Azure DevOps or TFS. 
 
    ![Viewing the collected files](_img/screenshots-result.png)
 
