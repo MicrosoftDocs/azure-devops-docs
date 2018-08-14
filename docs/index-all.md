@@ -26,7 +26,7 @@ featureFlags:
                             <p><a href="/vsts/repos/get-started/index">Azure Repos</a><br/>
                             <a href="/vsts/boards/get-started/index">Azure Boards</a><br/>
                             <a href="/vsts/pipelines/get-started/index">Azure Pipelines</a><br/>
-                            <a href="/vsts/user-guide/index">Enterprise</a></p>
+                            <a href="/vsts/user-guide/new-index">Enterprise</a></p>
                         <h3>Overview</h3>
                             <p><a href="/vsts/project/wiki/project-vision-status">Summary</a><br/>
                             <a href="/vsts/report/dashboards/index">Dashboards</a><br/>

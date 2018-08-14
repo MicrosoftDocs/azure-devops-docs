@@ -37,7 +37,7 @@ Sign up for a VSTS organization, add users, and manage permissions and access.
 
 ## Resources
 
-* [New User Guide](../../user-guide/index.md)
+* [New User Guide](../../user-guide/new-index.yml)
 * [Project Management](../projects/index.md)
 * [Billing](../billing/index.md)
 * [Security & Identity](../../organizations/security/index.md)
