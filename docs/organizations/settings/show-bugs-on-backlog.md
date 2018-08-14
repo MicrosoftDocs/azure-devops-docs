@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 ms.date: 03/20/2018
 ---
@@ -25,22 +26,22 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 
 1. From your team's backlog page, choose the ![](../../_img/icons/gear-icon.png) gear icon to open the common configuration team settings.  
 	::: moniker range=">= tfs-2017"  
-	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
+	![Backlog board, open team settings](../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
 	::: moniker-end
 	::: moniker range="tfs-2015" 
 	**TFS 2015.1**
-	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
+	![Backlog board, open team settings](../../boards/backlogs/_img/organize-backlog-open-ccdialog.png) 
 	**TFS 2015**
 	Click the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
 
-	![Gear icon provides access to admin pages]((../../boards/_img/icons/ALM_OpenAdminContext.png)
+	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)
 
 	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
 	::: moniker-end
 	::: moniker range="tfs-2013"
 	Click the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page. Requires TFS 2013.4 or later version.  
 
-	![Gear icon provides access to admin pages]((../../boards/_img/icons/ALM_OpenAdminContext.png)
+	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)
 
 	From the Overview tab, choose the team whose settings you want to configure, and then click **Settings**.
 	::: moniker-end
@@ -66,10 +67,10 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end 
 
-3. To see the changes, open or refresh the team's [backlog]((../../boards/backlogs/create-your-backlog.md), [sprint backlog pages]((../../boards/sprints/assign-work-sprint.md), or [Kanban board]((../../boards/boards/kanban-basics.md).
+3. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md), [sprint backlog pages](../../boards/sprints/assign-work-sprint.md), or [Kanban board](../../boards/boards/kanban-basics.md).
 
 > [!TIP]  
-> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items]((../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
+> If, after refreshing a backlog or board, and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](../../boards/backlogs/resolve-backlog-reorder-issues.md). Only leaf nodes of nested items will appear on the Kanban or task boards.  
 
 
 <a id="add-other-wits" /> 
