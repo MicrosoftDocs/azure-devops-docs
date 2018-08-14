@@ -1,19 +1,17 @@
 ---
-title: Build and deploy your apps 
-titleSuffix: Azure DevOps 
-titleSuffix: Azure DevOps Services
-description: What do you get with Azure Pipelines
+title: Get started guide for Azure Pipelines 
+titleSuffix: Azure DevOps Services 
+description: Sign up and get started using Azure Pipelines 
 ms.prod: devops
 ms.technology: devops-new-user
-ms.assetid: 4 
 ms.manager: douge
-ms.author: kaelli
-ms.date: 06/22/2017
-ms.topic: overview
+ms.author: elbatk
+author: elbatk
+monikerRange: 'vsts'
+ms.date: 09/05/2018
 ---
 
-# Start using Azure Pipelines?
 
-**Azure Pipelines**
+# Azure DevOps Pipelines get started index
 
-To be completed
+Use this guide to start using Azure DevOps Pipelines.
