@@ -1,13 +1,11 @@
-- name: Azure Pipelines Get Started Guide
+- name: Pipelines get started
   href: index.md
   items:
-  - name: "What do you get with Azure Pipelines ?"
-    href: what-is-pipelines.md
-  - name: Sign up and invite some teammates 
-    href: ../../user-guide/sign-up-invite-teammates.md
-  - name: Set up continuous integration & delivery
+  - name: Get started guide
+    href: pipelines-get-started.md
+  - name: Why Use Pipelines?
+    href: why-use-pipelines.md
+  - name: Create your first build and release pipelines
     href: ../get-started-designer.md
-- name: Resources
-  items:
-  - name: Project Management
-    href: ../../organizations/projects/index.md
+  - name: Key Concepts
+    href: key-pipelines-concepts.md
