@@ -71,15 +71,15 @@ using Azure DevOps.
 1. When your test is done, look at the results to see how 
    well your app performed. For example, you can see an overview
    of your app's performance in the **Summary** page.
-   This tab shows all of the main metrics such as average response
+   This page shows all of the main metrics such as average response
    time, user load, requests per second, failed requests, any errors
    that might have occurred, and test usage.
 
-   ![Load test Summary tab results](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-summary-tab.png)
+   ![Load test Summary page results](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-summary-tab.png)
  
    The lower section of the **Summary** page shows the settings used
    for the test, and details of the five slowest requests during the test.
-   If there are any transaction tests, the tab will also show the five slowest of these.
+   If there are any transaction tests, the page will also show the five slowest of these.
    Use the ![down arrow](_img/_shared/SimpleLoadTestVSO-sort-column.png)
    icon above a column to sort the list based on the contents of that column.
 
@@ -89,23 +89,23 @@ using Azure DevOps.
    request. Hover your mouse pointer over a chart to 
    see more details. 
 
-   ![Load test Charts tab results](_img/_shared/LoadTestVSO-charts.png)
+   ![Load test Charts page results](_img/_shared/LoadTestVSO-charts.png)
 
 1. Open the **Diagnostics** page to see detailed information such as a list
    of errors and status messages.
 
-   ![Load test Diagnostics tab results](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-diagnostics-tab.png)
+   ![Load test Diagnostics page results](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-diagnostics-tab.png)
 
    You can also use the ![arrow](_img/_shared/SimpleLoadTestVSO-summary-errors-icon.png)
    icon in the **Errors** section of the **Summary** page to go directly to the 
    **Diagnostics** page.
 
-   ![Opening the Diagnostics page from the Summary tab](_img/_shared/SimpleLoadTestVSO-summary-errors-link.png)
+   ![Opening the Diagnostics page from the Summary page](_img/_shared/SimpleLoadTestVSO-summary-errors-link.png)
 
 1. Open the **Logs** page to see a list of test runs. Choose the link in
    the **Attachment** column to download the detailed log as a text file.
 
-   ![Load test Logs tab results](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-logs-tab.png)
+   ![Load test Logs page results](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-logs-tab.png)
 
 1. To run the same test again, choose **Rerun**.
 

@@ -43,7 +43,7 @@ Filter the plans by name, team, state, or iteration.
 
 The **All** page shows a list of all test plans.
 Filter test plans, and edit and delete plans using the shortcut menu, in the same way as in the **Mine** page.
-Use this tab to add any test plan to your favorites list. 
+Use this page to add any test plan to your favorites list. 
 
 ![The All list of test plans](_img/4.png)
 

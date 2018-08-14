@@ -597,7 +597,7 @@ to resolve the issue.
 Status messages give you details about the load test run itself, 
 such as when a connection to the results database is lost. 
 Test errors relate to the test. View both these messages from the 
-Details tab on the progress graphs.
+Details page on the progress graphs.
 
 ![View status and error messages](_img/LoadTestInProgress.png)
 
