@@ -1,5 +1,6 @@
 ---
-title: Rollup estimated and actual work using Project | VSTS & TFS
+title: Rollup estimated and actual work using Project
+titleSuffix: Azure Boards and TFS 
 description: Provides summed values of select fields for all child work items of a parent.
 ms.prod: devops
 ms.technology: devops-agile
@@ -9,8 +10,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.date: 02/22/2017  
 ---
+
 # Rollup estimated and actual work using Project
-[!INCLUDE [temp](../../_shared/dev15-version-header.md)]
+
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 Because Microsoft Project has a scheduling engine, it automatically will generate a rollup of summary tasks. Rollup provides summed values of select fields for all child work items of a parent.  
   

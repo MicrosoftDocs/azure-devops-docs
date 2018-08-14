@@ -1,6 +1,6 @@
 ---
 title: Changes made to process templates
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure Boards and TFS  
 description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing projects after a TFS upgrade  
 ms.technology: devops-agile
 ms.prod: devops
@@ -13,12 +13,12 @@ ms.date: 09/29/2017
 
 # Changes made to process templates  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE]    
->This topic describes changes made to the core system processes&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both VSTS and TFS. 
+>This topic describes changes made to the core system processes&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both Azure Boards and TFS. 
 >
->Projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). Whereas, updates to projects defined on an on-premises TFS may require running the Configure Feature Wizard after updating to a later version of TFS.       
+> Projects hosted on Azure Boards [update automatically with each service upgrade](/vsts/release-notes/index). Whereas, updates to projects defined on an on-premises TFS may require running the Configure Feature Wizard after updating to a later version of TFS.       
 
 To support the addition of new features, changes are introduced periodically to the core system processes or process template. A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;secifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
 

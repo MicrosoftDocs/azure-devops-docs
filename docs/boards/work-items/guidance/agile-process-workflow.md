@@ -1,7 +1,7 @@
 ---
 title: Agile process work item types & workflow
-titleSuffix: VSTS & TFS
-description: How to guide for using the Agile process to track work using its work item types working in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: How to guide for using the Agile process to track work using its work item types working in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: d16d04fd-c073-45c0-b1b9-3724f0a7519b  
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Agile process work item types and workflow  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
 

@@ -3,7 +3,7 @@ ms.topic: include
 ---
 
 
-Before you start tracking work, you must have a project. To create one hosted in the cloud, see [Sign up for VSTS](/../user-guide/sign-up-invite-teammates.md). To create one hosted on an on-premises TFS, see [Create a project](/vsts/organizations/projects/create-project.md).   
+Before you start tracking work, you must have a project. To create one, see [Create a project](/vsts/organizations/projects/create-project.md).   
 
 If you have a project, start tracking work:  
 
@@ -15,4 +15,4 @@ If you have a project, start tracking work:
 
 For more information on Agile tools:
 
-- [Team assets](/vsts/settings/about-teams-and-settings)  
+- [Team assets](/vsts/organizations/settings/about-teams-and-settings)  

@@ -1,7 +1,7 @@
 ---
 title: Query fields, operators, and macros/variables 
-titleSuffix: VSTS & TFS
-description: Field data types, operators, and macros/variables used by the Query Editor in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Field data types, operators, and macros/variables used by the Query Editor in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
@@ -93,7 +93,7 @@ The value you specify for a field must conform to the data type for that field. 
 <tr>
 	<td><p><strong>Boolean</strong> </p></td>
 	<td><p>Specifies a field that takes on a True/False value. </p>
-<blockquote style="font-size: 13px">**Feature availability:** The Boolean data type field is only supported for VSTS and TFS 2017 and later versions.    
+<blockquote style="font-size: 13px">The Boolean data type field is only supported for Azure Boards and TFS 2017 and later versions.    
 </blockquote>
 </td></tr>
 
@@ -222,7 +222,7 @@ You can use query operators in the following table to specify how each value in 
 	<td><p>Does not match any value in a delimited set. For example, you can exclude work items whose States are not Resolved, Completed, or Closed from query results if you specify those values for the State field.</p>
 <blockquote><strong>Important:</strong> Separate values with the list separator that corresponds to the regional settings that are defined for your client computer. For example, you might use a comma(,).
 </blockquote>
-<blockquote><strong>Feature availability:</strong>  The <strong>Not In</strong> operator is available from VSTS. and TFS 2018.2 and later versions.</blockquote>
+<blockquote>The <strong>Not In</strong> operator is available from Azure Boards and TFS 2018.2 and later versions.</blockquote>
 </td>
 	<td><p>Number, <strong>String</strong>, <strong>DateTime</strong>, <strong>TreePath</strong></p></td></tr>
 <tr>
@@ -340,13 +340,13 @@ You can use the macros described in the following table to filter your queries b
 </table>
  
 ####Notes:
-0. The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. 
-0. The **@CurrentIteration +/- n** macro is supported for VSTS and only when run from the web portal. 
-0. The **@Follow** macro is supported for VSTS and TFS 2017 and later versions.
-0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for VSTS and TFS 2018.2 and later versions.
-0. The **@Project** macro is supported for VSTS and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
-0. The **@RecentProjectActivity** macro is supported for VSTS only at this time.
-0. The **@TeamAreas** macro is supported for VSTS only at this time.
+0. The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. 
+0. The **@CurrentIteration +/- n** macro is supported for Azure Boards and only when run from the web portal. 
+0. The **@Follow** macro is supported for Azure Boards and TFS 2017 and later versions.
+0. The **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity** macros are supported for Azure Boards and TFS 2018.2 and later versions.
+0. The **@Project** macro is supported for Azure Boards and TFS 2015.1 and later versions.  The system automatically defaults to filtering based on the current project. To learn more, see [Query across projects](using-queries.md#across-projects). 
+0. The **@RecentProjectActivity** macro is supported for Azure Boards only at this time.
+0. The **@TeamAreas** macro is supported for Azure Boards only at this time.
  
 
 <a id="full-text" /> 

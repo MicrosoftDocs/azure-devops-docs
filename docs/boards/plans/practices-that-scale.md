@@ -1,7 +1,7 @@
 ---
 title: Practices that scale
-titleSuffix: VSTS & TFS
-description: Scaling Agile recommended practices for working in Visual Studio Team Services & Team Foundation Server    
+titleSuffix: Azure Boards and TFS
+description: Scaling Agile recommended practices for working in Azure Boards & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 46F7A310-B6BD-46FA-88E2-91521BEE3BC4  

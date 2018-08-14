@@ -1,7 +1,7 @@
 ---
 title: Workflow states and state categories
-titleSuffix: VSTS & TFS   
-description: Understand how workflow states map to state categories in Visual Studio Team Services and Team Foundation Server   
+titleSuffix: Azure Boards and TFS   
+description: Understand how workflow states map to state categories in Azure Boards and Team Foundation Server   
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
@@ -113,7 +113,7 @@ In the following circumstances the system won't automatically update the work it
 - The work item, whose WIT is managed with the Inheritance process model, is already in a State that belongs to the Resolved category. In this instance the system won't update the State. For example, if a bug derived from the Agile process is in a Resolved state, the system won't transition it to Closed.   
 - The work item is already in a State that belongs to the Completed category. No further transition is required. 
 - The WIT associated with the work item contains one or more workflow field rules that prevent the work item being saved to a next state. For example, a rule requires that another field must be defined as part of closing the work item.  
-- For TFS and VSTS Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](../../reference/xml/change-workflow-wit.md#Actions).
+- For TFS and Azure Boards Hosted process model, you must modify the workflow to specify actions (**ACTION** element) to take place when transitioning the workflow. See [Change the workflow for a work item type, Specify Actions](../../reference/xml/change-workflow-wit.md#Actions).
 
 To learn more about process models, see [Customize your work tracking experience](../../reference/customize-work.md).  
 

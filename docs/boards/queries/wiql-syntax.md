@@ -1,7 +1,7 @@
 ---
 title: WIQL reference syntax  
-titleSuffix: VSTS & TFS 
-description: Reference syntax for the Work Item Query Language  to support queries in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS 
+description: Reference syntax for the Work Item Query Language  to support queries in Azure Boards & Team Foundation Server 
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: reference
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Syntax for the Work Item Query Language (WIQL) 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]   
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 
 You can use the WIQL syntax to [define a query as a hyperlink](../../boards/queries/define-query-hyperlink.md)  or when using the [Work Item Query Language (REST API)](https://docs.microsoft.com/rest/api/vsts/wit/wiql).  
 
@@ -26,8 +26,6 @@ The WIQL syntax is not case sensitive.
 
 
 ## Example queries 
-
-
 
 The following typical WIQL query example uses reference names for the fields. The query selects work items (no work item type specified) with a **Priority=1**. The query returns the **ID** and **Title** of the return set as columns. The results are sorted by **ID** in ascending order.
 
@@ -451,5 +449,5 @@ https://msdn.microsoft.com/library/bb130306.aspx
 
 ### Limits on WIQL length  
 
-For queries made against VSTS, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
+For queries made against Azure Boards, the WIQL length must not exceed 32K characters. The system won't allow you to create or run queries that exceed that length.   
  

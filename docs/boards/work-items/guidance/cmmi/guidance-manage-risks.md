@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Manage risks
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Understand how Risk implies the actual outcomes may vary, sometimes significantly, from desired outcomes - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Manage risks
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../../_shared/version-vsts-tfs-all-versions.md)]
 
 Risk implies that actual outcomes may vary, sometimes significantly, from desired outcomes. Both the probability of this variance and the degree of variance between actual and desired outcomes is encapsulated in the term "risk." When you manage risk, you strategically minimize the variance between the outcome that you want and the actual outcome.  
   

@@ -1,7 +1,7 @@
 ---
 title: Stack rank or backlog priority
-titleSuffix: VSTS & TFS
-description: Understand how the stack rank or backlog priority fields determines the backlog position Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Understand how the stack rank or backlog priority fields determines the backlog position Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4

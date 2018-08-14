@@ -24,7 +24,7 @@ As a member of an Azure Boards project, you can use the majority of work trackin
 
 ## Resources defined for the team project
 
-You set project-level information permissions from the admin page for a team project. You set permissions for area and iteration paths under the admin context **Work** hub for their respective objects. These resources are defined for a team project which all valid users of the team project can view. 
+You set project-level information permissions from **Project Settings** for a project. You set permissions for area and iteration paths from **Project Settings>Work>Project configuration**. 
 
 <table>
 <tr valign="bottom">

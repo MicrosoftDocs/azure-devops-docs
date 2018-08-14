@@ -1,7 +1,7 @@
 ---
 title: Index to topics for work item tracking
-titleSuffix: VSTS & TFS 
-description: Index to topics for planning and tracking work in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards and TFS 
+description: Index to topics for planning and tracking work in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  

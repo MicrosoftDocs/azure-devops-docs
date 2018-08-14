@@ -1,7 +1,7 @@
 ---
 title: Visibility across teams 
-titleSuffix: VSTS & TFS
-description: Determine which methods best support your ability to monitor status and progress across several teams in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS
+description: Determine which methods best support your ability to monitor status and progress across several teams in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C9F129A7-97F9-4C1A-91E2-F59D6EFABE2E
@@ -14,7 +14,7 @@ ms.date: 01/24/2018
 
 # Visibility across teams
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Agile tools provide each team a wealth of ways to gain visibility into their work&mdash;to manage priorities and status and to monitor progress and trends. However, how do you gain visibility across several teams? What tools should you use?
 
@@ -32,7 +32,7 @@ For an overview of all team tools, see [Configure team settings](../../organizat
 With a Delivery Plan, you gain a tailor-made view across several teams and their development backlogs&mdash;stories, features, or epics. You can use these views to drive alignment across teams by overlaying several backlogs onto your delivery schedule.
 
 > [!NOTE]
-> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for VSTS and TFS 2017.2 and later versions. All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.
+> **Feature availability**: Delivery Plans, a [Visual Studio Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), is available for Azure Boards and TFS 2017.2 and later versions. All users with [basic access](../../organizations/security/change-access-levels.md) can view, add, and configure Delivery Plans. Stakeholders, however, don't have access to Delivery Plans.
 
 When you configure a Delivery Plan, you select the teams and backlog levels of interest. You can then interact with the plan to update it and drill into more details. To learn more about Delivery Plans, see [Review team plans](review-team-plans.md).
 
@@ -133,7 +133,7 @@ For tips on creating queries based on counts or numeric fields, see [Query by nu
 ::: moniker range="vsts"
 ## Use Analytics to gain visibility across teams   
 
-VSTS organizations can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
+You can add [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md) to a dashboard that show progress for a team. From one dashboard, you can add widgets for any team within the project. 
 
 ::: moniker-end
 
@@ -180,7 +180,7 @@ With the multi-team Kanban board view, you can:
 
 Many project managers are interested in getting numeric rollup of estimates&mdash;Story Points or Effort&mdash; or the Remaining Work field. Rollup provides summed values of select fields for all child work items of a parent.
 
-Natively, VSTS and TFS provide rollup of Remaining Work for tasks on the task board.
+Natively, Azure Boards and TFS provide rollup of Remaining Work for tasks on the task board.
 
 ![Rollup of remaining work](_img/visibility-rollup-remaining-work.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Adhoc vs managed queries
-titleSuffix: VSTS & TFS
-description: Use adhoc or built-in search/managed queries to find work items in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Use adhoc or built-in search/managed queries to find work items in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 5A96317D-5A10-44CB-B2F9-F166BBAE916B
@@ -13,11 +13,11 @@ ms.date: 06/02/2017
 
 # Adhoc vs managed work item queries
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 
 
-You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the **Work>Queries** page.  
+You have two ways to perform work item searches: adhoc and managed. You perform adhoc queries using the work item search box (shown below), whereas you perform managed queries using the built-in search function available from the **Boards>Queries** page.  
 
 ![Search Work Items Text Box](_img/using-queries-search-box-ts.png)
 
@@ -37,7 +37,7 @@ You have two ways to perform work item searches: adhoc and managed. You perform 
 
 
 ## Work item search box context 
-Note that with  Work item search, the work item search box is repurposed to support adhoc queries. In order to initiate a managed search, you need to open the **Work>Queries** page. 
+Note that with  Work item search, the work item search box is repurposed to support adhoc queries. In order to initiate a managed search, you need to open the **Boards>Queries** page. 
 
 
 ## Resources 

@@ -1,7 +1,7 @@
 ---
 title: Assign work to a sprint
-titleSuffix: VSTS & TFS
-description: Assign work to a sprint or iteration working with Scrum methods in Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Assign work to a sprint or iteration working with Scrum methods in Azure Boards or Team Foundation Server 
 ms.custom: Uses the New Navigation
 ms.technology: devops-agile
 ms.prod: devops
@@ -85,7 +85,7 @@ some or all of the items based on these estimates.
 
 ::: moniker range="vsts"
 
-0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Work>Backlogs**, and then (3) select the correct team from the team selector menu. 
+0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	![Open Work, Backlogs, for a team](_img/assign-items-sprint/open-work-backlogs-agile.png)
 
@@ -122,7 +122,7 @@ some or all of the items based on these estimates.
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 	::: moniker range=">= tfs-2017"
@@ -156,13 +156,13 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 0. The next step is to open the Planning pane. Choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Planning**. While you're at it, make sure **Parents** and **Forecasting** are Off. You can choose to set **In Progress items** to On or Off. 
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
+	> ![New Navigation, Boards>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
 
 	The set of sprints selected for your team appears. If you don't see any sprints listed, you can add sprints or select existing sprints for your team's use. To learn how, see [Define sprints](define-sprints.md).  <!--- Check with Marina about what permissions are needed to add a sprint or select a sprint --> 
 
 0. You can drag and drop items from the **Backlog** onto a sprint. 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
+	> ![New Navigation, Boards>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
 
 0. Select one or more items from the backlog and drag them to the sprint you are planning, usually the one marked **Current**. This action will update the Iteration Path of the backlog items and any of its child tasks to the sprint you selected. 
 
@@ -265,6 +265,6 @@ If you need to add or rename the sprints your team uses, you must first [define 
 0. From your web browser, open your product backlog from **Work**, **Backlogs** page.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page, vertical nav](_img/assign-items-sprint/open-backlogs-vert.png) 
+	> ![Open the Boards>Backlogs page, vertical nav](_img/assign-items-sprint/open-backlogs-vert.png) 
 	
 --> 

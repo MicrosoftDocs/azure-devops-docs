@@ -1,7 +1,7 @@
 ---
 title: About Agile tools
-titleSuffix: VSTS & TFS
-description: Use Agile tools to plan, track, & collaborate with others when developing software apps in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards and TFS
+description: Use Agile tools to plan, track, & collaborate with others when developing software apps in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -15,7 +15,7 @@ ms.date: 06/19/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
-Agile, a term coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org), encompasses approaches to software development that emphasize incremental delivery, team collaboration, continual planning, and continual learning. The set of Agile tools that VSTS and TFS provides are available are designed to support teams working with Agile methodologies, such as Kanban and Scrum. To learn more, see [What is Agile?](/azure/devops/agile/what-is-agile).
+Agile, a term coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org), encompasses approaches to software development that emphasize incremental delivery, team collaboration, continual planning, and continual learning. The set of Agile tools that Azure Boards and TFS provides are available are designed to support teams working with Agile methodologies, such as Kanban and Scrum. To learn more, see [What is Agile?](/azure/devops/agile/what-is-agile).
 
 All tools support viewing and defining work items. Each work item represents an object stored in the work item data store. Each work item is assigned a unique identifier, an ID, which is unique within an account or project collection. 
 
@@ -89,7 +89,7 @@ Open **Work Items** to access several personalized pivots and filter functions t
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Work Items, new navigation](_img/about-agile/view-work-items-page.png)
+> ![Open Boards>Work Items, new navigation](_img/about-agile/view-work-items-page.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -100,14 +100,14 @@ Open **Work Items** to access several personalized pivots and filter functions t
 
 ::: moniker range="vsts"   
 > [!div class="mx-imgBorder"]
-> ![Work>Work Items ](_img/view-add/view-work-items-hub-s136.png)
+> ![Boards>Work Items ](_img/view-add/view-work-items-hub-s136.png)
 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
 
 > [!div class="mx-imgBorder"]
-> ![Work>Work Items ](_img/view-add/work-items-hub.png)
+> ![Boards>Work Items ](_img/view-add/work-items-hub.png)
 
 ::: moniker-end   
 
@@ -152,7 +152,7 @@ Backlogs present work items as lists. A product backlog represents your project 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-![New Navigation, Work>Backlogs](_img/about-agile/view-backlogs.png)    
+![New Navigation, Boards>Backlogs](_img/about-agile/view-backlogs.png)    
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -162,10 +162,10 @@ Backlogs present work items as lists. A product backlog represents your project 
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
-!["Web portal, choose Work>Backlogs](_img/view-add/view-stories-backlogs-standard.png)
+!["Web portal, choose Boards>Backlogs](_img/view-add/view-stories-backlogs-standard.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Work>backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
+![Boards>backlogs, TFS 2015, 2013 web portal](../backlogs/_img/backlogs-boards-plans/open-backlog-tfs-2015.png)
 ::: moniker-end
 
 ---
@@ -177,7 +177,7 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-![New Navigation, Work>Sprints>Backlog](_img/view-add/view-sprint-backlogs.png)    
+![New Navigation, Boards>Sprints>Backlog](_img/view-add/view-sprint-backlogs.png)    
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -187,10 +187,10 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 # [Previous navigation](#tab/previous-nav)
 
 ::: moniker range=">= tfs-2017"
-!["Web portal, choose Work>Backlogs, Sprint](_img/view-add/view-sprint-backlog.png)
+!["Web portal, choose Boards>Backlogs, Sprint](_img/view-add/view-sprint-backlog.png)
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2015"
-![Work>backlogs, TFS 2015, 2013 web portal](../sprints/_img/IC795962.png)
+![Boards>backlogs, TFS 2015, 2013 web portal](../sprints/_img/IC795962.png)
 ::: moniker-end
 
 ---
@@ -203,7 +203,7 @@ You can also filter the cards on your taskboard to show only those cards mapped 
 
 Queries are filtered lists of work items based on criteria that you define using a query editor. You use queries to find groups of work items with something in common,to triage a set of items to prioritize or assign them, or to create status and trend charts that you can then add to dashboards. To get started, see [Create a managed query](../queries/using-queries.md). 
 
-![Web portal, Work>Queries, Open Shared queries, Active Bugs](../queries/_img/using-queries-active-bugs-ts.png)
+![Web portal, Boards>Queries, Open Shared queries, Active Bugs](../queries/_img/using-queries-active-bugs-ts.png)
 
 
 ## Delivery plans

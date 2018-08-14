@@ -1,7 +1,7 @@
 ---
 title: Move, change, or delete work items
-titleSuffix: VSTS & TFS  
-description: Guide to removing or deleting working items and test artifacts in Visual Studio Team Services and Team Foundation Server
+titleSuffix: Azure Boards and TFS  
+description: Guide to removing or deleting working items and test artifacts in Azure Boards and Team Foundation Server
 keywords: backlogs
 ms.global_help.title: Move, change, or delete work items
 ms.technology: devops-agile
@@ -18,7 +18,7 @@ ms.date: 07/12/2018
 ::: moniker range="vsts"
 # Move, change, or delete work items 
 
-**VSTS**
+[!INCLUDE [temp](../_shared/azure-boards.md)]
 
 Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or task board that aren't relevant anymore.  
 
@@ -27,7 +27,7 @@ Often times you find that someone created a work item of the wrong work item typ
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 # Delete or restore work items 
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
 
 You can remove work items added to your backlog or task board that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform  operations on individual work items or bulk modify several work items. 
 
@@ -181,11 +181,11 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 	> [!IMPORTANT]   
 	>From the Query results page, the **Change type&hellip;** option becomes unavailable if you have checked the Query Editor's **Query across projects** checkbox. 
 
-	![VSTS, backlog, multi-select, open menu, choose Change type option](_img/move-change-delete/change-work-item-type-from-backlog.png)  
+	![backlog, multi-select, open menu, choose Change type option](_img/move-change-delete/change-work-item-type-from-backlog.png)  
 
 2. Select the type and optionally enter a comment.  
 
-	![VSTS, Change work item type dialog](_img/move-change-delete/change-work-item-type-dialog.png)    
+	![Change work item type dialog](_img/move-change-delete/change-work-item-type-dialog.png)    
 
 	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion). 
 
@@ -205,10 +205,6 @@ You can change a single work item or several [multi-selected work items](bulk-mo
 
 When you discover that a work item belongs to a different project within your organization or collection, you can move it where it belongs. You can move a single work item or several [multi-selected work items](bulk-modify-work-items.md). 
 
-<!---
-Feature availability: The **Move to project&hellip;** menu option is supported only from VSTS.
--->  
-
 You can only move work items from one project to another project within the organization or collection. You can't move work items associated with test management. To move work items to another project, you must be a member of the Project Administrators group or be [granted explicit permissions to move work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
 
 1. Open the work item and choose the ![Move work item icon](../_img/icons/change-team-project-icon.png) **Move...** option from the work item form's ![Action icon](../_img/icons/actions-icon.png) Actions menu.    
@@ -221,7 +217,7 @@ You can only move work items from one project to another project within the orga
 
 2. Select the destination project and optionally enter a comment.  
 
-	![VSTS, Move work item type dialog](_img/move-change-delete/move-work-item-dialog.png)
+	![Move work item type dialog](_img/move-change-delete/move-work-item-dialog.png)
   
 	Comments are automatically added to the [Discussion control](../work-items/work-item-form-controls.md#discussion) and an entry is made to the History control. Also, the system automatically resets the State and Reason fields to the default initial values for the work item type that you move.  
 
@@ -234,7 +230,7 @@ You can only move work items from one project to another project within the orga
 By changing the State of a work item to Removed, you effectively remove it from a backlog or board view (product, portfolio, and sprint backlogs, Kanban board, and task boards).
 
 > [!div class="mx-imgBorder"]  
-> ![VSTS, Change State to Removed](_img/move-change-delete/remove-state.png)  
+> ![Change State to Removed](_img/move-change-delete/remove-state.png)  
 
 
 To cause removed items to not show up in queries, you must add a clause that indicates which states you want the query to filter for. 
@@ -332,7 +328,7 @@ Restoring or deleting work items from the web portal isn't a supported feature f
 # [Command Line](#tab/command-line)
 
 ::: moniker range=">tfs-2018"
-Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for VSTS.
+Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -385,9 +381,9 @@ To delete test artifacts, the following restrictions and operations apply:
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 > [!IMPORTANT]   
-><b>Feature availability: </b> The permanently delete feature of test artifacts is available from the Test and Work for TFS 2017.1 and later versions. 
+> The permanently delete feature of test artifacts is available from the Test and Work for TFS 2017.1 and later versions. 
 >
->We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
+> We only support permanent deletion of test artifacts such as test plans, test suites, test cases, shared steps and shared parameters. Deleted test artifacts won't appear in the recycle bin and cannot be restored. Deletion of test artifacts not only deletes the selected test artifact but also all its associated child items such as child test suites, test points across all configurations, testers (the underlying test case work item doesn't get deleted), test results history, and other associated history.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"

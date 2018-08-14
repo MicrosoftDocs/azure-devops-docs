@@ -1,7 +1,7 @@
 ---
 title: Queries index 
-titleSuffix: VSTS & TFS
-description: Find and list work items, create flat-based query charts in Visual Studio Team Services & Team Foundation Server    
+titleSuffix: Azure Boards and TFS
+description: Find and list work items, create flat-based query charts in Azure Boards & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

@@ -1,7 +1,7 @@
 ---
 title: Use the search box for quick queries
-titleSuffix: VSTS & TFS
-description: Use the search box to create a query and filter for assigned to, created by, state, or work item type in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS
+description: Use the search box to create a query and filter for assigned to, created by, state, or work item type in Azure Boards & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: D5A98F10-AAD2-46DD-91DE-41497CF5ECEF 
@@ -29,7 +29,7 @@ Search box queries automatically scope to the items defined to the project you'r
 ::: moniker-end
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 > [!NOTE]    
-><b>Feature availability: </b>You can add the Code Search extension or configure Work Item Search to [TFS 2017 or later versions](../../project/search/administration.md).   
+> You can add the Code Search extension to or configure **Work Item Search** for [TFS 2017 or later versions](../../project/search/administration.md).   
 
 If you've added the [Code Search extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search), you'll notice that the search box moves to the top row, and you can quickly switch between work item and code searches. 
 ::: moniker-end

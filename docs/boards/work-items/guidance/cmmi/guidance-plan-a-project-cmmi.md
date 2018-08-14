@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Plan a project  
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Understand the desired outcome of planning a project  
 ms.prod: devops
 ms.technology: devops-agile
@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Plan a project (CMMI)
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../../_shared/version-vsts-tfs-all-versions.md)]
 
 The desired outcome of planning a project is a plan that includes a scope, a schedule, a budget, a risk management plan, and a commitment and approval from all stakeholders. With an agreed-upon project plan, you want to progress with analysis, design, development, testing, and eventually delivery.  
   
