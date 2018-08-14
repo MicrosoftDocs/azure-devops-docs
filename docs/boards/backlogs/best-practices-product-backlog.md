@@ -1,7 +1,7 @@
 ---
 title: Backlog best practices 
-titleSuffix: VSTS & TFS
-description: Best practices to manage your product backlog in Visual Studio Team Services (VSTS) and Team Foundation 
+titleSuffix: Azure Boards and TFS
+description: Best practices to manage your product backlog in Azure Boards and Team Foundation 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: CCAE5254-A5F9-41CC-967E-7104BD36B932

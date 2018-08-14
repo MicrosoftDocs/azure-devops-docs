@@ -1,7 +1,7 @@
 ---
 title: Query by area or iteration path
-titleSuffix: VSTS & TFS
-description: Query for work items based on their area or iteration path in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards and TFS
+description: Query for work items based on their area or iteration path in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 65066197-F5BE-45F3-898E-1BA3C7BFDCA3
@@ -45,7 +45,7 @@ In addition to these operators, you can use the following macros when you select
 > | **@TeamAreas**  | Filter items based on area path(s) assigned to a specific team.  |
 
 > [!NOTE]   
-> **Feature availability**: The **@CurrentIteration** macro is supported for VSTS and TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for VSTS. 
+> **Feature availability**: The **@CurrentIteration** macro is supported for Azure Boards and TFS 2015 and later versions. The **@CurrentIteration +/- n** and **@TeamAreas** macros are supported for Azure Boards. 
 
 ## Query for items assigned under several areas 
 

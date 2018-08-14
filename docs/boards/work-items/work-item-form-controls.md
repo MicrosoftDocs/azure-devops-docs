@@ -1,7 +1,7 @@
 ---
 title: Use work item form controls to track your work
-titleSuffix: VSTS & TFS 
-description: Use work item form controls to update status, link work items, and more in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS 
+description: Use work item form controls to update status, link work items, and more in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33  
@@ -13,7 +13,7 @@ ms.date: 02/14/2018
 
 # Use work item form controls
 
-<b>VSTS | TFS 2018 | TFS 2017</b> 
+<b>Azure DevOps Services | TFS 2018 | TFS 2017</b> 
 
 Different types of work items track different data. Each work item form contains some standard fields&mdash;such as title, assigned to, and area and iteration path&mdash;as well as fields specific to the type. You can link work items to one another, as well as to changesets and source code files. 
 
@@ -146,14 +146,17 @@ Click the ![Discussions icon](../_img/icons/icon-discussions-wi.png) discussion 
 
 Within the discussion section, you can use the [**@mention** control](../../notifications/at-mentions.md) to notify another team member about the discussion. Simply type **@** and their name. 
 
+::: moniker range="vsts"  
 > [!NOTE]   
-> **Feature availability**: From VSTS, you can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
+> You can also use group mentions. Simply start type the name of a team or a security group, click the search icon and then select from the options listed.    
+::: moniker-end  
 
 To reference a work item, use the [**#ID** control](../../notifications/add-links-to-work-items.md). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
+::: moniker range=">= tfs-2013 <= tfs-2018"  
 > [!IMPORTANT]  
->For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
-
+> For on-premises TFS, [you must configure an SMTP sever](/tfs/server/admin/setup-customize-alerts) in order for team members to receive notifications. 
+::: moniker-end  
 
 <a id="copy-url">  </a>
 ## Copy the URL
@@ -162,12 +165,11 @@ From the web portal, simply copy the URL from the web browser address or hover o
 <img src="../backlogs/_img/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #C3C3C3;" />  
 
 
-
 <a id="start-storyboarding">  </a>
 ## Start storyboarding  
 
 > [!NOTE]    
-><b>Feature availability: </b>The Start storyboarding menu option is only available from the new web form. However, from TFS, you can click the Start Storyboarding link from the Storyboard tabs from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
+> </b>The **Start storyboarding** menu option is only available from the new web form. However, from TFS, you can choose the **Start Storyboarding** link from the **Storyboard** tab from a backlog item, or simply open PowerPoint. See [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) for requirements and usage.    
 
 You can storyboard your ideas using PowerPoint to bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint Storyboarding provides. From any work item, you can open PowerPoint by choosing the Start storyboarding menu option.    
 

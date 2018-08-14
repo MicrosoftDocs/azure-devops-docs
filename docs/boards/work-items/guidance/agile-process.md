@@ -1,7 +1,7 @@
 ---
 title: Agile process template artifacts
-titleSuffix: VSTS & TFS  
-description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS  
+description: Agile process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 28e9cb42-f049-45eb-a2d8-f7a3b93471b8
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Agile process 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 The Agile process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as features, user stories, and tasks. These artifacts are created when you create a project using the Agile  process. They are based on Agile principles and values.  
  
@@ -109,7 +109,7 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 ### Agile process versions  
 
-As updates are made to the Agile process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
+As updates are made to the Agile process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
 
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | Agile process name | Major version |

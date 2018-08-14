@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-**VSTS (Inheritance)**
+**Azure DevOps Services (Inheritance)**
 
 <!---
 > [!IMPORTANT]  

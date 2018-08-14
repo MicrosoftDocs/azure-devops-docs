@@ -1,7 +1,7 @@
 ---
 title: Choose a process
-titleSuffix: VSTS & TFS
-description: Choose a process or process template, work with project artifacts in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Choose a process or process template, work with project artifacts in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
@@ -13,11 +13,11 @@ ms.date: 03/02/2017
 
 # Choose a process 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 Anytime you create a project, you must choose a process or process template based on the process model you use. 
-- A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for VSTS. This model supports customization of projects through a WYSIWYG user interface. 
-- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through VSTS or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files. 
+- A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 
+- A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through Azure Boards or an on-premises Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files. 
 
 To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
 
@@ -36,7 +36,7 @@ provides the most support for formal processes and change management.
 Choose the process that provides the best fit for your team.  
 
 > [!NOTE]    
->**Feature availability**: Epics are supported on VSTS and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
+>**Feature availability**: Epics are supported on Azure Boards and TFS 2015 and later versions. Each team can choose the backlog levels that are active as described in [Select backlog navigation levels for your team](../../../organizations/settings/select-backlog-navigation-levels.md).  
 
 <table valign="top" width="100%">
 <tbody>

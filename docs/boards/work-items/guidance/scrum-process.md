@@ -1,7 +1,7 @@
 ---
 title: Scrum process template artifacts
-titleSuffix: VSTS & TFS
-description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Scrum process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: f4e77db3-e54c-472a-ba60-92ceb8331882
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Scrum process   
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 The Scrum process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as product backlog items, tasks, bugs, and more. These artifacts are created when you create a project using the Scrum process. They are based on [Scrum principles and values](https://www.scrum.org/). 
 
@@ -113,7 +113,7 @@ To access this dashboard, your project must have a [project portal configured an
 
 ### Scrum process versions  
 
-As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
+As updates are made to the Scrum process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.      
 
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | Scrum process name | Major version |

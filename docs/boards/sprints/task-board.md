@@ -1,7 +1,7 @@
 ---
 title: Update and monitor your scrum taskboard 
-titleSuffix: VSTS & TFS  
-description: Implement scrum using the sprint task board in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure Boards and TFS  
+description: Implement scrum using the sprint task board in Azure Boards & Team Foundation Server
 ms.technology: devops-agile
 ms.prod: devops 
 ms.assetid: 278BF8D9-E34F-4D14-BACC-D3BA704C2C47  
@@ -14,7 +14,7 @@ ms.date: 06/21/2018
 
 # 6. Update and monitor your Taskboard  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 Once you have your [sprint plan](assign-work-sprint.md) in place, you'll execute that plan for the duration of the sprint. In your daily Scrum meetings, your team can view progress made to backlog items and tasks from the sprint task board.  
 
@@ -44,7 +44,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ::: moniker range="vsts"
 
-0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Work>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**. 
+0. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the sprint Taskboard for a team](_img/taskboard/open-taskboard-agile.png) 
@@ -75,7 +75,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 0. From your web browser, open your team's product backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 

@@ -1,6 +1,6 @@
 ---
 title: Set team capacity to support sprint planning
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Set team capacity for a sprint or iteration working with Scrum methods 
 ms.custom: Uses the New Navigation
 ms.technology: devops-agile
@@ -45,7 +45,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ::: moniker range="vsts"
 
-0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Work>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
+0. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Capacity**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work, Sprints, for a team](_img/capacity/open-capacity-agile.png)
@@ -77,7 +77,7 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 0. From your web browser, open your team's product backlog. (1) Select the project/team from the project/teams selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 

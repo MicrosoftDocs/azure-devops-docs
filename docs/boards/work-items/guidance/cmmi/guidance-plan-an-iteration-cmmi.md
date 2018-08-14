@@ -1,6 +1,6 @@
 ---
 title: CMMI process guidance, Plan an iteration  
-titleSuffix: VSTS & TFS
+titleSuffix: Azure Boards and TFS
 description: Understand the planning iterations to decide how long you want your iterations to be, determining how much work your team can get done in that time, and planning what work should be included in each iteration - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Plan an iteration (CMMI)
 
-[!INCLUDE [temp](../../../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../../../_shared/version-vsts-tfs-all-versions.md)]
 
 Developing software in iterations means that you divide your work into incremental stages such that you have software with progressively more working features at the end of each iteration. Ideally, you have something to show the customer after even the first iteration. Iterations let you receive feedback early so that you can make course corrections early.  
   

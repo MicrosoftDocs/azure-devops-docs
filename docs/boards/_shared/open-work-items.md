@@ -12,10 +12,10 @@ You can start viewing and adding work items once you connect to a project.
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-(1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
+(1) Check that you have selected the right project, then (2) choose **Boards>Work Items**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Work Items, new navigation](/vsts/boards/work-items/_img/view-add/open-work-items-agile.png)
+> ![Open Boards>Work Items, new navigation](/vsts/boards/work-items/_img/view-add/open-work-items-agile.png)
 
 ::: moniker-end
 
@@ -28,7 +28,7 @@ The **New Navigation** feature isn't supported on the TFS platform at this time.
 Open a browser window, choose **Work**, and then **Work Items**. 
 
 > [!div class="mx-imgBorder"]
-![Work>Work Items ](/vsts/boards/work-items/_img/view-add/work-items-hub.png)
+![Boards>Work Items ](/vsts/boards/work-items/_img/view-add/work-items-hub.png)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Understand and configure your Kanban board 
-titleSuffix: VSTS & TFS
-description: Use the Kanban board, process, and tools to plan and track work in Visual Studio Team Services or Team Foundation Server
+titleSuffix: Azure Boards and TFS
+description: Use the Kanban board, process, and tools to plan and track work in Azure Boards or Team Foundation Server
 ms.global_help.title: Kanban basics
 ms.global_help.keywords: ms.vss-work-web.boards-hub, 2  
 ms.topic: get-started-article

@@ -1,7 +1,7 @@
 ---
 title: CMMI process template artifacts
-titleSuffix: VSTS & TFS  
-description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS  
+description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
@@ -17,7 +17,7 @@ ms.date: 03/20/2018
  
 <meta name="keywords" content="CMMI tools" />
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 The CMMI process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as requirements, change requests, tasks, bugs and more. These artifacts are created when you create a project using the CMMI process. They are based on the [Capability Maturity Model Integration (CMMI)](https://msdn.microsoft.com/library/ee461556.aspx) process.
 
@@ -115,7 +115,7 @@ To use [SharePoint dashboards](../../../report/sharepoint-dashboards/project-por
 
 ### CMMI process versions  
 
-As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For VSTS, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.    
+As updates are made to the CMMI process template, the version number is updated. The following table provides a mapping of the versioning applied as updates are made to the TFS server. For Azure Boards, the latest version is always used. Starting with TFS 2012, the `version` element was added to the process template to support versioning of the templates. This element specifies a major and minor version. Prior to this change, the version was specified within the process template name.    
 
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | CMMI name | Major version |

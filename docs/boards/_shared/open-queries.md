@@ -7,10 +7,10 @@ ms.topic: include
 
 ::: moniker range="vsts"
 
-From your web browser, (1) check that you have selected the right project, (2) choose **Work>Queries**, and then (3) choose **All**. 
+From your web browser, (1) check that you have selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
  
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Queries, vertical nav](/vsts/boards/queries/_img/view-run-queries/open-queries-vert.png) 
+> ![Open Boards>Queries, vertical nav](/vsts/boards/queries/_img/view-run-queries/open-queries-vert.png) 
 
 If it is your first time opening **Work**, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
 
@@ -29,7 +29,7 @@ If it is your first time opening **Work**, the page opens to **Favorites** which
 From your web browser, (1) select the project, choose (2) **Work**, (3) **Queries**, and then (4) **All**.
 
 > [!div class="mx-imgBorder"]  
-> ![Open Work>Queries, horizontal nav](/vsts/boards/queries/_img/view-run-queries/open-queries-hor.png)  
+> ![Open Boards>Queries, horizontal nav](/vsts/boards/queries/_img/view-run-queries/open-queries-hor.png)  
 
 If it is your first time opening the **Work**, the page opens to **Favorites** which lists all queries you have favorited. Otherwise, you can choose **All** to view all queries you've defined and shared queries defined for the project.  
 
@@ -38,9 +38,9 @@ If it is your first time opening the **Work**, the page opens to **Favorites** w
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
-From your web browser, open **Work>Queries**. 
+From your web browser, open **Boards>Queries**. 
 
-![Web portal, choose Work>Queries](/vsts/boards/queries/_img/view-run-queries/open-hub-page.png) 
+![Web portal, choose Boards>Queries](/vsts/boards/queries/_img/view-run-queries/open-hub-page.png) 
 
 ::: moniker-end
 

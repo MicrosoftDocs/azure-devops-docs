@@ -13,7 +13,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 ::: moniker range="vsts"
 
-0. (1) Check that you have selected the right project, (2) choose **Work>Boards**, and then (3) select the correct team from the team selector menu. 
+0. (1) Check that you have selected the right project, (2) choose **Boards>Boards**, and then (3) select the correct team from the team selector menu. 
 
 	![Open your Kanban board](/vsts/boards/boards/_img/quickstart/open-kanban-board-agile.png)  
 

@@ -1,7 +1,7 @@
 ---
 title: History and auditing 
-titleSuffix: VSTS & TFS
-description: Track changes and use tools to support audit requirements when working in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+titleSuffix: Azure Boards and TFS
+description: Track changes and use tools to support audit requirements when working in Azure Boards and Team Foundation Server (TFS) 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: A5AC271A-8DF0-40AD-9867-1B1E9E5B1FE9

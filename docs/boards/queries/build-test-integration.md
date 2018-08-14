@@ -1,7 +1,7 @@
 ---
 title: Build and test integration queries
-titleSuffix: VSTS & TFS 
-description: Track work by creating queries based on build and test integration fields in Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+titleSuffix: Azure Boards and TFS 
+description: Track work by creating queries based on build and test integration fields in Azure Boards and Team Foundation Server (TFS)
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d

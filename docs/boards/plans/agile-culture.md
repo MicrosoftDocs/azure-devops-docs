@@ -1,7 +1,7 @@
 ---
 title: Agile culture
-titleSuffix: VSTS & TFS 
-description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS 
+description: Create an Agile culture of autonomous teams and an aligned enterprise using Agile tools when working in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 3C43B829-3514-4493-8D5A-896375835FE7  

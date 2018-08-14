@@ -1,7 +1,7 @@
 ---
 title: Add links to several work items 
-titleSuffix: VSTS & TFS
-description: Link several work items to other work items or to a new git branch in Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure Boards and TFS
+description: Link several work items to other work items or to a new git branch in Azure Boards or Team Foundation Server 
 ms.global_help.title: Link work items 
 ms.global_help.keywords: ms.vss-work-web.work-items-hub, 3 
 ms.technology: devops-agile
@@ -158,11 +158,6 @@ Here, we have selected to add a link to the selected work items.
 ::: moniker range=">= tfs-2017"
 
 ## Link several work items to a new git branch 
-
-<!---
-> [!NOTE]  
->**Feature availability**: The **New branch&hellip;** option is available from VSTS and the web portal for TFS 2017 and later versions. 
--->
 
 You can add a new git branch and link them to existing work items at the same time. 
 

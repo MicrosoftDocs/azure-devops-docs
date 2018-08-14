@@ -1,7 +1,7 @@
 ---
 title: Organize your backlog
-titleSuffix: VSTS & TFS
-description:  Organize your backlog by mapping backlog items to features, and features to epics in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure Boards and TFS
+description:  Organize your backlog by mapping backlog items to features, and features to epics in Azure Boards & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: DD78C7B9-A6B5-4596-9ADB-281578E615E2  
@@ -14,7 +14,7 @@ ms.date: 05/10/2017
 
 # Work with multi-team ownership of backlog items  
 
-[!INCLUDE [temp](../_shared/dev15-version-header.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="multi-team">  </a>
 

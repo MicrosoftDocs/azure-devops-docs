@@ -1,7 +1,7 @@
 ---
 title: Schedule sprints to support working in Scrum
-titleSuffix: VSTS & TFS  
-description: Add and set dates for sprints, releases, or iterations to implement Scrum in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure Boards and TFS  
+description: Add and set dates for sprints, releases, or iterations to implement Scrum in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
@@ -33,7 +33,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 
 ::: moniker range="vsts"
 
-0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Work>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
+0. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
 	![Open Work, Sprints, for a team](_img/add-tasks/open-sprints-backlog-agile.png)
 
@@ -45,7 +45,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 0. Choose **Set sprint dates**.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Work>Sprints>set dates](_img/define-sprints/set-sprint-dates-scrum-agile.png)
+	> ![Boards>Sprints>set dates](_img/define-sprints/set-sprint-dates-scrum-agile.png)
 
 2. Choose the calendar icon to select the start date, and then the end date of the sprint. 
 
@@ -55,7 +55,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 3. Choose **Save and close**. You'll see the date listed. 
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Sprints>Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
+	> ![New Navigation, Boards>Sprints>Sprint dates set ](_img/define-sprints/sprint-dates-set-scrum-agile.png)
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ To quickly get started, you can use the default sprints, also referred to as ite
 0. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open the Work>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
+	> ![Open the Boards>Backlogs page](_img/assign-items-sprint/open-work-backlogs-standard.png) 
 
 	To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
@@ -190,19 +190,19 @@ You can quickly assign work items to a sprint through drag-and-drop from the pro
 
 # [New navigation](#tab/new-nav)
 
-1. Open **Work>Backlogs** and then choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
+1. Open **Boards>Backlogs** and then choose the ![](../../_img/icons/view-options-icon.png) view options icon and select **Planning**.
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
+	> ![New Navigation, Boards>Backlogs>Open view options and choose Planning](_img/define-sprints/view-options-planning-menu.png)
 
 2. You can drag and drop items from the **Backlog** onto a sprint. 
 
 	> [!div class="mx-imgBorder"]
-	> ![New Navigation, Work>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
+	> ![New Navigation, Boards>Backlogs>Drag-drop items onto sprint](_img/define-sprints/drag-drop-backlog-items-to-sprint.png)
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Open **Work>Backlogs**. You can drag and drop from the **Backlog** or **Board** page as shown in the following image. 
+1. Open **Boards>Backlogs**. You can drag and drop from the **Backlog** or **Board** page as shown in the following image. 
 
 ![Assign work items to a sprint](_img/assign-to-sprint-from-kanban-animated.gif)
 

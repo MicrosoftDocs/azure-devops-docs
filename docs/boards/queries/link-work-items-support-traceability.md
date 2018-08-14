@@ -1,6 +1,6 @@
 ---
 title: Link work items to support traceability 
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure Boards and TFS 
 description: Manage dependencies, link work items to other work items, code and build objects, add hyperlinks, and more
 ms.prod: devops
 ms.technology: devops-agile
@@ -31,7 +31,7 @@ In a nutshell, you can:
 Below, you can learn how to link objects and which link types to use. You can link objects from the web portal or Visual Studio Team Explorer.  
 
 > [!NOTE]    
-><b>Feature availability: </b> Work item forms and features available to you can differ depending on whether you connect to VSTS or an on-premises Team Foundation Server (TFS), and whether you open the form from the web portal or Visual Studio Team Explorer. 
+> Work item forms and features available to you can differ depending on whether you open the form from the web portal or Visual Studio Team Explorer. 
 
 This topic describes the link types available for your use. For details on linking work items, see [Add link to work items](../backlogs/add-link.md).  
 
@@ -200,7 +200,7 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 - In Visual Studio Team Explorer, add work item IDs before you commit your changes  
 	![Add work item ID or drag items before you commit your changes](_img/link-git-commit-items.png)  
 - You can use the [git-commit](http://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
-- And, with the new work item form (available from VSTS and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
+- And, with the new work item form (available from Azure Boards and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 
 	<img src="../backlogs/_img/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />   
 
