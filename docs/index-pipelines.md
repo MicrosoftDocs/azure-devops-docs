@@ -1,5 +1,5 @@
 ---
-title: Azure Pipelines 
+title: Azure Pipelines Documentation
 titleSuffix: Azure DevOps 
 description: Test and deploy your code with continuous integration and continuous delivery with high-performance pipelines. 
 layout: HubPage 
@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
 <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Pipelines</p><br/>
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Pipelines</p><br/>
 <h1>Azure Pipelines Documentation</h1>
 <p>Test and deploy your code with high-performance pipelines. Start small and scale up as needed.</p><br/>
 <table border="0" class="cardsA">
@@ -63,6 +63,46 @@ featureFlags:
 
 </td>
 <td width="25%">
+                               <a href="/vsts/pipelines/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Languages</h3>
+                                                    <p>Discover how to define pipelines in the language you use.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+                                <a href="/vsts/pipelines/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_vmm-cloud.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Targets</h3>
+                                                    <p>Discover how to deploy your apps to varios targets, including Linux VM, npm, NuGet, and more.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+</tr>
+<tr>
+<td width="25%">
                                <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -101,8 +141,6 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-</tr>
-<tr>
 <td width="25%">
                                 <a href="/vsts/pipelines/library/index">
                                     <div class="cardSize">
@@ -141,6 +179,8 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
+</tr>
+<tr>
 <td width="25%">
                                 <a href="/vsts/pipelines/tasks">
                                     <div class="cardSize">
@@ -183,7 +223,7 @@ featureFlags:
 </tr>
 </table>
 
-<h3 style="padding-left:0;">Additional resources</h3>
+<h2 style="padding-left:0;">Additional resources</h2>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -191,7 +231,7 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features timeline & release notes</a>
+<a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>

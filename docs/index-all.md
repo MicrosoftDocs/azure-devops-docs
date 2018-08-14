@@ -1,7 +1,7 @@
 ---
-title: Azure DevOps Services, Index to all documentation resources 
-titleSuffix: Azure DevOps Services
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
+title: Index to all documentation resources 
+titleSuffix: Azure DevOps Services & TFS
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps Services and Team Foundation Server
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Index<br/>
+<p><a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;/&nbsp;&nbsp;Index</p><br/>
 <h1>Azure DevOps Services Index</h1>
 <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>
@@ -26,17 +26,14 @@ featureFlags:
                             <p><a href="/vsts/repos/get-started/index">Azure Repos</a><br/>
                             <a href="/vsts/boards/get-started/index">Azure Boards</a><br/>
                             <a href="/vsts/pipelines/get-started/index">Azure Pipelines</a><br/>
-                            <a href="/vsts/user-guide/new-index">Enterprise</a></p>
-                        <h3>Overview</h3>
+                            <a href="/vsts/user-guide/index">Azure DevOps</a><br/>
+                            <a href="/vsts/project/navigation/preview-features">Navigation basics</a><br/>
+                            <a href="/vsts/release-notes/index">What's new</a></p>
+                        <h3>Social tools</h3>
                             <p><a href="/vsts/project/wiki/project-vision-status">Summary</a><br/>
-                            <a href="/vsts/report/dashboards/index">Dashboards</a><br/>
-                            <a href="/vsts/report/analytics/what-are-analytics-views">Analytics views</a><br/>
-                            <a href="/vsts/project/wiki/index">Wiki</a></p>
-                        <h3>General</h3>
-                            <p><a href="/vsts/organizations/public/index">Public Projects</a><br/>
-                            <a href="/vsts/project/navigation/preview-features">Navigation Basics</a><br/>
+                            <a href="/vsts/project/wiki/index">Wiki</a><br/>
                             <a href="/vsts/project/search/index">Search</a><br/>
-                            <a href="/vsts/articles">Technical Articles</a></p>
+                            <a href="/vsts/organizations/public/index">Public Projects</a></p>
                         <h3>Analytics</h3>
                             <p><a href="/vsts/report/dashboards/index">Dashboards</a><br/>
                             <a href="/vsts/report/analytics/index">Analytics views</a><br/>
@@ -44,7 +41,7 @@ featureFlags:
                             <a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
 </td>
 <td width="25%">
-                        <h3>Azure Boards</h3>
+                        <h3>Plan and track work</h3>
                             <p><a href="/vsts/boards/work-items/index">Work Items</a><br/>
                             <a href="/vsts/boards/boards/index">Boards (Kanban)</a><br/>
                             <a href="/vsts/boards/backlogs/index">Backlogs</a><br/>
@@ -57,7 +54,7 @@ featureFlags:
                             <p><a href="/vsts/boards/backlogs/office/bulk-add-modify-work-items-excel">Excel</a><br/>
                             <a href="/vsts/boards/backlogs/office/create-your-backlog-tasks-using-project">Project</a><br/>
                             <a href="/vsts/boards/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></p>
-                       <h3>Azure Repos</h3>
+                       <h3>Source control</h3>
                             <p><a href="/vsts/repos/git/index">Git Repositories</a><br/>
                             <a href="/vsts/repos/git/pullrequest">Pull Requests</a><br/>
                             <a href="/vsts/repos/git/concepts/forks">Forks</a><br/>
@@ -66,38 +63,40 @@ featureFlags:
                         </ul>
 </td>
 <td width="25%">
-                        <h3>Azure Pipelines</h3>
-                            <p><a href="/vsts/pipelines/index">Azure Pipelines</a><br/>
+                        <h3>Continuous integration & delivery</h3>
+                            <p><a href="/vsts/pipelines/index">Build and release</a><br/>
                             <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
                             <a href="/vsts/deploy-azure/index">Deploy to Azure</a><br/>
                             <a href="/vsts/package/index">Package management</a><br/>
                             <a href="/vsts/pipelines/library/index">Library assets</a><br/>
                             <a href="/vsts/pipelines/agents/agents">Hosted &amp; private agents</a><br/>
                             <a href="/vsts/pipelines/tasks">Task reference</a></p>
-                        <h3>Azure Artifacts</h3>
+                        <h3>Share code</h3>
                             <p><a href="/vsts/package/overview">Package management</a><br/>
                             <a href="/vsts/package/get-started-nuget">NuGet</a><br/>
                             <a href="/vsts/package/get-started-npm">npm</a><br/>
                             <a href="/vsts/package/get-started-maven">Maven</a></p>
-                        <h3>Azure Test Plans</h3>
+                        <h3>Test</h3>
                             <p><a href="/vsts/test/index">Exploratory & manual testing</a><br/>
+                            <a href="/vsts/project/feedback/index">Request stakeholder feedback</a><br/>
                             <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
                             <a href="/vsts/test/load-test/index">Load testing</a><br/>
                             <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">Unit & functional testing</a></p>
 </td>
 <td width="25%">
                         <h3>Management tools</h3>
-                            <p><a href="/vsts/organizations/settings/index">Project &amp; Organization settings</a><br/>
+                            <p><a href="/vsts/organizations/settings/index">Project settings</a><br/>
                             <a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; configure teams</a><br/>
                             <a href="/vsts/organizations/settings/work/inheritance-process-model">Process customization</a><br/>
-                            <a href="/vsts/organizations/security/index">Security &amp; Identity</a><br/>
-                            <a href="/vsts/organizations/settings/index">Project management</a><br/>
-                            <a href="/vsts/organizations/accounts/index">Organization management</a><br/>
+                            <a href="/vsts/organizations/security/index">Security &amp; identity</a><br/>
+                            <a href="/vsts/organizations/settings/index">Manage projects</a><br/>
+                            <a href="/vsts/organizations/accounts/index">Manage organizations</a><br/>
                             <a href="/vsts/billing/index">Billing</a><br/>
-                            <a href="/vsts/notifications/index">Notifications</a><br/>
-                            <a href="/tfs/server/index">Team Foundation Server</a></p>
+                            <a href="/vsts/notifications/index">Manage notifications</a><br/>
+                            <a href="/tfs/server/index">Team Foundation Server</a><br/>
+                            <a href="/vsts/articles">Technical Articles</a></p>
                         <h3>Discover & manage extensions</h3>
-                            <p><a href="/vsts/marketplace/overview">Discover & manage extensions</a><br/>
+                            <p><a href="/vsts/marketplace/overview">Discover extensions</a><br/>
                             <a href="/vsts/service-hooks/index">Service hooks</a><br/>
                             <a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
                         <h3>Build extensions</h3>
@@ -155,8 +154,8 @@ featureFlags:
                         <h3>Command-line and other tools</h3>
                             <p><a href="/vsts/repos/git/command-prompt">Git commands</a><br/>
                             <a href="/vsts/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a><br/>
-                            <a href="/cli/vsts/overview">VSTS CLI</a><br/> 
-                            <a href="/vsts/demo-gen">VSTS Demo Generator</a></p>
+                            <a href="/cli/vsts/overview">Azure DevOps CLI</a><br/> 
+                            <a href="/vsts/demo-gen">Azure DevOps Demo Generator</a></p>
 </td>
 </tr>
 </tbody>
