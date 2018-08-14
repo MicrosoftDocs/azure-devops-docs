@@ -2,9 +2,9 @@
 
 A:	This happens when your sign-in address is shared by your personal Microsoft account and by your work account or school account, but your selected identity doesn't have access. Although both identities have the same sign-in address, they're still separate identities with different profiles, security settings, and permissions.
 
-Try signing out completely from VSTS by completing the following steps. Just closing your browser might not sign you out completely from VSTS. Then, sign in again to VSTS, and select your other identity:
+Try signing out completely from Azure DevOps by completing the following steps. Just closing your browser might not sign you out completely from Azure DevOps. Then, sign in again to Azure DevOps, and select your other identity:
 
-1.	Close all browsers, including browsers that aren't running VSTS.
+1.	Close all browsers, including browsers that aren't running Azure DevOps.
 
 1.	Open a private or incognito browsing session. 
 
@@ -15,4 +15,4 @@ Try signing out completely from VSTS by completing the following steps. Just clo
 	> [!TIP]
 	> If the sign-out page takes more than a minute to sign you out, close the browser and continue.
 
-1.	Sign in to VSTS again. Select your other identity.
+1.	Sign in to Azure DevOps again. Select your other identity.
