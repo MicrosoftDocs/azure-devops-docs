@@ -6,7 +6,7 @@
     tocHref: /vsts/
     topicHref: /vsts/index-boards
     items:
-    - name: Get Started
+    - name: Start using Azure Boards
       tocHref: /vsts/boards/get-started/
       opicHref: /vsts/boards/get-started/index
 

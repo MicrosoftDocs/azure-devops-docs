@@ -2,10 +2,10 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Pipelines
+  - name: Azure Pipelines
     tocHref: /vsts/
     topicHref: /vsts/index-pipelines
     items:
-    - name: Get Started Guide
+    - name: Start using Azure Pipelines
       tocHref: /vsts/pipelines/get-started/
       opicHref: /vsts/pipelines/get-started/index

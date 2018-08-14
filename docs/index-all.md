@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Index
+<a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;&nbsp;Index<br/>
 <h1>Azure DevOps Services Index</h1>
 <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
 <h2 id="user-guides">User and Administrative Guides</h2>
@@ -80,8 +80,8 @@ featureFlags:
                             <a href="/vsts/package/get-started-npm">npm</a><br/>
                             <a href="/vsts/package/get-started-maven">Maven</a></p>
                         <h3>Azure Test Plans</h3>
-                            <p><a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
-                            <a href="/vsts/test/index">Exploratory & manual testing</a><br/>
+                            <p><a href="/vsts/test/index">Exploratory & manual testing</a><br/>
+                            <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
                             <a href="/vsts/test/load-test/index">Load testing</a><br/>
                             <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">Unit & functional testing</a></p>
 </td>

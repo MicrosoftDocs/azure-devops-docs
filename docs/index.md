@@ -216,7 +216,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure Test Plans</h3>
-                                                    <p>Test early and often. Setup test plans and track and report manual tests, run automated test suites and cloud-based load tests.</p>
+                                                    <p>The manual and exploratory testing toolkit to ship with confidence.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -229,7 +229,7 @@ featureFlags:
 </tr>
 </table>
 <a id="devops-services-supplemental" />
-<h2>Analytic and social tools </h2>
+<h2>Analytics and social tools </h2>
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">

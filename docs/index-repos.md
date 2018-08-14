@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Repos</p>
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Repos</p><br/>
         <h1>Azure Repos Documentation</h1>
 <p>Collaborate on code development using free Git public and private repositories, pull requests, and code review.</p><br/>
 <table border="0" class="cardsA">
