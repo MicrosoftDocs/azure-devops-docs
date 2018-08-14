@@ -86,7 +86,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/user-guide/index">Start using all Azure DevOps services</a></h3>
+                                                    <h3><a href="/vsts/user-guide/new-index">Start using all Azure DevOps services</a></h3>
                                                 </div>
                                             </div>
                                         </div>

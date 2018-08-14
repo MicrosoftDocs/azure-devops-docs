@@ -133,7 +133,7 @@
 - name: Resources
   items:
   - name: New User Guide
-    href: ../../user-guide/index.md
+    href: ../../user-guide/new-index.yml
   - name: Project Management
     href: ../projects/index.md
   - name: "Security & Identity"

@@ -4,7 +4,7 @@
   items:
   - name: Start using Azure DevOps
     tocHref: /vsts/user-guide/
-    topicHref: /vsts/user-guide/index
+    topicHref: /vsts/user-guide/new-index
   - name: Start using Azure Repos
     tocHref: /vsts/repos/get-started/
     topicHref: /vsts/repos/get-started/index
