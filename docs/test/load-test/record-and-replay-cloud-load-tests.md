@@ -126,7 +126,7 @@ using your browser.
 Follow these steps to create a load test in the Azure DevOps
 web portal using an HTTP Archive (**.har**) file.
 
-1. Sign into Azure DevOps (**https://**your-subscription-name**.visualstudio.com**).
+1. Sign into Azure DevOps.
 
 1. Go to the **Load Test** section of the [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], open the **+ New**
    menu and choose **HTTP Archive based test**.

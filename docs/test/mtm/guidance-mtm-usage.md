@@ -19,11 +19,7 @@ Azure DevOps and Team Foundation Server (TFS) offer both web-based and client-ba
 * The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
 * The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides a better experiences across Plan, Author, Execute and Track phases of Manual testing.
 
-*****
-To use these features you must have either a [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
-subscription, or have installed the [Test Manager extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-available from Visual Studio Marketplace.
-*****
+[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
 Because the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a fully featured Test management solution which works across all platforms and with all browsers, 
 we **recommend** you use this over Microsoft Test Manager for
@@ -70,7 +66,7 @@ and [test planning with MTM](plan-manual-tests-with-microsoft-test-manager.md)**
 | [View test case references across test suites](../reference-qa.md#testcases) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 | [Assign multiple testers to test plans and test suites for user acceptance testing](../user-acceptance-testing.md#assign-and-invite-testers) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![yes](../_img/table-yes.png) | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![no](../_img/table-no.png) |
 
-\* These capabilities are included as part of the upcoming version of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer)
+\* These capabilities are included as part of the [Test Case Explorer](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.TestCaseExplorer)
 extension available from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
 ### Test authoring
