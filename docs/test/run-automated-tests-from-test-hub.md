@@ -139,7 +139,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 1. Save the release pipeline.
 
 1. If you chose **Create new** in the Test plan settings dialog in step 2
-   of this example, return to the browser tab containing your test plan
+   of this example, return to the browser page containing your test plan
    settings. In the Test plan settings dialog, select the release pipeline
    and environment you just saved.
 

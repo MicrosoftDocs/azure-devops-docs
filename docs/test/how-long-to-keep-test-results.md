@@ -34,11 +34,7 @@ your test results before you can analyze the data.
 
 1. Sign into Azure DevOps. You'll need at least project administrator permissions.
 
-1. Go to your project.
-
-1. Go to the project control panel.
-
-   ![Project control panel](_img/how-long-to-keep-test-results/team-project-control-panel-jamal.png)
+1. Go to your project and then open the [project settings page](../project/navigation/go-to-service-page.md#open-project-settings).
   
 1. Select a limit for how long you want to keep manual test data. 
 

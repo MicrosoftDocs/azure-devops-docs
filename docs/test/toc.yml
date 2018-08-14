@@ -137,7 +137,7 @@
   - name: Get Stakeholder feedback
     href: ../project/feedback/index.md 
   - name: Using Microsoft Test Manager
-    href: https://msdn.microsoft.com/en-us/library/jj635157%28v=vs.120%29.aspx
+    href: https://msdn.microsoft.com/library/jj635157%28v=vs.120%29.aspx
   - name: Load test with Visual Studio
     href: https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project
   - name: Create custom code & plug-ins
@@ -157,12 +157,12 @@
     - name: Test management posts
       href: https://blogs.msdn.microsoft.com/devops/?s=test+management
     - name: "Test & Feedback posts"
-      href: https://social.msdn.microsoft.com/Search/en-US?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+      href: https://social.msdn.microsoft.com/Search?query=test%20%26%20feedback%20extension&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
     - name: Load test posts
-      href: https://social.msdn.microsoft.com/Search/en-US?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
+      href: https://social.msdn.microsoft.com/Search?query=performance%20testing&beta=0&rn=Microsoft+Application+Lifecycle+Management&rq=site:https://blogs.msdn.microsoft.com/visualstudioalm&ac=4
   - name: Plug-ins for Visual Studio
     href: http://go.microsoft.com/fwlink/?LinkID=246630
   - name: Continuous testing
     href: ../pipelines/index.md
   - name: Unit testing
-    href: https://docs.microsoft.com/en-gb/visualstudio/test/unit-test-your-code
+    href: https://docs.microsoft.com/visualstudio/test/unit-test-your-code

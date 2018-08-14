@@ -72,7 +72,7 @@ same data.
    ![Adding, editing, viewing, and renaming a shared parameter](_img/repeat-test-with-different-data/repeat-test-with-different-data-05.png)
  
 1. Each shared parameter set is a work item. Open the **Properties**
-   tab to view or make changes to this work item. For example, 
+   page to view or make changes to this work item. For example, 
    you can assign owners and track changes.
 
 >You can't add more than one shared parameter set to a single test case. If two test cases share similar data, for example, one test case needs

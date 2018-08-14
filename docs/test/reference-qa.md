@@ -216,7 +216,7 @@ You can add and edit tags when you edit a test case, or bulk edit tags
 in the grid view. You can also create suites based on queries when
 you use tags.
 
-![In the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plan tab, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
+![In the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], on the Test Plans page, choose or add tags from the test case pane](_img/create-test-cases/TestHubTags.png)
 
 ### Q: Can I share test steps between test cases?
 
@@ -244,12 +244,12 @@ After you create a shared parameter set, open another test case,
 and add the shared parameter set to that test case. Find out more about 
 [sharing parameters](repeat-test-with-different-data.md#share-parameters-between-test-cases).
 
-Add, edit, and rename your shared parameter sets on the Parameters tab. 
+Add, edit, and rename your shared parameter sets on the Parameters page. 
 In the test cases pane, view the test cases that use those parameters.
 
-![On the Parameters tab, turn on the test cases pane to view tests cases with shared parameters](_img/create-test-cases/ManageSharedParameters.png)
+![On the Parameters page, turn on the test cases pane to view tests cases with shared parameters](_img/create-test-cases/ManageSharedParameters.png)
 
-Each shared parameter set is a work item. On the Properties tab, 
+Each shared parameter set is a work item. On the Properties page, 
 you can view or make changes to this work item. For example, 
 you can assign owners and track changes.
 
@@ -268,7 +268,7 @@ this test case. This includes all projects.
 Click the associated test suite to view it. To view the project and the test 
 plan for that test suite, move your pointer over the test suite.
 
-![On Tests tab, click details pane. Select test suites in the test details pane](_img/create-test-cases/TestSuites.png) 
+![On Tests Plans page, click details pane. Select test suites in the test details pane](_img/create-test-cases/TestSuites.png) 
 
 ### Q: What happens when I delete a test case from a requirement-based test suite?
 

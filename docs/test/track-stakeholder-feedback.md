@@ -19,10 +19,8 @@ monikerRange: '>= tfs-2017'
 <a name="track"></a>
 ## Track feedback requests
 
-1. In Azure DevOps or TFS, select your project and open 
-   the **Queries** page of the **Work** hub.
-
-   ![Opening the Queries tab of the Work hub](_img/track-stakeholder-feedback/track-stakeholder-feedback-30.png)
+1. Select your project and open the **Queries** page of the **Agile** section in Azure DevOps or the **Work** hub in TFS.
+   [Navigation basics](../project/navigation/index.md)
 
 1. In the list of shared queries, select **Feedback**. 
    This query displays a list of all the feedback responses received.
