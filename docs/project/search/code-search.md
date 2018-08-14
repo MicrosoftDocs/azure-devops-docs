@@ -1,6 +1,6 @@
 ---
-title: Search your code in VSTS and Team Foundation Server
-description: Get started with Code Search in Microsoft VSTS and TFS across all your projects to debug and manage your codebases
+title: Search your code in Azure DevOps and Team Foundation Server
+description: Get started with Code Search in Azure DevOps and TFS across all your projects to debug and manage your codebases
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.prod: devops
 ms.technology: devops-collab
@@ -14,16 +14,14 @@ monikerRange: '>= tfs-2017'
 
 # Search your code
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
-
 Use Code Search to search across all of your projects, find specific types of code,
 and easily drill down or widen your search
 
 ## Prepare
 
 Go to [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=703823&clcid=0x409)
-to install the extension in VSTS as an administrator.
-Non-administrative users can also go here to request the extension be added to VSTS. 
+to install the extension as an administrator.
+Non-administrative users can also go here to request the extension be added. 
 For more details, see [Install an extension](../../marketplace/install-vsts-extension.md#install-extension) in the Marketplace documentation.
 
 >Only users with Basic access can use Code Search.
@@ -55,7 +53,7 @@ For more details, see [Install an extension](../../marketplace/install-vsts-exte
    drop-down list. Select the filter function or code type you want to include in your search string from the
    list, and type the criteria value.
 
-   ![Search from VSTS title bar](_img/code-search-get-started/title-bar-search-functionlist.png)    
+   ![Search from title bar](_img/code-search-get-started/title-bar-search-functionlist.png)    
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 

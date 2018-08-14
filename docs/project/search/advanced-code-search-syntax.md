@@ -1,6 +1,6 @@
 ---
-title: Advanced search options in Microsoft Code Search in VS VSTS and TFS
-description: How To Use Code Search - Advanced options for using Code Search across all your projects in VSTS and Team Foundation Server
+title: Advanced search options in Microsoft Code Search in Azure DevOps and TFS
+description: How To Use Code Search - Advanced options for using Code Search across all your projects in Azure DevOps and Team Foundation Server
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.prod: devops
 ms.technology: devops-collab
@@ -14,13 +14,11 @@ monikerRange: '>= tfs-2017'
 
 # How To: Use Code Search
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
-
 By using Code Search you can:
 
 * **Search across all of your projects**:
   Search in your own codebase and your partner teams' codebases. Use cross-project 
-  searches over all the code in your VSTS or TFS instance to search 
+  searches over all the code in your Azure DevOps or TFS instance to search 
   across your enterprise's entire codebase. Narrow your search by using project, repository, 
   path, file name, and other filter operators. Use wildcards to widen your search and 
   Boolean operators to fine-tune it. 
@@ -61,13 +59,10 @@ Use the project and repository checkboxes to widen your search to more or all pr
 narrow your search to fewer projects and repositories. If there is more than a few 
 projects or repositories, use the **Show more** link to see them all.
 
-In VSTS, Code Search can index multiple branches in a Git repository - by default it indexes 
+Code Search can index multiple branches in a Git repository - by default it indexes 
 files in only the default branch of your Git repositories (usually this is the **master** branch).
 Specify up to five additional branches for each repository that you want Code
-Search to index in the **Options** section of the **Version Control** tab in the **Settings** page. 
-This capability is planned for future releases of TFS.
-
-![Opening the Version Control settings page](_img/advanced-code-search-syntax/version-control.png)
+Search to index in the [project settings page](../navigation/go-to-service-page.md#open-project-settings).
 
 In a TFVC project, you see a list of folder paths in that project for 
 which you have read access - you won't see any projects and folders 

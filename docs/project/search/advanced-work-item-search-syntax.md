@@ -1,6 +1,6 @@
 ---
-title: Advanced search options in Microsoft Work Item Search in VSTS
-description: How To Use Work Item Search - Advanced options for Work Item Search in Microsoft VSTS and TFS for all projects of your projects 
+title: Advanced search options in Microsoft Work Item Search in Azure DevOps
+description: How To Use Work Item Search - Advanced options for Work Item Search in Microsoft Azure DevOps and TFS for all projects of your projects 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.prod: devops
 ms.technology: devops-collab
@@ -14,16 +14,14 @@ monikerRange: '>= tfs-2017'
 
 # How To: Use Work Item Search
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
-
-Work Item Search is available as a built-in extension in Visual Studio Team Services (VSTS).
+Work Item Search is available as a built-in extension in Azure DevOps and TFS.
 Users can use Work Item Search by default without any installation.
 
 By using Work Item Search you can:
 
 * **Search over all your projects**:
   Search in your own and your partner teams' backlog. Use cross-project 
-  searches over all the work items in VSTS to search 
+  searches over all the work items to search 
   across your enterprise's entire work items. Narrow your search by using project and 
   area path filters. 
   
@@ -122,7 +120,7 @@ Narrow the search to a specific location using the `proj`, `area`, or `iteration
 <a name="quicknavigation"></a>
 ## Quickly navigate to a work item using its ID
 
-Type or paste the work item ID in the search box in the VSTS title bar 
+Type or paste the work item ID in the search box in the Azure DevOps or TFS title bar 
 to quickly navigate to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
