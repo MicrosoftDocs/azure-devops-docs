@@ -1,6 +1,6 @@
 ---
-title: Search for work items in VSTS
-description: How To Use Work Item Search to search across all work item fields over all projects of your VSTS and TFS projects
+title: Search for work items in Azure DevOps
+description: How To Use Work Item Search to search across all work item fields over all projects of your Azure DevOps and TFS projects
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.prod: devops
 ms.technology: devops-collab
@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2017'
 
 # Search for work items
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
-
 Work Item Search provides fast and flexible search across all your work items over all your projects. 
 
 See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/vsts/project/search/toc.json&bc=/vsts/project/search/breadcrumb/toc.json)
@@ -26,7 +24,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 1. In the search textbox at the top right of the window, check that the text says
    _Search work items_.
 
-   ![The Work Item Search textbox in the VSTS title bar](_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
+   ![The Work Item Search textbox in the title bar](_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
 
    If you have the Code Search extension installed, the search text box may
    say _Search code_. In this case, use the drop-down selector to change it. 

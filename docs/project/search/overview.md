@@ -1,6 +1,6 @@
 ---
 title: Search across all your code and work items
-description: Quickly Search with VSTS and TFS
+description: Quickly Search with Azure DevOps and TFS
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.prod: devops
 ms.technology: devops-collab
@@ -14,19 +14,17 @@ monikerRange: '>= tfs-2017'
 
 # Search across all your code and work items
 
-[!INCLUDE [version-header-shared-vsts-tfs](_shared/version-header-shared-vsts-tfs.md)]
-
-Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) store a tremendous amount of information; 
+Azure DevOps and TFS store a tremendous amount of information; 
 work items for planning and tracking your work, version control to track code file changes, 
 and build and release services to help you ship effortlessly. 
 As your backlog and codebase expand and are divided across multiple projects, teams and repositories, 
 finding what you need becomes increasingly difficult. To maximize cross-team 
 collaboration and sharing, you need solutions that can quickly and 
 efficiently locate information across all your projects. The Search 
-extensions available for VSTS and Team Foundation Server 
+extensions available for Azure DevOps and TFS 
 enable you to search across all the projects, teams and repositories to which you have access. 
 
-![Search boxes in VSTS and TFS](_img/_shared/title-bar-search-box-select-type.png)
+![Search boxes in Azure DevOps and TFS](_img/_shared/title-bar-search-box-select-type.png)
 
 The Search extensions make it easy to search for information across all
 your projects, from anywhere and any computer or mobile device, using just a web browser.
