@@ -170,7 +170,7 @@ to manage self-provisioned agents. Download the script and unblock the file befo
 **Script parameters**
 
 * **TeamServicesAccountName**. The name of your Azure DevOps subscription you want to manage. Specify just the name.
-  For example, if your Azure DevOps subscription is xyz.visualstudio.com, enter just **xyz**.
+
 * **PATToken**. Required for authentication. Obtain a PAT token for your Azure DevOps subscription [as described here](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
   Ensure the selected scope is **Load Test (read and write)**.
 
@@ -179,14 +179,14 @@ The available operations and the switches for the script are:
 * **Get agent groups**. Lists all the registered agent groups within the Azure DevOps subscription. Example:
 
 ```PowerShell
-.\ManageVSTSCloudLoadAgent.ps1 -TeamServicesAccountName https://xyz.visualstudio.com
+.\ManageVSTSCloudLoadAgent.ps1 -TeamServicesAccountName [your-Azure-DevOps-url]
   -PATToken olxpldk2...wi3rbaq -GetAgentGroups
 ```
 
 * **Get agents**. Lists all the agents and their current status for a specified agent group. Example:
 
 ```PowerShell
-.\ManageVSTSCloudLoadAgent.ps1 -TeamServicesAccountName https://xyz.visualstudio.com
+.\ManageVSTSCloudLoadAgent.ps1 -TeamServicesAccountName [your-Azure-DevOps-url]
   -PATToken olxpldk2...wi3rbaq -AgentGroupName test -GetAgents
 ```
 
@@ -194,7 +194,7 @@ The available operations and the switches for the script are:
   state. The agent group name is mandatory. Example:
 
 ```PowerShell
-.\ManageVSTSCloudLoadAgent.ps1 -TeamServicesAccountName https://xyz.visualstudio.com
+.\ManageVSTSCloudLoadAgent.ps1 -TeamServicesAccountName [your-Azure-DevOps-url]
   -PATToken olxpldk2...wi3rbaq -DeleteAgent -AgentGroupName test -AgentName dpk-param
 ```
 

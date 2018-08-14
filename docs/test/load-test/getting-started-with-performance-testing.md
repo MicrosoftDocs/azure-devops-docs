@@ -74,8 +74,7 @@ connect Visual Studio to Azure DevOps.
 
      ![Click Servers to add your Azure DevOps subscription](_img/getting-started-with-performance-testing/LoadTestConnect3.png)
 
-   - Enter your Azure DevOps subscription name 
-     (your-subscription-name**.visualstudio.com**).
+   - Enter your Azure DevOps subscription name.
 
      ![Enter your subscription name](_img/getting-started-with-performance-testing/LoadTestConnect4.png)
 
