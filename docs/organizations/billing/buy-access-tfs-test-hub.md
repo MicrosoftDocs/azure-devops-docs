@@ -1,6 +1,6 @@
 ---
-title: Buy TFS CALs or access to the TFS Test hub | Team Foundation Server (TFS)
-description: Steps for administrators on how to buy Team Foundation Server client access licenses (CALs) or access to the TFS Test hub 
+title: Buy TFS CALs or access to TFS Azure Test Plans | Team Foundation Server (TFS)
+description: Steps for administrators on how to buy Team Foundation Server (TFS) client access licenses (CALs) or access to TFS Azure Test Plans 
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
@@ -11,7 +11,7 @@ author: chcomley
 ms.date: 06/11/2018
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
-# Buy access to Team Foundation Server or the TFS Test hub
+# Buy access to Team Foundation Server or TFS Azure Test Plans
 
 [!INCLUDE [version-tfs-2015-rtm](../../pipelines/_shared/version-tfs-2015-rtm.md)]
 
@@ -20,77 +20,77 @@ For [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/), you
 > [!NOTE]
 > You need TFS 2015.2 or later to pay monthly for your TFS users via the Visual Studio Marketplace, which uses Azure for billing.
 
-Paid VSTS users are entitled access to Basic features in your enterprise's TFS. Paying monthly for VSTS users is a great alternative to buying TFS User CALs, which typically have a 3-year commitment term. When you buy access to TFS in this way, you aren't required to use VSTS (although you can use VSTS in addition to TFS).
+Paid Azure DevOps Services users are entitled access to Basic features in your enterprise's TFS. Paying monthly for Azure DevOps Services users is a great alternative to buying TFS User CALs, which typically have a 3-year commitment term. When you buy access to TFS in this way, you aren't required to use Azure DevOps Services (although you can use Azure DevOps Services in addition to TFS).
 
 To pay monthly for TFS users, follow [these steps](#rent-cal).
 
-You can also buy [Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for your TFS users on a monthly basis. This method is an alternative way to buy a Visual Studio subscription that's entitled to use the Test hub in TFS.
+You can also buy [Azure Test Plans Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) for your TFS users on a monthly basis. This method is an alternative way to buy a Visual Studio subscription that's entitled to use Azure Test Plans in TFS.
 
-To pay monthly for TFS Test hub access, follow [these steps](#test-hub).
+To pay monthly for TFS Azure Test Plans access, follow [these steps](#test-hub).
 
-To learn more about the requirements to access TFS or the Test hub, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about TFS licensing, see the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
+To learn more about the requirements to access TFS or Azure Test Plans, see [Change access levels](../../organizations/security/change-access-levels.md). For more information about TFS licensing, see the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing).
 
 ## Buy monthly access to TFS for your users
 
-1. [Sign up for a VSTS organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
+1. [Sign up for an Azure DevOps Services organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
 
-2. Based on the number of users who need TFS CALs, [pay for VSTS users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). VSTS organizations include five free users and these users don't apply to TFS.
+1. Based on the number of users who need TFS CALs, [pay for Azure DevOps Services users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). Azure DevOps Services organizations include five free users and these users don't apply to TFS.
 
-3. If you haven't already, sign in to your VSTS organization (`https://{yourorganization}.visualstudio.com`).
+1. If you haven't already, sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
 
-4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your VSTS organization so you can more easily track these users.
+1. [Add users](../accounts/add-organization-users-from-user-hub.md) to your Azure DevOps Services organization so you can more easily track these users.
 
-    These users will be invited to your VSTS organization, but you're not required to use VSTS.
+    These users will be invited to your Azure DevOps Services organization, but you're not required to use Azure DevOps Services.
 
-5. As the TFS administrator, [add these same users to TFS](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them the necessary access](../../organizations/security/change-access-levels.md).
+1. As the TFS administrator, [add these same users to TFS](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them the necessary access](../../organizations/security/change-access-levels.md).
 
     > [!NOTE]
-    > TFS doesn't detect what happens in VSTS. Make sure to add these users to TFS and assign them the Basic access level.
+    > TFS doesn't detect what happens in Azure DevOps Services. Make sure to add these users to TFS and assign them the Basic access level.
     >
-    > If you stop paying for these users within your VSTS organization, your TFS administrator should remove the users from TFS or buy TFS CALs for them.
+    > If you stop paying for these users within your Azure DevOps Services organization, your TFS administrator should remove the users from TFS or buy TFS CALs for them.
 
-## Buy monthly access to the Test hub
+## Buy monthly access to Azure Test Plans
 
-1. [Sign up for a VSTS organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
+1. [Sign up for an Azure DevOps Services organization](../accounts/create-organization-msa-or-work-student.md), if you don't have one already.
 
-2. Based on the number of users who need Test hub access in TFS, [buy Test Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
+1. Based on the number of users who need Azure Test Plans access in TFS, [buy Azure Test Plans Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web).
 
-    Test Manager is installed automatically in TFS.
+    Azure Test Plans Manager is installed automatically in TFS.
 
-3. If you haven't already, sign in to your VSTS organization (`https://{yourorganization}.visualstudio.com`).
+1. If you haven't already, sign in to your Azure DevOps organization (`https://{yourorganization}.visualstudio.com`).
 
-4. [Add users](../accounts/add-organization-users-from-user-hub.md) to your VSTS organization. [Assign them to Test Manager](../../marketplace/assign-paid-extensions.md) via the Users hub in your VSTS organization so you can track these users.
+1. [Add users](../accounts/add-organization-users-from-user-hub.md) to your Azure DevOps Services organization. [Assign them to Azure Test Plans Manager](../../marketplace/assign-paid-extensions.md) via Azure Test Plans in your Azure DevOps Services organization so you can track these users.
 
-     These users will be invited to your VSTS organization, but you're not required to use VSTS. By assigning Test Manager within your VSTS organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they won't be able to run Test Professional.
-
-    > [!NOTE]
-    > These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your VSTS organization.
-
-5. As the TFS administrator, [add these same users to TFS](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Advanced access](../../organizations/security/change-access-levels.md) so they can use the Test hub.
+     These users will be invited to your Azure DevOps Services organization, but you're not required to use Azure DevOps Services. By assigning Azure Test Plans Manager within your Azure DevOps Services organization, your users can also run Visual Studio Test Professional 2015 or [2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=TestProfessional&rel=15). If you only add the users to TFS, they won't be able to run Test Professional.
 
     > [!NOTE]
-    > TFS doesn't detect what happens in VSTS. Make sure these users get Advanced access in TFS.
+    > These users must sign in to Visual Studio Test Professional with the same credentials that they used to join your Azure DevOps Services organization.
+
+1. As the TFS administrator, [add these same users to TFS](../../organizations/security/add-users-team-project.md#add-users-team-project). [Give them Advanced access](../../organizations/security/change-access-levels.md) so they can use Azure Test Plans.
+
+    > [!NOTE]
+    > TFS doesn't detect what happens in Azure DevOps Services. Make sure these users get Advanced access in TFS.
     > 
-    > If you stop paying for these VSTS users, your TFS administrator should remove those users from TFS.
+    > If you stop paying for these Azure DevOps Services users, your TFS administrator should remove those users from TFS.
 
 ## Related information
 
-- [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)
+- [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps Services billing support](https://visualstudio.microsoft.com/team-services/support/)
 
 ## Q&A
 
 <!-- BEGINSECTION class="m-qanda" -->
 
-### Q: Why should I pay via VSTS for my TFS users?
+### Q: Why should I pay via Azure DevOps Services for my TFS users?
 
 A: You get many benefits, for example:
 
-- Paying via VSTS gives your users the flexibility to access both TFS and VSTS for the same price.
+- Paying via Azure DevOps Services gives your users the flexibility to access both TFS and Azure DevOps Services for the same price.
 - You can pay monthly for users who need temporary access.
 - You get all the purchasing capabilities that Azure offers like payment via credit card, through a Cloud Solution Provider (CSP) partner, through the Enterprise Agreement, and more.
 
-### Q: Where can I learn more about TFS CALs and access levels for the Test hub?
+### Q: Where can I learn more about TFS CALs and access levels for Azure Test Plans?
 
 A: See [Change access levels](../security/change-access-levels.md).
 
