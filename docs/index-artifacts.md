@@ -18,31 +18,12 @@ featureFlags:
 
 <div id="artifacts" class="v2">
     <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Artifacts</p>
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Artifacts</p><br/>
 <h1>Azure Artifacts Documentation</h1>
 <p>Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.</p><br/>
 
 <table border="0" class="cardsA">
 <tr>
-<td width="25%">
-                               <a href="/vsts/package/overview">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Package management overview</h3>
-                                                    <p>Use multiple feeds to organize and control access to your packages.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
 <td width="25%">
                                <a href="/vsts/package/get-started-nuget">
                                     <div class="cardSize">
@@ -94,6 +75,25 @@ featureFlags:
                                                 <div class="cardText">
                                                     <h3>Get started with Maven</h3>
                                                     <p>Create, host, and share Maven packages with your teams.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
+<td width="25%">
+                               <a href="/vsts/package/overview">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Package management overview</h3>
+                                                    <p>Use multiple feeds to organize and control access to your packages.</p>
                                                 </div>
                                             </div>
                                         </div>

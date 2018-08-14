@@ -194,7 +194,7 @@ featureFlags:
 </tr>
 </table>
 <a id="devops-services-supplemental" />
-<h2>Analytic and social tools </h2>
+<h2>Analytics and social tools </h2>
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">

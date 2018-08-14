@@ -21,13 +21,13 @@ Start with [Sign up and invite some teammates](sign-up-invite-teammates.md).
 
 Then, read [Plan and track work](plan-track-work.md) to get familiar with work items and work item types.
 
-Next, to plan your work, see [Create your backlog](../backlogs/create-your-backlog.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json ) or [Use Kanban boards](../boards/kanban-quickstart.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json )
+Next, to develop your product backlog, read [Create your backlog](../backlogs/create-your-backlog.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json ) or [Use Kanban boards](../boards/kanban-quickstart.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json).
 
 Other resources to get you up and running: 
 
-- Understand working within the web portal, see [Navigation basics](../../project/navigation/index.md)  
-- Understand permissions, access, and security, see [Security & identity](../../organizations/security/index.md)  
-- Understand how to scale and how to add additional Agile tools, see [About projects and scaling your organization](../../organizations/projects/about-projects.md)  
+- [Navigation basics](../../project/navigation/index.md)  
+- [Security & identity](../../organizations/security/index.md)
+- [About projects and scaling your organization](../../organizations/projects/about-projects.md)  
 
 
 

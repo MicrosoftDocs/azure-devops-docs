@@ -2,10 +2,10 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Management Tools
+  - name: Management tools
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-settings
     items:
-    - name: Manage Extensions
+    - name: Manage extensions
       tocHref: /vsts/
       topicHref: /vsts/marketplace/index

@@ -19,7 +19,7 @@ featureFlags:
 
 <div id="main" class="v2">
 <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Boards</p>
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Boards</p><br/>
 <h1>Azure Boards Documentation</h1>
 <p>Configure your Kanban boards, interact with your backlogs, and work with out-of-the-box support for Scrum.</p><br/>
 <table border="0" class="cardsA">

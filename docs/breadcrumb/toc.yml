@@ -2,19 +2,19 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items:
-  - name: Get Started Guides
+  - name: Start using Azure DevOps
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
-  - name: Azure Repos Get Started Guide
+  - name: Start using Azure Repos
     tocHref: /vsts/repos/get-started/
     topicHref: /vsts/repos/get-started/index
-  - name: Azure Boards Get Started Guide
+  - name: Start using Azure Boards 
     tocHref: /vsts/boards/get-started/
     topicHref: /vsts/boards/get-started/index
-  - name: Azure Pipelines Get Started Guide
+  - name: Start using Azure Pipelines 
     tocHref: /vsts/pipelines/get-started/
     topicHref: /vsts/pipelines/get-started/index
-  - name: AzureRepos
+  - name: Azure Repos
     tocHref: /vsts/repos/git/
     topicHref: /vsts/index-repos
     items:
@@ -24,7 +24,7 @@
     - name: TFVC
       tocHref: /vsts/repos/tfvc/
       topicHref: /vsts/repos/tfvc/index
-  - name: AzurePipelines
+  - name: Azure Pipelines
     tocHref: /vsts/pipelines/
     topicHref: /vsts/index-pipelines
     items:
@@ -81,7 +81,7 @@
   - name: Azure DevOps Demo Generator
     tocHref: /vsts/demo-gen/
     topicHref: /vsts/demo-gen/index  
-  - name: Shared Features
+  - name: Analytics and social tools
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-supplemental
     items:
@@ -109,23 +109,23 @@
     - name: Feedback
       tocHref: /vsts/project/feedback/
       topicHref: /vsts/project/feedback/index
-  - name: Management Tools
+  - name: Management tools
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-setting
     items:
-    - name: Project Management
+    - name: Project management
       tocHref: /vsts/organizations/projects/
       topicHref: /vsts/organizations/projects/index
-    - name: Organization Management
+    - name: Organization management
       tocHref: /vsts/organizations/accounts/
       topicHref: /vsts/organizations/accounts/index
-    - name: "Security & Identity"
+    - name: "Security & identity"
       tocHref: /vsts/organizations/security/
       topicHref: /vsts/organizations/security/index
     - name: Settings
       tocHref: /vsts/organizations/settings/
       topicHref: /vsts/organizations/settings/index
-    - name: "Scale & Configure Teams"
+    - name: "Scale & configure teams"
       tocHref: /vsts/organizations/settings/scale/
       topicHref: /vsts/organizations/settings/scale/index
     - name: Customization
@@ -134,20 +134,20 @@
     - name: Billing
       tocHref: /vsts/billing/
       topicHref: /vsts/billing/index
-    - name: Manage Extensions
+    - name: Manage extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
-    - name: Technical Articles
+    - name: Technical articles
       tocHref: /vsts/articles/
       topicHref: /vsts/articles/index
   - name: "Marketplace & Extensions"
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-extensions
     items:
-    - name: Discover Extensions
+    - name: Discover extensions
       tocHref: /vsts/marketplace/
       topicHref: https://marketplace.visualstudio.com/
-    - name: Service Hooks
+    - name: Service hooks
       tocHref: /vsts/service-hooks/
       topicHref: /vsts/service-hooks/index
     - name: Build extensions
@@ -166,7 +166,7 @@
     tocHref: /tfs/server/
     topicHref: /tfs/index
     items:
-    - name: Project Server Integration
+    - name: Project Server integration
       tocHref: /vsts/reference/tfs-ps-sync/
       topicHref: /vsts/reference/tfs-ps-sync/index
     - name: SQL Server Reporting

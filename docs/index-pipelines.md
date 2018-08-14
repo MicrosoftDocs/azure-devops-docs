@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
 <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Pipelines</p>
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Pipelines</p><br/>
 <h1>Azure Pipelines Documentation</h1>
 <p>Test and deploy your code with high-performance pipelines. Start small and scale up as needed.</p><br/>
 <table border="0" class="cardsA">
@@ -83,27 +83,6 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/deploy-azure/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_deploy.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Deploy to Azure</h3>
-                                                    <p>Release apps to Azure services and Azure virtual machines.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-</tr>
-<tr>
-<td width="25%">
                                 <a href="/vsts/package/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -122,6 +101,8 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
+</tr>
+<tr>
 <td width="25%">
                                 <a href="/vsts/pipelines/library/index">
                                     <div class="cardSize">
@@ -180,8 +161,6 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
-</tr>
-<tr>
 <td width="25%">
                                 <a href="/vsts/organizations/settings/about-settings#pipelines">
                                     <div class="cardSize">
@@ -200,15 +179,6 @@ featureFlags:
                                         </div>
                                     </div>
                                 </a>
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
 </td>
 </tr>
 </table>
