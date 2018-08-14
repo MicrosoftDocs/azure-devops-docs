@@ -1,0 +1,7 @@
+- name: Azure DevOps Services
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items: 
+  - name: Build your GitHub projects
+    tocHref: /vsts/open-source/get-started/
+    topicHref: /vsts/open-source/get-started/index

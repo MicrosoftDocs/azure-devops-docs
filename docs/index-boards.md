@@ -1,5 +1,5 @@
 ---
-title: Azure Boards  
+title: Azure Boards Documentation 
 titleSuffix: Azure DevOps 
 description: Plan and track work and collaborate on software development using Agile tools you configure and customize to support your business needs.  
 layout: HubPage 
@@ -19,7 +19,7 @@ featureFlags:
 
 <div id="main" class="v2">
 <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Boards</p><br/>
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Boards</p><br/>
 <h1>Azure Boards Documentation</h1>
 <p>Configure your Kanban boards, interact with your backlogs, and work with out-of-the-box support for Scrum.</p><br/>
 <table border="0" class="cardsA">
@@ -214,7 +214,7 @@ featureFlags:
 </tr>
 </table>
 
-<h3 style="padding-left:0;">Additional resources</h3>
+<h2 style="padding-left:0;">Additional resources</h2>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -222,7 +222,7 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features timeline & release notes</a>
+<a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>

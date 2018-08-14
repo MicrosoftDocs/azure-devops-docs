@@ -1,7 +1,7 @@
 ---
-title: Azure DevOps Services - Test 
+title: Azure Test Plans Documentation 
 titleSuffix: Azure DevOps 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
+description: Improve your overall code quality by using manual and exploratory testing services for your apps.
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;&nbsp;Azure Test Plans</p><br/>
+<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Test Plans</p><br/>
         <h1>Azure Test Plans Documentation</h1>
 <p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p><br/>
 <table border="0" class="cardsA">
@@ -151,7 +151,7 @@ featureFlags:
 </tr>
 </table>
 
-<h3 style="padding-left:0;">Additional resources</h3>
+<h2 style="padding-left:0;">Additional resources</h2>
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -159,7 +159,7 @@ featureFlags:
 <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/release-notes/index"><img src="https://docs.microsoft.com/media/common/i_whats-new.svg" alt="" />Features timeline & release notes</a>
+<a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
