@@ -1,6 +1,6 @@
 ---
 title: Filter lists & boards
-titleSuffix: VSTS & TFS  
+titleSuffix: Azure DevOps Services & TFS  
 description: Filter your view to focus on items of interest 
 ms.prod: devops
 ms.technology: devops-collab

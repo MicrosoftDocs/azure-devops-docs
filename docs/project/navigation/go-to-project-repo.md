@@ -1,7 +1,7 @@
 ---
 title: Switch project, repository, or team
-titleSuffix: VSTS & TFS
-description: Open another project or repository for Visual Studio Team Services and Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS
+description: Open another project or repository for Azure DevOps Services and Team Foundation Server
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -35,17 +35,17 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**.  
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, VSTS icon](../../_shared/_img/settings/open-projects-page-vert-brn.png)
+	> ![web portal, Azure DevOps logo](../../_shared/_img/settings/open-projects-page-vert-brn.png)
 
 	The projects you most recently viewed are displayed, followed by a list of all projects in alphabetic order. 
 
 0. Hover over the dots and you can open the service of interest for that project. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, VSTS icon](_img/projects-page/projects-page-vert.png)
+	> ![web portal, Azure DevOps logo](_img/projects-page/projects-page-vert.png)
 
 0. You can filter the project and team list using the *Filter projects* search box. Simply type a keyword contained within the name of a project or team. Here we type **Fabrikam** to find all projects or teams with *Fabrikam* in their name. 
 
@@ -65,10 +65,10 @@ From the **Projects** page you can quickly navigate to a project that you have p
 
 From the **Projects** page you can quickly navigate to a project or a team that you've accessed or worked in previously. Projects and teams are listed in the order you've last accessed, with the most recent five projects accessed appearing first. All projects you've accessed are listed within the **All** section. 
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**.  
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, VSTS icon](../../_shared/_img/settings/open-project-hub-horz.png)
+	> ![web portal, Azure DevOps logo](../../_shared/_img/settings/open-project-hub-horz.png)
 
 	The projects you most recently viewed are displayed, followed by a list of all projects in alphabetic order. 
 
@@ -104,7 +104,7 @@ From the **Projects** page you can quickly navigate to a project or a team that 
 
 # [New navigation](#tab/new-nav)  
 ::: moniker range="vsts"
-0. Choose **Code>Files**.
+0. Choose **Repos>Files**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Open Code, new nav](../../organizations/public/_img/browse-code/open-code-vert-brn.png) 
@@ -149,7 +149,7 @@ You can't switch to a different team, you can [only select team artifacts](use-b
 # [Previous navigation](#tab/previous-nav)  
 
 ::: moniker range=">= tfs-2018" 
-You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![](../../_img/icons/project-icon.png) VSTS icon to [access the **Projects** page](work-across-projects.md).  
+You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](work-across-projects.md).  
 
 ![Choose another team from the project menu](../../_shared/_img/work-web-portal-ts-switch-team-focus.png)
 ::: moniker-end
@@ -157,7 +157,7 @@ You can switch your team focus to one that you've recently viewed from the proje
 ::: moniker range="tfs-2017" 
 <a id="switch-context-tfs-2017-1" /> 
 ### TFS 2017.1 
-To switch your team focus to a project or team you've recently viewed, hover over the ![](../../_img/icons/project-icon.png) VSTS icon and choose from the drop-down menu of options. If you don't see the team or project you want, choose **Browse&hellip;** to [browse all projects and teams](work-across-projects.md). 
+To switch your team focus to a project or team you've recently viewed, hover over the ![](../../_img/icons/project-icon.png) Azure DevOps logo and choose from the drop-down menu of options. If you don't see the team or project you want, choose **Browse&hellip;** to [browse all projects and teams](work-across-projects.md). 
 
 ![Choose another team from the project menu](../../_shared/_img/work-web-portal-tfs-2017-1-switch-team-focus.png) 
 

@@ -1,7 +1,7 @@
 ---
 title: Search across your code base, work items, or wiki
-titleSuffix: VSTS & TFS   
-description: Find code or work items quickly in (VSTS) and Team Foundation Server (TFS)  
+titleSuffix: Azure DevOps Services & TFS   
+description: Find code or work items quickly in Azure DevOps Services and Team Foundation Server (TFS)  
 ms.assetid: 2C0977AB-91A4-477C-870E-FA5540E76F4B
 ms.prod: devops
 ms.technology: devops-collab
@@ -68,7 +68,7 @@ To start your search, choose **Code>Files** or other page under **Code**, enter 
    list, and type the criteria value.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/code-search-filters.png)     
+	> ![Code search bar](_img/search/code-search-filters.png)     
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 
@@ -126,7 +126,7 @@ To learn more, see [Search code](../search/code-search.md).
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
-   ![The Work Item Search textbox in the VSTS title bar](../search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
+   ![The Work Item Search textbox in the title bar](../search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
    ![start search icon](../search/_img/_shared/start-search-icon.png) icon) to start your search. 
@@ -158,7 +158,7 @@ To learn more, see [Search code](../search/code-search.md).
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/search-work-vert.png)    
+	> ![Search from the title bar](_img/search/search-work-vert.png)    
 
    The quick filters you can use are:
 
@@ -190,7 +190,7 @@ To learn more, see [Search code](../search/code-search.md).
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/work-item-search-filters.png)    
+	> ![Search from the title bar](_img/search/work-item-search-filters.png)    
 
    The quick filters you can use are:
 

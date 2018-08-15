@@ -1,6 +1,6 @@
 ---
 title: Turn preview features on or off 
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Enable/disable or activate/deactivate features in preview at the user, team project, or account level  
 ms.technology: devops-collab
 ms.prod: devops
@@ -16,17 +16,17 @@ ms.date: 07/21/2018
 
 # Enable preview features 
 
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 As new features are introduced, you can turn them on or off. That way, you can try them out, provide feedback, and work with those features that meet your requirements.  
 
 Some features provide a new user interface and functionality, which can be managed per user or team member. Others support a default experience for the account and are managed by an account administrator. 
  
 > [!NOTE]   
-> You can turn on or off select features for VSTS. Preview features become available first on VSTS and then become standard features with an update to TFS. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
+> You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to TFS. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
 
 > [!div class="mx-tdBreakAll"]  
-> |[Preview features per user](#user-level)| [Preview features per VSTS organization](#account-level)|  
+> |[Preview features per user](#user-level)| [Preview features per Azure DevOps Services organization](#account-level)|  
 > |-------------|----------|  
 > |- [New build result page]()<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)<br/>  |- [Build with multiple queues](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted.md)<br/>- [Build YAML Definitions](../../pipelines/build/yaml.md)<br/>- [Git Forks](../../repos/git/forks.md)<br/>- New build results page<br/>- [New Navigation](https://blogs.msdn.microsoft.com/devops/2018/06/19/new-navigation/)<br/>- [New release progress views](../../pipelines/preview/new-release-summary.md)<br/>- [New Releases Hub](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#organize-your-release-definitions-in-folders)  |
 
@@ -74,14 +74,14 @@ When you enable a feature at the organization level, you essentially turn it on 
 > ![Preview features options for the account](_img/manage-features/account-s137.png)
 
 
-## Features now enabled for all VSTS projects 
+## Features now enabled for all Azure DevOps Services projects 
 - [Approval gates in releases](../../pipelines/release/approvals/index.md)  
 - [Combine email recipients](../../notifications/howto-manage-team-notifications.md) 
 - [New Dashboards Experience](../../report/dashboards/dashboards.md)  
 - [New experience in Code, Work Item, & Wiki search](https://docs.microsoft.com/vsts/release-notes/2017/oct-06-vsts#code)  
 - [New Queries Experience](../../boards/queries/view-run-query.md)   
-- [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md) 
-- [New Test Plan Experience](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#test-1)<br/>
+- [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)  
+- [New Test Plan Experience](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#test-1)  
 - [New Work Items Hub](../../boards/work-items/view-add-work-items.md)   
 - [NuGet.org upstream sources](../../package/nuget/upstream-sources.md) 
 - [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md).   
@@ -93,32 +93,4 @@ When you enable a feature at the organization level, you essentially turn it on 
 - [Updated package experience](../../package/index.md) 
 - [Wiki](../wiki/add-edit-wiki.md)  
 
-<!---
-
-<a id="oob-notifications">  </a>
-## Out of the box notifications 
-
-With out-of-the-box notifications, users automatically receive notifications for events such as:
-
-* The user is assigned a work item  
-* The user is added or removed as a reviewer to a pull request  
-* The user has a pull request that is updated  
-* The user has a build that completes  
-
-These subscriptions appear in the new user notifications experience, and users can easily choose to opt out of any of them. To learn more, see [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md). 
-
-
-
-<a id="team-expansion-notifications">  </a>
-## Team expansion for notifications 
-
-Enable this feature for your account when you want notifications to be sent by default for all team-associated events. Such events include when pull requests are created or updated. Team admins can choose to opt-out of these notifications. See [Manage team notifications](../../notifications/howto-manage-team-notifications.md).  
- 
-
-<a id="task-tool-installers">  </a>
-### Task tool installers
-
-You can use tool installer tasks to enable your build or release process to lazily install tool sets. So now you can install dependencies on Microsoft-hosted agents and test and validate your app on multiple versions of a tool set. 
-
--->
 

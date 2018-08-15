@@ -1,7 +1,7 @@
 ---
 title: Project and navigational elements, key concepts, objects, and terms
-titleSuffix: VSTS & TFS
-description: Understand the key concepts that support navigation and managing projects available with Visual Studio Team Services and Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS
+description: Understand the key concepts that support navigation and managing projects available with Azure DevOps Services and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -18,7 +18,7 @@ ms.date: 07/21/2018
 
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
  
-This glossary describes terms used when navigating in the web portal for  Visual Studio Team Services (VSTS) and Team Foundation Server (TFS).  See also: 
+This glossary describes terms used when navigating in the web portal for  Azure DevOps Services and Team Foundation Server (TFS).  See also: 
 - [Agile glossary](../../boards/work-items/agile-glossary.md) 
 - [Security glossary](../../organizations/security/security-glossary.md)  
 
@@ -30,7 +30,7 @@ Each product backlog can be customized by a team. Learn more: [Create your backl
 
 ::: moniker range="vsts" 
 ## Analytics views
-Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for VSTS. 
+Analytics views provide a simplified way to specify the filter criteria for a Power BI report based on the Analytics service. The Analytics service is the reporting platform for Azure DevOps Services. 
 ::: moniker-end
 
 [!INCLUDE [temp](../../_shared/glossary-terms/area-paths.md)] 
@@ -52,7 +52,7 @@ An interactive, electronic sign board that supports visualization of the flow of
 A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../repos/git/index.md).  
 
 > [!NOTE]   
-> Git in Visual Studio and VSTS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with VSTS.
+> Git in Visual Studio and Azure DevOps Services is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with Azure DevOps Services.
 
 [!INCLUDE [temp](../../_shared/glossary-terms/notifications.md)]
 
