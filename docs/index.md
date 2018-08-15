@@ -20,8 +20,8 @@ featureFlags:
 
 <div id="main" class="v2">
 <div class="container">
-<h1>Azure DevOps Documentation</h1>
-    <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps Services provides free private Git repositories, configurable Kanban boards, interactive backlogs, high-performance pipelines, and extensive automated and cloud-based load testing. Go [here](index-tfs.md) for on-premises Team Foundation Server.</p>
+<h1>Azure DevOps Services Documentation</h1>
+    <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps Services provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For our on-premises Team Foundation Server, go [here](index-tfs.md).</p>
     <p><i>[What happened to Visual Studio Team Services?](/vsts/user-guide/what-happened-vsts)</i></p>
 <a href="#start"> </a>
 <h2>Start using Azure DevOps</h2>
@@ -37,8 +37,8 @@ featureFlags:
                                                         <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="" />
                                                     </div>
                                                 </div>
-                                                <div class="cardText">
-                                                    <h3><a href="/vsts/open-source/get-started">Start building your Github projects using Azure Pipelines</a></h3>
+                                                <div class="cardText"
+                                                    <h3><a href="/vsts/open-source/get-started/index">Build GitHub projects using Azure Pipelines</a></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,7 +86,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/vsts/pipelines/get-started">Start using Azure Pipelines</a></h3>
+                                                    <h3><a href="/pipelines/get-started/pipelines-get-started">Start using Azure Pipelines</a></h3>
                                                 </div>
                                             </div>
                                         </div>

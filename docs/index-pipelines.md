@@ -24,7 +24,7 @@ featureFlags:
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
-                               <a href="/vsts/pipelines/get-started/index">
+                               <a href="/vsts/pipelines/get-started/pipelines-get-started">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -74,7 +74,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Languages</h3>
-                                                    <p>Discover how to define pipelines in the language you use.</p>
+                                                    <p>Define pipelines in the language you use.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -93,7 +93,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Targets</h3>
-                                                    <p>Discover how to deploy your apps to varios targets, including Linux VM, npm, NuGet, and more.</p>
+                                                    <p>Deploy your apps to various targets, including Linux VM, npm, NuGet, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
