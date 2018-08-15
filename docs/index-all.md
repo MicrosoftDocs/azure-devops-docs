@@ -25,7 +25,7 @@ featureFlags:
                         <h3>Get started guides</h3>
                             <p><a href="/vsts/repos/get-started/index">Azure Repos</a><br/>
                             <a href="/vsts/boards/get-started/index">Azure Boards</a><br/>
-                            <a href="/vsts/pipelines/get-started/index">Azure Pipelines</a><br/>
+                            <a href="/vsts/pipelines/get-started/pipelines-get-started">Azure Pipelines</a><br/>
                             <a href="/vsts/user-guide/index">Azure DevOps</a><br/>
                             <a href="/vsts/project/navigation/preview-features">Navigation basics</a><br/>
                             <a href="/vsts/release-notes/index">What's new</a></p>
