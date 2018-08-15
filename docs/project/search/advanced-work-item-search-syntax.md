@@ -63,10 +63,8 @@ The selected projects are always at the top of the list.
 Notice that hit counts are also shown for projects that are not selected. 
 
 Open the search results in a new browser tab from either search box by
-pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
+pressing _Ctrl+Shift+Enter_ or by holding _Ctrl_ and clicking  the
 ![start search icon](_img/_shared/start-search-icon.png) icon.
-In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
-to the new browser tab. 
 
 <a name="quickfilters"></a>
 ## Quick Filters for matching in specific fields
@@ -101,8 +99,6 @@ The common inline search filters can be quickly accessed using shortcuts:
 
 For example, you can use quick searches such as **a:@Me s:active t:bug** to find all bugs assigned to you.
 
-![Quick Filters shortcuts](_img/advanced-work-item-search-syntax/title-bar-search-quick-filters.png)
-
 <a name="locationfunctions"></a>
 ## Filters to scope projects, area and iteration paths
 
@@ -124,7 +120,15 @@ Type or paste the work item ID in the search box in the Azure DevOps or TFS titl
 to quickly navigate to it. Searching for a work item ID opens the work item in a 
 modal dialog, providing quick access to read and edit work items.
 
+# [New navigation](#tab/new-nav)
+
+![Opening the work item in a modal dialogue](_img/advanced-work-item-search-syntax/open-work-item-modal-new.png)
+
+# [Previous navigation](#tab/previous-nav)
+
 ![Opening the work item in a modal dialogue](_img/advanced-work-item-search-syntax/open-work-item-modal.png)
+
+---
 
 <a name="boolean"></a>
 ## Narrow your search with Boolean operators

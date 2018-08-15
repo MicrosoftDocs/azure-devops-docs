@@ -19,18 +19,36 @@ Work Item Search provides fast and flexible search across all your work items ov
 See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/vsts/project/search/toc.json&bc=/vsts/project/search/breadcrumb/toc.json)
 
 <a name="start-search"></a>
-## Get searching
+
+## Start searching
+
+# [New navigation](#tab/new-nav)
+
+1. Open the **Azure Boards** section in Azure Devops (see [Navigation basics](../navigation/index.md)).
+
+1. Choose the ![start search icon](_img/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
+
+   ![The Work Item Search textbox in the title bar](_img/work-item-search-get-started/show-search-box.png)    
+
+1. Enter a search string in the textbox, and press _Ctrl+Enter_ (or choose the 
+   ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
+
+# [Previous navigation](#tab/previous-nav)
 
 1. In the search textbox at the top right of the window, check that the text says
    _Search work items_.
 
    ![The Work Item Search textbox in the title bar](_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)    
 
-   If you have the Code Search extension installed, the search text box may
+1. If you have the Code Search extension installed, the search text box may
    say _Search code_. In this case, use the drop-down selector to change it. 
 
-1. Enter a search string in the textbox, and press _Enter_ (or choose the 
+1. Enter a search string in the textbox, and press _Ctrl+Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon.png) icon) to start your search. 
+
+---
+
+## View the results
 
 1. Search results are displayed in a snippet view, where matches found are shown in bold.
 
@@ -45,10 +63,10 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
    ![Display a work item](_img/work-item-search-get-started/search-results-02.png)
 
-   >Open the search results in a new browser tab from a search box by
+   > Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
    ![start search icon](_img/_shared/start-search-icon.png) icon.
-   In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
+   In Google Chrome or Firefox, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
 1. Fine tune your search by specifying the fields to search. Enter `a:` and a user name
@@ -77,11 +95,23 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
    to a user named Chris.
 
 1. Widen your search across all projects, or narrow it to specific types
-   and states, by using the drop-down selector lists at the top of the results page.
+   and states. Use the "filter" icon to show the selector lists.
+
+   ![Showing the filter lists](_img/work-item-search-get-started/show-filters.png)    
+
+1. Select the criteria you want in the drop-down selector lists.
 
    ![Selector drop-down lists](_img/work-item-search-get-started/area-selectors.png)    
 
-   >Work Item search remembers your filter settings. For example, the project and area path that you have selected in a search will be applied in your subsequent searches.
+   > Work Item search remembers your filter settings. For example, the project and area path that you have selected in a search will be applied in your subsequent searches.
+
+1. Sort the results as you need using the drop-down list of field names, work item types, or by relevance.
+
+   ![Sort drop-down list](_img/work-item-search-get-started/sort-order.png)    
+
+1. Quickly search for code containing the same search string (see [Search your code](code-search.md)).
+
+   ![Search for code containing the same search string](_img/work-item-search-get-started/view-code-search.png)
 
 ## Next step
 
