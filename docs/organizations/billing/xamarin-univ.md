@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2017
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2015'
 ---
 
@@ -24,7 +24,7 @@ In this topic:
 * [Steps to buy Xamarin University from the Visual Studio Marketplace](#buy-it)
 * [Q & A](#q-n-a)
 
-To subscribe to Xamarin University you need:
+To subscribe to Xamarin University you need the following:
 
 * A [Microsoft account](https://www.microsoft.com/account), such as, an outlook.com or hotmail.com address,
 or a work or school account, such as someone@fabrikam.com.
@@ -33,7 +33,7 @@ or a work or school account, such as someone@fabrikam.com.
 to use for billing.  There is no cost to create an Azure subscription, which essentially is a billing account
 that gets charged when you buy something.
 
-	You may already have an Azure subscription if you use Azure, or you pay for VSTS or other 
+	You may already have an Azure subscription if you use Azure, or you pay for Azure DevOps Services or other 
 	services through Visual Studio Marketplace.  If you don't have an Azure subscription, you can 
 	[sign up for Azure](https://portal.azure.com) 
 	before or during your first Marketplace purchase. Learn more about 
@@ -44,42 +44,40 @@ that gets charged when you buy something.
 
 ##	Steps to buy Xamarin University from the Visual Studio Marketplace
 
-1.	Sign in to 
-[Visual Studio Marketplace > Subscriptions](https://marketplace.visualstudio.com/subscriptions) 
-with your Microsoft account, or with your work or school account:
+1. Sign in to [Visual Studio Marketplace > Subscriptions](https://marketplace.visualstudio.com/subscriptions) 
+with your Microsoft account, or with your work or school account.
 
-2. Choose Xamarin University:
+2. Choose **Xamarin University**.
 
- ![Choose Xamarin University](_img/xamarin/01-marketplace.png)
+   ![Choose Xamarin University](_img/xamarin/01-marketplace.png)
 
-3. On the next screen choose **Buy**:
+3. On the next screen choose **Get**.
 
- ![Buy Xamarin University](_img/xamarin/02-xamarin-univ.png)
+   ![Buy Xamarin University](_img/xamarin/02-xamarin-univ.png)
 
 4. Choose the Azure subscription that you want to use for billing.  The name of the subscription defaults to the type of account it is, but you can change the name within the [Azure Account portal](https://portal.azure.com).  You can also create a new Azure subscription to use instead.
 
- ![Choose your Azure subscription or create a new one](_img/xamarin/03-xamarin-id.png)
+   ![Choose your Azure subscription or create a new one](_img/xamarin/03-xamarin-id.png)
 
 5. Choose the number of users:
 
- ![Choose the quantity of Xamarin University licenses you need](_img/xamarin/04-xamarin-quantity.png)
+   ![Choose the quantity of Xamarin University licenses you need](_img/xamarin/04-xamarin-quantity.png)
 
 6. Confirm your purchase:
 
- ![Confirm your purcase](_img/xamarin/05-xamarin-confirm.png)
+   ![Confirm your purchase](_img/xamarin/05-xamarin-confirm.png)
 
- Your purchase is complete, and you can get started:
+ Your purchase is complete.
 
- ![Microsoft confirmation screen for purchasing Xamarin University](_img/xamarin/06-ms-confirm.png)
+  >![Microsoft confirmation screen for purchasing Xamarin University](_img/xamarin/06-ms-confirm.png)
 
-7. There is information on the next screen explaining that Xamarin University will send you a redemption
-code to use on the Xamarin site:
+7. There is information on the next screen explaining that Xamarin University will send you a redemption code to use on the Xamarin site:
 
- ![You will receive email with a redemption code for the Xamarin site](_img/xamarin/07-email-notice.png)
+   ![You will receive email with a redemption code for the Xamarin site](_img/xamarin/07-email-notice.png)
 
-8. The email that you will receive looks like this:
+The email that you receive looks like the following:
 
- ![Example email with redeption code](_img/xamarin/08-xamarin-email.png)
+  >![Example email with redemption code](_img/xamarin/08-xamarin-email.png)
 
 <a name="q-n-a"></a>
 
