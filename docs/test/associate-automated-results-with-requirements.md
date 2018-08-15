@@ -51,7 +51,7 @@ and choose the **Associate tests to work item** (link) icon.
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
-* [Test with unified agents and phases](../pipelines/test/set-up-continuous-test-environments-builds.md#unified-agents)
+* [Test with unified agents and jobs](../pipelines/test/set-up-continuous-test-environments-builds.md#unified-agents)
 * [Continuous testing scenarios and capabilities](index.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

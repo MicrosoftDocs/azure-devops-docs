@@ -531,9 +531,9 @@ allows you to run cloud-based load tests. See
 1. Add matching context parameters to your load test **runsettings** file.
    To do this expand **Run Settings** in the load test editor, right-click your **[Active]** run settings entry, then choose **Add Context Parameter**.
 
-If you are running load tests in the CI/CD pipeline where the URL of the app may change from environment to environment,
+If you are running load tests in the CI/CD pipeline where the URL of the app may change from stage to stage,
 you can use the [Cloud Load Test task](../../pipelines/tasks/test/cloud-based-load-test.md). It enables you to override the context parameter value from the task UI and
-use any environment variables defined in the pipeline to pass in the required information.
+use any stage variables defined in the pipeline to pass in the required information.
 
 ### Q: Can I get more detailed profiler information?
 

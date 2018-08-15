@@ -1,4 +1,4 @@
-- name: Test
+- name: Azure Test Plans
   href: index.md
 - name: Overview
   items:
