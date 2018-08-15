@@ -1,0 +1,189 @@
+### YamlMime:YamlDocument
+documentType: Conceptual
+title: Azure DevOps Services New User Guide
+metadata:
+  title: Billing topics and articles for Azure DevOps Services and TFS
+  description: Learn the basics of the Azure DevOps Services interface and some common tasks.
+  ms.date: 09/05/2018
+  ms.prod: devops
+  ms.technology: vs-ide-code-analysis
+  ms.topic: landing-page
+  ms.author: chcomley
+  author: chcomley
+  manager: douge
+sections:
+- title: Billing for Azure DevOps Services
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: https://azure.microsoft.com/en-us/pricing/details/visual-studio-team-services/
+        html: <p></p>
+        image:
+          src: 
+        title: Azure DevOps Services pricing  
+      - href: overview.md
+        html: <p></p>
+        image:
+          src: 
+        title: Azure DevOps Services billing overview  
+
+- title: 5-minute Quickstarts
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: set-up-billing-for-your-organization.md
+        html: <p></p>
+        image:
+          src: 
+        title: Set up billing for Azure DevOps Services
+      - href: try-additional-features.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/logos/logo_git-color.svg
+        title: Start free trials for paid Azure DevOps Services features and extensions
+      - href: buy-basic-access-add-users.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_quick-start.svg
+        title: Pay for Azure DevOps Services users
+      - href: buy-more-build.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_test.svg
+        title: Buy Azure DevOps Pipelines
+      - href: buy-load-testing-vs.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_extensions.svg
+        title: Buy cloud-based load testing
+
+- title: Step-by-step Tutorials
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../accounts/change-organization-location.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_setup.svg
+        title: Connect Azure DevOps Services to Azure Active Directory
+
+- title: How-to guides
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: add-backup-billing-managers.md
+        html: <p></p>
+        image:
+          src: 
+        title: Add users to make purchases for Azure DevOps Services
+      - href: change-azure-subscription.md
+        html: <p></p>
+        image:
+          src: 
+        title: Change the Azure subscription your organization uses for billing
+      - href: reduce-cancel-paid-vsts-users.md
+        html: <p></p>
+        image:
+          src: 
+        title: Change number of paid users
+      - href: vsts-billing-faq.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_tools.svg
+        title: Billing FAQ
+      - href: change-number-paid-extension-users.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_configure-teams.svg
+        title: Change number of paid extension users
+      - href: ../../marketplace/approve-extensions.md
+        html: <p></p>
+        image:
+          src: 
+        title: Approve extension requests
+
+- title: Troubleshooting
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: faq-extension-trials.md
+        html: <p></p>
+        image:
+          src: 
+        title: Extension trials
+
+- title: Reference
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../../security/index.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
+        html: <p></p>
+        image:
+          src: 
+        title: Permissions
+      - href: ../../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts
+        html: <p></p>
+        image:
+          src: 
+        title: About access levels
+      - href: ../../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts
+        html: <p></p>
+        image:
+          src: 
+        title: Default permissions & access
+
+- title: Resources
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - herf: ../../user-guide/index.yml
+        html:
+        image:
+          src:
+        title: Azure DevOps Services New User Guide
+      - href: ../project/navigation/index.md
+        html: <p></p>
+        image:
+          src: 
+        title: Navigation basics
+      - href: ../accounts/index.md
+        html: <p></p>
+        image:
+          src: 
+        title: Organization management
+      - href: https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
+        html: <p></p>
+        image:
+          src: 
+        title: Buy Visual Studio cloud subscriptions
+      - href: ../accounts/xamarin-univ.md
+        html: <p></p>
+        image:
+          src: 
+        title: Buy Xamarin University subscription
+      - href: https://docs.microsoft.com/tfs/server/index?view=vsts
+        html: <p></p>
+        image:
+          src: 
+        title: TFS Server Administration

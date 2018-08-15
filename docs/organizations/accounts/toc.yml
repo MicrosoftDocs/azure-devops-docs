@@ -139,7 +139,7 @@
   - name: "Security & Identity"
     href: ../../organizations/security/index.md
   - name: Billing
-    href: ../billing/index.md
+    href: ../billing/index.yml
   - name: Manage Extensions
     href: ../../marketplace/index.md
   - name: Service hooks

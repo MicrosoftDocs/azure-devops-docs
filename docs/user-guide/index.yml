@@ -4,7 +4,7 @@ title: Azure DevOps Services New User Guide
 metadata:
   title: DevOps Services New User Guide documentation
   description: Learn the basics of the Azure DevOps Services interface and some common tasks.
-  ms.date: 09/05/2018
+  ms.date: 08/15/2018
   ms.prod: devops
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -23,7 +23,19 @@ abstract:
 sections:
 - title:
   items:
-  - html: <a href=”what-happened-vsts.md>What happened to Visual Studio Team Services?</a>  
+  - html: <a href=”what-happened-vsts.md>What happened to Visual Studio Team Services?</a> 
+- title: 
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+      - href: ../pipelines/get-started/pipelines-get-started.md
+        html: <p></p>
+        image:
+          src: ../_img/index/DevOpsIconPipelines40.svg
+        title: Start using Azure DevOps Pipelines  
 - title: 5-minute Quickstarts
   items:
   - type: list
@@ -84,7 +96,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_setup.svg
         title: Set favorites
-      - href: ./boards/work-items/follow-work-items.md
+      - href: ../boards/work-items/follow-work-items.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_pull-request.svg
@@ -132,7 +144,7 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_xplat-code.svg
         title: Source control
-      - href: vsts/work/backlogs/overview.md
+      - href: ../work/backlogs/overview.md
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_kaban.svg
