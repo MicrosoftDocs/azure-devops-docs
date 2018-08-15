@@ -1,7 +1,7 @@
 - name: Navigation Basics 
   href: index.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json 
   items:
-  - name: Open a service or page
+  - name: Open a service, page, or settings
     href: go-to-service-page.md   
   - name: Add an artifact or team 
     href: add-artifact-team.md  

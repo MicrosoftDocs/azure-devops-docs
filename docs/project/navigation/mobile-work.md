@@ -1,7 +1,7 @@
 ---
 title: View and update work items via a mobile browser 
-titleSuffix: VSTS & TFS  
-description: View and update work items from your mobile client when using Visual Studio Team Services or Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS  
+description: View and update work items from your mobile client when using Azure DevOps Services or Team Foundation Server 
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 07/21/2018
 
 #  View and update work items via the mobile browser   
 
-**VSTS | TFS 2018**
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)] 
 
 With the mobile browser and work item form, you gain on-the-go features to stay on top of the latest updates made to work tracking. When you click any work item link on your mobile device, it will open a mobile-friendly version of the work item. From there, you can update the work item or access all work items assigned to you or that you're following.   
  
@@ -24,7 +24,7 @@ With the mobile browser and work item form, you gain on-the-go features to stay 
 ::: moniker range="vsts"
 
 > [!NOTE]  
-> The mobile browser supports work tracking in VSTS OR TFS 2018 and later versions. To sign up for VSTS, go to [VSTS](https://www.visualstudio.com/team-services/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application.      
+> The mobile browser supports work tracking in Azure DevOps Services and TFS 2018 and later versions. To sign up for free, go to [Azure DevOps Services](https://www.visualstudio.com/team-services/). The mobile browser is not an app, but a mobile view into select features. There is nothing to download. You access the mobile browser by clicking a link from a work item you receive in your mobile email application.      
 
 ::: moniker-end
 

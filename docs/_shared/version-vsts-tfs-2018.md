@@ -2,4 +2,4 @@
 ms.topic: include
 ---
 
-**VSTS | TFS 2018**
+**Azure DevOps Services | TFS 2018**

@@ -1,7 +1,7 @@
 ---
 title: Web portal& Team Explorer keyboard shortcuts 
-titleSuffix: VSTS & TFS   
-description: Keyboard shortcuts for the VSTS and TFS web portal, and Team Explorer  
+titleSuffix: Azure DevOps Services & TFS   
+description: Keyboard shortcuts for the web portal for Azure DevOps Services, TFS, and Team Explorer
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: reference
@@ -14,17 +14,17 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Keyboard shortcuts for VSTS, TFS, and Team Explorer
+# Keyboard shortcuts for Azure DevOps Services, TFS, and Team Explorer
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
 
-You can use the keyboard shortcuts listed in this topic when you work within Visual Studio Team Services (VSTS), the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
+You can use the keyboard shortcuts listed in this topic when you work within Azure DevOps Services, the web portal for Team Foundation Server (TFS), or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
 
 For specific guidance on navigating within the web portal, see [Navigation basics](index.md).
 
 ## Web portal
 
-You can use these keyboard shortcuts when working in the web portal for VSTS or TFS.  
+You can use these keyboard shortcuts when working in the web portal for Azure DevOps or TFS.  
 
 <table width="70%">
 <tbody valign="top">
@@ -65,9 +65,15 @@ You can use these keyboard shortcuts when working in the web portal for VSTS or 
 ## Web portal, global shortcuts
 
 Type **?** to access the Global and page-specific shortcuts.   
+::: moniker-end
 
->[!NOTE]  
-><b>Feature availability: </b>The following shortcuts are available from the web portal for VSTS and TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
+::: moniker range="tfs-2015"
+> [!NOTE]  
+> The following shortcuts are available for TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/global-shortcuts.md)]
 
@@ -81,7 +87,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range="vsts"
 
-## Work>Work Items 
+## Work Items 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
@@ -91,17 +97,17 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker-end
 
-## Work>Backlogs 
+## Backlogs 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-backlog-shortcuts.md)]
 
 ::: moniker range=">= tfs-2015"
 
-## Work>Boards 
+## Boards 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-board-shortcuts.md)]
 
-## Work>Queries 
+## Queries 
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/queries-shortcuts.md)]
 
@@ -109,7 +115,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= tfs-2017"
 
-## Work>Plans
+## Plans
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
@@ -117,7 +123,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ::: moniker range=">= tfs-2015"
 
-## Test>Test Plans, Parameters, and Runs  
+## Test Plans, Parameters, and Runs  
 
 [!INCLUDE [temp](../../_shared/keyboard-shortcuts/test-shortcuts.md)]
 
