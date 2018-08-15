@@ -535,7 +535,15 @@ install. This requires multiple steps, depending on whether Code Search is confi
    Do this by navigating to the **Manage Extensions** page of each collection in
    your Team Foundation Server:
 
+# [New navigation](#tab/new-nav)
+
+   ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
+
+# [Previous navigation](#tab/previous-nav)
+
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
+
+---
 
 1. Remove the Search feature:
 
@@ -574,7 +582,15 @@ install. This requires multiple steps, depending on whether Code Search is confi
 1. Uninstall the Code Search extension for each collection where it is installed. Do this by navigating to the **Manage Extensions** page of each collection in
 your Team Foundation Server.
 
+# [New navigation](#tab/new-nav)
+
+   ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
+
+# [Previous navigation](#tab/previous-nav)
+
    ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
+
+---
 
 1. Remove the Search feature:
 
@@ -617,8 +633,6 @@ Code Search for Team Foundation Server 2017 has the following limitations:
 
 1. The search box is shown only in the context of a project page. 
    Navigate to a project and check if the search box is displayed at the top right. 
-
-   ![The Code Search textbox in the Azure DevOps title bar](_img/code-search-get-started/title-bar-search-box-empty-outlined.png)    
 
 1. If the search box is not shown, verify that the extension is installed for the collection. 
    If not, [install](#config-ts) or [configure](#config-tfs) the extension.
