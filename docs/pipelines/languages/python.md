@@ -88,8 +88,8 @@ Add the following YAML to run a Python script file named `myPythonScript.py`.
 ```yaml
 - task: PythonScript@0
   inputs:
-    targetType: 'filePath'
-    filePath: 'src/myPythonScript.py'
+    scriptSource: 'filePath'
+    scriptPath: 'src/myPythonScript.py'
     arguments: ''
 ```
 
@@ -172,11 +172,21 @@ Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and
 
 ## Retain artifacts
 
+Build an sdist of your package.
+
+```yaml
+- script: 'python setup.py sdist'
+  displayName: Build sdist
+```
+
 Add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task to store your build output with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
 
 ```yaml
 - task: PublishBuildArtifacts@1
-  pathToPublish: 'dist'
+  displayName: 'Publish Artifact: dist'
+  inputs:
+    PathtoPublish: dist
+    ArtifactName: dist
 ```
 
 ## Related extensions
