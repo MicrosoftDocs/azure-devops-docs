@@ -36,7 +36,7 @@ See [Default manual testing permissions and access](manual-test-permissions.md).
    [create your project](../organizations/accounts/organization-management.md), 
    and [create your backlog](../boards/backlogs/create-your-backlog.md). 
 
-1. In Azure DevOps, open your project.
+1. In Azure DevOps or TFS, open your project.
 
 1. Go to the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]. Create a test plan for your current sprint.
 

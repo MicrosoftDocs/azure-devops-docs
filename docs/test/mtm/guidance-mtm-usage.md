@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 Azure DevOps and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
 
 * The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).
-* The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides a better experiences across Plan, Author, Execute and Track phases of Manual testing.
+* The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a web-based manual testing solution, which works across all platforms and with all browsers. It provides a better experiences across Plan, Author, Execute and Track stages of Manual testing.
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
@@ -33,7 +33,7 @@ solution for manual testing compared to Microsoft Test Manager.
 ## Manual Testing 
 
 The [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a fully-featured test
-management solution spanning all phases of the testing lifecycle.
+management solution spanning all stages of the testing lifecycle.
 Itworks on all platforms (such as Linux, macOS,
 Windows, and others) and all browsers (such as Edge, Chrome, Firefox,
 and others). You can easily get started with using manual testing
@@ -185,7 +185,7 @@ and [exploratory testing with Exploratory runner (client)](exploratory-testing-u
 As clearly shown above, the [!INCLUDE [test-hub-include-nolink](../_shared/test-hub-include-nolink.md)] is a much richer, faster, and easier-to-use
 solution for manual testing compared to the Test Center in MTM. It works on
 all platforms and all browsers, and has a rich and modern web UI that improves your testing
-experience across all phases of manual testing. 
+experience across all stages of manual testing. 
 
 All the test plans, test suites, test cases, and other test management data you create
 using MTM are stored in Azure DevOps or TFS, so existing

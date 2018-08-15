@@ -78,7 +78,7 @@ so the **Publish Test Results** task cannot publish attachments when these forma
 
 * [Continuous testing scenarios and capabilities](index.md)
 * [Set up continuous testing for your builds](../pipelines/test/set-up-continuous-testing-builds.md)
-* [Test with unified agents and phases](../pipelines/test/set-up-continuous-testing-builds.md)
+* [Test with unified agents and jobs](../pipelines/test/set-up-continuous-testing-builds.md)
 * [Pass parameters to tests from a build or release pipeline](../pipelines/test/reference-qa.md#pass-params)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

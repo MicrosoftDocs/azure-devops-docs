@@ -128,6 +128,6 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
 * [Run automated tests with Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md)
-* [Test with unified agents and phases](../pipelines/test/set-up-continuous-test-environments-builds.md#unified-agents)
+* [Test with unified agents and jobs](../pipelines/test/set-up-continuous-test-environments-builds.md#unified-agents)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

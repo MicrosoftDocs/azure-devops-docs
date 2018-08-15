@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Run automated tests from test plans
 
-Automate test cases in your test plans and run them directly from the [!INCLUDE [test-hub-include](_shared/test-hub-include.md)]:
+Automate test cases in your test plans and run them directly from the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]:
 
 * Provides a user-friendly process for testers who may not be well
   versed with running tests in Build or Release workflows.
@@ -68,18 +68,18 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 1. You will need a release pipeline that was created from the 
    **Run automated tests from Test Manager** template to run tests from test plans
    in the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]. If you have an existing release pipeline that was created
-   using this template, select it and then select the existing environment in the
+   using this template, select it and then select the existing stage in the
    release pipeline where the tests will be executed.
    Otherwise, choose the **Create new** link in the
-   dialog to create a new release pipeline containing a single environment
+   dialog to create a new release pipeline containing a single stage
    with the **Visual Studio Test** task already added.
 
-   ![Selecting a release pipelines or creating a new one](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102a.png)
+   ![Selecting a release pipeline or creating a new one](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102a.png)
 
    [How do I pass parameters to my test code from a build or release pipeline?](../pipelines/test/reference-qa.md#pass-params)
 
 1. To configure the **Visual Studio Test** task and the release pipeline,
-   start by assigning meaningful names to the release pipeline and environment.
+   start by assigning meaningful names to the release pipeline and stage.
    Then select the **Visual Studio Test** task and configure it as follows:
  
    * Verify that version 2 of the Visual Studio Test task is selected.
@@ -114,12 +114,12 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
    For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md).
 
-1. Choose the **Agent phase** item and verify that the deployment queue
+1. Choose the **Agent job** item and verify that the deployment queue
    is set to the one containing the machines where you want to run the
    tests. If your tests require special machines from the agent pool,
    you can add demands that will select these at runtime.
 
-   ![Specifying the properties for the Agent phase](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-04.png)
+   ![Specifying the properties for the Agent job](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-04.png)
 
    You may be able to minimize test times by distributing tests across multiple
    agents by setting **Parallelism** to **Multiple executions** and specifying the number of agents.
@@ -141,9 +141,9 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 1. If you chose **Create new** in the Test plan settings dialog in step 2
    of this example, return to the browser page containing your test plan
    settings. In the Test plan settings dialog, select the release pipeline
-   and environment you just saved.
+   and stage you just saved.
 
-   ![Selecting the release pipeline and environment](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-107.png)
+   ![Selecting the release pipeline and stage](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-107.png)
 
 ## Run the automated tests
 
@@ -160,11 +160,11 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 1. Choose **OK** to start the testing process. The system checks that only
    automated tests are selected (any manual tests are ignored),
-   validates the environment to ensure the Visual Studio Test
+   validates the stage to ensure the Visual Studio Test
    task is present and has valid settings, checks the user's
    permission to create a release for the selected release
    pipeline, creates a test run, and then triggers the creation
-   of a release to the selected environment.
+   of a release to the selected stage.
 
    ![Starting the test execution](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-109.png)
 
@@ -202,7 +202,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
 * [Associate automated tests with test cases](associate-automated-test-with-test-case.md)
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
-* [Test with unified agents and phases](../pipelines/test/set-up-continuous-test-environments-builds.md)
+* [Test with unified agents and jobs](../pipelines/test/set-up-continuous-test-environments-builds.md)
 * [Continuous testing scenarios and capabilities](index.md)
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
