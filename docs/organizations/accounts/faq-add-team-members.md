@@ -1,6 +1,6 @@
 ---
-title: Troubleshoot adding members to team projects in VSTS
-description: Learn the answers to frequently asked questions (FAQs), like how to add more members to your team project, help users sign in, remove users, and more
+title: Troubleshoot adding members to projects in Azure DevOps Services
+description: Learn the answers to frequently asked questions (FAQs), like how to add more members to your project, help users sign in, remove users, and more
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: d3945cd4-d024-4d6f-b949-9feaa62e9948
@@ -12,25 +12,25 @@ ms.date: 4/04/2018
 monikerRange: 'vsts'
 ---
 
-# Troubleshoot adding members to team projects in Visual Studio Team Services (VSTS)
+# Troubleshoot adding members to projects in Azure DevOps Services 
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 <a name="cant-add-users"></a>
 
-**Q: Why can't I add any more members to my team project?**
+**Q: Why can't I add any more members to my project?** 
 
-A: Your VSTS organization is free for the first five users with Basic access. You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. After you assign all five free users with Basic access, you can continue adding Stakeholders and Visual Studio subscribers. 
+A: Your Azure DevOps Services organization is free for the first five users with Basic access. You can add unlimited Stakeholders and Visual Studio subscribers for no extra charge. After you assign all five free users with Basic access, you can continue adding Stakeholders and Visual Studio subscribers.
 
-To add six or more users with Basic access, you need to [set up billing in Azure](../billing/set-up-billing-for-your-organization-vs.md). Then you can [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), return to your VSTS organization, [add these users, and assign them Basic access](add-organization-users-from-user-hub.md). When billing is set up, you can pay monthly for the extra users' access. And you can cancel at any time.
+To add six or more users with Basic access, you need to [set up billing in Azure](../billing/set-up-billing-for-your-organization-vs.md). Then you can [pay for more users who need Basic access](../billing/buy-basic-access-add-users.md), return to your Azure DevOps Services organization, [add these users, and assign them Basic access](add-organization-users-from-user-hub.md). When billing is set up, you can pay monthly for the extra users' access. And you can cancel at any time. 
 
-If you need more Visual Studio subscriptions, learn [how to buy subscriptions](../billing/change-azure-subscription.md) from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions).
+If you need more Visual Studio subscriptions, learn [how to buy subscriptions](../billing/change-azure-subscription.md) from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions). 
 
 <a name="WhyCantSignIn"></a>
 
 **Q: Why can't some users sign in?**
 
-A: This problem might happen because users must sign in with Microsoft accounts unless your VSTS organization controls access with Azure Active Directory (Azure AD). If your organization is connected to Azure AD, users must be directory members to get access. See [How do I find out if my organization uses Azure Active Directory (Azure AD)?](#ConnectedDirectory) 
+A: This problem might happen because users must sign in with Microsoft accounts unless your Azure DevOps Services organization controls access with Azure Active Directory (Azure AD). If your organization is connected to Azure AD, users must be directory members to get access. See [How do I find out if my organization uses Azure Active Directory (Azure AD)?](#ConnectedDirectory) 
 
 If you're an Azure AD administrator, you can add users to the directory. If you're not, work with the directory administrator to add them. Learn [how to control organization access with Azure AD](access-with-azure-ad.md).
 
@@ -48,17 +48,17 @@ A: Loss of access might happen for [different reasons](faq-add-delete-users.md#s
 
 <a name="RemovePeople"></a>
 
-**Q: How do I remove users from my VSTS organization?**
+**Q: How do I remove users from my Azure DevOps Services organization?**
 
-A: Learn [how to delete users](delete-organization-users.md) across all team projects in your VSTS organization. If you paid for more users but don't need their organization access anymore, you must reduce your paid users to avoid charges.
+A: Learn [how to delete users](delete-organization-users.md) across all projects in your Azure DevOps Services organization. If you paid for more users but don't need their organization access anymore, you must reduce your paid users to avoid charges.
 
 **Q: Why can't I find members from my connected Azure AD, even though I'm the Azure AD global admin?**
 
-A: You're probably a guest in the Azure AD instance that backs VSTS. By default, Azure AD guests can't search in Azure AD. That's why you aren't finding users in your connected Azure AD to add to your VSTS organization.
+A: You're probably a guest in the Azure AD instance that backs Azure DevOps Services. By default, Azure AD guests can't search in Azure AD. That's why you aren't finding users in your connected Azure AD to add to your Azure DevOps Services organization.
 
 First, check to see if you're an Azure AD guest:
 
-1. Go to the **Settings** section of your VSTS organization. Look at the **Azure Active Directory** section at the bottom. Make a note of the tenant that backs your VSTS organization.
+1. Go to the **Settings** section of your Azure DevOps Services organization. Look at the **Azure Active Directory** section at the bottom. Make a note of the tenant that backs your Azure DevOps Services organization.
 2. Sign in to the new Azure portal, portal.azure.com. Check your user profile in the tenant from step 1. Check the **User type** value shown as follows: 
 
    > [!div class="mx-imgBorder"] 
@@ -66,9 +66,9 @@ First, check to see if you're an Azure AD guest:
 
 If you're an Azure AD guest, do one of the following:
 
-* Have another VSTS admin, who isn't an Azure AD guest, manage the users in VSTS for you. Members of the Project Collection Administrators group inside VSTS can administer users.
+* Have another Azure DevOps Services admin, who isn't an Azure AD guest, manage the users in Azure DevOps Services for you. Members of the Project Collection Administrators group inside Azure DevOps Services can administer users.
 * Have the Azure AD admin remove you from the connected Azure AD and re-add you. The admin needs to make you an Azure AD member rather than a guest. See **Can Azure AD B2B users be added as members instead of guests?**
-* Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. This is an advanced topic, and we don't advise it. But it works and allows the user to query Azure AD from VSTS thereafter. 
+* Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. This is an advanced topic, and we don't advise it. But it works and allows the user to query Azure AD from Azure DevOps Services thereafter. 
 
 1. [Download and install Azure AD PowerShell module](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
 2. Open PowerShell and run the following cmdlets.

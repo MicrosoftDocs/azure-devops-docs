@@ -1,6 +1,6 @@
 ---
-title: Change the number of paid users for a VSTS extension
-description: Increase or decrease the number of paid users for a Visual Studio Team Services (VSTS) feature or extension as your team grows or gets smaller
+title: Change the number of paid users for a Azure DevOps Services extension
+description: Increase or decrease the number of paid users for a Azure DevOps Services feature or extension as your team grows or gets smaller
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
@@ -13,19 +13,19 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Change the number of paid users for a Visual Studio Team Services (VSTS) extension
+# Change the number of paid users for a Azure DevOps Services extension
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.
+To scale with your team's needs, you can increase or decrease the number of paid users for a feature or extension.  
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
-## Prerequisites
+## Prerequisites 
 
-You need VSTS [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
+You need Azure DevOps Services [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 
-1. Sign in to your VSTS organization, ```https://{yourorganization}.visualstudio.com```.
+1. Sign in to your Azure DevOps Services organization, ```https://{yourorganization}.visualstudio.com```.
 
 2. Go to **Extensions**. Then select the extension you want to update.
 
@@ -42,7 +42,7 @@ You need VSTS [project collection administrator or organization owner permission
 The number of paid extension users is updated.
 
 > [!NOTE]
-> To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension). [Change the number of paid users for a VSTS extension](#change-the-number-of-paid-users-for-a-vsts-extension).
+> To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension). [Change the number of paid users for a Azure DevOps Services extension](#change-the-number-of-paid-users-for-a-vsts-extension).
 
 ## Next steps
 
@@ -52,4 +52,4 @@ The number of paid extension users is updated.
 ## Related articles
 
 - [Change the Azure subscription for billing](change-azure-subscription.md)
-- [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
