@@ -88,7 +88,7 @@ Guidance for Cloud Solution Providers
 
 ## Other resources
 
-* [New User Guide](../../user-guide/new-index.yml)
+* [New User Guide](../../user-guide/index.yml)
 
 * [Organization Management](../accounts/index.md)
 

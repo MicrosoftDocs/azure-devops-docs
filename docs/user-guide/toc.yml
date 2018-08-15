@@ -1,5 +1,5 @@
 - name: New User Guide
-  href: index.md
+  href: index.yml
 - name: Overview
   items:
   - name: "What is DevOps Services?"
@@ -21,13 +21,13 @@
   - name: "Add & run manual tests"
     href: add-run-manual-tests.md
   - name: "Manage a project"
-    href: index.md
+    href: index.yml
   - name: Install a Marketplace extension
     href: ../marketplace/install-vsts-extension.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json 
   - name: View permissions
     href: ../organizations/security/view-permissions.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json  
   - name: "Get started as an Admin"
-    href: index.md
+    href: index.yml
 - name: Tutorials - Users
   items:
   - name: Set favorites
@@ -39,7 +39,7 @@
 - name: Tutorials - Admins
   items:
   - name: Admin tutorials placeholder
-    href: index.md
+    href: index.yml
 - name: Concepts
   items:
   - name: Key concepts 

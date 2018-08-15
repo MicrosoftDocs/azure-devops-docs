@@ -51,7 +51,7 @@ Add, rename, and delete projects as you scale your organization.
 
 ## Resources
 
-* [New User Guide](../../user-guide/new-index.yml)
+* [New User Guide](../../user-guide/index.yml)
 * [Public Projects](../public/index.md)
 * [Security & Identity](../../organizations/security/index.md)
 * [Migrate from TFS to VSTS](../../articles/migrate-to-vsts-from-tfs.md)
