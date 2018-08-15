@@ -18,13 +18,6 @@ monikerRange: '>= tfs-2017'
 This guidance explains how to build Docker images and push them to registries such as
 Docker Hub or Azure Container Registry.
 
-::: moniker range="vsts"
-
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your account.
-
-::: moniker-end
-
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
@@ -46,66 +39,29 @@ Docker Hub or Azure Container Registry.
 
 This example shows how to build a Docker image and push it to a registry.
 
-To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
-
-```
-https://github.com/MicrosoftDocs/pipelines-dotnet-core
-```
-
-The sample code above includes a `Dockerfile` file at the root of the repository.
-
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-The sample code also includes a `azure-pipelines.yml` file at the root of the repository. If you have a Docker Hub account, and would like to push the image to your **Docker Hub registry**, then replace the contents of `azure-pipelines.yml` file with the following:
+1. To start, complete the steps from the example section in one of the following languages:
 
-```yaml
-pool: Hosted Linux Preview
-variables:
-  buildConfiguration: 'Release'
-  dockerId: adventworks  # change this to match your Docker Id
+    [.NET Core](dotnet-core.md)
+    [JavaScript](javascript.md)
 
-steps:
-- script: |
-    dotnet build --configuration $(buildConfiguration)
-    dotnet test dotnetcore-tests --configuration $(buildConfiguration) --logger trx
-    dotnet publish --configuration $(buildConfiguration) --output out
-    docker build -t $(dockerId)/dotnetcore-sample:$BUILD_BUILDID .
-    docker login -u $(dockerId) -p $pswd
-    docker push $(dockerId)/dotnetcore-sample:$BUILD_BUILDID
-  env:
-    pswd: $(dockerPassword)
-```
+  The sample repos include a `Dockerfile` at the root of the repository. You must first have a working build pipeline before continuing on.
 
-If you set up an **Azure container registry** and would like to push the image to that registry, then replace the contents of your azure-pipelines.yml file with the following:
+1. Define two variables in your build pipeline in the web UI.
 
-```yaml
-pool: Hosted Linux Preview
-variables:
-  buildConfiguration: 'Release'
-  dockerId: adventworks  # change this to match your Docker Id
+  **dockerId:** Your Docker Id for DockerHub or the admin user name for the Azure Container Registry
+  **dockerPassword:** Password for DockerHub or admin password for Azure Container Registry
 
-steps:
-- script: |
-    dotnet build --configuration $(buildConfiguration)
-    dotnet test dotnetcore-tests --configuration $(buildConfiguration) --logger trx
-    dotnet publish --configuration $(buildConfiguration) --output out
-    docker build -t $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID .
-    docker login -u $(dockerId) -p $pswd $(dockerid).azurecr.io
-    docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
-  env:
-    pswd: $(dockerPassword)
-```
+  If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal]((https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal)). You can get the admin user name and password from the **Access keys** section of the registry in Azure portal.
 
-Push the above change to master branch in your repository.
+1. If you have a Docker Hub account, and would like to push the image to your **Docker Hub registry**, then use the web UI to change the YAML file in build pipeline from `azure-pipelines.yml` to `azure-pipelines.docker.yml`. This file is present at the root of your sample repository.
 
-Follow all the steps in [Build a repo with YAML](../get-started-yaml.md) to create a build pipeline for your app.
+1. If you set up an **Azure container registry** and would like to push the image to that registry, then use the web UI to change the YAML file in build pipeline from `azure-pipelines.yml` to `azure-pipelines.acr.yml`. This file is present at the root of your sample repository.
 
-In the build pipeline, define a new variable `dockerPassword` for storing your Docker password. If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal]((https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal)). You can get the user id and password from the **Access keys** section of the registry in Azure portal.
-
-Queue a new build and watch it create and push a Docker image to registry.
+1. Queue a new build and watch it create and push a Docker image to registry.
 
 ::: moniker-end
 
@@ -124,40 +80,42 @@ YAML builds are not yet available on TFS.
 
 ::: moniker range="vsts"
 
-1. After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
+1. To start, complete the steps from the example section in one of the following:
 
-2. Select **Pipeline** under the **Tasks** tab of the build pipeline editor, and change its properties as follows:
-  * **Agent pool:** `Hosted Linux Preview`
-  * **Projects to test:** `**/*[Tt]ests/*.csproj`
+    [.NET Core](dotnet-core.md)
+    [JavaScript](javascript.md)
 
-1. Modify the **.NET Core Publish** task in the build pipeline as follows:
+  You must first have a working build pipeline following the above instructions before you proceed to the next steps.
+
+1. If you follow the [.NET Core](dotnet-core.md), modify the **.NET Core Publish** task in the build pipeline as follows:
   * **Arguments:** `--configuration $(BuildConfiguration) --output out`
   * **Zip published projects:** Clear this check box
   * **Add project name to publish path:** Clear this check box
 
-1. Remove the **Publish artifact** task.
+1. Remove any **Publish artifact** task from your pipeline. Since we are publishing a Docker image, there is no need to publish the build output to Azure Pipelines or TFS.
 
-1. Add **Bash** task after the **.NET Core Publish** task and configure it as follows to build and publish an image using the **Dockerfile** in the repository:
+1. Add **Bash** task at the end of the pipeline and configure it as follows to build and publish an image using the **Dockerfile** in the repository:
    * **Type:** `Inline`
    * **Script:**
 
     To push to Docker Hub, use the following script:
 
     ```Bash
-    docker build -t $(dockerId)/dotnetcore-sample:$BUILD_BUILDID .
+    docker build -t $(dockerId)/$(imageName) .
     docker login -u $(dockerId) -p $(dockerPassword)
-    docker push $(dockerId)/dotnetcore-sample:$BUILD_BUILDID
+    docker push $(dockerId)/$(imageName)
     ```
 
     To push to Azure container registry, use the following script:
 
     ```Bash
-    docker build -t $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID .
+    docker build -t $(dockerId).azurecr.io/$(imageName) .
     docker login -u $(dockerId) -p $(dockerPassword) $(dockerId).azurecr.io
-    docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
+    docker push $(dockerId).azurecr.io/$(imageName)
     ```
 
 1. In the **Variables** tab of the build pipeline, define two variables:
+   * **imageName:** `$(Build.DefinitionName).$(Build.BuildId)`
    * **dockerId:** Your Docker Id.
    * **dockerPassword:** Your Docker password. Mark this variable as a secret variable.
 
@@ -232,13 +190,13 @@ You can build a Docker image by running the `docker build` command in a script o
 To run the command in a script, add the following snippet to your `azure-pipelines.yml` file.
 
 ```yaml
-- script: docker build -t <docker-id>/<image> .  # add options to this command to meet your needs
+- script: docker build -t $(dockerId)/$(imageName) .  # add options to this command to meet your needs
 ```
 
 You can run any docker commands as part of the script block in your YAML file. If your Dockerfile depends on another image from a protected registry, you have to first run a `docker login` command in your script.
 
 ```yaml
-- script: docker login -u <docker-id> -p <docker-password> <docker-registry-url>
+- script: docker login -u $(dockerId) -p $(pswd) <docker-registry-url>
 ```
 
 Make sure that you define the Docker password as a [secret variable](../process/variables.md) in the build pipeline and not in the YAML file.
@@ -275,47 +233,34 @@ In this approach, you use the build pipeline to orchestrate building your code, 
 
 To create an image, you run a `docker build` command at the end of your build pipeline. Your _Dockerfile_ contains the instructions to copy the results of your build into the container.
 
-The instructions in the [above example](#example) demonstrate this approach.
+The instructions in the [above example](#example) demonstrate this approach. The test results published in the example, can be viewed under [Tests Tab](../test/review-continuous-test-results-after-build.md) in build.
 
 ### Build and test in your Dockerfile
 
-In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build pipeline. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build pipeline is entirely configured in your _Dockerfile_. This means your build pipeline is portable from the development machine to any build system. One disadvantage is that you can't leverage Azure Pipelines and TFS features such as tasks, jobs, or test analytics.
+In this approach, you use your _Dockerfile_ to build your code and run tests. The build pipeline has a single step to run `docker build`. The rest of the steps are orchestrated by the Docker build process. It's common to use a [multi-stage Docker build](https://docs.docker.com/develop/develop-images/multistage-build/) in this approach. The advantage of this approach is that your build process is entirely configured in your _Dockerfile_. This means your build process is portable from the development machine to any build system. One disadvantage is that you can't leverage VSTS and TFS features such as tasks, phases or test reporting.
 
-To use this approach for the sample app, create a _Dockerfile_ at the root of your repo with the following content:
+For an example on using this approach, follow these steps:
 
-```Dockerfile
-# First stage of multi-stage build
-FROM microsoft/aspnetcore-build:2.0 AS build-env
-WORKDIR /app
+1. The sample repos that you used in the [example](#example) above also include a **Dockerfile.multistage** for this approach:
 
-# copy the contents of agent working directory on host to workdir in container
-COPY . ./
+    [Dockerfile.multistage in .NET Core sample](https://github.com/MicrosoftDocs/pipelines-dotnet-core/blob/master/docs/Dockerfile.multistage)
+    [Dockerfile.multistage in JavaScript sample](https://github.com/MicrosoftDocs/pipelines-javascript/blob/master/docs/Dockerfile.multistage)
 
-# dotnet commands to build, test, and publish
-RUN dotnet restore
-RUN dotnet build -c Release
-RUN dotnet test dotnetcore-tests/dotnetcore-tests.csproj -c Release
-RUN dotnet publish -c Release -o out
+  Replace the content in the `Dockerfile` at the root of your repository with the content from `Dockerfile.multistage`.
 
-# Second stage - Build runtime image
-FROM microsoft/aspnetcore:2.0
-WORKDIR /app
-COPY --from=build-env /app/dotnetcore-sample/out .
-ENTRYPOINT ["dotnet", "dotnetcore-sample.dll"]
-```
-
-Then, define your build pipeline:
+1. Then, define your build pipeline:
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
-Create a `.vsts-ci-yml` file at the root of your repo with the following content:
+Replace the contents in the `azure-pipelines.yml` file at the root of your repo with the following content:
 
 ```yaml
 pool: 'Hosted Linux Preview'
+
 steps:
-  - script: docker build -t <dockerid>/<image-name>:$BUILD_BUILDID . # include other options to meet your needs
+  - script: docker build -t $(dockerId)/$(dockerImage) . # include other options to meet your needs
 ```
 
 ::: moniker-end
@@ -344,16 +289,16 @@ To push the image to Docker hub, add the following snippet to the `azure-pipelin
 
 ```yaml
 - script: |
-    docker login -u <dockerId> -p <dockerPassword>
-    docker push <dockerId>/<image-name>
+    docker login -u $(dockerId) -p $(pswd)
+    docker push $(dockerId)/$(imageName)
 ```
 
 To push the image to Azure Container Registry, use the following snippet:
 
 ```yaml
 - script: |
-    docker login -u <dockerId>.azurecr.io -p <dockerPassword> <dockerid>.azurecr.io
-    docker push <dockerId>.azurecr.io/<image-name>
+    docker login -u $(dockerId).azurecr.io -p $(pswd) $(dockerid).azurecr.io
+    docker push $(dockerId).azurecr.io/$(imageName)
 ```
 
 ::: moniker-end
@@ -387,43 +332,9 @@ If you use Microsoft-hosted agents, you don't have to run any additional steps t
 
 To extend the [above example](#example) to use docker-compose:
 
-1. Add `docker-compose.yml` file at the root of your repo.
-
- ```yaml
-sut:
-  build: .
-  dockerfile: Dockerfile.test
-  links:
-    - web
-web:
-  build: .
-  dockerfile: Dockerfile
-```
+1. Your sample repo already includes a `docker-compose.yml` file in the `docs` folder.
     
-1. Add a `Dockerfile.test` file at the root of your repo.
-
- ```Dockerfile
-FROM ubuntu:trusty
-RUN apt-get update && apt-get install -yq curl && apt-get clean
-WORKDIR /app
-ADD test.sh /app/test.sh
-CMD ["bash", "test.sh"]
-```
-
-1. Add a `test.sh` file at the root of your repository.
-
- ```bash
-sleep 5
-if curl web | grep -q 'ASP.NET Core '; then
-  echo "Tests passed!"
-  exit 0
-else
-  echo "Tests failed!"
-  exit 1
-fi
-```
-
-1. Add a **Bash** task.
+1. Add a **Bash** step to your build pipeline:
 
 # [YAML](#tab/yaml)
 
@@ -475,7 +386,7 @@ FROM resin/rpi-raspbian
 # register QEMU binary - this can be done by running the following Docker image
 docker run --rm --privileged multiarch/qemu-user-static:register --reset
 # build your image
-docker build -t <your-image-tag> .
+docker build -t $(dockerId)/$(imageName) .
 ```
 
 :::moniker-end
