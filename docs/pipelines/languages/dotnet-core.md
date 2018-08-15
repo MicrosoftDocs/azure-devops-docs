@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: alewis
 author: andyjlewis
 ms.reviewer: vijayma
-ms.date: 06/14/2018
+ms.date: 08/15/2018
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
@@ -29,13 +29,6 @@ This guidance explains how to build .NET Core projects.
 
 ::: moniker-end
 
-::: moniker range="vsts"
-
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
-
-::: moniker-end
-
 <br/>
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs/Build-your-ASPNET-Core-app/player]
@@ -48,12 +41,12 @@ This example shows how to build a .NET Core project. To start, import (into Azur
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
-The sample code includes a `azure-pipelines.yml` file at the root of the repository.
-You can use this file to build the app.
-
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
+
+The sample code includes a `azure-pipelines.yml` file at the root of the repository.
+You can use this file to build the app.
 
 Follow all the instructions in [Build a repo with YAML](../get-started-yaml.md) to create a build pipeline for the sample app.
 
@@ -73,10 +66,6 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 * After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
-
-* Select **Process** under the **Tasks** tab in the build pipeline editor and change the properties as follows:
-  * **Agent pool:** `Hosted Linux Preview`
-  * **Projects to test:** `**/*[Tt]ests/*.csproj`
 
 * Save the pipeline and queue a build to see it in action.
 
@@ -186,7 +175,7 @@ However, you might still need to use the **.NET Core** task to restore packages 
 
 If your builds occasionally fail when restoring packages from NuGet.org due to connection issues,
 you can use Azure Artifacts in conjunction with [upstream sources](../../package/concepts/upstream-sources.md),
-and cache the packages in Azure Pipelines. The credentials of the build pipeline are automatically used when connecting
+and cache the packages. The credentials of the build pipeline are automatically used when connecting
 to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service**
 account.
 
@@ -218,7 +207,7 @@ Or, to restore packages from a custom feed, use the **.NET Core** task:
 - task: DotNetCoreCLI@2
   inputs:
     command: restore
-    projects: "**/*.csproj"
+    projects: '**/*.csproj'
     feedsToUse: config
     nugetConfigPath: NuGet.config    # Relative to root of the repository
     externalFeedCredentials: <Name of the NuGet service connection>
@@ -319,8 +308,8 @@ Add the following snippet to your `azure-pipelines.yml` file:
 - task: DotNetCoreCLI@2
   inputs:
     command: test
-    projects: **/*Tests/*.csproj
-    arguments: '--configuration $(BuildConfiguration)'
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
 ```
 
 An alternative is to run the `dotnet test` command with a specific logger, and then to use **Publish Test Results** task.
@@ -350,12 +339,22 @@ Use the **.NET Core** task with **Command** set to **test**.
 
 ## Package and deliver your code
 
-The output of the `dotnet build` command is generally not transferable.
-To prepare your code to run on another machine, you must package the code.
+Once you have built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a NuGet package,
+or package the build output into a zip file to be deployed to a web application.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
+
+### Publish artifacts to Azure Pipelines
+
+To simply publish the output of your build to Azure Pipelines, add the following to your `azure-pipelines.yml` file.
+
+```yaml
+- task: PublishBuildArtifacts@1
+```
+
+This will take all the files in `$(Build.ArtifactStagingDirectory)` and upload them as an artifact of your build. For this to work, you must have already published the output of your build to this directory using `dotnet publish --output $(Build.ArtifactStagingDirectory)` command. To copy additional files to this directory before publishing, see [Copy Files](../tasks/utility/copy-files.md).
 
 ### Publish to a NuGet feed
 
@@ -398,6 +397,10 @@ YAML builds are not yet available on TFS.
 ::: moniker-end
 
 # [Designer](#tab/designer)
+
+### Publish artifacts to Azure Pipelines
+
+To simply publish the output of your build to Azure Pipelines of TFS, use the **Publish Artifacts** task.
 
 ### Publish to a NuGet feed
 
