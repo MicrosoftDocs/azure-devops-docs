@@ -37,7 +37,7 @@ featureFlags:
                                                         <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="" />
                                                     </div>
                                                 </div>
-                                                <div class="cardText"
+                                                <div class="cardText">
                                                     <h3><a href="/vsts/open-source/get-started/index">Build GitHub projects using Azure Pipelines</a></h3>
                                                 </div>
                                             </div>
@@ -86,7 +86,7 @@ featureFlags:
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3><a href="/pipelines/get-started/pipelines-get-started">Start using Azure Pipelines</a></h3>
+                                                    <h3><a href="/vsts/pipelines/get-started/pipelines-get-started">Start using Azure Pipelines</a></h3>
                                                 </div>
                                             </div>
                                         </div>
