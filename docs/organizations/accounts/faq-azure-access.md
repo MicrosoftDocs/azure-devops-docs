@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 
 ### I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect.
 
-Changes made in Azure AD may take up to 24 hours to be visible in VSTS.
+Changes made in Azure AD can take up to 24 hours to be visible in VSTS.
 
 <a name="o365aad"></a>
 
@@ -100,7 +100,7 @@ If you don't have enough access levels for all Azure AD group members, those mem
 
 The Security tab shows Azure AD group members only after they sign in to your VSTS organization, and have an access level assigned to them.
 
-To see all Azure AD group members, use the [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM), or the group management tools that your organization supports.
+To see all Azure AD group members, use the [Azure portal](https://portal.azure.com), MIM, or the group management tools that your organization supports.
 
 ### Why doesn't the team members widget show all Azure AD group members?
 
