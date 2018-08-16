@@ -60,6 +60,8 @@
     href: office/bulk-add-modify-work-items-excel.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json 
   - name: "Create backlog items & tasks (Project)"
     href: office/create-your-backlog-tasks-using-project.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json 
+  - name: Switch project or team focus
+    href: ../../project/navigation/go-to-project-repo.md#switch-team-context?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json
   - name: Share work plans
     href: ../queries/share-plans.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json
   - name: Storyboard your ideas
