@@ -18,7 +18,7 @@ ms.date: 06/21/2018
 <a id="adjust-work">  </a>
 # 4. Adjust work to fit sprint capacity
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 After you've defined all the tasks for all the sprint backlog items, you'll want to check whether your team is at or over capacity. If under capacity, you can consider adding more items onto the sprint. If over capacity, you'll want to remove items out of the backlog.  
 
@@ -103,7 +103,7 @@ To view capacity charts, you'll want to turn **Work details** on for a sprint.
 ::: moniker range="vsts"
 
 > [!div class="mx-imgBorder"]  
-> ![Turn work details on](_img//adjust-work/work-details-on.png)
+> ![Turn work details on](_img/adjust-work/work-details-on.png)
 
 ::: moniker-end
 

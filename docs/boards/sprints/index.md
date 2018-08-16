@@ -15,7 +15,7 @@ ms.date: 07/07/2018
 
 # Sprints (Scrum)
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
 With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. For an overview of the Scrum lifecycle, see [What is Scrum?](/azure/devops/agile/what-is-scrum). 
 
