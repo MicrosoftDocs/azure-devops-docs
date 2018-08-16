@@ -1,6 +1,6 @@
 ---
 title: Default roles & access for public projects
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: Overview of public project user roles and access
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-Public projects enable anyone to view its contents. Access is limited when the user is not signed in. These users are also referred to as anonymous users or public users. In addition, there are users, ones who are signed in to VSTS, but aren't a member of a project. Both of these types of users are granted limited, read-only access as indicated in the following table.  
+Public projects enable anyone to view its contents. Access is limited when the user is not signed in. These users are also referred to as anonymous users or public users. In addition, there are users, ones who are signed in to Azure DevOps, but aren't a member of a project. Both of these types of users are granted limited, read-only access as indicated in the following table.  
 
 To contribute to a public project, you must be added as a member of that project and assigned either Stakeholder or Basic access. The access level determines the user interfaces you can access. The security group you're assigned to determines the features you can exercise. For details, see [About access levels](../security/access-levels.md).
 

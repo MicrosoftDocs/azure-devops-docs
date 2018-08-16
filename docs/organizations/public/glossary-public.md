@@ -1,6 +1,6 @@
 ---
 title: Glossary for public projects
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: Description of key concepts and terms 
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -19,14 +19,14 @@ monikerRange: 'vsts'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-This glossary describes terms used when working with public projects in Visual Studio Team Services (VSTS). See also: 
+This glossary describes terms used when working with public projects in Azure DevOps Services. See also: 
 - [Agile glossary](../../boards/work-items/agile-glossary.md) 
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 - [Security glossary](../security/security-glossary.md)  
 
 ## Anonymous user	
 
-An unauthenticated user of a project. The user is visiting a project and has not signed in to VSTS. 
+An unauthenticated user of a project. The user is visiting a project and has not signed in to Azure DevOps. 
 
 ## Basic user	
 
@@ -46,7 +46,7 @@ User-configurable interactive signboards that provide real-time information. Das
 A Git repository supports a distributed version control system for tracking changes, reviewing contributions to the code, and more. Each developer has a copy of the source repository on their dev machine. You can add multiple Git repositories to a project. Learn more: [Git Repositories](../../repos/git/index.md).  
 
 > [!NOTE]   
-> Git in Visual Studio and VSTS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with VSTS.
+> Git in Visual Studio and Azure DevOps is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with Azure DevOps.
 
 ## Non-member user
 
@@ -62,12 +62,12 @@ Open source software refers to freely available software that you can download, 
 
 ## Organization 
 
-The VSTS platform associated with a URL (for example, `name.visualstudio.com`) that supports adding both private and public projects. Owners and administrators can manage user access to their organization's data through security groups, access levels, and other administrative options. 
+The Azure DevOps platform associated with a URL (for example, `https://dev.azure.OrganizationName/ProjectName/`) that supports adding both private and public projects. Owners and administrators can manage user access to their organization's data through security groups, access levels, and other administrative options. 
 
 <!---
 ## Organizational User	
 
-An authenticated user of a project who is a member of a VSTS organization   (Azure Active Directory (AAD) tenant) but not a member of VSTS.
+An authenticated user of a project who is a member of an Azure DevOps organization   (Azure Active Directory (AAD) tenant) but not a member of Azure DevOps.
 
 Signed in. Member or guest of the AAD tenant. 
 
@@ -94,17 +94,12 @@ A project created within an organization that is visible only to members of the 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/public-projects.md)] 
 
-
 ## Public user	
 An authenticated user of a project who is not a member of the project. 
-<!---Signed in. Neither member nor guest of the AAD tenant. Not a member of the account.-->
-
 
 ## Stakeholder	
 
 An authenticated user of a project who was granted Stakeholder access. An unlimited number of users can be granted membership as Stakeholders for free. Stakeholders can add and modify work items, approve releases, view dashboards and wikis. Learn more: [Get started as a Stakeholder](../security/get-started-stakeholder.md). 
-
-
 
 [!INCLUDE [temp](../../_shared/glossary-terms/teams.md)] 
 

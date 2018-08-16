@@ -1,6 +1,6 @@
 ---
 title: View and filter project wiki pages 
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: View public project wikis 
 ms.technology: devops-public-projects
 ms.prod: devops

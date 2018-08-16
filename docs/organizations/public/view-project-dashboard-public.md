@@ -1,6 +1,6 @@
 ---
 title: View a project page or dashboard
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: View a project home page or dashboard 
 ms.technology: devops-public-projects
 ms.prod: devops

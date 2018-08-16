@@ -1,6 +1,6 @@
 ---
 title: Differences and limitations for non-members
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: Differences and limitations for non-members
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -50,7 +50,7 @@ In addition, non-members have no access or limited access to the following featu
 
 ## Feature and functional support based on permissions 
 
-VSTS has a permissions-driven user interface. For an overview of the main permissions assigned by default to security groups and access levels, see [Default permissions and access](../security/permissions-access.md). 
+Azure DevOps has a permissions-driven user interface. For an overview of the main permissions assigned by default to security groups and access levels, see [Default permissions and access](../security/permissions-access.md). 
 
 If a user doesn't have the permissions needed to complete an action, the feature will either be hidden or disabled. By default, inaccessible commands are disabled, minimizing the layout changes that would be needed if elements could appear and disappear.
 For example, a user who lacks permission to create pull requests, will see a disabled  **Create pull request** button.

@@ -1,6 +1,6 @@
 ---
 title: View builds, releases, pipelines 
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: View build and release status an pipelines for a public project
 ms.technology: devops-public-projects
 ms.prod: devops
