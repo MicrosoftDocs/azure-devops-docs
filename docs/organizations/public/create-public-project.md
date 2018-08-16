@@ -1,7 +1,7 @@
 ---
 title: Create a public project
-titleSuffix: VSTS Public Project  
-description: Create or add a public project to your Visual Studio Team Services account 
+titleSuffix: Azure DevOps Services Public Project  
+description: Create or add a public project to your Azure DevOps Services organization 
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
@@ -17,30 +17,30 @@ monikerRange: 'vsts'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-A public project is similar to any other project that you add to your Visual Studio Team Services (VSTS) organization. Each project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. 
+A public project is similar to any other project that you add to your Azure DevOps Services organization. Each project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. 
 
 A public project allows non members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. For details, see [Default roles & access for public projects](default-roles-access-public.md).   
 
-You can add a public project to your existing organization, or create a VSTS organization and create a public project at that time. If you want to make an existing private project public, you can [change the project's visibility](make-project-public.md).
+You can add a public project to your existing organization, or create an Azure DevOps organization and create a public project at that time. If you want to make an existing private project public, you can [change the project's visibility](make-project-public.md).
 
 
 ## Prerequisites
 
-- You must have a VSTS organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
-- As a VSTS organization owner, you can create projects. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level) or have your [**Create new projects** permission](../security/set-project-collection-level-permissions.md#collection-level) set to **Allow**.
+- You must have an Azure DevOps organization created. If you don't have one, [do that now](../../user-guide/sign-up-invite-teammates.md).   
+- As an Azure DevOps organization owner, you can create projects. If you're not the owner, then you must be [a member of the Project Collection Administrators Group](../security/set-project-collection-level-permissions.md#collection-level) or have your [**Create new projects** permission](../security/set-project-collection-level-permissions.md#collection-level) set to **Allow**.
 
 
 ## Enable anonymous access to projects for your organization
 
-Before you can create a public project, you must enable anonymous access for your VSTS organization.
+Before you can create a public project, you must enable anonymous access for your Azure DevOps organization.
 
 [!INCLUDE [temp](_shared/navigation.md)] 
 
 # [New navigation](#tab/new-nav)
 
-0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
+0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)  
@@ -53,7 +53,7 @@ Before you can create a public project, you must enable anonymous access for you
 
 # [Previous navigation](#tab/previous-nav)
 
-0. From your web browser, sign-in to VSTS. You must be signed in to create a public project. 
+0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
 
 0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
 
@@ -74,7 +74,7 @@ Before you can create a public project, you must enable anonymous access for you
 
 # [New navigation](#tab/new-nav)
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. 
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational hub](../../_shared/_img/settings/open-projects-hub-vert-brn.png)  
@@ -98,7 +98,7 @@ Before you can create a public project, you must enable anonymous access for you
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. .
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. .
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational hub](_img/create-public-project/open-org-hub.png)  
@@ -128,7 +128,7 @@ Once created, an [anonymous user](glossary-public.md#anonymous-user) or [public 
  
 To provide instant access, share the URL of your public project with those people you want to have access to the project in a read-only mode. For example, you can share this portion of the URL shown under **Clone to your computer**.  
 
-`https://public1.visualstudio.com/MyPublicProject/`
+`https://dev.azure.OrganizationName/ProjectName/`
 
 
 ## Try this next

@@ -1,7 +1,7 @@
 ---
 title: Public Projects 
-titleSuffix: VSTS Public Project 
-description: Index to topics for creating and working in public projects for Visual Studio Team Services (VSTS)
+titleSuffix: Azure DevOps Services Public Project 
+description: Index to topics for creating and working in public projects for Azure DevOps Services
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 

@@ -1,6 +1,6 @@
 ---
 title: Search the code base of a public project  
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: Search across all reposities defined in a public project to find specific types of code   
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -58,7 +58,7 @@ To start your search, choose **Code>Files** or other hub under **Code**, enter a
    list, and type the criteria value.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from VSTS title bar](_img/search/code-search-filters.png)     
+	> ![Search from the title bar](_img/search/code-search-filters.png)     
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 

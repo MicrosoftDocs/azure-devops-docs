@@ -1,6 +1,6 @@
 ---
 title: Clone a Git repository in a public project
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: Create a local copy of a repo using Visual Studio or command line clone 
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -75,7 +75,7 @@ Before you can clone the repo from a public project, you'll need the clone URL.
 
 0. In Team Explorer, (1) open up the **Connect** page by selecting the **Connect** icon. (2) Choose **Clone** under **Local Git Repositories**, (3) enter the clone URL, verify your local folder in which to clone, and (4) select the **Clone** button.
 
-  ![Connecting to VSTS](_img/clone-git-repo-public/clone-vs.png)
+  ![Connecting to Azure DevOps](_img/clone-git-repo-public/clone-vs.png)
 
 0. After cloning, you have a local Git repository containing the code of the repository you cloned. You can view and make local changes, but in order to push changes and make pull requests to the remote repository, you must be [invited to contribute](invite-users-public.md). 
 
@@ -92,13 +92,13 @@ You'll need a clone URL to tell Git what repository you want to clone to your co
 Pass this clone URL to `git clone` to make a local copy of the repo:
 
 ```
-git clone https://public1.visualstudio.com/MyFirstProject/_git/MyGreatLibrary
+git clone https://dev.azure.public1/MyFirstProject/_git/MyGreatLibrary
 ```
 
 `git clone` clones the repository from the URL in a folder under the current one. You can pass in a folder name after the URL to create the repo in a specific location, for example:
 
 ```
-git clone https://public1.visualstudio.com/MyFirstProject/_git/MyGreatLibrary C:\Repos\MyGreatLibrary
+git clone https://dev.azure.public1/MyFirstProject/_git/MyGreatLibrary C:\Repos\MyGreatLibrary
 ```
 
 

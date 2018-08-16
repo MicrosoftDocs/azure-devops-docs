@@ -60,6 +60,6 @@
     href: ../projects/index.md 
   - name: Process Customization
     href: ../settings/work/customize-process.md 
-  - name: VSTS data protection overview
+  - name: Data protection overview
     href: ../../articles/team-services-security-whitepaper.md 
 

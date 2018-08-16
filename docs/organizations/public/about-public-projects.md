@@ -1,6 +1,6 @@
 ---
 title: What is a public project? 
-titleSuffix: VSTS Public Project
+titleSuffix: Azure DevOps Services Public Project
 description: Understand the benefits of creating a public project, provide anonymous users ability to view your projects
 ms.technology: devops-public-projects
 ms.prod: devops
@@ -17,16 +17,16 @@ monikerRange: 'vsts'
 
 [!INCLUDE [temp](_shared/version-public-projects.md)]  
 
-A Visual Studio Team Services (VSTS) public project provides support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open source software. Users aren't required to sign in to gain read-only access to many of the services.  
+A Azure DevOps Services public project provides support to share code with others and to support continuous integration/continuous deployment (CI/CD) of open source software. Users aren't required to sign in to gain read-only access to many of the services.  
 
 > [!NOTE]   
-> VSTS public projects is in preview. To learn more about the road map, see the [VSTS Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/) blog post.
+> Azure DevOps Services public projects is in preview. To learn more about the road map, see the [Azure DevOps Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/) blog post.
 
 
 ## Public versus private projects 
-VSTS projects provide a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. One or more projects can be defined within a VSTS organization.  
+Azure DevOps projects provide a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. One or more projects can be defined within an Azure DevOps organization.  
 
-Users that aren't signed into the service have read-only access to public projects on VSTS. Private projects, on the other hand, require users to be granted access to the project and signed in to access the services. 
+Users that aren't signed into the service have read-only access to public projects on Azure DevOps. Private projects, on the other hand, require users to be granted access to the project and signed in to access the services. 
 
 ## Supported services  
 
@@ -39,7 +39,7 @@ Non-members of a public project will have read-only access to a limited set of s
 
 For additional information, see [Differences and limitations for non-members of a public project](feature-differences.md).
 
-To contribute to a project by adding or modifying code, work items, pipelines, or more, a user must be [added as a member of the project](invite-users-public.md). For an overview of services contributors have access to, see [What do I get with VSTS?](../../user-guide/services.md)
+To contribute to a project by adding or modifying code, work items, pipelines, or more, a user must be [added as a member of the project](invite-users-public.md). For an overview of services contributors have access to, see [What do I get with Azure DevOps?](../../user-guide/services.md)
 
 
 ## Get started with a public project  
