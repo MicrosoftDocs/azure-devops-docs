@@ -18,6 +18,9 @@ monikerRange: '>= tfs-2013'
 
 ## 5-Minute Quickstarts
 
+>[!NOTE]
+>This topic is still a work in progress but will be done for the 9/5 launch.
+
 Get started with a free account and share your code using Git.
 
 - New to Azure Devops Repos? [Sign up and invite some teammates](sign-up-invite-teammates.md)  

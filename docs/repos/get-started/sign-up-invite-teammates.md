@@ -15,6 +15,9 @@ monikerRange: 'vsts'
 
 # Sign up for free and invite others to collaborate on your project
 
+>[!NOTE]
+>This topic is still a work in progress but will be done for the 9/5 launch.
+
 **Azure DevOps Repos**
  
 Sign up for a VSTS 
