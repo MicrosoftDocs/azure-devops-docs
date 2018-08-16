@@ -1,6 +1,6 @@
 ---
 title: View permissions for yourself or others
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure DevOps Services & TFS 
 description: Steps for finding what permissions you or your team members have, including project-level, collection-level, and object-level permissions and security
 ms.assetid:  
 ms.prod: devops
@@ -18,7 +18,7 @@ ms.date: 07/27/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can view your permissions or those defined for another which have been set in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). That way, if you don't have the permission to access a feature or function, you can request it from the right resource.
+You can view your permissions or those defined for another which have been set in Azure DevOps Services or Team Foundation Server (TFS). That way, if you don't have the permission to access a feature or function, you can request it from the right resource.
 
 Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
@@ -78,7 +78,7 @@ Permissions are set at the collection, project, and object level as described in
 
 	::: moniker range="vsts"  
 	> [!div class="mx-imgBorder"]
-	> ![Project level permissions for a user, VSTS](_img/view-permissions/search-user-name-vert-nav.png)  
+	> ![Project level permissions for a user, Azure DevOps](_img/view-permissions/search-user-name-vert-nav.png)  
 	::: moniker-end  
 	::: moniker range=">= tfs-2013  <= tfs-2018"  
 	![Find a user account name](_img/view-permissions/search-user-name.png)
@@ -88,7 +88,7 @@ Permissions are set at the collection, project, and object level as described in
 
 	::: moniker range="vsts"  
 	> [!div class="mx-imgBorder"]
-	> ![Project level permissions for a user, VSTS](_img/view-permissions/project-level-user-permissions-vsts.png)  
+	> ![Project level permissions for a user, Azure DevOps](_img/view-permissions/project-level-user-permissions-vsts.png)  
 	::: moniker-end  
 	::: moniker range=">= tfs-2013  <= tfs-2018"  
 	> [!div class="mx-imgBorder"]

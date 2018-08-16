@@ -40,9 +40,9 @@
     href: about-security-roles.md      
   - name: About access levels 
     href: access-levels.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json
-  - name: Azure Active Directory groups (VSTS)
+  - name: Azure Active Directory groups
     href: ../accounts/access-with-azure-ad.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
-  - name: Active Directory groups (TFS) 
+  - name: Active Directory groups 
     href: /tfs/server/admin/setup-ad-groups?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json
   - name: Security glossary 
     href: security-glossary.md
@@ -50,9 +50,9 @@
     href: ../accounts/resources-granted-to-project-members.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json    
 - name: How-to Guides
   items:
-  - name: Add users to your account (VSTS)
+  - name: Add users to your account
     href: ../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
-  - name: Change access levels (TFS)
+  - name: Change access levels
     href: change-access-levels.md 
   - name: Export a list of users and their access levels  
     href: export-users-audit-log.md   
@@ -62,6 +62,8 @@
       href: ../../repos/git/branch-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
     - name: Set build and release permissions
       href: ../../pipelines/policies/set-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
+    - name: Provide Stakeholders access to edit build and release pipelines
+      href: provide-stakeholder-pipeline-access.md
     - name: Set package feed permissions
       href: ../../package/feeds/feed-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json
     - name: Set permissions and access for work tracking
@@ -116,11 +118,11 @@
     href: permissions.md
   - name: Git permissions prior to TFS 2017 Update 1
     href: git-permissions-before-2017.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
-  - name: Web site settings and security (TFS) 
+  - name: Web site settings and security
     href: websitesettings.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
-  - name: VSTS data protection overview
+  - name: Azure DevOps Services data protection overview
     href: ../../articles/team-services-security-whitepaper.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
-  - name: TFSSecurity command (TFS)
+  - name: TFSSecurity command
     href: /tfs/server/ref/command-line/tfssecurity-cmd?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
   - name: REST API, Permissions
     href: /rest/api/vsts/security/permissions 

@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access quick reference
-titleSuffix: VSTS & TFS 
-description: At-a-glance view of permissions and access levels for common user tasks for Visual Studio Team Services and Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS 
+description: At-a-glance view of permissions and access levels for common user tasks for Azure DevOps Services and Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: B656A277-BA3D-472D-824D-CDD4E067053E
@@ -14,15 +14,15 @@ ms.date: 02/12/2018
 monikerRange: '>= tfs-2013'
 ---
 
-# Default permissions and access for VSTS and TFS 
+# Default permissions and access for Azure DevOps and TFS 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To connect and use the functions and features that VSTS and TFS provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
+To connect and use the functions and features that Azure DevOps and TFS provides, users must be added to a group with the appropriate permissions. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below. 
 
 In addition to permissions, access to specific features are controlled by the access level assigned to a user. Contributors and administrators should be added to Basic (paid) access. Stakeholder access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
-For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](../accounts/add-organization-users-from-user-hub.md) for VSTS, and [Change access levels](change-access-levels.md) for TFS. 
+For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about assigning access levels and supporting stakeholder access, see [Manage users and access](../accounts/add-organization-users-from-user-hub.md) for Azure DevOps, and [Change access levels](change-access-levels.md) for TFS. 
 
 
 ## Code: Git and TFVC  
@@ -41,9 +41,12 @@ From the team project admin content for Version Control, you can [set permission
 
 ## Build and release
 
-You can define and manage your builds and releases from the web portal, **Build and Release** hub. For an overview of build and release management features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
+You can define and manage your builds and releases from the web portal, **Build and Release**. For an overview of build and release management features and functions, see [Continuous integration on any platform](../../pipelines/overview.md).
 
-From the **Build and Release** hub, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
+From **Build and Release**, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
+
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![](/vsts/_img/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
 
 [!INCLUDE [temp](_shared/build-release.md)]
 
@@ -92,7 +95,7 @@ You set [dashboard permissions at the team level](../../report/dashboards/dashbo
 
 ## Analytics
 
-From the **Analytics** hub, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for VSTS. To learn more, see [What is the Analytics Service?](../../report/analytics/what-is-analytics.md). 
+From the **Analytics** hub, you can create and manage Analytics views. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service is the reporting platform for Azure DevOps. To learn more, see [What is the Analytics Service?](../../report/analytics/what-is-analytics.md). 
 
 You set [permissions](../../report/analytics/analytics-security.md) for the service at the project level, and for shared Analytics views at the object level. 
 

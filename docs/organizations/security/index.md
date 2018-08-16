@@ -1,7 +1,7 @@
 ---
 title: Security & Identity content index
-titleSuffix: VSTS & TFS
-description: Index to permissions, groups, security, roles, and access level topics in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure DevOps Services & TFS
+description: Index to permissions, groups, security, roles, and access level topics in Azure DevOps Services & Team Foundation Server   
 ms.assetid:  
 ms.prod: devops
 ms.technology: devops-security
@@ -46,7 +46,7 @@ For anyone to access a team project, you must add them to a security group. For 
 - [About permissions and groups](about-permissions.md)  
 - [About security roles](about-security-roles.md)  
 - [About access levels](access-levels.md)  
-- [Azure Active Directory groups (VSTS)](../accounts/access-with-azure-ad.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)
+- [Azure Active Directory groups (Azure DevOps)](../accounts/access-with-azure-ad.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)
 - [Active Directory groups (TFS)](/tfs/server/admin/setup-ad-groups?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) 
 - [Security glossary](security-glossary.md) 
 
@@ -65,9 +65,9 @@ For anyone to access a team project, you must add them to a security group. For 
 
 ## Resources
  
-- [Account Management (VSTS)](../accounts/index.md)
+- [Account Management (Azure DevOps)](../accounts/index.md)
 - [Server Administration (TFS)](/tfs/server/index)
 - [Billing](../../billing/index.md)
 - [Authentication guidance for REST APIs](../../integrate/get-started/authentication/authentication-guidance.md)
-- [VSTS Data Protection Overview](../../articles/team-services-security-whitepaper.md)
+- [Azure DevOps Data Protection Overview](../../articles/team-services-security-whitepaper.md)
 - [Technical Articles](../../articles/index.md) 
