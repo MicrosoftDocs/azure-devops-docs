@@ -12,7 +12,7 @@ ms.date: 07/09/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Set up and administer Microsoft Code Search and Work Item Search
+# Set up and administer Code Search and Work Item Search
 
 In this topic:
 

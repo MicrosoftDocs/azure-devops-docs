@@ -30,7 +30,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
    ![The Work Item Search textbox in the title bar](_img/work-item-search-get-started/show-search-box.png)    
 
-1. Enter a search string in the textbox, and press _Ctrl+Enter_ (or choose the 
+1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon-new.png) icon) to start your search. 
 
 # [Previous navigation](#tab/previous-nav)
@@ -43,7 +43,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 1. If you have the Code Search extension installed, the search text box may
    say _Search code_. In this case, use the drop-down selector to change it. 
 
-1. Enter a search string in the textbox, and press _Ctrl+Enter_ (or choose the 
+1. Enter a search string in the textbox, and press _Enter_ (or choose the 
    ![start search icon](_img/_shared/start-search-icon.png) icon) to start your search. 
 
 ---
@@ -65,7 +65,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
    > Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](_img/_shared/start-search-icon.png) icon.
+   ![start search icon](_img/_shared/start-search-icon-new.png) icon.
    In Google Chrome or Firefox, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -97,21 +97,19 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 1. Widen your search across all projects, or narrow it to specific types
    and states. Use the "filter" icon to show the selector lists.
 
-   ![Showing the filter lists](_img/work-item-search-get-started/show-filters.png)    
+   ![Showing the filter lists](_img/_shared/show-filters.png)    
 
-1. Select the criteria you want in the drop-down selector lists.
+1. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
 
    ![Selector drop-down lists](_img/work-item-search-get-started/area-selectors.png)    
-
-   > Work Item search remembers your filter settings. For example, the project and area path that you have selected in a search will be applied in your subsequent searches.
 
 1. Sort the results as you need using the drop-down list of field names, work item types, or by relevance.
 
    ![Sort drop-down list](_img/work-item-search-get-started/sort-order.png)    
 
-1. Quickly search for code containing the same search string (see [Search your code](code-search.md)).
+1. Quickly [search for code](code-search.md) containing the same search string, or search for the same string in your [project's wiki](../wiki/search-wiki.md).
 
-   ![Search for code containing the same search string](_img/work-item-search-get-started/view-code-search.png)
+   ![Search for code or wiki containing the same search string](_img/work-item-search-get-started/view-code-search.png)
 
 ## Next step
 
