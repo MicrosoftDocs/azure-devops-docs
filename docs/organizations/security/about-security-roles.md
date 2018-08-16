@@ -1,7 +1,7 @@
 ---
 title: Understand how security roles work
-titleSuffix: VSTS & TFS
-description: Learn about security roles and where they are used to manage permissions to select features and functions of TFS and VSTS
+titleSuffix: Azure DevOps Services & TFS
+description: Learn about security roles and where they are used to manage permissions to select features and functions of TFS and Azure DevOps
 ms.technology: devops-security
 ms.assetid: 
 toc: show
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 # About security roles
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 <a id="security-roles" />
 While the majority of features and functional tasks are managed by [individual permissions](about-permissions.md), there are several artifacts and features that the system manages through role-based permissions. You can add users or groups to a role. Each role determines the set of operations that the user can perform as described in the following sections.  

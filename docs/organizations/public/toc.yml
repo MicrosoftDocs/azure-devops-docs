@@ -30,6 +30,8 @@
     href: clone-git-repo-public.md 
   - name: View build and release pipelines 
     href: view-build-release-public.md
+  - name: Provide Stakeholders access to edit pipelines 
+    href: ../../organizations/security/provide-stakeholder-pipeline-access.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
   - name: View a project page or dashboard
     href: view-project-dashboard-public.md
   - name: View project Wikis

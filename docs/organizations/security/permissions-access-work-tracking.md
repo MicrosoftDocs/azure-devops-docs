@@ -1,7 +1,7 @@
 ---
 title: Default permissions and access for work tracking 
-titleSuffix: VSTS & TFS 
-description: Default permissions and access levels to support work tracking tasks in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps Services & TFS 
+description: Default permissions and access levels to support work tracking tasks in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-security
 ms.prod: devops
 ms.topic: conceptual
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can use the majority of work tracking functions and features that VSTS or TFS provides if you are added as a team member, which adds you to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
+You can use the majority of work tracking functions and features that Azure DevOps or TFS provides if you are added as a team member, which adds you to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
 
 For a simplified view of permissions assigned to built-in groups, see [Permissions and access](permissions-access.md). For a comprehensive list of all permissions and default groups, see the [Permissions and groups reference](permissions.md). 
 
@@ -203,7 +203,7 @@ Stakeholder access supports business owners and analysts and other team members 
 For a comparison chart of stakeholder versus basic access, see the [Feature Matrix](https://visualstudio.microsoft.com/vsts/compare-features/).
 
 For information about each access levels, see [About access levels](access-levels.md). To assign access levels, see: 
-- **VSTS**: [Add users and assign licenses in VSTS](../accounts/add-organization-users-from-user-hub.md)
+- **Azure DevOps**: [Add users and assign licenses in Azure DevOps](../accounts/add-organization-users-from-user-hub.md)
 - **TFS**: [Change access levels](change-access-levels.md)  
 
 

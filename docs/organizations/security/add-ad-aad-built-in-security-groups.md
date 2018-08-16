@@ -1,6 +1,6 @@
 ---
 title: Add AD/Azure AD security groups to built-in security groups 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Manage large groups of users by adding AD/Azure AD security groups to built-in security groups 
 ms.prod: devops
 ms.technology: devops-security
@@ -33,7 +33,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ::: moniker range="vsts"  
 > [!IMPORTANT]  
-> If you are adding a user to VSTS for the first time, see [Add account users for VSTS](../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json).
+> If you are adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json).
 ::: moniker-end  
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  

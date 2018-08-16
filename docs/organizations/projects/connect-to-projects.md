@@ -45,7 +45,7 @@ To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) 
 0.  Open a browser window and type a URL that uses the following form:  
 
 	::: moniker range="vsts"
-	<pre><code>https://<i>OrganizationName</i>.visualstudio.com/<i>ProjectName</i> </code></pre>
+	<pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
 	::: moniker-end
 
 	::: moniker range=">= tfs-2013 <= tfs-2018" 

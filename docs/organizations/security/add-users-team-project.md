@@ -22,7 +22,7 @@ For anyone to access a project, they must be added to one of the default securit
 The easiest way to add a number of users to a project is to add groups defined in [Azure Active Directory (Azure AD) or Active Directory (AD)](setup-ad-aad.md).
 
 > [!IMPORTANT]
-> If you're adding users to a VSTS account and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or project](../../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one project, you can add them to additional projects using the procedures provided in this topic.
+> If you're adding users to an Azure DevOps organization and you don't use Azure AD, then you need to [add their "personal" Microsoft accounts to your account or project](../../user-guide/sign-up-invite-teammates.md#invite-others). After you've added them to one project, you can add them to additional projects using the procedures provided in this topic.
 
 Once users have been added to a project, you can browse for that name by display name as well as account name. Also, you can [add them to a specific team](#add-team-members). To add a team, see [Add a team](../../organizations/settings/add-teams.md).
 
@@ -37,7 +37,7 @@ Once users have been added to a project, you can browse for that name by display
 ## Add users to a  project
 
 ::: moniker range="vsts"  
-If you are adding a user to VSTS for the first time, see [Add account users for VSTS](../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json).
+If you are adding a user to Azure DevOps for the first time, see [Add account users for Azure DevOps](../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json).
 ::: moniker-end
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]  
@@ -76,7 +76,7 @@ If you are adding a user to VSTS for the first time, see [Add account users for 
 	![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
 
    > [!NOTE]
-   > The first time you add a user or group to VSTS or TFS,
+   > The first time you add a user or group to Azure DevOps or TFS,
    > you can't browse to it or check the friendly name.
    > After the identity has been added, you can just type the friendly name.
 
@@ -103,7 +103,7 @@ If you are adding a user to VSTS for the first time, see [Add account users for 
 
 0. Choose **Security** and under **Groups**, choose one of the following:
    * To add users who will require read-only access to the project, choose **Readers**.
-   * To add users who will contribute fully to this project or who have been granted stakeholder access, choose **Contributors**.
+   * To add users who will contribute fully to this project, choose **Contributors**.
    * For users who will need to administrate the project, choose **Project Administrators**. To learn more, see  [Set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
 
 0. Next, choose the **Members** tab.
@@ -125,7 +125,7 @@ If you are adding a user to VSTS for the first time, see [Add account users for 
 	<img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" /> 
 
    > [!NOTE]
-   > The first time you add a user or group to VSTS or TFS,
+   > The first time you add a user or group to Azure DevOps or TFS,
    > you can't browse to it or check the friendly name.
    > After the identity has been added, you can just type the friendly name.
 

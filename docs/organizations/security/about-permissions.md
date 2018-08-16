@@ -1,7 +1,7 @@
 ---
 title: Understand how permissions and groups are defined 
-titleSuffix: VSTS & TFS
-description: Understand how permissions are managed in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+titleSuffix: Azure DevOps Services & TFS
+description: Understand how permissions are managed in Azure DevOps Services or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-To access the resources you manage in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with VSTS, or Active Directory if integrated with TFS. 
+To access the resources you manage in Azure DevOps Services or Team Foundation Server (TFS)&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with Azure DevOps, or Active Directory if integrated with TFS. 
 
-Permissions may apply to a specific team project or objects within the team project, such as Git or TFVC repositories, branches, build pipelines, area paths, and more. Or, they can apply to an entire VSTS account or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
+Permissions may apply to a specific team project or objects within the team project, such as Git or TFVC repositories, branches, build pipelines, area paths, and more. Or, they can apply to an entire Azure DevOps organization or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
 
 You manage security groups and permissions from the web portal administration context. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server level to which you add groups.
 
@@ -108,7 +108,7 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 ## Permissions versus access levels 
 
 Permissions are different from access levels. Access levels control what features are 
-visible to users in the web portal, and are dependent on user licenses; permissions control a user's  ability to use features across TFS. 
+visible to users in the web portal, and are dependent on user licenses; permissions control a user's ability to use web portal features. 
 If you're just trying to give someone access to a team room or to Agile portfolio management 
 and test case management features, 
 you'll want to [change access levels](change-access-levels.md), not permissions.

@@ -1,7 +1,7 @@
 ---
 title: Permissions and groups reference
-titleSuffix: VSTS & TFS
-description: Comprehensive reference of built-in (default) security groups, and permissions defined in Visual Studio Team Services and Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS
+description: Comprehensive reference of built-in (default) security groups, and permissions defined in Azure DevOps Services and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
@@ -15,7 +15,7 @@ ms.date: 08/06/2017
 ---
 
 
-# Permissions and groups in VSTS and TFS
+# Permissions and groups in Azure DevOps and TFS
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -44,7 +44,7 @@ This topic provides a comprehensive reference for each built-in group and permis
 <a id="image-diff"></a>  
 
 >[!NOTE]  
->The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to VSTS or your on-premises TFS. However, the basic functionality available to you remains the same unless explicitly mentioned. 
+>The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to Azure DevOps or your on-premises TFS. However, the basic functionality available to you remains the same unless explicitly mentioned. 
 
 
 
@@ -160,7 +160,7 @@ You can't remove or delete the default server level groups.
 			</blockquote>
 		</td>
 		<td>
-			Contains all users known to exist in the VSTS account or TFS instance.
+			Contains all users known to exist in the Azure DevOps organization or TFS instance.
 			You can't modify the membership of this group.
 		</td>
 	</tr>
@@ -207,7 +207,7 @@ You can't remove or delete the default server level groups.
 
 ## Collection-level groups
 
-When you create a VSTS account or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
+When you create an Azure DevOps organization or TFS collection, the system creates collection-level groups that have [permissions in that collection](#collection-level). You can neither remove nor delete the built-in collection-level groups.
 
 <!---
 Project Collection Administrators
@@ -242,7 +242,7 @@ Project Collection Valid Users
 			</p>
 			<p>
 				This group should be restricted to the smallest possible number of users
-				who need total administrative control over the collection. For VSTS, assign to administrators who will customize work tracking. 
+				who need total administrative control over the collection. For Azure DevOps, assign to administrators who will customize work tracking. 
 			</p>
 			<blockquote>
 				If your deployment uses SharePoint or Reporting,
@@ -317,7 +317,7 @@ Readers
 Project Administrators
 Project Valid Users
 Readers
-Release Administrators (TFS 2017, VSTS)
+Release Administrators (TFS 2017, Azure DevOps)
 [team name]
 -->
 
@@ -555,7 +555,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="administer-process-permissions-permission">Administer process permissions</td>
 		<td>
-			Can modify permissions for processes. Applies to VSTS only. 
+			Can modify permissions for processes. Applies to Azure DevOps only. 
 		</td>
 	</tr>
 	<tr>
@@ -605,19 +605,19 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="create-process-permission">Create process</td>
 		<td>
-			Can [create an inherited process](../settings/work/manage-process.md). Applies to VSTS only.
+			Can [create an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps only.
 		</td>
 	</tr>
 	<tr>
 		<td id="delete-field-permission">Delete field from account</td>
 		<td>
-			Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md). Applies to VSTS only.
+			Can [delete a custom field that was added to a process](../settings/work/customize-process-field.md). Applies to Azure DevOps only.
 		</td>
 	</tr>
 	<tr>
 		<td id="delete-process-permission">Delete process</td>
 		<td>
-			Can [delete an inherited process](../settings/work/manage-process.md). Applies to VSTS only.
+			Can [delete an inherited process](../settings/work/manage-process.md). Applies to Azure DevOps only.
 		</td>
 	</tr>
 	<tr>
@@ -669,7 +669,7 @@ You manage collection-level permissions through the [web portal admin context](.
 	<tr>
 		<td id="edit-process-permission">Edit process</td>
 		<td>
-			Can edit a [custom inherited process](../settings/work/customize-process.md). Applies to VSTS only.
+			Can edit a [custom inherited process](../settings/work/customize-process.md). Applies to Azure DevOps only.
 		</td>
 	</tr>
 	<tr>
@@ -750,7 +750,7 @@ You manage project-level permissions from the [web portal admin context](../../p
 	</tr>
 	<tr>
 		<td id="change-process-team-project-permission">Change process of team project</td>
-		<td>Can change the Inheritance process for a team project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to VSTS only. </td>
+		<td>Can change the Inheritance process for a team project. To learn more, see [Create and manage inherited processes](../settings/work/manage-process.md). Applies to Azure DevOps only. </td>
 	</tr>
 	<tr>
 		<td id="create-tag-definition-permission">Create tag definition</td>
@@ -765,7 +765,7 @@ You manage project-level permissions from the [web portal admin context](../../p
 <p>Delete and restore work items</p><p>or Delete work items in this project</p></td>
 		<td>Can [mark work items in this project as deleted](../../boards/backlogs/remove-delete-work-items.md).
 <ul>
-<li>For VSTS and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default.</li> 
+<li>For Azure DevOps and TFS 2015.1 and later versions, the Contributors group has **Delete and restore work items** at the project-level set to "Allow" by default.</li> 
 <li>For TFS 2015 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to "Not set" by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set. </li>    
 </ul>
 </td>
@@ -773,7 +773,7 @@ You manage project-level permissions from the [web portal admin context](../../p
 	<tr>
 		<td id="delete-shared-analytic-views-permission">Delete shared Analytics view</td>
 		<td>Can delete [Analytics views](../../report/analytics/analytics-views-manage.md)
-that have been saved under the Shared area. Applies to VSTS only.</td>
+that have been saved under the Shared area. Applies to Azure DevOps only.</td>
 	</tr>
 	<tr>
 		<td id="delete-team-project-permission">Delete team project</td>
@@ -807,7 +807,7 @@ that have been saved under the Shared area. Applies to VSTS only.</td>
 	</tr>
 	<tr>
 		<td id="edit-shared-analytic-views-permission">Edit shared Analytics view</td>
-		<td>Can create and modify [shared Analytics views](../../report/analytics/analytics-views-manage.md). Applies to VSTS only.</td>
+		<td>Can create and modify [shared Analytics views](../../report/analytics/analytics-views-manage.md). Applies to Azure DevOps only.</td>
 	</tr>
 	<tr>
 		<td id="manage-team-project-property-permission">Manage project properties</td>
@@ -825,7 +825,7 @@ that have been saved under the Shared area. Applies to VSTS only.</td>
 	</tr>
 	<tr>
 		<td id="move-work-items-out-of-this-project-permission">Move work items out of this project</td>
-		<td>Can [move a work item from one team project to another team project](../../boards/backlogs/remove-delete-work-items.md) within the collection. Applies to VSTS only.
+		<td>Can [move a work item from one team project to another team project](../../boards/backlogs/remove-delete-work-items.md) within the collection. Applies to Azure DevOps only.
 		</td>
 	</tr>
 	<tr>
@@ -842,11 +842,11 @@ that have been saved under the Shared area. Applies to VSTS only.</td>
 	</tr>
 	<tr>
 		<td id="update-project-visibility">Update project visibility</td>
-		<td>Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to VSTS only.</td>
+		<td>Can [change the project visibility](../public/make-project-public.md) from private to public or public to private. Applies to Azure DevOps only.</td>
 	</tr>
 	<tr>
 		<td id="view-analytics-permission">View analytics</td>
-		<td>Can access data available from the [Analytics service](../../report/analytics/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/analytics/analytics-security.md). Applies to VSTS only.</td>
+		<td>Can access data available from the [Analytics service](../../report/analytics/what-is-analytics.md). For details, see [Permissions required to access the Analytics service](../../report/analytics/analytics-security.md). Applies to Azure DevOps only.</td>
 	</tr>
 	<tr>
 		<td id="view-team-project-level-information-permission">View team project-level information</td>
@@ -1073,7 +1073,7 @@ Rename Repository
 -->
 
 > [!NOTE] 
-> These permissions have changed in TFS 2017 Update 1 and VSTS.
+> These permissions have changed in TFS 2017 Update 1 and Azure DevOps.
 > If you are using an earlier version of TFS, see the [previous list of permissions](git-permissions-before-2017.md).
 
 You manage the security of each [Git repository](set-git-tfvc-repository-permissions.md) or [branch](../../repos/git/branch-permissions.md) from the web portal, the [TF command line tool](../../repos/tfvc/git-permission-command.md), or using the [TFSSecurity command-line tool](/tfs/server/ref/command-line/tfssecurity-cmd#git-repo-permissions). Project Administrators are granted most of these permissions (which appear only for a team project that's been configured with a Git repository). You can manage these permissions for all Git repositories, or for a specific Git repo.
@@ -1120,14 +1120,14 @@ By default, the team project level and collection level Readers groups have only
 		<td id="git-bypass-policies-when-completing-pull-requests">Bypass policies when completing pull requests</td>
 		<td>
 		Can opt-in to override branch policies by checking **Override branch policies and enable merge** when completing a PR.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to VSTS only.
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps only.
 		</td>
 	</tr>
 	<tr>
 		<td id="git-bypass-policies-when-pushing">Bypass policies when pushing</td>
 		<td>
 		Can push to a branch that has branch policies enabled. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.<br><br>
-        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to VSTS only.
+        <b>Bypass policies when completing pull requests</b> and <b>Bypass policies when pushing</b> replace <b>Exempt From Policy Enforcement</b>. Applies to Azure DevOps only.
 		</td>
 	</tr>
 	<tr>
@@ -1184,7 +1184,7 @@ By default, the team project level and collection level Readers groups have only
           <li>Push directly to branches that have branch policies set</li>
         </ul>
         <br>
-        <b>Applies to TFS 2015 through TFS 2018 Update 2. (In VSTS it is replaced with the following two permissions](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection); **Bypass policies when completing pull requests** and **Bypass policies when pushing**.)</b>
+        <b>Applies to TFS 2015 through TFS 2018 Update 2. (In Azure DevOps it is replaced with the following two permissions](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection); **Bypass policies when completing pull requests** and **Bypass policies when pushing**.)</b>
 		</td>
 	</tr>
 	<tr>
@@ -2026,7 +2026,7 @@ You can manage alert permissions using [TFSSecurity](/tfs/server/ref/command-lin
 ## Related articles
 
 - [About permissions](about-permissions.md)  
-- [Add users to a team project](../accounts/add-team-members-vs.md) (VSTS)   
+- [Add users to a team project](../accounts/add-team-members-vs.md) (Azure DevOps)   
 - [Add users to a team project](../../organizations/security/add-users-team-project.md) (TFS)   
 - [Add users to an administrator role](/tfs/server/admin/add-administrator-tfs)   
 - [Make a user a team admin](../settings/configure-team-settings.md)  

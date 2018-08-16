@@ -1,7 +1,7 @@
 ---
 title: Set project-level or collection-level permissions 
-titleSuffix: VSTS & TFS
-description: How-to guide to set project-level permissions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
+titleSuffix: Azure DevOps Services & TFS
+description: How-to guide to set project-level permissions in Azure DevOps Services or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
@@ -26,7 +26,7 @@ Several permissions are set at the team project or at the organization/team proj
 > |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- Team Admins |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Readers group<br/>- Security Service Group | 
 
 > [!Note]  
-> The above list indicates the latest groups defined for VSTS and TFS 2017. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
+> The above list indicates the latest groups defined for Azure DevOps and TFS 2017. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/tfs/server/admin/service-accounts-dependencies-tfs). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
 
 
 For a description of each group and each permission, see [Permissions and groups reference, Groups](permissions.md#groups).
@@ -45,7 +45,7 @@ For a description of each group and each permission, see [Permissions and groups
 ## Prerequisites
 
 ::: moniker range="vsts"
-* You must be a member of a team project. If you don't have a team project yet, create one in [VSTS](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users-from-user-hub.md). 
+* You must be a member of a team project. If you don't have a team project yet, create one in [Azure DevOps](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users-from-user-hub.md). 
 ::: moniker-end
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 * You must be a member of a team project. If you don't have a team project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
@@ -148,7 +148,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](/vsts/_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![](/vsts/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/vsts/_shared/_img/settings/open-admin-settings-vert.png)  
@@ -183,7 +183,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings** (VSTS) or **Collection Settings** (TFS).
+0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection Settings** (TFS).
  
 	> [!IMPORTANT]  
 	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/reference/customize-work).
