@@ -29,7 +29,7 @@
   - name: Java
     href: apps/java/build-gradle.md
   - name: JavaScript
-    href: apps/nodejs/build-gulp.md
+    href: languages/javascript.md
   - name: Python
     href: languages/python.md
   - name: Xamarin

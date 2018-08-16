@@ -1467,7 +1467,7 @@
     },
     {
       "source_path": "docs/build-release/apps/nodejs/quick-to-azure.md",
-      "redirect_url": "/vsts/pipelines/apps/nodejs/build-gulp",
+      "redirect_url": "/vsts/pipelines/languages/javascript",
       "redirect_document_id": false
     },
     {
@@ -5846,11 +5846,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/build-release/archive/apps/nodejs/quick-to-azure.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/nodejs/quick-to-azure",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/build-release/archive/news/2015-01.md",
       "redirect_url": "/vsts/pipelines/archive/news/2015-01",
       "redirect_document_id": true
@@ -7072,7 +7067,7 @@
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-gulp.md",
-      "redirect_url": "/vsts/pipelines/apps/nodejs/build-gulp",
+      "redirect_url": "/vsts/pipelines/languages/javascript",
       "redirect_document_id": true
     },
     {

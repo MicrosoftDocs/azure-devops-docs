@@ -31,13 +31,13 @@ This guidance explains how to build JavaScript and Node.js apps.
 
 ## Example
 
-This example shows how to build a JavaScript. To start, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+For a working example of how to build a NodeJS app, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript
 ```
 
-The sample code is a Node server implemented with Express JS framework that echoes "Hello world". Tests for the app were written using mocha framework.
+The sample code in this repo is a Node server implemented with Express JS framework that echoes "Hello world". Tests for the app are written using mocha framework.
 
 # [YAML](#tab/yaml)
 
@@ -100,8 +100,11 @@ Tools that you commonly use to build, test, and run JavaScript apps - npm, node,
 
 For the exact version of Node.js and npm pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of these tools on Microsoft hosted agents, add the **Node Tool Installer** task to the beginning of your process.
 
+::: moniker-end
+
 # [YAML](#tab/yaml)
 
+::: moniker range="vsts"
 If you need a version of the Node.js/npm that is not already installed on the Microsoft-hosted agent, add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
@@ -109,6 +112,11 @@ If you need a version of the Node.js/npm that is not already installed on the Mi
   inputs:
     version: '8.x' # replace this value with the version that you need for your project
 ```
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
 
 # [Designer](#tab/designer)
 
@@ -130,13 +138,13 @@ As part of your build, you can download packages from the public npm registry, a
 Azure Artifacts/TFS. There are many ways you can download the packages:
 
 * Directly run `npm install` in your build pipeline. This is the simplest way to download packages from a registry that does not need any authentication.
-* Use [npm](../tasks/package/npm.md) task. This is useful when using an authenticated registry.
-* Use [npm Authenticate](../tasks/package/npm-authenticate.md). This is useful when you run `npm install` from inside your task runners - gulp, grunt, or maven.
+* Use [npm task](../tasks/package/npm.md). This is useful when using an authenticated registry.
+* Use [npm Authenticate task](../tasks/package/npm-authenticate.md). This is useful when you run `npm install` from inside your task runners - gulp, grunt, or maven.
 
 If you want to specify a npm registry, put the URLs in `.npmrc` file in your repository.
 If your feed is authenticated, manage its credentials by creating a npm service connection in the **Services** tab under **Project Settings**.
 
-# [YAML](#tag/yaml)
+# [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
@@ -168,7 +176,7 @@ To pass registry credentials to npm commands via task runners such as gulp, add 
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tag/designer)
+# [Designer](#tab/designer)
 
 Use the [npm](../tasks/package/npm.md) or [npm Authenticate](../tasks/package/npm-authenticate.md) tasks in your build pipeline to download and install packages.
 
@@ -198,7 +206,7 @@ It is common to use **gulp**, **grunt**, or **maven** as a task runner to build 
 
 ### Gulp
 
-# [YAML](#tag/yaml)
+# [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 
@@ -223,7 +231,7 @@ If the steps in your gulpfile require authentication with a npm registry:
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tag/designer)
+# [Designer](#tab/designer)
 
 The simplest way to create a build pipeline if your app uses gulp is to use the **NodeJS with Gulp** build template when creating the pipeline. This will automatically add various tasks to invoke gulp commands and to publish artifacts.
 
@@ -231,6 +239,7 @@ The simplest way to create a build pipeline if your app uses gulp is to use the 
 
 ### Grunt
 
+# [YAML](#tab/yaml)
 ::: moniker range="vsts"
 
 Grunt is pre-installed on Microsoft-hosted agents. To run the grunt command in the YAML file:
@@ -254,9 +263,11 @@ If the steps in your `Gruntfile` require authentication with a npm registry:
 YAML builds are not yet available on TFS.
 ::: moniker-end
 
-# [Designer](#tag/designer)
+# [Designer](#tab/designer)
 
 The simplest way to create a build pipeline if your app uses gulp is to use the **NodeJS with Grunt** build template when creating the pipeline. This will automatically add various tasks to invoke gulp commands and to publish artifacts.
+
+---
 
 ## Package and deliver your code
 
@@ -277,7 +288,7 @@ To simply upload the entire working directory of files, add the following to you
     PathtoPublish: '$(System.DefaultWorkingDirectory)'
 ```
 
-To copy a subset of files, first copy the necessary files from the working directory to a staging directory, and then use the **PublishBuildArtifacts** task.
+To upload a subset of files, first copy the necessary files from the working directory to a staging directory, and then use the **PublishBuildArtifacts** task.
 
 ```yaml
 - task: CopyFiles@2
@@ -326,20 +337,43 @@ YAML builds are not yet available on TFS.
 
 ### Publish artifacts to Azure Pipelines
 
-To simply publish the output of your build to Azure Pipelines of TFS, use the **Publish Artifacts** task.
+Use the [Publish build artifacts task](../tasks/utility/publish-build-artifacts.md) to publish files from your build to Azure Pipelines or TFS.
 
 ### Publish to a npm registry
 
-If you want to publish your code to a npm registry, see [publish npm packages](../targets/npm.md).
+To create and publish a npm package, use the [npm task](../tasks/package/npm.md). For more information about versioning and publishing npm packages, see [publish npm packages](../targets/npm.md).
 
 ### Deploy a web app
 
-1. To create a .zip file archive that is ready for publishing to a web app, use the [Archive Files](../tasks/utility/archive-files.md) task.
-
-1. To publish this archive to a web app, see [Azure Web App deployment](../targets/webapp.md).
+To create a .zip file archive that is ready for publishing to a web app, use the [Archive files task](../tasks/utility/archive-files.md). To publish this archive to a web app, see [Azure Web App deployment](../targets/webapp.md).
 
 ---
 
 ## Build a container
 
 You can build a Docker container image after you build your project. For more information, see [Docker](docker.md).
+
+<a name="troubleshooting"></a>
+## Troubleshooting
+
+If you are able to build your project on your development machine, but are having trouble building it on Azure Pipelines or TFS, explore the following potential causes and corrective actions:
+
+* Check that the versions of **node** and task runner on your development machine match those on the agent.
+  You can include command line scripts such as `node --version` in your build pipeline to check what is installed on the agent.
+  Either use the **.Node Tool Installer** (as explained in this guidance) to deploy the same version on the agent,
+  or run `npm install` commands to update the tools to desired versions.
+
+* If your builds fail intermittently while restoring packages, either npm registry is having issues or there are
+  networking problems between the Azure data center and the registry. These are not under our control, and you may
+  need to explore whether using Azure Artifacts with npm registry as an upstream source improves the reliability
+  of your builds.
+
+## Q&A
+
+### Where can I learn more about Azure Artifacts and the TFS Package Management service?
+
+[Package Management in Azure Artifacts and TFS](../../package/index.md)
+
+### Where can I learn more about tasks?
+
+[Build and release tasks](../tasks/index.md)

@@ -97,7 +97,7 @@ On the [Build](../../index.md) tab:
 
 ### Build a Node.js app
 
-[Build your Node.js app with gulp](../../apps/nodejs/build-gulp.md)
+[Build your Node.js app with gulp](../../languages/javascript.md)
 
 ## Open source
 

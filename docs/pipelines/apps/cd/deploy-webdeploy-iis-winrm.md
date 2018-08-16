@@ -37,7 +37,7 @@ Before you begin, you'll need a CI build that publishes your Web Deploy package.
 
 * [Build your ASP.NET Core app](../../languages/dotnet-core.md)
 
-* [Build your Node.js app with gulp](../nodejs/build-gulp.md)
+* [Build your Node.js app with gulp](../../languages/javascript.md)
 
 ### WinRM configuration
 

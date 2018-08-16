@@ -196,7 +196,7 @@ monikerRange: '>= tfs-2015'
 
 [Build: gulp](../build/gulp.md)
 
-[Build your Node.js app with gulp](../../apps/nodejs/build-gulp.md)
+[Build your Node.js app with gulp](../../languages/javascript.md)
 
 ## Open source
 
