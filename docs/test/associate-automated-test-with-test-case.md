@@ -45,8 +45,8 @@ The process to associate an automated test with a test case is:
    contains the automated test.
    [What are the differences if I am still using a XAML build?](../pipelines/test/reference-qa.md#xaml-build)
 
-1. Use Visual Studio Enterprise, Visual Studio Professional,
-   or Visual Studio Test Professional to associate the automated
+1. Use Visual Studio 2017 Enterprise, Professional, or Test Professional, or
+   a later version, to associate the automated
    test with a test case as shown [below](#add-test). The test case must have
    been added to a test plan that uses the build you just defined. 
 
@@ -70,7 +70,7 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
 <a name="add-test"></a>
 ## Associate your test  
 
-1. Open your solution in Visual Studio.
+1. Open your solution in Visual Studio 2017 Enterprise, Professional, or Test Professional, or a later version.
 
 1. If you don't know the identifier of the work item for the test case,
    locate the test case in the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)], or [query for the work item](../boards/queries/using-queries.md) in the **Work** hub. 
@@ -92,34 +92,6 @@ and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudi
    > The dialog shows a list of test cases currently associated with the selected test method.
    You cannot associate more than one test method with a test case, but you can associate a
    test method with more than one test case. 
-
-   **If you are using Visual Studio 2015 or earlier**, follow these steps to associate your tests.
-
-   - In **Team Explorer** open the **Work Items** page. If the **Team Explorer**
-     window is not displayed, open it from the **View** menu.
-
-   - Expand the list of **Queries** in the **Work Items** page to find one that displays your test cases, 
-     for example the default **My Test Cases** query. 
-   
-   - Execute the query by choosing **View Results** on the shortcut menu
-     (or double-click the query name).
-
-   - Open the test case you want to associate by choosing **Open**
-     on the shortcut menu (or double-click the test case name).
-
-   - In the work item, open the **ASSOCIATED AUTOMATION** page. 
-     All the tests in the solution are shown in the list together
-     with their associated test projects.
-
-   - Choose the ellipsis (**...**) and, in the **Choose Test** dialog,
-     select the test and then choose **OK**. The value in 
-     **Automation Status** is automatically changed to **Automated**.
-
-   - Choose **Save Work Item** to save the changes to the test case.
-
-   > If a test case already has an automated test associated with it, you
-   must first remove this association before you can add a different automated test.
-   Choose **Remove association** to remove the existing automation.
 
 <a name="test-plan"></a>
 

@@ -93,15 +93,22 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
      ![Checking the test selection method setting](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-02.png) 
 
-   * If you have UI tests that run on real browsers or thick clients,
-     set (tick) the **Test mix contains UI tests** checkbox. This is not
-     required if you are running UI tests on a headless browser. 
+   * If you have UI tests that run on **physical browsers** or **thick clients**,
+     ensure that the agent is set to run as an interactive process with
+     auto-logon enabled. Setting up an agent to run interactively must be
+     done before queueing the build or release (setting the **Test mix
+     contains UI tests** checkbox does not configure the agent in interactive
+     mode automatically - it is used only as a reminder to configure
+     the agent appropriately to avoid failures).
+
+   * If you are running UI tests on a **headless browser**, the interactive process
+     configuration is not required.
 
    * Select how is the test platform is provisioned, and the version of
      Visual Studio or the location of the test platform that is installed
      on the test machines 
 
-   * If your tests need input parameters such as app URLs or database
+   * If your tests need **input parameters** such as app URLs or database
      connection strings, select the relevant settings file from the
      build artifacts. You can use the **Publish build artifacts** tasks
      in you build pipeline to publish the settings file in a drop
