@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Configure upstream sources for Azure DevOps Services and TFS packages
 
-Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your account or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
+Upstream sources enable you to use a single feed to store both the packages you produce and the packages you consume from "remote feeds": both public feeds (e.g. npmjs.com and nuget.org) and authenticated feeds (i.e. other Azure DevOps Services feeds in your organization or organization). Once you've enabled an upstream source, any user connected to your feed can install a package from the remote feed, and your feed will save a copy.
 
 For more in-depth information on the concepts and best practices regarding upstream sources, check out the [upstream sources concepts documentation](../concepts/upstream-sources.md).
 
@@ -52,15 +52,15 @@ Selecting this option now means **nuget.org** or **npmjs.org** do not have to be
     ![Add public upstream sources](_img/us-add-public-source.png)
 
     > [!NOTE] 
-    > **Attention Microsoft Users:** For Azure DevOps Services feeds, the steps are different depending on whether or not your Azure DevOps Services account is in an organization or not.
+    > **Attention Microsoft Users:** For Azure DevOps Services feeds, the steps are different depending on whether or not your Azure DevOps Services organization is in an enterprise or not.
     
-    If your account **isn't** in an organization, select the feed that you would like to configure as an upstream source, and the rest of the fields will populate automatically
+    If your organization **isn't** in an enterprise, select the feed that you would like to configure as an upstream source, and the rest of the fields will populate automatically
 
     ![Add Azure DevOps Services upstream sources](_img/us-add-vsts-source.png)
 
-    If your account **is** in an organization, input the **Azure DevOps Services feed locator** (this can be found from the _Connect to feed_ panel of the feed you want to use as an upstream)
+    If your organization **is** in an enterprise, input the **Azure DevOps Services feed locator** (this can be found from the _Connect to feed_ panel of the feed you want to use as an upstream)
 
-    ![Add Azure DevOps Services upstream sources in an organization](_img/us-add-upstream-organization.png)
+    ![Add Azure DevOps Services upstream sources in an enterprise](_img/us-add-upstream-organization.png)
 
 ### Adding Azure DevOps Services feeds as upstream sources
 

@@ -12,8 +12,6 @@ ms.date: 02/27/2018
 monikerRange: '>= tfs-2017'
 ---
 
- 
-
 # Quickstart: Use npm to store JavaScript packages in Azure DevOps Services or TFS
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
@@ -24,9 +22,9 @@ This tutorial is an end-to-end guide on using npm to store JavaScript packages u
 
 ### Install Azure Artifacts extension
 
-Azure Artifacts is an extension that comes pre-installed from the Marketplace. If your account doesn't have the Azure Artifacts extension installed, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+Azure Artifacts is an extension that comes pre-installed from the Marketplace. If your organization doesn't have the Azure Artifacts extension installed, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
-In your Azure DevOps Services/TFS account, go to any project and select the **Packages** hub in the **Build & Release** hub group to access Azure Artifacts.
+In your Azure DevOps Services/TFS organization, go to any project and select the **Packages** hub in the **Build & Release** hub group to access Azure Artifacts.
 
 ### Assign licenses
 
@@ -34,7 +32,7 @@ You will need to assign your licenses by following the instructions below:
 
 > If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
 
-1. Go to your account, select the **Users** hub, and select **Azure Artifacts**.
+1. Go to your organization, select the **Users** hub, and select **Azure Artifacts**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
 
    > If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
@@ -45,7 +43,7 @@ On your first visit to the **Packages** hub in the **Build and Release** hub gro
 
 In the dialog:
 * Give the feed a name.
-* **Visibility**: Choose who can read and contribute (or update) packages in your feed.  An account visible feed is created with permissions that allow all users in the account to see/use your feed (recommended).  A private feed is created with permissions such that only you have access.
+* **Visibility**: Choose who can read and contribute (or update) packages in your feed.  An organization visible feed is created with permissions that allow all users in the organization to see/use your feed (recommended).  A private feed is created with permissions such that only you have access.
 * **Upstream sources**: Clicking _Use packages from public sources through this feed_ will add both the public NPM (registry.npmjs.org) and NuGet (packages.nuget.org) as upstreams to your feed.  When upstreams are enabled your client (i.e. npm and nuget) will be able to fetch packages from the public registry through your private feed and your private feed will cache those packages for you.  If you select _Use packages published to this feed_ your feed will be created without connectivity to public registries. You can connect them at a later date if you desire.
 * When you're done, choose _Create_.
 
@@ -134,7 +132,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 
         ![Add task to build pipeline](_shared/_img/build-definition/registries-in-my-npmrc.png)
 
-        > You can choose credentials to authenticate to outside of your current account/collection by setting up [service connections.](../pipelines/library/service-endpoints.md#sep-npm)
+        > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../pipelines/library/service-endpoints.md#sep-npm)
 
     * Registry I select here
 
@@ -171,7 +169,7 @@ When using a task runner, you'll need to add the **npm Authenticate** build task
 
     ![Add task to build pipeline](_shared/_img/build-definition/build-definition-npm-auth-task-file.png)
 
-    > You can choose credentials to authenticate to outside of your current account/collection by setting up [service connections.](../pipelines/library/service-endpoints.md#sep-npm)
+    > You can choose credentials to authenticate to outside of your current organization/collection by setting up [service connections.](../pipelines/library/service-endpoints.md#sep-npm)
 
 1. After setting up your **npm Authenticate** task, you can add other build task(s) for your task runner like **Gulp**.
 

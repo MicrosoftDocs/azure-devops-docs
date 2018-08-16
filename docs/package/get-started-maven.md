@@ -13,7 +13,7 @@ ms.date: 01/31/2018
 monikerRange: '>= tfs-2018'
 ---
 
-# Get started with Maven Azure Artifacts in Azure DevOps Services and TFS
+# Get started with Maven packages in Azure DevOps Services and TFS
 
 **Azure DevOps Services** | **TFS 2018**
 
@@ -27,7 +27,7 @@ listing to install it.
 
 1. Apache Maven installed. It can be downloaded from the [Apache Maven Site](https://maven.apache.org/download.cgi).
 
-1. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your Azure DevOps Services account.
+1. Have [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) installed in your Azure DevOps Services organization.
 
 <a name="create-a-feed"></a>
 

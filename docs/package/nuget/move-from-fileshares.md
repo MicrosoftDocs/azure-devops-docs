@@ -50,7 +50,7 @@ Moving your packages to Azure DevOps Services will require a few changes:
   [NuGet Package Manager](../nuget/consume.md) extension to version 3.3 or higher by going to the Tools menu and using the Extensions and Updates window.
   - **nuget.exe 3.x users**: Credential acquisition happens automatically after you install the 
 [Azure DevOps Services Credential Provider](../nuget/nuget-exe.md).
-- **Authorization:** Ensure that any principal (user, service account, group, etc.) that needs access to your packages has the appropriate permissions. See the [permissions](#make-a-plan-for-permissions) section for details.
+- **Authorization:** Ensure that any principal (user, service organization, group, etc.) that needs access to your packages has the appropriate permissions. See the [permissions](#make-a-plan-for-permissions) section for details.
 
 ## Move your packages
 

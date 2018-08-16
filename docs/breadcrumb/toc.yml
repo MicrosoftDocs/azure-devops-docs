@@ -24,6 +24,9 @@
     - name: TFVC
       tocHref: /vsts/repos/tfvc/
       topicHref: /vsts/repos/tfvc/index
+  - name: Azure Artifacts
+    tocHref: /vsts/package/
+    topicHref: /vsts/package/index
   - name: Azure Pipelines
     tocHref: /vsts/pipelines/
     topicHref: /vsts/index-pipelines
@@ -34,9 +37,6 @@
     - name: Build and Release
       tocHref: /vsts/pipelines/
       topicHref: /vsts/pipelines/index
-    - name: Package Management
-      tocHref: /vsts/package/
-      topicHref: /vsts/package/index
     - name: Continuous Testing
       tocHref: /vsts/pipelines/
       topicHref: /vsts/pipelines/index
