@@ -108,7 +108,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 ### Where can I learn about batch files?
 
-[Using batch files](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+[Using batch files](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands)
 
 ### Where can I learn Windows commands?
 
