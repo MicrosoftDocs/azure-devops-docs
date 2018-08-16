@@ -1,5 +1,5 @@
 ---
-title: Manage conditional access to VSTS
+title: Manage conditional access to Azure DevOps Services
 description: Learn how to protect your organization credentials and keep your organization's data safe with multi-factor authentication, security group membership, and more
 ms.prod: devops
 ms.technology: devops-accounts
@@ -12,37 +12,27 @@ ms.date: 10/06/2017
 monikerRange: 'vsts'
 ---
 
-# Manage conditional access to VSTS
+# Manage conditional access to Azure DevOps Services
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-Conditional access offers simple ways to help secure resources for VSTS organizations backed by an Azure Active 
-Directory (AAD) tenant.  Conditional access policies like multi-factor 
-authentication can help protect against the risk of compromised credentials and help keep your organization's data safe. 
-For example, in addition to requiring credentials, you can have a policy that only devices connected to a corporate network 
-can gain access.  More generally, there are a few requirements and actions you can take for devices in a device 
-management system, which is security software used by IT departments to manage devices running various operating systems 
-from various locations/networks.
+Conditional access offers simple ways to help secure resources for Azure DevOps Services organizations that are backed by an Azure Active Directory (Azure AD) tenant. Conditional access policies like multi-factor authentication help protect against the risk of compromised credentials and help keep your organization's data safe. In addition to requiring credentials, you can have a policy that only devices that are connected to a corporate network can gain access. More generally, there are a few requirements and actions that you can implement for devices in a device management system. This system is security software that's used by IT departments to manage devices running various operating systems from various locations and networks.
 
-You can require conditions such security group membership, location and network identity, specific OS, enabled device 
-in a management system, and so on.
+You can require conditions, such as security group membership, location and network identity, a specific OS, an enabled device in a management system, and so on.
 
-Depending on which conditions the user satisfies, you can require multi-factor authentication, require further checks, 
-or block access.
+Depending on which conditions the user satisfies, you can require multi-factor authentication, require further checks, or block access.
 
 > [!IMPORTANT] 
-> VSTS only enforces conditional access policies when a user signs into services with their AAD credentials. 
-> Accessing VSTS using personal access tokens (PATs), alternate authentication, OAuth, and SSH keys circumvents 
-> conditional access policies.
+> Azure DevOps Services only enforces conditional access policies when a user signs into services with their Azure AD credentials. Conditional access policies are circumvented when Azure DevOps Services is accessed by using personal access tokens (PATs), alternate authentication, OAuth, and SSH keys.
 
-See [more information and resources](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+For more information and resources, see [What is conditional access in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
 
-## Enable conditional access for VSTS
+## Enable conditional access for Azure DevOps Services
 
-You need to use the azure portal to enable conditional access.
+Use the Azure portal to enable conditional access.
 
-See [detailed instructions and requirements](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
+For detailed instructions and requirements, see this [quickstart](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
 
-![azure portal turning on conditional access for VSTS](_img/_shared/azure-conditional-access-738.png)
+![Enable conditional access for Azure DevOps Services in the Azure portal](_img/_shared/azure-conditional-access-738.png)
 
