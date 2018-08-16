@@ -62,7 +62,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/repos/git/pull-requests">
+                                <a href="/vsts/repos/git/pull-requests-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -81,7 +81,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="25%">
-                                <a href="/vsts/repos/git/forks">
+                                <a href="/vsts/repos/git/forks-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -102,7 +102,7 @@ featureFlags:
 </tr>
 <tr>
 <td width="25%">
-                                <a href="/vsts/repos/git/branch-policies">
+                                <a href="/vsts/repos/git/branch-policies-overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
