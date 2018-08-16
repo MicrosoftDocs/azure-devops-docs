@@ -12,7 +12,7 @@ ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Get started with NuGet Azure Artifacts in Azure DevOps Services and TFS
+# Get started with NuGet packages in Azure DevOps Services and TFS
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 

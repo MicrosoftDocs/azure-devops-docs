@@ -56,6 +56,6 @@ To use packages from a feed in Team Build, the appropriate build identity must h
 
 `[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo)) 
 
-## Sharing packages with everyone in your account
+## Sharing packages with everyone in your organization
 
-If you want to make the packages in a feed available to all users in your Azure DevOps Services account, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my account**.
+If you want to make the packages in a feed available to all users in your Azure DevOps Services organization, create or select a [view](views.md) that contains the packages you want to share and ensure its visibility is set to **People in my organization**.

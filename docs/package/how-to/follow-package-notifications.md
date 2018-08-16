@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Receive notifications when a new package version is published
 
-When you follow a package, you’ll be notified every time a new version of that package is published. Notifications are sent to your preferred email address, which you can [change from your account preferences](../../notifications/change-email-address.md).
+When you follow a package, you’ll be notified every time a new version of that package is published. Notifications are sent to your preferred email address, which you can [change from your organization preferences](../../notifications/change-email-address.md).
 
 
 ## Steps

@@ -44,7 +44,7 @@ You're ready to start! This tutorial will guide you through the process of publi
 
 First, you need a **gradle.properties** file that contains a Azure DevOps Services credential token.
 
-Navigate to `https://{yourAccount}.visualstudio.com/_details/organizations/security/tokens`, where `{yourAccount}` is the name of your Azure DevOps Services account.
+Navigate to `https://{yourAccount}.visualstudio.com/_details/organizations/security/tokens`, where `{yourAccount}` is the name of your Azure DevOps Services organization.
 
 Click **Add**.
 
@@ -88,7 +88,7 @@ publishing {
     // Repositories *to* which Gradle can publish artifacts 
     repositories { 
         maven { 
-            url 'https://{your-Azure DevOps Services-account-name-here}.pkgs.visualstudio.com/_packaging/{your-Azure DevOps Services-project-name-here}' 
+            url 'https://{your-Azure DevOps Services-organization-name-here}.pkgs.visualstudio.com/_packaging/{your-Azure DevOps Services-project-name-here}' 
             credentials { 
                 username "Azure DevOps Services" 
                 //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 
@@ -101,7 +101,7 @@ publishing {
 // Repositories *from* which Gradle can download dependencies; it's the same as above in this example
 repositories { 
     maven { 
-        url 'https://{your-Azure DevOps Services-account-name-here}.pkgs.visualstudio.com/_packaging/{your-Azure DevOps Services-project-name-here}' 
+        url 'https://{your-Azure DevOps Services-organization-name-here}.pkgs.visualstudio.com/_packaging/{your-Azure DevOps Services-project-name-here}' 
         credentials { 
             username "Azure DevOps Services" 
             //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 
@@ -110,7 +110,7 @@ repositories {
     } 
 } 
 ```
-In the above example, you are publishing artifacts and downloading dependent artifacts from the same Azure DevOps Services account. You can configure
+In the above example, you are publishing artifacts and downloading dependent artifacts from the same Azure DevOps Services organization. You can configure
 publishing and downloading to use separate Azure DevOps Services accounts, if you prefer.
 
 Replace the following fields with your own values:

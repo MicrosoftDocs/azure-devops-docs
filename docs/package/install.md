@@ -20,9 +20,9 @@ Azure Artifacts is an *extension* to Azure DevOps Services and TFS. The Azure Ar
 
 ::: moniker range="vsts" 
 
-## Install Azure Artifacts in Azure DevOps Services
+## Install Artifacts in Azure DevOps Services
 
-The Azure Artifacts extension comes pre-installed from the Marketplace. If for some reason you do not see Azure Artifacts in your account, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
+The Azure Artifacts extension comes pre-installed from the Marketplace. If for some reason you do not see Azure Artifacts in your organization, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ::: moniker-end
 
@@ -36,15 +36,15 @@ Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrad
 
 ::: moniker range="vsts" 
 
-## Assign Azure Artifacts in Azure DevOps Services
+## Assign Artifacts in Azure DevOps Services
 
-Each account gets five (5) free licenses. If you need more than 5 licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Click **Buy** and purchase the additional licenses you need.  If you aren't sure, you can click **Start 30 day free trial** and every user in your account will be granted access to Azure Artifacts for 30 days.  After the 30-day trial period your account will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
+Each organization gets five (5) free licenses. If you need more than 5 licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Click **Buy** and purchase the additional licenses you need.  If you aren't sure, you can click **Start 30 day free trial** and every user in your organization will be granted access to Azure Artifacts for 30 days.  After the 30-day trial period your organization will revert back to five (5) entitled users and you must assign licenses to individual users.  If you need additional licenses at this point, you may purchase them from this same dialog in the Marketplace.
 
 You will need to assign your licenses by following the instructions below:
 
 > If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access and licenses do not need to be assigned until the trial period has ended. 
 
-1. Go to your account, select the **Users** hub, and select **Azure Artifacts**.
+1. Go to your organization, select the **Users** hub, and select **Azure Artifacts**.
 1. Select **Assign**, type the users you want to assign licenses to, then select **Ok.**
 
    > If you have a Visual Studio Enterprise license, you already have access to Azure Artifacts and don't need to be assigned a license, just ensure that you've been assigned the "Visual Studio Enterprise" access level.
@@ -74,9 +74,9 @@ You will need to assign your licenses by following the instructions below:
 A:  All users who show up under the Azure Artifacts section of the Users hub will have access to Azure Artifacts after the trial expires. 
 You'll need either a Azure Artifacts license or Visual Studio Enterprise subscription to show up in this list.  
 
-#### Q:  I am one of my account's 5 free Basic users. Does that mean I can use Azure Artifacts as well?
+#### Q:  I am one of my organization's 5 free Basic users. Does that mean I can use Azure Artifacts as well?
 
-A:  Your account's 5 free Basic users are separate from your 5 free Azure Artifacts users. 
+A:  Your organization's 5 free Basic users are separate from your 5 free Azure Artifacts users. 
 The free Azure Artifacts licenses must be bought from the Marketplace and assigned in the Azure Artifacts section of the Users hub.
 
 #### Q: I have a Visual Studio Professional subscription. Can I use Azure Artifacts for free?
