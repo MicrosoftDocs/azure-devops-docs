@@ -17,6 +17,9 @@ monikerRange: 'vsts'
 
 #### VSTS
 
+>[!NOTE]
+>This topic is still a work in progress but will be done for the 9/5 launch.
+
 After you create a new account and team project in VSTS, you can begin sharing your code with others. 
 
 
