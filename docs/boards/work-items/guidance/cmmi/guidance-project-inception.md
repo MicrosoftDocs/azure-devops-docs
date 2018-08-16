@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # Project inception
 
-[!INCLUDE [temp](../../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
 
 You arrange the basic resources of the project in an initial stage that is named Project Inception.  
   

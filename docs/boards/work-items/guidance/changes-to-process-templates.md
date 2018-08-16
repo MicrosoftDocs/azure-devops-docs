@@ -13,7 +13,7 @@ ms.date: 09/29/2017
 
 # Changes made to process templates  
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE]    
 >This topic describes changes made to the core system processes&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md) with updates made to the on-premises Team Foundation Server (TFS). These processes are available from both Azure Boards and TFS. 
