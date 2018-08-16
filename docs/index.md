@@ -172,7 +172,7 @@ featureFlags:
 <div class="ico32Link"><a href="/vsts/pipelines/apps/java/build-maven"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_maven.svg"><span>Maven</span></a></div>
 </td>
 <td width="20%">
-<div class="ico32Link"><a href="/vsts/pipelines/apps/nodejs/build-gulp"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
+<div class="ico32Link"><a href="/vsts/pipelines/languages/javascript"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
 <div class="ico32Link"><a href="/vsts/pipelines/targets/npm"><img width="32" height="32" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_npm.svg"><span>npm</span></a></div>
 <div class="ico32Link"><a href="/vsts/pipelines/targets/nuget"><img width="32" height="32" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_nuget.svg "><span>Nuget</span></a></div>
 <div class="ico32Link"><a href="/vsts/pipelines/languages/python"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg"><span>Python</span></a></div>

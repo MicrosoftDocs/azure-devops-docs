@@ -15,8 +15,6 @@ monikerRange: 'tfs-2017'
 
 # Define a continuous integration build for your Node.js app
 
-**[Azure Pipelines](quick-to-azure.md) | TFS 2017 RTM**
-
 Here we'll show you how to define a continuous integration (CI) build pipeline for your Node.js app. If you want to also continuously deploy (CD) your app to Azure, you'll be set up to make that happen after you're done creating this CI build pipeline.
 
 ## Upload your code

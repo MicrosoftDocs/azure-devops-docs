@@ -35,7 +35,7 @@ You'll need a continuous integration (CI) build pipeline that publishes your web
 
 * [Build your ASP.NET Core app](../../languages/dotnet-core.md)
 
-* [Build your Node.js app with gulp](../nodejs/build-gulp.md)
+* [Build your Node.js app with gulp](../../languages/javascript.md)
 
 ## Prerequisites
 

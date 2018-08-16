@@ -30,7 +30,7 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
  <li style="margin-bottom:5px">[ASP.NET Core apps](../languages/dotnet-core.md)</li>
  <li style="margin-bottom:5px">[Java apps with Gradle](../apps/java/build-gradle.md)</li>
  <li style="margin-bottom:5px">[Java apps with Maven](../apps/java/build-maven.md)</li>
- <li style="margin-bottom:5px">[Node.js apps](nodejs/build-gulp.md)</li>
+ <li style="margin-bottom:5px">[Node.js apps](../languages/javascript.md)</li>
  <li style="margin-bottom:5px">[Cloud Services apps](aspnet/build-aspnet-cloudservice.md)</li>
  <li style="margin-bottom:5px">[SQL database DACPAC](aspnet/build-aspnet-dacpac.md)</li>
  <li style="margin-bottom:5px">[C++ apps for Windows](windows/cpp.md)</li>

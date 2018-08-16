@@ -622,7 +622,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
 | [Go](apps/go/go.md) | Go |
 | [Java](apps/java/build-gradle.md) | Gradle |
-| [JavaScript](apps/nodejs/build-gulp.md) | NodeJS with gulp (Grunt is also an option)|
+| [JavaScript](languages/javascript.md) | NodeJS with gulp (Grunt is also an option)|
 | [Xcode](apps/mobile/xcode-ios.md) | Xcode |
 
 ## Q & A
