@@ -30,7 +30,7 @@ using Azure DevOps.
 
 1. Sign into Azure DevOps.
 
-1. Go to the [!INCLUDE [test-hub-include](../_shared/test-hub-include.md)], open the **Load test** page, and choose **URL based test**
+1. Go to the [!INCLUDE [test-hub-include-adsonly](../_shared/test-hub-include-adsonly.md)], open the **Load test** page, and choose **URL based test**
    from the **+ New** menu.
 
    ![Start a new load test from the New menu](_img/get-started-simple-cloud-load-test/SimpleLoadTestVSO-new-test-menu.png)
