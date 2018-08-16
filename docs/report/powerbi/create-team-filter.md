@@ -1,6 +1,6 @@
 ---
 title: Apply a team filter to a Power BI report that uses Analytics views
-titleSuffix: VSTS 
+titleSuffix: Azure DevOps 
 description: Sample report that show how to create a trend report with a team filter using an Analytics view
 ms.prod: devops
 ms.technology: devops-analytics

@@ -1,6 +1,6 @@
 ---
 title: Performance and latency with the Analytics Service
-titleSuffix: VSTS   
+titleSuffix: Azure DevOps   
 description: Understand how data is updated and time requirements associated with querying the Analytics Service 
 ms.prod: devops
 ms.technology: devops-analytics
@@ -30,7 +30,7 @@ Using the [recommended query patterns](../extend-analytics/odata-query-guideline
 Some of the entity sets available in Analytics are designed for aggregations.  The service will limit the results from these Entities to a single page for any non-aggregated query as outlined in the [recommended query patterns](../extend-analytics/odata-query-guidelines.md).
 
 ## Latency
-When you use Analytics, you query a curated copy of the data stored in Visual Studio Team Services (VSTS). The data copy helps optimize read and aggregation performance, and greatly reduces the impact reporting scenarios have on VSTS.
+When you use Analytics, you query a curated copy of the data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and greatly reduces the impact reporting scenarios have on VSTS.
 
 Because the data is copied, the Analytics Service is **not a real-time time store**.  Copying the data introduces a 5 to 30 second delay before the data associated with any one change shows up in Analytics. 
 

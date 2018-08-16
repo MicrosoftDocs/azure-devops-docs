@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
 
-SharePoint products are a valuable resource to users of Visual Studio Team Services (VSTS) and Team Foundation Server (TFS). With a SharePoint site, teams can easily store and share Office documents. SharePoint sites can be configured to show all kinds of information. We expect and encourage VSTS and TFS teams to use SharePoint and will continue to look for ways to make the integration of VSTS and TFS and SharePoint Server and SharePoint online, be better together.
+SharePoint products are a valuable resource to users of Azure DevOps and Team Foundation Server (TFS). With a SharePoint site, teams can easily store and share Office documents. SharePoint sites can be configured to show all kinds of information. We expect and encourage VSTS and TFS teams to use SharePoint and will continue to look for ways to make the integration of VSTS and TFS and SharePoint Server and SharePoint online, be better together.
 
 ## TFS 2017 and earlier versions
 

@@ -1,7 +1,7 @@
 ---
 title: OData API versioning
-titleSuffix: VSTS 
-description: How the Analytics service for Visual Studio Team Services manages changes to the OData API  
+titleSuffix: Azure DevOps 
+description: How the Analytics service for Azure DevOps manages changes to the OData API  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: prprice
@@ -17,7 +17,7 @@ ms.date: 11/13/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service for Visual Studio Team Services (VSTS) provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
+As the Analytics Service grows and changes we are dedicated to providing consistency and reliability to our users. Therefore the Analytics Service for Azure DevOps provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
 The API version follows the _odata element in the request path and is formatted like **v1.0** or **v1.0-preview**.
 

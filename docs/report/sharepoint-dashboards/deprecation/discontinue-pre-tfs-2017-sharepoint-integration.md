@@ -18,7 +18,7 @@ Starting with TFS 2018, we will no longer offer the TFS Extension for SharePoint
 
 ## Why are we doing this?
 
-The older TFS/SharePoint integration required the TFS Extension for SharePoint to be installed and running on the SharePoint server. It only worked when both TFS and SharePoint where installed on-prem. Both TFS and SharePoint have evolved to provide rich cloud experiences: Visual Studio Team Services (VSTS) and SharePoint Online. We need an integration solution that works both on-premises and in the cloud.
+The older TFS/SharePoint integration required the TFS Extension for SharePoint to be installed and running on the SharePoint server. It only worked when both TFS and SharePoint where installed on-prem. Both TFS and SharePoint have evolved to provide rich cloud experiences: Azure DevOps and SharePoint Online. We need an integration solution that works both on-premises and in the cloud.
 
 We are moving away from the tightly coupled integration solution, to a loosely coupled model using public APIs and extensibility frameworks.  The existing integration simply could not be brought into the future.
 

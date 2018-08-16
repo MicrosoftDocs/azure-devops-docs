@@ -1,6 +1,6 @@
 ---
 title: Filtering on historical data from Analytics
-titleSuffix: VSTS
+titleSuffix: Azure DevOps
 description: TBD
 ms.prod: devops
 ms.technology: devops-analytics

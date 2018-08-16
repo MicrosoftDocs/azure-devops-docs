@@ -116,7 +116,7 @@ Adding other rooms provides areas for ad hoc discussions, cross-team interaction
 2. Add members to the room as described earlier in this topic.
 
 ##Related articles
-A team room is automatically created when you [add a team](../organizations/settings/add-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Manage team assets](../organizations/settings/configure-team-settings.md).  
+A team room is automatically created when you [add a team](../organizations/settings/add-teams.md) and is populated with your team members. To learn more about other Agile tools available to teams, see [Configure team settings](../organizations/settings/configure-team-settings.md).  
 
 - To completely exit a team room, close all browser instances where you've logged into the team room  
 - To mute the sound, click the ![Audio icon on the Rooms page](_img/ALM_CT_AudioIcon.png) audio icon to turn the sound off or on  

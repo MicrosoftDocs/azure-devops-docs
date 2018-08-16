@@ -1,8 +1,8 @@
 ---
 title: Catalog of widgets you can add to a dashboard
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps & TFS
 ms.custom: Widget catalog
-description: Determine which widgets you want to add to your dashboards when working in Visual Studio Team Services or Team Foundation Server
+description: Determine which widgets you want to add to your dashboards when working in Azure DevOps or Team Foundation Server
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: C9FD12C0-033E-4A4D-AF63-6EF67E7B4828
@@ -10,24 +10,21 @@ ms.topic: reference
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
 ---
 
 # Widget catalog 
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3**
+**Azure DevOps | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3**
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
 > Widgets and multiple dashboards are not supported features in TFS 2013, instead, you can [pin items to a team homepage](team-dashboard.md).  Consider [upgrading to the latest TFS version](https://visualstudio.microsoft.com/downloads/) to get access to the widget catalog and [multiple team dashboards](dashboards.md).  
 ::: moniker-end
 
-<!---
-> [!NOTE]  
-> **Feature availability**: You can access the widget catalog from VSTS or the web portal for TFS 2015.1 or later version. All widgets listed below are available from the web portal for VSTS. Some widgets listed below are only available when you connect to TFS 2015 Update 2 or later version.  
---> 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 Widgets display information and charts on dashboards. Many of them are configurable and display information available from one or more data stores or charts maintained within the system. 
 
@@ -70,7 +67,7 @@ The following widgets are available to you. Team-scoped widgets display data bas
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Code
 
 <a id="code-tile-widget"></a> 
@@ -83,11 +80,11 @@ Adds a configurable tile to display the summary of a code folder or Git reposito
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="pull-request-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Pull request 
@@ -96,7 +93,7 @@ Requires TFS 2015.1 or later version.
 
 <!---
 > [!NOTE]  
-> **<b>Feature availability:** Available from VSTS or TFS 2015.2 or later version. 
+> **<b>Feature availability:** Available from Azure DevOps or TFS 2015.2 or later version. 
 -->  
 
 Adds a configurable tile to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the Git repository for the pull requests of interest. 
@@ -108,23 +105,18 @@ To learn more about pull requests, see [Review code with pull requests](../../re
 ::: moniker range="tfs-2015"
 Requires TFS 2015.2 or later version.
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Plan and track work  
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 <a id="assigned-to-me-widget"></a>
 ##&nbsp;&nbsp;&nbsp;Assigned to me  
  
 ![Assigned to me widget](_img/widget-assigned-to-me.png)  
-
-<!---
-> [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS and TFS 2017.   
--->
 
 Displays the list of work items currently assigned to the currently logged in user. The list ignores closed or deleted work items.
  
@@ -133,7 +125,7 @@ Displays the list of work items currently assigned to the currently logged in us
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ##&nbsp;&nbsp;&nbsp;Chart for work items  
 <a id="chart-wit-widget"></a> 
 	
@@ -146,11 +138,11 @@ From the configuration dialog, select a shared query and [specify the chart type
 ::: moniker range="tfs-2015"
 Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#work-item-query) to add shared query charts to a dashboard.    
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 <a id="new-work-item-widget"></a>
 ##&nbsp;&nbsp;&nbsp;New Work item
 	
@@ -164,11 +156,11 @@ Work items that you add using this widget are automatically scoped to the team's
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.    
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="other-links-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Other links 
@@ -195,7 +187,7 @@ The following links are displayed when the corresponding resource is configured 
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="query-results-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Query results 
@@ -211,7 +203,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 <a id="query-tile-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Query tile 
 
@@ -225,7 +217,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="sprint-burndown-widget"></a>
 <a id="burndown-widget"></a> 
@@ -240,7 +232,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="sprint-capacity-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Sprint capacity 
@@ -255,7 +247,7 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
 ::: moniker-end
 
  
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="sprint-overview-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Sprint overview 
@@ -264,7 +256,7 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
 
 ::: moniker-end
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 Inserts a configurable overview of sprint progress. You can choose between a count of story points or number of work items. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
 ::: moniker-end
@@ -273,11 +265,11 @@ Inserts a configurable overview of sprint progress. You can choose between a cou
 
 Inserts a visual overview of sprint progress indicating the number of backlog items in progress, completed, or not started. Teams [plan their sprints by defining sprints](../../organizations/settings/set-team-defaults.md) and [assigning backlog items to an iteration](../../boards/sprints/assign-work-sprint.md). 
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 <a id="work-links-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Work links 
 
@@ -346,7 +338,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 
 ![Lead time widget](_img/widget-lead-time.png)   
  
-Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created. 
+Displays the lead time of work items closed in a specified timeframe for a single team and backlog level. The lead time of a work item is defined as the time taken to close a work item after it was created.
 
 Each marker on the chart corresponds to one or more work items with a particular lead time. The lower the lead time, the faster work is being delivered to the customer.
   
@@ -365,23 +357,17 @@ For additional guidance, see [Velocity](team-velocity.md).
 ::: moniker-end
 
 
-
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ## Build, test, release
   
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="build-history-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Chart for build history  
 
 ![Build history widget](_img/widget-build-history-chart.png)   
-
-<!---
-> [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS or TFS 2015.2 or later version.  
--->
 
 Adds a tile to display a histogram of all builds run for the configured build pipeline.
 From the configuration dialog, select the build you want to monitor. 
@@ -391,21 +377,16 @@ Hover over a bar to learn how long the build took to complete. Click the bar to 
 ::: moniker range="tfs-2015"
 Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#build-history) to add a build summary chart to a dashboard. 
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="chart-test-plan-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Chart for test plans  
 	
 ![Chart work item query widget](_img/widget-chart-test-plans.png)  
-
-<!---
-> [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS and TFS 2017.2 and later versions. For TFS 2015.1 and earlier versions, see [Add charts to a dashboard](add-charts-to-dashboard.md#test-quality) to add other supported chart types to a dashboard.   
---> 
 
 Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
 
@@ -415,22 +396,17 @@ To learn more, see [Track your test results](../../test/track-test-status.md).
 ::: moniker range="tfs-2017"
 Requires TFS 2017.2 or later version.
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ----
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="deployment-status-widget"></a> 
 ##&nbsp;&nbsp;&nbsp;Deployment status 
 
 ![Deployment status widget](_img/widget-deployment-status.png)  
-
-<!---
-> [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS or TFS 2017.1 or later versions.  
--->
 
 Configurable widget that shows a consolidated view of the deployment status and test pass rate across multiple environments for a recent set of builds. You configure the widget by specifying a build pipeline, branch, and linked release pipelines. 
 
@@ -438,7 +414,7 @@ Configurable widget that shows a consolidated view of the deployment status and 
 ::: moniker range="tfs-2017"
 Requires TFS 2017.1 or later version. 
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 ----
 ::: moniker-end
 
@@ -448,11 +424,6 @@ Requires TFS 2017.1 or later version.
 ##&nbsp;&nbsp;&nbsp;Release pipeline overview 
 
 ![Release pipeline overview widget](_img/widget-release-definitions.png)  
-
-<!---
-> [!NOTE]  
-> **Feature availability:**  You can access this widget from VSTS.   
--->
 
 Configurable widget that you can use to view and track the status of a release pipeline. The widget shows the release as a series of environments, with the name of the release and the date or time it was started. The color of the heading and the icon in each environment indicate the current status of the release, which are the same as are used on the **Releases** page. Select a release pipeline in the left column to filter the list to just releases for that pipeline.
 
@@ -470,7 +441,7 @@ Configurable widget that you can use to view and track the status of a release p
 
 <!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS or TFS 2017.   
+> **Feature availability:** You can access this widget from Azure DevOps or TFS 2017.   
 -->
 
 Configurable widget that you can use to track quality continuously from a build or release pipeline. 
@@ -489,7 +460,7 @@ To learn more, see [Associate automated test results with requirements](../../te
 
 <!---
 > [!NOTE]  
-> **Feature availability:** You can access this widget from VSTS or TFS 2017.   
+> **Feature availability:** You can access this widget from Azure DevOps or TFS 2017.   
 -->
 
 Adds a configurable tile that displays the trend of test results, such as passed or failed tests, for the selected build pipeline. 
@@ -527,7 +498,7 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 
 <!---
 > [!NOTE]  
-> **Feature availability:** For VSTS and TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.  
+> **Feature availability:** For Azure DevOps and TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.  
 -->
 
 ::: moniker-end
@@ -576,7 +547,7 @@ Provides status and access to [team rooms](../../notifications/collaborate-in-a-
 Team rooms support increased team productivity by providing a space to discuss work in progress, ask questions, share status, and clarify issues that arise. Team administrators can create additional team rooms.  
 
 > [!NOTE]  
-> **Feature availability:** Team Rooms have been deprecated as described in this blog post, [Deprecation of the Team Rooms in VSTS and TFS](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/). Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../../service-hooks/services/slack.md).  
+> **Feature availability:** Team Rooms have been deprecated as described in [Deprecation of Team Rooms](https://blogs.msdn.microsoft.com/devops/2017/01/04/deprecation-of-the-team-rooms-in-team-services-and-tfs/) blog post. Several good solutions are available that integrate well with TFS that support notifications and chat, such as [Microsoft Teams](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams) and [Slack](../../service-hooks/services/slack.md).  
 
 ----
 

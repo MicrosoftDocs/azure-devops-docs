@@ -1,7 +1,7 @@
 ---
 title: What is the Analytics Service
-titleSuffix: VSTS
-description: Understand how you can use the Analytics Service to answer quantitative questions about your projects in Visual Studio Team Services
+titleSuffix: Azure DevOps
+description: Understand how you can use the Analytics Service to answer quantitative questions about your projects in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
@@ -17,7 +17,7 @@ ms.date: 04/04/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS). Use it to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations.
+The Analytics Service provides the reporting platform for Azure DevOps. Use it to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the VSTS suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations.
 
 To gain access to the Analytics Service for your VSTS account, install the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). Once installed, the Analytics Service populates itself with all available VSTS data. Once populated, it updates itself as data changes occur. For more information, read [Data available in Analytics Service](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
 

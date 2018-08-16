@@ -2698,7 +2698,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 </td>
 <td width="33%">
 
-<p><b>Manage team assets</b></p>
+<p><b>Configure team settings</b></p>
 <p>Configure, customize, and manage all [team-related activities](../organizations/settings/configure-team-settings.md)</p>
 
 

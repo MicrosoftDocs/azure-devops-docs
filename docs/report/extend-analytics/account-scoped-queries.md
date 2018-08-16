@@ -1,7 +1,7 @@
 ---
 title: Organization and project scope queries
-titleSuffix: VSTS 
-description: How to guide to query the OData Analytics service for an organization or at the project-level in Visual Studio Team Services
+titleSuffix: Azure DevOps 
+description: How to guide to query the OData Analytics service for an organization or at the project-level in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.date: 11/13/2017
@@ -18,7 +18,7 @@ ms.date: 11/13/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-Using the Analytics Service for Visual Studio Team Services (VSTS), you can construct project or organization-scoped queries to return work items of interest. You run these queries directly in your browser.
+Using the Analytics Service for Azure DevOps, you can construct project or organization-scoped queries to return work items of interest. You run these queries directly in your browser.
 
 Project-scope queries help answer questions about a single project whereas organization-scope queries allow you to answer questions which cross project boundaries. Organization scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of project permissions.
 
@@ -27,9 +27,9 @@ Project-scope queries help answer questions about a single project whereas organ
 
 ## Prerequistes 
 
-- You will need to have a VSTS organization and team project. If you don't have one, see [Sign up for a free VSTS organization](../../user-guide/sign-up-invite-teammates.md).
+- You need to have an Azure DevOps project. If you don't have one, [Sign up for free](../../boards/get-started/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
-- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install VSTS extensions](../../marketplace/install-vsts-extension.md). 
+- Install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). To learn more about extensions, see [Install extensions](../../marketplace/install-vsts-extension.md). 
 
 
 ## Project-scoped queries

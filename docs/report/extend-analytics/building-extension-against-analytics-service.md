@@ -1,7 +1,7 @@
 ---
 title: Build a hub extension 
-titleSuffix: VSTS  
-description: How to build a hub extension that calls the Analytics Service OData for Visual Studio Team Services from Power BI Desktop
+titleSuffix: Azure DevOps  
+description: How to build a hub extension that calls the Analytics Service OData for Azure DevOps from Power BI Desktop
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B1CAEAB1-3D8F-44FA-A2FD-CA24695AEE86
@@ -9,6 +9,8 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
+robots: NOINDEX, NOFOLLOW
+monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
@@ -18,15 +20,15 @@ ms.date: 11/13/2017
 
 Building an extension that calls the Analytics Service is identical to building any other extension. However,
 in this early stage, a few things have to be done manually at this point - and then there's working
-with the returned data. This documentation will show you how to do both.
+with the returned data. This article shows you how to do both.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 
-To build an extension, see [Write your first extension for VSTS](../../extend/get-started/node.md).
+To build an extension, see [Write your first extension](../../extend/get-started/node.md).
 We won't be building a grid control to hold the results though - we'll be building a chart. For the purposes of this
 example we'll use the open source C3 library which sits on top of D3.
 
-At the end of this walkthrough you will have a new hub called "Analytics Data" with a bar chart showing the count of work
+At the end of this walkthrough you will have a new hub labeled "Analytics Data" with a bar chart showing the count of work
 items across all projects in your account.
 
 ## Set up the project
@@ -69,7 +71,7 @@ VSS.init({
 // Our extension will explicitly notify the host when we're done loading
 explicitNotifyLoaded: true,
 
-// We are using some VSTS APIs, so we will need the module loader to load them in
+// We are using some Azure DevOps APIs, so we will need the module loader to load them in
 usePlatformScripts: true,
 usePlatformStyles: true
 });
@@ -276,7 +278,7 @@ There are a few key things to note here:
 * The scope is **vso.analytics** which is the OAuth scope required to access the Analytics Service
 
 At this point the extension can be compiled, deployed, installed and executed following the steps described 
-in the [Create your first extension for VSTS](../../extend/get-started/node.md) documentation, starting from the Create your publisher section.
+in the [Create your first extension](../../extend/get-started/node.md) documentation, starting from the *Create your publisher* section.
 
 Once the solution is deployed you should see something similar to the following:
 

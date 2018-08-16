@@ -1,7 +1,7 @@
 ---
 title: Create an Analytics view 
-titleSuffix: VSTS
-description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Visual Studio Team Services
+titleSuffix: Azure DevOps
+description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
@@ -14,7 +14,7 @@ ms.date: 06/30/2018
 ---
 
 
-# Create an Analytics view in Visual Studio Team Services (VSTS) 
+# Create an Analytics view in Azure DevOps 
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 

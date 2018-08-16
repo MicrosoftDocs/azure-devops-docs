@@ -1,6 +1,6 @@
 ---
 title: Default Analytics views
-titleSuffix: VSTS
+titleSuffix: Azure DevOps
 description: Filtered set of data based on the Analytics Service for VSTS which supports creating Power BI reports  
 ms.prod: devops
 ms.technology: devops-analytics
@@ -17,7 +17,7 @@ ms.date: 04/04/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
-An Analytics view filters Visual Studio Team Services (VSTS) data derived from the Analytics Service. You use views to quickly load the data of interest in Power BI to generate reports. 
+An Analytics view filters Azure DevOps data derived from the Analytics Service. You use views to quickly load the data of interest in Power BI to generate reports. 
 
 Installing the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) creates a default set of Analytics views, as shown below. 
 

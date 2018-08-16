@@ -1,7 +1,7 @@
 ---
 title: Analytics basic queries
-titleSuffix: VSTS  
-description: Examples of how to create queries of work item tracking from the Analytics service for Visual Studio Team Services
+titleSuffix: Azure DevOps  
+description: Examples of how to create queries of work item tracking from the Analytics service for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 1320852A-5C62-4954-9E9D-508D670777A4
@@ -17,7 +17,7 @@ ms.date: 3/16/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
-You can query your Visual Studio Team Services (VSTS) work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
+You can query your Azure DevOps work tracking data using the basic queries provided in this topic. These queries address everyday needs while demonstrating various capabilities of the
 Analytics service. You can adapt most of these queries to meet your needs.
 
 For prerequistes and other information for getting started, see [Query your work tracking data using the OData Analytics service](wit-analytics.md). All examples are scoped to a project. For account-level scoping, see [account scoped queries](account-scoped-queries.md).
@@ -58,8 +58,7 @@ This query will fail when the user does not have access to all the projects. Rea
 
 **Retrieve all work items for a given iteration which fall between the first day of the iteration and the last day of the iteration**
 
-Here your query is constrained by data 
-contained within the VSTS data. 
+Here your query is constrained by data contained within the work tracking data. 
 
 ```OData
 https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0/WorkItems?

@@ -1,7 +1,7 @@
 ---
 title: Add built-in charts to a team dashboard
-titleSuffix: VSTS & TFS
-description: Add system-generated charts or query-based charts to a team dashboard in Visual Studio Team Services & Team Foundation Server
+titleSuffix: Azure DevOps & TFS
+description: Add system-generated charts or query-based charts to a team dashboard in Azure DevOps & Team Foundation Server
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Add charts to a dashboard
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure DevOps | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   
