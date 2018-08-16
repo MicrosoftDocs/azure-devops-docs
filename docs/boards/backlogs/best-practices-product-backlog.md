@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 10/11/2017
 ---
 
@@ -61,7 +62,7 @@ Product owners are the ultimate deciders of the criteria that create customer va
 > Inevitably we all start with our own ideas about what "done" means for a given story.  
 >  
 > However, as we begin to discuss the acceptance criteria presented by the product owner what 
-> ensues is a series of "[ah-ha moments](http://www.bing.com/search?q=Ah-ha moments)." 
+> ensues is a series of "[ah-ha moments](https://www.bing.com/search?q=Ah-ha%20moments)." 
 > A shared understanding of the story begins to emerge. A comment one team member might elicit 
 > the following response from someone else. . .  "Ah-ha, great point. . . I never thought of that."  
 > 

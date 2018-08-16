@@ -19,7 +19,7 @@ ms.date: 06/21/2018
 <a id="share" >  </a>
 # 5. Share your sprint plan
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
  
 Once you've completed your sprint plan, you can easily share it with other members of your team or organization.  This article shows you how to: 
 
