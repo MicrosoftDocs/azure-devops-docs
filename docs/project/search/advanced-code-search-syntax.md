@@ -61,8 +61,15 @@ projects or repositories, use the **Show more** link to see them all.
 
 Code Search can index multiple branches in a Git repository - by default it indexes 
 files in only the default branch of your Git repositories (usually this is the **master** branch).
-Specify up to five additional branches for each repository that you want Code
-Search to index in the [project settings page](../navigation/go-to-service-page.md#open-project-settings).
+Specify the branches for each repository that you want Code
+Search to index in the **Options** tab of the **Repositories** section in the
+[project settings page](../navigation/go-to-service-page.md#open-project-settings).
+
+::: moniker range="= vsts"
+
+![Configure Git branches to include in search](_img/advanced-work-item-search-syntax/configure-branches.png)
+
+::: moniker-end
 
 In a TFVC project, you see a list of folder paths in that project for 
 which you have read access - you won't see any projects and folders 
