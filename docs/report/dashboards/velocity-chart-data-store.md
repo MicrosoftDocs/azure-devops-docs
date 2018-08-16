@@ -1,7 +1,7 @@
 ---
 title: View built-in data store velocity chart
-titleSuffix: VSTS & TFS 
-description: Track team velocity across several sprints using the work tracking datastore velocity chart in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps & TFS 
+description: Track team velocity across several sprints using the work tracking datastore velocity chart in Azure DevOps & Team Foundation Server  
 ms.technology: devops-analytics  
 ms.prod: devops
 ms.topic: tutorial
@@ -15,7 +15,7 @@ ms.date: 08/06/2018
 
 # View and work with the built-in team velocity chart 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 Teams track their velocity to help them determine how much work they can perform sprint-over-sprint. The built-in team velocity chart provides an indication of how much work a team can complete during a sprint. The chart is only available for the product backlog and is based on the sum of estimates made to Effort (PBIs), Story Points (user stories), or Size (requirements). Velocity calculations rely on the team's ability to estimate backlog items. 
 
@@ -33,7 +33,7 @@ Once your team has completed a few sprints, they can use their velocity to [fore
 
 ::: moniker range="vsts"  
 > [!NOTE]   
-> In addition to the built-in velocity chart, VSTS users have access to the [Velocity widget](team-velocity.md). The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart. 
+> In addition to the built-in velocity chart, Azure DevOps users have access to the [Velocity widget](team-velocity.md). The Velocity widget enables you to view more sprints and additional information than that provided by the velocity chart. 
 ::: moniker-end  
 
 <a id="velocity-chart">   </a>

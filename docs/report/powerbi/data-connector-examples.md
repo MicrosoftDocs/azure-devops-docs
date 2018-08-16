@@ -1,7 +1,7 @@
 ---
 title: Example reports for Power BI Data Connector
-titleSuffix: VSTS   
-description: Guidance on developing reports based on examples when using the Power BI Data Connector and the Analytics Service for Visual Studio Team Services 
+titleSuffix: Azure DevOps   
+description: Guidance on developing reports based on examples when using the Power BI Data Connector and the Analytics Service for Azure DevOps 
 ms.assetid: 3356B3EF-E9AB-4B42-8738-E58AA34A4B4F
 ms.prod: devops
 ms.technology: devops-analytics
@@ -23,7 +23,7 @@ This document provides guidanace on how to generate the following example report
 - [Number of Work Items](#number-of-work-items)  
 - [Number of Bugs by Area Path and Priority](#number-of-bugs-by-area-path-and-priority)  
 
-Prior to generating these reports, you must first [connect to the Analytics Services for VSTS using the Power BI data connector](data-connector-connect.md). 
+Prior to generating these reports, you must first [connect to the Analytics Services using the Power BI data connector](data-connector-connect.md). 
 
 > [!TIP]  
 > Use the search box if you are working with tables that contain many columns.
@@ -68,6 +68,6 @@ Prior to generating these reports, you must first [connect to the Analytics Serv
 
 ## Related articles 
 - [Power BI integration overview](overview.md) 
-- [Connect to VSTS with Power BI Data Connector](./data-connector-connect.md)
+- [Connect with Power BI Data Connector](./data-connector-connect.md)
 - [Dataset design for the Power BI Data Connector](data-connector-dataset.md) 
 - [Functions available in Power BI Data Connector](data-connector-functions.md) 

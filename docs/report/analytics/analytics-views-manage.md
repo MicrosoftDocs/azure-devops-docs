@@ -1,7 +1,7 @@
 ---
 title: Manage Analytics views
-titleSuffix: VSTS
-description: View, edit, and delete an Analytics view for Visual Studio Team Services
+titleSuffix: Azure DevOps
+description: View, edit, and delete an Analytics view for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
@@ -17,7 +17,7 @@ ms.date: 04/04/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS). 
+With Analytics views, you gain a simplified way to specify and share the filter criteria for a Power BI report based on the Analytics Service data store. The Analytics Service provides the reporting platform for Azure DevOps. 
 
 Use this article to learn how to:
 

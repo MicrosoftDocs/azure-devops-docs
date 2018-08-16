@@ -1,7 +1,7 @@
 ---
 title: Dashboards index to content
-titleSuffix: VSTS & TFS
-description: Index to topics for working with dashboards to monitor status and trends in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure DevOps & TFS
+description: Index to topics for working with dashboards to monitor status and trends in Azure DevOps & Team Foundation Server   
 ms.assetid: CF7FBF52-AC95-4B0B-9FEC-D2EDD5583F9E
 ms.prod: devops
 ms.technology: devops-analytics
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-ms.date: 04/04/2018
+ms.date: 09/05/2018
 ---
 
 # Dashboards 
@@ -19,18 +19,24 @@ ms.date: 04/04/2018
 
 Start gaining visibility into how your team is progressing by adding one or more widgets to your dashboard. Each team can customize and configure dashboards to share information and monitor their progress.  
 
-To learn about our reporting solutions, read [VSTS/TFS Reporting Roadmap](../analytics/reporting-roadmap.md).
+To learn about our reporting solutions, read [Reporting Roadmap](../analytics/reporting-roadmap.md).
 
-<!---
-## Overview  
-[Charts, dashboards, and widgets](overview.md)
--->
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range="vsts"
 
 ## 5-Minute Quickstarts  
 - [Add and manage dashboards](dashboards.md)
-- [Add an Analytics widget to a dashboard (VSTS)](../analytics/enable-analytics-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json) 
+- [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json) 
+- [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
+- [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
+## 5-Minute Quickstarts  
+- [Add and manage dashboards](dashboards.md)
 - [Add charts and widgets to a dashboard](add-widget-to-dashboard.md)  
 - [Add Markdown to a dashboard](add-markdown-to-dashboard.md)   
 
@@ -104,11 +110,17 @@ To learn about our reporting solutions, read [VSTS/TFS Reporting Roadmap](../ana
 - [Default permissions & access (Security)](charts-dashboard-permissions-access.md)
 - [REST API, Dashboards](https://docs.microsoft.com/rest/api/vsts/dashboard/)
  
-::: moniker-end
+::: moniker range="vsts" 
 
 ## Resources 
-- [Agile](/vsts/#pivot=services&panel=agile)
-- [Testing](/vsts/#pivot=services&panel=testing)
+- [Azure Boards](/vsts/#pivot=services&panel=agile)
+- [Azure Test Plans](/vsts/#pivot=services&panel=testing)
 - [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
- 
-   
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+## Resources 
+- [Agile](/vsts/#pivot=services&panel=agile)
+- [Test](/vsts/#pivot=services&panel=testing)
+- [Marketplace widgets](https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance)  
+::: moniker-end

@@ -1,6 +1,6 @@
 ---
 title: Add configuration to an extension
-titleSuffix: VSTS 
+titleSuffix: Azure DevOps 
 description: How to add configuration options to an extension that calls the Analytics Service
 ms.prod: devops
 ms.technology: devops-analytics

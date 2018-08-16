@@ -1,7 +1,7 @@
 ---
 title: Reporting roadmap
-titleSuffix: VSTS & TFS 
-description: Reporting roadmap for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) 
+titleSuffix: Azure DevOps & TFS 
+description: Reporting roadmap for Azure DevOps and Team Foundation Server (TFS) 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
@@ -17,7 +17,7 @@ ms.date: 04/04/2018
 
 **VSTS | TFS 2018**
 
-The future of reporting for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) is the Analytics Service. 
+The future of reporting for Azure DevOps and Team Foundation Server (TFS) is the Analytics Service. 
 
 ## The Analytics Service
 The [Analytics Service](what-is-analytics.md) is in Public Preview. It currently [contains partial data](./data-available-in-analytics.md) and only works with VSTS. We are working to add all reportable data to the Analytics Service.

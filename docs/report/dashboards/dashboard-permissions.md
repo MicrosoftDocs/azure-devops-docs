@@ -1,7 +1,7 @@
 ---
-title: Set permissions and access for tracking
-titleSuffix: VSTS & TFS
-description: How to guide for setting permissions and access levels to support work tracking tasks (VSTS and Team Foundation Server)
+title: Set permissions and access for viewing and editing charts and dashboards
+titleSuffix: Azure DevOps & TFS
+description: How to set permissions and access levels to view, create, and edit charts and dashboards 
 ms.technology: devops-analytics
 ms.prod: devops
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 07/21/2018
 <a id="set-permissions">  </a>
 # Set dashboard permissions    
 
-**VSTS | TFS 2018 | TFS 2017.1**
+**Azure DevOps | TFS 2018 | TFS 2017.1**
 
 
 As a team admin you can set dashboard permissions for your team. As a member of the Project Administrators group, you can set dashboard permissions for all teams. 
@@ -79,7 +79,7 @@ By default, all team members have permissions to edit dashboards defined for the
 
 	::: moniker range="tfs-2018"  
 	> [!div class="mx-imgBorder"]
-	> ![Manage dashboards - permissions dialog, VSTS and TFS 2018](_img/dashboards-permissions.png)   
+	> ![Manage dashboards - permissions dialog, Azure DevOps and TFS 2018](_img/dashboards-permissions.png)   
 	::: moniker-end  
 	::: moniker range="tfs-2017"  
 	Requires TFS 2017.1 or later version.   

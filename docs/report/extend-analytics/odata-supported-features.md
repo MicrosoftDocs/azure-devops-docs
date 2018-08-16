@@ -1,6 +1,6 @@
 ---
 title: Supported OData features   
-titleSuffix: VSTS 
+titleSuffix: Azure DevOps 
 description: Current level of support for OData specification in the Analytics Service
 ms.prod: devops
 ms.technology: devops-analytics
@@ -18,7 +18,7 @@ ms.date: 3/16/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-This topic provides a summary of the OData features and functions supported or not supported by the Analytics Service for Visual Studio Team Services (VSTS).
+This topic provides a summary of the OData features and functions supported or not supported by the Analytics Service for Azure DevOps.
 
 [!INCLUDE [temp](../_shared/analytics-preview.md)]
 

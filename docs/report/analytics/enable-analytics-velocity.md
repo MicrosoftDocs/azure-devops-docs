@@ -1,7 +1,7 @@
 ---
 title: Add an Analytics widget to a dashboard
-titleSuffix: VSTS
-description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Visual Studio Team Services 
+titleSuffix: Azure DevOps
+description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: douge
@@ -17,7 +17,7 @@ ms.date: 08/06/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
  
-The [Analytics Service](what-is-analytics.md) is the reporting platform for Visual Studio Team Services (VSTS). 
+The [Analytics Service](what-is-analytics.md) is the reporting platform for Azure DevOps. 
 Using Analytics, you and your team can gain new insights into the health and status of your work.
 Follow this short guide to get started in a few simple steps.
 

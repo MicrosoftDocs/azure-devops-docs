@@ -1,7 +1,7 @@
 ---
 title: Data available from the Analytics Service
-titleSuffix: VSTS
-description: Data available for reporting purposes using the Analytics Service for Visual Studio Team Services 
+titleSuffix: Azure DevOps
+description: Data available for reporting purposes using the Analytics Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe   
@@ -17,7 +17,7 @@ ms.date: 04/04/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-The Analytics Service provides the reporting platform for Visual Studio Team Services (VSTS). **The Analytics Service is in public preview.** 
+The Analytics Service provides the reporting platform for Azure DevOps. **The Analytics Service is in public preview.** 
 
 [!INCLUDE [temp](../_shared/analytics-view-availability.md)]
 

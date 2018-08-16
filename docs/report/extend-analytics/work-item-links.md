@@ -1,7 +1,7 @@
 ---
 title: Query for linked work items 
-titleSuffix: VSTS 
-description: How to guidance for creating a query for linked work items using the Analytics service for Visual Studio Team Services   
+titleSuffix: Azure DevOps 
+description: How to guidance for creating a query for linked work items using the Analytics service for Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -15,8 +15,7 @@ ms.date: 11/13/2017
 
 # Query for linked work items 
 
-**VSTS**  
-
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 

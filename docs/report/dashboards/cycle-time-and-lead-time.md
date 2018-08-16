@@ -1,6 +1,6 @@
 ---
 title: Cycle time and lead time control charts
-titleSuffix: VSTS  
+titleSuffix: Azure DevOps  
 description: Configure and use the cycle time and lead time control charts/widgets to improve your team's ability to plan and improve processes  
 ms.prod: devops  
 ms.technology: devops-analytics  
@@ -14,10 +14,10 @@ ms.date: 03/20/2018
 
 # Lead time and cycle time control charts
 
-**VSTS**
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
 > [!NOTE]  
-> <b>Feature availability:</b> The Lead Time and Cycle Time widgets are only available for VSTS at this time.
+> <b>Feature availability:</b> The Lead Time and Cycle Time widgets are only available for Azure DevOps at this time.
 
 Both lead time and cycle time measures are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
 

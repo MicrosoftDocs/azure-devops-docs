@@ -1,7 +1,7 @@
 ---
 title: Status and trend work item, query-based charts
-titleSuffix: VSTS & TFS  
-description: Create status, progress, and trend charts from flat-based queries   in VSTS and Team Foundation Server  
+titleSuffix: Azure DevOps & TFS  
+description: Create status, progress, and trend charts from flat-based queries in Azure DevOps and Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
@@ -13,7 +13,7 @@ ms.date: 03/20/2018
 
 # Track progress by creating status and trend query-based charts 
 
-[!INCLUDE [temp](../_shared/vsts-tfs-header-17-15.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
 

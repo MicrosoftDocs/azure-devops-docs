@@ -1,7 +1,7 @@
 ---
-title: Access Analytics Service data from the Power BI desktop
-titleSuffix: VSTS  
-description: How to access Analytics Service OData from a Power BI Desktop OData feed for Visual Studio Team Services  
+title: Access Analytics service data from the Power BI desktop
+titleSuffix: Azure DevOps  
+description: How to access Analytics Service OData from a Power BI Desktop OData feed for Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -13,28 +13,28 @@ monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
-# Connect to VSTS using the Power BI OData feed
+# Connect using the Power BI OData feed
 
-**VSTS** 
+[!INCLUDE [temp](../../_shared/version-vsts-only.md)] 
 
-You can access the Analytics Service data through the Power BI Desktop OData feed. This method works for any account that has alternate credentials enabled. OAuth (Organizational Accounts) is currently not supported. 
+You can access the Analytics service data through the Power BI Desktop OData feed. This method works for any account that has alternate credentials enabled. OAuth (Organizational Accounts) is currently not supported. 
 
-## Accessing the VSTS OData feed
-1. Make sure you have installed the [VSTS Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics)
+## Access the Analytics service OData feed
+1. Make sure you have installed the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).  
 
-2. Make sure you have configured the [permissions required to access the Analytics service](../analytics/analytics-security.md)
+2. Make sure you have configured the [permissions required to access the Analytics service](../analytics/analytics-security.md).  
 
-3. To get started, Open Power BI Desktop. If you need to install it, [do that now](https://powerbi.microsoft.com/desktop).  
+3. Open Power BI Desktop. If you need to install it, [do that now](https://powerbi.microsoft.com/desktop).  
 
-4. Click Get Data from either the welcome page or the Home ribbon.  
+4. Choose **Get Data** from either the welcome page or the Home ribbon.  
 
 	![Power BI Desktop Get Data ](_img/access-analytics-pbi-get-data.png)  
 
-5. Next, select Other > OData Feed and click Connect.  
+5. Next, select **Other>OData Feed** and choose **Connect**.  
 
 	<img src="_img/pbi2.png" alt="Select OData Feed" style="border: 1px solid #C3C3C3;" />  
 
-6.	Enter the URL in the format into a supported browser:  
+6.	In a supported browser, enter the URL in the following format:  
 
 	```OData
 	https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0-preview
@@ -44,10 +44,11 @@ You can access the Analytics Service data through the Power BI Desktop OData fee
 
 	If the *OrganizationName* is "foo" then the URL is ```https://foo.analytics.visualstudio.com/_odata/v1.0-preview```.
 
-	>[!NOTE]  
-	>Alternatively, you can enter the URL ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
+	> [!NOTE]  
+	> Alternatively, you can enter the URL ```https://{OrganizationName}.analytics.visualstudio.com/{project}/_odata/v1.0-preview``` which will trim the results by the specified team project across all entities related to that project.  
 
-7. At this point you will be prompted to authenticate against the service. If you have not done so previously, see this topic: [Client Authentication Options](../analytics/client-authentication-options.md).  
+7. You'll see a prompt to authenticate against the service. If you have not done so previously, see [Client Authentication Options](../analytics/client-authentication-options.md).  
+
 8. Next, select the entities you want to retrieve data for by checking those entities.
 
 	>[!IMPORTANT]  
@@ -55,7 +56,7 @@ You can access the Analytics Service data through the Power BI Desktop OData fee
 
 	<img src="_img/pbi4.png" alt="Select the entities of data to retrieve" style="border: 1px solid #C3C3C3;" /> 
 
-	At this point, if you click **Load**, Power BI Desktop will load all of the data in each entity. However, this may be more data than you want. To filter the data, select the entity to filter and click Edit. This brings up the Query Editor. For each column you want to filter on, select it and set your filter. When this is complete click Close & Apply in the upper left corner.  
+	At this point, if you choose **Load**, Power BI Desktop will load all of the data in each entity. However, this may be more data than you want. To filter the data, select the entity to filter and choose **Edit**. This brings up the Query Editor. For each column on which you want to filter, select it and set your filter. When this is complete choose **Close & Apply** in the upper left corner.  
 
 ### Handle relationships
 
@@ -92,5 +93,3 @@ not allowed. To handle this, you could expand the Project column in the Areas ta
     ![Expand Project options](_img/pbi-relationships-3.png) 
 
 Now you can list Areas by Project and get a count of Areas in each project.
-
-[!INCLUDE [temp](../../_shared/help-support-shared.md)] 

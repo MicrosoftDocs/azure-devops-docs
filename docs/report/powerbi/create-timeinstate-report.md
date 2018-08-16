@@ -1,7 +1,7 @@
 ---
 title: Add a time-in-state measure to a PowerBI report 
-titleSuffix: VSTS
-description: Sample report that shows how to add a time-in-state measure to an existing PowerBI report based on the Analytics service for VSTS 
+titleSuffix: Azure DevOps
+description: Sample report that shows how to add a time-in-state measure to an existing PowerBI report based on the Analytics service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
@@ -47,7 +47,7 @@ This article provides a series of recipes using DAX calculations to evaluate tim
 
 To simplify quickly generating reports, we designed Analytics views to work with default aggregations in Power BI. To illustrate the difference between a default aggregation and a measure, we start with a simple work item count measure.
 
-1. Load the Power BI pbix file associated with your view in Power BI Desktop. For details, see [Connect to VSTS with Power BI Data Connector](data-connector-connect.md).
+1. Load the Power BI pbix file associated with your view in Power BI Desktop. For details, see [Connect with Power BI Data Connector](data-connector-connect.md).
 
 2. From the Modeling tab **Calculations** section of the ribbon, choose **New Measure**.
 

@@ -1,7 +1,7 @@
 ---
 title: Query guidelines for Analytics with OData
-titleSuffix: VSTS
-description: Guidance to support extension developers on how to write good OData queries that access the Analytics Service for Visual Studio Team Services
+titleSuffix: Azure DevOps
+description: Guidance to support extension developers on how to write good OData queries that access the Analytics Service for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 73E9A63D-B84A-4EA0-9B90-B9BD8BF9646D
@@ -18,7 +18,7 @@ ms.date: 11/13/2017
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-Extension developers can benefit by following the guidelines provided in this topic for designing efficient OData queries against the Analytics Service for Visual Studio Team Services (VSTS). Following these guidelines will help ensure that the queries have good performance in terms of execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
+Extension developers can benefit by following the guidelines provided in this topic for designing efficient OData queries against the Analytics Service for Azure DevOps. Following these guidelines will help ensure that the queries have good performance in terms of execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 
 Guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. Restrictive rules enforced by the Analytics Service contain the **[BLOCKED]** prefix. With these guidelines, you should understand the trade-offs between different solutions. Under certain circumstances, you may have data requirements that force you to violate one or more guidelines. Such cases should be rare. We recommend that you have a clear and compelling reason for such decisions.
 
@@ -444,7 +444,7 @@ https://{OrganizationName}.analytics.visualstudio.com/_odata/v1.0/WorkItems?
 ```
 
 > [!NOTE]
-> VSTS supports process customization. Some account administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, your query will return all fields, including custom fields.
+> Azure DevOps supports process customization. Some account administrators use this feature and create hundreds of custom fields. If you omit the `$select` clause, your query will return all fields, including custom fields.
 
 <a id="specify-columns-select"> </a>
 ### ✔️ DO specify columns in the `$select` expand option inside the `$expand` clause

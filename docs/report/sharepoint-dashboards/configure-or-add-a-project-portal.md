@@ -18,7 +18,7 @@ ms.topic: tutorial
 
 The project portal is a site associated with a team project for the purposes of sharing information. Project portals that are created when the team project is created are associated with a SharePoint site. These [portals](share-information-using-the-project-portal.md) provide access to shared documents, dashboards, and support files that contain redirect links to MSDN process guidance topics.  
   
- If your team project was created using the Basic configuration or is hosted on Visual Studio Team Services (VSTS), you won't have access to a project portal. If you want to configure a portal, you can. Also, you can configure the portal and [process guidance](share-information-using-the-project-portal.md) independently of each other.  
+ If your team project was created using the Basic configuration or is hosted on Azure DevOps, you won't have access to a project portal. If you want to configure a portal, you can. Also, you can configure the portal and [process guidance](share-information-using-the-project-portal.md) independently of each other.  
   
  Choose one of the following options based on your deployment configuration and team requirements:  
   

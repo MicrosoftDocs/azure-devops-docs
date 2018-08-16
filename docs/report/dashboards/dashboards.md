@@ -1,7 +1,7 @@
 ---
 title: Add and manage team dashboards
-titlesuffix: VSTS & TFS  
-description: View progress and trends by defining dashboards in Visual Studio Team Services & Team Foundation Server 
+titlesuffix: Azure DevOps and TFS  
+description: View progress and trends by defining dashboards in Azure DevOps & Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
@@ -15,7 +15,7 @@ ms.date: 07/21/2018
 
 # Add and manage dashboards
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 Share progress and status with your team using configurable team dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
 
@@ -59,7 +59,7 @@ Open a web browser window and choose **Overview>Dashboards**.
 > [!div class="mx-imgBorder"]  
 > ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) project icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end  
 
@@ -75,7 +75,7 @@ Open a web browser window and choose **Dashboards**.
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) VSTS icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) project icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
 
 ::: moniker-end 
 

@@ -1,7 +1,7 @@
 ---
 title: Analytics Service
-titleSuffix: VSTS
-description: Index to topics for using the Analytics Service on Visual Studio Team Services
+titleSuffix: Azure DevOps
+description: Index to topics for using the Analytics Service on Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: pantal
@@ -17,7 +17,7 @@ ms.date: 3/29/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
-Analytics provides advanced widgets you can add to a dashboard, Power BI integration for more advanced reporting, and OData access for extensibility. Analytics is the reporting solution for Visual Studio Team Services (VSTS). 
+Analytics provides advanced widgets you can add to a dashboard, Power BI integration for more advanced reporting, and OData access for extensibility. Analytics is the reporting solution for Azure DevOps. 
 
 For more information, read [What is Analytics?](what-is-analytics.md) and [VSTS/TFS Reporting Roadmap](./reporting-roadmap.md).
 

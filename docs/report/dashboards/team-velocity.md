@@ -1,6 +1,6 @@
 ---
 title: Configure the Velocity widget based on Analytics data
-titleSuffix: VSTS 
+titleSuffix: Azure DevOps 
 description: Track team velocity across several sprints using the Analytics-based velocity widget       
 ms.technology: devops-analytics  
 ms.prod: devops
@@ -25,7 +25,7 @@ Teams track their velocity to help them determine how much work they can perform
 ![6 sprint velocity widget](_img/team-velocity-six-iterations.png) 
 
 > [!NOTE]   
-> **Feature availability:** The Velocity widget is available only for VSTS at this time. For on-premises TFS, you have access to the [velocity chart provided by the work tracking datastore](velocity-chart-data-store.md).
+> **Feature availability:** The Velocity widget is available for Azure DevOps at this time. For on-premises TFS, you have access to the [velocity chart provided by the work tracking datastore](velocity-chart-data-store.md).
 
 Use this topic to learn: 
 

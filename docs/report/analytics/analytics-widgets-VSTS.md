@@ -1,7 +1,7 @@
 ---
 title:  Analytics Service widgets 
-titleSuffix: VSTS
-description: Learn about the widgets generated from data from the Analytics Service that you can add to a dashboard in Visual Studio Team Services 
+titleSuffix: Azure DevOps
+description: Learn about the widgets generated from data from the Analytics Service that you can add to a dashboard in Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.manager: douge

@@ -110,7 +110,7 @@ Release Management helps you automate the deployment and testing of your softwar
 
 As your team grows, your tools will grow with you. You can easily add teams which can focus on their set of backlog stories. Each team you create gets access to their set of dashboards, Agile planning tools, and other collaborative tools.  
 
-[![Add teams](_img/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-team-defaults.md)[![Manage team assets](_img/overview/ov-scale-3.png)](../organizations/settings/configure-team-settings.md)  
+[![Add teams](_img/overview/ov-scale-1.png)](../organizations/settings/add-teams.md)[![Set team defaults](_img/overview/ov-scale-2.png)](../organizations/settings/set-team-defaults.md)[![Configure team settings](_img/overview/ov-scale-3.png)](../organizations/settings/configure-team-settings.md)  
 
  
 ## Related articles
