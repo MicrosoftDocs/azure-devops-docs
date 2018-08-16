@@ -88,7 +88,7 @@ Guidance for Cloud Solution Providers
 
 ## Other resources
 
-* [New User Guide](../../user-guide/index.yml)
+* [New User Guide](../../user-guide/index.md)
 * [Organization Management](../accounts/index.md)
 * [TFS Server Administration documentation](https://docs.microsoft.com/tfs/server/index?view=vsts)
 * [Buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
