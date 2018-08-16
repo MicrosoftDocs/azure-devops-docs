@@ -220,6 +220,8 @@
       href: test/continuous-test-java.md
     - name: Review test results
       href: test/review-continuous-test-results-after-build.md
+    - name: Associate results with requirements
+      href: ../test/associate-automated-results-with-requirements.md?toc=/vsts/pipelines/toc.json&bc=/vsts/project/pipelines/breadcrumb/toc.json
     - name: Set up environments
       href: test/set-up-continuous-test-environments-builds.md
     - name: Set up test builds
