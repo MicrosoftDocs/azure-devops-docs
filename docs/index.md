@@ -148,7 +148,7 @@ featureFlags:
 </tr>
 </tbody>
 </table>
-<p><b><i>Set up automated pipelines to build your applications using your favorite language and IDE. Deploy to any platform, cloud provider, or app store.</i></b></p>
+<p><b><i>Create pipelines to build and deploy applications to any platform, cloud, or app store.</i></b></p>
 
 <table border="0" class="ico32Case halfStack">
 <tbody style="padding-left:0;">
@@ -166,10 +166,9 @@ featureFlags:
 <div class="ico32Link"><a href="/vsts/pipelines/apps/go/go"><img width="32" height="32" alt="" src="/vsts/pipelines/_img/index/logo_go.svg"><span>Go</span></a></div>
 </td>
 <td width="20%">
-<div class="ico32Link"><a href="/vsts/pipelines/apps/java/build-gradle"><img width="32" height="32" alt="" src="/vsts/pipelines/_img/index/logo_gradle.png"><span>Gradle</span></a></div>
+<div class="ico32Link"><a href="/vsts/pipelines/languages/java"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_java.svg"><span>Java</span></a></div>
 <div class="ico32Link"><a href="/vsts/pipelines/apps/cd/azure/deploy-container-kubernetes"><img width="32" height="32" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_kubernetes.svg"><span>Kubernetes</span></a></div>
 <div class="ico32Link"><a href="/vsts/pipelines/apps/cd/deploy-linuxvm-deploygroups"><img width="32" height="32" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_linux-color.svg"><span>Linux VM</span></a></div>
-<div class="ico32Link"><a href="/vsts/pipelines/apps/java/build-maven"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_maven.svg"><span>Maven</span></a></div>
 </td>
 <td width="20%">
 <div class="ico32Link"><a href="/vsts/pipelines/languages/javascript"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
@@ -179,8 +178,8 @@ featureFlags:
 </td>
 <td width="20%">
 <div class="ico32Link"><a href="/vsts/pipelines/apps/windows/universal"><img width="32" height="32" alt="" src="/vsts/pipelines/_img/index/logo_uwp.svg"><span>UWP</span></a></div>
-<div class="ico32Link"><a href="/vsts/pipelines/apps/mobile/xamarin"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
-<div class="ico32Link"><a href="/vsts/pipelines/apps/mobile/xcode-ios"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
+<div class="ico32Link"><a href="/vsts/pipelines/languages/xamarin"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
+<div class="ico32Link"><a href="/vsts/pipelines/languages/xcode"><img width="32" height="32" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
 </td>
 </tr>
 </tbody>
@@ -467,7 +466,7 @@ featureFlags:
 <a class="barLink" href="/cli/vsts/overview"><img src="https://docs.microsoft.com/media/common/i_cligeneric.svg" alt="" />Azure DevOps CLI</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/java/index"><img src="https://docs.microsoft.com//media/logos/logo_java.svg" alt="" />Java</a>
+<a class="barLink" href="/vsts/java/index"><img src="https://docs.microsoft.com/media/logos/logo_java.svg" alt="" />Java</a>
 </td>
 </tr>
 </table>

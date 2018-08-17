@@ -29,7 +29,7 @@ Learn how to build your app and deploy it to your choice of Azure service.
 <div class="ico48Case halfStack">
 <div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-aspnet-core"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_net.svg"><span>ASP.NET Core</span></a></div>
 <div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-go"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_go.svg"><span>Go</span></a></div>
-<div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-java"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_java.svg"><span>Java</span></a></div>
+<div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-java"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_java.svg"><span>Java</span></a></div>
 <div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-php"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_php.svg"><span>PHP</span></a></div>
 <div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-python"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_python.svg"><span>Python</span></a></div>
 <div class="ico48Link"><a href="/azure/devops-project/azure-devops-project-nodejs"><img width="48" height="48" alt="" src="../pipelines/_img/index/logo_nodejs.svg"><span>Node.js</span></a></div>

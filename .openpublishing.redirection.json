@@ -7032,13 +7032,23 @@
     },
     {
       "source_path": "docs/build-release/apps/java/build-gradle.md",
-      "redirect_url": "/vsts/pipelines/apps/java/build-gradle",
-      "redirect_document_id": true
+      "redirect_url": "/vsts/pipelines/languages/java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/java/build-gradle.md",
+      "redirect_url": "/vsts/pipelines/languages/java",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/java/build-maven.md",
-      "redirect_url": "/vsts/pipelines/apps/java/build-maven",
+      "redirect_url": "/vsts/pipelines/languages/java",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/apps/java/build-maven.md",
+      "redirect_url": "/vsts/pipelines/languages/java",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/mobile/android.md",
@@ -7057,13 +7067,23 @@
     },
     {
       "source_path": "docs/build-release/apps/mobile/xamarin.md",
-      "redirect_url": "/vsts/pipelines/apps/mobile/xamarin",
+      "redirect_url": "/vsts/pipelines/languages/xamarin",
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/pipelines/apps/mobile/xamarin.md",
+      "redirect_url": "/vsts/pipelines/languages/xamarin",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build-release/apps/mobile/xcode-ios.md",
-      "redirect_url": "/vsts/pipelines/apps/mobile/xcode-ios",
+      "redirect_url": "/vsts/pipelines/languages/xcode",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/apps/mobile/xcode-ios.md",
+      "redirect_url": "/vsts/pipelines/languages/xcode",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/nodejs/build-gulp.md",
