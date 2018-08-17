@@ -77,9 +77,9 @@ Start planning your project by quickly adding user stories or requirements to yo
 - [Scrum](../sprints/index.md)
 - [Queries](../queries/index.md)
 - [Work item customization](../../reference/index.md)
-- [What is Agile?](/azure/devops/agile/what-is-agile)   
-- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
-- [Agile culture](/azure/devops/agile/agile-culture)  
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
+- [Agile culture](/azure/devops/learn/agile/agile-culture)  
 
 
 

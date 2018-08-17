@@ -102,8 +102,8 @@ Get collaboration going by adding to, updating, and then reviewing your Kanban b
 - [Scrum](../sprints/index.md)
 - [Work item queries](../queries/index.md)
 - [Work item customization](../../reference/index.md) 
-- [What is Agile?](/azure/devops/agile/what-is-agile)   
-- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)   
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
 
 
 <!--- 

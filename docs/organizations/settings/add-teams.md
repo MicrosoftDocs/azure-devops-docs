@@ -23,7 +23,7 @@ As your organization grows, you'll want to make sure that you configure your Agi
 > [!NOTE]    
 > This article describes how to add a team or team members to a project defined in Azure DevOps Services or Team Foundation Server (TFS). To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
 >
-> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/agile/scale-agile-large-teams) article.
+> For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams) article.
 
 <!---
 In this topic you'll learn:  

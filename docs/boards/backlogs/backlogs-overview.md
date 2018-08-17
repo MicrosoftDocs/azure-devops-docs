@@ -19,7 +19,7 @@ ms.date: 09/05/2018
 
 You plan and track your project using the suite of Agile tools you access from the web portal. Agile tools support the core Agile methods&mdash;Scrum and Kanban&mdash;used by software development teams today. Scrum tools support defining and managing work within sprints, setting capacity, and tracking tasks. Kanban tools allow you to manage a continuous flow of work via an interactive sign board.  
 
-If you're new to Agile, see [What is Agile?](/azure/devops/agile/what-is-agile) for an overview.
+If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-agile) for an overview.
 
 
 ## Product and portfolio backlogs 

@@ -160,7 +160,7 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 ## Related articles 
 If you work with several teams, and each team wants their own backlog view, you can [create additional teams](../../organizations/settings/add-teams.md). Each team then gets access to their own set of Agile tools. Each Agile tool filters work items to only include those assigned values under the team's default area path and iteration path, which you configure via the [Set team defaults](../../organizations/settings/set-team-defaults.md) .  
 
-- [What is Scrum?](/azure/devops/agile/what-is-scrum)
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Define iterations for a project](../../organizations/settings/set-iteration-paths-sprints.md) 
 - [Configure team settings](../../organizations/settings/configure-team-settings.md)  

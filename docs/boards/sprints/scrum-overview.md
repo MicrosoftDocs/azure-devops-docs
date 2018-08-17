@@ -17,7 +17,7 @@ ms.date: 07/07/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-The Scrum method uses sprints to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team.  If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/agile/what-is-scrum). 
+The Scrum method uses sprints to plan work to perform by a team within a specific time period and cadence. To get started, several sprints are predefined for your team.  If you're new to Scrum, get an overview from [What is Scrum?](/azure/devops/learn/agile/what-is-scrum). 
 
 
 ## Sprint backlogs and task boards

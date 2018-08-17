@@ -57,6 +57,6 @@ Manage portfolios and gain visibility across teams. For guidance on adding teams
 
 ## Resources  
 - [Scale & Configure Teams](../../organizations/settings/scale/index.md)
-- [Agile culture](/azure/devops/agile/agile-culture)  
-- [Scale Agile to large teams](/azure/devops/agile/scale-agile-large-teams)  
-- [Creating productive teams](/azure/devops/agile/productive-teams)    
+- [Agile culture](/azure/devops/learn/agile/agile-culture)  
+- [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)  
+- [Creating productive teams](/azure/devops/learn/agile/productive-teams)    
