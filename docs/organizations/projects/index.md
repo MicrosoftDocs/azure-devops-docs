@@ -1,16 +1,18 @@
 ---
 title: Add and manage projects to support collaboration on software development 
-description: Index to topics for managing the account for Visual Studio Team Services (VSTS)
+description: Index to topics for managing the account for Azure DevOps Services
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 753DE499-C3D1-426B-B2B0-855D99669223
 ms.topic: conceptual
 ms.manager: douge
-ms.author: chcomley
-author: chcomley
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/06/2017
 monikerRange: '>= tfs-2013'
 ---
+
+
 # Project Management
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
@@ -54,4 +56,4 @@ Add, rename, and delete projects as you scale your organization.
 * [New User Guide](../../user-guide/index.md)
 * [Public Projects](../public/index.md)
 * [Security & Identity](../../organizations/security/index.md)
-* [Migrate from TFS to VSTS](../../articles/migrate-to-vsts-from-tfs.md)
+* [Migrate from TFS to Azure DevOps Services](../../articles/migrate-to-vsts-from-tfs.md)

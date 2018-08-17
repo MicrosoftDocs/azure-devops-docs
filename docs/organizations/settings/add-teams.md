@@ -1,7 +1,7 @@
 ---
 title: Add a team, move from one team to several teams
-titleSuffix: VSTS & TFS 
-description: Add a team to scale your Agile tools in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS 
+description: Add a team to scale your Agile tools in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
@@ -21,7 +21,7 @@ ms.date: 07/27/2018
 As your organization grows, you'll want to make sure that you configure your Agile tools to support that growth. To enable each feature team the autonomy it needs to manage their backlog and plan their sprints, they need their own set of team tools. For more information about features assigned to teams, see [About teams and Agile tools](about-teams-and-settings.md). 
 
 > [!NOTE]    
-> This article describes how to add a team or team members to a project defined in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS). To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
+> This article describes how to add a team or team members to a project defined in Azure DevOps Services or Team Foundation Server (TFS). To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
 >
 > For a good understanding on how to remain Agile as you add teams, review the [Scale Agile to Large Teams](/azure/devops/agile/scale-agile-large-teams) article.
 

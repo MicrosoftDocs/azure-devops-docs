@@ -1,6 +1,6 @@
 ---
 title: Hosted XML process model 
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Guide to configuring and customizing work tracking features for the Hosted XML process model 
 ms.technology: devops-agile
 ms.prod: devops
@@ -12,17 +12,15 @@ ms.date: 03/20/2018
 ---
 
 
-
-
 # Hosted XML process model  
 
-**VSTS**
+[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
 <a id="hosted-xml-process-model">  </a>
 
 
 > [!NOTE]   
-> **Feature availability**:  The Hosted XML process model is only supported for select accounts of Visual Studio Team Services.  
+> **Feature availability**:  The Hosted XML process model is only supported for select accounts of Azure DevOps Services.  
 
 
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
@@ -46,6 +44,6 @@ You can perform the following tasks with the Hosted XML process model.
 
 <a id="hosted-xml-sequence"></a>
  
-Use the following sequences when you manage your VSTS through the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
+Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
 
 [![Export process](_img/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](../../../reference/xml/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  

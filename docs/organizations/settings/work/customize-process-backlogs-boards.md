@@ -1,6 +1,6 @@
 ---
 title: Customize backlogs and boards for an inherited process
-titleSuffix: VSTS 
+titleSuffix: Azure DevOps Services 
 description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model  for a project
 ms.technology: devops-agile
 ms.prod: devops

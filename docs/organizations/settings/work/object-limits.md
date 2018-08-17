@@ -1,7 +1,7 @@
 ---
 title: Work tracking object limits 
-titleSuffix: VSTS 
-description: Limits placed on the number of objects that can be specified for the Inheritance and Hosted XML process models for Visual Studio Team Services 
+titleSuffix: Azure DevOps Services 
+description: Limits placed on the number of objects that can be specified for the Inheritance and Hosted XML process models for Azure DevOps Services 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A  

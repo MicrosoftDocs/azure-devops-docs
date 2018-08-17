@@ -1,7 +1,7 @@
 ---
 title: Select backlog navigation levels
-titleSuffix: VSTS & TFS 
-description: Choose which backlog and portfolio backlogs are active for your team in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS 
+description: Choose which backlog and portfolio backlogs are active for your team in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: BB1E56B6-988A-4D0A-AA56-560F2DF681DD  
@@ -14,7 +14,7 @@ ms.date: 03/20/2018
 
 # Select backlog navigation levels for your team
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]  
 
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
@@ -49,7 +49,7 @@ Because this setting affects all team members' view of the team backlogs and boa
 
 2. Choose **Backlogs** and check the boxes of those backlog levels you want your team to manage. 
 
-	<img src="_img/select-nav-backlog-levels-config-ts.png" alt="VSTS, web portal, team settings dialog, Backlogs tab" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/select-nav-backlog-levels-config-ts.png" alt="Team settings dialog, Backlogs tab" style="border: 2px solid #C3C3C3;" />
 
 3. To see the changes, open or refresh your team's backlog web page. 
 

@@ -1,11 +1,11 @@
-- name: VSTS and TFS
+- name: Azure DevOps Services & TFS
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Admin
+  - name: Management tools
     tocHref: /vsts/
-    topicHref: /vsts/index#pivot=services&panel=admin
+    topicHref: /vsts/index#devops-services-settings
     items:
     - name: Scale & Configure Teams
-      tocHref: /vsts/
+      tocHref: /vsts/organizations/settings/scale/
       topicHref: /vsts/organizations/settings/scale/index

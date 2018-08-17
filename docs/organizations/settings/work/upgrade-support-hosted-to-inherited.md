@@ -1,7 +1,7 @@
 ---
 title: Customizations preserved or ignored with the clone of Hosted XML to Inheritance  
-titleSuffix: VSTS
-description: Describes the set of customizations that are preserved versus those that are ignored when upgrading a Hosted XML process to Inheritance in Visual Studio Team Services
+titleSuffix: Azure DevOps Services
+description: Describes the set of customizations that are preserved versus those that are ignored when upgrading a Hosted XML process to Inheritance in Azure DevOps Services
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 
