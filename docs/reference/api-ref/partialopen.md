@@ -1,7 +1,7 @@
 ---
 title: WorkItem.PartialOpen method
-titleSuffix: VSTS & TFS 
-description: Syntax and usage for the PartialOpen method to open a work item for modification when working with Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS 
+description: Syntax and usage for the PartialOpen method to open a work item for modification when working with Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 82920422-FCC2-4FF6-BDFB-E8E992736A5A
@@ -15,11 +15,11 @@ ms.date: 08/04/2016
 # WorkItem.PartialOpen Method
 
 
-**VSTS | TFS 2017 | TFS 2015 | TFS 2013**
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 Opens this work item for modification by loading only the latest revision of this WorkItem. Whenever possible, use this method instead of [Open](open.md) because PartialOpen provides better performance.  
 
-**Namespace: **  [Microsoft.TeamFoundation.WorkItemTracking.Client](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  
+**Namespace: **  [Microsoft.TeamFoundation.WorkItemTracking.Client](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/bb141853(v=vs.120))  
 **Assembly:**  Microsoft.TeamFoundation.WorkItemTracking.Client (in Microsoft.TeamFoundation.WorkItemTracking.Client.dll)
 
 
@@ -127,9 +127,9 @@ There are two modes of fetching used by PartialOpen, which the caller can use to
 
 (Mode 2) Optimized - Fetch only the fields relevant to a particular project, when project hint is specified. This is most optimal and recommended when all workitems are from the same project.
 
-By using PartialOpen, you can save bandwidth, resources, and time by paging in data for multiple work item fields up to the page size that is specified in [WorkItemCollection.PageSize](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitemcollection.pagesize%28v=vs.120%29.aspx). For VSTS customers, the Open method is rate limited whereas PartialOpen is not.
+By using PartialOpen, you can save bandwidth, resources, and time by paging in data for multiple work item fields up to the page size that is specified in [WorkItemCollection.PageSize](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitemcollection.pagesize%28v=vs.120%29.aspx). For Azure DevOps Services, the Open method is rate limited whereas PartialOpen is not.
 
-This method does nothing if [IsPartialOpen](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.ispartialopen%28v=vs.120%29.aspx), [IsOpen](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isopen%28v=vs.120%29.aspx) or [IsNew](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem.isnew%28v=vs.120%29.aspx) are true.
+This method does nothing if [IsPartialOpen](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/bb164816(v=vs.120)), [IsOpen](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/bb164814(v=vs.120)) or [IsNew](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/ff737494(v=vs.120)) are true.
 
 ## Sample Code
 
@@ -212,5 +212,5 @@ private static void UpdateWorkItemsUsingPartialOpen()
 ## Related articles
 
 
-- [WorkItem Class](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client.workitem%28v=vs.120%29.aspx)  
-- [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](https://msdn.microsoft.com/library/microsoft.teamfoundation.workitemtracking.client%28v=vs.120%29.aspx)  
+- [WorkItem Class](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/bb179831(v=vs.120))  
+- [Microsoft.TeamFoundation.WorkItemTracking.Client Namespace](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/bb141853(v=vs.120))  

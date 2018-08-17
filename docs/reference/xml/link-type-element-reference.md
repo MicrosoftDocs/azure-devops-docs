@@ -1,6 +1,6 @@
 ---
 title: Link type element reference
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: LinkType element syntax and usage to define custom link types to form relationships between different work item types 
 ms.prod: devops
 ms.technology: devops-agile
@@ -8,6 +8,7 @@ ms.assetid: db4e74f7-9c0f-4653-88d4-3805ae34f439
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '>= tfs-2013'
 ms.date: 02/14/2018  
 ---
 
@@ -16,7 +17,7 @@ ms.date: 02/14/2018
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
 > [!IMPORTANT]  
->This topic provides a reference of link types defined for VSTS and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models and supported cusomizations, see [Customize your work tracking experience](../customize-work.md).  
+>This topic provides a reference of link types defined for Azure DevOps Services and TFS. For the On-premises XML process model, you can add custom link types. Custom link types are not supported for Hosted XML or Inheritance process models. For an overview of process models and supported cusomizations, see [Customize your work tracking experience](../customize-work.md).  
 
 You use different link types to form link relationships between different work item types (WITs). There are three categories of link types: system-defined, process-defined, and user-defined or custom. The link types defined in the default processes support link relationships among the test management WITs.  
   
@@ -177,7 +178,7 @@ Link category: Process-defined</p></td>
 </table>
 
 Notes:
-1. Available only from VSTS and TFS 2017 and later versions. 
+1. Available from TFS 2017 and later versions. 
 
 <a id="test-plan-links">  </a>
 ### Test plan and test suite links 

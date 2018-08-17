@@ -1,6 +1,6 @@
 ---
 title: Configure initial groups, teams, members, and permissions
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Configure the initial security settings for a project using the plug-in file for Groups and Permissions in Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-agile

@@ -1,5 +1,6 @@
 ---
-title: Use categories to group work item types | VSTS & TFS
+title: Use categories to group work item types 
+titleSuffix: TFS
 description: Generate flexible reports, and support increased integration across projects using categories 
 ms.prod: devops
 ms.technology: devops-agile

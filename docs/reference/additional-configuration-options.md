@@ -22,7 +22,7 @@ Supports the following FWLINK: Additional configuration options are available - 
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
->This topic applies only to projects hosted on an on-premises Team Foundation Server (TFS). Projects on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
+>This topic applies only to projects hosted on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/vsts/release-notes/index). 
 
 
 After you update your project with the Configure Features wizard, you have access to the latest features. However, you may need to make some additional configurations or customizations to support your work tracking needs. Also, you have access to some features based on the source control setting selected when your project was created.  

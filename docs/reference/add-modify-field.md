@@ -1,7 +1,7 @@
 ---
 title: Add or modify a work tracking field
-titleSuffix: VSTS & TFS
-description: Modify or add a work item field to support queries, reports, and workflow in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS
+description: Modify or add a work item field to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 32775755-CCC1-4859-95ED-0FF9FF8DBCD2  

@@ -1,5 +1,6 @@
 ---
-title: Define default value or copy a value | VSTS & TFS
+title: Define default value or copy a value 
+titleSuffix: TFS
 description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements  
 ms.prod: devops
 ms.technology: devops-agile
@@ -10,7 +11,6 @@ ms.date: 04/05/2017
 ---
 
 # Define a default value or copy a value to a field
-
 
 [!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
