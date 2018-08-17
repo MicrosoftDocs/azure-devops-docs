@@ -18,8 +18,8 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-    <h1>Visual Studio Team Foundation Server (TFS) Documentation</h1>
-    <p>TFS, the on-premises version of Azure DevOps Services, provides integrated tools to support collaborative software development, including Git repositories, interactive Kanban boards, and continuous integration and deployment.</p>
+    <h1>Visual Studio Team Foundation Server Documentation</h1>
+    <p>Team Foundation Server, the on-premises version of [Azure DevOps Services](index.md), provides integrated tools to support collaborative software development, including Git repositories, continuous integration and deployment, and interactive Kanban boards.</p>
 <a href="#start"> </a>
 <h2 id="start">Get started with Team Foundation Server</h2>
 <table border="0" class="fullspan cardsY">
@@ -116,7 +116,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Plan and track work</h3>
-                                                    <p>Configure Kanban boards, use interactive backlogs, and get out-of-the-box support for Scrum.</p>
+                                                    <p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -135,7 +135,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Code</h3>
-                                                    <p>Use Git repositories, pull requests, and code review and then integrate with CI/CD to build and deploy your apps.</p>
+                                                    <p>Use Git repositories, pull requests, and then integrate with CI/CD to build and deploy your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -154,7 +154,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Build and Release</h3>
-                                                    <p>Test and deploy your apps with high-performance pipelines. Start small and scale up as needed.</p>
+                                                    <p>Manage CI/CD to deploy your code with high-performance pipelines that work with any language, platform, and cloud. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -175,7 +175,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Package management</h3>
-                                                    <p>Share code with others across your enterprise, and support continuous integration and deployment of your apps.</p>
+                                                    <p>Share code with others across your enterprise, and support CI/CD of your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,7 +194,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Test</h3>
-                                                    <p>The manual and exploratory test toolkit to ship with confidence.</p>
+                                                    <p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p>
                                                 </div>
                                             </div>
                                         </div>

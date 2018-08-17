@@ -20,7 +20,7 @@ featureFlags:
 <div class="container">
 <p><a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Pipelines</p><br/>
 <h1>Azure Pipelines Documentation</h1>
-<p>Test and deploy your code with high-performance pipelines. Start small and scale up as needed.</p><br/>
+<p>Manage continuous integration and continuous delivery to deploy your code with high-performance pipelines that work with any language, platform, and cloud. </p><br/>
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
