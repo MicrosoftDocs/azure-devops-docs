@@ -1,7 +1,7 @@
 ---
 title: About process customization and inherited processes 
-titleSuffix: VSTS
-description: Describes work tracking customizations supported by the inherited process model for Visual Studio Team Services 
+titleSuffix: Azure DevOps Services
+description: Describes work tracking customizations supported by the inherited process model for Azure DevOps Services 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 

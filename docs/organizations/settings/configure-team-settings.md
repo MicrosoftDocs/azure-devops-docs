@@ -1,6 +1,6 @@
 ---
 title: Configure team settings
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Manage team-specific tools such as sprint settings, backlogs, Kanban boards, and more as well as add team administrators 
 ms.technology: devops-settings
 ms.prod: devops
@@ -67,7 +67,7 @@ You can configure most of your team settings from the common configuration dialo
 
 # [Previous navigation](#tab/previous-nav)  
 
-0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![](../../_img/icons/project-icon.png) VSTS icon to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+0. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../_shared/_img/work-web-portal-ts-switch-team-focus.png)
 

@@ -1,7 +1,7 @@
 ---
-title: About team, project & organizational-level settings
-titleSuffix: VSTS & TFS
-description: Overview of configuring team, project, and organizational-level settings in VSTS Agile & Team Foundation Server
+title: About user, team, project, collection, & organizational-level settings
+titleSuffix: Azure DevOps Services & TFS
+description: Overview of configuring team, project, collection, and organizational-level settings in Azure DevOps & Team Foundation Server
 ms.technology: devops-settings
 ms.prod: devops
 ms.topic: overview
@@ -83,7 +83,7 @@ Individual contributors can set their user preferences, enable features that are
 <li>[Change your preferred email address](../../notifications/change-email-address.md)</li>
 <li>[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)</li>
 </ul></td>
-<td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When an VSTS project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
+<td>Notifications alert you through email messages when changes occur to work items, code reviews, pull requests, source control files, builds, and more. When a project is created, a number of notifications are defined. If you want to opt out of these, you can.  </li>
 </ul></td>
 </tr>
 </tbody>
@@ -196,12 +196,12 @@ From the administrative pages for a project, you can configure the settings show
 <td>**General**</td>
 <td><ul>
 <li>Set project description</li>
-<li>[Change the project visibility, public or private](../public/make-project-public.md) (VSTS only) </li>
+<li>[Change the project visibility, public or private](../public/make-project-public.md) (Azure DevOps Services only) </li>
 </ul></td>
 <td>Update the project description or change it's visibility.</p></td>
 </tr>
 <tr>
-<td>**Services** (VSTS only)</td>
+<td>**Services** (Azure DevOps Services only)</td>
 <td><ul>
 <li>[Turn a service on or off ](set-services.md)</li>
 </ul></td>
@@ -291,7 +291,7 @@ From the administrative pages for a project, you can configure the settings show
 <td>**Wiki**</td>
 <td><ul>
 <li>[Create a wiki for your project](../../project/wiki/wiki-create-repo.md)</li>
-<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md) (VSTS only)</li>
+<li>[Publish a Git repository to a wiki](../../project/wiki/publish-repo-to-wiki.md) (Azure DevOps Services only)</li>
 <li>[Manage README and Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)</li>
 </ul></td>
 <td>To share information with your team, you can use Markdown format within a project Wiki, within your project README file, or other repository README file. To learn more, see [About READMes and Wikis](../../project/wiki/about-readme-wiki.md).</td>
@@ -408,7 +408,7 @@ For an overview of managing your organization, see [About organization managemen
 <td><ul>
 <li>[Change application access policies](../accounts/change-application-access-policies-vs.md) </li>
 </ul></td>
-<td>VSTS owners can set policies to allow or disallow access by other applications or services to their VSTS account. </td>
+<td>Set policies to allow or disallow access by other applications or services to the  Azure DevOps Services organization. </td>
 </tr>
 <tr>
 <td>**Users**</td>
@@ -450,7 +450,7 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
-<td>An extension is an installable unit that contributes new capabilities to your VSTS projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
 </td>
 </tr>
 <tr>
@@ -466,7 +466,7 @@ For an overview of managing your organization, see [About organization managemen
 <li>[Customize a project](./work/customize-process.md)</li>
 <li>[Add and manage processes](./work/manage-process.md)</li>
 </ul></td>
-<td>Process customization applies to VSTS Agile only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes ](./work/inheritance-process-model.md). </td>
+<td>Process customization applies to Azure Boards only. To customize the Agile tools and work tracking artifacts, you create and customize an inherited process and then update the project to use that process. To learn more, see [About process customization and inherited processes](./work/inheritance-process-model.md). </td>
 </tr>
 <tr>
 <td>**CI/CD**</td>
@@ -538,7 +538,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 <li>[Grant permissions to manage extensions](../../marketplace/how-to/grant-permissions.md)</li>
 <li>[Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md)</li>
 </ul></td>
-<td>An extension is an installable unit that contributes new capabilities to your VSTS projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
+<td>An extension is an installable unit that contributes new capabilities to your projects. You can find extensions from within the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts) to support planning and tracking of work items, sprints, scrums, etc.; build and release flows; code testing and tracking; and collaboration among team members. 
 </td>
 </tr>
 <tr>

@@ -1,6 +1,6 @@
 ---
 title: Add a custom field to an inherited process
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Add a custom work item type for an Inheritance process model and apply to a project  
 ms.technology: devops-agile
 ms.prod: devops

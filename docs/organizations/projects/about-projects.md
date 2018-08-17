@@ -1,7 +1,7 @@
 ---
 title: Scale your organization by adding a project
-titleSuffix: VSTS & TFS  
-description: Understand project management for Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps Services & TFS  
+description: Understand project management for Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid:  
@@ -18,7 +18,7 @@ ms.date: 07/12/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-A project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. It represents a fundamental container where data is stored when added to Visual Studio Team Services (VSTS) or Team Foundation Server (TFS).
+A project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. It represents a fundamental container where data is stored when added to Azure DevOps Services or Team Foundation Server (TFS).
 
 When you create your project, a team of the same name is automatically created. For small teams, this is sufficient. However, for enterprise-level organizations, it may be necessary to scale up, to create additional teams and/or projects. These can be created within the single account or collection. 
 
@@ -49,7 +49,7 @@ The collection-project-team structure provides teams a high-level of autonomy to
 
 *How do you scale your DevOps and Agile tools to support your growing enterprise?*  
 
-When you connect to VSTS or TFS, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. 
+When you connect to Azure DevOps Services or TFS, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system. 
 
 ::: moniker range="vsts"
 You can scale your organization in the following ways:
@@ -73,7 +73,7 @@ You can scale your on-premises TFS deployment in the following ways:
 - To manage a large number of users, you can manage access through Active Directory
 ::: moniker-end
 
-Both VSTS and TFS are enterprise-ready platforms that support teams of any size, from tens to thousands. VSTS, our cloud service, provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
+Both Azure DevOps Services and TFS are enterprise-ready platforms that support teams of any size, from tens to thousands. Azure DevOps Services, our cloud service, provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24x7 operations team, and available in local data centers around the world.
 
 ## How to view projects defined for your organization or collection 
 You can view the projects defined for your organization by opening the **Projects** page. 
@@ -85,7 +85,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range="vsts"
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. 
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/about-projects/projects-hub-vert.png)  
@@ -102,7 +102,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= tfs-2017"
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open **Projects**. 
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects, horizontal nav](../../_shared/_img/settings/open-project-hub-horz.png)   
@@ -238,7 +238,7 @@ See also, [Compatibility with TFS versions](/tfs/server/compatibility).
 
 - [Navigation basics](../../project/navigation/index.md) 
 - [What do I get with a project?](../../user-guide/services.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
-- [Understand differences between VSTS and TFS](../../user-guide/about-vsts-tfs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
+- [Understand differences between Azure DevOps Services and TFS](../../user-guide/about-vsts-tfs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json)
 
 <!--- Various blog resources 
 

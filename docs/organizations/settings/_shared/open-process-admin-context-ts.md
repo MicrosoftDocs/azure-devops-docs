@@ -6,13 +6,13 @@ ms.topic: include
 ## Open Settings>Process hub
 
 > [!NOTE]
-> Choose **Previous navigation** when you see a top-level, blue-bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar along with other navigational features are enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the VSTS organization. To learn how to use the web portal effectively, see [Navigation Basics](/vsts/project/navigation/index).    
+> Choose **Previous navigation** when you see a top-level, blue-bar. Choose **New navigation** if you see a vertical sidebar or if you enabled the **New Navigation** preview feature. The vertical sidebar along with other navigational features are enabled when the **New Navigation** preview feature has been enabled for the signed-in user or the Azure DevOps Services organization. To learn how to use the web portal effectively, see [Navigation Basics](/vsts/project/navigation/index).    
 
 # [New navigation](#tab/new-nav)
 
 You create, manage, and make customizations to processes from the **Organization Settings>Process** hub. 
 
-0. Choose the ![](/vsts/_img/icons/project-icon.png) VSTS icon to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![](/vsts/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/vsts/_shared/_img/settings/open-admin-settings-vert.png)  

@@ -1,6 +1,6 @@
 ---
-title: Create a project in VSTS or Team Foundation Server (TFS)
-description: Add a project in VSTS or on-premises Team Foundation Server (TFS)
+title: Create a project in Azure DevOps Services or Team Foundation Server (TFS)
+description: Add a project in Azure DevOps Services or on-premises Team Foundation Server (TFS)
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.prod: devops
 ms.technology: devops-accounts
@@ -16,7 +16,6 @@ ms.date: 07/12/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]  
 
-
 You add another project to establish a repository for source code and a place for a group of developers and teams to plan, track progress, and collaborate on building software solutions. Each project you add provides boundaries to isolate data from other projects and must be managed and structured to support your business needs. To learn more about projects and when or when not to add one, see [About projects and scaling your organization](about-projects.md).
 
 <!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
@@ -24,7 +23,7 @@ You add another project to establish a repository for source code and a place fo
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 > [!NOTE]
 > If you don't want to manage an on-premises server, you can 
-[sign up for VSTS and create a project](../accounts/create-organization-msa-or-work-student.md). 
+[sign up for Azure DevOps Services and create a project](../accounts/create-organization-msa-or-work-student.md). 
 ::: moniker-end
 
 If you have a project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
@@ -66,7 +65,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 ::: moniker range="vsts"
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open the **Projects** page, and then choose **Create Project**.
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **Create Project**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/projects-hub-vert-create-project.png)  
@@ -90,7 +89,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 
 ::: moniker range="vsts"
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open the **Projects** page, and then choose **New Project**.
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **New Project**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
@@ -109,7 +108,7 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 > [!NOTE]   
 > TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
 
-0. Choose the ![](../../_img/icons/project-icon.png) VSTS icon to open the **Projects** page, and then choose **New Project**.
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open the **Projects** page, and then choose **New Project**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
@@ -260,13 +259,13 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
 ## Add a project from the command line or scripts
 
-You can create and get projects and other VSTS items from the command line or scripts using the VSTS CLI. Check out the [VSTS CLI documentation](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest) to learn more.
+You can create and retrieve projects and other objects  from the command line or scripts using the CLI. Check out the [CLI documentation](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest) to learn more.
 
 ::: moniker-end
 
 ::: moniker range="tfs-2017"
 > [!NOTE]   
-> The VSTS CLI is supported for TFS 2017.2 and later versions. 
+> The CLI is supported for TFS 2017.2 and later versions. 
 
 ::: moniker-end
 

@@ -1,6 +1,6 @@
 ---
-title: VSTS Settings
-titleSuffix: VSTS
+title: Project, collection, and organization settings
+titleSuffix: Azure DevOps Services & TFS
 description: Configure settings for teams, projects, and account-level objects
 ms.technology: devops-settings
 ms.prod: devops
@@ -9,7 +9,7 @@ ms.assetid:
 ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ms.date: 07/27/2018
 ---
 

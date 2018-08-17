@@ -1,6 +1,6 @@
 ---
 title: Customize a project  
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Your guide to configuring and customizing work tracking processes for a project by customizing an  inherited process
 ms.technology: devops-agile
 ms.prod: devops
@@ -195,7 +195,7 @@ You can add additional WITs to a backlog level or add another portfolio backlog.
 
 We recommend that you create a test project and apply your customized inherited process to it to verify the changes you've made. All customizations made to a process go into effect immediately on all projects. If you want to stage your changes, you can do that using one of two methods: 
 - [Create a test project and copy of your customized process](#test-project-copy-process)
-- [Create a test VSTS organization and import/export your process](#test-import-export-process)
+- [Create a test organization and import/export your process](#test-import-export-process)
 
 <a id="test-project-copy-process" />
 ### Create a test project and copy of your customized process
@@ -218,11 +218,11 @@ We recommend that you create a test project and apply your customized inherited 
 0.  Verify that the field(s) you added appear on the form. Note that the ![](../../../_img/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
 
 <a id="test-import-export-process" />
-### Create a test VSTS organization and import/export your process
+### Create a test organization and import/export your process
 
 You can also use the following steps to verify the customizations you've made to an inherited process. 
  
-0. Create a test VSTS organization.  
+0. Create a test Azure DevOps Services organization.  
 0. Use the [import/export process tool](https://github.com/Microsoft/process-migrator) to copy the process to the test organization.  
 0. Verify the process customizations in the test organization.   
 0. Use the import/export process tool again to import the modified process to the production organization.  

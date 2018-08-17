@@ -1,6 +1,6 @@
 ---
 title: Create and manage an inherited process 
-titleSuffix: VSTS
+titleSuffix: Azure DevOps Services
 description: Add custom fields, work item types, and more by creating and applying an inherited process to a project  
 ms.technology: devops-agile
 ms.prod: devops
@@ -151,7 +151,7 @@ Set an inherited process as the default to have it pre-selected for any addition
 
 To set a process as the default, open the &hellip; context menu for the inherited process and choose **Set as default process**. Note that this option is not available with any of the three system processes. 
 
-VSTS owners and Project Collection Administrators can [add projects](../../projects/create-project.md) from the **Projects** page. 
+Project Collection Administrators can [add projects](../../projects/create-project.md) from the **Projects** page. 
 
 ## Try this next
 > [!div class="nextstepaction"]

@@ -1,7 +1,7 @@
 ---
 title: Show bugs on backlogs and boards
-titleSuffix: VSTS & TFS 
-description: Choose how bugs appear on Agile tools in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS 
+description: Choose how bugs appear on Agile tools in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
@@ -57,7 +57,7 @@ When you track bugs as requirements, they'll show up on the product backlog and 
 	> Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](../../organizations/settings/add-team-administrator.md).
 	
 	::: moniker range=">= tfs-2018"  	
-	<img src="_img/show-bugs-settings-ts.png" alt="VSTS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/show-bugs-settings-ts.png" alt=web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
 	::: moniker-end
 	::: moniker range="tfs-2017"     
 	<img src="_img/show-bugs-settings-2017.png" alt="TFS, web portal, team settings dialog, Working with bugs tab" style="border: 2px solid #C3C3C3;" />
