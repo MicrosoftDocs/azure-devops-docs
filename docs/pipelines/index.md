@@ -30,21 +30,20 @@ Azure Pipelines and Team Foundation Server help you implement a build, test, and
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
-<div class="ico48Link"><a href="languages/android.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg"><span>Android</span></a></div>
+<div class="ico48Link"><a href="languages/android.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_android.svg"><span>Android</span></a></div>
 <div class="ico48Link"><a href="apps/aspnet/build-aspnet-4.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>.NET</span></a></div>
 <div class="ico48Link"><a href="languages/dotnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>.NET Core</span></a></div>
 <div class="ico48Link"><a href="apps/c-cpp/gcc.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++ with GCC</span></a></div>
 <div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>C/C++ with VC++</span></a></div>
 <div class="ico48Link"><a href="languages/docker.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg"><span>Docker image</span></a></div>
 <div class="ico48Link"><a href="apps/go/go.md"><img width="48" height="48" alt="" src="_img/index/logo_go.svg"><span>Go</span></a></div>
-<div class="ico48Link"><a href="apps/java/build-gradle.md"><img width="48" height="48" alt="" src="_img/index/logo_gradle.png"><span>Gradle</span></a></div>
-<div class="ico48Link"><a href="apps/java/build-maven.md"><img width="48" height="48" alt="" src="_img/index/logo_maven.svg"><span>Maven</span></a></div>
+<div class="ico48Link"><a href="languages/java.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_java.svg"><span>Java</span></a></div>
 <div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg"><span>.NET Desktop</span></a></div>
 <div class="ico48Link"><a href="languages/javascript.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
 <div class="ico48Link"><a href="languages/python.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg"><span>Python</span></a></div>
 <div class="ico48Link"><a href="apps/windows/universal.md"><img width="48" height="48" alt="" src="_img/index/logo_uwp.svg"><span>UWP</span></a></div>
-<div class="ico48Link"><a href="apps/mobile/xamarin.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
-<div class="ico48Link"><a href="apps/mobile/xcode-ios.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
+<div class="ico48Link"><a href="languages/xamarin.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
+<div class="ico48Link"><a href="languages/xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
 </div>
 
 ### Learn how to deploy your app

@@ -34,23 +34,23 @@
     - name: Deploy to Azure
       tocHref: /vsts/deploy-azure/
       topicHref: /vsts/deploy-azure/index
-    - name: Build and Release
+    - name: Build and release
       tocHref: /vsts/pipelines/
       topicHref: /vsts/pipelines/index
-    - name: Continuous Testing
+    - name: Continuous testing
       tocHref: /vsts/pipelines/
       topicHref: /vsts/pipelines/index
   - name: Azure Test Plans
     tocHref: /vsts/test/
     topicHref: /vsts/index-test
     items:
-    - name: Exploratory & Manual Testing
+    - name: Exploratory & manual testing
       tocHref: /vsts/test/
       topicHref: /vsts/test/index
-    - name: Load Testing
+    - name: Load testing
       tocHref: /vsts/test/load-test/
       topicHref: /vsts/test/load-test/index
-    - name: Unit Testing
+    - name: Unit testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
   - name: Azure Boards 
@@ -72,13 +72,13 @@
     - name: Queries
       tocHref: /vsts/boards/track/
       topicHref: /vsts/boards/track/index
-    - name: Agile at Scale
+    - name: Agile at scale
       tocHref: /vsts/boards/scale/
       topicHref: /vsts/boards/scale/index
   - name: Java 
     tocHref: /vsts/java/
     topicHref: /vsts/java/index 
-  - name: Azure DevOps Demo Generator
+  - name: Azure DevOps demo generator
     tocHref: /vsts/demo-gen/
     topicHref: /vsts/demo-gen/index  
   - name: Analytics and social tools
@@ -94,13 +94,13 @@
     - name: Power BI
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index
-    - name: Public Projects
+    - name: Public projects
       tocHref: /vsts/organizations/public/
       topicHref: /vsts/organizations/public/index
     - name: Notifications
       tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index
-    - name: "READMEs & Wikis"
+    - name: "READMEs & wikis"
       tocHref: /vsts/project/wiki/
       topicHref: /vsts/project/wiki/index
     - name: Search
@@ -140,7 +140,7 @@
     - name: Technical articles
       tocHref: /vsts/articles/
       topicHref: /vsts/articles/index
-  - name: "Marketplace & Extensions"
+  - name: "Marketplace & extensions"
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-extensions
     items:
@@ -153,7 +153,7 @@
     - name: Build extensions
       tocHref: /vsts/extend/
       topicHref: /vsts/extend/index
-    - name: Visual Studio Extensions
+    - name: Visual Studio extensions
       tocHref: /vsts/integrate/ide/extensions/
       topicHref: /vsts/integrate/ide/extensions/overview
     - name: Integrate
@@ -162,7 +162,7 @@
     - name: Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/
       topicHref: /vsts/report/extend-analytics/index
-  - name: "TFS Administation"
+  - name: "TFS administation"
     tocHref: /tfs/server/
     topicHref: /tfs/index
     items:
