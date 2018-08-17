@@ -1,5 +1,6 @@
 ---
-title: Expand list items and exclude groups from lists | VSTS & TFS
+title: Expand list items and exclude groups from lists
+titleSuffix: TFS
 description: Examples for expanding pick list items and restricting items using expanditems and filteritems attributes - Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-agile
@@ -11,7 +12,7 @@ ms.date: 05/10/2017
 
 # Expand list items and exclude groups from lists
 
-<b>VSTS (Hosted XML) | TFS 2017 | TFS 2015 </b>
+[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for Hosted XML and On-premises XML process models. For an overview of process models and supported customizations, see [Customize your work tracking experience](../customize-work.md).  

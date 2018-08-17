@@ -1,6 +1,7 @@
 ---
-title: Field data types and field attributes | VSTS & TFS  
-description: Data types supported by work item fields to support queries, reports, and workflow for Visual Studio Team Services (VSTS) and TFS  
+title: Field data types and field attributes 
+titleSuffix: TFS
+description: Data types supported by work item fields to support queries, reports, and workflow for Azure DevOps Services and TFS  
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: c735a582-954a-418e-8b12-1b5c0b9857b9  
@@ -36,7 +37,7 @@ The following list shows the supported data types:
 	<td><p><strong>Boolean</strong> </p></td>
 	<td><p>Specifies a field that takes on a True/False value. Add a **Boolean** field to a work item form by using the **FieldControl** attribute. </p>
 
-<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for VSTS and TFS 2017.2 and later versions.</blockquote>
+<blockquote><b>Feature availability:</b> The Boolean data type field is only supported for Azure DevOps Services and TFS 2017.2 and later versions.</blockquote>
 
 </td></tr>
 <tr>

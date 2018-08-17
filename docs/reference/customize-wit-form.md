@@ -1,19 +1,21 @@
 ---
 title: Customize the layout of the work item web form
-titleSuffix: VSTS & TFS
-description: Customize the web version of the work item form in Visual Studio Team Services & Team Foundation Server    
+titleSuffix: Azure DevOps Services & TFS
+description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2013'
 ms.date: 12/15/2017  
 ---
 
 # Customize the work tracking web form  
 
-**VSTS | TFS 2018 | TFS 2017**  
+[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]
+
 
 > [!IMPORTANT]  
 > **Feature availability**: This topic applies to customizations you can make when you use the Hosted XML process model, or you've update your application-tier server to Team Foundation Server 2017 or later version (which uses the On-premises XML process model). For the Inheritance process model, see [Customize a process](../organizations/settings/work/customize-process.md). 
@@ -24,9 +26,10 @@ Just as you have been able to customize the form layout for your work item types
  
 
 > [!NOTE]    
->Prior to customizing the web form, your administrator must have [enabled the new form for your account on VSTS and TFS](manage-new-form-rollout.md). 
+> Prior to customizing the web form, your administrator must have [enabled the new form](manage-new-form-rollout.md). 
 
 You customize transformed WITs in much the same way as you have previously.  The path is slightly different depending on your platform and previous customization choices. 
+
 
 ## Import/export XML definition files 
 
@@ -34,8 +37,9 @@ Use this sequence when you use the On-premises XML process model, i.e., you mana
 
 [![Export WIT definition file](_img/cust-wit-form-export-def-file.png)](#witadmin)[![Edit XML definition file](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import WIT definition file](_img/cust-wit-form-import-def-file.png)](#witadmin)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
 
+
 ## Import/export process zip files 
-Use this sequence when you use the Hosted XML process model, i.e., you manage your VSTS work tracking customization by importing a process or process template. 
+Use this sequence when you use the Hosted XML process model, i.e., you manage your work tracking customization by importing a process or process template. 
 
 [![Export process](_img/cust-wit-form-export-process.png)](../organizations/settings/work/import-process/import-process.md#export-process)[![Edit XML definition file(s)](_img/cust-wit-form-edit-def-file.png)](xml/weblayout-xml-elements.md)[![Import process](_img/cust-wit-form-import-process.png)](../organizations/settings/work/import-process/import-process.md)![Refresh and verify changes](_img/cust-wit-form-refresh-verify.png)  
 
@@ -72,7 +76,7 @@ See the following topics to make the indicated customizations:
 
         witadmin exportwitd /collection:CollectionURL /p:ProjectName /n:TypeName /f:"DirectoryPath/FileName.xml"  
 
-    An example of a *CollectionURL* for a VSTS organization is https://*MyOrganizationName*.visualstudio.com/DefaultCollection.
+    An example of a *CollectionURL* for an Azure DevOps Services organization is https://dev.azure.com/*OrganizationName*.
 
 0.  Edit the file. For details, see [WebLayout XML elements](xml/weblayout-xml-elements.md).  
 

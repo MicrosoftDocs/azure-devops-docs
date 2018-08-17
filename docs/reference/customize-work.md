@@ -1,7 +1,7 @@
 ---
 title: Customize your work tracking experience
-titleSuffix: VSTS & TFS
-description: Guide to configuring and customizing work tracking features in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS
+description: Guide to configuring and customizing work tracking features in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: D1B44480-F88B-4F35-927A-11ADFBCBAA23
@@ -53,8 +53,8 @@ Your project determines the objects available to tracking work and the configura
 
 > [!NOTE]    
 >The method you use to customize work tracking depends on the process model you subscribe to: 
->- **Inheritance**: Supports WSIWIG customization, available for VSTS only  
->- **Hosted XML**: Supports customization through import/export of process templates, available for VSTS only    
+>- **Inheritance**: Supports WSIWIG customization, available for Azure DevOps Services only  
+>- **Hosted XML**: Supports customization through import/export of process templates, available for Azure DevOps Services only    
 >- **On-premises XML**: Supports customization through import/export of XML definition files for work tracking objects      
  
 The following table summarizes the differences between the three supported process models. For definitions of the main work tracking objects, see [Agile glossary](../boards/work-items/agile-glossary.md).  
@@ -174,7 +174,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 > [!div class="mx-tdBreakAll"]  
 > |Manage access   |Permissions  |Shared resources  |
 > |-------------|----------|---------|
-> |- [Add team members (VSTS)](../organizations/accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../organizations/settings/add-teams.md#add-team-members)<br/>- [Stakeholder access](../organizations/security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../organizations/security/change-access-levels.md) |- [Area path permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)<br/>- [Work item query and folder permissions](../boards/queries/set-query-permissions.md)<br/>- [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Tagging permissions](../organizations/security/permissions.md#tags)<br/>- [Test permissions](../organizations/security/permissions.md#project_test)| - [Alerts](../boards/queries/alerts-and-notifications.md)<br/>- [Area paths](../organizations/settings/set-area-paths.md)<br/>- [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Queries](../boards/queries/using-queries.md)<br/>- [Tags](../boards/queries/add-tags-to-work-items.md) | 
+> |- [Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members-vs.md)<br/>- [Add team members (TFS)](../organizations/settings/add-teams.md#add-team-members)<br/>- [Stakeholder access](../organizations/security/change-access-levels.md)<br/>- [VS Enterprise & Advanced access level](../organizations/security/change-access-levels.md) |- [Area path permissions](../organizations/security/set-permissions-access-work-tracking.md#set-permissions-area-path)<br/>- [Process permissions](../organizations/security/set-permissions-access-work-tracking.md#process-permissions)<br/>- [Work item query and folder permissions](../boards/queries/set-query-permissions.md)<br/>- [Dashboard permissions](../report/dashboards/dashboard-permissions.md#set-permissions)<br/>- [Plan permissions](../organizations/security/set-permissions-access-work-tracking.md#plan-permissions)<br/>- [Tagging permissions](../organizations/security/permissions.md#tags)<br/>- [Test permissions](../organizations/security/permissions.md#project_test)| - [Alerts](../boards/queries/alerts-and-notifications.md)<br/>- [Area paths](../organizations/settings/set-area-paths.md)<br/>- [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)<br/>- [Queries](../boards/queries/using-queries.md)<br/>- [Tags](../boards/queries/add-tags-to-work-items.md) | 
   
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 <a id="test-experience"></a>
@@ -238,10 +238,10 @@ Do you want to customize your tools in a way that's not supported?
 
 Here are a few options available to you:  
 
-- Check out [Marketplace extensions](https://marketplace.visualstudio.com/VSTS) to see if there's a tool available for your purposes  
+- Check out [Marketplace extensions](https://marketplace.visualstudio.com/vsts) to see if there's a tool available for your purposes  
 - Determine if a [Service hook](../service-hooks/index.md) will satisfy your needs  
 - Create your own tool using [REST APIs](../integrate/index.md)  
-- Add your feature request to our [VSTS user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
+- Add your feature request to our [user voice page](https://visualstudio.uservoice.com/forums/330519-team-services) page.   
 
  
 

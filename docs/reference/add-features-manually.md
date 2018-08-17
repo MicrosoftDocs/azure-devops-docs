@@ -18,7 +18,7 @@ ms.date: 12/15/2017
 [!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
->This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects hosted on VSTS [update automatically with each service upgrade](/vsts/release-notes/index). 
+>This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/vsts/release-notes/index). 
 >
 >For an overview of customization options, see [Customize your work tracking experience](customize-work.md)
 

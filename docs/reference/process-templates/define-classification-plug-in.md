@@ -1,6 +1,6 @@
 ---
 title: Define the classification plug-in 
-titleSuffix: VSTS & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Define areas to organize work items into logical, physical, or functional categories-Team Foundation Server
 ms.prod: devops
 ms.technology: devops-agile
@@ -196,7 +196,7 @@ Required child element of **properties**. Defines project-related data such as t
 </code></pre>
 <p>Where the following definitions apply for each attribute:</p>
 <ul><li>`name`: Required. Defines the name of the property. The only valid names are `MSPROJ` and `Process Template`.</li>
-<li>`value`: Required. For `MSPROJ`, defines the relative path to the field mapping file. For `Process Template`, contains the name of the process that's associated with the process template. This property is added to the classification file when you [import a process to VSTS](../../organizations/settings/work/import-process/import-process.md).</li>
+<li>`value`: Required. For `MSPROJ`, defines the relative path to the field mapping file. For `Process Template`, contains the name of the process that's associated with the process template. This property is added to the classification file when you [import a process for Hosted XML](../../organizations/settings/work/import-process/import-process.md).</li>
 <li>`isFile`: Optional. Specifies whether the property is defined in a file. If the value is true, the file must exist, or process template validation fails.</li>
 </ul>
 </td>

@@ -1,7 +1,7 @@
 ---
 title: Index to work item tracking customization topics
-titleSuffix: VSTS & TFS   
-description: Index to topics for customizing your work tracking experience in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps Services & TFS   
+description: Index to topics for customizing your work tracking experience in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: F6973385-2CEF-403A-B3AA-45DB7C436AF1
