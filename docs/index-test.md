@@ -18,7 +18,7 @@ featureFlags:
 
 <div id="agile" class="v2">
     <div class="container">
-<p><a href="/vsts/index">Azure DevOps</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Test Plans</p><br/>
+<p><a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Test Plans</p><br/>
         <h1>Azure Test Plans Documentation</h1>
 <p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p><br/>
 <table border="0" class="cardsA">
@@ -165,7 +165,7 @@ featureFlags:
 <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
 </td>
 <td width="25%">
-<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
+<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
 </td>
 </tr>
 </tbody>

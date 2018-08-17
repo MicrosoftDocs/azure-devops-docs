@@ -31,13 +31,7 @@
     tocHref: /vsts/pipelines/
     topicHref: /vsts/index-pipelines
     items:
-    - name: Deploy to Azure
-      tocHref: /vsts/deploy-azure/
-      topicHref: /vsts/deploy-azure/index
-    - name: Build and release
-      tocHref: /vsts/pipelines/
-      topicHref: /vsts/pipelines/index
-    - name: Continuous testing
+    - name: Pipelines
       tocHref: /vsts/pipelines/
       topicHref: /vsts/pipelines/index
   - name: Azure Test Plans
@@ -50,6 +44,9 @@
     - name: Load testing
       tocHref: /vsts/test/load-test/
       topicHref: /vsts/test/load-test/index
+    - name: Continuous testing
+      tocHref: /vsts/test/
+      topicHref: /vsts/pipelines/test/getting-started-with-continuous-testing
     - name: Unit testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
@@ -100,7 +97,7 @@
     - name: Notifications
       tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index
-    - name: "READMEs & wikis"
+    - name: "READMEs & Wikis"
       tocHref: /vsts/project/wiki/
       topicHref: /vsts/project/wiki/index
     - name: Search

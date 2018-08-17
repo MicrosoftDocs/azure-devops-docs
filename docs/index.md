@@ -279,7 +279,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure Test Plans</h3>
-                                                    <p>The manual and exploratory testing toolkit to ship with confidence.</p>
+                                                    <p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -287,7 +287,23 @@ featureFlags:
                                 </a>
 </td>
 <td width="33%">
-&nbsp;&nbsp;&nbsp;
+                                <a href="/vsts/index-settings">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="_img/index/i_config-tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Settings</h3>
+                                                    <p>Configure resources to scale and grow your organization. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
 </td>
 </tr>
 </table>
@@ -295,25 +311,6 @@ featureFlags:
 <h2>Analytics and social tools </h2>
 <table border="0" class="cardsA">
 <tr>
-<td width="25%">
-                                <a href="/vsts/project/wiki/project-vision-status">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_overview.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Project summary</h3>
-                                                    <p>Share your project vision and view cross project activity from the project summary.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
 <td width="25%">
                                 <a href="/vsts/report/dashboards/index">
                                     <div class="cardSize">
@@ -371,8 +368,29 @@ featureFlags:
                                     </div>
                                 </a>
 </td>
+<td width="25%">
+                                <a href="/vsts/organizations/public/index">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Public projects</h3>
+                                                    <p>Create an open source project.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+</td>
 </tr>
 </table>
+
+<!---
 <table border="0">
 <tbody style="padding-left:0;font-size:.8rem;">
 <tr>
@@ -383,7 +401,7 @@ featureFlags:
 <a class="barLink"  href="/vsts/project/search/index"><img src="_img/index/i_search.svg" alt="" />Search</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/project/navigation/set-favorites"><img src="_img/index/favorite.png" alt="" />Favorites</a>
+<a class="barLink" href="/vsts/project/navigation/set-favorites"><img src="_img/index/i_favorites.png" alt="" />Favorites</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/organizations/public/index"><img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />Public projects</a>
@@ -391,7 +409,9 @@ featureFlags:
 </tr>
 </tbody>
 </table>
+-->
 <a id="devops-services-settings" />
+<!---
 <h2>Manage resources</h2>
 <table border="0">
 <tr><td width="25%">
@@ -434,6 +454,38 @@ featureFlags:
 </td>
 </tr>
 </table>
+-->
+
+<table border="0">
+<tr>
+<td width="33%">
+<h3>Discover and build extensions</h3>
+<p><a href="/vsts/marketplace/overview">Discover extensions</a><br/>
+<a href="/vsts/extend/index">Develop extensions</a><br/>
+<a href="/vsts/integrate/index">Integrate applications</a><br/></p>
+</ul>
+</td>
+<td width="33%">
+<h3>Developer resources</h3>
+<p><a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a><br/>
+<a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a><br/>
+<a href="https://docs.microsoft.com/en-us/cli/vsts/overview">CLI</a><br/> 
+<a href="/vsts/java/index">Java</a><br/> 
+<a href="/vsts/demo-gen">Azure DevOps Demo Generator</a></p>
+</ul>
+</td>
+<td width="33%">
+<h3>Additional resources</h3>
+<p><a href="/vsts/index-all">Index</a><br/>
+<a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">DevOps at Microsoft</a><br/>
+<a href="https://docs.microsoft.com/en-us/azure/devops/learn/">Azure DevOps resource center</a><br/>
+<a href="/vsts/index-tfs">TFS administration</a></p>
+
+</td>
+</tr>
+</table>
+
+<!---
 <a id="devops-services-extensions" />
 <h2>Marketplace and extensions</h2>
 <table border="0">
@@ -457,13 +509,13 @@ featureFlags:
 <table border="0">
 <tr>
 <td width="25%">
-<a class="barLink" href="/rest/api/vsts/index"><img src="https://docs.microsoft.com/media/logos/logo_REST.svg" alt="" />REST APIs</a>
+<a class="barLink" href="https://docs.microsoft.com/en-us/rest/api/vsts/"><img src="https://docs.microsoft.com/media/logos/logo_REST.svg" alt="" />REST APIs</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/vsts/extend/reference/client/core-sdk/index"><img src="https://docs.microsoft.com/media/logos/logo_TS.svg" alt="" />TypeScript APIs</a>
+<a class="barLink" href="/vsts/extend/reference/client/core-sdk"><img src="https://docs.microsoft.com/media/logos/logo_TS.svg" alt="" />TypeScript APIs</a>
 </td>
 <td width="25%">
-<a class="barLink" href="/cli/vsts/overview"><img src="https://docs.microsoft.com/media/common/i_cligeneric.svg" alt="" />Azure DevOps CLI</a>
+<a class="barLink" href=""https://docs.microsoft.com/en-us/cli/vsts/overview"><img src="https://docs.microsoft.com/media/common/i_cligeneric.svg" alt="" />CLI</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/java/index"><img src="https://docs.microsoft.com/media/logos/logo_java.svg" alt="" />Java</a>
@@ -482,7 +534,7 @@ featureFlags:
 <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
 </td>
 <td width="25%">
-<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
+<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
 </td>
 <td width="25%">
 <a class="barLink" href="/vsts/index-tfs"><img src="https://docs.microsoft.com/media/common/i_server.svg" alt="" />TFS administration</a>
@@ -490,6 +542,8 @@ featureFlags:
 </tr>
 </tbody>
 </table>
+
+-->
 </div>
 </div>
 

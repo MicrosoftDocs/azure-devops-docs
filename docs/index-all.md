@@ -140,21 +140,21 @@ featureFlags:
                             <a href="/vsts/pipelines/apps/cd/deploy-docker-webapp">Azure Web App for Containers</a></p> </td>
 <td width="25%">
 <h3 id="devops-center">DevOps resource center</h3>
-                            <p><a href="/azure/devops/what-is-devops">What is DevOps?</a><br/>
-                            <a href="/azure/devops/git/what-is-version-control">What is version control?</a><br/>
-                            <a href="/azure/devops/git/what-is-git">What is Git?</a><br/>
-                            <a href="/azure/devops/agile/what-is-agile">What is Agile?</a><br/>
-                            <a href="/azure/devops/agile/what-is-scrum">What is Scrum?</a><br/>
-                            <a href="/azure/devops/agile/scale-agile-large-teams">Scale Agile to Large Teams</a><br/>
-                            <a href="//azure/devops/git/git-at-scale">Git at Scale</a><br/>
-                            <a href="/azure/devops/devops-at-microsoft/">DevOps at Microsoft</a><br/>
-                            <a href="/azure/devops/events-and-talks/">Events and Talks</a></p>
+                            <p><a href="/azure/devops/learn/what-is-devops">What is DevOps?</a><br/>
+                            <a href="/azure/devops/learn/git/what-is-version-control">What is version control?</a><br/>
+                            <a href="/azure/devops/learn/git/what-is-git">What is Git?</a><br/>
+                            <a href="/azure/devops/learn/agile/what-is-agile">What is Agile?</a><br/>
+                            <a href="/azure/devops/learn/agile/what-is-scrum">What is Scrum?</a><br/>
+                            <a href="/azure/devops/learn/agile/scale-agile-large-teams">Scale Agile to Large Teams</a><br/>
+                            <a href="//azure/devops/learn/git/git-at-scale">Git at Scale</a><br/>
+                            <a href="/azure/devops/learn/devops-at-microsoft/">DevOps at Microsoft</a><br/>
+                            <a href="/azure/devops/learn/events-and-talks/">Events and Talks</a></p>
 </td>
 <td width="25%">
                         <h3>Command-line and other tools</h3>
                             <p><a href="/vsts/repos/git/command-prompt">Git commands</a><br/>
                             <a href="/vsts/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a><br/>
-                            <a href="/cli/vsts/overview">Azure DevOps CLI</a><br/> 
+                            <a href="https://docs.microsoft.com/en-us/cli/vsts/overview">CLI</a><br/> 
                             <a href="/vsts/demo-gen">Azure DevOps Demo Generator</a></p>
 </td>
 </tr>
