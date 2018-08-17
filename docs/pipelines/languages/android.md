@@ -8,7 +8,7 @@ ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 08/03/2018
+ms.date: 08/17/2018
 monikerRange: '>= tfs-2017'
 ---
 
@@ -37,24 +37,53 @@ This guide explains creating pipelines for Android projects. Before this guidanc
 
 You can build Android projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Android. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
 
-Start by adding the following YAML to a file named **azure-pipelines.yml** in the root of your repository. Change any values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+To get started using a sample Android app, fork or copy this code into your version control system:
+```
+https://github.com/adventworks/android-sample
+```
+
+Otherwise, to use your own code, add the following YAML to a file named **azure-pipelines.yml** in the root of your repository.
+Change values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
-# https://aka.ms/yaml
-pool: 'Hosted VS2017'
+# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+queue: 'Hosted macOS Preview'
+
 steps:
 - task: Gradle@2
   inputs:
+    workingDirectory: ''
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx2048m'
-    tasks: 'assembleRelease'
+    publishJUnitResults: false
+    testResultsFiles: '**/TEST-*.xml'
+    tasks: 'assembleDebug'
 ```
+
+### Adjust the build path
+
+Add a **workingDirectory** value if your `gradlew` file isn't in the root of the repository.
+The directory value should be relative to the root of the repository,
+such as `AndroidApps/MyApp` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp`.
+
+Adjust the **gradleWrapperFile** value if your `gradlew` file isn't in the root of the repository.
+The file path value should be relative to the root of the repository,
+such as `AndroidApps/MyApp/gradlew` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp/gradlew`.
+
+### Adjust Gradle tasks
+
+Adjust the **tasks** value for the build variant you prefer, such as `assembleDebug` or `assembleRelease`.
+For details, see Google's Android development documentation:
+[Build a debug APK](https://developer.android.com/studio/build/building-cmdline#DebugMode) and
+[Configure build variants](https://developer.android.com/studio/build/build-variants.html).
 
 ## Sign and align an Android APK
 
-Add the [Android Signing](../tasks/build/android-signing.md) task to sign and zipalign a built APK. An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM it consumes.
+If your build does not already [sign and zipalign](https://developer.android.com/studio/publish/app-signing) the APK,
+add the [Android Signing](../tasks/build/android-signing.md) task to the YAML.
+An APK must be signed to run on a device instead of an emulator. Zipaligning reduces the RAM consumed by the app.
 
-<blockquote><strong>Important: </strong>We recommend storing each of the specified passwords in a [secret variable](../process/variables.md#secret-variables).</blockquote>
+<blockquote><strong>Important: </strong>We recommend storing each of the following passwords in a [secret variable](../process/variables.md#secret-variables).</blockquote>
 
 ::: moniker range="> tfs-2018"
 
@@ -78,7 +107,8 @@ Add the [Android Signing](../tasks/build/android-signing.md) task to sign and zi
 
 ## Test on Azure-hosted devices
 
-Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
+Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices.
+An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
 
 ::: moniker range="> tfs-2018"
 
@@ -88,7 +118,8 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 ## Retain artifacts
 
-Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks to store your APK with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks
+to store your APK with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
 
 ::: moniker range="> tfs-2018"
 
@@ -106,7 +137,8 @@ Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifact
 
 ### App Center
 
-Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an app to a group of testers or beta users, or promote the app to Intune or Google Play. A free [App Center]( https://appcenter.ms) account is required (no payment is necessary).
+Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an app to a group of testers or beta users,
+or promote the app to Intune or Google Play. A free [App Center]( https://appcenter.ms) account is required (no payment is necessary).
 
 ::: moniker range="> tfs-2018"
 
@@ -116,11 +148,14 @@ Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task t
 
 ### Google Play
 
-Install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) and use the following tasks to automate interaction with Google Play. By default, these tasks authenticate to Google Play using a [service connection](..//library/service-endpoints.md) that you configure.
+Install the [Google Play extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)
+and use the following tasks to automate interaction with Google Play. By default, these tasks authenticate to Google Play
+using a [service connection](..//library/service-endpoints.md) that you configure.
 
 #### Release
 
-Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---release) task to release a new Android app version to the Google Play store.
+Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---release)
+task to release a new Android app version to the Google Play store.
 
 ::: moniker range="> tfs-2018"
 
@@ -136,7 +171,8 @@ Add the [Google Play Release](https://marketplace.visualstudio.com/items?itemNam
 
 #### Promote
 
-Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---promote) task to promote a previously-released Android app update from one track to another, such as `alpha` &rarr; `beta`.
+Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---promote)
+task to promote a previously-released Android app update from one track to another, such as `alpha` &rarr; `beta`.
 
 ::: moniker range="> tfs-2018"
 
@@ -153,7 +189,8 @@ Add the [Google Play Promote](https://marketplace.visualstudio.com/items?itemNam
 
 #### Increase rollout
 
-Add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---increase-rollout) task to increase the rollout percentage of an app that was previously released to the `rollout` track.
+Add the [Google Play Increase Rollout](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play#user-content-google-play---increase-rollout)
+task to increase the rollout percentage of an app that was previously released to the `rollout` track.
 
 ::: moniker range="> tfs-2018"
 
