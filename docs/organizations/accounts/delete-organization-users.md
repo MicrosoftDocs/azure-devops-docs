@@ -102,5 +102,5 @@ To remove users from a project, remove them from the **Teams** groups they belon
 - [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md). 
 - [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-- [Troubleshoot adding and deleting organization users in the Azure DevOps Services Users Services page](faq-add-delete-users.md)
+- [Troubleshoot adding and deleting organization users in the Azure DevOps Services Users page](faq-add-delete-users.md)
 - [Troubleshoot adding members to projects in Azure DevOps Services](faq-add-team-members.md)

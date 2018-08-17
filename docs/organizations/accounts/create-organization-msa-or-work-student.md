@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/26/2017
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
-To create an Azure DevOps Services organization with a personal Microsoft account or a work or school account, go to the [Visual Studio Team Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site. 
+To create an Azure DevOps Services organization with a personal Microsoft account or a work or school account, go to the [Azure DevOps Services](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) site. 
 
 With Azure DevOps Services, you can upload and share code in free, unlimited private Git repositories or Team Foundation Version Control. To work on apps anytime, anywhere, you can connect your favorite development tools, such as Eclipse, Xcode, Visual Studio, IntelliJ, or Android Studio. Azure DevOps Services offers integrated, enterprise agile tools for DevOps, so your team can build often, test early, and ship faster.
 
@@ -26,15 +26,15 @@ With Azure DevOps Services, you can upload and share code in free, unlimited pri
 
 <a name="how-sign-up"></a>
 
-##	Prerequisites
+## Prerequisites
 
 Before you begin, do either of the following:
 
-* To use only Microsoft accounts with your Azure DevOps Services organization, complete these steps. Ignore the Azure Active Directory (Azure AD) callouts. 
+* To use only Microsoft accounts with your Azure DevOps Services organization, complete these steps. Ignore the Azure Active Directory (Azure AD) callouts.
 
-	* If you don't have a Microsoft account, create one when you sign up for Azure DevOps Services.
+   * If you don't have a Microsoft account, create one when you sign up for Azure DevOps Services.
 
-	* Use your Microsoft account if you don't need to authenticate users for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). All users must sign in to your Azure DevOps Services organization with a Microsoft account.
+   * Use your Microsoft account if you don't need to authenticate users for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). All users must sign in to your Azure DevOps Services organization with a Microsoft account.
 
 * Alternatively, to authenticate users and control organization access through your Azure AD, complete these steps. Pay attention to the Azure AD callouts.
 
