@@ -13,7 +13,10 @@
     topicHref: /vsts/boards/get-started/index
   - name: Start using Azure Pipelines 
     tocHref: /vsts/pipelines/get-started/
-    topicHref: /vsts/pipelines/get-started/index
+    topicHref: /vsts/pipelines/get-started/pipelines-get-started
+  - name: Build GitHub projects
+    tocHref: /vsts/open-source/
+    topicHref: /vsts/open-source/get-started/index
   - name: Azure Repos
     tocHref: /vsts/repos/git/
     topicHref: /vsts/index-repos

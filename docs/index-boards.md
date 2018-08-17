@@ -21,7 +21,7 @@ featureFlags:
 <div class="container">
 <p><a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Boards</p><br/>
 <h1>Azure Boards Documentation</h1>
-<p>Configure your Kanban boards, interact with your backlogs, and work with out-of-the-box support for Scrum.</p><br/>
+<p>Plan, track, and discuss work across your teams.</p><br/>
 <table border="0" class="cardsA">
 <tr>
 <td width="25%">
@@ -55,7 +55,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Work items</h3>
-                                                    <p>Track code defects, issues, and the features and requirements you're developing.</p>
+                                                    <p>Track code defects and user stories, capturing discussions along the way.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -93,7 +93,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Backlogs</h3>
-                                                    <p>Create and organize your backlog, track features, users stories, and
+                                                    <p>Create and organize your backlogs, track features, users stories, and
                                                         bugs.</p>
                                                 </div>
                                             </div>
@@ -134,7 +134,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Customization</h3>
-                                                    <p>Configure Agile tools and processes to meet your team's needs.</p>
+                                                    <p>Configure tools and processes to meet your team's needs.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -173,8 +173,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Feedback</h3>
-                                                    <p>Request feedback on your working apps and quickly capture it within a
-                                                        work item form.</p>
+                                                    <p>Request and capture feedback on your working apps.</p>
                                                 </div>
                                             </div>
                                         </div>

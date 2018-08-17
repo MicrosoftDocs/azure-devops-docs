@@ -201,7 +201,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure Boards</h3>
-                                                    <p>Configure Kanban boards, use interactive backlogs, and get out-of-the-box support for Scrum.</p>
+                                                    <p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,7 +220,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure Repos</h3>
-                                                    <p>Use Git repositories, pull requests, and code review and then integrate with CI/CD to build and deploy your apps.</p>
+                                                    <p>Use Git repositories, pull requests, and then integrate with CI/CD to build and deploy your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -239,7 +239,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure Pipelines</h3>
-                                                    <p>Test and deploy your apps  with high-performance pipelines. Start small and scale up as needed.</p>
+                                                    <p>Manage CI/CD to deploy your code with high-performance pipelines that work with any language, platform, and cloud. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -260,7 +260,7 @@ featureFlags:
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Azure Artifacts</h3>
-                                                    <p>Share code with others across your enterprise, and support continuous integration and deployment of your apps.</p>
+                                                    <p>Share code with others across your enterprise, and support CI/CD of your apps.</p>
                                                 </div>
                                             </div>
                                         </div>
