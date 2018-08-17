@@ -75,7 +75,7 @@
 - name: Resources
   items:
   - name: Get started guide
-    href: ../../user-guide/index.md
+    href: ../../user-guide/index.yml
   - name: Public Projects
     href: ../public/index.md
   - name: Project & Organization Settings

@@ -53,7 +53,7 @@ Add, rename, and delete projects as you scale your organization.
 
 ## Resources
 
-* [New User Guide](../../user-guide/index.md)
+* [New User Guide](../../user-guide/index.yml)
 * [Public Projects](../public/index.md)
 * [Security & Identity](../../organizations/security/index.md)
 * [Migrate from TFS to Azure DevOps Services](../../articles/migrate-to-vsts-from-tfs.md)
