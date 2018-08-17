@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/12/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -21,6 +21,31 @@ All current users in your Azure DevOps Services organization are considered to h
 The most important thing is to avoid a situation where migration to group-based licensing results in users temporarily losing their currently assigned licenses. To eliminate the risk of users losing access to services and their data, avoid any process that might result in the removal of licenses.
 
 ## Add a group rule
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+    ![Open admin settings](_img/_shared/open-admin-settings-vert.png)
+
+3. Go to the **Users** page. Select **Group rules**.
+
+   ![Select group rules for migration](_img/migrate-to-group-based-resource-management/choose-group-rules-on-users-page.png)
+
+1. Make sure all required users are members of the groups. Highlight a group rule and select **Manage members**.
+
+   ![Highlight a group rule and select manage members](_img/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
+
+   > [!NOTE]
+   > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
+
+1. Select **Add a group rule** and then highlight an Azure Active Directory (Azure AD) group. Assign the required access level, project group memberships, and extensions.
+
+# [Previous navigation](#tab/prev-nav)
 
 1. Sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
 1. Go to the **Users** page. Select **Group rules**.
@@ -35,6 +60,8 @@ The most important thing is to avoid a situation where migration to group-based 
    > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
 
 1. Select **Add a group rule** and then highlight an Azure Active Directory (Azure AD) group. Assign the required access level, project group memberships, and extensions.
+
+---
 
 When the same access level or extension is assigned to the user both directly and through a group, the user consumes only one access level or extension. No additional licenses are required to perform the migration.
 
