@@ -115,5 +115,5 @@ In addition to new features and requirements to build, you can capture non-featu
 As the need to perform this work arises, capture it along with other items on your backlog. To track that it is a spike, you can either preface the title with the word "[Spike]" or add the tag "Spike" to the work item.  
 
 ## Additional resources
-- [What is Agile?](/azure/devops/agile/what-is-agile)  
-- [Building productive, customer focused teams](/azure/devops/agile/productive-teams)  
+- [What is Agile?](/azure/devops/learn/agile/what-is-agile)  
+- [Building productive, customer focused teams](/azure/devops/learn/agile/productive-teams)  

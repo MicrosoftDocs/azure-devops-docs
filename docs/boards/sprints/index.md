@@ -17,7 +17,7 @@ ms.date: 07/07/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
 
-With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. For an overview of the Scrum lifecycle, see [What is Scrum?](/azure/devops/agile/what-is-scrum). 
+With Scrum, you can schedule and plan sprints, update your task board, and monitor your sprint burndown. For an overview of the Scrum lifecycle, see [What is Scrum?](/azure/devops/learn/agile/what-is-scrum). 
 
 ## 5-Minute Quickstarts  
 
@@ -64,6 +64,6 @@ Whether you use scrum, Kanban, or a combination of Agile methods, you can get st
 - [Kanban](../boards/index.md)
 - [Work item queries](../queries/index.md)
 - [Work item customization](../../reference/index.md)
-- [What is Scrum?](/azure/devops/agile/what-is-scrum)
-- [What is Agile development?](/azure/devops/agile/what-is-agile-development)  
+- [What is Scrum?](/azure/devops/learn/agile/what-is-scrum)
+- [What is Agile development?](/azure/devops/learn/agile/what-is-agile-development)  
 
