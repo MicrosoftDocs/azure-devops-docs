@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/17/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 # Add a group rule to assign access levels and extensions to users
@@ -25,29 +25,61 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
 ## Assign required licenses
 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+
+2. Go to your Azure DevOps Services **Admin settings**.
+
+   ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Go to the **Security** page and check the membership of the **Project Collection Administrators** group.
+
+4. Select **Group rules** . This view shows you all of your created group rules.
+
+   ![View group rules](_img/manage-group-licensing/see-group-rules.png)
+
+5. Select **Add a group rule**.
+
+   ![Select Add a group rule](_img/manage-group-licensing/add-group-rule.png)
+
+6. Complete the dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group. Select **Add**.
+
+   ![Complete add a group rule dialog](_img/manage-group-licensing/add-group-rule-dialog.png)
+
+A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your Azure DevOps Services organization didn't have enough purchased licenses), select **View status** to see the details.
+
+![Group rule completed successfully](_img/manage-group-licensing/group-rule-completed-successfully.png)
+
+# [Previous navigation](#tab/prev-nav)
+
 1. Sign in to your Azure DevOps Services organization and go to the **Users** page in your organization settings.
-1. Go to the **Security** page and check the membership of the **Project Collection Administrators** group.
-1. Select the **Group rules** tab. This view shows you all of your created group rules.
+2. Go to the **Security** page and check the membership of the **Project Collection Administrators** group.
+3. Select the **Group rules** tab. This view shows you all of your created group rules.
 
    ![View group rules](_img/manage-group-licensing/view-group-rules.png)
 
-1. Select **Add a group rule**. Complete the next dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group.
+4. Select **Add a group rule**. Complete the next dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group.
 
    ![Create a new group rule](_img/manage-group-licensing/add-a-group-rule.png)
 
-1. To complete the assignment, select **Add**.
+5. To complete the assignment, select **Add**.
 
    ![Add the group rule](_img/manage-group-licensing/adding-group-rule.png)
 
 A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your Azure DevOps Services organization didn't have enough purchased licenses), select **View status** to see the details.
 
+---
+
 ## Resolve assignment errors
 
 As users sign in to your Azure DevOps Services organization, they're assigned access levels and extensions based on their group memberships. If there aren't enough licenses or extensions to assign the specified resources to the user, based on their group memberships, Azure DevOps Services notifies all **Project Collection Administrators** via email that further resources need to be purchased. To find users in an error state, the Project Collection Administrator can do the following steps:
 
-1. Go to the **Users** page under **Organization settings**. A notification on the page indicates there are users who are missing extensions or basic access levels.
-1. To see how many of each resource are missing, choose **Fix assignment errors**.
-1. Complete purchases for any missing resources, and then choose **Fix errors** to have the purchases automatically assigned to the specified users.
+1. Go to the **Users** page in **Admin settings**. A notification on the page indicates there are users who are missing extensions or basic access levels.
+2. To see how many of each resource are missing, choose **Fix assignment errors**.
+3. Complete purchases for any missing resources, and then choose **Fix errors** to have the purchases automatically assigned to the specified users.
 
 ## Related articles
 
