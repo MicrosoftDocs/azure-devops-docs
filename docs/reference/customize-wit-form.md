@@ -14,7 +14,7 @@ ms.date: 12/15/2017
 
 # Customize the work tracking web form  
 
-[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]
+[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
 
 
 > [!IMPORTANT]  

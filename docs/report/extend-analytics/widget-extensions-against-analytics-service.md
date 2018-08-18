@@ -1,6 +1,6 @@
 ---
 title: Build a dashboard widget that calls the Analytics Service
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services 
 description: How to access Analytics Service OData for Azure DevOps from a dashboard widget extension
 ms.prod: devops
 ms.technology: devops-analytics

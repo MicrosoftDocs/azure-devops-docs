@@ -1,6 +1,6 @@
 ---
 title: Publish a Power BI Desktop file to PowerBI.com  
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services 
 description: How to publish and enable refresh of a Power BI Desktop file to PowerBI.com that uses the Analytics Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics

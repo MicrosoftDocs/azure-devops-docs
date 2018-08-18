@@ -1,6 +1,6 @@
 ---
 title: Supported OData features   
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services 
 description: Current level of support for OData specification in the Analytics Service
 ms.prod: devops
 ms.technology: devops-analytics

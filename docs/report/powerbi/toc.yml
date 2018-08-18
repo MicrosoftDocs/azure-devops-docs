@@ -6,7 +6,7 @@
     href: overview.md
   - name: What are Analytics views?
     href: ../analytics/what-are-analytics-views.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
-  - name: VSTS/TFS Reporting Roadmap
+  - name: Reporting roadmap
     href: ../analytics/reporting-roadmap.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Quickstarts
   items:

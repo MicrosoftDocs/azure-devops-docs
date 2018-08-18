@@ -2,10 +2,8 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Shared Features
-    tocHref: /vsts/report/
-    topicHref: /vsts/index#devops-services-supplemental
-    items:
-    - name: "Analytics (VSTS)" 
-      tocHref: /vsts/report/analytics/
-      topicHref: /vsts/report/analytics/index
+  - name: Analytics
+    tocHref: /vsts/report/analytics/
+    topicHref: /vsts/report/analytics/index
+
+

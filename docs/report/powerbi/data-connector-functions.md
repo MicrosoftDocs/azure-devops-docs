@@ -1,6 +1,6 @@
 ---
 title: Connect using Power Query and Azure DevOps functions 
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services 
 description: Describes the available functions that the Power BI Data Connector and the Analytics Service support for Azure DevOps 
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
 ms.prod: devops

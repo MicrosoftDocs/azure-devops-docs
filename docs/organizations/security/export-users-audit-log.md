@@ -63,7 +63,7 @@ You can get a list of users and groups that have access to your Azure DevOps Ser
 	
 0. Choose **Users** and **Export users**. 
 
-	<img src="_img/export-users-audit/go-to-users-hub.png" alt="From the Users hub, click Export users" style="border: 1px solid #C3C3C3;" />  
+	<img src="_img/export-users-audit/go-to-users-hub.png" alt="From the Users hub, choose Export users" style="border: 1px solid #C3C3C3;" />  
 
 0. The user log file is saved as a .csv file to your Download folder.   
 	To determine the access level assigned to each user or group, open the file in Excel.

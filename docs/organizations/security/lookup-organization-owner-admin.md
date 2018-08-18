@@ -99,11 +99,8 @@ To find out who is a member, check the **Security** settings at the collection l
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings**.
- 
-	> [!IMPORTANT]  
-	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/reference/customize-work).
-	
+0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.
+
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/vsts/_shared/_img/settings/open-account-settings.png)  
 
@@ -144,14 +141,10 @@ To find out who is a member, check the **Security** settings at the collection l
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
-
 # [Previous navigation](#tab/previous-nav)
 
 0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings**.
- 
-	> [!IMPORTANT]  
-	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/reference/customize-work).
-	
+
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/vsts/_shared/_img/settings/open-account-settings.png)   
 

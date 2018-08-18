@@ -1,6 +1,6 @@
 ---
 title: Power BI integration overview 
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services 
 description: Describes the different integration options you can use to connect to Power BI to access the Analytics Service for Azure DevOps
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.prod: devops

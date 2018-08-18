@@ -1,6 +1,6 @@
 ---
 title: Analytics Service permissions and security
-titleSuffix: Azure DevOps     
+titleSuffix: Azure DevOps Services     
 description: Required permissions necessary to access the Analytics Service and how to handle project access denied errors
 ms.prod: devops
 ms.technology: devops-analytics

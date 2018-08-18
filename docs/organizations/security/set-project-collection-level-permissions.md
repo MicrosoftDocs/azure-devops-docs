@@ -183,10 +183,8 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection Settings** (TFS).
- 
-	> [!IMPORTANT]  
-	>If you don't see the **Organization settings** option, then you're working from an on-premises TFS. The Process page isn't supported. You must use the features supported for the On-premises XML process model as described in [Customize your work tracking experience](/vsts/reference/customize-work).
+0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (TFS).
+
 	
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](/vsts/_shared/_img/settings/open-account-settings.png)  

@@ -1,6 +1,6 @@
 ---
 title: Add an Analytics widget to a dashboard
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 description: Quickstart guide that shows you how to add an Analytics widget to a dashboard for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics

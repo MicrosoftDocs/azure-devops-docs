@@ -39,21 +39,21 @@ You manage access levels for all collections defined on the application tier for
 >[!NOTE]  
 >The images you see from your web portal may differ from the images you see in this topic. These differences result from updates made to your on-premises TFS. However, the basic functionality available to you remains the same unless explicitly mentioned.  
 
-From a user context, open the admin context by clicking the ![gear icon](../../boards/_img/icons/gear_icon.png) gear Settings icon. The tabs and pages available differ depending on which admin context you access.
+From a user context, open admin settings by choosing the ![](../../boards/_img/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
  
 ::: moniker range=">= tfs-2017"
 
 ### TFS 2018, TFS 2017 
 
-0. From the web portal home page for a team project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open the Server Settings administration context. 
+0. From the web portal home page for a team project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open **Server settings**. 
 
 	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
-0. From the Access levels page, select the access level you want to manage. For example, here we click Add to add a group to Stakeholder access.</p>  
+0. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.</p>  
 
 	<img src="_img/access-levels-2017-stakeholder-acess.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
 
-	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
+	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ From a user context, open the admin context by clicking the ![gear icon](../../b
 
 ### TFS 2015, TFS 2013
 
-1. From the web portal home page for a team project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open the administration context. 
+1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open administration settings. 
 
 	![Open the administration page](_img/ALM_CAL_OpenAdminPage.png)
 
@@ -69,7 +69,7 @@ From a user context, open the admin context by clicking the ![gear icon](../../b
 
 	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 1px solid #C3C3C3;" />
 
-	If you don't see the Access levels tab, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
+	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/tfs/server/admin/add-administrator-tfs). 
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Change the default access level to match the access you have licenses for. If yo
 >[!IMPORTANT]  
 >Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the TFS service accounts to the Basic or Advanced group.    
 
-You set an access level from its page. Click Set as default access level as shown.
+You set an access level from its page. Choose **Set as default access level** as shown.
 
 <img src="_img/change-access-levels-set-default.png" alt="Admin context, Control panel, Access levels, Stakeholder tab, set as default access level" style="border: 1px solid #C3C3C3;" />  
 

@@ -1133,7 +1133,7 @@ By default, the team project level and collection level Readers groups have only
 	<tr>
 		<td id="git-contribute-permission">Contribute</td>
 		<td>
-		At the repository level, can push their changes to existing branches in the repository and can complete pull requests. Users who lack this permission but who have [create branch](#git-create-branch-permission) may push changes to new branches. Does not override restrictions in place from [branch policies](../../repos/git/branch-policies.md).<br>
+		At the repository level, can push their changes to existing branches in the repository and can complete pull requests. Users who lack this permission but who have the **Create branch** permission may push changes to new branches. Does not override restrictions in place from [branch policies](../../repos/git/branch-policies.md).<br/><br/>
 		At the branch level, can push their changes to the branch and lock the branch. Locking a branch blocks any new commits from being added to the branch by others and prevents other users from changing the existing commit history. 
 		</td>
 	</tr>

@@ -1,6 +1,6 @@
 ---
 title: Set permissions and access for viewing and editing charts and dashboards
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: How to set permissions and access levels to view, create, and edit charts and dashboards 
 ms.technology: devops-analytics
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 07/21/2018
 <a id="set-permissions">  </a>
 # Set dashboard permissions    
 
-**Azure DevOps | TFS 2018 | TFS 2017.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017.1**
 
 
 As a team admin you can set dashboard permissions for your team. As a member of the Project Administrators group, you can set dashboard permissions for all teams. 

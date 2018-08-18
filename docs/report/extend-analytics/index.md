@@ -1,6 +1,6 @@
 ---
 title: Extend Analytics with OData
-titleSuffix: Azure DevOps  
+titleSuffix: Azure DevOps Services  
 description: Using OData backed Analytics Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics

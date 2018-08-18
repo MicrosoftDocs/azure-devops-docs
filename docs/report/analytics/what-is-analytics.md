@@ -1,6 +1,6 @@
 ---
 title: What is the Analytics Service
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 description: Understand how you can use the Analytics Service to answer quantitative questions about your projects in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics

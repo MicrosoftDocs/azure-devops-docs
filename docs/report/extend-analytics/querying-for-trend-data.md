@@ -1,6 +1,6 @@
 ---
 title: Query trend data
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services 
 description: How to query the Analytics service trend data and consume it in a client tool when working from Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics

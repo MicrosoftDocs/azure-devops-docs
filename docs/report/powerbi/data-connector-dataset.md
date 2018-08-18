@@ -1,6 +1,6 @@
 ---
 title: Dataset design for the Power BI Azure DevOps Data Connector
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 description: Describes dataset that is created in Power BI for an Analytics View for Azure DevOps 
 ms.technology: devops-analytics
 ms.prod: devops

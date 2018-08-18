@@ -1,6 +1,6 @@
 ---
 title: Default Analytics views
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 description: Filtered set of data based on the Analytics Service for VSTS which supports creating Power BI reports  
 ms.prod: devops
 ms.technology: devops-analytics

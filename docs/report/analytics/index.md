@@ -1,6 +1,6 @@
 ---
 title: Analytics Service
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 description: Index to topics for using the Analytics Service on Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics
