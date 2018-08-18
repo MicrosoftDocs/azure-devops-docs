@@ -136,12 +136,12 @@ Add the following YAML to install the `scipy` package in the conda environment n
 
 ## Test
 
-### Test with pytest
+### Test with pytest and collect coverage metrics with pytest-cov
 
-Add the following YAML to install `pytest`, run tests, and output results in JUnit format.
+Add the following YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format and code coverage results in Cobertura XML format.
 
 ```yaml
-- script: pip install pytest && pytest tests --doctest-modules --junitxml=junit/test-results.xml
+- script: pip install pytest && pip install pytest-cov && pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
   displayName: 'pytest'
 ```
 
@@ -154,6 +154,17 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
   inputs:
     testResultsFiles: '**/test-*.xml'
     testRunTitle: 'Test results for Python $(python.version)'
+```
+### Publish code coverage results
+
+Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
+
+```yaml
+- task: PublishCodeCoverageResults@1
+  inputs: 
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 ```
 
 ## Deploy
