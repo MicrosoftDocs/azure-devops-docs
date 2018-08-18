@@ -76,7 +76,7 @@ Requires TFS 2015.1 or later version.
 
 2. From **Overview**, choose the team whose settings you want to configure, and then choose **Settings**. 
 
-	![Backlog board, open team settings]((../../boards/backlogs/_img/organize-backlog-open-ccdialog.png)  
+	![Backlog board, open team settings](../../boards/backlogs/_img/organize-backlog-open-ccdialog.png)  
 
 3. Choose the **Backlogs** tab and check the boxes of those backlog levels you want your team to manage. 
 

@@ -1,6 +1,6 @@
 ---
 title: Configure the Velocity widget based on Analytics data
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services 
 description: Track team velocity across several sprints using the Analytics-based velocity widget       
 ms.technology: devops-analytics  
 ms.prod: devops

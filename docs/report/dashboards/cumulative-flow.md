@@ -1,6 +1,6 @@
 ---
 title: Cumulative flow charts
-titleSuffix: Azure DevOps & TFS 
+titleSuffix: Azure DevOps Services & TFS 
 description: Configure and view cumulative flow diagrams to improve your Kanban processes 
 ms.prod: devops  
 ms.technology: devops-analytics  
@@ -87,7 +87,7 @@ You will need to be a team administrator or a member of the Project Administrato
 
 ## View the built-in cumulative flow chart 
 
-[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
 ::: moniker range="vsts"  
 
@@ -99,7 +99,7 @@ You open the built-in (work tracking datastore) CFD for your product or portfoli
 ::: moniker-end    
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 
@@ -139,7 +139,7 @@ For the CFD chart to reflect useful information, you'll want to update the statu
 ::: moniker-end    
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)

@@ -1,6 +1,6 @@
 ---
 title: Add a widget to a team dashboard 
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps Services & TFS
 description: Choose and configure widgets that you add to a team dashboard in Azure DevOps & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-analytics
@@ -15,7 +15,7 @@ ms.date: 07/21/2018
 
 # Add widgets to a dashboard
 
-**Azure DevOps | TFS 2018 | TFS 2017 | TFS 2015.1**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1**
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
@@ -50,7 +50,7 @@ Open a web browser and choose **Overview>Dashboards**.
 > [!div class="mx-imgBorder"]  
 > ![Web portal, open Dashboards](_img/dashboards/open-dashboards-vert.png)
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) project icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end  
 
@@ -65,7 +65,7 @@ Open a web browser and choose **Dashboards**.
 
 ![Open Dashboards](_img/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) project icon to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
+If you need to switch to a different project, choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all projects and teams](../../project/navigation/go-to-project-repo.md).    
 
 
 ---

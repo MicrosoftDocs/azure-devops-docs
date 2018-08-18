@@ -1,6 +1,6 @@
 ---
 title: Manage Analytics views
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 description: View, edit, and delete an Analytics view for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics

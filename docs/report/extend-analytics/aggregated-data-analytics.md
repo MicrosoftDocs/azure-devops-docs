@@ -1,6 +1,6 @@
 ---
 title: Aggregate work tracking data using the OData Analytics Service
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 description: How to guide to aggregate and filter data with the Analytics Service and the OData aggregation extension in Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics

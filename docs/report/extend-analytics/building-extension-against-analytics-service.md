@@ -1,6 +1,6 @@
 ---
 title: Build a hub extension 
-titleSuffix: Azure DevOps  
+titleSuffix: Azure DevOps Services  
 description: How to build a hub extension that calls the Analytics Service OData for Azure DevOps from Power BI Desktop
 ms.prod: devops
 ms.technology: devops-analytics

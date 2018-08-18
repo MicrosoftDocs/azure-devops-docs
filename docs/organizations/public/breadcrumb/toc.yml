@@ -1,10 +1,10 @@
-- name: VSTS
+- name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Management Tools
+  - name: Settings
     tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-supplemental
+    topicHref: /vsts/index-settings
     items:
     - name: Public Projects
       tocHref: /vsts/organizations/public/

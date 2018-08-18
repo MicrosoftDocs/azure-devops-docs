@@ -1,11 +1,7 @@
-- name: Azure DevOps Services
+- name: Azure DevOps Services & TFS
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Management tools
+  - name: Manage extensions
     tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-settings
-    items:
-    - name: Manage extensions
-      tocHref: /vsts/
-      topicHref: /vsts/marketplace/index
+    topicHref: /vsts/marketplace/index

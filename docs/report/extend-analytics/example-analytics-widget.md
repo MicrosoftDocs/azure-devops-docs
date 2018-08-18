@@ -1,6 +1,6 @@
 ---
 title: Example of an Analytics Widget
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services 
 description: Describes the data entities and relationships provided by the Analytics service for Azure DevOps   
 ms.prod: devops
 ms.technology: devops-analytics

@@ -1,6 +1,6 @@
 ---
 title: Data available from the Analytics Service
-titleSuffix: Azure DevOps
+titleSuffix: Azure DevOps Services
 description: Data available for reporting purposes using the Analytics Service for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics

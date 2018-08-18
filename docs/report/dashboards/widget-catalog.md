@@ -1,6 +1,6 @@
 ---
 title: Catalog of widgets you can add to a dashboard
-titleSuffix: Azure DevOps & TFS
+titleSuffix: Azure DevOps Services & TFS
 ms.custom: Widget catalog
 description: Determine which widgets you want to add to your dashboards when working in Azure DevOps or Team Foundation Server
 ms.prod: devops
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Widget catalog 
 
-**Azure DevOps | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015.1-2015.3**
 
 ::: moniker range="tfs-2013"
 > [!NOTE]   

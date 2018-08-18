@@ -103,7 +103,7 @@ Once you have [installed Delivery Plans](#install-plans), the **Plans** appears 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017  <= tfs-2018"  
-[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)

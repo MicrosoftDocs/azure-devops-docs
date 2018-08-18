@@ -70,7 +70,7 @@ To create a project-level security group, open the web portal and choose the tea
 0. Choose **Project Settings** in the sidebar.
 
     > [!div class="mx-imgBorder"]  
-	> ![Web portal, open project admin context, vertical nav](../../_img/open-project-settings-vert-brn.png)
+	> ![Web portal, open project admin context, vertical nav](../../_shared/_img/settings/open-project-settings-vert-brn.png)
 
 0. Open the **Security** page and choose **Create group** to open the dialog for adding a group.
 
@@ -117,7 +117,7 @@ To create a project-level security group, open the web portal and choose the tea
 	> [!div class="mx-imgBorder"]  
 	> ![Add members](_img/stakeholder-security/choose-members-add.png) 
 
-2. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. Specify individual emails, groups defined in an existing Azure Active Directory (AAD), or existing Azure DevOps groups. The system will automatically search for matches. Choose the match(es) that meets your choice.
+2. Type the name of the user account into the text box. You can type several identities into the text box, separated by commas. Specify individual emails, groups defined in an existing Azure Active Directory  or existing Azure DevOps groups. The system will automatically search for matches. Choose the match(es) that meets your choice.
 
     <img src="_img/project-level-permissions-add-a-user.png" alt="Add users and group dialog" style="border: 1px solid #C3C3C3;" />
 
@@ -125,22 +125,21 @@ To create a project-level security group, open the web portal and choose the tea
 
 
 <a id="build-permissions" /> 
-## Set permissions for build definitions
+## Set permissions for build pipelines
 
 Open the Security dialog for all or a select build pipeline. 
 
-
 # [New navigation](#tab/new-nav)
 
-0. To set the permissions for all build pipelines, open **Build and Release>Builds**, and then choose **Security**.
+0. To set the permissions for all build pipelines, choose **Pipelines>Builds**, choose the ![](../../_img/icons/folder.png) folder icon, and then, with **All build pipelines** selected, choose the ![](../../_img/icons/actions-icon.png)actions icon and select **Security**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open the Security dialog for all build pipelines, vertical nav](_img/stakeholder-security/choose-security-all.png)  
+	> ![Open the Security dialog for all build pipelines, vertical nav](_img/stakeholder-security/open-security-all-build-pipelines-new-nav.png)  
 
-0. To set the permissions for a specific build pipeline, open the ![](../../_img/icons/actions-icon.png) actions icon menu for the build and choose **Security**.
+0. To set the permissions for a specific build pipeline, open the ![](../../_img/icons/actions-icon.png) actions icon for the specific build and choose **Security**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open the security dialog for a build pipeline](_img/stakeholder-security/set-build-permission-open-dialog.png)  
+	> ![Open the security dialog for a build pipeline](_img/stakeholder-security/open-security-build-pipeline-new-nav.png)  
 
 # [Previous navigation](#tab/previous-nav)
 

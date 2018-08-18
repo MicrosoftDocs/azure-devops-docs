@@ -1,6 +1,6 @@
 ---
 title: Analytics basic queries
-titleSuffix: Azure DevOps  
+titleSuffix: Azure DevOps Services  
 description: Examples of how to create queries of work item tracking from the Analytics service for Azure DevOps
 ms.prod: devops
 ms.technology: devops-analytics

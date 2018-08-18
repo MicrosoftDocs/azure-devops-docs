@@ -64,15 +64,18 @@
     href: ../../project/wiki/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: "Default permissions & access (Security)"
     href: charts-dashboard-permissions-access.md
+  - name: Reporting Roadmap
+    href: ../analytics/reporting-roadmap.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
   - name: REST API, Dashboards
     href: https://docs.microsoft.com/en-us/rest/api/vsts/dashboard/
 - name: Resources
   items:
-  - name: Agile
-    href: /vsts/#pivot=services&panel=agile
+  - name: Analytics
+    href: ../analytics/index.md
+  - name: Azure Boards
+    href: /vsts/index-boards
   - name: Testing
-    href: /vsts/#pivot=services&panel=testing 
+    href: /vsts/index-test 
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
-  - name: VSTS/TFS Reporting Roadmap
-    href: ../analytics/reporting-roadmap.md
+

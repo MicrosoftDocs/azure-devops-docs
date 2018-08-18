@@ -1,6 +1,6 @@
 ---
 title: Client authentication options
-titleSuffix: Azure DevOps   
+titleSuffix: Azure DevOps Services   
 description: Enter or change authentication credentials when you connect to the Analytics Service from Power BI or Excel
 ms.prod: devops
 ms.technology: devops-analytics

@@ -1,6 +1,6 @@
 ---
 title: Performance and latency with the Analytics Service
-titleSuffix: Azure DevOps   
+titleSuffix: Azure DevOps Services   
 description: Understand how data is updated and time requirements associated with querying the Analytics Service 
 ms.prod: devops
 ms.technology: devops-analytics

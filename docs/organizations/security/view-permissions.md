@@ -109,9 +109,46 @@ Permissions are set at the collection, project, and object level as described in
 
 ## View collection-level permissions 
 
-1. Open the admin context for the organization or collection. Choose the ![gear icon](_img/icons/gear_icon.png) gear settings icon, and then **Security**. 
+Open admin settings for the organization or a collection. 
 
-2.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+# [New navigation](#tab/new-nav)
+
+::: moniker range="vsts"  
+
+0. Choose the ![](/vsts/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization settings](/vsts/_shared/_img/settings/open-admin-settings-vert.png)  
+
+0. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins-vert.png)  
+
+0.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2015  <= tfs-2018"  
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end  
+
+
+# [Previous navigation](#tab/previous-nav)
+
+0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization Settings](/vsts/_shared/_img/settings/open-account-settings.png)  
+
+0.	Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
+
+	![Security, Project Collection Administrators group, Members tab](_img/view-permissions/collection-admins.png)
+
+0.  Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+
+
+---
 
 
 ## View object-level permissions 

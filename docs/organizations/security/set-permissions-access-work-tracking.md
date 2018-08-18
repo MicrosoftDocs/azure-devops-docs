@@ -214,7 +214,7 @@ To customize a process, you need to grant **Edit process**  permissions to a use
 
 	![Process, Open security dialog](_img/process/mprocess-open-security-dialog-inherited.png)  
 
-2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then click Save changes. 
+2. Add the account name of the person you want to grant permissions to, set the permissions to **Allow** that you want them to have, and then choose **Save changes**. 
 
 	Here we add Christie Church and allow her to edit the process.  
  

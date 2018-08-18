@@ -15,7 +15,7 @@ ms.date: 03/16/2017
 
 # Manage roll out of the new web form
 
-[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]
+[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
 
 > [!IMPORTANT]  
 > **Feature availability:** The new form and its corresponding features are available for the web portal for TFS 2017 and later versions.

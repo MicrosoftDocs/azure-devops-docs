@@ -1,6 +1,6 @@
 ---
 title: Access Analytics Service data through Excel
-titleSuffix: Azure DevOps    
+titleSuffix: Azure DevOps Services    
 description: How to guide for accessing the Analytics Service OData from Excel for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-analytics

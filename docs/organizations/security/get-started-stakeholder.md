@@ -112,7 +112,7 @@ From your web browser, open your product backlog from the **Work** hub, **Backlo
 
 ::: moniker range=">= tfs-2017"
 > [!TIP]    
-> If you don't see the team or team project you want, click the ![ ](../../_img/icons/project-icon.png) project icon to [browse all team projects and teams](../../user-guide/account-home-pages.md). 
+> If you don't see the team or team project you want, choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](../../user-guide/account-home-pages.md). 
 ::: moniker-end
 
 To view or edit a work item, select it and choose Enter.
