@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Load Testing
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 Load test your app with hundreds of thousands of users using Azure DevOps.
 
 ## 5-Minute Quickstarts

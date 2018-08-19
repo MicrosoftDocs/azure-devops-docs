@@ -13,7 +13,9 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Test different configurations
- 
+
+[!INCLUDE [version-header](_shared/version-header.md)] 
+
 Your users will probably install or run your app 
 on a wide variety of configurations, such as different 
 operating systems, web browsers, and other variations. 

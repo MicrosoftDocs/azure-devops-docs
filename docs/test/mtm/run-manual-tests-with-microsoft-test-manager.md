@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Run manual tests with Microsoft Test Manager
 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
 Microsoft Test Runner sits at the side of the screen while you test your application. It displays the steps you planned and the results you expected, and you check them off as you work. It can record your actions along with comments, screenshots, and other data, so that if you find a bug, it's easy to reproduce.  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 

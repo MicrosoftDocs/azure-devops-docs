@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Install certificates and custom software on agent machines
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 In some test scenarios you might need to set up the environment for the test, such as installing certificates
 or custom software, and then clean up the environment afterwards (such as removing temporary files or folders created during test execution).
 To do this you can include artifact deployments, setup, and cleanup scripts in the Test Settings of your test solution.

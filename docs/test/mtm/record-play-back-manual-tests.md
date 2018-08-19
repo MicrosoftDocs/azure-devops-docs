@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Record and play back manual tests
 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
 Record keystrokes and mouse actions with Microsoft Test Manager 
 while you are testing an app. You can then play back your actions 
 quickly and accurately the next time you run the test. 

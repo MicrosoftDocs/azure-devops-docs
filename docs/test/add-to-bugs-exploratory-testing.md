@@ -13,6 +13,8 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Add findings to existing bugs with exploratory testing
+
+[!INCLUDE [version-header](_shared/version-header.md)] 
  
 To help avoid duplication, the Test &amp; Feedback extension automatically 
 searches for and displays existing bugs, based on the keywords in the title,

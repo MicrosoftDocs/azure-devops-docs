@@ -13,7 +13,9 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Repeat a test with different data
- 
+
+[!INCLUDE [version-header](_shared/version-header.md)] 
+
 When you write a [manual test](create-test-cases.md), 
 you often want to specify that the test should be repeated several 
 times with different test data. For example, if your users can add 

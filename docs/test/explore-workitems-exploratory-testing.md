@@ -13,7 +13,9 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Explore work items with the Test &amp; Feedback extension
- 
+
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 Use the Test &amp; Feedback extension to explore existing work items and 
 associate them with a new or an in-progress exploratory session. 
 After a work item is associated with a session, all new bugs, tasks and test cases created 

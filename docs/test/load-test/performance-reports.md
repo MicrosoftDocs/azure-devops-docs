@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # View and compare your load test runs
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 You can review past load test runs or current runs started by 
 anyone on your team, at any time. You can also compare two
 test runs to see the gain or loss in performance, and other

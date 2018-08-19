@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Install the Test &amp; Feedback extension
 
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 The **Test &amp; Feedback extension** helps teams perform exploratory testing and provide feedback. 
 Everyone in the team, such as developers, product owners, managers, UX or UI engineers, 
 marketing teams, early adopters, and other stakeholders can use the 

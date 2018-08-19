@@ -15,6 +15,8 @@ monikerRange: '>= tfs-2017'
 
 # Run automated tests from test plans
 
+[!INCLUDE [version-header-tfs17](_shared/version-header-tfs17.md)] 
+
 Automate test cases in your test plans and run them directly from the [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]:
 
 * Provides a user-friendly process for testers who may not be well

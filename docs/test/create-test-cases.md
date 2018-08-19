@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Create manual test cases
 
+[!INCLUDE [version-header](_shared/version-header.md)] 
+
 <a name="test-cases"></a>
 Create manual test cases to check that each of the deliverables 
 meet your users' needs. Organize your test cases by adding test 

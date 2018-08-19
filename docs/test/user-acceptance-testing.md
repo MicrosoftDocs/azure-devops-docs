@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Perform user acceptance testing
 
+[!INCLUDE [version-header](_shared/version-header.md)] 
+
 Today's faster development pace requires tools that 
 enable test teams to more easily verify value based
 on business requirements, and the high quality 

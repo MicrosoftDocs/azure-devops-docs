@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Run URL-based load tests with Azure DevOps
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 You can run a load test on your web app or site directly
 using Azure DevOps.
 
