@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2017'
 
 # Search across all your code and work items
 
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 Azure DevOps and TFS store a tremendous amount of information; 
 work items for planning and tracking your work, version control to track code file changes, 
 and build and release services to help you ship effortlessly. 

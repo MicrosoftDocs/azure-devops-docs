@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2017'
 
 # How To: Use Code Search
 
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 By using Code Search you can:
 
 * **Search across all of your projects**:

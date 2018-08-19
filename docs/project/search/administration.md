@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2017'
 
 # Set up and administer Code Search and Work Item Search
 
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 In this topic:
 
 * **Configure Code Search in Azure DevOps Services**
