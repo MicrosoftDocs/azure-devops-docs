@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2017'
 
 # Search for work items
 
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 Work Item Search provides fast and flexible search across all your work items over all your projects. 
 
 See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-managed-queries.md?toc=/vsts/project/search/toc.json&bc=/vsts/project/search/breadcrumb/toc.json)
