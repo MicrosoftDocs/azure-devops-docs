@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Control how long to keep test results in Azure DevOps
 
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,
 have a policy to clear test results that you don't need anymore. 

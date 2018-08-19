@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
 
+[!INCLUDE [version-header](_shared/version-header.md)] 
+
 To use the Test &amp; Feedback extension in **Connected** mode you must connect 
 to Azure DevOps or TFS 2015 and later.
 This automatically configures the extension based on your access level: 

@@ -13,7 +13,9 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Collect diagnostic data while testing
- 
+
+[!INCLUDE [version-header-tfs17](_shared/version-header-tfs17.md)] 
+
 Collect diagnostic data while testing your apps.
 This data will be included in the bugs you file 
 during the test. You can collect diagnostic data from

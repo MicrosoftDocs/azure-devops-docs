@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Create a test plan and test suite
 
+[!INCLUDE [version-header](_shared/version-header.md)] 
+
 Create test plans to track manual testing for sprints or milestones. That way, 
 you can see when the testing for a specific sprint or milestone is complete.
 

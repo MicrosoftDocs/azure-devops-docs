@@ -13,6 +13,8 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Get insights across your exploratory testing sessions
+
+[!INCLUDE [version-header](_shared/version-header.md)]
  
 View completed exploratory testing sessions and derive meaningful insights
 at team or individual level, and for a specific period. 

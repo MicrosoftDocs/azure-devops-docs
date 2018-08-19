@@ -13,7 +13,9 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Exploratory and manual testing scenarios and capabilities
- 
+
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 Quality is a vital aspect of software systems, and manual testing 
 and exploratory testing continue to be an important techniques for maximizing this.
 In today's software development processes,

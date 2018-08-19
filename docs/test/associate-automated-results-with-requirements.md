@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Associate automated test results with requirements
 
+[!INCLUDE [version-header](_shared/version-header.md)] 
+
 If your test suites include **requirements**, link these to your test results
 and view the results on your team's dashboard. This enables end-to-end 
 traceability of requirements for agile teams. For example, when teams do not use

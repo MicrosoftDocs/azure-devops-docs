@@ -13,7 +13,9 @@ monikerRange: '>= tfs-2015'
 ---
 
 # Default manual testing permissions and access 
- 
+
+[!INCLUDE [version-header](_shared/version-header.md)]
+
 You can access most manual testing features when you are added as a team member or a member
 of the Contributors group for a project. The most common built-in groups include Readers,
 Contributors, and Project Administrators. For a simplified view of all default permissions

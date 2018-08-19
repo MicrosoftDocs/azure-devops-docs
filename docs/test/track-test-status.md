@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Track test status
 
+[!INCLUDE [version-header](_shared/version-header.md)] 
+
 Quickly view the status of your testing using lightweight charts. 
 For example, find out how many test cases are ready to run,
 or how many tests are passing and failing in each test suite. 

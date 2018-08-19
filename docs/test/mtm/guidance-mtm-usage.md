@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Guidance on Microsoft Test Manager usage
 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
 Azure DevOps and Team Foundation Server (TFS) offer both web-based and client-based solutions for manual testing:
 
 * The **Test Center** in Microsoft Test Manager (MTM) client is a desktop-based manual testing solution, which has traditionally been used by testers for their Manual testing needs (see [Run manual tests with Microsoft Test Manager](run-manual-tests-with-microsoft-test-manager.md)).

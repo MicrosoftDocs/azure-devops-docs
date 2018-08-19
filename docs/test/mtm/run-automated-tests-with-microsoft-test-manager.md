@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Run automated tests with Microsoft Test Manager
 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
 ## Set up your test plan to use your build  
  
 To set up your test plan to run the automated test that you have created,

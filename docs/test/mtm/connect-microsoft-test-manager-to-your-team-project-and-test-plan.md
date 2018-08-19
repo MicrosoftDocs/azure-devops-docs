@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Connect Microsoft Test Manager to your project and test plan
 
+[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+
 Use Microsoft Test Manager (MTM) to help you test the application you built. MTM stores your test plans and results on Team Foundation Server (TFS).  
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 

@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Collect screenshots, video, logs, and attachments in continuous tests
 
+[!INCLUDE [version-header-tfs17](_shared/version-header-tfs17.md)] 
+
 When running tests in a CI/CD pipeline, collecting diagnostic data such as
 screenshots, video, logs, and attachments is often useful to help troubleshoot failures.
 

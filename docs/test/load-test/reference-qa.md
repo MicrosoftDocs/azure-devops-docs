@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # FAQs for load testing
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 <a name="qageneral"></a>
 ## General
 

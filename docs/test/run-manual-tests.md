@@ -14,6 +14,8 @@ monikerRange: '>= tfs-2015'
 
 # Run manual tests
 
+[!INCLUDE [version-header](_shared/version-header.md)] 
+
 Run your manual tests and record the test results for each test step 
 using Microsoft Test Runner. If you find an issue when testing, 
 use Test Runner to create a bug. Test steps, screenshots, and comments 

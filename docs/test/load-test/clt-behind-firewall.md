@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Test private and intranet apps using cloud-based load testing
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 The Cloud-based Load Testing (CLT) service can be used for performance and scale load testing
 of an app by generating load from Azure. This type of load generation can only access and
 generate load on an Internet-located or publicly accessible app. However, you may want

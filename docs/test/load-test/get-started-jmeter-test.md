@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Run Apache JMeter load tests with Azure DevOps
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 Before you start your load testing:
 
 * [Create your Azure DevOps subscription](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs), 

@@ -14,6 +14,8 @@ monikerRange: 'vsts'
 
 # Load testing scenarios and capabilities
 
+[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+
 ![Cloud-based Load Testing](_img/performance-testing/IC838830.png)
 
 Load test your app with hundreds of thousands of users using 
