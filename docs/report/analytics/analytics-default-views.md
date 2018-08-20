@@ -1,7 +1,7 @@
 ---
 title: Default Analytics views
 titleSuffix: Azure DevOps Services
-description: Filtered set of data based on the Analytics Service for VSTS which supports creating Power BI reports  
+description: Filtered set of data based on the Analytics Service for Azure DevOps Services which supports creating Power BI reports  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: jozimm
@@ -76,5 +76,5 @@ In these cases, you can [create a custom Analytics view](analytics-views-create.
 - [Create an Analytics view](analytics-views-create.md) 
 - [Manage Analytics views](analytics-views-manage.md) 
 - [Data available from the Analytics Service](data-available-in-analytics.md)
-- [Dataset design for the Power BI VSTS Connector](../powerbi/data-connector-dataset.md)
+- [Dataset design for the Power BI Azure DevOps Services Connector](../powerbi/data-connector-dataset.md)
 - [Grant permissions to access the Analytics service](./analytics-security.md)

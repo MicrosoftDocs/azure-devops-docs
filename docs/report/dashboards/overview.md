@@ -44,7 +44,7 @@ Each team can [add and configure multiple dashboards](dashboards.md) to share in
  
 ## The Analytics Service and Analytics widgets
 The Analytics Service is in preview and available to all Azure DevOps users. To learn more, see these topics: 
-- [Widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md)
+- [Widgets based on the Analytics Service](../analytics/analytics-widgets.md)
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../analytics/what-is-analytics.md)
 

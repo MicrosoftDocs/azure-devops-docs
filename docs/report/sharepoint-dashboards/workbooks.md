@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.assetid: ac07307f-e87c-43d5-a044-01023cea2e50
 ms.manager: douge
 ms.author: kaelliauthor: KathrynEE
+monikerRange: '>=tfs-2013 <= tfs-2017'
 ms.date: 10/03/2017
 ---
 
@@ -15,21 +16,19 @@ ms.date: 10/03/2017
 
 **TFS 2017 | TFS 2015 | TFS 2013**  
 
->[!IMPORTANT]  
->Excel workbooks, Excel reports, and SharePoint dashboards are only supported for on-premises TFS. For information on what is supported for VSTS, see [Dashboards, charts, & widgets](/vsts/report/overview).
+> [!IMPORTANT]  
+> Excel workbooks, Excel reports, and SharePoint dashboards are only supported for on-premises TFS. For information on what is supported for Azure DevOps Services, see [Dashboards, charts, & widgets](../dashboards/overview.md).
 > 
-> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](/vsts/report/sharepoint-dashboards/about-sharepoint-integration) to learn about the options available to you. 
-  
+> TFS 2018 and later versions no longer support native integration with SharePoint products. If you're planning to upgrade to TFS 2018, read [About SharePoint integration](about-sharepoint-integration.md) to learn about the options available to you. 
+
 You can open a workbook from the Documents page in Team Explorer. Or, you can open a query and use the [triage mode to update work items](../../boards/queries/triage-work-items.md). 
   
 **Requirements**  
   
--   Your team project must be provisioned with SharePoint Products and the project portal enabled. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
+-   Your team project must be provisioned with SharePoint Products and the project portal enabled. For more information, see [Configure or redirect process guidance](configure-or-redirect-process-guidance.md).  
   
 -   To open a workbook in Office Excel, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any product in Visual Studio ALM.  
-  
 -   To view a shared query, you must be assigned or belong to a group that has been assigned **Read** permissions for the shared query folder for the team project. To modify a query, you must be assigned or belong to a group that has been assigned **Contribute** or **Full Control** permissions for the shared query. See [Set permissions on queries](../../boards/queries/set-query-permissions.md).  
-  
 -   To create or modify work items, you must be a member of the **Contributors** group or your **View work items in this node** and **Edit work items in this node** permissions must be set to **Allow**. See [Add users to team projects](../../organizations/security/add-users-team-project.md).  
   
 > [!NOTE]
@@ -51,5 +50,5 @@ You can open a workbook from the Documents page in Team Explorer. Or, you can op
   
 ## Q & A  
   
-### Q: How can I create my own workbooks?  
+### Q: Can I create my own workbooks?  
  **A:** Yes. You can define your own queries and then open them in Excel. For details, see [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).

@@ -9,6 +9,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.date: 03/09/2017
+monikerRange: '>=tfs-2013'
 ms.topic: tutorial
 ---
 
@@ -28,7 +29,7 @@ The project portal is a site associated with a team project for the purposes of 
   
 -   [Configure a Web site for your portal](#simple).  
   
-     Choose this option if you want to use a website that doesn't require SharePoint integration or if your team project is hosted on VSTS.  
+     Choose this option if you want to use a website that doesn't require SharePoint integration or if your team project is hosted on Azure DevOps Services.  
   
 -   [Configure a prepared SharePoint site for your portal](#validtfs).  
   
@@ -52,7 +53,7 @@ The project portal is a site associated with a team project for the purposes of 
      ![Project Portal Settings dialog box](_img/procguid_projectportalsettings.png "ProcGuid_ProjectPortalSettings")  
   
 ##  <a name="simple"></a> Configure a Web site for your portal  
- Configure this option when you aren't using SharePoint Products or when your team project is hosted on VSTS.  
+ Configure this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
 1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/accounts/add-administrator-team-project).  
   

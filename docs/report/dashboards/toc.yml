@@ -37,7 +37,7 @@
   - name: Velocity guidance
     href: velocity-guidance.md
   - name: "Analytics widgets (VSTS)"
-    href: ../analytics/analytics-widgets-vsts.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
+    href: ../analytics/analytics-widgets.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: How-to Guides
   items:
   - name: Add charts to a dashboard

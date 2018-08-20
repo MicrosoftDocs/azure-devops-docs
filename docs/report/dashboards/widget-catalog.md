@@ -32,7 +32,6 @@ To add a widget to a dashboard or copy a widget from one dashboard to another, s
 ::: moniker-end
 
 ::: moniker range="vsts"
-## Analytics, team-scoped, user-focused, and other widgets 
 
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
@@ -44,7 +43,6 @@ The following widgets are available to you. Team-scoped widgets display data bas
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-## Team-scoped, user-focused, and other widgets 
 
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
 
@@ -56,7 +54,6 @@ The following widgets are available to you. Team-scoped widgets display data bas
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-## Team-scoped, user-focused, and other widgets 
 
 The following widgets are available to you. Team-scoped widgets display data based on the selected team context. User-focused widgets display information based on the logged-in user.  
   
@@ -68,53 +65,11 @@ The following widgets are available to you. Team-scoped widgets display data bas
 
 
 ::: moniker range=">= tfs-2015"
-## Code
-
-<a id="code-tile-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Code tile	
-
-![Code tile widget](_img/widget-code-tile.png)
-
-Adds a configurable tile to display the summary of a code folder or Git repository. To configure, simply click the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
-::: moniker-end
-::: moniker range="tfs-2015"
-Requires TFS 2015.1 or later version.
-::: moniker-end
-::: moniker range=">= tfs-2015"
-----
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-
-<a id="pull-request-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Pull request 
-
-![Pull request widget](_img/widget-catalog-pull-request.png)
-
-<!---
-> [!NOTE]  
-> **<b>Feature availability:** Available from Azure DevOps or TFS 2015.2 or later version. 
--->  
-
-Adds a configurable tile to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the Git repository for the pull requests of interest. 
-
-You need to add a widget for each Git repository of interest.
-To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
-
-::: moniker-end
-::: moniker range="tfs-2015"
-Requires TFS 2015.2 or later version.
-::: moniker-end
-::: moniker range=">= tfs-2015"
-----
-::: moniker-end
-
-::: moniker range=">= tfs-2015"
-## Plan and track work  
+## Azure Boards/Work widgets 
 ::: moniker-end
 ::: moniker range=">= tfs-2017"
 <a id="assigned-to-me-widget"></a>
-##&nbsp;&nbsp;&nbsp;Assigned to me  
+###Assigned to me  
  
 ![Assigned to me widget](_img/widget-assigned-to-me.png)  
 
@@ -126,7 +81,7 @@ Displays the list of work items currently assigned to the currently logged in us
 
 
 ::: moniker range=">= tfs-2015"
-##&nbsp;&nbsp;&nbsp;Chart for work items  
+###Chart for work items  
 <a id="chart-wit-widget"></a> 
 	
 ![Chart work item query widget](_img/widget-chart-work-query.png)  
@@ -144,7 +99,7 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 
 ::: moniker range=">= tfs-2015"
 <a id="new-work-item-widget"></a>
-##&nbsp;&nbsp;&nbsp;New Work item
+###New Work item
 	
 ![New work item widget](_img/widget-new-work-items.png)
 
@@ -163,7 +118,7 @@ Requires TFS 2015.1 or later version.
 ::: moniker range=">= tfs-2015"
 
 <a id="other-links-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Other links 
+###Other links 
 
 ![Other links widget](_img/widget-other-links.png)  
 
@@ -190,7 +145,7 @@ The following links are displayed when the corresponding resource is configured 
 ::: moniker range=">= tfs-2015"
 
 <a id="query-results-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Query results 
+###Query results 
 	
 
 ![Query results widget](_img/widget-query-results.png)
@@ -205,7 +160,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 ::: moniker range=">= tfs-2015"
 <a id="query-tile-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Query tile 
+###Query tile 
 
 ![Query tile widget](_img/widget-query-tile.png)
 
@@ -221,7 +176,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
 
 <a id="sprint-burndown-widget"></a>
 <a id="burndown-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Sprint burndown 
+###Sprint burndown 
 
 ![Sprint burndown widget](_img/widget-sprint-burndown.png)
 
@@ -235,7 +190,7 @@ Teams [use the burndown chart to mitigate risk and check for scope creep](../../
 ::: moniker range=">= tfs-2015"
 
 <a id="sprint-capacity-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Sprint capacity 
+###Sprint capacity 
 
 ![Sprint capacity widget](_img/widget-sprint-capacity.png)
 
@@ -250,7 +205,7 @@ Teams [specify their capacity to plan and monitor their sprint resources](../../
 ::: moniker range=">= tfs-2015"
 
 <a id="sprint-overview-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Sprint overview 
+###Sprint overview 
 
 ![Sprint overview widget](_img/widget-sprint-overview.png)
 
@@ -271,7 +226,7 @@ Inserts a visual overview of sprint progress indicating the number of backlog it
 
 ::: moniker range=">= tfs-2015"
 <a id="work-links-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Work links 
+###Work links 
 
 ![Work links widget](_img/widget-work-links.png)  
 Provides quick access to open the following Agile tools and team resources:
@@ -286,11 +241,11 @@ Provides quick access to open the following Agile tools and team resources:
  
 
 ::: moniker range="vsts"
-## Analytics
+## Analytics widgets
 
 To add Analytics widgets to your dashboard, you first need to install the [Analyics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You can then [add the widget(s) to your dashboard](add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.  
 
-##&nbsp;&nbsp;&nbsp;Burndown chart 
+###Burndown chart 
 <a id="burndown-analytics-widget"></a>  
 	
 ![Burndown chart widget](_img/widget-burndown-chart.png)  
@@ -299,7 +254,7 @@ Adds a tile that displays a burndown chart which you can configure to span one o
 
 ----
 
-##&nbsp;&nbsp;&nbsp;Burnup chart  
+###Burnup chart  
 <a id="burnup-analytics-widget"></a> 	
 
 ![Burnup chart widget](_img/widget-burnup-chart.png)    
@@ -310,7 +265,7 @@ Adds a tile that displays a burnup chart which you can configure to span one or 
 
 <a id="cfd-widget"></a> 
 
-##&nbsp;&nbsp;&nbsp;Cumulative flow diagram   
+###Cumulative flow diagram   
 
 ![Cumulative flow diagram widget](_img/widget-cfd-chart.png)  
 
@@ -323,7 +278,7 @@ Hover over each color within the chart to see the count of items for a particula
 ----
 
 <a id="cycle-time-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Cycle time  
+###Cycle time  
 
 ![Cumulative flow diagram widget](_img/widget-cycle-time.png)  
 
@@ -334,7 +289,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ----
 
 <a id="lead-time-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Lead time  
+###Lead time  
 
 ![Lead time widget](_img/widget-lead-time.png)   
  
@@ -345,7 +300,7 @@ Each marker on the chart corresponds to one or more work items with a particular
 ----
 
 <a id="velocity-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Velocity   
+###Velocity   
 
 ![Sprint velocity widget](_img/widget-velocity.png)
 
@@ -358,14 +313,57 @@ For additional guidance, see [Velocity](team-velocity.md).
 
 
 ::: moniker range=">= tfs-2015"
-## Build, test, release
+## Azure Repos/Code widgets
+
+<a id="code-tile-widget"></a> 
+###Code tile	
+
+![Code tile widget](_img/widget-code-tile.png)
+
+Adds a configurable tile to display the summary of a code folder or Git repository. To configure, simply click the added tile, select a repository, select a branch (Git only) and select a path. The code tile supports both TFVC and Git repositories. 
+::: moniker-end
+::: moniker range="tfs-2015"
+Requires TFS 2015.1 or later version.
+::: moniker-end
+::: moniker range=">= tfs-2015"
+----
+::: moniker-end
+
+::: moniker range=">= tfs-2015"
+
+<a id="pull-request-widget"></a> 
+###Pull request 
+
+![Pull request widget](_img/widget-catalog-pull-request.png)
+
+<!---
+> [!NOTE]  
+> **<b>Feature availability:** Available from Azure DevOps or TFS 2015.2 or later version. 
+-->  
+
+Adds a configurable tile to display active pull requests requested by the team, or assigned to or requested by the person logged in. Select the Git repository for the pull requests of interest. 
+
+You need to add a widget for each Git repository of interest.
+To learn more about pull requests, see [Review code with pull requests](../../repos/git/pull-requests.md).
+
+::: moniker-end
+::: moniker range="tfs-2015"
+Requires TFS 2015.2 or later version.
+::: moniker-end
+::: moniker range=">= tfs-2015"
+----
+::: moniker-end
+
+
+::: moniker range=">= tfs-2015"
+## Azure Pipelines/Build and Release widgets
   
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 
 <a id="build-history-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Chart for build history  
+###Chart for build history  
 
 ![Build history widget](_img/widget-build-history-chart.png)   
 
@@ -381,30 +379,11 @@ Requires TFS 2015.2 or later version. For TFS 2015.1 and earlier versions, see [
 ----
 ::: moniker-end
 
-::: moniker range=">= tfs-2017"
-
-<a id="chart-test-plan-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Chart for test plans  
-	
-![Chart work item query widget](_img/widget-chart-test-plans.png)  
-
-Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
-
-To learn more, see [Track your test results](../../test/track-test-status.md).
-
-::: moniker-end
-::: moniker range="tfs-2017"
-Requires TFS 2017.2 or later version.
-::: moniker-end
-::: moniker range=">= tfs-2017"
-----
-::: moniker-end
-
 
 ::: moniker range=">= tfs-2017"
 
 <a id="deployment-status-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Deployment status 
+### Deployment status 
 
 ![Deployment status widget](_img/widget-deployment-status.png)  
 
@@ -421,7 +400,7 @@ Requires TFS 2017.1 or later version.
 ::: moniker range="vsts"
 
 <a id="release-definition-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Release pipeline overview 
+### Release pipeline overview 
 
 ![Release pipeline overview widget](_img/widget-release-definitions.png)  
 
@@ -431,18 +410,13 @@ Configurable widget that you can use to view and track the status of a release p
 ::: moniker-end
 
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="requirements-quality-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Requirements quality 
+### Requirements quality 
 <a id="requirements-quality-widget"></a>  
 
 ![Requirements quality widget](_img/widget-requirements-quality.png)  
-
-<!---
-> [!NOTE]  
-> **Feature availability:** You can access this widget from Azure DevOps or TFS 2017.   
--->
 
 Configurable widget that you can use to track quality continuously from a build or release pipeline. 
 To learn more, see [Associate automated test results with requirements](../../test/associate-automated-results-with-requirements.md). 
@@ -450,11 +424,37 @@ To learn more, see [Associate automated test results with requirements](../../te
 ---- 
 ::: moniker-end
 
+::: moniker range=">= tfs-2017"
+
+## Azure Test Plans/Test widgets  
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+<a id="chart-test-plan-widget"></a> 
+###Chart for test plans  
+	
+![Chart work item query widget](_img/widget-chart-test-plans.png)  
+
+Adds a configurable widget that lets you track the progress of test case authoring or status of test execution for tests in a test plan. Get started by selecting a test plan and a test suite. Then select test case chart for test authoring progress or test results for test execution progress. Finally, select the chart type and the pivots. 
+
+To learn more, see [Track your test results](../../test/track-test-status.md).
+
+::: moniker-end
+::: moniker range="tfs-2017"
+Requires TFS 2017.2 or later version.
+::: moniker-end
+::: moniker range=">= tfs-2017"
+----
+::: moniker-end
+
+
  
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="test-results-widget"></a>
-##&nbsp;&nbsp;&nbsp;Test results trend 
+### Test results trend 
 
 ![Test results trend widget](_img/widget-test-results-trend.png)
 
@@ -472,13 +472,14 @@ To learn more about creating charts for tracking test results, see [Review conti
 ---- 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+
+::: moniker range=">= tfs-2015"
 ## Informational content and other links 
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 
 <a id="embedded-webpage-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Embedded web page 
+### Embedded web page 
 
 ![Embedded web page widget](_img/embedded-web-page-widget.png)
 
@@ -487,11 +488,11 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="markdown-widget"></a> 
 <a id="markdown"></a>
-##&nbsp;&nbsp;&nbsp;Markdown 
+### Markdown 
 
 
 ![Markdown widget](_img/widget-markdown-tile.png)
@@ -503,7 +504,7 @@ Adds a configurable tile to display the contents of a web page. Only webpages th
 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017"
 Adds a configurable tile to display any type of information, guidance, or links that you want. You can also configure the widget to point to a file stored in your repository. From the configuration dialog, add the information you want to share with your team. To learn more, see [ Add Markdown to a dashboard](add-markdown-to-dashboard.md). 
 ::: moniker-end
 ::: moniker range="tfs-2015"
@@ -511,13 +512,13 @@ Adds a configurable tile to display any type of information, guidance, or links 
 
 Requires TFS 2015.1 or later version. For TFS 2015.2 or later versions, you can configure the widget to point to a file stored in your repository.   
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ---- 
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 <a name="team-members-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Team members 
+### Team members 
 
 ![Team members widget](_img/widget-team-members.png)
 
@@ -538,7 +539,7 @@ Requires TFS 2015.1 or later version.
 ::: moniker range=">= tfs-2015 <= tfs-2017"
 
 <a id="team-room-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Team room  
+### Team room  
 
 ![Team room widget](_img/widget-team-room.png)
 
@@ -554,10 +555,10 @@ Team rooms support increased team productivity by providing a space to discuss w
 ::: moniker-end
 
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="visual-studio-widget"></a> 
-##&nbsp;&nbsp;&nbsp;Visual Studio Shortcuts 
+### Visual Studio Shortcuts 
 
 ![Visual Studio widget](_img/widget-visual-studio.png)
 
@@ -567,14 +568,14 @@ Provides links to open or download Visual Studio. The Visual Studio IDE client c
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 
 <a id="how-to-widget"></a>
-##&nbsp;&nbsp;&nbsp;Welcome 
+### Welcome 
 
 ![How to links widget](_img/widget-how-to-links.png)
 
@@ -584,17 +585,17 @@ Provides links to the **Work**, **Code**, and **Build** or **Build-Release** pag
 ::: moniker range="tfs-2015"
 Requires TFS 2015.1 or later version.
 ::: moniker-end
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 ----
 ::: moniker-end
 
-::: moniker range="vsts || >= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2015"
 <a id="related-notes"></a>  
 ## Related notes
 
 These represent the basic widgets. Look forward to more widgets becoming available in the coming months. 
 
-##&nbsp;&nbsp;&nbsp;Marketplace widgets
+### Marketplace widgets
 
 You may find additional widgets of interest from the [Marketplace](https://marketplace.visualstudio.com/search?term=webpage%20widget&target=VSTS&sortBy=Relevance).  
 
@@ -604,7 +605,7 @@ If your organization owner or project collection administrator disables a market
 
 To regain access to it, request your admin to reinstate or reinstall the widget. 
 
-##&nbsp;&nbsp;&nbsp;Extensibility 
+### Extensibility 
 
 Using the REST API service, you can [create a dashboard widget](../../extend/develop/add-dashboard-widget.md). To learn more about the REST APIs for dashboards and widgets, see [Dashboards (API)](https://docs.microsoft.com/rest/api/vsts/dashboard/dashboards).
 

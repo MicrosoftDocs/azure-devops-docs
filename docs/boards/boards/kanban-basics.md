@@ -131,7 +131,7 @@ By monitoring these metrics, you can gain insight into how to optimize your proc
 ::: moniker range="vsts"
 
 In addition to the above chart, you can add Analytics widgets to your dashboard. The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics: 
-- [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets-vsts.md)
+- [Widgets based on the Analytics Service](../../report/analytics/analytics-widgets.md)
 - [Add an Analytics widget to a dashboard](../../report/analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../../report/analytics/what-is-analytics.md)
 

@@ -23,7 +23,7 @@ The Analytics extension includes several dashboard widgets that take advantage o
 The Analytics widgets are described below.
 
 > [!NOTE]   
-> **Feature availability:** All Analytics widgets are available only for VSTS at this time. You need to first install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
+> **Feature availability:** All Analytics widgets are available only for Azure DevOps Services at this time. You need to first install the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics).
 You can then [add the widget(s) to your dashboard](../add-widget-to-dashboard.md). You must be an account owner or a member of the [Project Collection Administrator group](../../organizations/security/set-project-collection-level-permissions.md) to add extensions.
 
 ## Burndown
