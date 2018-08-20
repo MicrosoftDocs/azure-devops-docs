@@ -48,6 +48,6 @@ Here you'll find more resources to support your development efforts with Visual 
 
 Learn more about how we use DevOps and Agile practices at Microsoft, best practices research, lessons learned, and more.
 
-*   [Agile](/azure/devops/agile/what-is-agile)
-*   [DevOps](/azure/devops/what-is-devops)
-*   [Git at Scale](/azure/devops/git/git-at-scale)
+*   [Agile](/azure/devops/learn/agile/what-is-agile)
+*   [DevOps](/azure/devops/learn/what-is-devops)
+*   [Git at Scale](/azure/devops/learn/git/git-at-scale)

@@ -172,23 +172,23 @@
 - name: Resources
   items:
   - name: What is Git?
-    href: /azure/devops/git/what-is-git
+    href: /azure/devops/learn/git/what-is-git
   - name: What is version control?
-    href: /azure/devops/git/what-is-version-control
+    href: /azure/devops/learn/git/what-is-version-control
   - name: Plan your migration to Git
-    href: /azure/devops/git/centralized-to-git
+    href: /azure/devops/learn/git/centralized-to-git
   - name: Migrate from TFVC to Git
-    href: /azure/devops/git/migrate-from-tfvc-to-git
+    href: /azure/devops/learn/git/migrate-from-tfvc-to-git
   - name: Git REST APIs
     href: https://visualstudio.com/docs/integrate/api/repos/git/overview
   - name: Pro Git
     href: https://www.git-scm.com/book/en/v2
     name: Learn Git
-    href: /azure/devops/git/learn-git-with-team-services/
+    href: /azure/devops/learn/git/learn-git-with-team-services/
   - name: Git at Scale
-    href: /azure/devops/git/git-at-scale
+    href: /azure/devops/learn/git/git-at-scale
   - name: How we use Git at Microsoft
-    href: /azure/devops/devops-at-microsoft/use-git-microsoft
+    href: /azure/devops/learn/devops-at-microsoft/use-git-microsoft
   - name: Marketplace extensions
     href: https://marketplace.visualstudio.com/search?target=VSTS&category=Code&sortBy=Downloads
   - name: IDE integration and extension
