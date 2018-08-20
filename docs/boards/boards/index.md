@@ -1,5 +1,5 @@
 ---
-title: Use Kanban boards 
+title: Use Kanban boards to add, update, and review work items
 titleSuffix: Azure Boards and TFS
 description: Work with Kanban boards in Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]  
 
-Get collaboration going by adding to, updating, and then reviewing your Kanban board with others. 
+Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 
 
 
 ## 5-Minute Quickstarts  

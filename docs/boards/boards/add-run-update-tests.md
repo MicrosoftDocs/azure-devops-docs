@@ -87,7 +87,8 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 1. To start adding tests, open the menu for the work item.  
 
-	<img src="_img/i-test-add-test.png" alt="Open the context menu of a backlog item to add inline test case" style="border: 1px solid #C3C3C3;" /> 
+> [!div class="mx-imgBorder"]  
+> ![Open the context menu of a backlog item to add inline test case](_img/i-test-add-test.png)   
 
   Adding inline tests is the same as adding test cases to a test suite. A default test plan and test suite are automatically created under which the manual test cases are grouped.  
 
