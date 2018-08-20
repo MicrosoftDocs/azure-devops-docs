@@ -1,5 +1,5 @@
 ---
-title: Agile at Scale index to content
+title: Plans (Agile at scale)
 titleSuffix: Azure Boards and TFS
 description: Index to topics for how to scale Agile tools in Azure Boards & Team Foundation Server 
 ms.technology: devops-agile
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 10/04/2017
 ---
 
-# Agile at Scale  
+# Plans (Agile at scale) 
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

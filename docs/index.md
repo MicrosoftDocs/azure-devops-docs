@@ -24,7 +24,7 @@ featureFlags:
     <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps Services provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For our on-premises Team Foundation Server, go [here](index-tfs.md).</p>
     <p><i>[What happened to Visual Studio Team Services?](/vsts/user-guide/what-happened-vsts)</i></p>
 <a href="#start"> </a>
-<h2>Start using Azure DevOps</h2>
+<h2>Start using Azure DevOps Services</h2>
 <table border="0" class="fullspan cardsY">
 <tbody style="padding-left:0;">
 <tr>
@@ -44,56 +44,6 @@ featureFlags:
                                         </div>
                                     </div>
 </td>
-<td width="25%">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconBoards40.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3><a href="/vsts/boards/get-started">Start using Azure Boards</a></h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-</td>
-<td width="25%">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconRepos40.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3><a href="/vsts/repos/get-started">Start using Azure Repos</a></h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-</td>
-<td width="25%">
-                                   <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconPipelines40.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3><a href="/vsts/pipelines/get-started/pipelines-get-started">Start using Azure Pipelines</a></h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-</td>
-</tr>
-<tr>
 <td width="25%">
                                    <div class="cardSize">
                                         <div class="cardPadding">
@@ -186,22 +136,21 @@ featureFlags:
 </table>
 
 <a id="devops-services" />
-<h2>Azure DevOps services</h2>
 <table border="0" class="cardsA">
 <tr>
 <td width="33%">
-                                <a href="/vsts/index-boards">
+                                <a href="/vsts/pipelines/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconBoards96.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconPipelines96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Boards</h3>
-                                                    <p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
+                                                    <h3>Azure Pipelines</h3>
+                                                    <p>Manage CI/CD to deploy your code with high-performance pipelines that work with any language, platform, and cloud. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -228,18 +177,18 @@ featureFlags:
                                 </a>
 </td>
 <td width="33%">
-                                <a href="/vsts/index-pipelines">
+                                <a href="/vsts/index-boards">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="_img/index/DevOpsIconPipelines96.svg" alt="" />
+                                                        <img src="_img/index/DevOpsIconBoards96.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure Pipelines</h3>
-                                                    <p>Manage CI/CD to deploy your code with high-performance pipelines that work with any language, platform, and cloud. </p>
+                                                    <h3>Azure Boards</h3>
+                                                    <p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
                                                 </div>
                                             </div>
                                         </div>

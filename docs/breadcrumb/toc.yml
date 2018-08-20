@@ -1,22 +1,10 @@
-- name: Azure DevOps Services & TFS
+- name: Azure DevOps & TFS
   tocHref: /vsts/
   topicHref: /vsts/index
   items:
   - name: Start using Azure DevOps
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
-  - name: Start using Azure Repos
-    tocHref: /vsts/repos/get-started/
-    topicHref: /vsts/repos/get-started/index
-  - name: Start using Azure Boards 
-    tocHref: /vsts/boards/get-started/
-    topicHref: /vsts/boards/get-started/index
-  - name: Start using Azure Pipelines 
-    tocHref: /vsts/pipelines/get-started/
-    topicHref: /vsts/pipelines/get-started/pipelines-get-started
-  - name: Build GitHub projects
-    tocHref: /vsts/open-source/
-    topicHref: /vsts/open-source/get-started/index
   - name: Discover extensions
     tocHref: /vsts/marketplace/
     topicHref: https://marketplace.visualstudio.com/
@@ -32,13 +20,44 @@
   - name: Integrate
     tocHref: /vsts/integrate/
     topicHref: /vsts/integrate/index
-  - name: Extend Analytics with OData
-    tocHref: /vsts/report/extend-analytics/
-    topicHref: /vsts/report/extend-analytics/index
+  - name: Java 
+    tocHref: /vsts/java/
+    topicHref: /vsts/java/index 
+  - name: Azure DevOps demo generator
+    tocHref: /vsts/demo-gen/
+    topicHref: /vsts/demo-gen/index  
+  - name: Azure Boards 
+    tocHref: /vsts/boards/
+    topicHref: /vsts/index-boards
+    items:
+    - name: Start using Azure Boards 
+      tocHref: /vsts/boards/get-started/
+      topicHref: /vsts/boards/get-started/index
+    - name: Boards (Kanban) 
+      tocHref: /vsts/boards/boards/
+      topicHref: /vsts/boards/boards/index
+    - name: Backlogs
+      tocHref: /vsts/boards/backlogs/
+      topicHref: /vsts/boards/backlogs/index
+    - name: Sprints (Scrum)
+      tocHref: /vsts/boards/sprints/
+      topicHref: /vsts/boards/sprints/index
+    - name: Work items
+      tocHref: /vsts/boards/work-items/
+      topicHref: /vsts/boards/work-items/index
+    - name: Queries
+      tocHref: /vsts/boards/queries/
+      topicHref: /vsts/boards/queries/index
+    - name: Plans (Agile at scale)
+      tocHref: /vsts/boards/plans/
+      topicHref: /vsts/boards/plans/index
   - name: Azure Repos
     tocHref: /vsts/repos/
     topicHref: /vsts/index-repos
     items:
+    - name: Start using Azure Repos
+      tocHref: /vsts/repos/get-started/
+      topicHref: /vsts/repos/get-started/index
     - name: Git
       tocHref: /vsts/repos/git/
       topicHref: /vsts/repos/git/index
@@ -50,8 +69,14 @@
     topicHref: /vsts/package/index
   - name: Azure Pipelines
     tocHref: /vsts/pipelines/
-    topicHref: /vsts/index-pipelines
+    topicHref: /vsts/pipelines/index
     items:
+    - name: Build GitHub projects
+      tocHref: /vsts/open-source/
+      topicHref: /vsts/open-source/get-started/index
+    - name: Start using Azure Pipelines 
+      tocHref: /vsts/pipelines/get-started/
+      topicHref: /vsts/pipelines/get-started/pipelines-get-started
     - name: Pipelines
       tocHref: /vsts/pipelines/
       topicHref: /vsts/pipelines/index
@@ -71,36 +96,8 @@
     - name: Unit testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
-  - name: Azure Boards 
-    tocHref: /vsts/boards/
-    topicHref: /vsts/index-boards
-    items:
-    - name: Boards (Kanban) 
-      tocHref: /vsts/boards/kanban/
-      topicHref: /vsts/boards/kanban/index
-    - name: Backlogs
-      tocHref: /vsts/boards/backlogs/
-      topicHref: /vsts/boards/backlogs/index
-    - name: Sprints (Scrum)
-      tocHref: /vsts/boards/scrum/
-      topicHref: /vsts/boards/scrum/index
-    - name: Work items
-      tocHref: /vsts/boards/work-items/
-      topicHref: /vsts/boards/work-items/index
-    - name: Queries
-      tocHref: /vsts/boards/track/
-      topicHref: /vsts/boards/track/index
-    - name: Agile at scale
-      tocHref: /vsts/boards/scale/
-      topicHref: /vsts/boards/scale/index
-  - name: Java 
-    tocHref: /vsts/java/
-    topicHref: /vsts/java/index 
-  - name: Azure DevOps demo generator
-    tocHref: /vsts/demo-gen/
-    topicHref: /vsts/demo-gen/index  
   - name: Analytics
-    tocHref: /vsts/
+    tocHref: /vsts/report/
     topicHref: /vsts/index#devops-services-supplemental
     items:
     - name: Dashboards
@@ -112,6 +109,9 @@
     - name: Power BI
       tocHref: /vsts/report/powerbi/
       topicHref: /vsts/report/powerbi/index
+    - name: Extend Analytics with OData
+      tocHref: /vsts/report/extend-analytics/
+      topicHref: /vsts/report/extend-analytics/index
   - name: Social tools
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-supplemental
@@ -122,6 +122,9 @@
     - name: Notifications
       tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index
+    - name: Navigation basics
+      tocHref: /vsts/project/navigation/
+      topicHref: /vsts/project/navigation/index
     - name: Wikis
       tocHref: /vsts/project/wiki/
       topicHref: /vsts/project/wiki/index
@@ -154,8 +157,8 @@
       tocHref: /vsts/reference/
       topicHref: /vsts/reference/index
     - name: Billing
-      tocHref: /vsts/billing/
-      topicHref: /vsts/billing/index
+      tocHref: /vsts/organizations/billing/
+      topicHref: /vsts/organizations/billing/index
     - name: Manage extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
@@ -164,7 +167,7 @@
       topicHref: /vsts/articles/index
   - name: "TFS administation"
     tocHref: /tfs/server/
-    topicHref: /tfs/index/
+    topicHref: /index-tfs
     items:
     - name: Project Server integration
       tocHref: /vsts/reference/tfs-ps-sync/
@@ -172,3 +175,6 @@
     - name: SQL Server Reporting
       tocHref: /vsts/report/sql-reports/
       topicHref: /vsts/report/sql-reports/index
+    - name: SharePoint Integration
+      tocHref: /vsts/report/sharepoint-dashboards/
+      topicHref: /vsts/report/sharepoint-dashboards/index

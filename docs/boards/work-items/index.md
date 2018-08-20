@@ -11,7 +11,7 @@ ms.author: kaelli
 ms.date: 03/20/2018
 ---
 
-# Work Items
+# Work items
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]   
 

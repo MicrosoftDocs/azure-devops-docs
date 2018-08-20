@@ -49,7 +49,7 @@ featureFlags:
                             <a href="/vsts/boards/sprints/index">Sprints (Scrum)</a><br/>
                             <a href="/vsts/boards/queries/index">Queries</a><br/>
                             <a href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a><br/>
-                            <a href="/vsts/boards/plans/index">Agile at Scale</a><br/>
+                            <a href="/vsts/boards/plans/index">Plans (Agile at scale)</a><br/>
                             <a href="/vsts/project/feedback/index">Request Feedback</a></p>
                         <h3>Office integration tools</h3>
                             <p><a href="/vsts/boards/backlogs/office/bulk-add-modify-work-items-excel">Excel</a><br/>
@@ -65,7 +65,7 @@ featureFlags:
 </td>
 <td width="25%">
                         <h3>Continuous integration & delivery</h3>
-                            <p><a href="/vsts/pipelines/index">Build and release</a><br/>
+                            <p><a href="/vsts/pipelines/index">Build and release pipelines</a><br/>
                             <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
                             <a href="/vsts/deploy-azure/index">Deploy to Azure</a><br/>
                             <a href="/vsts/package/index">Package management</a><br/>
