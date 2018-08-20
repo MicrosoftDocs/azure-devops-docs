@@ -43,7 +43,7 @@ This topic shows you how to:
 
 ## Follow a work item
 
-When you want to track the progress of a single work item, click the ![Follow icon](../_img/icons/follow-icon.png) icon. This signals the system to notify you when changes are made to the work item.  
+When you want to track the progress of a single work item, choose the ![](../_img/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
 
 <img src="_img/follow-work-item.png" alt="Work item form, Follow icon control" style="border: 1px solid #C3C3C3;" /> 
 
@@ -51,12 +51,12 @@ You'll only receive notifications when other members of your team modifies the w
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md)
 
-To stop following changes, click the ![Following icon](../_img/icons/following-icon.png) icon.
+To stop following changes, choose the ![](../_img/icons/following-icon.png) following icon.
  
 <a id="follow-pr"></a>
 ## Follow a pull request 
 
-To track the progress of a single pull request, click the ![Follow icon](../_img/icons/follow-icon.png) option from the context menu. This signals the system to notify you when changes are made to the PR.  
+To track the progress of a single pull request, choose the ![](../_img/icons/actions-icon.png) actions icon for the pull request, and select the ![](../_img/icons/follow-icon.png) **Follow** option. This signals the system to notify you when changes are made to the PR.  
 
 <img src="_img/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />  
 
@@ -64,15 +64,24 @@ You'll only receive notifications when other members of your team modifies the P
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
-To stop following changes, open the PR context menu and click the ![Following icon](../_img/icons/following-icon.png) icon. 
+To stop following changes, open the PR context menu and choose the ![](../_img/icons/following-icon.png) Following icon. 
 
 ## Manage work items that you're following  
 
-You can review and manage all the work items you've selected to follow from the Followed work items page. You access this page from the **Boards>Queries** page. 
+You can review and manage all the work items you've selected to follow.
 
-<img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />  
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
 
-From this view, you can view all items you're following across all projects within the account. Also, you can perform similar actions supported with a query results view, such as:
+# [New navigation](#tab/new-nav)  
+
+::: moniker range="vsts"    
+
+Open **Boards>Queries**, choose **All**, and under **My Queries**, choose **Followed work items**.   
+
+> [!div class="mx-imgBorder"]  
+> ![Boards>Queries>All>Followed work items, new nav](_img/follow-work/following-work-items-vert.png)   
+
+From this view, you can view all items you're following across all projects. Also, you can perform similar actions supported with a query results view, such as:
 - Refresh the view
 - Add or remove visible columns
 - Sort the order of specific columns
@@ -80,18 +89,47 @@ From this view, you can view all items you're following across all projects with
 - Set work item pane
 - Enter full screen mode. 
 
-However, this view isn't based on a query so you can't modify the parameters of the view. 
 
-You can also view and manage work that you're following from your home pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
+You can also view and manage work that you're following from **Boards>Work Items** and pivot to **Following**. 
 
-::: moniker range="vsts"
 > [!div class="mx-imgBorder"]  
-> ![Projects page, Work, Following page](../../user-guide/_img/organization-home-work-following.png)  
-::: moniker-end
+> ![Boards>Queries>All>Followed work items, new nav](_img/follow-work/open-work-items-vert.png)   
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+
+::: moniker-end    
+
+::: moniker range=">= tfs-2017 <= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
+
+
+# [Previous navigation](#tab/previous-nav)
+
+Open **Work>Queries** and choose **Followed work items**.  
+
+<img src="_img/follows-followed-work-items.png" alt="Followed work items, Follow icon control" style="border: 1px solid #C3C3C3;" />  
+
+From this view, you can view all items you're following across all projects. Also, you can perform similar actions supported with a query results view, such as:
+- Refresh the view
+- Add or remove visible columns
+- Sort the order of specific columns
+- Filter results by text or tags 
+- Set work item pane
+- Enter full screen mode. 
+
+::: moniker range="tfs-2018"  
+
+For TFS 2018.2 and later versions, you can view work you're following from the **Work>Work Items** page. 
 ![Projects page, Work, Assigned to me page](../../user-guide/_img/org-hub-tfs/organization-home-work-followed.png) 
-::: moniker-end
+
+::: moniker-end    
+
+::: moniker range=">= tfs-2017 <= tfs-2018"   
+
+You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
+
+::: moniker-end 
+--- 
 
 
 ## Related articles  
