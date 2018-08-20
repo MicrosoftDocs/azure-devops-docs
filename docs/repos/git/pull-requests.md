@@ -24,7 +24,7 @@ topic branches within the same repository or from a branch in a
 [fork](forks.md) of the original repository.
 Reviewers can step through the proposed changes, leave comments, and vote to approve or reject the code.
 
-New to pull requests? [Learn more](/azure/devops/git/git-pull-requests) about how to get feedback with Git pull requests.
+New to pull requests? [Learn more](/azure/devops/learn/git/git-pull-requests) about how to get feedback with Git pull requests.
 
 ## Create a new pull request
 

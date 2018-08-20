@@ -27,7 +27,7 @@ Open Team Explorer through the **View** menu in Visual Studio, or with the **Ctr
 
 Team Explorer and the Git command line work great together. When you make updates and perform commands through one interface, you'll see those changes reflected in the other.
 
-[Git Installation instructions](/azure/devops/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
+[Git Installation instructions](/azure/devops/learn/git/install-and-set-up-git) are available if you don't have Git installed on your computer.
 
 > [!TIP]
 > Windows users: If you aren't using Visual Studio, installing [Git for Windows](https://git-scm.com/download/win) will set up the [Git credential manager for Windows](set-up-credential-managers.md). The credential manager makes it easy to authenticate with your VSTS repos.

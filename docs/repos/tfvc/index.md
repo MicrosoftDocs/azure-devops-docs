@@ -41,6 +41,6 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 ## Resources 
 
-- [What is version control?](/azure/devops/git/what-is-version-control)  
-- [Migrate from TFVC to Git](/azure/devops/git/migrate-from-tfvc-to-git)  
+- [What is version control?](/azure/devops/learn/git/what-is-version-control)  
+- [Migrate from TFVC to Git](/azure/devops/learn/git/migrate-from-tfvc-to-git)  
 - [Learn more about TFVC](overview.md)
