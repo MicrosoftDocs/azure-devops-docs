@@ -7,6 +7,7 @@ ms.technology: devops-analytics
 ms.topic: overview
 ms.manager: abjork
 ms.author: greggboe
+monikerRange: '>=tfs-2013 <= tfs-2017'
 ms.date: 09/28/2017
 ---
 
@@ -22,7 +23,7 @@ The older TFS/SharePoint integration required the TFS Extension for SharePoint t
 
 We are moving away from the tightly coupled integration solution, to a loosely coupled model using public APIs and extensibility frameworks.  The existing integration simply could not be brought into the future.
 
-As we reposition to the future, our integration story will support both TFS and VSTS working with SharePoint Server and SharePoint Online. 
+As we reposition to the future, our integration story will support both Azure DevOps Services and TFS working with SharePoint Server and SharePoint Online. 
 
 ## What features are impacted?
  

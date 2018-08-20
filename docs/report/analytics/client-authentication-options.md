@@ -44,10 +44,10 @@ the **oAuth2** option.
 
 - As part of good password management, these tokens automatically expire so you don't have to remember to change your password
 - Since PATs are a generated password, you won't use a common password as part of your AAC, which means a more limited surface area for attack  
-- If you need to provide a diagnostic trace and forget to replace the value, you can simply revoke the credential thereby maintaining secure access to VSTS.
+- If you need to provide a diagnostic trace and forget to replace the value, you can simply revoke the credential thereby maintaining secure access to Azure DevOps Services.
 
 
-0. Log in to VSTS, open your user profile menu, and select  **Security**.  
+0. Sign in to Azure DevOps Services, open your user profile menu, and select **Security**.  
 
 	![User Profile, My Security menu option](../../_shared/_img/open-security.png)  
 
@@ -67,7 +67,7 @@ the **oAuth2** option.
 
 	![Copy Personal Access Token dialog](_img/client-authentication/copy-personal-access-token.png)  
 
-0. If you need to revoke a token, simply navigate to this page and choose the **Revoke** link. That token will immediately be denied access to VSTS.
+0. If you need to revoke a token, simply navigate to this page and choose the **Revoke** link. That token will immediately be denied access to Azure DevOps Services.
 	
 	These tokens are your identity. When used, the token is acting as you. Keep your tokens secret and treat them like your password. To help keep your token more secure, consider using credential managers so that you don't have to enter your credentials every time you push.  
 

@@ -243,7 +243,7 @@ To copy a configured widget to another team dashboard, choose the ![Actions icon
 ::: moniker range="vsts"
 ## Analytics Service widgets 
 The Analytics Service is in preview and provides access to several widgets. To learn more, see these topics: 
-- [Widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md)
+- [Widgets based on the Analytics Service](../analytics/analytics-widgets.md)
 - [Add an Analytics widget to a dashboard](../analytics/enable-analytics-velocity.md)
 - [What is the Analytics Service?](../analytics/what-is-analytics.md)
 

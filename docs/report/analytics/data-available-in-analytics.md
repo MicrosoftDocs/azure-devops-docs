@@ -24,7 +24,7 @@ The Analytics Service provides the reporting platform for Azure DevOps. **The An
 Currently, you can access the following data from the Analytics Service. This information was last updated: April 4, 2018.
 
 > [!div class="mx-tdBreakAll"]
-> Data | Availability | [Widgets](./analytics-widgets-VSTS.md) > | [OData](../extend-analytics/index.md) | [Power BI](../powerbi/overview.md) |
+> Data | Availability | [Widgets](./analytics-widgets.md) > | [OData](../extend-analytics/index.md) | [Power BI](../powerbi/overview.md) |
 > |-|-|-|-|-|
 > | Work Item Tracking | Available Now | Yes | Yes | Yes |
 > | Automated Testing Data | Target - Q2, 2018 |  |  |  |
@@ -40,4 +40,4 @@ As more data types come online, we will update this page. Look for announcements
 <a id="q-a">  </a>
 ## Try this next
 > [!div class="nextstepaction"]
-> [Dataset design for the Power BI VSTS Connector](../powerbi/data-connector-dataset.md)
+> [Dataset design for the Power BI Azure DevOps Services Connector](../powerbi/data-connector-dataset.md)

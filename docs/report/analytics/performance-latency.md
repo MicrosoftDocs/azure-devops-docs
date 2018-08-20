@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ms.date: 11/13/2017
 ---
 
-# Performance and latency of the Analytics Service for VSTS
+# Performance and latency of the Analytics Service
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
@@ -30,7 +30,7 @@ Using the [recommended query patterns](../extend-analytics/odata-query-guideline
 Some of the entity sets available in Analytics are designed for aggregations.  The service will limit the results from these Entities to a single page for any non-aggregated query as outlined in the [recommended query patterns](../extend-analytics/odata-query-guidelines.md).
 
 ## Latency
-When you use Analytics, you query a curated copy of the data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and greatly reduces the impact reporting scenarios have on VSTS.
+When you use Analytics, you query a curated copy of the data stored in Azure DevOps. The data copy helps optimize read and aggregation performance, and greatly reduces the impact reporting scenarios have on Azure DevOps Services.
 
 Because the data is copied, the Analytics Service is **not a real-time time store**.  Copying the data introduces a 5 to 30 second delay before the data associated with any one change shows up in Analytics. 
 

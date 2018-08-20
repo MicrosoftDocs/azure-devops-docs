@@ -13,13 +13,13 @@ monikerRange: 'vsts'
 ms.date: 3/29/2018
 ---
 
-# Analytics (VSTS) 
+# Analytics 
 
 [!INCLUDE [temp](../../_shared/version-vsts-only.md)]
 
 Analytics provides advanced widgets you can add to a dashboard, Power BI integration for more advanced reporting, and OData access for extensibility. Analytics is the reporting solution for Azure DevOps. 
 
-For more information, read [What is Analytics?](what-is-analytics.md) and [VSTS/TFS Reporting Roadmap](./reporting-roadmap.md).
+For more information, read [What is Analytics?](what-is-analytics.md) and [Reporting roadmap](./reporting-roadmap.md).
 
 <!---
 [!INCLUDE [temp](../_shared/analytics-preview.md)] 
@@ -44,7 +44,7 @@ For more information, read [What is Analytics?](what-is-analytics.md) and [VSTS/
 
 ## Concepts
 - [Data available in the Analytics Service](data-available-in-analytics.md)
-- [Analytics widgets](analytics-widgets-vsts.md)
+- [Analytics widgets](analytics-widgets.md)
 - [What are Analytics views](what-are-analytics-views.md)
 - [Default Analytics views](analytics-default-views.md)
 - [Performance and latency](performance-latency.md)
@@ -68,12 +68,12 @@ Understanding Analytics Service data Acquisition
 -->
 
 ## Resources
-- [Dashboards](../dashboards/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Connect to VSTS using Power BI](../powerbi/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Connect to VSTS using Excel](access-analytics-excel.md)
-- [Power BI (VSTS)](../powerbi/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [Extend Analytics with OData](../extend-analytics/index.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
-- [VSTS/TFS Reporting Roadmap](../analytics/reporting-roadmap.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json)
+- [Dashboards](../dashboards/index.md)
+- [Connect to Azure DevOps Services using Power BI](../powerbi/index.md)
+- [Connect to Azure DevOps Services using Excel](access-analytics-excel.md)
+- [Power BI (Azure DevOps Services)](../powerbi/index.md)
+- [Extend Analytics with OData](../extend-analytics/index.md)
+
 
 
 <!---

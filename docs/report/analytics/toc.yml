@@ -1,4 +1,4 @@
-- name: "Analytics (VSTS)" 
+- name: Analytics
   href: index.md
 - name: Overview
   items:
@@ -31,7 +31,7 @@
   - name: Data available
     href: data-available-in-analytics.md
   - name: Analytics widgets
-    href: analytics-widgets-vsts.md
+    href: analytics-widgets.md
   - name: Default Analytics views
     href: analytics-default-views.md
   - name: Filters applied to historical data
@@ -60,10 +60,10 @@
   items:
   - name: Dashboards
     href: ../dashboards/index.md
-  - name: "Power BI (VSTS)"
+  - name: "Power BI (Azure DevOps Services)"
     href: ../powerbi/index.md
   - name: Extend Analytics with OData
     href: ../extend-analytics/index.md
-  - name: Work Items
+  - name: Work items
     href: ../../boards/work-items/index.md
 

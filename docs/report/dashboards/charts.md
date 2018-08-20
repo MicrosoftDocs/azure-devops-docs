@@ -185,7 +185,7 @@ When a chart contains more than seven items within the data series, values in th
 
 ::: moniker range="vsts"
 ### Widgets and the Analytics Service 
-The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../analytics/analytics-widgets-vsts.md).  
+The Analytics service, which is in preview, provides a number of [additional widgets based on the Analytics Service](../analytics/analytics-widgets.md).  
  
 ::: moniker-end
 

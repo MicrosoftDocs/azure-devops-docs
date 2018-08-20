@@ -196,7 +196,7 @@ your software projects. These include:
 very easy to set up and use.
 
 In addition, with Azure DevOps Services you have access to the following services:
-* [Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets-vsts.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
+* [Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 * [PowerBI integration](../report/powerbi/overview.md) which supports getting Analytics data into Power Bi reports, providing a nice combination of simplicity and power. 
 * [OData support](../report/extend-analytics/index.md) which allows you to directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or their entire Azure DevOps Services organization.
 
