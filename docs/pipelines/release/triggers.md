@@ -65,8 +65,8 @@ when a release is created by a continuous deployment trigger, based on:
 
 * **A predefined schedule**. When you select this option,
   you can select the days of the week and the time of day that
-  Release Management will automatically create a new release. You can configure multiple schedules as required.
-  Note that, with scheduled triggers, a new release is created even if a newer version of artifact is not available since the last release.
+  Release Management will automatically start a new deployment. You can configure multiple schedules as required.
+  Note that, with scheduled triggers, a new deployment is created even if a newer version of artifact is not available.
 
   ![The scheduled trigger conditions settings](_img/trigger-02.png)
 
@@ -97,7 +97,7 @@ when a release is created by a continuous deployment trigger, based on:
   start a release and deployment from the release pipeline
   or from a build summary.
 
-You can combine the automated settings to have releases created
+You can combine the automated settings to have deployments created
 automatically either when a new build is available or according to
 a schedule.
 
