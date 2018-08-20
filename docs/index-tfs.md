@@ -143,7 +143,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="33%">
-                                <a href="/vsts/index-pipelines">
+                                <a href="/vsts/pipelines/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
