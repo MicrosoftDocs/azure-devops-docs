@@ -2,7 +2,7 @@
 title: VSTS Features Timeline
 author: alexcnichols
 ms.author: alexn
-ms.date: 8/3/2018
+ms.date: 8/21/2018
 ms.topic: article
 ms.prod: devops
 ms.technology: vsts-release-notes
@@ -21,13 +21,12 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
+|Work Item support for Markdown editing|Work|2019|
+|Cross organization linking for Work Items|Work|TBD|
 |GVFS - Performance improvements for status|Code|2019|
 |Git Pull Requests – Change target branch for an active pull request|Code|TBD|
 |Git Pull Requests – Improved search/filter options for pull requests|Code|TBD|
 |Visual Studio Git - Stash|Code|N/A|
-|Work Item support for Markdown editing|Work|2019|
-|Cross organization linking for Work Items|Work|TBD|
-|Migration from a Hosted XML processes to an Inherited process|Work|N/A|
 |Configuration as code (YAML) for builds – Generally Available|Build|2019|
 |Hosted build images – Ability to use latest or previous version of image|Build|N/A|
 |Release Management orchestration improvements – Tag based triggers|Release|2019|
@@ -48,7 +47,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 |Analytics - Test Failures report for Build pipelines|Test|2019|
 |Analytics - Test Failures report for Release pipelines|Test|2019|
 |Dashboards – Trend Charts for Work Items - based on Analytics|Reporting|2019|
-|Dashboards – Create dashboard separate from a team|Reporting|2019|
 |[Encryption at rest for disks used by code and work item search](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/)|Admin|N/A|
 |[Conditional Access Policy when using Alternate Authentication (e.g. Personal Access Tokens)](https://blogs.msdn.microsoft.com/devops/2018/01/30/supporting-azuread-conditional-access-policy-across-vsts/)|Admin|N/A|
 |[Improved Alternate Authentication experience](https://blogs.msdn.microsoft.com/devops/2017/07/14/improved-alternate-authentication-experience/)|Admin|TBD|
@@ -62,13 +60,14 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 
 |Feature  |Area  |Server  |
 |---------|---------|---------|
-|GVFS for Mac - Public Preview|Code|N/A|
-|A discussion-centric Work Item form|Work|TBD|
 |TFS Support for Move work item to another team project / Change work item type|Work|2019|
+|A discussion-centric Work Item form|Work|TBD|
+|GVFS for Mac - Public Preview|Code|N/A|
 |Extensible Pool Providers|Build|TBD|
-|Upstreams sources for VSTS feeds across organizations in an enterprise|Package|TBD|
-|Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
+|Upstreams sources for VSTS feeds across organizations in an enterprise|Package|N/A|
 |Analytics - Available for TFS|Reporting|2019|
+|Dashboards - Sprint Burndown Widget based on Analytics|Reporting|2019|
+|Dashboards – Create dashboard separate from a team|Reporting|2019|
 |[Bring multiple organizations under an enterprise](https://blogs.msdn.microsoft.com/devops/2016/01/11/how-we-plan-to-enable-creating-multiple-collections-per-account/)|Admin|N/A|
 
 ## Current features
@@ -85,6 +84,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="6">[21 August 2018](2018/aug-21-vsts.md)</td>
+            <td>Create table of contents for wiki pages</td><td>*2019*</td>
+        </tr>
+        <tr><td>Ease customization by migrating projects to the Inheritance process model</td><td>N/A</td></tr>
+        <tr><td>Chat about the latest status using the improved Microsoft Teams integration</td><td>2017.2</td></tr>
+        <tr><td>Standardize pull request descriptions using templates</td><td>*2019*</td></tr>
+        <tr><td>Perform additional testing using a pull request release trigger</td><td>*2019*</td></tr>
+        <tr><td>Deploy Go apps to Azure Kubernetes Service (AKS) using Azure DevOps Projects</td><td>N/A</td></tr>
         <tr>
             <td rowspan="9">[3 August 2018](2018/aug-03-vsts.md)</td>
             <td>Surface metadata for wiki pages and code preview using YAML tags</td><td>*2019*</td>
