@@ -65,17 +65,17 @@ Make sure that the new owner:
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-organization-ownership.md)
 
-2. To find the current organization owner, go to your Azure DevOps Services organization settings pane.
+2. To find the current organization owner, go to your Azure DevOps Services **Organization settings**.
 
-   ![Organization settings pane](../../_shared/_img/organization-settings-new-ui.png)
+   ![Organization settings pane](../../_shared/_img/settings/open-account-settings.png)
 
-3. Under **Settings**, find the current organization owner.
+3. Find the current organization owner.
 
-   ![Find the current organization owner](../../_shared/_img/organization-owner-new-ui.png)
+   ![Find the current organization owner](_img/change-organization-ownership/find-organization-owner.png)
 
 4. Change the organization owner.
 
-   ![Change current organization owner](_img/change-organization-ownership/vsocontrolpanelchangeowner.png)
+   ![Change current organization owner](_img/change-organization-ownership/change-organization-owner.png)
 
 5. Find and select the new organization owner.
 

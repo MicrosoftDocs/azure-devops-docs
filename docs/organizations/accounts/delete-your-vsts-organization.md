@@ -56,11 +56,15 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 # [New navigation](#tab/new-nav)
 
 1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
-2. Highlight the organization that you want to delete, and select the ![gear icon](../../_img/icons/gear-icon.png) > **Admin settings**.
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+    ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
 
 3. Select **Overview** > **Delete**.
 
-   ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-vsts-organization/organization-overview-settings.png)
+   ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-organization/organization-overview-settings.png)
 
 4. In the resulting dialog box, from the drop-down menu, choose your reason for deleting the organization. Then enter the name of your organization, and select **Delete**.
 
@@ -74,13 +78,13 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 
 1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
 
-2. Choose the ![gear icon](../../_img/icons/gear-icon.png), and then the admin settings icon.
+2. Choose the ![gear icon](../../_img/icons/gear-icon.png), and then **Organization settings**.
 
-   ![Screenshot of Open admin settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
+   ![Screenshot of Open admin settings](../../_shared/_img/settings/open-account-settings.png)
 
 3. Select **Delete **.
 
-   ![Screenshot of Organization settings dialog box, with Delete highlighted](_img/delete-vsts-organization/organization-settings-delete.png)
+   ![Screenshot of Organization settings dialog box, with Delete highlighted](_img/delete-organization/organization-overview-settings.png)
 
 4. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
 

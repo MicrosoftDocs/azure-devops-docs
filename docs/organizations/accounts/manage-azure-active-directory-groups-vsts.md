@@ -86,6 +86,8 @@ and differences in how you
 
 3.  Go to the control panel by selecting the gear icon on the top navigation bar and **Security** on the menu.
 
+    ![Settings, choose security](../../_shared/_img/settings/settings-choose-security.png)
+
 4.	Select the Azure DevOps Services group where you want to add your Azure AD group.
 
     ![Select a Azure DevOps Services group, Members, and Add](_img/manage-azure-ad-groups/vsogroupaddmemberbutton.png)
