@@ -103,7 +103,7 @@ or change them later in Visual Studio options.
 	and your settings roam with you wherever you sign in. 
 
 8.	To view your new Azure DevOps Services organization, 
-	sign in to ```https://{yourorganization}.visualstudio.com```. 
+	sign in to ```https://dev.azure.com/{yourorganization}```. 
 
     [Having browser problems with Azure DevOps Services?](faq-set-up-vs.md#browser-problems)
 

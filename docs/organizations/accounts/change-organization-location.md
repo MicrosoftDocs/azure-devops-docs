@@ -24,7 +24,7 @@ For information on region availability, see [Products available by region](https
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 
 1. Select **Admin settings**.
 
@@ -36,9 +36,9 @@ For information on region availability, see [Products available by region](https
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 
-1. On your **Organization** toolbar, select the gear icon ![gear icon](../../_img/icons/gear-icon.png), and then select **Settings**: `https://{yourorganization}.visualstudio.com/_admin/_home/settings`.
+1. On your **Organization** toolbar, select the gear icon ![gear icon](../../_img/icons/gear-icon.png), and then select **Settings**: `https://dev.azure.com/{yourorganization}/_admin/_home/settings`.
 
 1. The region is listed under **Region**.
 

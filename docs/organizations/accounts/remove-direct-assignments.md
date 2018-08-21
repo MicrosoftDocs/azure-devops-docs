@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/20/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -23,17 +23,44 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 ## Remove assignments
 
-1. Sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-1. Under **Settings**, go to the **Users** tab.
+# [New navigation](#tab/new-nav)
 
-1. Select all users with resources that should be managed only by groups.
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
-1. From the command bar, select **Remove direct assignments**, or right-click and choose the same option from the menu.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+    ![Open admin settings](_img/_shared/open-admin-settings-vert.png)
+
+3. Select the **Users** tab.
+
+   ![Select the users tab
+](_img/remove-direct-assignments/users-tab-vert.png)
+
+4. Select all users with resources that should be managed only by groups.
+
+   ![Select group rules for migration](_img/remove-direct-assignments/choose-remove-direct-assignments-vert.png)
+
+5. To confirm that you want to remove the direct assignments, select **Remove**.
+
+# [Previous navigation](#tab/prev-nav)
+
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
+
+2. Go to your Azure DevOps Services **Users** settings.
+
+   ![Go to users settings](../../_shared/_img/sign-in-go-to-users-settings-horz.png)
+
+3. Select all users with resources that should be managed only by groups.
+
+4. From the command bar, select **Remove direct assignments**, or right-click and choose the same option from the menu.
 
    ![Choose remove direct assignments](_img/remove-direct-assignments/choose-remove-direct-assignments.png)
 
-1. To confirm that you want to remove the direct assignments, select **Remove**.
+5. To confirm that you want to remove the direct assignments, select **Remove**.
+
+---
 
 Direct assignments are removed from the users.
 

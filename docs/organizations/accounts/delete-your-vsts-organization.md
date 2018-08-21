@@ -55,7 +55,7 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
@@ -76,7 +76,7 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose the ![gear icon](../../_img/icons/gear-icon.png), and then **Organization settings**.
 

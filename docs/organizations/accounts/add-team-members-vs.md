@@ -40,11 +40,11 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://<yourorganization>.visualstudio.com`) as *project administrator*, *project collection administrator*, or *organization owner*.
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, or *organization owner*.
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
-2. On the landing page, which is your Projects page `https://<yourorganization>.visualstudio.com/_projects`, select your  project.
+2. On the landing page, which is your Projects page, select your  project.
 
    ![The Projects page](../../_shared/_img/settings/open-project-settings-vert-brn.png)
 
@@ -59,11 +59,11 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://<yourorganization>.visualstudio.com`) as *project administrator*, *project collection administrator*, *or organization owner*.
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`) as *project administrator*, *project collection administrator*, *or organization owner*.
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
-2. On the organization landing page (which is your projects page, `https://<yourorganization>.visualstudio.com/_projects`), find and select your project.
+2. On the organization landing page, which is your projects page,  find and select your project.
 
    ![The Projects list pane](_img/add-team-members/select-team-project-updated-ui.png)
 

@@ -25,7 +25,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 You need Azure DevOps Services [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 
-1. Sign in to your Azure DevOps Services organization, ```https://{yourorganization}.visualstudio.com```.
+1. Sign in to your Azure DevOps Services organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Go to **Extensions**. Then select the extension you want to update.
 

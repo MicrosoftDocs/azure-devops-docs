@@ -28,11 +28,11 @@ If users no longer require access to a project or your Azure DevOps Services org
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization: ```https://{yourorganization}.visualstudio.com```.
+1. Sign in to your Azure DevOps Services organization: ```https://dev.azure.com/{yourorganization}```.
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Go to your Azure DevOps Services admin settings.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
     ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
@@ -50,12 +50,12 @@ If users no longer require access to a project or your Azure DevOps Services org
 
 6. If you deleted paid users who had Basic features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
 
-   > To reduce or cancel users for the next month, you must make updates before the last day of the current month.
-   > Your bill won't show the changes until the next month because paid users are monthly purchases.
+   To reduce or cancel users for the next month, you must make updates before the last day of the current month.
+   Your bill won't show the changes until the next month because paid users are monthly purchases.
 
 # [Previous navigation](#tab/prev-nav)
 
-1. Sign in to your Azure DevOps Services organization: ```https://{yourorganization}.visualstudio.com```.
+1. Sign in to your Azure DevOps Services organization: ```https://dev.azure.com/{yourorganization}```.
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-add-delete-users.md#ChooseOrgAcctMSAcct)
 
@@ -74,8 +74,8 @@ If users no longer require access to a project or your Azure DevOps Services org
 
 6. If you deleted paid users who had Basic features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
 
-   > To reduce or cancel users for the next month, you must make updates before the last day of the current month.
-   > Your bill won't show the changes until the next month because paid users are monthly purchases.
+   To reduce or cancel users for the next month, you must make updates before the last day of the current month.
+   Your bill won't show the changes until the next month because paid users are monthly purchases.
 
 ---
 

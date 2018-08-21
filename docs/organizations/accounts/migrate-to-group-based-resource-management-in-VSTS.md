@@ -26,7 +26,7 @@ The most important thing is to avoid a situation where migration to group-based 
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
@@ -47,7 +47,7 @@ The most important thing is to avoid a situation where migration to group-based 
 
 # [Previous navigation](#tab/prev-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 1. Go to the **Users** page. Select **Group rules**.
 
    ![Select group rules for migration](_img/migrate-to-group-based-resource-management/choose-group-rules-on-users-page.png)

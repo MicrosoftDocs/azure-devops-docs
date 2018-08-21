@@ -31,13 +31,13 @@ For examples of using PATs, see [Git credential managers](../../repos/git/set-up
 
 ## Frequently asked questions  
 
-### Q: What is my Azure DevOps Services URL?
+### What is my Azure DevOps Services URL?
 
-**A:** https://{yourorganization}.visualstudio.com, for example.
+https://dev.azure.com/{yourorganization}
 
-### Q: What notifications might I receive about my PAT?
+### What notifications might I receive about my PAT?
 
-**A:** Users receive two notifications during the lifetime of a PAT, one at creation and the other 7 days approaching the expiration.
+Users receive two notifications during the lifetime of a PAT, one at creation and the other 7 days approaching the expiration.
 
 Here's the notification at PAT creation:
 
@@ -47,9 +47,9 @@ Here's the notification that a PAT is nearing expiration:
 
 ![PAT nearing expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
 
-### Q: What do I do if I believe that someone other than me is creating access tokens on my organization?
+### What do I do if I believe that someone other than me is creating access tokens on my organization?
 
-**A:** If you get a notification that a PAT was created and you don't know what caused this, keep in mind that some actions can automatically create a PAT on your behalf. For example:
+If you get a notification that a PAT was created and you don't know what caused this, keep in mind that some actions can automatically create a PAT on your behalf. For example:
 
 - Connecting to a Azure DevOps Services Git repo through git.exe. This creates a token with a display name like "git: https://MyOrganization.visualstudio.com/ on MyMachine."
 - Setting up an Azure App Service web app deployment. This creates a token with a display name like "Service Hooks :: Azure App Service :: Deploy web app."
