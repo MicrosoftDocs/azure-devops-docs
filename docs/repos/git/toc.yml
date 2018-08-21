@@ -71,6 +71,8 @@
     items:
     - name: Review code with pull requests
       href: pull-requests.md
+    - name: Pull request templates
+      href: pull-request-templates.md
     - name: Squash merge pull requests
       href: merging-with-squash.md
     - name: Extend pull request workflows with pull request status
