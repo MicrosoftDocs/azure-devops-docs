@@ -21,7 +21,7 @@ Universal Packages store one or more files together in a single unit that has a 
 
 ## Prerequisites
 
-1. Download [this private build](https://1drv.ms/u/s!AuzH567rcbHhv5JLiqDK0Csb1LT80g) of the VSTS CLI and install it.
+1. Download and install latest [VSTS CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
 2. Using the onboarding instructions you were emailed, let us know your VSTS account name; this is how we'll enable the preview for your account.
 
 ## Prepare files for publishing
