@@ -63,6 +63,10 @@ For now, TSTUs are primarily focused on Azure SQL Database DTUs, since Azure SQL
 A single TSTU per five minutes is the average load we expect a single normal user of Azure DevOps Services to generate. Normal users will also generate spikes in load. These will typically
 be 10 or fewer TSTUs per five minutes, but will less frequently go as high as 100 TSTUs. The global consumption limit is 200 TSTUs within a sliding five-minute window.
 
+## Pipelines
+
+We take a similar approach to rate limiting in Azure Pipelines. Since definitions are not associated to a single user like other activities, each definition is treated as an individual entity with its own resource consumption tracked. Just like the global consumption limit for users, we apply a 200 TSTU limit for an individual definition in a sliding 5-minute window. Even if build agents are self-hosted, there could be load on VSTS resources for operations such as git clone. If a definition is delayed or blocked due to rate limiting, a message will appear in the attached logs.
+
 <!---
 ###Work item tracking request limits
 This limit restricts individual users to 5,000 work item tracking (WIT) commands per hour per organization. When this rate is exceeded, additional WIT commands will be blocked. When
