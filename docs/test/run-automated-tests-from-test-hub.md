@@ -80,9 +80,14 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 
    [How do I pass parameters to my test code from a build or release pipeline?](../pipelines/test/reference-qa.md#pass-params)
 
-1. To configure the **Visual Studio Test** task and the release pipeline,
-   start by assigning meaningful names to the release pipeline and stage.
-   Then select the **Visual Studio Test** task and configure it as follows:
+1. Assign meaningful names to the release pipeline and stage as required.
+
+1. You need the Visual Studio Test Platform to be installed on the agent computer.
+   If Visual Studio is already installed on the agent computer, you can skip this step.
+   If not, you must add the [Visual Studio Test Platform Installer task](../pipelines/tasks/test/visual-studio-test-agent-deployment.md)
+   to the pipeline definition.
+
+1. Add the [Visual Studio Test task](../pipelines/tasks/test/vstest.md) to the release pipeline and configure it as follows:
  
    * Verify that version 2 of the Visual Studio Test task is selected.
      The version number is shown in the drop-down list at the top left
@@ -94,6 +99,10 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
      [What does this setting mean?](../pipelines/test/reference-qa.md#faq-ondemandruns) 
 
      ![Checking the test selection method setting](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-02.png) 
+
+   * For the **Test platform version** setting, select **Installed by Tools Installer**. 
+
+     ![Setting the installer option](_img/run-automated-tests-from-test-hub/set-installer.png) 
 
    * If you have UI tests that run on **physical browsers** or **thick clients**,
      ensure that the agent is set to run as an interactive process with
