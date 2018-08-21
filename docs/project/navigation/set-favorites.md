@@ -23,6 +23,33 @@ You can set favorites for yourself or your team. Team favorites are a quick way 
 
 You can set favorites for the following artifacts from the indicated page. 
 
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+
+# [New navigation](#tab/new-nav)  
+
+::: moniker range="vsts"
+
+> [!div class="mx-tdCol2BreakAll"]        
+> |Service/area |     Artifacts        | Page |
+> |---------------|---------|---------| 
+> | Organization & projects | Projects and teams | **Projects**  (personal favorites only)  |  
+> | Dashboard | Team dashboards  | **Overview>Dashboards**  | 
+> | Code | Repositories | **Repos>Branches**  (personal favorites only) | 
+> | Work, Agile tools for a team | Backlogs, boards, sprint backlogs, sprint taskboards | **Boards>Boards** or **Backlogs**, or **Sprints** | 
+> | Work  | Queries | **Boards>Queries** |
+> | Work | Delivery plans |  **Boards>Plans** (personal favorites only, requires installation of the [Delivery Plans extension](../../boards/plans/review-team-plans.md)) | 
+> | Build and Release | Pipeline definitions | **Pipelines>Builds** or **Releases**  | 
+> | Test | Test plans | **Test Plans>Test Plans** (personal favorites only) |
+
+::: moniker-end    
+
+::: moniker range=">= tfs-2017 <= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
+
+
+# [Previous navigation](#tab/previous-nav)
+
 ::: moniker range="vsts"
 
 > [!div class="mx-tdCol2BreakAll"]        
@@ -31,7 +58,7 @@ You can set favorites for the following artifacts from the indicated page.
 > | Organization & projects | Projects and teams | **Projects**  (personal favorites only)  |  
 > | Dashboard | Team dashboards  | **Dashboards**  | 
 > | Code | Repositories | **Code>Branches**  (personal favorites only) | 
-> | Work, Agile tools for a team | Backlogs, boards, sprint backlogs, sprint taskboards | **Work>Queries** (requires enabling the [**New Navigation** or **New Navigation**](preview-features.md)) | 
+> | Work, Agile tools for a team | Backlogs, boards, sprint backlogs, sprint taskboards | **Work>Queries** | 
 > | Work  | Queries | **Work>Queries** |
 > | Work | Delivery plans |  **Work>Plans** (personal favorites only, requires installation of the [Delivery Plans extension](../../boards/plans/review-team-plans.md)) | 
 > | Build and Release | Pipeline definitions | **Build & Release>Build** or **Release**  | 
@@ -55,7 +82,7 @@ You can set favorites for the following artifacts from the indicated page.
 
 ::: moniker-end
 
-
+---
 
 ## Favorite a project or team  
 

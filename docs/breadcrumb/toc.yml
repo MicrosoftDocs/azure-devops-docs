@@ -2,6 +2,9 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items:
+  - name: Navigation basics
+    tocHref: /vsts/project/navigation/
+    topicHref: /vsts/project/navigation/index
   - name: Start using Azure DevOps
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
@@ -122,9 +125,6 @@
     - name: Notifications
       tocHref: /vsts/notifications/
       topicHref: /vsts/notifications/index
-    - name: Navigation basics
-      tocHref: /vsts/project/navigation/
-      topicHref: /vsts/project/navigation/index
     - name: Wikis
       tocHref: /vsts/project/wiki/
       topicHref: /vsts/project/wiki/index

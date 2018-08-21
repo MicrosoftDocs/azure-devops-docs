@@ -1,4 +1,4 @@
-- name: Navigation Basics 
+- name: Navigation basics 
   href: index.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json 
   items:
   - name: Open a service, page, or settings
@@ -11,7 +11,7 @@
     href: go-to-project-repo.md 
   - name: Enable a preview feature  
     href: preview-features.md  
-  - name: Work with Favorites 
+  - name: Work with favorites 
     href: set-favorites.md  
   - name: Work across projects
     href: work-across-projects.md   
