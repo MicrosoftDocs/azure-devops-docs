@@ -62,7 +62,7 @@ Manage billing
 
 Manage Marketplace extensions
 
-* [Change the number of paid users for a Azure DevOps Services extension](change-number-paid-extension-users.md)
+* [Change the number of paid users for an Azure DevOps Services extension](change-number-paid-extension-users.md)
 * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 * [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)
 * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json&view=vsts)

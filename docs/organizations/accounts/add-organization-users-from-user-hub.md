@@ -1,6 +1,6 @@
 ---
 title: Add organization users for Azure DevOps Services
-description: How to add users for a Azure DevOps Services organization or project
+description: How to add users for an Azure DevOps Services organization or project
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-accounts

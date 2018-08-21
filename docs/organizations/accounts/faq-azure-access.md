@@ -75,7 +75,7 @@ you can assign these permissions to the Azure DevOps Services group instead. Azu
 No, because these groups are created and managed in Azure. Azure DevOps Services doesn't store or sync member status for Azure AD groups. To manage Azure AD groups, use the [Azure portal](https://portal.azure.com), Microsoft Identity Manager (MIM), 
 or the group management tools that your organization supports.
 
-### How do I tell the difference between a Azure DevOps Services group and an Azure AD group?
+### How do I tell the difference between an Azure DevOps Services group and an Azure AD group?
 
 On the group's identity card, check the group's source.
 
@@ -256,7 +256,7 @@ See the [Azure DevOps Services billing FAQ](../billing/vsts-billing-faq.md).
 
 ### Why is my Azure DevOps Services organization already connected to a directory? Can I change that directory?
 
-Your Azure DevOps Services organization was connected to a directory when the organization owner created the organization, or sometime after that. When you create a Azure DevOps Services organization with a work or school account, your Azure DevOps Services organization is automatically connected to the directory that manages that work or school account. You can [disconnect your Azure DevOps Services organization](disconnect-organization-from-aad.md) from this directory, and reconnect to another directory. You might have to migrate some users.
+Your Azure DevOps Services organization was connected to a directory when the organization owner created the organization, or sometime after that. When you create an Azure DevOps Services organization with a work or school account, your Azure DevOps Services organization is automatically connected to the directory that manages that work or school account. You can [disconnect your Azure DevOps Services organization](disconnect-organization-from-aad.md) from this directory, and reconnect to another directory. You might have to migrate some users.
 
 <a name="AlternateCredentials"></a>
 

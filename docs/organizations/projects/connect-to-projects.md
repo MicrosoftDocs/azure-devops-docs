@@ -196,7 +196,7 @@ Your client remembers the set of connections you've configured. You can quickly 
 
 	![Connect to Team Foundation Server dialog box](_img/connect-projects-tfs/IC719958.png) 
 
-2. Sign in using a valid Microsoft account &mdash; an account that is associated with a Azure DevOps Services or TFS project. 
+2. Sign in using a valid Microsoft account &mdash; an account that is associated with an Azure DevOps Services or TFS project. 
 
 ::: moniker-end
 

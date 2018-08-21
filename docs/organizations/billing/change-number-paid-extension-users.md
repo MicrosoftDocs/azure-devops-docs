@@ -1,6 +1,6 @@
 ---
-title: Change the number of paid users for a Azure DevOps Services extension
-description: Increase or decrease the number of paid users for a Azure DevOps Services feature or extension as your team grows or gets smaller
+title: Change the number of paid users for an Azure DevOps Services extension
+description: Increase or decrease the number of paid users for an Azure DevOps Services feature or extension as your team grows or gets smaller
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: efbb3c0f-3128-4b34-bd3b-82f31677293f
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Change the number of paid users for a Azure DevOps Services extension
+# Change the number of paid users for an Azure DevOps Services extension
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -42,7 +42,7 @@ You need Azure DevOps Services [project collection administrator or organization
 The number of paid extension users is updated.
 
 > [!NOTE]
-> To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension). [Change the number of paid users for a Azure DevOps Services extension](#change-the-number-of-paid-users-for-a-vsts-extension).
+> To stop paying for an extension, [reduce the number of paid users to zero (0)](#change-the-number-of-paid-users-for-a-vsts-extension). [Change the number of paid users for an Azure DevOps Services extension](#change-the-number-of-paid-users-for-a-vsts-extension).
 
 ## Next steps
 

@@ -28,7 +28,7 @@ You will:
 ## Prerequisites
 
 * An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
-* A Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
+* An Azure DevOps organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137). If your team already has one, then make sure you are an administrator of the project you want to use.
 * A SQL API based Cosmos DB instance.  If you don't have one, you can follow the initial steps in [this tutorial](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet) to create a Cosmos DB instance and collection.
 
 ## Clone a sample Cosmos DB and Azure Web App to your repository

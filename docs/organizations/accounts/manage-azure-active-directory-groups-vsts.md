@@ -44,11 +44,11 @@ and differences in how you
 ## Prerequisites
 
 * Your Azure DevOps Services organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA)
-* You must be a Azure DevOps Services project administrator, project collection administrator, or organization owner. You must also have at least Basic access, not Stakeholder.
+* You must be an Azure DevOps Services project administrator, project collection administrator, or organization owner. You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, you must have Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
 * Be aware that Azure AD changes might take up to 24 hours to be visible in Azure DevOps Services.
 
-##	Add an Azure AD group to a Azure DevOps Services group
+##	Add an Azure AD group to an Azure DevOps Services group
 
 [!INCLUDE [temp](../../_shared/new-navigation.md)]
 
@@ -90,7 +90,7 @@ and differences in how you
 
 4.	Select the Azure DevOps Services group where you want to add your Azure AD group.
 
-    ![Select a Azure DevOps Services group, Members, and Add](_img/manage-azure-ad-groups/vsogroupaddmemberbutton.png)
+    ![Select an Azure DevOps Services group, Members, and Add](_img/manage-azure-ad-groups/vsogroupaddmemberbutton.png)
 
 5.	Find the Azure AD user or group that you want to add. Just start typing the name, alias, 
 or display name. Then select it. You can get more details about a group and its members by choosing the contact card icon to the right of the name.

@@ -1,17 +1,17 @@
 ---
-title: DevOps overview for VSTS and TFS    
-description: Guide to getting started using DevOps and Agile tools provided by Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: DevOps overview for Azure DevOps Services and TFS    
+description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-new-user  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
 ms.manager: douge
 ms.author: kaelli
-ms.date: 08/08/2018
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2013'
 ---
 
 
-# DevOps overview for VSTS and TFS
+# DevOps overview for Azure DevOps Services and TFS
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -19,13 +19,13 @@ Use our integrated tool set to speed the development and delivery of your softwa
  
 ![Continuous planning and delivery](_img/features/alm-devops-continuous-planning-delivery-code-test-analytics.png)  
 
-VSTS and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Team Foundation Server (TFS), when you want to maintain your data within your network. 
+Azure DevOps Services and Azure cloud services help remove barriers between teams, encourage collaboration, and improve the flow of value to your customers. Or, use our on-premises server, Team Foundation Server (TFS), when you want to maintain your data within your network. 
 
-Both options are enterprise-ready, supporting teams of any size, from tens to thousands. VSTS provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24-7 operations team, and available in local data centers around the world.
+Both options are enterprise-ready, supporting teams of any size, from tens to thousands. Azure DevOps Services provides a scalable, reliable, and globally available hosted service. It is backed by a 99.9% SLA, monitored by our 24-7 operations team, and available in local data centers around the world.
 
 Also, you can quickly expand the power of these tools through integration with other services and tools using service hooks and extensions.  
 
-For the key differences between TFS and VSTS, see [About VSTS and Team Foundation Server](about-vsts-tfs.md).
+For the key differences between TFS and Azure DevOps Services, see [About Azure DevOps Services and Team Foundation Server](about-vsts-tfs.md).
 
 ## Get started in the cloud or on-premises
 
@@ -33,21 +33,21 @@ Whether you work in the cloud, on-premises, or a hybrid of each, you have a comp
 
 ### Work in the cloud
 
-Choose VSTS when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
+Choose Azure DevOps Services when you want quick setup, maintenance-free operations, easy collaboration across domains, elastic scale, and rock solid security. You'll also have access to cloud load testing, cloud build servers, and application insights. [Small teams can start for free!](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)  
 
-[![Sign up for VSTS](_img/overview/vsts-setup-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](code-with-git.md)   
+[![Sign up for Azure DevOps Services](_img/overview/vsts-setup-1.png)](sign-up-invite-teammates.md)[![Add code to repository](_img/overview/vsts-setup-4.png)](code-with-git.md)   
 
 ### Work on-premises
 
 Choose on-premises TFS when you need your data to stay within your network or you want access to SharePoint sites and SQL Server reporting services that integrate with TFS data and tools.  
 
-[![Install TFS](_img/overview/tfs-setup-1.png)](/tfs/server/install/single-server)[![Create a team project](_img/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/tfs/server/admin/backup/back-up-restore-tfs)
+[![Install TFS](_img/overview/tfs-setup-1.png)](/tfs/server/install/single-server)[![Create a project](_img/overview/tfs-setup-2.png)](../organizations/projects/create-project.md)[![Add team members](_img/overview/tfs-setup-3.png)](../organizations/security/add-users-team-project.md)[![Configure a backup schedule](_img/overview/tfs-setup-4.png)](/tfs/server/admin/backup/back-up-restore-tfs)
  
 <a id="add-code">  </a>
 
 ## Develop code using your IDE of choice
 
-VSTS supports two types of version control Git and Team Foundation Version Control (TFVC). Use Git, Team Foundation version control (TFVC) or both to store code for your app and give you access to different versions of your code. 
+Azure DevOps Services supports two types of version control Git and Team Foundation Version Control (TFVC). Use Git, Team Foundation version control (TFVC) or both to store code for your app and give you access to different versions of your code. 
 
 Depending on whether you use Git or TFVC as a repo, you can develop your code in Android Studio, Eclipse, IntelliJ, Visual Studio, Visual Studio Code, or Xcode.  
 
@@ -115,9 +115,9 @@ As your team grows, your tools will grow with you. You can easily add teams whic
  
 ## Related articles
 
-Once you've signed up for VSTS or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).
+Once you've signed up for Azure DevOps Services or installed TFS, you'll want to get familiar with the [web portal and working in the user and admin contexts](../project/navigation/index.md).
 
-- [About VSTS and Team Foundation Server](about-vsts-tfs.md)
+- [About Azure DevOps Services and Team Foundation Server](about-vsts-tfs.md)
 - [Key concepts](concepts.md) 
 - [Essential services](services.md)
 - [Client-server tools](tools.md)
@@ -127,20 +127,20 @@ Once you've signed up for VSTS or installed TFS, you'll want to get familiar wit
 ### TFS updates
 
 - [What's new](/tfs/server/whats-new)
-- [Migrate data from TFS to VSTS](../articles/migrate-to-vsts-from-tfs.md)
+- [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md)
 
 ### Pricing, costs, and licenses</span>
 
-[VSTS Pricing](https://visualstudio.microsoft.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.
+[Azure DevOps Services Pricing](https://visualstudio.microsoft.com/team-services/pricing/) provides per user costs. Small teams (5 users or fewer) can start for free. Unlimited Visual Studio subscribers are free.
 
 On-premises TFS provides three access levels: [Stakeholder, Basic, and Advanced](../organizations/security/change-access-levels.md). You don't need to buy additional licenses for Visual Studio subscribers. Use the [Team Foundation Server pricing page](https://visualstudio.microsoft.com/team-services/tfs-pricing) to plan your licensing requirements.
 
 
 ### Extensibility: Create first-class integration experiences
 
-Our extensibility framework enables you to build integrations directly within VSTS or TFS to create first-class, seamless connections between different tools and services.  
+Our extensibility framework enables you to build integrations directly within Azure DevOps Services or TFS to create first-class, seamless connections between different tools and services.  
 
-With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the VSTS web portal.  
+With Marketplace extensions (currently in private preview), you can create first-class integration experiences, such as a simple context menu or toolbar action. Or, you can create a complex, powerful full UI experience that seamlessly lights up within the Azure DevOps Services web portal.  
 
 - [Find marketplace extensions](../marketplace/index.md)
 - [Get extensions](../marketplace/install-vsts-extension.md)</li>
@@ -148,9 +148,9 @@ With Marketplace extensions (currently in private preview), you can create first
 - [Get started with REST APIs](../integrate/get-started/rest/basics.md)
 
  
-Service hooks enable integration scenarios between other applications and VSTS or your on-premises TFS by subscribing to events instead of constantly polling for them. Service hooks provide a more efficient way to drive activities when events happen in your team projects. For example, you can send a push notification to your team's mobile devices when a build fails, or create a card in Trello when a work item is created. Some of the services you can easily integrate with are UserVoice, Zendesk, Trello, Slack, and HipChat.
+Service hooks enable integration scenarios between other applications and Azure DevOps Services or your on-premises TFS by subscribing to events instead of constantly polling for them. Service hooks provide a more efficient way to drive activities when events happen in your projects. For example, you can send a push notification to your team's mobile devices when a build fails, or create a card in Trello when a work item is created. Some of the services you can easily integrate with are UserVoice, Zendesk, Trello, Slack, and HipChat.
 
-Industry-standard RESTful APIs extend the power of VSTS and TFS from your apps and services. With them, you can integrate from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and more.  
+Industry-standard RESTful APIs extend the power of Azure DevOps Services and TFS from your apps and services. With them, you can integrate from virtually any device, platform, or technology stack, including Android, iOS, Node.js, .NET, and more.  
 
 
 ### Analytics: Monitor your apps to gain insight  

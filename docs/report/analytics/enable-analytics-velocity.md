@@ -26,7 +26,7 @@ In this topic we walk you through the steps for adding the Analytics-based Veloc
 
 ## Prerequisites
 
-- You must have a project defined for a Azure DevOps Services organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).
+- You must have a project defined for an Azure DevOps Services organization. If you don't have one, see [Sign up for free](../../user-guide/sign-up-invite-teammates.md).
 - You will have to have defined several work items. See [Plan and track work](../../user-guide/plan-track-work.md). 
 
 

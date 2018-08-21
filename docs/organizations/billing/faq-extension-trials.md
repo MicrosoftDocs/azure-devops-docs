@@ -21,7 +21,7 @@ monikerRange: 'vsts'
 
 ## Trial basics 
 
-### Q: Is there a Azure DevOps Services organization trial? 
+### Q: Is there an Azure DevOps Services organization trial? 
 
 A: Instead of offering an organization trial, Azure DevOps Services provides an ongoing **free tier** of service. It includes the following features so that customers can try out the service: 
 * 5 Azure DevOps Services users: Basic.

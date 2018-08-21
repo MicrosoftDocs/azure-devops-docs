@@ -1,6 +1,6 @@
 ---
 title: Sign up and invite teammates
-titleSuffix: DevOps   
+titleSuffix: Azure DevOps Services   
 description: Quickstart guide to signing up and inviting others to join a team project in Azure DevOps
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -13,9 +13,9 @@ monikerRange: 'vsts'
 ---
 
 
-# Sign up for a free DevOps organization and invite others to join your team
+# Sign up for a free Azure DevOps Services organization and invite others to join your team
 
-**VSTS**
+
  
 [!INCLUDE [acquisition-intro-devops](../_shared/acquisition-intro-devops.md)]
 
@@ -34,5 +34,5 @@ monikerRange: 'vsts'
 > or 
 > [Plan and track work](plan-track-work.md) 
 
-For more information on managing users and organization access, see [Add organization users for VSTS](../organizations/accounts/add-organization-users-from-user-hub.md).
+For more information on managing users and organization access, see [Add organization users for Azure DevOps Services](../organizations/accounts/add-organization-users-from-user-hub.md).
  
