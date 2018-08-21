@@ -28,6 +28,23 @@ This page walks through features that non-members can't access or that work diff
 
 A project member has access to features based on the access level assigned to them. Non-members are granted limited access automatically. The following user interface elements are hidden for non-members: 
 
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
+
+# [New navigation](#tab/new-nav)  
+
+* **Boards**: **Work items** are available, but **Backlogs**, **Boards**, **Sprints**, **Queries**, and **Plans** are hidden. 
+* **Repos**: Team Foundation Version Control (TFVC) repositories are hidden 
+* **Pipelines**: **Builds** and **Releases** are available, but **Library**, **Task Groups**, **Deployment Groups**, **Packages**, and XAML build system are hidden.
+	* Pipeline and task editors for build and release pipelines are unavailable  
+	* Only the new **Releases*** page, which is in Public preview, is available.
+* **Test Plans**: The **Test Plans** hub and its associated manual and cloud load testing features are hidden.
+* **Analytics**: The **Analytics** hub is hidden, and the Analytics OData feed is not supported for non-members. 
+* Settings and administrative pages are hidden. 
+* Paid extensions are hidden.
+
+
+# [Previous navigation](#tab/previous-nav)
+
 * **Code**: Team Foundation Version Control (TFVC) repositories are hidden 
 * **Work**: **Work items** are available, but **Backlogs**, **Boards**, **Sprints**, **Queries**, and **Plans** are hidden. 
 * **Build and Release**: **Builds** and **Releases** are available, but **Library**, **Task Groups**, **Deployment Groups**, **Packages**, and XAML build system are hidden.
@@ -38,7 +55,10 @@ A project member has access to features based on the access level assigned to th
 * Settings and administrative pages are hidden. 
 * Paid extensions are hidden.
 
-<!--- TBD, A note should be entered here when the Free access to pipelines for Stakeholders account-level preview feature is available --> 
+---
+
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Pipeline** features. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md). 
 
 
 In addition, non-members have no access or limited access to the following features: 

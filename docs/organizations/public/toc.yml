@@ -49,7 +49,7 @@
   - name: Feature differences for non-members
     href: feature-differences.md 
   - name: Extensions and public project support 
-    href: ../../extend/develop/public-project.md
+    href: ../../extend/develop/public-project.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Git Repositories
