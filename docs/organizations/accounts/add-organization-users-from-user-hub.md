@@ -70,7 +70,7 @@ To give other users access to your organization, add their email addresses.
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
-    ![Open admin settings](_img/_shared/open-admin-settings-vert.png)
+    ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
  
 3. Select **Users** and then select **Add new users** to open the form.
 
@@ -91,16 +91,18 @@ To give other users access to your organization, add their email addresses.
 
 # [Previous navigation](#tab/previous-nav)
 
-1. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png), the **Settings** icon, and select **Organization Settings**.
+1. Sign in to your Azure DevOps Services organization (`https://<yourorganization>.visualstudio.com`).
 
-   ![Open Organization Settings](../../user-guide/_img/sign-up/open-organization-settings.png)
+2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png), the **Settings** icon, and select **Organization Settings**.
+
+   ![Open Organization Settings](../../_shared/_img/settings/open-account-settings.png)
 
 2. Select **Users** and then select **Add new users** to open the form.
 
    > [!div class="mx-imgBorder"]  
    >![Open Add new users dialog box](../../user-guide/_img/sign-up/add-new-users.png)
 
-3. Fill out the form.
+3. Complete the form.
 
    ![Web portal, organization admin context, Add new users dialog box](../../user-guide/_img/invite-users-add-user-dialog.png)
 

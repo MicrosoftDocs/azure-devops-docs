@@ -47,51 +47,87 @@ Before you begin, do the following:
 
 2. Ensure that the following is true about each user who performs the connection:
 
-    * The user exists in Azure AD as a member.
-    * The user is a *project collection administrator* or *owner* of [the Azure DevOps Services organization](../security/lookup-organization-owner-admin.md).
-    * The user is not using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. You must use a single identity that spans both applications (MSA that's in Azure AD), rather than two separate identities using the same email.
+* The user exists in Azure AD as a member.
+* The user is a *project collection administrator* or *owner* of [the Azure DevOps Services organization](../security/lookup-organization-owner-admin.md).
+* The user is not using the Microsoft account identity that matches the Azure AD identity. For example, if the Microsoft account that users are currently using is *jamalhartnett@fabrikam.com*, the Azure AD identity they'll use after connecting is also *jamalhartnett@fabrikam.com*. You must use a single identity that spans both applications (MSA that's in Azure AD), rather than two separate identities using the same email.
 
-      If the email addresses are the same, do the following. If the addresses are not the same, continue on to connect your Azure DevOps Services organization to your Azure AD.
+    If the email addresses are the same, do the following. If the addresses are not the same, continue on to connect your Azure DevOps Services organization to your Azure AD.
 
-      a. [Create a new MSA](https://signup.live.com/) (for example, *Fabrikam@outlook.com*). This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
+  a. [Create a new MSA](https://signup.live.com/) (for example, *Fabrikam@outlook.com*). This account is only temporary and can be [deleted later](#optional-close-the-temporary-msa-if-you-created-one).
 
-      b. Sign in to your Azure DevOps Services organization as a *project collection administrator*, and [add the new user](add-organization-users-from-user-hub.md) as a member of the organization.
+    b. Sign in to your Azure DevOps Services organization as a *project collection administrator*, and [add the new user](add-organization-users-from-user-hub.md) as a member of the organization.
 
-      c. Sign in to the [Azure portal](https://portal.azure.com/), and add the new user as a B2B guest of Azure AD.  
+    c. Sign in to the [Azure portal](https://portal.azure.com/), and add the new user as a B2B guest of Azure AD.  
         An email invitation is sent to the new user.
 
-      d. Go to your email invitations from Azure and select **Call-To-Action** in each message.  
-        
-      e. Select **Next/Continue** on a few pages to fully register the new user.
+     d. Go to your email invitations from Azure and select **Call-To-Action** in each message.  
+    
+    e. Select **Next/Continue** on a few pages to fully register the new user.
 
-      f. Sign in to your Azure DevOps Services organization as the new user.
+    f. Sign in to your Azure DevOps Services organization as the new user.
 
-      g. Go to **Settings** in Azure DevOps Services as a *project collection administrator* and, after you've signed in as the new user, change the owner of the organization to the new user.
+    g. Go to **Settings** in Azure DevOps Services as a *project collection administrator* and, after you've signed in as the new user, change the owner of the organization to the new user.
 
-      h. As the new user, complete the migration.
+    h. As the new user, complete the migration.
 
 3. Ensure that all Azure DevOps Services users are in Azure AD by doing the following:  
     Any user that is not in your Azure AD is a "historic" user and cannot sign in. However, the user's history is retained.
 
-   a. Sign in to your Azure DevOps Services organization, and go to the **Users** tab.
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-    ![The Users tab in Azure DevOps Services](_img/connect-organization-to-aad/users-tab-vsts.png)
+# [New navigation](#tab/new-nav)
 
-   b. Compare the list of email addresses in Azure DevOps Services with the list of email addresses in your Azure AD.
+a. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
 
-    * If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-iw-add-users).
+b. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
-      ![Add a guest user to Azure AD](_img/connect-organization-to-aad/add-new-users.png)
+![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+ 
+c. Go to **Users**
 
-      These guests can be external to your organization (*User@othercompany.com*) or existing MSA users (*user@outlook.com* or *user@gmail.com*).
+d. Compare the list of email addresses in Azure DevOps Services with the list of email addresses in your Azure Active Directory.
 
-    * If you are notified that you do not have permissions to invite users, under **User Settings**, verify that your user organization is authorized to invite external users.
+* If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-iw-add-users).
 
-      ![The "External users" pane](_img/connect-organization-to-aad/external-user-settings-aad.png)
+    ![Add a guest user to Azure AD](_img/connect-organization-to-aad/add-new-users.png)
 
-       If you have recently modified these settings or assigned the *guest inviter* role to a user, there might be a 15 to 60-minute delay before the changes take effect.
+    These guests can be external to your organization (*User@othercompany.com*) or existing MSA users (*user@outlook.com* or *user@gmail.com*).
 
-    * If no paid license exists in your Azure AD, every invited user gets the rights that the Azure AD free account offers.
+* If you are notified that you do not have permissions to invite users, under **User Settings**, verify that your user organization is authorized to invite external users.
+
+    ![The "External users" pane](_img/connect-organization-to-aad/external-user-settings-aad.png)
+
+    If you have recently modified these settings or assigned the *guest inviter* role to a user, there might be a 15 to 60-minute delay before the changes take effect.
+
+* If no paid license exists in your Azure AD, every invited user gets the rights that the Azure AD free account offers.
+
+# [Previous navigation](#tab/prev-nav)
+
+a. Sign in to your Azure DevOps Services organization and go to **Organization settings**.
+
+![Go to organization settings](../../_shared/_img/settings/open-account-settings.png)
+
+b. Go to **Users**.
+
+![The Users tab in Azure DevOps Services](_img/connect-organization-to-aad/select-users-to-review-email-addresses-for-azure-ad.png)
+
+b. Compare the list of email addresses in Azure DevOps Services with the list of email addresses in your Azure Active Directory.
+
+* If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-iw-add-users).
+
+    ![Add a guest user to Azure AD](_img/connect-organization-to-aad/add-new-users.png)
+
+    These guests can be external to your organization (*User@othercompany.com*) or existing MSA users (*user@outlook.com* or *user@gmail.com*).
+
+* If you are notified that you do not have permissions to invite users, under **User Settings**, verify that your user organization is authorized to invite external users.
+
+    ![The "External users" pane](_img/connect-organization-to-aad/external-user-settings-aad.png)
+
+    If you have recently modified these settings or assigned the *guest inviter* role to a user, there might be a 15 to 60-minute delay before the changes take effect.
+
+* If no paid license exists in your Azure AD, every invited user gets the rights that the Azure AD free account offers.
+
+---
 
 ## Connect your Azure DevOps Services organization to your Azure AD
 

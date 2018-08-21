@@ -57,7 +57,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
     Azure Test Plans Manager is installed automatically in TFS.
 
-1. If you haven't already, sign in to your Azure DevOps organization (`https://{yourorganization}.visualstudio.com`).
+1. If you haven't already, sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
 
 1. [Add users](../accounts/add-organization-users-from-user-hub.md) to your Azure DevOps Services organization. [Assign them to Azure Test Plans Manager](../../marketplace/assign-paid-extensions.md) via Azure Test Plans in your Azure DevOps Services organization so you can track these users.
 
