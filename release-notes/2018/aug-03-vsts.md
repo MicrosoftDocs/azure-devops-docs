@@ -14,13 +14,14 @@ In **Work** you can now view your team's work on the Work Items hub. Check out t
 
 ## Next steps
 
-> [!NOTE]
-> These features will be rolling out over the next two to three weeks.
-
 Read about the new features below and head over to VSTS to try them for yourself.
 
 > [!div class="nextstepaction"]
 > [Go to VSTS](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+
+## What’s new in VSTS
+
+> [!VIDEO https://www.youtube.com/embed/8fQJ6u7JUjg?rel=0]
 
 ## Features
 
@@ -90,6 +91,9 @@ title: Hello world
 ## Work
 
 ### View work for your team in the Work Items hub
+
+> [!IMPORTANT]
+> The team is staging the rollout of this feature more than normal. You should see the new pivot in the **Work Items** hub of your organization soon.
 
 You can now use the **My team(s)** pivot on the **Work Items** hub to find all of the work that is assigned to your team(s). With this pivot, you can quickly pick up work that is assigned to your team(s) or get a better idea of the work that you team(s) is responsible for. See the [View and add work items](/vsts/work/work-items/view-add-work-items?view=vsts&tabs=vertical) documentation for more information.
 
