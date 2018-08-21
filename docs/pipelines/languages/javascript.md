@@ -200,6 +200,54 @@ you'll get the benefit of using the package cache.
 
 ::: moniker-end
 
+## Test
+
+The example uses **mocha** test framework to run tests and **istanbul** to get code coverage results in Cobertura XML format. 
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+To run tests in your build pipeline, add the following snippet to `azure-pipelines.yml` file.
+
+```yaml
+- script: npm test
+```
+
+::: moniker-end
+
+### Publish test results
+
+Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit or xUnit test results to the server. In this example, results are published in JUnit format. The test results published can be viewed under [Tests Tab](../test/review-continuous-test-results-after-build.md) in build.
+
+::: moniker range="vsts"
+
+```yaml
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '**/TEST-RESULTS.xml'
+    testRunTitle: 'Test results for JavaScript'
+```
+
+::: moniker-end
+
+### Publish code coverage results
+
+Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis. 
+
+::: moniker range="vsts"
+
+```yaml
+- task: PublishCodeCoverageResults@1
+  inputs: 
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
+```
+
+::: moniker-end
+
+
 ## Task runners
 
 It is common to use **gulp**, **grunt**, or **maven** as a task runner to build and test a JavaScript app.
@@ -225,6 +273,25 @@ If the steps in your gulpfile require authentication with a npm registry:
 
 - script: gulp                       # include any additional options that are needed
 ```
+
+Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit or xUnit test results to the server.
+
+```yaml
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '**/TEST-RESULTS.xml'
+    testRunTitle: 'Test results for JavaScript using gulp'
+```
+
+Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. Coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis. 
+
+```yaml
+- task: PublishCodeCoverageResults@1
+  inputs: 
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/**/coverage'
+```
 ::: moniker-end
 
 ::: moniker range="< vsts"
@@ -233,7 +300,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-The simplest way to create a build pipeline if your app uses gulp is to use the **NodeJS with Gulp** build template when creating the pipeline. This will automatically add various tasks to invoke gulp commands and to publish artifacts.
+The simplest way to create a build pipeline if your app uses gulp is to use the **NodeJS with Gulp** build template when creating the pipeline. This will automatically add various tasks to invoke gulp commands and to publish artifacts. In the task, select **Enable Code Coverage** to enable Code Coverage using istanbul.
 
 ---
 
@@ -265,7 +332,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-The simplest way to create a build pipeline if your app uses gulp is to use the **NodeJS with Grunt** build template when creating the pipeline. This will automatically add various tasks to invoke gulp commands and to publish artifacts.
+The simplest way to create a build pipeline if your app uses gulp is to use the **NodeJS with Grunt** build template when creating the pipeline. This will automatically add various tasks to invoke gulp commands and to publish artifacts. In the task, select **Publish to TFS/Team Services** option to publish test results and **Enable Code Coverage** to enable Code Coverage using istanbul.
 
 ---
 
@@ -376,4 +443,4 @@ If you are able to build your project on your development machine, but are havin
 
 ### Where can I learn more about tasks?
 
-[Build and release tasks](../tasks/index.md)
+[Build, release and test tasks](../tasks/index.md)
