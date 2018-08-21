@@ -336,7 +336,9 @@ Use the **.NET Core** task with **Command** set to **test**.
 **Path to projects** should refer to the test projects in your solution.
 
 ---
+
 ## Collect code coverage 
+
 If you are building on the Windows platform, code coverage metrics can be collected using the built-in coverage data collector. For this functionality the test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
 If you use the **.NET Core** task to run tests, coverage data is automatically published to the server. The .coverage file can be downloaded from the build summary for viewing in Visual Studio.
 
@@ -345,6 +347,7 @@ If you use the **.NET Core** task to run tests, coverage data is automatically p
 ::: moniker range="vsts"
 
 Add the following snippet to your `azure-pipelines.yml` file:
+
 ```yaml
 - task: DotNetCoreCLI@2
   inputs:
@@ -352,7 +355,9 @@ Add the following snippet to your `azure-pipelines.yml` file:
     projects: '**/*Tests/*.csproj'
     arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 ```
+
 If you choose to run the `dotnet test` command, specify the test results logger and coverage options, and then use the [Publish Test Results](../tasks/test/publish-test-results.md) task.
+
 ```yaml
 - script: dotnet test <test-project> --logger trx --collect "Code coverage"
 - task: PublishTestResults@2
@@ -380,9 +385,11 @@ YAML builds are not yet available on TFS.
 2. Ensure that the **Publish test results** option remains selected.
 
 > [!TIP]
->If you are building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
->Code coverage results can be published to the server using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage formats.
+> If you are building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
+> Code coverage results can be published to the server using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage formats.
+
 ---
+
 ## Package and deliver your code
 
 Once you have built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a NuGet package,
