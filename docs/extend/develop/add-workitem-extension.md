@@ -204,7 +204,7 @@ To add an item to the work item toolbar, add this contribution to your extension
 <a name="listenforevents"></a>   
 ## Listen for events
 
-To add a observer to the work item which listens to the work item events, add this contribution to your extension manifest. There will be no visualization for observers on the work item form.
+To add an observer to the work item which listens to the work item events, add this contribution to your extension manifest. There will be no visualization for observers on the work item form. This is the best way to listen to work item form onSaved event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
 
  ```json
 "contributions": [
