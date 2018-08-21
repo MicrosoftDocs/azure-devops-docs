@@ -13,31 +13,51 @@ monikerRange: 'vsts'
 
 # Test: Visual Studio Test
 
-![](_img/vstest.png) Run unit and functional tests (Selenium, Appium, Coded UI test, etc.) using the Visual Studio Test runner. Test frameworks that have a Visual Studio test adapter such as xUnit, NUnit, Chutzpah, etc. can also be run. Tests can be distributed on multiple agents using this task (version 2).
+![](_img/vstest.png) Run unit and functional tests (Selenium, Appium, Coded UI test, and more)
+using the Visual Studio Test Runner. Other than MSTest-based tests, test frameworks that have a
+Visual Studio test adapter, such as xUnit, NUnit, Chutzpah, can also be run.  
+
+Tests that target the .NET core framework can be run by specifying the appropriate target framework value.  
+
+Tests can be distributed on multiple agents using version 2 of this task. 
+
+## Demands 
+
+**vstest**
+
+The vstest demand can be satisfied in two ways: 
+
+1. Visual Studio is installed on the agent machine. 
+
+2. By using the [Visual Studio Test Platform Installer task](visual-studio-test-agent-deployment.md) in the pipeline definition. 
+
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
+
 [!INCLUDE [temp](../_shared/yaml/VsTestV2.md)]
+
 ::: moniker-end
 
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td><b>testSelector</b><br>Select tests using</td><td>(Required) <ul><li><b>Test assembly: </b>Use this option to specify one or more test assemblies that contain your tests. You can optionally specify a filter criteria to select only specific tests.</li><li><b>Test plan: </b>Use this option to run tests from your test plan that have an automated test method associated with it.</li><li><b>Test run: </b>Use this option when you are setting up an environment to run tests from the Test hub. This option should not be used when running tests in a continuous integration /continuous deployment (CI/CD) pipeline.</li></td></tr>
+<tr><td><b>testSelector</b><br>Select tests using</td><td>(Required) <ul><li><b>Test assembly: </b>Use this option to specify one or more test assemblies that contain your tests. You can optionally specify a filter criteria to select only specific tests.</li><li><b>Test plan: </b>Use this option to run tests from your test plan that have an automated test method associated with it. To learn more about how to associate tests with a test case work item, see [Associate automated tests with test cases](../../../test/associate-automated-test-with-test-case.md).</li><li><b>Test run: </b>Use this option when you are setting up an environment to [run tests from test plans](../../../test/run-automated-tests-from-test-hub.md). This option should not be used when running tests in a continuous integration /continuous deployment (CI/CD) pipeline.</li></td></tr>
 <tr><td><b>testAssemblyVer2</b><br>Test assemblies</td><td>(Required) Run tests from the specified files.<br>Ordered tests and webtests can be run by specifying the .orderedtest and .webtest files respectively. To run .webtest, Visual Studio 2017 Update 4 or higher is needed. <br><br>The file paths are relative to the search folder. Supports multiple lines of minimatch patterns. [More Information](https://aka.ms/minimatchexamples)</td></tr>
 <tr><td><b>testPlan</b><br>Test plan</td><td>(Required) Select a test plan containing test suites with automated test cases.</td></tr>
-<tr><td><b>testSuite</b><br>Test suite</td><td>(Required) Select one or more test suites containing automated test cases. Test case work items must be associated with an automated test method. [Learn more.](https://go.microsoft.com/fwlink/?linkid=847773</td></tr>
+<tr><td><b>testSuite</b><br>Test suite</td><td>(Required) Select one or more test suites containing automated test cases. Test case work items must be associated with an automated test method. [Learn more](https://go.microsoft.com/fwlink/?linkid=847773).</td></tr>
 <tr><td><b>testConfiguration</b><br>Test configuration</td><td>(Required) Select Test Configuration.</td></tr>
-<tr><td><b>tcmTestRun</b><br>Test Run</td><td>(Optional) Test run based selection is used when triggering automated test runs from the test hub. This option cannot be used for running tests in the CI/CD pipeline.</td></tr>
+<tr><td><b>tcmTestRun</b><br>Test Run</td><td>(Optional) Test run based selection is used when triggering [automated test runs from test plans](../../../test/run-automated-tests-from-test-hub.md). This option cannot be used for running tests in the CI/CD pipeline.</td></tr>
 <tr><td><b>searchFolder</b><br>Search folder</td><td>(Required) Folder to search for the test assemblies.</td></tr>
 <tr><td><b>testFiltercriteria</b><br>Test filter criteria</td><td>(Optional) Additional criteria to filter tests from Test assemblies. For example: `Priority=1|Name=MyTestMethod`. [More information](https://msdn.microsoft.com/library/jj155796.aspx)</td></tr>
 <tr><td><b>runOnlyImpactedTests</b><br>Run only impacted tests</td><td>(Optional) Automatically select, and run only the tests needed to validate the code change. [More information](https://aka.ms/tialearnmore)</td></tr>
 <tr><td><b>runAllTestsAfterXBuilds</b><br>Number of builds after which all tests should be run</td><td>(Optional) Number of builds after which to automatically run all tests. Test Impact Analysis stores the mapping between test cases and source code. It is recommended to regenerate the mapping by running all tests, on a regular basis.</td></tr>
-<tr><td><b>uiTests</b><br>Test mix contains UI tests</td><td>(Optional) To run UI tests, ensure that the agent is set to run in interactive mode. Setting up an agent to run interactively must be done before queueing the build / release. Checking this box does <b>not</b> configure the agent in interactive mode automatically. This option in the task is to only serve as a reminder to configure agent appropriately to avoid failures. <br><br> Hosted Windows agents from the VS 2015 and 2017 pools can be used to run UI tests.<br> [More information](https://aka.ms/uitestmoreinfo).</td></tr>
-<tr><td><b>vstestLocationMethod</b><br>Select test platform using</td><td>(Optional) undefined</td></tr>
+<tr><td><b>uiTests</b><br>Test mix contains UI tests</td><td>(Optional) To run UI tests, ensure that the agent is set to [run in interactive mode with autologon enabled](../../agents/agents.md). Setting up an agent to run interactively must be done before queueing the build / release. Checking this box does <b>not</b> configure the agent in interactive mode automatically. This option in the task is to only serve as a reminder to configure agent appropriately to avoid failures. Hosted Windows agents from the VS 2015 and 2017 pools can be used to run UI tests.</td></tr>
+<tr><td><b>vstestLocationMethod</b><br>Select test platform using</td><td>(Optional) Specify which test platform should be used.</td></tr>
 <tr><td><b>vsTestVersion</b><br>Test platform version</td><td>(Optional) The version of Visual Studio test to use. If latest is specified it chooses Visual Studio 2017 or Visual Studio 2015 depending on what is installed. Visual Studio 2013 is not supported. To run tests without needing Visual Studio on the agent, use the ‘Installed by tools installer’ option. Be sure to include the ‘Visual Studio Test Platform Installer’ task to acquire the test platform from NuGet.</td></tr>
-<tr><td><b>vstestLocation</b><br>Path to vstest.console.exe</td><td>(Optional) Optionally supply the path to VSTest.</td></tr>
-<tr><td><b>runSettingsFile</b><br>Settings file</td><td>(Optional) Path to runsettings or testsettings file to use with the tests.</td></tr>
+<tr><td><b>vstestLocation</b><br>Path to vstest.console.exe</td><td>(Optional) Specify the path to VSTest.</td></tr>
+<tr><td><b>runSettingsFile</b><br>Settings file</td><td>(Optional) Path to runsettings or testsettings file to use with the tests.Starting with Visual Studio 15.7, it is recommended to use [runsettings](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) for all types of tests. To learn more about converting a .testsettings file to a .runsettings file, see [this topic](https://github.com/Microsoft/vstest-docs/blob/master/RFCs/0023-TestSettings-Deprecation.md).</td></tr>
 <tr><td><b>overrideTestrunParameters</b><br>Override test run parameters</td><td>(Optional) Override parameters defined in the `TestRunParameters` section of runsettings file or `Properties` section of testsettings file. For example: `-key1 value1 -key2 value2`. Note: Properties specified in testsettings file can be accessed via the TestContext using Visual Studio 2017 Update 4 or higher </td></tr>
 <tr><td><b>pathtoCustomTestAdapters</b><br>Path to custom test adapters</td><td>(Optional) Directory path to custom test adapters. Adapters residing in the same folder as the test assemblies are automatically discovered.</td></tr>
 <tr><td><b>runInParallel</b><br>Run tests in parallel on multi-core machines</td><td>(Optional) If set, tests will run in parallel leveraging available cores of the machine. This will override the MaxCpuCount if specified in your runsettings file. [Click here](https://aka.ms/paralleltestexecution) to learn more about how tests are run in parallel.</td></tr>
