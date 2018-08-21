@@ -1,175 +1,205 @@
 ---
-title: Azure Test Plans Documentation 
+title: Azure Boards Documentation 
 titleSuffix: Azure DevOps 
-description: Improve your overall code quality by using manual and exploratory testing services for your apps.
+description: Plan and track work and collaborate on software development using Agile tools you configure and customize to support your business needs.  
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
 ms.prod: devops 
 ms.technology: vs-devops-overview 
-ms.assetid: B13C10AF-4FBC-493A-869F-79BABD6D453A 
+ms.assetid:  
 ms.manager: douge 
 ms.author: kaelli 
 ms.date: 09/05/2018
 featureFlags:
 - clicktale 
 ---
-
-
-<div id="agile" class="v2">
+<div id="main" class="v2">
     <div class="container">
-<p><a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;/&nbsp;&nbsp;Azure Test Plans</p><br/>
         <h1>Azure Test Plans Documentation</h1>
-<p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p><br/>
-<table border="0" class="cardsA">
-<tr>
-<td width="25%">
-                                <a href="/vsts/test/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_exploratory-testing.svg" alt="" />
+        <p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p>
+        <p style="height: 30px;">&nbsp;</p>
+        <ul class="pivots">
+            <li>
+                <a href="#index"></a>
+                <ul id="index">
+                    <li class="panelItem" data-index="0">
+                        <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
+                        <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
+                            <li class="fullSpan">
+                                <a href="#index1"></a>
+                                <ul id="index1" class="cardsA cols cols4" style="float: left; display: flex;">
+                                    <li>
+                                        <a href="/vsts/test/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/i_exploratory-testing.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Exploratory &amp; manual testing</h3>
+                                                            <p>Drive quality and collaboration throughout the development process using
+                                                                a rich set of tools.</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="cardText">
-                                                    <h3>Exploratory &amp; manual testing</h3>
-                                                    <p>Drive quality and collaboration throughout the development process using
-                                                        a rich set of tools.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/project/feedback/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Request stakeholder feedback</h3>
+                                                            <p>Request feedback on your working apps and quickly capture it within a
+                                                                work item form.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Continuous testing</h3>
+                                                            <p>Automate build-deploy-test workflows to test your changes in a fast,
+                                                                scalable, and efficient manner.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/i_unit-testing.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Unit &amp; functional testing</h3>
+                                                            <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/test/load-test/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/i_load-testing.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Load testing</h3>
+                                                            <p>Performance test your code with hundreds of thousands of users.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/organizations/settings/about-settings#test-center">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Settings</h3>
+                                                            <p>Configure test plan policies and permissions.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#index2"></a>
+                                <h2 style="float: left; display: flex;">Additional resources</h2>
+                                <ul id="index2" class="cardsL cols cols4" style="float: left; display: flex; width: 100%;"> 
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
-                                <a href="/vsts/project/feedback/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
                                                     </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Request stakeholder feedback</h3>
-                                                    <p>Request feedback on your working apps and quickly capture it within a
-                                                        work item form.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
-                                <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_continuous-testing.svg" alt="" />
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
                                                     </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Continuous testing</h3>
-                                                    <p>Automate build-deploy-test workflows to test your changes in a fast,
-                                                        scalable, and efficient manner.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
-                                <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_unit-testing.svg" alt="" />
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
                                                     </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Unit &amp; functional testing</h3>
-                                                    <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-</td>
-</tr>
-<tr>
-<td width="25%">
-                                <a href="/vsts/test/load-test/index">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="_img/index/i_load-testing.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Load testing</h3>
-                                                    <p>Performance test your code with hundreds of thousands of users.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
-                                <a href="/vsts/organizations/settings/about-settings#test-center">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Settings</h3>
-                                                    <p>Configure test plan policies and permissions.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
-</td>
-<td width="25%">
-&nbsp;&nbsp;&nbsp;
-</td>
-</tr>
-</table>
-
-<h2 style="padding-left:0;">Additional resources</h2>
-<table border="0">
-<tbody style="padding-left:0;font-size:.8rem;">
-<tr>
-<td width="25%">
-<a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com//media/common/i_library.svg" alt="" />Index</a>
-</td>
-<td width="25%">
-<a class="barLink" href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA"><img src="https://docs.microsoft.com/media/common/i_video.svg" alt="" />DevOps at Microsoft</a>
-</td>
-<td width="25%">
-<a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
-</td>
-<td width="25%">
-<a class="barLink"  href="https://docs.microsoft.com/en-us/azure/devops/learn/"><img src="https://docs.microsoft.com/media/common/i_dev-ops.svg" alt="" />Azure DevOps resource center</a>
-</td>
-</tr>
-</tbody>
-</table>
-
-</div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>
