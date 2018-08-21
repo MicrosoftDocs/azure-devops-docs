@@ -73,7 +73,7 @@
   - name: Analytics
     href: ../analytics/index.md
   - name: Azure Boards
-    href: /vsts/index-boards
+    href: /vsts/boards/index
   - name: Testing
     href: /vsts/index-test 
   - name: Marketplace widgets

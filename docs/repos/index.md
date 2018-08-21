@@ -56,7 +56,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/logo-git-mark.svg" alt="" />
+                                                                <img src="/vsts/_img/index/logo-git-mark.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -75,7 +75,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_pull-request.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_pull-request.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -94,7 +94,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_forks.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_forks.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -113,7 +113,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_branch-policies.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_branch-policies.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">

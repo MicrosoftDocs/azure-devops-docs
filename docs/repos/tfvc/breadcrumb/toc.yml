@@ -4,7 +4,7 @@
   items:
   - name: Azure Repos
     tocHref: /vsts/repos/tfvc/
-    topicHref: /vsts/index-repos
+    topicHref: /vsts/repos/index
     items:
     - name: TFVC
       tocHref: /vsts/repos/tfvc/

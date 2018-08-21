@@ -32,7 +32,7 @@ featureFlags:
                                 <h2 style="float: left; display: flex;">Start using Azure DevOps Services</h2>
                                 <ul id="index1" class="cardsFTitle cols cols4" style="float: left; display: flex;">
                                     <li>
-                                        <a href="/vsts/open-source/get-started/index">
+                                        <a href="/vsts/pipelines/build/ci-build-github">
                                         <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -60,7 +60,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Start using Azure DevOps</h3>
+                                                            <h3><br/>Start using Azure DevOps</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -78,7 +78,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>What's new</h3>
+                                                            <h3><br/>What's new</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -96,7 +96,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Navigation basics</h3>
+                                                            <h3><br/>Navigation basics</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -158,6 +158,124 @@ featureFlags:
                                         </a>
                                     </li>  -->
                                 </ul>
+                                <a href="#index3"></a>
+<!---                                <h2 style="float: left; display: flex;">Azure DevOps services</h2>  -->
+                                <ul id="index3" class="cardsA cols cols4" style="float: left; display: flex;"> 
+                                    <li>
+                                        <a href="/vsts/pipelines/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/DevOpsIconPipelines96.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Azure Pipelines</h3>
+                                                            <p>Manage CI/CD to deploy your code with high-performance pipelines that work with any language, platform, and cloud. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/repos/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/DevOpsIconRepos96.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Azure Repos</h3>
+                                                            <p>Use Git repositories, pull requests, and then integrate with CI/CD to build and deploy your apps.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/boards/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/DevOpsIconBoards96.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Azure Boards</h3>
+                                                            <p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/index-artifacts">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/DevOpsIconArtifacts96.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Azure Artifacts</h3>
+                                                            <p>Share code with others across your enterprise, and support CI/CD of your apps.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/index-test">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/DevOpsIconTestPlans96.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Azure Test Plans</h3>
+                                                            <p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/index-settings">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/i_config-tools.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Settings</h3>
+                                                            <p>Configure resources to scale and grow your organization. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                                 <a href="#index2"></a>
                                 <h3 style="float: left; display: flex;"><i>Create pipelines to build and deploy applications to any platform, cloud, or app store.</i></h3>
                                 <ul id="index2" class="cardsFTitle cols cols4" style="float: left; display: flex;">
@@ -172,7 +290,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Android</h3>
+                                                            <h3><br/>Android</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -190,7 +308,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>.NET</h3>
+                                                            <h3><br/>.NET</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -244,7 +362,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>C/C++ with GCC</h3>
+                                                            <h3><br/>C/C++ with GCC</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -262,7 +380,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>C/C++ with VC++</h3>
+                                                            <h3><br/>C/C++ with VC++</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -280,7 +398,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Docker</h3>
+                                                            <h3><br/>Docker</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -298,7 +416,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Go</h3>
+                                                            <h3><br/>Go</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -316,7 +434,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Java</h3>
+                                                            <h3><br/>Java</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -334,7 +452,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Kubernetes</h3>
+                                                            <h3><br/>Kubernetes</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -352,7 +470,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Linux VM</h3>
+                                                            <h3><br/>Linux VM</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -370,7 +488,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Node.js</h3>
+                                                            <h3><br/>Node.js</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -388,7 +506,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>npm</h3>
+                                                            <h3><br/>npm</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -406,7 +524,7 @@ featureFlags:
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Nuget</h3>
+                                                            <h3><br/>Nuget</h3>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -485,124 +603,6 @@ featureFlags:
                                             </div>
                                         </a>
                                     </li> -->
-                                </ul>
-                                <a href="#index3"></a>
-<!---                                <h2 style="float: left; display: flex;">Azure DevOps services</h2>  -->
-                                <ul id="index3" class="cardsA cols cols4" style="float: left; display: flex;"> 
-                                    <li>
-                                        <a href="/vsts/pipelines/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconPipelines96.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Azure Pipelines</h3>
-                                                            <p>Manage CI/CD to deploy your code with high-performance pipelines that work with any language, platform, and cloud. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/index-repos">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconRepos96.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Azure Repos</h3>
-                                                            <p>Use Git repositories, pull requests, and then integrate with CI/CD to build and deploy your apps.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/index-boards">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconBoards96.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Azure Boards</h3>
-                                                            <p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/index-artifacts">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconArtifacts96.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Azure Artifacts</h3>
-                                                            <p>Share code with others across your enterprise, and support CI/CD of your apps.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/index-test">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconTestPlans96.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Azure Test Plans</h3>
-                                                            <p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/index-settings">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/i_config-tools.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Settings</h3>
-                                                            <p>Configure resources to scale and grow your organization. </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
                                 </ul>
                                 <a href="#index4"></a>
                                 <h2 style="float: left; display: flex;">Analytics and social tools</h2>

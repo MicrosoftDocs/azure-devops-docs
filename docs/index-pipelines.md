@@ -2,6 +2,7 @@
 title: Azure Pipelines Documentation
 titleSuffix: Azure DevOps 
 description: Test and deploy your code with continuous integration and continuous delivery with high-performance pipelines. 
+robots: NOINDEX, NOFOLLOW
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page

@@ -14,6 +14,8 @@ ms.date: 09/05/2018
 featureFlags:
 - clicktale 
 ---
+
+
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure Boards Documentation</h1>
@@ -74,7 +76,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_kanban.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_kanban.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -93,7 +95,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_backlog.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_backlog.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -113,7 +115,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_scrum.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_scrum.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -126,18 +128,18 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/settings/work/inheritance-process-model">
+                                        <a href="/vsts/boards/queries/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_config-tools.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_queries.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Customization</h3>
-                                                            <p>Configure tools and processes to meet your team's needs.</p>
+                                                            <h3>Queries</h3>
+                                                            <p>Find work items to bulk update and to chart progress and trends.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -151,11 +153,11 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_agile.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_agile.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Agile at scale</h3>
+                                                            <h3>Plans and Agile at scale</h3>
                                                             <p>Grow your organization, support autonomous teams, and gain visibility
                                                                 across teams.</p>
                                                         </div>
@@ -177,6 +179,25 @@ featureFlags:
                                                         <div class="cardText">
                                                             <h3>Feedback</h3>
                                                             <p>Request and capture feedback on your working apps.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/organizations/settings/work/inheritance-process-model">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="/vsts/_img/index/i_config-tools.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Customization</h3>
+                                                            <p>Configure tools and processes to meet your team's needs.</p>
                                                         </div>
                                                     </div>
                                                 </div>
