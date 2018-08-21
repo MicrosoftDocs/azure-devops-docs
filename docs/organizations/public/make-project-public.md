@@ -71,8 +71,6 @@ Before you can change a private project, to a public project, you must enable an
 
 ## Make a private project public 
 
-
-
 # [New navigation](#tab/new-nav)
 
 0. Choose **Project Settings** in the sidebar.
@@ -116,8 +114,6 @@ Before you can change a private project, to a public project, you must enable an
 	> ![Open organizational hub](_img/make-public-private/confirm-change-project-visibility-public.png)  
 
 
-
-
 ---
 
 ## Make a public project private 
@@ -127,7 +123,7 @@ Before you can change a private project, to a public project, you must enable an
 0. Choose **Project Settings** in the sidebar.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open project settings](_img/make-public-private/open-project-settings-vert-brn.png)  
+	> ![Open project settings](_img/make-public-private/open-project-settings-public-vert-brn.png)  
 
 0. Choose **Overview** page, and then **Edit** for **Privacy**.     
 
@@ -143,7 +139,6 @@ Before you can change a private project, to a public project, you must enable an
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational hub](_img/make-public-private/change-project-visilibity-public-to-private.png)  
-
 
 
 # [Previous navigation](#tab/previous-nav)

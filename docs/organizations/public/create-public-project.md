@@ -55,7 +55,7 @@ Before you can create a public project, you must enable anonymous access for you
 
 0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
 
-0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Account Settings**.
+0. Choose the ![](../../_img/icons/gear-icon.png) gear icon to open **Organization Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](../../_shared/_img/settings/open-account-settings-horz-brn.png) 
@@ -79,7 +79,7 @@ Before you can create a public project, you must enable anonymous access for you
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational hub](../../_shared/_img/settings/open-projects-hub-vert-brn.png)  
 
-0. Choose **New Project**.
+0. Choose **Create Project**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose New Project](_img/create-public-project/add-proj-vert-brn.png)  
@@ -95,10 +95,9 @@ Before you can create a public project, you must enable anonymous access for you
 	> ![Public project created page](_img/create-public-project/public-project-created.png)
 
 
-
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. .
+0. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open organizational hub](_img/create-public-project/open-org-hub.png)  
