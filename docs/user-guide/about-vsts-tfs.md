@@ -70,7 +70,7 @@ To be ready to use the organization entity, we recommend that you create organiz
 have created collections in TFS. In the short term, having your work split across multiple organizations can cause some 
 problems, but we plan to address these when the organization entity is introduced. In particular:
 
-* You purchase VSTS users per organization, meaning that paid users only have access to the VSTS organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option, since subscribers can be added to any number of VSTS organizations at no charge. We arealso considering other ways we might make access to multiple organizations grouped into an organization available.
+* You purchase VSTS users per organization, meaning that paid users only have access to the VSTS organization in which the payment is made. If you have users who need access to multiple organizations, Visual Studio subscriptions can be an attractive option, since subscribers can be added to any number of VSTS organizations at no charge. We are also considering other ways we might make access to multiple organizations grouped into an organization available.
 
 * You currently have to administer organizations one at a time, which can be cumbersome when you have many organizations. We're working to support enterprise-wide policies.
 
