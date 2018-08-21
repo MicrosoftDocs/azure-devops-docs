@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Publishing and Packaging an Extension from the Command Line | Extensions for VSTS
-description: How to package and publish your VSTS Extension from the command line.
+title: Publishing and Packaging an Extension from the Command Line | Extensions for Azure DevOps Services
+description: How to package and publish your Azure DevOps Services Extension from the command line.
 ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.topic: conceptual
 ms.manager: douge

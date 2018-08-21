@@ -28,7 +28,7 @@ To start sharing your Azure DevOps Services-hosted packages with badges you'll f
 
 1. Go to your Feed settings page by clicking on the gear icon from your feed page: 
 
-    ![Edit a Azure DevOps Services feed in Package](_shared/_img/edit-feed-full.png)
+    ![Edit an Azure DevOps Services feed in Package](_shared/_img/edit-feed-full.png)
 
     > Only feed administrators can edit the feed.
 

@@ -36,7 +36,7 @@ GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories?
 
 ### In your account
 
-Get all the repositories in your Visual Studio Team Services account, rather than a specific project.
+Get all the repositories in your VSTS organization, rather than a specific project.
 
 [!code-REST [GET__git_repositories_json](./_data/repositories/GET__git_repositories.json)]
 

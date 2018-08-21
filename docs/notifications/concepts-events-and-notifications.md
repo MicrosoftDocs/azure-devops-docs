@@ -39,7 +39,7 @@ Individual users can choose to opt out of any default subscription while other t
 Individuals can also create custom subscriptions which apply only to them. Learn how to [manage personal subscriptions](howto-manage-personal-notifications.md).
 
 ### Custom service hook subscriptions
-**Service hooks subscriptions** can be used to integrate with third party services. When a Azure DevOps Services event matches a service hook subscription, a notification is delivered to the third party service. For example, when a Azure DevOps Services build completes, a notification can be delivered to a Slack channel with links back to the build artifact in Azure DevOps Services. To learn more, see [Integrating with third party services](howto-integrate-third-party-services.md).
+**Service hooks subscriptions** can be used to integrate with third party services. When an Azure DevOps Services event matches a service hook subscription, a notification is delivered to the third party service. For example, when an Azure DevOps Services build completes, a notification can be delivered to a Slack channel with links back to the build artifact in Azure DevOps Services. To learn more, see [Integrating with third party services](howto-integrate-third-party-services.md).
 
 ## Notifications
 When an **event** occurs in Azure DevOps Services or TFS, its content is compared with every **subscription** of that event type. If the subscription's filter conditions are met by the event, a notification is generated. **A notification is generated for every subscription/event match.**

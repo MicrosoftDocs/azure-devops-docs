@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts VssJsonCollectionWrapperBase API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts VssJsonCollectionWrapperBase API | Extensions for Azure DevOps Services
 ms.assetid: ef53d1fd-fe97-92c3-f7df-ed6aa04666b8
 ms.prod: devops
 ms.technology: devops-ecosystem

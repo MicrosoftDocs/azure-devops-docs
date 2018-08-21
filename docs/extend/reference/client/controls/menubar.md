@@ -1,6 +1,6 @@
 ---
-title: MenuBar Control | Extensions for VSTS
-description: Used to display a toolbar in your app for VSTS.
+title: MenuBar Control | Extensions for Azure DevOps Services
+description: Used to display a toolbar in your app for Azure DevOps Services.
 ms.assetid: 62A19D22-D6BD-4BC2-8A36-D8E894087449
 ms.prod: devops
 ms.technology: devops-ecosystem

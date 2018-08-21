@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts ProcessTemplateType API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts ProcessTemplateType API | Extensions for Azure DevOps Services
 ms.assetid: d71298af-9f46-ee18-0b80-1de34b38108d
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -132,7 +132,7 @@ can install extensions. If you don't have permissions, you can [request extensio
 
 ### Download from Visual Studio Marketplace
 
-0.  Sign in to [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
+0.  Sign in to [Visual Studio Marketplace > Azure DevOps Services](https://marketplace.visualstudio.com/vsts).
 
 0.	Find the extension that you want to install.
 

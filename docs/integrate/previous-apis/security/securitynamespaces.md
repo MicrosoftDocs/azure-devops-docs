@@ -3,7 +3,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
 title: Security namespace reference | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Security namespace reference fpr integrating with Visual Studio Team Services
+description: Security namespace reference fpr integrating with VSTS
 ms.assetid: c5b4c4b9-8d80-43a4-92c5-8ecdd335ac49
 ms.manager: douge
 ms.topic: article

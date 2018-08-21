@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/ExtensionContracts IBuildResultsViewExtensionConfig API | Extensions for Visual Studio Team Services
+title: TFS/Build/ExtensionContracts IBuildResultsViewExtensionConfig API | Extensions for Azure DevOps Services
 description: Interface defining the configuration that is shared between extension targeted at &quot;ms.vss-build-web.build-results-view&quot; and the host
 ms.assetid: 70f8aa50-d7cf-5deb-ff37-0f06a26f593f
 ms.prod: devops

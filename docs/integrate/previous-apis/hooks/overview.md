@@ -30,4 +30,4 @@ service hook [consumer](./consumers.md) and action to take in response to that e
 
 ### Get a list of publishers
 
-Get the list of event [publishers](./publishers.md#getalistofpublishers) for Visual Studio Team Services.
+Get the list of event [publishers](./publishers.md#getalistofpublishers) for VSTS.

@@ -157,7 +157,7 @@
             "id": 4,
             "definitionId": 0,
             "number": "20160713.1",
-            "buildSystem": "Visual Studio Team Services"
+            "buildSystem": "VSTS"
           }
         },
         "automatedTestName": "UnitTestProject1.UnitTest1.Fail1"

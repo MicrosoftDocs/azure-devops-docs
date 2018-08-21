@@ -134,7 +134,7 @@ Content-type: Application/json
 | api-version     | string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | Body
 | name            | string  | New name of the tag.<br/>If a tag already exists with this name, in the same scope, the update will fail.<br/>Names are not case-sensitive. You can update the name to change the case (from "case" to "Case", for example).
-| active          | bool    | If false, the tag is inactive and is generally not shown to the user. Inactive tags aren't shown in the Visual Studio Team Services pages, for example.
+| active          | bool    | If false, the tag is inactive and is generally not shown to the user. Inactive tags aren't shown in the VSTS pages, for example.
 
 [!code-REST [PATCH__tagging_scopes__scopeId__tags__tagId__json](./_data/tags/PATCH__tagging_scopes__scopeId__tags__tagId_.json)]
 

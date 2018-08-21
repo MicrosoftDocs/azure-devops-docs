@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts ResultRetentionSettings API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts ResultRetentionSettings API | Extensions for Azure DevOps Services
 ms.assetid: 9f3c11af-68b5-e483-07d4-030b365a8ef3
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts DeleteOptions API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts DeleteOptions API | Extensions for Azure DevOps Services
 ms.assetid: 858dcde2-d5de-d485-a506-6c87be2ad22c
 ms.prod: devops
 ms.technology: devops-ecosystem

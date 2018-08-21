@@ -1,6 +1,6 @@
 ---
 title: Upstream sources 
-description: Upstream sources manage packages from public sources in a Azure DevOps Services or Team Foundation Server feed
+description: Upstream sources manage packages from public sources in an Azure DevOps Services or Team Foundation Server feed
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.prod: devops
 ms.technology: devops-artifacts

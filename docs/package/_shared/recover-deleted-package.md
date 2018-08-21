@@ -16,7 +16,7 @@ If you've deleted/unpublished an npm package, NuGet package, or Maven artifact f
 
 3. Select a version to *Restore to feed:*
 
-    ![Restore a Azure DevOps Services package with Recycle Bin](../_img/recycle-bin/recycle-bin-restore.png)
+    ![Restore an Azure DevOps Services package with Recycle Bin](../_img/recycle-bin/recycle-bin-restore.png)
 
 
 

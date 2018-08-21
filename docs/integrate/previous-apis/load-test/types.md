@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Cloud Load Test Types | REST API Reference for Visual Studio Team Services 
-description: Work with Cloud Load Test programmatically using the REST APIs for Visual Studio Team Services .
+title: Cloud Load Test Types | REST API Reference for VSTS 
+description: Work with Cloud Load Test programmatically using the REST APIs for VSTS .
 ms.assetid: 8415ad80-dfa7-4a4a-82d3-a013433ad5e9
 ms.manager: douge
 ms.topic: article

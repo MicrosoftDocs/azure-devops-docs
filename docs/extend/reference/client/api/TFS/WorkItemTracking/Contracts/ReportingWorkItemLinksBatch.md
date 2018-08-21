@@ -1,5 +1,5 @@
 ---
-title: TFS/WorkItemTracking/Contracts ReportingWorkItemLinksBatch API | Extensions for Visual Studio Team Services
+title: TFS/WorkItemTracking/Contracts ReportingWorkItemLinksBatch API | Extensions for Azure DevOps Services
 ms.assetid: ef8e53e4-482f-7a33-8673-f8a51f014bb5
 ms.prod: devops
 ms.technology: devops-ecosystem

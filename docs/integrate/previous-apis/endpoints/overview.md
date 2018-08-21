@@ -2,8 +2,8 @@
 ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
-title: Service Connections Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Overview of service connections API
+title: Service Endpoints Overview | REST API Reference for Visual Studio Team Services and Team Foundation Server
+description: Overview of service endpoints API
 ms.ContentId: 77294d8c-ba71-4755-85d4-27a97d8809ce
 ---
 
@@ -11,12 +11,12 @@ ms.ContentId: 77294d8c-ba71-4755-85d4-27a97d8809ce
 
 [!INCLUDE [API_version](../_data/version3-preview1.md)]
 
-* [Service Connection Types](./endpoint-types.md)
-* [Service Connections](./endpoints.md)
+* [Service Endpoint Types](./endpoint-types.md)
+* [Service Endpoints](./endpoints.md)
 
-## Permissions on service connections
+## Permissions on service endpoints
 
-### Service connections level
+### Service endpoints level
 
 Each endpoint that is created will have two groups associated with it.
 

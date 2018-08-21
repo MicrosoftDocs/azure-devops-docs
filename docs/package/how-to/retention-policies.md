@@ -28,7 +28,7 @@ To configure retention policies:
 
 1. Edit your feed from the **Packages** hub in the **Build and Release** hub group: ```https://<account_name>.visualstudio.com/<project_name>/_packaging?feed=<feed_name>&_a=settings```
 
-    ![Edit a Azure DevOps Services feed in Package](../_shared/_img/edit-feed-full.png)
+    ![Edit an Azure DevOps Services feed in Package](../_shared/_img/edit-feed-full.png)
 
 2. From the **Retention** tab, select the maximum number of versions per package to retain:
 

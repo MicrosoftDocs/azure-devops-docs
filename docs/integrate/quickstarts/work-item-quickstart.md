@@ -1,6 +1,6 @@
 ---
-title: Get work items programmatically from Visual Studio Team Services
-description: Use REST APIs to get work items from Visual Studio Team Services (VSTS) with queries in your own custom apps.
+title: Get work items programmatically from Azure DevOps Services
+description: Use REST APIs to get work items from Azure DevOps Services with queries in your own custom apps.
 ms.assetid: e48d9d34-24dd-4e3e-abe8-8f5498e08083
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -12,14 +12,14 @@ author: elbatk
 ms.date: 06/27/2017
 ---
 
-# Fetch work items with queries programatically in VSTS
+# Fetch work items with queries programatically in Azure DevOps Services
 
-A common scenario in Visual Studio Team Services (VSTS) is to fetch work items using queries. This guide details how to implement that scenario programatically using our REST APIs or .NET client libraries. 
+A common scenario in Azure DevOps Services is to fetch work items using queries. This guide details how to implement that scenario programatically using our REST APIs or .NET client libraries. 
 
 ## Prerequisites
 To work on this Quickstart, you'll need the following prerequisites:
 
-* A VSTS account. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
+* An Azure DevOps Services organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
 * A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
 
@@ -63,7 +63,7 @@ public class ExecuteQuery
     readonly string _project;
 
     /// <summary>
-    /// Constructor. Manually set values to match your account.
+    /// Constructor. Manually set values to match yourorganization. 
     /// </summary>
     public ExecuteQuery()
     {

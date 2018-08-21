@@ -1,6 +1,6 @@
 ---
 title: Install a Maven artifact using Gradle and Azure DevOps Services
-description: Install a Maven artifact using Gradle in a Azure DevOps Services build
+description: Install a Maven artifact using Gradle in an Azure DevOps Services build
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: douge
@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2018'
 ---
 
 
-# Install a Maven artifact using Gradle in a Azure DevOps Services build
+# Install a Maven artifact using Gradle in an Azure DevOps Services build
 
 **Azure DevOps Services** | **TFS 2018**
 
-Gradle is a popular build tool for Java applications and the primary build tool for Android. Learn how to download a Maven artifact using Gradle during a Azure DevOps Services build of your application.
+Gradle is a popular build tool for Java applications and the primary build tool for Android. Learn how to download a Maven artifact using Gradle during an Azure DevOps Services build of your application.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ You're ready to start! This tutorial will guide you through the process of insta
 
 ## Set up authentication
 
-First, you need a **gradle.properties** file that contains a Azure DevOps Services credential token.
+First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
 Navigate to `https://{yourAccount}.visualstudio.com/_details/organizations/security/tokens`, where `{yourAccount}` is the name of your Azure DevOps Services organization.
 

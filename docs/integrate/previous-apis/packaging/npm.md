@@ -1,6 +1,6 @@
 ---
-title: npm | REST API Reference for Visual Studio Team Services
-description: Work with npm packages programmatically using the REST APIs for Visual Studio Team Services.
+title: npm | REST API Reference for VSTS
+description: Work with npm packages programmatically using the REST APIs for VSTS.
 ms.assetid: 12059603-5562-4AB1-B028-CAC39BB81A51
 ms.manager: douge
 ms.topic: article
@@ -23,7 +23,7 @@ monikerRange: '>= tfs-2013'
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account.
+| account               | string  |           | VSTS organization.
 | feedName              | string  |           | Name or ID of the feed.
 | packageScope          | string  |           | Scope of the package, preceded by an @-symbol. Required parameter for scoped packages.
 | packageName           | string  |           | Name or ID of the package.
@@ -53,7 +53,7 @@ GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/fe
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account.
+| account               | string  |           | VSTS organization.
 | feedName              | string  |           | Name or ID of the feed.
 | packageScope          | string  |           | Scope of the package, preceded by an @-symbol. Required parameter for scoped packages.
 | packageName           | string  |           | Name or ID of the package.
@@ -86,7 +86,7 @@ To undeprecate a package, call the deprecate package API with an empty deprecati
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account.
+| account               | string  |           | VSTS organization.
 | feedName              | string  |           | Name or ID of the feed.
 | packageScope          | string  |           | Scope of the package, preceded by an @-symbol. Required parameter for scoped packages.
 | packageName           | string  |           | Name or ID of the package.
@@ -116,7 +116,7 @@ This endpoint is not intended for programmatic usage or bulk downloads.  The ser
 | Parameter             | Type    | Default  | Notes
 |:----------------------|:--------|:---------|:----------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |          | Visual Studio Team Services account.
+| account               | string  |          | VSTS organization.
 | feedName              | string  |          | Name or Id of the feed
 | packageScope          | string  |          | Scope of the package, preceded by an @-symbol. Required parameter for scoped packages.
 | packageName           | string  |          | Normalized Name or ID of the package
@@ -142,7 +142,7 @@ GET https://{account}.pkgs.visualstudio.com/defaultcollection/_apis/packaging/fe
 | Parameter             | Type    | Default   | Notes
 |:----------------------|:--------|:----------|:---------------------------------------------------------------------------------------------------
 | URL
-| account               | string  |           | Visual Studio Team Services account.
+| account               | string  |           | VSTS organization.
 | feedName              | string  |           | Name or ID of the feed.
 | packageScope          | string  |           | Scope of the package, preceded by an @-symbol. Required parameter for scoped packages.
 | packageName           | string  |           | Name or ID of the package.

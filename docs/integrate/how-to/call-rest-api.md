@@ -1,6 +1,6 @@
 ---
-title: Get started with the REST APIs for VSTS and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for VSTS and Team Foundation Server.
+title: Get started with the REST APIs for Azure DevOps Services and Team Foundation Server
+description: Learn the basic patterns for using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 14ac2881-2aaf-4291-8dfe-3f7e3f591861
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # Get started with the REST APIs
 
-Integrate your app with Visual Studio Team Services (VSTS) and Team Foundation Server (TFS) using these REST APIs.
+Integrate your app with Azure DevOps Services and Team Foundation Server (TFS) using these REST APIs.
 
 These APIs follow a common pattern: 
 
@@ -24,16 +24,16 @@ VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}
 
 > Tip: To avoid having your app or service broken as APIs evolve, specify an [API version](#versions) on every request.
 
-## VSTS
+## Azure DevOps Services
 
-For VSTS, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
+For Azure DevOps Services, `instance` is `{account}.visualstudio.com` and `collection` is `DefaultCollection`,
 so the pattern looks like this:
 
 ```no-highlight
 VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
 ```
 <br />
-For example, here's how to get a list of projects in a VSTS account.
+For example, here's how to get a list of projects in an Azure DevOps Services organization.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
@@ -80,10 +80,10 @@ public static async void GetProjects()
 }
 ```
 <br />
-If you don't have a VSTS account,
+If you don't have an Azure DevOps Services organization,
 you can [set one up for free](https://visualstudio.microsoft.com/docs/setup-admin/team-services/sign-up-for-visual-studio-team-services). 
 
-Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
+Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](../get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
 ## TFS
 
@@ -219,7 +219,7 @@ Response | Notes
 
 ## Cross-origin resource sharing (CORS)
 
-VSTS supports CORS. This enables JavaScript code served from a domain other than *.visualstudio.com to make Ajax requests to VSTS REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
+Azure DevOps Services supports CORS. This enables JavaScript code served from a domain other than *.visualstudio.com to make Ajax requests to Azure DevOps Services REST APIs. For this to work, each request must provide credentials (personal access tokens and OAuth access tokens are both supported options). Example:
 
 ```js
     $( document ).ready(function() {
@@ -240,7 +240,7 @@ VSTS supports CORS. This enables JavaScript code served from a domain other than
 <a name="versions"></a>
 ## Versioning
 
-VSTS and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+Azure DevOps Services and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 
 ### Guidelines
 
@@ -268,7 +268,7 @@ GET https://{account}.visualstudio.com/defaultcollection/_apis/{area}/{resource}
 
 | Product                     | 1.0    | 2.0    | 3.0    |
 |:----------------------------|:------:|:------:|:------:|
-| VSTS | X      | X      | X      | 
+| Azure DevOps Services | X      | X      | X      | 
 | Team Foundation Server 2017 | X      | X      | X      |
 | Team Foundation Server 2015 | X      | X      | -      |
 

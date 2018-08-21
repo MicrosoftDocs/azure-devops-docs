@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts Proxy API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts Proxy API | Extensions for Azure DevOps Services
 ms.assetid: 640ed63c-eca1-8bbc-5836-8d6ca2845772
 ms.prod: devops
 ms.technology: devops-ecosystem

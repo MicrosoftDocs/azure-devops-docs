@@ -30,7 +30,7 @@
       href: develop/add-build-task.md
     - name: Add a dashboard widget
       href: develop/add-dashboard-widget.md
-    - name: Add a new service connection
+    - name: Add a new service endpoint
       href: develop/service-endpoints.md
     - name: Add a service hook
       href: develop/add-service-hook.md

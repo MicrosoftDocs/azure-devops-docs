@@ -1,5 +1,5 @@
 ---
-title: TFS/DistributedTask/Contracts JobCompletedEvent API | Extensions for Visual Studio Team Services
+title: TFS/DistributedTask/Contracts JobCompletedEvent API | Extensions for Azure DevOps Services
 ms.assetid: b482b923-0d97-3ad6-a8e0-2d4707fd3e7d
 ms.prod: devops
 ms.technology: devops-ecosystem

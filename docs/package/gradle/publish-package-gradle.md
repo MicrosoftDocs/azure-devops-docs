@@ -1,6 +1,6 @@
 ---
 title: Publish a Maven artifact using Gradle and Azure DevOps Services
-description: Publish a Maven artifact using Gradle in a Azure DevOps Services build
+description: Publish a Maven artifact using Gradle in an Azure DevOps Services build
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: douge
@@ -42,7 +42,7 @@ You're ready to start! This tutorial will guide you through the process of publi
 
 ## Set up authentication
 
-First, you need a **gradle.properties** file that contains a Azure DevOps Services credential token.
+First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
 Navigate to `https://{yourAccount}.visualstudio.com/_details/organizations/security/tokens`, where `{yourAccount}` is the name of your Azure DevOps Services organization.
 

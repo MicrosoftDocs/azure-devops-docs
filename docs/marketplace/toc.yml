@@ -6,11 +6,11 @@
     href: overview.md
 - name: Quickstarts
   items:
-  - name: Install free VSTS extensions
+  - name: Install free Azure DevOps Services extensions
     href: install-vsts-extension.md
-  - name: Preview paid VSTS extensions
+  - name: Preview paid Azure DevOps Services extensions
     href: start-trial-vsts-extension.md
-  - name: Buy and install paid VSTS extensions
+  - name: Buy and install paid Azure DevOps Services extensions
     href: install-paid-vsts-extension.md
   - name: Assign paid extensions
     href: assign-paid-extensions.md
