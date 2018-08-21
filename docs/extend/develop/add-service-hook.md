@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Create a consumer service for service hooks | Extensions for VSTS
-description: Tutorial for creating a custom consumer service for service hooks in VSTS.
+title: Create a consumer service for service hooks | Extensions for Azure DevOps Services
+description: Tutorial for creating a custom consumer service for service hooks in Azure DevOps Services.
 ms.assetid: 294ae93b-7522-40ef-95ab-d5002f8c3ca8
 ms.topic: conceptual
 ms.manager: douge
@@ -12,9 +12,9 @@ author: elbatk
 ms.date: 08/22/2016
 ---
 
-# Service hooks in VSTS
+# Service hooks in Azure DevOps Services
 
-Service hooks enable you to perform tasks on other services when events happen in your VSTS projects. For example, create a card in Trello 
+Service hooks enable you to perform tasks on other services when events happen in your Azure DevOps Services projects. For example, create a card in Trello 
 when a work item is created or send a push notification to your team's mobile devices when a build fails. Service hooks can also be used in custom apps and services 
 as a more efficient way to drive activities when events happen in your projects.
 

@@ -40,7 +40,7 @@ Work items can also be [tagged](./tags.md).
 ## Work item metadata resources
 
 Work items are governed by metadata.
-Some of the metadata is scoped to a specific project, and other metadata is scoped to a project collection (like your Visual Studio Team Services account's default collection).
+Some of the metadata is scoped to a specific project, and other metadata is scoped to a project collection (like your VSTS organization's default collection).
 
 ### Project-scoped metadata
 

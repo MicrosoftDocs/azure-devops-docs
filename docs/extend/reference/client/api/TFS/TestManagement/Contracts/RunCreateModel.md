@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts RunCreateModel API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts RunCreateModel API | Extensions for Azure DevOps Services
 ms.assetid: bcff5da0-0e52-452d-b50b-b974a36ea263
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,6 +1,6 @@
 ---
-title: Assign paid extension access to users for VSTS and TFS
-description: Assign paid extension access to users for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)
+title: Assign paid extension access to users for Azure DevOps Services and TFS
+description: Assign paid extension access to users for Azure DevOps Services and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 13c4b901-70d6-488f-9ee5-00eb3121b977 
@@ -16,24 +16,24 @@ monikerRange: '>= tfs-2013'
 
 # Assign paid extension access to users
 
-**VSTS** | **TFS**
+**Azure DevOps Services** | **TFS**
 
 After you install a paid extension, you must assign that extension to users who need access, so they can start using that extension's capabilities. 
-To assign extensions, you'll need VSTS or TFS [project collection administrator or account owner permissions](./faq-extensions.md#find-owner).
+To assign extensions, you'll need Azure DevOps Services or TFS [project collection administrator or organization owner permissions](./faq-extensions.md#find-owner).
 
 > [!TIP]
 > You only have to assign extensions to users who need access. If you have [Visual Studio subscribers](https://marketplace.visualstudio.com/subscriptions), 
-> they automatically get access to specific extensions that are included with their subscriptions as benefits, like Test Manager. If you installed these extensions, you don't have to assign them to Visual Studio subscribers in your account. 
+> they automatically get access to specific extensions that are included with their subscriptions as benefits, like Test Manager. If you installed these extensions, you don't have to assign them to Visual Studio subscribers in your organization. 
 
 ::: moniker range="vsts"
 
 
-## VSTS 
-0.	Sign in to your VSTS account (```https://{youraccount}.visualstudio.com```).
+## Azure DevOps Services 
+0.	Sign in to your Azure DevOps Services organization (```https://{youraccount}.visualstudio.com```).
 
 0.	Go to **Users**.
 
-    ![VSTS Users hub](../_shared/_img/users-hub-updated-ui.png)
+    ![Azure DevOps Services Users hub](../_shared/_img/users-hub-updated-ui.png)
 
 0.	Most extensions require that users have at least Basic access, not Stakeholder. Check your users' access levels here:
 

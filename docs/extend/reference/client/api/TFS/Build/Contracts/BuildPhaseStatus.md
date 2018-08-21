@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildPhaseStatus API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildPhaseStatus API | Extensions for Azure DevOps Services
 ms.assetid: 0b816025-b43a-7ac8-3008-8d447028be8b
 ms.prod: devops
 ms.technology: devops-ecosystem

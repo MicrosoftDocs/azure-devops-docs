@@ -1,6 +1,6 @@
 ---
-title: Get started with the REST APIs for VSTS and Team Foundation Server
-description: Learn the basic patterns for using the REST APIs for VSTS and Team Foundation Server.
+title: Get started with the REST APIs for Azure DevOps Services and Team Foundation Server
+description: Learn the basic patterns for using the REST APIs for Azure DevOps Services and Team Foundation Server.
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -13,9 +13,9 @@ ms.date: 08/04/2016
 robots: NOINDEX, NOFOLLOW
 ---
 
-# VSTS REST API Reference
+# Azure DevOps Services REST API Reference
 
-Welcome to the VSTS REST API Reference. 
+Welcome to the Azure DevOps Services REST API Reference. 
 
 Representational State Transfer (REST) APIs are service endpoints that support sets of HTTP operations (methods), which provide create, retrieve, update, or delete access to the service's resources. This article walks you through:
 
@@ -32,10 +32,10 @@ Representational State Transfer (REST) APIs are service endpoints that support s
 A REST API request/response pair can be separated into five components:
 
 1. The **request URI**, in the following form: `VERB https://{instance}[/{collection}[/{team-project}]/_apis[/{area}]/{resource}?api-version={version}`
-    * *instance*: The VSTS account or TFS server you're sending the request to. They are structured as follows,
-        * VSTS: `{account}.visualstudio.com`
+    * *instance*: The Azure DevOps Services organization or TFS server you're sending the request to. They are structured as follows,
+        * Azure DevOps Services: `{account}.visualstudio.com`
         * TFS: `server:port` (the default port is 8080)
-    * *collection*: The value for collection should be `DefaultCollection` for both TFS and VSTS.
+    * *collection*: The value for collection should be `DefaultCollection` for both TFS and Azure DevOps Services.
     * *resource path*: The collection should be followed by `_apis/{area}/{resource}`. For example `_apis/wit/workitems`.
     * *api-version*: Every API request should include an api-version to avoid having your app or service break as APIs evolve. api-versions are in the following format: `{major}.{minor}[-{stage}[.{resource-version}]], for example:
         * `api-version=1.0`
@@ -60,7 +60,7 @@ A REST API request/response pair can be separated into five components:
 
 ### Authenticate 
 
-There are many ways to authenticate your application or service with VSTS or TFS. The following table is an excellent way to decide which method is the best for you:
+There are many ways to authenticate your application or service with Azure DevOps Services or TFS. The following table is an excellent way to decide which method is the best for you:
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
@@ -69,22 +69,22 @@ There are many ways to authenticate your application or service with VSTS or TFS
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive web | GUI based web application | Custom Web dashboard displaying build summaries |[OAuth](./get-started/authentication/oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
 | TFS application | TFS app using the Client OM library | TFS extension displaying team bug dashboards | [Client Libraries](./get-started/client-libraries/dotnet.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
-| [VSTS Extension](../extend/get-started/node.md) | VSTS extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
+| [Azure DevOps Services Extension](../extend/get-started/node.md) | Azure DevOps Services extension | [Agile Cards](https://marketplace.visualstudio.com/items?itemName=spartez.agile-cards) | [VSS Web Extension SDK](https://github.com/Microsoft/vss-web-extension-sdk) | [sample walkthrough](../extend/develop/add-dashboard-widget.md) |
 
 > [!NOTE]
 > You can find more information on authentication on our [authentication guidance page](./get-started/authentication/authentication-guidance.md)
 
 ### Assemble the request
 
-**VSTS**
+**Azure DevOps Services**
 
-For VSTS, *instance* is `{account}.visualstudio.com` and *collection* is `DefaultCollection`, so the pattern looks like this:
+For Azure DevOps Services, *instance* is `{account}.visualstudio.com` and *collection* is `DefaultCollection`, so the pattern looks like this:
 
 ```
 VERB https://{account}.VisualStudio.com/DefaultCollection/_apis[/{area}]/{resource}?api-version={version}
 ```
 
-For example, here's how to get a list of projects in a VSTS account.
+For example, here's how to get a list of projects in an Azure DevOps Services organization.
 
 ```dos
 curl -u {username}[:{personalaccesstoken}] https://{account}.VisualStudio.com/DefaultCollection/_apis/projects?api-version=2.0
@@ -132,7 +132,7 @@ public static async void GetProjects()
 ```
 
 
-Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for VSTS including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](./get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
+Most samples on this site use Personal Access Tokens as they're a compact example for authenticating with the service.  However, there are a variety of authentication mechanisms available for Azure DevOps Services including ADAL, OAuth and Session Tokens.  Refer to the [Authentication](./get-started/authentication/authentication-guidance.md) section for guidance on which one is best suited for your scenario.
 
 **TFS**
 

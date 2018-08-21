@@ -1,5 +1,5 @@
 ---
-title: Extend the work item form | Extensions for VSTS
+title: Extend the work item form | Extensions for Azure DevOps Services
 description: Describes how to extend work item tracking, including adding an action, an observer, a group or a page to the work item form.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
 ms.prod: devops
@@ -25,7 +25,7 @@ You can now customize how the work item form is presented to users via contribut
 
 If you are just getting started and haven't created an extension, refer to the [Create your first extension with Visual Studio](../get-started/visual-studio.md). 
 
-See the **UI** example in the [VSTS Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
+See the **UI** example in the [Azure DevOps Services Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
 
 <a name="addagroup"></a>
 ## Add a group
@@ -160,7 +160,7 @@ See the JavaScript sample in the form group section. The name of the registered 
 
 <a name="showcontributions"></a>
 ## Configure contributions in work item form
-In VSTS, by default the group extensions will appear in the end of the second column of the form and page contributions will appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users will have to manually add them to the form. In TFS, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions in TFS](./configure-workitemform-extensions.md).
+In Azure DevOps Services, by default the group extensions will appear in the end of the second column of the form and page contributions will appear after all the work item form pages as a tab. Control contributions are not shown in the form by default so users will have to manually add them to the form. In TFS, to show/hide or move the control, group and page contributions in work item form, see  [Configure work item form extensions in TFS](./configure-workitemform-extensions.md).
 
 <a name="addmenuaction"></a>
 ## Add menu action

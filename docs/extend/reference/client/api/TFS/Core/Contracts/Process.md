@@ -1,5 +1,5 @@
 ---
-title: TFS/Core/Contracts Process API | Extensions for Visual Studio Team Services
+title: TFS/Core/Contracts Process API | Extensions for Azure DevOps Services
 ms.assetid: 2d415ad3-fb91-a243-5687-676548658e19
 ms.prod: devops
 ms.technology: devops-ecosystem

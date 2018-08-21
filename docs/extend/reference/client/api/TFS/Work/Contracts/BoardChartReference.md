@@ -1,5 +1,5 @@
 ---
-title: TFS/Work/Contracts BoardChartReference API | Extensions for Visual Studio Team Services
+title: TFS/Work/Contracts BoardChartReference API | Extensions for Azure DevOps Services
 ms.assetid: 72193b47-46b7-9cde-15d5-8472d3482b35
 ms.prod: devops
 ms.technology: devops-ecosystem

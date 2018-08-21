@@ -1,5 +1,5 @@
 ---
-title: VSS/WebApi/Contracts IdentityRef API | Extensions for Visual Studio Team Services
+title: VSS/WebApi/Contracts IdentityRef API | Extensions for Azure DevOps Services
 ms.assetid: 5f1a7145-28a9-669e-bf34-fb509e9f7951
 ms.prod: devops
 ms.technology: devops-ecosystem

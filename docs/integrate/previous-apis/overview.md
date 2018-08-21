@@ -92,7 +92,7 @@ If you didn't find what you were looking for in the table above, or if you're ju
 <tbody>
 <tr>
 <td>[Accounts and profiles](./shared/overview.md)</td>
-<td>Each person using Visual Studio Team Services has a profile and access to one or more accounts. 
+<td>Each person using VSTS has a profile and access to one or more accounts. 
 This API gives the developer access to these profiles and accounts.</td>
 <td>
 <ul><li>Get the authenticated user's profile</li>
@@ -175,7 +175,7 @@ from having a physical representation.</td>
 <tr>
 <td>[Queues](./queues/overview.md)</td>
 <td>An agent queue provides access to a pool of agents. When you create a build or release definition, you specify which queue it uses. 
-Queues are scoped to your project collection, so you can share them across build and release definitions in multiple projects.</td>
+Queues are scoped to your project collection, so you can share them across Azure Pipelines definitions in multiple projects.</td>
 <td>
 <ul><li>Get a list of queues</li>
 <li>Get a single queue</li></ul>
@@ -202,13 +202,13 @@ the Release API.</td>
 </td>
 </tr>
 <tr>
-<td>[Service connections](./endpoints/overview.md)</td>
-<td>Service connections are a way for Team Services to connect to external systems or services. They are a bundle of properties securely stored by Team Services.
-With the service connections API, you can access these endpoints along with their permissions.</td>
+<td>[Service endpoints](./endpoints/overview.md)</td>
+<td>Service endpoints are a way for Team Services to connect to external systems or services. They are a bundle of properties securely stored by Team Services.
+With the service endpoints API, you can access these endpoints along with their permissions.</td>
 <td>
-<ul><li>Get a list of service connections</li>
-<li>Get a single service connection</li>
-<li>Create a service connection</li></ul>
+<ul><li>Get a list of service endpoints</li>
+<li>Get a single service endpoint</li>
+<li>Create a service endpoint</li></ul>
 </td>
 </tr>
 <tr>

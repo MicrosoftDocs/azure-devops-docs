@@ -1,8 +1,8 @@
 ---
 ms.prod: devops
 ms.technology: devops-ecosystem
-title: Clients Services | Extensions for Visual Studio Team Services
-description: Client Services provided by Visual Studio Team Services.
+title: Clients Services | Extensions for Azure DevOps Services
+description: Client Services provided by Azure DevOps Services.
 ms.assetid: 92736987-875E-4816-B835-F04917B4AF46
 ms.manager: douge
 ms.author: elbatk

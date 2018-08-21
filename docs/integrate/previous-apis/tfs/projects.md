@@ -96,7 +96,7 @@ Get metadata on a project, including its capabilities.
 
 ## Create a project
 <a name="createateamproject" />
-Create a project in a Visual Studio Team Services account. Use the [GetOperation](#GetOperation) to periodically check for create project status.
+Create a project in a VSTS organization. Use the [GetOperation](#GetOperation) to periodically check for create project status.
 
 ```no-highlight
 POST https://{instance}/defaultcollection/_apis/projects?api-version={version}

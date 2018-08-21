@@ -29,7 +29,7 @@ You can create [team rooms](./rooms.md) where [users](./users.md) can post [mess
 
 ### Get a list of team rooms
 
-Get the [team rooms](./rooms.md) in a Visual Studio Team Services account.
+Get the [team rooms](./rooms.md) in a VSTS organization.
 
 ### Create a room
 

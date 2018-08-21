@@ -1,6 +1,6 @@
 ---
-title: Create a bug using .NET client libraries in Visual Studio Team Services
-description: Use .NET client libraries to create a bug in Visual Studio Team Services (VSTS).
+title: Create a bug using .NET client libraries in Azure DevOps Services
+description: Use .NET client libraries to create a bug in Azure DevOps Services.
 ms.assetid: ea2e5303-46b5-41d0-b6f5-b3d8ce515a64
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -12,14 +12,14 @@ author: elbatk
 ms.date: 06/27/2017
 ms.custom: get-started-article
 ---
-# Create a bug in Visual Studio Team Services using .NET client libraries
+# Create a bug in Azure DevOps Services using .NET client libraries
 
 Creating a new bug (or any work item) is pretty straight forward. You just need to set the field values and send a JSON-Patch object to the REST endpoint.
 
 ## Prerequisites
 To work on this Quickstart, you'll need the following prerequisites:
 
-* A Visual Studio Team Services (VSTS) account. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
+* An Azure DevOps Services organization. If you don't have one, you can [create one for free](https://go.microsoft.com/fwlink/?LinkId=307137)
 * A Personal Access Token, [find out how to create one](../get-started/authentication/PATs.md)
 * A C# development environment, you can use [Visual Studio](https://visualstudio.microsoft.com/vs/)
 
@@ -32,7 +32,7 @@ There are a few things happening in the code sample below:
 
 0. Authentication
     0. Creating credentials using your PAT
-    0. Creating a VSSConnection with your VSTS URI and the credentials
+    0. Creating a VSSConnection with your Azure DevOps Services URI and the credentials
 0. Retrieving the client using your VSSConnection
 0. Creating the bug
     0. Create an array of objects to set the field values
@@ -65,7 +65,7 @@ public class CreateBug
     readonly string _project;
 
     /// <summary>
-    /// Constructor. Manually set values to match your account.
+    /// Constructor. Manually set values to match yourorganization. 
     /// </summary>
     public CreateBug()
     {
@@ -101,7 +101,7 @@ public class CreateBug
             new JsonPatchOperation()
             {
                 Operation = Operation.Add,
-                Path = "/fields/Microsoft.VSTS.TCM.ReproSteps",
+                Path = "/fields/Microsoft.Azure DevOps Services.TCM.ReproSteps",
                 Value = "Our authorization logic needs to allow for users with Microsoft accounts (formerly Live Ids) - http:// msdn.microsoft.com/en-us/library/live/hh826547.aspx"
             }
         );
@@ -110,7 +110,7 @@ public class CreateBug
             new JsonPatchOperation()
             {
                 Operation = Operation.Add,
-                Path = "/fields/Microsoft.VSTS.Common.Priority",
+                Path = "/fields/Microsoft.Azure DevOps Services.Common.Priority",
                 Value = "1"
             }
         );
@@ -119,7 +119,7 @@ public class CreateBug
             new JsonPatchOperation()
             {
                 Operation = Operation.Add,
-                Path = "/fields/Microsoft.VSTS.Common.Severity",
+                Path = "/fields/Microsoft.Azure DevOps Services.Common.Severity",
                 Value = "2 - High"
             }
         );

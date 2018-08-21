@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts TestResultParameterModel API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts TestResultParameterModel API | Extensions for Azure DevOps Services
 ms.assetid: 682b6d8b-2bb6-2881-2c11-74bc6b85c0f1
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -3,7 +3,7 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2013'
 title: Access control lists (ACLs) | REST API Reference for Visual Studio Team Services and Team Foundation Server
-description: Access control lists reference for integrating with Visual Studio Team Services
+description: Access control lists reference for integrating with VSTS
 ms.assetid: 79447872-9742-42c5-9d4a-2e291df06c85
 ms.manager: douge
 ms.topic: article

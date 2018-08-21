@@ -1,7 +1,7 @@
 ---
 title: Resource limits & constraints  
-titleSuffix: VSTS  
-description: Limits on the resources individual users can consume in VSTS, and the number of work item tracking requests they can make 
+titleSuffix: Azure DevOps Services  
+description: Limits on the resources individual users can consume in Azure DevOps Services, and the number of work item tracking requests they can make 
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: conceptual
@@ -17,9 +17,9 @@ monikerRange: 'vsts'
 
 #Rate limits  
 
-**VSTS**
+**Azure DevOps Services**
 
-Visual Studio Team Services (VSTS), like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance. This leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, VSTS limits the resources individuals can consume and the number of 
+Azure DevOps Services, like many Software-as-a-Service solutions, uses multi-tenancy to reduce costs and to enhance scalability and performance. This leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption. To combat these problems, Azure DevOps Services limits the resources individuals can consume and the number of 
 requests they can make to certain commands. When these limits are exceeded, subsequent requests may be either delayed or blocked.
 
 When an individual user's requests are delayed by a significant amount, an email is sent to that user and a warning banner appears in the Web UI. If the user does not have an email address, 
@@ -31,7 +31,7 @@ When an individual user's requests are blocked, responses with HTTP code 429 (to
 ```TF400733: The request has been canceled: Request was blocked due to exceeding usage of resource <resource name> in namespace <namespace ID>.```
 
 ##Current rate limits
-VSTS currently has a global consumption limit, which delays requests from individual users beyond a consumption threshold when shared resources are in danger of being overwhelmed.
+Azure DevOps Services currently has a global consumption limit, which delays requests from individual users beyond a consumption threshold when shared resources are in danger of being overwhelmed.
 
 ###Global consumption limit
 Because this limit is focused exclusively on avoiding outages when shared resources are close to being overwhelmed, individual users will typically only have their requests delayed when:
@@ -41,16 +41,16 @@ Because this limit is focused exclusively on avoiding outages when shared resour
 
 The amount of the delay will depend on the user's sustained level of consumption. It may be as little as a few milliseconds per request or as much as thirty seconds. If their consumption goes to zero, or if their shared resources are no longer in danger of being overwhelmed, the delays will stop after a period of not more than five minutes. If their consumption remains high and their shared resources remain in danger of being overwhelmed, the delays may continue indefinitely.
 
-#### VSTS Throughput Units (TSTUs)  
-VSTS users consume many shared resources, and consumption depends on many factors. For example:
+#### Azure DevOps Services Throughput Units (TSTUs)  
+Azure DevOps Services users consume many shared resources, and consumption depends on many factors. For example:
 
 - Uploading a large number of files to Team Foundation version control or Git typically creates a large amount of load on both an Azure SQL Database and an Azure Storage account.
-- Running a complex work item tracking query will create load on an Azure SQL Database, with the amount of load depending on the number of work items in the VSTS account. 
-- Running a build on a self-hosted agent will create load on an Azure SQL Database and on one or more Azure Storage accounts, with the amount of load depending on the amount of version 
+- Running a complex work item tracking query will create load on an Azure SQL Database, with the amount of load depending on the number of work items in the Azure DevOps Services organization. 
+- Running a build on a private agent will create load on an Azure SQL Database and on one or more Azure Storage accounts, with the amount of load depending on the amount of version 
 control content downloaded, the amount of data logged by the build, and so forth.
-- All operations consume CPU and memory on one or more VSTS application tiers or job agents.
+- All operations consume CPU and memory on one or more Azure DevOps Services application tiers or job agents.
 
-To accommodate all of this, VSTS resource consumption is expressed in abstract units called VSTS Throughput Units, or TSTUs.  
+To accommodate all of this, Azure DevOps Services resource consumption is expressed in abstract units called Azure DevOps Services Throughput Units, or TSTUs.  
 
 TSTUs will eventually incorporate a blend of:
 
@@ -60,12 +60,12 @@ TSTUs will eventually incorporate a blend of:
 
 For now, TSTUs are primarily focused on Azure SQL Database DTUs, since Azure SQL Databases are the shared resources most commonly overwhelmed by excessive consumption. 
 
-A single TSTU per five minutes is the average load we expect a single normal user of VSTS to generate. Normal users will also generate spikes in load. These will typically
+A single TSTU per five minutes is the average load we expect a single normal user of Azure DevOps Services to generate. Normal users will also generate spikes in load. These will typically
 be 10 or fewer TSTUs per five minutes, but will less frequently go as high as 100 TSTUs. The global consumption limit is 200 TSTUs within a sliding five-minute window.
 
 <!---
 ###Work item tracking request limits
-This limit restricts individual users to 5,000 work item tracking (WIT) commands per hour per account. When this rate is exceeded, additional WIT commands will be blocked. When
+This limit restricts individual users to 5,000 work item tracking (WIT) commands per hour per organization. When this rate is exceeded, additional WIT commands will be blocked. When
 the user falls back below this rate, the blocking will stop. It is important to note that the hour window is a sliding window.
 
 To avoid disruption of existing applications, the following commands are temporarily whitelisted:

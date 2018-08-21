@@ -51,7 +51,7 @@ A feed is a container for packages, the only package source should be that singl
 
 Add any public sources as a public upstream.
 
-Add any internal sources as a Azure DevOps Services upstream.
+Add any internal sources as an Azure DevOps Services upstream.
 
 Find out more information about [upstream sources](upstream-sources.md) and [how to configure upstream sources](../how-to/set-up-upstream-sources.md).
 

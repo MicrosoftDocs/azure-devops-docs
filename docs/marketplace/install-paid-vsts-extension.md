@@ -1,5 +1,5 @@
 ---
-title: Buy and install paid extensions and assign to users in VSTS | VSTS 
+title: Buy and install paid extensions and assign to users in Azure DevOps Services | Azure DevOps Services 
 description: Find paid extensions in the Visual Studio Marketplace and learn how to buy, install, and assign them.
 ms.topic: conceptual
 ms.prod: devops
@@ -12,26 +12,26 @@ ms.date: 03/24/2018
 monikerRange: 'vsts'
 ---
 
-# Buy and install paid extensions and assign to users in VSTS
+# Buy and install paid extensions and assign to users in Azure DevOps Services
 
-This Quickstart covers the following steps of buying an extension in Visual Studio Team Services (VSTS):
+This Quickstart covers the following steps of buying an extension in Azure DevOps Services:
 * Finding extensions in the Visual Studio Marketplace
 * Buying a paid extension for a specific number of users
 * Assigning the extension to users in your team
 
 ## Prerequisites
 
-The first time that you set up billing for your VSTS account--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
+The first time that you set up billing for your Azure DevOps Services organization--whether you do this via the Azure portal or as part of making a purchase in the Visual Studio Marketplace, you will need:
 
-0. [VSTS project collection administrator or account owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
+0. [Azure DevOps Services project collection administrator or organization owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
 0. [The **owner** or **contributor** role on your Azure subscription](../organizations/billing/add-backup-billing-managers.md)
 
-To make subsequent edits to paid quantities in your VSTS account, you only need the owner or contributor role on your Azure subscription.
+To make subsequent edits to paid quantities in your Azure DevOps Services organization, you only need the owner or contributor role on your Azure subscription.
 
 
 ## Find and buy the extension
 
-0.  Sign in to the [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
+0.  Sign in to the [Visual Studio Marketplace > Azure DevOps Services](https://marketplace.visualstudio.com/vsts).
 	
 	<img alt="Visual Studio Marketplace" src="_img/get-vsts-extensions/marketplace.png" style="border: 1px solid #CCCCCC" />
 
@@ -53,14 +53,14 @@ To make subsequent edits to paid quantities in your VSTS account, you only need 
 
 0.	Now that you've bought the extension, you need to assign the extension to users who need access.
 
-	![Extension installed](_img/get-vsts-extensions/go-to-account.png)
+	![Extension installed](_img/get-vsts-extensions/go-to-organization.png)
 
 ## Assign the extension to your users
 
 After you install a paid extension, you will need to assign it to your users so they can start using it. 
-To assign extensions, you'll need VSTS [project collection administrator or account owner permissions](./faq-extensions.md#find-owner).
+To assign extensions, you'll need Azure DevOps Services [project collection administrator or organization owner permissions](./faq-extensions.md#find-owner).
 
-0.	Sign in to your VSTS account: ```https://{youraccount}.visualstudio.com```.
+0.	Sign in to your Azure DevOps Services organization: ```https://{youraccount}.visualstudio.com```.
 
 0.	Go to **Users**.
 
@@ -90,6 +90,6 @@ To assign extensions, you'll need VSTS [project collection administrator or acco
 - [Set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md)
 - [Add backup billing managers](../organizations/billing/add-backup-billing-managers.md)
 - [Change the Azure subscription for billing](../organizations/billing/change-azure-subscription.md)
-- [VSTS billing FAQ](../organizations/billing/vsts-billing-faq.md)
-- [VSTS pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-- [VSTS billing support](https://visualstudio.microsoft.com/team-services/support/)
+- [Azure DevOps Services billing FAQ](../organizations/billing/vsts-billing-faq.md)
+- [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+- [Azure DevOps Services billing support](https://visualstudio.microsoft.com/team-services/support/)

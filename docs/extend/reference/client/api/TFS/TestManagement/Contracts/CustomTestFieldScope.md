@@ -1,5 +1,5 @@
 ---
-title: TFS/TestManagement/Contracts CustomTestFieldScope API | Extensions for Visual Studio Team Services
+title: TFS/TestManagement/Contracts CustomTestFieldScope API | Extensions for Azure DevOps Services
 ms.assetid: 636a1bf4-5f2c-4b77-b3a0-84aa9c7faa1c
 ms.prod: devops
 ms.technology: devops-ecosystem

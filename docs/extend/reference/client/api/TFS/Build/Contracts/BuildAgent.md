@@ -1,5 +1,5 @@
 ---
-title: TFS/Build/Contracts BuildAgent API | Extensions for Visual Studio Team Services
+title: TFS/Build/Contracts BuildAgent API | Extensions for Azure DevOps Services
 ms.assetid: ccaf202f-73e1-583a-a449-9742cbd013fc
 ms.prod: devops
 ms.technology: devops-ecosystem

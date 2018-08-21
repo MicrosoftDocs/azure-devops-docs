@@ -1,6 +1,6 @@
 ---
-title: Uninstall or disable extensions in Visual Studio Team Services (VSTS) or Team Foundation Server (TFS)
-description: Uninstall or disable extensions for Visual Studio Team Services or Team Foundation Server
+title: Uninstall or disable extensions in Azure DevOps Services or Team Foundation Server (TFS)
+description: Uninstall or disable extensions for Azure DevOps Services or Team Foundation Server
 ms.topic: conceptual
 ms.prod: devops
 ms.technology: devops-marketplace
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # Uninstall or disable extensions
 
-**VSTS** | **TFS** 
+**Azure DevOps Services** | **TFS** 
 
 When you don't need an extension anymore, you can uninstall or disable this extension.
 
@@ -25,8 +25,8 @@ When you don't need an extension anymore, you can uninstall or disable this exte
 Only [Project collection administrators](../organizations/security/set-project-collection-level-permissions.md) with [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection) can uninstall or disable extensions. 
 
 
-0. Go to your VSTS or TFS home page, then go to your project:
-    * VSTS: ```https://{account-name}.visualstudio.com/{team-project}```
+0. Go to your Azure DevOps Services or TFS home page, then go to your project:
+    * Azure DevOps Services: ```https://{account-name}.visualstudio.com/{team-project}```
     * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
 
 0. Manage your extensions:
