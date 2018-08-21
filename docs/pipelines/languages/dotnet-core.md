@@ -295,8 +295,8 @@ To install a .NET Core global tool such as [dotnetsay](https://www.nuget.org/pac
 ## Run your tests
 
 Use the **.NET Core** task to run unit tests in your .NET Core solution using testing frameworks such as MSTest, xUnit, and NUnit.
-One benefit of using this built-in task (instead of a script) to run your tests is that the results of the tests are automatically published to Azure Pipelines or TFS.
-These results are then made available to you in the build summary.
+One benefit of using this built-in task (instead of a script) to run your tests is that the results of the tests are automatically published to the server.
+These results are then made available to you in the build summary and can be used for troubleshooting failed tests and test timing analysis.
 
 # [YAML](#tab/yaml)
 
@@ -336,7 +336,53 @@ Use the **.NET Core** task with **Command** set to **test**.
 **Path to projects** should refer to the test projects in your solution.
 
 ---
+## Collect code coverage 
+If you are building on the Windows platform, code coverage metrics can be collected using the built-in coverage data collector. For this functionality the test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
+If you use the **.NET Core** task to run tests, coverage data is automatically published to the server. The .coverage file can be downloaded from the build summary for viewing in Visual Studio.
 
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+
+Add the following snippet to your `azure-pipelines.yml` file:
+```yaml
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+```
+If you choose to run the `dotnet test` command, specify the test results logger and coverage options, and then use the [Publish Test Results](../tasks/test/publish-test-results.md) task.
+```yaml
+- script: dotnet test <test-project> --logger trx --collect "Code coverage"
+- task: PublishTestResults@2
+  inputs:
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx'
+```
+
+::: moniker-end
+
+::: moniker range="< vsts"
+
+YAML builds are not yet available on TFS.
+
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+1. Add .NET Core task to your build job and set the following properties:
+
+  * **Command:** test
+  * **Path to projects:** _Should refer to the test projects in your solution_
+  * **Arguments:** `--configuration $(BuildConfiguration) --collect "Code coverage"`
+
+2. Ensure that the **Publish test results** option remains selected.
+
+> [!TIP]
+>If you are building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
+>Code coverage results can be published to the server using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage formats.
+---
 ## Package and deliver your code
 
 Once you have built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a NuGet package,
