@@ -22,7 +22,7 @@ Public projects enable anyone to view its contents. Access is limited when the u
 
 To contribute to a public project, you must be added as a member of that project and assigned either Stakeholder or Basic access. The access level determines the user interfaces you can access. The security group you're assigned to determines the features you can exercise. For details, see [About access levels](../security/access-levels.md).
 
-You [add project members](../accounts/add-organization-users-from-user-hub.md)in the same way you do for private projects. Be sure you understand what it means to [invite an external user](../accounts/add-external-user.md) to have access to your project. If you created the project, you're automatically assigned to the Project Administrators group. 
+You [add project members](../accounts/add-organization-users-from-user-hub.md) in the same way you do for private projects. Be sure you understand what it means to [invite an external user](../accounts/add-external-user.md) to have access to your project. If you created the project, you're automatically assigned to the Project Administrators group. 
 
 
 <table>
@@ -138,6 +138,15 @@ You [add project members](../accounts/add-organization-users-from-user-hub.md)in
 3. Stakeholders have the partial same access to **Work** in public projects as in private projects. For more information, see [Default permissions and accesss](../security/permissions-access.md#agile-tools-and-work-tracking). 
 4. Basic users can view and run tests in the **Test** hub. Basic users need the Test Manager extension to get full access, which includes capability to create test plans and add test cases.
 
+
+## Pipelines/Build and Release
+
+From the web portal, you can set permissions for all or individual build pipelines, release pipelines, task groups, or variable groups. See [Set build and release permissions](../../pipelines/policies/set-permissions.md). 
+
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build and Release** features. This is indicated by the ![](/vsts/_img/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md).
+
+[!INCLUDE [temp](../security/_shared/build-release.md)]
 
 ## Related articles 
 

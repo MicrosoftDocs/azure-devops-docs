@@ -23,7 +23,7 @@ To provide Stakeholders permissions to create, edit, and manage build and releas
 > [!IMPORTANT]  
 > The **Free access to Pipelines for Stakeholders** preview feature is turned on by default for all organizations created after July, 7th 2018. It is only available from Azure Devops Services.
 
-Without this feature enabled, stakeholders can only [view and approve releases](permissions-access.md#build-and-release).
+Without this feature enabled, stakeholders can only [view and approve releases](permissions-access.md#pipelines).
 
 ## Turn on Free access to Pipelines for Stakeholders
 

@@ -1,7 +1,7 @@
 ---
 title: View and filter work items 
 titleSuffix: Azure DevOps Services Public Project
-description: View and filter work items using the work items page       
+description: View and filter work items using the work items page   
 ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
@@ -30,7 +30,7 @@ When viewing a public project, you're able to view work items defined for that p
 
 # [New navigation](#tab/new-nav)
 
-To view **Work Items**, choose **Work**. You can view recently created, updated, and completed work items.  
+To view **Work Items**, choose **Boards**. You can view recently created, updated, and completed work items.  
 
 > [!div class="mx-imgBorder"]
 ![Work hub, Work Items page ](_img/view-work-items/open-work-items-vert-brn.png)
