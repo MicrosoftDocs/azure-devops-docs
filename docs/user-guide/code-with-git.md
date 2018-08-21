@@ -1,13 +1,14 @@
 ---
 title: Code with Git
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure DevOps Services & TFS 
 description: Share code in a Git repo and new team project 
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-new-user
 ms.manager: douge
-ms.author: kaelli
-ms.date: 08/08/2018
+ms.author: chcomley
+author: chcomley
+ms.date: 09/05/2018
 ms.topic: quickstart
 monikerRange: 'vsts'
 ---
@@ -16,7 +17,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-vsts-only](../_shared/version-vsts-only.md)]
 
-After you create a new organization and team project in VSTS, you can begin sharing your code with others.
+After you create a new organization and project in Azure DevOps Services, you can begin sharing your code with others.
 
 To work with a Git repo, you clone it to your computer. Cloning a repo creates a complete local copy of the repo for you to work with, and downloads all [commits](../repos/git/commits.md) and [branches](../repos/git/branches.md) in the repo and sets up a named relationship with the repo on the server. Use this relationship to interact with the existing repo, pushing and pulling changes to share code with your team.
 
@@ -33,21 +34,21 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your VSTS organization and select **Code**. If you don't have a team project, [create one now](sign-up-invite-teammates.md).
+1. From your web browser, open the project for your Azure DevOps Services organization and select **Repos**. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
-   ![Project, select Code to clone URL](_img/project-select-code-vert.png)
+   ![Project, select Repos to clone URL](_img/project-select-repos-vert.png)
 
 2. Select **Clone** in the upper-right corner of the Code window and **copy** the URL.
   
-   ![Open project and select Code to clone URL](_img/code-with-git-clone-repo-vert.png)
+   ![Open project and select Code to clone URL](_img/code-with-git-clone-repo.png)
 
 # [Previous navigation](#tab/prev-nav)
 
-1. From your web browser, open the project for your VSTS organization and select the **Code** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md).
+1. From your web browser, open the project for your Azure DevOps Services organization and select the **Code** hub. If you don't have a project, [create one now](sign-up-invite-teammates.md).
 
 2. Select **Clone** in the upper-right corner of the Code window and **copy** the URL.
 
-	<img src="_img/code-with-git-clone-repo.png" alt="Retrieve the clone URL" style="border: 2px solid #C3C3C3;" />
+	<img src="_img/code-with-git-clone-repo-prev.png" alt="Retrieve the clone URL" style="border: 2px solid #C3C3C3;" />
 
 ---
 

@@ -51,7 +51,7 @@ Here's the notification that a PAT is nearing expiration:
 
 If you get a notification that a PAT was created and you don't know what caused this, keep in mind that some actions can automatically create a PAT on your behalf. For example:
 
-- Connecting to a Azure DevOps Services Git repo through git.exe. This creates a token with a display name like "git: https://MyOrganization.visualstudio.com/ on MyMachine."
+- Connecting to an Azure DevOps Services Git repo through git.exe. This creates a token with a display name like "git: https://MyOrganization.visualstudio.com/ on MyMachine."
 - Setting up an Azure App Service web app deployment. This creates a token with a display name like "Service Hooks :: Azure App Service :: Deploy web app."
 - Setting up web load testing as part of a pipeline. This creates a token with a display name like "WebAppLoadTestCDIntToken."
 

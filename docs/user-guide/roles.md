@@ -1,18 +1,19 @@
 ---
-title: Software development roles supported by VSTS & TFS
-description: Understand how Visual Studio Team Services & Team Foundation Server tools support various software development roles
+title: Software development roles supported by Azure DevOps Services & TFS
+description: Understand how Azure DevOps Services & Team Foundation Server tools support various software development roles
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 4600B0D9-3799-4902-814B-F6EC9098C4CE
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.topic: conceptual
-ms.date: 12/07/2016
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2013'
 ---
 
 
-# Software development roles supported by VSTS and TFS
+# Software development roles supported by Azure DevOps Services and TFS
 
 [!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
 
@@ -28,14 +29,14 @@ Team members are contributors who have access to the code base, work item tracki
 
 ### Software developers
 
-Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in VSTS or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
+Developers use Visual Studio or other [tools](tools.md) to develop their applications. They then check in their changes to a Git or TFVC repository hosted in Azure DevOps Services or TFS. From the web portal or supported IDE, they can view repositories, check history, and more. 
 
 - To get started using Git, see one of these resources: 
 	- [Share your code with Git and Visual Studio](../repos/git/share-your-code-in-git-vs.md).
 	- [Share your code in Git using Eclipses](../repos/git/share-your-code-in-git-eclipse.md).
 	- [Share your code in Git using Xcode](../repos/git/share-your-code-in-git-xcode.md).
 	- [Share your code in Git using IntelliJ](/../java/download-intellij-plug-in.md).
-	- [Get Started with Git and VSTS](../repos/git/gitquickstart.md).
+	- [Get Started with Git and Azure DevOps Services](../repos/git/gitquickstart.md).
 - To get started using TFVC, see one of the following resources: 
 	- [Develop and share your code in TFVC using Visual Studio](../repos/tfvc/share-your-code-in-tfvc-vs.md)
 	- [Share your code in TFVC using Eclipse](../repos/tfvc/share-your-code-in-tfvc-eclipse.md)
@@ -53,11 +54,11 @@ The role of project manager typically encompasses planning the feature set to de
   
 To get started, see [Get started with Agile tools to plan and track work](../boards/backlogs/overview.md).  
 
-If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with VSTS and TFS. See [Bulk modify using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
+If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with Azure DevOps Services and TFS. See [Bulk modify using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
 ### DevOps: builders, testers, and release managers
 
-One of the main advantages to working with VSTS or TFS is the suite of tools and integrated functionality that supports build, testing, and deploying software applications. Here are the main DevOps associated tasks supported by VSTS and TFS:
+One of the main advantages to working with Azure DevOps Services or TFS is the suite of tools and integrated functionality that supports build, testing, and deploying software applications. Here are the main DevOps associated tasks supported by Azure DevOps Services and TFS:
 
 - Define builds
 - Unit test your code 
@@ -79,9 +80,9 @@ Stakeholder access essentially provides free access to a limited set of feature 
 
 ## Administrator roles
 
-A distinct advantage to working in VSTS is the reduced overhead of server maintenance. That said, there are still several administrative tasks required to support a collaborative, integrated software development environment
+A distinct advantage to working in Azure DevOps Services is the reduced overhead of server maintenance. That said, there are still several administrative tasks required to support a collaborative, integrated software development environment
 
-The main tasks are grouped here by membership within a security group or role: 
+The main tasks are grouped here by membership within a security group or role:
 
 ### Team administrators
 
@@ -112,7 +113,7 @@ Responsible for project level settings, including:
 Responsible for organization or collection-level settings. These include:
 
 - Manage billing  
-- Add and manage team projects    
+- Add and manage projects
 - Manage collection-level settings and permissions 
 - Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
@@ -129,7 +130,7 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
 - Manage database backups 
 - Server administrative settings and permissions 
 - Build retention policies
-- Add and manage team project collections     
+- Add and manage project collections
   
 To get started, see [Server Administration (TFS)](/tfs/server/index). 
 

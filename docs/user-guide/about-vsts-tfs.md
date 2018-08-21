@@ -8,7 +8,7 @@ ms.manager: douge
 ms.author: kaelli
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 08/02/2018
+ms.date: 09/05/2018
 ---
 
 # Understand differences between Azure DevOps Services and TFS
@@ -35,7 +35,7 @@ Use this topic to determine which offering&mdash;cloud or on-premises&mdash;meet
 
 For each area, we'll discuss both the current state of the world and the expected impacts from short and medium-term plans. Check back here for updates, because this information may change frequently.
 
-If you're on TFS and considering moving to VSTS, read [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md) to understand your options.
+If you're on TFS and considering moving to Azure DevOps Services, read [Migrate data from TFS to Azure DevOps Services](../articles/migrate-to-vsts-from-tfs.md) to understand your options.
 
 ## Fundamental differences between TFS and Azure DevOps Services
 
@@ -47,23 +47,23 @@ for you to understand.
 ### Scope and scale data
 
 TFS has three options for scoping and scaling data&mdash;deployments, 
-team project collections, and team projects. In the simplest case, deployments are just servers. 
+project collections, and projects. In the simplest case, deployments are just servers. 
 Deployments can also be more complicated, however, including everything from a two-server deployment 
 where SQL is split out on a separate machine to high availability farms comprising lots of servers. 
-Team project collections serve as containers for security and administration in addition to serving as 
-physical database boundaries. They are also used to group related team projects. Finally, team projects 
+Project collections serve as containers for security and administration in addition to serving as 
+physical database boundaries. They are also used to group related projects. Finally, projects 
 are used to encapsulate the assets of individual software projects, including source code, work items, 
 and so on. Learn more about these concepts at 
-[Manage team project collections](/tfs/server/admin/manage-team-project-collections). 
+[Manage project collections](/tfs/server/admin/manage-team-project-collections). 
 
 Azure DevOps Services is slightly different. It currently only has two options for scoping and scaling 
-data&mdash;organizations and team projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://contoso.visualstudio.com```) 
-and always contain exactly one team project collection. Organizations can contain multiple team projects, like 
-TFS team project collections.
+data&mdash;organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://contoso.visualstudio.com```) 
+and always contain exactly one project collection. Organizations can contain multiple projects, like 
+TFS project collections.
 
-We are planning a third option for scoping and scaling data in Azure DevOps Services&mdash;a new entity called an Enterprise. Rather than adding support for multiple team project collections within an organization, multiple
+We are planning a third option for scoping and scaling data in Azure DevOps Services&mdash;a new entity called an Enterprise. Rather than adding support for multiple project collections within an organization, multiple
 organizations could be grouped within an organization. Additionally, we will merge organizations and their single
-team project collections into a single entity. The organization will be similar to the TFS deployment,
+project collections into a single entity. The organization will be similar to the TFS deployment,
 and the organization will be similar to the TFS collection.
 
 To be ready to use the organization entity, we recommend that you create organizations in Azure DevOps Services whenever you would
@@ -93,7 +93,7 @@ security.
 ### Users and groups
 
 In TFS, you provide users access to deployments by adding Active Directory (AD) groups to various TFS groups 
-(for example the Project Contributors group for an individual team project). The AD group memberships are kept in sync. 
+(for example the Project Contributors group for an individual  project). The AD group memberships are kept in sync. 
 As users are added and removed in AD they also gain and lose access to TFS. 
 
 In Azure DevOps Services, you can use a similar mechanism to 
@@ -147,24 +147,24 @@ You customize the work tracking experience in two different ways depending on th
 - For TFS, you use the **On-premises XML** process model which supports customization through import/export of XML definition files for work tracking objects   
 
 While the **On-premises XML** process model option is quite powerful, it also 
-can cause a number of problems. Chief among these is that processes for existing team projects do not update automatically
+can cause a number of problems. Chief among these is that processes for existing projects do not update automatically
 when TFS is upgraded. 
  
 For example, TFS 2013 introduced several new features which depended on new work item types and other process template
-changes. When you upgrade from TFS 2012 to TFS 2013, each team project collection gets new versions of each of the
+changes. When you upgrade from TFS 2012 to TFS 2013, each project collection gets new versions of each of the
 "in the box" process templates which include these changes. However, these changes are not automatically incorporated
-in existing team projects. Instead, after you finish upgrading you have to include them in each team project by using
+in existing projects. Instead, after you finish upgrading you have to include them in each project by using
 the [Configure Features](../reference/configure-features-after-upgrade.md)
 wizard or a more manual process.
 
 To avoid these issues in Azure DevOps Services, custom process templates and **witadmin.exe** have always been disabled (only export functions are enabled). This has 
-enabled us to automatically update all team projects with each Azure DevOps Services upgrade. Meanwhile, the product team has been 
+enabled us to automatically update all projects with each Azure DevOps Services upgrade. Meanwhile, the product team has been 
 working hard to make customizing processes possible in ways that we can support easily and continuously. These first 
 of these changes was recently introduced, and more changes are on the way.
 
 With these new Azure DevOps Services process customization capabilities, you can make customizations directly within the 
 Azure DevOps Services Web UI. If you want to customize your processes programmatically, you can also make customizations
-through REST endpoints. When you customize team projects in this way, those projects will continue to update
+through REST endpoints. When you customize projects in this way, those projects will continue to update
 automatically when we release new versions of their base processes with Azure DevOps Services updgrades. 
 
 To learn more, see [Customize your work tracking experience](../reference/customize-work.md).
@@ -180,10 +180,10 @@ This option is quite similar to using custom process templates in TFS, except th
 * [Restrictions](../organizations/settings/work/import-process/import-process.md) exist in the customizations 
 that can be imported into Azure DevOps Services. 
 
-* Process templates are associated with all team projects created from them, and changes made to the process are reflected 
-in each team project.
+* Process templates are associated with all projects created from them, and changes made to the process are reflected 
+in each project.
 
-Team projects in organizations which participate in this process customization private preview will not update automatically with 
+Projects in organizations which participate in this process customization private preview will not update automatically with 
 Azure DevOps Services upgrades. 
 
 ### Reporting
@@ -198,7 +198,7 @@ very easy to set up and use.
 In addition, with Azure DevOps Services you have access to the following services:
 * [Analytics service](../report/analytics/what-is-analytics.md) and [Analytics widgets](../report/analytics/analytics-widgets.md). The Analytics service is optimized for fast read-access and server-based aggregations.  
 * [PowerBI integration](../report/powerbi/overview.md) which supports getting Analytics data into Power Bi reports, providing a nice combination of simplicity and power. 
-* [OData support](../report/extend-analytics/index.md) which allows you to directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple team projects or their entire Azure DevOps Services organization.
+* [OData support](../report/extend-analytics/index.md) which allows you to directly query the Analytics Service from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or their entire Azure DevOps Services organization.
 
 We plan to make these services available in TFS in a future release.
 

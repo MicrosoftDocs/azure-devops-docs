@@ -66,7 +66,7 @@ you can invite others to join your project, add code, start planning and trackin
 
 	<img src="../../organizations/accounts/_img/_shared/team-project-created.png" alt="Add code or work items" style="border: 2px solid #C3C3C3;" />
 
-	Congratulations, you're now a Azure DevOps organization owner! 
+	Congratulations, you're now an Azure DevOps organization owner! 
 
 	To sign in to your account at any time, go to ```https://{youraccount}.visualstudio.com```.
 
