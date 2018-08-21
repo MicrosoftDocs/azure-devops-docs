@@ -145,21 +145,24 @@ Some of the most significant variables are described in the following tables.
 > | Release.ReleaseUri | The URI of current release. | vstfs:///ReleaseManagement/Release/118 | |
 > | Release.ReleaseDescription | The text description provided at the time of the release. | Critical security patch | |
 > | Release.RequestedFor | The display name of identity that triggered the release. | Mateo Escobedo | |
+> | Release.RequestedForEmail | The email address of identity that triggered the release. | mateo@fabrikam.com | |
 > | Release.RequestedForId | The ID of identity that triggered the release. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | |
 > | Release.EnvironmentName | The name of environment to which deployment is currently in progress. | Dev | |
 > | Release.EnvironmentId | The ID of the environment instance in a release to which the deployment is currently in progress. | 276 | |
-> | Release.EnvironmentUri | The URI of environment instance in a release to which deployment is currently in progress. | vstfs:///ReleaseManagement/Environment/276 | |
+> | Release.EnvironmentUri | The URI of the environment instance in a release to which deployment is currently in progress. | vstfs:///ReleaseManagement/Environment/276 | |
 > | Release.DefinitionEnvironmentId | The ID of the environment in the corresponding release pipeline. | 1 | TFS 2015 |
 > | Release.AttemptNumber | The number of times this release is deployed in this environment. | 1 | TFS 2015 |
 > | Release.Deployment.RequestedFor | The display name of the identity that triggered (started) the deployment currently in progress. | Mateo Escobedo | TFS 2015 |
 > | Release.Deployment.RequestedForId | The ID of the identity that triggered (started) the deployment currently in progress. | 2f435d07-769f-4e46-849d-10d1ab9ba6ab | TFS 2015 |
+> | Release.DeploymentID | The ID of the deployment. Unique per job. | 254 |
+> | Release.DeployPhaseID | The ID of the phase where deployment is running. | 127 |
+> | Release.Environments.{environment-name}.status | The deployment status of the environment. | InProgress |
+> | Release.ReleaseWebURL | The URL for this release. | https:&#47;/fabrikam.visualstudio.com/f3325c6c/\_release?releaseId=392&_a=release-summary |
+> | Release.SkipArtifactDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent. | FALSE |
+> | Release.TriggeringArtifact.Alias | The alias of the artifact which triggered the release. This is empty when the release was scheduled or triggered manually. | fabrikam\_app |
 
 <!-- Other hidden variables
-[RELEASE_DEPLOYMENTID] -> [276]
 [RELEASE_RELEASEWEBURL] -> [https://adventwrks.visualstudio.com/79f5c12e-3337-4151-be41-a268d2c73344/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?releaseId=118&_a=release-summary]
-[RELEASE_SKIPARTIFACTSDOWNLOAD] -> [False]
-[RELEASE_DEPLOYPHASEID] -> [276]
-[RELEASE_DEPLOYMENT_REQUESTEDFOREMAIL] -> [mateoe@microsoft.com]
 -->
 
 ### Release environment variables
