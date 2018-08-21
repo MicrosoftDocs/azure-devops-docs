@@ -3,9 +3,5 @@
   topicHref: /vsts/index
   items: 
   - name: Azure Pipelines
-    tocHref: /vsts/
+    tocHref: /vsts/pipelines/
     topicHref: /vsts/pipelines/index
-    items:
-    - name: Pipelines
-      tocHref: /vsts/
-      topicHref: /vsts/pipelines/index

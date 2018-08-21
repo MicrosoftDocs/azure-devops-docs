@@ -33,7 +33,7 @@
 - name: Resources 
   items:
   - name: Agile
-    href: /vsts/index-boards
+    href: /vsts/boards/index
   - name: Testing
     href:  /vsts/index-test
   - name: Uservoice Integration (Marketplace extension)

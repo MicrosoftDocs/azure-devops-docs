@@ -105,7 +105,7 @@ featureFlags:
 <table border="0" class="cardsA">
 <tr>
 <td width="33%">
-                                <a href="/vsts/index-boards">
+                                <a href="/vsts/boards/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -124,7 +124,7 @@ featureFlags:
                                 </a>
 </td>
 <td width="33%">
-                                <a href="/vsts/index-repos">
+                                <a href="/vsts/repos/index">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
