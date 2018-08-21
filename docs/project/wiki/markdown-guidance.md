@@ -787,6 +787,22 @@ $$
 
 ::: moniker-end
 
+## Table of Contents (TOC) for Wiki Pages
+
+You can now just add a tag [[\_TOC\_]] to enable table of contents in your page. The TOC is generated when the tag is added to the page and there is at least one heading in the page.
+
+![Table of contents](_img/toc_sample.png)
+
+The [[\_TOC\_]] can be placed anywhere in the page to render the Table of Contents.
+Only Markdown headings are considered for TOC (HTML heading tags are not).
+
+All HTML and markdown tags are stripped from the headings while adding it inside the TOC block. 
+For example: Adding bold and italics to a heading text will render the TOC as follows.
+
+![Tags for Toc](_img/toc_tags.png)
+ 
+This is to maintain consistency in the formatting in TOC.
+Note: The tag [[\_TOC\_]] is case sensitive i.e. [[\_toc\_]] may not render the TOC.
 
 ## Related articles  
 
