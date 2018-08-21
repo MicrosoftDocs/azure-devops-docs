@@ -18,7 +18,7 @@ ms.date: 07/21/2018
 [!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
 
 ::: moniker range="vsts"
-The web portal for Azure DevOps Services is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on the navigation selected: 
+The web portal for Azure DevOps Services and Team Foundation Server (TFS) is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on the navigation selected: 
 - **New navigation**: **Overview**, **Boards**, **Repos**, **Pipelines**, **Test Plans**, and **Artifacts**
 - **Previous navigation**: **Dashboards**, **Code**, **Work**, **Build and Release**, **Test**, **Wiki**, and **Analytics views**
 
@@ -26,7 +26,7 @@ Each service provides you with one or more pages which support a number of featu
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 The web portal for Team Foundation Server (TFS) is organized around a set of applications&mdash;such as, **Dashboards**, **Code**, **Work**, **Build and Release**&mdash;as well as administrative pages and several task-specific features such as the search box. Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact. 
 ::: moniker-end
 
@@ -36,29 +36,29 @@ Here's what you need to know to get up and running using the web portal.
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
-- [**Switch service or page**](go-to-service-page.md): use to switch to a different service or functional area
+- [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
-- [**Switch to a different project**](work-across-projects.md): use to switch to a different project
-- [**Search box**](search-basics.md): use to find code, work items, or wiki content 
-- [**Work across projects**](work-across-projects.md): use to quickly open work assigned to you, your active pull requests, or items you've favorited 
+- [**Open another project or repo**](work-across-projects.md): use to switch to a different project or access work items and pull requests defined in different projects, or items you've favorited 
+- [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation   
-- [**Breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
+- [**Search box**](search-basics.md): use to find code, work items, or wiki content 
 - [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
 - [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources. 
 
 ::: moniker-end
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2013 <= tfs-2018"
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end
 
 # [Previous navigation](#tab/previous-nav)
 
-- [**Switch service or page**](go-to-service-page.md): use to switch to a different service or functional area
+- [**Open a service, page, or settings**](go-to-service-page.md): use to switch to a different service or functional area
 - [**Add an artifact or team**](add-artifact-team.md): use to quickly add a work item, Git repo, build or release pipelines, or a new team
-- [**Switch to a different project or team**](work-across-projects.md): use to switch to a different project or browse teams 
-- [**Search box**](search-basics.md): use to find code, work items, or wiki content 
+- [**Open another project or repo, or switch to a different team**](work-across-projects.md): use to switch to a different project or browse teams 
 - [**Work across projects**](work-across-projects.md): use to quickly open work assigned to you, your active pull requests, or items you've favorited 
+- [**Open team artifacts, use breadcrumbs & selectors**](use-breadcrumbs-selectors.md): use to navigate within a service, to open other artifacts or return to a root function
 - [**Work with favorites**](set-favorites.md): favorite artifacts to support quick navigation   
+- [**Search box**](search-basics.md): use to find code, work items, or wiki content 
 - [**Your profile menu**](../../organizations/settings/set-your-preferences.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json): use to set personal preferences, notifications, and enable preview features  
 - [**Settings**](../../organizations/settings/index.md): use to add teams, manage security, and configure other project and organization-level resources. 
 
