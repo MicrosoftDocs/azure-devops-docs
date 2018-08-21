@@ -47,7 +47,7 @@ The Users view shows key information per user in a table. In this view, you can:
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 

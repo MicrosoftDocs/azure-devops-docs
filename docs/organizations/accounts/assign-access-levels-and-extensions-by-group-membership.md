@@ -29,7 +29,7 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Go to your Azure DevOps Services **Admin settings**.
 

@@ -36,7 +36,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
 1. Based on the number of users who need TFS CALs, [pay for Azure DevOps Services users](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser). Azure DevOps Services organizations include five free users and these users don't apply to TFS.
 
-1. If you haven't already, sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
+1. If you haven't already, sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 
 1. [Add users](../accounts/add-organization-users-from-user-hub.md) to your Azure DevOps Services organization so you can more easily track these users.
 
@@ -57,7 +57,7 @@ To learn more about the requirements to access TFS or Azure Test Plans, see [Cha
 
     Azure Test Plans Manager is installed automatically in TFS.
 
-1. If you haven't already, sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
+1. If you haven't already, sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 
 1. [Add users](../accounts/add-organization-users-from-user-hub.md) to your Azure DevOps Services organization. [Assign them to Azure Test Plans Manager](../../marketplace/assign-paid-extensions.md) via Azure Test Plans in your Azure DevOps Services organization so you can track these users.
 

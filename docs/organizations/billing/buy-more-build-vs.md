@@ -93,7 +93,7 @@ To make subsequent edits to paid quantities in your VSTS organization, you only 
   your VSTS organization at any time,
   go to your VSTS organization toolbar,
   then go to **Build and Release**
-  (```https://{yourorganization}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
+  (```https://dev.azure.com/{yourorganization}/_admin/_buildQueue?_a=resourceLimits```).
 
 ## XAML Build
 
@@ -111,7 +111,7 @@ The hosted XAML build controller is no longer supported.
 
 When your team's needs for build or release capacity change, you can change the number of paid concurrent jobs.
 
-1. Go to your VSTS organization toolbar, then go to **Build and Release**(```https://{yourorganization}.visualstudio.com/_admin/_buildQueue?_a=resourceLimits```).
+1. Go to your VSTS organization toolbar, then go to **Build and Release**(```https://dev.azure.com/{yourorganization}/_admin/_buildQueue?_a=resourceLimits```).
 
     ![Go to VSTS organization toolbar > Build and Release](_img/get-more-build-load-testing/manage-pipelines-team-services.png)
 

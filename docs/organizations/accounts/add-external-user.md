@@ -36,7 +36,7 @@ If you’re an Azure Active Directory (Azure AD)-backed Azure DevOps Services or
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
@@ -55,7 +55,7 @@ If you’re an Azure Active Directory (Azure AD)-backed Azure DevOps Services or
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Go to the **Users** tab in **Settings**.
 

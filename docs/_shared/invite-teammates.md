@@ -6,7 +6,7 @@ ms.topic: include
 
 You provide others access to your organization by adding their email addresses to your organization.
 
-1. Sign in to your VSTS organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
 
 2. Choose ![gear icon](../_img/icons/gear-icon.png) **Admin settings**.
 

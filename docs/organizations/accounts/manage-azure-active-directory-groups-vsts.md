@@ -54,7 +54,7 @@ and differences in how you
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
@@ -78,7 +78,7 @@ and differences in how you
 
 # [Previous navigation](#tab/prev-nav)
 
-1.	Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+1.	Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 

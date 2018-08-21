@@ -24,7 +24,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
 If your users don't already exist in Azure AD:
 
-1. Sign in to the [Azure portal](https://manage.windowsazure.com/) or the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory. See these topics for information about how to sign in:
+1. Sign in to the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory. See the following topics for information about signing in:
 
    * [Add users in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-create-users)
    * [Add users in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-users-create-azure-portal)

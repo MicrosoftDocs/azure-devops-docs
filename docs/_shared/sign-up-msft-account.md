@@ -26,7 +26,7 @@ To manage your code, choose **Git** or **Team Foundation Version Control (TFVC)*
 
 Congratulations, you're now an Azure DevOps organization owner!
 
-To sign in to your organization at any time, go to https://{yourorganization}.visualstudio.com.
+To sign in to your organization at any time, go to https://dev.azure.com/{yourorganization}.
 
 >[!Note]
 >If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes DevOps as a benefit, learn how to add your work or school account to your subscription so you can use your subscriber benefits in DevOps.

@@ -77,7 +77,7 @@ Before you begin, do the following:
 
 # [New navigation](#tab/new-nav)
 
-a. Sign in to your Azure DevOps Services organization (```https://{yourorganization}.visualstudio.com```).
+a. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
 b. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/26/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -31,41 +31,41 @@ To change your Azure DevOps Services organization URL, you need at least Basic a
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-1. Go to your Azure DevOps Services admin settings.
+2. Go to your Azure DevOps Services admin settings.
 
    ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-1. Select **Overview**, and then choose the edit icon (pencil) next to your organization URL.
+3. Select **Overview**, and then choose the edit icon (pencil) next to your organization URL.
 
    ![Rename you organization](_img/rename-vso-organization/rename-organization-vert.png)
 
-1. Confirm that you want to rename your organization. Enter a new name for your organization and save your changes.
+4. Confirm that you want to rename your organization. Enter a new name for your organization and save your changes.
 
    ![Enter new organization name and save changes](_img/rename-vso-organization/enter-new-organization-name-save-changes.png) 
 
-Your organization is renamed.
-
 # [Previous navigation](#tab/prev-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://{yourorganization}.visualstudio.com`).
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-1. Go to your Azure DevOps Services organization settings.
+2. Go to your Azure DevOps Services **Organization settings**.
 
-   ![Go to organization settings](../../_shared/_img/organization-settings-new-ui.png)
+   ![Go to organization settings](../../_shared/_img/settings/open-account-settings.png)
 
-1. Under **Settings**, change your organization URL.
+3. Under **Settings**, change your organization URL.
 
    ![Change your organization name](_img/rename-vso-organization/vsorenameorganization.png)
 
-1. Confirm that you want to rename your organization. Give your organization a new name. Save your changes.
+4. Confirm that you want to rename your organization. Give your organization a new name and **Save changes**.
 
    ![Confirm rename of your organization and provide a new organization name](_img/rename-vso-organization/vsoconfirmorganizationrename.png)
+
+---
 
 Your organization is renamed.
 
