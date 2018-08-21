@@ -384,11 +384,11 @@ YAML builds are not yet available on TFS.
 
 2. Ensure that the **Publish test results** option remains selected.
 
+---
+
 > [!TIP]
 > If you are building on Linux or macOS, you can use [Coverlet](https://github.com/tonerdo/coverlet) or a similar tool to collect code coverage metrics.
 > Code coverage results can be published to the server using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage formats.
-
----
 
 ## Package and deliver your code
 
