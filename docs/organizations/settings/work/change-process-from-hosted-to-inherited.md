@@ -16,9 +16,6 @@ ms.date: 05/30/2018
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-> [!NOTE]  
-> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your Azure DevOps Services organization(s).
-
 Once you've [cloned your Hosted XML process to an inherited process](upgrade-hosted-to-inherited.md), you can change the project(s) from the Hosted XML process to the inherited process. You change a project from a Hosted XML process to its derived inherited process to start customizing the process through the user interface.  
 
 > [!CAUTION] 
