@@ -25,7 +25,7 @@ For example, you can quickly access and navigate to the following artifacts defi
 # [New navigation](#tab/new-nav)
 
 ::: moniker range="vsts"
-- **Projects**: Team projects and teams within the projects that you work in  
+- **Projects**: Projects defined for an Azure DevOps organization  
 - **Work items**: Work items assigned to you
 - **Pull requests**: Pull requests you've initiated or that are relevant to you across all team projects you work in
 - **Favorites**: Artifacts&mdash;such as projects, teams, repositories, shared queries, and more &mdash;that you've favorited
@@ -244,9 +244,7 @@ To remove an item from your favorites list, choose the favorited icon.
 
 To filter the list, type a keyword in the *Filter favorites* box. The list will filter based on keyword matches to the title or team project name associated with the favorited item.
 
-
 ---
-
 
 
 ::: moniker range="tfs-2017"
@@ -268,5 +266,5 @@ To learn more about team rooms, see [Collaborate in a team room](../../notificat
 
 - [Enable preview features](preview-features.md)  
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
-- [View and update work items via the mobile browser](mobile-work.md)  
+  
 

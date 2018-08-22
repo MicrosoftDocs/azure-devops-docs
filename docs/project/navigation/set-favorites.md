@@ -32,7 +32,7 @@ You can set favorites for the following artifacts from the indicated page.
 > [!div class="mx-tdCol2BreakAll"]        
 > |Service/area |     Artifacts        | Page |
 > |---------------|---------|---------| 
-> | Organization & projects | Projects and teams | **Projects**  (personal favorites only)  |  
+> | Organization & projects | Projects | **Projects**  (personal favorites only)  |  
 > | Dashboard | Team dashboards  | **Overview>Dashboards**  | 
 > | Code | Repositories | **Repos>Branches**  (personal favorites only) | 
 > | Work, Agile tools for a team | Backlogs, boards, sprint backlogs, sprint taskboards | **Boards>Boards** or **Backlogs**, or **Sprints** | 
@@ -98,7 +98,7 @@ You can set favorites for the following artifacts from the indicated page.
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Azure DevOps logo](_img/favorites/favorite-project-vert.png)  
 <a id="team-artifact" />
-0. To favorite a team artifact, open **Work>Backlogs** or **Work>Boards**. Select the team you want to favorite from the team selector and choose the ![](../../_img/icons/icon-favorite-star.png) star icon.
+0. To favorite a team artifact, open **Boards>Boards** or **Boards>Backlogs**. Select the team you want to favorite from the team selector and choose the ![](../../_img/icons/icon-favorite-star.png) star icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Work>Boards, set team favorite](_img/favorites/set-team-favorite-vert.png)
@@ -172,9 +172,9 @@ Access your favorites by choosing the ![](../../_img/icons/inbox.png) inbox icon
 
 ::: moniker range="vsts"
 
-You can favorite several Agile tools for a team from a **Work** page.  
+You can favorite several Agile tools for a team from a **Boards** page.  
 
-1. From **Work**, choose the page of interest, such as **Boards**, **Backlogs**, or **Sprints**.  
+1. Choose **Boards**, and then choose the page of interest, such as **Boards**, **Backlogs**, or **Sprints**.  
 
 	For example, here we choose (1) **Work** and then (2) **Backlogs**.
 
@@ -230,13 +230,39 @@ Favoriting a product backlog, sprint backlog, or Kanban board isn't supported in
    
 ::: moniker-end  
 
+::: moniker range="vsts"  
+
+1. From **Dashboards**, open the selector and choose the **Browse all dashboards** option. 
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Dashboards, Browse all dashboards option](../../report/dashboards/_img/dashboards/browse-all-dashboards.png)  
+
+2. The **Mine** page shows your favorited dashboards, and all dashboards of teams that you belong to. The **All** page (shown below) lists all dashboards defined for the project in alphabetical order. You can filter the list by team or by keyword.   
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Dashboards, Browse all dashboards option](../../report/dashboards/_img/dashboards/all-dashboards-list.png)  
+
+	> [!TIP]
+	> You can change the sort order of the list by choosing the column label.   
+	 
+3. To favorite a dashboard, hover over the dashboard and choose the ![star icon](../../_img/icons/icon-favorite-star.png).  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Dashboards, Browse all dashboards option](../../report/dashboards/_img/dashboards/favorite-dashboard.png)  
+
+	Favoriting a dashboard will cause it to appear on your **Favorites** page and towards the top in the **Dashboards** selection menu.
+   
+::: moniker-end  
+
 ::: moniker range=">= tfs-2017  <= tfs-2018"  
 [!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
 ::: moniker-end  
 
 # [Previous navigation](#tab/previous-nav)
 
-Favoriting a dashboard isn't supported in previous navigation.  
+::: moniker range=">= tfs-2017  <= tfs-2018"  
+Favoriting a dashboard isn't supported for TFS 2018 and earlier versions.
+::: moniker-end  
 
 ---
 
@@ -246,7 +272,7 @@ Favoriting a dashboard isn't supported in previous navigation.
 
 ::: moniker range="vsts"  
 
-From any **Code** page, open the repository selector and choose the ![](../../_img/icons/icon-favorite-star.png) star icon for the repository you want to favorite.
+From any **Repos** page, open the repository selector and choose the ![](../../_img/icons/icon-favorite-star.png) star icon for the repository you want to favorite.
 
 > [!div class="mx-imgBorder"]  
 > ![Code page, Repository selector, choose favorites icon](_img/favorites/favorite-repo-vert.png)  
@@ -273,10 +299,10 @@ From any **Code** page, open the repository selector and choose the ![](../../_i
 
 ::: moniker range="vsts"  
 
-Open **Build and Release>Builds** and choose either **Mine** or **Definitions** page. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
+Open **Pipelines>Builds** and choose either **Mine** or **Definitions** page. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the build definition you want to favorite. Or, open the context menu of the build definition, and then select **Add to my favorites** or **Add to team favorites**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Build & Release, Builds, Add to my favorites or team favorites, new navigation](_img/favorites/set-build-favorites-vert.png)
+> ![Pipelines>Builds, Add to my favorites or team favorites, new navigation](_img/favorites/set-build-favorites-vert.png)
 
 ::: moniker-end
 
@@ -300,7 +326,7 @@ Open **Build and Release>Builds** and choose either **Mine** or **Definitions** 
 
 ::: moniker range="vsts"  
 
-Open **Work>Queries** and choose the **All** page. Expand a folder as needed. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the query you want to favorite. 
+Open **Boards>Queries** and choose the **All** page. Expand a folder as needed. Choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the query you want to favorite. 
 
 Or, open the context menu of the query, and then select **Add to Team Favorites**, and then select from the list of teams. 
 
@@ -349,11 +375,48 @@ Open **Work>Queries**. Next, open the ![](../../_img/icons/actions-icon.png) act
 
 ## Favorite a delivery plan 
 
+To learn more about delivery plans, see [Review team Delivery Plans](../../boards/plans/review-team-plans.md).
+
+#[New navigation](#tab/new-nav)  
+
+::: moniker range="vsts"    
+
+To mark a delivery plan as a favorite, open the **Boards>Plans** page and choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the Delivery Plan. 
+::: moniker-end    
+
+::: moniker range=">= tfs-2015 <= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
+
+
+# [Previous navigation](#tab/previous-nav)
+
 To mark a delivery plan as a favorite, open the **Work>Plans** page and choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to the Delivery Plan.
 
-## Favorite a test plan    
+---
+
+## Favorite a test plan 
+
+To learn more about test plans, see [Create a test plan and test suite](../../test/create-a-test-plan.md).
+
+#[New navigation](#tab/new-nav)  
+
+::: moniker range="vsts"    
+
+To mark a test plan as a favorite, open **Test Plans>Test Plans** and choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
+
+::: moniker-end    
+
+::: moniker range=">= tfs-2015 <= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
+
+
+# [Previous navigation](#tab/previous-nav)
 
 To mark a test plan as a favorite, open the **Test>Test Plans** page and choose the ![](../../_img/icons/icon-favorite-star.png) star icon next to a test plan from the menu that shows All test plans. 
+
+---
 
 
 <a id="unfavorite">  </a>
@@ -383,25 +446,7 @@ You can unfavorite an artifact from the **Projects>Favorites** page and choose t
 
 Similarly, you can unfavorite an artifact from the same page where you favorited it. 
 
-
 ---
-
-
-
-<!---
-<a id="team-favorites"> </a>
-## Set team favorites 
- You can define team favorites for the following:
-
-- **Code/Explorer**: Add repos or folders to team favories  
-- **Work/Queries**: A  [Shared work item queries](../../boards/queries/using-queries.md) to team favorites    
-- **Build/Explorer**: Add build definitions to team favorites   
-
-From your team context, drag shared queries, builds, and folders to Team favorites to provide quick access to those items. Or, choose the Add to team favorites option from the context menu for the item. You must be [added as a team admin](../../organizations/settings/add-team-administrator.md) to manage team favorites.  
-
-![Drag items to team favorites](../../_img/alm-index-team-favorites.png)  
-
--->
 
 
 ## Related articles

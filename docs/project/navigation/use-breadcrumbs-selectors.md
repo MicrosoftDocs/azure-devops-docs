@@ -103,7 +103,7 @@ For example, here we open the *Work in Progress* dashboard.
 
 ---
 
-### Example: Work>Backlogs 
+### Example: Backlogs 
 
 
 
@@ -111,7 +111,7 @@ For example, here we open the *Work in Progress* dashboard.
 
 ::: moniker range="vsts"
 
-From the **Work>Backlogs** page, you use the selector to switch to another team's backlog. Again, favorited backlogs appear towards the top of the menu. You can also filter the list based on a team name or keyword.  
+From the **Boards>Backlogs** page, you use the selector to switch to another team's backlog. Again, favorited backlogs appear towards the top of the menu. You can also filter the list based on a team name or keyword.  
 
 > [!div class="mx-imgBorder"]  
 > ![Work>Backlogs, backlogs selector](_img/breadcrumbs/backlog-selector.png) 
@@ -161,8 +161,8 @@ Also, you can choose a query that you've favorited from the selector menu, Or, y
 
 ::: moniker-end
 
-### Example: Build and release folders and breadcrumbs
-Breadcrumb-and-selector navigation elements are used within most services that support defining and organizing artifacts within folders. This includes **Build and Release** applications, **Builds** and **Releases** pages. 
+### Example: Pipeline folders and breadcrumbs
+Breadcrumb-and-selector navigation elements are used within most services that support defining and organizing artifacts within folders. This includes **Pipelines** or **Build and Release** applications pages. 
 
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"
