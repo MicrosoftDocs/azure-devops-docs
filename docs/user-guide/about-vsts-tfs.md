@@ -57,7 +57,7 @@ and so on. Learn more about these concepts at
 [Manage project collections](/tfs/server/admin/manage-team-project-collections). 
 
 Azure DevOps Services is slightly different. It currently only has two options for scoping and scaling 
-data&mdash;organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://contoso.visualstudio.com```) 
+data&mdash;organizations and projects. Organizations in Azure DevOps Services get their own URLs (for example, ```https://dev.azure.com/fabrikamfiber```) 
 and always contain exactly one project collection. Organizations can contain multiple projects, like 
 TFS project collections.
 
