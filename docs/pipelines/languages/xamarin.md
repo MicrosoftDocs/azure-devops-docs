@@ -1,14 +1,15 @@
 ---
 title: Xamarin
-description: CI and CD for Xamarin projects.
+description: Building Xamarin projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
-ms.topic: quickstart
 ms.assetid: 2bf80a9f-3f37-4582-8226-4a1d7e519265
-ms.manager: alewis
-ms.author: dastahel
+ms.manager: douge
+ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 08/17/2018
+ms.date: 08/31/2018
+ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 

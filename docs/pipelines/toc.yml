@@ -27,15 +27,15 @@
   - name: Go
     href: apps/go/go.md
   - name: Java
-    href: apps/java/build-gradle.md
-  - name: JavaScript
+    href: languages/java.md
+  - name: JavaScript and Node.js
     href: languages/javascript.md
   - name: Python
     href: languages/python.md
   - name: Xamarin
-    href: apps/mobile/xamarin.md
+    href: languages/xamarin.md
   - name: Xcode
-    href: apps/mobile/xcode-ios.md
+    href: languages/xcode.md
 - name: Targets
   items:
   - name: Azure Kubernetes Service
@@ -258,8 +258,8 @@
     href: policies/set-permissions.md 
   - name: C/C++ with GCC
     href: apps/c-cpp/gcc.md
-  - name: Maven
-    href: apps/java/build-maven.md
+  - name: Java
+    href: languages/java.md
   - name: .NET for Windows
     href: apps/windows/dot-net.md
   - name: Universal Windows Platform
