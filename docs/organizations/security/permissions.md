@@ -838,7 +838,7 @@ that have been saved under the Shared area. Applies to VSTS only.</td>
 	</tr>
 	<tr>
 		<td id="suppress-notifications-for-work-item-updates-permission">Suppress notifications for work item updates</td>
-		<td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update).</p></td>
+		<td><p>Users with this permission can update work items without generating notifications. This is useful when performing migrations of bulk updates by tools and want to skip generating notifications.</p><p>Consider granting this permission to service accounts or users who have been granted the **Bypass rules on work item updates** permission. You can set the `suppressNotifications` parameter to `true` when updating working via [Work Items - update REST API](/rest/api/vsts/wit/work%20items/update).</p></td>
 	</tr>
 	<tr>
 		<td id="update-project-visibility">Update project visibility</td>
