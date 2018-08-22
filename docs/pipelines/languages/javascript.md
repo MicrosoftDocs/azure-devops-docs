@@ -214,13 +214,9 @@ To run tests in your build pipeline, add the following snippet to `azure-pipelin
 - script: npm test
 ```
 
-::: moniker-end
-
 ### Publish test results
 
 Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit or xUnit test results to the server. In this example, results are published in JUnit format. The test results published can be viewed under [Tests Tab](../test/review-continuous-test-results-after-build.md) in build.
-
-::: moniker range="vsts"
 
 ```yaml
 - task: PublishTestResults@2
@@ -229,13 +225,9 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
     testRunTitle: 'Test results for JavaScript'
 ```
 
-::: moniker-end
-
 ### Publish code coverage results
 
 Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis. 
-
-::: moniker range="vsts"
 
 ```yaml
 - task: PublishCodeCoverageResults@1
@@ -247,6 +239,15 @@ Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-resu
 
 ::: moniker-end
 
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your build pipeline to publish test results along with code coverage results using istanbul.
+
+---
 
 ## Task runners
 
