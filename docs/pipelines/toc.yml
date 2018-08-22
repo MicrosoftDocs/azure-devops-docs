@@ -120,7 +120,7 @@
       href: release/what-is-release-management.md
     - name: Release pipelines
       href: release/index.md
-    - name: Environments
+    - name: Stages
       href: release/environments.md
     - name: Deployment groups
       href: release/deployment-groups/index.md
