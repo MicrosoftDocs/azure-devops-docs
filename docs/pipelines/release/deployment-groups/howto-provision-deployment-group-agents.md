@@ -167,7 +167,7 @@ To use the template:
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of the **Pipelines** hub, create a release pipeline with an environment that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of the **Pipelines** hub, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
 
 1. Provide the parameters required for the task such as the Azure subscription, resource group name,
    location, and template information, then save the release pipeline.
@@ -180,7 +180,7 @@ To use the template:
 
 1. Enter a name for the group, and optionally a description, then choose **Create**.
 
-1. In the **Releases** tab of the **Pipelines** hub, create a release pipeline with an environment that contains the **Azure Resource Group Deployment** task.
+1. In the **Releases** tab of the **Pipelines** hub, create a release pipeline with a stage that contains the **Azure Resource Group Deployment** task.
 
 1. Select the task and expand the **Advanced deployment options for virtual machines** section.
    Configure the parameters in this section as follows:

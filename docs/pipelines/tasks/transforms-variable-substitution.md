@@ -46,11 +46,11 @@ configuration files (for example, **FabrikamService.exe.config**).
 ### Configuration transform file naming conventions
  
 XML transformation will be run on the `*.config` file for
-transformation configuration files named `*.Release.config` or `*.<Environment>.config`
+transformation configuration files named `*.Release.config` or `*.<stage>.config`
 and will be executed in the following order:
 
 1. `*.Release.config` (for example, **fabrikam.Release.config**)
-1. `*.<Environment>.config` (for example, **fabrikam.Production.config**)
+1. `*.<stage>.config` (for example, **fabrikam.Production.config**)
 
 For example, if your package contains the following files:
 
@@ -59,7 +59,7 @@ For example, if your package contains the following files:
 * Web.Release.config
 * Web.Production.config
 
-and your environment name is **Production**, the transformation is applied
+and your stage name is **Production**, the transformation is applied
 for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.  
 
 ### XML transformation example
@@ -116,7 +116,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
    >For more information, see [Web.config Transformation Syntax for Web Project Deployment Using Visual Studio](https://msdn.microsoft.com/library/dd465326.aspx)
 
-1. Create a release pipeline with an environment named **Release**.
+1. Create a release pipeline with an stage named **Release**.
  
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option.
 
@@ -148,7 +148,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
 **Note**:
 
-* You can use this technique to create a default package and deploy it to multiple environments.
+* You can use this technique to create a default package and deploy it to multiple stages.
 
 * XML transformation takes effect only when the configuration file and transform file
   are in the same folder within the specified package.
@@ -218,7 +218,7 @@ As an example, consider the task of changing the following values in `Web.config
 ```
 <p />
 
-1. Create a release pipeline with an environment named **Release**.
+1. Create a release pipeline with a stage named **Release**.
  
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option.
 
@@ -280,7 +280,7 @@ As an example, consider the task of changing the following values in `Web.config
 This feature substitutes values in the JSON configuration files.
 It overrides the values in the specified JSON configuration files
 (for example, `appsettings.json`) with the values matching names of release pipeline
-and environment variables.
+and stage variables.
 
 To substitute variables in specific JSON files, provide newline-separated
 list of JSON files. File names must be specified relative to the root folder.
@@ -337,7 +337,7 @@ As an example, consider the task of overriding values in this JSON file:
 The task is to override the values of **ConnectionString**, **DebugMode**,
 the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy.
 
-1. Create a release pipeline with an environment named **Release**.
+1. Create a release pipeline with a stage named **Release**.
  
 1. Add an **Azure App Service Deploy** task and enter a newline-separated
    list of JSON files to substitute the variable values in the **JSON variable substitution** textbox.
@@ -347,7 +347,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
 
    ![Release pipeline for JSON variable substitution](_img/json-setting.png)
 
-1. Define the required substitution values in release pipeline or environment variables.
+1. Define the required substitution values in release pipeline or stage variables.
  
    | Name | Value | Secure | Scope |
    | ---- | ----- | ------ | ----- |

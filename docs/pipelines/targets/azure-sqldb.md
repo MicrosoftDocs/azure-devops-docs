@@ -246,11 +246,11 @@ YAML builds are not yet available on TFS.
 In your release pipeline you can implement various checks and conditions to control the deployment.
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
-* Set **pre-deployment approvals** as a pre-condition for deployment to an environment.
-* Configure **gates** as a pre-condition for deployment to an environment.
+* Set **pre-deployment approvals** as a pre-condition for deployment to a stage.
+* Configure **gates** as a pre-condition for deployment to a stage.
 * Specify conditions for a task to run.
 
-To learn more, see [Release, branch, and environment triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
+To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 ---
 

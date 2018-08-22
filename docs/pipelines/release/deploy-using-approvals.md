@@ -43,7 +43,7 @@ new one just for this gate to use. For more information, see
 [Create managed queries with the query editor](../../boards/queries/using-queries.md).
 
 In the previous tutorial, you saw a simple use of manual approvals to allow an administrator
-to confirm that a release is ready to deploy to the production environment. In this 
+to confirm that a release is ready to deploy to the production stage. In this 
 tutorial, you'll see some additional and more powerful ways to configure approvals 
 for releases and deployments by using manual intervention and gates.
 For more information about the ways you can configure approvals for a release,
@@ -61,7 +61,7 @@ meets a wide range or criteria, without requiring user intervention.
 
    ![Opening the release pipeline](_img/deploy-using-approvals/open-pipeline.png)
 
-1. Choose the pre-deployment conditions icon for the **Production** environment to
+1. Choose the pre-deployment conditions icon for the **Production** stage to
    open the conditions panel. You can see that there is already an approver configured
    (this was done in the previous tutorial), but gates are disabled.
    Enable them by using the switch control in the **Gates** section.   
@@ -117,7 +117,7 @@ confirming network conditions are appropriate, or that specific hardware or soft
 is in place, before you approve a deployment. You can do this by using the **Manual
 Intervention** task in your pipeline.
 
-1. In the release pipeline editor, open the **Tasks** editor for the **QA** environment.
+1. In the release pipeline editor, open the **Tasks** editor for the **QA** stage.
 
    ![Opening the QA tasks editor](_img/deploy-using-approvals/open-qa-tasks.png)
 
@@ -165,7 +165,7 @@ granted. The comprehensive logging capabilities provide this information.
 
    ![Viewing the log for the manual intervention](_img/deploy-using-approvals/view-log-03.png)
 
-1. The release also required an approval to start deployment to the production environment.
+1. The release also required an approval to start deployment to the production stage.
    Choose the icon in the **Action** column for the **Pre-deployment** condition. Again,
    you see details of the approval.
 

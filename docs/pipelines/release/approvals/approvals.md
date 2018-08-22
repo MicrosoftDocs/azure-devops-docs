@@ -24,19 +24,19 @@ When a release is created from a release pipeline that defines
 approvals, the deployment stops at each point where approval is required
 until the specified approver grants approval or rejects the release (or
 re-assigns the approval to another user).
-You can enable manual deployment approvals for each environment in a release pipeline.
+You can enable manual deployment approvals for each stage in a release pipeline.
 
 ## Define a deployment approval
 
 1. Decide if you need pre-deployment approvers, post-deployment approvers, or both
-   for an environment. Then open the appropriate conditions panel(s).
+   for a stage. Then open the appropriate conditions panel(s).
 
-   For a **pre-deployment** approval, choose the icon at the entry point of the environment
+   For a **pre-deployment** approval, choose the icon at the entry point of the stage
    and enable pre-deployment approvers.
 
    ![Pre-deployment approvals settings](_img/environments-01.png)
 
-   For a **post-deployment** approval, choose the icon at the exit point of the environment
+   For a **post-deployment** approval, choose the icon at the exit point of the stage
    and enable post-deployment approvers.
 
    ![Post-deployment approvals settings](_img/environments-01a.png)
@@ -68,10 +68,10 @@ You can enable manual deployment approvals for each environment in a release pip
      If you are experimenting with approvals, uncheck this option so that you can approve or reject your own deployments.
    * You can force a revalidation of the user identity to take into account recently changed permissions.
    * You can reduce user workload by automatically approving subsequent prompts if the specified
-     user has already approved the deployment to a previous environment in the pipeline
+     user has already approved the deployment to a previous stage in the pipeline
      (applies to pre-deployment approvals only). Take care when using this option; for example, you may
      want to require a user to physically approve a deployment to production even though that user has
-     previously approved a deployment to a QA environment in the same release pipeline.  
+     previously approved a deployment to a QA stage in the same release pipeline.  
 
    ![Pre-deployment approval policy settings](_img/environments-02.png)
 
@@ -105,7 +105,7 @@ A notification bar is also shown in the release details page, with a link that d
 ![Approving a task step for a release in the Summary page](_img/approve-01c.png)
 
 If there is more than one approval waiting for the same user, the reminder will
-contain two links, **All** and **Selected environments**. This saves the user
+contain two links, **All** and **Selected stages**. This saves the user
 from needing to interact with each approval request individually.
 
 Use the approvers pop-up dialog to:
@@ -148,7 +148,7 @@ the deployment can be approved or rejected.
 
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../../tasks/utility/manual-intervention.md)
-* [Environments](../environments.md)
+* [Stages](../environments.md)
 * [Triggers](../triggers.md)
 
 [!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]

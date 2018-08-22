@@ -21,13 +21,13 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 A **release pipeline** is one of the fundamental concepts in Release Management for your DevOps CI/CD processes.
-It defines the end-to-end release pipeline for an application to be deployed across various environments.
+It defines the end-to-end release pipeline for an application to be deployed across various stages.
 
 You start using Release Management by authoring a release pipeline for your application. To author a release pipeline, you must specify the [artifacts](artifacts.md) that make up the application and the **release pipeline**.
 
 An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build pipeline. Release Management can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Team Build, Jenkins, or Team City.
 
-You define the **release pipeline** using [environments](environments.md), and restrict deployments into or out of an environment using [approvals](approvals/index.md). You define the automation in each environment using [jobs](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
+You define the **release pipeline** using [stages](environments.md), and restrict deployments into or out of an stage using [approvals](approvals/index.md). You define the automation in each stage using [jobs](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
 
 An example of a release pipeline that can be modeled through a release pipeline in shown below:
 
@@ -35,12 +35,12 @@ An example of a release pipeline that can be modeled through a release pipeline 
 
 [What's the difference between a release pipeline and a release?](releases.md)
 
-In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build pipeline. The release is first deployed to a Dev environment
-and then forked to two QA environments in parallel. If the deployment succeeds in both the QA environments, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
+In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build pipeline. The release is first deployed to a Dev stage
+and then forked to two QA stages in parallel. If the deployment succeeds in both the QA stages, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
 
 ::: moniker range=">= tfs-2017"
 
-An example of how deployment automation can be modeled within an environment is shown below:
+An example of how deployment automation can be modeled within an stage is shown below:
 
 ![Artifacts in a pipeline and release](_img/definition-02.png)
 
@@ -94,7 +94,7 @@ Every time you save a release pipeline, Release Management keeps a copy of the c
 ## Related topics
 
 * [Artifacts](artifacts.md)
-* [Environments](environments.md)
+* [Stage](environments.md)
 * [Triggers](triggers.md)
 * [Variables](variables.md)
 * [Release retention](../policies/retention.md)
