@@ -28,8 +28,7 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 <ul style="padding-left:30px">
  <li style="margin-bottom:5px">[ASP.NET 4 apps](aspnet/build-aspnet-4.md)</li>
  <li style="margin-bottom:5px">[ASP.NET Core apps](../languages/dotnet-core.md)</li>
- <li style="margin-bottom:5px">[Java apps with Gradle](../apps/java/build-gradle.md)</li>
- <li style="margin-bottom:5px">[Java apps with Maven](../apps/java/build-maven.md)</li>
+ <li style="margin-bottom:5px">[Java apps](../languages/java.md)</li>
  <li style="margin-bottom:5px">[Node.js apps](../languages/javascript.md)</li>
  <li style="margin-bottom:5px">[Cloud Services apps](aspnet/build-aspnet-cloudservice.md)</li>
  <li style="margin-bottom:5px">[SQL database DACPAC](aspnet/build-aspnet-dacpac.md)</li>
@@ -41,8 +40,8 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Build mobile apps</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[Xamarin mobile apps](mobile/xamarin.md)</li>
- <li style="margin-bottom:5px">[Xcode mobile projects](mobile/xcode-ios.md)</li>
+ <li style="margin-bottom:5px">[Xamarin mobile apps](../languages/xamarin.md)</li>
+ <li style="margin-bottom:5px">[Xcode mobile projects](../languages/xcode.md)</li>
  <li style="margin-bottom:5px">[Sign your mobile app](mobile/app-signing.md)</li>
 </ul>
 </div>
@@ -52,9 +51,9 @@ continuous integration (CI) and continuous deployment (CD) pipeline.
 <div style="float:left;width:325px;margin:3px">
 <p style="font-weight:bold;padding-top:10px">Deploy your app</p>
 <ul style="padding-left:30px">
- <li style="margin-bottom:5px">[Azure web apps](cd/deploy-webdeploy-webapps.md)</li>
- <li style="margin-bottom:5px">[Azure cloud services](cd/deploy-cloudservice-cloudservice.md)</li>
- <li style="margin-bottom:5px">[Azure SQL database](../targets/azure-sqldb.md)</li>
+ <li style="margin-bottom:5px">[Azure Web Apps](cd/deploy-webdeploy-webapps.md)</li>
+ <li style="margin-bottom:5px">[Azure Cloud Services](cd/deploy-cloudservice-cloudservice.md)</li>
+ <li style="margin-bottom:5px">[Azure SQL Database](../targets/azure-sqldb.md)</li>
  <li style="margin-bottom:5px">[Azure Container Service (Kubernetes)](cd/azure/deploy-container-kubernetes.md)</li>
  <li style="margin-bottom:5px">[IIS using deployment groups](cd/deploy-webdeploy-iis-deploygroups.md)</li>
  <li style="margin-bottom:5px">[IIS using Win RM](cd/deploy-webdeploy-iis-winrm.md)</li>

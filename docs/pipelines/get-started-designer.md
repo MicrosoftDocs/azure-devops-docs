@@ -621,9 +621,9 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [.NET Core](languages/dotnet-core.md) | ASP.NET Core |
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
 | [Go](apps/go/go.md) | Go |
-| [Java](apps/java/build-gradle.md) | Gradle |
+| [Java](languages/java.md) | Gradle |
 | [JavaScript](languages/javascript.md) | NodeJS with gulp (Grunt is also an option)|
-| [Xcode](apps/mobile/xcode-ios.md) | Xcode |
+| [Xcode](languages/xcode.md) | Xcode |
 
 ## Q & A
 

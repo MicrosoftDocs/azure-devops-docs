@@ -1,14 +1,15 @@
 ---
 title: Xcode
-description: CI and CD for Xcode projects.
+description: Building Xcode projects using Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
-ms.topic: quickstart
 ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
-ms.manager: alewis
-ms.author: dastahel
+ms.manager: douge
+ms.author: alewis
+author: andyjlewis
 ms.reviewer: dastahel
-ms.date: 08/17/2018
+ms.date: 08/31/2018
+ms.topic: quickstart
 monikerRange: '>= tfs-2017'
 ---
 

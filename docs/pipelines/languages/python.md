@@ -16,9 +16,6 @@ monikerRange: '> tfs-2018'
 
 This guide explains creating pipelines for Python projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
 
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
-
 ## Get started
 
 You can build Python projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Python. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
@@ -27,13 +24,13 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 
 ## Use a specific Python version
 
-Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This sample sets subsequent pipeline tasks to use Python 3.6.
+Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This snippet sets subsequent pipeline tasks to use Python 3.6.
 
 ```yaml
-# https://aka.ms/yaml
+# https://docs.microsoft.com/vsts/pipelines/languages/python
 pool: 'Hosted Linux Preview'
-steps:
 
+steps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '3.6'
@@ -42,7 +39,7 @@ steps:
 
 ## Use multiple Python versions
 
-To run a pipeline with multiple Python versions, such as to test your project using different versions, define a job with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the job for all versions in the matrix, depending on how many concurrent jobs are available.
+To run a pipeline with multiple Python versions, such as to test your project using different versions, define a job with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the job for all versions in the matrix, depending on how many parallel jobs are available.
 
 ```yaml
 # https://aka.ms/yaml
@@ -58,8 +55,8 @@ jobs:
         python.version: '3.5'
       Python36:
         python.version: '3.6'
-  steps:
 
+  steps:
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '$(python.version)'
@@ -112,7 +109,9 @@ Alternatively, set the **targetType** to `inline` to define the script in YAML.
 Add the following YAML to install or upgrade `pip` and requirements specified in `requirements.txt`.
 
 ```yaml
-- script: python -m pip install --upgrade pip && pip install -r requirements.txt
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
   displayName: 'Install requirements'
 ```
 
@@ -141,7 +140,10 @@ Add the following YAML to install the `scipy` package in the conda environment n
 Add the following YAML to install `pytest` and `pytest-cov`, run tests, output test results in JUnit format and code coverage results in Cobertura XML format.
 
 ```yaml
-- script: pip install pytest && pip install pytest-cov && pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+- script: |
+    pip install pytest
+    pip install pytest-cov
+    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
   displayName: 'pytest'
 ```
 
@@ -155,13 +157,14 @@ Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to pu
     testResultsFiles: '**/test-*.xml'
     testRunTitle: 'Test results for Python $(python.version)'
 ```
+
 ### Publish code coverage results
 
 Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task to publish code coverage results to the server. When you do this, coverage metrics can be seen in the build summary and HTML reports can be downloaded for further analysis.
 
 ```yaml
 - task: PublishCodeCoverageResults@1
-  inputs: 
+  inputs:
     codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
@@ -194,10 +197,10 @@ Add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) t
 
 ```yaml
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: dist'
+  displayName: 'Publish artifact: dist'
   inputs:
-    PathtoPublish: dist
-    ArtifactName: dist
+    pathtoPublish: dist
+    artifactName: dist
 ```
 
 ## Related extensions
