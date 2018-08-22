@@ -1,4 +1,4 @@
-- name: "Power BI (VSTS)"
+- name: "Power BI (Azure DevOps Services)"
   href: index.md
 - name: Overview
   items:
@@ -64,7 +64,7 @@
     href: data-connector-dataset.md?toc=/vsts/report/powerbi/toc.json&bc=/vsts/report/powerbi/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: "Analytics (VSTS)"
+  - name: Analytics
     href: ../analytics/index.md
   - name: Extend Analytics with OData
     href: ../extend-analytics/index.md

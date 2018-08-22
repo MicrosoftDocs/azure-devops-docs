@@ -1,6 +1,6 @@
 ---
 title: Get started guide for Azure Boards 
-titleSuffix: Azure DevOps 
+titleSuffix: Azure DevOps Services
 description: Sign up and get started using Azure Boards 
 ms.prod: devops
 ms.technology: devops-new-user
@@ -8,12 +8,14 @@ ms.assetid:
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ms.date: 09/05/2018
 ---
 
 
 # Start using Azure Boards  
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Use this guide to sign up and start using Azure Boards. 
 
@@ -26,7 +28,7 @@ Next, to develop your product backlog, read [Create your backlog](../backlogs/cr
 Other resources to get you up and running: 
 
 - [Navigation basics](../../project/navigation/index.md)  
-- [Security & identity](../../organizations/security/index.md)
+- [Work items](../work-items/index.md)
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)  
 
 

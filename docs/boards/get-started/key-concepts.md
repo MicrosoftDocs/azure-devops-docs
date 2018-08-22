@@ -1,6 +1,6 @@
 ---
-title: Key concepts and terminology used for Azure Boards
-titleSuffix: Azure DevOps Services  
+title: Key concepts when using Azure Boards
+titleSuffix: Azure DevOps Services 
 description: Key definitions for objects and items used to plan and track work using Azure Boards
 ms.technology: devops-new-user 
 ms.prod: devops
@@ -9,11 +9,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ms.date: 09/05/2018  
 ---
 
 # Key concepts 
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 Here you'll find definitions of key concepts and artifacts used in Azure Boards. See also: 
 - [Work item field index](../work-items/guidance/work-item-field.md)
@@ -55,7 +57,7 @@ Specifies an object used to form link relationships between different WITs. Lear
 
 ## Pick lists
 
-Specifies an enumerated set of values that appear within a drop-down menu in a work item form and the **Value** column within the query editor. The method you use to customize a pick list varies depending on the field and the process model.  
+Specifies an enumerated set of values that appear within a drop-down menu in a work item form and the **Value** column within the query editor. The method you use to customize a pick list varies depending on the field and the process model. Learn more: [Customize work](../../reference/customize-work.md). 
 
 [!INCLUDE [temp](../../_shared/glossary-terms/plans.md)] 
 

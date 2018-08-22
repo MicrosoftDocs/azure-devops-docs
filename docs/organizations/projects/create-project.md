@@ -29,11 +29,14 @@ You add another project to establish a repository for source code and a place fo
 If you have a project already, and want to start coding an application project, then see one of the following topics:  [Set up Git on your dev machine](../../repos/git/gitquickstart.md) or [Develop your app in Team Foundation version control](../../repos/git/gitquickstart.md).
 
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= tfs-2015"
 ## Add a project from the web portal 
 ::: moniker-end
 
 ::: moniker range="vsts"
+
+To create a project, you must first have [signed up for an Azure DevOps Services organiation](../../user-guide/sign-up-invite-teammates.md). 
+
 > [!IMPORTANT]  
 > To create a Public project, or to make a private project public, see [Create a public project](../public/create-public-project.md) or [Change the project visibility, public or private](../public/make-project-public.md). Additional policy settings must be enabled to work with public projects. 
 
@@ -163,7 +166,7 @@ Adding a project from the web portal isn't supported for TFS 2015 and earlier ve
 
 <a id="te"> </a>
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 
 ## Add a project from Team Explorer 
 You can create a project from Team Explorer after you have connected to an on-premises server. 
@@ -178,7 +181,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018" 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
 
 1.  If you're not a member of the Project Collection Administrators Group, [get added as one](../../organizations/security/set-project-collection-level-permissions.md). To create projects you must have the **Create new projects** permission set to **Allow**.
 
@@ -259,7 +262,7 @@ You can create a project from Team Explorer after you have connected to an on-pr
 
 ## Add a project from the command line or scripts
 
-You can create and retrieve projects and other objects  from the command line or scripts using the CLI. Check out the [CLI documentation](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest) to learn more.
+You can create and retrieve projects and other objects from the command line or scripts using the CLI. Check out the [CLI documentation](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest) to learn more.
 
 ::: moniker-end
 
@@ -269,20 +272,10 @@ You can create and retrieve projects and other objects  from the command line or
 
 ::: moniker-end
 
-## Try this next 
-
-Once you've added a project, you'll have a default repository in which to add code. You'll want to add team members and structure your project to support your business needs. See these resources: 
-
-- [Add team members](../../organizations/security/add-users-team-project.md) to enable other users to connect to your project.
-- Start [developing your app in Team Foundation version control](../../repos/tfvc/index.md) or [use Git](../../repos/git/overview.md).
-- [Additional project structure activities](about-projects.md#project-structure)
-
-
-<a id="git-and-tfvs-repos" />
 
 ::: moniker range=">= tfs-2015"
 
-### Add repositories
+## Add a repository
 From the admin context of the web portal, you can add additional repositories to a project, either Git (distributed) or TFVC (centralized). While you can create many Git repositories, you can only create a single TFVC repository for a project.  Additional steps to address permissions may be required. See [Use Git and TFVC repos in the same team project](../../repos/git/team-projects.md). 
 
 ::: moniker-end
@@ -306,3 +299,14 @@ Name the repository and choose **Create**.
 > The ability to work from both Git and TFVC repositories from the same project is supported when you connect to TFS 2015.1 and later versions. 
 
 ::: moniker-end
+
+## Try this next 
+
+Once you've added a project, you'll have a default repository in which to add code. You'll want to add team members and structure your project to support your business needs. See these resources: 
+
+- [Add team members](../../organizations/security/add-users-team-project.md) to enable other users to connect to your project.
+- Start [developing your app in Team Foundation version control](../../repos/tfvc/index.md) or [use Git](../../repos/git/overview.md).
+- [Additional project structure activities](about-projects.md#project-structure)
+
+
+<a id="git-and-tfvs-repos" />
