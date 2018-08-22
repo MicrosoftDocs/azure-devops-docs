@@ -37,7 +37,7 @@ At this time, you can still use the old UI by choosing your profile icon and sel
 Then, toggle the **New Navigation** option to **Off**.
 
 > [!div class="mx-imgBorder"] 
-> ![Turning off the new navigation UI](_img/preview-features.png)
+> ![Turning off the new navigation UI](_img/turn-off-new-nav.png)
 
 This will also change the service names to their old VSTS feature names, such as **Work** instead of **Boards**.
 
