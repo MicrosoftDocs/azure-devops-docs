@@ -146,12 +146,12 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 <h2 id="release">Release retention</h2>
 
 The release retention policies for a release pipeline determine how long a release
-and the build linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. The retention timer on a release is reset every time a release is modified or deployed to an environment. The minimum number or releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
+and the build linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number or releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
 recent three will be retained indefinitely - irrespective of the number of
 days specified. However, you can manually delete these releases when you no longer require them.
 
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
-You can also customize these policies on an [environment-by-environment basis](#environment-specific-retention).
+You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention).
 
 ### Global release retention policy
 
@@ -174,15 +174,15 @@ The **destruction policy** helps you keep the releases for a certain period of t
 
 > In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
-### Environment-specific retention
+### Stage-specific retention
 
-You may want to retain more releases that have been deployed to specific environments.
+You may want to retain more releases that have been deployed to specific stages.
 For example, your team may want to keep:
 
-* Releases deployed to Production environment for 60 days, with a minimum of three last deployed releases.
-* Releases deployed to Pre-production environment for 15 days, with a minimum of one last deployed release.
-* Releases deployed to QA environment for 30 days, with a minimum of two last deployed releases.
-* Releases deployed to Dev environment for 10 days, with a minimum of one last deployed release.
+* Releases deployed to Production stage for 60 days, with a minimum of three last deployed releases.
+* Releases deployed to Pre-production stage for 15 days, with a minimum of one last deployed release.
+* Releases deployed to QA stage for 30 days, with a minimum of two last deployed releases.
+* Releases deployed to Dev stage for 10 days, with a minimum of one last deployed release.
 
 The following example retention policy for a release pipeline meets the above requirements:
 
@@ -203,7 +203,7 @@ When specifying custom policies per pipeline, you cannot exceed the maximum limi
 The build linked to a release has its own retention policy,
 which may be shorter than that of the release. If you want to retain
 the build for the same period as the release, set the
-**Retain build** checkbox for the appropriate environments. This
+**Retain build** checkbox for the appropriate stages. This
 overrides the retention policy for the build, and ensures that the
 artifacts are available if you need to redeploy that release.
 
@@ -246,7 +246,7 @@ policy as explained above.
 
 ### Are automated test results that are published as part of a release retained until the release is deleted?
 
-Test results published within an environment of a release are
+Test results published within a stage of a release are
 associated with both the release and the build. These test results
 are retained as specified by the retention policy configured for
 the build and for the test results. If you are not deploying Team

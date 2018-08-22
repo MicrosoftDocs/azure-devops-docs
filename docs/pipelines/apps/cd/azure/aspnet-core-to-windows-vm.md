@@ -23,7 +23,7 @@ monikerRange: 'vsts'
 
 Azure Pipelines provides a highly customizable continuous integration (CI) and continuous deployment (CD) pipeline to automatically deploy your ASP.NET Core web app to a Windows virtual machine (VM) in Azure.
 
-You'll use the Azure Pipelines portal to set up CI/CD. Your CI pipeline runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD pipeline automatically picks up these artifacts and deploys them to your environment. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
+You'll use the Azure Pipelines portal to set up CI/CD. Your CI pipeline runs the .NET Core commands to restore packages, build and test the app, and finally publish artifacts. Your CD pipeline automatically picks up these artifacts and deploys them to your stage. Finally, you'll test it all out by pushing a small code change into your team's git repo. Your CI/CD processes will automatically deploy the change.
 
 ![A typical release pipeline for web applications](_shared/_img/vscode-git-ci-cd-to-azure.png)
 

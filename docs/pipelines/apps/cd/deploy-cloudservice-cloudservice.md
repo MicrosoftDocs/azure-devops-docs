@@ -87,7 +87,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
    ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
 
-1. Open the **Tasks** tab and select the **Environment 1** item. Configure the task variables as follows:
+1. Open the **Tasks** tab and select the **Stage 1** item. Configure the task variables as follows:
    
    * **Azure Subscription (Classic)**: Select an Azure Classic service connection. If you have not created one already, create one now by choosing **Add**. Then return to your release pipeline, refresh the **Azure Subscription** list, and select the connection you just created.
    
@@ -99,7 +99,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
    [!INCLUDE [edit-template-vars-in-environment](../_shared/edit-template-vars-in-environment.md)]
    
-1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
+1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default stage is named Stage1, which you can edit by clicking directly on the name.
 
 You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to Azure:
 

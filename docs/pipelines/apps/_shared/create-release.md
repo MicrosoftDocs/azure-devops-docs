@@ -28,7 +28,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
    > Continuous deployment is not enabled by default when you create a new release pipeline from the **Releases** tab.
 
-1. Open the **Tasks** tab and, with **Environment 1** selected, configure the task property variables as follows:
+1. Open the **Tasks** tab and, with **Stage 1** selected, configure the task property variables as follows:
 
    * **Azure Subscription:** Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
      If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see

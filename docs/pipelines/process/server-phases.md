@@ -123,7 +123,7 @@ Multi-configuration server jobs are not supported in web designer.
 ---
 
 ## Job variables
-If you are using YAML, variables can be specified on the job. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the environment variable.
+If you are using YAML, variables can be specified on the job. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the stage variable.
 
 # [YAML](#tab/yaml)
 

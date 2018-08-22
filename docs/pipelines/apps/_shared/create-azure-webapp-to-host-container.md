@@ -33,9 +33,9 @@ CI/CD pipeline so that the web app is automatically updated when a new image is 
 registry (this feature uses a [webhook](https://docs.microsoft.com/azure/container-registry/container-registry-webhook)).
 However, by using a separate release pipeline in Azure Pipelines or TFS you gain extra flexibility and traceability. You can:
 
-* Specify an appropriate tag that is used to select the deployment target for multi-environment deployments.
-* Use separate container registries for different environments.
-* Use parameterized start-up commands to, for example, set the values of variables based on the target environment.
+* Specify an appropriate tag that is used to select the deployment target for multi-stage deployments.
+* Use separate container registries for different stages.
+* Use parameterized start-up commands to, for example, set the values of variables based on the target stage.
 * Avoid using the same tag for all the deployments. The default CD pipeline for Web App for Containers
   uses the same tag for every deployment. While this may be appropriate for a tag such as **latest**,
   you can achieve end-to-end traceability from code to deployment by using a build-specific tag for each deployment.

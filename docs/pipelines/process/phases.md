@@ -319,11 +319,11 @@ From a single job you can run multiple jobs and multiple agents in parallel. Som
 * **Multi-configuration builds:** An agent job can be used in a build pipeline to build multiple configurations in parallel. For
   example, you could build a Visual C++ app for both `debug` and `release` configurations on both `x86` and `x64` platforms. To learn more, see [Visual Studio Build - multiple configurations for multiple platforms](../tasks/build/visual-studio-build.md#multiconfiguration).
   
-* **Multi-configuration deployments:** An agent job can be used in an environment of a release pipeline to run multiple deployment
+* **Multi-configuration deployments:** An agent job can be used in a stage of a release pipeline to run multiple deployment
   jobs in parallel, for example, to different geographic regions.
   
-* **Multi-configuration testing:** An agent job can be used in a build pipeline or in an
-  environment of a release pipeline to run a set of tests in parallel - once for each test configuration.
+* **Multi-configuration testing:** An agent job can be used in a build pipeline or in a
+  stage of a release pipeline to run a set of tests in parallel - once for each test configuration.
   
 # [YAML](#tab/yaml)
 
@@ -425,7 +425,7 @@ and the variables `System.JobPositionInPhase` and `System.TotalJobsInPhase` are 
 ---
 
 ## Job variables
-If you are using YAML, variables can be specified on the job. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the environment variable.
+If you are using YAML, variables can be specified on the job. The variables can be passed to task inputs using the macro syntax $(variableName), or accessed within a script using the stage variable.
 
 # [YAML](#tab/yaml)
 

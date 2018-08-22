@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 By default, jobs run on the host machine where the [agent](../agents/agents.md)
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt continuous integration (CI).
-Over time, you may find that you want more control over the environment where your tasks run.
+Over time, you may find that you want more control over the stage where your tasks run.
 
 Containers offer a lightweight abstraction over the host operating system.
 You can select the exact versions of operating systems, tools, and dependencies that your build requires.

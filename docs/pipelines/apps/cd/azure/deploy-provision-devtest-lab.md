@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 The [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/)
-service lets you quickly provision development and test environments using reusable
+service lets you quickly provision development and test stages using reusable
 templates. You can use pre-created images, minimize waste with quotas and policies,
 and minimize costs by using automated shutdown.
 
@@ -120,13 +120,13 @@ release pipeline in Release Management.
 
 1. In the next page, select **Choose Later** and then choose **Create**.
    This creates a new release pipeline with one 
-   default environment and no linked artifacts.
+   default stage and no linked artifacts.
 
 1. In the new release pipeline, choose the ellipses (**...**) next 
-   to the environment name to open the shortcut menu 
+   to the stage name to open the shortcut menu 
    and select **Configure variables**.
 
-1. In the **Configure - environment** dialog, enter the following values
+1. In the **Configure - stage** dialog, enter the following values
    for the variables you will use in the release pipeline tasks:
    - **vmName**: Enter the name you assigned to the VM when 
      you created the ARM template in the Azure portal.
@@ -155,9 +155,9 @@ release pipeline in Release Management.
    
    - **Template Name**: Enter the full path and name of the template file you saved into your source code repository. You can use the built-in properties of Release Management to simplify the path, for example: `$(System.DefaultWorkingDirectory)/Contoso/ARMTemplates/CreateVMTemplate.json`.
    
-   - **Template Parameters**: Enter the parameters for the variables defined in the template. Use the names of the variables you defined in the environment, for example: `-newVMName '$(vmName)' -userName '$(userName)' -password (ConvertTo-SecureString -String '$(password)' -AsPlainText -Force)`.
+   - **Template Parameters**: Enter the parameters for the variables defined in the template. Use the names of the variables you defined in the stage, for example: `-newVMName '$(vmName)' -userName '$(userName)' -password (ConvertTo-SecureString -String '$(password)' -AsPlainText -Force)`.
    
-   - **Output Variables - Lab VM ID**: You will need the ID of the newly created VM in subsequent tasks. The default name of the environment variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required, but remember to use the correct name in subsequent tasks. The Lab VM ID is in the form: `/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.DevTestLab/labs/{labName}/virtualMachines/{vmName}`.<p />
+   - **Output Variables - Lab VM ID**: You will need the ID of the newly created VM in subsequent tasks. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required, but remember to use the correct name in subsequent tasks. The Lab VM ID is in the form: `/subscriptions/{subId}/resourceGroups/{rgName}/providers/Microsoft.DevTestLab/labs/{labName}/virtualMachines/{vmName}`.<p />
 
 1. The next stage is to execute the script you created earlier
    to collect the details of the DevTest Labs VM.
@@ -176,10 +176,10 @@ release pipeline in Release Management.
    
    - **Script Path**:  Enter the full path and name of the script you saved into your source code repository. You can use the built-in properties of Release Management to simplify the path, for example: `$(System.DefaultWorkingDirectory/Contoso/Scripts/GetLabVMParams.ps1`.
    
-   - **Script Arguments**: Enter as the script argument the name of the environment variable that was automatically populated with the ID of the lab VM by the previous task, for example: `-labVmId '$(labVMId)'`. |
+   - **Script Arguments**: Enter as the script argument the name of the stage variable that was automatically populated with the ID of the lab VM by the previous task, for example: `-labVmId '$(labVMId)'`. |
    
    >The script collects the values you will require and stores them in 
-   environment variables within the release pipeline so that you can
+   stage variables within the release pipeline so that you can
    easily refer to them in subsequent tasks.
 
 1. Now you can deploy your app to the new DevTest Labs VM.
@@ -211,9 +211,9 @@ release pipeline in Release Management.
    
    - **Description**: Optionally enter a description to make it easy to select the correct image later.
    
-   - **Source Lab VM - Source Lab VM ID**: If you changed the default name of the environment variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.
+   - **Source Lab VM - Source Lab VM ID**: If you changed the default name of the stage variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.
    
-   - **Output Variables - Lab VM ID**: You will need the ID of the newly created image when you want to manage or delete it. The default name of the environment variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required.<p />
+   - **Output Variables - Lab VM ID**: You will need the ID of the newly created image when you want to manage or delete it. The default name of the stage variable that will automatically be populated with this ID is set in the **Output Variables** section. You can edit this if required.<p />
     
 1. The final stage in this example is to delete the VM you deployed
    in your Azure DevTest Labs instance. In reality you will, of course,
@@ -227,12 +227,12 @@ release pipeline in Release Management.
    - **Azure RM Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions
      connection to your Azure subscription. For more details, see [Azure Resource Manager service connection](../../../library/connect-to-azure.md).
    
-   - **Lab VM ID**: If you changed the default name of the environment variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.<p />
+   - **Lab VM ID**: If you changed the default name of the stage variable that was automatically populated with the ID of the lab VM by an earlier task, edit it here. The default is `$(labVMId)`.<p />
 
 1. Enter a name for the release pipeline and save it.
 
 1. Create a new release, select the latest build,
-   and deploy it to the single environment in the pipeline.
+   and deploy it to the single stage in the pipeline.
 
 1. At each stage, refresh the view of your DevTest Labs instance
    in the Azure portal to see the VM and image being created, and the

@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 A **task** is the building block for defining automation in a
-build pipeline, or in an environment of a release pipeline.
+build pipeline, or in a stage of a release pipeline.
 A task is simply a packaged script or procedure that has been
 abstracted with a set of inputs. We provide some [built-in tasks](../tasks/index.md) 
 to enable fundamental build and deployment scenarios.
