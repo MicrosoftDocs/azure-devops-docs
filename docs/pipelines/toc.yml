@@ -36,7 +36,7 @@
     href: languages/xamarin.md
   - name: Xcode
     href: languages/xcode.md
-- name: Targets
+- name: Deployments
   items:
   - name: Azure Kubernetes Service
     href: apps/cd/azure/deploy-container-kubernetes.md
