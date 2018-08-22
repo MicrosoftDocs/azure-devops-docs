@@ -18,8 +18,7 @@ monikerRange: 'vsts'
 
 ![Cloud-based Load Testing](_img/performance-testing/IC838830.png)
 
-Load test your app with hundreds of thousands of users using 
-[Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~getstarted-hero~dn906133&campaign=o~msft~vscom~getstarted-hero~dn906133&scenario=test).
+Load test your app with hundreds of thousands of users using Azure DevOps Test Plans.
 
 ## Comprehensive testing capabilities
 

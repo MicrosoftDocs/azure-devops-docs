@@ -16,7 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
-Load test your app with hundreds of thousands of users using Azure DevOps.
+Load test your app with hundreds of thousands of users using Azure DevOps Test Plans.
 
 ## 5-Minute Quickstarts
 

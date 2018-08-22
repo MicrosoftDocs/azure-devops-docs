@@ -16,8 +16,7 @@ monikerRange: 'vsts'
 
 [!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
 
-You can run a load test on your web app or site directly
-using Azure DevOps.
+You can run a load test on your web app or site directly using Azure DevOps.
 
 <a name="prepareenvir"></a>
 ## Prepare your environment
