@@ -15,149 +15,313 @@ featureFlags:
 - clicktale 
 ---
 
-<p><a href="/vsts/index">Azure DevOps Services</a>&nbsp;&nbsp;/&nbsp;&nbsp;Index</p><br/>
-<h1>Azure DevOps Services Index</h1>
-<p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
-<h2 id="user-guides">User and Administrative Guides</h2>
-<table border="0">
-<tbody class="noBullet" style="padding-left:0;">
-<tr><td width="25%">
-                        <h3>Get started guides</h3>
-                            <p><a href="/vsts/repos/get-started/index">Azure Repos</a><br/>
-                            <a href="/vsts/boards/get-started/index">Azure Boards</a><br/>
-                            <a href="/vsts/pipelines/get-started/pipelines-get-started">Azure Pipelines</a><br/>
-                            <a href="/vsts/user-guide/index">Azure DevOps</a><br/>
-                            <a href="/vsts/project/navigation/preview-features">Navigation basics</a><br/>
-                            <a href="/vsts/release-notes/index">What's new</a></p>
-                        <h3>Social tools</h3>
-                            <p><a href="/vsts/project/wiki/project-vision-status">Project summary</a><br/>
-                            <a href="/vsts/project/wiki/index">Wiki</a><br/>
-                            <a href="/vsts/project/search/index">Search</a><br/>
-                            <a href="/vsts/project/navigation/set-favorites">Set favorites</a><br/>
-                            <a href="/vsts/organizations/public/index">Public Projects</a></p>
-                        <h3>Analytics</h3>
-                            <p><a href="/vsts/report/dashboards/index">Dashboards</a><br/>
-                            <a href="/vsts/report/analytics/index">Analytics views</a><br/>
-                            <a href="/vsts/report/powerbi/index">Power BI</a><br/>
-                            <a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
-</td>
-<td width="25%">
-                        <h3>Plan and track work</h3>
-                            <p><a href="/vsts/boards/work-items/index">Work Items</a><br/>
-                            <a href="/vsts/boards/boards/index">Boards (Kanban)</a><br/>
-                            <a href="/vsts/boards/backlogs/index">Backlogs</a><br/>
-                            <a href="/vsts/boards/sprints/index">Sprints (Scrum)</a><br/>
-                            <a href="/vsts/boards/queries/index">Queries</a><br/>
-                            <a href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a><br/>
-                            <a href="/vsts/boards/plans/index">Plans (Agile at scale)</a><br/>
-                            <a href="/vsts/project/feedback/index">Request Feedback</a></p>
-                        <h3>Office integration tools</h3>
-                            <p><a href="/vsts/boards/backlogs/office/bulk-add-modify-work-items-excel">Excel</a><br/>
-                            <a href="/vsts/boards/backlogs/office/create-your-backlog-tasks-using-project">Project</a><br/>
-                            <a href="/vsts/boards/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></p>
-                       <h3>Source control</h3>
-                            <p><a href="/vsts/repos/git/index">Git Repositories</a><br/>
-                            <a href="/vsts/repos/git/pullrequest">Pull Requests</a><br/>
-                            <a href="/vsts/repos/git/concepts/forks">Forks</a><br/>
-                            <a href="/vsts/repos/git/branch-policies">Branch Policies</a><br/>
-                            <a href="/vsts/repos/tfvc/index">TFVC</a></p>
+<div id="main" class="v2">
+    <div class="container">
+        <h1>Azure DevOps Services Index</h1>
+        <p>Access get started guides, user guides, administrative resources, API references, and other resources.</p>
+        <p style="height: 30px;">&nbsp;</p>
+        <ul class="pivots">
+            <li>
+                <a href="#index"></a>
+                <ul id="index">
+                    <li class="panelItem" data-index="0">
+                        <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
+                        <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
+                            <li class="fullSpan">
+                                <a href="#start"> </a>
+                                <h2 style="float: left; display: flex;">User and Administrative Guides</h2>                                
+                        	    <a href="#index2"></a>
+                                <ul id="index2" class="cardsW cols cols4 panelContent singlePanelContent" style="float: left; display: flex!important;">
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Get started guides</h3>
+                                                        <p><a href="/vsts/repos/get-started/index">Azure Repos</a></p>
+														<p><a href="/vsts/boards/get-started/index">Azure Boards</a></p>
+														<p><a href="/vsts/pipelines/get-started/pipelines-get-started">Azure Pipelines</a></p>
+														<p><a href="/vsts/user-guide/index">Azure DevOps</a></p>
+														<p><a href="/vsts/project/navigation/preview-features">Navigation basics</a></p>
+														<p><a href="/vsts/release-notes/index">What's new</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Plan and track work</h3>
+                                                        <p><a href="/vsts/boards/work-items/index">Work Items</a></p>
+														<p><a href="/vsts/boards/boards/index">Boards (Kanban)</a></p>
+														<p><a href="/vsts/boards/backlogs/index">Backlogs</a></p>
+														<p><a href="/vsts/boards/sprints/index">Sprints (Scrum)</a></p>
+														<p><a href="/vsts/boards/queries/index">Queries</a></p>
+														<p><a href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a></p>
+														<p><a href="/vsts/boards/plans/index">Plans (Agile at scale)</a></p>
+														<p><a href="/vsts/project/feedback/index">Request Feedback</a></p>
+													</div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Continuous integration &amp; delivery</h3>
+                                                        <p><a href="/vsts/pipelines/index">Build and release pipelines</a></p>
+														<p><a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a></p>
+														<p><a href="/vsts/deploy-azure/index">Deploy to Azure</a></p>
+														<p><a href="/vsts/package/index">Package management</a></p>
+														<p><a href="/vsts/pipelines/library/index">Library assets</a></p>
+														<p><a href="/vsts/pipelines/agents/agents">Hosted &amp; private agents</a></p>
+														<p><a href="/vsts/pipelines/tasks">Task reference</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Management tools</h3>
+                                                        <p><a href="/vsts/organizations/settings/index">Project settings</a></p>
+														<p><a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; configure teams</a></p>
+														<p><a href="/vsts/organizations/settings/work/inheritance-process-model">Process customization</a></p>
+														<p><a href="/vsts/organizations/security/index">Security &amp; identity</a></p>
+														<p><a href="/vsts/organizations/projects/index">Manage projects</a></p>
+														<p><a href="/vsts/organizations/accounts/index">Manage organizations</a></p>
+														<p><a href="/vsts/billing/index">Billing</a></p>
+														<p><a href="/vsts/notifications/index">Manage notifications</a></p>
+														<p><a href="/tfs/server/index">Team Foundation Server</a></p>
+														<p><a href="/vsts/articles">Technical Articles</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Social tools</h3>
+                                                        <p><a href="/vsts/project/wiki/project-vision-status">Project summary</a></p>
+														<p><a href="/vsts/project/wiki/index">Wiki</a></p>
+														<p><a href="/vsts/project/search/index">Search</a></p>
+														<p><a href="/vsts/project/navigation/set-favorites">Set favorites</a></p>
+														<p><a href="/vsts/organizations/public/index">Public Projects</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Office integration tools</h3>
+                                                        <p><a href="/vsts/boards/backlogs/office/bulk-add-modify-work-items-excel">Excel</a></p>
+														<p><a href="/vsts/boards/backlogs/office/create-your-backlog-tasks-using-project">Project</a></p>
+														<p><a href="/vsts/boards/backlogs/office/storyboard-your-ideas-using-powerpoint">PowerPoint Storyboarding</a></p>
+													</div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Share code</h3>
+                                                        <p><a href="/vsts/package/overview">Package management</a></p>
+														<p><a href="/vsts/package/get-started-nuget">NuGet</a></p>
+														<p><a href="/vsts/package/get-started-npm">npm</a></p>
+														<p><a href="/vsts/package/get-started-maven">Maven</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Discover, manage, and develop extensions</h3>
+                                                        <p><a href="/vsts/extend/index">Develop extensions</a></p>
+														<a href="/vsts/service-hooks/index">Service hooks</a></p>
+														<a href="/vsts/integrate/index">Integrate applications</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Analytics</h3>
+                                                        <p><a href="/vsts/report/dashboards/index">Dashboards</a></p>
+														<p><a href="/vsts/report/analytics/index">Analytics views</a></p>
+														<p><a href="/vsts/report/powerbi/index">Power BI</a></p>
+														<p><a href="/vsts/report/extend-analytics/index">Extend Analytics with OData</a></p>
+													</div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Source control</h3>
+                                                        <p><a href="/vsts/repos/git/index">Git Repositories</a></p>
+														<p><a href="/vsts/repos/git/pullrequest">Pull Requests</a></p>
+														<p><a href="/vsts/repos/git/concepts/forks">Forks</a></p>
+														<p><a href="/vsts/repos/git/branch-policies">Branch Policies</a></p>
+														<p><a href="/vsts/repos/tfvc/index">TFVC</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Test</h3>
+                                                        <p><a href="/vsts/test/index">Exploratory &amp; manual testing</a></p>
+														<p><a href="/vsts/project/feedback/index">Request stakeholder feedback</a></p>
+														<p><a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a></p>
+														<p><a href="/vsts/test/load-test/index">Load testing</a></p>
+														<p><a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">Unit &amp; functional testing</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p style="height: 20px;">&nbsp;</p>
+                                <h2 style="float: left; display: flex;">Development and Deployment Resources</h2> 
+								<a href="#index3"></a>
+                                <ul id="index3" class="cardsW cols cols4 panelContent singlePanelContent" style="float: left; display: flex!important;">
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>IDEs</h3>
+                                                        <p><a href="/visualstudio">Visual Studio</a></p>
+														<p><a href="/vsts/java/vscode-extension">Visual Studio Code</a></p>
+														<p><a href="/vsts/java/index">Visual Studio</a></p>
+														<p><a href="/vsts/java/download-intellij-plug-in">IntelliJ</a></p>
+														<p><a href="/vsts/java/download-android-studio-plug-in">Android Studio</a></p>
+														<p><a href="/vsts/java/download-eclipse-plug-in">Eclipse/Team Explorer Everywhere</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Azure DevOps project</h3>
+                                                        <p><a href="/azure/devops-project/azure-devops-project-aspnet-core">ASP.NET Code</a></p>
+														<p><a href="/azure/devops-project/azure-devops-project-nodejs">Node.js</a></p>
+														<p><a href="/azure/devops-project/azure-devops-project-java">Java</a></p>
+														<p><a href="/azure/devops-project/azure-devops-project-python">Python</a></p>
+														<p><a href="/azure/devops-project/azure-devops-project-php">PHP</a></p>
+														<p><a href="/azure/devops-project/azure-devops-project-ruby">Ruby</a></p>
+														<p><a href="/azure/devops-project/azure-devops-project-go">Go</a></p>
+													</div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>DevOps resource center</h3>
+                                                        <p><a href="/azure/devops/learn/what-is-devops">What is DevOps?</a></p>
+														<p><a href="/azure/devops/learn/git/what-is-version-control">What is version control?</a></p>
+														<p><a href="/azure/devops/learn/git/what-is-git">What is Git?</a></p>
+														<p><a href="/azure/devops/learn/agile/what-is-agile">What is Agile?</a></p>
+														<p><a href="/azure/devops/learn/agile/what-is-scrum">What is Scrum?</a></p>
+														<p><a href="/azure/devops/learn/agile/scale-agile-large-teams">Scale Agile to Large Teams</a></p>
+														<p><a href="//azure/devops/learn/git/git-at-scale">Git at Scale</a></p>
+														<p><a href="/azure/devops/learn/devops-at-microsoft/">DevOps at Microsoft</a></p>
+														<p><a href="/azure/devops/learn/events-and-talks/">Events and Talks</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Developer tools</h3>
+                                                        <p><a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></p>
+														<p><a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
+														<p><a href="/vsts/repos/git/command-prompt">Git commands</a></p>
+														<p><a href="/vsts/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a></p>
+														<p><a href="https://docs.microsoft.com/en-us/cli/vsts/overview">CLI</a></p>
+														<p><a href="/vsts/demo-gen">Azure DevOps Demo Generator</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+									<li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Task-specific clients</h3>
+                                                        <p><a href="/vsts/test/provide-stakeholder-feedback">Test &amp; Feedback extension</a></p>
+														<p><a href="/vsts/project/feedback/give-feedback">Microsoft Feedback Client</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardText">
+                                                        <h3>Web app deployment</h3>
+                                                        <p><a href="/vsts/pipelines/targets/webapp">Azure Web App Deployment</a></p>
+														<p><a href="/vsts/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups">Windows Virtual Machine</a></p>
+														<p><a href="/vsts/pipelines/apps/cd/deploy-docker-webapp">Azure Web App for Containers</a></p>
+													</div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </li>
+                            </li>
                         </ul>
-</td>
-<td width="25%">
-                        <h3>Continuous integration & delivery</h3>
-                            <p><a href="/vsts/pipelines/index">Build and release pipelines</a><br/>
-                            <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
-                            <a href="/vsts/deploy-azure/index">Deploy to Azure</a><br/>
-                            <a href="/vsts/package/index">Package management</a><br/>
-                            <a href="/vsts/pipelines/library/index">Library assets</a><br/>
-                            <a href="/vsts/pipelines/agents/agents">Hosted &amp; private agents</a><br/>
-                            <a href="/vsts/pipelines/tasks">Task reference</a></p>
-                        <h3>Share code</h3>
-                            <p><a href="/vsts/package/overview">Package management</a><br/>
-                            <a href="/vsts/package/get-started-nuget">NuGet</a><br/>
-                            <a href="/vsts/package/get-started-npm">npm</a><br/>
-                            <a href="/vsts/package/get-started-maven">Maven</a></p>
-                        <h3>Test</h3>
-                            <p><a href="/vsts/test/index">Exploratory & manual testing</a><br/>
-                            <a href="/vsts/project/feedback/index">Request stakeholder feedback</a><br/>
-                            <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a><br/>
-                            <a href="/vsts/test/load-test/index">Load testing</a><br/>
-                            <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">Unit & functional testing</a></p>
-</td>
-<td width="25%">
-                        <h3>Management tools</h3>
-                            <p><a href="/vsts/organizations/settings/index">Project settings</a><br/>
-                            <a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; configure teams</a><br/>
-                            <a href="/vsts/organizations/settings/work/inheritance-process-model">Process customization</a><br/>
-                            <a href="/vsts/organizations/security/index">Security &amp; identity</a><br/>
-                            <a href="/vsts/organizations/projects/index">Manage projects</a><br/>
-                            <a href="/vsts/organizations/accounts/index">Manage organizations</a><br/>
-                            <a href="/vsts/billing/index">Billing</a><br/>
-                            <a href="/vsts/notifications/index">Manage notifications</a><br/>
-                            <a href="/tfs/server/index">Team Foundation Server</a><br/>
-                            <a href="/vsts/articles">Technical Articles</a></p>
-                        <h3>Discover, manage, and develop extensions</h3>
-                            <p><a href="/vsts/marketplace/overview">Discover extensions</a><br/>
-                            <a href="/vsts/extend/index">Develop extensions</a><br/>
-                            <a href="/vsts/service-hooks/index">Service hooks</a><br/>
-                            <a href="/vsts/integrate/index">Integrate applications</a></p>
-                        </ul>
-</td>
-</tr>
-</tbody>
-</table>
-<h2 id="deploy">Development and Deployment Resources</h2>
-<table border="0">
-<tbody class="noBullet" style="padding-left:0;font-size:.9rem;">
-<tr>
-<td width="25%">
-                        <h3>IDEs</h3>
-                            <p><a href="/visualstudio">Visual Studio</a><br/>
-                            <a href="/vsts/java/vscode-extension">Visual Studio Code</a><br/>
-                            <a href="/vsts/java/index">Visual Studio</a><br/>
-                            <a href="/vsts/java/download-intellij-plug-in">IntelliJ</a><br/>
-                            <a href="/vsts/java/download-android-studio-plug-in">Android Studio</a><br/>
-                            <a href="/vsts/java/download-eclipse-plug-in">Eclipse/Team Explorer Everywhere</a></p> 
-                        <h3>Task-specific clients</h3>
-                            <p><a href="/vsts/test/provide-stakeholder-feedback">Test & Feedback extension</a><br/>
-                            <a href="/vsts/project/feedback/give-feedback">Microsoft Feedback Client</a></p> 
-</td>
-<td width="25%">
-                        <h3>Azure DevOps project</h3>
-                            <p><a href="/azure/devops-project/azure-devops-project-aspnet-core">ASP.NET Code</a><br/>
-                            <a href="/azure/devops-project/azure-devops-project-nodejs">Node.js</a><br/>
-                            <a href="/azure/devops-project/azure-devops-project-java">Java</a><br/>
-                            <a href="/azure/devops-project/azure-devops-project-python">Python</a><br/> 
-                            <a href="/azure/devops-project/azure-devops-project-php">PHP</a><br/>
-                            <a href="/azure/devops-project/azure-devops-project-ruby">Ruby</a><br/>
-                            <a href="/azure/devops-project/azure-devops-project-go">Go</a></p> 
-                        <h3>Web app deployment</h3>
-                            <p><a href="/vsts/pipelines/targets/webapp">Azure Web App Deployment</a><br/>
-                            <a href="/vsts/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups">Windows Virtual Machine</a><br/>
-                            <a href="/vsts/pipelines/apps/cd/deploy-docker-webapp">Azure Web App for Containers</a></p> </td>
-<td width="25%">
-<h3 id="devops-center">DevOps resource center</h3>
-                            <p><a href="/azure/devops/learn/what-is-devops">What is DevOps?</a><br/>
-                            <a href="/azure/devops/learn/git/what-is-version-control">What is version control?</a><br/>
-                            <a href="/azure/devops/learn/git/what-is-git">What is Git?</a><br/>
-                            <a href="/azure/devops/learn/agile/what-is-agile">What is Agile?</a><br/>
-                            <a href="/azure/devops/learn/agile/what-is-scrum">What is Scrum?</a><br/>
-                            <a href="/azure/devops/learn/agile/scale-agile-large-teams">Scale Agile to Large Teams</a><br/>
-                            <a href="//azure/devops/learn/git/git-at-scale">Git at Scale</a><br/>
-                            <a href="/azure/devops/learn/devops-at-microsoft/">DevOps at Microsoft</a><br/>
-                            <a href="/azure/devops/learn/events-and-talks/">Events and Talks</a></p>
-</td>
-<td width="25%">
-                        <h3>Developer tools</h3>
-                            <p><a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a><br/>
-                            <a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a><br/>
-                            <a href="/vsts/repos/git/command-prompt">Git commands</a><br/>
-                            <a href="/vsts/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a><br/>
-                            <a href="https://docs.microsoft.com/en-us/cli/vsts/overview">CLI</a><br/> 
-                            <a href="/vsts/demo-gen">Azure DevOps Demo Generator</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
