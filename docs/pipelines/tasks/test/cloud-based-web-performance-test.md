@@ -33,9 +33,8 @@ exists and is responsive.
 
 ## Demands
 
-The build agent must have the following capabilities:
+The agent must have the following capability:
 
-* MSBuild
 * Azure PowerShell
 
 ::: moniker range="> tfs-2018"

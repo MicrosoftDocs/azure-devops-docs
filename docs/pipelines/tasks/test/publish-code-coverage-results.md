@@ -18,6 +18,10 @@ monikerRange: '>= tfs-2015'
 ![icon](_img/publish-code-coverage-results-icon.png)
 Publishes code coverage results that were produced by a build in [Cobertura](http://cobertura.github.io/cobertura/) or [JaCoCo](http://www.eclemma.org/jacoco/) format.
 
+## Demands
+
+[none]
+
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/PublishCodeCoverageResultsV1.md)]
@@ -33,7 +37,6 @@ Publishes code coverage results that were produced by a build in [Cobertura](htt
 <tr><td>Fail when code coverage results are missing</td><td>(Optional) Available only on Azure Pipelines and TFS 2018 and later. Fail the task if code coverage did not produce any results to publish.</td></tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
-
 
 ## More Information
 

@@ -35,10 +35,7 @@ to run tests, results are automatically published and you do not need a separate
 
 ## Demands
 
-The build agent must have the following capabilities:
-
-* MSBuild
-* Azure PowerShell
+[none]
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
