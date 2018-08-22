@@ -15,6 +15,12 @@ monikerRange: 'vsts'
 
 ![](_img/apachejmeterloadtest.png) Runs the Apache JMeter load test in cloud
 
+## Demands
+
+The agent must have the following capability:
+
+* Azure PowerShell
+
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/RunJMeterLoadTestV1.md)]

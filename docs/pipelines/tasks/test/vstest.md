@@ -23,6 +23,8 @@ Tests can be distributed on multiple agents using version 2 of this task.
 
 ## Demands 
 
+The agent must have the following capability:
+
 **vstest**
 
 The vstest demand can be satisfied in two ways: 
