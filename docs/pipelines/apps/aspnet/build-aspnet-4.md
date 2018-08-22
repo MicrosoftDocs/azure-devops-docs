@@ -1,5 +1,6 @@
 ---
-title: Build your ASP.NET 4 app | Azure Pipelines or Team Foundation Server
+title: Build your ASP.NET 4 app
+titleSuffix: Azure Pipelines & TFS
 description: Define a continuous integration (CI) build for your ASP.NET 4 app in Azure Pipelines or Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd

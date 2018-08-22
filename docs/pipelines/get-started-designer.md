@@ -1,5 +1,6 @@
 ---
-title: Create your first build and release | Azure Pipelines
+title: Create your first build and release
+titleSuffix: Azure Pipelines & TFS
 description: CI/CD novice? Create an automated build and release pipeline in Azure Pipelines and TFS
 ms.prod: devops
 ms.technology: devops-cicd
@@ -213,7 +214,7 @@ Create a build pipeline that prints "Hello world."
 
 ## Publish an artifact from your build
 
-A typical build produces an artifact that can then be deployed to various environments in a release. Here to demonstrate the capability in a simple way, we'll simply publish the script as the artifact.
+A typical build produces an artifact that can then be deployed to various stages in a release. Here to demonstrate the capability in a simple way, we'll simply publish the script as the artifact.
 
 ::: moniker range="vsts"
 
@@ -250,7 +251,7 @@ A typical build produces an artifact that can then be deployed to various enviro
 
 > Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 >
-> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Team Build](build/artifacts.md).
+> To enable you to produce artifacts, we provide tools such as copying with pattern matching, and a staging directory in which you can gather your artifacts before publishing them. See [Artifacts in Azure Pipelines](build/artifacts.md).
 
 ## Enable continuous integration (CI)
 
@@ -417,7 +418,7 @@ You've just created a build pipeline that automatically builds and validates wha
 
 ## Create a release pipeline
 
-Define the process for running the script in two environments.
+Define the process for running the script in two stages.
 
 ::: moniker range=">= tfs-2018 <= vsts"
 
@@ -427,7 +428,7 @@ Define the process for running the script in two environments.
 
 1. Select the action to start with an **empty pipeline**.
 
-1. Name the environment **QA**.
+1. Name the stage **QA**.
 
 1. In the Artifacts panel, select **+ Add** and specify a **Source (Build pipeline)**. Select **Add**.
 
@@ -435,7 +436,7 @@ Define the process for running the script in two environments.
 
    ![trigger continuous deployment](_img/get-started-designer/trigger-continuous-deployment-release-environment-tfs-2018-2.png)
 
-1. Select the **Tasks** tab and select your **QA** environment.
+1. Select the **Tasks** tab and select your **QA** stage.
 
 1. Select the plus sign **( + )** for the job to add a task to the job.
 
@@ -451,11 +452,11 @@ Define the process for running the script in two environments.
    -greeter "$(Release.RequestedFor)" -trigger "$(Build.DefinitionName)"
    ```
 
-1. On the **Pipeline** tab, select the **QA** environment and select **Clone**.
+1. On the **Pipeline** tab, select the **QA** stage and select **Clone**.
 
    ![clone-release-environment](_img/get-started-designer/clone-release-environment-tfs-2018-2.png)
 
-1. Rename the cloned environment **Production**.
+1. Rename the cloned stage **Production**.
 
 1. Rename the release pipeline **Hello world**.
 
@@ -475,7 +476,7 @@ Define the process for running the script in two environments.
 
 1. Make sure that your **Hello world** build pipeline that you created above is selected. Select **Continuous deployment**, and then select **Create**.
 
-1. Select **Add tasks** in the environment.
+1. Select **Add tasks** in the stage.
 
 1. On the **Task catalog** dialog box, select **Utility**, locate the **PowerShell** task, and then select its **Add** button. Select the **Close** button.
 
@@ -487,17 +488,17 @@ Define the process for running the script in two environments.
 -greeter "$(Release.RequestedFor)" -trigger "$(Build.DefinitionName)"
 ```
 
-1. Rename the environment **QA**.
+1. Rename the stage **QA**.
 
  ![rename release environment](_img/get-started-designer/rename-release-environment.png)
 
-1. **Clone** the **QA** environment.
+1. **Clone** the **QA** stage.
 
  ![clone-release-environment](_img/get-started-designer/clone-release-environment.png)
 
  Leave **Automatically approve** and **Deploy automatically...** selected, and select **Create**.
 
-1. Rename the new environment **Production**.
+1. Rename the new stage **Production**.
 
 1. Rename the release pipeline **Hello world**.
 
@@ -507,13 +508,13 @@ Define the process for running the script in two environments.
 
 ::: moniker-end
 
-> A release pipeline is a collection of environments to which the application build artifacts are deployed. It also defines the actual deployment pipeline for each environment, as well as how the artifacts are promoted from one environment to another.
+> A release pipeline is a collection of stages to which the application build artifacts are deployed. It also defines the actual deployment pipeline for each stage, as well as how the artifacts are promoted from one stage to another.
 >
 > Also, notice that we used some variables in our script arguments. In this case, we used [release variables](release/variables.md) instead of the build variables we used for the build pipeline.
 
 ## Deploy a release
 
-Run the script in each environment.
+Run the script in each stage.
 
  ::: moniker range="vsts"
 
@@ -567,11 +568,11 @@ Run the script in each environment.
 
  ::: moniker-end
 
-> You can track the progress of each release to see if it has been deployed to all the environments. You can track the commits that are part of each release, the associated work items, and the results of any test runs that you've added to the release pipeline.
+> You can track the progress of each release to see if it has been deployed to all the stages. You can track the commits that are part of each release, the associated work items, and the results of any test runs that you've added to the release pipeline.
 
 ## Change your code and watch it automatically deploy to production
 
-We'll make one more change to the script. This time it will automatically build and then get deployed all the way to the production environment.
+We'll make one more change to the script. This time it will automatically build and then get deployed all the way to the production stage.
 
 1. Go to the **Code** hub, **Files** tab, edit the **HelloWorld.ps1** file, and change it as follows:
 
@@ -591,7 +592,7 @@ Write-Host "Now that you've got CI/CD, you can automatically deploy your app eve
 
 1. After the build is completed, select the **Releases** tab, open the new release, and then go to the **Logs**.
 
- Your new code automatically is deployed in the **QA** environment, and then in the **Production** environment.
+ Your new code automatically is deployed in the **QA** stage, and then in the **Production** stage.
 
    ::: moniker range=">= tfs-2018 <= vsts"
 
@@ -622,7 +623,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
 | [Go](apps/go/go.md) | Go |
 | [Java](languages/java.md) | Gradle |
-| [JavaScript](languages/javascript.md) | NodeJS with gulp (Grunt is also an option)|
+| [JavaScript](languages/javascript.md) | Node.js |
 | [Xcode](languages/xcode.md) | Xcode |
 
 ## Q & A

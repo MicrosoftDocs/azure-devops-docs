@@ -56,7 +56,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 ::: moniker range="vsts"
 ### Server URL on Azure Pipelines
 
-`https://{your-organization}.visualstudio.com`
+`https://dev.azure.com/{your-organization}`
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < vsts"

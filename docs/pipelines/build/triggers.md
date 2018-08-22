@@ -1,5 +1,6 @@
 ---
-title: Build pipeline triggers | Azure Pipelines or Team Foundation Server
+title: Build pipeline triggers
+titleSuffix: Azure Pipelines & TFS
 description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops

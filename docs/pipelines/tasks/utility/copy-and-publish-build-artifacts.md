@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 > [!IMPORTANT]
 > 
-> If you're using Azure Pipelines, or Team Foundation Server (TFS) 2017 or newer, then we recommend that you do not use this deprecated task. Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Team Build](../../build/artifacts.md).
+> If you're using Azure Pipelines, or Team Foundation Server (TFS) 2017 or newer, then we recommend that you do not use this deprecated task. Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Azure Pipelines](../../build/artifacts.md).
 
 ::: moniker-end
 
@@ -28,7 +28,7 @@ monikerRange: '>= tfs-2015'
 
 > [!IMPORTANT]
 > 
-> Are you using Team Foundation Server (TFS) 2015.4? If so then we recommend that you do not use this deprecated task. Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Team Build](../../build/artifacts.md).
+> Are you using Team Foundation Server (TFS) 2015.4? If so then we recommend that you do not use this deprecated task. Instead, use the **Copy Files** and **Publish Build Artifacts** tasks. See [Artifacts in Azure Pipelines](../../build/artifacts.md).
 >
 > You should use this task only if you're using Team Foundation Server (TFS) 2015 RTM. In that version of TFS this task is listed under the **Build** category and it's called **Publish Build Artifacts**.
 > 
@@ -73,7 +73,7 @@ None
 <tr>
 <td>Artifact Type</td>
 <td>
-<p>Choose **server** to store the artifact on your Team Foundation Server. This is the best and simplest option in most cases. See [Artifacts in Team Build](../../build/artifacts.md).</p>
+<p>Choose **server** to store the artifact on your Team Foundation Server. This is the best and simplest option in most cases. See [Artifacts in Azure Pipelines](../../build/artifacts.md).</p>
 </td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]

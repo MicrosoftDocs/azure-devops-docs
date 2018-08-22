@@ -49,7 +49,7 @@ Global build retention policy settings can be managed from the **Pipelines** set
 
 ::: moniker range="vsts"
 
-* Azure Pipelines: `https://{your_organization}.visualstudio.com/_admin/_buildQueue`
+* Azure Pipelines: `https://dev.azure.com/{your_organization}/_admin/_buildQueue`
 
 ::: moniker-end
 
@@ -161,8 +161,8 @@ If you are using Azure Pipelines, you can view but not change these settings for
 
 Global release retention policy settings can be managed from the **Release** settings of your project:
 
-* Azure Pipelines: `https://{your_organization}.visualstudio.com/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
-* On-premises: `https://{your_server}/tfs/{collection_name}/{team_project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+* Azure Pipelines: `https://dev.azure.com/{your_organization}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
+* On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
 The **maximum retention policy** sets the upper limit for how long releases can be retained
 for all release pipelines. Authors of release pipelines cannot

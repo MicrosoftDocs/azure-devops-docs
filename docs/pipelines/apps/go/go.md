@@ -1,5 +1,6 @@
 ---
-title: Build your Go app  | Azure Pipelines or Team Foundation Server
+title: Build your Go app
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can use the continuous integration (CI) pipeline in Azure Pipelines or TFS to automatically build your Go application
 ms.prod: devops
 ms.technology: devops-cicd

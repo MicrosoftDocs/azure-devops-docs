@@ -1,7 +1,7 @@
 ---
-title: Azure DevOps Pipelines New User Guide - Key Concepts
+title: Azure Pipelines New User Guide - Key Concepts
 titleSuffix: Azure DevOps Services
-description: Learn how Azure DevOps Pipelines works with your code and tools to automate build and deploy, and the key concepts behind it.
+description: Learn how Azure Pipelines works with your code and tools to automate build and deploy, and the key concepts behind it.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: douge
@@ -10,7 +10,7 @@ ms.date: 07/06/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Key Concepts for New Azure DevOps Pipelines Users
+# Key Concepts for New Azure Pipelines Users
 
 Learn about the key concepts and components that are used in Pipelines. Understanding the basic terms and parts of Pipelines will help you further explore how it can help you deliver better code more efficiently and reliably.
 
@@ -18,7 +18,7 @@ Learn about the key concepts and components that are used in Pipelines. Understa
 
 ![Pipelines into image](../_img/pipelines-image.png)
 
-Azure DevOps Pipelines is simple in its design:
+Azure Pipelines is simple in its design:
 
 1. Edit your code any way you like
 2. Push your code to your version control repository
@@ -40,7 +40,7 @@ A **build** is an essential part of the development process - parts of an applic
 
 ## Continuous delivery
 
-**Continuous Delivery (CD)** is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments helps drive quality. **Continuous Integration** systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.
+**Continuous Delivery (CD)** is a process by which code is built, tested, and deployed to one or more test and production stages. Deploying and testing in multiple stages helps drive quality. **Continuous Integration** systems produce the deployable artifacts, including infrastructure and apps, automated release pipelines consume these artifacts to release new versions and fixes to existing systems. Monitoring and alerting systems run constantly to drive visibility into the entire CD process and to ensure errors are caught often and early.
 
 ## Continuous integration
 
@@ -48,7 +48,7 @@ A **build** is an essential part of the development process - parts of an applic
 
 ## Deployment target
 
-Once you have continuous integration in place, the next step is to create a release pipeline to automate the deployment of your application to one or more environments. This automation process is again defined as a collection of tasks. VSTS and TFS support deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
+Once you have continuous integration in place, the next step is to create a release pipeline to automate the deployment of your application to one or more stages. This automation process is again defined as a collection of tasks. Azure Pipelines and TFS support deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
 
 ## Pipeline
 

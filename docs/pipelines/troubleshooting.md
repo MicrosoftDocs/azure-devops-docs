@@ -1,6 +1,7 @@
 ---
-title: Troubleshoot Builds and Releases | Azure Pipelines or Team Foundation Server
-description: Learn how you can troubleshoot Team Foundation Build (TFBuild) and Release in Team Foundation Server (TFS) and Azure Pipelines.
+title: Troubleshoot builds and releases
+titleSuffix: Azure Pipelines & TFS
+description: Learn how to troubleshoot builds and releases in Azure Pipelines and Team Foundation Server.
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E

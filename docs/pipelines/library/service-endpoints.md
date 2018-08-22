@@ -32,8 +32,8 @@ your tasks. For example, you can create a service connection for your Azure subs
 and use this service connection name in an Azure Web Site Deployment task in a release pipeline.
 
 You define and manage service connections from the Admin settings of your project.
-* Azure DevOps: `https://{organization}.visualstudio.com/{teamproject}/_admin/_services`
-* TFS: `https://{tfsserver}/{collection}/{teamproject}/_admin/_services`
+* Azure DevOps: `https://dev.azure.com/{organization}/{project}/_admin/_services`
+* TFS: `https://{tfsserver}/{collection}/{project}/_admin/_services`
 
 Service connections are created at project scope. A service connection created in one project is not visible in another project.
 

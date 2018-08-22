@@ -1,5 +1,6 @@
 ---
-title: Use Maven artifact feeds | Azure Artifacts
+title: Use Maven artifact feeds
+titleSuffix: Azure Artifacts
 description: Learn about how you can use Maven artifacts with Azure Artifacts or Team Foundation Server (TFS).
 ms.prod: devops
 ms.technology: devops-artifacts
@@ -13,13 +14,13 @@ ms.date: 01/31/2018
 monikerRange: '>= tfs-2018'
 ---
  
-# Set up Team Build and Maven
+# Set up Azure Pipelines and Maven
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-This guide covers the basics of using Team Build to work with Maven artifacts in Package Management feeds.
+This guide covers the basics of using Azure Pipelines to work with Maven artifacts in Package Management feeds.
  
 This walkthrough assumes that you've already added the correct build service identity to your feed.
 

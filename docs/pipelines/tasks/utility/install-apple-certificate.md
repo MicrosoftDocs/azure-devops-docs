@@ -1,5 +1,6 @@
 ---
-title: Install Apple Certificate | Azure Pipelines or Team Foundation Server
+title: Install Apple Certificate
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can install an Apple certificate required to build on a macOS agent on Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops

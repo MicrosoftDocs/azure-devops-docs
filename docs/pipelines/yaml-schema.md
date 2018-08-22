@@ -1,5 +1,6 @@
 ---
-title: YAML schema | Azure Pipelines
+title: YAML schema
+titleSuffix: Azure Pipelines
 description: An overview of all YAML features.
 ms.prod: devops
 ms.technology: devops-cicd
@@ -224,7 +225,7 @@ steps:
 
 ```yaml
 # File: azure-pipelines.yml
-# Repository: https://contoso.visualstudio.com/MyProject/_git/MyRepo
+# Repository: https://dev.azure.com/contoso/MyProject/_git/MyRepo
 
 resources:
   repositories:

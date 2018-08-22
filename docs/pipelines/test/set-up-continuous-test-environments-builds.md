@@ -177,7 +177,7 @@ in the settings for the [Visual Studio Test](https://github.com/Microsoft/vsts-t
 Version 2 of the **Visual Studio Test** task uses the unified Build and Release
 agent, instead of a different custom agent as was the case with version 1.
 The new version of the task also integrates intelligently with
-[task phases](../../pipelines/process/phases.md).
+[task jobs](../../pipelines/process/phases.md).
 This topic explores how you can use this task, and explains how
 it works in a range of scenarios.  
 
@@ -211,7 +211,7 @@ a selected property setting.
 
 ### How test tasks run in jobs
 
-You can add [different types of phases](../../pipelines/process/phases.md)
+You can add [different types of jobs](../../pipelines/process/phases.md)
 to a release pipeline. The properties of these jobs include settings for
 **Parallelism**.
 
@@ -225,7 +225,7 @@ For a full description of the operation for all tasks, see
 #### No parallelism
 
 A single agent from the specified pool will be allocated to this job.
-This is the default, and all tasks in the phase will run on that agent.
+This is the default, and all tasks in the job will run on that agent.
 The **Visual Studio Test** task runs in exactly the same way as version
 1 with single agent test execution.
 
@@ -244,13 +244,12 @@ are run.
 
 In the case of Build, you typically use **BuildPlatform** and **BuildConfiguration** as multipliers.
 The same logic applies to testing. For example, you could deploy a web app to Azure and run
-cross-browser tests on IE and Firefox by configuring an environment to use two jobs - one
-for the deploy phase and one for the test phase: 
+cross-browser tests on IE and Firefox by configuring an environment to use two jobs - a deploy job and a test job: 
 
 ![Configuring the release pipeline with two jobs for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig.png)
 
-The test phase is set up as a multiple executions process using a variable named **Browser**, which
-has the values `IE` and `Firefox`. The phase will run twice using these two configurations - one
+The test job is set up as a multiple executions process using a variable named **Browser**, which
+has the values `IE` and `Firefox`. The job will run twice using these two configurations - one
 agent is assigned the value `IE` for its **Browser** variable, and one with the value `Firefox`.
 
 ![Specifying the multipliers for multiple executions testing](_img/test-with-unified-agent-and-phases/multipliers1.png)
@@ -270,17 +269,17 @@ The execution results might look like this:
 
 #### Multiple agents
 
-Multiple agents will be allocated to the phase. You specify the number of agents to be allocated
-from the pool, and the set of tasks in that phase will be distributed across all these agents.
+Multiple agents will be allocated to the job. You specify the number of agents to be allocated
+from the pool, and the set of tasks in that job will be distributed across all these agents.
 
 ![Configuring the number of agents for multiple agents parallelism](_img/test-with-unified-agent-and-phases/multi-agent.png)
 
-In this mode, the Visual Studio Test task runs in a special way. It recognizes that its a multiple agents
-phase, and runs tests in a distributed manner across all the allocated agents. Because other tasks run
+In this mode, the Visual Studio Test task runs in a special way. It recognizes that it's a multiple agents
+job, and runs tests in a distributed manner across all the allocated agents. Because other tasks run
 across all agents, any pre- and post-test tasks also run equally on all the agents. Therefore, all the
 agents are prepared and cleaned up in a consistent manner.
 In addition, test execution does not require all agents to be available at the same time. If some agents
-are busy with another release or build, the phase can still start with the available number of agents
+are busy with another release or build, the job can still start with the available number of agents
 that match the demand, and test execution starts. As additional agents become available, they can pick
 up any remaining tests that have not yet run.
 
@@ -288,11 +287,11 @@ For example, the log from a multiple agents test run, where some tests have fail
 
 ![Results in release when running three agents in parallel](_img/test-with-unified-agent-and-phases/multi-agent-test-run.png)
 
-Artifacts are automatically downloaded when the phase starts, so the test assemblies and other files
+Artifacts are automatically downloaded when the job starts, so the test assemblies and other files
 are already located on the agent, and no "copy files" task is required. So, to publish an Azure Web App
 and run a large number of tests with fast test execution, you could model the environment as two jobs -
-one being the deploy phase (which runs on a single agent because you don't want multiple agents to deploy
-the same app concurrently), and the other a test phase that uses multiple agents mode to achieve test distribution.
+one being the deploy job (which runs on a single agent because you don't want multiple agents to deploy
+the same app concurrently), and the other a test job that uses multiple agents mode to achieve test distribution.
 
 This also means that you can use different agent pools for the two jobs, allowing you to manage agents
 for different purposes separately if required.
@@ -330,7 +329,7 @@ Agents set to run as a service cannot run UI tests. Also disable any screensaver
 **A**: Currently, it is there only as a reminder to run agents interactively
 if you are running UI tests. If you are using an agent pool with a mix of
 interactive and 'running as service' agents, you may also want to add an
-'Interactive' capability to your agents demand that in your test phase
+'Interactive' capability to your agents demand that in your test job
 to ensure the appropriate set of agents that can run UI tests are used.
 See [Build and Release agent capabilities](../../pipelines/agents/agents.md#capabilities).
 
@@ -382,7 +381,7 @@ agents in parallel by referring to your test assemblies using `**\$(Platform)\*t
 If you have scenarios that necessitate running tests on machines in the deployment group
 where the app is deployed, you can use the Visual Studio Test version 2 task.
 If multiple machines are selected (using, for example, tags) in a **Run on Deployment Group**
-phase, the tests will be replicated to each of the machines.
+job, the tests will be replicated to each of the machines.
 
 ## See Also
 

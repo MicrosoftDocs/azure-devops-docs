@@ -1,5 +1,6 @@
 ---
-title: FTP Upload | Azure Pipelines or Team Foundation Server
+title: FTP Upload
+titleSuffix: Azure Pipelines & TFS
 description: Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops

@@ -66,7 +66,7 @@
     href: build/ci-build-git.md
   - name: Build your GitHub repo
     href: build/ci-build-github.md
-  - name: Build OSS repos
+  - name: Build open source projects
     href: build/ci-public.md
   - name: CD to Azure Web App
     href: apps/cd/deploy-webdeploy-webapps.md

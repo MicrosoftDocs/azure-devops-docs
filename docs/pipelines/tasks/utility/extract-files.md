@@ -1,5 +1,6 @@
 ---
-title: Extract Files | Azure Pipelines or Team Foundation Server
+title: Extract Files
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can extract files from archives to a target folder using minimatch patterns on Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops

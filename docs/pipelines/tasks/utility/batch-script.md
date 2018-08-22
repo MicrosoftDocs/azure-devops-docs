@@ -1,5 +1,6 @@
 ---
-title: Batch script | Azure Pipelines or Team Foundation Server
+title: Batch script
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can execute .bat or .cmd scripts when building your code in Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops

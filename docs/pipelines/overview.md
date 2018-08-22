@@ -1,5 +1,6 @@
 ---
-title: Overview of Build and Release | Azure Pipelines & TFS
+title: Overview of build and release
+titleSuffix: Azure Pipelines & TFS
 description: Build and deploy your app using Azure Pipelines and Team Foundation Server (TFS)
 ms.prod: devops
 ms.technology: devops-cicd
@@ -24,7 +25,7 @@ Azure Pipelines is a continuous integration and deployment tool for application 
 
 Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code.  Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix.  Automated tests execute as part of the CI pipeline to ensure quality.  Artifacts are produced from CI systems and fed to release pipelines to drive frequent deployments. The build service in Azure Pipelines and TFS helps you set up and manage CI for your applications.
 
-Continuous Delivery (CD) is a process by which code is built, tested, and deployed to one or more test and production environments.  Deploying and testing in multiple environments drives quality.  CI systems produce the deployable artifacts including infrastructure and apps.  Automated release pipelines consume these artifacts to release new versions and fixes to existing systems.  Monitoring and alerting systems run continually to drive visibility into the entire CD pipeline. The release service in Azure Pipelines and TFS helps you set up and manage CD for your applications.
+Continuous Delivery (CD) is a process by which code is built, tested, and deployed to one or more test and production stages.  Deploying and testing in multiple stages drives quality.  CI systems produce the deployable artifacts including infrastructure and apps.  Automated release pipelines consume these artifacts to release new versions and fixes to existing systems.  Monitoring and alerting systems run continually to drive visibility into the entire CD pipeline. The release service in Azure Pipelines and TFS helps you set up and manage CD for your applications.
 
 Continuous Testing (CT) on-premises or in the cloud is the use of automated build-deploy-test workflows, with a choice of technologies and frameworks, that test your changes continuously in a fast, scalable, and efficient manner.
 
@@ -38,7 +39,7 @@ To configure CI, you create a build pipeline. A build pipeline is a representati
 
 ## Deployment targets
 
-Once you have continuous integration in place, the next step is to create a release pipeline to automate the deployment of your application to one or more environments. This automation process is again defined as a collection of tasks. Azure Pipelines and TFS support deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
+Once you have continuous integration in place, the next step is to create a release pipeline to automate the deployment of your application to one or more stages. This automation process is again defined as a collection of tasks. Azure Pipelines and TFS support deploying your application to virtual machines, containers, on-premises and cloud platforms, or PaaS services. You can also publish your mobile application to a store.
 
 ## Package formats
 

@@ -88,7 +88,7 @@ For example: `c:\agent\_work`.
 <td>Build.ArtifactStagingDirectory</td>
 <td>The local path on the agent where any artifacts are copied to before being pushed to their destination.
 <br/><br/>
-A typical way to use this folder is to publish your build artifacts with the [Copy files](../../tasks/utility/copy-files.md) and [Publish build artifacts](../../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Team Build](../artifacts.md).
+A typical way to use this folder is to publish your build artifacts with the [Copy files](../../tasks/utility/copy-files.md) and [Publish build artifacts](../../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Azure Pipelines](../artifacts.md).
 <br/><br/>
 For example:
 <ul>
@@ -294,7 +294,7 @@ The local path on the agent where any artifacts are copied to before being pushe
 <br/><br/>
 This directory is purged before each new build, so you don't have to clean it up yourself.
 <br/><br/>
-A typical way to use this folder is to publish your build artifacts with the [Copy files](../../tasks/utility/copy-files.md) and [Publish build artifacts](../../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Team Build](../artifacts.md).
+A typical way to use this folder is to publish your build artifacts with the [Copy files](../../tasks/utility/copy-files.md) and [Publish build artifacts](../../tasks/utility/publish-build-artifacts.md) tasks. See [Artifacts in Azure Pipelines](../artifacts.md).
 <br/><br/>
 In **TFS 2015.4**, Build.ArtifactStagingDirectory and Build.StagingDirectory are interchangeable.
 <br/><br/>

@@ -1,5 +1,6 @@
 ---
-title: Download Secure File | Azure Pipelines or Team Foundation Server
+title: Download Secure File
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can download a secure file to a temporary location on the build or release agent in Azure Pipelines and Team Foundation Server
 ms.topic: reference
 ms.prod: devops

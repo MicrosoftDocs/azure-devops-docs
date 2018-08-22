@@ -190,7 +190,7 @@ You must configure credentials for connecting to Azure Pipelines.  When using cr
 
 1. Enter a **name**, **description**, and then select **Add** **hostname**.
 
-1. In the **Include** text box, enter ```\*.visualstudio.com``` to enable this credential for all Azure DevOps organizations.  You can optionally enter your specific Azure DevOps organization.
+1. In the **Include** text box, enter ```\dev.azure.com/*``` to enable this credential for all Azure DevOps organizations.  You can optionally enter your specific Azure DevOps organization.
 
 1. Select **Ok**.  You will see a message about empty credentials.  Select the link for **adding some credentials**.
 
@@ -254,7 +254,7 @@ You create a Jenkins build job to use the source code stored in your Azure Repos
 1. Select the **Post-build Actions** tab.  Choose **Add post-build action**, then select **Trigger release in TFS/Team Services**.
 
 1. Enter a **Collection URL**.  An example is 
-`http://{YourVSTSAccount}.visualstudio.com/DefaultCollection`
+`http://dev.azure.com/{your-organization}/DefaultCollection`
 
 1. Enter the **project** and choose a **release pipeline** name. Store the **release pipeline** name since it is needed in later steps of this tutorial.
 
@@ -347,7 +347,7 @@ Before you create the release pipeline, you need to install an Azure Pipelines e
 
 Add two tasks to the release pipeline.  The first task updates the **K8sDeploy.yaml** file to pull the image tagged with the current Jenkins build id.
 
-1. Next to the **1 job, 0 environments** link, select the **+** on the **Agent Job** to add a task to the job.
+1. Next to the **1 job, 0 stages** link, select the **+** on the **Agent Job** to add a task to the job.
 
 1. Search for the **Tokenize with XPath/Regular expressions** task which was added with the extension that was installed in the previous step.  Select **Add** to add the task.
 

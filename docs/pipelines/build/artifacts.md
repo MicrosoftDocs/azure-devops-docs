@@ -1,6 +1,7 @@
 ---
-title: Artifacts in Team Build | Azure Pipelines or Team Foundation Server
-description: Understand build artifacts in Team Build (TFBuild) for Azure Pipelines and Team Foundation Server (TFS)
+title: Artifacts in Azure Pipelines
+titleSuffix: Azure Pipelines & TFS
+description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
 ms.prod: devops
@@ -12,7 +13,7 @@ ms.date: 10/12/2017
 monikerRange: '>= tfs-2015'
 ---
 
-# Artifacts in Team Build
+# Artifacts in Azure Pipelines
 
 **Azure Pipelines | TFS 2015.3 and newer | TFS 2015 RTM ([see Q&A](#tfs-2015))**
 

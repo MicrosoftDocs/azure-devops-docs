@@ -1,5 +1,6 @@
 ---
-title: Build your Visual C++ app | Azure Pipelines or Team Foundation Server
+title: Build your Visual C++ app
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can use the continuous integration (CI) pipeline in Azure Pipelines or TFS to automatically build your Visual C++ app.
 ms.prod: devops
 ms.technology: devops-cicd

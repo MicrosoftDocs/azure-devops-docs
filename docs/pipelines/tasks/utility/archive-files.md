@@ -1,5 +1,6 @@
 ---
-title: Archive Files | Azure Pipelines or Team Foundation Server
+title: Archive Files
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can use an archive file to then create a source folder in Azure Pipelines and Team Foundation Server (TFS).  
 ms.topic: reference
 ms.prod: devops

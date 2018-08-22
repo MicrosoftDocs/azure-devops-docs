@@ -1,5 +1,6 @@
 ---
-title: Deploy your ASP.NET Core app to a Windows VM | Azure Pipelines Quickstart
+title: Deploy your ASP.NET Core app to a Windows VM
+titleSuffix: Azure Pipelines & TFS
 description: Set up a CI build for your ASP.NET Core app, and then a CD release an to Azure Windows VM
 ms.prod: devops
 ms.technology: devops-cicd

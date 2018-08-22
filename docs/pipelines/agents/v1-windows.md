@@ -105,7 +105,7 @@ Configure supports the /NoPrompt switch for automated installation scenarios and
 For troubleshooting configuration errors, detailed logs can be found in the \_diag folder under the agent installation directory.
 
 */ServerUrl:ServerUrl*  
-The server URL should not contain the collection name. For example, `http://example:8080/tfs` or `https://example.visualstudio.com`
+The server URL should not contain the collection name. For example, `http://example:8080/tfs` or `https://dev.azure.com/example`
 
 */Name:AgentName*  
 The friendly name to identify the agent on the server.

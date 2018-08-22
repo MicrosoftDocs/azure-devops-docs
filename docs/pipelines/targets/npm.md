@@ -56,7 +56,7 @@ To publish an npm package to a Package Management feed, add the **npm** task. Th
 - **working folder:** Select the folder that contains your `.npmrc` and `package.json`; leave blank if those files are at the root of the repo
 - **npm command:** `publish`
 
-![Team Build npm publish task configuration](_img/npm/team-build-npm-publish.png)
+![Azure Pipelines npm publish task configuration](_img/npm/team-build-npm-publish.png)
 
 [!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
 
