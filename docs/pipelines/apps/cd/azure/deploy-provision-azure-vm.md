@@ -41,7 +41,7 @@ Carry out the following steps to deploy the Azure Resource Group.
 
 3. In the next page, select the build pipeline you created 
    earlier and choose **Create**. This creates a new release pipeline 
-   with one default environment.
+   with one default stage.
 
 4. In the new release pipeline, select **+ Add tasks** and add an **Azure Resource Group Deployment** task.
    Optionally edit the name to help identify the task, such as **Provision Windows 2012 R2 VM**.
@@ -78,10 +78,10 @@ Carry out the following steps to deploy the Azure Resource Group.
 6. If you used [variables](../../../release/variables.md)
    in the parameters of the **Azure Resource Group Deployment** task,
    such as **vmuser**, **vmpassword**, and **dns**, set the values for them in the
-   environment configuration variables. Encrypt the value
+   stage configuration variables. Encrypt the value
    of **vmpassword** by selecting the "padlock" icon.
 
 7. Enter a name for the release pipeline and save it.
 
 8. Create a new release, select the latest build, and 
-   deploy it to the single environment.
+   deploy it to the single stage.

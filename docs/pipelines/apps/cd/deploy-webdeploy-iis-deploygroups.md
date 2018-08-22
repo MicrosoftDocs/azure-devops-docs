@@ -90,6 +90,6 @@ You're now ready to create a release, which means to run the release pipeline wi
 ## Next steps
 
 * [Dynamically create and remove a deployment group](howto-webdeploy-iis-deploygroups.md#depgroup)
-* [Apply environment-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
+* [Apply stage-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
 * [Perform a safe rolling deployment](howto-webdeploy-iis-deploygroups.md#rolling)
 * [Deploy a database with your app](howto-webdeploy-iis-deploygroups.md#database)

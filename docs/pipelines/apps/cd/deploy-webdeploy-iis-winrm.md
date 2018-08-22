@@ -158,9 +158,9 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
 
    ![Checking or setting the Continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
 
-1. On the **Variables** tab of the environment in release pipeline, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
+1. On the **Variables** tab of the stage in release pipeline, configure a variable named **WebServers** with the list of IIS servers as its value; for example `machine1,machine2,machine3`.
 
-1. Configure the following tasks in the environment:
+1. Configure the following tasks in the stage:
   
    ![Windows Machine File Copy](../../tasks/deploy/_img/windows-machine-file-copy-icon.png) [Deploy: Windows Machine File Copy](../../tasks/deploy/windows-machine-file-copy.md) - Copy the Web Deploy package to the IIS servers.
    
@@ -188,7 +188,7 @@ Continuous deployment (CD) means starting an automated release pipeline whenever
    
    - **Website Name**: `Default Web Site` (or the name of the website if you configured a different one earlier).<p />
 
-1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default environment is named Environment1, which you can edit by clicking directly on the name.
+1. Edit the name of the release pipeline, click **Save**, and click **OK**. Note that the default stage is named Stage1, which you can edit by clicking directly on the name.
 
 You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build to IIS servers:
 

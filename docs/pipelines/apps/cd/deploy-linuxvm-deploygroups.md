@@ -82,7 +82,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
    ![Removing the Agent job](_img/deploy-linuxvm-deploygroups/remove-agent-phase.png)
 
-1. Choose **...** next to the **Environment 1** deployment pipeline and select **Add deployment group job**.
+1. Choose **...** next to the **Stage 1** deployment pipeline and select **Add deployment group job**.
 
    ![Adding a Deployment group job](_img/deploy-linuxvm-deploygroups/add-deployment-group-phase.png)
 
@@ -118,6 +118,6 @@ with the artifacts produced by a specific build. This will result in deploying t
 ## Next steps
 
 * [Dynamically create and remove a deployment group](howto-webdeploy-iis-deploygroups.md#depgroup)
-* [Apply environment-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
+* [Apply stage-specific configurations](howto-webdeploy-iis-deploygroups.md#envirconfig)
 * [Perform a safe rolling deployment](howto-webdeploy-iis-deploygroups.md#rolling)
 * [Deploy a database with your app](howto-webdeploy-iis-deploygroups.md#database)

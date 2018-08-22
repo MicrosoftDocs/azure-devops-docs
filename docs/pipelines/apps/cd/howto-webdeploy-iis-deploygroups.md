@@ -25,7 +25,7 @@ In addition, you can extend your deployment in a range of ways
 depending on your scenario and requirements. This topic shows you how to:
 
 * [Dynamically create and remove a deployment group](#depgroup)
-* [Apply environment-specific configurations](#envirconfig)
+* [Apply stage-specific configurations](#envirconfig)
 * [Perform a safe rolling deployment](#rolling)
 * [Deploy a database with your app](#database)
 
@@ -43,17 +43,17 @@ to install the agent on the machines in a deployment group using ARM templates.
 See [Provision deployment group agents](../../release/deployment-groups/howto-provision-deployment-group-agents.md).  
 
 <a name="envirconfig"></a>
-## Apply environment-specific configurations
+## Apply stage-specific configurations
 
-If you deploy releases to multiple environments, you can substitute configuration settings in **Web.config** and other configuration files of your website using these steps:
+If you deploy releases to multiple stages, you can substitute configuration settings in **Web.config** and other configuration files of your website using these steps:
 
-1. Define environment-specific configuration settings in the **Variables** tab of an environment in a release pipeline; for example,
+1. Define stage-specific configuration settings in the **Variables** tab of a stage in a release pipeline; for example,
    `<connectionStringKeyName> = <value>`.
 
 1. In the **IIS Web App Deploy** task, select the checkbox for **XML variable substitution** under **File Transforms and Variable Substitution Options**.
 
-   > If you prefer to manage environment configuration settings in
-   your own database or Azure keyvault, add a task to the environment to read and emit those values using
+   > If you prefer to manage stage configuration settings in
+   your own database or Azure keyvault, add a task to the stage to read and emit those values using
    `##vso[task.setvariable variable=connectionString;issecret=true]<value>`.
 
    > At present, you cannot apply a different configuration to individual IIS servers.
@@ -65,7 +65,7 @@ If your deployment group consists of many IIS target servers, you can deploy to 
 This ensures that your application is available to your customers at all times.
 Simply select the **Deployment group job** and use the slider to configure the **Maximum number of targets in parallel**.
 
-![Configuring safe rolling deployment for the proportion of environments to update in parallel](_img/howto-webdeploy-iis-deploygroups/safe-rolling-deployment.png)
+![Configuring safe rolling deployment for the proportion of stages to update in parallel](_img/howto-webdeploy-iis-deploygroups/safe-rolling-deployment.png)
 
 <a name="database"></a>
 ## Deploy a database with your app
@@ -75,7 +75,7 @@ To deploy a database with your app:
 1. Add both the IIS target servers and database servers to your deployment group.
    Tag all the IIS servers as `web` and all database servers as `database`.
 
-1. Add two machine group jobs to environments in the release pipeline, and a task in each job as follows:
+1. Add two machine group jobs to stages in the release pipeline, and a task in each job as follows:
 
    **First [Run on deployment group job](../../process/phases.md)** for configuration of web servers.
    

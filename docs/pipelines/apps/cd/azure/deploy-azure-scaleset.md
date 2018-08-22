@@ -52,7 +52,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
 
 1. In the next page, select the build pipeline you created 
    earlier and choose **Create**. This creates a new release pipeline 
-   with one default environment.
+   with one default stage.
 
 1. In the new release pipeline, select **+ Add tasks** and add these tasks:
 
@@ -114,7 +114,7 @@ Before you begin, you need a CI build that creates your app. To set up CI, see:
    
    You can use variables to pass values such as the resource group and virtual machine scale set names to the script if you wish.
 
-1. In the **Deployment conditions** dialog for the environment, ensure that the **Trigger** section is set to **After release creation**.
+1. In the **Deployment conditions** dialog for the stage, ensure that the **Trigger** section is set to **After release creation**.
 
 1. Enter a name for the release pipeline and save it.
 

@@ -22,7 +22,7 @@ or from the [user profile **Previews** panel](../../project/navigation/preview-f
 
 * [See a list of the release pipelines you release often](#listdefs)
 * [Search for your definitions and favorite them](#favorite) 
-* [Get great artifact traceability - see only the most relevant releases for a pipeline currently deployed to an environment](#filter) 
+* [Get great artifact traceability - see only the most relevant releases for a pipeline currently deployed to a stage](#filter) 
 * [View the pipeline easily by expanding a release](#pipeline)
 * [Create folders for organization and security](#folders)
 * [Set permissions at a folder level](#folders)

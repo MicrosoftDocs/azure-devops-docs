@@ -83,17 +83,17 @@ Link an existing Azure key vault to a variable group and map selective vault sec
 To use a variable group, open your build or release pipeline, select the **Variables**
 tab, select **Variable groups**, and then choose **Link variable group**.
 In a build pipeline, you see a list of available groups. In a release pipeline (as shown below), you
-also see a drop-down list of environments in the pipeline - you can link the variable group to one or more of these environments.
+also see a drop-down list of stages in the pipeline - you can link the variable group to one or more of these stages.
 
 ![Linking a variable group](_img/link-variable-group.png)
 
 * In a **build pipeline**, the variable group is linked to the pipeline and all the variables in the group are available for use within this pipeline.
-* In a **release pipeline**, you can link a variable group to the pipeline itself, or to a specific environment of the release pipeline.
-  - If you link to a release pipeline, all the variables in the group are available for use in the pipeline and in all environments of that pipeline.
-  - If you link to one or more environments in a release pipeline, the variables from the variable group are scoped to these environments and are not accessible in the other environments of the same release.
+* In a **release pipeline**, you can link a variable group to the pipeline itself, or to a specific stage of the release pipeline.
+  - If you link to a release pipeline, all the variables in the group are available for use in the pipeline and in all stages of that pipeline.
+  - If you link to one or more stages in a release pipeline, the variables from the variable group are scoped to these stages and are not accessible in the other stages of the same release.
 
 > [!NOTE]
-> Linking a variable group to a specific environment is available only on Azure Pipelines and on TFS 2018 Update 2 and later.
+> Linking a variable group to a specific stage is available only on Azure Pipelines and on TFS 2018 Update 2 and later.
 
 You access the value of the variables in a linked variable group in exactly
 the same way as [variables you define within the pipeline itself](../release/variables.md#custom-variables).
@@ -104,6 +104,6 @@ cannot be accessed directly in scripts - instead they must be passed as argument
 [!INCLUDE [variable-collision](../_shared/variable-collision.md)]
 
 Any changes made centrally to a variable group, such as a change in the value of a variable or the addition of new variables,
-will automatically be made available to all the definitions or environments to which the variable group is linked.
+will automatically be made available to all the definitions or stages to which the variable group is linked.
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
