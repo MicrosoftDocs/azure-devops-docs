@@ -1,7 +1,7 @@
 ---
 title: Understand what you get with Azure Boards  
 titleSuffix: Azure DevOps Services
-description: What do you get with Azure Boards  
+description: Main features and functions supported by Azure Boards available from Azure DevOps Services and Team Foundation Server (TFS) 
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
@@ -15,7 +15,9 @@ ms.date: 09/05/2018
 
 # What is Azure Boards?
 
-Azure Boards provides a suite of interactive Agile tools with which you can plan and track work, bugs, and issues. 
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+
+Azure Boards provides a suite of interactive Agile tools with which you can plan and track work, bugs, and issues. Azure Boards is available from Azure DevOps Services and Team Foundation Server (TFS).
 
 Agile, a term coined in 2001 in the [Agile Manifesto](http://agilemanifesto.org), encompasses approaches to software development that emphasize incremental delivery, team collaboration, continual planning, and continual learning. The set of Agile tools that Azure Boards provides are designed to support teams working with Agile methodologies, such as Kanban and Scrum. To learn more, see [What is Agile?](/azure/devops/learn/agile/what-is-agile).
 
@@ -42,7 +44,7 @@ Your Agile tool set, available from **Azure Boards**, consists of the following 
 
 # [Previous navigation](#tab/previous-nav)
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">=tfs-2018"
 - **Work items**: Use to quickly find work items assigned to you or pivot or filter work items based on other criteria  
 - **Backlogs**: Which provide access to: 
 	- **Product and Portfolio backlogs**: Use to plan, prioritize, and organize the work for a team to do within a product or portfolio backlogs  
@@ -197,7 +199,7 @@ Sprint backlogs and taskboards provide a filtered view of work items a team has 
 
 ---
 
-You can also filter the cards on your taskboard to show only those cards mapped to a given sprint. It is recommended that an entire organization share the same sprint interval in order to align multiple teams in a single org to the same rhythm. A common sprint rhythm is sometimes referred to as the "heartbeat" an org. 
+You can also filter the cards on your taskboard to show only those cards mapped to a given sprint. It is recommended that an entire organization share the same sprint interval in order to align multiple teams in a single org to the same rhythm. A common sprint rhythm is sometimes referred to as the "heartbeat" of an org. 
 
 
 

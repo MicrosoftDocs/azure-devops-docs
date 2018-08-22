@@ -3,7 +3,7 @@
   topicHref: /vsts/index
   items: 
   - name: Azure Boards
-    tocHref: /vsts/
+    tocHref: /vsts/boards/
     topicHref: /vsts/boards/index
     items:
     - name: Start using Azure Boards

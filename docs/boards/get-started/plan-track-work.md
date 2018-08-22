@@ -9,12 +9,14 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ms.date: 09/05/2018  
 ---
 
 
 # Plan and track work 
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 You add work items to plan and manage your project. You use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.   
 
@@ -66,9 +68,9 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 	> [!div class="mx-imgBorder"]
 	> ![Boards>Work Items, Add a work item ](../work-items/_img/view-add/work-items-hub-new.png)
-
+<!---
 	> [!TIP]    
-	> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json).
+	> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json). -->
 
 0. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -80,7 +82,7 @@ Open a browser window, choose **Work**, and then **Work Items**.
 
 Create as many work items as you need of the type you need to track the work you want to manage.  
 
-
+<a id="pivot-views" />
 ## View the work items you've just created  
 
 Using the drop-down menu, you can focus on relevant items inside a project using one of the seven pivots as described next. Additionally, you can [filter](#filter) and [sort](#sort) each pivot view.  

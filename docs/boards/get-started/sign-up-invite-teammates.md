@@ -1,7 +1,7 @@
 ---
 title: Sign up and invite teammates
-titleSuffix: Azure DevOps Services  
-description: Quickstart guide to signing up and inviting others to join a team project in Visual Studio Team Services 
+titleSuffix: Azure Boards
+description: Quickstart guide to signing up and inviting others to join a team project in Azure Boards
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: quickstart
@@ -15,8 +15,13 @@ ms.date: 09/05/2018
 
 
 # Sign up for free and invite others to collaborate on your project
+
+[!INCLUDE [temp](../_shared/version-vsts-only.md)]
  
-Sign up for an Azure DevOps organization and Azure Boards to being planning and tracking work. 
+--- To Be Completed --- 
+
+
+Sign up for an Azure DevOps organization and Azure Boards to begin planning and tracking work. 
 
 <a name="MicrosoftAccount"></a>
 
@@ -86,18 +91,18 @@ You provide others access to your account by adding their email address.
 
 0. Fill out the form. 
  
-	<img src="../../user-guide/_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />   
+	<img src="../../user-guide/_img/invite-users-add-user-dialog.png" alt="Web portal, account admin context, Add new users dialog" style="border: 2px solid #C3C3C3;" />  
+
+	> [!NOTE]   
+	> You must add email addresses for ["personal" Microsoft accounts](https://www.microsoft.com/account) 
+	> unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
+	> to authenticates users and control account access.  
+	> If your users don't have Microsoft accounts, 
+	> have them [sign up](https://signup.live.com/).   
 
 	- **Users**: Enter the email address (Microsoft account address) for the user account. You can add several email addresses by separating them with a semicolon (;). Note that the email addresses display in red when they are accepted.  
-		> [!NOTE]   
-		> You must add email addresses for 
-		> ["personal" Microsoft accounts](https://www.microsoft.com/account) 
-		> unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
-		> to authenticates users and control account access.  
-		> If your users don't have Microsoft accounts, 
-		> have them [sign up](https://signup.live.com/).  
-	- **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md). 
-	- **Add to projects**: Select the project that you named in the previous procedure. 
-	- **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md). 
+	- **Access level**: Leave the Access level at **Basic** for those users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).  
+	- **Add to projects**: Select the project that you named in the previous procedure.  
+	- **Azure DevOps Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).  
 
 0. When done, choose **Add** to complete your invitation. 

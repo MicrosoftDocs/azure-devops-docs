@@ -14,7 +14,7 @@ ms.author: kaelliauthor: KathrynEE
 ms.date: 06/21/2018
 ---
 
-# Get started using your Kanban board
+# Start using your Kanban board
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

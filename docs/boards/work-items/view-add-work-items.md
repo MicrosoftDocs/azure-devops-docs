@@ -106,8 +106,9 @@ For example, here we choose User Story.
 > [!div class="mx-imgBorder"]  
 ![Boards>Work Items, Add a work item ](_img/view-add/work-items-hub-new.png)
 
+<!---
 > [!TIP]    
-> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json).
+> Work items you add are automatically scoped to the [Currently selected team's area and iteration paths](../../organizations/settings/set-team-defaults.md). To change the team context, see [Switch project or team focus](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json). -->
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 

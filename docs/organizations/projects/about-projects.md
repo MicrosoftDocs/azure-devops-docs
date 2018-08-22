@@ -202,10 +202,10 @@ You can configure and customize most services and applications to support your b
 
 ::: moniker-end
 
-
+<a id="add-team" />
 ## When to add a team, scaling Agile tools across the enterprise
 
-As your organization grows, you'll want to add teams to provide them the Agile tools that each team can configure to meet their workflow. To learn more, , see the following articles.  
+As your organization grows, you'll want to add teams to provide them the Agile tools that each team can configure to meet their workflow. To learn more, see the following articles.  
 
 - [Scale Agile to large teams](/azure/devops/learn/agile/scale-agile-large-teams)
 - [About teams and Agile tools](../settings/about-teams-and-settings.md) 

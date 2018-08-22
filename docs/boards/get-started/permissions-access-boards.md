@@ -9,11 +9,13 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: 'vsts'
+monikerRange: '>= tfs-2013'
 ms.date: 09/05/2018  
 ---
 
 # Permissions and access for Azure Boards 
+
+[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 
 As a member of an Azure Boards project, you can use the majority of work tracking functions and features. All project members are added to the Contributors group. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions for tracking work as listed below.
 
