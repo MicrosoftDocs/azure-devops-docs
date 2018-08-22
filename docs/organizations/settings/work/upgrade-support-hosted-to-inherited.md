@@ -18,9 +18,6 @@ ms.date: 05/30/2018
 
 [!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
 
-> [!NOTE]  
-> This feature is currently in private preview. If you are interested in changing your processes from Hosted XML to Inherited, please email us at [vstsprivatepreview@microsoft.com](mailto:vstsprivatepreview@microsoft.com) to get the feature turned on in your organization(s).
-
 <a id="hosted-xml-process-model">  </a>
 
 Upgrading a Hosted XML process model to an inherited process  provides the convenience of customizing your work tracking system through the user interface. For an overview of supported customizations available to you with the Inheritance process, see [About process customization and inherited processes](inheritance-process-model.md). 
