@@ -29,14 +29,19 @@ Follow the [Azure DevOps Release Notes](/vsts/release-notes/index) to get news o
 
 ## I preferred the old user interface. How do I go back?
 
-At this time, you can still use the old UI by choosing your profile icon and selecting **XXXX** > **XXXX**.
+At this time, you can still use the old UI by choosing your profile icon and selecting **Preview features** from the drop-down menu.
 
-![Enabling the old UI by clicking on your profile icon](_img/icons/checkmark.png)
+> [!div class="mx-imgBorder"]  
+> ![Clicking on your profile icon to access Preview Features](_img/preview-features.png)
+
+Then, toggle the **New Navigation** option to **Off**.
+
+> [!div class="mx-imgBorder"] 
+> ![Turning off the new navigation UI](_img/preview-features.png)
 
 This will also change the service names to their old VSTS feature names, such as **Work** instead of **Boards**.
 
-To revert to the Azure DevOps service-oriented UI, choose your profile icon and select **XXXX** > **XXXX**.
-
+To revert to the Azure DevOps service-oriented UI, choose your profile icon, select **Preview features**, and re-enable **New Navigation**. 
 
 ## What about Team Foundation Server (TFS)?
 
