@@ -1,5 +1,5 @@
 ---
-title: Release triggers for environments, branches, and pipelines
+title: Release triggers for stages, branches, and pipelines
 description: DevOps CI CD - Understand triggers in Microsoft Release Management for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 07/09/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Release, branch, and environment triggers
+# Release, branch, and stage triggers
 
 [!INCLUDE [version-rm-dev14](../_shared/version-rm-dev14.md)]
 
@@ -20,10 +20,10 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
 
-You can configure when releases should be created, and when those releases should be deployed to environments,
+You can configure when releases should be created, and when those releases should be deployed to stages,
 in your DevOps CI/CD processes.
 The former is configured through [release triggers](#release-triggers),
-and the latter through [environment triggers](#env-triggers) - both in a release pipeline.
+and the latter through [stage triggers](#env-triggers) - both in a release pipeline.
 
 <h2 id="release-triggers">Release (continuous deployment) triggers</h2>
 
@@ -55,12 +55,12 @@ filter across all release pipelines for every change - instead you just change t
 default branch in the build pipeline.
 
 >Note that, even though a release is automatically created, it
-might not be deployed automatically to any environments. The
-[environment triggers](#env-triggers) govern when and if a release should be deployed to an environment.
+might not be deployed automatically to any stages. The
+[stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
 
-<h2 id="env-triggers">Environment triggers</h2>
+<h2 id="env-triggers">Stage triggers</h2>
 
-You can choose to have the deployment to each environment triggered automatically
+You can choose to have the deployment to each stage triggered automatically
 when a release is created by a continuous deployment trigger, based on:
 
 * **A predefined schedule**. When you select this option,
@@ -72,28 +72,28 @@ when a release is created by a continuous deployment trigger, based on:
 
 * **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release pipeline,
   and specify if you want to include or exclude particular branches of the code.
-  Deployment will be triggered to this environment only if all the artifact conditions are successfully met.
+  Deployment will be triggered to this stage only if all the artifact conditions are successfully met.
 
   ![The artifact filter trigger conditions settings](_img/trigger-02b.png)
 
-* **The result of deploying to a previous environment in the pipeline**.
+* **The result of deploying to a previous stage in the pipeline**.
   Use this setting if you want the release to be first deployed and validated in
-  another environment(s) before it is deployed to this environment.
-  Triggers are configured for each environment,
+  another stage(s) before it is deployed to this stage.
+  Triggers are configured for each stage,
   but the combination of these allows you to orchestrate
   the overall deployment - such as the sequence in which automated
-  deployments occur across all the environments in a release
+  deployments occur across all the stages in a release
   pipeline. For example, you can set up a linear pipeline where
-  a release is deployed first to the **Test** and **QA** environments.
+  a release is deployed first to the **Test** and **QA** stages.
   Then, if these two deployments succeed, it will be deployed to a **Staging**
-  environment. In addition, you can configure the trigger to fire
+  stage. In addition, you can configure the trigger to fire
   for partially succeeded (but not failed) deployments.
 
-  ![The environment trigger conditions settings](_img/trigger-02a.png)
+  ![The stage trigger conditions settings](_img/trigger-02a.png)
 
 * **Manually by a user**. Releases are
-  not automatically deployed to the environment. To
-  deploy a release to this environment, you must manually
+  not automatically deployed to the stage. To
+  deploy a release to this stage, you must manually
   start a release and deployment from the release pipeline
   or from a build summary.
 
@@ -114,19 +114,19 @@ continuous deployment based on the branch or tag of a build.
 
 ### Parallel forked and joined deployments
 
-The **Triggering environment** list lets you select
-more than one environment. This allows you to
+The **Triggering stage** list lets you select
+more than one stage. This allows you to
 configure parallel (_forked_ and _joined_) deployment
-pipelines where the deployment to an environment occurs
+pipelines where the deployment to a stage occurs
 only when deployment to **all** the selected
-environments succeeds.
+stages succeeds.
 
 For example, the following schematic shows a pipeline
 where deployment occurs in parallel to the **QA** and
-**Pre-prod** environments after deployment to the **Dev**
-environment succeeds. However, deployment to the
-**Production** environment occurs only after successful
-deployment to both the **QA** and **Pre-prod** environments.
+**Pre-prod** stages after deployment to the **Dev**
+stage succeeds. However, deployment to the
+**Production** stage occurs only after successful
+deployment to both the **QA** and **Pre-prod** stages.
 
 ![Configuring a parallel (forked and joined) deployment pipeline](_img/trigger-03.png)
 
@@ -139,10 +139,10 @@ almost any release scenario.
 ::: moniker-end
 
 Note that you can always deploy a release directly to any of the
-environments in your release pipeline by selecting the
+stages in your release pipeline by selecting the
 **Deploy** action when you create a new release. In this case, the
-environment triggers you configure, such as a trigger
-on successful deployment to another environment, do not
+stage triggers you configure, such as a trigger
+on successful deployment to another stage, do not
 apply. The deployment occurs irrespective of these settings.
 This gives you the ability to override the release
 pipeline. Performing such direct deployments requires

@@ -38,9 +38,9 @@ Most of the health parameters vary over time, regularly changing their status fr
 To account for such variations, all the gates are periodically re-evaluated until all of them are successful at the same time.
 The release execution and deployment does not proceed if all gates do not succeed in the same interval and before the configured timeout.
 
-## Define a gate for an environment
+## Define a gate for a stage
 
-1. Enable gates in the **Pre-deployment conditions** or **Post-deployment conditions** panel for an environment.
+1. Enable gates in the **Pre-deployment conditions** or **Post-deployment conditions** panel for a stage.
 
    ![Opening the deployment conditions panel](_img/gated-releases-01.png)
 
@@ -56,7 +56,7 @@ The release execution and deployment does not proceed if all gates do not succee
      against the artifacts being deployed.  
    * For **post-deployment gates**, the delay would be the maximum of the time taken for the deployed app
      to reach a steady operational state, the time taken for execution of all the required tests on
-     the deployed environment, and the time it takes for incidents to be logged after the deployment.<p />
+     the deployed stage, and the time it takes for incidents to be logged after the deployment.<p />
 
 1. Choose **+ Add** and select the type of release gate you require.
 
@@ -113,7 +113,7 @@ this case, after the timeout period expires, the deployment is rejected.
 ## View and monitor gate results
  
 1. Open the **Summary** page for your release. As the release executes, the pop-up message when you choose
-   the ![info](_img/info-icon.png) icon for an environment indicates the current status of your deployment to each environment.
+   the ![info](_img/info-icon.png) icon for a stage indicates the current status of your deployment to each stage.
 
    ![Gates evaluation during a release](_img/waiting-on-delay-before-evaluation.png)
 
@@ -127,7 +127,7 @@ about the evaluation of all the gates you configured for the release.
 * [Approvals and gates overview](index.md)
 * [Manual intervention](../../tasks/utility/manual-intervention.md)
 * [Use approvals and gates to control your deployment](../../release/deploy-using-approvals.md)
-* [Environments](../environments.md)
+* [Stages](../environments.md)
 * [Triggers](../triggers.md)
 
 ## See also

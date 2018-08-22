@@ -25,10 +25,10 @@ and Team Foundation Server (TFS 2015.2 and later) and an essential
 element of DevOps CI/CD that helps your team **continuously deliver** software
 to your customers at a faster pace and with lower risk.
 You can **fully automate** the testing and delivery of your software
-in multiple environments all the way to production, or set up
+in multiple stages all the way to production, or set up
 semi-automated processes with **approvals** and **on-demand deployments**.
 
-![A release pipeline defines the environments for deploment](_img/what-is-release-management/understand-rm-01.1.png)
+![A release pipeline defines the stages for deploment](_img/what-is-release-management/understand-rm-01.1.png)
 
 1. **[Watch this video](https://www.youtube.com/embed/zSPuRXTeZW8)** - see Release Management in action.
 
@@ -60,22 +60,22 @@ Consider using Release Management if:
   and are looking for a fully-fledged continuous delivery or release
   management system. Whether you use Team Build from Azure Pipelines or TFS, or
   Jenkins as your CI system, you can set up Release Management to
-  automatically deploy new builds to multiple environments. Even if
+  automatically deploy new builds to multiple stages. Even if
   we do not yet support integration with your favorite CI system or artifact
   repository, you can still write custom tasks to download and
   deploy artifacts from it.
 
 * **You need to track the progress of releases.**
-  If you use several environments for your tests, Release Management
+  If you use several stages for your tests, Release Management
   helps you monitor whether a release has been deployed and tested on each
-  of these environments. Release Management also tracks whether an issue fixed
+  of these stages. Release Management also tracks whether an issue fixed
   by a developer, or a product backlog item completed by your team, has
-  been deployed to a specific environment.
+  been deployed to a specific stage.
 
 * **You need control of the deployments.**
   Release Management lets you specify which users can change the
-  configuration of an environment, or approve the release to be
-  deployed into a particular environment. If there is a problem with
+  configuration of an stage, or approve the release to be
+  deployed into a particular stage. If there is a problem with
   your deployment, Release Management helps you roll back to a previous
   deployment, and provide all the logs in one place to help you debug the
   problem.
@@ -91,7 +91,7 @@ Consider using Release Management if:
 ## How does Release Management work?
 
 The Release Management service stores the data about your release pipelines,
-environments, tasks, releases, and deployments in Azure Pipelines or TFS.
+stages, tasks, releases, and deployments in Azure Pipelines or TFS.
 
 ![Release management components](_img/what-is-release-management/understand-rm-05.png)
 
@@ -99,7 +99,7 @@ Release Management runs the following steps as part of every deployment:
 
 1. **Pre-deployment approval:** When a new deployment request is triggered,
    Release Management checks whether a pre-deployment approval is required
-   before deploying a release to an environment. If it is required, it sends
+   before deploying a release to a stage. If it is required, it sends
    out email notifications to the appropriate approvers.
 
 1. **Queue deployment job:** Release Management schedules the deployment job on
@@ -117,17 +117,17 @@ Release Management runs the following steps as part of every deployment:
    and Jenkins artifacts.
 
 1. **Run the deployment tasks**: The agent then runs all the tasks in the
-   deployment job to deploy the app to the target servers for an environment.
+   deployment job to deploy the app to the target servers for a stage.
 
 1. **Generate progress logs**: The agent creates detailed logs for each
    step while running the deployment, and pushes these logs back to Azure Pipelines
    or TFS.
 
-1. **Post-deployment approval:** When deployment to an environment is complete,
+1. **Post-deployment approval:** When deployment to a stage is complete,
    Release Management checks if there is a post-deployment approval required
-   for that environment. If no approval is required, or upon completion of
+   for that stage. If no approval is required, or upon completion of
    a required approval, Release Management proceeds to trigger deployment to
-   the next environment.
+   the next stage.
 
 <a name="getstartednow"></a>
 ## Get started now!

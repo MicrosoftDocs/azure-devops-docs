@@ -153,7 +153,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    link to open the project containing your app in Azure Pipelines, and see the list of releases for this pipeline.
    Choose **Edit** to see the tasks that have been added and configured.
 
-   ![Viewing the Test environment in the newly created release pipeline](_img/continuous-app-service/10.png)
+   ![Viewing the Test stage in the newly created release pipeline](_img/continuous-app-service/10.png)
 
    The release pipeline that is created depends on whether you chose to include a load test
    and/or a staging deployment. If you chose either or both, your release pipeline will have

@@ -20,7 +20,7 @@ ms.topic: include
 
    ![Adding the App Service Deployment task](_img/add-app-service-task.png)
 
-1. Open the **Tasks** tab and select the **Environment 1** item.
+1. Open the **Tasks** tab and select the **Stage 1** item.
    Configure the linked properties as follows:
 
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.

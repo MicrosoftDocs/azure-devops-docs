@@ -65,7 +65,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-After you have a build, create a release pipeline and select the **Azure App Service Deployment** template for your environment.
+After you have a build, create a release pipeline and select the **Azure App Service Deployment** template for your stage.
 This automatically adds the necessary tasks. Link the build as an artifact to this release pipeline. Save the pipeline and create a release to see it in action.
 Then read through the rest of this topic to learn some of the more common changes that people make to customize an Azure Web App deployment.
 
@@ -284,8 +284,8 @@ jobs:
 
   - task: AzureRmWebAppDeployment@3
     inputs:
-      azureSubscription: '<Test environment Azure service connection>'
-      WebAppName: '<name of test environment web app>'
+      azureSubscription: '<Test stage Azure service connection>'
+      WebAppName: '<name of test stage web app>'
 
 - job: prod
   pool: Hosted Linux Preview
@@ -300,8 +300,8 @@ jobs:
 
   - task: AzureRmWebAppDeployment@3
     inputs:
-      azureSubscription: '<Prod environment Azure service connection>'
-      WebAppName: '<name of prod environment web app>'
+      azureSubscription: '<Prod stage Azure service connection>'
+      WebAppName: '<name of prod stage web app>'
 ```
 
 ::: moniker-end
@@ -314,8 +314,8 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-If you want to deploy to multiple web apps, add environments to your release pipeline.
-You can control the order of deployment. To learn more, see [Environments](../release/environments.md).
+If you want to deploy to multiple web apps, add stages to your release pipeline.
+You can control the order of deployment. To learn more, see [Stages](../release/environments.md).
 
 ---
 
@@ -337,23 +337,23 @@ The following snippet shows an example of variable substitution:
 jobs:
 - job: test
   variables:
-    connectionString: <test-environment connection string>
+    connectionString: <test-stage connection string>
   steps:
   - task: AzureRmWebAppDeployment@3
     inputs:
-      azureSubscription: '<Test environment Azure service connection>'
-      WebAppName: '<name of test environment web app>'
+      azureSubscription: '<Test stage Azure service connection>'
+      WebAppName: '<name of test stage web app>'
       enableXmlVariableSubstitution: true
 
 - job: prod
   dependsOn: test
   variables:
-    connectionString: <prod-environment connection string>
+    connectionString: <prod-stage connection string>
   steps:
   - task: AzureRmWebAppDeployment@3
     inputs:
-      azureSubscription: '<Prod environment Azure service connection>'
-      WebAppName: '<name of prod environment web app>'
+      azureSubscription: '<Prod stage Azure service connection>'
+      WebAppName: '<name of prod stage web app>'
       enableXmlVariableSubstitution: true
 ```
 
@@ -369,9 +369,9 @@ YAML builds are not yet available on TFS.
 
 To change the `connectionString` using variable substitution:
 
-1. Create a release pipeline with two environments.
+1. Create a release pipeline with two stages.
 1. Link the artifact of the release to the build that produces the web package.
-1. Define `connectionString` as a variable in each of the environments. Set the appropriate value.
+1. Define `connectionString` as a variable in each of the stages. Set the appropriate value.
 1. Select the **XML variable substitution** option under the **File Transforms and Variable Substitution Options** of the **Azure App Service Deploy** task.
 
 ---
@@ -414,11 +414,11 @@ YAML builds are not yet available on TFS.
 In your release pipeline you can implement various checks and conditions to control the deployment.
 
 * Set **branch filters** to configure the **continuous deployment trigger** on the artifact of the release pipeline.
-* Set **pre-deployment approvals** as a pre-condition for deployment to an environment.
-* Configure **gates** as a pre-condition for deployment to an environment.
+* Set **pre-deployment approvals** as a pre-condition for deployment to a stage.
+* Configure **gates** as a pre-condition for deployment to a stage.
 * Specify conditions for a task to run.
 
-To learn more, see [Release, branch, and environment triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
+To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 ---
 
