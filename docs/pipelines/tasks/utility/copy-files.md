@@ -1,5 +1,6 @@
 ---
-title: Copy Files | Azure Pipelines or Team Foundation Server
+title: Copy Files
+titleSuffix: Azure Pipelines & TFS
 description: Learn how you can copy files between folders with match patterns when building code in Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
@@ -154,7 +155,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/vsts-tasks). F
 
 ### How do I use this task to publish artifacts?
 
-See [Artifacts in Team Build](../../build/artifacts.md).
+See [Artifacts in Azure Pipelines](../../build/artifacts.md).
 
 [!INCLUDE [temp](../_shared/build-step-common-qa.md)]
 

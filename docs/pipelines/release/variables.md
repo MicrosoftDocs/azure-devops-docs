@@ -101,7 +101,7 @@ Some of the most significant variables are described in the following tables.
 > | Variable name | Description | Example | Not available in |
 > |---------------|-------------|---------|--------------|
 > | System.TeamFoundationServerUri | The URL of the Release Management service connection in TFS or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on the Release Management service. | https:&#47;/fabrikam.vsrm.visualstudio.com/ | |
-> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/fabrikam.visualstudio.com/ | |
+> | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control. | https:&#47;/dev.azure.com/fabrikam/ | |
 > | System.CollectionId | The ID of the collection to which this build or release belongs. | 6c6f3423-1c84-4625-995a-f7f143a1e43d | TFS 2015 |
 > | System.TeamProject | The name of the project to which this build or release belongs. | Fabrikam | |
 > | System.TeamProjectId | The ID of the project to which this build or release belongs. | 79f5c12e-3337-4151-be41-a268d2c73344 | TFS 2015 |
@@ -115,7 +115,7 @@ Some of the most significant variables are described in the following tables.
 [SYSTEM_PLANID] -> [9d8b6571-8a09-468c-9ca7-69b4768e0c4e]
 [SYSTEM_CULTURE] -> [en-US]
 [SYSTEM_PARALLELEXECUTIONTYPE] -> [MultiConfiguration]
-[SYSTEM_TASKDEFINITIONSURI] -> [https://adventwrks.visualstudio.com/]
+[SYSTEM_TASKDEFINITIONSURI] -> [https://dev.azure.com/adventwrks/]
 [SYSTEM_TIMELINEID] -> [885d77a9-1452-4e4c-8666-df15cd011b6e]
 [SYSTEM_JOBID] -> [09ebba6f-89ed-4f55-bad9-db561b40ec8c]
 [SYSTEM_HOSTTYPE] -> [release]
@@ -157,12 +157,12 @@ Some of the most significant variables are described in the following tables.
 > | Release.DeploymentID | The ID of the deployment. Unique per job. | 254 |
 > | Release.DeployPhaseID | The ID of the phase where deployment is running. | 127 |
 > | Release.Environments.{stage-name}.status | The deployment status of the stage. | InProgress |
-> | Release.ReleaseWebURL | The URL for this release. | https:&#47;/fabrikam.visualstudio.com/f3325c6c/\_release?releaseId=392&_a=release-summary |
+> | Release.ReleaseWebURL | The URL for this release. | https:&#47;/dev.azure.com/fabrikam/f3325c6c/\_release?releaseId=392&_a=release-summary |
 > | Release.SkipArtifactDownload | Boolean value that specifies whether or not to skip downloading of artifacts to the agent. | FALSE |
 > | Release.TriggeringArtifact.Alias | The alias of the artifact which triggered the release. This is empty when the release was scheduled or triggered manually. | fabrikam\_app |
 
 <!-- Other hidden variables
-[RELEASE_RELEASEWEBURL] -> [https://adventwrks.visualstudio.com/79f5c12e-3337-4151-be41-a268d2c73344/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?releaseId=118&_a=release-summary]
+[RELEASE_RELEASEWEBURL] -> [https://dev.azure.com/adventwrks/79f5c12e-3337-4151-be41-a268d2c73344/_apps/hub/ms.vss-releaseManagement-web.hub-explorer?releaseId=118&_a=release-summary]
 -->
 
 ### Release stage variables
@@ -201,7 +201,7 @@ variables and provides examples of the values that they have depending on the ar
 it implies that the variable is not populated for that artifact type.
 
 > [!div class="mx-tdBreakAll"]
-> | Variable name | Description | Team Build example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|
+> | Variable name | Description | Azure Pipelines example | Jenkins/ TeamCity example  | TFVC/Git example | GitHub example|
 > |---------------|-------------|--------------------|---------------------------|------------------|---------------|
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionId | The identifier of the build pipeline or repository. | 1 |  |  | fabrikam/asp |
 > | Release.Artifacts.{[alias](artifacts.md#source-alias)}.DefinitionName | The name of the build pipeline or repository. | fabrikam-ci |  | TFVC: $/fabrikam, Git: fabrikam | fabrikam/asp (master) |

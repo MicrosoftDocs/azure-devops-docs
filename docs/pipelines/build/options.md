@@ -1,5 +1,6 @@
 ---
-title: Build pipeline options | Azure Pipelines or Team Foundation Server
+title: Build pipeline options
+titleSuffix: Azure Pipelines & TFS
 description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops

@@ -1,5 +1,6 @@
 ---
-title: Command line | Azure Pipelines or Team Foundation Server
+title: Command line
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can execute tools from a command prompt when building code in Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops

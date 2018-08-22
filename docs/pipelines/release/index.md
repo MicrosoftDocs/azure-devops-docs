@@ -25,7 +25,7 @@ It defines the end-to-end release pipeline for an application to be deployed acr
 
 You start using Release Management by authoring a release pipeline for your application. To author a release pipeline, you must specify the [artifacts](artifacts.md) that make up the application and the **release pipeline**.
 
-An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build pipeline. Release Management can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Team Build, Jenkins, or Team City.
+An **artifact** is a deployable component of your application. It is typically produced through a Continuous Integration or a build pipeline. Release Management can deploy artifacts that are produced by a [wide range of artifact sources](artifacts.md#sources) such as Azure Pipelines, Jenkins, or Team City.
 
 You define the **release pipeline** using [stages](environments.md), and restrict deployments into or out of an stage using [approvals](approvals/index.md). You define the automation in each stage using [jobs](../process/phases.md) and [tasks](../process/tasks.md). You use [variables](variables.md) to generalize your automation and [triggers](triggers.md) to control when the deployments should be kicked off automatically.
 
@@ -77,7 +77,7 @@ When specifying the format mask, you can use the following pre-defined variables
 | **Release.DefinitionName** | The name of the release pipeline to which the current release belongs. |
 | **Build.BuildNumber** | The number of the build contained in the release. If a release has multiple builds, this is the number of the [primary build](artifacts.md#primary-source). |
 | **Build.DefinitionName** | The pipeline name of the build contained in the release. If a release has multiple builds, this is the pipeline name of the [primary build](artifacts.md#primary-source). |
-| **Artifact.ArtifactType** | The type of the artifact source linked with the release. For example, this can be **Team Build** or **Jenkins**. |
+| **Artifact.ArtifactType** | The type of the artifact source linked with the release. For example, this can be **Azure Pipelines** or **Jenkins**. |
 | **Build.SourceBranch** | The branch of the [primary artifact source](artifacts.md#primary-source). For Git, this is of the form **master** if the branch is **refs/heads/master**. For Team Foundation Version Control, this is of the form **branch** if the root server path for the workspace is **$/teamproject/branch**. This variable is not set for Jenkins or other artifact sources. |
 | *Custom variable* | The value of a global configuration property defined in the release pipeline. |
 
@@ -94,7 +94,7 @@ Every time you save a release pipeline, Release Management keeps a copy of the c
 ## Related topics
 
 * [Artifacts](artifacts.md)
-* [Stage](environments.md)
+* [Stages](environments.md)
 * [Triggers](triggers.md)
 * [Variables](variables.md)
 * [Release retention](../policies/retention.md)

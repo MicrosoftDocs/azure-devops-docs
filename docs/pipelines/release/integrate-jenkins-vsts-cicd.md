@@ -58,7 +58,7 @@ You will:
 * You need access to a Jenkins server with Maven configured. If you have not yet created a Jenkins server,
   see [Create a Jenkins master on an Azure Virtual Machine](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template).
 
-* Sign in to your Azure DevOps organization (`https://{youraccount}.visualstudio.com`).
+* Sign in to your Azure DevOps organization (`https://dev.azure.com/{your-organization}`).
   You can get a [free Azure DevOps organization](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~home-vsts-hero~27308&campaign=o~msft~vscom~home-vsts-hero~27308).
 
   > [!NOTE]
@@ -95,7 +95,7 @@ You must configure credentials for connecting to Azure Pipelines, and a plug in 
 
 1. Enter a **name**, **description**, and then select **Add** **hostname**.
 
-1. In the **Include** text box, enter ```\*.visualstudio.com``` to enable this credential for all Azure DevOps organizations.  You can optionally enter your specific Azure DevOps organization.
+1. In the **Include** text box, enter ```\dev.azure.com/*``` to enable this credential for all Azure DevOps organizations.  You can optionally enter your specific Azure DevOps organization.
 
 1. Select **Ok**.  You will see a message about empty credentials.  Select the link for **adding some credentials**.
 
@@ -138,7 +138,7 @@ You create a Jenkins build job to use the source code stored in your Azure Pipel
 1. Select the **Post-build Actions** tab.  Choose **Add post-build action**, then select **Trigger release in TFS/Team Services**.
 
 1. Enter a **collection URL**. An example is 
-`http://{YourVSTSAccount}.visualstudio.com/DefaultCollection`
+`http://dev.azure.com/{your-organization}/DefaultCollection`
 
 1. Enter the **project** and choose a **release pipeline** name. Store the **release pipeline** name since it is needed in later steps of this tutorial.
 
@@ -193,7 +193,7 @@ To create the release pipeline in Azure Pipelines:
 
 1. In the **Artifacts** section, click on **+ Add Artifact** and choose **Jenkins** for **Source type**. Select your Jenkins service connection. Then select the Jenkins source job and choose **Add**.
 
-1. Next to the **1 job, 0 environments** link, select the **+** on the **Agent Job** to add a task to the job.
+1. Next to the **1 job, 0 stages** link, select the **+** on the **Agent Job** to add a task to the job.
 
 1. Search for the **Azure App Service Deploy** task. Select **Add** to add the task.
 

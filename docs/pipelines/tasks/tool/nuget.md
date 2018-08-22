@@ -1,5 +1,6 @@
 ---
-title: NuGet Tool Installer | Azure Pipelines or Team Foundation Server
+title: NuGet Tool Installer
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to use the NuGet Tool Installer for Azure Pipelines and TFS to find, download, and cache the specified version of NuGet.
 ms.prod: devops
 ms.technology: devops-cicd

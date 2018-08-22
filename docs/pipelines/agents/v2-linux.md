@@ -97,7 +97,7 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 ::: moniker range="vsts"
 
-Azure Pipelines: `https://{your-organization}.visualstudio.com`
+Azure Pipelines: `https://dev.azure.com/{your-organization}`
 
 ::: moniker-end
 
@@ -234,7 +234,7 @@ A systemd service file is created:
 
 For example, you have configured an agent (see above) with the name `our-linux-agent`. The service file will be either:
 
-* Azure Pipelines: the name of your organization. For example if you connect to `https://fabrikam.visualstudio.com`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
+* Azure Pipelines: the name of your organization. For example if you connect to `https://dev.azure.com/fabrikam`, then the service name would be `/etc/systemd/system/vsts.agent.fabrikam.our-linux-agent.service`
 
 * TFS: the name of your on-premises TFS AT server. For example if you connect to `http://our-server:8080/tfs`, then the service name would be `/etc/systemd/system/vsts.agent.our-server.our-linux-agent.service`
 

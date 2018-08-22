@@ -12,6 +12,6 @@ ms.date: 09/05/2018
 ---
 
 
-# Azure DevOps Pipelines get started index
+# Azure Pipelines get started index
 
-Use this guide to start using Azure DevOps Pipelines.
+Use this guide to start using Azure Pipelines.

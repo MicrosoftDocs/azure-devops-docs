@@ -58,7 +58,7 @@ Consider using Release Management if:
 
 * **You use a continuous integration (CI) system**
   and are looking for a fully-fledged continuous delivery or release
-  management system. Whether you use Team Build from Azure Pipelines or TFS, or
+  management system. Whether you use Azure Pipelines or TFS, or
   Jenkins as your CI system, you can set up Release Management to
   automatically deploy new builds to multiple stages. Even if
   we do not yet support integration with your favorite CI system or artifact
@@ -113,7 +113,7 @@ Release Management runs the following steps as part of every deployment:
 
 1. **Download artifacts**: The agent downloads all the artifacts specified
    in that release (provided you have not opted to skip the download). The
-   agent currently understands two types of artifacts: Team Build artifacts
+   agent currently understands two types of artifacts: Azure Pipelines artifacts
    and Jenkins artifacts.
 
 1. **Run the deployment tasks**: The agent then runs all the tasks in the

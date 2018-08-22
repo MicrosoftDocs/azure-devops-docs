@@ -1,5 +1,6 @@
 ---
-title: Shell Script | Azure Pipelines or Team Foundation Server
+title: Shell Script
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can execute a bash script when you are building your code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops

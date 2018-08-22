@@ -1,5 +1,6 @@
 ---
-title: cURL Upload Files | Azure Pipelines or Team Foundation Server
+title: cURL Upload Files
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can use cURL to upload files with supported protocols in Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops

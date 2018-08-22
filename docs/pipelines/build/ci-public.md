@@ -1,6 +1,6 @@
 ---
-title: Build OSS repos
-description: Build Open Source Software repositories using public projects in Azure Pipelines
+title: Build open source projects
+description: Build open source repositories using public projects in Azure Pipelines
 services: vsts
 ms.prod: devops
 ms.technology: devops-cicd
@@ -13,13 +13,13 @@ ms.date: 06/20/2018
 monikerRange: 'vsts'
 ---
 
-# Build OSS repositories
+# Build open source projects
 
 [!INCLUDE [temp](](../../organizations/public/_shared/version-public-projects.md)]  
 
-If you manage an Open Source Software (OSS) project, then you can use Azure Pipelines public projects to automatically build and validate every pull request and commit to your repository.
+If you manage an open source project, then you can use Azure Pipelines public projects to automatically build and validate every pull request and commit to your repository.
 
-This article provides common tasks for building OSS repositories.
+This article provides common tasks for building open source repositories.
 
 ## Create a public project in Azure Pipelines
 

@@ -1,5 +1,6 @@
 ---
-title: PowerShell | Azure Pipelines or Team Foundation Server
+title: PowerShell
+titleSuffix: Azure Pipelines & TFS
 description: Learn about how you can execute powershell scripts when you are building your code in Azure Pipelines and Team Foundation Server TFS
 ms.topic: reference
 ms.prod: devops
@@ -86,7 +87,7 @@ Write-Host "$("##vso[task.setvariable variable=WarningMessage]") $($args[0])"
 
  ```ps
 # Writes a warning to build summary and to log in yellow text
-Write-Host  "$("##vso[task.logissue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Team Build logging command.")"
+Write-Host  "$("##vso[task.logissue type=warning;]") $($env:WarningMessage) $("the task.LogIssue Azure Pipelines logging command.")"
 ```
 
 ![icon](_img/powershell.png) Write warning using PowerShell command
@@ -120,7 +121,7 @@ Write-Host "$("##vso[task.setvariable variable=ErrorMessage]") $($args[0])"
 
  ```ps
 # Writes an error to the build summary and to the log in red text
-Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Team Build logging command reported that") $($env:ErrorMessage)"
+Write-Host  "$("##vso[task.logissue type=error;]") $("the task.LogIssue Azure Pipelines logging command reported that") $($env:ErrorMessage)"
 ```
 
 > [!TIP]

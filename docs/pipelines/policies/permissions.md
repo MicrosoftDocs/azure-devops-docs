@@ -1,5 +1,5 @@
 ---
-title: Build and release permissions | Azure Pipelines or Team Foundation Server
+title: Build and release permissions
 titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
 description: Understand how permissions and roles are used to securely manage build and release operations in Azure Pipelines and Team Foundation Server (TFS).

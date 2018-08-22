@@ -32,8 +32,8 @@ You can install the agent in any one of these ways:
 
 For information about agents and pipelines, see:
 
-* [Concurrent pipelines in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
-* [Concurrent jobs in Azure Pipelines](../../licensing/concurrent-jobs-vsts.md).
+* [Parallel jobs in Team Foundation Server](../../licensing/concurrent-pipelines-tfs.md).
+* [Parallel jobs in Azure Pipelines](../../licensing/concurrent-jobs-vsts.md).
 * [Pricing for Azure Pipelines features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 <a name="runscript"></a>
@@ -82,7 +82,7 @@ For information about agents and pipelines, see:
 
    ![Installing the Azure Pipelines Agent extension](_img/howto-provision-azure-vm-agents/azure-vm-create.png)
 
-1. In the **Install extension** blade, specify the name of the Azure Pipelines subacription to use. For example, if the URL is `https://contoso.visualstudio.com`, just specify **contoso**.
+1. In the **Install extension** blade, specify the name of the Azure Pipelines subacription to use. For example, if the URL is `https://dev.azure.com/contoso`, just specify **contoso**.
 
 1. Specify the project name and the deployment group name.
    
@@ -150,7 +150,7 @@ For a Windows VM, create an ARM template and add a resources element under the
 
 where:
 
-* **VSTSAccountName** is required. The Azure Pipelines subscription to use. Example: If your URL is `https://contoso.visualstudio.com`, just specify `contoso`
+* **VSTSAccountName** is required. The Azure Pipelines subscription to use. Example: If your URL is `https://dev.azure.com/contoso`, just specify `contoso`
 * **TeamProject** is required. The project that has the deployment group defined within it
 * **DeploymentGroup** is required. The deployment group against which deployment agent will be registered
 * **AgentName** is optional. If not specified, the VM name with `-DG` appended will be used

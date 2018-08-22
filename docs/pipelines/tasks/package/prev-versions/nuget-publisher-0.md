@@ -1,5 +1,6 @@
 ---
-title: NuGet Publisher Version 0.* | Azure Pipelines or Team Foundation Server
+title: NuGet Publisher Version 0.*
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can publish NuGet packages when building code in Azure Pipelines and Team Foundation Server
 ms.prod: devops
 ms.technology: vs-devops-package

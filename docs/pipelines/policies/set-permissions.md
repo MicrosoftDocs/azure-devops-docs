@@ -1,5 +1,5 @@
 ---
-title: Set build and release permissions | Azure Pipelines or Team Foundation Server
+title: Set build and release permissions
 titleSuffix: Azure Pipelines & TFS
 description: Grant or restrict access to build-release, library, task group, and variable group functions in Azure Pipelines or Team Foundation Server
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B

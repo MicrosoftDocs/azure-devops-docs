@@ -1,5 +1,6 @@
 ---
-title: Predefined Build variables | Azure Pipelines or Team Foundation Server
+title: Predefined build variables
+titleSuffix: Azure Pipelines & TFS
 description: A comprehensive list of all available predefined build variables
 ms.topic: reference
 ms.prod: devops

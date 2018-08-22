@@ -1,5 +1,6 @@
 ---
-title: Node.js Tool Installer | Azure Pipelines or Team Foundation Server
+title: Node.js Tool Installer
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to use the Node.js Tool Installer for Azure Pipelines and TFS to find, download, and cache the specified version of Node.js.
 ms.topic: reference
 ms.prod: devops

@@ -1,5 +1,6 @@
 ---
-title: Ant build and release task | Azure Pipelines or Team Foundation Server
+title: Ant build and release task
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to build with Apache Ant for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops

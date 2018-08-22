@@ -1,5 +1,6 @@
 ---
-title: Migrate from XAML builds | Azure Pipelines or Team Foundation Server
+title: Migrate from XAML builds
+titleSuffix: Azure Pipelines & TFS
 description: How to migrate from XAML builds to new builds in your Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops
@@ -117,7 +118,7 @@ The new build pipeline offers you some new options. For example:
 
 * You can potentially create fewer build pipelines to replace a larger number of XAML build pipelines. This is because you can use a single new build pipeline with multiple triggers. And if you're using Azure Pipelines, then you can add multiple scheduled times.
 
-* The **Rolling builds** option is replaced by the **Batch changes** option. You can't specify minimum time between builds. But if you're using Azure Pipelines, you can specify the maximum number of concurrent builds per branch.
+* The **Rolling builds** option is replaced by the **Batch changes** option. You can't specify minimum time between builds. But if you're using Azure Pipelines, you can specify the maximum number of parallel jobs per branch.
 
 * If your code is in TFVC, you can add folder path filters to include or exclude certain sets of files from triggering a CI build.
 
@@ -180,7 +181,7 @@ On the **Build** tab (TFS 2017 and newer) or the **Tasks** tab (Azure Pipelines)
 | Projects | Solution |
 | Configurations | Platform, Configuration. See [Visual Studio Build: How do I build multiple configurations for multiple platforms?](../tasks/build/visual-studio-build.md#how-do-i-build-multiple-configurations-for-multiple-platforms) | 
 | Clean build | Clean | 
-| Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Team Build](../build/artifacts.md). |
+| Output location | The Visual Studio Build task builds and outputs files in the same way you do it on your dev machine, in the local workspace. We give you full control of publishing artifacts out of the local workspace on the agent. See [Artifacts in Azure Pipelines](../build/artifacts.md). |
 | Advanced, MSBuild arguments | MSBuild Arguments | 
 | Advanced, MSBuild platform | Advanced, MSBuild Architecture |
 | Advanced, Perform code analysis | Use an MSBuild argument such as`/p:RunCodeAnalysis=true` |
@@ -257,7 +258,7 @@ Here are a few examples of the kinds of apps you can build:
 
 ### Release
 
-The new Team Build is tightly integrated with Release Management. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
+The new build system is tightly integrated with Release Management. So it's easier then ever to automatically kick off a deployment after a successful build. Learn more:
 
 * [CI/CD Hello world](../get-started-designer.md)
 
@@ -356,7 +357,7 @@ Although the new build pipelines are essentially linear, we do give you control 
 
 On TFS 2015 and newer: You can select Enabled, Continue on error, or Always run.
 
-On Azure Pipelines you can specify one of four built-in choices to control when a task is run. If you need more control, you can specify custom conditions. For example:
+On Azure Pipelines, you can specify one of four built-in choices to control when a task is run. If you need more control, you can specify custom conditions. For example:
 
 ```
 and(failed(), in(variables['Build.Reason'], 'IndividualCI', 'BatchedCI'), startsWith(variables['Build.SourceBranch'], 'refs/heads/features/'))

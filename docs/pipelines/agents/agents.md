@@ -1,6 +1,7 @@
 ---
 ms.prod: devops
-title: Build and Release Agents | Azure Pipelines or Team Foundation Server
+title: Build and Release Agents
+titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
 description: Learn about building your code or deploying your software using Build and release agents in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
@@ -69,21 +70,21 @@ After you've installed the agent on a machine, you can install any other softwar
 
 ::: moniker range="vsts"
 
-## Concurrent jobs
+## Parallel jobs
 
-You might need more concurrent jobs to use multiple Microsoft-hosted or self-hosted agents at the same time:
+You might need more parallel jobs to use multiple Microsoft-hosted or self-hosted agents at the same time:
 
-* [Concurrent jobs in Azure Pipelines](../licensing/concurrent-jobs-vsts.md)
+* [Parallel jobs in Azure Pipelines](../licensing/concurrent-jobs-vsts.md)
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < vsts"
 
-### Concurrent pipelines
+### Parallel jobs
 
-You might need more concurrent pipelines to use multiple agents at the same time:
+You might need more parallel jobs to use multiple agents at the same time:
 
-* [Concurrent pipelines in TFS](../licensing/concurrent-pipelines-tfs.md)
+* [Parallel jobs in TFS](../licensing/concurrent-pipelines-tfs.md)
 
 ::: moniker-end
 
@@ -288,6 +289,6 @@ Yes. This approach can work well for agents that run jobs that don't consume a l
 
 You might find that in other cases you don't gain much efficiency by running multiple agents on the same machine. For example, it might not be worthwhile for agents that run builds that consume a lot of disk and I/O resources.
 
-You might also run into problems if concurrent build processes are using the same singleton tool deployment, such as npm packages. For example, one build might update a dependency while another build is in the middle of using it, which could cause unreliable results and errors.
+You might also run into problems if parallel build jobs are using the same singleton tool deployment, such as npm packages. For example, one build might update a dependency while another build is in the middle of using it, which could cause unreliable results and errors.
 
 [!INCLUDE [agent-latest-version](_shared/v2/qa-agent-version.md)]

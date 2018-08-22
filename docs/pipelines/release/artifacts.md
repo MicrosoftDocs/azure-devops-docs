@@ -26,12 +26,12 @@ and stored in different types of artifact repositories.
 
 When **authoring a release pipeline**, you link the
 appropriate **artifact sources** to your release pipeline.
-For example, you might link a Team Build build pipeline or
+For example, you might link an Azure Pipelines build pipeline or
 a Jenkins project to your release pipeline.
 
 When **creating a release**, you specify the exact
 version of these artifact sources; for example, the number of a
-build coming from Team Build, or the version of a
+build coming from Azure Pipelines, or the version of a
 build coming from a Jenkins project.
 
 After a release is created, you cannot change these versions. A release is
@@ -80,7 +80,7 @@ on the linking of artifacts to a release pipeline are:
 * **Work items and commits**. The work items or commits
   that are part of a release are computed from the
   versions of artifacts. For example, each build in
-  Team Build is associated with a set of work items and
+  Azure Pipelines is associated with a set of work items and
   commits. The work items or commits in a release are
   computed as the union of all work items and commits of
   all builds between the current release and the
@@ -94,7 +94,7 @@ on the linking of artifacts to a release pipeline are:
   automatically downloads all the artifacts in that
   release to the [agent](../agents/agents.md) where the deployment job runs.
   The procedure to download artifacts depends on the
-  type of artifact. For example, Team Build artifacts
+  type of artifact. For example, Azure Pipelines artifacts
   are downloaded using an algorithm that downloads
   multiple files in parallel. Git artifacts are
   downloaded using Git library functionality. For more details, see
@@ -105,7 +105,7 @@ on the linking of artifacts to a release pipeline are:
 There are several types of tools you might use in your
 application lifecycle process to produce or store
 artifacts. For example, you might use continuous
-integration systems such as Team Build, Jenkins, or
+integration systems such as Azure Pipelines, Jenkins, or
 TeamCity to produce artifacts. You might also use version control systems such as Git or
 TFVC to store your artifacts. Or you can use
 repositories such as Package Management in Visual Studio Team
@@ -129,7 +129,7 @@ If you link more than one set of artifacts, you can specify which is the primary
 The following sections describe how to work with the different types of artifact
 sources.
 
-* [Team Build](#teambuild)
+* [Azure Pipelines](#teambuild)
 * [TFVC, Git, and GitHub](#tfvc)
 * [Jenkins](#jenkins)
 * [Azure Container Registry, Docker, and Kubernetes](#container)
@@ -142,7 +142,7 @@ sources.
 
 <a name="teambuild"></a>
 
-### Team Build
+### Azure Pipelines
 
 You can link a release pipeline to any of
 the build pipelines in Azure Pipelines or TFS project collection.
@@ -162,13 +162,13 @@ Some of the differences in capabilities between different versions of TFS and Az
   You can link multiple build pipelines and specify default values for each of them. You can set up continuous deployment triggers on
   multiple build sources. When any of the builds completes, it will trigger the creation of a release.
 
-The following features are available when using Team Build sources:
+The following features are available when using Azure Pipelines sources:
 
-| Feature | Behavior with Team Build sources |
+| Feature | Behavior with Azure Pipelines sources |
 |---------|----------------------------------|
 | Auto-trigger releases | New releases can be created automatically when new builds (including XAML builds) are produced. See [Continuous Deployment](triggers.md) for details. You do not need to configure anything within the build pipeline. See the notes above for differences between version of TFS.|
-| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Team Build. |
-| Work items and commits | Team Build integrates with work items in TFS and Azure Pipelines. These work items are also shown in the details of releases. Team Build integrates with a number of version control systems such as TFVC and Git, GitHub, Subversion, and external Git repositories. Release Management shows the commits only when the build is produced from source code in TFVC or Git.|
+| Artifact variables | A number of [artifact variables](variables.md#artifact-variables) are supported for builds from Azure Pipelines. |
+| Work items and commits | Azure Pipelines integrates with work items in TFS and Azure Pipelines. These work items are also shown in the details of releases. Azure Pipelines integrates with a number of version control systems such as TFVC and Git, GitHub, Subversion, and external Git repositories. Release Management shows the commits only when the build is produced from source code in TFVC or Git.|
 | Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 | Deployment section in build | The build summary includes a **Deployment** section, which lists all the stages to which the build was deployed. |
 
@@ -497,7 +497,7 @@ can be accessed through the variable:
 
 This uniqueness also ensures that, if you later rename a linked
 artifact source in its original location (for example,
-rename a build pipeline in Team Build or a project
+rename a build pipeline in Azure Pipelines or a project
 in Jenkins), you don't need to edit the task
 properties because the download location defined in
 the agent does not change.

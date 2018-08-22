@@ -1,6 +1,7 @@
 ---
 ms.prod: devops
-title: Agents pools | Azure Pipelines or Team Foundation Server
+title: Agents pools
+titleSuffix: Azure Pipelines & TFS
 ms.topic: conceptual
 description: Learn about organizing agents into pools for builds and releases in Azure Pipelines and Team Foundation Server
 ms.technology: devops-cicd
@@ -148,9 +149,9 @@ Ask the owner of your Azure DevOps organization to grant you permission to use t
 
 ### I need more hosted build resources. What can I do?
 
-A: The Microsoft-hosted pools provide all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs concurrently, then you can either:
+A: The Microsoft-hosted pools provide all Azure DevOps organizations with cloud-hosted build agents and free build minutes each month. If you need more Microsoft-hosted build resources, or need to run more jobs in parallel, then you can either:
 
 * [Deploy your own on-premises agents](agents.md).
-* [Buy additional concurrent jobs](../../organizations/billing/buy-more-build-vs.md#buy-build-release).
+* [Buy additional parallel jobs](../../organizations/billing/buy-more-build-vs.md#buy-build-release).
 
 ::: moniker-end

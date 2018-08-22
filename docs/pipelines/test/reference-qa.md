@@ -261,7 +261,7 @@ method and report the appropriate results.
 **A:** The current capability is optimized for a single team build
 to be tested on-demand using a Release Management workflow.
 We will evaluate support for multi-artifact releases, including
-non-Team Build artifacts such as Jenkins, based on user feedback.
+non-Azure Pipelines artifacts such as Jenkins, based on user feedback.
 
 ### Q: I already have a scheduled testing release pipeline. Can I reuse the same pipeline to run test on-demand, or should I create a new pipeline as shown above? 
 
@@ -298,9 +298,9 @@ to cater for parallel requests. If sufficient agents are not available,
 runs can still be triggered but releases will be queued for processing
 until agents are available.
 
-* You have sufficient jobs to enable concurrent pipelines.
-See [Concurrent pipelines in Azure Pipelines](../../pipelines/licensing/concurrent-jobs-vsts.md) 
-or [Concurrent pipelines in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information.
+* You have sufficient jobs to enable parallel jobs.
+See [Parallel jobs in Azure Pipelines](../../pipelines/licensing/concurrent-jobs-vsts.md) 
+or [Parallel jobs in TFS](../../pipelines/licensing/concurrent-pipelines-tfs.md) for more information.
 
 * Testers do not run the same tests in parallel. Doing so may cause
 results to be overwritten depending on the order of execution.

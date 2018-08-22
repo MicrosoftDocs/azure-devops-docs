@@ -84,7 +84,7 @@ By default, all project contributors in an organization have access to the Micro
 
 ### I need more agents. What can I do?
 
-A: All Azure DevOps organizations are provided with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release job concurrently, then you can buy [concurrent jobs](../licensing/concurrent-jobs-vsts.md).
+A: All Azure DevOps organizations are provided with a single agent and a limited number of free minutes each month. If you need more minutes, or need to run more than one build or release job in parallel, then you can buy [parallel jobs](../licensing/concurrent-jobs-vsts.md).
 
 ### I'm looking for the Microsoft-hosted XAML build controller. Where did it go?
 

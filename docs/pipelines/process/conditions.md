@@ -1,5 +1,6 @@
 ---
-title: Conditional expressions | Azure Pipelines or Team Foundation Server
+title: Conditional expressions
+titleSuffix: Azure Pipelines & TFS
 description: Learn about how you can write custom conditions for running your task in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.prod: devops

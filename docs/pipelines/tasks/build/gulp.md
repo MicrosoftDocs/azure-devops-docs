@@ -1,5 +1,6 @@
 ---
-title: gulp build and release task | Azure Pipelines or Team Foundation Server
+title: gulp build and release task
+titleSuffix: Azure Pipelines & TFS
 description: gulp build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
 ms.prod: devops

@@ -1,5 +1,6 @@
 ---
-title: Java Tool Installer | Azure Pipelines or Team Foundation Server
+title: Java Tool Installer
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can use the Java Tool Installer to change the version of Java in Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops

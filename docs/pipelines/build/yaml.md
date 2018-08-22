@@ -1,5 +1,6 @@
 ---
-title: CI Build in code using YAML | Azure Pipelines or Team Foundation Server
+title: CI build in code using YAML
+titleSuffix: Azure Pipelines & TFS
 description: Learn how to define your CI build pipeline in YAML in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.prod: devops

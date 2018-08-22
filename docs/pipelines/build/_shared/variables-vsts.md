@@ -219,8 +219,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Uri</td>
 <td>The URL for the repository. For example:
 <ul>
-<li>Git: `https://fabrikamfiber.visualstudio.com/_git/Scripts`
-<li>TFVC: `https://fabrikamfiber.visualstudio.com/`
+<li>Git: `https://dev.azure.com/fabrikamfiber/_git/Scripts`
+<li>TFVC: `https://dev.azure.com/fabrikamfiber/`
 </ul>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
@@ -414,7 +414,7 @@ Otherwise, it is set to `False`.</td>
 
 <tr>
 <td>System.PullRequest.SourceRepositoryURI</td>
-<td>The URL to the repo that contains the pull request. For example: `https://ouraccount.visualstudio.com/_git/OurProject`. (This variable is initialized only if the build ran because of a [Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation). It is not initialized for GitHub PRs.)</td>
+<td>The URL to the repo that contains the pull request. For example: `https://dev.azure.com/ouraccount/_git/OurProject`. (This variable is initialized only if the build ran because of a [Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies.md#build-validation). It is not initialized for GitHub PRs.)</td>
 </tr>
 
 <tr>
@@ -424,7 +424,7 @@ Otherwise, it is set to `False`.</td>
 
 <tr>
 <td>System.TeamFoundationCollectionUri</td>
-<td>The URI of the team foundation collection. For example: `https://fabrikamfiber.visualstudio.com/`.
+<td>The URI of the team foundation collection. For example: `https://dev.azure.com/fabrikamfiber/`.
 <br/><br/>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
 </tr>

@@ -1,5 +1,6 @@
 ---
-title: CocoaPods | Azure Pipelines or Team Foundation Server (TFS)
+title: CocoaPods
+titleSuffix: Azure Pipelines & TFS
 description: Learn all about how you can use CocoaPods packages when you are building code in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: reference
 ms.prod: devops
