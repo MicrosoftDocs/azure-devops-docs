@@ -63,15 +63,10 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 1. Do one of the following:
 
-   * If you've just completed a CI build then, in the build's **Summary** tab under **Deployments**,
-     choose **Create release** followed by **Yes**. This starts a new release pipeline that's automatically linked to the build pipeline.
-
-     ![Creating a new release pipeline from the build summary](../_shared/_img/release-from-build-summary.png)
+   * If you've just completed a CI build then, in the build's **Summary** tab choose **Release**. This creates a new release pipeline that's automatically linked to the build pipeline.
 
    * Open the **Releases** tab of the **Pipelines** hub, open the **+** drop-down
      in the list of release pipelines, and choose **Create release pipeline**.
-
-     ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)
 
 1. Select the **IIS Website Deployment** template and choose **Apply**.
 
@@ -79,16 +74,10 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    and artifact is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new
    release pipeline from the **Releases** tab, choose the **+ Add** link and select your build artifact.
 
-   ![Selecting the build artifact](../_shared/_img/confirm-or-add-artifact.png)
-
 1. Choose the **Continuous deployment** icon in the **Artifacts** section, check that the continuous deployment trigger is enabled,
    and add a filter to include the **master** branch.
 
-   ![Setting the continuous deployment trigger](../_shared/_img/confirm-or-set-cd-trigger.png)
-
 1. Open the **Tasks** tab and select the **IIS Deployment** job. For the **Deployment Group**, select the deployment group you created earlier (such as *myIIS*).
-
-   ![IIS deployment group in release pipeline](../_shared/_img/aspnet-core-to-windows-vm/iis-deployment-group-in-release-definition.png)
 
 1. Save the release pipeline.
 
