@@ -1,6 +1,6 @@
 ---
 title: Provide free access to pipelines for Stakeholders 
-titleSuffix: Azure Devops Services
+titleSuffix: Azure DevOps Services
 description: Add & update work items, approve releases, view work tracking progress with Stakeholder access
 ms.technology: devops-new-user
 ms.prod: devops
@@ -21,7 +21,7 @@ ms.date: 09/05/2018
 To provide Stakeholders permissions to create, edit, and manage build and release pipelines, you can enable the **Free access to Pipelines for Stakeholders** account-level preview feature. This feature essentially enables an unlimited number of free users to manage and configure pipelines in your projects. 
 
 > [!IMPORTANT]  
-> The **Free access to Pipelines for Stakeholders** preview feature is turned on by default for all organizations created after July, 7th 2018. It is only available from Azure Devops Services.
+> The **Free access to Pipelines for Stakeholders** preview feature is turned on by default for all organizations created after July, 7th 2018. It is only available from Azure DevOps Services.
 
 Without this feature enabled, stakeholders can only [view and approve releases](permissions-access.md#pipelines).
 

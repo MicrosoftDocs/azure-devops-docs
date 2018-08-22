@@ -2,7 +2,7 @@
   href: index.md
 - name: Overview
   items:
-  - name: Devops for Team Services & TFS
+  - name: DevOps using Azure DevOps & TFS
     href: devops-alm-overview.md
   - name: Essential services
     href: services.md

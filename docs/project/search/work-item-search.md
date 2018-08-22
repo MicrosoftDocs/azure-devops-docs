@@ -26,7 +26,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
 # [New navigation](#tab/new-nav)
 
-1. Open the **Azure Boards** section in Azure Devops (see [Navigation basics](../navigation/index.md)).
+1. Open the **Azure Boards** section in Azure DevOps (see [Navigation basics](../navigation/index.md)).
 
 1. Choose the ![start search icon](_img/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
 
