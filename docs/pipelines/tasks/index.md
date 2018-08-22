@@ -56,7 +56,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/azure-function.png) [Azure Function](utility/azure-function.md). Invoke a HTTP triggered function in an Azure function app and parse the response. | Azure Pipelines |
 | ![icon](utility/_img/azurenlbmanagement.png) [Azure Network Load Balancer](utility/azure-nlb-management.md).Connect/Disconnect an Azure virtual machine's network interface to a Load Balancer's backend address pool | Azure Pipelines |
 | ![icon](utility/_img/bash.png) [Bash](utility/bash.md). Run a Bash script on macOS, Linux, or Windows | Azure Pipelines |
-| ![icon](utility/_img/batch-script.png) [Batch Script](utility/batch-script.md). Run a windows cmd or bat script and optionally allow it to change the environment | Azure Pipelines, TFS 2015 RTM and newer |
+| ![icon](utility/_img/batch-script.png) [Batch Script](utility/batch-script.md). Run a windows cmd or bat script and optionally allow it to change the stage | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](utility/_img/command-line.png) [Command Line](utility/command-line.md). Run a command line with arguments | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](utility/_img/copy-and-publish-build-artifacts.png) [Copy and Publish Build Artifacts](utility/copy-and-publish-build-artifacts.md). Copy Build artifacts to staging folder then publish Build artifacts to the server or a file share | TFS 2015 RTM. Deprecated on Azure Pipelines and newer versions of TFS. |
 | ![icon](utility/_img/copy-files.png) [Copy Files](utility/copy-files.md). Copy files from source folder to target folder using minimatch patterns (The minimatch patterns will only match file paths, not folder paths). | Azure Pipelines, TFS 2015.3 and newer |
@@ -74,7 +74,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](utility/_img/installsshkey.png) [Install SSH Key](utility/install-ssh-key.md). Install an SSH key prior to a build or release | Azure Pipelines |
 | ![icon](utility/_img/http-rest-api.png) [Invoke HTTP REST API](utility/http-rest-api.md). Invoke an HTTP API and parse the response. | Azure Pipelines |
 | ![icon](utility/_img/jenkinsdownloadartifacts.png) [Jenkins Download Artifacts](utility/jenkins-download-artifacts.md). Download artifacts produced by a Jenkins job | Azure Pipelines |
-| ![icon](utility/_img/manual-intervention.png) [Manual Intervention](utility/manual-intervention.md). Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment tasks. | Azure Pipelines |
+| ![icon](utility/_img/manual-intervention.png) [Manual Intervention](utility/manual-intervention.md). Pause an active deployment within a stage, typically to perform some manual steps or actions, and then continue the automated deployment tasks. | Azure Pipelines |
 | ![icon](utility/_img/powershell.png) [PowerShell](utility/powershell.md). Run a PowerShell script | Azure Pipelines, TFS 2015 RTM and newer |
 | ![icon](utility/_img/publish-build-artifacts.png) [Publish Build Artifacts](utility/publish-build-artifacts.md). Publish Build artifacts to the server or a file share | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](utility/_img/publish-to-azure-service-bus.png) [Publish To Azure Service Bus](utility/publish-to-azure-service-bus.md). Send a message to an Azure Service Bus using a service connection and without using an agent. | Azure Pipelines |

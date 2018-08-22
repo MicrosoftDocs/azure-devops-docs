@@ -24,7 +24,7 @@ monikerRange: 'vsts'
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Machines</td><td>(Required) Provide a comma separated list of machine IP addresses or FQDNs. Eg: `dbserver.fabrikam.com or 192.168.12.34` Or provide output variable of other tasks. Eg: `$(variableName)` Or provide a Machine Group Name</td></tr>
-<tr><td>Test Drop Location</td><td>(Required) Location where the test binaries have been dropped in the agent machine(s) as part of the 'Windows Machine File Copy' or 'Azure File Copy' task. System Environment Variables can also be used in location string. e.g., `%systemdrive%\Tests`, `%temp%\DropLocation` etc.</td></tr>
+<tr><td>Test Drop Location</td><td>(Required) Location where the test binaries have been dropped in the agent machine(s) as part of the 'Windows Machine File Copy' or 'Azure File Copy' task. System stage variables can also be used in location string. e.g., `%systemdrive%\Tests`, `%temp%\DropLocation` etc.</td></tr>
 <tr><td>Test Selection</td><td>(Required) Select the way you want to run tests : using Test Assemblies or using Test Plan.</td></tr>
 <tr><td>Test Plan</td><td>(Required) Select a Test Plan.</td></tr>
 <tr><td>Test Suite</td><td>(Required) Select Test Suites from the Test Plan.</td></tr>

@@ -1,6 +1,6 @@
 ---
 title: Manual intervention task for Azure Pipelines and TFS 
-description: Build and release task to pause an active deployment within an environment with a build or release pipeline in Azure Pipelines and TFS
+description: Build and release task to pause an active deployment within a stage with a build or release pipeline in Azure Pipelines and TFS
 ms.assetid: 2717783B-7754-4888-9A79-8DB5EC74626A
 ms.prod: devops
 ms.technology: devops-cicd
@@ -14,7 +14,7 @@ monikerRange: 'vsts'
 
 # Utility: Manual intervention
 
-![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within an environment, typically to perform some manual steps or actions, and then continue the automated deployment tasks.
+![icon](_img/manual-intervention.png) &nbsp; Pause an active deployment within a stage, typically to perform some manual steps or actions, and then continue the automated deployment tasks.
 
 ## Demands
 
@@ -36,7 +36,7 @@ Can be used in only an [agentless job](../../process/server-phases.md) of a rele
 | **Control options** | See [Control options](../../process/tasks.md#controloptions) |
 
 The **Manual Intervention** task does not perform deployment actions directly.
-Instead, it allows you to pause an active deployment within an environment, typically to perform some
+Instead, it allows you to pause an active deployment within a stage, typically to perform some
 manual steps or actions, and then continue the automated deployment tasks. For example, the user may
 need to edit the details of the current release before continuing; perhaps by entering the values for
 custom variables used by the tasks in the release.
@@ -56,7 +56,7 @@ When the Manual Intervention task is activated during a deployment, it sets
 the deployment state to **IN PROGRESS** and displays
 a message bar containing  a link that opens the Manual Intervention dialog containing the instructions.
 After carrying out the manual steps, the administrator or user can choose to resume the deployment, or reject it.
-Users with **Manage deployment** permission on the environment can resume or reject the manual intervention.
+Users with **Manage deployment** permission on the stage can resume or reject the manual intervention.
 
 For more information about using this task, see [Approvals and gates overview](../../release/approvals/index.md).
 
