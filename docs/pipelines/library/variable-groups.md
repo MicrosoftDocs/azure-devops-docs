@@ -29,8 +29,6 @@ multiple build and release pipelines. Variable groups are defined and managed in
 1. Open the **Library** tab to see a list of existing variable groups for your project.
 Choose **+ Variable group**.
 
-   ![Creating a variable group](_img/create-variable-group.png) 
-
 1. Enter a name and description for the group. Then enter the name and value for each
    [variable](../release/variables.md#custom-variables)
    you want to include in the group, choosing **+ Add** for each one.

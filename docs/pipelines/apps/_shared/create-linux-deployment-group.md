@@ -37,8 +37,6 @@ Each machine interacts with Azure Pipelines to coordinate deployment of your app
    **Use a personal access token in the script for authentication** is also checked.
    Choose **Copy script to clipboard**.
 
-   ![Creating a Linux deployment group](_img/create-linux-dep-group-01.png)
-
    The script you've copied to your clipboard will download and configure an agent on the
    VM so that it can receive new web deployment packages and apply them to web server.
 
@@ -50,5 +48,3 @@ Each machine interacts with Azure Pipelines to coordinate deployment of your app
 
 1. Back in Azure Pipelines or TFS, on the **Deployment groups** page of the **Pipelines** hub in Azure Pipelines, open the **myNginx** deployment group.
    On the **Targets** tab, verify that your VM is listed.
-
-   ![Verifying the Linux deployment group](_img/create-linux-dep-group-02.png)
