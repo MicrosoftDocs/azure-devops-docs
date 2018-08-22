@@ -48,7 +48,7 @@
   items:
     - name: Agile
       href: /azure/devops/learn/agile/what-is-agile
-    - name: Devops
+    - name: DevOps
       href: /azure/devops/learn/what-is-devops
     - name: Git at Scale
       href: /azure/devops/learn/git/git-at-scale
