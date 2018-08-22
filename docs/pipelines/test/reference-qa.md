@@ -105,7 +105,7 @@ after the load tests have run and before the app is swapped from staging to prod
 
 **A**: Use a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 to pass values as parameters to your test code. For example, in a release that contains
-several environments, you can pass the appropriate app URL to each the test tasks in each one.
+several stages, you can pass the appropriate app URL to each the test tasks in each one.
 The runsettings file and matching parameters must be specified in the
 [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task.  
 
@@ -180,13 +180,13 @@ You must be a Project Contributor, or have the following permissions:
 
 * Create releases
 * Manage releases
-* Edit release environment
+* Edit release stage
 * Manage deployment
 
 For more information, see [Set permissions for release pipelines](../policies/set-permissions.md#set-permissions-for-release-pipelines) and
 [Release permissions](../policies/permissions.md#release-permissions).
 
-### Q: Can I override the build or environment set at the test plan level for a specific instance of test run?
+### Q: Can I override the build or stage set at the test plan level for a specific instance of test run?
 
 **A:** Yes, you can do this using the **Run with options** command.
 Open the shortcut menu for the test suite in the left column and choose
@@ -196,17 +196,17 @@ Open the shortcut menu for the test suite in the left column and choose
 
 Enter the following values in the Run with options dialog and then choose **OK**:
 
-* **Test type and runner**: Select **Automated tests using Release environment**.
+* **Test type and runner**: Select **Automated tests using Release Stage**.
   
 * **Build**: Select the build that has the test binaries. The test results will be associated this build.
  
 * **Release Pipeline**: Select a pipeline from the list of release pipelines that can consume the selected build artifact.
  
-* **Release Environment**: Select the name of the environment configured in your release pipeline.<p />
+* **Release Stage**: Select the name of the stage configured in your release pipeline.<p />
 
 ![Configuring the Run with options dialog](_img/run-auto-tests-from-hub-09a.png)
 
-### Q: Why use release environments to run tests? 
+### Q: Why use release stages to run tests? 
 
 **A:** Release Management offers a compelling orchestration workflow
 to obtain test binaries as artifacts and run tests. This workflow shares
@@ -265,10 +265,10 @@ non-Team Build artifacts such as Jenkins, based on user feedback.
 
 ### Q: I already have a scheduled testing release pipeline. Can I reuse the same pipeline to run test on-demand, or should I create a new pipeline as shown above? 
 
-**A:** We recommend you use a separate release pipeline and environment for on-demand automated testing from the **Test** hub because:
+**A:** We recommend you use a separate release pipeline and stage for on-demand automated testing from the **Test** hub because:
 
 * You may not want to deploy the app every time you want to run a few on-demand tests.
-Scheduled testing environments are typically set up to deploy the product and then run tests.
+Scheduled testing stages are typically set up to deploy the product and then run tests.
 
 * New releases are triggered for every on-demand run. If you have many
 testers executing a few on-demand test runs every day, your scheduled
@@ -293,7 +293,7 @@ in the web-based interface. No further development is planned for MTM. See
 **A:** They can use the same release pipeline to trigger multiple
 test runs in parallel if:
 
-* The agent pool associated with the environment has sufficient agents
+* The agent pool associated with the stage has sufficient agents
 to cater for parallel requests. If sufficient agents are not available,
 runs can still be triggered but releases will be queued for processing
 until agents are available.
@@ -306,7 +306,7 @@ or [Concurrent pipelines in TFS](../../pipelines/licensing/concurrent-pipelines-
 results to be overwritten depending on the order of execution.
 
 To enable multiple different test runs to execute in parallel, set the Release Management
-environment trigger option for
+stage trigger option for
 [behavior when multiple releases are waiting to be deployed](../../pipelines/release/triggers.md#env-triggers)
 as follows:
 
@@ -323,7 +323,7 @@ from different sources, set this option to
 
 **A:** Check and resolve issues as follows:
 
-* The release pipeline and environment in which I want to run tests
+* The release pipeline and stage in which I want to run tests
   are not shown after I select the build.
    - Make sure the build pipeline that is generating the build is linked
      as the primary artifact in the **Artifacts** tab of the release pipeline.<p />
@@ -344,8 +344,8 @@ from different sources, set this option to
    - Use the link in the **Run summary** page to access the release instance
      used to run the tests, and view the release logs.<p /> 
 
-* My tests go into the error state, or remain "in-progress" even after release to the environment is triggered.
-   - Check if the release environment that you selected has the correct task
+* My tests go into the error state, or remain "in-progress" even after release to the stage is triggered.
+   - Check if the release stage that you selected has the correct task
      and version selected. You must use version 2 or higher of the **Visual Studio
      Test** task. Version 1 of the task, and the **Run Functional Tests** task,
      are not supported.<p /> 

@@ -727,7 +727,7 @@
     },
     {
       "source_path": "docs/build/get-started/aspnet-4-ci-cd-azure-automatic.md",
-      "redirect_url": "/vsts/pipelines/apps/aspnet/build-aspnet-4",
+      "redirect_url": "https://docs.microsoft.com/azure/app-service/app-service-continuous-deployment",
       "redirect_document_id": false
     },
     {
@@ -1437,7 +1437,7 @@
     },
     {
       "source_path": "docs/build-release/get-started/aspnet-4-ci-cd-azure-automatic.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+      "redirect_url": "https://docs.microsoft.com/azure/app-service/app-service-continuous-deployment",
       "redirect_document_id": false
     },
     {
@@ -5797,7 +5797,7 @@
     },
     {
       "source_path": "docs/build-release/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
-      "redirect_url": "/vsts/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic",
+      "redirect_url": "https://docs.microsoft.com/azure/app-service/app-service-continuous-deployment",
       "redirect_document_id": true
     },
     {
