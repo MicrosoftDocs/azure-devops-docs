@@ -26,7 +26,7 @@ If you'd like to retain a package version indefinitely, you can promote it to a 
 
 To configure retention policies:
 
-1. Edit your feed from the **Packages** hub in the **Build and Release** hub group: ```https://<account_name>.visualstudio.com/<project_name>/_packaging?feed=<feed_name>&_a=settings```
+1. Edit your feed from the **Packages** hub in the **Build and Release** hub group: ```https://dev.azure.com/<organization_name>/<project_name>/_packaging?feed=<feed_name>&_a=settings```
 
     ![Edit an Azure DevOps Services feed in Package](../_shared/_img/edit-feed-full.png)
 

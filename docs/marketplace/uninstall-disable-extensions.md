@@ -26,7 +26,7 @@ Only [Project collection administrators](../organizations/security/set-project-c
 
 
 0. Go to your Azure DevOps Services or TFS home page, then go to your project:
-    * Azure DevOps Services: ```https://{account-name}.visualstudio.com/{team-project}```
+    * Azure DevOps Services: ```https://dev.azure.com/{organization}/{project}```
     * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
 
 0. Manage your extensions:

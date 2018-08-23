@@ -124,7 +124,7 @@ To share an integration so it can be installed:
 1. Click an integration from the list of displayed items 
 2. Click the **Share** button
 3. Specify the name of the Azure DevOps Services organization to make this integration visible to.
-  - For example, to make an integration visible to the fabrikam-fiber-inc.visualstudio.com organization, specify `fabrikam-fiber-inc`.
+  - For example, to make an integration visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
 
 #### Update an item
 

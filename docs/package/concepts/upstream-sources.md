@@ -47,7 +47,7 @@ In order for your feed to provide [deterministic restore](#search-order), it's i
 ```xml
 <packageSources>
   <clear />
-  <add key="FabrikamFiber" value="https://fabrikam.pkgs.visualstudio.com/_packaging/FabrikamFiber/nuget/v3/index.json" />
+  <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/nuget/v3/index.json" />
 </packageSources>
 ```
 
@@ -58,7 +58,7 @@ In order for your feed to provide [deterministic restore](#search-order), it's i
 For npm, you should have only one `registry` line, like:
 
 ```text
-registry=https://fabrikam.pkgs.visualstudio.com/_packaging/FabrikamFiber/npm/registry/
+registry=https://pkgs.dev.azure.com/fabrikam/_packaging/FabrikamFiber/npm/registry/
 always-auth=true
 ```
 

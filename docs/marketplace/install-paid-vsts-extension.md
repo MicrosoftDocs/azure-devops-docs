@@ -60,7 +60,7 @@ To make subsequent edits to paid quantities in your Azure DevOps Services organi
 After you install a paid extension, you will need to assign it to your users so they can start using it. 
 To assign extensions, you'll need Azure DevOps Services [project collection administrator or organization owner permissions](./faq-extensions.md#find-owner).
 
-0.	Sign in to your Azure DevOps Services organization: ```https://{youraccount}.visualstudio.com```.
+0.	Sign in to your Azure DevOps Services organization: ```https://dev.azure.com/{organization}```.
 
 0.	Go to **Users**.
 

@@ -59,7 +59,7 @@ using Microsoft.VisualStudio.Services.Client;
 using Microsoft.TeamFoundation.SourceControl.WebApi;
 using Microsoft.VisualStudio.Services.WebApi;
 
-const String c_collectionUri = "https://fabrikam.visualstudio.com/DefaultCollection";
+const String c_collectionUri = "https://dev.azure.com/fabrikam";
 const String c_projectName = "MyGreatProject";
 const String c_repoName = "MyRepo";
 

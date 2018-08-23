@@ -225,7 +225,7 @@ You can optionally use ```--share-with``` to share your extension with one or mo
 You'll need a personal access token, too.
 
 ```no-highlight
-tfx extension publish --manifest-globs your-manifest.json --share-with youraccount
+tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
 ```
 
 ### Share your extension
@@ -244,11 +244,11 @@ Now that your extension is in the marketplace and shared, anyone who wants to us
 ## Optional: Install and test your extension
 Installing an extension that is shared with you is simple and can be done in a few steps:
 
-1. From your organization control panel (`https://{account}.visualstudio.com/_admin`), go to the project collection administraton page.
+1. From your organization control panel (`https://dev.azure.com/{organization}/_admin`), go to the project collection administraton page.
 2. In the Extensions tab, find your extension in the "Extensions Shared With Me" group, click on the extension link.
 3. Install the extension!
 
-If you can't see the Extensions tab, make sure you're in the control panel (the project collection level administration page - `https://{account}.visualstudio.com/_admin`) and not the administration page for a project.
+If you can't see the Extensions tab, make sure you're in the control panel (the project collection level administration page - `https://dev.azure.com/{organization}/_admin`) and not the administration page for a project.
 
 If you're on the control panel, and you don't see the <b>Extensions</b> tab, extensions may not be enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 

@@ -312,13 +312,13 @@ You can optionally use ```--share-with``` to share your extension with one or mo
 You'll need a personal access token, too.
 
 ```no-highlight
-tfx extension publish --manifest-globs your-manifest.json --share-with youraccount
+tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization
 ```
 
 <a name="add-from-catalog"/>
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at http://yourAccount.visualstudio.com/DefaultCollection/yourProject. If this page is already open, then refresh it. 
+Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, then refresh it. 
 Hover on the Edit button in the bottom right, and click on the Add button. This should open the widget catalog where you will find the widget you just installed. 
 Choose your widget and click the 'Add' button to add it to your dashboard.
 
@@ -611,7 +611,7 @@ If you have already published the extension before this point, you can repackage
 
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at http://yourAccount.visualstudio.com/DefaultCollection/yourProject. If this page is already open, then refresh it. 
+Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, then refresh it. 
 Hover on the Edit button in the bottom right, and click on the Add button. This should open the widget catalog where you will find the widget you just installed. 
 Choose your widget and click the 'Add' button to add it to your dashboard.
 
@@ -958,7 +958,7 @@ If you have not published your extension yet, then read [this](#package-publish-
 If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update) to the marketplace.
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at http://yourAccount.visualstudio.com/DefaultCollection/yourProject. If this page is already open, refresh it. 
+Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
 Hover on the Edit button in the bottom right, and click on the Add button. This should open the widget catalog where you will find the widget you just installed. 
 Choose your widget and click the 'Add' button to add it to your dashboard.
 

@@ -29,7 +29,7 @@ Perform the following steps to enable subscription logging:
 
 1. Enable diagnostics for your organization by entering this URL in your browser:
 
-    `https://{organization}.visualstudio.com/_notifications?diagnostics=true`
+    `https://dev.azure.com/{organization}/_notifications?diagnostics=true`
 
 1. When this completes, the option _Enable Diagnostics_ appears in the subscription context menu
 
@@ -41,7 +41,7 @@ Retrieve all subscription event processing logs in a given timeframe by entering
 
 `https://{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
-* _organization_ is your organization (e.g. fabrikam-fiber.visualstudio.com)
+* _organization_ is your organization (e.g. dev.azure.com/fabrikam-fiber)
 * _date_ is a date time specification (e.g **2018-06-29** or **2018-06-29 02:00**)
 * _event ID_ is **915f48f2-1b64-40d9-a43f-fe2528b4f296** for work item events, or
 * _event ID_ is **9a688110-9e33-4cdc-affd-75d16303e7f1** for Git events, or
@@ -55,7 +55,7 @@ Retrieve all notification delivery logs in a given timeframe by entering the URL
 
 `https://{organization}/_apis/notification/DiagnosticLogs/{event ID}/entries?startTime={date}&endTime={date}`
 
-* _organization_ is your organization (e.g. fabrikam-fiber.visualstudio.com)
+* _organization_ is your organization (e.g. dev.azure.com/fabrikam-fiber)
 * _date_ is a date time specification (e.g **2018-06-29** or **2018-06-29 02:00**)
 * _event ID_ is **631f49b3-46e1-42ec-8fff-081bd176c18a** for work item events, or
 * _event ID_ is **8833fc71-42ca-441b-ab12-25314877772d** for Git events, or

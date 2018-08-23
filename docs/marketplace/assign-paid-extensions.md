@@ -29,7 +29,7 @@ To assign extensions, you'll need Azure DevOps Services or TFS [project collecti
 
 
 ## Azure DevOps Services 
-0.	Sign in to your Azure DevOps Services organization (```https://{youraccount}.visualstudio.com```).
+0.	Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{organization}```).
 
 0.	Go to **Users**.
 

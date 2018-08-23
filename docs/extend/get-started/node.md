@@ -252,7 +252,7 @@ Congratulations! Your extension is now installed into an organization and is rea
 
 Your extension contributed a view named "My Hub" to the project-level Code area. Let's navigate to it.
 
-1. Tap the **Proceed to organization** button at the end of the installation wizard to navigate to the home page of the organization the extension was installed to (`https://{youraccountname}.visualstudio.com`).
+1. Tap the **Proceed to organization** button at the end of the installation wizard to navigate to the home page of the organization the extension was installed to (`https://dev.azure.com/{organization}`).
 
 2. Click any of the projects listed to navigate into it:
 

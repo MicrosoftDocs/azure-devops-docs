@@ -28,7 +28,7 @@ As changes occur to work items, code reviews, pull requests, source control file
 
 A subscription lets you control what your team should be notified about and how the team will receive those notifications.
 
-1. Open the Notifications hub under team settings: `https://{organization}.visualstudio.com/{project}/_admin/_notifications?view=contents`
+1. Open the Notifications hub under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 	
 	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
 
@@ -72,7 +72,7 @@ A subscription lets you control what your team should be notified about and how 
 
 Choose the default method for your team to receive notifications by updating the **team delivery settings**.
 
-1. Open the Notifications hub under team settings: `https://{organization}.visualstudio.com/{project}/_admin/_notifications?view=contents`
+1. Open the Notifications hub under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 	
 	![Notifications under settings menu](_img/team-notifications-settings-menu.png)
 
