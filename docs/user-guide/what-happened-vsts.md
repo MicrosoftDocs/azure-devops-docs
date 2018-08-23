@@ -29,7 +29,7 @@ Follow the [Azure DevOps Release Notes](/vsts/release-notes/index) to get news o
 
 ## I am using visualstudio.com for my VSTS organization. Do I have to use dev.azure.com now?
 
-Although the service URLs for Azure DevOps are now `https://dev.azure.com/{your organization}/{your project}`, Microsoft will support servicing from the `visualstudio.com` domain ('https://{your organization}.visualstudio.com/{your project}') for some time after **September 5, 2018**. You can continue to access your organization and projects through visualstudio.com until some to-be-determined date.
+Although the service URLs for Azure DevOps are now `https://dev.azure.com/{your organization}/{your project}`, Microsoft will support servicing from the visualstudio.com domain (`https://{your organization}.visualstudio.com/{your project}`) for some time after **September 5, 2018**. You can continue to access your organization and projects through visualstudio.com until some to-be-determined date.
 
  We will post news about this transition on the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/devops/) and in the [Azure DevOps release notes](https://docs.microsoft.com/en-us/vsts/release-notes/index).
 
