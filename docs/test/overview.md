@@ -59,7 +59,7 @@ from the cards on the Kanban board, and then progressively monitor
 status directly from the card. Developers and testers can use these
 rich capabilities to simplify maximizing quality within their teams.
 In Azure DevOps, you need just [Basic access](../organizations/billing/buy-basic-access-add-users.md)
-to use these features. See more at [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json).
+to use these features. See more at [Add, run, and update inline tests](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json).
 
 ![Managing manual tests from the Kanban board](_img/manual-testing/kanban-board-01.png)
 
@@ -208,13 +208,13 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 
 * **Rich Diagnostic data collection**. Using the web-based Test Runner and Test Runner client you can [collect rich diagnostic data](collect-diagnostic-data.md) during your tests. This includes screenshots, an image action log, screen recordings, code coverage, IntelliTrace traces, and test impact data for your apps under test. This data is automatically included in all the bugs you create during test, making it easy for developers to reproduce the issues.
 
-* **End to End Traceability**. Azure DevOps and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
+* **End to End Traceability**. Azure DevOps and TFS provide [end-to-end traceability of your requirements, builds, tests and bugs](../boards/queries/link-work-items-support-traceability.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json). Users can track their requirement quality from cards on the Kanban board. Bugs created while testing are automatically linked to the requirements and builds being tested, which helps you track the quality of the requirements or builds.
 
 * **Extensible platform**. You can combine the tools and technologies you already know with the development tools that work best for you to integrate with and [extend Azure DevOps and TFS](../integrate/index.md). Use the REST APIs and contribution model available for the Test platform to create extensions that provide the experience you need for your test management lifecycle.
 
 ## Additional resources
 
-* [Get started with manual testing](../boards/boards/add-run-update-tests.md?toc=/vsts/test/toc.json&bc=/vsts/test/breadcrumb/toc.json)
+* [Get started with manual testing](../boards/boards/add-run-update-tests.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json)
 * [Advanced manual testing techniques](user-acceptance-testing.md)
 * [Get started with exploratory testing](perform-exploratory-tests.md)
 * [Advanced exploratory testing techniques](explore-workitems-exploratory-testing.md)

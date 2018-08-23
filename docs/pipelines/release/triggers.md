@@ -54,6 +54,13 @@ changes in every development sprint. It means you don't need to update the trigg
 filter across all release pipelines for every change - instead you just change the
 default branch in the build pipeline.
 
+You can also configure a **pull request trigger** that will create a new release when a pull request 
+uploads a new version of the artifact. Add the branches targetted by pull requests
+that you want to activate this trigger. 
+
+![Selecting a trigger for a release](_img/trigger-01a.png)
+
+
 >Note that, even though a release is automatically created, it
 might not be deployed automatically to any stages. The
 [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.

@@ -74,7 +74,7 @@ The NuGet task supports a number of options. Some of the key ones are described 
 <a name="package-versioning"></a>
 ## Package versioning
 
-In NuGet, a particular package is identified by its name and version number. A recommended approach to versioning packages is to use semantic versioning. Semantic version numbers have 3 numeric components, `Major.Minor.Patch`. When you fix a bug, you increment the patch (`1.0.0` → `1.0.1`). When you release a new backwards-compatible feature, you increment minor and reset patch to 0 (`1.4.17` → `1.5.0`). When you make a backwards-incompatible change, you increment major and reset minor and patch to 0 (`2.6.5` → `3.0.0`).
+In NuGet, a particular package is identified by its name and version number. A recommended approach to versioning packages is to use semantic versioning. Semantic version numbers have 3 numeric components, `Major.Minor.Patch`. When you fix a bug, you increment the patch (`1.0.0` ? `1.0.1`). When you release a new backwards-compatible feature, you increment minor and reset patch to 0 (`1.4.17` ? `1.5.0`). When you make a backwards-incompatible change, you increment major and reset minor and patch to 0 (`2.6.5` ? `3.0.0`).
 
 In addition to `Major.Minor.Patch`, semantic versioning provides for a prerelease label. Prerelease labels are a “-” followed by whatever letters and numbers you want. Version `1.0.0-alpha`, `1.0.0-beta`, and `1.0.0-foo12345` are all prerelease versions of `1.0.0`. Even better, semantic versioning specifies that when you sort by version number, those prerelease versions fit exactly where you’d expect: `0.99.999` < `1.0.0-alpha` < `1.0.0` < `1.0.1-beta`.
 
@@ -123,7 +123,7 @@ In the **NuGet** task, choose **Pack options** and select one of the values for 
 
 ---
 
-While semantic versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that packages once produced are [immutable](/vsts/package/feeds/immutability) and so cannot be updated or replaced. When you’re producing a package in build, you can’t know whether it will be the version that you aim to release to your users or just a step along the way towards that release. While none of the following solutions are ideal, you can use one of these depending on your preference:
+While semantic versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that packages once produced are [immutable](/azure/devops/package/feeds/immutability) and so cannot be updated or replaced. When you’re producing a package in build, you can’t know whether it will be the version that you aim to release to your users or just a step along the way towards that release. While none of the following solutions are ideal, you can use one of these depending on your preference:
 
 * Once you validate a package and decide to release it, produce another package without the prerelease label and publish it. The drawback of this approach is that you have to validate the new package again, and it may uncover new issues.
 
@@ -177,7 +177,7 @@ To publish to a external NuGet feed, you must first create a service connection 
 
 ## Publish symbols for your packages
 
-When you push packages to a Package Management feed, you can also [publish symbols](/vsts/pipelines/symbols/index).
+When you push packages to a Package Management feed, you can also [publish symbols](/azure/devops/pipelines/symbols/index).
 
 ## Q&A
 
