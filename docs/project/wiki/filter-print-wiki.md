@@ -1,7 +1,7 @@
 ---
 title: Filter a wiki TOC or print a wiki page
-titleSuffix: VSTS & TFS 
-description: Filter the contents of a wiki TOC or print a wiki page in Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps & TFS 
+description: Filter the contents of a wiki TOC or print a wiki page in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops

@@ -1,7 +1,7 @@
 ---
 title: Default permissions set for notifications, READMEs, Wiki, and feedback 
-titleSuffix: VSTS & TFS 
-description: Default permission and access assignments made to collaboration tools such as alerts, Wiki, and feedback for Visual Studio Team Services & Team Foundation Server 
+titleSuffix: Azure DevOps & TFS 
+description: Default permission and access assignments made to collaboration tools such as alerts, Wiki, and feedback for Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-collab
 ms.prod: devops
 ms.assetid:  
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 # Default permissions and access set for collaboration tools 
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 Collaboration tools encompass READMEs, team project Wikis, notifications, feedback, and semantic search.  
 

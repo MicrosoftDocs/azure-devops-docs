@@ -47,7 +47,8 @@ By default, all project contributors have read and edit access of the wiki repos
 
 To open the Security dialog, choose **More>Security** on the wiki home page. 
  
-<img src="_img/wiki/wiki-open-security.png" alt="Wiki, open security" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![Wiki, Choose More, select security](_img/wiki/wiki-open-security.png) 
 
 For definitions of each repository permission, see [Git repository permissions](../../organizations/security/permissions.md#git-repository).
 
@@ -57,7 +58,8 @@ For definitions of each repository permission, see [Git repository permissions](
 
 If you don't have access to create a wiki page, you need to contact an administrator to grant you adequate permission on the underlying Git repository of the wiki. Even if you don't have access to a wiki page, you can see the security and identify an administrative member who can provision access to the wiki.
 
-<img src="_img/wiki/wiki-no-permission-message.png" alt="View wiki security if you don't have access to Wiki" style="border: 1px solid #C3C3C3;" />
+> [!div class="mx-imgBorder"]  
+> ![View wiki security if you don't have access to Wiki](_img/wiki/wiki-no-permission-message.png)  
 
 ## Stakeholder wiki access
 

@@ -1,18 +1,18 @@
-- name: "READMEs & Wikis" 
+- name: Wikis
   href: index.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json 
 - name: Overview
   items:
-  - name: "About READMEs & Wikis"
+  - name: "About Wikis, READMes, & markdown"
     href: about-readme-wiki.md  
   - name: Provisioned vs published wikis 
     href: provisioned-vs-published-wiki.md
 - name: Quickstarts
   items:
-  - name: Create a wiki for your project
+  - name: Create a Wiki for your project
     href: wiki-create-repo.md
-  - name: "Add & edit wiki pages"
+  - name: "Add & edit Wiki pages"
     href: add-edit-wiki.md
-  - name: Publish code to a wiki 
+  - name: Publish code to a Wiki 
     href: publish-repo-to-wiki.md
   - name: Share your project vision
     href: project-vision-status.md
@@ -26,17 +26,17 @@
     href: ../../repos/git/create-a-readme.md?toc=/vsts/project/wiki/toc.json&bc=/vsts/project/wiki/breadcrumb/toc.json 
 - name: How-to Guides
   items:
-  - name: View wiki history and revert
+  - name: View Wiki history and revert
     href: wiki-view-history.md
   - name: Filter or print wiki content 
     href: filter-print-wiki.md
-  - name: Search wiki content
+  - name: Search Wiki content
     href: search-wiki.md
   - name: Version, select, or unpublish a wiki
     href: wiki-select-unpublish-versions.md
-  - name: Update wiki pages offline 
+  - name: Update Wiki pages offline 
     href: wiki-update-offline.md
-  - name: "Manage README & Wiki permissions (Security)"
+  - name: "Manage Wiki permissions (Security)"
     href: manage-readme-wiki-permissions.md
   - name: Migrate Wiki extension pages  
     href: migrate-extension-wiki-pages.md
@@ -54,9 +54,9 @@
     href: https://docs.microsoft.com/en-us/rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
 - name: Resources 
   items:
-  - name: Navigate Basics
+  - name: Navigate basics
     href: ../navigation/index.md
   - name: Dashboards
     href: ../../report/dashboards/index.md
-  - name: Work Items
-    href: ../../boards/work-items/index.md
+  - name: Manage projects
+    href: ../../organizations/projects/index.md

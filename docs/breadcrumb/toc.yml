@@ -140,6 +140,9 @@
     - name: "Scale & configure teams"
       tocHref: /vsts/organizations/settings/scale/
       topicHref: /vsts/organizations/settings/scale/index
+    - name: Notifications
+      tocHref: /vsts/notifications/
+      topicHref: /vsts/notifications/index
     - name: Customization
       tocHref: /vsts/reference/
       topicHref: /vsts/reference/index

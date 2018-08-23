@@ -2,7 +2,7 @@
 title: Search across your code base, work items, or wiki
 titleSuffix: Azure DevOps Services & TFS   
 description: Find code or work items quickly in Azure DevOps Services and Team Foundation Server (TFS)  
-ms.assetid: 2C0977AB-91A4-477C-870E-FA5540E76F4B
+ms.assetid: 
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
@@ -10,6 +10,7 @@ ms.manager: douge
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '>= tfs-2017'
 ms.date: 07/21/2018
 ---
 
@@ -235,13 +236,15 @@ With wiki search, you can search within a project wiki or across all wikis creat
 # [New navigation](#tab/new-nav)
 ::: moniker range="vsts"  
 
+Choose **Overview>Wiki** and type your keyword or phrase into the search box. 
+
 > [!div class="mx-imgBorder"]  
-> ![Wiki search option, new navigation](_img/search/search-wiki-vert.png)   
+> ![Wiki search option, new navigation](../wiki/_img/search/search-wiki-vert.png)   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search results, new navigation](_img/search/wiki-search-results-vert.png)   
+> ![Wiki search results, new navigation](../wiki/_img/search/wiki-search-example-vert.png)   
 > 
 ::: moniker-end  
 
@@ -253,13 +256,15 @@ The search feature quickly returns wiki pages by title or page content. English 
 
 ::: moniker range=">= tfs-2018"  
 
+Open **Wiki** and type your keyword or phrase into the search box. 
+
 > [!div class="mx-imgBorder"]  
-> ![Wiki search option, previous navigation](../wiki/_img/wiki/wiki-search.png)   
+> ![Wiki search option, previous navigation](../wiki/_img/search/search-wiki-horz.png)   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search results](../wiki/_img/wiki/wiki-search-example.png)
+> ![Wiki search results](../wiki/_img/search/wiki-search-example-vert.png)   
 
 ::: moniker-end
 

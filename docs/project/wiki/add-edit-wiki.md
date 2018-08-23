@@ -1,7 +1,7 @@
 ---
 title: Add, edit, or print wiki pages defined in your team project
-titleSuffix: VSTS & TFS  
-description: Add, edit, reorder, and manage pages for your built-in team project wiki in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps & TFS  
+description: Add, edit, reorder, and manage pages for your built-in team project wiki in Azure DevOps Services & Team Foundation Server  
 ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
@@ -23,7 +23,8 @@ Once the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your te
 
 You author pages using [markdown format](../../reference/markdown-guidance.md). Also, you can use the format pane for rich-text formatting and to insert images, attachments, and links.  
 
-<img src="_img/wiki/wiki-edit-2.png" alt="Create first page" style="border: 1px solid #C3C3C3;" />  
+> [!div class="mx-imgBorder"]  
+> ![Wiki home page](_img/wiki/wiki-edit-2.png) 
 
 As you continue editing the page, save the page by entering **Ctrl+S**. To save with a custom revision message, click the context menu icon next to **Save**. For additional shortcuts, see [Keyboard shortcuts to manage Wiki pages](wiki-keyboard-shortcuts.md).
 

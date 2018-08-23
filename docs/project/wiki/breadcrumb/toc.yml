@@ -1,11 +1,7 @@
-- name: Azure DevOps Services
+- name: Azure DevOps & TFS
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Shared Features
-    tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-supplemental
-    items:
-    - name: "README & Wikis"
-      tocHref: /vsts/project/wiki/
-      topicHref: /vsts/project/wiki/index
+  - name: Wikis
+    tocHref: /vsts/project/wiki/
+    topicHref: /vsts/project/wiki/index

@@ -1,6 +1,6 @@
 ---
 title: View wiki page revisions, history, & revert
-titleSuffix: VSTS & TFS 
+titleSuffix: Azure DevOps & TFS 
 description: Add and update pages offline for your  built-in team project wiki 
 ms.technology: devops-collab
 ms.custom: wiki
@@ -33,12 +33,12 @@ The Revisions page provides a convenient way to get details of the changes made 
 
 	::: moniker range="vsts"
 	> [!div class="mx-imgBorder"]  
-	> ![Revision page for a provisioned wiki page, VSTS](_img/wiki/revision-history-vsts.png)
+	> ![Revision page for a provisioned wiki page](_img/wiki/revision-history-vsts.png)
 	::: moniker-end
 	::: moniker range="tfs-2018"
 	<img src="_img/wiki/revision-history.png" alt="Open revision history" style="border: 1px solid #C3C3C3;" />
 	::: moniker-end
-0.	Similar to any git file revision, the revision details page provides a **side-by-side diff view** or the **inline diff view**. You can also click **Preview** to view the content of the page as of the specific revision.
+0.	Similar to any git file revision, the revision details page provides a **side-by-side diff view** or the **inline diff view**. You can also choose **Preview** to view the content of the page as of the specific revision.
 
 	<img src="_img/wiki/wiki-revision-details-2.png" alt="Wiki revision details for a page" style="border: 1px solid #C3C3C3;" />
 	::: moniker range="vsts"
@@ -53,7 +53,7 @@ The Revisions page provides a convenient way to get details of the changes made 
 <a id="revert-provision"></a>
 ## Revert a commit to a *provisioned wiki* page 
 
-Mistakes can happen while updating a wiki page. You can conveniently revert a revision and undo changes done on a wiki page. You can click on the **Revert** button on the revision details page to revert a change on a wiki page.
+Mistakes can happen while updating a wiki page. You can conveniently revert a revision and undo changes done on a wiki page. You can click the **Revert** button on the revision details page to revert a change on a wiki page.
 
 ::: moniker-end
 
