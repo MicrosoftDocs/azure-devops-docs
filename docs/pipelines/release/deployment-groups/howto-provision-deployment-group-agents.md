@@ -202,8 +202,6 @@ To use the template:
      [Azure tags](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)
      are copied using the format `Key: Value`. For example, `Role: Web`.
 
-   ![Configuring the Azure Resource Group Deployment task](_img/howto-provision-azure-vm-agents/deploy-arg-task.png)
-
 1. Provide the other parameters required for the task such as the Azure subscription, resource group name,
    and location, then save the release pipeline.
 

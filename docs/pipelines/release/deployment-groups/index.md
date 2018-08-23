@@ -48,8 +48,8 @@ Deployment groups:
 
 ## Create a deployment group
 
-You define groups on the **Deployment Groups** tab of the **Build &amp; Release**
-hub, and install the agent on each server in the group. After you prepare your
+You define groups on the **Deployment Groups** tab of the **Azure Pipelines**
+section, and install the agent on each server in the group. After you prepare your
 target servers, they appear in the **Deployment Groups** tab. The list indicates if a
 server is available, the tags you assigned to each server, and the latest
 deployment to each server.
