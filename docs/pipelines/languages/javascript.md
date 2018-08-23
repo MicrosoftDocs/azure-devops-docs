@@ -70,16 +70,28 @@ These tasks will be run every time your pipeline executes, so be mindful of the 
 
 ## Install dependencies from other sources
 
-To install dependencies from a registry other than the public npm registry, or to use [VSTS packaging management](/vsts/package/overview) , use the `npm` task. Consider using a VSTS package management feed with upstream support to cache dependencies and centralize public packages and your own packages into one single depenency stream.
+To install dependencies from a registry other than the public npm registry, or to use [VSTS packaging management](/vsts/package/overview) , use the `npm` task. Consider using a VSTS package management feed with upstream support to cache remote dependencies and centralize internal and external dependencies into a single source of truth registry.
 
-This example installs packages from a VSTS package management feed 
+This example installs packages from a VSTS package management feed:
 
 ```yaml
 - task: Npm@1
   inputs:
     command: install
     customRegistry: useFeed
-    customFeed: 
+    customFeed: yourFeedName
+```
+
+You can also specify any custom npm registry by configuring your source repo with a [.npmrc](https://docs.npmjs.com/files/npmrc) and the `npm` task:
+
+```yaml
+- task: Npm@1
+  inputs:
+    command: install
+    customRegistry: useNpmrc
+```
+
+
 
 To run a pipeline with multiple Python versions, such as to test your project using different versions, define a phase with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/npm.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the phase for all versions in the matrix, depending on how many concurrent jobs are available.
 
