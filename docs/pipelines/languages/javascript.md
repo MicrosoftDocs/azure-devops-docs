@@ -13,37 +13,75 @@ monikerRange: '> tfs-2018'
 
 # JavaScript Pipeline guide
 
-This guide explains creating build and release pipelines for JavaScript projects. If you've never worked with pipelines before, review the [YAML quickstart](../get-started-yaml.md) befor continuing.
+This guide explains creating build and release pipelines for JavaScript projects. If you've never worked with pipelines before, review the [YAML pipeline quickstart](../get-started-yaml.md) before continuing.
 
 > [!NOTE]
 > To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
 
-## Define your pipeline
+## Choose a build agent
 
-You can build JavaScript projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for JavaScript projects. You can extend these agents by setting up your pipeline to install the tools every time the pipeline is run. 
-
-You can also use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
-
-After deciding on an agent, create a file named **.vsts-ci.yml** in the root of your source code repository. Then, add applicable phases and tasks to the YAML file as described below.
-
-## Use a specific Python version
-
-Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This sample sets subsequent pipeline tasks to use Python 3.6.
+You can use VSTS to build JavaScript projects without needing to set up any infrastructure of your own using [Microsoft-hosted agents](../agents/hosted.md) . These build agents are configured with popular tools such as a Node.js LTS release, npm, webpack, and yarn, and run on Linux, macOS, or Windows. Configure the pipeline to use a hosted agent with the following YAML:
 
 ```yaml
-# https://aka.ms/yaml
-queue: 'Hosted Linux Preview'
-steps:
-
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '3.6'
-    architecture: 'x64'
+queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017', 'Hosted macOS Preview'
 ```
 
-## Use multiple Python versions
+You can also use [self-hosted agents](../agents/agents.md#install) configured with specific tools or versions that you need to build your project.
 
-To run a pipeline with multiple Python versions, such as to test your project using different versions, define a phase with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the phase for all versions in the matrix, depending on how many concurrent jobs are available.
+## Use a specific Node.js version
+
+Add the [Node tool installer](../tasks/tool/node-js.md) task to set the version of Node.js used in your pipeline. This sets subsequent pipeline tasks to use the specificed Node.js release and the version of the `npm` tool tied to that version. 
+
+> [!NOTE]
+> If you're using our [Microsoft-hosted agents](../agents/hosted.md) and just want the latest LTS release, you avoid this task unless you have a good reason for needing a specific version. The hosted agents are regularly updated, and setting this task up will result in spending a lot of time updating to a newer minor version every time the pipeline is run.
+
+```yaml
+# Node Tool Installer
+# Finds or Downloads and caches specified version spec of Node and adds it to the PATH.
+- task: NodeTool@0
+  displayName: Set Node.js version
+  inputs:
+    versionSpec: '>=8.11.x'
+    checkLatest: false # Optional
+```
+
+## Install tools on your build agent
+
+If you have defined tools needed for your build as development dependencies in your project `package.json` or `package-lock.json`, install these tools along with the rest of your project dependencies using the [npm](../tasks/tool/npm.md) task:
+
+```yaml
+- task: Npm@1
+  inputs: 
+    command: install
+```
+
+To install tools needed by your build but not set as dev dependencies, you can use the [npm](../tasks/tool/npm.md) or [cli](../tasks/tool/command-line.md) task, depending on the install method your tool needs.
+
+The following example installs the latest version of the [Angular CLI](https://cli.angular.io/) using the `npm` task:
+
+```yaml
+- task: Npm@1
+  inputs:
+    command: custom
+    customCommand: install -g @angular/cli
+```
+
+These tasks will be run every time your pipeline executes, so be mindful of the impact installing tools has on build times. Consider configuring [self-hosted agents](../agents/agents.md#install) already configured with the tools if performance overhead becomes a serious impact to your build performance.
+
+## Install dependencies from other sources
+
+To install dependencies from a registry other than the public npm registry, or to use [VSTS packaging management](/vsts/package/overview) , use the `npm` task. Consider using a VSTS package management feed with upstream support to cache dependencies and centralize public packages and your own packages into one single depenency stream.
+
+This example installs packages from a VSTS package management feed 
+
+```yaml
+- task: Npm@1
+  inputs:
+    command: install
+    customRegistry: useFeed
+    customFeed: 
+
+To run a pipeline with multiple Python versions, such as to test your project using different versions, define a phase with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/npm.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the phase for all versions in the matrix, depending on how many concurrent jobs are available.
 
 ```yaml
 # https://aka.ms/yaml
