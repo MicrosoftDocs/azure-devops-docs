@@ -15,12 +15,11 @@ featureFlags:
 - clicktale 
 ---
 
-
+<p><a href="/vsts/index">Azure DevOps Services</a>  /  Azure Boards</p>
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure Boards Documentation</h1>
         <p>Plan, track, and discuss work across your teams.</p>
-        <p style="height: 30px;">&nbsp;</p>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -30,7 +29,7 @@ featureFlags:
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
                                 <a href="#index1"></a>
-                                <ul id="index1" class="cardsA cols cols4" style="float: left; display: flex;">
+                                <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/vsts/boards/get-started/index">
                                             <div class="cardSize">

@@ -8,12 +8,6 @@
   - name: Start using Azure DevOps
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
-  - name: Start using Azure Pipelines 
-    tocHref: /vsts/pipelines/get-started/
-    topicHref: /vsts/pipelines/get-started/pipelines-get-started
-  - name: Azure Pipelines
-    tocHref: /vsts/pipelines/
-    topicHref: /vsts/pipelines/index
   - name: Discover extensions
     tocHref: /vsts/marketplace/
     topicHref: https://marketplace.visualstudio.com/
@@ -35,6 +29,13 @@
   - name: Azure DevOps demo generator
     tocHref: /vsts/demo-gen/
     topicHref: /vsts/demo-gen/index  
+  - name: Azure Pipelines
+    tocHref: /vsts/pipelines/
+    topicHref: /vsts/pipelines/index
+    items:
+    - name: Start using Azure Pipelines 
+      tocHref: /vsts/pipelines/get-started/
+      topicHref: /vsts/pipelines/get-started/pipelines-get-started
   - name: Azure Boards 
     tocHref: /vsts/boards/
     topicHref: /vsts/boards/index
@@ -74,11 +75,11 @@
       tocHref: /vsts/repos/tfvc/
       topicHref: /vsts/repos/tfvc/index
   - name: Azure Artifacts
-    tocHref: /vsts/package/
-    topicHref: /vsts/package/index
+    tocHref: /vsts/artifacts/
+    topicHref: /vsts/artifacts/index-a
   - name: Azure Test Plans
     tocHref: /vsts/test/
-    topicHref: /vsts/index-test
+    topicHref: /vsts/test/index-tp
     items:
     - name: Exploratory & manual testing
       tocHref: /vsts/test/
@@ -129,7 +130,7 @@
       topicHref: /vsts/project/feedback/index
   - name: Settings
     tocHref: /vsts/
-    topicHref: /vsts/index-settings
+    topicHref: /vsts/settings/index
     items:
     - name: Project management
       tocHref: /vsts/organizations/projects/

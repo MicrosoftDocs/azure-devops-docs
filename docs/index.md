@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps Documentation 
 titleSuffix: Azure DevOps 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery with Azure DevOps services 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps services 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -14,12 +14,12 @@ ms.date: 09/05/2018
 featureFlags:
 - clicktale 
 ---
+
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Services Documentation</h1>
-        <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps Services provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For our on-premises Team Foundation Server, go [here](index.md).</p>
+        <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps Services provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For the on-premises platform, see [Visual Studio Team Foundation Server Documentation](/vsts/index-tfs).</p>
         <p><i>[What happened to Visual Studio Team Services?](/vsts/user-guide/what-happened-vsts)</i></p>
-        <p style="height: 30px;">&nbsp;</p>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -30,7 +30,7 @@ featureFlags:
                             <li class="fullSpan">
                                 <a href="#index1"></a>
                                 <h2 style="float: left; display: flex;">Start using Azure DevOps Services</h2>
-                                <ul id="index1" class="cardsFTitle cols cols4" style="float: left; display: flex;">
+                                <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/vsts/pipelines/build/ci-build-github">
                                         <div class="cardSize">
@@ -43,6 +43,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Build GitHub projects using Azure Pipelines</h3>
+                                                            <p>Set up continuous integration builds for your GitHub repository.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -61,6 +62,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3><br/>Start using Azure DevOps</h3>
+                                                            <p>Sign up and get started using Azure DevOps Services.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -79,6 +81,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3><br/>What's new</h3>
+                                                            <p>Find out about new features being released. </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -97,70 +100,16 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3><br/>Navigation basics</h3>
+                                                            <p>Learn how to work effectively within the web portal. </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </a>
                                     </li>
-<!---                                    <li>
-                                        <a href="/vsts/boards/get-started">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconBoards40.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Start using Azure Boards</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/repos/get-started">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconRepos40.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Start using Azure Repos</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/pipelines/get-started/pipelines-get-started">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/DevOpsIconPipelines40.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Start using Azure Pipelines</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>  -->
                                 </ul>
                                 <a href="#index3"></a>
-<!---                                <h2 style="float: left; display: flex;">Azure DevOps services</h2>  -->
-                                <ul id="index3" class="cardsA cols cols4" style="float: left; display: flex;"> 
+                                <ul id="index3" class="cardsA panelContent singlePanelContent cols cols3" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/vsts/pipelines/index">
                                             <div class="cardSize">
@@ -219,7 +168,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/index-artifacts">
+                                        <a href="/vsts/artifacts/index-a">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -238,7 +187,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/index-test">
+                                        <a href="/vsts/test/index-tp">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -257,7 +206,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/index-settings">
+                                        <a href="/vsts/organizations/settings/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -277,8 +226,8 @@ featureFlags:
                                     </li>
                                 </ul>
                                 <a href="#index2"></a>
-                                <h3 style="float: left; display: flex;"><i>Create pipelines to build and deploy applications to any platform, cloud, or app store.</i></h3>
-                                <ul id="index2" class="cardsFTitle cols cols4" style="float: left; display: flex;">
+                                <h2 style="float: left; display: flex;">Create pipelines to build and deploy applications to any platform, cloud, or app store.</h2>
+                                <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/vsts/pipelines/languages/android">
                                             <div class="cardSize">
@@ -315,42 +264,7 @@ featureFlags:
                                             </div>
                                         </a>
                                     </li>
-<!---                                    <li>
-                                        <a href="/vsts/pipelines/languages/dotnet-core">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_NETcore.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_NETcore.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_NETcore.svg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>.NET Core</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/pipelines/apps/windows/dot-net">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_NET.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_NET.svg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>.NET Desktop</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li> -->
+
                                     <li>
                                         <a href="/vsts/pipelines/apps/c-cpp/gcc">
                                             <div class="cardSize">
@@ -531,82 +445,10 @@ featureFlags:
                                             </div>
                                         </a>
                                     </li>
-<!---                                    <li>
-                                        <a href="/vsts/pipelines/languages/python">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_python.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_python.svg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Python</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/pipelines/apps/windows/universal">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("media/logo_uwp.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="media/logo_uwp.svg" data-linktype="external" data-hoverimage="media/logo_uwp.svg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>UWP</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/pipelines/languages/xamarin">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xamarin.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Xamarin</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/pipelines/languages/xcode">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card ready x-hidden-focus">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/media/logos/logo_xcode.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/media/logos/logo_xcode.svg">
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Xcode</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li> -->
                                 </ul>
                                 <a href="#index4"></a>
                                 <h2 style="float: left; display: flex;">Analytics and social tools</h2>
-                                <ul id="index4" class="cardsA cols cols4 panelContent singlePanelContent" style="float: left; display: flex;">
+                                <ul id="index4" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
                                         <a href="/vsts/report/dashboards/index">
                                             <div class="cardSize">
@@ -725,7 +567,7 @@ featureFlags:
                                                         <p><a href="/vsts/index-all">Index</a></p>
                                                         <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">DevOps at Microsoft</a></p>
                                                         <p><a href="https://docs.microsoft.com/en-us/azure/devops/learn/">Azure DevOps resource center</a></p>
-                                                        <p><a href="/vsts/index-tfs">TFS administration</a></p>
+                                                        <p><a href="/vsts/index-tfs">TFS Administrator Guide</a></p>
                                                     </div>
                                                 </div>
                                             </div>

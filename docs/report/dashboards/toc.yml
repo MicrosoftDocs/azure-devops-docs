@@ -75,7 +75,7 @@
   - name: Azure Boards
     href: /vsts/boards/index
   - name: Testing
-    href: /vsts/index-test 
+    href: /vsts/test/index-tp 
   - name: Marketplace widgets
     href: https://marketplace.visualstudio.com/search?term=widget&target=VSTS&category=All%20categories&sortBy=Relevance
 

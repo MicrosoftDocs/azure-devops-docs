@@ -14,11 +14,12 @@ ms.date: 09/05/2018
 featureFlags:
 - clicktale 
 ---
+
+<p><a href="/vsts/index">Azure DevOps Services</a>  /  Azure Test Plans</p>
 <div id="main" class="v2">
     <div class="container">
-        <h1>Azure DevOps Settings Documentation</h1>
-        <p>Manage resources for an organization, project, or team. </p>
-        <p style="height: 30px;">&nbsp;</p>
+        <h1>Azure Test Plans Documentation</h1>
+        <p>Improve your overall code quality by using manual and exploratory testing services for your apps.</p>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -28,20 +29,21 @@ featureFlags:
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
                                 <a href="#index1"></a>
-                                <ul id="index1" class="cardsA cols cols4" style="float: left; display: flex;">
+                                <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/organizations/projects/index">
+                                        <a href="/vsts/test/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_management.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_exploratory-testing.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Manage projects</h3>
-                                                            <p>Add, structure, and manage projects to support your organization and teams. </p>
+                                                            <h3>Exploratory &amp; manual testing</h3>
+                                                            <p>Drive quality and collaboration throughout the development process using
+                                                                a rich set of tools.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -49,18 +51,19 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/security/index">
+                                        <a href="/vsts/project/feedback/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_security-management.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_feedback.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Security &amp; identity</h3>
-                                                            <p>Manage permissions and access to your projects and repositories.</p>
+                                                            <h3>Request stakeholder feedback</h3>
+                                                            <p>Request feedback on your working apps and quickly capture it within a
+                                                                work item form.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -68,18 +71,19 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/accounts/index">
+                                        <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_account-management.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_continuous-testing.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Manage organizations</h3>
-                                                            <p>Setup and manage your organization and connection to Azure Active Directory.</p>
+                                                            <h3>Continuous testing</h3>
+                                                            <p>Automate build-deploy-test workflows to test your changes in a fast,
+                                                                scalable, and efficient manner.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -87,18 +91,18 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/settings/work/inheritance-process-model">
+                                        <a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_config-tools.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_unit-testing.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Process customization</h3>
-                                                            <p>Customize work tracking and Agile tools.</p>
+                                                            <h3>Unit &amp; functional testing</h3>
+                                                            <p>Maintain code health, avoid regressions, and achieve code coverage using Visual Studio.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -106,18 +110,18 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/settings/scale/index">
+                                        <a href="/vsts/test/load-test/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_configure-teams.svg" alt="" />
+                                                                <img src="/vsts/_img/index/i_load-testing.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Scale & configure team</h3>
-                                                            <p>Add teams and team administrators; configure team settings.</p>
+                                                            <h3>Load testing</h3>
+                                                            <p>Performance test your code with hundreds of thousands of users.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -125,94 +129,18 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/billing/index">
+                                        <a href="/vsts/organizations/settings/about-settings#test-center">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="_img/index/i_billing.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_tools.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
-                                                            <h3>Billing</h3>
-                                                            <p>Manage subscriptions and extension purchases.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/marketplace/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/i_extensions.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Manage extensions</h3>
-                                                            <p>Install or remove Marketplace extensions.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/notifications/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/i_alert.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Notifications</h3>
-                                                            <p>Manage personal, team, project, or collection-level notifications.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/organizations/public/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_web-color.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Public projects</h3>
-                                                            <p>Create a public project or make a private project public.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/articles/index">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Technical articles</h3>
-                                                            <p>Access white papers on data migration, branching strategies, and continuous integration and delivery.</p>
+                                                            <h3>Settings</h3>
+                                                            <p>Configure test plan policies and permissions.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -222,7 +150,7 @@ featureFlags:
                                 </ul>
                                 <a href="#index2"></a>
                                 <h2 style="float: left; display: flex;">Additional resources</h2>
-                                <ul id="index2" class="cardsL cols cols4" style="float: left; display: flex; width: 100%;">
+                                <ul id="index2" class="cardsL cols cols4" style="float: left; display: flex; width: 100%;"> 
                                     <li>
                                         <div class="cardSize">
                                             <div class="cardPadding">

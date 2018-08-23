@@ -19,7 +19,6 @@ featureFlags:
     <div class="container">
         <h1>Visual Studio Team Foundation Server Documentation</h1>
         <p>Team Foundation Server, the on-premises version of [Azure DevOps Services](index.md), provides integrated tools to support collaborative software development, including Git repositories, continuous integration and deployment, and interactive Kanban boards.</p>
-        <p style="height: 30px;">&nbsp;</p>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -43,6 +42,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Start using TFS</h3>
+                                                            <p>New to TFS? This user guide can help you get started. </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -61,7 +61,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Install guide</h3>
-															<p>Discover the different installation types and which is best for you.</p>
+                                                            <p>Discover the different installation types and which is best for you.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -109,28 +109,9 @@ featureFlags:
                                 </ul>
                                 <a href="#index2"></a>
                                 <h2 style="float: left; display: flex;">Applications</h2>
-                                <ul id="index2" class="cardsA panelContent singlePanelContent cols cols3" style="float: left; display: flex!important;">
+                                <ul id="index2" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/index-boards">
-                                            <div class="cardSize">
-                                                <div class="cardPadding">
-                                                    <div class="card">
-                                                        <div class="cardImageOuter">
-                                                            <div class="cardImage">
-                                                                <img src="_img/index/i_kanban.svg" alt="" />
-                                                            </div>
-                                                        </div>
-                                                        <div class="cardText">
-                                                            <h3>Plan and track work</h3>
-															<p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/vsts/index-repos">
+                                        <a href="/vsts/repos/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -142,6 +123,25 @@ featureFlags:
                                                         <div class="cardText">
                                                             <h3>Code</h3>
 															<p>Use Git repositories, pull requests, and then integrate with CI/CD to build and deploy your apps.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/boards/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="_img/index/i_kanban.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Plan and track work</h3>
+															<p>Plan and track your work using interactive, highly-customizable backlogs and boards.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -168,7 +168,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/package/index">
+                                        <a href="/vsts/artifacts/index-a">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -187,7 +187,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/index-test">
+                                        <a href="/vsts/test/index-tp">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">

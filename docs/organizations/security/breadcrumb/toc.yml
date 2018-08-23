@@ -4,7 +4,7 @@
   items: 
   - name: Settings
     tocHref: /vsts/organizations/
-    topicHref: /vsts/index-settings
+    topicHref: /vsts/settings/index
     items:
     - name: "Security & Identity"
       tocHref: /vsts/

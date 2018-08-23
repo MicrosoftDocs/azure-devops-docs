@@ -4,7 +4,7 @@
   items: 
   - name: Azure Test Plans
     tocHref: /vsts/
-    topicHref: /vsts/index-test
+    topicHref: /vsts/test/index-tp
     items:
     - name: Test
       tocHref: /vsts/
