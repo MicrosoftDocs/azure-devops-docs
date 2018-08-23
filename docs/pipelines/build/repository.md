@@ -61,7 +61,7 @@ You can choose from the following repository types:
 | Git repo in a project    |Yes|Yes|Yes|Yes|
 | Git repo in Bitbucket Cloud   |No|Yes|No|No|
 | Git repo in GitHub            |Yes|Yes|No|No|
-| Git repo in GitHub Enterprise |No|Yes|No|No|
+| Git repo in GitHub Enterprise |No|Yes|TFS 2018.2|No|
 | Git repo (external/remote)    |No|Yes|Yes|Yes|
 | Subversion                    |No|Yes|Yes|No|
 | Team Foundation Version Control (TFVC) repo in a project |No|Yes|Yes|Yes|
