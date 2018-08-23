@@ -19,6 +19,8 @@ monikerRange: 'vsts'
 
 # Invite users to contribute to your public project
 
+[!INCLUDE [temp](_shared/version-public-projects.md)]  
+
 To enable users to contribute to your project, you must add them as a member.
 
 > [!IMPORTANT]

@@ -2,10 +2,6 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Settings
-    tocHref: /vsts/
-    topicHref: /vsts/settings/index
-    items:
-    - name: Public Projects
-      tocHref: /vsts/organizations/public/
-      topicHref: /vsts/organizations/public/index
+  - name: Public Projects
+    tocHref: /vsts/organizations/public/
+    topicHref: /vsts/organizations/public/index
