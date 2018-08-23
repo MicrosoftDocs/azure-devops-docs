@@ -23,7 +23,7 @@ As a project collection administrator, you'll get an email when another project 
 To approve extensions, you must also have [**Edit collection-level information** permissions](../organizations/security/permissions.md#collection).
 
 0.	Go to your Azure DevOps Services or TFS home page, then go to your project:
-    * Azure DevOps Services:```https://{account-name}.visualstudio.com/{team-project}```
+    * Azure DevOps Services:```https://dev.azure.com/{organization}/{project}```
     * TFS: ```https://{server}:8080/tfs/{team-project-collection}/{team-project}```
 
 0.	Manage your extensions:

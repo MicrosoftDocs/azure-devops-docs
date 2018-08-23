@@ -1,5 +1,5 @@
 0. Sign in to your Azure DevOps Services organization 
-(```https://{youraccount}.visualstudio.com```).
+(```https:dev.azure.com/{organization}```).
 
 0.	From your home page, open your profile. 
 Go to your security details.

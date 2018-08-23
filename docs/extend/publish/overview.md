@@ -71,7 +71,7 @@ To share an extension so it can be installed:
   ![Share Extensions](../_img/share-extension.png)
 
 3. Specify the name of the Azure DevOps Services organization to make this extension visible to
-  - For example, to make an extension visible to the fabrikam-fiber-inc.visualstudio.com organization, specify `fabrikam-fiber-inc`.
+  - For example, to make an extension visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
 
 
 

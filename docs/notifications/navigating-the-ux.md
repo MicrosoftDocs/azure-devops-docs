@@ -37,17 +37,17 @@ Permissions to manage notification at each hub default as follows:
 
 Organization:
 ```
-https://{organization}.visualstudio.com/_admin/_notifications
+https://dev.azure.com/{organization}/_admin/_notifications
 ```
 
 Team:
 ```
-https://{organization}.visualstudio.com/{project}/{team}/_admin/_notifications
+https://dev.azure.com/{organization}/{project}/{team}/_admin/_notifications
 ```
 
 Personal:
 ```
-https://{organization}.visualstudio.com/_notifications
+https://dev.azure.com/{organization}/_notifications
 ```
 
 

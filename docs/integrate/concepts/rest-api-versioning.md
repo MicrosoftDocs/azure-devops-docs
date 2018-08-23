@@ -35,7 +35,7 @@ Accept: application/json;api-version=1.0
 
 Query parameter:
 ```no-highlight
-GET https://{account}.visualstudio.com/defaultcollection/_apis/{area}/{resource}?api-version=1.0
+GET https://dev.azure.com/{organization}/_apis/{area}/{resource}?api-version=1.0
 ```
 
 ### Supported versions

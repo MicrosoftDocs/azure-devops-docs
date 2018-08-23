@@ -47,7 +47,7 @@ ListofProjectsResponse.Projects viewModel = null;
 //use the httpclient
 using (var client = new HttpClient())
 {
-    client.BaseAddress = new Uri("https://{accountname}.visualstudio.com");  //url of our account
+    client.BaseAddress = new Uri("https://dev.azure.com/{OrgName}");  //url of your organization
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", credentials); 

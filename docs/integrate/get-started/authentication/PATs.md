@@ -25,7 +25,7 @@ To get started on your app, though, you can authenticate using personal access t
 Here's a sample that gets a list of builds using curl.
 <br/>
 ```
-curl -u username[:{personalaccesstoken}] https://{account}.visualstudio.com/DefaultCollection/_apis/build-release/builds
+curl -u username[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/build-release/builds
 ```
 <br/>
 If you wish to provide the personal access token through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#).  The resulting string can then be provided as an HTTP header in the format:
@@ -54,7 +54,7 @@ public static async void GetBuilds()
 						string.Format("{0}:{1}", "", personalaccesstoken))));
 
 			using (HttpResponseMessage response = client.GetAsync(
-						"https://{account}.visualstudio.com/DefaultCollection/_apis/build-release/builds").Result)
+						"https://dev.azure.com/{organization}/_apis/build-release/builds").Result)
 			{
 				response.EnsureSuccessStatusCode();
 				string responseBody = await response.Content.ReadAsStringAsync();

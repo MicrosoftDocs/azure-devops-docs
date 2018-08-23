@@ -44,7 +44,7 @@ You're ready to start! This tutorial will guide you through the process of publi
 
 First, you need a **gradle.properties** file that contains an Azure DevOps Services credential token.
 
-Navigate to `https://{yourAccount}.visualstudio.com/_details/organizations/security/tokens`, where `{yourAccount}` is the name of your Azure DevOps Services organization.
+Navigate to `https://dev.azure.com/{yourOrganization}/_details/organizations/security/tokens`, where `{yourOrganization}` is the name of your Azure DevOps Services organization.
 
 Click **Add**.
 
@@ -88,7 +88,7 @@ publishing {
     // Repositories *to* which Gradle can publish artifacts 
     repositories { 
         maven { 
-            url 'https://{your-Azure DevOps Services-organization-name-here}.pkgs.visualstudio.com/_packaging/{your-Azure DevOps Services-project-name-here}' 
+            url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
             credentials { 
                 username "Azure DevOps Services" 
                 //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 
@@ -101,7 +101,7 @@ publishing {
 // Repositories *from* which Gradle can download dependencies; it's the same as above in this example
 repositories { 
     maven { 
-        url 'https://{your-Azure DevOps Services-organization-name-here}.pkgs.visualstudio.com/_packaging/{your-Azure DevOps Services-project-name-here}' 
+        url 'https://pkgs.dev.azure.com/{yourOrganizationName}/_packaging/{yourProjectName}' 
         credentials { 
             username "Azure DevOps Services" 
             //The Azure DevOps Services build system will use the "Azure DevOps Services_ENV_ACCCESS_TOKEN" to authenticate to Azure DevOps Services feeds 

@@ -27,8 +27,8 @@ The _Connect to feed_ dialog will generate an appropriately-formatted token that
 3. In your $home/.npmrc add the following lines replacing account, feedname, username, PAT, and email.
 
     ```json
-    //<youraccount>.pkgs.visualstudio.com/_packaging/<yourfeed>/npm/registry/:username=YOUR-USERNAME
-    //<youraccount>.pkgs.visualstudio.com/_packaging/<yourfeed>/npm/registry/:_password=BASE64-ENCODED-PAT-GOES-HERE
-    //<youraccount>.pkgs.visualstudio.com/_packaging/<yourfeed>/npm/registry/:email=YOUREMAIL@EXAMPLE.COM
-    //<youraccount>.pkgs.visualstudio.com/_packaging/<yourfeed>/npm/registry/:always-auth=true
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:username=YOUR-USERNAME
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:_password=BASE64-ENCODED-PAT-GOES-HERE
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:email=YOUREMAIL@EXAMPLE.COM
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:always-auth=true
     ```

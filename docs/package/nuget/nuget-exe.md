@@ -49,7 +49,7 @@ Then, run any [nuget command](https://docs.microsoft.com/en-us/nuget/tools/nuget
 
 ## Download the credential provider directly
 You can download the credential provider directly from this link:
-`https://{account}.pkgs.visualstudio.com/_apis/public/nuget/client/CredentialProviderBundle.zip` 
+`https://pkgs.dev.azure.com/{organizationName}/_apis/public/nuget/client/CredentialProviderBundle.zip` 
 
 ## Advanced credential provider scenarios
 ### Install the credential provider

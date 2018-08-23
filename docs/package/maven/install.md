@@ -44,8 +44,8 @@ monikerRange: '>= tfs-2018'
    <repositories>
     <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
       <repository>
-         <id>mseng-visualstudio.com-zcalvinmaven</id>
-         <url>https://mseng.pkgs.visualstudio.com/_packaging/zCalvinMaven2/maven/v1</url>
+         <id>dev.azure.com-mseng-zcalvinmaven</id>
+         <url>https://dev.azure.com/mseng/_packaging/zCalvinMaven2/maven/v1</url>
          <releases>
             <enabled>true</enabled>
          </releases>
@@ -57,8 +57,8 @@ monikerRange: '>= tfs-2018'
    <distributionManagement>
     <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
       <repository>
-         <id>mseng-visualstudio.com-zcalvinmaven</id>
-         <url>https://mseng.pkgs.visualstudio.com/_packaging/zCalvinMaven2/maven/v1</url>
+         <id>dev.azure.com-mseng-zcalvinmaven</id>
+         <url>https://dev.azure.com/mseng/_packaging/zCalvinMaven2/maven/v1</url>
          <releases>
             <enabled>true</enabled>
          </releases>

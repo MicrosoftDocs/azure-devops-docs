@@ -29,7 +29,7 @@ To talk to Azure DevOps Services feeds, you'll need a token on your local machin
   <servers>
     <!-- Copy this section from the Maven section of the "Connect to Feed" dialog" -->
     <server>
-      <id>yourAccount-visualstudio.com-yourFeedName</id>
+      <id>dev.azure.com-yourFeedName</id>
       <configuration>
         <httpHeaders>
           <property>

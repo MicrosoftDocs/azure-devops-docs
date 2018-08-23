@@ -69,7 +69,7 @@ public class CreateBug
     /// </summary>
     public CreateBug()
     {
-        _uri = "https://accountname.visualstudio.com";
+        _uri = "https://dev.azure.com/{orgName}";
         _personalAccessToken = "personal access token";
         _project = "project name";
     }
