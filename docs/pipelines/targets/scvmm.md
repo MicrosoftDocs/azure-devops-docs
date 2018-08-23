@@ -98,8 +98,6 @@ One of the common actions that you can perform with every build is to create a n
 * **Network Virtualization**: Set this option to enable network virtualization for your virtual machines. For more information, see [Create a virtual network isolated environment](create-virtual-network.md).
 * **Show minimal logs**: Set this option if you don't want to create detailed live logs about the VM provisioning process.
 
-![Task configuration for create new virtual machines](_img/scvmm/scvmm-create-vm-using-template.png)
-
 <a name="delete"></a>
 ## Delete virtual machines
 
@@ -111,8 +109,6 @@ After validating your build, you would want to delete the virtual machines that 
 * **VM Names**: Enter the name of the virtual machine, or a comma-separated list of the virtual machine names. Example `FabrikamDevVM,FabrikamTestVM`
 * **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
-
-![Task configuration for deleting a virtual machine](_img/scvmm/scvmm-delete-vm.png)
 
 <a name="startstop"></a>
 ## Start and stop virtual machines
@@ -126,8 +122,6 @@ You can start a virtual machine prior to deploying a build, and then stop the vi
 * **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
 * **Wait Time**: The time to wait for the virtual machine to reach ready state.
- 
-![Task configuration for start and stop virtual machines](_img/scvmm/scvmm-start-vm.png)
 
 <a name="checkpoint"></a>
 ## Create, restore, and delete checkpoints
@@ -143,8 +137,6 @@ A quick alternative to bringing up a virtual machine in desired state prior to r
 * **Select VMs From**: Choose either **Cloud** or **Host** to select the set of virtual machines to which the action will be applied.
 * **Host Name** or **Cloud Name**: Depending on the previous selection, enter either a cloud name or a host machine name.
 
-![Task configuration for create, restore, and delete checkpoint](_img/scvmm/scvmm-create-checkpoint.png)
-
 <a name="runscript"></a>
 ## Run custom PowerShell scripts for SCVMM
 
@@ -158,8 +150,6 @@ For functionality that is not available through the in-built actions, you can ru
 * **Inline Script**: If you selected **Inline Script**, enter the PowerShell script lines to execute.
 * **Script Arguments**: Enter any arguments to be passed to the PowerShell script. You can use either ordinal parameters or named parameters.
 * **Working folder**: Specify the current working directory for the script when it runs. The default if not provided is the folder containing the script.
-
-![Task configuration for running a PowerShell script for SCVMM](_img/scvmm/scvmm-powershell-script.png)
 
 ## Deploying build to virtual machines
 

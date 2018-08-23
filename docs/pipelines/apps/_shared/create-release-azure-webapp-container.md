@@ -4,13 +4,7 @@ ms.topic: include
 
 ## Create a release pipeline
 
-1. In the **Pipelines** hub, open the build summary for your build.
-
-   ![Opening the build summary](_img/open-build-summary.png)
-
-1. In the build summary page, choose the **Release** icon to start a new release pipeline.
-
-   ![Starting a new release pipeline from a build summary](_img/release-from-build-summary.png)
+1. In the **Pipelines** hub, open the build summary for your build and choose **Release** to start a new release pipeline.
 
    If you have previously created a release pipeline that uses these build artifacts, you will
    be prompted to create a new release instead. In that case, go to the **Releases** tab page and
@@ -18,16 +12,12 @@ ms.topic: include
 
 1. Select the **Azure App Service Deployment** template and choose **Apply**.
 
-   ![Adding the App Service Deployment task](_img/add-app-service-task.png)
-
 1. Open the **Tasks** tab and select the **Stage 1** item.
    Configure the linked properties as follows:
 
    - **Azure Subscription**: Select a connection from the list under **Available Azure Service Connections** or create a more restricted permissions connection to your Azure subscription.
      If you are using Azure Pipelines and if you see an **Authorize** button next to the input, click on it to authorize Azure Pipelines to connect to your Azure subscription. If you are using TFS or if you do not see
      the desired Azure subscription in the list of subscriptions, see [Azure Resource Manager service connection](../../library/connect-to-azure.md) to manually set up the connection.
-
-     ![Authorizing an Azure subscription](_img/authorize-azure-subscription-in-new-release-definition.png)
 
    - **App type**: Select **Linux App**.  
 

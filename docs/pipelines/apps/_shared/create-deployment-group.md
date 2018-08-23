@@ -30,5 +30,3 @@ Deployment groups in Azure Pipelines make it easier to organize the servers that
 1. When the script is done, it displays the message *Service vstsagent.account.computername started successfully*.
 
 1. On the **Deployment groups** page of the **Pipelines** hub in Azure Pipelines, open the *myIIS* deployment group. On the **Targets** tab, verify that your VM is listed.
-
- ![Screenshot showing update to code](./_img/windows-deployment-group.png)

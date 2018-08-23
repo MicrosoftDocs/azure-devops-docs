@@ -63,7 +63,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
      ![Creating a new release pipeline in the Releases page](../_shared/_img/release-from-release-page.png)
 
-1. Choose **Start with an empty pipeline**.
+1. Choose **Start with an Empty job**.
 
 1. If you created your new release pipeline from a build summary, check that the build pipeline and artifact
    is shown in the **Artifacts** section on the **Pipeline** tab. If you created a new release pipeline from

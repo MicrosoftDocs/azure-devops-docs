@@ -68,7 +68,7 @@ In this section, you will check that the triggers you need for continuous deploy
    For more information, see [Release triggers](triggers.md).
 
 1. Choose the **Pre-deployment conditions** icon in the **Stages** section to open the conditions panel.
-   Make sure that the trigger for deployment to this stage is set to **Release**.
+   Make sure that the trigger for deployment to this stage is set to **After release**.
    This means that a deployment will be initiated automatically when a new release is created from this release pipeline.   
 
    ![Viewing the stage trigger setting](_img/define-multistage-release-process/environment-trigger.png)
@@ -124,12 +124,12 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    [fork and join deployments](triggers.md) that deploy to different stages in parallel.  
 
 1. Open the **Tasks** drop-down list and choose the **QA** stage.
+   Recall that this stage is a clone of the original **Production** stage in the release pipeline.
+   Therefore, currently, it will deploy the app to the same target as the **Production** stage.
 
    ![Open the tasks pane for the QA stage](_img/define-multistage-release-process/open-qa-tasks.png)
 
-1. Recall that this stage is a clone of the original **Production** stage in the release pipeline.
-   Therefore, currently, it will deploy the app to the same target as the **Production** stage. Depending on the
-   tasks that you are using, change the settings so that this stage deploys to your "QA" target. In our example,
+1. Depending on the tasks that you are using, change the settings so that this stage deploys to your "QA" target. In our example,
    using Azure App Services websites, we just need to select the **Deploy Azure App Service** task and select the "QA"
    website instead of the "Production" website.
 
@@ -149,17 +149,17 @@ you want the deployment to pause after _successful_ deployment to the test websi
 you deploy to production. In this section, you will add an approval step to the release pipeline to achieve this.
 
 1. Back in the **Pipeline** tab of the release pipeline, choose the **Pre-deployment conditions** icon in the **Stages** section
-   to open the conditions panel. Scroll down to the **Pre-deployment approvers** section and enable pre-deployment approvals.
+   to open the conditions panel. Scroll down to the **Pre-deployment approvers** section and enable pre-deployment approvers.
 
    ![Viewing the pre-deployment approvers settings](_img/define-multistage-release-process/open-approvers.png)
 
-1. In the **Approvers** section, choose your organization from the list. You
+1. In the **Approvers** section, choose your user(s) from the list. You
    can type part of a name to search for matches. Also make sure you clear (untick) the checkbox 
    **User requesting a release...** so that you can approve your own releases.
 
    ![Selecting the pre-deployment approvers](_img/define-multistage-release-process/select-approvers.png)
 
-   You can add as many approvers as you need, both individual accounts and organization groups.
+   You can add as many approvers as you need, both individual users and organization groups.
    It's also possible to set up post-deployment approvals by choosing the icon at the right side of the stage item in the pipeline diagram.
    For more information, see [Approvals and gates overview](approvals/index.md).
 
@@ -188,10 +188,8 @@ the source code will start a new build and, from that, a new release. However, i
    ![The link to the newly created release](_img/define-multistage-release-process/release-link.png)
 
 1. The release summary page opens showing details of the release. In the **Stages** section,
-   you will see the deployment status for the "QA" stage change from "IN PROGRESS" to "SUCCEEDED" and, at that point,
-   a banner appears indicating that the release is now waiting for approval.
-   When a deployment to a stage is pending or has failed, a blue (i) information icon is shown.
-   Point to this to see a pop-up containing the reason.
+   you will see the deployment status for the "QA" stage change to "Succeeded" and, at that point,
+   an icon appears indicating that the release is now waiting for approval.
 
    ![Release summary showing link for approval](_img/define-multistage-release-process/approval-waiting.png)
 
@@ -201,7 +199,7 @@ the source code will start a new build and, from that, a new release. However, i
 
    ![Release list showing link for approval](_img/define-multistage-release-process/list-approval-waiting.png)
 
-1. Choose the **Approve or Reject** link to open the approval dialog. Enter a brief note about the
+1. Choose the icon or link to open the approval dialog. Enter a brief note about the
    approval, and choose **Approve**.
 
    ![Approving the release](_img/define-multistage-release-process/approve-dialog.png)
@@ -215,40 +213,21 @@ the source code will start a new build and, from that, a new release. However, i
 In this section, you will see how you can monitor and track deployments - in this example to two Azure App Services websites -
 from the release you created in the previous section.
 
-1. In the release summary page, choose the **Logs** link. While the deployment is taking place,
-   this page shows the live log from the agent and, in the left pane, an indication of the status
-   of each operation in the deployment pipeline for each stage.
+1. In the release summary, hover over a stage and choose the **Logs** link that appears.
 
-   ![Viewing the live deployment log](_img/define-multistage-release-process/live-logs-deployment.png)
+   ![Viewing the live deployment log](_img/define-multistage-release-process/open-logs-page.png)
 
-   >Choose the icon in the **Action** column for a pre-deployment or post-deployment approval to see details
-   of who approved (or rejected) the deployment, and the message that user provided.
-
-1. After the deployment is complete, the entire log file is displayed in the right pane.
-   Select any of the pipeline steps in the left pane to show just the log file contents for that step.
+   While the deployment is taking place, the logs page shows the live log from the agent.
+   After the deployment is complete, links to the logs for each task step are displayed in the right pane.
+   
+1. Select any of the pipeline steps to show just the log file contents for that step.
    This makes it easier to trace and debug individual parts of the overall deployment. Alternatively, download
    the individual log files, or a zip of all the log files, from the icons and links in the page.
 
    ![Viewing and downloading individual log files](_img/define-multistage-release-process/download-logs.png)
 
-1. Open the **Summary** tab to see the overall detail of the release. It shows details of the build and
-   the stages it was deployed to - along with the deployment status and other information about
-   the release.   
-
-   ![Viewing the summary page](_img/define-multistage-release-process/final-summary.png)
-
-1. Select each of the stage links to see more details about
-   existing and pending deployments to that specific stage.
-   You can use these pages to verify that the same build was deployed to both stages.
-
-   ![Viewing details from one stage](_img/define-multistage-release-process/environment-result-details.png)
-
-1. Open the deployed production app in your browse. For example, for an Azure App Services website, from the URL `http://[your-app-name].azurewebsites.net`
-
-   ![Viewing the deployed app in the production stage](_img/define-multistage-release-process/finished-app.png)
-
-If you are having problems with a deployment, you can get more information from the log files by
-[running the release in debug mode](../../pipelines/release/variables.md#debug-mode).
+1. If you are having problems with a deployment, you can get more information from the log files by
+   [running the release in debug mode](../../pipelines/release/variables.md#debug-mode).
 
 ## Next step
 
