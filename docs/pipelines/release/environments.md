@@ -91,7 +91,7 @@ stage. **Queuing policies** give you that control.
 
 The options you can choose for a queuing policy are:
 
-* **Maximum number of deployments that can proceed at one time**:
+* **Number of parallel deployments**:
   Use this option if you dynamically provision new resources
   in your stage and it is physically capable of handling
   the deployment of multiple releases in parallel, but you want
@@ -99,7 +99,7 @@ The options you can choose for a queuing policy are:
 
 * If you specify a maximum number of deployments, two more options appear:
 
-  - **Deploy all of them in order of request**:
+  - **Deploy all in sequence**:
     Use this option if you want to deploy all the releases
     sequentially into the same shared physical resources.
     By deploying them in turn, one after the other, you
@@ -109,7 +109,7 @@ The options you can choose for a queuing policy are:
     also ensure that pre-deployment approval requests for the
     stage are sent out in sequence.
 
-  - **Deploy only the latest request and cancel the older ones**:
+  - **Deploy latest and cancel the others**:
     Use this option if you are producing releases faster
     than builds, and you only want to deploy the latest build.
 
@@ -129,7 +129,7 @@ defined.
   approvers defined, all the five releases will automatically
   be deployed in parallel to this stage).
 
-* If you specify a limit and **Deploy all of them in order of request**,
+* If you specify a limit and **Deploy all in sequence**,
   and the limit has already been reached, the pre-deployment approval for
   release **R1** will be sent out first. After this
   approval is completed, the deployment of release **R1** to the
@@ -140,7 +140,7 @@ defined.
   approval is sent out. The process continues like this for
   all of the releases in turn.
 
-* If you specify a limit and **Deploy only the latest request and cancel the older ones**,
+* If you specify a limit and **Deploy latest and cancel the others**,
   and the limit has already been reached, releases **R2**, **R3**, and **R4** will be
   skipped, and the pre-deployment approval for **R5** in
   the **QA** stage will be sent out immediately
@@ -153,24 +153,14 @@ automation tasks, you can also configure several properties and options
 for a stage in a release pipeline. You can:
 
 * Edit the name of the stage here if required.
-
 * Designate a single user or a single
   group to be the stage owner. Stage owners are
   notified whenever a deployment of a release is completed to that
   stage. Stage owners are not automatically assigned
   any addition permissions.
-
-* Prevent the user who created a release or started the deployment from approving
-  his or her own release. This is often useful to ensure
-  compliance with corporate audit requirements.
-  
-* Force the identity of the user to be re-evaluated
-  before the approval is processed and accepted.
-
 * Delete the stage from the pipeline.
-
+* Change the order of stages.
 * Save a copy of the stage as a template.
-
 * Manage the security settings for the stage.
 
 ![Defining options and policies](_img/environments-03.png)

@@ -62,12 +62,10 @@ meets a wide range or criteria, without requiring user intervention.
    ![Opening the release pipeline](_img/deploy-using-approvals/open-pipeline.png)
 
 1. Choose the pre-deployment conditions icon for the **Production** stage to
-   open the conditions panel. You can see that there is already an approver configured
-   (this was done in the previous tutorial), but gates are disabled.
-   Enable them by using the switch control in the **Gates** section.   
+   open the conditions panel. Enable gates by using the switch control in the **Gates** section.   
 
    ![Enabling release approval gates](_img/deploy-using-approvals/gates-01.png)
-
+ 
 1. To allow gate functions to initialize and stabilize (it may take some time for them
    to begin returning accurate results), you configure a delay before the results
    are evaluated and used to determine if the deployment should be approved or rejected.
@@ -128,7 +126,8 @@ Intervention** task in your pipeline.
    Several tasks, including the **Manual Intervention** task, can be used only in an
    [agentless job](../process/server-phases.md).
 
-1. Choose **+** in the **Agentless job** bar and add a **Manual Intervention** task to the job.
+1. Drag and drop the new agentless job to the start of the QA process, before the existing agent job.
+   Then choose **+** in the **Agentless job** bar and add a **Manual Intervention** task to the job.
 
    ![Adding a Manual Intervention task](_img/deploy-using-approvals/add-maninter-task.png)
 
@@ -141,7 +140,7 @@ Intervention** task in your pipeline.
    that will occur if there is no user response within the timeout period.
    For more details, see [Manual Intervention task](../tasks/utility/manual-intervention.md).
 
-1. Save the release pipeline and start a new release.
+1. Save the release pipeline and then start a new release.
 
    ![Starting a new release](_img/deploy-using-approvals/start-release.png)
 
@@ -158,26 +157,33 @@ granted. The comprehensive logging capabilities provide this information.
 
    ![Opening the release summary](_img/deploy-using-approvals/open-summary.png)
 
-1. Open the **Logs** page. You'll see a live log and status for each step in the release
-   pipeline. After the release is complete, choose the icon in the **Action** column
-   for the **Manual Intervention** task to see details of who approved, when the approval
-   occurred, and the message entered by the approver.  
+1. You'll see the live status for each step in the release pipeline. It indicates that a 
+   manual intervention is pending (this pre-deployment approval was configured in the
+   previous tutorial [Define your multi-stage continuous deployment pipeline](define-multistage-release-process.md)).
+   Choose the **Resume** link.  
 
-   ![Viewing the log for the manual intervention](_img/deploy-using-approvals/view-log-03.png)
+   ![Viewing the status for the manual intervention](_img/deploy-using-approvals/view-log-03.png)
 
-1. The release also required an approval to start deployment to the production stage.
-   Choose the icon in the **Action** column for the **Pre-deployment** condition. Again,
-   you see details of the approval.
+1. You see the intervention message, and can choose to resume or reject the deployment.
+   Enter some text response to the intervention and choose **Resume**.
 
-   ![Viewing the log for the pre-deployment approval](_img/deploy-using-approvals/view-log-01.png)
+   ![Resuming or rejecting the deployment](_img/deploy-using-approvals/view-log-01.png)
+   
+1. Go back to the pipeline view of the release. After deployment to the QA stage succeeds,
+   you see the pre-deployment approval pending message for the **Production** environment.
 
-1. Finally, the release was approved by a gate, which validated the results
-   of a work item query (which would be used to ensure the work required was complete
-   and any bugs reported had been resolved).
-   Choose the icon in the **Action** column for the **Query Work Items** gate. The
-   information panel shows the result at each sample interval when the gate executed the work item query.
+   ![Pre-deployment approval required](_img/deploy-using-approvals/view-log-05.png)
 
-   ![Viewing the log for the approval gate](_img/deploy-using-approvals/view-log-02.png)
+1. Enter your approval message and choose **Approve** to continue the deployment.
+
+   ![Approve the deployment](_img/deploy-using-approvals/view-log-06.png)
+
+1. Go back to the pipeline view of the release. Now you see that the gates are being processed before the release continues.  
+
+   ![Status while executing gates in the deployment](_img/deploy-using-approvals/view-log-04.png)
+
+1. After the gate evaluation has successfully completed, the deployment occurs for the Production stage.
+   Choose the **Production** stage icon in the release summary to see more details of the approvals and gate evaluations.
 
 Altogether, by using a combination of manual approvals, approval gates, and the manual
 intervention task, you've seen how can configure a release pipeline with all the control and
