@@ -15,7 +15,7 @@ ms.date: 07/21/2018
 
 # Navigation basics  
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
 ::: moniker range="vsts"
 The web portal for Azure DevOps Services and Team Foundation Server (TFS) is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on the navigation selected: 

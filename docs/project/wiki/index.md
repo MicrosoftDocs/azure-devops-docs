@@ -1,7 +1,7 @@
 ---
 title: Share information using READMEs or Wikis 
-titleSuffix: VSTS & TFS
-description: Share information using READMEs or Wikis in Visual Studio Team Services & Team Foundation Server  
+titleSuffix: Azure DevOps & TFS
+description: Share information using READMEs or Wikis in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-collab
 ms.prod: devops
 ms.topic: overview
@@ -15,16 +15,17 @@ monikerRange: '>= tfs-2015'
 
 # READMEs & Wikis  
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
 
-Repository README files and wikis are great ways to share information with your team and stakeholders. 
+Wikis and repository README files are great ways to share information with your team and stakeholders. 
 
-::: moniker range=">=tfs-2015 <= tfs-2018"
-
+::: moniker range="tfs-2018"
 > [!NOTE]  
 > **Feature availability:** The built-in wiki is available for TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/news/releasenotes/tfs2018-relnotes). 
-
 ::: moniker-end
+
+<br/>
+> [!VIDEO https://www.youtube.com/embed/BdtlTJM6LpM?start=0]
 
 ## 5-Minute Quickstarts  
 
@@ -89,7 +90,4 @@ Repository README files and wikis are great ways to share information with your 
 ## Resources 
 
 - [Dashboards](../../report/dashboards/index.md)
-- [Work Items](../../boards/work-items/index.md)
-
-## Videos 
-> [!VIDEO https://www.youtube.com/embed/BdtlTJM6LpM?start=0]
+- [Manage projects](../../organizations/projects/index.md)

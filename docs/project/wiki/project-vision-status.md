@@ -1,7 +1,7 @@
 ---
 title: Share your project vision, view project activity 
-titleSuffix: VSTS & TFS 
-description: View or update your project home page to share project vision, objectives, and activity for Visual Studio Team Services or Team Foundation Server   
+titleSuffix: Azure DevOps & TFS 
+description: View or update your project home page to share project vision, objectives, and activity for Azure DevOps Services or Team Foundation Server   
 ms.topic: quickstart
 ms.technology: devops-collab
 ms.prod: devops
@@ -14,14 +14,14 @@ ms.date: 03/22/2017
 
 # Share your project vision, view project activity   
 
-**VSTS | TFS 2018 | TFS 2017 | TFS 2015**  
+[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)] 
 
-You can quickly get started with a team project from the project page. You can share your project vision with your team, add team members, and check the latest activity. Use this page to leverage all the built-in DevOps functionality of VSTS and to perform the following activities:
+You can quickly get started with a team project from the project page. You can share your project vision with your team, add team members, and check the latest activity. 
 
-  
 > [!NOTE]    
 > The features and functions available from your project page depend on the source control&#151;Git or Team Foundation Version Control (TFVC)&#151;that you selected when you [created your team project](../../organizations/projects/create-project.md).  
 
+Use this page to leverage all the built-in DevOps functionality of Azure DevOps and to perform the following activities.
 
 > [!div class="mx-tdCol2BreakAll"]
 > |Git repository   |TFVC repository   |  
@@ -33,7 +33,7 @@ You can quickly get started with a team project from the project page. You can s
 ::: moniker range="tfs-2017"
 
 > [!NOTE]   
-> **Feature availability**: The project page described in this topic is available for TFS 2017.1 and later versions. It replaces the [Welcome page](#welcome-pages) used in TFS 2017 and earlier versions. 
+> **Feature availability**: The project page described in this article is available for TFS 2017.1 and later versions. It replaces the [Welcome page](#welcome-pages) used in TFS 2017 and earlier versions. 
 
 ::: moniker-end
 
@@ -45,29 +45,47 @@ You can quickly get started with a team project from the project page. You can s
 
 
 ## Open the project home page
-From your web browser, open the team project drop down menu and select the home page. If you don't have a team project yet, [create one in VSTS](../../user-guide/sign-up-invite-teammates.md)<!---or set one up in an [on-premises TFS](../../organizations/projects/create-project.md)-->.   
+
+[!INCLUDE [temp](../../_shared/new-navigation.md)]  
+
+# [New navigation](#tab/new-nav)  
+
+::: moniker range="vsts"  
+  
+From your web browser, choose **Overview>Summary**. If you don't have a  project, [create a team project](../../organizations/projects/create-project.md).   
+
+> [!div class="mx-imgBorder"]  
+> ![Open project summary page, new nav](_img/share-project/open-projects-page-vert-brn.png) 
+
+::: moniker-end    
+
+::: moniker range=">= tfs-2015 <= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
+
+# [Previous navigation](#tab/previous-nav)
+From your web browser, open the team project drop down menu and select the home page. f you don't have a  project, [create a team project](../../organizations/projects/create-project.md).   
 
 <img src="_img/project-vision-status-project-home-page.png" alt="Open the Project Home Page" style="border: 2px solid #C3C3C3;" />
 
-<!--- <b>https://<i>AccountName</i>.visualstudio.com/<i>ProjectName</i></b>
--->  
+---
 
 ## Get started with a new team project 
 
 Upon [adding another team project](../../organizations/projects/create-project.md) to your account or collection, you'll see the get started page. This page guides you to get started quickly by adding code to your repository when you choose one of the options to clone, push, import, or simply initialize a repo. You can easily get started by adding members, setting up builds, or adding work from this page.
 
 
-# [Git repository](#tab/git)
+### Git repository 
 
-<img src="_img/project-home-page-get-started-info.png" alt="Git new project" style="border: 1px solid #C3C3C3;" />       
+> [!div class="mx-imgBorder"]  
+> ![Git new project summary page](_img/project-home-page-get-started-info.png)
 
-# [TFVC repository](#tab/tfvc)
+### TFVC repository 
 
-<img src="_img/project-home-page-1.png" alt="TFVC new project" style="border: 1px solid #C3C3C3;" />       
+> [!div class="mx-imgBorder"]  
+> ![TFVC new project summary page](_img/project-home-page-1.png) 
 
----
-
-##Share your project vision
+## Share your project vision
 
 You can share your project vision and objective, as well as ways for team members to contribute to the project through a Project readme. 
 
@@ -107,8 +125,9 @@ Here's an example of a Welcome page:
 
 1. You can start editing directly from the Welcome page.
 
-	<img src="_img/markdown-welcome-page-edit.png" alt="Web portal, Project page, Edit Welcome Markdown page" style="border: 1px solid #C3C3C3;" />     
-	
+	> [!div class="mx-imgBorder"]  
+	> ![Project page, Edit Welcome Markdown page](_img/share-project/markdown-welcome-page-edit.png)
+
 	To edit a page, you must be a contributor to the repository or branch or have the Contribute permissions set to allow.  
 
 2. To add another page, simply enter a link to a new Markdown file that doesn't yet exist, for example:
@@ -121,32 +140,46 @@ Here's an example of a Welcome page:
 ### Location of the Welcome pages
 The Welcome page corresponds to the README.md file defined in the Git repository or TFVC project folder (i.e. $/TeamProject/ReadMe.md). Additional pages you create show up in the same location.
 
-<img src="_img/markdown-multiple-pages-explorer-view.png" alt="Web portal, Code hub, Markdown pages in the repository" style="border: 1px solid #C3C3C3;" />      
-
 You can edit and manage these files in the same way you manage all other files under source control. 
 
-# [Git repository](#tab/git)
+# [New navigation](#tab/new-nav)  
+
+::: moniker range="vsts" 
+> [!div class="mx-imgBorder"]  
+> ![README file location, new navigation](_img/share-project/readme-file-location-vert.png)  
+::: moniker-end    
+
+::: moniker range=">= tfs-2015 <= tfs-2018"    
+[!INCLUDE [temp](../../_shared/new-navigation-not-supported.md)]  
+::: moniker-end    
+
+# [Previous navigation](#tab/previous-nav)
+
+![Code>Files, Location of README Markdown pages in the repository](_img/markdown-multiple-pages-explorer-view.png)  
+
+---
+
+### Git repository 
 
 <img src="_img/project-home-page-get-started-info.png" alt="Git new project" style="border: 1px solid #C3C3C3;" />       
 
 
 For Git projects, the README.md file needs to be at the root of each repository in the default branch. For Git based projects the left pane supports navigation to other repositories. A separate Welcome page/README.md file can be created for each repository.  
 
-# [TFVC repository](#tab/tfvc)
+### TFVC repository  
 For TFVC projects the README.md file needs to be at the root of your team project folder (i.e. $/TeamProject/README.md). 
 
 Any additional Markdown files you have (ones with a *.md extension) in the root of the project folder will also show up in the left pane for easy navigation between them so you can provide additional information.  
-
---- 
 
 
 ## Change the repository used
 
 You can change the repository used to support your project vision, including pointing it to the home page of your [built-in Wiki](add-edit-wiki.md).
 
-0. From your project home page, click **Change**. 
+0. From your project home page, choose **Change**. 
 
-	<img src="_img/share-project/change-repo.png" alt="Web portal, Project page, Change repo" style="border: 1px solid #C3C3C3;" />     
+	> [!div class="mx-imgBorder"]  
+	> ![Project page, Change repo](_img/share-project/markdown-welcome-page-change-location.png)  
 
 	If you don't see the **Change** link, then you're not a member of the Project Administrators group. [Get added as an admin](../../organizations/security/set-project-collection-level-permissions.md) in order to proceed.
 

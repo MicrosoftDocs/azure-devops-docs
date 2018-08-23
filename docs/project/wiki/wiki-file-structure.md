@@ -1,7 +1,7 @@
 ---
 title: Wiki repository files, structure, & conventions
-titleSuffix: VSTS & TFS 
-description: Understand the file conventions of the Git repository wiki in Visual Studio Team Services
+titleSuffix: Azure DevOps & TFS 
+description: Understand the file conventions of the Git repository wiki in Azure DevOps Services 
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -38,6 +38,7 @@ The wiki repository contains the following files and folders:
 - A file labeled *.order* at the root and under each folder  
 
 <a id="file-naming" />
+<a id="page-title-names"></a>
 ## File naming conventions 
 
 Each file follows the convention of inserting dashes for a space in the page title. For example, the "How to contribute" page title corresponds to **How-to-contribute.md** file name.  
@@ -52,10 +53,6 @@ Each **.order** file defines the sequence of pages contained within the folder.
 - A root .order file specifies the sequence of pages defined at the root level
 - A .order file within each folder defines the sequence of sub-pages added to a parent page.
 
-<a id="page-title-names"></a>
-## Naming restrictions on Wiki markdown page titles
-
-[!INCLUDE [temp](./_shared/wiki-naming-conventions.md)]
 
 ## Related articles
 - [Differences between provisioned wiki and publish code as wiki](provisioned-vs-published-wiki.md)
