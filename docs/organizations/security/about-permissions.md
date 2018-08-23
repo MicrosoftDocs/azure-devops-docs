@@ -65,11 +65,12 @@ then the parent node is not inherited, regardless of whether it is denied or all
 If it's not set, then the permissions for that node are inherited from the closest ancestor
 that has the permission explicitly set.
 
-To understand why a permission is inherited, you can pause over the permission setting, and then choose **Why?**.
+To understand why a permission is inherited, you can pause over a permission setting, and then choose **Why?** To open a  **Security** page, see [View permissions](view-permissions.md).
 
 ::: moniker range=">= tfs-2017"
 
-![Permissions, Why link](_img/about-permissions-why.png)
+> [!div class="mx-imgBorder"]  
+> ![Permissions, Why link](_img/about-permissions-why.png)
 
 A new window opens that shows the inheritance information for that permission.  
 

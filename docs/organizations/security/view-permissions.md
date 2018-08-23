@@ -18,7 +18,7 @@ ms.date: 07/27/2018
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
 
-You can view your permissions or those defined for another which have been set in Azure DevOps Services or Team Foundation Server (TFS). That way, if you don't have the permission to access a feature or function, you can request it from the right resource.
+You can view your permissions or those defined for another which have been set in Azure DevOps Services or Team Foundation Server (TFS). That way, if you don't have a permission to access a feature or function, you can request it from the right resource.
 
 Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
@@ -28,7 +28,7 @@ Permissions are set at the collection, project, and object level as described in
 * You must be a member of the Project Valid Users Group or Project Collection Valid Users Group to view permissions.
 
 > [!NOTE]
-> This article shows how to view permissions assigned to a user as the project-level. However, the steps are similar whether you work from the Security dialog of an object or at the organization or collection-level.
+> This article shows how to view permissions assigned to a user as the project-level or collection-level. However, the steps are similar when you work from the Security dialog of an object.
 
 ## View project-level permissions
 
@@ -158,9 +158,9 @@ You can define the security or permissions for a number of objects. You access t
 From the web portal, open the Security dialog for the object whose permissions you want to set. For specific instructions, see the following articles: 
 
 > [!div class="mx-tdBreakAll"]  
-> |Wiki & Dashboard permissions | DevOps permissions  |Agile/Work tracking permissions |  
+> |Wiki & Dashboard  | DevOps   |Work tracking  |  
 > |-------------|----------|---------|   
-> |- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [Dashboards](../../report/dashboards/dashboard-permissions.md)<br/> |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repository](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Release pipeline security](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md) |- [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plan permissions](set-permissions-access-work-tracking.md#plan-permissions)|  
+> |- [README & Wiki](../../project/wiki/manage-readme-wiki-permissions.md)<br/>- [Dashboards](../../report/dashboards/dashboard-permissions.md)<br/> |- [Git branch](../../repos/git/branch-permissions.md)<br/>- [Git repository](set-git-tfvc-repository-permissions.md)<br/>- [TFVC](set-git-tfvc-repository-permissions.md)<br/>- [Builds](../../pipelines/policies/set-permissions.md)<br/>- [Release pipeline security](../../pipelines/policies/set-permissions.md)<br/>- [Approvals and approvers](../../pipelines/release/approvals/index.md) |- [Area and iteration paths](../../organizations/security/set-permissions-access-work-tracking.md)<br/>- [Work item query and folder](../../boards/queries/set-query-permissions.md)<br/>- [Plans](set-permissions-access-work-tracking.md#plan-permissions)|  
 
 
 ## Next steps

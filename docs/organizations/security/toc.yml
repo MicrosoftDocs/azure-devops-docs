@@ -47,7 +47,7 @@
   - name: Security glossary 
     href: security-glossary.md
   - name: Resources granted to project members
-    href: ../accounts/resources-granted-to-project-members.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json    
+    href: ../accounts/resources-granted-to-project-members.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
 - name: How-to Guides
   items:
   - name: Add users to your account
