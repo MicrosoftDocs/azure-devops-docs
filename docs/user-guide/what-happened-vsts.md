@@ -23,9 +23,17 @@ On September 5th, 2018, Visual Studio Team Services was rebranded as "Azure DevO
 | Test                | Azure Test Plans     |
 | Package (extension) | Azure Artifacts      |
 
-Each service can be acquired separately, or together as Azure DevOps Services. Since you are already a VSTS subscriber, you have access to all of the services.
+Each service can be acquired separately, or together as Azure DevOps Services. If you are already a VSTS subscriber, you have access to all of the services.
 
 Follow the [Azure DevOps Release Notes](/vsts/release-notes/index) to get news on the latest updates!
+
+## I am using visualstudio.com for my VSTS organization. Do I have to use dev.azure.com now?
+
+Although the service URLs for Azure DevOps are now `https://dev.azure.com/{your organization}/{your project}`, Microsoft will support servicing from the `visualstudio.com` domain ('https://{your organization}.visualstudio.com/{your project}') for some time after **September 5, 2018**. You can continue to access your organization and projects through visualstudio.com until some to-be-determined date.
+
+ We will post news about this transition on the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/devops/) and in the [Azure DevOps release notes](https://docs.microsoft.com/en-us/vsts/release-notes/index).
+
+We will also update this page as status changes.
 
 ## I preferred the old user interface. How do I go back?
 
