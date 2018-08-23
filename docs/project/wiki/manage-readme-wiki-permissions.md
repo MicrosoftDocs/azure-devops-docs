@@ -1,7 +1,7 @@
 ---
 title: Manage permissions for READMEs and wiki pages
-titleSuffix: VSTS & TFS 
-description: Set permissions to grant or secure access to readme files and you team project built-in wiki in Visual Studio Team Services & Team Foundation Server   
+titleSuffix: Azure DevOps Services & TFS 
+description: Set permissions to grant or secure access to readme files and you team project built-in wiki in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-collab
 ms.custom: wiki
 ms.prod: devops
@@ -17,15 +17,10 @@ monikerRange: '>= tfs-2017'
 
 # Manage README and Wiki permissions 
 
-**VSTS | TFS 2018 | TFS 2017**
+**Azure DevOps Services | TFS 2018 | TFS 2017**
 
 By default, all members of the Contributors group can edit README files and Wiki pages. 
 
-> [!NOTE]  
-> **Feature availability**: The built-in wiki is available with VSTS and TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/news/releasenotes/tfs2018-relnotes).    
-
->[!NOTE]  
->Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) have read-only permissions to wiki pages in private projects. These permissions can't be changed. They have full access to Wikis in public projects.
 
 <a id="manage-readme-permissions"></a>
 
@@ -34,13 +29,23 @@ By default, all members of the Contributors group can edit README files and Wiki
 You manage the permissions for README files by [setting permissions on the repository](../../organizations/security/set-git-tfvc-repository-permissions.md). 
 
 
+
+
 ::: moniker range=">= tfs-2018"
 <a id="manage-wiki-permissions"></a>
 
 ## Manage wiki permissions   
 By default, all project contributors have read and edit access of the wiki repository. You can grant or restrict access to who can read and edit wiki pages by managing the wiki repository permissions.  
+::: moniker-end 
 
-To open the Security dialog, click **More>Security** on the wiki home page. 
+::: moniker range="tfs-2018"    
+> [!NOTE]  
+> **Feature availability**: The built-in wiki is available with TFS 2018 and later versions. To download TFS 2018, see the [TFS 2018 Release Notes](https://visualstudio.microsoft.com/news/releasenotes/tfs2018-relnotes).    
+::: moniker-end 
+
+::: moniker range=">= tfs-2018"
+
+To open the Security dialog, choose **More>Security** on the wiki home page. 
  
 <img src="_img/wiki/wiki-open-security.png" alt="Wiki, open security" style="border: 1px solid #C3C3C3;" />
 
@@ -56,18 +61,17 @@ If you don't have access to create a wiki page, you need to contact an administr
 
 ## Stakeholder wiki access
 
-Stakeholders in a private project can read wiki pages and view revisions, however they can't perform any edit operations. For example, stakeholders can't create, edit, reorder, or revert changes to pages. They have full access to Wikis in public projects.
+Users with [Stakeholder access](../../organizations/security/get-started-stakeholder.md) in a private project can read wiki pages and view revisions, however they can't perform any edit operations. For example, stakeholders can't create, edit, reorder, or revert changes to pages. These permissions can't be changed. They have full access to Wikis in public projects.
 
 <img src="_img/wiki/wiki-stakeholders.png" alt="Wiki stakeholders cannot edit or create pages" style="border: 1px solid #C3C3C3;" />
 
 ## Q & A
 
-###Q:  Is it possible to grant permissions on a per-page basis?
+###Q: Is it possible to grant permissions on a per-page basis?
 
 **A:** No, permissions to access the wiki are made for all pages and not individual pages. 
 
 ::: moniker-end
-
 
 
 ## Related articles

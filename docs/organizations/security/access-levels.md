@@ -63,13 +63,16 @@ Assign **Stakeholder** access to those users who need to enter bugs, view backlo
 
 See [Stakeholder access](get-started-stakeholder.md#stakeholder-feature-access) for details of features available to stakeholders.
 
+::: moniker range=">= tfs-2017 <= tfs-2018"
 ## VS Enterprise
 
-Assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../../marketplace/how-to/assign-paid-extension-access.md).
+For TFS 2017.2 and later versions, assign **VS Enterprise** to those users for whom you've purchased Visual Studio Enterprise. These include a TFS CAL plus the rights to access VS Enterprise features. (For users with MSDN Platforms subscriptions or Test Professional, assign the Basic access level and the Test Manager extension.) To learn more, see [Assign paid extension access to users](../../marketplace/how-to/assign-paid-extension-access.md). For example, for users with Visual Studio Test Professional or Visual Studio Enterprise, assign them [access to the Test Manager extension](../../marketplace/how-to/assign-paid-extension-access.md).
 
 <!--- **TFS 2017.2** -->
 
 <img src="_img/access-levels-2017-vs.png" alt="VS Enterprise access features" style="border: 1px solid #CCCCCC;" />  
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2017"
 ## Advanced 
@@ -130,7 +133,7 @@ Service accounts don't require a TFS CAL or other purchase.
 
 ::: moniker-end
 
-## Related notes  
+## Related articles  
 
 ::: moniker range="vsts"
 - [Manage users and access](../accounts/add-organization-users-from-user-hub.md)

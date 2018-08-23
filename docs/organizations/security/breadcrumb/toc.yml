@@ -2,9 +2,9 @@
   tocHref: /vsts/
   topicHref: /vsts/index#pivot=services
   items: 
-  - name: Management Tools
+  - name: Settings
     tocHref: /vsts/organizations/
-    topicHref: /vsts/index#devops-services-settings
+    topicHref: /vsts/index-settings
     items:
     - name: "Security & Identity"
       tocHref: /vsts/
