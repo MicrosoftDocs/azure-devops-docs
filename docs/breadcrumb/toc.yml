@@ -5,6 +5,15 @@
   - name: Navigation basics
     tocHref: /vsts/project/navigation/
     topicHref: /vsts/project/navigation/index
+  - name: Wikis
+    tocHref: /vsts/project/wiki/
+    topicHref: /vsts/project/wiki/index
+  - name: Search
+    tocHref: /vsts/project/search/
+    topicHref: /vsts/project/search/index
+  - name: Feedback
+    tocHref: /vsts/project/feedback/
+    topicHref: /vsts/project/feedback/index
   - name: Start using Azure DevOps
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
@@ -109,28 +118,9 @@
     - name: Extend Analytics with OData
       tocHref: /vsts/report/extend-analytics/
       topicHref: /vsts/report/extend-analytics/index
-  - name: Social tools
-    tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-supplemental
-    items:
-    - name: Public projects
-      tocHref: /vsts/organizations/public/
-      topicHref: /vsts/organizations/public/index
-    - name: Notifications
-      tocHref: /vsts/notifications/
-      topicHref: /vsts/notifications/index
-    - name: Wikis
-      tocHref: /vsts/project/wiki/
-      topicHref: /vsts/project/wiki/index
-    - name: Search
-      tocHref: /vsts/project/search/
-      topicHref: /vsts/project/search/index
-    - name: Feedback
-      tocHref: /vsts/project/feedback/
-      topicHref: /vsts/project/feedback/index
   - name: Settings
-    tocHref: /vsts/
-    topicHref: /vsts/settings/index
+    tocHref: /vsts/organizations/settings/
+    topicHref: /vsts/organizations/settings/index
     items:
     - name: Project management
       tocHref: /vsts/organizations/projects/
@@ -144,6 +134,9 @@
     - name: All settings
       tocHref: /vsts/organizations/settings/
       topicHref: /vsts/organizations/settings/index
+    - name: Notifications
+      tocHref: /vsts/notifications/
+      topicHref: /vsts/notifications/index
     - name: "Scale & configure teams"
       tocHref: /vsts/organizations/settings/scale/
       topicHref: /vsts/organizations/settings/scale/index
@@ -172,3 +165,10 @@
     - name: SharePoint Integration
       tocHref: /vsts/report/sharepoint-dashboards/
       topicHref: /vsts/report/sharepoint-dashboards/index
+- name: Azure DevOps Services
+  tocHref: /vsts/
+  topicHref: /vsts/index
+  items:
+  - name: Public Projects
+    tocHref: /vsts/organizations/public/
+    topicHref: /vsts/organizations/public/index

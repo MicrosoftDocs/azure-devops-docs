@@ -3,8 +3,8 @@
   topicHref: /vsts/index
   items: 
   - name: Settings
-    tocHref: /vsts/
-    topicHref: /vsts/settings/index
+    tocHref: /vsts/organizations/
+    topicHref: /vsts/organizations/settings/index
     items:
     - name: Customization
       tocHref: /vsts/reference/
