@@ -25,7 +25,7 @@ monikerRange: '>= tfs-2015'
 
 Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
 
-Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/vsts/package/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/vsts/pipelines/symbols/index).
+Symbol servers enables your debugger to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/azure/devops/package/concepts/symbols); to publish symbols, use this task and see [the walkthrough](/azure/devops/pipelines/symbols/index).
 
 > [!NOTE]
 > This build task works only:

@@ -17,7 +17,7 @@ ms.date: 10/18/2017
 
 [!INCLUDE [](../../package/_shared/availability-symbols.md)]
 
-Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/vsts/package/concepts/symbols); to consume symbols, see [this page for Visual Studio](/vsts/package/symbols/debug-with-symbols-visual-studio) or [this page for WinDbg](/vsts/package/symbols/debug-with-symbols-windbg).
+Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](/azure/devops/package/concepts/symbols); to consume symbols, see [this page for Visual Studio](/azure/devops/package/symbols/debug-with-symbols-visual-studio) or [this page for WinDbg](/azure/devops/package/symbols/debug-with-symbols-windbg).
 
 ## Publish symbols
 In order to publish symbols to the Package Management symbol server in Azure Pipelines, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:

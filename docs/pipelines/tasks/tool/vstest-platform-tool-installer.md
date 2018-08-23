@@ -18,7 +18,7 @@ monikerRange: 'vsts'
 ![](_img/visualstudiotestplatforminstaller.png)
 Acquires the [Microsoft test platform](https://www.nuget.org/packages/Microsoft.TestPlatform/)
 from nuget.org or specified feed and adds it to the tools cache. The installer task satisfies the 'vstest'
-demand and a subsequent [Visual Studio Test task](https://docs.microsoft.com/en-us/vsts/pipelines/tasks/test/vstest?view=vsts)
+demand and a subsequent [Visual Studio Test task](../test/vstest.md)
 in a build or release pipeline can run without needing a full Visual Studio install on the agent machine. 
 
 ## Demands
