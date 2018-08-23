@@ -29,7 +29,7 @@ featureFlags:
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
                                 <a href="#start"> </a>
-                                <h2 style="float: left; display: flex;">User and Administrative Guides</h2>                                
+                                <h2 style="float: left; display: flex;">User and Administrator Guides</h2>                                
                         	    <a href="#index2"></a>
                                 <ul id="index2" class="cardsW cols cols4 panelContent singlePanelContent" style="float: left; display: flex!important;">
                                     <li>
@@ -60,7 +60,7 @@ featureFlags:
 														<p><a href="/vsts/boards/backlogs/index">Backlogs</a></p>
 														<p><a href="/vsts/boards/sprints/index">Sprints (Scrum)</a></p>
 														<p><a href="/vsts/boards/queries/index">Queries</a></p>
-														<p><a href="/vsts/organizations/settings/work/inheritance-process-model">Customization</a></p>
+														<p><a href="/vsts/organizations/settings/work/inheritance-process-model">Process customization</a></p>
 														<p><a href="/vsts/boards/plans/index">Plans (Agile at scale)</a></p>
 														<p><a href="/vsts/project/feedback/index">Request Feedback</a></p>
 													</div>
@@ -92,16 +92,15 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Management tools</h3>
-                                                        <p><a href="/vsts/organizations/settings/index">Project settings</a></p>
+                                                        <p><a href="/vsts/organizations/projects/index">Manage projects</a></p>
 														<p><a href="/vsts/organizations/settings/about-teams-and-settings">Scale &amp; configure teams</a></p>
-														<p><a href="/vsts/organizations/settings/work/inheritance-process-model">Process customization</a></p>
 														<p><a href="/vsts/organizations/security/index">Security &amp; identity</a></p>
-														<p><a href="/vsts/organizations/projects/index">Manage projects</a></p>
+														<p><a href="/vsts/reference/index">Customization</a></p>
 														<p><a href="/vsts/organizations/accounts/index">Manage organizations</a></p>
 														<p><a href="/vsts/billing/index">Billing</a></p>
 														<p><a href="/vsts/notifications/index">Manage notifications</a></p>
 														<p><a href="/tfs/server/index">Team Foundation Server</a></p>
-														<p><a href="/vsts/articles">Technical Articles</a></p>
+														<p><a href="/vsts/articles">Technical articles</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -187,11 +186,11 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Source control</h3>
-                                                        <p><a href="/vsts/repos/git/index">Git Repositories</a></p>
-														<p><a href="/vsts/repos/git/pullrequest">Pull Requests</a></p>
+                                                        <p><a href="/vsts/repos/git/index">Git repositories</a></p>
+														<p><a href="/vsts/repos/git/pullrequest">Pull requests</a></p>
 														<p><a href="/vsts/repos/git/concepts/forks">Forks</a></p>
-														<p><a href="/vsts/repos/git/branch-policies">Branch Policies</a></p>
-														<p><a href="/vsts/repos/tfvc/index">TFVC</a></p>
+														<p><a href="/vsts/repos/git/branch-policies">Branch policies</a></p>
+														<p><a href="/vsts/repos/tfvc/index">Team Foundation version control</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -225,8 +224,8 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>IDEs</h3>
                                                         <p><a href="/visualstudio">Visual Studio</a></p>
-														<p><a href="/vsts/java/vscode-extension">Visual Studio Code</a></p>
-														<p><a href="/vsts/java/index">Visual Studio</a></p>
+														<p><a href="https://code.visualstudio.com/docs">Visual Studio Code</a></p>
+														<p><a href="/vsts/java/index">Java</a></p>
 														<p><a href="/vsts/java/download-intellij-plug-in">IntelliJ</a></p>
 														<p><a href="/vsts/java/download-android-studio-plug-in">Android Studio</a></p>
 														<p><a href="/vsts/java/download-eclipse-plug-in">Eclipse/Team Explorer Everywhere</a></p>
@@ -240,7 +239,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <h3>Azure DevOps project</h3>
+                                                        <h3>Azure DevOps Project</h3>
                                                         <p><a href="/azure/devops-project/azure-devops-project-aspnet-core">ASP.NET Code</a></p>
 														<p><a href="/azure/devops-project/azure-devops-project-nodejs">Node.js</a></p>
 														<p><a href="/azure/devops-project/azure-devops-project-java">Java</a></p>
@@ -264,10 +263,10 @@ featureFlags:
 														<p><a href="/azure/devops/learn/git/what-is-git">What is Git?</a></p>
 														<p><a href="/azure/devops/learn/agile/what-is-agile">What is Agile?</a></p>
 														<p><a href="/azure/devops/learn/agile/what-is-scrum">What is Scrum?</a></p>
-														<p><a href="/azure/devops/learn/agile/scale-agile-large-teams">Scale Agile to Large Teams</a></p>
-														<p><a href="//azure/devops/learn/git/git-at-scale">Git at Scale</a></p>
+														<p><a href="/azure/devops/learn/agile/scale-agile-large-teams">Scale Agile to large teams</a></p>
+														<p><a href="//azure/devops/learn/git/git-at-scale">Git at dcale</a></p>
 														<p><a href="/azure/devops/learn/devops-at-microsoft/">DevOps at Microsoft</a></p>
-														<p><a href="/azure/devops/learn/events-and-talks/">Events and Talks</a></p>
+														<p><a href="/azure/devops/learn/events-and-talks/">Events and talks</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -284,7 +283,7 @@ featureFlags:
 														<p><a href="/vsts/repos/git/command-prompt">Git commands</a></p>
 														<p><a href="/vsts/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a></p>
 														<p><a href="https://docs.microsoft.com/en-us/cli/vsts/overview">CLI</a></p>
-														<p><a href="/vsts/demo-gen">Azure DevOps Demo Generator</a></p>
+														<p><a href="/vsts/demo-gen">Azure DevOps demo generator</a></p>
                                                     </div>
                                                 </div>
                                             </div>
