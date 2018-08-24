@@ -6,6 +6,6 @@
     tocHref: /vsts/organizations/
     topicHref: /vsts/organizations/index
     items:
-    - name: Scale & Configure Teams
+    - name: Scale & configure teams
       tocHref: /vsts/organizations/settings/scale/
       topicHref: /vsts/organizations/settings/scale/index

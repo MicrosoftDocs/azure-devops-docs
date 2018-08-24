@@ -13,11 +13,13 @@ monikerRange: '>= tfs-2013'
 ms.date: 07/27/2018
 ---
 
-# Settings 
+# All settings 
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-Define area and iteration paths, add teams, and configure additional team, project, and organizational-level resources. 
+Define area and iteration paths, add teams, and configure additional team, project, and organizational-level resources. For a comprehensive index of all configurable settings, see [About user, team, project, and collection-level settings](about-settings.md). 
+
+For articles specific to teams, projects, organizations, and billing, see [Scale & configure teams](scale/index.md), [Manage projects](../projects/index.md), [Manage organizations](../accounts/index.md), and [Billing](../billing/index.md).
 
 ## 5-Minute Quickstarts    
 - [Set area paths](set-area-paths.md)

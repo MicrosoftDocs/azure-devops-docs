@@ -128,11 +128,11 @@
     href: /rest/api/vsts/security/permissions 
 - name: Resources
   items:
-  - name: Settings
+  - name: All settings
     href: ../settings/index.md
   - name: Manage organizations 
     href: ../accounts/index.md
   - name: REST API authentication guidance
     href: ../../integrate/get-started/authentication/authentication-guidance.md
-  - name: Technical srticles
+  - name: Technical articles
     href: ../../articles/index.md

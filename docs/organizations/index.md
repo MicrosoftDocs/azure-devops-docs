@@ -203,6 +203,44 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
+                                        <a href="/vsts/service-hooks/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="/vsts/_img/index/i_service-hooks.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Service hooks</h3>
+                                                            <p>Create subscriptions and configure the integration of Azure DevOps Services or TFS with third-party apps.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/vsts/organizations/settings/index">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/common/i_setup.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>All settings</h3>
+                                                            <p>Learn about all settings you can make as an individual, organization owner, or team, project, or collection administrator.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a href="/vsts/articles/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">

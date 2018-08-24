@@ -6,6 +6,6 @@
     tocHref: /vsts/organizations/
     topicHref: /vsts/organizations/index
     items:
-    - name: Settings
+    - name: All settings
       tocHref: /vsts/
       topicHref: /vsts/organizations/settings/index

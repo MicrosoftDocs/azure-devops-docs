@@ -1,5 +1,5 @@
 ---
-title: Scale & Configure Teams
+title: Scale & configure teams
 titleSuffix: Azure DevOps Services & TFS
 description: Add teams and configure and customize team assets to scale your organization 
 ms.technology: devops-settings
@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ms.date: 07/27/2018
 ---
 
-# Scale & Configure Teams 
+# Scale & configure teams 
 
 [!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)] 
 
