@@ -53,7 +53,7 @@
     - name: Code search extension
       href: ../project/search/overview.md
     - name: Package Management extension
-      href: ../package/overview.md
+      href: ../artifacts/overview.md
     - name: Work item search extension
       href: ../project/search/work-item-search.md
   - name: Build extensions

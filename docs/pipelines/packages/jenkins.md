@@ -51,7 +51,7 @@ The sample project is a simple shared library written in C#.
 
 ## Add the Azure Artifacts NuGet tools to your repo
 
-The easiest way to use the Azure Artifacts NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](/azure/devops/package/nuget/bootstrap-nuget) to your project.
+The easiest way to use the Azure Artifacts NuGet service is by adding the [Microsoft.VisualStudio.Services.NuGet.Bootstrap package](/azure/devops/artifacts/nuget/bootstrap-nuget) to your project.
 
 ## Create a package from your project
 
@@ -65,7 +65,7 @@ The easiest way to use the Azure Artifacts NuGet service is by adding the [Micro
 
 
 ## Set up a feed in Azure Artifacts and add it to your project
-* [Create a feed](/azure/devops/package/feeds/create-feed) in your Azure DevOps organization called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
+* [Create a feed](/azure/devops/artifacts/feeds/create-feed) in your Azure DevOps organization called *MyGreatFeed*. Since you're the owner of the feed, you will automatically be able to push packages to it.
 * Add the URL for the feed you just generated to the nuget.config in the root of your repo.
   * Find the `<packageSources>` section of nuget.config.
   * Just before `</packageSources>`, add a line using this template: `<add key="MyGreatFeed" value="{feed_url}" />`. Change `{feed_url}` to the URL of your feed.

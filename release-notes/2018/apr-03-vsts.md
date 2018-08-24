@@ -136,7 +136,7 @@ See the [authoring gate tasks](https://github.com/Microsoft/vsts-tasks/blob/mast
 
 We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple VSTS feeds with npm packages, now you can add one as an upstream source of the other within the same VSTS account. Because npm mostly limits you to a single feed/registry in your project’s configuration, upstream sources give you the flexibility you need to use multiple npm feeds, such as one for each team or product.
 
-We’re also working to enable upstream sources for VSTS NuGet feeds soon. See the [upstream sources](/vsts/package/concepts/upstream-sources) documentation for more information.
+We’re also working to enable upstream sources for VSTS NuGet feeds soon. See the [upstream sources](/vsts/artifacts/concepts/upstream-sources) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Upstream sources list](_img/132_01.png)

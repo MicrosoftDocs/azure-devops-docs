@@ -88,6 +88,6 @@ Now you can open your favorite shell and install packages from the upstream sour
 npm install --save <package>
 ```
 
-See the [npm install docs](../npm/install.md) for more details.
+See the [npm install docs](../get-started-npm.md) for more details.
 
 Remember that you must be a Collaborator, Contributor, or Owner to install new packages from the upstream, as a copy of each upstream package you use is saved to the feed on first use. Packages already saved from an upstream source can be used by Readers.

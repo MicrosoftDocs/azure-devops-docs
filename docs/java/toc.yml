@@ -19,7 +19,7 @@
   - name: Build with Gradle
     href: ../pipelines/apps/java/build-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/pipelines/breadcrumb/toc.json
   - name: Manage Maven packages
-    href: ../package/get-started-maven.md??toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+    href: ../artifacts/get-started-maven.md??toc=/vsts/java/toc.json&bc=/vsts/artifacts/breadcrumb/toc.json
 - name: Hands-on Labs
   href: labs/index.md
   items:
@@ -52,19 +52,19 @@
   - name: Use Maven artifacts
     items:
     - name: Set up authentication
-      href: ../package/maven/pom-and-settings.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+      href: ../artifacts/maven/pom-and-settings.md?toc=/vsts/java/toc.json&bc=/vsts/artifacts/breadcrumb/toc.json
     - name: Publish artifacts with Maven
-      href: ../package/maven/publish.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+      href: ../artifacts/maven/publish.md?toc=/vsts/java/toc.json&bc=/vsts/artifacts/breadcrumb/toc.json
     - name: Install dependencies with Maven
-      href: ../package/maven/install.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+      href: ../artifacts/maven/install.md?toc=/vsts/java/toc.json&bc=/vsts/artifacts/breadcrumb/toc.json
   - name: Use Gradle
     items:
     - name: Install dependencies with Gradle
-      href: ../package/gradle/pull-package-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+      href: ../artifacts/gradle/pull-package-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/artifacts/breadcrumb/toc.json
     - name: Publish artifacts with Gradle
-      href: ../package/gradle/publish-package-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+      href: ../artifacts/gradle/publish-package-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/artifacts/breadcrumb/toc.json
   - name: Use Git Credential Manager
-    href: ../repos/git/set-up-credential-managers.md?toc=/vsts/java/toc.json&bc=/vsts/package/breadcrumb/toc.json
+    href: ../repos/git/set-up-credential-managers.md?toc=/vsts/java/toc.json&bc=/vsts/artifacts/breadcrumb/toc.json
   - name: Add VSCode extension
     href: vscode-extension.md
   - name: Load-test with JMeter

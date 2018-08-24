@@ -83,14 +83,14 @@ When you enable a feature at the organization level, you essentially turn it on 
 - [New Release Definition Editor](../../pipelines/release/define-multistage-release-process.md)  
 - [New Test Plan Experience](https://docs.microsoft.com/vsts/release-notes/2018/jun-19-vsts#test-1)  
 - [New Work Items Hub](../../boards/work-items/view-add-work-items.md)   
-- [NuGet.org upstream sources](../../package/nuget/upstream-sources.md) 
+- [NuGet.org upstream sources](../../artifacts/nuget/upstream-sources.md) 
 - [Out of the box notifications](../../notifications/howto-manage-personal-notifications.md).   
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
 - [Symbol server](../../pipelines/symbols/index.md)  
 - [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
 - [Task tool installers](../../pipelines/process/tasks.md#tool-installers) 
 - [Team expansion for notifications](../../notifications/howto-manage-team-notifications.md)
-- [Updated package experience](../../package/index.md) 
+- [Updated package experience](../../artifacts/index.md) 
 - [Wiki](../wiki/add-edit-wiki.md)  
 
 

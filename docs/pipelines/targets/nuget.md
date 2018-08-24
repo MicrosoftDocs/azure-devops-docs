@@ -123,7 +123,7 @@ In the **NuGet** task, choose **Pack options** and select one of the values for 
 
 ---
 
-While semantic versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that packages once produced are [immutable](/azure/devops/package/feeds/immutability) and so cannot be updated or replaced. When you’re producing a package in build, you can’t know whether it will be the version that you aim to release to your users or just a step along the way towards that release. While none of the following solutions are ideal, you can use one of these depending on your preference:
+While semantic versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that packages once produced are [immutable](/azure/devops/artifacts/feeds/immutability) and so cannot be updated or replaced. When you’re producing a package in build, you can’t know whether it will be the version that you aim to release to your users or just a step along the way towards that release. While none of the following solutions are ideal, you can use one of these depending on your preference:
 
 * Once you validate a package and decide to release it, produce another package without the prerelease label and publish it. The drawback of this approach is that you have to validate the new package again, and it may uncover new issues.
 
@@ -183,4 +183,4 @@ When you push packages to a Package Management feed, you can also [publish symbo
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service
 
-[Package Management in Azure Artifacts and TFS](../../package/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)

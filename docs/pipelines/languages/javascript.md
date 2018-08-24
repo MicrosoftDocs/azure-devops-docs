@@ -185,7 +185,7 @@ Use the [npm](../tasks/package/npm.md) or [npm Authenticate](../tasks/package/np
 ::: moniker range=">= tfs-2018"
 
 If your builds occasionally fail when restoring packages from npm registry due to connection issues,
-you can use Azure Artifacts in conjunction with [upstream sources](../../package/concepts/upstream-sources.md),
+you can use Azure Artifacts in conjunction with [upstream sources](../../artifacts/concepts/upstream-sources.md),
 and cache the packages. The credentials of the build pipeline are automatically used when connecting
 to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service**
 account.
@@ -440,7 +440,7 @@ If you are able to build your project on your development machine, but are havin
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
-[Package Management in Azure Artifacts and TFS](../../package/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)
 
 ### Where can I learn more about tasks?
 

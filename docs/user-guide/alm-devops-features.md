@@ -1030,13 +1030,13 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>What is package management?</b></p>
-<p>Package management helps you [manage code sharing by automating common tasks for discovering, consuming, and sharing components](../package/what-is-packaging.md).</p>
+<p>Package management helps you [manage code sharing by automating common tasks for discovering, consuming, and sharing components](../artifacts/overview.md).</p>
 
 <p><b>Create feeds </b></p>
-<p>[Create feeds](../package/feeds/create-feed.md) to share code through packages.</p>
+<p>[Create feeds](../artifacts/feeds/create-feed.md) to share code through packages.</p>
 
 <p><b>Move existing file shares to the cloud</b></p>
-<p>Eliminate dependencies on on-premises file shares and hosted instances of NuGet.Server by [moving your packages to Azure DevOps Services](../package/nuget/move-from-fileshares.md).</p>
+<p>Eliminate dependencies on on-premises file shares and hosted instances of NuGet.Server by [moving your packages to Azure DevOps Services](../artifacts/nuget/move-from-fileshares.md).</p>
 
 
 
@@ -1044,27 +1044,27 @@ Use features supported by these familiar clients to manage your project and illu
 <td width="33%">
 
 <p><b>Discover and consume packages </b></p>
-<p>[Consume packages](../package/nuget/consume.md) by connecting to a feed.</p>
+<p>[Consume packages](../artifacts/nuget/consume.md) by connecting to a feed.</p>
 
 <p><b>Publish packages to feeds</b></p>
-<p>[Publish packages](../package/nuget/publish.md) to share code with your team and your organization.</p>
+<p>[Publish packages](../artifacts/nuget/publish.md) to share code with your team and your organization.</p>
 
 <p><b>Add identities to your feeds </b></p>
-<p>[Give teams and service identities](../package/feeds/common-identities.md) access to your feeds.</p>
+<p>[Give teams and service identities](../artifacts/feeds/feed-permissions.md) access to your feeds.</p>
 
 
 </td>
 <td width="33%">
 
 <p><b>Bootstrap the developer environment</b></p>
-<p>Increase your team's velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating Azure DevOps Services NuGet into your workflow by [getting the NuGet VSS.PackageManagement.Bootstrap package](../package/nuget/bootstrap-nuget.md).</p>
+<p>Increase your team's velocity and decrease the amount of code duplication across your organization. Access a set of tools and conventions for integrating Azure DevOps Services NuGet into your workflow by [getting the NuGet VSS.PackageManagement.Bootstrap package](../artifacts/nuget/bootstrap-nuget.md).</p>
 
 
 <p><b>Remove a NuGet package from a feed </b></p>
-<p>[Unlist or remove a package](../package/nuget/remove.md) you no longer want users to discover.</p>
+<p>[Unlist or remove a package](../artifacts/nuget/unlist-delete.md) you no longer want users to discover.</p>
 
 <p><b>Secure feeds </b></p>
-<p>Control who can [contribute to or consume from a feed](../package/feeds/feed-permissions.md).</p>
+<p>Control who can [contribute to or consume from a feed](../artifacts/feeds/feed-permissions.md).</p>
 </td>
 </tr>
 </tbody>
@@ -2134,7 +2134,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>[Create and run manual tests](../test/create-a-test-plan.md) and [load tests for your app](../test/load-test/getting-started-with-performance-testing.md).</p>
 
 <p><b>Package (Azure DevOps Services, Preview)</b></p>
-<p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](../package/what-is-packaging.md).</p>
+<p>Share code as binary assets and control dependencies by [subscribing to and working with package management feeds](../artifacts/overview.md).</p>
 
 <p><b>Release (Azure DevOps Services, Preview)</b></p>
 <p>Manage the release of your app by [deploying it to a specific environment for each separate release step](../pipelines/overview.md), and by controlling the process through approvals for each step.</p>

@@ -127,7 +127,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/package/index">
+                                        <a href="/vsts/artifacts/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">

@@ -31,13 +31,13 @@ featureFlags:
                                 <a href="#index1"></a>
                                 <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/package/get-started-nuget">
+                                        <a href="/vsts/artifacts/get-started-nuget">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/package/_img/index/logo_nuget.svg" alt="" />
+                                                                <img src="/vsts/artifacts/_img/index/logo_nuget.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -50,13 +50,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/package/get-started-npm">
+                                        <a href="/vsts/artifacts/get-started-npm">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/package/_img/index/logo_npm.svg" alt="" />
+                                                                <img src="/vsts/artifacts/_img/index/logo_npm.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -69,13 +69,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/package/get-started-maven">
+                                        <a href="/vsts/artifacts/get-started-maven">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/package/_img/index/logo_maven.svg" alt="" />
+                                                                <img src="/vsts/artifacts/_img/index/logo_maven.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -88,7 +88,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/package/overview">
+                                        <a href="/vsts/artifacts/overview">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">

@@ -1,6 +1,251 @@
 {
   "redirections": [
     {
+      "source_path": "docs/package/collaborate-with-packages.md",
+      "redirect_url": "/vsts/artifacts/collaborate-with-packages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/get-started-maven.md",
+      "redirect_url": "/vsts/artifacts/get-started-maven",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/get-started-npm.md",
+      "redirect_url": "/vsts/artifacts/get-started-npm",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/get-started-nuget.md",
+      "redirect_url": "/vsts/artifacts/get-started-nuget",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/index.md",
+      "redirect_url": "/vsts/artifacts/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/install.md",
+      "redirect_url": "/vsts/artifacts/install",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/overview.md",
+      "redirect_url": "/vsts/artifacts/overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/vsts-package-badges.md",
+      "redirect_url": "/vsts/artifacts/vsts-package-badges",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/concepts/best-practices.md",
+      "redirect_url": "/vsts/artifacts/concepts/best-practices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/concepts/feeds.md",
+      "redirect_url": "/vsts/artifacts/concepts/feeds",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/concepts/package-graph.md",
+      "redirect_url": "/vsts/artifacts/concepts/package-graph",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/concepts/symbols.md",
+      "redirect_url": "/vsts/artifacts/concepts/symbols",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/concepts/upstream-sources.md",
+      "redirect_url": "/vsts/artifacts/concepts/upstream-sources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/concepts/views.md",
+      "redirect_url": "/vsts/artifacts/concepts/views",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/feeds/create-feed.md",
+      "redirect_url": "/vsts/artifacts/feeds/create-feed",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/feeds/edit-feed.md",
+      "redirect_url": "/vsts/artifacts/feeds/edit-feed",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/feeds/feed-permissions.md",
+      "redirect_url": "/vsts/artifacts/feeds/feed-permissions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/feeds/immutability.md",
+      "redirect_url": "/vsts/artifacts/feeds/immutability",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/feeds/views.md",
+      "redirect_url": "/vsts/artifacts/feeds/views",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/gradle/publish-package-gradle.md",
+      "redirect_url": "/vsts/artifacts/gradle/publish-package-gradle",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/gradle/pull-package-gradle.md",
+      "redirect_url": "/vsts/artifacts/gradle/pull-package-gradle",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/how-to/follow-package-notifications.md",
+      "redirect_url": "/vsts/artifacts/how-to/follow-package-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/how-to/retention-policies.md",
+      "redirect_url": "/vsts/artifacts/how-to/retention-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/how-to/set-up-upstream-sources.md",
+      "redirect_url": "/vsts/artifacts/how-to/set-up-upstream-sources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/maven/delete-artifact.md",
+      "redirect_url": "/vsts/artifacts/maven/delete-artifact",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/maven/install.md",
+      "redirect_url": "/vsts/artifacts/maven/install",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/maven/pom-and-settings.md",
+      "redirect_url": "/vsts/artifacts/maven/pom-and-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/maven/publish.md",
+      "redirect_url": "/vsts/artifacts/maven/publish",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/npm/deprecate-unpublish.md",
+      "redirect_url": "/vsts/artifacts/npm/deprecate-unpublish",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/npm/npmrc.md",
+      "redirect_url": "/vsts/artifacts/npm/npmrc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/npm/publish.md",
+      "redirect_url": "/vsts/artifacts/npm/publish",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/npm/scopes.md",
+      "redirect_url": "/vsts/artifacts/npm/scopes",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/npm/upstream-sources.md",
+      "redirect_url": "/vsts/artifacts/npm/upstream-sources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/nuget/bootstrap-nuget.md",
+      "redirect_url": "/vsts/artifacts/nuget/bootstrap-nuget",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/nuget/consume.md",
+      "redirect_url": "/vsts/artifacts/nuget/consume",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/nuget/dotnet-exe.md",
+      "redirect_url": "/vsts/artifacts/nuget/dotnet-exe",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/nuget/move-from-fileshares.md",
+      "redirect_url": "/vsts/artifacts/nuget/move-from-fileshares",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/nuget/nuget-exe.md",
+      "redirect_url": "/vsts/artifacts/nuget/nuget-exe",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/nuget/publish.md",
+      "redirect_url": "/vsts/artifacts/nuget/publish",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/nuget/tfs.md",
+      "redirect_url": "/vsts/artifacts/nuget/tfs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/nuget/unlist-delete.md",
+      "redirect_url": "/vsts/artifacts/nuget/unlist-delete",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/nuget/upstream-sources.md",
+      "redirect_url": "/vsts/artifacts/nuget/upstream-sources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/preview/maven-docs.md",
+      "redirect_url": "/vsts/artifacts/preview/maven-docs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/preview/updated-experience.md",
+      "redirect_url": "/vsts/artifacts/preview/updated-experience",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/quickstarts/universal-packages.md",
+      "redirect_url": "/vsts/artifacts/quickstarts/universal-packages",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/reference/feed-upgrade-learn-more.md",
+      "redirect_url": "/vsts/artifacts/reference/feed-upgrade-learn-more",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/symbols/debug-with-symbols-visual-studio.md",
+      "redirect_url": "/vsts/artifacts/symbols/debug-with-symbols-visual-studio",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/symbols/debug-with-symbols-windbg.md",
+      "redirect_url": "/vsts/artifacts/symbols/debug-with-symbols-windbg",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/package/symbols/setting-up-github-sourcelinking.md",
+      "redirect_url": "/vsts/artifacts/symbols/setting-up-github-sourcelinking",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/notifications/manage-personal-notifications.md",
       "redirect_url": "/vsts/notifications/howto-manage-personal-notifications",
       "redirect_document_id": true
