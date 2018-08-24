@@ -55,9 +55,6 @@
     tocHref: /vsts/boards/
     topicHref: /vsts/boards/index
     items:
-    - name: Start using Azure Boards 
-      tocHref: /vsts/boards/get-started/
-      topicHref: /vsts/boards/get-started/index
     - name: Boards (Kanban) 
       tocHref: /vsts/boards/boards/
       topicHref: /vsts/boards/boards/index

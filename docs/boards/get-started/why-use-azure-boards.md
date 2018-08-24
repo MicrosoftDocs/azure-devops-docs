@@ -1,6 +1,6 @@
 ---
 title: Why use Azure Boards
-titleSuffix: Azure Boards
+titleSuffix: Azure DevOps Services & TFS 
 description: Benefits provided with Azure Boards  
 ms.prod: devops
 ms.technology: devops-new-user
@@ -62,7 +62,8 @@ And, you can easily add [custom fields, work item types, and portfolio backlogs]
 
 Work item forms provide built-in discussion which allows you to capture questions, notes, and communication as they occur&mdash;maintaining a history of what a team decides on any particular work item. You can quickly bring a team member or an entire team into the conversation [using **@mentions**](../../notifications/at-mentions.md). 
 
-![Discussion section in work item form](../backlogs/_img/add-work-items-discussion.png)
+> [!div class="mx-imgBorder"]  
+> ![Discussion section in work item form](../backlogs/_img/add-work-items-discussion.png)
 
 ## 5. Capture information, generous cloud storage 
 
