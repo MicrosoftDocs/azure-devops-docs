@@ -50,9 +50,9 @@
     href: odata-api-version.md 
 - name: Resources
   items:
-  - name: "Analytics (VSTS)"
+  - name: "Analytics"
     href: ../analytics/index.md
-  - name: "Power BI (VSTS)"
+  - name: "Power BI (Azure DevOps Services)"
     href: ../powerbi/index.md
   - name: OData Extension for Data Aggregation Version 4.0
     href: http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html

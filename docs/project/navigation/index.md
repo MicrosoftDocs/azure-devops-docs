@@ -162,7 +162,7 @@ Although you can access source code, work items, and builds from both clients, s
 
 ## Resources  
 
-- [Project Management](../../organizations/projects/index.md) 
+- [Manage projects](../../organizations/projects/index.md) 
 - [Project & Organizational Settings](../../organizations/settings/index.md) 
 
 

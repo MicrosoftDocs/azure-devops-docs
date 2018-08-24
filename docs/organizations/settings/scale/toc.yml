@@ -1,4 +1,4 @@
-- name: Settings
+- name: Scale & configure teams
   href: index.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json 
 - name: Overview
   items:
@@ -44,7 +44,7 @@
     - name: Set working days
       href: ../set-working-days.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
   - name: Switch team context
-    href: ../../../project/navigation/go-to-project-repo.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
+    href: ../../../project/navigation/go-to-project-repo.md#switch-team-context?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
   - name: Manage team notifications
     href: ../../../notifications/howto-manage-team-notifications.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
   - name: Set team favorites
@@ -55,10 +55,10 @@
     href: ../../security/permissions-access.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Navigation Basics
+  - name: Navigation basics
     href: ../../../project/navigation/index.md
-  - name: Project Management
+  - name: Manage projects
     href: ../../projects/index.md
-  - name: Security & Identity
+  - name: Security & identity
     href: ../../security/index.md
 

@@ -50,6 +50,6 @@ Create a public project, make an existing project public, or work in a public pr
 ## Resources
 - [Git Repositories](../../git/index.md)  
 - [Work Items](../../boards/work-items/index.md)  
-- [Project Management](../projects/index.md)  
+- [Manage projects](../projects/index.md)  
 - [Process Customization](../settings/work/customize-process.md)   
 

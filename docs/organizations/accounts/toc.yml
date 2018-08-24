@@ -1,4 +1,4 @@
-- name: "Organization Management"
+- name: "Manage organizations"
   href: index.md
 - name: Overview
   items:
@@ -134,9 +134,9 @@
   items:
   - name: New User Guide
     href: ../../user-guide/index.yml
-  - name: Project Management
+  - name: Manage projects
     href: ../projects/index.md
-  - name: "Security & Identity"
+  - name: "Security & identity"
     href: ../../organizations/security/index.md
   - name: Billing
     href: ../billing/index.md

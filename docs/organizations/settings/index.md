@@ -54,9 +54,9 @@ Define area and iteration paths, add teams, and configure additional team, proje
 
 
 ## Resources 
-- [Navigation Basics](../../project/navigation/index.md) 
-- [Project Management](../projects/index.md) 
-- [Security & Identity](../security/index.md) 
+- [Navigation basics](../../project/navigation/index.md) 
+- [Manage projects](../projects/index.md) 
+- [Security & identity](../security/index.md) 
 - [Manage Extensions (Marketplace)](../../marketplace/index.md) 
 - [Service hooks](../../service-hooks/index.md) 
  

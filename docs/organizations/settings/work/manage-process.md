@@ -22,6 +22,9 @@ ms.date: 05/31/2018
 
 You customize your project, Agile tools, and the work tracking system through an inherited process. The customizations you make are in effect for all projects that use the process. A process defines the building blocks of the work tracking system. Whenever you create a project, you select the process you want your project to use. 
 
+> [!IMPORTANT]  
+> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only. 
+
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
 In this article, learn how to perform these tasks:  

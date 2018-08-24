@@ -52,7 +52,7 @@ The role of project manager typically encompasses planning the feature set to de
 - Use queries to list and update work items, create status and trend charts, and post charts to dashboards 
 - Use dashboards to share information, status, and trends with your team or organization
   
-To get started, see [Get started with Agile tools to plan and track work](../boards/backlogs/overview.md).  
+To get started, see [About Azure Boards and Agile tools](../boards/work-items/about-agile-tools.md).  
 
 If you are used to using Excel or Project to plan and track your work, you can still use these tools and integrate with Azure DevOps Services and TFS. See [Bulk modify using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
@@ -68,7 +68,7 @@ One of the main advantages to working with Azure DevOps Services or TFS is the s
 - Define, manage, track, and approve releases 
 - Deploy applications to Azure, a virtual machine, Docker containers, and more  
 
-To get started, see the overviews provided here: [Build &amp; Release](../pipelines/overview.md) and [Test](../test/index.md). 
+To get started, see the overviews provided here: [Azure Pipelines](../pipelines/overview.md) and [Azure Test Plans](../test/overview.md). 
 
 ### Stakeholders
 
@@ -99,28 +99,53 @@ To get started, see [Configure team settings](../organizations/settings/configur
 
 ### Project administrators
 
-Responsible for project level settings, including:
+Responsible for configuring project-level resources, including:
 
-- [Area paths](../organizations/settings/set-area-paths.md) and [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)
-- [Project permissions and repository security](../organizations/security/permissions.md)
-- [Customize work tracking objects (TFS only)](../reference/customize-work.md) 
-- [Build agents, pools, and service connections](../pipelines/overview.md) 
+::: moniker range="vsts" 
+- [Area paths](../organizations/settings/set-area-paths.md) and [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
+- [Project permissions and repository security](../organizations/security/permissions.md)  
+- [Build agents, pools, and service connections](../pipelines/overview.md)  
+- [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies  
+::: moniker-end   
+
+
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+- [Area paths](../organizations/settings/set-area-paths.md) and [Iteration paths](../organizations/settings/set-iteration-paths-sprints.md)  
+- [Project permissions and repository security](../organizations/security/permissions.md)  
+- [Customize work tracking objects](../reference/customize-work.md)  
+- [Build agents, pools, and service connections](../pipelines/overview.md)  
 - [Test](../test/how-long-to-keep-test-results.md) and [release](../pipelines/policies/retention.md) retention policies 
- 
+::: moniker-end   
+
 
 ### Project collection administrators
 
-Responsible for organization or collection-level settings. These include:
+::: moniker range="vsts" 
+
+### Organization owners and project collection administrators
+
+Responsible for configuring organization-level resources. These include:
 
 - Manage billing  
 - Add and manage projects
-- Manage collection-level settings and permissions 
+- Manage collection-level permissions 
 - Customize work tracking processes  
 - Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
 
-To get started, see [Organization Management](../organizations/accounts/organization-management.md). 
+To get started, see [Manage organizations](../organizations/accounts/organization-management.md) and [Settings](../organizations/settings/index.md).
+::: moniker-end   
 
- 
+::: moniker range=">= tfs-2013 <= tfs-2018" 
+
+### Project collection administrators
+
+Responsible for configuring collection-level resources. These include:  
+- Add and manage projects
+- Manage collection-level permissions 
+- Install and manage extensions (install custom or [Marketplace extensions](https://marketplace.visualstudio.com/)) 
+
+To get started, see [Settings](../organizations/settings/index.md).
+
 ### TFS administrators
 
 Responsible for installing, upgrading, and maintaining an on-premises TFS deployment. Tasks include:
@@ -134,9 +159,11 @@ Responsible for installing, upgrading, and maintaining an on-premises TFS deploy
   
 To get started, see [Server Administration (TFS)](/tfs/server/index). 
 
+::: moniker-end   
 
-## Related notes
+
+## Related articles
 
 - [Key concepts](concepts.md)
 - [Essential services](services.md)
- 
+

@@ -41,6 +41,6 @@ Give your teams the autonomy they need as your organization grows. Add teams to 
 
 
 ## Resources 
-- [Navigation Basics](../../../project/navigation/index.md) 
-- [Project Management](../../projects/index.md) 
-- [Security & Identity](../../security/index.md) 
+- [Navigation basics](../../../project/navigation/index.md) 
+- [Manage projects](../../projects/index.md) 
+- [Security & identity](../../security/index.md) 

@@ -1,5 +1,5 @@
-- name: Project Management
-  href: index.md
+- name: Manage projects
+  href: index.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
 - name: Overview
   items:
   - name: About projects and scaling your organization
@@ -24,6 +24,8 @@
     href: ../security/change-individual-permissions.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
   - name: Grant or restrict permissions
     href: ../security/restrict-access.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
+  - name: Customize a project
+    href: ../settings/work/customize-process.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: About areas and iterations
@@ -32,9 +34,9 @@
     href: ../settings/about-teams-and-settings.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
   - name: Resources granted to project members
     href: resources-granted-to-project-members.md
-  - name: Clients & Tools
+  - name: Clients & tools
     href: ../../user-guide/tools.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
-  - name: "How do VSTS & TFS differ"
+  - name: "How do Azure DevOps Services & TFS differ"
     href: ../../user-guide/about-vsts-tfs.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
 - name: How-to guides
   items:
@@ -80,11 +82,11 @@
     href: ../public/index.md
   - name: Project & Organization Settings
     href: ../settings/index.md
-  - name: "Security & Identity"
+  - name: "Security & identity"
     href: ../security/index.md
   - name: Notifications
     href: ../../notifications/index.md
   - name: Technical articles
     href: ../../articles/index.md
-  - name: Migrate from TFS to VSTS
+  - name: Migrate from TFS to Azure DevOps Services
     href: ../../articles/migrate-to-vsts-from-tfs.md

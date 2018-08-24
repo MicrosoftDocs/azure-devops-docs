@@ -217,7 +217,7 @@ sections:
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_security-management.svg
-        title: Security & Identity
+        title: Security & identity
       - href: ../organizations/projects/index.md
         html: <p></p>
         image:

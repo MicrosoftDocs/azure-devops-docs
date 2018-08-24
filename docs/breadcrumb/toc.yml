@@ -14,6 +14,9 @@
   - name: Feedback
     tocHref: /vsts/project/feedback/
     topicHref: /vsts/project/feedback/index
+  - name: Dashboards
+    tocHref: /vsts/report/dashboards
+    topicHref: /vsts/report/dashboards/index
   - name: Start using Azure DevOps
     tocHref: /vsts/user-guide/
     topicHref: /vsts/user-guide/index
@@ -38,6 +41,9 @@
   - name: Azure DevOps demo generator
     tocHref: /vsts/demo-gen/
     topicHref: /vsts/demo-gen/index  
+  - name: Technical articles
+    tocHref: /vsts/articles/
+    topicHref: /vsts/articles/index
   - name: Azure Pipelines
     tocHref: /vsts/pipelines/
     topicHref: /vsts/pipelines/index
@@ -102,22 +108,6 @@
     - name: Unit testing
       tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
-  - name: Analytics
-    tocHref: /vsts/report/
-    topicHref: /vsts/index#devops-services-supplemental
-    items:
-    - name: Dashboards
-      tocHref: /vsts/report/dashboards
-      topicHref: /vsts/report/dashboards/index
-    - name: Analytics
-      tocHref: /vsts/report/analytics/
-      topicHref: /vsts/report/analytics/index
-    - name: Power BI
-      tocHref: /vsts/report/powerbi/
-      topicHref: /vsts/report/powerbi/index
-    - name: Extend Analytics with OData
-      tocHref: /vsts/report/extend-analytics/
-      topicHref: /vsts/report/extend-analytics/index
   - name: Settings
     tocHref: /vsts/organizations/settings/
     topicHref: /vsts/organizations/settings/index
@@ -140,9 +130,6 @@
     - name: "Scale & configure teams"
       tocHref: /vsts/organizations/settings/scale/
       topicHref: /vsts/organizations/settings/scale/index
-    - name: Notifications
-      tocHref: /vsts/notifications/
-      topicHref: /vsts/notifications/index
     - name: Customization
       tocHref: /vsts/reference/
       topicHref: /vsts/reference/index
@@ -152,22 +139,6 @@
     - name: Manage extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
-    - name: Technical articles
-      tocHref: /vsts/articles/
-      topicHref: /vsts/articles/index
-  - name: "TFS administation"
-    tocHref: /tfs/server/
-    topicHref: /index-tfs
-    items:
-    - name: Project Server integration
-      tocHref: /vsts/reference/tfs-ps-sync/
-      topicHref: /vsts/reference/tfs-ps-sync/index
-    - name: SQL Server Reporting
-      tocHref: /vsts/report/sql-reports/
-      topicHref: /vsts/report/sql-reports/index
-    - name: SharePoint Integration
-      tocHref: /vsts/report/sharepoint-dashboards/
-      topicHref: /vsts/report/sharepoint-dashboards/index
 - name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index
@@ -175,3 +146,28 @@
   - name: Public Projects
     tocHref: /vsts/organizations/public/
     topicHref: /vsts/organizations/public/index
+  - name: Analytics
+    tocHref: /vsts/report/analytics/
+    topicHref: /vsts/report/analytics/index
+  - name: Power BI
+    tocHref: /vsts/report/powerbi/
+    topicHref: /vsts/report/powerbi/index
+  - name: Extend Analytics with OData
+    tocHref: /vsts/report/extend-analytics/
+    topicHref: /vsts/report/extend-analytics/index
+- name: Team Foundation Server
+  tocHref: /vsts/
+  topicHref: /vsts/index-tfs
+  items:
+  - name: "TFS administation"
+    tocHref: /tfs/server/
+    topicHref: /vsts/index-tfs
+  - name: Project Server integration
+    tocHref: /vsts/reference/tfs-ps-sync/
+    topicHref: /vsts/reference/tfs-ps-sync/index
+  - name: SQL Server Reporting
+    tocHref: /vsts/report/sql-reports/
+    topicHref: /vsts/report/sql-reports/index
+  - name: SharePoint Integration
+    tocHref: /vsts/report/sharepoint-dashboards/
+    topicHref: /vsts/report/sharepoint-dashboards/index

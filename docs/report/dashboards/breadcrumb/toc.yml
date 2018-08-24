@@ -2,10 +2,6 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Shared Features
-    tocHref: /vsts/report/
-    topicHref: /vsts/index#devops-services-supplemental
-    items:
-    - name: Dashboards
-      tocHref: /vsts/report/dashboards
-      topicHref: /vsts/report/dashboards/index
+  - name: Dashboards
+    tocHref: /vsts/report/dashboards/
+    topicHref: /vsts/report/dashboards/index
