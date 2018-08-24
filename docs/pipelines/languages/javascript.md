@@ -128,7 +128,7 @@ Configure your pipelines to run your JavaScript tests so that they produce resul
 
 If your testing framework doesn't support JUnit output out of the box, you'll need to add support through a third party reporting module, such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your testing script to use the JUnit reporter, or if the reporter supports command line options you can pass those into the task definintion.
 
-The first example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `mocha test` directly using the [bash](../tasks/utility/bash.md) task. This produces the JUnit XML output at the default location of `./test-results.xml`. 
+This example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `mocha test` directly using the [bash](../tasks/utility/bash.md) task. This produces the JUnit XML output at the default location of `./test-results.xml`. Other testing frameworks will require slightly different configuration, but aren't covered in this guide.
 
 ```yaml
 - task: Bash@3
@@ -136,8 +136,14 @@ The first example uses the [mocha-junit-reporter](https://www.npmjs.com/package/
     script: 'mocha test --reporter mocha-junit-reporter'
 ```
 
+To publish the results, use the [Publish Test Results](../tasks/test/publish-test-results) task.
 
-
+```yaml
+- task: PublishTestResults@2
+  inputs:
+    testRunner: JUnit
+    testResultsFile: ./test-results.xml
+```
 
 
 
