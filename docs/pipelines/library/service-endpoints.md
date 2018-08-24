@@ -41,23 +41,20 @@ Service connections are created at project scope. A service connection created i
 
 ## Create a service connection
 
-1. Open the **Services** page from the "settings" icon in the top menu bar.
-
-   ![Opening the Services page](_img/new-service-endpoint-1.png)
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+   In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 2. Choose **+ New service connection** and select the type of service connection you need.
-
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
 
 3. Fill in the parameters for the service connection. The list of parameters differs for each  type of service connection - see the [following list](#ep-types).
    For example, this is the default **Azure Resource Manager** connection dialog:
 
-   ![Azure Resource Manager connection dialog](_img/connection-dialog-arm.png)
+   ![Azure Resource Manager connection dialog](../release/_img/azure-rm-endpoint/azure-rm-endpoint-01.png)
 
 4. Choose **OK** to create the connection.
 
 > You can also create your own [custom service connections](../../extend/develop/service-endpoints.md).
- 
+
 <a name="security"></a>
 
 ## Secure a service connection
@@ -76,9 +73,8 @@ Members of the Service connection creators group can create new service connecti
 
 To modify the security for a connection:
 
-1. Open the **Services** page from the "settings" icon in the top menu bar.
-
-   ![Opening the Services page](_img/new-service-endpoint-1.png)
+1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
+   In TFS, open the **Services** page from the "settings" icon in the top menu bar.
 
 1. Choose the **Roles** link to open the security tab.
 
