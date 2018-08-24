@@ -66,13 +66,13 @@ You can perform the following tasks in Dashboards:
 
 To learn more, see [Dashboards](../report/dashboards/dashboards.md). 
 
-## Repos
+## Azure Repos
 
-From **Repos** you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
+From **Azure Repos** you gain access to your source control Git-based or TFVC repositories to support version control of your software projects. These repositories are private.
 
 # [New navigation](#tab/new-nav)
 
-![Repos, Git files page](_img/repos-git-hub.png)
+![Azure Repos, Git files page](_img/repos-git-hub.png)
 
 # [Previous navigation](#tab/prev-nav)
 
@@ -80,7 +80,7 @@ From **Repos** you gain access to your source control Git-based or TFVC reposito
 
 ---
 
-From Repos for Git you can perform the following tasks:
+From Azure Repos for Git you can perform the following tasks:
 
 - Review, download, and edit files and review the change history for a file  
 - Review and manage commits that have been pushed
@@ -91,11 +91,11 @@ To learn more, see the overviews for [Git](../repos/git/overview.md) or [TFVC](.
 
 ## Plan and track work
 
-From **Boards** you gain access to Agile tools to support planning and tracking work.
+From **Azure Boards** you gain access to Agile tools to support planning and tracking work.
 
 # [New navigation](#tab/new-nav)
 
-![Boards backlogs](_img/boards-backlogs.png)
+![Azure Boards backlogs](_img/boards-backlogs.png)
 
 # [Previous navigation](#tab/prev-nav)
 
@@ -103,7 +103,7 @@ From **Boards** you gain access to Agile tools to support planning and tracking 
 
 ---
 
-Specifically, from **Boards** you can perform the following tasks:
+Specifically, from **Azure Boards** you can perform the following tasks:
 
 - Add and update work items
 - Define work item queries and create status and trend charts based on those queries
@@ -115,9 +115,9 @@ Specifically, from **Boards** you can perform the following tasks:
 
 See [Backlogs, boards, and plans](../boards/backlogs/backlogs-boards-plans.md) for an overview of each.
  
-## Pipelines
+## Azure Pipelines
 
-**Pipelines** provides an integrated set of features to support building and deploying your applications.
+**Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
 # [New navigation](#tab/new-nav)
 

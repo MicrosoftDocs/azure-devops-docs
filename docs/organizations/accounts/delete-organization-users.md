@@ -20,7 +20,7 @@ If users no longer require access to a project or your Azure DevOps Services org
 
 ## Prerequisites  
 
-- You need [Azure DevOps Services project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
+- You need [Azure DevOps Services project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Remove users from your Azure DevOps Services organization
 
@@ -36,19 +36,23 @@ If users no longer require access to a project or your Azure DevOps Services org
 
     ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
+3. Select **Users**.
 
-   ![Remove a user from you organization](_img/delete-user/remove-user-from-organization.png)
+    ![Organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
 
-4. Choose **Remove** in the confirmation dialog.
+4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
+
+   ![Remove a user from your organization](_img/delete-user/remove-user-from-organization-new.png)
+
+5. Choose **Remove** in the confirmation dialog.
 
    ![Confirm removing an existing user](_img/delete-user/confirm-remove-existing-user.png)
 
-5. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
+6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
    [Why don't users appear or disappear promptly in Azure DevOps Services after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
 
-6. If you deleted paid users who had Basic features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
+7. If you deleted paid users who had Basic features, and you don't want to pay for those users, you must also [reduce the users in the Visual Studio Marketplace](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
 
    To reduce or cancel users for the next month, you must make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.
@@ -61,10 +65,11 @@ If users no longer require access to a project or your Azure DevOps Services org
 
 2. Go to the **Users** page.
 
+   ![Open admin settings, users](../../_shared/_img/settings/open-admin-settings-users-prev.png)
+
 3. Open the context menu **...** for the user to remove. Select **Remove from organization**.
 
-   ![![Remove a user from your organization](_img/delete-user/remove-user.png)
-](_img/_shared/remove-from-organization-menu-selection.png)
+   ![Remove user from your organization](_img/delete-user/remove-user-from-organization-prev.png)
 
 4. Choose **Remove** in the confirmation dialog.
 
@@ -89,11 +94,11 @@ To remove users from a project, remove them from the **Teams** groups they belon
 
 # [New navigation](#tab/new-nav)
 
-![Remove a user from a security group, new navigation](_img/delete-user/remove-user-from-project.png)
+![Remove a user from a security group, new navigation](_img/delete-user/remove-user-vert.png)
 
 # [Previous navigation](#tab/prev-nav)
 
-![Remove a user from a security group, previous navigation](_img/delete-user/remove-user.png)
+![Remove a user from a security group, previous navigation](_img/delete-user/remove-user-prev.png)
 
 ---
 

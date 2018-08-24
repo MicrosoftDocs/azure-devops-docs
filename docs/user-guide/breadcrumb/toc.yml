@@ -1,8 +1,8 @@
 - name: Azure DevOps Services
-  tocHref: /vsts/
-  topicHref: /vsts/index#pivot=services
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index#pivot=services
   items: 
   - name: Start using Azure DevOps
-    tocHref: /vsts/
-    topicHref: /vsts/user-guide/index
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/user-guide/index
 

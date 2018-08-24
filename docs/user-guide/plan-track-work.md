@@ -43,7 +43,7 @@ You can start adding work items once you connect to a project. If you don't have
 
 	![Browse all projects](_img/plan-track-work/browse-all-projects-vert.png)
 
-2.	Select **Boards** > **Work Items**. 
+2.	Select **Azure Boards** > **Work Items**. 
 
     >![Select Boards and Work Items to create a new work item](_img/plan-track-work/project-select-work-items-vert.png)
 
@@ -93,7 +93,7 @@ Create as many work items as you need of the type you need to track the work you
 
 # [New navigation](#tab/new-nav)
 
-1. Go to your project and select **Work** > **Work Items**.
+1. Go to your project and select **Azure Boards** > **Work Items**.
 
    ![In your project, select Work and Work Items](_img/plan-track-work/project-select-work-items-vert.png)
 2. To view any work item listed, select the title.

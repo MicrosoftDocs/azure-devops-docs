@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 08/03/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -65,11 +65,11 @@ To continue, you'll need at least Basic access and Azure DevOps Services organiz
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
 
-2. From your organization toolbar, go to **Settings**.
+2. From your organization toolbar, go to **Settings** > **Policy**.
 
-    ![Choose the gear icon, go to Settings](../../_shared/_img/organization-settings-new-ui.png)
+    ![Choose the gear icon, go to Policy](../../_shared/_img/settings/open-admin-settings-policy-horz.png)
 
-3. In the Policy tab, review your application connection settings. Change these settings, based on your security policies.
+3. Review your application connection settings. Change these settings, based on your security policies.
 
     ![Under Application Connections, change each setting as necessary, save your changes](_img/change-application-access-policies/connections.png)
 

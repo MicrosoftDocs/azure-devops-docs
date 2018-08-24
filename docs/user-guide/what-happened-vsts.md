@@ -25,7 +25,7 @@ On September 5th, 2018, Visual Studio Team Services was rebranded as "Azure DevO
 
 Each service can be acquired separately, or together as Azure DevOps Services. If you are already a VSTS subscriber, you have access to all of the services.
 
-Follow the [Azure DevOps Release Notes](/vsts/release-notes/index) to get news on the latest updates!
+Follow the [Azure DevOps Release Notes](/azure/devops/release-notes/index) to get news on the latest updates!
 
 ## I am using visualstudio.com for my VSTS organization. Do I have to use dev.azure.com now?
 

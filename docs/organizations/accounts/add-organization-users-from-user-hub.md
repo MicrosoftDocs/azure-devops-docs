@@ -45,7 +45,7 @@ Access levels control which features are available to users - that is, the full 
 
 ## Prerequisites
 
-You need Azure DevOps Services project collection administrator or organization owner permissions. For more information, see [Quickstart: Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).
+You need Azure DevOps Services project collection administrator or organization owner permissions. For more information, see [Quickstart: Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
 
 ## Add users to your Azure DevOps Services organization
 
@@ -93,18 +93,18 @@ To give other users access to your organization, add their email addresses.
 
 1. Sign in to your Azure DevOps Services organization (`https://<yourorganization>.visualstudio.com`).
 
-2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png), the **Settings** icon, and select **Organization Settings**.
+2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png) and  **Organization settings**.
 
    ![Open Organization Settings](../../_shared/_img/settings/open-account-settings.png)
 
-2. Select **Users** and then select **Add new users** to open the form.
+2. Select **Users** > **Add new users** to open the form.
 
    > [!div class="mx-imgBorder"]  
    >![Open Add new users dialog box](../../user-guide/_img/sign-up/add-new-users.png)
 
 3. Complete the form.
 
-   ![Web portal, organization admin context, Add new users dialog box](../../user-guide/_img/invite-users-add-user-dialog.png)
+   ![Web portal, organization admin context, Add new users dialog box](../../_shared/_img/add-user-dialog-prev.png)
 
    * **Users**: Enter the Microsoft account's email address for the user. You can add several email addresses by separating them with a semicolon (;). Note that in Microsoft accounts, the email addresses appear in red.
    * **Access level**: Leave the access level at **Basic** for users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).

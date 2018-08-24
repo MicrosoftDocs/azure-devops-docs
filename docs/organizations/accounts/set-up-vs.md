@@ -40,7 +40,7 @@ and for unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com
 Learn [what else you get with Azure DevOps Services](https://visualstudio.microsoft.com/pricing/visual-studio-team-services-pricing-vs). 
 If you want, you can also use Azure DevOps Services with any IDE or code editor, like:
 
-*	[Eclipse, Android Studio, or IntelliJ](/vsts/java)
+*	[Eclipse, Android Studio, or IntelliJ](/azure/devops/java)
 *	Xcode (see [Git](../../repos/git/share-your-code-in-git-xcode.md) or [TFVC](../../repos/tfvc/share-your-code-in-tfvc-xcode.md))
 *	[Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
 

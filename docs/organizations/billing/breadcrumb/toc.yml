@@ -1,11 +1,11 @@
 - name: Azure DevOps Services
-  tocHref: /vsts/
-  topicHref: /vsts/index
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
   - name: Management Tools
-    tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-settings
+    tocHref: /azure/devops/
+    topicHref: /azure/devops/index#devops-services-settings
     items:
     - name: Billing
-      tocHref: /vsts/organizations/billing/
-      topicHref: /vsts/organizations/billing/index
+      tocHref: /azure/devops/organizations/billing/
+      topicHref: /azure/devops/organizations/billing/index

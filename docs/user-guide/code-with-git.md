@@ -111,7 +111,7 @@ In this step, we'll make a change to the files on your computer, commit the chan
 ## Try this next  
 
 > [!div class="nextstepaction"]
-> [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json)
+> [Set up continuous integration & delivery](../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
 > or
 > [Plan & track work](plan-track-work.md)
 

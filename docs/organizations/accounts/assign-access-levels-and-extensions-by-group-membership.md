@@ -37,9 +37,11 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
 3. Go to the **Security** page and check the membership of the **Project Collection Administrators** group.
 
-4. Select **Group rules** . This view shows you all of your created group rules.
+   ![Project collection administrators group members](_img/assign-access-levels/project-collection-administrators-group-members-new.png)
 
-   ![View group rules](_img/manage-group-licensing/see-group-rules.png)
+4. Select **Users** > **Group rules** . This view shows you all of your created group rules.
+
+   ![View group rules](_img/assign-access-levels/see-group-rules.png)
 
 5. Select **Add a group rule**.
 
@@ -47,27 +49,35 @@ To assign an extension to a user (and consequently, a group) a PCA must first [i
 
 6. Complete the dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group. Select **Add**.
 
-   ![Complete add a group rule dialog](_img/manage-group-licensing/add-group-rule-dialog.png)
+   ![Complete add a group rule dialog](_img/assign-access-levels/add-group-rule-dialog-new.png)
 
 A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your Azure DevOps Services organization didn't have enough purchased licenses), select **View status** to see the details.
 
-![Group rule completed successfully](_img/manage-group-licensing/group-rule-completed-successfully.png)
+![Group rule completed successfully](_img/assign-access-levels/group-rule-completed-successfully.png)
 
 # [Previous navigation](#tab/prev-nav)
 
-1. Sign in to your Azure DevOps Services organization and go to the **Users** page in your organization settings.
-2. Go to the **Security** page and check the membership of the **Project Collection Administrators** group.
-3. Select the **Group rules** tab. This view shows you all of your created group rules.
+1. Sign in to your Azure DevOps Services organization (`https://<yourorganization>.visualstudio.com`).
 
-   ![View group rules](_img/manage-group-licensing/view-group-rules.png)
+2. From your web browser, select ![gear icon](../../_img/icons/gear-icon.png) and  **Organization settings**.
 
-4. Select **Add a group rule**. Complete the next dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group.
+   ![Open Organization Settings](../../_shared/_img/settings/open-account-settings.png)
 
-   ![Create a new group rule](_img/manage-group-licensing/add-a-group-rule.png)
+3. Select **Security** and check the membership of the **Project Collection Administrators** group.
 
-5. To complete the assignment, select **Add**.
+   ![Project collection administrators group members](_img/assign-access-levels/project-collection-administrators-group-members-prev.png)
 
-   ![Add the group rule](_img/manage-group-licensing/adding-group-rule.png)
+4. Select **Users** > **Group rules**. This view shows you all of your created group rules.
+
+   ![View group rules](_img/assign-access-levels/view-group-rules.png)
+
+5. Select **Add a group rule**. Complete the next dialog box for the group for which you want to create a rule. Include an access level for the group and any optional project access or extensions for the group.
+
+   ![Create a new group rule](_img/assign-access-levels/add-a-group-rule.png)
+
+6. To complete the assignment, select **Add**.
+
+   ![Add the group rule](_img/assign-access-levels/add-group-rule-dialog-new.png)
 
 A notification is displayed that shows the status and outcome of the rule. If the assignment couldn't be completed (for example, because your Azure DevOps Services organization didn't have enough purchased licenses), select **View status** to see the details.
 

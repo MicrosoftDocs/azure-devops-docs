@@ -8,4 +8,4 @@ Check to see whether your organization controls access by using Azure AD.
 
 ![Go to Settings, and then check for a connected directory](_img/organization-check-connected-azure-ad-new-ui.png)
 
-If your organization is connected to your organization's directory, only users from your organization's directory can join your organization. Learn [how to control organization access by using Azure AD](/vsts/organizations/accounts/add-users-to-aad). 
+If your organization is connected to your organization's directory, only users from your organization's directory can join your organization. Learn [how to control organization access by using Azure AD](/azure/devops/organizations/accounts/add-users-to-aad). 

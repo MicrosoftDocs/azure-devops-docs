@@ -85,6 +85,8 @@ b. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
  
 c. Go to **Users**
 
+![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
+
 d. Compare the list of email addresses in Azure DevOps Services with the list of email addresses in your Azure Active Directory.
 
 * If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-iw-add-users).

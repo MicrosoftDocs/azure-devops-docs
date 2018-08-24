@@ -24,23 +24,28 @@ For information on region availability, see [Products available by region](https
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
-1. Select **Admin settings**.
+2. Choose ![gear icon](../../_img/icons/gear-icon.png), **Admin settings**.
 
-   ![Open admin settings](_img/_shared/open-admin-settings-vert.png)
-
-1. Select **Overview**. The region is listed under the **Organization** information.
+   ![Choose the gear, Admin settings icon](../../_shared/_img/settings/open-admin-settings-vert.png)
+3. Select **Overview**. The region is listed under Organization information.
 
    ![Find the region under the organization settings](_img/change-organization-location/organization-settings-region.png)
 
 # [Previous navigation](#tab/previous-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
+1. Sign in as the organization owner to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
-1. On your **Organization** toolbar, select the gear icon ![gear icon](../../_img/icons/gear-icon.png), and then select **Settings**: `https://dev.azure.com/{yourorganization}/_admin/_home/settings`.
+   [Why am I asked to choose between my work or school account and my personal account?](faq-change-app-access.md#ChooseOrgAcctMSAcct)
 
-1. The region is listed under **Region**.
+2. From your organization toolbar, select **Organization settings**.
+
+    ![Choose the gear icon, go to Organization settings](../../_shared/_img/settings/open-account-settings.png)
+
+3. The region is listed under Organization information, next to  **Region**.
+
+   ![Organization settings, region location](_img/change-organization-location/organization-settings-region-prev.png)
 
 To change your organization region, call [Azure DevOps Services Support](https://visualstudio.microsoft.com/team-services/support). The Support staff will coordinate changing the region with the organization owner.
 

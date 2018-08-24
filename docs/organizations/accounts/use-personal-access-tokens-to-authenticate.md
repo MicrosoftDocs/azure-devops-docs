@@ -39,11 +39,11 @@ https://dev.azure.com/{yourorganization}
 
 Users receive two notifications during the lifetime of a PAT, one at creation and the other 7 days approaching the expiration.
 
-Here's the notification at PAT creation:
+The following notification is sent at PAT creation:
 
 ![PAT creation notification](_img/use-personal-access-tokens-to-authenticate/PAT-creation.png)
 
-Here's the notification that a PAT is nearing expiration:
+The following notification is sent - a PAT is nearing expiration:
 
 ![PAT nearing expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
 

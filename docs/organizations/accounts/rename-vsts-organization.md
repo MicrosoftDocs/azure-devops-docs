@@ -35,17 +35,17 @@ To change your Azure DevOps Services organization URL, you need at least Basic a
 
    [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Go to your Azure DevOps Services admin settings.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
    ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select **Overview**, and then choose the edit icon (pencil) next to your organization URL.
 
-   ![Rename you organization](_img/rename-vso-organization/rename-organization-vert.png)
+   ![Rename you organization](_img/rename-vso-organization/rename-organization-new.png)
 
 4. Confirm that you want to rename your organization. Enter a new name for your organization and save your changes.
 
-   ![Enter new organization name and save changes](_img/rename-vso-organization/enter-new-organization-name-save-changes.png) 
+   ![Enter new organization name and save changes](_img/rename-vso-organization/vsoconfirmorganizationrename.png)
 
 # [Previous navigation](#tab/prev-nav)
 

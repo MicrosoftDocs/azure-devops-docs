@@ -31,4 +31,4 @@ make sure that you assigned this extension to users.
 	If not, assign the extension to the user.
 
 Learn more about 
-[assigning paid extensions to users](/vsts/marketplace/assign-paid-extensions).
+[assigning paid extensions to users](/azure/devops/marketplace/assign-paid-extensions).

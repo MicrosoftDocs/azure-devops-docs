@@ -40,14 +40,13 @@ Make sure that the new owner:
 
 # [New navigation](#tab/new-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://<yourorganization>.visualstudio.com`).
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select **Admin settings** (![gear icon](../../_img/icons/gear-icon.png)).
+2. Select (![gear icon](../../_img/icons/gear-icon.png)) **Admin settings** .
 
    ![Select "Admin settings"](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select **Overview**.  
-    The organization owner is listed under **Organization information**.
+3. Select **Overview**. The organization owner is listed under **Organization information**.
 
    ![Overview pane displaying the organization owner](_img/change-organization-ownership/find-organization-owner.png)
 

@@ -19,7 +19,7 @@
 - name: Tutorials
   items:
   - name: Connect VSTS to Azure AD
-    href: ../accounts/change-organization-location.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../accounts/change-organization-location.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Manage billing 
@@ -39,11 +39,11 @@
     - name: Change number of paid users
       href: change-number-paid-extension-users.md
     - name: Approve requests
-      href: ../../marketplace/approve-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+      href: ../../marketplace/approve-vsts-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
     - name: Assign paid extensions to users
-      href: ../../marketplace/assign-paid-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+      href: ../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
     - name: Uninstall or disable extensions
-      href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+      href: ../../marketplace/uninstall-disable-vsts-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
     - name: Buy TFS CALs or Test hub  
       href: buy-access-tfs-test-hub.md 
   - name: Guidance for Cloud Solution Providers
@@ -63,11 +63,11 @@
 - name: Reference
   items:
   - name: Permissions 
-    href: ../../security/permissions.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../security/permissions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
   - name: About access levels
-    href: ../../security/access-levels.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../security/access-levels.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
   - name: Default permissions & access
-    href: ../../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
+    href: ../../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Manage organizations

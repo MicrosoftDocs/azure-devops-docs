@@ -25,6 +25,22 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 You need Azure DevOps Services [project collection administrator or organization owner permissions](../accounts/faq-add-delete-users.md#find-owner).
 
+[!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
+
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your Azure DevOps Services organization, ```https://dev.azure.com/{yourorganization}```.
+
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
+
+    ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+
+3. Select **Extensions**. ....?
+
+4. ?
+
+# [Previous navigation](#tab/prev-nav)
+
 1. Sign in to your Azure DevOps Services organization, ```https://dev.azure.com/{yourorganization}```.
 
 2. Go to **Extensions**. Then select the extension you want to update.

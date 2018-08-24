@@ -28,23 +28,27 @@ Tests you create from the Kanban board are automatically linked to the user stor
 
 # [New navigation](#tab/new-nav)
 
-1. From your web browser, open the project for your Azure DevOps Services organization and select the **Work** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the project for your Azure DevOps Services organization and select **Azure Boards**. If you don't have a team project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
-	The URL follows this pattern: ```https://{organization name}.visualstudio.com/{project name}/_backlogs```  
+	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_boards/board```  
 
 	If you don't see the team or project you want, choose the ![Azure DevOps Services icon](../_img/icons/project-icon.png) Azure DevOps Services icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2. Select **Boards** to open the Kanban board.
 
+   ![Azure Boards](_img/azure-devops-boards-board.png)
+
 # [Previous navigation](#tab/prev-nav)
 
-1. From your web browser, open the team project for your Azure DevOps Services organization and choose the **Work** hub. If you don't have a team project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
+1. From your web browser, open the team project for your Azure DevOps Services organization and choose **Azure Boards**. If you don't have a team project, [create one now](sign-up-invite-teammates.md). If you haven't been added as a team member, [get invited now](sign-up-invite-teammates.md#invite-others).
 
-	The URL follows this pattern: ```https://{organization name}.visualstudio.com/{project name}/_backlogs```  
+	The URL follows this pattern: ```https://dev.azure.com/fabrikamfiber/_backlogs/board```  
 
 	If you don't see the team or project you want, choose the ![Azure DevOps Services icon](../_img/icons/project-icon.png) Azure DevOps Services icon to [browse all projects and teams](../project/navigation/work-across-projects.md).  
 
 2. Select **Board** to open the Kanban board.
+
+    ![Azure DevOps backlogs board](_img/azure-devops-backlogs-board.png)
 
 ---
 
@@ -150,7 +154,7 @@ Updating the status of tests enable you to [track test results](../test/track-te
 
 Upon first opening the Kanban board, you'll see an un-expanded view of checklists and tests.
 
-   ![Inline tests collapsed](_img/open-board-collapsed-tests.png)
+   ![Inline tests collapsed](_img/azure-devops-boards-board.png)
 
 Simply select the inline test summary to expand a collapsed set of tests. Select the same summary to collapse an expanded list.
 
