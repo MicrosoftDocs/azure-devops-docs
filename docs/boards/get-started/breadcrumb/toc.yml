@@ -5,8 +5,4 @@
   - name: Azure Boards
     tocHref: /vsts/boards/
     topicHref: /vsts/boards/index
-    items:
-    - name: Start using Azure Boards
-      tocHref: /vsts/boards/get-started/
-      opicHref: /vsts/boards/get-started/index
 

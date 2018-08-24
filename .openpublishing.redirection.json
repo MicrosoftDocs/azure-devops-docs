@@ -10999,6 +10999,11 @@
       "source_path": "docs/work/work-items/guidance/cmmi/track-bugs.md",
       "redirect_url": "/vsts/boards/work-items/guidance/cmmi/track-bugs",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/analytics/analytics-widgets-vsts.md",
+      "redirect_url": "/vsts/report/analytics/analytics-widgets",
+      "redirect_document_id": false
     }
   ]
 }

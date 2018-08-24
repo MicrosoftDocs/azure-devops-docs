@@ -1,5 +1,5 @@
 - name: Start using Azure Boards
-  href: index.md
+  href: index.md?toc=/vsts/boards/get-started/toc.json&bc=/vsts/boards/get-started/breadcrumb/toc.json
   items:
   - name: "What is Azure Boards?"
     href: what-is-azure-boards.md
