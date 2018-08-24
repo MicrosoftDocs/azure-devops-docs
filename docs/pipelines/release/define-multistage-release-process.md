@@ -141,6 +141,8 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
 
 [!INCLUDE [edit-template-vars-in-environment](../apps/_shared/edit-template-vars-in-environment.md)]
 
+<a name="add-approvals"></a>
+
 ## Add approvals within a release pipeline
 
 The release pipeline you have modified deploys to test and then to production. If the deployment to test fails, the trigger
@@ -166,6 +168,8 @@ you deploy to production. In this section, you will add an approval step to the 
 1. Save the modified release pipeline.
 
    ![Save the release pipeline](_img/define-multistage-release-process/save-definition.png)
+
+<a name="create-release"></a>
 
 ## Create a release
 
@@ -207,6 +211,8 @@ the source code will start a new build and, from that, a new release. However, i
    Notice that you can defer a deployment to a specific day and time; for example, a time when you expect the app to be only lightly loaded.
    You can also reassign the approval to another user. Release administrators can open _any_ approval
    and over-ride it to accept or reject that deployment.
+
+<a name="monitor-track"></a>
 
 ## Monitor and track deployments
 

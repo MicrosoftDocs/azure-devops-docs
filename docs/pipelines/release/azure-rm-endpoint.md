@@ -56,8 +56,6 @@ Errors that may occur when the system attempts to create the service connection 
 This typically occurs when the system attempts to create an
 application in AAD on your behalf.
 
-![Insufficient privileges to complete the operation error](_img/azure-rm-endpoint/azure-rm-endpoint-02.png)
-
 This is a permission issue that may be due to the following causes:
 
 * [The user has only guest permission in the directory](#guestonly)
@@ -128,8 +126,6 @@ The directory administrator has permission to change this setting, as follows:
 
 These errors typically occur when your session has expired.
 
-![Errors when the users session has expired](_img/azure-rm-endpoint/azure-rm-endpoint-08.png)
-
 To resolve these issues:
 
 * Sign out of Azure Pipelines or TFS.
@@ -147,8 +143,6 @@ To resolve these issues:
 This error typically occurs when you do not have **Write** permission
 for the selected Azure subscription when the system attempts to assign
 the **Contributor** role.
-
-![Failed to assign Contributor role error](_img/azure-rm-endpoint/azure-rm-endpoint-09.png)
 
 To resolve this issue, ask the subscription administrator to
 [configure your identity in an **Admin Access** role](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).

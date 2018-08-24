@@ -260,10 +260,14 @@ Note that the original name of the artifact source alias, `ASPNET4.CI`, is repla
 
 ### View the current values of all release variables
 
-In the **Logs** page of a release summary, choose the **Initialize Job** step.
-The log pane includes a list of all the variables and their values for this release.
+1. Open the pipelines view of thr summary for the release, and choose the stage you are interested in.
+   In the list of steps, choose **Initialize job**.
 
-![Viewing the values of the variables in a release](_img/view-variable-values.png)
+   ![Opening the log for a release](_img/view-variable-values-link.png)
+
+1. This opens the log for this step. Scroll down to see the values used by the agent for this job.   
+
+   ![Viewing the values of the variables in a release](_img/view-variable-values.png)
 
 <a name="debug-mode"></a>
 

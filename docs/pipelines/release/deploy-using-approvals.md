@@ -49,6 +49,8 @@ for releases and deployments by using manual intervention and gates.
 For more information about the ways you can configure approvals for a release,
 see [Approvals and gates overview](../release/approvals/index.md).
 
+<a name="configure-gate"></a>
+
 ## Configure a gate
 
 First, you will extend the approval process for the release by adding a gate.
@@ -106,6 +108,8 @@ meets a wide range or criteria, without requiring user intervention.
 For more information about using other types of approval gates, see [Approvals and gates](../release/approvals/index.md).
 
 <!-- TBD - ADD GATE TASK TO TASKS LIST -->
+
+<a name="configure-maninter"></a>
    
 ## Configure a manual intervention
 
@@ -143,6 +147,8 @@ Intervention** task in your pipeline.
 1. Save the release pipeline and then start a new release.
 
    ![Starting a new release](_img/deploy-using-approvals/start-release.png)
+
+<a name="view-approvals"></a>
 
 ## View the logs for approvals 
 
