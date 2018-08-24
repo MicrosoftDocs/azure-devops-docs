@@ -1,10 +1,10 @@
-- name: Azure DevOps and TFS
+- name: Azure DevOps Services & TFS
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
   - name: Azure Boards 
-    tocHref: /vsts/
-    topicHref: /vsts/index#pivot=apps&panel=agile
+    tocHref: /vsts/boards/
+    topicHref: /vsts/boards/index
     items:
     - name: Sprints (Scrum)
       tocHref: /vsts/

@@ -1,6 +1,6 @@
-- name: Azure DevOps Services
+- name: Azure DevOps Services & TFS
   tocHref: /vsts/
-  topicHref: /vsts/index#pivot=services
+  topicHref: /vsts/index
   items: 
   - name: Settings
     tocHref: /vsts/organizations/
