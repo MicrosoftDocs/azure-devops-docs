@@ -78,19 +78,15 @@ As an alternative to the **Use Python Version** task, create and activate a cond
 
 ## Run a Python script
 
-Run a Python script in your pipeline by adding the [Python Script](../tasks/utility/python-script.md) task. The script can be defined in a file or in-line with the task.
-
-Add the following YAML to run a Python script file named `myPythonScript.py`.
+If you have a Python script checked into the repo, you can run it using **script**.
+Add the following YAML to run a Python file named `example.py`.
 
 ```yaml
-- task: PythonScript@0
-  inputs:
-    scriptSource: 'filePath'
-    scriptPath: 'src/myPythonScript.py'
-    arguments: ''
+- script: python src/example.py
 ```
 
-Alternatively, set the **targetType** to `inline` to define the script in YAML.
+If you want to write a Python script inline in the YAML file, use the [Python Script](../tasks/utility/python-script.md) task.
+Set the **targetType** to `inline` and put your code in the **script** section.
 
 ```yaml
 - task: PythonScript@0
@@ -99,21 +95,9 @@ Alternatively, set the **targetType** to `inline` to define the script in YAML.
     script: |
       print('Hello world 1')
       print('Hello world 2')
-    arguments: ''
 ```
 
 ## Install dependencies
-
-### Install requirements with pip
-
-Add the following YAML to install or upgrade `pip` and requirements specified in `requirements.txt`.
-
-```yaml
-- script: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-  displayName: 'Install requirements'
-```
 
 ### Install specific PyPI packages with pip
 
@@ -121,7 +105,16 @@ Add the following YAML to install or upgrade `pip` and two specific packages: `s
 
 ```yaml
 - script: python -m pip install --upgrade pip setuptools wheel
-  displayName: 'Install dependencies'
+  displayName: 'Install tools'
+```
+
+### Install requirements with pip
+
+After updating `pip` and friends, a typical next step is to install from `requirements.txt`.
+
+```yaml
+- script: pip install -r requirements.txt
+  displayName: 'Install requirements'
 ```
 
 ### Install Anaconda packages with conda

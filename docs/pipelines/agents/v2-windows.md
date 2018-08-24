@@ -31,6 +31,14 @@ Make sure your machine is prepared with our [Windows system prerequisites](https
 
 If you're building from a Subversion repo, you must install the Subversion client on the machine.
 
+### Hardware specs 
+
+The hardware specs for your agents will vary with your needs, team size, etc.
+It's not possible to make a general recommendation that will apply to everyone.
+As a point of reference, the Azure DevOps team builds its hosted agents using the [hosted agents](hosted.md).
+On the other hand, the bulk of the Azure DevOps code is built by 24-core server class machines
+running 4 agents apiece.
+
 <h2 id="permissions">Prepare permissions</h2>
 
 [!INCLUDE [permissions](_shared/v2/prepare-permissions.md)]
@@ -50,33 +58,31 @@ If you're building from a Subversion repo, you must install the Subversion clien
 
 <li>Click the **Download** button.
 
-<li>Follow the instructions on the page.</li>
+<li>Follow the instructions on the page to download the agent.</li>
+
+<li>Unpack the agent into the directory of your choice. Then run `config.cmd`.</li>
+
 </ol>
 
-::: moniker range="vsts"
-### Server URL on Azure Pipelines
+> [!Note]
+> We recommend you configure the agent from an elevated Command Prompt.
 
-`https://dev.azure.com/{your-organization}`
+### Server URL and authentication
+
+::: moniker range="vsts"
+When setup asks for your server URL, for Azure DevOps Services, answer `https://dev.azure.com/{your-organization}`.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < vsts"
-### Server URL on TFS 2017 and newer
-
-`https://{your_server}/tfs`
+When setup asks for your server URL, for TFS, answer `https://{your_server}/tfs`.
 ::: moniker-end
 
-### Authentication type
-
 ::: moniker range="vsts"
-#### Azure Pipelines
-
-Choose **PAT**, and then paste the [PAT token you created](#permissions) into the command prompt window.
-
+When setup asks for your authentication type, choose **PAT**.
+Then paste the [PAT token you created](#permissions) into the command prompt window.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < vsts"
-#### TFS 2017 and newer
-
 > [!IMPORTANT]
 > 
 > Make sure your server is [configured to support the authentication method](agents.md#configure-tfs-authentication) you want to use.
@@ -96,9 +102,13 @@ When you configure your agent to connect to TFS, you've got the following option
 
 ::: moniker-end
 
-## Choose interactive or service mode
+### Choose interactive or service mode
 
 For guidance on whether to run the agent in interactive mode or as a service, see [Agents: Interactive vs. service](agents.md#account).
+
+Note that if you configure as a service, the username you choose to run as should be 20 characters or less.
+
+## Run the agent
 
  If you configured the agent to run interactively, to run it:
 
@@ -108,7 +118,9 @@ For guidance on whether to run the agent in interactive mode or as a service, se
 
 If you configured the agent to run as a service, it starts automatically. You can view and control the agent running status from the services snap-in. Run `services.msc` and look for "Azure Pipelines Agent (*name of your agent*)".
 
-If you need to change the logon account, don't do it from the services snap-in. Instead, see the information below to re-configure the agent.
+> [!Note]
+> If you need to change the agent's logon account, don't do it from the Services
+> snap-in. Instead, see the information below to re-configure the agent.
 
 [!INCLUDE [include](_shared/v2/replace-agent.md)]
 
@@ -142,7 +154,7 @@ The help provides information on authentication alternatives and unattended conf
 
 ### What version of the agent runs with TFS 2017?
 
-| TFS version | Agent version |
+| TFS version | Minimum agent version |
 |-|-|
 | 2017 RTM | 2.105.7 |
 | 2017.3 | 2.112.0 |

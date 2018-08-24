@@ -29,14 +29,35 @@ To use a Microsoft-hosted agent pool, first decide which pool to use:
 | Visual Studio 2017 | Hosted VS2017 |
 | Visual Studio 2013 or Visual Studio 2015 | Hosted |
 
-Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Pipeline** step, for the **Agent pool**, select the pool you decided on.
+# [YAML](#tab/yaml)
 
-Notes on choosing **Hosted macOS**:
+Then, when defining the `queue` in your YAML, use the queue you decided on.
 
-* This option affects where your data is stored. [Learn more](https://www.microsoft.com/TrustCenter/CloudServices/vsts/data-location)
-* For manual selection of tool versions on this Microsoft-hosted agent, see **Q & A** below.
-* To disable the Hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under Admin settings > Agent pools > Hosted macOS.
-* To disable the Hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under Project settings > Agent pools > Hosted macOS.
+```yaml
+phases:
+- phase: Windows
+  queue: Hosted VS2017
+  steps:
+  - script: echo hello from Windows
+- phase: macOS
+  queue: Hosted macOS
+  steps:
+  - script: echo hello from macOS
+```
+
+# [Web](#tab/web)
+
+Then, while [editing your build pipeline](../get-started-designer.md), on the **Options** or **General** tab or **Process** step, for the **Agent queue**, select the queue you decided on.
+
+---
+
+### Notes on choosing "Hosted macOS"
+
+This option affects where your data is stored. [Learn more](https://www.microsoft.com/TrustCenter/CloudServices/vsts/data-location).
+To disable the Hosted macOS agent pool for all projects, disable the `Hosted Agent` checkbox under **Admin settings** > **Agent pools** > **Hosted macOS**.
+To disable the Hosted macOS agent pool for a specific project, disable the `Hosted Agent` checkbox under **Project settings** > **Agent pools** > **Hosted macOS**.
+
+You can manually select of tool versions on macOS images. [See below](#mac-pick-tools).
 
 <h2 id="software">Software</h2>
 
@@ -52,19 +73,14 @@ Software on Microsoft-hosted agents is updated once each month.
 Microsoft-hosted agents:
 
 * Have [the above software](#software). You can also add software using [tool installers](../process/tasks.md#tool-installers).
-
 * Provide at least 10 GB of storage.
-
 * Can run jobs for up to 6 hours (30 minutes on the free tier).
-
-* Currently utilizing Microsoft Azure general purpose virtual machine sizes [(Standard_DS2_v2 and Standard_DS3_v2)](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general)
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2 and Standard_DS3_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general)
 
 Microsoft-hosted agents do not offer:
 
 * The ability to log on.
-
 * The ability to [drop artifacts to a UNC file share](../build/artifacts.md#unc-file-share).
-
 * The ability to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx).
 
 * Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
@@ -73,7 +89,23 @@ If Microsoft-hosted agents don't meet your needs, then you can [deploy your own 
 
 ## Avoid hard-coded references
 
-When you use a Microsoft-hosted agent, you should always use [variables](../build/variables.md) to construct any references to resources used by your build. We recommend that you avoid making hard-coded presumptions about resources provided by Microsoft-hosted agents (for example, the drive letter or folder that contains the repository).
+When you use a Microsoft-hosted agent, always use [variables](../build/variables.md)
+to refer to the build environment and agent resources. For example, don't
+hardcode the drive letter or folder that contains the repository. The precise
+layout of the hosted agents is subject to change without warning.
+
+## Agent IP ranges
+
+In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address.
+
+> [!Note]
+> Because Azure DevOps uses the Azure global network, IP ranges vary over time.
+> We recommend that you check back frequently to ensure you keep an up-to-date list.
+> If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses.
+
+We publish a [weekly XML file](https://www.microsoft.com/en-us/download/confirmation.aspx?id=41653) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. Hosted agents run in the same region as your Azure DevOps organization. You can check your region by navigating to `https://<your_organization>.visualstudio.com/_admin/_home/settings`. Under **Account**, you will see a field indicating your region.
+
+*This information is maintained by the [Azure DevOps support team](https://visualstudio.microsoft.com/team-services/support/ip-addresses-used-hosted-build/).*
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
@@ -90,8 +122,14 @@ A: All Azure DevOps organizations are provided with a single agent and a limited
 
 The Microsoft-hosted XAML build controller is no longer supported. If you have an organization in which you still need to run [XAML builds](https://msdn.microsoft.com/en-us/library/ms181709%28v=vs.120%29.aspx), you should set up a [self-hosted build server](https://msdn.microsoft.com/en-us/library/ms252495%28v=vs.120%29.aspx) and a [self-hosted build controller](https://msdn.microsoft.com/en-us/library/ee330987%28v=vs.120%29.aspx).
 
+> [!TIP]
+>
+> We strongly recommend that you [migrate your XAML builds to new builds](../build/migrate-from-xaml-builds.md).
+
+<a name="mac-pick-tools"></a>
 ### How can I manually select versions of tools on the Hosted macOS agent?
-* **Xamarin**
+
+#### Xamarin
 
   To manually select a Xamarin SDK version to use on the **Hosted macOS** agent, before your Xamarin build task, execute this command line as part of your build, replacing the Mono version number 5.4.1 as needed (also replacing '.' characters with underscores: '_'). Choose the Mono version that is associated with the Xamarin SDK version that you need.
 
@@ -101,7 +139,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
-* **Xcode**
+#### Xcode
 
   If you use the [Xcode task](../tasks/build/xcode.md) included with Azure Pipelines and TFS, you can select a version of Xcode in that task's properties. Otherwise, to manually set the Xcode version to use on the **Hosted macOS** agent, before your `xcodebuild` build task, execute this command line as part of your build, replacing the Xcode version number 8.3.3 as needed:
 
@@ -109,7 +147,7 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
 
   Xcode versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/vsts-image-generation/blob/master/images/macos/macos-Readme.md#xcode).
 
-* **Mono**
+#### Mono
 
   To manually select a Mono version to use on the **Hosted macOS** agent, before your Mono build task, execute this script in each job of your build, replacing the Mono version number 5.4.1 as needed:
 
@@ -120,10 +158,6 @@ The Microsoft-hosted XAML build controller is no longer supported. If you have a
   echo "##vso[task.setvariable variable=PKG_CONFIG_PATH;]$MONOPREFIX/lib/pkgconfig:$MONOPREFIX/share/pkgconfig:$PKG_CONFIG_PATH"
   echo "##vso[task.setvariable variable=PATH;]$MONOPREFIX/bin:$PATH"
 ```
-
-> [!TIP]
->
-> We recommend that you [migrate your XAML builds to new builds](../build/migrate-from-xaml-builds.md).
 
 ## Videos 
 > [!VIDEO https://www.youtube.com/embed/A8f_05lnfe0?start=0]
