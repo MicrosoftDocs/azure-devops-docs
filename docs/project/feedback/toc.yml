@@ -32,11 +32,11 @@
     href: ../../user-guide/provide-feedback.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json  
 - name: Resources 
   items:
-  - name: Agile
+  - name: Azure Boards
     href: /vsts/boards/index
-  - name: Testing
-    href:  /vsts/test/index-tp
-  - name: Uservoice Integration (Marketplace extension)
+  - name: Azure Test Plans
+    href: /vsts/test/index-tp
+  - name: UserVoice Integration (Marketplace extension)
     href: https://marketplace.visualstudio.com/items?itemName=ms-vsts.services-uservoice
   - name: UserVoice UI (Marketplace extension)
     href: https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-uservoice-ui

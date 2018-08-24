@@ -1,11 +1,7 @@
-- name: Visual Studio Team Foundation Server
+- name: Team Foundation Server
   tocHref: /vsts/
   topicHref: /vsts/index-tfs
   items: 
-  - name: Reporting
-    tocHref: /vsts/
-    topicHref: /vsts/index-tfs#devops-services-supplemental
-    items:
-    - name: SQL Server Reporting (TFS)
-      tocHref: /vsts/
-      topicHref: /vsts/report/sql-reports/index
+  - name: SQL Server Reporting 
+    tocHref: /vsts/report/sql-reports/
+    topicHref: /vsts/report/sql-reports/index

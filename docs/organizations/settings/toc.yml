@@ -217,15 +217,15 @@
       href: ../../extend/develop/custom-control.md
 - name: Resources
   items:
-  - name: Project Management
+  - name: Manage projects
     href: ../projects/index.md
-  - name: Security & Identity
+  - name: Security & identity
     href: ../security/index.md
   - name: READMEs & Wikis
     href: ../../project/wiki/index.md
   - name: "Manage Extensions (Marketplace)"
     href: ../../marketplace/index.md
-  - name: Organization Management
+  - name: Manage organizations
     href: ../accounts/index.md
   - name: Billing
     href: ../billing/index.md

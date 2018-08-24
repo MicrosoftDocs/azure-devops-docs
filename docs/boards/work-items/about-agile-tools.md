@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 06/19/2018
 ---
 
-# About Agile tools  
+# About Azure Boards and Agile tools  
 
 [!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
 

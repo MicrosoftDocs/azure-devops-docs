@@ -36,7 +36,7 @@
     href: cumulative-flow-cycle-lead-time-guidance.md 
   - name: Velocity guidance
     href: velocity-guidance.md
-  - name: "Analytics widgets (VSTS)"
+  - name: Analytics widgets
     href: ../analytics/analytics-widgets.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json
 - name: How-to Guides
   items:

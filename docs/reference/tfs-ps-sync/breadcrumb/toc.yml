@@ -1,11 +1,7 @@
-- name: Visual Studio Team Foundation Server
+- name: Team Foundation Server
   tocHref: /tfs/
   topicHref: /tfs/index
   items: 
-  - name: Deprecated Resources
-    tocHref: /vsts/index-tfs/
-    topicHref: /vsts/index-tfs/#tfs-deprecated
-    items:
-    - name: Project Server Integration
-      tocHref:  /vsts/reference/tfs-ps-sync/
-      topicHref: /vsts/reference/tfs-ps-sync/index
+  - name: Project Server Integration
+    tocHref:  /vsts/reference/tfs-ps-sync/
+    topicHref: /vsts/reference/tfs-ps-sync/index

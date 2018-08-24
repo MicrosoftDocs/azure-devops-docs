@@ -171,7 +171,7 @@ To learn more about permissions and access, see [Permissions and access for work
 
 To add team members to a project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md).
 
-To learn more about user accounts, permissions, and access, see [Security & Identity](../../organizations/security/index.md).
+To learn more about user accounts, permissions, and access, see [Security & identity](../../organizations/security/index.md).
 
 <a id="clients"></a>  
 ## Clients that support tracking work items  

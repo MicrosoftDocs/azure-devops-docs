@@ -6,6 +6,6 @@
     tocHref: /vsts/
     topicHref: /vsts/index#devops-services-settings
     items:
-    - name: Project Management
+    - name: Manage projects
       tocHref: /vsts/
       topicHref: /vsts/organizations/projects/index

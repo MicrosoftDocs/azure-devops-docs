@@ -70,9 +70,9 @@
     href: ../../security/permissions-access.md?toc=/vsts/billing/toc.json&bc=/vsts/billing/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Organization Management
+  - name: Manage organizations
     href: ../accounts/index.md
-  - name: "Security & Identity"
+  - name: "Security & identity"
     href: ../../security/index.md
   - name: Marketplace extensions
     href: ../../marketplace/index.md

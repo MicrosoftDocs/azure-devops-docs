@@ -2,10 +2,6 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Marketplace & Extensions
-    tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-extensions
-    items:
-    - name:  Extend Analytics with OData
-      tocHref: /vsts/report/extend-analytics/
-      topicHref: /vsts/report/extend-analytics/index
+  - name:  Extend Analytics with OData
+    tocHref: /vsts/report/extend-analytics/
+    topicHref: /vsts/report/extend-analytics/index

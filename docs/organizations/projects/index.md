@@ -13,11 +13,11 @@ monikerRange: '>= tfs-2013'
 ---
 
 
-# Project Management
+# Manage projects
 
 [!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)] 
 
-Add, rename, and delete projects as you scale your organization.  
+Add, rename, and delete team projects as you scale your organization.  
 
 ## 5-Minute Quickstarts
 
@@ -55,5 +55,5 @@ Add, rename, and delete projects as you scale your organization.
 
 * [New User Guide](../../user-guide/index.yml)
 * [Public Projects](../public/index.md)
-* [Security & Identity](../../organizations/security/index.md)
+* [Security & identity](../../organizations/security/index.md)
 * [Migrate from TFS to Azure DevOps Services](../../articles/migrate-to-vsts-from-tfs.md)

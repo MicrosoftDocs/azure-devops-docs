@@ -6,6 +6,6 @@
     tocHref: /vsts/organizations/
     topicHref: /vsts/organizations/index
     items:
-    - name: "Security & Identity"
+    - name: "Security & identity"
       tocHref: /vsts//organizations/security/
       topicHref: /vsts/organizations/security/index

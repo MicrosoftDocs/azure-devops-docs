@@ -1,11 +1,7 @@
-- name: Visual Studio Team Foundation Server
+- name: Team Foundation Server
   tocHref: /vsts/
   topicHref: /vsts/index-tfs
   items: 
-  - name: Deprecated Resources
-    tocHref: /vsts/index-tfs/
-    topicHref: /vsts/index-tfs/#tfs-deprecated
-    items:
-    - name: SharePoint Integration
-      tocHref: /vsts/report/sharepoint-dashboards/
-      topicHref: /vsts/report/sharepoint-dashboards/index
+  - name: SharePoint Integration
+    tocHref: /vsts/report/sharepoint-dashboards/
+    topicHref: /vsts/report/sharepoint-dashboards/index

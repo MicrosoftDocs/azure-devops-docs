@@ -22,6 +22,9 @@ You add a custom field to support tracking data requirements you have that aren'
 
 To learn more about what you can customize, see [About process customization and inherited processes](inheritance-process-model.md). 
 
+> [!IMPORTANT]  
+> To customize an on-premises TFS project, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services only. 
+
 [!INCLUDE [temp](../_shared/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]

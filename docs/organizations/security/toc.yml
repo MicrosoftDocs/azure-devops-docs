@@ -1,4 +1,4 @@
-- name: "Security & Identity"
+- name: "Security & identity"
   href: index.md
 - name: Overview
   items:
@@ -50,37 +50,37 @@
     href: ../accounts/resources-granted-to-project-members.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
 - name: How-to Guides
   items:
-  - name: Add users to your account
+  - name: Add users to Azure DevOps Services
     href: ../accounts/add-organization-users-from-user-hub.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
   - name: Change access levels
     href: change-access-levels.md 
-  - name: Export a list of users and their access levels  
+  - name: Export user list  
     href: export-users-audit-log.md   
-  - name: Set object-level or role-based permissions
+  - name: Set permissions for an object or role
     items: 
+    - name: Set dashboard permissions
+      href: ../../report/dashboards/dashboard-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
+    - name: Set delivery plan permissions
+      href: set-permissions-access-work-tracking.md#plan-permissions
     - name: Set Git branch permissions
       href: ../../repos/git/branch-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
-    - name: Set build and release permissions
+    - name: Set pipeline permissions
       href: ../../pipelines/policies/set-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
-    - name: Provide Stakeholders access to edit build and release pipelines
+    - name: Provide Stakeholders access to edit pipelines
       href: provide-stakeholder-pipeline-access.md
     - name: Set package feed permissions
       href: ../../package/feeds/feed-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json
-    - name: Set permissions and access for work tracking
-      href: set-permissions-access-work-tracking.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
-    - name: Set delivery plan permissions
-      href: set-permissions-access-work-tracking.md#plan-permissions
-    - name: Set dashboard permissions
-      href: ../../report/dashboards/dashboard-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
-    - name: "Set permissions for READMEs & Wikis"
+    - name: Set Wiki permissions
       href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
+    - name: Set work tracking permissions 
+      href: set-permissions-access-work-tracking.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
     - name: Set feedback permissions
       href: ../../project/feedback/give-permissions-feedback.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json
-    - name: Manage extension permissions (Security)
+    - name: Set permissions to manage extensions
       href: ../../marketplace/how-to/grant-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json
-  - name: Set permissions to view or create SQL Server reports
+  - name: Set SQL Server report permissions 
     href: ../../report/admin/grant-permissions-to-reports.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
-  - name: Set permissions to access a SharePoint project portal
+  - name: Set SharePoint project portal permissions
     href: set-sharepoint-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
   - name: Sign-in to the web or a client
     href: ../projects/connect-to-projects.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
@@ -110,7 +110,7 @@
     href: faq-trace-permissions.md  
 - name: Reference
   items:
-  - name: Default permission and access assignments
+  - name: Default permissions and access 
     href: permissions-access.md
   - name: Permission lookup guide 
     href: permissions-lookup-guide.md
@@ -119,7 +119,7 @@
   - name: Git permissions prior to TFS 2017 Update 1
     href: git-permissions-before-2017.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
   - name: Web site settings and security
-    href: websitesettings.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
+    href: websitesettings.md
   - name: Azure DevOps Services data protection overview
     href: ../../articles/team-services-security-whitepaper.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json  
   - name: TFSSecurity command
@@ -128,11 +128,11 @@
     href: /rest/api/vsts/security/permissions 
 - name: Resources
   items:
-  - name: Organization Management 
+  - name: Settings
+    href: ../settings/index.md
+  - name: Manage organizations 
     href: ../accounts/index.md
-  - name: TFS Server Administration 
-    href: /tfs/server/index
-  - name: Authentication guidance for REST APIs
+  - name: REST API authentication guidance
     href: ../../integrate/get-started/authentication/authentication-guidance.md
-  - name: Technical Articles
+  - name: Technical srticles
     href: ../../articles/index.md
