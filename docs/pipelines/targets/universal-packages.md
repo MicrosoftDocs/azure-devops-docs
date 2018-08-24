@@ -18,13 +18,13 @@ monikerRange: 'vsts'
 > [!NOTE]
 > Universal Packages are currently in private preview. See the [announcement blog post](https://blogs.msdn.microsoft.com/devops/2018/07/09/universal-packages-bring-large-generic-artifact-management-to-vsts/) for more details.
 
-When you want to publish a set of related files from a pipeline as a single package, you can use [Universal Packages](../../package/quickstarts/universal-packages.md) hosted in Azure Artifacts feeds.
+When you want to publish a set of related files from a pipeline as a single package, you can use [Universal Packages](../../artifacts/quickstarts/universal-packages.md) hosted in Azure Artifacts feeds.
 
 Before you read this topic, you should understand the kind of build pipeline you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
 ## Prepare your Universal Package
 
-[Universal Packages](../../package/quickstarts/universal-packages.md) are created from a directory of files. By default, the Universal Packages task will publish all files in `$(Build.ArtifactStagingDirectory)`. To prepare your Universal Package for publishing, either configure preceding tasks to place output files in that directory, or use the [Copy Files utility task](../tasks/utility/copy-files.md) to assemble the files you want to publish.
+[Universal Packages](../../artifacts/quickstarts/universal-packages.md) are created from a directory of files. By default, the Universal Packages task will publish all files in `$(Build.ArtifactStagingDirectory)`. To prepare your Universal Package for publishing, either configure preceding tasks to place output files in that directory, or use the [Copy Files utility task](../tasks/utility/copy-files.md) to assemble the files you want to publish.
 
 <a name="publish-packages"></a>
 
@@ -103,4 +103,4 @@ In the **Universal Packages** snippet you added above, add the `versionOption` k
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service
 
-[Package Management in Azure Artifacts and TFS](../../package/index.md)
+[Package Management in Azure Artifacts and TFS](../../artifacts/index.md)

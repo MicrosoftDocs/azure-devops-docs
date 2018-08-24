@@ -27,7 +27,7 @@ monikerRange: '>= tfs-2018'
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
 > [!TIP]
-> Looking for help to get started? See the how-to's for [restoring](../../../package/nuget/consume.md) and [publishing](../../../package/nuget/publish.md) packages.
+> Looking for help to get started? See the how-to's for [restoring](../../../artifacts/nuget/consume.md) and [publishing](../../../artifacts/nuget/publish.md) packages.
 
 > [!TIP]
 > This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
@@ -369,7 +369,7 @@ Make sure your AssemblyInfo.cs files contain the information you want shown in y
 ::: moniker-end
 
 1. Make sure you've prepared the build as described [above](#prepare).
-2. If you haven't already, [create a feed](../../../package/feeds/create-feed.md).
+2. If you haven't already, [create a feed](../../../artifacts/feeds/create-feed.md).
 3. Add the following build steps:
 
 <table>

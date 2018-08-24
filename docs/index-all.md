@@ -77,7 +77,7 @@ featureFlags:
                                                         <p><a href="/vsts/pipelines/index">Build and release pipelines</a></p>
 														<p><a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a></p>
 														<p><a href="/vsts/deploy-azure/index">Deploy to Azure</a></p>
-														<p><a href="/vsts/package/index">Package management</a></p>
+														<p><a href="/vsts/artifacts/index">Package management</a></p>
 														<p><a href="/vsts/pipelines/library/index">Library assets</a></p>
 														<p><a href="/vsts/pipelines/agents/agents">Hosted &amp; private agents</a></p>
 														<p><a href="/vsts/pipelines/tasks">Task reference</a></p>
@@ -142,10 +142,10 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Share code</h3>
-                                                        <p><a href="/vsts/package/overview">Package management</a></p>
-														<p><a href="/vsts/package/get-started-nuget">NuGet</a></p>
-														<p><a href="/vsts/package/get-started-npm">npm</a></p>
-														<p><a href="/vsts/package/get-started-maven">Maven</a></p>
+                                                        <p><a href="/vsts/artifacts/overview">Package management</a></p>
+														<p><a href="/vsts/artifacts/get-started-nuget">NuGet</a></p>
+														<p><a href="/vsts/artifacts/get-started-npm">npm</a></p>
+														<p><a href="/vsts/artifacts/get-started-maven">Maven</a></p>
                                                     </div>
                                                 </div>
                                             </div>

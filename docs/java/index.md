@@ -33,7 +33,7 @@ Get started with VSTS and Java using your IDE and your tools.
  - [Build Android apps](../pipelines/languages/android.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Build with Gradle](../pipelines/apps/java/build-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
  - [Build with Maven](../pipelines/apps/java/build-maven.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
- - [Manage Maven packages](../package/get-started-maven.md??toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
+ - [Manage Maven packages](../artifacts/get-started-maven.md??toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
 
 ## Videos
 

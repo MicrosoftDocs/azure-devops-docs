@@ -40,6 +40,6 @@ that this token will authorize for **your specific tasks**.
 	*	Git: [Git Credential Manager for macOS and Linux](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux) 
 	or [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows) 
 	(Requires [Git for Windows](https://www.git-scm.com/download/win))
-	*	NuGet: [NuGet Credential Provider](/vsts/package/nuget/nuget-exe)
+	*	NuGet: [NuGet Credential Provider](/vsts/artifacts/nuget/nuget-exe)
 
 0.  When you don't need your token anymore, just revoke it to remove its access.

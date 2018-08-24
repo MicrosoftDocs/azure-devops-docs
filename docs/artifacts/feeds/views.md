@@ -52,7 +52,7 @@ Once a package-version is in a release view, you can connect your package client
 
 ![Connect to view dialog with view URL](_img/connect-to-view.png)
 
-For more details, see [Consume NuGet packages in Visual Studio](../nuget/consume.md) or [Install npm modules](../npm/install.md).
+For more details, see [Consume NuGet packages in Visual Studio](../nuget/consume.md) or [Install npm modules](../get-started-npm.md).
 
 If you have a release process with more steps or differently-named steps, you can [customize your views](#managing-views). 
 

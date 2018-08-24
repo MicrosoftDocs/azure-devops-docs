@@ -146,7 +146,7 @@ This feature was prioritized based on a [suggestion](https://visualstudio.uservo
 
 ### Use upstream NuGet packages from elsewhere in VSTS
 
-We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple feeds with NuGet packages, now you can add one as an upstream source of the other within the same account. This allows you to only have a single feed in your [nuget.config file](/nuget/consume-packages/configuring-nuget-behavior), which gives you benefits like deterministic restore. See the [upstream sources](/vsts/package/concepts/upstream-sources?view=vsts#benefits-of-upstream-sources) documentation for more information.
+We continue to invest in upstream sources, which enable you to centralize all your package dependencies in a single feed and keep saved copies of all the packages you use. If you have multiple feeds with NuGet packages, now you can add one as an upstream source of the other within the same account. This allows you to only have a single feed in your [nuget.config file](/nuget/consume-packages/configuring-nuget-behavior), which gives you benefits like deterministic restore. See the [upstream sources](/vsts/artifacts/concepts/upstream-sources?view=vsts#benefits-of-upstream-sources) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![NuGet upstreams](_img/133_05.png)
@@ -155,7 +155,7 @@ We continue to invest in upstream sources, which enable you to centralize all yo
 
 Previously, only feeds created after the [Sprint 130 Update](/vsts/release-notes/2018/feb-14-vsts#package) could use the nuget.org upstream source. Now, most Package Management feeds created before that Update can use it too. If your feed is ready, you’ll see a banner above your packages letting you know that you can enable the nuget.org upstream source.
 
-Upstream sources to public package feeds like nuget.org and npmjs.com keep a saved copy of every package you use, so you’re protected against outages. See the [upstream sources](/vsts/package/concepts/upstream-sources?view=vsts#saving-packages-from-upstream-sources-continuity) documentation for more information.
+Upstream sources to public package feeds like nuget.org and npmjs.com keep a saved copy of every package you use, so you’re protected against outages. See the [upstream sources](/vsts/artifacts/concepts/upstream-sources?view=vsts#saving-packages-from-upstream-sources-continuity) documentation for more information.
 
 ## Wiki
 

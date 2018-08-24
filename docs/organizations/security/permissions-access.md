@@ -53,7 +53,7 @@ From the web portal, you can set permissions for all or individual build pipelin
 
 ## Azure Artifacts/Package Management 
 
-Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../package/feeds/feed-permissions.md).
+Feeds have three levels of access: Owners, Contributors, and Readers. Owners can add any type of identity&mdash;individuals, teams, and groups&mdash;to any access level. To set permissions, see [Secure feeds using permissions](../../artifacts/feeds/feed-permissions.md).
 
 [!INCLUDE [temp](_shared/package-feeds.md)]
 

@@ -99,7 +99,7 @@ For each SMB share, create a feed using the [instructions here](../feeds/create-
 - Leave the defaults for **Who can read** and **Who can contribute**
 
 For each feed you've created, [edit the feed and set permissions](../feeds/feed-permissions.md). There are a set of 
-[common identities](../feeds/common-identities.md) that you should consider when setting up feed permissions.
+[common identities](../feeds/feed-permissions.md) that you should consider when setting up feed permissions.
 
 If you've chosen to set up your new feed permissions to match your existing file share permissions, use the following table to give 
 your principals the appropriate group membership:

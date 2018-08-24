@@ -30,7 +30,7 @@ If many versions of these files exist in your repo, they will dramatically incre
 
 As your team works with editors and tools to create and update files, you should put these files into Git so your team can enjoy the benefits of Git's workflow.
 Don't commit other types of files, such as DLLs, library files, and other dependencies that aren't created by your team but your code depends on into your repo. Deliver these files 
-through [package management](../../package/overview.md) to your systems. 
+through [package management](../../artifacts/overview.md) to your systems. 
 
 Package management bundles your dependencies and installs the files on your system when you deploy the package. 
 Packages are versioned to ensure that code tested in one environment runs the same in another environment as long as they have the same installed packages. 

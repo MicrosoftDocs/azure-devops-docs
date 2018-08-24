@@ -10,7 +10,7 @@ However, for situations where a team of developers works on a large range of pro
 
 ### Where can I learn about Azure Artifacts?
 
-[Package Management in Azure Artifacts and TFS](../../../package/overview.md)
+[Package Management in Azure Artifacts and TFS](../../../artifacts/overview.md)
 
 ### Where can I learn more about NuGet?
 

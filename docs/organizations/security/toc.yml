@@ -69,7 +69,7 @@
     - name: Provide Stakeholders access to edit pipelines
       href: provide-stakeholder-pipeline-access.md
     - name: Set package feed permissions
-      href: ../../package/feeds/feed-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json
+      href: ../../artifacts/feeds/feed-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json
     - name: Set Wiki permissions
       href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json 
     - name: Set work tracking permissions 

@@ -51,7 +51,7 @@ Make sure you've prepared the build as described [above](#prepare).
 
 #### Create the feed
 
-See [Create a feed](../../../package/feeds/create-feed.md).
+See [Create a feed](../../../artifacts/feeds/create-feed.md).
 
 
 #### [Build](../../index.md) tasks
@@ -87,7 +87,7 @@ See [Create a feed](../../../package/feeds/create-feed.md).
 <ul>
 <li>Path/Pattern to nupkg: ```**\*.nupkg```</li>
 <li>Feed type: Internal NuGet Feed</li>
-<li>Internal feed URL: See [Find your NuGet package source URL](../../../package/nuget/consume.md#get-nuget-pkg-url).
+<li>Internal feed URL: See [Find your NuGet package source URL](../../../artifacts/nuget/consume.md#get-nuget-pkg-url).
 </li>
 </ul>
 </td>

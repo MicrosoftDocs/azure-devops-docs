@@ -21,9 +21,9 @@ monikerRange: '>= tfs-2017'
 
 This walkthrough will cover setting up an existing build to restore NuGet packages from Package Management feeds. It assumes that you've already:
 
-- [Set up your solution](/azure/devops/package/nuget/consume) to consume packages from a Package Management feed
+- [Set up your solution](/azure/devops/artifacts/nuget/consume) to consume packages from a Package Management feed
 - [Created a build](/azure/devops/pipelines/) for that solution
-- [Added the correct build service identity](/azure/devops/package/feeds/common-identities) to your feed
+- [Added the correct build service identity](/azure/devops/artifacts/feeds/feed-permissions) to your feed
 
 To build a solution that relies on NuGet packages from Package Management feeds, add the **NuGet** task (if one is not already present).
 
