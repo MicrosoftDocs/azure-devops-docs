@@ -4,7 +4,7 @@
   items: 
   - name: Settings
     tocHref: /vsts/organizations/
-    topicHref: /vsts/organizations/settings/index
+    topicHref: /vsts/organizations/index
     items:
     - name: Customization
       tocHref: /vsts/reference/

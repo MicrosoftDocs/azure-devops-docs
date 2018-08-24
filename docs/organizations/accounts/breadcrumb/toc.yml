@@ -1,11 +1,11 @@
-- name: Azure DevOps Services
+- name: Azure DevOps Services & TFS
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Management Tools
-    tocHref: /azure/devops/
-    topicHref: /azure/devops/index#devops-services-settings
+  - name: Settings
+    tocHref: /azure/devops/organizations/
+    topicHref: /azure/devops/organizations/index
     items:
     - name: Manage organizations
-      tocHref: /azure/devops/
+      tocHref: /azure/devops/organizations/accounts/
       topicHref: /azure/devops/organizations/accounts/index

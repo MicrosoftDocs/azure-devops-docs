@@ -1,4 +1,4 @@
-- name: Azure DevOps & TFS
+- name: Azure DevOps Services & TFS
   tocHref: /vsts/
   topicHref: /vsts/index
   items:
@@ -110,7 +110,7 @@
       topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
   - name: Settings
     tocHref: /vsts/organizations/settings/
-    topicHref: /vsts/organizations/settings/index
+    topicHref: /vsts/organizations/index
     items:
     - name: Project management
       tocHref: /vsts/organizations/projects/

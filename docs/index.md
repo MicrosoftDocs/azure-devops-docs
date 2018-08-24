@@ -206,7 +206,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/settings/index">
+                                        <a href="/vsts/organizations/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">

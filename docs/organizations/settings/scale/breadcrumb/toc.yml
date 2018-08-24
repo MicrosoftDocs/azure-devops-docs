@@ -2,9 +2,9 @@
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
-  - name: Management tools
-    tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-settings
+  - name: Settings
+    tocHref: /vsts/organizations/
+    topicHref: /vsts/organizations/index
     items:
     - name: Scale & Configure Teams
       tocHref: /vsts/organizations/settings/scale/

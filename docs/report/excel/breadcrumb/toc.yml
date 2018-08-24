@@ -1,10 +1,10 @@
-- name: Azure DevOps Services
+- name: TFS
   tocHref: /vsts/
   topicHref: /vsts/index
   items: 
   - name: Admin
     tocHref: /vsts/
-    topicHref: /vsts/index#devops-services-extensions
+    topicHref: /vsts/index-tfs
     items:
     - name: SharePoint Integration
       tocHref: /vsts/report/sharepoint-dashboards/
