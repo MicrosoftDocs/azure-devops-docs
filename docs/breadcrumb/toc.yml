@@ -23,9 +23,6 @@
   - name: Discover extensions
     tocHref: /vsts/marketplace/
     topicHref: https://marketplace.visualstudio.com/
-  - name: Service hooks
-    tocHref: /vsts/service-hooks/
-    topicHref: /vsts/service-hooks/index
   - name: Build extensions
     tocHref: /vsts/extend/
     topicHref: /vsts/extend/index
@@ -47,10 +44,6 @@
   - name: Azure Pipelines
     tocHref: /vsts/pipelines/
     topicHref: /vsts/pipelines/index
-    items:
-    - name: Start using Azure Pipelines 
-      tocHref: /vsts/pipelines/get-started/
-      topicHref: /vsts/pipelines/get-started/pipelines-get-started
   - name: Azure Boards 
     tocHref: /vsts/boards/
     topicHref: /vsts/boards/index
@@ -77,9 +70,6 @@
     tocHref: /vsts/repos/
     topicHref: /vsts/repos/index
     items:
-    - name: Start using Azure Repos
-      tocHref: /vsts/repos/get-started/
-      topicHref: /vsts/repos/get-started/index
     - name: Git
       tocHref: /vsts/repos/git/
       topicHref: /vsts/repos/git/index
@@ -109,12 +99,15 @@
     tocHref: /vsts/organizations/settings/
     topicHref: /vsts/organizations/index
     items:
-    - name: Project management
+    - name: Manage projects
       tocHref: /vsts/organizations/projects/
       topicHref: /vsts/organizations/projects/index
-    - name: Organization management
+    - name: Manage organizations
       tocHref: /vsts/organizations/accounts/
       topicHref: /vsts/organizations/accounts/index
+    - name: Billing
+      tocHref: /vsts/organizations/billing/
+      topicHref: /vsts/organizations/billing/index
     - name: "Security & identity"
       tocHref: /vsts/organizations/security/
       topicHref: /vsts/organizations/security/index
@@ -130,12 +123,12 @@
     - name: Customization
       tocHref: /vsts/reference/
       topicHref: /vsts/reference/index
-    - name: Billing
-      tocHref: /vsts/organizations/billing/
-      topicHref: /vsts/organizations/billing/index
     - name: Manage extensions
       tocHref: /vsts/marketplace/
       topicHref: /vsts/marketplace/index
+    - name: Service hooks
+      tocHref: /vsts/service-hooks/
+      topicHref: /vsts/service-hooks/index
 - name: Azure DevOps Services
   tocHref: /vsts/
   topicHref: /vsts/index

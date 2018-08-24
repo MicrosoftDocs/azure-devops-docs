@@ -1,5 +1,5 @@
 - name: Scale & configure teams
-  href: index.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json 
+  href: index.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
 - name: Overview
   items:
   - name: When to add a team or project
@@ -38,7 +38,7 @@
     - name: Reorder cards
       href: ../../../boards/boards/reorder-cards.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Select backlog levels
-      href: ../select-backlog-navigation-levels.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.jsontoc.json
+      href: ../select-backlog-navigation-levels.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Show bugs on backlogs & boards
       href: ../show-bugs-on-backlog.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
     - name: Set working days
@@ -53,6 +53,8 @@
   items:
   - name: "Default permissions & access"
     href: ../../security/permissions-access.md?toc=/vsts/organizations/settings/scale/toc.json&bc=/vsts/organizations/settings/scale/breadcrumb/toc.json
+  - name: REST APIs, Teams
+    href: /rest/api/vsts/core/teams
 - name: Resources
   items:
   - name: Navigation basics

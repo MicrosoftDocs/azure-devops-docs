@@ -76,17 +76,17 @@
     href: ../security/permissions-lookup-guide.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Get started guide
+  - name: Start using Azure DevOps
     href: ../../user-guide/index.yml
-  - name: Public Projects
-    href: ../public/index.md
-  - name: Project & Organization Settings
-    href: ../settings/index.md
   - name: "Security & identity"
     href: ../security/index.md
   - name: Notifications
     href: ../../notifications/index.md
   - name: Technical articles
     href: ../../articles/index.md
+  - name: Public projects
+    href: ../public/index.md
+  - name: All settings
+    href: ../settings/index.md
   - name: Migrate from TFS to Azure DevOps Services
     href: ../../articles/migrate-to-vsts-from-tfs.md

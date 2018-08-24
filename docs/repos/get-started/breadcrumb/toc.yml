@@ -5,7 +5,4 @@
   - name: Azure Repos
     tocHref: /vsts/repos/
     topicHref: /vsts/repos/index
-    items:
-    - name: Start using Azure Repos
-      tocHref: /vsts/repos/get-started/
-      topicHref: /vsts/repos/get-started/index
+

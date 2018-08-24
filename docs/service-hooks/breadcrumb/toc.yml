@@ -6,6 +6,6 @@
     tocHref: /vsts/organizations/
     topicHref: /vsts/organizations/index
     items:
-    - name: Service Hooks
-      tocHref: /vstsservice-hooks/
+    - name: Service hooks
+      tocHref: /vsts/service-hooks/
       topicHref: /vsts/service-hooks/index

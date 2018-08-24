@@ -1,4 +1,4 @@
-- name: Settings
+- name: All settings
   href: index.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json 
 - name: Overview
   items:
