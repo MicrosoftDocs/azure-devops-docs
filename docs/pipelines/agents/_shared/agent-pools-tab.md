@@ -2,6 +2,7 @@
 ms.topic: include
 ---
 
+<!--TODO: when the new UI becomes the default, change this to https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_settings/agentpools -->
 <ul>
 <li>Azure Pipelines: <code>https:&#x2F;&#x2F;dev.azure.com/{your_organization}/_admin/_AgentPool</code></li>
 

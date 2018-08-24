@@ -30,6 +30,16 @@ None
 ::: moniker range="> tfs-2018"
 ## YAML snippet
 [!INCLUDE [temp](../_shared/yaml/CmdLineV2.md)]
+
+The CmdLine task also has a shortcut syntax in YAML:
+
+```yaml
+- script: # script path or inline
+  workingDirectory: #
+  displayName: #
+  failOnStderr: #
+  env:  # mapping of environment variables to add
+```
 ::: moniker-end
 
 ## Arguments
@@ -42,33 +52,51 @@ None
 </tr>
 </thead>
 <tr>
-<td>Tool</td>
-<td><p>Specify the tool you want to run.</p>
-<p>If you are using an on-premises agent, in most cases you should configure the machine so that the tool is on the PATH enviornment variable. But if you know the location of the tool, you can specify a fully qualified path.</p>
-
-<!-- We have this in tooltip help: "Note: You can use **$(agent.builddirectory)**\\\\... if you want the path relative to repo." What's the use case for this. Trying to run something in another repo? -->
-
-</td>
+<td>Script</td>
+<td>Contents of the script you want to run</td>
 </tr>
 <tr>
-<td>Arguments</td>
-<td>Specify arguments to pass to the tool.</td>
+<th colspan="2">Optional</th>
 </tr>
 <tr>
-<th style="text-align: center" colspan="2">Advanced</th>
-</tr>
-<tr>
-<td>Working folder</td>
+<td>Working directory</td>
 <td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td>
 </tr>
 <tr>
 <td>Fail on standard error</td>
-<td>Select this check box if you want the build to fail if errors are written to the StandardError stream.</td>
+<td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
+</tr>
+<tr>
+<td>Env[ironment variables]</td>
+<td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
+```yaml
+- script: echo %MYSECRET%
+  env:
+    MySecret: $(Foo)
+```
+</td>
 </tr>
 [!INCLUDE [temp](../_shared/control-options-arguments.md)]
 </table>
 
 ## Example
+
+# [YAML](#tab/yaml)
+
+```yaml
+steps:
+- script: date /t
+  displayName: Get the date
+- script: dir
+  workingDirectory: $(Agent.BuildDirectory)
+  displayName: List contents of a folder
+- script: |
+    set MYVAR=foo
+    set
+  displayName: Set a variable and then display all
+```
+
+# [Web](#tabs/web)
 
 On the Build tab of a build pipeline, add these tasks:
 
@@ -123,6 +151,8 @@ On the Build tab of a build pipeline, add these tasks:
         </tr>
 
 </table>
+
+---
 
 ## Open source
 

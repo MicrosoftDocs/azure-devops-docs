@@ -4,9 +4,15 @@ ms.topic: include
 
 ### Decide which user you'll use
 
-Decide which user account you're going to use to register the agent.
+As a one-time step, you must register the agent. Someone with permission to
+[administer the agent queue](../../../../organizations/security/about-security-roles.md?view=vsts#agent-queue-security-roles)
+must complete these steps. The agent will not use this person's
+credentials in everyday operation, but they're required to complete registration.
+Learn more about [how agents communicate](../../agents.md#communication).
 
-#### Authenticate with a personal access token (PAT) to Azure Pipelines or TFS 2017 or newer
+::: moniker range=">= tfs-2017"
+
+#### Authenticate with a personal access token (PAT)
 
 1. Sign in with the user account you plan to use in either your Azure DevOps organization (```https://{your-organization}.visualstudio.com```)
 or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```).
@@ -24,25 +30,30 @@ or your Team Foundation Server web portal (```https://{your-server}:8080/tfs/```
 
 1. Copy the token. You'll use this token when you configure the agent.
 
-#### Authenticate as a user of TFS 2017 or newer
+::: moniker-end
 
-You can use either a domain user or a local Windows user on each of your TFS application tiers.
+::: moniker range="<= tfs-2017"
 
+#### Authenticate as a Windows user (TFS 2015 and TFS 2017)
 
-#### Authenticate as a user of TFS 2015
+As an alternative, on TFS 2017, you can use either a domain user or a
+local Windows user on each of your TFS application tiers.
 
-(Applies only to macOS and Linux.) We recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
+On TFS 2015, for macOS and Linux only, 
+we recommend that you create a local Windows user on each of your TFS application tiers and dedicate that user for the purpose of deploying build agents.
 
-
+::: moniker-end
 
 ### Confirm the user has permission
 
 Make sure the user account that you're going to use has permission to register the agent.
 
-> Is the user you plan to use is an Azure DevOps organization owner or a TFS server administrator? If so, then skip these steps. Otherwise you might see a message like this: _Sorry, we couldn't add the identity. Please try a different identity._
+Is the user an Azure DevOps organization owner or TFS server administrator? **Stop here**, you have permission.
+
+Otherwise:
 
 <ol>
-<li>Open a browser and navigate to the _Agent pools_ tab for your Azure DevOps organization or TFS server:
+<li>Open a browser and navigate to the **Agent pools** tab for your Azure Pipelines organization or TFS server:
 
 [!INCLUDE [include](../../_shared/agent-pools-tab.md)]</li>
 
@@ -53,4 +64,4 @@ If it's a [deployment group](../../../release/deployment-groups/index.md) agent,
 You can add a user to the deployment group administrator role in the **Security** tab on the **Deployment Groups** page of the **Pipelines** hub.</li>
 </ol>
 
-**Q:** I'm concerned about security. How is this account used? **A:** [Agent communication](../../agents.md#communication).
+> If you see a message like this: _Sorry, we couldn't add the identity. Please try a different identity._, you probably followed the above steps for an organization owner or TFS server administrator. You don't need to do anything; you already have permission to administer the agent queue.

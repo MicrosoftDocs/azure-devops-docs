@@ -74,6 +74,8 @@ If you're building from a Subversion repo, you must install the Subversion clien
 <li>Click the **Download** button.
 
 <li>Follow the instructions on the page.</li>
+
+<li>Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`.</li>
 </ol>
 
 ::: moniker-end
