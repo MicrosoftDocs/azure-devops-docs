@@ -1,6 +1,6 @@
 #### Q:	How do I find a project collection administrator?
 
-A: If you have at least Basic access, you can find your [project collection administrator](/vsts/organizations/security/set-project-collection-level-permissions) in your Azure DevOps Services organization's security settings.
+A: If you have at least Basic access, you can find your [project collection administrator](/azure/devops/organizations/security/set-project-collection-level-permissions) in your Azure DevOps Services organization's security settings.
 
 1.	Go to your Azure DevOps Services organization's security settings. 
 

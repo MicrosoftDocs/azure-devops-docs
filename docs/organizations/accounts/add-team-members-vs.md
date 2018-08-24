@@ -44,7 +44,7 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
-2. On the landing page, which is your Projects page, select your  project.
+2. On the landing page, which is your Projects page, select Select ![gear icon](../../_img/icons/gear-icon.png) **Project settings**.
 
    ![The Projects page](../../_shared/_img/settings/open-project-settings-vert-brn.png)
 
@@ -63,7 +63,7 @@ To add members to projects, you need [*project administrator*](../security/set-p
 
    [Why am I asked to choose between my "work or school account" and my "personal account"?](faq-add-team-members.md#ChooseOrgAcctMSAcct)
 
-2. On the organization landing page, which is your projects page,  find and select your project.
+2. On the organization landing page, which is your projects page,  select your project.
 
    ![The Projects list pane](_img/add-team-members/select-team-project-updated-ui.png)
 
@@ -94,7 +94,7 @@ Which email addresses can I add?
 	
 * You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless your Azure DevOps Services organization [uses your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control organization access through [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
-* If your Azure DevOps Services organization is connected to your directory, all users must be directory members and sign in to Azure DevOps Services with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](https://docs.microsoft.com/en-us/vsts/organizations/accounts/add-external-user?view=vsts).
+* If your Azure DevOps Services organization is connected to your directory, all users must be directory members and sign in to Azure DevOps Services with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/add-external-user?view=vsts).
 
 	![Add members' sign-in addresses or display names](_img/add-team-members/add-user-or-group-to-project.png)
 

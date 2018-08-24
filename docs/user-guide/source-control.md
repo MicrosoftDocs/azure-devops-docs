@@ -21,7 +21,7 @@ Source control, also referred to as version control, systems allow developers to
 
 Our systems support two types of source control: Git (distributed) or Team Foundation Version Control (TFVC), a centralized, client-server system. Both systems enable you to check-in files and organize files within folders, branches, and repositories. 
 
-You manage your repos, branches, and other code development operations from **Repos**.
+You manage your repos, branches, and other code development operations from **Azure Repos**.
 
 ![Repos, code git hub](_img/code-git-hub.png)
 

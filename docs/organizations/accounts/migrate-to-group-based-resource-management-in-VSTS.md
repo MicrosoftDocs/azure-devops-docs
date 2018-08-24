@@ -30,36 +30,45 @@ The most important thing is to avoid a situation where migration to group-based 
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
-    ![Open admin settings](_img/_shared/open-admin-settings-vert.png)
+    ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Go to the **Users** page. Select **Group rules**.
+3. Select **Users** > **Group rules**.
 
-   ![Select group rules for migration](_img/migrate-to-group-based-resource-management/choose-group-rules-on-users-page.png)
+   ![Select Users and then Group Rules](_img/assign-access-levels/see-group-rules.png)
 
-1. Make sure all required users are members of the groups. Highlight a group rule and select **Manage members**.
+4. Make sure all required users are members of the groups. Highlight a group rule and from the command bar, select **Manage members**.
 
    ![Highlight a group rule and select manage members](_img/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
 
    > [!NOTE]
    > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
 
-1. Select **Add a group rule** and then highlight an Azure Active Directory (Azure AD) group. Assign the required access level, project group memberships, and extensions.
+5. Add members and select **Add**.
+
+   ![Add group member](_img/migrate-to-group-based-resource-management/add-group-members.png)
 
 # [Previous navigation](#tab/prev-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
-1. Go to the **Users** page. Select **Group rules**.
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`)
 
-   ![Select group rules for migration](_img/migrate-to-group-based-resource-management/choose-group-rules-on-users-page.png)
+2. Open admin settings.
 
-1. Make sure all required users are members of the groups. Highlight a group rule and select **Manage members**.
+   ![Open admin settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
+
+3. Select **Users** > **Group rules**.
+
+   ![Select group rules for migration](_img/migrate-to-group-based-resource-management/select-group-rules-prev.png)
+
+4. Make sure all required users are members of the groups. Highlight a group rule and select **Manage members**.
 
    ![Highlight a group rule and select manage members](_img/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
 
    > [!NOTE]
    > Leave existing automation for managing access levels or extensions for users running as-is (for example, PowerShell). The goal is to reflect the same resources that the automation is applying to those users.
 
-1. Select **Add a group rule** and then highlight an Azure Active Directory (Azure AD) group. Assign the required access level, project group memberships, and extensions.
+5. Add members and select **Add**.
+
+   ![Add group member](_img/migrate-to-group-based-resource-management/add-group-members.png)
 
 ---
 

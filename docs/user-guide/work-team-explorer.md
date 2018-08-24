@@ -134,15 +134,15 @@ To learn more about settings, see [About team, project, and organizational-level
 
 In addition to connecting through Team Explorer, you can connect to a team project from these clients: 
 
-- [Web portal](../project/navigation/index.md?toc=/vsts/user-guide/toc.json&bc=/vsts/user-guide/breadcrumb/toc.json) 
+- [Web portal](../project/navigation/index.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json) 
 - [Visual Studio Code](https://code.visualstudio.com/docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](/../java/download-eclipse-plug-in.md) 
-- [Office Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json)
-- [Office Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json)
-- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json) 
+- [Office Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
+- [Office Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json)
+- [PowerPoint Storyboarding](../boards/backlogs/office/storyboard-your-ideas-using-powerpoint.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json) 
 - [Microsoft Test Manager](https://msdn.microsoft.com/library/jj635157.aspx)
-- [Microsoft Feedback Client](../project/feedback/give-feedback.md?toc=/vsts/project/feedback/toc.json&bc=/vsts/project/feedback/breadcrumb/toc.json)   
+- [Microsoft Feedback Client](../project/feedback/give-feedback.md?toc=/azure/devops/project/feedback/toc.json&bc=/azure/devops/project/feedback/breadcrumb/toc.json)   
 
 
 ## Related articles

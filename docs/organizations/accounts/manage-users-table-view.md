@@ -32,7 +32,7 @@ Need [more users with Basic features or Visual Studio subscriptions](../billing/
 
 ## Prerequisites
 
-You must have [Azure DevOps Services project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/vsts/organizations/accounts/toc.json&bc=/vsts/organizations/accounts/breadcrumb/toc.json).   
+You must have [Azure DevOps Services project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).   
 
 
 ##	Manage users
@@ -76,24 +76,27 @@ The Users view shows key information per user in a table. In this view, you can:
 
 # [Previous navigation](#tab/prev-nav)
  
-1. Open the **Users** page for your organization. Select the ![gear icon](../../_img/icons/gear-icon.png) **Settings** icon, and then select **Organization Settings**.
- 
-	![Open Organization Settings](../../_shared/_img/settings/open-organization-settings.png)
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`)
 
-	Select **Users** to open the **Manage users** page. Then, select **Add new users**. 
+2. Open admin settings.
 
-	![Open the Add new users page](../../user-guide/_img/sign-up/add-new-users.png)
+   ![Open admin settings](../../_shared/_img/settings/open-admin-settings-horz-browser.png)
 
-2. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu. 
+3. Select **Users** > **Add new users** to open the form.
 
-    In the context menu, select one of these options:
-    *   **Change access levels**
-    *   **Manage projects**
-    *   **Resend invite**
-    *   **Manage extensions** (if there are extensions)
-    *   **Remove from organization** (deletes user)
+   > [!div class="mx-imgBorder"]  
+   >![Open Add new users dialog box](../../user-guide/_img/sign-up/add-new-users.png)
 
-   ![Select the User hub, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu.png)
+4. Complete the form.
+
+   ![Web portal, organization admin context, Add new users dialog box](../../_shared/_img/add-user-dialog-prev.png)
+
+   * **Users**: Enter the Microsoft account's email address for the user. You can add several email addresses by separating them with a semicolon (;). Note that in Microsoft accounts, the email addresses appear in red.
+   * **Access level**: Leave the access level at **Basic** for users who will contribute to the code base. To learn more, see [About access levels](../../organizations/security/access-levels.md).
+   * **Add to projects**: Select the project that you named in the previous procedure.
+   * **Azure DevOps Services Groups**: Leave this entry at Project Contributors, the default security group for people who will contribute to your project. To learn more, see [Default permissions and access assignments](../../organizations/security/permissions-access.md).
+
+5. Select **Add** to complete your invitation.
 
 
 ### How is *access* different from *permissions*?

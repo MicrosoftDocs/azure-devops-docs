@@ -78,15 +78,19 @@ permissions. [How do I find the organization owner?](faq-delete-restore-vsts-org
 
 1. Sign in to your Azure DevOps Services organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose the ![gear icon](../../_img/icons/gear-icon.png), and then **Organization settings**.
+2. Choose ![gear icon](../../_img/icons/gear-icon.png), and  **Organization settings**.
 
    ![Screenshot of Open admin settings](../../_shared/_img/settings/open-account-settings.png)
 
-3. Select **Delete **.
+3. Select **Overview** > **Delete**.
 
-   ![Screenshot of Organization settings dialog box, with Delete highlighted](_img/delete-organization/organization-overview-settings.png)
+   ![Screenshot of organization settings, with Overview and Delete highlighted](_img/delete-organization/organization-overview-settings.png)
 
-4. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
+4. In the resulting dialog box, from the drop-down menu, choose your reason for deleting the organization. Then enter the name of your organization, and select **Delete**.
+
+   ![Screenshot of Delete Account dialog box](_img/delete-organization/delete-organization-popup.png)
+
+5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you'll see your deleted organization.
 
   [Need help?](faq-delete-restore-vsts-organization.md#get-support)
 

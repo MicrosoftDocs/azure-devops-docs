@@ -2,5 +2,5 @@
  
 A:	Yes. If you have at least Basic access, you can do this in your organization settings. Learn how to:
 
-*	[Rename your organization](/vsts/organizations/accounts/rename-vsts-organization).
-*	[Change the organization owner](/vsts/organizations/accounts/change-organization-ownership-vs).
+*	[Rename your organization](/azure/devops/organizations/accounts/rename-vsts-organization).
+*	[Change the organization owner](/azure/devops/organizations/accounts/change-organization-ownership-vs).
