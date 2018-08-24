@@ -26,14 +26,14 @@ You can use VSTS to build JavaScript projects without needing to set up any infr
 queue: 'Hosted Linux Preview' # other options - 'Hosted VS2017', 'Hosted macOS Preview'
 ```
 
-You can also use [self-hosted agents](../agents/agents.md#install) configured with specific tools or versions that you need to build your project.
+You can also use [self-hosted agents](../agents/agents.md#install) configured with specific tools or tool versions needed to build your project.
 
 ## Use a specific Node.js version
 
 Add the [Node tool installer](../tasks/tool/node-js.md) task to set the version of Node.js used in your pipeline. This sets subsequent pipeline tasks to use the specificed Node.js release and the version of the `npm` tool tied to that version. 
 
 > [!NOTE]
-> If you're using our [Microsoft-hosted agents](../agents/hosted.md) and just want the latest LTS release, you avoid this task unless you have a good reason for needing a specific version. The hosted agents are regularly updated, and setting this task up will result in spending a lot of time updating to a newer minor version every time the pipeline is run.
+> If you're using [Microsoft-hosted agents](../agents/hosted.md) and just want the latest LTS release, you avoid this task unless you have a good reason for needing a specific version. The hosted agents are regularly updated, and setting this task up will result in spending a lot of time updating to a newer minor version every time the pipeline is run.
 
 ```yaml
 # Node Tool Installer
@@ -55,9 +55,9 @@ If you have defined tools needed for your build as development dependencies in y
     command: install
 ```
 
-To install tools needed by your build but not set as dev dependencies, you can use the [npm](../tasks/tool/npm.md) or [cli](../tasks/tool/command-line.md) task, depending on the install method your tool needs.
+To install tools needed by your build but not set as dev dependencies in your project's `package.json`, you can use the [npm](../tasks/tool/npm.md) or [cli](../tasks/tool/command-line.md) task, depending on the install method your tool needs.
 
-The following example installs the latest version of the [Angular CLI](https://cli.angular.io/) using the `npm` task:
+The following example installs the latest version of the [Angular CLI](https://cli.angular.io/) using the `npm` task. Once installed, later stages of the build pipeline can use invoke the tool using the [cli](../tasks/utility/command-line.md) or [bash](../tasks/utility/bash.md) task.
 
 ```yaml
 - task: Npm@1
@@ -66,11 +66,20 @@ The following example installs the latest version of the [Angular CLI](https://c
     customCommand: install -g @angular/cli
 ```
 
-These tasks will be run every time your pipeline executes, so be mindful of the impact installing tools has on build times. Consider configuring [self-hosted agents](../agents/agents.md#install) already configured with the tools if performance overhead becomes a serious impact to your build performance.
+These tasks will be run every time your pipeline executes, so be mindful of the impact installing tools has on build times. Consider configuring [self-hosted agents](../agents/agents.md#install) already configured with the tools if tool install overhead becomes a serious impact to your build performance.
 
 ## Install dependencies from other sources
 
-To install dependencies from a registry other than the public npm registry, or to use [VSTS packaging management](/vsts/package/overview) , use the `npm` task. Consider using a VSTS package management feed with upstream support to cache remote dependencies and centralize internal and external dependencies into a single source of truth registry.
+Pull dependencies from a custom npm registry by configuring your source repo with a [.npmrc](https://docs.npmjs.com/files/npmrc) and the `npm` task:
+
+```yaml
+- task: Npm@1
+  inputs:
+    command: install
+    customRegistry: useNpmrc
+```
+
+To install dependencies from [VSTS packaging management](/vsts/package/overview) , use the `npm` task. Consider using a VSTS package management feed with upstream support to cache remote dependencies and centralize internal and external dependencies into a single source of truth registry.
 
 This example installs packages from a VSTS package management feed:
 
@@ -82,16 +91,57 @@ This example installs packages from a VSTS package management feed:
     customFeed: yourFeedName
 ```
 
-You can also specify any custom npm registry by configuring your source repo with a [.npmrc](https://docs.npmjs.com/files/npmrc) and the `npm` task:
+## Install dependencies using yarn
+
+Use the [cli](../tasks/tool/command-line.md) or [bash](../tasks/utility/bash.md) task to invoke [yarn](https://yarnpkg.com) to restore dependencies.  Yarn is available preinstalled on some [Microsoft-hosted agents](../agents/hosted.md) and can be configured on self-hosted agents like any other tool.
+
+```yaml
+- task: Bash@3
+   inputs:
+      script: 'yarn install'
+```
+
+## Compiling your project 
+
+Use compilers such as [Babel](https://babeljs.io/) and the [TypeScript](https://www.typescriptlang.org/) to covert your source code into versions that are usable by the Node.js runtime or web browsers.
+
+If you have a [script object](https://docs.npmjs.com/misc/scripts) set up in your project's `package.json` that runs your compiler, invoke it in your pipeline using the [npm](../tasks/tool/npm.md) task. The following example 
 
 ```yaml
 - task: Npm@1
   inputs:
-    command: install
-    customRegistry: useNpmrc
+     command: run-script
+     options: compile
+```
+
+You can call compilers directly from the pipeline using the [cli](../tasks/tool/command-line.md) or [bash](../tasks/utility/bash.md) task. These commands will run from the current directory of the root of the cloned source code repository.
+
+```yaml
+- task: Bash@3
+  inputs:
+     script: 'tsc --target ES6 --strict true --project tsconfigs/production.json'
+```
+
+## Running tests and publishing results
+
+Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results to VSTS easily using the built-in [Publish Test Results](../tasks/test/publish-test-results) task.
+
+If your testing framework doesn't support JUnit output out of the box, you'll need to add support through a third party reporting module, such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your testing script to use the JUnit reporter, or if the reporter supports command line options you can pass those into the task definintion.
+
+The first example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `mocha test` directly using the [bash](../tasks/utility/bash.md) task. This produces the JUnit XML output at the default location of `./test-results.xml`. 
+
+```yaml
+- task: Bash@3
+  inputs: 
+    script: 'mocha test --reporter mocha-junit-reporter'
 ```
 
 
+
+
+
+
+If you have a npm script defined for the compile task, you can 
 
 To run a pipeline with multiple Python versions, such as to test your project using different versions, define a phase with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/npm.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the phase for all versions in the matrix, depending on how many concurrent jobs are available.
 
