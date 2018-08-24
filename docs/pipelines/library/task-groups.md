@@ -65,6 +65,11 @@ to change each one individually.
 
 ## Create a task group
 
+1. Ensure that all the tasks you intent to incude do not contain linke parameters. The easy
+   way to do this is to choose **Unlink all** in the settings panel for the entire process.
+
+   ![Unlinking parameters for all tasks](_img/unlink-task-group.png)
+
 1. Select a sequence of tasks in a build or release pipeline (when using a mouse, click on the
    checkmarks of each one). Then open the shortcut menu and choose **Create task group**.
 
@@ -79,7 +84,7 @@ to change each one individually.
 ## Manage task groups
 
 All the task groups you create in the current project are listed in
-the **Task Groups** tab of the **Pipelines** hub.
+the **Task Groups** page of **Azure Pipelines**.
 
 ![Listing task groups](_img/list-task-group.png)
 
