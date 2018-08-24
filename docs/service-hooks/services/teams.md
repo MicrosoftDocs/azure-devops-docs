@@ -43,7 +43,7 @@ While the functionality is the same across VSTS and Team Foundation Server, the 
 
     <img alt="Connectors list" src="./_img/teams/Teams Connector config 2.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
-3. Select your VSTS account (you may be prompted to sign in first), the project, and your team.
+3. Select your VSTS organization (you may be prompted to sign in first), the project, and your team.
 
     <img alt="VSTS Connector event configuration" src="./_img/teams/Teams Connector config 4.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
