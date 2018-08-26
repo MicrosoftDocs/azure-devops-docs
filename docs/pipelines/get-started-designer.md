@@ -1,7 +1,7 @@
 ---
-title: Create your first build and release
+title: Use the designer to create a CI/CD pipeline
 titleSuffix: Azure Pipelines & TFS
-description: CI/CD novice? Create an automated build and release pipeline in Azure Pipelines and TFS
+description: Use the designer in Azure Pipelines to create a pipeline
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -9,11 +9,11 @@ ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 07/16/2018
+ms.date: 08/23/2018
 monikerRange: '>= tfs-2017'
 ---
 
-# Create your first build and release
+# Use the designer
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
@@ -27,13 +27,13 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker range="vsts"
 
-We'll show you how to use Azure Pipelines to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end pipeline run every time you push new code into your project. You'll also become familiar with all the basic concepts of Azure Pipelines.
+We'll show you how to use the designer in Azure Pipelines to create a build and release that prints "Hello world". If you plan to use a YAML file instead of the designer, then see [Create your first pipeline](get-started-yaml.md) instead. 
 
 ::: moniker-end
 
 ::: moniker range="< vsts"
 
-We'll show you how to use TFS to create a build that prints "Hello world" and then automatically creates a release that does the same. By the time you finish here, you'll see an end-to-end pipeline run every time you push new code into your project. You'll also become familiar with all the basic concepts of build and release in TFS.
+We'll show you how to use TFS to create a build and a release that prints "Hello world".
 
 ::: moniker-end
 
@@ -749,6 +749,5 @@ To learn more about build pipeline settings, see:
 
 > [!NOTE]
 > You can also manage builds and build pipelines from the command line or scripts using the [Azure Pipelines CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
-
 
 <!-- ENDSECTION -->

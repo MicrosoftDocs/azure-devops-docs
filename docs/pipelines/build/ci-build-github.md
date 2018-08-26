@@ -34,30 +34,6 @@ In this tutorial, you learn how to:
 
 ## Set up CI for your GitHub repository
 
-# [YAML](#tab/yaml)
-
-::: moniker range="vsts"
-
-> [!IMPORTANT]
-> Ensure your browser does not block the pop-up on step 6 below.
-
-1. Ensure that you have a `azure-pipelines.yml` file at the root of your repository in `master` branch. If you started from the [sample .NET Core repo](https://github.com/adventworks/dotnetcore-sample) it already has one. See the various other languages that we support in this documentation for examples of YAML file for the type of app you are interested in.
-1. Navigate to your Azure DevOps organization and project. Select **Pipelines**, and then select **Builds**.
-1. Select **New** to create a new build pipeline.
-1. Select **GitHub** for the type of repository.
-1. Give your connection a name, and then select the **Authorize using OAuth** button. Optionally you can use a GitHub **personal access token** instead of OAuth.
-1. When prompted, sign in to your **GitHub account**. Then select **Authorize** to grant access to your Azure DevOps organization. If you already are signed into GitHub in another browser tab, you may not see this step.
-1. Choose the repository that contains the sample you forked earlier and select **Continue**.
-1. Select the **YAML** build template.
-1. Choose **Hosted VS2017** for Agent pool.
-1. For the **YAML path**, select the YAML file at the root of your repo by clicking on the ellipsis next to that field.
-1. Select **Save & queue** to save your build pipeline and create the first build.
-1. Once the build completes, select the name of the pipeline in the build results page to navigate to the history of builds for that pipeline. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
-
-::: moniker-end
-
-# [Designer](#tab/designer)
-
 Follow the steps below to configure GitHub as a source for your Azure Pipelines build.
 
 > [!IMPORTANT]
@@ -74,8 +50,6 @@ Follow the steps below to configure GitHub as a source for your Azure Pipelines 
 1. Select **Triggers**. Enable **Continuous integration** for your builds. Ensure you include the `master` branch under **Branch filters**. This setting ensures each commit to `master` in GitHub will trigger a build via a GitHub webhook.
 1. Select **Save & queue** to save your build pipeline and create the first build.
 1. Once the build completes, select the name of the pipeline in the build results page to navigate to the history of builds for that pipeline. Take a note of the `definitionId` in the URL. You will need this to set up the build badge in upcoming steps.
-
----
 
 ## Add a build status badge
 
