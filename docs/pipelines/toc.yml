@@ -214,8 +214,6 @@
       href: test/getting-started-with-continuous-testing.md
     - name: UI test with Selenium
       href: test/continuous-test-selenium.md
-    - name: Test Java applications
-      href: test/continuous-test-java.md
     - name: Review test results
       href: test/review-continuous-test-results-after-build.md
     - name: Associate results with requirements

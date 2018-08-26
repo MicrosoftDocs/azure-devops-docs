@@ -36,7 +36,7 @@ Load test your app with hundreds of thousands of users using Azure DevOps Test P
 
 *  You can even use existing unit or functional tests to generate load.
 
-![Comprehensive testing capabilities](_img/performance-testing/load-test-menu.png)
+![Comprehensive testing capabilities](_img/_shared/LoadTestVSO-charts.png)
 
 ## Cloud scalable
 
