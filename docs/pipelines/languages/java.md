@@ -27,7 +27,7 @@ https://github.com/adventworks/java-sample
 
 The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
 
-Follow all the instructions in [Build a repo with YAML](../get-started-yaml.md) to create a build pipeline for the sample app.
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
 
 Read through the rest of this topic to learn some of the common ways to customize your Java build pipeline.
 

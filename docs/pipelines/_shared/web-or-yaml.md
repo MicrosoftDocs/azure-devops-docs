@@ -19,7 +19,7 @@ steps:
 
 [Get started with YAML builds](../get-started-yaml.md).
 
-Follow all the instructions in [Build a repo with YAML](../get-started-yaml.md) to create a build pipeline for the sample app.
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
 
 ::: moniker-end
 

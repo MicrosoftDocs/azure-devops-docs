@@ -28,7 +28,7 @@ In a YAML build pipeline, your CI build steps are configured as code, which mean
 
 ## Get started
 
-If you're new to YAML builds, or to Azure Pipelines, we suggest you begin learning with [Build a repo with YAML file](../get-started-yaml.md).
+If you're new to YAML builds, or to Azure Pipelines, we suggest you begin learning with [Create your first pipeline file](../get-started-yaml.md).
 
 ## How do YAML builds compare to web-interface builds?
 
