@@ -1,5 +1,5 @@
 ---
-title: Manage how long to keep test results in Azure DevOps
+title: Manage how long to keep test results
 description: Manage how long Azure DevOps keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.date: 08/24/2018
 monikerRange: 'vsts'
 ---
 
-# Control how long to keep test results in Azure DevOps
+# Control how long to keep test results
 
 [!INCLUDE [version-header](_shared/version-header.md)]
 
@@ -38,7 +38,7 @@ your test results before you can analyze the data.
 
 1. Go to your project and then open the [project settings page](../project/navigation/go-to-service-page.md#open-project-settings).
   
-1. Select a limit for how long you want to keep manual test data. 
+1. In the **Test | Retention** page, select a limit for how long you want to keep manual test data. 
 
    ![Select test data retention limits](_img/how-long-to-keep-test-results/team-project-test-data-retention-limits.png)
 
@@ -57,24 +57,21 @@ you can specify how long to keep automated test results based on the branch.
 
    ![Build pipeline](_img/how-long-to-keep-test-results/edit-build-def.png)
 
-   By default, test results are deleted when the build is deleted.  
-
-   ![Test results are deleted when builds are deleted](_img/how-long-to-keep-test-results/vso-keep-test-data-builds.png)
-
-1. If you use Git, and you have more than one branch, 
-   set the branch filter to delete test results and builds
-   in one branch. Meanwhile, you can keep test results in another branch, 
-   even though you delete the builds in that other branch.  
+1. Open the **Retention** page. Modify the default policies as required, or add new policies.
 
    ![Delete test results by branch](_img/how-long-to-keep-test-results/vso-git-keep-test-data-builds.png)
+
+   If you use Git, and have more than one branch, 
+   set the branch filter to delete test results and builds
+   in specific branches as required. You can keep test results in other branches, 
+   even though you delete the builds in these branches.  
 
 ### Automated test results not associated with builds or orphaned from deleted builds
 
 To clean up automated test results that are left over from deleted 
 builds or test results that aren't related to builds, 
 for example, results published from external test systems, 
-set the retention limits at the project level. 
-[Learn more](#manual-test-results-limits)
+set the retention limits at the project level as shown [here](#manual-test-results-limits).
 
 ## See also
 

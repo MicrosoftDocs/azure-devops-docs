@@ -88,7 +88,8 @@ solution - on the same build machine.
 
    ![Build pipeline: queue build](_img/getting-started-with-continuous-testing/start-build.png) 
 
-1. After the build finishes, you can review the test results to resolve any problems that happened. Go to the build to open the build summary.
+1. After the build finishes, you can review the test results to resolve any problems that happened.
+   Go to the build summary and open the **Tests** page.
 
    ![Go to Build hub, build pipeline, build summary](_img/getting-started-with-continuous-testing/open-summary.png)
 
