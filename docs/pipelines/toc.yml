@@ -1,16 +1,14 @@
-- name: Build and Release
+- name: Azure Pipelines
   href: index.md
-- name: Overview
-  items:
-  - name: About Build and Release
-    href: overview.md
 - name: Quickstarts
   items:
-  - name: Your first build and release
-    href: get-started-designer.md
-  - name: Build a repo with YAML
+  - name: Getting started
+    href: overview.md
+  - name: Create your first pipeline
     href: get-started-yaml.md
-  - name: Azure DevOps Project
+  - name: Use the designer
+    href: get-started-designer.md
+  - name: Use the Azure portal
     href: get-started-azure-devops-project.md
 - name: Languages
   items: 
@@ -60,24 +58,6 @@
     href: apps/cd/deploy-docker-webapp.md
   - name: Windows VM
     href: apps/cd/deploy-webdeploy-iis-deploygroups.md
-- name: Tutorials
-  items:
-  - name: Build multiple branches
-    href: build/ci-build-git.md
-  - name: Build your GitHub repo
-    href: build/ci-build-github.md
-  - name: Build open source projects
-    href: build/ci-public.md
-  - name: CD to Azure Web App
-    href: apps/cd/deploy-webdeploy-webapps.md
-  - name: Set up multi-stage release
-    href: release/define-multistage-release-process.md
-  - name: Use approvals and gates
-    href: release/deploy-using-approvals.md
-  - name: Jenkins CI for Azure Pipelines Azure CD
-    href: release/integrate-jenkins-vsts-cicd.md
-  - name: Jenkins CI for Azure Pipelines Azure AKS
-    href: release/integrate-jenkins-vsts-aks.md
 - name: Concepts
   items:
   - name: Agents
@@ -182,6 +162,24 @@
       href: library/secure-files.md
   - name: Retention policies
     href: policies/retention.md
+- name: Tutorials
+  items:
+  - name: Build multiple branches
+    href: build/ci-build-git.md
+  - name: Build GitHub repo using designer
+    href: build/ci-build-github.md
+  - name: Build open source projects
+    href: build/ci-public.md
+  - name: CD to Azure Web App
+    href: apps/cd/deploy-webdeploy-webapps.md
+  - name: Set up multi-stage release
+    href: release/define-multistage-release-process.md
+  - name: Use approvals and gates
+    href: release/deploy-using-approvals.md
+  - name: Jenkins CI for Azure Pipelines Azure CD
+    href: release/integrate-jenkins-vsts-cicd.md
+  - name: Jenkins CI for Azure Pipelines Azure AKS
+    href: release/integrate-jenkins-vsts-aks.md
 - name: How-to Guides
   items:
   - name: Connect to Azure

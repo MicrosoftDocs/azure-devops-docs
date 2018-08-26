@@ -1,6 +1,6 @@
 ---
-title: Create a CI/CD pipeline for your app with the Azure DevOps Project | Quickstart
-description: The DevOps Project makes it easy to get started on Azure. It helps you launch an app on an Azure service of your choice in few quick steps.
+title: Use the Azure portal to create a pipeline
+description: Use the Azure portal to create a pipeline
 ms.prod: devops
 ms.technology: devops-cicd
 services: vsts
@@ -20,15 +20,13 @@ ms.custom: mvc
 monikerRange: 'vsts'
 ---
 
-# Create an Azure DevOps Project
+# Use the Azure portal
 
-The Azure DevOps Project presents a simplified experience to create Azure resources and to set up a continuous integration (CI) and continuous delivery (CD) pipeline for your application to those resources. It uses Azure Pipelines, which is the CI/CD solution for Azure, to configure the pipeline.
+The Azure portal presents a simplified experience to create Azure resources and to set up a continuous integration (CI) and continuous delivery (CD) pipeline for your application to those resources. It uses Azure Pipelines, which is the CI/CD solution for Azure, to configure the pipeline.
 
 If you don't have an Azure subscription, you can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
 ## Sign in to the Azure portal
-
-The Azure DevOps Project creates a CI/CD pipeline in Azure Pipelines.  You can create a free **new Azure DevOps** organization or use an **existing organization**.  The DevOps Project also creates **Azure resources** in the **Azure subscription** of your choice.
 
 1. Sign into the [Microsoft Azure portal](https://portal.azure.com).
 

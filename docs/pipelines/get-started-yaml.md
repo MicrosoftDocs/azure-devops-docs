@@ -1,6 +1,6 @@
 ---
-title: Build a repository with YAML
-description: Set up CI for a repository containing a YAML file
+title: Create your first pipeline
+description: Create your first pipeline
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
@@ -8,141 +8,101 @@ ms.assetid: 5A8F1A12-72BF-4985-9B27-65CBC08462F7
 ms.manager: douge
 ms.author: alewis
 author: andyjlewis
-ms.date: 8/03/2018
+ms.date: 8/23/2018
 monikerRange: '> tfs-2018'
 ---
 
-# Build a repository with YAML
+# Create your first pipeline
 
-If you manage your code in GitHub or in Azure Repos Git, then you can use Azure Pipelines to easily build the repo by adding a YAML file to it. Azure Pipelines can be used to automate continuous integration (CI) for an application written in any programming language.
-
-> [!NOTE]
-> To use YAML you must have the **Build YAML pipelines** [preview feature](../project/navigation/preview-features.md) enabled on your organization.
+This is a step-by-step guide to build a GitHub repository using Azure Pipelines.
 
 ## Prerequisites
 
 [!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
 
+* The following preview features enabled in your Azure DevOps organization.
+  * **New builds hub**
+  * **New YAML pipeline creation experience**
+
+  You can check the preview features by selecting your profile in your Azure DevOps organization.
+  ![New YAML pipeline creation experience](_img/get-started-yaml/preview-toggle.png)
+
+* A GitHub account, where you can create a repository.
+
 ## Get the sample code
 
-Choose the sample application for the language of your choice from one of the following repositories.
+Azure Pipelines can be used to build an app written in any language. Pick a language of your choice from the following sample repositories, and fork it into your own GitHub account.
 
-| Programming language | Repository with a sample application |
+| Programming language | Repository with a sample app |
 |----------------------|----------------------------|
 | .NET Core | `https://github.com/MicrosoftDocs/pipelines-dotnet-core` |
-| Android | `https://github.com/adventworks/android-sample` |
-| Go | `https://github.com/adventworks/go-sample` |
+| NodeJS | `https://github.com/MicrosoftDocs/pipelines-javascript` |
 | Java | `https://github.com/adventworks/java-sample` |
-| JavaScript | `https://github.com/adventworks/nodejs-sample` |
+| Python |  `https://github.com/MicrosoftDocs/pipelines-python-django` |
+| Go | `https://github.com/MicrosofyDocs/pipelines-go` |
 
-Get the code for the sample application into your own GitHub or Azure Repos repository.
-
-# [Azure Repos Git repo](#tab/gitvsts)
-
-[!INCLUDE [include](apps/_shared/get-sample-code-vsts.md)]
-
-# [GitHub repo](#tab/github)
-
-[!INCLUDE [include](apps/_shared/get-sample-code-github.md)]
-
----
+You should now have a sample app in your GitHub account.
 
 ## Get your first build
 
-# [Azure Repos Git repo](#tab/gitvsts)
+1. Login to your Azure DevOps organization at http://dev.azure.com/.
 
-1. In Azure Repos, navigate to the **Code** hub, choose the **Files** tab, and then choose the repository you created in the above steps.
+1. Navigate to the **Pipelines** page, and then choose **New pipeline**.
 
-1. Inspect the `azure-pipelines.yml` file at the root of your imported repository. The YAML file contains the instructions for the build pipeline. Here's an example snippet from a Gradle build pipeline. The actual content in your file depends on the sample application you chose.
+1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
-  ```yaml
-  pool: 'Hosted VS2017'
+   ![GitHub selection](_img/get-started-yaml/new-pipeline.png)
 
-  steps:  
-  - task: Gradle@2
-    inputs:
-      gradleWrapperFile: 'gradlew'
-      testResultsFiles: '**/TEST-*.xml'
-      tasks: 'build'
-  ```
+1. For the second step, choose to **Authorize with OAuth** by clicking on **Authorize**. You may be redirected to GitHub to login. Enter your GitHub credentials.
 
-  The next time you push a change to this YAML file, Azure Pipelines automatically builds your code.
+1. When you are redirected back to Azure Pipelines, select the sample app repository.
 
-1. Choose **Edit** to make a change to the YAML file.
+1. For the third step, Azure Pipelines analyzes the code in your repository. If your repository already contains an `azure-pipelines.yml` file, which is the case for all sample repositories, then this step is skipped. Or else, Azure Pipelines recommends a starter template based on the code in your repository.
 
-1. Add the following comment:
+1. In the final step, you'll be shown the YAML file that will be used.
 
-  ```
-  # This repository is built using Azure Pipelines.
-  ```
+1. Select **Save and run** and choose the option to **Commit directly to the master branch**.
 
-1. Commit the above change to the master branch.
+1. The YAML file is now pushed to your GitHub repository and a new build is automatically started.
 
-1. Navigate to the **Pipelines** hub.
+1. Wait for the build to complete.
 
-1. Observe that there's a new build pipeline named _{name-of-your-repo} YAML CI_. A build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
+## Get the status badge
 
-1. After an agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
+1. In the Azure pipelines page, navigate to the list of pipelines.
 
-# [GitHub repo](#tab/github)
+1. Select the pipeline that was created for you.
 
-In Azure Pipelines:
+1. In the context menu for the pipeline, select **Status badge**.
 
-1. Navigate to the **Builds** tab of the **Pipelines** hub, and then choose **+ New Build Pipeline**.
+   ![Status badge](_img/get-started-yaml/status-badge.png)
 
-1. You're asked to **Select a repository** for the new build pipeline. Select **GitHub**, and then select your  repository. You'll need to authorize access to your repo via a GitHub service connection.
+1. Copy the sample markdown from the status badge panel.
 
-1. You are then asked to select a template for the pipeline. Select **YAML**, and then select **Apply**.
-
-1. Select **Pipeline**.
-
-1. For the **Agent pool** select _Hosted Linux_. This is how you can use our pool of agents that have the software you need to build your application.
-
-1. For the **Yaml path**, select the **azure-pipelines.yml** file in the root of your repo.
+## Add status badge to your repository
 
 In GitHub:
 
-1. Inspect the `azure-pipelines.yml` file at the root of your forked repository. The YAML file contains the instructions for the build pipeline. Here is a snippet from the file. The contents in your file may be different depending on the sample application you chose.
+1. Inspect the `azure-pipelines.yml` file at the root of your repository. The YAML file contains the instructions for the pipeline. The next time you change any file in this repository, Azure Pipelines will automatically build your code.
 
-  ```yaml
-  pool: 'Hosted VS2017'
+1. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
 
-  steps:  
-  - task: Gradle@2
-    inputs:
-      gradleWrapperFile: 'gradlew'
-      testResultsFiles: '**/TEST-*.xml'
-      tasks: 'build'
-  ```
+1. Copy the status badge markdown that you copied in the previous section at the beginning of the readme.md file.
 
-  The next time you change any file in this repository, Azure Pipelines will automatically build your code.
+1. Commit the change to the master branch.
 
-2. Go back to the list of files and select the **Readme.md** file, and then choose **Edit**.
-
-3. Add the following comment:
-
-  ```
-  # This repository is built using Azure Pipelines.
-  ```
-
-1. Commit the above change to the master branch.
+1. Notice that the status badge appears in the description of your repository.
 
 Back in Azure Pipelines:
 
-1. Observe that a new build is queued; its status could be either not started or running. Choose the number of the build: _{year}{month}{day}.1_.
-
-1. In the left column of the running build, select **Job**. After an agent is assigned to your job and the agent is initialized, then you'll see information about the build in the console.
-
-[//]: # (TODO: Add link to GitHub tutorial after advice is added there on authentication)
-
----
-
-## View the build summary
-
-[!INCLUDE [include](apps/_shared/view-build-summary.md)]
+1. Observe that a new build is queued; its status could be either not started or running.
 
 ## Next steps
 
-You've just learned the basics of using YAML to create and run an Azure Pipelines build pipeline.
-This pipeline automatically builds and validates whatever code is checked in by your team.
-Now you're ready to configure your CI pipeline for the [programming language you're using](index.md).
+You've just learned the basics of using Azure Pipelines. Now you're ready to further configure your pipeline to run tests, publish test results, create container images, or even deploy the app to a cloud service. Follow the track for the language of your choice.
+
+* [.NET Core](languages/dotnet-core.md)
+* [NodeJS](languages/javascript.md)
+* [Java](languages/java.md)
+* [Python](languages/python.md)
+* [Go](apps/go/go.md)
