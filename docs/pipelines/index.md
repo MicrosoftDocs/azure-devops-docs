@@ -11,65 +11,293 @@ author: andyjlewis
 ms.reviewer: vijayma
 ms.date: 02/19/2018
 ms.topic: conceptual
-layout: LandingPage
+layout: HubPage 
 monikerRange: '>= tfs-2013'
 ---
 
+::: moniker range="vsts"
+# Azure Pipelines
+::: moniker-end
+::: moniker range="< vsts"
 # Build and release
+::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="vsts"
+Azure Pipelines help you implement a build, test, and deployment pipeline for any app.
+Tutorials, references, and other documentation show you how to configure and manage continuous integration and delivery (CI/CD) for the app and platform of your choice.
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < vsts"
+
 [!INCLUDE [temp](_shared/concept-rename-note.md)]
+
+Team Foundation Server (TFS) helps you implement a build, test, and deployment pipeline for any app.
+Tutorials, references, and other documentation show you how to configure and manage continuous integration and delivery (CI/CD) for the app and platform of your choice.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015"
 
-Azure Pipelines and Team Foundation Server help you implement a build, test, and deployment pipeline for any app. Tutorials, references, and other documentation show you how to configure and manage CI/CD for the app and platform of your choice.
-
-## 5-Minute quickstarts
-
-### Learn how to build your app
-
-<!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack">
-<div class="ico48Link"><a href="languages/android.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_android.svg"><span>Android</span></a></div>
-<div class="ico48Link"><a href="apps/aspnet/build-aspnet-4.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>.NET</span></a></div>
-<div class="ico48Link"><a href="languages/dotnet-core.md"><img width="48" height="48" alt="" src="_img/index/logo_net.svg"><span>.NET Core</span></a></div>
-<div class="ico48Link"><a href="apps/c-cpp/gcc.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"><span>C/C++ with GCC</span></a></div>
-<div class="ico48Link"><a href="apps/windows/cpp.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>C/C++ with VC++</span></a></div>
-<div class="ico48Link"><a href="languages/docker.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg"><span>Docker image</span></a></div>
-<div class="ico48Link"><a href="apps/go/go.md"><img width="48" height="48" alt="" src="_img/index/logo_go.svg"><span>Go</span></a></div>
-<div class="ico48Link"><a href="languages/java.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_java.svg"><span>Java</span></a></div>
-<div class="ico48Link"><a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg"><span>.NET Desktop</span></a></div>
-<div class="ico48Link"><a href="languages/javascript.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg"><span>Node.js</span></a></div>
-<div class="ico48Link"><a href="languages/python.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg"><span>Python</span></a></div>
-<div class="ico48Link"><a href="apps/windows/universal.md"><img width="48" height="48" alt="" src="_img/index/logo_uwp.svg"><span>UWP</span></a></div>
-<div class="ico48Link"><a href="languages/xamarin.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg"><span>Xamarin</span></a></div>
-<div class="ico48Link"><a href="languages/xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
+<div id="main" class="v2">
+    <div class="container">
+        <ul class="pivots">
+            <li>
+                <a href="#index"></a>
+                <ul id="index">
+                    <li class="panelItem" data-index="0">
+                        <a class="singlePanelNavItem selected" style="display: none" href="#indexA" data-linktype="self-bookmark"></a>
+                        <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
+                            <li class="fullSpan">
+                                <a href="#index1"></a>
+                                <ul id="index1" class="cardsA cols cols4" style="float: left; display: flex;">
+                                    <li>
+                                        <a href="overview.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="../_img/index/devopsiconpipelines96.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Get started</h3>
+                                                            <p>Are you a newbie? Not sure where to start? Here' we'll give you the lay of the land.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="get-started-yaml.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="https://docs.microsoft.com/media/logos/logo_octokitty.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Create your first pipeline</h3>
+                                                            <p>Get started configuring your pipeline as a YAML file in your repo alongside your code.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="get-started-designer.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="/vsts/_img/index/i_kanban.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Use the designer</h3>
+                                                            <p>Learn the basics to get started using the designer to drag, drop, and customize tasks.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="get-started-azure-devops-project.md">
+                                            <div class="cardSize">
+                                                <div class="cardPadding">
+                                                    <div class="card">
+                                                        <div class="cardImageOuter">
+                                                            <div class="cardImage">
+                                                                <img src="/vsts/_img/index/i_scrum.svg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="cardText">
+                                                            <h3>Use the Azure portal</h3>
+                                                            <p>If you just want us to set it all up so you can see how it works, you can do it from the Azure portal.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>
 
-### Learn how to deploy your app
+## Build your app
 
-<!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
-<div class="ico48Link"><a href="targets/webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Azure Web App</span></a></div>
-<div class="ico48Link"><a href="apps/cd/deploy-linuxvm-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Linux VM</span></a></div>
-<div class="ico48Link"><a href="apps/cd/deploy-docker-webapp.md"><img width="48" height="48" alt="" src="_img/index/app-service-web.png"><span>Web App for Containers</span></a></div>
-<div class="ico48Link"><a href="apps/cd/deploy-webdeploy-iis-deploygroups.md"><img width="48" height="48" alt="" src="_img/index/virtualmachine.png"><span>Windows VM</span></a></div>
+<div class="ico48Link">
+<a href="apps/aspnet/build-aspnet-4.md">
+<img width="48" height="48" alt="" src="_img/index/logo_net.svg">
+<span>.NET</span>
+</a></div>
+<div class="ico48Link">
+<a href="languages/dotnet-core.md">
+<img width="48" height="48" alt="" src="_img/index/logo_aspnetcore.svg">
+<span>.NET Core</span>
+</a></div>
+<div class="ico48Link">
+<a href="languages/android.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_android.svg">
+<span>Android</span>
+</a></div>
+<div class="ico48Link">
+<a href="apps/c-cpp/gcc.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg">
+<span>C/C++ with GCC</span>
+</a></div>
+<div class="ico48Link">
+<a href="apps/windows/cpp.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
+<span>C/C++ with VC++</span>
+</a></div>
+<div class="ico48Link">
+<a href="languages/docker.md">
+<!--<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_docker.svg">-->
+<img width="48" height="48" alt="" src="_img/index/logo_dockercontainer.svg">
+<span>Docker image</span>
+</a></div>
+<div class="ico48Link">
+<a href="apps/go/go.md">
+<img width="48" height="48" alt="" src="_img/index/logo_go.svg">
+<span>Go</span>
+</a></div>
+<div class="ico48Link">
+<a href="languages/java.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_java.svg">
+<span>Java</span>
+</a></div>
+<div class="ico48Link">
+<!--<a href="apps/windows/dot-net.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_NET.svg">-->
+<img width="48" height="48" alt="" src="_img/index/logo_net.svg">
+<span>.NET Desktop</span>
+</a></div>
+<div class="ico48Link">
+<a href="languages/javascript.md">
+<!--<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nodejs.svg">-->
+<img width="48" height="48" alt="" src="_img/index/logo_nodejs.svg">
+<span>JavaScript</span>
+</a></div>
+<div class="ico48Link"><a href="languages/python.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_python.svg">
+<span>Python</span>
+</a></div>
+<div class="ico48Link">
+<a href="apps/windows/universal.md">
+<img width="48" height="48" alt="" src="_img/index/logo_uwp.svg">
+<span>UWP</span>
+</a></div>
+<div class="ico48Link">
+<a href="languages/xamarin.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
+<span>Xamarin</span>
+</a></div>
+<div class="ico48Link"><a href="languages/xcode.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg">
+<span>Xcode</span>
+</a></div>
 </div>
 
-### Learn how to test your app
+## Deploy your app
 
-<!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
-<div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio Test</span></a></div>
-<div class="ico48Link"><a href="test/continuous-test-selenium.md"><img width="48" height="48" alt="" src="tasks/test/_img/visual-studio-test-icon.png"><span>Selenium Test</span></a></div>
-<div class="ico48Link"><a href="test/review-continuous-test-results-after-build.md"><img width="48" height="48" alt="" src="tasks/test/_img/run-functional-tests-icon.png"><span>Review results</span></a></div>
+<div class="ico48Link">
+<a href="apps/cd/azure/deploy-container-kubernetes.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/containerservice.svg">
+<span>Azure Kubernetes Service</span>
+</a></div>
+<div class="ico48Link">
+<a href="targets/azure-stack.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/azure-stack.svg">
+<span>Azure Stack</span>
+</a></div>
+<div class="ico48Link">
+<a href="targets/azure-sqldb.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/sqldatabase.svg">
+<span>Azure SQL database</span>
+</a></div>
+<div class="ico48Link">
+<a href="targets/webapp.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/app-service-web.svg">
+<span>Azure Web App</span>
+</a></div>
+<div class="ico48Link">
+<a href="apps/cd/deploy-linuxvm-deploygroups.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+<span>Linux VM</span>
+</a></div>
+<div class="ico48Link">
+<a href="targets/npm.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_npm.svg">
+<span>npm</span>
+</a></div>
+<div class="ico48Link">
+<a href="targets/nuget.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_nuget.svg">
+<span>NuGet</span>
+</a></div>
+<div class="ico48Link">
+<a href="targets/scvmm.md">
+<img width="48" height="48" alt="" src="_img/index/empty.svg">
+<span>SCVMM</span>
+</a></div>
+<div class="ico48Link">
+<a href="targets/vmware.md">
+<img width="48" height="48" alt="" src="_img/index/empty.svg">
+<span>VMware</span>
+</a></div>
+<div class="ico48Link">
+<a href="apps/cd/deploy-docker-webapp.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/appservice.svg">
+<span>Web App for Containers</span>
+</a></div>
+<div class="ico48Link">
+<a href="apps/cd/deploy-webdeploy-iis-deploygroups.md">
+<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+<span>Windows VM</span>
+</a></div>
+</div>
+
+## Test your app
+
+<div class="ico48Case halfStack">
+<div class="ico48Link"><a href="test/getting-started-with-continuous-testing.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
+<span>Visual Studio Test</span>
+</a></div>
+<div class="ico48Link"><a href="test/continuous-test-selenium.md"><img width="48" height="48" alt="" src="tasks/test/_img/visual-studio-test-icon.png">
+<span>Selenium Test</span>
+</a></div>
+<div class="ico48Link"><a href="test/review-continuous-test-results-after-build.md"><img width="48" height="48" alt="" src="tasks/test/_img/run-functional-tests-icon.png">
+<span>Review results</span>
+</a></div>
 </div>
 
 ## Step-by-step tutorials
 
-* [CI builds for Git in Azure Pipelines](build/ci-build-git.md)
-* [Set up multi-stage release](release/define-multistage-release-process.md)
+* [Build open source projects](build/ci-public.md)
+* [Build multiple branches](build/ci-build-git.md)
+* [Set up a multi-stage release](release/define-multistage-release-process.md)
+
+## Concepts
+
+- [Build and release agents](agents/agents.md)
+- [Build and release tasks](process/tasks.md)  
+- [Parallel jobs](licensing/concurrent-jobs-vsts.md)
+- [Release pipelines](release/index.md)
+
 
 ## Videos
 
@@ -79,23 +307,6 @@ Azure Pipelines and Team Foundation Server help you implement a build, test, and
 | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T170/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> | <iframe src="https://channel9.msdn.com/Events/Connect/2017/T171/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
 | <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/190/player" width="340" height="190" allowFullScreen frameBorder="0"></iframe> |
 | | |
-
-## Concepts
-
-- [Release pipelines](release/index.md)
-- [Build and release agents](agents/agents.md)
-- [Build and release tasks](process/tasks.md)  
-- [Licensing and build and release pipelines](licensing/concurrent-jobs-vsts.md)
-
-## Resources
-
-- [What is continuous integration?](/azure/devops/what-is-continuous-integration)  
-- [What is continuous delivery?](/azure/devops/what-is-continuous-delivery)  
-- [What is DevOps?](/azure/devops/what-is-devops)   
-- [Build and release marketplace extensions](https://marketplace.visualstudio.com/search?target=VSTS&category=Build%20and%20release&sortBy=Downloads)
-- [Manual and exploratory testing](../test/index.md)
-- [Load and performance testing](../test/load-test/index.md)
-- [Unit testing](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)
 
 ::: moniker-end
 

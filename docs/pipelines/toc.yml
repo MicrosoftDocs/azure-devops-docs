@@ -2,7 +2,7 @@
   href: index.md
 - name: Quickstarts
   items:
-  - name: Getting started
+  - name: Get started
     href: overview.md
   - name: Create your first pipeline
     href: get-started-yaml.md
@@ -172,7 +172,7 @@
     href: build/ci-public.md
   - name: CD to Azure Web App
     href: apps/cd/deploy-webdeploy-webapps.md
-  - name: Set up multi-stage release
+  - name: Set up a multi-stage release
     href: release/define-multistage-release-process.md
   - name: Use approvals and gates
     href: release/deploy-using-approvals.md
@@ -254,8 +254,6 @@
     href: policies/set-permissions.md 
   - name: C/C++ with GCC
     href: apps/c-cpp/gcc.md
-  - name: Java
-    href: languages/java.md
   - name: .NET for Windows
     href: apps/windows/dot-net.md
   - name: Universal Windows Platform
