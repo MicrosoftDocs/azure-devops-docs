@@ -53,7 +53,7 @@ To use Azure Pipelines, you'll need the following:
 
 ## How do I start using Pipelines?
 
-If you'd like to ramp up and learn a little more about Pipelines, visit our get started guide to [Create your first build and release flow](../get-started-designer.md).
+If you'd like to ramp up and learn a little more about Pipelines, visit our get started guide to [using the designer](../get-started-designer.md).
 
 If you'd like to jump in and use Pipelines with your code, check out....
 

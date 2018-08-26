@@ -46,7 +46,7 @@ The sample code in this repo is a Node server implemented with Express JS framew
 The sample code includes a `azure-pipelines.yml` file at the root of the repository.
 You can use this file to build the app.
 
-Follow all the instructions in [Build a repo with YAML](../get-started-yaml.md) to create a build pipeline for the sample app.
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
 
 ::: moniker-end
 
@@ -246,6 +246,41 @@ YAML builds are not yet available on TFS.
 # [Designer](#tab/designer)
 
 Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your build pipeline to publish test results along with code coverage results using istanbul.
+
+---
+
+## Matrix builds
+
+You can build and test your app on multiple versions of Node.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+```yaml
+pool: 
+  name: Hosted Linux Preview
+  matrix:
+    node_8_x:
+      node_version: 8.x
+    node_9_x:
+      node_version: 9.x
+
+steps:
+- task: NodeTool@0
+  inputs:
+    version: $(node_version)
+
+- script: npm install
+```
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+See [multi-configuration execution](../process/phases.md#parallelexec).
 
 ---
 

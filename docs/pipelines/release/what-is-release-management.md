@@ -134,7 +134,7 @@ Release Management runs the following steps as part of every deployment:
 
 Simply follow these steps:
 
-1. **[Create your first build and release](../get-started-designer.md)**
+1. **[Create your first pipeline](../get-started-yaml.md)**
 
 1. **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
     

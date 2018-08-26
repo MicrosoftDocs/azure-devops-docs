@@ -5,7 +5,7 @@
     href: pipelines-get-started.md
   - name: Why Use Pipelines?
     href: why-use-pipelines.md
-  - name: Create your first build and release pipelines
-    href: ../get-started-designer.md
+  - name: Create your first pipeline
+    href: ../get-started-yaml.md
   - name: Key Concepts
     href: key-pipelines-concepts.md

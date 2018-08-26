@@ -48,7 +48,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 The sample code includes a `azure-pipelines.yml` file at the root of the repository.
 You can use this file to build the app.
 
-Follow all the instructions in [Build a repo with YAML](../get-started-yaml.md) to create a build pipeline for the sample app.
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a pipeline for the sample app.
 
 ::: moniker-end
 
@@ -65,13 +65,13 @@ YAML builds are not yet available on TFS.
 > This scenario works on TFS, but some of the following instructions might not exactly match the version of TFS that you are using. Also, you'll need to set up a self-hosted agent, possibly also installing software. If you are a new user, you might have a better learning experience by trying this procedure out first using a free Azure DevOps organization. Then [try this with Azure Pipelines](#example?view=vsts&tabs=designer).
 ::: moniker-end
 
-* After you have the sample code in your own repository, create a build pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
+* After you have the sample code in your own repository, create a pipeline using the instructions in [Your first build and release](../get-started-designer.md) and select the **ASP.NET Core** template. This automatically adds the tasks required to build the code in the sample repository.
 
 * Save the pipeline and queue a build to see it in action.
 
 ---
 
-Read through the rest of this topic to learn some of the common ways to customize your .NET Core build pipeline.
+Read through the rest of this topic to learn some of the common ways to customize your .NET Core pipeline.
 
 ## Build environment
 
@@ -113,7 +113,7 @@ If you need a version of the .NET Core SDK that is not already installed on the 
 
 If you need a version of the .NET Core SDK that is not already installed on the Microsoft-hosted agent:
 
-1. In the build pipeline, select **Tasks**, choose the job that runs your build tasks, and then select **+** to add a new task to that job.
+1. In the pipeline, select **Tasks**, choose the job that runs your build tasks, and then select **+** to add a new task to that job.
 
 1. In the task catalog, find and add the **.NET Core Tool Installer** task.
 
@@ -140,7 +140,7 @@ Make sure that you have the necessary version of the .NET Core SDK and runtime i
 
 NuGet is a popular way to depend on code that you don't build. You can download NuGet packages by running
 the `dotnet restore` command either through the
-[.NET Core](../tasks/build/dotnet-core.md) task or directly in a script in your build pipeline.
+[.NET Core](../tasks/build/dotnet-core.md) task or directly in a script in your pipeline.
 
 ::: moniker range=">= tfs-2018"
 
@@ -175,7 +175,7 @@ However, you might still need to use the **.NET Core** task to restore packages 
 
 If your builds occasionally fail when restoring packages from NuGet.org due to connection issues,
 you can use Azure Artifacts in conjunction with [upstream sources](../../artifacts/concepts/upstream-sources.md),
-and cache the packages. The credentials of the build pipeline are automatically used when connecting
+and cache the packages. The credentials of the pipeline are automatically used when connecting
 to Azure Artifacts. These credentials are typically derived from the **Project Collection Build Service**
 account.
 
@@ -222,7 +222,7 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-1. Select **Tasks** in the build pipeline, select the job that runs your build tasks, then select **+** to add a new task to that job.
+1. Select **Tasks** in the pipeline, select the job that runs your build tasks, then select **+** to add a new task to that job.
 
 1. In the task catalog, find and add the **.NET Core** task.
 
@@ -238,7 +238,7 @@ YAML builds are not yet available on TFS.
 
 ## Build your project
 
-You build your .NET Core project by running `dotnet build` command in your build pipeline.
+You build your .NET Core project by running `dotnet build` command in your pipeline.
 
 # [YAML](#tab/yaml)
 
@@ -250,7 +250,7 @@ To build your project using .NET Core task, add the following snippet to your `a
 - script: dotnet build # Include additional options such as --configuration to meet your need
 ```
 
-You can run any `dotnet` command in your build pipeline. The following example shows how to install and use a .NET global tool - [dotnetsay](https://www.nuget.org/packages/dotnetsay/).
+You can run any `dotnet` command in your pipeline. The following example shows how to install and use a .NET global tool - [dotnetsay](https://www.nuget.org/packages/dotnetsay/).
 
 ```yaml
 - script: dotnet tool install -g dotnetsay
@@ -269,7 +269,7 @@ YAML builds are not yet available on TFS.
 
 ### Build
 
-1. Select **Tasks** in the build pipeline, select the job that runs your build tasks, then select **+** to add a new task to that job.
+1. Select **Tasks** in the pipeline, select the job that runs your build tasks, then select **+** to add a new task to that job.
 
 1. In the task catalog, find and add the **.NET Core** task.
 
@@ -490,11 +490,11 @@ If you are able to build your project on your development machine, but are havin
 ::: moniker-end
 
 * Check that the versions of the .NET Core SDK and runtime on your development machine match those on the agent.
-  You can include a command line script `dotnet --version` in your build pipeline to print the version of .NET Core SDK.
+  You can include a command line script `dotnet --version` in your pipeline to print the version of .NET Core SDK.
   Either use the **.NET Core Tool Installer** (as explained in this guidance) to deploy the same version on the agent,
   or update your projects and development machine to the newer version of .NET Core SDK.
 
-* You may be using some logic in Visual Studio IDE that is not encoded in your build pipeline.
+* You may be using some logic in Visual Studio IDE that is not encoded in your pipeline.
   Azure Pipelines or TFS run each of the commands you specify in the tasks one after the other in a new process.
   Look at the logs from the Azure Pipelines or TFS build to see the exact commands that ran as part of the build.
   Repeat the same commands in the same order on your development machine to locate the problem.

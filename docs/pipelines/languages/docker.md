@@ -44,18 +44,16 @@ This example shows how to build a Docker image and push it to a registry.
 ::: moniker range="vsts"
 
 1. To start, complete the steps from the example section in one of the following languages:
-
-    [.NET Core](dotnet-core.md)
-    [JavaScript](javascript.md)
+   * [.NET Core](dotnet-core.md)
+   * [JavaScript](javascript.md)
 
   The sample repos include a `Dockerfile` at the root of the repository. You must first have a working build pipeline before continuing on.
 
 1. Define two variables in your build pipeline in the web UI.
+   * **dockerId:** Your Docker Id for DockerHub or the admin user name for the Azure Container Registry
+   * **dockerPassword:** Password for DockerHub or admin password for Azure Container Registry
 
-  **dockerId:** Your Docker Id for DockerHub or the admin user name for the Azure Container Registry
-  **dockerPassword:** Password for DockerHub or admin password for Azure Container Registry
-
-  If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal]((https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal)). You can get the admin user name and password from the **Access keys** section of the registry in Azure portal.
+  If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal). You can get the admin user name and password from the **Access keys** section of the registry in Azure portal.
 
 1. If you have a Docker Hub account, and would like to push the image to your **Docker Hub registry**, then use the web UI to change the YAML file in build pipeline from `azure-pipelines.yml` to `azure-pipelines.docker.yml`. This file is present at the root of your sample repository.
 
@@ -82,8 +80,8 @@ YAML builds are not yet available on TFS.
 
 1. To start, complete the steps from the example section in one of the following:
 
-    [.NET Core](dotnet-core.md)
-    [JavaScript](javascript.md)
+   * [.NET Core](dotnet-core.md)
+   * [JavaScript](javascript.md)
 
   You must first have a working build pipeline following the above instructions before you proceed to the next steps.
 
@@ -243,8 +241,8 @@ For an example on using this approach, follow these steps:
 
 1. The sample repos that you used in the [example](#example) above also include a **Dockerfile.multistage** for this approach:
 
-    [Dockerfile.multistage in .NET Core sample](https://github.com/MicrosoftDocs/pipelines-dotnet-core/blob/master/docs/Dockerfile.multistage)
-    [Dockerfile.multistage in JavaScript sample](https://github.com/MicrosoftDocs/pipelines-javascript/blob/master/docs/Dockerfile.multistage)
+    * [Dockerfile.multistage in .NET Core sample](https://github.com/MicrosoftDocs/pipelines-dotnet-core/blob/master/docs/Dockerfile.multistage)
+    * [Dockerfile.multistage in JavaScript sample](https://github.com/MicrosoftDocs/pipelines-javascript/blob/master/docs/Dockerfile.multistage)
 
   Replace the content in the `Dockerfile` at the root of your repository with the content from `Dockerfile.multistage`.
 
