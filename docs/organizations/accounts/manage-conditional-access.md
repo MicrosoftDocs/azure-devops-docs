@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 10/06/2017
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -33,6 +33,4 @@ For more information and resources, see [What is conditional access in Azure Act
 Use the Azure portal to enable conditional access.
 
 For detailed instructions and requirements, see this [quickstart](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
-
-![Enable conditional access for Azure DevOps Services in the Azure portal](_img/_shared/azure-conditional-access-738.png)
 

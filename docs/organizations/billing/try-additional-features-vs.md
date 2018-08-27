@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/18/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -44,19 +44,19 @@ All other users can [request extensions](../../marketplace/install-vsts-extensio
 
 ## Start a trial for your organization
 
-1. Sign in to [Visual Studio Marketplace > VSTS](https://marketplace.visualstudio.com/vsts).
+1. Sign in to [Visual Studio Marketplace](https://marketplace.visualstudio.com/vsts).
 
     ![Find extension trial](_img/get-vsts-extensions/marketplace.png)
 
-1. Find and select a paid extension that you want to try.
+2. Find and select a paid extension that you want to try.
 
     ![Start the extension trial](_img/try-additional-features/mp-start-test-manager-trial.png)
 
-1. Select your Azure DevOps Services organization to install this extension.
+3. Select your Azure DevOps Services organization to install this extension.
 
     ![Select your Azure DevOps Services organization for extension trial](_img/try-additional-features/select-organization.png)
 
-1. After your extension finishes installing, go to your Azure DevOps Services organization to use your extension.
+4. After your extension finishes installing, go to your Azure DevOps Services organization to use your extension.
 
     Let your team know that they also have access.
 
@@ -71,13 +71,28 @@ There's no penalty for buying early. Charges don't start until the trial ends.
 
 If you lose access because the trial expired before you could purchase, buy and assign the extension like you would if you weren't doing a trial:
 
-1. [Buy the extension](../../marketplace/install-vsts-extension.md#install-extension) for your users.
+[!INCLUDE [temp](../../_shared/new-navigation.md)] 
 
-    To buy the extension, you can also go to the extension pane in your organization.
+# [New navigation](#tab/new-nav)
+
+1. Sign in to your Azure DevOps organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Go to your Azure DevOps Services **Admin settings**.
+
+   ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+3. Select **Extensions** and then select your extension or **Browse Marketplace**.
+
+   ![Admin settings for extensions in Azure DevOps](_img/try-additional-features/extensions-azure-devops-admin-settings.png)
+
+# [Previous navigation](#tab/prev-nav)
+
+1. [Buy the extension](../../marketplace/install-vsts-extension.md#install-extension) for your users.
 
     ![User hub, extension pane](_img/try-additional-features/extension-trial-in-organization-updated-ui.png)
 
-1. [Assign the extension](../../marketplace/assign-paid-extensions.md) to the users who need it.
+2. [Assign the extension](../../marketplace/assign-paid-extensions.md) to the users who need it.
+
+---
 
 ## Clean up resources
 

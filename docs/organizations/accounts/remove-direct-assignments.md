@@ -31,7 +31,7 @@ To manage a user's resources only by the groups that they're in, you must remove
 
 2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
-    ![Open admin settings](_img/_shared/open-admin-settings-vert.png)
+   ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
 3. Select the **Users** tab.
 

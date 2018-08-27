@@ -1,6 +1,6 @@
 ---
 title: Buy and manage cloud service provider customer Azure DevOps Services subscriptions
-description: Cloud service provider (CSP) partners can purchase and manage Visual Studio Team Services (VSTS) for their customers
+description: Cloud service provider (CSP) partners can purchase and manage Azure DevOps Services for their customers
 ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: a7d8ce85-c95f-495a-82f3-9237b49b29de
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 01/22/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 # Buy Azure DevOps Services resources for your customers
@@ -37,7 +37,7 @@ Make sure your identity hasn't been added into the customer's Azure Active Direc
 1. Choose the customer for whom you're purchasing.
 1. Choose **Service Management**.
 1. Choose **Visual Studio Marketplace**
-1. Make sure you're in the **VSTS** tab, and then search for and choose **VSTS Users**.
+1. Make sure you're in the **Azure DevOps** tab, and then search for and choose **Azure DevOps Users**.
 1. Select **Get** and move through the purchase process. Choose the Azure DevOps Services organization that needs more users. Choose the Azure subscription to bill for the purchase. Enter the number of users that your customer needs. Review the order and complete it.
 
 You can buy other items the same way. After choosing **Visual Studio Marketplace**, search for **Test Manager**, **Package Management**, **Hosted Pipelines**, and so on.

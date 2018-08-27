@@ -50,7 +50,7 @@ Make sure that the new owner:
 
    ![Overview pane displaying the organization owner](_img/change-organization-ownership/find-organization-owner.png)
 
-4. To change the organization owner, select the **X**.
+4. To change the organization owner, select **X**.
 
    ![Change organization owner](_img/change-organization-ownership/change-organization-owner.png)
 
