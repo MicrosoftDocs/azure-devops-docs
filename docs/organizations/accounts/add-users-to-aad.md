@@ -26,8 +26,8 @@ If your users don't already exist in Azure AD:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) as global administrator for your organization's directory. See the following topics for information about signing in:
 
-   * [Add users in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-create-users)
-   * [Add users in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-users-create-azure-portal)
+   * [Add users in the Azure portal](/azure/active-directory/active-directory-create-users)
+   * [Add users in the Azure portal](/azure/active-directory/active-directory-users-create-azure-portal)
    * [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
 
 2. Add the sign-in addresses for all of your Azure DevOps Services organization users to your directory. Include yourself as the Azure DevOps Services organization owner, if you're not already in the directory.

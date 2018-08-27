@@ -28,7 +28,7 @@ If you’re an Azure Active Directory (Azure AD)-backed Azure DevOps Services or
 
 * The Azure DevOps Services organization to which you want to invite external users must allow for external invitations. Go to the **Organization Settings** page to confirm.
 
-* The Azure AD tenant to which you want to invite external users must allow you to add new users based on your Azure Active Directory guest policies. Learn [how to become eligible to invite external users on your Azure AD tenant](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-delegate-invitations).
+* The Azure AD tenant to which you want to invite external users must allow you to add new users based on your Azure Active Directory guest policies. Learn [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
 
 ## Invite an external user to your Azure DevOps Services organization
 
@@ -81,7 +81,7 @@ The external user is added to the Azure DevOps Services organization to which th
 
 ## Related articles
 
-* [What is Azure AD B2B collaboration?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
+* [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 
 * [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-VSTS.md)
 

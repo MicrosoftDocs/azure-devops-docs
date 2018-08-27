@@ -142,7 +142,7 @@ With HockeyApp you can develop, distribute, and beta-test your mobile apps. Hock
 - Open-source SDKs to let you know what code is running in your apps
 - Integration with your existing build system and work item management solution
 
-To learn more, see [Microsoft Azure - HockeyApp](https://docs.microsoft.com/azure/application-insights/app-insights-overview).
+To learn more, see [Microsoft Azure - HockeyApp](/azure/application-insights/app-insights-overview).
 
 ## Command-line tools
 
@@ -170,7 +170,7 @@ To learn more, visit the [Marketplace](https://marketplace.visualstudio.com) and
  
 The Azure DevOps Services and TFS APIs are based on REST, OAuth, Json and service hooks&mdash;all standard web technologies broadly supported in the industry.
 
-REST APIs are provided to support building extensions to Azure DevOps Services and TFS. To learn more, see [REST API overview](https://docs.microsoft.com/rest/api/vsts/).
+REST APIs are provided to support building extensions to Azure DevOps Services and TFS. To learn more, see [REST API overview](/rest/api/vsts/).
 
 ## Related articles
 

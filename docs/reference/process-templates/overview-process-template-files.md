@@ -114,7 +114,7 @@ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ign
 <td>Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management. 
 
 <blockquote>
- For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
+ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. Going forward, native build and release management tools replace the previous lab management tools. To learn more, see [Use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
 </blockquote>
 
 </td>

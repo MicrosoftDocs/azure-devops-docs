@@ -53,7 +53,7 @@ In order for your feed to provide [deterministic restore](#search-order), it's i
 
 > [!NOTE]
 >
-> The `<clear />` tag is required because NuGet composes [several configuration files](https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior) to determine the full set of options to use. `<clear />` tells NuGet to ignore all other `<packageSources>` defined in higher-level configuration files.
+> The `<clear />` tag is required because NuGet composes [several configuration files](/nuget/consume-packages/configuring-nuget-behavior) to determine the full set of options to use. `<clear />` tells NuGet to ignore all other `<packageSources>` defined in higher-level configuration files.
 
 For npm, you should have only one `registry` line, like:
 

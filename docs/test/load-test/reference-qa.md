@@ -237,12 +237,12 @@ For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualst
 
 ### Q: Can load tests use other test types in their test mix besides web performance tests?
 
-**A**: Yes, you can include [unit tests](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)
-and [coded UI tests](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code).
+**A**: Yes, you can include [unit tests](/visualstudio/test/unit-test-your-code)
+and [coded UI tests](/visualstudio/test/use-ui-automation-to-test-your-code).
 
 ### Q: Can virtual users simulate pausing between test steps?
 
-**A**: Yes, you can [specify think times](https://docs.microsoft.com/visualstudio/test/edit-think-times-in-load-test-scenarios) to simulate the time spent by a user on a web page.
+**A**: Yes, you can [specify think times](/visualstudio/test/edit-think-times-in-load-test-scenarios) to simulate the time spent by a user on a web page.
 
 ### Q: Why should I use Cloud-based Load Testing?
 
@@ -261,10 +261,10 @@ and [coded UI tests](https://docs.microsoft.com/visualstudio/test/use-ui-automat
 portal, one of the following criteria must be satisfied:
 
 * The subscription is backed by Azure Active Directory,
-  [Has an Azure subscription](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory)
+  [Has an Azure subscription](/azure/active-directory/active-directory-how-subscriptions-associated-directory)
   is linked to it, and the user is a member of the linked Azure subscription.
 
-* The subscription is backed by [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)
+* The subscription is backed by [Azure Active Directory](/azure/active-directory/)
   and the user is an owner of the subscription.
 
 <a name="qaazure-limits"></a>
@@ -282,7 +282,7 @@ portal, one of the following criteria must be satisfied:
 ### Q: Where can I check how much test time I've used so far?
 
 **A**: You can check this in the Azure Portal. For details, see
-[Manage pricing and data volume in Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-pricing#review-pricing-plans-and-estimate-costs).
+[Manage pricing and data volume in Application Insights](/azure/application-insights/app-insights-pricing#review-pricing-plans-and-estimate-costs).
 
 ### Q: What is the default option and are my existing tests impacted?
 
@@ -311,7 +311,7 @@ features and services help your team collaborate more easily and deploy continuo
 
 ### Q: Can I get more detailed profiler information?
 
-**A**: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-profiler).
+**A**: Yes, see [Profiling live Azure web apps with Application Insights](/azure/application-insights/app-insights-profiler).
 
 ----------
 
@@ -333,7 +333,7 @@ you might be able to run the load test right away.
 ### Q: How do I provide different values to the same test?
 
 **A**:  Use a .csv file or an Excel spreadsheet. Using SQL Server is currently not supported. 
-Learn how to [supply values to your test](https://docs.microsoft.com/visualstudio/test/add-a-data-source-to-a-web-performance-test).
+Learn how to [supply values to your test](/visualstudio/test/add-a-data-source-to-a-web-performance-test).
 
 ### Q: Help, I'm having problems with my agents!
 
@@ -369,7 +369,7 @@ edit the think time in the Properties view.
 ### Q: Where can I get more information about simulating real-world loads?
 
 **A**: Learn more about how to specify 
-[web performance test properties, load test scenario properties, and run settings properties](https://docs.microsoft.com/visualstudio/test/edit-load-tests).
+[web performance test properties, load test scenario properties, and run settings properties](/visualstudio/test/edit-load-tests).
 
 ### Q: Can I run load tests locally and in the cloud from the same project?
 
@@ -464,7 +464,7 @@ by your load test or test scripts.
 
 **A**: Your downloaded reports are stored in a local SQL Server Express database. 
 You can 
-[change the default location](https://docs.microsoft.com/visualstudio/test/manage-load-test-results-in-the-load-test-results-repository), 
+[change the default location](/visualstudio/test/manage-load-test-results-in-the-load-test-results-repository), 
 if you want. You can also store all the reports together for everyone by changing 
 the location for each user to the same database.
 
@@ -539,7 +539,7 @@ use any stage variables defined in the pipeline to pass in the required informat
 
 ### Q: Can I get more detailed profiler information?
 
-**A**: Yes, see [Profiling live Azure web apps with Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-profiler).
+**A**: Yes, see [Profiling live Azure web apps with Application Insights](/azure/application-insights/app-insights-profiler).
 
 ### Q: Can I view data from other app monitoring tools when load testing in the cloud?
 
@@ -684,7 +684,7 @@ ignore the case or convert test names to lower case.
 and later versions, the default value for the TimingDetailsStorage property 
 was changed from AllIndividualDetails to None. If you want to collect the individual timings, 
 you must specifically set TimingDetailsStorage property to be AllIndividualDetails. 
-See [Load Test Run Settings Properties](https://docs.microsoft.com/visualstudio/test/load-test-run-settings-properties).
+See [Load Test Run Settings Properties](/visualstudio/test/load-test-run-settings-properties).
 
 ----------
 

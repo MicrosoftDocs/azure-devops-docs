@@ -180,7 +180,7 @@ Defines and secures a connection to a Microsoft Azure Service Bus queue.
 | Parameter | Description |
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| Service Bus ConnectionString | The URL of your Azure Service Bus instance. [More information](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-fundamentals-hybrid-solutions). |
+| Service Bus ConnectionString | The URL of your Azure Service Bus instance. [More information](/azure/service-bus-messaging/service-bus-fundamentals-hybrid-solutions). |
 | Service Bus Queue Name | The name of an existing Azure Service Bus queue. |
 <p />
 
@@ -541,7 +541,7 @@ Defines and secures a connection to Visual Studio App Center.
 | Parameter | Description |
 | --------- | ----------- |
 | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure account or subscription. If you are using YAML, use this name as the **azureSubscription** or the equivalent subscription name value in the script. |
-| API Token | Required. The token to use to authenticate with the service. [Learn more](https://docs.microsoft.com/appcenter/api-docs/). |
+| API Token | Required. The token to use to authenticate with the service. [Learn more](/appcenter/api-docs/). |
 <p />
 
 [How do I create a new service connection?](#create-new)

@@ -46,7 +46,7 @@ Check out the quick starts to get you started:
 * [Service hooks events reference](../service-hooks/events.md?toc=/vsts/integrate/toc.json)
 
 ## Resources
-* [REST API reference](https://docs.microsoft.com/en-us/rest/api/vsts/)
+* [REST API reference](/rest/api/vsts/)
 
 
 

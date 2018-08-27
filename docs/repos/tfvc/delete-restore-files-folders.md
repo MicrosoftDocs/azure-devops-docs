@@ -49,7 +49,7 @@ Before you delete an item:
 
 > [!NOTE] 
 > If you're already checked in the delete of an item in TFVC, you can restore the deleted item from the server long as no one on your team has [destroyed](destroy-command-team-foundation-version-control.md) it.  
-> If you're not using TFVC, use [Solution Explorer](https://docs.microsoft.com/en-us/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to delete items and files in your Visual Studio solution. 
+> If you're not using TFVC, use [Solution Explorer](/visualstudio/ide/solutions-and-projects-in-visual-studio#managing-projects-in-solution-explorer) to delete items and files in your Visual Studio solution. 
 > Files deleted through Solution Explorer are moved to the Recycle Bin on your computer, where they can be restored.
 > Once restored from the Recycle Bin, right-click your solution in Solution Explorer and select **Add..** and then **Existing item...** to restore the file into your solution.
 

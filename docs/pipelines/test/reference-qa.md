@@ -28,7 +28,7 @@ monikerRange: '>= tfs-2015'
 
 **A**: First, set up your test frameworks in your development tool. For example, in Visual Studio:
 
-1. [Set up the plug-in for your test framework](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing#frameworks), if you haven't already.
+1. [Set up the plug-in for your test framework](/visualstudio/test/getting-started-with-unit-testing#frameworks), if you haven't already.
 
 1. Create a folder that has the custom binaries for your plug-in. (The plug-in package for your framework is a .vsix file. Change the extension to .zip so that you can unzip it.)
 
@@ -63,7 +63,7 @@ A merged summary is not currently available for coverage files published using m
    you can specify, such as running only specific tests. See [Run Tests using Visual Studio task](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/VsTest/README.md).
  
 1. Run **functional tests** in the early stages of the CD pipeline. These are typically 
-   [Selenium](continuous-test-selenium.md) (for web apps) and [Coded UI](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code) tests.
+   [Selenium](continuous-test-selenium.md) (for web apps) and [Coded UI](/visualstudio/test/use-ui-automation-to-test-your-code) tests.
    To do this, add the **[Deploy Test Agent](https://github.com/Microsoft/vsts-tasks/blob/releases/m109/Tasks/DeployVisualStudioTestAgent/README.md)**
    and **[Run Functional Tests](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/RunDistributedTestsV1/README.md)**
    tasks to your release pipeline. See [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/).
@@ -103,7 +103,7 @@ after the load tests have run and before the app is swapped from staging to prod
 <a name="pass-params"></a>
 ### Q: How do I pass parameters to my test code from a build or release pipeline?
 
-**A**: Use a [runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+**A**: Use a [runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 to pass values as parameters to your test code. For example, in a release that contains
 several stages, you can pass the appropriate app URL to each the test tasks in each one.
 The runsettings file and matching parameters must be specified in the
@@ -113,7 +113,7 @@ The runsettings file and matching parameters must be specified in the
 
 ### Q: Where can I find details about configuring test agents?
 
-**A**: See [Install and configure test agents](https://docs.microsoft.com/visualstudio/test/lab-management/install-configure-test-agents)
+**A**: See [Install and configure test agents](/visualstudio/test/lab-management/install-configure-test-agents)
 
 ### Q: What if I want to run debug builds of native (.cpp) unit tests on the machine with the test agent?
 
@@ -141,9 +141,9 @@ If you're running release builds of .cpp unit tests, make sure that you have Win
 
 **A**: If you are using a XAML build in Azure Pipelines or TFS, you can run tests
 that you have associated in a Build-Deploy-Test workflow using a
-[Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+[Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 You can also run tests using Microsoft Test Manager (MTM) and a
-[Lab environment](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+[Lab environment](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="test-types"></a>
 ### Q: What types of tests are supported?
@@ -236,7 +236,7 @@ on-demand test execution.
 ### Q: Should the agent run in interactive mode or as a service?
 
 **A:** If you are running UI tests such as
-[coded UI](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code)
+[coded UI](/visualstudio/test/use-ui-automation-to-test-your-code)
 or [Selenium](continuous-test-selenium.md) tests,
 the agent on the test machines must be running in interactive mode with auto-logon enabled,
 not as a service, to allow the agent to launch a web browser.

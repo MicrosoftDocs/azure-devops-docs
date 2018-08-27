@@ -38,7 +38,7 @@ Before you begin, do either of the following:
 
 * Alternatively, to authenticate users and control organization access through your Azure AD, complete these steps. Pay attention to the Azure AD callouts.
 
-	* Use your work or school account to *automatically connect* your Azure DevOps Services organization to your Azure AD. All users must be members in that directory to access your Azure DevOps Services organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+	* Use your work or school account to *automatically connect* your Azure DevOps Services organization to your Azure AD. All users must be members in that directory to access your Azure DevOps Services organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 	* You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
 
@@ -102,7 +102,7 @@ Without Azure AD, you're solely responsible for controlling Azure DevOps Service
 	
 	**Azure AD**: 
 
-    After you create your account, only members of the directory shown here can access your Azure DevOps Services organization, or you must use [Azure AD business-to-business (B2B) collaboration capabilities](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to add users from other organizations. 
+    After you create your account, only members of the directory shown here can access your Azure DevOps Services organization, or you must use [Azure AD business-to-business (B2B) collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to add users from other organizations. 
 
     If you belong to multiple directories, ensure that you want to connect this directory to your Azure DevOps Services organization. Changing the directory now is easier than [changing the directory later](faq-create-organization.md#ChangeDirectory).
 

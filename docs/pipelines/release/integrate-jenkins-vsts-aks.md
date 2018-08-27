@@ -54,16 +54,16 @@ You will:
 
 * An Azure subscription. You can get one free from [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* The [Azure Command-Line Interface (CLI)](https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest).
+* The [Azure Command-Line Interface (CLI)](/cli/azure/index?view=azure-cli-latest).
 
 * You need a Spring Boot app.  You can fork the sample app found [here](https://github.com/spring-guides/gs-spring-boot-docker.git).
 
-* You need an Azure Container Registry (ACR).  You can follow  steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-prepare-acr#deploy-azure-container-registry).
+* You need an Azure Container Registry (ACR).  You can follow  steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](/azure/aks/tutorial-kubernetes-prepare-acr#deploy-azure-container-registry).
 
-* An AKS cluster.  You can follow the steps for creating this [here](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-deploy-cluster).
+* An AKS cluster.  You can follow the steps for creating this [here](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
 * Access to a Jenkins server with Maven and the VSTS plugin configured. If you have not yet created a Jenkins server,
-  see [Create a Jenkins master on an Azure Virtual Machine](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template).  Also, the following Jenkins plugins must be installed:
+  see [Create a Jenkins master on an Azure Virtual Machine](/azure/jenkins/install-jenkins-solution-template).  Also, the following Jenkins plugins must be installed:
     * **VS Team Services Continous Deployment** plugin.  You can find additional information about the **TFS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
     * **Config File Provider** plugin.  You can find additional information about the **Config File plugin** [here](https://wiki.jenkins.io/display/JENKINS/Config+File+Provider+Plugin).
     * **Maven Integration** plugin.  You can find additional information about the **Maven Integration plugin** [here](https://plugins.jenkins.io/maven-plugin).
@@ -398,7 +398,7 @@ You can initiate the CI build and the subsequent CD deployment to Azure by compl
 You are now using Jenkins CI builds with an Azure Repos code repository and an Azure Pipelines release pipeline to perform CI/CD to **Azure Container Services (AKS)**.  You can easily track your code changes and deployments via the rich reporting capabilities of Azure Pipelines, and leverage Jenkins to execute CI builds.
 
 ## View the deployed sample app
-Once the app is deployed to the AKS cluster, you can query the external IP address using  **kubectl**, the Kubernetes command-line client.  You can learn how to install and connect **kubectl** to your AKS Cluster by following [these steps](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-deploy-cluster#install-the-kubectl-cli).
+Once the app is deployed to the AKS cluster, you can query the external IP address using  **kubectl**, the Kubernetes command-line client.  You can learn how to install and connect **kubectl** to your AKS Cluster by following [these steps](/azure/aks/tutorial-kubernetes-deploy-cluster#install-the-kubectl-cli).
 
 1. Use the following command for querying the external IP address for the deployed app:
 
@@ -442,4 +442,4 @@ In this tutorial, you automated the deployment of an app to Azure using Jenkins 
 
 > [!div class="nextstepaction"]
 > [Integrate your Jenkins CI jobs with Azure Pipelines](integrate-jenkins-vsts-cicd.md)
-> [Deploy to Kubernetes with Fabric8](https://docs.microsoft.com/java/azure/spring-framework/deploy-spring-boot-java-app-using-fabric8-maven-plugin)
+> [Deploy to Kubernetes with Fabric8](/java/azure/spring-framework/deploy-spring-boot-java-app-using-fabric8-maven-plugin)

@@ -117,7 +117,7 @@ The last step is to create the necessary relationships in Power BI.
 	
 3. In the Manage Relationships dialog:  
 	a. Delete any relationships that might have been automatically detected.   
-	b. Choose **New** to create a bidirectional *Many to One* relationship between your *View* and *Area*. To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-bidirectional-filtering).  
+	b. Choose **New** to create a bidirectional *Many to One* relationship between your *View* and *Area*. To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Power BI Desktop, Manage Relationships dialog, View To Area](_img/ViewToArea.png)
@@ -155,5 +155,5 @@ Now you can filter all visualization on a report using a slicer or any other sup
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](../analytics/analytics-views-create.md)
-- [Get started with Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-getting-started)
-- [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-bidirectional-filtering)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](/power-bi/desktop-bidirectional-filtering)

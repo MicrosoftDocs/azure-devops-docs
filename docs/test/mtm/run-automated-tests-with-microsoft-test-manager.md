@@ -73,7 +73,7 @@ To run your automated tests, you must use a standard or an SCVMM environment. Yo
 You must create an environment that contains the roles in your test
 settings and then use this environment in your test plan. For more
 information about how to create your environment and roles and test settings, see
-[Use a lab environment for your devops](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
+[Use a lab environment for your devops](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle).
 
 <a name="run-test"></a>
 ## Run the automated test using Microsoft Test Manager

@@ -94,7 +94,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="https://docs.microsoft.com//media/common/i_portal.svg" alt="" />
+                                                                <img src="https://docs.microsoft.com/media/common/i_portal.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -492,9 +492,9 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Developer resources</h3>
-                                                        <p><a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></p>
+                                                        <p><a href="/rest/api/vsts/">REST APIs</a></p>
 														<p><a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
-                                                        <p><a href="https://docs.microsoft.com/en-us/cli/vsts/overview">CLI</a></p>
+                                                        <p><a href="/cli/vsts/overview">CLI</a></p>
                                                         <p><a href="/vsts/java/index">Java</a></p>
                                                     </div>
                                                 </div>
@@ -509,7 +509,7 @@ featureFlags:
                                                         <h3>Additional resources</h3>
                                                         <p><a href="/vsts/index-all">Index</a></p>
                                                         <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">DevOps at Microsoft</a></p>
-                                                        <p><a href="https://docs.microsoft.com/en-us/azure/devops/learn/">Azure DevOps resource center</a></p>
+                                                        <p><a href="/azure/devops/learn/">Azure DevOps resource center</a></p>
                                                     </div>
                                                 </div>
                                             </div>

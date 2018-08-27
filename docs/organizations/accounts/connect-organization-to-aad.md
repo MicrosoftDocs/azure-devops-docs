@@ -20,7 +20,7 @@ If your Azure DevOps Services organization was created with a Microsoft account,
 
 You can then sign in to Azure DevOps Services with the same username and password that you use with the Microsoft services.
 
-You can also [enforce conditional access policies](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) for accessing
+You can also [enforce conditional access policies](/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) for accessing
 your team's critical resources and key assets.
 
 In this tutorial, you learn how to:
@@ -89,7 +89,7 @@ c. Select **Users**.
 
 d. Compare the list of email addresses in Azure DevOps Services with the list of email addresses in your Azure Active Directory.
 
-* If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-iw-add-users).
+* If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](/azure/active-directory/active-directory-b2b-iw-add-users).
 
     ![Add a guest user to Azure AD](_img/connect-organization-to-aad/add-new-users.png)
 
@@ -115,7 +115,7 @@ b. Go to **Users**.
 
 b. Compare the list of email addresses in Azure DevOps Services with the list of email addresses in your Azure Active Directory.
 
-* If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-iw-add-users).
+* If any users exist on the Azure DevOps Services **Users** page but are missing from Azure AD, [add them as B2B guests](/azure/active-directory/active-directory-b2b-iw-add-users).
 
     ![Add a guest user to Azure AD](_img/connect-organization-to-aad/add-new-users.png)
 
@@ -182,7 +182,7 @@ When you inform your users of the completed change, include the tasks that each 
 3. If you use SSH tokens, [add new keys for the Azure AD user](../../repos/git/use-ssh-keys-to-authenticate.md).
 4. If you don't want to be prompted to choose between accounts, [rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Or, if you no longer need it, simply [close your Microsoft account](connect-organization-to-aad.md#optional-close-the-temporary-msa-if-you-created-one).
 
-5. If you used a Microsoft account to sign up for a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) that includes Azure DevOps Services as a benefit, you can add to the subscription a work or school account that's managed by Azure AD. To learn how to link work or school accounts to Visual Studio with MSDN subscriptions, see [Managing subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/manage-vs-subscriptions).
+5. If you used a Microsoft account to sign up for a [Visual Studio with MSDN subscription](https://visualstudio.microsoft.com/vs/pricing/) that includes Azure DevOps Services as a benefit, you can add to the subscription a work or school account that's managed by Azure AD. To learn how to link work or school accounts to Visual Studio with MSDN subscriptions, see [Managing subscriptions](/visualstudio/subscriptions/manage-vs-subscriptions).
 
 ## Optional steps
 
@@ -207,7 +207,7 @@ If the subscription that you’ve been using to pay for Azure DevOps Services is
 
 You can set up Azure DevOps Services billing correctly by using one of the following options:
 
-* [Associate the subscription with the directory](https://docs.microsoft.com/azure/active-directory/active-directory-how-subscriptions-associated-directory) that you’re now using to sign in to Azure DevOps Services. If you’re unable to change the directory in the Azure portal, you can [transfer the subscription to your work Azure AD identity](https://docs.microsoft.com/azure/billing/billing-subscription-transfer).
+* [Associate the subscription with the directory](/azure/active-directory/active-directory-how-subscriptions-associated-directory) that you’re now using to sign in to Azure DevOps Services. If you’re unable to change the directory in the Azure portal, you can [transfer the subscription to your work Azure AD identity](/azure/billing/billing-subscription-transfer).
 
 * If you have a different Azure subscription to use for billing Azure DevOps Services, you can [change the Azure subscription Azure DevOps Services uses for billing](../billing/change-azure-subscription.md). 
   > [!IMPORTANT]
@@ -219,7 +219,7 @@ You can set up Azure DevOps Services billing correctly by using one of the follo
 
 A: Visual Studio subscription administrators ordinarily assign subscriptions to users' corporate email addresses, so that users can receive welcome email and notifications. If the identity and subscription email addresses match, users can access the benefits of the subscription. 
 
-As your organization transitions from Microsoft to Azure AD identities, your users' benefits continue to work with their new Azure AD identity, provided that the email addresses match. If the email address that the users' subscription is assigned to differs from their Azure AD identity email address, your subscription administrator must [reassign the subscription](../billing/csp/buy-vs-app-center.md). Otherwise, users must [add an alternate identity to their Visual Studio subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity).
+As your organization transitions from Microsoft to Azure AD identities, your users' benefits continue to work with their new Azure AD identity, provided that the email addresses match. If the email address that the users' subscription is assigned to differs from their Azure AD identity email address, your subscription administrator must [reassign the subscription](../billing/csp/buy-vs-app-center.md). Otherwise, users must [add an alternate identity to their Visual Studio subscription](/visualstudio/subscriptions/vs-alternate-identity).
 
 ### Q: What if sign-in is required when I use the identity picker?
 

@@ -24,7 +24,7 @@ The Visual Studio Marketplace provides support for the following:
 > This documentation focuses on discovering and installing extensions. Most extensions are available for free. For information on purchasing, see:
 > - [Azure DevOps Services billing overview](../organizations/billing/overview.md)
 > - [How to pay for TFS users](../organizations/billing/buy-access-tfs-test-hub.md)
-> - [How to buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
+> - [How to buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 > - [How to buy Xamarin University](../organizations/billing/xamarin-univ.md)
 
 ## What are extensions

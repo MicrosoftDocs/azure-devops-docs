@@ -111,7 +111,7 @@ monikerRange: '>= tfs-2015'
 | ![icon](package/_img/nuget-packager.png) [NuGet Packager](package/nuget.md)Creates nupkg outputs from csproj or nuspec files | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](package/_img/nuget-publisher.png) [NuGet Publisher](package/nuget.md). Uploads nupkg files to a nuget server | Azure Pipelines, TFS 2015.3 and newer |
 | ![icon](package/_img/pypi-publisher.png) [PyPI Publisher](package/pypi-publisher.md). Publish a Python package to PyPI | Azure Pipelines |
-| ![icon](package/_img/xamarin-component-restore.png) Xamarin Component Restore. - deprecated. See [Updating component references to NuGet](https://docs.microsoft.com/xamarin/cross-platform/troubleshooting/component-nuget) | Azure Pipelines, TFS 2015 RTM and newer | Azure Pipelines, TFS 2017 and newer |
+| ![icon](package/_img/xamarin-component-restore.png) Xamarin Component Restore. - deprecated. See [Updating component references to NuGet](/xamarin/cross-platform/troubleshooting/component-nuget) | Azure Pipelines, TFS 2015 RTM and newer | Azure Pipelines, TFS 2017 and newer |
 
 ## Deploy
 

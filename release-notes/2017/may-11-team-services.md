@@ -217,7 +217,7 @@ Recipients for the same email notification are now included together on the to: 
 
 This feature is on by default, but can be disabled by an account administrator by switching off the account-level __Combine email recipients__ feature via the __Preview features__ panel under the user profile menu. 
 
-Learn more about [combining email recipients](/vsts/notifications/manage-team-notifications).
+Learn more about [combining email recipients](/vsts/notifications/howto-manage-team-notifications).
 
 ##Out-of-the-box notifications out of preview
 The out-of-the-box notifications feature is now out of preview and available on all accounts. Users and teams are now automatically notified via email when there is activity in the account directly relevant to them, such as:

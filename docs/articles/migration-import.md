@@ -79,7 +79,7 @@ The ```TryMatchOobProcesses.log``` should only be reviewed if you're trying to i
 By this point you will have run TfsMigrator *validate* against the collection and it is returning "All collection validations passed".  Before you start taking the collection offline to migrate, there is some more preparation that needs to be completed - generating the import files. Upon running the prepare step, you will generate two import files: ```IdentityMapLog.csv``` which outlines your identity map between Active Directory (AD) and Azure Active Directory (AAD), and ```import.json``` which requires you to fill out the import specification you want to use to kick off your migration. 
 
 ### Prepare Command
-The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to AAD to find each identity's match. Your company will need to employ the Azure Active Directory Connect [tool](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, TfsMigrator should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
+The prepare command assists with generating the required import files. Essentially, this command scans the collection to find a list of all users to populate the identity map log, ```IdentityMapLog.csv```, and then tries to connect to AAD to find each identity's match. Your company will need to employ the Azure Active Directory Connect [tool](/azure/active-directory/connect/active-directory-aadconnect) (formerly known as the Directory Synchronization tool, Directory Sync tool, or the DirSync.exe tool). If directory synchronization is setup, TfsMigrator should be able to find the matching identities and mark them as Active. If it doesn't find a match, the identity will be marked Historical in the identity map log and you will need to investigate why the user wasn't included in your directory sync. The Import specification file, ```import.json```, should be filled out prior to importing. 
 
 Unlike the validate command, prepare **DOES** require an internet connection as it needs to reach out to AAD in order to populate the identity map log file. If your TFS server doesn't have internet access, you'll need to run the tool from a different PC that does. As long as you can find a PC that has an intranet connection to your TFS server and an internet connection then you can run this command. Run the following command to see the guidance for the prepare command:
 
@@ -256,7 +256,7 @@ If you're running a dry run (test) import, it's recommended to reattach your col
 > [!NOTE]   
 > If TfsMigrator didn't warn that your collection was too big, use the DACPAC method outlined below. Otherwise see the section on importing large collections at https://aka.ms/VSTSImportLargeCollection.
 
-Data-tier Application Component Packages ([DACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to VSTS and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt). 
+Data-tier Application Component Packages ([DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications)) is a feature in SQL server that allows database changes to be packaged into a single file and deployed to other instances of SQL. It can also be restored directly to VSTS and is therefore utilized as the packaging method for getting your collection's data in the cloud. You're going to use the SqlPackage.exe tool to generate the DACPAC. This tool is included as part of the [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt). 
 
 There are multiple versions of SqlPackage.exe installed with SQL Server Data Tools, located under folders with names such as 120, 130, and 140. When using SqlPackage.exe it is important to use the right version to prepare the DACPAC.
 
@@ -269,7 +269,7 @@ If you installed SQL Server Data Tools (SSDT) for Visual Studio, you can find Sq
 * If you installed SSDT and did a stand-alone installation, SqlPackage.exe is located in a folder similar to: `C:\Program Files (x86)\Microsoft Visual Studio\2017\SQL\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130\`
 * If you already have an installation of SQL Server, SqlPackage.exe may already be present, and located in a folder similar to: `%PROGRAMFILES%\Microsoft SQL Server\130\DAC\bin\`
 
-Both of the versions of SSDT that you can download from [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) include both the 130 and 140 folders with their respective versions of SqlPackage.exe.
+Both of the versions of SSDT that you can download from [SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) include both the 130 and 140 folders with their respective versions of SqlPackage.exe.
 
 When generating a DACPAC there are two considerations that you'll want to keep in mind, the disk that the DACPAC will be saved on and the space on disk for the machine performing the DACPAC generation. Before generating a DACPAC you'll want to ensure that you have enough space on disk to complete the operation. While creating the package, SqlPackage.exe temporarily stores data from your collection in the temp directory on the C: drive of the machine you initiate the packaging request from. Some users might find that their C: drive is too small to support creating a DACPAC. Estimating the amount of space you'll need can be found by looking for the largest table in your collection database. As DACPACs are created one table at a time. The maximum space requirement to run the generation will be roughly equivalent to the size of the largest table in the collection's database. You will also need to take into account the size of the collection database as reported in TfsMigrator.log file from a validation run, if you choose to save the generated DACPAC on the C: drive.
 
@@ -318,7 +318,7 @@ The output of the command will be a DACPAC that is generated from the collection
 
 DACPACs offer a fast and relatively simplistic method for moving collections into VSTS. However, once a collection database crosses a certain size threshold the benefits of using a DACPAC start to diminish. For databases that TfsMigrator warns are too big, a different data packaging approach is required to migrate to VSTS. If you're unsure if your collection is over the size threshold then you should run a TfsMigrator validate on the collection. The validation will let you know if you need to use the SQL Azure VM method for import or not. 
 
-Before going any further, it's always recommended to see if [old data can be cleaned up](https://docs.microsoft.com/tfs/server/upgrade/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn't need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
+Before going any further, it's always recommended to see if [old data can be cleaned up](/tfs/server/upgrade/clean-up-data). Over time collections can build up very large volumes of data. This is a natural part of the DevOps process. However, some of this data might no longer be relevant and doesn't need to be kept around. Some common examples are older workspaces and build results. Cleaning older, no longer relevant artifacts might remove a lot more space than one would expect. It could be the difference between using the DACPAC import method or having to use a SQL Azure VM. It's important to note that once you deleted older data that it **CANNOT** be recovered without restoring an older backup of the collection.
 
 If you are under the DACPAC threshold, follow the instructions to [generate a DACPAC](#generating-a-dacpac) for import. If you're still unable to get the database under the DACPAC threshold then you will need to setup a SQL Azure VM to import to VSTS. We'll walk through how to accomplish this end-to-end. At a high-level the steps covered include:
 
@@ -354,8 +354,8 @@ Below are some additional recommended configurations for your SQL Azure VM.
 
 1. It's recommended that D Series VMs be used as they're optimized for database operations.
 2. Ensure that the D Series VM has at least 28GBs of ram. Azure D12 V2 VM sizes are recommended for imports.
-3. [Configure](https://docs.microsoft.com/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](.\migration-import.md#generating-a-dacpac).
-4. If your source database is still over 1TB after [reducing the size](https://docs.microsoft.com/tfs/server/upgrade/clean-up-data) then you will need to [attach](https://docs.microsoft.com/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
+3. [Configure](/sql/relational-databases/databases/move-system-databases#a-nameexamplesa-examples) the SQL temporary database to use a drive other than the C drive. Ideally this drive should have ample free space; at least equivalent to your database's [largest table](.\migration-import.md#generating-a-dacpac).
+4. If your source database is still over 1TB after [reducing the size](/tfs/server/upgrade/clean-up-data) then you will need to [attach](/azure/virtual-machines/windows/attach-disk-portal) additional 1TB disks and combine them into a single partition to restore your database on the VM. 
 5. Collection databases over 1TB in size should consider using Solid State Drives (SSDs) for both the temporary database and collection database. 
 
 #### VSTS IPs 
@@ -542,7 +542,7 @@ VSTS is available in multiple [regions](https://azure.microsoft.com/regions/serv
 
 While VSTS is available in multiple regions in the United States, only the Central United States region is accepting new VSTS. Customers will not be able to import their data into other United States Azure regions at this time.  
 
-[Creating a blob container](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following file:
+[Creating a blob container](/azure/storage/common/storage-create-storage-account) can be done from the Azure portal. Once the container has been created you will need to upload the following file:
 * Collection DACPAC 
 
 After the import has been completed you can delete the blob container and accompanying storage account.
@@ -567,7 +567,7 @@ After installing Storage Explorer you can complete the following steps to genera
 
 ![Connect a new storage account](_img/migration-import/StorageExplorerAddAccount.png)
 
-* Enter your storage account name, provide one of your two [primary access keys](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account#manage-your-storage-account-keys), and connect
+* Enter your storage account name, provide one of your two [primary access keys](/azure/storage/common/storage-create-storage-account#manage-your-storage-account-keys), and connect
 
 ![Enter information about the storage account to connect](_img/migration-import/StorageExplorerConnectAccount.png)
 

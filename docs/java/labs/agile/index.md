@@ -232,4 +232,4 @@ through the MyShuttle scenario.
 
 This is a quick introduction to the Agile Planning tools and Work Items. You'll work with them
 some more later. If you want to read more about the Agile Planning tools, Sprint Planning, and the Scrum
-template, read [Sprint planning with VSTS](https://docs.microsoft.com/en-us/vsts/boards/sprints/assign-work-sprint).
+template, read [Sprint planning with VSTS](/vsts/boards/sprints/assign-work-sprint).

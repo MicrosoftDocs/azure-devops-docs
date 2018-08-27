@@ -187,9 +187,9 @@ featureFlags:
                                                     <div class="cardText">
                                                         <h3>Source control</h3>
                                                         <p><a href="/vsts/repos/git/index">Git repositories</a></p>
-														<p><a href="/vsts/repos/git/pullrequest">Pull requests</a></p>
-														<p><a href="/vsts/repos/git/concepts/forks">Forks</a></p>
-														<p><a href="/vsts/repos/git/branch-policies">Branch policies</a></p>
+														<p><a href="/vsts/repos/git/pull-requests-overview">Pull requests</a></p>
+														<p><a href="/vsts/repos/git/forks-overview">Forks</a></p>
+														<p><a href="/vsts/repos/git/branch-policies-overview">Branch policies</a></p>
 														<p><a href="/vsts/repos/tfvc/index">Team Foundation version control</a></p>
                                                     </div>
                                                 </div>
@@ -206,7 +206,7 @@ featureFlags:
 														<p><a href="/vsts/project/feedback/index">Request stakeholder feedback</a></p>
 														<p><a href="/vsts/pipelines/test/getting-started-with-continuous-testing">Continuous testing</a></p>
 														<p><a href="/vsts/test/load-test/index">Load testing</a></p>
-														<p><a href="https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code">Unit &amp; functional testing</a></p>
+														<p><a href="/visualstudio/test/unit-test-your-code">Unit &amp; functional testing</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -278,11 +278,11 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Developer tools</h3>
-                                                        <p><a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></p>
+                                                        <p><a href="/rest/api/vsts/">REST APIs</a></p>
 														<p><a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
 														<p><a href="/vsts/repos/git/command-prompt">Git commands</a></p>
 														<p><a href="/vsts/repos/tfvc/use-team-foundation-version-control-commands">TFVC commands</a></p>
-														<p><a href="https://docs.microsoft.com/en-us/cli/vsts/overview">CLI</a></p>
+														<p><a href="/cli/vsts/overview">CLI</a></p>
 														<p><a href="/vsts/demo-gen">Azure DevOps demo generator</a></p>
                                                     </div>
                                                 </div>

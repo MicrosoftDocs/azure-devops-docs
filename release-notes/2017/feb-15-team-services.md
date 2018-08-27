@@ -112,7 +112,7 @@ We’ve updated the Package Management user experience to make it faster, addres
 ![package management](_img/02_15_19.png)
 
 ##Support for AAD conditional access
-Team Services can now be explicitly selected as the target for Azure Active Directory (AAD) conditional access policy. This lets enterprises control where and how their users can access VSTS. Visit the [Microsoft Azure documentation site](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access) to learn more about conditional access policy (CAP).
+Team Services can now be explicitly selected as the target for Azure Active Directory (AAD) conditional access policy. This lets enterprises control where and how their users can access VSTS. Visit the [Microsoft Azure documentation site](/azure/active-directory/active-directory-conditional-access) to learn more about conditional access policy (CAP).
 
 NOTE: CAP is enforced when a user signs into VSTS with their AAD credentials. Therefore, subsequent accesses to VSTS via mechanisms including personal access tokens, alternate authentication, OAuth and SSH keys do not fall under conditional access policy.
 

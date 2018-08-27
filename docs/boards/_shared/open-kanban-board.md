@@ -42,7 +42,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 0. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 
-	![Open Portfolio Kanban board, Features](/vsts/kanban_img/quickstart/open-kanban-board.png)
+	![Open Portfolio Kanban board, Features](/vsts/boards/boards/_img/quickstart/open-kanban-board.png)
 
 	If you don't see **Work**, your screen size may be reduced. Click the three dots (![](/vsts/_shared/_img/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 

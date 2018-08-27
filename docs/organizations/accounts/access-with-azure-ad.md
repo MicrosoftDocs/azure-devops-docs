@@ -114,7 +114,7 @@ to [set up your credentials](http://support.microsoft.com/kb/2991274/) again for
 
 ## What if I accidentally delete a user in Azure AD?
 
-You should [restore the user](https://docs.microsoft.com/azure/active-directory/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user will not be associated with the previous identity.
+You should [restore the user](/azure/active-directory/active-directory-users-restore), rather than create a new one. If you create a new user, even with the same email address, this user will not be associated with the previous identity.
 
 ## Manage organization access with Azure AD
 

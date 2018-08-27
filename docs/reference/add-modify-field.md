@@ -257,11 +257,11 @@ To modify the field label, change the value assigned to the ```Control``` elemen
 <a id="custom-control">  </a>
 ## Add a custom control  
 
-Using the [object model for tracking work items](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb130347(v%3dvs.120)), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+Using the [object model for tracking work items](/previous-versions/visualstudio/visual-studio-2013/bb130347(v%3dvs.120)), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
 ::: moniker range=">= tfs-2017 <=tfs-2018"
 
-Using [REST APIs for tracking work items](https://docs.microsoft.com/rest/api/vsts/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
+Using [REST APIs for tracking work items](/rest/api/vsts/wit/work%20items), you can programmatically create, change, and find bugs, tasks, and other WITs. You can also create your own custom controls that add functionality to a work item form.
 
 Or, you can add a custom control which is available through the [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=custom%20controls&target=VSTS&sortBy=Relevance). For example:
 

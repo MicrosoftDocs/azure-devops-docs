@@ -102,14 +102,14 @@ Release gates, which enable data-driven approval of deployments, now becomes gen
 
 [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/container-service/), a fully managed Kubernetes service in Azure, can now be targeted when starting a new Node.js, .NET Core, or Java-based app in [DevOps Projects](https://azure.microsoft.com/features/devops-projects/). You can also start with your existing application by bringing your own code. Simply select an application language, a runtime, and then AKS. The DevOps Project will create the AKS cluster and set up a continuous delivery pipeline using Helm Charts.
 
-You can also target [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) for new .NET Core apps in DevOps Projects. This gives you yet another option to get started on a new project that includes a full DevOps pipeline, whether you want to retain the control of a VM, keep the simplicity of a web app, or optimize for high scale. See the tutorial documentation for [AKS](/vsts/pipelines/actions/azure-devops-project-aks?view=vsts) and [Service Fabric](/vsts/pipelines/actions/azure-devops-project-service-fabric?view=vsts) documentation for more information.
+You can also target [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) for new .NET Core apps in DevOps Projects. This gives you yet another option to get started on a new project that includes a full DevOps pipeline, whether you want to retain the control of a VM, keep the simplicity of a web app, or optimize for high scale. See the tutorial documentation for [AKS](/azure/devops-project/azure-devops-project-aks) and [Service Fabric](/azure/devops-project/azure-devops-project-service-fabric) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Select an Azure Service to deploy the application](_img/134_11.png)
 
 ### Deploy to Azure SQL Database using Azure DevOps Projects
 
-[Azure SQL Database](https://azure.microsoft.com/services/sql-database/), a fully managed relational cloud database, can now be targeted in [DevOps Projects](https://azure.microsoft.com/features/devops-projects/), when starting a new .NET app and selecting ASP.NET as runtime. You can add the SQL Database to your .NET app by simply selecting **Add a database**. The DevOps Project will create a sample two-tier, connected application, including a continuous delivery pipeline for both the tiers. See the [tutorial](/vsts/pipelines/actions/azure-devops-project-sql-database?view=vsts) documentation for more information.
+[Azure SQL Database](https://azure.microsoft.com/services/sql-database/), a fully managed relational cloud database, can now be targeted in [DevOps Projects](https://azure.microsoft.com/features/devops-projects/), when starting a new .NET app and selecting ASP.NET as runtime. You can add the SQL Database to your .NET app by simply selecting **Add a database**. The DevOps Project will create a sample two-tier, connected application, including a continuous delivery pipeline for both the tiers. See the [tutorial](/azure/devops-project/azure-devops-project-sql-database) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 ![Add a database](_img/134_10.png)
@@ -178,7 +178,7 @@ The [Demo Generator](https://vstsdemogenerator.azurewebsites.net/) helps you cre
 
 The latest version offers a simple sign-in, automated installation of extensions, new templates, and support for TFS.
 
-Check out the [documentation](https://docs.microsoft.com/vsts/demo-gen) for step-by-step instructions for using the Generator.
+Check out the [documentation](/vsts/demo-gen) for step-by-step instructions for using the Generator.
 
 ## Next steps and Feedback
 

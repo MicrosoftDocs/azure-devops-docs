@@ -8,7 +8,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 8afd3481-6fab-401d-90ff-0dd443da0f0e
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 03/20/2018
@@ -309,4 +310,4 @@ That's about all you need to know about working with Kanban columns. Here are a 
 
 
 ###REST API resources
-To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/rest/api/vsts/work/boards).
+To programmatically interact with Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).

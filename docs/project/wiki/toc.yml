@@ -49,9 +49,9 @@
   - name: "Default permissions (Security)"
     href: wiki-readme-permissions.md
   - name: "REST API, Wikis"
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/wiki/wikis 
+    href: /rest/api/vsts/wiki/wikis 
   - name: Fetch Wiki Search Results
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
+    href: /rest/api/vsts/search/wiki%20search%20results/fetch%20wiki%20search%20results
 - name: Resources 
   items:
   - name: Navigate basics

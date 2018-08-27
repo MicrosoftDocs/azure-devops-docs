@@ -89,11 +89,11 @@ Initiate pull requests directly from Visual Studio.
 
 ### From the VSTS CLI (Preview)
 
-You can now manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI](https://docs.microsoft.com/cli/vsts/overview)**.
+You can now manage pull requests and other resources in VSTS and Team Foundation Server 2017 Update 2 or later from the command line with the **[VSTS CLI](/cli/vsts/overview)**.
 
-For a list of commands to create and manage pull requests, see [Manage pull requests](https://docs.microsoft.com/cli/vsts/code/pr).
+For a list of commands to create and manage pull requests, see [Manage pull requests](/cli/vsts/code/pr).
 
-For more information about working with the VSTS CLI, see [Get started with the VSTS CLI](https://docs.microsoft.com/cli/vsts/get-started).
+For more information about working with the VSTS CLI, see [Get started with the VSTS CLI](/cli/vsts/get-started).
 
 
 

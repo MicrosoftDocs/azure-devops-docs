@@ -229,7 +229,7 @@ With wiki search, you can search within a project wiki or across all wikis creat
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-update2). 
+> Wiki search is supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
 ::: moniker-end
 
 

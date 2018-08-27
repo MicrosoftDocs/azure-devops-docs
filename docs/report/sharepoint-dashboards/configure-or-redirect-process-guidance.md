@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 03/09/2017
 monikerRange: '>=tfs-2013'
 ms.topic: tutorial
@@ -58,7 +59,7 @@ Your team can use process guidance to capture how they coordinate work on a team
 ##  <a name="simple"></a> Specify a website for your process guidance  
  Choose this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/accounts/add-administrator-team-project).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/security/set-project-collection-level-permissions).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   
@@ -71,7 +72,7 @@ Your team can use process guidance to capture how they coordinate work on a team
 ##  <a name="sp"></a> Specify a SharePoint document library that contains your process guidance  
  Some process guidance links will work only if process guidance has been enabled for your team project.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/accounts/add-administrator-team-project).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/security/set-project-collection-level-permissions).  
   
 2.  Open Portal Settings and choose the Process Guidance tab.  
   

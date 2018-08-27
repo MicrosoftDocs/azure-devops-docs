@@ -43,7 +43,7 @@ While queries, backlogs, and boards give you a number of ways to see your work, 
 The **Work Items** Hub now has 4 person-centric pivots to allow you to focus on what is important to you, as well as 3 project-centric views to get a better idea of your project’s work.
 
 - **Assigned to me** - all work items assigned to you in the project in the order they’re last updated
-- **Following** - all work items you’re [following](/vsts/work/work-items/follow-work-items)
+- **Following** - all work items you’re [following](/vsts/boards/work-items/follow-work-items)
 - **Mentioned** - all work items you’ve been mentioned in, in the last 30 days
 - **My activity** - all work items that you have recently viewed or updated
 - **Recently updated** - all work items in your project that have been most recently updated

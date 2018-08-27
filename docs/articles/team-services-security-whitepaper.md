@@ -383,7 +383,7 @@ will replace the Directive and all local laws relating to it. VSTS is relied upo
 integrity, traceability and audit rules, we view all information within VSTS to be business critical and therefore cannot be modified from its original state. 
 These existing obligations affect our delete and retention obligations for GDPR. As such, we do not support GDPR delete requests from within VSTS. 
 We have ensured that when an entire VSTS account is deleted that all associated data and telemetry about that account and its members are removed from our system (after the requisite 30-day soft-delete period). 
-To learn more about how VSTS honors Data Subject Requests (DSR), please visit the following [page](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
+To learn more about how VSTS honors Data Subject Requests (DSR), please visit the following [page](/microsoft-365/compliance/gdpr-dsr-vsts?toc=/microsoft-365/enterprise/toc.json).
 To learn more about the GDPR regulation, please visit the following page in [Microsoft's Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 ### Data residency and sovereignty
@@ -547,7 +547,7 @@ You can learn more about how to
 In some cases, you might want to restrict access to your VSTS account 
 by requiring more than one factor to sign in. AAD lets you require multiple factors, 
 such as phone authentication in addition to a username and password, for all 
-authentication requests. You can [learn more](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/) about turning on multifactor authentication for AAD.
+authentication requests. You can [learn more](/azure/multi-factor-authentication/) about turning on multifactor authentication for AAD.
 
 ### Use BitLocker
 
@@ -581,7 +581,7 @@ Azure Active Directory (Azure AD) provides the capability for administrators to
 control access to Azure resources and applications such as VSTS.  With 
 conditional access control in place, Azure AD checks for the specific conditions 
 you set for a user to access an application. After access requirements are met, 
-the user is authenticated and can access the application.  Visit the [Microsoft Azure documentation site](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access) 
+the user is authenticated and can access the application.  Visit the [Microsoft Azure documentation site](/azure/active-directory/active-directory-conditional-access) 
 to learn more about conditional access policy (CAP).  One limitation of Azure AD conditional access policy is that it is enforced at the time a user signs in, and therefore access can continue 
 to be granted even if conditions change which would otherwise conflict with policy. 
 For example, you may choose to have location conditions applied to limit access to 

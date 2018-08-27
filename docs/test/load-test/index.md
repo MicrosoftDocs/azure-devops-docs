@@ -62,11 +62,11 @@ Learn how to run performance and load tests against your app.
 
 ## Resources
 
-* [Load test with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project)
-* [Edit load tests](https://docs.microsoft.com/visualstudio/test/edit-load-tests)
-* [Create custom code &amp; plug-ins](https://docs.microsoft.com/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests)
-* [Analyze load test results](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
-* [Web Performance Test API](https://docs.microsoft.com/visualstudio/test/how-to-use-the-web-performance-test-api)
+* [Load test with Visual Studio](/visualstudio/test/quickstart-create-a-load-test-project)
+* [Edit load tests](/visualstudio/test/edit-load-tests)
+* [Create custom code &amp; plug-ins](/visualstudio/test/create-custom-code-and-plug-ins-for-load-tests)
+* [Analyze load test results](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+* [Web Performance Test API](/visualstudio/test/how-to-use-the-web-performance-test-api)
 * [Manual and exploratory testing](../index.md)
 * [Continuous testing](../../pipelines/index.md)
-* [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)
+* [Unit testing](/visualstudio/test/developer-testing-scenarios)

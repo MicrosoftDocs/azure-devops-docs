@@ -25,7 +25,7 @@ For more information about PR status, see [Customize and extend pull request wor
 A VSTS account with a Git repo. If you don't have a VSTS account, [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) to upload and share code in free unlimited private Git repositories.
 
 ## Create a basic Azure function to listen to VSTS events
-Follow the [create your first Azure function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
+Follow the [create your first Azure function](/azure/azure-functions/functions-create-first-azure-function) documentation to create a simple function. Modify the code in the sample to look like this:
 
 ```cs
 #r "Newtonsoft.Json"

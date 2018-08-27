@@ -232,7 +232,7 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Hyperlink</td>
-<td>Used to link a work item to a URL. Note that **Workitem Hyperlink** is the name of this link type in the [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact%20link%20types/list). </td>
+<td>Used to link a work item to a URL. Note that **Workitem Hyperlink** is the name of this link type in the [Artifact Link Types API](/rest/api/vsts/wit/artifact%20link%20types/list). </td>
 </tr>
 
 <tr>
@@ -266,7 +266,7 @@ The following table describes the external link types you can specify to scope a
 
 <tr>
 <td>Versioned item</td>
-<td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact%20link%20types/list).   </td>
+<td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](/rest/api/vsts/wit/artifact%20link%20types/list).   </td>
 </tr>
 </tbody>
 </table>
@@ -341,7 +341,7 @@ In addition to defining link types, you can customize the work item type definit
 -  [Link work items to track dependencies](../../boards/queries/link-work-items-support-traceability.md)    
 -  [Customizing your work tracking experience](../customize-work.md)
 
-To programmatically interact with link types, see [Artifact Link Types API](https://docs.microsoft.com/rest/api/vsts/wit/artifact%20link%20types/list).
+To programmatically interact with link types, see [Artifact Link Types API](/rest/api/vsts/wit/artifact%20link%20types/list).
 
 
 ### Test management links    

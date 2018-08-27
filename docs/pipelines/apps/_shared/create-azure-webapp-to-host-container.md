@@ -26,7 +26,7 @@ The web app you created here will host an instance of that image and expose it a
 
 You can configure Web App for Containers to automatically configure deployment as part of the
 CI/CD pipeline so that the web app is automatically updated when a new image is pushed to the container
-registry (this feature uses a [webhook](https://docs.microsoft.com/azure/container-registry/container-registry-webhook)).
+registry (this feature uses a [webhook](/azure/container-registry/container-registry-webhook)).
 However, by using a separate release pipeline in Azure Pipelines or TFS you gain extra flexibility and traceability. You can:
 
 * Specify an appropriate tag that is used to select the deployment target for multi-stage deployments.

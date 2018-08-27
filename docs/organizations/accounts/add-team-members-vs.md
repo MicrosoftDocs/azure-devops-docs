@@ -94,7 +94,7 @@ Which email addresses can I add?
 	
 * You must add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless your Azure DevOps Services organization [uses your organization's directory](faq-add-team-members.md#ConnectedDirectory) to authenticate users and control organization access through [Azure Active Directory (Azure AD)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). If new users don't have a Microsoft account, have them [sign up for an account](https://signup.live.com/).
 
-* If your Azure DevOps Services organization is connected to your directory, all users must be directory members and sign in to Azure DevOps Services with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/add-external-user?view=vsts).
+* If your Azure DevOps Services organization is connected to your directory, all users must be directory members and sign in to Azure DevOps Services with work or school accounts that are managed by your directory. If they are not members, they need to be [added to the directory](/azure/devops/organizations/accounts/add-external-user?view=vsts).
 
 	![Add members' sign-in addresses or display names](_img/add-team-members/add-user-or-group-to-project.png)
 
@@ -102,7 +102,7 @@ Which email addresses can I add?
 
     What if new team members don't receive or lose the invitation email?
 
-    * **Azure AD-backed organizations**: If you're [inviting users from outside your Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the Azure DevOps Services organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you cannot assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
+    * **Azure AD-backed organizations**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the Azure DevOps Services organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you cannot assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
 
   * **MSA-backed organizations**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the Azure DevOps Services organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 

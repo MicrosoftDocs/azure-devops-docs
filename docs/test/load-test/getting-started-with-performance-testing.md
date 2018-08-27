@@ -24,7 +24,7 @@ in almost no time with Azure DevOps.
 
 > This example shows how to execute a cloud load test using Visual Studio. You can also
 [run cloud-based load tests directly using the Azure DevOps portal](get-started-simple-cloud-load-test.md),
-or [run load tests locally with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project).
+or [run load tests locally with Visual Studio](/visualstudio/test/quickstart-create-a-load-test-project).
 
 <a name="LoadTestVSIDE"></a>
 ## Prepare your environment
@@ -141,7 +141,7 @@ connect Visual Studio to Azure DevOps.
 1. To [simulate real-world loads](https://msdn.microsoft.com/library/ff406975%28v=vs.140%29.aspx) 
    more closely, you can refine your test by specifying web performance 
    test properties, load test scenario properties, and
-   [run settings properties](https://docs.microsoft.com/visualstudio/test/load-test-run-settings-properties).
+   [run settings properties](/visualstudio/test/load-test-run-settings-properties).
 
 ## Next step
 

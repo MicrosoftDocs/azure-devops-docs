@@ -19,8 +19,8 @@ is an extension of Azure that enables the agility and fast-paced innovation of c
 through a hybrid cloud and on-premises environment.
 
 >At present, Team Foundation Server can be used to deploy to Azure Stack with Azure AD and cannot be used to deploy to
-an [Azure Stack with Azure Directory Federated Services (AD FS)](https://docs.microsoft.com/azure/azure-stack/azure-stack-identity-overview). Azure Stack with AD FS requires
-a [service principal with certificate](https://docs.microsoft.com/azure/azure-stack/azure-stack-create-service-principals#create-service-principal-for-ad-fs),
+an [Azure Stack with Azure Directory Federated Services (AD FS)](/azure/azure-stack/azure-stack-identity-overview). Azure Stack with AD FS requires
+a [service principal with certificate](/azure/azure-stack/azure-stack-create-service-principals#create-service-principal-for-ad-fs),
 which is not currently supported in Azure Pipelines/TFS.
 
 To enable connection to an Azure Stack, you specify it as the **Environment** parameter when you create an
@@ -34,7 +34,7 @@ You can then use the service connection in your [build and release pipeline task
 
 * [Deploy an Azure Web App](../apps/cd/deploy-webdeploy-webapps.md)
 * [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
-* [Azure Stack Operator Documentation](https://docs.microsoft.com/azure/azure-stack/)
+* [Azure Stack Operator Documentation](/azure/azure-stack/)
 
 ## Q&A
 

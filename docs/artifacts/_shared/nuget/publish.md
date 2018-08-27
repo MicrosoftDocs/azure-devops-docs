@@ -16,7 +16,7 @@ First, get the tools and your feed URL:
 **Notes:**
 
 * The NuGet client's push command requires an API key. You can use any non-empty string you want; in this example, we used `key`.
-* If you're prompted for credentials in the command line, ensure that the credential provider downloaded is in the same folder as NuGet.exe.  For more help using credential providers with NuGet, see [here](https://docs.microsoft.com/en-us/nuget/api/nuget-exe-credential-providers).
+* If you're prompted for credentials in the command line, ensure that the credential provider downloaded is in the same folder as NuGet.exe.  For more help using credential providers with NuGet, see [here](/nuget/api/nuget-exe-credential-providers).
 
 ## Get a sample package to push
 

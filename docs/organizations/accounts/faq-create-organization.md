@@ -108,7 +108,7 @@ When you sign up with a work or school account:
 *	The directory administrator has control over who can join the directory.
 *	You sign in with work or school accounts, or with Microsoft accounts if your company allows that.
 
-To [add users to the directory](https://docs.microsoft.com/azure/active-directory/active-directory-create-users), you must be a directory administrator. If you don't have access, work with your directory administrator to add users. Learn more about [work or school accounts for your organization](https://docs.microsoft.com/azure/active-directory/sign-up-organization).
+To [add users to the directory](/azure/active-directory/active-directory-create-users), you must be a directory administrator. If you don't have access, work with your directory administrator to add users. Learn more about [work or school accounts for your organization](/azure/active-directory/sign-up-organization).
 
 <a name="ChangeDirectory"></a>
 

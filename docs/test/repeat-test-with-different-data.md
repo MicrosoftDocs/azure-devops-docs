@@ -137,7 +137,7 @@ values, and then play it back for the other sets.
    verify the results. 
 
 Record and playback doesn't work with all applications. For details, see 
-[Supported Configurations and Platforms for Coded UI Tests and Action Recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+[Supported Configurations and Platforms for Coded UI Tests and Action Recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
 ## See also
 

@@ -158,8 +158,8 @@ Follow these steps to run your load test on your local machine.
 
 You can improve your test to better simulate 
 real-world loads by specifying various load test 
-[scenario properties](https://docs.microsoft.com/visualstudio/test/edit-load-test-scenarios)
-and [run settings properties](https://docs.microsoft.com/visualstudio/test/load-test-run-settings-properties).
+[scenario properties](/visualstudio/test/edit-load-test-scenarios)
+and [run settings properties](/visualstudio/test/load-test-run-settings-properties).
 For example, you can specify the number of new users that will use web cache data in your load test.
 
 ![Percentage of new users property](_img/run-performance-tests-app-before-release/percentage-new-users.png)

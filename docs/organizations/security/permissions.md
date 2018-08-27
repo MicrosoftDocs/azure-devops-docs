@@ -1899,7 +1899,7 @@ You can set these permissions by using the [TFSLabConfig permissions command-lin
 By default, the team project level and collection-level Readers groups have only View lab resources (Read) permissions.
 
 > [!NOTE]  
-> Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](https://docs.microsoft.com/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
+> Lab Management is deprecated for TFS 2017. We recommend that you [use Build and Release Management instead of Lab Management for automated testing](/visualstudio/test/lab-management/use-build-or-rm-instead-of-lab-management).
 
 <table valign="top" width="100%">
 <tbody valign="top">

@@ -64,7 +64,7 @@ To share a private view, simply edit the view and change the sharing option to *
 <!--If you make a shared view private, any Power BI report connected to that view fails to refresh in Power BI.-->
 
 > [!IMPORTANT]
-> If you plan to share [Power BI reports or dashboards](https://docs.microsoft.com/power-bi/service-share-dashboards) based on an Analytics view, make sure the view is **Shared**. Otherwise, you are the only one who can modify the view and manually refresh the data. We recommend sharing views to support shared reports and dashboards.
+> If you plan to share [Power BI reports or dashboards](/power-bi/service-share-dashboards) based on an Analytics view, make sure the view is **Shared**. Otherwise, you are the only one who can modify the view and manually refresh the data. We recommend sharing views to support shared reports and dashboards.
 
     > [!div class="mx-imgBorder"]
     > ![General tab](_img/editable-views/general.png)

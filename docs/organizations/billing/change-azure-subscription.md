@@ -21,7 +21,7 @@ If you want to use a different Azure subscription to bill purchases for your Azu
 
 ## Move to a different subscription
 
-If the target subscription is in the same Azure Active Directory as the destination subscription and you have access to both, just follow the steps below or learn more about [moving resources to new resource groups or subscriptions](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources).
+If the target subscription is in the same Azure Active Directory as the destination subscription and you have access to both, just follow the steps below or learn more about [moving resources to new resource groups or subscriptions](/azure/azure-resource-manager/resource-group-move-resources).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **Resource groups**.

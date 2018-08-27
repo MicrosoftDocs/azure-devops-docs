@@ -1267,7 +1267,7 @@ pipelines\tasks\build\_img
 <p>[Perform exploratory, manual, system, user acceptance, and performance tests for any app, in any language](../test/index.md). Using Visual Studio or 3rd-party test frameworks, you can include automated tests with builds and releases for continuous integration and deployment. </p>
 
 <p><b>Unit testing with Git</b></p>
-<p>Create [unit tests](https://docs.microsoft.com/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
+<p>Create [unit tests](/visualstudio/test/create-unit-tests-menu) and run them frequently to make sure your code is working properly.</p>
 ![view tests in test explorer](_img/features/alm-feature-test-unittests.png)  
 <br />
 
@@ -1975,7 +1975,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Dashboard</b></p>
-<p>Get the full picture with [customizable dashboards that track application health alongside usage metrics and app crashes](https://docs.microsoft.com/azure/application-insights/app-insights-overview). Within the dashboard, you can filter, search, and drill down to an event instance for more detail or to segment data.</p>
+<p>Get the full picture with [customizable dashboards that track application health alongside usage metrics and app crashes](/azure/application-insights/app-insights-overview). Within the dashboard, you can filter, search, and drill down to an event instance for more detail or to segment data.</p>
 ![Application insight dashboard blades](_img/features/features-app-insights-dashboard-blades.png)  
 <br/>
 
@@ -2789,7 +2789,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ## Related notes
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [Azure DevOps Services - Features update](https://docs.microsoft.com/vsts/release-notes/)
+- [Azure DevOps Services - Features update](/vsts/release-notes/)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
 - [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)
 

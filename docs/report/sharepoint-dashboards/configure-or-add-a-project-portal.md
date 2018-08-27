@@ -55,7 +55,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="simple"></a> Configure a Web site for your portal  
  Configure this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/accounts/add-administrator-team-project).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/security/set-project-collection-level-permissions).  
   
 2.  Open Portal Settings.  
   
@@ -66,7 +66,7 @@ The project portal is a site associated with a team project for the purposes of 
 ##  <a name="validtfs"></a> Configure a prepared SharePoint site for your portal  
  Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](/tfs/server/requirements#sharepoint).  
   
-1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/accounts/add-administrator-team-project).  
+1.  If you aren't a member of the Team Project Administrators group, [get added now](/vsts/organizations/security/set-project-collection-level-permissions).  
   
 2.  Open Portal Settings from the Settings page in Team Explorer.  
   

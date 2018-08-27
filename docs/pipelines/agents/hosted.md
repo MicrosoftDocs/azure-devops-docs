@@ -75,7 +75,7 @@ Microsoft-hosted agents:
 * Have [the above software](#software). You can also add software using [tool installers](../process/tasks.md#tool-installers).
 * Provide at least 10 GB of storage.
 * Can run jobs for up to 6 hours (30 minutes on the free tier).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2 and Standard_DS3_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general)
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2 and Standard_DS3_v2](/azure/virtual-machines/windows/sizes-general)
 
 Microsoft-hosted agents do not offer:
 

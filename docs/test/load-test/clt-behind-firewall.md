@@ -61,7 +61,7 @@ This topic discusses only scenarios **3** and **4**.
    If you want to test apps on-premises and have constraints such as not being able to store results in the cloud (perhaps for regulatory compliance)
    you can use the Test Controller and Test Agents combination for load testing. This requires you to
    use your own infrastructure for load generation and the results are stored in SQL Server.
-   See [Configure test agents and test controllers for running load tests](https://docs.microsoft.com/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) for details.
+   See [Configure test agents and test controllers for running load tests](/visualstudio/test/configure-test-agents-and-controllers-for-load-tests) for details.
 
 The following sections describe how you can provision load agents using Azure IaaS VMs
 (you will need an Azure subscription). This approach is primarily useful when:
@@ -265,6 +265,6 @@ allow the URL `https://<subscription name>.vsclt.visualstudio.com`.
 * [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
 * [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
-* [Analyze load test results using the Load Test Analyzer](https://docs.microsoft.com/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
+* [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 

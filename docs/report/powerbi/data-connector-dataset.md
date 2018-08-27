@@ -23,7 +23,7 @@ Each Analytics view defines a dataset in Power BI. Datasets are the tables and p
 * The entities and associated fields available from Analytics are flattened (denormalized) into a single table. For example, the user name in "Created By" is modeled as a string (User Name), rather than the user ID. This eliminates the need to create relationships between tables to create reports.
 * Historical data is modeled as snapshots for each time period, so trending reporting is extremely simple.
 
-To learn more about Power BI and datasets, see [Power BI - basic concepts for Power BI service](https://docs.microsoft.com/power-bi/service-basic-concepts).
+To learn more about Power BI and datasets, see [Power BI - basic concepts for Power BI service](/power-bi/service-basic-concepts).
 
 
 [!INCLUDE [temp](../_shared/analytics-view-availability.md)]
