@@ -14,15 +14,29 @@ monikerRange: '> tfs-2018'
 
 # Python
 
-This guide explains creating pipelines for Python projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
+This guidance explains how to build Python apps.
 
-## Get started
+## Example
 
-You can build Python projects using [Microsoft-hosted agents](../agents/hosted.md) that include tools for Python. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools you need.
+For a working example of how to build a Python app, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
-Create a file named **azure-pipelines.yml** in the root of your repository. Then, add applicable jobs and tasks to the YAML file as described below.
+```
+https://github.com/MicrosoftDocs/pipelines-python-django
+```
 
-## Use a specific Python version
+The sample code includes a `azure-pipelines.yml` file at the root of the repository.
+You can use this file to build the app.
+
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
+
+## Build environment
+
+You can use Azure Pipelines to build your Python apps without needing to set up any infrastructure of your own.
+Python is pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can either use Windows (Hosted VS2017) or Linux (Hosted Linux Preview) agents to run your builds.
+
+For the exact version of Python pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Python on Microsoft hosted agents, add the **Use Python Version** task to the beginning of your process.
+
+### Use specific Python version
 
 Add the [Use Python Version](../tasks/tool/use-python-version.md) task to set the version of Python used in your pipeline. This snippet sets subsequent pipeline tasks to use Python 3.6.
 
@@ -37,7 +51,7 @@ steps:
     architecture: 'x64'
 ```
 
-## Use multiple Python versions
+### Use multiple Python versions
 
 To run a pipeline with multiple Python versions, such as to test your project using different versions, define a job with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/use-python-version.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the job for all versions in the matrix, depending on how many parallel jobs are available.
 
@@ -65,7 +79,7 @@ jobs:
   # Add additional tasks to run using each Python version in the matrix above
 ```
 
-## Activate an Anaconda environment
+### Activate an Anaconda environment
 
 As an alternative to the **Use Python Version** task, create and activate a conda environment and Python version using the [Conda Environment](../tasks/package/conda-environment.md) task. Add the following YAML to activate an environment named `myEnvironment` with the Python 3 package.
 
@@ -163,21 +177,9 @@ Add the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-resu
     reportDirectory: '$(System.DefaultWorkingDirectory)/**/htmlcov'
 ```
 
-## Deploy
+## Package and deliver your code
 
-### Deploy to a PyPI-compatible index
-
-Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and publish to a PyPI-compatible index.
-
-```yaml
-- task: PyPIPublisher@0
-  inputs:
-    pypiConnection: ''
-    packageDirectory: '$(build.sourcesDirectory)'
-    alsoPublishWheel: false
-```
-
-## Retain artifacts
+### Publish artifacts to Azure Pipelines
 
 Build an sdist of your package.
 
@@ -195,6 +197,22 @@ Add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) t
     pathtoPublish: dist
     artifactName: dist
 ```
+
+### Deploy to a PyPI-compatible index
+
+Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and publish to a PyPI-compatible index.
+
+```yaml
+- task: PyPIPublisher@0
+  inputs:
+    pypiConnection: ''
+    packageDirectory: '$(build.sourcesDirectory)'
+    alsoPublishWheel: false
+```
+
+## Build a container
+
+You can build a Docker container image after you build your app. For more information, see [Docker](docker.md).
 
 ## Related extensions
 
