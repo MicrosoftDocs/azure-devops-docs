@@ -25,16 +25,15 @@ https://github.com/MicrosoftDocs/pipelines-python-django
 ```
 
 The sample code includes a `azure-pipelines.yml` file at the root of the repository.
-You can use this file to build the app.
+You can use this file to build the project.
 
-Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
+Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample project.
 
 ## Build environment
 
-You can use Azure Pipelines to build your Python apps without needing to set up any infrastructure of your own.
-Python is pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can either use Windows (Hosted VS2017) or Linux (Hosted Linux Preview) agents to run your builds.
+You can use Azure Pipelines to build your Python projects without needing to set up any infrastructure of your own. Python is preinstalled on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. You can use Linux, macOS, or Windows agents to run your builds.
 
-For the exact version of Python pre-installed, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Python on Microsoft hosted agents, add the **Use Python Version** task to the beginning of your process.
+For the exact versions of Python that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md). To install a specific version of Python on Microsoft hosted agents, add the [Use Python Version](../tasks/tool/use-python-version.md) task to the beginning of your pipeline.
 
 ### Use specific Python version
 
@@ -210,9 +209,9 @@ Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and
     alsoPublishWheel: false
 ```
 
-## Build a container
+## Build a container image
 
-You can build a Docker container image after you build your app. For more information, see [Docker](docker.md).
+You can also build and publish a Docker container image for your app. For more information, see [Docker](docker.md).
 
 ## Related extensions
 
@@ -221,4 +220,3 @@ You can build a Docker container image after you build your app. For more inform
 [Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)  
 [Azure Pipelines Plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
 [Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (Microsoft)  
-[VSTS extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team) (Microsoft)  
