@@ -62,7 +62,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                         </div>
                                                         <div class="cardText">
                                                             <h3>Get started</h3>
-                                                            <p>Are you a newbie? Not sure where to start? Here' we'll give you the lay of the land.</p>
+                                                            <p>Are you a newbie looking to know the basics? Here we'll give you the lay of the land.</p>
                                                         </div>
                                                     </div>
                                                 </div>
