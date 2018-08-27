@@ -237,10 +237,45 @@ Once built, push the Docker image to a container registry by using the [Docker](
      imageName: contoso/myjavasriptcontainer:v1.0.0
 ```
 
-## Deploy your application to Azure
+## Deploy to Azure
 
-If you're application is packaged static files (such as through `webpack`), the easiest solution to deploy it to Azure is through 
+If you're application is packaged static files (such as through `webpack`), the easiest solution is to deploy to [App Service on Linux](https://docs.microsoft.com/en-us/azure/app-service/containers/) using the [Azure App Service deploy](/vsts/pipelines/tasks/deploy/azure-rm-web-app-deployment?view=vsts) task. 
 
+The `azureSubscription` value can be found either through the `az account` Azure CLI command or through the Azure Portal.
+
+```yaml
+- task: AzureRmWebAppDeployment@4
+  inputs: 
+    connectionType: AzureRM
+    azureSubscription: <your-subscription-id>
+    appType: webAppLinux
+    webAppName: myjavascriptapp
+    Package: $(System.DefaultWorkingDirectory)/dist
+```
+
+If you've packaged your application into a Docker image, you can deploy from the pushed container to Azure App Service.
+
+```yaml
+- task: AzureRmWebAppDeployment@4
+  inputs: 
+    connectionType: AzureRM
+    azureSubscription: <your-subscription-id>
+    dockerNamespace: registry.contoso.org
+    dockerRepository: myjavasriptcontainer
+```
+
+Run multiple versions of your application and set up blue/green deploys with deployment slots using the `deployToSlotOrASE` and `slotName` parameters.
+
+```yaml
+- task: AzureRmWebAppDeployment@4
+  inputs: 
+    connectionType: AzureRM
+    deployToSlotOrASE: true
+    slotName: smoketest
+    azureSubscription: <your-subscription-id>
+    dockerNamespace: registry.contoso.org
+    dockerRepository: myjavasriptcontainer
+```
   
 
 
