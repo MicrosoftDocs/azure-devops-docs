@@ -7272,7 +7272,12 @@
     },
     {
       "source_path": "docs/build-release/apps/go/go.md",
-      "redirect_url": "/vsts/pipelines/apps/go/go",
+      "redirect_url": "/vsts/pipelines/languages/go",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/apps/go/go.md",
+      "redirect_url": "/vsts/pipelines/languages/go",
       "redirect_document_id": true
     },
     {

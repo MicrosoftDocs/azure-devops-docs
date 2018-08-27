@@ -621,7 +621,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 | [.NET](apps/aspnet/build-aspnet-4.md) | ASP.NET |
 | [.NET Core](languages/dotnet-core.md) | ASP.NET Core |
 | [C++](apps/windows/cpp.md) | .NET Desktop | 
-| [Go](apps/go/go.md) | Go |
+| [Go](languages/go.md) | Go |
 | [Java](languages/java.md) | Gradle |
 | [JavaScript](languages/javascript.md) | Node.js |
 | [Xcode](languages/xcode.md) | Xcode |
