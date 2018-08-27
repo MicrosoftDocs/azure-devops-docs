@@ -14,8 +14,6 @@ monikerRange: '>= tfs-2017'
 
 # Android
 
-**Azure Pipelines | TFS 2018 | TFS 2017.2**
-
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../_shared/concept-rename-note.md)]
 ::: moniker-end
@@ -23,15 +21,10 @@ monikerRange: '>= tfs-2017'
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
 > 
-> This guidance applies to Azure Pipelines.
+> This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
 ::: moniker-end
 
 This guide explains creating pipelines for Android projects. Before this guidance, read the [YAML quickstart](../get-started-yaml.md).
-
-::: moniker range="vsts"
-> [!NOTE]
-> To use YAML you must have the **Build YAML definitions** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
-::: moniker-end
 
 ## Get started
 
@@ -39,7 +32,8 @@ You can build Android projects using [Microsoft-hosted agents](../agents/hosted.
 
 ### Sample code
 
-To get started using a sample Android app, fork or copy this code into your version control system:
+To get started using a sample Android project, fork this repository in GitHub, or import it into Azure Repos or TFS:
+
 ```
 https://github.com/adventworks/android-sample
 ```
@@ -58,7 +52,7 @@ steps:
   inputs:
     workingDirectory: ''
     gradleWrapperFile: 'gradlew'
-    gradleOptions: '-Xmx2048m'
+    gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'assembleDebug'
@@ -66,7 +60,7 @@ steps:
 
 ### Adjust the build path
 
-Add a **workingDirectory** value if your `gradlew` file isn't in the root of the repository.
+Adjust the **workingDirectory** value if your `gradlew` file isn't in the root of the repository.
 The directory value should be relative to the root of the repository,
 such as `AndroidApps/MyApp` or `$(system.defaultWorkingDirectory)/AndroidApps/MyApp`.
 

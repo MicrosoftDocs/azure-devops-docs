@@ -15,11 +15,17 @@ monikerRange: '>= tfs-2017'
 
 # Java
 
-This guidance explains how to build Java projects.
+::: moniker range="<= tfs-2018"
+> [!NOTE]
+> 
+> This guidance uses YAML-based pipelines available in Azure Pipelines. For TFS, use tasks that correspond to those used in the YAML below.
+::: moniker-end
+
+This guidance explains how to build Java projects. See [Android](android.md) for Android projects.
 
 ## Example
 
-This example shows how to build a Java project. To start, fork this repository into GitHub, or import it into Azure Repos or TFS:
+To get started using a sample Java project, fork this repository in GitHub, or import it into Azure Repos or TFS:
 
 ```
 https://github.com/adventworks/java-sample
@@ -27,22 +33,130 @@ https://github.com/adventworks/java-sample
 
 The sample code includes an `azure-pipelines.yml` file at the root of the repository. You can use this file to build the app.
 
-Follow all the instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
+Follow instructions in [Create your first pipeline](../get-started-yaml.md) to create a build pipeline for the sample app.
 
-Read through the rest of this topic to learn some of the common ways to customize your Java build pipeline.
+The rest of this topic describes ways to customize your Java build pipeline.
 
-## Build environment
+## Choose an agent
 
-### Choose an agent
-
-You can use Azure Pipelines to build your Java projects on [Microsoft-hosted agents](../agents/hosted.md) that include tools for Java. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools that you need.
+You can use Azure Pipelines to build your Java projects on [Microsoft-hosted agents](../agents/hosted.md) that include modern JDKs and other tools for Java. Or, you can use [self-hosted agents](../agents/agents.md#install) with specific tools that you need.
 
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-pool: 'Hosted Linux Preview' # other options: 'Hosted macOS Preview', 'Hosted VS2017'
+pool:
+  vmImage: 'Ubuntu 16.04' # Other options: 'macOS 10.13', 'VS2017-Win2016'
 ```
 
+## Build your code with Maven
+
+To build with Maven, add the following snippet to your `azure-pipelines.yml` file. Change values, such as the path to your `pom.xml` file, to match your project configuration. See the [Maven](../tasks/build/maven.md) task for more about these options.
+
+```yaml
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    options: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.10'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: false
+    testResultsFiles: '**/TEST-*.xml'
+    goals: 'package'
+```
+
+### Customize
+
+#### Adjust the build path
+
+Adjust the `mavenPomFile` value if your `pom.xml` file isn't in the root of the repository. The file path value should be relative to the root of the repository, such as `IdentityService/pom.xml` or `$(system.defaultWorkingDirectory)/IdentityService/pom.xml`.
+
+#### Adjust Maven goals
+
+Set the **goals** value to a space-separated list of goals for Maven to execute, such as `clean package`.
+
+For details about common Java phases and goals, see the [Maven documentation](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html).
+
+## Build your code with Gradle
+
+To build with Gradle add the following snippet to your `azure-pipelines.yml` file. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
+
+```yaml
+steps:
+- task: Gradle@2
+  inputs:
+    workingDirectory: ''
+    gradleWrapperFile: 'gradlew'
+    gradleOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.10'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: false
+    testResultsFiles: '**/TEST-*.xml'
+    tasks: 'build'
+```
+
+### Customize
+
+#### Adjust the build path
+
+Adjust the `workingDirectory` value if your `gradlew` file isn't in the root of the repository.
+The directory value should be relative to the root of the repository, such as `IdentityService` or `$(system.defaultWorkingDirectory)/IdentityService`.
+
+Adjust the `gradleWrapperFile` value if your `gradlew` file isn't in the root of the repository. The file path value should be relative to the root of the repository, such as `IdentityService/gradlew` or `$(system.defaultWorkingDirectory)/IdentityService/gradlew`.
+
+#### Adjust Gradle tasks
+
+Adjust the **tasks** value for the tasks that Gradle should execute, such as `build` or `check`.
+
+For details about common Java Plugin tasks for Gradle, see [Gradle's documentation](https://docs.gradle.org/current/userguide/java_plugin.html#sec:java_tasks).
+
+## Build your code with Ant
+
+To build with Ant, add the following snippet to your `azure-pipelines.yml` file. Change values, such as the path to your `build.xml` file, to match your project configuration. See the [Ant](../tasks/build/ant.md) task for more about these options.
+
+```yaml
+steps:
+- task: Ant@1
+  inputs:
+    workingDirectory: ''
+    buildFile: 'build.xml'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.10'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: false
+    testResultsFiles: '**/TEST-*.xml'
+```
+
+## Build your code using a command line or script
+
+To build with a command line or script, add one of the following snippets to your `azure-pipelines.yml` file.
+
+### Inline script
+
+The `script:` step runs an inline script using Bash on Linux and macOS and Command Prompt on Windows. For details, see the [Bash](../tasks/utility/bash.md) or [Command line](../tasks/utility/powershell.md) task.
+
+```yaml
+steps:
+- script: |
+    echo Starting the build
+    mvn package
+  displayName: 'Build with Maven'
+```
+
+### Script file
+
+This snippet runs a script file that is in your repository. For details, see the [Shell Script](../tasks/utility/shell-script.md), [Batch script](../tasks/utility/batch-script.md), or [PowerShell](../tasks/utility/powershell.md) task.
+
+```YAML
+steps:
+- task: ShellScript@2
+  inputs:
+    scriptPath: 'build.sh'
+```
+
+<!--
 ### Specify Gradle or Maven versions
 
 ### Specify JDK versions
@@ -110,3 +224,4 @@ pool: 'Hosted Linux Preview' # other options: 'Hosted macOS Preview', 'Hosted VS
 ### Deploy a executable standalone JAR file to a compute target (VM, App Service, etc.)
 
 ### Deploy a WAR to container target (Tomcat, etc.)
+-->
