@@ -8,7 +8,7 @@ ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
 ms.manager: alewis
 ms.author: dastahel
 ms.reviewer: dastahel
-ms.date: 08/03/2018
+ms.date: 08/23/2018
 monikerRange: '> tfs-2018'
 ---
 
