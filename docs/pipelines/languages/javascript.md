@@ -122,13 +122,13 @@ You can call compilers directly from the pipeline using the [cli](../tasks/tool/
      script: 'tsc --target ES6 --strict true --project tsconfigs/production.json'
 ```
 
-## Running tests and publishing results
+## Run tests and publish results
 
 Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results to VSTS easily using the built-in [Publish Test Results](../tasks/test/publish-test-results) task.
 
 If your testing framework doesn't support JUnit output out of the box, you'll need to add support through a third party reporting module, such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your testing script to use the JUnit reporter, or if the reporter supports command line options you can pass those into the task definintion.
 
-This example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `mocha test` directly using the [bash](../tasks/utility/bash.md) task. This produces the JUnit XML output at the default location of `./test-results.xml`. Other testing frameworks will require slightly different configuration, but aren't covered in this guide.
+This example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `mocha test` directly using the [bash](../tasks/utility/bash.md) task. This produces the JUnit XML output at the default location of `./test-results.xml`. 
 
 ```yaml
 - task: Bash@3
@@ -145,152 +145,106 @@ To publish the results, use the [Publish Test Results](../tasks/test/publish-tes
     testResultsFile: ./test-results.xml
 ```
 
+### End to end browser testing 
 
+Run tests in headless browsers as part of your pipeline with tools like [Protractor](https://www.protractortest.org) or [Karma](http://karma-runner.github.io/2.0/index.html), then publish the results for the build to VSTS with these steps: 
 
-If you have a npm script defined for the compile task, you can 
+1. Install a headless browser testing driver such as headless Chrome or Firefox, or a browser mocking tool such as [PhantomJS] on the build agent. 
+2. Configure your testing framework to use the headless browser/driver option of your choice according to the tool documentation.
+3. Configure your testing framework (usually with a reporter plugin or configuration) to output JUnit formatted test results.
+4. Set up a [cli](../tasks/tool/command-line.md) or [bash](../tasks/utility/bash.md) task to run any CLI commands needed to start the headless browser instances.
+4. Publish the results using the same  [Publish Test Results](../tasks/test/publish-test-results) task alongside your unit tests.
 
-To run a pipeline with multiple Python versions, such as to test your project using different versions, define a phase with a matrix of Python version values. Then set the [Use Python Version](../tasks/tool/npm.md) task to reference the matrix variable for its Python version. Increase the **parallel** value to simultaneously run the phase for all versions in the matrix, depending on how many concurrent jobs are available.
+## Package the app
+
+Package applications to bundle all your application modules with intermediate outputs and dependencies into static assets ready for deployment. Add a pipeline stage after your compilation and tests to run a tool like [Webpack](https://webpack.js.org/) or [ng build](https://github.com/angular/angular-cli/wiki/build) using the Angular CLI.
+
+The first example calls `webpack` using a [bash](../tasks/utility/bash.md) task. To have this work, you'll need to make sure that `webpack` is configuired as a development dependency in your package.json project file. This will run `webpack` with default configuration unless you have a webpack.config.js file in the root folder of your project. 
 
 ```yaml
-# https://aka.ms/yaml
-phases:
-- phase: 'Test'
-  queue:
-    name: 'Hosted Linux Preview'
-    parallel: 1
-    matrix:
-      Python27:
-        python.version: '2.7'
-      Python35:
-        python.version: '3.5'
-      Python36:
-        python.version: '3.6'
-  steps:
-
-  - task: UsePythonVersion@0
-    inputs:
-      versionSpec: '$(python.version)'
-      architecture: 'x64'
-
-  # Add additional tasks to run using each Python version in the matrix above
+- task: Bash@3
+  inputs: 
+    script: 'webpack'
 ```
 
-## Activate an Anaconda environment
-
-As an alternative to the **Use Python Version** task, create and activate a conda environment and Python version using the [Conda Environment](../tasks/package/conda-environment.md) task. Add the following YAML to activate an environment named `myEnvironment` with the Python 3 package.
+The next example uses the [npm](../tasks/tool/npm.md) task to call `npm run build` to call the `build` script object defined in the package.json. Configuring your project in this way moves the logic for the build out of the VSTS task definition into the project configuration where it can be run locally in the exact same configuration.
 
 ```yaml
-- task: CondaEnvironment@0
+- task: Npm@1
   inputs:
-    environmentName: 'myEnvironment'
-    packageSpecs: 'python=3'
+     command: run
+     options: build
 ```
 
-## Run a Python script
+## Publish a module
 
-Run a Python script in your pipeline by adding the [Python Script](../tasks/utility/python-script.md) task. The script can be defined in a file or in-line with the task.
+If your project's output is a npm module for use by other projects and not a web application, use the `npm` task to publish the module to a local or to the public npm registry. You must provide a unique name and version combination each time you publish, so keep this in mind when configuring publish steps as part of a release or development pipeline. 
 
-Add the following YAML to run a Python script file named `myPythonScript.py`.
+The first example assumes you manage version information (such as through [npm version](https://docs.npmjs.com/cli/version) ) through your changes to your `package.json` file in version control and uses the  [npm](../tasks/tool/npm.md) task to publish to the public registry.
 
 ```yaml
-- task: PythonScript@0
+- task: Npm@1
   inputs:
-    targetType: 'filePath'
-    filePath: 'src/myPythonScript.py'
-    arguments: ''
+     command: publish
 ```
 
-Alternatively, set the **targetType** to `inline` to define the script in YAML.
+The next example publishes to a custom registry defined in your repo's `.npmrc` file. You'll need to set up a [npm service connection](/vsts/pipelines/library/service-endpoints?view=vsts#sep-npm) to inject authentication credentials into the connection as the build runs.
 
 ```yaml
-- task: PythonScript@0
+- task: Npm@1
   inputs:
-    targetType: 'inline'
-    script: |
-      print('Hello world 1')
-      print('Hello world 2')
-    arguments: ''
+     command: publish
+     publishRegistry: useExternalRegistry
+     publishEndpoint: https://my.npmregistry.com
 ```
 
-## Install dependencies
-
-### Install requirements with pip
-
-Add the following YAML to install or upgrade `pip` and requirements specified in `requirements.txt`.
+The final example publishes the module to a VSTS package management feed. 
 
 ```yaml
-- script: python -m pip install --upgrade pip && pip install -r requirements.txt
-  displayName: 'Install requirements'
-```
-
-### Install specific PyPI packages with pip
-
-Add the following YAML to install or upgrade `pip` and two specific packages: `setuptools` and `wheel`.
-
-```yaml
-- script: python -m pip install --upgrade pip setuptools wheel
-  displayName: 'Install dependencies'
-```
-
-### Install Anaconda packages with conda
-
-Add the following YAML to install the `scipy` package in the conda environment named `myEnvironment`. See [Activate an Anaconda environment](#activate-an-anaconda-environment) above.
-
-```yaml
-- script: conda install -n myEnvironment scipy
-  displayName: 'Install conda libraries'
-```
-
-## Test
-
-### Test with pytest
-
-Add the following YAML to install `pytest`, run tests, and output results in JUnit format.
-
-```yaml
-- script: pip install pytest && pytest tests --doctest-modules --junitxml=junit/test-results.xml
-  displayName: 'pytest'
-```
-
-### Publish test results
-
-Add the [Publish Test Results](../tasks/test/publish-test-results.md) task to publish JUnit or xUnit test results to the server.
-
-```yaml
-- task: PublishTestResults@2
+- task: Npm@1
   inputs:
-    testResultsFiles: '**/test-*.xml'
-    testRunTitle: 'Test results for Python $(python.version)'
+     command: publish
+     publishRegistry: useFeed
+     publishFeed: https://my.npmregistry.com
 ```
 
-## Deploy
+## Publish Docker images
 
-### Deploy to a PyPI-compatible index
+After packaging your application, you can configure your pipeline to build a Docker image and deploy that image to a registry. Your source code repo will need to have a `Dockerfile` defined for each of the containers you want to build and publish to your registry.
 
-Add the [PyPI Publisher](../tasks/package/pypi-publisher.md) task to package and publish to a PyPI-compatible index.
+If your application doesn't require orchestration with other containers, use the [Docker](/vsts/pipelines/tasks/build/docker?view=vsts) task to build a container with your packaged application code and push it to your Docker registry.
+
+This example builds a Docker image . The `Dockerfile` for the image is located in the root of the source code repo, but can be configured using the `dockerFile` input.
+The image is not pushed to a Docker registry once it's built.
 
 ```yaml
-- task: PyPIPublisher@0
+- task: Docker@1
   inputs:
-    pypiConnection: ''
-    packageDirectory: '$(build.sourcesDirectory)'
-    alsoPublishWheel: false
+     command: build An Image
+     dockerFile: '**/Dockerfile'
+     imageName: contoso/myjavasriptcontainer:v1.0.0
+     includeLatestTag: false
 ```
 
-## Retain artifacts
-
-Add the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task to store your build output with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+Once built, push the Docker image to a container registry by using the [Docker](/vsts/pipelines/tasks/build/docker?view=vsts) task but with `command` set to `push An Image`. This example pushes to any container registry, including Docker Hub. 
 
 ```yaml
-- task: PublishBuildArtifacts@1
-  pathToPublish: 'dist'
+- task: Docker@1
+  inputs:
+     command: push An Image
+     containerregistrytype: container Registry
+     dockerRegistryEndpoint: registry.contoso.org
+     imageName: contoso/myjavasriptcontainer:v1.0.0
 ```
+
+## Deploy your application 
+
+
+
+  
+
 
 ## Related extensions
 
-[Python Build Tools (for Windows)](https://marketplace.visualstudio.com/items?itemName=stevedower.python) (Steve Dower)  
-[PyLint Checker](https://marketplace.visualstudio.com/items?itemName=dazfuller.pylint-task) (Darren Fuller)  
-[Python Test](https://marketplace.visualstudio.com/items?itemName=dazfuller.pyunittest-task) (Darren Fuller)  
-[VSTS Plugin for PyCharm (IntelliJ)](http://plugins.jetbrains.com/plugin/7981) (Microsoft)  
-[Python extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (Microsoft)  
+[Azure extension pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-azureextensionpack) (Microsoft)  
 [VSTS extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team) (Microsoft)  
