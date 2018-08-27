@@ -63,7 +63,7 @@
     - name: Set personal or team favorites
       href: ../../project/navigation/set-favorites.md?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
     - name: Add an alternate account to your Visual Studio subscription
-      href: https://docs.microsoft.com/en-us/visualstudio/subscriptions/vs-alternate-identity?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
+      href: /visualstudio/subscriptions/vs-alternate-identity?toc=/vsts/organizations/settings/toc.json&bc=/vsts/organizations/settings/breadcrumb/toc.json
     - name: Authentication
       items:
       - name: Authenticate access with personal access tokens

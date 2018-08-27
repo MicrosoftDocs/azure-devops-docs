@@ -26,9 +26,9 @@ please [contact us](mailto:RM_Customer_Queries@microsoft.com).
 
 ### What's new in Version 1.0
 
-- Supports the new [AZ CLI 2.0](https://docs.microsoft.com/cli/azure/overview), which is Python based
+- Supports the new [AZ CLI 2.0](/cli/azure/overview), which is Python based
 - Works with agents on Linux, macOS, and Windows
-- To work with [Azure CLI 1.0](https://docs.microsoft.com/azure/cli-install-nodejs), which is node based, switch to task version 0.0
+- To work with [Azure CLI 1.0](/azure/cli-install-nodejs), which is node based, switch to task version 0.0
 - Both versions of Azure-CLI can coexist in the same system, but task V1.0 logs into the Python based AZ CLI using the user's subscription, whereas task V0.0 logs into the node based Azure CLI. Therefore, scripts should include only the appropriate corresponding commands.
 - Limitations:
 	- No support for Classic subscriptions. AZ CLI 2.0 supports only Azure Resource Manager (ARM) subscriptions

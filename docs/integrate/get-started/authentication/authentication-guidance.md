@@ -19,7 +19,7 @@ When writing an application which interfaces with Azure DevOps Services, you wil
 
 | Type of application | Description | example |Authentication mechanism | Code samples |
 |---------------------|-------------|---------|-------------------------|--------|
- Interactive client-side (REST) | Client application, that allows user interaction, calling [Azure DevOps Services REST APIs](https://docs.microsoft.com/en-us/rest/api/vsts) | Console application enumerating projects in an organization | [Active Directory authentication library (ADAL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
+ Interactive client-side (REST) | Client application, that allows user interaction, calling [Azure DevOps Services REST APIs](/rest/api/vsts) | Console application enumerating projects in an organization | [Active Directory authentication library (ADAL)](/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
 | Interactive client-side (Client library) | Client application, that allows user interaction, calling Azure DevOps Services Client libraries | Console application enumerating bugs assigned to the current user |  [Client libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | Interactive Javascript | GUI based Javascript application | AngularJS single page app displaying project information for a user | [Active Directory authentication Library for JS (ADAL JS)](https://github.com/AzureAD/azure-activedirectory-library-for-js) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/JavascriptWebAppSample) |
 | Non-interactive client-side | Headless text only client side application | Console app displaying all bugs assigned to a user | [Device Profile](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-deviceprofile/?v=17.23h) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
@@ -38,8 +38,8 @@ Learn more about [using IIS Basic Authentication with TFS on-premises](iis-basic
 
 ## Q&A
 
-#### Q: I am making an interactive client-side application. Should I use [Azure DevOps Services Client Libraries](./../client-libraries/dotnet.md) or [Azure DevOps Services REST APIs](https://docs.microsoft.com/en-us/rest/api/vsts)?
-A: We recommend using Azure DevOps Services Client Libraries over REST API's when accessing Azure DevOps Services resources. They are simplier and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST API's.
+#### Q: I am making an interactive client-side application. Should I use [Azure DevOps Services Client Libraries](./../client-libraries/dotnet.md) or [Azure DevOps Services REST APIs](/rest/api/vsts)?
+A: We recommend using Azure DevOps Services Client Libraries over REST API's when accessing Azure DevOps Services resources. They are simplier and more easily maintained when version changes to our REST endpoints occur. If there is missing functionality from the client libraries [ADAL](/azure/active-directory/develop/active-directory-authentication-libraries) is the best authentication mechanism to use with our REST API's.
 
 #### Q: Can I use ADAL if I log into my Azure DevOps Services organization with a Microsoft account (MSA)?
 

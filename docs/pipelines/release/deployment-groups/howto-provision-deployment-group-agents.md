@@ -159,7 +159,7 @@ where:
 
 >**Note**: If you are deploying to a Linux VM, ensure that the `type` parameter in the code is `TeamServicesAgentLinux`.
 
-For more information about ARM templates, see [Define resources in Azure Resource Manager templates](https://docs.microsoft.com/azure/templates/).
+For more information about ARM templates, see [Define resources in Azure Resource Manager templates](/azure/templates/).
 
 To use the template:
 
@@ -199,7 +199,7 @@ To use the template:
 
    * **Copy Azure VM tags to agents**: When set (ticked), any tags already configured on the Azure VM will
      be copied to the corresponding deployment group agent. By default, all
-     [Azure tags](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)
+     [Azure tags](/azure/azure-resource-manager/resource-group-using-tags)
      are copied using the format `Key: Value`. For example, `Role: Web`.
 
 1. Provide the other parameters required for the task such as the Azure subscription, resource group name,

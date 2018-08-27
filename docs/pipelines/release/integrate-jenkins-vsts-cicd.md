@@ -51,12 +51,12 @@ You will:
 
 * An Azure subscription. You can get one free through [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/).
 
-* A Tomcat and Java 8 based Azure Web App.  You can follow the steps for creating one [here](https://docs.microsoft.com/java/azure/java-quickstart-maven-webapps)
+* A Tomcat and Java 8 based Azure Web App.  You can follow the steps for creating one [here](/java/azure/java-quickstart-maven-webapps)
 
 * Basic Jenkins and Git knowledge.
 
 * You need access to a Jenkins server with Maven configured. If you have not yet created a Jenkins server,
-  see [Create a Jenkins master on an Azure Virtual Machine](https://docs.microsoft.com/azure/jenkins/install-jenkins-solution-template).
+  see [Create a Jenkins master on an Azure Virtual Machine](/azure/jenkins/install-jenkins-solution-template).
 
 * Sign in to your Azure DevOps organization (`https://dev.azure.com/{your-organization}`).
   You can get a [free Azure DevOps organization](https://go.microsoft.com/fwlink/?LinkId=307137&clcid=0x409&wt.mc_id=o~msft~vscom~home-vsts-hero~27308&campaign=o~msft~vscom~home-vsts-hero~27308).

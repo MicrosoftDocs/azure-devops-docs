@@ -71,7 +71,7 @@ Guidance for Cloud Solution Providers
 
 * [Set up your customer](csp/set-up-csp-customer.md)
 * [Buy Azure DevOps for your customers](csp/buy-csp-vsts.md)
-* [Buy and manage Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp)
+* [Buy and manage Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-csp)
 * [Buy App Center resources](csp/buy-vs-app-center.md)
 
 ## Troubleshooting
@@ -90,6 +90,6 @@ Guidance for Cloud Solution Providers
 
 * [Azure DevOps user guide](../../user-guide/index.yml)
 * [Organization management](../accounts/index.md)
-* [TFS Server Administration documentation](https://docs.microsoft.com/tfs/server/index?view=vsts)
-* [Buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
+* [TFS Server Administration documentation](/tfs/server/index?view=vsts)
+* [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)

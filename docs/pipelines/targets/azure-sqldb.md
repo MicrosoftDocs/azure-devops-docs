@@ -29,7 +29,7 @@ You can automatically deploy your database updates to Azure SQL database after e
 
 ## DACPAC
 
-The simplest way to deploy a database is to create [data-tier package or DACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
+The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.
 
 # [YAML](#tab/yaml)
 

@@ -310,7 +310,7 @@ To track your bugs and integrate with other resources available to you, see thes
 ### Integrate & Test resources
 - [UserVoice](../../service-hooks/services/uservoice.md)  
 - [Zendesk](../../service-hooks/services/zendesk.md)  
-- [Developer testing tools scenarios and capabilities](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios)  
+- [Developer testing tools scenarios and capabilities](/visualstudio/test/developer-testing-scenarios)  
 - [Run tests for desktop apps](../../test/run-manual-tests.md#run-desktop)  
   
 

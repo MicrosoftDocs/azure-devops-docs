@@ -48,4 +48,4 @@ After you upgrade your feed, Azure DevOps Services automatically handles the sav
 
 ## How to upgrade a legacy feed
 
-You'll be able to upgrade a legacy feed to take advantage of the new upstream sources support in the next month or two. Keep an eye on the [release notes](https://docs.microsoft.com/en-us/vsts/release-notes/) for more information.
+You'll be able to upgrade a legacy feed to take advantage of the new upstream sources support in the next month or two. Keep an eye on the [release notes](/vsts/release-notes/) for more information.

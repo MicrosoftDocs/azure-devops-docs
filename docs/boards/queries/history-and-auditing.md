@@ -301,7 +301,7 @@ To learn more about creating and saving queries, see also:
 
 
 ### Get history programmatically
-See [Work item tracking](https://docs.microsoft.com/rest/api/vsts/wit/)  for ways to extract history information programmatically.  
+See [Work item tracking](/rest/api/vsts/wit/)  for ways to extract history information programmatically.  
 
 [!INCLUDE [temp](../_shared/rest-apis-queries.md)]
  

@@ -25,8 +25,8 @@ information.
 
 > [!NOTE]
 > You can open load tests in Visual Studio to analyse and compare results.
-> See [How to: Access Load Test Results for Analysis](https://docs.microsoft.com/visualstudio/test/how-to-access-load-test-results-for-analysis)
-> and [How to: Create Load Test Performance Reports Using Microsoft Excel](https://docs.microsoft.com/visualstudio/test/how-to-create-load-test-performance-reports-using-microsoft-excel).
+> See [How to: Access Load Test Results for Analysis](/visualstudio/test/how-to-access-load-test-results-for-analysis)
+> and [How to: Create Load Test Performance Reports Using Microsoft Excel](/visualstudio/test/how-to-create-load-test-performance-reports-using-microsoft-excel).
 
 <a name="opents"></a>
 ## Open a load test in Azure DevOps

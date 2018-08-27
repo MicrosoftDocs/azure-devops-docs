@@ -43,7 +43,7 @@ a deployment script that can be run locally on the Ubuntu server. To set up a CI
 You'll need a Linux VM with Nginx web server to deploy the app. The deployment scripts used in the sample repositories
 have been tested on Ubuntu 16.04, and we recommend you use the same version of Linux VM for this quickstart.
 If you don't already have a Linux VM with Nginx, create one now in Azure using the steps in
-[this example](https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-cli).
+[this example](/azure/virtual-machines/linux/quick-create-cli).
 
 [!INCLUDE [create-linux-deployment-group](../_shared/create-linux-deployment-group.md)]
 

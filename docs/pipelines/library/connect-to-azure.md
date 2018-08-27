@@ -47,9 +47,9 @@ or if you want to further limit users' permissions, you can do so by using a ser
    | Parameter | Description |
    | --------- | ----------- |
    | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure subscription. |
-   | Scope level | Select Subscription or Management Group. [Management groups](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. |
+   | Scope level | Select Subscription or Management Group. [Management groups](/azure/azure-resource-manager/management-groups-overview) are containers that help you manage access, policy, and compliance across multiple subscriptions. |
    | Subscription | If you selected Subscription for the scope, select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
-   | Management Group | If you selected Management Group for the scope, select an existing Azure management group. See [Create management groups](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-create). |
+   | Management Group | If you selected Management Group for the scope, select an existing Azure management group. See [Create management groups](/azure/azure-resource-manager/management-groups-create). |
    | Resource Group | Leave empty to allow users to access all resources defined within the subscription, or select a resource group to which you want to restrict the users' access (users will be able to access only the resources defined within that group). |
 
 1. After the new service connection is created:
@@ -65,7 +65,7 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
 
 1. If you want to use a pre-defined set of access permissions, and you don't already have a suitable service principal defined, follow one of these tutorials to create a new service principal:
 
-   * [Use the portal to create an Azure Active Directory application and service principal that can access resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal)
+   * [Use the portal to create an Azure Active Directory application and service principal that can access resources](/azure/azure-resource-manager/resource-group-create-service-principal-portal)
    * [How to create and test Azure Service Principal using Azure CLI](https://blogs.msdn.microsoft.com/arsen/2016/05/11/how-to-create-and-test-azure-service-principal-using-azure-cli/)
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
@@ -88,7 +88,7 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
 1. Select the **Scope level** you require: 
    
    * If you choose **Subscription**, select an existing Azure subscription. If you don't see any Azure subscriptions or instances, see [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md). |
-   * If you choose **Management Group**, select an existing Azure management group. See [Create management groups](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-create). |
+   * If you choose **Management Group**, select an existing Azure management group. See [Create management groups](/azure/azure-resource-manager/management-groups-create). |
 
 1. Download and run [this PowerShell script](https://github.com/Microsoft/vsts-rm-extensions/blob/master/TaskModules/powershell/Azure/SPNCreation.ps1) in an Azure PowerShell window.
    When prompted, enter your subscription name, password, role (optional), and the type of cloud such as Azure Cloud (the default), Azure Stack, or an Azure Government Cloud.
@@ -109,7 +109,7 @@ See also: [Troubleshoot Azure Resource Manager service connection](../release/az
    * If you are using it in YAML, copy the connection name into your code as the **azureSubscription** value.
 
 1. If required, modify the service principal to expose the appropriate permissions. For more details, see 
-   [Use Role-Based Access Control to manage access to your Azure subscription resources](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
+   [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
    [This blog post](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
    also contains more information about using service principal authentication.
 
@@ -121,7 +121,7 @@ See also: [Troubleshoot Azure Resource Manager service connections](../release/a
 
 For information about connecting to an Azure Government Cloud, see:
 
-* [Connecting from Azure Pipelines (Azure Government Cloud)](https://docs.microsoft.com/azure/azure-government/documentation-government-get-started-connect-with-vsts)
+* [Connecting from Azure Pipelines (Azure Government Cloud)](/azure/azure-government/documentation-government-get-started-connect-with-vsts)
 
 <a name="connect-stack"></a>
 
@@ -129,8 +129,8 @@ For information about connecting to an Azure Government Cloud, see:
 
 For information about connecting to Azure Stack, see:
 
-* [Connect to Azure Stack](https://docs.microsoft.com/azure/azure-stack/azure-stack-connect-azure-stack)
-* [Connect Azure Stack to Azure using VPN](https://docs.microsoft.com/azure/azure-stack/azure-stack-connect-vpn)
-* [Connect Azure Stack to Azure using ExpressRoute](https://docs.microsoft.com/azure/azure-stack/azure-stack-connect-expressroute)
+* [Connect to Azure Stack](/azure/azure-stack/azure-stack-connect-azure-stack)
+* [Connect Azure Stack to Azure using VPN](/azure/azure-stack/azure-stack-connect-vpn)
+* [Connect Azure Stack to Azure using ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
 
 [!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]

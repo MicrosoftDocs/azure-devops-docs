@@ -33,7 +33,7 @@ If two folders differ only by case, their contents will end up mixed together on
 
 One way to fix a repository with this problem is to check it out in a case-sensitive environment.
 Rename files and folders so they no longer conflict, then push those changes to the repository.
-[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about) is one such environment.
+[Windows Subsystem for Linux](/windows/wsl/about) is one such environment.
 Another approach is to use the command `git mv -f <conflicting name> <non-conflicting name>` for each conflict, being careful to use exact capitalization on both file names.
 
 ### Avoiding case conflicts

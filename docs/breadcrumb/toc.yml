@@ -93,8 +93,8 @@
       tocHref: /vsts/test/
       topicHref: /vsts/pipelines/test/getting-started-with-continuous-testing
     - name: Unit testing
-      tocHref: https://docs.microsoft.com/visualstudio/test/improve-code-quality/
-      topicHref: https://docs.microsoft.com/visualstudio/test/unit-test-your-code
+      tocHref: /visualstudio/test/improve-code-quality/
+      topicHref: /visualstudio/test/unit-test-your-code
   - name: Settings
     tocHref: /vsts/organizations/settings/
     topicHref: /vsts/organizations/index

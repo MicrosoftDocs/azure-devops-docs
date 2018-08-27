@@ -44,7 +44,7 @@ Load test your app with hundreds of thousands of users using Azure DevOps Test P
 
 * Cloud-based load testing leveraging the power of Azure is like having a whole performance lab at your fingertips.
 
-* Of course you can [run your load test from on-premises agents](https://docs.microsoft.com/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle) too!<p />
+* Of course you can [run your load test from on-premises agents](/visualstudio/test/lab-management/using-a-lab-environment-for-your-application-lifecycle) too!<p />
 
 ![Cloud scalable](_img/performance-testing/IC778490.png)
 
@@ -87,9 +87,9 @@ Load test your app with hundreds of thousands of users using Azure DevOps Test P
 * [Pricing for Azure DevOps features](https://visualstudio.microsoft.com/team-services/pricing/)
 
 If you prefer to run your tests in a local environment rather than in the cloud, see
-[Load test with Visual Studio](https://docs.microsoft.com/visualstudio/test/quickstart-create-a-load-test-project).
+[Load test with Visual Studio](/visualstudio/test/quickstart-create-a-load-test-project).
 
-> See also [Manual and exploratory testing](../index.md), [Continuous testing](../../pipelines/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/unit-test-your-code).
+> See also [Manual and exploratory testing](../index.md), [Continuous testing](../../pipelines/index.md), [Unit testing](/visualstudio/test/unit-test-your-code).
 
 [!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
 

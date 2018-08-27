@@ -108,7 +108,7 @@ To learn about our reporting solutions, read [Reporting Roadmap](../analytics/re
 - [Widget catalog](widget-catalog.md)  
 - [Markdown guidance](../../project/wiki/markdown-guidance.md?toc=/vsts/report/dashboards/toc.json&bc=/vsts/report/dashboards/breadcrumb/toc.json)
 - [Default permissions & access (Security)](charts-dashboard-permissions-access.md)
-- [REST API, Dashboards](https://docs.microsoft.com/rest/api/vsts/dashboard/)
+- [REST API, Dashboards](/rest/api/vsts/dashboard/)
  
 ::: moniker range="vsts" 
 

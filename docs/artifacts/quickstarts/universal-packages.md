@@ -17,7 +17,7 @@ monikerRange: 'vsts'
 > [!NOTE]
 > Universal Packages are currently in private preview. See the [announcement blog post](https://blogs.msdn.microsoft.com/devops/2018/07/09/universal-packages-bring-large-generic-artifact-management-to-vsts/) for more details.
 
-Universal Packages store one or more files together in a single unit that has a name and version. Universal Packages can be published from the command line using the [Azure DevOps Services CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest). This quickstart shows you how to publish your first Universal Package using the CLI and how to download it using the CLI. To see your package, you can navigate to your feed in Azure Artifacts.
+Universal Packages store one or more files together in a single unit that has a name and version. Universal Packages can be published from the command line using the [Azure DevOps Services CLI](/cli/vsts/overview?view=vsts-cli-latest). This quickstart shows you how to publish your first Universal Package using the CLI and how to download it using the CLI. To see your package, you can navigate to your feed in Azure Artifacts.
 
 ## Prerequisites
 

@@ -216,27 +216,27 @@ Tutorials, references, and other documentation show you how to configure and man
 <div class="ico48Case halfStack">
 <div class="ico48Link">
 <a href="apps/cd/azure/deploy-container-kubernetes.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/containerservice.svg">
+<img width="48" height="48" alt="" src="/azure/media/index/containerservice.svg">
 <span>Azure Kubernetes Service</span>
 </a></div>
 <div class="ico48Link">
 <a href="targets/azure-stack.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/azure-stack.svg">
+<img width="48" height="48" alt="" src="/azure/media/index/azure-stack.svg">
 <span>Azure Stack</span>
 </a></div>
 <div class="ico48Link">
 <a href="targets/azure-sqldb.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/sqldatabase.svg">
+<img width="48" height="48" alt="" src="/azure/media/index/sqldatabase.svg">
 <span>Azure SQL database</span>
 </a></div>
 <div class="ico48Link">
 <a href="targets/webapp.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/app-service-web.svg">
+<img width="48" height="48" alt="" src="/azure/media/index/app-service-web.svg">
 <span>Azure Web App</span>
 </a></div>
 <div class="ico48Link">
 <a href="apps/cd/deploy-linuxvm-deploygroups.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+<img width="48" height="48" alt="" src="/azure/media/index/virtualmachine.svg">
 <span>Linux VM</span>
 </a></div>
 <div class="ico48Link">
@@ -261,12 +261,12 @@ Tutorials, references, and other documentation show you how to configure and man
 </a></div>
 <div class="ico48Link">
 <a href="apps/cd/deploy-docker-webapp.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/appservice.svg">
+<img width="48" height="48" alt="" src="/azure/media/index/appservice.svg">
 <span>Web App for Containers</span>
 </a></div>
 <div class="ico48Link">
 <a href="apps/cd/deploy-webdeploy-iis-deploygroups.md">
-<img width="48" height="48" alt="" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+<img width="48" height="48" alt="" src="/azure/media/index/virtualmachine.svg">
 <span>Windows VM</span>
 </a></div>
 </div>

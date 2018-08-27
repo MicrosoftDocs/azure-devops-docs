@@ -87,7 +87,7 @@ An account used to monitor or manage select services, such as build or test serv
 
 SSL is a protocol used to strengthen the security of cloud-hosted and on-premises applications by configuring it to use Hypertext Transfer Protocol Secure (HTTPS) with Secure Sockets Layer (SSL).
 
-SSL is always used to protect Azure DevOps data. To learn more, see [Data Protection Overview](https://docs.microsoft.com/vsts/articles/team-services-security-whitepaper).
+SSL is always used to protect Azure DevOps data. To learn more, see [Data Protection Overview](/vsts/articles/team-services-security-whitepaper).
 
 For on-premises TFS deployments, SSL is optional. To learn more, see [Setting up HTTPS with Secure Sockets Layer (SSL) for Team Foundation Server](/tfs/server/admin/setup-secure-sockets-layer).
 

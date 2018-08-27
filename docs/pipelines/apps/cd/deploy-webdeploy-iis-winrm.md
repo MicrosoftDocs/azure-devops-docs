@@ -121,7 +121,7 @@ Follow these steps to configure each target server.
 
 If you are deploying an ASP.NET app, make sure that you have ASP.NET 4.5 or ASP.NET 4.6 installed on each of your IIS target servers. For more information, see [this topic](https://www.asp.net/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
-If you are deploying an ASP.NET Core application to IIS target servers, follow the additional instructions in [this topic](https://docs.microsoft.com/aspnet/core/publishing/iis) to install .NET Core Windows Server Hosting Bundle.
+If you are deploying an ASP.NET Core application to IIS target servers, follow the additional instructions in [this topic](/aspnet/core/publishing/iis) to install .NET Core Windows Server Hosting Bundle.
 
 If you are deploying a Node.js application to IIS target servers, follow the instructions in [this topic](https://github.com/tjanczuk/iisnode) to install and configure IISnode on IIS servers.
 

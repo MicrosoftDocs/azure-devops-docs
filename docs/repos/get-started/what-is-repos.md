@@ -57,7 +57,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 <div class="ico48Link"><a href="../git/share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
 <div class="ico48Link"><a href="/vsts/java/download-eclipse-plug-in"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
 
-<div class="ico48Link"><a href="/vsts/java/download-intellij-plug-in"><img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
+<div class="ico48Link"><a href="/vsts/java/download-intellij-plug-in"><img width="48" height="48" alt="" src="/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
 
 </div>
 
@@ -317,7 +317,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg" />
+                            <img width="48" height="48" alt="" src="/azure/media/index/azurefunctions.svg" />
                         </div>
                     </div>
                     <div class="cardText">

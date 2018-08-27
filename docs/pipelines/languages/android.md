@@ -44,7 +44,7 @@ To get started using your own code, add the following YAML to a file named **azu
 Change values to match your project configuration. See the [Gradle](../tasks/build/gradle.md) task for more about these options.
 
 ```yaml
-# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+# /azure/devops/pipelines/languages/android
 queue: 'Hosted macOS Preview'
 
 steps:

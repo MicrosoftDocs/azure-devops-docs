@@ -49,7 +49,7 @@ For example, if a user selects **Visual Studio/MSDN Subscriber** but the user do
 
 #### Q: Which Visual Studio subscriptions can I use with Azure DevOps?
 
-A:  See [Azure DevOps benefits for Visual Studio subscribers](https://docs.microsoft.com/visualstudio/subscriptions/vs-vsts).
+A:  See [Azure DevOps benefits for Visual Studio subscribers](/visualstudio/subscriptions/vs-vsts).
 
 <a name="enterprise-professional"></a>
 
@@ -57,7 +57,7 @@ A:  See [Azure DevOps benefits for Visual Studio subscribers](https://docs.micro
 
 #### Q: Why won't my Visual Studio subscription validate?
 
-A: See [Why won't Azure DevOps recognize my Visual Studio subscription?](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#faq)
+A: See [Why won't Azure DevOps recognize my Visual Studio subscription?](/visualstudio/subscriptions/vs-alternate-identity#faq)
 
 <a name="why-access-changed"></a>
 
@@ -87,7 +87,7 @@ If you're purchasing user access to Visual Studio Professional for a specific Az
 
 	This change takes effect on the first day of the next month. For the rest of the current calendar month, you aren't billed for any Visual Studio Online Professional users.
 
-1. On the first day of the next calendar month, [go to the Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
+1. On the first day of the next calendar month, [go to the Visual Studio Marketplace](https://marketplace.visualstudio.com/items/ms.vs-professional-monthly) and buy Visual Studio Professional monthly subscriptions for the same users. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
 
 	> [!NOTE]
 	> If you want to use your monthly Azure credits as a Visual Studio subscriber to pay for users, make sure that you remove the default spending limit for your subscription indefinitely. [Learn more](../billing/vsts-billing-faq.md).

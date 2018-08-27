@@ -29,6 +29,6 @@ You can [delete the user from each Azure DevOps Services organization](delete-or
 
    ![Find the directory connected to your organization](_img/manage-work-access/azurefindconnecteddirectory.png)
 
-3. Follow [these steps](https://docs.microsoft.com/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
+3. Follow [these steps](/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
 
 4. [Remove the user](delete-organization-users.md) from your Azure DevOps Services organization. Reassign the user's access levels, if necessary.

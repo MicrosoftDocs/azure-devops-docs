@@ -25,12 +25,12 @@ Depending on which conditions the user satisfies, you can require multi-factor a
 > [!IMPORTANT] 
 > Azure DevOps Services only enforces conditional access policies when a user signs into services with their Azure AD credentials. Conditional access policies are circumvented when Azure DevOps Services is accessed by using personal access tokens (PATs), alternate authentication, OAuth, and SSH keys.
 
-For more information and resources, see [What is conditional access in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+For more information and resources, see [What is conditional access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
 
 
 ## Enable conditional access for Azure DevOps Services
 
 Use the Azure portal to enable conditional access.
 
-For detailed instructions and requirements, see this [quickstart](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
+For detailed instructions and requirements, see this [quickstart](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
 

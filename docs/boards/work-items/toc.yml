@@ -157,7 +157,7 @@
   - name: Define a hyperlink
     href: work-item-url-hyperlink.md
   - name: REST API, Work Items
-    href: https://docs.microsoft.com/en-us/rest/api/vsts/wit/work%20items
+    href: /rest/api/vsts/wit/work%20items
 - name: Resources
   items:
   - name: Boards (Kanban)

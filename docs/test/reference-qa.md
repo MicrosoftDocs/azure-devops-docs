@@ -589,9 +589,9 @@ test suites, or test plans.
 **A:** Action recording works best for apps in which each user 
 interface field has a unique ID, and for basic actions such as keystrokes, 
 clicks, and menu selections. It doesn't work for some apps and web browsers.
-See [Supported configurations and platforms for coded UI tests and action recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+See [Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 To learn how to develop your app so that it's easier to record tests, 
-see [Enable coded UI testing of your controls](https://docs.microsoft.com/visualstudio/test/enable-coded-ui-testing-of-your-controls).
+see [Enable coded UI testing of your controls](/visualstudio/test/enable-coded-ui-testing-of-your-controls).
 
 ### Q: Record and playback is great. But can I completely automate a test, including verifying the results?
 

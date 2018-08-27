@@ -194,5 +194,5 @@ Use the following three controls to manage your views.
 - [Work across projects](../../project/navigation/work-across-projects.md)
 
 > [!NOTE]
-> You can create and manage work items from the command line or scripts using the [Azure DevOps CLI](https://docs.microsoft.com/cli/vsts/overview?view=vsts-cli-latest).
+> You can create and manage work items from the command line or scripts using the [Azure DevOps CLI](/cli/vsts/overview?view=vsts-cli-latest).
 

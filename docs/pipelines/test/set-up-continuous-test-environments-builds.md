@@ -44,7 +44,7 @@ If you want to use a PowerShell script to deploy your app, make sure to:
 
 You'll need to install the agent that runs your tests on the machines. For more details, see
 [Deploy a Windows build agent](../../pipelines/agents/v2-windows.md).
-You might decide to [create Azure VMs](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal)
+You might decide to [create Azure VMs](/azure/virtual-machines/windows/quick-create-portal)
 to install your agents.
 
 ## Define a list of machines to run your app and tests
@@ -126,7 +126,7 @@ Parallel Test Execution is **not** supported in the following cases:
 
 ### Enable parallel tests in Visual Studio 2017 Update 1 and VS Test task v1.x
 
-Configure a [.runsettings file](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
+Configure a [.runsettings file](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 in the app source repository for Visual Studio IDE or the CLI, and in Azure Pipelines when using
 version 1.x of the  [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTest/README.md)
 task.

@@ -120,7 +120,7 @@ For TFS 2015 and earlier versions, you can't [query](../queries/using-queries.md
 
 
 ###REST API resources
-To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](https://docs.microsoft.com/rest/api/vsts/work/boards).
+To programmatically interact with the Kanban board and other team settings, see the [REST API, Boards reference](/rest/api/vsts/work/boards).
 
 
 

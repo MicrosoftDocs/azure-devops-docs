@@ -12,10 +12,10 @@
 - name: Resources
   items:
   - name: Visual Studio IDE
-    href: https://docs.microsoft.com/visualstudio/
+    href: /visualstudio/
   - name: Visual Studio Code 
     href: https://code.visualstudio.com/docs
   - name: Visual Studio for Mac
-    href: https://docs.microsoft.com/visualstudio/mac
+    href: /visualstudio/mac
   - name: Manage projects
     href: ../../organizations/projects/index.md

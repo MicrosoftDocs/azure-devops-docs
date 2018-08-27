@@ -23,11 +23,11 @@ The desired outcome of planning a project is a plan that includes a scope, a sch
 ##  <a name="Gathering"></a> Gathering and modeling the requirements  
  This activity is about discussing what the system should do, with business stakeholders, prospective users, and subject matter experts. It is important to understand the business context. If you have been asked to write an application for police officers, it helps to understand their jargon, procedures, and rules.  
   
- UML models are a useful tool for expressing and thinking about complex relationships. You can draw them in Visual Studio and link them to other documents and to Team Foundation work items. For more information see [Model user requirements](https://docs.microsoft.com/visualstudio/modeling/model-user-requirements).  
+ UML models are a useful tool for expressing and thinking about complex relationships. You can draw them in Visual Studio and link them to other documents and to Team Foundation work items. For more information see [Model user requirements](/visualstudio/modeling/model-user-requirements).  
   
  Update and refine the requirements model throughout the project. As each iteration approaches, add more detail to the aspects of the model that are relevant to that iteration. From the model, you can derive verification tests.  
   
- For more information, see [Develop requirements](guidance-develop-requirements.md) and [Develop tests from a model](https://docs.microsoft.com/visualstudio/modeling/develop-tests-from-a-model).  
+ For more information, see [Develop requirements](guidance-develop-requirements.md) and [Develop tests from a model](/visualstudio/modeling/develop-tests-from-a-model).  
   
 ##  <a name="Features"></a> Creating incremental product requirements  
  The requirements as you have gathered them from your customers are not directly appropriate for the purpose of scheduling incremental development. For example, to clarify the procedure when a user buys something from a Web site, you might have written a detailed series of steps: customer browses catalog, adds item to cart, checks out cart, supplies address, and pays; warehouse schedules delivery; and so on. These steps, or an equivalent activity diagram, are not incremental requirements.  

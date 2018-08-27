@@ -69,7 +69,7 @@ Direct assignments are removed from the users.
 
 ## Related articles
 
-* [What is Azure Active Directory B2B Collaboration?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
+* [What is Azure Active Directory B2B Collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 
 * [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-vsts.md)
 

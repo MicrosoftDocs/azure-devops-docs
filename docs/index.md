@@ -234,8 +234,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_android.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_android.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_android.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="/media/logos/logo_android.svg" data-linktype="external" data-hoverimage="/media/logos/logo_android.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -361,8 +361,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_kubernetes.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_kubernetes.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_kubernetes.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_kubernetes.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="/media/logos/logo_kubernetes.svg" data-linktype="external" data-hoverimage="/media/logos/logo_kubernetes.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -379,8 +379,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_linux-color.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_linux-color.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_linux-color.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_linux-color.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="/media/logos/logo_linux-color.svg" data-linktype="external" data-hoverimage="/media/logos/logo_linux-color.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -415,8 +415,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_npm.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_npm.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_npm.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_npm.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="/media/logos/logo_npm.svg" data-linktype="external" data-hoverimage="/media/logos/logo_npm.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -433,8 +433,8 @@ featureFlags:
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
                                                         <div class="cardImageOuter">
-                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("https://docs.microsoft.com/en-us/media/logos/logo_nuget.svg"); background-size: cover;'>
-                                                                <img style="display: none;" alt="" src="https://docs.microsoft.com/en-us/media/logos/logo_nuget.svg" data-linktype="external" data-hoverimage="https://docs.microsoft.com/en-us/media/logos/logo_nuget.svg">
+                                                            <div class="cardImage" style='background-position: -50px 0px; background-image: url("/media/logos/logo_nuget.svg"); background-size: cover;'>
+                                                                <img style="display: none;" alt="" src="/media/logos/logo_nuget.svg" data-linktype="external" data-hoverimage="/media/logos/logo_nuget.svg">
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -548,9 +548,9 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Developer resources</h3>
-                                                        <p><a href="https://docs.microsoft.com/en-us/rest/api/vsts/">REST APIs</a></p>
+                                                        <p><a href="/rest/api/vsts/">REST APIs</a></p>
                                                         <a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
-                                                        <p><a href="https://docs.microsoft.com/en-us/cli/vsts/overview">CLI</a></p>
+                                                        <p><a href="/cli/vsts/overview">CLI</a></p>
                                                         <p><a href="/vsts/java/index">Java</a></p>
                                                         <p><a href="/vsts/demo-gen">Azure DevOps Demo Generator</a></p>
                                                     </div>
@@ -566,7 +566,7 @@ featureFlags:
                                                         <h3>Additional resources</h3>
                                                         <p><a href="/vsts/index-all">Index</a></p>
                                                         <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">DevOps at Microsoft</a></p>
-                                                        <p><a href="https://docs.microsoft.com/en-us/azure/devops/learn/">Azure DevOps resource center</a></p>
+                                                        <p><a href="/azure/devops/learn/">Azure DevOps resource center</a></p>
                                                         <p><a href="/vsts/index-tfs">TFS Administrator Guide</a></p>
                                                     </div>
                                                 </div>

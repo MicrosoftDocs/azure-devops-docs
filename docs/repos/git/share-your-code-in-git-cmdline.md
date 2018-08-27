@@ -22,7 +22,7 @@ This guide show you how to share your code in a VSTS Git repo using the command 
 The instructions below use the default bash shell used on Linux and macOS, but the Git commands will work in any shell, including Git Bash from Git for Windows.
 
 > [!NOTE]
-> You can also create and get repos from the command line or scripts using the [VSTS CLI](https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest).
+> You can also create and get repos from the command line or scripts using the [VSTS CLI](/cli/vsts/overview?view=vsts-cli-latest).
 
 ## Prerequisites
 

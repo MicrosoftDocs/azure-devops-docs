@@ -46,7 +46,7 @@ Build and release:
 
 ### Create table of contents for wiki pages
 
-Sometimes wiki pages can get long, with content organized into several headings. Now you can add a table of contents to any page that has at least one heading using the `[[_TOC_]]` syntax. See the [markdown guidance](https://docs.microsoft.com/en-us/vsts/project/wiki/markdown-guidance) documentation for more information about using markdown in VSTS. This feature was prioritized based on a [suggestion from UserVoice](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/32366560-wiki-table-contents).
+Sometimes wiki pages can get long, with content organized into several headings. Now you can add a table of contents to any page that has at least one heading using the `[[_TOC_]]` syntax. See the [markdown guidance](/vsts/project/wiki/markdown-guidance) documentation for more information about using markdown in VSTS. This feature was prioritized based on a [suggestion from UserVoice](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/32366560-wiki-table-contents).
 
 > [!div class="mx-imgBorder"]
 ![Wiki table of contents](_img/139_03.png)
@@ -102,7 +102,7 @@ You've been able to trigger a build based on a pull request (PR) and get that qu
 
 [DevOps Projects](https://azure.microsoft.com/features/devops-projects/) makes it easy to get started in Azure. It helps you launch an application, on the Azure service of your choice, in a few steps. DevOps Projects provides everything you need for developing, deploying, and monitoring your app.
 
-We have now added support for Azure Kubernetes Service (AKS) targeting Go Language on DevOps Projects. See the tutorial documentation for [AKS](https://docs.microsoft.com/azure/devops-project/azure-devops-project-aks) for more information.
+We have now added support for Azure Kubernetes Service (AKS) targeting Go Language on DevOps Projects. See the tutorial documentation for [AKS](/azure/devops-project/azure-devops-project-aks) for more information.
 
 ## Feedback
 

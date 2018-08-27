@@ -65,7 +65,7 @@ parameters are for manual tests only.
 and [Continuous integration on any platform](../pipelines/overview.md).
 For more information about action recordings and coded UI tests, see 
 [Recording and Playing Back Manual Tests](mtm/record-play-back-manual-tests.md)
-and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code).
+and [Use UI Automation To Test Your Code](/visualstudio/test/use-ui-automation-to-test-your-code).
 
 <a name="add-test"></a>
 ## Associate your test  

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 43474098-a23a-49c2-bfa8-2f4beb0e5399
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/15/2017
 ---
 
@@ -33,7 +34,7 @@ On a 32-bit edition of Windows, replace **%programfiles(x86)%** with **%programf
 
   
 > [!NOTE]  
->  Even if you are logged on with administrative permissions, you must open an elevated Command Prompt to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt, choose **Start**, open the context menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the [User Account Control](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
+>  Even if you are logged on with administrative permissions, you must open an elevated Command Prompt to perform this function on a server that is running Windows Server 2008. To open an elevated Command Prompt, choose **Start**, open the context menu for **Command Prompt**, and then choose **Run as Administrator**. For more information, see the [User Account Control](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772207(v=ws.10)).  
   
  **Requirements**  
   

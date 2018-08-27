@@ -82,7 +82,7 @@ process is transparent, and you'll never see any kind of sign-in experience.
 
 With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You'll either 
 authenticate with  [Microsoft Organization](http://www.microsoft.com/account) credentials or with
-[Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)  
+[Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-whatis)  
 credentials, depending on your Azure DevOps Services organization setup. You can also set up Azure AD 
 to require features like multi-factor-authentication, IP address restrictions, and so on.
 
@@ -209,7 +209,7 @@ The following reports and dashboards are only available in TFS:
 
 And, available today only in Azure DevOps Services:
 * A [PowerBI connector](../report/powerbi/overview.md) which provides a nice combination of simplicity and power. We plan to make it available in TFS in a future release.
-* [Analytics](https://docs.microsoft.com/en-us/vsts/report/analytics/) which is the reporting platform for Azure DevOps Services, which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the Azure DevOps Services suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
+* [Analytics](/vsts/report/analytics/) which is the reporting platform for Azure DevOps Services, which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the Azure DevOps Services suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
 
 ## Related articles
  

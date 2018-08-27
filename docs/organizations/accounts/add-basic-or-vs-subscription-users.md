@@ -25,6 +25,6 @@ To add more users:
 
 You pay monthly for their access and can cancel the access at any time.
 
-Visual Studio subscriptions give you flexible ways to access Azure DevOps Services and to license the Visual Studio IDE and other Microsoft software for development and test. Learn [how to buy Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
+Visual Studio subscriptions give you flexible ways to access Azure DevOps Services and to license the Visual Studio IDE and other Microsoft software for development and test. Learn [how to buy Visual Studio subscriptions](/visualstudio/subscriptions/vscloud-overview).
 
-Learn [how to assign Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/assign-license) in the [Visual Studio Subscriptions Administration portal](https://manage.visualstudio.com/_apis/Home/redirect?RedirectSource=Commerce). Make sure to sign in with the identity that you used to buy your subscriptions.
+Learn [how to assign Visual Studio subscriptions](/visualstudio/subscriptions/assign-license) in the [Visual Studio Subscriptions Administration portal](https://manage.visualstudio.com/_apis/Home/redirect?RedirectSource=Commerce). Make sure to sign in with the identity that you used to buy your subscriptions.

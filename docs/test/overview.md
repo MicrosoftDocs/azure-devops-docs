@@ -222,6 +222,6 @@ and [Provide stakeholder feedback](provide-stakeholder-feedback.md).
 * [Guidance for MTM usage](mtm/guidance-mtm-usage.md) 
 * [Get stakeholder feedback with exploratory testing](request-stakeholder-feedback.md)
 
-> See also [Load and performance testing](load-test/index.md), [Continuous testing](../pipelines/index.md), [Unit testing](https://docs.microsoft.com/visualstudio/test/developer-testing-scenarios).
+> See also [Load and performance testing](load-test/index.md), [Continuous testing](../pipelines/index.md), [Unit testing](/visualstudio/test/developer-testing-scenarios).
 
 [!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 

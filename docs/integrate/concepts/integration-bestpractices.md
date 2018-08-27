@@ -74,6 +74,6 @@ Limit the number of links per work item as much as possible. We recommend that y
 > We will be enforcing work item revision and link limits in the near future. These limits will be determined by performance monitoring and customer feedback.
 
 ## Queries for Reporting
-Using queries and individual get work item calls is the number one way to get rate limits enforced on your organization. Don't execute queries to return large lists of work items. Use the reporting [work item links](https://docs.microsoft.com/en-us/rest/api/vsts/wit/reporting%20work%20item%20links) and [work item revisions](https://docs.microsoft.com/en-us/rest/api/vsts/wit/reporting%20work%20item%20revisions) REST API's instead.
+Using queries and individual get work item calls is the number one way to get rate limits enforced on your organization. Don't execute queries to return large lists of work items. Use the reporting [work item links](/rest/api/vsts/wit/reporting%20work%20item%20links) and [work item revisions](/rest/api/vsts/wit/reporting%20work%20item%20revisions) REST API's instead.
 
 You can see our [C# Sample on GitHub](https://github.com/sferg-msft/vsts-wit-reporting-example)

@@ -14,7 +14,7 @@ ms.date: 08/04/2016
 
 # IProcessTemplates.AddUpdateTemplate method (String, String, String, String, String)
 
-**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/bb137716(v=vs.120))**
+**Azure DevOps Services | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions](/previous-versions/visualstudio/visual-studio-2013/bb137716(v=vs.120))**
 
 
 

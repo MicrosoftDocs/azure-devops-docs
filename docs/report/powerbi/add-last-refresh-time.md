@@ -81,4 +81,4 @@ The steps below show how to add a column to your model which will contain the la
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](../analytics/analytics-views-create.md)
-- [Get started with Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)

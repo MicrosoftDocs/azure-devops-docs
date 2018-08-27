@@ -30,7 +30,7 @@ You have two options if you want to test Microsoft Store apps on a phone, tablet
   
 1. If possible, use the same user credentials or the same Microsoft Live ID on the Windows device and on the computer that is running Microsoft Test Manager. If the user is different, the machine that you are running Microsoft Test Manager from will display a credentials dialog box when you try to connect.  
   
-1. Install the Remote Debugger on the device that you want to test. See [Installing the Remote Debugger](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine#BKMK_download).
+1. Install the Remote Debugger on the device that you want to test. See [Installing the Remote Debugger](/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine#BKMK_download).
    (This is only supported for Windows client operating systems. Windows Server 2012 is not supported.)  
   
    The Microsoft Test Tools Adapter Configuration Tool will appear on the device as a new tile.  

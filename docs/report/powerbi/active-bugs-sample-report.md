@@ -41,7 +41,7 @@ Follow these steps to create a report in Power BI desktop that shows a **daily a
 In order to create a Power BI report that references an Analytics view, you must meet the following criteria:  
 
 * You must be a member of a project. If you don't have a project yet, [create one](../../boards/get-started/sign-up-invite-teammates.md). 
-* If you haven't been added as a team member, [get added now](/vsts/organizations/accounts/add-account-users-assign-access-levels). Anyone with access to a team project, except stakeholders, can view **Analytics views**.
+* If you haven't been added as a team member, [get added now](/vsts/organizations/accounts/add-organization-users-from-user-hub). Anyone with access to a team project, except stakeholders, can view **Analytics views**.
 * Have installed the [Analytics Marketplace extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics). You must be an Azure DevOps owner or a member of the [Project Collection Administrator group](/vsts/organizations/security/set-project-collection-level-permissions) to add extensions.
 * Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access the Analytics Service](/vsts/report/analytics/analytics-security).
 - Have installed *Power BI Desktop* *February 2018 Update* or later version. You can download this client application from the official [Power BI Desktop download page](https://powerbi.microsoft.com/desktop).
@@ -209,7 +209,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
 
 0. Choose **File > Save As** to save your report to your local workspace. 
 
-0. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](https://docs.microsoft.com/power-bi/service-collaborate-power-bi-workspace).
+0. To publish your report to Power BI, choose the **Publish** tab. For additional information, see [Collaborate in your Power BI app workspace](/power-bi/service-collaborate-power-bi-workspace).
 
     > [!div class="mx-imgBorder"]
     > ![Latest active bug count](_img/active-bugs-report/publish-powerbi.png)
@@ -227,7 +227,7 @@ Analytics views provide you with a great deal of power and flexibility to filter
 
 ## Related articles 
 
-- [Get started with Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](../analytics/analytics-views-create.md)
 - [Connect with Power BI Data Connector](./data-connector-connect.md)

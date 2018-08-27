@@ -69,7 +69,7 @@ Generally a non-supported collation can be converted to one of the supported col
 The collection database's collation '{collation}' is not supported for import to VSTS. It will need to be changed to a supported collation before it can be imported. See more details at https://aka.ms/vstsimportcollations
 ```
 
-In order to continue your collection's collation will need to be [changed](https://docs.microsoft.com/en-us/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on VSTS.
+In order to continue your collection's collation will need to be [changed](/sql/relational-databases/collations/set-or-change-the-database-collation) to one of the supported collations on VSTS.
     
 ## Dealing with Identity Errors
 Identity errors aren't common when validating a collection, but when they do come up it's important to fix them prior to migration to avoid any undesired results. Generally, identity problems stem from valid operations on previous versions of TFS that are no longer valid on your current TFS version. For example, some users being members of a built-in valid users group was once allowed, but isn't in more recent versions. The most common identity errors and guidance on fixing them can be found below.
@@ -362,7 +362,7 @@ There is a new line character in the source location value, this could have been
 VS403271: It appears that your DACPAC was uploaded to East US. It's required that customers targeting Central US for import put their DACPACs in Central US. Please move your DACPAC to Central US and requeue the import.
 ``` 
 
-Your import files and DACPAC are not located in the **required** Azure region to complete the import to your target VSTS region. Please [Create a new windows azure storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) in the required region and copy your files. Below is an example of how to copy your data using AzCopy.
+Your import files and DACPAC are not located in the **required** Azure region to complete the import to your target VSTS region. Please [Create a new windows azure storage account](/azure/storage/common/storage-create-storage-account) in the required region and copy your files. Below is an example of how to copy your data using AzCopy.
 
 ```cmdline
 AzCopy.exe /Source:https://accountSCUS.blob.core.windows.net/mycontainer /SourceKey:"primary access key" /Dest:https://accountCUS.blob.core.windows.net/mycontainer /DestKey:"primary access key" /S

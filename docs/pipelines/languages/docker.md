@@ -54,7 +54,7 @@ This example shows how to build a Docker image and push it to a registry.
    * **dockerId:** Your Docker Id for DockerHub or the admin user name for the Azure Container Registry
    * **dockerPassword:** Password for DockerHub or admin password for Azure Container Registry
 
-  If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal). You can get the admin user name and password from the **Access keys** section of the registry in Azure portal.
+  If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal](/azure/container-registry/container-registry-get-started-portal). You can get the admin user name and password from the **Access keys** section of the registry in Azure portal.
 
 1. If you have a Docker Hub account, and would like to push the image to your **Docker Hub registry**, then use the web UI to change the YAML file in build pipeline from `azure-pipelines.yml` to `azure-pipelines.docker.yml`. This file is present at the root of your sample repository.
 
@@ -118,7 +118,7 @@ YAML builds are not yet available on TFS.
    * **dockerId:** Your Docker Id.
    * **dockerPassword:** Your Docker password. Mark this variable as a secret variable.
 
-   If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal]((https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal)). You can get the user id and password from the **Access keys** section of the registry in Azure portal.
+   If you use Azure container registry, then make sure that you have [pre-created the registry in Azure portal](/azure/container-registry/container-registry-get-started-portal). You can get the user id and password from the **Access keys** section of the registry in Azure portal.
 
 Save the pipeline and queue a build to see it in action.
 
@@ -214,7 +214,7 @@ YAML builds are not yet available on TFS.
 
 1. Select the task, and then for **Action**, select **Build an image**.
 
-1. Specify the connection to the registry that you plan to push the image to by selecting the **Container registry type** - `Container Registry` or `Azure Container Registry`. Then enter the properties for that connection type. If you plan to push the image to an Azure Container Registry, make sure that you [pre-create the registry in Azure portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal).
+1. Specify the connection to the registry that you plan to push the image to by selecting the **Container registry type** - `Container Registry` or `Azure Container Registry`. Then enter the properties for that connection type. If you plan to push the image to an Azure Container Registry, make sure that you [pre-create the registry in Azure portal](/azure/container-registry/container-registry-get-started-portal).
 
 ---
 

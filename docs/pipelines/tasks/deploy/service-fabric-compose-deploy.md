@@ -21,7 +21,7 @@ This task deploys an Azure Service Fabric application to a cluster according to 
 ## Prerequisites
 
 NOTE: This task is currently in preview and requires a preview version of Service Fabric that supports compose deploy.
-See [https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compose](https://docs.microsoft.com/azure/service-fabric/service-fabric-docker-compose).
+See [/azure/service-fabric/service-fabric-docker-compose](/azure/service-fabric/service-fabric-docker-compose).
 
 ### Service Fabric
 

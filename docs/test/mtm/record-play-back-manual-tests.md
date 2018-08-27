@@ -33,7 +33,7 @@ to the next to make sure that everything still works correctly.
 You can record and play back tests in a wide range of desktop apps, 
 and also web apps that you access through a supported browser. 
 For a detailed list, see 
-[Supported configurations and platforms for coded UI tests and action recordings](https://docs.microsoft.com/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
+[Supported configurations and platforms for coded UI tests and action recordings](/visualstudio/test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings).
 
 [!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
 
