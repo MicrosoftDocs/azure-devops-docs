@@ -237,9 +237,9 @@ Once built, push the Docker image to a container registry by using the [Docker](
      imageName: contoso/myjavasriptcontainer:v1.0.0
 ```
 
-## Deploy your application 
+## Deploy your application to Azure
 
-
+If you're application is packaged static files (such as through `webpack`), the easiest solution to deploy it to Azure is through 
 
   
 
