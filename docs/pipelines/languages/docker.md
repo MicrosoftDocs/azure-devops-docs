@@ -46,6 +46,7 @@ This example shows how to build a Docker image and push it to a registry.
 1. To start, complete the steps from the example section in one of the following languages:
    * [.NET Core](dotnet-core.md)
    * [JavaScript](javascript.md)
+   * [Python](python.md)
 
   The sample repos include a `Dockerfile` at the root of the repository. You must first have a working build pipeline before continuing on.
 
