@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 07/31/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 # Manage users for Azure DevOps Services
@@ -35,9 +35,10 @@ Need [more users with Basic features or Visual Studio subscriptions](../billing/
 You must have [Azure DevOps Services project collection administrator or organization owner permissions](../../organizations/security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).   
 
 
-##	Manage users
+## Manage users
 
-The Users view shows key information per user in a table. In this view, you can:
+The Users view shows key information per user in a table. In this view, you can do the following:
+
 * See and modify assigned service extensions and access levels.
 * Multi-select users and bulk edit their extensions and access.
 * Filter by searching for partial user names, access level, or extension names.
@@ -51,24 +52,25 @@ The Users view shows key information per user in a table. In this view, you can:
 
 	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
-2. Go to your Azure DevOps Services admin settings.
+2. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
-    ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Azure DevOps Services admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
 
-3. Select the **Users** tab, and then select **Add new users**.
+3. Select **Users** > **Add new users**.
 
    ![Select the Users tab, and then select Add new users](_img/_shared/add-new-users.png)
 
-4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu. 
+4. Select a user or group of users. Then, select the **...** icon at the end of the **Name** column to open the context menu.
 
-    In the context menu, select one of these options:
-    *   **Add to projects**
-    *   **Remove from projects**
-    *   **Assign extensions**
-    *   **Revoke extensions** (if there are extensions)
-    *   **Change access levels**
-    *   **Remove direct assignments**
-    *   **Remove from organization** (deletes user)
+    In the context menu, select one of the following options:
+
+    * **Add to projects**
+    * **Remove from projects**
+    * **Assign extensions**
+    * **Revoke extensions** (if there are extensions)
+    * **Change access levels**
+    * **Remove direct assignments**
+    * **Remove from organization** (deletes user)
 
     ![Select the Users hub, and then select an item in the context menu](_img/manage-users/manage-users-show-context-menu-vert.png)
 
@@ -76,7 +78,7 @@ The Users view shows key information per user in a table. In this view, you can:
 
 # [Previous navigation](#tab/prev-nav)
  
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`)
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 
 2. Open admin settings.
 

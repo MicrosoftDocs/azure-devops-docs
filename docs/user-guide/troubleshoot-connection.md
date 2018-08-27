@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
-ms.date: 08/08/2018
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2013'
 ---
 
@@ -19,9 +19,9 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range="vsts"
 
-## Troubleshoot Azure DevOps Services connectivity
+## Troubleshoot Azure DevOps connectivity
 
-As a first step in resolving connectivity issues with Azure DevOps Services, do the following steps:
+As a first step in resolving connectivity issues with Azure DevOps, complete the following steps:
 
 1. Sign out of your browser. You can do this by choosing the [Visual Studio Sign out](http://aka.ms/VsSignout) link.
 
@@ -31,20 +31,20 @@ As a first step in resolving connectivity issues with Azure DevOps Services, do 
 
 4. Close all browsers and the Visual Studio IDE.
 
-5. Use a private browser session to retry the connection to Azure DevOps Services. If the issue is with VS IDE, remove the connection to Azure DevOps Services after doing above and then re-add it.
+5. Use a private browser session to retry the connection to Azure DevOps . If the issue is with VS IDE, remove the connection to Azure DevOps after doing above and then re-add it.
 
-## Troubleshoot signing in to Azure DevOps Services
+## Troubleshoot signing in to Azure DevOps
 
-There are two types of identities that can sign in to Azure DevOps Services - Microsoft accounts (MSA) and Azure Active Directory (Azure AD) accounts. Depending on your account, you may experience one of the following errors.
+There are two types of identities that can sign in to Azure DevOps - Microsoft accounts (MSA) and Azure Active Directory (Azure AD) accounts. Depending on your account, you may experience one of the following errors.
 
 > 401 - Not Authorized
 
 > [!div class="mx-imgBorder"]
-![troubleshoot Azure DevOps Services connection 401 error1](_img/troubleshoot-connection/401_notauthorized.png)
+![troubleshoot Azure DevOps connection 401 error1](_img/troubleshoot-connection/401_notauthorized.png)
 
-The most common error page encountered is the "401 Not Authorized" error. This occurs when your identity does not have permission to enter a Azure DevOps Services organization. Common reasons for this include:
+The most common error page encountered is the "401 Not Authorized" error. This occurs when your identity does not have permission to enter a Azure DevOps organization. Common reasons for this include:
 
-* Your identity is not a member of the target Azure DevOps Services organization
+* Your identity is not a member of the target Azure DevOps organization
 * Your identity has an invalid or missing license assignment
 
 If you believe you are a member of the organization but are blocked by this error page, feel free to [contact customer support](https://support.microsoft.com/).
@@ -54,13 +54,13 @@ If you believe you are a member of the organization but are blocked by this erro
 > 401 - Work or school, or Personal account
 
 > [!div class="mx-imgBorder"]
-![troubleshoot Azure DevOps Services connection 401 error2](_img/troubleshoot-connection/401_AAD.png)
+![troubleshoot Azure DevOps connection 401 error2](_img/troubleshoot-connection/401_AAD.png)
 
-This is a highly specific 401 error case, where there exists both a personal Microsoft account (MSA) and a work or school account (Azure AD) with the same sign in address. You have signed in with your work or school account, but your personal account is the identity that has access to the Azure DevOps Services organization.
+This is a highly specific 401 error case, where there exists both a personal Microsoft account (MSA) and a work or school account (Azure AD) with the same sign in address. You have signed in with your work or school account, but your personal account is the identity that has access to the Azure DevOps organization.
 
 **Mitigation**
 
-In some cases, you may be unaware that you have two identities with the same sign in address. The work or school Azure AD account may have been made by an administrator upon onboarding to Office365 or Azure AD. You must choose the "sign in with your personal MSA account" link to sign you out of your current work or school Azure AD account and begin a sign in prompt as the personal MSA. After authentication, you should have access to the Azure DevOps Services organization.
+In some cases, you may be unaware that you have two identities with the same sign in address. The work or school Azure AD account may have been made by an administrator upon onboarding to Office365 or Azure AD. You must choose the "sign in with your personal MSA account" link to sign you out of your current work or school Azure AD account and begin a sign in prompt as the personal MSA. After authentication, you should have access to the Azure DevOps organization.
 
 [!Tip] To never see this prompt again, you can rename your Microsoft account. This will make it so that only one identity (your work or school account or Azure AD account) for your sign in address.
 

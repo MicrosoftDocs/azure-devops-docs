@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 05/04/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -22,7 +22,7 @@ Partners in the [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cl
 
 Partners need the appropriate permissions role to purchase in the Partner Center. Learn more about [roles in Partner Center](https://msdn.microsoft.com/partner-center/create-user-accounts-and-set-permissions). 
 
-Set up a customer and CSP-based Azure subscription in the Partner Center by following these steps:   
+Set up a customer and CSP-based Azure subscription in the Partner Center by completing the following steps:   
 
 <iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-Customer-Provisioning/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
 

@@ -25,10 +25,10 @@ You can [delete the user from each Azure DevOps Services organization](delete-or
    > [!NOTE]
    > You can find the connected Azure AD only through the Azure classic portal.
 
-1. Go to **Azure Active Directory**. Find the Azure AD that's connected to your Azure DevOps Services organization.
+2. Go to **Azure Active Directory**. Find the Azure AD that's connected to your Azure DevOps Services organization.
 
    ![Find the directory connected to your organization](_img/manage-work-access/azurefindconnecteddirectory.png)
 
-1. Follow [these steps](https://docs.microsoft.com/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
+3. Follow [these steps](https://docs.microsoft.com/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
 
-1. [Remove the user](delete-organization-users.md) from your Azure DevOps Services organization. Reassign the user's access levels, if necessary.
+4. [Remove the user](delete-organization-users.md) from your Azure DevOps Services organization. Reassign the user's access levels, if necessary.

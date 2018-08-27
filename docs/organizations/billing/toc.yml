@@ -18,11 +18,11 @@
     href: buy-load-testing-vs.md
 - name: Tutorials
   items:
-  - name: Connect VSTS to Azure AD
-    href: ../accounts/change-organization-location.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
+  - name: Connect organization to Azure AD
+    href: ../accounts/connect-organization-to-aad.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: How-to guides
   items:
-  - name: Manage billing 
+  - name: Billing management
     items:
     - name: Add user to make purchases
       href: add-backup-billing-managers.md
@@ -34,7 +34,7 @@
       href: buy-access-tfs-test-hub.md
     - name: Billing FAQ
       href: vsts-billing-faq.md
-  - name: Manage Marketplace extensions
+  - name: Marketplace extension management
     items:
     - name: Change number of paid users
       href: change-number-paid-extension-users.md
@@ -50,7 +50,7 @@
     items:
     - name: "CSPs: Set up your customer"
       href: csp/set-up-csp-customer.md
-    - name: "CSPs: Buy VSTS for your customers"
+    - name: "CSPs: Buy Azure DevOps for your customers"
       href: csp/buy-csp-vsts.md
     - name: "CSPs: Buy and manage Visual Studio subscriptions"
       href: https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp
@@ -70,7 +70,9 @@
     href: ../../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Manage organizations
+  - name: Azure DevOps user guide
+    href: ../../user-guide/index.yml
+  - name: Organization management
     href: ../accounts/index.md
   - name: "Security & identity"
     href: ../../security/index.md

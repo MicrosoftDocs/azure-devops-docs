@@ -29,7 +29,7 @@ With an Azure DevOps Services organization, you gain access to the platform in w
 To get started, [create your Azure DevOps Services organization](create-organization-msa-or-work-student.md) and then invite others so they can access your organization.
 
 Choose Git or Team Foundation Server as your version control,
-so that Azure DevOps Services can create your team project for code and other assets,
+so that Azure DevOps Services can create your project for code and other assets,
 like builds, tests, and work items. If you're starting with Visual Studio
 as your development environment, you can create your Azure DevOps Services organization when you
 [set up Visual Studio](set-up-vs.md).
@@ -46,7 +46,7 @@ and cloud-based load testing.
 After Azure DevOps Services creates your organization,
 [connect to your organization](../../organizations/projects/connect-to-projects.md)
 with tools like Xcode, Eclipse, or Visual Studio,
-and add code to your team project.
+and add code to your project.
 
 Some clients, like Xcode, Git, and NuGet, require basic credentials
 (a username and password) for you to access Azure DevOps Services.

@@ -8,14 +8,14 @@ ms.topic: overview
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
 
 # Billing overview for Azure DevOps Services
 
-**VSTS**
+[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
 
 Set up billing when you need more than the **Free Tier** of resources in your Azure DevOps Services organization, or to buy other features for your users that are offered by Microsoft or other companies via the [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
@@ -23,8 +23,8 @@ The Free Tier includes:
 
 * Five Azure DevOps Services users (Basic).
 * Five Package Management users.
-* Free Tier of Microsoft-hosted CI/CD (one concurrent job, up to four hours per month).
-* One self-hosted CI/CD concurrent job.
+* Free Tier of Microsoft-hosted Pipelines (one concurrent job, up to 30 hours per month).
+* One self-hosted Pipelines concurrent job.
 * 20,000 virtual user minutes of cloud-based load testing.
 
 > During your first purchase for your Azure DevOps Services organization, you're prompt to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All Azure DevOps Services services are billed via Azure. You aren't required to pay for or use any other Azure services.
@@ -32,8 +32,8 @@ The Free Tier includes:
 > These are the paid services that are offered by Microsoft:
 >
 > * [Azure DevOps Services users/Basic](https://marketplace.visualstudio.com/items?itemName=ms.vss-vstsuser)
-> * [Microsoft-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
-> * [Self-hosted CI/CD](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
+> * [Microsoft-hosted Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (formerly hosted pipelines)
+> * [Self-hosted Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms.build-release-private-pipelines) (formerly private pipelines)
 > * [Azure Test Plans Manager](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 > * [Package Management](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 >
@@ -52,7 +52,7 @@ You also need these same permissions and roles to make subsequent changes, such 
 ## Next steps
 
 * [Set up billing](set-up-billing-for-your-organization-vs.md)
-* [Add a backup billing manager](add-backup-billing-managers.md)
+* [Add user who can make purchases or backup billing manager](add-backup-billing-managers.md)
 * [Change the Azure subscription for billing](change-azure-subscription.md)
 
 ## Related articles

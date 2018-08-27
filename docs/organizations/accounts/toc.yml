@@ -132,15 +132,15 @@
     href: ../../articles/migrate-to-vsts-from-tfs.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: New User Guide
+  - name: Azure DevOps user guide
     href: ../../user-guide/index.yml
-  - name: Manage projects
+  - name: Project management
     href: ../projects/index.md
   - name: "Security & identity"
     href: ../../organizations/security/index.md
   - name: Billing
     href: ../billing/index.md
-  - name: Manage Extensions
+  - name: Extensions management
     href: ../../marketplace/index.md
   - name: Service hooks
     href: ../../service-hooks/index.md

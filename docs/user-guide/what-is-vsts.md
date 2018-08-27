@@ -1,11 +1,12 @@
 ---
 title: Plan, code, collaborate, and ship your applications faster with Azure DevOps Services 
-description: What do you get when you sign up to use Visual Studio Team Services   
+description: What do you get when you sign up to use Azure DevOps Services   
 ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid: 4 
 ms.manager: douge
-ms.author: kaelli
+ms.author: chcomley
+author: chcomley
 ms.date: 09/05/2018
 ms.topic: overview
 monikerRange: 'vsts'

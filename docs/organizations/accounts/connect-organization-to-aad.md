@@ -83,7 +83,7 @@ b. Select ![gear icon](../../_img/icons/gear-icon.png) **Admin settings**.
 
 ![Open admin settings](../../_shared/_img/settings/open-admin-settings-vert.png)
  
-c. Go to **Users**
+c. Select **Users**.
 
 ![Open organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
 

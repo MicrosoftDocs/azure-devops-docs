@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 04/06/2018
+ms.date: 09/05/2018
 monikerRange: '>= tfs-2015'
 ---
 # Billing 
@@ -17,12 +17,12 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="vsts"
 
-## Billing for Azure DevOps Services   
+## Billing for Azure DevOps Services
 
-All Azure DevOps Services charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more.
+All Azure DevOps charges appear on your monthly Azure bill. Azure supports payment by credit card as well as invoiced billing through the Enterprise Agreement (EA), Cloud Solution Providers (CSP), and more.
 
-* [Azure DevOps Services pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
-* [Azure DevOps Services billing overview](overview.md)
+* [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/visual-studio-team-services/)
+* [Azure DevOps billing overview](overview.md)
 
 ::: moniker-end
 
@@ -41,28 +41,28 @@ You can also make some purchases for TFS on your monthly Azure bill.
 
 ## 5-Minute quickstarts  
 
-* [Set up billing for Azure DevOps Services](set-up-billing-for-your-organization-vs.md)
-* [Start free trials for paid Azure DevOps Services features and extensions](try-additional-features-vs.md)
-* [Pay for Azure DevOps Services users](buy-basic-access-add-users.md)
-* [Buy Azure DevOps Services CI/CD](buy-more-build-vs.md)
+* [Set up billing for Azure DevOps](set-up-billing-for-your-organization-vs.md)
+* [Pay for Azure DevOps users](buy-basic-access-add-users.md)
+* [Buy Azure DevOps Pipelines](buy-more-build-vs.md)
+* [Start free trials for paid Azure DevOps features and extensions](try-additional-features-vs.md)
 * [Buy cloud-based load testing](buy-load-testing-vs.md)
 
 ## Step-by-step tutorials
 
-* [Change the Azure AD for your Azure DevOps Services organization](change-azure-subscription.md)
+* [Connect your Azure DevOps organization to Azure Active Directory](../accounts/connect-organization-to-aad.md)
 
 ## How-to guides
 
-Manage billing
+Billing management
 
-* [Add a backup billing manager](add-backup-billing-managers.md)
-* [Change the Azure subscription your Azure DevOps Services organization uses for billing](change-azure-subscription.md)
-* [Change the number of paid users on your Azure DevOps Services organization](reduce-cancel-paid-vsts-users.md)
+* [Add user to make purchased or add backup billing manager](add-backup-billing-managers.md)
+* [Change the Azure subscription your Azure DevOps organization uses for billing](change-azure-subscription.md)
+* [Change the number of paid users on your Azure DevOps organization](reduce-cancel-paid-vsts-users.md)
 * [Billing FAQ](vsts-billing-faq.md)
 
-Manage Marketplace extensions
+Marketplace extension management
 
-* [Change the number of paid users for an Azure DevOps Services extension](change-number-paid-extension-users.md)
+* [Change the number of paid users for an Azure DevOps extension](change-number-paid-extension-users.md)
 * [Approve requests for extensions](../../marketplace/approve-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
 * [Assign paid extensions to users](../../marketplace/assign-paid-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
 * [Uninstall or disable extensions](../../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json&view=vsts)
@@ -70,7 +70,7 @@ Manage Marketplace extensions
 Guidance for Cloud Solution Providers
 
 * [Set up your customer](csp/set-up-csp-customer.md)
-* [Buy Azure DevOps Services for your customers](csp/buy-csp-vsts.md)
+* [Buy Azure DevOps for your customers](csp/buy-csp-vsts.md)
 * [Buy and manage Visual Studio subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-csp)
 * [Buy App Center resources](csp/buy-vs-app-center.md)
 
@@ -88,8 +88,8 @@ Guidance for Cloud Solution Providers
 
 ## Other resources
 
-* [New User Guide](../../user-guide/index.yml)
-* [Manage organizations](../accounts/index.md)
+* [Azure DevOps user guide](../../user-guide/index.yml)
+* [Organization management](../accounts/index.md)
 * [TFS Server Administration documentation](https://docs.microsoft.com/tfs/server/index?view=vsts)
 * [Buy Visual Studio cloud subscriptions](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview)
 * [Buy Xamarin University subscriptions](xamarin-univ.md)

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.manager: douge
 ms.author: chcomley
 author: chcomley
-ms.date: 03/28/2018
+ms.date: 09/05/2018
 monikerRange: 'vsts'
 ---
 
@@ -19,6 +19,8 @@ monikerRange: 'vsts'
 When you [create an organization](create-organization-msa-or-work-student.md), you can choose the region where Azure DevOps Services hosts your organization. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers.  Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps Services is available.
 
 For information on region availability, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/).
+
+## Find your organization location
 
 [!INCLUDE [temp](../../boards/_shared/new-agile-hubs-feature.md)]
 

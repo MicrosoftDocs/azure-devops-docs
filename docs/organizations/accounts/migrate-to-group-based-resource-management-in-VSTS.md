@@ -49,7 +49,7 @@ The most important thing is to avoid a situation where migration to group-based 
 
 # [Previous navigation](#tab/prev-nav)
 
-1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`)
+1. Sign in to your Azure DevOps Services organization (`https://dev.azure.com/{yourorganization}`).
 
 2. Open admin settings.
 
