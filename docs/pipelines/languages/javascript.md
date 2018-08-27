@@ -31,7 +31,7 @@ This guidance explains how to build JavaScript and Node.js apps.
 
 ## Example
 
-For a working example of how to build a NodeJS app, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
+For a working example of how to build a Node.js app, import (into Azure Repos or TFS) or fork (into GitHub) this repo:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript
@@ -102,6 +102,8 @@ For the exact version of Node.js and npm pre-installed, refer to [Microsoft-host
 
 ::: moniker-end
 
+### Use specific version of node
+
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
@@ -131,6 +133,41 @@ If you need a version of the Node.js/npm that is not already installed on the Mi
 ---
 
 To just update the npm tool, run `npm i -g npm@version-number` command in your build process.
+
+### Use multiple node versions
+
+You can build and test your app on multiple versions of Node.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+```yaml
+pool: 
+  name: Hosted Linux Preview
+  matrix:
+    node_8_x:
+      node_version: 8.x
+    node_9_x:
+      node_version: 9.x
+
+steps:
+- task: NodeTool@0
+  inputs:
+    version: $(node_version)
+
+- script: npm install
+```
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+See [multi-configuration execution](../process/phases.md#parallelexec).
+
+---
 
 ## Dependency management
 
@@ -249,28 +286,20 @@ Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publi
 
 ---
 
-## Matrix builds
+## JavaScript frameworks
 
-You can build and test your app on multiple versions of Node.
+### AngularJS
+
+For AngularJS apps, you can include Angular-specific tasks such as **ng test**, **ng build**, and **ng e2e** using npm custom tasks. To use AngularJS in your build pipeline, you need to include the angular/cli npm package in your app.
 
 # [YAML](#tab/yaml)
 
 ::: moniker range="vsts"
 ```yaml
-pool: 
-  name: Hosted Linux Preview
-  matrix:
-    node_8_x:
-      node_version: 8.x
-    node_9_x:
-      node_version: 9.x
-
-steps:
-- task: NodeTool@0
-  inputs:
-    version: $(node_version)
-
-- script: npm install
+- script: |
+    npm install -g @angular/cli
+    npm install
+    ng build --prod
 ```
 ::: moniker-end
 
@@ -280,11 +309,69 @@ YAML builds are not yet available on TFS.
 
 # [Designer](#tab/designer)
 
-See [multi-configuration execution](../process/phases.md#parallelexec).
+Add the following tasks to your build pipeline:
+
+* **npm**
+  * **Command:** `custom`
+  * **Command and arguments:** `install -g @angular/cli`
+
+* **npm**
+  * **Command:** `install`
+
+* **bash**
+  * **Type:** `inline`
+  * **Script:** `ng build --prod`
 
 ---
 
-## Task runners
+For tests in your build pipeline that require a browser to run (such as the **ng test** command in the starter app, which runs karma), you need to use a headless browser instead of a standard browser. In the AngularJS starter app, an easy way to do this is to:
+
+1. Change the  `browsers` entry in your *karma.conf.js* project file from `browsers: ['Chrome']` to `browsers: ['ChromeHeadless']`.
+
+1. Change the `singleRun` entry in your *karma.conf.js* project file from a value of `false` to `true`. This helps make sure that the karma process exits after running.
+
+### Webpack
+
+You can use a webpack configuration file to specify a compiler (such as Babel or TypeScript) to transpile JSX or TypeScript to plain JavaScript, and to bundle your app.
+
+# [YAML](#tab/yaml)
+
+::: moniker range="vsts"
+```yaml
+- script: |
+    npm install -g webpack webpack-cli --save-dev
+    npx webpack --config webpack.config.js
+```
+::: moniker-end
+
+::: moniker range="< vsts"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+# [Designer](#tab/designer)
+
+Add the following tasks to your build pipeline:
+
+* **npm**
+  * **Command:** `custom`
+  * **Command and arguments:** `install -g webpack webpack-cli --save-dev`
+
+* **bash**
+  * **Type:** `inline`
+  * **Script:** `npx webpacj --config webpack.config.js`
+
+---
+
+### React
+
+All the dependencies for your React app are captured in your *package.json* file, and hence the steps outlined in the example section above should suffice for building and testing a React app.
+
+### Vue
+
+All the dependencies for your Vue app are captured in your *package.json* file, and hence the steps outlined in the example section above should suffice for building and testing a Vue app.
+
+
+## Build task runners
 
 It is common to use **gulp**, **grunt**, or **maven** as a task runner to build and test a JavaScript app.
 
