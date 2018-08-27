@@ -6,7 +6,8 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: 'vsts'
 ms.date: 06/02/2017
@@ -25,18 +26,18 @@ Below you find maximum number of object in the Inheritance and Hosted XML proces
 |Object | Inheritance |Hosted XML | 
 |-------|------------:|----------:|
 | Work item types defined for a process | 64  | 64 |
-| Fields defined for an organization | 4096  | 4096 |
-| Fields defined for a process | 512  | 512 |
-| Fields defined for a work item type | 512  | 512 |
-| Picklists defined for an organization or collection | 512  | - |
+| Fields defined for an organization | 8192  | 8192 |
+| Fields defined for a process | 1024  | 1024 |
+| Fields defined for a work item type | 1024  | 1024 |
+| Picklists defined for an organization or collection | 1024  | - |
 | Picklist items defined for a list | 512  | 512 |
 | Picklist item character length | 256  | - |
 | Workflow states defined for a work item type | 32  | 16 |
 | Rules defined for a work item type | 1024  | 1024 |
 | Portfolio backlog levels defined for a process| 5  | 5 |
 | Categories defined for a process | - | 32 | 
-| Global lists defined for a process | - | 64  |
-| List items defined within a global list | - | 512 | 
+| Global lists defined for a process | - | 256  |
+| List items defined within a global list | - | 1024 | 
 
 For additional restrictions and conformance requirements of the Hosted XML process model, see [Customize a process when using Hosted XML](../../../organizations/settings/work/import-process/customize-process.md).
 
