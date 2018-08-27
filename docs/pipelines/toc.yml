@@ -23,7 +23,7 @@
   - name: Docker
     href: languages/docker.md
   - name: Go
-    href: apps/go/go.md
+    href: languages/go.md
   - name: Java
     href: languages/java.md
   - name: JavaScript

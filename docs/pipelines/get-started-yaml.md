@@ -105,4 +105,4 @@ You've just learned the basics of using Azure Pipelines. Now you're ready to fur
 * [NodeJS](languages/javascript.md)
 * [Java](languages/java.md)
 * [Python](languages/python.md)
-* [Go](apps/go/go.md)
+* [Go](languages/go.md)

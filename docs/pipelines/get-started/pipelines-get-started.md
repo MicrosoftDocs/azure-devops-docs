@@ -24,7 +24,7 @@ If you're not sure if Pipelines is right for your needs, read [Why Use Azure Pip
 
 ### Languages
 
-You can use practically any language with Azure Pipelines, including **Java, C#, C++, Python, Go, and Ruby.**
+You can use practically any language with Azure Pipelines, including **Python, Java, PHP, Ruby, C#, and Go.**
 
 ### Version control systems
 

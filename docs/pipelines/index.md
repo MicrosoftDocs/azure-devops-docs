@@ -171,7 +171,7 @@ Tutorials, references, and other documentation show you how to configure and man
 <span>Docker image</span>
 </a></div>
 <div class="ico48Link">
-<a href="apps/go/go.md">
+<a href="languages/go.md">
 <img width="48" height="48" alt="" src="_img/index/logo_go.svg">
 <span>Go</span>
 </a></div>
