@@ -208,17 +208,20 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
    
    * In the **Artifacts** section of the **Pipeline** tab, choose **+ Add**. Select your build artifacts
      and choose **Add**.
- 
+
      ![Selecting the artifacts](_img/continuous-test-selenium/continuous-test-selenium-07.png)
 
    * Choose the **Continuous deployment trigger** icon in the **Artifacts** section of the **Pipeline** tab.
-     In the Continuous deployment trigger pane, enable the trigger so that a new release is created from every build.   
+     In the Continuous deployment trigger pane, enable the trigger so that a new release is created from every build.
+     Add a filter for the default branch.   
 
      ![Configuring continuous deployment](_img/continuous-test-selenium/continuous-test-selenium-08.png)
 
    * Open the **Tasks** tab, select the **Stage 1** section, and enter your subscription
      information and the name of the web app where you want to deploy the app and tests.
      These settings are applied to the **Deploy Azure App Service** task.
+
+     ![Configuring the variables](_img/continuous-test-selenium/continuous-test-selenium-08a.png)
 
 1. If you are deploying your app and tests to environments where the target machines that host the agents do not have Visual Studio installed:
 
@@ -233,11 +236,13 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 1. In the **Tasks** tab of the release pipeline, choose the **+** icon in the **Run on agent** section.
    Select the **Visual Studio Test** task and choose **Add**.
 
+  ![Adding a Visual Studio Test task](_img/continuous-test-selenium/continuous-test-selenium-09a.png)
+
 1. If you added the **Visual Studio Test Platform Installer** task to your pipeline, change the
    **Test platform version** setting in the **Execution options** section of the **Visual Studio Test**
    task to **Installed by Tools Installer**.
- 
-   ![Setting the teat platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
+
+   ![Setting the test platform version](_img/continuous-test-selenium/continuous-test-selenium-10.png)
 
    [How do I pass parameters to my test code from a release pipeline?](reference-qa.md#pass-params)
 
@@ -246,16 +251,10 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
    ![Creating a new release](_img/continuous-test-selenium/continuous-test-selenium-11.png)
 
-<a name="view-results"></a>
-## View the test results
+   <a name="view-results"></a>
 
-1. To view the test results, open the release summary from the **Releases** tab.
-
-   ![Selecting a release summary](_img/continuous-test-selenium/continuous-test-selenium-19.png)
-
-1. In the release summary page choose the **Tests** link to show a page
-   that highlights the changes including errors, stack traces, and the ability
-   to easily create a bug that contains this information.
+1. To view the test results, open the release summary from the **Releases** page
+   and choose the **Tests** link.
 
 ## Next steps
 

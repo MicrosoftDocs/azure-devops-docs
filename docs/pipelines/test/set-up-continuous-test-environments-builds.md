@@ -231,8 +231,7 @@ The **Visual Studio Test** task runs in exactly the same way as version
 
 For example, you could deploy an Azure Web App and run a small number
 of quick tests on it (for which a single agent is sufficient), along
-with some pre- and post-test setup and cleanup activities, using an
-environment configured as follows:
+with some pre- and post-test setup and cleanup activities, using a pipeline configured as follows:
 
 ![Configuring tasks for no parallelism to deploy and test an Azure Web App](_img/test-with-unified-agent-and-phases/single-phase-env.png)
 
@@ -244,28 +243,28 @@ are run.
 
 In the case of Build, you typically use **BuildPlatform** and **BuildConfiguration** as multipliers.
 The same logic applies to testing. For example, you could deploy a web app to Azure and run
-cross-browser tests on IE and Firefox by configuring an environment to use two jobs - a deploy job and a test job: 
+cross-browser tests on IE and Firefox by configuring a pipeline to use two jobs - a deploy job and a test job: 
 
 ![Configuring the release pipeline with two jobs for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig.png)
 
 The test job is set up as a multiple executions process using a variable named **Browser**, which
-has the values `IE` and `Firefox`. The job will run twice using these two configurations - one
-agent is assigned the value `IE` for its **Browser** variable, and one with the value `Firefox`.
+has the values `Edge` and `Firefox`. The job will run twice using these two configurations - one
+agent is assigned the value `Edge` for its **Browser** variable, and one with the value `Firefox`.
 
 ![Specifying the multipliers for multiple executions testing](_img/test-with-unified-agent-and-phases/multipliers1.png)
 
 ![Defining the multiplier variable for multiple executions testing](_img/test-with-unified-agent-and-phases/multipliers2.png)
 
-In the tasks for the environment, the **Browser** value could be used to instantiate the appropriate
+In the tasks for the pipeline, the **Browser** value could be used to instantiate the appropriate
 browser for the tests. For example, you might pass the values as **Test Run Parameters** and access them
-using **TestContext** in the test code. You could also use the values to provide appropriate titles
+using **TestContext** in the test code.
+
+![Configuring the test task parameters for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig-task-settings-1.png)
+
+You could also use the values to provide appropriate titles
 for your test runs so that, if a test fails in a particular configuration, you can easily tell which run it came from.
 
-![Configuring the test task parameters for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig-task-settings.png)
-
-The execution results might look like this:
-
-![Results in release for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig-logs.png)
+![Configuring the test task parameters for multiple executions testing](_img/test-with-unified-agent-and-phases/multiconfig-task-settings-1.png)
 
 #### Multiple agents
 
@@ -283,20 +282,14 @@ are busy with another release or build, the job can still start with the availab
 that match the demand, and test execution starts. As additional agents become available, they can pick
 up any remaining tests that have not yet run.
 
-For example, the log from a multiple agents test run, where some tests have failed, might look like this:
-
-![Results in release when running three agents in parallel](_img/test-with-unified-agent-and-phases/multi-agent-test-run.png)
-
 Artifacts are automatically downloaded when the job starts, so the test assemblies and other files
 are already located on the agent, and no "copy files" task is required. So, to publish an Azure Web App
-and run a large number of tests with fast test execution, you could model the environment as two jobs -
+and run a large number of tests with fast test execution, you could model the pipeline as two jobs -
 one being the deploy job (which runs on a single agent because you don't want multiple agents to deploy
 the same app concurrently), and the other a test job that uses multiple agents mode to achieve test distribution.
 
 This also means that you can use different agent pools for the two jobs, allowing you to manage agents
 for different purposes separately if required.
-
-![Configuring the release pipeline with two jobs for distributed tests](_img/test-with-unified-agent-and-phases/distributed-tests.png)
 
 ### FAQs
 

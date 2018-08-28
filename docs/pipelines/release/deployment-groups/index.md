@@ -72,6 +72,10 @@ by installing the **Azure Pipelines Agent** Azure VM extension on each of the VM
 or by using the **Azure Resource Group Deployment** task in your release pipeline
 to create a deployment group dynamically.
 
+You can force the agents on the target machines to be upgraded to the latest version
+without needing to redeploy them by choosing the **Upgrade targets** command on the shortcut
+menu for a deployment group.  
+
 For more information, see [Provision agents for deployment groups](howto-provision-deployment-group-agents.md).
  
 ## Monitor releases for deployment groups

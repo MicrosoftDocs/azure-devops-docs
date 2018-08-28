@@ -82,56 +82,11 @@ For more details, see [Testing with unified agents and jobs](test-with-unified-a
 
    ![Build pipeline: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
 
-## Set up test deployment for your build
 
 **NOTE**: You can use version 2.x of the [Visual Studio Test](https://github.com/Microsoft/vsts-tasks/blob/master/Tasks/VsTestV2/README.md) task to deploy and run
 unit and functional tests without requiring the **Deploy Test Agent** and **Run Functional Tests** tasks,
 and run tests on platforms that don't have Visual Studio installed by using the 
 [Visual Studio Test Platform](https://blogs.msdn.microsoft.com/devops/2016/07/25/evolving-the-visual-studio-test-platform-part-1/).
-
-If you want to use the **Deploy Test Agent** and **Run Functional Tests** tasks:
-
-1. In your build pipeline, add a **Window Machine File Copy** task with these details to deploy your tests:
-
-   * Source folder for your tests
-
-   * List of machines where you want to run your tests
-
-   * Credentials to connect to the target machines  
-
-   * Target folder where to put your tests
-
-   ![Build pipeline, copy tests](_img/set-up-continuous-testing-builds/copy-tests.png)
-
-1. Add a task with these details to deploy the test agent for running your tests:
-
-   * List of machines where you want to deploy the test agent
-
-   * Credentials to connect to the target machines  
-
-   * Credentials for the deployment agents, so the test agent can run in your test environment
-
-   ![Build pipeline: deploy test agent details](_img/set-up-continuous-testing-builds/deploy-test-agent.png)
-
-1. Save your build pipeline.
-
-   ![Build pipeline: save](_img/set-up-continuous-testing-builds/save-build-definition.png)
-
-## Set up your tests to run with your build
-
-1. In your build pipeline, add a task with these details to run your tests with the test agent:
-
-   * List of machines where you want to run your tests
-
-   * Folder where you put your tests
-
-   ![Build pipeline: Run tests with test agent](_img/set-up-continuous-testing-builds/run-tests-with-test-agent.png)
-
-1. Save your build pipeline and queue a build to check your test run.
-
-   ![Build pipeline: queue build](_img/queue-build.png)
-
-1. After your build is done, [review your test results](review-continuous-test-results-after-build.md).
 
 ## See also
 
