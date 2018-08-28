@@ -1,7 +1,7 @@
 ---
 title: Code with Git
 titleSuffix: Azure DevOps Services & TFS 
-description: Share code in a Git repo and new team project 
+description: Share code in a Git repo and new project 
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-new-user

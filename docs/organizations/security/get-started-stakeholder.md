@@ -28,7 +28,7 @@ In public projects, Stakeholder access gives users partial access to work tracki
 Use this topic to learn:
 
 > [!div class="checklist"]
-> * How to sign-in to an account
+> * How to sign-in to an organization
 > * How to add a work item
 > * How to view the product backlog and add new work to it
 > * How to view work in progress on the Kanban board
@@ -48,7 +48,7 @@ Use this topic to learn:
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, type ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 	::: moniker-end
 
-2.  Enter your credentials. If you aren't able to sign in, ask the account owner or project administrator to add you as a member of the project with Stakeholder access. 
+2.  Enter your credentials. If you aren't able to sign in, ask the organization owner or project administrator to add you as a member of the project with Stakeholder access. 
 
 ::: moniker-end
 
@@ -171,7 +171,7 @@ And, you can [create new queries or edit existing queries](../../boards/queries/
 The following features are available to Stakeholders from the web portal.
 
 > [!div class="mx-tdBreakAll"]
-> |Work  |Account, Dashboards, Wiki, and Notifications|
+> |Work  |Organization, Dashboards, Wiki, and Notifications|
 > |-------------|----------|  
 > |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md) <sup>2, 3</sup><br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) <br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md)<br/>- [Change work item type](../../boards/backlogs/remove-delete-work-items.md)|- [Navigate to teams, team projects, and more](../../user-guide/account-home-pages.md)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>5</sup><br/>- [View team dashboards](../../report/dashboards.md) <br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md)<br/>- [Invite users and assign licenses](../accounts/add-organization-users-from-user-hub.md) <sup>6</sup><br/>- [View wiki pages](../../project/wiki/filter-print-wiki.md) <sup>7</sup><br/><br/>**Build & Release**<br/> - All features <sup>8</sup>  |
 
@@ -195,7 +195,7 @@ The following features are available to Stakeholders from the web portal.
 The following features are available to Stakeholders from the web portal.
 
 > [!div class="mx-tdBreakAll"]
-> |Work  |Account, Dashboards, Wiki, and Notifications|
+> |Work  |Organization, Dashboards, Wiki, and Notifications|
 > |-------------|----------|  
 > |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md) <sup>5, 3</sup><br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) <br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup> <br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md)<br/>- [Change work item type](../../boards/backlogs/remove-delete-work-items.md)|- [Navigate to teams, team projects, and more](../../user-guide/account-home-pages.md)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup><br/>- [View team dashboards](../../report/dashboards.md) <br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md)<br/>- [View wiki pages](../../project/wiki/add-edit-wiki.md) <sup>7</sup><br/><br/>**Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup><br/>- [Approve a release](../../pipelines/release/approvals/index.md) |
 
@@ -217,7 +217,7 @@ The following features are available to Stakeholders from the web portal.
 The following features are available to Stakeholders from the web portal of the listed TFS or later version. Those not annotated are available from all versions. To determine your platform or TFS version, see [Platform and version support](../../user-guide/provide-feedback.md#platform-version).   
 
 > [!div class="mx-tdBreakAll"]
-> |Work  |Account, Dashboards, and Notifications|
+> |Work  |Organization, Dashboards, and Notifications|
 > |-------------|----------|  
 > |- [View, create, and modify work items](#create-work-item) <sup>1</sup><br/>- [View, add, and modify items on backlogs](#check-backlog) <sup>2</sup><br/>- [View, and modify items on sprint backlogs](../../boards/sprints/assign-work-sprint.md) <sup>2</sup><br/>- [View, and modify items on the task board](../../boards/sprints/task-board.md) <sup>2, 3</sup><br/>- [View, and modify items (Kanban)](../../boards/boards/kanban-basics.md)  <sup>2, 3</sup><br/>- [Add tasks to the checklist (Kanban)](../../boards/boards/add-task-checklists.md) <sup>2, 3</sup> (TFS 2015.1)<br/>- [Follow changes made to work items](../../boards/work-items/follow-work-items.md) (TFS 2017)<br/>- [View the cumulative flow diagram](../../report/dashboards/cumulative-flow.md)<br/>- [View, create, and save queries](#query) <sup>4</sup><br/>- [Submit, view, and change feedback responses](../../project/feedback/give-feedback.md) |- [Navigate to teams, team projects, and more](../../user-guide/account-home-pages.md) (TFS 2017)<br/>- [View project welcome pages](../../project/wiki/project-vision-status.md) <sup>6</sup> (TFS 2017)<br/>- [View team dashboards](../../report/dashboards/dashboards.md) (TFS 2015)<br/>- [Manage personal notifications](../../notifications/manage-personal-notifications.md) (TFS 2017) <br/>- [Set personal alerts for changes to work items](../../boards/queries/alerts-and-notifications.md) (TFS 2013, 2015)<br/><br/>- **Build & Release**<br/>- [View releases](../../pipelines/release/approvals/index.md) <sup>5</sup> (TFS 2015.2)<br/>- [Approve a release](../../pipelines/release/approvals/index.md) <sup>5</sup> (TFS 2015.2) |
 

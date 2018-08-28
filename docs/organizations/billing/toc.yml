@@ -70,7 +70,7 @@
     href: ../../security/permissions-access.md?toc=/azure/devops/billing/toc.json&bc=/azure/devops/billing/breadcrumb/toc.json
 - name: Resources
   items:
-  - name: Azure DevOps user guide
+  - name: Start using Azure DevOps
     href: ../../user-guide/index.yml
   - name: Organization management
     href: ../accounts/index.md

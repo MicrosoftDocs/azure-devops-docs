@@ -37,7 +37,7 @@ Sign up for an Azure DevOps organization. Add users and manage permissions and a
 
 ## Resources
 
-* [Azure DevOps user guide](../../user-guide/index.yml)
+* [Start using Azure DevOps](../../user-guide/index.yml)
 * [Project management](../projects/index.md)
 * [Billing](../billing/index.md)
 * [Security and identity](../../organizations/security/index.md)

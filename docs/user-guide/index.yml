@@ -48,6 +48,11 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_get-started.svg
         title: Sign up for Azure DevOps
+      - href: define-organizations-and-projects.md
+        html:
+        image:
+          src: https://docs.microsoft.com/media/common/i_get-started.svg
+        title: Define organizations and projects
       - href: code-with-git.md
         html: <p></p>
         image:
@@ -223,6 +228,11 @@ sections:
         image:
           src: https://docs.microsoft.com/media/common/i_agile.svg
         title: Project management
+      - href: ../organizations/billing/index.md
+        html: <p></p>
+        image:
+          src: https://docs.microsoft.com/media/common/i_billing.svg
+        title: Billing
       - href: /visualstudio/?view=vsts
         html: <p></p>
         image:
