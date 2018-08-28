@@ -86,6 +86,7 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 ::: moniker range="> tfs-2018"
 
 ```yaml
+steps:
 - task: AndroidSigning@2
   inputs:
     apkFiles: '**/*.apk'
@@ -105,8 +106,7 @@ An APK must be signed to run on a device instead of an emulator. Zipaligning red
 
 ## Test on Azure-hosted devices
 
-Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices.
-An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
+Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
 
 ::: moniker range="> tfs-2018"
 
@@ -114,7 +114,7 @@ An [App Center](https://appcenter.ms) free trial is required which must later be
 
 ::: moniker-end
 
-## Retain artifacts
+## Retain artifacts with the build record
 
 Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks
 to store your APK with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
@@ -122,6 +122,7 @@ to store your APK with the build record or test and deploy it in subsequent pipe
 ::: moniker range="> tfs-2018"
 
 ```yaml
+steps:
 - task: CopyFiles@2
   inputs:
     contents: '**/*.apk'
@@ -158,6 +159,7 @@ task to release a new Android app version to the Google Play store.
 ::: moniker range="> tfs-2018"
 
 ```yaml
+steps:
 - task: GooglePlayRelease@2
   inputs:
     apkFile: '**/*.apk'
@@ -175,6 +177,7 @@ task to promote a previously-released Android app update from one track to anoth
 ::: moniker range="> tfs-2018"
 
 ```yaml
+steps:
 - task: GooglePlayPromote@2
   inputs:
     packageName: 'com.yourCompany.appPackageName'
@@ -193,6 +196,7 @@ task to increase the rollout percentage of an app that was previously released t
 ::: moniker range="> tfs-2018"
 
 ```yaml
+steps:
 - task: GooglePlayIncreaseRollout@1
   inputs:
     packageName: 'com.yourCompany.appPackageName'
@@ -204,8 +208,8 @@ task to increase the rollout percentage of an app that was previously released t
 
 ## Related extensions
 
-[Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) (Codified Security)  
-[Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (Microsoft)  
-[Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
-[Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)  
-[React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  
+- [Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) (Codified Security)  
+- [Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play) (Microsoft)  
+- [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
+- [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)  
+- [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  

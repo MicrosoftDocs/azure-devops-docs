@@ -35,12 +35,112 @@ You can use Azure Pipelines to build your apps with Xcode without needing to set
 
 For the exact versions of Xcode that are preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md).
 
-# Install Apple provisioning profiles
+Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
-# Install Apple signing certificates
+```yaml
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xcode
+pool:
+  vmImage: 'macOS 10.13'
+```
+
+## Build an app with Xcode
+
+To build an app with Xcode, add the following snippet to your `azure-pipelines.yml` file. This is a minimal snippet for building an iOS project using its default scheme, for the Simulator, and without packaging. Change values to match your project configuration. See the [Xcode](../tasks/build/xcode.md) task for more about these options.
+
+```yaml
+variables:
+  scheme: ''
+  sdk: 'iphoneos'
+  configuration: 'Release'
+
+steps:
+- task: Xcode@5
+  inputs:
+    sdk: '$(sdk)'
+    scheme: '$(scheme)'
+    configuration: '$(configuration)'
+    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
+    packageApp: false
+```
 
 ### Signing and provisioning
 
-#### Install Apple certificates
+To sign and provision your app, see [Sign your mobile app during CI](../apps/mobile/app-signing.md).
 
-#### Install Apple provisioning profiles
+### Testing on Azure-hosted devices
+
+Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
+
+[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterTestV1.md)]
+
+### Retain artifacts with the build record
+
+Add the [Copy Files](../tasks/utility/copy-files.md) and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks
+to store your IPA with the build record or test and deploy it in subsequent pipelines. See [Artifacts](../build/artifacts.md).
+
+```yaml
+steps:
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.ipa'
+    targetFolder: '$(build.artifactStagingDirectory)'
+- task: PublishBuildArtifacts@1
+```
+
+## Deploy
+
+### App Center
+
+Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an app to a group of testers or beta users,
+or promote the app to Intune or the Apple App Store. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
+
+[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterDistributeV1.md)]
+
+### Apple App Store
+
+Install the [Apple App Store extension](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store)
+and use the following tasks to automate interaction with the App Store. By default, these tasks authenticate to Apple
+using a [service connection](..//library/service-endpoints.md) that you configure.
+
+#### Release
+
+Add the [App Store Release](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store#user-content-app-store-release)
+task to automate the release of updates to existing iOS TestFlight beta apps or production apps in the App Store.
+
+```yaml
+steps:
+- task: AppStoreRelease@1
+  displayName: 'Publish to the App Store TestFlight track'
+  inputs:
+    serviceEndpoint: 'My Apple App Store service connection' # This service connection must be added by you
+    appIdentifier: com.yourorganization.testapplication.etc
+    ipaPath: '$(build.artifactstagingdirectory)/**/*.ipa'
+    shouldSkipWaitingForProcessing: true
+    shouldSkipSubmission: true
+```
+
+#### Promote
+
+Add the [App Store Promote](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store#user-content-app-store-promote)
+task to automate the promotion of a previously submitted app from iTunes Connect to the App Store.
+
+```yaml
+steps:
+- task: AppStorePromote@1
+  displayName: 'Submit to the App Store for review'
+  inputs:
+    serviceEndpoint: 'My Apple App Store service connection' # This service connection must be added by you
+    appIdentifier: com.yourorganization.testapplication.etc
+    shouldAutoRelease: false
+```
+
+## Related extensions
+
+- [Apple App Store](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.app-store) (Microsoft)
+- [Codified Security](https://marketplace.visualstudio.com/items?itemName=codifiedsecurity.CodifiedSecurity) (Codified Security)  
+- [MacinCloud](https://marketplace.visualstudio.com/items?itemName=moboware.macincloud) (Moboware Inc.)
+- [Mobile App Tasks for iOS and Android](https://marketplace.visualstudio.com/items?itemName=vs-publisher-473885.motz-mobile-buildtasks) (James Montemagno)  
+- [Mobile Testing Lab](https://marketplace.visualstudio.com/items?itemName=Perfecto.PerfectoCQ) (Perfecto Mobile)
+- [Raygun](https://marketplace.visualstudio.com/items?itemName=Raygun.vsts-extension) (Raygun)
+- [React Native](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.react-native-extension) (Microsoft)  
+- [Version Setter](https://marketplace.visualstudio.com/items?itemName=tomgilder.version-setter) (Tom Gilder)

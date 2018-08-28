@@ -98,7 +98,7 @@ steps:
 
 ### dep ensure
 
-Use `dep ensure` if your project uses `dep` to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gpkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file. Note: this script runs in bash on Linux and macOS agents, but must be modified for Windows.
+Use `dep ensure` if your project uses dep to download dependencies imported in your code. Running `dep ensure` clones imported repositories into your project's vendor directory. Its `Gopkg.lock` and `Gpkg.toml` files guarantee that everyone working on the project uses the same version of dependencies as your build. Add the following snippet to your `azure-pipelines.yml` file. Note: this script runs in bash on Linux and macOS agents, but must be modified for Windows.
 
 ```yaml
 steps:
