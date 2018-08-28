@@ -27,13 +27,13 @@ Our JSON REST APIs enable a lightweight way to work with Visual Studio Online fr
 
 [Learn the basics](/rest/api/vsts/?view=vsts-rest-4.1)
 
-[Explore the APIs](https://visualstudio.microsoft.com/integrate/reference/reference-vso-overview-vsi)
+[Explore the APIs](/azure/devops/integrate/)
 
 ###Authorization
 
 With OAuth 2.0 support in Visual Studio Online, now you can safely access information and perform operations on Visual Studio Online on behalf of a user. OAuth enables users to safely grant your app or service access to their resources.
 
-[Authorizing with OAuth](/vsts/integrate/get-started/authentication/oauth?view=vsts)
+[Authorizing with OAuth](/azure/devops/integrate/get-started/authentication/oauth?view=vsts)
 
 [Registering your app](https://app.vssps.visualstudio.com/app/register?_ga=1.9631093.1191187031.1470846728)
 
@@ -52,9 +52,9 @@ Services hooks can be found as a new hub in project administration.
 
 [Learn more](https://visualstudio.microsoft.com/get-started/integrate/integrating-with-service-hooks-vs)
 
-[Creating subscriptions programmatically](https://visualstudio.microsoft.com/integrate/reference/reference-vso-hooks-subscriptions-vsi)
+[Creating subscriptions programmatically](/azure/devops/integrate/)
 
-[Supported events](/vsts/service-hooks/events?view=vsts)
+[Supported events](/azure/devops/service-hooks/events?view=vsts)
 
 ###Extensibility Preview
 

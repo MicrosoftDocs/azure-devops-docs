@@ -185,4 +185,4 @@ Open the project/team drop-down menu and select the project/team that you've rec
 
 ## Related articles
 - [Work across projects](work-across-projects.md)
-- [Add teams](../../organizations/settings/add-teams.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json)
+- [Add teams](../../organizations/settings/add-teams.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json)

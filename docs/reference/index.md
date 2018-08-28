@@ -23,34 +23,34 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 ::: moniker range="vsts"
 ## 5-Minute Quickstarts  
 
-- [Define area paths](../organizations/settings/set-area-paths.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
-- [Define iteration paths or sprints](../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) 
-- [Add a custom field](../organizations/settings/work/add-custom-field.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)   
-- [Add a custom work item type](../organizations/settings/work/add-custom-wit.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)   
+- [Define area paths](../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+- [Define iteration paths or sprints](../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) 
+- [Add a custom field](../organizations/settings/work/add-custom-field.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)   
+- [Add a custom work item type](../organizations/settings/work/add-custom-wit.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)   
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ## 5-Minute Quickstarts  
 
-- [Define area paths](../organizations/settings/set-area-paths.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
-- [Define iteration paths or sprints](../organizations/settings/set-iteration-paths-sprints.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) 
+- [Define area paths](../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+- [Define iteration paths or sprints](../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) 
 
 ::: moniker-end
 
 ::: moniker range="vsts"
 ## Tutorials 
-- [Customize a project](../organizations/settings/work/customize-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)   
-- [Create and manage a process](../organizations/settings/work/manage-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) 
+- [Customize a project](../organizations/settings/work/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)   
+- [Create and manage a process](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) 
 
 ::: moniker-end
 
 ## Concepts
 
-- [About areas and iterations](../organizations/settings/about-areas-iterations.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)  
+- [About areas and iterations](../organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Differences between process models](../organizations/settings/work/import-process/differences.md) 
 - [Workflow states & state categories](../boards/work-items/workflow-and-state-categories.md)
-- [Inheritance process model](../organizations/settings/work/inheritance-process-model.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)   
+- [Inheritance process model](../organizations/settings/work/inheritance-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)   
 - [Hosted XML process model](../organizations/settings/work/hosted-xml-process-model.md)  
 - [On-premises XML process model](on-premises-xml-process-model.md)  
 
@@ -60,13 +60,13 @@ Add a custom field, a custom work item type (WIT) or modify an existing WIT. The
 Use the guidance provided in the following topics based on the process model or process template that you want to customize.  
 
 - **Inheritance process model**
-	- [Customize a project](../organizations/settings/work/customize-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)     
-	- [Create and manage a process](../organizations/settings/work/manage-process.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)    
+	- [Customize a project](../organizations/settings/work/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)     
+	- [Create and manage a process](../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)    
 
 - **Hosted XML process model**
-	- [Supported upgrade operations](../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
-	- [Clone a Hosted XML process to Inheritance](../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)  
-	- [Change a project from Hosted XML to Inheritance](../organizations/settings/work/change-process-from-hosted-to-inherited.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)  
+	- [Supported upgrade operations](../organizations/settings/work/upgrade-support-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
+	- [Clone a Hosted XML process to Inheritance](../organizations/settings/work/upgrade-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
+	- [Change a project from Hosted XML to Inheritance](../organizations/settings/work/change-process-from-hosted-to-inherited.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 	- [Customize a Hosted XML process](../organizations/settings/work/import-process/customize-process.md)  
     - [Import a process](../organizations/settings/work/import-process/import-process.md)
 
@@ -75,7 +75,7 @@ Use the guidance provided in the following topics based on the process model or 
     - [Add or modify a work item type](add-modify-wit.md)
 
 - **Process templates**
-    - [Upload or download a process template](../boards/work-items/guidance/manage-process-templates.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
+    - [Upload or download a process template](../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
     - [Customize a process template](./process-templates/customize-process.md)  
 
 ## Reference  

@@ -6,7 +6,8 @@ ms.prod: devops
 ms.technology: devops-analytics  
 ms.assetid: 9A16EDA7-6249-49E1-84A3-FE7550028E9F  
 ms.manager: douge
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013' 
 ms.date: 03/23/2018  
@@ -106,7 +107,7 @@ You open the built-in (work tracking datastore) CFD for your product or portfoli
 # [Previous navigation](#tab/previous-nav)
 You open the built-in (work tracking datastore) CFD for your product or portfolio backlog by choosing the image in the upper-right corner of your **Work>Backlogs** page. 
 
-![Open CFD, prev nav](/vsts/boards/boards/_img/kanban-basics-open-cfd.png)
+![Open CFD, prev nav](/azure/devops/boards/boards/_img/kanban-basics-open-cfd.png)
 
 --- 
 

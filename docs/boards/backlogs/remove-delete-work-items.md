@@ -128,7 +128,7 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 ::: moniker range="vsts"
 ## Prerequisites  
   
-* To change the work item type, delete, or remove work items, you must be a member of the Contributors group or be granted [Stakeholder access](/vsts/organizations/security/get-started-stakeholder) 
+* To change the work item type, delete, or remove work items, you must be a member of the Contributors group or be granted [Stakeholder access](/azure/devops/organizations/security/get-started-stakeholder) 
 	Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
 * To move work items to another project, you must be a member of the Project Administrators group or have the **Move work items out of this project** permission set to Allow. The Contributors group does not have this permission set at the project-level by default.
 * To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.
@@ -138,7 +138,7 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 ## Prerequisites  
   
-* To remove or delete work items, you must be a member of the Contributors group or be granted [Stakeholder access](/vsts/organizations/security/get-started-stakeholder) 
+* To remove or delete work items, you must be a member of the Contributors group or be granted [Stakeholder access](/azure/devops/organizations/security/get-started-stakeholder) 
 	Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
 * To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. The Contributors group has **Delete and restore work items** at the project-level set to **Allow** by default.
 
@@ -148,13 +148,13 @@ You can't change type, move work items, or delete/restore work items whose WITs 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 ## Prerequisites  
   
-* To remove work items, you must be a member of the Contributors group or be granted [Stakeholder access](/vsts/organizations/security/get-started-stakeholder) 
+* To remove work items, you must be a member of the Contributors group or be granted [Stakeholder access](/azure/devops/organizations/security/get-started-stakeholder) 
 * Or, you must have your **View work items in this node**, and your **Edit work items in this node** permissions set to **Allow** 
 * To delete work items, you must be a member of the Project Administrators group or have the **Delete work items in this project** permission set to Allow. For TFS 2015.1 and earlier versions, the Contributors group has **Delete work items in this project** at the project-level set to **Not set** by default. This setting causes the Contributors group to inherit the value from the closest parent that has it explicitly set.
 
 ::: moniker-end
 
-To learn more, see [Set permissions and access for work tracking](/vsts/organizations/security/set-permissions-access-work-tracking). 
+To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
 
 
 ::: moniker range="vsts"

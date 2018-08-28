@@ -19,13 +19,13 @@
   - name: Manage Analytics views
     href: ../analytics/analytics-views-manage.md
   - name: Configure burndown or burnup
-    href: ../dashboards/configure-burndown-burnup-widgets.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/configure-burndown-burnup-widgets.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: Configure cumulative flow 
-    href: ../dashboards/cumulative-flow.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/cumulative-flow.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: Configure lead/cycle time
-    href: ../dashboards/cycle-time-and-lead-time.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/cycle-time-and-lead-time.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: Configure velocity
-    href: ../dashboards/team-velocity.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../dashboards/team-velocity.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Data available
@@ -51,11 +51,11 @@
 - name: Reference
   items:
   - name: Work item field index
-    href: ../../boards/work-items/guidance/work-item-field.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../../boards/work-items/guidance/work-item-field.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: Analytics OData v4 endpoint
-    href: ../extend-analytics/data-model-analytics-service.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../extend-analytics/data-model-analytics-service.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
   - name: API versioning
-    href: ../extend-analytics/odata-api-version.md?toc=/vsts/report/analytics/toc.json&bc=/vsts/report/analytics/breadcrumb/toc.json
+    href: ../extend-analytics/odata-api-version.md?toc=/azure/devops/report/analytics/toc.json&bc=/azure/devops/report/analytics/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Dashboards

@@ -48,13 +48,13 @@ You [add users to the following security roles](../../pipelines/policies/set-per
 
 ## Deployment group security roles
 
-You [add users to the following roles](../../pipelines/policies/set-permissions.md#library) from the user context, **Build and Release** hub.  For information on adding and managing deployment groups, see [Deployment groups](/vsts/pipelines/release/deployment-groups). 
+You [add users to the following roles](../../pipelines/policies/set-permissions.md#library) from the user context, **Build and Release** hub.  For information on adding and managing deployment groups, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups). 
 
 [!INCLUDE [temp](_shared/deployment-group-roles.md)]
 
 ## Deployment pool security roles
 
-You [add users to the following roles](../../pipelines/policies/set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/vsts/pipelines/release/deployment-groups).   
+You [add users to the following roles](../../pipelines/policies/set-permissions.md) from the collection-level admin context, **Deployment Pools** page. To create and manage deployment pools, see [Deployment groups](/azure/devops/pipelines/release/deployment-groups).   
 
 [!INCLUDE [temp](_shared/deployment-pool-roles.md)]
 

@@ -15,7 +15,7 @@ With multi-select, you can perform several actions on several work items at once
 - Change the backlog priority   
 - Assign to a team member
 - Move to a sprint
-- [Map items or change the parent an item is linked to](/vsts/boards/backlogs/organize-backlog#mapping)
+- [Map items or change the parent an item is linked to](/azure/devops/boards/backlogs/organize-backlog#mapping)
 
 Multi-select of backlog work items requires TFS 2015.1 or later version.
 

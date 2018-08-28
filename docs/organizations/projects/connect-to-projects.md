@@ -351,7 +351,7 @@ In addition to connecting through a web browser, Visual Studio, Eclipse, Excel, 
 
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
-- [Eclipse: Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in) 
+- [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in) 
 - [Microsoft Test Manager](../../test/mtm/guidance-mtm-usage.md)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
 

@@ -115,10 +115,10 @@ Open admin settings for the organization or a collection.
 
 ::: moniker range="vsts"  
 
-0. Choose the ![](/vsts/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+0. Choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/vsts/_shared/_img/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](/azure/devops/_shared/_img/settings/open-admin-settings-vert.png)  
 
 0. Choose **Security**, the **Project Collection Administrators** group, and then **Members**. 
 
@@ -136,10 +136,10 @@ Open admin settings for the organization or a collection.
 
 # [Previous navigation](#tab/previous-nav)
 
-0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
+0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization Settings](/vsts/_shared/_img/settings/open-account-settings.png)  
+	> ![Open Organization Settings](/azure/devops/_shared/_img/settings/open-account-settings.png)  
 
 0.	Choose **Security**, **Project Collection Administrators** group, and then **Members**. 
 

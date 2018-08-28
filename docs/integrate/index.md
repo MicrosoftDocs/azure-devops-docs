@@ -39,11 +39,11 @@ Check out the quick starts to get you started:
 ## How-to Guides
 * [Authenticate with PATs](./get-started/authentication/pats.md)
 * [Authenticate with OAuth 2.0](./get-started/authentication/oauth.md)
-* [Create service hooks subscriptions programmatically](../service-hooks/create-subscription.md?toc=/vsts/integrate/toc.json)
+* [Create service hooks subscriptions programmatically](../service-hooks/create-subscription.md?toc=/azure/devops/integrate/toc.json)
 
 ## Reference
-* [Service hooks consumers and action reference](../service-hooks/consumers.md?toc=/vsts/integrate/toc.json)
-* [Service hooks events reference](../service-hooks/events.md?toc=/vsts/integrate/toc.json)
+* [Service hooks consumers and action reference](../service-hooks/consumers.md?toc=/azure/devops/integrate/toc.json)
+* [Service hooks events reference](../service-hooks/events.md?toc=/azure/devops/integrate/toc.json)
 
 ## Resources
 * [REST API reference](/rest/api/vsts/)

@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-<p><a href="/vsts/index">Azure DevOps Services</a>  /  Azure Settings</p>
+<p><a href="/azure/devops/index">Azure DevOps Services</a>  /  Azure Settings</p>
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure DevOps Settings Documentation</h1>
@@ -32,7 +32,7 @@ featureFlags:
                                 <a href="#index1"></a>
                                 <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/organizations/projects/index">
+                                        <a href="/azure/devops/organizations/projects/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -51,7 +51,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/security/index">
+                                        <a href="/azure/devops/organizations/security/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -70,13 +70,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/accounts/index">
+                                        <a href="/azure/devops/organizations/accounts/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_account-management.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_account-management.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -89,13 +89,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/settings/work/inheritance-process-model">
+                                        <a href="/azure/devops/organizations/settings/work/inheritance-process-model">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_config-tools.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_config-tools.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -108,13 +108,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/settings/scale/index">
+                                        <a href="/azure/devops/organizations/settings/scale/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_configure-teams.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_configure-teams.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -127,13 +127,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/billing/index">
+                                        <a href="/azure/devops/organizations/billing/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_billing.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_billing.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -146,13 +146,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/marketplace/index">
+                                        <a href="/azure/devops/marketplace/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_extensions.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_extensions.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -165,13 +165,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/notifications/index">
+                                        <a href="/azure/devops/notifications/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_alert.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_alert.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -184,7 +184,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/public/index">
+                                        <a href="/azure/devops/organizations/public/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -203,13 +203,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/service-hooks/index">
+                                        <a href="/azure/devops/service-hooks/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_service-hooks.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_service-hooks.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -222,7 +222,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/settings/index">
+                                        <a href="/azure/devops/organizations/settings/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -241,7 +241,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/articles/index">
+                                        <a href="/azure/devops/articles/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -268,7 +268,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />Index</a>
+                                                        <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />Index</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -290,7 +290,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
+                                                        <a class="barLink" href="/azure/devops/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
                                                     </div>
                                                 </div>
                                             </div>

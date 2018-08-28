@@ -215,7 +215,7 @@ See the separate [Process Templates](migration-processtemplates.md) page for det
 #### <a name= "VS403442" ></a> **VS403442**
 In order to migrate successfully, you must rename field *{TFSfieldReferenceName}*. Given name *{TFSfieldName}* is reserved for field *{VSTSfieldReferenceName}*.
 
-Sometimes your local collection may have a field whose name may conflict with VSTS system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
+Sometimes your local collection may have a field whose name may conflict with VSTS system field. To resolve this error, you must change name of your collection field. use *changefield* command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:newFieldName
@@ -224,7 +224,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 #### <a name= "VS403443" ></a> **VS403443**
 In order to migrate successfully, you must rename field *{TFSfieldReferenceName}* to *{VSTSfieldName}*. Given name for *{TFSfieldReferenceName}* is *{TFSfieldName}*
 
-Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json)
+Sometimes your local collection may have different name for a particular field. To resolve this error, use *changefield* command from [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName /name:VSTSfieldName
@@ -233,7 +233,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 #### <a name= "VS403444"> </a> **VS403444**
 In order to migrate successfully, you must set type of field *{TFSfieldReferenceName}* to *{Type}*. Given type for *{TFSfieldReferenceName}* is *{collectionType}*.
 
-Sometimes your local collection may have different type for a particular field. Presently [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) allows type change for only those fields which are either of HTML or PlainText type. If your field type is either HTML or PlainText, then you can change its type to required type using witadmin.
+Sometimes your local collection may have different type for a particular field. Presently [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) allows type change for only those fields which are either of HTML or PlainText type. If your field type is either HTML or PlainText, then you can change its type to required type using witadmin.
 
 ```cmdline
 witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName  /type:PlainText | HTML
@@ -242,7 +242,7 @@ witadmin changefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCol
 > If your field type is something different than HTML|PlainText and field data is not important or field is not being used in any project, then we recommend using witadmin to delete that field.
 
 > [!Important]
-> Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/vsts/reference/toc.json&bc=/vsts/reference/breadcrumb/toc.json) to delete a field will result in loss of field data across collection.
+> Using [witadmin](../reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json) to delete a field will result in loss of field data across collection.
 
 ```cmdline
 witadmin deletefield /collection:http://AdventureWorksServer:8080/tfs/DefaultCollection /n:TFSfieldReferenceName

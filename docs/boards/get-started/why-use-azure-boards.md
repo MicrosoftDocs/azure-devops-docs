@@ -87,7 +87,7 @@ With Azure Boards, you gain access to a number of tools to generate reports to s
 The first of these are [configurable dashboards](../../report/dashboards/dashboards.md) to which you add one or more widgets. You configure widgets to display the information and data you want, such as the following bug burndown widget. 
 
 > [!div class="mx-imgBorder"]  
-> ![Example bug burndown widget](/vsts/report/dashboards/_img/burndown-widget/burndownup-bug-burndown.png)  
+> ![Example bug burndown widget](/azure/devops/report/dashboards/_img/burndown-widget/burndownup-bug-burndown.png)  
 
 In addition to dashboards, you have access to the [Analytics service](../../report/analytics/what-is-analytics.md) which has been optimized for fast read-access and server-based aggregations. Using [Analytics views](../../report/analytics/what-are-analytics-views.md) and [Power BI](../../report/analytics/what-are-analytics-views.md), you can create highly-sophisticated reports on the project data of interest. 
 

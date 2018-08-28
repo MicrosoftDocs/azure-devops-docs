@@ -73,9 +73,9 @@ some or all of the items based on these estimates.
  
 
 > [!NOTE]  
-> Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json). 
+> Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
 >
-> For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../backlogs/overview.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json).  
+> For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../backlogs/overview.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).  
 
 
 ## Open your team's product backlog
@@ -225,7 +225,7 @@ When you need to change the order of an item, simply drag the item to its new lo
 
 Ordering and re-parenting backlog items requires that you don't nest items of the same type within each other. That is, you don't create product backlog items that are children of other product backlog items, or tasks that are children of tasks. You can only re-parent tasks under backlog items, backlog items under features, and features under epics. 
 
-If you receive the following message, [you can fix it by removing nested child items](../backlogs/resolve-backlog-reorder-issues.md?toc=/vsts/boards/backlogs/toc.json&bc=/vsts/boards/backlogs/breadcrumb/toc.json).
+If you receive the following message, [you can fix it by removing nested child items](../backlogs/resolve-backlog-reorder-issues.md?toc=/azure/devops/boards/backlogs/toc.json&bc=/azure/devops/boards/backlogs/breadcrumb/toc.json).
 
 ![Can't reorder with nested backlog items message](_img/nested_info.png)  
 -->
@@ -245,7 +245,7 @@ Now that you've defined your sprint plan, your team's ready to begin work on the
 
 Also, you can [monitor your burndown chart](sprint-burndown.md) to make sure your team remains on track throughout the sprint. 
 
-You can use [hotkeys and keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json) to navigate within the backlog list. 
+You can use [hotkeys and keyboard shortcuts](../backlogs/backlogs-keyboard-shortcuts.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json) to navigate within the backlog list. 
 -->
 
 

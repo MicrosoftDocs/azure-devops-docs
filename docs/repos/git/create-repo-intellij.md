@@ -28,7 +28,7 @@ To complete the steps in this guide you need:
 
 * A VSTS account. If you don't have a VSTS account, you can [sign up](../../organizations/accounts/create-organization-msa-or-work-student.md) for one for free. Each account includes free, unlimited private Git repositories.
 * IntelliJ IDEA installed on your machine. If you don't have it, [get IntelliJ IDEA](https://www.jetbrains.com/idea).
-* The VSTS plugin for IntelliJ. See [IntelliJ Plugin download page](/vsts/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
+* The VSTS plugin for IntelliJ. See [IntelliJ Plugin download page](/azure/devops/java/download-intellij-plug-in) for installation instructions. This plugin is compatible with IntelliJ IDEA Ultimate and Community editions, Android Studio, RubyMine, WebStorm, PhpStorm, PyCharm, AppCode, MPS, 0xDBE, and CLion.
 * Git command line tools.
   * To install Git for Windows, including Git Credential Manager, see [Install the Git Credential Manager - Windows](set-up-credential-managers.md#windows).
   * To install Git for macOS and Linux, see [Install the Git Credential Manager - macOS and Linux](set-up-credential-managers.md#macos-and-linux).
@@ -195,8 +195,8 @@ future traceability purposes.
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Check out the entire DeepSpace IntelliJ tutorial](/vsts/java/labs/e2eintellij)
+> [Check out the entire DeepSpace IntelliJ tutorial](/azure/devops/java/labs/e2eintellij)
 
 > [!div class="nextstepaction"]
-> [View the IntelliJ plugin FAQ](/vsts/java/intellij-faq)
+> [View the IntelliJ plugin FAQ](/azure/devops/java/intellij-faq)
 

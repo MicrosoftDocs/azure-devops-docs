@@ -42,7 +42,7 @@ We’ve also released a new hub dedicated to browsing and analyzing test runs ac
 
 ##Team settings API
 
-And finally, our API for settings such as team subscriptions to area paths and iterations, bug behavior, and capacity, is now in public preview. Documentation can be found at [https://visualstudio.microsoft.com/integrate/api/work/overview](https://visualstudio.microsoft.com/integrate/api/work/overview).
+And finally, our API for settings such as team subscriptions to area paths and iterations, bug behavior, and capacity, is now in public preview. Documentation can be found at [/azure/devops/integrate/](/azure/devops/integrate/).
 
 If you have any questions, feel free to reach out on Twitter ([@aaronbjork](https://twitter.com/aaronbjork)). If you have ideas on what you’d like to see us do next, head over to UserVoice to add your idea or vote for an existing one.
 

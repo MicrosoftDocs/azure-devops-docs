@@ -62,7 +62,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 
 ##Available data and reports 
 
-After getting connected you will see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. Details on the extension hub are available [here](/vsts/extend/extension-report). 
+After getting connected you will see an initial dashboard with details on all of your extensions. All data available in the Marketplace extension hub is available in the content pack. Details on the extension hub are available [here](/azure/devops/extend/extension-report). 
 
 The power BI content pack gives data for all extensions and you can use the filters to view data for an extension or use the extension report to compare data between extensions. 
 

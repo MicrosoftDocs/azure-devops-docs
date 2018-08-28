@@ -70,7 +70,7 @@ And, you might have noticed in the screenshot above that we made a small change 
 
 We are happy to announce two new integrations going live this sprint: Slack and Azuqua. [Slack](http://www.slack.com/) is a popular team collaboration service that helps teams be more productive by keeping all communications in one place (and easily searchable from virtually anywhere). [Azuqua](http://www.azuqua.com/) enables regular users to wire together complex business processes across multiple cloud services, including Facebook, Twitter, and Jira, without writing any code.
 
-To learn more about these and the 20+ other integrations, visit [Visual Studio Online Integrations](https://visualstudio.microsoft.com/en-us/explore/vso-integrations-directory-vs).
+To learn more about these and the 20+ other integrations, visit [Visual Studio Online Integrations](https://marketplace.visualstudio.com/vsts).
 
 ##Preview APIs for adding and updating files in source control
 

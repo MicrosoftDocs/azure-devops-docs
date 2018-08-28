@@ -29,7 +29,7 @@ Once you've [cloned your Hosted XML process to an inherited process](upgrade-hos
 
 You create, manage, and make customizations to processes from the **Settings>Process** pages. 
 
-0. Choose the ![](/vsts/_img/icons/gear_icon.png) settings icon and choose **Organization settings**. 
+0. Choose the ![](/azure/devops/_img/icons/gear_icon.png) settings icon and choose **Organization settings**. 
 	
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization Settings](_img/process/open-account-settings.png)   

@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/revisions?api-
 | Parameter | Type    | Default | Notes	
 |:----------|:--------|:--------|:--------------------------------------
 | URL
-| instance  | string  |         | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  |         | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | id        | int     |         | ID of the work item.
 | Query
 | api-version | string |        | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -59,7 +59,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/workitems/{id}/revisions/{rev
 | Parameter | Type    | Notes	
 |:----------|:--------|:--------------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | id        | int     | ID of the work item.
 | revision  | int     | Revision of the work item.<br/>When a work item is created, the revision is 0, and each time it's updated, the revision is incremented.
 | Query

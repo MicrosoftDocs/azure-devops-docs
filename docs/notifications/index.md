@@ -29,7 +29,7 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
  
 
 ## Step-by-Step Tutorials  
-- [Follow work & pull requests](../boards/work-items/follow-work-items.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Follow work & pull requests](../boards/work-items/follow-work-items.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
 - [Set your personal notifications](howto-manage-personal-notifications.md)
 
 
@@ -43,15 +43,15 @@ Stay up-to-date with changes as they occur by subscribing to events such as code
 - [Use @mentions to further discussion](at-mentions.md)
 - [Use #ID to link to work items](add-links-to-work-items.md) 
 - [Set team notifications](howto-manage-team-notifications.md)
-- [Microsoft Teams integration](../service-hooks/services/teams.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
-- [Get notified with Campfire](../service-hooks/services/campfire.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
-- [Get notified with Slack](../service-hooks/services//slack.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json)
+- [Microsoft Teams integration](../service-hooks/services/teams.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+- [Get notified with Campfire](../service-hooks/services/campfire.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
+- [Get notified with Slack](../service-hooks/services//slack.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json)
   
 ## Reference
 
 - [Default and supported notifications](oob-built-in-notifications.md)
 - [FAQs](faq-notifications.md) 
-- [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/vsts/notifications/toc.json&bc=/vsts/notifications/breadcrumb/toc.json) 
+- [Default permissions and access set for collaboration tools](../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/notifications/toc.json&bc=/azure/devops/notifications/breadcrumb/toc.json) 
 
 
 ## Resources 

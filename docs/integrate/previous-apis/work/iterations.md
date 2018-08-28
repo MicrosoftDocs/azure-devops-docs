@@ -27,7 +27,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetting
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | Query
@@ -51,7 +51,7 @@ GET https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSetting
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | iterationId  | string   | ID of the iteration.
@@ -70,7 +70,7 @@ POST https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSettin
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | Query
@@ -88,7 +88,7 @@ DELETE https://{instance}/DefaultCollection/{project}/{team}/_apis/work/TeamSett
 | Parameter  | Type     | Notes
 |:-----------|:---------|:-----------------------------------------------------
 | URL
-| instance   | string   | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string   | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project    | string   | Name or ID of the project.
 | team       | string   | Name or ID of the team. 
 | iterationId  | string   | ID of the iteration.

@@ -55,9 +55,9 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 <div class="ico48Link"><a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.team"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_vs-code.svg"><span>Visual Studio Code</span></a></div>
 <div class="ico48Link"><a href="../git/share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div>
 <div class="ico48Link"><a href="../git/share-your-code-in-git-xcode.md"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
-<div class="ico48Link"><a href="/vsts/java/download-eclipse-plug-in"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
+<div class="ico48Link"><a href="/azure/devops/java/download-eclipse-plug-in"><img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
 
-<div class="ico48Link"><a href="/vsts/java/download-intellij-plug-in"><img width="48" height="48" alt="" src="/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
+<div class="ico48Link"><a href="/azure/devops/java/download-intellij-plug-in"><img width="48" height="48" alt="" src="/media/logos/logo_intellij.svg"><span>IntelliJ</span></a></div>
 
 </div>
 

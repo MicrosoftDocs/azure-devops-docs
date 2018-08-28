@@ -26,14 +26,14 @@ Built with Java teams in mind, VSTS offers an open, cloud-hosted hub for Java De
 
 Get started with VSTS and Java using your IDE and your tools.
 
- - [Java DevOps with Azure](/azure/devops-project/azure-devops-project-java.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
- - [Android Studio plugin](../repos/git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
- - [Eclipse plugin](../repos/git/share-your-code-in-git-eclipse.md?toc=/vsts/java/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json)
- - [IntelliJ IDEA plugin](../repos/git/create-repo-intellij.md?toc=/vsts/java/toc.json&bc=/vsts/repos/git/breadcrumb/toc.json)
- - [Build Android apps](../pipelines/languages/android.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
- - [Build with Gradle](../pipelines/apps/java/build-gradle.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
- - [Build with Maven](../pipelines/apps/java/build-maven.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
- - [Manage Maven packages](../artifacts/get-started-maven.md??toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
+ - [Java DevOps with Azure](/azure/devops-project/azure-devops-project-java.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
+ - [Android Studio plugin](../repos/git/create-repo-intellij.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
+ - [Eclipse plugin](../repos/git/share-your-code-in-git-eclipse.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json)
+ - [IntelliJ IDEA plugin](../repos/git/create-repo-intellij.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json)
+ - [Build Android apps](../pipelines/languages/android.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
+ - [Build with Gradle](../pipelines/apps/java/build-gradle.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
+ - [Build with Maven](../pipelines/apps/java/build-maven.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
+ - [Manage Maven packages](../artifacts/get-started-maven.md??toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
 
 ## Videos
 
@@ -59,15 +59,15 @@ Check out the [Java ALM channel on YouTube](https://www.youtube.com/channel/UCJX
 
 Learn the basics of CI/CD for your Java app using VSTS and a variety of tools.
 
- - [Use VSTS with GitHub for Azure DevOps](/azure/devops-project/azure-devops-project-github.md?toc=/vsts/java/toc.json&bc=/vsts/java/breadcrumb/toc.json)
+ - [Use VSTS with GitHub for Azure DevOps](/azure/devops-project/azure-devops-project-github.md?toc=/azure/devops/java/toc.json&bc=/azure/devops/java/breadcrumb/toc.json)
 
 ## Reference
 
- - [Continuous Java testing with VSTS](/vsts/pipelines/test/continuous-test-java)
+ - [Continuous Java testing with VSTS](/azure/devops/pipelines/test/continuous-test-java)
 
 ## Resources
 
- - [VSTS CI/CD documentation](/vsts/pipelines/index)
+ - [VSTS CI/CD documentation](/azure/devops/pipelines/index)
  - [Get the IntelliJ plug-in](download-intellij-plug-in.md)
  - [Get the Eclipse plug-in](download-eclipse-plug-in.md)
  - [Get the Android Studio plug-in](download-android-studio-plug-in.md)

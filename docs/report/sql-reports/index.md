@@ -16,7 +16,7 @@ ms.date: 09/05/2017
 **TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013**  
 
 > [!IMPORTANT]  
-> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises TFS. If you don't have a reporting site and want to add it, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/vsts/report/sql-reports/toc.json).  
+> Integration with the data warehouse and SQL Server Reporting Services is only supported for on-premises TFS. If you don't have a reporting site and want to add it, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/sql-reports/toc.json).  
 > 
 > For information on what is supported for Azure DevOps Services, see [Dashboards and reports overview](../dashboards/overview.md). 
 
@@ -25,19 +25,19 @@ To learn about Azure DevOps Services/TFS Reporting Roadmap, read [Reporting road
 
 
 ## 5-Minute Quickstarts  
-- [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)  
+- [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)  
 
 
 ## Concepts 
 
-- [Choose data source and authoring tool](../dashboards/choose-source-data-authoring-tool.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)
-- [Components of the data warehouse](components-data-warehouse.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)  
+- [Choose data source and authoring tool](../dashboards/choose-source-data-authoring-tool.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)
+- [Components of the data warehouse](components-data-warehouse.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)  
 
 ## How-to Guides
 
-- [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)
-- [Manually process the data warehouse and cube](../admin/manually-process-data-warehouse-and-cube.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)
-- [View, organize, and configure reports using Report Manager](../admin/view-organize-configure-reports-using-report-manager.md?toc=/vsts/report/sql-reports/toc.json&bc=/vsts/report/sql-reports/breadcrumb/toc.json)
+- [Add reports to a team project](../admin/add-reports-to-a-team-project.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)
+- [Manually process the data warehouse and cube](../admin/manually-process-data-warehouse-and-cube.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)
+- [View, organize, and configure reports using Report Manager](../admin/view-organize-configure-reports-using-report-manager.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/toc.json)
 
   
 ## Reference

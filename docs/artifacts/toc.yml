@@ -39,17 +39,17 @@
     - name: NuGet
       items:
       - name: Restore Azure Artifacts NuGet packages
-        href: /vsts/pipelines/packages/nuget-restore?toc=/vsts/artifacts/toc.json
+        href: /azure/devops/pipelines/packages/nuget-restore?toc=/azure/devops/artifacts/toc.json
       - name: Publish Azure Artifacts NuGet packages
-        href: /vsts/pipelines/targets/nuget?toc=/vsts/artifacts/toc.json
+        href: /azure/devops/pipelines/targets/nuget?toc=/azure/devops/artifacts/toc.json
     - name: npm
       items:
       - name: Use Azure Artifacts npm packages
-        href: /vsts/pipelines/targets/npm?toc=/vsts/artifacts/toc.json
+        href: /azure/devops/pipelines/targets/npm?toc=/azure/devops/artifacts/toc.json
     - name: Maven
       items:
       - name: Use Azure Artifacts Maven packages
-        href: /vsts/pipelines/packages/maven?toc=/vsts/artifacts/toc.json
+        href: /azure/devops/pipelines/packages/maven?toc=/azure/devops/artifacts/toc.json
   - name: Use feeds
     items:
     - name: Create a feed
@@ -117,13 +117,13 @@
     - name: Use symbols in WinDbg
       href: symbols/debug-with-symbols-windbg.md
     - name: Publish symbols
-      href: /vsts/pipelines/symbols/index?toc=/vsts/artifacts/toc.json
+      href: /azure/devops/pipelines/symbols/index?toc=/azure/devops/artifacts/toc.json
     - name: Setting up GitHub SourceLinking
       href: symbols/setting-up-github-sourcelinking.md
   - name: Set up upstream sources
     href: how-to/set-up-upstream-sources.md
   - name: Set up Jenkins + NuGet
-    href: /vsts/pipelines/packages/jenkins?toc=/vsts/artifacts/toc.json
+    href: /azure/devops/pipelines/packages/jenkins?toc=/azure/devops/artifacts/toc.json
   - name: Use badges to share your packages
     href: vsts-package-badges.md
   - name: Automatically delete old package versions

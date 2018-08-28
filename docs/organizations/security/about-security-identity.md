@@ -63,9 +63,9 @@ to generate tokens for:
 		and Azure Active Directory features like multi-factor authentication 
 	*	Accessing [REST APIs for Azure DevOps and TFS](../../integrate/get-started/rest/basics.md)
 
-*	[OAuth](/vsts/integrate/get-started/Authentication/oauth) 
-to generate tokens for accessing [REST APIs](/vsts/integrate/get-started/rest/basics). The [Accounts](/vsts/integrate/api/shared/accounts) 
-and [Profiles](/vsts/integrate/api/shared/profiles) 
+*	[OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
+to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/azure/devops/integrate/api/shared/accounts) 
+and [Profiles](/azure/devops/integrate/api/shared/profiles) 
 APIs support only OAuth. 
 
 *	[SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 

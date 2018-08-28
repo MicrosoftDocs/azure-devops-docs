@@ -7,7 +7,7 @@
 - name: Quickstarts
   items:
   - name: Build OSS repositories
-    href: ../../pipelines/build/ci-public.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
+    href: ../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Create a public project
     href: create-public-project.md
   - name: Invite users to contribute 
@@ -15,7 +15,7 @@
   - name: Make a project public
     href: make-project-public.md
   - name: Share your project vision
-    href: ../../project/wiki/project-vision-status.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
+    href: ../../project/wiki/project-vision-status.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: Browse code, download code 
     href: browse-code-public.md  
   - name: View and filter work items
@@ -33,7 +33,7 @@
   - name: View build and release pipelines 
     href: view-build-release-public.md
   - name: Provide Stakeholders access to edit pipelines 
-    href: ../../organizations/security/provide-stakeholder-pipeline-access.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
+    href: ../../organizations/security/provide-stakeholder-pipeline-access.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
   - name: View a project page or dashboard
     href: view-project-dashboard-public.md
   - name: View project Wikis
@@ -51,7 +51,7 @@
   - name: Feature differences for non-members
     href: feature-differences.md 
   - name: Extensions and public project support 
-    href: ../../extend/develop/public-project.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
+    href: ../../extend/develop/public-project.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json
 - name: Resources
   items:
   - name: Git Repositories

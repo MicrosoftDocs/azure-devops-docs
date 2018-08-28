@@ -35,16 +35,16 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 **Ctrl+Alt,a**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to ![admin link](../../boards/_img/icons/gear_icon.png) admin link  
 **Ctrl+Alt,h**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to ![help link](../../boards/_img/icons/help.png) help link  
 **Ctrl+Alt,s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box<br/><br/>
-**Ctrl+Alt,**![Down arrow](/vsts/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next section   
-**Ctrl+Alt,**![Up arrow](/vsts/boards/_img/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to previous section   
+**Ctrl+Alt,**![Down arrow](/azure/devops/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next section   
+**Ctrl+Alt,**![Up arrow](/azure/devops/boards/_img/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;Move focus to previous section   
 
 </td>
 <td width="50%">
 
 <p>**Navigate within lists**</p>
 **Tab**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus  
-![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](/vsts/boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
-![Up/Down arrow](/vsts/boards/_img/icons/Arrow_Up.png) ![ ](/vsts/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
+![Left/right arrow](../../boards/_img/icons/Arrow_Next.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right  
+![Up/Down arrow](/azure/devops/boards/_img/icons/Arrow_Up.png) ![ ](/azure/devops/boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down  
 **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of list  
 **Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to bottom of list<br/>
 **Ctrl+**![Up/Down arrow](../../boards/_img/icons/Arrow_Up.png) ![ ](../../boards/_img/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;Move item up/down within list  

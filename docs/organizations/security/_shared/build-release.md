@@ -17,56 +17,56 @@ ms.topic: include
 <tr>
 <td align="left">View build and release pipelines 
 </td>
-<td>![checkmark](/vsts/_img/icons/preview.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/preview.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">Define builds with continuous integration
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
 <tr>
 <td align="left">Define releases, manage deployments, manage releases with Release Management
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td> </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">Approve releases
 </td>
-<td>![preview](/vsts/_img/icons/checkmark.png)</td>
+<td>![preview](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">Package Management (5 users free)
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 
@@ -74,33 +74,33 @@ ms.topic: include
 <tr>
 <td align="left">Queue builds, edit build quality
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td> </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
 <tr>
 <td align="left">Manage build queues and build qualities
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
 <tr>
 <td align="left">Manage build retention policies, delete and destroy builds
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
@@ -108,67 +108,67 @@ ms.topic: include
 <tr>
 <td align="left">Administer build permissions
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 <td>  </td>
 </tr>
 
 <tr>
 <td align="left">Manage release permissions
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">Create and edit task groups 
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">Manage task group permissions
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">Can view library items such as variable groups 
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 <tr>
 <td align="left">Use and manage library items such as variable groups 
 </td>
-<td>![preview](/vsts/_img/icons/preview.png)</td>
+<td>![preview](/azure/devops/_img/icons/preview.png)</td>
 <td>  </td>
 <td>  </td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
-<td>![checkmark](/vsts/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
+<td>![checkmark](/azure/devops/_img/icons/checkmark.png)</td>
 </tr>
 
 

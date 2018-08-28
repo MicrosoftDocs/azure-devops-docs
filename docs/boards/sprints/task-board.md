@@ -119,7 +119,7 @@ During your daily Scrum, you can filter your task board to help focus on items o
 Use the Person filter when you want to focus on work assigned to individual team members.
 
 > [!TIP]    
->If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../project/navigation/go-to-project-repo.md?toc=/vsts/boards/sprints/toc.json&bc=/vsts/boards/sprints/breadcrumb/toc.json). 
+>If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
 
 <a id="show-item-progress">  </a>
 ## Show progress on items

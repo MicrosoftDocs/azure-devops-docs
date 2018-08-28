@@ -95,7 +95,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_kanban.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_kanban.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -114,7 +114,7 @@ Tutorials, references, and other documentation show you how to configure and man
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_scrum.svg" alt="" />
+                                                                <img src="/azure/devops/_img/index/i_scrum.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">

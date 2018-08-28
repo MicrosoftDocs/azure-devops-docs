@@ -20,7 +20,7 @@ Visual Studio Team Explorer Everywhere (TEE) is a plug-in for [Eclipse](https://
 you to work with Team Foundation Server (TFS) and Visual Studio Team Services (VSTS) using both Team Foundation Version Control (TFVC) 
 and Git version control systems. 
 
-For information on connecting to a VSTS Git repo from Eclipse with TEE, read [Share your code with Eclipse and VSTS Git](/vsts/repos/git/share-your-code-in-git-eclipse).
+For information on connecting to a VSTS Git repo from Eclipse with TEE, read [Share your code with Eclipse and VSTS Git](/azure/devops/repos/git/share-your-code-in-git-eclipse).
 
 ## Eclipse Update Site for Latest Release
 The latest release of [TEE](https://marketplace.eclipse.org/content/team-explorer-everywhere) can always be installed in Eclipse using this update site URL:

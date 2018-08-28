@@ -80,7 +80,7 @@ Code review policies can be used to set a minimum number of reviewers for pull r
 
 ##OAuth support for accessing Git repos on VSO
 
-Third-party tools and services can now access Git repositories hosted in Visual Studio Online via the "vso.code" or "vso.code_write" OAuth scopes. This enables source code access from standard Git tools and enables clone, fetch, and push operations. Previously, enabling access was available only through our REST API. See [Authorize access with OAuth 2.0](https://visualstudio.microsoft.com/integrate/get-started/auth/oauth) for more details.
+Third-party tools and services can now access Git repositories hosted in Visual Studio Online via the "vso.code" or "vso.code_write" OAuth scopes. This enables source code access from standard Git tools and enables clone, fetch, and push operations. Previously, enabling access was available only through our REST API. See [Authorize access with OAuth 2.0](/azure/devops/integrate/) for more details.
 
 ##New filtering options for Git service hook events
 

@@ -28,7 +28,7 @@ GET https://{instance}/DefaultCollection/_apis/build/queues?api-version={version
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 
@@ -43,7 +43,7 @@ GET https://{instance}/DefaultCollection/_apis/build/queues/{queueId}?api-versio
 | Parameter | Type   | Notes
 |:----------|:-------|:------------
 | URL
-| instance  | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | queueId   | int    | ID of the queue
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.

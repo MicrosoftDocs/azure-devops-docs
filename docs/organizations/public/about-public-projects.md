@@ -53,7 +53,7 @@ To contribute to a project by adding or modifying code, work items, pipelines, o
 * [Share your code](../../repos/git/gitquickstart.md)
 
 **To define pipelines:** 
-* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)
+* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
 
 ## Migrate a private project to public
 

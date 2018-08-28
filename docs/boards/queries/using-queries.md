@@ -244,7 +244,7 @@ That's the basics about using queries. For an index of query examples, see [Crea
 - [Adhoc versus managed queries](adhoc-vs-managed-queries.md)  
 - [Add work items](../backlogs/add-work-items.md)  
 - [Chart a flat-list query](../../report/dashboards/charts.md)  
-- [Change column options](../backlogs/set-column-options.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 - [Define a query as a hyperlink](define-query-hyperlink.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)

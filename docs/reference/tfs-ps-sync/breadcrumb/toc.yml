@@ -3,5 +3,5 @@
   topicHref: /tfs/index
   items: 
   - name: Project Server Integration
-    tocHref:  /vsts/reference/tfs-ps-sync/
+    tocHref: /azure/devops/tfs-ps-sync/
     topicHref: /azure/devops/reference/tfs-ps-sync/index

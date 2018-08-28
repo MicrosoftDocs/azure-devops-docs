@@ -40,7 +40,7 @@ Content-Type: application/octet-stream
 | Parameter | Type    | Notes	
 |:----------|:--------|:------------------------------
 | URL
-| instance  | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance  | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | Query
 | api-version| string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
 | filename  | string  | The name of the file in the attachment store (typically the same as the name of the source of the attachment).
@@ -121,7 +121,7 @@ GET https://{instance}/DefaultCollection/_apis/wit/attachments/{attachment}?api-
 | Parameter  | Type    | Notes	
 |:-----------|:--------|:------------------------------
 | URL
-| instance   | string  | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance   | string  | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | attachment | GUID    | ID of the attachment to download.
 | Query
 | api-version| string  | [Version](../../concepts/rest-api-versioning.md) of the API to use.

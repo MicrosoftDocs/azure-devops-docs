@@ -46,15 +46,15 @@ For anyone to access a team project, you must add them to a security group. For 
 - [About permissions and groups](about-permissions.md)  
 - [About security roles](about-security-roles.md)  
 - [About access levels](access-levels.md)  
-- [Azure Active Directory groups (Azure DevOps)](../accounts/access-with-azure-ad.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json)
-- [Active Directory groups (TFS)](/tfs/server/admin/setup-ad-groups?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) 
+- [Azure Active Directory groups (Azure DevOps)](../accounts/access-with-azure-ad.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json)
+- [Active Directory groups (TFS)](/tfs/server/admin/setup-ad-groups?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
 - [Security glossary](security-glossary.md) 
 
 ## How-to Guides
 
-- [Set Git branch permissions](../../repos/git/branch-permissions.md?toc=/vsts/organizations/organizations/security/toc.json&bc=/vsts/organizations/organizations/security/breadcrumb/toc.json  ) 
+- [Set Git branch permissions](../../repos/git/branch-permissions.md?toc=/azure/devops/organizations/organizations/security/toc.json&bc=/azure/devops/organizations/organizations/security/breadcrumb/toc.json  ) 
 - [Set build and release permissions](../../pipelines/policies/set-permissions.md) 
-- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) 
+- [Set permissions and access for work tracking](set-permissions-access-work-tracking.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
 - [Change access levels (TFS)](change-access-levels.md)
 
 ## Reference

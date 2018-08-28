@@ -26,7 +26,7 @@ GET https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/users?api-ver
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | roomId      | int    | ID of the team room.
 | Query
 | api-version | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -41,7 +41,7 @@ GET https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/users/{userId
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | roomId      | int    | ID of the team room.
 | userId      | int    | ID of the user.
 | Query
@@ -67,7 +67,7 @@ Content-Type: application/json
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | roomId      | int    | ID of the team room.
 | userId      | int    | ID of the [authenticated user](../shared/profiles.md).
 | Query
@@ -84,7 +84,7 @@ DELETE https://{instance}/DefaultCollection/_apis/chat/rooms/{roomId}/users/{use
 | Parameter   | Type   | Notes
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------
 | URL
-| instance    | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance    | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | roomId      | int    | ID of the team room.
 | userId      | int    | ID of the [authenticated user](../shared/profiles.md).
 | Query

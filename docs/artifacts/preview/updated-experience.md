@@ -1,3 +1,3 @@
 ---
-redirect_url: /vsts/artifacts/index
+redirect_url: /azure/devops/artifacts/index
 ---

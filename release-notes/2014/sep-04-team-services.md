@@ -59,7 +59,7 @@ You all gave us a ton of feedback on our first preview of the v1.0 REST APIs tha
 -New metadata APIs to enumerate work item types, link types, categories and fields
 -Less verbose JSON objects
 
-[Documentation](https://visualstudio.microsoft.com/integrate/reference/reference-vso-work-item-overview-vsi) has been updated so give it a try and let us know what you think.
+[Documentation](/azure/devops/integrate/) has been updated so give it a try and let us know what you think.
 
 ##Event and resource versioning within service hooks
 

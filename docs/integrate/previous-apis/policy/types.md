@@ -28,7 +28,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/policy/types?api-versio
 | Parameter     | Type   | Notes
 |:--------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance      | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project       | string | The name or ID of the project.
 | Query
 | api-version   | string | [Version](../../concepts/rest-api-versioning.md) of the API to use.
@@ -45,7 +45,7 @@ GET https://{instance}/defaultcollection/{project}/_apis/policy/types/{id}?api-v
 | Parameter     | Type   | Notes
 |:--------------|:-------|:----------------------------------------------------------------------------------------------------------------------------
 | URL
-| instance      | string | [VS Team Services account](/vsts/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/vsts/integrate/get-started/rest/basics) ({server:port}).
+| instance      | string | [VS Team Services account](/azure/devops/integrate/get-started/rest/basics) ({account}.visualstudio.com) or [TFS server](/azure/devops/integrate/get-started/rest/basics) ({server:port}).
 | project       | string | The name or ID of the project.
 | id            | guid   | The ID of the policy type.
 | Query

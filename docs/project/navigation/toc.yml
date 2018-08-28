@@ -1,5 +1,5 @@
 - name: Navigation basics 
-  href: index.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json 
+  href: index.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
   items:
   - name: Open a service, page, or settings
     href: go-to-service-page.md   
@@ -22,7 +22,7 @@
   - name: Go mobile 
     href: mobile-work.md  
   - name: Set your preferences  
-    href: ../../organizations/settings/set-your-preferences.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigation/breadcrumb/toc.json 
+    href: ../../organizations/settings/set-your-preferences.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
   - name: Glossary
     href: glossary.md  
 - name: Resources

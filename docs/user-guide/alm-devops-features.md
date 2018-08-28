@@ -814,7 +814,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Frequent on-line feature updates</b></p>
-<p>Check the [News](https://visualstudio.microsoft.com/news-overview-vs) for product updates, or read about them by accessing the News link in your web portal.</p>
+<p>Check the [News](/visualstudio/releasenotes/vs2017-relnotes) for product updates, or read about them by accessing the News link in your web portal.</p>
 
  <br/>
 
@@ -2789,7 +2789,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 ## Related notes
 
 We add new features frequently. We'll work to keep this list up-to-date. Other resources you might want to bookmark:
-- [Azure DevOps Services - Features update](/vsts/release-notes/)
+- [Azure DevOps Services - Features update](/azure/devops/release-notes/)
 - [Microsoft devops blog](https://blogs.msdn.microsoft.com/devops/)  
 - [Brian Harry's blog](https://blogs.msdn.microsoft.com/bharry/)
 

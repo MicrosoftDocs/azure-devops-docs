@@ -1184,7 +1184,7 @@ By default, the team project level and collection level Readers groups have only
           <li>Push directly to branches that have branch policies set</li>
         </ul>
         <br>
-        <b>Applies to TFS 2015 through TFS 2018 Update 2. (In Azure DevOps it is replaced with the following two permissions](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection); **Bypass policies when completing pull requests** and **Bypass policies when pushing**.)</b>
+        <b>Applies to TFS 2015 through TFS 2018 Update 2. (In Azure DevOps it is replaced with the following two permissions](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection); **Bypass policies when completing pull requests** and **Bypass policies when pushing**.)</b>
 		</td>
 	</tr>
 	<tr>

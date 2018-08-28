@@ -29,7 +29,7 @@
   - name: Approve extension requests
     href: approve-extensions.md
   - name: Respond to Marketplace extension reviews
-    href: ../extend/publish/manage-ratings-reviews.md?toc=/vsts/marketplace/toc.json&bc=/vsts/marketplace/breadcrumb/toc.json 
+    href: ../extend/publish/manage-ratings-reviews.md?toc=/azure/devops/marketplace/toc.json&bc=/azure/devops/marketplace/breadcrumb/toc.json 
   - name: Uninstall or disable extensions
     href: uninstall-disable-extensions.md
   - name: Change number of paid users for extensions for TFS

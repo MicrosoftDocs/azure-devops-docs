@@ -174,7 +174,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 
 #### Related topics
 
-- [Change column options](../backlogs/set-column-options.md?toc=/vsts/boards/queries/toc.json&bc=/vsts/boards/queries/breadcrumb/toc.json)
+- [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 - [Set personal or team favorites](../../project/navigation/set-favorites.md)  
 - [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
 

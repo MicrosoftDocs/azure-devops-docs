@@ -22,7 +22,7 @@ Create a public project, make an existing project public, or work in a public pr
 
 ## 5-Minute Quickstarts  
 
-* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json)
+* [Build OSS repositories](../../pipelines/build/ci-public.md?toc=/azure/devops/organizations/public/toc.json&bc=/azure/devops/organizations/public/breadcrumb/toc.json)
 * [Create a public project](create-public-project.md)
 * [Invite users to contribute to your public project](invite-users-public.md)
 * [Make a project public](make-project-public.md)

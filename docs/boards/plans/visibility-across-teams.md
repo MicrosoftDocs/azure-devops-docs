@@ -169,7 +169,7 @@ While the management teams you configure can use the Kanban board to monitor fea
 With the multi-team Kanban board view, you can:
 - View and update the status of work items
 - Drill down to see the status of child user stories or PBIs
-- [Filter product and portfolio backlogs](/vsts/boards/backlogs/filter-backlogs) to view items by feature team, feature owner, tag, or expected delivery date
+- [Filter product and portfolio backlogs](/azure/devops/boards/backlogs/filter-backlogs) to view items by feature team, feature owner, tag, or expected delivery date
 - Monitor the [cumulative flow](../../report/dashboards/cumulative-flow.md) of all features being worked on by your teams
 - Organize features into swimlanes to track work that you want to expedite
 

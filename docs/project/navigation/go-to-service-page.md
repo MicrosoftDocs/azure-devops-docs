@@ -23,7 +23,7 @@ From a supported web browser&mdash;such as the latest versions of Edge, Chrome, 
 You can manage source code, plan and track work, define builds, run tests, and manage releases. 
 
 ::: moniker range="vsts"
-If you don't have a project yet, [create one](../../user-guide/sign-up-invite-teammates.md?toc=/vsts/project/navigation/toc.json&bc=/vsts/project/navigationbreadcrumb/toc.json). If you don't have access to the project, [get invited to the team](../../organizations/security/add-users-team-project.md).
+If you don't have a project yet, [create one](../../user-guide/sign-up-invite-teammates.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigationbreadcrumb/toc.json). If you don't have access to the project, [get invited to the team](../../organizations/security/add-users-team-project.md).
 
 ::: moniker-end
 

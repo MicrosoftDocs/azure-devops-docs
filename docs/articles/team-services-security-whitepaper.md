@@ -597,8 +597,8 @@ your review and education. These include:
 
 -   [VSTS home page](https://visualstudio.microsoft.com/)
 -   [VSTS status](https://blogs.msdn.com/b/vsoservice/)
--   [Developer Services privacy statement](http://visualstudio.microsoft.com/support/privacy-policy-vs)
--   [Developer Services Agreement](http://visualstudio.microsoft.com/support/terms-of-service-vs)
+-   [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
+-   [Developer Services Agreement](/azure/devops/user-guide/services)
 -   [Brian Harry's blog](http://blogs.msdn.com/b/bharry/)
 -   [Azure trust center](http://azure.microsoft.com/support/trust-center/)
 -   [Microsoft Security Development Lifecycle](http://www.microsoft.com/sdl/)

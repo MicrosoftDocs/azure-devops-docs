@@ -28,9 +28,9 @@ Other highlights include:
 
 ### Avoid overwrites and protect performance using repository settings
 
-In this Update, you’ll find two new [repository settings](/vsts/git/concepts/repository-settings) to help keep Git running smoothly.
+In this Update, you’ll find two new [repository settings](/azure/devops/git/concepts/repository-settings) to help keep Git running smoothly.
 
-**Case enforcement** switches the server from its default case-sensitive mode, where “File.txt” and “file.txt” are distinct, to a Windows and macOS-friendly mode where “File.txt” and “file.txt” are the same file. This setting affects files, folders, branches, and tags. It also prevents contributors from accidentally introducing [case-only differences](/vsts/git/concepts/case-sensitivity). Enabling case enforcement is recommended when most of your contributors are running Windows or macOS.
+**Case enforcement** switches the server from its default case-sensitive mode, where “File.txt” and “file.txt” are distinct, to a Windows and macOS-friendly mode where “File.txt” and “file.txt” are the same file. This setting affects files, folders, branches, and tags. It also prevents contributors from accidentally introducing [case-only differences](/azure/devops/git/concepts/case-sensitivity). Enabling case enforcement is recommended when most of your contributors are running Windows or macOS.
 
 **Limit file sizes** allows you to prevent new or updated files from exceeding a size limit you set. The greater number of large files that exist in a Git repository’s history, the worse clone and fetch operation performance will be. This setting prevents accidental introduction of these files.
 
@@ -38,12 +38,12 @@ In this Update, you’ll find two new [repository settings](/vsts/git/concepts/r
 
 ### Focus on important work using the Work Items hub
 
-While queries, backlogs, and boards give you a number of ways to see your work, we want the work that is most important to you to be right at your fingertips. After a 6-month preview of the **Work Items** hub, it’s now available to everyone. We have iterated on the hub a lot since the start of [preview](/vsts/release-notes/2017/aug-28-team-services#work-items-hub), and below includes a few of the changes we’ve made.
+While queries, backlogs, and boards give you a number of ways to see your work, we want the work that is most important to you to be right at your fingertips. After a 6-month preview of the **Work Items** hub, it’s now available to everyone. We have iterated on the hub a lot since the start of [preview](/azure/devops/release-notes/2017/aug-28-team-services#work-items-hub), and below includes a few of the changes we’ve made.
 
 The **Work Items** Hub now has 4 person-centric pivots to allow you to focus on what is important to you, as well as 3 project-centric views to get a better idea of your project’s work.
 
 - **Assigned to me** - all work items assigned to you in the project in the order they’re last updated
-- **Following** - all work items you’re [following](/vsts/boards/work-items/follow-work-items)
+- **Following** - all work items you’re [following](/azure/devops/boards/work-items/follow-work-items)
 - **Mentioned** - all work items you’ve been mentioned in, in the last 30 days
 - **My activity** - all work items that you have recently viewed or updated
 - **Recently updated** - all work items in your project that have been most recently updated
@@ -80,7 +80,7 @@ The Azure DevOps Project enables you to setup a fully configured CI/CD pipeline 
 
 ### Improve release times by partially downloading artifacts
 
-Previously, as part of a deployment phase, you could choose to either download all the artifacts or skip them all. Now you can choose the artifacts that need to be downloaded. This can save time by ensuring the agent only has to download what it needs. See the [release artifacts](/vsts/pipelines/release/artifacts#download) documentation for more information. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/13396200-only-download-artifacts-required-for-task-executio).
+Previously, as part of a deployment phase, you could choose to either download all the artifacts or skip them all. Now you can choose the artifacts that need to be downloaded. This can save time by ensuring the agent only has to download what it needs. See the [release artifacts](/azure/devops/pipelines/release/artifacts#download) documentation for more information. This feature was prioritized based on a [suggestion](https://visualstudio.uservoice.com/forums/330519-visual-studio-team-services/suggestions/13396200-only-download-artifacts-required-for-task-executio).
 
 > [!div class="mx-imgBorder"]
 ![Partially download artifacts](_img/131_07.png)

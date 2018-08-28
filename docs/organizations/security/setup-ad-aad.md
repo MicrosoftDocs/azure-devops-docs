@@ -38,7 +38,7 @@ Use this topic to access articles that will show you how to:
 * [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-aad.md)
 * [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-aad.md)
 * [Delete users from Azure DevOps connected to Azure AD](../../organizations/accounts/delete-users-from-services-aad.md)
-* [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/vsts/organizations/security/toc.json&bc=/vsts/organizations/security/breadcrumb/toc.json) 
+* [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
 
 
 ## Set up Active Directory for use with TFS

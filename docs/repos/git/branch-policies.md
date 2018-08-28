@@ -177,7 +177,7 @@ When the required reviewers approve the code, you can complete the pull request.
 >- When completing a pull request, opt-in to override policies and complete a pull request even if the current set of branch policies is not satisfied.
 >- Push directly to a branch even if that branch has branch policies set. Note that when a user with this permission makes a push that would override branch policy, the push automatically bypasses branch policy with no opt-in step or warning.
 >
->[In VSTS](/vsts/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission is removed and its functionality divided into the following two new permissions:
+>[In VSTS](/azure/devops/release-notes/2018/jul-10-vsts#allow-bypassing-branch-policies-without-giving-up-push-protection), the **Exempt from policy enforcement** permission is removed and its functionality divided into the following two new permissions:
 >
 >- **Bypass policies when completing pull requests**
 >- **Bypass policies when pushing**

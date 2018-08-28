@@ -178,7 +178,7 @@ To learn more about user accounts, permissions, and access, see [Security & iden
 You can add work items from various clients, such as: 
 - From the web portal backlog pages, you can add user stories, backlog items, features, and epics from the [quick add panel](../backlogs/create-your-backlog.md). 
 - From the [Team Explorer add-in to Visual Studio](../../user-guide/work-team-explorer.md), you can add most types of work items from the Work page.  
-- If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](/vsts/java/download-eclipse-plug-in). 
+- If you work in [Eclipse](https://eclipse.org/home/newcomers.php), you can create work items using [Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in). 
 - From Test Manager or the web portal, you can [create test cases that automatically link to a user story or product backlog item](../../test/create-test-cases.md).
 - You can create bugs from the web portal, Visual Studio, or when [testing with Microsoft Test Manager](https://msdn.microsoft.com/library/dd286731.aspx).  
 
@@ -188,4 +188,4 @@ For an overview of all clients that connect to your project, see [Tools and clie
 ## Try this next 
 
 > [!div class="nextstepaction"]
-> [Add a work item](../backlogs/add-work-items.md?toc=/vsts/boards/work-items/toc.json&bc=/vsts/boards/work-items/breadcrumb/toc.json)
+> [Add a work item](../backlogs/add-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)

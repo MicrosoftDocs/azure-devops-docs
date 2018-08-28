@@ -209,7 +209,7 @@ The following reports and dashboards are only available in TFS:
 
 And, available today only in Azure DevOps Services:
 * A [PowerBI connector](../report/powerbi/overview.md) which provides a nice combination of simplicity and power. We plan to make it available in TFS in a future release.
-* [Analytics](/vsts/report/analytics/) which is the reporting platform for Azure DevOps Services, which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the Azure DevOps Services suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
+* [Analytics](/azure/devops/report/analytics/) which is the reporting platform for Azure DevOps Services, which answer quantitative questions about the past or present state of your projects. This service provides a concise data model over the Azure DevOps Services suite. Built for reporting, the Analytics Service is optimized for fast read-access and server-based aggregations. We plan to make it available in TFS in a future release.
 
 ## Related articles
  

@@ -45,8 +45,8 @@ Using OData, you can directly query the Analytics Service for Azure DevOps from 
 
  
 ## Concepts
-- [Data available in the Analytics Service](../analytics/data-available-in-analytics.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json)
-- [Performance and latency](../analytics/performance-latency.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json)
+- [Data available in the Analytics Service](../analytics/data-available-in-analytics.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
+- [Performance and latency](../analytics/performance-latency.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
 - [Query guidelines](odata-query-guidelines.md) 
 
 
@@ -56,7 +56,7 @@ Understand Agile process data
 -->
 
 ## How-to Guides
-- [Set permissions (Security)](../analytics/analytics-security.md?toc=/vsts/report/extend-analytics/toc.json&bc=/vsts/report/extend-analytics/breadcrumb/toc.json)
+- [Set permissions (Security)](../analytics/analytics-security.md?toc=/azure/devops/report/extend-analytics/toc.json&bc=/azure/devops/report/extend-analytics/breadcrumb/toc.json)
 
 
 
