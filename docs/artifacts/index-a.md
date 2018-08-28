@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-<p><a href="/vsts/index">Azure DevOps Services</a>  /  Azure Artifacts</p>
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Artifacts</p>
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure Artifacts Documentation</h1>
@@ -31,13 +31,13 @@ featureFlags:
                                 <a href="#index1"></a>
                                 <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/artifacts/get-started-nuget">
+                                        <a href="/azure/devops/artifacts/get-started-nuget">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/artifacts/_img/index/logo_nuget.svg" alt="" />
+                                                                <img src="_img/index/logo_nuget.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -50,13 +50,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/artifacts/get-started-npm">
+                                        <a href="/azure/devops/artifacts/get-started-npm">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/artifacts/_img/index/logo_npm.svg" alt="" />
+                                                                <img src="_img/index/logo_npm.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -69,13 +69,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/artifacts/get-started-maven">
+                                        <a href="/azure/devops/artifacts/get-started-maven">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/artifacts/_img/index/logo_maven.svg" alt="" />
+                                                                <img src="_img/index/logo_maven.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -88,7 +88,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/artifacts/overview">
+                                        <a href="/azure/devops/artifacts/overview">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -115,7 +115,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                       <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />Index</a> 
+                                                       <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />Index</a> 
                                                     </div>
                                                 </div>
                                             </div>
@@ -137,7 +137,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
+                                                        <a class="barLink" href="/azure/devops/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
                                                     </div>
                                                 </div>
                                             </div>

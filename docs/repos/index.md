@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-<p><a href="/vsts/index">Azure DevOps Services</a>  /  Azure Boards</p>
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Boards</p>
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure Repos</h1>
@@ -31,7 +31,7 @@ featureFlags:
                                 <a href="#start"> </a>
                                 <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/repos/get-started/index">
+                                        <a href="/azure/devops/repos/get-started/index">
                                         <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -50,13 +50,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/git">
+                                        <a href="/azure/devops/git">
                                         <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/logo-git-mark.svg" alt="" />
+                                                                <img src="../_img/index/logo-git-mark.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -69,13 +69,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/repos/git/pull-requests-overview">
+                                        <a href="/azure/devops/repos/git/pull-requests-overview">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_pull-request.svg" alt="" />
+                                                                <img src="../_img/index/i_pull-request.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -88,13 +88,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/repos/git/forks-overview">
+                                        <a href="/azure/devops/repos/git/forks-overview">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_forks.svg" alt="" />
+                                                                <img src="../_img/index/i_forks.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -107,13 +107,13 @@ featureFlags:
                                         </a>
                                     </li>
 									<li>
-                                        <a href="/vsts/repos/git/branch-policies-overview">
+                                        <a href="/azure/devops/repos/git/branch-policies-overview">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_branch-policies.svg" alt="" />
+                                                                <img src="../_img/index/i_branch-policies.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -126,7 +126,7 @@ featureFlags:
                                         </a>
                                     </li>
 									<li>
-                                        <a href="/vsts/tfvc">
+                                        <a href="/azure/devops/tfvc">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -145,7 +145,7 @@ featureFlags:
                                         </a>
                                     </li>
 									<li>
-                                        <a href="/vsts/organizations/settings/about-settings#repos">
+                                        <a href="/azure/devops/organizations/settings/about-settings#repos">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -168,7 +168,7 @@ featureFlags:
                                 <h2 style="float: left; display: flex;">Additional resources</h2>
                                 <ul id="index4" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/index-all">
+                                        <a href="/azure/devops/index-all">
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">
@@ -204,7 +204,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/articles/index">
+                                        <a href="/azure/devops/articles/index">
                                         <div class="cardSize">
                                             <div class="cardPadding">
                                                 <div class="card">

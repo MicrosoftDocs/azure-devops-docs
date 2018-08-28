@@ -1,8 +1,8 @@
-- name: Azure DevOps Services & TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
   - name: Azure Boards
-    tocHref: /vsts/boards/
-    topicHref: /vsts/boards/index
+    tocHref: /azure/devops/boards/
+    topicHref: /azure/devops/boards/index
 

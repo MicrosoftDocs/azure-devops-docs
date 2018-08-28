@@ -1,9 +1,9 @@
 - name: Azure DevOps Services
-  tocHref: /vsts/
-  topicHref: /vsts/index
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
   - name: Analytics
-    tocHref: /vsts/report/analytics/
-    topicHref: /vsts/report/analytics/index
+    tocHref: /azure/devops/report/analytics/
+    topicHref: /azure/devops/report/analytics/index
 
 

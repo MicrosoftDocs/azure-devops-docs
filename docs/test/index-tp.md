@@ -15,7 +15,7 @@ featureFlags:
 - clicktale 
 ---
 
-<p><a href="/vsts/index">Azure DevOps Services</a>  /  Azure Test Plans</p>
+<p><a href="/azure/devops/index">Azure DevOps</a>  /  Azure Test Plans</p>
 <div id="main" class="v2">
     <div class="container">
         <h1>Azure Test Plans Documentation</h1>
@@ -31,13 +31,13 @@ featureFlags:
                                 <a href="#index1"></a>
                                 <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/test/index">
+                                        <a href="/azure/devops/test/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_exploratory-testing.svg" alt="" />
+                                                                <img src="../_img/index/i_exploratory-testing.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -51,7 +51,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/project/feedback/index">
+                                        <a href="/azure/devops/project/feedback/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -71,13 +71,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/test/getting-started-with-continuous-testing">
+                                        <a href="/azure/devops/pipelines/test/getting-started-with-continuous-testing">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_continuous-testing.svg" alt="" />
+                                                                <img src="../_img/index/i_continuous-testing.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -97,7 +97,7 @@ featureFlags:
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_unit-testing.svg" alt="" />
+                                                                <img src="../_img/index/i_unit-testing.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -110,13 +110,13 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/test/load-test/index">
+                                        <a href="/azure/devops/test/load-test/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
                                                         <div class="cardImageOuter">
                                                             <div class="cardImage">
-                                                                <img src="/vsts/_img/index/i_load-testing.svg" alt="" />
+                                                                <img src="../_img/index/i_load-testing.svg" alt="" />
                                                             </div>
                                                         </div>
                                                         <div class="cardText">
@@ -129,7 +129,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/settings/about-settings#test-center">
+                                        <a href="/azure/devops/organizations/settings/about-settings#test-center">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -156,7 +156,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/vsts/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />Index</a>
+                                                        <a class="barLink" href="/azure/devops/index-all"><img src="https://docs.microsoft.com/media/common/i_library.svg" alt="" />Index</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -178,7 +178,7 @@ featureFlags:
                                             <div class="cardPadding">
                                                 <div class="card">
                                                     <div class="cardText">
-                                                        <a class="barLink" href="/vsts/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
+                                                        <a class="barLink" href="/azure/devops/articles/index"><img src="https://docs.microsoft.com/media/common/i_article.svg" alt="" />Technical articles</a>
                                                     </div>
                                                 </div>
                                             </div>

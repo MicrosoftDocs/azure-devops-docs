@@ -9,7 +9,7 @@ ms.manager: douge
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 07/12/2018
+ms.date: 09/05/2018
 ---
 
 # Create a project
@@ -73,12 +73,25 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects](_img/create-project/projects-hub-vert-create-project.png)  
 
-0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
-
-    See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
+0. Fill out the form provided. Provide a name for your project, and choose the visibility, initial source control type, work item process. For details on public projects, see [Create a public project](../public/create-public-project.md). If the **Public** option is grayed out, you need to change the policy.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
+	> ![Create new project form, latest vsts](_img/create-project/create-new-project-form-new-nav.png)  
+
+	See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
+
+0. Upon successful completion, the welcome page displays.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Project creation confirmation dialog, new nav](_img/create-project/project-creation-complete-new-nav.png)
+
+	Choose: 
+	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members-vs.md). 
+	- Choose **Boards** to being [adding work items](../../boards/work-items/view-add-work-items.md).
+	- Choose **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
+	- Choose **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
+	- Choose **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+	- Choose [Manage your services](../settings/set-services.md) to disable the visibility of one or more services.
 
 ::: moniker-end
 
@@ -97,12 +110,14 @@ If you're not a member of the Project Collection Administrators Group, [get adde
 	> [!div class="mx-imgBorder"]  
 	> ![Choose new project, horizontal navigation](_img/create-project/projects-hub-horz-new-project.png)  
 
-0. Fill out the form provided. Provide a name for your new project, select its initial source control type, select a process, and choose with whom to share the project.
+0. Fill out the form provided. Provide a name for your new project, and choose the visibility, initial source control type, work item process. For details on public projects, see [Create a public project](../public/create-public-project.md). If the **Public** option is grayed out, you need to change the policy.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form, previous nav](_img/create-project/create-project-form-prev-nav.png)  
 
     See [choosing the right version control for your project](../../repos/tfvc/comparison-git-tfvc.md) and [choose a process](../../boards/work-items/guidance/choose-process.md) for guidance.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Create new project form, latest vsts](_img/create-project/create-project-s137.png)  
+0. Upon successful completion, the project summary displays. To learn more, see [Share your project vision](../../project/wiki/project-vision-status.md). 
 
 ::: moniker-end
 
@@ -302,11 +317,9 @@ Name the repository and choose **Create**.
 
 ## Try this next 
 
-Once you've added a project, you'll have a default repository in which to add code. You'll want to add team members and structure your project to support your business needs. See these resources: 
-
-- [Add team members](../../organizations/security/add-users-team-project.md) to enable other users to connect to your project.
-- Start [developing your app in Team Foundation version control](../../repos/tfvc/index.md) or [use Git](../../repos/git/overview.md).
+- [Add team members](../../organizations/security/add-users-team-project.md)  
+- [Use Git](../../repos/git/overview.md)
+- [Develop your app in TFVC](../../repos/tfvc/index.md) 
 - [Additional project structure activities](about-projects.md#project-structure)
 
 
-<a id="git-and-tfvs-repos" />

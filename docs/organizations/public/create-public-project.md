@@ -50,7 +50,6 @@ Before you can create a public project, you must enable anonymous access for you
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](_img/create-public-project/open-policy-vert.png) 
 
-
 # [Previous navigation](#tab/previous-nav)
 
 0. From your web browser, sign-in to Azure DevOps. You must be signed in to create a public project. 
@@ -64,7 +63,6 @@ Before you can create a public project, you must enable anonymous access for you
 
 	> [!div class="mx-imgBorder"]  
 	> ![Organization settings, Policy page, Security policies](_img/create-public-project/turn-on-anonymous-access.png)  
-
 
 
 ---
@@ -87,12 +85,20 @@ Before you can create a public project, you must enable anonymous access for you
 0. Provide a name for your project and choose **Public**. Keep the remaining defaults, or select the initial source control type and process for work item tracking. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Create new project formt](_img/create-public-project/add-public-project-form.png)
+	> ![Create new project formt](_img/create-public-project/create-new-project-form-new-nav.png)
 
-0. Upon successful completion, you'll see a page similar to the following image. From this page you can add code to your repository or build code from an external repository. 
+0. Upon successful completion, the welcome page displays.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Public project created page](_img/create-public-project/public-project-created.png)
+	> ![Project creation confirmation dialog, new nav](../projects/_img/create-project/project-creation-complete-new-nav.png)
+
+	Choose: 
+	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../accounts/add-team-members-vs.md). 
+	- Choose **Boards** to being [adding work items](../../boards/work-items/view-add-work-items.md).
+	- Choose **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
+	- Choose **Pipelines** to start [defining a pipeline](../../pipelines/index.md).
+	- Choose **Test Plans** to start [defining test plans and test suites](../../test/create-a-test-plan.md).
+	- Choose [Manage your services](../settings/set-services.md) to disable the visibility of one or more services.
 
 
 # [Previous navigation](#tab/previous-nav)
@@ -112,7 +118,7 @@ Before you can create a public project, you must enable anonymous access for you
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project formt](_img/create-public-project/add-public-project-form.png)
 
-0. Upon successful completion, you'll see a page similar to the following image. From this page you can add code to your repository or build code from an external repository. 
+0. Upon successful completion, you'll see a page similar to the following image. From this page you can add code to your repository or build code from an external repository. For details, see  [Share your project vision](../../project/wiki/project-vision-status.md).  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Public project created page](_img/create-public-project/public-project-created.png)

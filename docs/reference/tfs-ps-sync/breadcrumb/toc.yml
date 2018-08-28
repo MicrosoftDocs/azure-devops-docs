@@ -4,4 +4,4 @@
   items: 
   - name: Project Server Integration
     tocHref:  /vsts/reference/tfs-ps-sync/
-    topicHref: /vsts/reference/tfs-ps-sync/index
+    topicHref: /azure/devops/reference/tfs-ps-sync/index
