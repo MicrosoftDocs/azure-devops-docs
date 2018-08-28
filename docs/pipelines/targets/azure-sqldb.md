@@ -20,13 +20,6 @@ monikerRange: '>= tfs-2017'
 
 You can automatically deploy your database updates to Azure SQL database after every successful build. Before you read this topic, you should understand the type of pipeline that you're creating: [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
-::: moniker range="vsts"
-
-> [!NOTE]
-> To use YAML you must have the **Build YAML pipelines** [preview feature](../../project/navigation/preview-features.md) enabled.
-
-::: moniker-end
-
 ## DACPAC
 
 The simplest way to deploy a database is to create [data-tier package or DACPAC](/sql/relational-databases/data-tier-applications/data-tier-applications). DACPACs can be used to package and deploy schema changes as well as data. You can create a DACPAC using the **SQL database project** in Visual Studio.

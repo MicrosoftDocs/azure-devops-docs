@@ -26,7 +26,7 @@ At the beginning of the build pipeline, the agent downloads files from your remo
 
 ::: moniker range=">= tfs-2018"
 
-If your build consists of multiple jobs (for example, because of multiple jobs), the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build pipeline.
+If your build consists of multiple jobs, the agent downloads the files at the beginning of each job. You can specify only a single source repository for your entire build pipeline.
 
 ::: moniker-end
 
@@ -195,12 +195,12 @@ After the sources are tagged by your build pipeline, an artifact with the Git re
 
 You've got the option to give your team a view of the build status from your remote source repository.
 
-If your sources are in a Git repository in your project, then this option displays a badge in the **Code** hub to indicate whether the build is passing or failing. The build status is displayed in the following tabs:
+If your sources are in an Azure Repos Git repository in your project, then this option displays a badge on the **Code** page to indicate whether the build is passing or failing. The build status is displayed in the following tabs:
 * **Files**: Indicates the status of the latest build for the selected branch.
-* **Commits**: Indicates the build status of the each commit (this requires continuous integration (CI) trigger to be enabled for your builds).
+* **Commits**: Indicates the build status of the each commit (this requires the continuous integration (CI) trigger to be enabled for your builds).
 * **Branches**: Indicates the status of the latest build for each branch.
 
-If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge in the **Code** hub indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
+If you use multiple build pipelines for the same repository in your project, then you may choose to enable this option for one or more of the pipelines. In the case when this option is enabled on multiple pipelines, the badge on the **Code** page indicates the status of the latest build across all the pipelines. Your team members can click the build status badge to view the latest build status for each one of the build pipelines.
 
 ::: moniker-end
 
@@ -208,7 +208,7 @@ If you use multiple build pipelines for the same repository in your project, the
 
 #### GitHub (Azure Pipelines)
 
-If your sources are in GitHub, then this option publishes the status of your build to GitHub using [GitHub status APIs](https://developer.github.com/v3/repos/statuses/). If your build is triggered from a GitHub pull request, then you can view the status on the GitHub pull request page. This also allows you to set status policies within GitHub and automate merges. If your build is triggered by continuous integration (CI), then you can view the build status on the commit or branch in GitHub.
+If your sources are in GitHub, then this option publishes the status of your build to GitHub using [GitHub status APIs](https://developer.github.com/v3/repos/statuses/). If your build is triggered from a GitHub pull request, then you can view the status on the GitHub pull requests page. This also allows you to set status policies within GitHub and automate merges. If your build is triggered by continuous integration (CI), then you can view the build status on the commit or branch in GitHub.
 
 ::: moniker-end
 
@@ -255,7 +255,7 @@ The build pipeline will check out your Git submodules as long as they are:
 
 The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules.
 
-If your main repository and submodules are in a Git repository in your Azure Pipelines project, then you can select the account used to access the sources. On the **Options** tab, on the **Build job authorization scope** menu, select either:
+If your main repository and submodules are in an Azure Repos Git repository in your Azure DevOps project, then you can select the account used to access the sources. On the **Options** tab, on the **Build job authorization scope** menu, select either:
 
 * **Project collection** to use the Project Collection Build service account
 
@@ -267,7 +267,7 @@ If your main repository and submodules are in the same GitHub organization, then
 
 #### Alternative to using the Checkout submodules option
 
-In some cases you can't use the Checkout submodules option. You might have a scenario where a different set of credentials are needed to access the submodules. This can happen, for example, if your main repository is in Azure Pipelines and your submodules are in GitHub, if your main repository is in GitHub and your submodules are in Azure Pipelines, or if your submodules are in a different Azure DevOps organization than your main repository.
+In some cases you can't use the Checkout submodules option. You might have a scenario where a different set of credentials are needed to access the submodules. This can happen, for example, if your main repository is in Azure Repos and your submodules are in GitHub, or if your main repository is in GitHub and your submodules are in Azure Repos, or if your submodules are in a different Azure DevOps organization than your main repository.
 
 If you can't use the Checkout submodules option, then you can instead use a custom script with the following Git command to get the sources for submodules onto your agent.
 
@@ -458,9 +458,9 @@ Reference directories using build variables such as `$(Build.SourcesDirectory)` 
 
 ### What protocols can the build agent use with Git?
 
-We support HTTPS.
+The agent supports HTTPS.
 
-We don't yet support SSH. See [User Voice: Allow build to use ssh authentication while checking out git sub modules](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/15109674-allow-build-to-use-ssh-authentication-while-checki)
+The agent does not yet support SSH. See [User Voice: Allow build to use SSH authentication while checking out Git submodules](https://visualstudio.uservoice.com/forums/330519-team-services/suggestions/15109674-allow-build-to-use-ssh-authentication-while-checki)
 
 ### What is scorch?
 

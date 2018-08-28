@@ -47,10 +47,7 @@ Follow the steps in [Your first build and release](../get-started-designer.md) t
 
 ---
 
-## Validate contributions from forks
-
-> [!NOTE]   
-> This feature is currently unavailable for security hardening. It is expected to return in July 2018.  
+## Validate contributions from forks 
 
 # [GitHub repo](#tab/github)
 
@@ -60,25 +57,25 @@ Follow the steps in [Your first build and release](../get-started-designer.md) t
 By default, your build pipeline is not automatically triggered for pull requests from forked repositories. You can change this behavior, but there are additional security considerations that you must take into account. To enable building pull requests from forks:
 
 1. Navigate to your Azure Pipelines project. Select **Pipelines**, and then select **Builds**. Locate your build pipeline, and select **Edit**.
-1. Select the **Triggers** tab. Enable the checkbox labeled **Build pull requests from forks of this repository**.
+1. Select the **Triggers** tab. After enabling the **Pull request trigger**, enable the checkbox labeled **Build pull requests from forks of this repository**.
 
 By default, secrets associated with your build pipeline are not made available to builds of pull requests from forks. Secrets include:
 
 * A security token with access to your GitHub repository
 * These items, if used by your build:
   * [Service connection](../library/service-endpoints.md) credentials
-  * Files from the [Secure Files library](../library/secure-files.md)
+  * Files from the [secure files library](../library/secure-files.md)
   * Build [variables](../process/variables.md#user-defined-variables) marked **secret**
 
 To bypass this precaution, enable the checkbox labeled **Make secrets available to builds of forks**. Be aware of this setting's impact on security as described below.
 
-A GitHub user can fork your repository, change it, and create a pull request to propose changes to your repository. Such a pull request could contain malicious code to run as part of your triggered build. For example, an ill-intentioned script or unit test change could leak secrets or compromise the agent machine performing the build. The following steps are recommended to mitigate this risk:
+A GitHub user can fork your repository, change it, and create a pull request to propose changes to your repository. This pull request could contain malicious code to run as part of your triggered build. For example, an ill-intentioned script or unit test change could leak secrets or compromise the agent machine performing the build. The following steps are recommended to mitigate this risk:
 
 1. Use an Azure Pipelines [Microsoft-hosted agent](../agents/hosted.md) to build pull requests from forks. Microsoft-hosted agents are immediately deleted after they complete a build, so there is no lasting impact if they are compromised.
 
 1. If you must use a [self-hosted agent](../agents/agents.md#install), do not store secrets or perform other builds or releases on the same agent, unless your repository is private and you trust pull request creators. Otherwise, secrets could leak and the repository contents or secrets of other builds and releases could be revealed.
 
-1. Do not enable the checkbox labeled **Make secrets available to builds of forks**. Otherwise, secrets could leak during a build.
+1. Do not enable the checkbox labeled **Make secrets available to builds of forks** if untrusted users can submit pull requests that automatically trigger builds. Otherwise, secrets could leak during a build.
 
 # [Azure Repos Git repo](#tab/gitvsts)
 
@@ -90,5 +87,5 @@ Building pull requests from Azure Repos forks is no different from building pull
 
 You should be aware of the following restrictions when running builds in an Azure Pipelines public project.
 
-1. **Cross-project access:** All builds in a public project run with a project scoped access token. In other words, builds in a public project can only access resources such as code, work items, or test results within the project and not from another project of the Azure DevOps organization.
-1. **Package management:** If your builds need access to packages from Azure Artifacts, then you must explicitly grant permission for the **Project Build Service** organization to access the package feeds.
+1. **Cross-project access:** All builds in a public project run with a project-scoped access token. In other words, builds in a public project can only access resources such as code, work items, or test results within the project and not from other projects of the Azure DevOps organization.
+1. **Package management:** If your builds need access to packages from Azure Artifacts, then you must explicitly grant permission for the **Project Build Service** account to access the package feeds.

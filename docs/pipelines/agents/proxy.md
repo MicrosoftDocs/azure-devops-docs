@@ -52,9 +52,9 @@ To enable the agent to run behind a web proxy, pass `--proxyurl`, `--proxyuserna
  ---
  
 We store your proxy credential securely on each platform.
-On Windows, we use the Credential Store.
-On macOS, we use the Keychain.
 On Linux, the credential is encrypted with a symmetric key based on the machine ID.
+On macOS, we use the Keychain.
+On Windows, we use the Credential Store.
 
 > [!Note]
 > Agent version 122.0, which shipped with TFS 2018 RTM, has a known issue configuring as a service on Windows.
