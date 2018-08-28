@@ -1,4 +1,4 @@
-- name: Public Projects
+- name: Public projects
   href: index.md
 - name: Overview
   items:
@@ -14,6 +14,8 @@
     href: invite-users-public.md
   - name: Make a project public
     href: make-project-public.md
+  - name: Share your project vision
+    href: ../../project/wiki/project-vision-status.md?toc=/vsts/organizations/public/toc.json&bc=/vsts/organizations/public/breadcrumb/toc.json
   - name: Browse code, download code 
     href: browse-code-public.md  
   - name: View and filter work items

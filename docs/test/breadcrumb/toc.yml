@@ -1,11 +1,11 @@
-- name: Azure DevOps Services & TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
   - name: Azure Test Plans
-    tocHref: /vsts/test/
-    topicHref: /vsts/test/index-tp
+    tocHref: /azure/devops/test/
+    topicHref: /azure/devops/test/index-tp
     items:
     - name: Test
-      tocHref: /vsts/test/
-      topicHref: /vsts/test/index
+      tocHref: /azure/devops/test/
+      topicHref: /azure/devops/test/index

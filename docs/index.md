@@ -1,7 +1,7 @@
 ---
 title: Azure DevOps Documentation 
 titleSuffix: Azure DevOps 
-description: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps services 
+description: Collaborate on software development through version control, work tracking, and continuous integration and delivery (CI/CD) with Azure DevOps 
 layout: HubPage 
 hide_bc: true
 ms.topic: hub-page
@@ -17,9 +17,9 @@ featureFlags:
 
 <div id="main" class="v2">
     <div class="container">
-        <h1>Azure DevOps Services Documentation</h1>
-        <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps Services provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For the on-premises platform, see [Visual Studio Team Foundation Server Documentation](/vsts/index-tfs).</p>
-        <p><i>[What happened to Visual Studio Team Services?](/vsts/user-guide/what-happened-vsts)</i></p>
+        <h1>Azure DevOps Documentation</h1>
+        <p>Collaborate on software development using tools designed to start small and scale up. Azure DevOps provides high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. For the on-premises platform, see [Visual Studio Team Foundation Server Documentation](/vsts/index-tfs).</p>
+        <p><i>[What happened to Visual Studio Team Services?](/azure/devops/user-guide/what-happened-vsts)</i></p>
         <ul class="pivots">
             <li>
                 <a href="#index"></a>
@@ -29,10 +29,10 @@ featureFlags:
                         <ul class="panelContent singlePanelContent" id="indexA" style="margin-top: 0px; display: flex; float: left; border: none;">
                             <li class="fullSpan">
                                 <a href="#index1"></a>
-                                <h2 style="float: left; display: flex;">Start using Azure DevOps Services</h2>
+                                <h2 style="float: left; display: flex;">Start using Azure DevOps</h2>
                                 <ul id="index1" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/pipelines/build/ci-build-github">
+                                        <a href="/azure/devops/pipelines/build/ci-build-github">
                                         <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -51,7 +51,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/user-guide/index">
+                                        <a href="/azure/devops/user-guide/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -62,7 +62,7 @@ featureFlags:
                                                         </div>
                                                         <div class="cardText">
                                                             <h3><br/>Start using Azure DevOps</h3>
-                                                            <p>Sign up and get started using Azure DevOps Services.</p>
+                                                            <p>Sign up and get started using Azure DevOps.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -70,7 +70,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/release-notes/index">
+                                        <a href="/azure/devops/release-notes/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -89,7 +89,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/project/navigation/index">
+                                        <a href="/azure/devops/project/navigation/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -111,7 +111,7 @@ featureFlags:
                                 <a href="#index3"></a>
                                 <ul id="index3" class="cardsA panelContent singlePanelContent cols cols3" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/pipelines/index">
+                                        <a href="/azure/devops/pipelines/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -130,7 +130,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/repos/index">
+                                        <a href="/azure/devops/repos/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -149,7 +149,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/boards/index">
+                                        <a href="/azure/devops/boards/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -168,7 +168,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/artifacts/index-a">
+                                        <a href="/azure/devops/artifacts/index-a">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -187,7 +187,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/test/index-tp">
+                                        <a href="/azure/devops/test/index-tp">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -206,7 +206,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/index">
+                                        <a href="/azure/devops/organizations/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -229,7 +229,7 @@ featureFlags:
                                 <h2 style="float: left; display: flex;">Create pipelines to build and deploy applications to any platform, cloud, or app store.</h2>
                                 <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/pipelines/languages/android">
+                                        <a href="/azure/devops/pipelines/languages/android">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -247,7 +247,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/apps/aspnet/build-aspnet-4">
+                                        <a href="/azure/devops/pipelines/apps/aspnet/build-aspnet-4">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -266,7 +266,7 @@ featureFlags:
                                     </li>
 
                                     <li>
-                                        <a href="/vsts/pipelines/apps/c-cpp/gcc">
+                                        <a href="/azure/devops/pipelines/apps/c-cpp/gcc">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -284,7 +284,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/apps/windows/cpp">
+                                        <a href="/azure/devops/pipelines/apps/windows/cpp">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -302,7 +302,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/languages/docker">
+                                        <a href="/azure/devops/pipelines/languages/docker">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -320,7 +320,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/apps/go/go">
+                                        <a href="/azure/devops/pipelines/apps/go/go">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -338,7 +338,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/languages/java">
+                                        <a href="/azure/devops/pipelines/languages/java">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -356,7 +356,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/apps/cd/azure/deploy-container-kubernetes">
+                                        <a href="/azure/devops/pipelines/apps/cd/azure/deploy-container-kubernetes">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -374,7 +374,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/apps/cd/deploy-linuxvm-deploygroups">
+                                        <a href="/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -392,7 +392,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/languages/javascript">
+                                        <a href="/azure/devops/pipelines/languages/javascript">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -410,7 +410,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/targets/npm">
+                                        <a href="/azure/devops/pipelines/targets/npm">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -428,7 +428,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/pipelines/targets/nuget">
+                                        <a href="/azure/devops/pipelines/targets/nuget">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card ready x-hidden-focus">
@@ -450,7 +450,7 @@ featureFlags:
                                 <h2 style="float: left; display: flex;">Analytics and social tools</h2>
                                 <ul id="index4" class="cardsA panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
                                     <li>
-                                        <a href="/vsts/report/dashboards/index">
+                                        <a href="/azure/devops/report/dashboards/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -469,7 +469,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/report/analytics/what-are-analytics-views">
+                                        <a href="/azure/devops/report/analytics/what-are-analytics-views">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -488,7 +488,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/project/wiki/index">
+                                        <a href="/azure/devops/project/wiki/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -507,7 +507,7 @@ featureFlags:
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/vsts/organizations/public/index">
+                                        <a href="/azure/devops/organizations/public/index">
                                             <div class="cardSize">
                                                 <div class="cardPadding">
                                                     <div class="card">
@@ -534,9 +534,9 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Discover and build extensions</h3>
-                                                        <p><a href="/vsts/marketplace/overview">Discover extensions</a></p>
-                                                        <p><a href="/vsts/extend/index">Develop extensions</a></p>
-                                                        <p><a href="/vsts/integrate/index">Integrate applications</a><br/></p>
+                                                        <p><a href="/azure/devops/marketplace/overview">Discover extensions</a></p>
+                                                        <p><a href="/azure/devops/extend/index">Develop extensions</a></p>
+                                                        <p><a href="/azure/devops/integrate/index">Integrate applications</a><br/></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -551,8 +551,8 @@ featureFlags:
                                                         <p><a href="/rest/api/vsts/">REST APIs</a></p>
                                                         <a href="https://www.visualstudio.com/docs/integrate/extensions/reference/client/core-sdk">TypeScript APIs</a></p>
                                                         <p><a href="/cli/vsts/overview">CLI</a></p>
-                                                        <p><a href="/vsts/java/index">Java</a></p>
-                                                        <p><a href="/vsts/demo-gen">Azure DevOps Demo Generator</a></p>
+                                                        <p><a href="/azure/devops/java/index">Java</a></p>
+                                                        <p><a href="/azure/devops/demo-gen">Azure DevOps Demo Generator</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -564,10 +564,10 @@ featureFlags:
                                                 <div class="card">
                                                     <div class="cardText">
                                                         <h3>Additional resources</h3>
-                                                        <p><a href="/vsts/index-all">Index</a></p>
+                                                        <p><a href="/azure/devops/index-all">Index</a></p>
                                                         <p><a href="https://www.youtube.com/channel/UC-ikyViYMM69joIAv7dlMsA">DevOps at Microsoft</a></p>
                                                         <p><a href="/azure/devops/learn/">Azure DevOps resource center</a></p>
-                                                        <p><a href="/vsts/index-tfs">TFS Administrator Guide</a></p>
+                                                        <p><a href="/azure/devops/index-tfs">TFS Administrator Guide</a></p>
                                                     </div>
                                                 </div>
                                             </div>

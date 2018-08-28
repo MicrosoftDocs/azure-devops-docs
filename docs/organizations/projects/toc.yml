@@ -8,6 +8,8 @@
     href: ../../user-guide/services.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
 - name: Quickstarts
   items:
+  - name: Share your project vision
+    href: ../../project/wiki/project-vision-status.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
   - name: Define area paths
     href: ../settings/set-area-paths.md?toc=/vsts/organizations/projects/toc.json&bc=/vsts/organizations/projects/breadcrumb/toc.json
   - name: Define iteration paths or sprints

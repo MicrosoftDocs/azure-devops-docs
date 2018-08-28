@@ -20,7 +20,7 @@ monikerRange: 'vsts'
 
 The project homepage typically provides information about the project, and dashboards provide charts, links, or focused information for a team or project.   
 
-If you're a contributor, you can also [edit README files for a project](../../project/wiki/project-vision-status.md#create-a-repository-readme-or-welcome-page) and [add and edit dashboards](../../report/dashboards/dashboards.md).  
+If you're a contributor, you can also [edit README files for a project](../../project/wiki/project-vision-status.md) and [add and edit dashboards](../../report/dashboards/dashboards.md).  
 
 [!INCLUDE [temp](_shared/anon-user.md)]   
 

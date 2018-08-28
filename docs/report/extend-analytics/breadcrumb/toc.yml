@@ -1,7 +1,7 @@
 - name: Azure DevOps Services
-  tocHref: /vsts/
-  topicHref: /vsts/index
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
   - name:  Extend Analytics with OData
-    tocHref: /vsts/report/extend-analytics/
-    topicHref: /vsts/report/extend-analytics/index
+    tocHref: /azure/devops/report/extend-analytics/
+    topicHref: /azure/devops/report/extend-analytics/index

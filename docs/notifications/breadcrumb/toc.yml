@@ -1,11 +1,11 @@
-- name: Azure DevOps Services & TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
   - name: Settings
-    tocHref: /vsts/organizations/
-    topicHref: /vsts/organizations/index
+    tocHref: /azure/devops/organizations/
+    topicHref: /azure/devops/organizations/index
     items:
     - name: Notifications
-      tocHref: /vsts/notifications/
-      topicHref: /vsts/notifications/index
+      tocHref: /azure/devops/notifications/
+      topicHref: /azure/devops/notifications/index

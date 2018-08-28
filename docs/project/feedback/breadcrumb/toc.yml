@@ -1,7 +1,7 @@
-- name: Azure DevOps Services & TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items: 
   - name: Feedback
-    tocHref: /vsts/project/feedback/
-    topicHref: /vsts/project/feedback/index
+    tocHref: /azure/devops/project/feedback/
+    topicHref: /azure/devops/project/feedback/index

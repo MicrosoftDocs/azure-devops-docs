@@ -1,163 +1,163 @@
-- name: Azure DevOps Services & TFS
-  tocHref: /vsts/
-  topicHref: /vsts/index
+- name: Azure DevOps & TFS
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items:
   - name: Navigation basics
-    tocHref: /vsts/project/navigation/
-    topicHref: /vsts/project/navigation/index
+    tocHref: /azure/devops/project/navigation/
+    topicHref: /azure/devops/project/navigation/index
   - name: Wikis
-    tocHref: /vsts/project/wiki/
-    topicHref: /vsts/project/wiki/index
+    tocHref: /azure/devops/project/wiki/
+    topicHref: /azure/devops/project/wiki/index
   - name: Search
-    tocHref: /vsts/project/search/
-    topicHref: /vsts/project/search/index
+    tocHref: /azure/devops/project/search/
+    topicHref: /azure/devops/project/search/index
   - name: Feedback
-    tocHref: /vsts/project/feedback/
-    topicHref: /vsts/project/feedback/index
+    tocHref: /azure/devops/project/feedback/
+    topicHref: /azure/devops/project/feedback/index
   - name: Dashboards
-    tocHref: /vsts/report/dashboards
-    topicHref: /vsts/report/dashboards/index
+    tocHref: /azure/devops/report/dashboards
+    topicHref: /azure/devops/report/dashboards/index
   - name: Start using Azure DevOps
-    tocHref: /vsts/user-guide/
-    topicHref: /vsts/user-guide/index
+    tocHref: /azure/devops/user-guide/
+    topicHref: /azure/devops/user-guide/index
   - name: Discover extensions
-    tocHref: /vsts/marketplace/
+    tocHref: /azure/devops/marketplace/
     topicHref: https://marketplace.visualstudio.com/
   - name: Build extensions
-    tocHref: /vsts/extend/
-    topicHref: /vsts/extend/index
+    tocHref: /azure/devops/extend/
+    topicHref: /azure/devops/extend/index
   - name: Visual Studio extensions
-    tocHref: /vsts/integrate/ide/extensions/
-    topicHref: /vsts/integrate/ide/extensions/overview
+    tocHref: /azure/devops/integrate/ide/extensions/
+    topicHref: /azure/devops/integrate/ide/extensions/overview
   - name: Integrate
-    tocHref: /vsts/integrate/
-    topicHref: /vsts/integrate/index
+    tocHref: /azure/devops/integrate/
+    topicHref: /azure/devops/integrate/index
   - name: Java 
-    tocHref: /vsts/java/
-    topicHref: /vsts/java/index 
+    tocHref: /azure/devops/java/
+    topicHref: /azure/devops/java/index 
   - name: Azure DevOps demo generator
-    tocHref: /vsts/demo-gen/
-    topicHref: /vsts/demo-gen/index  
+    tocHref: /azure/devops/demo-gen/
+    topicHref: /azure/devops/demo-gen/index  
   - name: Technical articles
-    tocHref: /vsts/articles/
-    topicHref: /vsts/articles/index
+    tocHref: /azure/devops/articles/
+    topicHref: /azure/devops/articles/index
   - name: Azure Pipelines
-    tocHref: /vsts/pipelines/
-    topicHref: /vsts/pipelines/index
+    tocHref: /azure/devops/pipelines/
+    topicHref: /azure/devops/pipelines/index
   - name: Azure Boards 
-    tocHref: /vsts/boards/
-    topicHref: /vsts/boards/index
+    tocHref: /azure/devops/boards/
+    topicHref: /azure/devops/boards/index
     items:
     - name: Boards (Kanban) 
-      tocHref: /vsts/boards/boards/
-      topicHref: /vsts/boards/boards/index
+      tocHref: /azure/devops/boards/boards/
+      topicHref: /azure/devops/boards/boards/index
     - name: Backlogs
-      tocHref: /vsts/boards/backlogs/
-      topicHref: /vsts/boards/backlogs/index
+      tocHref: /azure/devops/boards/backlogs/
+      topicHref: /azure/devops/boards/backlogs/index
     - name: Sprints (Scrum)
-      tocHref: /vsts/boards/sprints/
-      topicHref: /vsts/boards/sprints/index
+      tocHref: /azure/devops/boards/sprints/
+      topicHref: /azure/devops/boards/sprints/index
     - name: Work items
-      tocHref: /vsts/boards/work-items/
-      topicHref: /vsts/boards/work-items/index
+      tocHref: /azure/devops/boards/work-items/
+      topicHref: /azure/devops/boards/work-items/index
     - name: Queries
-      tocHref: /vsts/boards/queries/
-      topicHref: /vsts/boards/queries/index
+      tocHref: /azure/devops/boards/queries/
+      topicHref: /azure/devops/boards/queries/index
     - name: Plans (Agile at scale)
-      tocHref: /vsts/boards/plans/
-      topicHref: /vsts/boards/plans/index
+      tocHref: /azure/devops/boards/plans/
+      topicHref: /azure/devops/boards/plans/index
   - name: Azure Repos
-    tocHref: /vsts/repos/
-    topicHref: /vsts/repos/index
+    tocHref: /azure/devops/repos/
+    topicHref: /azure/devops/repos/index
     items:
     - name: Git
-      tocHref: /vsts/repos/git/
-      topicHref: /vsts/repos/git/index
+      tocHref: /azure/devops/repos/git/
+      topicHref: /azure/devops/repos/git/index
     - name: TFVC
-      tocHref: /vsts/repos/tfvc/
-      topicHref: /vsts/repos/tfvc/index
+      tocHref: /azure/devops/repos/tfvc/
+      topicHref: /azure/devops/repos/tfvc/index
   - name: Azure Artifacts
-    tocHref: /vsts/artifacts/
-    topicHref: /vsts/artifacts/index-a
+    tocHref: /azure/devops/artifacts/
+    topicHref: /azure/devops/artifacts/index-a
   - name: Azure Test Plans
-    tocHref: /vsts/test/
-    topicHref: /vsts/test/index-tp
+    tocHref: /azure/devops/test/
+    topicHref: /azure/devops/test/index-tp
     items:
     - name: Exploratory & manual testing
-      tocHref: /vsts/test/
-      topicHref: /vsts/test/index
+      tocHref: /azure/devops/test/
+      topicHref: /azure/devops/test/index
     - name: Load testing
-      tocHref: /vsts/test/load-test/
-      topicHref: /vsts/test/load-test/index
+      tocHref: /azure/devops/test/load-test/
+      topicHref: /azure/devops/test/load-test/index
     - name: Continuous testing
-      tocHref: /vsts/test/
-      topicHref: /vsts/pipelines/test/getting-started-with-continuous-testing
+      tocHref: /azure/devops/test/
+      topicHref: /azure/devops/pipelines/test/getting-started-with-continuous-testing
     - name: Unit testing
       tocHref: /visualstudio/test/improve-code-quality/
       topicHref: /visualstudio/test/unit-test-your-code
   - name: Settings
-    tocHref: /vsts/organizations/settings/
-    topicHref: /vsts/organizations/index
+    tocHref: /azure/devops/organizations/settings/
+    topicHref: /azure/devops/organizations/index
     items:
     - name: Manage projects
-      tocHref: /vsts/organizations/projects/
-      topicHref: /vsts/organizations/projects/index
+      tocHref: /azure/devops/organizations/projects/
+      topicHref: /azure/devops/organizations/projects/index
     - name: Manage organizations
-      tocHref: /vsts/organizations/accounts/
-      topicHref: /vsts/organizations/accounts/index
+      tocHref: /azure/devops/organizations/accounts/
+      topicHref: /azure/devops/organizations/accounts/index
     - name: Billing
-      tocHref: /vsts/organizations/billing/
-      topicHref: /vsts/organizations/billing/index
+      tocHref: /azure/devops/organizations/billing/
+      topicHref: /azure/devops/organizations/billing/index
     - name: "Security & identity"
-      tocHref: /vsts/organizations/security/
-      topicHref: /vsts/organizations/security/index
+      tocHref: /azure/devops/organizations/security/
+      topicHref: /azure/devops/organizations/security/index
     - name: All settings
-      tocHref: /vsts/organizations/settings/
-      topicHref: /vsts/organizations/settings/index
+      tocHref: /azure/devops/organizations/settings/
+      topicHref: /azure/devops/organizations/settings/index
     - name: Notifications
-      tocHref: /vsts/notifications/
-      topicHref: /vsts/notifications/index
+      tocHref: /azure/devops/notifications/
+      topicHref: /azure/devops/notifications/index
     - name: "Scale & configure teams"
-      tocHref: /vsts/organizations/settings/scale/
-      topicHref: /vsts/organizations/settings/scale/index
+      tocHref: /azure/devops/organizations/settings/scale/
+      topicHref: /azure/devops/organizations/settings/scale/index
     - name: Customization
-      tocHref: /vsts/reference/
-      topicHref: /vsts/reference/index
+      tocHref: /azure/devops/reference/
+      topicHref: /azure/devops/reference/index
     - name: Manage extensions
-      tocHref: /vsts/marketplace/
-      topicHref: /vsts/marketplace/index
+      tocHref: /azure/devops/marketplace/
+      topicHref: /azure/devops/marketplace/index
     - name: Service hooks
-      tocHref: /vsts/service-hooks/
-      topicHref: /vsts/service-hooks/index
+      tocHref: /azure/devops/service-hooks/
+      topicHref: /azure/devops/service-hooks/index
 - name: Azure DevOps Services
-  tocHref: /vsts/
-  topicHref: /vsts/index
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index
   items:
   - name: Public Projects
-    tocHref: /vsts/organizations/public/
-    topicHref: /vsts/organizations/public/index
+    tocHref: /azure/devops/organizations/public/
+    topicHref: /azure/devops/organizations/public/index
   - name: Analytics
-    tocHref: /vsts/report/analytics/
-    topicHref: /vsts/report/analytics/index
+    tocHref: /azure/devops/report/analytics/
+    topicHref: /azure/devops/report/analytics/index
   - name: Power BI
-    tocHref: /vsts/report/powerbi/
-    topicHref: /vsts/report/powerbi/index
+    tocHref: /azure/devops/report/powerbi/
+    topicHref: /azure/devops/report/powerbi/index
   - name: Extend Analytics with OData
-    tocHref: /vsts/report/extend-analytics/
-    topicHref: /vsts/report/extend-analytics/index
+    tocHref: /azure/devops/report/extend-analytics/
+    topicHref: /azure/devops/report/extend-analytics/index
 - name: Team Foundation Server
-  tocHref: /vsts/
-  topicHref: /vsts/index-tfs
+  tocHref: /azure/devops/
+  topicHref: /azure/devops/index-tfs
   items:
   - name: "TFS administation"
     tocHref: /tfs/server/
-    topicHref: /vsts/index-tfs
+    topicHref: /azure/devops/index-tfs
   - name: Project Server integration
-    tocHref: /vsts/reference/tfs-ps-sync/
-    topicHref: /vsts/reference/tfs-ps-sync/index
+    tocHref: /azure/devops/reference/tfs-ps-sync/
+    topicHref: /azure/devops/reference/tfs-ps-sync/index
   - name: SQL Server Reporting
-    tocHref: /vsts/report/sql-reports/
-    topicHref: /vsts/report/sql-reports/index
+    tocHref: /azure/devops/report/sql-reports/
+    topicHref: /azure/devops/report/sql-reports/index
   - name: SharePoint Integration
-    tocHref: /vsts/report/sharepoint-dashboards/
-    topicHref: /vsts/report/sharepoint-dashboards/index
+    tocHref: /azure/devops/report/sharepoint-dashboards/
+    topicHref: /azure/devops/report/sharepoint-dashboards/index
