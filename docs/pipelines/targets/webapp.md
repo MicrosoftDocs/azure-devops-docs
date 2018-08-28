@@ -30,13 +30,6 @@ Before you read this topic, you should understand the type of pipeline that you'
 
 ::: moniker-end
 
-::: moniker range="vsts"
-
-> [!NOTE]
-> To use YAML you must have the **Build YAML pipelines** [preview feature](../../project/navigation/preview-features.md) enabled.
-
-::: moniker-end
-
 ## Example
 
 If you want some sample code that works with this guidance, import (into Azure Repos or TFS) or fork (into GitHub) this repo:

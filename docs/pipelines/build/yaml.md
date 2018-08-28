@@ -17,9 +17,6 @@ monikerRange: 'vsts'
 
 When you define a CI build on Azure Pipelines, you've got a fundamental choice: use a web-based interface or configure your CI pipeline as code in a YAML build. YAML build pipelines give you the advantages of configuration as code.
 
-> [!NOTE]
-> To use YAML you must have the **Build YAML pipelines** [preview feature](../../project/navigation/preview-features.md) enabled on your organization.
-
 In a YAML build pipeline, your CI build steps are configured as code, which means:
 
 * The pipeline is versioned with your code and follows the same branching structure as your code. So you get validation of your changes through code reviews in pull requests and branch build policies.

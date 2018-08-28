@@ -30,7 +30,9 @@ In this tutorial, you learn how to:
 
 * Before you read this topic, you should understand the type of build you'd like to work with:  [designer](../get-started-designer.md) or [YAML](../get-started-yaml.md).
 
-* You need a GitHub repository with your app. If you do not have one, we recommend forking the [sample .NET Core app](https://github.com/adventworks/dotnetcore-sample) into your own GitHub repo. You must have owner or admin privileges on the repository that you work with.
+* You need a GitHub repository with your app. If you do not have one, we recommend forking the [sample .NET Core app](https://github.com/adventworks/dotnetcore-sample) into your own GitHub account.
+
+* You must be a contributor with admin privileges on the repository that you work with. If you create or fork a repository into a GitHub organization other than your personal GitHub account, you must still add yourself as an admin contributor under the repository's **Settings > Collaborators**.
 
 ## Set up CI for your GitHub repository
 
@@ -53,7 +55,7 @@ Follow the steps below to configure GitHub as a source for your Azure Pipelines 
 
 ## Add a build status badge
 
-This section explores possibilities for further integrating Azure Pipelines and GitHub. You will create a build badge for the Azure Pipelines build pipeline by populating a GitHub readme file with markdown that points to the build badge URL.
+This section explores possibilities for further integrating Azure Pipelines and GitHub. You will create a build badge for the Azure Pipelines build pipeline by populating a GitHub readme file with Markdown that points to the build badge URL.
 
 1. Navigate to your GitHub account. Select **Code**. Create a Readme.md file unless one already exists.
 1. For this step, paste the following markdown into your Readme.md file. Replace the tokens using the name of the build pipeline and the `definitionId` that you obtained above.
