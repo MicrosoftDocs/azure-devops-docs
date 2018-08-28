@@ -20,14 +20,14 @@ This is a step-by-step guide to build a GitHub repository using Azure Pipelines.
 
 [!INCLUDE [include](_shared/ci-cd-prerequisites-vsts.md)]
 
-* The following preview features enabled in your Azure DevOps organization.
+* You must have the following preview features enabled in your Azure DevOps organization.
   * **New builds hub**
   * **New YAML pipeline creation experience**
 
   You can check the preview features by selecting your profile in your Azure DevOps organization.
   ![New YAML pipeline creation experience](_img/get-started-yaml/preview-toggle.png)
 
-* A GitHub account, where you can create a repository.
+* You need a GitHub account, where you can create a repository.
 
 ## Get the sample code
 
@@ -37,17 +37,16 @@ Azure Pipelines can be used to build an app written in any language. Pick a lang
 |----------------------|----------------------------|
 | .NET Core | `https://github.com/MicrosoftDocs/pipelines-dotnet-core` |
 | NodeJS | `https://github.com/MicrosoftDocs/pipelines-javascript` |
-| Java | `https://github.com/adventworks/java-sample` |
 | Python |  `https://github.com/MicrosoftDocs/pipelines-python-django` |
-| Go | `https://github.com/MicrosofyDocs/pipelines-go` |
+| Java | `https://github.com/adventworks/java-sample` |
 
 You should now have a sample app in your GitHub account.
 
 ## Get your first build
 
-1. Login to your Azure DevOps organization at http://dev.azure.com/.
+1. Login to your Azure DevOps organization and navigate to your project.
 
-1. Navigate to the **Pipelines** page, and then choose **New pipeline**.
+1. In your project, navigate to the **Pipelines** page, and then choose **New pipeline**.
 
 1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
