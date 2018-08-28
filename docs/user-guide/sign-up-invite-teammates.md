@@ -1,7 +1,7 @@
 ---
-title: Sign up and invite teammates
+title: Sign up for Azure DevOps
 titleSuffix: Azure DevOps Services   
-description: Quickstart guide to signing up and inviting others to join a team project in Azure DevOps
+description: Quickstart guide to signing up and inviting others to join a project in Azure DevOps
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.topic: quickstart
@@ -13,7 +13,7 @@ monikerRange: 'vsts'
 ---
 
 
-# Sign up for a free Azure DevOps Services organization and invite others to join your team
+# Sign up for a free Azure DevOps Services organization
 
 
  
