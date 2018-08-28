@@ -38,7 +38,7 @@ For the exact versions of Xamarin that are preinstalled, refer to [Microsoft-hos
 Create a file named **azure-pipelines.yml** in the root of your repository. Then, add the following snippet to your `azure-pipelines.yml` file to select the appropriate agent pool:
 
 ```yaml
-# https://docs.microsoft.com/vsts/pipelines/languages/xamarin
+# https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
 pool:
   vmImage: 'macOS 10.13' # For Windows, use 'VS2017-Win2016'
 ```
@@ -100,9 +100,9 @@ steps:
 
 See [Xcode](xcode.md) guidance for information about:
 
-* Signing and provisioning an IPA
-* Testing with the Simulator
 * Testing on Azure-hosted devices
 * Retaining build artifacts with the build record
 * Distributing through App Center
 * Distributing through the Apple App Store
+
+See [Sign your mobile app during CI](../apps/mobile/app-signing.md) for information about signing and provisioning your app.
