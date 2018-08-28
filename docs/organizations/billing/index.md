@@ -88,7 +88,7 @@ Guidance for Cloud Solution Providers
 
 ## Other resources
 
-* [Azure DevOps user guide](../../user-guide/index.yml)
+* [Start using Azure DevOps](../../user-guide/index.yml)
 * [Organization management](../accounts/index.md)
 * [TFS Server Administration documentation](/tfs/server/index?view=vsts)
 * [Buy Visual Studio cloud subscriptions](/visualstudio/subscriptions/vscloud-overview)

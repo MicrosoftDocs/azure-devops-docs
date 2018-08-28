@@ -19,7 +19,7 @@ monikerRange: 'vsts'
 If you don't need your Azure DevOps Services organization, you can delete it. If you change your mind within 30 days, you can [recover your organization](recover-your-vsts-organization.md).
 After 30 days, your organization and data are permanently deleted.
 
-When you delete your Azure DevOps Services organization:
+When you delete your Azure DevOps Services organization, note the following:
 
 * All users lose access to organization services and resources immediately.
 
@@ -33,18 +33,18 @@ When you delete your Azure DevOps Services organization:
 
 To delete your Azure DevOps Services organization, you need organization owner permissions. [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner)
 
-## Before you delete your Azure DevOps Services organization
+## Prerequisites
 
-If your Azure DevOps Services organization uses an Azure subscription to bill purchases, you must first unlink your organization from your Azure subscription before deleting your organization.
+If your Azure DevOps Services organization uses an Azure subscription to bill purchases, you must first remove billing from your organization in the Azure portal before you can delete your  organization in Azure DevOps.
 
-To disconnect Azure Active Directory from your organization, you need Azure DevOps Services organization owner permissions, and at least Azure subscription co-administrator permissions. For more information, see [How do I find the organization owner?](faq-delete-restore-vsts-organization.md#find-owner) and [Azure subscription administrators](https://azure.microsoft.com/documentation/articles/billing-add-change-azure-subscription-administrator/).
+To remove billing from your organization, you must be a project collection administrator.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. In the search box, enter *Azure DevOps Services*. In the list, select **Azure DevOps Services organizations**.
 3. Select the organization you are deleting.
-4. Choose **Disconnect AAD**. Your Azure DevOps Services organization is disconnected from your Azure subscription.
+4. Choose **Remove billing**. Your Azure DevOps Services organization is disconnected from your Azure subscription billing.
 
-   ![Screenshot of the Azure portal, with Disconnect AAD highlighted](_img/delete-organization/app_unlinkvsoorganization2.png)
+   ![Screenshot of the Azure portal, with Remove billing highlighted](_img/_shared/azure-portal-remove-billing.png)
 
   [Need help?](faq-delete-restore-vsts-organization.md#get-support)
 
