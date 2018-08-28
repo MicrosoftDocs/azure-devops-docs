@@ -23,8 +23,8 @@ The Free Tier includes:
 
 * Five Azure DevOps Services users (Basic).
 * Five Package Management users.
-* Free Tier of Microsoft-hosted Pipelines (one concurrent job, up to 30 hours per month).
-* One self-hosted Pipelines concurrent job.
+* Free Tier of Microsoft-hosted Azure Pipelines (one concurrent job, up to 30 hours per month).
+* One self-hosted Azure Pipelines concurrent job.
 * 20,000 virtual user minutes of cloud-based load testing.
 
 > During your first purchase for your Azure DevOps Services organization, you're prompt to select the Azure subscription to use for billing. The subscription can be part of your Enterprise Agreement, Pay-As-You-Go, Cloud Solution Provider (CSP), or other types of Azure subscriptions. All Azure DevOps Services services are billed via Azure. You aren't required to pay for or use any other Azure services.

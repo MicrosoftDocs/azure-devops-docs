@@ -20,8 +20,8 @@ To manage your code, choose **Git** or **Team Foundation Version Control (TFVC)*
 
    To change default assignments, use the following guidance:
 
-> - Project name: You can specify your team project name. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less.
-> - Organize work using: The default work tracking process is set to Agile. If you want to work with Scrum or CMMI processes, then select those now. You can't change the process after the team project is created. (To learn more, see Choose process.
+> - Project name: You can specify your project name. The name you enter cannot contain spaces or special characters (such as / : \ ~ & % ; @ ' " ? < > | # $ * } { , + = [ ], cannot begin with an underscore or begin or end with a period, and must be 64 characters or less.
+> - Organize work using: The default work tracking process is set to Agile. If you want to work with Scrum or CMMI processes, then select those now. You can't change the process after the project is created. (To learn more, see Choose process.
 > - Host your projects in: You can choose between several locations for where you want your data hosted.
 
 Congratulations, you're now an Azure DevOps organization owner!
@@ -31,4 +31,4 @@ To sign in to your organization at any time, go to https://dev.azure.com/{youror
 >[!Note]
 >If you activated your Visual Studio subscription with a Microsoft account, and your subscription includes DevOps as a benefit, learn how to add your work or school account to your subscription so you can use your subscriber benefits in DevOps.
 
-Get started (link) by creating your first team project and inviting teammates to join. You can also add code, start planning and tracking using work items, or rename your team project. (links)
+[Create your first project](../organizations/projects/create-project.md) and invite teammates to join. You can also [add code](../user-guide/code-with-git.md), start [planning and tracking using work items](../user-guide/plan-track-work.md), or [rename your project](../organizations/projects/rename-project.md).

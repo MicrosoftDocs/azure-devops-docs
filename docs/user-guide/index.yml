@@ -47,7 +47,7 @@ sections:
         html: <p></p>
         image:
           src: https://docs.microsoft.com/media/common/i_get-started.svg
-        title: Sign up and invite teammates
+        title: Sign up for Azure DevOps
       - href: code-with-git.md
         html: <p></p>
         image:
